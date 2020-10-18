@@ -1,6 +1,6 @@
 /mob/living/carbon/human/proc/help_me()
 	set name = "Help me!"
-	set category = "Captain"
+	set category = "Commissar"
 
 	if(stat)
 		return
@@ -28,7 +28,7 @@
 
 /mob/living/carbon/human/proc/retreat()
 	set name = "Retreat!"
-	set category = "Captain"
+	set category = "Commissar"
 	if(stat)
 		return
 
@@ -50,7 +50,7 @@
 
 /mob/living/carbon/human/proc/announce()
 	set name = "Make Announcement!"
-	set category = "Captain"
+	set category = "Commissar"
 	if(stat)
 		return
 
@@ -93,7 +93,7 @@
 
 /mob/living/carbon/human/proc/give_order()
 	set name = "Give Order!"
-	set category = "Captain"
+	set category = "Commissar"
 	if(stat)
 		return
 
@@ -136,7 +136,7 @@
 
 /mob/living/carbon/human/proc/check_reinforcements()
 	set name = "Check Reinforcements"
-	set category = "Captain"
+	set category = "Commissar"
 
 	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
 	var/datum/team/T =  SSwarfare.red
