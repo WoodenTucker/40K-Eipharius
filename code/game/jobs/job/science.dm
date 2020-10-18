@@ -6,7 +6,7 @@
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the captain"
+	supervisors = "the Rogue Trader"
 	selection_color = "#ad6bad"
 	req_admin_notify = 1
 	economic_modifier = 15

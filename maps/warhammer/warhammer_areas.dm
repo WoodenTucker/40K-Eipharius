@@ -275,6 +275,6 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 
 //WH40k Stuff
 
-/area/cadiaoutpost/air
+/area/outpost/air
 	name = "Air"
 	icon_state = "blue"

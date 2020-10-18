@@ -49,13 +49,13 @@
 
 /datum/job/chief_engineer
 	title = "Magos"
-	supervisors = "the Captain"
+	supervisors = "the Rogue Trader"
 	department_flag = ENG
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/chief_engineer
 
 /datum/job/doctor
 	title = "Doc"
-	supervisors = "the Captain and your idea of Hippocratic Oath"
+	supervisors = "the Rogue Trader and your idea of Hippocratic Oath"
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/doc
 	alt_titles = list(
 		"Surgeon")
@@ -65,7 +65,7 @@
 
 /datum/job/hop
 	title = "First Mate"
-	supervisors = "the Captain and the Merchant Code"
+	supervisors = "the Rogue Trader and the Merchant Code"
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/mate
 	hud_icon = "hudheadofpersonnel"
 
@@ -87,7 +87,7 @@
 	hud_icon = "hudengineer"
 
 /datum/job/cyborg
-	supervisors = "your laws and the Captain"
+	supervisors = "your laws and the Rogue Trader"
 	outfit_type = /decl/hierarchy/outfit/job/bearcat/hand/engine
 	total_positions = 1
 	spawn_positions = 1

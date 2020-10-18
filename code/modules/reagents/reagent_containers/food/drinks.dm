@@ -280,7 +280,7 @@
 
 /obj/item/reagent_containers/food/drinks/flask
 	name = "\improper Captain's flask"
-	desc = "A metal flask belonging to the captain."
+	desc = "A metal flask belonging to the Rogue Trader."
 	icon_state = "flask"
 	volume = 60
 	center_of_mass = "x=17;y=7"

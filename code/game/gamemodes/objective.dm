@@ -410,7 +410,7 @@ datum/objective/nuclear
 	var/target_name
 
 	var/global/possible_items[] = list(
-		//"the captain's antique laser gun" = /obj/item/gun/energy/captain,
+		//"the Rogue Trader's antique laser gun" = /obj/item/gun/energy/captain,
 		//"a bluespace rift generator" = /obj/item/integrated_circuit/manipulation/bluespace_rift,
 		//"an RCD" = /obj/item/rcd,
 		//"a jetpack" = /obj/item/tank/jetpack,

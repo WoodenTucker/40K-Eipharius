@@ -1,6 +1,6 @@
 
 var/list/dreams = list(
-	"a dogtag","a bottle","a familiar face","a crewmember","a toolbox","a soldier","the captain",
+	"a dogtag","a bottle","a familiar face","a crewmember","a toolbox","a soldier","the Rogue Trader",
 	"voices from all around","none of this is real","a doctor","an ally","darkness",
 	"light","a catastrophe","a loved one","a gun","warmth","freezing","the sun",
 	"a hat","a ruined fortress","a planet","air","the medical bay","blinking lights",

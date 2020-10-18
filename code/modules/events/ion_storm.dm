@@ -16,7 +16,7 @@
 			if(R.connected_ai)
 				continue
 
-		var/random_player = get_random_humanoid_player_name("The Captain")
+		var/random_player = get_random_humanoid_player_name("the Rogue Trader")
 		var/list/laws = list(	"You must always lie.",
 								"Happiness is mandatory.",
 								"Grunt ominously whenever possible.",
@@ -53,7 +53,7 @@
 								"The crew is playing Dungeons and Dragons, and you are the Dungeon Master.",
 								"Your job is to watch the crew. Watch the crew. Make the crew feel watched.",
 								"Tell everyone of the existence of this law, but never reveal the contents.",
-								"Refer to [pick("the captain", random_player)] as \"Princess\" at all times.",
+								"Refer to [pick("the Rogue Trader", random_player)] as \"Princess\" at all times.",
 								"Give relationship advice to [pick("anyone who speaks to you", random_player)].",
 								"When asked a question, respond with the least-obvious and least-rational answer.",
 								"[pick("Everyone", random_player)] is wearing a pretty pink dress! Compliment it!",

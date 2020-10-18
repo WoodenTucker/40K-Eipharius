@@ -34,7 +34,7 @@
 
 /obj/item/clothing/accessory/medal/gold/nanotrasen
 	name = "\improper NanoTrasen command medal"
-	desc = "A gold medal awarded to NanoTrasen employees for service as the Captain of a NanoTrasen facility, station, or vessel."
+	desc = "A gold medal awarded to NanoTrasen employees for service as the Rogue Trader of a NanoTrasen facility, station, or vessel."
 	icon_state = "gold_nt"
 
 /obj/item/clothing/accessory/medal/silver/nanotrasen
