@@ -271,3 +271,10 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 		var/mob/living/carbon/human/H = mover
 		to_chat(H, "<big>I CANNOT DISOBEY ORDERS!</big>")
 	return FALSE
+
+
+//WH40k Stuff
+
+/area/cadiaoutpost/air
+	name = "Air"
+	icon_state = "blue"
