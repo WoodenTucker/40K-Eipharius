@@ -21,7 +21,7 @@
 		H.say(";[title] reporting for duty!")
 
 /datum/job/ig/commissar
-	title = "Astra Militarum Commissar"
+	title = "Commissar"
 	total_positions = 1
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
