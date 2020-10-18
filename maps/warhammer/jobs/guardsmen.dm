@@ -37,6 +37,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
+		H.say(";[title] reporting for duty!")
 		H.get_idcard()?.access = get_all_accesses()
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
