@@ -1,14 +1,14 @@
-Captain=1
+Rogue Trader=1
 Seneschal=1
 Commissar=1
 Magos=1
 Research Director=1
 Sister Hospitaller=1
 
-Station Engineer=5
+Tech Priest=5
 Roboticist=1
 
-Medical Doctor=5
+Dicipulus Hospitaller=3
 Geneticist=2
 Virologist=1
 
@@ -22,16 +22,16 @@ Janitor=1
 Quartermaster=1
 Shaft Miner=3
 
-Warden=1
-Detective=1
-Security Officer=5
+Sergeant=1
+Enforcer=1
+Imperial Guard=500
 
 Assistant=-1
 Atmospheric Technician=4
 Cargo Technician=3
 Chaplain=1
-Lawyer=2
-Librarian=1
+Inquisitorial Acolyte=2
+Record Keeper=1
 
-AI=1
+AI=-1
 Cyborg=1

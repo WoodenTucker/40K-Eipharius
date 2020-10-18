@@ -151,6 +151,9 @@
 /obj/effect/landmark/start/heir
 	name = "Heir"
 
+/obj/effect/landmark/JoinLate
+	name = "JoinLate"
+
 //Costume spawner landmarks
 /obj/effect/landmark/costume/New() //costume spawner, selects a random subclass and disappears
 
