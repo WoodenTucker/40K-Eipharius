@@ -269,3 +269,11 @@
 	icon_state = "yellow slime extract" //"potato_battery"
 	maxcharge = 200
 	matter = null
+
+/obj/item/cell/lasgun
+	name = "lasgun power pack"
+	desc = "A small, portable capacitor power pack fit for a lasgun."
+	origin_tech = list(TECH_POWER = 6)
+	icon_state = "lgpp"
+	maxcharge = 3000
+	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
