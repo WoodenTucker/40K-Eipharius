@@ -2,7 +2,6 @@
 	name = "energy gun"
 	desc = "A basic energy-based gun."
 	icon_state = "energy"
-	fire_sound = 'sound/weapons/Taser.ogg'
 	fire_sound_text = "laser blast"
 
 	var/obj/item/cell/power_supply //What type of power cell this uses
@@ -12,6 +11,8 @@
 	var/projectile_type = /obj/item/projectile/energy/laser // /obj/item/projectile/beam/practice
 	var/modifystate
 	var/charge_meter = 1	//if set, the icon state will be chosen based on the current charge
+	var/unload_sound 	= 'sound/weapons/guns/interact/pistol_magout.ogg'
+	var/reload_sound 	= 'sound/weapons/guns/interact/pistol_magin.ogg'
 
 	//self-recharging
 	var/self_recharge = 0	//if set, the weapon will recharge itself
@@ -19,6 +20,7 @@
 	var/recharge_time = 4
 	var/charge_tick = 0
 	var/icon_rounder = 25
+	var/ammoType = null
 	combustion = 1
 
 /obj/item/gun/energy/switch_firemodes()
@@ -109,6 +111,9 @@
 
 /obj/item/gun/energy/load_ammo(var/obj/item/A, mob/user)
 	if(!istype(A, /obj/item/cell))
+		return
+	if(!istype(A, ammoType))
+		to_chat(user, "<span class='warning'>[src] can't use that power cell.</span>")//already a power cell here
 		return
 
 	if(power_supply)

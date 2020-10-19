@@ -114,4 +114,22 @@
 	damage_type = TOX
 	weaken = 5
 
+/obj/item/projectile/energy/las
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage_type = BURN
+	sharp = 1
+	check_armour = "laser"
+	light_power = 4 //Tracers.
+	light_range = 2
+	light_color = "#D63838"
+	penetration_modifier = 1.0
+	var/mob_passthrough_check = 0
 
+	muzzle_type = /obj/effect/projectile/muzzle/las
+
+/obj/item/projectile/energy/las/lasgun
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 40

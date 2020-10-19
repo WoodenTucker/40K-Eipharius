@@ -82,3 +82,8 @@
 /obj/effect/projectile/muzzle/hegemony
 	icon_state = "muzzle_hegemony"
 	light_color = LIGHT_COLOR_ORANGE
+
+/obj/effect/projectile/muzzle/las
+	icon_state = "muzzle_las"
+	light_power = 1
+	light_color = LIGHT_COLOR_RED
