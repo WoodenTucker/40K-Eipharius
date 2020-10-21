@@ -273,8 +273,34 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	return FALSE
 
 
-//WH40k Stuff
+//Cadia Stuff
 
-/area/outpost/air
+//General Map Areas
+/area/cadiaoutpost/gma/air
 	name = "Air"
 	icon_state = "blue"
+
+//Outpost Areas
+/area/cadiaoutpost/oa/arrivals
+	name = "Arrivals"
+	icon_state = "cryo"
+
+/area/cadiaoutpost/oa/armory
+	name = "Armory"
+	icon_state = "armory"
+
+/area/cadiaoutpost/oa/bar
+	name = "The Maltese Falcon"
+	icon_state = "bar"
+
+/area/cadiaoutpost/oa/barracks
+	name = "Barracks"
+	icon_state = "security"
+
+/area/cadiaoutpost/oa/departures
+	name = "Departures"
+	icon_state = "party"
+
+/area/cadiaoutpost/oa/medicae
+	name = "Medicae"
+	icon_state = "medbay"
