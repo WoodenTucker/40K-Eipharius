@@ -301,6 +301,30 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Departures"
 	icon_state = "party"
 
+/area/cadiaoutpost/oa/engineering
+	name = "Machinamentum"
+	icon_state = "engineering"
+
+/area/cadiaoutpost/oa/engineering/engine
+	name = "Sacrarium Machina"
+	icon_state = "orange"
+
 /area/cadiaoutpost/oa/medicae
 	name = "Medicae"
 	icon_state = "medbay"
+
+/area/cadiaoutpost/oa/virology
+	name = "Praetorium Aegrotatio"
+	icon_state = "virology"
+
+/area/cadiaoutpost/oa/research
+	name = "Biocogitatum"
+	icon_state = "research"
+
+/area/cadiaoutpost/oa/research/robotics
+	name = "Cybersmithy"
+	icon_state = "robotics"
+
+/area/cadiaoutpost/oa/research/xenobiology
+	name = "Sanctum Biologis"
+	icon_state = "green"
