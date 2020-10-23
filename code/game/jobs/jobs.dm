@@ -10,7 +10,6 @@ var/const/SUP               =(1<<8)
 var/const/SPT               =(1<<9)
 var/const/EXP               =(1<<10)
 var/const/GRD               =(1<<11)
-var/const/INQ               =(1<<12)
 
 GLOBAL_LIST_EMPTY(assistant_occupations)
 
@@ -41,8 +40,6 @@ GLOBAL_LIST_EMPTY(unsorted_positions) // for nano manifest
 GLOBAL_LIST_EMPTY(nobles) //For revolution game mode.
 
 GLOBAL_LIST_EMPTY(imperial_guard_positions)
-
-GLOBAL_LIST_EMPTY(inquisition_positions)
 
 /proc/guest_jobbans(var/job)
 	return ((job in GLOB.command_positions) || (job in GLOB.nonhuman_positions) || (job in GLOB.security_positions))

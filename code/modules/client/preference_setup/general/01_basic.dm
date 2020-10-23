@@ -44,16 +44,16 @@ datum/preferences
 /datum/category_item/player_setup_item/general/basic/content(mob/user)
 	. = list()
 
-
-	/*if(!ticker || ticker.current_state <= GAME_STATE_PREGAME)
+	/*
+	if(!ticker || ticker.current_state <= GAME_STATE_PREGAME)
 		for(var/mob/new_player/P in GLOB.player_list)
 			if(P.mind.key == user.key)
 				if(!P.client || !P.ready)
 					. += "<p style='position: absolute;right: 50px;bottom: 50px;'><a onfocus='this.blur()' href='byond://?src=\ref[user];ready=1' class='inactive'>You are not ready.</a></p>"
 				else
 					. += "<p style='position: absolute;right: 50px;bottom: 50px;'><a onfocus='this.blur()' href='byond://?src=\ref[user];ready=0' class='active'><b>You are ready.</b></a></p>"
-				return */
-
+	else
+	*/
 	. += "<p style='position: absolute;right: 50px; bottom: 50px;'><a onfocus='this.blur()' href='byond://?src=\ref[user];late_join=1' class='active'><b>Join the Game!</a></p>"
 	. += "<b>Name:</b> "
 	. += "<a onfocus ='this.blur()' href='?src=\ref[src];rename=1'><b>[pref.real_name]</b></a> <a onfocus ='this.blur()' href='?src=\ref[src];random_name=1'>&reg;</a><br>"

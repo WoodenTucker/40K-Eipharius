@@ -29,7 +29,7 @@
 	emergency_shuttle_leaving_dock = "The emergency escape shuttle has departed from %dock_name%."
 	emergency_shuttle_called_message = "An emergency escape shuttle has been sent."
 	emergency_shuttle_recall_message = "The emergency shuttle has been recalled"
-	map_lore = "A Rogue Trader has established this outpost to further the reach of the Imperium of Man. We have been stationed here for the past few months without incident, though the guardsmen have begun to worry following the arrival of Inquisitorial Acolytes. Time will tell what this means, the Acolytes themselves are cryptic and do not associate with us."
+	map_lore = "We've been sitting in these trenches for months. No word from central command. The shells keep dropping... there is no way out. Our only hope is to push forth into their trench instead. But we don't have that many men left, if we lose too many it's over for us. We must give it our all if we are to survive this winter."
 
 
 
