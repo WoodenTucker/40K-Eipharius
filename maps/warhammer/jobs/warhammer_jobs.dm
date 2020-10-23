@@ -21,8 +21,13 @@
 	/datum/job/bartender,
 	/datum/job/librarian,
 	/datum/job/cmo,
-	/datum/job/doctor,
-	/datum/job/chemist
+	/datum/job/chemist,
+	/datum/job/geneticist,
+	/datum/job/psychiatrist,
+	/datum/job/Paramedic,
+	/datum/job/mining,
+	/datum/job/cargo_tech,
+	/datum/job/qm,
 
 	)
 

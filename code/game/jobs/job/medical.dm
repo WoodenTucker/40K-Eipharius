@@ -61,7 +61,7 @@
 /datum/job/geneticist
 	title = "Geneticist"
 	department = "Medical"
-	department_flag = MED
+	department_flag = MED|SCI
 
 	total_positions = 0
 	spawn_positions = 0
@@ -90,9 +90,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
 
 /datum/job/Paramedic
-	title = "Paramedic"
+	title = "Combat Medic"
 	department = "Medical"
-	department_flag = MED
+	department_flag = SEC|MED
 
 	total_positions = 2
 	spawn_positions = 2

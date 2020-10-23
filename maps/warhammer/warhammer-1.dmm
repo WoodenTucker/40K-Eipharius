@@ -13,7 +13,7 @@
 "am" = (/obj/structure/closet/wardrobe/mixed,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
 "an" = (/obj/structure/closet/wardrobe/suit,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
 "ao" = (/obj/structure/table/steel,/obj/random/junk,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
-"ap" = (/obj/machinery/cryopod{icon_state = "body_scanner_0"; dir = 2},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
+"ap" = (/obj/machinery/cryopod{icon_state = "body_scanner_0"; dir = 2},/obj/effect/landmark/JoinLate,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
 "aq" = (/obj/structure/table/steel,/obj/random/accessory,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
 "ar" = (/obj/structure/table/steel,/obj/random/hat,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)
 "as" = (/obj/structure/table/steel,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/arrivals)

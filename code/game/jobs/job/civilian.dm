@@ -2,7 +2,7 @@
 /datum/job/bartender
 	title = "Bartender"
 	department = "Service"
-	department_flag = SRV
+	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Seneschal"
@@ -14,7 +14,7 @@
 /datum/job/chef
 	title = "Cook"
 	department = "Service"
-	department_flag = SRV
+	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Seneschal"
@@ -27,7 +27,7 @@
 /datum/job/hydro
 	title = "Farmer"
 	department = "Service"
-	department_flag = SRV
+	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 1
 	supervisors = "the Seneschal"
@@ -66,11 +66,11 @@
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 
 /datum/job/mining
-	title = "Shaft Miner"
+	title = "Explorator"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Munitorum Priest and the Seneschal"
 	selection_color = "#515151"
 	economic_modifier = 5
@@ -82,7 +82,7 @@
 /datum/job/janitor
 	title = "Janitor"
 	department = "Service"
-	department_flag = SRV
+	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Seneschal"
@@ -108,12 +108,12 @@
 
 /datum/job/inquisitor
 	title = "Inquisitorial Acolyte"
-	department = "Support"
-	department_flag = SPT
+	department = "Inquisition"
+	department_flag = INQ
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "The Golden Throne"
-	selection_color = "#515151"
+	selection_color = "#fd0707"
 	economic_modifier = 7
 	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_heads)
 	minimal_access = list(access_lawyer, access_sec_doors, access_heads)
