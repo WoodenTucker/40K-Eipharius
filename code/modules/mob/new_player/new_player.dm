@@ -444,6 +444,7 @@
 		"Medical"=list("color"="#76abb2", "jobs"=list()),
 		"Supply"=list("color"="#76abb2", "jobs"=list()),
 		"Civillian"=list("color"="#76abb2", "jobs"=list()),
+		"Inquisition"=list("color"="#fd0707", "jobs"=list()),
 		"Misc"=list("color"="Grey", "jobs"=list())
 		)
 

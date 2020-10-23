@@ -41,14 +41,14 @@
 	pda_type = /obj/item/device/pda/janitor
 
 /decl/hierarchy/outfit/job/librarian
-	name = OUTFIT_JOB_NAME("Librarian")
+	name = OUTFIT_JOB_NAME("Record Keeper")
 	uniform = /obj/item/clothing/under/suit_jacket/red
 	id_type = /obj/item/card/id/civilian/librarian
 	pda_type = /obj/item/device/pda/librarian
 
 /decl/hierarchy/outfit/job/internal_affairs_agent
-	name = OUTFIT_JOB_NAME("Internal affairs agent")
-	l_ear = /obj/item/device/radio/headset/ia
+	name = OUTFIT_JOB_NAME("Inquisitorial Acolyte")
+	l_ear = /obj/item/device/radio/headset/inquisition
 	uniform = /obj/item/clothing/under/rank/internalaffairs
 	suit = /obj/item/clothing/suit/storage/toggle/suit/black
 	shoes = /obj/item/clothing/shoes/brown

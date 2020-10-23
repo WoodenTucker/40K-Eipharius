@@ -2,7 +2,7 @@
 	title = "Imperial Guardsman"
 	total_positions = 100
 	social_class = SOCIAL_CLASS_MIN
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/soldier //will need to be replaced eventually - wel
+	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	selection_color = "#b27676"
 	department_flag = SEC
 	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
@@ -128,24 +128,24 @@
 
 //All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
 
-/decl/hierarchy/outfit/job/redsoldier
+/decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Imperial Guardsman")
-	head = /obj/item/clothing/head/helmet/redhelmet
-	uniform = /obj/item/clothing/under/red_uniform
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	uniform = /obj/item/clothing/under/guard_uniform
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_ear = null // /obj/item/device/radio/headset/syndicate
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
-	suit = /obj/item/clothing/suit/armor/redcoat
+	suit = /obj/item/clothing/suit/armor/guardsman
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	pda_type = null
-	id_type = /obj/item/card/id/dog_tag/red
+	id_type = /obj/item/card/id/dog_tag/guardsman
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 
 
-/decl/hierarchy/outfit/job/redsoldier/soldier/equip()
+/decl/hierarchy/outfit/job/guardsman/soldier/equip()
 	if(aspect_chosen(/datum/aspect/lone_rider))
 		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
 		r_pocket = /obj/item/ammo_box/rifle

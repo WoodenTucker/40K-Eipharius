@@ -683,3 +683,40 @@
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "stick0"
 	force = 10
+
+
+
+//Warhammer Start
+
+/*
+Imperial Guardsman
+*/
+/obj/item/clothing/suit/armor/guardsman
+	name = "Guardsman's Heavy Armor"
+	desc = "The proud jacket of the Red Baron!"
+	icon_state = "fharmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing)
+	starting_accessories = list(/obj/item/clothing/accessory/red_outline)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/guardsman/New()
+	..()
+	name = "An Imperial Guardsman's Armor"
+	desc = "The proud armor of an Imperial Guardsman"
+
+/obj/item/clothing/under/guard_uniform
+	name = "Imperial Guard uniform"
+	desc = "The uniform of those who fight in His name."
+	icon_state = "guard_s"
+	worn_state = "guard_s"
+	item_state = "guard_s"
+
+/obj/item/clothing/head/helmet/guardhelmet
+	name = "Guard Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "guard"
+
+
+/obj/item/card/id/dog_tag/guardsman
+	icon_state = "tagred"

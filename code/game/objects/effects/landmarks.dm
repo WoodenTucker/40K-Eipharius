@@ -154,6 +154,11 @@
 /obj/effect/landmark/JoinLate
 	name = "JoinLate"
 
+//Job start locations
+
+/obj/effect/landmark/JoinLate/sergeant
+	name = "Sergeant"
+
 //Costume spawner landmarks
 /obj/effect/landmark/costume/New() //costume spawner, selects a random subclass and disappears
 
