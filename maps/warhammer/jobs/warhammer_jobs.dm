@@ -41,29 +41,3 @@
 	title = "Civilian Penitent"
 	total_positions = 2
 	spawn_positions = 2
-
-/datum/job/guardsman
-	title = "Imperial Guardsman"
-	social_class = SOCIAL_CLASS_MIN
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/soldier //will need to be replaced eventually - wel
-	selection_color = "#b27676"
-	department_flag = SEC
-	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
-	semi_rifle_skill = 10
-	sniper_skill = 3
-	shotgun_skill = 6
-	lmg_skill = 3
-	smg_skill = 3
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(12,17), rand(10,16), rand(8,12))
-		SSwarfare.red.team += H
-		if(can_be_in_squad)
-			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Pvt. [H.real_name]")
-		H.warfare_language_shit(LANGUAGE_GOTHIC)
-		H.assign_random_quirk()
-		if(announced)
-			H.say(";Guardsman reporting for duty!")

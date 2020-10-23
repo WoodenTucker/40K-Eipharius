@@ -1,6 +1,32 @@
+/datum/job/guardsman
+	title = "Imperial Guardsman"
+	total_positions = 100
+	social_class = SOCIAL_CLASS_MIN
+	outfit_type = /decl/hierarchy/outfit/job/redsoldier/soldier //will need to be replaced eventually - wel
+	selection_color = "#b27676"
+	department_flag = SEC
+	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
+	semi_rifle_skill = 10
+	sniper_skill = 3
+	shotgun_skill = 6
+	lmg_skill = 3
+	smg_skill = 3
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(12,17), rand(10,16), rand(8,12))
+		SSwarfare.red.team += H
+		if(can_be_in_squad)
+			H.assign_random_squad(IMPERIUM)
+		H.fully_replace_character_name("Pvt. [H.real_name]")
+		H.assign_random_quirk()
+		if(announced)
+			H.say(";Guardsman reporting for duty!")
+
 /datum/job/ig/sergeant
 	title = "Sergeant"
-	total_positions = 3
+	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sgt
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -51,9 +77,33 @@
 		)
 
 /datum/job/ig/enforcer
-	title = "Adeptus Arbites"
+	title = "Adeptus Arbites Veteran"
 	total_positions = 1
 	social_class = SOCIAL_CLASS_MED
+	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 10
+	smg_skill = 3
+	can_be_in_squad = FALSE
+	open_when_dead = TRUE
+	department_flag = SEC
+
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Veteran [current_name]")
+		H.add_stats(18, rand(10,16), rand(15,18))
+		H.say(";Arbites reporting for duty!")
+
+/datum/job/ig/impguard
+	title = "Adeptus Arbites"
+	total_positions = 1
+	social_class = SOCIAL_CLASS_MIN
 	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
 	auto_rifle_skill = 5
 	semi_rifle_skill = 5
@@ -73,7 +123,6 @@
 		H.fully_replace_character_name("Arbites [current_name]")
 		H.add_stats(18, rand(10,16), rand(15,18))
 		H.say(";Arbites reporting for duty!")
-
 
 
 
