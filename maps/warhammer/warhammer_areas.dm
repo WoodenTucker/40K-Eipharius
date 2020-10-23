@@ -280,6 +280,10 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Air"
 	icon_state = "blue"
 
+/area/cadiaoutpost/gma/underground
+	name = "Underground"
+	icon_state = "unexplored"
+
 //Outpost Areas
 /area/cadiaoutpost/oa/arrivals
 	name = "Arrivals"
@@ -297,6 +301,46 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Barracks"
 	icon_state = "security"
 
+/area/cadiaoutpost/oa/bridge
+	name = "Bridge"
+	icon_state = "bridge"
+
+/area/cadiaoutpost/oa/bridge/hallway
+	name = "Bridge Hallway"
+	icon_state = "blueold"
+
+/area/cadiaoutpost/oa/bridge/meetingroom
+	name = "Meeting Room"
+	icon_state = "blue"
+
+/area/cadiaoutpost/oa/bridge/offices/roguetrader
+	name = "Rogue Trader's Office"
+	icon_state = "captain"
+
+/area/cadiaoutpost/oa/bridge/offices/seneschal
+	name = "Seneschal's Office"
+	icon_state = "hop"
+
+/area/cadiaoutpost/oa/bridge/offices/commissar
+	name = "Commissar's Office"
+	icon_state = "hos"
+
+/area/cadiaoutpost/oa/bridge/offices/magoserrant
+	name = "Magos Errant's Office"
+	icon_state = "rd"
+
+/area/cadiaoutpost/oa/bridge/offices/magosexplorator
+	name = "Magos Explorator's Office"
+	icon_state = "ce"
+
+/area/cadiaoutpost/oa/bridge/offices/sisterhospitaller
+	name = "Sister Hospitaller's Office"
+	icon_state = "cmo"
+
+/area/cadiaoutpost/oa/chapel
+	name = "Chapel"
+	icon_state = "chapel"
+
 /area/cadiaoutpost/oa/departures
 	name = "Departures"
 	icon_state = "party"
@@ -313,7 +357,11 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Medicae"
 	icon_state = "medbay"
 
-/area/cadiaoutpost/oa/virology
+/area/cadiaoutpost/oa/medicae/storage
+	name = "Medicae Storage"
+	icon_state = "medbay2"
+
+/area/cadiaoutpost/oa/medicae/virology
 	name = "Praetorium Aegrotatio"
 	icon_state = "virology"
 

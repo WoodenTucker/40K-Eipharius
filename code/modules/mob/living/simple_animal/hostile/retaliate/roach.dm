@@ -140,3 +140,13 @@
 	faction = "roach"
 	speed = 4
 	ranged = TRUE
+
+/mob/living/simple_animal/rtroach
+	name = "Kemuel"
+	desc = "Kemuel the dog roach, a very expensive and domesticated mutated roach purchased by the Rogue Trader"
+	icon_state = "roach"
+	icon_living = "roach"
+	icon_dead = "roach_dead"
+	faction = "neutral"
+	health = 50
+	maxHealth = 50
