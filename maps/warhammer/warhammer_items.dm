@@ -693,10 +693,9 @@ Imperial Guardsman
 */
 /obj/item/clothing/suit/armor/guardsman
 	name = "Guardsman's Heavy Armor"
-	desc = "The proud jacket of the Red Baron!"
+	desc = "The proud armor of an Imperial Guardsman"
 	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing)
-	starting_accessories = list(/obj/item/clothing/accessory/red_outline)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 

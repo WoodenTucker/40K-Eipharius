@@ -145,7 +145,7 @@
 
 
 
-/decl/hierarchy/outfit/job/guardsman/soldier/equip()
+/decl/hierarchy/outfit/job/guardsman/equip()
 	if(aspect_chosen(/datum/aspect/lone_rider))
 		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
 		r_pocket = /obj/item/ammo_box/rifle
