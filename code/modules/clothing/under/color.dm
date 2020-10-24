@@ -73,6 +73,7 @@
 /obj/item/clothing/under/color/brown
 	name = "brown jumpsuit"
 	color = "#c08720"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 
 // coloured jumpsuits, female pattern
 

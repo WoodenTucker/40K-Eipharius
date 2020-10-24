@@ -12,6 +12,7 @@
 	#include "warhammer-1.dmm"
 	#include "warhammer-2.dmm"
 	#include "warhammer-3.dmm"
+	#include "warhammer-4.dmm"
 
 	#include "../../code/modules/lobby_music/generic_songs.dm"
 

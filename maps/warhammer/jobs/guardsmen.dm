@@ -1,6 +1,32 @@
+/datum/job/guardsman
+	title = "Imperial Guardsman"
+	total_positions = 100
+	social_class = SOCIAL_CLASS_MIN
+	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
+	selection_color = "#b27676"
+	department_flag = SEC
+	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
+	semi_rifle_skill = 10
+	sniper_skill = 3
+	shotgun_skill = 6
+	lmg_skill = 3
+	smg_skill = 3
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(12,17), rand(10,16), rand(8,12))
+		SSwarfare.red.team += H
+		if(can_be_in_squad)
+			H.assign_random_squad(IMPERIUM)
+		H.fully_replace_character_name("Pvt. [H.real_name]")
+		H.assign_random_quirk()
+		if(announced)
+			H.say(";Guardsman reporting for duty!")
+
 /datum/job/ig/sergeant
 	title = "Sergeant"
-	total_positions = 3
+	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sgt
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -51,9 +77,33 @@
 		)
 
 /datum/job/ig/enforcer
-	title = "Adeptus Arbites"
+	title = "Adeptus Arbites Veteran"
 	total_positions = 1
 	social_class = SOCIAL_CLASS_MED
+	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 10
+	smg_skill = 3
+	can_be_in_squad = FALSE
+	open_when_dead = TRUE
+	department_flag = SEC
+
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Veteran [current_name]")
+		H.add_stats(18, rand(10,16), rand(15,18))
+		H.say(";Arbites reporting for duty!")
+
+/datum/job/ig/impguard
+	title = "Adeptus Arbites"
+	total_positions = 1
+	social_class = SOCIAL_CLASS_MIN
 	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
 	auto_rifle_skill = 5
 	semi_rifle_skill = 5
@@ -76,60 +126,24 @@
 
 
 
-
 //All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
 
-/decl/hierarchy/outfit/job/redsoldier
+/decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Imperial Guardsman")
-	head = /obj/item/clothing/head/helmet/redhelmet
-	uniform = /obj/item/clothing/under/red_uniform
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_ear = null // /obj/item/device/radio/headset/syndicate
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
-	suit = /obj/item/clothing/suit/armor/redcoat
+	suit = /obj/item/clothing/suit/armor/guardsman
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	pda_type = null
-	id_type = /obj/item/card/id/dog_tag/red
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	l_hand = /obj/item/gun/energy/las/lasgun
+	backpack_contents = list(/obj/item/cell/lasgun = 2)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-
-
-/decl/hierarchy/outfit/job/redsoldier/soldier/equip()
-	if(aspect_chosen(/datum/aspect/lone_rider))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = initial(backpack_contents)
-		belt = null
-
-	else if (prob(5))
-		suit_store = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
-		r_pocket =  /obj/item/ammo_magazine/a762/rsc
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-		belt = /obj/item/storage/belt/armageddon
-
-	else if(prob(25))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-		belt = null
-
-	else if(prob(50))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-		belt = null
-
-	else
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-		belt = null
-
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/torch/self_lit = 1, /obj/item/ammo_box/flares = 1)
-	..()
 
 /decl/hierarchy/outfit/job/redsoldier/sgt
 	suit_store = /obj/item/gun/projectile/automatic/m22/warmonger

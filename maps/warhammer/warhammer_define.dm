@@ -6,18 +6,18 @@
 	station_name  = "The Spirit of Cadia"
 	station_short = "Cadia"
 	dock_name     = "Cadia"
-	boss_name     = "The Imperium of Man"
-	boss_short    = "IOM"
-	company_name  = "Colonial Magistrate Space Residential Complex"
-	company_short = "CMSRC"
-	system_name = "hell"
+	boss_name     = "Segmentum Command"
+	boss_short    = "SC"
+	company_name  = "Segmentum Ultima"
+	company_short = "SU"
+	system_name = "Eastern Fringe"
 
 	lobby_icon = 'maps/warhammer/fullscreen.dmi'
 	lobby_screens = list("lobby1","lobby2","lobby3","lobby4","lobby5", "lobby6")
 
-	station_levels = list(1,2)
+	station_levels = list(1,2,3)
 	contact_levels = list(1)
-	player_levels = list(1,2)
+	player_levels = list(1,2,3)
 
 	allowed_spawns = list("Arrivals Shuttle")
 	base_turf_by_z = list("1" = /turf/simulated/floor/dirty, "2" = /turf/simulated/floor/dirty, "3" = /turf/simulated/floor/dirty)
@@ -29,7 +29,7 @@
 	emergency_shuttle_leaving_dock = "The emergency escape shuttle has departed from %dock_name%."
 	emergency_shuttle_called_message = "An emergency escape shuttle has been sent."
 	emergency_shuttle_recall_message = "The emergency shuttle has been recalled"
-	map_lore = "We've been sitting in these trenches for months. No word from central command. The shells keep dropping... there is no way out. Our only hope is to push forth into their trench instead. But we don't have that many men left, if we lose too many it's over for us. We must give it our all if we are to survive this winter."
+	map_lore = "A Rogue Trader has established this outpost to further the reach of the Imperium of Man. We have been stationed here for the past few months without incident, though the guardsmen have begun to worry following the arrival of Inquisitorial Acolytes. Time will tell what this means, the Acolytes themselves are cryptic and do not associate with us."
 
 
 

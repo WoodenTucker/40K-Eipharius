@@ -150,7 +150,11 @@
 	name = "Cadet"
 /obj/effect/landmark/start/heir
 	name = "Heir"
+/obj/effect/landmark/start/ig
+	name = "Imperial Guardsman"
 
+
+//Warhammer stuff
 /obj/effect/landmark/JoinLate
 	name = "JoinLate"
 

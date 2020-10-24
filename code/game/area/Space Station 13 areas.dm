@@ -148,6 +148,10 @@ area/space/atmosalert()
 	name = "Xenoflora Storage"
 	icon_state = "xeno_f_store"
 
+/area/shuttle/escape/planet
+	name = "Emergency Shuttle Planet"
+	icon_state = "shuttle"
+
 /area/shuttle/escape/centcom
 	name = "Emergency Shuttle Centcom"
 	icon_state = "shuttle"
