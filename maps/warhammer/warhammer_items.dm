@@ -695,7 +695,7 @@ Imperial Guardsman
 	name = "Guardsman's Heavy Armor"
 	desc = "The proud armor of an Imperial Guardsman"
 	icon_state = "fharmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -708,8 +708,7 @@ Imperial Guardsman
 	name = "Imperial Guard uniform"
 	desc = "The uniform of those who fight in His name."
 	icon_state = "guard_s"
-	worn_state = "guard_s"
-	item_state = "guard_s"
+	item_state = "guard"
 
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Guard Helmet"

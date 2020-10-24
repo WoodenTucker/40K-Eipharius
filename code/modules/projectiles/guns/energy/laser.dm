@@ -174,7 +174,7 @@ obj/item/gun/energy/retro
 	desc = "The standard-issue rifle of the Astra Militarum as well as one of the most common weapons found in the Imperium of Man."
 	icon_state = "lasgun"
 	item_state = "lasgun"
-	slot_flags = SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2
