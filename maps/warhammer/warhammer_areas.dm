@@ -284,6 +284,10 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Underground"
 	icon_state = "unexplored"
 
+/area/cadiaoutpost/gma/inquisitoracolyte
+	name = "Inquisitorial Acolyte Vessel ''Simiel''"
+	icon_state = "red"
+
 //Outpost Areas
 /area/cadiaoutpost/oa/arrivals
 	name = "Arrivals"

@@ -94,6 +94,15 @@
 	alert_callout = list('sound/voice/critters/borg_spot1.ogg', 'sound/voice/critters/borg_spot2.ogg')
 	pain_sound = list('sound/voice/critters/borg_pain1.ogg', 'sound/voice/critters/borg_pain2.ogg', 'sound/voice/critters/borg_pain3.ogg')
 
+/mob/living/simple_animal/manofiron
+	name = "Deactivated Man of Iron"
+	icon_state = "behemoth"
+	icon_living = "behemoth"
+	icon_dead = "behemoth_DEAD"
+	desc = "The chassis of an ancient and heretekal being known as a Man of Iron. A very pricey artifact of a time long feared."
+	maxHealth = 0
+	health = 0
+
 
 /mob/living/simple_animal/hostile/mining_borg/Life()
 	. =..()
