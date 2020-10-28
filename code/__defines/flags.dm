@@ -34,7 +34,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define ITEM_FLAG_FLEXIBLEMATERIAL       0x0200 // At the moment, masks with this flag will not prevent eating even if they are covering your face.
 #define ITEM_FLAG_PREMODIFIED            0x0400 // Gloves that are clipped by default
 #define ITEM_FLAG_ABSTRACT				 0x0800	// Shit that can't be seen when you examine a person.
-
+#define ITEM_FLAG_NODROP				 0x1600 //makes it so that an item cannot be dropped
 // Flags for pass_flags.
 #define PASS_FLAG_TABLE  0x1
 #define PASS_FLAG_GLASS  0x2

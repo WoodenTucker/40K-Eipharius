@@ -726,3 +726,27 @@ Imperial Guardsman
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
+
+/obj/item/clothing/suit/armor/sgt
+	name = "Guardsman's Medium Armor"
+	desc = "The well-worn armor of an Imperial Guard Sergeant."
+	icon_state = "farmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/guardsman/New()
+	..()
+	name = "An Imperial Guardsman's Armor"
+	desc = "The proud armor of an Imperial Guardsman"
+
+
+
+//Rogue Trader Gear
+/obj/item/clothing/suit/armor/rtcloak
+	name = "Rogue Trader's Cloak"
+	desc = "The distinguished cloak of a Rogue Trader"
+	icon_state = "lccoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

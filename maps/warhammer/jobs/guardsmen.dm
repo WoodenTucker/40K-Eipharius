@@ -28,13 +28,14 @@
 	title = "Sergeant"
 	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sgt
+	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC
 
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
 	shotgun_skill = 10
+	lmg_skill = 10
 
 	announced = FALSE
 
@@ -54,6 +55,10 @@
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	can_be_in_squad = FALSE
 	sniper_skill = 10
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
 	open_when_dead = FALSE
 	department_flag = SEC
 
@@ -141,46 +146,42 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	pda_type = null
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_hand = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(/obj/item/cell/lasgun = 2)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/commissar
+	name = OUTFIT_JOB_NAME("Commissar")
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/color/black
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	belt = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
 	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/redsoldier/sgt
-	suit_store = /obj/item/gun/projectile/automatic/m22/warmonger
-	head = /obj/item/clothing/head/helmet/redhelmet/leader
-	r_pocket = /obj/item/ammo_magazine/c45rifle/akarabiner
-
-/decl/hierarchy/outfit/job/redsoldier/sgt/equip()
-	if(prob(25))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1, /obj/item/device/binoculars = 1)
-		belt = null
-	else
-		suit_store = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
-		r_pocket =  /obj/item/ammo_magazine/a762/rsc
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1, /obj/item/device/binoculars = 1)
-		belt = /obj/item/storage/belt/armageddon
-
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/torch/self_lit = 1, /obj/item/ammo_box/flares = 1)
-	..()
-
+/decl/hierarchy/outfit/job/ig/sergeant
+	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	uniform = /obj/item/clothing/under/color/brown
+	suit = /obj/item/clothing/suit/armor/sgt
+	glasses = /obj/item/clothing/glasses/sunglasses
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	l_ear = /obj/item/device/radio/headset/headset_sec
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 2,)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer
 	r_pocket = /obj/item/ammo_magazine/mc9mmt/machinepistol

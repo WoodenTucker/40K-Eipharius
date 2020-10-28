@@ -514,3 +514,41 @@
 	caliber = ".45"
 	max_ammo = 7
 	multiple_sprites = 1
+
+/obj/item/gun/projectile/automatic/stubber
+	name = "Auto-Stubber"
+	desc = "A trusted weapon of civitas enforcers and guardsmen alike."
+	//icon = 'icons/obj/gunx35.dmi'
+	icon_state = "hmg"
+	item_state = "hmg"
+	str_requirement = 18
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 50
+	caliber = "a556"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/a556
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/box/a556/mg08
+	allowed_magazines = /obj/item/ammo_magazine/box/a556/mg08
+	one_hand_penalty = 50
+	wielded_item_state = "hmg-wielded"
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "hmg"
+	unwielded_loaded_icon = "hmg"
+	wielded_loaded_icon = "hmg-wielded"
+	unloaded_icon = "hmg-e"
+	unwielded_unloaded_icon = "hmg-e"
+	wielded_unloaded_icon = "hmg-wielded-e"
+	fire_delay=2
+	burst=1
+	move_delay=12
+	one_hand_penalty=8
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 150 //Enough for one clean mag.
