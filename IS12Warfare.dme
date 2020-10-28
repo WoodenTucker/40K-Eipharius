@@ -2442,6 +2442,7 @@
 #include "maps\random_ruins\space_ruins\space_ruins.dm"
 #include "maps\warhammer\warhammer.dm"
 #include "maps\warhammer\warhammer_define.dm"
+#include "maps\warhammer\jobs\astarte.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"

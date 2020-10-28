@@ -1,5 +1,6 @@
 /datum/job/guardsman
 	title = "Imperial Guardsman"
+	supervisors = "The Commissar and your Sergeant."
 	total_positions = 100
 	social_class = SOCIAL_CLASS_MIN
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
@@ -26,6 +27,7 @@
 
 /datum/job/ig/sergeant
 	title = "Sergeant"
+	supervisors = "The Commissar and Astartes Envoy."
 	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
@@ -49,6 +51,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
+	supervisors = "The astartes envoy."
 	total_positions = 1
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
@@ -83,6 +86,7 @@
 
 /datum/job/ig/enforcer
 	title = "Civitas Enforcer"
+	supervisors = "The Commissar and Rogue Trader."
 	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
