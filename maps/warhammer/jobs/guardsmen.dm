@@ -83,9 +83,9 @@
 
 /datum/job/ig/enforcer
 	title = "Civitas Enforcer"
-	total_positions = 3
+	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
+	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
 	sniper_skill = 3
@@ -158,6 +158,7 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
+	l_pocket = /obj/item/storage/box/ifak
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	belt = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
@@ -176,11 +177,29 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_pocket = /obj/item/storage/box/ifak
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 2,)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/ig/enforcer
+	name = OUTFIT_JOB_NAME("Civitas Enforcer")
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	uniform = /obj/item/clothing/under/color/brown
+	shoes = /obj/item/clothing/shoes/jackboots
+	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	suit = /obj/item/clothing/suit/armor/enforcer
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	belt = /obj/item/melee/baton
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	suit_store = /obj/item/gun/energy/las/lasgun
+	backpack_contents = list(/obj/item/cell/lasgun = 2, /obj/item/handcuffs = 2,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer

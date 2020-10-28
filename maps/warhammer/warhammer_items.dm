@@ -735,11 +735,13 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/guardsman/New()
-	..()
-	name = "An Imperial Guardsman's Armor"
-	desc = "The proud armor of an Imperial Guardsman"
-
+/obj/item/clothing/suit/armor/enforcer
+	name = "Enforcer's Light Armor"
+	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
+	icon_state = "fvest"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 //Rogue Trader Gear
