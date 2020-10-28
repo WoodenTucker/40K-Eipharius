@@ -127,6 +127,26 @@
 	else
 		icon_state = "magnum-e"
 
+
+
+/obj/item/gun/projectile/bolter_pistol
+	name = "bolter pistol"
+	desc = "A blessed bolt pistol of the Imperium"
+	icon_state = "bpistol"
+	item_state = "bpistol"
+	force = 35.0
+	caliber = ".75"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
+
+/obj/item/gun/projectile/bolter_pistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "bpistol-10"
+	else
+		icon_state = "bpistol-10-e"
+
 /obj/item/gun/projectile/gyropistol
 	name = "gyrojet pistol"
 	desc = "A bulky pistol designed to fire self propelled rounds."

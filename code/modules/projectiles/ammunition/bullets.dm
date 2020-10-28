@@ -230,3 +230,8 @@
 	spent_icon = "null"
 	caliber = "flamer"
 	projectile_type = /obj/item/projectile/flamer
+
+/obj/item/ammo_casing/boltpistol
+	desc = "A .75 bolt pistol casing."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/bpistol

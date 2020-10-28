@@ -715,6 +715,14 @@ Imperial Guardsman
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "guard"
 
+/obj/item/clothing/suit/armor/commissar
+	icon_state = "comissar3"
+
+/obj/item/clothing/head/commissar
+	name = "Commisar\'s Cap"
+	desc = "This cap strikes fear into the rank and file."
+	icon_state = "comissar3"
+	item_state = "comissar3"
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
