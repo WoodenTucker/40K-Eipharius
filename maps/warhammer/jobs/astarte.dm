@@ -6,6 +6,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	selection_color = "#270092"
 	department_flag = SEC|COM
+	access = list() 			//See get_access()
+	minimal_access = list() 	//See get_access()
 	auto_rifle_skill = 10 //astartes are masters of all weaponry
 	semi_rifle_skill = 10
 	sniper_skill = 10
@@ -31,3 +33,19 @@
 	l_hand = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(/obj/item/cell/lasgun = 2)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+	var/list/minimal_access = list()      //For some reason these need to be relisted here instead of the usual /datum/job, not sure why it isn't catching the previous definition but w/e
+	var/list/access = list()
+
+	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway)
