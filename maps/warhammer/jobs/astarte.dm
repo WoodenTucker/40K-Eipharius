@@ -3,7 +3,7 @@
 	total_positions = 1
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
-	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
+	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
 	selection_color = "#270092"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
@@ -17,7 +17,7 @@
 
 
 
-/decl/hierarchy/outfit/job/guardsman //suits don't work yuet, not showing properly
+/decl/hierarchy/outfit/job/envoy //suits don't work yet, not showing properly
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	head = /obj/item/clothing/head/helmet/ravenhelm
 	glasses = /obj/item/clothing/glasses/night
@@ -30,8 +30,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_hand = /obj/item/gun/energy/las/lasgun
-	backpack_contents = list(/obj/item/cell/lasgun = 2)
+	suit_store = /obj/item/gun/projectile/ravenbolter
+	backpack_contents = list(/obj/item/ammo_magazine/bolt_rifle_magazine = 2,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 	var/list/minimal_access = list()      //For some reason these need to be relisted here instead of the usual /datum/job, not sure why it isn't catching the previous definition but w/e
