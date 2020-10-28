@@ -18,9 +18,10 @@
 /decl/hierarchy/outfit/job/guardsman //suits don't work yuet, not showing properly
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	head = /obj/item/clothing/head/helmet/ravenhelm
+	glasses = /obj/item/clothing/glasses/night
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	suit = /obj/item/clothing/suit/armor/ravenguard
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
