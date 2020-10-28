@@ -136,6 +136,8 @@
 	item_state = "bpistol"
 	force = 50.0
 	caliber = ".75"
+	accuracy = 0.15
+	fire_delay = 1.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine

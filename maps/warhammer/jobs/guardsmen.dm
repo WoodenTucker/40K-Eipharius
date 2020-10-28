@@ -149,6 +149,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/commissar
 	glasses = /obj/item/clothing/glasses/sunglasses
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
 	l_ear = /obj/item/device/radio/headset/heads/hos
