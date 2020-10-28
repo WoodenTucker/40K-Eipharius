@@ -38,6 +38,13 @@
 	melee_damage_lower = 15
 	melee_damage_upper = 15
 
+/mob/living/simple_animal/hostile/alien/drone/ux
+	name = "unidentified xeno"
+	desc = "An unidentified xeno. It looks as though it was killed with a bolter shot to the cranium, perfect for study."
+	health = 0
+	maxHealth = 0
+
+
 /mob/living/simple_animal/hostile/alien/sentinel
 	name = "alien sentinel"
 	icon_state = "aliens_running"

@@ -715,6 +715,40 @@ Imperial Guardsman
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "guard"
 
+/obj/item/clothing/suit/armor/commissar
+	icon_state = "comissar3"
+
+/obj/item/clothing/head/commissar
+	name = "Commisar\'s Cap"
+	desc = "This cap strikes fear into the rank and file."
+	icon_state = "comissar3"
+	item_state = "comissar3"
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
+
+/obj/item/clothing/suit/armor/sgt
+	name = "Guardsman's Medium Armor"
+	desc = "The well-worn armor of an Imperial Guard Sergeant."
+	icon_state = "farmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/enforcer
+	name = "Enforcer's Light Armor"
+	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
+	icon_state = "fvest"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+//Rogue Trader Gear
+/obj/item/clothing/suit/armor/rtcloak
+	name = "Rogue Trader's Cloak"
+	desc = "The distinguished cloak of a Rogue Trader"
+	icon_state = "lccoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

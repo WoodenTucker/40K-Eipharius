@@ -28,13 +28,14 @@
 	title = "Sergeant"
 	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sgt
+	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC
 
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
 	shotgun_skill = 10
+	lmg_skill = 10
 
 	announced = FALSE
 
@@ -51,10 +52,14 @@
 	total_positions = 1
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/leader
+	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	can_be_in_squad = FALSE
 	sniper_skill = 10
-	open_when_dead = TRUE
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	open_when_dead = FALSE
 	department_flag = SEC
 
 	announced = FALSE
@@ -77,14 +82,14 @@
 		)
 
 /datum/job/ig/enforcer
-	title = "Adeptus Arbites Veteran"
-	total_positions = 1
+	title = "Civitas Enforcer"
+	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
+	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
 	sniper_skill = 3
-	shotgun_skill = 3
+	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 3
 	can_be_in_squad = FALSE
@@ -96,7 +101,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Veteran [current_name]")
+		H.fully_replace_character_name("Enforcer [current_name]")
 		H.add_stats(18, rand(10,16), rand(15,18))
 		H.say(";Arbites reporting for duty!")
 
@@ -126,7 +131,9 @@
 
 
 
-//All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
+/*All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
+Begin Warhammer loadouts
+*/
 
 /decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Imperial Guardsman")
@@ -139,33 +146,61 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	pda_type = null
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_hand = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(/obj/item/cell/lasgun = 2)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/redsoldier/sgt
-	suit_store = /obj/item/gun/projectile/automatic/m22/warmonger
-	head = /obj/item/clothing/head/helmet/redhelmet/leader
-	r_pocket = /obj/item/ammo_magazine/c45rifle/akarabiner
+/decl/hierarchy/outfit/job/ig/commissar
+	name = OUTFIT_JOB_NAME("Commissar")
+	glasses = /obj/item/clothing/glasses/sunglasses
+	uniform = /obj/item/clothing/under/color/black
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/armor/commissar
+	head = /obj/item/clothing/head/commissar
+	l_pocket = /obj/item/storage/box/ifak
+	l_ear = /obj/item/device/radio/headset/heads/hos
+	belt = /obj/item/gun/projectile/bolter_pistol
+	r_pocket = /obj/item/device/binoculars
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/redsoldier/sgt/equip()
-	if(prob(25))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1, /obj/item/device/binoculars = 1)
-		belt = null
-	else
-		suit_store = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
-		r_pocket =  /obj/item/ammo_magazine/a762/rsc
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1, /obj/item/device/binoculars = 1)
-		belt = /obj/item/storage/belt/armageddon
+/decl/hierarchy/outfit/job/ig/sergeant
+	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	uniform = /obj/item/clothing/under/color/brown
+	suit = /obj/item/clothing/suit/armor/sgt
+	glasses = /obj/item/clothing/glasses/sunglasses
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_pocket = /obj/item/storage/box/ifak
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 2,)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/torch/self_lit = 1, /obj/item/ammo_box/flares = 1)
-	..()
-
+/decl/hierarchy/outfit/job/ig/enforcer
+	name = OUTFIT_JOB_NAME("Civitas Enforcer")
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	uniform = /obj/item/clothing/under/color/brown
+	shoes = /obj/item/clothing/shoes/jackboots
+	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	suit = /obj/item/clothing/suit/armor/enforcer
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	belt = /obj/item/melee/baton
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	suit_store = /obj/item/gun/energy/las/lasgun
+	backpack_contents = list(/obj/item/cell/lasgun = 2, /obj/item/handcuffs = 2,)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer
 	r_pocket = /obj/item/ammo_magazine/mc9mmt/machinepistol
@@ -257,15 +292,6 @@
 	if(aspect_chosen(/datum/aspect/nightfare))
 		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
 	..()
-
-/decl/hierarchy/outfit/job/redsoldier/leader
-	glasses = /obj/item/clothing/glasses/sunglasses
-	suit = /obj/item/clothing/suit/armor/redcoat/leader
-	head = /obj/item/clothing/head/warfare_officer/redofficer
-	l_ear = /obj/item/device/radio/headset/red_team/all
-	belt = /obj/item/gun/projectile/revolver/cpt
-	r_pocket = /obj/item/device/binoculars
-	backpack_contents = list(/obj/item/ammo_magazine/handful/revolver = 2, /obj/item/grenade/smokebomb = 1)
 
 /decl/hierarchy/outfit/job/redsoldier/leader/equip()
 	if(aspect_chosen(/datum/aspect/nightfare))

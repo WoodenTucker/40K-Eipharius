@@ -1,6 +1,7 @@
 /decl/hierarchy/outfit/job/captain
 	name = OUTFIT_JOB_NAME("Rogue Trader")
 	head = /obj/item/clothing/head/caphat/cap
+	suit = /obj/item/clothing/suit/armor/rtcloak
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/rank/captain
 	l_ear = /obj/item/device/radio/headset/heads/captain
