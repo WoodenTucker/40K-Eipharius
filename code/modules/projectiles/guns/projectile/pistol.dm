@@ -134,7 +134,7 @@
 	desc = "A blessed bolt pistol of the Imperium"
 	icon_state = "bpistol"
 	item_state = "bpistol"
-	force = 35.0
+	force = 50.0
 	caliber = ".75"
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine

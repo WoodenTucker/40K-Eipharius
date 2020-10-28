@@ -154,7 +154,10 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	belt = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
 	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/sgt
 	suit_store = /obj/item/gun/projectile/automatic/m22/warmonger
