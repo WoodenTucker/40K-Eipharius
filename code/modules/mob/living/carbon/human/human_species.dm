@@ -53,6 +53,13 @@
 	pulling_punches = 1
 	..(new_loc, SPECIES_NABBER)
 
+/mob/living/carbon/human/eldar/New(var/new_loc)
+    ..(new_loc, SPECIES_ELDAR)
+
+/mob/living/carbon/human/astartes/New(var/new_loc)
+	..(new_loc, SPECIES_ASTARTES)
+	
+
 /mob/living/carbon/human/monkey/New(var/new_loc)
 	..(new_loc, "Monkey")
 
@@ -70,3 +77,4 @@
 
 /mob/living/carbon/human/lackey/New(var/new_loc)
 	..(new_loc, "Lackey")
+
