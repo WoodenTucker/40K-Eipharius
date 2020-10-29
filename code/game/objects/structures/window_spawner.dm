@@ -133,3 +133,6 @@
 
 /obj/effect/wingrille_spawn/reinforced/polarized/full/inquisitor
 	id = "inquisitorshipwindows"
+
+/obj/effect/wingrille_spawn/reinforced/polarized/full/biosmithy
+	id = "biosmithy"
