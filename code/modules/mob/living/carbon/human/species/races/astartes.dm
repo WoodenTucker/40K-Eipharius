@@ -1,6 +1,6 @@
 /*
 Astartes
-*/	
+*/
 
 /datum/species/human/astartes
 	name = SPECIES_ASTARTES
@@ -27,3 +27,25 @@ Astartes
 	heat_level_3 = 1000
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	sexybits_location = BP_GROIN
+	pass_flags = PASS_FLAG_TABLE
+	holder_type = /obj/item/holder
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/no_eyes),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right)
+		)
+
+/datum/species/human/astartes/get_bodytype(var/mob/living/carbon/human/astartes/H)
+	return SPECIES_ASTARTES
+
+
+/datum/species/human/astartes/get_random_name()
+	return "[lowertext(name)] [("Brother")]"
