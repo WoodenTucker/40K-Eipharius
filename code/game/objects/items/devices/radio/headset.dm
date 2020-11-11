@@ -245,6 +245,30 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/specops
 
+/obj/item/device/radio/headset/tau
+	name = "tau headset"
+	desc = "The headset of the greater good."
+	icon_state = "tau_headset"
+	item_state = "t_headset"
+	ks2type = null //until there is a tau channel
+
+/obj/item/device/radio/headset/fire_warrior
+	name = "fire caste headset"
+	desc = "The headset of the tau fire caste warriors."
+	icon_state = "fw_headset"
+	item_state = "t_headset_f"
+	ks2type = null
+
+/obj/item/device/radio/headset/fire_warrior/tactical
+	name = "tactical fire caste headset"
+	desc = "The tactically designed headset of the tau fire caste warriors."
+	icon_state = "guevesa_tactical_headset"
+	item_state = "t_tactical_headset_f"
+	ks2type = null
+
+/*tactical requires a subsection of code to switch between ``guevesa_tactical_headset`` and ``tau_tactical_headset``
+ per race its equipped on */
+
 /obj/item/device/radio/headset/attackby(obj/item/W as obj, mob/user as mob)
 //	..()
 	user.set_machine(src)
