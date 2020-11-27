@@ -349,6 +349,30 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Departures"
 	icon_state = "party"
 
+/area/cadiaoutpost/oa/hallway
+	name = "Hallway"
+	icon_state = "yellow"
+
+/area/cadiaoutpost/oa/hallway/northern
+	name = "Northern Hallway"
+	icon_state = "hallC1"
+
+/area/cadiaoutpost/oa/hallway/eastern
+	name = "Eastern Hallway"
+	icon_state = "escape"
+
+/area/cadiaoutpost/oa/hallway/southern
+	name = "Southern Hallway"
+	icon_state = "hallC3"
+
+/area/cadiaoutpost/oa/hallway/western
+	name = "Western Hallway"
+	icon_state = "hallC2"
+
+/area/cadiaoutpost/oa/hallway/innerhall
+	name = "Inner Hallway"
+	icon_state = "maintcentral"
+
 /area/cadiaoutpost/oa/engineering
 	name = "Machinamentum"
 	icon_state = "engineering"

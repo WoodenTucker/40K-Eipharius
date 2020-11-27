@@ -552,3 +552,41 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 150 //Enough for one clean mag.
+
+/obj/item/gun/projectile/ravenbolter //needs lots of work and love, ok standin for now
+	name = "raven guard bolter rifle"
+	desc = "The legendary weapon of the raven guard astartes, the bolter rifle."
+	icon_state = "ravenbolter"
+	str_requirement = 18
+	w_class = ITEM_SIZE_HUGE
+	force = 65
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 30
+	caliber = ".75"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/bolter
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
+	one_hand_penalty = 15
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "ravenbolter-30"
+	unloaded_icon = "ravenbolter-e"
+	fire_delay=2
+	burst=1
+	move_delay=12
+	one_hand_penalty=8
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 300 //Enough for one clean mag.
+
+/obj/item/gun/projectile/ravenbolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ravenbolter-30"
+	else
+		icon_state = "ravenbolter-e"

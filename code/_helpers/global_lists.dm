@@ -6,7 +6,7 @@ var/global/list/chemical_reactions_list				//list of all /datum/chemical_reactio
 var/global/list/chemical_produce_list				//list of all /datum/chemical_reaction datums, by produce. used for recipe lookup
 var/global/list/landmarks_list = list()				//list of all landmarks created
 var/global/list/surgery_steps = list()				//list of all surgery steps  |BS12
-var/global/list/side_effects = list()				//list of all medical sideeffects types by thier names |BS12
+var/global/list/side_effects = list()				//list of all medical sideeffects types by their names |BS12
 var/global/list/mechas_list = list()				//list of all mechs. Used by hostile mobs target tracking.
 var/global/list/joblist = list()					//list of all jobstypes, minus borg and AI
 
@@ -17,8 +17,8 @@ var/global/list/joblist = list()					//list of all jobstypes, minus borg and AI
 var/global/list/all_species[0]
 var/global/list/all_languages[0]
 var/global/list/language_keys[0]					// Table of say codes for all languages
-var/global/list/whitelisted_species = list(SPECIES_HUMAN) // Species that require a whitelist check.
-var/global/list/playable_species = list(SPECIES_HUMAN)    // A list of ALL playable species, whitelisted, latejoin or otherwise.
+var/global/list/whitelisted_species = list(SPECIES_HUMAN, SPECIES_ELDAR, SPECIES_ASTARTES) // Species that require a whitelist check.
+var/global/list/playable_species = list(SPECIES_HUMAN, SPECIES_ASTARTES, SPECIES_ELDAR)    // A list of ALL playable species, whitelisted, latejoin or otherwise.
 
 var/list/mannequins_
 

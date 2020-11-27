@@ -55,6 +55,11 @@
 	w_class = ITEM_SIZE_SMALL
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 55, rad = 0)
 
+/obj/item/clothing/mask/gas/half/guardsmen
+	name = "imperial guard face mask"
+	icon_state = "ig_halfgas"
+	item_state = "ig_halfgas"
+
 //Plague Dr suit can be found in clothing/suits/bio.dm
 /obj/item/clothing/mask/gas/plaguedoctor
 	name = "plague doctor mask"

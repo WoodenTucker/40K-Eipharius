@@ -4,6 +4,7 @@ Commissar=1
 Magos=1
 Research Director=1
 Sister Hospitaller=1
+Astartes Envoy=1
 
 Tech Priest=5
 Roboticist=1
@@ -22,6 +23,7 @@ Janitor=1
 Quartermaster=1
 Shaft Miner=3
 
+Commissar=1
 Sergeant=1
 Enforcer=1
 Imperial Guard=500

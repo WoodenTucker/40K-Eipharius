@@ -28,6 +28,7 @@
 	/datum/job/mining,
 	/datum/job/cargo_tech,
 	/datum/job/qm,
+	/datum/job/envoy,
 
 	)
 

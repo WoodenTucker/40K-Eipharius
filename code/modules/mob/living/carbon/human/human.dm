@@ -7,6 +7,8 @@
 
 	var/list/hud_list[10]
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
+	var/stealth = FALSE
+	var/scooldown = FALSE
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 

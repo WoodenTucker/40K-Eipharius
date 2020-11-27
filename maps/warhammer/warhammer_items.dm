@@ -752,3 +752,24 @@ Imperial Guardsman
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+//astartes gear
+/obj/item/clothing/suit/armor/ravenguard
+	name = "Raven Guard Power Armor"
+	desc = "The holy black armor of the Raven Guard."
+	icon = 'icons/mob/32x40/suits.dmi'
+	icon_state = "Ravsuit"
+	item_state = "Ravcap"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT|HIDESHOES|HIDEGLOVES
+
+/obj/item/clothing/head/helmet/ravenhelm
+	name = "Raven Guard Power Helm"
+	desc = "The black, beaked mask of the Raven Guard."
+	icon = 'icons/mob/32x40/hats.dmi'
+	icon_state = "Ravhelm"
+	item_state = "Ravhelm"
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS

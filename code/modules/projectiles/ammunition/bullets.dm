@@ -235,3 +235,8 @@
 	desc = "A .75 bolt pistol casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bpistol
+
+/obj/item/ammo_casing/bolter
+	desc = "A .75 bolt rifle casing."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/bolt

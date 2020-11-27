@@ -440,7 +440,7 @@
 		"Team Blue"=list("color"="#76abb2", "jobs"=list()),
 		"Command"=list("color"="#76abb2", "jobs"=list()),
 		"Imperial Guard"=list("color"="#b27676", "jobs"=list()),
-		"Adeptus Mechanicus"=list("color"="#76abb2", "jobs"=list()),
+		"Adeptus Mechanicus"=list("color"="#f03e08", "jobs"=list()),
 		"Medical"=list("color"="#76abb2", "jobs"=list()),
 		"Supply"=list("color"="#76abb2", "jobs"=list()),
 		"Civillian"=list("color"="#76abb2", "jobs"=list()),
@@ -468,6 +468,8 @@
 			jobcats["Adeptus Mechanicus"]["jobs"] += job
 		else if(job.department_flag & CIV)
 			jobcats["Civillian"]["jobs"] += job
+		else if(job.department_flag & INQ)
+			jobcats["Inquisition"]["jobs"] += job
 		else
 			jobcats["Misc"]["jobs"] += job
 
