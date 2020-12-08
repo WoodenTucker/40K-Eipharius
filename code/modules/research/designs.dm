@@ -565,7 +565,7 @@ other types of metals and chemistry for reagents).
 
 /datum/design/item/AssembleDesignName()
 	..()
-	name = "Weapon prototype ([item_name])"
+	name = "[item_name]"
 
 /datum/design/item/AssembleDesignDesc()
 	if(!desc)
