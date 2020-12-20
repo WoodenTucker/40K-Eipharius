@@ -275,6 +275,36 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 
 //Cadia Stuff
 
+//Table of contents
+//General map Areas
+//Outpost Areas
+//Security
+//Head's Offices
+//Engineering
+//Medical
+//Research
+//Service
+//Supply
+//Maintenance
+//Public Crew rooms
+//Tcommsat
+//Storage
+//Antagonists
+//Shuttle
+//
+//
+
+
+/*
+Area basic template
+
+/area/cadiaoupost/oa/
+	name = ""
+	icon_state = ""
+
+*/
+
+
 //General Map Areas
 /area/cadiaoutpost/gma/air
 	name = "Air"
@@ -293,29 +323,60 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Arrivals"
 	icon_state = "cryo"
 
-/area/cadiaoutpost/oa/armory
+//////////////////////////////////////
+//////////Security////////////////////
+//////////////////////////////////////
+/area/cadiaoutpost/oa/security
+	name = "Security"
+	icon_state = "security"
+
+/area/cadiaoutpost/oa/security/armory
 	name = "Armory"
 	icon_state = "armory"
 
-/area/cadiaoutpost/oa/bar
-	name = "The Maltese Falcon"
-	icon_state = "bar"
-
-/area/cadiaoutpost/oa/barracks
+/area/cadiaoutpost/oa/security/barracks
 	name = "Barracks"
-	icon_state = "security"
+	icon_state = "barracks"
 
-/area/cadiaoutpost/oa/bridge
-	name = "Bridge"
-	icon_state = "bridge"
+/area/cadiaoutpost/oa/security/brig
+	name = "Brig"
+	icon_state = "brig"
 
-/area/cadiaoutpost/oa/bridge/hallway
-	name = "Bridge Hallway"
-	icon_state = "blueold"
+/area/cadiaoutpost/oa/security/prison
+	name = "Prison"
+	icon_state = "sec_prison"
 
-/area/cadiaoutpost/oa/bridge/meetingroom
-	name = "Meeting Room"
-	icon_state = "blue"
+/area/cadiaoutpost/oa/security/detective
+	name = "detective"
+	icon_state = "detective"
+
+/area/cadiaoutpost/oa/security/warden
+	name = "Warden"
+	icon_state = "warden"
+
+/area/cadiaoutpost/oa/security/customs
+	name = "customs"
+	icon_state = "customs"
+
+/area/cadiaoutpost/oa/security/firing_range
+	name = "Firing Range"
+	icon_state = "firingrange"
+
+/area/cadiaoutpost/oa/security/execution
+	name = "Execution"
+	icon_state = "execution_room"
+
+/area/cadiaoutpost/oa/security/execution/education
+	name = "Prisoner Education"
+	icon_state = "execution_room"
+
+/area/cadiaoutpost/oa/security/execution/transfer
+	name = ""
+	icon_state = "sec_processing"
+
+//////////////////////////////////////////
+///////////////Head's Offices/////////////
+//////////////////////////////////////////
 
 /area/cadiaoutpost/oa/bridge/offices/roguetrader
 	name = "Rogue Trader's Office"
@@ -341,9 +402,24 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Sister Hospitaller's Office"
 	icon_state = "cmo"
 
-/area/cadiaoutpost/oa/chapel
-	name = "Chapel"
-	icon_state = "chapel"
+////////////////////////
+////////Misc (temp)/////
+////////////////////////
+/area/cadiaoutpost/oa/bridge
+	name = "Bridge"
+	icon_state = "bridge"
+
+/area/cadiaoutpost/oa/bridge/vault
+	name = "Vault"
+	icon_state = "nuke_storage"
+
+/area/cadiaoutpost/oa/bridge/hallway
+	name = "Bridge Hallway"
+	icon_state = "blueold"
+
+/area/cadiaoutpost/oa/bridge/meetingroom
+	name = "Meeting Room"
+	icon_state = "blue"
 
 /area/cadiaoutpost/oa/departures
 	name = "Departures"
@@ -373,14 +449,56 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Inner Hallway"
 	icon_state = "maintcentral"
 
+/////////////////////////////////////////
+////////////////Engineering/////////////
+////////////////////////////////////////
 /area/cadiaoutpost/oa/engineering
 	name = "Machinamentum"
 	icon_state = "engineering"
 
 /area/cadiaoutpost/oa/engineering/engine
 	name = "Sacrarium Machina"
-	icon_state = "orange"
+	icon_state = "engine"
 
+/area/cadiaoutpost/oa/engineering/engistorage
+	name = "Engineering Storage"
+	icon_state = "engineering_storage"
+
+/area/cadiaoutpost/oa/engineering/engineeringfoyer
+	name = "Engineering Foyer"
+	icon_state = "engineering_foyer"
+
+/area/cadiaoutpost/oa/engineering/engine/enginewaste
+	name = "Engine Waste"
+	icon_state = "engine_waste"
+
+/area/cadiaoutpost/oa/engineering/engine/enginesmes
+	name = "Engine Smes"
+	icon_state = "engine_smes"
+
+/area/cadiaoutpost/oa/engineering/engineeringbreak
+	name = "Engineering Breakroom"
+	icon_state = "engineering_break"
+
+/area/cadiaoutpost/oa/engineering/atmospherics
+	name = "Atmospherics"
+	icon_state = "atmos"
+
+/area/cadiaoutpost/oa/engineering/atmospherics/atmosmonitoring
+	name = "Atmos Monitoring"
+	icon_state = "atmos_monitoring"
+
+/area/cadiaoutpost/oa/engineering/atmospherics/atmosstorage
+	name = "Atmos Storage"
+	icon_state = "atmos_storage"
+
+/area/cadiaoutpost/oa/engineering/Gravity
+	name = "Gravity Generator"
+	icon_state = "gravgen"
+
+//////////////////////////////////////
+//////////////Medical////////////////
+/////////////////////////////////////
 /area/cadiaoutpost/oa/medicae
 	name = "Medicae"
 	icon_state = "medbay"
@@ -393,6 +511,57 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "Praetorium Aegrotatio"
 	icon_state = "virology"
 
+/area/cadiaoutpost/oa/medicae/chem
+	name = "Chemistry"
+	icon_state = "chem"
+
+/area/cadiaoutpost/oa/medicae/surgery
+	name = "Surgery"
+	icon_state = "surgery"
+
+/area/cadiaoutpost/oa/medicae/morgue
+	name = "Morgue"
+	icon_state = "morgue"
+
+/area/cadiaoutpost/oa/medicae/patients
+	name = "patients"
+	icon_state = "patients"
+
+/area/cadiaoutpost/oa/medicae/patients/room_a
+	name = "patients A"
+	icon_state = "patients"
+
+/area/cadiaoutpost/oa/medicae/patients/room_b
+	name = "patients B"
+	icon_state = "patients"
+
+/area/cadiaoutpost/oa/medicae/patients/room_c
+	name = "patients C"
+	icon_state = "patients"
+
+/area/cadiaoutpost/oa/medicae/patients/room_d
+	name = "patients D"
+	icon_state = "patients"
+
+/area/cadiaoutpost/oa/medicae/patients/room_e
+	name = "patients E"
+	icon_state = "patients"
+
+/area/cadiaoutpost/oa/medicae/genetics
+	name = "Genetics"
+	icon_state = "genetics"
+
+/area/cadiaoutpost/oa/medicae/genetics/cloning
+	name = "Cloning"
+	icon_state = "cloning"
+
+/area/cadiaoutpost/oa/medicae/cryo
+	name = "Cryo"
+	icon_state = "cryo"
+
+//////////////////////////////////////////
+////////////////Research//////////////////
+/////////////////////////////////////////
 /area/cadiaoutpost/oa/research
 	name = "Biocogitatum"
 	icon_state = "research"
@@ -404,3 +573,522 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 /area/cadiaoutpost/oa/research/xenobiology
 	name = "Sanctum Biologis"
 	icon_state = "green"
+
+/area/cadiaoutpost/oa/research/toxins
+	name = "Toxins"
+	icon_state = "toxins"
+
+/area/cadiaoutpost/oa/research/toxins/toxinlab
+	name = "toxin lab"
+	icon_state = "toxlab"
+
+/area/cadiaoutpost/oa/research/toxins/toxintest
+	name = "Toxin Test"
+	icon_state = "toxtest"
+
+/area/cadiaoutpost/oa/research/toxins/toxinstorage
+	name = "Toxin Storage"
+	icon_state = "toxstorage"
+
+/////////////////////////////////////
+/////////////Service/////////////////
+/////////////////////////////////////
+
+/area/cadiaoutpost/oa/service
+	name = "service"
+	icon_state = "grey"
+
+/area/cadiaoutpost/oa/service/bar
+	name = "The Maltese Falcon"
+	icon_state = "bar"
+
+/area/cadiaoutpost/oa/service/kitchen
+	name = "Kitchen"
+	icon_state = "kitchen"
+
+/area/cadiaoutpost/oa/service/hydroponics
+	name = "Hydroponics"
+	icon_state = "hydro"
+
+/area/cadiaoutpost/oa/service/chapel
+	name = "Chapel"
+	icon_state = "chapel"
+
+/area/cadiaoutpost/oa/service/chapel/chapeloffice
+	name = "Chapel Office"
+	icon_state = "chapeloffice"
+
+/area/cadiaoutpost/oa/service/janitor
+	name = "Janitor"
+	icon_state = "janitor"
+
+/area/cadiaoutpost/oa/service/theatre
+	name = "Theatre"
+	icon_state = "theatre"
+
+/area/cadiaoutpost/oa/service/library
+	name = "Library"
+	icon_state = "library"
+
+/area/cadiaoutpost/oa/service/library/lounge
+	name = "Lounge"
+	icon_state = "library"
+
+/area/cadiaoutpost/oa/service/kitchen/cafeteria
+	name = "cafeteria"
+	icon_state = "cafeteria"
+
+/area/cadiaoutpost/oa/service/lawoffice
+	name = "Law Office"
+	icon_state = "law"
+
+/////////////////////////////////////////
+//////////////////Supply////////////////
+////////////////////////////////////////
+/area/cadiaoutpost/oa/supply
+	name = "Supply"
+	icon_state = "brown"
+
+/area/cadiaoutpost/oa/supply/cargo
+	name = "Cargo"
+	icon_state = "cargo"
+
+/area/cadiaoutpost/oa/supply/cargo/quartoffice
+	name = "Quartermaster office"
+	icon_state = "quartoffice"
+
+/area/cadiaoutpost/oa/supply/cargo/warehouse
+	name = "Warehouse"
+	icon_state = "warehouse"
+
+/area/cadiaoutpost/oa/supply/cargo/office
+	name = "Cargo Office"
+	icon_state = "cargo_office"
+
+/area/cadiaoutpost/oa/supply/cargo/mailroom
+	name = "Mail Room"
+	icon_state = "mailroom"
+
+/area/cadiaoutpost/oa/supply/disposal
+	name = "Disposal"
+	icon_state = "disposal"
+
+/area/cadiaoutpost/oa/supply/mining
+	name = "Mining"
+	icon_state = "mining"
+
+/area/cadiaoutpost/oa/supply/mining/eva
+	name = "Mining Eva"
+	icon_state = "mining_eva"
+
+/area/cadiaoutpost/oa/supply/mining/miningliving
+	name = "mining Living"
+	icon_state = "mining_living"
+
+/area/cadiaoutpost/oa/supply/mining/explored
+	name = "Mining Explored"
+	icon_state = "explored"
+
+/area/cadiaoutpost/oa/supply/mining/unexplored
+	name = "Mining Unexplored"
+	icon_state = "unexplored"
+
+/area/cadiaoutpost/oa/supply/mining/miningproduction
+	name = "Mining Production"
+	icon_state = "mining_production"
+
+/area/cadiaoutpost/oa/supply/mining/office
+	name = "Mining Office"
+	icon_state = "mining_office"
+
+
+////////////////////////////////////////
+//////////Maintenance//////////////////
+//////////////////////////////////////
+/area/cadiaoutpost/oa/maintenance
+	name = "Maintenance"
+	icon_state = "maintenance"
+
+/area/cadiaoutpost/oa/maintenance/south
+	name = "south"
+	icon_state = "southmaint"
+
+/area/cadiaoutpost/oa/maintenance/south/second
+	name = "south Secondary"
+	icon_state = "southmaint2"
+
+/area/cadiaoutpost/oa/maintenance/central
+	name = "Central"
+	icon_state = "maintcentral"
+
+/area/cadiaoutpost/oa/maintenance/central/second
+	name = "Central Secondary"
+	icon_state = "maintcentral2"
+
+/area/cadiaoutpost/oa/maintenance/department
+	name = "Department"
+	icon_state = "maint_department"
+
+/area/cadiaoutpost/oa/maintenance/department/bridge
+	name = "Bridge Maintenance"
+	icon_state = "maint_bridge"
+
+/area/cadiaoutpost/oa/maintenance/department/supply
+	name = "Supply"
+	icon_state = "brown"
+
+/area/cadiaoutpost/oa/maintenance/department/supply/cargo
+	name = "Cargo Maintenance"
+	icon_state = "maint_cargo"
+
+/area/cadiaoutpost/oa/maintenance/department/service/chapel
+	name = "Chapel Maintenance"
+	icon_state = "maint_chapel"
+
+/area/cadiaoutpost/oa/maintenance/department/service/chapel/monastery
+	name = "Monastery Maintenance"
+	icon_state = "maint_monastery"
+
+/area/cadiaoutpost/oa/maintenance/department/crewquarters
+	name = "Crew Quarters Maintenance"
+	icon_state = "maint_crew"
+
+/area/cadiaoutpost/oa/maintenance/department/service/bar
+	name = "Bar Maintenance"
+	icon_state = "maint_bar"
+
+/area/cadiaoutpost/oa/maintenance/department/crewquarters/dorms
+	name = "Dorms Maintenance"
+	icon_state = "maint_dorms"
+
+/area/cadiaoutpost/oa/maintenance/department/engineering
+	name = "engineering Maintenance"
+	icon_state = "maint_engineering"
+
+/area/cadiaoutpost/oa/maintenance/department/engineering/electrical
+	name = "Electrical Maintenance"
+	icon_state = "maint_electrical"
+
+/area/cadiaoutpost/oa/maintenance/department/engineering/engine
+	name = "Engine Maintenance"
+	icon_state = "maint_engine"
+
+/area/cadiaoutpost/oa/maintenance/department/engineering/atmos
+	name = "Atmos Maintenance"
+	icon_state = "maint_atmos"
+
+/area/cadiaoutpost/oa/maintenance/department/engineering/engine/turbine
+	name = "Turbine Maintenance"
+	icon_state = "maint_turbine"
+
+/area/cadiaoutpost/oa/maintenance/department/eva
+	name = "EVA Maintenance"
+	icon_state = "maint_eva"
+
+/area/cadiaoutpost/oa/maintenance/department/medical
+	name = "Medical Maintenance"
+	icon_state = "maint_medbay"
+
+/area/cadiaoutpost/oa/maintenance/department/medical/morgue
+	name = "Morgue Maintenance"
+	icon_state = "maint_morgue"
+
+/area/cadiaoutpost/oa/maintenance/department/science
+	name = "Science Maintenance"
+	icon_state = "maint_sci"
+
+/area/cadiaoutpost/oa/maintenance/department/science/xenobiology
+	name = "Xenobiology Maintenance"
+	icon_state = "maint_xenobio"
+
+/area/cadiaoutpost/oa/maintenance/department/security
+	name = "Security Maintenance"
+	icon_state = "maint_sec"
+
+/area/cadiaoutpost/oa/maintenance/department/security/brig
+	name = "Brig Maintenance"
+	icon_state = "maint_brig"
+
+/area/cadiaoutpost/oa/maintenance/department/security/prison
+	name = "Prison Maintenance"
+	icon_state = "maint_prison"
+
+/area/cadiaoutpost/oa/maintenance/department/supply/cargo/mining
+	name = "Mining Maintenance"
+	icon_state = "maint_mining"
+
+/area/cadiaoutpost/oa/maintenance/north
+	name = "North"
+	icon_state = "nmaint"
+
+/area/cadiaoutpost/oa/maintenance/north/second
+	name = "North Secondary"
+	icon_state = "nmaint2"
+
+/area/cadiaoutpost/oa/maintenance/west/northwest
+	name = "Northwest"
+	icon_state = "nwmaint"
+
+/area/cadiaoutpost/oa/maintenance/west
+	name = "West"
+	icon_state = "wmaint"
+
+/area/cadiaoutpost/oa/maintenance/west/southwest
+	name = "Southwest"
+	icon_state = "swmaint"
+
+/area/cadiaoutpost/oa/maintenance/east
+	name = "East"
+	icon_state = "emaint"
+
+/area/cadiaoutpost/oa/maintenance/east/northeast
+	name = "Northeast"
+	icon_state = "semaint"
+
+/area/cadiaoutpost/oa/maintenance/east/southeast
+	name = "Southeast"
+	icon_state = "semaint"
+
+//////////////////////////////////
+///////Public Crew rooms/////////
+//////////////////////////////////
+/area/cadiaoutpost/oa/crew_quarters
+	name = "Crew Quarters"
+	icon_state = "crew_quarters"
+
+/area/cadiaoutpost/oa/crew_quarters/dorms
+	name = "Dormitory"
+	icon_state = "Sleep"
+
+/area/cadiaoutpost/oa/crew_quarters/fitness
+	name = "Fitness"
+	icon_state = "fitness"
+
+/area/cadiaoutpost/oa/crew_quarters/locker
+	name = "Locker Room"
+	icon_state = "locker"
+
+/area/cadiaoutpost/oa/crew_quarters/lounge
+	name = "Lounge"
+	icon_state = "lounge"
+
+/area/cadiaoutpost/oa/crew_quarters/toilet
+	name = "Toilet"
+	icon_state = "toilet"
+
+/area/cadiaoutpost/oa/crew_quarters/cryopods
+	name = "Cryopods"
+	icon_state = "cryopods"
+
+////////////////////////////////////
+////////////Tcommsat////////////////
+///////////////////////////////////
+
+/area/cadiaoutpost/oa/Telecomms
+	name = "Telecommunications"
+	icon_state = "tcomsatcham"
+
+/area/cadiaoutpost/oa/Telecomms/entrance
+	name = "Telecomm Entrance"
+	icon_state = "tcomsatentrance"
+
+/area/cadiaoutpost/oa/Telecomms/lobby
+	name = "Telecomm Lobby"
+	icon_state = "tcomsatlob"
+
+/area/cadiaoutpost/oa/Telecomms/Control
+	name = "Control Room"
+	icon_state = "tcomsatcomp"
+
+/area/cadiaoutpost/oa/Telecomms/Server
+	name = "Telecomms server room"
+	icon_state = "tcomsatcham"
+
+///////////////////////////
+////////Storage////////////
+//////////////////////////
+
+/area/cadiaoutpost/oa/storage
+	name = "Storage"
+	icon_state = "storage"
+
+/area/cadiaoutpost/oa/storage/primary
+	name = "Primary Storage"
+	icon_state = "primary_storage"
+
+/area/cadiaoutpost/oa/storage/primary/auxiliary
+	name = "Auxiliary Storage"
+	icon_state = "aux_storage"
+
+/area/cadiaoutpost/oa/storage/art
+	name = "Art Storage"
+	icon_state = "art_storage"
+
+/area/cadiaoutpost/oa/storage/eva
+	name = "EVA Storage"
+	icon_state = "eva_storage"
+
+/area/cadiaoutpost/oa/storage/tech
+	name = "Tech Storage"
+	icon_state = "tech_storage"
+
+/area/cadiaoutpost/oa/storage/tech/secure
+	name = "Secure Tech Storage"
+	icon_state = "securetech_storage"
+
+/area/cadiaoutpost/oa/storage/tcomm
+	name = "Tcomm Storage"
+	icon_state = "tecomm_storage"
+
+///////////////////////////
+/////////Antagonists////////
+////////////////////////////
+
+/area/cadiaoutpost/oa/antagonist
+	name = "Antagonist"
+	icon_state = ""
+
+/area/cadiaoutpost/oa/antagonist/syndicate
+	name = ""
+	icon_state = ""
+/area/cadiaoutpost/oa/antagonist/syndicate/syndie_ship
+	name = "Syndicate Ship"
+	icon_state = "syndie-ship"
+
+/area/cadiaoutpost/oa/antagonist/syndicate/syndie_control
+	name = "Syndicate Control"
+	icon_state = "syndie-control"
+
+/area/cadiaoutpost/oa/antagonist/syndicate/syndie_elite
+	name = "Syndicate Elite"
+	icon_state = "syndie-elite"
+
+/area/cadiaoutpost/oa/antagonist/wizard
+	name = "Wizards Den"
+	icon_state = "yellow"
+
+/area/cadiaoutpost/oa/antagonist/plague
+	name = "Nurgle's Fetid Pool"
+	icon_state = "sickly_green"
+
+/area/cadiaoutpost/oa/antagonist/tyranid
+	name = "Spore pod"
+	icon_state = "tyranid_red"
+
+
+////////////////////////////////
+///////////Shuttle//////////////
+///////////////////////////////
+
+/area/cadiaoutpost/oa/shuttle
+	name = "Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/arrival
+	name = "Arrivals Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/assultpod
+	name = "Assult Pod"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/custom
+	name = "Custom Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/escape
+	name = "Escape Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/labor
+	name = "Labor Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/mining
+	name = "Mining Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/mining/large
+	name = "Large Mining Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/pirate
+	name = "Pirate Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/pod_1
+	name = "Escape Pod 1"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/pod_2
+	name = "Escape Pod 2"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/pod_3
+	name = "Escape Pod 3"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/pod_4
+	name = "Escape Pod 4"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/supply
+	name = "Supply Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate
+	name = "Syndicate Shuttle"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate/airlock
+	name = "Syndicate Infiltrator Airlock"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate/armory
+	name = "Syndicate Infiltrator Armory"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate/bridge
+	name = "Syndicate Infiltrator Bridge"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate/eva
+	name = "Syndicate Infiltrator EVA"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate/hallway
+	name = "Syndicate Infiltrator Hallway"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate/medical
+	name = "Syndicate Infiltrator Medical"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/syndicate_scout
+	name = "Syndicate Scout"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/transit
+	name = "Hyperspace"
+	icon_state = "shuttle"
+
+/area/cadiaoutpost/oa/shuttle/transport
+	name = "Transport Shuttle"
+	icon_state = "shuttle"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
