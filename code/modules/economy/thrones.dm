@@ -1,4 +1,4 @@
-/obj/item/Thrones
+/obj/item/thrones
 	name = "0 Throne"
 	desc = "It's worth 0 Thrones."
 	gender = PLURAL
