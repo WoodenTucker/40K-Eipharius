@@ -1,4 +1,4 @@
-/obj/item/thrones
+/obj/item/Thrones
 	name = "0 Throne"
 	desc = "It's worth 0 Thrones."
 	gender = PLURAL
@@ -76,7 +76,7 @@
 		M.Turn(pick(-45, -27.5, 0, 0, 0, 0, 0, 0, 0, 27.5, 45))
 		coin.transform = M
 		src.overlays += coin
- 
+
 	src.desc = "They are worth [worth] Thrones."
 	if(worth in denominations)
 		src.SetName("[worth] Throne")

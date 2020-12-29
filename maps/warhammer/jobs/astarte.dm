@@ -14,7 +14,6 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	whitelisted_species = SPECIES_ASTARTES
 
 
 
