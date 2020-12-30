@@ -14,7 +14,7 @@ this shit is just the barebones of the race im going to add the verbs later
     default_language = LANGUAGE_ELDAR
     language = LANGUAGE_ELDAR
     name_language = LANGUAGE_ELDAR
-    additional_langs = LANGUAGE_GOTHIC
+    additional_langs = LANGUAGE_LOW_GOTHIC
     grab_type = GRAB_TAKEDOWN
     total_health = 300
     slowdown = -1.5
