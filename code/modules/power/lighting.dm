@@ -141,9 +141,9 @@
 	anchored = 1
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER  					// They were appearing under mobs which is a little weird - Ostaf
-	use_power = 2
-	idle_power_usage = 2
-	active_power_usage = 20
+	use_power = 0
+	idle_power_usage = 0
+	active_power_usage = 0 //temporary or maybe not so we can get power
 	power_channel = LIGHT //Lights are calc'd via area so they dont need to be in the machine list
 
 	var/on = 0					// 1 if on, 0 if off
@@ -555,8 +555,8 @@
 	item_state = "c_tube"
 	matter = list("glass" = 100)
 
-	brightness_range = 5	// luminosity when on, also used in power calculation
-	brightness_power = 4
+	brightness_range = 10	// luminosity when on, also used in power calculation
+	brightness_power = 10
 	brightness_color = "#B2B2B2"//"#FAE1AF"//"#C5D8B3"//#CDFEE0
 	lighting_modes = list(
 		LIGHTMODE_EMERGENCY = list(l_range = 4, l_power = 1, l_color = "#da0205"),
@@ -566,8 +566,8 @@
 /obj/item/light/tube/large
 	w_class = ITEM_SIZE_SMALL
 	name = "large light tube"
-	brightness_range = 9
-	brightness_power = 6
+	brightness_range = 18
+	brightness_power = 12
 
 /obj/item/light/bulb
 	name = "light bulb"
