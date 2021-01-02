@@ -197,8 +197,8 @@
 	ks2type = /obj/item/device/encryptionkey/heads/cmo
 
 /obj/item/device/radio/headset/heads/hop
-	name = "Seneschal's headset"
-	desc = "The headset of the guy who will one day be captain."
+	name = "Seneschal's vox"
+	desc = "The vox of the right hand of the Rogue Trader."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/hop

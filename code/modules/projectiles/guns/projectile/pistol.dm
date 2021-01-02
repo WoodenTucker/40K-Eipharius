@@ -58,8 +58,8 @@
 		icon_state = "secgundark-e"
 
 /obj/item/gun/projectile/talon
-	name = "M2A3 Pistol"
-	desc = "Magnum opus of pistols. Also known as Talon."
+	name = "chrome stub pistol"
+	desc = "A magnificent chrome stub-pistol."
 	icon_state = "talon"
 	w_class = ITEM_SIZE_SMALL
 	fire_delay = 5

@@ -50,6 +50,12 @@
 	desc = "A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority."
 	icon_state = "hopcap"
 
+/obj/item/clothing/head/seneschal
+	name = "seneschal's cap"
+	desc = "This hat is the mark of the right-hand of a Rogue Trader. He handles business while the Trader is otherwise occupied."
+	icon_state = "chaperon"
+	item_state = "chaperon"
+
 //Chaplain
 /obj/item/clothing/head/chaplain_hood
 	name = "chaplain's hood"

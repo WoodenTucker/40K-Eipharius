@@ -190,3 +190,23 @@ obj/item/gun/energy/retro
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)
+
+/obj/item/gun/energy/las/laspistol
+	name = "laspistol"
+	desc = "The standard-issue rifle of the Astra Militarum as well as one of the most common weapons found in the Imperium of Man."
+	icon_state = "talon"
+	item_state = "talon"
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	w_class = ITEM_SIZE_NORMAL
+	force = 5
+	accuracy = 2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		)
