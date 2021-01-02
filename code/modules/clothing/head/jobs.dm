@@ -28,21 +28,33 @@
 		)
 	body_parts_covered = 0
 
-/obj/item/clothing/head/caphat/cap
-	name = "captain's cap"
-	desc = "You fear to wear it for the negligence it brings."
-	icon_state = "capcap"
+/obj/item/clothing/head/rt
+	name = "rogue trader's cap"
+	desc = "A fanciful hat fitting a wealthy Rogue Trader."
+	icon_state = "fancyhat"
+	item_state = "fancyhat"
 
 /obj/item/clothing/head/caphat/formal
 	name = "parade hat"
 	desc = "No one in a commanding position should be without a perfect, white hat of ultimate authority."
 	icon_state = "officercap"
 
+/obj/item/clothing/head/caphat/cap
+	name = "rogue trader's hat"
+	desc = "The wonderfully fancy hat of a wealthy Rogue Trader."
+	icon_state = "capcap"
+
 //HOP
 /obj/item/clothing/head/caphat/hop
 	name = "crew resource's hat"
 	desc = "A stylish hat that both protects you from enraged former-crewmembers and gives you a false sense of authority."
 	icon_state = "hopcap"
+
+/obj/item/clothing/head/seneschal
+	name = "seneschal's cap"
+	desc = "This hat is the mark of the right-hand of a Rogue Trader. He handles business while the Trader is otherwise occupied."
+	icon_state = "chaperon"
+	item_state = "chaperon"
 
 //Chaplain
 /obj/item/clothing/head/chaplain_hood

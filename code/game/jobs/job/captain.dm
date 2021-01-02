@@ -8,12 +8,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Golden Throne and the High Lord's of Terra"
+	supervisors = "The Golden Throne and the High Lords of Terra"
 	selection_color = "#1d1d4f"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
-	minimal_player_age = 14
+	minimal_player_age = 25
 	economic_modifier = 20
 
 	ideal_character_age = 70 // Old geezer captains ftw
@@ -37,7 +37,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	supervisors = "the Rogue Trader"
 	selection_color = "#2f2f7f"
 	req_admin_notify = 1
-	minimal_player_age = 14
+	minimal_player_age = 25
 	economic_modifier = 10
 	ideal_character_age = 50
 

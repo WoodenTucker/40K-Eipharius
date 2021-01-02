@@ -1,8 +1,8 @@
 /obj/item/device/spy_bug
 	name = "bug"
 	desc = ""	// Nothing to see here
-	icon = 'icons/obj/weapons.dmi'
-	icon_state = "eshield0"
+	icon = 'icons/obj/device.dmi'
+	icon_state = "spy_bug"
 	item_state = "nothing"
 	plane = OBJ_PLANE
 	layer = BELOW_TABLE_LAYER

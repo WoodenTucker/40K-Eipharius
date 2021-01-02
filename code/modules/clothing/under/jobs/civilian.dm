@@ -28,6 +28,12 @@
 	item_state = "b_suit"
 	worn_state = "captain"
 
+/obj/item/clothing/under/rank/roguetrader
+	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rank of \"Rogue Trader\"."
+	name = "Rogue Trader's jumpsuit"
+	icon_state = "magistrate"
+	item_state = "magistrate"
+	worn_state = "magistrate"
 
 /obj/item/clothing/under/rank/cargo
 	name = "quartermaster's jumpsuit"
@@ -80,10 +86,16 @@
 /obj/item/clothing/under/rank/head_of_personnel_whimsy
 	desc = "A blue jacket and red tie, with matching red cuffs! Snazzy. Wearing this makes you feel more important than your job title does."
 	name = "Seneschal's suit"
-	icon_state = "hopwhimsy"
-	item_state = "b_suit"
-	worn_state = "hopwhimsy"
+	icon_state = "heir"
+	item_state = "heir"
+	worn_state = "heir"
 
+/obj/item/clothing/under/rank/seneschal
+	desc = "It's a jumpsuit worn by someone who works in the position of \"Seneschal\", the right-hand of the Rogue Trader."
+	name = "seneschal's jumpsuit"
+	icon_state = "arbiter"
+	item_state = "arbiter"
+	worn_state = "arbiter"
 
 /obj/item/clothing/under/rank/hydroponics
 	desc = "It's a jumpsuit designed to protect against minor plant-related hazards."
