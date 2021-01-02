@@ -142,6 +142,13 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/captain
 
+/obj/item/device/radio/headset/heads/rt
+	name = "rogue trader's vox"
+	desc = "A command-level vox with high tiers of encryption."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks2type = /obj/item/device/encryptionkey/heads/captain
+
 /obj/item/device/radio/headset/heads/ai_integrated //No need to care about icons, it should be hidden inside the AI anyway.
 	name = "\improper AI subspace transceiver"
 	desc = "Integrated AI radio transceiver."

@@ -1,20 +1,17 @@
 /decl/hierarchy/outfit/job/captain
 	name = OUTFIT_JOB_NAME("Rogue Trader")
-	head = /obj/item/clothing/head/caphat/cap
+	head = /obj/item/clothing/head/rt
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/rtcloak
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/rank/captain
-	l_ear = /obj/item/device/radio/headset/heads/captain
-	shoes = /obj/item/clothing/shoes/brown
+	uniform = /obj/item/clothing/under/rank/roguetrader
+	belt = /obj/item/gun/projectile/bolter_pistol
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/heads/rt
+	shoes = /obj/item/clothing/shoes/commandboots
 	id_type = /obj/item/card/id/gold
 	pda_type = /obj/item/device/pda/captain
 	backpack_contents = list(/obj/item/storage/box/ids = 1)
-
-/decl/hierarchy/outfit/job/captain/New()
-	..()
-	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/storage/backpack/captain
-	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/storage/backpack/satchel/satchel_cap
-	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/com
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
 	..()
@@ -33,8 +30,10 @@
 	name = OUTFIT_JOB_NAME("Seneschal")
 	uniform = /obj/item/clothing/under/rank/head_of_personnel_whimsy
 	head = /obj/item/clothing/head/caphat/hop
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/heads/hop
-	shoes = /obj/item/clothing/shoes/brown
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/commandboots
 	id_type = /obj/item/card/id/silver
 	pda_type = /obj/item/device/pda/heads/hop
 	backpack_contents = list(/obj/item/storage/box/ids = 1)

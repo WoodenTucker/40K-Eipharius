@@ -79,3 +79,10 @@
 	desc = "A pair of toeless work boots designed for use in industrial settings. Modified for species whose toes have claws."
 	icon_state = "workbootstoeless"
 	species_restricted = null
+
+/obj/item/clothing/shoes/commandboots
+	name = "boots of command"
+	desc = "Expensive leather boots that demand respect."
+	icon_state = "hopboots"
+	item_state = "hopboots"
+	species_restricted = null

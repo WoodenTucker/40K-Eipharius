@@ -28,15 +28,21 @@
 		)
 	body_parts_covered = 0
 
-/obj/item/clothing/head/caphat/cap
-	name = "captain's cap"
-	desc = "You fear to wear it for the negligence it brings."
-	icon_state = "capcap"
+/obj/item/clothing/head/rt
+	name = "rogue trader's cap"
+	desc = "A fanciful hat fitting a wealthy Rogue Trader."
+	icon_state = "fancyhat"
+	item_state = "fancyhat"
 
 /obj/item/clothing/head/caphat/formal
 	name = "parade hat"
 	desc = "No one in a commanding position should be without a perfect, white hat of ultimate authority."
 	icon_state = "officercap"
+
+/obj/item/clothing/head/caphat/cap
+	name = "rogue trader's hat"
+	desc = "The wonderfully fancy hat of a wealthy Rogue Trader."
+	icon_state = "capcap"
 
 //HOP
 /obj/item/clothing/head/caphat/hop
