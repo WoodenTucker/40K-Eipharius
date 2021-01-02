@@ -277,6 +277,7 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 
 //Table of contents
 //General map Areas
+//Hallways
 //Outpost Areas
 //Security
 //Head's Offices
@@ -322,6 +323,41 @@ Area basic template
 /area/cadiaoutpost/oa/arrivals
 	name = "Arrivals"
 	icon_state = "cryo"
+//////////////////////////////////////
+////////////Hallways//////////////////
+//////////////////////////////////////
+
+/area/cadiaoutpost/oa/bridge/hallway
+	name = "Bridge Hallway"
+	icon_state = "blueold"
+
+/area/cadiaoutpost/oa/departures
+	name = "Departures"
+	icon_state = "escape"
+
+/area/cadiaoutpost/oa/hallway
+	name = "Hallway"
+	icon_state = "yellow"
+
+/area/cadiaoutpost/oa/hallway/northern
+	name = "Northern Hallway"
+	icon_state = "halln"
+
+/area/cadiaoutpost/oa/hallway/eastern
+	name = "Eastern Hallway"
+	icon_state = "halle"
+
+/area/cadiaoutpost/oa/hallway/southern
+	name = "Southern Hallway"
+	icon_state = "halls"
+
+/area/cadiaoutpost/oa/hallway/western
+	name = "Western Hallway"
+	icon_state = "hallw"
+
+/area/cadiaoutpost/oa/hallway/centralhall
+	name = "Inner Hallway"
+	icon_state = "hallC1"
 
 //////////////////////////////////////
 //////////Security////////////////////
@@ -413,41 +449,9 @@ Area basic template
 	name = "Vault"
 	icon_state = "nuke_storage"
 
-/area/cadiaoutpost/oa/bridge/hallway
-	name = "Bridge Hallway"
-	icon_state = "blueold"
-
 /area/cadiaoutpost/oa/bridge/meetingroom
 	name = "Meeting Room"
 	icon_state = "blue"
-
-/area/cadiaoutpost/oa/departures
-	name = "Departures"
-	icon_state = "party"
-
-/area/cadiaoutpost/oa/hallway
-	name = "Hallway"
-	icon_state = "yellow"
-
-/area/cadiaoutpost/oa/hallway/northern
-	name = "Northern Hallway"
-	icon_state = "hallC1"
-
-/area/cadiaoutpost/oa/hallway/eastern
-	name = "Eastern Hallway"
-	icon_state = "escape"
-
-/area/cadiaoutpost/oa/hallway/southern
-	name = "Southern Hallway"
-	icon_state = "hallC3"
-
-/area/cadiaoutpost/oa/hallway/western
-	name = "Western Hallway"
-	icon_state = "hallC2"
-
-/area/cadiaoutpost/oa/hallway/innerhall
-	name = "Inner Hallway"
-	icon_state = "maintcentral"
 
 /////////////////////////////////////////
 ////////////////Engineering/////////////
@@ -495,6 +499,10 @@ Area basic template
 /area/cadiaoutpost/oa/engineering/Gravity
 	name = "Gravity Generator"
 	icon_state = "gravgen"
+
+/area/cadiaoutpost/oa/engineering/drone
+	name = "Drone Zone"
+	icon_state = "drone_fab"
 
 //////////////////////////////////////
 //////////////Medical////////////////
@@ -558,6 +566,11 @@ Area basic template
 /area/cadiaoutpost/oa/medicae/cryo
 	name = "Cryo"
 	icon_state = "cryo"
+
+/area/cadiaoutpost/oa/medicae/medicaebreak
+	name = "Medicae Breakroom"
+	icon_state = "medbay_break"
+
 
 //////////////////////////////////////////
 ////////////////Research//////////////////
@@ -669,6 +682,14 @@ Area basic template
 	name = "Mail Room"
 	icon_state = "mailroom"
 
+/area/cadiaoutpost/oa/supply/cargo/lobby
+	name = "Cargo Lobby"
+	icon = "cargo_lobby"
+
+/area/cadiaoutpost/oa/supply/cargo/cargobreak
+	name = "Cargo Breakroom"
+	icon = "cargo_break"
+
 /area/cadiaoutpost/oa/supply/disposal
 	name = "Disposal"
 	icon_state = "disposal"
@@ -701,6 +722,9 @@ Area basic template
 	name = "Mining Office"
 	icon_state = "mining_office"
 
+/area/cadiaoutpost/oa/supply/mining/miningbreak
+	name = "Mining Breakroom"
+	icon = "mining_break"
 
 ////////////////////////////////////////
 //////////Maintenance//////////////////
@@ -1075,20 +1099,3 @@ Area basic template
 /area/cadiaoutpost/oa/shuttle/transport
 	name = "Transport Shuttle"
 	icon_state = "shuttle"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
