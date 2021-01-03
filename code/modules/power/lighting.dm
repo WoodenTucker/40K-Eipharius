@@ -556,7 +556,7 @@
 	matter = list("glass" = 100)
 
 	brightness_range = 10	// luminosity when on, also used in power calculation
-	brightness_power = 10
+	brightness_power = 8
 	brightness_color = "#B2B2B2"//"#FAE1AF"//"#C5D8B3"//#CDFEE0
 	lighting_modes = list(
 		LIGHTMODE_EMERGENCY = list(l_range = 4, l_power = 1, l_color = "#da0205"),
