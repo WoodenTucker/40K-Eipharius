@@ -456,7 +456,7 @@
 "iN" = (/obj/item/stack/cable_coil/white,/obj/structure/cable/yellow{icon_state = "2-8"},/turf/simulated/floor/plating,/area/wizard_station{name = "Captured Warpstorm"})
 "iO" = (/obj/structure/window/reinforced/full,/obj/structure/cable/yellow{icon_state = "1-2"},/turf/simulated/floor/snow,/area/wizard_station{name = "Captured Warpstorm"})
 "iP" = (/obj/machinery/field_generator,/turf/simulated/floor/plating,/area/wizard_station{name = "Captured Warpstorm"})
-"iQ" = (/obj/structure/window/phoronreinforced,/turf/simulated/floor/plating/reinforced,/area/wizard_station{name = "Captured Warpstorm"})
+"iQ" = (/obj/structure/window/phoronreinforced{icon_state = "phoronrwindow"; dir = 1},/turf/simulated/floor/plating/reinforced,/area/wizard_station{name = "Captured Warpstorm"})
 "iR" = (/obj/structure/cable/yellow{icon_state = "2-4"},/turf/simulated/floor/plating,/area/wizard_station{name = "Captured Warpstorm"})
 "iS" = (/obj/structure/window/phoronreinforced{icon_state = "phoronrwindow"; dir = 4},/turf/simulated/floor/plating,/area/wizard_station{name = "Captured Warpstorm"})
 "iT" = (/turf/simulated/floor/plating/reinforced,/area/wizard_station{name = "Captured Warpstorm"})
