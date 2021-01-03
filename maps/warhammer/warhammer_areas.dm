@@ -684,11 +684,11 @@ Area basic template
 
 /area/cadiaoutpost/oa/supply/cargo/lobby
 	name = "Cargo Lobby"
-	icon = "cargo_lobby"
+	icon_state = "cargo_lobby"
 
 /area/cadiaoutpost/oa/supply/cargo/cargobreak
 	name = "Cargo Breakroom"
-	icon = "cargo_break"
+	icon_state = "cargo_break"
 
 /area/cadiaoutpost/oa/supply/disposal
 	name = "Disposal"
@@ -724,7 +724,7 @@ Area basic template
 
 /area/cadiaoutpost/oa/supply/mining/miningbreak
 	name = "Mining Breakroom"
-	icon = "mining_break"
+	icon_state = "mining_break"
 
 ////////////////////////////////////////
 //////////Maintenance//////////////////
