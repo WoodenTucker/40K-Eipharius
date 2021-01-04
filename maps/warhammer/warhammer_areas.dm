@@ -22,7 +22,7 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 /area/warp_engine
 	name = "Warp Storm Engine"
 	icon_state = "yellow"
-	requires_power = FALSE
+	requires_power = TRUE
 
 /area/warfare
 	music = 'sound/music/trench_bgm.ogg'
