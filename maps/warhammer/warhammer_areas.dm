@@ -19,6 +19,11 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 	name = "\improper Operating Theatre"
 	icon_state = "surgery"
 
+/area/warp_engine
+	name = "Warp Storm Engine"
+	icon_state = "yellow"
+	requires_power = FALSE
+
 /area/warfare
 	music = 'sound/music/trench_bgm.ogg'
 	dynamic_lighting = TRUE
