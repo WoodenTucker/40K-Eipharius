@@ -10,7 +10,7 @@
 	density = 1
 	use_power = 0
 	idle_power_usage = 500
-	active_power_usage = 70000 //70 kW per unit of strength
+	active_power_usage = 10000 //70 kW per unit of strength
 	construction_state = 0
 	active = 0
 	dir = 1

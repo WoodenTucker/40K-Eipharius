@@ -2,6 +2,7 @@
 	var/active = 0
 	var/active_force
 	var/active_throwforce
+	icon = 'icons/obj/weapons/melee/energy.dmi'
 	sharp = 0
 	edge = 0
 	armor_penetration = 50

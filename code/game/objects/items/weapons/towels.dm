@@ -1,6 +1,6 @@
 /obj/item/towel
 	name = "towel"
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "towel"
 	slot_flags = SLOT_HEAD | SLOT_BELT | SLOT_OCLOTHING
 	force = 3.0

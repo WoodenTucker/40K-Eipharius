@@ -1,10 +1,10 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:33
 
 /obj/singularity/
-	name = "gravitational singularity"
-	desc = "A gravitational singularity."
-	icon = 'icons/obj/singularity.dmi'
-	icon_state = "singularity_s1"
+	name = "captured warpstorm"
+	desc = "The Rogue Trader's scientists have somehow managed to capture and harness the power of a warpstorm."
+	icon = 'icons/obj/warpstorm.dmi'
+	icon_state = "ws2"
 	anchored = 1
 	density = 1
 	plane = EFFECTS_BELOW_LIGHTING_PLANE

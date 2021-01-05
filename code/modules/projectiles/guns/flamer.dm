@@ -2,6 +2,7 @@
 
 /obj/item/gun/flamer
 	name = "\improper M2A4 Fire Thrower"
+		icon = "icons/obj/weapons/other"
 	desc = "Flame thrower made to light people you don't like on fire."
 	icon_state = "flamethrower"
 //	item_state = "flamer"

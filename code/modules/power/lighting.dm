@@ -217,7 +217,7 @@
 			on = 0
 
 	if(on)
-		use_power = 2
+		use_power = 0 //makes lights take 0 energy to power, probably should be set to something once we have a functional engine/wiring - wel 1/2/2021
 
 		var/changed = 0
 		if(current_mode && (current_mode in lightbulb.lighting_modes))
@@ -542,7 +542,7 @@
 	var/broken_chance = 2
 
 	var/brightness_range = 2 //how much light it gives off
-	var/brightness_power = 1
+	var/brightness_power = 2
 	var/brightness_color = "#ffffff"
 	var/list/lighting_modes = list()
 	var/sound_on
@@ -555,8 +555,8 @@
 	item_state = "c_tube"
 	matter = list("glass" = 100)
 
-	brightness_range = 10	// luminosity when on, also used in power calculation
-	brightness_power = 10
+	brightness_range = 8	// luminosity when on, also used in power calculation
+	brightness_power = 6
 	brightness_color = "#B2B2B2"//"#FAE1AF"//"#C5D8B3"//#CDFEE0
 	lighting_modes = list(
 		LIGHTMODE_EMERGENCY = list(l_range = 4, l_power = 1, l_color = "#da0205"),
