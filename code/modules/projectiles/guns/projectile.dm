@@ -6,6 +6,7 @@
 /obj/item/gun/projectile
 	name = "gun"
 	desc = "A gun that fires bullets."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 	item_state = "handgun"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
@@ -102,8 +103,8 @@
 	. = ..()
 	overlays.Remove(rust_overlay)
 	var/icon/I = new/icon(icon, icon_state)
-	I.Blend(new /icon('icons/obj/gun.dmi',rgb(255,255,255)), ICON_MULTIPLY)
-	I.Blend(new /icon('icons/obj/gun.dmi', icon_state = "[get_condition_icon()]"), ICON_ADD)
+	I.Blend(new /icon('icons/obj/weapons/gun/projectile.dmi',rgb(255,255,255)), ICON_MULTIPLY)
+	I.Blend(new /icon('icons/obj/weapons/gun/projectile.dmi', icon_state = "[get_condition_icon()]"), ICON_ADD)
 	rust_overlay = image(I)
 	rust_overlay.color = "#773d28"
 	overlays += rust_overlay

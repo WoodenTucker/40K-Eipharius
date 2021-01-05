@@ -89,7 +89,7 @@
 /obj/item/material/kitchen/utensil/knife/boot
 	name = "small knife"
 	desc = "A small, easily concealed knife."
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "pocketknife_open"
 	item_state = "knife"
 	applies_material_colour = 0
@@ -105,7 +105,7 @@
 /obj/item/material/kitchen/utensil/knife/unathiknife
 	name = "dueling knife"
 	desc = "A length of leather-bound wood studded with razor-sharp teeth. How crude."
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "unathiknife"
 	item_state = "knife"
 	attack_verb = list("ripped", "torn", "cut")
