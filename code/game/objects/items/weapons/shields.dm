@@ -60,7 +60,7 @@
 /obj/item/shield/riot
 	name = "riot shield"
 	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "riot"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
@@ -98,7 +98,7 @@
 /obj/item/shield/buckler
 	name = "buckler"
 	desc = "A wooden buckler used to block sharp things from entering your body back in the day.."
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "buckler"
 	slot_flags = SLOT_BACK
 	force = 8
@@ -127,7 +127,7 @@
 /obj/item/shield/energy
 	name = "energy combat shield"
 	desc = "A shield capable of stopping most projectile and melee attacks. It can be retracted, expanded, and stored anywhere."
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/energy.dmi'
 	icon_state = "eshield0" // eshield1 for expanded
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	force = 3.0

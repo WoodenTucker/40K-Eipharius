@@ -1,7 +1,7 @@
 /obj/item/cane
 	name = "cane"
 	desc = "A cane used by a true gentlemen. Or a clown."
-	icon = 'icons/obj/weapons/canesword.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "canesword_hidden"
 	item_state = "stick"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -59,7 +59,7 @@
 		item_state = "foldcane"
 
 /obj/item/material/sword/cane
-	icon = 'icons/obj/weapons/canesword.dmi'
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "cane_sword"
 
 	item_state = "sabre"
