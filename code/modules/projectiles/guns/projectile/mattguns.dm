@@ -557,7 +557,7 @@
 	name = "raven guard bolter rifle"
 	desc = "The legendary weapon of the raven guard astartes, the bolter rifle."
 	icon_state = "ravenbolter"
-	str_requirement = 18
+	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
 	force = 65
 	slot_flags = SLOT_BACK|SLOT_S_STORE
