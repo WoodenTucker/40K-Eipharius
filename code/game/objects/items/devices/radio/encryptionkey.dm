@@ -18,13 +18,13 @@
 //Base red one.
 /obj/item/device/encryptionkey/red
 	icon_state = "cypherkey"
-	channels = list("Red" = 1)
+	channels = list("Imperial - Main" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 /obj/item/device/encryptionkey/redsl_alpha
 	icon_state = "cypherkey"
-	channels = list("Red" = 1, "Red Alpha" = 1)
+	channels = list("Imperial - Main" = 1, "Guard" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
