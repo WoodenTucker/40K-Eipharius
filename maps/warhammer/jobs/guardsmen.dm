@@ -13,6 +13,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 
+
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
@@ -45,6 +46,7 @@
 		var/current_name = H.real_name
 		..()
 		H.verbs += /mob/living/carbon/human/proc/morale_boost
+		H.add_stats(rand(13,17), rand(12,16), rand(10,12))
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_squad_leader(IMPERIUM)
 		H.fully_replace_character_name("Sgt. [current_name]")
@@ -72,6 +74,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
+		H.add_stats(rand(15,17), rand(13,16), rand(12,14))
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.say(";[title] reporting for duty!")
 		H.get_idcard()?.access = get_all_accesses()

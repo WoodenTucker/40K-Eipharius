@@ -254,15 +254,15 @@
 			allowed_size = STAGE_ONE
 		if (200 to 499)
 			allowed_size = STAGE_TWO
-		if (500 to 999)
+		if (500 to INFINITY)
 			allowed_size = STAGE_THREE
-		if (1000 to 1999)
+		/*if (1000 to 1999)
 			allowed_size = STAGE_FOUR
 		if(2000 to 49999)
 			allowed_size = STAGE_FIVE
 		if(50000 to INFINITY)
 			allowed_size = STAGE_SUPER
-
+*/
 	if (current_size != allowed_size && current_size != STAGE_SUPER)
 		expand(null, current_size < allowed_size)
 	return 1
