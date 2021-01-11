@@ -259,7 +259,7 @@
 /obj/random/energy
 	name = "Random Energy Weapon"
 	desc = "This is a random energy weapon."
-	icon = 'icons/obj/gun.dmi'
+	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "energykill100"
 
 /obj/random/energy/spawn_choices()
@@ -277,7 +277,7 @@
 /obj/random/projectile
 	name = "Random Projectile Weapon"
 	desc = "This is a random projectile weapon."
-	icon = 'icons/obj/gun.dmi'
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 
 /obj/random/projectile/spawn_choices()
@@ -302,7 +302,7 @@
 /obj/random/handgun
 	name = "Random Handgun"
 	desc = "This is a random sidearm."
-	icon = 'icons/obj/gun.dmi'
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "secgundark"
 
 /obj/random/handgun/spawn_choices()

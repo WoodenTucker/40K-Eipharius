@@ -108,7 +108,7 @@
 /obj/item/robot_harvester
 	name = "auto harvester"
 	desc = "A hand-held harvest tool that resembles a sickle.  It uses energy to cut plant matter very efficently."
-	icon = 'icons/obj/weapons.dmi'
+	icon = 'icons/obj/weapons/melee/energy.dmi'
 	icon_state = "autoharvester"
 
 /obj/item/robot_harvester/afterattack(var/atom/target, var/mob/living/user, proximity)

@@ -39,7 +39,7 @@
 /obj/item/gun
 	name = "gun"
 	desc = "Its a gun. It's pretty terrible, though."
-	icon = 'icons/obj/gun.dmi'
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	item_icons = list(
 		slot_l_hand_str = 'icons/mob/onmob/items/lefthand_guns.dmi',
 		slot_r_hand_str = 'icons/mob/onmob/items/righthand_guns.dmi',
@@ -725,7 +725,7 @@
 
 
 /obj/item/gun/proc/add_bayonet()
-	var/image/I =  image('icons/obj/gun.dmi', "bayonett")
+	var/image/I =  image('icons/obj/weapons/gun/projectile.dmi', "bayonett")
 	I.pixel_x += 5
 	src.overlays += I
 

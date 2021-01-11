@@ -4,7 +4,6 @@
 
 /obj/item/grown // Grown weapons
 	name = "grown_weapon"
-	icon = 'icons/obj/weapons.dmi'
 	var/plantname
 	var/potency = 1
 

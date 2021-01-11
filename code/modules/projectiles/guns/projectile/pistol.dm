@@ -229,7 +229,7 @@
 /obj/item/silencer
 	name = "silencer"
 	desc = "A silencer."
-	icon = 'icons/obj/gun.dmi'
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "silencer"
 	w_class = ITEM_SIZE_SMALL
 
