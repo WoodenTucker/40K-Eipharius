@@ -144,7 +144,6 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	suit = /obj/item/clothing/suit/armor/guardsman
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -163,7 +162,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
 	l_pocket = /obj/item/storage/box/ifak
-	l_ear = /obj/item/device/radio/headset/heads/hos
+	l_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -180,7 +179,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
-	l_ear = /obj/item/device/radio/headset/headset_sec
+	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -194,7 +193,6 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	suit = /obj/item/clothing/suit/armor/enforcer
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
