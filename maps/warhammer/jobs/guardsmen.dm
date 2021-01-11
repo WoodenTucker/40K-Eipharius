@@ -20,7 +20,7 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Pvt. [H.real_name]")
+		H.fully_replace_character_name("Trooper [H.real_name]")
 		H.assign_random_quirk()
 		if(announced)
 			H.say(";Guardsman reporting for duty!")
@@ -45,6 +45,7 @@
 		var/current_name = H.real_name
 		..()
 		H.verbs += /mob/living/carbon/human/proc/morale_boost
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_squad_leader(IMPERIUM)
 		H.fully_replace_character_name("Sgt. [current_name]")
 		H.say(";[title] reporting for duty!")
@@ -71,6 +72,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.say(";[title] reporting for duty!")
 		H.get_idcard()?.access = get_all_accesses()
 		var/obj/O = H.get_equipped_item(slot_s_store)
