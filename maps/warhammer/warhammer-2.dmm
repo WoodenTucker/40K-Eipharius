@@ -479,7 +479,7 @@
 "jk" = (/obj/structure/cable/yellow{icon_state = "1-2"},/turf/simulated/floor/exoplanet/concrete,/area/warp_engine)
 "jl" = (/obj/structure/particle_accelerator/end_cap{anchored = 0},/turf/simulated/floor/exoplanet/concrete,/area/warp_engine)
 "jm" = (/turf/simulated/floor/exoplanet/concrete,/area/warp_engine)
-"jn" = (/obj/structure/cable/yellow,/obj/machinery/particle_accelerator/control_box{req_access = null; req_one_access = null},/turf/simulated/floor/exoplanet/concrete,/area/warp_engine)
+"jn" = (/obj/structure/cable/yellow,/obj/machinery/particle_accelerator/control_box{icon_state = "control_box"; dir = 2},/turf/simulated/floor/exoplanet/concrete,/area/warp_engine)
 "jo" = (/obj/structure/particle_accelerator/fuel_chamber{anchored = 0},/turf/simulated/floor/exoplanet/concrete,/area/warp_engine)
 "jp" = (/obj/machinery/portable_atmospherics/canister/phoron,/turf/simulated/floor/plating,/area/wizard_station{name = "Warpyu boy"})
 "jq" = (/obj/structure/cable/yellow{icon_state = "1-2"},/obj/structure/cable/yellow{icon_state = "1-2"},/turf/simulated/floor/exoplanet/concrete,/area/wizard_station{name = "Warpyu boy"})
