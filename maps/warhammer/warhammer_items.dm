@@ -383,7 +383,16 @@
 		set_frequency(RED_DELTA)
 
 
-
+/obj/item/device/radio/headset/red_team/voxcaster //eventually need to go back and figure out a way to make it possible to talk from your back, for now you can only hear, must move to your ear to speak.
+	icon = 'icons/obj/radio.dmi'
+	name = "vox-caster backpack"
+	desc = "A standard Guard issue vox-caster backpack. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. To speak into the vox, move it to your ear."
+	ks1type = /obj/item/device/encryptionkey/red
+	icon_state = "voxcaster"
+	item_state = "voxcaster"
+	slot_flags = SLOT_BACK|SLOT_EARS
+	w_class = ITEM_SIZE_NORMAL
+	canhear_range = 3 //will allow the surrounding squad to hear communications, can touch this up if its too spammy or loud. 0 is same tile as backpack
 
 /obj/item/device/radio/headset/blue_team
 	name = "Blue Headset"
