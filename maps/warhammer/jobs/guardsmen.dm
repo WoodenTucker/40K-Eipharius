@@ -16,7 +16,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,17), rand(10,16), rand(8,12))
+		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
@@ -46,6 +46,7 @@
 		..()
 		H.verbs += /mob/living/carbon/human/proc/morale_boost
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
 		H.assign_squad_leader(IMPERIUM)
 		H.fully_replace_character_name("Sgt. [current_name]")
 		H.say(";[title] reporting for duty!")
@@ -74,6 +75,7 @@
 		H.fully_replace_character_name("Commissar [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.say(";[title] reporting for duty!")
+		H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
 		H.get_idcard()?.access = get_all_accesses()
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
@@ -87,7 +89,7 @@
 		)
 
 /datum/job/ig/enforcer
-	title = "Arbites Enforcer"
+	title = "Magistratum Enforcer"
 	supervisors = "The Commissar, the Rogue Trader, Imperial Law"
 	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
@@ -98,6 +100,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 3
+	melee_skill = 9
 	can_be_in_squad = TRUE
 	open_when_dead = TRUE
 	department_flag = SEC
@@ -108,10 +111,10 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Enforcer [current_name]")
-		H.add_stats(18, rand(10,14), rand(12,13)) //meant to be a brute keeping the plebs in line
+		H.add_stats(18, rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.say(";Arbites reporting for duty!")
 
-/datum/job/ig/impguard
+/*/datum/job/ig/impguard
 	title = "Adeptus Arbites"
 	total_positions = 1
 	social_class = SOCIAL_CLASS_MIN
@@ -134,7 +137,7 @@
 		H.fully_replace_character_name("Arbites [current_name]")
 		H.add_stats(18, rand(10,16), rand(15,18))
 		H.say(";Arbites reporting for duty!")
-
+*/ //ill find a job for these guys one day
 
 
 /*All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
