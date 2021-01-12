@@ -1654,11 +1654,11 @@
 		if(SOCIAL_CLASS_MIN)
 			return "<b>filth</b>"
 		if(SOCIAL_CLASS_MED)
-			return "<b>a commoner</b>"
+			return "<b>your average Imperial citizen</b>"
 		if(SOCIAL_CLASS_HIGH)
-			return "<b>a noble</b>"
+			return "<b>an important Imperial citizen</b>"
 		if(SOCIAL_CLASS_MAX)
-			return "<b>a greater noble</b>"
+			return "<b>at the pinnacle of Imperial society</b>"
 
 
 /mob/living/carbon/human/proc/get_social_description(var/mob/living/carbon/human/H)
