@@ -14,7 +14,7 @@
 	var/id = null
 
 	use_power = 1	//uses powernet power, not APC power
-	active_power_usage = 1 KILOWATTS
+	active_power_usage = 100 KILOWATTS
 
 	var/efficiency = 0.3	// Energy efficiency. 30% at this time, so 100kW load means 30kW laser pulses.
 	var/active = 0
