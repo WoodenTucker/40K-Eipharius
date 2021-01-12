@@ -90,8 +90,8 @@
 		)
 
 /datum/job/ig/enforcer
-	title = "Civitas Enforcer"
-	supervisors = "The Commissar and Rogue Trader."
+	title = "Arbites Enforcer"
+	supervisors = "The Commissar, the Rogue Trader, Imperial Law"
 	total_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
@@ -101,7 +101,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 3
-	can_be_in_squad = FALSE
+	can_be_in_squad = TRUE
 	open_when_dead = TRUE
 	department_flag = SEC
 
@@ -111,7 +111,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Enforcer [current_name]")
-		H.add_stats(18, rand(10,16), rand(15,18))
+		H.add_stats(18, rand(10,14), rand(12,13)) //meant to be a brute keeping the plebs in line
 		H.say(";Arbites reporting for duty!")
 
 /datum/job/ig/impguard
