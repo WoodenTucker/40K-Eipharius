@@ -2,7 +2,8 @@
 	title = "Imperial Guardsman"
 	supervisors = "The Commissar and your Sergeant."
 	total_positions = 100
-	social_class = SOCIAL_CLASS_MIN
+	spawn_positions = 100
+	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	selection_color = "#b27676"
 	department_flag = SEC
@@ -29,6 +30,7 @@
 	title = "Sergeant"
 	supervisors = "The Commissar and Astartes Envoy."
 	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -55,6 +57,7 @@
 	title = "Commissar"
 	supervisors = "The astartes envoy."
 	total_positions = 1
+	spawn_positions = 1
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar

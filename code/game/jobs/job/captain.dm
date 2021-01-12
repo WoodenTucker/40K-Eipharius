@@ -24,7 +24,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		..()
 		H.fully_replace_character_name("Rogue Trader [current_name]")
 		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //RT's are really fucking random in lore so we'll make his stats random
-		H.say(";Your gracious host is active!")
+		H.say(";Your gracious host is here!")
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
 	. = ..()
