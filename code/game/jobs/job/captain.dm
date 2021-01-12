@@ -5,7 +5,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	department = "Command"
 	head_position = 1
 	department_flag = COM
-
+	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Golden Throne and the High Lords of Terra"
@@ -31,7 +31,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	title = "Seneschal"
 	head_position = 1
 	department_flag = COM|CIV
-
+	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Rogue Trader"
