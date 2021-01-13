@@ -10,7 +10,7 @@
 	melee_skill = 3
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Orders Hospitaller. You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people"
+	supervisors = "the Orders Hospitaller."
 	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -37,7 +37,8 @@
 		H.gender = FEMALE
 		H.f_style = "shaved"
 		H.h_style = "Bob"
-		H << "You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people."
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people</font></b></span>")
 
 /datum/job/doctor
 	title = "Discipulus Hospitaller"
@@ -46,7 +47,7 @@
 	minimal_player_age = 3
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the Sister Hospitaller and the Orders Hospitaller.  You are responsible for the health of not only the outpost but the various pilgrims and penitents that live in the shanty town north of the outpost"
+	supervisors = "the Sister Hospitaller and the Orders Hospitaller."
 	selection_color = "#633d63"
 	economic_modifier = 7
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
@@ -71,6 +72,8 @@
 		H.gender = FEMALE
 		H.f_style = "shaved"
 		H.h_style = "Bob"
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are responsible for the health of not only the outpost but the various pilgrims and penitents that live in the shanty town north of the outpost</font></b></span>")
 
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro

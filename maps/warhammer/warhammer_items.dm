@@ -705,6 +705,7 @@ Imperial Guardsman
 	desc = "The proud armor of an Imperial Guardsman"
 	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -712,6 +713,7 @@ Imperial Guardsman
 	..()
 	name = "An Imperial Guardsman's Armor"
 	desc = "The proud armor of an Imperial Guardsman"
+
 
 /obj/item/clothing/under/guard_uniform
 	name = "Imperial Guard uniform"
@@ -726,6 +728,9 @@ Imperial Guardsman
 
 /obj/item/clothing/suit/armor/commissar
 	icon_state = "comissar3"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/commissar
 	name = "Commisar\'s Cap"
@@ -741,6 +746,7 @@ Imperial Guardsman
 	desc = "The well-worn armor of an Imperial Guard Sergeant."
 	icon_state = "farmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -750,8 +756,40 @@ Imperial Guardsman
 	icon_state = "merc"
 	item_state = "merc"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+//Hospitaller gear
+/obj/item/clothing/suit/storage/sistersuperiorsuit
+	name = "sister superior's suit"
+	desc = "The holy garments marking the wearer as sister superior"
+	icon_state = "hospitaller"
+	item_state = "hospitaller"
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 50, rad = 0)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/storage/firstaid/adv) //i'll figure out what can go in here idk
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/suit/storage/sistersuit
+	name = "sister hospitaller's suit"
+	desc = "The holy garments marking the wearer as a sister hospitaller"
+	icon_state = "hospitallerold"
+	item_state = "hospitallerold"
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 50, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/head/hospitallerhelm
+	name = "sister hospitaller's medical rig"
+	desc = "The holy garments marking the wearer as a sister hospitaller"
+	icon_state = "medical_rig"
+	item_state = "medical_rig"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 
 //Rogue Trader Gear
