@@ -84,6 +84,9 @@
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS AS WELL
 	empty_icon = "winchester-e"
 
+	ammo_type = list(
+		/obj/item/ammo_casing/shotgun/pellet,
+		/obj/item/ammo_casing/shotgun/beanbag)
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"

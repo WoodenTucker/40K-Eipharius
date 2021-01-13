@@ -224,7 +224,7 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	backpack_contents = list(/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2, /obj/item/handcuffs = 2,)
+	backpack_contents = list(/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2, /obj/item/handcuffs = 2, /obj/item/storage/box/beanbags = 1,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer
