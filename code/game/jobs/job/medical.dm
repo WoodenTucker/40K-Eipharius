@@ -10,7 +10,7 @@
 	melee_skill = 3
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Orders Hospitaller."
+	supervisors = "the Orders Hospitaller"
 	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -49,7 +49,7 @@
 	minimal_player_age = 3
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the Sister Hospitaller and the Orders Hospitaller."
+	supervisors = "the Sister Hospitaller and the Orders Hospitaller"
 	selection_color = "#633d63"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH

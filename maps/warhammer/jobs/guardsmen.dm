@@ -211,7 +211,7 @@ Begin Warhammer loadouts
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/enforcer
-	name = OUTFIT_JOB_NAME("Civitas Enforcer")
+	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
