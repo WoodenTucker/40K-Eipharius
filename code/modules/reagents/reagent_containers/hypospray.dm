@@ -163,7 +163,7 @@
 	icon_state = "black"
 	starts_with = list(/datum/reagent/tramadol/oxycodone = 5)
 
-/obj/item/reagent_containers/hypospray/autoinjector/revive
+/obj/item/reagent_containers/hypospray/autoinjector/revive //this is ateopine in the wiki
 	name = "autoinjector (atepoine)"
 	icon_state = "black"
 	starts_with = list(/datum/reagent/atepoine = 10)
