@@ -13,6 +13,7 @@
 	shotgun_skill = 6
 	lmg_skill = 3
 	smg_skill = 3
+	open_when_dead = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -24,6 +25,7 @@
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("Trooper [H.real_name]")
 		H.assign_random_quirk()
+		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		if(announced)
 			H.say(";Guardsman reporting for duty!")
 
@@ -36,6 +38,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC
+	open_when_dead = TRUE
 
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
@@ -54,10 +57,12 @@
 		H.assign_squad_leader(IMPERIUM)
 		H.fully_replace_character_name("Sgt. [current_name]")
 		H.say(";[title] reporting for duty!")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
+
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "The astartes envoy."
+	supervisors = "the astartes envoy"
 	total_positions = 1
 	spawn_positions = 1
 	req_admin_notify = TRUE
@@ -83,6 +88,8 @@
 		H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
 		H.add_skills(rand(14,18))
 		H.get_idcard()?.access = get_all_accesses()
+		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Guard force on this planet. The mission is all, maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
+
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
 			qdel(O)
@@ -120,8 +127,9 @@
 		H.fully_replace_character_name("Enforcer [current_name]")
 		H.add_stats(18, rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(14,20))
+		H.assign_random_quirk()
 		H.say(";Officer of the Magistratum reporting for duty!")
-		H. << "You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost."
+		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
 /*/datum/job/ig/impguard
 	title = "Adeptus Arbites"

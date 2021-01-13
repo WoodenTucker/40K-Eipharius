@@ -14,6 +14,8 @@
 	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
+	open_when_dead = FALSE
+	social_class = SOCIAL_CLASS_HIGH
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
@@ -50,6 +52,8 @@
 	supervisors = "the Sister Hospitaller and the Orders Hospitaller."
 	selection_color = "#633d63"
 	economic_modifier = 7
+	social_class = SOCIAL_CLASS_HIGH
+	open_when_dead = TRUE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology)
 //	alt_titles = list(

@@ -728,6 +728,7 @@ Imperial Guardsman
 
 /obj/item/clothing/suit/armor/commissar
 	icon_state = "comissar3"
+	item_state = "comissar3"
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

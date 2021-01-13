@@ -1,98 +1,93 @@
-"a" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"b" = (/turf/simulated/floor/dirty/indestructable,/area/battlefield)
-"c" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 1},/turf/simulated/floor/dirty/indestructable,/area/homebase)
+"a" = (/turf/simulated/floor/dirty/indestructable,/area/space)
+"b" = (/obj/effect/landmark/start{name = "Blue Soldier"},/turf/simulated/floor/dirty/indestructable,/area/space)
+"c" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/space)
 "d" = (/obj/machinery/telecomms/allinone{intercept = 1},/turf/simulated/floor/dirty,/area/hallway)
-"e" = (/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"f" = (/obj/effect/landmark/start{name = "Blue Soldier"},/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"g" = (/turf/simulated/wall/concrete,/area/homebase)
-"h" = (/obj/effect/landmark{name = "tdome1"},/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"i" = (/turf/simulated/wall/concrete,/area/battlefield)
-"j" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/battlefield)
-"k" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 1},/turf/simulated/floor/dirty/indestructable,/area/battlefield)
-"l" = (/obj/effect/landmark/start,/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"m" = (/obj/effect/landmark/test/safe_turf,/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"n" = (/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"o" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 8},/turf/simulated/floor/dirty/indestructable,/area/battlefield)
-"p" = (/obj/effect/landmark/start{name = "Red Soldier"},/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"q" = (/obj/effect/landmark/test/space_turf,/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"r" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/battlefield)
-"s" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/homebase)
-"t" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/battlefield)
+"e" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/space)
+"f" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 1},/turf/simulated/floor/dirty/indestructable,/area/space)
+"g" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 8},/turf/simulated/floor/dirty/indestructable,/area/space)
+"h" = (/turf/simulated/wall/concrete,/area/space)
+"i" = (/obj/structure/dirt_wall{icon_state = "dirt_wall"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/space)
+"j" = (/obj/effect/landmark/start{name = "Red Soldier"},/turf/simulated/floor/dirty/indestructable,/area/space)
+"k" = (/obj/effect/landmark{name = "tdome1"},/turf/simulated/floor/dirty/indestructable,/area/space)
+"l" = (/obj/effect/landmark{name = "JoinLate"},/turf/simulated/floor/dirty/indestructable,/area/space)
+"m" = (/obj/effect/landmark/test/safe_turf,/turf/simulated/floor/dirty/indestructable,/area/space)
+"n" = (/obj/effect/landmark/test/space_turf,/turf/simulated/floor/dirty/indestructable,/area/space)
+"o" = (/obj/effect/landmark/start,/turf/simulated/floor/dirty/indestructable,/area/space)
 
 (1,1,1) = {"
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeffffffffffffffffffffffffffffffffeeeeeee
-eeaaaaaaaaaaaaaaaaaaeeaaaaaaaaaaaaaaaaaaee
-sssssssssssssssssssseessssssssssssssssssss
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbjjjjjjbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbkkkkkkbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobiiiiiibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobbbbbbbbrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobbbbbbbbrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobibbbbibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobibbbbibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobibbbbibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobibbbbibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobibbbbibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobibbbbibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobbbbbbbbrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobbbbbbbbrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbjobiiiiiibrjbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbttttttbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbjjjjjjbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-sssssssssssssssssssseessssssssssssssssssss
-eecccccccccccccccccceeccccccccccccccccccee
-eeeeeppppppppppppppppppppppppppppppppeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeegggggggggggeegggggggggggeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegeeeeeeeeegeegeeeeeeeeegeeeeeeeee
-eeeeeeeeegggggggggggeegggggggggggeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-hhhnnneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-hhhnnneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-hhhnnneemqeleeeeeeeeeeeeeeeeeeeeeeeeeeeeed
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaaa
+aaccccccccccccccccccaaccccccccccccccccccaa
+eeeeeeeeeeeeeeeeeeeeaaeeeeeeeeeeeeeeeeeeee
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaeeeeeeaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaffffffaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahhhhhhaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegaaaaaaaaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegaaaaaaaaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahaaaahaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahaaaahaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahaaaahaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahaaaahaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahaaaahaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahaaaahaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegaaaaaaaaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegaaaaaaaaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaegahhhhhhaieaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaccccccaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaeeeeeeaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+eeeeeeeeeeeeeeeeeeeeaaeeeeeeeeeeeeeeeeeeee
+aaffffffffffffffffffaaffffffffffffffffffaa
+aaaaajjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaahhhhhhhhhhhaahhhhhhhhhhhaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahaaaaaaaaahaahaaaaaaaaahaaaaaaaaa
+aaaaaaaaahhhhhhhhhhhaahhhhhhhhhhhaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+kkklllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+kkklllaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+kkklllaamnaoaaaaaaaaaaaaaaaaaaaaaaaaaaaaad
 "}
