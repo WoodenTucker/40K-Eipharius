@@ -3,7 +3,11 @@
 	head_position = 1
 	department = "Medical"
 	department_flag = MED|COM
-
+	medical_skill = 10
+	surgery_skill = 10
+	engineering_skill = 0
+	ranged_skill = 3
+	melee_skill = 3
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Orders Hospitaller"
@@ -21,6 +25,16 @@
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
 
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister Superior [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.say(";[title] reporting for duty!")
+		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
+		H.get_idcard()?.access = get_all_accesses()
+		H.get_equipped_item(slot_s_store)
+
 /datum/job/doctor
 	title = "Discipulus Hospitaller"
 	department = "Medical"
@@ -29,7 +43,7 @@
 	minimal_player_age = 3
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the Sister Hospitaller"
+	supervisors = "the Sister Hospitaller and the Orders Hospitaller"
 	selection_color = "#633d63"
 	economic_modifier = 7
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
@@ -40,6 +54,17 @@
 //		"Nurse" = /decl/hierarchy/outfit/job/medical/doctor/nurse,
 //		"Virologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.say(";[title] reporting for duty!")
+		H.add_stats(rand(6,10), rand(10,14), rand(10,14), rand(12,15))
+		H.add_skills(3,3,rand(5,7),0,rand(5,7))
+		H.get_idcard()?.access = get_all_accesses()
+		H.get_equipped_item(slot_s_store)
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist

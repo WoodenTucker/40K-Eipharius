@@ -74,11 +74,12 @@
 //Shitty shotgun
 /obj/item/gun/projectile/shotgun/pump/shitty
 	name = "\improper WTX Frontier Special"
-	desc = "A common shotgun used in the trenches. It's not the best made and is prone to jamming."
+	desc = "A common shotgun used for crowd control. It's not the best made and is prone to jamming."
 	icon_state = "winchester"
 	item_state = "winchester"
 	wielded_item_state = "winchester-wielded"
-	condition = 65
+	condition = 85
+	str_requirement = 8
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS AS WELL
 	empty_icon = "winchester-e"
@@ -420,7 +421,7 @@
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
 	one_hand_penalty = 50
-	str_requirement = 18
+	str_requirement = 12
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
 	firemodes = list()
@@ -521,7 +522,7 @@
 	//icon = 'icons/obj/gunx35.dmi'
 	icon_state = "hmg"
 	item_state = "hmg"
-	str_requirement = 18
+	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK|SLOT_S_STORE

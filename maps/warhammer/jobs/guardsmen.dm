@@ -18,6 +18,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
+		H.add_skills(rand(10,16))
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
@@ -49,6 +50,7 @@
 		H.verbs += /mob/living/carbon/human/proc/morale_boost
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
+		H.add_skills(rand(13,16))
 		H.assign_squad_leader(IMPERIUM)
 		H.fully_replace_character_name("Sgt. [current_name]")
 		H.say(";[title] reporting for duty!")
@@ -79,6 +81,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
+		H.add_skills(rand(14,18))
 		H.get_idcard()?.access = get_all_accesses()
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
@@ -95,6 +98,7 @@
 	title = "Magistratum Enforcer"
 	supervisors = "The Commissar, the Rogue Trader, Imperial Law"
 	total_positions = 2
+	spawn_positions = 2 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 6
@@ -115,7 +119,8 @@
 		..()
 		H.fully_replace_character_name("Enforcer [current_name]")
 		H.add_stats(18, rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
-		H.say(";Arbites reporting for duty!")
+		H.add_skills(rand(14,20))
+		H.say(";Officer of the Magistratum reporting for duty!")
 
 /*/datum/job/ig/impguard
 	title = "Adeptus Arbites"
@@ -208,8 +213,9 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/melee/baton
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	suit_store = /obj/item/gun/energy/las/lasgun
-	backpack_contents = list(/obj/item/cell/lasgun = 2, /obj/item/handcuffs = 2,)
+	l_ear = /obj/item/device/radio/headset/red_team
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	backpack_contents = list(/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2, /obj/item/handcuffs = 2,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer
