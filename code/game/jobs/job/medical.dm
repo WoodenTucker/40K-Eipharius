@@ -10,7 +10,7 @@
 	melee_skill = 3
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Orders Hospitaller"
+	supervisors = "the Orders Hospitaller. You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people"
 	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -34,16 +34,19 @@
 		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
+		H.gender = FEMALE
+		H.f_style = "shaved"
+		H.h_style = "Bob"
+		H << "You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people."
 
 /datum/job/doctor
 	title = "Discipulus Hospitaller"
 	department = "Medical"
 	department_flag = MED
-
 	minimal_player_age = 3
 	total_positions = 5
 	spawn_positions = 3
-	supervisors = "the Sister Hospitaller and the Orders Hospitaller"
+	supervisors = "the Sister Hospitaller and the Orders Hospitaller.  You are responsible for the health of not only the outpost but the various pilgrims and penitents that live in the shanty town north of the outpost"
 	selection_color = "#633d63"
 	economic_modifier = 7
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
@@ -65,6 +68,10 @@
 		H.add_skills(3,3,rand(5,7),0,rand(5,7))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
+		H.gender = FEMALE
+		H.f_style = "shaved"
+		H.h_style = "Bob"
+
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist

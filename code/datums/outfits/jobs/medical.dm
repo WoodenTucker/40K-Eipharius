@@ -11,7 +11,7 @@
 
 /decl/hierarchy/outfit/job/medical/cmo
 	name = OUTFIT_JOB_NAME("Sister Hospitaller")
-	l_ear  =/obj/item/device/radio/headset/heads/cmo
+	l_ear  = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/rank/medical
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat
 	shoes = /obj/item/clothing/shoes/brown

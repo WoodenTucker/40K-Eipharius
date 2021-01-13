@@ -121,6 +121,7 @@
 		H.add_stats(18, rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(14,20))
 		H.say(";Officer of the Magistratum reporting for duty!")
+		H. << "You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost."
 
 /*/datum/job/ig/impguard
 	title = "Adeptus Arbites"
