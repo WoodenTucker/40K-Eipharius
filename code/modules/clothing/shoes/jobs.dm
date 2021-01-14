@@ -86,3 +86,13 @@
 	icon_state = "hopboots"
 	item_state = "hopboots"
 	species_restricted = null
+
+/obj/item/clothing/shoes/rgboots
+	name = "raven guard boots"
+	desc = "Boots of the Raven Guard Space Marine Chapter"
+	icon_state = "rg_lib"
+	item_state = "rg_lib"
+	str_requirement = 25
+	canremove = 0
+	cold_protection = FEET|LEGS
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
