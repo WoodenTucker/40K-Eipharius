@@ -48,15 +48,16 @@
 	pda_type = /obj/item/device/pda/librarian
 
 /decl/hierarchy/outfit/job/internal_affairs_agent
-	name = OUTFIT_JOB_NAME("Inquisitorial Acolyte")
-	l_ear = /obj/item/device/radio/headset/inquisition
-	uniform = /obj/item/clothing/under/rank/internalaffairs
-	suit = /obj/item/clothing/suit/storage/toggle/suit/black
-	shoes = /obj/item/clothing/shoes/brown
+	name = OUTFIT_JOB_NAME("principal agent")
+	l_ear = /obj/item/device/radio/headset/red_team
+	uniform = /obj/item/clothing/under/rank/principalagent
+	suit = /obj/item/clothing/suit/armor/agent
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/sunglasses/big
-	l_hand = /obj/item/storage/briefcase
-	id_type = /obj/item/card/id/civilian/internal_affairs_agent
+	id_type = /obj/item/card/id/inquisition/principal_agent
 	pda_type = /obj/item/device/pda/lawyer
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 
 /decl/hierarchy/outfit/job/chaplain
 	name = OUTFIT_JOB_NAME("Chaplain")

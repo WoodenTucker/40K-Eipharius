@@ -114,6 +114,12 @@
 	worn_state = "internalaffairs"
 	starting_accessories = list(/obj/item/clothing/accessory/black)
 
+/obj/item/clothing/under/rank/principalagent
+	desc = "A slick bodyglove befitting of an agent of the Inquisition"
+	name = "principal agent's bodyglove"
+	icon_state = "combat"
+	item_state = "combat"
+
 /obj/item/clothing/under/rank/internalaffairs/plain
 	desc = "A plain shirt and pair of pressed black pants."
 	name = "formal outfit"

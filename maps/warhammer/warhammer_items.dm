@@ -822,3 +822,13 @@ Imperial Guardsman
 	icon_state = "Ravhelm"
 	item_state = "Ravhelm"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+
+/obj/item/clothing/suit/armor/agent
+	name = "agent's fine armor"
+	desc = "The fashionable and formidable armor of a principal agent, bears his Imperial rosette across his chest"
+	icon_state = "inqcoat"
+	item_state = "inqcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
