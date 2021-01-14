@@ -32,7 +32,7 @@
 		H.get_idcard()?.access = get_all_accesses()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
-		H.bladder = 0
+		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
 
 
