@@ -1,6 +1,5 @@
 /decl/hierarchy/outfit/job/medical
 	hierarchy_type = /decl/hierarchy/outfit/job/medical
-	l_ear = /obj/item/device/radio/headset/headset_med
 	shoes = /obj/item/clothing/shoes/white
 	pda_type = /obj/item/device/pda/medical
 	//pda_slot = slot_l_store
@@ -10,23 +9,28 @@
 	BACKPACK_OVERRIDE_MEDICAL
 
 /decl/hierarchy/outfit/job/medical/cmo
-	name = OUTFIT_JOB_NAME("Sister Hospitaller")
-	l_ear  =/obj/item/device/radio/headset/heads/cmo
+	name = OUTFIT_JOB_NAME("Sister Superior")
+	l_ear  = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/rank/medical
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat
-	shoes = /obj/item/clothing/shoes/brown
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/white
 	l_hand = /obj/item/storage/firstaid/adv
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
-
+	head = /obj/item/clothing/head/hospitallerhelm
 /decl/hierarchy/outfit/job/medical/doctor
-	name = OUTFIT_JOB_NAME("Medical Doctor")
+	name = OUTFIT_JOB_NAME("Sister Hospitellar")
 	uniform = /obj/item/clothing/under/rank/medical
-	suit = /obj/item/clothing/suit/storage/doctor_vest
+	l_ear  = /obj/item/device/radio/headset/red_team
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/storage/sistersuit
+	back = /obj/item/storage/backpack/satchel/warfare
 	l_hand = /obj/item/storage/firstaid/adv
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical
-
+	head = /obj/item/clothing/head/hospitallerhelm
 /decl/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket

@@ -435,16 +435,17 @@
 	dat += "Choose from the following open/valid positions:<br>"
 	dat += "<a href='byond://?src=\ref[src];invalid_jobs=1'>[show_invalid_jobs ? "Hide":"Show"] unavailable jobs.</a><br>"
 
-	var/list/jobcats = list(  // This is designed for warfare, in a warfare-less environment, this will need to be changed
+	var/list/jobcats = list(  // This is designed for warfare, in a warfare-less environment, this will need to be changed ~ nah a lil fiddling makes it work fine for others :)
 		"Team Red"=list("color"="#b27676", "jobs"=list()),
 		"Team Blue"=list("color"="#76abb2", "jobs"=list()),
 		"Command"=list("color"="#76abb2", "jobs"=list()),
 		"Imperial Guard"=list("color"="#b27676", "jobs"=list()),
 		"Adeptus Mechanicus"=list("color"="#f03e08", "jobs"=list()),
-		"Medical"=list("color"="#76abb2", "jobs"=list()),
+		"Outpost Medical Staff"=list("color"="#76abb2", "jobs"=list()),
 		"Supply"=list("color"="#76abb2", "jobs"=list()),
-		"Civillian"=list("color"="#76abb2", "jobs"=list()),
+		"Outpost Support Staff"=list("color"="#76abb2", "jobs"=list()),
 		"Inquisition"=list("color"="#fd0707", "jobs"=list()),
+		"Pilgrims"=list("color"="#ff0bebea", "jobs"=list()),
 		"Misc"=list("color"="Grey", "jobs"=list())
 		)
 
@@ -463,13 +464,15 @@
 		else if(job.department_flag & ENG)
 			jobcats["Adeptus Mechanicus"]["jobs"] += job
 		else if(job.department_flag & MED)
-			jobcats["Medical"]["jobs"] += job
+			jobcats["Outpost Medical Staff"]["jobs"] += job
 		else if(job.department_flag & SUP)
 			jobcats["Adeptus Mechanicus"]["jobs"] += job
 		else if(job.department_flag & CIV)
-			jobcats["Civillian"]["jobs"] += job
+			jobcats["Outpost Support Staff"]["jobs"] += job
 		else if(job.department_flag & INQ)
 			jobcats["Inquisition"]["jobs"] += job
+		else if(job.department_flag & PIL)
+			jobcats["Pilgrims"]["jobs"] += job
 		else
 			jobcats["Misc"]["jobs"] += job
 

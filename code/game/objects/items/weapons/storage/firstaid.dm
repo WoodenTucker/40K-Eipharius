@@ -87,10 +87,11 @@
 	item_state = "firstaid-advanced"
 
 	startswith = list(
-		/obj/item/reagent_containers/hypospray/autoinjector,
-		/obj/item/stack/medical/advanced/bruise_pack = 3,
-		/obj/item/stack/medical/advanced/ointment = 2,
-		/obj/item/stack/medical/splint
+		/obj/item/reagent_containers/hypospray/autoinjector/blood = 2,
+		/obj/item/suture,
+		/obj/item/reagent_containers/hypospray/autoinjector/revive = 2,
+		/obj/item/stack/medical/splint,
+		/obj/item/wirecutters,
 		)
 
 /obj/item/storage/firstaid/combat

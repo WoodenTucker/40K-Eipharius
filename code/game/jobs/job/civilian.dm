@@ -1,4 +1,4 @@
-//Food
+//Food && these jobs are outpost support staff
 /datum/job/bartender
 	title = "Bartender"
 	department = "Service"
@@ -107,20 +107,29 @@
 	outfit_type = /decl/hierarchy/outfit/job/librarian
 
 /datum/job/inquisitor
-	title = "Inquisitorial Acolyte"
-	department = "Inquisition"
+	title = "Principal Agent"
 	department_flag = INQ
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "The Golden Throne"
+	social_class = SOCIAL_CLASS_HIGH
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "The Golden Throne, the Ministorum, the Ordos Hereticus"
 	selection_color = "#fd0707"
 	economic_modifier = 7
-	access = list(access_lawyer, access_sec_doors, access_maint_tunnels, access_heads)
-	minimal_access = list(access_lawyer, access_sec_doors, access_heads)
 	minimal_player_age = 10
 	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
 
-/datum/job/lawyer/equip(var/mob/living/carbon/human/H)
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Agent [current_name]")
+		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //highly trained and skilled
+		H.add_skills(rand(5,8),rand(5,8),rand(2,4),rand(1,3),0)
+		H.assign_random_quirk()
+		H.get_idcard()?.access = get_all_accesses()
+		H.say("Throne Agent reporting for duty!")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Principle agent of the Ordos Helican, your Master, a fully fledged Inquisitor has ordered you to this planet to perform reconaissance and keep an eye on the various pilgrims/penitents passing through. Report any heresy, suffer not the heretic to live.</font></b></span>")
+
+/datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(H)

@@ -1,8 +1,9 @@
 //replaces our stun baton code with /tg/station's code
 /obj/item/melee/baton
-	name = "stunbaton"
-	desc = "A stun baton for incapacitating people with."
-	icon_state = "stunbaton"
+	name = "Nightstick"
+	desc = "A nice club for keeping the filth in line."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
 	force = 15

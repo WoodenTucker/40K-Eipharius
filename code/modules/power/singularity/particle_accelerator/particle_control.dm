@@ -1,7 +1,7 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:33
 
 /obj/machinery/particle_accelerator/control_box
-	name = "Particle Accelerator Control Computer"
+	name = "Particle Accelerator Control Console"
 	desc = "This controls the density of the particles."
 	icon = 'icons/obj/machines/particle_accelerator2.dmi'
 	icon_state = "control_box"
@@ -10,7 +10,7 @@
 	density = 1
 	use_power = 0
 	idle_power_usage = 500
-	active_power_usage = 10000 //70 kW per unit of strength
+	active_power_usage = 70000 //70 kW per unit of strength
 	construction_state = 0
 	active = 0
 	dir = 1
@@ -20,7 +20,6 @@
 	var/assembled = 0
 	var/parts = null
 	var/datum/wires/particle_acc/control_box/wires = null
-	var/obj/machinery/sunreactor/center/reactor = null
 
 /obj/machinery/particle_accelerator/control_box/New()
 	wires = new(src)
@@ -148,49 +147,6 @@
 	return
 
 
-/obj/machinery/particle_accelerator/control_box/Process()
-	if(src.active)
-		//a part is missing!
-		if( length(connected_parts) < 6 )
-			investigate_log("lost a connected part; It <font color='red'>powered down</font>.","singulo")
-			src.toggle_power()
-			return
-
-		for(var/obj/machinery/sunreactor/emitter/PEm)
-			PEm.icon_state="emitter_passive"
-			sleep(30)
-			PEm.icon_state="emitter_active"
-			PEm.emit_particle(src.strength)
-
-		for(var/obj/machinery/sunreactor/beam/BEp)
-			BEp.invisibility = 0
-			BEp.luminosity = 1
-		for(var/obj/machinery/sunreactor/tube_g_v_u/TEup)
-			sleep(4)
-			TEup.icon_state="t_glass_v_2"
-			playsound(src.loc, 'sound/effects/screech.ogg', 75, 1)
-
-		for(var/obj/machinery/sunreactor/tube_g_h_l/TEleft)
-			sleep(8)
-			TEleft.icon_state="t_glass_h_2"
-			playsound(src.loc, 'sound/effects/screech.ogg', 75, 1)
-
-		for(var/obj/machinery/sunreactor/tube_g_v_d/TEdown)
-			sleep(12)
-			TEdown.icon_state="t_glass_v_2"
-			playsound(src.loc, 'sound/effects/screech.ogg', 75, 1)
-
-		for(var/obj/machinery/sunreactor/tube_g_h_r/TEright)
-			sleep(16)
-			TEright.icon_state="t_glass_h_2"
-			playsound(src.loc, 'sound/effects/screech.ogg', 75, 1)
-		//emit some particles
-		for(var/obj/structure/particle_accelerator/particle_emitter/PE in connected_parts)
-			if(PE)
-				PE.emit_particle(src.strength)
-	return
-
-
 /obj/machinery/particle_accelerator/control_box/proc/part_scan()
 	for(var/obj/structure/particle_accelerator/fuel_chamber/F in orange(1,src))
 		src.set_dir(F.dir)
@@ -267,10 +223,9 @@
 			user << browse(null, "window=pacontrol")
 			return
 	user.set_machine(src)
-	reactor = locate(/obj/machinery/sunreactor/center)
+
 	var/dat = ""
 	dat += "Particle Accelerator Control Panel<BR>"
-	dat += "Temperature: ~[reactor.energy].000c<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR><BR>"
 	dat += "Status:<BR>"
 	if(!assembled)

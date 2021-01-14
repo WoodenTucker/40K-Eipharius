@@ -2453,6 +2453,7 @@
 #include "maps\warhammer\warhammer_areas.dm"
 #include "maps\warhammer\warhammer_define.dm"
 #include "maps\warhammer\jobs\astarte.dm"
+#include "maps\warhammer\jobs\pilgrims.dm"
 #include "maps\~mapsystem\map_preferences.dm"
 #include "maps\~mapsystem\map_ranks.dm"
 #include "maps\~mapsystem\maps.dm"
@@ -2462,4 +2463,5 @@
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
 #include "~code\global_init.dm"
+#include "C:\datum\job\pilgrims.dm"
 // END_INCLUDE

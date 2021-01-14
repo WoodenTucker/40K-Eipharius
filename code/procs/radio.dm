@@ -12,7 +12,7 @@
 
 	// the name of the channel
 	if(display_freq in ANTAG_FREQS)
-		freq_text = "#unkn"
+		freq_text = "Imperial"
 	else
 		for(var/channel in radiochannels)
 			if(radiochannels[channel] == display_freq)

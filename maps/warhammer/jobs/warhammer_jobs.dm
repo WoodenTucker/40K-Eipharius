@@ -3,7 +3,7 @@
 
 /datum/map/warhammer
 	allowed_jobs = list(
-	/datum/job/assistant,
+	/datum/job/penitent,
 	/datum/job/ig/commissar,
 	/datum/job/ig/sergeant,
 	/datum/job/ig/enforcer,
@@ -42,8 +42,3 @@
 
 	if(L)
 		default_language = L
-
-/datum/job/assistant
-	title = "Civilian Penitent"
-	total_positions = 2
-	spawn_positions = 2

@@ -251,8 +251,9 @@
 	return FALSE
 
 
-/obj/item/twohanded/offhand
+/obj/item/twohanded/offhand //MUST FIND THIS SPRITE AND FIX SO IT SHOWS UP - WEL 1/12
 	name = "offhand"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "offhand"
 	w_class = ITEM_SIZE_NO_CONTAINER
 	atom_flags = ATOM_FLAG_NO_BLOOD//ABSTRACT | NOBLOODY

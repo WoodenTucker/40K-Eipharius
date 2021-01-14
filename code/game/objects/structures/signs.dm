@@ -264,9 +264,53 @@
 /obj/structure/sign/double/maltesefalcon/right
 	icon_state = "maltesefalcon-right"
 
+//warhammer specific signs
+/obj/structure/sign/double/impbar/right
+	icon_state = "imp-right"
+
+/obj/structure/sign/double/impbar/left
+	icon_state = "imp-left"
+
+/obj/structure/sign/medical1
+	icon_state = "medical"
+
+/obj/structure/sign/imperial
+	icon_state = "imperial"
+
+/obj/structure/sign/inquisition
+	icon_state = "research"
+
+/obj/structure/sign/mechanicus
+	icon_state = "mechanicus"
+
+/obj/structure/sign/double/impbar2/right
+	icon_state = "imp2-right"
+
+/obj/structure/sign/double/impbar2/left
+	icon_state = "imp2-left"
+
+/obj/structure/sign/stainedglass1
+	icon_state = "stglass1"
+
+/obj/structure/sign/stainedglass2
+	icon_state = "stglass2"
+
+/obj/structure/sign/stainedglass3
+	icon_state = "stglass3"
+
+/obj/structure/sign/stainedglass4
+	icon_state = "stglass4"
+
+/obj/structure/sign/stainedglass5
+	icon_state = "stglass5"
 /obj/structure/sign/warning/science
 	name = "\improper SCIENCE!"
 	icon_state = "science1"
+/obj/structure/sign/commissar
+	icon_state = "inq"
+
+/obj/structure/sign/spooky
+	icon_state = "death"
 
 /obj/structure/sign/warning/science/anomalous_materials
 	name = "\improper ANOMALOUS MATERIALS"

@@ -173,6 +173,10 @@ var/global/list/obj/item/device/pda/PDAs = list()
 /obj/item/device/pda/chaplain
 	ttone = "holy"
 
+
+/obj/item/device/pda/penitent
+	ttone = "holy"
+
 /obj/item/device/pda/lawyer
 	default_cartridge = /obj/item/cartridge/lawyer
 	ttone = "..."

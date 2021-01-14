@@ -219,3 +219,13 @@
 	icon_state = "doctor_vest"
 	item_state = "doctor_vest"
 	blood_overlay_type = "armor"
+
+//Penitent
+/obj/item/clothing/suit/raggedrobe
+	name = "ragged robe"
+	desc = "Stinking, torn robes"
+	icon_state = "grosthrobe"
+	item_state = "grosthrobe"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO
+	cold_protection = UPPER_TORSO
