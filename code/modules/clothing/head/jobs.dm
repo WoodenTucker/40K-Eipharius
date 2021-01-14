@@ -195,3 +195,21 @@
 	desc = "A disgusting hood covering a disgusting head"
 	icon_state = "plebhood"
 	item_state = "plebhood"
+
+/obj/item/clothing/head/bighat
+	name = "a big hat"
+	desc = "A large, imposing hat."
+	icon_state = "bighat"
+	item_state = "bighat"
+
+/obj/item/clothing/head/spookyhood
+	name = "a spooky hood"
+	desc = "A menacing hood"
+	icon_state = "keeper"
+	item_state = "keeper"
+
+/obj/item/clothing/head/cerberus
+	name = "hound helmet"
+	desc = "A steel hound helmet marking one as a hound of the Inquisition"
+	icon_state = "cerberus"
+	item_state = "cerberus"

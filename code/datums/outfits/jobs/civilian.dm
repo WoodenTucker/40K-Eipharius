@@ -58,6 +58,7 @@
 	id_type = /obj/item/card/id/inquisition/principal_agent
 	pda_type = /obj/item/device/pda/lawyer
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	head = /obj/item/clothing/head/cerberus
 
 /decl/hierarchy/outfit/job/chaplain
 	name = OUTFIT_JOB_NAME("Chaplain")
