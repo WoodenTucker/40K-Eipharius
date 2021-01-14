@@ -732,7 +732,6 @@ Imperial Guardsman
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
 /obj/item/clothing/head/commissar
 	name = "Commisar\'s Cap"
 	desc = "This cap strikes fear into the rank and file."

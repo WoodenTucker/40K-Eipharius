@@ -186,7 +186,8 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/commissar
 	l_pocket = /obj/item/storage/box/ifak
 	l_ear = /obj/item/device/radio/headset/red_team
-	belt = /obj/item/gun/projectile/bolter_pistol
+	belt = /obj/item/material/sword/commissword
+	l_hand = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare

@@ -141,6 +141,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
+	slot_flags = SLOT_BELT|SLOT_S_STORE
 
 /obj/item/gun/projectile/bolter_pistol/update_icon()
 	..()
