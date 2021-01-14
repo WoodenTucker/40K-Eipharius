@@ -17,6 +17,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/white
 	l_hand = /obj/item/storage/firstaid/adv
+	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
 	head = /obj/item/clothing/head/hospitallerhelm
@@ -28,6 +29,7 @@
 	suit = /obj/item/clothing/suit/storage/sistersuit
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_hand = /obj/item/storage/firstaid/adv
+	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical
 	head = /obj/item/clothing/head/hospitallerhelm
