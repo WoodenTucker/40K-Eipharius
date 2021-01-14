@@ -189,3 +189,9 @@
 	name = "beret"
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
+
+/obj/item/clothing/head/plebhood
+	name = "pleb hood"
+	desc = "A disgusting hood covering a disgusting head"
+	icon_state = "plebhood"
+	item_state = "plebhood"

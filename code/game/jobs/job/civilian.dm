@@ -1,4 +1,4 @@
-//Food
+//Food && these jobs are outpost support staff
 /datum/job/bartender
 	title = "Bartender"
 	department = "Service"

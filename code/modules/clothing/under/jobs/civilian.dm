@@ -217,3 +217,11 @@
 	icon_state = "explorer"
 	item_state = "lb_suit"
 	worn_state = "explorer"
+
+//pilgrim stuff
+/obj/item/clothing/under/rank/penitent
+	desc = "A simple jumpsuit"
+	name = "simple jumpsuit"
+	icon_state = "jumpsuitdown"
+	item_state = "jumpsuitdown"
+	worn_state = "jumpsuitdown"
