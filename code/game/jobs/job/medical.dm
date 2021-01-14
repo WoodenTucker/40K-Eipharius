@@ -82,10 +82,10 @@
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
 /datum/job/chemist
-	title = "Chemist"
+	title = "Alchemist"
 	department = "Medical"
 	department_flag = MED
-
+	social_class = SOCIAL_CLASS_MED
 	minimal_player_age = 7
 	total_positions = 2
 	spawn_positions = 2
@@ -94,7 +94,7 @@
 	economic_modifier = 5
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry)
-	alt_titles = list("Pharmacist")
+	//alt_titles = list("Pharmacist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 
 /datum/job/geneticist
@@ -129,17 +129,30 @@
 	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
 
 /datum/job/Paramedic
-	title = "Combat Medic"
+	title = "Combat Medicae"
 	department = "Medical"
 	department_flag = SEC|MED
-
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Sister Hospitaller"
+	social_class = SOCIAL_CLASS_MED
+	total_positions = 3
+	spawn_positions = 3
+	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#633d63"
 	economic_modifier = 4
-	minimal_player_age = 7
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist)
+	minimal_player_age = 4
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
 //	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Medicae [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.say(";[title] reporting for duty!")
+		H.add_stats(rand(10,13), rand(10,14), rand(10,14), rand(12,15))
+		H.add_skills(5,5,rand(5,7),0,rand(0,4))
+		H.get_equipped_item(slot_s_store)
+		H.assign_random_quirk()
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")

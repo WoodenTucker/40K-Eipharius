@@ -45,5 +45,6 @@
 
 /datum/job/assistant
 	title = "Civilian Penitent"
+	department_flag =  PIL
 	total_positions = 2
 	spawn_positions = 2

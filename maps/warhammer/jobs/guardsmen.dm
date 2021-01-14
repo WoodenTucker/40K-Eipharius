@@ -54,6 +54,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
 		H.add_skills(rand(13,16))
+		H.assign_random_quirk()
 		H.assign_squad_leader(IMPERIUM)
 		H.fully_replace_character_name("Sgt. [current_name]")
 		H.say(";[title] reporting for duty!")
