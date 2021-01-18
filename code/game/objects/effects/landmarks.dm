@@ -90,68 +90,103 @@
 	tag = "start*[name]"
 	return 1
 
-/obj/effect/landmark/start/assistant
-	name = "Assistant"
+
+/* Table of Contents
+	Command
+	Science
+	Medical
+	Security
+	Engineering
+	Supply
+	Service
+	pilgrims
+			
+Template:
+
+/obj/effect/landmark/start/
+	name = ""
+*/
+
+
+//Command//
+/obj/effect/landmark/start/captain
+	name = "Rouge Trader"
+/obj/effect/landmark/start/hop
+	name = "Seneschal"
+/obj/effect/landmark/start/hos
+	name = "Commissar"
+/obj/effect/landmark/start/rd
+	name = "Research Director"
+/obj/effect/landmark/start/chief_engineer
+	name = "Magos"
+/obj/effect/landmark/start/cmo
+	name = "Sister Hospitaller"
+/obj/effect/landmark/start/inquisitor
+	name = "Inquisitor"
+/obj/effect/landmark/start/envoy
+	name = "Astartes Envoy"
+
+//Science//
+/obj/effect/landmark/start/geneticist
+	name = "Genetor"
+/obj/effect/landmark/start/scientist
+	name = "Tenchotrainee"
+/obj/effect/landmark/start/xenobiologist
+	name = "Xenobiologist"
+/obj/effect/landmark/start/roboticist
+	name = "Cybernetica Acolyte"
+
+//Medical//
+/obj/effect/landmark/start/medical_doctor
+	name = "Medicae"
+/obj/effect/landmark/start/chemist
+	name = "Chemist"
+/obj/effect/landmark/start/paramedic
+	name = "Paramedic"
+
+//Security//
+
+/obj/effect/landmark/start/detective
+	name = "Inspector"
+/obj/effect/landmark/start/warden
+	name = "Sergeant"
+/obj/effect/landmark/start/enforcer
+	name = "Enforcer"
+/obj/effect/landmark/start/ig
+	name = "Imperial Guardsman"
+//Engineering//
+
+
+/obj/effect/landmark/start/engineer
+	name = "Tech Priest"
+
+//Supply//
+
+/obj/effect/landmark/start/cargo
+	name = "Crate Pusher"
+/obj/effect/landmark/start/qm
+	name = "Munitorum Priest"
+/obj/effect/landmark/start/shaft_miner
+	name = "Shaft Miner"
+
+//Service//
 /obj/effect/landmark/start/botanic
 	name = "Botanic"
 /obj/effect/landmark/start/bartender
 	name = "Bartender"
-/obj/effect/landmark/start/magistrate
-	name = "Commandant"
-/obj/effect/landmark/start/cargo
-	name = "Crate Pusher"
-/obj/effect/landmark/start/chemist
-	name = "Chemist"
 /obj/effect/landmark/start/chef
 	name = "Chef"
 /obj/effect/landmark/start/chaplain
 	name = "Chaplain"
-/obj/effect/landmark/start/chief_engineer
-	name = "Head Upkeeper"
-/obj/effect/landmark/start/cmo
-	name = "Head Practitioner"
-/obj/effect/landmark/start/detective
-	name = "Inspector"
-/obj/effect/landmark/start/engineer
-	name = "Upkeeper"
-/obj/effect/landmark/start/overseer
-	name = "Overseer"
-/obj/effect/landmark/start/head_peacekeeper
-	name = "Head Peacekeeper"
 /obj/effect/landmark/start/janitor
 	name = "Janitor"
 /obj/effect/landmark/start/librarian
 	name = "Librarian"
-/obj/effect/landmark/start/medical_doctor
-	name = "Practitioner"
-/obj/effect/landmark/start/paramedic
-	name = "Paramedic"
-/obj/effect/landmark/start/meister
-	name = "Quartermaster"
-/obj/effect/landmark/start/robotic_augmentor
-	name = "Robotic Augmentor"
-/obj/effect/landmark/start/peacekeeper
-	name = "Peacekeeper"
-/obj/effect/landmark/start/shaft_miner
-	name = "Shaft Miner"
-/obj/effect/landmark/start/scientist
-	name = "Tenchotrainee"
-/obj/effect/landmark/start/warden
-	name = "Warden"
-/obj/effect/landmark/start/xenobiologist
-	name = "Xenobiologist"
-/obj/effect/landmark/start/supreme_arbiter
-	name = "Supreme Arbiter"
-/obj/effect/landmark/start/arbiter
-	name = "Arbiter"
-/obj/effect/landmark/start/cargo_kid
-	name ="Cargo Kid"
-/obj/effect/landmark/start/cadet
-	name = "Cadet"
-/obj/effect/landmark/start/heir
-	name = "Heir"
-/obj/effect/landmark/start/ig
-	name = "Imperial Guardsman"
+
+//Pilgrims//
+/obj/effect/landmark/start/assistant
+	name = "Assistant"
+
 
 
 //Warhammer stuff
