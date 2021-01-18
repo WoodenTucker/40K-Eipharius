@@ -829,7 +829,7 @@ Imperial Guardsman
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
-	desc = "The fashionable and formidable armor of a principal agent, bears his Imperial rosette across his chest"
+	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest"
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
