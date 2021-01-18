@@ -153,7 +153,6 @@
 	icon_state = "inqhood"
 	item_state = "inqhood"
 	body_parts_covered = HEAD
-	flags_inv = BLOCKHAIR
 	min_cold_protection_temperature = T0C - 20
 	cold_protection = HEAD
-	flags_inv = HIDEEARS | BLOCKHAIR
+	flags_inv = HIDEEARS | BLOCKHAIR | HIDEFACE

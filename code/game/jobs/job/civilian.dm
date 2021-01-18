@@ -85,6 +85,7 @@
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 1
 	supervisors = "the Seneschal"
 	selection_color = "#515151"
 	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
@@ -99,6 +100,7 @@
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 1
 	supervisors = "the Seneschal"
 	selection_color = "#515151"
 	access = list(access_library, access_maint_tunnels)
@@ -112,6 +114,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 2
 	spawn_positions = 2
+	open_when_dead = 0
 	supervisors = "The Golden Throne, the Ministorum, the Ordos Hereticus"
 	selection_color = "#fd0707"
 	economic_modifier = 7
@@ -137,7 +140,7 @@
 /datum/job/leadinquisitor
 	title = "Ordos Helican Inquisitor"
 	department_flag = INQ
-	social_class = SOCIAL_CLASS_HIGH
+	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Golden Throne, the Ordos Hereticus, Lord Inquisitor Rorkan and the masters of the Ordos Helican"
@@ -145,6 +148,7 @@
 	req_admin_notify = 1
 	economic_modifier = 7
 	minimal_player_age = 21
+	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 
 	equip(var/mob/living/carbon/human/H)
