@@ -29,6 +29,7 @@
 	/datum/job/cargo_tech,
 	/datum/job/qm,
 	/datum/job/envoy,
+	/datum/job/leadinquisitor,
 
 	)
 
