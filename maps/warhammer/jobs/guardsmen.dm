@@ -117,7 +117,7 @@
 	lmg_skill = 10
 	smg_skill = 3
 	melee_skill = 9
-	can_be_in_squad = TRUE
+	can_be_in_squad = FALSE
 	open_when_dead = TRUE
 	department_flag = SEC
 
