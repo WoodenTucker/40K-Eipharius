@@ -146,3 +146,14 @@
 	min_cold_protection_temperature = T0C - 20
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/head/inqhood
+	name = "inquisitor's"
+	desc = "A blood red hood with golden trim"
+	icon_state = "inqhood"
+	item_state = "inqhood"
+	body_parts_covered = HEAD
+	flags_inv = BLOCKHAIR
+	min_cold_protection_temperature = T0C - 20
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR

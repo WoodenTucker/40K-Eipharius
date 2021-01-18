@@ -72,7 +72,7 @@
 	name = OUTFIT_JOB_NAME("Inquisitor")
 	l_ear = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/rank/inquisitor
-	suit = /obj/item/clothing/suit/armor/hood/inquisitor
+	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
