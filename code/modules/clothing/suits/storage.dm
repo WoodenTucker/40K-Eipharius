@@ -59,7 +59,7 @@
 	pockets = new/obj/item/storage/internal/pockets(src, slots = 4, slot_size = 2)
 
 
-/obj/item/clothing/suit/armor/hood //should work the same as button toggle but allow you to raise hoods
+/obj/item/clothing/suit/armor/hood //should work the same as button toggle but allow you to raise hoods, this already exists in a different form allowing the creation of headgear, only use this if you want a hood that won't take up a head slot
 	var/icon_raised
 	var/icon_lowered
 	verb/hood()
