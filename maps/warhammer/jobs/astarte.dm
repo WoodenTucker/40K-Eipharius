@@ -1,6 +1,7 @@
 /datum/job/envoy
 	title = "Astartes Envoy"
 	total_positions = 1
+	spawn_positions = 1
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
@@ -14,16 +15,35 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
+	melee_skill = 10
+	ranged_skill = 10
+	medical_skill = 5
+	engineering_skill = 0
+	surgery_skill = 1
+	req_admin_notify = 1
+	open_when_dead = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Brother [current_name]")
+		H.add_stats(40, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
+		H.say(";Brother [current_name] reporting for duty!")
+		H.get_idcard()?.access = get_all_accesses()
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
+		H.gender = MALE
+		H.bladder = 0 //should make jimmy space marines not have to shit/piss
+		H.bowels = 0
 
 
 
-/decl/hierarchy/outfit/job/envoy //suits don't work yet, not showing properly
+/decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	head = /obj/item/clothing/head/helmet/ravenhelm
 	glasses = /obj/item/clothing/glasses/night
-	uniform = /obj/item/clothing/under/color/brown
-	shoes = /obj/item/clothing/shoes/jackboots
-	l_ear = /obj/item/device/radio/headset/heads/hos
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/rgboots
+	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	suit = /obj/item/clothing/suit/armor/ravenguard
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -33,19 +53,3 @@
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	backpack_contents = list(/obj/item/ammo_magazine/bolt_rifle_magazine = 2,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-	var/list/minimal_access = list()      //For some reason these need to be relisted here instead of the usual /datum/job, not sure why it isn't catching the previous definition but w/e
-	var/list/access = list()
-
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
-			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
-			            access_hop, access_RC_announce, access_keycard_auth, access_gateway)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
-			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
-			            access_hop, access_RC_announce, access_keycard_auth, access_gateway)

@@ -75,4 +75,18 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
 
+/obj/item/material/sword/commissword
+	name = "commissar's sword"
+	desc = "An orante officer's sword and the Commissar's prized possession. Used to cut down heretics and cowards alike"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "commissword"
+	item_state = "commissword"
+	attack_verb = list("stabbed", "chopped", "cut", "sliced")
+	sharp = 1
+	edge = 1
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
+	slot_flags = SLOT_BELT
+
+
 

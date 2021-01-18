@@ -732,7 +732,6 @@ Imperial Guardsman
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
 /obj/item/clothing/head/commissar
 	name = "Commisar\'s Cap"
 	desc = "This cap strikes fear into the rank and file."
@@ -807,21 +806,26 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/ravenguard
 	name = "Raven Guard Power Armor"
 	desc = "The holy black armor of the Raven Guard."
-	icon = 'icons/mob/32x40/suits.dmi'
-	icon_state = "Ravsuit"
-	item_state = "Ravcap"
+	icon_state = "rg_lib"
+	item_state = "rg_lib"
+	str_requirement = 25
+	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	flags_inv = HIDEJUMPSUIT|HIDESHOES|HIDEGLOVES
+	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 /obj/item/clothing/head/helmet/ravenhelm
 	name = "Raven Guard Power Helm"
 	desc = "The black, beaked mask of the Raven Guard."
-	icon = 'icons/mob/32x40/hats.dmi'
-	icon_state = "Ravhelm"
-	item_state = "Ravhelm"
+	icon_state = "rghelmet2"
+	item_state = "rghelmet2"
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
