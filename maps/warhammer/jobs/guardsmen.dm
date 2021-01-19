@@ -14,7 +14,6 @@
 	lmg_skill = 3
 	smg_skill = 3
 	open_when_dead = TRUE
-	can_be_in_squad = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -186,7 +185,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
 	l_pocket = /obj/item/storage/box/ifak
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/all
 	belt = /obj/item/material/sword/commissword
 	l_hand = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars

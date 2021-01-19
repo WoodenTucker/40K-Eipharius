@@ -133,6 +133,7 @@
 	department = "Medical"
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
+	can_be_in_squad = TRUE
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Sister Hospitaller and the Commissar"
@@ -150,6 +151,8 @@
 		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.say(";[title] reporting for duty!")
+		if(can_be_in_squad)
+			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(10,13), rand(10,14), rand(10,14), rand(12,15))
 		H.add_skills(5,5,rand(5,7),0,rand(0,4))
 		H.get_equipped_item(slot_s_store)

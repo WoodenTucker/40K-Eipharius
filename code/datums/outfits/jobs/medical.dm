@@ -103,13 +103,20 @@
 	uniform = /obj/item/clothing/under/rank/psych/turtleneck
 
 /decl/hierarchy/outfit/job/medical/paramedic
-	name = OUTFIT_JOB_NAME("Paramedic")
+	name = OUTFIT_JOB_NAME("combat medicae")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
-	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
+	suit = /obj/item/clothing/suit/armor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_hand = /obj/item/storage/firstaid/adv
-	belt = /obj/item/storage/belt/medical/emt
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	belt = /obj/item/storage/belt/medical/full
+	head = /obj/item/clothing/head/helmet/medicae
 	id_type = /obj/item/card/id/medical/paramedic
+	l_ear = null
+	r_ear = null
+	backpack_contents = list(/obj/item/cell/lasgun = 2)
+	suit_store = /obj/item/gun/energy/las/lasgun
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/medical/paramedic/emt

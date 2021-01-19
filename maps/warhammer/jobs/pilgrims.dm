@@ -1,4 +1,4 @@
-/datum/job/penitent
+/datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
 	title = "Penitent"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross

@@ -726,6 +726,12 @@ Imperial Guardsman
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "guard"
 
+/obj/item/clothing/head/helmet/medicae
+	name = "medicae helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "medicae"
+	item_state = "medicae"
+
 /obj/item/clothing/suit/armor/commissar
 	icon_state = "comissar3"
 	item_state = "comissar3"
@@ -751,7 +757,7 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/enforcer
-	name = "Enforcer's Light Armor"
+	name = "enforcer's light armor"
 	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
 	icon_state = "merc"
 	item_state = "merc"
@@ -760,6 +766,16 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+
+/obj/item/clothing/suit/armor/medicae
+	name = "medicae's Light Armor"
+	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
+	icon_state = "medicae"
+	item_state = "medicae"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 //Hospitaller gear
 /obj/item/clothing/suit/storage/sistersuperiorsuit
 	name = "sister superior's suit"
