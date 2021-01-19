@@ -618,7 +618,13 @@
 	var/allowed_condition = 60//Non smart engeery people can only repair their weapon up to 60%
 	var/repair_speed = 50
 	var/mob/living/carbon/human/H = user
-	if(H.SKILL_LEVEL(engineering) >= 6)//If you're a smart engineery boi u can repair da wepon all da wey
+	if(istype(src, /obj/item/gun/projectile/ork))
+		if(H.SKILL_LEVEL(engineering) >= 6)//If you're a smart mek boi you can repair your piece of scrap to do more noisy noise
+			allowed_condition = 40
+			repair_speed = 20
+		else
+			allowed_condition = 30
+	else if(H.SKILL_LEVEL(engineering) >= 6)//If you're a smart engineery boi u can repair da wepon all da wey
 		allowed_condition = 90
 		repair_speed = 20
 	if(condition <= allowed_condition)

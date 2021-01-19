@@ -321,3 +321,14 @@
 		return
 	else
 		..()
+
+/obj/item/gun/projectile/ork/slugga
+	name = "slugga"
+	desc = "A hard hitting ork pistol made from scrap and trash. It uses .75 scrap bullets."
+	magazine_type = /obj/item/ammo_magazine/ork/slugga
+	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
+	icon_state = "slugga"
+	caliber = ".75"
+	condition = 40
+	force = 20
+	load_method = MAGAZINE

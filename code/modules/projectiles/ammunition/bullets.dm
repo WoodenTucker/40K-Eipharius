@@ -240,3 +240,13 @@
 	desc = "A .75 bolt rifle casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt
+
+/obj/item/ammo_casing/ork
+	desc = "A giant and crude bullet that was made with scrap."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/ork
+
+/obj/item/ammo_casing/ork/shoota
+	desc = "A small and crude bullet that was made with scrap. Looks poorly-made."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/ork/shoota
