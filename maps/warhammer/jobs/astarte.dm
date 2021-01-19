@@ -2,6 +2,7 @@
 	title = "Astartes Envoy"
 	total_positions = 1
 	spawn_positions = 1
+	head_position = 1
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
