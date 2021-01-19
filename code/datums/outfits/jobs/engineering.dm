@@ -1,7 +1,5 @@
 /decl/hierarchy/outfit/job/engineering
 	hierarchy_type = /decl/hierarchy/outfit/job/engineering
-	belt = /obj/item/storage/belt/utility/full
-	l_ear = /obj/item/device/radio/headset/headset_eng
 	shoes = /obj/item/clothing/shoes/workboots
 	//pda_slot = slot_l_store
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -12,20 +10,28 @@
 
 /decl/hierarchy/outfit/job/engineering/chief_engineer
 	name = OUTFIT_JOB_NAME("Magos")
-	head = /obj/item/clothing/head/hardhat/white
+	head = /obj/item/clothing/head/hardhat/techpriest
+	belt = /obj/item/storage/belt/utility/full
+	suit = /obj/item/clothing/suit/storage/hazardvest/magos
 	uniform = /obj/item/clothing/under/rank/chief_engineer
-	l_ear = /obj/item/device/radio/headset/heads/ce
-	gloves = /obj/item/clothing/gloves/thick
+	l_ear = /obj/item/device/radio/headset/red_team/all
+	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = /obj/item/device/pda/heads/ce
+	back = /obj/item/storage/backpack/satchel/warfare
 
 /decl/hierarchy/outfit/job/engineering/engineer
-	name = OUTFIT_JOB_NAME("Engineer")
-	head = /obj/item/clothing/head/hardhat
+	name = OUTFIT_JOB_NAME("Tech Priest")
+	head = /obj/item/clothing/head/hardhat/techpriest
+	l_ear = /obj/item/device/radio/headset/red_team/all
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	uniform = /obj/item/clothing/under/rank/engineer
-	r_pocket = /obj/item/device/t_scanner
+	suit = /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
+	gloves = /obj/item/clothing/gloves/thick/techpriest
+	belt = /obj/item/storage/belt/utility/full
 	id_type = /obj/item/card/id/engineering
 	pda_type = /obj/item/device/pda/engineering
+	back = /obj/item/storage/backpack/satchel/warfare
 
 /decl/hierarchy/outfit/job/engineering/engineer/void
 	name = OUTFIT_JOB_NAME("Engineer - Voidsuit")

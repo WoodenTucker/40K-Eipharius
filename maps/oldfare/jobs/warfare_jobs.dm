@@ -3,7 +3,6 @@
 
 /datum/map/warfare
 	allowed_jobs = list(
-	/datum/job/assistant,
     /datum/job/soldier/red_soldier/captain,
     /datum/job/soldier/red_soldier/sgt,
     /datum/job/soldier/red_soldier/medic,

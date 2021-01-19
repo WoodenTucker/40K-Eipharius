@@ -67,6 +67,7 @@
 	supervisors = "the astartes envoy"
 	total_positions = 1
 	spawn_positions = 1
+	head_position = 1
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
@@ -79,7 +80,7 @@
 	open_when_dead = FALSE
 	department_flag = SEC
 
-	announced = FALSE
+	announced = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

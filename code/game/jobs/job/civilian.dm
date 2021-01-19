@@ -65,12 +65,14 @@
 	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 
+
+
 /datum/job/mining
 	title = "Explorator"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0 //remember to open these one day when its ready
 	supervisors = "the Munitorum Priest and the Seneschal"
 	selection_color = "#515151"
 	economic_modifier = 5
