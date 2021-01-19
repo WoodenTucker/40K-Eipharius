@@ -14,6 +14,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 	open_when_dead = TRUE
+	can_be_in_squad = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
