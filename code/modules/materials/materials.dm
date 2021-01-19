@@ -896,3 +896,14 @@ var/list/name_to_material
 	ignition_point = T0C+232
 	melting_point = T0C+300
 	conductive = 0
+
+//SCRAPYYY
+
+/material/scrap
+	name = "scrap"
+	display_name = "scrap"
+	use_name = "scrap"
+	icon_colour = "#303030"
+	conductive = 1
+	sheet_singular_name = "chunk"
+	sheet_plural_name = "chunks"

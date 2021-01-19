@@ -72,3 +72,6 @@
 
 /material/leather
 	value = 3
+
+/material/scrap
+	value = 3

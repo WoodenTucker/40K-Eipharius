@@ -56,3 +56,24 @@
 	desc = "A polished cutlass issued to chief petty officers of the fleet."
 	icon_state = "pettyofficersword"
 	item_state = "pettyofficersword"
+
+/obj/item/material/mekmace
+	name = "scrap mace"
+	desc = "A mace normally used by mek boys made of scrap."
+	force = 40
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "mekmace"
+	item_state = "mekmace"
+
+/obj/item/material/mekmace/afterattack(atom/target, mob/user, proximity_flag, click_parameters)
+
+	if(istype(target, /obj/item/stack/material))
+		var/obj/item/stack/material/M = target
+		to_chat(user, "<span class='notice'> You start making scrap. </span>")
+		if(do_after(user, 30))
+			to_chat(user, "<span class='notice'> You make scrap using the [target].</span>")
+			new /obj/item/stack/material/scrap(target.loc, M.amount)
+			del(target)
+		else
+			to_chat(user, "<span class='notice'> You stop making scrap.</span>")
+	. = ..()
