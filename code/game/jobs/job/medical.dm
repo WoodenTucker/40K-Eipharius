@@ -36,6 +36,7 @@
 		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
+		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.f_style = "shaved"
 		H.h_style = "Bob"
@@ -74,6 +75,7 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE
+		H.warfare_faction = IMPERIUM
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
@@ -147,6 +149,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
+		H.warfare_faction = IMPERIUM
 		..()
 		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())

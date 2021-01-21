@@ -130,6 +130,7 @@
 		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //highly trained and skilled
 		H.add_skills(rand(5,8),rand(5,8),rand(2,4),rand(1,3),0)
 		H.assign_random_quirk()
+		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
 		H.say("Throne Agent reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Principle agent of the Ordos Helican, your Master, a fully fledged Inquisitor has ordered you to this planet to perform reconaissance and keep an eye on the various pilgrims/penitents passing through. Report any heresy, suffer not the heretic to live.</font></b></span>")
@@ -160,6 +161,7 @@
 		H.add_stats(rand(14,18), rand(13,18), rand(14,18), rand(14,18)) //highly trained and skilled
 		H.add_skills(rand(7,10),rand(7,10),rand(2,4),rand(1,3),0)
 		H.assign_random_quirk()
+		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a full-fledged Inquisitor of the Ordos Hereticus Helican. You answer directly to Lord Inquisitor Alessandro Rorken. He has deployed you and your team to this outpost after certain... whispers reached the ears of the Inquisition. Investigate the outpost and its surrounding village, root out any heresy with the help of your principal agents and secure the safety of the faithful. The Emperor Protects! </font></b></span>")
 
