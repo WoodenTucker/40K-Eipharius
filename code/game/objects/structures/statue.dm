@@ -13,3 +13,10 @@
 	name = "broken statue"
 	desc = "A statue of some ominous looking, robed, figure. It's badly damaged."
 	icon_state = "statue_broken"
+
+
+/obj/structure/statue/aquilla
+	name = "aquila altar"
+	desc = "A glorious Nuln wood altar displaying a golden Aquila"
+	icon = 'icons/obj/structures/aquilla.dmi'
+	icon_state = "aquilla"
