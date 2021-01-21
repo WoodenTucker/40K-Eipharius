@@ -1305,7 +1305,7 @@
 	description = "Affordable, golden, amasec. The beloved drink of the Imperium"
 	strength = 25
 	color = "#ff9100"
-	taste_description = "the herbs and fruits of a far-off world"
+	taste_description = "the herbs and fruits of a far-off world."
 
 /datum/reagent/ethanol/amasec/expensive
 	name = "Aged Amasec"
