@@ -11,7 +11,7 @@
 	shoes = /obj/item/clothing/shoes/commandboots
 	id_type = /obj/item/card/id/gold
 	pda_type = /obj/item/device/pda/captain
-	backpack_contents = list(/obj/item/storage/box/ids = 1)
+	backpack_contents = list(/obj/item/storage/box/ids = 1, /obj/item/thrones/bundle/t1000=1)
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
 	..()
@@ -37,4 +37,4 @@
 	shoes = /obj/item/clothing/shoes/commandboots
 	id_type = /obj/item/card/id/silver
 	pda_type = /obj/item/device/pda/heads/hop
-	backpack_contents = list(/obj/item/storage/box/ids = 1, /obj/item/ammo_magazine/c45m = 2)
+	backpack_contents = list(/obj/item/storage/box/ids = 1, /obj/item/ammo_magazine/c45m = 2, /obj/item/thrones/bundle/t500=1)

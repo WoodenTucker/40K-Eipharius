@@ -179,7 +179,10 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_hand = /obj/item/gun/energy/las/lasgun
-	backpack_contents = list(/obj/item/cell/lasgun = 2)
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/thrones/bundle/t50=1,
+	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/commissar
@@ -197,7 +200,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1)
+	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1, /obj/item/thrones/bundle/t200)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/sergeant
@@ -214,7 +217,10 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 2,)
+	backpack_contents = list(
+		/obj/item/ammo_magazine/box/a556/mg08 = 2,
+		/obj/item/thrones/bundle/t50,
+)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/enforcer
@@ -231,7 +237,12 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	backpack_contents = list(/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2, /obj/item/handcuffs = 2, /obj/item/storage/box/beanbags = 1,)
+	backpack_contents = list(
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
+	/obj/item/handcuffs = 2,
+	/obj/item/storage/box/beanbags = 1,
+	/obj/item/thrones/bundle/t50
+)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer

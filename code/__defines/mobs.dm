@@ -374,8 +374,13 @@
 #define BLUE_TEAM "Bluecoats"
 #define RED_TEAM "Redcoats"
 
-//warhammer
+//warhammer factions
 #define IMPERIUM "Imperium of Man"
+#define ORKZ "Orkz"
+#define DELDAR "Dark Eldar"
+#define ELDAR "Eldar"
+#define CHAOS "Chaos"
+
 /*
 #define SKILL_LOW(x) x<=4
 
