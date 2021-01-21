@@ -10,17 +10,17 @@
 	boss_short    = "SC"
 	company_name  = "Segmentum Ultima"
 	company_short = "SU"
-	system_name = "Eastern Fringe"
+	system_name = "Helican Subsector"
 
 	lobby_icon = 'maps/warhammer/fullscreen.dmi'
 	lobby_screens = list("lobby1","lobby2","lobby3","lobby4","lobby5", "lobby6")
 
-	station_levels = list(1,2,3)
-	contact_levels = list(1)
-	player_levels = list(1,2,3)
+	station_levels = list(1,2,3,4)
+	contact_levels = list(1,2,3,4)
+	player_levels = list(1,2,3,4)
 
 	allowed_spawns = list("Arrivals Shuttle")
-	base_turf_by_z = list("1" = /turf/simulated/floor/dirty, "2" = /turf/simulated/floor/dirty, "3" = /turf/simulated/floor/dirty)
+	base_turf_by_z = list("1" = /turf/simulated/floor/dirty, "2" = /turf/simulated/floor/dirty, "3" = /turf/simulated/floor/dirty,"4" = /turf/simulated/floor/dirty)
 	shuttle_docked_message = "The shuttle has docked."
 	shuttle_leaving_dock = "The shuttle has departed from home dock."
 	shuttle_called_message = "A scheduled transfer shuttle has been sent."
