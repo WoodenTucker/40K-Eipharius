@@ -331,3 +331,31 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/empty
 	initial_ammo = 0
+
+/* ork mags */
+
+/obj/item/ammo_magazine/ork/slugga
+	name = "slugga magazine"
+	icon_state = "slugga"
+	mag_type = MAGAZINE
+	caliber = ".75"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/ork
+	max_ammo = 10
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/ork/slugga/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/ork/shoota
+	name = "shoota magazine"
+	icon_state = "shoota"
+	mag_type = MAGAZINE
+	caliber = ".75"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/ork/shoota
+	max_ammo = 75
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/ork/shoota/empty
+	initial_ammo = 0

@@ -382,3 +382,17 @@
 
 /obj/item/stack/material/glass/phoronrglass/fifty
 	amount = 50
+
+/obj/item/stack/material/scrap
+	name = "scrap"
+	desc = "This piece of scrap is made by the ork mek boys and is used in everything they craft. Is just trash in the eyes of any other race."
+	singular_name = "scrap sheet"
+	icon_state = "sheet-scrap"
+	default_type = "scrap"
+	icon = 'icons/obj/items.dmi'
+
+/obj/item/stack/material/scrap/ten
+	amount = 10
+
+/obj/item/stack/material/scrap/fifty
+	amount = 50

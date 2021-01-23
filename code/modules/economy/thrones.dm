@@ -1,7 +1,7 @@
 /obj/item/thrones
 	name = "0 Throne"
 	desc = "It's worth 0 Thrones."
-	gender = PLURAL
+	gender = PLURAL //did you just assume my thrones gender?
 	icon = 'icons/obj/items.dmi'
 	icon_state = "throne1"
 	opacity = 0
@@ -15,7 +15,7 @@
 	var/access = list()
 	access = access_crate_cash
 	var/worth = 0
-	var/global/denominations = list(10000,5000,1000,500,200,100,50,20,10,1)
+	var/global/denominations = list(10000,5000,1000,500,200,100,50,25,20,15,10,5,1)
 
 /obj/item/thrones/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/thrones))
@@ -109,7 +109,7 @@
 	if(!worth)
 		qdel(src)
 
-/obj/item/thrones/bundle/t1
+/obj/item/thrones/bundle/t1 //TODO added new denominations, they need sprites
 	name = "1 Throne Gelts"
 	icon_state = "throne1"
 	desc = "It's worth 1 credit."

@@ -164,7 +164,9 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 		"My teeth hurt.",
 		"I am not ready to die.",
 		"Who keeps dropping the artillery?",
-		"I don't remember joining the military..."))
+		"I don't remember joining the military...",
+		"Does the Emperor truly protect?",
+		"I hope the Inquisitor doesn't find my Eldar milf fan-fiction",))
 
 /mob/living/proc/assign_random_quirk()
 	if(prob(75))//75% of not choosing a quirk at all.

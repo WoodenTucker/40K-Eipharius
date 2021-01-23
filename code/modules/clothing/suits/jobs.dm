@@ -158,6 +158,24 @@
 	desc = "A high-visibility vest used in work zones. This one is green!"
 	icon_state = "hazard_g"
 
+
+/obj/item/clothing/suit/storage/hazardvest/magos
+	name = "magos' robes"
+	desc = "Plain robes with numerous mechanical appendages sticking out and wriggling about."
+	icon_state = "magos"
+	item_state = "magos"
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+
+
+/obj/item/clothing/suit/storage/hazardvest/magos/techpriest
+	name = "tech-priest's robes"
+	desc = "Plain robes with numerous mechanical appendages sticking out and wriggling about."
+	canremove = 0
+	icon_state = "techpriest"
+	item_state = "techpriest"
+
 //Lawyer
 /obj/item/clothing/suit/storage/toggle/suit
 	name = "suit jacket"

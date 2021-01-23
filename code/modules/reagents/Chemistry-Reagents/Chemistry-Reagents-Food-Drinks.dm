@@ -1300,6 +1300,20 @@
 	color = "#ffddaa" // rgb: 255, 221, 170 - a light cream
 	strength = 20
 
+/datum/reagent/ethanol/amasec/cheap
+	name = "Cheap Amasec"
+	description = "Affordable, golden, amasec. The beloved drink of the Imperium"
+	strength = 25
+	color = "#ff9100"
+	taste_description = "the herbs and fruits of a far-off world."
+
+/datum/reagent/ethanol/amasec/expensive
+	name = "Aged Amasec"
+	description = "Expensive, aged and meant for the nobility of the Imperium. This bottle of amasec tastes and smells like the embrace of the Emperor himself."
+	strength = 30
+	color = "#ff9100"
+	taste_description = "the finest fruits and aged wood, carefully selected from numerous Imperial worlds."
+
 /datum/reagent/ethanol/herbal
 	name = "Herbal Liquor"
 	description = "A complex blend of herbs, spices and roots mingle in this old Earth classic."

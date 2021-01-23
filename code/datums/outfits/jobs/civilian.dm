@@ -56,6 +56,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	id_type = /obj/item/card/id/inquisition/principal_agent
+	back = /obj/item/storage/backpack/satchel/warfare
 	pda_type = /obj/item/device/pda/lawyer
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	head = /obj/item/clothing/head/cerberus
@@ -66,3 +67,15 @@
 	l_hand = /obj/item/storage/bible
 	id_type = /obj/item/card/id/civilian/chaplain
 	pda_type = /obj/item/device/pda/chaplain
+
+/decl/hierarchy/outfit/job/inquisitor
+	name = OUTFIT_JOB_NAME("Inquisitor")
+	l_ear = /obj/item/device/radio/headset/red_team
+	uniform = /obj/item/clothing/under/rank/inquisitor
+	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
+	id_type = /obj/item/card/id/inquisition/principal_agent
+	pda_type = /obj/item/device/pda/lawyer
+	neck = /obj/item/reagent_containers/food/drinks/canteen

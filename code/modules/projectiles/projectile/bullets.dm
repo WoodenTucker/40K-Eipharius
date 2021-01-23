@@ -354,3 +354,34 @@
 	pixel_x = rand(-10,10)
 	pixel_y = rand(-10,10)
 	..()
+
+/* ORKY BULLETS */
+
+/obj/item/projectile/bullet/ork
+	name = "scrap"
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	damage = 50
+
+/obj/item/projectile/bullet/ork/shoota
+	name = "piece of trash"
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+
+/obj/item/projectile/bullet/ork/shoota/New()
+	var/dice = rand(1, 100)
+	switch(dice)
+		if(100)
+			damage = 100
+			agony = 20
+		if(90 to 99)
+			damage = 80
+		if(80 to 89)
+			damage = rand(60, 70)
+		if(40 to 79)
+			damage = rand(40, 60)
+		if(20 to 39)
+			damage = rand(30, 40)
+		if(10 to 19)
+			damage = rand(10, 30)
+		if(1 to 9)
+			damage = 1
+	..()

@@ -2,6 +2,7 @@
 	title = "Astartes Envoy"
 	total_positions = 1
 	spawn_positions = 1
+	head_position = 1
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
@@ -21,7 +22,7 @@
 	engineering_skill = 0
 	surgery_skill = 1
 	req_admin_notify = 1
-	open_when_dead = FALSE
+	open_when_dead = 0
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -30,6 +31,7 @@
 		H.add_stats(40, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
 		H.say(";Brother [current_name] reporting for duty!")
 		H.get_idcard()?.access = get_all_accesses()
+		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss

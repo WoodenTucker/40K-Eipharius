@@ -158,6 +158,7 @@
 /obj/item/material/sword/combat_knife
 	name = "combat knife"
 	desc = "For self defense, and self offense."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "combatknife"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")

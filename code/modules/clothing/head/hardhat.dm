@@ -24,3 +24,11 @@
 
 /obj/item/clothing/head/hardhat/dblue
 	icon_state = "hardhat0_dblue"
+
+/obj/item/clothing/head/hardhat/techpriest
+	name = "augmented head"
+	desc = "The augmented skull and hood signifying one is a priest of the Adeptus Mechanicus."
+	icon_state = "techpriest"
+	item_state = "techpriest"
+	canremove = 0
+	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEMASK|HIDEEARS|HIDEEYES

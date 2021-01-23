@@ -1,4 +1,4 @@
-/datum/job/penitent
+/datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
 	title = "Penitent"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
@@ -15,6 +15,7 @@
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.add_skills(rand(10,16))
+		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Penitent [H.real_name]")
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Penitent. Once a daemon worshipper your life changed when the Inquisition came knocking. Years of torture and re-education have left your mind and body shattered. You drift from world to world, simply hoping to get by another day </font></b></span>")

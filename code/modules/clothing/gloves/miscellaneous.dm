@@ -89,6 +89,13 @@
 /obj/item/clothing/gloves/thick/botany/modified
 	item_flags = ITEM_FLAG_PREMODIFIED
 
+
+/obj/item/clothing/gloves/thick/techpriest
+	name = "cyborg tech priest hands"
+	desc = "The augmented palms and fingers of a tech priest. Designed to allow the Priest to safely work on any machine."
+	canremove = 0
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."

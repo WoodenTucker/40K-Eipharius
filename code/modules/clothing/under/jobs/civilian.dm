@@ -120,6 +120,13 @@
 	icon_state = "combat"
 	item_state = "combat"
 
+
+/obj/item/clothing/under/rank/inquisitor
+	desc = "A slick bodyglove befitting of an agent of the Inquisition"
+	name = "inquisitor's bodyglove"
+	icon_state = "assistant_formal"
+	item_state = "assistant_formal"
+
 /obj/item/clothing/under/rank/internalaffairs/plain
 	desc = "A plain shirt and pair of pressed black pants."
 	name = "formal outfit"

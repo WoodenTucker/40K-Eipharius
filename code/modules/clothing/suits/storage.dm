@@ -59,3 +59,23 @@
 	pockets = new/obj/item/storage/internal/pockets(src, slots = 4, slot_size = 2)
 
 
+/obj/item/clothing/suit/armor/hood //should work the same as button toggle but allow you to raise hoods, this already exists in a different form allowing the creation of headgear, only use this if you want a hood that won't take up a head slot
+	var/icon_raised
+	var/icon_lowered
+	verb/hood()
+		set name = "Raise/lower hood"
+		set category = "Object"
+		set src in usr
+		if(!usr.canmove || usr.stat || usr.restrained())
+			return 0
+
+		if(icon_state == icon_raised) //Will check whether icon state is currently set to the "open" or "closed" state and switch it around with a message to the user
+			icon_state = icon_lowered
+			to_chat(usr, "You raise your hood.")
+		else if(icon_state == icon_lowered)
+			icon_state = icon_raised
+			to_chat(usr, "You lower your hood.")
+		else //in case some goofy admin switches icon states around without switching the icon_open or icon_closed
+			to_chat(usr, "You attempt to raise the hood on your [src], before promptly realising you do not have a hood.")
+			return
+		update_clothing_icon()	//so our overlays update

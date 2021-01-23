@@ -10,7 +10,7 @@
 
 /decl/hierarchy/outfit/job/medical/cmo
 	name = OUTFIT_JOB_NAME("Sister Superior")
-	l_ear  = /obj/item/device/radio/headset/red_team
+	l_ear  = /obj/item/device/radio/headset/red_team/all
 	uniform = /obj/item/clothing/under/rank/medical
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
@@ -21,6 +21,7 @@
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
 	head = /obj/item/clothing/head/hospitallerhelm
+	backpack_contents = list(/obj/item/thrones/bundle/t200=1)
 /decl/hierarchy/outfit/job/medical/doctor
 	name = OUTFIT_JOB_NAME("Sister Hospitellar")
 	uniform = /obj/item/clothing/under/rank/medical
@@ -33,6 +34,7 @@
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical
 	head = /obj/item/clothing/head/hospitallerhelm
+	backpack_contents = list(/obj/item/thrones/bundle/t50=1)
 /decl/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
@@ -103,13 +105,20 @@
 	uniform = /obj/item/clothing/under/rank/psych/turtleneck
 
 /decl/hierarchy/outfit/job/medical/paramedic
-	name = OUTFIT_JOB_NAME("Paramedic")
+	name = OUTFIT_JOB_NAME("combat medicae")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
-	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
+	suit = /obj/item/clothing/suit/armor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_hand = /obj/item/storage/firstaid/adv
-	belt = /obj/item/storage/belt/medical/emt
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	belt = /obj/item/storage/belt/medical/full
+	head = /obj/item/clothing/head/helmet/medicae
 	id_type = /obj/item/card/id/medical/paramedic
+	l_ear = null
+	r_ear = null
+	backpack_contents = list(/obj/item/cell/lasgun = 2)
+	suit_store = /obj/item/gun/energy/las/lasgun
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 /decl/hierarchy/outfit/job/medical/paramedic/emt

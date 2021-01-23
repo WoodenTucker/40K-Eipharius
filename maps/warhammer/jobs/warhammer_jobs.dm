@@ -1,5 +1,4 @@
-/datum/job/assistant
-	total_positions = 2
+
 
 /datum/map/warhammer
 	allowed_jobs = list(
@@ -29,6 +28,7 @@
 	/datum/job/cargo_tech,
 	/datum/job/qm,
 	/datum/job/envoy,
+	/datum/job/leadinquisitor,
 
 	)
 

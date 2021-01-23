@@ -281,6 +281,10 @@
 #define SPECIES_EGYNO "Egyno"
 #define SPECIES_ELDAR "Eldar"
 #define SPECIES_ASTARTES "Space Marine"
+#define SPECIES_ORK_GRETCHIN "Gretchin"
+#define SPECIES_ORK_NOB "Ork Nob"
+#define SPECIES_ORK_MEK "Mekboy"
+#define SPECIES_ORK_BOSS "Warboss"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
@@ -370,8 +374,13 @@
 #define BLUE_TEAM "Bluecoats"
 #define RED_TEAM "Redcoats"
 
-//warhammer
+//warhammer factions
 #define IMPERIUM "Imperium of Man"
+#define ORKZ "Orkz"
+#define DELDAR "Dark Eldar"
+#define ELDAR "Eldar"
+#define CHAOS "Chaos"
+
 /*
 #define SKILL_LOW(x) x<=4
 

@@ -1,10 +1,9 @@
 /datum/job/assistant
 	title = "Assistant"
 	department = "Civilian"
-	department_flag = CIV
 
-	total_positions = -1
-	spawn_positions = -1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "absolutely everyone"
 	selection_color = "#515151"
 	economic_modifier = 1
