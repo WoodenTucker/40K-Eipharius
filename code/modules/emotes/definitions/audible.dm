@@ -403,3 +403,8 @@
 	key ="chitter"
 	emote_message_3p = "USER chitters."
 	emote_sound = 'sound/voice/Bug.ogg'
+
+/decl/emote/audible/emperor_protects
+	key = "emperor"
+	emote_message_3p = "USER praises the Emperor."
+	emote_sound = 'sound/voice/emotes/emperorprotects.ogg'

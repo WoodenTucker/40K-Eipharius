@@ -37,6 +37,10 @@
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
 
+/datum/job/captain/equip(var/mob/living/carbon/human/H)
+	. = ..()
+	if(.)
+		H.implant_loyalty(src)
 
 
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters

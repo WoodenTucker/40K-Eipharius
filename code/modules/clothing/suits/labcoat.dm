@@ -49,6 +49,13 @@
 	icon_open = "labcoat_chem_open"
 	icon_closed = "labcoat_chem"
 
+
+/obj/item/clothing/suit/storage/toggle/labcoat/alchemist
+	name = "Alchemist robes"
+	desc = "A suit that protects against minor chemical spills. Has an orange stripe on the shoulder."
+	icon_state = "science2"
+	item_state = "science2"
+
 /obj/item/clothing/suit/storage/toggle/labcoat/virologist
 	name = "Virologist labcoat"
 	desc = "A suit that protects against minor chemical spills. Offers slightly more protection against biohazards than the standard model. Has a green stripe on the shoulder."

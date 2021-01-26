@@ -99,6 +99,16 @@
 	//alt_titles = list("Pharmacist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.say(";[title] reporting for duty!")
+		H.add_stats(rand(6,10), rand(7,12), rand(8,12), rand(9,13))
+		H.add_skills(2,2,rand(2,4),0,rand(1,3)) //they have limited medical knowledge
+		H.warfare_faction = IMPERIUM
+
+		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous healing tincures and salves so beloved by the Ordos Hospitaller. Keep the outpost stocked and maybe sell a little something on the side if you're willing to brave the Inquisition.</font></b></span>")
+
 /datum/job/geneticist
 	title = "Geneticist"
 	department = "Medical"
