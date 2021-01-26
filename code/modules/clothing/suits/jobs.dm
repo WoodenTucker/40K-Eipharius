@@ -247,3 +247,13 @@
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO
 	cold_protection = UPPER_TORSO
+
+//innkeeper
+/obj/item/clothing/suit/innapron
+	name = "innkeeper's apron"
+	desc = "Stinking, torn robes"
+	icon_state = "mapron"
+	item_state = "mapron"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO

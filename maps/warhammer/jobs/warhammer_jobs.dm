@@ -29,6 +29,7 @@
 	/datum/job/qm,
 	/datum/job/envoy,
 	/datum/job/leadinquisitor,
+	/datum/job/innkeeper,
 
 	)
 

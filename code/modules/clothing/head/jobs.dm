@@ -196,6 +196,12 @@
 	icon_state = "plebhood"
 	item_state = "plebhood"
 
+/obj/item/clothing/head/bardhat
+	name = "a bard's hat"
+	desc = "A fairly nice leather hat with a feather tucked into it."
+	icon_state = "bardhat"
+	item_state = "bardhat"
+
 /obj/item/clothing/head/bighat
 	name = "a big hat"
 	desc = "A large, imposing hat."

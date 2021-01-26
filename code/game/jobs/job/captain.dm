@@ -8,6 +8,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 0
 	supervisors = "The Golden Throne and the High Lords of Terra"
 	selection_color = "#1d1d4f"
 	req_admin_notify = 1
@@ -25,6 +26,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.fully_replace_character_name("Rogue Trader [current_name]")
 		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //RT's are really fucking random in lore so we'll make his stats random
 		H.say(";Your gracious host is here!")
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader, the owner and leader of this outpost. You wield a golden writ of authority directly from the High Lords of Terra themselves. None can command you except your lust for profit and your mission to expand Imperial influence.</font></b></span>")
 
@@ -44,6 +46,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 0
 	supervisors = "the Rogue Trader"
 	selection_color = "#2f2f7f"
 	req_admin_notify = 1
@@ -55,6 +58,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		..()
 		H.add_stats(rand(6,8), rand(8,14), rand(7,13), rand(13,18))  //Seneschals to me feel like a smart right-hand man rather than a brute, their stats reflect this
 		H.say(";Seneschal on deck! Direct any issues not pertinent to our Rogue Trader towards me!")
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. </font></b></span>")
 

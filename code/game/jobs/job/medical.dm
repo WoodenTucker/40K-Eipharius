@@ -38,6 +38,7 @@
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
@@ -73,6 +74,7 @@
 		H.add_stats(rand(6,10), rand(10,14), rand(10,14), rand(12,15))
 		H.add_skills(3,3,rand(5,7),0,rand(5,7))
 		H.get_idcard()?.access = get_all_accesses()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE
 		H.warfare_faction = IMPERIUM
@@ -104,6 +106,7 @@
 		..()
 		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(6,10), rand(7,12), rand(8,12), rand(9,13))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.add_skills(2,2,rand(2,4),0,rand(1,3)) //they have limited medical knowledge
 		H.warfare_faction = IMPERIUM
 

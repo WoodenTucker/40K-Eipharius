@@ -21,6 +21,7 @@
 		..()
 		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
 		H.add_skills(rand(10,16))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
@@ -56,6 +57,7 @@
 		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
 		H.add_skills(rand(13,16))
 		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Sgt. [current_name]")
@@ -91,6 +93,7 @@
 		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
 		H.add_skills(rand(14,18))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Guard force on this planet. The mission is all, maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
@@ -133,6 +136,7 @@
 		H.add_stats(18, rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(14,20))
 		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.say(";Officer of the Magistratum reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
