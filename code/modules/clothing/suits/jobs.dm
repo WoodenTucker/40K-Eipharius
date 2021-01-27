@@ -269,3 +269,7 @@
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
+
+/obj/item/clothing/suit/servitor/janitor
+	icon_state = "servitor_robe2"
+	item_state = "servitor_robe2"

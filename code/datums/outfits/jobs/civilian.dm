@@ -41,10 +41,15 @@
 	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/hyd
 
 /decl/hierarchy/outfit/job/service/janitor
-	name = OUTFIT_JOB_NAME("Janitor")
+	name = OUTFIT_JOB_NAME("Janitor Servitor")
 	uniform = /obj/item/clothing/under/rank/janitor
 	id_type = /obj/item/card/id/civilian/janitor
 	pda_type = /obj/item/device/pda/janitor
+	head = /obj/item/clothing/head/servitorhead/janitor
+	l_ear = null
+	r_ear = null
+	suit = /obj/item/clothing/suit/servitor/janitor
+	back = /obj/item/storage/backpack/satchel/servitor
 
 /decl/hierarchy/outfit/job/librarian
 	name = OUTFIT_JOB_NAME("Record Keeper")

@@ -22,6 +22,10 @@
 		H.add_skills(rand(1,2),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
+		H.bladder = 0
+		H.bowels = 0 //until someone tells me that servitors eat and shit this shall be it
+		H.thirst = INFINITY
+		H.nutrition = INFINITY
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 /datum/job/chef
@@ -95,7 +99,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
 
 /datum/job/janitor
-	title = "Janitor"
+	title = "Janitor Servitor"
 	department = "Service"
 	department_flag = CIV
 	total_positions = 1
@@ -105,8 +109,23 @@
 	selection_color = "#515151"
 	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
-	alt_titles = list("Custodian","Sanitation Technician")
+	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
+
+	equip(var/mob/living/carbon/human/H)
+		var/servitor_number = rand(1,1000)
+		var/servitor_name = "abel"
+		..()
+		H.fully_replace_character_name("[servitor_name] [servitor_number]")
+		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //extremely simple minded
+		H.add_skills(rand(1,2),rand(1,2),0,0,0)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.bladder = 0
+		H.bowels = 0 //until someone tells me that servitors eat and shit this shall be it
+		H.thirst = INFINITY
+		H.nutrition = INFINITY
+		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for cleaning and maintaining the outpost. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 //More or less assistants
 /datum/job/librarian
