@@ -114,7 +114,7 @@
 
 	equip(var/mob/living/carbon/human/H)
 		var/servitor_number = rand(1,1000)
-		var/servitor_name = "abel"
+		var/servitor_name = "daan"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
 		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //extremely simple minded
