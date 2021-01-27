@@ -7,10 +7,15 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/service
 
 /decl/hierarchy/outfit/job/service/bartender
-	name = OUTFIT_JOB_NAME("Bartender")
+	name = OUTFIT_JOB_NAME("Bar Servitor")
 	uniform = /obj/item/clothing/under/rank/bartender
 	id_type = /obj/item/card/id/civilian/bartender
 	pda_type = /obj/item/device/pda/bar
+	head = /obj/item/clothing/head/servitorhead
+	l_ear = null
+	r_ear = null
+	suit = /obj/item/clothing/suit/servitor
+	back = /obj/item/storage/backpack/satchel/servitor
 
 /decl/hierarchy/outfit/job/service/chef
 	name = OUTFIT_JOB_NAME("Chef")

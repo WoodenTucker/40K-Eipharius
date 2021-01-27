@@ -202,6 +202,13 @@
 	icon_state = "bardhat"
 	item_state = "bardhat"
 
+
+/obj/item/clothing/head/servitorhead
+	name = "a servitor skull"
+	desc = "A bone white skull littered with wiring and augments."
+	icon_state = "servitor_helmet"
+	item_state = "servitor_helmet"
+	canremove = 0
 /obj/item/clothing/head/bighat
 	name = "a big hat"
 	desc = "A large, imposing hat."

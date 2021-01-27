@@ -126,6 +126,13 @@
 	desc = "It's a light backpack modeled for use in laboratories and other scientific institutions. The colors on it denote it as a NanoTrasen backpack."
 	icon_state = "ntpack"
 
+
+/obj/item/storage/backpack/satchel/servitor
+	name = "servitor's backpack"
+	desc = "It's a special backpack made exclusively for officers."
+	icon_state = "servitor_pack"
+	item_state = "servitor_pack"
+	canremove = 0
 /obj/item/storage/backpack/hydroponics
 	name = "herbalist's backpack"
 	desc = "It's a green backpack with many pockets to store plants and tools in."

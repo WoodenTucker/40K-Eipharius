@@ -22,7 +22,6 @@
 	/datum/job/cmo,
 	/datum/job/chemist,
 	/datum/job/geneticist,
-	/datum/job/psychiatrist,
 	/datum/job/Paramedic,
 	/datum/job/mining,
 	/datum/job/cargo_tech,

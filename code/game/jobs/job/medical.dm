@@ -113,12 +113,12 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous healing tincures and salves so beloved by the Ordos Hospitaller. Keep the outpost stocked and maybe sell a little something on the side if you're willing to brave the Inquisition.</font></b></span>")
 
 /datum/job/geneticist
-	title = "Geneticist"
+	title = "Genetor"
 	department = "Medical"
 	department_flag = MED|SCI
 
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 7
 	supervisors = "the Sister Hospitaller"
 	selection_color = "#633d63"
@@ -132,8 +132,8 @@
 	department = "Medical"
 	department_flag = MED
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	economic_modifier = 5
 	minimal_player_age = 3
 	supervisors = "the Sister Hospitaller"

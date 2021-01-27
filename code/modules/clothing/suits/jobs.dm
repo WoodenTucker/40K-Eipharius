@@ -251,9 +251,21 @@
 //innkeeper
 /obj/item/clothing/suit/innapron
 	name = "innkeeper's apron"
-	desc = "Stinking, torn robes"
+	desc = "An amasec and caff stained apron."
 	icon_state = "mapron"
 	item_state = "mapron"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
+
+//servitor robes
+
+/obj/item/clothing/suit/servitor
+	name = "servitor's apron"
+	desc = "Stinking, torn robes"
+	icon_state = "servitor_robe"
+	item_state = "servitor_robe"
+	blood_overlay_type = "coat"
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS

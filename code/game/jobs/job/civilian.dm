@@ -1,15 +1,28 @@
 //Food && these jobs are outpost support staff
 /datum/job/bartender
-	title = "Bartender"
+	title = "Bar Servitor"
 	department = "Service"
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Seneschal"
+	supervisors = "Every Imperial Citizen"
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
+
+
+
+	equip(var/mob/living/carbon/human/H)
+		var/servitor_number = rand(1,1000)
+		var/servitor_name = "abel"
+		..()
+		H.fully_replace_character_name("[servitor_name] [servitor_number]")
+		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //extremely simple minded
+		H.add_skills(rand(1,2),rand(1,2),0,0,0)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 /datum/job/chef
 	title = "Cook"
