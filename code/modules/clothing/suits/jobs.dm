@@ -261,8 +261,8 @@
 //servitor robes
 
 /obj/item/clothing/suit/servitor
-	name = "servitor's apron"
-	desc = "Stinking, torn robes"
+	name = "servitor's robes"
+	desc = "Shabby robes worn by a servitor unit."
 	icon_state = "servitor_robe"
 	item_state = "servitor_robe"
 	blood_overlay_type = "coat"
