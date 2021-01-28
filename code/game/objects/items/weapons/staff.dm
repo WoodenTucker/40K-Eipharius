@@ -35,7 +35,3 @@
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("bludgeoned", "chastised", "disciplined")
-	item_icons = list(
-		icon_l_hand = 'icons/mob/onmob/items/lefthandbig.dmi',
-		icon_r_hand = 'icons/mob/onmob/items/righthandbig.dmi',
-		)
