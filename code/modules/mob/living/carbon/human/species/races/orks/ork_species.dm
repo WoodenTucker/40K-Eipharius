@@ -21,7 +21,7 @@
 	//var/healing = NO_HEAL
 	//var/bannerinview = FALSE
 	if(max_waaagh > 0)
-		/*for(var/obj/structure/orkbanna/O in oview(7)) //checks for the orkbanner in sight 
+		/*for(var/obj/structure/orkbanna/O in oview(7)) //checks for the orkbanner in sight
 			bannerinview = TRUE
 			visible_message("Debug, banner in view")
 		if(bannerinview || inspired)
@@ -76,6 +76,7 @@
 	h_style = "Bald"
 	size_multiplier = 1.4
 	max_waaagh = 500
+	warfare_faction = ORKZ
 	waaagh = max_waaagh
 	new_species = SPECIES_ORK_BOSS
 	..(new_loc, SPECIES_ORK_BOSS)

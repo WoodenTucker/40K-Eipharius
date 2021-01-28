@@ -72,12 +72,17 @@
 	head = /obj/item/clothing/head/cerberus
 
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Chaplain")
+	name = OUTFIT_JOB_NAME("Ministorum Priest")
 	uniform = /obj/item/clothing/under/rank/chaplain
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_hand = /obj/item/storage/bible
 	id_type = /obj/item/card/id/civilian/chaplain
 	pda_type = /obj/item/device/pda/chaplain
-
+	l_ear = null
+	r_ear = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	suit = /obj/item/clothing/suit/ministorumrobes
+	l_hand = /obj/item/staff/ministorumstaff
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor")
 	l_ear = /obj/item/device/radio/headset/red_team

@@ -273,3 +273,12 @@
 /obj/item/clothing/suit/servitor/janitor
 	icon_state = "servitor_robe2"
 	item_state = "servitor_robe2"
+
+//ministorum priest
+/obj/item/clothing/suit/ministorumrobes
+	name = "ministorum robes"
+	desc = "Gorgeous robes littered  with holy seals and writs. Smells faintly of incense."
+	icon_state = "ministorum_priest"
+	item_state = "ministorum_priest"
+	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS

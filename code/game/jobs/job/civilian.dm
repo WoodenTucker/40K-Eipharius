@@ -3,8 +3,10 @@
 	title = "Bar Servitor"
 	department = "Service"
 	department_flag = CIV
+	social_class = SOCIAL_CLASS_MIN
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 1
 	supervisors = "Every Imperial Citizen"
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen)
@@ -105,7 +107,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 1
-	supervisors = "the Seneschal"
+	social_class = SOCIAL_CLASS_MIN
+	supervisors = "Every Imperial Citizen"
 	selection_color = "#515151"
 	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)

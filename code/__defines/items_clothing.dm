@@ -225,5 +225,5 @@ var/list/default_onmob_icons = list(
 		slot_legcuffed_str = 'icons/mob/onmob/misc.dmi',
 		slot_gloves_str = 'icons/mob/onmob/hands.dmi',
 		slot_s_store_str = 'icons/mob/onmob/belt_mirror.dmi',
-		slot_tie_str = 'icons/mob/onmob/ties.dmi'
+		slot_tie_str = 'icons/mob/onmob/ties.dmi',
 		)
