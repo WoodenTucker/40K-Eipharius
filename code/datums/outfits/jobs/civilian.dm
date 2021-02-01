@@ -42,6 +42,7 @@
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_hand = /obj/item/farmshovel
 
 /decl/hierarchy/outfit/job/service/gardener/New()
 	..()
@@ -92,6 +93,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	suit = /obj/item/clothing/suit/ministorumrobes
 	l_hand = /obj/item/staff/ministorumstaff
+	r_hand = /obj/item/melee/whip/censer
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor")
 	l_ear = /obj/item/device/radio/headset/red_team

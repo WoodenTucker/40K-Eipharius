@@ -1,15 +1,15 @@
 /obj/machinery/cooker/oven
 	name = "oven"
 	desc = "Cookies are ready, dear."
-	icon = 'icons/obj/cooking_machines.dmi'
-	icon_state = "oven_off"
-	on_icon = "oven_on"
-	off_icon = "oven_off"
+	icon = 'icons/obj/kitchen.dmi'
+	icon_state = "oven0"
+	on_icon = "oven1"
+	off_icon = "oven0"
 	cook_type = "baked"
 	cook_time = 300
 	food_color = "#a34719"
 	can_burn_food = 1
-
+//TODO make moe foods for this - wel
 	output_options = list(
 		"Personal Pizza" = /obj/item/reagent_containers/food/snacks/variable/pizza,
 		"Bread" = /obj/item/reagent_containers/food/snacks/variable/bread,

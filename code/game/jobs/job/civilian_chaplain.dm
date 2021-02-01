@@ -125,3 +125,14 @@
 			feedback_set_details("religion_deity","[new_deity]")
 			feedback_set_details("religion_book","[new_book_style]")
 		return 1
+
+/obj/item/melee/whip/censer
+	name = "imperial censer"
+	desc = "A golden censer leaking pure smelling incense. Used by the Ecclesiarchy for blessings."
+	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "censer"
+	item_state = "censer"
+	w_class = ITEM_SIZE_SMALL
+
+	//todo make this bless stuff
