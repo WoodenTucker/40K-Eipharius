@@ -731,6 +731,10 @@ Area basic template
 	name = "Mining Breakroom"
 	icon_state = "mining_break"
 
+/area/cadiaoutpost/oa/farm
+	name = "Farm"
+	icon_state = "farm"
+
 ////////////////////////////////////////
 //////////Maintenance//////////////////
 //////////////////////////////////////
@@ -1104,3 +1108,4 @@ Area basic template
 /area/cadiaoutpost/oa/shuttle/transport
 	name = "Transport Shuttle"
 	icon_state = "shuttle"
+

@@ -24,6 +24,7 @@
 	startswith = list(/obj/item/disk/botany = 14)
 
 /obj/machinery/botany
+	name = "fertile soil"
 	icon = 'icons/obj/hydroponics_machines.dmi'
 	icon_state = "hydrotray3"
 	density = 1
@@ -73,16 +74,16 @@
 /obj/machinery/botany/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/seeds))
 		if(seed)
-			to_chat(user, "There is already a seed loaded.")
+			to_chat(user, "There is already a seed planted.")
 			return
 		var/obj/item/seeds/S =W
 		if(S.seed && S.seed.get_trait(TRAIT_IMMUTABLE) > 0)
-			to_chat(user, "That seed is not compatible with our genetics technology.")
+			to_chat(user, "That seed is not compatible with our soil.")
 		else
 			user.drop_from_inventory(W)
 			W.loc = src
 			seed = W
-			to_chat(user, "You load [W] into [src].")
+			to_chat(user, "You plant [W] into [src].")
 		return
 
 	if(isScrewdriver(W))
