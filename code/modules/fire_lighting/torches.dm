@@ -209,7 +209,7 @@
 	if(lit)
 		icon_state = "forge1"
 		item_state = "forge1"
-		set_light(3, 5, "#E38F46")
+		set_light(5, 7, "#E38F46")
 	else
 		icon_state = "forge0"
 		item_state = "forge0"
