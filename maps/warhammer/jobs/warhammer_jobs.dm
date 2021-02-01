@@ -18,7 +18,6 @@
 	/datum/job/captain,
 	/datum/job/inquisitor,
 	/datum/job/bartender,
-	/datum/job/librarian,
 	/datum/job/cmo,
 	/datum/job/chemist,
 	/datum/job/geneticist,

@@ -34,15 +34,27 @@
 	title = "Cook"
 	department = "Service"
 	department_flag = CIV
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Seneschal"
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 1
+	supervisors = "the Seneschal, the Commissar"
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_kitchen)
 //	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Pvt. [current_name]")
+		H.add_stats(rand(8,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
+		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.say("Cook reporting for duty!")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 /datum/job/hydro
 	title = "Farmer"
 	department = "Service"

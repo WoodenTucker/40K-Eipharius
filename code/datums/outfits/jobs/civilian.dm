@@ -19,20 +19,29 @@
 
 /decl/hierarchy/outfit/job/service/chef
 	name = OUTFIT_JOB_NAME("Chef")
-	uniform = /obj/item/clothing/under/rank/chef
-	suit = /obj/item/clothing/suit/chef
+	uniform = /obj/item/clothing/under/color/brown
+	suit = /obj/item/clothing/suit/guardchef
 	head = /obj/item/clothing/head/chefhat
 	id_type = /obj/item/card/id/civilian/chef
 	pda_type = /obj/item/device/pda/chef
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = null
+	r_ear = null
 
 /decl/hierarchy/outfit/job/service/gardener
-	name = OUTFIT_JOB_NAME("Gardener")
+	name = OUTFIT_JOB_NAME("Farmer")
 	uniform = /obj/item/clothing/under/rank/hydroponics
-	suit = /obj/item/clothing/suit/apron
+	suit = /obj/item/clothing/suit/farmer
 	gloves = /obj/item/clothing/gloves/thick/botany
 	r_pocket = /obj/item/device/analyzer/plant_analyzer
 	id_type = /obj/item/card/id/civilian/botanist
 	pda_type = /obj/item/device/pda/botanist
+	l_ear = null
+	r_ear = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 
 /decl/hierarchy/outfit/job/service/gardener/New()
 	..()

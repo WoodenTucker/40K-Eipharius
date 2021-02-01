@@ -12,6 +12,15 @@
 	body_parts_covered = 0
 	allowed = list (/obj/item/reagent_containers/spray/plantbgone,/obj/item/device/analyzer/plant_analyzer,/obj/item/seeds,/obj/item/reagent_containers/glass/bottle,/obj/item/material/minihoe)
 
+/obj/item/clothing/suit/farmer
+	name = "farmer's robes"
+	desc = "A simple farmer's robe"
+	icon_state = "undertaker"
+	item_state = "undertaker"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	allowed = list (/obj/item/reagent_containers/spray/plantbgone,/obj/item/device/analyzer/plant_analyzer,/obj/item/seeds,/obj/item/reagent_containers/glass/bottle,/obj/item/material/minihoe)
+
 //Magistrate
 /obj/item/clothing/suit/robes
 	name = "commandant's robes"
@@ -62,6 +71,14 @@
 	item_state = "chef"
 	gas_transfer_coefficient = 0.90
 	permeability_coefficient = 0.50
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	allowed = list (/obj/item/material/knife)
+
+/obj/item/clothing/suit/guardchef
+	name = "imperial guard cook's apron"
+	desc = "The dirty apron of a guard cook."
+	icon_state = "bsapron"
+	item_state = "bsapron"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	allowed = list (/obj/item/material/knife)
 
