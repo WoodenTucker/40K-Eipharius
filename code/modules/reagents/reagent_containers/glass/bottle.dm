@@ -251,3 +251,14 @@
 	..()
 	reagents.add_reagent(/datum/reagent/frostoil, 60)
 	update_icon()
+
+/obj/item/reagent_containers/glass/bottle/manure
+	name = "\improper Manure"
+	desc = "A small bottle containing poop."
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "bottle-4"
+
+/obj/item/reagent_containers/glass/bottle/manure/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/fertilizer/poo, 60)
+	update_icon()

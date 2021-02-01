@@ -29,10 +29,11 @@
 // -----------------------------
 
 /obj/item/storage/plants
-	name = "botanical satchel"
+	name = "farmers bag"
 	desc = "This bag can be used to store all kinds of plant products and botanical specimen."
 	icon = 'icons/obj/hydroponics_machines.dmi'
 	icon_state = "plantbag"
+	item_state = "plantbag"
 	slot_flags = SLOT_BELT
 	max_storage_space = 100
 	max_w_class = ITEM_SIZE_SMALL

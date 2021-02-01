@@ -227,6 +227,14 @@
 /datum/reagent/toxin/fertilizer/robustharvest
 	name = "Robust Harvest"
 
+
+/datum/reagent/toxin/fertilizer/poo
+	name = "Manure"
+	description = "Made from whatever waste could be found "
+	taste_mult = 1
+	reagent_state = REAGENT_LIQUID
+	color = "#351e03"
+	strength = 0.5
 /datum/reagent/toxin/plantbgone
 	name = "Plant-B-Gone"
 	description = "A harmful toxic mixture to kill plantlife. Do not ingest!"

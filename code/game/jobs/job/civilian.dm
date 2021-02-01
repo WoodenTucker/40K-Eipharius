@@ -68,6 +68,18 @@
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
 
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("[current_name]")
+		H.add_stats(rand(8,11), rand(10,11), rand(10,11), rand(8,10))
+		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.say("Farmer reporting for duty!")
+		to_chat(H, "<span class='notice'><b><font size=3>Possibly the most important job on the entire planet. The Guard will thrive or starve depending on how skilled you are. Report to your farm in the southeastern corner of the outpost and get growing!</font></b></span>")
+
 //Cargo
 /datum/job/qm
 	title = "Munitorum Priest"

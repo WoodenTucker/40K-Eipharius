@@ -1953,3 +1953,9 @@
 	result = /datum/reagent/nanoblood
 	required_reagents = list(/datum/reagent/dexalinp = 1, /datum/reagent/iron = 1, /datum/reagent/blood = 1)
 	result_amount = 3
+
+/datum/chemical_reaction/manure
+	name = "Manure"
+	result = /datum/reagent/toxin/fertilizer/poo
+	required_reagents = list(/datum/reagent/poo = 1, /datum/reagent/water = 1)
+	result_amount = 5

@@ -43,6 +43,9 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_hand = /obj/item/farmshovel
+	belt = /obj/item/storage/plants
+	backpack_contents = list(/obj/item/seeds/potatoseed = 1, /obj/item/seeds/wheatseed = 1, /obj/item/seeds/cornseed = 1, /obj/item/seeds/random = 3,
+	)
 
 /decl/hierarchy/outfit/job/service/gardener/New()
 	..()

@@ -120,7 +120,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 7
-	supervisors = "the Sister Hospitaller"
+	supervisors = "the Sister Hospitaller and Magos"
 	selection_color = "#633d63"
 	economic_modifier = 7
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
