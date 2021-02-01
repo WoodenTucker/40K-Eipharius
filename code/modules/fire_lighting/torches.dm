@@ -181,3 +181,70 @@
 		return
 	// create a torch item and put it in the user's hand
 	user.put_in_active_hand(remove_torch())  //puts it in our active hand
+
+//Pyres
+/obj/item/pyre
+	icon = 'icons/obj/pyre.dmi'
+	icon_state = "forge0"
+	item_state = "forge0"
+	name = "Pyre"
+	desc = "In radiance may we find victory."
+	anchored = 1
+	self_lighting = 1
+	var/lit = FALSE
+	var/self_lighting = 0
+
+/obj/item/pyre/self_lit
+	name = "Self-igniting Pyre"
+	desc = "In radiance may we find victory. This pyre provides its own."
+	self_lighting = 1
+
+/obj/item/pyre/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/item/pyre/update_icon()
+	..()
+	overlays = overlays.Cut()
+	if(lit)
+		icon_state = "forge1"
+		item_state = "forge1"
+		set_light(3, 5, "#E38F46")
+	else
+		icon_state = "forge0"
+		item_state = "forge0"
+		set_light(0,0)
+		if(self_lighting == 1)
+			overlays += overlay_image(icon, "lighter")
+	update_held_icon()
+
+
+/obj/item/pyre/proc/light(var/mob/user, var/manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
+	lit = TRUE
+	if(manually_lit && self_lighting == 1)
+		user.visible_message("<span class='notice'>\The [user] rips the lighting sheath off their [src].</span>")
+	update_icon()
+	START_PROCESSING(SSprocessing, src)
+	playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
+
+
+/obj/item/pyre/proc/snuff()
+	lit = FALSE
+	update_icon()
+	STOP_PROCESSING(SSprocessing, src)
+	playsound(src, 'sound/items/torch_snuff.ogg', 50, 0, -1)
+
+
+/obj/item/pyre/attack_self(mob/user)
+	..()
+	if(self_lighting == 1)
+		light(user, TRUE)
+		self_lighting = -1
+		return
+	if(lit)
+		snuff()
+
+/obj/item/pyre/attackby(obj/item/W, mob/user)
+	..()
+	if(isflamesource(W))
+		light()
