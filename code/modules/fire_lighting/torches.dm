@@ -190,7 +190,6 @@
 	name = "Pyre"
 	desc = "In radiance may we find victory."
 	anchored = 1
-	self_lighting = 1
 	var/lit = FALSE
 	var/self_lighting = 0
 

@@ -660,6 +660,11 @@ Area basic template
 	name = "Law Office"
 	icon_state = "law"
 
+/area/cadiaoutpost/oa/service/inn
+	name = "Village Inn"
+	icon_state = "inn"
+	music = 'sound/music/inn.ogg'
+
 /////////////////////////////////////////
 //////////////////Supply////////////////
 ////////////////////////////////////////
