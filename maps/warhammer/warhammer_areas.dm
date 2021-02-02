@@ -509,6 +509,9 @@ Area basic template
 	name = "Drone Zone"
 	icon_state = "drone_fab"
 
+/area/cadiaoutpost/oa/engineering/solars
+	name = "Solars"
+	icon_state = "solars"
 //////////////////////////////////////
 //////////////Medical////////////////
 /////////////////////////////////////
@@ -1114,3 +1117,8 @@ Area basic template
 	name = "Transport Shuttle"
 	icon_state = "shuttle"
 
+//village
+/area/cadiaoutpost/oa/village
+	name = "Village"
+	icon_state = "village"
+	music = 'sound/music/village.ogg'
