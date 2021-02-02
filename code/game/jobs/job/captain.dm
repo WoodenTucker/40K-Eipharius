@@ -16,6 +16,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimal_access = list() 	//See get_access()
 	minimal_player_age = 25
 	economic_modifier = 20
+	latejoin_at_spawnpoints = TRUE
 
 	ideal_character_age = 70 // Old geezer captains ftw
 	outfit_type = /decl/hierarchy/outfit/job/captain
@@ -53,6 +54,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	minimal_player_age = 25
 	economic_modifier = 10
 	ideal_character_age = 50
+	latejoin_at_spawnpoints = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		..()

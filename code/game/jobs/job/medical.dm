@@ -16,6 +16,7 @@
 	economic_modifier = 10
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
@@ -56,6 +57,7 @@
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = TRUE
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology)
 //	alt_titles = list(
@@ -96,6 +98,7 @@
 	supervisors = "the Sister Hospitaller"
 	selection_color = "#633d63"
 	economic_modifier = 5
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry)
 	//alt_titles = list("Pharmacist")
@@ -123,6 +126,7 @@
 	supervisors = "the Sister Hospitaller and Magos"
 	selection_color = "#633d63"
 	economic_modifier = 7
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
@@ -149,12 +153,13 @@
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#633d63"
 	economic_modifier = 4
 	minimal_player_age = 4
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
 //	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)

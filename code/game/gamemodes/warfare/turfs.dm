@@ -29,7 +29,7 @@
 /turf/simulated/floor/dirty/tough/fake //Can't be click dragged on.
 	atom_flags = null
 
-/turf/simulated/floor/dirty/tough/lightless/fake 
+/turf/simulated/floor/dirty/tough/lightless/fake
 	atom_flags = null
 
 /turf/simulated/floor/dirty/tough/ex_act(severity)//Can't be blown up.
@@ -213,7 +213,7 @@
 	name = "water"
 	icon = 'icons/turf/dirt.dmi'//This appears under the water.
 	icon_state = "mud"
-	movement_delay = 3
+	movement_delay = 2
 	mudpit = 1
 	has_coldbreath = TRUE
 	var/has_light = TRUE

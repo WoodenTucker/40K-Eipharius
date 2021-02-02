@@ -634,7 +634,7 @@ Area basic template
 /area/cadiaoutpost/oa/service/chapel
 	name = "Chapel"
 	icon_state = "chapel"
-
+	music = 'sound/music/monastary.ogg'
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
 	icon_state = "chapeloffice"

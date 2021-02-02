@@ -7,6 +7,7 @@
 	spawn_positions = 1
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Ecclesiarchy"
 	selection_color = "#515151"
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)

@@ -262,8 +262,8 @@
 	icon_state = "grosthrobe"
 	item_state = "grosthrobe"
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO
-	cold_protection = UPPER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO
 
 //innkeeper
 /obj/item/clothing/suit/innapron
@@ -273,7 +273,7 @@
 	item_state = "mapron"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	cold_protection = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
 
 //servitor robes
 

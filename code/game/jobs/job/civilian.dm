@@ -6,6 +6,7 @@
 	social_class = SOCIAL_CLASS_MIN
 	total_positions = 1
 	spawn_positions = 1
+	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 1
 	supervisors = "Every Imperial Citizen"
 	selection_color = "#515151"
@@ -37,6 +38,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 1
+	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Seneschal, the Commissar"
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen)
@@ -63,6 +65,7 @@
 	spawn_positions = 1
 	supervisors = "the Seneschal"
 	selection_color = "#515151"
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_hydroponics)
 //	alt_titles = list("Hydroponicist")
@@ -131,6 +134,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 1
+	latejoin_at_spawnpoints = TRUE
 	social_class = SOCIAL_CLASS_MIN
 	supervisors = "Every Imperial Citizen"
 	selection_color = "#515151"
@@ -175,6 +179,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 2
 	spawn_positions = 2
+	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Ministorum, the Ordos Hereticus"
 	selection_color = "#fd0707"
@@ -209,6 +214,7 @@
 	supervisors = "The Golden Throne, the Ordos Hereticus, Lord Inquisitor Rorkan and the masters of the Ordos Helican"
 	selection_color = "#fd0707"
 	req_admin_notify = 1
+	latejoin_at_spawnpoints = TRUE
 	economic_modifier = 7
 	minimal_player_age = 21
 	open_when_dead = 0

@@ -15,6 +15,7 @@
 	smg_skill = 3
 	open_when_dead = TRUE
 	can_be_in_squad = TRUE
+	latejoin_at_spawnpoints = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -41,6 +42,7 @@
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC
 	open_when_dead = TRUE
+	latejoin_at_spawnpoints = TRUE
 
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
@@ -82,6 +84,7 @@
 	lmg_skill = 10
 	open_when_dead = FALSE
 	department_flag = SEC
+	latejoin_at_spawnpoints = TRUE
 
 	announced = TRUE
 
@@ -126,6 +129,7 @@
 	can_be_in_squad = FALSE
 	open_when_dead = TRUE
 	department_flag = SEC
+	latejoin_at_spawnpoints = TRUE
 
 	announced = FALSE
 

@@ -9,13 +9,14 @@
 	access = list(access_hydroponics,)
 	minimal_access = list(access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/penitent
+	latejoin_at_spawnpoints = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.fully_replace_character_name("Penitent [H.real_name]")
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Penitent. Once a daemon worshipper your life changed when the Inquisition came knocking. Years of torture and re-education have left your mind and body shattered. You drift from world to world, simply hoping to get by another day </font></b></span>")
 		if(announced)
@@ -33,6 +34,7 @@
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar) //TODO, figure out access stuff for them
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
+	latejoin_at_spawnpoints = TRUE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
