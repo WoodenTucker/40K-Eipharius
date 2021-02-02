@@ -491,9 +491,3 @@
 #undef CORNER_COUNTERCLOCKWISE
 #undef CORNER_DIAGONAL
 #undef CORNER_CLOCKWISE
-
-/obj/structure/table/aquila
-	name = "aquila altar"
-	desc = "A glorious Nuln wood altar displaying a golden Aquila"
-	icon = 'icons/obj/structures/aquilla.dmi'
-	icon_state = "aquilla"
