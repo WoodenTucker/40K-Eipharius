@@ -1,8 +1,8 @@
 /datum/job/guardsman
 	title = "Imperial Guardsman"
 	supervisors = "The Commissar and your Sergeant."
-	total_positions = 100
-	spawn_positions = 100
+	total_positions = 20
+	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	selection_color = "#b27676"

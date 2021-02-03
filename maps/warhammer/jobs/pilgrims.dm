@@ -2,8 +2,8 @@
 	title = "Pilgrim"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 3 //maybe open up more of these when we figure out other classes and depending on player count
-	spawn_positions = 3
+	total_positions = 6 //maybe open up more of these when we figure out other classes and depending on player count
+	spawn_positions = 6
 	supervisors = "The Holy Inquisition"
 	selection_color = "#515151"
 	access = list(access_hydroponics,)
@@ -46,7 +46,7 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/classchoice = input("Choose your fate", "Available fates") as null|anything in list("Miner", "Farmer", "Raper")
+	var/classchoice = input("Choose your fate", "Available fates") as null|anything in list("Miner", "Farmer", "Celebrity")
 	switch(classchoice)
 		if("Miner")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/innapron, slot_wear_suit)
