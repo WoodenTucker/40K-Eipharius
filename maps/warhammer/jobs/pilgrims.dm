@@ -46,6 +46,21 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
+	var/fates = list() //lists all possible fates
+	fates += pick("Miner","Farmer","Tester","test1","test2","test3") //subtracts a fate randomly to essentially give rng pick
+	fates += pick("Tester","test1","test2","test3") //subtracts a fate randomly to essentially give rng pick
+	fates += pick("test1","test2","test3") //subtracts a fate randomly to essentially give rng pick
+	fates += pick("Miner") //subtracts a fate randomly to essentially give rng pick
+
+	var/classchoice = input("Choose your fate", "Available fates") as null|anything in fates
+
+	switch(classchoice)
+		if("Miner")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/innapron, slot_wear_suit)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
+			)
+
+	/*
 	var/classchoice = input("Choose your fate", "Available fates") as null|anything in list("Miner", "Farmer", "Celebrity")
 	switch(classchoice)
 		if("Miner")
@@ -53,7 +68,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 
-
+*/
 
 /datum/job/innkeeper  //so that the inn always has someone working
 	title = "Innkeeper"
