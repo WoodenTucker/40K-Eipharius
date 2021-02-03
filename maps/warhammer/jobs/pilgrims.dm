@@ -1,5 +1,5 @@
 /datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
-	title = "Penitent"
+	title = "Pilgrim"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 3 //maybe open up more of these when we figure out other classes and depending on player count
@@ -11,6 +11,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 
+
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
@@ -18,9 +19,41 @@
 		H.fully_replace_character_name("Penitent [H.real_name]")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Penitent. Once a daemon worshipper your life changed when the Inquisition came knocking. Years of torture and re-education have left your mind and body shattered. You drift from world to world, simply hoping to get by another day </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
 		if(announced)
 			H.say("Forgive me, God-Emperor!")
+
+
+
+		H.verbs += list(
+			/mob/living/carbon/human/proc/penitentclass,
+		)
+/*
+Select a penitent class
+*/
+
+//yeah this might be the most retarded way of doing it but it works - plz no bully Matt
+
+/mob/living/carbon/human/proc/penitentclass(var/mob/living/carbon/human/M)
+	set name = "Select your class"
+	set category = "Pilgrim"
+	set desc = "Choose your new profession on this strange world."
+	if(!ishuman(M))
+		to_chat(M, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(M.stat == DEAD)
+		to_chat(M, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	var/classchoice = input("Choose your fate", "Available fates") as null|anything in list("Miner", "Farmer", "Raper")
+	switch(classchoice)
+		if("Miner")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/innapron, slot_wear_suit)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
+			)
+
+
 
 /datum/job/innkeeper  //so that the inn always has someone working
 	title = "Innkeeper"
@@ -57,6 +90,27 @@
 	l_ear = null
 	r_ear = null
 
+/decl/hierarchy/outfit/job/penitent/equip()
+
+	if(prob(1))//Rare engineer spawn
+		suit_store = /obj/item/gun/projectile/automatic/autoshotty
+		r_pocket = /obj/item/shovel
+		belt = /obj/item/storage/belt/autoshotty
+		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
+	else if(prob(50))
+		suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+		r_pocket = /obj/item/ammo_box/shotgun
+		belt = /obj/item/shovel
+		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
+	else
+		suit_store = /obj/item/gun/projectile/automatic/machinepistol
+		r_pocket = /obj/item/shovel
+		belt = /obj/item/storage/belt/warfare
+		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
+
+	if(aspect_chosen(/datum/aspect/nightfare))
+		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
+	..()
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")
 	uniform = /obj/item/clothing/under/syndicate
@@ -70,3 +124,19 @@
 	l_ear = null
 	r_ear = null
 	shoes = /obj/item/clothing/shoes/vigilante
+
+/obj/item/paper/draftform
+	name = "draft form"
+	gender = NEUTER
+	icon = 'icons/obj/bureaucracy.dmi'
+	icon_state = "paper"
+	item_state = "paper"
+	randpixel = 8
+	throwforce = 0
+	w_class = ITEM_SIZE_TINY
+	throw_range = 1
+	throw_speed = 1
+	layer = ABOVE_OBJ_LAYER
+	slot_flags = SLOT_HEAD
+	body_parts_covered = HEAD
+	attack_verb = list("bapped")

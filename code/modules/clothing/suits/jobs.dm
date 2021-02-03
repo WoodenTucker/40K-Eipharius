@@ -273,7 +273,7 @@
 	item_state = "mapron"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|HANDS|HEAD
 
 //servitor robes
 
