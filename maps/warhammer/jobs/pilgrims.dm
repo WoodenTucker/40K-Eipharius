@@ -51,7 +51,10 @@ Pilgrim Fate System
 	fates += pick("test1","test3",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Miner","test",) //adds a fate randomly to essentially give rng pick
 
-	var/classchoice = input("Choose your fate", "Available fates") as null|anything in fates
+	M.mind.store_memory(fates) //should stop people from closing and rerolling fates
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
 
 	switch(classchoice)
 		if("Miner")
