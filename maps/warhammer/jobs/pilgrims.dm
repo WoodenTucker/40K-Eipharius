@@ -47,10 +47,9 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	var/fates = list() //lists all possible fates
-	fates += pick("Miner","Farmer","Tester","test1","test2","test3") //subtracts a fate randomly to essentially give rng pick
-	fates += pick("Tester","test1","test2","test3") //subtracts a fate randomly to essentially give rng pick
-	fates += pick("test1","test2","test3") //subtracts a fate randomly to essentially give rng pick
-	fates += pick("Miner") //subtracts a fate randomly to essentially give rng pick
+	fates += pick("Farmer","Tester","test2",) //adds a fate randomly to essentially give rng pick
+	fates += pick("test1","test3",) //adds a fate randomly to essentially give rng pick
+	fates += pick("Miner","test",) //adds a fate randomly to essentially give rng pick
 
 	var/classchoice = input("Choose your fate", "Available fates") as null|anything in fates
 
