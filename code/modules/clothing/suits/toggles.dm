@@ -148,11 +148,21 @@
 	flags_inv = HIDEEARS | BLOCKHAIR
 
 /obj/item/clothing/head/inqhood
-	name = "inquisitor's"
+	name = "inquisitor's hood"
 	desc = "A blood red hood with golden trim"
 	icon_state = "inqhood"
 	item_state = "inqhood"
 	body_parts_covered = HEAD
-	min_cold_protection_temperature = T0C - 20
+	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR | HIDEFACE
+
+/obj/item/clothing/head/genehood
+	name = "genetor's hood"
+	desc = "An ancient cowl covering a heavily augmented face."
+	icon_state = "genetor"
+	item_state = "genetor"
+	body_parts_covered = HEAD
+	min_cold_protection_temperature = T0C - 30
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR

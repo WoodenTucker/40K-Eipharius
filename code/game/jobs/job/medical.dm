@@ -123,6 +123,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 7
+	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
 	selection_color = "#633d63"
 	economic_modifier = 7
@@ -130,6 +131,16 @@
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.say(";[title] reporting for duty!")
+		H.add_stats(rand(6,11), rand(8,11), rand(8,11), rand(12,14))
+		H.add_skills(3,3,rand(2,4),0,rand(2,4))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Genetor, sometimes known as a Magos Biologis. You perform genetic experiments and perfect any impurities found in genetic code. You answer to the Magos firstly and the Sister Hospitaller second.</font></b></span>")
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"

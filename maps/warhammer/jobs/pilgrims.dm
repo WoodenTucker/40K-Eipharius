@@ -90,27 +90,6 @@ Pilgrim Fate System
 	l_ear = null
 	r_ear = null
 
-/decl/hierarchy/outfit/job/penitent/equip()
-
-	if(prob(1))//Rare engineer spawn
-		suit_store = /obj/item/gun/projectile/automatic/autoshotty
-		r_pocket = /obj/item/shovel
-		belt = /obj/item/storage/belt/autoshotty
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
-	else if(prob(50))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-		r_pocket = /obj/item/ammo_box/shotgun
-		belt = /obj/item/shovel
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
-	else
-		suit_store = /obj/item/gun/projectile/automatic/machinepistol
-		r_pocket = /obj/item/shovel
-		belt = /obj/item/storage/belt/warfare
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
-
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
-	..()
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")
 	uniform = /obj/item/clothing/under/syndicate
@@ -124,19 +103,3 @@ Pilgrim Fate System
 	l_ear = null
 	r_ear = null
 	shoes = /obj/item/clothing/shoes/vigilante
-
-/obj/item/paper/draftform
-	name = "draft form"
-	gender = NEUTER
-	icon = 'icons/obj/bureaucracy.dmi'
-	icon_state = "paper"
-	item_state = "paper"
-	randpixel = 8
-	throwforce = 0
-	w_class = ITEM_SIZE_TINY
-	throw_range = 1
-	throw_speed = 1
-	layer = ABOVE_OBJ_LAYER
-	slot_flags = SLOT_HEAD
-	body_parts_covered = HEAD
-	attack_verb = list("bapped")

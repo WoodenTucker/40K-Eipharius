@@ -88,17 +88,18 @@
 	BACKPACK_OVERRIDE_VIROLOGY
 
 /decl/hierarchy/outfit/job/medical/geneticist
-	name = OUTFIT_JOB_NAME("Geneticist")
+	name = OUTFIT_JOB_NAME("Genetor")
 	uniform = /obj/item/clothing/under/rank/geneticist
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/genetics
+	suit = /obj/item/clothing/suit/storage/hooded/genetor
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/geneticist
 	pda_type = /obj/item/device/pda/geneticist
-
-/decl/hierarchy/outfit/job/medical/geneticist/New()
-	..()
-	backpack_overrides[/decl/backpack_outfit/backpack] = /obj/item/storage/backpack/genetics
-	backpack_overrides[/decl/backpack_outfit/satchel]  = /obj/item/storage/backpack/satchel/satchel_gen
+	belt = /obj/item/storage/belt/medical/alchemist
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = null
+	r_ear = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(/obj/item/thrones/bundle/t50=1)
 
 /decl/hierarchy/outfit/job/medical/psychiatrist
 	name = OUTFIT_JOB_NAME("Psychiatrist")

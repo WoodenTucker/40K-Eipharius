@@ -865,3 +865,16 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
+
+
+/obj/item/clothing/suit/storage/hooded/genetor
+	name = "genetor's robes"
+	desc = "Green robes riddled with augments, scanners and syringes. The robes look incredibly old and worn, you can tell this magos has lived a long and scholarly life."
+	icon_state = "genetor"
+	item_state = "genetor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun) //TODO make this more applicable to genetor
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 20, bio = 50, rad = 50)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/genehood

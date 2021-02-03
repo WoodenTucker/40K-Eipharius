@@ -58,5 +58,5 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	suit_store = /obj/item/gun/projectile/ravenbolter
-	backpack_contents = list(/obj/item/ammo_magazine/bolt_rifle_magazine = 2,)
+	backpack_contents = list(/obj/item/ammo_magazine/bolt_rifle_magazine = 2, /obj/item/thrones/bundle/t50 = 1,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
