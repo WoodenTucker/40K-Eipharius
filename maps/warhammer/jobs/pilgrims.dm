@@ -29,7 +29,7 @@
 			/mob/living/carbon/human/proc/penitentclass,
 		)
 /*
-Select a penitent class
+Pilgrim Fate System
 */
 
 //yeah this might be the most retarded way of doing it but it works - plz no bully Matt
