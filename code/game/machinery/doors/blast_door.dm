@@ -216,6 +216,7 @@
 	icon_state = "pdoor0"
 	begins_closed = FALSE
 
+
 // SUBTYPE: Shutters
 // Nicer looking, and also weaker, shutters. Found in kitchen and similar areas.
 /obj/machinery/door/blast/shutters

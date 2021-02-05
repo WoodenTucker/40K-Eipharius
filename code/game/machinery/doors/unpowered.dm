@@ -23,3 +23,11 @@
 	icon_state = "door1"
 	opacity = 1
 	density = 1
+
+/obj/machinery/door/unpowered/inn
+	name = "inn door"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+

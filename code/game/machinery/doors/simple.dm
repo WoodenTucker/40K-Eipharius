@@ -237,3 +237,5 @@
 
 /obj/machinery/door/unpowered/simple/cult/New(var/newloc,var/material_name,var/complexity)
 	..(newloc, "cult", complexity)
+
+

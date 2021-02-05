@@ -667,6 +667,8 @@ Area basic template
 	name = "Village Inn"
 	icon_state = "inn"
 	music = 'sound/music/inn.ogg'
+	dynamic_lighting = 1
+	requires_power = 0
 
 /////////////////////////////////////////
 //////////////////Supply////////////////
@@ -1122,3 +1124,5 @@ Area basic template
 	name = "Village"
 	icon_state = "village"
 	music = 'sound/music/village.ogg'
+	requires_power = 0
+	dynamic_lighting = 1
