@@ -113,10 +113,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
 			equip_to_slot_or_del(new /obj/item/pickaxe, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/miner
-, slot_wear_suit
-
-			)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/miner, slot_wear_suit)
 			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Stalker")

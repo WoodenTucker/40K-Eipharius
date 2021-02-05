@@ -43,12 +43,12 @@
 	name = "pickaxe"
 	desc = "It's a pickaxe. You hit rocks with it. And people with it too if you feel like."
 	icon = 'icons/obj/mining.dmi'
-	slot_flags = SLOT_BELT
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_ICLOTHING
 	force = 15
 	throwforce = 4
 	icon_state = "pickaxe"
 	item_state = "spickaxe"
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 3750)
 	var/digspeed = 40 //moving the delay to an item var so R&D can make improved picks. --NEO
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
