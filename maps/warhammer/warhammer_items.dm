@@ -713,6 +713,8 @@ Imperial Guardsman
 	..()
 	name = "An Imperial Guardsman's Armor"
 	desc = "The proud armor of an Imperial Guardsman"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/guard_uniform
@@ -720,17 +722,22 @@ Imperial Guardsman
 	desc = "The uniform of those who fight in His name."
 	icon_state = "guard_s"
 	item_state = "guard"
-
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Guard Helmet"
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "guard"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/medicae
 	name = "medicae helmet"
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "medicae"
 	item_state = "medicae"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/commissar
 	icon_state = "comissar3"
@@ -743,7 +750,8 @@ Imperial Guardsman
 	desc = "This cap strikes fear into the rank and file."
 	icon_state = "comissar3"
 	item_state = "comissar3"
-
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
 
@@ -841,7 +849,8 @@ Imperial Guardsman
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"

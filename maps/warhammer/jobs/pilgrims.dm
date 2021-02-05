@@ -16,12 +16,9 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
-		H.fully_replace_character_name("Penitent [H.real_name]")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
-		if(announced)
-			H.say("Forgive me, God-Emperor!")
 
 
 
@@ -47,30 +44,60 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	var/fates = list() //lists all possible fates
-	fates += pick("Farmer","Tester","test2",) //adds a fate randomly to essentially give rng pick
-	fates += pick("test1","test3",) //adds a fate randomly to essentially give rng pick
-	fates += pick("Miner","test",) //adds a fate randomly to essentially give rng pick
+	fates += pick("Merchant","Bounty Hunter","Penitent",) //adds a fate randomly to essentially give rng pick
+	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
+	fates += pick("Miner","Stalker","Scum") //adds a fate randomly to essentially give rng pick
 
-	M.mind.store_memory("[fates]") //should stop people from closing and rerolling fates
+	M.mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
 
 
 	switch(classchoice)
-		if("Miner")
+		if("Sherpa")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/innapron, slot_wear_suit)
+			to_chat(U,"<span class='notice'>Your home world was destroyed in an Ork waaaaaagh, you managed to escape before the planet was destroyed. On your home world, you were a navigator, born with an innate gift for pathfinding. Now you guide lost Pilgrims to and from for a few thrones each.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
-
-	/*
-	var/classchoice = input("Choose your fate", "Available fates") as null|anything in list("Miner", "Farmer", "Celebrity")
-	switch(classchoice)
-		if("Miner")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/innapron, slot_wear_suit)
+		if("Penitent")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
+			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, forced to tour the galaxy and toil until death in hopes of one day redeeming yourself. In your youth, you were an unknowing daemon-worshipper. Years of torment and re-education by the Inquisition allowed you this one chance at redemption. Labour endlessly in His name.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
+		if("Bounty Hunter")
+			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //veteran hunter
+			U.add_skills(rand(5,8),rand(5,8),rand(1,3),0,0)
+			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a Sergeant in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with. Work with the local Magistratum to hunt down wanted criminals or offer your services to the Rogue Trader.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+		if("Merchant")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/innapron, slot_wear_suit)
+			to_chat(U,"<span class='notice'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the village and the outpost to organize trade between the two.<b><font size=3>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
+			)
+		if("Musician")
+			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
 
-*/
+			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+		if("Disgraced Medicae")
+			U.add_skills(0,0,rand(5,9),0,rand(5,9))
+			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+		if("Miner")
+			U.add_stats(rand(10,13),rand(8,12),rand(10,12),8)
+			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work. When you heard the Adeptus Mechanicus set up shop here, you knew they would ever be hungry for ore and the services you could provide.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+		if("Stalker")
+			U.add_skills(rand(1,3),rand(5,8),0,0,0)
+			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat. Use your skills as a hunter to track down and kill fauna, sell your meats for thrones and become rich!</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+		if("Scum")
+			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme you once again find yourself on a new world. You'll do whatever it takes for a throne or two. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+
+
+
 
 /datum/job/innkeeper  //so that the inn always has someone working
 	title = "Innkeeper"
@@ -99,11 +126,7 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/penitent
 	name = OUTFIT_JOB_NAME("Pilgrim")
 	uniform = /obj/item/clothing/under/rank/penitent
-	suit = /obj/item/clothing/suit/raggedrobe
-	id_type = /obj/item/card/id/pilgrim/penitent
-	pda_type = /obj/item/device/pda/penitent
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	head = /obj/item/clothing/head/plebhood
 	l_ear = null
 	r_ear = null
 

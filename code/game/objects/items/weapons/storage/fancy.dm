@@ -174,8 +174,8 @@
 		..()
 
 /obj/item/storage/fancy/cigarettes/dromedaryco
-	name = "pack of Dromedary Co. cigarettes"
-	desc = "A packet of six imported Dromedary Company cancer sticks. A label on the packaging reads, \"Wouldn't a slow death make a change?\"."
+	name = "pack of lho sticks"
+	desc = "A packet of six smuggled lho sticks. A label on the packaging reads, \"Wouldn't a slow death make a change?\"."
 	icon_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/dromedaryco = 6)
 
