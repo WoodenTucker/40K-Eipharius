@@ -69,8 +69,8 @@
 	desc = "A heavy jacket made from 'synthetic' animal furs."
 	icon_state = "coatwinter"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
-	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|HANDS|LEGS|FEET
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 	action_button_name = "Toggle Winter Hood"
 	hoodtype = /obj/item/clothing/head/winterhood
@@ -162,6 +162,16 @@
 	desc = "An ancient cowl covering a heavily augmented face."
 	icon_state = "genetor"
 	item_state = "genetor"
+	body_parts_covered = HEAD
+	min_cold_protection_temperature = T0C - 30
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/head/mininghood
+	name = "mining hood"
+	desc = "A black mining hood"
+	icon_state = "mortician_hood"
+	item_state = "mortician_hood"
 	body_parts_covered = HEAD
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD

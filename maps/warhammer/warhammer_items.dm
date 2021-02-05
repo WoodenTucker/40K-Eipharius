@@ -468,6 +468,13 @@
 	grab_sound_is_loud = TRUE
 
 
+/obj/item/clothing/suit/chokha
+	name = "stalker's vest"
+	desc = "A red hunters uniform"
+	icon_state = "chokha"
+	item_state = "chokha"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/suit/prac_arpon
@@ -739,7 +746,24 @@ Imperial Guardsman
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/bountyhunter
+	name = "bounty hunter's armor"
+	icon_state = "cadianarmor"
+	item_state = "cadianarmor"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/bountyhunter2
+	name = "bounty hunter's armor"
+	icon_state = "valhalla"
+	item_state = "valhalla"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/suit/armor/commissar
+	name = "commisar's jacket"
 	icon_state = "comissar3"
 	item_state = "comissar3"
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
@@ -750,6 +774,14 @@ Imperial Guardsman
 	desc = "This cap strikes fear into the rank and file."
 	icon_state = "comissar3"
 	item_state = "comissar3"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/bountyhead
+	name = "bounty hunter\'s helm"
+	desc = "A well worn and dented helm."
+	icon_state = "skullopen"
+	item_state = "skullopen"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/card/id/dog_tag/guardsman
@@ -875,6 +907,17 @@ Imperial Guardsman
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
 
+/obj/item/clothing/suit/storage/hooded/miner
+	name = "mining robes"
+	desc = "Black mining robes."
+	icon_state = "mortician"
+	item_state = "mortician"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/pickaxe)
+	armor = list(melee = 5, bullet = 5, laser = 10, energy = 15, bomb = 10, bio = 10, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/mininghood
 
 /obj/item/clothing/suit/storage/hooded/genetor
 	name = "genetor's robes"

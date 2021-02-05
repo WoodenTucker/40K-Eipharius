@@ -262,6 +262,27 @@
 	item_state = "doctor_vest"
 	blood_overlay_type = "armor"
 
+
+/obj/item/clothing/suit/musician
+	name = "musician's garb"
+	desc = "A colorful yet somewhat tattered uniform."
+	icon_state = "xomrobe"
+	item_state = "xomrobe"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/merchant
+	name = "merchant's garb"
+	desc = "Elegant clothing for a wealthy trader."
+	icon_state = "robes"
+	item_state = "robes_item"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 //Penitent
 /obj/item/clothing/suit/raggedrobe
 	name = "ragged robe"
