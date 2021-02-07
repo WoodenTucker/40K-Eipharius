@@ -223,8 +223,8 @@
 
 
 /obj/item/reagent_containers/pill/happy
-	name = "happy pill"
-	desc = "Happy happy joy joy!"
+	name = "Obscura"
+	desc = "Produces a pleasant dream-like state which lasts a few hours, but then turns into a deep depression once it wears off unless another dose is taken."
 	icon_state = "pill4"
 /obj/item/reagent_containers/pill/happy/New()
 	..()

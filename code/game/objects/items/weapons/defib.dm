@@ -563,7 +563,7 @@
 		START_PROCESSING(SSobj, src)
 	fail_counter = new_fail
 
-/obj/item/shockpaddles/standalone/traitor
+/obj/item/shockpaddles/standalone/heretic
 	name = "defibrillator paddles"
 	desc = "A pair of unusual looking paddles powered by an experimental miniaturized reactor. It possesses both the ability to penetrate armor and to deliver powerful shocks."
 	icon_state = "defibpaddles0"

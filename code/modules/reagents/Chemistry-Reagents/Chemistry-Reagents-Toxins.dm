@@ -419,7 +419,7 @@
 /* Drugs */
 
 /datum/reagent/space_drugs
-	name = "Trench drugs"
+	name = "Obscura"
 	description = "An illegal chemical compound used as drug."
 	taste_description = "bitterness"
 	taste_mult = 0.4
@@ -427,6 +427,7 @@
 	color = "#60a584"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
+	reagent_addiction_strength = 40
 
 /datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)

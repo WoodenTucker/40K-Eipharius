@@ -8,7 +8,7 @@
 	var/on = 1 // 0 for off
 	var/last_transmission
 	var/frequency = PUB_FREQ //common chat
-	var/traitor_frequency = 0 //tune to frequency to unlock traitor supplies
+	var/traitor_frequency = 0 //tune to frequency to unlock heretic supplies
 	var/canhear_range = 3 // the range which mobs can hear this radio from
 	var/datum/wires/radio/wires = null
 	var/b_stat = 0

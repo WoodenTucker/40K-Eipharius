@@ -58,7 +58,7 @@ var/global/floorIsLava = 0
 	body += {"
 		<br><br>\[
 		<a href='?_src_=vars;Vars=\ref[M]'>VV</a> -
-		<a href='?src=\ref[src];traitor=\ref[M]'>TP</a> -
+		<a href='?src=\ref[src];heretic=\ref[M]'>TP</a> -
 		<a href='?src=\ref[usr];priv_msg=\ref[M]'>PM</a> -
 		<a href='?src=\ref[src];subtlemessage=\ref[M]'>SM</a> -
 		[admin_jump_link(M, src)]\] <br>
@@ -93,7 +93,7 @@ var/global/floorIsLava = 0
 		<A href='?src=\ref[src];getmob=\ref[M]'>Get</A> |
 		<A href='?src=\ref[src];sendmob=\ref[M]'>Send To</A>
 		<br><br>
-		[check_rights(R_ADMIN|R_MOD,0) ? "<A href='?src=\ref[src];traitor=\ref[M]'>Traitor panel</A> | " : "" ]
+		[check_rights(R_ADMIN|R_MOD,0) ? "<A href='?src=\ref[src];heretic=\ref[M]'>heretic panel</A> | " : "" ]
 		<A href='?src=\ref[src];narrateto=\ref[M]'>Narrate to</A> |
 		<A href='?src=\ref[src];subtlemessage=\ref[M]'>Subtle message</A>
 	"}
@@ -779,11 +779,11 @@ var/global/floorIsLava = 0
 
 /datum/admins/proc/toggletraitorscaling()
 	set category = "Server"
-	set desc="Toggle traitor scaling"
-	set name="Toggle Traitor Scaling"
+	set desc="Toggle heretic scaling"
+	set name="Toggle heretic Scaling"
 	config.traitor_scaling = !config.traitor_scaling
-	log_admin("[key_name(usr)] toggled Traitor Scaling to [config.traitor_scaling].")
-	message_admins("[key_name_admin(usr)] toggled Traitor Scaling [config.traitor_scaling ? "on" : "off"].", 1)
+	log_admin("[key_name(usr)] toggled heretic Scaling to [config.traitor_scaling].")
+	message_admins("[key_name_admin(usr)] toggled heretic Scaling [config.traitor_scaling ? "on" : "off"].", 1)
 	feedback_add_details("admin_verb","TTS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /datum/admins/proc/startnow()
@@ -1072,7 +1072,7 @@ var/global/floorIsLava = 0
 /datum/admins/proc/show_traitor_panel(var/mob/M in SSmobs.mob_list)
 	set category = "Admin"
 	set desc = "Edit mobs's memory and role"
-	set name = "Show Traitor Panel"
+	set name = "Show heretic Panel"
 
 	if(!istype(M))
 		to_chat(usr, "This can only be used on instances of type /mob")

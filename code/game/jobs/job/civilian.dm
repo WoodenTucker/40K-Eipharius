@@ -88,8 +88,8 @@
 	title = "Munitorum Priest"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Seneschal"
 	selection_color = "#515151"
 	economic_modifier = 5
@@ -103,8 +103,8 @@
 	title = "Munitorum Adept"
 	department = "Supply"
 	department_flag = SUP
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Munitorum Priest and the Seneschal"
 	selection_color = "#515151"
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)

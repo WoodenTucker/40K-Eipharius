@@ -484,6 +484,22 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/sherpa
+	name = "sherpa's vest"
+	desc = "A sherpa's vestaments"
+	icon_state = "sherpa"
+	item_state = "sherpa"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/scum
+	name = "shady jacket"
+	desc = "A jacket that only the shadiest of characters would wear."
+	icon_state = "scum"
+	item_state = "scum"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 /obj/item/clothing/suit/prac_arpon
 	name = "practioner robes"
@@ -520,6 +536,18 @@
 	item_state = "prac_cap"
 	flags_inv = BLOCKHEADHAIR
 
+/obj/item/clothing/head/ushanka2
+	name = "ushanka"
+	desc = "A proper hat for one willing to brave the tundra."
+	icon_state = "ushanka"
+	item_state = "ushanka"
+	flags_inv = BLOCKHEADHAIR
+
+/obj/item/clothing/head/scum
+	name = "pimp hat"
+	desc = "Pretty fly for a space guy."
+	icon_state = "scum"
+	item_state = "scum"
 
 /obj/item/clothing/accessory/red_outline
 	icon_state = "red_outline"

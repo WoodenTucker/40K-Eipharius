@@ -745,6 +745,10 @@ Area basic template
 	name = "Farm"
 	icon_state = "farm"
 
+/area/cadiaoutpost/oa/tradefloor
+	name = "Trade Floor"
+	icon_state = "tradefloor"
+	requires_power = 0
 ////////////////////////////////////////
 //////////Maintenance//////////////////
 //////////////////////////////////////
@@ -1124,5 +1128,25 @@ Area basic template
 	name = "Village"
 	icon_state = "village"
 	music = 'sound/music/village.ogg'
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/oa/gatehouse
+	name = "Gatehouse"
+	icon_state = "gatehouse"
+	requires_power = 0
+	dynamic_lighting = 1
+
+
+//forest
+/area/cadiaoutpost/oa/theforest
+	name = "The Forest"
+	icon_state = "forest"
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/oa/magistratumpost
+	name = "Forward Magistratum Post"
+	icon_state = "forwardpost"
 	requires_power = 0
 	dynamic_lighting = 1

@@ -156,15 +156,15 @@ var/syndicate_name = null
 	return name
 
 
-//Traitors and traitor silicons will get these. Revs will not.
+//Traitors and heretic silicons will get these. Revs will not.
 var/syndicate_code_phrase //Code phrase for traitors.
 var/syndicate_code_response //Code response for traitors.
 
 	/*
 	Should be expanded.
 	How this works:
-	Instead of "I'm looking for James Smith," the traitor would say "James Smith" as part of a conversation.
-	Another traitor may then respond with: "They enjoy running through the void-filled vacuum of the derelict."
+	Instead of "I'm looking for James Smith," the heretic would say "James Smith" as part of a conversation.
+	Another heretic may then respond with: "They enjoy running through the void-filled vacuum of the derelict."
 	The phrase should then have the words: James Smith.
 	The response should then have the words: run, void, and derelict.
 	This way assures that the code is suited to the conversation and is unpredicatable.

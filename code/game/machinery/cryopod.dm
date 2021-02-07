@@ -393,7 +393,7 @@
 			occupant.mind.special_role = null
 	//else
 		//if(ticker.mode.name == "AutoTraitor")
-			//var/datum/game_mode/traitor/autotraitor/current_mode = ticker.mode
+			//var/datum/game_mode/heretic/autotraitor/current_mode = ticker.mode
 			//current_mode.possible_traitors.Remove(occupant)
 
 	// Delete them from datacore.

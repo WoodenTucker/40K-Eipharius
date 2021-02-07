@@ -48,14 +48,14 @@
 	name = "The Wild Ride"
 	description = "The last thing anyone ever hears is CLANG CLANG CLANG."
 
-/datum/achievement/traitor
+/datum/achievement/heretic
 	name = "The Villian In Everyone Else's Story"
 	description  = "Every good story needs a bad guy."
 	difficulty = DIFF_MEDIUM
 
 /datum/achievement/winner
 	name = "Winner Winner Chicken Dinner"
-	description = "Actually manage to complete all your traitor objectives."
+	description = "Actually manage to complete all your heretic objectives."
 	difficulty = DIFF_HARD
 	announced = TRUE
 

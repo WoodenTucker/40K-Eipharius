@@ -372,7 +372,7 @@
 	..()
 	overlay = GLOB.global_hud.thermal
 
-/obj/item/clothing/glasses/thermal/syndi	//These are now a traitor item, concealed as mesons.	-Pete
+/obj/item/clothing/glasses/thermal/syndi	//These are now a heretic item, concealed as mesons.	-Pete
 	name = "optical meson scanner"
 	desc = "Used for seeing walls, floors, and stuff through anything."
 	icon_state = "meson"

@@ -116,3 +116,27 @@
 /turf/simulated/wall/scrap
 	icon_state = "scrap0"
 	walltype = "scrap"
+
+/turf/simulated/wall/wooden
+	name = "wood wall"
+	desc = "An old wooden wall. For when metal is just too much work."
+	icon = 'icons/turf/wooden3.dmi'
+	icon_state = "wall"
+	walltype = "wood"
+	mineral = "wood"
+	plane = ABOVE_HUMAN_PLANE
+	integrity = 500 //Tough bois
+
+/turf/simulated/wall/snowycave
+	name = "snowy rock wall"
+	desc = "An ancient snowy rock wall."
+	icon = 'icons/turf/caves_snow.dmi'
+	icon_state = "wall2"
+	walltype = "stone"
+	mineral = "stone"
+	plane = ABOVE_HUMAN_PLANE
+	integrity = 500 //Tough bois
+
+/turf/simulated/wall/snowycave/New()
+	icon_state = pick("wall[rand(2,15)]","A","wall0",)
+	..()

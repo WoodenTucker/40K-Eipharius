@@ -190,6 +190,7 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/thrones/bundle/t50=1,
+	/obj/item/device/flashlight/lantern
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -208,7 +209,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1, /obj/item/thrones/bundle/t200)
+	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1, /obj/item/thrones/bundle/t200, /obj/item/device/flashlight/lantern)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/sergeant
@@ -228,6 +229,7 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 		/obj/item/ammo_magazine/box/a556/mg08 = 2,
 		/obj/item/thrones/bundle/t50,
+		/obj/item/device/flashlight/lantern,
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -249,8 +251,9 @@ Begin Warhammer loadouts
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/handcuffs = 2,
 	/obj/item/storage/box/beanbags = 1,
-	/obj/item/thrones/bundle/t50
-)
+	/obj/item/thrones/bundle/t50,
+	/obj/item/device/flashlight/lantern)
+
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/redsoldier/engineer

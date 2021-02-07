@@ -222,7 +222,7 @@
 	else if (!bcell || bcell != user.cell)
 		bcell = user.cell // if it is null, nullify it anyway
 
-// Traitor variant for Engineering synthetics.
+// heretic variant for Engineering synthetics.
 /obj/item/melee/baton/robot/electrified_arm
 	name = "electrified arm"
 	icon = 'icons/obj/device.dmi'

@@ -738,7 +738,7 @@
 
 /obj/item/reagent_containers/food/snacks/donkpocket
 	name = "Donk-pocket"
-	desc = "The food of choice for the seasoned traitor."
+	desc = "The food of choice for the seasoned heretic."
 	icon_state = "donkpocket"
 	filling_color = "#dedeab"
 	center_of_mass = "x=16;y=10"

@@ -14,9 +14,9 @@
 	var/loss_feedback_tag                   // Used by the database for end of round loss.
 
 	// Role data.
-	var/id = "traitor"                      // Unique datum identifier.
+	var/id = "heretic"                      // Unique datum identifier.
 	var/role_type                           // Preferences option for this role. Defaults to the id if unset
-	var/role_text = "Traitor"               // special_role text.
+	var/role_text = "heretic"               // special_role text.
 	var/role_text_plural = "Traitors"       // As above but plural.
 
 	// Visual references.

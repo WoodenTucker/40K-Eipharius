@@ -36,6 +36,17 @@
 	..()
 	icon_state = pick("vhdtree152", "hdtree96")
 
+/obj/structure/flora/tree/snowy
+	name = "pine tree"
+	icon = 'icons/obj/flora/treeees.dmi'
+	icon_state = "snowy"
+	density = 1
+	anchored = 1
+
+/obj/structure/flora/tree/snowy/New()
+	..()
+	icon_state = pick("snowy","snowy2","snowy3",)
+
 
 //grass
 /obj/structure/flora/grass

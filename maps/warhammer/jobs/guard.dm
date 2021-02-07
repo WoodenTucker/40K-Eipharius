@@ -189,3 +189,6 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 		if(/datum/quirk/alcoholic)
 			var/datum/reagent/new_reagent = new /datum/reagent/ethanol
 			src.reagents.addiction_list.Add(new_reagent)
+		if(/datum/quirk/obscura)
+			var/datum/reagent/new_reagent = new /datum/reagent/space_drugs
+			src.reagents.addiction_list.Add(new_reagent)

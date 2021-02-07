@@ -488,7 +488,7 @@ proc/display_roundstart_logout_report()
 	for(var/mob/M in SSmobs.mob_list)
 		if(M.client && M.client.holder)
 			to_chat(M, msg)
-proc/get_collaborator() //Orange we need to change this proc later for interbay traitor rework
+proc/get_collaborator() //Orange we need to change this proc later for interbay heretic rework
 	var/list/dudes = list()
 	for(var/mob/living/carbon/human/man in GLOB.player_list)
 		if(man.client)

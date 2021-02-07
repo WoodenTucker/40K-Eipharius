@@ -38,6 +38,10 @@
 	name = "strong"
 	description = "I'm stronger than should be."
 
+/datum/quirk/obscura //makes the user addicted to obscura drug
+	name = "obscura addict"
+	description = "I'm terribly addicted to obscura."
+
 /datum/quirk/dead_inside //Gets no moods. Isn't bothered by anything.
 	name = "dead inside"
 	description = "I feel nothing anymore."

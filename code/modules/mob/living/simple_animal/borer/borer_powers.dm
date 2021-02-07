@@ -115,7 +115,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		src.host.status_flags |= PASSEMOTES
 		src.loc = M
 
-		//Update their traitor status.
+		//Update their heretic status.
 		if(host.mind)
 			borers.add_antagonist_mind(host.mind, 1, borers.faction_role_text, borers.faction_welcome)
 
