@@ -18,8 +18,9 @@
 	melee_damage_lower = 25
 	melee_damage_upper = 35
 	attacktext = "mauls and claws with all its might!"
-	minbodytemp = 90
 	maxbodytemp = 1000
+	see_in_dark = 10
+	wander = 1
 
 	speed = 2
 
@@ -35,7 +36,7 @@
 	if(!.)
 		return
 
-	if(loc && istype(loc,/turf/space))
+	if(loc && istype(loc,/turf/simulated/floor/snow))
 		icon_state = "shafra"
 	else
 		icon_state = "shafra_dead"

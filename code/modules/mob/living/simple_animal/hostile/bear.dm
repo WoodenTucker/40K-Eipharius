@@ -1,6 +1,6 @@
 //Space bears!
 /mob/living/simple_animal/hostile/bear
-	name = "space bear"
+	name = "bear"
 	desc = "RawrRawr!!"
 	icon_state = "bear"
 	icon_living = "bear"
@@ -13,6 +13,7 @@
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
+	wander = 1
 	meat_type = /obj/item/reagent_containers/food/snacks/bearmeat
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
@@ -44,7 +45,7 @@
 	if(!.)
 		return
 
-	if(loc && istype(loc,/turf/space))
+	if(loc && istype(loc,/turf/simulated/floor/snow))
 		icon_state = "bear"
 	else
 		icon_state = "bearfloor"

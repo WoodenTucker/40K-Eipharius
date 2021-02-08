@@ -247,12 +247,13 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/handcuffs = 2,
 	/obj/item/storage/box/beanbags = 1,
 	/obj/item/thrones/bundle/t50,
-	/obj/item/device/flashlight/lantern)
+	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 

@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/syndicate
 	name = "corrupted guardsman"
-	desc = "Death to the Company."
+	desc = "BLOOD FOR THE BLOOD GOD!"
 	icon_state = "syndicate"
 	icon_living = "syndicate"
 	icon_dead = "syndicate_dead"
@@ -17,6 +17,8 @@
 	harm_intent_damage = 5
 	melee_damage_lower = 10
 	melee_damage_upper = 10
+	wander = 1
+	see_in_dark = 6
 	attacktext = "punched"
 	a_intent = I_HURT
 	var/corpse = /obj/effect/landmark/corpse/syndicate

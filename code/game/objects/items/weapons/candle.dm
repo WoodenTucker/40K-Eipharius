@@ -73,3 +73,13 @@
 		lit = 0
 		update_icon()
 		set_light(0)
+
+/obj/item/flame/candle/dinner
+	name = "dinner candle"
+	desc = "A long dinner candle, perfect for setting the mood of an evening meal."
+	icon = 'icons/obj/candle.dmi'
+	icon_state = "dinner_candle"
+	item_state = "dinner_candle"
+	w_class = ITEM_SIZE_TINY
+	light_color = "#e09d37"
+	wax = 4000

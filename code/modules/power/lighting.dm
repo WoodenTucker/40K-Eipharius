@@ -600,6 +600,22 @@
 	..()
 	shatter()
 
+/obj/item/light/bulb/stolb
+	name = "light bulb"
+	desc = "A replacement light bulb."
+	icon_state = "lbulb"
+	base_state = "lbulb"
+	item_state = "contvapour"
+	broken_chance = 1
+	matter = list("glass" = 100)
+
+	brightness_range = 7
+	brightness_power = 5
+	brightness_color = "#F9C763"//"#a0a080"
+	lighting_modes = list(
+		LIGHTMODE_EMERGENCY = list(l_range = 3, l_power = 1, l_color = "#da0205"),
+		)
+
 /obj/item/light/bulb/fire
 	name = "fire bulb"
 	desc = "A replacement fire bulb."
@@ -687,3 +703,16 @@
 	else if(sound_on)
 		playsound(get_turf(src),sound_on, 40)
 	return status
+
+/obj/machinery/light/stolb
+	icon = 'icons/obj/lighting2.dmi'
+	icon_state = "stolb1"
+	base_state = "stolb"
+	name = "stolb"
+	desc = "A solar power powered light post meant to illuminate the forest."
+	light_type = /obj/item/light/bulb/stolb
+	construct_type = /obj/machinery/light_construct/small
+	idle_power_usage = 0
+	active_power_usage = 0
+	bound_height = 64
+	bound_width = 32
