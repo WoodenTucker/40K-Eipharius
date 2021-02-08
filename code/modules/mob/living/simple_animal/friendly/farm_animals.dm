@@ -22,6 +22,9 @@
 	health = 40
 	melee_damage_lower = 1
 	melee_damage_upper = 5
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 	var/datum/reagents/udder = null
 
 /mob/living/simple_animal/hostile/retaliate/goat/New()
@@ -105,6 +108,9 @@
 	melee_damage_lower = 35
 	melee_damage_upper = 55
 	mob_size = MOB_LARGE
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 
 /mob/living/simple_animal/hostile/retaliate/goat/king/Retaliate()
 	..()
@@ -138,6 +144,9 @@
 	response_harm   = "kicks"
 	attacktext = "kicked"
 	health = 50
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 	var/datum/reagents/udder = null
 
 /mob/living/simple_animal/cow/New()
@@ -199,6 +208,9 @@
 	response_harm   = "kicks"
 	attacktext = "kicked"
 	health = 1
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 	var/amount_grown = 0
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GRILLE
 	mob_size = MOB_MINISCULE
@@ -239,6 +251,9 @@ var/global/chicken_count = 0
 	response_disarm = "gently pushes aside"
 	response_harm   = "kicks"
 	attacktext = "kicked"
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 	health = 10
 	var/eggsleft = 0
 	var/body_color

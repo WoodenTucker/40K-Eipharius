@@ -100,7 +100,7 @@
 	Supply
 	Service
 	pilgrims
-			
+
 Template:
 
 /obj/effect/landmark/start/
@@ -345,6 +345,29 @@ Template:
 	new /obj/item/clothing/mask/spirit(src.loc)
 	new /obj/item/clothing/under/savage_hunter/female(src.loc)
 	delete_me = 1
+
+/obj/effect/landmark/animal/rnghostilespawner/New()
+	if (prob(30))
+		new /mob/living/simple_animal/hostile/bear(src.loc)
+	if (prob(30))
+		new /mob/living/simple_animal/hostile/shafra(src.loc)
+	delete_me = 1
+
+/obj/effect/landmark/animal/rngretaliatespawner/New()
+	if (prob(50))
+		new /mob/living/simple_animal/hostile/retaliate/rat(src.loc)
+	delete_me = 1
+
+/obj/effect/landmark/animal/rngfriendlyfellowspawner/New()
+	if(prob(25))
+		new /mob/living/simple_animal/hostile/retaliate/goat(src.loc)
+	if(prob(25))
+		new /mob/living/simple_animal/cow(src.loc)
+	if(prob(25))
+		new /mob/living/simple_animal/chicken(src.loc)
+	if(prob(10))
+		new /mob/living/simple_animal/hostile/retaliate/goat/king(src.loc)
+
 
 /obj/effect/landmark/ruin
 	var/datum/map_template/ruin/ruin_template

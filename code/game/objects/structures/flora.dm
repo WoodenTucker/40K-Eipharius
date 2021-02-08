@@ -6,7 +6,7 @@
 	pixel_x = -16
 	alpha = 200
 	density = FALSE
-	mouse_opacity = 0
+	mouse_opacity = 2
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER
 
@@ -46,6 +46,37 @@
 /obj/structure/flora/tree/snowy/New()
 	..()
 	icon_state = pick("snowy","snowy2","snowy3",)
+
+	if("snowy")
+		name ="dead agra tree"
+		desc = "The mightest trees found in the forest all lie dead now, a haunting monument to what lies in store for us all."
+		density = 1
+		anchored = 1
+	if("snowy2")
+		name = "snowy spindle"
+		desc = "A snow covered spindle tree"
+		density = 1
+		anchored = 1
+	if("snowy3")
+		name = "snowy tree"
+		desc = "A tall tree covered in the snow of this strange planet."
+		density = 1
+		anchored = 1
+
+/obj/structure/flora/tree/snowy/attackby(obj/item/O, mob/user)
+	. = ..()
+	if(istype(O))
+		if(O.sharp || O.edge)
+			playsound(src, 'sound/effects/ash_chop.ogg', 50, TRUE)
+			user.visible_message("<span class='info'>[user] begins to cut away [src].</span>")
+			if(do_after(user,200))
+				if(src)
+					playsound(src, 'sound/effects/ash_cut.ogg', 50, TRUE)
+					user.visible_message("<span class='info'>[user] finishes cutting away [src].</span>")
+					qdel(src)
+
+			else
+				user.visible_message("<span class='info'>[user] stops cutting away [src].</span>")
 
 
 //grass

@@ -625,6 +625,7 @@
 	matter = list("glass" = 100)
 	brightness_range = 4
 	brightness_power = 4
+	brightness_color = "#fa902c"
 
 // update the icon state and description of the light
 /obj/item/light/update_icon()

@@ -251,3 +251,87 @@
 	..()
 	if(isflamesource(W))
 		light()
+
+
+/obj/item/fireplacebl
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "fire_bl"
+	name = "fireplace"
+	desc = "In radiance may we find victory."
+	anchored = 1
+	density = 1
+	pixel_x = 0
+	pixel_y = 0
+	str_requirement = 1000
+	var/lit = FALSE
+	var/self_lighting = 0
+
+/obj/item/fireplacebl/br
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "fire_br"
+	pixel_x = 0
+	pixel_y = 0
+	str_requirement = 1000
+
+
+/obj/item/fireplacebl/r
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "fire_r"
+	pixel_x = 0
+	pixel_y = 0
+	str_requirement = 1000
+
+/obj/item/fireplacebl/l
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "fire_l"
+	pixel_x = 0
+	pixel_y = 0
+	str_requirement = 1000
+
+/obj/item/pyre/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/item/fireplacebl/update_icon()
+	..()
+	overlays = overlays.Cut()
+	if(lit)
+		icon_state = "fire_bl"
+		set_light(5, 7, "#E38F46")
+	else
+		icon_state = "fire_bl"
+		set_light(0,0)
+		if(self_lighting == 1)
+			overlays += overlay_image(icon, "lighter")
+	update_held_icon()
+
+
+/obj/item/fireplacebl/proc/light(var/mob/user, var/manually_lit = FALSE)//This doesn't seem to update the icon appropiately, not idea why.
+	lit = TRUE
+	if(manually_lit && self_lighting == 1)
+		user.visible_message("<span class='notice'>\The [user] rips the lighting sheath off their [src].</span>")
+	update_icon()
+	START_PROCESSING(SSprocessing, src)
+	playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
+
+
+/obj/item/fireplacebl/proc/snuff()
+	lit = FALSE
+	update_icon()
+	STOP_PROCESSING(SSprocessing, src)
+	playsound(src, 'sound/items/torch_snuff.ogg', 50, 0, -1)
+
+
+/obj/item/fireplacebl/attack_self(mob/user)
+	..()
+	if(self_lighting == 1)
+		light(user, TRUE)
+		self_lighting = -1
+		return
+	if(lit)
+		snuff()
+
+/obj/item/fireplacebl/attackby(obj/item/W, mob/user)
+	..()
+	if(isflamesource(W))
+		light()
