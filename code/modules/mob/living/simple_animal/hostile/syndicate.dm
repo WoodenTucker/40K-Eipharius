@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/syndicate
-	name = "\improper Syndicate operative"
+	name = "corrupted guardsman"
 	desc = "Death to the Company."
 	icon_state = "syndicate"
 	icon_living = "syndicate"
@@ -24,7 +24,7 @@
 	var/weapon2
 	unsuitable_atoms_damage = 15
 	environment_smash = 1
-	faction = "syndicate"
+	faction = "chaos"
 	status_flags = CANPUSH
 
 /mob/living/simple_animal/hostile/syndicate/death(gibbed, deathmessage, show_dead_message)
@@ -81,7 +81,7 @@
 	minbodytemp = 0
 	icon_state = "syndicatemeleespace"
 	icon_living = "syndicatemeleespace"
-	name = "Syndicate Commando"
+	name = "Corrupted Guard Sergeant"
 	corpse = /obj/effect/landmark/corpse/syndicate
 	speed = 0
 
@@ -99,7 +99,7 @@
 /mob/living/simple_animal/hostile/syndicate/ranged/space
 	icon_state = "syndicaterangedpsace"
 	icon_living = "syndicaterangedpsace"
-	name = "Syndicate Commando"
+	name = "Corrupted Guard Sergeant"
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
