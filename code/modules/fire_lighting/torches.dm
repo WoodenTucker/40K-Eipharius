@@ -190,6 +190,7 @@
 	name = "Pyre"
 	desc = "In radiance may we find victory."
 	anchored = 1
+	density = 1
 	var/lit = FALSE
 	var/self_lighting = 0
 
@@ -197,6 +198,9 @@
 	name = "Self-igniting Pyre"
 	desc = "In radiance may we find victory. This pyre provides its own."
 	self_lighting = 1
+	anchored = 1
+	lit = 1
+	density = 1
 
 /obj/item/pyre/Initialize()
 	. = ..()

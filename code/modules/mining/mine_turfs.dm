@@ -581,3 +581,7 @@ var/list/mining_floors = list()
 /turf/simulated/floor/asteroid/air
 	initial_gas = list("oxygen" = 21.8366, "nitrogen" = 82.1472)
 	temperature = 293.15
+
+
+/turf/simulated/mineral/snowycave
+	icon_state = "snow2"

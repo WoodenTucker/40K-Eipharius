@@ -127,16 +127,11 @@
 	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
 
-/turf/simulated/wall/snowycave
-	name = "snowy rock wall"
-	desc = "An ancient snowy rock wall."
-	icon = 'icons/turf/caves_snow.dmi'
-	icon_state = "wall2"
+/turf/simulated/wall/snowcave
+	name = "snowy cave wall"
+	desc = "An ancient cave wall covered in snow."
+	icon_state = "snow0"
 	walltype = "stone"
 	mineral = "stone"
 	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
-
-/turf/simulated/wall/snowycave/New()
-	icon_state = pick("wall[rand(2,15)]","A","wall0",)
-	..()

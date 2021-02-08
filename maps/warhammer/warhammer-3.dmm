@@ -468,7 +468,7 @@
 "iZ" = (/obj/structure/statue/xenotube/l2,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "ja" = (/obj/structure/statue/xenotube,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "jb" = (/obj/structure/statue/xenotube/l1,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
-"jc" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"jc" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/statue/verina,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "je" = (/obj/item/modular_computer/console/planetarytrademain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/tradefloor)
 
 (1,1,1) = {"
