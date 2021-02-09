@@ -11,6 +11,7 @@
 
 /obj/item/stack/logs/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/material/sword/combat_knife))
+		(do_after(user,30,src))
 		new /obj/item/torch(get_turf(src))
 		to_chat(user, "You carve the log into a usable torch.")
 		qdel(src)
