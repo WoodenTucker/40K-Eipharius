@@ -1,6 +1,6 @@
 /obj/item/stack/thrones
 	name = "$10 thrones"
-	desc = "gilded thrones worth $10"
+	desc = "A gilded throne(s) worth $10"
 	singular_name = "$10 throne"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "1"
