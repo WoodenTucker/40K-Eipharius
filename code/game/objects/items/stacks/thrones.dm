@@ -37,3 +37,6 @@
 /obj/item/stack/thrones/split()
 	. = ..()
 	update_icon()
+
+/obj/item/stack/thrones/twenty
+	amount = 20
