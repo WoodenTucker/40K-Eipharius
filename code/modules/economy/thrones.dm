@@ -1,9 +1,9 @@
 /obj/item/thrones
-	name = "0 Throne"
+	name = "0 Throne Coin"
 	desc = "It's worth 0 Thrones."
 	gender = PLURAL //did you just assume my thrones gender?
-	icon = 'icons/obj/items.dmi'
-	icon_state = "throne1"
+	icon = 'icons/obj/thrones.dmi'
+	icon_state = "coin0"
 	opacity = 0
 	density = 0
 	anchored = 0.0
@@ -15,7 +15,7 @@
 	var/access = list()
 	access = access_crate_cash
 	var/worth = 0
-	var/global/denominations = list(10000,5000,1000,500,200,100,50,25,20,15,10,5,1)
+	var/global/denominations = list(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20)
 
 /obj/item/thrones/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/thrones))
@@ -45,11 +45,11 @@
 	if(icon_state)
 		return list(icon_state)
 
-/obj/item/thrones/bundle
-	name = "pile of Thrones"
-	icon_state = ""
-	desc = "They are worth 0 Thrones."
-	worth = 0
+/obj/item/thrones/bundle/t1
+	name = "1 throne gelt"
+	icon_state = "1"
+	desc = "They are worth 10 Thrones."
+
 
 /obj/item/thrones/bundle/getMoneyImages()
 	if(icon_state)
@@ -89,7 +89,7 @@
 		w_class = ITEM_SIZE_SMALL
 
 /obj/item/thrones/bundle/attack_self()
-	var/amount = input(usr, "How many Thrones do you want to take? (0 to [src.worth])", "Take Throne", 20) as num
+	var/amount = input(usr, "How many Thrones do you want to take? (0 to 19)", "Take Throne", 20) as num
 	amount = round(Clamp(amount, 0, src.worth))
 	if(amount==0) return 0
 
@@ -97,7 +97,7 @@
 	src.update_icon()
 	if(!worth)
 		usr.drop_from_inventory(src)
-	if(amount in list(10000,5000,1000,500,200,100,50,20,1))
+	if(amount in list(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20))
 		var/cashtype = text2path("/obj/item/thrones/bundle/t[amount]")
 		var/obj/cash = new cashtype (usr.loc)
 		usr.put_in_hands(cash)
@@ -109,65 +109,120 @@
 	if(!worth)
 		qdel(src)
 
-/obj/item/thrones/bundle/t1 //TODO added new denominations, they need sprites
-	name = "1 Throne Gelts"
-	icon_state = "throne1"
-	desc = "It's worth 1 credit."
-	worth = 1
+//////////////////////////////////////
+////////////10 throne coins//////////
+////////////////////////////////////
+
+
+/obj/item/thrones/bundle/t2
+	name = "2 Throne Gelts"
+	icon_state = "2"
+	desc = "Two 10 throne coins."
+
+
+/obj/item/thrones/bundle/t3
+	name = "3 Throne Gelts"
+	icon_state = "3"
+	desc = "Three 10 throne coins."
+
+
+/obj/item/thrones/bundle/t4
+	name = "4 Throne Gelts"
+	icon_state = "4"
+	desc = "Four 10 throne coins."
+
+
+/obj/item/thrones/bundle/t5
+	name = "5 Throne Gelts"
+	icon_state = "5"
+	desc = "Five 10 throne coins."
+
+/obj/item/thrones/bundle/t6
+	name = "6 Throne Gelts"
+	icon_state = "6"
+	desc = "Six 10 throne coins."
+
+
+/obj/item/thrones/bundle/t7
+	name = "7 Throne Gelts"
+	icon_state = "7"
+	desc = "Seven 10 throne coins."
+
+/obj/item/thrones/bundle/t8
+	name = "8 Throne Gelts"
+	icon_state = "8"
+	desc = "Eight 10 throne coins."
+
+
+/obj/item/thrones/bundle/t9
+	name = "9 Throne Gelts"
+	icon_state = "9"
+	desc = "Nine 10 throne coins."
+
 
 /obj/item/thrones/bundle/t10
 	name = "10 Throne Gelts"
-	icon_state = "throne10"
-	desc = "It's worth 10 credits."
-	worth = 10
+	icon_state = "10"
+	desc = "Ten 10 throne coins."
+
+
+/obj/item/thrones/bundle/t11
+	name = "11 Throne Gelts"
+	icon_state = "11"
+	desc = "Eleven 10 throne coins."
+
+
+/obj/item/thrones/bundle/t12
+	name = "12 Throne Gelts"
+	icon_state = "12"
+	desc = "Twelve 10 throne coins."
+
+
+/obj/item/thrones/bundle/t13
+	name = "13 Throne Gelts"
+	icon_state = "13"
+	desc = "Thirteen 10 throne coins."
+
+
+/obj/item/thrones/bundle/t14
+	name = "14 Throne Gelts"
+	icon_state = "14"
+	desc = "Fourteen 10 throne coins."
+
+
+/obj/item/thrones/bundle/t15
+	name = "15 Throne Gelts"
+	icon_state = "15"
+	desc = "Fifteen 10 throne coins."
+
+
+/obj/item/thrones/bundle/t16
+	name = "16 Throne Gelts"
+	icon_state = "16"
+	desc = "Sixteen 10 throne coins."
+
+
+/obj/item/thrones/bundle/t17
+	name = "17 Throne Gelts"
+	icon_state = "17"
+	desc = "Seventeen 10 throne coins."
+
+
+/obj/item/thrones/bundle/t18
+	name = "18 Throne Gelts"
+	icon_state = "18"
+	desc = "Eighteen 10 throne coins."
+
+/obj/item/thrones/bundle/t19
+	name = "19 Throne Gelts"
+	icon_state = "19"
+	desc = "Nineteen 10 throne coins."
+
 
 /obj/item/thrones/bundle/t20
 	name = "20 Throne Gelts"
-	icon_state = "throne20"
-	desc = "It's worth 20 credits."
-	worth = 20
-
-/obj/item/thrones/bundle/t50
-	name = "50 Throne Gelts"
-	icon_state = "throne50"
-	desc = "It's worth 50 credits."
-	worth = 50
-
-/obj/item/thrones/bundle/t100
-	name = "100 Throne Gelts"
-	icon_state = "throne100"
-	desc = "It's worth 100 credits."
-	worth = 100
-
-/obj/item/thrones/bundle/t200
-	name = "200 Throne Gelts"
-	icon_state = "throne200"
-	desc = "It's worth 200 credits."
-	worth = 200
-
-/obj/item/thrones/bundle/t500
-	name = "500 Throne Gelts"
-	icon_state = "throne500"
-	desc = "It's worth 500 credits."
-	worth = 500
-
-/obj/item/thrones/bundle/t1000
-	name = "1000 Throne Gelts"
-	icon_state = "throne1000"
-	desc = "It's worth 1000 credits."
-	worth = 1000
-
-/obj/item/thrones/bundle/t5000
-	name = "5000 Throne Gelts"
-	icon_state = "throne5000"
-	desc = "It's worth 5000 credits."
-	worth = 5000
-
-/obj/item/thrones/bundle/t10000
-	name = "10000 Throne Gelts"
-	icon_state = "throne10000"
-	desc = "It's worth 10000 credits."
-	worth = 10000
+	icon_state = "20"
+	desc = "Twenty 10 throne coins."
 
 /obj/item/thrones/ewallet
 	name = "Charge card"
@@ -179,3 +234,6 @@
 	. = ..(user)
 	if (!(user in view(2)) && user!=src.loc) return
 	to_chat(user, "<span class='notice'>Charge card's owner: [src.owner_name]. Thrones remaining: [src.worth].</span>")
+
+
+

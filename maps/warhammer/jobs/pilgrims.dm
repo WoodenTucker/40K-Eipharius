@@ -89,7 +89,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/smokingcap, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/merchant, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/thrones/bundle/t500, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the village and the outpost to organize trade and enrich yourself.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
@@ -203,5 +202,4 @@ Pilgrim Fate System
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/storage/box/beanbags = 1,
-	/obj/item/thrones/bundle/t50
 )

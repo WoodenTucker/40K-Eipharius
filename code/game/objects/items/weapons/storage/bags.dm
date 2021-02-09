@@ -99,7 +99,7 @@
 	max_storage_space = 5
 	max_w_class = ITEM_SIZE_SMALL
 	w_class = ITEM_SIZE_SMALL
-	can_hold = list(/obj/item/thrones)
+	can_hold = list(/obj/item/stack/thrones)
 
 /obj/item/storage/bag/mediumpurse
 	name = "Average Purse"
@@ -109,15 +109,15 @@
 	max_storage_space = 10
 	max_w_class = ITEM_SIZE_NORMAL
 	w_class = ITEM_SIZE_SMALL
-	can_hold = list(/obj/item/spacecash, /obj/item/thrones)
+	can_hold = list(/obj/item/spacecash, /obj/item/stack/thrones)
 
 /obj/item/storage/bag/largepurse
 	name = "Belt Purse"
-	icon = 'icons/obj/storage.dmi'
-	icon_state = "coinpurse-large"
+	icon = 'icons/obj/thrones.dmi'
+	icon_state = "255"
 	desc = "A large purse for those who are blessed by the Emperor themselves in all their trades"
 	max_storage_space = 20
 	max_w_class = ITEM_SIZE_LARGE
 	w_class = ITEM_SIZE_NORMAL
-	can_hold = list(/obj/item/spacecash, /obj/item/thrones)
+	can_hold = list(/obj/item/spacecash, /obj/item/stack/thrones)
 

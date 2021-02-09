@@ -19,7 +19,6 @@
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = /obj/item/device/pda/heads/ce
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/thrones/bundle/t200=1)
 
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Tech Priest")
@@ -33,7 +32,6 @@
 	id_type = /obj/item/card/id/engineering
 	pda_type = /obj/item/device/pda/engineering
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/thrones/bundle/t50=1)
 
 /decl/hierarchy/outfit/job/engineering/engineer/void
 	name = OUTFIT_JOB_NAME("Engineer - Voidsuit")

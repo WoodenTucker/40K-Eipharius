@@ -21,7 +21,6 @@
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
 	head = /obj/item/clothing/head/hospitallerhelm
-	backpack_contents = list(/obj/item/thrones/bundle/t200=1)
 /decl/hierarchy/outfit/job/medical/doctor
 	name = OUTFIT_JOB_NAME("Sister Hospitellar")
 	uniform = /obj/item/clothing/under/rank/medical
@@ -34,7 +33,6 @@
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical
 	head = /obj/item/clothing/head/hospitallerhelm
-	backpack_contents = list(/obj/item/thrones/bundle/t50=1)
 /decl/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
@@ -80,7 +78,6 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = null
 	r_ear = null
-	backpack_contents = list(/obj/item/thrones/bundle/t50=1)
 
 
 /decl/hierarchy/outfit/job/medical/chemist/New()
@@ -99,7 +96,6 @@
 	l_ear = null
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/thrones/bundle/t50=1)
 
 /decl/hierarchy/outfit/job/medical/psychiatrist
 	name = OUTFIT_JOB_NAME("Psychiatrist")
