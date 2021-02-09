@@ -368,7 +368,9 @@ Template:
 	if(prob(10))
 		new /mob/living/simple_animal/hostile/retaliate/goat/king(src.loc)
 
-
+/obj/effect/landmark/rngcavewalls/New()
+	if(prob(50))
+		new /turf/simulated/mineral/snowycave(src.loc)
 /obj/effect/landmark/ruin
 	var/datum/map_template/ruin/ruin_template
 
