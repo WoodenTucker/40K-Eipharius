@@ -11,7 +11,7 @@
 	shoes = /obj/item/clothing/shoes/commandboots
 	id_type = /obj/item/card/id/gold
 	pda_type = /obj/item/device/pda/captain
-	backpack_contents = list(/obj/item/storage/box/ids = 1, /obj/item/gun/projectile/bolter_pistol = 1, /obj/item/stack/thrones/t1/test =1,
+	backpack_contents = list(/obj/item/storage/box/ids = 1, /obj/item/gun/projectile/bolter_pistol = 1, /obj/item/stack/thrones = 1,
 )
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
