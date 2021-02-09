@@ -9,6 +9,11 @@
 	mouse_opacity = 2
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER
+	var/log_type //type of log
+	var/log_amount //amount of logs when cut down
+	var/cutdown = FALSE //is it already cut down?
+	var/delete_after_harvest = TRUE //deletes tree after cutting down
+	log_type = /obj/item/stack/logs //basic bitch logs
 
 /obj/structure/flora/tree/pine
 	name = "pine tree"
@@ -43,6 +48,7 @@
 	density = 1
 	anchored = 1
 
+
 /obj/structure/flora/tree/snowy/New()
 	..()
 	icon_state = pick("snowy","snowy2","snowy3",)
@@ -63,20 +69,44 @@
 		density = 1
 		anchored = 1
 
-/obj/structure/flora/tree/snowy/attackby(obj/item/O, mob/user)
-	. = ..()
-	if(istype(O))
-		if(O.sharp || O.edge)
-			playsound(src, 'sound/effects/ash_chop.ogg', 50, TRUE)
-			user.visible_message("<span class='info'>[user] begins to cut away [src].</span>")
-			if(do_after(user,200))
-				if(src)
-					playsound(src, 'sound/effects/ash_cut.ogg', 50, TRUE)
-					user.visible_message("<span class='info'>[user] finishes cutting away [src].</span>")
-					qdel(src)
 
-			else
-				user.visible_message("<span class='info'>[user] stops cutting away [src].</span>")
+
+
+
+//wel ards forestry simulator
+
+
+/obj/structure/flora/tree/attackby(var/obj/item/O, var/mob/user)
+
+	if(log_type)	//if the tree has logs
+		if((O.sharp) || istype(O, /obj/item/material/knife/butch) || istype(O, /obj/item/material/sword))//what items can cut down trees
+			if(!cutdown)
+				to_chat(user, "<span='bnotice'[user] begins to cut down \the [src]!</span>" )
+				playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
+				if(do_after(user, 200, src))
+					harvest(user)
+	else
+		if(!O.force)
+			visible_message("<span class='notice'>[user] gently taps [src] with \the [O].</span>")
+		else
+			O.attack(src, user, user.zone_sel.selecting)
+
+/obj/structure/flora/tree/proc/harvest(var/mob/user)
+	if(cutdown)
+		to_chat(user, "<span='bnotice'This tree has already been cut down.</span>")
+	var/actual_log_amount = max(1,(log_amount/2)) //currently 1 log per tree
+	if(log_type && actual_log_amount>0)
+		for(var/i=0;i<actual_log_amount;i++)
+			new log_type(get_turf(src)) //pulls the log type from whatever is specified in the tree
+
+		user.visible_message("<span class='danger'>[user] cuts down \the [src]!</span>")
+		if(delete_after_harvest)
+			qdel(src)
+		else
+			cutdown = TRUE
+	else
+		user.visible_message("<span class='danger'>[user] butchers \the [src] messily!</span>")
+
 
 
 //grass

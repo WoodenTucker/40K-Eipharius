@@ -262,9 +262,10 @@
 	density = 1
 	pixel_x = 0
 	pixel_y = 0
-	str_requirement = 1000
 	var/lit = FALSE
 	var/self_lighting = 0
+	lit = 1
+	str_requirement = 1000
 
 /obj/item/fireplacebl/br
 	icon = 'icons/obj/objects.dmi'
@@ -272,6 +273,7 @@
 	pixel_x = 0
 	pixel_y = 0
 	str_requirement = 1000
+	lit = 1
 
 
 /obj/item/fireplacebl/r
@@ -280,6 +282,7 @@
 	pixel_x = 0
 	pixel_y = 0
 	str_requirement = 1000
+	lit = 1
 
 /obj/item/fireplacebl/l
 	icon = 'icons/obj/objects.dmi'
@@ -287,6 +290,7 @@
 	pixel_x = 0
 	pixel_y = 0
 	str_requirement = 1000
+	lit = 1
 
 /obj/item/pyre/Initialize()
 	. = ..()

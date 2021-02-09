@@ -2,8 +2,8 @@
 	title = "Pilgrim"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 6 //maybe open up more of these when we figure out other classes and depending on player count
-	spawn_positions = 6
+	total_positions = 10 //maybe open up more of these when we figure out other classes and depending on player count
+	spawn_positions = 10
 	supervisors = "The Holy Inquisition"
 	selection_color = "#515151"
 	access = list(access_hydroponics,)

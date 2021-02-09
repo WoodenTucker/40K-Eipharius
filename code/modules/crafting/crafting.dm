@@ -122,3 +122,13 @@
 			user << "<span class='notice'>You make \a [name].</span>"
 		else
 			user << "<span class='warning'>You've failed to make \a [name].</span>"
+
+/datum/crafting_recipe/torch
+	name = "torch"
+	parts = /obj/item/stack/logs
+	tools = /obj/item/material/sword/combat_knife
+	result = /obj/item/torch
+	time = 10
+	base_chance = 100
+
+
