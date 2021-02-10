@@ -18,20 +18,7 @@
 	surgery_skill = 0
 	melee_skill = 4
 	ranged_skill = 4
-
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
-		..()
-		H.fully_replace_character_name("Magos [current_name]")
-		H.add_stats(rand(10,13), rand(10,13), rand(14,18), rand(16,20)) //idk what to do with Magos xd
-		H.warfare_faction = IMPERIUM
-		H.say(";01001101 01100001 01100111 01101111 01110011 00100000 01101111 01101110 01101100 01101001 01101110 01100101!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos. The highest ranking member of the Adeptus Mechanicus on the outpost. Your duty is to ensure all mechanical and electrical services remain online and operational. Use your talents and the skills of your tech priests to further the goals of the Imperium. Praise the Omnissiah!</font></b></span>")
-		H.bladder = 0
-		H.bowels = 0 //he's too heavily modified to require things like a toilet
-		H.thirst = INFINITY
-		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
 			            access_heads, access_construction, access_sec_doors,
@@ -40,6 +27,22 @@
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
 			            access_heads, access_construction, access_sec_doors,
 			            access_ce, access_RC_announce, access_keycard_auth, access_tcomsat, access_ai_upload)
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Magos [current_name]")
+		H.add_stats(rand(10,13), rand(10,13), rand(14,18), rand(16,20)) //idk what to do with Magos xd
+		H.warfare_faction = IMPERIUM
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC|LANGUAGE_MECHANICUS)
+		H.say(";01001101 01100001 01100111 01101111 01110011 00100000 01101111 01101110 01101100 01101001 01101110 01100101!")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos. The highest ranking member of the Adeptus Mechanicus on the outpost. Your duty is to ensure all mechanical and electrical services remain online and operational. Use your talents and the skills of your tech priests to further the goals of the Imperium. Praise the Omnissiah!</font></b></span>")
+		H.bladder = -INFINITY
+		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+		H.thirst = INFINITY
+		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+
+
 	minimal_player_age = 14
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 
@@ -55,6 +58,7 @@
 	economic_modifier = 5
 	minimal_player_age = 7
 	open_when_dead = 1
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	//alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
@@ -67,6 +71,7 @@
 		H.fully_replace_character_name("Tech-Priest [current_name]")
 		H.add_stats(rand(10,13), rand(10,13), rand(12,15), rand(14,16)) //idk what to do with Magos xd
 		H.add_skills(rand(1,3),rand(1,3),rand(1,2),rand(6,9),0)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC|LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.say(";01010100 01100101 01100011 01101000 00101101 01010000 01110010 01101001 01100101 01110011 01110100.")
 		to_chat(H, "<span class='notice'><b><font size=3>Praise the Omnissiah! You live to further mankinds knowledge and understanding of technology. Obey your Magos and ensure all machine spirits are pleased.</font></b></span>")

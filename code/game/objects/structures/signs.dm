@@ -303,6 +303,14 @@
 
 /obj/structure/sign/stainedglass5
 	icon_state = "stglass5"
+
+/obj/structure/sign/wanted
+	icon_state = "wantedboard"
+
+/obj/structure/sign/wantedwritten
+	icon_state = "wantedwritten"
+
+
 /obj/structure/sign/warning/science
 	name = "\improper SCIENCE!"
 	icon_state = "science1"
@@ -312,6 +320,8 @@
 /obj/structure/sign/spooky
 	icon_state = "death"
 
+/obj/structure/sign/medinfo
+	icon_state = "poster_info"
 /obj/structure/sign/warning/science/anomalous_materials
 	name = "\improper ANOMALOUS MATERIALS"
 
@@ -532,3 +542,13 @@
 /obj/structure/sign/neon/exit
 	name = "Exit"
 	icon_state = "exit"
+
+/obj/structure/sign/chemistrymic
+	name = "CHEMISTRY"
+	desc = "A sign labelling an area containing chemical equipment."
+	icon_state = "mic"
+
+/obj/structure/sign/aquilalong
+	name = "a long aquila"
+	desc = "A dark aquila"
+	icon_state = "aquilla"

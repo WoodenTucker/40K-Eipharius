@@ -83,6 +83,54 @@
 	initial_reagent_types = list(/datum/reagent/water = 1)
 	atom_flags = ATOM_FLAG_CLIMBABLE
 
+/obj/structure/reagent_dispensers/waterbarrel
+	name = "barrel of water"
+	desc = "A barrel containing water."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "waterbarrel"
+	amount_per_transfer_from_this = 10
+	possible_transfer_amounts = "10;25;50;100"
+	initial_capacity = 50000
+	initial_reagent_types = list(/datum/reagent/water = 1)
+
+/obj/item/reagent_dispensers/proc/standard_feed_mob(var/mob/user, var/mob/target) // This goes into attack
+	if(!istype(target))
+		return 0
+
+	if(!reagents || !reagents.total_volume)
+		to_chat(user, "<span class='notice'>\The [src] is empty.</span>")
+		return 1
+
+/obj/item/reagent_dispensers/proc/self_feed_message(var/mob/user)
+	to_chat(user, "<span class='notice'>You eat \the [src]</span>")
+
+/obj/item/reagent_dispensers/waterbarrel/attack(mob/M as mob, mob/user as mob, def_zone)
+	if(force && !(item_flags & ITEM_FLAG_NO_BLUDGEON) && user.a_intent == I_HURT)
+		return	..()
+	if(standard_feed_mob(user, M))
+		return
+	return 0
+
+/obj/item/reagent_dispensers/waterbarrel/standard_feed_mob(var/mob/user, var/mob/target)
+	if(!is_open_container())
+		to_chat(user, "<span class='notice'>You need to open \the [src] first.</span>")
+		return 1
+	if(user.a_intent == I_HURT)
+		return 1
+	return ..()
+
+/obj/item/reagent_dispensers/waterbarrel/self_feed_message(var/mob/user)
+	to_chat(user, "<span class='notice'>You swallow a gulp from \the [src].</span>")
+
+/obj/structure/reagent_dispensers/beerbarrel
+	name = "barrel of beer"
+	desc = "A barrel containing beer."
+	icon = 'icons/obj/objects.dmi'
+	icon_state = "beerbarrel"
+	amount_per_transfer_from_this = 10
+	possible_transfer_amounts = "10;25;50;100"
+	initial_capacity = 50000
+	initial_reagent_types = list(/datum/reagent/ethanol/beer = 1)
 /obj/structure/reagent_dispensers/fueltank
 	name = "fueltank"
 	desc = "A tank containing fuel."

@@ -22,7 +22,7 @@
 	if(!..())
 		return
 
-	//OBJECTIVES - Always absorb 5 genomes, plus random traitor objectives.
+	//OBJECTIVES - Always absorb 5 genomes, plus random heretic objectives.
 	//If they have two objectives as well as absorb, they must survive rather than escape
 	//No escape alone because changelings aren't suited for it and it'd probably just lead to rampant robusting
 	//If it seems like they'd be able to do it in play, add a 10% chance to have to escape alone

@@ -1,17 +1,30 @@
 //Due to how large this one is it gets its own file
 /datum/job/chaplain
-	title = "Chaplain"
+	title = "Ministorum Priest"
 	department = "Civilian"
 	department_flag = CIV
-
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 0
+	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Ecclesiarchy"
 	selection_color = "#515151"
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
 //	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
+
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Abbot [current_name]")
+		H.add_stats(rand(8,11), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
+		H.add_skills(rand(2,4),rand(1,2),0,0,0)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are an Abbot of the Ecclesiarchy. The chapel on the lower floor is your domain. Lead and guide the faithful of this world. Do not be afraid to embark from the outpost and preach to the masses.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -26,7 +39,7 @@
 
 		spawn(0)
 			var/religion_name = "the Imperial Cult"
-			var/new_religion = sanitize(input(H, "You are the crew services officer. Would you like to change your religion? Default is the Imperial Cult", "Name change", religion_name), MAX_NAME_LEN)
+			var/new_religion = sanitize(input(H, "You are a holy priest of the Ministorum. To change your religion would be heresy and would surely lead to a swift death.", "Name change", religion_name), MAX_NAME_LEN)
 
 			if (!new_religion)
 				new_religion = religion_name
@@ -113,3 +126,14 @@
 			feedback_set_details("religion_deity","[new_deity]")
 			feedback_set_details("religion_book","[new_book_style]")
 		return 1
+
+/obj/item/melee/whip/censer
+	name = "imperial censer"
+	desc = "A golden censer leaking pure smelling incense. Used by the Ecclesiarchy for blessings."
+	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "censer"
+	item_state = "censer"
+	w_class = ITEM_SIZE_SMALL
+
+	//todo make this bless stuff

@@ -470,3 +470,15 @@
 	id = access_merchant
 	desc = "Merchant"
 	access_type = ACCESS_TYPE_NONE
+
+/var/const/access_inquisition = 202
+/datum/access/inquisition
+	id = access_inquisition
+	desc = "Inquisitor"
+	access_type = ACCESS_TYPE_INQUISITION
+
+/var/const/access_treasury = 203
+/datum/access/treasury
+	id = access_treasury
+	desc = "Seneschal"
+	access_type = ACCESS_TYPE_TREASURY

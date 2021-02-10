@@ -5,7 +5,7 @@
 /datum/species/ork
 	name = SPECIES_ORK_GRETCHIN
 	name_plural = "Gretchins"
-	secondary_langs = list(LANGUAGE_SOL_COMMON)
+	secondary_langs = list(LANGUAGE_ORKY)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/r_gretchin.dmi'
 	deform = 'icons/mob/human_races/r_def_gretchin.dmi'
@@ -65,7 +65,7 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	total_health = 650
-	strength = STR_VHIGH
+	strength = 30
 	mob_size = MOB_LARGE
 	brute_mod = 0.7
 	burn_mod = 0.8

@@ -136,3 +136,10 @@
 	a_side = pick('sound/music/boombox7.ogg', 'sound/music/boombox8.ogg')
 	b_side = pick('sound/music/boombox9.ogg', 'sound/music/boombox10.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/tape4/New()
+	..()
+	name = "\"The Outside World\'s Greatest Hits - Santa Monica Edition\" magn-o-tape"
+	a_side = pick('sound/music/inn.ogg',)
+	b_side = pick('sound/music/boombox9.ogg', 'sound/music/boombox10.ogg')
+	sound_inside = a_side

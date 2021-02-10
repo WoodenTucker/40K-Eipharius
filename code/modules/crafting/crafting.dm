@@ -122,3 +122,5 @@
 			user << "<span class='notice'>You make \a [name].</span>"
 		else
 			user << "<span class='warning'>You've failed to make \a [name].</span>"
+
+

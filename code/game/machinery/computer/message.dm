@@ -124,7 +124,7 @@
 				for(var/n = ++i; n <= optioncount; n++)
 					dat += "<dd><font color='blue'>&#09;[n]. ---------------</font><br></dd>"
 			if((istype(user, /mob/living/silicon/ai) || istype(user, /mob/living/silicon/robot)) && (user.mind.special_role && user.mind.original == user))
-				//Malf/Traitor AIs can bruteforce into the system to gain the Key.
+				//Malf/heretic AIs can bruteforce into the system to gain the Key.
 				dat += "<dd><A href='?src=\ref[src];hack=1'><i><font color='Red'>*&@#. Bruteforce Key</font></i></font></a><br></dd>"
 			else
 				dat += "<br>"

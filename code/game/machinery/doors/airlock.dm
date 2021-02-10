@@ -76,6 +76,7 @@
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorcom.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
+	req_access = list(access_heads)
 
 /obj/machinery/door/airlock/black
 	name = "Airlock"
@@ -109,9 +110,10 @@
 	assembly_type = /obj/structure/door_assembly/door_assembly_sec
 
 /obj/machinery/door/airlock/engineering
-	name = "Airlock"
+	name = "Mechanicus Airlock"
 	icon = 'icons/obj/doors/Dooreng.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_eng
+	req_access = list(access_engine)
 
 /obj/machinery/door/airlock/medical
 	name = "Airlock"
@@ -133,6 +135,13 @@
 	icon = 'icons/obj/doors/Doorext.dmi'
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_ext
+
+/obj/machinery/door/airlock/simiel
+	name = "Black Ship 'Simiel'"
+	icon = 'icons/obj/doors/Doorext.dmi'
+	opacity = 1
+	assembly_type = /obj/structure/door_assembly/door_assembly_ext
+	req_access = list(access_inquisition)
 
 /obj/machinery/door/airlock/weapon
 	name = "Airlock"
@@ -193,6 +202,7 @@
 	icon = 'icons/obj/doors/Doorfreezer.dmi'
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_fre
+	req_access = list(access_kitchen)
 
 /obj/machinery/door/airlock/hatch
 	name = "Airtight Hatch"
@@ -200,6 +210,14 @@
 	explosion_resistance = 20
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_hatch
+
+/obj/machinery/door/airlock/hatch/simiel
+	icon = 'icons/obj/doors/Doorhatchele.dmi'
+	explosion_resistance = 20
+	opacity = 1
+	assembly_type = /obj/structure/door_assembly/door_assembly_hatch
+	req_access = list(access_inquisition)
+
 
 /obj/machinery/door/airlock/maintenance_hatch
 	name = "Maintenance Hatch"
@@ -219,8 +237,8 @@
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_shatch
 
-/obj/machinery/door/airlock/glass_command
-	name = "Glass Airlock"
+/obj/machinery/door/airlock/glass_command/rt
+	name = "Rogue Trader's Office"
 	icon = 'icons/obj/doors/Doorcomglass.dmi'
 	hitsound = 'sound/effects/Glasshit.ogg'
 	maxhealth = 300
@@ -228,7 +246,51 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
+	req_access = list(access_captain)
 
+/obj/machinery/door/airlock/glass_command/magos
+	name = "Magos Habitatum"
+	icon = 'icons/obj/doors/Doorcomglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_com
+	glass = 1
+	req_access = list(access_ce)
+
+/obj/machinery/door/airlock/glass_command/commissar
+	name = "Commisarr's Den"
+	icon = 'icons/obj/doors/Doorcomglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_com
+	glass = 1
+	req_access = list(access_hos)
+
+/obj/machinery/door/airlock/glass_command/hospitaller
+	name = "Hospitaller's Haven"
+	icon = 'icons/obj/doors/Doorcomglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_com
+	glass = 1
+	req_access = list(access_cmo)
+
+/obj/machinery/door/airlock/glass_command/seneschal
+	name = "Seneschal's Study"
+	icon = 'icons/obj/doors/Doorcomglass.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_com
+	glass = 1
+	req_access = list(access_hop)
 /obj/machinery/door/airlock/glass_black
 	name = "Glass Airlock"
 	icon = 'icons/obj/doors/doorblackglass.dmi'
@@ -278,6 +340,17 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_cone
 	glass = 1
+
+/obj/machinery/door/airlock/glass_cone/outside
+	name = "Glass Airlock"
+	icon = 'icons/obj/doors/Doorglassone.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_cone
+	glass = 1
+	req_access = list(access_maint_tunnels)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"
@@ -534,6 +607,7 @@
 	explosion_resistance = 20
 	secured_wires = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_highsecurity
+	req_access = list(access_hos, access_sec_doors)
 
 /obj/machinery/door/airlock/highsecurity/bolted
 

@@ -2,7 +2,7 @@
 
 //Illicit drugs~
 /obj/item/storage/pill_bottle/happy
-	name = "bottle of Happy pills"
+	name = "bottle of Obscura pills"
 	desc = "Highly illegal drug. When you want to see the rainbow."
 
 /obj/item/storage/pill_bottle/happy/New()

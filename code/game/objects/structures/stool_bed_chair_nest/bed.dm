@@ -291,3 +291,13 @@
 		spawn(0)
 			qdel(src)
 		return
+
+/obj/structure/bed/bigbedl
+	name = "big bed"
+	desc = "a comfy and warm looking large bed."
+	icon = 'icons/obj/bigbed.dmi'
+	icon_state = "bedl"
+
+/obj/structure/bed/bigbedl/bigbedr
+	icon = 'icons/obj/bigbed.dmi'
+	icon_state = "bedr"

@@ -285,6 +285,10 @@ its easier to just keep the beam vertical.
 		icon_state = new_icon_state
 
 /atom/proc/update_icon()
+	on_update_icon(arglist(args))
+	return
+
+/atom/proc/on_update_icon()
 	return
 
 /atom/proc/ex_act()

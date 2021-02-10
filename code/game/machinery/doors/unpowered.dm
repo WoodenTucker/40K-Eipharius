@@ -23,3 +23,35 @@
 	icon_state = "door1"
 	opacity = 1
 	density = 1
+
+/obj/machinery/door/unpowered/inn
+	name = "inn door"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+
+/obj/machinery/door/unpowered/inn/interior
+	name = "interior inn door"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_bar)
+
+/obj/machinery/door/unpowered/inn/magistratum
+	name = "Magistratum door"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_brig)
+
+/obj/machinery/door/unpowered/inn/vault
+	name = "Interior Vault"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_treasury)
+

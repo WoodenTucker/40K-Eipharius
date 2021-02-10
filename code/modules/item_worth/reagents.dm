@@ -598,3 +598,6 @@
 
 /datum/reagent/xenomicrobes
 	value = 5
+
+/datum/reagent/toxin/fertilizer/poo
+	value = 1.2

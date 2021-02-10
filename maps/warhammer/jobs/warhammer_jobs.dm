@@ -18,17 +18,16 @@
 	/datum/job/captain,
 	/datum/job/inquisitor,
 	/datum/job/bartender,
-	/datum/job/librarian,
 	/datum/job/cmo,
 	/datum/job/chemist,
 	/datum/job/geneticist,
-	/datum/job/psychiatrist,
 	/datum/job/Paramedic,
 	/datum/job/mining,
 	/datum/job/cargo_tech,
 	/datum/job/qm,
 	/datum/job/envoy,
 	/datum/job/leadinquisitor,
+	/datum/job/innkeeper,
 
 	)
 

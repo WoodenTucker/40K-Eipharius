@@ -196,6 +196,40 @@
 	icon_state = "plebhood"
 	item_state = "plebhood"
 
+/obj/item/clothing/head/bardhat
+	name = "bard's hat"
+	desc = "A fairly nice leather hat with a feather tucked into it."
+	icon_state = "bardhat"
+	item_state = "bardhat"
+
+/obj/item/clothing/head/musichat
+	name = "bard's hat"
+	desc = "A fairly nice leather hat with a feather tucked into it."
+	icon_state = "obard"
+	item_state = "obard"
+
+/obj/item/clothing/head/smokingcap
+	name = "smoking cap"
+	desc = "A fancy smoking cap with golden tassle."
+	icon_state = "smokingc"
+	item_state = "smokingc"
+
+/obj/item/clothing/head/pillbox
+	name = "pillbox hat"
+	desc = "A proper smerd hat"
+	icon_state = "pillbox"
+	item_state = "pillbox"
+
+/obj/item/clothing/head/servitorhead
+	name = "a servitor skull"
+	desc = "A bone white skull littered with wiring and augments."
+	icon_state = "servitor_helmet"
+	item_state = "servitor_helmet"
+	canremove = 0
+
+/obj/item/clothing/head/servitorhead/janitor
+	icon_state = "servitor_helmet2"
+	item_state = "servitor_helmet2"
 /obj/item/clothing/head/bighat
 	name = "a big hat"
 	desc = "A large, imposing hat."

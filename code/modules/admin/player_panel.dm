@@ -78,7 +78,7 @@
 					body += "<a href='?src=\ref[src];adminplayeropts="+ref+"'>PP</a> - "
 					body += "<a href='?src=\ref[src];notes=show;mob="+ref+"'>N</a> - "
 					body += "<a href='?_src_=vars;Vars="+ref+"'>VV</a> - "
-					body += "<a href='?src=\ref[src];traitor="+ref+"'>TP</a> - "
+					body += "<a href='?src=\ref[src];heretic="+ref+"'>TP</a> - "
 					body += "<a href='?src=\ref[usr];priv_msg=\ref"+ref+"'>PM</a> - "
 					body += "<a href='?src=\ref[src];subtlemessage="+ref+"'>SM</a> - "
 					body += "<a href='?src=\ref[src];adminplayerobservejump="+ref+"'>JMP</a><br>"
@@ -327,7 +327,7 @@
 		return
 
 	var/dat = "<html><head><title>Player Menu</title></head>"
-	dat += "<body><table border=1 cellspacing=5><B><tr><th>Name</th><th>Real Name</th><th>Assigned Job</th><th>Key</th><th>Options</th><th>PM</th><th>Traitor?</th></tr></B>"
+	dat += "<body><table border=1 cellspacing=5><B><tr><th>Name</th><th>Real Name</th><th>Assigned Job</th><th>Key</th><th>Options</th><th>PM</th><th>heretic?</th></tr></B>"
 	//add <th>IP:</th> to this if wanting to add back in IP checking
 	//add <td>(IP: [M.lastKnownIP])</td> if you want to know their ip to the lists below
 	var/list/mobs = sortmobs()
@@ -378,11 +378,11 @@
 			else
 				switch(is_special_character(M))
 					if(0)
-						dat += {"<td align=center><A HREF='?src=\ref[src];traitor=\ref[M]'>Traitor?</A></td>"}
+						dat += {"<td align=center><A HREF='?src=\ref[src];heretic=\ref[M]'>heretic?</A></td>"}
 					if(1)
-						dat += {"<td align=center><A HREF='?src=\ref[src];traitor=\ref[M]'><font color=red>Traitor?</font></A></td>"}
+						dat += {"<td align=center><A HREF='?src=\ref[src];heretic=\ref[M]'><font color=red>heretic?</font></A></td>"}
 					if(2)
-						dat += {"<td align=center><A HREF='?src=\ref[src];traitor=\ref[M]'><font color=red><b>Traitor?</b></font></A></td>"}
+						dat += {"<td align=center><A HREF='?src=\ref[src];heretic=\ref[M]'><font color=red><b>heretic?</b></font></A></td>"}
 		else
 			dat += {"<td align=center> N/A </td>"}
 

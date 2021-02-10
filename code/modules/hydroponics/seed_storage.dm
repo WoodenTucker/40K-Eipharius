@@ -86,7 +86,8 @@
 		/obj/item/seeds/towermycelium = 30,
 		/obj/item/seeds/watermelonseed = 30,
 		/obj/item/seeds/wheatseed = 30,
-		/obj/item/seeds/whitebeetseed = 30
+		/obj/item/seeds/whitebeetseed = 30,
+		/obj/item/seeds/blackbeanseed = 30,
 	)
 
 /obj/machinery/seed_storage/xenobotany
@@ -140,7 +141,8 @@
 		/obj/item/seeds/watermelonseed = 30,
 		/obj/item/seeds/wheatseed = 30,
 		/obj/item/seeds/whitebeetseed = 30,
-		/obj/item/seeds/random = 10
+		/obj/item/seeds/random = 10,
+		/obj/item/seeds/blackbeanseed = 30,
 	)
 
 /obj/machinery/seed_storage/attack_hand(mob/user as mob)

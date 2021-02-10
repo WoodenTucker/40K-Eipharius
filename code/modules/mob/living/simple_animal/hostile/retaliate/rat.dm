@@ -16,7 +16,9 @@
 	speed = 4
 	maxHealth = 10
 	health = 10
-
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
 	mob_size = MOB_SMALL
 	density = 0 //So they don't get in the way.
 

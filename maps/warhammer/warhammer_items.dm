@@ -468,6 +468,37 @@
 	grab_sound_is_loud = TRUE
 
 
+/obj/item/clothing/suit/chokha
+	name = "stalker's vest"
+	desc = "A red hunters uniform"
+	icon_state = "chokha"
+	item_state = "chokha"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/miner
+	name = "miner's vest"
+	desc = "A miner's vestaments"
+	icon_state = "yminer"
+	item_state = "yminer"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/sherpa
+	name = "sherpa's vest"
+	desc = "A sherpa's vestaments"
+	icon_state = "sherpa"
+	item_state = "sherpa"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/scum
+	name = "shady jacket"
+	desc = "A jacket that only the shadiest of characters would wear."
+	icon_state = "scum"
+	item_state = "scum"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/suit/prac_arpon
@@ -505,6 +536,18 @@
 	item_state = "prac_cap"
 	flags_inv = BLOCKHEADHAIR
 
+/obj/item/clothing/head/ushanka2
+	name = "ushanka"
+	desc = "A proper hat for one willing to brave the tundra."
+	icon_state = "ushanka"
+	item_state = "ushanka"
+	flags_inv = BLOCKHEADHAIR
+
+/obj/item/clothing/head/scum
+	name = "pimp hat"
+	desc = "Pretty fly for a space guy."
+	icon_state = "scum"
+	item_state = "scum"
 
 /obj/item/clothing/accessory/red_outline
 	icon_state = "red_outline"
@@ -713,6 +756,8 @@ Imperial Guardsman
 	..()
 	name = "An Imperial Guardsman's Armor"
 	desc = "The proud armor of an Imperial Guardsman"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/guard_uniform
@@ -720,19 +765,41 @@ Imperial Guardsman
 	desc = "The uniform of those who fight in His name."
 	icon_state = "guard_s"
 	item_state = "guard"
-
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Guard Helmet"
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "guard"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/medicae
 	name = "medicae helmet"
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "medicae"
 	item_state = "medicae"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/bountyhunter
+	name = "bounty hunter's armor"
+	icon_state = "cadianarmor"
+	item_state = "cadianarmor"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/bountyhunter2
+	name = "bounty hunter's armor"
+	icon_state = "valhalla"
+	item_state = "valhalla"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/commissar
+	name = "commisar's jacket"
 	icon_state = "comissar3"
 	item_state = "comissar3"
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
@@ -743,7 +810,16 @@ Imperial Guardsman
 	desc = "This cap strikes fear into the rank and file."
 	icon_state = "comissar3"
 	item_state = "comissar3"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/bountyhead
+	name = "bounty hunter\'s helm"
+	desc = "A well worn and dented helm."
+	icon_state = "skullopen"
+	item_state = "skullopen"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
 
@@ -841,7 +917,8 @@ Imperial Guardsman
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
@@ -865,3 +942,27 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
+
+/obj/item/clothing/suit/storage/hooded/miner
+	name = "mining robes"
+	desc = "Black mining robes."
+	icon_state = "mortician"
+	item_state = "mortician"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/pickaxe)
+	armor = list(melee = 5, bullet = 5, laser = 10, energy = 15, bomb = 10, bio = 10, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/mininghood
+
+/obj/item/clothing/suit/storage/hooded/genetor
+	name = "genetor's robes"
+	desc = "Green robes riddled with augments, scanners and syringes. The robes look incredibly old and worn, you can tell this magos has lived a long and scholarly life."
+	icon_state = "genetor"
+	item_state = "genetor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun) //TODO make this more applicable to genetor
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 25, bomb = 20, bio = 50, rad = 50)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/genehood

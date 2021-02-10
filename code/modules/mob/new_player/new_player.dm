@@ -440,13 +440,14 @@
 		"Team Blue"=list("color"="#76abb2", "jobs"=list()),
 		"Command"=list("color"="#76abb2", "jobs"=list()),
 		"Imperial Guard"=list("color"="#b27676", "jobs"=list()),
+		"Village"=list("color"="#ff0bebea", "jobs"=list()),
 		"Adeptus Mechanicus"=list("color"="#f03e08", "jobs"=list()),
 		"Outpost Medical Staff"=list("color"="#76abb2", "jobs"=list()),
 		"Supply"=list("color"="#76abb2", "jobs"=list()),
 		"Outpost Support Staff"=list("color"="#76abb2", "jobs"=list()),
 		"Inquisition"=list("color"="#fd0707", "jobs"=list()),
-		"Pilgrims"=list("color"="#ff0bebea", "jobs"=list()),
-		"Misc"=list("color"="Grey", "jobs"=list())
+		"Village"=list("color"="#ff0bebea", "jobs"=list()),
+		"Misc"=list("color"="Grey", "jobs"=list()),
 		)
 
 	for(var/datum/job/job in SSjobs.occupations)
@@ -472,7 +473,7 @@
 		else if(job.department_flag & INQ)
 			jobcats["Inquisition"]["jobs"] += job
 		else if(job.department_flag & PIL)
-			jobcats["Pilgrims"]["jobs"] += job
+			jobcats["Village"]["jobs"] += job
 		else
 			jobcats["Misc"]["jobs"] += job
 

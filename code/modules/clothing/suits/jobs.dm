@@ -12,6 +12,17 @@
 	body_parts_covered = 0
 	allowed = list (/obj/item/reagent_containers/spray/plantbgone,/obj/item/device/analyzer/plant_analyzer,/obj/item/seeds,/obj/item/reagent_containers/glass/bottle,/obj/item/material/minihoe)
 
+/obj/item/clothing/suit/farmer
+	name = "farmer's robes"
+	desc = "A simple farmer's robe"
+	icon_state = "undertaker"
+	item_state = "undertaker"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	allowed = list (/obj/item/reagent_containers/spray/plantbgone,/obj/item/device/analyzer/plant_analyzer,/obj/item/seeds,/obj/item/reagent_containers/glass/bottle,/obj/item/material/minihoe)
+
 //Magistrate
 /obj/item/clothing/suit/robes
 	name = "commandant's robes"
@@ -63,6 +74,16 @@
 	gas_transfer_coefficient = 0.90
 	permeability_coefficient = 0.50
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	allowed = list (/obj/item/material/knife)
+
+/obj/item/clothing/suit/guardchef
+	name = "imperial guard cook's apron"
+	desc = "The dirty apron of a guard cook."
+	icon_state = "bsapron"
+	item_state = "bsapron"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	allowed = list (/obj/item/material/knife)
 
 //Chef
@@ -166,7 +187,8 @@
 	item_state = "magos"
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
@@ -175,6 +197,8 @@
 	canremove = 0
 	icon_state = "techpriest"
 	item_state = "techpriest"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 //Lawyer
 /obj/item/clothing/suit/storage/toggle/suit
@@ -238,6 +262,27 @@
 	item_state = "doctor_vest"
 	blood_overlay_type = "armor"
 
+
+/obj/item/clothing/suit/musician
+	name = "musician's garb"
+	desc = "A colorful yet somewhat tattered uniform."
+	icon_state = "xomrobe"
+	item_state = "xomrobe"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/merchant
+	name = "merchant's garb"
+	desc = "Elegant clothing for a wealthy trader."
+	icon_state = "robes"
+	item_state = "robes_item"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 //Penitent
 /obj/item/clothing/suit/raggedrobe
 	name = "ragged robe"
@@ -245,5 +290,45 @@
 	icon_state = "grosthrobe"
 	item_state = "grosthrobe"
 	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO
-	cold_protection = UPPER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+
+//innkeeper
+/obj/item/clothing/suit/innapron
+	name = "innkeeper's apron"
+	desc = "An amasec and caff stained apron."
+	icon_state = "mapron"
+	item_state = "mapron"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+//servitor robes
+
+/obj/item/clothing/suit/servitor
+	name = "servitor's robes"
+	desc = "Shabby robes worn by a servitor unit."
+	icon_state = "servitor_robe"
+	item_state = "servitor_robe"
+	blood_overlay_type = "coat"
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/servitor/janitor
+	icon_state = "servitor_robe2"
+	item_state = "servitor_robe2"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+//ministorum priest
+/obj/item/clothing/suit/ministorumrobes
+	name = "ministorum robes"
+	desc = "Gorgeous robes littered  with holy seals and writs. Smells faintly of incense."
+	icon_state = "ministorum_priest"
+	item_state = "ministorum_priest"
+	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

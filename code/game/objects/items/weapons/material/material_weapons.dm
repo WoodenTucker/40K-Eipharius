@@ -11,7 +11,6 @@
 	sharp = 0
 	edge = 0
 
-	var/applies_material_colour = 1
 	var/unbreakable
 	var/force_divisor = 0.5
 	var/thrown_force_divisor = 0.5
@@ -19,6 +18,12 @@
 	var/material/material
 	var/drops_debris = 1
 	var/broken_icon = null
+	var/applies_material_colour = 1
+	var/applies_material_name = 1 //if false, does not rename item to 'material item.name'
+	var/max_force = 40	 //any damage above this is added to armor penetration value
+	var/force_multiplier = 0.5	// multiplier to material's generic damage value for this specific type of weapon
+	var/thrown_force_multiplier = 0.5
+	var/attack_cooldown_modifier = 0
 
 /obj/item/material/New(var/newloc, var/material_key)
 	..(newloc)

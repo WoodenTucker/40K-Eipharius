@@ -96,3 +96,12 @@
 	canremove = 0
 	cold_protection = FEET|LEGS
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/shoes/vigilante
+	name = "shining shoes"
+	desc = "A shined pair of shoes"
+	icon_state = "vigilante_boots"
+	item_state = "vigilante_boots"
+	armor = list(melee = 10, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	siemens_coefficient = 0.7
+	can_hold_knife = 1

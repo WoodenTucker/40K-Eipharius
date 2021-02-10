@@ -1200,3 +1200,23 @@
 	set_trait(TRAIT_YIELD,-1)
 	set_trait(TRAIT_SPREAD,2)
 	set_trait(TRAIT_POTENCY,50)
+
+/datum/seed/blackbeans
+	name = "blackbean"
+	seed_name = "blackbean"
+	display_name = "black bean stalks"
+	chems = list(/datum/reagent/nutriment = list(1,25),)
+	kitchen_tag = "blackbean"
+
+/datum/seed/blackbeans/New()
+	..()
+	set_trait(TRAIT_MATURATION,6)
+	set_trait(TRAIT_PRODUCTION,3)
+	set_trait(TRAIT_YIELD,4)
+	set_trait(TRAIT_POTENCY,5)
+	set_trait(TRAIT_PRODUCT_ICON,"blackbean")
+	set_trait(TRAIT_PRODUCT_COLOUR,"#301202ff")
+	set_trait(TRAIT_PLANT_COLOUR,"#1d4100")
+	set_trait(TRAIT_PLANT_ICON,"bbean_grow6")
+	set_trait(TRAIT_IDEAL_LIGHT, 6)
+	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.15)

@@ -96,6 +96,8 @@
 	icon_state = "arbiter"
 	item_state = "arbiter"
 	worn_state = "arbiter"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/hydroponics
 	desc = "It's a jumpsuit designed to protect against minor plant-related hazards."
@@ -104,6 +106,8 @@
 	item_state = "g_suit"
 	worn_state = "hydroponics"
 	permeability_coefficient = 0.50
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/rank/internalaffairs
@@ -119,6 +123,8 @@
 	name = "principal agent's bodyglove"
 	icon_state = "combat"
 	item_state = "combat"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/rank/inquisitor
@@ -126,6 +132,8 @@
 	name = "inquisitor's bodyglove"
 	icon_state = "assistant_formal"
 	item_state = "assistant_formal"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/internalaffairs/plain
 	desc = "A plain shirt and pair of pressed black pants."
@@ -145,6 +153,8 @@
 	worn_state = "janitor"
 	item_state = "janitor"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/lawyer

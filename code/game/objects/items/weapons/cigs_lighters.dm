@@ -214,7 +214,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		return ..()
 
 /obj/item/clothing/mask/smokable/cigarette
-	name = "cigarette"
+	name = "lho stick"
 	desc = "A small paper cylinder filled with processed tobacco and various fillers."
 	icon_state = "cigoff"
 	throw_speed = 0.5

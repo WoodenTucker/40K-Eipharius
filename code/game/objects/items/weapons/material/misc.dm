@@ -82,6 +82,7 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
+	force = 25
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_NORMAL

@@ -179,6 +179,7 @@ proc/get_radio_key_from_channel(var/channel)
 				if (findtext(word, config.ic_filter_regex))
 					warning_message = "[warning_message]<b>[word]</b> "
 					cringe += "/<b>[word]</b>"
+					//Del(client) //if it ever gets too bad im turning this on
 				else
 					warning_message = "[warning_message][word] "
 

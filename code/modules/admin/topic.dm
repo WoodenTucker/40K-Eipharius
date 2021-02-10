@@ -1531,14 +1531,14 @@
 		var/mob/M = locate(href_list["subtlemessage"])
 		usr.client.cmd_admin_subtle_message(M)
 
-	else if(href_list["traitor"])
+	else if(href_list["heretic"])
 		if(!check_rights(R_ADMIN|R_MOD))	return
 
 		if(!ticker || !ticker.mode)
 			alert("The game hasn't started yet!")
 			return
 
-		var/mob/M = locate(href_list["traitor"])
+		var/mob/M = locate(href_list["heretic"])
 		if(!ismob(M))
 			to_chat(usr, "This can only be used on instances of type /mob.")
 			return

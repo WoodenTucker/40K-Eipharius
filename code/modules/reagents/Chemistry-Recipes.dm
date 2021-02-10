@@ -531,8 +531,8 @@
 
 /datum/chemical_reaction/emp_pulse/on_reaction(var/datum/reagents/holder, var/created_volume)
 	var/location = get_turf(holder.my_atom)
-	// 100 created volume = 4 heavy range & 7 light range. A few tiles smaller than traitor EMP grandes.
-	// 200 created volume = 8 heavy range & 14 light range. 4 tiles larger than traitor EMP grenades.
+	// 100 created volume = 4 heavy range & 7 light range. A few tiles smaller than heretic EMP grandes.
+	// 200 created volume = 8 heavy range & 14 light range. 4 tiles larger than heretic EMP grenades.
 	empulse(location, round(created_volume / 24), round(created_volume / 14), 1)
 	holder.clear_reagents()
 
@@ -1953,3 +1953,9 @@
 	result = /datum/reagent/nanoblood
 	required_reagents = list(/datum/reagent/dexalinp = 1, /datum/reagent/iron = 1, /datum/reagent/blood = 1)
 	result_amount = 3
+
+/datum/chemical_reaction/manure
+	name = "Manure"
+	result = /datum/reagent/toxin/fertilizer/poo
+	required_reagents = list(/datum/reagent/poo = 1, /datum/reagent/water = 1)
+	result_amount = 5

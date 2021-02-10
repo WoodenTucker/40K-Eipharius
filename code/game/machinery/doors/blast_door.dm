@@ -216,6 +216,7 @@
 	icon_state = "pdoor0"
 	begins_closed = FALSE
 
+
 // SUBTYPE: Shutters
 // Nicer looking, and also weaker, shutters. Found in kitchen and similar areas.
 /obj/machinery/door/blast/shutters
@@ -265,3 +266,67 @@
 /obj/machinery/door/blast/id_door/open
 	icon_state = "iddoor_open"
 	begins_closed = FALSE
+
+
+/obj/machinery/door/blast/bordergatel
+	icon = 'icons/obj/doors/gates1.dmi'
+	icon_state_open = "door0"
+	icon_state_opening = "doorc0"
+	icon_state_closed = "door1"
+	icon_state_closing = "doorc1"
+	icon_state = "door1"
+	name = "gate"
+	desc = "A large mechanical gate allowing or disallowing access to the outpost."
+	open_sound = 'sound/machines/shutters_open.ogg'
+	close_sound = 'sound/machines/shutters_close.ogg'
+	open_layer = ABOVE_WINDOW_LAYER
+	atmos_canpass = 1
+	block_air_zones = 0
+	opaque = 0
+	opacity = 0
+
+/obj/machinery/door/blast/bordergatel/closed
+	icon_state = "door0"
+	begins_closed = TRUE
+
+/obj/machinery/door/blast/bordergatec
+	icon = 'icons/obj/doors/gates2.dmi'
+	icon_state_open = "door0"
+	icon_state_opening = "doorc0"
+	icon_state_closed = "door1"
+	icon_state_closing = "doorc1"
+	icon_state = "door1"
+	name = "gate"
+	desc = "A large mechanical gate allowing or disallowing access to the outpost."
+	open_sound = 'sound/machines/shutters_open.ogg'
+	close_sound = 'sound/machines/shutters_close.ogg'
+	open_layer = ABOVE_WINDOW_LAYER
+	atmos_canpass = 1
+	block_air_zones = 0
+	opaque = 0
+	opacity = 0
+
+/obj/machinery/door/blast/bordergatec/closed
+	icon_state = "door0"
+	begins_closed = TRUE
+
+/obj/machinery/door/blast/bordergater
+	icon = 'icons/obj/doors/gates3.dmi'
+	icon_state_open = "door0"
+	icon_state_opening = "doorc0"
+	icon_state_closed = "door1"
+	icon_state_closing = "doorc1"
+	icon_state = "door1"
+	name = "gate"
+	desc = "A large mechanical gate allowing or disallowing access to the outpost."
+	open_sound = 'sound/machines/shutters_open.ogg'
+	close_sound = 'sound/machines/shutters_close.ogg'
+	open_layer = ABOVE_WINDOW_LAYER
+	atmos_canpass = 1
+	block_air_zones = 0
+	opaque = 0
+	opacity = 0
+
+/obj/machinery/door/blast/bordergater/closed
+	icon_state = "door0"
+	begins_closed = TRUE

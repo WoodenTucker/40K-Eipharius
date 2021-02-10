@@ -23,6 +23,7 @@
 	surgery_skill = 1
 	req_admin_notify = 1
 	open_when_dead = 0
+	latejoin_at_spawnpoints = 1
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -31,12 +32,17 @@
 		H.add_stats(40, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
 		H.say(";Brother [current_name] reporting for duty!")
 		H.get_idcard()?.access = get_all_accesses()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
 
+/datum/job/captain/equip(var/mob/living/carbon/human/H)
+	. = ..()
+	if(.)
+		H.implant_loyalty(src)
 
 
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
@@ -53,5 +59,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	suit_store = /obj/item/gun/projectile/ravenbolter
-	backpack_contents = list(/obj/item/ammo_magazine/bolt_rifle_magazine = 2,)
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR

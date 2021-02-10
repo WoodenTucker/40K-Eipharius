@@ -227,6 +227,14 @@
 /datum/reagent/toxin/fertilizer/robustharvest
 	name = "Robust Harvest"
 
+
+/datum/reagent/toxin/fertilizer/poo
+	name = "Manure"
+	description = "Made from whatever waste could be found "
+	taste_mult = 1
+	reagent_state = REAGENT_LIQUID
+	color = "#351e03"
+	strength = 0.5
 /datum/reagent/toxin/plantbgone
 	name = "Plant-B-Gone"
 	description = "A harmful toxic mixture to kill plantlife. Do not ingest!"
@@ -411,7 +419,7 @@
 /* Drugs */
 
 /datum/reagent/space_drugs
-	name = "Trench drugs"
+	name = "Obscura"
 	description = "An illegal chemical compound used as drug."
 	taste_description = "bitterness"
 	taste_mult = 0.4
@@ -419,6 +427,7 @@
 	color = "#60a584"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
+	reagent_addiction_strength = 40
 
 /datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)

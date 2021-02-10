@@ -24,6 +24,7 @@
 #define LANGUAGE_BLUE "Bluesnian"
 #define LANGUAGE_HIGH_GOTHIC "High Gothic"
 #define LANGUAGE_LOW_GOTHIC "Low Gothic"
+#define LANGUAGE_ORKY "Proppa Orky"
 #define LANGUAGE_ELDAR "Aeldari"
 #define LANGUAGE_MECHANICUS "Lingua-technis"
 #define LANGUAGE_NECRON "Necrontyr"

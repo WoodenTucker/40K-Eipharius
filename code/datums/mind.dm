@@ -24,7 +24,7 @@
 			new_mob.key = key
 
 		The Login proc will handle making a new mob for that mobtype (including setting up stuff like mind.name). Simple!
-		However if you want that mind to have any special properties like being a traitor etc you will have to do that
+		However if you want that mind to have any special properties like being a heretic etc you will have to do that
 		yourself.
 
 */
@@ -35,7 +35,7 @@
 	var/mob/living/current
 	var/mob/living/original	//TODO: remove.not used in any meaningful way ~Carn. First I'll need to tweak the way silicon-mobs handle minds.
 	var/active = 0
-
+	var/fates = list()
 	var/memory
 	var/list/known_connections //list of known (RNG) relations between people
 	var/gen_relations_info

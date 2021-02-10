@@ -22,3 +22,16 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "cane"
 	item_state = "stick"
+
+/obj/item/staff/ministorumstaff
+	name = "ministorum staff"
+	desc = "A staff with a golden handle carrying a book of holy litanies."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "ministorum_staff"
+	item_state = "ministorum_staff"
+	force = 3.0
+	throwforce = 5.0
+	throw_speed = 1
+	throw_range = 5
+	w_class = ITEM_SIZE_NORMAL
+	attack_verb = list("bludgeoned", "chastised", "disciplined")

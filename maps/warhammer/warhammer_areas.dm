@@ -509,6 +509,9 @@ Area basic template
 	name = "Drone Zone"
 	icon_state = "drone_fab"
 
+/area/cadiaoutpost/oa/engineering/solars
+	name = "Solars"
+	icon_state = "solars"
 //////////////////////////////////////
 //////////////Medical////////////////
 /////////////////////////////////////
@@ -631,7 +634,7 @@ Area basic template
 /area/cadiaoutpost/oa/service/chapel
 	name = "Chapel"
 	icon_state = "chapel"
-
+	music = 'sound/music/monastary.ogg'
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
 	icon_state = "chapeloffice"
@@ -659,6 +662,13 @@ Area basic template
 /area/cadiaoutpost/oa/service/lawoffice
 	name = "Law Office"
 	icon_state = "law"
+
+/area/cadiaoutpost/oa/service/inn
+	name = "Village Inn"
+	icon_state = "inn"
+	music = 'sound/music/inn.ogg'
+	dynamic_lighting = 1
+	requires_power = 0
 
 /////////////////////////////////////////
 //////////////////Supply////////////////
@@ -731,6 +741,14 @@ Area basic template
 	name = "Mining Breakroom"
 	icon_state = "mining_break"
 
+/area/cadiaoutpost/oa/farm
+	name = "Farm"
+	icon_state = "farm"
+
+/area/cadiaoutpost/oa/tradefloor
+	name = "Trade Floor"
+	icon_state = "tradefloor"
+	requires_power = 0
 ////////////////////////////////////////
 //////////Maintenance//////////////////
 //////////////////////////////////////
@@ -969,6 +987,11 @@ Area basic template
 	name = "Tcomm Storage"
 	icon_state = "tecomm_storage"
 
+/area/cadiaoutpost/oa/vault
+	name = "Vault"
+	icon_state = "vault"
+	requires_power = 0
+
 ///////////////////////////
 /////////Antagonists////////
 ////////////////////////////
@@ -1104,3 +1127,31 @@ Area basic template
 /area/cadiaoutpost/oa/shuttle/transport
 	name = "Transport Shuttle"
 	icon_state = "shuttle"
+
+//village
+/area/cadiaoutpost/oa/village
+	name = "Village"
+	icon_state = "village"
+	music = 'sound/music/village.ogg'
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/oa/gatehouse
+	name = "Gatehouse"
+	icon_state = "gatehouse"
+	requires_power = 0
+	dynamic_lighting = 1
+
+
+//forest
+/area/cadiaoutpost/oa/theforest
+	name = "The Forest"
+	icon_state = "forest"
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/oa/magistratumpost
+	name = "Forward Magistratum Post"
+	icon_state = "forwardpost"
+	requires_power = 0
+	dynamic_lighting = 1

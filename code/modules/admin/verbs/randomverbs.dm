@@ -466,7 +466,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	new_character.key = G_found.key
 
 	/*
-	The code below functions with the assumption that the mob is already a traitor if they have a special role.
+	The code below functions with the assumption that the mob is already a heretic if they have a special role.
 	So all it does is re-equip the mob with powers and/or items. Or not, if they have no special role.
 	If they don't have a mind, they obviously don't have a special role.
 	*/

@@ -118,6 +118,25 @@
 	item_state = "warfare_belt"
 	max_storage_space = 16
 
+/obj/item/storage/belt/medical/alchemist
+	name = "alchemist belt"
+	desc = "A leather belt with various pouches filled with herbs, salves and tonics."
+	icon_state = "alch_belt"
+	item_state = "alch_belt"
+
+/obj/item/storage/belt/stalker
+	name = "hunting pouch"
+	desc = "A bloodstained hunting pouch."
+	icon_state = "alch_belt"
+	item_state = "alch_belt"
+	can_hold = list(/obj/item/reagent_containers/food/snacks/bearmeat,
+	/obj/item/reagent_containers/food/snacks/meat/goat,
+	/obj/item/reagent_containers/food/snacks/meat/chicken,
+	/obj/item/reagent_containers/food/snacks/meat/human,
+	/obj/item/reagent_containers/food/snacks/xenomeat,
+	/obj/item/reagent_containers/food/snacks/meat,
+	)
+
 /obj/item/storage/belt/medical/full/New()
 	..()
 	new /obj/item/reagent_containers/hypospray/autoinjector/blood(src)

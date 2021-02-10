@@ -263,6 +263,14 @@
 	maxhealth = 300
 	health = 300.0 //Stronger doors for prison (regular window door health is 150)
 
+/obj/machinery/door/window/brigdoor/vault
+	name = "secure door"
+	icon = 'icons/obj/doors/windoor.dmi'
+	icon_state = "leftsecure"
+	base_state = "leftsecure"
+	req_access = list(access_treasury)
+	maxhealth = 500
+	health = 500.0 //lots of money back here, so very tough
 
 /obj/machinery/door/window/northleft
 	dir = NORTH
@@ -280,6 +288,12 @@
 	dir = NORTH
 	icon_state = "right"
 	base_state = "right"
+
+/obj/machinery/door/window/northright/bar
+	dir = NORTH
+	icon_state = "right"
+	base_state = "right"
+	req_access = list(access_bar)
 
 /obj/machinery/door/window/eastright
 	dir = EAST

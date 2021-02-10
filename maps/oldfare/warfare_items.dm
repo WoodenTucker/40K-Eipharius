@@ -463,7 +463,7 @@
 
 /obj/item/clothing/suit/prac_arpon
 	name = "practioner robes"
-	desc = "Worn by practioners and other surgoens."
+	desc = "Worn by practioners and other surgeons."
 	icon_state = "prac_robes"
 	item_state = "prac_robes"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS

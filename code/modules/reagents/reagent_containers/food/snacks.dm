@@ -682,6 +682,19 @@
 		reagents.add_reagent(/datum/reagent/hyperzine, 5)
 		src.bitesize = 3
 
+/obj/item/reagent_containers/food/snacks/shaframeat
+	name = "shafra meat"
+	desc = "A surprisingly tasty cut of lean meat"
+	icon_state = "bearmeat"
+	filling_color = "#08acf8cc"
+	center_of_mass = "x=16;y=10"
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 12)
+		reagents.add_reagent(/datum/reagent/hyperzine, 5)
+		src.bitesize = 3
+
 /obj/item/reagent_containers/food/snacks/xenomeat
 	name = "meat"
 	desc = "A slab of green meat. Smells like acid."
@@ -738,7 +751,7 @@
 
 /obj/item/reagent_containers/food/snacks/donkpocket
 	name = "Donk-pocket"
-	desc = "The food of choice for the seasoned traitor."
+	desc = "The food of choice for the seasoned heretic."
 	icon_state = "donkpocket"
 	filling_color = "#dedeab"
 	center_of_mass = "x=16;y=10"

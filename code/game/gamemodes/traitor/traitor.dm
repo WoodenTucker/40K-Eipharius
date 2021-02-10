@@ -1,6 +1,6 @@
-/datum/game_mode/traitor
-	name = "traitor"
-	round_description = "There is a foreign agent or traitor onboard. Do not let the traitor succeed!"
+/datum/game_mode/heretic
+	name = "heretic"
+	round_description = "There is one or more heretics on the planet, do not let them succeed!"
 	extended_round_description = "The Company's monopolistic control over the phoron supplies of Nyx has marked the \
 		station to be a highly valuable target for many competing organizations and individuals. The varied pasts \
 		and experiences of your coworkers have left them susceptible to the vices and temptations of humanity. \
@@ -10,7 +10,7 @@
 		secrets and deceptions. Every corner is a mystery. Every conversation is a lie. You will be facing your \
 		friends and family as they try to use your emotions and trust to their advantage, leaving you with nothing \
 		but the painful reminder that space is cruel and unforgiving."
-	config_tag = "traitor"
+	config_tag = "heretic"
 	required_players = 0
 	required_enemies = 1
 	antag_tags = list(MODE_TRAITOR)
