@@ -32,6 +32,8 @@
 	id_type = /obj/item/card/id/engineering
 	pda_type = /obj/item/device/pda/engineering
 	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+)
 
 /decl/hierarchy/outfit/job/engineering/engineer/void
 	name = OUTFIT_JOB_NAME("Engineer - Voidsuit")

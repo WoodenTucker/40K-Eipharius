@@ -21,6 +21,7 @@
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
 	head = /obj/item/clothing/head/hospitallerhelm
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 /decl/hierarchy/outfit/job/medical/doctor
 	name = OUTFIT_JOB_NAME("Sister Hospitellar")
 	uniform = /obj/item/clothing/under/rank/medical
@@ -33,6 +34,7 @@
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical
 	head = /obj/item/clothing/head/hospitallerhelm
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 /decl/hierarchy/outfit/job/medical/doctor/emergency_physician
 	name = OUTFIT_JOB_NAME("Emergency physician")
 	suit = /obj/item/clothing/suit/storage/toggle/fr_jacket
@@ -78,6 +80,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = null
 	r_ear = null
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 
 /decl/hierarchy/outfit/job/medical/chemist/New()
@@ -96,6 +99,7 @@
 	l_ear = null
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 /decl/hierarchy/outfit/job/medical/psychiatrist
 	name = OUTFIT_JOB_NAME("Psychiatrist")
@@ -121,7 +125,9 @@
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = null
 	r_ear = null
-	backpack_contents = list(/obj/item/cell/lasgun = 2)
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 	suit_store = /obj/item/gun/energy/las/lasgun
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 

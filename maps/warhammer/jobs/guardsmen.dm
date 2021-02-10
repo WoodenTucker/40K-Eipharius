@@ -209,7 +209,9 @@ Begin Warhammer loadouts
 	r_ear = null
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/device/flashlight/lantern
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -228,7 +230,12 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/ammo_magazine/bolt_pistol_magazine = 2, /obj/item/grenade/smokebomb = 1, /obj/item/device/flashlight/lantern)
+	backpack_contents = list(
+	 /obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	 /obj/item/grenade/smokebomb = 1,
+	 /obj/item/device/flashlight/lantern = 1,
+	 /obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/sergeant
@@ -247,7 +254,8 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	backpack_contents = list(
 		/obj/item/ammo_magazine/box/a556/mg08 = 2,
-		/obj/item/device/flashlight/lantern,
+		/obj/item/device/flashlight/lantern = 1,
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -270,6 +278,7 @@ Begin Warhammer loadouts
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/handcuffs = 2,
 	/obj/item/storage/box/beanbags = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
