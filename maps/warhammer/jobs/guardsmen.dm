@@ -205,6 +205,8 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_hand = /obj/item/gun/energy/las/lasgun
+	l_ear = null
+	r_ear = null
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/device/flashlight/lantern
