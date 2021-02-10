@@ -987,6 +987,10 @@ Area basic template
 	name = "Tcomm Storage"
 	icon_state = "tecomm_storage"
 
+/area/cadiaoutpost/oa/vault
+	name = "Vault"
+	icon_state = "vault"
+
 ///////////////////////////
 /////////Antagonists////////
 ////////////////////////////

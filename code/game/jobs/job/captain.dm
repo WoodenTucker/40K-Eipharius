@@ -62,7 +62,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.say(";Seneschal on deck! Direct any issues not pertinent to our Rogue Trader towards me!")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
 
 
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
