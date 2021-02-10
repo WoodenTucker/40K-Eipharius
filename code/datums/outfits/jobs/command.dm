@@ -15,8 +15,10 @@
 	/obj/item/storage/box/ids = 1,
 	/obj/item/gun/projectile/bolter_pistol = 1,
 	/obj/item/stack/thrones/twenty = 1,
+	/obj/item/stack/thrones2/twenty = 1,
+	/obj/item/stack/thrones/twenty = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-
+f
 )
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
@@ -46,4 +48,7 @@
 	backpack_contents = list(/obj/item/storage/box/ids = 1,
 	/obj/item/ammo_magazine/c45m = 2,
 	 /obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/stack/thrones/twenty = 1,
 	 )
