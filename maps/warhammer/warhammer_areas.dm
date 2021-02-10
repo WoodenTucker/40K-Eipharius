@@ -990,6 +990,7 @@ Area basic template
 /area/cadiaoutpost/oa/vault
 	name = "Vault"
 	icon_state = "vault"
+	requires_power = 0
 
 ///////////////////////////
 /////////Antagonists////////

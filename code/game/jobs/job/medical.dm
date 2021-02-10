@@ -58,8 +58,8 @@
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels,)
 //	alt_titles = list(
 //		"Surgeon" = /decl/hierarchy/outfit/job/medical/doctor/surgeon,
 //		"Emergency Physician" = /decl/hierarchy/outfit/job/medical/doctor/emergency_physician,
@@ -99,8 +99,8 @@
 	selection_color = "#633d63"
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
-	minimal_access = list(access_medical, access_medical_equip, access_chemistry)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
+	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
 	//alt_titles = list("Pharmacist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 
@@ -128,8 +128,8 @@
 	selection_color = "#633d63"
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research)
-	minimal_access = list(access_medical, access_morgue, access_genetics, access_research)
+	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels)
+	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 	equip(var/mob/living/carbon/human/H)
@@ -172,7 +172,7 @@
 	minimal_player_age = 4
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 //	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 

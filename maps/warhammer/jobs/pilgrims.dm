@@ -6,8 +6,6 @@
 	spawn_positions = 10
 	supervisors = "The Holy Inquisition"
 	selection_color = "#515151"
-	access = list(access_hydroponics,)
-	minimal_access = list(access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 
@@ -162,8 +160,8 @@ Pilgrim Fate System
 	open_when_dead = 1
 	supervisors = "Money"
 	selection_color = "#515151"
-	access = list(access_hydroponics, access_bar, access_kitchen)
-	minimal_access = list(access_bar) //TODO, figure out access stuff for them
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 
@@ -186,6 +184,7 @@ Pilgrim Fate System
 	r_ear = null
 	id_type = null
 
+
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")
 	uniform = /obj/item/clothing/under/syndicate
@@ -203,3 +202,5 @@ Pilgrim Fate System
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/storage/box/beanbags = 1,
 )
+
+

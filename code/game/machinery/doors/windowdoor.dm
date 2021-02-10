@@ -281,6 +281,12 @@
 	icon_state = "right"
 	base_state = "right"
 
+/obj/machinery/door/window/northright/bar
+	dir = NORTH
+	icon_state = "right"
+	base_state = "right"
+	req_access = list(access_bar)
+
 /obj/machinery/door/window/eastright
 	dir = EAST
 	icon_state = "right"

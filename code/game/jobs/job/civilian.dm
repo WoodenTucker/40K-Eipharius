@@ -41,7 +41,7 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Seneschal, the Commissar"
 	selection_color = "#515151"
-	access = list(access_hydroponics, access_bar, access_kitchen)
+	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
 //	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
@@ -66,8 +66,8 @@
 	supervisors = "the Seneschal"
 	selection_color = "#515151"
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_hydroponics, access_bar, access_kitchen)
-	minimal_access = list(access_hydroponics)
+	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels)
+	minimal_access = list(access_hydroponics, access_maint_tunnels, access_kitchen)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
 
@@ -138,8 +138,8 @@
 	social_class = SOCIAL_CLASS_MIN
 	supervisors = "Every Imperial Citizen"
 	selection_color = "#515151"
-	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
-	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_sec_doors, access_medical)
+	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
+	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 
