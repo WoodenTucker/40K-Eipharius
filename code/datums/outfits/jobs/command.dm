@@ -18,7 +18,6 @@
 	/obj/item/stack/thrones2/twenty = 1,
 	/obj/item/stack/thrones/twenty = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-f
 )
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
