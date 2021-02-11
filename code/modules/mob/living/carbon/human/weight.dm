@@ -27,7 +27,7 @@
 //Updates all weight variables//
 
 /mob/living/proc/updateweight()
-	baseload = 10 + round(STAT_LEVEL(str) * STAT_LEVEL(end) / 4)
+	baseload = 25 + round(STAT_LEVEL(str) * STAT_LEVEL(end) / 4)
 	baseweight = (STAT_LEVEL(str) + STAT_LEVEL(end)) * 4
 	weight = baseweight + check_weight()
 	loads = check_weight()
