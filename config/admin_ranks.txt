@@ -35,7 +35,7 @@ TrialModerator  +MOD
 Mentor		+MENTOR  
 TrialAdmin      +@ +ADMIN +STEALTH +SPAWN +REJUV +VAREDIT +BAN +SERVER
 GameAdmin       +@ +DEBUG +FUN +POSSESS +BUILDMODE +SOUND +PERMISSIONS
-SeniorAdmin     +@
+SeniorAdmin     +EVERYTHING
 
 HeadDeveloper   +EVERYTHING
 HeadAdmin       +EVERYTHING

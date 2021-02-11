@@ -1254,7 +1254,7 @@
 "yf" = (/obj/effect/floor_decal/turf/bar3,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/bar)
 "yg" = (/obj/effect/floor_decal/turf/bar3,/obj/effect/floor_decal/turf/bar2,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/bar)
 "yh" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/floor_decal/turf/bar3,/obj/effect/floor_decal/turf/bar2,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/bar)
-"yi" = (/obj/structure/closet/emcloset,/obj/effect/floor_decal/turf/bar3,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/bar)
+"yi" = (/obj/structure/closet/emcloset,/obj/effect/floor_decal/turf/bar3,/obj/effect/floor_decal/turf/bar2,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/bar)
 "yj" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/floor_decal/turf/bar3,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/bar)
 "yk" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/decal/cleanable/dirt{icon_state = "thermite"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/arrivals)
 "yl" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/arrivals)
