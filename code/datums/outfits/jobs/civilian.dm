@@ -29,7 +29,12 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null
 	r_ear = null
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+		)
 
 /decl/hierarchy/outfit/job/service/gardener
 	name = OUTFIT_JOB_NAME("Farmer")
@@ -49,7 +54,11 @@
 	/obj/item/seeds/wheatseed = 1,
 	/obj/item/seeds/cornseed = 1,
 	/obj/item/seeds/random = 3,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+
 	)
 
 /decl/hierarchy/outfit/job/service/gardener/New()
@@ -88,7 +97,11 @@
 	pda_type = /obj/item/device/pda/lawyer
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	head = /obj/item/clothing/head/cerberus
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1)
 /decl/hierarchy/outfit/job/chaplain
 	name = OUTFIT_JOB_NAME("Ministorum Priest")
 	uniform = /obj/item/clothing/under/rank/chaplain
@@ -102,7 +115,12 @@
 	suit = /obj/item/clothing/suit/ministorumrobes
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = /obj/item/melee/whip/censer
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+		)
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor")
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -114,4 +132,9 @@
 	id_type = /obj/item/card/id/inquisition/principal_agent
 	pda_type = /obj/item/device/pda/lawyer
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/stack/thrones3/twenty = 1
+		)

@@ -5,7 +5,7 @@
 	suit = /obj/item/clothing/suit/armor/rtcloak
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/rank/roguetrader
-	belt = /obj/item/storage/bag/largepurse
+	belt = /obj/item/gun/projectile/bolter_pistol
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	shoes = /obj/item/clothing/shoes/commandboots
@@ -13,10 +13,9 @@
 	pda_type = /obj/item/device/pda/captain
 	backpack_contents = list(
 	/obj/item/storage/box/ids = 1,
-	/obj/item/gun/projectile/bolter_pistol = 1,
 	/obj/item/stack/thrones/twenty = 1,
 	/obj/item/stack/thrones2/twenty = 1,
-	/obj/item/stack/thrones/twenty = 1,
+	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 )
 
@@ -49,5 +48,5 @@
 	 /obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
-	/obj/item/stack/thrones/twenty = 1,
+	/obj/item/stack/thrones3/twenty = 1,
 	 )

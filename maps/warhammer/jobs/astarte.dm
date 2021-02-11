@@ -61,5 +61,10 @@
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/five = 1,
+
+	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
