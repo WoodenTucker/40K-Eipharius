@@ -53,3 +53,6 @@
 		F.add_fingerprint(usr)
 		use(2)
 	return
+
+
+	//TODO make some sort of circular saw or woodworking stuff that turns logs into planks, will then activate the construction menu of wood.
