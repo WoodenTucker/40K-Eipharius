@@ -323,6 +323,7 @@ Area basic template
 /area/cadiaoutpost/gma/inquisitoracolyte
 	name = "Inquisitorial Acolyte Vessel ''Simiel''"
 	icon_state = "red"
+	requires_power = 0 //is a separate ship presumably has its own power source
 
 //Outpost Areas
 /area/cadiaoutpost/oa/arrivals
