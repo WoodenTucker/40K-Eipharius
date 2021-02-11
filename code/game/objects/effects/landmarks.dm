@@ -353,6 +353,12 @@ Template:
 		new /mob/living/simple_animal/hostile/shafra(src.loc)
 	delete_me = 1
 
+/obj/effect/landmark/animal/rngdemonspawner/New()
+	if (prob(40))
+		new /mob/living/simple_animal/hostile/smalldemon(src.loc)
+	delete_me = 1
+
+
 /obj/effect/landmark/animal/rngretaliatespawner/New()
 	if (prob(50))
 		new /mob/living/simple_animal/hostile/retaliate/rat(src.loc)
