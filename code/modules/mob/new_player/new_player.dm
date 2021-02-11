@@ -642,14 +642,14 @@ mob/new_player/MayRespawn()
 	show_new_information()
 
 /mob/new_player/proc/show_new_information()
-	var/dat = {"<h2>IS12 Warfare</h2>
-Hello! It appears you are new here! Thanks for joining IS12 Warfare. Here is some important information to get you started!
+	var/dat = {"<h2>Cadia Station</h2>
+Hello! It appears you are new here! Thanks for joining Cadia Station. Here is some important information to get you started!
 <h3>Discord Link</h3>
-<font size='4'><a href=\"https://discord.gg/FVRctMD\">Discord</a></font>
+<font size='4'><a href=\"https://discord.gg/Avp9z7r\">Discord</a></font>
 <h3>Wiki Link</h3>
 <font size='4'><a href=\"http://is12wiki.xyz/index.php/Main_Page\">Wiki</a></font>
 <h3>Server Summary</h3>
-IS12 Warfare is a WW1-esque team deathmatch game with visual influences from Gone With The Blastwave. You're either red, or blue, and your objective is to either deplete all the other sides reinforcements, or take over their trenches and activate the point of no return. It plays a bit like how rush plays from the battlefield series, if you've played that before. While it takes some visual influence from Gone With The Blastwave it is not related to it in any other way. This is not a fan game, it does not take place in the same universe as the comic, it is not affiliated with the comic in any way.
+Cadia station is a Warhammer 40k SS13 server running a modified version of the IS12 codebase. Set on a recently settled planet. You serve under a Rogue Trader who goes about ensuring Imperial expansion and growing his own riches. North of the outpost is a village populated by random Imperial citizens, runaways and pilgrims from the sector. Heavy role-play is expected.
 <h3>Some Notes</h3>
 Just as a general note, chat bar commands in game do not work. You will have to use the panels on the side if you wish to use any commands. Typing in the command bar will use OOC if you are in the lobby, and it will use say automatically if you're in game.
 Controls are ingame under the \"view controls\" button in OOC.

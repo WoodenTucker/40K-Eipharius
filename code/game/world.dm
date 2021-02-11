@@ -599,7 +599,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	//Pick a random tagline.
 	s += "<b>[warfare_tagline]</b>"
 	s += " ("
-	s += "<a href=\"https://discord.gg/FVRctMD\">" //This should be a config but it's not.
+	s += "<a href=\"https://discord.gg/Avp9z7r\">" //This should be a config but it's not.
 	s += "Discord"
 	s += "</a>"
 	s += ")"
