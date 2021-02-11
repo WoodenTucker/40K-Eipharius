@@ -459,6 +459,11 @@ Area basic template
 	name = "Meeting Room"
 	icon_state = "blue"
 
+/area/cadiaoutpost/oa/caves
+	name = "Caves"
+	icon_state = "cave"
+	music = 'sound/music/caves.ogg'
+
 /////////////////////////////////////////
 ////////////////Engineering/////////////
 ////////////////////////////////////////
