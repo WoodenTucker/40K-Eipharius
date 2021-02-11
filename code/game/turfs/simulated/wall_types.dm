@@ -110,6 +110,8 @@
 	walltype = "stone"
 
 /turf/simulated/wall/wood
+	var/health = 10
+	var/destroyed = 0
 	icon_state = "wood0"
 	walltype = "wood"
 
