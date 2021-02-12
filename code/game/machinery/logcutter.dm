@@ -1,7 +1,7 @@
-
 /obj/machinery/logcutter
 	name = "Log-to-Plank Machine"
 	icon = 'icons/obj/machines/logcutter.dmi'
+	desc = "A machine that transforms logs into planks! Ensure you feed them one at a time!"
 	icon_state = "lc_loaded"
 	layer = BELOW_OBJ_LAYER
 	density = 1

@@ -13,13 +13,13 @@
 /obj/item/stack/logs/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/material/sword/combat_knife|| istype(W.sharp)|| istype(W.edge)))
 		(do_after(user,30,src))
-		new /obj/item/torch(get_turf(src))
+		new /obj/item/torch/self_lit(get_turf(src))
 		to_chat(user, "You carve the log into a usable torch.")
 		qdel(src)
 	else
 		..()
 
-
+/*
 /obj/item/stack/logs/attack_self(mob/user as mob)
 
 	src.add_fingerprint(user)
@@ -53,6 +53,4 @@
 		F.add_fingerprint(usr)
 		use(2)
 	return
-
-
-	//TODO make some sort of circular saw or woodworking stuff that turns logs into planks, will then activate the construction menu of wood.
+*/
