@@ -536,6 +536,7 @@
 #include "code\game\machinery\igniter.dm"
 #include "code\game\machinery\jukebox.dm"
 #include "code\game\machinery\lightswitch.dm"
+#include "code\game\machinery\logcutter.dm"
 #include "code\game\machinery\machinery.dm"
 #include "code\game\machinery\magnet.dm"
 #include "code\game\machinery\mass_driver.dm"
