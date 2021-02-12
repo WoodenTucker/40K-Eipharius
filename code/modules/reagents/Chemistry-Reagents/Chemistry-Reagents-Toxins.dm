@@ -355,6 +355,7 @@
 	color = "#009ca8"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
+	scannable = 1
 
 /datum/reagent/soporific/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
