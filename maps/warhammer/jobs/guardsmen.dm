@@ -211,6 +211,9 @@ Begin Warhammer loadouts
 	/obj/item/cell/lasgun = 2,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
 
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -235,6 +238,9 @@ Begin Warhammer loadouts
 	 /obj/item/grenade/smokebomb = 1,
 	 /obj/item/device/flashlight/lantern = 1,
 	 /obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/five = 1,
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -255,7 +261,10 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 		/obj/item/ammo_magazine/box/a556/mg08 = 2,
 		/obj/item/device/flashlight/lantern = 1,
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+		/obj/item/stack/thrones = 1,
+		/obj/item/stack/thrones2 = 1,
+		/obj/item/stack/thrones3/five = 1,
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -279,6 +288,9 @@ Begin Warhammer loadouts
 	/obj/item/handcuffs = 2,
 	/obj/item/storage/box/beanbags = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR

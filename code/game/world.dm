@@ -1,6 +1,6 @@
-/var/server_name = "Unofficial Interstation12"
+/var/server_name = "Cadia Station - Warhammer 40k"
 /var/game_id = null
-/var/list/warfare_taglines = list("WW1 Scifi Suffering Simulator", "Post Apoc WW1 Emulator", "WW1 But Terrible", "Pain, Suffering, and Flesh", "Your Heart Has Stopped", "Trench Pizza Simulator", "Warcrime Simulator")// list("It's Getting Cold Out There", "New Guns", "New Classes", "Cold", "Winter", "Frozen Solid", "Frozen Trench Pizza", "Warcrime Simulator", "Your Heart Has Stopped", )
+/var/list/warfare_taglines = list( "BLOOD FOR THE BLOOD GOD",  "The Emperor Protects","'ERE WE GO BOYZ","Only in death does duty end","Hatred is the Emperor's greatest gift to humanity", "For the Greater Good")// list("It's Getting Cold Out There", "New Guns", "New Classes", "Cold", "Winter", "Frozen Solid", "Frozen Trench Pizza", "Warcrime Simulator", "Your Heart Has Stopped", )
 /var/warfare_tagline = null
 /hook/global_init/proc/generate_gameid()
 	if(game_id != null)
@@ -9,23 +9,19 @@
 
 	//Thooloo did this. I have no idea why he did.
 	var/list/gods = list(
-	"Aker","Amun","Anhur",
-	"Aten","Atum","Bennu",
-	"Geb","Hapi","Horus",
-	"Khepri","Khnum","Khonsu",
-	"Maahes","Montu","Nefertum",
-	"Nemty","Neper","Osiris",
-	"Ptah","Ra","Set",
-	"Shu","Sobek","Sopdu",
-	"Thoth","Wadj-wer","Amunet",
-	"Anuket","Bastet","Bat",
-	"Hathor","Heqet","Hesat",
-	"Imentet","Isis","Maat",
-	"Menhit","Mut","Neith",
-	"Nekhbet","Nephthys","Nepit",
-	"Nut","Pakhet","Renenutet",
-	"Satet","Sekhmet","Tefnut",
-	"Wadjet","Wosret"
+	"The Emperor",
+	"Khaine",
+	"Khorne",
+	"Nurgle",
+	"Slaanesh",
+	"Tzeentch",
+	"C'tan",
+	"Malice",
+	"Ans'l",
+	"Mo'rcck",
+	"Phraz-Etar",
+	"Gork",
+	"Mork",
 	)
 
 	var/timestamp = world.timeofday % 500
@@ -603,7 +599,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	//Pick a random tagline.
 	s += "<b>[warfare_tagline]</b>"
 	s += " ("
-	s += "<a href=\"https://discord.gg/FVRctMD\">" //This should be a config but it's not.
+	s += "<a href=\"https://discord.gg/Avp9z7r\">" //This should be a config but it's not.
 	s += "Discord"
 	s += "</a>"
 	s += ")"

@@ -19,6 +19,9 @@
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = /obj/item/device/pda/heads/ce
 	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(/obj/item/stack/thrones/five = 1,
+		/obj/item/stack/thrones2/five = 1,
+		/obj/item/stack/thrones3/five = 1,)
 
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Tech Priest")
@@ -32,7 +35,11 @@
 	id_type = /obj/item/card/id/engineering
 	pda_type = /obj/item/device/pda/engineering
 	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	backpack_contents = list(
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+		/obj/item/stack/thrones = 1,
+		/obj/item/stack/thrones2 = 1,
+		/obj/item/stack/thrones3/five = 1,
 )
 
 /decl/hierarchy/outfit/job/engineering/engineer/void

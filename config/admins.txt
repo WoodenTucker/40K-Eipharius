@@ -6,7 +6,5 @@
 ######################################################################
 
 Daelso - Host
-Sancronis - Host
-ARefrigerator - Host
-Mwhite11 - Host
-Apple5382 - Host
+Apple5382 - SeniorAdmin
+Conzie - SeniorAdmin

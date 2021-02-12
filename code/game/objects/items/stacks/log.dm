@@ -9,11 +9,47 @@
     throwforce = 3.0
     max_amount = 10
 
+
 /obj/item/stack/logs/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/material/sword/combat_knife))
+	if(istype(W,/obj/item/material/sword/combat_knife|| istype(W.sharp)|| istype(W.edge)))
 		(do_after(user,30,src))
-		new /obj/item/torch(get_turf(src))
+		new /obj/item/torch/self_lit(get_turf(src))
 		to_chat(user, "You carve the log into a usable torch.")
 		qdel(src)
 	else
 		..()
+
+
+/obj/item/stack/logs/attack_self(mob/user as mob)
+
+	src.add_fingerprint(user)
+
+	if(!istype(user.loc,/turf)) return 0
+
+	if (locate(/obj/item/campfire, usr.loc))
+		for(var/obj/item/campfire/G in usr.loc)
+
+			if (G.destroyed)
+				G.health = 50
+				G.set_density(1)
+				G.destroyed = 0
+				G.icon_state = "cauldron0"
+				use(1)
+			else
+				return 1
+
+	else if(!in_use)
+		if(get_amount() < 2)
+			to_chat(user, "<span class='warning'>You need at least two logs to do this.</span>")
+			return
+		to_chat(usr, "<span class='notice'>Making a campfire...</span>")
+		in_use = 1
+		if (!do_after(usr, 10))
+			in_use = 0
+			return
+		var/obj/item/campfire/F = new /obj/item/campfire ( usr.loc )
+		to_chat(usr, "<span class='notice'>You build a campfire!</span>")
+		in_use = 0
+		F.add_fingerprint(usr)
+		use(2)
+	return

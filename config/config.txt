@@ -185,7 +185,7 @@ GUEST_BAN
 
 ## Bans from the server anyone whose ckey is not in data/ckey_whitelist.txt the actual message is stored in /modules/admin/IsBanned.dm
 ## one ckey per line, in lowercase.
-USECKEYWHITELIST
+#USECKEYWHITELIST
 
 ## set a server location for world reboot. Don't include the byond://, just give the address and port.
 #SERVER server.net:port
@@ -201,10 +201,10 @@ USECKEYWHITELIST
 # WIKIURL http://example.com
 
 ## GitHub address
-# GITHUBURL https://github.com/example-user/example-repository
+ GITHUBURL https://github.com/Daelso/Warhammer-IS12
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
-# BANAPPEALS http://example.com
+ BANAPPEALS https://discord.gg/Avp9z7r
 
 ## In-game features
 ## spawns a spellbook which gives object-type spells instead of verb-type spells for the wizard
