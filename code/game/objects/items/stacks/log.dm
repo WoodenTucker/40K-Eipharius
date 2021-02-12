@@ -19,21 +19,21 @@
 	else
 		..()
 
-/*
+
 /obj/item/stack/logs/attack_self(mob/user as mob)
 
 	src.add_fingerprint(user)
 
 	if(!istype(user.loc,/turf)) return 0
 
-	if (locate(/turf/simulated/wall/wood, usr.loc))
-		for(var/turf/simulated/wall/wood/G in usr.loc)
+	if (locate(/obj/item/campfire, usr.loc))
+		for(var/obj/item/campfire/G in usr.loc)
 
 			if (G.destroyed)
 				G.health = 50
 				G.set_density(1)
 				G.destroyed = 0
-				G.icon_state = "wood0"
+				G.icon_state = "cauldron0"
 				use(1)
 			else
 				return 1
@@ -42,15 +42,14 @@
 		if(get_amount() < 2)
 			to_chat(user, "<span class='warning'>You need at least two logs to do this.</span>")
 			return
-		to_chat(usr, "<span class='notice'>Constructing wall...</span>")
+		to_chat(usr, "<span class='notice'>Making a campfire...</span>")
 		in_use = 1
 		if (!do_after(usr, 10))
 			in_use = 0
 			return
-		var/turf/simulated/wall/wood/F = new /turf/simulated/wall/wood ( usr.loc )
-		to_chat(usr, "<span class='notice'>You construct a wall</span>")
+		var/obj/item/campfire/F = new /obj/item/campfire ( usr.loc )
+		to_chat(usr, "<span class='notice'>You build a campfire!</span>")
 		in_use = 0
 		F.add_fingerprint(usr)
 		use(2)
 	return
-*/

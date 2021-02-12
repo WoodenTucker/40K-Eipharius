@@ -31,6 +31,12 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	else if(istype(A,/obj/item/torch))
 		var/obj/item/torch/T = A
 		return (T.lit)
+	else if(istype(A,/obj/item/pyre))
+		var/obj/item/pyre/T = A
+		return (T.lit)
+	else if(istype(A,/obj/item/campfire))
+		var/obj/item/campfire/T = A
+		return (T.lit)
 	else if(istype(A,/obj/item/warflare))
 		var/obj/item/warflare/W = A
 		return (W.on)
