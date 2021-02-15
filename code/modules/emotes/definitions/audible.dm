@@ -407,4 +407,17 @@
 /decl/emote/audible/emperor_protects
 	key = "emperor"
 	emote_message_3p = "USER praises the Emperor."
-	emote_sound = 'sound/voice/emotes/emperorprotects.ogg'
+
+/decl/emote/audible/emperor_protects/do_emote(var/mob/living/carbon/human/user)
+	var/emotesound = null
+	if(user.isMonkey())
+		return
+
+	else if(user.gender == MALE)
+		emotesound = 'sound/voice/emotes/emperorprotects.ogg'
+
+	else
+		emotesound = 'sound/voice/emotes/female_emp.ogg'
+
+	if(emotesound)
+		playsound(user, emotesound, 50, 0, 1)
