@@ -15,14 +15,14 @@
 		if(0)
 			if(istype(M.l_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.l_hand)
-				to_chat(M, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God.")
-				playsound(src.loc, 'sound/effects/khorne.ogg')
+				to_chat(M, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God. You are not yet visibly corrupted by avoid detailed investigation.")
+				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				M.update_inv_l_hand()
 				M.rage++
 			else if(istype(M.r_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.r_hand)
-				to_chat(M, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God.")
-				playsound(src.loc, 'sound/effects/khorne.ogg')
+				to_chat(M, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God. You are not yet visibly corrupted by avoid detailed investigation.")
+				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				M.update_inv_r_hand()
 				M.rage++
 			else
