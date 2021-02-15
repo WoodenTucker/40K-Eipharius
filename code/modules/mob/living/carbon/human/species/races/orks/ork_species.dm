@@ -55,6 +55,12 @@
 	h_style = "Bald"
 	max_waaagh = 300
 	waaagh = max_waaagh
+	var/dice = rand(1, 2)
+	switch(dice)
+		if(1)
+			playsound(src, 'sound/voice/ork/gretspawn1.ogg', 50)
+		if(2)
+			playsound(src, 'sound/voice/ork/gretspawn2.ogg', 50)
 	..(new_loc, new_species)
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
@@ -63,6 +69,7 @@
 	max_waaagh = 300
 	waaagh = max_waaagh
 	new_species = SPECIES_ORK_NOB
+	playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 	..(new_loc, SPECIES_ORK_NOB)
 
 /mob/living/carbon/human/ork/mek/New(var/new_loc)
@@ -70,6 +77,7 @@
 	max_waaagh = 300
 	waaagh = max_waaagh
 	new_species = SPECIES_ORK_MEK
+	playsound(src, 'sound/voice/ork/workwork.ogg', 50)
 	..(new_loc, SPECIES_ORK_MEK)
 
 /mob/living/carbon/human/ork/boss/New(var/new_loc)
@@ -79,4 +87,5 @@
 	warfare_faction = ORKZ
 	waaagh = max_waaagh
 	new_species = SPECIES_ORK_BOSS
+	playsound(src, 'sound/voice/ork/warboss.ogg', 50)
 	..(new_loc, SPECIES_ORK_BOSS)

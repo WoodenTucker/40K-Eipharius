@@ -41,11 +41,12 @@
 	set desc = "Scream your lungs out to heal yourself, no one knows how it works but it does."
 	var/cooldown = FALSE
 	if(waaagh >= 100 && !cooldown)
+		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
+		playsound(src, 'sound/voice/ork/orkscream.ogg', 50, 5)
 		adjustBruteLoss(-50)
 		adjustFireLoss(-50)
 		adjustOxyLoss(-50)
 		adjustToxLoss(-50)
-		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
 		cooldown = TRUE
 		spawn(50)
 			cooldown = FALSE
@@ -65,6 +66,10 @@
 			new /obj/item/stack/material/scrap/fifty(loc)
 			to_chat(src, "<span class='notice'> You found scrap! </span>")
 			waaagh -= 150
+			if(istype(src, /mob/living/carbon/human/ork/mek))
+				playsound(src, 'sound/voice/ork/orknobscav.ogg', 50)
+				return
+			playsound(src, 'sound/voice/ork/gretpilo.ogg', 50)
 		else
 			to_chat(src, "<span class='notice'> You stop searching for resources. </span>")
 	else
@@ -79,7 +84,10 @@
 	var/cooldown = FALSE
 	if(waaagh >= 300 && !cooldown)
 		visible_message("<span class='warning'> [src] screams loudly! Inspiring other orks and making them slightly better in combat.</span>", "<span class='notice'>You scream to inspire nearby orks and scare your enemies.</span>")
+		playsound(src, 'sound/voice/ork/orkscream.ogg', 100, 5)
 		for(var/mob/living/carbon/human/ork/O in oview(7))
+			if(!O.stat)
+				playsound(O, 'sound/voice/ork/orkscream.ogg', 50, 5)
 			O.inspired = TRUE
 			spawn(150)
 				O.inspired = FALSE
