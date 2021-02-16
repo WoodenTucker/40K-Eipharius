@@ -46,14 +46,14 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","Bounty Hunter","Penitent","Sherpa","Musician","Disgraced Medicae","Miner","Stalker","Scum") //lists all possible fates
-	/*
+	var/fates = list() //lists all possible fates
+
 	fates += pick("Merchant","Bounty Hunter","Penitent",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Miner","Stalker","Scum") //adds a fate randomly to essentially give rng pick
 
 	M.mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
-	*/
+
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
 
