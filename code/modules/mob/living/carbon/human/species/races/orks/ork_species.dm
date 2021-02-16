@@ -52,9 +52,14 @@
 
 
 /mob/living/carbon/human/ork/New(var/new_loc)
+	var/ork_name = "ork"
+
+	name = "[ork_name]"
+	real_name = "[ork_name]"
 	h_style = "Bald"
 	max_waaagh = 300
 	waaagh = max_waaagh
+	warfare_faction = ORKZ
 	var/dice = rand(1, 2)
 	switch(dice)
 		if(1)
@@ -64,23 +69,37 @@
 	..(new_loc, new_species)
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
+	var/ork_name = "nob"
+
+	name = "[ork_name]"
+	real_name = "[ork_name]"
 	h_style = "Bald"
 	size_multiplier = 1.2
 	max_waaagh = 300
 	waaagh = max_waaagh
+	warfare_faction = ORKZ
 	new_species = SPECIES_ORK_NOB
 	playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 	..(new_loc, SPECIES_ORK_NOB)
 
 /mob/living/carbon/human/ork/mek/New(var/new_loc)
+	var/ork_name = "mek-boy"
+
+	name = "[ork_name]"
+	real_name = "[ork_name]"
 	h_style = "Bald"
 	max_waaagh = 300
 	waaagh = max_waaagh
+	warfare_faction = ORKZ
 	new_species = SPECIES_ORK_MEK
 	playsound(src, 'sound/voice/ork/workwork.ogg', 50)
 	..(new_loc, SPECIES_ORK_MEK)
 
 /mob/living/carbon/human/ork/boss/New(var/new_loc)
+	var/ork_name = "Warboss"
+
+	name = "[ork_name]"
+	real_name = "[ork_name]"
 	h_style = "Bald"
 	size_multiplier = 1.4
 	max_waaagh = 500
