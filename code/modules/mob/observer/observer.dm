@@ -101,3 +101,26 @@ mob/observer/check_airflow_movable()
 				stat("Red Captured Trench:", A)
 			for(var/area/A in GLOB.blue_captured_zones)
 				stat("Blue Captured Trench:", A)
+
+/*
+/mob/observer/verb/lateparty()
+	set category = "Ghost"
+	set name = "Late Party"
+	set desc= "Join a randomized late party picked from a list!"
+	var/response = alert(src, "Would you like to try and join the late party?", "Join the Late Party", "Yes", "No")
+
+	if(response == "Yes")
+		for(var/mob/living/carbon/human/M in world) //not the final mob obv, this needs much more work
+			if(M.isempty == 1)
+				if(M.health > 0)
+					to_chat(M,"To be filled later")
+					M.key = usr.key
+					M.isempty = 0
+					break
+				to_chat(M,"\blue [M] is dead.")
+			else
+				to_chat(M,"\blue [M] is occupied.")
+		to_chat(M,"\blue They are all occupied!!")
+	else if (response == "No")
+		to_chat(M,"\blue Then stop bothering me.")
+*/
