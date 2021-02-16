@@ -925,7 +925,7 @@ Imperial Guardsman
 	name = "Salamander Power Armor"
 	desc = "The holy armor of the Salamanders"
 	icon_state = "sl_lib"
-	item_state = "salcap"
+	item_state = "sl_lib"
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -949,7 +949,7 @@ Imperial Guardsman
 	name = "Salamander Power Helm"
 	desc = "The ash charrged helmet of a Salamander Marine."
 	icon_state = "sl_lib"
-	item_state = "ehelmet"
+	item_state = "sl_lib"
 	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS

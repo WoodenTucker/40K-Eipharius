@@ -41,7 +41,6 @@
 		H.verbs += /mob/living/carbon/human/proc/chapterselection
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
-	glasses = /obj/item/clothing/glasses/night
 	uniform = /obj/item/clothing/under/color/black
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
@@ -56,6 +55,7 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/glasses/night = 1,
 
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
