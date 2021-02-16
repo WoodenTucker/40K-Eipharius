@@ -122,6 +122,11 @@
 		return
 	..()
 
+/obj/item/clothing/shoes/rgboots/smurfs
+	name = "ultramarine boots"
+	desc = "Boots of the Ultramarine Space Marine Chapter"
+	icon_state = "umboots"
+	item_state = "umboots"
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
 	desc = "A shined pair of shoes"
@@ -130,3 +135,9 @@
 	armor = list(melee = 10, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
+
+/obj/item/clothing/shoes/rgboots/sallys
+	name = "salamander boots"
+	desc = "Boots of the Salamander Space Marine Chapter"
+	icon_state = "sl_boots"
+	item_state = "sl_boots"
