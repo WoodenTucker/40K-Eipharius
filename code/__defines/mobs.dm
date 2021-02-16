@@ -380,6 +380,10 @@
 #define DELDAR "Dark Eldar"
 #define ELDAR "Eldar"
 #define CHAOS "Chaos"
+#define KHORNE "Khorne"
+#define SLAANESH "Slaanesh"
+#define TZEENTCH "Tzeentch"
+#define NURGLE "Nurgle"
 
 /*
 #define SKILL_LOW(x) x<=4
