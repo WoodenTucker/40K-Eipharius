@@ -40,6 +40,23 @@
 			else
 				to_chat(M, "You need a certain type of meat... Something filled with rage and a lust for bloodshed.")
 				return
+		if(1)
+			to_chat(M, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
+			STAT_LEVEL(str)+=1
+			M.rage++
+			M.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
+		if(2)
+			M.verbs += /mob/living/carbon/human/proc/khornerune
+			to_chat(M, "Hatred, rage and fury like you've never known consume your mind and block out your every thought. Flashes of a symbol appear in your mind. You feel compelled to draw it.")
+			M.rage++
+		if(3)
+			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
+			if(T)
+				M.rage++
+				to_chat(M, "This... is it. That symbol. Just the sight of it quickens your heart and pumps adrenaline through your veins. You can hear his voice more clearly now.")
+			else
+				to_chat(M, "I must draw his symbol and stand upon it!")
+				return
 /////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////Begin Nurgle////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -221,7 +238,7 @@
 		to_chat(M, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
 		return
 	if(M.stat == DEAD)
-		to_chat(M, "<span class='notice'>You can't choose a path when you're dead.</span>")
+		to_chat(M, "<span class='notice'>You can't draw a rune when you're dead.</span>")
 		return
 	if(!M.canmove || M.stat || M.restrained())
 		to_chat(M,"You can't draw a rune while restrained.")	//user is tied up
