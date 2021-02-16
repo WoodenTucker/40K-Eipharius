@@ -5,11 +5,11 @@
 	if(stat)
 		return
 
-	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
+	var/is_blue = IMPERIUM
 	var/class = "red_team"
 	var/datum/team/T = SSwarfare.red
 	if(is_blue)
-		class = "blue_team"
+		class = "Imperium of Man"
 		T = SSwarfare.blue
 
 	if(T.checkCooldown("Help me!"))
@@ -21,7 +21,7 @@
 			continue
 		H.tracking.track(src)
 
-	to_chat(T.team, "<h1><span class='[class]'>Your Captain requires help!</span></h1>")
+	to_chat(T.team, "<h1><span class='[class]'>Your Commissar requires help!</span></h1>")
 
 	T.startCooldown("Help me!")
 	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
@@ -36,7 +36,7 @@
 	var/class = "red_team"
 	var/datum/team/T =  SSwarfare.red
 	if(is_blue)
-		class = "blue_team"
+		class = "Imperium of Man"
 		T = SSwarfare.blue
 
 	if(T.checkCooldown("Retreat!"))
@@ -58,7 +58,7 @@
 	var/class = "red_team"
 	var/datum/team/T =  SSwarfare.red
 	if(is_blue)
-		class = "blue_team"
+		class = "Imperium of Man"
 		T = SSwarfare.blue
 
 	if(T.checkCooldown("Make Announcement!"))
@@ -101,7 +101,7 @@
 	var/class = "red_team"
 	var/datum/team/T =  SSwarfare.red
 	if(is_blue)
-		class = "blue_team"
+		class = "Imperium of Man"
 		T = SSwarfare.blue
 
 	if(T.checkCooldown("Give Order!"))
@@ -163,7 +163,7 @@
 	var/class = "red_team"
 	var/datum/team/T =  SSwarfare.red
 	if(is_blue)
-		class = "blue_team"
+		class = "Imperium of Man"
 		T = SSwarfare.blue
 
 	switch(alert(src,"This has a long cool down are you sure you wish to use this?", "Cooldown", "Yes", "No"))
