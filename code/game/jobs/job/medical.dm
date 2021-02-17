@@ -202,6 +202,7 @@
 		H.add_skills(5,5,rand(5,7),0,rand(0,4))
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
