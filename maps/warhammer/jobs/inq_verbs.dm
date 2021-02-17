@@ -1,7 +1,12 @@
-/mob/living/carbon/human/proc/declareheretic()
+/mob/living/carbon/human/proc/declareheretic(var/mob/living/carbon/human/M)
 	set category = "Inquisitor"
 	set name = "Declare Heretic"
 	set desc="Declare a member of the crew a heretic!"
+	if(M.stat==DEAD)
+		return
+	if(!M.canmove || M.stat || M.restrained())
+		to_chat(M, "You cannot declare a heretic if you're tied up!")	//user is tied up
+		return
 
 	var/message = input("Name of the heretic", "Declare heretic", null, null) as message
 	message = sanitize(message, 500, extra = 0)
