@@ -49,10 +49,18 @@
 			for(var/obj/item/organ/I in internal_organs)
 				if(I.damage > 0)
 					I.damage = max(I.damage - 1, 0)
-
+/mob/living/carbon/human/ork
+	name = "ork"
+	real_name = "ork"
+	gender = MALE
+	maxHealth = 150
+	health = 150
+	status_flags = 0
+	var/isempty = 0
 
 /mob/living/carbon/human/ork/New(var/new_loc)
-	var/ork_name = "ork"
+	var/namelist = list("Ork")
+	var/ork_name = pick(namelist)
 
 	name = "[ork_name]"
 	real_name = "[ork_name]"
@@ -67,9 +75,14 @@
 		if(2)
 			playsound(src, 'sound/voice/ork/gretspawn2.ogg', 50)
 	..(new_loc, new_species)
+	spawn(5)
+		if(!src.ckey)
+			isempty = 1
+			request_player()
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
-	var/ork_name = "nob"
+	var/namelist = list("Nob")
+	var/ork_name = pick(namelist)
 
 	name = "[ork_name]"
 	real_name = "[ork_name]"
@@ -81,9 +94,14 @@
 	new_species = SPECIES_ORK_NOB
 	playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 	..(new_loc, SPECIES_ORK_NOB)
+	spawn(5)
+		if(!src.ckey)
+			isempty = 1
+			request_player()
 
 /mob/living/carbon/human/ork/mek/New(var/new_loc)
-	var/ork_name = "mek-boy"
+	var/namelist = list("Mek-boy")
+	var/ork_name = pick(namelist)
 
 	name = "[ork_name]"
 	real_name = "[ork_name]"
@@ -94,9 +112,16 @@
 	new_species = SPECIES_ORK_MEK
 	playsound(src, 'sound/voice/ork/workwork.ogg', 50)
 	..(new_loc, SPECIES_ORK_MEK)
+	spawn(5)
+		if(!src.ckey)
+			isempty = 1
+			request_player()
 
 /mob/living/carbon/human/ork/boss/New(var/new_loc)
-	var/ork_name = "Warboss"
+	..()
+
+	var/namelist = list("Warboss")
+	var/ork_name = pick(namelist)
 
 	name = "[ork_name]"
 	real_name = "[ork_name]"
@@ -108,3 +133,8 @@
 	new_species = SPECIES_ORK_BOSS
 	playsound(src, 'sound/voice/ork/warboss.ogg', 50)
 	..(new_loc, SPECIES_ORK_BOSS)
+
+	spawn(5)
+		if(!src.ckey)
+			isempty = 1
+			request_player()

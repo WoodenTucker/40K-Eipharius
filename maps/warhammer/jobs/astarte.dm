@@ -25,6 +25,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 
+
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()

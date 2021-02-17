@@ -1335,7 +1335,11 @@
 
 //So that people will stop shitting in the fucking hallways all the time. Actually this will probably encourage them.
 /mob/living/carbon/human/proc/handle_smelly_things()
-	if(wear_mask)
+	if(wear_mask || src.nogross==1)
+		if(src.nogross==1)
+			if(prob(1))
+				to_chat(src, "Before this would have disgusted you, now with Nurgle's blessing you find it rather pleasant. You feel happier.")
+				happiness += 1
 		return
 
 	if(/obj/effect/decal/cleanable/poo in range(3, src))

@@ -82,6 +82,57 @@
 	if(intrigue > 0)
 		to_chat(M, "You are already sworn to Tzeentch!")	//usr has already selected another path!
 		return
+	switch(M.decay)
+		if(0)
+			if(istype(M.l_hand, /obj/item/reagent_containers/food/snacks/poo))
+				qdel(usr.l_hand)
+				to_chat(M, "As if commanded, you raise the feces to your lips. You take a small bite followed by a much larger one. You thought it would be disgusting, but it is actually the most incredible thing you've ever tasted. As it enters your stomach you feel it changing you, the lord of flies voice jovially rings out in your ears. You are not yet visibly corrupted but avoid detailed investigation.")
+				playsound(src, 'sound/effects/fornurgle.ogg', 50, 0, -1)
+				M.update_inv_l_hand()
+				M.decay++
+			else if(istype(M.r_hand, /obj/item/reagent_containers/food/snacks/poo))
+				qdel(usr.r_hand)
+				to_chat(M, "As if commanded, you raise the feces to your lips. You take a small bite followed by a much larger one. You thought it would be disgusting, but it is actually the most incredible thing you've ever tasted. As it enters your stomach you feel it changing you, the lord of flies voice jovially rings out in your ears. You are not yet visibly corrupted but avoid detailed investigation.")
+				playsound(src, 'sound/effects/fornurgle.ogg', 50, 0, -1)
+				M.update_inv_r_hand()
+				M.decay++
+			else
+				to_chat(M, "For some reason you have always been drawn to disgusting things. Find the most vile thing you can think of and hold it in your hand.")
+				return
+		if(1)
+			M.decay++
+			STAT_LEVEL(end) +=1
+			M.verbs -= list(/mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
+			to_chat(M, "The voice of gentle grandfather fills your inner mind. You cannot see him, but you feel the warmth of his smile. It is calming, it is pleasing. You want to listen to what he has to say, to sit like a child before a wise elder telling tales of his youth.")
+		if(2)
+			M.decay++
+			M.verbs += /mob/living/carbon/human/proc/nurglerune
+			to_chat(M, "He tells you story after story, some make you laugh, some make you cry and some make you stare in wonder. Before he departs he fills your mind with a symbol. It is quite pleasant. Maybe if I draw this symbol I can speak to him again.")
+		if(3)
+			var/obj/effect/decal/cleanable/nurgle/T = locate() in src.loc
+			if(T)
+				M.decay++
+				to_chat(M, "Standing upon this rune fills me with warmth, like standing before a roaring fireplace. His voice returns at once, its clear he is pleased. He greets me like a returning child. I am eager to please.")
+			else
+				to_chat(M, "I must draw his symbol and stand upon it!")
+				return
+		if(4)
+			M.decay++
+			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth.")
+		if(5)
+			var/obj/effect/decal/cleanable/nurgle/T = locate()
+			var/mob/living/simple_animal/hostile/retaliate/rat/Q = locate() in T.loc
+			if(T && Q)
+				M.decay++
+				M.happiness += 5
+				M.nogross = 1
+				STAT_LEVEL(end) += 1
+				playsound(src, 'sound/effects/fornurgle.ogg', 50, 0, -1)
+				to_chat(M, "It is done. I gingerly laid the corpse of his child upon the mark. With a faint flash it is gone. That familiar warmth returns like a hug. ")
+				qdel(Q)
+			else if(!Q)
+				to_chat(M, "He requires something of me. He asked me to bring him one of his children, a rat. He asked me to kill it and place it upon his mark. He has grand designs for me, but they all start with one small step.")
+				return
 
 
 
@@ -139,7 +190,7 @@
 				M.lust++
 				to_chat(M, "Yes! YES! He is pleased, the feeling returns for mere moments. Every pleasure is experienced at once to its absolute pinnacle. Yet again it fades with a sinister laugh. He needs more, I must continue to serve.")
 			else
-				to_chat(M, "I must draw his symbol and stand upon it!")
+				to_chat(M, "I must draw xer symbol and stand upon it!")
 				return
 
 
