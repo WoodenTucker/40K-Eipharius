@@ -695,6 +695,19 @@
 		reagents.add_reagent(/datum/reagent/hyperzine, 5)
 		src.bitesize = 3
 
+/obj/item/reagent_containers/food/snacks/khornemeat
+	name = "khorne daemon meat"
+	desc = "The mere touch of this piece of meat fills you with rage."
+	icon_state = "bearmeat"
+	filling_color = "#08acf8cc"
+	center_of_mass = "x=16;y=10"
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 12)
+		reagents.add_reagent(/datum/reagent/hyperzine, 5)
+		src.bitesize = 3
+
 /obj/item/reagent_containers/food/snacks/xenomeat
 	name = "meat"
 	desc = "A slab of green meat. Smells like acid."

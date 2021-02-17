@@ -82,6 +82,11 @@
 		H.warfare_faction = IMPERIUM
 		H.f_style = "shaved"
 		H.h_style = "Bob"
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are responsible for the health of not only the outpost but the various pilgrims and penitents that live in the shanty town north of the outpost</font></b></span>")
 
@@ -112,7 +117,11 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.add_skills(2,2,rand(2,4),0,rand(1,3)) //they have limited medical knowledge
 		H.warfare_faction = IMPERIUM
-
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous healing tincures and salves so beloved by the Ordos Hospitaller. Keep the outpost stocked and maybe sell a little something on the side if you're willing to brave the Inquisition.</font></b></span>")
 
 /datum/job/geneticist
@@ -139,7 +148,11 @@
 		H.add_skills(3,3,rand(2,4),0,rand(2,4))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Genetor, sometimes known as a Magos Biologis. You perform genetic experiments and perfect any impurities found in genetic code. You answer to the Magos firstly and the Sister Hospitaller second.</font></b></span>")
 
 /datum/job/psychiatrist
@@ -189,5 +202,9 @@
 		H.add_skills(5,5,rand(5,7),0,rand(0,4))
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
-
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")

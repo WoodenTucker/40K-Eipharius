@@ -123,6 +123,7 @@
 	var/obj/item/storage/s_active = null//Carbon
 	var/obj/item/clothing/mask/wear_mask = null//Carbon
 	var/age = 30		//Player's age (pure fluff)
+	var/nogross = 0 //Used for nurgle stuff, makes you unable to be grossed out
 
 
 //	var/datum/hud/hud_used = null

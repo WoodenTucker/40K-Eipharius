@@ -594,3 +594,80 @@
 		icon_state = "ravenbolter-30"
 	else
 		icon_state = "ravenbolter-e"
+
+
+/obj/item/gun/projectile/smurfbolter //needs lots of work and love, ok standin for now
+	name = "ultramarine bolter rifle"
+	desc = "The legendary weapon of the Ultramarine astartes, the bolter rifle."
+	icon_state = "ultrabolter"
+	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	w_class = ITEM_SIZE_HUGE
+	force = 65
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 30
+	caliber = ".75"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/bolter
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
+	one_hand_penalty = 15
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "ultrabolter-30"
+	unloaded_icon = "ultrabolter-e"
+	fire_delay=2
+	burst=1
+	move_delay=12
+	one_hand_penalty=8
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 300 //Enough for one clean mag.
+
+/obj/item/gun/projectile/smurfbolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ultrabolter-30"
+	else
+		icon_state = "ultrabolter-e"
+
+/obj/item/gun/projectile/sallybolter //needs lots of work and love, ok standin for now
+	name = "salamander bolter rifle"
+	desc = "The legendary weapon of the Salamander astartes, the bolter rifle."
+	icon_state = "sallybolter"
+	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	w_class = ITEM_SIZE_HUGE
+	force = 65
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 30
+	caliber = ".75"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/bolter
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
+	one_hand_penalty = 15
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "sallybolter-30"
+	unloaded_icon = "sallybolter-e"
+	fire_delay=2
+	burst=1
+	move_delay=12
+	one_hand_penalty=8
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 300 //Enough for one clean mag.
+
+/obj/item/gun/projectile/sallybolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "sallybolter-30"
+	else
+		icon_state = "sallybolter-e"

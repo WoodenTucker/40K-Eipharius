@@ -14,6 +14,10 @@
 	var/hitsound = null
 	var/equipsound = null
 	var/str_requirement = 0
+	var/decay = 0
+	var/lust = 0
+	var/rage = 0
+	var/intrigue = 0
 	var/slot_flags = 0		//This is used to determine on which slots an item can fit.
 	var/no_attack_log = 0			//If it's an item we don't want to log attack_logs with, set this to 1
 	pass_flags = PASS_FLAG_TABLE

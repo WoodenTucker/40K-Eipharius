@@ -8,7 +8,7 @@
 	icon_dead = "demon_dead"
 	maxHealth = 40
 	health = 40
-	meat_type = /obj/item/reagent_containers/food/snacks/shaframeat
+	meat_type = /obj/item/reagent_containers/food/snacks/khornemeat
 	universal_speak = 1
 	speak_emote = list("harks")
 	emote_hear = list("growls")

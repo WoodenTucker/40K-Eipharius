@@ -25,6 +25,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 
+
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
@@ -38,33 +39,67 @@
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
-
-/datum/job/captain/equip(var/mob/living/carbon/human/H)
-	. = ..()
-	if(.)
-		H.implant_loyalty(src)
-
-
+		H.verbs += /mob/living/carbon/human/proc/chapterselection
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
-	head = /obj/item/clothing/head/helmet/ravenhelm
-	glasses = /obj/item/clothing/glasses/night
 	uniform = /obj/item/clothing/under/color/black
-	shoes = /obj/item/clothing/shoes/rgboots
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
-	suit = /obj/item/clothing/suit/armor/ravenguard
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	suit_store = /obj/item/gun/projectile/ravenbolter
+	shoes = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/glasses/night = 1,
 
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+
+/datum/job/envoy/equip(var/mob/living/carbon/human/H)
+	. = ..()
+	if(.)
+		H.implant_loyalty(src)
+
+/mob/living/carbon/human/proc/chapterselection(var/mob/living/carbon/human/M)
+	set name = "Select your chapter"
+	set category = "Astartes"
+	set desc = "Choose your chapter"
+	if(!ishuman(M))
+		to_chat(M, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(M.stat == DEAD)
+		to_chat(M, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+	var/mob/living/carbon/human/U = src
+	var/chapter = list("Raven Guard","Ultramarines","Salamanders") //lists all possible chapters
+	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
+
+	switch(chapterchoice)
+		if("Raven Guard")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/ravenguard, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)
+		if("Ultramarines")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/smurfs, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/smurfhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)
+		if("Salamanders")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/sallys, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallyhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)

@@ -96,7 +96,37 @@
 	canremove = 0
 	cold_protection = FEET|LEGS
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	var/obj/item/material/sword/combat_knife/knife = null
 
+/obj/item/clothing/shoes/rgboots/New()
+	..()
+	knife = new
+	update_icon()
+
+/obj/item/clothing/shoes/rgboots/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/material/sword/combat_knife))
+		if(knife)//We've already got a knife in there, no need for another.
+			return
+		user.drop_from_inventory(I)
+		I.forceMove(src)
+		knife = I
+		update_icon()
+		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
+
+/obj/item/clothing/shoes/rgboots/attack_hand(mob/living/user)
+	if(knife)
+		user.put_in_active_hand(knife)
+		knife = null
+		update_icon()
+		return
+	..()
+
+/obj/item/clothing/shoes/rgboots/smurfs
+	name = "ultramarine boots"
+	desc = "Boots of the Ultramarine Space Marine Chapter"
+	icon_state = "umboots"
+	item_state = "umboots"
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
 	desc = "A shined pair of shoes"
@@ -105,3 +135,9 @@
 	armor = list(melee = 10, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
+
+/obj/item/clothing/shoes/rgboots/sallys
+	name = "salamander boots"
+	desc = "Boots of the Salamander Space Marine Chapter"
+	icon_state = "sl_boots"
+	item_state = "sl_boots"

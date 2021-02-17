@@ -9,7 +9,10 @@
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
 	var/stealth = FALSE
 	var/scooldown = FALSE
-	var/corruption = 0 //this will eventually be used to manage chaos corruption
+	var/rage = 0 //khorne favor
+	var/lust = 0 //slaanesh favor
+	var/decay = 0 //nurgle favor
+	var/intrigue = 0 //tzeentch favor
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 

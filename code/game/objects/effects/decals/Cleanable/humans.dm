@@ -258,3 +258,63 @@ var/global/list/image/splatter_cache=list()
 	var/list/existing_dirs = list()
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
+
+
+/obj/effect/decal/cleanable/khorne
+	name = "mark of khorne"
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "angry"
+	desc = "A horrifying rune drawn in blood."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	random_icon_states = null
+	var/list/existing_dirs = list()
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+
+
+/obj/effect/decal/cleanable/slaanesh
+	name = "mark of slaanesh"
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "lewd"
+	desc = "A horrifying rune drawn in blood."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	random_icon_states = null
+	var/list/existing_dirs = list()
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+
+
+/obj/effect/decal/cleanable/tzeentch
+	name = "mark of tzeentch"
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "smart"
+	desc = "A horrifying rune drawn in blood."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	random_icon_states = null
+	var/list/existing_dirs = list()
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR
+
+
+/obj/effect/decal/cleanable/nurgle
+	name = "mark of nurgle"
+	icon = 'icons/obj/decals.dmi'
+	icon_state = "nasty"
+	desc = "A horrifying rune drawn in blood."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	layer = 2
+	random_icon_states = null
+	var/list/existing_dirs = list()
+	blood_DNA = list()
+	appearance_flags = NO_CLIENT_COLOR

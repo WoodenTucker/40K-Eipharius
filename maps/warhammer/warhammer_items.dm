@@ -908,11 +908,60 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
+/obj/item/clothing/suit/armor/smurfs
+	name = "Ultramarine Power Armor"
+	desc = "The holy armor of the Ultramarines."
+	icon_state = "umpowerarmor"
+	item_state = "umpowerarmor"
+	str_requirement = 25
+	canremove = 0
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
+
+/obj/item/clothing/suit/armor/sallys
+	name = "Salamander Power Armor"
+	desc = "The holy armor of the Salamanders"
+	icon_state = "sl_lib"
+	item_state = "sl_lib"
+	str_requirement = 25
+	canremove = 0
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 /obj/item/clothing/head/helmet/ravenhelm
 	name = "Raven Guard Power Helm"
 	desc = "The black, beaked mask of the Raven Guard."
 	icon_state = "rghelmet2"
 	item_state = "rghelmet2"
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/sallyhelm
+	name = "Salamander Power Helm"
+	desc = "The ash charrged helmet of a Salamander Marine."
+	icon_state = "sl_lib"
+	item_state = "sl_lib"
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/smurfhelm
+	name = "Ultramarine Power Helm"
+	desc = "The blue helm of an Ultramarine."
+	icon_state = "um_helm"
+	item_state = "um_helm"
 	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
