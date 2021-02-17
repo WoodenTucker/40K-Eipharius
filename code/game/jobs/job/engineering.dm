@@ -34,7 +34,7 @@
 		H.fully_replace_character_name("Magos [current_name]")
 		H.add_stats(rand(10,13), rand(10,13), rand(14,18), rand(16,20)) //idk what to do with Magos xd
 		H.warfare_faction = IMPERIUM
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC|LANGUAGE_MECHANICUS)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos. The highest ranking member of the Adeptus Mechanicus on the outpost. Your duty is to ensure all mechanical and electrical services remain online and operational. Use your talents and the skills of your tech priests to further the goals of the Imperium. Praise the Omnissiah!</font></b></span>")
 		H.bladder = -INFINITY
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
@@ -70,7 +70,7 @@
 		H.fully_replace_character_name("Tech-Priest [current_name]")
 		H.add_stats(rand(10,13), rand(10,13), rand(12,15), rand(14,16)) //idk what to do with Magos xd
 		H.add_skills(rand(1,3),rand(1,3),rand(1,2),rand(6,9),0)
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC|LANGUAGE_MECHANICUS)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>Praise the Omnissiah! You live to further mankinds knowledge and understanding of technology. Obey your Magos and ensure all machine spirits are pleased.</font></b></span>")
 
