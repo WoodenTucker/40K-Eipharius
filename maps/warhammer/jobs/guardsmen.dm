@@ -34,8 +34,6 @@
 		H.assign_random_quirk()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
-		if(announced)
-			H.say(";Guardsman reporting for duty!")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
@@ -78,7 +76,6 @@
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Sgt. [current_name]")
-		H.say(";[title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
@@ -113,7 +110,6 @@
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
 		H.add_skills(rand(14,18))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -174,7 +170,6 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 
-		H.say(";Officer of the Magistratum reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
 /*/datum/job/ig/impguard

@@ -31,7 +31,6 @@
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
 		H.add_stats(40, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
-		H.say(";Brother [current_name] reporting for duty!")
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
