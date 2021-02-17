@@ -240,7 +240,7 @@
 //////////////////////////////////////
 /mob/living/carbon/human/proc/nurglerune(var/mob/living/carbon/human/M)
 	set category = "Ruinous Powers"
-	set name = "Nurgle Altar"
+	set name = "Nurgle Rune"
 	set desc = "In the embrace of great Nurgle, I am no longer afraid."
 	if(!ishuman(M))
 		to_chat(M, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
