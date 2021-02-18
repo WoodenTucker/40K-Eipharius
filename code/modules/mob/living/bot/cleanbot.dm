@@ -149,6 +149,11 @@
 	target_types += /obj/effect/decal/cleanable/liquid_fuel
 	target_types += /obj/effect/decal/cleanable/mucus
 	target_types += /obj/effect/decal/cleanable/dirt
+	target_types += /obj/effect/decal/cleanable/urine
+	target_types += /obj/effect/decal/cleanable/poo/drip
+	target_types += /obj/effect/decal/cleanable/poo
+	target_types += /obj/effect/decal/cleanable/poo/tracks
+
 
 	if(blood)
 		target_types += /obj/effect/decal/cleanable/blood

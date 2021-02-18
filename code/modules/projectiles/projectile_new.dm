@@ -628,7 +628,6 @@
 			if(attacker.warfare_faction)
 				if(attacker.warfare_faction == victim.warfare_faction)
 					to_chat(attacker, "<big>[victim] is on my side!</big>")
-					log_and_message_admins("[attacker] has shot his teammate [victim] with \a [src.type]!", attacker)
 					GLOB.ff_incidents++//Dumb round end stat stuff.
 
 	//sometimes bullet_act() will want the projectile to continue flying

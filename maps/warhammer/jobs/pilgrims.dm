@@ -8,6 +8,7 @@
 	selection_color = "#515151"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -181,6 +182,7 @@ Pilgrim Fate System
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM

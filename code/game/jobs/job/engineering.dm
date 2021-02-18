@@ -18,6 +18,7 @@
 	surgery_skill = 0
 	melee_skill = 4
 	ranged_skill = 4
+	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
@@ -57,6 +58,7 @@
 	economic_modifier = 5
 	minimal_player_age = 7
 	open_when_dead = 1
+	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)

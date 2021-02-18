@@ -13,6 +13,7 @@
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
+	announced = FALSE
 
 
 
@@ -43,6 +44,7 @@
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
+	announced = FALSE
 //	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
@@ -74,6 +76,7 @@
 	minimal_access = list(access_hydroponics, access_maint_tunnels, access_kitchen)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -150,6 +153,7 @@
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/servitor_number = rand(1,1000)
@@ -194,6 +198,7 @@
 	economic_modifier = 7
 	minimal_player_age = 10
 	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -226,6 +231,7 @@
 	minimal_player_age = 21
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

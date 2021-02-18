@@ -17,6 +17,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
@@ -57,6 +58,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels,)
 //	alt_titles = list(
@@ -102,6 +104,7 @@
 	selection_color = "#633d63"
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
 	//alt_titles = list("Pharmacist")
@@ -134,6 +137,7 @@
 	selection_color = "#633d63"
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
@@ -180,6 +184,7 @@
 	economic_modifier = 4
 	minimal_player_age = 4
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 //	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)

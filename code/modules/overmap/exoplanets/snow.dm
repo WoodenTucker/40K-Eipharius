@@ -2,6 +2,7 @@
 	name = "snow exoplanet"
 	desc = "Cold planet with limited plant life."
 	color = "#e8faff"
+	var/diggable = 1
 
 /obj/effect/overmap/sector/exoplanet/snow/generate_map()
 	for(var/zlevel in map_z)

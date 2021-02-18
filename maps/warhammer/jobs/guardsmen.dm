@@ -14,6 +14,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 	open_when_dead = TRUE
+	announced = FALSE
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
@@ -103,7 +104,7 @@
 	department_flag = SEC
 	latejoin_at_spawnpoints = TRUE
 
-	announced = TRUE
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -158,7 +159,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Enforcer [current_name]")
-		H.add_stats(18, rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
+		H.add_stats(rand(14,18), rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,10),rand(6,10))
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )

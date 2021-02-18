@@ -298,6 +298,7 @@
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
+	var/diggable = 1
 
 /turf/simulated/floor/snow/New()
 	icon_state = pick("snow[rand(1,12)]","snow0","snow","snow_3","snow_4",)
