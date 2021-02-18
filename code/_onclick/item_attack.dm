@@ -148,7 +148,6 @@ avoid code duplication. This includes items that may sometimes act as a standard
 				if(attacker.warfare_faction)
 					if(attacker.warfare_faction == victim.warfare_faction && victim.stat != DEAD)
 						to_chat(attacker, "<big>[victim] is on my side!</big>")
-						log_and_message_admins("[attacker] has hit his teammate [victim] with \a [src]!")
 						GLOB.ff_incidents++
 	/////////////////////////
 

@@ -160,7 +160,7 @@
 	corpse_outfits = list(/decl/hierarchy/outfit/soviet_soldier)
 
 /obj/effect/landmark/corpse/syndicate
-	name = "Syndicate Operative"
+	name = "Slaughtered human"
 	corpse_outfits = list(/decl/hierarchy/outfit/mercenary/syndicate)
 	spawn_flags = CORPSE_SPAWNER_NO_RANDOMIZATION
 

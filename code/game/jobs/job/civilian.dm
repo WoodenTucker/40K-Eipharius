@@ -13,6 +13,7 @@
 	access = list(access_hydroponics, access_bar, access_kitchen)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
+	announced = FALSE
 
 
 
@@ -43,6 +44,7 @@
 	selection_color = "#515151"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
+	announced = FALSE
 //	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
@@ -55,7 +57,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.say("Cook reporting for duty!")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
@@ -75,6 +76,7 @@
 	minimal_access = list(access_hydroponics, access_maint_tunnels, access_kitchen)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -85,7 +87,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.say("Farmer reporting for duty!")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
@@ -152,6 +153,7 @@
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/servitor_number = rand(1,1000)
@@ -196,6 +198,7 @@
 	economic_modifier = 7
 	minimal_player_age = 10
 	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -207,7 +210,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
-		H.say("Throne Agent reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Principle agent of the Ordos Helican, your Master, a fully fledged Inquisitor has ordered you to this planet to perform reconaissance and keep an eye on the various pilgrims/penitents passing through. Report any heresy, suffer not the heretic to live.</font></b></span>")
 
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
@@ -229,6 +231,7 @@
 	minimal_player_age = 21
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
+	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

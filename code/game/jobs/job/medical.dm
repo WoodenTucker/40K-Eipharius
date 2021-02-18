@@ -17,6 +17,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
@@ -33,13 +34,12 @@
 		..()
 		H.fully_replace_character_name("Sister Superior [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
@@ -58,6 +58,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels,)
 //	alt_titles = list(
@@ -72,7 +73,6 @@
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(8,12), rand(10,14), rand(10,14), rand(12,15))
 		H.add_skills(3,3,rand(5,7),0,rand(5,7))
 		H.get_idcard()?.access = get_all_accesses()
@@ -104,6 +104,7 @@
 	selection_color = "#633d63"
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
 	//alt_titles = list("Pharmacist")
@@ -112,7 +113,6 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(6,10), rand(7,12), rand(8,12), rand(9,13))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.add_skills(2,2,rand(2,4),0,rand(1,3)) //they have limited medical knowledge
@@ -137,13 +137,13 @@
 	selection_color = "#633d63"
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.say(";[title] reporting for duty!")
 		H.add_stats(rand(6,11), rand(8,11), rand(8,11), rand(12,14))
 		H.add_skills(3,3,rand(2,4),0,rand(2,4))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -184,6 +184,7 @@
 	economic_modifier = 4
 	minimal_player_age = 4
 	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 //	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
@@ -195,13 +196,13 @@
 		..()
 		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.say(";[title] reporting for duty!")
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(10,13), rand(10,14), rand(10,14), rand(12,15))
-		H.add_skills(5,5,rand(5,7),0,rand(0,4))
+		H.add_skills(rand(4,6),rand(4,6),10,0,rand(1,2))
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
