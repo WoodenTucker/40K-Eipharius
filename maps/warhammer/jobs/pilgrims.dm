@@ -2,8 +2,8 @@
 	title = "Pilgrim"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 10 //maybe open up more of these when we figure out other classes and depending on player count
-	spawn_positions = 10
+	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
+	spawn_positions = INFINITY
 	supervisors = "The Holy Inquisition"
 	selection_color = "#515151"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
