@@ -183,6 +183,64 @@
 	else
 		to_chat(user, "You're already digging.")
 
+
+/turf/simulated/floor/snow/RightClick(mob/living/user)
+	if(!CanPhysicallyInteract(user))
+		return
+	var/obj/item/shovel/S = user.get_active_hand()
+	if(!istype(S))
+		return
+	if(!can_be_dug)//No escaping to mid early.
+		return
+	if(!user.doing_something)
+		user.doing_something = TRUE
+		if(src.density)
+			user.doing_something = FALSE
+			return
+		for(var/obj/structure/object in contents)
+			if(object)
+				to_chat(user, "There are things in the way.")
+				user.doing_something = FALSE
+				return
+		playsound(src, 'sound/effects/dig_shovel.ogg', 50, 0)
+		visible_message("[user] begins to dig a trench!")
+		if(do_after(user, backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 5))
+			ChangeTurf(/turf/simulated/floor/trench)
+			visible_message("[user] finishes digging the trench.")
+			playsound(src, 'sound/effects/empty_shovel.ogg', 50, 0)
+			user.doing_something = FALSE
+
+		user.doing_something = FALSE
+
+	else
+		to_chat(user, "You're already digging.")
+
+
+/turf/simulated/floor/snow/attackby(obj/O as obj, mob/living/user as mob)
+	if(istype(O, /obj/item/shovel))
+		if(!user.doing_something)
+			user.doing_something = TRUE
+			if(src.density)
+				user.doing_something = FALSE
+				return
+			for(var/obj/structure/object in contents)
+				if(object)
+					to_chat(user, "There are things in the way.")
+					user.doing_something = FALSE
+					return
+			playsound(src, 'sound/effects/dig_shovel.ogg', 50, 0)
+			visible_message("[user] begins to dig some dirt cover!")
+			if(do_after(user, (backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 5)))
+				new /obj/structure/dirt_wall(src)
+				visible_message("[user] finishes digging the dirt cover.")
+				playsound(src, 'sound/effects/empty_shovel.ogg', 50, 0)
+
+			user.doing_something = FALSE
+
+		else
+			to_chat(user, "You're already digging.")
+
+
 /turf/simulated/floor/dirty/update_dirt()
 	return	// Dirt doesn't doesn't become dirty
 
