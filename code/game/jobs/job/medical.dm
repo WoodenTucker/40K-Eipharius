@@ -38,7 +38,7 @@
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
