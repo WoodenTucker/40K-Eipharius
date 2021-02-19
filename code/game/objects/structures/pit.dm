@@ -167,3 +167,88 @@
 		var/msg = sanitize(input(user, "What should it say?", "Grave marker", message) as text|null)
 		if(msg)
 			message = msg
+
+
+/obj/structure/closet/pit
+	name = "grave"
+	desc = "Watch your step, partner."
+	blend_mode = BLEND_MULTIPLY
+	density = 0
+	anchored = 1
+	var/open = 1
+	icon = 'icons/obj/pit.dmi'
+	icon_state = "pit1"
+	icon_closed = "pit0"
+	icon_opened = "pit1"
+	open_sound = 'sound/effects/empty_shovel.ogg'
+	close_sound = 'sound/effects/empty_shovel.ogg'
+	var/item_path = /obj/item/bodybag
+	density = 0
+	storage_capacity = (MOB_MEDIUM * 2) - 1
+	var/contains_body = 0
+
+/obj/structure/closet/pit/attackby(W as obj, mob/user as mob)
+	if (istype(W, /obj/item/pen))
+		var/t = input(user, "What would you like the label to be?", text("[]", src.name), null)  as text
+		if (user.get_active_hand() != W)
+			return
+		if (!in_range(src, user) && src.loc != user)
+			return
+		t = sanitizeSafe(t, MAX_NAME_LEN)
+		if (t)
+			src.SetName("Grave of - ")
+			src.name += t
+			src.overlays += image(src.icon, "bodybag_label")
+		else
+			src.SetName("grave")
+	//..() //Doesn't need to run the parent. Since when can fucking bodybags be welded shut? -Agouri
+		return
+	else if(isWirecutter(W))
+		src.SetName("grave")
+		src.overlays.Cut()
+		to_chat(user, "You cut the tag off \the [src].")
+		return
+	else if(istype(W, /obj/item/device/healthanalyzer/) && !opened)
+		if(contains_body)
+			var/obj/item/device/healthanalyzer/HA = W
+			for(var/mob/living/L in contents)
+				HA.scan_mob(L, user)
+		else
+			to_chat(user, "\The [W] reports that \the [src] is empty.")
+		return
+
+/obj/structure/closet/pit/store_mobs(var/stored_units)
+	contains_body = ..()
+	if(contains_body)
+		for(var/mob/living/L in contents)
+			qdel(L)
+		to_chat(src, "You fill in the grave and make it seem like nothing was ever there...")
+	return contains_body
+
+/obj/structure/closet/pit/close()
+	if(..())
+		set_density(0)
+		return 1
+	return 0
+
+/obj/structure/closet/pit/proc/fold(var/user)
+	if(!ishuman(user))	return 0
+	if(opened)	return 0
+	if(contents.len)	return 0
+	visible_message("[user] folds up the [name]")
+	. = new item_path(get_turf(src))
+	qdel(src)
+
+/obj/structure/closet/pit/MouseDrop(over_object, src_location, over_location)
+	..()
+	if((over_object == usr && (in_range(src, usr) || usr.contents.Find(src))))
+		fold(usr)
+
+/obj/structure/closet/pit/update_icon()
+	if(opened)
+		icon_state = icon_opened
+	else
+		if(contains_body > 0)
+			icon_state = "pit0"
+		else
+			icon_state = icon_closed

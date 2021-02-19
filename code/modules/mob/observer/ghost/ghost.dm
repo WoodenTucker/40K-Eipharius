@@ -217,7 +217,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!client)	return
 	if(!(mind && mind.current && can_reenter_corpse))
 		to_chat(src, "<span class='warning'>You have no body.</span>")
-		isburied = 1
 		return
 	if(mind.current.key && copytext(mind.current.key,1,2)!="@")	//makes sure we don't accidentally kick any clients
 		to_chat(src, "<span class='warning'>Another consciousness is in your body... it is resisting you.</span>")
@@ -483,6 +482,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 /mob/observer/ghost/MayRespawn(var/feedback = 0, var/respawn_time = 0)
 	if(!client)
 		return FALSE
+
+	if(!(mind && mind.current && can_reenter_corpse))
+		to_chat(src, "<span class='warning'>Your body is not buried nor destroyed!</span>")
+		return TRUE
 
 	if(can_reenter_corpse == CORPSE_CAN_REENTER_AND_RESPAWN)
 		return TRUE
