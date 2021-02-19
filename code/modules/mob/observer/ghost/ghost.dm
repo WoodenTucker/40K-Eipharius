@@ -479,16 +479,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	client.images -= ghost_image //remove ourself
 
 
-/mob/observer/ghost/verb/buried()
-	set name = "Check if buried"
-	set category = "Ghost"
-
-	var/mob/living/carbon/human/T = locate() in src.loc
-	var/obj/structure/pit/closed/Q = locate() in T.loc
-
-	if(T && Q)
-		isburied = 1
-		buried()
 
 /mob/observer/ghost/MayRespawn(var/feedback = 0, var/respawn_time = 0)
 	if(!client)
@@ -523,7 +513,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			if(GLOB.blue_captured_zones.len < 1)
 				to_chat(src, "We control no trenches, we cannot respawn.")
 				return FALSE
-
+	/*
 	if(isburied == 0)
 		to_chat(src, "Your body hasn't been buried or destroyed yet!")
 		buried()
@@ -532,6 +522,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(isburied == 1)
 		buried()
 		return TRUE
+		One day I'll make you work
+		*/
 
 
 
