@@ -28,8 +28,6 @@
 
 	var/warfare_faction = null
 
-	var/isburied = 0
-
 		///////////////
 		//SOUND STUFF//
 		///////////////
