@@ -614,6 +614,17 @@
 	icon_state = "door_locked"
 	locked = 1
 
+/obj/machinery/door/airlock/highsecurity/guardarmory
+	name = "Armory"
+	req_access = list()
+	req_one_access = list(access_hos, access_guard_armory)
+
+/obj/machinery/door/airlock/highsecurity/guardarmory/bolted  //Not 100% sure if this is redundant.
+
+	icon_state = "door_locked"
+	locked = 1
+
+
 /*
 About the new airlock wires panel:
 *	An airlock wire dialog can be accessed by the normal way or by using wirecutters or a multitool on the door while the wire-panel is open. This would show the following wires, which you can either wirecut/mend or send a multitool pulse through. There are 9 wires.
