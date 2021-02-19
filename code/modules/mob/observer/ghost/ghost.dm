@@ -525,7 +525,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				return FALSE
 
 	if(isburied == 0)
-		to_chat(src, "Your body hasn't been buried or destroyed yet!")
+		to_chat(src, "Your body hasn't been buried yet!")
 		return FALSE
 
 	if(isburied == 1)
