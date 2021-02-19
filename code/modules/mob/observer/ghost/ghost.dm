@@ -483,7 +483,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	var/obj/structure/pit/closed/Q = locate() in T.loc
 
 	if(T && Q)
-		client.isburied = 1
+		isburied = 1
 		buried()
 
 /mob/observer/ghost/MayRespawn(var/feedback = 0, var/respawn_time = 0)
@@ -520,10 +520,15 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				to_chat(src, "We control no trenches, we cannot respawn.")
 				return FALSE
 
-	if(client.isburied == 0)
+	if(isburied == 0)
 		to_chat(src, "Your body hasn't been buried yet!")
 		buried()
 		return FALSE
+
+	if(isburied == 1)
+		to_chat(src, "Your body hasn't been buried yet!")
+		buried()
+		return TRUE
 
 
 
