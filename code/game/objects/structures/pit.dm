@@ -167,12 +167,3 @@
 		var/msg = sanitize(input(user, "What should it say?", "Grave marker", message) as text|null)
 		if(msg)
 			message = msg
-
-
-/mob/living/carbon/human/proc/buried(var/mob/living/carbon/human/M)
-	var/mob/living/carbon/human/T = locate() in src.loc
-	var/obj/structure/pit/closed/Q = locate() in T.loc
-
-	if(T && Q)
-		client.isburied = 1
-		buried()

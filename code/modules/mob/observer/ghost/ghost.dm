@@ -477,6 +477,15 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		client.images |= ghost_sightless_images
 	client.images -= ghost_image //remove ourself
 
+
+/mob/observer/ghost/proc/buried(var/mob/living/carbon/human/M)
+	var/mob/living/carbon/human/T = locate() in src.loc
+	var/obj/structure/pit/closed/Q = locate() in T.loc
+
+	if(T && Q)
+		client.isburied = 1
+		buried()
+
 /mob/observer/ghost/MayRespawn(var/feedback = 0, var/respawn_time = 0)
 	if(!client)
 		return FALSE
@@ -513,7 +522,9 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	if(client.isburied == 0)
 		to_chat(src, "Your body hasn't been buried yet!")
+		buried()
 		return FALSE
+
 
 
 	if(!client.holder && respawn_time && timeofdeath && timedifference < respawn_time MINUTES)

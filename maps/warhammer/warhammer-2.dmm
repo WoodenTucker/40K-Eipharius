@@ -1042,7 +1042,7 @@
 "ub" = (/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/snow,/area/exoplanet/snow)
 "uc" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/snow,/area/exoplanet/snow)
 "ud" = (/obj/effect/landmark/rngcavewalls,/turf/simulated/floor/snow,/area/exoplanet/snow)
-"ue" = (/obj/machinery/door/unpowered/inn/magistratum,/turf/space,/area/cadiaoutpost/oa/magistratumpost)
+"ue" = (/obj/machinery/door/unpowered/inn/magistratum,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/magistratumpost)
 "uf" = (/turf/simulated/wall/wood{icon_state = "rock3"; dir = 1},/area/cadiaoutpost/oa/magistratumpost)
 "ug" = (/obj/structure/torchwall,/turf/simulated/wall/wood{icon_state = "rock3"; dir = 1},/area/cadiaoutpost/oa/magistratumpost)
 "uh" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/magistratumpost)
