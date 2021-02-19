@@ -51,6 +51,7 @@
 			return 0
 	return null
 
+/*
 /obj/item/melee/baton/update_icon()
 	if(status)
 		icon_state = "[initial(name)]_active"
@@ -63,6 +64,8 @@
 		set_light(2, 2, "#D9E9FF")
 	else
 		set_light(0)
+*/
+
 
 /obj/item/melee/baton/examine(mob/user)
 	if(!..(user, 1))
