@@ -221,7 +221,7 @@
 	contains_body = ..()
 	if(contains_body)
 		for(var/mob/living/L in contents)
-			qdel(L)
+			L.isburied = 1
 		to_chat(src, "You fill in the grave and make it seem like nothing was ever there...")
 	return contains_body
 
