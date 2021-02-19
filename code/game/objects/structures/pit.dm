@@ -170,8 +170,9 @@
 
 
 /mob/living/carbon/human/proc/buried(var/mob/living/carbon/human/M)
-	var/mob/living/carbon/human/T = locate() in range(1, get_turf(src))
+	var/mob/living/carbon/human/T = locate() in src.loc
 	var/obj/structure/pit/closed/Q = locate() in T.loc
 
 	if(T && Q)
 		client.isburied = 1
+		buried()
