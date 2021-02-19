@@ -20,6 +20,7 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 	var/is_manifest = FALSE
 	var/next_visibility_toggle = 0
 	var/can_reenter_corpse
+	var/isburied = 0
 	var/bootime = 0
 	var/started_as_observer //This variable is set to 1 when you enter the game as an observer.
 							//If you died in the game and are a ghost - this will remain as null.
@@ -510,6 +511,11 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				to_chat(src, "We control no trenches, we cannot respawn.")
 				return FALSE
 
+	if(client.isburied == 0)
+		to_chat(src, "Your body hasn't been buried yet!")
+		return FALSE
+
+
 	if(!client.holder && respawn_time && timeofdeath && timedifference < respawn_time MINUTES)
 		var/timedifference_text = time2text(respawn_time MINUTES - timedifference,"mm:ss")
 		to_chat(src, "<span class='warning'>You must have been dead for [respawn_time] minute\s to respawn. You have [timedifference_text] left.</span>")
@@ -555,6 +561,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if (!(config.abandon_allowed))
 		to_chat(usr, "<span class='notice'>Respawn is disabled.</span>")
 		return
+
 	//if (!(ticker && ticker.mode))
 	//	to_chat(usr, "<span class='notice'><B>The game has not started. You may not attempt to respawn yet.</B></span>")
 	//	return
