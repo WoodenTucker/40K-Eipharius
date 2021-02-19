@@ -479,7 +479,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	client.images -= ghost_image //remove ourself
 
 
-/mob/observer/ghost/proc/buried(var/mob/living/carbon/human/M)
+/mob/observer/ghost/verb/buried()
+	set name = "Check if buried"
+	set category = "Ghost"
+
 	var/mob/living/carbon/human/T = locate() in src.loc
 	var/obj/structure/pit/closed/Q = locate() in T.loc
 
@@ -522,12 +525,11 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				return FALSE
 
 	if(isburied == 0)
-		to_chat(src, "Your body hasn't been buried yet!")
+		to_chat(src, "Your body hasn't been buried or destroyed yet!")
 		buried()
 		return FALSE
 
 	if(isburied == 1)
-		to_chat(src, "Your body hasn't been buried yet!")
 		buried()
 		return TRUE
 
