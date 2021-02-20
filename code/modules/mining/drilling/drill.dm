@@ -83,7 +83,7 @@
 	else if(istype(get_turf(src), /turf/simulated/floor/exoplanet))
 		var/turf/simulated/floor/exoplanet/T = get_turf(src)
 		if(T.diggable)
-			new /obj/structure/pit(T)
+			new /obj/structure/closet/pit(T)
 			T.diggable = 0
 	else if(istype(get_turf(src), /turf/simulated/floor))
 		var/turf/simulated/floor/T = get_turf(src)

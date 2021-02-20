@@ -22,7 +22,7 @@
 
 
 /obj/item/clothing/suit/child_coat
-	name = "scav coat"
+	name = "undertaker's coat"
 	desc = "Fitted just for scavs."
 	icon_state = "child_redcoat"
 	can_be_worn_by_child = TRUE
@@ -31,7 +31,6 @@
 
 /obj/item/clothing/suit/child_coat/red
 	icon_state = "child_redcoat"
-	warfare_team = RED_TEAM
 
 /obj/item/clothing/suit/child_coat/blue
 	icon_state = "child_bluecoat"

@@ -188,8 +188,8 @@
 	var/contains_body = 0
 
 /obj/structure/closet/pit/attackby(W as obj, mob/user as mob)
-	if (istype(W, /obj/item/pen))
-		var/t = input(user, "What would you like the label to be?", text("[]", src.name), null)  as text
+	if (istype(W, /obj/item/stack/logs))
+		var/t = input(user, "What would you like the headstone to say?", text("[]", src.name), null)  as text
 		if (user.get_active_hand() != W)
 			return
 		if (!in_range(src, user) && src.loc != user)
