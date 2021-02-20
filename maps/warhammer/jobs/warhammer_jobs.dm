@@ -28,7 +28,7 @@
 	/datum/job/envoy,
 	/datum/job/leadinquisitor,
 	/datum/job/innkeeper,
-
+	/datum/job/undertaker,
 	)
 
 /mob/living/carbon/human/proc/warfare_language_shit(var/language_name)

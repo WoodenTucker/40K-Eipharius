@@ -31,6 +31,8 @@
 	icon_state = "child_grey"
 	can_be_worn_by_child = TRUE
 	child_exclusive = TRUE
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|HEAD|HANDS
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/shoes/child_shoes
 	name = "black children's shoes"
@@ -38,6 +40,8 @@
 	icon_state = "child_black"
 	can_be_worn_by_child = TRUE
 	child_exclusive = TRUE
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/child_heir
 	name = "heir's clothing"

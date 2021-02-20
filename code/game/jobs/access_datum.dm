@@ -384,6 +384,12 @@
 	desc = "Medical Equipment"
 	region = ACCESS_REGION_MEDBAY
 
+/var/const/access_guard_armory = 67
+/datum/access/guard_armory
+	id = access_guard_armory
+	desc = "Guard Armory"
+	region = ACCESS_REGION_SECURITY
+
 /******************
 * Central Command *
 ******************/

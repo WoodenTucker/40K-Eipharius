@@ -207,6 +207,7 @@ Pilgrim Fate System
 	l_ear = null
 	r_ear = null
 	id_type = null
+	gloves = null
 
 
 /decl/hierarchy/outfit/job/innkeeper

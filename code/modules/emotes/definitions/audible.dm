@@ -421,3 +421,6 @@
 
 	if(emotesound)
 		playsound(user, emotesound, 50, 0, 1)
+
+	user.custom_emote(2,"praises the Emperor.")
+	user.handle_emote_CD()

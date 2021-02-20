@@ -1959,3 +1959,9 @@
 	result = /datum/reagent/toxin/fertilizer/poo
 	required_reagents = list(/datum/reagent/poo = 1, /datum/reagent/water = 1)
 	result_amount = 5
+
+/datum/chemical_reaction/atepoine
+	name = "Atepoine"
+	result = /datum/reagent/atepoine
+	required_reagents = list(/datum/reagent/carbon = 1, /datum/reagent/water = 1, /datum/reagent/poo = 1)
+	result_amount = 25

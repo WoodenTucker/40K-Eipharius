@@ -428,6 +428,7 @@
 
 /mob
 	var/datum/stack/click_handlers
+	var/isburied = 0
 
 /mob/Destroy()
 	if(click_handlers)

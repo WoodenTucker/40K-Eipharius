@@ -174,8 +174,8 @@
 			var/obj/item/spacecash/ewallet/C = W
 			paid = pay_with_ewallet(C)
 			handled = 1
-		else if (istype(W, /obj/item/spacecash/bundle))
-			var/obj/item/spacecash/bundle/C = W
+		else if (istype(W, /obj/item/stack/thrones))
+			var/obj/item/stack/thrones/C = W
 			paid = pay_with_cash(C)
 			handled = 1
 
@@ -618,6 +618,7 @@
 	icon_state = "boozeomat"
 	icon_deny = "boozeomat-deny"
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/gin = 5,
+					/obj/item/reagent_containers/food/drinks/glass2 = 40,
 					/obj/item/reagent_containers/food/drinks/bottle/whiskey = 5,
 					/obj/item/reagent_containers/food/drinks/bottle/tequilla = 5,
 					/obj/item/reagent_containers/food/drinks/bottle/vodka = 5,

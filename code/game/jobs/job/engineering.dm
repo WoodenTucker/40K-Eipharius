@@ -18,7 +18,7 @@
 	surgery_skill = 0
 	melee_skill = 4
 	ranged_skill = 4
-	announced = FALSE
+	announced = FALSE //never ever change this to anything else unless you want crazy lag on join
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,

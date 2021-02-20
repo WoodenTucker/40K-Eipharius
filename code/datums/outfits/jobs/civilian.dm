@@ -138,3 +138,19 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1
 		)
+
+/decl/hierarchy/outfit/job/service/undertaker
+	name = OUTFIT_JOB_NAME("Undertaker")
+	uniform = /obj/item/clothing/under/child_jumpsuit
+	id_type = /obj/item/card/id/civilian/bartender
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = null
+	r_ear = null
+	suit = /obj/item/clothing/suit/child_coat/red
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_hand = /obj/item/shovel
+	shoes = /obj/item/clothing/shoes/child_shoes
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,)

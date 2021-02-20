@@ -118,9 +118,9 @@
 				return
 		if(4)
 			M.decay++
-			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth.")
+			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth. To communicate with him I will need to be near his symbol.")
 		if(5)
-			var/obj/effect/decal/cleanable/nurgle/T = locate()
+			var/obj/effect/decal/cleanable/nurgle/T = locate() in range(1, get_turf(src))
 			var/mob/living/simple_animal/hostile/retaliate/rat/Q = locate() in T.loc
 			if(T && Q)
 				M.decay++
