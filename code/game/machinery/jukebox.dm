@@ -41,7 +41,8 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Evolution", 'sound/jukebox/barsong10.ogg'),
 		new/datum/track("Sweet", 'sound/jukebox/barsong11.ogg'),
 		new/datum/track("Fight", 'sound/jukebox/barsong12.ogg'),
-		new/datum/track("Russian", 'sound/jukebox/barsong13.ogg')
+		new/datum/track("Russian", 'sound/jukebox/barsong13.ogg'),
+		new/datum/track("Berserk - Forces", 'sound/jukebox/barsong14.ogg'),
 	)
 
 /obj/machinery/media/jukebox/New()
