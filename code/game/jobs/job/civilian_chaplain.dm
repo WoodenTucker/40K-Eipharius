@@ -137,7 +137,7 @@
 	item_state = "censer"
 	w_class = ITEM_SIZE_SMALL
 
-/obj/item/melee/whip/censer/attack(mob/living/carbon/M as mob, mob/living/carbon/human/user as mob) //very quick and simple blessing system
+/obj/item/melee/whip/censer/attack(mob/living/carbon/M as mob, mob/living/carbon/human/user as mob) //very quick and simple blessing system, using attack incase I ever wanna make the censer need to be filled with stuff
 	if (istype(M, /mob/living/carbon/human))
 		if(M.isblessed == 1) //check this first
 			to_chat(user, "<span class='warning'>[M] has already been blessed!</span>")
