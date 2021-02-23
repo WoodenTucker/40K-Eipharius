@@ -245,6 +245,7 @@
 		if(src.is_toggled == 2)
 			if(istype(usr.l_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
 				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
+				qdel(usr.l_hand)
 				update_icon()
 			if(istype(usr.r_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
 				qdel(usr.r_hand)
