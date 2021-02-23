@@ -222,7 +222,7 @@
 	if(contains_body)
 		for(var/mob/living/L in contents)
 			L.isburied = 1
-		to_chat(src, "You fill in the grave and make it seem like nothing was ever there...")
+		visible_message("You fill in the grave and make it seem like nothing was ever there...")
 	return contains_body
 
 /obj/structure/closet/pit/close()

@@ -106,7 +106,6 @@
 	name = OUTFIT_JOB_NAME("Ministorum Priest")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_hand = /obj/item/storage/bible
 	id_type = /obj/item/card/id/civilian/chaplain
 	pda_type = /obj/item/device/pda/chaplain
 	l_ear = null

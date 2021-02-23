@@ -137,4 +137,14 @@
 	item_state = "censer"
 	w_class = ITEM_SIZE_SMALL
 
-	//todo make this bless stuff
+/obj/item/melee/whip/censer/attack(mob/living/carbon/M as mob, mob/living/carbon/human/user as mob) //very quick and simple blessing system
+	if (istype(M, /mob/living/carbon/human))
+		if(M.isblessed == 1) //check this first
+			to_chat(user, "<span class='warning'>[M] has already been blessed!</span>")
+			return 1
+		else
+			M.STAT_LEVEL(dex) += 1
+			M.STAT_LEVEL(str) += 1
+			M.isblessed = 1
+			visible_message("[M] inhales the holy incense and is blessed!")
+

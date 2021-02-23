@@ -254,7 +254,7 @@
 	if(decay >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/nurgle(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
@@ -276,7 +276,7 @@
 	if(lust >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/slaanesh(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
@@ -297,7 +297,7 @@
 	if(rage >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/khorne(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
@@ -318,7 +318,7 @@
 	if(intrigue >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/tzeentch(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
