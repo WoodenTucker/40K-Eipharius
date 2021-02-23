@@ -70,3 +70,25 @@
 	user.AddTopicPrint(src)
 	MT.interact(src, user)
 	return 1
+
+//In memory of Norc
+/obj/item/device/allenwrench
+	name = "Allen Wrench"
+	desc = "The wrench of Saint Allen. For he did stand before the gathering and declare 'No longer shall I struggle with pliers. Instead I shall create a new tool specific for this bolt. Brothers! Throw down your screw drivers and follow me!'. -Exert, The Phillips heresy."
+	icon = 'icons/obj/items/allenwrench.dmi'
+	icon_state = "awrench"
+	item_state = "awrench"
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	canremove = FALSE
+	w_class = ITEM_SIZE_SMALL
+	var/constructionsystem = 0
+	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
+
+/obj/item/device/allenwrench/attack(mob/living/carbon/C, mob/user)
+	if(istype(C))
+		visible_message("<span class='notice'>[C] is blessed in the name of Saint Allen.</span>")
+	..()
+
+/obj/item/device/allenwrench/attack_self(usr)
+	to_chat(usr,"<span class='warning'>You can feel it.. you can just feel genius.</span>")
