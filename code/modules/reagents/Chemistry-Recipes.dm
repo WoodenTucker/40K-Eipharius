@@ -1963,5 +1963,5 @@
 /datum/chemical_reaction/atepoine
 	name = "Atepoine"
 	result = /datum/reagent/atepoine
-	required_reagents = list(/datum/reagent/carbon = 1, /datum/reagent/water = 1, /datum/reagent/poo = 1)
-	result_amount = 25
+	required_reagents = list(/datum/reagent/carbon = 1, /datum/chemical_reaction/tramadol = 1, /datum/reagent/poo = 1) //we'll see if this is tough enough
+	result_amount = 5
