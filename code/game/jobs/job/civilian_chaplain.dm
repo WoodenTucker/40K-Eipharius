@@ -160,7 +160,7 @@
 		O.accuracy += 1
 		O.armor_penetration += 1
 		O.isblessed = 1
-		playsound(src, 'sound/voice/blessing.ogg', 50, 0, -1)
+		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
@@ -173,5 +173,5 @@
 		O.sharpness += 5
 		O.block_chance += 5
 		O.isblessed = 1
-		playsound(src, 'sound/voice/blessing.ogg', 50, 0, -1)
+		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
