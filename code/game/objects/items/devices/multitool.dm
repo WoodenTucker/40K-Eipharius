@@ -93,3 +93,18 @@
 
 /obj/item/device/allenwrench/attack_self(usr)
 	to_chat(usr,"<span class='warning'>You can feel it.. you can just feel genius.</span>")
+
+
+/obj/item/device/allenwrench/attackby(var/obj/item/gun/O, var/mob/user)
+	if(O.tinkered == 1)
+		to_chat(user, "<span class='warning'>[O] has already been upgraded!</span>")
+		return 1
+	else if(prob(10))
+		qdel(O)
+		new /obj/item/gun/energy/las/lasgun/tinkered (get_turf(src))
+		playsound(loc, 'sound/items/Ratchet.ogg', 70, 1)
+		visible_message("[O] is nimbly upgraded by the skilled tech-priest.")
+	else
+		playsound(loc, 'sound/items/Ratchet.ogg', 50, 1)
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		visible_message("[user] tinkers with the [O]...")
