@@ -27,6 +27,7 @@
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
 	drop_sound = 'sound/items/drop_sword.ogg'
 	unbreakable = TRUE
+	var/isblessed = 0
 
 
 /obj/item/material/sword/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
