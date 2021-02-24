@@ -189,8 +189,8 @@
 	title = "Principal Agent"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_HIGH
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Ministorum, the Ordos Hereticus"

@@ -96,7 +96,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	pda_type = /obj/item/device/pda/lawyer
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	head = /obj/item/clothing/head/cerberus
+	head = /obj/item/clothing/head/inqhelm
+	mask = /obj/item/clothing/mask/gas/security/agent
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
