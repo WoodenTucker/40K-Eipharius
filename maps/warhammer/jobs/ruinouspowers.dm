@@ -118,9 +118,9 @@
 				return
 		if(4)
 			M.decay++
-			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth. To communicate with him I will need to be near his symbol.")
+			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth. To communicate with him I will need to stand upon his symbol.")
 		if(5)
-			var/obj/effect/decal/cleanable/nurgle/T = locate() in range(1, get_turf(src))
+			var/obj/effect/decal/cleanable/nurgle/T = locate() in src.loc
 			var/mob/living/simple_animal/hostile/retaliate/rat/Q = locate() in T.loc
 			if(T && Q)
 				M.decay++
@@ -221,6 +221,21 @@
 	if(decay > 0)
 		to_chat(M, "You are already sworn to Nurgle!")	//usr has already selected another path!
 		return
+	switch(M.intrigue)
+		if(0)
+			var/obj/structure/toilet/T = locate() in src.loc
+			if(T)
+				M.intrigue++
+				to_chat(M, "Well done! You are wittier than I first thought!")
+			else
+				to_chat(M, "A wily voice pervades your mind. Solve 9 of my 999 riddles to start down the path of the deceiver. Sit upon the throne of both kings and beggars.")
+		if(1)
+			STAT_LEVEL(int) +=1
+			M.intrigue++
+			M.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
+			to_chat(M, "One down, eight to go!")
+
+
 
 
 
