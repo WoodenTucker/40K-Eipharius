@@ -196,6 +196,7 @@
 
 
 
+
 /////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////Begin Tzeentch//////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -234,6 +235,27 @@
 			M.intrigue++
 			M.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
 			to_chat(M, "One down, eight to go!")
+		if(2)
+			M.verbs += /mob/living/carbon/human/proc/tzeentchrune
+			to_chat(M, "To hear my next riddle memorize this symbol, draw it and stand upon it!")
+			M.intrigue++
+		if(3)
+			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
+			if(T)
+				M.intrigue++
+				to_chat(M, "Good... Good! From now on I will only speak to you while you stand upon this rune... Now, for your next riddle.")
+			else
+				to_chat(M, "I haven't drawn his symbol or I'm not standing directly on it!")
+		if(4)
+			var/obj/structure/closet/pit/G = locate() in src.loc
+			if(G)
+				M.intrigue++
+				STAT_LEVEL(str)+=1
+				to_chat(M, "Well done! Maybe you aren't as dim as you appear... Seek me out upon my rune for your next riddle.")
+			else
+				to_chat(M, "You'll find me in a place of stone, Where silence cloaks the ground, Search through all the empty names, And finally I'll be found.")
+
+
 
 
 
