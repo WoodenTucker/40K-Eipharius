@@ -129,8 +129,8 @@
 	department = "Medical"
 	department_flag = MED|SCI
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0 //not ready yet
 	minimal_player_age = 7
 	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
