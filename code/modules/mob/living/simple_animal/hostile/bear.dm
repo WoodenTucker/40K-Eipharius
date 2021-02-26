@@ -45,10 +45,6 @@
 	if(!.)
 		return
 
-	if(loc && istype(loc,/turf/simulated/floor/snow))
-		icon_state = "bear"
-	else
-		icon_state = "bearfloor"
 
 	switch(stance)
 

@@ -22,6 +22,7 @@
 		..()
 		H.fully_replace_character_name("Abbot [current_name]")
 		H.add_stats(rand(8,11), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		H.add_skills(rand(2,4),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
