@@ -211,7 +211,7 @@
 		to_chat(M, "<span class='notice'>You can't choose a path when you're dead.</span>")
 		return
 	if(!M.canmove || M.stat || M.restrained())
-		to_chat(M, "You cannot call upon Nurgle while restrained!")	//user is tied up
+		to_chat(M, "You cannot call upon Tzeentch while restrained!")	//user is tied up
 		return
 	if(rage > 0)
 		to_chat(M, "You are already sworn to Khorne!")	//usr has already selected another path!
