@@ -22,6 +22,7 @@
 		..()
 		H.fully_replace_character_name("Abbot [current_name]")
 		H.add_stats(rand(8,11), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		H.add_skills(rand(2,4),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -137,4 +138,41 @@
 	item_state = "censer"
 	w_class = ITEM_SIZE_SMALL
 
-	//todo make this bless stuff
+//this blesses humans, pretty straight forward
+/obj/item/melee/whip/censer/attack(mob/living/carbon/M as mob, mob/living/carbon/human/user as mob) //very quick and simple blessing system, using attack incase I ever wanna make the censer need to be filled with stuff
+	if (istype(M, /mob/living/carbon/human))
+		if(M.isblessed == 1) //check this first
+			to_chat(user, "<span class='warning'>[M] has already been blessed!</span>")
+			return 1
+		else
+			M.STAT_LEVEL(dex) += 1
+			M.STAT_LEVEL(str) += 1
+			M.isblessed = 1
+			visible_message("[M] inhales the holy incense and is blessed!")
+
+
+//this blesses guns
+/obj/item/melee/whip/censer/attackby(var/obj/item/gun/O, var/mob/user)
+	if(O.isblessed == 1)
+		to_chat(user, "<span class='warning'>[O] has already been blessed!</span>")
+		return 1
+	else
+		O.name = "blessed [O.name]"
+		O.accuracy += 1
+		O.armor_penetration += 1
+		O.isblessed = 1
+		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
+		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
+
+//this blesses swords
+/obj/item/melee/whip/censer/attackby(var/obj/item/material/sword/O, var/mob/user)
+	if(O.isblessed == 1)
+		to_chat(user, "<span class='warning'>[O] has already been blessed!</span>")
+		return 1
+	else
+		O.name = "blessed [O.name]"
+		O.sharpness += 5
+		O.block_chance += 5
+		O.isblessed = 1
+		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
+		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")

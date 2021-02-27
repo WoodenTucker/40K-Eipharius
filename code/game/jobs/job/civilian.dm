@@ -189,8 +189,8 @@
 	title = "Principal Agent"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_HIGH
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Ministorum, the Ordos Hereticus"
@@ -250,3 +250,33 @@
 	. = ..()
 	if(.)
 		H.implant_loyalty(H)
+
+
+/datum/job/undertaker
+	title = "Undertaker"
+	department = "Service"
+	department_flag = CIV
+	social_class = SOCIAL_CLASS_MIN
+	total_positions = 3
+	spawn_positions = 3
+	latejoin_at_spawnpoints = TRUE
+	child_role = TRUE
+	open_when_dead = 1
+	supervisors = "the Abbot and every adult you see."
+	selection_color = "#515151"
+	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
+	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
+	announced = FALSE
+
+
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //kids are dumb and weak
+		H.add_skills(rand(1,2),rand(1,2),0,0,0)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.set_trait(new/datum/trait/death_tolerant())
+		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Rogue Trader you owe him your life. However, you must earn your keep. The Rogue Trader has placed you in the charge of the Abbot who has you burying the dead. This is a vital task, it is said bodies that are left unburied are unable to move on to the Emperor's Grace! Make sure you bury any body you see! </font></b></span>")

@@ -22,7 +22,7 @@
 
 
 /obj/item/clothing/suit/child_coat
-	name = "scav coat"
+	name = "undertaker's coat"
 	desc = "Fitted just for scavs."
 	icon_state = "child_redcoat"
 	can_be_worn_by_child = TRUE
@@ -31,7 +31,6 @@
 
 /obj/item/clothing/suit/child_coat/red
 	icon_state = "child_redcoat"
-	warfare_team = RED_TEAM
 
 /obj/item/clothing/suit/child_coat/blue
 	icon_state = "child_bluecoat"
@@ -879,6 +878,7 @@ Imperial Guardsman
 	desc = "The holy garments marking the wearer as a sister hospitaller"
 	icon_state = "medical_rig"
 	item_state = "medical_rig"
+	flags_inv = BLOCKHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -979,6 +979,15 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/agent2
+	name = "agent's holy armor"
+	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest and seals of purity to ward off chaos"
+	icon_state = "acolytecoat"
+	item_state = "acolytecoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/storage/hooded/inquisitor
 	name = "inquisitor's immaculate armor"

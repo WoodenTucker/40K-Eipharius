@@ -96,7 +96,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	pda_type = /obj/item/device/pda/lawyer
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	head = /obj/item/clothing/head/cerberus
+	head = /obj/item/clothing/head/inqhelm
+	mask = /obj/item/clothing/mask/gas/security/agent
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
@@ -106,10 +107,9 @@
 	name = OUTFIT_JOB_NAME("Ministorum Priest")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_hand = /obj/item/storage/bible
 	id_type = /obj/item/card/id/civilian/chaplain
 	pda_type = /obj/item/device/pda/chaplain
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	suit = /obj/item/clothing/suit/ministorumrobes
@@ -138,3 +138,19 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1
 		)
+
+/decl/hierarchy/outfit/job/service/undertaker
+	name = OUTFIT_JOB_NAME("Undertaker")
+	uniform = /obj/item/clothing/under/child_jumpsuit
+	id_type = /obj/item/card/id/civilian/bartender
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = null
+	r_ear = null
+	suit = /obj/item/clothing/suit/child_coat/red
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_hand = /obj/item/shovel
+	shoes = /obj/item/clothing/shoes/child_shoes
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,)

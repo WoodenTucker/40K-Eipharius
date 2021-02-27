@@ -5,7 +5,7 @@
 	icon = 'icons/mob/Demon.dmi'
 	icon_state = "demon"
 	icon_living = "demon"
-	icon_dead = "demon_dead"
+	icon_dead = "demon"
 	maxHealth = 40
 	health = 40
 	meat_type = /obj/item/reagent_containers/food/snacks/khornemeat
@@ -22,7 +22,7 @@
 	see_in_dark = 10
 	wander = 1
 
-	speed = 3 //fast but squishy
+	speed = 6 //fast but squishy
 
 	min_gas = null
 	max_gas = null

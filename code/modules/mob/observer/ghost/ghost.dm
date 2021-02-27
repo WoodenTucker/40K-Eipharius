@@ -20,7 +20,7 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 	var/is_manifest = FALSE
 	var/next_visibility_toggle = 0
 	var/can_reenter_corpse
-	var/isburied = 0
+	var/can_respawn_is_buried
 	var/bootime = 0
 	var/started_as_observer //This variable is set to 1 when you enter the game as an observer.
 							//If you died in the game and are a ghost - this will remain as null.
@@ -74,6 +74,17 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 
 	if(cult)
 		cult.add_ghost_magic(src)
+
+	var/obj/structure/closet/pit/B = locate() in src.loc
+	if(ismob(body))
+		T = get_turf(body)
+
+		if(B && T)
+			isburied = 1
+
+
+
+
 
 	ghost_multitool = new(src)
 
@@ -217,7 +228,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!client)	return
 	if(!(mind && mind.current && can_reenter_corpse))
 		to_chat(src, "<span class='warning'>You have no body.</span>")
-		isburied = 1
 		return
 	if(mind.current.key && copytext(mind.current.key,1,2)!="@")	//makes sure we don't accidentally kick any clients
 		to_chat(src, "<span class='warning'>Another consciousness is in your body... it is resisting you.</span>")
@@ -513,17 +523,15 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			if(GLOB.blue_captured_zones.len < 1)
 				to_chat(src, "We control no trenches, we cannot respawn.")
 				return FALSE
-	/*
+
 	if(isburied == 0)
-		to_chat(src, "Your body hasn't been buried or destroyed yet!")
-		buried()
+		to_chat(src, "Your body hasn't been buried yet!")
 		return FALSE
 
 	if(isburied == 1)
-		buried()
 		return TRUE
-		One day I'll make you work
-		*/
+
+
 
 
 

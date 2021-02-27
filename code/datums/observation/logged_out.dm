@@ -18,6 +18,5 @@ GLOBAL_DATUM_INIT(logged_out_event, /decl/observ/logged_out, new)
 ******************/
 
 /mob/Logout()
-	message_admins("<span class='notice'>Logout: [key] id:[computer_id]</span>")
 	GLOB.logged_out_event.raise_event(src, my_client)
 	..()

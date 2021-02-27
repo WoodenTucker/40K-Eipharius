@@ -118,9 +118,9 @@
 				return
 		if(4)
 			M.decay++
-			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth. To communicate with him I will need to be near his symbol.")
+			to_chat(M, "There will be no stories this time. He has a request for me. I want to please him, I want him to prove to him my worth. To communicate with him I will need to stand upon his symbol.")
 		if(5)
-			var/obj/effect/decal/cleanable/nurgle/T = locate() in range(1, get_turf(src))
+			var/obj/effect/decal/cleanable/nurgle/T = locate() in src.loc
 			var/mob/living/simple_animal/hostile/retaliate/rat/Q = locate() in T.loc
 			if(T && Q)
 				M.decay++
@@ -196,6 +196,7 @@
 
 
 
+
 /////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////Begin Tzeentch//////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -210,7 +211,7 @@
 		to_chat(M, "<span class='notice'>You can't choose a path when you're dead.</span>")
 		return
 	if(!M.canmove || M.stat || M.restrained())
-		to_chat(M, "You cannot call upon Nurgle while restrained!")	//user is tied up
+		to_chat(M, "You cannot call upon Tzeentch while restrained!")	//user is tied up
 		return
 	if(rage > 0)
 		to_chat(M, "You are already sworn to Khorne!")	//usr has already selected another path!
@@ -221,6 +222,42 @@
 	if(decay > 0)
 		to_chat(M, "You are already sworn to Nurgle!")	//usr has already selected another path!
 		return
+	switch(M.intrigue)
+		if(0)
+			var/obj/structure/toilet/T = locate() in src.loc
+			if(T)
+				M.intrigue++
+				to_chat(M, "Well done! You are wittier than I first thought!")
+			else
+				to_chat(M, "A wily voice pervades your mind. Solve 9 of my 999 riddles to start down the path of the deceiver. Sit upon the throne of both kings and beggars.")
+		if(1)
+			STAT_LEVEL(int) +=1
+			M.intrigue++
+			M.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
+			to_chat(M, "One down, eight to go!")
+		if(2)
+			M.verbs += /mob/living/carbon/human/proc/tzeentchrune
+			to_chat(M, "To hear my next riddle memorize this symbol, draw it and stand upon it!")
+			M.intrigue++
+		if(3)
+			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
+			if(T)
+				M.intrigue++
+				to_chat(M, "Good... Good! From now on I will only speak to you while you stand upon this rune... Now, for your next riddle.")
+			else
+				to_chat(M, "I haven't drawn his symbol or I'm not standing directly on it!")
+		if(4)
+			var/obj/structure/closet/pit/G = locate() in src.loc
+			if(G)
+				M.intrigue++
+				STAT_LEVEL(str)+=1
+				to_chat(M, "Well done! Maybe you aren't as dim as you appear... Seek me out upon my rune for your next riddle.")
+			else
+				to_chat(M, "You'll find me in a place of stone, Where silence cloaks the ground, Search through all the empty names, And finally I'll be found.")
+
+
+
+
 
 
 
@@ -254,7 +291,7 @@
 	if(decay >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/nurgle(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
@@ -276,7 +313,7 @@
 	if(lust >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/slaanesh(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
@@ -297,7 +334,7 @@
 	if(rage >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/khorne(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
@@ -318,7 +355,7 @@
 	if(intrigue >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/tzeentch(get_turf(src))
-		M.health -= 2
+		M.adjustBruteLoss(2)
 		M.add_fingerprint(src)
 		to_chat(M, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return

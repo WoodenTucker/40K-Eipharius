@@ -1161,3 +1161,42 @@ Area basic template
 	icon_state = "forwardpost"
 	requires_power = 0
 	dynamic_lighting = 1
+
+/area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
+
+/area/cadiaoutpost/oa/theforest/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/theforest))
+		L.clear_fullscreen("snowfall_heavy_old")
+
+/area/cadiaoutpost/oa/village/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
+
+/area/cadiaoutpost/oa/village/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/village))
+		L.clear_fullscreen("snowfall_heavy_old")
+
+/area/cadiaoutpost/oa/villageinside //just so snow doesn't come inside
+	name = "Inside Village"
+	icon_state = "village"
+	music = 'sound/music/village.ogg'
+	requires_power = 0
+	dynamic_lighting = 1
+
+
+/area/cadiaoutpost/oa/farm/Entered(mob/living/L,  atom/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))//Doesn't work but this does stop the lag.
+		L.overlay_fullscreen("snowfall_heavy_old", /obj/screen/fullscreen/snowstorm)
+
+/area/cadiaoutpost/oa/farm/Exited(mob/living/L, area/A)
+	. = ..()
+	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))
+		L.clear_fullscreen("snowfall_heavy_old")
+

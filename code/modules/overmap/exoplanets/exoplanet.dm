@@ -416,7 +416,7 @@
 		visible_message("<span class='notice'>\The [user] starts digging \the [src]</span>")
 		if(do_after(user, 50))
 			to_chat(user,"<span class='notice'>You dig a deep pit.</span>")
-			new /obj/structure/pit(src)
+			new /obj/structure/closet/pit(src)
 			diggable = 0
 		else
 			to_chat(user,"<span class='notice'>You stop shoveling.</span>")

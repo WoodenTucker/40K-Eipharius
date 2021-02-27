@@ -512,6 +512,23 @@
 	..()
 	if(!mind.assigned_role)	mind.assigned_role = "Assistant"	//defualt
 
+/mob/living/carbon/human/mind_initialize()
+	..()
+	mind.assigned_role = "Slaaneshi Cultist"
+
+
+/mob/living/carbon/human/mind_initialize()
+	..()
+	mind.assigned_role = "Khorne Cultist"
+
+/mob/living/carbon/human/mind_initialize()
+	..()
+	mind.assigned_role = "Tzeentch Cultist"
+
+/mob/living/carbon/human/mind_initialize()
+	..()
+	mind.assigned_role = "Nurgle Cultist"
+
 //slime
 /mob/living/carbon/slime/mind_initialize()
 	..()
@@ -558,6 +575,11 @@
 /mob/living/simple_animal/construct/wraith/mind_initialize()
 	..()
 	mind.assigned_role = "Wraith"
+	mind.special_role = "Cultist"
+
+/mob/living/simple_animal/construct/armoured/mind_initialize()
+	..()
+	mind.assigned_role = "Juggernaut"
 	mind.special_role = "Cultist"
 
 /mob/living/simple_animal/construct/armoured/mind_initialize()

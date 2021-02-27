@@ -86,6 +86,8 @@
 	var/broken = FALSE //weapon broken or no
 	var/jammed_icon
 	var/gun_type = "generic"
+	var/isblessed = 0
+	var/tinkered = 0
 
 	var/next_fire_time = 0
 
