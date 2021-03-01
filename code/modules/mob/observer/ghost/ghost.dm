@@ -84,8 +84,6 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 
 
 
-
-
 	ghost_multitool = new(src)
 
 	GLOB.ghost_mob_list += src

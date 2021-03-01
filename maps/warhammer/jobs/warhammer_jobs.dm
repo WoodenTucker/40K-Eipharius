@@ -31,13 +31,8 @@
 	/datum/job/undertaker,
 	)
 
-/mob/living/carbon/human/proc/warfare_language_shit(var/language_name)
+/mob/living/carbon/human/proc/warfare_language_shit(var/language_name) //reworked from matts original intention, the default language is gothic, this will allow you to now add a faction specific language.
 	if(aspect_chosen(/datum/aspect/one_word))
 		return
 	remove_language(LANGUAGE_GALCOM)
-	var/datum/language/L = null
 	add_language(language_name)
-	L = all_languages[language_name]
-
-	if(L)
-		default_language = L
