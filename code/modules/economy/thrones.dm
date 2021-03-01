@@ -226,7 +226,7 @@
 
 /obj/item/thrones/ewallet
 	name = "Charge card"
-	icon_state = "efundcard"
+	icon_state = "munitorium_efundcard"
 	desc = "A card that holds an amount of money."
 	var/owner_name = "" //So the ATM can set it so the EFTPOS can put a valid name on transactions.
 
