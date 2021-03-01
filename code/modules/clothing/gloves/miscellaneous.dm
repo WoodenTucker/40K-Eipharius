@@ -96,6 +96,8 @@
 	canremove = 0
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
+	icon_state = "techpriest"
+	item_state = "techpriest"
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."
