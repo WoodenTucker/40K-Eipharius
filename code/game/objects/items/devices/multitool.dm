@@ -96,8 +96,12 @@
 
 
 /obj/item/device/allenwrench/attackby(var/obj/item/gun/energy/las/lasgun/O, var/mob/user) //lets tech goys modify lasguns to full auto
-	if(O.tinkered == 1)
+//	if(O.tinkered == 1)
+	if(istype(O,/obj/item/gun/energy/las/lasgun/tinkered))
 		to_chat(user, "<span class='warning'>[O] has already been upgraded!</span>")
+		return 1
+	else if (!(istype(O, /obj/item/gun/energy/las/lasgun)))
+		to_chat(user, "<span class='warning'>[O] cannot be upgraded!</span>")
 		return 1
 	else if(prob(15))
 		qdel(O)
