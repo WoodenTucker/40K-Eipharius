@@ -940,3 +940,14 @@ var/list/admin_verbs_mentor = list(
 	T.add_spell(new S)
 	feedback_add_details("admin_verb","GS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("gave [key_name(T)] the spell [S].")
+
+/client/proc/create_party() // --Wel
+	set category = "Fun"
+	set name = "Spawn Lateparty"
+	set desc = "Spawns the selected late party."
+
+	var/party = list("Tau", "Orks", "Tyranids", "Stormtroopers", "Dark Eldar", "Eldar", "Cultists")
+
+
+	feedback_add_details("admin_verb","CP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	log_and_message_admins("Spawned a late party.")

@@ -247,3 +247,11 @@
 	desc = "A steel hound helmet marking one as a hound of the Inquisition"
 	icon_state = "cerberus"
 	item_state = "cerberus"
+
+/obj/item/clothing/head/inqhelm
+	name = "agent helmet"
+	desc = "An armored helmet displaying the mark of the Inquisition."
+	icon_state = "inq_helm"
+	item_state = "inq_helm"
+	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
+	siemens_coefficient = 0.9

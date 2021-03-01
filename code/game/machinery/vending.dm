@@ -170,11 +170,11 @@
 		//if (I) //for IDs and PDAs and wallets with IDs
 		//	paid = pay_with_card(I,W)
 		//	handled = 1
-		if (istype(W, /obj/item/spacecash/ewallet))
-			var/obj/item/spacecash/ewallet/C = W
+		if (istype(W, /obj/item/thrones/ewallet))
+			var/obj/item/thrones/ewallet/C = W
 			paid = pay_with_ewallet(C)
 			handled = 1
-		else if (istype(W, /obj/item/stack/thrones))
+		else if (istype(W, /obj/item/thrones))
 			var/obj/item/stack/thrones/C = W
 			paid = pay_with_cash(C)
 			handled = 1
@@ -186,7 +186,7 @@
 			SSnanoui.update_uis(src)
 			return // don't smack that machine with your 2 credits
 
-	if (I || istype(W, /obj/item/spacecash))
+	if (I || istype(W, /obj/item/thrones))
 		attack_hand(user)
 		return
 	else if(istype(W, /obj/item/screwdriver))
@@ -233,7 +233,7 @@
 /**
  *  Receive payment with cashmoney.
  */
-/obj/machinery/vending/proc/pay_with_cash(var/obj/item/spacecash/bundle/cashmoney)
+/obj/machinery/vending/proc/pay_with_cash(var/obj/item/thrones/bundle/cashmoney)
 	if(currently_vending.price > cashmoney.worth)
 		// This is not a status display message, since it's something the character
 		// themselves is meant to see BEFORE putting the money in
@@ -263,7 +263,7 @@
  * Takes payment for whatever is the currently_vending item. Returns 1 if
  * successful, 0 if failed.
  */
-/obj/machinery/vending/proc/pay_with_ewallet(var/obj/item/spacecash/ewallet/wallet)
+/obj/machinery/vending/proc/pay_with_ewallet(var/obj/item/thrones/ewallet/wallet)
 	visible_message("<span class='info'>\The [usr] swipes \the [wallet] through \the [src].</span>")
 	if(currently_vending.price > wallet.worth)
 		src.status_message = "Insufficient funds on chargecard."

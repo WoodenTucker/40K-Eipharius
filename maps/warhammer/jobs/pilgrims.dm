@@ -35,15 +35,16 @@ Pilgrim Fate System
 
 //yeah this might be the most retarded way of doing it but it works - plz no bully Matt
 
-/mob/living/carbon/human/proc/penitentclass(var/mob/living/carbon/human/M)
+//mob/living/carbon/human/proc/penitentclass(var/mob/living/carbon/human/M)
+/mob/living/carbon/human/proc/penitentclass()
 	set name = "Select your class"
 	set category = "Pilgrim"
 	set desc = "Choose your new profession on this strange world."
-	if(!ishuman(M))
-		to_chat(M, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
 		return
-	if(M.stat == DEAD)
-		to_chat(M, "<span class='notice'>You can't choose a class when you're dead.</span>")
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 
 	var/mob/living/carbon/human/U = src
@@ -53,7 +54,7 @@ Pilgrim Fate System
 	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Miner","Stalker","Scum") //adds a fate randomly to essentially give rng pick
 
-	M.mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
+	src.mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates

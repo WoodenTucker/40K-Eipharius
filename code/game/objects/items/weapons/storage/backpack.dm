@@ -226,6 +226,38 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
+/obj/item/storage/backpack/satchel/warfare/techpriest
+	desc = "Fit for war, and not much else."
+	icon_state = "warfare_satchel"
+	canremove = FALSE
+	var/can_toggle = 1
+	var/is_toggled = 1
+
+	verb/toggleallen()
+		set name = "Equip Allen Wrench"
+		set category = "Tools"
+		set src in usr
+		if(!usr.canmove || usr.stat || usr.restrained())
+			return
+		if(!can_toggle)
+			to_chat(usr,"This tool cannot be toggled!")
+			return
+		if(src.is_toggled == 2)
+			if(istype(usr.l_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
+				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
+				qdel(usr.l_hand)
+				update_icon()
+			if(istype(usr.r_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
+				qdel(usr.r_hand)
+				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
+			src.icon_state = initial(icon_state)
+			to_chat(usr,"You put away the Wrench of Saint Allen.")
+			src.is_toggled = 1
+		else
+			to_chat(usr,"You pull out a Wrench of Saint Allen.")
+			usr.put_in_hands(new /obj/item/device/allenwrench(usr))
+			src.is_toggled = 2
+
 /obj/item/storage/backpack/satchel/warfare/chestrig
 	name = "Chestrig"
 	desc = "Holds ammo and other goodies. But not a lot of it."

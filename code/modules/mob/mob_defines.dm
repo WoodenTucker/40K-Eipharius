@@ -203,3 +203,7 @@
 	var/communing_with_dead = FALSE //Let's you talk in dsay without being an admin, or dead.
 
 	var/warfare_faction = null //The warfare faction they're apart of. Used by humans and ghosts primarily. Placed all the way up here so that when you logout as something other than a human you don't get team switched.
+
+	var/buff_cd = 0 //will be used so people can't spam buffs
+
+	var/isblessed = 0 //used with censer blessings

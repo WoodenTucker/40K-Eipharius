@@ -30,6 +30,7 @@ datum/track/New(var/title_name, var/audio)
 	var/datum/track/current_track
 	var/list/datum/track/tracks = list(
 		new/datum/track("Flexifunk", 'sound/jukebox/barsong1.ogg'),
+		new/datum/track("Berserk - Forces", 'sound/jukebox/barsong14.ogg'),
 		new/datum/track("Suffer", 'sound/jukebox/barsong2.ogg'),
 		new/datum/track("Cherry", 'sound/jukebox/barsong3.ogg'),
 		new/datum/track("Game", 'sound/jukebox/barsong4.ogg'),
@@ -41,7 +42,8 @@ datum/track/New(var/title_name, var/audio)
 		new/datum/track("Evolution", 'sound/jukebox/barsong10.ogg'),
 		new/datum/track("Sweet", 'sound/jukebox/barsong11.ogg'),
 		new/datum/track("Fight", 'sound/jukebox/barsong12.ogg'),
-		new/datum/track("Russian", 'sound/jukebox/barsong13.ogg')
+		new/datum/track("Russian", 'sound/jukebox/barsong13.ogg'),
+		,
 	)
 
 /obj/machinery/media/jukebox/New()
