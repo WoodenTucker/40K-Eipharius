@@ -38,7 +38,7 @@
 	description_antag = "Only amateurs skip grabbing a tool-belt."
 	icon_state = "utilitybelt"
 	item_state = "utility"
-	storage_slots = 10
+	storage_slots = 16
 	can_hold = list(
 		///obj/item/combitool,
 		/obj/item/crowbar,
