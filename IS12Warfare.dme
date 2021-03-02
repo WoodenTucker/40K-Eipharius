@@ -1649,6 +1649,7 @@
 #include "code\modules\mob\living\carbon\human\species\races\astartes.dm"
 #include "code\modules\mob\living\carbon\human\species\races\eldar.dm"
 #include "code\modules\mob\living\carbon\human\species\races\kroot.dm"
+#include "code\modules\mob\living\carbon\human\species\races\krootboys.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\abilities.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\ork_species.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\orks.dm"

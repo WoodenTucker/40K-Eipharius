@@ -414,3 +414,10 @@ Begin Warhammer loadouts
 	if(aspect_chosen(/datum/aspect/nightfare))
 		backpack_contents += list(/obj/item/ammo_box/flares = 1 , /obj/item/torch/self_lit = 1)
 	..()
+
+
+/decl/hierarchy/outfit/job/kroot
+	uniform = /obj/item/clothing/under/rank/kroot
+	shoes = null
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = null

@@ -128,3 +128,8 @@ mob/observer/check_airflow_movable()
 	for(var/mob/observer/O in GLOB.player_list)
 		if(jobban_isbanned(O, "Syndicate")) //so I can ban shitters
 			continue
+
+/mob/living/carbon/human/kroot/proc/request_player() //this grabs the friend and requests it
+	for(var/mob/observer/O in GLOB.player_list)
+		if(jobban_isbanned(O, "Syndicate")) //so I can ban shitters
+			continue
