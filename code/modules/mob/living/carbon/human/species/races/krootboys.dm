@@ -1,7 +1,7 @@
 /datum/species/kroot
 	name = SPECIES_KROOT
 	name_plural = "Kroot"
-	secondary_langs = list(LANGUAGE_ORKY)
+	secondary_langs = list(LANGUAGE_TAU)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/r_kroot.dmi'
 	deform = 'icons/mob/human_races/r_def_kroot.dmi'
@@ -27,8 +27,8 @@
 	name = "kroot"
 	real_name = "kroot"
 	gender = MALE
-	maxHealth = 150
-	health = 150
+	maxHealth = 200
+	health = 200
 	status_flags = 0
 	var/isempty = 0
 
@@ -43,12 +43,9 @@
 /mob/living/carbon/human/kroot/Initialize()
 	. = ..()
 	fully_replace_character_name(random_kroot_name(src.gender))
-	zone_sel = new /obj/screen/zone_sel( null )
-	zone_sel.selecting = pick("chest", "head")
 	warfare_faction = TAU
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
 	outfit.equip(src)
-	a_intent = I_HURT
 
 	hand = 0//Make sure one of their hands is active.
 	var/weapon = pick(/obj/item/crowbar, /obj/item/melee/classic_baton/trench_club, /obj/item/melee/classic_baton)
