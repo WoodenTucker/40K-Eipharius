@@ -13,6 +13,7 @@
 	var/lust = 0 //slaanesh favor
 	var/decay = 0 //nurgle favor
 	var/intrigue = 0 //tzeentch favor
+	var/isdrawing = 0 //used to stop rune spam
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 

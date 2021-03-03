@@ -75,7 +75,7 @@
 	src.warfare_language_shit(TAU) //secondary language
 	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats //removes verb at the end so they can't spam it for whatever reason
 
-
+//this is the proc that lets Kroot eat bodies.
 /mob/living/carbon/human/kroot/proc/kroot_eat()
 	set category = "Kroot"
 	set name = "Consume Corpse"
@@ -129,6 +129,7 @@
 	iseating = 0
 
 	T.death(0)
+	T.isburied = 1
 	T.gib()
 	src.adjustBruteLoss(-40)
 	src.adjustOxyLoss(-40)

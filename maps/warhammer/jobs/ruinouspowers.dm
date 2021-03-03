@@ -288,13 +288,20 @@
 	if(!src.canmove || src.stat || src.restrained())
 		to_chat(src, "You can't draw a rune while restrained.")	//user is tied up
 		return
+	if(isdrawing)
+		to_chat(src, "<span class='warning'>We are drawing a rune!</span>")
+		return
+	isdrawing = 1
 	if(decay >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/nurgle(get_turf(src))
 		src.adjustBruteLoss(2)
 		src.add_fingerprint(src)
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+		isdrawing = 0
 		return
+
+
 
 
 /mob/living/carbon/human/proc/slaaneshrune()
@@ -310,11 +317,16 @@
 	if(!src.canmove || src.stat || src.restrained())
 		to_chat(src, "You can't draw a rune while restrained.")	//user is tied up
 		return
+	if(isdrawing)
+		to_chat(src, "<span class='warning'>We are drawing a rune!</span>")
+		return
+	isdrawing = 1
 	if(lust >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/slaanesh(get_turf(src))
 		src.adjustBruteLoss(2)
 		src.add_fingerprint(src)
+		isdrawing = 0
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
 
@@ -331,11 +343,17 @@
 	if(!src.canmove || src.stat || src.restrained())
 		to_chat(src,"You can't draw a rune while restrained.")	//user is tied up
 		return
+	if(isdrawing)
+		to_chat(src, "<span class='warning'>We are drawing a rune!</span>")
+		return
+	isdrawing = 1
+
 	if(rage >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/khorne(get_turf(src))
 		src.adjustBruteLoss(2)
 		src.add_fingerprint(src)
+		isdrawing = 0
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		return
 
@@ -349,13 +367,18 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a path when you're dead.</span>")
 		return
+	if(isdrawing)
+		to_chat(src, "<span class='warning'>We are drawing a rune!</span>")
+		return
 	if(!src.canmove || src.stat || src.restrained())
 		to_chat(src,"You can't draw a rune while restrained.")	//user is tied up
 		return
+	isdrawing = 1
 	if(intrigue >= 2)
 		(do_after(usr,80,src))
 		new /obj/effect/decal/cleanable/tzeentch(get_turf(src))
 		src.adjustBruteLoss(2)
 		src.add_fingerprint(src)
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+		isdrawing = 0
 		return
