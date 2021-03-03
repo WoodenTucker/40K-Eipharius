@@ -55,7 +55,10 @@
 	put_in_hands(new weapon)//Give them a weapon.
 
 
-/mob/living/carbon/human/kroot/proc/givekrootstats() //this is extremely hacky and clown world but I cannot for the life of me find another way to do this.
+//this is extremely hacky and clown world but I cannot for the life of me find another way to do this. It adds all necessary stats, languages, items, w/e you want on a normal human mob
+//I look forward to the day someone calls me retarded and finds a very easy way to do this during init - wel
+
+/mob/living/carbon/human/kroot/proc/givekrootstats()
 	set name = "Stretch your muscles"
 	set category = "Kroot"
 	set desc = "Gives kroot stats since I can't seem to do it any other way in this clown world."
