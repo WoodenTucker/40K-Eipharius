@@ -301,3 +301,7 @@
 /obj/structure/bed/bigbedl/bigbedr
 	icon = 'icons/obj/bigbed.dmi'
 	icon_state = "bedr"
+
+/obj/structure/bed/krootbed
+	name = "kroot bed"
+	desc = "The bed of a Kroot Hunter"

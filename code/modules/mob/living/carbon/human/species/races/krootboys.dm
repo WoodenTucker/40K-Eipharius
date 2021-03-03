@@ -75,6 +75,14 @@
 	src.warfare_language_shit(TAU) //secondary language
 	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats //removes verb at the end so they can't spam it for whatever reason
 
+	var/obj/item/card/id/dog_tag/guardsman/W = new
+
+	W.icon_state = "tagred"
+	W.assignment = "Kroot Hunter"
+	W.registered_name = real_name
+	W.update_label()
+	equip_to_slot_or_del(W, slot_wear_id)
+
 //this is the proc that lets Kroot eat bodies.
 /mob/living/carbon/human/kroot/proc/kroot_eat()
 	set category = "Kroot"

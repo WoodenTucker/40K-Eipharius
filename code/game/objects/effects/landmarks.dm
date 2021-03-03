@@ -7,6 +7,7 @@
 	simulated = 0
 	invisibility = 101
 	var/delete_me = 0
+	var/krootselected = 0
 
 /obj/effect/landmark/New()
 	..()
@@ -362,6 +363,10 @@ Template:
 /obj/effect/landmark/animal/rngretaliatespawner/New()
 	if (prob(50))
 		new /mob/living/simple_animal/hostile/retaliate/rat(src.loc)
+	delete_me = 1
+
+/obj/effect/landmark/animal/krootspawn/New()
+	new /mob/living/carbon/human/kroot(src.loc)
 	delete_me = 1
 
 /obj/effect/landmark/animal/rngfriendlyfellowspawner/New()

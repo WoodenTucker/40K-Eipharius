@@ -421,4 +421,7 @@ Begin Warhammer loadouts
 	shoes = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null
+	belt = /obj/item/device/flashlight/lantern
 	id = null
+	id_slot = null
+	pda_slot = null

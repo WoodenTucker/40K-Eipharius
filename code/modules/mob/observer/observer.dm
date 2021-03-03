@@ -110,7 +110,7 @@ mob/observer/check_airflow_movable()
 	var/response = alert(src, "Would you like to try and join the late party?", "Join the Late Party", "Yes", "No")
 
 	if(response == "Yes")
-		for(var/mob/living/carbon/human/ork/mek/M in world) //the mob they will be placed in
+		for(var/mob/living/carbon/human/kroot/M in world) //the mob they will be placed in
 			if(M.isempty == 1) //is the mob empty?
 				if(M.health > 0)
 					to_chat(M,"To be filled later")

@@ -390,6 +390,20 @@
 	if(wear_id)
 		return wear_id.GetIdCard()
 
+//used to update IDs for rando mobs if needed
+/obj/item/card/id/proc/update_label(var/newname, var/newjob)
+	if(newname || newjob)
+		name = text("[][]",
+			(!newname)	? "identification card"	: "[newname]'s ID Card",
+			(!newjob)		? ""										: " ([newjob])"
+		)
+		return
+
+	name = text("[][]",
+		(!registered_name)	? "identification card"	: "[registered_name]'s ID Card",
+		(!assignment)				? ""										: " ([assignment])"
+	)
+
 //Removed the horrible safety parameter. It was only being used by ninja code anyways.
 //Now checks siemens_coefficient of the affected area by default
 /mob/living/carbon/human/electrocute_act(var/shock_damage, var/obj/source, var/base_siemens_coeff = 1.0, var/def_zone = null)
