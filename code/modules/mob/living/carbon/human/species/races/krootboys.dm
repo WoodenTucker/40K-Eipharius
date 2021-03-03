@@ -12,6 +12,9 @@
 	mob_size = MOB_MEDIUM
 	strength = STR_MEDIUM
 	sexybits_location = BP_GROIN
+	inherent_verbs = list(
+	/mob/living/carbon/human/kroot/proc/givekrootstats
+		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -50,3 +53,19 @@
 	hand = 0//Make sure one of their hands is active.
 	var/weapon = pick(/obj/item/crowbar, /obj/item/melee/classic_baton/trench_club, /obj/item/melee/classic_baton)
 	put_in_hands(new weapon)//Give them a weapon.
+
+
+/mob/living/carbon/human/kroot/proc/givekrootstats() //this is extremely hacky and clown world but I cannot for the life of me find another way to do this.
+	set name = "Stretch your muscles"
+	set category = "Kroot"
+	set desc = "Gives kroot stats since I can't seem to do it any other way in this clown world."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
+	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10)
+	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0)
+	src.warfare_language_shit(TAU)
+	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats
