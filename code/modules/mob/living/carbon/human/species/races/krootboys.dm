@@ -124,6 +124,7 @@
 				src.visible_message("<span class='danger'>[src] bites [T] with a loud crunch</span>")
 				to_chat(T, "<span class='danger'>You feel a sharp stabbing pain!</span>")
 				affecting.take_damage(39, 0, DAM_SHARP, "large organic needle")
+				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 
 		if(!do_mob(src, T, 150))
 			to_chat(src, "<span class='warning'>Our meal of [T] has been interrupted!</span>")
