@@ -141,3 +141,11 @@
 	desc = "Boots of the Salamander Space Marine Chapter"
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
+
+
+/obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
+	name = "kroot feet"
+	desc = "The spindly webbed feet of a Kroot"
+	icon_state = "krootboot"
+	item_state = "krootboot"
+	canremove = 0

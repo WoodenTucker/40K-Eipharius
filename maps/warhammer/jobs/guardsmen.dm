@@ -418,7 +418,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/kroot
 	uniform = /obj/item/clothing/under/rank/kroot
-	shoes = null
+	shoes = /obj/item/clothing/shoes/krootfeet
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null
 	belt = /obj/item/device/flashlight/lantern
