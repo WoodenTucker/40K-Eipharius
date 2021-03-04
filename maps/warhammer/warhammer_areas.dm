@@ -753,6 +753,12 @@ Area basic template
 	requires_power = 0
 	dynamic_lighting = 1
 
+/area/cadiaoutpost/oa/groxpen
+	name = "groxpen"
+	icon_state = "farm"
+	requires_power = 0
+	dynamic_lighting = 1
+
 /area/cadiaoutpost/oa/tradefloor
 	name = "Trade Floor"
 	icon_state = "tradefloor"
