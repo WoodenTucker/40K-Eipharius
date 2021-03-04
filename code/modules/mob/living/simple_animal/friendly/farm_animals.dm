@@ -121,6 +121,9 @@
 	name = "feral grox"
 	desc = "If you thought the domestic grox were angry, just wait until you meet this guy!"
 	health = 400
+	icon = 'icons/mob/livestock.dmi'
+	icon_state = "feral_grox"
+	icon_living = "feral_grox"
 
 //this is the king of goats. he is very powerful, which is why he is the king
 /mob/living/simple_animal/hostile/retaliate/goat/king

@@ -70,4 +70,4 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_kroot)
+	req_access = list(access_grox)

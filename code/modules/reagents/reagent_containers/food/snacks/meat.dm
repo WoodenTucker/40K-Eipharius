@@ -92,9 +92,9 @@
 		to_chat(user, "<span class='warning'>You need to light the campfire!</span>")
 		return
 	else
+		playsound(src, 'sound/effects/roastingmeat.ogg', 70, 0, 1)
 		do_after(user, 50, src)
 		O.name = "roasted [O.name]"
-		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 		visible_message("[O] lets off a delicious smell as it crackles over the fire.")
 		O.bitesize = 5
 		O.iscooked = 1
