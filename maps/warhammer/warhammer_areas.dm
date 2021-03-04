@@ -750,6 +750,8 @@ Area basic template
 /area/cadiaoutpost/oa/farm
 	name = "Farm"
 	icon_state = "farm"
+	requires_power = 0
+	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/tradefloor
 	name = "Trade Floor"

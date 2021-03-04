@@ -5,6 +5,7 @@
 	health = 180
 	filling_color = "#ff1c1c"
 	center_of_mass = "x=16;y=14"
+	var/iscooked = 0
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 9)
@@ -43,6 +44,10 @@
 	name = "chevon slab"
 	desc = "Goat meat, to the uncultured."
 
+/obj/item/reagent_containers/food/snacks/meat/grox
+	name = "slab of grox meat"
+	desc = "A delicacy across the Imperium of Man, tastes especially good when roasted over a campfire"
+
 /obj/item/reagent_containers/food/snacks/meat/chicken
 	name = "chicken piece"
 	desc = "It tastes like you'd expect."
@@ -76,3 +81,20 @@
 		return TRUE
 	else
 		. = ..()
+
+
+
+/obj/item/campfire/attackby(var/obj/item/reagent_containers/food/snacks/meat/O, var/mob/user)
+	if(O.iscooked == 1)
+		to_chat(user, "<span class='warning'>[O] has already been cooked!</span>")
+		return
+	if(lit == 0)
+		to_chat(user, "<span class='warning'>You need to light the campfire!</span>")
+		return
+	else
+		do_after(user, 50, src)
+		O.name = "roasted [O.name]"
+		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
+		visible_message("[O] lets off a delicious smell as it crackles over the fire.")
+		O.bitesize = 5
+		O.iscooked = 1

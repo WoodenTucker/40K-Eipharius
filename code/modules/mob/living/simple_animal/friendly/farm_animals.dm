@@ -87,6 +87,41 @@
 	else
 		..()
 
+
+/mob/living/simple_animal/hostile/retaliate/goat/grox
+	name = "grox"
+	desc = "Not known for their pleasant disposition."
+	icon = 'icons/mob/livestock.dmi'
+	icon_state = "grox"
+	icon_living = "grox"
+	icon_dead = "lobotomized_grox"
+	speak = list("EHEHEHEHEH","eh?")
+	speak_emote = list("brays")
+	emote_hear = list("brays")
+	emote_see = list("shakes its head", "stamps a foot", "glares around")
+	speak_chance = 1
+	turns_per_move = 5
+	see_in_dark = 6
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/grox
+	meat_amount = 4
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "charges"
+	faction = "grox"
+	attacktext = "kicked"
+	health = 250
+	melee_damage_lower = 1
+	melee_damage_upper = 5
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
+
+
+/mob/living/simple_animal/hostile/retaliate/goat/grox/feral
+	name = "feral grox"
+	desc = "If you thought the domestic grox were angry, just wait until you meet this guy!"
+	health = 400
+
 //this is the king of goats. he is very powerful, which is why he is the king
 /mob/living/simple_animal/hostile/retaliate/goat/king
 	name = "king of goats"

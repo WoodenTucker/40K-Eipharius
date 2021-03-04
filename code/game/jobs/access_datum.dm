@@ -494,3 +494,9 @@
 	id = access_kroot
 	desc = "Kroot doors"
 	access_type = ACCESS_TYPE_KROOT
+
+/var/const/access_grox= 205
+/datum/access/grox
+	id = access_grox
+	desc = "Grox Pen"
+	access_type = ACCESS_TYPE_GROX

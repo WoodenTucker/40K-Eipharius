@@ -63,3 +63,11 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_kroot)
+
+/obj/machinery/door/unpowered/inn/groxpen
+	name = "grox pen"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_kroot)
