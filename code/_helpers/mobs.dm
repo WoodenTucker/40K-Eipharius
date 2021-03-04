@@ -75,7 +75,7 @@ proc/random_skinless_name(gender)
 		return capitalize(pick(GLOB.first_names_male)) + " " + "The Lost"
 
 proc/random_kroot_name(gender)
-	var/krootnames = list("Yaka", "Krelk", "Yz'Kir", "Kliiake", "Hyutka", "Pokiaret", "Gertka", "Jikalak", "Mikelaka", "Preka", "Mekatrak" )
+	var/krootnames = list("Yaka", "Krelk", "Yz'Kir", "Kliiake", "Hyutka", "Pokiaret", "Gertka", "Jikalak", "Mikelaka", "Preka", "Mekatrak", "Kyreit", "Jek'eat", "Jak'Jakka", "Tek'Tocka", "Pok'taka", "Zek'zok", "Cle'cluk" )
 	if(gender==FEMALE)
 		return capitalize(pick(krootnames)) + " " + "The Lost"
 	else
