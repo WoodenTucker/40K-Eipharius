@@ -821,6 +821,7 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
+	access = list(access_kroot)
 
 /obj/item/clothing/suit/armor/sgt
 	name = "Guardsman's Medium Armor"

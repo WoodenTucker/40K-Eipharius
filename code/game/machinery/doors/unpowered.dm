@@ -55,3 +55,11 @@
 	normalspeed = 0
 	req_access = list(access_treasury)
 
+
+/obj/machinery/door/unpowered/inn/krootdoor
+	name = "kroot room door"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_kroot)
