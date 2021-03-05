@@ -442,6 +442,7 @@ var/global/datum/controller/gameticker/ticker
 	round_end_stats += "Total teeth lost: <span class='danger'><B>[GLOB.teeth_lost]</B></span>\n"
 	round_end_stats += "Total friendly fire incidents: <span class='danger'><B>[GLOB.ff_incidents]</B></span>\n"
 	round_end_stats += "Total bloodshed: <span class='danger'><B>[GLOB.total_deaths] deaths</B></span>\n"
+	round_end_stats += "Total Imperials consumed by Kroot:<span class='danger'><B>[GLOB.kroot_eats] deaths</B></span>\n"
 
 	round_end_stats += "Total round Length: <span class='danger'><B>[roundduration2text()]</B></span>\n"
 

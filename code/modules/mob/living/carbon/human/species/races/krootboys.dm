@@ -148,4 +148,5 @@
 	src.adjustFireLoss(-40)
 	src.nutrition = 400
 	src.thirst = 550
+	GLOB.kroot_eats++
 	return 1
