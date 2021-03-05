@@ -423,6 +423,7 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = null
 	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
