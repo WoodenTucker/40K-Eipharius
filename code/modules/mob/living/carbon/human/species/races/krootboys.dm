@@ -72,6 +72,7 @@
 	visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
 	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
 	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(TAU) //secondary language
 	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats //removes verb at the end so they can't spam it for whatever reason
 

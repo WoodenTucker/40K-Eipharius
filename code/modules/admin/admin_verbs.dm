@@ -949,19 +949,17 @@ var/list/admin_verbs_mentor = list(
 	set name = "Spawn Random Lateparty"
 	set desc = "Deploys the randomly selected late party"
 
-	var/obj/structure/bed/krootbed/A
-
 	var/party = list("Kroot")
 
 
 
-	var/partyteam = input("Confirm launch late party?", "Selected party") as anything in party
+	var/partyteam = input("Confirm launch late party?", "Selected party") as null| anything in party
 
 
 	switch(partyteam)
 
 		if("Kroot")
-			new /mob/living/carbon/human/kroot(A.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
 
 
 

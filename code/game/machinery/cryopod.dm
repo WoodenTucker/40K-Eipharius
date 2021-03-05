@@ -424,8 +424,7 @@
 	occupant.ckey = null
 
 	// Delete the mob.
-	qdel(occupant)
-	set_occupant(null)
+
 
 
 /obj/machinery/cryopod/attackby(var/obj/item/G as obj, var/mob/user as mob)
