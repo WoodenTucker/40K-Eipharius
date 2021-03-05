@@ -23,17 +23,18 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
-
+/datum/species/kroot/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.age = rand(min_age,max_age)//Random age for kiddos.
+	if(H.f_style)//kroot don't get beards.
+		H.f_style = "Shaved"
+	to_chat(H, "<big><span class='warning'>You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.</span></big>")
+	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
+	return ..()
 /mob/living/carbon/human
 	var/new_kroot = SPECIES_KROOT
 
 /mob/living/carbon/human/kroot
-	name = "kroot"
-	real_name = "kroot"
 	gender = MALE
-	maxHealth = 200
-	health = 200
-	status_flags = 0
 	var/isempty = 0
 	var/iseating = 0
 
