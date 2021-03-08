@@ -6,6 +6,8 @@
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/r_kroot.dmi'
 	deform = 'icons/mob/human_races/r_def_kroot.dmi'
+	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ANYTHING
