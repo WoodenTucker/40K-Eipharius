@@ -71,3 +71,12 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_grox)
+
+
+/obj/machinery/door/unpowered/inn/room1
+	name = "room 1"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_bar) //so innkeeper always can get in if needed
