@@ -936,6 +936,12 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
+/obj/item/clothing/suit/armor/smurfs/chaplain
+	name = "Ultramarine Chaplain Power Armor"
+	desc = "The holy armor of the Ultramarines."
+	icon_state = "um_chap"
+	item_state = "um_chap"
+
 /obj/item/clothing/suit/armor/sallys
 	name = "Salamander Power Armor"
 	desc = "The holy armor of the Salamanders"
@@ -962,9 +968,21 @@ Imperial Guardsman
 
 /obj/item/clothing/head/helmet/sallyhelm
 	name = "Salamander Power Helm"
-	desc = "The ash charrged helmet of a Salamander Marine."
+	desc = "The ash charred helmet of a Salamander Marine."
 	icon_state = "sl_lib"
 	item_state = "sl_lib"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/chaplainhelm
+	name = "Space Marine Chaplain Helmet"
+	desc = "The daunting helmet of a Space Marine Chaplain's Helmet"
+	icon_state = "uni_chap"
+	item_state = "uni_chap"
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS

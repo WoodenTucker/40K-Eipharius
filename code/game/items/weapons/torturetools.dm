@@ -58,8 +58,21 @@
 				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, -1) //And out it goes.
 				GLOB.teeth_lost++
 				if(H.rage >= 2)
-					if(prob(100))
+					if(prob(5))
+						playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
+				if(H.intrigue >= 2)
+					if(prob(10)) //tzeentch boys are a bit softer than khorne/nurgle lads
+						H.say("THIS IS ALL ACCORDING TO HIS PLAN!")
+				if(H.lust >= 2)
+					H.happiness += 1 //Slaanesh boys enjoy the torture.
+					H.apply_damage(rand(-1, -3), BRUTE, O)
+					to_chat(H, "The Prince of Pleasure protects his sevants from pain. What would be excruciating is turned to pleasure.")
+				if(H.decay >= 2)
+					if(prob(5))
+						playsound(src, 'sound/effects/fornurgle.ogg', 50, 0, -1)
+						H.say("FATHER NURGLE PROTECT YOUR ACOLYTE! BLIGHT THESE CORPSE-WORSHIPPPERS!")
+
 				user.doing_something = 0
 			else
 				to_chat(user, "<span class='notice'>Your attempt to pull out a tooth fails...</span>")

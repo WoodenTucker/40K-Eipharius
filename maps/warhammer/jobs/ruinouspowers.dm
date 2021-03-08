@@ -299,6 +299,9 @@
 		src.add_fingerprint(src)
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
 		isdrawing = 0
+	else
+		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+		isdrawing = 0
 		return
 
 
@@ -328,6 +331,9 @@
 		src.add_fingerprint(src)
 		isdrawing = 0
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+	else
+		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+		isdrawing = 0
 		return
 
 /mob/living/carbon/human/proc/khornerune()
@@ -355,6 +361,9 @@
 		src.add_fingerprint(src)
 		isdrawing = 0
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+	else
+		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+		isdrawing = 0
 		return
 
 /mob/living/carbon/human/proc/tzeentchrune()
@@ -380,5 +389,8 @@
 		src.adjustBruteLoss(2)
 		src.add_fingerprint(src)
 		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+		isdrawing = 0
+	else
+		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
 		isdrawing = 0
 		return
