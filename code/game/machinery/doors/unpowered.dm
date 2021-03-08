@@ -79,4 +79,4 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_bar) //so innkeeper always can get in if needed
+	req_access = list(access_inn1) //so innkeeper always can get in if needed

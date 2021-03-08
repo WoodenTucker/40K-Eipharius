@@ -379,6 +379,14 @@ Template:
 	if(prob(10))
 		new /mob/living/simple_animal/hostile/retaliate/goat/king(src.loc)
 
+/obj/effect/landmark/tapes/New()
+	if(prob(33))
+		new /obj/item/device/cassette/tape1(src.loc)
+	if(prob(33))
+		new /obj/item/device/cassette/tape2(src.loc)
+	if(prob(33))
+		new /obj/item/device/cassette/tape3(src.loc)
+
 /obj/effect/landmark/rngcavewalls/New()
 	if(prob(75))
 		new /turf/simulated/mineral/snowycave(src.loc)

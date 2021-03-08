@@ -500,3 +500,8 @@
 	id = access_grox
 	desc = "Grox Pen"
 	access_type = ACCESS_TYPE_GROX
+
+/var/const/access_inn1= 206
+/datum/access/grox
+	id = access_inn1
+	desc = "Inn room 1"
