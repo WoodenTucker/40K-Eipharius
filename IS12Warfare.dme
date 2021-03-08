@@ -492,6 +492,7 @@
 #include "code\game\gamemodes\warfare\warfare.dm"
 #include "code\game\gamemodes\warfare\warfare_gas.dm"
 #include "code\game\gamemodes\wizard\wizard.dm"
+#include "code\game\items\weapons\torturetools.dm"
 #include "code\game\jobs\_access_defs.dm"
 #include "code\game\jobs\access.dm"
 #include "code\game\jobs\access_datum.dm"

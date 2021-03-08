@@ -112,3 +112,7 @@
 		playsound(loc, 'sound/items/Ratchet.ogg', 50, 1)
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		visible_message("[user] tinkers with the [O]...")
+
+/obj/item/device/allenwrench/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
