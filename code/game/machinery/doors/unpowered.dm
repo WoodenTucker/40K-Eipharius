@@ -80,3 +80,19 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_inn1) //so innkeeper always can get in if needed
+
+/obj/machinery/door/unpowered/inn/room2
+	name = "room 2"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_inn2) //so innkeeper always can get in if needed
+
+/obj/machinery/door/unpowered/inn/room3
+	name = "room 3"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_inn3) //so innkeeper always can get in if needed

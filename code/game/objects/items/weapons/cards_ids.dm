@@ -409,6 +409,18 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "key2"
 	access = list(access_inn1)
 
+/obj/item/card/id/innkey2
+	name = "inn room key 2"
+	desc = "A key that opens room 2 of the inn"
+	icon_state = "key3"
+	access = list(access_inn2)
+
+/obj/item/card/id/innkey3
+	name = "inn room key 3"
+	desc = "A key that opens room 3 of the inn"
+	icon_state = "key4"
+	access = list(access_inn3)
+
 /obj/item/card/id/civilian/bartender
 	job_access_type = /datum/job/bartender
 
@@ -437,7 +449,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/pilgrim/innkeeper
 	job_access_type = /datum/job/bartender //TODO tweak to village bar
-	access = list(access_inn1)
+	access = list(access_inn1, access_inn2, access_inn3) //lets innkeeper access his rented rooms
 /obj/item/card/id/civilian/head //This is not the HoP. There's no position that uses this right now.
 	name = "identification card"
 	desc = "A card which represents common sense and responsibility."

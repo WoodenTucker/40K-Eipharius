@@ -502,6 +502,16 @@
 	access_type = ACCESS_TYPE_GROX
 
 /var/const/access_inn1= 206
-/datum/access/grox
+/datum/access/innroom_1
 	id = access_inn1
 	desc = "Inn room 1"
+
+/var/const/access_inn2 = 207
+/datum/access/innroom_2
+	id = access_inn2
+	desc = "Inn room 2"
+
+/var/const/access_inn3 = 208
+/datum/access/innroom_3
+	id = access_inn3
+	desc = "Inn room 3"
