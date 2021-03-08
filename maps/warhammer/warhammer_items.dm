@@ -894,6 +894,15 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/rtdrip
+	name = "Rogue Trader's Fancy Robes"
+	desc = "The stylish robes of a Rogue Trader"
+	icon_state = "rtdrip"
+	item_state = "rtdrip"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 //astartes gear
 /obj/item/clothing/suit/armor/ravenguard
