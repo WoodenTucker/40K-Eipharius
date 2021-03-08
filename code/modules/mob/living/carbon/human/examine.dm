@@ -338,7 +338,6 @@
 		msg += "[T.He] [T.is] bloated and smells disgusting.\n"
 	if(decaylevel == 3)
 		msg += "[T.He] [T.is] rotting and blackened, the skin sloughing off. The smell is indescribably foul.\n"
-		isburied = 1
 	if(decaylevel == 4)
 		msg += "[T.He] [T.is] mostly dessicated now, with only bones remaining of what used to be a person.\n"
 

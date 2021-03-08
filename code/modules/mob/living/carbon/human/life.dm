@@ -1304,6 +1304,7 @@
 
 	if(decaytime >= 10 MINUTES && decaytime < 20 MINUTES)//10 minutes for decaylevel2 -- bloated and very stinky
 		decaylevel = 2
+		isburied = 1
 
 	if(decaytime >= 25 MINUTES && decaytime < 30 MINUTES)//20 minutes for decaylevel3 -- rotting and gross
 		decaylevel = 3
