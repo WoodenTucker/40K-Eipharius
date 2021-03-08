@@ -133,7 +133,7 @@
 "cC" = (/obj/effect/floor_decal/turf/shaft,/obj/structure/table/steel_reinforced,/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 1},/obj/item/organ/internal/stack,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/magoserrant)
 "cD" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge)
 "cE" = (/obj/machinery/door/airlock/command{name = "Magos Errant"},/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"cF" = (/obj/effect/floor_decal/turf/barnew,/obj/structure/closet/secure_closet/captains,/obj/item/clothing/suit/armor/rtdrip,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"cF" = (/obj/effect/floor_decal/turf/barnew,/obj/structure/closet/secure_closet/captains,/obj/item/clothing/suit/armor/rtdrip,/obj/item/clothing/head/rt,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cG" = (/obj/structure/bed/psych,/obj/item/bedsheet/captain,/obj/structure/curtain/open/bed,/obj/effect/landmark/start{name = "Astartes Envoy"},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cH" = (/obj/item/fireplacebl/l{randpixel = 0},/turf/simulated/wall/r_wall,/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cI" = (/obj/item/fireplacebl/r{randpixel = 0},/turf/simulated/wall/r_wall,/area/cadiaoutpost/oa/bridge/offices/roguetrader)

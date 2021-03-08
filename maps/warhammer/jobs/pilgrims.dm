@@ -188,7 +188,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_stats(rand(9,12), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(

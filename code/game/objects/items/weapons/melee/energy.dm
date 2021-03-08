@@ -238,15 +238,3 @@
 			host.drop_from_inventory(src)
 		spawn(1) if(src) qdel(src)
 
-/obj/item/melee/energy/crozius
-	name = "crozius arcanum"
-	desc = "A Crozius Arcanum is a mace or staff that is used as both a melee weapon and the primary badge of office of Space Marine Chaplains."
-	icon_state = "crozius"
-	force = 40
-	armor_penetration = 100
-	sharp = 1
-	edge = 1
-	throwforce = 1
-	throw_speed = 1
-	throw_range = 1
-	w_class = ITEM_SIZE_NORMAL

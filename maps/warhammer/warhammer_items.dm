@@ -913,11 +913,16 @@ Imperial Guardsman
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
+/obj/item/clothing/suit/armor/ravenguard/chaplain
+	name = "Raven Guard Chaplain Armor"
+	desc = "The holy black armor of a Chaplain of the Raven Guard."
+	icon_state = "rg_chap"
+	item_state = "rg_chap"
 /obj/item/clothing/suit/armor/smurfs
 	name = "Ultramarine Power Armor"
 	desc = "The holy armor of the Ultramarines."
@@ -926,7 +931,7 @@ Imperial Guardsman
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
@@ -939,7 +944,7 @@ Imperial Guardsman
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
@@ -948,7 +953,7 @@ Imperial Guardsman
 	desc = "The black, beaked mask of the Raven Guard."
 	icon_state = "rghelmet2"
 	item_state = "rghelmet2"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 	cold_protection = HEAD
@@ -960,7 +965,7 @@ Imperial Guardsman
 	desc = "The ash charrged helmet of a Salamander Marine."
 	icon_state = "sl_lib"
 	item_state = "sl_lib"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 	cold_protection = HEAD
@@ -972,7 +977,7 @@ Imperial Guardsman
 	desc = "The blue helm of an Ultramarine."
 	icon_state = "um_helm"
 	item_state = "um_helm"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 75, bomb = 70, bio = 60, rad = 100)
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	str_requirement = 25
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 	cold_protection = HEAD

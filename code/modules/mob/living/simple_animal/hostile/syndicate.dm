@@ -47,9 +47,9 @@
 	melee_damage_upper = 25
 	icon_state = "syndicatemelee"
 	icon_living = "syndicatemelee"
-	weapon1 = /obj/item/melee/energy/sword/red
+	weapon1 = /obj/item/melee/classic_baton/trench_club
 	weapon2 = /obj/item/shield/energy
-	attacktext = "slashed"
+	attacktext = "bashes"
 	status_flags = 0
 
 /mob/living/simple_animal/hostile/syndicate/melee/attackby(var/obj/item/O as obj, var/mob/user as mob)
@@ -94,9 +94,9 @@
 	icon_living = "syndicateranged"
 	casingtype = /obj/item/ammo_casing/a10mm
 	projectilesound = 'sound/weapons/gunshot/gunshot_smg.ogg'
-	projectiletype = /obj/item/projectile/bullet/pistol/medium
+	projectiletype = /obj/item/projectile/beam
 
-	weapon1 = /obj/item/gun/projectile/automatic/c20r
+	weapon1 = /obj/item/gun/energy/las/lasgun
 
 /mob/living/simple_animal/hostile/syndicate/ranged/space
 	icon_state = "syndicaterangedpsace"

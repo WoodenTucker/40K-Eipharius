@@ -58,7 +58,7 @@
 				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, -1) //And out it goes.
 				GLOB.teeth_lost++
 				if(H.rage >= 2)
-					if(prob(5))
+					if(prob(100))
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
 				user.doing_something = 0
 			else

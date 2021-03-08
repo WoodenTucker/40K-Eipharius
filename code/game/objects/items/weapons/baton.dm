@@ -98,3 +98,20 @@
 		overlays += blood_overlay
 
 	return
+
+/obj/item/melee/classic_baton/crozius
+	name = "crozius arcanum"
+	desc = "A Crozius Arcanum is a mace or staff that is used as both a melee weapon and the primary badge of office of Space Marine Chaplains."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "crozius"
+	item_state = "crozius"
+	force = 30 //in conjunction with ass tardes str this thing is insane
+	armor_penetration = 70
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	str_requirement = 25
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	w_class = ITEM_SIZE_NORMAL
+	attack_verb = list("crushes", "strikes", "bashes", "pounds")

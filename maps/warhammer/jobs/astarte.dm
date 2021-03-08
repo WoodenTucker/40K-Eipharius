@@ -39,6 +39,7 @@
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
 		H.verbs += /mob/living/carbon/human/proc/chapterselection
+		H.adjustStaminaLoss(-INFINITY) //astardes have basically infinite fight in them
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black
@@ -66,18 +67,18 @@
 	if(.)
 		H.implant_loyalty(src)
 
-/mob/living/carbon/human/proc/chapterselection(var/mob/living/carbon/human/M)
+/mob/living/carbon/human/proc/chapterselection()
 	set name = "Select your chapter"
 	set category = "Astartes"
 	set desc = "Choose your chapter"
-	if(!ishuman(M))
-		to_chat(M, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
 		return
-	if(M.stat == DEAD)
-		to_chat(M, "<span class='notice'>You can't choose a class when you're dead.</span>")
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Raven Guard","Ultramarines","Salamanders") //lists all possible chapters
+	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
@@ -86,6 +87,14 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)
+		if("Raven Guard Chaplain")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/ravenguard/chaplain, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/classic_baton/crozius, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarines")
