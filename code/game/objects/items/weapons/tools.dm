@@ -27,7 +27,7 @@
 	slot_flags = SLOT_BELT
 	force = 8
 	throwforce = 7.0
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_TINY
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
 	matter = list(DEFAULT_WALL_MATERIAL = 150)
 	center_of_mass = "x=17;y=16"
@@ -115,7 +115,7 @@
 	force = 3.0
 	throw_speed = 2
 	throw_range = 9
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_TINY
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
 	matter = list(DEFAULT_WALL_MATERIAL = 80)
 	center_of_mass = "x=18;y=10"
@@ -228,7 +228,7 @@
 	throwforce = 5.0
 	throw_speed = 1
 	throw_range = 5
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_TINY
 
 	//Cost to make in the autolathe
 	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 30)
@@ -675,7 +675,7 @@
 	hitsound = 'sound/weapons/crowbarhit2.ogg' //hitsound = 'sound/weapons/crowhit.ogg'//This sound effect has 0 punch, makes crowbars feel less powerful.
 	grab_sound = 'sound/items/handle/crowbar_pickup.ogg'
 	drop_sound = 'sound/items/handle/crowbar_drop.ogg'
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_TINY
 	origin_tech = list(TECH_ENGINEERING = 1)
 	matter = list(DEFAULT_WALL_MATERIAL = 140)
 	center_of_mass = "x=16;y=20"

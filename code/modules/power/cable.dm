@@ -473,7 +473,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	color = COLOR_RED
 	desc = "A coil of wiring, for delicate electronics use aswell as the more basic cable laying."
 	throwforce = 0
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_TINY
 	throw_speed = 2
 	throw_range = 5
 	matter = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 20)
