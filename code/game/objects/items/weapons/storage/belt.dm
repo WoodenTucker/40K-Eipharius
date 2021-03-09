@@ -39,6 +39,7 @@
 	icon_state = "utilitybelt"
 	item_state = "utility"
 	storage_slots = 16
+	max_storage_space = 16
 	can_hold = list(
 		///obj/item/combitool,
 		/obj/item/crowbar,
