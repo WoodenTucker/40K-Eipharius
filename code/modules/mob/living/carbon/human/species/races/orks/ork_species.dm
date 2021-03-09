@@ -59,15 +59,8 @@
 	var/isempty = 0
 
 /mob/living/carbon/human/ork/New(var/new_loc)
-	var/namelist = list("Ork")
-	var/ork_name = pick(namelist)
-
-	name = "[ork_name]"
-	real_name = "[ork_name]"
-	h_style = "Bald"
 	max_waaagh = 300
 	waaagh = max_waaagh
-	warfare_faction = ORKZ
 	var/dice = rand(1, 2)
 	switch(dice)
 		if(1)
@@ -79,6 +72,16 @@
 		if(!src.ckey)
 			isempty = 1
 			request_player()
+
+/mob/living/carbon/human/ork/Initialize()
+	. = ..()
+	fully_replace_character_name(random_ork_name(src.gender))
+	warfare_faction = ORKZ
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	outfit.equip(src)
+
+	hand = 0//Make sure one of their hands is active.
+	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet)//Give them a weapon.
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
 	var/namelist = list("Nob")

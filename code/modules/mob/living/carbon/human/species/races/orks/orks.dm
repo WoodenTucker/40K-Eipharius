@@ -29,7 +29,14 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
-
+/datum/species/ork/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.age = rand(min_age,max_age)//Random age
+	if(H.h_style)
+		H.h_style = "Bald" //never seen an ork wif hair
+	if(H.f_style)//orks dont have beards
+		H.f_style = "Shaved"
+	H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+	return ..()
 /datum/species/ork/nob
 	name = SPECIES_ORK_NOB
 	name_plural = "Ork Nobz"
