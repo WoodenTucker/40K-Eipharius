@@ -43,10 +43,6 @@
 /mob/living/carbon/human/kroot/New(var/new_loc)
 	h_style = "Bald"
 	..(new_loc, new_kroot)
-	spawn(5)
-		if(!src.ckey)
-			isempty = 1
-			request_player()
 
 /mob/living/carbon/human/kroot/Initialize()
 	. = ..()

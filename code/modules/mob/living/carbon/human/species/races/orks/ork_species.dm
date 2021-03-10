@@ -68,10 +68,6 @@
 		if(2)
 			playsound(src, 'sound/voice/ork/gretspawn2.ogg', 50)
 	..(new_loc, new_species)
-	spawn(5)
-		if(!src.ckey)
-			isempty = 1
-			request_player()
 
 /mob/living/carbon/human/ork/Initialize()
 	. = ..()
@@ -97,10 +93,6 @@
 	new_species = SPECIES_ORK_NOB
 	playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 	..(new_loc, SPECIES_ORK_NOB)
-	spawn(5)
-		if(!src.ckey)
-			isempty = 1
-			request_player()
 
 /mob/living/carbon/human/ork/mek/New(var/new_loc)
 	var/namelist = list("Mek-boy")
@@ -115,10 +107,6 @@
 	new_species = SPECIES_ORK_MEK
 	playsound(src, 'sound/voice/ork/workwork.ogg', 50)
 	..(new_loc, SPECIES_ORK_MEK)
-	spawn(5)
-		if(!src.ckey)
-			isempty = 1
-			request_player()
 
 /mob/living/carbon/human/ork/boss/New(var/new_loc)
 	..()
@@ -137,7 +125,3 @@
 	playsound(src, 'sound/voice/ork/warboss.ogg', 50)
 	..(new_loc, SPECIES_ORK_BOSS)
 
-	spawn(5)
-		if(!src.ckey)
-			isempty = 1
-			request_player()

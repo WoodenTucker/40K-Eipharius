@@ -100,7 +100,7 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/ReloadCkeyWhitelist,
 	/datum/admins/proc/toggle_panic_bunker,
 	/datum/admins/proc/force_aspect,
-	/client/proc/create_party,
+	/client/proc/another_party,
 
 )
 var/list/admin_verbs_ban = list(
@@ -943,7 +943,7 @@ var/list/admin_verbs_mentor = list(
 	feedback_add_details("admin_verb","GS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("gave [key_name(T)] the spell [S].")
 
-
+/*
 /client/proc/create_party() // --Wel //Needs more work
 	set category = "Fun"
 	set name = "Spawn Random Lateparty"
@@ -971,3 +971,15 @@ var/list/admin_verbs_mentor = list(
 
 	feedback_add_details("admin_verb","CP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Spawned a late party.")
+*/
+
+/client/proc/another_party() // --Wel //Needs more work
+	set category = "Fun"
+	set name = "Allow another party"
+	set desc = "Lets admemes open another party"
+
+	if(alert("Allow another late-party to arrive?",,"Yes","No") == "Yes")
+		GLOB.deployed = 0
+
+	feedback_add_details("admin_verb","AP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	log_and_message_admins("Allowed another late party to arrive!")

@@ -148,11 +148,8 @@ mob/observer/check_airflow_movable()
 //This is the current slightly improved version of the above, much mo flexible.
 /mob/observer/ghost/verb/latepartynew()
 	set category = "Ghost"
-	set name = "Late Party Test"
+	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
-
-
-
 
 	var/partydelay = 0 //in deciseconds (20 min rn)
 
@@ -164,7 +161,7 @@ mob/observer/check_airflow_movable()
 		to_chat(src, "The late party has already deployed!")
 		return
 
-	if(src.isreadied == 1)
+	if(src.isreadied == 1) //not really used rn but could be useful if you ever wanna make people spawn in batches so they can opt out
 		to_chat(src,"<span class='warning'><b><font size=3>You leave the queue for the late party!</b></font size=3>")
 		src.isreadied = 0 //unreadies player
 		GLOB.partygang-- //subtracts from amount readied up
@@ -177,7 +174,7 @@ mob/observer/check_airflow_movable()
 
 	switch(GLOB.partygang)
 		if(1)
-			src.say("I'm joining the late party 1/6 deployed!")
+			src.say("I'm joining the late party 1/6 deployed!") //just speaks to deadchat quickly so 1. people know its open and 2. lets them know the amount of slots left.
 		if(2)
 			src.say("I'm joining the late party 2/6 deployed!")
 		if(3)
@@ -196,7 +193,7 @@ mob/observer/check_airflow_movable()
 
 	latepartyoptions += pick("Kroot") //randomly picks a late party
 
-	var/partyteam = input("Spawn as late party", "Randomly selected party!") as anything in latepartyoptions
+	var/partyteam = input("Spawn as late party", "Randomly selected party!") as anything in latepartyoptions //automagically puts them into whatever the pick proc chooses
 
 	switch(partyteam)
 
