@@ -188,12 +188,7 @@ mob/observer/check_airflow_movable()
 			GLOB.deployed++ //ensures that only 1 party can be sent
 
 
-
-	var/latepartyoptions = list("")
-
-	latepartyoptions += pick("Kroot") //randomly picks a late party
-
-	var/partyteam = input("Spawn as late party", "Randomly selected party!") as anything in latepartyoptions //automagically puts them into whatever the pick proc chooses
+	var/partyteam = input("Spawn as late party", "Randomly selected party!") as anything in GLOB.latepartyoptions //automagically puts them into whatever the pick proc chooses
 
 	switch(partyteam)
 

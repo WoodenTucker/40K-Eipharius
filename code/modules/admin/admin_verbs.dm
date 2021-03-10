@@ -101,6 +101,7 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/toggle_panic_bunker,
 	/datum/admins/proc/force_aspect,
 	/client/proc/another_party,
+	/client/proc/generate_party,
 
 )
 var/list/admin_verbs_ban = list(
@@ -983,3 +984,15 @@ var/list/admin_verbs_mentor = list(
 
 	feedback_add_details("admin_verb","AP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Allowed another late party to arrive!")
+
+
+/client/proc/generate_party() // --Wel //Needs more work
+	set category = "Fun"
+	set name = "Generate Party"
+	set desc = "Picks the party for the round!"
+
+	if(alert("Are you sure you want to do this?",,"Yes","No") == "Yes")
+		GLOB.latepartyoptions += pick("Kroot")
+
+	feedback_add_details("admin_verb","ZP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	log_and_message_admins("Generated the late party!")
