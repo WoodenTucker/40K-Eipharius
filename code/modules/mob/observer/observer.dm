@@ -102,8 +102,9 @@ mob/observer/check_airflow_movable()
 			for(var/area/A in GLOB.blue_captured_zones)
 				stat("Blue Captured Trench:", A)
 
- //not the final mob obv, this needs much more work, probably won't be ready for first test, will need lots of love and work.
-/mob/observer/verb/lateparty()
+ //this was the first shitty edition, improved below
+ /*
+/mob/observer/verb/latepartyold()
 	set category = "Ghost"
 	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
@@ -142,7 +143,9 @@ mob/observer/check_airflow_movable()
 	for(var/mob/observer/O in GLOB.player_list)
 		if(jobban_isbanned(O, "Syndicate")) //so I can ban shitters
 			continue
+*/
 
+//This is the current slightly improved version of the above, much mo flexible.
 /mob/observer/ghost/verb/latepartynew()
 	set category = "Ghost"
 	set name = "Late Party Test"
