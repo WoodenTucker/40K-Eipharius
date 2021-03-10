@@ -8,7 +8,7 @@
 	var/partydelay = 0 //in deciseconds (20 min rn or 12000 deciseconds)
 
 	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
-		to_chat(src, "It is too early for a late party!")
+		to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:20!")
 		return
 
 	if(GLOB.deployed == 1) //checks if a party has already been sent, can make this value higher if you wish to send more than one!
