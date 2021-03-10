@@ -170,6 +170,20 @@ var/list/flooring_types
 	descriptor = "cobble"
 	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
 
+/decl/flooring/stone/one
+	icon_base = "extra"
+
+/decl/flooring/stone/two
+	icon_base = "extra1"
+
+/decl/flooring/stone/three
+	icon_base = "extra2"
+
+/decl/flooring/stone/four
+	icon_base = "extra3"
+
+/decl/flooring/stone/five
+	icon_base = "extra4"
 /decl/flooring/reinforced
 	name = "reinforced floor"
 	desc = "Heavily reinforced with steel plating."
