@@ -29,8 +29,10 @@
 	switch(GLOB.partygang)
 		if(1)
 			src.say("I'm joining the late party 1/6 deployed!") //just speaks to deadchat quickly so 1. people know its open and 2. lets them know the amount of slots left.
+			return
 		if(2)
 			src.say("I'm joining the late party 2/6 deployed!")
+			Deploy_Kroot()
 		if(3)
 			src.say("I'm joining the late party 3/6 deployed!")
 		if(4)
@@ -39,6 +41,19 @@
 			src.say("I'm joining the late party 5/6 deployed!")
 		if(6)
 			src.say("I'm joining the late party 6/6 deployed! All slots are now filled!")
+			GLOB.deployed++ //ensures that only 1 party can be sent
+		if(7)
+			src.say("I'm joining the late party 7/12 deployed! Admemes have opened another party!")
+		if(8)
+			src.say("I'm joining the late party 8/12 deployed!")
+		if(9)
+			src.say("I'm joining the late party 9/12 deployed!")
+		if(10)
+			src.say("I'm joining the late party 10/12 deployed!")
+		if(11)
+			src.say("I'm joining the late party 11/12 deployed!")
+		if(12)
+			src.say("I'm joining the late party 12/12 deployed! All slots are now filled!")
 			GLOB.deployed++ //ensures that only 1 party can be sent
 
 
@@ -52,6 +67,15 @@
 			usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
 			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
+		if("Orkz")
+			message_admins("[usr.key] has joined the late party: Orkz.", 0) //msgs jannies
+			to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Ork tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
+			usr.loc = get_turf(locate("landmark*orkstart")) //where they spawning
+			var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
+			new_character.key = usr.key //puts ghost in body with new key
+		if("Tau")
+			message_admins("debug test", 0) //msgs jannies
+
 
 /hook/startup/proc/chooseparty() //chooses one party on startup
 	Get_Party()
@@ -62,3 +86,11 @@
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")
+
+/mob/observer/ghost/proc/Deploy_Kroot()
+	if(src.isreadied == 1)
+		message_admins("[usr.key] has joined the late party: Kroot.", 0) //msgs jannies
+		to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Kroot tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
+		usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
+		var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
+		new_character.key = usr.key //puts ghost in body with new key

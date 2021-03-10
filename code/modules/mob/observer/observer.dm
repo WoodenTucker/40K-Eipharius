@@ -102,7 +102,7 @@ mob/observer/check_airflow_movable()
 			for(var/area/A in GLOB.blue_captured_zones)
 				stat("Blue Captured Trench:", A)
 
- //this was the first shitty edition, improved below
+ //this was the first shitty edition, improved in lateparty.dm, there could still be a use for this somewhere, with specific mobs in mind
  /*
 /mob/observer/verb/latepartyold()
 	set category = "Ghost"

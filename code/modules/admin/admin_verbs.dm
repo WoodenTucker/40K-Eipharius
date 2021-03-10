@@ -102,7 +102,6 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/force_aspect,
 	/client/proc/another_party,
 	/client/proc/generate_party,
-	/client/proc/view_party,
 
 )
 var/list/admin_verbs_ban = list(
@@ -997,14 +996,3 @@ var/list/admin_verbs_mentor = list(
 
 	feedback_add_details("admin_verb","ZP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Generated the late party!")
-
-/client/proc/view_party() // lets you see which late party was chosen
-	set category = "Fun"
-	set name = "View Party"
-	set desc = "Shows what party we got"
-
-	if(alert("View which late party was selected?",,"Yes","No") == "Yes")
-		message_admins("[GLOB.latepartyoptions] were selected to be this rounds late party!")
-
-	feedback_add_details("admin_verb","VP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	log_and_message_admins("Viewed the late party!")
