@@ -156,9 +156,19 @@ var/list/flooring_types
 	icon_base = "wood"
 	has_damage_range = 6
 	damage_temperature = T0C+200
-	descriptor = "planks"
 	build_type = /obj/item/stack/tile/wood
-	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER
+	descriptor = "planks"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
+
+
+/decl/flooring/stone
+	name = "stone floor"
+	desc = "Cobblestone flooring"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_base = "main"
+	has_damage_range = 6
+	descriptor = "cobble"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
 
 /decl/flooring/reinforced
 	name = "reinforced floor"
