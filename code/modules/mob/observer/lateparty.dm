@@ -32,7 +32,6 @@
 			return
 		if(2)
 			src.say("I'm joining the late party 2/6 deployed!")
-			return
 		if(3)
 			src.say("I'm joining the late party 3/6 deployed!")
 		if(4)
