@@ -174,17 +174,17 @@ mob/observer/check_airflow_movable()
 
 	switch(GLOB.partygang)
 		if(1)
-			usr.say("I'm joining the late party 1/6 deployed!")
+			src.say("I'm joining the late party 1/6 deployed!")
 		if(2)
-			usr.say("I'm joining the late party 2/6 deployed!")
+			src.say("I'm joining the late party 2/6 deployed!")
 		if(3)
-			usr.say("I'm joining the late party 3/6 deployed!")
+			src.say("I'm joining the late party 3/6 deployed!")
 		if(4)
-			usr.say("I'm joining the late party 4/6 deployed!")
+			src.say("I'm joining the late party 4/6 deployed!")
 		if(5)
-			usr.say("I'm joining the late party 5/6 deployed!")
+			src.say("I'm joining the late party 5/6 deployed!")
 		if(6)
-			usr.say("I'm joining the late party 6/6 deployed! All slots are now filled!")
+			src.say("I'm joining the late party 6/6 deployed! All slots are now filled!")
 			GLOB.deployed++ //ensures that only 1 party can be sent
 
 
