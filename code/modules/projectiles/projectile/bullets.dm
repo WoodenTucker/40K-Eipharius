@@ -298,6 +298,7 @@
 
 /obj/item/projectile/bullet/bpistol
 	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 85
 
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -307,6 +308,7 @@
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 85 //ow
 
 /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
