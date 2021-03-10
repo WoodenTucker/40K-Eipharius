@@ -142,3 +142,69 @@ mob/observer/check_airflow_movable()
 	for(var/mob/observer/O in GLOB.player_list)
 		if(jobban_isbanned(O, "Syndicate")) //so I can ban shitters
 			continue
+
+/mob/observer/ghost/verb/latepartynew()
+	set category = "Ghost"
+	set name = "Late Party Test"
+	set desc= "Join a randomized late party picked from a list!"
+
+
+
+
+	var/partydelay = 0 //in deciseconds (20 min rn)
+
+	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
+		to_chat(src, "It is too early for a late party!")
+		return
+
+	if(GLOB.deployed == 1) //checks if a party has already been sent, can make this value higher if you wish to send more than one!
+		to_chat(src, "The late party has already deployed!")
+		return
+
+	if(src.isreadied == 1)
+		to_chat(src,"<span class='warning'><b><font size=3>You leave the queue for the late party!</b></font size=3>")
+		src.isreadied = 0 //unreadies player
+		GLOB.partygang-- //subtracts from amount readied up
+		return
+	else
+		to_chat(src,"<span class='warning'><b><font size=3>You join the queue for the late party!</b></font size=3>")
+		src.isreadied = 1 //readies player up
+		GLOB.partygang++ //adds to amount readied up
+
+
+	switch(GLOB.partygang)
+		if(1)
+			to_chat(usr, "<span class='warning'><b><font size=3> Late party 1/6</b></font size=3>")
+			return
+		if(2)
+			to_chat(usr, "<span class='warning'><b><font size=3> Late party 2/6</b></font size=3>")
+			GLOB.deployed++
+		if(3)
+			to_chat(usr, "<span class='warning'><b><font size=3> Late party 3/6</b></font size=3>")
+			return
+		if(4)
+			to_chat(usr, "<span class='warning'><b><font size=3> Late party 4/6</b></font size=3>")
+			return
+		if(5)
+			to_chat(usr, "<span class='warning'><b><font size=3> Late party 5/6</b></font size=3>")
+			return
+		if(6)
+			to_chat(usr, "<span class='warning'><b><font size=3> Late party 6/6, deploying!</b></font size=3>")
+			GLOB.deployed++ //ensures that only 1 party can be sent
+
+
+
+	var/latepartyoptions = list("")
+
+	latepartyoptions += pick("Kroot") //randomly picks a late party
+
+	var/partyteam = input("Spawn as late party", "Randomly selected party!") as anything in latepartyoptions
+
+	switch(partyteam)
+
+		if("Kroot")
+			message_admins("[usr.key] has joined the late party: Kroot.", 0) //msgs jannies
+			to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Kroot tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
+			usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
+			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
+			new_character.key = usr.key //puts ghost in body with new key

@@ -33,6 +33,7 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 	var/anonsay = 0
 	var/ghostvision = 1 //is the ghost able to see things humans can't?
 	var/seedarkness = 1
+	var/isreadied = 0
 
 	var/obj/item/device/multitool/ghost_multitool
 	incorporeal_move = 1

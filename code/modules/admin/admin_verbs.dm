@@ -949,7 +949,9 @@ var/list/admin_verbs_mentor = list(
 	set name = "Spawn Random Lateparty"
 	set desc = "Deploys the randomly selected late party"
 
-	var/party = list("Kroot")
+	var/party = list("")
+
+	party += pick("Kroot")
 
 
 
@@ -959,9 +961,13 @@ var/list/admin_verbs_mentor = list(
 	switch(partyteam)
 
 		if("Kroot")
+			usr.loc = get_turf(locate("landmark*krootstart"))
 			new /mob/living/carbon/human/kroot(usr.loc)
-
-
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
 
 	feedback_add_details("admin_verb","CP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Spawned a late party.")
