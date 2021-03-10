@@ -167,29 +167,24 @@ mob/observer/check_airflow_movable()
 		GLOB.partygang-- //subtracts from amount readied up
 		return
 	else
-		to_chat(src,"<span class='warning'><b><font size=3>You join the queue for the late party!</b></font size=3>")
+		to_chat(src,"<span class='warning'><b><font size=3>You join the late party!</b></font size=3>")
 		src.isreadied = 1 //readies player up
 		GLOB.partygang++ //adds to amount readied up
 
 
 	switch(GLOB.partygang)
 		if(1)
-			to_chat(usr, "<span class='warning'><b><font size=3> Late party 1/6</b></font size=3>")
-			return
+			usr.say("I'm joining the late party 1/6 deployed!")
 		if(2)
-			to_chat(usr, "<span class='warning'><b><font size=3> Late party 2/6</b></font size=3>")
-			GLOB.deployed++
+			usr.say("I'm joining the late party 2/6 deployed!")
 		if(3)
-			to_chat(usr, "<span class='warning'><b><font size=3> Late party 3/6</b></font size=3>")
-			return
+			usr.say("I'm joining the late party 3/6 deployed!")
 		if(4)
-			to_chat(usr, "<span class='warning'><b><font size=3> Late party 4/6</b></font size=3>")
-			return
+			usr.say("I'm joining the late party 4/6 deployed!")
 		if(5)
-			to_chat(usr, "<span class='warning'><b><font size=3> Late party 5/6</b></font size=3>")
-			return
+			usr.say("I'm joining the late party 5/6 deployed!")
 		if(6)
-			to_chat(usr, "<span class='warning'><b><font size=3> Late party 6/6, deploying!</b></font size=3>")
+			usr.say("I'm joining the late party 6/6 deployed! All slots are now filled!")
 			GLOB.deployed++ //ensures that only 1 party can be sent
 
 
