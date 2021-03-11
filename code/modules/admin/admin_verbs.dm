@@ -1009,23 +1009,17 @@ var/list/admin_verbs_mentor = list(
 
 	switch(chooseaparty)
 		if("Kroot")
-			GLOB.latepartyoptions -= "Kroot"
-			GLOB.latepartyoptions -= "Orkz"
-			GLOB.latepartyoptions -= "Tau"
+			GLOB.latepartyoptions.Cut()
 
 			GLOB.latepartyoptions += "Kroot"
 			message_admins("Kroot have been selected as the late party!")
 		if("Orkz")
-			GLOB.latepartyoptions -= "Kroot"
-			GLOB.latepartyoptions -= "Orkz"
-			GLOB.latepartyoptions -= "Tau"
+			GLOB.latepartyoptions.Cut()
 
 			GLOB.latepartyoptions += "Orkz"
 			message_admins("Orkz have been selected as the late party!")
 		if("Tau")
-			GLOB.latepartyoptions -= "Kroot"
-			GLOB.latepartyoptions -= "Tau"
-			GLOB.latepartyoptions -= "Orkz"
+			GLOB.latepartyoptions.Cut()
 
 			GLOB.latepartyoptions += "Tau"
 			message_admins("Tau have been selected as the late party!")
