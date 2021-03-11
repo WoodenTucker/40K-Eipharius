@@ -853,3 +853,53 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/turf/splate
 	icon_state = "shaftplating"
+
+/obj/effect/floor_decal/turf/checkers
+	icon_state = "checkers1"
+
+/obj/effect/floor_decal/turf/checkers/two
+	icon_state = "checkers2"
+
+/obj/effect/floor_decal/turf/rectangles
+	icon_state = "rectangles1"
+
+
+/obj/effect/floor_decal/turf/rectangles/two
+	icon_state = "rectangles2"
+
+
+/obj/effect/floor_decal/turf/brick
+	icon_state = "brick1"
+
+/obj/effect/floor_decal/turf/brick/two
+	icon_state = "brick2"
+
+/obj/effect/floor_decal/turf/metal
+	icon_state = "metal1"
+
+/obj/effect/floor_decal/turf/metal/two
+	icon_state = "metal2"
+
+/obj/effect/floor_decal/turf/metal/three
+	icon_state = "metal3"
+
+/obj/effect/floor_decal/turf/metal/four
+	icon_state = "metal4"
+
+/obj/effect/floor_decal/turf/metal/five
+	icon_state = "metal5"
+
+/obj/effect/floor_decal/turf/metal/six
+	icon_state = "metal6"
+
+/obj/effect/floor_decal/turf/metal/seven
+	icon_state = "metal7"
+
+/obj/effect/floor_decal/turf/metal/eight
+	icon_state = "metal8"
+
+/obj/effect/floor_decal/turf/metal/nine
+	icon_state = "metal9"
+
+/obj/effect/floor_decal/turf/metal/ten
+	icon_state = "metal10"
