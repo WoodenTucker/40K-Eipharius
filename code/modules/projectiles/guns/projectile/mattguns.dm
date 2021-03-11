@@ -60,6 +60,11 @@
 	penetrating = FALSE
 	damage = 65
 
+/obj/item/projectile/bullet/rifle/kroot
+	fire_sound = "brifle"
+	penetrating = FALSE
+	damage = 85
+
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"
 	desc = "A box of rifle ammo"
@@ -69,6 +74,22 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 20
 
+/obj/item/ammo_magazine/kroot
+	name = "Kroot Rifle Box"
+	desc = "A box of Kroot rifle ammo"
+	icon_state = "rbox"
+	caliber = "640"
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 20
+/obj/item/ammo_casing/krootbullet
+	name = "kroot slug"
+	desc = "An old worn out looking bullet casing."
+	caliber = "640"
+	projectile_type = /obj/item/projectile/bullet/rifle/kroot
+	icon_state = "kroot"
+	spent_icon = "krootcasing"
+	ammo_stack = /obj/item/ammo_magazine/handful/kroot_handful/two
 
 
 //Shitty shotgun
@@ -687,7 +708,7 @@
 	condition = 100 //kroots maintain their guns well
 	fire_sound = "brifle"
 	caliber = "640" //its basically a musket ball
-	ammo_type = /obj/item/ammo_casing/brifle
+	ammo_type = /obj/item/ammo_casing/krootbullet
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
@@ -696,6 +717,7 @@
 	name = "\improper Kroot Bolt Rifle"
 	force = 40
 	sharp = 1
+	ammo_type = /obj/item/ammo_casing/krootbullet
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 
@@ -714,6 +736,7 @@
 	forwardsound = 'sound/weapons/guns/interact/la_forward.ogg'
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
+	ammo_type = /obj/item/ammo_casing/krootbullet
 
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
@@ -724,3 +747,4 @@
 	force_unwielded = 25
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
+	ammo_type = /obj/item/ammo_casing/krootbullet

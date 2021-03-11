@@ -226,6 +226,11 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
+
+/obj/item/storage/backpack/satchel/warfare/kroot
+	desc = "Fit for war, and not much else."
+	icon_state = "krootbag"
+
 /obj/item/storage/backpack/satchel/warfare/techpriest
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"

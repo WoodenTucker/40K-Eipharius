@@ -420,14 +420,14 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/rank/kroot
 	shoes = /obj/item/clothing/shoes/krootfeet
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/ammo_magazine/brifle = 2,)
+	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
 
 
 //Tau//
