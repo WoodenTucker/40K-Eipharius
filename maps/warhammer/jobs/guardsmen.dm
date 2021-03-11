@@ -428,3 +428,18 @@ Begin Warhammer loadouts
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/brifle = 2,)
+
+
+//Tau//
+/decl/hierarchy/outfit/job/tau
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+	backpack_contents = list(/obj/item/ammo_magazine/brifle = 2,)

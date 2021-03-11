@@ -88,12 +88,12 @@ proc/random_ork_name(gender)
 	else
 		return capitalize(pick(orknames)) + " "
 
-proc/random_tau_name(gender)
-	var/taunames = list()
+proc/random_taufw_name(gender)
+	var/taunames = list("Lo Kan", "Rho No", "Sen Jon", "Kas Lo", "Len Kan", "Ren Cron", "San Kas", "Ver Cha", "Dra Nan", "Tam Ra", "Lid Sa", "Chan Dra", "So Ka", "Las Nan", "Shrek Na", "Kes Ra", "Trab Pu Cip")
 	if(gender==FEMALE)
-		return capitalize(pick(taunames)) + " " + ""
+		return capitalize(pick(taunames))
 	else
-		return capitalize(pick(taunames)) + " " + ""
+		return capitalize(pick(taunames))
 
 proc/random_lackey_name()
 	return "Worthless Lackey" + " " + capitalize(pick(GLOB.last_names))

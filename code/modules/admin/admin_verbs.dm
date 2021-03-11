@@ -1025,4 +1025,3 @@ var/list/admin_verbs_mentor = list(
 			message_admins("Tau have been selected as the late party!")
 
 	feedback_add_details("admin_verb","XP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	log_and_message_admins("Generated the late party!")

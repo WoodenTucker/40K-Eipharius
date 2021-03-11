@@ -3,8 +3,8 @@
 	name_plural = "Tau"
 	secondary_langs = list(LANGUAGE_TAU)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
-	icobase = 'icons/mob/human_races/r_kroot.dmi'
-	deform = 'icons/mob/human_races/r_def_kroot.dmi'
+	icobase = 'icons/mob/human_races/r_tau.dmi'
+	deform = 'icons/mob/human_races/r_def_tau.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	min_age = 50
@@ -35,8 +35,6 @@
 
 /mob/living/carbon/human/tau
 	gender = MALE
-	var/isempty = 0
-	var/iseating = 0
 
 /mob/living/carbon/human/tau/New(var/new_loc)
 	h_style = "Bald"
@@ -44,9 +42,9 @@
 
 /mob/living/carbon/human/tau/Initialize()
 	. = ..()
-	fully_replace_character_name(random_kroot_name(src.gender))
+	fully_replace_character_name(random_taufw_name(src.gender))
 	warfare_faction = TAU
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/tau)
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.
@@ -68,17 +66,11 @@
 	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "XV25 Stealth Suit", "Water Caste Merchant", "Water Caste Diplomat")
 	switch(castes)
 		if("Fire Warrior")
-			var/obj/item/device/radio/headset/R = new /obj/item/device/radio/headset
-			R.set_frequency(1473)
-			equip_to_slot_or_del(R, slot_r_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/fwarmor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/fw, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/pulse_rifle/carbine, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/breath, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
 
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
@@ -87,6 +79,7 @@
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
+
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 

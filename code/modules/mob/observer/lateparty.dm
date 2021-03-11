@@ -73,12 +73,10 @@
 			new_character.key = usr.key //puts ghost in body with new key
 		if("Tau")
 			message_admins("[usr.key] has joined the late party: Tau.", 0) //msgs jannies
-			to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Ork tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
+			to_chat(usr, "<span class='warning'><b><font size=3>It has been a long flight but we have landed in Imperial space. Follow the Aun's orders. Assimilate this planet for the greater good! Check the Tau tab and remember your caste!</b></font size=3>") //tells mob to do thing
 			usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
-			var/mob/living/carbon/human/ork/new_character = new(usr.loc)// da mob
-			var/mob/living/carbon/human/kroot/new_character2 = new(usr.loc)
+			var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
 			new_character.key = usr.key //puts ghost in body with new key
-			new_character2.key = usr.key //puts ghost in body with new key
 
 
 /hook/startup/proc/chooseparty() //chooses one party on startup
@@ -86,7 +84,7 @@
 	return
 
 /proc/Get_Party() //dis is the proc that actually selects the party
-	GLOB.latepartyoptions += pick("Kroot", "Orkz", "Tau")
+	GLOB.latepartyoptions += pick("Kroot", "Orkz", "Tau",)
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")
