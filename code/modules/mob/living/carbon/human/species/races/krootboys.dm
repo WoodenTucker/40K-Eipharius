@@ -52,7 +52,7 @@
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.
-	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle)//Give them a weapon.
+	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet)//Give them a weapon.
 
 
 //this is extremely hacky and clown world but I cannot for the life of me find another way to do this. It adds all necessary stats, languages, items, w/e you want on a normal human mob
