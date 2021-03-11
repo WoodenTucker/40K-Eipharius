@@ -1014,18 +1014,21 @@ var/list/admin_verbs_mentor = list(
 			GLOB.latepartyoptions -= "Tau"
 
 			GLOB.latepartyoptions += "Kroot"
+			message_admins("Kroot have been selected as the late party!")
 		if("Orkz")
 			GLOB.latepartyoptions -= "Kroot"
 			GLOB.latepartyoptions -= "Orkz"
 			GLOB.latepartyoptions -= "Tau"
 
 			GLOB.latepartyoptions += "Orkz"
+			message_admins("Orkz have been selected as the late party!")
 		if("Tau")
 			GLOB.latepartyoptions -= "Kroot"
 			GLOB.latepartyoptions -= "Tau"
 			GLOB.latepartyoptions -= "Orkz"
 
 			GLOB.latepartyoptions += "Tau"
+			message_admins("Tau have been selected as the late party!")
 
 	feedback_add_details("admin_verb","XP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Generated the late party!")
