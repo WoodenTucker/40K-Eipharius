@@ -823,6 +823,11 @@ Imperial Guardsman
 	icon_state = "tagred"
 	access = list(access_kroot)
 
+/obj/item/card/id/ring/tau
+	icon_state = "tau"
+	access = list(access_kroot)
+	desc = "An ornate ring forged by Tau craftsmen. Functions like an ID."
+
 /obj/item/clothing/suit/armor/sgt
 	name = "Guardsman's Medium Armor"
 	desc = "The well-worn armor of an Imperial Guard Sergeant."

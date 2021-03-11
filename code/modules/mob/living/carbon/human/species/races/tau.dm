@@ -81,9 +81,9 @@
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
 
-			var/obj/item/card/id/dog_tag/guardsman/W = new
+			var/obj/item/card/id/ring/tau/W = new
 
-			W.icon_state = "tagred"
+			W.icon_state = "tau"
 			W.assignment = "Tau Envoy"
 			W.registered_name = real_name
 			W.update_label()
