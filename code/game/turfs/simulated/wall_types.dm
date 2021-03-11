@@ -137,3 +137,20 @@
 	mineral = "stone"
 	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
+
+
+/turf/simulated/wall/grim
+	name = "grim wall"
+	desc = "A grim looking metal wall"
+	icon_state = "grim0"
+	walltype = "grim"
+	plane = ABOVE_HUMAN_PLANE
+	integrity = 500 //Tough bois
+
+/turf/simulated/wall/techno
+	name = "techno wall"
+	desc = "A techno looking metal wall"
+	icon_state = "techno0"
+	walltype = "techno"
+	plane = ABOVE_HUMAN_PLANE
+	integrity = 500 //Tough bois
