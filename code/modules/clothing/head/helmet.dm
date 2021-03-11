@@ -172,3 +172,16 @@
 	icon_state = "guard"
 	armor = list(melee = 45, bullet = 40, laser = 40, energy = 35, bomb = 45, bio = 0, rad = 0)
 	siemens_coefficient = 0.6
+
+
+//tau//
+/obj/item/clothing/head/helmet/fw
+	name = "fire warrior helmet"
+	desc = "A tau helmet made from advanced ceramic. Comfortable and robust."
+	icon_state = "tbrea"
+	item_state = "tbrea"
+	armor = list(melee = 15, bullet = 60, laser = 60, energy = 45, bomb = 30, bio = 0, rad = 0)
+	siemens_coefficient = 0.6
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

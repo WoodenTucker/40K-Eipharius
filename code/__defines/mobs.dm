@@ -287,6 +287,7 @@
 #define SPECIES_ORK_MEK "Mekboy"
 #define SPECIES_ORK_BOSS "Warboss"
 #define SPECIES_KROOT "Kroot"
+#define SPECIES_TAU "Tau"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1

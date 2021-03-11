@@ -88,6 +88,13 @@ proc/random_ork_name(gender)
 	else
 		return capitalize(pick(orknames)) + " "
 
+proc/random_tau_name(gender)
+	var/taunames = list()
+	if(gender==FEMALE)
+		return capitalize(pick(taunames)) + " " + ""
+	else
+		return capitalize(pick(taunames)) + " " + ""
+
 proc/random_lackey_name()
 	return "Worthless Lackey" + " " + capitalize(pick(GLOB.last_names))
 

@@ -75,8 +75,10 @@
 			message_admins("[usr.key] has joined the late party: Tau.", 0) //msgs jannies
 			to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Ork tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
 			usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
-			var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
+			var/mob/living/carbon/human/ork/new_character = new(usr.loc)// da mob
+			var/mob/living/carbon/human/kroot/new_character2 = new(usr.loc)
 			new_character.key = usr.key //puts ghost in body with new key
+			new_character2.key = usr.key //puts ghost in body with new key
 
 
 /hook/startup/proc/chooseparty() //chooses one party on startup

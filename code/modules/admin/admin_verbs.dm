@@ -102,6 +102,7 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/force_aspect,
 	/client/proc/another_party,
 	/client/proc/generate_party,
+	/client/proc/choose_party,
 
 )
 var/list/admin_verbs_ban = list(
@@ -995,4 +996,36 @@ var/list/admin_verbs_mentor = list(
 		GLOB.latepartyoptions += pick("Kroot")
 
 	feedback_add_details("admin_verb","ZP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	log_and_message_admins("Generated the late party!")
+
+/client/proc/choose_party() // Runs the pick proc should you need to
+	set category = "Fun"
+	set name = "Choose Party"
+	set desc = "Picks the party for the round!"
+
+	var/parties = list("Kroot", "Tau", "Orkz") //lists all possible fates
+
+	var/chooseaparty = input("Choose a party", "Available parties") as null|anything in parties
+
+	switch(chooseaparty)
+		if("Kroot")
+			GLOB.latepartyoptions -= "Kroot"
+			GLOB.latepartyoptions -= "Orkz"
+			GLOB.latepartyoptions -= "Tau"
+
+			GLOB.latepartyoptions += "Kroot"
+		if("Orkz")
+			GLOB.latepartyoptions -= "Kroot"
+			GLOB.latepartyoptions -= "Orkz"
+			GLOB.latepartyoptions -= "Tau"
+
+			GLOB.latepartyoptions += "Orkz"
+		if("Tau")
+			GLOB.latepartyoptions -= "Kroot"
+			GLOB.latepartyoptions -= "Tau"
+			GLOB.latepartyoptions -= "Orkz"
+
+			GLOB.latepartyoptions += "Tau"
+
+	feedback_add_details("admin_verb","XP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Generated the late party!")

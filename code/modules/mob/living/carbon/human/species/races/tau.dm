@@ -1,0 +1,97 @@
+/datum/species/tau
+	name = SPECIES_TAU
+	name_plural = "Tau"
+	secondary_langs = list(LANGUAGE_TAU)
+	name_language = null // Use the first-name last-name generator rather than a language scrambler
+	icobase = 'icons/mob/human_races/r_kroot.dmi'
+	deform = 'icons/mob/human_races/r_def_kroot.dmi'
+	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
+	min_age = 50
+	max_age = 800
+	gluttonous = GLUT_ITEM_NORMAL
+	total_health = 150
+	mob_size = MOB_MEDIUM
+	strength = STR_MEDIUM
+	sexybits_location = BP_GROIN
+	inherent_verbs = list(
+	/mob/living/carbon/human/tau/proc/tauclasses,
+		)
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
+/datum/species/tau/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.age = rand(min_age,max_age)//Random age for kiddos.
+	if(H.f_style)//tau don't get beards.
+		H.f_style = "Shaved"
+	to_chat(H, "<big><span class='warning'>You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.</span></big>")
+	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
+	return ..()
+/mob/living/carbon/human
+	var/new_tau = SPECIES_TAU
+
+/mob/living/carbon/human/tau
+	gender = MALE
+	var/isempty = 0
+	var/iseating = 0
+
+/mob/living/carbon/human/tau/New(var/new_loc)
+	h_style = "Bald"
+	..(new_loc, new_tau)
+
+/mob/living/carbon/human/tau/Initialize()
+	. = ..()
+	fully_replace_character_name(random_kroot_name(src.gender))
+	warfare_faction = TAU
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	outfit.equip(src)
+
+	hand = 0//Make sure one of their hands is active.
+
+
+//this is extremely hacky and clown world but I cannot for the life of me find another way to do this. It adds all necessary stats, languages, items, w/e you want on a normal human mob
+//I look forward to the day someone calls me retarded and finds a very easy way to do this during init - wel
+//Adding the proc to the init will call it/run it, but it will not apply the stats as I'm guessing they're loaded after init somehow somewhere. I know stats are a datum
+
+/mob/living/carbon/human/tau/proc/tauclasses()
+	set name = "Remember your caste"
+	set category = "Tau"
+	set desc = "Various Tau classes and gives them stats"
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "XV25 Stealth Suit", "Water Caste Merchant", "Water Caste Diplomat")
+	switch(castes)
+		if("Fire Warrior")
+			var/obj/item/device/radio/headset/R = new /obj/item/device/radio/headset
+			R.set_frequency(1473)
+			equip_to_slot_or_del(R, slot_r_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/fwarmor, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/fw, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/pulse_rifle/carbine, slot_r_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/breath, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
+
+
+			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
+			src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+			src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(TAU) //secondary language
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.assignment = "Tau Envoy"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
