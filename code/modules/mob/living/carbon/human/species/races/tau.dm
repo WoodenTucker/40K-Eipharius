@@ -78,13 +78,16 @@
 			src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
+			src.name = "Shas [name]"
+			src.real_name = "Shas [real_name]"
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
+
 
 
 			var/obj/item/card/id/ring/tau/W = new
 
 			W.icon_state = "tau"
-			W.assignment = "Tau Envoy"
+			W.assignment = "Fire Warrior"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)

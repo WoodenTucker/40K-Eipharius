@@ -515,3 +515,8 @@
 /datum/access/innroom_3
 	id = access_inn3
 	desc = "Inn room 3"
+
+/var/const/access_tau = 209
+/datum/access/tau
+	id = access_tau
+	desc = "Tau Ship"

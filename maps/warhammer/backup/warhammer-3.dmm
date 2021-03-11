@@ -10,7 +10,7 @@
 "aj" = (/turf/simulated/wall/r_wall,/area/cadiaoutpost/oa/bridge/hallway)
 "ak" = (/obj/machinery/door/airlock/command{name = "Seneschal's Office"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/seneschal)
 "al" = (/obj/structure/table/steel_reinforced,/obj/machinery/chemical_dispenser/bar_coffee/full,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/meetingroom)
-"am" = (/obj/effect/landmark/map_data{height = 3},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/hallway)
+"am" = (/obj/effect/landmark/map_data{height = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/hallway)
 "an" = (/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/meetingroom)
 "ao" = (/obj/structure/bed/chair/office/light{icon_state = "officechair_white_preview"; dir = 8},/obj/effect/landmark/start{name = "Sister Hospitaller"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
 "ap" = (/turf/simulated/open,/area/cadiaoutpost/oa/bridge/hallway)

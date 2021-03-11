@@ -522,6 +522,12 @@
 	icon = 'icons/obj/doors/Doorgold.dmi'
 	mineral = "gold"
 
+/obj/machinery/door/airlock/gold/tau
+	name = "Tau Airlock"
+	icon = 'icons/obj/doors/Doorgold.dmi'
+	mineral = "gold"
+	req_access = list(access_tau)
+
 /obj/machinery/door/airlock/silver
 	name = "Silver Airlock"
 	icon = 'icons/obj/doors/Doorsilver.dmi'

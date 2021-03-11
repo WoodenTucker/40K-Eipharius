@@ -825,7 +825,7 @@ Imperial Guardsman
 
 /obj/item/card/id/ring/tau
 	icon_state = "tau"
-	access = list(access_kroot)
+	access = list(access_tau)
 	desc = "An ornate ring forged by Tau craftsmen. Functions like an ID."
 
 /obj/item/clothing/suit/armor/sgt
