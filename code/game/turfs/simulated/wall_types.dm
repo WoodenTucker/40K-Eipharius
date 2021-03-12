@@ -133,7 +133,7 @@
 	name = "snowy cave wall"
 	desc = "An ancient cave wall covered in snow."
 	icon_state = "snow0"
-	walltype = "stone"
+	walltype = "snow"
 	mineral = "stone"
 	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
