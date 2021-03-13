@@ -193,7 +193,6 @@
 	icon_state = "pod_0"
 	base_icon_state = "pod_0"
 	occupied_icon_state = "pod_1"
-	on_store_message = "has entered robotic storage."
 	on_store_name = "Robotic Storage Oversight"
 	on_enter_occupant_message = "The storage unit broadcasts a sleep signal to you. Your systems start to shut down, and you enter low-power mode."
 	allow_occupant_types = list(/mob/living/silicon/robot)
@@ -417,7 +416,6 @@
 		control_computer._admin_logs += "[key_name(occupant)] ([role_alt_title]) at [stationtime2text()]"
 	log_and_message_admins("[key_name(occupant)] ([role_alt_title]) entered cryostorage.")
 
-	announce.autosay("[occupant.real_name], [role_alt_title], [on_store_message]", "[on_store_name]")
 	visible_message("<span class='notice'>\The [initial(name)] hums and hisses as it moves [occupant.real_name] into storage.</span>", 3)
 
 	//This should guarantee that ghosts don't spawn.
