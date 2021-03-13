@@ -555,8 +555,8 @@
 	item_state = "c_tube"
 	matter = list("glass" = 100)
 
-	brightness_range = 6	// luminosity when on, also used in power calculation
-	brightness_power = 4
+	brightness_range = 4	// luminosity when on, also used in power calculation
+	brightness_power = 3
 	brightness_color = "#B2B2B2"//"#FAE1AF"//"#C5D8B3"//#CDFEE0
 	lighting_modes = list(
 		LIGHTMODE_EMERGENCY = list(l_range = 4, l_power = 1, l_color = "#da0205"),
@@ -566,8 +566,8 @@
 /obj/item/light/tube/large
 	w_class = ITEM_SIZE_SMALL
 	name = "large light tube"
-	brightness_range = 18
-	brightness_power = 12
+	brightness_range = 10
+	brightness_power = 6
 
 /obj/item/light/bulb
 	name = "light bulb"
