@@ -131,7 +131,7 @@
 	var/moving = 0
 
 /obj/machinery/computer/exterminatus/attack_hand(mob/user as mob)	//Starting menu
-	var/extermdelay = 0 //in deciseconds (35 min rn or 21000 deciseconds)
+	var/extermdelay = 21000 //in deciseconds (35 min rn or 21000 deciseconds)
 
 	if(world.time < extermdelay) //all this does is cause a delay so people can't suicide or observer and rush the base
 		visible_message("It is too early to give up on this world! This will open when round duration reaches 0:35!")
