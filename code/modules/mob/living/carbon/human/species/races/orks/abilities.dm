@@ -97,3 +97,27 @@
 			waaagh -= 300
 	else
 		to_chat(src, "<span class='notice'>YOU DON HAVE ENUF WAAAAAAAAGH!</span>")
+
+/mob/living/carbon/human/ork/proc/giveorkzstats()
+	set name = "Git ready ta' krump!"
+	set category = "Ork"
+	set desc = "Gives Orkz stats since I can't seem to do it any other way in this clown world."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] flexs der' muscles afa' a long nap, feelin' der' strength an' skill return to 'em.")
+	src.add_stats(rand(14,18),rand(14,18),rand(12,15),8) //gives stats str, end, int, dex
+	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.update_eyes() //should fix grey vision
+	src.warfare_language_shit(ORKZ) //secondary language
+	src.verbs -= /mob/living/carbon/human/ork/proc/giveorkzstats //removes verb at the end so they can't spam it for whatever reason
+
+	var/obj/item/card/id/dog_tag/guardsman/W = new
+
+	W.icon_state = "tagred"
+	W.assignment = "Orky Boy"
+	W.registered_name = real_name
+	W.update_label()
+	equip_to_slot_or_del(W, slot_wear_id)

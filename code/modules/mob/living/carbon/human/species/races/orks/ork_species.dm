@@ -73,7 +73,7 @@
 	. = ..()
 	fully_replace_character_name(random_ork_name(src.gender))
 	warfare_faction = ORKZ
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/ork)
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.

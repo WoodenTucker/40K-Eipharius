@@ -21,7 +21,8 @@
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
-		/mob/living/carbon/human/ork/proc/scavenge
+		/mob/living/carbon/human/ork/proc/scavenge,
+		/mob/living/carbon/human/ork/proc/giveorkzstats,
 		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
