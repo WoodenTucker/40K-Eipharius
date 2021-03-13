@@ -719,7 +719,7 @@
 "nQ" = (/obj/effect/floor_decal/turf/barnew,/obj/machinery/chemical_dispenser/bar_alc/full,/obj/structure/table/standard{name = "plastic table frame"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
 "nR" = (/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/obj/structure/lattice,/obj/machinery/power/apc{dir = 1; pixel_y = 32},/turf/simulated/open,/area/cadiaoutpost/oa/engineering)
 "nS" = (/obj/machinery/chemical_dispenser/full,/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
-"nT" = (/obj/effect/floor_decal/turf/plating,/obj/structure/closet,/turf/simulated/floor/plating,/area/cadiaoutpost/oa/villageinside)
+"nT" = (/obj/effect/floor_decal/turf/plating,/obj/structure/closet,/obj/item/storage/firstaid/surgery,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/plating,/area/cadiaoutpost/oa/villageinside)
 "nU" = (/obj/effect/landmark/animal/rngretaliatespawner{name = "rng rat"},/turf/simulated/floor/tiled/white,/area/cadiaoutpost/oa/villageinside)
 "nV" = (/obj/structure/bed/chair/wheelchair{dir = 1; icon_state = "wheelchair"},/obj/effect/floor_decal/newcorner/white/diagonal,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/oa/villageinside)
 "nW" = (/obj/structure/bed/chair{dir = 1},/obj/effect/floor_decal/newcorner/white/diagonal,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/oa/villageinside)
