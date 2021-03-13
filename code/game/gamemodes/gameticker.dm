@@ -262,6 +262,41 @@ var/global/datum/controller/gameticker/ticker
 		if(cinematic)	qdel(cinematic)		//end the cinematic
 		if(temp_buckle)	qdel(temp_buckle)	//release everybody
 		return
+/*
+Exterminatus
+*/
+	proc/station_heretics_cinematic()
+
+		if(cinematic)	return	//already a cinematic in progress!
+		//initialise our cinematic screen object
+		cinematic = new(src)
+		cinematic.icon = 'icons/effects/station_explosion.dmi'
+		cinematic.icon_state = "heretics"
+		cinematic.plane = HUD_PLANE
+		cinematic.layer = HUD_ABOVE_ITEM_LAYER
+		cinematic.mouse_opacity = 0
+		cinematic.screen_loc = "1,0"
+
+		var/obj/structure/bed/temp_buckle = new(src)
+		world << sound('sound/effects/heretics.ogg')
+		sleep(74)
+		for(var/mob/M in SSmobs.mob_list)
+			M.buckled = temp_buckle
+			M << "\red The Simiel obliterated the planet with a Cyclonic Torpedo!!"
+			M << "\red REBOOTING DUE TO EXTERMINATUS OF PLANET!!"
+			if(M.client)
+				M.client.screen += cinematic
+			if(M.stat != DEAD)
+				var/turf/T = get_turf(M)
+				if(T && T.z==1)						//getturf, getturf z level
+					M.death(0) //no mercy
+		flick("heretics",cinematic)
+
+
+		sleep(200)
+		log_game("Rebooting due to exterminatus")
+		world.Reboot()
+		return
 
 
 /datum/controller/gameticker/proc/create_characters()
@@ -517,3 +552,4 @@ var/global/datum/controller/gameticker/ticker
 					to_world("Attempting to spawn [antag.role_text_plural].")
 
 	return 0
+

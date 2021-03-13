@@ -262,6 +262,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
+	belt = /obj/item/device/flashlight/lantern
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -270,7 +271,6 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	backpack_contents = list(
 		/obj/item/ammo_magazine/box/a556/mg08 = 2,
-		/obj/item/device/flashlight/lantern = 1,
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,

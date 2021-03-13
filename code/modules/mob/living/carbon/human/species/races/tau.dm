@@ -63,7 +63,7 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Water Caste Diplomat")
+	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Kroot Hunter")
 	switch(castes)
 		if("Fire Warrior")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/fwarmor, slot_wear_suit)
@@ -122,5 +122,11 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+		if("Kroot Hunter")
+			usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
+			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
+			new_character.key = usr.key //puts ghost in body with new key
+			visible_message("You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.")
+			qdel(src)
 
 
