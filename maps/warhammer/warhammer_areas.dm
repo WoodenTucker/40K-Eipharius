@@ -524,6 +524,8 @@ Area basic template
 /area/cadiaoutpost/oa/medicae
 	name = "Medicae"
 	icon_state = "medbay"
+	dynamic_lighting = 1
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/storage
 	name = "Medicae Storage"
