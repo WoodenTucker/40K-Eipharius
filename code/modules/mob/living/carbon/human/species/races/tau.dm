@@ -63,15 +63,17 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "XV25 Stealth Suit", "Water Caste Merchant", "Water Caste Diplomat")
+	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Water Caste Diplomat")
 	switch(castes)
 		if("Fire Warrior")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/fwarmor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/fw, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/pulse_rifle/carbine, slot_r_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulserifle, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-
+			equip_to_slot_or_del(new /obj/item/cell/pulserifle, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/pulserifle, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulsepistol, slot_in_backpack)
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
 			src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
@@ -91,3 +93,34 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
+		if("Water Caste Merchant")
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulsepistol, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/pulserifle, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/head/tautrader, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/watercaste, slot_wear_suit)
+
+			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
+			src.add_stats(rand(10,12),rand(10,12),rand(12,13),15) //gives stats str, end, int, dex
+			src.add_skills(rand(3,6),rand(3,6),rand(0,3),3,3) //skills such as melee, ranged, med, eng and surg
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(TAU) //secondary language
+			src.name = "Por [name]"
+			src.real_name = "Por [real_name]"
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
+
+
+
+			var/obj/item/card/id/ring/tau/W = new
+
+			W.icon_state = "tau"
+			W.assignment = "Water Caste Merchant"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+

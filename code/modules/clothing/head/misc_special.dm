@@ -213,3 +213,13 @@
 	icon_state = "richard"
 	body_parts_covered = HEAD|FACE
 	flags_inv = BLOCKHAIR
+
+
+/obj/item/clothing/head/tautrader
+	name = "trader's hat"
+	desc = "Emblazoned with the Tau crest"
+	icon_state = "ricehat"
+	item_state = "ricehat"
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

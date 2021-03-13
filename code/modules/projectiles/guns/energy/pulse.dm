@@ -19,10 +19,11 @@
 /obj/item/gun/energy/pulse_rifle/carbine
 	name = "pulse carbine"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Less bulky than the full-sized rifle."
-	icon_state = "pulse_carbine"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "pulseb"
+	item_state = "pulseb"
 	slot_flags = SLOT_BACK|SLOT_BELT
 	force = 8
-	//projectile_type = /obj/item/projectile/beam/pulse/mid
 	max_shots = 24
 	w_class = ITEM_SIZE_LARGE
 	one_hand_penalty= 3
@@ -32,7 +33,9 @@
 /obj/item/gun/energy/pulse_rifle/pistol
 	name = "pulse pistol"
 	desc = "A weapon that uses advanced pulse-based beam generation technology to emit powerful laser blasts. Even smaller than the carbine."
-	icon_state = "pulse_pistol"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "pulsep"
+	item_state = "pulsep"
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	force = 6
 	projectile_type = /obj/item/projectile/beam/pulse

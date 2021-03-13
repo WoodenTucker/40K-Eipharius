@@ -442,4 +442,3 @@ Begin Warhammer loadouts
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/ammo_magazine/brifle = 2,)
