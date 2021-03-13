@@ -178,10 +178,10 @@
 
 	if (href_list["range"])
 		if (firing)
-			to_chat(usr, "\red The Black Ship Marinaeque Testudinis is already firing at ArchAngel IV!")
+			to_chat(usr, "\red The Black Ship Marinaeque Testudinis is already firing!")
 			return
 		if (inrange)
-			to_chat(usr, "\red The Black Ship Marinaeque Testudinis is already in range of ArchAngel IV!")
+			to_chat(usr, "\red The Black Ship Marinaeque Testudinis is already in range!")
 			return
 		else
 			if (!inrange)
