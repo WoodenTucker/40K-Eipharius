@@ -131,10 +131,10 @@
 	var/moving = 0
 
 /obj/machinery/computer/exterminatus/attack_hand(mob/user as mob)	//Starting menu
-	var/extermdelay = 21000 //in deciseconds (20 min rn or 12000 deciseconds)
+	var/extermdelay = 0 //in deciseconds (35 min rn or 21000 deciseconds)
 
 	if(world.time < extermdelay) //all this does is cause a delay so people can't suicide or observer and rush the base
-		to_chat(src, "It is too early to give up on this world! This will open when round duration reaches 0:35!")
+		visible_message("It is too early to give up on this world! This will open when round duration reaches 0:35!")
 		return
 
 	user.set_machine(src)
@@ -201,7 +201,6 @@
 			moving = 1
 			playsound(src.loc,'sound/effects/droppod.ogg',75,1)
 			sleep(240)
-			to_world("Attention... Attention.... Attention... Inquisitorial Black Ship detected in orbit.... Prepare the TITH*T*TH*E*H**------ When the people forget their duty they are no longer human and become something less than beasts. They have no place in the bosom of humanity nor in the heart of the Emperor. Let them die and be forgotten......__*(@%*@%*.....")
 			to_world("As you peer into the sky, a dreaded chill runs down your spine. For you thought that the utter monstrosity you are having the misfortune of gazing upon was legend, not reality.. A Black Ship of the Ordo Hereticus coldly stares back at you. Pray to your god, or gods, for there is no escaping the Emperor's Wrath...")
 			inrange = 1	//Now in range
 			moving = 0
