@@ -217,9 +217,9 @@ Begin Warhammer loadouts
 	l_hand = /obj/item/gun/energy/las/lasgun
 	l_ear = null
 	r_ear = null
+	belt = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
