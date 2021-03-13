@@ -65,7 +65,8 @@
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,
 		//mob/living/carbon/human/ork/proc/evolve,
-		/mob/living/carbon/human/ork/proc/scavenge
+		/mob/living/carbon/human/ork/proc/scavenge,
+		/mob/living/carbon/human/ork/proc/giveorkzstats
 		)
 
 /datum/species/ork/boss
