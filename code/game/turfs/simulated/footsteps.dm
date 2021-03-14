@@ -128,6 +128,9 @@
 /turf/simulated/floor/stone/get_footstep_sound()
 	return safepick(footstep_sounds[FOOTSTEP_STONE])
 
+/turf/simulated/floor/snow/get_footstep_sound()
+	return safepick(footstep_sounds[FOOTSTEP_SNOW])
+
 
 
 /turf/simulated/floor/Entered(var/mob/living/carbon/human/H)

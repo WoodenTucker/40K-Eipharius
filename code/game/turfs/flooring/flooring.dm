@@ -279,3 +279,12 @@ var/list/flooring_types
 	icon = 'icons/turf/floors.dmi'
 	icon_base = "diona"
 	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
+
+/decl/flooring/snow
+	name = "snow"
+	desc = "Mixed snow"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_base = "main"
+	has_damage_range = 6
+	descriptor = "snow"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
