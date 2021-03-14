@@ -77,7 +77,8 @@
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.
-	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet)//Give them a weapon.
+	put_in_hands(new /obj/item/gun/projectile/ork/automatic/shoota)//Give them a weapon.
+	isburied = 1
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
 	var/namelist = list("Nob")

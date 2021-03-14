@@ -46,6 +46,7 @@
 	warfare_faction = TAU
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/tau)
 	outfit.equip(src)
+	isburied = 1
 
 	hand = 0//Make sure one of their hands is active.
 
