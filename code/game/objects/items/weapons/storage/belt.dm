@@ -137,6 +137,9 @@
 	/obj/item/reagent_containers/food/snacks/meat/human,
 	/obj/item/reagent_containers/food/snacks/xenomeat,
 	/obj/item/reagent_containers/food/snacks/meat,
+	/obj/item/reagent_containers/food/snacks/shaframeat,
+	/obj/item/reagent_containers/food/snacks,
+	/obj/item/reagent_containers/food/snacks/bearmeat,
 	)
 
 /obj/item/storage/belt/medical/full/New()
