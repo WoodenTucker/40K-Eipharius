@@ -24,6 +24,7 @@
 	req_admin_notify = 1
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
+	announced = 0
 
 
 	equip(var/mob/living/carbon/human/H)
