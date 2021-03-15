@@ -1055,7 +1055,6 @@
 #include "code\modules\admin\server_whitelist.dm"
 #include "code\modules\admin\ticket.dm"
 #include "code\modules\admin\topic.dm"
-#include "code\modules\admin\trust.dm"
 #include "code\modules\admin\buildmode\advance.dm"
 #include "code\modules\admin\buildmode\basic.dm"
 #include "code\modules\admin\buildmode\build_mode.dm"

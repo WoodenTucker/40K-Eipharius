@@ -12,7 +12,6 @@ var/const/EXP               =(1<<10)
 var/const/GRD               =(1<<11)
 var/const/INQ               =(1<<12)
 var/const/PIL               =(1<<13)
-var/const/TRUST             =(1<<14)
 
 GLOBAL_LIST_EMPTY(assistant_occupations)
 
@@ -48,11 +47,9 @@ GLOBAL_LIST_EMPTY(inquisition_positions) //self explanatory
 
 GLOBAL_LIST_EMPTY(pilgrim_positions) //pilgrims to the outpost, non-guard, non RT staff
 
-GLOBAL_LIST_EMPTY(trusted_positions) //whitelists big dumb meme people
-
 
 /proc/guest_jobbans(var/job)
-	return ((job in GLOB.trusted_positions))
+	return ((job in GLOB.command_positions) || (job in GLOB.nonhuman_positions) || (job in GLOB.security_positions))
 
 /proc/get_job_datums()
 	var/list/occupations = list()

@@ -458,8 +458,6 @@
 			jobcats["Team Blue"]["jobs"] += job
 		else if(job.is_red_team)
 			jobcats["Team Red"]["jobs"] += job
-		else if(job.department_flag & TRUST)
-			jobcats["Trusted"]["jobs"] += job
 		else if(job.department_flag & COM)
 			jobcats["Command"]["jobs"] += job
 		else if(job.department_flag & SEC)

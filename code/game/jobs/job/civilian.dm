@@ -219,7 +219,7 @@
 
 /datum/job/leadinquisitor
 	title = "Ordos Helican Inquisitor"
-	department_flag = TRUST
+	department_flag = INQ
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1

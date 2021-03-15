@@ -103,8 +103,6 @@ var/list/admin_verbs_admin = list(
 	/client/proc/another_party,
 	/client/proc/generate_party,
 	/client/proc/choose_party,
-	/datum/admins/proc/ReloadTrustWhitelist,
-
 
 )
 var/list/admin_verbs_ban = list(
