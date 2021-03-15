@@ -4,7 +4,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	title = "Rogue Trader"
 	department = "Command"
 	head_position = 1
-	department_flag = COM
+	department_flag = CIV
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
@@ -43,7 +43,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 /datum/job/hop
 	title = "Seneschal"
 	head_position = 1
-	department_flag = COM|CIV
+	department_flag = CIV
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 1
 	spawn_positions = 1

@@ -101,7 +101,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	open_when_dead = FALSE
-	department_flag = SEC
+	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
 
 	announced = FALSE

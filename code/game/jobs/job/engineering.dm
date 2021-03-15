@@ -2,7 +2,7 @@
 	title = "Magos"
 	head_position = 1
 	department = "Engineering"
-	department_flag = ENG|COM
+	department_flag = ENG
 
 	total_positions = 1
 	spawn_positions = 1
