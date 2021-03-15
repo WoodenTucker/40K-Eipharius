@@ -29,6 +29,7 @@
 	/datum/job/leadinquisitor,
 	/datum/job/innkeeper,
 	/datum/job/undertaker,
+	/datum/job/administrator,
 	)
 
 /mob/living/carbon/human/proc/warfare_language_shit(var/language_name) //reworked from matts original intention, the default language is gothic, this will allow you to now add a faction specific language.

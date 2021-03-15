@@ -199,6 +199,37 @@ Pilgrim Fate System
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
 
+
+
+/datum/job/administrator  //so that the inn always has someone working
+	title = "Administrator"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_HIGH //better off than your average gross pilgrim
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 1
+	supervisors = "the Administratum at large"
+	selection_color = "#515151"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/administrator
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(10,12), rand(9,12), rand(10,12), rand (12,15)) //a lil better fed than others.
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.assign_random_quirk()
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
+
+
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
 	name = OUTFIT_JOB_NAME("Pilgrim")
@@ -233,3 +264,25 @@ Pilgrim Fate System
 )
 
 
+//Administrator
+/decl/hierarchy/outfit/job/administrator
+	name = OUTFIT_JOB_NAME("Administrator")
+	uniform = /obj/item/clothing/under/color/brown
+	shoes = /obj/item/clothing/shoes/jackboots
+	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	suit = /obj/item/clothing/suit/merchant
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	l_ear = null
+	r_ear = /obj/item/device/radio/headset/red_team/all
+	belt = /obj/item/device/flashlight/lantern
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 2,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/twenty = 1,
+
+	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
