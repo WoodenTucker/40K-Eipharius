@@ -131,7 +131,7 @@
 
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
-	supervisors = "The Commissar, the Rogue Trader, Imperial Law"
+	supervisors = "The Commissar, the Rogue Trader, and the village Administrator"
 	total_positions = 2
 	spawn_positions = 2 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
