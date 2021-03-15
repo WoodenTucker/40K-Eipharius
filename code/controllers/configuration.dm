@@ -69,6 +69,7 @@ var/list/gamemode_cache = list()
 	var/load_jobs_from_txt = 0
 	var/jobs_have_minimal_access = 0	//determines whether jobs use minimal access or expanded access.
 	var/use_cortical_stacks = 0
+	var/trusted_role = 0
 
 	var/cult_ghostwriter = 1               //Allows ghosts to write in blood in cult rounds...
 	var/cult_ghostwriter_req_cultists = 10 //...so long as this many cultists are active.
@@ -86,6 +87,7 @@ var/list/gamemode_cache = list()
 	var/usealienwhitelist = 0
 	var/usealienwhitelistSQL = 0;
 	var/useckeywhitelist = 0
+	var/usetrustwhitelist = 0
 	var/usepopcap = FALSE
 	var/popcap = 0
 	var/limitalienplayers = 0
@@ -479,6 +481,9 @@ var/list/gamemode_cache = list()
 
 				if("private_party")
 					config.private_party = 1
+
+				if("usetrustwhitelist")
+					config.usetrustwhitelist = 1
 
 				if ("useckeywhitelist")
 					config.useckeywhitelist = 1

@@ -7,7 +7,7 @@
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
 	selection_color = "#270092"
-	department_flag = SEC|COM
+	department_flag = TRUST
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
 	auto_rifle_skill = 10 //astartes are masters of all weaponry

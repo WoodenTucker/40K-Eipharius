@@ -249,6 +249,10 @@
 #define CRIT_SUCCESS 2
 #define CRIT_FAILURE -1
 
+#define TRUST_SCOUT "Scout" //Used in role whitelist system
+#define TRUST_BROTHER "Battle Brother"
+#define TRUST_BROTHER_SERGEANT "Brother Sergeant"
+
 
 //Some Aurora shit
 #define N_NORTH    2

@@ -8,6 +8,8 @@ var/global/list/ckey_whitelist = null
 
 var/global/list/hellbans = null//Hellbanned boys
 
+var/global/list/trust_whitelist = null
+
 
 GLOBAL_LIST_EMPTY(player_list)      //List of all mobs **with clients attached**. Excludes /mob/new_player
 GLOBAL_LIST_EMPTY(human_mob_list)   //List of all human mobs and sub-types, including clientless
