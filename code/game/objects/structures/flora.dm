@@ -115,8 +115,7 @@
 	icon = 'icons/obj/flora/snowflora.dmi'
 	anchored = 1
 
-/obj/structure/flora/grass/attackby(obj/item/O, mob/user)
-	. = ..()
+/obj/structure/flora/attackby(obj/item/O, mob/user)
 	if(istype(O))
 		if(O.sharp || O.edge)
 			playsound(src, 'sound/effects/ash_chop.ogg', 50, TRUE)
