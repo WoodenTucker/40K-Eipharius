@@ -520,3 +520,13 @@
 /datum/access/tau
 	id = access_tau
 	desc = "Tau Ship"
+
+/var/const/access_admeme = 210
+/datum/access/admeme
+	id = access_admeme
+	desc = "Administrator"
+
+/var/const/access_clinic = 211
+/datum/access/clinic
+	id = access_clinic
+	desc = "Village Clinic"

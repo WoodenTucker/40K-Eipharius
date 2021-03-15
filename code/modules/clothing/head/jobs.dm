@@ -208,6 +208,12 @@
 	icon_state = "bardhat"
 	item_state = "bardhat"
 
+/obj/item/clothing/head/admemehat
+	name = "admin's hat"
+	desc = "A fairly nice leather hat with a feather tucked into it."
+	icon_state = "admeme"
+	item_state = "admeme"
+
 /obj/item/clothing/head/musichat
 	name = "bard's hat"
 	desc = "A fairly nice leather hat with a feather tucked into it."

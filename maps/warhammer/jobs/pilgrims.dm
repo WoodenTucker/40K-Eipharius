@@ -126,6 +126,13 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
+			var/obj/item/card/id/ring/disgracedmedicae/W = new
+
+			W.icon_state = "medicae_ring"
+			W.assignment = "Village Administrator"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Miner")
 			U.add_stats(rand(10,13),rand(8,12),rand(10,12),8)
@@ -240,6 +247,7 @@ Pilgrim Fate System
 	r_ear = null
 	id_type = null
 	gloves = null
+	pda_slot = null
 
 
 /decl/hierarchy/outfit/job/innkeeper
@@ -253,6 +261,7 @@ Pilgrim Fate System
 	head = /obj/item/clothing/head/bardhat
 	l_ear = null
 	r_ear = null
+	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	backpack_contents = list(
@@ -269,17 +278,16 @@ Pilgrim Fate System
 	name = OUTFIT_JOB_NAME("Administrator")
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
-	suit = /obj/item/clothing/suit/merchant
+	suit = /obj/item/clothing/suit/admin
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/dog_tag/guardsman
+	id_type = /obj/item/card/id/ring/administrator
 	l_ear = null
 	r_ear = /obj/item/device/radio/headset/red_team/all
 	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
 	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 2,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,

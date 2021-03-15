@@ -828,6 +828,16 @@ Imperial Guardsman
 	access = list(access_tau)
 	desc = "An ornate ring forged by Tau craftsmen. Functions like an ID."
 
+/obj/item/card/id/ring/administrator
+	icon_state = "admin_ring"
+	access = list(access_admeme)
+	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
+
+/obj/item/card/id/ring/disgracedmedicae
+	icon_state = "medicae_ring"
+	access = list(access_clinic)
+	desc = "An old ring signifying your position as a medicae."
+
 /obj/item/clothing/suit/armor/sgt
 	name = "Guardsman's Medium Armor"
 	desc = "The well-worn armor of an Imperial Guard Sergeant."

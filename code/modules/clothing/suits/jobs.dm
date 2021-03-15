@@ -273,11 +273,22 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/merchant
-	name = "merchant's garb"
-	desc = "Elegant clothing for a wealthy trader."
+/obj/item/clothing/suit/admin
+	name = "administrator's garb"
+	desc = "Elegant clothing for a wealthy administrator."
 	icon_state = "robes"
 	item_state = "robes_item"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/suit/merchant
+	name = "trader's garb"
+	desc = "Elegant clothing for a wealthy trader."
+	icon_state = "merchant"
+	item_state = "merchant"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
