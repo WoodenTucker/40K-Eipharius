@@ -333,6 +333,11 @@
 	desc = "A sign labelling the research wing."
 	icon_state = "science1"
 
+/obj/structure/sign/inkvd
+	icon_state = "inkvd"
+
+/obj/structure/sign/inkvd/two
+	icon_state = "inkvd2"
 /obj/structure/sign/science_2
 	name = "\improper RESEARCH"
 	desc = "A sign labelling an area where research is performed."
