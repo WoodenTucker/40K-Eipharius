@@ -2,7 +2,7 @@
 	title = "Sister Hospitaller"
 	head_position = 1
 	department = "Medical"
-	department_flag = MED
+	department_flag = COM|MED
 	medical_skill = 10
 	surgery_skill = 10
 	engineering_skill = 0

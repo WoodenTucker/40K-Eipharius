@@ -362,7 +362,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card which represents creativity and ingenuity."
 	icon_state = "engGold"
-	job_access_type = /datum/job/chief_engineer
+	job_access_type = /datum/job/magos
 
 /obj/item/card/id/science
 	name = "identification card"

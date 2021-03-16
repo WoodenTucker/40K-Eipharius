@@ -11,7 +11,7 @@
 	/datum/job/chef,
 	/datum/job/hydro,
 	/datum/job/chaplain,
-	/datum/job/chief_engineer,
+	/datum/job/magos,
 	/datum/job/engineer,
 	/datum/job/hop,
 	/datum/job/doctor,

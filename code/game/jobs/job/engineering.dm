@@ -1,25 +1,23 @@
-/datum/job/chief_engineer
+/datum/job/magos
 	title = "Magos"
-	head_position = 1
 	department = "Engineering"
-	department_flag = ENG
-
+	head_position = 1
+	department_flag = ENG|COM
+	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 1
 	spawn_positions = 1
+	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus"
 	selection_color = "#7f6e2c"
-	social_class = SOCIAL_CLASS_HIGH
 	req_admin_notify = 1
-	economic_modifier = 10
-	open_when_dead = 0
-	ideal_character_age = 50
-	engineering_skill = 10
-	medical_skill = 2
-	surgery_skill = 0
-	melee_skill = 4
-	ranged_skill = 4
-	announced = FALSE //never ever change this to anything else unless you want crazy lag on join
+	access = list() 			//See get_access()
+	minimal_access = list() 	//See get_access()
+	economic_modifier = 20
+	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
+
+	ideal_character_age = 70 // Old geezer captains ftw
+	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
 			            access_heads, access_construction, access_sec_doors,
@@ -43,15 +41,15 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 
 
-	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
+
 
 /datum/job/engineer
 	title = "Tech Priest"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Magos"
 	selection_color = "#5b4d20"
 	economic_modifier = 5
