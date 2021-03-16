@@ -287,8 +287,8 @@
 /obj/item/clothing/suit/merchant
 	name = "trader's garb"
 	desc = "Elegant clothing for a wealthy trader."
-	icon_state = "merchant"
-	item_state = "merchant"
+	icon_state = "male2"
+	item_state = "male2"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
