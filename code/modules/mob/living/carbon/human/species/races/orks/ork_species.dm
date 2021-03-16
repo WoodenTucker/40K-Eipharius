@@ -49,12 +49,11 @@
 			for(var/obj/item/organ/I in internal_organs)
 				if(I.damage > 0)
 					I.damage = max(I.damage - 1, 0)
+
 /mob/living/carbon/human/ork
 	name = "ork"
 	real_name = "ork"
 	gender = MALE
-	maxHealth = 150
-	health = 150
 	status_flags = 0
 	var/isempty = 0
 

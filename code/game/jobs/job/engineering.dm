@@ -43,7 +43,6 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 
 
-	minimal_player_age = 14
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 
 /datum/job/engineer

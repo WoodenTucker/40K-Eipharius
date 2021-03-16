@@ -47,6 +47,16 @@
 		adjustFireLoss(-50)
 		adjustOxyLoss(-50)
 		adjustToxLoss(-50)
+		restore_all_organs()
+		src.radiation = 0
+		src.bodytemperature = T20C
+		src.sdisabilities = 0
+		src.disabilities = 0
+		src.blinded = 0
+		src.eye_blind = 0
+		src.eye_blurry = 0
+		src.ear_deaf = 0
+		src.ear_damage = 0
 		cooldown = TRUE
 		spawn(50)
 			cooldown = FALSE
@@ -112,6 +122,7 @@
 	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(ORKZ) //secondary language
+	client?.color = null
 	src.verbs -= /mob/living/carbon/human/ork/proc/giveorkzstats //removes verb at the end so they can't spam it for whatever reason
 
 	var/obj/item/card/id/dog_tag/guardsman/W = new

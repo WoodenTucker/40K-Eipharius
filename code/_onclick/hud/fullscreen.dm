@@ -98,10 +98,6 @@
 	icon_state = "impairedoverlay"
 	layer = IMPAIRED_LAYER
 
-/obj/screen/fullscreen/ghost
-	icon_state = "ghost2"
-	layer = FULLSCREEN_LAYER
-
 /obj/screen/fullscreen/fog
 	icon = 'icons/effects/weather.dmi'
 	screen_loc = "WEST,SOUTH to EAST,NORTH"

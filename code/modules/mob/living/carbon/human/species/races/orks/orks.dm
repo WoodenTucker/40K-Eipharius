@@ -12,7 +12,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_TINY
-	total_health = 150
+	total_health = 650
 	mob_size = MOB_SMALL
 	strength = STR_LOW
 	brute_mod = 1.2
@@ -43,7 +43,6 @@
 	name_plural = "Ork Nobz"
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
-	total_health = 500
 	strength = STR_VHIGH
 	mob_size = MOB_LARGE
 	brute_mod = 0.9
@@ -60,7 +59,7 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_HIGH
-	total_health = 350
+	health
 	mob_size = MOB_MEDIUM
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,
@@ -73,7 +72,6 @@
 	name = SPECIES_ORK_BOSS
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
-	total_health = 650
 	strength = 30
 	mob_size = MOB_LARGE
 	brute_mod = 0.7

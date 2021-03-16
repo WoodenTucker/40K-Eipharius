@@ -83,6 +83,7 @@
 			src.warfare_language_shit(TAU) //secondary language
 			src.name = "Shas [name]"
 			src.real_name = "Shas [real_name]"
+			client?.color = null
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
 
@@ -112,6 +113,7 @@
 			src.warfare_language_shit(TAU) //secondary language
 			src.name = "Por [name]"
 			src.real_name = "Por [real_name]"
+			client?.color = null
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
 

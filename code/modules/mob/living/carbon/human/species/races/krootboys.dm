@@ -75,6 +75,7 @@
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(TAU) //secondary language
 	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats //removes verb at the end so they can't spam it for whatever reason
+	client?.color = null
 
 	var/obj/item/card/id/dog_tag/guardsman/W = new
 
@@ -141,6 +142,7 @@
 	T.death(0)
 	T.isburied = 1
 	T.gib()
+	restore_all_organs()
 	src.adjustBruteLoss(-40)
 	src.adjustOxyLoss(-40)
 	src.adjustStaminaLoss(-5)
@@ -149,5 +151,14 @@
 	src.adjustFireLoss(-40)
 	src.nutrition = 400
 	src.thirst = 550
+	src.radiation = 0
+	src.bodytemperature = T20C
+	src.sdisabilities = 0
+	src.disabilities = 0
+	src.blinded = 0
+	src.eye_blind = 0
+	src.eye_blurry = 0
+	src.ear_deaf = 0
+	src.ear_damage = 0
 	GLOB.kroot_eats++
 	return 1
