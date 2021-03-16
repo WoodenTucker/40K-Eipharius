@@ -234,7 +234,7 @@ Pilgrim Fate System
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and work towards prosperity. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and work towards prosperity. Ensure there are pilgrims working the farm and manage the market, the stalls are yours to rent out! </font></b></span>")
 
 
 //loadouts below here

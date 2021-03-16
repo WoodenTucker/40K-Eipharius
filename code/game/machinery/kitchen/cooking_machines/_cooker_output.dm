@@ -77,3 +77,19 @@
 	name = "jelly"
 	desc = "All your friends will be jelly."
 	icon_state = "jellycustom"
+
+
+/obj/item/reagent_containers/food/snacks/variable/bakedrat
+	name = "baked rat"
+	desc = "A baked rat scraped from the floor somewhere."
+	icon_state = "bakedrat"
+
+/obj/item/reagent_containers/food/snacks/variable/bakedbear
+	name = "baked bear"
+	desc = "Incredibly fatty but it tastes quite good baked."
+	icon_state = "bakedbear"
+
+/obj/item/reagent_containers/food/snacks/variable/bakedshafra
+	name = "baked shafra"
+	desc = "Lean and sinewey but still better than whatever else you could find."
+	icon_state = "bakedshafra"
