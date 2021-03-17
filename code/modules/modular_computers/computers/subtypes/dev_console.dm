@@ -26,12 +26,3 @@
 		//	playsound(src, "keyboard", 40)
 		//else
 		//	playsound(src, "keystroke", 40)
-
-/obj/item/modular_computer/console/planetarytrademain
-	name = "interplanetary trade console"
-	desc = "A highly complex console used for interplanetary trade."
-	icon = 'icons/obj/planetarytrade.dmi'
-	icon_state = "on2"
-	icon_state_unpowered = "off2"
-	bound_height = 64
-	bound_width = 64
