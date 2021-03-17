@@ -1,4 +1,5 @@
 //since we need cargo and shuttles dont work, we gonna do this in true IS12 fashion and remake it in matt/randys image.
+//The menu isnt pretty but its functional and no one fukking wants me designing UI, im gunna use this set up for reinforcement buying as well.
 
 /obj/machinery/computer/planetarytrade  //this is the cargo machine
 	name = "interplanetary trade console"
@@ -10,18 +11,18 @@
 	bound_height = 64
 	bound_width = 64
 
-	var/buying = 0 //just a check for buying stuff
+	var/buying = 0 //spam prevention
 	var/thrones = 0 //money counter (DAT CASH MACHINE)
 
 /obj/machinery/computer/planetarytrade/attack_hand(mob/user as mob)	//Starting menu
 
 	user.set_machine(src)
 	var/dat = "<B>Sub-sector Trade:</B><BR>"
-	if (!buying)
-		dat += "[thrones] thrones<BR>"
-	dat += "<B>Items on the Market</B><BR>"
+	dat += "[thrones] thrones<BR>"
+	dat += "<B>Items on the Market:</B><BR>"
+	dat += "<B> Meats:</B><BR>"
 	dat += "<A href='byond://?src=\ref[src];shafra=1'>Shafra Meat (5)</A><BR>"
-	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor For his Unending rule!<HR>"
+	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
 	user << browse(dat, "window=scroll")
 	onclose(user, "scroll")
 	return
@@ -35,16 +36,22 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["shafra"])
-		if(src.thrones < 5)
+		if(src.thrones < 5) //do we got enough shekels?
 			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
 			src.thrones -= 5 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/reagent_containers/food/snacks/shaframeat(T.loc) //what they spawning
+			src.buying = 0
+
 
 
 /obj/machinery/computer/sidepiece  //this is a computer that can reset the round. That game physically ends when the antag clicks 'exterminatus'
