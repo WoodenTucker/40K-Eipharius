@@ -99,3 +99,87 @@
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
 		return
+
+//////////////////////////////////////////////////
+/////////Administrator PC for tax/tithes//////////
+/////////////////////////////////////////////////
+/obj/machinery/computer/tithecogitator
+	name = "tithe cogitator"
+	desc = "An Administratum cogitator used to process taxes and pay this planets Imperial tithe."
+	icon = 'icons/obj/modular_console.dmi'
+	icon_state = "console"
+	anchored = 1
+	density = 1
+	atom_flags = ATOM_FLAG_CLIMBABLE
+
+//so you can put coins in this bad boy as well.
+/obj/machinery/computer/tithecogitator/attackby(var/obj/item/stack/thrones/O, var/mob/user) //These manage putting coins directly into the console
+	if(O.amount < 0)
+		to_chat(user, "<span class='warning'>You don't have enough [O] to put into the computer!</span>")
+		return 1
+	else if (istype(O, /obj/item/stack/thrones))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		O.amount -= 1 //takes a shekel from the stack
+		GLOB.thrones += 10 //adds crowns to da counter
+		visible_message("[usr] deposits a $10 throne coin into the console.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		O.update_icon() //so coins in hand update
+		return
+	else if (istype(O, /obj/item/stack/thrones2))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		O.amount -= 1 //takes a shekel from the stack
+		GLOB.thrones += 5 //adds crowns to da counter
+		visible_message("[usr] deposits a $5 throne coin into the console.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		O.update_icon() //so coins in hand update
+		return
+	else if (istype(O, /obj/item/stack/thrones3))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		O.amount -= 1 //takes a shekel from the stack
+		GLOB.thrones += 1 //adds crowns to da counter
+		visible_message("[usr] deposits a $1 throne coin into the console.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		O.update_icon() //so coins in hand update
+		return
+
+/obj/machinery/computer/tithecogitator/attack_hand(mob/user as mob)	//Starting menu
+
+	user.set_machine(src)
+	var/dat = "<B>Imperial Tithe:</B><BR>"
+	dat += "[GLOB.thrones] throne balance<BR>"
+	dat += "<B>Tithe owed to the Imperium</B></BR>"
+	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (500)</A><BR>"
+	dat += "<B>Set the tax rate:</B></BR>"
+	dat += "<A href='byond://?src=\ref[src];tax=1'>Set tax rate (default is 15%)</A><BR>"
+	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
+	user << browse(dat, "window=scroll")
+	onclose(user, "scroll")
+	return
+
+/obj/machinery/computer/tithecogitator/Topic(href, href_list)
+	if(..())
+		return
+
+	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
+	if (href_list["tithe"])
+		if(GLOB.thrones < 500) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		else
+			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
+			GLOB.thrones -= 500 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.tithe_paid = 1 //yay we paid the tithe
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+
+	if (href_list["tax"])
+		var/taxrates = list("fifteen", "twenty", "twenty-five", "thirty", "thirty-five", "fourty", "fourty-five", "fifty",) //lists tax rates, we'll do set ones for now
+		var/taxchoice = input("Choose the tax rate", "Available rates") as null|anything in taxrates
+
+		switch(taxchoice)
+			if("fifteen")
+				GLOB.tax_rate = 0.15
+				to_world("<span class='warning'>[usr] has set the tax rate to 15%!</span>")
+
+
+/obj/machinery/computer/tithecogitator/attack_paw(mob/user as mob)
+	return src.attack_hand(user)
