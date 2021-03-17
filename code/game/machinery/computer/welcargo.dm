@@ -47,25 +47,6 @@
 			new /obj/item/reagent_containers/food/snacks/shaframeat(T.loc) //what they spawning
 
 
-
-
-/*
-/obj/machinery/computer/planetarytrade/proc/move()
-	to_chat(usr, "\red Stargazer moving into position.")
-	if(!moving)
-		spawn (0)
-			moving = 1
-			playsound(src.loc,'sound/effects/droppod.ogg',75,1)
-			sleep(240)
-			to_world("As you peer into the sky, a dreaded chill runs down your spine. For you thought that the utter monstrosity you are having the misfortune of gazing upon was legend, not reality.. A Black Ship of the Ordo Hereticus coldly stares back at you. Pray to your god, or gods, for there is no escaping the Emperor's Wrath...")
-			inrange = 1	//Now in range
-			moving = 0
-			return
-
-	else
-		return
-*/
-
 /obj/machinery/computer/sidepiece  //this is a computer that can reset the round. That game physically ends when the antag clicks 'exterminatus'
 	name = "interplanetary trade console power pack"
 	desc = "A highly complex console used for interplanetary trade."
@@ -76,38 +57,39 @@
 	bound_height = 64
 	bound_width = 64
 
+
+
+
+//////////////////////////////////////////////////
+////////////Put da coin in da machine/////////////
+//////////////////////////////////////////////////
+
+
 /obj/machinery/computer/planetarytrade/attackby(var/obj/item/stack/thrones/O, var/mob/user) //These manage putting coins directly into the console
 	if(O.amount < 0)
 		to_chat(user, "<span class='warning'>You don't have enough [O] to put into the computer!</span>")
 		return 1
-	else
+	else if (istype(O, /obj/item/stack/thrones))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
 		src.thrones += 10 //adds crowns to da counter
 		visible_message("[usr] deposits a $10 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
-
-/obj/machinery/computer/planetarytrade/attackby(var/obj/item/stack/thrones2/O, var/mob/user)
-	if(O.amount < 0)
-		to_chat(user, "<span class='warning'>You don't have enough [O] to put into the computer!</span>")
-		return 1
-	else
+		return
+	else if (istype(O, /obj/item/stack/thrones2))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
-		src.thrones += 5 //adds thrones to da counter
+		src.thrones += 5 //adds crowns to da counter
 		visible_message("[usr] deposits a $5 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
-
-/obj/machinery/computer/planetarytrade/attackby(var/obj/item/stack/thrones3/O, var/mob/user)
-	if(O.amount < 0)
-		to_chat(user, "<span class='warning'>You don't have enough [O] to put into the computer!</span>")
-		return 1
-	else
+		return
+	else if (istype(O, /obj/item/stack/thrones3))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
 		src.thrones += 1 //adds crowns to da counter
 		visible_message("[usr] deposits a $1 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
+		return
