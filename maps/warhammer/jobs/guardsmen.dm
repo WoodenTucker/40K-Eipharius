@@ -132,8 +132,8 @@
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
 	supervisors = "The Commissar, the Rogue Trader, and the village Administrator"
-	total_positions = 2
-	spawn_positions = 2 //may need more than 2 idk
+	total_positions = 4
+	spawn_positions = 4 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 6

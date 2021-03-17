@@ -823,6 +823,16 @@ Imperial Guardsman
 	icon_state = "tagred"
 	access = list(access_kroot)
 
+/obj/item/card/id/dog_tag/kroot
+	icon_state = "tagred"
+	access = list(access_kroot)
+
+/obj/item/card/id/dog_tag/ork
+	icon_state = "tagred"
+	access = list(access_kroot)
+
+
+
 /obj/item/card/id/ring/tau
 	icon_state = "tau"
 	access = list(access_tau)
@@ -830,7 +840,7 @@ Imperial Guardsman
 
 /obj/item/card/id/ring/administrator
 	icon_state = "admin_ring"
-	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth,)
+	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
 /obj/item/card/id/ring/disgracedmedicae

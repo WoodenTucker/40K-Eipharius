@@ -77,7 +77,7 @@
 	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
 
-	var/obj/item/card/id/dog_tag/guardsman/W = new
+	var/obj/item/card/id/dog_tag/kroot/W = new
 
 	W.icon_state = "tagred"
 	W.assignment = "Kroot Hunter"

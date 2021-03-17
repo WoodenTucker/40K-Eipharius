@@ -179,7 +179,92 @@
 			if("fifteen")
 				GLOB.tax_rate = 0.15
 				to_world("<span class='warning'>[usr] has set the tax rate to 15%!</span>")
+			if("twenty")
+				GLOB.tax_rate = 0.20
+				to_world("<span class='warning'>[usr] has set the tax rate to 20%!</span>")
+			if("twenty-five")
+				GLOB.tax_rate = 0.25
+				to_world("<span class='warning'>[usr] has set the tax rate to 25%!</span>")
+			if("thirty")
+				GLOB.tax_rate = 0.30
+				to_world("<span class='warning'>[usr] has set the tax rate to 30%!</span>")
+			if("thirty-five")
+				GLOB.tax_rate = 0.35
+				to_world("<span class='warning'>[usr] has set the tax rate to 35%!</span>")
+			if("fourty")
+				GLOB.tax_rate = 0.40
+				to_world("<span class='warning'>[usr] has set the tax rate to 40%!</span>")
+			if("fourty-five")
+				GLOB.tax_rate = 0.45
+				to_world("<span class='warning'>[usr] has set the tax rate to 45%!</span>")
+			if("fifty")
+				GLOB.tax_rate = 0.50
+				to_world("<span class='warning'>[usr] has set the tax rate to 50%!</span>")
 
 
 /obj/machinery/computer/tithecogitator/attack_paw(mob/user as mob)
+	return src.attack_hand(user)
+
+
+////////////////////////////////////////////////
+//////////////Bounty Computer stuff////////////
+//////////////////////////////////////////////
+
+/obj/machinery/computer/bountycogitator
+	name = "bounty cogitator"
+	desc = "An Administratum cogitator used to process sub-sector bounties."
+	icon = 'icons/obj/modular_console.dmi'
+	icon_state = "console"
+	anchored = 1
+	density = 1
+	atom_flags = ATOM_FLAG_CLIMBABLE
+
+//so you can put bounties in this bad boy
+/obj/machinery/computer/bountycogitator/attackby(var/obj/item/card/id/O, var/mob/user) //These manage putting coins directly into the console
+	if (!(istype(O, /obj/item/card/id)))
+		to_chat(user, "<span class='warning'>[O] is not an active bounty!</span>")
+		return 1
+	else if (istype(O, /obj/item/card/id/ring/tau))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 50 //adds crowns to da counter
+		visible_message("[usr] completes an Imperial bounty! Tau ring deposited.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		new /obj/item/stack/thrones2(src.loc)
+		return
+	else if (istype(O, /obj/item/card/id/dog_tag/kroot))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 50 //adds crowns to da counter
+		visible_message("[usr] completes an Imperial bounty! Kroot tags deposited.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		new /obj/item/stack/thrones2(src.loc)
+		return
+	else if (istype(O, /obj/item/card/id/dog_tag/ork))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 50 //adds crowns to da counter
+		visible_message("[usr] completes an Imperial bounty! Ork tags deposited.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		new /obj/item/stack/thrones2(src.loc)
+		return
+
+
+
+/obj/machinery/computer/bountycogitator/attack_hand(mob/user as mob)	//Starting menu
+
+	user.set_machine(src)
+	var/dat = "<B>Imperial Bounties:</B><BR>"
+	dat += "[GLOB.thrones] throne balance<BR>"
+	dat += "<B>Current Bounties</B></BR>"
+	dat += "Tau Rings (50/5):</BR>"
+	dat += "Kroot Tags (50/5):</BR>"
+	dat += "Ork Tags (50/5):</BR>"
+	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
+	user << browse(dat, "window=scroll")
+	onclose(user, "scroll")
+	return
+
+
+/obj/machinery/computer/bountycogitator/attack_paw(mob/user as mob)
 	return src.attack_hand(user)

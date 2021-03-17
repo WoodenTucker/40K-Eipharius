@@ -437,6 +437,7 @@
 	unwielded_unloaded_icon = "schmeiser-e"
 	wielded_unloaded_icon = "schmeiser-e"
 
+
 /obj/item/gun/projectile/automatic/flamer
 	name = "Mk.1 Scorcher"
 	desc = "Used to shoot flames at people when bullets just won't do."
@@ -444,7 +445,7 @@
 	item_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
-	one_hand_penalty = 50
+	one_hand_penalty = 0
 	str_requirement = 12
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
@@ -456,6 +457,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/flamer
 	can_jam = FALSE
 
+
 	loaded_icon = "flamer"
 	unwielded_loaded_icon = "flamer"
 	wielded_loaded_icon = "flamer-wielded"
@@ -463,7 +465,7 @@
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
 
-	gun_type = GUN_PISTOL //anyone can use this... just not anyone should.
+	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 
 

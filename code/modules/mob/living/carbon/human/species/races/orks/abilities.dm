@@ -125,7 +125,7 @@
 	client?.color = null
 	src.verbs -= /mob/living/carbon/human/ork/proc/giveorkzstats //removes verb at the end so they can't spam it for whatever reason
 
-	var/obj/item/card/id/dog_tag/guardsman/W = new
+	var/obj/item/card/id/dog_tag/ork/W = new
 
 	W.icon_state = "tagred"
 	W.assignment = "Orky Boy"
