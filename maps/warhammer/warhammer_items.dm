@@ -830,7 +830,7 @@ Imperial Guardsman
 
 /obj/item/card/id/ring/administrator
 	icon_state = "admin_ring"
-	access = list(access_admeme)
+	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
 /obj/item/card/id/ring/disgracedmedicae

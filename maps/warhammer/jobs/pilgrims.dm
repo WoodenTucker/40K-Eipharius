@@ -217,8 +217,8 @@ Pilgrim Fate System
 	open_when_dead = 1
 	supervisors = "the Administratum at large"
 	selection_color = "#515151"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE

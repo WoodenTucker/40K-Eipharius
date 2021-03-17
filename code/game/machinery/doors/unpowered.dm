@@ -96,3 +96,11 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_inn3) //so innkeeper always can get in if needed
+
+/obj/machinery/door/unpowered/administratum
+	name = "Administratum Door"
+	icon = 'icons/obj/doors/door_cave2.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_administratum) //so innkeeper always can get in if needed

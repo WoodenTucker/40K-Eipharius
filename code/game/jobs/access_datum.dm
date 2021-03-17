@@ -530,3 +530,8 @@
 /datum/access/clinic
 	id = access_clinic
 	desc = "Village Clinic"
+
+/var/const/access_administratum = 212
+/datum/access/administratum
+	id = access_administratum
+	desc = "Administratum Doors"
