@@ -104,3 +104,11 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_administratum) //so innkeeper always can get in if needed
+
+/obj/machinery/door/unpowered/cargo
+	name = "Munitorum Door"
+	icon = 'icons/obj/doors/door_cave.dmi'
+	icon_state = "door1"
+	autoclose = 1
+	normalspeed = 0
+	req_access = list(access_cargo) //so innkeeper always can get in if needed

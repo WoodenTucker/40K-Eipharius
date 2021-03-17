@@ -12,13 +12,12 @@
 	bound_width = 64
 
 	var/buying = 0 //spam prevention
-	var/thrones = 0 //money counter (DAT CASH MACHINE)
 
 /obj/machinery/computer/planetarytrade/attack_hand(mob/user as mob)	//Starting menu
 
 	user.set_machine(src)
 	var/dat = "<B>Sub-sector Trade:</B><BR>"
-	dat += "[thrones] thrones<BR>"
+	dat += "[GLOB.thrones] thrones<BR>"
 	dat += "<B>Items on the Market:</B><BR>"
 	dat += "<B> Meats:</B><BR>"
 	dat += "<A href='byond://?src=\ref[src];shafra=1'>Shafra Meat (5)</A><BR>"
@@ -36,7 +35,7 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["shafra"])
-		if(src.thrones < 5) //do we got enough shekels?
+		if(GLOB.thrones < 5) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -44,7 +43,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			src.thrones -= 5 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 5 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -79,7 +78,7 @@
 	else if (istype(O, /obj/item/stack/thrones))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
-		src.thrones += 10 //adds crowns to da counter
+		GLOB.thrones += 10 //adds crowns to da counter
 		visible_message("[usr] deposits a $10 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
@@ -87,7 +86,7 @@
 	else if (istype(O, /obj/item/stack/thrones2))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
-		src.thrones += 5 //adds crowns to da counter
+		GLOB.thrones += 5 //adds crowns to da counter
 		visible_message("[usr] deposits a $5 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
@@ -95,7 +94,7 @@
 	else if (istype(O, /obj/item/stack/thrones3))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
-		src.thrones += 1 //adds crowns to da counter
+		GLOB.thrones += 1 //adds crowns to da counter
 		visible_message("[usr] deposits a $1 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update

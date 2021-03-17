@@ -15,3 +15,4 @@ GLOBAL_VAR_INIT(waddling, 0)
 GLOBAL_VAR_INIT(kroot_eats, 0)
 GLOBAL_VAR_INIT(deployed, 0)
 GLOBAL_VAR_INIT(partygang, 0)
+GLOBAL_VAR_INIT(thrones, 0) //used for cargo and reinforcement system, so it carries across computers
