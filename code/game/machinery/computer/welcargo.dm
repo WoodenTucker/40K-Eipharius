@@ -71,11 +71,6 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/structure/closet/crate/ateopoine(T.loc) //what they spawning
-			new /obj/item/reagent_containers/hypospray/autoinjector/revive(T.loc)
-			new /obj/item/reagent_containers/hypospray/autoinjector/revive(T.loc)
-			new /obj/item/reagent_containers/hypospray/autoinjector/revive(T.loc)
-			new /obj/item/reagent_containers/hypospray/autoinjector/revive(T.loc)
-			new /obj/item/reagent_containers/hypospray/autoinjector/revive(T.loc)
 			src.buying = 0
 	if (href_list["ca"])
 		if(GLOB.thrones < 5) //do we got enough shekels?

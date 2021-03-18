@@ -351,5 +351,12 @@ obj/structure/closet/crate
 	icon_opened = "medicalcrateopen"
 	icon_closed = "medicalcrate"
 
+/obj/structure/closet/crate/ateopoine/New()
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+
 /obj/structure/closet/crate/ateopoine/WillContain()
 	return list(/obj/item/reagent_containers/hypospray/autoinjector/revive = 5)
