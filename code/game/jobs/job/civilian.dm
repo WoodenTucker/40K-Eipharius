@@ -82,7 +82,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(8,11), rand(10,11), rand(10,11), rand(8,10))
+		H.add_stats(rand(13,16), rand(10,11), rand(10,11), rand(8,10))
 		H.add_skills(rand(1,3),rand(1,3),0,0,0)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -98,10 +98,10 @@
 /datum/job/qm
 	title = "Munitorum Priest"
 	department = "Supply"
-	department_flag = SUP
-	total_positions = 0
-	spawn_positions = 0
-	supervisors = "the Seneschal"
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Seneschal and the Administrator"
 	selection_color = "#515151"
 	economic_modifier = 5
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
@@ -110,17 +110,49 @@
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
 
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("[current_name]")
+		H.add_stats(rand(13,16), rand(10,11), rand(10,11), rand(8,10))
+		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>The others may not know it, but you're the most powerful man on the planet. You control what comes and goes as well as which palms are greased and which are left wanting.</font></b></span>")
+
 /datum/job/cargo_tech
 	title = "Munitorum Adept"
 	department = "Supply"
-	department_flag = SUP
-	total_positions = 0
-	spawn_positions = 0
-	supervisors = "the Munitorum Priest and the Seneschal"
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Munitorum Priest, the Administrator and the Seneschal"
 	selection_color = "#515151"
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("[current_name]")
+		H.add_stats(rand(13,16), rand(10,11), rand(10,11), rand(8,10))
+		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>Keep things moving! Make sure imports and exports get where they need to go! If you're lost, speak to the Munitorum Priest!</font></b></span>")
 
 
 
