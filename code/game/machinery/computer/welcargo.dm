@@ -30,8 +30,9 @@
 		dat += "<B> Materials:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];glass=1'>Stack of Glass (15)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];metal=1'>Stack of Metal (15)</A><BR>"
-		dat += "<B> Materials:</B><BR>"
-		dat += "<A href='byond://?src=\ref[src];bolter=1'>Stack of Glass (15)</A><BR>"
+		dat += "<B>Weapons:</B><BR>"
+		dat += "<A href='byond://?src=\ref[src];bolter=1'>Bolt Pistol (25)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];bolterammo=1'>Bolt Pistol (5)</A><BR>"
 		dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
 		user << browse(dat, "window=scroll")
 		onclose(user, "scroll")
@@ -141,7 +142,38 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/stack/material/steel/fifty(T.loc) //what they spawning
 			src.buying = 0
-
+	if (href_list["bolter"])
+		if(GLOB.thrones < 25) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/gun/projectile/bolter_pistol(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["bolterammo"])
+		if(GLOB.thrones < 5) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 5 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/ammo_magazine/bolt_pistol_magazine(T.loc) //what they spawning
+			src.buying = 0
 
 
 

@@ -348,6 +348,9 @@
 	icon_state = "chemical2"
 /obj/structure/sign/sancposter/four
 	icon_state = "sancposter"
+
+/obj/structure/sign/alienbooba
+	icon_state = "booba"
 /obj/structure/sign/science_2
 	name = "\improper RESEARCH"
 	desc = "A sign labelling an area where research is performed."
