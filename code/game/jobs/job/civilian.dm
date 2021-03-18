@@ -104,6 +104,8 @@
 	supervisors = "the Seneschal and the Administrator"
 	selection_color = "#515151"
 	economic_modifier = 5
+	social_class = SOCIAL_CLASS_MED
+	announced = 0
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_player_age = 3
@@ -132,6 +134,8 @@
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
+	social_class = SOCIAL_CLASS_MED
+	announced = 0
 	supervisors = "the Munitorum Priest, the Administrator and the Seneschal"
 	selection_color = "#515151"
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)

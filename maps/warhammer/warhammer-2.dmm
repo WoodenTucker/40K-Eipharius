@@ -1368,7 +1368,7 @@
 "Ap" = (/obj/machinery/portable_atmospherics/hydroponics/soil,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/theforest)
 "Aq" = (/obj/effect/floor_decal/turf/metal/ten,/obj/machinery/light/small{dir = 4; icon_state = "bulb1"; light_color = "#234F1E"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
 "Ar" = (/obj/effect/floor_decal/turf/metal/seven,/obj/machinery/light/small{dir = 4; icon_state = "bulb1"; light_color = "#234F1E"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
-"As" = (/obj/effect/floor_decal/turf/metal/five,/obj/effect/floor_decal/turf/metal/six,/obj/effect/landmark/start{name = "Administrator"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
+"As" = (/obj/effect/floor_decal/turf/metal/five,/obj/effect/floor_decal/turf/metal/six,/obj/effect/landmark/start{name = "Administratum Adept"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
 "At" = (/obj/structure/flora/ausbushes/lavendergrass,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "Au" = (/obj/machinery/light/stolb,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "Av" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)

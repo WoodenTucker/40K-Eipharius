@@ -41,6 +41,8 @@
 	icon_state = "qm"
 	item_state = "lb_suit"
 	worn_state = "qm"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/rank/cargotech
@@ -50,6 +52,8 @@
 	item_state = "lb_suit"
 	worn_state = "cargo"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
 /obj/item/clothing/under/rank/chaplain
