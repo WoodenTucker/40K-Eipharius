@@ -21,4 +21,9 @@
 		"Pancakes" = /obj/item/reagent_containers/food/snacks/variable/pancakes,
 		"Cookie" = /obj/item/reagent_containers/food/snacks/variable/cookie,
 		"Donut" = /obj/item/reagent_containers/food/snacks/variable/donut,
+		"Baked Rat" = /obj/item/reagent_containers/food/snacks/meat/rat_meat,
+		"Baked Shafra" = /obj/item/reagent_containers/food/snacks/shaframeat,
+		"Baked Bear" = /obj/item/reagent_containers/food/snacks/bearmeat
+
+
 		)

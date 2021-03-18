@@ -546,3 +546,16 @@
 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/nullrod, /obj/item/storage/bible)
 	armor = list(melee = 40, bullet = 25, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/watercaste
+	name = "water caste robes"
+	desc = "Blue Pride, Galaxy Wide."
+	icon_state = "tabard"
+	item_state = "tabard"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	allowed = list(/obj/item/gun/energy/pulse/pulsepistol, /obj/item/cell/pulserifle)
+	armor = list(melee = 10, bullet = 25, laser = 5, energy = 5, bomb = 5, bio = 5, rad = 5)
+	siemens_coefficient = 3.0
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

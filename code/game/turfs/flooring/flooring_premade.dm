@@ -90,6 +90,16 @@
 	icon_state = "wood"
 	initial_flooring = /decl/flooring/wood
 
+/turf/simulated/floor/stone
+	name = "stone floor"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_state = "main"
+	initial_flooring = /decl/flooring/stone
+
+/turf/simulated/floor/stone/New()
+	icon_state = pick("main","1","2","3","extra","extra1","extra2","extra3")
+	..()
+
 /turf/simulated/floor/grass
 	name = "grass patch"
 	icon = 'icons/turf/flooring/grass.dmi'

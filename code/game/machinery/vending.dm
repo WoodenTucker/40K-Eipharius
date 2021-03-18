@@ -618,7 +618,7 @@
 	icon_state = "boozeomat"
 	icon_deny = "boozeomat-deny"
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/gin = 5,
-					/obj/item/reagent_containers/food/drinks/glass2 = 40,
+					/obj/item/reagent_containers/food/drinks/glass2 = 20,
 					/obj/item/reagent_containers/food/drinks/bottle/whiskey = 5,
 					/obj/item/reagent_containers/food/drinks/bottle/tequilla = 5,
 					/obj/item/reagent_containers/food/drinks/bottle/vodka = 5,

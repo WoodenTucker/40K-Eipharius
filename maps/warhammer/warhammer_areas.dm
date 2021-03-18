@@ -524,6 +524,8 @@ Area basic template
 /area/cadiaoutpost/oa/medicae
 	name = "Medicae"
 	icon_state = "medbay"
+	dynamic_lighting = 1
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/storage
 	name = "Medicae Storage"
@@ -750,6 +752,14 @@ Area basic template
 /area/cadiaoutpost/oa/farm
 	name = "Farm"
 	icon_state = "farm"
+	requires_power = 0
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/oa/groxpen
+	name = "groxpen"
+	icon_state = "farm"
+	requires_power = 0
+	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/tradefloor
 	name = "Trade Floor"
@@ -1200,3 +1210,10 @@ Area basic template
 	if(istype(L) && !istype(A, /area/cadiaoutpost/oa/farm))
 		L.clear_fullscreen("snowfall_heavy_old")
 
+
+//Various Faction ships
+/area/cadiaoutpost/oa/tauship
+	name = "Tau Ship"
+	icon_state = "tauship"
+	requires_power = 0
+	dynamic_lighting = 1

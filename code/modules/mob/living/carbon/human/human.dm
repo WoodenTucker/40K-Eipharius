@@ -13,6 +13,7 @@
 	var/lust = 0 //slaanesh favor
 	var/decay = 0 //nurgle favor
 	var/intrigue = 0 //tzeentch favor
+	var/isdrawing = 0 //used to stop rune spam
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -388,6 +389,20 @@
 /mob/living/carbon/human/proc/get_idcard()
 	if(wear_id)
 		return wear_id.GetIdCard()
+
+//used to update IDs for rando mobs if needed
+/obj/item/card/id/proc/update_label(var/newname, var/newjob)
+	if(newname || newjob)
+		name = text("[][]",
+			(!newname)	? "identification card"	: "[newname]'s ID Card",
+			(!newjob)		? ""										: " ([newjob])"
+		)
+		return
+
+	name = text("[][]",
+		(!registered_name)	? "identification card"	: "[registered_name]'s ID Card",
+		(!assignment)				? ""										: " ([assignment])"
+	)
 
 //Removed the horrible safety parameter. It was only being used by ninja code anyways.
 //Now checks siemens_coefficient of the affected area by default

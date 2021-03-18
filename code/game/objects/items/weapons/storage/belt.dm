@@ -5,7 +5,7 @@
 	icon_state = "utilitybelt"
 	item_state = "utility"
 	//storage_slots = 7
-	max_storage_space = DEFAULT_BOX_STORAGE
+	max_storage_space = 7
 	max_w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	attack_verb = list("whipped", "lashed", "disciplined")
@@ -38,7 +38,8 @@
 	description_antag = "Only amateurs skip grabbing a tool-belt."
 	icon_state = "utilitybelt"
 	item_state = "utility"
-	storage_slots = 10
+	storage_slots = 16
+	max_storage_space = 16
 	can_hold = list(
 		///obj/item/combitool,
 		/obj/item/crowbar,
@@ -136,6 +137,9 @@
 	/obj/item/reagent_containers/food/snacks/meat/human,
 	/obj/item/reagent_containers/food/snacks/xenomeat,
 	/obj/item/reagent_containers/food/snacks/meat,
+	/obj/item/reagent_containers/food/snacks/shaframeat,
+	/obj/item/reagent_containers/food/snacks,
+	/obj/item/reagent_containers/food/snacks/bearmeat,
 	)
 
 /obj/item/storage/belt/medical/full/New()

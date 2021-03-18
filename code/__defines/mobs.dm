@@ -286,6 +286,8 @@
 #define SPECIES_ORK_NOB "Ork Nob"
 #define SPECIES_ORK_MEK "Mekboy"
 #define SPECIES_ORK_BOSS "Warboss"
+#define SPECIES_KROOT "Kroot"
+#define SPECIES_TAU "Tau"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
@@ -385,6 +387,7 @@
 #define SLAANESH "Slaanesh"
 #define TZEENTCH "Tzeentch"
 #define NURGLE "Nurgle"
+#define TAU "Tau"
 
 /*
 #define SKILL_LOW(x) x<=4

@@ -152,6 +152,17 @@
 				/obj/item/storage/box/freezer = 1,
 				/obj/item/stack/nanopaste = 1)
 
+/obj/random/tapes
+	name = "Random Boombox tapes"
+	desc = "This is a boombox tape"
+	icon = 'icons/obj/cassette.dmi'
+	icon_state = "cassette_0"
+
+/obj/random/tapes/spawn_choices()
+	return list(/obj/item/device/cassette/tape1 = 1,
+				/obj/item/device/cassette/tape2 = 1,
+				/obj/item/device/cassette/tape3 = 1)
+
 /obj/random/medical/lite
 	name = "Random Medicine"
 	desc = "This is a random simple medical item."

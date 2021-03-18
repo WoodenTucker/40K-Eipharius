@@ -34,6 +34,12 @@
 	icon_state = "fancyhat"
 	item_state = "fancyhat"
 
+/obj/item/clothing/head/rtpimp
+	name = "rogue trader's big cap"
+	desc = "A fanciful hat fitting a wealthy Rogue Trader."
+	icon_state = "rtpimp"
+	item_state = "bighat"
+
 /obj/item/clothing/head/caphat/formal
 	name = "parade hat"
 	desc = "No one in a commanding position should be without a perfect, white hat of ultimate authority."
@@ -201,6 +207,12 @@
 	desc = "A fairly nice leather hat with a feather tucked into it."
 	icon_state = "bardhat"
 	item_state = "bardhat"
+
+/obj/item/clothing/head/admemehat
+	name = "admin's hat"
+	desc = "A fairly nice leather hat with a feather tucked into it."
+	icon_state = "admeme"
+	item_state = "admeme"
 
 /obj/item/clothing/head/musichat
 	name = "bard's hat"

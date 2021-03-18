@@ -19,6 +19,7 @@
 
 #define LANGUAGE_ENGLISH "English"
 #define LANGUAGE_GERMAN  "German"
+#define LANGUAGE_RUSSIAN "Russian"
 
 #define LANGUAGE_RED  "Redenese"
 #define LANGUAGE_BLUE "Bluesnian"

@@ -124,6 +124,7 @@
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorviro.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
+	req_access = list(access_clinic)
 
 /obj/machinery/door/airlock/maintenance
 	name = "Maintenance Access"
@@ -424,6 +425,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
 	glass = 1
+	req_access = list(access_clinic)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"
@@ -521,6 +523,12 @@
 	name = "Gold Airlock"
 	icon = 'icons/obj/doors/Doorgold.dmi'
 	mineral = "gold"
+
+/obj/machinery/door/airlock/gold/tau
+	name = "Tau Airlock"
+	icon = 'icons/obj/doors/Doorgold.dmi'
+	mineral = "gold"
+	req_access = list(access_tau)
 
 /obj/machinery/door/airlock/silver
 	name = "Silver Airlock"

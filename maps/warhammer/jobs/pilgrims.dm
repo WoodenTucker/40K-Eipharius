@@ -54,7 +54,7 @@ Pilgrim Fate System
 	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Miner","Stalker","Scum") //adds a fate randomly to essentially give rng pick
 
-	src.mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
+	mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -126,6 +126,13 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
+			var/obj/item/card/id/ring/disgracedmedicae/W = new
+
+			W.icon_state = "medicae_ring"
+			W.assignment = "Village Administrator"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Miner")
 			U.add_stats(rand(10,13),rand(8,12),rand(10,12),8)
@@ -188,7 +195,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_stats(rand(9,12), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
@@ -197,6 +204,37 @@ Pilgrim Fate System
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
+
+
+
+
+/datum/job/administrator  //so that the inn always has someone working
+	title = "Administrator"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_HIGH //better off than your average gross pilgrim
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 1
+	supervisors = "the Administratum at large"
+	selection_color = "#515151"
+	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	outfit_type = /decl/hierarchy/outfit/job/administrator
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(10,12), rand(9,12), rand(10,12), rand (12,15)) //a lil better fed than others.
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.assign_random_quirk()
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and to collect taxes to pay off the tithe. Ensure there are pilgrims working the farm and manage the market, the stalls are yours to rent out! </font></b></span>")
 
 
 //loadouts below here
@@ -209,6 +247,7 @@ Pilgrim Fate System
 	r_ear = null
 	id_type = null
 	gloves = null
+	pda_slot = null
 
 
 /decl/hierarchy/outfit/job/innkeeper
@@ -222,6 +261,7 @@ Pilgrim Fate System
 	head = /obj/item/clothing/head/bardhat
 	l_ear = null
 	r_ear = null
+	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	backpack_contents = list(
@@ -233,3 +273,24 @@ Pilgrim Fate System
 )
 
 
+//Administrator
+/decl/hierarchy/outfit/job/administrator
+	name = OUTFIT_JOB_NAME("Administrator")
+	uniform = /obj/item/clothing/under/color/brown
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/admin
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/ring/administrator
+	l_ear = null
+	r_ear = /obj/item/device/radio/headset/red_team/all
+	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	backpack_contents = list(
+	/obj/item/stack/thrones = 2,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/twenty = 1,
+
+	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR

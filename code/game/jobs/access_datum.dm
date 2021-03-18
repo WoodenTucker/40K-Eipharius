@@ -488,3 +488,50 @@
 	id = access_treasury
 	desc = "Seneschal"
 	access_type = ACCESS_TYPE_TREASURY
+
+/var/const/access_kroot = 204
+/datum/access/kroot
+	id = access_kroot
+	desc = "Kroot doors"
+	access_type = ACCESS_TYPE_KROOT
+
+/var/const/access_grox= 205
+/datum/access/grox
+	id = access_grox
+	desc = "Grox Pen"
+	access_type = ACCESS_TYPE_GROX
+
+/var/const/access_inn1= 206
+/datum/access/innroom_1
+	id = access_inn1
+	desc = "Inn room 1"
+
+/var/const/access_inn2 = 207
+/datum/access/innroom_2
+	id = access_inn2
+	desc = "Inn room 2"
+
+/var/const/access_inn3 = 208
+/datum/access/innroom_3
+	id = access_inn3
+	desc = "Inn room 3"
+
+/var/const/access_tau = 209
+/datum/access/tau
+	id = access_tau
+	desc = "Tau Ship"
+
+/var/const/access_admeme = 210
+/datum/access/admeme
+	id = access_admeme
+	desc = "Administrator"
+
+/var/const/access_clinic = 211
+/datum/access/clinic
+	id = access_clinic
+	desc = "Village Clinic"
+
+/var/const/access_administratum = 212
+/datum/access/administratum
+	id = access_administratum
+	desc = "Administratum Doors"

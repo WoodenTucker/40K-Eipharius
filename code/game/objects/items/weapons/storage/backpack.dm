@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	max_w_class = ITEM_SIZE_LARGE
-	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	max_storage_space = 7
 	var/is_satchel = FALSE //A bit hacky yeah, but satchels carry less so whatever.
 
 /obj/item/storage/backpack/equipped()
@@ -225,6 +225,11 @@
 /obj/item/storage/backpack/satchel/warfare
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
+
+
+/obj/item/storage/backpack/satchel/warfare/kroot
+	desc = "Fit for war, and not much else."
+	icon_state = "krootbag"
 
 /obj/item/storage/backpack/satchel/warfare/techpriest
 	desc = "Fit for war, and not much else."

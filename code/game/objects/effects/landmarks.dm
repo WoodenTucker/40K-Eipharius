@@ -7,6 +7,7 @@
 	simulated = 0
 	invisibility = 101
 	var/delete_me = 0
+	var/krootselected = 0
 
 /obj/effect/landmark/New()
 	..()
@@ -364,6 +365,10 @@ Template:
 		new /mob/living/simple_animal/hostile/retaliate/rat(src.loc)
 	delete_me = 1
 
+/obj/effect/landmark/animal/krootspawn/New()
+	new /mob/living/carbon/human/kroot(src.loc)
+	delete_me = 1
+
 /obj/effect/landmark/animal/rngfriendlyfellowspawner/New()
 	if(prob(25))
 		new /mob/living/simple_animal/hostile/retaliate/goat(src.loc)
@@ -373,6 +378,14 @@ Template:
 		new /mob/living/simple_animal/chicken(src.loc)
 	if(prob(10))
 		new /mob/living/simple_animal/hostile/retaliate/goat/king(src.loc)
+
+/obj/effect/landmark/tapes/New()
+	if(prob(33))
+		new /obj/item/device/cassette/tape1(src.loc)
+	if(prob(33))
+		new /obj/item/device/cassette/tape2(src.loc)
+	if(prob(33))
+		new /obj/item/device/cassette/tape3(src.loc)
 
 /obj/effect/landmark/rngcavewalls/New()
 	if(prob(75))
@@ -416,3 +429,6 @@ Template:
 	new /datum/random_map/noise/ore(seed, min_x, min_y, src.z, max_x, max_y)
 
 	GLOB.using_map.refresh_mining_turfs(src.z)
+
+/obj/effect/landmark/cargospawn
+	name = "cargospawn"

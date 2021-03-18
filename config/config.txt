@@ -181,7 +181,7 @@ GUEST_JOBBAN
 GUEST_BAN
 ## Set to jobban everyone who's key is not listed in data/whitelist.txt from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Uncomment to 1 to jobban, leave commented out to allow these positions for everyone (but see GUEST_JOBBAN above and regular jobbans)
-# USEWHITELIST
+#USEWHITELIST
 
 ## Bans from the server anyone whose ckey is not in data/ckey_whitelist.txt the actual message is stored in /modules/admin/IsBanned.dm
 ## one ckey per line, in lowercase.

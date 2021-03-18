@@ -156,10 +156,34 @@ var/list/flooring_types
 	icon_base = "wood"
 	has_damage_range = 6
 	damage_temperature = T0C+200
-	descriptor = "planks"
 	build_type = /obj/item/stack/tile/wood
-	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER
+	descriptor = "planks"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
 
+
+/decl/flooring/stone
+	name = "stone floor"
+	desc = "Cobblestone flooring"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_base = "main"
+	has_damage_range = 6
+	descriptor = "cobble"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
+
+/decl/flooring/stone/one
+	icon_base = "extra"
+
+/decl/flooring/stone/two
+	icon_base = "extra1"
+
+/decl/flooring/stone/three
+	icon_base = "extra2"
+
+/decl/flooring/stone/four
+	icon_base = "extra3"
+
+/decl/flooring/stone/five
+	icon_base = "extra4"
 /decl/flooring/reinforced
 	name = "reinforced floor"
 	desc = "Heavily reinforced with steel plating."
@@ -255,3 +279,12 @@ var/list/flooring_types
 	icon = 'icons/turf/floors.dmi'
 	icon_base = "diona"
 	flags = TURF_ACID_IMMUNE | TURF_REMOVE_SHOVEL
+
+/decl/flooring/snow
+	name = "snow"
+	desc = "Mixed snow"
+	icon = 'icons/turf/flooring/stonefloor.dmi'
+	icon_base = "main"
+	has_damage_range = 6
+	descriptor = "snow"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL

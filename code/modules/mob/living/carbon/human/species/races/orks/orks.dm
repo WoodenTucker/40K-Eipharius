@@ -12,7 +12,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_TINY
-	total_health = 150
+	total_health = 650
 	mob_size = MOB_SMALL
 	strength = STR_LOW
 	brute_mod = 1.2
@@ -21,7 +21,8 @@
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
-		/mob/living/carbon/human/ork/proc/scavenge
+		/mob/living/carbon/human/ork/proc/scavenge,
+		/mob/living/carbon/human/ork/proc/giveorkzstats,
 		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
@@ -29,13 +30,19 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
-
+/datum/species/ork/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.age = rand(min_age,max_age)//Random age
+	if(H.h_style)
+		H.h_style = "Bald" //never seen an ork wif hair
+	if(H.f_style)//orks dont have beards
+		H.f_style = "Shaved"
+	H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+	return ..()
 /datum/species/ork/nob
 	name = SPECIES_ORK_NOB
 	name_plural = "Ork Nobz"
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
-	total_health = 500
 	strength = STR_VHIGH
 	mob_size = MOB_LARGE
 	brute_mod = 0.9
@@ -52,19 +59,19 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_HIGH
-	total_health = 350
+	health
 	mob_size = MOB_MEDIUM
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,
 		//mob/living/carbon/human/ork/proc/evolve,
-		/mob/living/carbon/human/ork/proc/scavenge
+		/mob/living/carbon/human/ork/proc/scavenge,
+		/mob/living/carbon/human/ork/proc/giveorkzstats
 		)
 
 /datum/species/ork/boss
 	name = SPECIES_ORK_BOSS
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
-	total_health = 650
 	strength = 30
 	mob_size = MOB_LARGE
 	brute_mod = 0.7

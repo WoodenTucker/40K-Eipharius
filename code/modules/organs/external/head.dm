@@ -18,6 +18,7 @@
 	cavity_name = "cranial"
 	arterial_bleed_severity = 5
 	break_sound = "headsmash"
+	gibbable = FALSE
 
 	var/can_intake_reagents = 1
 	var/eye_icon = "eyes_s"

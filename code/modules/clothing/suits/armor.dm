@@ -273,3 +273,18 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor = list(melee = 50, bullet = 50, laser = 45, energy = 45, bomb = 25, bio = 0, rad = 0)
+
+
+
+//Begin Tau//
+/obj/item/clothing/suit/armor/fwarmor
+	name = "fire warrior armor"
+	desc = "The impeccable white and red armor of the Tau warrior caste"
+	icon_state = "tbrea"
+	item_state = "tbrea"
+	armor = list(melee = 15, bullet = 60, laser = 60, energy = 60, bomb = 25, bio = 0, rad = 0)
+	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

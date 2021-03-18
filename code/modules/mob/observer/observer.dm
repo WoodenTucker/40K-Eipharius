@@ -102,15 +102,25 @@ mob/observer/check_airflow_movable()
 			for(var/area/A in GLOB.blue_captured_zones)
 				stat("Blue Captured Trench:", A)
 
- //not the final mob obv, this needs much more work, probably won't be ready for first test, will need lots of love and work.
-/mob/observer/verb/lateparty()
+ //this was the first shitty edition, improved in lateparty.dm, there could still be a use for this somewhere, with specific mobs in mind
+ /*
+/mob/observer/verb/latepartyold()
 	set category = "Ghost"
 	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
+
+	var/partydelay = 12000 //in deciseconds (20 min rn)
+
+	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
+		to_chat(src, "It is too early for a late party!")
+		return
+
 	var/response = alert(src, "Would you like to try and join the late party?", "Join the Late Party", "Yes", "No")
 
+
+
 	if(response == "Yes")
-		for(var/mob/living/carbon/human/ork/mek/M in world) //the mob they will be placed in
+		for(var/mob/living/carbon/human/kroot/M in world) //the mob they will be placed in
 			if(M.isempty == 1) //is the mob empty?
 				if(M.health > 0)
 					to_chat(M,"To be filled later")
@@ -128,3 +138,9 @@ mob/observer/check_airflow_movable()
 	for(var/mob/observer/O in GLOB.player_list)
 		if(jobban_isbanned(O, "Syndicate")) //so I can ban shitters
 			continue
+
+/mob/living/carbon/human/kroot/proc/request_player() //this grabs the friend and requests it
+	for(var/mob/observer/O in GLOB.player_list)
+		if(jobban_isbanned(O, "Syndicate")) //so I can ban shitters
+			continue
+*/

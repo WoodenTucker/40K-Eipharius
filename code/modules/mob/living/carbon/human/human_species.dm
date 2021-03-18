@@ -77,4 +77,3 @@
 
 /mob/living/carbon/human/lackey/New(var/new_loc)
 	..(new_loc, "Lackey")
-

@@ -310,6 +310,8 @@
 /obj/structure/sign/wantedwritten
 	icon_state = "wantedwritten"
 
+/obj/structure/sign/wantedruined
+	icon_state = "boardruined"
 
 /obj/structure/sign/warning/science
 	name = "\improper SCIENCE!"
@@ -333,6 +335,19 @@
 	desc = "A sign labelling the research wing."
 	icon_state = "science1"
 
+/obj/structure/sign/inkvd
+	icon_state = "inkvd"
+
+/obj/structure/sign/inkvd/two
+	icon_state = "inkvd2"
+/obj/structure/sign/sancposter
+	icon_state = "sancposter6"
+/obj/structure/sign/sancposter/two
+	icon_state = "chemical1"
+/obj/structure/sign/sancposter/three
+	icon_state = "chemical2"
+/obj/structure/sign/sancposter/four
+	icon_state = "sancposter"
 /obj/structure/sign/science_2
 	name = "\improper RESEARCH"
 	desc = "A sign labelling an area where research is performed."
@@ -552,3 +567,20 @@
 	name = "a long aquila"
 	desc = "A dark aquila"
 	icon_state = "aquilla"
+
+/obj/structure/sign/art/blindfolds
+	icon_state = "blindfolds"
+
+/obj/structure/sign/art/pray
+	icon_state = "poster_pray"
+
+/obj/structure/sign/art/lordgovenor
+	name = "Portrait of the Lord Governor"
+	desc = "A striking portrait of this sub-sectors Lord Governor, Keeber Harkon."
+	icon_state = "person_godking"
+
+/obj/structure/sign/art/porn
+	icon_state = "poster_obscene"
+
+/obj/structure/sign/art/statue
+	icon_state = "sc"

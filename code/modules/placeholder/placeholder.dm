@@ -38,3 +38,32 @@
 
 /obj/structure/cargo_pad/bottom_right
 	icon_state = "bottom_right"
+
+/obj/structure/cargo_pad/attackby(var/obj/item/O, var/mob/user) //lets do some exporting!
+	if (!(istype(O, /obj/item/)))
+		to_chat(user, "<span class='warning'>[O] cannot be exported!</span>")
+		return 1
+	else if (istype(O, /obj/item/card/id/ring/tau))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 50 //adds crowns to da counter
+		visible_message("[usr] completes an Imperial bounty! Tau ring deposited.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		new /obj/item/stack/thrones2(src.loc)
+		return
+	else if (istype(O, /obj/item/card/id/dog_tag/kroot))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 50 //adds crowns to da counter
+		visible_message("[usr] completes an Imperial bounty! Kroot tags deposited.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		new /obj/item/stack/thrones2(src.loc)
+		return
+	else if (istype(O, /obj/item/card/id/dog_tag/ork))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 50 //adds crowns to da counter
+		visible_message("[usr] completes an Imperial bounty! Ork tags deposited.")
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		new /obj/item/stack/thrones2(src.loc)
+		return

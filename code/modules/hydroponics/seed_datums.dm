@@ -1134,9 +1134,9 @@
 	set_trait(TRAIT_NUTRIENT_CONSUMPTION, 0.15)
 
 /datum/seed/tobacco
-	name = "tobacco"
-	seed_name = "tobacco"
-	display_name = "tobacco leaves"
+	name = "lho"
+	seed_name = "lho"
+	display_name = "lho leaves"
 	mutants = list("finetobacco", "puretobacco")
 	chems = list(/datum/reagent/tobacco = list(1,10))
 

@@ -101,7 +101,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	open_when_dead = FALSE
-	department_flag = SEC
+	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
 
 	announced = FALSE
@@ -131,9 +131,9 @@
 
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
-	supervisors = "The Commissar, the Rogue Trader, Imperial Law"
-	total_positions = 2
-	spawn_positions = 2 //may need more than 2 idk
+	supervisors = "The Commissar, the Rogue Trader, and the village Administrator"
+	total_positions = 4
+	spawn_positions = 4 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 6
@@ -217,9 +217,9 @@ Begin Warhammer loadouts
 	l_hand = /obj/item/gun/energy/las/lasgun
 	l_ear = null
 	r_ear = null
+	belt = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -262,6 +262,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
+	belt = /obj/item/device/flashlight/lantern
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -270,7 +271,6 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	backpack_contents = list(
 		/obj/item/ammo_magazine/box/a556/mg08 = 2,
-		/obj/item/device/flashlight/lantern = 1,
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
@@ -414,3 +414,45 @@ Begin Warhammer loadouts
 	if(aspect_chosen(/datum/aspect/nightfare))
 		backpack_contents += list(/obj/item/ammo_box/flares = 1 , /obj/item/torch/self_lit = 1)
 	..()
+
+
+/decl/hierarchy/outfit/job/kroot
+	uniform = /obj/item/clothing/under/rank/kroot
+	shoes = /obj/item/clothing/shoes/krootfeet
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
+
+
+//Tau//
+/decl/hierarchy/outfit/job/tau
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+
+//Ork//
+/decl/hierarchy/outfit/job/ork
+	uniform = /obj/item/clothing/under/rank/kroot
+	shoes = /obj/item/clothing/shoes/krootfeet
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2, /obj/item/melee/classic_baton/trench_club = 1,)

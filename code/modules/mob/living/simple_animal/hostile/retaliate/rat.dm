@@ -6,7 +6,7 @@
 	icon_dead = "rat_dead"
 	icon_gib = "rat_gib"
 	emote_see = list("squeaks loudly", "cleans its whiskers with its paws")
-	speak_chance = 5
+	speak_chance = 0
 	turns_per_move = 3
 	response_help = "pets the"
 	response_disarm = "pushes aside"

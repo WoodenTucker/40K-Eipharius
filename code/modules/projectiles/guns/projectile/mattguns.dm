@@ -60,6 +60,11 @@
 	penetrating = FALSE
 	damage = 65
 
+/obj/item/projectile/bullet/rifle/kroot
+	fire_sound = "brifle"
+	penetrating = FALSE
+	damage = 85
+
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"
 	desc = "A box of rifle ammo"
@@ -69,6 +74,22 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 20
 
+/obj/item/ammo_magazine/kroot
+	name = "Kroot Rifle Box"
+	desc = "A box of Kroot rifle ammo"
+	icon_state = "rbox"
+	caliber = "640"
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 20
+/obj/item/ammo_casing/krootbullet
+	name = "kroot slug"
+	desc = "An old worn out looking bullet casing."
+	caliber = "640"
+	projectile_type = /obj/item/projectile/bullet/rifle/kroot
+	icon_state = "kroot"
+	spent_icon = "krootcasing"
+	ammo_stack = /obj/item/ammo_magazine/handful/kroot_handful/two
 
 
 //Shitty shotgun
@@ -416,6 +437,7 @@
 	unwielded_unloaded_icon = "schmeiser-e"
 	wielded_unloaded_icon = "schmeiser-e"
 
+
 /obj/item/gun/projectile/automatic/flamer
 	name = "Mk.1 Scorcher"
 	desc = "Used to shoot flames at people when bullets just won't do."
@@ -423,7 +445,7 @@
 	item_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
-	one_hand_penalty = 50
+	one_hand_penalty = 0
 	str_requirement = 12
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
@@ -435,6 +457,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/flamer
 	can_jam = FALSE
 
+
 	loaded_icon = "flamer"
 	unwielded_loaded_icon = "flamer"
 	wielded_loaded_icon = "flamer-wielded"
@@ -442,7 +465,7 @@
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
 
-	gun_type = GUN_PISTOL //anyone can use this... just not anyone should.
+	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 
 
@@ -671,3 +694,59 @@
 		icon_state = "sallybolter-30"
 	else
 		icon_state = "sallybolter-e"
+
+
+
+
+//various kroot rifles, bolt action and lever
+
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
+	name = "\improper Kroot Bolt Rifle"
+	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	icon_state = "krootrifle"
+	item_state = "krootrifle"
+	wielded_item_state = "krootrifle-wielded"
+	condition = 100 //kroots maintain their guns well
+	fire_sound = "brifle"
+	caliber = "640" //its basically a musket ball
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
+	empty_icon = "krootrifle"
+	far_fire_sound = "sniper_fire"
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
+	name = "\improper Kroot Bolt Rifle"
+	force = 40
+	sharp = 1
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
+	name = "\improper Kroot Lever Rifle"
+	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	icon_state = "krootrifle"
+	item_state = "krootrifle"
+	condition = 100
+	wielded_item_state = "krootrifle-wielded"
+	fire_sound = 'sound/weapons/guns/fire/la_fire.ogg'
+	bulletinsert_sound = 'sound/weapons/guns/interact/la_insert.ogg'
+	pumpsound = 'sound/weapons/guns/interact/la_cock.ogg'
+	backsound = 'sound/weapons/guns/interact/la_back.ogg'
+	forwardsound = 'sound/weapons/guns/interact/la_forward.ogg'
+	empty_icon = "krootrifle"
+	far_fire_sound = "sniper_fire"
+	ammo_type = /obj/item/ammo_casing/krootbullet
+
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
+	name = "\improper Kroot Lever Rifle"
+	force = 40
+	sharp = 1
+	force_wielded = 40
+	force_unwielded = 25
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+	ammo_type = /obj/item/ammo_casing/krootbullet

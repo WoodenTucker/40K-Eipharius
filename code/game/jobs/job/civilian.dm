@@ -72,8 +72,8 @@
 	supervisors = "the Seneschal"
 	selection_color = "#515151"
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels)
-	minimal_access = list(access_hydroponics, access_maint_tunnels, access_kitchen)
+	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels, access_grox)
+	minimal_access = list(access_hydroponics, access_maint_tunnels, access_kitchen, access_grox)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
 	announced = FALSE

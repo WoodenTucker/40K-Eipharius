@@ -237,3 +237,4 @@
 			host.embedded -= src
 			host.drop_from_inventory(src)
 		spawn(1) if(src) qdel(src)
+

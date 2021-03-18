@@ -1,5 +1,5 @@
 /datum/map/overmap_example
-	allowed_jobs = list(/datum/job/captain, /datum/job/chief_engineer, /datum/job/doctor, /datum/job/hop, /datum/job/cyborg, /datum/job/assistant, /datum/job/engineer)
+	allowed_jobs = list(/datum/job/captain, /datum/job/magos, /datum/job/doctor, /datum/job/hop, /datum/job/cyborg, /datum/job/assistant, /datum/job/engineer)
 	species_to_job_whitelist = list(
 		/datum/species/vox = list(/datum/job/assistant)
 	)
@@ -47,7 +47,7 @@
 /datum/job/captain/get_access()
 	return get_all_station_access()
 
-/datum/job/chief_engineer
+/datum/job/magos
 	title = "Magos"
 	supervisors = "the Rogue Trader"
 	department_flag = ENG

@@ -33,6 +33,22 @@
 	initial_ammo = 2
 
 
+/obj/item/ammo_magazine/handful/kroot_handful
+	name = "\improper handful of bullets"
+	desc = "A handful of rifle bullets for your rifle."
+	icon_state = "kroot"
+	caliber = "640"
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	grab_sound = 'sound/items/handle/bullet_pickup.ogg'
+
+/obj/item/ammo_magazine/handful/kroot_handful/two
+	initial_ammo = 2
+
+
+
+
+
+
 //Shotgun
 /obj/item/ammo_magazine/handful/shotgun
 	drop_sound = 'sound/weapons/guns/misc/shotgun_fall.ogg'

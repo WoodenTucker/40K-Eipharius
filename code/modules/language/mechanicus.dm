@@ -1,4 +1,4 @@
-/datum/language/Linguatechnis
+/datum/language/linguatechnis
     name = "Lingua-technis"
     desc = "A language used by tech-priests to communicate large amounts of information and orders in a burst of binary that sounds like static to the ears of regular humans"
     speech_verb = "whistles"

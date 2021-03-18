@@ -33,6 +33,7 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 	var/anonsay = 0
 	var/ghostvision = 1 //is the ghost able to see things humans can't?
 	var/seedarkness = 1
+	var/isreadied = 0
 
 	var/obj/item/device/multitool/ghost_multitool
 	incorporeal_move = 1
@@ -81,8 +82,6 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 
 		if(B && T)
 			isburied = 1
-
-
 
 
 
@@ -227,7 +226,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	set name = "Re-enter Corpse"
 	if(!client)	return
 	if(!(mind && mind.current && can_reenter_corpse))
-		to_chat(src, "<span class='warning'>You have no body.</span>")
+		isburied = 1
+		to_chat(src, "<span class='warning'>You have no body. Try respawning!</span>")
 		return
 	if(mind.current.key && copytext(mind.current.key,1,2)!="@")	//makes sure we don't accidentally kick any clients
 		to_chat(src, "<span class='warning'>Another consciousness is in your body... it is resisting you.</span>")

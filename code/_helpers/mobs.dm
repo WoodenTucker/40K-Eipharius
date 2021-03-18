@@ -73,6 +73,28 @@ proc/random_skinless_name(gender)
 		return capitalize(pick(GLOB.first_names_female)) + " " + "The Lost"
 	else
 		return capitalize(pick(GLOB.first_names_male)) + " " + "The Lost"
+
+proc/random_kroot_name(gender)
+	var/krootnames = list("Yaka", "Krelk", "Yz'Kir", "Kliiake", "Hyutka", "Pokiaret", "Gertka", "Jikalak", "Mikelaka", "Preka", "Mekatrak", "Kyreit", "Jek'eat", "Jak'Jakka", "Tek'Tocka", "Pok'taka", "Zek'zok", "Cle'cluk" )
+	if(gender==FEMALE)
+		return capitalize(pick(krootnames)) + " " + "The Lost"
+	else
+		return capitalize(pick(krootnames)) + " " + "the Loyal"
+
+proc/random_ork_name(gender)
+	var/orknames = list("Bruzgrod", "Drugzag", "Klawgasha", "Warshredda", "Domechoppah", "Gravesmashah", "Krookacka", "Ugtazak", "Wildgasha", "Killgashah", "Bigrippa", "Domesplittah", "Orkamongus", "Barbcooka", "Krookkrushah", "Madwakkah", "Gatgroz" )
+	if(gender==FEMALE)
+		return capitalize(pick(orknames)) + " " + "The Lost"
+	else
+		return capitalize(pick(orknames)) + " "
+
+proc/random_taufw_name(gender)
+	var/taunames = list("Lo Kan", "Rho No", "Sen Jon", "Kas Lo", "Len Kan", "Ren Cron", "San Kas", "Ver Cha", "Dra Nan", "Tam Ra", "Lid Sa", "Chan Dra", "So Ka", "Las Nan", "Shrek Na", "Kes Ra", "Trab Pu Cip")
+	if(gender==FEMALE)
+		return capitalize(pick(taunames))
+	else
+		return capitalize(pick(taunames))
+
 proc/random_lackey_name()
 	return "Worthless Lackey" + " " + capitalize(pick(GLOB.last_names))
 

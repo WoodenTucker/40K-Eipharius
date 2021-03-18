@@ -12,7 +12,8 @@
 	var/stop_move = 0							// Whether or not the grabbed person can move out of the grab
 	var/force_stand = 0							// Whether or not the grabbed person is forced to be standing
 	var/reverse_facing = 0						// Whether the person being grabbed is facing forwards or backwards.
-	var/can_absorb = 0							// Whether this grab state is strong enough to, as a changeling, absorb the person you're grabbing.
+	var/can_absorb = 0                      // Whether this grab state is strong enough to, as a changeling, absorb the person you're grabbing.
+	var/can_eat = 0							// Similar to ling, used to eat people as kroot.
 	var/shield_assailant = 0					// Whether the person you're grabbing will shield you from bullets.,,
 	var/point_blank_mult = 1					// How much the grab increases point blank damage.
 	var/same_tile = 0							// If the grabbed person and the grabbing person are on the same tile.
@@ -107,7 +108,7 @@
 	else
 		special_target_effect(G)
 
-	if(activate_effect)	
+	if(activate_effect)
 		process_effect(G)
 
 /datum/grab/proc/throw_held(var/obj/item/grab/G)

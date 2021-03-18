@@ -99,7 +99,11 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/ToggleCkeyWhitelist,
 	/datum/admins/proc/ReloadCkeyWhitelist,
 	/datum/admins/proc/toggle_panic_bunker,
-	/datum/admins/proc/force_aspect
+	/datum/admins/proc/force_aspect,
+	/client/proc/another_party,
+	/client/proc/generate_party,
+	/client/proc/choose_party,
+
 )
 var/list/admin_verbs_ban = list(
 	/client/proc/unban_panel,
@@ -941,13 +945,83 @@ var/list/admin_verbs_mentor = list(
 	feedback_add_details("admin_verb","GS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("gave [key_name(T)] the spell [S].")
 
-/client/proc/create_party() // --Wel
+/*
+/client/proc/create_party() // --Wel //Needs more work
 	set category = "Fun"
-	set name = "Spawn Lateparty"
-	set desc = "Spawns the selected late party."
+	set name = "Spawn Random Lateparty"
+	set desc = "Deploys the randomly selected late party"
 
-	var/party = list("Tau", "Orks", "Tyranids", "Stormtroopers", "Dark Eldar", "Eldar", "Cultists")
+	var/party = list("")
 
+	party += pick("Kroot")
+
+
+
+	var/partyteam = input("Confirm launch late party?", "Selected party") as null| anything in party
+
+
+	switch(partyteam)
+
+		if("Kroot")
+			usr.loc = get_turf(locate("landmark*krootstart"))
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
+			new /mob/living/carbon/human/kroot(usr.loc)
 
 	feedback_add_details("admin_verb","CP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Spawned a late party.")
+*/
+
+/client/proc/another_party() // --Lets another party of 6 arrive.
+	set category = "Fun"
+	set name = "Allow another party"
+	set desc = "Lets admemes open another party"
+
+	if(alert("Allow another late-party to arrive?",,"Yes","No") == "Yes")
+		GLOB.deployed = 0
+
+	feedback_add_details("admin_verb","AP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	log_and_message_admins("Allowed another late party to arrive!")
+
+
+/client/proc/generate_party() // Runs the pick proc should you need to
+	set category = "Fun"
+	set name = "Generate Party"
+	set desc = "Picks the party for the round!"
+
+	if(alert("Are you sure you want to do this?",,"Yes","No") == "Yes")
+		GLOB.latepartyoptions += pick("Kroot")
+
+	feedback_add_details("admin_verb","ZP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+	log_and_message_admins("Generated the late party!")
+
+/client/proc/choose_party() // Runs the pick proc should you need to
+	set category = "Fun"
+	set name = "Choose Party"
+	set desc = "Picks the party for the round!"
+
+	var/parties = list("Kroot", "Tau", "Orkz") //lists all possible fates
+
+	var/chooseaparty = input("Choose a party", "Available parties") as null|anything in parties
+
+	switch(chooseaparty)
+		if("Kroot")
+			GLOB.latepartyoptions.Cut()
+
+			GLOB.latepartyoptions += "Kroot"
+			message_admins("Kroot have been selected as the late party!")
+		if("Orkz")
+			GLOB.latepartyoptions.Cut()
+
+			GLOB.latepartyoptions += "Orkz"
+			message_admins("Orkz have been selected as the late party!")
+		if("Tau")
+			GLOB.latepartyoptions.Cut()
+
+			GLOB.latepartyoptions += "Tau"
+			message_admins("Tau have been selected as the late party!")
+
+	feedback_add_details("admin_verb","XP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

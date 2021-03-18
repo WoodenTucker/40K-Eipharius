@@ -10,6 +10,7 @@
 #define FOOTSTEP_REINFPLATING "reinforcedplating"
 #define FOOTSTEP_SNOW		"snow"
 #define FOOTSTEP_MUD 		"mud"
+#define FOOTSTEP_STONE		"stone"
 
 /turf/simulated/floor/var/global/list/footstep_sounds = list(
 	FOOTSTEP_WOOD = list(
@@ -73,7 +74,14 @@
 		'sound/effects/footstep/reinfplating3.ogg',
 		'sound/effects/footstep/reinfplating4.ogg',
 		'sound/effects/footstep/reinfplating5.ogg',
-		'sound/effects/footstep/reinfplating6.ogg')
+		'sound/effects/footstep/reinfplating6.ogg'),
+	FOOTSTEP_STONE =list(
+		'sound/effects/footstep/stone1.ogg',
+		'sound/effects/footstep/stone2.ogg',
+		'sound/effects/footstep/stone3.ogg',
+		'sound/effects/footstep/stone4.ogg',
+		'sound/effects/footstep/stone5.ogg',
+		'sound/effects/footstep/stone6.ogg',),
 )
 
 /decl/flooring/var/footstep_type
@@ -83,6 +91,7 @@
 /decl/flooring/linoleum/footstep_type = FOOTSTEP_TILES
 /decl/flooring/wood/footstep_type = FOOTSTEP_WOOD
 /decl/flooring/reinforced/footstep_type = FOOTSTEP_PLATING
+/decl/flooring/stone/footstep_type = FOOTSTEP_STONE
 
 /turf/simulated/floor/proc/get_footstep_sound()
 	if(is_plating())
@@ -115,6 +124,12 @@
 
 /turf/simulated/floor/trench/get_footstep_sound()
 	return safepick(footstep_sounds[FOOTSTEP_MUD])
+
+/turf/simulated/floor/stone/get_footstep_sound()
+	return safepick(footstep_sounds[FOOTSTEP_STONE])
+
+/turf/simulated/floor/snow/get_footstep_sound()
+	return safepick(footstep_sounds[FOOTSTEP_SNOW])
 
 
 

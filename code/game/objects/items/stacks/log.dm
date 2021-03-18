@@ -26,8 +26,8 @@
 
 	if(!istype(user.loc,/turf)) return 0
 
-	if (locate(/obj/item/campfire, usr.loc))
-		for(var/obj/item/campfire/G in usr.loc)
+	if (locate(/obj/item/campfire/self_lit, usr.loc))
+		for(var/obj/item/campfire/self_lit/G in usr.loc)
 
 			if (G.destroyed)
 				G.health = 50
@@ -47,7 +47,7 @@
 		if (!do_after(usr, 10))
 			in_use = 0
 			return
-		var/obj/item/campfire/F = new /obj/item/campfire ( usr.loc )
+		var/obj/item/campfire/self_lit/F = new /obj/item/campfire/self_lit ( usr.loc )
 		to_chat(usr, "<span class='notice'>You build a campfire!</span>")
 		in_use = 0
 		F.add_fingerprint(usr)
