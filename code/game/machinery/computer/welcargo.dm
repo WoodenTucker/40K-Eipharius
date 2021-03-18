@@ -12,19 +12,31 @@
 	bound_width = 64
 
 	var/buying = 0 //spam prevention
+	var/food = 0 //food section
 
 /obj/machinery/computer/planetarytrade/attack_hand(mob/user as mob)	//Starting menu
 
 	user.set_machine(src)
-	var/dat = "<B>Sub-sector Trade:</B><BR>"
-	dat += "[GLOB.thrones] thrones<BR>"
-	dat += "<B>Items on the Market:</B><BR>"
-	dat += "<B> Meats:</B><BR>"
-	dat += "<A href='byond://?src=\ref[src];shafra=1'>Shafra Meat (5)</A><BR>"
-	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
-	user << browse(dat, "window=scroll")
-	onclose(user, "scroll")
-	return
+	if(food == 0)
+		var/dat = "<B>Sub-sector Trade:</B><BR>"
+		dat += "[GLOB.thrones] thrones<BR>"
+		dat += "<B>Items on the Market:</B><BR>"
+		dat += "<B> Meats:</B><BR>"
+		dat += "<A href='byond://?src=\ref[src];food=1'>Food/Drink</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];shafra=1'>Shafra Meat (5)</A><BR>"
+		dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
+		user << browse(dat, "window=scroll")
+		onclose(user, "scroll")
+	if(food == 1)
+		var/dat = "<B>Sub-sector Trade:</B><BR>"
+		dat += "[GLOB.thrones] thrones<BR>"
+		dat += "<B>Items on the Market:</B><BR>"
+		dat += "<A href='byond://?src=\ref[src];shafra=1'>Shafra Meat (5)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];main=1'>Main Menu</A><BR>"
+		dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
+		user << browse(dat, "window=scroll")
+		onclose(user, "scroll")
+		return
 
 /obj/machinery/computer/planetarytrade/attack_paw(mob/user as mob)
 	return src.attack_hand(user)
@@ -50,6 +62,10 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/reagent_containers/food/snacks/shaframeat(T.loc) //what they spawning
 			src.buying = 0
+	if (href_list["food"])
+		food = 1
+	if (href_list["main"])
+		food = 0
 
 
 

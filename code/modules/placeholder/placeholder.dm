@@ -43,21 +43,19 @@
 	if (!(istype(O, /obj/item/)))
 		to_chat(user, "<span class='warning'>[O] cannot be exported!</span>")
 		return 1
-	else if (istype(O, /obj/item/card/id/ring/tau))
+	else if (istype(O, /obj/item/reagent_containers/food/snacks/meat/grox))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-		qdel(O) //deletes ring
-		GLOB.thrones += 50 //adds crowns to da counter
-		visible_message("[usr] completes an Imperial bounty! Tau ring deposited.")
+		qdel(O) //deletes item
+		GLOB.thrones += 10 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-		new /obj/item/stack/thrones2(src.loc)
 		return
-	else if (istype(O, /obj/item/card/id/dog_tag/kroot))
+	else if (istype(O, /obj/item/reagent_containers/food/snacks/shaframeat))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
-		GLOB.thrones += 50 //adds crowns to da counter
-		visible_message("[usr] completes an Imperial bounty! Kroot tags deposited.")
+		GLOB.thrones += 7 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-		new /obj/item/stack/thrones2(src.loc)
 		return
 	else if (istype(O, /obj/item/card/id/dog_tag/ork))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
