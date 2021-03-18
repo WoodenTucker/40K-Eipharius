@@ -485,7 +485,7 @@
 	grab_sound_is_loud = TRUE
 
 /obj/item/melee/inqcs
-	name = "mercy chainsword"
+	name = "inquisition chainsword"
 	desc = "Used mainly for ripping and tearing"
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "inqchainsword"
@@ -493,6 +493,24 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 25
+	block_chance = 20
+	sharp = TRUE
+	edge = TRUE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+/obj/item/melee/pcsword
+	name = "brutal chainsword"
+	desc = "Used mainly for ripping and tearing"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "pcsword"
+	item_state = "pcsword"
+	wielded_icon = "trenchaxe-w"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 30
 	block_chance = 20
 	sharp = TRUE
 	edge = TRUE
