@@ -490,3 +490,22 @@
 /obj/item/reagent_containers/food/drinks/bottle/small/ale/New()
 	. = ..()
 	reagents.add_reagent(/datum/reagent/ethanol/ale, 30)
+
+
+/obj/item/reagent_containers/food/drinks/bottle/amasecpoor
+	name = "Cheap Amasec"
+	desc = "Affordable, golden, amasec. The beloved drink of the Imperium"
+	icon_state = "amasecpoor"
+	center_of_mass = "x=16;y=8"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/amasec/cheap, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive
+	name = "Exppensive Amasec"
+	desc = "Expensive, aged and meant for the nobility of the Imperium. This bottle of amasec tastes and smells like the embrace of the Emperor himself."
+	icon_state = "amasecpricey"
+	center_of_mass = "x=16;y=8"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/amasec/expensive, 100)

@@ -9,6 +9,11 @@
     throwforce = 3.0
     max_amount = 10
 
+/obj/item/stack/logs/update_icon()
+	if(!amount)//There's no more money here, so delete the handful.
+		qdel(src)
+		return
+
 
 /obj/item/stack/logs/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/material/sword/combat_knife|| istype(W.sharp)|| istype(W.edge)))

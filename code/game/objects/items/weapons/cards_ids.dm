@@ -237,8 +237,8 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/hop
 
 /obj/item/card/id/gold
-	name = "identification card"
-	desc = "A golden card which shows power and might."
+	name = "golden writ"
+	desc = "A golden writ from the High Lords of Terra naming the owner a Rogue Trader."
 	icon_state = "gold"
 	item_state = "gold_id"
 	job_access_type = /datum/job/captain

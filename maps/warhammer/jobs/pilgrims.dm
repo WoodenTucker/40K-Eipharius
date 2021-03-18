@@ -209,7 +209,7 @@ Pilgrim Fate System
 
 
 /datum/job/administrator  //so that the inn always has someone working
-	title = "Administrator"
+	title = "Administratum Adept"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_HIGH //better off than your average gross pilgrim
 	total_positions = 1

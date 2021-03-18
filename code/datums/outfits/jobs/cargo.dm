@@ -9,13 +9,22 @@
 	glasses = /obj/item/clothing/glasses/sunglasses
 	l_hand = /obj/item/clipboard
 	id_type = /obj/item/card/id/shared/cargo
-	pda_type = /obj/item/device/pda/quartermaster
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1)
 
 /decl/hierarchy/outfit/job/cargo/cargo_tech
 	name = OUTFIT_JOB_NAME("Cargo technician")
 	uniform = /obj/item/clothing/under/rank/cargotech
 	id_type = /obj/item/card/id/shared/cargo
-	pda_type = /obj/item/device/pda/cargo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones3/ten = 1)
 
 /decl/hierarchy/outfit/job/cargo/mining
 	name = OUTFIT_JOB_NAME("Shaft miner")

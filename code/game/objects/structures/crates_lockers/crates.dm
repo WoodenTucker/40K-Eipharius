@@ -343,3 +343,20 @@ obj/structure/closet/crate
 
 /obj/structure/closet/crate/uranium/WillContain()
 	return list(/obj/item/stack/material/uranium/ten = 5)
+
+/obj/structure/closet/crate/ateopoine
+	name = "ateopoine crate"
+	desc = "A crate with ateopoine in it!"
+	icon_state = "medicalcrate"
+	icon_opened = "medicalcrateopen"
+	icon_closed = "medicalcrate"
+
+/obj/structure/closet/crate/ateopoine/New()
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+
+/obj/structure/closet/crate/ateopoine/WillContain()
+	return list(/obj/item/reagent_containers/hypospray/autoinjector/revive = 5)

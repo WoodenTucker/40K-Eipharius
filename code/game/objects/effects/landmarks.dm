@@ -432,3 +432,6 @@ Template:
 
 /obj/effect/landmark/cargospawn
 	name = "cargospawn"
+
+/obj/effect/landmark/reqspawn
+	name = "reqspawn"
