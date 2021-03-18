@@ -48,20 +48,29 @@
 		qdel(O) //deletes item
 		GLOB.thrones += 10 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
 	else if (istype(O, /obj/item/reagent_containers/food/snacks/shaframeat))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 7 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
-	else if (istype(O, /obj/item/card/id/dog_tag/ork))
+	else if (istype(O, /obj/item/stack/logs))
+		var/obj/item/stack/logs/S = O
+		if (S)
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+			S.amount -=1
+			S.update_icon()
+			GLOB.thrones += 3 //adds crowns to da counter
+			visible_message("[usr] packages the [O] and loads it into the teleporter.")
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			return
+	else if (istype(O, /obj/item/reagent_containers/food/snacks/bearmeat))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
-		GLOB.thrones += 50 //adds crowns to da counter
-		visible_message("[usr] completes an Imperial bounty! Ork tags deposited.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-		new /obj/item/stack/thrones2(src.loc)
+		GLOB.thrones += 7 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
