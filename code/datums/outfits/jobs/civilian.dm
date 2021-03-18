@@ -12,7 +12,7 @@
 	id_type = /obj/item/card/id/civilian/bartender
 	pda_type = /obj/item/device/pda/bar
 	head = /obj/item/clothing/head/servitorhead
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	suit = /obj/item/clothing/suit/servitor
 	back = /obj/item/storage/backpack/satchel/servitor
@@ -74,7 +74,7 @@
 	id_type = /obj/item/card/id/civilian/janitor
 	pda_type = /obj/item/device/pda/janitor
 	head = /obj/item/clothing/head/servitorhead/janitor
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	suit = /obj/item/clothing/suit/servitor/janitor
 	back = /obj/item/storage/backpack/satchel/servitor
