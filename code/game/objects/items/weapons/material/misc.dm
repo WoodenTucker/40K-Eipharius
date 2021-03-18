@@ -99,6 +99,7 @@
 	force = 35
 	sharp = 1
 	edge = 1
+	hitsound = "slash_sound"
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT

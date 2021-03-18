@@ -74,3 +74,45 @@
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
+	else if (istype(O, /obj/item/organ/internal/appendix))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 3 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O, /obj/item/organ/internal/eyes))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 5 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O, /obj/item/organ/internal/heart))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 10 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/organ/internal/kidneys))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 5 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/organ/internal/liver))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 5 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/organ/internal/lungs))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 7 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
