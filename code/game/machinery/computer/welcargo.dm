@@ -444,14 +444,14 @@
 
 
 //Procs for grabbing players.
-/mob/living/carbon/human/kroot/proc/request_player()
+/mob/living/carbon/human/kroot/proc/request_player() //reqs the player
 	for(var/mob/observer/ghost/O in GLOB.player_list)
-		if(jobban_isbanned(O, "Syndicate"))
+		if(jobban_isbanned(O, "Syndicate")) //so I can JB shitters
 			continue
-		if(O.client)
+		if(O.client) //just duh
 			question(O.client)
 
-/mob/living/carbon/human/kroot/proc/question(var/client/C)
+/mob/living/carbon/human/kroot/proc/question(var/client/C) //asks the questions
 	spawn(0)
 		if(!C)	return
 		var/response = alert(C, "A Kroot Mercenary has been hired by the RT. Are you interested?", "Kroot Hunter", "Yes", "No",)
@@ -460,7 +460,7 @@
 		if(response == "Yes")
 			transfer_personality(C)
 
-/mob/living/carbon/human/kroot/proc/transfer_personality(var/client/candidate)
+/mob/living/carbon/human/kroot/proc/transfer_personality(var/client/candidate) //puts the guy in the place
 
 	if(!candidate)
 		return
