@@ -41,6 +41,7 @@
 	var/iseating = 0
 
 /mob/living/carbon/human/kroot/New(var/new_loc)
+	request_player()
 	h_style = "Bald"
 	..(new_loc, new_kroot)
 
