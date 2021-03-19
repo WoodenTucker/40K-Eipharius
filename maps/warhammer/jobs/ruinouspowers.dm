@@ -425,6 +425,9 @@
 			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist" && intrigue >= 1) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "tzeentch")
 				client.images += I
+			if(cultist.mind && cultist.mind.special_role == "Mercenary") //rage check very important to not show everyone
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
+				client.images += I
 	return
 
 
