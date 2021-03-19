@@ -80,7 +80,7 @@
 	item_state = "awrench"
 	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BELT
+	slot_flags = null
 	canremove = FALSE
 	w_class = ITEM_SIZE_SMALL
 	var/constructionsystem = 0

@@ -463,6 +463,7 @@ Area basic template
 	name = "Caves"
 	icon_state = "cave"
 	music = 'sound/music/caves.ogg'
+	var/instability = 0
 
 /////////////////////////////////////////
 ////////////////Engineering/////////////
