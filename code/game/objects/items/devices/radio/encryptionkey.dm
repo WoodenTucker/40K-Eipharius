@@ -18,37 +18,37 @@
 //Base red one.
 /obj/item/device/encryptionkey/red
 	icon_state = "cypherkey"
-	channels = list("Imperial - Main" = 1)
+	channels = list("Imperial" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 /obj/item/device/encryptionkey/redsl_alpha
 	icon_state = "cypherkey"
-	channels = list("Imperial - Main" = 1, "Guard" = 1)
+	channels = list("Imperial" = 1, "Alpha" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
 /obj/item/device/encryptionkey/redsl_bravo
 	icon_state = "cypherkey"
-	channels = list("Imperial - Main" = 1, "Bravo" = 1)
+	channels = list("Imperial" = 1, "Bravo" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
 /obj/item/device/encryptionkey/redsl_charlie
 	icon_state = "cypherkey"
-	channels = list("Imperial - Main" = 1, "Charlie" = 1)
+	channels = list("Imperial" = 1, "Charlie" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
 /obj/item/device/encryptionkey/redsl_delta
 	icon_state = "cypherkey"
-	channels = list("Imperial - Main" = 1, "Delta" = 1)
+	channels = list("Imperial" = 1, "Delta" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
 /obj/item/device/encryptionkey/red_all
 	icon_state = "cypherkey"
-	channels = list("Imperial - Main" = 1, "Alpha" = 1, "Bravo" = 1, "Charlie" = 1, "Delta" = 1)
+	channels = list("Imperial" = 1, "Alpha" = 1, "Bravo" = 1, "Charlie" = 1, "Delta" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
@@ -73,6 +73,13 @@
 /obj/item/device/encryptionkey/red_delta
 	icon_state = "cypherkey"
 	channels = list("Delta" = 1)
+	origin_tech = list(TECH_ILLEGAL = 3)
+	syndie = 1//Signifies that it de-crypts Syndicate transmissions
+
+
+/obj/item/device/encryptionkey/red/medicae
+	icon_state = "cypherkey"
+	channels = list("Imperial" = 1, "Medical" = 1,)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 

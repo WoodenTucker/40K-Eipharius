@@ -37,6 +37,8 @@
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				src.update_inv_r_hand()
 				src.rage++
+				src.mind.special_role = "Khorne Cultist"
+				AddInfectionImages()
 			else
 				to_chat(src, "You need a certain type of meat... Something filled with rage and a lust for bloodshed.")
 				return
@@ -394,3 +396,20 @@
 		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
 		isdrawing = 0
 		return
+
+//////////////////icons above  mob showing cult/////////////
+
+/mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
+	if (client)
+		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
+			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist" && rage >= 1) //rage check very important to not show everyone
+				var/I = image('icons/mob/alien.dmi', loc = cultist, icon_state = "genestealer")
+				client.images += I
+	return
+
+
+/mob/living/carbon/human/Login() //so they can get it on login if they dc or somethin
+	..()
+	AddInfectionImages()
+	return
+

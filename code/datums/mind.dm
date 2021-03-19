@@ -512,23 +512,6 @@
 	..()
 	if(!mind.assigned_role)	mind.assigned_role = "Assistant"	//defualt
 
-/mob/living/carbon/human/mind_initialize()
-	..()
-	mind.assigned_role = "Slaaneshi Cultist"
-
-
-/mob/living/carbon/human/mind_initialize()
-	..()
-	mind.assigned_role = "Khorne Cultist"
-
-/mob/living/carbon/human/mind_initialize()
-	..()
-	mind.assigned_role = "Tzeentch Cultist"
-
-/mob/living/carbon/human/mind_initialize()
-	..()
-	mind.assigned_role = "Nurgle Cultist"
-
 //slime
 /mob/living/carbon/slime/mind_initialize()
 	..()
