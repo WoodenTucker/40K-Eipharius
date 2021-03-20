@@ -31,6 +31,7 @@
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				src.update_inv_l_hand()
 				src.rage++
+
 			else if(istype(src.r_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.r_hand)
 				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God. You are not yet visibly corrupted but avoid detailed investigation.")
@@ -45,6 +46,9 @@
 			STAT_LEVEL(str)+=1
 			src.rage++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
+			src.mind.special_role = "Khorne Cultist"
+			src.faction = "Khorne"
+			AddInfectionImages()
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/khornerune
 			to_chat(src, "Hatred, rage and fury like you've never known consume your mind and block out your every thought. Flashes of a symbol appear in your mind. You feel compelled to draw it.")
@@ -104,6 +108,9 @@
 			STAT_LEVEL(end) +=1
 			src.verbs -= list(/mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
 			to_chat(src, "The voice of gentle grandfather fills your inner mind. You cannot see him, but you feel the warmth of his smile. It is calming, it is pleasing. You want to listen to what he has to say, to sit like a child before a wise elder telling tales of his youth.")
+			src.mind.special_role = "Nurgle Cultist"
+			AddInfectionImages()
+			src.faction = "Nurgle"
 		if(2)
 			src.decay++
 			src.verbs += /mob/living/carbon/human/proc/nurglerune
@@ -180,6 +187,9 @@
 			STAT_LEVEL(dex)+=1
 			src.lust++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/tzeentch)
+			src.mind.special_role = "Slaanesh Cultist"
+			AddInfectionImages()
+			src.faction = "Slaanesh"
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/slaaneshrune
 			to_chat(src, "His command is clear. I must have that feeling of ecstasy again. I will obey. His symbol fills my mind, I see it when I close my eyes. I must find a place to draw it, I must honor him.")
@@ -235,6 +245,9 @@
 			src.intrigue++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
 			to_chat(src, "One down, eight to go!")
+			src.mind.special_role = "Tzeentch Cultist"
+			AddInfectionImages()
+			src.faction = "Tzeentch"
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/tzeentchrune
 			to_chat(src, "To hear my next riddle memorize this symbol, draw it and stand upon it!")
@@ -394,3 +407,32 @@
 		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
 		isdrawing = 0
 		return
+
+//////////////////icons above  mob showing cult/////////////
+
+/mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
+	if (client)
+		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
+			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist" && rage >= 1) //rage check very important to not show everyone
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "khorne")
+				client.images += I
+			if(cultist.mind && cultist.mind.special_role == "Slaanesh Cultist" && lust >= 1) //rage check very important to not show everyone
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "slaanesh")
+				client.images += I
+			if(cultist.mind && cultist.mind.special_role == "Nurgle Cultist" && decay >= 1) //rage check very important to not show everyone
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "nurgle")
+				client.images += I
+			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist" && intrigue >= 1) //rage check very important to not show everyone
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "tzeentch")
+				client.images += I
+			if(cultist.mind && cultist.mind.special_role == "Mercenary") //rage check very important to not show everyone
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
+				client.images += I
+	return
+
+
+/mob/living/carbon/human/Login() //so they can get it on login if they dc or somethin
+	..()
+	AddInfectionImages()
+	return
+

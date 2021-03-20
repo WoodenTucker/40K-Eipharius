@@ -326,10 +326,10 @@
 			var/newline = html_encode(input("Enter your line: ", "violin") as text|null)
 			if(!newline)
 				return
-			if(song.lines.len > 50)
+			if(song.lines.len > 300)
 				return
-			if(length(newline) > 50)
-				newline = copytext(newline, 1, 50)
+			if(length(newline) > 300)
+				newline = copytext(newline, 1, 300)
 			song.lines.Add(newline)
 
 		else if(href_list["deleteline"])
@@ -343,8 +343,8 @@
 			var/content = html_encode(input("Enter your line: ", "violin", song.lines[num]) as text|null)
 			if(!content)
 				return
-			if(length(content) > 50)
-				content = copytext(content, 1, 50)
+			if(length(content) > 300)
+				content = copytext(content, 1, 300)
 			if(num > song.lines.len || num < 1)
 				return
 			song.lines[num] = content
@@ -378,12 +378,12 @@
 				if(copytext(lines[1],1,6) == "BPM: ")
 					tempo = 600 / text2num(copytext(lines[1],6))
 					lines.Cut(1,2)
-				if(lines.len > 50)
+				if(lines.len > 300)
 					to_chat(usr, "Too many lines!")
 					lines.Cut(51)
 				var/linenum = 1
 				for(var/l in lines)
-					if(length(l) > 50)
+					if(length(l) > 300)
 						to_chat(usr, "Line [linenum] too long!")
 						lines.Remove(l)
 					else

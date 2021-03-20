@@ -114,26 +114,6 @@ Pilgrim Fate System
 
 			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
-		if("Disgraced Medicae")
-			U.add_skills(0,0,rand(5,9),0,rand(5,9))
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
-			var/obj/item/card/id/ring/disgracedmedicae/W = new
-
-			W.icon_state = "medicae_ring"
-			W.assignment = "Village Administrator"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Miner")
 			U.add_stats(rand(10,13),rand(8,12),rand(10,12),8)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
@@ -172,6 +152,26 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/flame/lighter/zippo, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme you once again find yourself on a new world. You'll do whatever it takes for a throne or two. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+		if("Disgraced Medicae")
+			U.add_skills(0,0,rand(5,9),0,rand(5,9))
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
+			var/obj/item/card/id/ring/disgracedmedicae/W = new
+
+			W.icon_state = "medicae_ring"
+			W.assignment = "Village Administrator"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 
 

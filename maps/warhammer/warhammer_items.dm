@@ -382,6 +382,17 @@
 		set_frequency(RED_DELTA)
 
 
+/obj/item/device/radio/headset/red_team/medicae
+	name = "Standard Issue Vox"
+	origin_tech = list(TECH_ILLEGAL = 3)
+	syndie = 1
+	ks1type = /obj/item/device/encryptionkey/red/medicae
+
+/obj/item/device/radio/headset/red_team/medicae/Initialize()
+	. = ..()
+	set_frequency(RED_FREQ)
+
+
 /obj/item/device/radio/headset/red_team/voxcaster
 	icon = 'icons/obj/radio.dmi'
 	name = "vox-caster rig"

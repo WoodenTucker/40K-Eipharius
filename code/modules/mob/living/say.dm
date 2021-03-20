@@ -19,7 +19,7 @@ var/list/department_radio_keys = list(
 	  ":z" = "Entertainment",".z" = "Entertainment",
 	  ":y" = "Exploration",	".y" = "Exploration",
 	  ":b" = "Blue", 		".b" = "Blue",
-	  ":q" = "Imperial - Main", 		".q" = "Imperial - Main",
+	  ":q" = "Imperial", 		".q" = "Imperial",
 	  ":a" = "Alpha", 		".a" = "Alpha",
 	  ":g" = "Bravo", 		".g" = "Bravo",
 	  ":c" = "Charlie",		".c" = "Charlie",

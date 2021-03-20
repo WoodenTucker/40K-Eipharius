@@ -29,6 +29,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //RT's are really fucking random in lore so we'll make his stats random
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
+		H.verbs += list(/mob/living/carbon/human/proc/hire,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader, the owner and leader of this outpost. You wield a golden writ of authority directly from the High Lords of Terra themselves. None can command you except your lust for profit and your mission to expand Imperial influence.</font></b></span>")
 
 
@@ -79,3 +80,50 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
+
+
+/mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))
+	set category = "Rogue Trader"
+	set name = "Hire Mercenary"
+	set desc = "Finally! Some recognition!"
+	if(!client)
+		to_chat(src, "<span class='notice'>Thats not a person.</span>")
+		return
+
+	var/list/options = list(
+		"Hire on",
+		"Cancel",
+		)
+
+	var/theoptions = input("Would you like to hire [M]?", "Hiring Menu") as null|anything in options
+	if (isnull(theoptions))																	//You chose poorly
+		return
+	if(!Adjacent(M))																			//How close are we?
+		to_chat(src, "<span class='notice'>Get a little closer.</span>")
+		return
+
+	switch(theoptions)
+		if ("Cancel")
+			return	//do nothing
+
+		if ("Hire on")
+			for(var/obj/item/card/id/W in M.contents)
+				M.unEquip(W)
+				visible_message(("<span class='alert'>[src] snatches [W] and tosses it on the ground.</span>"))
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+			W.access = list(access_security, access_sec_doors, access_brig, access_maint_tunnels, access_morgue)
+			W.assignment = "Hired Mercenary"
+			W.registered_name = M.real_name
+			W.update_label()
+			M.equip_to_slot_or_del(W, slot_wear_id)
+			M.regenerate_icons()
+			M.mind.special_role = "Mercenary"
+			src.mind.special_role = "Mercenary"
+			M.warfare_faction = IMPERIUM
+			M.AddInfectionImages()
+			src.AddInfectionImages()
+			visible_message("<span class='alert'>[src] slaps a new ID onto [M].</span>")
+			src.say("Welcome to my service.")
+		else
+			return

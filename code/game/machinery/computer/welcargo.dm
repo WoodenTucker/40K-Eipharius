@@ -32,7 +32,7 @@
 		dat += "<A href='byond://?src=\ref[src];metal=1'>Stack of Metal (15)</A><BR>"
 		dat += "<B>Weapons:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];bolter=1'>Bolt Pistol (25)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];bolterammo=1'>Bolt Pistol (5)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];bolterammo=1'>Bolt Pistol Magazine (5)</A><BR>"
 		dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
 		user << browse(dat, "window=scroll")
 		onclose(user, "scroll")
@@ -309,9 +309,9 @@
 			return
 		else
 			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
-			GLOB.thrones -= 500 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 750 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			GLOB.tithe_paid = 1 //yay we paid the tithe
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
 	if (href_list["tax"])
 		var/taxrates = list("fifteen", "twenty", "twenty-five", "thirty", "thirty-five", "fourty", "fourty-five", "fifty",) //lists tax rates, we'll do set ones for now
@@ -371,7 +371,7 @@
 		qdel(O) //deletes ring
 		GLOB.thrones += 50 //adds crowns to da counter
 		visible_message("[usr] completes an Imperial bounty! Tau ring deposited.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		playsound(usr, 'sound/effects/bountycomplete.ogg', 100, 0, -1)
 		new /obj/item/stack/thrones2(src.loc)
 		return
 	else if (istype(O, /obj/item/card/id/dog_tag/kroot))
@@ -379,7 +379,7 @@
 		qdel(O) //deletes ring
 		GLOB.thrones += 50 //adds crowns to da counter
 		visible_message("[usr] completes an Imperial bounty! Kroot tags deposited.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		playsound(usr, 'sound/effects/bountycomplete.ogg', 50, 0, -1)
 		new /obj/item/stack/thrones2(src.loc)
 		return
 	else if (istype(O, /obj/item/card/id/dog_tag/ork))
@@ -387,7 +387,7 @@
 		qdel(O) //deletes ring
 		GLOB.thrones += 50 //adds crowns to da counter
 		visible_message("[usr] completes an Imperial bounty! Ork tags deposited.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		playsound(usr, 'sound/effects/bountycomplete.ogg', 50, 0, -1)
 		new /obj/item/stack/thrones2(src.loc)
 		return
 

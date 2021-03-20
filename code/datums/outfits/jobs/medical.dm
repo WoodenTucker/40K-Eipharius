@@ -10,7 +10,7 @@
 
 /decl/hierarchy/outfit/job/medical/cmo
 	name = OUTFIT_JOB_NAME("Sister Superior")
-	l_ear  = /obj/item/device/radio/headset/red_team/all
+	l_ear  = /obj/item/device/radio/headset/red_team/medicae
 	uniform = /obj/item/clothing/under/rank/medical
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
