@@ -70,7 +70,7 @@
 	var/datum/wires/vending/wires = null
 
 	var/vending_sound = "machines/vending_drop.ogg"
-	var/rand_amount = FALSE
+	var/rand_amount = FALSE //This is what makes the machines put random amounts including 0 in. leave it on FALSE unless reworked
 
 /obj/machinery/vending/New()
 	..()
