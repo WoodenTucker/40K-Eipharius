@@ -123,7 +123,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			M.warfare_faction = IMPERIUM
 			M.AddInfectionImages()
 			src.AddInfectionImages()
-			src.visible_message(text("<span class='alert'>[src] slaps a new ID onto [M].</span>"))
+			visible_message("<span class='alert'>[src] slaps a new ID onto [M].</span>")
 			src.say("Welcome to my service.")
 		else
 			return
