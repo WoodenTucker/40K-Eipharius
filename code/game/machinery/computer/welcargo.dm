@@ -504,8 +504,6 @@
 			var/obj/effect/landmark/reqspawn/T = locate() //where dey spawning
 			new /mob/living/carbon/human/kroot(T.loc) //what they spawning
 
-
-
 //Procs for grabbing players.
 /mob/living/carbon/human/kroot/proc/request_player() //reqs the player
 	for(var/mob/observer/ghost/O in GLOB.player_list)
