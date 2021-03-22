@@ -301,6 +301,23 @@ Exterminatus
 		world.Reboot()
 		return
 
+//Slipstream escape, actually insanely hacky I'm sorry every CS prof I've ever had for this
+	proc/station_slipstream_escape()
+
+		world << sound('sound/effects/leaving.ogg')
+		var/obj/effect/landmark/runaway/T = locate() //where dey spawning
+		new /turf/unsimulated/floor/slipstream(T.loc)
+		var/obj/effect/landmark/evac/two/Y = locate() //where dey spawning
+		new	/turf/unsimulated/floor/slipstream(Y.loc)
+
+		sleep(200)
+		to_world(SSevents.RoundEnd())
+		to_world(ticker.declare_completion())
+		sleep(200)
+		log_game("Rebooting due to escape")
+		world.Reboot()
+		return
+
 
 /datum/controller/gameticker/proc/create_characters()
 	for(var/mob/new_player/player in GLOB.player_list)

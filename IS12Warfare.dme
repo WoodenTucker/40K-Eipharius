@@ -591,6 +591,7 @@
 #include "code\game\machinery\computer\computer.dm"
 #include "code\game\machinery\computer\crew.dm"
 #include "code\game\machinery\computer\download_console.dm"
+#include "code\game\machinery\computer\escape.dm"
 #include "code\game\machinery\computer\guestpass.dm"
 #include "code\game\machinery\computer\law.dm"
 #include "code\game\machinery\computer\message.dm"

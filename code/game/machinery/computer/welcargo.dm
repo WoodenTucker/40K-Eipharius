@@ -522,6 +522,7 @@
 			return
 		if(response == "Yes")
 			transfer_personality(C)
+			src.warfare_faction = IMPERIUM
 
 /mob/living/carbon/human/kroot/proc/transfer_personality(var/client/candidate) //puts the guy in the place
 
