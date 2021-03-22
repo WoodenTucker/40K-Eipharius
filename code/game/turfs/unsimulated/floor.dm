@@ -20,7 +20,7 @@
 /turf/unsimulated/floor/shuttle_ceiling
 	icon_state = "reinforced"
 
-/turf/unsimulated/floor/slipstream
+/turf/unsimulated/floor/slipstream //these are my ghetto drop pods
 	name = "slipstream"
 	icon = 'icons/turf/space.dmi'
 	icon_state = "bluespace"
