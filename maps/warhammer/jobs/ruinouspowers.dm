@@ -678,6 +678,7 @@
 		user.decay++ //total is now 18 decay
 		visible_message("The smiling pumpkin head fills with ichor as it submurges in the vile stew! The eye balls take their place and quickly a head forms before you!")
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
+		qdel(O)
 		new /obj/item/diseasedhead(src.loc)
 	else if (istype(O, /obj/item/organ/external/leg/right/diseased))
 		if(user.decay < 18 ) //keeps people from doing this early
@@ -688,6 +689,7 @@
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		user.decay++
 		rightleg = 1
+		qdel(O)
 	else if (istype(O, /obj/item/organ/external/leg/diseased))
 		if(user.decay < 19 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
@@ -697,6 +699,7 @@
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		user.decay++
 		leftleg = 1
+		qdel(O)
 
 	else if (istype(O, /obj/item/organ/external/arm/right/diseased))
 		if(user.decay < 20 ) //keeps people from doing this early
@@ -707,6 +710,7 @@
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		user.decay++
 		rightarm = 1
+		qdel(O)
 	else if (istype(O, /obj/item/organ/external/arm/diseased))
 		if(user.decay < 21 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
@@ -716,6 +720,7 @@
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		user.decay++
 		leftarm = 1
+		qdel(O)
 	else if (istype(O, /obj/item/diseasedtorso))
 		if(user.decay < 22 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
@@ -725,24 +730,19 @@
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		user.decay++
 		torso = 1
+		qdel(O)
 	else if (istype(O, /obj/item/diseasedhead))
 		if(user.decay < 23 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
-			return
-		if(torso == 0 || leftarm == 0 || rightarm == 0 || rightleg == 0 || leftleg == 0)
-			to_chat(src, "If you see this, you're missing a key ingredient and somehow broke the chain, plz pm Wel Ard in discord or Daelso ingame")
 			return
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		visible_message("<span class='warning'>The head of the beast sinks into the ichor causing a sudden froth. A mist rises from the nganga with a piercing howl!</span>")
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		user.decay++
+		qdel(O)
 		sleep(300)
 		new /mob/living/simple_animal/hostile/abomination(src.loc)
-		torso = 0 //so people can repeat if they wanna I guess
-		rightarm = 0
-		leftarm = 0
-		leftleg = 0
-		rightleg = 0
+ //so people can repeat if they wanna I guess
 		pleasedhand = 0
 		pleasedfoot = 0
 		pleasedheart = 0

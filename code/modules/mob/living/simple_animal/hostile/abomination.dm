@@ -22,8 +22,10 @@
 	stop_automated_movement_when_pulled = 0
 	maxHealth = 5000 //lamo lets see if this is retarded
 	health = 5000
-	melee_damage_lower = 70
-	melee_damage_upper = 70
+	melee_damage_lower = 90
+	melee_damage_upper = 90
+	attacktext = list("impales", "vomited on", "cursed with a pox", "injected")
+
 
 	//aboms dont need NO ATMOS
 	min_gas = null
@@ -115,7 +117,7 @@
 		return
 	custom_emote(1, pick( list("impales [target_mob]", "vomits on [target_mob]") ) )
 
-	var/damage = rand(70,80)
+	var/damage = rand(100,130)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
