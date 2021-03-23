@@ -245,3 +245,60 @@
 	robotize("Limbs R US")
 	icon = 'icons/mob/human_races/cyberlimbs/warfare/warfare_main.dmi'
 	icon_state = "hand"
+/obj/item/organ/external/leg/diseased
+	organ_tag = BP_L_LEG
+	name = "pustulent left leg"
+	icon = 'icons/obj/nganga.dmi'
+	icon_name = "l_leg"
+	max_damage = 100
+	min_broken_damage = 50
+	w_class = ITEM_SIZE_NORMAL
+	body_part = LEG_LEFT
+	icon_position = LEFT
+	parent_organ = BP_GROIN
+	joint = "left knee"
+	amputation_point = "left hip"
+	can_stand = 1
+	has_tendon = TRUE
+	tendon_name = "cruciate ligament"
+	artery_name = "femoral artery"
+	arterial_bleed_severity = 0.75
+	gibbable = FALSE
+
+/obj/item/organ/external/leg/right/diseased
+	organ_tag = BP_R_LEG
+	name = "pustulent right leg"
+	icon = 'icons/obj/nganga.dmi'
+	icon_name = "r_leg"
+	body_part = LEG_RIGHT
+	icon_position = RIGHT
+	joint = "right knee"
+	amputation_point = "right hip"
+
+/obj/item/organ/external/arm/diseased
+	organ_tag = BP_L_ARM
+	name = "thrombolytic left arm"
+	icon = 'icons/obj/nganga.dmi'
+	icon_name = "l_arm"
+	max_damage = 50
+	min_broken_damage = 30
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+	has_tendon = TRUE
+	tendon_name = "palmaris longus tendon"
+	artery_name = "basilic vein"
+	arterial_bleed_severity = 0.75
+	gibbable = FALSE
+
+/obj/item/organ/external/arm/right/diseased
+	organ_tag = BP_R_ARM
+	name = "thrombolytic right arm"
+	icon = 'icons/obj/nganga.dmi'
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"

@@ -1147,3 +1147,18 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/genehood
+/obj/item/diseasedtorso
+	name = "fungated torso"
+	desc = "Numerous fungated lesions are bursting from just beneath the skin. This thing smells horrible!"
+	icon = 'icons/obj/nganga.dmi'
+	item_state = "torso"
+	icon_state = "torso"
+
+/obj/item/diseasedhead
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "head"
+	item_state = "head"
+	name = "macrocephalic skull"
+	desc = "This thing is enormous! You can see maggots and insects crawling between every orifice."
+	slot_flags = SLOT_BELT
+	w_class = ITEM_SIZE_NORMAL

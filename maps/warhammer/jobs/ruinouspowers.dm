@@ -143,7 +143,6 @@
 			if(6)
 				src.decay++
 				to_chat(src, "Well done my acolyte. You have taken an important step by returning this child to me. Next, you will concoct a irresistibly infectious brew to bring my children to life! To this cauldron and follow my instructions!")
-			if(7)
 
 
 
