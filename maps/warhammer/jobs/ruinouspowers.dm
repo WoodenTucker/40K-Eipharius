@@ -140,6 +140,11 @@
 			else if(!Q)
 				to_chat(src, "He requires something of me. He asked me to bring him one of his children, a rat. He asked me to kill it and place it upon his mark. He has grand designs for me, but they all start with one small step.")
 				return
+			if(6)
+				src.decay++
+				to_chat(src, "Well done my acolyte. You have taken an important step by returning this child to me. Next, you will concoct a irresistibly infectious brew to bring my children to life! To this cauldron and follow my instructions!")
+			if(7)
+
 
 
 
@@ -425,7 +430,7 @@
 			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist" && intrigue >= 1) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "tzeentch")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Mercenary") //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Mercenary") //unrelated to the above, its for merc hiring.
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
 				client.images += I
 	return
