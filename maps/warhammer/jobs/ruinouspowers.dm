@@ -140,9 +140,29 @@
 			else if(!Q)
 				to_chat(src, "He requires something of me. He asked me to bring him one of his children, a rat. He asked me to kill it and place it upon his mark. He has grand designs for me, but they all start with one small step.")
 				return
-			if(6)
-				src.decay++
-				to_chat(src, "Well done my acolyte. You have taken an important step by returning this child to me. Next, you will concoct a irresistibly infectious brew to bring my children to life! To this cauldron and follow my instructions!")
+		if(6)
+			src.decay++
+			to_chat(src, "Well done my acolyte. You have taken an important step by returning this child to me. Next, you will concoct a irresistibly infectious brew to bring my children to life! Get somewhere away from onlookers and call out to me again!")
+			return
+		if(7)
+			new /obj/structure/nganga(src.loc)
+			to_chat(src, "Use this nganga to create life! Hide it somewhere away from the prying eyes of the Inquisiton or it will surely be your downfall!")
+			src.decay++
+			return
+		if(8)
+			to_chat(src,"<span class='warning'>The nganga hungers... Feed it and it will build you a champion in His image! LEFT ARM it hisses! FEED ME!</span>" )
+			return
+		if(9)
+			to_chat(src, "<span class='warning'> Take your reward and store it! You will need it later. The nganga bubbles happily and spits out another request! Right hand! It must be made stronger! Include syringes in the mix until it is pleased!</span>")
+			return
+		if(10)
+			to_chat(src, "<span class='warning'>The arms have been formed... The nganga grows in power and blesses you with a gift!</span>")
+			add_flies(src)
+			STAT_LEVEL(end) +=1
+			STAT_LEVEL(str) +=1
+			return
+
+
 
 
 
@@ -440,3 +460,70 @@
 	AddInfectionImages()
 	return
 
+
+//this is for Nurgle abom making
+/obj/structure/nganga
+	name = "festering nganga"
+	desc = "This bubbling cauldron smells of rot and seems to hiss as you approach. It seems alive in its own way."
+	icon = 'icons/obj/nganga.dmi'
+	item_state = "nganga"
+	icon_state = "nganga"
+	density = 1
+	anchored = 0
+	add_fingerprint(usr)
+	add_fibers(usr)
+	var/leftarm = 0
+	var/rightarm = 0
+	var/leftleg = 0
+	var/rightleg = 0
+	var/torso = 0
+	var/head = 0
+	var/pleasedhand = 0
+
+/obj/structure/nganga/attackby(var/obj/item/O, var/mob/living/carbon/human/user) //These manage feedings the nganga
+	if (!(istype(O, /obj/item/)))
+		to_chat(user, "<span class='warning'>[O] is not what I asked for!</span>")
+		return 1
+	/*
+	if(user.decay < 6)
+		to_chat(user, "You wouldn't even begin to know what this is...")
+		return*/
+	else if (istype(O, /obj/item/organ/external/arm))
+		if(user.decay < 8 ) //Keeps people from doing this early
+			to_chat(usr, "Don't skip around! Feed me what I ask for!")
+			return
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		user.decay++ //total is now 9 decay
+		visible_message("The nganga bubbles happily!")
+		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
+		new /obj/item/organ/external/arm/diseased(src.loc)
+		qdel(O)
+		return
+	else if (istype(O, /obj/item/organ/external/hand/right))
+		if(user.decay < 9 )
+			to_chat(usr, "Don't skip around! Feed me what I ask for!")
+			return
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		visible_message("The nganga makes a few joyous bubbles, but you feel it needs some else...")
+		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
+		pleasedhand = 1
+		qdel(O)
+		return
+	else if (istype(O, /obj/item/reagent_containers/syringe))
+		if(pleasedhand == 0)
+			to_chat(usr, "<span class='warning'>The hand first! THE HAND FIRST!</span>")
+			return
+		if(user.decay < 9 ) //keeps people from doing this early
+			to_chat(usr, "Don't skip around! Feed me what I ask for!")
+			return
+		if(prob(33))
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+			user.decay++ //total is now 10 decay
+			visible_message("The syringes mix and slosh around the hand, they seemingly worm their way inside beneath the tendons until the hand begins to resemble that of a large syringe extending up into a shoulder joint!")
+			playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
+			qdel(O)
+			new /obj/item/organ/external/arm/right/diseased(src.loc)
+		else
+			qdel(O)
+			visible_message("The syringe is added to the mix, the nganga lets off a hiss of approval but it was not enough, more syringes!")
+			return
