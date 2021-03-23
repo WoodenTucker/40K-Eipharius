@@ -39,3 +39,30 @@
 
 /obj/item/remains/robot/attack_hand(mob/user as mob)
 	return
+
+
+/obj/effect/decal/dead
+	desc = "They look like human remains. They have a strange aura about them."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "dead1"
+	density = 0
+
+/obj/effect/decal/dead/two
+	desc = "They look like human remains. They have a strange aura about them."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "dead2"
+
+/obj/effect/decal/dead/three
+	desc = "They look like human remains. They have a strange aura about them."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "dead3"
+
+/obj/effect/decal/dead/four
+	desc = "They look like human remains. They have a strange aura about them."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "dead4"
+
+/obj/effect/decal/dead/five
+	desc = "They look like human remains. They have a strange aura about them."
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "dead5"

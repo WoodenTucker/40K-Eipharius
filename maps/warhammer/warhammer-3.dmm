@@ -377,7 +377,7 @@
 "hm" = (/obj/structure/pit,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "hn" = (/obj/structure/barbwire,/obj/machinery/light,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "ho" = (/obj/structure/iv_drip,/obj/item/reagent_containers/ivbag/blood,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
-"hp" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/effect/decal/cleanable/blood,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hp" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/effect/decal/cleanable/blood,/obj/effect/decal/dead/four,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "hq" = (/obj/structure/table/steel_reinforced,/obj/item/melee/trench_axe,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "hr" = (/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "hs" = (/obj/structure/table/steel_reinforced,/obj/item/melee/whip/abyssal,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
