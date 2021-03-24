@@ -26,6 +26,7 @@
 	melee_damage_upper = 90
 	harm_intent_damage = 90
 	attacktext = "impaled"
+	speed = -1
 
 
 	//aboms dont need NO ATMOS

@@ -22,7 +22,7 @@
 	see_in_dark = 10
 	wander = 1
 
-	speed = 2
+	speed = -2
 
 	min_gas = null
 	max_gas = null
