@@ -639,9 +639,6 @@
 		if(pleasedheart == 0)
 			to_chat(usr, "<span class='warning'>The heart first! THE HEART FIRST!</span>")
 			return
-		if(S.amount < 1)
-			to_chat(src, "You are out of logs!")
-			return
 		if(user.decay < 16 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return
@@ -651,9 +648,11 @@
 			visible_message("The wood rots and twists in the bubbling stew. The warped wood begins to form what appears to be a ribcage around the once again beating heart!")
 			playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 			S.amount-=1
+			S.update_icon()
 			new /obj/item/diseasedtorso(src.loc)
 		else
 			S.amount -=1
+			S.update_icon()
 			visible_message("The logs are added to the mix, the nganga lets off a hiss of approval but it was not enough, more wood!")
 			playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 			return
@@ -741,6 +740,7 @@
 		user.decay++
 		qdel(O)
 		sleep(300)
+		playsound(src, 'sound/effects/fornurgle.ogg', 80, 0, 4)
 		new /mob/living/simple_animal/hostile/abomination(src.loc)
  //so people can repeat if they wanna I guess
 		pleasedhand = 0
