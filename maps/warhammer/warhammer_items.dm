@@ -1006,6 +1006,7 @@ Imperial Guardsman
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 /obj/item/clothing/suit/armor/ravenguard/chaplain
@@ -1024,6 +1025,7 @@ Imperial Guardsman
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 /obj/item/clothing/suit/armor/smurfs/chaplain
@@ -1043,6 +1045,7 @@ Imperial Guardsman
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 /obj/item/clothing/head/helmet/ravenhelm
 	name = "Raven Guard Power Helm"
@@ -1055,6 +1058,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/sallyhelm
 	name = "Salamander Power Helm"
@@ -1067,6 +1071,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/chaplainhelm
 	name = "Space Marine Chaplain Helmet"
@@ -1079,6 +1084,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/smurfhelm
 	name = "Ultramarine Power Helm"
@@ -1091,6 +1097,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
@@ -1101,6 +1108,7 @@ Imperial Guardsman
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 /obj/item/clothing/suit/armor/agent2
 	name = "agent's holy armor"
