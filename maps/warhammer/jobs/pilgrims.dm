@@ -168,7 +168,7 @@ Pilgrim Fate System
 			var/obj/item/card/id/ring/disgracedmedicae/W = new
 
 			W.icon_state = "medicae_ring"
-			W.assignment = "Village Administrator"
+			W.assignment = "Medicae"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)

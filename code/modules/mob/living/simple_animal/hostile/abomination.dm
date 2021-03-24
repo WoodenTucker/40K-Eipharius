@@ -9,8 +9,8 @@
 	icon_gib = "vargo2"
 	speak = list("COME INTO MY EMBRACE!","THE LORD OF THE FLIES WELCOMES YOU!","THE MIGHT OF THE PLAGUEFATHER!",)
 	speak_emote = list("chortles", "roars")
-	emote_hear = list("rawrs","grumbles","grawls")
-	emote_see = list("stares ferociously", "stomps")
+	emote_hear = list("belches","grumbles","vomits")
+	emote_see = list("shoots ichor from his syringe", "stomps")
 	speak_chance = 1
 	turns_per_move = 5
 	see_in_dark = 6
@@ -19,14 +19,14 @@
 	response_help  = "licks"
 	response_disarm = "struggles against the mass of"
 	response_harm   = "slaps"
-	stop_automated_movement_when_pulled = 1
+	stop_automated_movement_when_pulled = 1 //lets you pull and release your new friend
 	maxHealth = 5000 //lamo lets see if this is retarded
 	health = 5000
 	melee_damage_lower = 90
 	melee_damage_upper = 90
 	harm_intent_damage = 90
 	attacktext = "impaled"
-	speed = -1
+	speed = -1 //ZOOM
 
 
 	//aboms dont need NO ATMOS
@@ -127,6 +127,7 @@
 		L.adjustBruteLoss(damage)
 		return L
 
+//putting this in place if I can figure out how to make players able to do damage as simple animals
 //Procs for grabbing players.
 /mob/living/simple_animal/hostile/abomination/proc/request_player() //reqs the player
 	for(var/mob/observer/ghost/O in GLOB.player_list)
