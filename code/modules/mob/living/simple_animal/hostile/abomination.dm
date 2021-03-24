@@ -72,11 +72,11 @@
 
 			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
 				stance = HOSTILE_STANCE_IDLE
-			if(stance_step >= 7)   //If we have been staring at a mob for 7 ticks,
+			if(stance_step >= 2)   //If we have been staring at a mob for 7 ticks,
 				stance = HOSTILE_STANCE_ATTACK
 
 		if(HOSTILE_STANCE_ATTACKING)
-			if(stance_step >= 20)	//attacks for 20 ticks, then it gets tired and needs to rest
+			if(stance_step >= 900)	//attacks for 20 ticks, then it gets tired and needs to rest
 				custom_emote(1, "is worn out and needs to rest." )
 				stance = HOSTILE_STANCE_TIRED
 				stance_step = 0
