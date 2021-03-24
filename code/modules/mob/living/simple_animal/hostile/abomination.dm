@@ -15,11 +15,11 @@
 	turns_per_move = 5
 	see_in_dark = 6
 	wander = 1
-	meat_type = /obj/item/reagent_containers/food/snacks/bearmeat
+	meat_type = null
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
-	stop_automated_movement_when_pulled = 0
+	stop_automated_movement_when_pulled = 1
 	maxHealth = 5000 //lamo lets see if this is retarded
 	health = 5000
 	melee_damage_lower = 90
@@ -35,11 +35,6 @@
 	var/stance_step = 0
 
 	faction = "Nurgle"
-
-/mob/living/simple_animal/hostile/abomination/New()
-	request_player() //lets let a ghost inside this bad boy lmao
-	mind.special_role = "Nurgle Cultist"
-
 
 /mob/living/simple_animal/hostile/abomination/Life()
 	. =..()
@@ -169,9 +164,4 @@
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "nurgle")
 				client.images += I
 	return
-
-
-
-
-
 
