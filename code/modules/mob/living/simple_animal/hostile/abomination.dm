@@ -34,7 +34,7 @@
 	minbodytemp = 0
 	var/stance_step = 0
 
-	faction = "Nurgle"
+	faction = "Nurgle" //keeps the nurgle homies safe
 
 /mob/living/simple_animal/hostile/abomination/Life()
 	. =..()
