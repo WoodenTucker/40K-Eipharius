@@ -16,9 +16,9 @@
 	see_in_dark = 6
 	wander = 1
 	meat_type = null
-	response_help  = "pets"
-	response_disarm = "gently pushes aside"
-	response_harm   = "pokes"
+	response_help  = "licks"
+	response_disarm = "struggles against the mass of"
+	response_harm   = "slaps"
 	stop_automated_movement_when_pulled = 1
 	maxHealth = 5000 //lamo lets see if this is retarded
 	health = 5000
