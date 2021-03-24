@@ -24,7 +24,8 @@
 	health = 5000
 	melee_damage_lower = 90
 	melee_damage_upper = 90
-	attacktext = list("impales", "vomited on", "cursed with a pox", "injected")
+	harm_intent_damage = 90
+	attacktext = "impaled"
 
 
 	//aboms dont need NO ATMOS

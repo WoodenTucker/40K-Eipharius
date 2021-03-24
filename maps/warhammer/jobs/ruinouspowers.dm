@@ -542,7 +542,7 @@
 		user.decay++ //total is now 9 decay
 		visible_message("The nganga bubbles happily!")
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
-		new /obj/item/organ/external/arm/diseased(src.loc)
+		new /obj/item/diseasedleftarm(src.loc)
 		qdel(O)
 		return
 	else if (istype(O, /obj/item/organ/external/hand/right))
@@ -568,7 +568,7 @@
 			visible_message("The syringes mix and slosh around the hand, they seemingly worm their way inside beneath the tendons until the hand begins to resemble that of a large syringe extending up into a shoulder joint!")
 			playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 			qdel(O)
-			new /obj/item/organ/external/arm/right/diseased(src.loc)
+			new /obj/item/diseasedrightarm(src.loc)
 		else
 			qdel(O)
 			visible_message("The syringe is added to the mix, the nganga lets off a hiss of approval but it was not enough, more syringes!")
@@ -583,7 +583,7 @@
 		visible_message("As the leg falls into the nganga, an absolutely wonderful smell wafts from the cauldron. It smells like you just walked into the bakery near your childhood home.")
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		qdel(O)
-		new /obj/item/organ/external/leg/diseased(src.loc)
+		new /obj/item/diseasedleftleg(src.loc)
 	else if(istype(O, /obj/item/reagent_containers/food/snacks/poo))
 		if(user.decay < 12 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
@@ -619,7 +619,7 @@
 			visible_message("The rat meat mixes and sloshes around the foot, the meat seems to come alive, wrappping around the human foot and turning it into something far more foul!")
 			playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 			qdel(O)
-			new /obj/item/organ/external/leg/right/diseased(src.loc)
+			new /obj/item/diseasedrightleg(src.loc)
 		else
 			qdel(O)
 			visible_message("The rat meat is added to the mix, the nganga lets off a hiss of approval but it was not enough, more meat!")
@@ -679,7 +679,7 @@
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		qdel(O)
 		new /obj/item/diseasedhead(src.loc)
-	else if (istype(O, /obj/item/organ/external/leg/right/diseased))
+	else if (istype(O, /obj/item/diseasedrightleg))
 		if(user.decay < 18 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return
@@ -689,7 +689,7 @@
 		user.decay++
 		rightleg = 1
 		qdel(O)
-	else if (istype(O, /obj/item/organ/external/leg/diseased))
+	else if (istype(O, /obj/item/diseasedleftleg))
 		if(user.decay < 19 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return
@@ -700,7 +700,7 @@
 		leftleg = 1
 		qdel(O)
 
-	else if (istype(O, /obj/item/organ/external/arm/right/diseased))
+	else if (istype(O, /obj/item/diseasedrightarm))
 		if(user.decay < 20 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return
@@ -710,7 +710,7 @@
 		user.decay++
 		rightarm = 1
 		qdel(O)
-	else if (istype(O, /obj/item/organ/external/arm/diseased))
+	else if (istype(O, /obj/item/diseasedleftarm))
 		if(user.decay < 21 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return

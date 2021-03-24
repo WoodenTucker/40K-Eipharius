@@ -1162,3 +1162,32 @@ Imperial Guardsman
 	desc = "This thing is enormous! You can see maggots and insects crawling between every orifice."
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/diseasedrightarm
+	name = "thrombolytic right arm"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "r_arm"
+	item_state = "r_arm"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/diseasedleftarm
+	name = "thrombolytic left arm"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "l_arm"
+	item_state = "l_arm"
+
+
+/obj/item/diseasedrightleg
+	name = "pustulent right leg"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "r_leg"
+	item_state = "r_leg"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/diseasedleftleg
+	name = "pustulent left leg"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "l_leg"
+	item_state = "l_leg"
+	w_class = ITEM_SIZE_NORMAL
+
