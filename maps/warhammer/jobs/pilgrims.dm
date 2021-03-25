@@ -52,7 +52,7 @@ Pilgrim Fate System
 
 	fates += pick("Merchant","Bounty Hunter","Penitent",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
-	fates += pick("Miner","Stalker","Scum") //adds a fate randomly to essentially give rng pick
+	fates += pick("Stalker","Scum") //adds a fate randomly to essentially give rng pick
 
 	mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
 
