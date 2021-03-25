@@ -95,5 +95,6 @@
 /obj/machinery/computer/evaccogitator/proc/leaving()
 	leaving = 1	//Are we already firing?
 	sleep(6000)
+	to_world("<span class='warning'><font size='4'>They've done it! The slipstream is open! Escape through quickly, it won't remain open for long!</span></font>")
 	ticker.station_slipstream_escape()
 	return
