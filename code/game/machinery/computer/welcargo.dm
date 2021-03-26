@@ -27,6 +27,7 @@
 		dat += "<B> Luxury Foods/Drinks:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];ca=1'>Cheap Amasec (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];ea=1'>Expensive Amasec (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];meat=1'>Meat Crate (25)</A><BR>"
 		dat += "<B> Materials:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];glass=1'>Stack of Glass (15)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];metal=1'>Stack of Metal (15)</A><BR>"
@@ -173,6 +174,22 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/ammo_magazine/bolt_pistol_magazine(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["meat"])
+		if(GLOB.thrones < 25) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/structure/closet/crate/meat(T.loc) //what they spawning
 			src.buying = 0
 
 

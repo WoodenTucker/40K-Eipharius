@@ -360,3 +360,19 @@ obj/structure/closet/crate
 
 /obj/structure/closet/crate/ateopoine/WillContain()
 	return list(/obj/item/reagent_containers/hypospray/autoinjector/revive = 5)
+
+/obj/structure/closet/crate/meat
+	name = "meat crate"
+	desc = "A crate with meat in it!"
+	icon_state = "freezer"
+	icon_opened = "freezeropen"
+	icon_closed = "freezer"
+
+/obj/structure/closet/crate/meat/New()
+	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
+	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
+	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
