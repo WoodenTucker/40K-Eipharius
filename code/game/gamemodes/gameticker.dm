@@ -310,7 +310,6 @@ Exterminatus
 		var/obj/effect/landmark/evac/two/Y = locate() //where dey spawning
 		new	/turf/unsimulated/floor/slipstream(Y.loc)
 
-		sleep(200)
 		to_world(SSevents.RoundEnd())
 		to_world(ticker.declare_completion())
 		sleep(200)
