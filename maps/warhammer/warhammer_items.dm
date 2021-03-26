@@ -485,7 +485,7 @@
 	item_state = "mercychainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 20
+	force = 40
 	block_chance = 20
 	sharp = TRUE
 	edge = TRUE
@@ -504,7 +504,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 25
-	block_chance = 20
+	block_chance = 40
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -521,8 +521,8 @@
 	item_state = "pcsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 30
-	block_chance = 20
+	force = 35
+	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -1003,9 +1003,10 @@ Imperial Guardsman
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 /obj/item/clothing/suit/armor/ravenguard/chaplain
@@ -1021,9 +1022,10 @@ Imperial Guardsman
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 /obj/item/clothing/suit/armor/smurfs/chaplain
@@ -1040,9 +1042,10 @@ Imperial Guardsman
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 /obj/item/clothing/head/helmet/ravenhelm
 	name = "Raven Guard Power Helm"
@@ -1055,6 +1058,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/sallyhelm
 	name = "Salamander Power Helm"
@@ -1067,6 +1071,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/chaplainhelm
 	name = "Space Marine Chaplain Helmet"
@@ -1079,6 +1084,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/smurfhelm
 	name = "Ultramarine Power Helm"
@@ -1091,6 +1097,7 @@ Imperial Guardsman
 	cold_protection = HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
@@ -1101,6 +1108,7 @@ Imperial Guardsman
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 /obj/item/clothing/suit/armor/agent2
 	name = "agent's holy armor"
@@ -1147,3 +1155,47 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/genehood
+/obj/item/diseasedtorso
+	name = "fungated torso"
+	desc = "Numerous fungated lesions are bursting from just beneath the skin. This thing smells horrible!"
+	icon = 'icons/obj/nganga.dmi'
+	item_state = "torso"
+	icon_state = "torso"
+
+/obj/item/diseasedhead
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "head"
+	item_state = "head"
+	name = "macrocephalic skull"
+	desc = "This thing is enormous! You can see maggots and insects crawling between every orifice."
+	slot_flags = SLOT_BELT
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/diseasedrightarm
+	name = "thrombolytic right arm"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "r_arm"
+	item_state = "r_arm"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/diseasedleftarm
+	name = "thrombolytic left arm"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "l_arm"
+	item_state = "l_arm"
+
+
+/obj/item/diseasedrightleg
+	name = "pustulent right leg"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "r_leg"
+	item_state = "r_leg"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/diseasedleftleg
+	name = "pustulent left leg"
+	icon = 'icons/obj/nganga.dmi'
+	icon_state = "l_leg"
+	item_state = "l_leg"
+	w_class = ITEM_SIZE_NORMAL
+

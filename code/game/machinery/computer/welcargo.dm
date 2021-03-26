@@ -504,8 +504,6 @@
 			var/obj/effect/landmark/reqspawn/T = locate() //where dey spawning
 			new /mob/living/carbon/human/kroot(T.loc) //what they spawning
 
-
-
 //Procs for grabbing players.
 /mob/living/carbon/human/kroot/proc/request_player() //reqs the player
 	for(var/mob/observer/ghost/O in GLOB.player_list)
@@ -522,6 +520,7 @@
 			return
 		if(response == "Yes")
 			transfer_personality(C)
+			src.warfare_faction = IMPERIUM
 
 /mob/living/carbon/human/kroot/proc/transfer_personality(var/client/candidate) //puts the guy in the place
 

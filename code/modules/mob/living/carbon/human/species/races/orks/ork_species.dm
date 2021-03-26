@@ -16,7 +16,7 @@
 
 /mob/living/carbon/human/Life()
 	..()
-	var/regen = 5
+	var/regen = 2
 	//waaagh_regen = 0
 	//var/healing = NO_HEAL
 	//var/bannerinview = FALSE
@@ -32,7 +32,7 @@
 			regen = 8
 			//healing = HEALING_ORGANS
 		else
-			regen = 5
+			regen = 2
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
 
@@ -80,46 +80,26 @@
 	isburied = 1
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
-	var/namelist = list("Nob")
-	var/ork_name = pick(namelist)
-
-	name = "[ork_name]"
-	real_name = "[ork_name]"
 	h_style = "Bald"
 	size_multiplier = 1.2
 	max_waaagh = 300
 	waaagh = max_waaagh
-	warfare_faction = ORKZ
 	new_species = SPECIES_ORK_NOB
 	playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 	..(new_loc, SPECIES_ORK_NOB)
 
 /mob/living/carbon/human/ork/mek/New(var/new_loc)
-	var/namelist = list("Mek-boy")
-	var/ork_name = pick(namelist)
-
-	name = "[ork_name]"
-	real_name = "[ork_name]"
 	h_style = "Bald"
-	max_waaagh = 300
+	max_waaagh = 200
 	waaagh = max_waaagh
-	warfare_faction = ORKZ
 	new_species = SPECIES_ORK_MEK
 	playsound(src, 'sound/voice/ork/workwork.ogg', 50)
 	..(new_loc, SPECIES_ORK_MEK)
 
 /mob/living/carbon/human/ork/boss/New(var/new_loc)
 	..()
-
-	var/namelist = list("Warboss")
-	var/ork_name = pick(namelist)
-
-	name = "[ork_name]"
-	real_name = "[ork_name]"
 	h_style = "Bald"
 	size_multiplier = 1.4
-	max_waaagh = 500
-	warfare_faction = ORKZ
 	waaagh = max_waaagh
 	new_species = SPECIES_ORK_BOSS
 	playsound(src, 'sound/voice/ork/warboss.ogg', 50)

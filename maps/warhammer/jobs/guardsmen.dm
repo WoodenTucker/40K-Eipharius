@@ -455,4 +455,4 @@ Begin Warhammer loadouts
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2, /obj/item/melee/classic_baton/trench_club = 1,)
+	backpack_contents = list(/obj/item/ammo_magazine/ork/shoota = 2, /obj/item/melee/classic_baton/trench_club = 1,)

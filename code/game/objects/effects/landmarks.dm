@@ -435,3 +435,10 @@ Template:
 
 /obj/effect/landmark/reqspawn
 	name = "reqspawn"
+
+//this is about to be the hackiest thing I've ever done in  my entire life and I do not care
+/obj/effect/landmark/runaway
+	name = "evac1"
+/obj/effect/landmark/evac/two
+	name = "evac2"
+
