@@ -1161,6 +1161,7 @@ Imperial Guardsman
 	icon = 'icons/obj/nganga.dmi'
 	item_state = "torso"
 	icon_state = "torso"
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedhead
 	icon = 'icons/obj/nganga.dmi'
@@ -1169,20 +1170,21 @@ Imperial Guardsman
 	name = "macrocephalic skull"
 	desc = "This thing is enormous! You can see maggots and insects crawling between every orifice."
 	slot_flags = SLOT_BELT
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedrightarm
 	name = "thrombolytic right arm"
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "r_arm"
 	item_state = "r_arm"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedleftarm
 	name = "thrombolytic left arm"
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "l_arm"
 	item_state = "l_arm"
+	w_class = ITEM_SIZE_HUGE
 
 
 /obj/item/diseasedrightleg
@@ -1190,12 +1192,12 @@ Imperial Guardsman
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "r_leg"
 	item_state = "r_leg"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedleftleg
 	name = "pustulent left leg"
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "l_leg"
 	item_state = "l_leg"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
