@@ -13,6 +13,7 @@
 	icon_state = "glass_ore"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/ironore
 	name = "iron ore"
@@ -21,6 +22,7 @@
 	icon_state = "iron"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/ironore/New()
 	icon_state = pick("iron","iron2","iron3",)
@@ -33,6 +35,7 @@
 	icon_state = "copper"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/silverore
 	name = "silver ore"
@@ -41,6 +44,7 @@
 	icon_state = "ore_silver"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/coalore
 	name = "coal"
@@ -49,6 +53,7 @@
 	icon_state = "coal"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/goldore
 	name = "gold ore"
@@ -57,6 +62,7 @@
 	icon_state = "gold"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/adamantiumore
 	name = "adamantium ore"
@@ -65,6 +71,7 @@
 	icon_state = "adamantine"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 
  /* _____                   _
@@ -83,6 +90,7 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "copper_ingot"
 	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
 
 /obj/item/silveringot
 	name = "silver ingot"
@@ -90,6 +98,7 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "silver_ingot"
 	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
 
 /obj/item/steelingot
 	name = "steel ingot"
@@ -97,6 +106,7 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "steel_ingot"
 	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
 
 /obj/item/ironingot
 	name = "iron ingot"
@@ -104,6 +114,7 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "iron_ingot"
 	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
 
 /obj/item/adamantiumingot
 	name = "adamantium ingot"
@@ -111,6 +122,7 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "adamantine_ingot"
 	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
 
 /obj/item/goldingot
 	name = "gold ingot"
@@ -118,6 +130,77 @@
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "gold_ingot"
 	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
+
+
+/*
+   _____
+  / ____|
+ | |  __  ___ _ __ ___  ___
+ | | |_ |/ _ \ '_ ` _ \/ __|
+ | |__| |  __/ | | | | \__ \
+  \_____|\___|_| |_| |_|___/
+*/
+
+/obj/item/newore/quartz
+	name = "chunk of quartz"
+	desc = "A chunk of quartz"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "quartz"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/sapphire
+	name = "chunk of sapphire"
+	desc = "A chunk of sapphire"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "sapphire"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+
+/obj/item/newore/ruby
+	name = "chunk of ruby"
+	desc = "A chunk of ruby"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "ruby"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/emerald
+	name = "chunk of emerald"
+	desc = "A chunk of emerald"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "emerald"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/topaz
+	name = "chunk of topaz"
+	desc = "A chunk of topaz"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "topaz"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/diamond
+	name = "chunk of diamond"
+	desc = "A chunk of diamond"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "diamond"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+
+
+
+
 
 
 /*          .-') _     ('-.  _   .-')      .-')
