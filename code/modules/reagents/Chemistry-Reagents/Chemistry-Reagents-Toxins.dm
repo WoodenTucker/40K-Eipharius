@@ -50,8 +50,9 @@
 /datum/reagent/toxin/blattedin
 	name = "Blattedin"
 	description = "A powerful toxin produced by those omnipresent roaches."
-	taste_description = "chicken"
+	taste_description = "grox"
 	reagent_state = REAGENT_LIQUID
+	target_organ = BP_LIVER
 	color = "#0f4800"
 	strength = 5
 

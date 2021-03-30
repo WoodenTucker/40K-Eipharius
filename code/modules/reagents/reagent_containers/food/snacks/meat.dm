@@ -5,7 +5,6 @@
 	health = 180
 	filling_color = "#ff1c1c"
 	center_of_mass = "x=16;y=14"
-	var/iscooked = 0
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 9)
@@ -36,21 +35,47 @@
 	name = "corgi meat"
 	desc = "Tastes like... well, you know."
 
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/blattedin, 10)
+		bitesize = 3
+
 /obj/item/reagent_containers/food/snacks/meat/beef
 	name = "beef slab"
 	desc = "The classic red meat."
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/blattedin, 10)
+		bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/meat/goat
 	name = "chevon slab"
 	desc = "Goat meat, to the uncultured."
 
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/blattedin, 10)
+		bitesize = 3
+
 /obj/item/reagent_containers/food/snacks/meat/grox
 	name = "slab of grox meat"
-	desc = "A delicacy across the Imperium of Man, tastes especially good when roasted over a campfire"
+	desc = "A delicacy across the Imperium of Man, tastes especially good when roasted over a campfire. Cook first!"
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/blattedin, 10)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 9)
+		bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/meat/chicken
 	name = "chicken piece"
 	desc = "It tastes like you'd expect."
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/blattedin, 10)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 9)
 
 /obj/item/reagent_containers/food/snacks/meat/roachmeat
 	name = "roach meat"
@@ -84,7 +109,7 @@
 
 
 
-/obj/item/campfire/attackby(var/obj/item/reagent_containers/food/snacks/meat/O, var/mob/user)
+/obj/item/campfire/attackby(var/obj/item/reagent_containers/food/snacks/O, var/mob/user)
 	if(O.iscooked == 1)
 		to_chat(user, "<span class='warning'>[O] has already been cooked!</span>")
 		return
@@ -98,3 +123,5 @@
 		visible_message("[O] lets off a delicious smell as it crackles over the fire.")
 		O.bitesize = 5
 		O.iscooked = 1
+		O.reagents.remove_reagent(/datum/reagent/toxin/blattedin, 10)
+		O.reagents.add_reagent(/datum/reagent/nutriment/protein, 9)

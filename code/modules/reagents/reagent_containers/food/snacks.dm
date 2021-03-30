@@ -14,6 +14,7 @@
 	var/list/nutriment_desc = list("food" = 1)
 	center_of_mass = "x=16;y=16"
 	w_class = ITEM_SIZE_SMALL
+	var/iscooked = 0
 
 /obj/item/reagent_containers/food/snacks/New()
 	..()
