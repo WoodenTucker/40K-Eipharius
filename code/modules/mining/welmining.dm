@@ -1,3 +1,5 @@
+//Mining is kinda broken and I don't feel like figuring it out so I'm gunna make my own shittier version here
+
 /turf/simulated/miningtime //wall piece
 	name = "rock"
 	icon = 'icons/turf/walls.dmi'

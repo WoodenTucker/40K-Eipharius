@@ -1,0 +1,234 @@
+ /*  ____
+  / __ \
+ | |  | |_ __ ___
+ | |  | | '__/ _ \
+ | |__| | | |  __/
+  \____/|_|  \___|
+        */
+
+/obj/item/newore/smallrock
+	name = "small rock"
+	desc = "Just that, a piece of a cave wall."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "glass_ore"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/newore/ironore
+	name = "iron ore"
+	desc = "A chunk of iron ore."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "iron"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/newore/ironore/New()
+	icon_state = pick("iron","iron2","iron3",)
+	..()
+
+/obj/item/newore/copperore
+	name = "copper ore"
+	desc = "A chunk of copper ore"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "copper"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/newore/silverore
+	name = "silver ore"
+	desc = "A chunk of silver ore"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "ore_silver"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/newore/coalore
+	name = "coal"
+	desc = "A chunk of coal"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "coal"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/newore/goldore
+	name = "gold ore"
+	desc = "SOLID GOLLLLLLD!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "gold"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/newore/adamantiumore
+	name = "adamantium ore"
+	desc = "A chunk of the rarest known mineral in the Imperium."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "adamantine"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+
+
+ /* _____                   _
+ |_   _|                 | |
+   | |  _ __   __ _  ___ | |_ ___
+   | | | '_ \ / _` |/ _ \| __/ __|
+  _| |_| | | | (_| | (_) | |_\__ \
+ |_____|_| |_|\__, |\___/ \__|___/
+               __/ |
+              |___/
+			  */
+
+/obj/item/copperingot
+	name = "copper ingot"
+	desc = "A solid bar of copper."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "copper_ingot"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/silveringot
+	name = "silver ingot"
+	desc = "A solid bar of silver."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "silver_ingot"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/steelingot
+	name = "steel ingot"
+	desc = "A solid bar of steel, strengthened by carbon!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "steel_ingot"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/ironingot
+	name = "iron ingot"
+	desc = "A solid bar of iron."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "iron_ingot"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/adamantiumingot
+	name = "adamantium ingot"
+	desc = "One of the rarest and strongest metals known to the Imperium."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "adamantine_ingot"
+	w_class = ITEM_SIZE_NORMAL
+
+/obj/item/goldingot
+	name = "gold ingot"
+	desc = "SOLID GOOOOOOOOOOOOOOLD!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "gold_ingot"
+	w_class = ITEM_SIZE_NORMAL
+
+
+/*          .-') _     ('-.  _   .-')      .-')
+         (  OO) )  _(  OO)( '.( OO )_   ( OO ).
+  ,-.-') /     '._(,------.,--.   ,--.)(_)---\_)
+  |  |OO)|'--...__)|  .---'|   `.'   | /    _ |
+  |  |  \'--.  .--'|  |    |         | \  :` `.
+  |  |(_/   |  |  (|  '--. |  |'.'|  |  '..`''.)
+ ,|  |_.'   |  |   |  .--' |  |   |  | .-._)   \
+(_|  |      |  |   |  `---.|  |   |  | \       /
+  `--'      `--'   `------'`--'   `--'  `-----'
+
+*/
+
+/obj/structure/new_ore_box
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "orebox1"
+	name = "ore box"
+	desc = "A heavy box used for storing ore."
+	density = 1
+	var/last_update = 0
+	var/list/stored_ore = list()
+
+/obj/structure/new_ore_box/attackby(obj/item/W as obj, mob/user as mob)
+	if (istype(W, /obj/item/newore/))
+		user.remove_from_mob(W)
+		src.contents += W
+	if (istype(W, /obj/item/storage))
+		var/obj/item/storage/S = W
+		S.hide_from(usr)
+		for(var/obj/item/newore/O in S.contents)
+			if(S.contents.len <= 1)
+				S.remove_from_storage(O, src, 0) //This will move the item to this item's contents
+			else
+				S.remove_from_storage(O, src, 1)
+		to_chat(user, "<span class='notice'>You empty the satchel into the box.</span>")
+
+	update_ore_count()
+
+	return
+
+/obj/structure/new_ore_box/proc/update_ore_count()
+
+	stored_ore = list()
+
+	for(var/obj/item/newore/O in contents)
+
+		if(stored_ore[O.name])
+			stored_ore[O.name]++
+		else
+			stored_ore[O.name] = 1
+
+/obj/structure/new_ore_box/examine(mob/user)
+	. = ..(user)
+
+	// Borgs can now check contents too.
+	if((!istype(user, /mob/living/carbon/human)) && (!istype(user, /mob/living/silicon/robot)))
+		return
+
+	if(!Adjacent(user)) //Can only check the contents of ore boxes if you can physically reach them.
+		return
+
+	add_fingerprint(user)
+
+	if(!contents.len)
+		to_chat(user, "It is empty.")
+		return
+
+	if(world.time > last_update + 10)
+		update_ore_count()
+		last_update = world.time
+
+	to_chat(user, "It holds:")
+	for(var/ore in stored_ore)
+		to_chat(user, "- [stored_ore[ore]] [ore]")
+	return
+
+
+/obj/structure/new_ore_box/verb/empty_box()
+	set name = "Empty Ore Box"
+	set category = "Object"
+	set src in view(1)
+
+	if(!istype(usr, /mob/living/carbon/human)) //Only living, intelligent creatures with hands can empty ore boxes.
+		to_chat(usr, "<span class='warning'>You are physically incapable of emptying the ore box.</span>")
+		return
+
+	if( usr.stat || usr.restrained() )
+		return
+
+	if(!Adjacent(usr)) //You can only empty the box if you can physically reach it
+		to_chat(usr, "You cannot reach the ore box.")
+		return
+
+	add_fingerprint(usr)
+
+	if(contents.len < 1)
+		to_chat(usr, "<span class='warning'>The ore box is empty</span>")
+		return
+
+	for (var/obj/item/newore/O in contents)
+		contents -= O
+		O.loc = src.loc
+	to_chat(usr, "<span class='notice'>You empty the ore box</span>")
+
+	return
+
+/obj/structure/new_ore_box/ex_act(severity)
+	if(severity == 1.0 || (severity < 3.0 && prob(50)))
+		for (var/obj/item/newore/O in contents)
+			O.loc = src.loc
+			O.ex_act(severity++)
+		qdel(src)
+		return
