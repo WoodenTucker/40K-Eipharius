@@ -17,7 +17,8 @@
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
-	pda_type = /obj/item/device/pda/heads/ce
+	pda_type = null
+	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
 	backpack_contents = list(/obj/item/stack/thrones/five = 1,
 		/obj/item/stack/thrones2/five = 1,
@@ -33,7 +34,8 @@
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	belt = /obj/item/storage/belt/utility/full
 	id_type = /obj/item/card/id/engineering
-	pda_type = /obj/item/device/pda/engineering
+	pda_type = null
+	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
