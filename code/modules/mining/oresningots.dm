@@ -203,7 +203,7 @@
 
 
 
-/*          .-') _     ('-.  _   .-')      .-')
+/*          .-') _   ('-.  _   .-')      .-')
          (  OO) )  _(  OO)( '.( OO )_   ( OO ).
   ,-.-') /     '._(,------.,--.   ,--.)(_)---\_)
   |  |OO)|'--...__)|  .---'|   `.'   | /    _ |
@@ -212,7 +212,6 @@
  ,|  |_.'   |  |   |  .--' |  |   |  | .-._)   \
 (_|  |      |  |   |  `---.|  |   |  | \       /
   `--'      `--'   `------'`--'   `--'  `-----'
-
 */
 
 /obj/structure/new_ore_box
@@ -315,3 +314,17 @@
 			O.ex_act(severity++)
 		qdel(src)
 		return
+
+/obj/item/storage/newore
+	name = "mining satchel"
+	desc = "This sturdy bag can be used to store and transport ores."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "satchel"
+	slot_flags = SLOT_BELT
+	max_storage_space = 200
+	max_w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
+	can_hold = list(/obj/item/newore)
+	allow_quick_gather = 1
+	allow_quick_empty = 1
+	use_to_pickup = 1
