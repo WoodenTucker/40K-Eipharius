@@ -212,6 +212,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/guardsman
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
+	pda_slot = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_hand = /obj/item/gun/energy/las/lasgun
@@ -240,6 +241,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/material/sword/commissword
 	l_hand = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
+	pda_slot = null
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -265,6 +267,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/device/flashlight/lantern
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
+	pda_slot = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -290,6 +293,7 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/melee/baton
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	l_hand = /obj/item/device/flashlight/lantern

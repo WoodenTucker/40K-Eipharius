@@ -10,7 +10,8 @@
 	name = OUTFIT_JOB_NAME("Bar Servitor")
 	uniform = /obj/item/clothing/under/rank/bartender
 	id_type = /obj/item/card/id/civilian/bartender
-	pda_type = /obj/item/device/pda/bar
+	pda_type = null
+	pda_slot = null
 	head = /obj/item/clothing/head/servitorhead
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
@@ -23,7 +24,8 @@
 	suit = /obj/item/clothing/suit/guardchef
 	head = /obj/item/clothing/head/chefhat
 	id_type = /obj/item/card/id/civilian/chef
-	pda_type = /obj/item/device/pda/chef
+	pda_type = null
+	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -43,7 +45,8 @@
 	gloves = /obj/item/clothing/gloves/thick/botany
 	r_pocket = /obj/item/device/analyzer/plant_analyzer
 	id_type = /obj/item/card/id/civilian/botanist
-	pda_type = /obj/item/device/pda/botanist
+	pda_type = null
+	pda_slot = null
 	l_ear = null
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -72,7 +75,8 @@
 	name = OUTFIT_JOB_NAME("Janitor Servitor")
 	uniform = /obj/item/clothing/under/rank/janitor
 	id_type = /obj/item/card/id/civilian/janitor
-	pda_type = /obj/item/device/pda/janitor
+	pda_type = null
+	pda_slot = null
 	head = /obj/item/clothing/head/servitorhead/janitor
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
@@ -83,7 +87,8 @@
 	name = OUTFIT_JOB_NAME("Record Keeper")
 	uniform = /obj/item/clothing/under/suit_jacket/red
 	id_type = /obj/item/card/id/civilian/librarian
-	pda_type = /obj/item/device/pda/librarian
+	pda_type = null
+	pda_slot = null
 
 /decl/hierarchy/outfit/job/internal_affairs_agent
 	name = OUTFIT_JOB_NAME("principal agent")
@@ -95,7 +100,8 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	id_type = /obj/item/card/id/inquisition/principal_agent
 	back = /obj/item/storage/backpack/satchel/warfare
-	pda_type = /obj/item/device/pda/lawyer
+	pda_type = null
+	pda_slot = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	head = /obj/item/clothing/head/inqhelm
 	mask = /obj/item/clothing/mask/gas/security/agent
@@ -109,7 +115,8 @@
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain
-	pda_type = /obj/item/device/pda/chaplain
+	pda_type = null
+	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -131,7 +138,8 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	id_type = /obj/item/card/id/inquisition/principal_agent
-	pda_type = /obj/item/device/pda/lawyer
+	pda_type = null
+	pda_slot = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -151,6 +159,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_hand = /obj/item/shovel
 	shoes = /obj/item/clothing/shoes/child_shoes
+	pda_type = null
+	pda_slot = null
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,

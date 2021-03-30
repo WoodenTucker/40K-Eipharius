@@ -88,7 +88,7 @@
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
