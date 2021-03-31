@@ -357,6 +357,10 @@
 
 /obj/structure/sign/alienbooba
 	icon_state = "booba"
+
+/obj/structure/sign/minesign
+	desc = "Here be the mine!"
+	icon_state = "mine"
 /obj/structure/sign/science_2
 	name = "\improper RESEARCH"
 	desc = "A sign labelling an area where research is performed."

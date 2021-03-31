@@ -69,14 +69,14 @@
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
-/obj/item/device/holyoils/attack_self(usr)
-	to_chat(usr,"<span class='warning'>You feel more nubile!</span>")
-
 /obj/item/device/holyoils/attack(mob/living/carbon/C, mob/living/carbon/human/user)
 	if(istype(C))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		visible_message("<span class='notice'>[C] is gently lathered in the holy oils of the adeptus mechanicus by [user]. The machine spirits will surely smile upon them now!</span>")
 	..()
+
+/obj/item/device/holyoils/attack_self(usr)
+	to_chat(usr,"<span class='warning'>You feel more nubile!</span>")
 
 /obj/item/device/holyoils/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
