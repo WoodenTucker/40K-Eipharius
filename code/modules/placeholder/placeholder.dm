@@ -116,3 +116,18 @@
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
+	else if (istype(O,	/obj/item/newore/coalore))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 3 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/copperore))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 2 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+

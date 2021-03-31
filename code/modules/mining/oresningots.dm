@@ -328,3 +328,52 @@
 	allow_quick_gather = 1
 	allow_quick_empty = 1
 	use_to_pickup = 1
+
+/obj/structure/forge
+	name = "forge"
+	desc = "An imported forge from a far-off feudal world. Used to smelt ore into ingots!"
+	icon = 'icons/obj/stationobjs.dmi'
+	icon_state = "forge"
+	density = 1
+	anchored = 1
+	var/coalfed = 0
+
+/obj/structure/forge/attackby(var/obj/item/newore/O, var/mob/living/carbon/human/user)
+	if (istype(O,	/obj/item/newore/coalore))
+		visible_message("[user] feeds coal into the fire!")
+		src.coalfed = 1 //lets not heat everyones forge
+		return
+
+	if(coalfed == 0)
+		to_chat(src, "The forge requires coal to burn hot enough to smelt ore!")
+		return
+	else if (istype(O,	/obj/item/newore/copperore))
+		visible_message("[user] feeds [O] into the fire!")
+		sleep(60) //10 seconds
+		new /obj/item/copperingot(src)
+		qdel(O)
+		src.coalfed = 0
+		return
+	else if (istype(O,	/obj/item/newore/silverore))
+		visible_message("[user] feeds [O] into the fire!")
+		sleep(60) //10 seconds
+		new /obj/item/silveringot(src)
+		qdel(O)
+		src.coalfed = 0
+		return
+	else if (istype(O,	/obj/item/newore/goldore))
+		visible_message("[user] feeds [O] into the fire!")
+		sleep(60) //10 seconds
+		new /obj/item/goldingot(src)
+		qdel(O)
+		src.coalfed = 0
+		return
+	else if (istype(O,	/obj/item/newore/ironore))
+		visible_message("[user] feeds [O] into the fire!")
+		sleep(60) //10 seconds
+		new /obj/item/ironingot(src)
+		qdel(O)
+		src.coalfed = 0
+		return
+
+

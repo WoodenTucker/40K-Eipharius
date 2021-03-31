@@ -52,7 +52,7 @@ Pilgrim Fate System
 
 	fates += pick("Merchant","Bounty Hunter","Penitent",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
-	fates += pick("Stalker","Scum") //adds a fate randomly to essentially give rng pick
+	fates += pick("Stalker","Scum","Miner",) //adds a fate randomly to essentially give rng pick
 
 	mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
 
@@ -117,7 +117,7 @@ Pilgrim Fate System
 		if("Miner")
 			U.add_stats(rand(10,13),rand(8,12),rand(10,12),8)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
 			equip_to_slot_or_del(new /obj/item/pickaxe, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/miner, slot_wear_suit)
