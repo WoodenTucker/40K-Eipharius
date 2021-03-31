@@ -338,6 +338,7 @@
 	anchored = 1
 	var/coalfed = 0
 	var/ironingot = 0
+	var/smelting = 0 //to stop duperinos
 
 /obj/structure/forge/attackby(var/obj/item/newore/O, var/mob/living/carbon/human/user)
 	if (!(istype(O,	/obj/item/newore)))
@@ -347,48 +348,62 @@
 		visible_message("[user] feeds coal into the fire!")
 		src.coalfed = 1 //lets not heat everyones forge
 		playsound(src, 'sound/effects/adding_coal.ogg', 100, 1, 1)
+		qdel(O)
 		return
 	if(coalfed == 0)
-		to_chat(src, "The forge requires coal to burn hot enough to smelt ore!")
+		visible_message("The forge requires coal to burn hot enough to smelt ore!")
+		return
+	if(smelting == 1)
+		visible_message("There is already an ore being smelted!")
 		return
 	else if (istype(O,	/obj/item/newore/copperore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
-		sleep(60) //10 seconds
-		new /obj/item/copperingot(src)
 		qdel(O)
-		src.coalfed = 0
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/copperingot(src.loc)
+		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/silverore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
-		sleep(60) //10 seconds
-		new /obj/item/silveringot(src)
 		qdel(O)
-		src.coalfed = 0
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/silveringot(src.loc)
+		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/goldore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
-		sleep(60) //10 seconds
-		new /obj/item/goldingot(src)
 		qdel(O)
-		src.coalfed = 0
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/goldingot(src.loc)
+		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/ironore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
-		sleep(60) //10 seconds
-		new /obj/item/ironingot(src)
 		qdel(O)
-		src.coalfed = 0
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/ironingot(src.loc)
+		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/adamantiumore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
-		sleep(60) //10 seconds
-		new /obj/item/adamantiumingot(src)
 		qdel(O)
-		src.coalfed = 0
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/adamantiumingot(src.loc)
+		src.coalfed -= 0.5
 		return
 

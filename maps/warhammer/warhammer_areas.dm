@@ -774,6 +774,7 @@ Area basic template
 /area/cadiaoutpost/oa/maintenance
 	name = "Maintenance"
 	icon_state = "maintenance"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/maintenance/south
 	name = "south"
