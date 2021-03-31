@@ -39,6 +39,9 @@
 /obj/structure/cargo_pad/bottom_right
 	icon_state = "bottom_right"
 
+//this desparately needs to be rewritten into a switch statement but im lazy and copy/pasting is easier (its now spiraled out of control AHHHHHHHHHHHH)
+//Yandere-dev is now my patron saint
+
 /obj/structure/cargo_pad/attackby(var/obj/item/O, var/mob/user) //lets do some exporting!
 	if (!(istype(O, /obj/item/)))
 		to_chat(user, "<span class='warning'>[O] cannot be exported!</span>")

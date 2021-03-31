@@ -1,5 +1,7 @@
 //since we need cargo and shuttles dont work, we gonna do this in true IS12 fashion and remake it in matt/randys image.
 //The menu isnt pretty but its functional and no one fukking wants me designing UI, im gunna use this set up for reinforcement buying as well.
+//this desparately needs to be rewritten into a switch statement but im lazy and copy/pasting is easier (its now spiraled out of control AHHHHHHHHHHHHH)
+//Yandere-dev is now my patron saint
 
 /obj/machinery/computer/planetarytrade  //this is the cargo machine
 	name = "interplanetary trade console"

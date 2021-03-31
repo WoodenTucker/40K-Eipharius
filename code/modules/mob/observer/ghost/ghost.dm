@@ -525,7 +525,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				return FALSE
 
 	if(isburied == 0)
-		to_chat(src, "Your body hasn't been buried yet!")
+		to_chat(src, "Your body hasn't been buried yet! If you think it has, re-enter your corpse, ghost and try to respawn again!")
 		return FALSE
 
 	if(isburied == 1)
@@ -576,7 +576,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 /mob/observer/ghost/verb/respawn()
 	set name = "Respawn"
 	set category = "OOC"
-
 
 	if (!(config.abandon_allowed))
 		to_chat(usr, "<span class='notice'>Respawn is disabled.</span>")
