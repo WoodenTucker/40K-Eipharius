@@ -161,35 +161,35 @@
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
-	else if (istype(O,	/obj/item/copperingot))
+	else if (istype(O,	/obj/item/ingots/copperingot))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 8 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
-	else if (istype(O,	/obj/item/ironingot))
+	else if (istype(O,	/obj/item/ingots/ironingot))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 12 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
-	else if (istype(O,	/obj/item/goldingot))
+	else if (istype(O,	/obj/item/ingots/goldingot))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 25 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
-	else if (istype(O,	/obj/item/silveringot))
+	else if (istype(O,	/obj/item/ingots/silveringot))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 18 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return
-	else if (istype(O,	/obj/item/adamantiumingot))
+	else if (istype(O,	/obj/item/ingots/adamantiumingot))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 120 //adds crowns to da counter

@@ -84,7 +84,7 @@
               |___/
 			  */
 
-/obj/item/copperingot
+/obj/item/ingots/copperingot
 	name = "copper ingot"
 	desc = "A solid bar of copper."
 	icon = 'icons/obj/mining.dmi'
@@ -92,7 +92,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
-/obj/item/silveringot
+/obj/item/ingots/silveringot
 	name = "silver ingot"
 	desc = "A solid bar of silver."
 	icon = 'icons/obj/mining.dmi'
@@ -100,7 +100,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
-/obj/item/steelingot
+/obj/item/ingots/steelingot
 	name = "steel ingot"
 	desc = "A solid bar of steel, strengthened by carbon!"
 	icon = 'icons/obj/mining.dmi'
@@ -108,7 +108,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
-/obj/item/ironingot
+/obj/item/ingots/ironingot
 	name = "iron ingot"
 	desc = "A solid bar of iron."
 	icon = 'icons/obj/mining.dmi'
@@ -116,7 +116,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
-/obj/item/adamantiumingot
+/obj/item/ingots/adamantiumingot
 	name = "adamantium ingot"
 	desc = "One of the rarest and strongest metals known to the Imperium."
 	icon = 'icons/obj/mining.dmi'
@@ -124,7 +124,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
-/obj/item/goldingot
+/obj/item/ingots/goldingot
 	name = "gold ingot"
 	desc = "SOLID GOOOOOOOOOOOOOOLD!"
 	icon = 'icons/obj/mining.dmi'
@@ -363,7 +363,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/copperingot(src.loc)
+		new /obj/item/ingots/copperingot(src.loc)
 		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/silverore))
@@ -373,7 +373,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/silveringot(src.loc)
+		new /obj/item/ingots/silveringot(src.loc)
 		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/goldore))
@@ -383,7 +383,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/goldingot(src.loc)
+		new /obj/item/ingots/goldingot(src.loc)
 		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/ironore))
@@ -393,7 +393,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/ironingot(src.loc)
+		new /obj/item/ingots/ironingot(src.loc)
 		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/adamantiumore))
@@ -403,7 +403,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/adamantiumingot(src.loc)
+		new /obj/item/ingots/adamantiumingot(src.loc)
 		src.coalfed -= 0.5
 		return
 
