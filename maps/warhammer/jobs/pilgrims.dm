@@ -119,7 +119,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
-			equip_to_slot_or_del(new /obj/item/pickaxe, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/pickaxe/newpick, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/miner, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
