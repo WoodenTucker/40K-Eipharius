@@ -91,10 +91,9 @@
 	icon_state = "copper_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	var/ismarked = 0
-	var/mg08 = 0
-	var/rubtheoils = 0
-	var/oilammo = 0
+	var/ismarked = 0 //check if they chose a item yet
+	var/rubtheoils = 0 //ready for oils?
+	var/whatwemaking = 0 //used for switch statements in ingotcrafting.dm
 
 /obj/item/ingots/silveringot
 	name = "silver ingot"
