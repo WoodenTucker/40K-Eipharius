@@ -106,6 +106,7 @@
 
 	add_language("Robot Talk", 1)
 	add_language(LANGUAGE_EAL, 1)
+	add_language(LANGUAGE_LOW_GOTHIC, 1)
 
 	wires = new(src)
 
