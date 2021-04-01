@@ -376,3 +376,14 @@ obj/structure/closet/crate
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+
+/obj/structure/closet/crate/miningcrate
+	name = "mining crate"
+	desc = "A crate with mining equipment inside!"
+	icon_state = "crate"
+	icon_opened = "crateopen"
+	icon_closed = "crate"
+
+/obj/structure/closet/crate/miningcrate/New()
+	new /obj/item/pickaxe/newpick(src)
+	new /obj/item/storage/newore(src)
