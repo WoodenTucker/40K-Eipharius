@@ -357,7 +357,7 @@
 		return
 	if (istype(O,	/obj/item/newore/coalore))
 		visible_message("[user] feeds coal into the fire!")
-		src.coalfed = 1 //lets not heat everyones forge
+		src.coalfed += 1 //lets not heat everyones forge
 		playsound(src, 'sound/effects/adding_coal.ogg', 100, 1, 1)
 		qdel(O)
 		return

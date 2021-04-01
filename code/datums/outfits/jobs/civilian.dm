@@ -100,6 +100,8 @@
 	glasses = /obj/item/clothing/glasses/sunglasses/big
 	id_type = /obj/item/card/id/inquisition/principal_agent
 	back = /obj/item/storage/backpack/satchel/warfare
+	l_pocket = /obj/item/storage/box/ifak
+	belt = /obj/item/device/flashlight/lantern
 	pda_type = null
 	pda_slot = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -119,6 +121,8 @@
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
+	l_pocket = /obj/item/storage/box/ifak
+	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
 	suit = /obj/item/clothing/suit/ministorumrobes
 	l_hand = /obj/item/staff/ministorumstaff
