@@ -220,7 +220,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Bolt Rifle Magazine",) //lists all possible crafting choices
+		var/craftingchoices = list("Bolt Rifle Magazine", "Lascarbine",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -232,6 +232,13 @@
 				src.whatwemaking = 1
 				src.ismarked = 1
 				src.name = "Silver Ingot (Bolt Rifle Magazine)"
+
+			if("Lascarbine")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Las-Carbine.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 2
+				src.ismarked = 1
+				src.name = "Silver Ingot (Las-Carbine)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -251,6 +258,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(2)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed las-carbine! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Silver Ingot (Carved las-carbine)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -264,6 +282,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/ammo_magazine/bolt_rifle_magazine(src.loc)
+				qdel(src)
+				return
+			if(2)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(src.loc)
 				qdel(src)
 				return
 
