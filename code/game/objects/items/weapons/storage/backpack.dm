@@ -288,6 +288,60 @@
 			usr.put_in_hands(new /obj/item/device/holyoils(usr))
 			src.is_toggled = 2
 
+	verb/togglechisel()
+		set name = "Reveal Auto-Chisel"
+		set category = "Tools"
+		set src in usr
+		if(!usr.canmove || usr.stat || usr.restrained())
+			return
+		if(!can_toggle)
+			to_chat(usr,"This tool cannot be toggled!")
+			return
+		if(src.is_toggled == 2)
+			if(istype(usr.l_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
+				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
+				qdel(usr.l_hand)
+				update_icon()
+			if(istype(usr.r_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
+				qdel(usr.r_hand)
+				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
+			src.icon_state = initial(icon_state)
+			to_chat(usr,"You put away the auto-chisel.")
+			src.is_toggled = 1
+		else
+			to_chat(usr,"You pull out the auto-chisel.")
+			usr.put_in_hands(new /obj/item/device/autochisel(usr))
+			src.is_toggled = 2
+
+	verb/togglecutter()
+		set name = "Fire up Laser-Cutter"
+		set category = "Tools"
+		set src in usr
+		if(!usr.canmove || usr.stat || usr.restrained())
+			return
+		if(!can_toggle)
+			to_chat(usr,"This tool cannot be toggled!")
+			return
+		if(src.is_toggled == 2)
+			if(istype(usr.l_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
+				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
+				qdel(usr.l_hand)
+				update_icon()
+			if(istype(usr.r_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
+				qdel(usr.r_hand)
+				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
+			src.icon_state = initial(icon_state)
+			to_chat(usr,"You put away the laser cutter.")
+			src.is_toggled = 1
+		else
+			to_chat(usr,"You pull out the laser cutter.")
+			usr.put_in_hands(new /obj/item/device/lasercutter(usr))
+			src.is_toggled = 2
+
+
+/obj/item/device/lasercutter
+
+
 /obj/item/storage/backpack/satchel/warfare/chestrig
 	name = "Chestrig"
 	desc = "Holds ammo and other goodies. But not a lot of it."
