@@ -267,8 +267,66 @@
 				qdel(src)
 				return
 
+/*
+   _____       _     _
+  / ____|     | |   | |
+ | |  __  ___ | | __| |
+ | | |_ |/ _ \| |/ _` |
+ | |__| | (_) | | (_| |
+  \_____|\___/|_|\__,_|
+
+*/
+
+/obj/item/ingots/goldingot/attackby(obj/item/device/W as obj, mob/user as mob)
+	if(isAutochisel(W))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+
+		var/craftingchoices = list("Golden Ring",) //lists all possible crafting choices
 
 
+		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
+
+		switch(craftchoice)
+			if("Golden Ring")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Golden Ring.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 1
+				src.ismarked = 1
+				src.name = "Gold Ingot (Golden Ring)"
+
+	if(isLasercutter(W))
+		if(ismarked == 0)
+			visible_message("Use your auto-chisel first!")
+			return
+
+		switch(whatwemaking)
+
+			if(1)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Golden Ring! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Gold Ingot (Carved Golden Ring)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
+
+	if(isHolyoils(W))
+		if(rubtheoils == 0)
+			visible_message("Use your laser cutter first!")
+			return
+
+		switch(whatwemaking)
+
+			if(1)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/card/id/ring/goldring(src.loc)
+				qdel(src)
+				return
 
 
 /*            _                             _   _

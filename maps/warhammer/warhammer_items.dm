@@ -908,6 +908,11 @@ Imperial Guardsman
 	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
+/obj/item/card/id/ring/goldring
+	name = "golden ring"
+	icon_state = "goldring"
+	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
+
 /obj/item/card/id/ring/disgracedmedicae
 	icon_state = "medicae_ring"
 	access = list(access_clinic)
