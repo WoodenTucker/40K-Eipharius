@@ -84,6 +84,13 @@
               |___/
 			  */
 
+/obj/item/ingots
+	name = "ingot"
+	desc = "if you see this tell wel ard plz"
+	var/ismarked = 0 //check if they chose a item yet
+	var/rubtheoils = 0 //ready for oils?
+	var/whatwemaking = 0 //used for switch statements in ingotcrafting.dm
+
 /obj/item/ingots/copperingot
 	name = "copper ingot"
 	desc = "A solid bar of copper."
@@ -91,9 +98,7 @@
 	icon_state = "copper_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	var/ismarked = 0 //check if they chose a item yet
-	var/rubtheoils = 0 //ready for oils?
-	var/whatwemaking = 0 //used for switch statements in ingotcrafting.dm
+
 
 /obj/item/ingots/silveringot
 	name = "silver ingot"
@@ -103,6 +108,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
+
 /obj/item/ingots/steelingot
 	name = "steel ingot"
 	desc = "A solid bar of steel, strengthened by carbon!"
@@ -111,6 +117,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 
+
 /obj/item/ingots/ironingot
 	name = "iron ingot"
 	desc = "A solid bar of iron."
@@ -118,6 +125,7 @@
 	icon_state = "iron_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
+
 
 /obj/item/ingots/adamantiumingot
 	name = "adamantium ingot"
