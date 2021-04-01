@@ -672,7 +672,7 @@
 
 /obj/item/reagent_containers/food/snacks/bearmeat
 	name = "bear meat"
-	desc = "A very manly slab of meat."
+	desc = "A very manly slab of meat, don't eat it raw!"
 	icon_state = "bearmeat"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=10"
@@ -685,7 +685,7 @@
 
 /obj/item/reagent_containers/food/snacks/shaframeat
 	name = "shafra meat"
-	desc = "A surprisingly tasty cut of lean meat"
+	desc = "A surprisingly tasty cut of lean meat, don't eat it raw!"
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"

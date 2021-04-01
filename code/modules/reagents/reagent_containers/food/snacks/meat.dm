@@ -33,7 +33,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/corgi
 	name = "corgi meat"
-	desc = "Tastes like... well, you know."
+	desc = "Tastes like... well, you know. Cook first!"
 
 	New()
 		..()
@@ -42,7 +42,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/beef
 	name = "beef slab"
-	desc = "The classic red meat."
+	desc = "The classic red meat. Cook first!"
 
 	New()
 		..()
@@ -51,7 +51,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/goat
 	name = "chevon slab"
-	desc = "Goat meat, to the uncultured."
+	desc = "Goat meat, to the uncultured. Cook first!"
 
 	New()
 		..()
@@ -70,7 +70,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/chicken
 	name = "chicken piece"
-	desc = "It tastes like you'd expect."
+	desc = "It tastes like you'd expect. Cook it first!"
 
 	New()
 		..()
@@ -125,3 +125,4 @@
 		O.iscooked = 1
 		O.reagents.remove_reagent(/datum/reagent/toxin/blattedin, 10)
 		O.reagents.add_reagent(/datum/reagent/nutriment/protein, 9)
+		O.desc = "Roasted and safe to eat, smells delicious!"
