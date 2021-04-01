@@ -91,7 +91,10 @@
 	icon_state = "copper_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	var/list/whatwemaking = new
+	var/ismarked = 0
+	var/mg08 = 0
+	var/rubtheoils = 0
+	var/oilammo = 0
 
 /obj/item/ingots/silveringot
 	name = "silver ingot"
