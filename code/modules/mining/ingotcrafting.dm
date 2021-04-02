@@ -55,9 +55,6 @@
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return
-		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
-			return
 
 		switch(whatwemaking)
 
@@ -162,9 +159,6 @@
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return
-		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
-			return
 
 		switch(whatwemaking)
 
@@ -250,9 +244,6 @@
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return
-		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
-			return
 
 		switch(whatwemaking)
 
@@ -331,9 +322,6 @@
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return
-		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
-			return
 
 		switch(whatwemaking)
 
@@ -394,9 +382,6 @@
 	if(isLasercutter(W))
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
-			return
-		if(src.rubtheoils == 1)
-			visible_message("It's been carved! Use your holy oils!")
 			return
 
 		switch(whatwemaking)
