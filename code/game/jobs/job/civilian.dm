@@ -96,7 +96,7 @@
 
 //Cargo
 /datum/job/qm
-	title = "Munitorum Priest"
+	title = "Munitorum Tribunus"
 	department = "Supply"
 	department_flag = CIV
 	total_positions = 1
@@ -129,7 +129,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>The others may not know it, but you're the most powerful man on the planet. You control what comes and goes as well as which palms are greased and which are left wanting.</font></b></span>")
 
 /datum/job/cargo_tech
-	title = "Munitorum Adept"
+	title = "Munitorum Menial"
 	department = "Supply"
 	department_flag = CIV
 	total_positions = 1
