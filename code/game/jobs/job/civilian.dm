@@ -111,6 +111,7 @@
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
+	latejoin_at_spawnpoints = 1
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -134,6 +135,7 @@
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
+	latejoin_at_spawnpoints = 1
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
 	supervisors = "the Munitorum Priest, the Administrator and the Seneschal"

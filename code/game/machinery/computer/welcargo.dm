@@ -7,7 +7,7 @@
 	name = "interplanetary trade console"
 	desc = "A highly complex console used for interplanetary trade."
 	icon = 'icons/obj/planetarytrade.dmi'
-	icon_state = "on2"
+	icon_state = "active"
 	density = 1
 	anchored = 1
 	bound_height = 64
