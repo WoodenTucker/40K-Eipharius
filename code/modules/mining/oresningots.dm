@@ -418,3 +418,105 @@
 		src.coalfed -= 0.5
 		return
 
+
+//Gem washer
+/obj/structure/gemwasher
+	icon = 'icons/obj/old_computers.dmi'
+	icon_state = "cargo_machine"
+	name = "rock cleaner"
+	desc = "A machine used to clean rocks and search for gems."
+	density = 1
+	var/last_update = 0
+	var/list/stored_ore = list()
+
+/obj/structure/gemwasher/attackby(obj/item/W as obj, mob/user as mob)
+	if (istype(W, /obj/item/newore/smallrock))
+		user.remove_from_mob(W)
+		src.contents += W
+	if (istype(W, /obj/item/storage))
+		var/obj/item/storage/S = W
+		S.hide_from(usr)
+		for(var/obj/item/newore/smallrock/O in S.contents)
+			if(S.contents.len <= 1)
+				S.remove_from_storage(O, src, 0) //This will move the item to this item's contents
+			else
+				S.remove_from_storage(O, src, 1)
+		to_chat(user, "<span class='notice'>You empty the satchel into the box.</span>")
+
+	update_ore_count()
+
+	return
+
+/obj/structure/gemwasher/proc/update_ore_count()
+
+	stored_ore = list()
+
+	for(var/obj/item/newore/smallrock/O in contents)
+
+		if(stored_ore[O.name])
+			stored_ore[O.name]++
+		else
+			stored_ore[O.name] = 1
+
+/obj/structure/gemwasher/examine(mob/user)
+	. = ..(user)
+
+	// Borgs can now check contents too.
+	if((!istype(user, /mob/living/carbon/human)) && (!istype(user, /mob/living/silicon/robot)))
+		return
+
+	if(!Adjacent(user)) //Can only check the contents of ore boxes if you can physically reach them.
+		return
+
+	add_fingerprint(user)
+
+	if(!contents.len)
+		to_chat(user, "It is empty.")
+		return
+
+	if(world.time > last_update + 10)
+		update_ore_count()
+		last_update = world.time
+
+	to_chat(user, "It holds:")
+	for(var/ore in stored_ore)
+		to_chat(user, "- [stored_ore[ore]] [ore]")
+	return
+
+
+/obj/structure/gemwasher/verb/empty_box()
+	set name = "Empty Rock Cleaner"
+	set category = "Object"
+	set src in view(1)
+
+	if(!istype(usr, /mob/living/carbon/human)) //Only living, intelligent creatures with hands can empty ore boxes.
+		to_chat(usr, "<span class='warning'>You are physically incapable of emptying the gem washer.</span>")
+		return
+
+	if( usr.stat || usr.restrained() )
+		return
+
+	if(!Adjacent(usr)) //You can only empty the box if you can physically reach it
+		to_chat(usr, "You cannot reach the gem washer.")
+		return
+
+	add_fingerprint(usr)
+
+	if(contents.len < 1)
+		to_chat(usr, "<span class='warning'>The gem washer is empty</span>")
+		return
+
+	for (var/obj/item/newore/smallrock/O in contents)
+		contents -= O
+		O.loc = src.loc
+	to_chat(usr, "<span class='notice'>You empty the gem washer</span>")
+
+	return
+
+/obj/structure/gemwasher/ex_act(severity)
+	if(severity == 1.0 || (severity < 3.0 && prob(50)))
+		for (var/obj/item/newore/smallrock/O in contents)
+			O.loc = src.loc
+			O.ex_act(severity++)
+		qdel(src)
+		return
