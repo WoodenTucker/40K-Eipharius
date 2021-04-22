@@ -426,6 +426,7 @@
 	name = "rock cleaner"
 	desc = "A machine used to clean rocks and search for gems."
 	density = 1
+	anchored = 1
 	var/last_update = 0
 	var/list/stored_ore = list()
 
@@ -510,6 +511,52 @@
 		contents -= O
 		O.loc = src.loc
 	to_chat(usr, "<span class='notice'>You empty the gem washer</span>")
+
+	return
+
+/obj/structure/gemwasher/verb/clean_rocks()
+	set name = "Run Rock Cleaner"
+	set category = "Object"
+	set src in view(1)
+
+	if(!istype(usr, /mob/living/carbon/human)) //Only living, intelligent creatures with hands can empty ore boxes.
+		to_chat(usr, "<span class='warning'>You are physically incapable of activating the gem washer.</span>")
+		return
+
+	if( usr.stat || usr.restrained() )
+		return
+
+	if(!Adjacent(usr)) //You can only empty the box if you can physically reach it
+		to_chat(usr, "You cannot reach the gem washer.")
+		return
+
+	add_fingerprint(usr)
+
+	if(contents.len < 1)
+		to_chat(usr, "<span class='warning'>The gem washer is empty</span>")
+		return
+
+	for (var/obj/item/newore/smallrock/O in contents)
+		if(prob(10))
+			contents.len -= 1
+			new /obj/item/newore/topaz(src.loc)
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+
+		else if(prob(5))
+			contents.len -= 1
+			new /obj/item/newore/sapphire(src.loc)
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+
+		else if(prob(25))
+			contents.len -= 1
+			new /obj/item/newore/quartz(src.loc)
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+
+		else
+			contents.len -= 1
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			return
+
 
 	return
 
