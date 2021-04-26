@@ -541,20 +541,27 @@
 			contents.len -= 1
 			new /obj/item/newore/topaz(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
+			return
 
 		else if(prob(5))
 			contents.len -= 1
 			new /obj/item/newore/sapphire(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
+			return
 
 		else if(prob(25))
 			contents.len -= 1
 			new /obj/item/newore/quartz(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
+			return
 
 		else
 			contents.len -= 1
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
 			return
 
 
