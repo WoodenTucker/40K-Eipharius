@@ -138,8 +138,8 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels)
-	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels)
+	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics,)
+	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 	equip(var/mob/living/carbon/human/H)
@@ -148,7 +148,7 @@
 		H.add_skills(rand(0,5),rand(0,5),rand(6,10),rand(3,6),10)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis, sometimes known as a Magos Biologis. You perform genetic experiments and perfect any impurities found in genetic code. You answer to the Magos firstly and the Sister Hospitaller second.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis, sometimes known as a Magos Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"

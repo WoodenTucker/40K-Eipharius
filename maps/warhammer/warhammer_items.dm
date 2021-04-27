@@ -894,7 +894,7 @@ Imperial Guardsman
 
 /obj/item/card/id/dog_tag/skitarii
 	icon_state = "tagred"
-	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical)
+	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical, access_robotics,)
 
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
