@@ -1664,6 +1664,7 @@
 #include "code\modules\mob\living\carbon\human\species\races\orks\orks.dm"
 #include "code\modules\mob\living\carbon\human\species\station\children.dm"
 #include "code\modules\mob\living\carbon\human\species\station\monkey.dm"
+#include "code\modules\mob\living\carbon\human\species\station\skitarii.dm"
 #include "code\modules\mob\living\carbon\human\species\station\station.dm"
 #include "code\modules\mob\living\carbon\xenobiological\death.dm"
 #include "code\modules\mob\living\carbon\xenobiological\examine.dm"

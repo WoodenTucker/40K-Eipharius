@@ -153,7 +153,11 @@
   \_____|\___|_| |_| |_|___/
 */
 
-/obj/item/newore/quartz
+/obj/item/newore/gems
+	name = "gem"
+	desc = "If you see this somethings wrong..."
+	var/gemtype = 0
+/obj/item/newore/gems/quartz
 	name = "chunk of quartz"
 	desc = "A chunk of quartz"
 	icon = 'icons/obj/mining.dmi'
@@ -161,8 +165,27 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	gemtype = 1
 
-/obj/item/newore/sapphire
+/obj/item/newore/gems/quartz/cut
+	name = "cut quartz"
+	desc = "A finely cut quartz"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "quartz_cut"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/quartz/fail
+	name = "damaged quartz"
+	desc = "The carver of this quartz messed up!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "quartz_fail"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/sapphire
 	name = "chunk of sapphire"
 	desc = "A chunk of sapphire"
 	icon = 'icons/obj/mining.dmi'
@@ -170,9 +193,29 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	gemtype = 2
+
+/obj/item/newore/gems/sapphire/cut
+	name = "cut sapphire"
+	desc = "A finely cut sapphire"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "sapphire_cut"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/sapphire/fail
+	name = "damaged sapphire"
+	desc = "The carver of this sapphire messed up!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "sapphire_fail"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 
-/obj/item/newore/ruby
+
+/obj/item/newore/gems/ruby
 	name = "chunk of ruby"
 	desc = "A chunk of ruby"
 	icon = 'icons/obj/mining.dmi'
@@ -180,8 +223,28 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	gemtype = 3
 
-/obj/item/newore/emerald
+/obj/item/newore/gems/ruby/cut
+	name = "cut ruby"
+	desc = "A finely cut ruby"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "ruby_cut"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/ruby/fail
+	name = "damaged ruby"
+	desc = "The carver of this ruby messed up!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "ruby_fail"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+
+/obj/item/newore/gems/emerald
 	name = "chunk of emerald"
 	desc = "A chunk of emerald"
 	icon = 'icons/obj/mining.dmi'
@@ -189,8 +252,27 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	gemtype = 4
 
-/obj/item/newore/topaz
+/obj/item/newore/gems/emerald/cut
+	name = "cut emerald"
+	desc = "A finely cut emerald"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "emerald_cut"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/emerald/fail
+	name = "damaged emerald"
+	desc = "The carver of this emerald messed up!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "emerald_fail"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/topaz
 	name = "chunk of topaz"
 	desc = "A chunk of topaz"
 	icon = 'icons/obj/mining.dmi'
@@ -198,8 +280,26 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	gemtype = 5
+/obj/item/newore/gems/topaz/cut
+	name = "cut topaz"
+	desc = "A finely cut topaz"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "topaz_cut"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
-/obj/item/newore/diamond
+/obj/item/newore/gems/topaz/fail
+	name = "damaged topaz"
+	desc = "The carver of this topaz messed up!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "topaz_fail"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
+
+/obj/item/newore/gems/diamond
 	name = "chunk of diamond"
 	desc = "A chunk of diamond"
 	icon = 'icons/obj/mining.dmi'
@@ -207,12 +307,25 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	gemtype = 6
 
+/obj/item/newore/gems/diamond/cut
+	name = "cut diamond"
+	desc = "A finely cut diamond"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "diamond_cut"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
-
-
-
-
+/obj/item/newore/gems/diamond/fail
+	name = "damaged diamond"
+	desc = "The carver of this diamond messed up!"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "diamond_fail"
+	randpixel = 8
+	w_class = ITEM_SIZE_SMALL
+	drop_sound = 'sound/items/bone_drop.ogg'
 
 /*          .-') _   ('-.  _   .-')      .-')
          (  OO) )  _(  OO)( '.( OO )_   ( OO ).
@@ -539,25 +652,42 @@
 	for (var/obj/item/newore/smallrock/O in contents)
 		if(prob(10))
 			contents.len -= 1
-			new /obj/item/newore/topaz(src.loc)
+			new /obj/item/newore/gems/topaz(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
 
 		else if(prob(5))
 			contents.len -= 1
-			new /obj/item/newore/sapphire(src.loc)
+			new /obj/item/newore/gems/sapphire(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
 
 		else if(prob(25))
 			contents.len -= 1
-			new /obj/item/newore/quartz(src.loc)
+			new /obj/item/newore/gems/quartz(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
-
+		else if(prob(5))
+			contents.len -= 1
+			new /obj/item/newore/gems/ruby(src.loc)
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
+			return
+		else if(prob(5))
+			contents.len -= 1
+			new /obj/item/newore/gems/emerald(src.loc)
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
+			return
+		else if(prob(1))
+			contents.len -= 1
+			new /obj/item/newore/gems/diamond(src.loc)
+			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
+			clean_rocks()
+			return
 		else
 			contents.len -= 1
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
@@ -574,3 +704,102 @@
 			O.ex_act(severity++)
 		qdel(src)
 		return
+
+/*
+  ___  ____  _  _     ___  _  _  ____  ____  __  __ _   ___
+ / __)(  __)( \/ )   / __)/ )( \(_  _)(_  _)(  )(  ( \ / __)
+( (_ \ ) _) / \/ \  ( (__ ) \/ (  )(    )(   )( /    /( (_ \
+ \___/(____)\_)(_/   \___)\____/ (__)  (__) (__)\_)__) \___/
+*/
+
+/obj/item/newore/gems/attackby(obj/item/device/W as obj, mob/user as mob)
+	if(!isAutochisel(W))
+		to_chat(user, "Use an auto-chisel to try and carve out the gem!")
+		return
+	if(isAutochisel(W))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+
+		switch(gemtype)
+
+			if(1)
+				if(prob(50))
+					new /obj/item/newore/gems/quartz/cut(src.loc)
+					to_chat(user, "[user] successfully cuts the gem!")
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/quartz/fail(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					to_chat(user, "[user] slips and damages the gem!")
+					qdel(src)
+					return
+			if(2)
+				if(prob(50))
+					to_chat(user, "[user] successfully cuts the gem!")
+					new /obj/item/newore/gems/sapphire/cut(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/sapphire/fail(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					to_chat(user, "[user] slips and damages the gem!")
+					qdel(src)
+					return
+			if(3)
+				if(prob(50))
+					to_chat(user, "[user] successfully cuts the gem!")
+					new /obj/item/newore/gems/ruby/cut(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/ruby/fail(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					to_chat(user, "[user] slips and damages the gem!")
+					qdel(src)
+					return
+
+			if(4)
+				if(prob(50))
+					to_chat(user, "[user] successfully cuts the gem!")
+					new /obj/item/newore/gems/emerald/cut(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/emerald/fail(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					to_chat(user, "[user] slips and damages the gem!")
+					qdel(src)
+					return
+
+			if(5)
+				if(prob(50))
+					to_chat(user, "[user] successfully cuts the gem!")
+					new /obj/item/newore/gems/topaz/cut(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/topaz/fail(src.loc)
+					to_chat(user, "[user] slips and damages the gem!")
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+			if(6)
+				if(prob(50))
+					to_chat(user, "[user] successfully cuts the gem!")
+					new /obj/item/newore/gems/diamond/cut(src.loc)
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/diamond/fail(src.loc)
+					to_chat(user, "[user] slips and damages the gem!")
+					playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+					qdel(src)
+					return
+
+

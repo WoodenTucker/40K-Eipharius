@@ -40,7 +40,8 @@
 	icon_state = "bottom_right"
 
 //this desparately needs to be rewritten into a switch statement but im lazy and copy/pasting is easier (its now spiraled out of control AHHHHHHHHHHHH)
-//Yandere-dev is now my patron saint
+//Yandere-dev is now my patron saint, I am in too deep and I am trying to keep up above in my head instead of going under
+//my professors were right this is why you plan a system before you write it fuck
 
 /obj/structure/cargo_pad/attackby(var/obj/item/O, var/mob/user) //lets do some exporting!
 	if (!(istype(O, /obj/item/)))
@@ -200,6 +201,48 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		qdel(O) //deletes ring
 		GLOB.thrones += 30 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/gems/diamond/cut))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 30 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/gems/sapphire/cut))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 15 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/gems/ruby/cut))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 15 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/gems/topaz/cut))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 10 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/gems/quartz/cut))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 8 //adds crowns to da counter
+		visible_message("[usr] packages the [O] and loads it into the teleporter.")
+		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+		return
+	else if (istype(O,	/obj/item/newore/gems/emerald/cut))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+		qdel(O) //deletes ring
+		GLOB.thrones += 15 //adds crowns to da counter
 		visible_message("[usr] packages the [O] and loads it into the teleporter.")
 		playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 		return

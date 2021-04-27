@@ -1492,7 +1492,7 @@
 "CJ" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/stone,/area/cadiaoutpost/oa/villageinside)
 "CK" = (/obj/machinery/door/unpowered/administratum,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/villageinside)
 "CL" = (/turf/simulated/floor/stone,/area/cadiaoutpost/oa/villageinside)
-"CM" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/turf/metal/five,/obj/structure/table/woodentable{icon_state = "fancy"},/obj/item/newore/ruby,/obj/item/newore/sapphire,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/vault)
+"CM" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/turf/metal/five,/obj/structure/table/woodentable{icon_state = "fancy"},/obj/item/newore/gems/ruby,/obj/item/newore/gems/sapphire,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/vault)
 "CN" = (/obj/structure/flora/tree/snowy,/turf/unsimulated/miningtime,/area/exoplanet/snow)
 "CO" = (/turf/unsimulated/miningtime,/area/cadiaoutpost/oa/theforest)
 "CP" = (/obj/effect/decal/cleanable/dirt,/obj/structure/forge,/turf/simulated/floor/tiled/dark{icon_state = "steel_dirty"},/area/cadiaoutpost/oa/villageinside)
