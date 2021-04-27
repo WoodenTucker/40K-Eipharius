@@ -128,9 +128,8 @@
 	title = "Biologis"
 	department = "Medical"
 	department_flag = MED|SCI|ENG
-
 	total_positions = 1
-	spawn_positions = 1 //not ready yet
+	spawn_positions = 1
 	minimal_player_age = 7
 	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
@@ -138,8 +137,8 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics,)
-	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics)
+	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine, access_engine_equip,)
+	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine_equip, access_engine)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 	equip(var/mob/living/carbon/human/H)
