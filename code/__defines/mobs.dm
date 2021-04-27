@@ -288,6 +288,7 @@
 #define SPECIES_ORK_BOSS "Warboss"
 #define SPECIES_KROOT "Kroot"
 #define SPECIES_TAU "Tau"
+#define SPECIES_SKITARII "Skitarii"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1

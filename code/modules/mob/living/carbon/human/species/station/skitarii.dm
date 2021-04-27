@@ -20,6 +20,11 @@
 		/datum/unarmed_attack/bite
 		)
 
+/mob/living/carbon/human
+	var/new_skitarii = SPECIES_SKITARII
+
+/mob/living/carbon/human/skitarii
+	gender = MALE
 
 /datum/species/human/skitarii/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//Random age doesn't quite matter I suppose
@@ -43,6 +48,7 @@
 	warfare_faction = IMPERIUM
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii)
 	outfit.equip(src)
+	request_player()
 
 	hand = 0//Make sure one of their hands is active.
 	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet)//Give them a weapon.
@@ -50,8 +56,6 @@
 
 /mob/living/carbon/human/skitarii/New(var/new_loc)
 	..(new_loc, "Skitarii")
-
-
 
 
 //Procs for grabbing players into our skit boy
@@ -65,7 +69,7 @@
 /mob/living/carbon/human/skitarii/proc/question(var/client/C) //asks the questions
 	spawn(0)
 		if(!C)	return
-		var/response = alert(C, "A Skitarii unit has been manufacted and needs a player. Are you interested?", "Skitarii", "Yes", "No",)
+		var/response = alert(C, "A Skitarii unit has been manufactured and needs a player. Are you interested?", "Skitarii", "Yes", "No",)
 		if(!C || ckey)
 			return
 		if(response == "Yes")
