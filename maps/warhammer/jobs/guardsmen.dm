@@ -463,8 +463,9 @@ Begin Warhammer loadouts
 
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii
-	uniform = /obj/item/clothing/under/rank/kroot
-	shoes = /obj/item/clothing/shoes/krootfeet
+	uniform = /obj/item/clothing/under/rank/skitarii
+	suit = /obj/item/clothing/suit/storage/hooded/skitarri
+	shoes = /obj/item/clothing/shoes/skitshoes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	l_ear = /obj/item/device/radio/headset/red_team/all

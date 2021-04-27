@@ -149,3 +149,10 @@
 	icon_state = "krootboot"
 	item_state = "krootboot"
 	canremove = 0
+
+/obj/item/clothing/shoes/skitshoes //walking sounds only play with shoes and I was losing my mind not having them
+	name = "skitarri feet"
+	desc = "Augmented for speed and power"
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	canremove = 0

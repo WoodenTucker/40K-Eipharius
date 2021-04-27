@@ -10,6 +10,15 @@
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	pixel_offset_y = -4
+	inherent_verbs = list(
+	/mob/living/carbon/human/skitarii/proc/giveskitstats,
+		)
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
 
 
 /datum/species/human/skitarii/handle_post_spawn(var/mob/living/carbon/human/H)
@@ -32,7 +41,7 @@
 	. = ..()
 	fully_replace_character_name(random_skitarii_name(src.gender))
 	warfare_faction = IMPERIUM
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii)
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.
@@ -73,3 +82,28 @@
 	if(src.mind)
 		src.mind.assigned_role = "syndicate"
 		sleep (2)
+
+/mob/living/carbon/human/skitarii/proc/giveskitstats()
+	set name = "Run startup diagnostics"
+	set category = "Skitarii"
+	set desc = "Gives Skitarii stats since I can't seem to do it any other way in this clown world."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.update_eyes() //should fix grey vision
+	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+	client?.color = null
+
+	var/obj/item/card/id/dog_tag/skitarii/W = new
+
+	W.icon_state = "tagred"
+	W.assignment = "Skitarii"
+	W.registered_name = real_name
+	W.update_label()
+	equip_to_slot_or_del(W, slot_wear_id)

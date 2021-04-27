@@ -892,6 +892,10 @@ Imperial Guardsman
 	icon_state = "tagred"
 	access = list(access_kroot)
 
+/obj/item/card/id/dog_tag/skitarii
+	icon_state = "tagred"
+	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical)
+
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
 	access = list(access_kroot)
@@ -1136,6 +1140,19 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
+
+/obj/item/clothing/suit/storage/hooded/skitarri
+	name = "skitarri bodyplate and robes"
+	desc = "The beautifully designed body of a skitarii warrior and the holy robes that adorn him."
+	icon_state = "skitsuit"
+	item_state = "skitsuit"
+	canremove = 0
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 45, bomb = 30, bio = 30, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/skithood
 
 /obj/item/clothing/suit/storage/hooded/miner
 	name = "mining robes"
