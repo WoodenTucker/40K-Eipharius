@@ -81,6 +81,14 @@ proc/random_kroot_name(gender)
 	else
 		return capitalize(pick(krootnames)) + " " + "the Loyal"
 
+proc/random_skitarii_name(gender)
+	var/skitariinames = list("Sy-gex","Tyr","Tyba","Dorox","Xixos","Delpha","Zyto-Neumann","Chu","Dak",)
+	var/skitarrinum = rand(1,1000)
+	if(gender==FEMALE)
+		return capitalize(pick(skitariinames)) + " " + "[skitarrinum]"
+	else
+		return capitalize(pick(skitariinames)) + " "  + "[skitarrinum]"
+
 proc/random_ork_name(gender)
 	var/orknames = list("Bruzgrod", "Drugzag", "Klawgasha", "Warshredda", "Domechoppah", "Gravesmashah", "Krookacka", "Ugtazak", "Wildgasha", "Killgashah", "Bigrippa", "Domesplittah", "Orkamongus", "Barbcooka", "Krookkrushah", "Madwakkah", "Gatgroz" )
 	if(gender==FEMALE)
