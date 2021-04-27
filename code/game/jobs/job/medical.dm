@@ -125,12 +125,12 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous healing tincures and salves so beloved by the Ordos Hospitaller. Keep the outpost stocked and maybe sell a little something on the side if you're willing to brave the Inquisition.</font></b></span>")
 
 /datum/job/geneticist
-	title = "Genetor"
+	title = "Biologis"
 	department = "Medical"
-	department_flag = MED|SCI
+	department_flag = MED|SCI|ENG
 
-	total_positions = 0
-	spawn_positions = 0 //not ready yet
+	total_positions = 1
+	spawn_positions = 1 //not ready yet
 	minimal_player_age = 7
 	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
@@ -144,16 +144,11 @@
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(6,11), rand(8,11), rand(8,11), rand(12,14))
-		H.add_skills(3,3,rand(2,4),0,rand(2,4))
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.add_stats(rand(6,14), rand(8,14), rand(10,13), rand(15,20))
+		H.add_skills(rand(0,5),rand(0,5),rand(6,10),rand(3,6),10)
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Genetor, sometimes known as a Magos Biologis. You perform genetic experiments and perfect any impurities found in genetic code. You answer to the Magos firstly and the Sister Hospitaller second.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis, sometimes known as a Magos Biologis. You perform genetic experiments and perfect any impurities found in genetic code. You answer to the Magos firstly and the Sister Hospitaller second.</font></b></span>")
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"
