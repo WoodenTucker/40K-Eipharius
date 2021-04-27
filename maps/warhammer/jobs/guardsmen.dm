@@ -460,3 +460,17 @@ Begin Warhammer loadouts
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/ork/shoota = 2, /obj/item/melee/classic_baton/trench_club = 1,)
+
+//Skitarii
+/decl/hierarchy/outfit/job/skitarii
+	uniform = /obj/item/clothing/under/rank/kroot
+	shoes = /obj/item/clothing/shoes/krootfeet
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
+	l_ear = /obj/item/device/radio/headset/red_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
