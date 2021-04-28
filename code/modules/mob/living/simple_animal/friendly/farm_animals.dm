@@ -361,3 +361,29 @@ var/global/chicken_count = 0
 			qdel(src)
 	else
 		return PROCESS_KILL
+
+
+/mob/living/simple_animal/vatgrown
+	name = "Vat-grown human"
+	desc = "Shipped from off-world and marked for experimentation, they have already been lobotomized."
+	icon_state = "vatgrown"
+	icon_living = "vatgrown"
+	icon_dead = "vatgrown_dead"
+	speak = list("...")
+	speak_emote = list("mumbles")
+	emote_hear = list("mumbles")
+	emote_see = list("stares","drools")
+	speak_chance = 0.5
+	turns_per_move = 1
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
+	meat_amount = 4
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "kicks"
+	attacktext = "kicked"
+	health = 60
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
+	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GRILLE
+	mob_size = MOB_MEDIUM

@@ -387,3 +387,13 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/miningcrate/New()
 	new /obj/item/pickaxe/newpick(src)
 	new /obj/item/storage/newore(src)
+
+/obj/structure/closet/crate/vatgrownboy
+	name = "vat-grown human (MARKED FOR EXPERIMENTATION)"
+	desc = "This coffin on wheels contains a vat-grown human marked for experimentation."
+	icon_state = "miningcar"
+	icon_opened = "miningcaropen"
+	icon_closed = "miningcar"
+
+/obj/structure/closet/crate/vatgrownboy/New()
+	new /mob/living/simple_animal/vatgrown(src)

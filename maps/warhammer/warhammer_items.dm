@@ -1222,4 +1222,3 @@ Imperial Guardsman
 	icon_state = "l_leg"
 	item_state = "l_leg"
 	w_class = ITEM_SIZE_HUGE
-
