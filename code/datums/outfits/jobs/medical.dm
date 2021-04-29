@@ -113,7 +113,7 @@
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/biologis
 	backpack_contents = list(
