@@ -43,7 +43,8 @@
 	belt = /obj/item/gun/projectile/talon
 	shoes = /obj/item/clothing/shoes/commandboots
 	id_type = /obj/item/card/id/silver
-	pda_type = /obj/item/device/pda/heads/hop
+	pda_type = null
+	pda_slot = null
 	backpack_contents = list(/obj/item/storage/box/ids = 1,
 	/obj/item/ammo_magazine/c45m = 2,
 	 /obj/item/reagent_containers/food/snacks/warfare/rat = 1,
