@@ -82,6 +82,12 @@
 
 #define isScrewdriver(A) istype(A, /obj/item/screwdriver)
 
+#define isLasercutter(A) istype(A, /obj/item/device/lasercutter)
+
+#define isAutochisel(A) istype(A, /obj/item/device/autochisel)
+
+#define isHolyoils(A) istype(A, /obj/item/device/holyoils)
+
 #define isMultitool(A) istype(A, /obj/item/device/multitool)
 
 #define isCrowbar(A) istype(A, /obj/item/crowbar)

@@ -360,3 +360,40 @@ obj/structure/closet/crate
 
 /obj/structure/closet/crate/ateopoine/WillContain()
 	return list(/obj/item/reagent_containers/hypospray/autoinjector/revive = 5)
+
+/obj/structure/closet/crate/meat
+	name = "meat crate"
+	desc = "A crate with meat in it!"
+	icon_state = "freezer"
+	icon_opened = "freezeropen"
+	icon_closed = "freezer"
+
+/obj/structure/closet/crate/meat/New()
+	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
+	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
+	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
+
+/obj/structure/closet/crate/miningcrate
+	name = "mining crate"
+	desc = "A crate with mining equipment inside!"
+	icon_state = "crate"
+	icon_opened = "crateopen"
+	icon_closed = "crate"
+
+/obj/structure/closet/crate/miningcrate/New()
+	new /obj/item/pickaxe/newpick(src)
+	new /obj/item/storage/newore(src)
+
+/obj/structure/closet/crate/vatgrownboy
+	name = "vat-grown human (MARKED FOR EXPERIMENTATION)"
+	desc = "This coffin on wheels contains a vat-grown human marked for experimentation."
+	icon_state = "miningcar"
+	icon_opened = "miningcaropen"
+	icon_closed = "miningcar"
+
+/obj/structure/closet/crate/vatgrownboy/New()
+	new /mob/living/simple_animal/vatgrown(src)

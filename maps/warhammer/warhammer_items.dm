@@ -892,6 +892,10 @@ Imperial Guardsman
 	icon_state = "tagred"
 	access = list(access_kroot)
 
+/obj/item/card/id/dog_tag/skitarii
+	icon_state = "tagred"
+	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical, access_robotics,)
+
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
 	access = list(access_kroot)
@@ -907,6 +911,11 @@ Imperial Guardsman
 	icon_state = "admin_ring"
 	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
+
+/obj/item/card/id/ring/goldring
+	name = "golden ring"
+	icon_state = "goldring"
+	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
 
 /obj/item/card/id/ring/disgracedmedicae
 	icon_state = "medicae_ring"
@@ -1132,6 +1141,19 @@ Imperial Guardsman
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
 
+/obj/item/clothing/suit/storage/hooded/skitarri
+	name = "skitarri bodyplate and robes"
+	desc = "The beautifully designed body of a skitarii warrior and the holy robes that adorn him."
+	icon_state = "skitsuit"
+	item_state = "skitsuit"
+	canremove = 0
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 45, bomb = 30, bio = 30, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/skithood
+
 /obj/item/clothing/suit/storage/hooded/miner
 	name = "mining robes"
 	desc = "Black mining robes."
@@ -1161,6 +1183,7 @@ Imperial Guardsman
 	icon = 'icons/obj/nganga.dmi'
 	item_state = "torso"
 	icon_state = "torso"
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedhead
 	icon = 'icons/obj/nganga.dmi'
@@ -1169,20 +1192,21 @@ Imperial Guardsman
 	name = "macrocephalic skull"
 	desc = "This thing is enormous! You can see maggots and insects crawling between every orifice."
 	slot_flags = SLOT_BELT
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedrightarm
 	name = "thrombolytic right arm"
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "r_arm"
 	item_state = "r_arm"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedleftarm
 	name = "thrombolytic left arm"
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "l_arm"
 	item_state = "l_arm"
+	w_class = ITEM_SIZE_HUGE
 
 
 /obj/item/diseasedrightleg
@@ -1190,12 +1214,53 @@ Imperial Guardsman
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "r_leg"
 	item_state = "r_leg"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/diseasedleftleg
 	name = "pustulent left leg"
 	icon = 'icons/obj/nganga.dmi'
 	icon_state = "l_leg"
 	item_state = "l_leg"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 
+/obj/item/minidread
+	name = "mini-dreadnought"
+	desc = "A miniature action figure that looks like a dreadnought. With sound effects!"
+	icon = 'icons/obj/items.dmi'
+	icon_state = "mini_dread"
+	item_state = "mini_dread"
+	w_class = ITEM_SIZE_SMALL
+	var/soundeffects = 0
+
+/obj/item/minidread/attack_self(mob/user as mob)
+
+	src.add_fingerprint(user)
+
+	user.setClickCooldown(50) //no spam plz
+
+	soundeffects = rand(1,3) //picks a toy
+
+	if(src.soundeffects == 1)
+		playsound(src, 'sound/effects/roar.ogg', 80, 1, 1)
+		soundeffects = 0
+		return
+
+	if(src.soundeffects == 2)
+		playsound(src, 'sound/effects/dreadshoot.ogg', 80, 1, 1)
+		soundeffects = 0
+		return
+
+	if(src.soundeffects == 3)
+		playsound(src, 'sound/effects/dreadvoice.ogg', 80, 1, 1)
+		soundeffects = 0
+		return
+
+
+//Skitarii stuff
+/obj/item/skitariiplating
+	name = "skitarii plating"
+	desc = "Freshly forged skitarii plating, resistant to las-rounds and blunt strikes."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "plate"
+	item_state = "plate"
+	w_class = ITEM_SIZE_NORMAL

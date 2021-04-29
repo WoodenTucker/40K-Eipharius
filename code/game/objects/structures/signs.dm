@@ -310,6 +310,12 @@
 /obj/structure/sign/wantedwritten
 	icon_state = "wantedwritten"
 
+/obj/structure/sign/tradedepot
+	name = "Trade Depot Sign"
+	desc = "This sign designates this building as an Imperial Trade Depot."
+	icon_state = "tradedepot"
+
+
 /obj/structure/sign/wantedruined
 	icon_state = "boardruined"
 
@@ -351,6 +357,10 @@
 
 /obj/structure/sign/alienbooba
 	icon_state = "booba"
+
+/obj/structure/sign/minesign
+	desc = "Here be the mine!"
+	icon_state = "mine"
 /obj/structure/sign/science_2
 	name = "\improper RESEARCH"
 	desc = "A sign labelling an area where research is performed."

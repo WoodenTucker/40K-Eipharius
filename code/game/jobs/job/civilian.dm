@@ -96,7 +96,7 @@
 
 //Cargo
 /datum/job/qm
-	title = "Munitorum Priest"
+	title = "Munitorum Tribunus"
 	department = "Supply"
 	department_flag = CIV
 	total_positions = 1
@@ -106,11 +106,12 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
+	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station,)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
+	latejoin_at_spawnpoints = 1
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -129,11 +130,12 @@
 		to_chat(H, "<span class='notice'><b><font size=3>The others may not know it, but you're the most powerful man on the planet. You control what comes and goes as well as which palms are greased and which are left wanting.</font></b></span>")
 
 /datum/job/cargo_tech
-	title = "Munitorum Adept"
+	title = "Munitorum Menial"
 	department = "Supply"
 	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
+	latejoin_at_spawnpoints = 1
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
 	supervisors = "the Munitorum Priest, the Administrator and the Seneschal"

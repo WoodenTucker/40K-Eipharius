@@ -212,6 +212,10 @@
 	opacity = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_hatch
 
+/obj/machinery/door/airlock/hatch/chapel
+	name = "Chapel Office"
+	req_access = access_chapel_office
+
 /obj/machinery/door/airlock/hatch/simiel
 	icon = 'icons/obj/doors/Doorhatchele.dmi'
 	explosion_resistance = 20

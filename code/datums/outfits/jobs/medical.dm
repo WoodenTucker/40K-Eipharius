@@ -88,7 +88,7 @@
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -113,9 +113,9 @@
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/warfare/biologis
 	backpack_contents = list(
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,

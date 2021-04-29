@@ -1,11 +1,13 @@
 //since we need cargo and shuttles dont work, we gonna do this in true IS12 fashion and remake it in matt/randys image.
 //The menu isnt pretty but its functional and no one fukking wants me designing UI, im gunna use this set up for reinforcement buying as well.
+//this desparately needs to be rewritten into a switch statement but im lazy and copy/pasting is easier (its now spiraled out of control AHHHHHHHHHHHHH)
+//Yandere-dev is now my patron saint
 
 /obj/machinery/computer/planetarytrade  //this is the cargo machine
 	name = "interplanetary trade console"
 	desc = "A highly complex console used for interplanetary trade."
 	icon = 'icons/obj/planetarytrade.dmi'
-	icon_state = "on2"
+	icon_state = "active"
 	density = 1
 	anchored = 1
 	bound_height = 64
@@ -24,15 +26,22 @@
 		dat += "<B> Medical Supplies:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];mb=1'>Medical Belt (20)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];ac=1'>Atepoine Crate (50)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];vatboy=1'>Vat-Grown Human (100)</A><BR>"
 		dat += "<B> Luxury Foods/Drinks:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];ca=1'>Cheap Amasec (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];ea=1'>Expensive Amasec (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];meat=1'>Meat Crate (25)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];lho=1'>Pack of Lho (10)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];lighter=1'>Lighter (3)</A><BR>"
 		dat += "<B> Materials:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];glass=1'>Stack of Glass (15)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];metal=1'>Stack of Metal (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];cloth=1'>Stack of Cloth (20)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];miningcrate=1'>Mining Crate (15)</A><BR>"
 		dat += "<B>Weapons:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];bolter=1'>Bolt Pistol (25)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];bolterammo=1'>Bolt Pistol Magazine (5)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];frag=1'>Frag Grenade (10)</A><BR>"
 		dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
 		user << browse(dat, "window=scroll")
 		onclose(user, "scroll")
@@ -173,6 +182,118 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/ammo_magazine/bolt_pistol_magazine(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["meat"])
+		if(GLOB.thrones < 25) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/structure/closet/crate/meat(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["lho"])
+		if(GLOB.thrones < 10) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 10 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/storage/fancy/cigarettes/dromedaryco(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["lighter"])
+		if(GLOB.thrones < 3) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 3 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/flame/lighter/zippo(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["miningcrate"])
+		if(GLOB.thrones < 15) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 15 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/structure/closet/crate/miningcrate(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["vatboy"])
+		if(GLOB.thrones < 100) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 100 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/structure/closet/crate/vatgrownboy(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["cloth"])
+		if(GLOB.thrones < 20) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 20 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/stack/material/cloth/fifty(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["frag"])
+		if(GLOB.thrones < 10) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 10 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/grenade/frag/warfare(T.loc) //what they spawning
 			src.buying = 0
 
 

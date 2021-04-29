@@ -125,12 +125,11 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous healing tincures and salves so beloved by the Ordos Hospitaller. Keep the outpost stocked and maybe sell a little something on the side if you're willing to brave the Inquisition.</font></b></span>")
 
 /datum/job/geneticist
-	title = "Genetor"
+	title = "Biologis"
 	department = "Medical"
-	department_flag = MED|SCI
-
-	total_positions = 0
-	spawn_positions = 0 //not ready yet
+	department_flag = MED|SCI|ENG
+	total_positions = 1
+	spawn_positions = 1
 	minimal_player_age = 7
 	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
@@ -138,22 +137,17 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels)
-	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels)
+	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine, access_engine_equip,)
+	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine_equip, access_engine)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(6,11), rand(8,11), rand(8,11), rand(12,14))
-		H.add_skills(3,3,rand(2,4),0,rand(2,4))
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.add_stats(rand(6,14), rand(8,14), rand(10,13), rand(15,20))
+		H.add_skills(rand(0,5),rand(0,5),rand(6,10),rand(3,6),10)
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Genetor, sometimes known as a Magos Biologis. You perform genetic experiments and perfect any impurities found in genetic code. You answer to the Magos firstly and the Sister Hospitaller second.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis, sometimes known as a Magos Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"

@@ -588,7 +588,7 @@
 		if(user.decay < 12 ) //keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return
-		if(prob(25))
+		if(prob(40))
 			user.decay++ //total is now 13
 			playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 			to_chat(usr, "The nganga bubbles with a renewed fury, you've done it!")

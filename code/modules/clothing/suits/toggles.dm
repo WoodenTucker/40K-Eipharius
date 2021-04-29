@@ -176,3 +176,13 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/head/skithood
+	name = "skitarii hood"
+	desc = "A blood red hood with embroidered with the Adeptus Mechanicus' logo."
+	icon_state = "skithood"
+	item_state = "skithood"
+	body_parts_covered = HEAD
+	min_cold_protection_temperature = T0C - 30
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR

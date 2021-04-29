@@ -311,7 +311,10 @@
 	icon_state = "sheet-cloth"
 	default_type = "cloth"
 	icon = 'icons/obj/items.dmi'
-
+/obj/item/stack/material/cloth/ten
+	amount = 10
+/obj/item/stack/material/cloth/fifty
+	amount = 50
 /obj/item/stack/material/cardboard
 	name = "cardboard"
 	icon_state = "sheet-card"

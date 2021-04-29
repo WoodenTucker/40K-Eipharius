@@ -695,7 +695,43 @@
 	else
 		icon_state = "sallybolter-e"
 
+/obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
+	name = "locke pattern bolt rifle"
+	desc = "The Locke-pattern weapon is a variant of an old Adeptus Arbites design and the most ‘common’ of these uncommon weapons found traded in the Koronus Expanse."
+	icon_state = "lockebolter"
+	str_requirement = 14 //Can't be a soyboy and hold this
+	w_class = ITEM_SIZE_HUGE
+	force = 65
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 30
+	caliber = ".75"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/bolter
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
+	one_hand_penalty = 15
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "lockebolter-30"
+	unloaded_icon = "lockebolter-e"
+	fire_delay=2
+	burst=1
+	move_delay=12
+	one_hand_penalty=8
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 300 //Enough for one clean mag.
 
+/obj/item/gun/projectile/sallybolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "lockebolter-30"
+	else
+		icon_state = "lockebolter-e"
 
 
 //various kroot rifles, bolt action and lever

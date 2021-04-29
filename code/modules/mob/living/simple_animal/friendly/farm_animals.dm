@@ -361,3 +361,132 @@ var/global/chicken_count = 0
 			qdel(src)
 	else
 		return PROCESS_KILL
+
+
+/mob/living/simple_animal/vatgrown
+	name = "Vat-grown human"
+	desc = "Shipped from off-world and marked for experimentation, they have already been lobotomized."
+	icon_state = "vatgrown"
+	icon_living = "vatgrown"
+	icon_dead = "vatgrown_dead"
+	speak = list("...")
+	speak_emote = list("mumbles")
+	emote_hear = list("mumbles")
+	emote_see = list("stares","drools")
+	speak_chance = 0.5
+	turns_per_move = 1
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
+	meat_amount = 4
+	response_help  = "pets"
+	response_disarm = "gently pushes aside"
+	response_harm   = "kicks"
+	attacktext = "kicked"
+	health = 60
+	min_gas = null
+	max_gas = null
+	minbodytemp = 0
+	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GRILLE
+	mob_size = MOB_MEDIUM
+	var/plating = 0
+	var/adapted = 0
+	var/eyes = 0
+	var/robes = 0
+	var/finished = 0
+
+//Skitarii building
+/mob/living/simple_animal/vatgrown/attackby(var/obj/item/O, var/mob/user)
+	if(istype(O, /obj/item/device/neuraladapter))
+		if(src.adapted == 1)
+			visible_message("[src]'s brain has already been adapted to suit your needs. Move on!")
+			return
+		else
+			src.adapted = 1
+			visible_message("[user] slides the neural adapter down the ear canal. It wriggles past the tympanic membrane and attaches to the auditory nerve, directly feeding commands to the brain of the [src]. Now that the brain is prepared, we need to cover him in plating.")
+			playsound(src, 'sound/effects/adapter.ogg', 100, 1, 1)
+			return
+
+	if(istype(O, /obj/item/skitariiplating))
+		if(src.adapted == 0)
+			visible_message("The [src] has not yet had their mind adapted, they will not tolerate you installing plating on them!")
+			return
+		else if(src.plating == 3)
+			visible_message("The [src] is sufficiently armored. Move on to installing the eyes next.")
+			return
+		else
+			src.plating += 1
+			visible_message("The [user] installs plating across the [src]'s body.")
+			playsound(src, 'sound/effects/plating.ogg', 80, 1, 1)
+			qdel(O)
+			return
+
+	if(istype(O, /obj/item/newore/gems/ruby/cut))
+		if(src.plating <= 2)
+			visible_message("The [src] must be properly plated first!")
+			return
+		else if(src.eyes == 2)
+			visible_message("The eyes have been upgraded, now for the final step. Clothing our new servant.")
+			return
+		else
+			src.eyes += 1
+			visible_message("[user] makes a few quick 'modifications' to the ruby before replacing the [src]'s eye with it.")
+			playsound(src, 'sound/effects/geminsert.ogg', 80, 1, 1)
+			qdel(O)
+			return
+
+	else if(istype(O, /obj/item/newore/gems/emerald/cut))
+		if(src.plating <= 2)
+			visible_message("The [src] must be properly plated first!")
+			return
+		else if(src.eyes == 2)
+			visible_message("The eyes have been upgraded, now for the final step. Clothing our new servant.")
+			return
+		else
+			src.eyes += 1
+			visible_message("[user] makes a few quick 'modifications' to the emerald before replacing the [src]'s eye with it.")
+			playsound(src, 'sound/effects/geminsert.ogg', 80, 1, 1)
+			qdel(O)
+			return
+
+	else if(istype(O, /obj/item/newore/gems/sapphire/cut))
+		if(src.plating <= 2)
+			visible_message("The [src] must be properly plated first!")
+			return
+		else if(src.eyes == 2)
+			visible_message("The eyes have been upgraded, now for the final step. Clothing our new servant.")
+			return
+		else
+			src.eyes += 1
+			visible_message("[user] makes a few quick 'modifications' to the sapphire before replacing the [src]'s eye with it.")
+			playsound(src, 'sound/effects/geminsert.ogg', 80, 1, 1)
+			qdel(O)
+			return
+
+	if(istype(O, /obj/item/stack/material/cloth))
+		var/obj/item/stack/material/cloth/S = O
+		if(src.eyes <= 1)
+			visible_message("The [src] still needs its eyes upgraded!")
+			return
+		else if(src.finished == 1)
+			visible_message("You have clothed the skitarii, now for the finishing touches. Douse your child in the holy oils!")
+			return
+		else
+			if(S.amount <= 9)
+				visible_message("You require at least 10 rolls of cloth to dress your skitarii!")
+				return
+			else
+				src.finished = 1
+				S.amount -= 10
+				return
+
+	if(isHolyoils(O))
+		if(src.finished >= 1)
+			playsound(src, 'sound/voice/blessing.ogg', 90, 1, 1)
+			qdel(src)
+			new /mob/living/carbon/human/skitarii(user.loc)
+			return
+		else
+			visible_message("The servant must be clothed first!")
+			return
+
+
+

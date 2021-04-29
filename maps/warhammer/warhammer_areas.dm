@@ -319,6 +319,8 @@ Area basic template
 /area/cadiaoutpost/gma/underground
 	name = "Underground"
 	icon_state = "unexplored"
+	requires_power = 0
+	dynamic_lighting = 1
 
 /area/cadiaoutpost/gma/inquisitoracolyte
 	name = "Inquisitorial Acolyte Vessel ''Simiel''"
@@ -772,6 +774,7 @@ Area basic template
 /area/cadiaoutpost/oa/maintenance
 	name = "Maintenance"
 	icon_state = "maintenance"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/maintenance/south
 	name = "south"
