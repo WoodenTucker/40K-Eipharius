@@ -139,7 +139,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Mark I Stormrider", "Mark I Snapper",) //lists all possible crafting choices
+		var/craftingchoices = list("Mark I Stormrider", "Mark I Snapper", "Skitarii Plating",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -157,6 +157,12 @@
 				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Iron Ingot (Mark I Snapper)"
+			if("Skitarii Plating")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future skitarii plating.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 3
+				src.ismarked = 1
+				src.name = "Iron Ingot (Skitarii Plating)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -177,7 +183,7 @@
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 			if(2)
 				if(prob(25))
@@ -188,7 +194,18 @@
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(3)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed skitarii plating! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Iron Ingot (Carved skitarii plating)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
@@ -209,6 +226,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester(src.loc)
+				qdel(src)
+				return
+			if(3)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/skitariiplating(src.loc)
 				qdel(src)
 				return
 

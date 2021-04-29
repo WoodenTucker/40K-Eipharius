@@ -1222,3 +1222,12 @@ Imperial Guardsman
 	icon_state = "l_leg"
 	item_state = "l_leg"
 	w_class = ITEM_SIZE_HUGE
+
+//Skitarii stuff
+/obj/item/skitariiplating
+	name = "skitarii plating"
+	desc = "Freshly forged skitarii plating, resistant to las-rounds and blunt strikes."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "plate"
+	item_state = "plate"
+	w_class = ITEM_SIZE_NORMAL

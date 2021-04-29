@@ -50,12 +50,14 @@
 	outfit.equip(src)
 	request_player()
 
+
 	hand = 0//Make sure one of their hands is active.
-	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet)//Give them a weapon.
 	isburied = 1
 
 /mob/living/carbon/human/skitarii/New(var/new_loc)
 	..(new_loc, "Skitarii")
+	sleep(3000)
+	request_player()
 
 
 //Procs for grabbing players into our skit boy
@@ -97,6 +99,7 @@
 		return
 
 	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+	playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision

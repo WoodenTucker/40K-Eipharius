@@ -115,7 +115,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null
 	r_ear = null
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = /obj/item/storage/backpack/satchel/warfare/biologis
 	backpack_contents = list(
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,

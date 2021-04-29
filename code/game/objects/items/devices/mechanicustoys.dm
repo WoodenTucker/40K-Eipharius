@@ -125,3 +125,30 @@
 /obj/item/device/lasercutter/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
+
+//Biologis toys go below here---------------------------------------------------------------------------------
+/obj/item/device/neuraladapter
+	name = "Neural Adapter"
+	desc = "This aids a biologis in bending the neurons to his will. Sometimes. - Biologis Malar Viten "
+	icon = 'icons/obj/items/neural.dmi'
+	icon_state = "neural"
+	item_state = "neural"
+	item_flags = ITEM_FLAG_NODROP
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = null
+	canremove = FALSE
+	w_class = ITEM_SIZE_SMALL
+	var/constructionsystem = 0
+	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
+
+/obj/item/device/neuraladapter/attack(mob/living/simple_animal/vatgrown/C, mob/living/carbon/human/user)
+	if(istype(C))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		visible_message("<span class='notice'>[C] is gingerly warmed with the laser cutter by [user]. Tingly!</span>")
+	..()
+
+
+/obj/item/device/neuraladapter/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)

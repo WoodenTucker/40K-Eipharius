@@ -467,11 +467,11 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/storage/hooded/skitarri
 	shoes = /obj/item/clothing/shoes/skitshoes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare/kroot
+	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
