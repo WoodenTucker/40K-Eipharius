@@ -1223,6 +1223,42 @@ Imperial Guardsman
 	item_state = "l_leg"
 	w_class = ITEM_SIZE_HUGE
 
+/obj/item/minidread
+	name = "mini-dreadnought"
+	desc = "A miniature action figure that looks like a dreadnought. With sound effects!"
+	icon = 'icons/obj/items.dmi'
+	icon_state = "mini_dread"
+	item_state = "mini_dread"
+	w_class = ITEM_SIZE_SMALL
+
+
+/obj/item/minidread/attack_self(mob/user as mob)
+
+	src.add_fingerprint(user)
+
+	var/soundeffects = list() //beep boops of the toy
+
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //no spam plz
+
+	soundeffects += pick("Godzilla","Shoot","Voice",) //adds a fate randomly to essentially give rng pick
+
+	switch(soundeffects)
+		if("Godzilla")
+			playsound(src, 'sound/effects/roar.ogg', 80, 1, 1)
+			soundeffects = list()
+			return
+
+		if("Shoot")
+			playsound(src, 'sound/effects/dreadshoot.ogg', 80, 1, 1)
+			soundeffects = list()
+			return
+
+		if("Voice")
+			playsound(src, 'sound/effects/dreadvoice.ogg', 80, 1, 1)
+			soundeffects = list()
+			return
+
+
 //Skitarii stuff
 /obj/item/skitariiplating
 	name = "skitarii plating"
