@@ -1242,21 +1242,20 @@ Imperial Guardsman
 
 	soundeffects += pick("Godzilla","Shoot","Voice",) //adds a fate randomly to essentially give rng pick
 
-	switch(soundeffects)
-		if("Godzilla")
-			playsound(src, 'sound/effects/roar.ogg', 80, 1, 1)
-			soundeffects = list()
-			return
+	if("Godzilla")
+		playsound(src, 'sound/effects/roar.ogg', 80, 1, 1)
+		soundeffects = list()
+		return
 
-		if("Shoot")
-			playsound(src, 'sound/effects/dreadshoot.ogg', 80, 1, 1)
-			soundeffects = list()
-			return
+	if("Shoot")
+		playsound(src, 'sound/effects/dreadshoot.ogg', 80, 1, 1)
+		soundeffects = list()
+		return
 
-		if("Voice")
-			playsound(src, 'sound/effects/dreadvoice.ogg', 80, 1, 1)
-			soundeffects = list()
-			return
+	if("Voice")
+		playsound(src, 'sound/effects/dreadvoice.ogg', 80, 1, 1)
+		soundeffects = list()
+		return
 
 
 //Skitarii stuff

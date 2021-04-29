@@ -56,8 +56,8 @@
 
 /mob/living/carbon/human/skitarii/New(var/new_loc)
 	..(new_loc, "Skitarii")
-	if(do_after(src, 300))
-		request_player()
+	sleep(3000)
+	request_player()
 
 
 //Procs for grabbing players into our skit boy
