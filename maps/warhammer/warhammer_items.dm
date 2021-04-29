@@ -1230,31 +1230,29 @@ Imperial Guardsman
 	icon_state = "mini_dread"
 	item_state = "mini_dread"
 	w_class = ITEM_SIZE_SMALL
-
+	var/soundeffects = 0
 
 /obj/item/minidread/attack_self(mob/user as mob)
 
 	src.add_fingerprint(user)
 
-	var/soundeffects = list() //beep boops of the toy
+	user.setClickCooldown(50) //no spam plz
 
-	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //no spam plz
+	soundeffects = rand(1,3) //picks a toy
 
-	soundeffects += pick("Godzilla","Shoot","Voice",) //adds a fate randomly to essentially give rng pick
-
-	if("Godzilla")
+	if(src.soundeffects == 1)
 		playsound(src, 'sound/effects/roar.ogg', 80, 1, 1)
-		soundeffects = list()
+		soundeffects = 0
 		return
 
-	if("Shoot")
+	if(src.soundeffects == 2)
 		playsound(src, 'sound/effects/dreadshoot.ogg', 80, 1, 1)
-		soundeffects = list()
+		soundeffects = 0
 		return
 
-	if("Voice")
+	if(src.soundeffects == 3)
 		playsound(src, 'sound/effects/dreadvoice.ogg', 80, 1, 1)
-		soundeffects = list()
+		soundeffects = 0
 		return
 
 
