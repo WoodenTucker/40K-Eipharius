@@ -58,7 +58,7 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_HIGH
-	total_health = 350
+	total_health = 400
 	mob_size = MOB_MEDIUM
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,
