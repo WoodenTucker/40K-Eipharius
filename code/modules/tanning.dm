@@ -41,14 +41,15 @@
 	if (!(istype(O, /obj/item/humanskin)))
 		to_chat(user, "<span class='warning'>[O] can't be tanned!</span>")
 		return 1
-	else if(src.tanning == 1)
+	if(src.tanning == 1)
 		to_chat(user, "<span class='warning'>There is already something tanning!</span>")
 		return
-	else if (istype(O, /obj/item/humanskin))
+	else if(istype(O, /obj/item/humanskin))
 		to_chat(user, "[user] pulls the skin taut and stretches it across the rack, preparing for it for its transformation into hide.")
 		src.icon_state = "tanning"
 		src.update_icon()
 		qdel(O)
+		src.tanning = 1
 		sleep(900)
 		to_chat(user, "The [O] begins to dry, all moisture is slowly sucked from the skin as it begins to harden...")
 		src.icon_state = "tanned"
@@ -58,4 +59,5 @@
 		new /obj/item/tannedhuman(src.loc)
 		src.icon_state = "tan_rack"
 		src.update_icon()
+		src.tanning = 0
 		return

@@ -513,6 +513,7 @@ Begin Warhammer loadouts
 			W.assignment = "Krieger"
 			W.registered_name = real_name
 			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Cadian")
 			equip_to_slot_or_del(new /obj/item/clothing/under/color/brown, slot_w_uniform)
@@ -538,3 +539,4 @@ Begin Warhammer loadouts
 			W.assignment = "Cadian"
 			W.registered_name = real_name
 			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)

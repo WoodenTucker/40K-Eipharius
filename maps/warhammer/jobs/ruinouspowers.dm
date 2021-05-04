@@ -27,14 +27,14 @@
 		if(0)
 			if(istype(src.l_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.l_hand)
-				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God. You are not yet visibly corrupted but avoid detailed investigation.")
+				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				src.update_inv_l_hand()
 				src.rage++
 
 			else if(istype(src.r_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.r_hand)
-				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. You have taken the first step on the path of the Blood God. You are not yet visibly corrupted but avoid detailed investigation.")
+				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				src.update_inv_r_hand()
 				src.rage++
@@ -57,7 +57,7 @@
 			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
 			if(T)
 				src.rage++
-				to_chat(src, "This... is it. That symbol. Just the sight of it quickens your heart and pumps adrenaline through your veins. You can hear his voice more clearly now.")
+				to_chat(src, "This... is it. That symbol. Just the sight of it quickens your heart and pumps adrenaline through your veins. <font color='#720202'>You can hear his voice more clearly now.</font>")
 			else
 				to_chat(src, "I must draw his symbol and stand upon it!")
 				return
@@ -119,7 +119,7 @@
 			var/obj/effect/decal/cleanable/nurgle/T = locate() in src.loc
 			if(T)
 				src.decay++
-				to_chat(src, "Standing upon this rune fills me with warmth, like standing before a roaring fireplace. His voice returns at once, its clear he is pleased. He greets me like a returning child. I am eager to please.")
+				to_chat(src, "Standing upon this rune fills me with warmth, like standing before a roaring fireplace. <font color='#03420e'>His voice returns at once, its clear he is pleased. He greets me like a returning child.</font> I am eager to please.")
 			else
 				to_chat(src, "I must draw his symbol and stand upon it!")
 				return
@@ -136,18 +136,18 @@
 				src.set_trait(new/datum/trait/death_tolerant) //no more getting spooked
 				STAT_LEVEL(end) += 1
 				playsound(src, 'sound/effects/fornurgle.ogg', 50, 0, -1)
-				to_chat(src, "It is done. I gingerly laid the corpse of his child upon the mark. With a faint flash it is gone. That familiar warmth returns like a hug. ")
+				to_chat(src, "It is done. I gingerly laid the corpse of his child upon the mark. With a faint flash it is gone. <font color='#03420e'>That familiar warmth returns like a hug.</font> ")
 				qdel(Q)
 			else if(!Q)
-				to_chat(src, "He requires something of me. He asked me to bring him one of his children, a rat. He asked me to kill it and place it upon his mark. He has grand designs for me, but they all start with one small step.")
+				to_chat(src, "He requires something of me. He asked me to bring him one of his children, a rat. He asked me to kill it and place it upon his mark. <font color='#03420e'>He has grand designs for me, but they all start with one small step.</font>")
 				return
 		if(6)
 			src.decay++
-			to_chat(src, "Well done my acolyte. You have taken an important step by returning this child to me. Next, you will concoct a irresistibly infectious brew to bring my children to life! Get somewhere away from onlookers and call out to me again!")
+			to_chat(src, "<font color='#03420e'>Well done my acolyte. You have taken an important step by returning this child to me. Next, you will concoct a irresistibly infectious brew to bring my children to life! Get somewhere away from onlookers and call out to me again!</font>")
 			return
 		if(7)
 			new /obj/structure/nganga(src.loc)
-			to_chat(src, "Use this nganga to create life! Hide it somewhere away from the prying eyes of the Inquisiton or it will surely be your downfall!")
+			to_chat(src, "<font color='#03420e'>Use this nganga to create life! Hide it somewhere away from the prying eyes of the Inquisiton or it will surely be your downfall!</font>")
 			src.decay++
 			return
 		if(8)
@@ -205,7 +205,7 @@
 			to_chat(src, "<span class='warning'> Finally, the head...</span>")
 			return
 		if(24)
-			to_chat(src, "<span class='warning'>You've brought my harbinger to this world... You've earned your place amongst my children. Repeat the ritual as many times as you can! (End of current Nurgle path)</span>")
+			to_chat(src, "<font color='#03420e'>You've brought my harbinger to this world... You've earned your place amongst my children. Repeat the ritual as many times as you can! (End of current Nurgle path)</font>")
 			src.decay = 8
 			return
 
@@ -236,13 +236,13 @@
 		if(0)
 			if(istype(src.l_hand, /obj/item/reagent_containers/pill/happy))
 				qdel(usr.l_hand)
-				to_chat(src, "You crack open the obscura instead of taking it orally, you snort the contents all at once. Sheer bliss courses through your neurons. Your mind has been opened to unfathomable depths of ecstasy. You feel his call for more. You have taken the first step on the path of the Dark Prince . You are not yet visibly corrupted but avoid detailed investigation. ")
+				to_chat(src, "You crack open the obscura instead of taking it orally, you snort the contents all at once. Sheer bliss courses through your neurons. Your mind has been opened to unfathomable depths of ecstasy. You feel his call for more. You have taken the first step on the path of the Dark Prince. You are not yet visibly corrupted but avoid detailed investigation. ")
 				playsound(src, 'sound/effects/slaanesh1.ogg', 50, 0, -1)
 				src.update_inv_l_hand()
 				src.lust++
 			else if(istype(src.r_hand, /obj/item/reagent_containers/pill/happy))
 				qdel(usr.r_hand)
-				to_chat(src, "You crack open the obscura instead of taking it orally, you snort the contents all at once. Sheer bliss courses through your neurons. Your mind has been opened to unfathomable depths of ecstasy. You feel his call for more. You have taken the first step on the path of the Dark Prince . You are not yet visibly corrupted but avoid detailed investigation. ")
+				to_chat(src, "You crack open the obscura instead of taking it orally, you snort the contents all at once. Sheer bliss courses through your neurons. Your mind has been opened to unfathomable depths of ecstasy. You feel his call for more. You have taken the first step on the path of the Dark Prince. You are not yet visibly corrupted but avoid detailed investigation. ")
 				playsound(src, 'sound/effects/slaanesh1.ogg', 50, 0, -1)
 				src.update_inv_r_hand()
 				src.lust++
@@ -269,6 +269,10 @@
 			else
 				to_chat(src, "I must draw xer symbol and stand upon it!")
 				return
+		if(4)
+			src.lust++
+			to_chat(src, "Submitting to them fills your body with pleasure. They speak to you, command you and you obey. The first command comes in a deep baritone voice as a small knife materializes at your feet. <font color='#800080'>You've done well...</font>")
+
 
 
 
@@ -304,26 +308,26 @@
 			var/obj/structure/toilet/T = locate() in src.loc
 			if(T)
 				src.intrigue++
-				to_chat(src, "Well done! You are wittier than I first thought!")
+				to_chat(src, "<font color='#0400ff'>Well done! You are wittier than I first thought!</font>")
 			else
-				to_chat(src, "A wily voice pervades your mind. Solve 9 of my 999 riddles to start down the path of the deceiver. Sit upon the throne of both kings and beggars.")
+				to_chat(src, "A wily voice pervades your mind. <font color='#0400ff'>Solve 9 of my 999 riddles to start down the path of the deceiver. Sit upon the throne of both kings and beggars.</font>")
 		if(1)
 			STAT_LEVEL(int) +=1
 			src.intrigue++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
-			to_chat(src, "One down, eight to go!")
+			to_chat(src, "<font color='#0400ff'>One down, eight to go!</font>")
 			src.mind.special_role = "Tzeentch Cultist"
 			AddInfectionImages()
 			src.faction = "Tzeentch"
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/tzeentchrune
-			to_chat(src, "To hear my next riddle memorize this symbol, draw it and stand upon it!")
+			to_chat(src, "<font color='#0400ff'>To hear my next riddle memorize this symbol, draw it and stand upon it!</font>")
 			src.intrigue++
 		if(3)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
 				src.intrigue++
-				to_chat(src, "Good... Good! From now on I will only speak to you while you stand upon this rune... Now, for your next riddle.")
+				to_chat(src, "<font color='#0400ff'>Good... Good! From now on I will only speak to you while you stand upon this rune... Now, for your next riddle.</font>")
 			else
 				to_chat(src, "I haven't drawn his symbol or I'm not standing directly on it!")
 		if(4)
@@ -331,9 +335,9 @@
 			if(G)
 				src.intrigue++
 				STAT_LEVEL(str)+=1
-				to_chat(src, "Well done! Maybe you aren't as dim as you appear... Seek me out upon my rune for your next riddle.")
+				to_chat(src, "<font color='#0400ff'>Well done! Maybe you aren't as dim as you appear... Seek me out upon my rune for your next riddle.</font>")
 			else
-				to_chat(src, "You'll find me in a place of stone, Where silence cloaks the ground, Search through all the empty names, And finally I'll be found.")
+				to_chat(src, "<font color='#0400ff'>You'll find me in a place of stone, Where silence cloaks the ground, Search through all the empty names, And finally I'll be found.</font>")
 
 
 
