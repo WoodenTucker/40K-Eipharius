@@ -215,7 +215,7 @@ Begin Warhammer loadouts
 	back = null
 	pda_slot = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/dog_tag/guardsman
+	id_type = null
 	l_hand = null
 	l_ear = null
 	r_ear = null
@@ -486,6 +486,9 @@ Begin Warhammer loadouts
 
 	switch(chapterchoice)
 		if("Krieger")
+			var/troopnum = rand(1,50000)
+			src.name = "Troop [troopnum]"
+			src.real_name = "Troop [troopnum]"
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
@@ -502,8 +505,15 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,
-			)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.assignment = "Krieger"
+			W.registered_name = real_name
+			W.update_label()
+
 		if("Cadian")
 			equip_to_slot_or_del(new /obj/item/clothing/under/color/brown, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
@@ -520,5 +530,11 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,
-			)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.assignment = "Cadian"
+			W.registered_name = real_name
+			W.update_label()

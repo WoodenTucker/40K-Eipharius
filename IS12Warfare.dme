@@ -1033,6 +1033,7 @@
 #include "code\game\verbs\who.dm"
 #include "code\js\byjax.dm"
 #include "code\js\menus.dm"
+#include "code\modules\tanning.dm"
 #include "code\modules\achievements\achievements.dm"
 #include "code\modules\achievements\achievements_core.dm"
 #include "code\modules\acting\acting_items.dm"
