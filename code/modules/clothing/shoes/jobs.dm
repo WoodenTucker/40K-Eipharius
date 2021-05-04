@@ -56,7 +56,11 @@
 
 	overlays += I
 
-
+/obj/item/clothing/shoes/jackboots/krieg
+	name = "krieg boots"
+	desc = "Krieg-issue jackboots."
+	icon_state = "kriegboots"
+	item_state = "kriegboots"
 
 /obj/item/clothing/shoes/jackboots/unathi
 	name = "toe-less jackboots"

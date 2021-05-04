@@ -39,7 +39,8 @@
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		/mob/living/carbon/human/proc/tzeentch,
+		/mob/living/carbon/human/proc/regimentselection,)
 
 /datum/job/ig/sergeant
 	title = "Sergeant"
@@ -205,28 +206,21 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Imperial Guardsman")
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	uniform = /obj/item/clothing/under/color/brown
-	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
-	suit = /obj/item/clothing/suit/armor/guardsman
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = /obj/item/storage/backpack/satchel/warfare
+	head = null
+	uniform = null
+	shoes = null
+	l_pocket = null // /obj/item/stack/medical/bruise_pack
+	suit = null
+	gloves = null
+	back = null
 	pda_slot = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_hand = /obj/item/gun/energy/las/lasgun
+	l_hand = null
 	l_ear = null
 	r_ear = null
-	belt = /obj/item/device/flashlight/lantern
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	belt = null
 
-	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/commissar
@@ -475,3 +469,56 @@ Begin Warhammer loadouts
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+
+/mob/living/carbon/human/proc/regimentselection()
+	set name = "Select your regiment"
+	set category = "Guardsmen"
+	set desc = "Choose your regiment"
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+	var/mob/living/carbon/human/U = src
+	var/chapter = list("Cadian", "Krieger",) //lists all possible chapters
+	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
+
+	switch(chapterchoice)
+		if("Krieger")
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/krieg, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,
+			)
+		if("Cadian")
+			equip_to_slot_or_del(new /obj/item/clothing/under/color/brown, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,
+			)

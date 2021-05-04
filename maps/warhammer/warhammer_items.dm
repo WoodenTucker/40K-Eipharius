@@ -209,7 +209,9 @@
 /obj/item/clothing/gloves/thick/swat/combat/warfare
 	icon_state = "warfare_gloves"
 	item_state = "warfare_gloves"
-
+/obj/item/clothing/gloves/thick/swat/combat/krieg
+	icon_state = "krieggloves"
+	item_state = "krieggloves"
 
 //Blue shit
 /obj/item/clothing/suit/armor/bluecoat
@@ -824,6 +826,16 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
+/obj/item/clothing/suit/armor/krieger
+	name = "Krieger's Trench Coat"
+	desc = "The well worn and stealthily armored coat of the Death Korps of Krieg."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/under/guard_uniform
 	name = "Imperial Guard uniform"
 	desc = "The uniform of those who fight in His name."
@@ -835,6 +847,14 @@ Imperial Guardsman
 	name = "Guard Helmet"
 	desc = "Sometimes protects your head from bullets and blows."
 	icon_state = "guard"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/krieghelmet
+	name = "Krieg Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "krieghelm"
+	item_state = "krieghelm"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
