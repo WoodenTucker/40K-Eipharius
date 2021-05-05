@@ -6,6 +6,7 @@
 	pixel_x = -16
 	alpha = 200
 	density = FALSE
+	layer = 1
 	mouse_opacity = 2
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER

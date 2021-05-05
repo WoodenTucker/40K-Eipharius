@@ -22,6 +22,7 @@
 	if(food == 0)
 		var/dat = "<B>Sub-sector Trade:</B><BR>"
 		dat += "[GLOB.thrones] thrones<BR>"
+		dat += "<A href='byond://?src=\ref[src];withdraw=1'>Withdraw Thrones</A><BR>"
 		dat += "<B>Items on the Market:</B><BR>"
 		dat += "<B> Medical Supplies:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];mb=1'>Medical Belt (20)</A><BR>"
@@ -295,6 +296,83 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/grenade/frag/warfare(T.loc) //what they spawning
 			src.buying = 0
+	if (href_list["withdraw"])
+		var/withdrawamount = list("one", "five", "ten", "fifteen", "twenty", "twenty-five", "fifty", "one-hundred",) //lists tax rates, we'll do set ones for now
+		var/withdrawchoice = input("Withdraw thrones", "Available amounts") as null|anything in withdrawamount
+
+		switch(withdrawchoice)
+			if("one")
+				if(GLOB.thrones < 1)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=1
+					new /obj/item/stack/thrones3(src.loc)
+					return
+			if("five")
+				if(GLOB.thrones < 5)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=5
+					new /obj/item/stack/thrones2(src.loc)
+					return
+			if("ten")
+				if(GLOB.thrones < 10)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=10
+					new /obj/item/stack/thrones(src.loc)
+					return
+			if("fifteen")
+				if(GLOB.thrones < 15)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=15
+					new /obj/item/stack/thrones2(src.loc)
+					new /obj/item/stack/thrones(src.loc)
+					return
+			if("twenty")
+				if(GLOB.thrones < 20)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=20
+					new /obj/item/stack/thrones(src.loc)
+					new /obj/item/stack/thrones(src.loc)
+					return
+			if("twenty-five")
+				if(GLOB.thrones < 25)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=25
+					new /obj/item/stack/thrones(src.loc)
+					new /obj/item/stack/thrones(src.loc)
+					new /obj/item/stack/thrones2(src.loc)
+					return
+			if("fifty")
+				if(GLOB.thrones < 50)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=50
+					new /obj/item/stack/thrones/five(src.loc)
+
+					return
+			if("one-hundred")
+				if(GLOB.thrones < 100)
+					visible_message("You don't have enough thrones to withdraw that many!")
+					return
+				else
+					GLOB.thrones -=100
+					new /obj/item/stack/thrones/ten(src.loc)
+					return
+
+
+
 
 
 

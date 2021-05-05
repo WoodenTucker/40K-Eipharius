@@ -57,6 +57,7 @@
 			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
 			if(T)
 				src.rage++
+				playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "This... is it. That symbol. Just the sight of it quickens your heart and pumps adrenaline through your veins. <font color='#720202'>You can hear his voice more clearly now.</font>")
 			else
 				to_chat(src, "I must draw his symbol and stand upon it!")
@@ -265,11 +266,13 @@
 			var/obj/effect/decal/cleanable/slaanesh/T = locate() in src.loc
 			if(T)
 				src.lust++
+				playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "Yes! YES! He is pleased, the feeling returns for mere moments. Every pleasure is experienced at once to its absolute pinnacle. Yet again it fades with a sinister laugh. He needs more, I must continue to serve.")
 			else
 				to_chat(src, "I must draw xer symbol and stand upon it!")
 				return
 		if(4)
+			playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 			src.lust++
 			to_chat(src, "Submitting to them fills your body with pleasure. They speak to you, command you and you obey. The first command comes in a deep baritone voice as a small knife materializes at your feet. <font color='#800080'>You've done well... You may have potential... How would you like to attend a party I'm throwing?</font>")
 			new /obj/item/material/sword/skinning_knife(src.loc)
@@ -281,6 +284,7 @@
 		if(6)
 			for(var/obj/item/clothing/mask/masquerade/X in src.contents)
 				if(X.slan == 1)
+					playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 					src.lust++
 					to_chat(src, "<font color='#800080'> Brilliant! That looks marvelous. My child I never did tell you what sort of party this is... You will need a toy of sorts, to entertain my many guests!</font>")
 					STAT_LEVEL(dex) += 2
@@ -326,6 +330,7 @@
 		if(0)
 			var/obj/structure/toilet/T = locate() in src.loc
 			if(T)
+				playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 				src.intrigue++
 				to_chat(src, "<font color='#0400ff'>Well done! You are wittier than I first thought!</font>")
 			else
@@ -354,6 +359,7 @@
 			if(G)
 				src.intrigue++
 				STAT_LEVEL(str)+=1
+				playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Well done! Maybe you aren't as dim as you appear... Seek me out upon my rune for your next riddle.</font>")
 			else
 				to_chat(src, "<font color='#0400ff'>You'll find me in a place of stone, Where silence cloaks the ground, Search through all the empty names, And finally I'll be found.</font>")

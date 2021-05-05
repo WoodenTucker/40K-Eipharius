@@ -650,33 +650,33 @@
 		return
 
 	for (var/obj/item/newore/smallrock/O in contents)
-		if(prob(10))
+		if(prob(5))
 			contents.len -= 1
 			new /obj/item/newore/gems/topaz(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
 
-		else if(prob(5))
+		else if(prob(2))
 			contents.len -= 1
 			new /obj/item/newore/gems/sapphire(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
 
-		else if(prob(25))
+		else if(prob(5))
 			contents.len -= 1
 			new /obj/item/newore/gems/quartz(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
-		else if(prob(5))
+		else if(prob(2))
 			contents.len -= 1
 			new /obj/item/newore/gems/ruby(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
 			clean_rocks()
 			return
-		else if(prob(5))
+		else if(prob(2))
 			contents.len -= 1
 			new /obj/item/newore/gems/emerald(src.loc)
 			to_chat(usr, "<span class='notice'>You run the gem washer</span>")
