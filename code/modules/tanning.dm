@@ -61,3 +61,13 @@
 		src.update_icon()
 		src.tanning = 0
 		return
+
+/obj/item/tannedhuman/attackby(var/obj/item/O, var/mob/living/carbon/human/user)
+	if (!(istype(O, /obj/item/material/sword/skinning_knife)))
+		to_chat(user, "<span class='warning'>[O] is the wrong kind of knife...</span>")
+		return
+	else if(istype(O, /obj/item/material/sword/skinning_knife))
+		to_chat(user, "[user] lets their hand guide their blade across the [O]. Within a few moments, they have a new mask, a new face... Trace of rouge... Face of beast... Faces...")
+		qdel(O)
+		new /obj/item/clothing/mask/masquerade(user.loc)
+		return

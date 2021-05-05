@@ -209,7 +209,7 @@ Begin Warhammer loadouts
 	head = null
 	uniform = null
 	shoes = null
-	l_pocket = null // /obj/item/stack/medical/bruise_pack
+	l_pocket = null
 	suit = null
 	gloves = null
 	back = null

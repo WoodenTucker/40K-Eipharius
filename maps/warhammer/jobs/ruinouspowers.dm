@@ -271,7 +271,26 @@
 				return
 		if(4)
 			src.lust++
-			to_chat(src, "Submitting to them fills your body with pleasure. They speak to you, command you and you obey. The first command comes in a deep baritone voice as a small knife materializes at your feet. <font color='#800080'>You've done well...</font>")
+			to_chat(src, "Submitting to them fills your body with pleasure. They speak to you, command you and you obey. The first command comes in a deep baritone voice as a small knife materializes at your feet. <font color='#800080'>You've done well... You may have potential... How would you like to attend a party I'm throwing?</font>")
+			new /obj/item/material/sword/skinning_knife(src.loc)
+			return
+		if(5)
+			to_chat(src, "<font color='#800080'>The party is a masquerade! That means you need a mask and not just any will do! You require a mask made from human skin! Take my gift and harvest your materials from a dead body...</font> <font color='#b60c00'> The voice switches genders between words effortlessly and leaves you with some final adivce.</font><font color='#800080'> Do build a tanning rack, you should be able to whittle one out of the logs strewn about this world. No one wants a soggy mask... When you have the tanned hide, try my knife on it and carve yourself a new face so that the world may never find you...</font> ")
+			src.lust++
+			return
+		if(6)
+			for(var/obj/item/clothing/mask/masquerade/X in src.contents)
+				if(X.slan == 1)
+					src.lust++
+					to_chat(src, "<font color='#800080'> Brilliant! That looks marvelous. My child I never did tell you what sort of party this is... You will need a toy of sorts, to entertain my many guests!</font>")
+					STAT_LEVEL(dex) += 2
+					return
+				else
+					to_chat(src, "If it's a masquerade, I'll need a mask...")
+					return
+
+			to_chat(src, "If it's a masquerade, I'll need a mask...")
+
 
 
 

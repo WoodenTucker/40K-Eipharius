@@ -330,3 +330,11 @@
 	icon_state = "bandskull"
 	item_state = "bandskull"
 
+/obj/item/clothing/mask/masquerade
+	name = "masquerade mask"
+	desc = "Every face a different shade . . ."
+	icon_state = "slaanesh"
+	item_state = "slaanesh"
+	body_parts_covered = FACE
+	w_class = ITEM_SIZE_SMALL
+	var/slan = 1

@@ -236,7 +236,7 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/luscius
-	name = "luscius pattern lasgun"
+	name = "lucius pattern lasgun"
 	desc = "The standard-issue rifle of the Death Korps of Krieg."
 	icon_state = "luscius"
 	item_state = "luscius"

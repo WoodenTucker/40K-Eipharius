@@ -10,7 +10,7 @@
 "aj" = (/turf/simulated/wall/r_wall,/area/cadiaoutpost/oa/bridge/hallway)
 "ak" = (/obj/machinery/door/airlock/simiel,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "al" = (/obj/structure/table/steel_reinforced,/obj/machinery/chemical_dispenser/bar_coffee/full,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/meetingroom)
-"am" = (/obj/structure/ladder/up,/turf/simulated/open,/area/cadiaoutpost/oa/tauship)
+"am" = (/obj/structure/ladder/up,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "an" = (/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/obj/item/reagent_containers/food/drinks/coffeecup/black,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/meetingroom)
 "ao" = (/obj/structure/bed/chair/office/light{dir = 8; icon_state = "officechair_white_preview"},/obj/effect/landmark/start{name = "Sister Hospitaller"},/obj/effect/floor_decal/newcorner/blue/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
 "ap" = (/turf/simulated/open,/area/cadiaoutpost/oa/bridge/hallway)

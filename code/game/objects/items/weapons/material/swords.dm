@@ -169,11 +169,10 @@
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
-	sharpness = FALSE//No cutting peoples heads off with a knife please.
+	sharpness = TRUE//No cutting peoples heads off with a knife please.
 	weapon_speed_delay = 10
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
-
 
 /obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
@@ -192,3 +191,41 @@
 		..()
 
 
+
+/obj/item/material/sword/skinning_knife
+	name = "ritual knife"
+	desc = "A visitor from the warp..."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "artknife"
+	item_state = "artknife"//"knife"
+	attack_verb = list("slashed")
+	force_divisor = 0.3
+	block_chance = 15
+	w_class = ITEM_SIZE_SMALL
+	grab_sound_is_loud = TRUE
+	grab_sound = 'sound/items/unholster_knife.ogg'
+	equipsound = 'sound/items/holster_knife.ogg'
+	sharpness = TRUE//No cutting peoples heads off with a knife please.
+	weapon_speed_delay = 10
+	drop_sound = 'sound/items/knife_drop.ogg'
+	swing_sound = "blunt_swing"
+
+/obj/item/material/sword/skinning_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
+	if(C.skinned == 1)
+		to_chat(usr, "The flesh has already been stripped away from this one...")
+		return
+	if(C.stat != DEAD)
+		to_chat(usr, "No... I can't... [C] is still alive...")
+		return
+	if(user.a_intent == I_HELP)
+		to_chat(usr, "I'm not helping him... I need to harm him!")
+		return
+	if(user.a_intent == I_HURT && (C.stat = DEAD))
+		usr.visible_message("\The [usr] gingerly slides the blade beneath the skin of [C]. Hungrily chasing the next rush of pleasure [usr] sloppily rends a chunk of flesh from the corpse.",\
+			"You cut away [C]'s flesh with \the [src]!",\
+			"<font color='#800080'>You hear a cackle, first a deep, masculine voice followed by a much softer, feminine tone.</font>")
+		C.skinned = 1
+		new /obj/item/humanskin(C.loc)
+		return
+	else
+		..()
