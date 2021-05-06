@@ -1312,3 +1312,26 @@ Imperial Guardsman
 	icon_state = "plate"
 	item_state = "plate"
 	w_class = ITEM_SIZE_NORMAL
+
+//slaaneshi nonsense
+/obj/item/clothing/suit/armor/slanclothing
+	var/slan = 1
+/obj/item/clothing/suit/armor/slanclothing/maleslan
+	name = "macabre clothing"
+	desc = "Elegant, fashionable, lavish!"
+	icon_state = "castellan"
+	item_state = "castellan"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/melee/whip/lashoftorment,)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/slanclothing/femaleslan
+	name = "macabre clothing"
+	desc = "Elegant, fashionable, lavish!"
+	icon_state = "advisor"
+	item_state = "advisor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/melee/whip/lashoftorment,)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

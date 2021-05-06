@@ -63,13 +63,35 @@
 		return
 
 /obj/item/tannedhuman/attackby(var/obj/item/O, var/mob/living/carbon/human/user)
-	if (!(istype(O, /obj/item/material/sword/skinning_knife)))
-		to_chat(user, "<span class='warning'>[O] is the wrong kind of knife...</span>")
-		return
-	else if(istype(O, /obj/item/material/sword/skinning_knife))
+	if(istype(O, /obj/item/material/sword/skinning_knife))
 		playsound(usr, 'sound/effects/carvemask.ogg', 80, 0, -1)
 		(do_after(user,40,src))
 		to_chat(user, "[user] lets their hand guide their blade across the [O]. Within a few moments, they have a new mask, a new face... Trace of rouge... Face of beast... Faces...")
 		qdel(src)
 		new /obj/item/clothing/mask/masquerade(user.loc)
 		return
+	else if(istype(O, /obj/item/stack/material/cloth))
+		if(user.lust < 8)
+			to_chat(user, "Nothing happens...")
+			return
+		else
+			to_chat(user, "The skin and cloth seem to come to life, wriggling and binding together, slowly the pulsing mass begins to take shape into a pair of lavish clothes!")
+			if(user.gender == MALE)
+				new /obj/item/clothing/suit/armor/slanclothing/maleslan(user.loc)
+				qdel(src)
+				return
+			else if(user.gender == FEMALE)
+				new /obj/item/clothing/suit/armor/slanclothing/femaleslan(user.loc)
+				qdel(src)
+				return
+	else if(istype(O, /obj/item/organ/external/arm))
+		if(user.lust < 7)
+			to_chat(user, "Why would I want to do this?")
+			return
+		else
+			to_chat(user, "The skin wraps itself around the bloody arm, it slithers up and down, stretching itself to a size one would think impossible. Slowly through some dark magic the pair form a gruesome lash!")
+			new /obj/item/melee/whip/lashoftorment(user.loc)
+			qdel(O)
+			qdel(src)
+			return
+

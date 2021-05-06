@@ -224,8 +224,17 @@
 		usr.visible_message("\The [usr] gingerly slides the blade beneath the skin of [C]. Hungrily chasing the next rush of pleasure [usr] sloppily rends a chunk of flesh from the corpse.",\
 			"You cut away [C]'s flesh with \the [src]!",\
 			"<font color='#800080'>You hear a cackle, first a deep, masculine voice followed by a much softer, feminine tone.</font>")
+		playsound(usr, 'sound/effects/SkinningA.ogg', 80, 0, -1)
+		(do_after(user,40,src))
 		C.skinned = 1
 		new /obj/item/humanskin(C.loc)
 		return
 	else
 		..()
+
+/obj/item/material/sword/skinning_knife/pickup(var/mob/living/carbon/human/user)
+	if(user.lust < 3 )
+		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
+		user.make_dizzy(220)
+		user.vomit()
+		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)

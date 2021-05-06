@@ -278,7 +278,7 @@
 			new /obj/item/material/sword/skinning_knife(src.loc)
 			return
 		if(5)
-			to_chat(src, "<font color='#800080'>The party is a masquerade! That means you need a mask and not just any will do! You require a mask made from human skin! Take my gift and harvest your materials from a dead body...</font> <font color='#b60c00'> The voice switches genders between words effortlessly and leaves you with some final adivce.</font><font color='#800080'> Do build a tanning rack, you should be able to whittle one out of the logs strewn about this world. No one wants a soggy mask... When you have the tanned hide, try my knife on it and carve yourself a new face so that the world may never find you...</font> ")
+			to_chat(src, "<font color='#800080'>The party is a masquerade! That means you need a mask and not just any will do! You require a mask made from human skin! Take my gift and harvest your materials from a dead body...</font> <font color='#b60c00'> The voice switches genders between words effortlessly and leaves you with some final advice.</font><font color='#800080'> Do build a tanning rack, you should be able to whittle one out of the logs strewn about this world. No one wants a soggy mask... When you have the tanned hide, try my knife on it and carve yourself a new face so that the world may never find you...</font> ")
 			src.lust++
 			return
 		if(6)
@@ -286,7 +286,7 @@
 				if(X.slan == 1)
 					playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 					src.lust++
-					to_chat(src, "<font color='#800080'> Brilliant! That looks marvelous. My child I never did tell you what sort of party this is... You will need a toy of sorts, to entertain my many guests!</font>")
+					to_chat(src, "<font color='#800080'> Brilliant! That looks marvelous. My child, I never did tell you what sort of party this is... You will need a toy of sorts, something to entertain my many guests!</font>")
 					STAT_LEVEL(dex) += 2
 					return
 				else
@@ -294,6 +294,38 @@
 					return
 
 			to_chat(src, "If it's a masquerade, I'll need a mask...")
+		if(7)
+			to_chat(src, "<font color='#800080'>A lash should spice things up! Get some more tanned skin and a handle. How about an arm? That would certainly be macabre! Perfect for the theme! Wrap that hide around an arm, I'll take care of the rest.</font>")
+			src.lust++
+		if(8)
+			for(var/obj/item/melee/whip/lashoftorment/X in src.contents)
+				if(X.slan == 1)
+					playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
+					src.lust++
+					STAT_LEVEL(dex) += 1
+					to_chat(src, "<font color='#800080'>Just a moment... How wonderful! That lash is an extension of myself, I can feed off of the suffering it brings. It's sure to be a hit! </font>")
+
+			to_chat(src, "Tanned skin and an arm... Combine the two and I'll be one step closer to the party. How fun!")
+		if(9)
+			to_chat(src, "<font color='#800080'>A mask and a lash, kinky! You're nearly ready! You weren't planning on wearing those clothes though, were you? How drab? They are lacking in luster and elegance one would expect! Let's work on your threads, get some tanned hide, (sensing a theme?) and a few spools of cloth, put them together and let me go to work!</font>")
+			src.lust++
+		if(10)
+			for(var/obj/item/clothing/suit/armor/slanclothing/X in src.contents)
+				if(X.slan == 1)
+					playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
+					STAT_LEVEL(str) += 1
+					to_chat(src, "<font color='#800080'>Oh you look wonderful! Now you would fit right in!</font>")
+					src.lust++
+
+
+			to_chat(src, "More skin... I need more skin. I overheard some of the Tech-priests purchasing cloth from the munitorum earlier...")
+		if(11)
+			to_chat(src, "<font color='#800080'>You do know its proper to bring favors, yes? I'm not talking amasec or obscura, we indulge in something much sweeter... SUFFERING! Bring me, say, 100 units of suffering and we shall call that sufficient! (Check Ruinous Powers tab to pay your tithe!)</font>")
+			src.verbs += list(/mob/living/carbon/human/proc/painpayment,)
+		if(12)
+			to_chat(src, "<font color='#800080'>A bit of bondage is nothing for my followers, grant me a taste of that succulent suffering and I shall make it so no chains can bind you.</font>")
+			src.lust++
+
 
 
 
@@ -363,21 +395,6 @@
 				to_chat(src, "<font color='#0400ff'>Well done! Maybe you aren't as dim as you appear... Seek me out upon my rune for your next riddle.</font>")
 			else
 				to_chat(src, "<font color='#0400ff'>You'll find me in a place of stone, Where silence cloaks the ground, Search through all the empty names, And finally I'll be found.</font>")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -776,3 +793,55 @@
 		pleasedfoot = 0
 		pleasedheart = 0
 		pleasedeyes= 0
+
+//Slaanesh pain payment
+/mob/living/carbon/human/proc/painpayment()
+	set category = "Ruinous Powers"
+	set name = "Offer Suffering"
+	set desc = "Embrace your hunger, your lust, your desire."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this while you're dead.</span>") //notice I removed restraint requirement. A lil bdsm never stopped a slaaneshi boy
+		return
+	if(src.slanpain < 100)
+		to_chat(src, "<span class='notice'>it's not enough! I need more suffering!</span>")
+		return
+	else
+		to_chat(src, "<font color='#800080'>Delicious! Oh how wonderful, its rare to taste suffering this fresh, my guests will be overjoyed! You've done so well, I simply must reward you.</font>")
+		src.verbs -= /mob/living/carbon/human/proc/painpayment
+		src.verbs += /mob/living/carbon/human/proc/bdsmescape
+		src.lust++
+		src.slanpain -=100
+		playsound(src, 'sound/effects/slanlaugh.ogg', 80, 0, -1)
+		return
+
+/mob/living/carbon/human/proc/bdsmescape()
+	set category = "Ruinous Powers"
+	set name = "Restraint Escape (20)"
+	set desc = "Embrace your hunger, your lust, your desire."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this while you're dead.</span>")
+		return
+	if(!src.restrained())
+		to_chat(src, "<span class='notice'>You aren't restrained!</span>")
+		return
+	if(src.slanpain < 20)
+		to_chat(src, "<span class='notice'>I don't have enough suffering to call upon my host!</span>")
+		return
+	else if((src.handcuffed) && (istype(src.handcuffed, /obj/item/handcuffs)))
+		visible_message("[src] slips their bindings!")
+		src.slanpain -=20
+		src.handcuffed = null
+		if(src.buckled && src.buckled.buckle_require_restraints)
+			src.buckled.unbuckle_mob()
+		src.update_inv_handcuffed()
+		return
+
+
+
+
