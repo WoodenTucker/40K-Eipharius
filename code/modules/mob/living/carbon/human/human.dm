@@ -127,7 +127,7 @@
 				stat("Chemical Storage", mind.changeling.chem_charges)
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
 			if(src.lust >=8)
-				stat("Pain:", "[src.slanpain]")
+				stat("Suffering:", "[src.slanpain]")
 
 
 
