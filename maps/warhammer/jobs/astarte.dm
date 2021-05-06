@@ -79,7 +79,7 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain") //lists all possible chapters
+	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain", "Blood Ravens") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
@@ -120,3 +120,9 @@
 			equip_to_slot_or_del(new /obj/item/melee/classic_baton/crozius, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
+		if("Blood Ravens")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bloodraven, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/brhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/br, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+

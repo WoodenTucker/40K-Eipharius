@@ -1128,6 +1128,34 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/bloodraven
+	name = "Blood Raven Power Armor"
+	desc = "The holy sanguine armor of the Blood Ravens."
+	icon_state = "brpowerarmor"
+	item_state = "brpowerarmor"
+	str_requirement = 25
+	canremove = 0
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
+
+/obj/item/clothing/head/helmet/brhelm
+	name = "Blood Raven Power Helm"
+	desc = "The sanguine helm of a Blood Raven"
+	icon_state = "br_helm"
+	item_state = "br_helm"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+//Inquisition
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
 	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest"

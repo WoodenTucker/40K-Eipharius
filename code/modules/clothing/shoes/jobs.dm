@@ -131,6 +131,12 @@
 	desc = "Boots of the Ultramarine Space Marine Chapter"
 	icon_state = "umboots"
 	item_state = "umboots"
+
+/obj/item/clothing/shoes/rgboots/br
+	name = "blood raven boots"
+	desc = "Boots of the Blood Raven Space Marine Chapter"
+	icon_state = "brboots"
+	item_state = "brboots"
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
 	desc = "A shined pair of shoes"
