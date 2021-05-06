@@ -102,6 +102,7 @@
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
 
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob)
+	user.setClickCooldown(20)
 	if(user.lust <=6)
 		to_chat(user, "The [src] resists you!")
 		return
@@ -115,5 +116,9 @@
 		C.apply_damage(rand(30,55), BRUTE,(DAM_SHARP|DAM_EDGE))
 		C.Weaken(10)
 		user.slanpain += rand(3,8)
-
+		to_chat(C, "<span class='warning'>As the lash hits your body you feel an excruciating amount of pain. The weapon feels somehow alive, moving to cause you as much pain as possible.</span>")
+		if(C.gender == MALE)
+			playsound(usr, 'sound/voice/Screams_Male_3.ogg', 100, 1, 1)
+		else if(C.gender == FEMALE)
+			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
 		..()
