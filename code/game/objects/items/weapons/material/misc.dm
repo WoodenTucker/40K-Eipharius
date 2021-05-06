@@ -126,3 +126,24 @@
 	..()
 	spawn(1) if(src) qdel(src)
 
+/obj/item/material/sword/slanarm/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
+	user.setClickCooldown(20)
+	if(user.lust <=12)
+		to_chat(user, "The mutated arm resists you!")
+		return
+	if(C.stat == DEAD)
+		to_chat(user,"<font color='#800080'>There is no pain to be harvested from the dead, a waste...</font>")
+	if(user.a_intent == I_HELP)
+		visible_message("<font color='#800080'>[user] lustfully slaps [C] with their mutated arm, leaving a red mark but no real damage.</font>")
+		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
+	else
+		playsound(usr, 'sound/effects/slanattack.ogg', 100, 1, 1)
+		C.apply_damage(rand(55,75), BRUTE,(DAM_SHARP|DAM_EDGE))
+		C.Weaken(10)
+		user.slanpain += rand(6,16)
+		to_chat(C, "<span class='warning'>[user] mangles your body with their mutated arm. It causes you pain on a level you didn't know existed.</span>")
+		if(C.gender == MALE)
+			playsound(usr, 'sound/voice/Screams_Male_3.ogg', 100, 1, 1)
+		else if(C.gender == FEMALE)
+			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
+		..()
