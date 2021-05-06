@@ -53,6 +53,7 @@
 			src.verbs += /mob/living/carbon/human/proc/khornerune
 			to_chat(src, "Hatred, rage and fury like you've never known consume your mind and block out your every thought. Flashes of a symbol appear in your mind. You feel compelled to draw it.")
 			src.rage++
+			GLOB.khorne_cult++
 		if(3)
 			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
 			if(T)
@@ -114,6 +115,7 @@
 			src.faction = "Nurgle"
 		if(2)
 			src.decay++
+			GLOB.nurgle_cult++
 			src.verbs += /mob/living/carbon/human/proc/nurglerune
 			to_chat(src, "He tells you story after story, some make you laugh, some make you cry and some make you stare in wonder. Before he departs he fills your mind with a symbol. It is quite pleasant. Maybe if I draw this symbol I can speak to him again.")
 		if(3)
@@ -262,6 +264,7 @@
 			src.verbs += /mob/living/carbon/human/proc/slaaneshrune
 			to_chat(src, "His command is clear. I must have that feeling of ecstasy again. I will obey. His symbol fills my mind, I see it when I close my eyes. I must find a place to draw it, I must honor him.")
 			src.lust++
+			GLOB.slaanesh_cult++
 		if(3)
 			var/obj/effect/decal/cleanable/slaanesh/T = locate() in src.loc
 			if(T)
@@ -398,6 +401,7 @@
 			src.verbs += /mob/living/carbon/human/proc/tzeentchrune
 			to_chat(src, "<font color='#0400ff'>To hear my next riddle memorize this symbol, draw it and stand upon it!</font>")
 			src.intrigue++
+			GLOB.tzeentch_cult++
 		if(3)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)

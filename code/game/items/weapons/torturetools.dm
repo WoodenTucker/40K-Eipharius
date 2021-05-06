@@ -55,11 +55,11 @@
 				H.apply_damage(rand(1, 3), BRUTE, O)
 				H.custom_pain("[pick("OH GOD YOUR MOUTH HURTS SO BAD!", "OH GOD WHY!", "OH GOD YOUR MOUTH!")]", 100, affecting = O)
 
-				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, -1) //And out it goes.
+				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, 1) //And out it goes.
 				GLOB.teeth_lost++
 				if(H.rage >= 2)
 					if(prob(20))
-						playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
+						playsound(src, 'sound/effects/khorne.ogg', 100, 1, 1)
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
 				if(H.intrigue >= 2)
 					if(prob(20)) //tzeentch boys are a bit softer than khorne/nurgle lads
@@ -70,7 +70,7 @@
 					to_chat(H, "The Prince of Pleasure protects his sevants from pain. What would be excruciating is turned to pleasure.")
 				if(H.decay >= 2)
 					if(prob(20))
-						playsound(src, 'sound/effects/fornurgle.ogg', 50, 0, -1)
+						playsound(src, 'sound/effects/fornurgle.ogg', 100, 1, 1)
 						H.say("FATHER NURGLE PROTECT YOUR ACOLYTE! BLIGHT THESE CORPSE-WORSHIPPPERS!")
 
 				user.doing_something = 0
@@ -81,3 +81,39 @@
 		else
 			to_chat(user, "<span class='notice'>You are already trying to pull out a tooth!</span>")
 		return
+/obj/item/halter
+	name = "adrenergic reuptake inhibitor"
+	desc = "The Inquisition's brightest chemists have devised this adrenergic reuptake inhibitor as a suitable tool to reveal followers of Slaanesh. It ceases all feeling causing them more discomfort than one could imagine."
+	icon = 'icons/obj/torturetools.dmi'
+	icon_state = "halter"
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	force = 1
+	throw_speed = 2
+	throw_range = 9
+	w_class = ITEM_SIZE_SMALL
+	center_of_mass = "x=18;y=10"
+	attack_verb = list("jabbed", "nipped")
+	sharp = TRUE
+	grab_sound = 'sound/items/handle/wirecutter_pickup.ogg'
+	drop_sound = 'sound/items/handle/wirecutter_drop.ogg'
+
+/obj/item/halter/attack(mob/living/carbon/human/C as mob, var/mob/living/carbon/human/user as mob)
+	user.setClickCooldown(20)
+	if(C.stat == DEAD)
+		to_chat(user,"This would be wasted on the dead.")
+	if(user.a_intent == I_HELP)
+		visible_message("[user] threatens [C] with the [src] if they do not talk!")
+	else
+		playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+		C.apply_damage(rand(5,8), TOX, BP_APPENDIX)
+		to_chat(C, "<span class='warning'>[user] momentarily connects [C] to the [src], causing complete cessation of all feeling and thought.</span>")
+		if(C.lust >= 2)
+			if(prob(20))
+				playsound(src, 'sound/effects/slanlaugh.ogg', 100, 1, 1)
+				C.say("GIVE IT BACK! I CAN'T FEEL IT ANYMORE! GIVE IT BACK!")
+			else
+				to_chat(C, "<font color='#800080'>You manage to resist torture! ...This time")
+				return
+
+		..()
