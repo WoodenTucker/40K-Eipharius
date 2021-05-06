@@ -77,3 +77,43 @@
 		else
 			to_chat(user, "<span class='notice'> You stop making scrap.</span>")
 	. = ..()
+
+/obj/item/melee/whip/lashoftorment
+	name = "lash of torment"
+	desc = "Made up of lascivious coils and barbed hooks, a Lash of Torment moves with a mind of its own."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "lash"
+	item_state = "lash"
+	hitsound = 'sound/weapons/whip.ogg'
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT
+	force = 45 //max hit with 60 strength and no equipment. Duel Arena no No forfeit - Snapshot
+	throwforce = 7
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 4)
+	attack_verb = list("flicked", "whipped", "lashed")
+
+
+/obj/item/melee/whip/lashoftorment/pickup(var/mob/living/carbon/human/user)
+	if(user.lust <= 6 )
+		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
+		user.make_dizzy(220)
+		user.vomit()
+		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
+
+/obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob)
+	if(user.lust <=6)
+		to_chat(user, "The [src] resists you!")
+		return
+	if(C.stat == DEAD)
+		to_chat(user,"<font color='#800080'>There is no pain to be harvested from the dead, a waste...</font>")
+	if(user.a_intent == I_HELP)
+		visible_message("<font color='#800080'>[user] lustfully slaps [C] with the whip, leaving a red mark but no real damage.</font>")
+		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
+	else
+		playsound(usr, 'sound/weapons/whip.ogg', 100, 1, 1)
+		C.apply_damage(rand(30,55), BRUTE,(DAM_SHARP|DAM_EDGE))
+		C.Weaken(10)
+		user.slanpain += rand(3,8)
+
+		..()

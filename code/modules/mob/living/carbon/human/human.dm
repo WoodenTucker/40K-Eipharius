@@ -15,6 +15,7 @@
 	var/intrigue = 0 //tzeentch favor
 	var/isdrawing = 0 //used to stop rune spam
 	var/inmenu = 0 //stop menu spammers
+	var/slanpain = 0 //slaaneshi pain harvesting
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -125,6 +126,10 @@
 			if(mind.changeling)
 				stat("Chemical Storage", mind.changeling.chem_charges)
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
+			if(src.lust >=8)
+				stat("Pain:", "[src.slanpain]")
+
+
 
 /mob/living/carbon/human/ex_act(severity)
 	if(!blinded)
