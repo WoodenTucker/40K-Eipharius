@@ -489,7 +489,6 @@ Begin Warhammer loadouts
 			var/troopnum = rand(1,50000)
 			src.name = "Troop [troopnum]"
 			src.real_name = "Troop [troopnum]"
-			src.gender = MALE
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
