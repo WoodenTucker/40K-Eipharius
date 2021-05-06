@@ -104,4 +104,25 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 
+/obj/item/material/sword/slanarm
+	name = "mutated arm"
+	desc = "The arm lurches towards living beings, insatiable in its thirst for pain."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "slanarm"
+	item_state = "slanarm"
+	attack_verb = list("stabbed", "impales", "rends", "tears", "flays", "rips")
+	force = 75
+	sharpness = 75
+	block_chance = 75
+	hitsound = 'sound/effects/slanattack.ogg'
+	sharp = 1
+	edge = 1
+	w_class = ITEM_SIZE_HUGE
+	grab_sound = 'sound/effects/slanarm.ogg'
+	equipsound = 'sound/items/holster_sword1.ogg'
+	drop_sound = 'sound/effects/slanarm.ogg'
+
+/obj/item/material/sword/slanarm/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
 

@@ -336,6 +336,6 @@
 	icon_state = "slaanesh"
 	item_state = "slaanesh"
 	body_parts_covered = FACE
-	flags_inv = HIDEEARS | BLOCKHAIR | HIDEFACE
+	flags_inv = HIDEEARS | HIDEFACE
 	w_class = ITEM_SIZE_SMALL
 	var/slan = 1

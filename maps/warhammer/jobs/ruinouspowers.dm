@@ -325,6 +325,25 @@
 		if(12)
 			to_chat(src, "<font color='#800080'>A bit of bondage is nothing for my followers, grant me a taste of that succulent suffering and I shall make it so no chains can bind you.</font>")
 			src.lust++
+		if(13)
+			to_chat(src, "<font color='#800080'>Now for one of my favorite party tricks, put on the mask and outfit and I will show it to you!</font>")
+			src.lust++
+		if(14)
+			if(istype(wear_mask, /obj/item/clothing/mask/masquerade) && istype(wear_suit, /obj/item/clothing/suit/armor/slanclothing)) //hijacking this to give creepo noises
+				playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
+				STAT_LEVEL(str) += 1
+				STAT_LEVEL(dex) += 1
+				to_chat(src, "<font color='#800080'>You feel it too, don't you? Stronger, more agile, more powerful. Will yourself to change and you can, offer me their suffering and in exchange you will feel nothing but the most intense of pleasures.</font>")
+				src.verbs += /mob/living/carbon/human/proc/slannyarm
+				src.lust++
+			else
+				to_chat(src, "I need to equip both my masquerade mask and macabre clothing!")
+				return
+
+
+
+
+
 
 
 
@@ -815,6 +834,7 @@
 		src.lust++
 		src.slanpain -=100
 		playsound(src, 'sound/effects/slanlaugh.ogg', 80, 0, -1)
+		playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 		return
 
 /mob/living/carbon/human/proc/bdsmescape()
@@ -842,6 +862,32 @@
 		src.update_inv_handcuffed()
 		return
 
-
-
-
+/mob/living/carbon/human/proc/slannyarm()
+	set category = "Ruinous Powers"
+	set name = "Mutate Arm (20)"
+	set desc = "Embrace your hunger, your lust, your desire."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this while you're dead.</span>")
+		return
+	if(src.slanpain < 20)
+		to_chat(src, "<span class='notice'>You don't have enough suffering!</span>")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/material/sword/slanarm)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'>  [usr] speedily transforms their arm back to normal!</span>", "<span class='notice'>Your arm changes back to normal!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/material/sword/slanarm)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] speedily transforms their arm back to normal!</span>", "<span class='notice'>Your arm changes back to normal!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You hide your mutated arm!")
+		src.is_toggled = 1
+	else
+		visible_message("[src]'s arm rapidly mutates into a terrifying blade!")
+		usr.put_in_hands(new /obj/item/material/sword/slanarm(usr))
+		src.is_toggled = 2
+		src.slanpain -=20

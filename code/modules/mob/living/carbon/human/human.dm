@@ -16,6 +16,8 @@
 	var/isdrawing = 0 //used to stop rune spam
 	var/inmenu = 0 //stop menu spammers
 	var/slanpain = 0 //slaaneshi pain harvesting
+	var/can_toggle = 1
+	var/is_toggled = 1 //armblade shit
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
