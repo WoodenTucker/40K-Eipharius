@@ -340,10 +340,6 @@
 		msg += "[T.He] [T.is] rotting and blackened, the skin sloughing off. The smell is indescribably foul.\n"
 	if(decaylevel == 4)
 		msg += "[T.He] [T.is] mostly dessicated now, with only bones remaining of what used to be a person.\n"
-	if(decay >= 10)
-		msg += "[T.He] [T.is] incredibly cachectic, looking as though they are mere inches from succumbing to numerous illnesses.\n"
-	if(lust >=10)
-		msg += "[T.He] [T.is] in a state of immense pleasure. You can see the flame of lust in their eyes.\n"
 	if(skinned == 1)
 		msg += "[T.He] [T.is] mangled, someone or something has torn the skin from their corpse!\n"
 	if(decay > 2 || rage >=2 || lust >= 2 || intrigue >=2)
