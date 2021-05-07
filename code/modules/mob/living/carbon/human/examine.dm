@@ -344,6 +344,8 @@
 		msg += "[T.He] [T.is] incredibly cachectic, looking as though they are mere inches from succumbing to numerous illnesses.\n"
 	if(lust >=10)
 		msg += "[T.He] [T.is] in a state of immense pleasure. You can see the flame of lust in their eyes.\n"
+	if(skinned == 1)
+		msg += "[T.He] [T.is] mangled, someone or something has torn the skin from their corpse!\n"
 	if(decay > 2 || rage >=2 || lust >= 2 || intrigue >=2)
 		if(user.mind.special_role == "Nurgle Cultist" || user.mind.special_role == "Khorne Cultist" || user.mind.special_role == "Slaanesh Cultist" || user.mind.special_role == "Tzeentch Cultist")
 			msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
