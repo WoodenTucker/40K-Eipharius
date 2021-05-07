@@ -88,6 +88,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Raven Guard Chaplain")
@@ -103,6 +104,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/smurfhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Salamanders")
@@ -110,6 +112,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallyhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarine Chaplain")
@@ -125,6 +128,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/brhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/br, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 
