@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/smalldemon
-	name = "small khornite demon"
-	real_name = "small khornite demon"
+	name = "small khornate daemon"
+	real_name = "small khornate daemon"
 	desc = "A miniscule warp terror drawn by the bloodshed of this planet."
 	icon = 'icons/mob/Demon.dmi'
 	icon_state = "demon"
