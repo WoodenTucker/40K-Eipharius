@@ -125,4 +125,6 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/brhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/br, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)
 

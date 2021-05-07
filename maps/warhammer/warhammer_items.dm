@@ -906,7 +906,7 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
-	access = list(access_maint_tunnels, access_security, access_sec_doors)
+	access = list(access_maint_tunnels,)
 
 /obj/item/card/id/dog_tag/kroot
 	icon_state = "tagred"
