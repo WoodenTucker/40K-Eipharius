@@ -46,7 +46,7 @@
 
 	unleash_flame(target, user)
 
-/proc/getline2(atom/from_atom, atom/to_atom, exclude_origin=FALSE)
+/proc/getline2(atom/from_atom, atom/to_atom, exclude_origin=TRUE)
 
 /obj/item/gun/flamer/proc/unleash_flame(atom/target, mob/living/user)
 	set waitfor = 0
