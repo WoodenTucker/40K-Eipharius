@@ -977,7 +977,7 @@ Imperial Guardsman
 	desc = "The holy garments marking the wearer as sister superior"
 	icon_state = "hospitaller"
 	item_state = "hospitaller"
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 50, rad = 0)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 10, bio = 50, rad = 0)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/storage/firstaid/adv) //i'll figure out what can go in here idk
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -988,7 +988,7 @@ Imperial Guardsman
 	desc = "The holy garments marking the wearer as a sister hospitaller"
 	icon_state = "hospitallerold"
 	item_state = "hospitallerold"
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 25, bomb = 10, bio = 50, rad = 0)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 50, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
