@@ -515,7 +515,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/guard_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
