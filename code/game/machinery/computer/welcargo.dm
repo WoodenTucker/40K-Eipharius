@@ -52,7 +52,7 @@
 		dat += "<B> Weaponry:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];lasgun=1'>Las Rifle (10)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];lascarb=1'>Las Carbine (15)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];laspistol=1'>Las Pistol (8)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];laspistol=1'>Las Pistol (6)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];mcsword=1'>Mercy Chainsword (20)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];stubber=1'>Auto Stubber (25)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];bolter=1'>Bolt Pistol (25)</A><BR>"
@@ -351,7 +351,7 @@
 			new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["laspistol"])
-		if(GLOB.thrones < 8) //do we got enough shekels?
+		if(GLOB.thrones < 6) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -359,7 +359,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 8 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 6 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
