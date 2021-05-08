@@ -298,7 +298,7 @@
 	total_positions = 3
 	spawn_positions = 3
 	latejoin_at_spawnpoints = TRUE
-	child_role = TRUE
+	species_role = "Child"
 	open_when_dead = 1
 	supervisors = "the Abbot and every adult you see."
 	selection_color = "#515151"
