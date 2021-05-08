@@ -138,6 +138,7 @@
 	l_ear = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/rank/inquisitor
 	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
+	glasses = /obj/item/clothing/glasses/night
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
