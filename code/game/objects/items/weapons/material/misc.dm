@@ -88,6 +88,14 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
+	
+/obj/item/material/sword/commissword/sabre
+	name = "Sabre"
+	desc = "A well crafted sabre. Looks sharp."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "sabre"
+	item_state = "sabre"
+	force = 15
 
 /obj/item/material/sword/choppa
 	name = "choppa"
