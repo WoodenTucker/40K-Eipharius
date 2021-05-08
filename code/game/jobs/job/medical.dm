@@ -32,7 +32,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister Superior [current_name]")
+		H.fully_replace_character_name("Sister Hospitaller [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
 		H.get_idcard()?.access = get_all_accesses()

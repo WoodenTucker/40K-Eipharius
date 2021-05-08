@@ -973,8 +973,8 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 //Hospitaller gear
 /obj/item/clothing/suit/storage/sistersuperiorsuit
-	name = "sister superior's suit"
-	desc = "The holy garments marking the wearer as sister superior"
+	name = "sister hospitaller's suit"
+	desc = "The holy garments marking the wearer as sister hospitaller"
 	icon_state = "hospitaller"
 	item_state = "hospitaller"
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 10, bio = 50, rad = 0)
@@ -984,8 +984,8 @@ Imperial Guardsman
 
 
 /obj/item/clothing/suit/storage/sistersuit
-	name = "sister hospitaller's suit"
-	desc = "The holy garments marking the wearer as a sister hospitaller"
+	name = "sister discipulus's suit"
+	desc = "The holy garments marking the wearer as a discipulus hospitaller"
 	icon_state = "hospitallerold"
 	item_state = "hospitallerold"
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 50, rad = 0)
