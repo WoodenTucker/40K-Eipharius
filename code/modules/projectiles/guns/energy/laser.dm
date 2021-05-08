@@ -308,7 +308,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/laspistol
 	name = "laspistol"
-	desc = "The standard-issue rifle of the Astra Militarum as well as one of the most common weapons found in the Imperium of Man."
+	desc = "The standard-issue sidearm of the Astra Militarum."
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
