@@ -258,8 +258,9 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
-	belt = /obj/item/device/flashlight/lantern
+	belt = /obj/item/melee/mercycs
 	l_ear = /obj/item/device/radio/headset/red_team
+	r_pocket = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	pda_slot = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
