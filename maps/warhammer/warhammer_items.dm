@@ -812,7 +812,7 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/guardsman
 	name = "Guardsman's Flak Armor"
 	desc = "The proud armor of an Imperial Guardsman"
-	icon_state = "fharmor"
+	icon_state = "farmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -945,7 +945,7 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/sgt
 	name = "Guard Sergeant's Armor"
 	desc = "The well-worn armor of an Imperial Guard Sergeant."
-	icon_state = "farmor"
+	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
