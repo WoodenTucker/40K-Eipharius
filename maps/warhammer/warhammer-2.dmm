@@ -553,7 +553,7 @@
 "kG" = (/obj/structure/table/steel_reinforced,/obj/random/tech_supply,/obj/machinery/power/apc{dir = 1; pixel_y = 32},/obj/structure/cable{d2 = 2; icon_state = "0-2"; pixel_y = 0},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/engineering)
 "kH" = (/obj/structure/cable{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor/plating,/area/cadiaoutpost/oa/engineering)
 "kI" = (/obj/machinery/door/airlock/cone,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
-"kJ" = (/obj/structure/table/rack/dark,/obj/item/gun/projectile/heavysniper,/obj/effect/floor_decal/turf/checkers,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/security/armory)
+"kJ" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/security/armory)
 "kK" = (/obj/effect/landmark/start{name = "Tech Priest"},/obj/effect/floor_decal/newcorner/black/solid,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/engineering)
 "kL" = (/obj/structure/table/standard{name = "plastic table frame"},/obj/effect/floor_decal/turf/barnew,/obj/item/reagent_containers/food/drinks/bottle/tequilla,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
 "kM" = (/obj/effect/floor_decal/turf/barnew,/obj/effect/decal/cleanable/dirt,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
