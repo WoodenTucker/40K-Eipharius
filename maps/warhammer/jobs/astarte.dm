@@ -25,6 +25,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 	announced = 0
+	species_role = "Astartes"
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -41,6 +42,8 @@
 		H.bowels = 0
 		H.verbs += /mob/living/carbon/human/proc/chapterselection
 		H.adjustStaminaLoss(-INFINITY) //astardes have basically infinite fight in them
+		H.health = 500
+		H.maxHealth = 500
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black
