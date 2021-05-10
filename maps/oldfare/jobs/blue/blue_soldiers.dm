@@ -194,7 +194,7 @@
 	title = "Blue Scavenger"
 	total_positions = -1
 	outfit_type = /decl/hierarchy/outfit/job/bluesoldier/scout
-	child_role = TRUE
+	species_role = "Child"
 	can_be_in_squad = FALSE
 	//Kids suck at everything.
 	specific_skill = TRUE

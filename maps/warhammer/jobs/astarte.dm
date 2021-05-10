@@ -25,6 +25,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 	announced = 0
+	species_role = "Space Marine"
 
 
 	equip(var/mob/living/carbon/human/H)
