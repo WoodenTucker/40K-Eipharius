@@ -182,5 +182,5 @@ obj/mortar/flare/blue
 	name = "Krak Grenade"
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius, its weight makes it harder to throw."
 	icon_state = "krak_grenade"
-	num_fragments = 250
+	num_fragments = 10
 	explosion_size = 4
