@@ -47,7 +47,7 @@
 		dat += "<A href='byond://?src=\ref[src];sabre=1'>Sabre (8)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];cmask=1'>Military Gas Mask (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];chelmet=1'>Flak Helmet (10)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];carmor=1'>Heavy Flak Armor (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];carmor=1'>Flak Armor (15)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];nvg=1'>Photo Visor (30)</A><BR>"
 		dat += "<B> Weaponry:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];lasgun=1'>Las Rifle (10)</A><BR>"
