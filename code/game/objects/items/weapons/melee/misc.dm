@@ -104,6 +104,7 @@
 
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
 	user.setClickCooldown(20)
+	var/hit_zone = ran_zone()
 	if(user.lust <=6)
 		to_chat(user, "The [src] resists you!")
 		return
@@ -114,7 +115,7 @@
 		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
 	else
 		playsound(usr, 'sound/weapons/whip.ogg', 100, 1, 1)
-		C.apply_damage(rand(30,55), BRUTE,(DAM_SHARP|DAM_EDGE))
+		C.apply_damage(rand(30,55), BRUTE, hit_zone, 0, (DAM_SHARP|DAM_EDGE))
 		C.Weaken(10)
 		user.slanpain += rand(3,8)
 		to_chat(C, "<span class='warning'>As the lash hits your body you feel an excruciating amount of pain. The weapon feels somehow alive, moving to cause you as much pain as possible.</span>")
