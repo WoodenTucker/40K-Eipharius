@@ -258,8 +258,9 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
-	belt = /obj/item/device/flashlight/lantern
+	belt = /obj/item/melee/mercycs
 	l_ear = /obj/item/device/radio/headset/red_team
+	r_pocket = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	pda_slot = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -500,6 +501,8 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
@@ -515,7 +518,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/color/brown, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)

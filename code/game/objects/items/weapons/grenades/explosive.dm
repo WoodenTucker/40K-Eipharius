@@ -177,3 +177,10 @@ obj/mortar/flare/blue
 /obj/item/grenade/frag/high_yield/on_explosion(var/turf/O)
 	if(explosion_size)
 		explosion(O, -1, round(explosion_size/2), explosion_size, round(explosion_size/2), 0) //has a chance to blow a hole in the floor
+
+/obj/item/grenade/frag/high_yield/krak
+	name = "Krak Grenade"
+	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius, its weight makes it harder to throw."
+	icon_state = "krak_grenade"
+	num_fragments = 250
+	explosion_size = 4
