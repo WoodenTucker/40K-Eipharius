@@ -117,8 +117,9 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 		if("Child")
 			H.set_species(species_role)//Actually makes them a child.
 			H.unlock_achievement(new/datum/achievement/kid())
-		if("Space Marine")
+		if("Astartes")
 			H.set_species(species_role)
+			H.unlock_achievement(new/datum/achievement/astartes())
 
 	do_skill_setup(H)//Give them all their skills.
 

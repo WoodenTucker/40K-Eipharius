@@ -105,3 +105,7 @@
 	name = "BOOM HEADSHOT"
 	difficulty = DIFF_MEDIUM
 	description = "In all likelyhood, they had a helmet, and you accomplished pretty much nothing."
+
+/datum/achievement/astartes
+	name = "Know no fear!"
+	description = "The point of his spear!"
