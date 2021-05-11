@@ -16,6 +16,7 @@
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
 	sexybits_location = BP_GROIN
 	inherent_verbs = list()
+	slowdown = -1
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
@@ -23,7 +24,6 @@
 		/datum/unarmed_attack/bite
 		)
 
-	pixel_offset_x = -16
 	has_fine_manipulation = 0
 	siemens_coefficient = 0
 	gluttonous = GLUT_ANYTHING
