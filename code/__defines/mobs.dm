@@ -390,6 +390,7 @@
 #define TZEENTCH "Tzeentch"
 #define NURGLE "Nurgle"
 #define TAU "Tau"
+#define TYRANIDS "Tyranids"
 
 /*
 #define SKILL_LOW(x) x<=4

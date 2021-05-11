@@ -37,8 +37,6 @@
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
 
 	blood_color = "#05ee05"
-	flesh_color = "#282846"
-	base_color =  "#00060c"
 
 	gibbed_anim = "gibbed-a"
 	dusted_anim = "dust-a"
@@ -70,3 +68,16 @@
 /mob/living/carbon/human/genestealer/New(var/new_loc)
 	h_style = "Bald"
 	..(new_loc, new_nid)
+
+/mob/living/carbon/human/genestealer/Initialize()
+	. = ..()
+	fully_replace_character_name(random_nid_name(src.gender))
+	warfare_faction = TYRANIDS
+	isburied = 1
+	faction = "Tyranids" //keeps the homies safe from npc friends
+	mind.special_role = "Tyranid" //For hud icons
+	AddInfectionImages()
+
+
+
+	hand = 0//Make sure one of their hands is active.
