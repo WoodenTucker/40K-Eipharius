@@ -23,6 +23,7 @@ Astartes
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_PAIN
+	inherent_verbs = list()
 
 /datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//asstardes ages are all over.
