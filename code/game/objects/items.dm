@@ -105,6 +105,8 @@
 
 	var/table_pickup_sound = null //Sound it makes when you take something off a table.
 
+	var/clothingbuffnum = 0 //just so I can make a switch statement to manage clothing buffs
+
 
 /obj/item/New()
 	..()

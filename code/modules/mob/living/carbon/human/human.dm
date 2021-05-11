@@ -1525,6 +1525,8 @@
 /mob/living/carbon/human/can_feel_pain(var/obj/item/organ/check_organ)
 	if(isSynthetic())
 		return FALSE
+	if(src.species == SPECIES_ASTARTES)
+		return FALSE
 	if(check_organ)
 		if(!istype(check_organ))
 			return FALSE

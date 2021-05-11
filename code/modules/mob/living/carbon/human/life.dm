@@ -1007,7 +1007,9 @@
 	if(!can_feel_pain())
 		shock_stage = 0
 		return
-
+	if(src.species == SPECIES_ASTARTES)
+		shock_stage = 0
+		return
 	if(is_asystole())
 		shock_stage = max(shock_stage, 61)
 	var/traumatic_shock = get_shock()
