@@ -899,5 +899,5 @@
 		usr.put_in_hands(new /obj/item/material/sword/slanarm(usr))
 		src.is_toggled = 2
 		src.slanpain -=20
-		for(var/datum/species/X)
+		for(var/datum/species/X) //this is one of those things that absolutely shouldn't work, but does. For some reason, this is the only way I've found to increase move speed.
 			X.slowdown = -1

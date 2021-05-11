@@ -289,6 +289,7 @@
 #define SPECIES_TAU "Tau"
 #define SPECIES_SKITARII "Skitarii"
 #define SPECIES_ASTARTES "Astartes"
+#define SPECIES_TYRANID "Tyranids"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
