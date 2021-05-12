@@ -23,6 +23,8 @@
 
 	var/coughedtime = null
 
+	var/skinned = 0 //for slaanesh
+
 	var/cpr_time = 1.0
 	var/lastpuke = 0
 	var/nutrition = 400

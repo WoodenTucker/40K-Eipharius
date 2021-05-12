@@ -56,7 +56,11 @@
 
 	overlays += I
 
-
+/obj/item/clothing/shoes/jackboots/krieg
+	name = "krieg boots"
+	desc = "Krieg-issue jackboots."
+	icon_state = "kriegboots"
+	item_state = "kriegboots"
 
 /obj/item/clothing/shoes/jackboots/unathi
 	name = "toe-less jackboots"
@@ -127,6 +131,12 @@
 	desc = "Boots of the Ultramarine Space Marine Chapter"
 	icon_state = "umboots"
 	item_state = "umboots"
+
+/obj/item/clothing/shoes/rgboots/br
+	name = "blood raven boots"
+	desc = "Boots of the Blood Raven Space Marine Chapter"
+	icon_state = "brboots"
+	item_state = "brboots"
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
 	desc = "A shined pair of shoes"

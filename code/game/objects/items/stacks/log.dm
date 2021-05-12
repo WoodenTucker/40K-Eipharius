@@ -21,6 +21,12 @@
 		new /obj/item/torch/self_lit(get_turf(src))
 		to_chat(user, "You carve the log into a usable torch.")
 		qdel(src)
+	else if(istype(W, /obj/item/material/sword/skinning_knife))
+		playsound(src, 'sound/effects/ash_chop.ogg', 80, TRUE)
+		(do_after(user,40,src))
+		new /obj/structure/statue/tanningrack(get_turf(src))
+		to_chat(user, "You carve the log into a tanning rack.")
+		qdel(src)
 	else
 		..()
 

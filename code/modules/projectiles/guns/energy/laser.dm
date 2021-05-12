@@ -226,6 +226,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 60
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -233,6 +234,28 @@ obj/item/gun/energy/retro
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		)
+
+/obj/item/gun/energy/las/lasgun/luscius
+	name = "lucius pattern lasgun"
+	desc = "The standard-issue rifle of the Death Korps of Krieg."
+	icon_state = "luscius"
+	item_state = "luscius"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 20
+	one_hand_penalty = 2
+	accuracy = 2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lusgun
+	charge_cost = 75
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lasgun-wielded"
+
+	firemodes = list(
+		list(mode_name="semiauto",     burst=1,     fire_delay=0, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
@@ -248,6 +271,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 50
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -271,6 +295,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 40
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -283,9 +308,9 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/laspistol
 	name = "laspistol"
-	desc = "The standard-issue rifle of the Astra Militarum as well as one of the most common weapons found in the Imperium of Man."
-	icon_state = "laspistols-e"
-	item_state = "laspistols-e"
+	desc = "The standard-issue sidearm of the Astra Militarum."
+	icon_state = "laspistol"
+	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
@@ -293,6 +318,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol

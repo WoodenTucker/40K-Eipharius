@@ -82,12 +82,21 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 25
+	force = 30
 	sharp = 1
 	edge = 1
+	block_chance = 30
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
+	
+/obj/item/material/sword/commissword/sabre
+	name = "Sabre"
+	desc = "A well crafted sabre. Looks sharp."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "sabre"
+	item_state = "sabre"
+	force = 18
 
 /obj/item/material/sword/choppa
 	name = "choppa"
@@ -104,4 +113,47 @@
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 
+/obj/item/material/sword/slanarm
+	name = "mutated arm"
+	desc = "The arm lurches towards living beings, insatiable in its thirst for pain."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "slanarm"
+	item_state = "slanarm"
+	attack_verb = list("stabbed", "impales", "rends", "tears", "flays", "rips")
+	force = 75
+	sharpness = 75
+	block_chance = 75
+	hitsound = 'sound/effects/slanattack.ogg'
+	sharp = 1
+	edge = 1
+	w_class = ITEM_SIZE_HUGE
+	grab_sound = 'sound/effects/slanarm.ogg'
+	equipsound = 'sound/items/holster_sword1.ogg'
+	drop_sound = 'sound/effects/slanarm.ogg'
 
+/obj/item/material/sword/slanarm/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/material/sword/slanarm/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
+	user.setClickCooldown(20)
+	var/hit_zone = ran_zone()
+	if(user.lust <=12)
+		to_chat(user, "The mutated arm resists you!")
+		return
+	if(C.stat == DEAD)
+		to_chat(user,"<font color='#800080'>There is no pain to be harvested from the dead, a waste...</font>")
+	if(user.a_intent == I_HELP)
+		visible_message("<font color='#800080'>[user] lustfully slaps [C] with their mutated arm, leaving a red mark but no real damage.</font>")
+		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
+	else
+		playsound(usr, 'sound/effects/slanattack.ogg', 100, 1, 1)
+		C.apply_damage(rand(55,75), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
+		C.Weaken(10)
+		user.slanpain += rand(6,16)
+		to_chat(C, "<span class='warning'>[user] mangles your body with their mutated arm. It causes you pain on a level you didn't know existed.</span>")
+		if(C.gender == MALE)
+			playsound(usr, 'sound/voice/Screams_Male_3.ogg', 100, 1, 1)
+		else if(C.gender == FEMALE)
+			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
+		..()

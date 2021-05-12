@@ -138,9 +138,14 @@
 	l_ear = /obj/item/device/radio/headset/red_team
 	uniform = /obj/item/clothing/under/rank/inquisitor
 	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
+	glasses = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/gun/projectile/bolter_pistol
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
 	id_type = /obj/item/card/id/inquisition/principal_agent
 	pda_type = null
 	pda_slot = null

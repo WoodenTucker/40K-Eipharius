@@ -45,8 +45,6 @@
 	request_player()
 	h_style = "Bald"
 	..(new_loc, new_kroot)
-	sleep(3000)
-	request_player()
 
 /mob/living/carbon/human/kroot/Initialize()
 	. = ..()

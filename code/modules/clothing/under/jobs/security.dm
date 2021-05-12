@@ -206,3 +206,14 @@
 	icon_state = "barnyuni"
 	item_state = "ba_suit"
 	worn_state = "barny"
+
+/obj/item/clothing/under/rank/krieger
+	name = "krieg fatigues"
+	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+	icon_state = "krieg"
+	item_state = "krieg"
+	worn_state = "krieg"
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

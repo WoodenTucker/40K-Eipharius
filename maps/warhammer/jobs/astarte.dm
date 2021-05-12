@@ -25,6 +25,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 	announced = 0
+	species_role = "Astartes"
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -41,6 +42,8 @@
 		H.bowels = 0
 		H.verbs += /mob/living/carbon/human/proc/chapterselection
 		H.adjustStaminaLoss(-INFINITY) //astardes have basically infinite fight in them
+		H.health = 500
+		H.maxHealth = 500
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black
@@ -79,7 +82,7 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain") //lists all possible chapters
+	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain", "Blood Ravens") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
@@ -88,6 +91,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Raven Guard Chaplain")
@@ -103,6 +107,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/smurfhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Salamanders")
@@ -110,6 +115,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallyhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarine Chaplain")
@@ -120,3 +126,12 @@
 			equip_to_slot_or_del(new /obj/item/melee/classic_baton/crozius, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
+		if("Blood Ravens")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bloodraven, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/brhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/br, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)
+

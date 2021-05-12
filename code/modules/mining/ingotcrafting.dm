@@ -106,22 +106,22 @@
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/box/a556/mg08(src.loc)
-				new /obj/item/ammo_magazine/box/a556/mg08(src.loc)
+				new /obj/item/ammo_magazine/box/a556/mg08(user.loc)
+				new /obj/item/ammo_magazine/box/a556/mg08(user.loc)
 				qdel(src)
 				return
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/brifle(src.loc)
-				new /obj/item/ammo_magazine/brifle(src.loc)
+				new /obj/item/ammo_magazine/brifle(user.loc)
+				new /obj/item/ammo_magazine/brifle(user.loc)
 				qdel(src)
 				return
 			if(3)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/shovel(src.loc)
-				new /obj/item/shovel(src.loc)
+				new /obj/item/shovel(user.loc)
+				new /obj/item/shovel(user.loc)
 				qdel(src)
 				return
 
@@ -219,19 +219,19 @@
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty(src.loc)
+				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty(user.loc)
 				qdel(src)
 				return
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester(src.loc)
+				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester(user.loc)
 				qdel(src)
 				return
 			if(3)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/skitariiplating(src.loc)
+				new /obj/item/skitariiplating(user.loc)
 				qdel(src)
 				return
 
@@ -313,13 +313,13 @@
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/bolt_rifle_magazine(src.loc)
+				new /obj/item/ammo_magazine/bolt_rifle_magazine(user.loc)
 				qdel(src)
 				return
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(src.loc)
+				new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(user.loc)
 				qdel(src)
 				return
 
@@ -383,7 +383,7 @@
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/card/id/ring/goldring(src.loc)
+				new /obj/item/card/id/ring/goldring(user.loc)
 				qdel(src)
 				return
 
@@ -447,6 +447,6 @@
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/lockebolter(src.loc)
+				new /obj/item/gun/projectile/lockebolter(user.loc)
 				qdel(src)
 				return

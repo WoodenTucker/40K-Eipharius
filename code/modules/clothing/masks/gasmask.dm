@@ -104,6 +104,15 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
+/obj/item/clothing/mask/gas/krieg
+	name = "krieg mask"
+	desc = "A close-fitting tactical mask standard in the Death Korps of Krieg."
+	icon_state = "kriegmask"
+	item_state = "kriegmask"
+	siemens_coefficient = 0.7
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without their wig and mask."

@@ -68,8 +68,8 @@
 		usr.update_action_buttons()
 
 /obj/item/clothing/head/welding/demon
-	name = "demonic welding helmet"
-	desc = "A painted welding helmet, this one has a demonic face on it."
+	name = "daemonic welding helmet"
+	desc = "A painted welding helmet, this one has a daemonic face on it."
 	icon_state = "demonwelding"
 	item_state_slots = list(
 		slot_l_hand_str = "demonwelding",

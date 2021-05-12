@@ -15,6 +15,9 @@
 	var/intrigue = 0 //tzeentch favor
 	var/isdrawing = 0 //used to stop rune spam
 	var/inmenu = 0 //stop menu spammers
+	var/slanpain = 0 //slaaneshi pain harvesting
+	var/can_toggle = 1
+	var/is_toggled = 1 //armblade shit
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -125,6 +128,10 @@
 			if(mind.changeling)
 				stat("Chemical Storage", mind.changeling.chem_charges)
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
+			if(src.lust >=9)
+				stat("Suffering:", "[src.slanpain]")
+
+
 
 /mob/living/carbon/human/ex_act(severity)
 	if(!blinded)
@@ -1517,6 +1524,8 @@
 
 /mob/living/carbon/human/can_feel_pain(var/obj/item/organ/check_organ)
 	if(isSynthetic())
+		return FALSE
+	if(src.species == SPECIES_ASTARTES)
 		return FALSE
 	if(check_organ)
 		if(!istype(check_organ))

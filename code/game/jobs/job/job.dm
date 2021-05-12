@@ -19,7 +19,7 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 	var/selection_color = "#ffffff"       // Selection screen color
 	var/list/alt_titles                   // List of alternate titles, if any and any potential alt. outfits as assoc values.
 	var/req_admin_notify                  // If this is set to 1, a text is printed to the player when jobs are assigned, telling him that he should let admins know that he has to disconnect.
-	var/minimal_player_age = 0            // If you have use_age_restriction_for_jobs config option enabled and the database set up, this option will add a requirement for players to be at least minimal_player_age days old. (meaning they first signed in at least that many days before.)
+	var/minimal_player_age = 1            // If you have use_age_restriction_for_jobs config option enabled and the database set up, this option will add a requirement for players to be at least minimal_player_age days old. (meaning they first signed in at least that many days before.)
 	var/department = null                 // Does this position have a department tag?
 	var/head_position = 0                 // Is this position Command?
 	var/minimum_character_age = 0
@@ -43,7 +43,7 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 	var/social_class = SOCIAL_CLASS_MED	 //Job's social standing.
 	var/has_email = FALSE 				 //Whether or not the job gets an email.
 
-	var/child_role = FALSE				 //If set to true they will automatically spawn as a child.
+	var/species_role = null				 //Determines what species this job will spawn as.
 	var/no_late_join = FALSE			 //If set to true, the job will no longer be in the late join list.
 	var/late_join_only = FALSE			 //Can only late join. Is not a roundstart role.
 	var/is_blue_team = FALSE			 //Warfare shit.
@@ -109,13 +109,17 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 	H.SKILL_LEVEL(smg) = rand((smg_skill - 3), smg_skill)
 
 /datum/job/proc/equip(var/mob/living/carbon/human/H, var/alt_title, var/datum/mil_branch/branch, var/datum/mil_rank/grade)
-	if(child_role)
-		H.set_species("Child")//Actually makes them a child.
-		H.unlock_achievement(new/datum/achievement/kid())
 
 	if(social_class)
 		H.social_class = social_class
 
+	switch(species_role)
+		if("Child")
+			H.set_species(species_role)//Actually makes them a child.
+			H.unlock_achievement(new/datum/achievement/kid())
+		if("Astartes")
+			H.set_species(species_role)
+			H.unlock_achievement(new/datum/achievement/astartes())
 
 	do_skill_setup(H)//Give them all their skills.
 

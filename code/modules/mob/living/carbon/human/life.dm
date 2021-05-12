@@ -1007,7 +1007,9 @@
 	if(!can_feel_pain())
 		shock_stage = 0
 		return
-
+	if(src.species == SPECIES_ASTARTES)
+		shock_stage = 0
+		return
 	if(is_asystole())
 		shock_stage = max(shock_stage, 61)
 	var/traumatic_shock = get_shock()
@@ -1370,6 +1372,10 @@
 	if(istype(wear_mask, /obj/item/clothing/mask/gas))
 		var/mask_sound = pick('sound/effects/gasmask1.ogg','sound/effects/gasmask2.ogg','sound/effects/gasmask3.ogg','sound/effects/gasmask4.ogg','sound/effects/gasmask5.ogg','sound/effects/gasmask6.ogg','sound/effects/gasmask7.ogg','sound/effects/gasmask8.ogg','sound/effects/gasmask9.ogg','sound/effects/gasmask10.ogg')
 		playsound(src, mask_sound, 50, 1)
+	if(istype(wear_mask, /obj/item/clothing/mask/masquerade)) //hijacking this to give creepo noises
+		var/spooky_mask = pick('sound/effects/whispers1.ogg','sound/effects/wandering.ogg',)
+		playsound(src, spooky_mask, 60, 1)
+
 
 
 /mob/living/carbon/human/proc/handle_diagonostic_signs()

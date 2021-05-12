@@ -1169,6 +1169,8 @@ Area basic template
 	icon_state = "forest"
 	requires_power = 0
 	dynamic_lighting = 1
+	music = 'sound/ambience/forest.ogg'
+
 
 /area/cadiaoutpost/oa/magistratumpost
 	name = "Forward Magistratum Post"

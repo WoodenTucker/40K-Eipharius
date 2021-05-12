@@ -30,6 +30,7 @@
 #define LANGUAGE_MECHANICUS "Lingua-technis"
 #define LANGUAGE_NECRON "Necrontyr"
 #define LANGUAGE_TAU "T'au"
+#define LANGUAGE_HIVE "Hive"
 
 
 // Language flags.

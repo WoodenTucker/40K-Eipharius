@@ -17,6 +17,7 @@
 	var/child_exclusive = FALSE
 	var/warfare_team = null
 	var/helmet_vision = FALSE
+	var/astartes_exclusive = FALSE
 
 // Updates the icons of the mob wearing the clothing item, if any.
 /obj/item/clothing/proc/update_clothing_icon()

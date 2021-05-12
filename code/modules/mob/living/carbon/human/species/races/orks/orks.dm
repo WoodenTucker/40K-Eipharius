@@ -12,7 +12,6 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_TINY
-	total_health = 650
 	mob_size = MOB_SMALL
 	strength = STR_LOW
 	brute_mod = 1.2
@@ -59,7 +58,7 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_HIGH
-	health
+	total_health = 400
 	mob_size = MOB_MEDIUM
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,

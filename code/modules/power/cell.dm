@@ -276,6 +276,7 @@
 	origin_tech = list(TECH_POWER = 6)
 	icon_state = "lgpp"
 	maxcharge = 3000
+	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
 
 /obj/item/cell/pulserifle

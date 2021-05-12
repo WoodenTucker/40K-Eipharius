@@ -130,13 +130,14 @@
 	var/firing = 0	//Are we already firing?
 	var/moving = 0
 
-/obj/machinery/computer/exterminatus/attack_hand(mob/user as mob)	//Starting menu
+/obj/machinery/computer/exterminatus/attack_hand(mob/living/carbon/human/user as mob)	//Starting menu
 	var/extermdelay = 21000 //in deciseconds (35 min rn or 21000 deciseconds)
-
+	if(!istype(user.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor))
+		visible_message("DNA authorization failed!")
+		return
 	if(world.time < extermdelay) //all this does is cause a delay so people can't suicide or observer and rush the base
 		visible_message("It is too early to give up on this world! This will open when round duration reaches 0:35!")
 		return
-
 	user.set_machine(src)
 	var/dat = "<B>Marinaeque Testudinis Weapons Array:</B><BR>"
 	if (inrange)
