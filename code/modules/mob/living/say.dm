@@ -1,7 +1,7 @@
 var/list/department_radio_keys = list(
 	  ":r" = "right ear",	".r" = "right ear",
 	  ":l" = "left ear",	".l" = "left ear",
-	  ":i" = "intercom",	".i" = "intercom",
+	  ":i" = "Inquisition",	".i" = "Inquisition",
 	  ":h" = "department",	".h" = "department",
 	  ":+" = "special",		".+" = "special", //activate radio-specific special functions
 	  ":c" = "Command",		".c" = "Command",
@@ -14,7 +14,7 @@ var/list/department_radio_keys = list(
 	  ":x" = "Tyranids",		".x" = "Tyranids",
 	  ":u" = "Supply",		".u" = "Supply",
 	  ":v" = "Service",		".v" = "Service",
-	  ":d" = "Inquisition",	".d" = "Inquisition",
+	  ":d" = "Delta",	".d" = "Delta",
 	  ":p" = "AI Private",	".p" = "AI Private",
 	  ":z" = "Entertainment",".z" = "Entertainment",
 	  ":y" = "Exploration",	".y" = "Exploration",
@@ -26,7 +26,7 @@ var/list/department_radio_keys = list(
 	  ":d" = "Delta", 		".d" = "Delta",
 
 	  ":f" = "Blue Alpha", ".f" = "Blue Alpha",
-	  ":i" = "Blue Bravo", ".i" = "Blue Bravo",
+	  ":i" = "Inquisition", ".i" = "Inquisition",
 	  ":j" = "Blue Charlie",".j" = "Blue Charlie",
 	  ":k" = "Blue Delta", ".k" = "Blue Delta",
 
@@ -36,7 +36,7 @@ var/list/department_radio_keys = list(
 
 	  ":R" = "right ear",	".R" = "right ear",
 	  ":L" = "left ear",	".L" = "left ear",
-	  ":I" = "intercom",	".I" = "intercom",
+	  ":I" = "Inquisition",	".I" = "Inquisition",
 	  ":H" = "department",	".H" = "department",
 	  ":C" = "Command",		".C" = "Command",
 	  ":N" = "Science",		".N" = "Science",
@@ -48,7 +48,7 @@ var/list/department_radio_keys = list(
 	  ":X" = "Tyranids",		".X" = "Tyranids",
 	  ":U" = "Supply",		".U" = "Supply",
 	  ":V" = "Service",		".V" = "Service",
-	  ":D" = "Inquisition",	".D" = "Inquisition",
+	  ":D" = "Delta",	".D" = "Delta",
 	  ":P" = "AI Private",	".P" = "AI Private",
 	  ":Z" = "Entertainment",".Z" = "Entertainment",
 	  ":Y" = "Exploration",		".Y" = "Exploration",
@@ -57,7 +57,7 @@ var/list/department_radio_keys = list(
 	  //same keys as above, but on russian keyboard layout. This file uses cp1251 as encoding.
 	  ":ê" = "right ear",	".ê" = "right ear",
 	  ":ä" = "left ear",	".ä" = "left ear",
-	  ":ø" = "intercom",	".ø" = "intercom",
+	  ":ø" = "Inquisition",	".ø" = "Inquisition",
 	  ":ð" = "department",	".ð" = "department",
 	  ":ñ" = "Command",		".ñ" = "Command",
 	  ":ò" = "Science",		".ò" = "Science",
