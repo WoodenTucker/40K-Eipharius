@@ -969,8 +969,8 @@
 	var/locked = 1
 
 //so you can put coins in this bad boy as well.
-/obj/machinery/computer/requisitioncogitator/attackby(var/obj/item/stack/thrones/O, var/mob/user) //These manage putting coins directly into the console
-	if(O.amount < 0)
+/obj/machinery/computer/requisitioncogitator/attackby(var/obj/item/O, var/mob/user) //These manage putting coins directly into the console
+	if(!client)
 		to_chat(user, "<span class='warning'>You don't have enough [O] to put into the computer!</span>")
 		return 1
 	else if (istype(O, /obj/item/stack/thrones))
@@ -997,6 +997,13 @@
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
 		return
+	else if (istype(O, /obj/item/card/id/gold))
+		if(locked == 1)
+			src.locked = 0
+			visible_message("[user] unlocks the console.")
+		else
+			src.locked = 1
+			visible_message("[user] locks the console.")
 
 /obj/machinery/computer/requisitioncogitator/RightClick(mob/living/user)
 	if(!CanPhysicallyInteract(user))
