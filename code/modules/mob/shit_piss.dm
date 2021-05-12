@@ -233,6 +233,7 @@
 		var/mob/living/M = locate() in src.loc
 		if(T && T.open)
 			message = "<B>[src]</B> defecates into \the [T]."
+			T.poopstorage++
 
 		else if(w_uniform)
 			message = "<B>[src]</B> shits \his pants."

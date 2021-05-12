@@ -161,7 +161,6 @@
 			return
 		if(10)
 			to_chat(src, "<span class='warning'>The arms have been formed... The nganga grows in power and blesses you with a gift!</span>")
-			add_flies(src)
 			STAT_LEVEL(end) +=1
 			STAT_LEVEL(str) +=1
 			src.decay++
