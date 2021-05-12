@@ -687,6 +687,7 @@
 	desc = "Heretics beware."
 	icon_state = "uni-church"
 	item_state = "uni-church"
+	slowdown_general = -20
 	//_color = "uni-church"
 
 

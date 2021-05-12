@@ -1335,3 +1335,36 @@ Imperial Guardsman
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 35, bomb = 20, bio = 20, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/device/radio/headset/hivemind
+	name = "Hivemind"
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+	ks1type = /obj/item/device/encryptionkey/hivemind
+	canremove = 0
+
+/obj/item/device/radio/headset/hivemind/Initialize()
+	. = ..()
+	set_frequency(HIVE_FREQ)
+
+/obj/item/device/encryptionkey/hivemind
+	icon_state = "cypherkey"
+	channels = list("Hivemind" = 1)
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+
+/obj/item/device/radio/headset/inquisition
+	name = "Inquisition Vox"
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+	ks1type = /obj/item/device/encryptionkey/inq
+
+/obj/item/device/radio/headset/inquisition/Initialize()
+	. = ..()
+	set_frequency(RED_FREQ)
+/obj/item/device/encryptionkey/inq
+	icon_state = "cypherkey"
+	channels = list("Imperial" = 1, "Inquisition" = 1)
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1

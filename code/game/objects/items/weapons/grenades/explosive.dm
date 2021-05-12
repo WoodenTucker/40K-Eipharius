@@ -182,5 +182,17 @@ obj/mortar/flare/blue
 	name = "Krak Grenade"
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius, its weight makes it harder to throw."
 	icon_state = "krak_grenade"
-	num_fragments = 10
+	num_fragments = 250
 	explosion_size = 4
+
+/obj/item/grenade/frag/high_yield/krak/prime()
+	update_mob()
+	explosion(src.loc,1.5,1.5,1.5,flame_range = 1.5)
+	qdel(src)
+
+/obj/item/grenade/proc/prime()
+
+/obj/item/grenade/proc/update_mob()
+	if(ismob(loc))
+		var/mob/M = loc
+		M.unEquip(src)

@@ -166,3 +166,10 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	canremove = 0
+
+/obj/item/clothing/shoes/genestealerfeet //walking sounds only play with shoes and I was losing my mind not having them
+	name = "tyranid feet"
+	desc = "The skittering feet of a Tyranid Genestealer"
+	icon_state = "gsfeet"
+	item_state = "gsfeet"
+	canremove = 0

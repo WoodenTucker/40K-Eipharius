@@ -45,6 +45,8 @@
 		to_chat(user, "<span class='warning'>There is already something tanning!</span>")
 		return
 	else if(istype(O, /obj/item/humanskin))
+		add_fingerprint(user)
+		add_fibers(user)
 		to_chat(user, "[user] pulls the skin taut and stretches it across the rack, preparing for it for its transformation into hide.")
 		src.icon_state = "tanning"
 		src.update_icon()

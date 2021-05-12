@@ -11,12 +11,13 @@
 	var/cistern = 0			//if the cistern bit is open
 	var/w_items = 0			//the combined w_class of all the items in the cistern
 	var/mob/living/swirlie = null	//the mob being given a swirlie
+	var/poopstorage = 0 //Poop is becoming a valuable resource, lets copy randino and add poop storage
 
 /obj/structure/toilet/New()
 	open = round(rand(0, 1))
 	update_icon()
 
-/obj/structure/toilet/attack_hand(mob/living/user as mob)
+/obj/structure/toilet/attack_hand(mob/living/carbon/human/user as mob)
 	if(swirlie)
 		usr.visible_message("<span class='danger'>[user] slams the toilet seat onto [swirlie.name]'s head!</span>", "<span class='notice'>You slam the toilet seat onto [swirlie.name]'s head!</span>", "You hear reverberating porcelain.")
 		swirlie.adjustBruteLoss(8)
@@ -34,6 +35,15 @@
 				I.loc = get_turf(src)
 			to_chat(user, "<span class='notice'>You find \an [I] in the cistern.</span>")
 			w_items -= I.w_class
+			return
+	if(open == 1)
+		if(poopstorage > 0)
+			to_chat(user, "You've found what you were looking for!")
+			new /obj/item/reagent_containers/food/snacks/poo(user.loc)
+			poopstorage--
+			return
+		else
+			to_chat(user, "There's nothing here!")
 			return
 
 	open = !open
@@ -64,6 +74,7 @@
 		w_items += I.w_class
 		to_chat(user, "You carefully place \the [I] into the cistern.")
 		return
+
 
 
 

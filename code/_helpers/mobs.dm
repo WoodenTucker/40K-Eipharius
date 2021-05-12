@@ -103,6 +103,14 @@ proc/random_taufw_name(gender)
 	else
 		return capitalize(pick(taunames))
 
+proc/random_nid_name(gender)
+	var/nidnames = list("Biomorph", "Strain", "Genus",)
+	var/nidnum = rand(1,1000000)
+	if(gender==FEMALE)
+		return capitalize(pick(nidnames)) + " " + "[nidnum]"
+	else
+		return capitalize(pick(nidnames)) + " "  + "[nidnum]"
+
 proc/random_lackey_name()
 	return "Worthless Lackey" + " " + capitalize(pick(GLOB.last_names))
 

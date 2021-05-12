@@ -161,7 +161,6 @@
 			return
 		if(10)
 			to_chat(src, "<span class='warning'>The arms have been formed... The nganga grows in power and blesses you with a gift!</span>")
-			add_flies(src)
 			STAT_LEVEL(end) +=1
 			STAT_LEVEL(str) +=1
 			src.decay++
@@ -564,6 +563,9 @@
 			if(cultist.mind && cultist.mind.special_role == "Mercenary") //unrelated to the above, its for merc hiring.
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
 				client.images += I
+			if(cultist.mind && cultist.mind.special_role == "Tyranid") //unrelated to the above, its for merc hiring.
+				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "genestealer")
+				client.images += I
 	return
 
 
@@ -876,22 +878,28 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this while you're dead.</span>")
 		return
-	if(src.slanpain < 20)
-		to_chat(src, "<span class='notice'>You don't have enough suffering!</span>")
-		return
 	if(src.is_toggled == 2)
 		if(istype(usr.l_hand, /obj/item/material/sword/slanarm)) //Not the nicest way to do it, but eh
 			visible_message("<span class='warning'>  [usr] speedily transforms their arm back to normal!</span>", "<span class='notice'>Your arm changes back to normal!</span>", "<span class='warning>What was that sound?</span>")
 			qdel(usr.l_hand)
 			update_icon()
+			for(var/datum/species/X)
+				X.slowdown = 0
 		if(istype(usr.r_hand, /obj/item/material/sword/slanarm)) //Not the nicest way to do it, but eh
 			qdel(usr.r_hand)
 			visible_message("<span class='warning'>  [usr] speedily transforms their arm back to normal!</span>", "<span class='notice'>Your arm changes back to normal!</span>", "<span class='warning>What was that sound?</span>")
+			for(var/datum/species/X)
+				X.slowdown = 0
 		src.icon_state = initial(icon_state)
 		to_chat(usr,"You hide your mutated arm!")
 		src.is_toggled = 1
+	else if(src.slanpain < 20)
+		to_chat(src, "<span class='notice'>You don't have enough suffering!</span>")
+		return
 	else
 		visible_message("[src]'s arm rapidly mutates into a terrifying blade!")
 		usr.put_in_hands(new /obj/item/material/sword/slanarm(usr))
 		src.is_toggled = 2
 		src.slanpain -=20
+		for(var/datum/species/X) //this is one of those things that absolutely shouldn't work, but does. For some reason, this is the only way I've found to increase move speed.
+			X.slowdown = -1

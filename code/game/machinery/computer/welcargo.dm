@@ -719,10 +719,10 @@
 
 
 /obj/machinery/computer/sidepiece  //this is a computer that can reset the round. That game physically ends when the antag clicks 'exterminatus'
-	name = "interplanetary trade console power pack"
-	desc = "A highly complex console used for interplanetary trade."
+	name = "holo-globe"
+	desc = "Displays current delivery/export paths."
 	icon = 'icons/obj/planetarytrade.dmi'
-	icon_state = "on"
+	icon_state = "globe_on"
 	density = 1
 	anchored = 1
 	bound_height = 64

@@ -92,7 +92,7 @@
 
 /decl/hierarchy/outfit/job/internal_affairs_agent
 	name = OUTFIT_JOB_NAME("principal agent")
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/inquisition
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -135,10 +135,10 @@
 		)
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor")
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/inquisition
 	uniform = /obj/item/clothing/under/rank/inquisitor
 	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
-	glasses = /obj/item/clothing/glasses/night
+	glasses = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare

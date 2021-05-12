@@ -11,8 +11,12 @@
 	var/freq_text
 
 	// the name of the channel
-	if(display_freq in ANTAG_FREQS)
-		freq_text = "Imperial"
+	if(display_freq in HIVE_FREQS)
+		freq_text = "Hive Mind"
+	else if(display_freq in INQ_FREQS)
+		freq_text = "Inquisition"
+	else if(display_freq in ANTAG_FREQS)
+		freq_text = "#unkn"
 	else
 		for(var/channel in radiochannels)
 			if(radiochannels[channel] == display_freq)
