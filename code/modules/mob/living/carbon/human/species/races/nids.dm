@@ -19,9 +19,7 @@
 	slowdown = -1
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
-		/datum/unarmed_attack/kick,
-		/datum/unarmed_attack/punch,
-		/datum/unarmed_attack/bite
+		/datum/unarmed_attack/rendingclaws,
 		)
 
 	has_fine_manipulation = 0
@@ -64,6 +62,8 @@
 
 /mob/living/carbon/human/genestealer
 	gender = MALE
+	alien_talk_understand = 1
+
 
 /mob/living/carbon/human/genestealer/New(var/new_loc)
 	h_style = "Bald"
@@ -73,10 +73,14 @@
 	. = ..()
 	fully_replace_character_name(random_nid_name(src.gender))
 	warfare_faction = TYRANIDS
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/genestealer)
+	outfit.equip(src)
 	isburied = 1
 	faction = "Tyranids" //keeps the homies safe from npc friends
 	mind.special_role = "Tyranid" //For hud icons
 	AddInfectionImages()
+	thirst = INFINITY
+	nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 
 
 

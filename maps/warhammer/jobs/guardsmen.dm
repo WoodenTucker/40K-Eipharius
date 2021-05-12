@@ -442,6 +442,19 @@ Begin Warhammer loadouts
 	id_slot = null
 	pda_slot = null
 
+//Genestealer//
+/decl/hierarchy/outfit/job/genestealer //really just for walking sounds
+	uniform = null
+	shoes = /obj/item/clothing/shoes/genestealerfeet
+	neck = null
+	back = null
+	l_ear = /obj/item/device/radio/headset/hivemind
+	belt = null
+	l_pocket = null
+	id = null
+	id_slot = null
+	pda_slot = null
+
 //Ork//
 /decl/hierarchy/outfit/job/ork
 	uniform = /obj/item/clothing/under/rank/kroot

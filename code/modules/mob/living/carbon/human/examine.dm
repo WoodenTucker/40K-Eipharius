@@ -345,6 +345,9 @@
 	if(decay > 2 || rage >=2 || lust >= 2 || intrigue >=2)
 		if(user.mind.special_role == "Nurgle Cultist" || user.mind.special_role == "Khorne Cultist" || user.mind.special_role == "Slaanesh Cultist" || user.mind.special_role == "Tzeentch Cultist")
 			msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
+	if(warfare_faction == TYRANIDS)
+		msg += "A horrifying xeno!\n"
+
 
 	if(hasHUD(user,"security"))
 		var/perpname = "wot"

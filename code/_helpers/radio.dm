@@ -113,6 +113,7 @@ var/const/ENT_FREQ	= 1447//1461 //entertainment frequency. This is not a diona e
 //Warfare radios.
 var/const/RED_FREQ = 1441
 var/const/BLUE_FREQ	= 1452
+var/const/HIVE_FREQ = 1454
 //Squad Radios
 var/const/RED_ALPHA = 1443
 var/const/RED_BRAVO = 1444
@@ -165,14 +166,17 @@ var/list/radiochannels = list(
 	"Blue Alpha" 	= BLUE_ALPHA,//Blue
 	"Blue Bravo" 	= BLUE_BRAVO,
 	"Blue Charlie" 	= BLUE_CHARLIE,
-	"Blue Delta" 	= BLUE_DELTA
+	"Blue Delta" 	= BLUE_DELTA,
+	"Hivemind" 		= HIVE_FREQ,
 )
 
 // central command channels, i.e deathsquid & response teams
 var/list/CENT_FREQS = list(ERT_FREQ, DTH_FREQ)
 
 // Antag channels, i.e. Syndicate
-var/list/ANTAG_FREQS = list(RED_FREQ, RED_ALPHA, RED_BRAVO, RED_CHARLIE, RED_DELTA, BLUE_FREQ, BLUE_ALPHA, BLUE_BRAVO, BLUE_CHARLIE, BLUE_DELTA)
+var/list/ANTAG_FREQS = list(RED_FREQ, RED_ALPHA, RED_BRAVO, RED_CHARLIE, RED_DELTA, BLUE_FREQ, BLUE_ALPHA, BLUE_BRAVO, BLUE_CHARLIE, BLUE_DELTA, HIVE_FREQ)
+
+var/list/HIVE_FREQS = list(HIVE_FREQ)
 
 //Department channels, arranged lexically
 var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
@@ -186,7 +190,7 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 		if (RED_FREQ, RED_ALPHA, RED_BRAVO, RED_CHARLIE, RED_DELTA)
 			return "syndradio"
 
-		if (BLUE_FREQ, BLUE_ALPHA, BLUE_BRAVO, BLUE_CHARLIE, BLUE_DELTA)
+		if (BLUE_FREQ, BLUE_ALPHA, BLUE_BRAVO, BLUE_CHARLIE, BLUE_DELTA,)
 			return "comradio"
 
 		if (COMM_FREQ)
@@ -201,7 +205,7 @@ var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC
 		if (ENG_FREQ)
 			return "engradio"
 
-		if (SCI_FREQ)
+		if (SCI_FREQ, HIVE_FREQ)
 			return "sciradio"
 
 		if (MED_FREQ)
