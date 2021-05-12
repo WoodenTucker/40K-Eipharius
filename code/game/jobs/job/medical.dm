@@ -74,7 +74,7 @@
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(8,12), rand(10,14), rand(10,14), rand(12,15))
-		H.add_skills(3,3,rand(5,7),0,rand(5,7))
+		H.add_skills(3,3,rand(7,9),0,rand(7,9))
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_equipped_item(slot_s_store)
