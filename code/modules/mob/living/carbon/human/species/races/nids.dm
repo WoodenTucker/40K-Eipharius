@@ -20,6 +20,7 @@
 	/mob/living/carbon/human/genestealer/proc/neurotoxin,
 	/mob/living/carbon/human/genestealer/proc/makepool,
 	/mob/living/carbon/human/genestealer/proc/ripperswarm,
+	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 
 	 )
 	slowdown = -1
@@ -231,6 +232,25 @@
 	src.gsc = 1
 	src.AddInfectionImages()
 
+/mob/living/carbon/human/genestealer/proc/corrosive_acid(O as obj|turf in oview(1)) //If they right click to corrode, an error will flash if its an invalid target./N
+	set name = "Corrosive Acid (5)"
+	set desc = "Drench an object in acid, destroying it over time."
+	set category = "Tyranid"
+
+	if(!O in oview(1))
+		to_chat(src, "<span class='alium'>[O] is too far away.</span>")
+		return
+	if(src.biomass < 5)
+		to_chat(src, "<span class='alium'>We don't have enough biomass!</span>")
+		return
+
+	else
+		new /obj/effect/acid(get_turf(O), O)
+		visible_message("<span class='alium'><B>[src] vomits globs of vile stuff all over [O]. It begins to sizzle and melt under the bubbling mess of acid!</B></span>")
+		src.biomass -=5
+		return
+
+
 //Begin nid items
 
 /obj/structure/spawningpool
@@ -263,3 +283,5 @@
 		playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
 		if(do_after(user, 110, src))
 			qdel(src)
+
+
