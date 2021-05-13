@@ -21,6 +21,7 @@
 	/mob/living/carbon/human/genestealer/proc/makepool,
 	/mob/living/carbon/human/genestealer/proc/ripperswarm,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
+	/mob/living/carbon/human/genestealer/proc/givestealerstats,
 
 	 )
 	slowdown = -1
@@ -250,6 +251,23 @@
 		src.biomass -=5
 		return
 
+
+/mob/living/carbon/human/genestealer/proc/givestealerstats()
+	set name = "Receive Orders"
+	set category = "Tyranid"
+	set desc = "Gives kroot stats since I can't seem to do it any other way in this clown world."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near!")
+	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.update_eyes() //should fix grey vision
+	src.set_trait(new/datum/trait/death_tolerant())
+	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
+	client?.color = null
 
 //Begin nid items
 

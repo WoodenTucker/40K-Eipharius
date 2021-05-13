@@ -71,6 +71,10 @@
 		H.add_skills(rand(2,5),rand(2,5),rand(1,2),rand(6,9),0)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
+		H.bladder = -INFINITY
+		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+		H.thirst = INFINITY
+		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		to_chat(H, "<span class='notice'><b><font size=3>Praise the Omnissiah! You live to further mankinds knowledge and understanding of technology. Obey your Magos and ensure all machine spirits are pleased.</font></b></span>")
 
 
