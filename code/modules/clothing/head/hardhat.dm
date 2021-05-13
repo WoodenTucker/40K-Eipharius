@@ -31,4 +31,8 @@
 	icon_state = "techpriestnew"
 	item_state = "techpriestnew"
 	canremove = 0
-	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEMASK|HIDEEARS|HIDEEYES
+	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
+
+/obj/item/clothing/head/hardhat/techpriest/magos
+	icon_state = "magoshelm"
+	item_state = "magoshelm"
