@@ -77,6 +77,12 @@
 			usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
 			var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
 			new_character.key = usr.key //puts ghost in body with new key
+		if("Genestealers")
+			message_admins("[usr.key] has joined the late party: Genestealer.", 0) //msgs jannies
+			to_chat(usr, "<span class='warning'><b><font size=3>You are the point of the spear of the Great Devourer. Grow your following and undermine this planets defenses.</b></font size=3>") //tells mob to do thing
+			usr.loc = get_turf(locate("landmark*genestart")) //where they spawning
+			var/mob/living/carbon/human/genestealer/new_character = new(usr.loc)// da mob
+			new_character.key = usr.key //puts ghost in body with new key
 
 
 /hook/startup/proc/chooseparty() //chooses one party on startup
@@ -84,7 +90,7 @@
 	return
 
 /proc/Get_Party() //dis is the proc that actually selects the party
-	GLOB.latepartyoptions += pick("Kroot", "Orkz", "Tau",)
+	GLOB.latepartyoptions += pick("Kroot", "Orkz", "Tau", "Genestealers",)
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")

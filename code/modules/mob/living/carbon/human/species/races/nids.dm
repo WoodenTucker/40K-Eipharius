@@ -15,7 +15,13 @@
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
 	sexybits_location = BP_GROIN
-	inherent_verbs = list()
+	inherent_verbs = list(
+	/mob/living/carbon/human/genestealer/verb/convert,
+	/mob/living/carbon/human/genestealer/proc/neurotoxin,
+	/mob/living/carbon/human/genestealer/proc/makepool,
+	/mob/living/carbon/human/genestealer/proc/ripperswarm,
+
+	 )
 	slowdown = -1
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
@@ -28,7 +34,7 @@
 	stomach_capacity = MOB_MEDIUM
 
 	brute_mod = 0.25 // Hardened carapace.
-	burn_mod = 1.1    // Weak to fire.
+	burn_mod = 0.65    // Weak to fire.
 
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
@@ -59,6 +65,10 @@
 
 /mob/living/carbon/human
 	var/new_nid = SPECIES_TYRANID
+	var/biomass = 20
+	var/isconverting = 0
+	var/dnastore = 0
+	var/poolparty = 0
 
 /mob/living/carbon/human/genestealer
 	gender = MALE
@@ -80,8 +90,170 @@
 	mind.special_role = "Tyranid" //For hud icons
 	AddInfectionImages()
 	thirst = INFINITY
-	nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+	nutrition = INFINITY
+	bladder = -INFINITY
+	bowels = -INFINITY
+	add_stats(rand(15,22),rand(15,22),rand(15,22),20)
 
 
 
 	hand = 0//Make sure one of their hands is active.
+
+
+//Begin abilities
+
+/mob/living/carbon/human/genestealer/verb/convert()
+	set name = "Convert"
+	set desc = "Depending on your evolution progress, you must either be standing over them or next to the target."
+	set category = "Tyranid"
+
+	var/obj/item/grab/G = src.get_active_hand()
+	if(!istype(G))
+		to_chat(src, "<span class='warning'>We must be grabbing a creature in our active hand to convert them.</span>")
+		return
+
+	var/mob/living/carbon/human/T = G.affecting //this will be modified later as we add more rando species
+	if(!istype(T))
+		to_chat(src, "<span class='warning'>[T] is not compatible with our biology.</span>")
+		return
+
+	if(HUSK in T.mutations) //Eating husks would be kinda strange, but idk
+		to_chat(src, "<span class='warning'>This creature's DNA is ruined beyond useability!</span>")
+		return
+
+	if(isconverting)
+		to_chat(src, "<span class='warning'>We are already converting [T]!</span>")
+		return
+	if(T.faction == "Tyranids")
+		to_chat(src, "<span class='warning'>[T] is already a member of the Hive Mind!</span>")
+		return
+
+	var/obj/item/organ/external/affecting = T.get_organ(src.zone_sel.selecting)
+	if(!affecting)
+		to_chat(src, "<span class='warning'>They are missing that body part!</span>") //Dont try and eat a limb that doesn't exist.
+
+	isconverting = 1
+
+	for(var/stage = 1, stage<=3, stage++)
+		switch(stage)
+			if(1)
+				to_chat(src, "<span class='notice'>This creature is suitable for the hive...</span>")
+			if(2)
+				to_chat(src, "<span class='notice'>[src] begins to open their jaw</span>")
+				src.visible_message("<span class='warning'>[src] widens their jaw!</span>")
+			if(3)
+				to_chat(src, "<span class='notice'>[T] is impaled by your forked tongue</span>")
+				src.visible_message("<span class='danger'>[src] impales [T] with their tongue.</span>")
+				to_chat(T, "<span class='danger'>You feel a sharp stabbing pain!</span>")
+				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
+				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
+
+		if(!do_mob(src, T, 50))
+			to_chat(src, "<span class='warning'>Our conversion of [T] has been interrupted!</span>")
+			isconverting = 0
+			return
+
+	to_chat(src, "<span class='notice'>We have converted [T]!</span>")
+	src.visible_message("<span class='danger'>[src] completes overwriting [T]'s DNA!</span>")
+	to_chat(T, "<span class='danger'>You have been converted to the Tyranid Hive Mind!</span>")
+
+	isconverting = 0
+
+	T.faction = "Tyranids"
+	T.mind.special_role = "Tyranid"
+	src.mind.special_role = "Tyranid"
+	T.AddInfectionImages()
+	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
+	T.equip_to_slot_or_del(new /obj/item/device/radio/headset/hivemind, slot_r_ear)
+	src.dnastore++
+
+	return 1
+
+/mob/living/carbon/human/genestealer/proc/ripperswarm() // ok
+	set name = "Call on Ripper Swarm (20)"
+	set desc = "Distract them!"
+	set category = "Tyranid"
+
+	if(src.biomass < 20)
+		to_chat(src, "<font color='#800080'>You don't have enough biomass!</font>")
+		return
+	else
+		new /mob/living/simple_animal/hostile/rippers(src.loc) //Rippers in the codex are 9 models per unit
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		new /mob/living/simple_animal/hostile/rippers(src.loc)
+		src.biomass -= 20
+		visible_message("<span class='warning'>Numerous rippers burst from the ground and immediately begin to swarm!</span>")
+
+/mob/living/carbon/human/genestealer/proc/neurotoxin(mob/target as mob in oview())
+	set name = "Spit Neurotoxin (10)"
+	set desc = "Spits neurotoxin at someone, paralyzing them for a short time if they are not wearing protective gear."
+	set category = "Tyranid"
+
+	if(src.biomass < 20)
+		to_chat(src, "<font color='#800080'>You don't have enough biomass!</font>")
+		return
+
+	if(stat || paralysis || stunned || weakened || lying || restrained() || buckled)
+		to_chat(src, "<font color='#800080'>You cannot spit neurotoxin in your current state.</font>")
+		return
+
+	visible_message("<span class='warning'>[src] spits neurotoxin at [target]!</span>", "<span class='alium'>You spit neurotoxin at [target].</span>")
+
+	var/obj/item/projectile/energy/neurotoxin/A = new /obj/item/projectile/energy/neurotoxin(usr.loc)
+	A.launch_projectile(target,get_organ_target())
+	src.biomass -=10
+
+/mob/living/carbon/human/genestealer/proc/makepool(mob/target as mob in oview())
+	set name = "Create Spawning Pool"
+	set desc = "Forms a spawning pool"
+	set category = "Tyranid"
+
+	if(src.poolparty >= 1)
+		to_chat(src, "<font color='#800080'>You can't make any more pools!</font>")
+		return
+
+	if(stat || paralysis || stunned || weakened || lying || restrained() || buckled)
+		to_chat(src, "<font color='#800080'>You cannot make a spawning pool in your current state.</font>")
+		return
+
+	new /obj/structure/spawningpool(src.loc)
+	src.poolparty++
+
+//Begin nid items
+
+/obj/structure/spawningpool
+	name = "spawning pool"
+	desc = "A gelatinous mass of writing DNA and acid. It seems somehow alive. "
+	icon = 'icons/mob/human_races/tyranids/tyranids.dmi'
+	icon_state = "reclaimer"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 32
+	bound_width = 32
+
+/obj/structure/spawningpool/attack_hand(mob/living/carbon/human/genestealer/user as mob)
+	if(user.dnastore < 1)
+		to_chat(user, "<font color='#800080'>I do not have any DNA to contribute to the pool...</font>")
+		return
+
+	else
+		user.dnastore--
+		user.biomass +=20
+		to_chat(user, "<font color='#800080'>The Hive grows stronger with my contribution... </font>")
+		return
+
+
+
+/obj/structure/spawningpool/attackby(var/obj/item/O, var/mob/user)
+	if((O.sharp) || istype(O, /obj/item/material/knife/butch) || istype(O, /obj/item/material/sword))//what items can cut down trees
+		visible_message("<span='bnotice'[user] begins to cut apart \the [src]!</span>" )
+		playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
+		if(do_after(user, 110, src))
+			qdel(src)

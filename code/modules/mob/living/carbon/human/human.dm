@@ -105,6 +105,8 @@
 		stat("[my_stats[STAT(dex)].shorthand]:", "[STAT_LEVEL(dex)]")
 		stat("[my_stats[STAT(end)].shorthand]:", "[STAT_LEVEL(end)]")
 		stat("[my_stats[STAT(int)].shorthand]:", "[STAT_LEVEL(int)]")
+		if(src.alien_talk_understand == 1)
+			stat("Biomass:", "[src.biomass]")
 
 		//if(evacuation_controller)
 		//	var/eta_status = evacuation_controller.get_status_panel_eta()
@@ -130,6 +132,7 @@
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
 			if(src.lust >=9)
 				stat("Suffering:", "[src.slanpain]")
+
 
 
 

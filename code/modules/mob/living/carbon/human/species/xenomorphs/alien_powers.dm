@@ -162,10 +162,7 @@
 /mob/living/carbon/human/proc/neurotoxin(mob/target as mob in oview())
 	set name = "Spit Neurotoxin (50)"
 	set desc = "Spits neurotoxin at someone, paralyzing them for a short time if they are not wearing protective gear."
-	set category = "Abilities"
-
-	if(!check_alien_ability(50,0,BP_ACID))
-		return
+	set category = "Tyranid"
 
 	if(stat || paralysis || stunned || weakened || lying || restrained() || buckled)
 		to_chat(src, "You cannot spit neurotoxin in your current state.")
