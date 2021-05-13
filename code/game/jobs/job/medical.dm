@@ -193,7 +193,7 @@
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(10,13), rand(10,14), rand(10,14), rand(12,15))
-		H.add_skills(rand(4,6),rand(4,6),10,0,rand(1,2))
+		H.add_skills(rand(4,6),rand(4,6),10,0,rand(5,7))
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
