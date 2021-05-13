@@ -68,7 +68,7 @@
 
 /mob/living/carbon/human
 	var/new_nid = SPECIES_TYRANID
-	var/biomass = 30
+	var/biomass = 40
 	var/isconverting = 0
 	var/dnastore = 0
 	var/poolparty = 0
@@ -254,21 +254,24 @@
 
 
 /mob/living/carbon/human/genestealer/proc/givestealerstats()
-	set name = "Receive Orders"
+	set name = "Sync with the Hive Mind"
 	set category = "Tyranid"
-	set desc = "Gives kroot stats since I can't seem to do it any other way in this clown world."
+	set desc = "Stats and unfucks vision."
 
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near!")
-	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+	src.add_stats(rand(18,25),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
-	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
+	src.health = 450
+	src.maxHealth = 450
+	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
+
 
 //Begin nid items
 
