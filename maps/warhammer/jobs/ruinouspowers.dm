@@ -563,7 +563,7 @@
 			if(cultist.mind && cultist.mind.special_role == "Mercenary") //unrelated to the above, its for merc hiring.
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Tyranid") //unrelated to the above, its for merc hiring.
+			if(cultist.mind && cultist.mind.special_role == "Tyranid" && gsc >= 1) //genestealer cult/tyranid converts
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "genestealer")
 				client.images += I
 	return

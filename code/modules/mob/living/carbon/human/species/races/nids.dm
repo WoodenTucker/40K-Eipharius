@@ -93,6 +93,7 @@
 	nutrition = INFINITY
 	bladder = -INFINITY
 	bowels = -INFINITY
+	gsc = 1
 	add_stats(rand(15,22),rand(15,22),rand(15,22),20)
 
 
@@ -161,6 +162,8 @@
 
 	T.faction = "Tyranids"
 	T.mind.special_role = "Tyranid"
+	T.gsc = 1
+	src.gsc = 1
 	src.mind.special_role = "Tyranid"
 	T.AddInfectionImages()
 	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
@@ -224,6 +227,9 @@
 
 	new /obj/structure/spawningpool(src.loc)
 	src.poolparty++
+	src.mind.special_role = "Tyranid"
+	src.gsc = 1
+	src.AddInfectionImages()
 
 //Begin nid items
 

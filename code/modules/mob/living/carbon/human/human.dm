@@ -18,6 +18,7 @@
 	var/slanpain = 0 //slaaneshi pain harvesting
 	var/can_toggle = 1
 	var/is_toggled = 1 //armblade shit
+	var/gsc = 0 //for cult to hide icon
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
