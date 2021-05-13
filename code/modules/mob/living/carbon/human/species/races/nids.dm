@@ -22,6 +22,7 @@
 	/mob/living/carbon/human/genestealer/proc/ripperswarm,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
+	/mob/living/carbon/human/genestealer/proc/gsheal,
 
 	 )
 	slowdown = -1
@@ -67,7 +68,7 @@
 
 /mob/living/carbon/human
 	var/new_nid = SPECIES_TYRANID
-	var/biomass = 20
+	var/biomass = 30
 	var/isconverting = 0
 	var/dnastore = 0
 	var/poolparty = 0
@@ -302,4 +303,27 @@
 		if(do_after(user, 110, src))
 			qdel(src)
 
+/mob/living/carbon/human/genestealer/proc/gsheal()
+	set name = "Repair Physiology (5)"
+	set category = "Tyranid"
+	set desc = "Heals"
 
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+	else
+		restore_all_organs()
+		src.adjustBruteLoss(-100)
+		src.adjustOxyLoss(-100)
+		src.adjustStaminaLoss(-5)
+		src.adjustToxLoss(-100)
+		src.adjustBrainLoss(-100)
+		src.adjustFireLoss(-100)
+		src.radiation = 0
+		src.sdisabilities = 0
+		src.disabilities = 0
+		src.blinded = 0
+		src.eye_blind = 0
+		src.eye_blurry = 0
+		src.ear_deaf = 0
+		src.ear_damage = 0
