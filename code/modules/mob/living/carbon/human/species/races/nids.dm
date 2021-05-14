@@ -62,7 +62,7 @@
 	H.age = rand(min_age,max_age)//Random age for nidders
 	if(H.f_style)//nids dont get beards
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>I must feed...</span></big>")
+	to_chat(H, "<big><span class='warning'>I must feed... I must sync with the hive mind (Do so in Tyranid tab)</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 
@@ -272,6 +272,18 @@
 	src.maxHealth = 450
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
+/mob/living/carbon/human/genestealer/proc/gsheal()
+	set name = "Repair Physiology (5)"
+	set category = "Tyranid"
+	set desc = "Heals"
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+	else
+		src.revive()
+		src.biomass -=5
+
 
 //Begin nid items
 
@@ -306,14 +318,3 @@
 		if(do_after(user, 110, src))
 			qdel(src)
 
-/mob/living/carbon/human/genestealer/proc/gsheal()
-	set name = "Repair Physiology (5)"
-	set category = "Tyranid"
-	set desc = "Heals"
-
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
-		return
-	else
-		src.revive()
-		src.biomass -=5
