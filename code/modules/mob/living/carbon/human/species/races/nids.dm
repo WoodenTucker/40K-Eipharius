@@ -97,7 +97,7 @@
 	bladder = -INFINITY
 	bowels = -INFINITY
 	gsc = 1
-	add_stats(rand(15,22),rand(15,22),rand(15,22),20)
+	add_stats(rand(12,15),rand(15,22),rand(15,22),20)
 
 
 
