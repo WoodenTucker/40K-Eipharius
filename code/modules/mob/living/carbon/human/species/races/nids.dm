@@ -280,6 +280,9 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
+	if(src.biomass < 5)
+		to_chat(src, "<span class='alium'>We don't have enough biomass!</span>")
+		return
 	else
 		src.revive()
 		src.biomass -=5
