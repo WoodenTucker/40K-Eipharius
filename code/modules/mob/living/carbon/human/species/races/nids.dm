@@ -284,6 +284,7 @@
 		to_chat(src, "<span class='alium'>We don't have enough biomass!</span>")
 		return
 	else
+		visible_message("[src] expends some of his stored biomass correting wounds and damage to their organs.")
 		src.revive()
 		src.biomass -=5
 
