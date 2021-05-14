@@ -315,18 +315,5 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 	else
-		restore_all_organs()
-		src.adjustBruteLoss(-100)
-		src.adjustOxyLoss(-100)
-		src.adjustStaminaLoss(-5)
-		src.adjustToxLoss(-100)
-		src.adjustBrainLoss(-100)
-		src.adjustFireLoss(-100)
-		src.radiation = 0
-		src.sdisabilities = 0
-		src.disabilities = 0
-		src.blinded = 0
-		src.eye_blind = 0
-		src.eye_blurry = 0
-		src.ear_deaf = 0
-		src.ear_damage = 0
+		src.revive()
+		src.biomass -=5
