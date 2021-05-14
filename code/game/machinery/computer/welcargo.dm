@@ -966,8 +966,6 @@
 	density = 1
 	atom_flags = ATOM_FLAG_CLIMBABLE
 
-	var/locked = 1
-
 //so you can put coins in this bad boy as well.
 /obj/machinery/computer/requisitioncogitator/attackby(var/obj/item/stack/thrones/O, var/mob/user) //These manage putting coins directly into the console
 	if(O.amount < 0)
@@ -998,25 +996,10 @@
 		O.update_icon() //so coins in hand update
 		return
 
-/obj/machinery/computer/requisitioncogitator/RightClick(mob/living/user)
-	if(!CanPhysicallyInteract(user))
-		return
-	var/obj/item/card/id/gold/S = user.get_active_hand()
-	if(!istype(S))
-		return
-	if(locked == 1)
-		locked = 0
-		visible_message("[usr] unlocks the console!")
-	else
-		locked = 1
-		visible_message("[usr] locks the console!")
 
 /obj/machinery/computer/requisitioncogitator/attack_hand(mob/user as mob)	//Starting menu
 	if(GLOB.tithe_paid == 0)
 		visible_message("You must first pay off your tithe before accessing this computer!")
-		return
-	if(locked == 1)
-		visible_message("The console is locked, present your Golden Writ!")
 		return
 	user.set_machine(src)
 	var/dat = "<B>Imperial Requisition:</B><BR>"
