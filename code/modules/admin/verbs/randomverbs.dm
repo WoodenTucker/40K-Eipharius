@@ -863,11 +863,11 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	var/user_class = alert(src, "Class Check", "Show accountss in _____ class","Pig", "Pig+" , "Comrade")
 
 	if(user_class == "Comrade")
-		user_class = 9999999
+		user_class = "Comrade"
 	else if (user_class == "Pig+")
-		user_class = text2num(user_class)
+		user_class = "Pig+"
 	else if(user_class == "Pig")
-		user_class = text2num(user_class)
+		user_class = "Pig"
 
 	var/missing_class = 0
 	var/msg = ""
@@ -885,4 +885,4 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(msg != "")
 		src << browse(msg, "window=Player_class_check")
 	else
-		to_chat(src, "No matches for that age range found.")
+		to_chat(src, "No matches for that class found.")
