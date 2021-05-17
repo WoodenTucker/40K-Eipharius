@@ -273,7 +273,7 @@
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
 /mob/living/carbon/human/genestealer/proc/gsheal()
-	set name = "Repair Physiology (5)"
+	set name = "Repair Physiology (20)"
 	set category = "Tyranid"
 	set desc = "Heals"
 
@@ -286,7 +286,7 @@
 	else
 		visible_message("[src] expends some of his stored biomass correting wounds and damage to their organs.")
 		src.revive()
-		src.biomass -=5
+		src.biomass -=20
 
 
 //Begin nid items

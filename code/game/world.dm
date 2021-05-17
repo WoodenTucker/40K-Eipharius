@@ -435,6 +435,31 @@ var/world_topic_spam_protect_time = world.timeofday
 		else
 			return "Database connection failed or not set up"
 
+	else if(copytext(T,1,4) == "userclass")
+		var/input[] = params2list(T)
+		if(input["key"] != config.comms_password)
+			if(world_topic_spam_protect_ip == addr && abs(world_topic_spam_protect_time - world.time) < 50)
+				spawn(50)
+					world_topic_spam_protect_time = world.time
+					return "Bad Key (Throttled)"
+
+			world_topic_spam_protect_time = world.time
+			world_topic_spam_protect_ip = addr
+			return "Bad Key"
+
+		var/userclass = get_player_class(input["userclass"])
+		if(istext(userclass))
+			if(userclass == "Pig")
+				return "[userclass]"
+			else if (userclass == "Pig+")
+				return "[userclass]"
+			else if (userclass == "Comrade")
+				return "[userclass]"
+			else
+				return "Ckey not found"
+		else
+			return "Database connection failed or not set up"
+
 	else if(copytext(T,1,14) == "placepermaban")
 		var/input[] = params2list(T)
 		if(!config.ban_comms_password)
