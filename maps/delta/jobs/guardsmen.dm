@@ -476,7 +476,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/skitshoes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
