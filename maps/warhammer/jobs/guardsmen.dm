@@ -293,9 +293,9 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
+	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/handcuffs = 2,
-	/obj/item/storage/box/beanbags = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
