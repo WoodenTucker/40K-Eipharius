@@ -399,7 +399,7 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "vox-caster rig"
 	desc = "A standard Guard issue vox-caster rig. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
-	ks1type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/red_all
 	icon_state = "voxcaster"
 	item_state = "voxcaster"
 	slot_flags = SLOT_EARS
