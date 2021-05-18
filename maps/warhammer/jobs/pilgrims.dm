@@ -283,8 +283,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/ring/administrator
-	l_ear = null
-	r_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/blue_team
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
 	backpack_contents = list(
