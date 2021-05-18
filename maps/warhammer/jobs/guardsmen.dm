@@ -278,7 +278,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
-	head = /obj/item/clothing/head/helmet/guardhelmet
+	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack

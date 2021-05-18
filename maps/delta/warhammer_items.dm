@@ -954,8 +954,8 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/enforcer
 	name = "enforcer's light armor"
 	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
-	icon_state = "merc"
-	item_state = "merc"
+	icon_state = "Judge"
+	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1159,8 +1159,8 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
 	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest"
-	icon_state = "inqcoat"
-	item_state = "inqcoat"
+	icon_state = "inqcoat2"
+	item_state = "inqcoat2"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 20, bio = 20, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS

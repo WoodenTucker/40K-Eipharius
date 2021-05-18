@@ -849,6 +849,13 @@ Imperial Guardsman
 	icon_state = "guard"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/head/helmet/guardhelmet/enforcer
+	name = "Enforcer Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "Jhelm2"
+	item_state = "Jhelm2"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/krieghelmet
 	name = "Krieg Helmet"
@@ -884,16 +891,16 @@ Imperial Guardsman
 
 /obj/item/clothing/suit/armor/commissar
 	name = "commisar's jacket"
-	icon_state = "comissar3"
-	item_state = "comissar3"
+	icon_state = "comissar4"
+	item_state = "comissar4"
 	armor = list(melee = 45, bullet = 45, laser = 45, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/commissar
 	name = "Commisar\'s Cap"
 	desc = "This cap strikes fear into the rank and file."
-	icon_state = "comissar3"
-	item_state = "comissar3"
+	icon_state = "comissar4hat"
+	item_state = "comissar4hat"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -954,8 +961,8 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/enforcer
 	name = "enforcer's light armor"
 	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
-	icon_state = "merc"
-	item_state = "merc"
+	icon_state = "Judge"
+	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
