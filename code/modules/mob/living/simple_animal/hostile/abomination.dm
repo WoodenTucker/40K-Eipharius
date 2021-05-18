@@ -166,4 +166,3 @@
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "nurgle")
 				client.images += I
 	return
-

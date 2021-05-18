@@ -22,6 +22,7 @@
 	var/mob/firer = null//Who shot it
 	var/silenced = FALSE	//Attack message
 	var/bumped
+	var/current = null
 
 	var/shot_from = "" // name of the object which shot us
 
