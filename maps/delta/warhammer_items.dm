@@ -883,17 +883,25 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/commissar
-	name = "commisar's jacket"
-	icon_state = "comissar3"
-	item_state = "comissar3"
+	name = "commissar's jacket"
+	icon_state = "Commissar4"
+	item_state = "Commissar4"
 	armor = list(melee = 45, bullet = 45, laser = 45, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/commissar
-	name = "Commisar\'s Cap"
+	name = "Commissar\'s Cap"
 	desc = "This cap strikes fear into the rank and file."
-	icon_state = "comissar3"
-	item_state = "comissar3"
+	icon_state = "Commissar4Hat"
+	item_state = "Commissar4Hat"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/adept
+	name = "Adept\'s Cap"
+	desc = "This cap belongs to a member of the Administratum."
+	icon_state = "Captain_Hat"
+	item_state = "Captain_Hat"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1159,8 +1167,8 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
 	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest"
-	icon_state = "inqcoat2"
-	item_state = "inqcoat2"
+	icon_state = "inqcoat"
+	item_state = "inqcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 20, bio = 20, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS

@@ -890,17 +890,17 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/commissar
-	name = "commisar's jacket"
-	icon_state = "comissar4"
-	item_state = "comissar4"
+	name = "commissar's jacket"
+	icon_state = "Commissar4"
+	item_state = "Commissar4"
 	armor = list(melee = 45, bullet = 45, laser = 45, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/commissar
-	name = "Commisar\'s Cap"
+	name = "Commissar\'s Cap"
 	desc = "This cap strikes fear into the rank and file."
-	icon_state = "comissar4hat"
-	item_state = "comissar4hat"
+	icon_state = "Commissar4Hat"
+	item_state = "Commissar4Hat"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
