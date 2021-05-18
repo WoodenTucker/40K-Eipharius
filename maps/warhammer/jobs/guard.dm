@@ -37,6 +37,7 @@
 				SSwarfare.red.squadA.members += src
 				src.squad = SSwarfare.red.squadA
 				//equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear) //Saving the original here in case I want to return to it.
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
 				RC.attach_accessory(src,A)
@@ -50,6 +51,7 @@
 			else if(minimum == bravo_members)
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src)
 				RC.attach_accessory(src,B)
@@ -60,6 +62,7 @@
 			else if(minimum == charlie_members)
 				SSwarfare.red.squadC.members += src
 				src.squad = SSwarfare.red.squadC
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/charlie(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/charlie/C = new(src.loc)
 				RC.attach_accessory(src,C)
@@ -69,6 +72,7 @@
 			else
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src.loc)
 				RC.attach_accessory(src,B)
@@ -100,7 +104,7 @@
 				SSwarfare.red.squadA.members += src
 				SSwarfare.red.squadA.squad_leader = src
 				src.squad = SSwarfare.red.squadA
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_alpha(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
 				RC.attach_accessory(src,A)
@@ -109,7 +113,7 @@
 				SSwarfare.red.squadB.members += src
 				SSwarfare.red.squadB.squad_leader = src
 				src.squad = SSwarfare.red.squadB
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_bravo(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src)
 				RC.attach_accessory(src,B)
@@ -118,7 +122,7 @@
 				SSwarfare.red.squadC.members += src
 				SSwarfare.red.squadC.squad_leader = src
 				src.squad = SSwarfare.red.squadC
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_charlie(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/charlie(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/charlie/C = new(src)
 				RC.attach_accessory(src,C)
