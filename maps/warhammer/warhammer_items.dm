@@ -903,6 +903,13 @@ Imperial Guardsman
 	item_state = "Commissar4Hat"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/head/adept
+	name = "Adept\'s Cap"
+	desc = "This cap belongs to a member of the Administratum."
+	icon_state = "Captain_Hat"
+	item_state = "Captain_Hat"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/bountyhead
 	name = "bounty hunter\'s helm"
