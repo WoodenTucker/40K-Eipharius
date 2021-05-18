@@ -259,7 +259,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	belt = /obj/item/melee/mercycs
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = null
 	r_pocket = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	pda_slot = null
