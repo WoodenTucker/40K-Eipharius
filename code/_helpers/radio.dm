@@ -190,7 +190,7 @@ var/list/BRAVO_FREQS = list(RED_BRAVO)
 
 var/list/CHARLIE_FREQS = list(RED_CHARLIE)
 
-var/list/VILL_FREQS = list(BLUE_DELTA)
+var/list/VILL_FREQS = list(RED_DELTA)
 
 //Department channels, arranged lexically
 var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
