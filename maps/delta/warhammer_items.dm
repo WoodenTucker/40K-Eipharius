@@ -399,7 +399,7 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "vox-caster rig"
 	desc = "A standard Guard issue vox-caster rig. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
-	ks1type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/red_all
 	icon_state = "voxcaster"
 	item_state = "voxcaster"
 	slot_flags = SLOT_EARS
@@ -459,7 +459,6 @@
 	Initialize()
 		. = ..()
 		set_frequency(BLUE_DELTA)
-
 
 /obj/item/melee/trench_axe
 	name = "trench axe"
@@ -883,17 +882,25 @@ Imperial Guardsman
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/commissar
-	name = "commisar's jacket"
-	icon_state = "comissar3"
-	item_state = "comissar3"
+	name = "commissar's jacket"
+	icon_state = "Commissar4"
+	item_state = "Commissar4"
 	armor = list(melee = 45, bullet = 45, laser = 45, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/commissar
-	name = "Commisar\'s Cap"
+	name = "Commissar\'s Cap"
 	desc = "This cap strikes fear into the rank and file."
-	icon_state = "comissar3"
-	item_state = "comissar3"
+	icon_state = "Commissar4Hat"
+	item_state = "Commissar4Hat"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/commissar/adept
+	name = "Adept\'s Cap"
+	desc = "This cap belongs to a member of the Administratum."
+	icon_state = "captain_hat"
+	item_state = "captain_hat"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -954,8 +961,8 @@ Imperial Guardsman
 /obj/item/clothing/suit/armor/enforcer
 	name = "enforcer's light armor"
 	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
-	icon_state = "merc"
-	item_state = "merc"
+	icon_state = "Judge"
+	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS

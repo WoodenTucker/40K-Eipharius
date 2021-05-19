@@ -15,7 +15,7 @@
 	belt = /obj/item/storage/belt/utility/full
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos
 	uniform = /obj/item/clothing/under/rank/chief_engineer
-	l_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = null
@@ -29,7 +29,7 @@
 	name = OUTFIT_JOB_NAME("Tech Priest")
 	head = /obj/item/clothing/head/hardhat/techpriest
 	mask = /obj/item/clothing/mask/gas/techpriest
-	l_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	uniform = /obj/item/clothing/under/rank/engineer
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos/techpriest

@@ -231,7 +231,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
 	l_pocket = /obj/item/storage/box/ifak
-	l_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/material/sword/commissword
 	l_hand = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
@@ -259,7 +259,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	belt = /obj/item/melee/mercycs
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = null
 	r_pocket = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	pda_slot = null
@@ -278,7 +278,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
-	head = /obj/item/clothing/head/helmet/guardhelmet
+	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
@@ -289,13 +289,13 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/baton
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/delta
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
+	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/handcuffs = 2,
-	/obj/item/storage/box/beanbags = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -476,7 +476,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/skitshoes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
