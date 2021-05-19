@@ -231,7 +231,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/commissar
 	head = /obj/item/clothing/head/commissar
 	l_pocket = /obj/item/storage/box/ifak
-	l_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/material/sword/commissword
 	l_hand = /obj/item/gun/projectile/bolter_pistol
 	r_pocket = /obj/item/device/binoculars
