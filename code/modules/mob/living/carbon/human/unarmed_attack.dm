@@ -261,3 +261,52 @@ var/global/list/sparring_attack_cache = list()
 	damage = 0
 	sharp = 0
 	edge = 0
+
+//Nid specific verbs
+/datum/unarmed_attack/rendingclaws
+	attack_verb = list("rends")
+	attack_noun = list("claw")
+	eye_attack_text = "blades"
+	eye_attack_text_victim = "daggers"
+	damage = 35
+	sharp = 1
+	edge = 1
+	attack_sound = 'sound/effects/nidslash.ogg'
+
+
+/datum/unarmed_attack/rendingclaws/show_attack(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone, var/attack_damage)
+	var/obj/item/organ/external/affecting = target.get_organ(zone)
+	var/organ = affecting.name
+
+	attack_damage = rand(35,55) //lets crank this bad boy for nids
+
+	if(target == user)
+		user.visible_message("<span class='danger'>[user] [pick(attack_verb)] \himself in the [organ]!</span>")
+		return 0
+
+	if(!target.lying)
+		switch(zone)
+			if(BP_HEAD, BP_MOUTH, BP_EYES)
+				// ----- HEAD ----- //
+				switch(attack_damage)
+					if(35 to 40)
+						user.visible_message("<span class='danger'>[user] gouged [target] across \his cheek!</span>")
+					if(41 to 49)
+						user.visible_message(pick(
+							80; "<span class='danger'>[user] [pick(attack_verb)] [target]'s head!</span>",
+							20; "<span class='danger'>[user] struck [target] in the head[pick("",)]!</span>",
+							50; "<span class='danger'>[user] slashed a claw against [target]'s head!</span>"
+							))
+					if(50 to 55)
+						user.visible_message(pick(
+							10; "<span class='danger'>[user] maims [target]'s face!</span>",
+							90; "<span class='danger'>[user] smashed \his [pick(attack_noun)] into [target]'s [pick("[organ]", "face", "jaw")]!</span>"
+							))
+			else
+				// ----- BODY ----- //
+				switch(attack_damage)
+					if(35 to 40)	user.visible_message("<span class='danger'>[user] threw a glancing slash at [target]'s [organ]!</span>")
+					if(41 to 49)	user.visible_message("<span class='danger'>[user] [pick(attack_verb)] [target]'s [organ]!</span>")
+					if(50 to 55)	user.visible_message("<span class='danger'>[user] tears apart [target]'s [organ]!</span>")
+	else
+		user.visible_message("<span class='danger'>[user] [pick("slashed", "flailed a claw at", "scythed", "impaled their [pick(attack_noun)] into")] [target]'s [organ]!</span>") //why do we have a separate set of verbs for lying targets?

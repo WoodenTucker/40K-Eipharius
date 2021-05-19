@@ -853,3 +853,36 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		to_chat(usr, "Random events disabled")
 		message_admins("Admin [key_name_admin(usr)] has disabled random events.", 1)
 	feedback_add_details("admin_verb","TRE") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/cmd_mentor_check_player_class()	//Allows mentors / admins to determine who the newer players are.
+	set category = "Admin"
+	set name = "Check Player Class"
+	if(!holder)
+		to_chat(src, "Only staff members may use this command.")
+
+	var/user_class = alert(src, "Class Check", "Show accountss in _____ class","Pig", "Pig+" , "Comrade")
+
+	if(user_class == "Comrade")
+		user_class = "Comrade"
+	else if (user_class == "Pig+")
+		user_class = "Pig+"
+	else if(user_class == "Pig")
+		user_class = "Pig"
+
+	var/missing_class = 0
+	var/msg = ""
+
+	for(var/client/C in GLOB.clients)
+		if(C.player_class == "Requires database")
+			missing_class = 1
+			continue
+		if(C.player_class)
+			msg += "[key_name(C, 1, 1,)]: account is [C.player_class]br>"
+
+	if(missing_class)
+		to_chat(src, "Some accounts did not have proper classes set in their clients.  This function requires database to be present")
+
+	if(msg != "")
+		src << browse(msg, "window=Player_class_check")
+	else
+		to_chat(src, "No matches for that class found.")

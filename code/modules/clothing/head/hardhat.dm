@@ -30,5 +30,14 @@
 	desc = "The augmented skull and hood signifying one is a priest of the Adeptus Mechanicus."
 	icon_state = "techpriestnew"
 	item_state = "techpriestnew"
+	brightness_on = 6
 	canremove = 0
-	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEMASK|HIDEEARS|HIDEEYES
+	armor = list(melee = 40, bullet = 15, laser = 30,energy = 20, bomb = 50, bio = 50, rad = 20)
+	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
+	flash_protection = FLASH_PROTECTION_MAJOR
+
+/obj/item/clothing/head/hardhat/techpriest/magos
+	icon_state = "magoshelm"
+	item_state = "magoshelm"
+	brightness_on = 8
+	armor = list(melee = 50, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)

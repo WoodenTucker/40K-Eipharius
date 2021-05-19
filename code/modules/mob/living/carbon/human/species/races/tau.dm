@@ -23,6 +23,9 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
+
+	blood_color = "#4c0377"
+
 /datum/species/tau/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(min_age,max_age)//Random age for kiddos.
 	if(H.f_style)//tau don't get beards.

@@ -207,3 +207,5 @@
 	var/buff_cd = 0 //will be used so people can't spam buffs
 
 	var/isblessed = 0 //used with censer blessings
+
+	var/alien_talk_understand = 0

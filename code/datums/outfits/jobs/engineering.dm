@@ -10,7 +10,8 @@
 
 /decl/hierarchy/outfit/job/engineering/chief_engineer
 	name = OUTFIT_JOB_NAME("Magos")
-	head = /obj/item/clothing/head/hardhat/techpriest
+	head = /obj/item/clothing/head/hardhat/techpriest/magos
+	mask = /obj/item/clothing/mask/gas/techpriest/magos
 	belt = /obj/item/storage/belt/utility/full
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos
 	uniform = /obj/item/clothing/under/rank/chief_engineer
@@ -27,6 +28,7 @@
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Tech Priest")
 	head = /obj/item/clothing/head/hardhat/techpriest
+	mask = /obj/item/clothing/mask/gas/techpriest
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	uniform = /obj/item/clothing/under/rank/engineer
