@@ -439,6 +439,11 @@
 		. = ..()
 		set_frequency(BLUE_DELTA)
 
+/obj/item/device/radio/headset/blue_team/adept
+	name = "Adept Headset"
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+	ks1type = /obj/item/device/encryptionkey/blue/adept
 
 /obj/item/melee/trench_axe
 	name = "trench axe"
