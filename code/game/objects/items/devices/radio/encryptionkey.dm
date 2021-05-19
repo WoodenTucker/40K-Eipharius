@@ -145,6 +145,12 @@
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
+/obj/item/device/encryptionkey/blue/adept
+	icon_state = "cypherkey"
+	channels = list("Blue Delta" = 1, "Red" = 1)
+	origin_tech = list(TECH_ILLEGAL = 3)
+	syndie = 1
+
 /obj/item/device/encryptionkey/binary
 	icon_state = "cypherkey"
 	translate_binary = 1
