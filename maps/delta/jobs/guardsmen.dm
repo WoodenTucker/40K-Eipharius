@@ -289,7 +289,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/baton
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/blue_team
+	l_ear = /obj/item/device/radio/headset/red_team/delta
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
