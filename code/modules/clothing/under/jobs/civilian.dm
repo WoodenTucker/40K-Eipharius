@@ -20,6 +20,12 @@
 	icon_state = "consort"
 	worn_state = "consort"
 
+/obj/item/clothing/under/rank/consort/adept
+	name = "adept\'s uniform"
+	desc = "A drab grey uniform fit for a self-important pencil pusher."
+	icon_state = "consort"
+	worn_state = "consort"
+
 
 /obj/item/clothing/under/rank/captain //Alright, technically not a 'civilian' but its better then giving a .dm file for a single define.
 	desc = "It's a blue jumpsuit with some gold markings denoting the rank of \"Captain\"."

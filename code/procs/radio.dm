@@ -13,8 +13,16 @@
 	// the name of the channel
 	if(display_freq in HIVE_FREQS)
 		freq_text = "Hive Mind"
-	else if(display_freq in INQ_FREQS)
-		freq_text = "Inquisition"
+	else if(display_freq in IMP_FREQS)
+		freq_text = "Imperial"
+	else if(display_freq in ALPHA_FREQS)
+		freq_text = "Alpha"
+	else if(display_freq in BRAVO_FREQS)
+		freq_text = "Bravo"
+	else if(display_freq in CHARLIE_FREQS)
+		freq_text = "Charlie"
+	else if(display_freq in VILL_FREQS)
+		freq_text = "Village"
 	else if(display_freq in ANTAG_FREQS)
 		freq_text = "#unkn"
 	else

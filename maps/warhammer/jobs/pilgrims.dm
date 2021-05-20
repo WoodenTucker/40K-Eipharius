@@ -276,15 +276,14 @@ Pilgrim Fate System
 //Administrator
 /decl/hierarchy/outfit/job/administrator
 	name = OUTFIT_JOB_NAME("Administrator")
-	uniform = /obj/item/clothing/under/color/brown
+	uniform = /obj/item/clothing/under/rank/consort/adept
+	head = /obj/item/clothing/head/commissar/adept
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/admin
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/ring/administrator
-	l_ear = null
-	r_ear = /obj/item/device/radio/headset/red_team/all
+	l_ear = /obj/item/device/radio/headset/red_team/sl_delta
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
 	backpack_contents = list(

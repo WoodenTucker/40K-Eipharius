@@ -226,6 +226,11 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
+/obj/item/storage/backpack/satchel/smurfs
+	desc = "An Ultramar powerpack."
+	icon_state = "um_back"
+	item_state = "um_back"
+	canremove = 0
 
 /obj/item/storage/backpack/satchel/warfare/kroot
 	desc = "Fit for war, and not much else."
