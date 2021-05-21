@@ -132,7 +132,7 @@
 
 /obj/machinery/computer/exterminatus/attack_hand(mob/living/carbon/human/user as mob)	//Starting menu
 	var/extermdelay = 21000 //in deciseconds (35 min rn or 21000 deciseconds)
-	if(!istype(user.wear_suit, /obj/item/clothing/suit/storage/hooded/inquisitor))
+	if(user.inquisitor == 0)
 		visible_message("DNA authorization failed!")
 		return
 	if(world.time < extermdelay) //all this does is cause a delay so people can't suicide or observer and rush the base
