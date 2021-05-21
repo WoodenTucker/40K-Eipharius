@@ -19,6 +19,7 @@
 	var/can_toggle = 1
 	var/is_toggled = 1 //armblade shit
 	var/gsc = 0 //for cult to hide icon
+	var/inquisitor = 0 //since dna doesnt exist we'll do it this way
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
