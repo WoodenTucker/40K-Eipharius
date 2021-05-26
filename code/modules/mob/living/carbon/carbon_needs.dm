@@ -49,6 +49,8 @@
 	if(has_quirk(/datum/quirk/brave))
 		happiness = MOOD_LEVEL_HAPPY1 //Still get moodies, they just don't affect you.
 
+
+
 	switch(happiness)
 		if(-5000000 to MOOD_LEVEL_SAD4)
 			if(happiness_icon)

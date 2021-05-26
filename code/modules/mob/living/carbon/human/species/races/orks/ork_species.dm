@@ -16,7 +16,7 @@
 
 /mob/living/carbon/human/Life()
 	..()
-	var/regen = 2
+	var/regen = 0.5
 	//waaagh_regen = 0
 	//var/healing = NO_HEAL
 	//var/bannerinview = FALSE
@@ -29,10 +29,10 @@
 			healing = HEALING_NORMAL
 			visible_message("Debug, scream effect")*/
 		if(inspired)
-			regen = 8
+			regen = 2
 			//healing = HEALING_ORGANS
 		else
-			regen = 2
+			regen = 0.5
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
 
