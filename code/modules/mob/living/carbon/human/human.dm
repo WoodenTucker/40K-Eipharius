@@ -862,7 +862,7 @@
 
 /mob/living/carbon/human/proc/remotesay()
 	set name = "Project mind"
-	set category = "Superpower"
+	set category = "Psyker"
 
 	if(stat!=CONSCIOUS)
 		reset_view(0)

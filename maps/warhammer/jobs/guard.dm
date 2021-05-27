@@ -194,7 +194,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 			src.reagents.addiction_list.Add(new_reagent)
 
 /mob/living/carbon/human/proc/witchblood()
-	if(prob(1))//95% of not being a psyker
+	if(prob(5))//95% of not being a psyker
 		return
 	else
 		src.psyker = 1
