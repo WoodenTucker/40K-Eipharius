@@ -868,10 +868,6 @@
 		reset_view(0)
 		remoteview_target = null
 		return
-
-	if(!(mRemotetalk in src.mutations))
-		src.verbs -= /mob/living/carbon/human/proc/remotesay
-		return
 	var/list/creatures = list()
 	for(var/mob/living/carbon/h in world)
 		creatures += h
@@ -896,12 +892,6 @@
 	if(stat!=CONSCIOUS)
 		remoteview_target = null
 		reset_view(0)
-		return
-
-	if(!(mRemote in src.mutations))
-		remoteview_target = null
-		reset_view(0)
-		src.verbs -= /mob/living/carbon/human/proc/remoteobserve
 		return
 
 	if(client.eye != client.mob)

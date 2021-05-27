@@ -245,6 +245,7 @@
 		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //highly trained and skilled
 		H.add_skills(rand(5,8),rand(5,8),rand(2,4),rand(1,3),0)
 		H.assign_random_quirk()
+		H.witchblood()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
@@ -282,6 +283,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
+		H.witchblood()
 		H.get_idcard()?.access = get_all_accesses()
 		H.inquisitor = 1
 		H.verbs += list(/mob/living/carbon/human/proc/declareheretic,)
