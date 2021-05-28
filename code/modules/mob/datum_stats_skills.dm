@@ -153,7 +153,7 @@
 	to_chat(src, message)
 
 //Use this proc to add stats to the jobs, it will add up on default values, keep that in mind
-/mob/living/carbon/human/proc/add_stats(var/strength, var/dexterity, var/endurance, var/intelligence)//TODO: Make this more atomic.
+/mob/living/carbon/human/proc/add_stats(var/strength, var/dexterity, var/endurance, var/intelligence,)//TODO: Make this more atomic.
 	if(strength)
 		STAT_LEVEL(str) = strength
 		if(has_quirk(/datum/quirk/weak))
@@ -166,6 +166,7 @@
 		STAT_LEVEL(end) = endurance
 	if(intelligence)
 		STAT_LEVEL(int) = intelligence
+
 	updateweight()
 
 //same thing but for skills

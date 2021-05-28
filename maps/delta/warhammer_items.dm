@@ -495,6 +495,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/melee/inqcs
 	name = "inquisition chainsword"
@@ -513,6 +514,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/melee/pcsword
 	name = "brutal chainsword"
@@ -531,6 +533,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	w_class = ITEM_SIZE_SMALL
 
 
 /obj/item/clothing/suit/chokha

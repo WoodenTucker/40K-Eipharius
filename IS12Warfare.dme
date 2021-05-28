@@ -2491,6 +2491,7 @@
 #include "maps\warhammer\jobs\khorne.dm"
 #include "maps\warhammer\jobs\nurgle.dm"
 #include "maps\warhammer\jobs\pilgrims.dm"
+#include "maps\warhammer\jobs\psyker.dm"
 #include "maps\warhammer\jobs\ruinouspowers.dm"
 #include "maps\warhammer\jobs\slaanesh.dm"
 #include "maps\warhammer\jobs\tzeentch.dm"

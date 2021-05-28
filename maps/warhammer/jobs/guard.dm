@@ -192,3 +192,10 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 		if(/datum/quirk/obscura)
 			var/datum/reagent/new_reagent = new /datum/reagent/space_drugs
 			src.reagents.addiction_list.Add(new_reagent)
+
+/mob/living/carbon/human/proc/witchblood()
+	if(prob(5))//95% of not being a psyker
+		return
+	else
+		src.psyker = 1
+		src.verbs += list(/mob/living/carbon/human/proc/remotesay,)

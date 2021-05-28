@@ -35,6 +35,7 @@
 	siemens_coefficient = 0
 	gluttonous = GLUT_ANYTHING
 	stomach_capacity = MOB_MEDIUM
+	darksight = 20
 
 	brute_mod = 0.25 // Hardened carapace.
 	burn_mod = 0.65    // Weak to fire.

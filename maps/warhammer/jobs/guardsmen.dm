@@ -33,6 +33,7 @@
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("Trooper [H.real_name]")
 		H.assign_random_quirk()
+		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		H.verbs += list(
@@ -73,6 +74,7 @@
 		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
 		H.add_skills(rand(7,10),rand(8,10),rand(0,3),0,0)
 		H.assign_random_quirk()
+		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
 		H.assign_squad_leader(IMPERIUM)
@@ -163,6 +165,7 @@
 		H.add_stats(rand(14,18), rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,10),rand(6,10))
 		H.assign_random_quirk()
+		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
