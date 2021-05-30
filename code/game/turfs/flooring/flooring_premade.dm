@@ -90,6 +90,31 @@
 	icon_state = "wood"
 	initial_flooring = /decl/flooring/wood
 
+/turf/simulated/floor/new_wood
+	name = "wooden floor"
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_state = "new_wood"
+	initial_flooring = /decl/flooring/new_wood
+
+/turf/simulated/floor/new_wood/two
+	icon_state = "new_wood2"
+
+/turf/simulated/floor/new_wood/three
+	icon_state = "new_wood3"
+
+/turf/simulated/floor/new_wood/four
+	icon_state = "new_wood4"
+/turf/simulated/floor/new_wood/five
+	icon_state = "new_wood5"
+/turf/simulated/floor/new_wood/six
+	icon_state = "new_wood6"
+/turf/simulated/floor/new_wood/seven
+	icon_state = "new_wood7"
+/turf/simulated/floor/new_wood/eight
+	icon_state = "new_wood8"
+/turf/simulated/floor/new_wood/nine
+	icon_state = "new_wood9"
+
 /turf/simulated/floor/stone
 	name = "stone floor"
 	icon = 'icons/turf/flooring/stonefloor.dmi'
