@@ -288,7 +288,6 @@
 	icon_state = "ork_clothes"
 	item_state = "ork_clothes"
 	worn_state = "ork_clothes"
-	canremove = 0
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 25, bomb = 30, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

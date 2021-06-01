@@ -1,7 +1,3 @@
-#define HEALING_NORMAL 1
-#define HEALING_ORGANS 2
-#define NO_HEAL        0
-
 /datum/species/ork
 	name = SPECIES_ORK
 	name_plural = "Orkz"
@@ -11,13 +7,13 @@
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	min_age = 1
 	max_age = 65
+	total_health = 250
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	brute_mod = 0.4 //orkz want melee
+	brute_mod = 0.6 //orkz want melee
 	burn_mod = 1.1
 	toxins_mod = 1
-	species_flags = SPECIES_FLAG_NO_PAIN //P sure orkz can't/don't care about pain (can fungus feel pain?)
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
@@ -62,8 +58,6 @@
 	real_name = "ork"
 	gender = MALE
 	status_flags = 0
-	health = 300
-	maxHealth = 300
 	var/isempty = 0
 	var/waaagh = 0
 	var/max_waaagh = 0
@@ -90,7 +84,7 @@
 
 	hand = 0//Make sure one of their hands is active.
 	put_in_hands(new /obj/item/gun/projectile/ork/automatic/shoota)//Give them a weapon.
-	isburied = 1
+	src.isburied = 1
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
 	h_style = "Bald"
