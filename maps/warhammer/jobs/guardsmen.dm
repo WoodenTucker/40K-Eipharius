@@ -460,17 +460,27 @@ Begin Warhammer loadouts
 
 //Ork//
 /decl/hierarchy/outfit/job/ork
-	uniform = /obj/item/clothing/under/rank/kroot
-	shoes = /obj/item/clothing/shoes/krootfeet
+	shoes = /obj/item/clothing/shoes/orkboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/ork/shoota = 2, /obj/item/melee/classic_baton/trench_club = 1,)
+
+/decl/hierarchy/outfit/job/ork/equip()
+	if(prob(99))
+		uniform = /obj/item/clothing/under/rank/ork
+		suit = /obj/item/clothing/suit/armor/orkarmor
+		l_pocket = /obj/item/storage/box/ifak
+		head = /obj/item/clothing/head/helmet/orkhelmet
+	else
+		r_pocket = /obj/item/shovel
+		belt = /obj/item/storage/belt/warfare
+		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
+	..()
 
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii
