@@ -288,37 +288,3 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-
-//FINALLY begin ork//
-/obj/item/clothing/suit/armor/orkarmor
-	name = "ork armor"
-	desc = "Scavenged bitz to keep ya' krumpin' longa'!"
-	icon_state = "ork_m_armor"
-	item_state = "ork_m_armor"
-	armor = list(melee = 85, bullet = 40, laser = 40, energy = 40, bomb = 25, bio = 0, rad = 0)
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
-	blood_overlay_type = "armor"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/orkarmor/two
-	icon_state = "bondagearmor"
-	item_state = "bondagearmor"
-/obj/item/clothing/suit/armor/orkarmor/three
-	icon_state = "potarmor"
-	item_state = "potarmor"
-
-/obj/item/clothing/suit/armor/orkarmor/four
-	icon_state = "snazzarmor"
-	item_state = "snazzarmor"
-
-/obj/item/clothing/suit/armor/orkarmor/five
-	icon_state = "armLskull"
-	item_state = "armLskull"
-
-/obj/item/clothing/suit/armor/orkarmor/five
-	icon_state = "armRskull"
-	item_state = "armRskull"
-

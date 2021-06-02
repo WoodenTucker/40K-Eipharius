@@ -832,7 +832,7 @@ Imperial Guardsman
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE	
 
 
 /obj/item/clothing/suit/armor/krieger
@@ -1185,26 +1185,6 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/orkhelmet
-	name = "ork helmet"
-	desc = "Looks like a rusty bucket with horns glued on..."
-	icon_state = "ork_helm"
-	item_state = "ork_helm"
-	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/orkhelmet/two
-	icon_state = "orkhelmet"
-	item_state = "orkhelmet"
-
-/obj/item/clothing/head/helmet/orkhelmet/three
-	icon_state = "orkhelmethorns"
-	item_state = "orkhelmethorns"
-
-/obj/item/clothing/head/helmet/orkhelmet/four
-	icon_state = "orkhelmetsight"
-	item_state = "orkhelmetsight"
 
 //Inquisition
 /obj/item/clothing/suit/armor/agent

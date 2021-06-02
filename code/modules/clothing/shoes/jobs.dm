@@ -173,9 +173,3 @@
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
-
-/obj/item/clothing/shoes/orkboots //walking sounds only play with shoes and I was losing my mind not having them
-	name = "ork boots"
-	desc = "da stompas"
-	icon_state = "ork_boots"
-	item_state = "ork_boots"
