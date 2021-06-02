@@ -1,54 +1,57 @@
-#define HEALING_NORMAL 1
-#define HEALING_ORGANS 2
-#define NO_HEAL        0
+/datum/species/ork
+	name = SPECIES_ORK
+	name_plural = "Orkz"
+	secondary_langs = list(LANGUAGE_ORKY)
+	name_language = null // Use the first-name last-name generator rather than a language scrambler
+	icobase = 'icons/mob/human_races/r_ork.dmi'
+	deform = 'icons/mob/human_races/r_def_ork.dmi'
+	min_age = 1
+	max_age = 65
+	total_health = 250
+	gluttonous = GLUT_ITEM_NORMAL
+	mob_size = MOB_LARGE
+	strength = STR_HIGH
+	brute_mod = 0.6 //orkz want melee
+	burn_mod = 1.1
+	toxins_mod = 1
+	sexybits_location = BP_GROIN
+	inherent_verbs = list(
+		//mob/living/carbon/human/ork/proc/evolve,
+		/mob/living/carbon/human/ork/proc/scavenge,
+		/mob/living/carbon/human/ork/proc/giveorkzstats,
+		/mob/living/carbon/human/ork/proc/warscream,
+		)
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
+/datum/species/ork/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.age = rand(min_age,max_age)//Random age
+	if(H.h_style)
+		H.h_style = "Bald" //never seen an ork wif hair
+	if(H.f_style)//orks dont have beards
+		H.f_style = "Shaved"
+	H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+	return ..()
 
-/mob/living/carbon/human
-	var/waaagh = 0
-	var/max_waaagh = 0
-	//var/waaagh_regen = 0  //natural regeneration of waaagh it changes when the ork is in presence of a ork banner or if he was buffed by the warboss
-	var/inspired = FALSE  //this changes when the ork is buffed by the warboss
-	var/new_species = SPECIES_ORK_GRETCHIN
 
-/mob/living/carbon/human/Stat()
+/mob/living/carbon/human/ork/Stat()
 	..()
 	if(max_waaagh > 0)
 		stat(null, "Waaagh: [waaagh]/[max_waaagh]")
 
-/mob/living/carbon/human/Life()
+/mob/living/carbon/human/ork/Life()
 	..()
 	var/regen = 0.5
-	//waaagh_regen = 0
-	//var/healing = NO_HEAL
-	//var/bannerinview = FALSE
 	if(max_waaagh > 0)
-		/*for(var/obj/structure/orkbanna/O in oview(7)) //checks for the orkbanner in sight
-			bannerinview = TRUE
-			visible_message("Debug, banner in view")
-		if(bannerinview || inspired)
-			waaagh_regen = 5
-			healing = HEALING_NORMAL
-			visible_message("Debug, scream effect")*/
 		if(inspired)
 			regen = 2
-			//healing = HEALING_ORGANS
 		else
 			regen = 0.5
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
-
-		//first heal damages
-		if(prob(20))
-			if(getBruteLoss() || getFireLoss() || getOxyLoss() || getToxLoss())
-				adjustBruteLoss(-1)
-				adjustFireLoss(-1)
-				adjustOxyLoss(-1)
-				adjustToxLoss(-1)
-
-		//next internal organs
-		if(prob(5))
-			for(var/obj/item/organ/I in internal_organs)
-				if(I.damage > 0)
-					I.damage = max(I.damage - 1, 0)
 
 /mob/living/carbon/human/ork
 	name = "ork"
@@ -56,6 +59,10 @@
 	gender = MALE
 	status_flags = 0
 	var/isempty = 0
+	var/waaagh = 0
+	var/max_waaagh = 0
+	var/inspired = FALSE  //this changes when the ork is buffed by the warboss
+	var/new_species = SPECIES_ORK
 
 /mob/living/carbon/human/ork/New(var/new_loc)
 	max_waaagh = 300
@@ -63,9 +70,9 @@
 	var/dice = rand(1, 2)
 	switch(dice)
 		if(1)
-			playsound(src, 'sound/voice/ork/gretspawn1.ogg', 50)
+			playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 		if(2)
-			playsound(src, 'sound/voice/ork/gretspawn2.ogg', 50)
+			playsound(src, 'sound/voice/ork/workwork.ogg', 50)
 	..(new_loc, new_species)
 
 /mob/living/carbon/human/ork/Initialize()
@@ -77,7 +84,7 @@
 
 	hand = 0//Make sure one of their hands is active.
 	put_in_hands(new /obj/item/gun/projectile/ork/automatic/shoota)//Give them a weapon.
-	isburied = 1
+	src.isburied = 1
 
 /mob/living/carbon/human/ork/nob/New(var/new_loc)
 	h_style = "Bald"
