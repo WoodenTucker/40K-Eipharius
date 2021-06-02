@@ -10,7 +10,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 450
+	total_health = 350
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
