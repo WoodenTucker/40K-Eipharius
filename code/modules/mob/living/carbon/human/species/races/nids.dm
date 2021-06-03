@@ -221,7 +221,7 @@
 	set desc = "Forms a spawning pool"
 	set category = "Tyranid"
 
-	if(src.poolparty >= 1)
+	if(src.poolparty >= 2)
 		to_chat(src, "<font color='#800080'>You can't make any more pools!</font>")
 		return
 
@@ -307,7 +307,6 @@
 	if(user.dnastore < 1)
 		to_chat(user, "<font color='#800080'>I do not have any DNA to contribute to the pool...</font>")
 		return
-
 	else
 		user.dnastore--
 		user.biomass +=20
