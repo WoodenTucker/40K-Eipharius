@@ -471,15 +471,21 @@ Begin Warhammer loadouts
 	backpack_contents = list(/obj/item/ammo_magazine/ork/shoota = 2, /obj/item/melee/classic_baton/trench_club = 1,)
 
 /decl/hierarchy/outfit/job/ork/equip()
-	if(prob(99))
+	if(prob(50))
 		uniform = /obj/item/clothing/under/rank/ork
 		suit = /obj/item/clothing/suit/armor/orkarmor
 		l_pocket = /obj/item/storage/box/ifak
 		head = /obj/item/clothing/head/helmet/orkhelmet
-	else
-		r_pocket = /obj/item/shovel
-		belt = /obj/item/storage/belt/warfare
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
+	else if(25)
+		uniform = /obj/item/clothing/under/rank/ork/three
+		suit = /obj/item/clothing/suit/armor/orkarmor/two
+		head = /obj/item/clothing/head/helmet/orkhelmet/three
+		l_pocket = /obj/item/storage/box/ifak
+	else if(25)
+		uniform = /obj/item/clothing/under/rank/ork/two
+		suit = /obj/item/clothing/suit/armor/orkarmor/two
+		head = /obj/item/clothing/head/helmet/orkhelmet/two
+		l_pocket = /obj/item/storage/box/ifak
 	..()
 
 //Skitarii
