@@ -7,6 +7,7 @@ var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
 	name = "General"
 	sort_order = 1
 	category_item_type = /datum/category_item/player_setup_item/general
+
 /*
 /datum/category_group/player_setup_category/skill_preferences
 	name = "Skills"
@@ -14,28 +15,23 @@ var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
 	category_item_type = /datum/category_item/player_setup_item/skills
 */
 
-
-/*
 /datum/category_group/player_setup_category/occupation_preferences
 	name = "Occupation"
 	sort_order = 2
 	category_item_type = /datum/category_item/player_setup_item/occupation
-*/
 
-
-/*
 /datum/category_group/player_setup_category/appearance_preferences
 	name = "Antagonism"
 	sort_order = 3
 	category_item_type = /datum/category_item/player_setup_item/antagonism
-*/
 
 /*
 /datum/category_group/player_setup_category/loadout_preferences
 	name = "Loadout"
 	sort_order = 6
-	category_item_type = /datum/category_item/player_setup_item/loadout
+	category_item_type = /datum/category_item/player_setup_item/loadout 
 */
+
 /datum/category_group/player_setup_category/global_preferences
 	name = "!SETTINGS!"
 	sort_order = 2 //3
