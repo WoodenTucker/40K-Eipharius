@@ -23,7 +23,7 @@
 "aw" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/caves)
 "ax" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/caves)
 "ay" = (/obj/effect/floor_decal/newcorner/plating{dir = 4},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/caves)
-"az" = (/obj/structure/stairs/south,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/caves)
+"az" = (/obj/structure/stairs/north,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/caves)
 "aA" = (/obj/effect/floor_decal/newcorner/plating{dir = 8},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/caves)
 "aB" = (/obj/structure/table/rack,/obj/item/reagent_containers/spray/cleaner,/obj/effect/floor_decal/turf/splate,/obj/effect/floor_decal/newcorner/plating,/obj/item/storage/bag/trash,/obj/item/storage/bag/trash,/obj/item/storage/bag/trash,/obj/item/storage/bag/trash,/obj/item/reagent_containers/spray/cleaner,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
 "aR" = (/obj/structure/table/standard{name = "plastic table frame"},/obj/effect/floor_decal/newcorner/shaft{dir = 4},/obj/effect/floor_decal/newcorner/plating{dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/supply/mining/eva)
