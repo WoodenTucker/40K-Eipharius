@@ -935,6 +935,7 @@ Imperial Guardsman
 	item_state = "skullopen"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = BLOCKHAIR
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
 	access = list(access_maint_tunnels,)
