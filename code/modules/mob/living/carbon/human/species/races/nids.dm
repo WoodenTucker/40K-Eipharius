@@ -10,7 +10,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 350
+	total_health = 250
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
@@ -25,7 +25,7 @@
 	/mob/living/carbon/human/genestealer/proc/gsheal,
 
 	 )
-	slowdown = -1
+	slowdown = -0.8
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/rendingclaws,
@@ -221,7 +221,7 @@
 	set desc = "Forms a spawning pool"
 	set category = "Tyranid"
 
-	if(src.poolparty >= 1)
+	if(src.poolparty >= 2)
 		to_chat(src, "<font color='#800080'>You can't make any more pools!</font>")
 		return
 
@@ -307,7 +307,6 @@
 	if(user.dnastore < 1)
 		to_chat(user, "<font color='#800080'>I do not have any DNA to contribute to the pool...</font>")
 		return
-
 	else
 		user.dnastore--
 		user.biomass +=20

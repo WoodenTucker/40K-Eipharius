@@ -8,7 +8,6 @@
 	#include "warhammer_items.dm"
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
-	#include "jobs/astarte.dm"
 
 	#include "warhammer-1.dmm"
 	#include "warhammer-2.dmm"

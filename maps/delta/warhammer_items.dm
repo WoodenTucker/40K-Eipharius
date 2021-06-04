@@ -495,7 +495,6 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	w_class = ITEM_SIZE_SMALL
 
 /obj/item/melee/inqcs
 	name = "inquisition chainsword"
@@ -514,7 +513,6 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	w_class = ITEM_SIZE_SMALL
 
 /obj/item/melee/pcsword
 	name = "brutal chainsword"
@@ -533,7 +531,6 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	w_class = ITEM_SIZE_SMALL
 
 
 /obj/item/clothing/suit/chokha
@@ -827,6 +824,16 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/CatachanVest
+	name = "Catachan Vest"
+	desc = "Flak vests worn by those born on the planet of Catachan."
+	icon_state = "Catachan_Vest"
+	item_state = "Catachan_Vest"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 /obj/item/clothing/suit/armor/krieger
 	name = "Krieger's Trench Coat"
@@ -851,6 +858,13 @@ Imperial Guardsman
 	icon_state = "guard"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/head/helmet/guardhelmet/enforcer
+	name = "Enforcer Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "Jhelm2"
+	item_state = "Jhelm2"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/krieghelmet
 	name = "Krieg Helmet"
@@ -859,6 +873,13 @@ Imperial Guardsman
 	item_state = "krieghelm"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/guardhelmet/catachan
+    name = "Catachan Headband"
+    desc = "Sometimes protects your head from bullets and blows."
+    icon_state = "Catachan_Headband"
+    cold_protection = HEAD
+    min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/medicae
 	name = "medicae helmet"
@@ -914,6 +935,7 @@ Imperial Guardsman
 	item_state = "skullopen"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = BLOCKHAIR
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
 	access = list(access_maint_tunnels,)
@@ -1164,6 +1186,26 @@ Imperial Guardsman
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet
+	name = "ork helmet"
+	desc = "Looks like a rusty bucket with horns glued on..."
+	icon_state = "ork_helm"
+	item_state = "ork_helm"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet/two
+	icon_state = "orkhelmet"
+	item_state = "orkhelmet"
+
+/obj/item/clothing/head/helmet/orkhelmet/three
+	icon_state = "orkhelmethorns"
+	item_state = "orkhelmethorns"
+
+/obj/item/clothing/head/helmet/orkhelmet/four
+	icon_state = "orkhelmetsight"
+	item_state = "orkhelmetsight"
 
 //Inquisition
 /obj/item/clothing/suit/armor/agent

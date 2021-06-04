@@ -5,7 +5,7 @@
 	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
-	selection_color = "#b27676"
+	selection_color = "#004e07"
 	department_flag = SEC
 	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
 	semi_rifle_skill = 10
@@ -33,6 +33,7 @@
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("Trooper [H.real_name]")
 		H.assign_random_quirk()
+		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		H.verbs += list(
@@ -47,6 +48,7 @@
 	supervisors = "The Commissar and Astartes Envoy."
 	total_positions = 2
 	spawn_positions = 2
+	selection_color = "#004e07"
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -73,6 +75,7 @@
 		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
 		H.add_skills(rand(7,10),rand(8,10),rand(0,3),0,0)
 		H.assign_random_quirk()
+		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
 		H.assign_squad_leader(IMPERIUM)
@@ -92,6 +95,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
+	selection_color = "#011c77"
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
@@ -136,6 +140,7 @@
 	total_positions = 4
 	spawn_positions = 4 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
+	selection_color = "#00494e"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
@@ -163,6 +168,7 @@
 		H.add_stats(rand(14,18), rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,10),rand(6,10))
 		H.assign_random_quirk()
+		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
@@ -457,17 +463,33 @@ Begin Warhammer loadouts
 
 //Ork//
 /decl/hierarchy/outfit/job/ork
-	uniform = /obj/item/clothing/under/rank/kroot
-	shoes = /obj/item/clothing/shoes/krootfeet
+	shoes = /obj/item/clothing/shoes/orkboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/ork/shoota = 2, /obj/item/melee/classic_baton/trench_club = 1,)
+
+/decl/hierarchy/outfit/job/ork/equip()
+	if(prob(50))
+		uniform = /obj/item/clothing/under/rank/ork
+		suit = /obj/item/clothing/suit/armor/orkarmor
+		l_pocket = /obj/item/storage/box/ifak
+		head = /obj/item/clothing/head/helmet/orkhelmet
+	else if(25)
+		uniform = /obj/item/clothing/under/rank/ork/three
+		suit = /obj/item/clothing/suit/armor/orkarmor/two
+		head = /obj/item/clothing/head/helmet/orkhelmet/three
+		l_pocket = /obj/item/storage/box/ifak
+	else if(25)
+		uniform = /obj/item/clothing/under/rank/ork/two
+		suit = /obj/item/clothing/suit/armor/orkarmor/two
+		head = /obj/item/clothing/head/helmet/orkhelmet/two
+		l_pocket = /obj/item/storage/box/ifak
+	..()
 
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii
@@ -495,7 +517,7 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger",) //lists all possible chapters
+	var/chapter = list("Cadian", "Krieger", "Catachan") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
 	switch(chapterchoice)
@@ -552,6 +574,32 @@ Begin Warhammer loadouts
 
 			W.icon_state = "tagred"
 			W.assignment = "Cadian"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+		if("Catachan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/camo, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.assignment = "Catachan"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
