@@ -10,14 +10,17 @@ GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 /area/constructionsite
 	name = "\improper Construction Site"
 	icon_state = "storage"
+	requires_power = FALSE
 
 /area/maintenance/fsmaint2
 	name = "\improper Fore Starboard Maintenance - 2"
 	icon_state = "fsmaint"
+	requires_power = FALSE
 
 /area/medical/surgery
 	name = "\improper Operating Theatre"
 	icon_state = "surgery"
+	requires_power = FALSE
 
 /area/warp_engine
 	name = "Warp Storm Engine"
@@ -315,6 +318,7 @@ Area basic template
 /area/cadiaoutpost/gma/air
 	name = "Air"
 	icon_state = "blue"
+	requires_power = 0
 
 /area/cadiaoutpost/gma/underground
 	name = "Underground"
@@ -331,6 +335,7 @@ Area basic template
 /area/cadiaoutpost/oa/arrivals
 	name = "Arrivals"
 	icon_state = "cryo"
+	requires_power = 0
 //////////////////////////////////////
 ////////////Hallways//////////////////
 //////////////////////////////////////
@@ -338,34 +343,42 @@ Area basic template
 /area/cadiaoutpost/oa/bridge/hallway
 	name = "Bridge Hallway"
 	icon_state = "blueold"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/departures
 	name = "Departures"
 	icon_state = "escape"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/hallway
 	name = "Hallway"
 	icon_state = "yellow"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/hallway/northern
 	name = "Northern Hallway"
 	icon_state = "halln"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/hallway/eastern
 	name = "Eastern Hallway"
 	icon_state = "halle"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/hallway/southern
 	name = "Southern Hallway"
 	icon_state = "halls"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/hallway/western
 	name = "Western Hallway"
 	icon_state = "hallw"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/hallway/centralhall
 	name = "Inner Hallway"
 	icon_state = "hallC1"
+	requires_power = 0
 
 //////////////////////////////////////
 //////////Security////////////////////
@@ -373,22 +386,27 @@ Area basic template
 /area/cadiaoutpost/oa/security
 	name = "Security"
 	icon_state = "security"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/armory
 	name = "Armory"
 	icon_state = "armory"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/barracks
 	name = "Barracks"
 	icon_state = "barracks"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/brig
 	name = "Brig"
 	icon_state = "brig"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/prison
 	name = "Prison"
 	icon_state = "sec_prison"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/detective
 	name = "detective"
@@ -397,6 +415,7 @@ Area basic template
 /area/cadiaoutpost/oa/security/warden
 	name = "Warden"
 	icon_state = "warden"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/customs
 	name = "customs"
@@ -405,14 +424,17 @@ Area basic template
 /area/cadiaoutpost/oa/security/firing_range
 	name = "Firing Range"
 	icon_state = "firingrange"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/execution
 	name = "Execution"
 	icon_state = "execution_room"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/execution/education
 	name = "Prisoner Education"
 	icon_state = "execution_room"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/security/execution/transfer
 	name = ""
@@ -425,26 +447,32 @@ Area basic template
 /area/cadiaoutpost/oa/bridge/offices/roguetrader
 	name = "Rogue Trader's Office"
 	icon_state = "captain"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/offices/seneschal
 	name = "Seneschal's Office"
 	icon_state = "hop"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/offices/commissar
 	name = "Commissar's Office"
 	icon_state = "hos"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/offices/magoserrant
 	name = "Magos Errant's Office"
 	icon_state = "rd"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/offices/magosexplorator
 	name = "Magos Explorator's Office"
 	icon_state = "ce"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/offices/sisterhospitaller
 	name = "Sister Hospitaller's Office"
 	icon_state = "cmo"
+	requires_power = 0
 
 ////////////////////////
 ////////Misc (temp)/////
@@ -452,14 +480,17 @@ Area basic template
 /area/cadiaoutpost/oa/bridge
 	name = "Bridge"
 	icon_state = "bridge"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/vault
 	name = "Vault"
 	icon_state = "nuke_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/bridge/meetingroom
 	name = "Meeting Room"
 	icon_state = "blue"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/caves
 	name = "Caves"
@@ -473,10 +504,12 @@ Area basic template
 /area/cadiaoutpost/oa/engineering
 	name = "Machinamentum"
 	icon_state = "engineering"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engine
 	name = "Sacrarium Machina"
 	icon_state = "engine"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engistorage
 	name = "Engineering Storage"
@@ -485,6 +518,7 @@ Area basic template
 /area/cadiaoutpost/oa/engineering/engineeringfoyer
 	name = "Engineering Foyer"
 	icon_state = "engineering_foyer"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engine/enginewaste
 	name = "Engine Waste"
@@ -493,34 +527,42 @@ Area basic template
 /area/cadiaoutpost/oa/engineering/engine/enginesmes
 	name = "Engine Smes"
 	icon_state = "engine_smes"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/engineeringbreak
 	name = "Engineering Breakroom"
 	icon_state = "engineering_break"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/atmospherics
 	name = "Atmospherics"
 	icon_state = "atmos"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/atmospherics/atmosmonitoring
 	name = "Atmos Monitoring"
 	icon_state = "atmos_monitoring"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/atmospherics/atmosstorage
 	name = "Atmos Storage"
 	icon_state = "atmos_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/Gravity
 	name = "Gravity Generator"
 	icon_state = "gravgen"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/drone
 	name = "Drone Zone"
 	icon_state = "drone_fab"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/engineering/solars
 	name = "Solars"
 	icon_state = "solars"
+	requires_power = 0
 //////////////////////////////////////
 //////////////Medical////////////////
 /////////////////////////////////////
@@ -533,22 +575,27 @@ Area basic template
 /area/cadiaoutpost/oa/medicae/storage
 	name = "Medicae Storage"
 	icon_state = "medbay2"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/virology
 	name = "Praetorium Aegrotatio"
 	icon_state = "virology"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/chem
 	name = "Chemistry"
 	icon_state = "chem"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/surgery
 	name = "Surgery"
 	icon_state = "surgery"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/morgue
 	name = "Morgue"
 	icon_state = "morgue"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/patients
 	name = "patients"
@@ -585,10 +632,12 @@ Area basic template
 /area/cadiaoutpost/oa/medicae/cryo
 	name = "Cryo"
 	icon_state = "cryo"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/medicae/medicaebreak
 	name = "Medicae Breakroom"
 	icon_state = "medbay_break"
+	requires_power = 0
 
 
 //////////////////////////////////////////
@@ -597,10 +646,12 @@ Area basic template
 /area/cadiaoutpost/oa/research
 	name = "Biocogitatum"
 	icon_state = "research"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/research/robotics
 	name = "Cybersmithy"
 	icon_state = "robotics"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/research/xenobiology
 	name = "Sanctum Biologis"
@@ -609,18 +660,22 @@ Area basic template
 /area/cadiaoutpost/oa/research/toxins
 	name = "Toxins"
 	icon_state = "toxins"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/research/toxins/toxinlab
 	name = "toxin lab"
 	icon_state = "toxlab"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/research/toxins/toxintest
 	name = "Toxin Test"
 	icon_state = "toxtest"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/research/toxins/toxinstorage
 	name = "Toxin Storage"
 	icon_state = "toxstorage"
+	requires_power = 0
 
 /////////////////////////////////////
 /////////////Service/////////////////
@@ -629,50 +684,63 @@ Area basic template
 /area/cadiaoutpost/oa/service
 	name = "service"
 	icon_state = "grey"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/bar
 	name = "The Maltese Falcon"
 	icon_state = "bar"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/kitchen
 	name = "Kitchen"
 	icon_state = "kitchen"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/hydroponics
 	name = "Hydroponics"
 	icon_state = "hydro"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/chapel
 	name = "Chapel"
 	icon_state = "chapel"
 	music = 'sound/music/monastary.ogg'
+	requires_power = 0
+
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
 	icon_state = "chapeloffice"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/janitor
 	name = "Janitor"
 	icon_state = "janitor"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/theatre
 	name = "Theatre"
 	icon_state = "theatre"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/library
 	name = "Library"
 	icon_state = "library"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/library/lounge
 	name = "Lounge"
 	icon_state = "library"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/kitchen/cafeteria
 	name = "cafeteria"
 	icon_state = "cafeteria"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/lawoffice
 	name = "Law Office"
 	icon_state = "law"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/service/inn
 	name = "Village Inn"
@@ -687,34 +755,42 @@ Area basic template
 /area/cadiaoutpost/oa/supply
 	name = "Supply"
 	icon_state = "brown"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo
 	name = "Cargo"
 	icon_state = "cargo"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo/quartoffice
 	name = "Quartermaster office"
 	icon_state = "quartoffice"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo/warehouse
 	name = "Warehouse"
 	icon_state = "warehouse"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo/office
 	name = "Cargo Office"
 	icon_state = "cargo_office"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo/mailroom
 	name = "Mail Room"
 	icon_state = "mailroom"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo/lobby
 	name = "Cargo Lobby"
 	icon_state = "cargo_lobby"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/cargo/cargobreak
 	name = "Cargo Breakroom"
 	icon_state = "cargo_break"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/disposal
 	name = "Disposal"
@@ -743,6 +819,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/mining/miningproduction
 	name = "Mining Production"
 	icon_state = "mining_production"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/supply/mining/office
 	name = "Mining Office"
@@ -751,6 +828,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/mining/miningbreak
 	name = "Mining Breakroom"
 	icon_state = "mining_break"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/farm
 	name = "Farm"
@@ -922,30 +1000,37 @@ Area basic template
 /area/cadiaoutpost/oa/crew_quarters
 	name = "Crew Quarters"
 	icon_state = "crew_quarters"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/crew_quarters/dorms
 	name = "Dormitory"
 	icon_state = "Sleep"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/crew_quarters/fitness
 	name = "Fitness"
 	icon_state = "fitness"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/crew_quarters/locker
 	name = "Locker Room"
 	icon_state = "locker"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/crew_quarters/lounge
 	name = "Lounge"
 	icon_state = "lounge"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/crew_quarters/toilet
 	name = "Toilet"
 	icon_state = "toilet"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/crew_quarters/cryopods
 	name = "Cryopods"
 	icon_state = "cryopods"
+	requires_power = 0
 
 ////////////////////////////////////
 ////////////Tcommsat////////////////
@@ -978,34 +1063,42 @@ Area basic template
 /area/cadiaoutpost/oa/storage
 	name = "Storage"
 	icon_state = "storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/primary
 	name = "Primary Storage"
 	icon_state = "primary_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/primary/auxiliary
 	name = "Auxiliary Storage"
 	icon_state = "aux_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/art
 	name = "Art Storage"
 	icon_state = "art_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/eva
 	name = "EVA Storage"
 	icon_state = "eva_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/tech
 	name = "Tech Storage"
 	icon_state = "tech_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/tech/secure
 	name = "Secure Tech Storage"
 	icon_state = "securetech_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/storage/tcomm
 	name = "Tcomm Storage"
 	icon_state = "tecomm_storage"
+	requires_power = 0
 
 /area/cadiaoutpost/oa/vault
 	name = "Vault"

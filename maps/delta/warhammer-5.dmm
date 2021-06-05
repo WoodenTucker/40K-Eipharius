@@ -21,7 +21,6 @@
 "dk" = (/obj/structure/flora/ausbushes/fernybush,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/oa/tauship)
 "dy" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "eK" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
-"eW" = (/obj/machinery/telecomms/allinone,/turf/simulated/floor/stone,/area/space)
 "fi" = (/obj/structure/table/steel,/obj/random/firstaid,/obj/random/firstaid,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "fq" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "fI" = (/obj/structure/dispenser/oxygen,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -101,7 +100,6 @@
 "AO" = (/obj/machinery/door/blast/regular{dir = 4; icon_state = "pdoor1"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "Bo" = (/turf/simulated/floor/lino,/area/cadiaoutpost/oa/tauship)
 "BT" = (/obj/machinery/optable,/obj/machinery/oxygen_pump/anesthetic{pixel_x = -32},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"BV" = (/turf/unsimulated/mineral,/area/space)
 "Cw" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/obj/structure/window/reinforced,/turf/simulated/floor/plating/reinforced,/area/centcom)
 "CR" = (/obj/machinery/atmospherics/pipe/tank/oxygen,/turf/simulated/floor/plating,/area/centcom)
 "Dt" = (/obj/effect/wingrille_spawn/reinforced,/turf/space,/area/cadiaoutpost/oa/tauship)
@@ -185,9 +183,9 @@
 "ZY" = (/obj/structure/table/rack/shelf,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/turf/simulated/floor/blackgrid,/area/cadiaoutpost/oa/tauship)
 
 (1,1,1) = {"
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxBVBVBV
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxBVeWBV
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxBVBVBV
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEvEvEvEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
