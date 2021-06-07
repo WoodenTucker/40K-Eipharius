@@ -50,7 +50,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "the Rogue Trader"
-	selection_color = "#011c77"
+	selection_color = "#00494e"
 	req_admin_notify = 1
 	minimal_player_age = 25
 	economic_modifier = 10

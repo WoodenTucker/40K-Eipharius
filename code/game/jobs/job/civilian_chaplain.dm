@@ -9,7 +9,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Ecclesiarchy"
-	selection_color = "#515151"
+	selection_color = "#337C81"
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
 	announced = FALSE

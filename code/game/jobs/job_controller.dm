@@ -21,7 +21,7 @@ var/global/datum/controller/occupations/SSjobs
 	occupations = list()
 	occupations_by_type = list()
 	occupations_by_title = list()
-	var/list/all_jobs = list(/datum/job/assistant) | GLOB.using_map.allowed_jobs
+	var/list/all_jobs = GLOB.using_map.allowed_jobs
 	if(!all_jobs.len)
 		log_error("<span class='warning'>Error setting up jobs, no job datums found!</span>")
 		return 0
