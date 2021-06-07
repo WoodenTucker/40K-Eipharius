@@ -5,7 +5,7 @@
 	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
-	selection_color = "#004e07"
+	selection_color = "#33813A"
 	department_flag = SEC
 	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
 	semi_rifle_skill = 10
@@ -48,11 +48,11 @@
 	supervisors = "The Commissar and Astartes Envoy."
 	total_positions = 2
 	spawn_positions = 2
-	selection_color = "#004e07"
+	selection_color = "#33813A"
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
-	department_flag = SEC
+	department_flag = SEC|COM
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
@@ -95,7 +95,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
-	selection_color = "#011c77"
+	selection_color = "#004e07"
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
@@ -140,7 +140,7 @@
 	total_positions = 4
 	spawn_positions = 4 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
-	selection_color = "#00494e"
+	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6

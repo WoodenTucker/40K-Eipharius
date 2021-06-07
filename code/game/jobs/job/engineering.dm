@@ -51,7 +51,7 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Magos"
-	selection_color = "#5b4d20"
+	selection_color = "#B2A15F"
 	economic_modifier = 5
 	minimal_player_age = 7
 	open_when_dead = 1

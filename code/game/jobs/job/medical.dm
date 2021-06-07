@@ -11,7 +11,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Orders Hospitaller"
-	selection_color = "#011c77"
+	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
 	open_when_dead = FALSE
@@ -53,7 +53,7 @@
 	total_positions = 5
 	spawn_positions = 3
 	supervisors = "the Sister Hospitaller and the Orders Hospitaller"
-	selection_color = "#633d63"
+	selection_color = "#967096"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = TRUE
@@ -101,7 +101,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Sister Hospitaller"
-	selection_color = "#633d63"
+	selection_color = "#967096"
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -133,7 +133,7 @@
 	minimal_player_age = 7
 	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
-	selection_color = "#633d63"
+	selection_color = "#967096"
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -174,7 +174,7 @@
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the Sister Hospitaller and the Commissar"
-	selection_color = "#633d63"
+	selection_color = "#967096"
 	economic_modifier = 4
 	minimal_player_age = 4
 	latejoin_at_spawnpoints = TRUE
