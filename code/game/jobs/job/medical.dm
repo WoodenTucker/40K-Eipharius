@@ -35,6 +35,7 @@
 		H.fully_replace_character_name("Sister Hospitaller [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
+		H.add_skills(3,3,10,0,10)
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
