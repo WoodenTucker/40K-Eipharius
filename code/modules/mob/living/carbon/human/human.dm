@@ -20,6 +20,9 @@
 	var/is_toggled = 1 //armblade shit
 	var/gsc = 0 //for cult to hide icon
 	var/inquisitor = 0 //since dna doesnt exist we'll do it this way
+	var/psyker = 0
+	var/focus = 50
+	var/max_focus = 100
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -859,15 +862,11 @@
 
 /mob/living/carbon/human/proc/remotesay()
 	set name = "Project mind"
-	set category = "Superpower"
+	set category = "Psyker"
 
 	if(stat!=CONSCIOUS)
 		reset_view(0)
 		remoteview_target = null
-		return
-
-	if(!(mRemotetalk in src.mutations))
-		src.verbs -= /mob/living/carbon/human/proc/remotesay
 		return
 	var/list/creatures = list()
 	for(var/mob/living/carbon/h in world)
@@ -893,12 +892,6 @@
 	if(stat!=CONSCIOUS)
 		remoteview_target = null
 		reset_view(0)
-		return
-
-	if(!(mRemote in src.mutations))
-		remoteview_target = null
-		reset_view(0)
-		src.verbs -= /mob/living/carbon/human/proc/remoteobserve
 		return
 
 	if(client.eye != client.mob)

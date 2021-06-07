@@ -112,8 +112,8 @@
 	icon_state = "neurotoxin"
 	damage = 5
 	damage_type = TOX
-	weaken = 20
-	stun = 20
+	weaken = 30
+	stun = 30
 
 /obj/item/projectile/energy/las
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'

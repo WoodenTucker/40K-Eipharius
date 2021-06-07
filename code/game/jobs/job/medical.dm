@@ -11,7 +11,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Orders Hospitaller"
-	selection_color = "#633d63"
+	selection_color = "#011c77"
 	req_admin_notify = 1
 	economic_modifier = 10
 	open_when_dead = FALSE

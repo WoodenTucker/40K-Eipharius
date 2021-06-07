@@ -160,6 +160,17 @@ var/list/flooring_types
 	descriptor = "planks"
 	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
 
+/decl/flooring/new_wood
+	name = "wooden floor"
+	desc = "Polished redwood planks."
+	icon = 'icons/turf/flooring/wood.dmi'
+	icon_base = "new_wood"
+	has_damage_range = 6
+	damage_temperature = T0C+200
+	build_type = /obj/item/stack/tile/wood
+	descriptor = "planks"
+	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE | TURF_CAN_BURN
+
 
 /decl/flooring/stone
 	name = "stone floor"

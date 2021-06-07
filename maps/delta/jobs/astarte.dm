@@ -6,7 +6,7 @@
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
-	selection_color = "#270092"
+	selection_color = "#011c77"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
@@ -50,19 +50,11 @@
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = /obj/item/storage/backpack/satchel/warfare
+	back = null //for future power packs
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	shoes = null
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/clothing/glasses/night = 1,
-
-	)
+	backpack_contents = null //for now
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 
@@ -107,6 +99,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/smurfhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/smurfs, slot_back)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
