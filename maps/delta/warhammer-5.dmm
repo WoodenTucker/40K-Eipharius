@@ -10,6 +10,7 @@
 "bw" = (/obj/machinery/door/airlock/centcom{locked = 1; name = "Gas Storage"},/turf/simulated/floor/plating,/area/centcom)
 "by" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/tauship)
 "bC" = (/obj/structure/flora/ausbushes/stalkybush,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/cult,/area/cadiaoutpost/oa/tauship)
+"bT" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "bU" = (/obj/machinery/door/airlock/glass_command{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "cv" = (/obj/machinery/door/airlock/centcom,/turf/simulated/floor/tiled/dark,/area/centcom)
 "cx" = (/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
@@ -27,7 +28,7 @@
 "fq" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "fI" = (/obj/structure/dispenser/oxygen,/turf/simulated/floor/tiled/dark,/area/centcom)
 "gi" = (/obj/machinery/computer/station_alert/all,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"gn" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
+"gn" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "gq" = (/obj/structure/table/steel,/obj/item/paper_bin,/obj/item/pen,/turf/simulated/floor/tiled/dark,/area/centcom)
 "gt" = (/obj/structure/window/reinforced,/turf/simulated/floor/plating/reinforced,/area/centcom)
 "gu" = (/obj/structure/window/reinforced,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -37,7 +38,7 @@
 "gX" = (/obj/machinery/door/unpowered/inn/krootdoor,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
 "hn" = (/obj/machinery/vending/engivend,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "hr" = (/obj/machinery/atmospherics/pipe/tank/air,/turf/simulated/floor/plating,/area/centcom)
-"hy" = (/obj/machinery/computer/teleporter,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"hy" = (/obj/structure/table/rack,/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/obj/item/ammo_box/flares,/obj/item/ammo_box/flares,/obj/item/ammo_box/flares,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "hK" = (/obj/machinery/suit_storage_unit/atmos,/turf/simulated/floor/tiled/dark,/area/centcom)
 "hP" = (/obj/effect/wingrille_spawn/reinforced/full,/turf/simulated/floor/tiled/dark,/area/centcom)
 "if" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/plating/reinforced,/area/centcom)
@@ -50,10 +51,12 @@
 "jp" = (/obj/machinery/fusion_fuel_injector{dir = 4; icon_state = "injector0"},/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "kd" = (/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/plating,/area/centcom)
 "ki" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/body_scanconsole,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"kz" = (/obj/effect/floor_decal/carpet/blue,/obj/effect/floor_decal/carpet/blue{dir = 8},/obj/effect/floor_decal/carpet/blue{dir = 10},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "lZ" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/tiled/dark,/area/centcom)
 "md" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows"},/area/centcom)
 "me" = (/obj/machinery/atmospherics/pipe/tank/phoron,/turf/simulated/floor/plating,/area/centcom)
 "mn" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/window/brigdoor/westleft,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"mz" = (/obj/structure/table/rack,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/item/storage/belt/medical/full,/obj/item/bodybag/cryobag,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "mA" = (/obj/item/device/radio/beacon,/turf/simulated/floor/cult,/area/cadiaoutpost/oa/tauship)
 "nK" = (/obj/structure/lift/button{pixel_y = -32},/turf/simulated/floor/tiled/dark,/area/centcom)
 "nN" = (/obj/machinery/portable_atmospherics/canister/air,/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/turf/simulated/floor/plating,/area/centcom)
@@ -61,10 +64,11 @@
 "nP" = (/obj/machinery/computer/operating,/obj/machinery/light/spot,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "oc" = (/obj/machinery/door/window/northright,/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "of" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
-"op" = (/obj/item/device/radio/beacon,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
-"oz" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"op" = (/obj/effect/floor_decal/carpet/blue,/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
+"oz" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "ph" = (/obj/structure/bed/chair/comfy/black{dir = 1; icon_state = "comfychair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "pr" = (/obj/machinery/computer/crew,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"pz" = (/obj/effect/floor_decal/carpet/blue{dir = 8},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "pB" = (/obj/structure/bed/krootbed,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
 "pD" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "pE" = (/turf/simulated/floor/tiled/ramp,/area/centcom)
@@ -93,19 +97,23 @@
 "vE" = (/turf/unsimulated/wall,/area/centcom)
 "vN" = (/obj/effect/wingrille_spawn/reinforced/crescent,/turf/simulated/floor/lino,/area/cadiaoutpost/oa/tauship)
 "vO" = (/obj/structure/table/steel,/obj/structure/fireaxecabinet{pixel_x = -32},/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
+"wx" = (/obj/structure/table/rack,/obj/random/firstaid,/obj/random/firstaid,/obj/random/firstaid,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "wy" = (/obj/machinery/door/airlock/centcom{locked = 1; name = "Gas Storage"},/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "wz" = (/obj/structure/bed/chair/office/dark{dir = 8; icon_state = "officechair_dark_preview"},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "wD" = (/obj/machinery/vending/tool,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "wL" = (/obj/structure/bed/chair/office/dark{dir = 1; icon_state = "officechair_dark_preview"},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "wP" = (/turf/unsimulated/wall/fakeglass{dir = 8; icon_state = "fakewindows"},/area/centcom)
 "wU" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"xh" = (/obj/machinery/teleport/hub,/obj/effect/floor_decal/carpet/blue{dir = 1},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "xE" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows2"},/area/centcom)
 "xL" = (/obj/structure/table/steel,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "yc" = (/turf/unsimulated/wall/fakeglass{dir = 4; icon_state = "fakewindows"},/area/centcom)
-"yg" = (/obj/effect/landmark{name = "taustart"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
+"yg" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "ym" = (/obj/structure/torchwall{pixel_y = 16},/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/oa/tauship)
 "yx" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
+"yC" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "yF" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"yQ" = (/obj/effect/floor_decal/carpet/blue{dir = 4},/obj/effect/floor_decal/carpet/blue{dir = 1},/obj/effect/floor_decal/carpet/blue{dir = 5},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "zH" = (/obj/machinery/door/airlock/centcom{locked = 1; name = "Suit Storage"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "zT" = (/obj/machinery/door/airlock/glass_medical{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "zX" = (/obj/machinery/sleeper{dir = 4; icon_state = "sleeper_0"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
@@ -113,11 +121,13 @@
 "Am" = (/obj/structure/window/shuttle{color = "grey"},/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows2"},/area/centcom)
 "As" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/turf/simulated/floor/plating/reinforced,/area/centcom)
 "AK" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"AL" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "AO" = (/obj/machinery/door/blast/regular{dir = 4; icon_state = "pdoor1"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "Bo" = (/turf/simulated/floor/lino,/area/cadiaoutpost/oa/tauship)
 "BT" = (/obj/machinery/optable,/obj/machinery/oxygen_pump/anesthetic{pixel_x = -32},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "Cw" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/obj/structure/window/reinforced,/turf/simulated/floor/plating/reinforced,/area/centcom)
 "CB" = (/obj/machinery/fusion_fuel_compressor,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
+"CC" = (/obj/item/device/radio/beacon,/obj/effect/floor_decal/carpet/blue,/obj/effect/floor_decal/carpet/blue{dir = 4},/obj/effect/floor_decal/carpet/blue{dir = 6},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "Dt" = (/obj/effect/wingrille_spawn/reinforced,/turf/space,/area/cadiaoutpost/oa/tauship)
 "Dy" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/lino,/area/cadiaoutpost/oa/tauship)
 "DA" = (/obj/structure/table/steel,/obj/item/stamp/ce,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -140,9 +150,11 @@
 "GQ" = (/turf/simulated/floor/plating,/area/centcom)
 "GS" = (/obj/machinery/vending/engineering,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Hc" = (/turf/space,/area/centcom)
+"Hk" = (/obj/effect/floor_decal/carpet/blue{dir = 4},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "Hp" = (/obj/structure/table/steel,/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Hs" = (/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "Ie" = (/obj/effect/wingrille_spawn/reinforced/crescent,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/oa/tauship)
+"Ij" = (/obj/structure/bed{icon = 'icons/obj/Cryogenic2.dmi'; icon_state = "body_scanner_0"},/obj/effect/landmark{name = "taustart"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "Io" = (/turf/unsimulated/wall/fakeglass{dir = 5; icon_state = "fakewindows"},/area/centcom)
 "IK" = (/obj/machinery/vending/medical,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "IP" = (/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -180,6 +192,7 @@
 "QS" = (/obj/machinery/door/window/northleft,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "RC" = (/obj/structure/table/rack/shelf,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,/obj/item/paper{name = "This stack of rifles need repair others are clean"},/turf/simulated/floor/blackgrid,/area/cadiaoutpost/oa/tauship)
 "RG" = (/turf/simulated/floor/tiled/dark,/area/centcom)
+"RM" = (/obj/structure/bed{icon = 'icons/obj/Cryogenic2.dmi'; icon_state = "body_scanner_0"},/obj/effect/landmark{name = "taustart"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "Sv" = (/turf/unsimulated/wall/fakeglass{dir = 6; icon_state = "fakewindows"},/area/centcom)
 "Sx" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/gun/projectile/automatic/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "SI" = (/obj/structure/table/steel,/obj/item/folder/yellow,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -195,12 +208,13 @@
 "Uw" = (/obj/structure/table/steel,/obj/item/paper_bin,/obj/item/pen,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "UV" = (/obj/machinery/door/blast/grates,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Vl" = (/obj/structure/filingcabinet,/turf/simulated/floor/tiled/dark,/area/centcom)
-"Vt" = (/obj/machinery/teleport/station,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
-"Vv" = (/obj/machinery/teleport/hub,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"Vt" = (/obj/machinery/computer/teleporter,/obj/effect/floor_decal/carpet/blue{dir = 8},/obj/effect/floor_decal/carpet/blue{dir = 1},/obj/effect/floor_decal/carpet/blue{dir = 9},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
+"Vv" = (/obj/machinery/teleport/station,/obj/effect/floor_decal/carpet/blue{dir = 1},/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "Wg" = (/obj/machinery/atmospherics/pipe/tank/oxygen,/turf/simulated/floor/plating,/area/centcom)
 "Wn" = (/obj/structure/closet/emcloset{color = "grey"},/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "Wr" = (/obj/machinery/atmospherics/pipe/tank/hydrogen,/turf/simulated/floor/plating,/area/centcom)
 "WI" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating/reinforced,/area/centcom)
+"Xe" = (/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/tauship)
 "Xi" = (/obj/machinery/door/airlock/centcom{locked = 1; name = "Elevators"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "Xt" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/gun/projectile/lockebolter,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Xz" = (/obj/structure/bed/chair/office/dark{dir = 4; icon_state = "officechair_dark_preview"},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -228,23 +242,23 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYtXtYtYtMGSxqZqZqZyxqZYEvEaxaxvEYERGRGRGRGRGRGYEgqiTDAVlRGYrYEifGHGHGHGHGHGHGHGHGHGHGHGHGHGHWIYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEqZqZqZLWLWqZqZqZqZqZqZYEvEaxaxvEYEhKhKRGRGcycyYERGqiqiRGRGRGcvfqfqMiGHGHGHGHGHGHGHGHGHGHGHGHGHYEvEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxgLgLDtgLDtgLDtgLDtgLDtgLaxaxaxaxaxaxaxaxvEYEEKqZXzHpHpwzqZqZqZqZqZYEvEvEvEvEYEMXRGRGRGRGRGYERGRGRGRGMXRGcvRGRGTnKBAmAmAmAmAmAmAmAmAmAmuTGHYEYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxgLUviuUviuUviuUviuUviugLaxaxaxaxaxaxaxaxvEYEGkqZqZwLwLqZqZqZqZqZqZYEvEvEYEYEYEYEYEwPyczHzHYEcvcvwPycYEYEYEPkKVRGJNMSprUwxLGnarxLxLgiMSJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxgLVvUviuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxvEYELyFyqZqZFyFyqZqZqZFyqZYEvEYEYERGeKRGRGRGRGRGRGRGRGRGRGRGRGeKbmGHAsRGulHsczphphczczphphczHsulGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxgLVtiuUviuUvopUviuUvozgLaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEthYEYEYEeKRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGbmGHAsRGJNHsHsDWHsHsHsHsDWHsHsJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxgLygiuUvVtVvxhyQiuUvmzgLaxaxaxaxaxaxaxaxvEYEGkqZqZwLwLqZqZqZqZqZqZYEvEvEYEYEYEYEYEwPyczHzHYEcvcvwPycYEYEYEPkKVRGJNMSprUwxLGnarxLxLgiMSJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxgLiuUviupzXeAaHkUviuwxgLaxaxaxaxaxaxaxaxvEYELyFyqZqZFyFyqZqZqZFyqZYEvEYEYERGeKRGRGRGRGRGRGRGRGRGRGRGRGeKbmGHAsRGulHsczphphczczphphczHsulGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxgLUviuUvkzopopCCiuUvozgLaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEthYEYEYEeKRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGbmGHAsRGJNHsHsDWHsHsHsHsDWHsHsJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxgLhyUviuUviuUviuUviugngLaxaxaxaxaxaxaxaxvEYEAORGRGgvguumRGYEeKRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGYEgtGfRGJNJNbUJNJNJNJNJNJNbUJNJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxgLiuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxvEYEAORGRGRGRGRGRGXiRGRGRGRGRGRGRGcORGRGRGRGQyaVaVaVaVaVIoRGRGRGcvRGRGRGJNWnpEdydydydydydypEWnJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxgLiuUviuygiuUvgLaxaxaxaxaxaxaxaxaxaxvEYEAORGRGRGRGRGRGYERGRGRGRGRGRGRGRGRGRGRGRGtvHcHcHcHcHctvRGRGRGcvRGRGRGJNJqHsHsHsHsHsHsHsHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxgLiuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxvEYEAORGRGRGRGRGRGXiRGRGRGRGRGRGRGRGRGRGRGRGtvHcHcHcHcHctvRGRGRGYEaAKVRGJNJqHsZCZCZCZCZCZCHsyFJNGHWIYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxgLiuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxvEYEAORGRGRGRGRGRGYERGRGRGRGRGRGRGRGRGRGRGRGtvHcHcHcHcHctvRGRGRGcvRGRGRGJNJqHsHsHsHsHsHsHsHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxgLyCUviuALgLaxaxaxaxaxaxaxaxaxaxaxvEYEAORGRGRGRGRGRGXiRGRGRGRGRGRGRGRGRGRGRGRGtvHcHcHcHcHctvRGRGRGYEaAKVRGJNJqHsZCZCZCZCZCZCHsyFJNGHWIYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxgLUviuUviugLaxaxaxaxaxaxaxaxaxaxaxvEYEAOnKRGTqfqSZRGYEMXRGRGRGRGRGRGRGRGRGRGRGtvHcHcHcHcHctvRGRGRGbmGHAsRGulHsHsiGHsiGHsiGHsHsHsulGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxgLUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEMXRGRGRGRGRGiAaVaVaVaVaVSvRGRGRGbmGHAsRGulHsHsZCZCZCZCZCZCHsHsulGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxgLUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEYEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGYEgtGfRGJNJqHsiGHsiGHsiGHsHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxgLiuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNYEMXRGRGRGRGRGRGRGRGRGRGRGRGRGcvRGRGRGJNJqHsZCZCZCZCZCZCHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxgLygiuUviuUviuUvbTgLaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEYEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGYEgtGfRGJNJqHsiGHsiGHsiGHsHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxgLRMUviuUviuUviuIjgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNYEMXRGRGRGRGRGRGRGRGRGRGRGRGRGcvRGRGRGJNJqHsZCZCZCZCZCZCHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxgLUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNYEYEYEYEYERGRGRGRGRGRGRGRGRGMXcvRGRGRGJNJqHsHsHsHsDWHsHsHsyFJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxgLiuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNXIIKIKIKYEcvhPcvYEgIgIhPhPYEYEYEPkKVRGJNJNNZmdxEqHJNmdqHzTJNJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxgLRMUviuUviuUviuIjgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNXIIKIKIKYEcvhPcvYEgIgIhPhPYEYEYEPkKVRGJNJNNZmdxEqHJNmdqHzTJNJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxgLUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNLNLNLNLNTeLNLNLNYEIPIPaCFPQzwDhPGHAsRGulHsHsdydydyJNdydyHsHsulGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxgLiuUviugLgLUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEOiLNOiLNLNLNLNLNLNYEIPIPIPIPIPhnhPGHAsRGJNJqHsHsHsZOJNAKHsHsGNJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxgLRMUviugLgLUviuIjgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEOiLNOiLNLNLNLNLNLNYEIPIPIPIPIPhnhPGHAsRGJNJqHsHsHsZOJNAKHsHsGNJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxgLUviuUvgLgLiuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEkiLNtuLNLNLNLNLNpDYEOnIPIPIPIPGSYECwGfRGJNJqHsmnUkUkJNQSocHsfiJNGHWIYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxgLiuUvgLgLgLgLiuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEjcLNjcLNLNLNLNLNLNYEvOIPIPIPIPIPgIRGRGRGJNJqHswUZCZCJNBTrTzXfiJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxgLyCUvgLgLgLgLiuALgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEjcLNjcLNLNLNLNLNLNYEvOIPIPIPIPIPgIRGRGRGJNJqHswUZCZCJNBTrTzXfiJNGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxgLgLgLgLaxaxgLgLgLgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYELNLNLNLNLNLNLNLNLNYEZfuzIPIPIPIPgIRGRGTnQNJNJNJNJNJNJNJNJNJNJNbdGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEnPNkZmZmNknPLNLNcQYEFkFkIPIPNgsCYEPkPkPkGHSWSWSWSWSWSWSWSWSWSWGHGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEQdQdIPIPSIuzbmGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHGHYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
