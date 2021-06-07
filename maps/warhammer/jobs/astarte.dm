@@ -2,11 +2,11 @@
 	title = "Astartes Envoy"
 	total_positions = 1
 	spawn_positions = 1
-	head_position = 1
+	head_position = 0
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
-	selection_color = "#011c77"
+	selection_color = "#344FAA"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
