@@ -1,3 +1,7 @@
+/obj/item/clothing/head/helmet/swat
+	name = 
+
+
 
 /obj/item/clothing/suit/space/void/swat
 	name = "\improper SWAT suit"
