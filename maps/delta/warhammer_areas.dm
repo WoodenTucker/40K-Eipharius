@@ -1246,7 +1246,7 @@ Area basic template
 	name = "Village"
 	icon_state = "village"
 	music = 'sound/music/village.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/gatehouse
@@ -1260,7 +1260,7 @@ Area basic template
 /area/cadiaoutpost/oa/theforest
 	name = "The Forest"
 	icon_state = "forest"
-	requires_power = TRUE
+	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/ambience/forest.ogg'
 
@@ -1268,7 +1268,7 @@ Area basic template
 /area/cadiaoutpost/oa/magistratumpost
 	name = "Forward Magistratum Post"
 	icon_state = "forwardpost"
-	requires_power = TRUE
+	requires_power = FALSE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/theforest/Entered(mob/living/L,  atom/A)
@@ -1295,7 +1295,7 @@ Area basic template
 	name = "Inside Village"
 	icon_state = "village"
 	music = 'sound/music/village.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 	dynamic_lighting = 1
 
 
