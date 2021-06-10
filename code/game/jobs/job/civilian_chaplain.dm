@@ -24,7 +24,7 @@
 		H.add_stats(rand(8,11), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		H.add_skills(rand(2,4),rand(1,2),0,0,0)
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Abbot of the Ecclesiarchy. The chapel on the lower floor is your domain. Lead and guide the faithful of this world. Do not be afraid to embark from the outpost and preach to the masses.</font></b></span>")
 
