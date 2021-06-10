@@ -50,3 +50,17 @@ var/datum/antagonist/ert/ert
 
 	create_id(role_text, player)
 	return 1
+
+
+
+
+
+proc/ERT_slipstream_insertion()
+
+		world << sound(NULL)
+		var/obj/effect/landmark/ert/T = locate() //where dey spawning
+		new /turf/unsimulated/floor/slipstream(T.loc)
+		var/obj/effect/landmark/ert/2/Y = locate() //where dey spawning
+		new	/turf/unsimulated/floor/slipstream(Y.loc)
+
+		return

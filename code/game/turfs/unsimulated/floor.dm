@@ -46,5 +46,9 @@
 	M.loc = get_turf(locate("landmark*dropsite")) 			//SEEYA LATER!
 
 
+/turf/unsimulated/floor/slipstream/proc/fall(mob/living/M as mob, mob/user as mob)
+	M.loc = get_turf(locate("landmark*ertdropsite"))
+
+
 /turf/unsimulated/floor/slipstream/ex_act(severity)
 	return
