@@ -14,7 +14,6 @@
 	icon_state = "concrete0"
 	walltype = "concrete"
 	mineral = "rust"
-	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
 
 /turf/simulated/wall/concrete/strong
@@ -126,7 +125,6 @@
 	icon_state = "wall"
 	walltype = "wood"
 	mineral = "wood"
-	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
 
 /turf/simulated/wall/snowcave
@@ -135,7 +133,6 @@
 	icon_state = "snow0"
 	walltype = "snow"
 	mineral = "stone"
-	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
 
 
@@ -144,7 +141,6 @@
 	desc = "A grim looking metal wall"
 	icon_state = "grim0"
 	walltype = "grim"
-	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
 
 /turf/simulated/wall/techno
@@ -152,5 +148,4 @@
 	desc = "A techno looking metal wall"
 	icon_state = "techno0"
 	walltype = "techno"
-	plane = ABOVE_HUMAN_PLANE
 	integrity = 500 //Tough bois
