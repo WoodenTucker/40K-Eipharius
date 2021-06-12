@@ -11,7 +11,7 @@
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	brute_mod = 0.6 //orkz want melee
+	brute_mod = 1.0 //orkz want melee
 	burn_mod = 1.1
 	toxins_mod = 1
 	sexybits_location = BP_GROIN
