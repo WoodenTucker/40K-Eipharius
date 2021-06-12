@@ -7,12 +7,12 @@
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	min_age = 1
 	max_age = 65
-	total_health = 250
+	total_health = 200
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	brute_mod = 1.0 //orkz want melee
-	burn_mod = 1.1
+	brute_mod = 1.1 //orkz want melee
+	burn_mod = 1.5
 	toxins_mod = 1
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
