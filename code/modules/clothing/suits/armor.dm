@@ -279,9 +279,9 @@
 //Begin Tau//
 /obj/item/clothing/suit/armor/fwarmor
 	name = "fire warrior armor"
-	desc = "The impeccable white and red armor of the Tau warrior caste"
-	icon_state = "tbrea"
-	item_state = "tbrea"
+	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
+	icon_state = "fw_armor"
+	item_state = "fw_armor"
 	armor = list(melee = 15, bullet = 60, laser = 60, energy = 60, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	blood_overlay_type = "armor"
