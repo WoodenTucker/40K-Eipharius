@@ -128,7 +128,7 @@
 		else
 			createwound(BURN, burn)
 
-	add_pain(0.6*burn + 0.4*brute)
+	add_pain(0.5*burn + 0.3*brute)
 	//If there are still hurties to dispense
 	if (spillover)
 		owner.shock_stage += spillover * config.organ_damage_spillover_multiplier
