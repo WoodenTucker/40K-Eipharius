@@ -25,6 +25,14 @@
 /obj/item/clothing/head/hardhat/dblue
 	icon_state = "hardhat0_dblue"
 
+/obj/item/clothing/head/helmet/hard_had
+	name = "Mining Helmet"
+	desc = "Protects you head from rocks and other hazards."
+	icon_state = "hardhat"
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 4 //luminosity when on
+	light_overlay = "hardhat_light"
+
 /obj/item/clothing/head/hardhat/techpriest
 	name = "augmented head"
 	desc = "The augmented skull and hood signifying one is a priest of the Adeptus Mechanicus."

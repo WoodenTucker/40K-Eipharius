@@ -217,3 +217,11 @@
 	siemens_coefficient = 0.9
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/guard_uniform
+	name = "Imperial Guard uniform"
+	desc = "The uniform of those who fight in His name."
+	icon_state = "guard_s"
+	item_state = "guard"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
