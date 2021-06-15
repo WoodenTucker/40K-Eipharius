@@ -249,14 +249,18 @@
 /obj/item/clothing/head/helmet/orkhelmet/two
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
-
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/helmet/orkhelmet/three
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
-
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/head/helmet/orkhelmet/four
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 //tau//
 /obj/item/clothing/head/helmet/fw
