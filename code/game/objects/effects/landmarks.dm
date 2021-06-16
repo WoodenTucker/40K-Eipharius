@@ -441,12 +441,11 @@ Template:
 	name = "evac1"
 /obj/effect/landmark/evac/two
 	name = "evac2"
-
-/obj/effect/landmark/ertdropsite
-	name = "ertdropsite"
-
-/obj/effect/landmark/ert
+/obj/effect/landmark/ertinsert
 	name = "ert1"
 
-/obj/effect/landmark/ert/two
+/obj/effect/landmark/ertinsert/two
 	name = "ert2"
+
+/obj/effect/landmark/start/ert
+	name = "ert"

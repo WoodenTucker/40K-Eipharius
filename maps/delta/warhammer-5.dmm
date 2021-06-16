@@ -7,7 +7,7 @@
 "aX" = (/obj/item/pyre/self_lit,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/oa/tauship)
 "ba" = (/obj/structure/table/steel,/obj/structure/fireaxecabinet{pixel_x = -32},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "bd" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
-"bw" = (/obj/machinery/door/blast/regular,/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled/dark,/area/centcom)
+"bw" = (/obj/machinery/door/blast/regular{id = "ert"; name = "Armory Blast Door"},/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled/dark,/area/centcom)
 "by" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/tauship)
 "bC" = (/obj/structure/flora/ausbushes/stalkybush,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/cult,/area/cadiaoutpost/oa/tauship)
 "bJ" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/blue/quarter{dir = 4},/obj/structure/sink{dir = 4; pixel_x = 12},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
@@ -23,7 +23,7 @@
 "dh" = (/obj/structure/flora/ausbushes/sunnybush,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/oa/tauship)
 "dk" = (/obj/structure/flora/ausbushes/fernybush,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/oa/tauship)
 "dy" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
-"dB" = (/obj/effect/floor_decal/newcorner/black/solid,/obj/effect/landmark/ert/two,/turf/simulated/floor/tiled/dark,/area/centcom)
+"dB" = (/obj/effect/floor_decal/newcorner/black/solid,/obj/effect/landmark/ertinsert/two,/turf/simulated/floor/tiled/dark,/area/centcom)
 "fr" = (/obj/effect/floor_decal/newcorner/blue{dir = 8},/obj/structure/bed/chair/wood,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "fI" = (/obj/machinery/light/spot,/obj/effect/floor_decal/newcorner/blue/quarter{dir = 8},/obj/structure/sink{dir = 4; pixel_x = 12},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "fJ" = (/obj/machinery/optable,/obj/machinery/oxygen_pump/anesthetic{pixel_x = -32},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
@@ -75,12 +75,12 @@
 "nK" = (/obj/structure/table/steel,/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "nN" = (/obj/structure/bed/chair/office/dark{dir = 8; icon_state = "officechair_dark_preview"},/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "nO" = (/obj/structure/flora/ausbushes/stalkybush,/turf/simulated/floor/lino,/area/cadiaoutpost/oa/tauship)
-"nP" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/red/diagonal,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
+"nP" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/red/diagonal,/obj/item/modular_computer/console/preset/ert,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "oc" = (/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "of" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
 "op" = (/obj/item/device/radio/beacon,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "or" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"oy" = (/obj/effect/floor_decal/newcorner/blue/quarter{dir = 4},/obj/structure/bed,/obj/item/bedsheet/hos,/obj/structure/curtain/open/bed,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
+"oy" = (/obj/effect/floor_decal/newcorner/blue/quarter{dir = 4},/obj/structure/bed,/obj/item/bedsheet/hos,/obj/structure/curtain/open/bed,/obj/effect/landmark/start/ert,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "oz" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "ph" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "pr" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -115,7 +115,7 @@
 "vT" = (/obj/effect/floor_decal/newcorner/red/diagonal,/obj/structure/bed/chair/office/dark{dir = 4; icon_state = "officechair_dark_preview"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "wy" = (/obj/structure/closet/emcloset{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "wz" = (/obj/machinery/computer/crew,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"wB" = (/obj/effect/floor_decal/newcorner/blue/quarter{dir = 8},/obj/structure/bed,/obj/item/bedsheet/hos,/obj/structure/curtain/open/bed,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
+"wB" = (/obj/effect/floor_decal/newcorner/blue/quarter{dir = 8},/obj/structure/bed,/obj/item/bedsheet/hos,/obj/structure/curtain/open/bed,/obj/effect/landmark/start/ert,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "wD" = (/obj/structure/table/steel,/obj/item/paper_bin,/obj/item/pen,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "wL" = (/obj/structure/table/steel,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "wU" = (/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/sleeper,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
@@ -188,7 +188,7 @@
 "JI" = (/obj/structure/bed/krootbed,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
 "JU" = (/obj/machinery/door/airlock/cone,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Ke" = (/obj/structure/flora/ausbushes/fernybush,/turf/simulated/floor/lino,/area/cadiaoutpost/oa/tauship)
-"Ko" = (/obj/effect/floor_decal/newcorner/black/solid,/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark,/area/centcom)
+"Ko" = (/obj/effect/floor_decal/newcorner/black/solid,/obj/effect/landmark/ertinsert,/turf/simulated/floor/tiled/dark,/area/centcom)
 "KB" = (/turf/unsimulated/wall/fakeglass{dir = 9; icon_state = "fakewindows"},/area/centcom)
 "KQ" = (/obj/structure/flora/ausbushes/stalkybush,/turf/simulated/floor/cult,/area/cadiaoutpost/oa/tauship)
 "Lr" = (/turf/simulated/shuttle/wall/corner/dark/se{color = "grey"},/area/centcom)
@@ -237,6 +237,7 @@
 "Uv" = (/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "Uw" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows"},/area/centcom)
 "UV" = (/obj/machinery/computer/operating,/obj/machinery/light/spot,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"Vb" = (/obj/effect/floor_decal/newcorner/red/diagonal,/obj/machinery/button/remote/blast_door/lever{id = "ert"; name = "ERT Armory"; pixel_y = 30},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "Vg" = (/obj/structure/toilet,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Vl" = (/turf/simulated/wall/r_wall{icon_state = "rwall12"},/area/centcom)
 "Vt" = (/obj/machinery/teleport/station,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
@@ -279,7 +280,7 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEMXaAoyYE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEmbDIxHYEmbDIxHYEmbDIxHYEXikCGkGkGkGkGkGkGkGkGkGkGkXivEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEMzhafIYEMzhafIYEMzhafIYEXikCGkSLxuIRGkGkNaXZzdZZfLXivEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEaCYEYEYEaCYEYEYEaCYEYEYrVlVlVlVlYrbwbwYrVlVlVlVlYrYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEvEvEvEvEax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEQyililbUilililbUililililNiETAOAOAOETAOAOETAOAOAOETvnccKoYExLxLcQcQcWcWMSMSYEgiguRGRGRGgvgIhnhnhnhnhnhnhnhnhnhnhnhnhnYEYEYEYEvEax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEQyililbUilililbUililililNiETAOAOAOETAOAOETVbAOAOETvnccKoYExLxLcQcQcWcWMSMSYEgiguRGRGRGgvgIhnhnhnhnhnhnhnhnhnhnhnhnhnYEYEYEYEvEax
 axaxaxaxaxgLgLDtgLDtgLDtgLDtgLDtgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEvwhahaawhahahaawhahahahahcAOAOAOAOAOhrhrAOAOAOAOAOvnccdBYERGRGRGRGRGRGRGRGYEhPiAiGjcRGjpYEkdhnhnhnhnhnhnhnhnhnhnhnhnhnhnkiYEvEax
 axaxaxaxaxgLUviuUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEaCYEYEYEaCYEYEYEaCYEYEYEYElZAOAOmenKnKnNAOAOAOnPYEYEYEYExLxLxLxLRGRGMSMSYERGphphRGRGRGcyprprpDhnhnhnhnhnhnhnhnhnhnhnhnhnYEvEvE
 axaxaxaxaxgLVvUviuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEFyilbJYEFyilbJYEFyilbJYEvEYEAOAOAOvTqUqUmoAOAOAOAOYEhuVgYERGRGqHRGRGRGRGRGYERGRGRGRGqHRGcyRGRGrIsmsCsCsCsCsCsCsCsCsCsCtuhnYEYEvE
