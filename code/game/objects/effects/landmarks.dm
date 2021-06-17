@@ -447,5 +447,5 @@ Template:
 /obj/effect/landmark/ertinsert/two
 	name = "ert2"
 
-/obj/effect/landmark/start/ert
+/obj/effect/landmark/ert
 	name = "ert"
