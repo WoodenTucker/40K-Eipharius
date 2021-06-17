@@ -178,8 +178,8 @@
 /obj/item/clothing/head/helmet/fw
 	name = "fire warrior helmet"
 	desc = "A tau helmet made from advanced ceramic. Comfortable and robust."
-	icon_state = "tbrea"
-	item_state = "tbrea"
+	icon_state = "fwhelm"
+	item_state = "fwhelm"
 	armor = list(melee = 15, bullet = 60, laser = 60, energy = 45, bomb = 30, bio = 0, rad = 0)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD

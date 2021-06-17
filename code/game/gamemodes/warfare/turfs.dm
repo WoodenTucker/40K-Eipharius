@@ -6,7 +6,7 @@
 	//icon_state = "snow_3"
 	icon = 'icons/turf/dirt.dmi'
 	icon_state = "dirt1"
-	movement_delay = 1
+	movement_delay = 0.25
 	has_coldbreath = TRUE
 	atom_flags = ATOM_FLAG_CLIMBABLE
 	var/has_light = TRUE
@@ -251,6 +251,7 @@
 	name = "mud"
 	desc = "This mud looks tougher than most other muds."
 	icon_state = "mud"
+	movement_delay = 1.5
 
 /turf/simulated/floor/dirty/indestructable/mud/New()
 	dir = pick(GLOB.alldirs)
