@@ -250,3 +250,62 @@
 /obj/item/storage/belt/waistpack/big/New()
 	..()
 	slowdown_per_slot[slot_belt] = 3
+
+/obj/item/storage/belt/warfare
+	name = "ammo belt"
+	desc = "Great for holding ammo! This one starts with smg ammo."
+	icon_state = "warfare_belt"
+	item_state = "warfare_belt"
+	can_hold = list(
+		/obj/item/ammo_magazine,
+		)
+
+	New()
+		..()
+		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
+		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
+		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
+		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
+
+/obj/item/storage/belt/armageddon
+	name = "ammo belt"
+	desc = "Great for holding ammo! This one starts with Armageddon ammo."
+	icon_state = "warfare_belt"
+	item_state = "warfare_belt"
+	can_hold = list(
+		/obj/item/ammo_magazine,
+		)
+
+	New()
+		..()
+		new /obj/item/ammo_magazine/a762/rsc(src)
+		new /obj/item/ammo_magazine/a762/rsc(src)
+		new /obj/item/ammo_magazine/a762/rsc(src)
+		new /obj/item/ammo_magazine/a762/rsc(src)
+
+/obj/item/storage/belt/warfare/chestrig
+	name = "Chestrig"
+	desc = "Holds ammo. But not much else."
+	icon_state = "chestrig"
+
+/obj/item/storage/belt/autoshotty
+	name = "ammo belt"
+	desc = "Great for holding ammo! This one starts with Warcrime ammo."
+	icon_state = "warfare_belt"
+	item_state = "warfare_belt"
+	can_hold = list(
+		/obj/item/ammo_magazine,
+		)
+	New()
+		..()
+		new /obj/item/ammo_magazine/autoshotty(src)
+		new /obj/item/ammo_magazine/autoshotty(src)
+		new /obj/item/ammo_magazine/autoshotty(src)
+		new /obj/item/ammo_magazine/autoshotty(src)
+		new /obj/item/ammo_magazine/autoshotty(src)
+
+
+/obj/item/storage/belt/autoshotty/chestrig
+	name = "Chestrig"
+	desc = "Holds ammo. But not much else. This one starts with Warcrime ammo."
+	icon_state = "chestrig"

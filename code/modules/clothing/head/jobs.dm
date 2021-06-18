@@ -117,6 +117,78 @@
 	name = "heliodor surgical cap"
 	color = "#aad539"
 
+//Inquisition
+/obj/item/clothing/head/cerberus
+	name = "hound helmet"
+	desc = "A steel hound helmet marking one as a hound of the Inquisition"
+	icon_state = "cerberus"
+	item_state = "cerberus"
+
+/obj/item/clothing/head/inqhelm
+	name = "agent helmet"
+	desc = "An armored helmet displaying the mark of the Inquisition."
+	icon_state = "inq_helm"
+	item_state = "inq_helm"
+	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
+	siemens_coefficient = 0.9
+
+
+
+//Security
+
+/obj/item/clothing/head/helmet/guardhelmet
+	name = "Guard Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "guard"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/head/helmet/guardhelmet/enforcer
+	name = "Enforcer Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "Jhelm2"
+	item_state = "Jhelm2"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/krieghelmet
+	name = "Krieg Helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "krieghelm"
+	item_state = "krieghelm"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/guardhelmet/catachan
+    name = "Catachan Headband"
+    desc = "Sometimes protects your head from bullets and blows."
+    icon_state = "Catachan_Headband"
+    cold_protection = HEAD
+    min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/medicae
+	name = "medicae helmet"
+	desc = "Sometimes protects your head from bullets and blows."
+	icon_state = "medicae"
+	item_state = "medicae"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/commissar
+	name = "Commissar\'s Cap"
+	desc = "This cap strikes fear into the rank and file."
+	icon_state = "Commissar4Hat"
+	item_state = "Commissar4Hat"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/commissar/adept
+	name = "Adept\'s Cap"
+	desc = "This cap belongs to a member of the Administratum."
+	icon_state = "captain_hat"
+	item_state = "captain_hat"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 //Berets
 /obj/item/clothing/head/beret
 	name = "beret"
@@ -196,6 +268,9 @@
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
 
+
+
+//Pilgrim
 /obj/item/clothing/head/plebhood
 	name = "pleb hood"
 	desc = "A disgusting hood covering a disgusting head"
@@ -254,16 +329,32 @@
 	icon_state = "keeper"
 	item_state = "keeper"
 
-/obj/item/clothing/head/cerberus
-	name = "hound helmet"
-	desc = "A steel hound helmet marking one as a hound of the Inquisition"
-	icon_state = "cerberus"
-	item_state = "cerberus"
 
-/obj/item/clothing/head/inqhelm
-	name = "agent helmet"
-	desc = "An armored helmet displaying the mark of the Inquisition."
-	icon_state = "inq_helm"
-	item_state = "inq_helm"
-	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
-	siemens_coefficient = 0.9
+/obj/item/clothing/head/prac_cap
+	name = "practioner cap"
+	desc = "Wouldn't want your hair to get messy now would we."
+	icon_state = "prac_cap"
+	item_state = "prac_cap"
+	flags_inv = BLOCKHEADHAIR
+
+/obj/item/clothing/head/ushanka2
+	name = "ushanka"
+	desc = "A proper hat for one willing to brave the tundra."
+	icon_state = "ushanka"
+	item_state = "ushanka"
+	flags_inv = BLOCKHEADHAIR
+
+/obj/item/clothing/head/scum
+	name = "pimp hat"
+	desc = "Pretty fly for a space guy."
+	icon_state = "scum"
+	item_state = "scum"
+
+/obj/item/clothing/head/bountyhead
+	name = "bounty hunter\'s helm"
+	desc = "A well worn and dented helm."
+	icon_state = "skullopen"
+	item_state = "skullopen"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = BLOCKHAIR
