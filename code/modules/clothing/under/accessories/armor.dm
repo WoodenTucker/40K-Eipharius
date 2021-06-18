@@ -311,3 +311,14 @@
 	name = "\improper SAARE helmet cover"
 	desc = "A fabric cover for armored helmets. This one has SAARE's colors."
 	icon_state = "helmcover_saare"
+
+/obj/item/clothing/accessory/helm_patch
+	slot = ACCESSORY_SLOT_HELM_C
+
+/obj/item/clothing/accessory/helm_patch/medic
+	icon_state = "medical_helmet_patch"
+	overlay_state = "medical_helmet_patch"
+
+/obj/item/clothing/accessory/helm_patch/leader
+	icon_state = "leader_patch_helm"
+	overlay_state = "leader_patch_helm"

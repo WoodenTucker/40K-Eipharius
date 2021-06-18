@@ -301,3 +301,10 @@
 	icon_state = "squighide"
 	item_state = "squighide"
 	worn_state = "squidhide"
+
+/obj/item/clothing/under/child_jumpsuit/warfare
+	name = "scavengers's clothing"
+	desc = "A proper uniform worn by child scavengers."
+	icon_state = "urchin"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS//So they don't freeze to death with their clothes on.
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

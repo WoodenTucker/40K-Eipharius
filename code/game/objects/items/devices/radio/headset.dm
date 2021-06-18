@@ -273,6 +273,17 @@
 	item_state = "t_tactical_headset_f"
 	ks2type = null
 
+/obj/item/device/radio/headset/red_team/voxcaster
+	icon = 'icons/obj/radio.dmi'
+	name = "vox-caster rig"
+	desc = "A standard Guard issue vox-caster rig. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
+	ks1type = /obj/item/device/encryptionkey/red_all
+	icon_state = "voxcaster"
+	item_state = "voxcaster"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_NORMAL
+	canhear_range = 3 //will allow the surrounding squad to hear communications, can touch this up if its too spammy or loud. 0 is same tile as backpack
+
 /*tactical requires a subsection of code to switch between ``guevesa_tactical_headset`` and ``tau_tactical_headset``
  per race its equipped on */
 
@@ -394,3 +405,37 @@
 			radio_text += ", "
 
 	radio_desc = radio_text
+
+/obj/item/device/radio/headset/hivemind
+	name = "Hive Mind Interlociter"
+	icon_state = "hivemind"
+	item_state = "hivemind"
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+	ks1type = /obj/item/device/encryptionkey/hivemind
+	canremove = 0
+
+/obj/item/device/radio/headset/hivemind/Initialize()
+	. = ..()
+	set_frequency(HIVE_FREQ)
+
+/obj/item/device/encryptionkey/hivemind
+	icon_state = "cypherkey"
+	channels = list("Hivemind" = 1)
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+
+/obj/item/device/radio/headset/inquisition
+	name = "Inquisition Vox"
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
+	ks1type = /obj/item/device/encryptionkey/inq
+
+/obj/item/device/radio/headset/inquisition/Initialize()
+	. = ..()
+	set_frequency(RED_FREQ)
+/obj/item/device/encryptionkey/inq
+	icon_state = "cypherkey"
+	channels = list("Imperial" = 1, "Inquisition" = 1)
+	origin_tech = list(TECH_ILLEGAL = 2)
+	syndie = 1
