@@ -441,4 +441,11 @@ Template:
 	name = "evac1"
 /obj/effect/landmark/evac/two
 	name = "evac2"
+/obj/effect/landmark/ertinsert
+	name = "ert1"
 
+/obj/effect/landmark/ertinsert/two
+	name = "ert2"
+
+/obj/effect/landmark/ert
+	name = "ert"
