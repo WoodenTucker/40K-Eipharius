@@ -179,3 +179,9 @@
 	desc = "da stompas"
 	icon_state = "ork_boots"
 	item_state = "ork_boots"
+
+/obj/item/clothing/shoes/prac_boots
+	name = "practioner boots"
+	desc = "Squish."
+	icon_state = "prac_boots"
+	item_state = "prac_boots"

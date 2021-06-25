@@ -317,6 +317,15 @@ Exterminatus
 		world.Reboot()
 		return
 
+	proc/ERT_slipstream_insertion()
+
+		var/obj/effect/landmark/ertinsert/J = locate() //where dey spawning
+		new /turf/unsimulated/floor/slipstream(J.loc)
+		var/obj/effect/landmark/ertinsert/two/L = locate() //where dey spawning
+		new	/turf/unsimulated/floor/slipstream(L.loc)
+
+		return
+
 
 /datum/controller/gameticker/proc/create_characters()
 	for(var/mob/new_player/player in GLOB.player_list)

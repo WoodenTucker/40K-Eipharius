@@ -330,4 +330,13 @@
 	icon_state = "brim-hat"
 	item_state = "brim-hat"
 	flags_inv = BLOCKHEADHAIR
-	armor = list(melee = 15, bullet = 0, laser = 15, energy = 15, bomb = 0, bio = 0, rad = 0) 
+	armor = list(melee = 15, bullet = 0, laser = 15, energy = 15, bomb = 0, bio = 0, rad = 0)
+
+/obj/item/clothing/head/hospitallerhelm
+	name = "sister hospitaller's medical rig"
+	desc = "The holy garments marking the wearer as a sister hospitaller"
+	icon_state = "medical_rig"
+	item_state = "medical_rig"
+	flags_inv = BLOCKHAIR
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

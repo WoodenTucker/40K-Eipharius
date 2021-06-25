@@ -843,3 +843,26 @@
 	else if (user.a_intent == I_HURT)
 		user.visible_message("<span class='warning'>[user] rings \the [src] repeatedly, signalling a disqualification!</span>")
 		playsound(user.loc, 'sound/items/manydings.ogg', 60)
+
+/obj/item/minidread/attack_self(mob/user as mob)
+
+	src.add_fingerprint(user)
+
+	user.setClickCooldown(50) //no spam plz
+
+	soundeffects = rand(1,3) //picks a toy
+
+	if(src.soundeffects == 1)
+		playsound(src, 'sound/effects/roar.ogg', 80, 1, 1)
+		soundeffects = 0
+		return
+
+	if(src.soundeffects == 2)
+		playsound(src, 'sound/effects/dreadshoot.ogg', 80, 1, 1)
+		soundeffects = 0
+		return
+
+	if(src.soundeffects == 3)
+		playsound(src, 'sound/effects/dreadvoice.ogg', 80, 1, 1)
+		soundeffects = 0
+		return

@@ -64,3 +64,11 @@
 		..()
 		hud = new /obj/item/clothing/glasses/hud/security(src)
 		return
+
+/obj/item/skitariiplating
+	name = "skitarii plating"
+	desc = "Freshly forged skitarii plating, resistant to las-rounds and blunt strikes."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "plate"
+	item_state = "plate"
+	w_class = ITEM_SIZE_NORMAL

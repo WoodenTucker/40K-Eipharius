@@ -51,3 +51,9 @@
 	name = "\improper Administratum merit medal"
 	desc = "An iron medal awarded to Imperial citizens for merit."
 	icon_state = "iron_nt"
+
+/obj/item/clothing/accessory/medal/medical
+	name = "medical patch"
+	icon_state = "medic_patch"
+	overlay_state = "medic_patch"
+	high_visibility = FALSE

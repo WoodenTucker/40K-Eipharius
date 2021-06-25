@@ -48,3 +48,31 @@
 
 /turf/unsimulated/floor/slipstream/ex_act(severity)
 	return
+
+/turf/unsimulated/floor/ert //these are my ghetto drop pods
+	name = "slipstream"
+	icon = 'icons/turf/space.dmi'
+	icon_state = "bluespace"
+	thermal_conductivity = 1.6
+	heat_capacity = 1000
+	temperature = 265
+
+
+/turf/unsimulated/floor/ert/Entered(atom/movable/AM)		//ITS A TRAP!
+	..()
+
+	if(istype(AM, /obj/effect))									//We don't want no effects
+		return
+
+	if(istype(AM, /atom/movable))								//Wait what is this?
+		if(isliving(AM))										//Is it alive?
+			fall(AM)										//Seeya later!
+
+	else
+		return
+
+/turf/unsimulated/floor/ert/proc/fall(mob/living/M as mob, mob/user as mob)
+	M.loc = get_turf(locate("landmark*ertdropsite"))
+
+
+/turf/unsimulated/floor/ert/ex_act(severity)

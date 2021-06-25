@@ -110,3 +110,11 @@
 	name = "scarf"
 	desc = "A stylish scarf. The perfect winter accessory for those with a keen fashion sense, and those who just can't handle a cold breeze on their necks."
 	icon_state = "whitescarf"
+
+/obj/item/clothing/accessory/red_outline
+	icon_state = "red_outline"
+	high_visibility = FALSE
+
+/obj/item/clothing/accessory/blue_outline
+	icon_state = "blue_outline"
+	high_visibility = FALSE

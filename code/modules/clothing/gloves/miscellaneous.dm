@@ -151,3 +151,13 @@
 	permeability_coefficient = 0.03
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
 
+/obj/item/clothing/gloves/thick/swat/combat/krieg
+	icon_state = "krieggloves"
+	item_state = "krieggloves"
+
+/obj/item/clothing/gloves/prac_gloves
+	name = "practioner gloves"
+	desc = "Now you can grope the dead without worrying about what you're contracting."
+	icon_state = "prac_gloves"
+	item_state = "prac_gloves"
+
