@@ -124,3 +124,75 @@
 		else if(C.gender == FEMALE)
 			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
 		..()
+
+/obj/item/melee/trench_axe
+	name = "trench axe"
+	desc = "Used mainly for murdering those on the enemy side."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "trenchaxe"
+	item_state = "trenchaxe"
+	wielded_icon = "trenchaxe-w"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 20
+	block_chance = 20
+	sharp = TRUE
+	edge = TRUE
+	hitsound = "slash_sound"
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+/obj/item/melee/mercycs
+	name = "mercy chainsword"
+	desc = "Used mainly for ripping and tearing"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "mercychainsword"
+	item_state = "mercychainsword"
+	wielded_icon = "trenchaxe-w"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 40
+	block_chance = 20
+	sharp = TRUE
+	edge = TRUE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+/obj/item/melee/inqcs
+	name = "inquisition chainsword"
+	desc = "Used mainly for ripping and tearing"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "inqchainsword"
+	item_state = "inqchainsword"
+	wielded_icon = "trenchaxe-w"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 25
+	block_chance = 40
+	sharp = TRUE
+	edge = TRUE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+/obj/item/melee/pcsword
+	name = "brutal chainsword"
+	desc = "Used mainly for ripping and tearing"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "pcsword"
+	item_state = "pcsword"
+	wielded_icon = "trenchaxe-w"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	force = 35
+	block_chance = 35
+	sharp = TRUE
+	edge = TRUE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE

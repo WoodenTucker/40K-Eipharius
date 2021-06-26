@@ -44,3 +44,15 @@
 	name = "peacekeeper armband"
 	desc = "An armband, worn by the crew to display which department they're assigned to. This one is blue and gold."
 	icon_state = "solblue"
+
+/obj/item/clothing/accessory/armband/alpha
+	icon_state = "alpha_patch"
+	high_visibility = FALSE
+
+/obj/item/clothing/accessory/armband/bravo
+	icon_state = "bravo_patch"
+	high_visibility = FALSE
+
+/obj/item/clothing/accessory/armband/charlie
+	icon_state = "charlie_patch"
+	high_visibility = FALSE

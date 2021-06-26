@@ -198,3 +198,11 @@
 	icon_state = "gas_mining"
 	item_state = "gas_mining"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+
+/obj/item/clothing/mask/gas/prac_mask
+	name = "practioner mask"
+	desc = "Keeps all that blood off your face."
+	icon_state = "prac_mask"
+	item_state = "prac_mask"
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = FACE|EYES|HEAD
