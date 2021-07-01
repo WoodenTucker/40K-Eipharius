@@ -153,7 +153,7 @@
 	var/blinded = null
 	var/ear_deaf = null		//Carbon
 
-//The last mob/living/carbon to push/drag/grab this mob (mostly used by slimes friend recognition)
+//The last mob/living/carbon to push/drag/grab this mob (mostly used by slimes friend recognition) //not anymore
 	var/mob/living/carbon/LAssailant = null
 
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER

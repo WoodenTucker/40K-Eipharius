@@ -500,11 +500,6 @@
 		to_chat(usr, "<span class='notice'><B>\The [src] is in use.</B></span>")
 		return
 
-	for(var/mob/living/carbon/slime/M in range(1,usr))
-		if(M.Victim == usr)
-			to_chat(usr, "You're too busy getting your life sucked out of you.")
-			return
-
 	visible_message("[usr] starts climbing into \the [src].", 3)
 
 	if(do_after(usr, 20, src))

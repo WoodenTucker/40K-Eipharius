@@ -395,7 +395,7 @@
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/sprinkles, 1)
 		bitesize = 10
-		var/chaosselect = pick(1,2,3,4,5,6,7,8,9,10)
+		var/chaosselect = pick(1,2,3,4,5,6,7,8,9)
 		switch(chaosselect)
 			if(1)
 				reagents.add_reagent(/datum/reagent/nutriment, 3)
@@ -410,12 +410,10 @@
 			if(6)
 				reagents.add_reagent(/datum/reagent/nutriment/coco, 3)
 			if(7)
-				reagents.add_reagent(/datum/reagent/slimejelly, 3)
-			if(8)
 				reagents.add_reagent(/datum/reagent/drink/juice/banana, 3)
-			if(9)
+			if(8)
 				reagents.add_reagent(/datum/reagent/drink/juice/berry, 3)
-			if(10)
+			if(9)
 				reagents.add_reagent(/datum/reagent/tricordrazine, 3)
 		if(prob(30))
 			src.icon_state = "donut2"
@@ -442,7 +440,7 @@
 			src.SetName("Frosted Jelly Donut")
 			reagents.add_reagent(/datum/reagent/nutriment/sprinkles, 2)
 
-/obj/item/reagent_containers/food/snacks/donut/slimejelly
+/obj/item/reagent_containers/food/snacks/donut/jelly
 	name = "Jelly Donut"
 	desc = "You jelly?"
 	icon_state = "jdonut1"
@@ -452,7 +450,6 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/sprinkles, 1)
-		reagents.add_reagent(/datum/reagent/slimejelly, 5)
 		bitesize = 5
 		if(prob(30))
 			src.icon_state = "jdonut2"
@@ -1472,18 +1469,6 @@
 		reagents.add_reagent(/datum/reagent/water, 5)
 		bitesize = 5
 
-/obj/item/reagent_containers/food/snacks/slimesoup
-	name = "slime soup"
-	desc = "If no water is available, you may substitute tears."
-	icon_state = "slimesoup" //nonexistant?
-	filling_color = "#c4dba0"
-
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/slimejelly, 5)
-		reagents.add_reagent(/datum/reagent/water, 10)
-		bitesize = 5
-
 /obj/item/reagent_containers/food/snacks/bloodsoup
 	name = "Tomato soup"
 	desc = "Smells like copper."
@@ -1902,11 +1887,6 @@
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/cherryjelly, 5)
 
-/obj/item/reagent_containers/food/snacks/jelliedtoast/slime
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/slimejelly, 5)
-
 /obj/item/reagent_containers/food/snacks/jellyburger
 	name = "Jelly Burger"
 	desc = "Culinary delight..?"
@@ -1918,11 +1898,6 @@
 	New()
 		..()
 		bitesize = 2
-
-/obj/item/reagent_containers/food/snacks/jellyburger/slime
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/slimejelly, 5)
 
 /obj/item/reagent_containers/food/snacks/jellyburger/cherry
 	New()
@@ -2135,24 +2110,10 @@
 		..()
 		bitesize = 3
 
-/obj/item/reagent_containers/food/snacks/jellysandwich/slime
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/slimejelly, 5)
-
 /obj/item/reagent_containers/food/snacks/jellysandwich/cherry
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/nutriment/cherryjelly, 5)
-
-/obj/item/reagent_containers/food/snacks/boiledslimecore
-	name = "Boiled slime Core"
-	desc = "A boiled red thing."
-	icon_state = "boiledslimecore" //nonexistant?
-	New()
-		..()
-		reagents.add_reagent(/datum/reagent/slimejelly, 5)
-		bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/mint
 	name = "mint"
