@@ -249,7 +249,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Bolt Rifle Magazine", "Lascarbine",) //lists all possible crafting choices
+		var/craftingchoices = list("Bolt Rifle Magazine", "Lascarbine", "Machine Silver",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -268,6 +268,13 @@
 				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Silver Ingot (Las-Carbine)"
+
+			if("Machine Silver")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Silver.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 3
+				src.ismarked = 1
+				src.name = "Silver Ingot (Machine Silver)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -301,6 +308,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(3)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed unit of Silver! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Silver Ingot (Carved Machine Silver)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -322,6 +340,12 @@
 				new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(user.loc)
 				qdel(src)
 				return
+			if(3)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/stack/material/silver(user.loc,1)
+				qdel(src)
+				return
 
 /*
    _____       _     _
@@ -337,7 +361,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Golden Ring",) //lists all possible crafting choices
+		var/craftingchoices = list("Golden Ring", "Machine Gold",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -349,6 +373,13 @@
 				src.whatwemaking = 1
 				src.ismarked = 1
 				src.name = "Gold Ingot (Golden Ring)"
+
+			if("Machine Gold")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Gold.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 2
+				src.ismarked = 1
+				src.name = "Gold Ingot (Machine Gold)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -371,6 +402,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(2)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed unit of Gold! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Gold Ingot (Carved Machine Gold)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -384,6 +426,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/card/id/ring/goldring(user.loc)
+				qdel(src)
+				return
+			if(2)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/stack/material/gold(user.loc,1)
 				qdel(src)
 				return
 
