@@ -1671,6 +1671,7 @@
 #include "code\modules\mob\living\carbon\human\species\races\eldar.dm"
 #include "code\modules\mob\living\carbon\human\species\races\kroot.dm"
 #include "code\modules\mob\living\carbon\human\species\races\krootboys.dm"
+#include "code\modules\mob\living\carbon\human\species\races\necron.dm"
 #include "code\modules\mob\living\carbon\human\species\races\nids.dm"
 #include "code\modules\mob\living\carbon\human\species\races\tau.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\abilities.dm"
