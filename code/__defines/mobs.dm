@@ -291,6 +291,9 @@
 #define SPECIES_SKITARII "Skitarii"
 #define SPECIES_ASTARTES "Astartes"
 #define SPECIES_TYRANID "Tyranids"
+#define SPECIES_NECRON "Necrontyr"
+#define SPECIES_NECRON_TALL "Tall Necrontyr"
+#define SPECIES_NECRON_WIDE "Wide Necrontyr"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
