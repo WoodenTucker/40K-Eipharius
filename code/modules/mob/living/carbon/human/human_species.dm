@@ -59,14 +59,6 @@
 /mob/living/carbon/human/astartes/New(var/new_loc)
 	..(new_loc, SPECIES_ASTARTES)
 
-/mob/living/carbon/human/necron/New(var/new_loc)
-	..(new_loc, SPECIES_NECRON)
-
-/mob/living/carbon/human/necron/tall/New(var/new_loc)
-	..(new_loc, SPECIES_NECRON_TALL)
-
-/mob/living/carbon/human/necron/wide/New(var/new_loc)
-	..(new_loc, SPECIES_NECRON_WIDE)
 
 /mob/living/carbon/human/monkey/New(var/new_loc)
 	..(new_loc, "Monkey")
