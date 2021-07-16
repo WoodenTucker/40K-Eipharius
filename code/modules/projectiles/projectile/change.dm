@@ -29,7 +29,7 @@
 
 		var/mob/living/new_mob
 
-		var/options = list("robot", "slime")
+		var/options = list("robot")
 		for(var/t in all_species)
 			options += t
 		options -= "Xenophage Queen"
@@ -41,8 +41,6 @@
 				options -= H.species.name
 		else if(isrobot(M))
 			options -= "robot"
-		else if(isslime(M))
-			options -= "slime"
 
 		var/randomize = pick(options)
 		switch(randomize)
@@ -54,9 +52,6 @@
 				var/mob/living/silicon/robot/Robot = new_mob
 				Robot.mmi = new /obj/item/device/mmi(new_mob)
 				Robot.mmi.transfer_identity(M)	//Does not transfer key/client.
-			if("slime")
-				new_mob = new /mob/living/carbon/slime(M.loc)
-				new_mob.universal_speak = 1
 			else
 				var/mob/living/carbon/human/H
 				if(ishuman(M))

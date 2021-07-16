@@ -598,7 +598,6 @@
 		E.status |= ORGAN_MUTATED
 		E.cannot_break = 1
 		E.dislocated = -1
-		E.nonsolid = 1
 		E.max_damage = 5
 		E.update_icon(1)
 	O.max_damage = 15
@@ -628,13 +627,14 @@
 			qdel(W)
 			continue
 		M.drop_from_inventory(W)
-	var/mob/living/carbon/slime/new_mob = new /mob/living/carbon/slime(M.loc)
-	new_mob.a_intent = "hurt"
-	new_mob.universal_speak = 1
+	//var/mob/living/carbon/slime/new_mob = new /mob/living/carbon/slime(M.loc)
+	var/new_mob	//find something you'd want someone to mutate into. Replace slime above and remove comments.
+	//new_mob.a_intent = "hurt"
+	//new_mob.universal_speak = 1
 	if(M.mind)
 		M.mind.transfer_to(new_mob)
-	else
-		new_mob.key = M.key
+	//else
+		//new_mob.key = M.key
 	qdel(M)
 
 /datum/reagent/nanites

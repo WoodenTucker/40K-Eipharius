@@ -159,15 +159,7 @@ var/list/robot_hud_colours = list("#ffffff","#cccccc","#aaaaaa","#888888","#6666
 
 /obj/item/organ/external/proc/apply_colouration(var/icon/applying)
 
-	if(nonsolid)
-		applying.MapColors("#4d4d4d","#969696","#1c1c1c", "#000000")
-		if(species && species.get_bodytype(owner) != SPECIES_HUMAN)
-			applying.SetIntensity(1.5)
-		else
-			applying.SetIntensity(0.7)
-		applying += rgb(,,,180) // Makes the icon translucent, SO INTUITIVE TY BYOND
-
-	else if(status & ORGAN_DEAD)
+	if(status & ORGAN_DEAD)
 		icon_cache_key += "_dead"
 		applying.ColorTone(rgb(10,50,0))
 		applying.SetIntensity(0.7)

@@ -11,14 +11,6 @@
 	usable_emotes = sortAssoc(usable_emotes)
 
 // Specific defines follow.
-/datum/species/slime
-	default_emotes = list(
-		/decl/emote/visible/bounce,
-		/decl/emote/visible/jiggle,
-		/decl/emote/visible/lightup,
-		/decl/emote/visible/vibrate
-		)
-
 /datum/species/unathi
 	default_emotes = list(
 		/decl/emote/human/swish,
