@@ -82,10 +82,9 @@
 #define MONKEY 2
 #define ALIEN 4
 #define ROBOT 8
-#define SLIME 16
 #define SIMPLE_ANIMAL 32
 #define HEAVY 64
-#define ALLMOBS (HUMAN|MONKEY|ALIEN|ROBOT|SLIME|SIMPLE_ANIMAL|HEAVY)
+#define ALLMOBS (HUMAN|MONKEY|ALIEN|ROBOT|SIMPLE_ANIMAL|HEAVY)
 
 // Robot AI notifications
 #define ROBOT_NOTIFICATION_NEW_UNIT 1
@@ -291,6 +290,9 @@
 #define SPECIES_SKITARII "Skitarii"
 #define SPECIES_ASTARTES "Astartes"
 #define SPECIES_TYRANID "Tyranids"
+#define SPECIES_NECRON "Necrontyr"
+#define SPECIES_NECRON_TALL "Tall Necrontyr"
+#define SPECIES_NECRON_WIDE "Wide Necrontyr"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1

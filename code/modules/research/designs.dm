@@ -386,14 +386,6 @@ other types of metals and chemistry for reagents).
 	..()
 	name = "Biotech device prototype ([item_name])"
 
-/datum/design/item/medical/slime_scanner
-	desc = "Multipurpose organic life scanner."
-	id = "slime_scanner"
-	req_tech = list(TECH_MAGNET = 2, TECH_BIO = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 200, "glass" = 100)
-	build_path = /obj/item/device/slime_scanner
-	sort_string = "MACFA"
-
 /datum/design/item/medical/robot_scanner
 	desc = "A hand-held scanner able to diagnose robotic injuries."
 	id = "robot_scanner"

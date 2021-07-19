@@ -138,7 +138,6 @@ var/list/gamemode_cache = list()
 	var/robot_delay = 0
 	var/monkey_delay = 0
 	var/alien_delay = 0
-	var/slime_delay = 0
 	var/animal_delay = 0
 	var/maximum_mushrooms = 15 //After this amount alive, mushrooms will not boom boom
 
@@ -808,8 +807,6 @@ var/list/gamemode_cache = list()
 					config.monkey_delay = value
 				if("alien_delay")
 					config.alien_delay = value
-				if("slime_delay")
-					config.slime_delay = value
 				if("animal_delay")
 					config.animal_delay = value
 				if("maximum_mushrooms")

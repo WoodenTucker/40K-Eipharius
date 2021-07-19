@@ -21,6 +21,12 @@
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	sexybits_location = BP_GROIN
 
+
+//	icon_template = 'icons/mob/human_races/r_tallcron.dmi'
+	icobase = 'icons/mob/human_races/r_widecron.dmi'
+	deform = 'icons/mob/human_races/r_widecron.dmi'
+	pixel_offset_x = -16
+
 /datum/species/human/get_bodytype(var/mob/living/carbon/human/H)
 	return SPECIES_HUMAN
 

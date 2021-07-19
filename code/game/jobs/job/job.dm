@@ -143,7 +143,7 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 		return
 
 	if(!(H.species && (H.species.type in economic_species_modifier)))
-		return //some bizarre species like shadow, slime, or monkey? You don't get an account.
+		return //some bizarre species like shadow, or monkey? You don't get an account.
 
 	var/money_amount = (rand(5,50) + rand(5, 50)) * economic_modifier * GLOB.using_map.salary_modifier //* loyalty  * species_modifier
 	var/datum/money_account/M = create_account(H.real_name, money_amount, null)

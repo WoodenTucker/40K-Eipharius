@@ -69,7 +69,7 @@
 /obj/item/organ/internal/brain/proc/transfer_identity(var/mob/living/carbon/H)
 	if(fake_brain)
 		return
-	
+
 	if(!brainmob)
 		brainmob = new(src)
 		brainmob.SetName(H.real_name)
@@ -124,12 +124,6 @@
 			target.key = brainmob.key
 
 	return 1
-
-/obj/item/organ/internal/brain/slime
-	name = "slime core"
-	desc = "A complex, organic knot of jelly and crystalline particles."
-	icon = 'icons/mob/slimes.dmi'
-	icon_state = "green slime extract"
 
 /obj/item/organ/internal/brain/golem
 	name = "chem"
