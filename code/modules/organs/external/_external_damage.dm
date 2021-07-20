@@ -7,6 +7,7 @@
 	return ((robotic >= ORGAN_ROBOT) || brute_dam + burn_dam + additional_damage < max_damage * 4)
 
 /obj/item/organ/external/take_damage(brute, burn, damage_flags, used_weapon = null)
+
 	brute = round(brute * brute_mod, 0.1)
 	burn = round(burn * burn_mod, 0.1)
 	if((brute <= 0) && (burn <= 0))
@@ -46,24 +47,31 @@
 				//   and the brute damage dealt exceeds the tearoff threshold, the organ is torn off.
 				//Check edge eligibility
 				var/edge_eligible = 0
-				if(edge)
-					if(istype(used_weapon,/obj/item))
-						var/obj/item/W = used_weapon
-						if(W.w_class >= w_class)
-							edge_eligible = 1
-					else
-						edge_eligible = 1
+				var/burn_eligible = 0
+				if(edge) edge_eligible = 1
+				if(laser) burn_eligible = 1
+
+//					if(istype(used_weapon,/obj/item))
+//						var/obj/item/W = used_weapon
+//						if(W.w_class >= w_class)
+//							edge_eligible = 1
+//					else
+//						edge_eligible = 1
+
 				brute = pure_brute
-				if(edge_eligible && brute >= max_damage / DROPLIMB_THRESHOLD_EDGE)
-					if(prob(brute) || force_droplimb)
-						droplimb(0, DROPLIMB_EDGE)
-						return
-				else if(burn >= max_damage / DROPLIMB_THRESHOLD_DESTROY)
+
+				if(burn_eligible && burn >= max_damage / DROPLIMB_THRESHOLD_DESTROY)
 					if(prob(burn/3) || force_droplimb)
 						droplimb(0, DROPLIMB_BURN)
 						return
-				else if(brute >= max_damage / DROPLIMB_THRESHOLD_DESTROY)
+
+				else if(edge_eligible && brute >= max_damage / DROPLIMB_THRESHOLD_EDGE)
 					if(prob(brute) || force_droplimb)
+						droplimb(0, DROPLIMB_EDGE)
+						return
+
+				else if(brute >= max_damage / DROPLIMB_THRESHOLD_DESTROY)
+					if(prob(brute/3) || force_droplimb)
 						droplimb(0, DROPLIMB_BLUNT)
 						return
 				/*
