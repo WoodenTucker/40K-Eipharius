@@ -98,6 +98,7 @@
 	permeability_coefficient = 0.05
 	icon_state = "techpriest"
 	item_state = "techpriest"
+	unacidable = 1
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."
