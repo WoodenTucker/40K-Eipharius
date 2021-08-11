@@ -122,6 +122,7 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
 	flags_inv = HIDEEARS|HIDEEYES
 	canremove = 0
+	unacidable = 1
 
 /obj/item/clothing/mask/gas/techpriest/magos
 	icon_state = "magos"
