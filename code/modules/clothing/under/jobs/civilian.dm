@@ -300,7 +300,7 @@
 /obj/item/clothing/under/rank/ork/three
 	icon_state = "squighide"
 	item_state = "squighide"
-	worn_state = "squidhide"
+	worn_state = "squighide"
 
 /obj/item/clothing/under/child_jumpsuit/warfare
 	name = "scavengers's clothing"

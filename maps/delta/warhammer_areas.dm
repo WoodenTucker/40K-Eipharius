@@ -747,7 +747,7 @@ Area basic template
 	icon_state = "inn"
 	music = 'sound/music/inn.ogg'
 	dynamic_lighting = 1
-	requires_power = TRUE
+	requires_power = 0
 
 /////////////////////////////////////////
 //////////////////Supply////////////////

@@ -524,6 +524,13 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				to_chat(src, "We control no trenches, we cannot respawn.")
 				return FALSE
 
+	if(!client.holder && respawn_time && timeofdeath && timedifference < respawn_time MINUTES && isburied == 0)
+		var/timedifference_text = time2text(respawn_time MINUTES - timedifference,"mm:ss")
+		to_chat(src, "<span class='warning'>Your body had not rotted yet... [respawn_time] minute\s until you have decayed enough to respawn. You have [timedifference_text] left. You can skip this by being buried!</span>")
+		return FALSE
+
+	return TRUE
+
 	if(isburied == 0)
 		to_chat(src, "Your body hasn't been buried yet! If you think it has, re-enter your corpse, ghost and try to respawn again!")
 		return FALSE
@@ -535,12 +542,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 
 
-	if(!client.holder && respawn_time && timeofdeath && timedifference < respawn_time MINUTES)
-		var/timedifference_text = time2text(respawn_time MINUTES - timedifference,"mm:ss")
-		to_chat(src, "<span class='warning'>You must have been dead for [respawn_time] minute\s to respawn. You have [timedifference_text] left.</span>")
-		return FALSE
 
-	return TRUE
 
 /proc/isghostmind(var/datum/mind/player)
 	return player && !isnewplayer(player.current) && (!player.current || isghost(player.current) || (isliving(player.current) && player.current.stat == DEAD) || !player.current.client)
