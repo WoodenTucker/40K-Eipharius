@@ -18,8 +18,8 @@
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels,)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
+			            access_all_personal_lockers, access_maint_tunnels, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory
 			            )
 
 	equip(var/mob/living/carbon/human/H)
