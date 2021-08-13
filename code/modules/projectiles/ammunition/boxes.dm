@@ -254,7 +254,7 @@
 
 /obj/item/ammo_magazine/box/a556
 	name = "magazine box (5.56mm)"
-	icon_state = "a762"
+	icon_state = "hmg"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "a556"

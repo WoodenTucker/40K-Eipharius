@@ -2,12 +2,12 @@
 	name = "gun cabinet"
 	req_access = list(access_armory)
 	icon = 'icons/obj/guncabinet.dmi'
-	icon_state = "base"
-	icon_off ="base"
-	icon_broken ="base"
-	icon_locked ="base"
-	icon_closed ="base"
-	icon_opened = "base"
+	icon_state = "baseg"
+	icon_off ="baseg"
+	icon_broken ="baseg"
+	icon_locked ="baseg"
+	icon_closed ="baseg"
+	icon_opened = "baseg"
 
 /obj/structure/closet/secure_closet/guncabinet/Initialize()
 	. = ..()
@@ -24,9 +24,9 @@
 /obj/structure/closet/secure_closet/guncabinet/update_icon()
 	overlays.Cut()
 	if(opened)
-		overlays += icon(icon,"door_open")
+		overlays += icon(icon,"door_openg")
 	else
-		var/lazors = 0
+		/*var/lazors = 0
 		var/shottas = 0
 		for (var/obj/item/gun/G in contents)
 			if (istype(G, /obj/item/gun/energy))
@@ -38,14 +38,14 @@
 				var/image/gun = image(icon(src.icon))
 				if (lazors > shottas)
 					lazors--
-					gun.icon_state = "laser"
+					gun.icon_state = null
 				else if (shottas)
 					shottas--
-					gun.icon_state = "projectile"
+					gun.icon_state = null
 				gun.pixel_x = i*4
-				overlays += gun
+				overlays += gun*/
 
-		overlays += icon(src.icon, "door")
+		overlays += icon(src.icon, "doorg")
 
 		if(welded)
 			overlays += icon(src.icon,"welded")
