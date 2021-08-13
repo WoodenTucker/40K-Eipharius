@@ -1,4 +1,10 @@
 "aa" = (/obj/effect/landmark{name = "krootstart"},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
+"ab" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
+"ac" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"ad" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"ae" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
+"af" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"ag" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "aw" = (/obj/machinery/light/spot,/obj/effect/floor_decal/newcorner/blue,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "ax" = (/turf/space,/area/space)
 "aA" = (/obj/effect/floor_decal/newcorner/blue{dir = 1},/obj/structure/table/glass,/obj/item/device/flashlight/lamp/green,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
@@ -31,7 +37,6 @@
 "fR" = (/obj/effect/floor_decal/newcorner/blue/quarter,/obj/structure/table/glass,/obj/item/book/manual/evaguide,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
 "gb" = (/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/plating,/area/centcom)
 "gi" = (/obj/structure/table/steel,/obj/item/clothing/suit/storage/hazardvest/white,/obj/item/clothing/head/hardhat/white,/turf/simulated/floor/tiled/dark,/area/centcom)
-"gn" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "gu" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/tiled/dark,/area/centcom)
 "gv" = (/obj/structure/table/steel,/obj/machinery/photocopier/faxmachine,/turf/simulated/floor/tiled/dark,/area/centcom)
 "gI" = (/turf/unsimulated/wall/fakeglass{icon_state = "fakewindows2"},/area/centcom)
@@ -81,7 +86,6 @@
 "op" = (/obj/item/device/radio/beacon,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "or" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "oy" = (/obj/effect/floor_decal/newcorner/blue/quarter{dir = 4},/obj/structure/bed,/obj/item/bedsheet/hos,/obj/structure/curtain/open/bed,/obj/effect/landmark{name = "ERT"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/centcom)
-"oz" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "ph" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "pr" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "pB" = (/obj/structure/bed/krootbed,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/tauship)
@@ -283,22 +287,22 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEMzhafIYE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEaCYEYEYEaCYEYEYEaCYEYEYrVlVlVlVlYrbwbwYrVlVlVlVlYrYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEvEvEvEvEax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEQyililbUilililbUililililNiETAOAOAOETAOAOETVbAOAOETvnccKoYExLxLcQcQcWcWMSMSYEgiguRGRGRGgvgIhnhnhnhnhnhnhnhnhnhnhnhnhnYEYEYEYEvEax
 axaxaxaxaxgLgLDtgLDtgLDtgLDtgLDtgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEvwhahaawhahahaawhahahahahcAOAOAOAOAOhrhrAOAOAOAOAOvnccdBYERGRGRGRGRGRGRGRGYEhPiAiGjcRGjpYEkdhnhnhnhnhnhnhnhnhnhnhnhnhnhnkiYEvEax
-axaxaxaxaxgLUviuUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEaCYEYEYEaCYEYEYEaCYEYEYEYElZAOAOmenKnKnNAOAOAOnPYEYEYEYExLxLxLxLRGRGMSMSYERGphphRGRGRGcyprprpDhnhnhnhnhnhnhnhnhnhnhnhnhnYEvEvE
+axaxaxaxaxgLabiuUviuUviuUviuUvacgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEaCYEYEYEaCYEYEYEaCYEYEYEYElZAOAOmenKnKnNAOAOAOnPYEYEYEYExLxLxLxLRGRGMSMSYERGphphRGRGRGcyprprpDhnhnhnhnhnhnhnhnhnhnhnhnhnYEvEvE
 axaxaxaxaxgLVvUviuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEFyilbJYEFyilbJYEFyilbJYEvEYEAOAOAOvTqUqUmoAOAOAOAOYEhuVgYERGRGqHRGRGRGRGRGYERGRGRGRGqHRGcyRGRGrIsmsCsCsCsCsCsCsCsCsCsCtuhnYEYEvE
-axaxaxaxaxgLVtiuUviuUvopUviuUvozgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEfrDIxHYEfrDIxHYEfrDIxHYEvEYEAOAOAOAOqhqhAOAOAOAOAOYEYestYEYEYEYEYEDWHsuzuzYEcycyDWHsYEYEYEuDuTRGvOwywzwDwLxEzHwLwLzTwyvOhnhnYEvE
-axaxaxaxaxgLhyUviuUviuUviuUviugngLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEIaCOwBYEfRCOwBYEXNCOwBYEvEYEAOGfAOAOGfGfAOAOAOGfAOYERGYEYERGdyRGRGRGRGRGRGRGRGRGRGRGRGdygIhnCBRGEKFkFPGcGcFPFPGcGcFPFkEKhnhnYEvE
+axaxaxaxaxgLVtiuUviuUvopUviuUvafgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEfrDIxHYEfrDIxHYEfrDIxHYEvEYEAOAOAOAOqhqhAOAOAOAOAOYEYestYEYEYEYEYEDWHsuzuzYEcycyDWHsYEYEYEuDuTRGvOwywzwDwLxEzHwLwLzTwyvOhnhnYEvE
+axaxaxaxaxgLhyUviuUviuUviuUviuaggLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEIaCOwBYEfRCOwBYEXNCOwBYEvEYEAOGfAOAOGfGfAOAOAOGfAOYERGYEYERGdyRGRGRGRGRGRGRGRGRGRGRGRGdygIhnCBRGEKFkFPGcGcFPFPGcGcFPFkEKhnhnYEvE
 axaxaxaxaxaxgLiuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEvEYEYEYEYEYEYEYEYEYEYEYEcyYEJUYEdyRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGgIhnCBRGvOFkFkGnFkFkFkFkGnFkFkvOhnhnYEvE
 axaxaxaxaxaxaxgLiuUviuygiuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEYEHcRGRGGQGSHpRGYEdyRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGYEIoIKRGvOvOIPvOvOvOvOvOvOIPvOvOhnhnYEvE
-axaxaxaxaxaxaxaxgLiuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEHcRGRGRGRGRGRGJqRGRGRGRGRGRGRGZCRGRGRGRGKBWIWIWIWIWILyRGRGRGcyRGRGRGvOLNLWMGMGMGMGMGMGLWLNvOhnhnYEvE
+axaxaxaxaxaxaxaxgLadUviuaegLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEHcRGRGRGRGRGRGJqRGRGRGRGRGRGRGZCRGRGRGRGKBWIWIWIWIWILyRGRGRGcyRGRGRGvOLNLWMGMGMGMGMGMGLWLNvOhnhnYEvE
 axaxaxaxaxaxaxaxgLUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEHcRGRGRGRGRGRGYERGRGRGRGRGRGRGRGRGRGRGRGNgulululululNgRGRGRGcyRGRGRGvONkFkFkFkFkFkFkFkFkNZvOhnhnYEvE
 axaxaxaxaxaxaxgLUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEHcRGRGRGRGRGRGJqRGRGRGRGRGRGRGRGRGRGRGRGNgulululululNgRGRGRGYEOiuTRGvONkFkOnOnOnOnOnOnFkNZvOhnkiYEvE
-axaxaxaxaxaxgLUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEHcQdRGQzprQNRGYEqHRGRGRGRGRGRGRGRGRGRGRGNgulululululNgRGRGRGgIhnCBRGEKFkFkSvFkSvFkSvFkFkFkEKhnhnYEvE
+axaxaxaxaxaxgLabiuUviuUviuUvacgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEHcQdRGQzprQNRGYEqHRGRGRGRGRGRGRGRGRGRGRGNgulululululNgRGRGRGgIhnCBRGEKFkFkSvFkSvFkSvFkFkFkEKhnhnYEvE
 axaxaxaxaxaxgLiuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYEqHRGRGRGRGRGSxWIWIWIWIWISIRGRGRGgIhnCBRGEKFkFkOnOnOnOnOnOnFkFkEKhnhnYEvE
 axaxaxaxaxaxgLUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEvEYEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGYEIoIKRGvONkFkSvFkSvFkSvFkFkNZvOhnhnYEvE
 axaxaxaxaxaxgLiuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEmdYEqHRGRGRGRGRGRGRGRGRGRGRGRGRGcyRGRGRGvONkFkOnOnOnOnOnOnFkNZvOhnhnYEvE
 axaxaxaxaxaxgLUviuUviuUviuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYERGRGRGRGRGRGRGRGRGqHcyRGRGRGvONkFkFkFkFkGnFkFkFkNZvOhnhnYEvE
 axaxaxaxaxaxgLiuUviugLgLUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEUkSZZOZOZOYEcyGNcyYETeTeGNGNYEYEYEuDuTRGvOvOTqUwWgWnvOUwWnWrvOvOhnhnYEvE
-axaxaxaxaxaxgLUviuUvgLgLiuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEUkUkUkUkUkocUkUkUkYEXtXtXzXIYtZfGNhnCBRGEKFkFkMGMGMGvOMGMGFkFkEKhnhnYEvE
+axaxaxaxaxaxgLabiuUvgLgLiuUvacgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEUkUkUkUkUkocUkUkUkYEXtXtXzXIYtZfGNhnCBRGEKFkFkMGMGMGvOMGMGFkFkEKhnhnYEvE
 axaxaxaxaxaxgLiuUvgLgLgLgLiuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEwUUkwUUkUkUkUkUkUkYEXtXtXtXtXtZmGNhnCBRGvONkFkFkFkorvOjnFkFkWbvOhnhnYEvE
 axaxaxaxaxaxgLgLgLgLaxaxgLgLgLgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEbOUkuYUkUkUkUkUkbdYEEXXtXtXtXtOJYEtmIKRGvONkFkAPUcUcvOlpgTFkQsvOhnkiYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYESWUkSWUkUkUkUkUkUkYEbaXtXtXtXtXtTeRGRGRGvONkFkFROnOnvOfJDhCTQsvOhnhnYEvE
