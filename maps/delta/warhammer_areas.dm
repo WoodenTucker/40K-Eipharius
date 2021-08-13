@@ -1314,5 +1314,5 @@ Area basic template
 /area/cadiaoutpost/oa/tauship
 	name = "Tau Ship"
 	icon_state = "tauship"
-	requires_power = FALSE
+	requires_power = 0
 	dynamic_lighting = 1
