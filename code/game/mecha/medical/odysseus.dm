@@ -9,6 +9,7 @@
 	wreckage = /obj/effect/decal/mecha_wreckage/odysseus
 	internal_damage_threshold = 30
 	deflect_chance = 15
+	max_equip = 4
 	var/obj/item/clothing/glasses/hud/health/mech/hud
 
 	New()
