@@ -308,10 +308,3 @@
 	icon_state = "urchin"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS//So they don't freeze to death with their clothes on.
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/under/rank/ncr
-	name = "fill in"
-	desc = "fill in"
-	icon_state = "ncr"
-	item_state = "ncr"
-	worn_state = "ncr"
