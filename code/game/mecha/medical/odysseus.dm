@@ -1,5 +1,5 @@
 /obj/mecha/medical/odysseus
-	desc = "These exosuits are developed and produced by Vey-Med. (&copy; All rights reserved)."
+	desc = "A medical exosuit commonly used to retrieve critcally injured patients in hazardous situations. It's lack of armour and inability to mount weapons systems makes it inadvisable to use on the front lines, however."
 	name = "Odysseus"
 	icon_state = "odysseus"
 	initial_icon = "odysseus"
@@ -7,7 +7,7 @@
 	max_temperature = 15000
 	health = 200
 	wreckage = /obj/effect/decal/mecha_wreckage/odysseus
-	internal_damage_threshold = 35
+	internal_damage_threshold = 30
 	deflect_chance = 15
 	var/obj/item/clothing/glasses/hud/health/mech/hud
 
