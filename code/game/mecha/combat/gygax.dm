@@ -5,9 +5,9 @@
 	initial_icon = "gygax"
 	step_in = 3
 	dir_in = 1 //Facing North.
-	health = 300
+	health = 400
 	deflect_chance = 15
-	damage_absorption = list("brute"=0.75,"fire"=1,"bullet"=0.8,"laser"=0.7,"energy"=0.85,"bomb"=1)
+	damage_absorption = list("brute"=0.6,"fire"=1,"bullet"=0.7,"laser"=0.65,"energy"=0.85,"bomb"=0.85)
 	max_temperature = 25000
 	infra_luminosity = 6
 	var/overload = 0
@@ -21,9 +21,9 @@
 	name = "Dark Gygax"
 	icon_state = "darkgygax"
 	initial_icon = "darkgygax"
-	health = 400
+	health = 500
 	deflect_chance = 25
-	damage_absorption = list("brute"=0.6,"fire"=0.8,"bullet"=0.6,"laser"=0.5,"energy"=0.65,"bomb"=0.8)
+	damage_absorption = list("brute"=0.55,"fire"=0.8,"bullet"=0.55,"laser"=0.4,"energy"=0.65,"bomb"=0.75)
 	max_temperature = 45000
 	overload_coeff = 1
 	wreckage = /obj/effect/decal/mecha_wreckage/gygax/dark
