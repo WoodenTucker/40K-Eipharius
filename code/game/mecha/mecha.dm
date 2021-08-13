@@ -39,7 +39,7 @@
 	var/mhit_power_use = 0
 
 	//the values in this list show how much damage will pass through, not how much will be absorbed.
-	var/list/damage_absorption = list("brute"=0.8,"fire"=1.2,"bullet"=0.9,"laser"=1,"energy"=1,"bomb"=1)
+	var/list/damage_absorption = list("brute"=0.7,"fire"=1.2,"bullet"=0.9,"laser"=0.8,"energy"=1,"bomb"=0.9)
 	var/obj/item/cell/cell
 	var/state = 0
 	var/list/log = new
