@@ -5,7 +5,6 @@
 	#include "jobs/warhammer_jobs.dm"
 	#include "jobs/guard.dm"
 	#include "jobs/guardsmen.dm"
-	#include "warhammer_items.dm"
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
 

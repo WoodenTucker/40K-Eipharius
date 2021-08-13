@@ -713,7 +713,7 @@
 */
 
 /obj/item/newore/gems/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(!isAutochisel(W))
+	if(!isAutochisel(W) && !isLasercutter(W))
 		to_chat(user, "Use an auto-chisel to try and carve out the gem!")
 		return
 	if(isAutochisel(W))
@@ -760,7 +760,6 @@
 					to_chat(user, "[user] slips and damages the gem!")
 					qdel(src)
 					return
-
 			if(4)
 				if(prob(50))
 					to_chat(user, "[user] successfully cuts the gem!")
@@ -774,7 +773,6 @@
 					to_chat(user, "[user] slips and damages the gem!")
 					qdel(src)
 					return
-
 			if(5)
 				if(prob(50))
 					to_chat(user, "[user] successfully cuts the gem!")
@@ -802,4 +800,24 @@
 					qdel(src)
 					return
 
+	if(isLasercutter(W))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
+		switch(gemtype)
+
+			if(6)
+				if(prob(50))
+					to_chat(user, "[user] successfully refines the gem!")
+					new /obj/item/stack/material/diamond(src.loc,1)
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/diamond/fail(src.loc)
+					to_chat(user, "[user] slips and damages the gem!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+					qdel(src)
+					return
+			else
+				to_chat(user, "You can not refine this type of gem into useable material!")
+				return

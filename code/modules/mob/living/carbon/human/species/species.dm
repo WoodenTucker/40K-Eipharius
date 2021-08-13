@@ -370,8 +370,9 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 	return TRUE
 
 // Used to override normal fall behaviour. Use only when the species does fall down a level.
+// Hijacking this since no species uses it and it serves no purpose. - Deso
 /datum/species/proc/handle_fall_special(var/mob/living/carbon/human/H, var/turf/landing)
-	return FALSE
+	H.touchdown(landing)
 
 // Called when using the shredding behavior.
 /datum/species/proc/can_shred(var/mob/living/carbon/human/H, var/ignore_intent)

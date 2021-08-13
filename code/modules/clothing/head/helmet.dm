@@ -173,6 +173,94 @@
 	armor = list(melee = 45, bullet = 40, laser = 40, energy = 35, bomb = 45, bio = 0, rad = 0)
 	siemens_coefficient = 0.6
 
+/obj/item/clothing/head/helmet/ravenhelm
+	name = "Raven Guard Power Helm"
+	desc = "The black, beaked mask of the Raven Guard."
+	icon_state = "rghelmet2"
+	item_state = "rghelmet2"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/sallyhelm
+	name = "Salamander Power Helm"
+	desc = "The ash charred helmet of a Salamander Marine."
+	icon_state = "sl_lib"
+	item_state = "sl_lib"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/chaplainhelm
+	name = "Space Marine Chaplain Helmet"
+	desc = "The daunting helmet of a Space Marine Chaplain's Helmet"
+	icon_state = "uni_chap"
+	item_state = "uni_chap"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/smurfhelm
+	name = "Ultramarine Power Helm"
+	desc = "The blue helm of an Ultramarine."
+	icon_state = "um_helm"
+	item_state = "um_helm"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/brhelm
+	name = "Blood Raven Power Helm"
+	desc = "The sanguine helm of a Blood Raven"
+	icon_state = "br_helm"
+	item_state = "br_helm"
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	str_requirement = 25
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
+	cold_protection = HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet
+	name = "ork helmet"
+	desc = "Looks like a rusty bucket with horns glued on..."
+	icon_state = "ork_helm"
+	item_state = "ork_helm"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet/two
+	icon_state = "orkhelmet"
+	item_state = "orkhelmet"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/head/helmet/orkhelmet/three
+	icon_state = "orkhelmethorns"
+	item_state = "orkhelmethorns"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/head/helmet/orkhelmet/four
+	icon_state = "orkhelmetsight"
+	item_state = "orkhelmetsight"
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 //tau//
 /obj/item/clothing/head/helmet/fw
@@ -185,3 +273,13 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/sentryhelm
+	name = "Sentry Helmet"
+	desc = "Used for taking blows to the noggin without getting hurt."
+	armor = list(melee = 75, bullet = 75, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)//proteck ya neck
+	str_requirement = 18
+
+
+
+

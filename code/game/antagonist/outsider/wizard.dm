@@ -2,10 +2,10 @@ var/datum/antagonist/wizard/wizards
 
 /datum/antagonist/wizard
 	id = MODE_WIZARD
-	role_text = "Space Wizard"
-	role_text_plural = "Space Wizards"
-	landmark_id = "wizard"
-	welcome_text = "You will find a list of available spells in your spell book. Choose your magic arsenal carefully.<br>In your pockets you will find a teleport scroll. Use it as needed."
+	role_text = "Rouge Psyker"
+	role_text_plural = "Rouge Psykers"
+	landmark_id = "Rouge Psyker"
+	welcome_text = "For too long have you been running, from the dark whispers in your mind and the people in the black cloaks that seem to melt from the shadows trying to take you away. And now you find yourself here in this filthy backwater, try to survive another day but always look over your shoulder."
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_CLEAR_EQUIPMENT | ANTAG_CHOOSE_NAME | ANTAG_VOTABLE | ANTAG_SET_APPEARANCE
 	antaghud_indicator = "hudwizard"
 

@@ -12,7 +12,8 @@
 	var/sharp = 0		// whether this object cuts
 	var/edge = 0		// whether this object is more likely to dismember
 	var/in_use = 0 // If we have a user using us, this will be set on. We will check if the user has stopped using us, and thus stop updating and LAGGING EVERYTHING!
-	var/damtype = "brute"
+	var/damtype = BRUTE
+	var/damage_type = BRUTE //things start using this later instead of damtype for whatever reason, first was declared in projectiles_new.dm
 	var/armor_penetration = 0
 	var/anchor_fall = FALSE
 
@@ -130,7 +131,7 @@
 		. |= DAM_EDGE
 	if(is_sharp(src))
 		. |= DAM_SHARP
-	if(damtype == BURN)
+	if(damtype == BURN || damage_type == BURN)
 		. |= DAM_LASER
 
 /obj/attackby(obj/item/O as obj, mob/user as mob)

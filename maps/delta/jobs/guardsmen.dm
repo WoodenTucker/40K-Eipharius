@@ -18,8 +18,8 @@
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels,)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
+			            access_all_personal_lockers, access_maint_tunnels, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory
 			            )
 
 	equip(var/mob/living/carbon/human/H)
@@ -309,7 +309,6 @@ Begin Warhammer loadouts
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
 /decl/hierarchy/outfit/job/redsoldier/engineer
 	r_pocket = /obj/item/ammo_magazine/mc9mmt/machinepistol
 	l_pocket = /obj/item/wirecutters
@@ -342,7 +341,7 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/redsoldier/sentry
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	suit = /obj/item/clothing/suit/armor/sentry/red
-	head = /obj/item/clothing/head/helmet/sentryhelm/red
+	head = /obj/item/clothing/head/legacy/sentryhelm/red
 	belt = /obj/item/melee/trench_axe
 	suit_store = /obj/item/gun/projectile/automatic/mg08
 	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 3, /obj/item/grenade/smokebomb = 1)
@@ -355,7 +354,7 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/redsoldier/flamer
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	suit = /obj/item/clothing/suit/fire/red
-	head = /obj/item/clothing/head/helmet/redhelmet/fire
+	head = /obj/item/clothing/head/legacy/redhelmet/fire
 	belt = /obj/item/gun/projectile/automatic/flamer
 	suit_store = /obj/item/melee/trench_axe
 	r_pocket = /obj/item/grenade/fire
@@ -409,17 +408,17 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/redsoldier/scout
 	suit = /obj/item/clothing/suit/child_coat/red
 	l_ear = /obj/item/device/radio/headset/red_team/all
-	uniform = /obj/item/clothing/under/child_jumpsuit/warfare/red
+	uniform = /obj/item/clothing/under/child_jumpsuit/warfare
 	shoes = /obj/item/clothing/shoes/child_shoes
 	gloves = null
 	r_pocket = /obj/item/device/binoculars
 	backpack_contents = list(/obj/item/grenade/smokebomb = 1)
 
+
 /decl/hierarchy/outfit/job/redsoldier/scout/equip()
 	if(aspect_chosen(/datum/aspect/nightfare))
 		backpack_contents += list(/obj/item/ammo_box/flares = 1 , /obj/item/torch/self_lit = 1)
 	..()
-
 
 /decl/hierarchy/outfit/job/kroot
 	uniform = /obj/item/clothing/under/rank/kroot

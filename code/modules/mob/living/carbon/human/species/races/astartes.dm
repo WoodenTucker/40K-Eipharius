@@ -2,9 +2,11 @@
 Astartes
 */
 
+//adminspawning these in still doesn't work, need to be rejuvenated
+
 /datum/species/human/astartes
-	name = "Astartes"
-	name_plural = "Space Marines"
+	name = SPECIES_ASTARTES
+	name_plural = "Astartes"
 	primitive_form = SPECIES_HUMAN
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
@@ -29,17 +31,32 @@ Astartes
 	brute_mod = 0.3
 	radiation_mod = 0
 
-/datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/H)
+/datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/astartes/H)
+	. = ..()
 	H.age = rand(min_age,max_age)//asstardes ages are all over.
 	to_chat(H, "<big><span class='warning'>You are one of His angels! Act like it!</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
-	return ..()
+//	H.rejuvenate()
+//	H.job = "Astartes Envoy"
+//	return ..()
 
-/mob/living/carbon/human
-	var/new_astartes = SPECIES_ASTARTES
+///mob/living/carbon/human
+//	var/new_astartes = SPECIES_ASTARTES
 
 /mob/living/carbon/human/astartes
 	gender = MALE
 
-/mob/living/carbon/human/astartes/New(var/new_loc)
-	..(new_loc, new_astartes)
+/mob/living/carbon/human/astartes/New(var/new_loc,var/new_astartes = SPECIES_ASTARTES)
+	. = ..(/*new_loc,new_astartes*/)
+	src.rejuvenate()
+	src.job = "Astartes Envoy"
+
+
+/mob/living/carbon/human/astartes/Initialize()
+	. = ..()
+	src.rejuvenate()
+/*
+	fully_replace_character_name(random_kroot_name(src.gender))
+	warfare_faction = TAU
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	outfit.equip(src)*/

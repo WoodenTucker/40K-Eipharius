@@ -163,7 +163,7 @@ var/const/NO_EMAG_ACT = -50
 	front = getFlatIcon(M, SOUTH, always_use_defdir = 1)
 	side = getFlatIcon(M, WEST, always_use_defdir = 1)
 
-/mob/proc/set_id_info(var/obj/item/card/id/id_card)
+/mob/proc/set_id_info(var/obj/item/card/id/id_card, var/obj/item/card/id/dog_tag)
 	id_card.age = 0
 	id_card.registered_name		= real_name
 	id_card.sex 				= capitalize(gender)
@@ -463,3 +463,56 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A card issued to Merchants, indicating their right to sell and buy goods."
 	icon_state = "trader"
 	access = list(access_merchant)
+
+/obj/item/card/id/dog_tag
+	var/warfare_faction = null
+	icon_state = "dogtag"
+	desc = "A metal dog tag. Functions like an ID."
+
+/obj/item/card/id/dog_tag/update_name()
+	var/final_name = "[registered_name]'s Dog Tag"
+	if(military_rank && military_rank.name_short)
+		final_name = military_rank.name_short + " " + final_name
+	if(assignment)
+		final_name = final_name + " ([assignment])"
+	SetName(final_name)
+
+/mob/living/carbon/human/set_id_info(var/obj/item/card/id/dog_tag)
+	..()
+	dog_tag.age = age
+
+/obj/item/card/id/dog_tag/guardsman
+	icon_state = "tagred"
+	access = list(access_maint_tunnels,)
+
+/obj/item/card/id/dog_tag/kroot
+	icon_state = "tagred"
+	access = list(access_kroot)
+
+/obj/item/card/id/dog_tag/skitarii
+	icon_state = "tagred"
+	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical, access_robotics,)
+
+/obj/item/card/id/dog_tag/ork
+	icon_state = "tagred"
+	access = list(access_kroot)
+
+/obj/item/card/id/ring/tau
+	icon_state = "tau"
+	access = list(access_tau)
+	desc = "An ornate ring forged by Tau craftsmen. Functions like an ID."
+
+/obj/item/card/id/ring/administrator
+	icon_state = "admin_ring"
+	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
+	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
+
+/obj/item/card/id/ring/goldring
+	name = "golden ring"
+	icon_state = "goldring"
+	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
+
+/obj/item/card/id/ring/disgracedmedicae
+	icon_state = "medicae_ring"
+	access = list(access_clinic)
+	desc = "An old ring signifying your position as a medicae."

@@ -209,10 +209,14 @@
 	weapon_speed_delay = 10
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
+	var/skinning = 0
 
 /obj/item/material/sword/skinning_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(C.skinned == 1)
 		to_chat(usr, "The flesh has already been stripped away from this one...")
+		return
+	if(src.skinning == 1)
+		to_chat(usr, "You are already skinning this one.")
 		return
 	if(C.stat != DEAD)
 		to_chat(usr, "No... I can't... [C] is still alive...")
@@ -225,8 +229,10 @@
 			"You cut away [C]'s flesh with \the [src]!",\
 			"<font color='#800080'>You hear a cackle, first a deep, masculine voice followed by a much softer, feminine tone.</font>")
 		playsound(usr, 'sound/effects/SkinningA.ogg', 80, 0, -1)
+		src.skinning = 1
 		(do_after(user,40,src))
 		C.skinned = 1
+		src.skinning = 0
 		new /obj/item/humanskin(C.loc)
 		return
 	else

@@ -189,6 +189,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
 
 
 /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
@@ -341,5 +342,76 @@
 	icon_state = "ministorum_priest"
 	item_state = "ministorum_priest"
 	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+//Undertaker
+/obj/item/clothing/suit/child_coat
+	name = "undertaker's coat"
+	desc = "Fitted just for scavs."
+	icon_state = "child_redcoat"
+	can_be_worn_by_child = TRUE
+	child_exclusive = TRUE
+
+//Pilgrim clothes
+
+/obj/item/clothing/suit/chokha
+	name = "stalker's vest"
+	desc = "A red hunters uniform"
+	icon_state = "chokha"
+	item_state = "chokha"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/miner
+	name = "miner's vest"
+	desc = "A miner's vestaments"
+	icon_state = "yminer"
+	item_state = "yminer"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/sherpa
+	name = "sherpa's vest"
+	desc = "A sherpa's vestaments"
+	icon_state = "sherpa"
+	item_state = "sherpa"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/scum
+	name = "shady jacket"
+	desc = "A jacket that only the shadiest of characters would wear."
+	icon_state = "scum"
+	item_state = "scum"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/suit/prac_arpon
+	name = "practioner robes"
+	desc = "Worn by practioners and other surgoens."
+	icon_state = "prac_robes"
+	item_state = "prac_robes"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/sistersuperiorsuit
+	name = "sister hospitaller's suit"
+	desc = "The holy garments marking the wearer as sister hospitaller"
+	icon_state = "hospitaller"
+	item_state = "hospitaller"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 10, bio = 50, rad = 0)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/storage/firstaid/adv) //i'll figure out what can go in here idk
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/suit/storage/sistersuit
+	name = "sister discipulus's suit"
+	desc = "The holy garments marking the wearer as a discipulus hospitaller"
+	icon_state = "hospitallerold"
+	item_state = "hospitallerold"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 50, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

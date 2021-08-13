@@ -237,6 +237,13 @@
 /atom/movable/proc/fall_damage()
 	return 0
 
+/mob/living/carbon/human/proc/touchdown(var/turf/landing)
+	var/depth = 1
+	if(istype(landing, /turf/simulated/open))
+		for(var/T = GetBelow(src); isopenspace(T); T = GetBelow(T))
+			depth += 1
+			landing = depth
+
 /obj/fall_damage()
 	if(w_class == ITEM_SIZE_TINY)
 		return 0
