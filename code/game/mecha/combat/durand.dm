@@ -6,7 +6,7 @@
 	step_in = 4
 	health = 500
 	deflect_chance = 20
-	damage_absorption = list("brute"=0.5,"fire"=1.0,"bullet"=0.50,"laser"=0.75,"energy"=0.9,"bomb"=0.75)
+	damage_absorption = list("brute"=0.5,"fire"=1.0,"bullet"=0.50,"laser"=0.70,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000
 	infra_luminosity = 8
 	force = 40
