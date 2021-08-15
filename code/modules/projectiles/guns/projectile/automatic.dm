@@ -366,7 +366,7 @@
 	force = 10
 	max_shells = 50
 	caliber = ".75"
-	condition = 40
+	condition = 60
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
