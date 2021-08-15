@@ -73,6 +73,10 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
 
+/obj/item/gun/projectile/talon/adept
+	name = "dulled stub pistol"
+	desc = "A slightly dulled, worn out, stub-pistol. Beaten down from the days spent sitting in a desk drawer. It has the sigil of the Adeptus Administratum on it."
+
 /obj/item/gun/projectile/talon/update_icon()
 	..()
 	if(!is_jammed)
@@ -329,6 +333,6 @@
 	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
 	icon_state = "slugga"
 	caliber = ".75"
-	condition = 40
+	condition = 60
 	force = 20
 	load_method = MAGAZINE

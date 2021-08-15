@@ -43,11 +43,11 @@
 	if(waaagh >= 100 && !cooldown)
 		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
 		playsound(src, 'sound/voice/ork/orkscream.ogg', 50, 5)
-		adjustBruteLoss(-10)
-		adjustFireLoss(-10)
-		adjustOxyLoss(-10)
-		adjustToxLoss(-10)
-		adjustBrainLoss(-10)
+		adjustBruteLoss(-5)
+		adjustFireLoss(-5)
+		adjustOxyLoss(-5)
+		adjustToxLoss(-5)
+		adjustBrainLoss(-5)
 		restore_all_organs()
 		src.radiation = 0
 		src.bodytemperature = T20C
@@ -60,7 +60,7 @@
 		src.ear_damage = 0
 		src.inject_blood(src, 200)
 		cooldown = TRUE
-		spawn(50)
+		spawn(120)
 			cooldown = FALSE
 		waaagh -= 100
 	else

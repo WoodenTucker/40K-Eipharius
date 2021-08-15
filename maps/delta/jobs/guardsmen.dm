@@ -541,7 +541,16 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+			U.verbs -= list(
+			/mob/living/carbon/human/proc/regimentselection,
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
+			src.rage = null
+			src.lust = null
+			src.decay = null
+			src.intrigue = null //kriegers by lore are unable to be heretics or so says krieger young woman on discord.
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
@@ -582,7 +591,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)

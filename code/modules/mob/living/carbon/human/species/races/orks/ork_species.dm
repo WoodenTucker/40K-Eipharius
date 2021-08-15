@@ -44,12 +44,12 @@
 
 /mob/living/carbon/human/ork/Life()
 	..()
-	var/regen = 0.5
+	var/regen = 0.25
 	if(max_waaagh > 0)
 		if(inspired)
-			regen = 2
+			regen = 1
 		else
-			regen = 0.5
+			regen = 0.25
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
 
