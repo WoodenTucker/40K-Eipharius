@@ -76,16 +76,12 @@
 	src.icon_state = "body_scanner_0"
 	return
 
-/obj/machinery/bodyscanner/attackby(obj/item/grab/normal/G, user as mob)
+/obj/machinery/bodyscanner/attackby(obj/item/grab/normal/G, mob/user)
 	if(!istype(G))
 		return ..()
 	if (!ismob(G.affecting))
 		return
-	if (src.occupant)
-		to_chat(user, "<span class='warning'>The scanner is already occupied!</span>")
-		return
-	if (G.affecting.abiotic())
-		to_chat(user, "<span class='warning'>Subject cannot have abiotic items on.</span>")
+	if(!can_enter(G.affecting, user))
 		return
 	var/mob/M = G.affecting
 	M.forceMove(src)
@@ -98,22 +94,17 @@
 	qdel(G)
 
 //Like grap-put, but for mouse-drop.
-/obj/machinery/bodyscanner/MouseDrop_T(var/mob/target, var/mob/user)
+/obj/machinery/bodyscanner/MouseDrop_T(mob/target, mob/user)
 	if(!istype(target))
 		return
 	if (!CanMouseDrop(target, user))
 		return
-	if (src.occupant)
-		to_chat(user, "<span class='warning'>The scanner is already occupied!</span>")
-		return
-	if (target.abiotic())
-		to_chat(user, "<span class='warning'>The subject cannot have abiotic items on.</span>")
-		return
-	if (target.buckled)
-		to_chat(user, "<span class='warning'>Unbuckle the subject before attempting to move them.</span>")
+	if(!can_enter(target))
 		return
 	user.visible_message("<span class='notice'>\The [user] begins placing \the [target] into \the [src].</span>", "<span class='notice'>You start placing \the [target] into \the [src].</span>")
 	if(!do_after(user, 30, src))
+		return
+	if(!can_enter(target))
 		return
 	var/mob/M = target
 	M.forceMove(src)
@@ -123,6 +114,18 @@
 	for(var/obj/O in src)
 		O.forceMove(loc)
 	src.add_fingerprint(user)
+
+/obj/machinery/bodyscanner/proc/can_enter(mob/target, mob/user)
+	if (src.occupant)
+		to_chat(user, "<span class='warning'>The scanner is already occupied!</span>")
+		return FALSE
+	if (target.abiotic())
+		to_chat(user, "<span class='warning'>The subject cannot have abiotic items on.</span>")
+		return FALSE
+	if (target.buckled)
+		to_chat(user, "<span class='warning'>Unbuckle the subject before attempting to move them.</span>")
+		return FALSE
+	return TRUE
 
 /obj/machinery/bodyscanner/ex_act(severity)
 	switch(severity)
