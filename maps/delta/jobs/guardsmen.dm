@@ -542,11 +542,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			U.verbs -= list(
-			/mob/living/carbon/human/proc/regimentselection,
-			/mob/living/carbon/human/proc/khorne,
-			/mob/living/carbon/human/proc/nurgle,
-			/mob/living/carbon/human/proc/slaanesh,
-			/mob/living/carbon/human/proc/tzeentch) //kriegers by lore are unable to be heretics or so says krieger young woman on discord.
+			/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
