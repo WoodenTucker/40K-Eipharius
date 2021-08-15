@@ -546,7 +546,7 @@ Begin Warhammer loadouts
 			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
-			/mob/living/carbon/human/proc/tzeentch)
+			/mob/living/carbon/human/proc/tzeentch) //kriegers by lore are unable to be heretics or so says krieger young woman on discord.
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
