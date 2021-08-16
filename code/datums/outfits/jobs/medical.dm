@@ -135,7 +135,7 @@
 
 /decl/hierarchy/outfit/job/medical/paramedic
 	name = OUTFIT_JOB_NAME("combat medicae")
-	uniform = /obj/item/clothing/under/guard/uniform
+	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
