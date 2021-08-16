@@ -74,6 +74,7 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
+	src.verbs -= /mob/living/carbon/human/proc/chapterselection
 	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain", "Blood Ravens") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
 

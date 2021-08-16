@@ -36,7 +36,7 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.set_quirk(new/datum/quirk/dead_inside)()) //astartes wouldn't get scared of a little bit of blood.
+		H.set_quirk(new/datum/quirk/dead_inside)() //astartes wouldn't get scared of a little bit of blood.
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
@@ -76,6 +76,7 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
+	src.verbs -= /mob/living/carbon/human/proc/chapterselection
 	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain", "Blood Ravens") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
 
