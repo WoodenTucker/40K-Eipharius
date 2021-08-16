@@ -18,8 +18,8 @@
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels,)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
+			            access_all_personal_lockers, access_maint_tunnels, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory
 			            )
 
 	equip(var/mob/living/carbon/human/H)
@@ -292,7 +292,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/melee/baton
+	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team/delta
@@ -309,7 +309,6 @@ Begin Warhammer loadouts
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
 /decl/hierarchy/outfit/job/redsoldier/engineer
 	r_pocket = /obj/item/ammo_magazine/mc9mmt/machinepistol
 	l_pocket = /obj/item/wirecutters
@@ -342,7 +341,7 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/redsoldier/sentry
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	suit = /obj/item/clothing/suit/armor/sentry/red
-	head = /obj/item/clothing/head/helmet/sentryhelm/red
+	head = /obj/item/clothing/head/legacy/sentryhelm/red
 	belt = /obj/item/melee/trench_axe
 	suit_store = /obj/item/gun/projectile/automatic/mg08
 	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 3, /obj/item/grenade/smokebomb = 1)
@@ -355,7 +354,7 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/redsoldier/flamer
 	l_ear = /obj/item/device/radio/headset/red_team/all
 	suit = /obj/item/clothing/suit/fire/red
-	head = /obj/item/clothing/head/helmet/redhelmet/fire
+	head = /obj/item/clothing/head/legacy/redhelmet/fire
 	belt = /obj/item/gun/projectile/automatic/flamer
 	suit_store = /obj/item/melee/trench_axe
 	r_pocket = /obj/item/grenade/fire
@@ -409,17 +408,17 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/redsoldier/scout
 	suit = /obj/item/clothing/suit/child_coat/red
 	l_ear = /obj/item/device/radio/headset/red_team/all
-	uniform = /obj/item/clothing/under/child_jumpsuit/warfare/red
+	uniform = /obj/item/clothing/under/child_jumpsuit/warfare
 	shoes = /obj/item/clothing/shoes/child_shoes
 	gloves = null
 	r_pocket = /obj/item/device/binoculars
 	backpack_contents = list(/obj/item/grenade/smokebomb = 1)
 
+
 /decl/hierarchy/outfit/job/redsoldier/scout/equip()
 	if(aspect_chosen(/datum/aspect/nightfare))
 		backpack_contents += list(/obj/item/ammo_box/flares = 1 , /obj/item/torch/self_lit = 1)
 	..()
-
 
 /decl/hierarchy/outfit/job/kroot
 	uniform = /obj/item/clothing/under/rank/kroot
@@ -517,7 +516,7 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger", "Catachan") //lists all possible chapters
+	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
 	switch(chapterchoice)
@@ -542,7 +541,8 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+			U.verbs -= list(
+			/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
@@ -583,7 +583,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -600,6 +600,31 @@ Begin Warhammer loadouts
 
 			W.icon_state = "tagred"
 			W.assignment = "Catachan"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+		if("Valhallan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.assignment = "Valhallan"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)

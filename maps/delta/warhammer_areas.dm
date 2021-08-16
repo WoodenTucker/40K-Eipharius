@@ -1316,3 +1316,10 @@ Area basic template
 	icon_state = "tauship"
 	requires_power = 0
 	dynamic_lighting = 1
+
+
+/area/cadiaoutpost/oa/krootship
+	name = "Kroot Ship"
+	icon_state = "green"
+	requires_power = 0
+	dynamic_lighting = 1

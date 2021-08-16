@@ -293,6 +293,8 @@ Pilgrim Fate System
 	/obj/item/stack/thrones = 2,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/gun/projectile/talon/adept = 1,
+	/obj/item/ammo_magazine/c45m = 2,
 
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR

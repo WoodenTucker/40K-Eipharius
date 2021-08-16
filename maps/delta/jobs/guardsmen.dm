@@ -516,7 +516,7 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger", "Catachan") //lists all possible chapters
+	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
 	switch(chapterchoice)
@@ -541,7 +541,8 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+			U.verbs -= list(
+			/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
@@ -582,7 +583,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -599,6 +600,31 @@ Begin Warhammer loadouts
 
 			W.icon_state = "tagred"
 			W.assignment = "Catachan"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+		if("Valhallan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.assignment = "Valhallan"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
