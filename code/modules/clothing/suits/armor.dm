@@ -480,72 +480,53 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/ravenguard
-	name = "Raven Guard Power Armor"
-	desc = "The holy black armor of the Raven Guard."
-	icon_state = "rg_lib"
-	item_state = "rg_lib"
-	str_requirement = 25
-	canremove = 0
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
-
-/obj/item/clothing/suit/armor/ravenguard/chaplain
-	name = "Raven Guard Chaplain Armor"
-	desc = "The holy black armor of a Chaplain of the Raven Guard."
-	icon_state = "rg_chap"
-	item_state = "rg_chap"
-/obj/item/clothing/suit/armor/smurfs
-	name = "Ultramarine Power Armor"
-	desc = "The holy armor of the Ultramarines."
+/obj/item/clothing/suit/armor/astartes
+	name = "Adeptus Astartes Power armor"
 	icon_state = "umpowerarmor"
 	item_state = "umpowerarmor"
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	armor = list(melee = 90, bullet = 90, laser = 90, energy = 90, bomb = 90, bio = 90, rad = 100)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
-/obj/item/clothing/suit/armor/smurfs/chaplain
+/obj/item/clothing/suit/armor/astartes/ravenguard
+	name = "Raven Guard Power Armor"
+	desc = "The holy black armor of the Raven Guard."
+	icon_state = "rg_lib"
+	item_state = "rg_lib"
+
+/obj/item/clothing/suit/armor/astartes/ravenguard/chaplain
+	name = "Raven Guard Chaplain Armor"
+	desc = "The holy black armor of a Chaplain of the Raven Guard."
+	icon_state = "rg_chap"
+	item_state = "rg_chap"
+/obj/item/clothing/suit/armor/astartes/smurfs
+	name = "Ultramarine Power Armor"
+	desc = "The holy armor of the Ultramarines."
+	icon_state = "umpowerarmor"
+	item_state = "umpowerarmor"
+
+/obj/item/clothing/suit/armor/astartes/smurfs/chaplain
 	name = "Ultramarine Chaplain Power Armor"
 	desc = "The holy armor of the Ultramarines."
 	icon_state = "um_chap"
 	item_state = "um_chap"
 
-/obj/item/clothing/suit/armor/sallys
+/obj/item/clothing/suit/armor/astartes/sallys
 	name = "Salamander Power Armor"
 	desc = "The holy armor of the Salamanders"
 	icon_state = "sl_lib"
 	item_state = "sl_lib"
-	str_requirement = 25
-	canremove = 0
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
-
-/obj/item/clothing/suit/armor/bloodraven
+/obj/item/clothing/suit/armor/astartes/bloodraven
 	name = "Blood Raven Power Armor"
 	desc = "The holy sanguine armor of the Blood Ravens."
 	icon_state = "brpowerarmor"
 	item_state = "brpowerarmor"
-	str_requirement = 25
-	canremove = 0
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 99, bullet = 99, laser = 99, energy = 99, bomb = 99, bio = 99, rad = 100)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 /obj/item/clothing/suit/armor/agent
 	name = "agent's fine armor"
