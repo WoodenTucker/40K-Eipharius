@@ -27,7 +27,7 @@
 	blood_color = "#4c0377"
 
 /datum/species/tau/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.age = rand(min_age,max_age)//Random age for kiddos.
+	H.age = rand(20,35)//Random age for kiddos.
 	if(H.f_style)//tau don't get beards.
 		H.f_style = "Shaved"
 	to_chat(H, "<big><span class='warning'>You wake up after a long flight to find yourself in Imperial space. Go to your Tau tab and stretch your muscles.</span></big>")

@@ -74,13 +74,14 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
+	src.verbs -= /mob/living/carbon/human/proc/chapterselection
 	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain", "Blood Ravens") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
 		if("Raven Guard")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/ravenguard, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ravenguard, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ravenhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -96,8 +97,8 @@
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Raven Guard Chaplain")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/ravenguard/chaplain, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ravenguard/chaplain, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ravenhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -113,8 +114,8 @@
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarines")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/smurfs, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/smurfhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/smurfs, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/smurfhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/smurfs, slot_back)
@@ -130,8 +131,8 @@
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Salamanders")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/sallys, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallyhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/sallys, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/sallyhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -147,8 +148,8 @@
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarine Chaplain")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/smurfs/chaplain, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/chaplainhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/smurfs/chaplain, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/chaplainhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -164,8 +165,8 @@
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Blood Ravens")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bloodraven, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/brhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/bloodraven, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/brhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/br, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
