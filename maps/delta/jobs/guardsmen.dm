@@ -258,8 +258,8 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/ig/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/sgt
+	uniform = /obj/item/clothing/under/cadian_uniform
+	suit = /obj/item/clothing/suit/armor/cadiansgt
 	glasses = /obj/item/clothing/glasses/sunglasses
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -415,7 +415,7 @@ Begin Warhammer loadouts
 			var/troopnum = rand(1,50000)
 			src.name = "Troop [troopnum]"
 			src.real_name = "Troop [troopnum]"
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
@@ -444,7 +444,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
@@ -470,7 +470,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Catachan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/camo, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
@@ -495,7 +495,7 @@ Begin Warhammer loadouts
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 		if("Valhallan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
@@ -541,9 +541,8 @@ Begin Warhammer loadouts
 			var/troopnum = rand(1,50000)
 			src.name = "Troop [troopnum]"
 			src.real_name = "Troop [troopnum]"
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/kriegsgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
@@ -569,11 +568,10 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/cadiansgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -595,11 +593,10 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Catachan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/camo, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/catachansgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -620,11 +617,10 @@ Begin Warhammer loadouts
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 		if("Valhallan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallasgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
