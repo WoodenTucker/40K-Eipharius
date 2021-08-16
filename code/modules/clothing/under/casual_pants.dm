@@ -100,3 +100,10 @@
 	name = "baggy camo pants"
 	desc = "A pair of woodland camouflage pants. Probably not the best choice for space."
 	icon_state = "baggy_camopants"
+
+// Catachan Pants
+
+/obj/item/clothing/under/casual_pants/catachan
+	name = "Catachan Battle Shorts"
+	desc = "Catachan fear no temperature, no bullet, they don't need shirt, They're Catachan Regiment."
+	icon_state = "camopants"

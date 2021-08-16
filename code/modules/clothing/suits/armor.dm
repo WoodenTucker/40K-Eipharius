@@ -403,10 +403,40 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/sgt
-	name = "Guard Sergeant's Armor"
-	desc = "The well-worn armor of an Imperial Guard Sergeant."
+/obj/item/clothing/suit/armor/cadiansgt
+	name = "Cadian Sergeant's Armor"
+	desc = "The well-worn armor of an Cadian Regiment Sergeant."
 	icon_state = "fharmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/catachansgt
+	name = "Catachan Sergeant's Vest"
+	desc = "Flak vests worn by renowned Catachan Sergeant."
+	icon_state = "Catachan_Vest"
+	item_state = "Catachan_Vest"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/valhallasgt
+	name = "valhallan Sergeant's Greatcoat"
+	desc = "An veteran sergeant's coat, worn but glorious."
+	icon_state = "valarmor"
+	item_state = "valarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/kriegsgt
+	name = "Krieg Sergeant's Battlecoat"
+	desc = "Ornated in red waffenfarbe and silverish lining, the Battlecoat represent veterancy and status. Worn by only the Krieg's fearless sergeant."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
