@@ -207,9 +207,9 @@
 	item_state = "ba_suit"
 	worn_state = "barny"
 
-/obj/item/clothing/under/rank/krieger
-	name = "krieg fatigues"
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+/obj/item/clothing/under/rank/krieg_uniform
+	name = "krieg Battle Uniform"
+	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment."
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
@@ -218,10 +218,21 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/under/guard_uniform
-	name = "Imperial Guard uniform"
-	desc = "The uniform of those who fight in His name."
+/obj/item/clothing/under/cadian_uniform
+	name = "Cadian Battle Dress Uniform"
+	desc = "The uniform of the brave Cadian Regiment."
 	icon_state = "guard_s"
 	item_state = "guard"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/rank/valhallan_uniform
+	name = "Valhalla Battle Uniform"
+	desc = "The uniform made out of their planetary predator's furs, Durable and warm, Made for the cold warriors of Valhalla Regiment."
+	icon_state = "krieg"
+	item_state = "krieg"
+	worn_state = "krieg"
+	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
