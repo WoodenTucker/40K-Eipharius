@@ -86,7 +86,7 @@
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch
+		/mob/living/carbon/human/proc/tzeentch,
 		/mob/living/carbon/human/proc/sergeantselection,)
 
 

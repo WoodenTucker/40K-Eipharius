@@ -357,8 +357,6 @@
 	zone_sel = new /obj/screen/zone_sel( null )
 	zone_sel.selecting = pick("chest", "head")
 	warfare_faction = RED_TEAM
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/redsoldier)
-	outfit.equip(src)
 	a_intent = I_HURT
 	npc_attack_sound = list('sound/voice/emotes/skinless1.ogg','sound/voice/emotes/skinless2.ogg','sound/voice/emotes/skinless3.ogg','sound/voice/emotes/skinless4.ogg','sound/voice/emotes/skinless5.ogg',)
 
