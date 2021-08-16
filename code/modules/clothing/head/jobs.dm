@@ -158,6 +158,23 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/valushanka
+	name = "valhallan ushanka"
+	desc = "Perfect for winter in Valhalla, da?"
+	icon_state = "valshanka2"
+	var/icon_state_up = "valshanka"
+	flags_inv = HIDEEARS|BLOCKHEADHAIR
+	cold_protection = HEAD
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/valushanka/attack_self(mob/user as mob)
+	if(icon_state == initial(icon_state))
+		icon_state = icon_state_up
+		to_chat(user, "You raise the ear flaps on the ushanka.")
+	else
+		icon_state = initial(icon_state)
+		to_chat(user, "You lower the ear flaps on the ushanka.")
+
 /obj/item/clothing/head/helmet/guardhelmet/catachan
     name = "Catachan Headband"
     desc = "Sometimes protects your head from bullets and blows."
