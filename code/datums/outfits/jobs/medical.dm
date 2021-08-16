@@ -135,7 +135,7 @@
 
 /decl/hierarchy/outfit/job/medical/paramedic
 	name = OUTFIT_JOB_NAME("combat medicae")
-	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
+	uniform = /obj/item/clothing/under/guard/uniform
 	suit = /obj/item/clothing/suit/armor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -143,11 +143,13 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/storage/belt/medical/full
 	head = /obj/item/clothing/head/helmet/medicae
+	r_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/cell/lasgun
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = null
 	r_ear = null
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
