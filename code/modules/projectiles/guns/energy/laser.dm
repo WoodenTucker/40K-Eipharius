@@ -236,13 +236,6 @@ obj/item/gun/energy/retro
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)
 
-/obj/item/gun/energy/las/lasgun/lascarbine
-	name = "lascarbine"
-	desc = "A modified version of the standard-issue rifle. It costs more to shoot, but it's easy to carry and can be shot easier with one hand. Given to scout units of the Astra Militarum."
-	one_hand_penalty = 1
-	charge_cost = 70
-	w_class = ITEM_SIZE_NORMAL
-
 /obj/item/gun/energy/las/lasgun/luscius
 	name = "lucius pattern lasgun"
 	desc = "The standard-issue rifle of the Death Korps of Krieg."

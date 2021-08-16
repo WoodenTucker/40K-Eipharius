@@ -88,8 +88,7 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
 		/mob/living/carbon/human/proc/sergeantselection,)
-
-
+		
 /datum/job/ig/commissar
 	title = "Commissar"
 	supervisors = "the astartes envoy"
@@ -474,7 +473,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -499,7 +498,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)

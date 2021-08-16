@@ -62,11 +62,6 @@
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels,)
-//	alt_titles = list(
-//		"Surgeon" = /decl/hierarchy/outfit/job/medical/doctor/surgeon,
-//		"Emergency Physician" = /decl/hierarchy/outfit/job/medical/doctor/emergency_physician,
-//		"Nurse" = /decl/hierarchy/outfit/job/medical/doctor/nurse,
-//		"Virologist" = /decl/hierarchy/outfit/job/medical/doctor/virologist)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 
 	equip(var/mob/living/carbon/human/H)
@@ -108,7 +103,6 @@
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
-	//alt_titles = list("Pharmacist")
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 
 
@@ -143,12 +137,14 @@
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
 
 	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
 		..()
+		H.fully_replace_character_name("Biologis [current_name]")
 		H.add_stats(rand(6,14), rand(8,14), rand(10,13), rand(15,20))
 		H.add_skills(rand(0,5),rand(0,5),rand(6,10),rand(3,6),10)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis, sometimes known as a Magos Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
 
 /datum/job/psychiatrist
 	title = "Psychiatrist"
@@ -163,8 +159,7 @@
 	selection_color = "#633d63"
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_psychiatrist)
 	minimal_access = list(access_medical, access_medical_equip, access_psychiatrist)
-//	alt_titles = list("Psychologist" = /decl/hierarchy/outfit/job/medical/psychiatrist/psychologist)
-	outfit_type = /decl/hierarchy/outfit/job/medical/psychiatrist
+	outfit_type = null
 
 /datum/job/Paramedic
 	title = "Combat Medicae"
@@ -182,7 +177,6 @@
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
-//	alt_titles = list("Emergency Medical Technician" = /decl/hierarchy/outfit/job/medical/paramedic/emt)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 
 	equip(var/mob/living/carbon/human/H)
