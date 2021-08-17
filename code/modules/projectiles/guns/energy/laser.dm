@@ -238,7 +238,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun/luscius
 	name = "Lucius No.98 Lasgun"
-	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in higher than average 21 megathoule while using standard Power cell, resulting in a more powerful shot but more likely to overheat."
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
 	icon_state = "luscius"
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
