@@ -260,7 +260,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun/tinkered
 	name = "Kantrael M36 'Veteran Configuration' Lasgun"
-	desc = "This M36 have been upgraded to consume less power and discharge higher powered shots, Usually found in the hands of Cadian Veterans."
+	desc = "This M36 has been upgraded to consume less power and discharge higher powered shots, Usually found in the hands of Cadian Veterans."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
