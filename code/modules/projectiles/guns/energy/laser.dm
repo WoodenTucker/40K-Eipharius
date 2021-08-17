@@ -214,8 +214,8 @@ obj/item/gun/energy/retro
 //Las weapons
 
 /obj/item/gun/energy/las/lasgun
-	name = "lasgun"
-	desc = "The standard-issue rifle of the Astra Militarum as well as one of the most common weapons found in the Imperium of Man."
+	name = "Kantrael M36 Lasgun"
+	desc = "The M36 is Cadian-made Lasgun, it is one of the most common and less unique Lasgun that can be found throughout the Imperial Arsenal due to its cheap price and ease to produce."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -237,8 +237,8 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/luscius
-	name = "lucius pattern lasgun"
-	desc = "The standard-issue rifle of the Death Korps of Krieg."
+	name = "Lucius No.98 Lasgun"
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
 	icon_state = "luscius"
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -259,13 +259,13 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
-	name = "++ lasgun"
-	desc = "The standard-issue rifle of the Astra Militarum as well as one of the most common weapons found in the Imperium of Man."
+	name = "Kantrael M36 'Veteran Configuration' Lasgun"
+	desc = "This M36 has been upgraded to consume less power and discharge higher powered shots, Usually found in the hands of Cadian Veterans."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
+	force = 14
 	one_hand_penalty = 2
 	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -283,8 +283,8 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
-	name = "Las-Carbine"
-	desc = "An upgraded, lighter form of the traditional lasgun."
+	name = "Catachan Mark 4 Lascarbine"
+	desc = "The Catachan modified the standard Kantrael by having the stock cut in half, reduced receiver and barrel length for better close-quarter engagements and mobility."
 	icon_state = "lascar"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -307,8 +307,8 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/laspistol
-	name = "laspistol"
-	desc = "The standard-issue sidearm of the Astra Militarum."
+	name = "Kantrael MG Defender Laspistol"
+	desc = "Cadian made service laspistol for Cadian Regiment Officers, Non-Commissioned and Mechanicum Retinue."
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE

@@ -113,6 +113,15 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
+/obj/item/clothing/mask/gas/commissar
+	name = "commissar mask"
+	desc = "A close-fitting tactical mask given to Commissars incharge of the Death Korps of Krieg."
+	icon_state = "commask"
+	item_state = "commask"
+	siemens_coefficient = 0.7
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+
 /obj/item/clothing/mask/gas/techpriest
 	name = "mechanized visage"
 	desc = "Staring into the metallic visage its hard to believe this being is human..."
