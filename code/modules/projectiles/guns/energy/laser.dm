@@ -252,7 +252,7 @@ obj/item/gun/energy/retro
 	charge_cost = 75
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "lasgun-wielded"
+	wielded_item_state = "luscius-wielded"
 
 	firemodes = list(
 		list(mode_name="semiauto",     burst=1,     fire_delay=0, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
