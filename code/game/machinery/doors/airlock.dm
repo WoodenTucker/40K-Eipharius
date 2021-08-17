@@ -636,6 +636,15 @@
 	icon_state = "door_locked"
 	locked = 1
 
+/obj/machinery/door/airlock/imperiumdoor
+	name = "Minor Imperialis Doorway"
+	desc = "A solemn door with an ornate archway. It is made with gothic stone, copper mechanations, and human bones."
+	icon = 'icons/obj/doors/imperiumdoor.dmi'
+
+/obj/machinery/door/airlock/highsecurity/imperiumdoor
+	name = "Imperialis Doorway"
+	desc = "A monstrous door with an ornate archway. It is made with gothic stone, copper mechanations, and human bones. It proudly displays the Imperium's iconography on its front and is lathered in holy Mechanicus oils, it also smells of pure Ecclesiarchal incense."
+	icon = 'icons/obj/doors/imperiumdoor.dmi'
 
 /*
 About the new airlock wires panel:

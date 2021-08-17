@@ -375,3 +375,20 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
+
+/obj/item/clothing/head/senturban
+	name = "ornate turban"
+	desc = "A turban woven from the finest of fabrics, plucked from the very depths of whatever vault your Trader may or may not have robbed. Fit for a king, or in this case a Seneschal."
+	icon_state = "senturban"
+	item_state = "senturban"
+	cold_protection = HEAD
+	flags_inv = BLOCKHEADHAIR
+
+/obj/item/clothing/head/tradertricorn
+	name = "fanciful tricorn"
+	desc = " A fanciful, slightly armored, tricorn sold to the Rogue Trader by a back-alley xeno on Ithaka. Legend says it was worn by the Chapter Master of the Iron Snakes before he lost it in a battle with an ancient kraretyer, or perhaps that was just a sales pitch."
+	icon_state = "tradertricorn"
+	item_state = "tradertricorn"
+	cold_protection = HEAD
+	armor = list(melee = 10, bullet = 15, laser = 15,energy = 15)
+
