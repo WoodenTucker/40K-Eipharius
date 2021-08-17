@@ -5,7 +5,7 @@ dist: precise
 env:
     global:
     - BYOND_MAJOR="514"
-    - BYOND_MINOR="1661"
+    - BYOND_MINOR="1561"
     - DM_BUILDFILE="IS12Warfare.dme"
     - SPACEMAN_DMM_VERSION=suite-1.4
 
