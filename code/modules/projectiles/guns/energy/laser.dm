@@ -284,7 +284,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	name = "Catachan Mark 4 Lascarbine"
-	desc = "The Catachan modified the standard Kantrael by having it stock cutted in half, reduced receiver and barrel length for better close-quarter engagements and mobility."
+	desc = "The Catachan modified the standard Kantrael by having the stock cut in half, reduced receiver and barrel length for better close-quarter engagements and mobility."
 	icon_state = "lascar"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
