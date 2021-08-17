@@ -215,7 +215,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun
 	name = "Kantrael M36 Lasgun"
-	desc = "The M36 is Cadian-made Lasgun, it is one of the most common and less unique Lasgun that can be found throughout the Imperial Arsenal due to it cheap price and ease to produce."
+	desc = "The M36 is Cadian-made Lasgun, it is one of the most common and less unique Lasgun that can be found throughout the Imperial Arsenal due to its cheap price and ease to produce."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
