@@ -57,7 +57,8 @@
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
 			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
+			            )
 
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
@@ -76,7 +77,7 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.get_idcard()?.access = = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Sgt. [current_name]")
@@ -443,6 +444,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
@@ -575,7 +577,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles/elite, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
