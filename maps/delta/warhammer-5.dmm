@@ -78,6 +78,7 @@
 "bz" = (/obj/structure/railing{icon_state = "railing0"; dir = 1},/turf/simulated/floor/exoplanet/grass,/area/cadiaoutpost/oa/krootship)
 "bA" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/exoplanet/grass,/area/cadiaoutpost/oa/krootship)
 "bB" = (/obj/structure/flora/ausbushes/stalkybush,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/exoplanet/grass,/area/cadiaoutpost/oa/krootship)
+"bC" = (/obj/effect/landmark/map_data{height = 5},/turf/simulated/floor/tiled/dark,/area/centcom)
 "bJ" = (/obj/effect/floor_decal/carpet/red{dir = 1},/turf/simulated/floor/carpet/red,/area/centcom)
 "bO" = (/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/obj/effect/floor_decal/carpet/red{dir = 1},/turf/simulated/floor/carpet/red,/area/centcom)
 "bU" = (/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red{dir = 1},/obj/effect/floor_decal/carpet/red{dir = 5},/turf/simulated/floor/carpet/red,/area/centcom)
@@ -441,7 +442,7 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEYExKRGRGtuygRGtuRGygRGRGRGzdYEzzzHzHIgIgIgZcUkUkUkzTYEhnIKRGvOBtCODbDhDbDhDbDhCOBtvOhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYENLNLNLYENLNLNLYEUVUVYEYEYEYEYEYENLNLNLYEDIDIYEYEYEDPIKRGvOyAFkFkFkFkFkFkFkFkDWvOhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEuhRGRGRGRGuhRGRGRGRGuhRGRGRGRGRGRGuhRGRGRGRGRGRGuhRGRGRGRGRGRGuhRGRGEFRGuhRGNLRGRGRGvOEKFkETEXETEXETEXFkFyvOhnoyYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGEwFkFkFkFkFkFkFkFkFkFkEwhnhnYEvE
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGbCRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGEwFkFkFkFkFkFkFkFkFkFkEwhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGFPRGRGRGEwFkFkETEXETEXETEXFkFkEwhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYERGRGRGRGRGRGRGRGygRGRGRGRGygRGRGRGRGygRGRGRGRGRGRGygRGgbRGRGFRRGRGRGRGRGygRGNLRGRGRGvOEKFkFkFkFkFkFkFkFkFyvOhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEGcGkGcGnGnGkHcHcHcGkGcYEYEYEYEYEYEYEYEYEYENLNLNLNLNLYEHsVgYEHuHuYEVKIaIoVKVKYEYEYEIPIKRGvOyAFkETEXETEXETEXFkDWvOhnhnYEvE
