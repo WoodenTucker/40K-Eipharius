@@ -257,31 +257,21 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/ig/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
 	glasses = /obj/item/clothing/glasses/iggoggles
-	mask = /obj/item/clothing/mask/gas/half/guardsmen
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/cadiansgt
-	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/guardsman
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	belt = /obj/item/melee/mercycs
-	l_ear = null
-	r_pocket = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
+	head = null
+	uniform = null
+	shoes = null
+	l_pocket = null
+	suit = null
+	gloves = null
+	back = null
 	pda_slot = null
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel/warfare
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	backpack_contents = list(
-		/obj/item/ammo_magazine/box/a556/mg08 = 2,
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,
-)
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = null
+	l_hand = null
+	l_ear = null
+	r_ear = null
+	belt = null
+
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/enforcer
