@@ -496,3 +496,11 @@
 	item_state = "tajblind_meson"
 	off_state = "tajblind_meson"
 	body_parts_covered = EYES
+/obj/item/clothing/glasses/iggoggles
+	name = "imperial guard goggles"
+	desc = "Tactical Goggles made by the Imperial Guard for visiblity in the dark, and to stop harmful gas from hurting your eyes!"
+	icon_state = "iggoggles"
+	item_state = "iggoggles"
+	origin_tech = list(TECH_MAGNET = 2)
+	darkness_view = 7
+	see_invisible = SEE_INVISIBLE_NOLIGHTING

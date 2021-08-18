@@ -88,7 +88,7 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
 		/mob/living/carbon/human/proc/sergeantselection,)
-		
+
 /datum/job/ig/commissar
 	title = "Commissar"
 	supervisors = "the astartes envoy"
@@ -256,10 +256,14 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
+	glasses = /obj/item/clothing/glasses/iggoggles
+	mask = /obj/item/clothing/mask/gas/half/guardsmen
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	glasses = /obj/item/clothing/glasses/sunglasses
+	uniform = /obj/item/clothing/under/color/brown
+	suit = /obj/item/clothing/suit/armor/sgt
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	belt = /obj/item/melee/mercycs
