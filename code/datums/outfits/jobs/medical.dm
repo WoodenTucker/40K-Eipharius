@@ -102,7 +102,6 @@
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
-	/obj/item/clothing/glasses/cadiangoggles = 1,
 	)
 	suit_store = /obj/item/gun/energy/las/lasgun
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
