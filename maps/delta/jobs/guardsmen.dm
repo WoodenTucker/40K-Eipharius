@@ -86,8 +86,9 @@
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch,
+		/mob/living/carbon/human/proc/tzeentch
 		/mob/living/carbon/human/proc/sergeantselection,)
+
 
 /datum/job/ig/commissar
 	title = "Commissar"
@@ -256,14 +257,10 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
-	glasses = /obj/item/clothing/glasses/iggoggles
-	mask = /obj/item/clothing/mask/gas/half/guardsmen
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/guardsman
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	belt = /obj/item/melee/mercycs
@@ -452,6 +449,8 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -477,7 +476,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -502,7 +501,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -546,15 +545,15 @@ Begin Warhammer loadouts
 			src.real_name = "Troop [troopnum]"
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/kriegsgt, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/krieg, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
@@ -565,7 +564,7 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Krieg Sergeant"
+			W.assignment = "Krieg Watchmaster"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
@@ -577,10 +576,14 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
+			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangogglesELITE, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
@@ -604,8 +607,9 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
@@ -628,8 +632,9 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
