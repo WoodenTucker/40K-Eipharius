@@ -65,8 +65,9 @@
 	w_class = ITEM_SIZE_SMALL
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 55, rad = 0)
 
-/obj/item/clothing/mask/gas/half/guardsmen
-	name = "imperial guard face mask"
+/obj/item/clothing/mask/gas/half/cadianrespirator
+	name = "Mark IXc Rebreather"
+	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
 	icon_state = "ig_halfgas"
 	item_state = "ig_halfgas"
 
@@ -105,8 +106,8 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
 /obj/item/clothing/mask/gas/krieg
-	name = "krieg mask"
-	desc = "A close-fitting tactical mask standard in the Death Korps of Krieg."
+	name = "Mark IXb Gas Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
 	icon_state = "kriegmask"
 	item_state = "kriegmask"
 	siemens_coefficient = 0.7

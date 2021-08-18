@@ -496,9 +496,16 @@
 	item_state = "tajblind_meson"
 	off_state = "tajblind_meson"
 	body_parts_covered = EYES
-/obj/item/clothing/glasses/iggoggles
-	name = "imperial guard goggles"
-	desc = "Tactical Goggles made by the Imperial Guard for visiblity in the dark, and to stop harmful gas from hurting your eyes!"
+
+/obj/item/clothing/glasses/cadiangoggles
+	name = "Mark XIc Visor"
+	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."
+	icon_state = "iggoggles"
+	item_state = "iggoggles"
+
+/obj/item/clothing/glasses/cadiangogglesELITE
+	name = "Mark XI/NV Visor"
+	desc = "The Mark XI/NV Visor are improved upon the standard Mark XIc Visor, offering Nightvision. Usually issued to Kasrkin and Cadian Veterans."
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 	origin_tech = list(TECH_MAGNET = 2)
