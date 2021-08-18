@@ -108,6 +108,7 @@ area/space/atmosalert()
 /area/chapel
 	name = "Chapel"
 	icon_state = "chapel"
+	requires_power = 0
 
 /area/centcom/specops
 	name = "Centcom Special Ops"
