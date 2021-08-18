@@ -496,9 +496,9 @@
 	item_state = "tajblind_meson"
 	off_state = "tajblind_meson"
 	body_parts_covered = EYES
-/obj/item/clothing/glasses/iggoggles
-	name = "imperial guard goggles"
-	desc = "Tactical Goggles made by the Imperial Guard for visiblity in the dark, and to stop harmful gas from hurting your eyes!"
+/obj/item/clothing/glasses/cadiangoggles
+	name = "Mark XIc Visor"
+	desc = "Cadian-pattern Helmet, version Tri-dome's visor are designed to provide nightvision, prevent glare and blindness. Usually issued to Kasrkin and Cadian Veterans."
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 	origin_tech = list(TECH_MAGNET = 2)
