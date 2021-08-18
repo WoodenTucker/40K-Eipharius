@@ -31,10 +31,10 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Trooper [H.real_name]")
+		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
@@ -80,7 +80,7 @@
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-		H.fully_replace_character_name("Sgt. [current_name]")
+		H.fully_replace_character_name("Sergeant [current_name]")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
@@ -406,8 +406,8 @@ Begin Warhammer loadouts
 	switch(chapterchoice)
 		if("Krieger")
 			var/troopnum = rand(1,50000)
-			src.name = "Troop [troopnum]"
-			src.real_name = "Troop [troopnum]"
+			src.name = "Guardsman [troopnum]"
+			src.real_name = "Guardsman [troopnum]"
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
@@ -431,7 +431,8 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Krieger"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Krieg Guardsman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
@@ -459,7 +460,8 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Cadian"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Cadian Guardsman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
@@ -485,7 +487,8 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Catachan"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Catachan Guardsman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
@@ -510,7 +513,8 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Valhallan"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Valhallan Guardsman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
@@ -538,8 +542,8 @@ Begin Warhammer loadouts
 	switch(chapterchoice)
 		if("Krieger")
 			var/troopnum = rand(1,50000)
-			src.name = "Troop [troopnum]"
-			src.real_name = "Troop [troopnum]"
+			src.name = "Watchmaster [troopnum]"
+			src.real_name = "Watchmaster [troopnum]"
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/kriegsgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
@@ -562,6 +566,7 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 			W.assignment = "Krieg Watchmaster"
 			W.registered_name = real_name
 			W.update_label()
@@ -591,6 +596,7 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 			W.assignment = "Cadian Sergeant"
 			W.registered_name = real_name
 			W.update_label()
@@ -617,10 +623,12 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 			W.assignment = "Catachan Sergeant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
 		if("Valhallan")
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
@@ -642,6 +650,7 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 			W.assignment = "Valhallan Sergeant"
 			W.registered_name = real_name
 			W.update_label()
