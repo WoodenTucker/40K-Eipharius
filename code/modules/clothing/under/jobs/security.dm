@@ -221,7 +221,7 @@
 /obj/item/clothing/under/cadian_uniform
 	name = "Cadian Battle Dress Uniform"
 	desc = "The uniform of the brave Cadian Regiment."
-	icon_state = "guard_s"
+	icon_state = "guard"
 	item_state = "guard"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
