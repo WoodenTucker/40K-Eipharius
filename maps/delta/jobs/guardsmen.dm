@@ -27,7 +27,7 @@
 		..()
 		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
 		H.add_skills(rand(10,16))
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
