@@ -56,9 +56,8 @@
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory
-			            )
+			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
