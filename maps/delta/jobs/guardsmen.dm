@@ -86,7 +86,7 @@
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch
+		/mob/living/carbon/human/proc/tzeentch,
 		/mob/living/carbon/human/proc/sergeantselection,)
 
 
@@ -257,7 +257,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
-	glasses = /obj/item/clothing/glasses/iggoggles
+	glasses = /obj/item/clothing/glasses/cadiangoggles
 	head = null
 	uniform = null
 	shoes = null
@@ -572,7 +572,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangogglesELITE, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles/elite, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)

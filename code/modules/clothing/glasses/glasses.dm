@@ -503,7 +503,7 @@
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 
-/obj/item/clothing/glasses/cadiangogglesELITE
+/obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XI/NV Visor"
 	desc = "The Mark XI/NV Visor are improved upon the standard Mark XIc Visor, offering Nightvision. Usually issued to Kasrkin and Cadian Veterans."
 	icon_state = "iggoggles"
