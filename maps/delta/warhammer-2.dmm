@@ -183,7 +183,7 @@
 "dA" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/theforest)
 "dB" = (/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/spline/fancy{icon_state = "spline_fancy"; dir = 1},/turf/simulated/floor/stone/chapel,/area/chapel)
 "dC" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/sink{dir = 1; pixel_y = -15},/obj/effect/floor_decal/spline/fancy{icon_state = "spline_fancy"; dir = 1},/obj/item/soap/deluxe,/turf/simulated/floor/stone/chapel,/area/chapel)
-"dD" = (/turf/simulated/floor/stone/chapel,/obj/effect/floor_decal/turf/brick,/turf/unsimulated/window/reinforced/reliquary{icon_state = "rwindow"; dir = 4},/area/chapel)
+"dD" = (/turf/simulated/floor/stone/chapel,/obj/effect/floor_decal/turf/brick,/obj/structure/window/reinforced/reliquary{icon_state = "rwindow"; dir = 4},/area/chapel)
 "dE" = (/obj/effect/floor_decal/turf/brick,/obj/structure/table/steel,/obj/effect/floor_decal/spline/plain{icon_state = "spline_plain"; dir = 1},/obj/item/toy/plushie,/turf/simulated/floor/stone/chapel,/area/chapel)
 "dF" = (/obj/structure/closet/emcloset,/obj/effect/floor_decal/turf/splate,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/maintenance/west)
 "dG" = (/obj/structure/sign/stainedglass3{pixel_y = 32},/turf/simulated/floor/snow,/area/cadiaoutpost/oa/theforest)

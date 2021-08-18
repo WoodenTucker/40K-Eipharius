@@ -263,7 +263,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/sgt
+	suit = /obj/item/clothing/suit/armor/guardsman
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	belt = /obj/item/melee/mercycs
