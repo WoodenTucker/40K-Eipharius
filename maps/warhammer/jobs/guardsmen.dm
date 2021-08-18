@@ -27,7 +27,7 @@
 		..()
 		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
 		H.add_skills(rand(10,16))
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
@@ -86,7 +86,7 @@
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch
+		/mob/living/carbon/human/proc/tzeentch,
 		/mob/living/carbon/human/proc/sergeantselection,)
 
 
@@ -257,28 +257,21 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/cadiansgt
-	glasses = /obj/item/clothing/glasses/sunglasses
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	belt = /obj/item/melee/mercycs
-	l_ear = null
-	r_pocket = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	head = null
+	uniform = null
+	shoes = null
+	l_pocket = null
+	suit = null
+	gloves = null
+	back = null
 	pda_slot = null
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel/warfare
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	backpack_contents = list(
-		/obj/item/ammo_magazine/box/a556/mg08 = 2,
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,
-)
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = null
+	l_ear = null
+	r_ear = null
+	belt = null
+
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/enforcer
@@ -449,7 +442,6 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
@@ -579,7 +571,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangogglesELITE, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
