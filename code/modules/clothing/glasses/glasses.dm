@@ -502,12 +502,6 @@
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
-
-/obj/item/clothing/glasses/cadiangoggles/elite
-	name = "Mark XI/NV Visor"
-	desc = "The Mark XI/NV Visor are improved upon the standard Mark XIc Visor, offering Nightvision. Usually issued to Kasrkin and Cadian Veterans."
-	icon_state = "iggoggles"
-	item_state = "iggoggles"
 	origin_tech = list(TECH_MAGNET = 2)
 	darkness_view = 7
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
