@@ -333,6 +333,8 @@
 	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
 	icon_state = "slugga"
 	caliber = ".75"
+	can_jam = FALSE
+	accuracy = -2
 	condition = 60
 	force = 20
 	load_method = MAGAZINE

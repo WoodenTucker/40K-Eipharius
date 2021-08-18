@@ -121,6 +121,10 @@
 	icon_state = "main"
 	initial_flooring = /decl/flooring/stone
 
+/turf/simulated/floor/stone/chapel
+	name = "monastic stone floor"
+	holy = 1
+
 /turf/simulated/floor/stone/New()
 	icon_state = pick("main","1","2","3","extra","extra1","extra2","extra3")
 	..()

@@ -366,6 +366,8 @@
 	force = 10
 	max_shells = 50
 	caliber = ".75"
+	can_jam = FALSE
+	accuracy = -3
 	condition = 60
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
