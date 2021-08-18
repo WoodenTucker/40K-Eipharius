@@ -527,8 +527,12 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
+	var/static/list/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
+	if(!length(chapter))
+		chapter = list("Cadian", "Krieger", "Catachan", "Valhallan")
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
+	if(chapterchoice)
+		chapter -= chapterchoice
 
 	switch(chapterchoice)
 		if("Krieger")
@@ -540,6 +544,7 @@ Begin Warhammer loadouts
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/krieg, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
