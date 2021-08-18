@@ -56,8 +56,8 @@
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory
+			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
 			            )
 
 	auto_rifle_skill = 10
@@ -77,7 +77,7 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Sgt. [current_name]")
