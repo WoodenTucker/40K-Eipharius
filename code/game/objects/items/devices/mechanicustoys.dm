@@ -18,7 +18,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_HUGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -65,7 +65,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_HUGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -92,7 +92,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_HUGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -111,7 +111,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_HUGE
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 
@@ -138,7 +138,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_HUGE
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 

@@ -415,6 +415,10 @@
 	name = "Judgement"
 	info = "For crimes as specified, the offender is sentenced to:<BR>\n<BR>\n"
 
+/obj/item/paper/priest
+	name = "Hastily Scribbled Note"
+	info = "Good evening. I write to you with haste Abbot to inform you of the new additions to your chapel. You might have noticed a bolted door, should your high gothic be lacking that is the armory. During what has coloquially been known as 'Code Red' situations you may slide your staff into the door itself and trigger a release of the bolts. This should only be used in emergencys. Furthermore, the reliquary glass can also be shattered by your staff during these 'Code Red' scenarios. Simply press the end of your staff up to the glass during this emergency and it will shatter. Ensuring that the relics inside are safe and respected is your ultimate priority. Do not wear them, do not let others wear them, do not give them out, they are your responsibility to be venerated. Failure to comply will result in a visit from the Adeptus Sororitas. That's all."
+
 /obj/item/paper/crumpled
 	name = "paper scrap"
 	icon_state = "scrap"
