@@ -466,6 +466,11 @@
 	icon = 'icons/obj/doors/Doorresearch.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_research
 
+/obj/machinery/door/airlock/suicidedoor
+	name = "Airlock"
+	icon = 'icons/obj/doors/glass_door.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_research
+
 /obj/machinery/door/airlock/red
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorred.dmi'
