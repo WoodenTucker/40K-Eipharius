@@ -12,10 +12,13 @@ Astartes
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 25
 	max_age = 500
-	icobase = 'icons/mob/human_races/r_human.dmi'
-	deform = 'icons/mob/human_races/r_def_human.dmi'
+	icon_template = 'icons/mob/human_races/r_template_tall.dmi'
+	icobase = 'icons/mob/human_races/r_astartes.dmi'
+	deform = 'icons/mob/human_races/r_astartes.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
+	eye_icon_location = 'icons/mob/astartes_face.dmi'
+	eye_icon = "eyes_s"
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 500
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
