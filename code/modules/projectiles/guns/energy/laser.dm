@@ -342,7 +342,7 @@ obj/item/gun/energy/retro
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
 	cell_type = /obj/item/cell/pulserifle
 	ammoType = /obj/item/cell/pulserifle
-	wielded_item_state = "gun_wielded"
+	wielded_item_state = "pulseb_wielded"
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
