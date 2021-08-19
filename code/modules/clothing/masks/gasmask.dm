@@ -65,12 +65,6 @@
 	w_class = ITEM_SIZE_SMALL
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 55, rad = 0)
 
-/obj/item/clothing/mask/gas/half/cadianrespirator
-	name = "Mark IXc Rebreather"
-	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
-	icon_state = "ig_halfgas"
-	item_state = "ig_halfgas"
-
 //Plague Dr suit can be found in clothing/suits/bio.dm
 /obj/item/clothing/mask/gas/plaguedoctor
 	name = "plague doctor mask"
@@ -105,24 +99,6 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
-/obj/item/clothing/mask/gas/krieg
-	name = "Mark IXb Gas Mask"
-	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
-	icon_state = "kriegmask"
-	item_state = "kriegmask"
-	siemens_coefficient = 0.7
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
-	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
-
-/obj/item/clothing/mask/gas/commissar
-	name = "commissar mask"
-	desc = "A close-fitting tactical mask given to Commissars incharge of the Death Korps of Krieg."
-	icon_state = "commask"
-	item_state = "commask"
-	siemens_coefficient = 0.7
-	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
-	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
-
 /obj/item/clothing/mask/gas/techpriest
 	name = "mechanized visage"
 	desc = "Staring into the metallic visage its hard to believe this being is human..."
@@ -137,6 +113,7 @@
 /obj/item/clothing/mask/gas/techpriest/magos
 	icon_state = "magos"
 	item_state = "magos"
+
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without their wig and mask."
@@ -217,3 +194,29 @@
 	item_state = "prac_mask"
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = FACE|EYES|HEAD
+
+///ASTRA MILITARUM STUFF
+
+/obj/item/clothing/mask/gas/half/cadianrespirator
+	name = "Mark IXc Rebreather"
+	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
+	icon_state = "ig_halfgas"
+	item_state = "ig_halfgas"
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
+	flags_inv = HIDEFACE
+
+/obj/item/clothing/mask/gas/krieg
+	name = "Mark IXb Gas Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
+	icon_state = "kriegmask"
+	item_state = "kriegmask"
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
+
+/obj/item/clothing/mask/gas/commissar
+	name = "Mark IXb/C Gas Mask"
+	desc = "Krieg Regiment Commissar are issued with the same pattern of Gas mask like the others, However this one have slight different hue."
+	icon_state = "commask"
+	item_state = "commask"
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
