@@ -198,6 +198,12 @@ area/space/atmosalert()
 	requires_power = 0
 	dynamic_lighting = 0
 
+/area/inqmoon
+	name = "Inquisitorial Outpost Aecor"
+	icon_state = "blue"
+	requires_power = 0
+	dynamic_lighting = 1
+
 /area/beach
 	name = "Keelin's private beach"
 	icon_state = "null"
