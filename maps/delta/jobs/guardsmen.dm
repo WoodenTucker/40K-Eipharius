@@ -400,6 +400,7 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/regimentselection)
 	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
@@ -532,6 +533,7 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection)
 	var/static/list/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
 	if(!length(chapter))
 		chapter = list("Cadian", "Krieger", "Catachan", "Valhallan")

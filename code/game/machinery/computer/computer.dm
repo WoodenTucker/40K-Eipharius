@@ -131,7 +131,7 @@
 	var/moving = 0
 
 /obj/machinery/computer/exterminatus/attack_hand(mob/living/carbon/human/user as mob)	//Starting menu
-	var/extermdelay = 21000 //in deciseconds (35 min rn or 21000 deciseconds)
+	var/extermdelay = 0 //in deciseconds (35 min rn or 21000 deciseconds)
 	if(user.inquisitor == 0)
 		visible_message("DNA authorization failed!")
 		return
@@ -161,6 +161,9 @@
 
 /obj/machinery/computer/exterminatus/Topic(href, href_list)
 	if(..())
+		return
+	if(get_dist(src, usr) > 2)
+		to_chat(usr, "You need to be at the computer to fire!")
 		return
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!

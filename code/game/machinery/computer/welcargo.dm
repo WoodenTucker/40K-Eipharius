@@ -83,6 +83,10 @@
 	if(..())
 		return
 
+	if(get_dist(src, usr) > 2)
+		to_chat(usr, "You need to be at the computer to push that button!")
+		return
+
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["akit"])
 		if(GLOB.thrones < 15) //do we got enough shekels?
