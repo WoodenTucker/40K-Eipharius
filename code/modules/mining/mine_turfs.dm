@@ -323,15 +323,11 @@ var/list/mining_floors = list()
 			pain = 1
 		for(var/mob/living/M in range(src, 200))
 			to_chat(M, "<font color='red'><b>[pick("A high pitched [pick("keening","wailing","whistle")]","A rumbling noise like [pick("thunder","heavy machinery")]")] somehow penetrates your mind before fading away!</b></font>")
-			if(pain)
-				flick("pain",M.pain)
-				if(prob(50))
-					M.adjustBruteLoss(5)
-			else
-				M.flash_eyes()
-				if(prob(50))
-					M.Stun(5)
-		radiation_repository.flat_radiate(src, 25, 200)
+			flick("pain",M.pain)
+			M.adjustBruteLoss(5)
+			M.flash_eyes()
+			M.Stun(5)
+		//radiation_repository.flat_radiate(src, 25, 200) // please don't irradiate me mister :)
 	//Add some rubble,  you did just clear out a big chunk of rock.
 
 	ChangeTurf(mined_turf)
