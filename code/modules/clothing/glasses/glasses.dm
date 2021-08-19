@@ -500,12 +500,11 @@
 /obj/item/clothing/glasses/cadiangoggles
 	name = "Mark XIc Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."
+	icon_state = "iggoggles"
+    item_state = "iggoggles"
 
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
-	icon_state = "iggoggles"
-	item_state = "iggoggles"
-	origin_tech = list(TECH_MAGNET = 2)
 	darkness_view = 7
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
