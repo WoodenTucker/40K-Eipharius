@@ -258,7 +258,7 @@
 		H.implant_loyalty(H)
 
 /datum/job/leadinquisitor
-	title = "Ordos Helican Inquisitor"
+	title = "Inquisitor"
 	department_flag = INQ|COM
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1

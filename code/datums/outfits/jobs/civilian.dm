@@ -91,7 +91,7 @@
 	pda_slot = null
 
 /decl/hierarchy/outfit/job/internal_affairs_agent
-	name = OUTFIT_JOB_NAME("principal agent")
+	name = OUTFIT_JOB_NAME("Principal Agent")
 	l_ear = /obj/item/device/radio/headset/inquisition
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent
@@ -112,6 +112,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1)
+
 /decl/hierarchy/outfit/job/chaplain
 	name = OUTFIT_JOB_NAME("Ministorum Priest")
 	uniform = /obj/item/clothing/under/rank/chaplain

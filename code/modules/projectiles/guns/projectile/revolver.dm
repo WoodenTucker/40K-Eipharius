@@ -24,6 +24,10 @@
 /obj/item/gun/projectile/revolver/cpt/magistrate
 	name = "Commandant's Special"
 
+/obj/item/gun/projectile/revolver/cpt/inq
+	name = "Lacquered Stub Revolver"
+	desc = "A lacquered stub revolver with various intricate patterns and designs dotting the surface. It looks as though someone from nobility would possess this."
+
 /obj/item/gun/projectile/revolver/attack_self(mob/user)
 	. = ..()
 	unload_ammo(user, allow_dump=TRUE)

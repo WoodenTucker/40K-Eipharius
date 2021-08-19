@@ -327,6 +327,9 @@
 	name = "lava"
 	icon = 'icons/turf/flooring/lava.dmi'
 	icon_state = "lava"
+	light_color = "#E38F46"
+	light_power = 3
+	light_range = 3
 
 /turf/simulated/floor/ice
 	name = "ice"
