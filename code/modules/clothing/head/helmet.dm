@@ -173,45 +173,6 @@
 	armor = list(melee = 45, bullet = 40, laser = 40, energy = 35, bomb = 45, bio = 0, rad = 0)
 	siemens_coefficient = 0.6
 
-/obj/item/clothing/head/helmet/astartes
-	name = "Space Marine Helmet"
-	desc = "The daunting helmet of a Space Marine"
-	icon_state = "um_helm"
-	item_state = "um_helm"
-	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
-	str_requirement = 25
-	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
-	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/astartes/ravenhelm
-	name = "Raven Guard Power Helm"
-	desc = "The black, beaked mask of the Raven Guard."
-	icon_state = "rghelmet2"
-	item_state = "rghelmet2"
-
-/obj/item/clothing/head/helmet/astartes/sallyhelm
-	name = "Salamander Power Helm"
-	desc = "The ash charred helmet of a Salamander Marine."
-	icon_state = "sl_lib"
-	item_state = "sl_lib"
-
-/obj/item/clothing/head/helmet/astartes/chaplainhelm
-	name = "Space Marine Chaplain Helmet"
-	desc = "The daunting helmet of a Space Marine Chaplain's Helmet"
-	icon_state = "uni_chap"
-	item_state = "uni_chap"
-/obj/item/clothing/head/helmet/astartes/smurfhelm
-	name = "Ultramarine Power Helm"
-	desc = "The blue helm of an Ultramarine."
-	icon_state = "um_helm"
-	item_state = "um_helm"
-/obj/item/clothing/head/helmet/astartes/brhelm
-	name = "Blood Raven Power Helm"
-	desc = "The sanguine helm of a Blood Raven"
-	icon_state = "br_helm"
-	item_state = "br_helm"
 /obj/item/clothing/head/helmet/orkhelmet
 	name = "ork helmet"
 	desc = "Looks like a rusty bucket with horns glued on..."
