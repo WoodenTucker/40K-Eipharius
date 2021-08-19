@@ -67,6 +67,8 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
+	src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses
+
 	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Kroot Hunter")
 	switch(castes)
 		if("Fire Warrior")
