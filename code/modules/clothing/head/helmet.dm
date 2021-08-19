@@ -164,8 +164,6 @@
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
 
-//Warhammer 40k stuff below
-
 /obj/item/clothing/head/helmet/flak
 	name = "flak helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
@@ -173,11 +171,22 @@
 	armor = list(melee = 45, bullet = 40, laser = 40, energy = 35, bomb = 45, bio = 0, rad = 0)
 	siemens_coefficient = 0.6
 
+/obj/item/clothing/head/helmet/sentryhelm
+	name = "Sentry Helmet"
+	desc = "Used for taking blows to the noggin without getting hurt."
+	armor = list(melee = 75, bullet = 75, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)//proteck ya neck
+	str_requirement = 18
+
+// Ork
+
 /obj/item/clothing/head/helmet/orkhelmet
 	name = "ork helmet"
 	desc = "Looks like a rusty bucket with horns glued on..."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
+	armor = list(melee = 5, bullet = 5, laser = 30, energy = 30, bomb = 10, bio = 0, rad = 0)
+	siemens_coefficient = 1
+	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -186,21 +195,24 @@
 	item_state = "orkhelmet"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/orkhelmet/three
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/orkhelmet/four
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-//tau//
+// Tau
+
 /obj/item/clothing/head/helmet/fw
 	name = "fire warrior helmet"
-	desc = "A tau helmet made from advanced ceramic. Comfortable and robust."
+	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
 	icon_state = "fwhelm"
 	item_state = "fwhelm"
 	armor = list(melee = 15, bullet = 60, laser = 60, energy = 45, bomb = 30, bio = 0, rad = 0)
@@ -208,13 +220,3 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/sentryhelm
-	name = "Sentry Helmet"
-	desc = "Used for taking blows to the noggin without getting hurt."
-	armor = list(melee = 75, bullet = 75, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)//proteck ya neck
-	str_requirement = 18
-
-
-
-
