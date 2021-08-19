@@ -180,8 +180,8 @@
 // Ork
 
 /obj/item/clothing/head/helmet/orkhelmet
-	name = "ork helmet"
-	desc = "Looks like a rusty bucket with horns glued on..."
+	name = "Ork Helmet"
+	desc = "Literal bucket with horns glued on it, what did you expect?"
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
 	armor = list(melee = 5, bullet = 5, laser = 30, energy = 30, bomb = 10, bio = 0, rad = 0)
@@ -211,7 +211,7 @@
 // Tau
 
 /obj/item/clothing/head/helmet/fw
-	name = "fire warrior helmet"
+	name = "fire warrior Helmet"
 	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
 	icon_state = "fwhelm"
 	item_state = "fwhelm"
