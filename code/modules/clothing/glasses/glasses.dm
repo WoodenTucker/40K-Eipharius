@@ -501,7 +501,7 @@
 	name = "Mark XIc Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."
 	icon_state = "iggoggles"
-    item_state = "iggoggles"
+	item_state = "iggoggles"
 
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
