@@ -145,7 +145,7 @@
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_belt)
-			U.add_skills(9, 9, 2, 9, 0)
+			U.add_skills(9, 9, 2, 9, 1)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarines techmarine")
@@ -164,7 +164,7 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_belt)
-			U.add_skills(9, 9, 2, 9, 0)
+			U.add_skills(9, 9, 2, 9, 1)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Salamanders Techmarine")
@@ -201,7 +201,7 @@
 			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(9, 9, 9, 0, 8)
+			U.add_skills(9, 9, 9, 1, 8)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarines Apothecary")
@@ -220,7 +220,7 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(9, 9, 9, 0, 8)
+			U.add_skills(9, 9, 9, 1, 8)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Salamanders Apothecary")
@@ -239,7 +239,7 @@
 			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(9, 9, 9, 0, 8)
+			U.add_skills(9, 9, 9, 1, 8)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 
