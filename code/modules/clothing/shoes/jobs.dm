@@ -143,9 +143,9 @@
 
 // Astarte Stuff
 
-/obj/item/clothing/shoes/rgboots
+/obj/item/clothing/shoes/astarte/boots
 	name = "Astarte Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
+	desc = "Boots of the Emperor's Space Marine."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 	str_requirement = 25
@@ -155,12 +155,12 @@
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	var/obj/item/material/sword/combat_knife/knife = null
 
-/obj/item/clothing/shoes/rgboots/New()
+/obj/item/clothing/shoes/astarte/boots/New()
 	..()
 	knife = new
 	update_icon()
 
-/obj/item/clothing/shoes/rgboots/attackby(obj/item/I, mob/user)
+/obj/item/clothing/shoes/astarte/boots/attackby(obj/item/I, mob/user)
 	. = ..()
 	if(istype(I, /obj/item/material/sword/combat_knife))
 		if(knife)//We've already got a knife in there, no need for another.
@@ -171,7 +171,7 @@
 		update_icon()
 		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
 
-/obj/item/clothing/shoes/rgboots/attack_hand(mob/living/user)
+/obj/item/clothing/shoes/astarte/boots/attack_hand(mob/living/user)
 	if(knife)
 		user.put_in_active_hand(knife)
 		knife = null
@@ -179,21 +179,28 @@
 		return
 	..()
 
-/obj/item/clothing/shoes/rgboots/smurfs
+/obj/item/clothing/shoes/astarte/boots/smurfs
 	name = "Astarte Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "umboots"
 	item_state = "umboots"
 
-/obj/item/clothing/shoes/rgboots/br
+/obj/item/clothing/shoes/astarte/boots/br
 	name = "Astarte Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in Chapter Blood Ravens's colour scheme."
 	icon_state = "brboots"
 	item_state = "brboots"
 
-/obj/item/clothing/shoes/rgboots/sallys
+/obj/item/clothing/shoes/astarte/boots/sallys
 	name = "salamander boots"
 	name = "Astarte Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
+
+/obj/item/clothing/shoes/astarte/boots/sallys
+	name = "salamander boots"
+	name = "Astarte Mark VII Combat Boots"
+	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
+	icon_state = "rg_lib"
+	item_state = "rg_lib"
