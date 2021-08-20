@@ -482,7 +482,7 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/flak/heavy/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1.0
+	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/medicae
 	name = "Cadian Pattern Medicae Flak Armour - Light"
@@ -495,7 +495,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/medicae/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = -0.1
+	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/CatachanVest
 	name = "Catachan Flak Vest"
@@ -506,6 +506,9 @@
 	armor = list(melee = 20, bullet = 5, laser = 5, energy = 5, bomb = 20, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/CatachanVest/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/valhallanarmor
 	name = "valhallan Greatcoat"
@@ -523,9 +526,22 @@
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/krieger/grenadier
+	name = "Krieg Grenadier Greatcoat"
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Caraspace platings, making it extremely protective at the cost of mobility."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/krieger/grenadier/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/cadiansgt
 	name = "Cadian Sergeant's Flak Armour"
@@ -535,6 +551,9 @@
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/cadiansgt/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/catachansgt
 	name = "Catachan Sergeant's Flak Vest"
@@ -545,6 +564,9 @@
 	armor = list(melee = 20, bullet = 5, laser = 5, energy = 5, bomb = 20, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/catachansgt/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/valhallasgt
 	name = "valhallan Sergeant's Greatcoat"
@@ -574,3 +596,6 @@
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/commissar/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5
