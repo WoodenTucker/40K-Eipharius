@@ -469,7 +469,7 @@ Begin Warhammer loadouts
 
 		if("Catachan")
 			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/head/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
@@ -606,7 +606,7 @@ Begin Warhammer loadouts
 
 		if("Catachan")
 			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/head/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/catachansgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)

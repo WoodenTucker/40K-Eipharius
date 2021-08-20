@@ -224,9 +224,9 @@
 		to_chat(user, "You lower the ear flaps on the ushanka.")
 
 /obj/item/clothing/head/catachan
-    name = "Catachan Headband"
-    desc = "Catachan Regiment refuses to acknowledge any sort of protection in favour of their mentality and physical capabilties, Thus. The iconic red headband go with them anywhere they go.. But does it protects them from Bolters or lasguns? No."
-    icon_state = "Catachan_Headband"
+	name = "Catachan Headband"
+	desc = "Catachan Regiment refuses to acknowledge any sort of protection in favour of their mentality and physical capabilties, Thus. The iconic red headband go with them anywhere they go.. But does it protects them from Bolters or lasguns? No."
+	icon_state = "Catachan_Headband"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -248,7 +248,7 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-// The Civilian Stuff 
+// The Civilian Stuff
 
 /obj/item/clothing/head/plebhood
 	name = "pleb hood"
@@ -348,7 +348,7 @@
 	icon_state = "servitor_helmet2"
 	item_state = "servitor_helmet2"
 
-// The Governor Stuff 
+// The Governor Stuff
 
 /obj/item/clothing/head/rt
 	name = "rogue trader's cap"
@@ -380,7 +380,7 @@
 	cold_protection = HEAD
 	armor = list(melee = 10, bullet = 15, laser = 15,energy = 15)
 
-// The Senechal Stuff 
+// The Senechal Stuff
 
 /obj/item/clothing/head/seneschal
 	name = "seneschal's cap"
