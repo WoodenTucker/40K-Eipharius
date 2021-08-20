@@ -12,6 +12,8 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	darkness_view = 10
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
 /obj/item/clothing/head/helmet/astartes/ultramarine
 	name = "Astarte Mark VII Helmet"
