@@ -27,7 +27,7 @@
 
 /obj/item/clothing/head/helmet/astartes/salamander
 	name = "Astarte Mark VII Helmet"
-	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIII Chapter, Salamanders."
+	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIIIth Chapter, Salamanders."
 	icon_state = "salhelm"
 	item_state = "salhelm"
 
@@ -49,24 +49,24 @@
 
 /obj/item/clothing/head/helmet/astartes/captain/salamander
 	name = "Astarte Mark VII Helmet"
-	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIII Chapter, Salamanders. It's decorated with an Iron Halo, Representing his seniority in the art of flame."
+	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIIIth Chapter, Salamanders. It's decorated with an Iron Halo, Representing his seniority in the art of flame."
 	icon_state = "salcap"
 	item_state = "salcap"
 
 /obj/item/clothing/head/helmet/astartes/apothecary
 	name = "Astarte Mark VII Helmet"
-	desc = "The vigilant helmet of the Astarte's Apothecary."
+	desc = "The vigilant helmet of the Astarte's Apothecary, Painted in white and added with genescanner and intergrated scanner."
 	icon_state = "apohelm"
 	item_state = "apohelm"
 
 /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	name = "Astarte Mark VII Helmet"
-	desc = "The vigilant helmet of the Astarte's Apothecary."
+	desc = "The vigilant helmet of the Astarte's Apothecary, Painted in white and added with genescanner and intergrated scanner, This one bears the symbol of the XIXth Chapter, Raven Guards."
 	icon_state = "ravapo"
 	item_state = "ravapo"
 
 /obj/item/clothing/head/helmet/astartes/techmarine
 	name = "Astarte Mark VII Helmet"
-	desc = "The advanced helmet of the Astarte's Techmarine."
+	desc = "The advanced helmet of the Astarte's Techmarine, Comes with the distinct colour, red and advanced scanning system to detect, locate and repair inconsistency in Machineries and Astarte's holy armour."
 	icon_state = "techhelm"
 	item_state = "techhelm"
