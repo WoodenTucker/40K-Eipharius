@@ -231,27 +231,19 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/ig/commissar
 	name = OUTFIT_JOB_NAME("Commissar")
 	glasses = /obj/item/clothing/glasses/sunglasses
-	uniform = /obj/item/clothing/under/color/black
+	uniform = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/commissar
-	head = /obj/item/clothing/head/commissar
-	l_pocket = /obj/item/storage/box/ifak
+	suit = null
+	head = null
+	l_pocket = null
 	l_ear = /obj/item/device/radio/headset/red_team
-	belt = /obj/item/material/sword/commissword
-	l_hand = /obj/item/gun/projectile/bolter_pistol
-	r_pocket = /obj/item/device/binoculars
+	belt = null
+	l_hand = null
+	r_pocket = null
 	pda_slot = null
-	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = /obj/item/storage/backpack/satchel/warfare
-	backpack_contents = list(
-	 /obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-	 /obj/item/grenade/smokebomb = 1,
-	 /obj/item/device/flashlight/lantern = 1,
-	 /obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/five = 1,
+	shoes = null
+	gloves = null
+	back = null
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -657,3 +649,86 @@ Begin Warhammer loadouts
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
+/// COMMISSAR REGIMENT SELECTION
+
+/mob/living/carbon/human/proc/commissarselection()
+	set name = "Select your regiment"
+	set category = "Regimental Commissar Position"
+	set desc = "Choose your regiment"
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+	var/mob/living/carbon/human/U = src
+	var/chapter = list("Cadian", "Krieger", "Catachan") //lists all possible chapters
+	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
+
+	switch(chapterchoice)
+		if("Krieger")
+			equip_to_slot_or_del(new /obj/item/clothing/under/color/black, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/commissar/krieg, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/commissar, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/head/commissar/krieg, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/commissar, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/binoculars, slot_r_store)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/commissar, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/material/sword/commissword, slot_belt)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/smokebomb, slot_in_backpack)
+			U.verbs -= list(
+			/mob/living/carbon/human/proc/commissarselection,)
+
+
+		if("Cadian")
+			equip_to_slot_or_del(new /obj/item/clothing/under/color/black, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/commissar, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/head/commissar, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/commissar, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/binoculars, slot_r_store)
+			equip_to_slot_or_del(new /obj/item/material/sword/commissword, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/smokebomb, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/commissarselection,)
+
+
+		if("Catachan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/commissar, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/head/commissar/catachan, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/commissar/catachan, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/binoculars, slot_r_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/smokebomb, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/commissarselection,)

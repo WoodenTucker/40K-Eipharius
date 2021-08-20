@@ -533,8 +533,8 @@
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Greatcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Caraspace platings, making it extremely protective at the cost of mobility."
-	icon_state = "kriegcoat"
-	item_state = "kriegcoat"
+	icon_state = "grencoat"
+	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 60, bullet = 60, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -599,3 +599,15 @@
 /obj/item/clothing/suit/armor/commissar/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
+
+/obj/item/clothing/suit/armor/commissar/krieg
+	name = "Commissar's Trenchcoat"
+	desc = "The Commissar's magnificent, charismatic that strikes dreads and fears into the mind of lowly Imperial Guardsmen and heretics alike. Plated in Caraspace, giving it much more protection than average Guardsman."
+	icon_state = "Kriegissar"
+	item_state = "Kriegissar"
+
+/obj/item/clothing/suit/armor/commissar/catachan
+	name = "Commissar's Trenchcoat"
+	desc = "The Commissar's rugged and mobified trenchcoat, cut down to match the more rough and tumble Catachans he commands. Even though the light material would realistically have no armor to speak of, wearing this makes you feel less vulnerable to attack, and more cool."
+	icon_state = "catacommissar"
+	item_state = "catacommissar"

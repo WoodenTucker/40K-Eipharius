@@ -189,3 +189,16 @@
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/combat/commissar
+	name = "Krieg Commissar Pattern Combat Gloves"
+	desc = "The Krieg Commissar's distinct gloves designed to be resistant against all common chemical and biological attacks similar to that of the regular guardsmen, Though it doesn't smell as bad as the guardsmen's own."
+	icon_state = "workgloves"
+	item_state = "wgloves"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 0)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE

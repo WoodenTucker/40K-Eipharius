@@ -242,3 +242,10 @@
 	icon_state = "camopants"
 	cold_protection = LOWER_TORSO
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/rank/commissar
+	name = "krieg Battle Uniform"
+	desc = "What was once a full green uniform has been stripped down for survivability on the inhospitable world of catachan, though now it just seems like a power move to wear this on a frozen tundra."
+	icon_state = "catacomm"
+	item_state = "catacomm"
+	worn_state = "catacomm"

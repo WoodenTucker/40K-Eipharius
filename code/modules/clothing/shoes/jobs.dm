@@ -141,6 +141,13 @@
 	icon_state = "kriegboots"
 	item_state = "kriegboots"
 
+/obj/item/clothing/shoes/commissar
+	name = "boots of the commissar"
+	desc = "Knee high riding boots of an officer of the Officio Prefectus."
+	icon_state = "comm_boots"
+	item_state = "comm_boots"
+	species_restricted = null
+
 // Astarte Stuff
 
 /obj/item/clothing/shoes/astarte/boots
