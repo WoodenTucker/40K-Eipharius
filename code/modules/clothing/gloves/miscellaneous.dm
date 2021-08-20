@@ -162,3 +162,30 @@
 	icon_state = "prac_gloves"
 	item_state = "prac_gloves"
 
+// Astra Militarum Stuff
+
+/obj/item/clothing/gloves/combat/cadian
+	name = "Mars Pattern Combat Gloves"
+	desc = "The Astra Militarum standard issued gloves, found virtually everywhere in Imperial Space. Protect against most weather conditions and light bruises."
+	icon_state = "work"
+	item_state = "wgloves"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/combat/krieg
+	name = "Krieg Pattern Combat Gloves"
+	desc = "The Krieg Guardsman's distinct gloves designed to be resistant against all common chemical and biological attacks, It's also works well as a alternative to hauling corpses due to it distinct smell."
+	icon_state = "krieggloves"
+	item_state = "krieggloves"
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 0)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
