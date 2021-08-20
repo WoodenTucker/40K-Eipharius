@@ -207,20 +207,21 @@
 	item_state = "ba_suit"
 	worn_state = "barny"
 
+// ASTRA MILITARUM STUFF
+
 /obj/item/clothing/under/rank/krieg_uniform
 	name = "krieg Battle Uniform"
-	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment."
+	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, Though it smells like shit."
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
-	siemens_coefficient = 0.9
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/cadian_uniform
 	name = "Cadian Battle Dress Uniform"
-	desc = "The uniform of the brave Cadian Regiment."
+	desc = "The uniform of the common, but brave Cadian Regiment."
 	icon_state = "guard"
 	item_state = "guard"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -228,11 +229,16 @@
 
 /obj/item/clothing/under/rank/valhallan_uniform
 	name = "Valhalla Battle Uniform"
-	desc = "The uniform made out of their planetary predator's furs, Durable and warm, Made for the cold warriors of Valhalla Regiment."
+	desc = "The uniform made out of their planetary predator's furs, durable and warm, made for the cold warriors of Valhalla Regiment."
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
-	siemens_coefficient = 0.9
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/casual_pants/catachan
+	name = "Catachan Battle Shorts"
+	desc = "Catachan fear no temperature, no boltguns, no lasguns, they don't need shirts, They're Catachan Regiment."
+	icon_state = "camopants"
+	cold_protection = LOWER_TORSO
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
