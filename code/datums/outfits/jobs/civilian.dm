@@ -114,7 +114,7 @@
 	/obj/item/stack/thrones3/ten = 1)
 
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Ministorum Priest")
+	name = OUTFIT_JOB_NAME("Ministorum Confessor-Millitant")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain
@@ -126,6 +126,7 @@
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
 	suit = /obj/item/clothing/suit/ministorumrobes
+	suit_store = /obj/item/melee/pcsword/eviscerator
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = /obj/item/melee/whip/censer
 	backpack_contents = list(

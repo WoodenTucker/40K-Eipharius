@@ -1,15 +1,15 @@
-//Due to how large this one is it gets its own file
+//Due to how large this one is it gets its own file. Sister of Battle Guard and all her stuff including items, excluding weapons those are in mattguns.dm, is also located here.
 /datum/job/chaplain
-	title = "Ministorum Priest"
+	title = "Ministorum Confessor"
 	department = "Civilian"
-	department_flag = CIV
+	department_flag = CIV|COM
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Ecclesiarchy"
-	selection_color = "#337C81"
+	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
+	selection_color = "#FCFBFA"
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_sob)
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium, access_sob)
 	announced = FALSE
@@ -20,13 +20,13 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Abbot [current_name]")
-		H.add_stats(rand(8,11), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
+		H.fully_replace_character_name("Confessor [current_name]")
+		H.add_stats(rand(10,13), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.add_skills(rand(2,4),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are an Abbot of the Ecclesiarchy. The chapel on the lower floor is your domain. Lead and guide the faithful of this world. Do not be afraid to embark from the outpost and preach to the masses.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Confessor-Millitant attached to the Rogue Trader through the Missionarus Galaxia. You are one of the Ecclesiarchy's fearsome zealot preachers, your oratory skills can stir entire crowds and cause them to turn on one another, exposing eachother's darkest secrets. You often work on worlds where faith is lacking, and people are rebellious. It is your job to preach to the flock and indoctrinate new individuals into it, protect the chapel, and ensure the relics in your reliquary remain safe and untouched by the unworthly.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -162,7 +162,7 @@
 		O.armor_penetration += 1
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
-		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
 /obj/item/melee/whip/censer/attackby(var/obj/item/material/sword/O, var/mob/user)
@@ -175,4 +175,140 @@
 		O.block_chance += 5
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
-		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
+
+/* start of the sister section */
+
+//job
+
+/datum/job/sisterelohiem
+	title = "Sister Elohiem"
+	department = "Civilian"
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 0
+	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
+	supervisors = "the Adepta Sororitas"
+	selection_color = "#FCFBFA"
+	announced = FALSE
+	outfit_type = /decl/hierarchy/outfit/job/sisterelohiem
+	auto_rifle_skill = 10 // idk how these skills work but imperial guards have 10 and sisters are better trained than the average guard so they get 10.
+	semi_rifle_skill = 10
+	sniper_skill = 6
+	shotgun_skill = 9
+	lmg_skill = 10
+	smg_skill = 10
+	melee_skill = 10
+	ranged_skill = 10
+	medical_skill = 4
+	engineering_skill = 0
+	surgery_skill = 1
+	req_admin_notify = 1
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister Elohiem [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant)
+		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
+		H.add_stats(35, rand(20,25), rand(20,25), rand(15,25)) // 5 down from astartes. they're strong women and literally believe so much in the god emperor's protection and strength that it becomes reality.
+		H.get_idcard()?.access = get_all_accesses()
+		H.get_equipped_item(slot_s_store)
+		H.warfare_faction = IMPERIUM
+		H.gender = FEMALE
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.f_style = "shaved"
+		H.h_style = "Tight Shaved Mohawk"
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
+
+
+//outfit
+
+/decl/hierarchy/outfit/job/sisterelohiem
+	name = OUTFIT_JOB_NAME("Sister Elohiem")
+	head = /obj/item/clothing/head/helmet/sisterelohiem
+	l_ear = /obj/item/device/radio/headset/red_team
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterelohiem
+	uniform = /obj/item/clothing/under/guard/uniform/sisterelohiem
+	back = /obj/item/storage/backpack/satchel/warfare/sisterelohiem
+	gloves = /obj/item/clothing/gloves/sisterelohiem
+	shoes = /obj/item/clothing/shoes/sisterelohiem
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterelohiem
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/stack/thrones/ten = 1,
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/stack/thrones3/ten = 2,
+	)
+
+// clothing.
+// sororitas war gear based on the wiki page. it is power armor so it is strong, but it isn't as strong as astarte's power armor because sisters lack the black carapace, stats have been balanced around that.
+
+/obj/item/clothing/head/helmet/sisterelohiem
+	name = "Order of the Sacred Rose Helm"
+	desc = "A helmet branded with Imperium sigils and holy writs belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>Many claim they wish to destroy their enemies. If this were true, most would be compelled to destroy themselves.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
+
+/obj/item/clothing/suit/sisterelohiem
+	name = "Order of the Sacred Rose Chestpiece"
+	desc = "A blessed chestpiece belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>There is only duty and blood. There are only deeds and words. There is only the service to the God-Emperor, and the price that demands from each Sister can only be known by Him.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 0 // they're specially fitted to that sister's body and can only be removed under certain circumstances. also to prevent abuse
+
+/obj/item/storage/backpack/satchel/warfare/sisterelohiem
+	name = "Order of the Sacred Rose Powerpack"
+	desc = "A sanctified powerpack belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>When the people forget their duty they are no longer human and become something less than beasts. They have no place in the bosom of humanity nor in the heart of the Emperor. Let them die and be forgotten</i>"
+	icon_state = "sister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	canremove = 0
+
+/obj/item/clothing/under/guard/uniform/sisterelohiem
+	name = "Adepta Sororitas Bodysuit"
+	desc = "A bodysuit made with pious fabric covered in purity seals. It is worn beneath a suit of power armor, to ensure a comfortable fit. <i>The absence of faith is the mark of the weak, the absence of faith is the mark of the heretic, the absence of faith is the mark of damnation.</i>"
+	canremove = 0
+
+/obj/item/clothing/gloves/sisterelohiem
+	name = "Order of the Sacred Rose Gauntlets"
+	desc = "Gauntlets covered in holy writing and iconography, belonging to an Adepta Soroitas power armor set. They are styled in the colors of the Order of the Sacred Rose. <i>By bolter shell, flamer burst and melta blast, the mutant, the heretic and the traitor alike are cleansed of their sin of existence. So has it been for five millennia, so shall it be unto the end of time.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 45, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 90, rad = 90)
+	canremove = 0
+
+/obj/item/clothing/shoes/sisterelohiem
+	name = "Order of the Sacred Rose Boots"
+	desc = "A pair of boots immersed in Imperium scripture belonging to an Adepta Sororitas power armor set. They are styled in the colors of the Order of the Sacred Rose. <i>Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	can_hold_knife = 1
+	canremove = 0
+	armor = list(melee = 45, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 90, rad = 90)
+
+//ammo
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	name = "godwyn-de'az pattern bolter rifle magazine"
+	ammo_type = /obj/item/ammo_casing/bolter/sister
+
+/obj/item/projectile/bullet/bolt/sister
+	damage = 70 // sisters aren't as strong as an astartes so their bolts pack less of a punch yet they're still deadly.
+
+/obj/item/ammo_casing/bolter/sister
+	projectile_type = /obj/item/projectile/bullet/bolt/sister

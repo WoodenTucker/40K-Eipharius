@@ -332,6 +332,10 @@
 /obj/item/ammo_magazine/bolt_rifle_magazine/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	name = "godwyn-de'az pattern bolter rifle magazine"
+	ammo_type = /obj/item/ammo_casing/bolter/sister
+
 /* ork mags */
 
 /obj/item/ammo_magazine/ork/slugga
