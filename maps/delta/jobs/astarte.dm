@@ -208,7 +208,7 @@
 		if("Ultramarines Apothecary")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/smurfss, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -243,3 +243,4 @@
 			U.add_skills(9, 9, 9, 1, 8)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
+
