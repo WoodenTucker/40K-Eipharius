@@ -1,5 +1,5 @@
 /obj/item/clothing/suit/armor/astartes
-	name = "Adeptus Astartes Power armor"
+	name = "Astarte Mark VII Power Armour"
 	icon = 'icons/mob/32x40/suits.dmi'
 	item_icons = list(slot_wear_suit_str = 'icons/mob/32x40/suits.dmi')
 	icon_state = "umpowerarmor"
@@ -15,92 +15,82 @@
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 
 
-///////////////////////////
-////** Space Marine **////
-///////////////////////////
+// SPACE MUUHREEN TACTICOOL
 
 /obj/item/clothing/suit/armor/astartes/ultramarine
-	name = "Ultramarine power armor"
-	desc = "The holy armor of the Ultramarines."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrasuit"
 	item_state = "ultrasuit"
 
 /obj/item/clothing/suit/armor/astartes/ravenguard
-	name = "Raven Guard power armor"
-	desc = "The holy black armor of the Raven Guard."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIXth Chapter, Raven Guards."
 	icon_state = "ravsuit"
 	item_state = "ravsuit"
 
 /obj/item/clothing/suit/armor/astartes/salamander
-	name = "Salamander power armor"
-	desc = "The holy armor of the Salamanders"
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XVIIIth Chapter, Salamanders."
 	icon_state = "salsuit"
 	item_state = "salsuit"
 
+// SPACE MUUHREEN CAPTAIN
+
 /obj/item/clothing/suit/armor/astartes/ultramarine/captain
-	name = "Ultramarine captain power armor"
-	desc = "The holy armor of the Ultramarines captain."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultracap"
 	item_state = "ultracap"
 
-////////////////////////////////////
-////** Captain Space Marines **////
-///////////////////////////////////
 /obj/item/clothing/suit/armor/astartes/captain/ravenguard
-	name = "Raven Guard captain power armor"
-	desc = "The holy black armor of the Raven Guard captain."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XIXth Chapter, Raven Guards."
 	icon_state = "ravcap"
 	item_state = "ravcap"
 
 /obj/item/clothing/suit/armor/astartes/captain/salamander
-	name = "Salamander captain power armor"
-	desc = "The holy armor of the Salamander captain"
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XVIIIth Chapter, Salamanders."
 	icon_state = "salcap"
 	item_state = "salcap"
 
-////////////////////////////////////
-////**Apothecary Marines**///
-///////////////////////////////////
+// SPESS MUHREEN SPERM MAN
 
 /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
-	name = "Ultramarine apothecary power armor"
-	desc = "The holy armor of the Ultramarines apothecary."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apocthecary of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrapoth"
 	item_state = "ultrapoth"
 
 /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
-	name = "Raven Guard apothecary power armor"
-	desc = "The holy black armor of the Raven Guard apothecary."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apocthecary of the XIXth Chapter, Raven Guards."
 	icon_state = "ravapoth"
 	item_state = "ravapoth"
 
 /obj/item/clothing/suit/armor/astartes/apothecary/salamander
-	name = "Salamander apothecary power armor"
-	desc = "The holy armor of the Salamanders apothecary"
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apocthecary of the XVIIIth Chapter, Salamanders."
 	icon_state = "salapoth"
 	item_state = "salapoth"
 
-////////////////////////////////////
-////**TechMarines**///
-///////////////////////////////////
+// SPESS MUHREEN TOASTER FUCKER
 
 /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
-	name = "Ultramarine techmarine power armor"
-	desc = "The holy armor of the Ultramarines techmarines."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultratech"
 	item_state = "ultratech"
 
 /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
-	name = "Raven Guard techmarine power armor"
-	desc = "The holy black armor of the Raven Guard techmarines."
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XIXth Chapter, Raven Guards."
 	icon_state = "ravtech"
 	item_state = "ravtech"
 
 /obj/item/clothing/suit/armor/astartes/techmarine/salamander
-	name = "Salamander techmarine power armor"
-	desc = "The holy armor of the Salamanders techmarines"
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XVIIIth Chapter, Salamanders."
 	icon_state = "saltech"
 	item_state = "saltech"
-
-
-
