@@ -12,7 +12,7 @@
 	slowdown_per_slot[slot_shoes] = 1
 
 /obj/item/clothing/shoes/jackboots
-	name = "jackboots"
+	name = "Combat Boots"
 	desc = "Tall synthleather boots with an artificial shine."
 	icon_state = "jackboots"
 	item_state = "jackboots"
@@ -55,12 +55,6 @@
 		I = image('icons/obj/clothing/accessory_overlays.dmi', "bootknife_1")
 
 	overlays += I
-
-/obj/item/clothing/shoes/jackboots/krieg
-	name = "krieg boots"
-	desc = "Krieg-issue jackboots."
-	icon_state = "kriegboots"
-	item_state = "kriegboots"
 
 /obj/item/clothing/shoes/jackboots/unathi
 	name = "toe-less jackboots"
@@ -185,3 +179,17 @@
 	desc = "Squish."
 	icon_state = "prac_boots"
 	item_state = "prac_boots"
+
+// Astra Militarum Stuff
+
+/obj/item/clothing/shoes/jackboots/cadian
+	name = "Mars-Pattern Combat Boots"
+	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
+	icon_state = "jackboots"
+	item_state = "jackboots"
+
+/obj/item/clothing/shoes/jackboots/krieg
+	name = "Krieg-Pattern Combat Boots"
+	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
+	icon_state = "kriegboots"
+	item_state = "kriegboots"
