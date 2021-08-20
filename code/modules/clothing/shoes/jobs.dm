@@ -185,21 +185,19 @@
 	icon_state = "umboots"
 	item_state = "umboots"
 
-/obj/item/clothing/shoes/astarte/boots/br
+/obj/item/clothing/shoes/astarte/boots/bloodraven
 	name = "Astarte Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in Chapter Blood Ravens's colour scheme."
 	icon_state = "brboots"
 	item_state = "brboots"
 
 /obj/item/clothing/shoes/astarte/boots/sallys
-	name = "salamander boots"
 	name = "Astarte Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
 
-/obj/item/clothing/shoes/astarte/boots/sallys
-	name = "salamander boots"
+/obj/item/clothing/shoes/astarte/boots/raven
 	name = "Astarte Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
 	icon_state = "rg_lib"
