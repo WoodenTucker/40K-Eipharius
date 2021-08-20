@@ -196,3 +196,24 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+
+/obj/item/melee/pcsword/eviscerator
+	name = "eviscerator"
+	desc = "An eviscerator imbibed with the prayers of a radical priest, common among the zealots of the Ecclesiarchy. This large, obscenely oversized, chainsword has been designed entirely for offense and can only ever be wielded effectively with both hounds, yet it can do immense and horrifying damage to those that it touches."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "eviscerator"
+	item_state = "eviscerator"
+	wielded_icon ="eviscerator"
+	force = 1// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 45
+	block_chance = 0
+	sharp = 1
+	edge = 1
+	w_class = ITEM_SIZE_HUGE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")

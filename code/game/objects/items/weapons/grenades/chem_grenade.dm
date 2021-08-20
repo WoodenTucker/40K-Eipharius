@@ -193,7 +193,7 @@
 
 /obj/item/grenade/chem_grenade/metalfoam
 	name = "metal-foam grenade"
-	desc = "Used for emergency sealing of air breaches."
+	desc = "Used for emergency sealing of areas."
 	path = 1
 	stage = 2
 
