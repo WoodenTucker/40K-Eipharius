@@ -225,7 +225,14 @@
 	src.item_state = "reactiveoff"
 	..()
 
-//Flak Armors
+/obj/item/clothing/suit/armor/sentry
+	name = "Sentry Armor"
+	desc = "Protects you very well from getting smacked, and decently well from getting shot."
+	armor = list(melee = 75, bullet = 75, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)//Beefy boys.
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	str_requirement = 18
 
 /obj/item/clothing/suit/armor/flak/vest
 	name = "light flak vest"
@@ -235,31 +242,6 @@
 	armor = list(melee = 25, bullet = 30, laser = 30, energy = 15, bomb = 35, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-
-/obj/item/clothing/suit/armor/flak/armor
-	name = "flak armor"
-	desc = "A suit of resistant armor made from several layers of ablative and imapct-absorbant materials. One of the most commonly used armors in the Imperium, standard issue to the Imperial Guard."
-	icon_state = "farmor"
-	item_state = "farmor"
-	armor = list(melee = 45, bullet = 40, laser = 40, energy = 35, bomb = 45, bio = 0, rad = 0)
-	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO||ARMS
-	cold_protection = UPPER_TORSO|LOWER_TORSO||ARMS
-	heat_protection = UPPER_TORSO|LOWER_TORSO||ARMS
-
-/obj/item/clothing/suit/armor/flak/heavy
-	name = "heavy flak armor"
-	desc = "A suit of heavy-duty armor made from a thick layer of ablative and impact-absorbant materials. Heavy and cumbersome, but quite durable."
-	icon_state = "fharmor"
-	item_state = "fharmor"
-	armor = list(melee = 60, bullet = 55, laser = 55, energy = 45, bomb = 55, bio = 0, rad = 0)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-
-/obj/item/clothing/suit/armor/flak/heavy/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 1.0
 
 //Inquisitor Armors
 
@@ -277,6 +259,7 @@
 
 
 //Begin Tau//
+
 /obj/item/clothing/suit/armor/fwarmor
 	name = "fire warrior armor"
 	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
@@ -291,6 +274,7 @@
 
 
 //FINALLY begin ork//
+
 /obj/item/clothing/suit/armor/orkarmor
 	name = "ork armor"
 	desc = "Scavenged bitz to keep ya' krumpin' longa'!"
@@ -322,62 +306,7 @@
 	icon_state = "armRskull"
 	item_state = "armRskull"
 
-//Warhammer armor
-/obj/item/clothing/suit/armor/sentry
-	name = "Sentry Armor"
-	desc = "Protects you very well from getting smacked, and decently well from getting shot."
-	armor = list(melee = 75, bullet = 75, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)//Beefy boys.
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	str_requirement = 18
-
-/obj/item/clothing/suit/armor/guardsman
-	name = "Guardsman's Flak Armor"
-	desc = "The proud armor of an Imperial Guardsman"
-	icon_state = "farmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/guardsman/New()
-	..()
-	name = "An Imperial Guardsman's Armor"
-	desc = "The proud armor of an Imperial Guardsman"
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/CatachanVest
-	name = "Catachan Vest"
-	desc = "Flak vests worn by those born on the planet of Catachan."
-	icon_state = "Catachan_Vest"
-	item_state = "Catachan_Vest"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/valhallanarmor
-	name = "valhallan greatcoat"
-	desc = "A thick fur coat from the ice world of Valhalla."
-	icon_state = "valarmor"
-	item_state = "valarmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-
-/obj/item/clothing/suit/armor/krieger
-	name = "Krieger's Trench Coat"
-	desc = "The well worn and stealthily armored coat of the Death Korps of Krieg."
-	icon_state = "kriegcoat"
-	item_state = "kriegcoat"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+//Administratum, pilgrim armour
 
 /obj/item/clothing/suit/armor/bountyhunter
 	name = "bounty hunter's armor"
@@ -391,74 +320,6 @@
 	name = "bounty hunter's armor"
 	icon_state = "valhalla"
 	item_state = "valhalla"
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/commissar
-	name = "commissar's jacket"
-	icon_state = "Commissar4"
-	item_state = "Commissar4"
-	armor = list(melee = 45, bullet = 45, laser = 45, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/cadiansgt
-	name = "Cadian Sergeant's Armor"
-	desc = "The well-worn armor of an Cadian Regiment Sergeant."
-	icon_state = "fharmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/catachansgt
-	name = "Catachan Sergeant's Vest"
-	desc = "Flak vests worn by renowned Catachan Sergeant."
-	icon_state = "Catachan_Vest"
-	item_state = "Catachan_Vest"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/valhallasgt
-	name = "valhallan Sergeant's Greatcoat"
-	desc = "An veteran sergeant's coat, worn but glorious."
-	icon_state = "valarmor"
-	item_state = "valarmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/kriegsgt
-	name = "Krieg Sergeant's Battlecoat"
-	desc = "Ornated in red waffenfarbe and silverish lining, the Battlecoat represent veterancy and status. Worn by only the Krieg's fearless sergeant."
-	icon_state = "kriegcoat"
-	item_state = "kriegcoat"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/enforcer
-	name = "enforcer's light armor"
-	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
-	icon_state = "Judge"
-	item_state = "Judge"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-
-/obj/item/clothing/suit/armor/medicae
-	name = "medicae's Light Armor"
-	desc = "The robust armor of a combat medicae."
-	icon_state = "medicae"
-	item_state = "medicae"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -583,3 +444,158 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
+
+/obj/item/clothing/suit/armor/enforcer
+	name = "enforcer's light armor"
+	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
+	icon_state = "Judge"
+	item_state = "Judge"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+////Astra Militarum
+
+/obj/item/clothing/suit/armor/guardsman
+	name = "Cadian Pattern Flak Armour - Medium"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it standard configuration"
+	icon_state = "farmor"
+	item_state = "farmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 10, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/guardsman/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.5
+
+/obj/item/clothing/suit/armor/flak/heavy
+	name = "Cadian Pattern Flak Armour - Heavy"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it heavy configuration"
+	icon_state = "fharmor"
+	item_state = "fharmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 50, energy = 50, bomb = 60, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+/obj/item/clothing/suit/armor/flak/heavy/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.5
+
+/obj/item/clothing/suit/armor/medicae
+	name = "Cadian Pattern Medicae Flak Armour - Light"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, On it chest and shoulderplate bears the Red Cross of a Combat Medicae."
+	icon_state = "medicae"
+	item_state = "medicae"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/medicae/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1
+
+/obj/item/clothing/suit/armor/CatachanVest
+	name = "Catachan Flak Vest"
+	desc = "Unlike the common Cadian or famous Krieg, the Catachan only wears their lightly protected Flak vest to protect against bruises and sharpnels."
+	icon_state = "Catachan_Vest"
+	item_state = "Catachan_Vest"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 20, bullet = 5, laser = 5, energy = 5, bomb = 20, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/CatachanVest/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1
+
+/obj/item/clothing/suit/armor/valhallanarmor
+	name = "valhallan Greatcoat"
+	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions."
+	icon_state = "valarmor"
+	item_state = "valarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 10, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/krieger
+	name = "Krieg Greatcoat"
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/krieger/grenadier
+	name = "Krieg Grenadier Greatcoat"
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Caraspace platings, making it extremely protective at the cost of mobility."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/krieger/grenadier/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.5
+
+/obj/item/clothing/suit/armor/cadiansgt
+	name = "Cadian Sergeant's Flak Armour"
+	desc = "The well-worn armor of an Cadian Regiment Sergeant, This one is padded with Caraspace plates, giving it better protection than average Guardsmen. It has the three-chevrons marked on it upper chest."
+	icon_state = "fharmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/cadiansgt/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5
+
+/obj/item/clothing/suit/armor/catachansgt
+	name = "Catachan Sergeant's Flak Vest"
+	desc = "Nobody knows why, but the Catachan Sergeant wears even less protection than average Catachan, This is no Flak vest, this is showing off his muscles!.. It has the Imperial Aquila engraved with the word 'Devil' on it upper chest."
+	icon_state = "Catachan_Vest"
+	item_state = "Catachan_Vest"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 20, bullet = 5, laser = 5, energy = 5, bomb = 20, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/catachansgt/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1
+
+/obj/item/clothing/suit/armor/valhallasgt
+	name = "valhallan Sergeant's Greatcoat"
+	desc = "Though indentical to the other standard Valhallan Guardsman, this one have it sleeves trimmed with red line and a white undershirt, representing their position as Sergeant."
+	icon_state = "valarmor"
+	item_state = "valarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 10, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/kriegsgt
+	name = "Krieg Watchmaster's Coat"
+	desc = "A ornated uniform with silver-trimming and red waffenfarbe by it collar. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster.... Its still stinks."
+	icon_state = "kriegcoat"
+	item_state = "kriegcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/commissar
+	name = "Commissar's Trenchcoat"
+	desc = "The Commissar's magnificent, charismatic that strikes dreads and fears into the mind of lowly Imperial Guardsmen and heretics alike. Plated in Caraspace, giving it much more protection than average Guardsman."
+	icon_state = "Commissar4"
+	item_state = "Commissar4"
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/commissar/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5

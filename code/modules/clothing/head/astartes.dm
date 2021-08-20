@@ -1,71 +1,74 @@
 /obj/item/clothing/head/helmet/astartes
-	name = "Space Marine Power Helmet"
-	desc = "The daunting helmet of a Space Marine"
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen"
 	icon = 'icons/mob/32x40/hats.dmi'
 	item_icons = list(slot_head_str = 'icons/mob/32x40/hats.dmi')
 	icon_state = "ultrahelm"
 	item_state = "ultrahelm"
-	armor = list(melee = 90, bullet = 90, laser = 90, energy = 95, bomb = 90, bio = 90, rad = 100)
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100)
 	str_requirement = 25
+	body_parts_covered = HEAD|FACE|EYES
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	darkness_view = 10
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
 /obj/item/clothing/head/helmet/astartes/ultramarine
-	name = "Ultramarine power helm"
-	desc = "The daunting helm of an Ultramarine."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrahelm"
 	item_state = "ultrahelm"
 
 /obj/item/clothing/head/helmet/astartes/ravenguard
-	name = "Raven Guard power helm"
-	desc = "The black, beaked mask of the Raven Guard."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's black birds, This one bears the symbol of the XIXth Chapter, Raven Guards."
 	icon_state = "ravhelm"
 	item_state = "ravhelm"
 
 /obj/item/clothing/head/helmet/astartes/salamander
-	name = "Salamander power helm"
-	desc = "The ash charred helmet of a Salamander Marine."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIIIth Chapter, Salamanders."
 	icon_state = "salhelm"
 	item_state = "salhelm"
 
 /obj/item/clothing/head/helmet/astartes/captain
-	name = "Space Marine captain power helm"
-	desc = "The daunting helmet of a Space Marine captain."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one is worn by a Company Captain."
 
 /obj/item/clothing/head/helmet/astartes/captain/ultramarine
-	name = "Ultramarine captain power helm"
-	desc = "The daunting helmet of a Ultramarine captain."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XIIIth Chapter, Ultramarines. It's decorated with an Iron Halo, Representing his seniority in the art of administration."
 	icon_state = "ultracap"
 	item_state = "ultracap"
 
 /obj/item/clothing/head/helmet/astartes/captain/ravenguard
-	name = "Raven Guard captain power helm"
-	desc = "The black, beaked mask of the Raven Guard captain."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's black birds, This one bears the symbol of the XIXth Chapter, Raven Guards. It's decorated with an Iron Halo, Representing his seniority in the art of deepstrike."
 	icon_state = "ravcap"
 	item_state = "ravcap"
 
 /obj/item/clothing/head/helmet/astartes/captain/salamander
-	name = "Salamander captain power helm"
-	desc = "The ash charred helmet of a Salamander captain."
+	name = "Astarte Mark VII Helmet"
+	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIIIth Chapter, Salamanders. It's decorated with an Iron Halo, Representing his seniority in the art of flame."
 	icon_state = "salcap"
 	item_state = "salcap"
 
 /obj/item/clothing/head/helmet/astartes/apothecary
-	name = "Apothecary Marine power helm"
-	desc = "The white helmet of an Apothecary Marine"
+	name = "Astarte Mark VII Helmet"
+	desc = "The vigilant helmet of the Astarte's Apothecary, Painted in white and added with genescanner and intergrated scanner."
 	icon_state = "apohelm"
 	item_state = "apohelm"
 
 /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
-	name = "Apothecary Ravenguard power helm"
-	desc = "The white beaked helmet of an Apothecary Ravenguard"
+	name = "Astarte Mark VII Helmet"
+	desc = "The vigilant helmet of the Astarte's Apothecary, Painted in white and added with genescanner and intergrated scanner, This one bears the symbol of the XIXth Chapter, Raven Guards."
 	icon_state = "ravapo"
 	item_state = "ravapo"
 
 /obj/item/clothing/head/helmet/astartes/techmarine
-	name = "Techmarine power helm"
-	desc = "The red technologic helmet of a Techmarine"
+	name = "Astarte Mark VII Helmet"
+	desc = "The advanced helmet of the Astarte's Techmarine, Comes with the distinct colour, red and advanced scanning system to detect, locate and repair inconsistency in Machineries and Astarte's holy armour."
 	icon_state = "techhelm"
 	item_state = "techhelm"

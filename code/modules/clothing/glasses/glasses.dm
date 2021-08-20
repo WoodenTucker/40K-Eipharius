@@ -497,6 +497,8 @@
 	off_state = "tajblind_meson"
 	body_parts_covered = EYES
 
+//ASTRA MILITARUM STUFF
+
 /obj/item/clothing/glasses/cadiangoggles
 	name = "Mark XIc Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."

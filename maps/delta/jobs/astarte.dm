@@ -36,7 +36,7 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of Mankind's greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
@@ -44,13 +44,14 @@
 		H.adjustStaminaLoss(-INFINITY) //astardes have basically infinite fight in them
 		H.health = 500
 		H.maxHealth = 500
+
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black
 	l_ear = /obj/item/device/radio/headset/red_team
-	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	l_pocket = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = null //for future power packs
+	back = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	shoes = null
@@ -79,27 +80,27 @@
 	var/chapterchoice = input("Choose your chapter and role", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
-		if("Raven Guard")
+		if("Raven Guards")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ravenguard, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ravenguard, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/raven, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/ravenguard, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Ultramarines")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ultramarine, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ultramarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/ultramarine, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -116,7 +117,7 @@
 		if("Salamanders")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/salamander, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/salamander, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/sallys, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/salamander, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
@@ -133,7 +134,7 @@
 		if("Raven Guard Techmarine")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/raven, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
@@ -151,7 +152,7 @@
 		if("Ultramarines techmarine")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest/techpack, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -170,7 +171,7 @@
 		if("Salamanders Techmarine")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/salamander, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/sallys, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest/techpack, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
@@ -188,7 +189,7 @@
 		if("Raven Guard Apothecary")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/raven, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
@@ -207,7 +208,7 @@
 		if("Ultramarines Apothecary")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/smurfs, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
@@ -226,7 +227,7 @@
 		if("Salamanders Apothecary")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/salamander, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/sallys, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
