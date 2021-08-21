@@ -286,30 +286,26 @@ r_pocket = null
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 //// TEMPLATE ///
-/decl/hierarchy/outfit/job/guardsman
-	name = OUTFIT_JOB_NAME("Cadian Guardsman")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-//	l_ear = /obj/item/device/radio/headset/red_team //Assign_random_squad on Equip() should be handing down a headset.
+//decl/hierarchy/outfit/job/guardsman
+//  name = OUTFIT_JOB_NAME("Input Name")
+//  uniform = null
+//  suit = null
+//  back = null
+//  belt = null
+//  gloves = null
+//  shoes = null
+//  head = null
+//  mask = null
+//	l_ear = null
 //	r_ear = null
-	glasses = /obj/item/clothing/glasses/cadiangoggles
+//  glasses = null
 //	id = null
-	l_pocket = /obj/item/storage/box/ifak
+//  l_pocket = null
 //	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun
+//  suit_store = null
 //	r_hand = null
 //	l_hand = null
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
+//  neck = null
+//  backpack_contents = list(
+//  [ Item Path ] = 1,
+//  )
