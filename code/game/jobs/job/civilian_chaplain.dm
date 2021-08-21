@@ -10,8 +10,8 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
 	selection_color = "#FCFBFA"
-	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_sob)
-	minimal_access = list(access_morgue, access_chapel_office, access_crematorium, access_sob)
+	access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_sob)
+	minimal_access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_sob)
 	announced = FALSE
 //	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
@@ -22,7 +22,7 @@
 		..()
 		H.fully_replace_character_name("Confessor [current_name]")
 		H.add_stats(rand(10,13), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.add_skills(rand(2,4),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -252,12 +252,13 @@
 // clothing.
 // sororitas war gear based on the wiki page. it is power armor so it is strong, but it isn't as strong as astarte's power armor because sisters lack the black carapace, stats have been balanced around that.
 
-/obj/item/clothing/head/helmet/sisterelohiem
+/*obj/item/clothing/head/helmet/sisterelohiem
 	name = "Order of the Sacred Rose Helm"
 	desc = "A helmet branded with Imperium sigils and holy writs belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>Many claim they wish to destroy their enemies. If this were true, most would be compelled to destroy themselves.</i>"
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
+	species_restricted = list(SPECIES_ORK)*/
 
 /obj/item/clothing/suit/sisterelohiem
 	name = "Order of the Sacred Rose Chestpiece"
@@ -271,6 +272,7 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
 	canremove = 0 // they're specially fitted to that sister's body and can only be removed under certain circumstances. also to prevent abuse
+	species_restricted = list(SPECIES_HUMAN) // prevents orks from gibbing the limbs of the sister and then wearing her gear wtf.
 
 /obj/item/storage/backpack/satchel/warfare/sisterelohiem
 	name = "Order of the Sacred Rose Powerpack"
@@ -283,14 +285,16 @@
 	name = "Adepta Sororitas Bodysuit"
 	desc = "A bodysuit made with pious fabric covered in purity seals. It is worn beneath a suit of power armor, to ensure a comfortable fit. <i>The absence of faith is the mark of the weak, the absence of faith is the mark of the heretic, the absence of faith is the mark of damnation.</i>"
 	canremove = 0
+	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/gloves/sisterelohiem
 	name = "Order of the Sacred Rose Gauntlets"
 	desc = "Gauntlets covered in holy writing and iconography, belonging to an Adepta Soroitas power armor set. They are styled in the colors of the Order of the Sacred Rose. <i>By bolter shell, flamer burst and melta blast, the mutant, the heretic and the traitor alike are cleansed of their sin of existence. So has it been for five millennia, so shall it be unto the end of time.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 45, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 90, rad = 90)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
 	canremove = 0
+	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/shoes/sisterelohiem
 	name = "Order of the Sacred Rose Boots"
@@ -299,7 +303,8 @@
 	item_state = "sister"
 	can_hold_knife = 1
 	canremove = 0
-	armor = list(melee = 45, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 90, rad = 90)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
+	species_restricted = list(SPECIES_HUMAN)
 
 //ammo
 
