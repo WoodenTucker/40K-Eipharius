@@ -1,6 +1,6 @@
 /datum/job/guardsman
 	title = "Imperial Guardsman"
-	supervisors = "The Commissar and your Sergeant."
+	supervisors = "the Commissar and your Sergeant."
 	total_positions = 20
 	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
@@ -55,7 +55,7 @@
 
 /datum/job/sergeant
 	title = "Sergeant"
-	supervisors = "The Commissar and Astartes Envoy."
+	supervisors = "the Commissar"
 	total_positions = 2
 	spawn_positions = 2
 	selection_color = "#33813A"
@@ -67,7 +67,7 @@
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
-	department_flag = SEC|COM
+	department_flag = SEC
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
@@ -111,7 +111,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the astartes envoy"
+	supervisors = "the Rogue Trader"
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
@@ -156,7 +156,7 @@
 
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
-	supervisors = "The Commissar, the Rogue Trader, and the village Administrator"
+	supervisors = "the Village Administrator and the Rogue Trader"
 	total_positions = 4
 	spawn_positions = 4 //may need more than 2 idk
 	social_class = SOCIAL_CLASS_MED
@@ -198,7 +198,7 @@
 	/mob/living/carbon/human/proc/slaanesh,
 	/mob/living/carbon/human/proc/tzeentch)
 
-	to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Planetary Magistratum, your duty is to uphold outpost law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
 /*/datum/job/ig/impguard
 	title = "Adeptus Arbites"

@@ -786,3 +786,61 @@
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 	ammo_type = /obj/item/ammo_casing/krootbullet
+
+/obj/item/gun/projectile/sisterbolter
+	name = "Godwyn-De'az Pattern Bolter Rifle"
+	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
+	force = 30
+	sharp = 1
+	edge = 1
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+	str_requirement = 14 //"human sized"
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 30
+	caliber = ".75"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/bolter/sister
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	one_hand_penalty = 15
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "sisterbolter-30"
+	unloaded_icon = "sisterbolter-30-e"
+	fire_delay= 2
+	burst= 1
+	move_delay= 12
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 300 //Enough for one clean mag.
+
+/obj/item/gun/projectile/sisterbolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "sisterbolter-30"
+	else
+		icon_state = "sisterbolter-30-e"
+
+/obj/item/gun/projectile/bolter_pistol/sisterelohiem
+	name = "Godwyn-De'az Pattern Bolter Pistol"
+	desc = "A modified bolter pistol, developed specifically for the Adepta Sororitas. It is laden with holy text, markings, and purity seals. A large Sarissa is attached to the end of it, perfect for cutting down the Emperor's foe. <i>These heretics refute the Emperor's holy right to rule. Let them argue with the barrel of a gun.</i>"
+	icon_state = "sisterbpistol"
+	loaded_icon = "sisterbpistol"
+	force = 25
+	sharp = 1
+	edge = 1
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+
+/obj/item/gun/projectile/bolter_pistol/sisterelohiem/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "sisterbpistol"
+	else
+		icon_state = "sisterbpistol-e"
