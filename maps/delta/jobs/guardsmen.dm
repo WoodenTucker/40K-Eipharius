@@ -53,6 +53,8 @@
 	/mob/living/carbon/human/proc/tzeentch
 	)
 
+// Sergeant 
+
 /datum/job/sergeant
 	title = "Sergeant"
 	supervisors = "the Commissar"
@@ -95,7 +97,7 @@
 	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 	H.assign_squad_leader(IMPERIUM)
 	H.warfare_faction = IMPERIUM
-	if(alt_title == "Krieger Watchmaster")
+	if(alt_title == "Krieg Watchmaster")
 		var/troopnum = rand(1,50000)
 		H.fully_replace_character_name("Watchmaster [troopnum]")
 	else
@@ -108,6 +110,7 @@
 	/mob/living/carbon/human/proc/tzeentch
 	)
 
+// Commissar 
 
 /datum/job/ig/commissar
 	title = "Commissar"
@@ -153,6 +156,8 @@
 		/mob/living/carbon/human/proc/give_order,
 		/mob/living/carbon/human/proc/check_reinforcements
 	)
+
+// Enforcer 
 
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
@@ -200,6 +205,8 @@
 
 	to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Planetary Magistratum, your duty is to uphold outpost law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
+// Arbites 
+
 /*/datum/job/ig/impguard
 	title = "Adeptus Arbites"
 	total_positions = 1
@@ -221,7 +228,20 @@
 		H.fully_replace_character_name("Arbites [current_name]")
 		H.add_stats(18, rand(10,16), rand(15,18))
 		H.say(";Arbites reporting for duty!")
-*/ //ill find a job for these guys one day
+
+// Tau
+
+/decl/hierarchy/outfit/job/tau
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
 
 /decl/hierarchy/outfit/job/kroot
 	uniform = /obj/item/clothing/under/rank/kroot
@@ -236,21 +256,8 @@
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
 
+// Jeanstealer
 
-//Tau//
-/decl/hierarchy/outfit/job/tau
-	uniform = /obj/item/clothing/under/color/black
-	shoes = /obj/item/clothing/shoes/jackboots
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
-	id = null
-	id_slot = null
-	pda_slot = null
-
-//Genestealer//
 /decl/hierarchy/outfit/job/genestealer //really just for walking sounds
 	uniform = null
 	shoes = /obj/item/clothing/shoes/genestealerfeet
@@ -263,7 +270,8 @@
 	id_slot = null
 	pda_slot = null
 
-//Ork//
+// Ork
+
 /decl/hierarchy/outfit/job/ork
 	shoes = /obj/item/clothing/shoes/orkboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -292,6 +300,8 @@
 		head = /obj/item/clothing/head/helmet/orkhelmet/two
 		l_pocket = /obj/item/storage/box/ifak
 	..()
+
+// Beep boop i'm Mechanicus retard
 
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii
