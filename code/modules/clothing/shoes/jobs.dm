@@ -1,3 +1,5 @@
+// Rubber Boots
+
 /obj/item/clothing/shoes/galoshes
 	desc = "Rubber boots."
 	name = "galoshes"
@@ -10,6 +12,8 @@
 /obj/item/clothing/shoes/galoshes/Initialize()
 	. = ..()
 	slowdown_per_slot[slot_shoes] = 1
+
+// Jackboot
 
 /obj/item/clothing/shoes/jackboots
 	name = "Combat Boots"
@@ -56,6 +60,8 @@
 
 	overlays += I
 
+// Furry Stuff
+
 /obj/item/clothing/shoes/jackboots/unathi
 	name = "toe-less jackboots"
 	desc = "Modified pair of jackboots, particularly comfortable for those species whose toes hold claws."
@@ -68,6 +74,8 @@
 	desc = "A pair of toeless work boots designed for use in industrial settings. Modified for species whose toes have claws."
 	icon_state = "workbootstoeless"
 	species_restricted = null
+
+// Pilgrim Stuff
 
 /obj/item/clothing/shoes/workboots
 	name = "techno-boots"
