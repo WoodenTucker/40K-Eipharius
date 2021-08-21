@@ -2477,6 +2477,7 @@
 #include "maps\away\away_sites.dm"
 #include "maps\away\mining\mining_areas.dm"
 #include "maps\delta\warhammer.dm"
+#include "maps\delta\warhammer_areas.dm"
 #include "maps\delta\warhammer_define.dm"
 #include "maps\delta\outfits\guardsmen.dm"
 #include "maps\overmap_example\overmap_example_define.dm"
