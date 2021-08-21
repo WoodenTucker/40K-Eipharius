@@ -289,7 +289,7 @@
 	desc = "Gauntlets covered in holy writing and iconography, belonging to an Adepta Soroitas power armor set. They are styled in the colors of the Order of the Sacred Rose. <i>By bolter shell, flamer burst and melta blast, the mutant, the heretic and the traitor alike are cleansed of their sin of existence. So has it been for five millennia, so shall it be unto the end of time.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 45, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 90, rad = 90)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
 	canremove = 0
 
 /obj/item/clothing/shoes/sisterelohiem
@@ -299,7 +299,7 @@
 	item_state = "sister"
 	can_hold_knife = 1
 	canremove = 0
-	armor = list(melee = 45, bullet = 45, laser = 45, energy = 35, bomb = 35, bio = 90, rad = 90)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
 
 //ammo
 
