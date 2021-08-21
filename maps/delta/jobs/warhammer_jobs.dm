@@ -7,7 +7,7 @@
 	/datum/job/leadinquisitor,
 	/datum/job/inquisitor,
 	/datum/job/ig/commissar,
-	/datum/job/ig/sergeant,
+	/datum/job/sergeant,
 	/datum/job/guardsman,
 	/datum/job/cmo,
 	/datum/job/doctor,
