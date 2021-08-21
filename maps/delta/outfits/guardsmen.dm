@@ -260,27 +260,6 @@ r_pocket = null
 	/obj/item/stack/thrones3/five = 1,
 	)
 
-	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
-	suit = /obj/item/clothing/suit/armor/valhallasgt
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/valushanka
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
 	pda_slot = null
 
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
