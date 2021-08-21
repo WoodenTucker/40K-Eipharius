@@ -252,13 +252,13 @@
 // clothing.
 // sororitas war gear based on the wiki page. it is power armor so it is strong, but it isn't as strong as astarte's power armor because sisters lack the black carapace, stats have been balanced around that.
 
-/*obj/item/clothing/head/helmet/sisterelohiem
+/obj/item/clothing/head/helmet/sisterelohiem
 	name = "Order of the Sacred Rose Helm"
 	desc = "A helmet branded with Imperium sigils and holy writs belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>Many claim they wish to destroy their enemies. If this were true, most would be compelled to destroy themselves.</i>"
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
-	species_restricted = list(SPECIES_ORK)*/
+	species_restricted = list(SPECIES_ORK)
 
 /obj/item/clothing/suit/sisterelohiem
 	name = "Order of the Sacred Rose Chestpiece"
