@@ -47,10 +47,10 @@
 	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 	to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 	H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch
+	/mob/living/carbon/human/proc/khorne,
+	/mob/living/carbon/human/proc/nurgle,
+	/mob/living/carbon/human/proc/slaanesh,
+	/mob/living/carbon/human/proc/tzeentch
 	)
 
 /datum/job/sergeant
@@ -82,7 +82,7 @@
 
 	announced = FALSE
 
-/datum/job/sergeant/equip(var/mob/living/carbon/human/H)
+/datum/job/sergeant/equip(var/mob/living/carbon/human/H, alt_title)
 	var/current_name = H.real_name
 	..()
 	H.verbs += /mob/living/carbon/human/proc/morale_boost
@@ -105,8 +105,8 @@
 	/mob/living/carbon/human/proc/khorne,
 	/mob/living/carbon/human/proc/nurgle,
 	/mob/living/carbon/human/proc/slaanesh,
-	/mob/living/carbon/human/proc/tzeentch,
-	/mob/living/carbon/human/proc/sergeantselection,)
+	/mob/living/carbon/human/proc/tzeentch
+	)
 
 
 /datum/job/ig/commissar

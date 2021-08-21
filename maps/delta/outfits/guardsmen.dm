@@ -145,7 +145,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Krieger Watchmaster")
 	uniform = /obj/item/clothing/under/rank/krieg_uniform
 	suit = /obj/item/clothing/suit/armor/kriegsgt
-	back = /obj/item/storage/backpack/satchel/warfare/krieg
+	back = /obj/item/storage/backpack/satchel/krieger
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
