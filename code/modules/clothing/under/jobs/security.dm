@@ -228,7 +228,6 @@
 	name = "Astarte Bodysuit"
 	desc = "The bodysuit worn by Astartes underneath their Power Armour."
 	icon_state = "swatunder"
-	//item_state = "swatunder"
 	worn_state = "swatunder"
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
