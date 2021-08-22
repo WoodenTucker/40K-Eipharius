@@ -7,7 +7,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent/caraspace
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
+	belt = /obj/item/melee/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/inqhelm
@@ -22,6 +22,7 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
@@ -33,7 +34,7 @@ Begin Warhammer loadouts
 	uniform =/obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent/coat
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
+	belt = /obj/item/melee/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/inqhelm
@@ -49,6 +50,7 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1
