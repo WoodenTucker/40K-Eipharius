@@ -219,10 +219,12 @@
 // Mechanicus Stuff
 
 /obj/item/clothing/shoes/skitshoes //walking sounds only play with shoes and I was losing my mind not having them
-	name = "skitarri feet"
+	name = "Skitarii feet"
 	desc = "Augmented for speed and power"
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
+	siemens_coefficient = 1
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
 	canremove = 0
 
 /obj/item/clothing/shoes/technoboots
@@ -233,3 +235,39 @@
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 1
 	can_hold_knife = 1
+
+// Sororitas
+
+/obj/item/clothing/shoes/sisterelohiem
+	name = "Order of the Sacred Rose Power Boots"
+	desc = "A pair of Power Boots issued to the Battle Sisters of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	can_hold_knife = 1
+	canremove = 0
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/shoes/sisterelohiem/boots/New()
+	..()
+	knife = new
+	update_icon()
+
+/obj/item/clothing/shoes/sisterelohiem/boots/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/material/sword/combat_knife))
+		if(knife)//We've already got a knife in there, no need for another.
+			return
+		user.drop_from_inventory(I)
+		I.forceMove(src)
+		knife = I
+		update_icon()
+		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
+
+/obj/item/clothing/shoes/sisterelohiem/boots/attack_hand(mob/living/user)
+	if(knife)
+		user.put_in_active_hand(knife)
+		knife = null
+		update_icon()
+		return
+	..()
