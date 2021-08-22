@@ -582,7 +582,7 @@
 
 // Mechanicus Drip
 
-/obj/item/clothing/suit/storage/hooded/skitarri
+/obj/item/clothing/suit/storage/hooded/skitarii
 	name = "Skitarii Ceramite War Plate"
 	desc = "Forged by the Mechanicum, These War plate are durable, protective and extremely expensive to produce, Thus only given to the soulless Skitarii."
 	icon_state = "skitsuit"
