@@ -205,30 +205,6 @@
 
 	to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Planetary Magistratum, your duty is to uphold outpost law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
-// Arbites 
-
-/*/datum/job/ig/impguard
-	title = "Adeptus Arbites"
-	total_positions = 1
-	social_class = SOCIAL_CLASS_MIN
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 10
-	smg_skill = 3
-	can_be_in_squad = FALSE
-	open_when_dead = TRUE
-	department_flag = SEC
-	announced = FALSE
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
-		..()
-		H.fully_replace_character_name("Arbites [current_name]")
-		H.add_stats(18, rand(10,16), rand(15,18))
-		H.say(";Arbites reporting for duty!")*
-
 // Tau
 
 /decl/hierarchy/outfit/job/tau
@@ -317,3 +293,27 @@
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+
+// Arbites 
+
+/*/datum/job/ig/impguard
+	title = "Adeptus Arbites"
+	total_positions = 1
+	social_class = SOCIAL_CLASS_MIN
+	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 10
+	smg_skill = 3
+	can_be_in_squad = FALSE
+	open_when_dead = TRUE
+	department_flag = SEC
+	announced = FALSE
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Arbites [current_name]")
+		H.add_stats(18, rand(10,16), rand(15,18))
+		H.say(";Arbites reporting for duty!")
