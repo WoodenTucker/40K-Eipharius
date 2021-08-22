@@ -1,5 +1,5 @@
 /datum/job/guardsman
-	title = "Imperial Guardsman"
+	title = "Cadian Guardsman"
 	supervisors = "the Commissar and your Sergeant."
 	total_positions = 20
 	spawn_positions = 20
@@ -56,7 +56,7 @@
 // Sergeant 
 
 /datum/job/sergeant
-	title = "Sergeant"
+	title = "Cadian Sergeant"
 	supervisors = "the Commissar"
 	total_positions = 2
 	spawn_positions = 2
