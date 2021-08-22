@@ -595,7 +595,23 @@
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/skithood
 
- // Eldar
+// Adepta Sororitas
+
+/obj/item/clothing/suit/sisterelohiem
+	name = "Order of the Sacred Rose Power Armor"
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 0
+	species_restricted = list(SPECIES_HUMAN)
+
+// Eldar
 
 /obj/item/clothing/suit/armor/eldar
   name = "Guardian Mesh Armor"
@@ -607,7 +623,7 @@
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
- // Dark Eldar
+// Dark Eldar
 
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"
