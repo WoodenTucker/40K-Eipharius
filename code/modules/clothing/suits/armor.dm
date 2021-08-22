@@ -613,9 +613,9 @@
 
 
  //Begin DEldar//
-/obj/item/clothing/suit/armor/deldar
+/obj/item/clothing/suit/armor/darkeldar
   name = "Ghost Plate Armor"
-  desc = "A ancient armor. It looks as if made from hardened resins. It cackles with electrical power."
+  desc = "A ancient armor. It looks as if made from hardened resin in a thin-scale like pattern. It cackles with electrical power."
   icon_state = "deldarmor"
   item_state = "deldarmor"
   armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
