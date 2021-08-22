@@ -207,7 +207,7 @@
 
 // Arbites 
 
-//datum/job/ig/impguard
+////////datum/job/ig/impguard
 	title = "Adeptus Arbites"
 	total_positions = 1
 	social_class = SOCIAL_CLASS_MIN
