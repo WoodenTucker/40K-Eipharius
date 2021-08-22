@@ -6,8 +6,8 @@
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	alt_titles = list(
-		"Catachan Jungle Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
-		"Krieger Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
+		"Catachan Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
+		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Guardsman" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 	selection_color = "#33813A"
@@ -37,7 +37,7 @@
 	SSwarfare.red.team += H
 	if(can_be_in_squad)
 		H.assign_random_squad(IMPERIUM) //This should handle giving Guardsmen their radio headsets.
-	if(alt_title == "Krieger Guardsman")
+	if(alt_title == "Krieg Guardsman")
 		var/troopnum = rand(1,50000)
 		H.fully_replace_character_name("Guardsman [troopnum]")
 	else
@@ -65,7 +65,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
-		"Krieger Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
+		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
