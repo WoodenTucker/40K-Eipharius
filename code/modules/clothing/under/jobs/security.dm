@@ -232,3 +232,11 @@
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
+// Adepta Sororitas
+
+/obj/item/clothing/under/guard/uniform/sisterelohiem
+	name = "Adepta Sororitas Bodysuit"
+	desc = "If you can inspect this, you're a coomer, do not ERP.</i>"
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	species_restricted = list(SPECIES_HUMAN)
