@@ -2,289 +2,292 @@
 Begin Warhammer loadouts
 */
 
-/decl/hierarchy/outfit/job/guardsman
-	name = OUTFIT_JOB_NAME("Cadian Guardsman")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
+/decl/hierarchy/outfit/job/astarte
+	name = OUTFIT_JOB_NAME("Ultramarine Tactical Marine")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
+	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
+	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles
-	l_pocket = /obj/item/storage/box/ifak
-r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-
-	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-/decl/hierarchy/outfit/job/guardsman/krieg
-	name = OUTFIT_JOB_NAME("Krieg Guardsman")
-	uniform = /obj/item/clothing/under/rank/krieg_uniform
-	suit = /obj/item/clothing/suit/armor/krieger
-	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/krieg
-	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
-	mask = /obj/item/clothing/mask/gas/krieg
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/luscius
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
-	)
-
-/decl/hierarchy/outfit/job/guardsman/catachan
-	name = OUTFIT_JOB_NAME("Catachan Fighter")
-	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/CatachanVest
-	back = /obj/item/storage/backpack/warfare
-	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/catachan
+	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
+	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
-	glasses = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	)
-
-/decl/hierarchy/outfit/job/guardsman/valhallan
-	name = OUTFIT_JOB_NAME("Valhallan Guardsman")
-	uniform = /obj/item/clothing/under/rank/valhallan_uniform
-	suit = /obj/item/clothing/suit/armor/valhallanarmor
-	back = /obj/item/storage/backpack/warfare
-	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/valushanka
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	)
-
-/// Sergeant 
-
-/decl/hierarchy/outfit/job/sergeant
-	name = OUTFIT_JOB_NAME("Cadian Sergeant")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/cadiansgt
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-/decl/hierarchy/outfit/job/sergeant/krieg
-	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
-	uniform = /obj/item/clothing/under/rank/krieg_uniform
-	suit = /obj/item/clothing/suit/armor/kriegsgt
-	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/mercycs
-	gloves = /obj/item/clothing/gloves/combat/krieg
-	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
-	mask = /obj/item/clothing/mask/gas/krieg
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	/obj/item/shovel = 1
-	)
-
-/decl/hierarchy/outfit/job/sergeant/catachan
-	name = OUTFIT_JOB_NAME("Catachan Sergeant")
-	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/catachansgt
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/catachan
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-/decl/hierarchy/outfit/job/sergeant/valhallan
-	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
-	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
-	suit = /obj/item/clothing/suit/armor/valhallasgt
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/valushanka
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-/// Enforcer 
-
-/decl/hierarchy/outfit/job/ig/enforcer
-	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
-	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/enforcer
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/baton/loaded
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team/delta
-	backpack_contents = list(
-	/obj/item/ammo_box/shotgun = 2,
-	/obj/item/handcuffs = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	)
-
-	pda_slot = null
-
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-/// Commissar 
-
-/decl/hierarchy/outfit/job/ig/commissar
-	name = OUTFIT_JOB_NAME("Commissar")
-	uniform = /obj/item/clothing/under/color/black
-	suit = /obj/item/clothing/suit/armor/commissar
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/material/sword/commissword
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/commissar
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/binoculars
-	suit_store = /obj/item/gun/projectile/bolter_pistol
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-	/obj/item/grenade/smokebomb = 1,
-	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones3/ten = 1
 	)
 
+	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-//// TEMPLATE ///
-//decl/hierarchy/outfit/job/guardsman
-//  name = OUTFIT_JOB_NAME("Input Name")
-//  uniform = null
-//  suit = null
-//  back = null
-//  belt = null
-//  gloves = null
-//  shoes = null
-//  head = null
-//  mask = null
-//	l_ear = null
-//	r_ear = null
-//  glasses = null
-//	id = null
-//  l_pocket = null
-//	r_pocket = null
-//  suit_store = null
-//	r_hand = null
-//	l_hand = null
-//  neck = null
-//  backpack_contents = list(
-//  [ Item Path ] = 1,
-//  )
+/decl/hierarchy/outfit/job/astarte/ravenguard
+	name = OUTFIT_JOB_NAME("Ravenguard Tactical Marine")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
+	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/raven
+	head = /obj/item/clothing/head/helmet/astartes/ravenguard
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/ravenbolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/salamander
+	name = OUTFIT_JOB_NAME("Salamander Tactical Marine")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/salamander
+	back = /obj/item/storage/backpack/satchel/astartes/salamander
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
+	head = /obj/item/clothing/head/helmet/astartes/salamander
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/sallybolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/ultramarine/captain
+	name = OUTFIT_JOB_NAME("Ultramarine Company Captain")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/captain
+	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
+	belt = /obj/item/melee/pcsword
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
+	head = /obj/item/clothing/head/helmet/astartes/captain/ultramarine
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/smurfbolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/ravenguard/captain
+	name = OUTFIT_JOB_NAME("Ravenguard Company Captain")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/captain/ravenguard
+	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
+	belt = /obj/item/melee/pcsword
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/raven
+	head = /obj/item/clothing/head/helmet/astartes/captain/ravenguard
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/ravenbolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/salamander/captain
+	name = OUTFIT_JOB_NAME("Salamander Company Captain")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/captain/salamander
+	back = /obj/item/storage/backpack/satchel/astartes/salamander
+	belt = /obj/item/melee/pcsword
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
+	head = /obj/item/clothing/head/helmet/astartes/captain/salamander
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/sallybolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/ultramarine/apothecracy
+	name = OUTFIT_JOB_NAME("Ultramarine Apothecracy")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
+	back = /obj/item/storage/backpack/satchel/astartes/apothecary
+	belt = /obj/item/storage/belt/medical/full
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
+	head = /obj/item/clothing/head/helmet/astartes/apothecary
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor/apoc
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/melee/pcsword = 1
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/accessory/storage/black_vest = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/ravenguard/apothecracy
+	name = OUTFIT_JOB_NAME("Ravenguard Apothecracy")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
+	back = /obj/item/storage/backpack/satchel/astartes/apothecary
+	belt = /obj/item/storage/belt/medical/full
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/raven
+	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor/apoc
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/melee/pcsword = 1
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/accessory/storage/black_vest = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/salamander/apothecracy
+	name = OUTFIT_JOB_NAME("Salamander Apothecracy")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/apothecary/salamander
+	back = /obj/item/storage/backpack/satchel/astartes/apothecary
+	belt = /obj/item/storage/belt/medical/full
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
+	head = /obj/item/clothing/head/helmet/astartes/apothecary
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor/apoc
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
+	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/melee/pcsword = 1
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/accessory/storage/black_vest = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/ultramarine/tech
+	name = OUTFIT_JOB_NAME("Ultramarine Tech-Marine")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	belt = /obj/item/storage/belt/utility/full
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
+	head = /obj/item/clothing/head/helmet/astartes/techmarine
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/smurfbolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/accessory/storage/black_vest = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/ravenguard/tech
+	name = OUTFIT_JOB_NAME("Ravenguard Tech-Marine")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	belt = /obj/item/storage/belt/utility/full
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/suit/armor/astartes/ravenguard
+	head = /obj/item/clothing/head/helmet/astartes/techmarine
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/ravenbolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/accessory/storage/black_vest = 1
+	)
+
+/decl/hierarchy/outfit/job/astarte/salamander/tech
+	name = OUTFIT_JOB_NAME("Salamander Tech-Marine")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	belt = /obj/item/storage/belt/utility/full
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
+	head = /obj/item/clothing/head/helmet/astartes/techmarine
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/sallybolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/accessory/storage/black_vest = 1
+	)
