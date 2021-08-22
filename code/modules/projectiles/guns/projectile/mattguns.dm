@@ -82,6 +82,7 @@
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 20
+
 /obj/item/ammo_casing/krootbullet
 	name = "kroot slug"
 	desc = "An old worn out looking bullet casing."
@@ -235,10 +236,6 @@
 	desc = "Found either in your gun, in your satchel, or on the ground empty."
 	max_ammo = 20
 	icon_state = "autorifle"
-
-
-
-
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Mk.1 Armageddon"
@@ -542,10 +539,12 @@
 	max_ammo = 7
 	multiple_sprites = 1
 
+
+// Stubber //
+
 /obj/item/gun/projectile/automatic/stubber
-	name = "Auto-Stubber"
-	desc = "A trusted weapon of civitas enforcers and guardsmen alike."
-	//icon = 'icons/obj/gunx35.dmi'
+	name = "Vrak Pattern Heavy Stubber"
+	desc = "The Heavy Stubber is the Astra Militarum's standard issued support weapon, though crude and primitive, it's can provide what thousand of lasguns cannot: Its high rate of fire can fight off large amount of enemies, while it lacks armour-piercing capabilities and strength, it make up by sheer volumes of fire."
 	icon_state = "hmg"
 	item_state = "hmg"
 	str_requirement = 10
@@ -580,9 +579,11 @@
 	gun_type = GUN_LMG
 	condition = 150 //Enough for one clean mag.
 
+// Boltgun
+
 /obj/item/gun/projectile/ravenbolter //needs lots of work and love, ok standin for now
-	name = "raven guard bolter rifle"
-	desc = "The legendary weapon of the raven guard astartes, the bolter rifle."
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XIXth Chapter Raven Guards's colour scheme."
 	icon_state = "ravenbolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -620,8 +621,8 @@
 
 
 /obj/item/gun/projectile/smurfbolter //needs lots of work and love, ok standin for now
-	name = "ultramarine bolter rifle"
-	desc = "The legendary weapon of the Ultramarine astartes, the bolter rifle."
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -658,8 +659,8 @@
 		icon_state = "ultrabolter-e"
 
 /obj/item/gun/projectile/sallybolter //needs lots of work and love, ok standin for now
-	name = "salamander bolter rifle"
-	desc = "The legendary weapon of the Salamander astartes, the bolter rifle."
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sallybolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -696,10 +697,10 @@
 		icon_state = "sallybolter-e"
 
 /obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
-	name = "locke pattern bolt rifle"
-	desc = "The Locke-pattern weapon is a variant of an old Adeptus Arbites design and the most ‘common’ of these uncommon weapons found traded in the Koronus Expanse."
+	name = "Locke Pattern bolter"
+	desc = "The Locke Pattern Bolter, designed for Adepta Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
 	icon_state = "lockebolter"
-	str_requirement = 14 //Can't be a soyboy and hold this
+	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
 	force = 65
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -733,6 +734,45 @@
 	else
 		icon_state = "lockebolter-e"
 
+/obj/item/gun/projectile/sisterbolter
+	name = "Godwyn-De'az Pattern Bolter Rifle"
+	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
+	force = 30
+	sharp = 1
+	edge = 1
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+	str_requirement = 10
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 30
+	caliber = ".75"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/bolter/sister
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	one_hand_penalty = 15
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "sisterbolter-30"
+	unloaded_icon = "sisterbolter-30-e"
+	fire_delay= 2
+	burst= 1
+	move_delay= 12
+	automatic = 2
+	firemodes = list()
+	gun_type = GUN_LMG
+	condition = 300 //Enough for one clean mag.
+
+/obj/item/gun/projectile/sisterbolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "sisterbolter-30"
+	else
+		icon_state = "sisterbolter-30-e"
 
 //various kroot rifles, bolt action and lever
 
@@ -786,61 +826,3 @@
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 	ammo_type = /obj/item/ammo_casing/krootbullet
-
-/obj/item/gun/projectile/sisterbolter
-	name = "Godwyn-De'az Pattern Bolter Rifle"
-	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
-	force = 30
-	sharp = 1
-	edge = 1
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-	str_requirement = 14 //"human sized"
-	w_class = ITEM_SIZE_HUGE
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	max_shells = 30
-	caliber = ".75"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter/sister
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
-	one_hand_penalty = 15
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
-	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
-	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
-	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
-	loaded_icon = "sisterbolter-30"
-	unloaded_icon = "sisterbolter-30-e"
-	fire_delay= 2
-	burst= 1
-	move_delay= 12
-	automatic = 2
-	firemodes = list()
-	gun_type = GUN_LMG
-	condition = 300 //Enough for one clean mag.
-
-/obj/item/gun/projectile/sisterbolter/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "sisterbolter-30"
-	else
-		icon_state = "sisterbolter-30-e"
-
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem
-	name = "Godwyn-De'az Pattern Bolter Pistol"
-	desc = "A modified bolter pistol, developed specifically for the Adepta Sororitas. It is laden with holy text, markings, and purity seals. A large Sarissa is attached to the end of it, perfect for cutting down the Emperor's foe. <i>These heretics refute the Emperor's holy right to rule. Let them argue with the barrel of a gun.</i>"
-	icon_state = "sisterbpistol"
-	loaded_icon = "sisterbpistol"
-	force = 25
-	sharp = 1
-	edge = 1
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "sisterbpistol"
-	else
-		icon_state = "sisterbpistol-e"
