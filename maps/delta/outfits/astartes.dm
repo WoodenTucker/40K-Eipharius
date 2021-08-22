@@ -13,6 +13,7 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
 	glasses = /obj/item/clothing/glasses/astarte/visor
+	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/smurfbolter
