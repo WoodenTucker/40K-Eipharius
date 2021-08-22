@@ -191,7 +191,7 @@
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/gloves/sisterelohiem
-	name = "Order of the Sacred Rose Gauntlets"
+	name = "Order of the Sacred Rose Power Gauntlets"
 	desc = "Gauntlets of the Adepta Sororitas's Order Of Sacred Rose Battle Sisters, Part of their Power Armour System."
 	icon_state = "sister"
 	item_state = "sister"
