@@ -155,7 +155,7 @@
 	body_parts_covered = HEAD
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
-	flags_inv = HIDEEARS | BLOCKHAIR | HIDEFACE
+	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
 /obj/item/clothing/head/genehood
 	name = "genetor's hood"
