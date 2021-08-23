@@ -33,7 +33,7 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 
-	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/guardsman/krieg
 	name = OUTFIT_JOB_NAME("Krieger Guardsman")
@@ -106,7 +106,7 @@ Begin Warhammer loadouts
 
 	pda_slot = null
 
-	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/sergeant
 	name = OUTFIT_JOB_NAME("Cadian Sergeant")

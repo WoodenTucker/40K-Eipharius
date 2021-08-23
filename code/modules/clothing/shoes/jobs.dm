@@ -202,3 +202,26 @@
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
+
+//Eldar Stuff
+
+/obj/item/clothing/shoes/eldar
+  name = "Guardian Mesh Boots"
+  desc = "A ancient set of boots. It looks like it's made out of thermoplas in a scale like pattern. It has extra cushion to protect the wearers feet."
+  icon_state = "eldboots"
+  item_state = "eldboots"
+  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  cold_protection = FEET|LEGS
+  min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
+  //Dark Eldar Stuff
+
+/obj/item/clothing/shoes/darkeldar
+  name = "Ghostplate Boots"
+  desc = "A ancient set of boots. It looks like it's made out of hardened resin in a thin-scale like pattern. It has extra cushion to protect the wearers feet."
+  icon_state = "deldboots"
+  item_state = "deldboots"
+  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  cold_protection = FEET|LEGS
+  min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
