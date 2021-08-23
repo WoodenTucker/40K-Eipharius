@@ -76,7 +76,7 @@
 		return
 	var/mob/living/carbon/human/U = src
 	src.verbs -= /mob/living/carbon/human/proc/chapterselection
-	var/static/list/chapter = list("Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary", "Ultramarines", "Ultramarines techmarine", "Ultramarines Apothecary","Salamanders", "Salamanders Techmarine", "Salamanders Apothecary") //lists all possible chapters
+	var/static/list/chapter = list("Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary", "Ultramarines", "Ultramarines techmarine", "Ultramarines Apothecary","Salamanders", "Salamanders Techmarine", "Blood Ravens", "Salamanders Apothecary") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter and role", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
@@ -128,6 +128,23 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
+			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
+			)
+		if("Blood Ravens")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/bloodravens, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/bloodravens, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/brboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/bloodravens, slot_back)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
