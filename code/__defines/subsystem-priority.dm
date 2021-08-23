@@ -26,6 +26,7 @@
 #define SS_PRIORITY_PROCESSING    30	// Generic datum processor. Replaces objects processor.
 #define SS_PRIORITY_GARBAGE       25	// Garbage collection.
 #define SS_PRIORITY_VINES         25	// Spreading vine effects.
+#define SS_PRIORITY_SHUTTLE       20	// Shuttle Priority
 #define SS_PRIORITY_WIRELESS      10	// Wireless connection setup.
 #define SS_PRIORITY_PING          10	// Client ping.
 #define SS_PRIORITY_PROJECTILES   10	// Projectile processing!

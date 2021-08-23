@@ -55,16 +55,6 @@
 				res["[S.name] - [LZ.name]"] = LZ
 	return res
 
-/datum/shuttle/autodock/overmap/proc/get_location_name()
-	if(moving_status == SHUTTLE_INTRANSIT)
-		return "In transit"
-	return "[waypoint_sector(current_location)] - [current_location]"
-
-/datum/shuttle/autodock/overmap/proc/get_destination_name()
-	if(!next_location)
-		return "None"
-	return "[waypoint_sector(next_location)] - [next_location]"
-
 /datum/shuttle/autodock/overmap/proc/try_consume_fuel() //returns 1 if sucessful, returns 0 if error (like insufficient fuel)
 	if(!fuel_consumption)
 		return 1 //shuttles with zero fuel consumption are magic and can always launch
