@@ -6,10 +6,11 @@
 	var/moving_status = SHUTTLE_IDLE
 
 	var/area/shuttle_area //can be both single area type or a list of areas
-	var/obj/effect/shuttle_landmark/current_location
+	var/obj/effect/shuttle_landmark/current_location //This variable is type-abused initially: specify the landmark_tag, not the actual landmark.
 
 	var/arrive_time = 0	//the time at which the shuttle arrives when long jumping
-	var/flags = SHUTTLE_FLAGS_PROCESS
+	var/flags = 0
+	var/process_state = IDLE_STATE //Used with SHUTTLE_FLAGS_PROCESS, as well as to store current state.
 	var/category = /datum/shuttle
 
 	var/ceiling_type = /turf/unsimulated/floor/shuttle_ceiling
@@ -19,7 +20,10 @@
 
 	var/knockdown = 1 //whether shuttle downs non-buckled people when it moves
 
-	var/defer_initialisation = FALSE //this shuttle will/won't be initialised by something after roundstart
+	var/defer_initialisation = FALSE //this shuttle will/won't be initialised automatically. If set to true, you are responsible for initialzing the shuttle manually.
+	                                 //Useful for shuttles that are initialed by map_template loading, or shuttles that are created in-game or not used.
+	var/logging_home_tag   //Whether in-game logs will be generated whenever the shuttle leaves/returns to the landmark with this landmark_tag.
+	var/logging_access     //Controls who has write access to log-related stuff; should correlate with pilot access.
 
 /datum/shuttle/New(_name, var/obj/effect/shuttle_landmark/initial_location)
 	..()
@@ -39,7 +43,7 @@
 	if(initial_location)
 		current_location = initial_location
 	else
-		current_location = locate(current_location)
+		current_location = SSshuttles.get_landmark(current_location)
 	if(!istype(current_location))
 		CRASH("Shuttle \"[name]\" could not find its starting location.")
 
@@ -58,6 +62,7 @@
 
 	SSshuttles.shuttles -= src.name
 	SSshuttles.process_shuttles -= src
+	SSshuttles.shuttle_logs -= src
 	if(supply_controller.shuttle == src)
 		supply_controller.shuttle = null
 
@@ -141,6 +146,8 @@
 //	log_debug("move_shuttle() called for [shuttle_tag] leaving [origin] en route to [destination].")
 //	log_degug("area_coming_from: [origin]")
 //	log_debug("destination: [destination]")
+
+	//First of all, destroy obstacles and gib mobs in the landing zone
 	for(var/turf/src_turf in turf_translation)
 		var/turf/dst_turf = turf_translation[src_turf]
 		if(src_turf.is_solid_structure()) //in case someone put a hole in the shuttle and you were lucky enough to be under it
@@ -152,7 +159,11 @@
 					bug.gib()
 				else
 					qdel(AM) //it just gets atomized I guess? TODO throw it into space somewhere, prevents people from using shuttles as an atom-smasher
+
 	var/list/powernets = list()
+
+
+	//Erase ceilings, knockdown passengers, and cache powernets
 	for(var/area/A in shuttle_area)
 		// if there was a zlevel above our origin, erase our ceiling now we're leaving
 		if(HasAbove(current_location.z))
@@ -160,11 +171,10 @@
 				var/turf/TA = GetAbove(TO)
 				if(istype(TA, ceiling_type))
 					TA.ChangeTurf(get_base_turf_by_area(TA), 1, 1)
-
-		for(var/mob/M in A)
-			if(knockdown)
-				if(M.client)
-					spawn(0)
+		if(knockdown)
+			for(var/mob/M in A)
+				spawn(0)
+					if(istype(M, /mob/living/carbon))
 						if(M.buckled)
 							to_chat(M, "<span class='warning'>Sudden acceleration presses you into your chair!</span>")
 							shake_camera(M, 3, 1)
@@ -172,23 +182,10 @@
 							to_chat(M, "<span class='warning'>The floor lurches beneath you!</span>")
 							shake_camera(M, 10, 1)
 
-				if(ishuman(M))
-					var/mob/living/carbon/human/H = M
-					if(!H.buckled)
-						H.visible_message("<span class='warning'>[M.name] is tossed around by the sudden acceleration!</span>")
-						var/smashsound = pick("sound/effects/gore/smash[rand(1,3)].ogg", "sound/effects/gore/trauma1.ogg")
-						playsound(M, smashsound, 50, 1, -1)
-						H.emote("scream")
-						H.Stun(2)
-						H.Weaken(2)
-						step(H,pick(GLOB.cardinal))//move them
-						H.apply_damage(rand(30) , BRUTE)
-
-			shake_camera(M, 2, 1)
-
 		for(var/obj/structure/cable/C in A)
 			powernets |= C.powernet
 
+	//This does the actual moving
 	translate_turfs(turf_translation, current_location.base_area, current_location.base_turf)
 	current_location = destination
 
@@ -214,3 +211,13 @@
 //returns 1 if the shuttle has a valid arrive time
 /datum/shuttle/proc/has_arrive_time()
 	return (moving_status == SHUTTLE_INTRANSIT)
+
+/datum/shuttle/autodock/proc/get_location_name()
+	if(moving_status == SHUTTLE_INTRANSIT)
+		return "In transit"
+	return current_location.name
+
+/datum/shuttle/autodock/proc/get_destination_name()
+	if(!next_location)
+		return "None"
+	return next_location.name
