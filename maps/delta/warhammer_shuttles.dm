@@ -1,4 +1,4 @@
-///////////Shuttles\\\\\\\\\\\
+///////////Shuttles/////////
 
 /datum/shuttle/autodock/ferry/inquisition
 	name = "Inquisition"
