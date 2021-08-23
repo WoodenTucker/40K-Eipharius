@@ -84,6 +84,12 @@
 #define MAX_DESC_LEN          128
 #define MAX_TEXTFILE_LENGTH 128000		// 512GQ file
 
+//Shuttle mission stages
+#define SHUTTLE_MISSION_PLANNED  1
+#define SHUTTLE_MISSION_STARTED  2
+#define SHUTTLE_MISSION_FINISHED 3
+#define SHUTTLE_MISSION_QUEUED   4
+
 // Event defines.
 #define EVENT_LEVEL_MUNDANE  1
 #define EVENT_LEVEL_MODERATE 2
