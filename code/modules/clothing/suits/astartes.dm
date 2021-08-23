@@ -94,3 +94,9 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XVIIIth Chapter, Salamanders."
 	icon_state = "saltech"
 	item_state = "saltech"
+
+/obj/item/clothing/suit/armor/astartes/bloodravens
+	name = "Astarte Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's angels of death, This one bears the symbol of his position, Tactical Marine of the Blood Ravens."
+	icon_state = "bravsuit"
+	item_state = "bravsuit"
