@@ -169,7 +169,7 @@
 			return PROJECTILE_CONTINUE // complete projectile permutation
 
 //Reactive armor
-//When the wearer gets hit, this armor will teleport the user a short distance away (to safety or to more danger, no one knows. That's the fun of it!)
+
 /obj/item/clothing/suit/armor/reactive
 	name = "reactive teleport armor"
 	desc = "Someone separated our Research Director from their own head!"
@@ -243,22 +243,7 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 
-//Inquisitor Armors
-
-/obj/item/clothing/suit/armor/acolyte
-	name = "acolyte's coat"
-	desc = "A thick brown coat lined with a tough layer of flak-weave, dotted with the occassional Inquisitorial seal or holy sigil."
-	icon_state = "acolyte"
-	item_state = "acolyte"
-	blood_overlay_type = "coat"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor = list(melee = 50, bullet = 50, laser = 45, energy = 45, bomb = 25, bio = 0, rad = 0)
-
-
-
-//Begin Tau//
+// Tau
 
 /obj/item/clothing/suit/armor/fwarmor
 	name = "fire warrior armor"
@@ -273,7 +258,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 
-//FINALLY begin ork//
+// Ork
 
 /obj/item/clothing/suit/armor/orkarmor
 	name = "ork armor"
@@ -306,7 +291,7 @@
 	icon_state = "armRskull"
 	item_state = "armRskull"
 
-//Administratum, pilgrim armour
+// Pilgrim Stuff
 
 /obj/item/clothing/suit/armor/bountyhunter
 	name = "bounty hunter's armor"
@@ -340,51 +325,6 @@
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/agent
-	name = "agent's fine armor"
-	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest"
-	icon_state = "inqcoat"
-	item_state = "inqcoat"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 20, bio = 20, rad = 5)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-
-/obj/item/clothing/suit/armor/agent2
-	name = "agent's holy armor"
-	desc = "The fashionable and formidable armor of a principal agent, bears his masters Imperial rosette across his chest and seals of purity to ward off chaos"
-	icon_state = "acolytecoat"
-	item_state = "acolytecoat"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 20, bio = 20, rad = 5)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/storage/hooded/inquisitor
-	name = "inquisitor's immaculate armor"
-	desc = "The fashionable and formidable armor of an Imperial Inquisitor. Their rosette shines brightly upon their breast."
-	icon_state = "inqarmor"
-	item_state = "inqarmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 65, bullet = 65, laser = 65, energy = 45, bomb = 30, bio = 30, rad = 10)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	action_button_name = "Toggle Hood"
-	hoodtype = /obj/item/clothing/head/inqhood
-
-/obj/item/clothing/suit/storage/hooded/skitarri
-	name = "skitarri bodyplate and robes"
-	desc = "The beautifully designed body of a skitarii warrior and the holy robes that adorn him."
-	icon_state = "skitsuit"
-	item_state = "skitsuit"
-	canremove = 0
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 45, bomb = 30, bio = 30, rad = 10)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	action_button_name = "Toggle Hood"
-	hoodtype = /obj/item/clothing/head/skithood
 
 /obj/item/clothing/suit/storage/hooded/miner
 	name = "mining robes"
@@ -413,6 +353,7 @@
 
 /obj/item/clothing/suit/armor/slanclothing
 	var/slan = 1
+
 /obj/item/clothing/suit/armor/slanclothing/maleslan
 	name = "macabre clothing"
 	desc = "Elegant, fashionable, lavish!"
@@ -433,6 +374,8 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+// Sister Of Battle Relic
+
 /obj/item/sobrelic
 	name = "primeval order of our martyred lady chestpiece"
 	desc = "A primeval chestpiece of Adeptus Sororitas power armor, draped in the marks of the Order of Our Martyred Lady. It looks worn down, battle-hardened, and retired for good reason, yet it still radiates with holy energy."
@@ -446,17 +389,17 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES*/ // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
 
+////Astra Militarum
+
 /obj/item/clothing/suit/armor/enforcer
-	name = "enforcer's light armor"
-	desc = "The light and agile armor of an Imperial Enforcer, keeps you quick enough to chase down offenders."
+	name = "Cadian Pattern Flak Armour - Enforcer"
+	desc = "The flak armour worn by a Magistratum Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	icon_state = "Judge"
 	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 25, bomb = 20, bio = 10, rad = 0)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 10, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-////Astra Militarum
 
 /obj/item/clothing/suit/armor/guardsman
 	name = "Cadian Pattern Flak Armour - Medium"
@@ -594,6 +537,7 @@
 	desc = "The Commissar's magnificent, charismatic that strikes dreads and fears into the mind of lowly Imperial Guardsmen and heretics alike. Plated in Caraspace, giving it much more protection than average Guardsman."
 	icon_state = "Commissar4"
 	item_state = "Commissar4"
+	allowed = list(/obj/item/gun/projectile/bolter_pistol)
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -601,7 +545,73 @@
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
 
- //Begin Eldar//
+//Inquisitor Armors
+
+/obj/item/clothing/suit/armor/agent/caraspace
+	name = "Acolyte's Caraspace Armour"
+	desc = "The formidable, brillantly made Caraspace armour for the Inquistorial Agent, On it, bears the holy symbol of the Inquisition, The Rosette."
+	icon_state = "inqcoat"
+	item_state = "inqcoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+/obj/item/clothing/suit/armor/agent/coat
+	name = "Acolyte's Caraspace Coat"
+	desc = "The formidable, brillantly made Caraspace armour for the Inquistorial Agent, This one bears many holy seals along with it Rosette, to ward off the corruption of Chaos."
+	icon_state = "acolytecoat"
+	item_state = "acolytecoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/hooded/inquisitor
+	name = "Throne Agent's Ignatus Power Armour"
+	desc = "The Inquisitor's holy armour, forged by the Tech-priest of Mars for his use in his path of destruction toward enemies of our Emperor, Engraved the Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
+	icon_state = "inqarmor"
+	item_state = "inqarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 40, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/inqhood
+
+// Mechanicus Drip
+
+/obj/item/clothing/suit/storage/hooded/skitarii
+	name = "Skitarii Ceramite War Plate"
+	desc = "Forged by the Mechanicum, These War plate are durable, protective and extremely expensive to produce, Thus only given to the soulless Skitarii."
+	icon_state = "skitsuit"
+	item_state = "skitsuit"
+	canremove = 0
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 40, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/skithood
+
+// Adepta Sororitas
+
+/obj/item/clothing/suit/sisterelohiem
+	name = "Order of the Sacred Rose Power Armor"
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 0
+	species_restricted = list(SPECIES_HUMAN)
+
+// Eldar
 
 /obj/item/clothing/suit/armor/eldar
   name = "Guardian Mesh Armor"
@@ -612,9 +622,9 @@
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+// Dark Eldar
 
- //Begin DEldar//
-/obj/item/clothing/suit/armor/darkeldar
+/obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"
   desc = "A ancient armor. It looks as if made from hardened resin in a thin-scale like pattern. It cackles with electrical power."
   icon_state = "deldarmor"
@@ -622,5 +632,3 @@
   armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-

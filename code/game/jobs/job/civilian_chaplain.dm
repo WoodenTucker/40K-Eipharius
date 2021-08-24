@@ -217,10 +217,9 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
+		H.f_style = "shaved"
 		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.f_style = "shaved"
-		H.h_style = "Tight Shaved Mohawk"
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
 
 
@@ -248,72 +247,3 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/ten = 2,
 	)
-
-// clothing.
-// sororitas war gear based on the wiki page. it is power armor so it is strong, but it isn't as strong as astarte's power armor because sisters lack the black carapace, stats have been balanced around that.
-
-/obj/item/clothing/head/helmet/sisterelohiem
-	name = "Order of the Sacred Rose Helm"
-	desc = "A helmet branded with Imperium sigils and holy writs belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>Many claim they wish to destroy their enemies. If this were true, most would be compelled to destroy themselves.</i>"
-	icon_state = "sister"
-	item_state = "sister"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
-	species_restricted = list(SPECIES_ORK)
-
-/obj/item/clothing/suit/sisterelohiem
-	name = "Order of the Sacred Rose Chestpiece"
-	desc = "A blessed chestpiece belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>There is only duty and blood. There are only deeds and words. There is only the service to the God-Emperor, and the price that demands from each Sister can only be known by Him.</i>"
-	icon_state = "sister"
-	item_state = "sister"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	flags_inv = HIDEJUMPSUIT
-	canremove = 0 // they're specially fitted to that sister's body and can only be removed under certain circumstances. also to prevent abuse
-	species_restricted = list(SPECIES_HUMAN) // prevents orks from gibbing the limbs of the sister and then wearing her gear wtf.
-
-/obj/item/storage/backpack/satchel/warfare/sisterelohiem
-	name = "Order of the Sacred Rose Powerpack"
-	desc = "A sanctified powerpack belonging to an Adepta Sororitas power armor set. It is styled in the colors of the Order of the Sacred Rose. <i>When the people forget their duty they are no longer human and become something less than beasts. They have no place in the bosom of humanity nor in the heart of the Emperor. Let them die and be forgotten</i>"
-	icon_state = "sister"
-	max_storage_space = DEFAULT_BACKPACK_STORAGE
-	canremove = 0
-
-/obj/item/clothing/under/guard/uniform/sisterelohiem
-	name = "Adepta Sororitas Bodysuit"
-	desc = "A bodysuit made with pious fabric covered in purity seals. It is worn beneath a suit of power armor, to ensure a comfortable fit. <i>The absence of faith is the mark of the weak, the absence of faith is the mark of the heretic, the absence of faith is the mark of damnation.</i>"
-	canremove = 0
-	species_restricted = list(SPECIES_HUMAN)
-
-/obj/item/clothing/gloves/sisterelohiem
-	name = "Order of the Sacred Rose Gauntlets"
-	desc = "Gauntlets covered in holy writing and iconography, belonging to an Adepta Soroitas power armor set. They are styled in the colors of the Order of the Sacred Rose. <i>By bolter shell, flamer burst and melta blast, the mutant, the heretic and the traitor alike are cleansed of their sin of existence. So has it been for five millennia, so shall it be unto the end of time.</i>"
-	icon_state = "sister"
-	item_state = "sister"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
-	canremove = 0
-	species_restricted = list(SPECIES_HUMAN)
-
-/obj/item/clothing/shoes/sisterelohiem
-	name = "Order of the Sacred Rose Boots"
-	desc = "A pair of boots immersed in Imperium scripture belonging to an Adepta Sororitas power armor set. They are styled in the colors of the Order of the Sacred Rose. <i>Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.</i>"
-	icon_state = "sister"
-	item_state = "sister"
-	can_hold_knife = 1
-	canremove = 0
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 50, bomb = 60, bio = 90, rad = 90)
-	species_restricted = list(SPECIES_HUMAN)
-
-//ammo
-
-/obj/item/ammo_magazine/bolt_rifle_magazine/sister
-	name = "godwyn-de'az pattern bolter rifle magazine"
-	ammo_type = /obj/item/ammo_casing/bolter/sister
-
-/obj/item/projectile/bullet/bolt/sister
-	damage = 70 // sisters aren't as strong as an astartes so their bolts pack less of a punch yet they're still deadly.
-
-/obj/item/ammo_casing/bolter/sister
-	projectile_type = /obj/item/projectile/bullet/bolt/sister
