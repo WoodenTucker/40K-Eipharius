@@ -42,6 +42,7 @@
 		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.f_style = "shaved"
+		H.h_style = "Bob"
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people</font></b></span>")
 
@@ -76,6 +77,7 @@
 		H.gender = FEMALE
 		H.warfare_faction = IMPERIUM
 		H.f_style = "shaved"
+		H.h_style = "Bob"
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,

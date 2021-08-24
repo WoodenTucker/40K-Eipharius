@@ -1,13 +1,13 @@
 /datum/job/guardsman
-	title = "Cadian Guardsman"
+	title = "Imperial Guardsman"
 	supervisors = "the Commissar and your Sergeant."
 	total_positions = 20
 	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	alt_titles = list(
-		"Catachan Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
-		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
+		"Catachan Jungle Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
+		"Krieger Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Guardsman" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 	selection_color = "#33813A"
@@ -37,7 +37,7 @@
 	SSwarfare.red.team += H
 	if(can_be_in_squad)
 		H.assign_random_squad(IMPERIUM) //This should handle giving Guardsmen their radio headsets.
-	if(alt_title == "Krieg Guardsman")
+	if(alt_title == "Krieger Guardsman")
 		var/troopnum = rand(1,50000)
 		H.fully_replace_character_name("Guardsman [troopnum]")
 	else
@@ -53,10 +53,8 @@
 	/mob/living/carbon/human/proc/tzeentch
 	)
 
-// Sergeant 
-
 /datum/job/sergeant
-	title = "Cadian Sergeant"
+	title = "Sergeant"
 	supervisors = "the Commissar"
 	total_positions = 2
 	spawn_positions = 2
@@ -65,7 +63,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
-		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
+		"Krieger Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -97,7 +95,7 @@
 	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 	H.assign_squad_leader(IMPERIUM)
 	H.warfare_faction = IMPERIUM
-	if(alt_title == "Krieg Watchmaster")
+	if(alt_title == "Krieger Watchmaster")
 		var/troopnum = rand(1,50000)
 		H.fully_replace_character_name("Watchmaster [troopnum]")
 	else
@@ -110,7 +108,6 @@
 	/mob/living/carbon/human/proc/tzeentch
 	)
 
-// Commissar 
 
 /datum/job/ig/commissar
 	title = "Commissar"
@@ -156,8 +153,6 @@
 		/mob/living/carbon/human/proc/give_order,
 		/mob/living/carbon/human/proc/check_reinforcements
 	)
-
-// Enforcer 
 
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
@@ -205,19 +200,28 @@
 
 	to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Planetary Magistratum, your duty is to uphold outpost law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
-// Tau
-
-/decl/hierarchy/outfit/job/tau
-	uniform = /obj/item/clothing/under/color/black
-	shoes = /obj/item/clothing/shoes/jackboots
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
-	id = null
-	id_slot = null
-	pda_slot = null
+/*/datum/job/ig/impguard
+	title = "Adeptus Arbites"
+	total_positions = 1
+	social_class = SOCIAL_CLASS_MIN
+	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 10
+	smg_skill = 3
+	can_be_in_squad = FALSE
+	open_when_dead = TRUE
+	department_flag = SEC
+	announced = FALSE
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Arbites [current_name]")
+		H.add_stats(18, rand(10,16), rand(15,18))
+		H.say(";Arbites reporting for duty!")
+*/ //ill find a job for these guys one day
 
 /decl/hierarchy/outfit/job/kroot
 	uniform = /obj/item/clothing/under/rank/kroot
@@ -232,8 +236,21 @@
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
 
-// Jeanstealer
 
+//Tau//
+/decl/hierarchy/outfit/job/tau
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+
+//Genestealer//
 /decl/hierarchy/outfit/job/genestealer //really just for walking sounds
 	uniform = null
 	shoes = /obj/item/clothing/shoes/genestealerfeet
@@ -246,8 +263,7 @@
 	id_slot = null
 	pda_slot = null
 
-// Ork
-
+//Ork//
 /decl/hierarchy/outfit/job/ork
 	shoes = /obj/item/clothing/shoes/orkboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -277,8 +293,6 @@
 		l_pocket = /obj/item/storage/box/ifak
 	..()
 
-// Beep boop i'm Mechanicus retard
-
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii
 	uniform = /obj/item/clothing/under/rank/skitarii
@@ -293,27 +307,3 @@
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
-
-// Arbites 
-
-/*/datum/job/ig/impguard
-	title = "Adeptus Arbites"
-	total_positions = 1
-	social_class = SOCIAL_CLASS_MIN
-	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 10
-	smg_skill = 3
-	can_be_in_squad = FALSE
-	open_when_dead = TRUE
-	department_flag = SEC
-	announced = FALSE
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
-		..()
-		H.fully_replace_character_name("Arbites [current_name]")
-		H.add_stats(18, rand(10,16), rand(15,18))
-		H.say(";Arbites reporting for duty!")

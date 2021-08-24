@@ -305,7 +305,7 @@
 	return
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
-	name = "Boltpistol Magazine"
+	name = "bolt pistol magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -319,7 +319,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/bolt_rifle_magazine
-	name = "Bolter Magazine"
+	name = "bolt rifle magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -331,6 +331,10 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	name = "godwyn-de'az pattern bolter rifle magazine"
+	ammo_type = /obj/item/ammo_casing/bolter/sister
 
 /* ork mags */
 

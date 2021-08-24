@@ -1,3 +1,13 @@
+/*
+ * Contains:
+ *		Security
+ *		Detective
+ *		Commissar
+ */
+
+/*
+ * Security
+ */
 /obj/item/clothing/under/rank/warden
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Warden\" written on the shoulders."
 	name = "warden's jumpsuit"
@@ -60,6 +70,9 @@
 	armor = list(melee = 10, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
+/*
+ * Detective
+ */
 /obj/item/clothing/under/det
 	name = "detective's suit"
 	desc = "A rumpled white dress shirt paired with well-worn grey slacks."
@@ -104,6 +117,10 @@
 	icon_state = "detective2"
 	desc = "A grey fedora - either the cornerstone of a detective's style or a poor attempt at looking cool, depending on the person wearing it."
 
+
+/*
+ * Commissar
+ */
 /obj/item/clothing/under/rank/head_of_security
 	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Commissar\". It has additional armor to protect the wearer."
 	name = "Commissar's jumpsuit"
@@ -159,6 +176,10 @@
 	flags_inv = 0
 	siemens_coefficient = 0.6
 
+/*
+ * Navy uniforms
+ */
+
 /obj/item/clothing/under/rank/security/navyblue
 	name = "security officer's uniform"
 	desc = "The latest in fashionable security outfits."
@@ -167,7 +188,7 @@
 	worn_state = "officerblueclothes"
 
 /obj/item/clothing/under/rank/head_of_security/navyblue
-	desc = "The insignia on this uniform tells you that this uniform belongs to the Head Of Security."
+	desc = "The insignia on this uniform tells you that this uniform belongs to the Commissar."
 	name = "Commissar's uniform"
 	icon_state = "hosblueclothes"
 	item_state = "ba_suit"
@@ -221,22 +242,3 @@
 	icon_state = "camopants"
 	cold_protection = LOWER_TORSO
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-// Astarte
-
-/obj/item/clothing/under/astarte/bodysuit
-	name = "Astarte Bodysuit"
-	desc = "The bodysuit worn by Astartes underneath their Power Armour."
-	icon_state = "swatunder"
-	worn_state = "swatunder"
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
-	siemens_coefficient = 0.9
-
-// Adepta Sororitas
-
-/obj/item/clothing/under/guard/uniform/sisterelohiem
-	name = "Adepta Sororitas Bodysuit"
-	desc = "If you can inspect this, you're a coomer, do not ERP."
-	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
-	siemens_coefficient = 0.9
-	species_restricted = list(SPECIES_HUMAN)

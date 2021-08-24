@@ -305,6 +305,7 @@
 		explosion(target, -1, 0, 2)
 	..()
 
+
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 85 //ow
