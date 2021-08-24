@@ -622,12 +622,11 @@
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-
 // Dark Eldar
 
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"
-  desc = "A ancient armor. It looks as if made from hardened resins. It cackles with electrical power."
+  desc = "A ancient armor. It looks as if made from hardened resin in a thin-scale like pattern. It cackles with electrical power."
   icon_state = "deldarmor"
   item_state = "deldarmor"
   armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)

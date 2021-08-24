@@ -254,6 +254,12 @@
 	icon_state = "ravpack"
 	item_state = "ravpack"
 
+/obj/item/storage/backpack/satchel/astartes/bloodravens
+	name = "Blood Ravens powerpack"
+	desc = "A Blood Raven powerpack"
+	icon_state = "bravpack"
+	item_state = "bravpack"
+
 /obj/item/storage/backpack/satchel/astartes/salamander
 	name = "Astarte Mark VII Powerpack"
 	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XVIIIth Chapter, Salamanders."
