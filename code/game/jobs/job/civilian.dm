@@ -235,7 +235,7 @@
 	selection_color = "#FF3A3A"
 	economic_modifier = 7
 	minimal_player_age = 10
-	outfit_type = /decl/hierarchy/outfit/job/acolyte/malleus
+	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
 		"Ordo Hereticus" = /decl/hierarchy/outfit/job/acolyte/hereticus
 		)
@@ -274,7 +274,7 @@
 	economic_modifier = 7
 	minimal_player_age = 21
 	open_when_dead = 0
-	outfit_type = /decl/hierarchy/outfit/job/inquisitor/malleus
+	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 	alt_titles = list(
 		"Ordo Hereticus" = /decl/hierarchy/outfit/job/inquisitor/hereticus
 		)
