@@ -170,6 +170,15 @@
 
 // Astra Militarum Stuff
 
+/obj/item/clothing/head/helmet/guardhelmet/enforcer
+	name = "Magistratum Enforcers Helmet"
+	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in dark blue colour."
+	icon_state = "Jhelm2"
+	item_state = "Jhelm2"
+	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 20, bio = 0, rad = 0)
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it forehead."
@@ -185,15 +194,6 @@
 	icon_state = "medicae"
 	item_state = "medicae"
 	armor = list(melee = 20, bullet = 10, laser = 10,energy = 10, bomb = 20, bio = 0, rad = 0)
-	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/guardhelmet/enforcer
-	name = "Planetary Enforcers Helmet"
-	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in dark blue colour."
-	icon_state = "Jhelm2"
-	item_state = "Jhelm2"
-	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 20, bio = 0, rad = 0)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -403,3 +403,14 @@
 	item_state = "inq_helm"
 	armor = list(melee = 50, bullet = 50, laser = 50,energy = 50, bomb = 20, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
+
+
+// Adepta Sororitas
+
+/obj/item/clothing/head/helmet/sisterelohiem
+	name = "Order of the Sacred Rose Power Helmet"
+	desc = "An helmet issued to the Battle Sister of the Adepta Sororitas Militant Wing, This one bears the Sigil of the Order of The Sacred Rose, If you looks closely, you can see it's omits holy power, making you feels safer and secure.</i>"
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	species_restricted = list(SPECIES_ORK)
