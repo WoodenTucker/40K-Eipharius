@@ -760,7 +760,7 @@
 //various kroot rifles, bolt action and lever
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
-	name = "\improper Kroot Bolt Rifle"
+	name = "improper Kroot Bolt Rifle"
 	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
@@ -772,15 +772,17 @@
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
-	name = "\improper Kroot Bolt Rifle"
+	name = "improper Kroot Bolt Rifle"
 	force = 40
 	sharp = 1
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
-	name = "\improper Kroot Lever Rifle"
+	name = "improper Kroot Lever Rifle"
 	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
@@ -794,8 +796,9 @@
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
 	ammo_type = /obj/item/ammo_casing/krootbullet
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
-	name = "\improper Kroot Lever Rifle"
+	name = "improper Kroot Lever Rifle"
 	force = 40
 	sharp = 1
 	force_wielded = 40
