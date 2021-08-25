@@ -305,7 +305,7 @@
 	return
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
-	name = "bolt pistol magazine"
+	name = "Boltpistol Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -319,7 +319,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/bolt_rifle_magazine
-	name = "bolt rifle magazine"
+	name = "Bolter Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
