@@ -58,7 +58,7 @@ Begin Warhammer loadouts
 	mask = null
 	glasses = null
 
-/// Sergeant 
+/// Sergeant
 
 /decl/hierarchy/outfit/job/sergeant
 	name = OUTFIT_JOB_NAME("Cadian Sergeant")
@@ -82,6 +82,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
+
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -96,7 +97,6 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
-	)
 
 /decl/hierarchy/outfit/job/sergeant/catachan
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
@@ -105,7 +105,6 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/catachan
 	mask = null
 	glasses = null
-	)
 
 /decl/hierarchy/outfit/job/sergeant/valhallan
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
@@ -114,9 +113,8 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = null
-	)
 
-/// Enforcer 
+/// Enforcer
 
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
@@ -148,7 +146,7 @@ Begin Warhammer loadouts
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/// Commissar 
+/// Commissar
 
 /decl/hierarchy/outfit/job/ig/commissar
 	name = OUTFIT_JOB_NAME("Commissar")
