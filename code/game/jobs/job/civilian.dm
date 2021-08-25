@@ -224,24 +224,27 @@
 	outfit_type = /decl/hierarchy/outfit/job/librarian
 
 /datum/job/inquisitor
-	title = "Principal Agent"
+	title = "Acolyte"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 3
 	spawn_positions = 3
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
-	supervisors = "The Golden Throne, the Ministorum, the Ordos Hereticus"
+	supervisors = "The Golden Throne, the Ministorum, the Inquisition."
 	selection_color = "#FF3A3A"
 	economic_modifier = 7
 	minimal_player_age = 10
-	outfit_type = /decl/hierarchy/outfit/job/internal_affairs_agent
+	outfit_type = /decl/hierarchy/outfit/job/acolyte
+	alt_titles = list(
+		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
+		)
 	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Agent [current_name]")
+		H.fully_replace_character_name("Acolyte [current_name]")
 		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //highly trained and skilled
 		H.add_skills(rand(5,8),rand(5,8),rand(2,4),rand(1,3),0)
 		H.assign_random_quirk()
@@ -250,7 +253,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Principle agent of the Ordos Helican, your Master, a fully fledged Inquisitor has ordered you to this planet to perform reconaissance and keep an eye on the various pilgrims/penitents passing through. Report any heresy, suffer not the heretic to live.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are an inquisitor-in-training, referred as Acolyte, Your task is to assist the Throne Agent, Lord Inquisitor in investigating, neutralising and erasing traces of heresy, chaos, xenos and daemons.</font></b></span>")
 
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
@@ -264,7 +267,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
-	supervisors = "The Golden Throne, the Ordos Hereticus, Lord Inquisitor Rorkan and the masters of the Ordos Helican"
+	supervisors = "The Golden Throne, the Inquisition, Lord Inquisitor Rorkan and the masters of the Ordos Helican."
 	selection_color = "#fd0707"
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
@@ -272,6 +275,9 @@
 	minimal_player_age = 21
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
+	alt_titles = list(
+		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
+		)
 	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
@@ -288,13 +294,12 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.inquisitor = 1
 		H.verbs += list(/mob/living/carbon/human/proc/declareheretic,)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a full-fledged Inquisitor of the Ordos Hereticus Helican. You answer directly to Lord Inquisitor Alessandro Rorken. He has deployed you and your team to this outpost after certain... whispers reached the ears of the Inquisition. Investigate the outpost and its surrounding village, root out any heresy with the help of your principal agents and secure the safety of the faithful. The Emperor Protects! </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium. As full-fledged Inquisitor. Your task is to seek and destroy enemies of the Imperium, whether they're daemons, Chaos, Xenos or Heretics. The Emperor Protects.</font></b></span>")
 
 /datum/job/leadinquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(H)
-
 
 /datum/job/undertaker
 	title = "Undertaker"
@@ -312,9 +317,6 @@
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
 	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
 	announced = FALSE
-
-
-
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //kids are dumb and weak
