@@ -231,34 +231,9 @@
 	desc = "A pair of Power Boots issued to the Battle Sisters of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	can_hold_knife = 1
 	canremove = 0
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
-
-/obj/item/clothing/shoes/sisterelohiem/boots/New()
-	..()
-	knife = new
-	update_icon()
-
-/obj/item/clothing/shoes/sisterelohiem/boots/attackby(obj/item/I, mob/user)
-	. = ..()
-	if(istype(I, /obj/item/material/sword/combat_knife))
-		if(knife)//We've already got a knife in there, no need for another.
-			return
-		user.drop_from_inventory(I)
-		I.forceMove(src)
-		knife = I
-		update_icon()
-		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
-
-/obj/item/clothing/shoes/sisterelohiem/boots/attack_hand(mob/living/user)
-	if(knife)
-		user.put_in_active_hand(knife)
-		knife = null
-		update_icon()
-		return
-	..()
 
 //Eldar Stuff
 
@@ -279,4 +254,4 @@
   item_state = "deldboots"
   armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = FEET|LEGS
-  min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE 
+  min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE

@@ -51,7 +51,7 @@
 	/mob/living/carbon/human/proc/tzeentch
 	)
 
-// Sergeant 
+// Sergeant
 
 /datum/job/sergeant
 	title = "Cadian Sergeant"
@@ -105,7 +105,7 @@
 	/mob/living/carbon/human/proc/tzeentch
 	)
 
-// Commissar 
+// Commissar
 
 /datum/job/ig/commissar
 	title = "Commissar"
@@ -149,7 +149,7 @@
 		/mob/living/carbon/human/proc/check_reinforcements
 	)
 
-// Enforcer 
+// Enforcer
 
 /datum/job/ig/enforcer
 	title = "Magistratum Enforcer"
@@ -270,7 +270,7 @@
 //Skitarii
 /decl/hierarchy/outfit/job/skitarii
 	uniform = /obj/item/clothing/under/rank/skitarii
-	suit = /obj/item/clothing/suit/storage/hooded/skitarri
+	suit = /obj/item/clothing/suit/storage/hooded/skitarii
 	shoes = /obj/item/clothing/shoes/skitshoes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -282,7 +282,7 @@
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
-// Arbites 
+// Arbites
 
 /*datum/job/ig/impguard
 	title = "Adeptus Arbites"
