@@ -1,7 +1,3 @@
-*All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
-Begin Warhammer loadouts
-*/
-
 /decl/hierarchy/outfit/job/acolyte
 	name = OUTFIT_JOB_NAME("Ordo Hereticus Acolyte")
 	uniform = /obj/item/clothing/under/rank/principalagent
@@ -32,11 +28,10 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/acolyte/malleus
 	name = OUTFIT_JOB_NAME("Ordo Malleus Acolyte")
 	suit = /obj/item/clothing/suit/armor/agent/coat
-	)
 
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor Of Ordo Hereticus")
-	uniform = obj/item/clothing/under/rank/principalagent
+	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/inqcs

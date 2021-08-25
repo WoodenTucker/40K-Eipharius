@@ -19,7 +19,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -37,22 +37,11 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = null
-	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
-	glasses = /obj/item/clothing/glasses/astarte/visor
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
-	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
-	)
 
 /decl/hierarchy/outfit/job/astarte/salamander
 	name = OUTFIT_JOB_NAME("Salamander Tactical Marine")
@@ -60,22 +49,9 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = null
-	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
-	mask = null
-	glasses = /obj/item/clothing/glasses/astarte/visor
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/sallybolter
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
-	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
-	)
 
 /decl/hierarchy/outfit/job/astarte/ultramarine/captain
 	name = OUTFIT_JOB_NAME("Ultramarine Company Captain")
@@ -93,7 +69,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -116,7 +92,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -139,7 +115,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/sallybolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -162,8 +138,8 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2
+	/obj/item/melee/pcsword = 1,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -187,8 +163,8 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2
+	/obj/item/melee/pcsword = 1,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -212,8 +188,8 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2
+	/obj/item/melee/pcsword = 1,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -237,7 +213,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -261,7 +237,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -285,7 +261,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/sallybolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
