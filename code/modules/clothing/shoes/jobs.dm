@@ -271,6 +271,7 @@
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
   //Dark Eldar Stuff
+
 /obj/item/clothing/shoes/darkeldar
   name = "Ghostplate Boots"
   desc = "A ancient set of boots. It looks like it's made out of hardened resin in a thin-scale like pattern. It has extra cushion to protect the wearers feet."
