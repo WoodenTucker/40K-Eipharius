@@ -25,7 +25,6 @@
 	add_bayonet()
 	desc += " This one has a bayonet."
 
-
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
 	name = "\improper Mark I Snapper"
 	desc = "The lever action version of the Stormrider. Has all the same benefits and issues."
@@ -39,14 +38,15 @@
 	forwardsound = 'sound/weapons/guns/interact/la_forward.ogg'
 	empty_icon = "leverchester-e"
 
-
 //Paryying.
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
 		return 1
 	return 0
 
 //AMMO
+
 /obj/item/ammo_casing/brifle
 	desc = "An old worn out looking bullet casing."
 	caliber = "763"
@@ -91,8 +91,8 @@
 	spent_icon = "krootcasing"
 	ammo_stack = /obj/item/ammo_magazine/handful/kroot_handful/two
 
-
 //Shitty shotgun
+
 /obj/item/gun/projectile/shotgun/pump/shitty
 	name = "\improper WTX Frontier Special"
 	desc = "A common shotgun used for crowd control. It's not the best made and is prone to jamming."
@@ -120,7 +120,6 @@
 	max_shells = 4
 	empty_icon = "sawnchester-e"
 
-
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
 	name = "\improper WTX Reckoning"
 	desc = "Small looking shotgun that fires a powerful shot."
@@ -128,7 +127,6 @@
 	item_state = "smallshotty"
 	wielded_item_state = "smallshotty-wielded"
 	empty_icon = "smallshotty-e"
-
 
 /obj/item/gun/projectile/shotgun/pump/shitty/bayonet
 	force = 20
@@ -140,7 +138,6 @@
 	..()
 	add_bayonet()
 	desc += " This one has a bayonet."
-
 
 
 /obj/item/gun/projectile/automatic/m22/warmonger
@@ -164,7 +161,6 @@
 	firemodes = list()
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
-
 
 /obj/item/gun/projectile/automatic/m22/warmonger/fully_auto
 	name = "Mk.5 Warmonger"
@@ -190,7 +186,6 @@
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 3, 5), automatic = 2)
 		)
-
 
 /obj/item/gun/projectile/automatic/m22/warmonger/fully_auto/nemesis
 	name = "Mk.1 Nemesis"
@@ -236,10 +231,6 @@
 	max_ammo = 20
 	icon_state = "autorifle"
 
-
-
-
-
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Mk.1 Armageddon"
 	desc = "A very powerful semi automatic rifle. Much nicer than whatever scrap those medics are using."
@@ -263,7 +254,6 @@
 
 /obj/item/ammo_magazine/a762/m14/battlerifle_mag
 	name = "Armageddon magazine"
-
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
 	name = "Mk.1 Armageddon"
@@ -321,7 +311,6 @@
 		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 3, 5), automatic = 2)
 		)
 
-
 /obj/item/gun/projectile/automatic/mg08
 	name = "LMG Harbinger"
 	desc = "Named for the death it brings."
@@ -359,7 +348,6 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 150 //Enough for one clean mag.
-
 
 /obj/item/gun/projectile/automatic/gpmg
 	name = "GPMG Requiem"
@@ -437,7 +425,6 @@
 	unwielded_unloaded_icon = "schmeiser-e"
 	wielded_unloaded_icon = "schmeiser-e"
 
-
 /obj/item/gun/projectile/automatic/flamer
 	name = "Mk.1 Scorcher"
 	desc = "Used to shoot flames at people when bullets just won't do."
@@ -466,8 +453,6 @@
 	wielded_unloaded_icon = "flamer-wielded-e"
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
-
-
 
 /obj/item/gun/projectile/automatic/autoshotty
 	name = "MS Warcrime"
@@ -509,7 +494,6 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
-
 /obj/item/gun/projectile/warfare
 	name = "Mk.1 Reckoning"
 	icon_state = "handgun"
@@ -542,10 +526,12 @@
 	max_ammo = 7
 	multiple_sprites = 1
 
+
+// Stubber //
+
 /obj/item/gun/projectile/automatic/stubber
-	name = "Auto-Stubber"
-	desc = "A trusted weapon of civitas enforcers and guardsmen alike."
-	//icon = 'icons/obj/gunx35.dmi'
+	name = "Vrak Pattern Heavy Stubber"
+	desc = "The Heavy Stubber is the Astra Militarum's standard issued support weapon, though crude and primitive, it's can provide what thousand of lasguns cannot: Its high rate of fire can fight off large amount of enemies, while it lacks armour-piercing capabilities and strength, it make up by sheer volumes of fire."
 	icon_state = "hmg"
 	item_state = "hmg"
 	str_requirement = 10
@@ -580,9 +566,11 @@
 	gun_type = GUN_LMG
 	condition = 150 //Enough for one clean mag.
 
+// Boltgun
+
 /obj/item/gun/projectile/ravenbolter //needs lots of work and love, ok standin for now
-	name = "raven guard bolter rifle"
-	desc = "The legendary weapon of the raven guard astartes, the bolter rifle."
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XIXth Chapter Raven Guards's colour scheme."
 	icon_state = "ravenbolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -610,7 +598,6 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
-
 /obj/item/gun/projectile/ravenbolter/update_icon()
 	..()
 	if(ammo_magazine)
@@ -620,8 +607,8 @@
 
 
 /obj/item/gun/projectile/smurfbolter //needs lots of work and love, ok standin for now
-	name = "ultramarine bolter rifle"
-	desc = "The legendary weapon of the Ultramarine astartes, the bolter rifle."
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -649,7 +636,6 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
-
 /obj/item/gun/projectile/smurfbolter/update_icon()
 	..()
 	if(ammo_magazine)
@@ -658,8 +644,8 @@
 		icon_state = "ultrabolter-e"
 
 /obj/item/gun/projectile/sallybolter //needs lots of work and love, ok standin for now
-	name = "salamander bolter rifle"
-	desc = "The legendary weapon of the Salamander astartes, the bolter rifle."
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sallybolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -687,7 +673,6 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
-
 /obj/item/gun/projectile/sallybolter/update_icon()
 	..()
 	if(ammo_magazine)
@@ -696,10 +681,10 @@
 		icon_state = "sallybolter-e"
 
 /obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
-	name = "locke pattern bolt rifle"
-	desc = "The Locke-pattern weapon is a variant of an old Adeptus Arbites design and the most ‘common’ of these uncommon weapons found traded in the Koronus Expanse."
+	name = "Locke Pattern bolter"
+	desc = "The Locke Pattern Bolter, designed for Adepta Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
 	icon_state = "lockebolter"
-	str_requirement = 14 //Can't be a soyboy and hold this
+	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
 	force = 65
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -725,67 +710,12 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
-
 /obj/item/gun/projectile/sallybolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "lockebolter-30"
 	else
 		icon_state = "lockebolter-e"
-
-
-//various kroot rifles, bolt action and lever
-
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
-	name = "\improper Kroot Bolt Rifle"
-	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
-	icon_state = "krootrifle"
-	item_state = "krootrifle"
-	wielded_item_state = "krootrifle-wielded"
-	condition = 100 //kroots maintain their guns well
-	fire_sound = "brifle"
-	caliber = "640" //its basically a musket ball
-	ammo_type = /obj/item/ammo_casing/krootbullet
-	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
-	empty_icon = "krootrifle"
-	far_fire_sound = "sniper_fire"
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
-	name = "\improper Kroot Bolt Rifle"
-	force = 40
-	sharp = 1
-	ammo_type = /obj/item/ammo_casing/krootbullet
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
-	name = "\improper Kroot Lever Rifle"
-	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
-	icon_state = "krootrifle"
-	item_state = "krootrifle"
-	condition = 100
-	wielded_item_state = "krootrifle-wielded"
-	fire_sound = 'sound/weapons/guns/fire/la_fire.ogg'
-	bulletinsert_sound = 'sound/weapons/guns/interact/la_insert.ogg'
-	pumpsound = 'sound/weapons/guns/interact/la_cock.ogg'
-	backsound = 'sound/weapons/guns/interact/la_back.ogg'
-	forwardsound = 'sound/weapons/guns/interact/la_forward.ogg'
-	empty_icon = "krootrifle"
-	far_fire_sound = "sniper_fire"
-	ammo_type = /obj/item/ammo_casing/krootbullet
-
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
-	name = "\improper Kroot Lever Rifle"
-	force = 40
-	sharp = 1
-	force_wielded = 40
-	force_unwielded = 25
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-	ammo_type = /obj/item/ammo_casing/krootbullet
 
 /obj/item/gun/projectile/sisterbolter
 	name = "Godwyn-De'az Pattern Bolter Rifle"
@@ -795,16 +725,16 @@
 	edge = 1
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	str_requirement = 14 //"human sized"
+	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
 	caliber = ".75"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter/sister
+	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	one_hand_penalty = 15
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -826,21 +756,3 @@
 		icon_state = "sisterbolter-30"
 	else
 		icon_state = "sisterbolter-30-e"
-
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem
-	name = "Godwyn-De'az Pattern Bolter Pistol"
-	desc = "A modified bolter pistol, developed specifically for the Adepta Sororitas. It is laden with holy text, markings, and purity seals. A large Sarissa is attached to the end of it, perfect for cutting down the Emperor's foe. <i>These heretics refute the Emperor's holy right to rule. Let them argue with the barrel of a gun.</i>"
-	icon_state = "sisterbpistol"
-	loaded_icon = "sisterbpistol"
-	force = 25
-	sharp = 1
-	edge = 1
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "sisterbpistol"
-	else
-		icon_state = "sisterbpistol-e"
