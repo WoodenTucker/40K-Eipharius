@@ -1,7 +1,7 @@
 // Rubber Boots
 
 /obj/item/clothing/shoes/galoshes
-	desc = "Rubber boots."
+	desc = "Rubber boots"
 	name = "galoshes"
 	icon_state = "galoshes"
 	permeability_coefficient = 0.05
