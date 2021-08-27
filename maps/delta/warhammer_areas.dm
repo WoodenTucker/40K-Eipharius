@@ -1241,6 +1241,11 @@ Area basic template
 	name = "Transport Shuttle"
 	icon_state = "shuttle"
 
+/area/cadiaoutpost/oa/shuttle/inquisition
+	name = "Inquisition Ship"
+	icon_state = "shuttle"
+	requires_power = 0
+
 //village
 /area/cadiaoutpost/oa/village
 	name = "Village"

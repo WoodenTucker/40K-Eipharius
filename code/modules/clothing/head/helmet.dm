@@ -220,3 +220,27 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+// Eldar
+
+/obj/item/clothing/head/helmet/eldar
+  name = "Guardian Mesh Helmet"
+  desc = "A ancient helmet. It looks like it's made from Thermoplas in a scale like pattern."
+  icon_state = "eldhelmet"
+  item_state = "eldhelmet"
+  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  body_parts_covered = HEAD
+  cold_protection = HEAD
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+ // Dark Eldar
+
+/obj/item/clothing/head/helmet/darkeldar
+  name = "Ghostplate Helmet"
+  desc = "A ancient helmet. It looks like it's made from hardened resin in a thin-scale like pattern."
+  icon_state = "deldhelmet"
+  item_state = "deldhelmet"
+  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  body_parts_covered = HEAD
+  cold_protection = HEAD
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+

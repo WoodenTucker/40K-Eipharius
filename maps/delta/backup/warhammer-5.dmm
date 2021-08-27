@@ -128,7 +128,7 @@
 "cx" = (/obj/structure/table/rack/dark,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cy" = (/obj/structure/table/rack/dark,/obj/item/melee/inqcs,/obj/item/melee/inqcs,/obj/item/melee/inqcs,/obj/item/melee/baton/loaded,/obj/item/melee/baton/loaded,/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cz" = (/obj/structure/sink{dir = 8; icon_state = "sink"; layer = 50; pixel_x = -10; pixel_y = 2},/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"cA" = (/obj/structure/closet/cabinet,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/suit/armor/agent,/obj/item/clothing/head/inqhelm,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"cA" = (/obj/structure/closet/cabinet,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/suit/armor/agent,/obj/item/clothing/suit/armor/agent2,/obj/item/clothing/head/inqhelm,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cB" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/structure/bed/chair/office/dark,/turf/simulated/floor/tiled/dark,/area/centcom)
 "cC" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/chapel{dir = 1},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cD" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/chapel{dir = 4},/turf/simulated/floor/tiled/dark,/area/inqmoon)

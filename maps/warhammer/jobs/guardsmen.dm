@@ -50,7 +50,7 @@
 	spawn_positions = 2
 	selection_color = "#33813A"
 	social_class = SOCIAL_CLASS_MED
-	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
+	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC|COM
 	open_when_dead = TRUE
@@ -255,7 +255,7 @@ Begin Warhammer loadouts
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/ig/sergeant
+/decl/hierarchy/outfit/job/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	head = null

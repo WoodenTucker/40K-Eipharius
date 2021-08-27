@@ -48,6 +48,7 @@
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
 			src.mind.special_role = "Khorne Cultist"
 			src.faction = "Khorne"
+			src.verbs += list(/mob/living/carbon/human/proc/bludforbludguy)
 			AddInfectionImages()
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/khornerune
@@ -63,3 +64,25 @@
 			else
 				to_chat(src, "I must draw his symbol and stand upon it!")
 				return
+
+/mob/living/carbon/human/proc/bludforbludguy()
+	set name = "Blood for the Blood God!"
+	set category = "Ruinous Powers"
+	set desc = "BLOOD FOR THE BLOOD GOD!"
+
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a path when you're dead.</span>")
+		return
+
+	if(src.khorne_cd == 0)
+		src.say("Blood for the Blood God!")
+		playsound(src, 'sound/effects/khorne.ogg', 80, 0, 3)
+		src.khorne_cd = 1
+		sleep(100)
+		src.khorne_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon!")
+		return

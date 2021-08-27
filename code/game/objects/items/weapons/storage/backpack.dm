@@ -226,42 +226,55 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
+/obj/item/storage/backpack/satchel/warfare/sisterelohiem
+	name = "Order of the Sacred Rose Powerpack"
+	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
+	icon_state = "sister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	canremove = 0
+
 /obj/item/storage/backpack/satchel/astartes
-	name = "Space Marine powerpack"
-	desc = "A Space Marine powerpack."
+	name = "Astarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
-	canremove = FALSE
+	canremove = 0
 	max_storage_space = DEFAULT_BACKPACK_STORAGE //backpack storage with satchel access.
 
 /obj/item/storage/backpack/satchel/astartes/ultramarine
-	name = "Ultramarine powerpack"
-	desc = "A Ultramarine powerpack"
+	name = "Astarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 
 /obj/item/storage/backpack/satchel/astartes/ravenguard
-	name = "Ravenguard powerpack"
-	desc = "A Ultramarine powerpack"
+	name = "RAstarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIXth Chapter, Raven Guards."
 	icon_state = "ravpack"
 	item_state = "ravpack"
 
+/obj/item/storage/backpack/satchel/astartes/bloodravens
+	name = "Blood Ravens powerpack"
+	desc = "A Blood Raven powerpack"
+	icon_state = "bravpack"
+	item_state = "bravpack"
+
 /obj/item/storage/backpack/satchel/astartes/salamander
-	name = "Salamander powerpack"
-	desc = "A Salamander powerpack"
+	name = "Astarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XVIIIth Chapter, Salamanders."
 	icon_state = "salpack"
 	item_state = "salpack"
 
 /obj/item/storage/backpack/satchel/astartes/apothecary
-	name = "Apothecary Marine powerpack"
-	desc = "An Apothecary Marine powerpack"
+	name = "Astarte Mark VII Medipack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been upgraded with additional spotlight and surgical arms."
 	icon_state = "salpack"
 	item_state = "salpack"
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/techpack //because it uses techpriest stuff.
-	name = "Techmarine powerpack"
-	desc = "A Techmarine powerpack"
+	name = "Astarte Mark VII Servo-Harness"
+	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been equipped with additional Servo-Arms."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "techpack"
 	item_state = "techpack"
