@@ -534,6 +534,18 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
 
+/obj/item/clothing/suit/armor/commissar/krieg
+	name = "Commissar's Trenchcoat"
+	desc = "The Commissar's iconic coat, this out tailored to match more of the uniform theme of the Officers of Krieg. Though the Krieg Guardsmen don't fear you, the others certainly will."
+	icon_state = "Kriegissar"
+	item_state = "Kriegissar"
+
+/obj/item/clothing/suit/armor/commissar/catachan
+	name = "Commissar's Trenchcoat"
+	desc = "What used to be a decorated and custom tailored suitcoat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan. Though, wearing something like this out here is more of a power move."
+	icon_state = "catacommissar"
+	item_state = "catacommissar"
+
 //Inquisitor Armors
 
 /obj/item/clothing/suit/armor/agent/caraspace

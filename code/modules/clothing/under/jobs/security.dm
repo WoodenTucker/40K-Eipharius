@@ -222,6 +222,19 @@
 	cold_protection = LOWER_TORSO
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/under/rank/krieg_uniform/commissar
+	name = "commissar Dress Uniform"
+	desc = "More standard uniform of the Commissars of the Officio Prefectus, just with some Krieg emblems on them in an attempt to similate."
+	icon_state = "kriegissar"
+	item_state = "kriegissar"
+	worn_state = "kriegissar"
+
+/obj/item/clothing/under/rank/catachancommissar
+	name = "commissar Field Pants"
+	desc = "What used to be green tailoring of the uniform given by the Officio Prefectus has been cut down and stripped to be the bare essentials, just like that of the Catachans under you. Around your neck being an emblematic symbol of the Emperor as a necklace."
+	icon_state = "catacomm"
+	item_state = "catacomm"
+	worn_state = "catacomm"
 
 // Astarte
 
