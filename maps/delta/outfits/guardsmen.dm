@@ -154,7 +154,7 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/material/sword/commissword
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	shoes = /obj/item/clothing/shoes/commissar
 	head = /obj/item/clothing/head/commissar
 	mask = null
 	glasses = null
@@ -175,3 +175,21 @@ Begin Warhammer loadouts
 
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/ig/commissar/krieg
+	name = OUTFIT_JOB_NAME("Commissar")
+	uniform =  /obj/item/clothing/under/rank/krieg_uniform/commissar
+	suit = /obj/item/clothing/suit/armor/commissar/krieg
+	head = /obj/item/clothing/head/commissar/krieg
+	mask = /obj/item/clothing/mask/gas/commissar
+	glasses = null
+
+/decl/hierarchy/outfit/job/ig/commissar/catachan
+	name = OUTFIT_JOB_NAME("Commissar")
+	uniform =  /obj/item/clothing/under/rank/catachancommissar
+	suit = /obj/item/clothing/suit/armor/commissar/catachan
+	belt = /obj/item/melee/pcsword
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/commissar/catachan
+	mask = null
+	glasses = null
