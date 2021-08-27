@@ -143,7 +143,6 @@ Begin Warhammer loadouts
 	)
 
 	pda_slot = null
-
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /// Commissar
@@ -175,5 +174,4 @@ Begin Warhammer loadouts
 	)
 
 	pda_slot = null
-
-	flags = OUTFIT_HAS_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
