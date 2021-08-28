@@ -25,6 +25,9 @@
 	/obj/item/stack/thrones3/twenty = 1
 	)
 
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
 /decl/hierarchy/outfit/job/acolyte/malleus
 	name = OUTFIT_JOB_NAME("Ordo Malleus Acolyte")
 	suit = /obj/item/clothing/suit/armor/agent/coat
@@ -55,6 +58,9 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1
 	)
+
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/inquisitor/malleus
 	name = OUTFIT_JOB_NAME("Inquisitor Of Ordo Malleus")
