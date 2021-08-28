@@ -88,7 +88,7 @@
 "bJ" = (/obj/effect/floor_decal/carpet/red{dir = 1},/turf/simulated/floor/carpet/red,/area/centcom)
 "bK" = (/obj/structure/sign/aquilalong{density = 1; desc = "A dark aquila surrounded by a pile of bones."; icon_state = "aquillabones"; pixel_y = 5},/turf/simulated/floor/asteroid,/area/space)
 "bL" = (/obj/effect/floor_decal/turf/brick,/obj/structure/sign/double/planet/right{desc = "A screen showing the planet from orbit. It would be a beautiful sight. The screen itself would be decorated in various holy markings."; name = "The Emperor's Eye"; pixel_y = 32},/obj/effect/floor_decal/spline/plain{icon_state = "spline_plain"; dir = 1},/obj/structure/table/steel,/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/item/reagent_containers/food/drinks/glass2/wine,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"bM" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{icon_state = "spline_plain"; dir = 5},/obj/machinery/telecomms/allinone,/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"bM" = (/turf/simulated/shuttle/wall,/area/space)
 "bN" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{icon_state = "spline_plain"; dir = 8},/obj/structure/torchwall/service{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "bO" = (/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/obj/effect/floor_decal/carpet/red{dir = 1},/turf/simulated/floor/carpet/red,/area/centcom)
 "bP" = (/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/inqmoon)
@@ -134,12 +134,12 @@
 "cD" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/chapel{dir = 4},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cE" = (/obj/effect/floor_decal/turf/plating,/obj/structure/torchwall/service{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cF" = (/obj/effect/floor_decal/turf/plating,/obj/structure/bed/chair/wood/wings,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"cG" = (/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/item/bedsheet/hos,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/wood,/area/inqmoon)
+"cG" = (/turf/simulated/wall/r_wall,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cH" = (/obj/structure/closet/cabinet,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/head/inquisitor,/obj/item/clothing/shoes/jackboots/inquisitor,/obj/item/clothing/suit/inquisitor,/obj/item/clothing/under/inquisitor,/obj/item/cane/concealed,/obj/item/ammo_magazine/a357,/obj/item/ammo_magazine/a357,/obj/item/clothing/accessory/holster/waist,/turf/simulated/floor/wood,/area/inqmoon)
 "cI" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/steel,/obj/item/gun/projectile/lockebolter,/turf/simulated/floor/wood,/area/inqmoon)
 "cJ" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/steel,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/turf/simulated/floor/wood,/area/inqmoon)
 "cK" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/window,/obj/machinery/shower,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"cL" = (/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/item/bedsheet/red,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"cL" = (/turf/simulated/wall/r_wall{icon_state = "rwall12"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "cM" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/chapel{dir = 8},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cN" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/chapel,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "cO" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{icon_state = "spline_plain"; dir = 1},/turf/simulated/floor/wood,/area/inqmoon)
@@ -191,7 +191,7 @@
 "dI" = (/obj/effect/decal/dead/three{desc = "They look like human remains, crackling above the magma. A large W is branded on their chest."; name = "witch"},/turf/simulated/floor/dirty,/area/inqmoon)
 "dJ" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{id_tag = null; name = "Imperialis Doorway - Aecor"; req_access = list(202); tag = "null"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "dK" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"dL" = (/obj/effect/floor_decal/turf/metal/five,/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"dL" = (/obj/structure/torchwall,/turf/simulated/wall/r_wall{icon_state = "rwall12"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "dM" = (/obj/effect/floor_decal/turf/metal/five,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/structure/table/rack/dark,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "dN" = (/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "dO" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{id_tag = null; name = "Imperialis Doorway - Aecor"; req_access = list(202); tag = "null"},/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/inqmoon)
@@ -199,50 +199,293 @@
 "dQ" = (/obj/machinery/computer/teleporter,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "dR" = (/obj/machinery/teleport/station,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "dS" = (/obj/machinery/teleport/hub,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"dT" = (/obj/effect/floor_decal/turf/metal/five,/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"dT" = (/turf/simulated/wall/r_wall{icon_state = "rwall3"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"dU" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/archaeological_find/instrument,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dV" = (/obj/machinery/optable,/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dW" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dX" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/machinery/bodyscanner{icon_state = "body_scanner_0"; dir = 8},/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dY" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/effect/decal/cleanable/blood/gibs/xeno/core,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dZ" = (/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"ea" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/skele_stand,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eb" = (/obj/machinery/fusion_fuel_compressor,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ec" = (/obj/structure/rubble/war,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ed" = (/obj/machinery/atmospherics/portables_connector{dir = 1; icon_state = "map_connector"},/obj/machinery/portable_atmospherics/canister/phoron/engine_setup,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ee" = (/obj/structure/fuel_port{pixel_x = -32},/turf/simulated/floor/asteroid,/area/space)
+"ef" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{icon_state = "spline_plain"; dir = 5},/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"eg" = (/obj/effect/wingrille_spawn/reinforced/polarized/full/inquisitor,/obj/machinery/door/blast/id_door/open{id = "inquisitorshipwindows"; name = "Vessel Lockdown"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eh" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/archaeological_find/container,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ei" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ej" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/rack/shelf,/obj/item/remains/xeno,/obj/item/storage/box/freezer,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ek" = (/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"el" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/arrow/quill,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"em" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/effect/decal/cleanable/blood/gibs/xeno,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"en" = (/obj/structure/cable{icon_state = "0-2"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eo" = (/obj/item/wrench,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ep" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/button/remote/blast_door/id_scan{id = "moonentrance"; pixel_y = 30; req_access = list(202)},/turf/simulated/floor/plating,/area/inqmoon)
 "eq" = (/turf/simulated/shuttle/wall/corner/dark/sw{color = "grey"},/area/centcom)
+"er" = (/obj/structure/shuttle/engine/propulsion{color = "grey"; dir = 1; icon_state = "propulsion"},/turf/simulated/floor/asteroid,/area/cadiaoutpost/gma/inquisitoracolyte)
+"es" = (/obj/machinery/light,/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/organ/internal/lungs/vox,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"et" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/organ/internal/heart/vox,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eu" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/structure/table/glass,/obj/item/organ/internal/brain/xeno,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ev" = (/obj/structure/reagent_dispensers/fueltank,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ew" = (/obj/structure/cable{icon_state = "1-2"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ex" = (/obj/machinery/portable_atmospherics/powered/scrubber,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ey" = (/obj/machinery/portable_atmospherics/powered/pump/filled,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ez" = (/obj/machinery/portable_atmospherics/canister,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eA" = (/obj/machinery/light,/obj/machinery/portable_atmospherics/canister,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eB" = (/obj/machinery/door/airlock/hatch/simiel,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eC" = (/obj/structure/torchwall,/turf/simulated/wall/r_wall,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eD" = (/obj/machinery/door/airlock/hatch/simiel{name = "Storage"},/obj/structure/cable{icon_state = "1-2"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eE" = (/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/item/bedsheet/hos,/obj/effect/floor_decal/turf/brick/two,/obj/effect/landmark/start{name = "Inquisitor"},/turf/simulated/floor/wood,/area/inqmoon)
 "eF" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"eG" = (/obj/structure/kitchenspike,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eH" = (/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eI" = (/obj/machinery/gibber/autogibber{emagged = 1},/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "eJ" = (/obj/structure/table/rack,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"eK" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/toothpuller,/obj/item/toothpuller,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eL" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/effect/decal/remains,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eM" = (/obj/structure/table/steel_reinforced,/obj/item/storage/firstaid/surgery,/obj/item/reagent_containers/spray/hair_remover,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eN" = (/obj/machinery/optable,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eO" = (/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/glass/jar/radium,/obj/item/reagent_containers/glass/jar/hydrochloric,/obj/item/reagent_containers/glass/jar/sulfur,/obj/item/reagent_containers/syringe,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eP" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eQ" = (/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eR" = (/obj/structure/window/reinforced,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eS" = (/obj/structure/window/reinforced,/obj/structure/cable{icon_state = "1-4"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eT" = (/obj/structure/cable{icon_state = "2-8"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eU" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/machinery/microscope,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eV" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/machinery/dnaforensics,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eW" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/storage/box/evidence,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"eX" = (/obj/structure/statue/xenotube/r2,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eY" = (/obj/structure/statue/xenotube/l2,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"eZ" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/storage/lockbox/loyalty,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fa" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/machinery/computer/prisoner,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fb" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/modular_computer/console/preset/security,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fc" = (/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/item/bedsheet/red,/obj/effect/floor_decal/turf/brick/two,/obj/effect/landmark/start{name = "Principal Agent"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"fd" = (/obj/item/reagent_containers/glass/ampule/morphine,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fe" = (/obj/structure/statue/cage,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"ff" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fg" = (/obj/machinery/door/window/brigdoor/westright{color = "grey"},/turf/simulated/floor/tiled/ramp{color = "grey"; dir = 8; icon_state = "ramptop"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fh" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fi" = (/obj/structure/sign/inkvd/two,/turf/simulated/wall/r_wall{icon_state = "rwall3"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fj" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "fk" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/suit_storage_unit/engineering,/turf/simulated/floor/tiled/dark,/area/centcom)
 "fl" = (/obj/machinery/light,/obj/machinery/chemical_dispenser/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"fm" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fn" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fo" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fp" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/cable{icon_state = "1-2"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fq" = (/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
 "fr" = (/turf/simulated/floor/carpet/red,/area/centcom)
+"fs" = (/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ft" = (/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fu" = (/obj/structure/statue/xenotube,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fv" = (/obj/structure/statue/xenotube/l1,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fw" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/flame/candle/dinner,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fx" = (/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fy" = (/obj/effect/wingrille_spawn/reinforced/polarized/full/inquisitor,/obj/machinery/door/blast/id_door/open{id = "inquisitorshipwindows"; name = "Vessel Lockdown"},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fz" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fA" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fB" = (/obj/machinery/door/airlock/hatch/simiel{name = "Information Room"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fC" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fD" = (/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fE" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fF" = (/obj/machinery/door/airlock/hatch/simiel{name = "Inquisitor Offices"},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fG" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/storage/briefcase/crimekit,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fH" = (/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "fI" = (/obj/effect/floor_decal/carpet/red{dir = 4},/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet/red,/area/centcom)
 "fJ" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/wood,/area/centcom)
+"fK" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/storage/pill_bottle/citalopram,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/gma/inquisitoracolyte)
 "fL" = (/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/structure/closet/crate/meat,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"fM" = (/obj/machinery/door/window/brigdoor/westleft{color = "grey"},/turf/simulated/floor/tiled/ramp{color = "grey"; dir = 8; icon_state = "ramptop"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fN" = (/obj/structure/sign/inkvd,/turf/simulated/wall/r_wall{icon_state = "rwall3"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "fO" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/suit_storage_unit/engineering,/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/centcom)
+"fP" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fQ" = (/obj/structure/window/reinforced,/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
 "fR" = (/obj/machinery/computer/operating,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"fS" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "inqfloor2"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"fT" = (/obj/machinery/telecomms/allinone,/turf/unsimulated/miningtime,/area/inqmoon)
+"fU" = (/obj/structure/pit,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fV" = (/obj/structure/barbwire,/obj/machinery/light,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fW" = (/obj/structure/iv_drip,/obj/item/reagent_containers/ivbag/blood,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fX" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/effect/decal/cleanable/blood,/obj/effect/decal/dead/four,/turf/simulated/floor/trench/fake{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"fY" = (/obj/structure/table/steel_reinforced,/obj/item/melee/trench_axe,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "fZ" = (/obj/structure/table/rack,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"ga" = (/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "gb" = (/obj/structure/sign/medholo{pixel_y = -30},/turf/simulated/floor/tiled/dark,/area/centcom)
+"gc" = (/obj/structure/table/steel_reinforced,/obj/item/melee/whip/abyssal,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gd" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/machinery/light,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"ge" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gf" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gg" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/structure/cable{icon_state = "2-4"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gh" = (/obj/structure/cable{icon_state = "1-8"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "gi" = (/obj/machinery/optable,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "gj" = (/obj/machinery/door/airlock/centcom{locked = 1; name = "Gas Storage"},/turf/simulated/floor/plating,/area/centcom)
+"gk" = (/obj/machinery/light,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gl" = (/obj/structure/closet/secure_closet/injection,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gm" = (/obj/machinery/photocopier,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "gn" = (/obj/structure/table/rack,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
+"go" = (/obj/machinery/papershredder,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gp" = (/obj/structure/closet/secure_closet/exile,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gq" = (/obj/machinery/door/airlock/hatch/simiel,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gr" = (/obj/machinery/door/airlock/hatch/simiel,/obj/structure/cable{icon_state = "1-2"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gs" = (/obj/structure/grille,/obj/structure/window_frame{color = "grey"},/turf/simulated/floor/plating/reinforced,/area/inqmoon)
+"gt" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "gu" = (/obj/structure/table/standard,/obj/item/storage/firstaid/surgery,/obj/item/reagent_containers/spray/hair_remover,/obj/item/FixOVein,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "gv" = (/obj/machinery/computer/operating,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"gw" = (/obj/structure/cable{icon_state = "1-2"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gx" = (/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gy" = (/obj/machinery/light/small/red{icon_state = "bulb1"; dir = 1},/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gz" = (/obj/effect/floor_decal/newcorner/white/solid,/obj/effect/floor_decal/newcorner/teal/solid,/obj/effect/decal/cleanable/blood/gibs/xeno/core,/obj/machinery/body_scanconsole{icon_state = "body_scannerconsole"; dir = 8},/turf/simulated/floor/tiled/white,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gA" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/plating,/area/inqmoon)
+"gB" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"gC" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/steel_reinforced,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gD" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/steel_reinforced,/obj/item/gun/energy/las/lasgun,/obj/item/gun/energy/las/lasgun,/obj/item/gun/energy/las/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gE" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/steel_reinforced,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gF" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/rack,/obj/item/gun/projectile/shotgun/pump/border,/obj/item/gun/projectile/shotgun/pump/border,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/obj/item/ammo_magazine/handful/shotgun/beanbag_handful,/obj/item/ammo_magazine/handful/shotgun/beanbag_handful,/obj/item/ammo_magazine/handful/shotgun/beanbag_handful,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gG" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/machinery/door/airlock/hatch/simiel{name = "Equipment Storage"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gH" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gI" = (/turf/simulated/floor/tiled/ramp{color = "grey"; dir = 8; icon_state = "ramptop"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gJ" = (/obj/effect/landmark/animal/rngretaliatespawner{name = "rng rat"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gK" = (/obj/structure/cable{icon_state = "1-4"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "gL" = (/turf/simulated/shuttle/wall,/area/cadiaoutpost/oa/tauship)
+"gM" = (/obj/structure/cable{icon_state = "4-8"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gN" = (/obj/structure/cable{icon_state = "4-8"},/turf/simulated/floor/tiled/ramp{color = "grey"; dir = 8; icon_state = "ramptop"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gO" = (/obj/machinery/door/airlock/simiel,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gP" = (/obj/effect/floor_decal/turf/metal/five,/obj/machinery/button/remote/blast_door/id_scan{id = "moonentrance"; pixel_y = 30; req_access = list(202)},/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"gQ" = (/obj/effect/floor_decal/turf/metal/six,/obj/machinery/door/blast/id_door{desc = "A large, apathetic, imposing, and cold looking door."; id = "moonentrance"; name = "door"},/turf/simulated/floor/plating,/area/inqmoon)
+"gR" = (/obj/effect/floor_decal/turf/plating,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/plating,/area/inqmoon)
+"gS" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gT" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/toilet{dir = 8; icon_state = "toilet00"},/obj/structure/curtain/open/privacy,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gU" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"gV" = (/obj/machinery/light/small/red,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gW" = (/obj/machinery/door/airlock/simiel{name = "Aecor - Simiel"},/obj/effect/floor_decal/turf/shaft,/turf/simulated/floor/plating,/area/inqmoon)
+"gX" = (/obj/random/medical/lite,/turf/simulated/wall/r_wall,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gY" = (/obj/structure/sign/inquisition,/turf/simulated/wall/techno,/area/inqmoon)
+"gZ" = (/obj/machinery/button/remote/blast_door/id_scan{id = "arvusrampdoor"; pixel_x = -5; pixel_y = 0; req_access = list(202)},/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "ha" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/wood,/area/centcom)
 "hb" = (/obj/effect/floor_decal/industrial/warning_red/corner{dir = 4},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "hc" = (/obj/effect/floor_decal/carpet/red{dir = 8},/obj/machinery/hologram/holopad/longrange,/turf/simulated/floor/carpet/red,/area/centcom)
+"hd" = (/obj/structure/sign/neon/shuttle,/turf/simulated/wall/techno,/area/inqmoon)
+"he" = (/obj/effect/floor_decal/turf/bloodbar,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"hf" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/steel_reinforced,/obj/item/material/sword/commissword{name = "Ornate Sword"},/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "hg" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/paper_bin,/obj/item/pen/multi,/turf/simulated/floor/carpet/red,/area/centcom)
+"hh" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/steel_reinforced,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/obj/item/melee/inqcs,/obj/item/melee/inqcs,/obj/item/melee/inqcs,/obj/item/melee/inqcs,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hi" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/rack,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet,/obj/item/ammo_magazine/brifle,/obj/item/ammo_magazine/brifle,/obj/item/ammo_magazine/brifle,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hj" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/table/steel_reinforced,/obj/item/handcuffs,/obj/item/handcuffs,/obj/item/handcuffs,/obj/item/handcuffs,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hk" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/item/device/flashlight/lantern,/obj/item/device/flashlight/lantern,/obj/item/device/flashlight/lantern,/obj/item/device/flashlight/lantern,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hl" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/obj/structure/statue/verina,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hm" = (/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hn" = (/turf/simulated/floor/plating/reinforced,/area/centcom)
+"ho" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/nullrod,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hp" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/remains/human{color = "grey"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hq" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/storage/bible,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hr" = (/obj/effect/floor_decal/carpet/red{dir = 8},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 10},/turf/simulated/floor/carpet/red,/area/centcom)
+"hs" = (/obj/structure/statue/verina{color = "grey"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ht" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hu" = (/obj/machinery/vending/security,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hv" = (/obj/structure/closet/secure_closet/brig,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hw" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/structure/closet/secure_closet/brig,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hx" = (/obj/structure/toilet,/obj/effect/decal/cleanable/poo,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hy" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "hz" = (/obj/structure/table/woodentable,/obj/item/book/manual/barman_recipes,/obj/machinery/light{dir = 8; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
+"hA" = (/obj/machinery/shower,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hB" = (/obj/effect/decal/cleanable/vomit,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hC" = (/obj/machinery/light/small/red,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/plating,/area/inqmoon)
+"hD" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{id_tag = null; name = "Imperialis Doorway - Aecor"; req_access = list(202); tag = "null"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/plating,/area/inqmoon)
 "hE" = (/obj/effect/floor_decal/carpet/red,/turf/simulated/floor/carpet/red,/area/centcom)
+"hF" = (/obj/effect/floor_decal/turf/metal/three,/turf/simulated/floor/plating,/area/inqmoon)
+"hG" = (/obj/effect/floor_decal/turf/metal,/turf/simulated/floor/plating,/area/inqmoon)
+"hH" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hI" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hJ" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hK" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hL" = (/turf/simulated/floor/plating/reinforced,/area/inqmoon)
+"hM" = (/obj/structure/cult/talisman,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hN" = (/obj/structure/cult/tome,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hO" = (/obj/effect/wingrille_spawn/reinforced_phoron/full,/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "hP" = (/obj/effect/floor_decal/carpet/red,/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet/red,/area/centcom)
+"hQ" = (/obj/machinery/door/airlock/hatch/simiel{name = "Altar Room"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hR" = (/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hS" = (/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hT" = (/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hU" = (/obj/machinery/door/airlock/hatch/simiel{name = "Holding Room"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hV" = (/obj/machinery/door/window/brigdoor/westleft{color = "grey"; dir = 4; icon_state = "leftsecure"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"hW" = (/obj/effect/decal/cleanable/blood/splatter,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hX" = (/obj/effect/landmark/animal/rngretaliatespawner{name = "rng rat"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hY" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hZ" = (/obj/effect/rune/blood_boil{blood_color = "red"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ia" = (/obj/effect/rune/confuse{blood_color = "red"},/obj/item/paper/talisman,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ib" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ic" = (/obj/structure/window/reinforced,/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
+"id" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/machinery/door/blast/shutters/open{dir = 2; icon_state = "shutter0"; id = "outpostgateslockdown"},/turf/simulated/floor/snow,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ie" = (/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 6},/turf/simulated/floor/carpet/red,/area/centcom)
+"if" = (/obj/structure/table/steel_reinforced,/obj/item/modular_computer/console/preset/security,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"ig" = (/obj/structure/table/steel_reinforced,/obj/item/deck/cards,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"ih" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"ii" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ij" = (/obj/structure/bed/chair/wood/wings{dir = 4; icon_state = "wooden_chair_wings_preview"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ik" = (/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "il" = (/obj/machinery/papershredder,/turf/simulated/floor/wood,/area/centcom)
+"im" = (/obj/structure/bed/chair/wood/wings{dir = 8; icon_state = "wooden_chair_wings_preview"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
+"in" = (/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/food/drinks/tea,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"io" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"ip" = (/obj/machinery/light,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iq" = (/obj/machinery/cryopod,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ir" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/plating/reinforced,/area/inqmoon)
+"is" = (/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating/reinforced,/area/inqmoon)
+"it" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/bed/roller,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "iu" = (/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
+"iv" = (/obj/machinery/door/airlock/hatch/simiel{name = "Bridge"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iw" = (/turf/simulated/wall/techno,/area/space)
+"ix" = (/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/plating,/area/inqmoon)
+"iy" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/closet/emcloset,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iz" = (/obj/machinery/button/remote/blast_door/lever{id = "inqfloor1"; name = "Windowfloor One Shutters"; pixel_y = 32},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "iA" = (/obj/machinery/photocopier,/turf/simulated/floor/wood,/area/centcom)
+"iB" = (/obj/machinery/button/remote/blast_door/lever{id = "inqfloor2"; name = "Windowfloor Two Shutters"; pixel_y = 32},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iC" = (/obj/machinery/button/remote/blast_door/lever{id = "inquisitorshipwindows"; name = "Vessel Lockdown"; pixel_y = 32},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iD" = (/obj/structure/defensive_barrier{dir = 1; icon_state = "barrier_rised"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iE" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/closet/firecloset/full,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "iF" = (/obj/machinery/photocopier/faxmachine,/obj/structure/table/woodentable{color = "#36261B"},/obj/machinery/light,/turf/simulated/floor/wood,/area/centcom)
 "iG" = (/obj/machinery/bluespacerelay,/turf/simulated/floor/wood,/area/centcom)
+"iH" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/inquisition)
+"iI" = (/obj/effect/floor_decal/turf/metal/two,/turf/simulated/floor/plating,/area/inqmoon)
+"iJ" = (/obj/structure/grille,/obj/structure/window_frame{color = "grey"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"iK" = (/obj/effect/floor_decal/turf/metal/eight,/turf/simulated/floor/plating,/area/inqmoon)
+"iL" = (/obj/structure/table/steel_reinforced,/obj/machinery/computer/message_monitor,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iM" = (/obj/structure/table/steel_reinforced,/obj/item/modular_computer/console/preset/sysadmin,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iN" = (/obj/structure/railing{dir = 8},/obj/structure/railing{dir = 1},/obj/machinery/light/small/red{icon_state = "bulb1"; dir = 1},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"iO" = (/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"iP" = (/obj/structure/railing{icon_state = "railing0"; dir = 4},/obj/structure/railing{dir = 1},/obj/machinery/light/small/red{icon_state = "bulb1"; dir = 1},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"iQ" = (/obj/effect/floor_decal/turf/metal/five,/obj/item/modular_computer/console/preset/command,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"iR" = (/obj/structure/table/steel_reinforced,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iS" = (/obj/structure/bed/chair/comfy/black{dir = 8; icon_state = "comfychair_preview"},/mob/living/simple_animal/familiar/carcinus{desc = "A small crab from an unknown origin that is said to travel among inquisitors like spacers travel the stars ."; health = 800; name = "\improper Señor Snippy"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iT" = (/obj/structure/bed/chair/comfy/captain,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iU" = (/obj/structure/table/steel_reinforced,/obj/item/flame/candle/dinner,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iV" = (/obj/structure/bed/chair/comfy/black{dir = 4; icon_state = "comfychair_preview"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"iW" = (/obj/structure/bed/chair/comfy/black{dir = 4; icon_state = "comfychair_preview"},/obj/structure/railing{dir = 8},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"iX" = (/obj/structure/bed/chair/comfy/black{dir = 8; icon_state = "comfychair_preview"},/obj/structure/railing{icon_state = "railing0"; dir = 4},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"iY" = (/obj/structure/table/steel_reinforced,/obj/item/paper/monitorkey,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "iZ" = (/obj/structure/railing{dir = 8},/obj/effect/floor_decal/industrial/warning_red{dir = 8},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"ja" = (/obj/effect/wingrille_spawn/reinforced,/obj/machinery/door/blast/id_door/open{id = "inquisitorshipwindows"; name = "Vessel Lockdown"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"jb" = (/obj/structure/bed/chair/comfy/black{dir = 4; icon_state = "comfychair_preview"},/obj/structure/railing{dir = 8},/obj/structure/railing,/obj/machinery/light/small/red,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "jc" = (/obj/machinery/computer/operating,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"jd" = (/obj/structure/bed/chair/comfy/black{dir = 8; icon_state = "comfychair_preview"},/obj/structure/railing{icon_state = "railing0"; dir = 4},/obj/structure/railing,/obj/machinery/light/small/red,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"je" = (/obj/structure/railing{dir = 8},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "jf" = (/obj/machinery/cooker/oven,/obj/effect/floor_decal/newcorner/plazaf/diagonal,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"jg" = (/obj/structure/railing{icon_state = "railing0"; dir = 4},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"jh" = (/obj/machinery/computer/shuttle_control/ferry/inquisition,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "ji" = (/obj/machinery/door/blast/id_door,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"jj" = (/obj/effect/floor_decal/turf/metal/seven,/turf/simulated/floor/plating,/area/inqmoon)
+"jk" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/blast/id_door,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"jl" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/airlock/centcom,/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"jm" = (/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/space)
 "jn" = (/obj/structure/bed/chair/comfy/black{dir = 1; icon_state = "comfychair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"jo" = (/obj/machinery/door/blast/id_door/open{id = "arvusrampdoor"},/turf/simulated/floor/tiled/ramp{dir = 1; icon_state = "ramptop"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "jp" = (/obj/structure/table/standard,/obj/item/storage/firstaid/surgery,/obj/item/reagent_containers/spray/hair_remover,/obj/item/FixOVein,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
+"jq" = (/obj/effect/shuttle_landmark/ferry/inquisition_start,/obj/machinery/door/blast/id_door/open{id = "arvusrampdoor"},/turf/simulated/floor/tiled/ramp{dir = 1; icon_state = "ramptop"},/area/cadiaoutpost/oa/shuttle/inquisition)
+"jr" = (/obj/structure/railing{dir = 8},/obj/machinery/button/remote/blast_door{id = "arvuslockdown"; pixel_y = -30},/obj/machinery/light/small/red{icon_state = "bulb1"; dir = 8},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"js" = (/obj/structure/railing{icon_state = "railing0"; dir = 4},/obj/machinery/button/remote/blast_door{id = "arvusrampdoor"; pixel_x = -5; pixel_y = -30; req_access = list(202)},/obj/machinery/light/small/red{icon_state = "bulb1"; dir = 4},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"ju" = (/obj/structure/grille,/obj/structure/window_frame{color = "grey"},/obj/machinery/door/blast/id_door/open{id = "arvuslockdown"; name = "Vessel Lockdown"},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "jH" = (/obj/effect/floor_decal/industrial/warning_red/corner,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "kd" = (/obj/structure/toilet{dir = 4},/turf/simulated/floor/tiled/dark,/area/centcom)
 "kf" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
@@ -527,8 +770,8 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxbMbMbMbMbMbMbMbMbMbMbMaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxbMaxbMaxbMaxbMaxbMaxbMaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxgLgLDtgLDtgLDtgLDtgLDtgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEGQGQGQYEYEYEGQGQGQYEYEYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxgLxTiuUvbhtUBAUviuUvYvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEnNVgVgQNnPYEnNVgVgVgJUVgYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxgLiuUviuUviuUviuUviuUvgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEVgVgVgawaAYEVgVgVgVgaCQNYEvEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
@@ -549,20 +792,20 @@ axaxaxaxaxaxgLUviuUvgLgLiuUviugLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxgLhyUvgLgLgLgLiuLxgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEwyRGRGqhZORGqhZOwzRGRGZOqhYEwBmdmeUkUkUkZmUkZmUkZmYEuDCBwDEwFkorjnjnororjnjnorFkEwhnhnYEvE
 axaxaxaxaxaxgLgLgLgLaxaxgLgLgLgLaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEwLRGRGtuRGRGtuRGRGRGRGRGuzYExuxExEUkUkUkUkUkUkUkOJYEhnIKRGvOFkFkAPFkFkFkFkAPFkFkvOhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYExHRGRGqhZORGqhZORGRGRGZOqhYEUkUkUkUkUkUkUkUkUkUkUkYEuDIKRGvOvOCTvOvOvOvOvOvOCTvOvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEYExKRGRGtuygRGtuRGygRGRGRGzdYEzzzHzHIgIgIgZcUkUkUkzTYEhnIKRGvOBtCODbDhDbDhDbDhCOBtvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYENLNLNLYENLNLNLYEUVUVYEYEYEYEYEYENLNLNLYEDIDIYEYEYEDPIKRGvOyAFkFkFkFkFkFkFkFkDWvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEuhRGRGRGRGuhRGRGRGRGuhRGRGRGRGRGRGuhRGRGRGRGRGRGuhRGRGRGRGRGRGuhRGRGEFRGuhRGNLRGRGRGvOEKFkETEXETEXETEXFkFyvOhnoyYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGbCRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGEwFkFkFkFkFkFkFkFkFkFkEwhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGFPRGRGRGEwFkFkETEXETEXETEXFkFkEwhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYERGRGRGRGRGRGRGRGygRGRGRGRGygRGRGRGRGygRGRGRGRGRGRGygRGgbRGRGFRRGRGRGRGRGygRGNLRGRGRGvOEKFkFkFkFkFkFkFkFkFyvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEGcGkGcGnGnGkHcHcHcGkGcYEYEYEYEYEYEYEYEYEYENLNLNLNLNLYEHsVgYEHuHuYEVKIaIoVKVKYEYEYEIPIKRGvOyAFkETEXETEXETEXFkDWvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKoKBKBKBKoKBKBKBLrIRLyLNLWMzMSMXNaNiNkNZOiOiOnQdQsQyVgVgYEXtXtJwQzQUXtSvSLSZTBYEhnIKRGvOEKFkFkFkFkAPFkFkFkFyvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBUcKBKBKBKBIRVbVbVbVbVbVbNaVlVgVtVvVvWbWpVvXiVgVgYEXzXtXtXtXtXtXtXtXtXtYEuDIKRGvOvOXNXZYrYtvOXZYtZrvOvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBZZIAIAIAXAKBKBIRCGVbVbVbVbVbNaVlVgntmNmNmNmNmNRxVgfJYEXtXtcBcBXtXtXtXtXtvFYEhnZoHhEwFkFkDhDhDhvODbDbFkFkEwhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRsyKBZZIAIAIAXAKBttIRhzVbVbVbVbVbNaVlVgntmNmNmNmNmNRxVgVgYEXtLiJiJiHFXtdcXtXtvWYEuDhnhnvOyAFkFkFkEmvOeFFkFkEzvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBdZKBKBKBKBIRueVbVbVbVbVbNaVlVgBCVvVvWbWpVvyqVgVgYEXtLiJiJiHFXtXtXtXtQGYEhnhnhnvOyAFknikfkfvOOjFAFkyrvOhnoyYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBKBKBKBTTKBIRueVbVbVbVbVbNaVlVgPpZUZUcaIsNNPcVgVgYEXzXtvKvKXtXtXtXtXtXtYEuDhnhnvOyAFksZEXEXvOCnpQqpyrvOhnhnYEvE
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIROVKBKBKBOVKBWkMHflIRCKueuevVVbzCUaVgYeVgVgVgVgYeVgVgVgYeYErBJbRmnHpAfOfkfkXtBbYEhnhnhneqvOvOvOvOvOvOvOvOvOvOSwhnhnYEvE
+axaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEvEvEvEvEvEvEvEvEvEvEvEvEvEYExKRGRGtuygRGtuRGygRGRGRGzdYEzzzHzHIgIgIgZcUkUkUkzTYEhnIKRGvOBtCODbDhDbDhDbDhCOBtvOhnhnYEvE
+axaxaaaaabacadaeaeaeabacaaafagahahaiahahagajaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEYEYEYEYEYEYEYEYEYEYEYEYEYEYENLNLNLYENLNLNLYEUVUVYEYEYEYEYEYENLNLNLYEDIDIYEYEYEDPIKRGvOyAFkFkFkFkFkFkFkFkDWvOhnhnYEvE
+axakaaaeaealaeaeaealamaeaaanajajajajajajajajaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYEuhRGRGRGRGuhRGRGRGRGuhRGRGRGRGRGRGuhRGRGRGRGRGRGuhRGRGRGRGRGRGuhRGRGEFRGuhRGNLRGRGRGvOEKFkETEXETEXETEXFkFyvOhnoyYEvE
+axakaaacaoaeapaeacaeaeaqaaajajajarasatauajanaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGbCRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGEwFkFkFkFkFkFkFkFkFkFkEwhnhnYEvE
+axakaaaaaaavaaayaaavaaaaaaaaaaazaaaaaaaaazaaaaaaaaaaaaaxaxaxaxaxaxaxaxaxaxaxaxvEvEYERGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGRGFPRGRGRGEwFkFkETEXETEXETEXFkFkEwhnhnYEvE
+axakaaaBaDaeaFaGaGaeaHaGaDaGaFaeaIaJaDaKaeaLaFaDaIaGaaaaaxaxaxaxaxaxaxaxaxaxaxvEYEYERGRGRGRGRGRGRGRGygRGRGRGRGygRGRGRGRGygRGRGRGRGRGRGygRGgbRGRGFRRGRGRGRGRGygRGNLRGRGRGvOEKFkFkFkFkFkFkFkFkFyvOhnhnYEvE
+axakaaaGaGaeaGaGaGaeaMaNaPaQaRaeaKaGaKaGaeaGaSaSaSaSaTaaaxaxaxaxaxaxaxaxaxaxaxvEGcGkGcGnGnGkHcHcHcGkGcYEYEYEYEYEYEYEYEYEYENLNLNLNLNLYEHsVgYEHuHuYEVKIaIoVKVKYEYEYEIPIKRGvOyAFkETEXETEXETEXFkDWvOhnhnYEvE
+axakaaaGaIaeaDaGaGaeaLaGaGaGaLaeaGaKaGaKaeaUaVaWaXaYaYaaaxaxaxaxaxaxaxaxaxaxaxvEIRKoKBKBKBKoKBKBKBLrIRLyLNLWMzMSMXNaNiNkNZOiOiOnQdQsQyVgVgYEXtXtJwQzQUXtSvSLSZTBYEhnIKRGvOEKFkFkFkFkAPFkFkFkFyvOhnhnYEvE
+axakaaaGaGaeaLaGaIaeaDaZbbbcaGbeaKbgaKaGaebibjbjbjbjbjaaaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBUcKBKBKBKBIRVbVbVbVbVbVbNaVlVgVtVvVvWbWpVvXiVgVgYEXzXtXtXtXtXtXtXtXtXtYEuDIKRGvOvOXNXZYrYtvOXZYtZrvOvOhnhnYEvE
+axakaaaSaSblblblblblblblblbmblblblblblblblbnbjbjbjbjboaaaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBZZIAIAIAXAKBKBIRCGVbVbVbVbVbNaVlVgntmNmNmNmNmNRxVgfJYEXtXtcBcBXtXtXtXtXtvFYEhnZoHhEwFkFkDhDhDhvODbDbFkFkEwhnhnYEvE
+axakaabpbpbpbpbpbqbpbpbpbpbpbpbpbpbrbpbsbpbtbuaYbxbjbjaaaxaxaxaxaxaxaxaxaxaxaxvEIRsyKBZZIAIAIAXAKBttIRhzVbVbVbVbVbNaVlVgntmNmNmNmNmNRxVgVgYEXtLiJiJiHFXtdcXtXtvWYEuDhnhnvOyAFkFkFkEmvOeFFkFkEzvOhnhnYEvE
+axakaabpbqbybpbpbpbpbpbpbpbpbpbpbpbpbqbpbpbpbzbzbzbzbzaaaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBdZKBKBKBKBIRueVbVbVbVbVbNaVlVgBCVvVvWbWpVvyqVgVgYEXtLiJiJiHFXtXtXtXtQGYEhnhnhnvOyAFknikfkfvOOjFAFkyrvOhnoyYEvE
+axaxaaaabAbpbpbrbpbAbpbsbqbpbAbpbpbpbybAbpbpbpbpbrbBaaaaaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBKBKBKBTTKBIRueVbVbVbVbVbNaVlVgPpZUZUcaIsNNPcVgVgYEXzXtvKvKXtXtXtXtXtXtYEuDhnhnvOyAFksZEXEXvOCnpQqpyrvOhnhnYEvE
+axaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaxaxaxaxaxaxaxaxaxvEIROVKBKBKBOVKBWkMHflIRCKueuevVVbzCUaVgYeVgVgVgVgYeVgVgVgYeYErBJbRmnHpAfOfkfkXtBbYEhnhnhneqvOvOvOvOvOvOvOvOvOvOSwhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEGcGcjijiGcGkGkGkGkGkGcGkGkGkGkGkGkGcReYExSxSxSxSYEYEYEYEYEYEYEYEYEYEYEYEhOhOrNrNYEuDhnhnhnzjzjzjzjzjzjzjzjzjzjhnhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRSEKBKBkmLPkmkmkmkmIRsyjHbkbkbktCIRvGwAPzPzPzaEYErYKzCCYEvEYEUpAlUpYEYErXROXtBbYEhnhnhnhnhnhnhnhnhnhnhnhnhnhnhnhnhnYEvE
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRBKKBKBKBKBKBKBKBKBIRKBsYuxuxuxiZIRPzPzPzPzPzPzYErYPYJZYEvEYEUpUpUpMYXtXtXtXtXtYEYEYEOrOrOrOrOrOrOrOrOrOrOrOrOrOrYEYEvE
@@ -578,46 +821,46 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbEbEbEbEbEbDbDaxaxaxbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbEbEbEbEbEbEbEbEbDbDbDbDbDbEbEbDbDaxbDbDaxaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbEbDbDaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbFbFbGbFbFbGbFbFbEbEbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbFbHbIbLbMbFbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbFbFbFbFbFbFbFbGbGbFbFbNbPbPbQbFbFbGbGbFbFbFbGbFbFbFbEbEbEbDbDaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFbRbSbTbVbFbXbZcbcdbFcecfcfcgbFchcicichbFcjckclcmbFbEbEbEbEbDbDaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFcnbPbPbPcocpcpcpcpcqcrcrcrcrcscrcrcrcrctcucucucubFbEbEbEbEbEbDbDaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFcvcwcxcybFczcpcpcAbFcrcCcDcrbFcEcrcFcrbFcGcHcIcJbFbEbEbEbEbEbEbDaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFbFbFbFbFbFcKcpcpcLbFcrcMcNcrbFcOcPcRcSbFbFbFbFbFbFbEbEbEbEbEbEbDbDaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbFbFcTcUcVbFcXcpcYcLbFcrcZdacrbFdbdddedfbFcndgdhbFbFbEbEbEbEbEbEbEbDbDbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbFbFdicUbFbFbFbFbFbFcrbFbFcrbFbFbFbFbFbFbPdjbFbFbEbEbEbEbEbEbEbEbEbEbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDaxbEbEbEbEbEbFdkcUdldmdndodpcrcrcrdqcrcrdrdsdtdudvbPdwbFbEbEbEbEbEbEbEbEbEbEbEbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbFbFbFbFdxcUdodydzcrcrcrcrdAbGdBdBdBbFbFbFbFbEbEbEbEbEbEbEbEbEbEbDbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbFbFbFbFbFbFbFdCdCbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbDax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbFdEdEdEdEdEdFdGdEdEdEdEdEbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbFbFdEdEdHdEdFdGdEdIdEdEbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbFdEdEdEdFdGdEdEdEbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbFbFdEdFdGdEbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbFbFdJdJbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbKbGbPbPbGbKbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbGbPbPbGbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbFbFbFbFbFbFbEbEbKbGbPbPbGbKbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbFbFbFdKdLdKdKbFbFbGbFbGbPbPbGbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbFdMdNdNdNdNdObPbPdObPbPbPbGbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbFdPdNdNdNdNdObPbPdObPbPbPbGbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbFbFbFdQdRdSdTbFbFbGbFbGbGbGbFbEbEbEbEbEbEbEbEbEbEbEaxbDbDbDaxaxaxaxaxax
-axaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbEbFbGbGbGbGbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxaxaxaxaxaxax
-axaxaaaaabacadaeaeaeabacaaafagahahaiahahagajaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbWbWbEbEbEbEbEbEbEbEbEbWbEbEbEbWbEbEbEbEbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxax
-axakaaaeaealaeaeaealamaeaaanajajajajajajajajaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbWbWbEbEbEbEbDbDbDbEbEbEbEbEbEbEbEbEbEbDaxaxaxaxaxaxaxaxaxax
-axakaaacaoaeapaeacaeaeaqaaajajajarasatauajanaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbWbEbEbEbEbDaxbDbDbDbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxax
-axakaaaaaaavaaayaaavaaaaaaaaaaazaaaaaaaaazaaaaaaaaaaaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbEbEbEbEbEbDaxaxaxbDbDbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxax
-axakaaaBaDaeaFaGaGaeaHaGaDaGaFaeaIaJaDaKaeaLaFaDaIaGaaaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbEbEbEbEbDaxaxaxaxbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axakaaaGaGaeaGaGaGaeaMaNaPaQaRaeaKaGaKaGaeaGaSaSaSaSaTaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbEbEbEbEbEbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axakaaaGaIaeaDaGaGaeaLaGaGaGaLaeaGaKaGaKaeaUaVaWaXaYaYaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axakaaaGaGaeaLaGaIaeaDaZbbbcaGbeaKbgaKaGaebibjbjbjbjbjaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbWbWbWbWbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axakaaaSaSblblblblblblblblbmblblblblblblblbnbjbjbjbjboaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbWbWbWbWbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axakaabpbpbpbpbpbqbpbpbpbpbpbpbpbpbrbpbsbpbtbuaYbxbjbjaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbWbWbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axakaabpbqbybpbpbpbpbpbpbpbpbpbpbpbpbqbpbpbpbzbzbzbzbzaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaaaabAbpbpbrbpbAbpbsbqbpbAbpbpbpbybAbpbpbpbpbrbBaaaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
-axaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbEbEbEbEbEbEbEbEbDbDbDbDbDbEbEbDbDaxbDbDaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbEbDbDaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEcGcLcLdLcLcLcLcLcLdLcLcLcLcGbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbFbFbGbFbFbGbFbFbEbEbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxbDbDbDbDbDbDbEbEbEdTdUdVdWdXgzeacGebececededdTeebEbEbEbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbFbHbIbLefbFbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEegeheieieieiejcGekekekekekegbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbFbFbFbFbFbFbFbGbGbFbFbNbPbPbQbFbFbGbGbFbFbFbGbFbFbFbEbEbEbDbDaxaxaxaxax
+axaxaxaxaxaxbDbDbDbDbEbEbEbEbEbEbEbEegelemeieieicGcGenekeoekekegbEbEbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFbRbSbTbVbFbXbZcbcdbFcecfcfcgbFchcicichbFcjckclcmbFbEbEbEbEbDbDaxaxaxax
+axaxaxaxaxbDbDbEbEbEbEbEerererbEbEbEdTeseteueidYcGevewexeyezeAdTbEbEbEerererbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFcnbPbPbPcocpcpcpcpcqcrcrcrcrcscrcrcrcrctcucucucubFbEbEbEbEbEbDbDaxaxax
+axaxaxaxaxbDbEbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLeBeCeCeDcLcLcLcLcGcLcLcLdLdLcLcLcLcGbEbEbEbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFcvcwcxcybFczcpcpcAbFcrcCcDcrbFcEcrcFcrbFeEcHcIcJbFbEbEbEbEbEbEbDaxaxax
+axaxaxaxaxbDbDbEbEdTeGeHeIeKeLeMeNeOdTePeQeQeQeReReReSeTeQeQePdTeUeVeWeXeYeZfafbdTbEbEbEbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbFbFbFbFbFbFcKcpcpfcbFcrcMcNcrbFcOcPcRcSbFbFbFbFbFbFbEbEbEbEbEbEbDbDaxax
+axaxaxaxaxaxbDbEbEegfdfeffeHfgeQeQfhfieQeQeQfjfmfnfnfofpeQeQeQfifqfsftfufvfwfxfqfybEbEbDbDbDbDaxaxbDbDbDbDaxaxaxaxaxaxbDbDbEbEbEbFbFcTcUcVbFcXcpcYfcbFcrcZdacrbFdbdddedfbFcndgdhbFbFbEbEbEbEbEbEbEbDbDbD
+axaxaxaxaxbDbDbEbEegfzeHeHeHfAeQeQeQfBeQeQeQfjfCfDfDfEfpeQeQeQfFfqfqfGfHfHfKfqfqfybEbEbDbDbWbDbDbDbDbWbDbDbDbDbDbDbDbDbDbDbEbEbEbEbFbFdicUbFbFbFbFbFbFcrbFbFcrbFbFbFbFbFbFbPdjbFbFbEbEbEbEbEbEbEbEbEbEbD
+axaxaxbDbDbDbEbEbEegeHeHeHeHfMeQeQeQfNeQeQeQfjfPfQfQfSfpeQeQeQfNfHfHfHfHfHfHfHfHfybEbEbDbFbWbWbWbWbWbWbWbWbWbWbWbWbDbDfTbDbEbEbEbEbEbFdkcUdldmdndodpcrcrcrdqcrcrdrdsdtdudvbPdwbFbEbEbEbEbEbEbEbEbEbEbEbD
+axaxbDbDbEbEbEbEbEdTfUfVfUfWfXfYgagcdTgdeQeQeQgegfgfgggheQeQgddTgkfHglgmgogpfHgkdTbFbEbEbFbEbEbWbWbEbEbWbEbWbWbWbWbWbDbDbDbEbEbFbEbEbFbFbFbFdxcUdodydzcrcrcrcrdAbGdBdBdBbFbFbFbFbEbEbEbEbEbEbEbEbEbEbDbD
+axbDbDbEbEbEbEbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLgqdLdLgrcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFgsgsbFbFbFgsgsbFbFgsgsbFbFgsgsbFbFbFbFbFbFbFbFbEbEbEbEbFbFbFbFbFbFbFdCdCbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbDax
+axbDcGdLdLdLdLcLcGcLdLcLdLcLdLcLdLcLdTePeQeQeQeQgtgtgweQeQeQePfNgxgxgygxgxgxgxgxgybFgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAepbFgBgPbFbEbEbEbEbEbEbFdEdEdEdEdEdFdGdEdEdEdEdEbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDax
+axbDdTgCgDgEgFgtgtgGgHgtgHgtgHgtgHgtgIeQeQeQgJeQgtgtgKgMgMgMgNgOgxgxgxgxgxgxgxgxgxgWgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgQdNdNbFbEbEbEbEbEbEbFbFdEdEdHdEdFdGdEdIdEdEbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDax
+axbDfNgSgtgtgtgtgTcLcLcLcLcLcLcLcLcLdTgdeQeQeQeQgUgUeQeQeQeQgdfigxgxgVgxgxgxgxgxgVbFgAgAgAgAgAhCgAgAgAgAgAgAhCgAgAgAgAgRbFdNdNbFbEbEbEbEbEbEbEbFbFdEdEdEdFdGdEdEdEbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxax
+axbDdTgSgtgtgtgtgtcGcLcLcLcLcLcLcLcLgXcLcLcLcLgqdLdLgqcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFgsgsbFgsgsbFgYhDhdbFgsgsbFbFbFgsgsbFbFhehebFbFbFbFbFbFbFbEbEbFbFbFdEdFdGdEbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxax
+axbDdThfhfhhhihjhkdThlhmhohphphqhshtdTePeQeQeQeReReReReQeQeQePdThuhvhvhwhxhAekhBdTbFbEbEbFhFhFbFhGixiIbFhFhFbFbDbEbEbEbEbFdNdNhedNdNhedNdNbFbEbEbEbEbFbFdJdJbFbFbWbWbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxax
+axbDcGcLcLcLcLcLcGdThmhmhmhmhmhmhmhmfNeQeQeQfjhHhIhIhJfAeQeQeQfNeQeQeQfjekekekhKdTbEbEbEbFhLhLhLhGixiIhLhLhLbFbEbEbEbEbDbFdNdNhedNdNhedNdNbFbEbEbEbEbKbGbPbPbGbKbWbWbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxax
+axbDbDbDbEbEbEbEbEdThmhmhmhMhNhmhmhmhQeQeQeQfjhRhShShTfAeQeQeQhUeQeQeQhVekhWhXhYdTbEbEbEbFhLhLhLhGixiIhLhLhLbFbEbDbDbEbFbFbFbFbFbFbFbFhehebFbEbEbEbWbWbGbPbPbGbWbWbWbWbEbEbEbWbEbEbWbEbWbWbEbEbDaxaxaxax
+axaxaxbDbDbEbEbEbEdThZhmhmhmhmhmiahmfieQeQeQfjibicicidfAeQeQeQfiifigeQfjekekekhKdTbEbEbEbFhLhLhLhGixiIhLhLhLbFbDbDbDbDbDbFbDbDbDbDbDbFdNihbFbFbFbWbWbKbGbPbPbGbKbEbWbWbWbWbWbWbWbWbWbWbWbWbWbDbDaxaxaxax
+axaxaxaxbDbDbEbEbEdTiihmijikikimhmiidTgdeQeQeQgegfgfgeeQeQeQgddTinioipfjekekekiqdTbEbEbEbFbFirhLhGixiIhLisbFbFbDbDbDbDbDbDbDbDbDbFbFbFdNdNdKitbFbFbGbFbGbPbPbGbFiJiJiJiJiJiJiJiJiJiJbFiwiwiwbDaxaxaxaxax
+axaxaxaxaxbDbDbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLivcLcLivcLcLcLcLcGcLcLcLcLcLcLcLcLcGbEbEiwbFhLhLhLiKhFjjhLhLhLbFbDbDbDbDbDbDbDbDbDbDbFdMdNdNdNdNdObPbPdObPbPbPbPjkbPbPbPbPbPbPbPbPbPbPjljmjmbDbDaxaxaxaxax
+axaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEdTiyiziBiCeQiDiDeQeQeQeQiEdTbEbEbEbEbEbEbEbEbEbEbDbDbFhLiHiHjojqjogZiHhLbFbDbDbDbEbDbDbDbDbDbDbFdPdNdNdNdNdObPbPdObPbPbPbPjkbPbPbPbPbPbPbPbPbPbPjljmjmbDaxaxaxaxaxax
+axaxaxaxaxaxaxbDbDbDbEbEbEbEbDbDbEbEdTiLeQeQeQeQeQeQeQeQeQeQiMdTbEbEbEbEbEbEbEbDbDbDbDbDbFhLiHiNiOiOiOiPiHhLbFbDbDbEbEbEbEbEbEbEbFbFbFdQdRdSiQbFbFbGbFbGbGbGbFbFiJiJiJiJiJiJiJiJiJiJbFbDbDbDaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxbDbDbEbEbDbDbDbDbEdTiRiSeQifiTiUiUiTifeQiViRdTbEbEbEbEbDbDbDbDbDaxaxbDbFhLiHiWiOiOiOiXiHhLbFbDbDbEbEbEbEbEbEbEbEbEbFbGbGbGbGbFbEbEbEbWbWbWbEbEbEbWbWbWbWbWbWbWbWbWbWbDaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxbDbDbEbEbDbDbDbEdTiYeQeQeQeQipipeQeQeQeQiRdTbEbEbEbDbDaxaxaxaxaxaxbDbFhLiHiWiOiOiOiXiHhLbFbDbEbEbEbEbEbEbWbWbEbEbEbEbEbEbEbEbEbWbEbEbEbWbWbEbWbWbWbEbEbWbWbEbWbDbDbDaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbDbEcGcLjajajajajajajajajajacLcGbEbEbDbDaxaxaxaxaxaxaxbDbFhLiHjbiOiOiOjdiHhLbFbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbWbWbEbEbEbEbDbDbDbEbWbWbEbEbEbEbEbEbEbDaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxbDbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxbDbFhLiHiHjeiOjgiHiHhLbFbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbWbEbEbEbEbDaxbDbDbDbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxbDbFhLiHiHjriOjsiHiHhLbFbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbEbEbEbEbEbDaxaxaxbDbDbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbEbEbDbEbDbDbEbEbEbEbDbDbEbDbDaxaxaxaxaxaxaxaxaxaxbDbFhLhLiHiHjhiHiHhLhLbFbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWbEbEbEbEbDaxaxaxaxbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxbDbFhLhLhLiHjuiHhLhLhLbFbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbEbEbEbEbEbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbFhLhLhLhLhLhLhLhLhLbFbEbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbFbFbFbFbFbFbFbFbFbFbFbFbFbEbEbEbEbEbEbEbEbWbWbWbWbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbFbDbDbDbDbDbDbDbDbDbFbEbEbEbEbEbEbEbEbEbWbWbWbWbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbWbWbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbEbEbEbEbEbEbEbEbEbEbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbEbEbEbEbEbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 "}
