@@ -364,7 +364,7 @@
 "gZ" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/turf/metal/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/gatehouse)
 "ha" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/inn)
 "hb" = (/obj/machinery/light/small{dir = 4; icon_state = "bulb1"; light_color = "#234F1E"},/obj/effect/floor_decal/turf/metal,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
-"hc" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/glass_cone{name = "Internal Wing"; req_access = list(31)},/obj/machinery/door/firedoor,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/gatehouse)
+"hc" = (/obj/machinery/door/firedoor,/obj/machinery/door/airlock/glass_cone{name = "Munitorum Wing"; req_access = list(31)},/obj/machinery/door/firedoor,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/gatehouse)
 "hd" = (/obj/machinery/newscaster/security_unit{pixel_y = 33},/obj/effect/floor_decal/turf/metal/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/gatehouse)
 "he" = (/obj/structure/table/steel,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/gatehouse)
 "hf" = (/obj/effect/floor_decal/turf/metal,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/gatehouse)
