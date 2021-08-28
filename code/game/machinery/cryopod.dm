@@ -161,13 +161,12 @@
 	var/disallow_occupant_types = list()
 
 	var/mob/living/occupant = null       // Person waiting to be despawned.
-	var/time_till_despawn = 9000  // Down to 15 minutes //30 minutes-ish is too long
 	var/time_entered = 0          // Used to keep track of the safe period.
+	var/ghosts_player = TRUE // if this cryopod ghosts players, just exists because of lifepod
 	var/obj/item/device/radio/intercom/announce //
 
 	var/obj/machinery/computer/cryopod/control_computer
 	var/last_no_computer_message = 0
-	var/applies_stasis = 1
 
 	// These items are preserved when the process() despawn proc occurs.
 	var/list/preserve_items = list(
@@ -197,7 +196,6 @@
 	on_enter_occupant_message = "The storage unit broadcasts a sleep signal to you. Your systems start to shut down, and you enter low-power mode."
 	allow_occupant_types = list(/mob/living/silicon/robot)
 	disallow_occupant_types = list(/mob/living/silicon/robot/drone)
-	applies_stasis = 0
 
 /obj/machinery/cryopod/lifepod
 	name = "life pod"
@@ -209,6 +207,7 @@
 	occupied_icon_state = "redpod1"
 	var/launched = 0
 	var/datum/gas_mixture/airtank
+	ghosts_player = FALSE
 
 /obj/machinery/cryopod/lifepod/Initialize()
 	. = ..()
@@ -278,10 +277,8 @@
 
 	return TRUE
 
+///Just ghostizes and offers the mob to ghosts.
 /obj/machinery/cryopod/proc/despawn_occupant()
-
-	icon_state = base_icon_state
-
 	occupant.ghostize(CORPSE_CANNOT_REENTER)
 	occupant.offer_mob()
 
@@ -357,15 +354,17 @@
 	if(src.occupant)
 		to_chat(usr, "<span class='notice'><B>\The [src] is in use.</B></span>")
 		return
-	if(alert(usr, "Are you sure you wanna go into the cryopod ? That will ghost you and give your character to another person", "Enter Cryopod?", "Yes", "No") != "Yes")
-		return
+
+	if(ghosts_player)
+		if(alert(usr, "Are you sure you wanna go into the cryopod ? That will ghost you and give your character to another person", "Enter Cryopod?", "Yes", "No") != "Yes")
+			return
 
 	visible_message("[usr] starts climbing into \the [src].", 3)
 
 	if(!do_after(usr, 20, src))
 		return
 
-	if(!usr || !usr.client)
+	if(!usr?.client)
 		return
 
 	if(src.occupant)
@@ -374,7 +373,9 @@
 
 	set_occupant(usr)
 	src.add_fingerprint(usr)
-	despawn_occupant()
+
+	if(ghosts_player)
+		despawn_occupant()
 
 /obj/machinery/cryopod/proc/go_out()
 
