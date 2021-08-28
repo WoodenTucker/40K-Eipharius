@@ -7,7 +7,7 @@
  */
 
 
-//Main cryopod console.
+//Main cryopod console, pretty useless now.
 
 /obj/machinery/computer/cryopod
 	name = "cryogenic oversight console"
@@ -263,7 +263,6 @@
 	return ..()
 
 /obj/machinery/cryopod/proc/check_occupant_allowed(mob/M)
-	return TRUE
 	var/correct_type = FALSE
 	for(var/type in allow_occupant_types)
 		if(istype(M, type))
@@ -277,7 +276,7 @@
 		if(istype(M, type))
 			return FALSE
 
-	return FALSE
+	return TRUE
 
 /obj/machinery/cryopod/proc/despawn_occupant()
 
