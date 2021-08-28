@@ -359,7 +359,6 @@
 "gU" = (/obj/effect/floor_decal/turf/steel{icon_state = "bloodbar2"},/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "gV" = (/obj/machinery/light/small/red,/turf/simulated/floor/plating/reinforced,/area/cadiaoutpost/gma/inquisitoracolyte)
 "gW" = (/obj/machinery/door/airlock/simiel{name = "Aecor - Simiel"},/obj/effect/floor_decal/turf/shaft,/turf/simulated/floor/plating,/area/inqmoon)
-"gX" = (/obj/random/medical/lite,/turf/simulated/wall/r_wall,/area/cadiaoutpost/gma/inquisitoracolyte)
 "gY" = (/obj/structure/sign/inquisition,/turf/simulated/wall/techno,/area/inqmoon)
 "gZ" = (/obj/machinery/button/remote/blast_door/id_scan{id = "arvusrampdoor"; pixel_x = -5; pixel_y = 0; req_access = list(202)},/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "ha" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/wood,/area/centcom)
@@ -837,7 +836,7 @@ axbDbDbEbEbEbEbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLgqdLdLgrcLcLcLcLcGcLcLcLcLcLcLcLcL
 axbDcGdLdLdLdLcLcGcLdLcLdLcLdLcLdLcLdTePeQeQeQeQgtgtgweQeQeQePfNgxgxgygxgxgxgxgxgybFgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAepbFgBgPbFbEbEbEbEbEbEbFdEdEdEdEdEdFdGdEdEdEdEdEbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDax
 axbDdTgCgDgEgFgtgtgGgHgtgHgtgHgtgHgtgIeQeQeQgJeQgtgtgKgMgMgMgNgOgxgxgxgxgxgxgxgxgxgWgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgQdNdNbFbEbEbEbEbEbEbFbFdEdEdHdEdFdGdEdIdEdEbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDax
 axbDfNgSgtgtgtgtgTcLcLcLcLcLcLcLcLcLdTgdeQeQeQeQgUgUeQeQeQeQgdfigxgxgVgxgxgxgxgxgVbFgAgAgAgAgAhCgAgAgAgAgAgAhCgAgAgAgAgRbFdNdNbFbEbEbEbEbEbEbEbFbFdEdEdEdFdGdEdEdEbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxax
-axbDdTgSgtgtgtgtgtcGcLcLcLcLcLcLcLcLgXcLcLcLcLgqdLdLgqcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFgsgsbFgsgsbFgYhDhdbFgsgsbFbFbFgsgsbFbFhehebFbFbFbFbFbFbFbEbEbFbFbFdEdFdGdEbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxax
+axbDdTgSgtgtgtgtgtcGcLcLcLcLcLcLcLcLcGcLcLcLcLgqdLdLgqcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFgsgsbFgsgsbFgYhDhdbFgsgsbFbFbFgsgsbFbFhehebFbFbFbFbFbFbFbEbEbFbFbFdEdFdGdEbFbFbFbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxax
 axbDdThfhfhhhihjhkdThlhmhohphphqhshtdTePeQeQeQeReReReReQeQeQePdThuhvhvhwhxhAekhBdTbFbEbEbFhFhFbFhGixiIbFhFhFbFbDbEbEbEbEbFdNdNhedNdNhedNdNbFbEbEbEbEbFbFdJdJbFbFbWbWbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDaxaxax
 axbDcGcLcLcLcLcLcGdThmhmhmhmhmhmhmhmfNeQeQeQfjhHhIhIhJfAeQeQeQfNeQeQeQfjekekekhKdTbEbEbEbFhLhLhLhGixiIhLhLhLbFbEbEbEbEbDbFdNdNhedNdNhedNdNbFbEbEbEbEbKbGbPbPbGbKbWbWbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxax
 axbDbDbDbEbEbEbEbEdThmhmhmhMhNhmhmhmhQeQeQeQfjhRfDfDhSfAeQeQeQhUeQeQeQhVekhWhXhYdTbEbEbEbFhLhLhLhGixiIhLhLhLbFbEbDbDbEbFbFbFbFbFbFbFbFhehebFbEbEbEbWbWbGbPbPbGbWbWbWbWbEbEbEbWbEbEbWbEbWbWbEbEbDaxaxaxax
