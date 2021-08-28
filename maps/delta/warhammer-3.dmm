@@ -47,7 +47,7 @@
 "aU" = (/obj/effect/floor_decal/industrial/warning{dir = 9},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
 "aV" = (/obj/effect/floor_decal/newcorner/blue/solid,/obj/structure/table/standard,/obj/machinery/light,/obj/item/reagent_containers/food/drinks/cans/waterbottle,/turf/simulated/floor/tiled/white{icon_state = "tiled"},/area/cadiaoutpost/oa/medicae/virology)
 "aW" = (/obj/effect/floor_decal/industrial/warning{dir = 1},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
-"aX" = (/obj/structure/cable{icon_state = "16-0"},/obj/structure/cable{icon_state = "0-8"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
+"aX" = (/obj/structure/cable{icon_state = "16-0"},/obj/structure/cable{icon_state = "0-8"},/obj/structure/ladder/up,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
 "aY" = (/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
 "aZ" = (/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
 "ba" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/cable{d1 = 4; d2 = 8; icon_state = "4-8"; pixel_y = 0},/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
