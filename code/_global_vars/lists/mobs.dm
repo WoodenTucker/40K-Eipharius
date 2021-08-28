@@ -1,0 +1,1 @@
+GLOBAL_LIST_EMPTY(offered_mob_list)				//all /mobs offered by admins

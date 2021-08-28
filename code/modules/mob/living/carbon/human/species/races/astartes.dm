@@ -24,7 +24,7 @@ Astartes
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	mob_size = MOB_LARGE
 	strength = STR_VHIGH
-	genders = MALE
+	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN
