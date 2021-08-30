@@ -39,7 +39,7 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
-	suit_store = /obj/item/gun/energy/las/lasgun/luscius
+	suit_store = list(/obj/item/gun/energy/las/lasgun/luscius,
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
