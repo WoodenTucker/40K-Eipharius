@@ -263,10 +263,42 @@ default behaviour is:
 
 	return temperature
 
+///Offers a mob for ghosts to take.
+/mob/living/proc/offer_mob()
+	GLOB.offered_mob_list += src
+	notify_ghosts(SPAN_BNOTICE("A mob is being offered! Name: [name]([real_name])[job ? " Job: [job]" : ""]"), enter_link = "claim=\ref[src]", source = src, action = NOTIFY_ORBIT)
 
-// ++++ROCKDTBEN++++ MOB PROCS -- Ask me before touching.
-// Stop! ... Hammertime! ~Carn
-// I touched them without asking... I'm soooo edgy ~Erro (added nodamage checks)
+///Used by ghosts to take over a offered mob.
+/mob/living/proc/take_over(mob/M, bypass)
+	if(!M.mind)
+		to_chat(M, SPAN_WARNING("You don't have a mind."))
+		return FALSE
+
+	if(!bypass)
+		if(client)
+			to_chat(M, "<span class='warning'>That mob has already been taken.</span>")
+			GLOB.offered_mob_list -= src
+			return FALSE
+
+		if(job && jobban_isbanned(M, job))
+			to_chat(M, "<span class='warning>You are jobbanned from that role.</span>")
+			return FALSE
+
+		if(stat == DEAD)
+			to_chat(M, "<span class='warning>That mob has died.</span>")
+			GLOB.offered_mob_list -= src
+			return FALSE
+
+		log_game("[key_name(M)] has taken over [key_name_admin(src)].")
+		message_admins("[key_name_admin(M)] has taken over [src]([real_name]).")
+
+	if(isghost(M))
+		M.say("I'm taking over \the [src]([real_name])")
+	GLOB.offered_mob_list -= src
+	M.mind.transfer_to(src, TRUE)
+
+	return TRUE
+
 
 /mob/living/proc/getBruteLoss()
 	return maxHealth - health
