@@ -329,7 +329,7 @@ Area basic template
 /area/cadiaoutpost/gma/inquisitoracolyte
 	name = "Inquisitorial Acolyte Vessel ''Simiel''"
 	icon_state = "red"
-	requires_power = TRUE //is a separate ship presumably has its own power source
+	requires_power = FALSE //is a separate ship presumably has its own power source
 
 //Outpost Areas
 /area/cadiaoutpost/oa/arrivals
@@ -497,6 +497,11 @@ Area basic template
 	icon_state = "cave"
 	music = 'sound/music/caves.ogg'
 	var/instability = 0
+
+/area/cadiaoutpost/oa/hangar
+	name = "Hangar"
+	icon_state = "red"
+	requires_power = TRUE
 
 /////////////////////////////////////////
 ////////////////Engineering/////////////

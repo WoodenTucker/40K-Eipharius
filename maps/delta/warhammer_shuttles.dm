@@ -8,16 +8,16 @@
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/inquisition
 
 /obj/effect/shuttle_landmark/ferry/inquisition_end
-	name = "Space"
+	name = "Planet"
 	landmark_tag = "inquisition_end"
-	base_area = /area/space
-	base_turf = /turf/space
+	base_area = /area/cadiaoutpost/oa/hangar
+	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/ferry/inquisition_start
-	name = "Planet"
+	name = "Moon"
 	landmark_tag = "inquisition_start"
-	base_area = /area/cadiaoutpost/oa/theforest
-	base_turf = /turf/simulated/floor/snow
+	base_area = /area/inqmoon
+	base_turf = /turf/simulated/floor/plating/reinforced
 
 /obj/machinery/computer/shuttle_control/ferry/inquisition
 	name = "Shuttle Control Console"
