@@ -235,7 +235,7 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=2, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/luscius
@@ -283,7 +283,7 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay = 2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay = 4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay = 4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		list(mode_name="automatic",   	 burst=1, fire_delay=2,  move_delay = 2, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 2),
 		)
 
@@ -307,7 +307,7 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=1.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=2, move_delay=2,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=2,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		list(mode_name="automatic",   	 burst=1, fire_delay=2,  move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 2),
 		)
 
