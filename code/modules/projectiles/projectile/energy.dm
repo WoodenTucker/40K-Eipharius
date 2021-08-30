@@ -134,6 +134,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 20
+	armor_penetration = 10
 
 /obj/item/projectile/energy/pulse/pulserifle
 	name = "pulse round"
