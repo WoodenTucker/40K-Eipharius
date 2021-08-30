@@ -1,5 +1,11 @@
-<h1>Welcome to Space Station 13!</h1>
+<h1>Welcome to Grimdark 13!</h1>
 
 -<i>This server is running IS12, a modification of the <a>Baystation 12</a> SS13 code.</i>
+
+<strong>Check the Rules first.
+
+Do not break the atmosphere.
+
+Do not metagame.</strong>
 <br><br>
-<strong>Discord:</strong> <a href="https://discord.gg/Avp9z7r">for posting of bugs, discussion and issues.</a>
+<strong>Discord:</strong> <a href="https://discord.gg/Avp9z7r">for posting of bugs, discussion and issues.</a> <— <strong>CLICK HERE!</strong>
