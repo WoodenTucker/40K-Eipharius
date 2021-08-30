@@ -327,7 +327,7 @@
 	force = 50.0
 	caliber = ".75"
 	accuracy = 0.15
-	fire_delay = 1.5
+	fire_delay = 4 // its a hecking bolter pistol
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -349,7 +349,7 @@
 	force = 50.0
 	caliber = ".75"
 	accuracy = 0.75
-	fire_delay = 1.5
+	fire_delay = 3.5 //better than standard
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine

@@ -12,6 +12,7 @@
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
 	empty_icon = "boltaction-e"
 	far_fire_sound = "sniper_fire"
+	fire_delay = 10
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
 	name = "\improper Mark I Stormrider"
@@ -58,12 +59,14 @@
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = "brifle"
 	penetrating = FALSE
-	damage = 65
+	damage = 50
 
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = "brifle"
-	penetrating = FALSE
-	damage = 85
+	penetrating = TRUE // fuck that shit penetrative rounds
+	damage = 65
+	armor_penetration = 40
+
 
 /obj/item/ammo_magazine/brifle
 	name = "Rifle Box"
@@ -592,9 +595,9 @@
 	unloaded_icon = "ravenbolter-e"
 	fire_delay=2
 	burst=1
-	move_delay=12
+	move_delay=5
 	one_hand_penalty=8
-	automatic = 2
+	automatic = 3.5 // takes a bit longer than a normal automatic weapon to shoot but shoots well
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
@@ -628,11 +631,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	fire_delay=2
+	fire_delay=3.5
 	burst=1
-	move_delay=12
+	move_delay=4
 	one_hand_penalty=8
-	automatic = 2
+	automatic = 3.5
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
@@ -665,11 +668,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
-	fire_delay=2
-	burst=1
-	move_delay=12
-	one_hand_penalty=8
-	automatic = 2
+	fire_delay = 4 //salamanders shoot slower but less move delay
+	burst = 1
+	move_delay= 2
+	one_hand_penalty = 8
+	automatic = 4
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
@@ -702,11 +705,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
-	fire_delay=2
-	burst=1
-	move_delay=12
+	fire_delay= 4.5 // slightly slower than the astartes, afterall normal humans use it
+	burst = 1
+	move_delay = 5
 	one_hand_penalty=8
-	automatic = 2
+	automatic = 4.5
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
@@ -742,10 +745,10 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sisterbolter-30"
 	unloaded_icon = "sisterbolter-30-e"
-	fire_delay= 2
+	fire_delay= 4.5
 	burst= 1
-	move_delay= 12
-	automatic = 2
+	move_delay= 4.5
+	automatic = 4.5
 	firemodes = list()
 	gun_type = GUN_LMG
 	condition = 300 //Enough for one clean mag.
@@ -760,7 +763,7 @@
 //various kroot rifles, bolt action and lever
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
-	name = "improper Kroot Bolt Rifle"
+	name = "\improper Kroot Bolt Rifle"
 	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
@@ -772,9 +775,10 @@
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
+	fire_delay = 10 // 1 second to shoot
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
-	name = "improper Kroot Bolt Rifle"
+	name = "\improper Kroot Bolt Rifle"
 	force = 40
 	sharp = 1
 	ammo_type = /obj/item/ammo_casing/krootbullet
@@ -782,7 +786,7 @@
 	hitsound = "stab_sound"
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
-	name = "improper Kroot Lever Rifle"
+	name = "\improper Kroot Lever Rifle"
 	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
@@ -796,6 +800,7 @@
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
 	ammo_type = /obj/item/ammo_casing/krootbullet
+	fire_delay = 12
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
 	name = "improper Kroot Lever Rifle"

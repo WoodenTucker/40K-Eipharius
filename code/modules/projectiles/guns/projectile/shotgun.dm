@@ -243,6 +243,7 @@
 	icon_state = "mosin"
 	item_state = "mosin"
 	caliber = "a762"
+	fire_delay = 10
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
 	casingsound = 'sound/weapons/guns/misc/casingfall1.ogg'
 	pumpsound = 'sound/weapons/boltpump.ogg'
