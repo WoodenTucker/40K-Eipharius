@@ -40,6 +40,13 @@ Begin Warhammer loadouts
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/luscius
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel = 1
+	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
 	name = OUTFIT_JOB_NAME("Catachan Fighter")
@@ -96,7 +103,14 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
-	glasses = null
+	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel = 1
+	)
 
 /decl/hierarchy/outfit/job/sergeant/catachan
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
