@@ -231,9 +231,11 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
 
+	fire_delay = 2 // 0.2 seconds
+
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/luscius
@@ -243,8 +245,9 @@ obj/item/gun/energy/retro
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 20
+	force = 30 //BAYOONEEEET
 	one_hand_penalty = 2
+	fire_delay = 4
 	accuracy = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -254,8 +257,9 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
 
+
 	firemodes = list(
-		list(mode_name="semiauto",     burst=1,     fire_delay=0, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semiauto", fire_delay = 4, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
@@ -276,10 +280,11 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
 
+
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1),
+		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay = 2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay = 4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=2,  move_delay = 2, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 2),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
@@ -301,9 +306,9 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1),
+		list(mode_name="semiauto",       burst=1, fire_delay=1.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=2,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=2,  move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 2),
 		)
 
 /obj/item/gun/energy/las/laspistol
