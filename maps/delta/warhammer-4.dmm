@@ -1,7 +1,7 @@
 "aa" = (/obj/structure/dogbed{color = "grey"},/obj/effect/floor_decal/carpet/purple,/obj/effect/floor_decal/carpet/purple{dir = 4},/obj/effect/floor_decal/carpet/purple{dir = 6},/mob/living/simple_animal/rtroach,/turf/simulated/floor/carpet/purple,/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ab" = (/obj/structure/table/woodentable,/obj/item/material/ashtray,/obj/effect/floor_decal/turf/cafe2,/turf/simulated/floor/carpet/red,/area/cadiaoutpost/oa/service/bar)
 "ac" = (/obj/structure/table/glass,/obj/effect/floor_decal/newcorner/blue/solid,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
-"ad" = (/obj/effect/floor_decal/turf/splate,/obj/structure/table/steel_reinforced,/obj/random/ammo,/obj/random/ammo,/obj/item/clothing/mask/gas/commissar,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/commissar)
+"ad" = (/obj/effect/floor_decal/turf/splate,/obj/structure/table/steel_reinforced,/obj/random/ammo,/obj/random/ammo,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/commissar)
 "ae" = (/turf/simulated/wall/r_wall,/area/cadiaoutpost/oa/hangar)
 "af" = (/obj/structure/table/standard,/obj/item/reagent_containers/food/condiment/small/peppermill,/obj/item/reagent_containers/food/condiment/small/saltshaker,/obj/item/reagent_containers/food/condiment/enzyme,/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/bar)
 "ag" = (/obj/effect/floor_decal/turf/splate,/obj/machinery/light/small/red{icon_state = "bulb1"; dir = 1},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
