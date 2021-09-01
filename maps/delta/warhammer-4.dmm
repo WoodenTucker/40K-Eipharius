@@ -543,7 +543,6 @@
 "QF" = (/obj/structure/flora/ausbushes/sunnybush,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/theforest)
 "QI" = (/obj/effect/floor_decal/turf/splate,/obj/structure/table/steel_reinforced,/obj/item/paper_bin,/obj/item/stamp/hos,/obj/item/pen,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/commissar)
 "QJ" = (/obj/structure/cable{icon_state = "1-8"},/obj/effect/floor_decal/snow,/turf/simulated/floor/plating,/area/cadiaoutpost/oa/engineering/solars)
-"QN" = (/obj/effect/floor_decal/turf/splate,/obj/structure/table/steel_reinforced,/obj/item/melee/pcsword,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/commissar)
 "QQ" = (/obj/effect/floor_decal/turf/shaft,/obj/structure/bed/chair/comfy/purp{dir = 1; icon_state = "comfychair_preview"},/obj/effect/landmark/start/rd,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/magosexplorator)
 "QT" = (/obj/effect/floor_decal/turf/shaft,/obj/machinery/power/apc{dir = 8; icon_state = "apc0"; pixel_x = -32; pixel_y = 0},/obj/structure/cable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/magosexplorator)
 "QV" = (/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves)

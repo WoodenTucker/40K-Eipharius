@@ -466,8 +466,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Greatcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Caraspace platings, making it extremely protective at the cost of mobility."
-	icon_state = "kriegcoat"
-	item_state = "kriegcoat"
+	icon_state = "grencoat"
+	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 60, bullet = 60, laser = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -533,6 +533,18 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/commissar/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
+
+/obj/item/clothing/suit/armor/commissar/krieg
+	name = "Commissar's Trenchcoat"
+	desc = "The Commissar's iconic coat, this out tailored to match more of the uniform theme of the Officers of Krieg. Though the Krieg Guardsmen don't fear you, the others certainly will."
+	icon_state = "Kriegissar"
+	item_state = "Kriegissar"
+
+/obj/item/clothing/suit/armor/commissar/catachan
+	name = "Commissar's Trenchcoat"
+	desc = "What used to be a decorated and custom tailored suitcoat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan. Though, wearing something like this out here is more of a power move."
+	icon_state = "catacommissar"
+	item_state = "catacommissar"
 
 //Inquisitor Armors
 

@@ -117,6 +117,10 @@
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
+	alt_titles = list(
+		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
+		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
+		)
 	can_be_in_squad = FALSE
 	sniper_skill = 10
 	auto_rifle_skill = 10

@@ -148,6 +148,13 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/shoes/commissar
+	name = "boots of the commissar"
+	desc = "Knee high riding boots of an officer of the Officio Prefectus."
+	icon_state = "comm_boots"
+	item_state = "comm_boots"
+	species_restricted = null
+
 // Astarte Stuff
 
 /obj/item/clothing/shoes/astarte/boots

@@ -238,6 +238,18 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/commissar/krieg
+	name = "Commissar's Peaked Cap"
+	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
+	icon_state = "KriegissarHat"
+	item_state = "KriegissarHat"
+
+/obj/item/clothing/head/commissar/catachan
+	name = "Commissar's Peaked Cap"
+	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
+	icon_state = "CataCommissarHat"
+	item_state = "CataCommissarHat"
+
 // Administratum Stuff
 
 /obj/item/clothing/head/commissar/adept
