@@ -4,7 +4,7 @@
 	suit = /obj/item/clothing/suit/armor/agent/caraspace
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/inqcs
-	gloves = /obj/item/clothing/gloves/combat/cadian
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/inqhelm
 	mask = /obj/item/clothing/mask/gas/security/agent
@@ -35,12 +35,12 @@
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor Of Ordo Hereticus")
 	uniform = /obj/item/clothing/under/rank/principalagent
-	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
+	suit = /obj/item/clothing/suit/armor/ordohereticus
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/inqcs
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = null
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	shoes = /obj/item/clothing/shoes/hereticusboots
+	head = /obj/item/clothing/head/ordohereticus
 	mask = null
 	glasses = null
 	id = /obj/item/card/id/inquisition/principal_agent
@@ -64,6 +64,9 @@
 
 /decl/hierarchy/outfit/job/inquisitor/malleus
 	name = OUTFIT_JOB_NAME("Inquisitor Of Ordo Malleus")
+	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = null
 	suit_store = /obj/item/gun/projectile/lockebolter
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,

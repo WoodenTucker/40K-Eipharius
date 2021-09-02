@@ -575,11 +575,25 @@ obj/item/clothing/suit/armor
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 75, bullet = 75, laser = 75, energy = 75, bomb = 55, bio = 0, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
+/obj/item/clothing/suit/storage/hooded/inquisitor/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.5
+
+/obj/item/clothing/suit/armor/ordohereticus
+	name = "Throne Agent's Holy Coat"
+	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
+	icon_state = "hereticuscoat"
+	item_state = "hereticuscoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio = 0, rad = 0)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 // Mechanicus Drip
 
