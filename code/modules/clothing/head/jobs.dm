@@ -416,6 +416,15 @@
 	armor = list(melee = 50, bullet = 50, laser = 50,energy = 50, bomb = 20, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/head/ordohereticus
+ 	name = "Inquisition Holy Hat"
+ 	desc = "An hat issued to Ordo Hereticus Inquisitor's. Very Protective unlike the average flak helmet."
+ 	icon_state = "hereticushat"
+ 	item_state = "hereticushat"
+ 	cold_protection = HEAD
+ 	armor = list (melee = 60, bullet = 60, laser = 60,energy = 60, bomb = 50, bio = 0, rad = 0)
+
+
 
 // Adepta Sororitas
 

@@ -262,3 +262,40 @@
   armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
+
+//Inquisition Stuff
+
+/obj/item/clothing/shoes/hereticusboots
+	name = "Ordo Hereticus Shoes"
+	desc = "Tall plasteel boots with black paint."
+	icon_state = "inqshoes"
+	item_state = "inqshoes"
+	force = 3
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio = 0, rad = 0)
+	siemens_coefficient = 0.7
+	can_hold_knife = 1
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	var/obj/item/material/sword/combat_knife/knife = null
+/obj/item/clothing/shoes/hereticusboots/New()
+	..()
+	knife = new
+	update_icon()
+/obj/item/clothing/shoes/hereticusboots/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/material/sword/combat_knife))
+		if(knife)//We've already got a knife in there, no need for another.
+			return
+		user.drop_from_inventory(I)
+		I.forceMove(src)
+		knife = I
+		update_icon()
+		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
+/obj/item/clothing/shoes/hereticusboots/attack_hand(mob/living/user)
+	if(knife)
+		user.put_in_active_hand(knife)
+		knife = null
+		update_icon()
+		return
+	..()

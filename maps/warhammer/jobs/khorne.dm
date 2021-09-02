@@ -43,7 +43,7 @@
 				return
 		if(1)
 			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
-			STAT_LEVEL(str)+=1
+			STAT_LEVEL(str)+=5
 			src.rage++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
 			src.mind.special_role = "Khorne Cultist"
