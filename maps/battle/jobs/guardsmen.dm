@@ -1,14 +1,14 @@
 /datum/job/guardsman
-	title = "Cadian Guardsman"
+	title = "Guardsman"
 	supervisors = "the Commissar and your Sergeant."
 	total_positions = 20
 	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	alt_titles = list(
-		"Catachan Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
-		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
-		"Valhallan Guardsman" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Catachan Jungle Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
+		"Death Korps of Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
+		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 	selection_color = "#33813A"
 	department_flag = SEC
@@ -54,7 +54,7 @@
 // Sergeant
 
 /datum/job/sergeant
-	title = "Cadian Sergeant"
+	title = "Sergeant"
 	supervisors = "the Commissar"
 	total_positions = 2
 	spawn_positions = 2
