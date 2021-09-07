@@ -37,7 +37,7 @@
 	return ..()
 
 /mob/living/carbon/human/proc/isSkittari()//Used to tell if someone is a skit boy, can be used for possible jobs later down the line, stole from children
-	if(species && species.name == "Skitarii")
+	if(species?.name == "Skitarii")
 		return 1
 	else
 		return 0
@@ -48,35 +48,21 @@
 	warfare_faction = IMPERIUM
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii)
 	outfit.equip(src)
-	request_player()
-
-
+	offer_mob()
 	hand = 0//Make sure one of their hands is active.
 	isburied = 1
 
-/mob/living/carbon/human/skitarii/New(var/new_loc)
-	..(new_loc, "Skitarii")
-	sleep(3000)
-	request_player()
-
-
-//Procs for grabbing players into our skit boy
-/mob/living/carbon/human/skitarii/proc/request_player() //reqs the player
-	for(var/mob/observer/ghost/O in GLOB.player_list)
-		if(jobban_isbanned(O, "Syndicate")) //so I can JB shitters
-			continue
-		if(O.client) //just duh
-			question(O.client)
-
 /mob/living/carbon/human/skitarii/proc/question(var/client/C) //asks the questions
-	spawn(0)
-		if(!C)	return
-		var/response = alert(C, "A Skitarii unit has been manufactured and needs a player. Are you interested?", "Skitarii", "Yes", "No",)
-		if(!C || ckey)
-			return
-		if(response == "Yes")
-			transfer_personality(C)
-			src.warfare_faction = IMPERIUM
+	if(!C)
+		return FALSE
+	var/response = alert(C, "A Skitarii unit has been manufactured and needs a player. Are you interested?", "Skitarii", "Yes", "No",)
+	if(!C || ckey)
+		return FALSE
+	if(response == "Yes")
+		transfer_personality(C)
+		src.warfare_faction = IMPERIUM
+		return TRUE
+	return FALSE
 
 /mob/living/carbon/human/skitarii/proc/transfer_personality(var/client/candidate) //puts the guy in the place
 
@@ -87,7 +73,6 @@
 	src.ckey = candidate.ckey
 	if(src.mind)
 		src.mind.assigned_role = "syndicate"
-		sleep (2)
 
 /mob/living/carbon/human/skitarii/proc/giveskitstats()
 	set name = "Run startup diagnostics"

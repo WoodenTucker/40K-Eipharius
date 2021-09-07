@@ -226,11 +226,59 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
-/obj/item/storage/backpack/satchel/smurfs
-	desc = "An Ultramar powerpack."
-	icon_state = "um_back"
-	item_state = "um_back"
+/obj/item/storage/backpack/satchel/warfare/sisterelohiem
+	name = "Order of the Sacred Rose Powerpack"
+	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
+	icon_state = "sister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 0
+
+/obj/item/storage/backpack/satchel/astartes
+	name = "Astarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack."
+	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
+	icon_state = "ultrapack"
+	item_state = "ultrapack"
+	canremove = 0
+	max_storage_space = DEFAULT_BACKPACK_STORAGE //backpack storage with satchel access.
+
+/obj/item/storage/backpack/satchel/astartes/ultramarine
+	name = "Astarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrapack"
+	item_state = "ultrapack"
+
+/obj/item/storage/backpack/satchel/astartes/ravenguard
+	name = "RAstarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIXth Chapter, Raven Guards."
+	icon_state = "ravpack"
+	item_state = "ravpack"
+
+/obj/item/storage/backpack/satchel/astartes/bloodravens
+	name = "Blood Ravens powerpack"
+	desc = "A Blood Raven powerpack"
+	icon_state = "bravpack"
+	item_state = "bravpack"
+
+/obj/item/storage/backpack/satchel/astartes/salamander
+	name = "Astarte Mark VII Powerpack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XVIIIth Chapter, Salamanders."
+	icon_state = "salpack"
+	item_state = "salpack"
+
+/obj/item/storage/backpack/satchel/astartes/apothecary
+	name = "Astarte Mark VII Medipack"
+	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been upgraded with additional spotlight and surgical arms."
+	icon_state = "salpack"
+	item_state = "salpack"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/techpack //because it uses techpriest stuff.
+	name = "Astarte Mark VII Servo-Harness"
+	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been equipped with additional Servo-Arms."
+	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
+	icon_state = "techpack"
+	item_state = "techpack"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
 
 /obj/item/storage/backpack/satchel/warfare/kroot
 	desc = "Fit for war, and not much else."
@@ -243,237 +291,135 @@
 	var/can_toggle = 1
 	var/is_toggled = 1
 
-	verb/toggleallen()
-		set name = "Equip Allen Wrench"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the Wrench of Saint Allen.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out a Wrench of Saint Allen.")
-			usr.put_in_hands(new /obj/item/device/allenwrench(usr))
-			src.is_toggled = 2
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/toggleallen()
+	set name = "Equip Allen Wrench"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the Wrench of Saint Allen.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out a Wrench of Saint Allen.")
+		usr.put_in_hands(new /obj/item/device/allenwrench(usr))
+		src.is_toggled = 2
 
-	verb/toggleoils()
-		set name = "Deploy Holy Oils"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/holyoils)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the holy oils.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/holyoils)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the holy oils.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the holy oils")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out a container of sacred oil.")
-			usr.put_in_hands(new /obj/item/device/holyoils(usr))
-			src.is_toggled = 2
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/toggleoils()
+	set name = "Deploy Holy Oils"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/device/holyoils)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the holy oils.</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/device/holyoils)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the holy oils.</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the holy oils")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out a container of sacred oil.")
+		usr.put_in_hands(new /obj/item/device/holyoils(usr))
+		src.is_toggled = 2
 
-	verb/togglechisel()
-		set name = "Reveal Auto-Chisel"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the auto-chisel.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out the auto-chisel.")
-			usr.put_in_hands(new /obj/item/device/autochisel(usr))
-			src.is_toggled = 2
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/togglechisel()
+	set name = "Reveal Auto-Chisel"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the auto-chisel.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the auto-chisel.")
+		usr.put_in_hands(new /obj/item/device/autochisel(usr))
+		src.is_toggled = 2
 
-	verb/togglecutter()
-		set name = "Fire up Laser-Cutter"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the laser cutter.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out the laser cutter.")
-			usr.put_in_hands(new /obj/item/device/lasercutter(usr))
-			src.is_toggled = 2
+/obj/item/storage/backpack/satchel/warfare/techpriest/verb/togglecutter()
+	set name = "Fire up Laser-Cutter"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the laser cutter.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the laser cutter.")
+		usr.put_in_hands(new /obj/item/device/lasercutter(usr))
+		src.is_toggled = 2
 
-/obj/item/storage/backpack/satchel/warfare/biologis
+/obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 	canremove = FALSE
-	var/can_toggle = 1
-	var/is_toggled = 1
 
-	verb/toggleneural()
-		set name = "Uncoil the Neural Adapter"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/neuraladapter)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the neural adapter!</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/neuraladapter)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the neural adapter!</span>", "<span class='warning>What was that sound?</span>")
+/obj/item/storage/backpack/satchel/warfare/techpriest/biologis/verb/toggleneural()
+	set name = "Uncoil the Neural Adapter"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/device/neuraladapter)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the neural adapter!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/device/neuraladapter)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the neural adapter!</span>", "<span class='warning>What was that sound?</span>")
 			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the neural adapter.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out the neural adapter.")
-			usr.put_in_hands(new /obj/item/device/neuraladapter(usr))
-			src.is_toggled = 2
-	verb/toggleallen()
-		set name = "Equip Allen Wrench"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the wrench of Saint Allen.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the Wrench of Saint Allen.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out a Wrench of Saint Allen.")
-			usr.put_in_hands(new /obj/item/device/allenwrench(usr))
-			src.is_toggled = 2
-
-	verb/toggleoils()
-		set name = "Deploy Holy Oils"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/holyoils)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the holy oils.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/holyoils)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the holy oils.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the holy oils")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out a container of sacred oil.")
-			usr.put_in_hands(new /obj/item/device/holyoils(usr))
-			src.is_toggled = 2
-
-	verb/togglechisel()
-		set name = "Reveal Auto-Chisel"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/autochisel)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the auto-chisel.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the auto-chisel.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out the auto-chisel.")
-			usr.put_in_hands(new /obj/item/device/autochisel(usr))
-			src.is_toggled = 2
-
-	verb/togglecutter()
-		set name = "Fire up Laser-Cutter"
-		set category = "Tools"
-		set src in usr
-		if(!usr.canmove || usr.stat || usr.restrained())
-			return
-		if(!can_toggle)
-			to_chat(usr,"This tool cannot be toggled!")
-			return
-		if(src.is_toggled == 2)
-			if(istype(usr.l_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
-				visible_message("<span class='warning'> [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
-				qdel(usr.l_hand)
-				update_icon()
-			if(istype(usr.r_hand, /obj/item/device/lasercutter)) //Not the nicest way to do it, but eh
-				qdel(usr.r_hand)
-				visible_message("<span class='warning'>  [usr] quickly hides an ancient tool of incredible power.</span>", "<span class='notice'>You put away the laser cutter.</span>", "<span class='warning>What was that sound?</span>")
-			src.icon_state = initial(icon_state)
-			to_chat(usr,"You put away the laser cutter.")
-			src.is_toggled = 1
-		else
-			to_chat(usr,"You pull out the laser cutter.")
-			usr.put_in_hands(new /obj/item/device/lasercutter(usr))
-			src.is_toggled = 2
-
+		to_chat(usr,"You put away the neural adapter.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the neural adapter.")
+		usr.put_in_hands(new /obj/item/device/neuraladapter(usr))
+		src.is_toggled = 2
 /obj/item/storage/backpack/satchel/warfare/chestrig
 	name = "Chestrig"
 	desc = "Holds ammo and other goodies. But not a lot of it."

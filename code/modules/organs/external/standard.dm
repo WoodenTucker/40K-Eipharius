@@ -70,7 +70,7 @@
 	tendon_name = "palmaris longus tendon"
 	artery_name = "basilic vein"
 	arterial_bleed_severity = 0.75
-	gibbable = FALSE
+	gibbable = TRUE
 
 /obj/item/organ/external/arm/stun_act(var/stun_amount, var/agony_amount)
 	if(!owner || (agony_amount < 5))
@@ -117,7 +117,7 @@
 	tendon_name = "cruciate ligament"
 	artery_name = "femoral artery"
 	arterial_bleed_severity = 0.75
-	gibbable = FALSE
+	gibbable = TRUE
 
 /obj/item/organ/external/leg/stun_act(var/stun_amount, var/agony_amount)
 	if(!owner || agony_amount < 5)
@@ -164,7 +164,7 @@
 	has_tendon = TRUE
 	tendon_name = "Achilles tendon"
 	arterial_bleed_severity = 0.5
-	gibbable = FALSE
+	gibbable = TRUE
 
 /obj/item/organ/external/foot/stun_act(var/stun_amount, var/agony_amount)
 	if(!owner || agony_amount < 5)
@@ -214,7 +214,7 @@
 	has_tendon = TRUE
 	tendon_name = "carpal ligament"
 	arterial_bleed_severity = 0.5
-	gibbable = FALSE
+	gibbable = TRUE
 
 /obj/item/organ/external/hand/robo_hand/New()
 	..()

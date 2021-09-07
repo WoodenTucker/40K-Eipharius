@@ -444,6 +444,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/inquisition/principal_agent
 	job_access_type = /datum/job/inquisitor
+
 /obj/item/card/id/civilian/chaplain
 	job_access_type = /datum/job/chaplain
 

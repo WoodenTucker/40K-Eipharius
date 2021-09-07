@@ -290,18 +290,23 @@
 	icon_state = "imp2-left"
 
 /obj/structure/sign/stainedglass1
+	name = "Stained Glass"
 	icon_state = "stglass1"
 
 /obj/structure/sign/stainedglass2
+	name = "Stained Glass"
 	icon_state = "stglass2"
 
 /obj/structure/sign/stainedglass3
+	name = "Stained Glass"
 	icon_state = "stglass3"
 
 /obj/structure/sign/stainedglass4
+	name = "Stained Glass"
 	icon_state = "stglass4"
 
 /obj/structure/sign/stainedglass5
+	name = "Stained Glass"
 	icon_state = "stglass5"
 
 /obj/structure/sign/wanted

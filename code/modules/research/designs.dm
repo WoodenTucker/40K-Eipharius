@@ -386,14 +386,6 @@ other types of metals and chemistry for reagents).
 	..()
 	name = "Biotech device prototype ([item_name])"
 
-/datum/design/item/medical/slime_scanner
-	desc = "Multipurpose organic life scanner."
-	id = "slime_scanner"
-	req_tech = list(TECH_MAGNET = 2, TECH_BIO = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 200, "glass" = 100)
-	build_path = /obj/item/device/slime_scanner
-	sort_string = "MACFA"
-
 /datum/design/item/medical/robot_scanner
 	desc = "A hand-held scanner able to diagnose robotic injuries."
 	id = "robot_scanner"
@@ -514,13 +506,6 @@ other types of metals and chemistry for reagents).
 	..()
 	name = "Implantable biocircuit design ([item_name])"
 
-/datum/design/item/implant/chemical
-	name = "chemical"
-	id = "implant_chem"
-	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3)
-	build_path = /obj/item/implantcase/chem
-	sort_string = "MFAAA"
-
 /datum/design/item/implant/death_alarm
 	name = "death alarm"
 	id = "implant_death"
@@ -555,13 +540,6 @@ other types of metals and chemistry for reagents).
 	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3, TECH_ILLEGAL = 3)
 	build_path = /obj/item/implantcase/freedom
 	sort_string = "MFAAF"
-
-/datum/design/item/implant/explosive
-	name = "explosive"
-	id = "implant_explosive"
-	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3, TECH_ILLEGAL = 4)
-	build_path = /obj/item/implantcase/explosive
-	sort_string = "MFAAG"
 
 /datum/design/item/AssembleDesignName()
 	..()

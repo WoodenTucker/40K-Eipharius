@@ -101,22 +101,6 @@
 			paiController.pai_candidates.Remove(candidate)
 	feedback_add_details("admin_verb","MPAI") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
-/client/proc/cmd_admin_slimeize(var/mob/M in SSmobs.mob_list)
-	set category = "Fun"
-	set name = "Make slime"
-
-	if(!ticker)
-		alert("Wait until the game starts")
-		return
-	if(ishuman(M))
-		log_admin("[key_name(src)] has slimeized [M.key].")
-		spawn(10)
-			M:slimeize()
-			feedback_add_details("admin_verb","MKMET") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-		log_and_message_admins("made [key_name(M)] into a slime.")
-	else
-		alert("Invalid mob")
-
 /*
 /client/proc/cmd_admin_monkeyize(var/mob/M in mob_list)
 	set category = "Fun"

@@ -10,7 +10,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 250
+	total_health = 150
 	mob_size = MOB_MEDIUM
 	strength = STR_MEDIUM
 	sexybits_location = BP_GROIN
@@ -27,7 +27,7 @@
 	blood_color = "#4c0377"
 
 /datum/species/tau/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.age = rand(min_age,max_age)//Random age for kiddos.
+	H.age = rand(20,35)//Random age for kiddos.
 	if(H.f_style)//tau don't get beards.
 		H.f_style = "Shaved"
 	to_chat(H, "<big><span class='warning'>You wake up after a long flight to find yourself in Imperial space. Go to your Tau tab and stretch your muscles.</span></big>")
@@ -67,6 +67,8 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
+	src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses
+
 	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Kroot Hunter")
 	switch(castes)
 		if("Fire Warrior")
@@ -80,8 +82,8 @@
 			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulsepistol, slot_in_backpack)
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
-			src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
-			src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+			src.add_stats(rand(10,12),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+			src.add_skills(rand(4,9),rand(8,13),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
 			src.name = "Shas [name]"
@@ -110,7 +112,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/watercaste, slot_wear_suit)
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
-			src.add_stats(rand(10,12),rand(10,12),rand(12,13),15) //gives stats str, end, int, dex
+			src.add_stats(rand(6,8),rand(10,12),rand(12,13),15) //gives stats str, end, int, dex
 			src.add_skills(rand(3,6),rand(3,6),rand(0,3),3,3) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language

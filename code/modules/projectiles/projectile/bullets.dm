@@ -242,7 +242,7 @@
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 40
+	damage = 25
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
@@ -298,7 +298,8 @@
 
 /obj/item/projectile/bullet/bpistol
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 85
+	damage = 60
+	armor_penetration = 25
 
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -309,6 +310,7 @@
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 85 //ow
+	armor_penetration = 25
 
 /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -369,8 +371,8 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 
 /obj/item/projectile/bullet/ork/shoota/New()
-	var/dice = rand(1, 100)
-	switch(dice)
+
+	switch(rand(1, 100))
 		if(100)
 			damage = 100
 			agony = 20
@@ -386,4 +388,4 @@
 			damage = rand(10, 30)
 		if(1 to 9)
 			damage = 1
-	..()
+	return ..()

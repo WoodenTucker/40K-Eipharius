@@ -6,23 +6,20 @@
   \____/|_|  \___|
         */
 
-/obj/item/newore/smallrock
-	name = "small rock"
-	desc = "Just that, a piece of a cave wall."
+/obj/item/newore
 	icon = 'icons/obj/mining.dmi'
-	icon_state = "glass_ore"
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+/obj/item/newore/smallrock
+	name = "small rock"
+	desc = "Just that, a piece of a cave wall."
+	icon_state = "glass_ore"
 
 /obj/item/newore/ironore
 	name = "iron ore"
 	desc = "A chunk of iron ore."
-	icon = 'icons/obj/mining.dmi'
 	icon_state = "iron"
-	randpixel = 8
-	w_class = ITEM_SIZE_SMALL
-	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/ironore/New()
 	icon_state = pick("iron","iron2","iron3",)
@@ -31,48 +28,36 @@
 /obj/item/newore/copperore
 	name = "copper ore"
 	desc = "A chunk of copper ore"
-	icon = 'icons/obj/mining.dmi'
 	icon_state = "copper"
-	randpixel = 8
-	w_class = ITEM_SIZE_SMALL
-	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/silverore
 	name = "silver ore"
 	desc = "A chunk of silver ore"
-	icon = 'icons/obj/mining.dmi'
 	icon_state = "ore_silver"
-	randpixel = 8
-	w_class = ITEM_SIZE_SMALL
-	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/coalore
 	name = "coal"
 	desc = "A chunk of coal"
-	icon = 'icons/obj/mining.dmi'
 	icon_state = "coal"
-	randpixel = 8
-	w_class = ITEM_SIZE_SMALL
-	drop_sound = 'sound/items/bone_drop.ogg'
-
 /obj/item/newore/goldore
 	name = "gold ore"
 	desc = "SOLID GOLLLLLLD!"
-	icon = 'icons/obj/mining.dmi'
 	icon_state = "gold"
-	randpixel = 8
-	w_class = ITEM_SIZE_SMALL
-	drop_sound = 'sound/items/bone_drop.ogg'
 
 /obj/item/newore/adamantiumore
 	name = "adamantium ore"
 	desc = "A chunk of the rarest known mineral in the Imperium."
-	icon = 'icons/obj/mining.dmi'
 	icon_state = "adamantine"
-	randpixel = 8
-	w_class = ITEM_SIZE_SMALL
-	drop_sound = 'sound/items/bone_drop.ogg'
 
+/obj/item/newore/uraniumore
+	name = "uranium ore"
+	desc = "A rock with smaller chunks of uranium inside."
+	icon_state = "uranium"
+
+/obj/item/newore/phoronore
+	name = "phoron ore"
+	desc = "A chunk of phoron ore, a highly flammable ore that came from another galaxy.(Forges can still smelt it)"
+	icon_state = "phoron"
 
  /* _____                   _
  |_   _|                 | |
@@ -530,6 +515,26 @@
 		new /obj/item/ingots/adamantiumingot(src.loc)
 		src.coalfed -= 0.5
 		return
+	else if (istype(O,	/obj/item/newore/uraniumore))
+		visible_message("[user] feeds [O] into the fire!")
+		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
+		qdel(O)
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/stack/material/uranium(src.loc)
+		src.coalfed -= 0.5
+		return
+	else if (istype(O,	/obj/item/newore/phoronore))
+		visible_message("[user] feeds [O] into the fire!")
+		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
+		qdel(O)
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/stack/material/phoron(src.loc)
+		src.coalfed -= 0.5
+		return
 
 
 //Gem washer
@@ -713,7 +718,7 @@
 */
 
 /obj/item/newore/gems/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(!isAutochisel(W))
+	if(!isAutochisel(W) && !isLasercutter(W))
 		to_chat(user, "Use an auto-chisel to try and carve out the gem!")
 		return
 	if(isAutochisel(W))
@@ -760,7 +765,6 @@
 					to_chat(user, "[user] slips and damages the gem!")
 					qdel(src)
 					return
-
 			if(4)
 				if(prob(50))
 					to_chat(user, "[user] successfully cuts the gem!")
@@ -774,7 +778,6 @@
 					to_chat(user, "[user] slips and damages the gem!")
 					qdel(src)
 					return
-
 			if(5)
 				if(prob(50))
 					to_chat(user, "[user] successfully cuts the gem!")
@@ -802,4 +805,24 @@
 					qdel(src)
 					return
 
+	if(isLasercutter(W))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
+		switch(gemtype)
+
+			if(6)
+				if(prob(50))
+					to_chat(user, "[user] successfully refines the gem!")
+					new /obj/item/stack/material/diamond(src.loc,1)
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+					qdel(src)
+					return
+				if(prob(50))
+					new /obj/item/newore/gems/diamond/fail(src.loc)
+					to_chat(user, "[user] slips and damages the gem!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+					qdel(src)
+					return
+			else
+				to_chat(user, "You can not refine this type of gem into useable material!")
+				return

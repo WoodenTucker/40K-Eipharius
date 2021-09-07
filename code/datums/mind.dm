@@ -71,7 +71,7 @@
 	src.key = key
 	..()
 
-/datum/mind/proc/transfer_to(mob/living/new_character)
+/datum/mind/proc/transfer_to(mob/living/new_character, force_key_move = FALSE)
 	if(!istype(new_character))
 		world.log << "## DEBUG: transfer_to(): Some idiot has tried to transfer_to() a non mob/living mob. Please inform Carn"
 	if(current)					//remove ourself from our old body's mind variable
@@ -81,6 +81,13 @@
 		current.mind = null
 
 		SSnanoui.user_transferred(current, new_character) // transfer active NanoUI instances to new user
+
+	if(key)
+		if(new_character.key != key)
+			new_character.ghostize(CORPSE_CANNOT_REENTER)
+	else
+		key = new_character.key
+
 	if(new_character.mind)		//remove any mind currently in our new body's mind variable
 		new_character.mind.current = null
 
@@ -93,7 +100,7 @@
 	if(changeling)
 		new_character.make_changeling()
 
-	if(active)
+	if(active || force_key_move)
 		new_character.key = key		//now transfer the key to link the client to our new body
 
 /datum/mind/proc/store_memory(new_text)
@@ -511,11 +518,6 @@
 /mob/living/carbon/human/mind_initialize()
 	..()
 	if(!mind.assigned_role)	mind.assigned_role = "Assistant"	//defualt
-
-//slime
-/mob/living/carbon/slime/mind_initialize()
-	..()
-	mind.assigned_role = "slime"
 
 /mob/living/carbon/alien/larva/mind_initialize()
 	..()

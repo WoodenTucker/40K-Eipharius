@@ -329,7 +329,7 @@ Area basic template
 /area/cadiaoutpost/gma/inquisitoracolyte
 	name = "Inquisitorial Acolyte Vessel ''Simiel''"
 	icon_state = "red"
-	requires_power = TRUE //is a separate ship presumably has its own power source
+	requires_power = FALSE //is a separate ship presumably has its own power source
 
 //Outpost Areas
 /area/cadiaoutpost/oa/arrivals
@@ -497,6 +497,11 @@ Area basic template
 	icon_state = "cave"
 	music = 'sound/music/caves.ogg'
 	var/instability = 0
+
+/area/cadiaoutpost/oa/hangar
+	name = "Hangar"
+	icon_state = "red"
+	requires_power = TRUE
 
 /////////////////////////////////////////
 ////////////////Engineering/////////////
@@ -747,7 +752,7 @@ Area basic template
 	icon_state = "inn"
 	music = 'sound/music/inn.ogg'
 	dynamic_lighting = 1
-	requires_power = TRUE
+	requires_power = 0
 
 /////////////////////////////////////////
 //////////////////Supply////////////////
@@ -1241,6 +1246,11 @@ Area basic template
 	name = "Transport Shuttle"
 	icon_state = "shuttle"
 
+/area/cadiaoutpost/oa/shuttle/inquisition
+	name = "Inquisition Ship"
+	icon_state = "shuttle"
+	requires_power = 0
+
 //village
 /area/cadiaoutpost/oa/village
 	name = "Village"
@@ -1314,5 +1324,12 @@ Area basic template
 /area/cadiaoutpost/oa/tauship
 	name = "Tau Ship"
 	icon_state = "tauship"
-	requires_power = FALSE
+	requires_power = 0
+	dynamic_lighting = 1
+
+
+/area/cadiaoutpost/oa/krootship
+	name = "Kroot Ship"
+	icon_state = "green"
+	requires_power = 0
 	dynamic_lighting = 1

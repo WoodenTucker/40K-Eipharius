@@ -189,6 +189,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
 
 
 /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
@@ -414,3 +415,22 @@
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 50, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/senkhalat
+	name = "ornate khalat"
+	desc = "The ornate khalat of the Seneschal. It is made from the finest fabrics this side of the galaxy and interwoven with real gold. Very fancy."
+	icon_state = "senkhalat"
+	item_state = "senkhalat"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/storage/traderpirate
+	name = "rugged and regal trader coat"
+	desc = "A rugged, regal, trader coat. It is dyed with the finest of dyes and made from durable and armored fabric. For when you need to plunder and pillage the galactic seas."
+	icon_state = "traderpirate"
+	item_state = "traderpirate"
+	armor = list (melee = 10, bullet = 15, laser = 15, energy = 15)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+

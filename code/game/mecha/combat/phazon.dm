@@ -6,16 +6,16 @@
 	step_in = 1
 	dir_in = 1 //Facing North.
 	step_energy_drain = 100
-	health = 200
+	health = 250
 	deflect_chance = 30
-	damage_absorption = list("brute"=0.7,"fire"=0.7,"bullet"=0.7,"laser"=0.7,"energy"=0.7,"bomb"=0.7)
+	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.6,"bomb"=0.6)
 	max_temperature = 25000
 	infra_luminosity = 3
 	wreckage = /obj/effect/decal/mecha_wreckage/phazon
 	add_req_access = 1
 	//operation_req_access = list()
 	internal_damage_threshold = 25
-	force = 15
+	force = 20
 	var/phasing = 0
 	var/phasing_energy_drain = 5 KILOWATTS
 	max_equip = 4

@@ -290,6 +290,10 @@ Exterminatus
 					M.death(0) //no mercy
 				if(T && T.z==3)						//getturf, getturf z level
 					M.death(0) //no mercy
+				if(T && T.z==4)						//getturf, getturf z level
+					M.death(0) //no mercy
+				if(T && T.z==5)						//getturf, getturf z level
+					M.death(1) //some mercy
 		flick("heretics",cinematic)
 
 

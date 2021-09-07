@@ -125,8 +125,10 @@
 			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
 		..()
 
+// KRIEG AXE 
+
 /obj/item/melee/trench_axe
-	name = "trench axe"
+	name = "Trench Axe"
 	desc = "Used mainly for murdering those on the enemy side."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "trenchaxe"
@@ -143,9 +145,11 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 
+// CHAINSWORD 
+
 /obj/item/melee/mercycs
-	name = "mercy chainsword"
-	desc = "Used mainly for ripping and tearing"
+	name = "Locke Pattern Double-Edged Chainsword"
+	desc = "Nicknamed 'Mercy', This Chainsword is designed for a absolute lunatic, it comes with two ripping edges. Designed for maximum rip and tear."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mercychainsword"
 	item_state = "mercychainsword"
@@ -162,8 +166,8 @@
 	grab_sound_is_loud = TRUE
 
 /obj/item/melee/inqcs
-	name = "inquisition chainsword"
-	desc = "Used mainly for ripping and tearing"
+	name = "Drusian Pattern Chainsword"
+	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, Designed solely to smite the filthy xenos."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "inqchainsword"
 	item_state = "inqchainsword"
@@ -180,8 +184,8 @@
 	grab_sound_is_loud = TRUE
 
 /obj/item/melee/pcsword
-	name = "brutal chainsword"
-	desc = "Used mainly for ripping and tearing"
+	name = "Mark I Pattern Chainsword"
+	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "pcsword"
 	item_state = "pcsword"
@@ -196,3 +200,24 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+
+/obj/item/melee/pcsword/eviscerator
+	name = "Eviscerator Pattern Chainsword"
+	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, It's a absurdly large, two-handed chainsword, equipped with a crude disruption field found commonly on power weapon, Though extremely unwieldly, It is a powerful sword, And in the hands of an Astarte, it's truly shines on the Battlefield."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "eviscerator"
+	item_state = "eviscerator"
+	wielded_icon ="eviscerator"
+	force = 1// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 45
+	block_chance = 0
+	sharp = 1
+	edge = 1
+	w_class = ITEM_SIZE_HUGE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")

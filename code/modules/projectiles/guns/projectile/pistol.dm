@@ -73,6 +73,10 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
 
+/obj/item/gun/projectile/talon/adept
+	name = "dulled stub pistol"
+	desc = "A slightly dulled, worn out, stub-pistol. Beaten down from the days spent sitting in a desk drawer. It has the sigil of the Adeptus Administratum on it."
+
 /obj/item/gun/projectile/talon/update_icon()
 	..()
 	if(!is_jammed)
@@ -126,29 +130,6 @@
 		icon_state = "magnum"
 	else
 		icon_state = "magnum-e"
-
-
-
-/obj/item/gun/projectile/bolter_pistol
-	name = "bolter pistol"
-	desc = "A blessed bolt pistol of the Imperium"
-	icon_state = "bpistol"
-	item_state = "bpistol"
-	force = 50.0
-	caliber = ".75"
-	accuracy = 0.15
-	fire_delay = 1.5
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
-	slot_flags = SLOT_BELT|SLOT_S_STORE
-
-/obj/item/gun/projectile/bolter_pistol/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "bpistol-10"
-	else
-		icon_state = "bpistol-10-e"
 
 /obj/item/gun/projectile/gyropistol
 	name = "gyrojet pistol"
@@ -329,6 +310,72 @@
 	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
 	icon_state = "slugga"
 	caliber = ".75"
-	condition = 40
+	can_jam = FALSE
+	accuracy = -2
+	condition = 60
 	force = 20
 	load_method = MAGAZINE
+
+
+// BOLT PISTOL
+
+/obj/item/gun/projectile/bolter_pistol
+	name = "Garm Pattern Service Bolt Pistol"
+	desc = "The human sized bolter pistol, designed for usage by the Commissars of the Officio Prefectus, It also found itself in usage by officers of Astra Militarum, Rogue Traders as well Inquisitorial agents, Thus, it is relatively common and easily found across the Galaxy."
+	icon_state = "bpistol"
+	item_state = "bpistol"
+	force = 50.0
+	caliber = ".75"
+	accuracy = 0.15
+	fire_delay = 4 // its a hecking bolter pistol
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+
+/obj/item/gun/projectile/bolter_pistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "bpistol-10"
+	else
+		icon_state = "bpistol-10-e"
+
+/obj/item/gun/projectile/bolter_pistol/astarte
+	name = "Mark III Pattern Bolt Pistol"
+	desc = "The standard Astarte-issued bolt pistol, larger and of course, better. And as usual, only the Astartes can carries these due to it massive size."
+	icon_state = "bpistol"
+	item_state = "bpistol"
+	str_requirement = 18
+	force = 50.0
+	caliber = ".75"
+	accuracy = 0.75
+	fire_delay = 3.5 //better than standard
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+
+/obj/item/gun/projectile/bolter_pistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "bpistol-10"
+	else
+		icon_state = "bpistol-10-e"
+
+/obj/item/gun/projectile/bolter_pistol/sisterelohiem
+	name = "Godwyn-De'az Pattern Bolter Pistol"
+	desc = "A heavily modified Bolter Pistol designed solely for the Militant wing of the Adepta Sororitas, It is more reliable and potent than another Bolt pistol pattern. Because it is designed for human usage, It is much smaller than standard Astarte Bolter pistol.</i>"
+	icon_state = "sisterbpistol"
+	loaded_icon = "sisterbpistol"
+	force = 25
+	sharp = 1
+	edge = 1
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+
+/obj/item/gun/projectile/bolter_pistol/sisterelohiem/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "sisterbpistol"
+	else
+		icon_state = "sisterbpistol-e"

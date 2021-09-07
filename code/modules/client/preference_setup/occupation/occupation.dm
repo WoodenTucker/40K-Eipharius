@@ -169,6 +169,10 @@
 		else
 			. += " <font color=black>\[NEVER]</font>"
 		. += "</a></td></tr>"
+	
+		if(job.alt_titles)
+			. += "</td></tr><tr bgcolor='[lastJob.selection_color]'><td width='40%' align='center'>&nbsp</td><td><a href='?src=\ref[src];select_alt_title=\ref[job]'>\[[pref.GetPlayerAltTitle(job)]\]</a></td></tr>"
+		. += "</td></tr>"
 	. += "</td'></tr></table>"
 	. += "</center></table><center>"
 	var/datum/job/high_job = SSjobs.GetJob(pref.job_high)

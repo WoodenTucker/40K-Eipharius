@@ -1,13 +1,3 @@
-/*
- * Contains:
- *		Security
- *		Detective
- *		Commissar
- */
-
-/*
- * Security
- */
 /obj/item/clothing/under/rank/warden
 	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for more robust protection. It has the word \"Warden\" written on the shoulders."
 	name = "warden's jumpsuit"
@@ -70,9 +60,6 @@
 	armor = list(melee = 10, bullet = 5, laser = 5,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
-/*
- * Detective
- */
 /obj/item/clothing/under/det
 	name = "detective's suit"
 	desc = "A rumpled white dress shirt paired with well-worn grey slacks."
@@ -117,10 +104,6 @@
 	icon_state = "detective2"
 	desc = "A grey fedora - either the cornerstone of a detective's style or a poor attempt at looking cool, depending on the person wearing it."
 
-
-/*
- * Commissar
- */
 /obj/item/clothing/under/rank/head_of_security
 	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Commissar\". It has additional armor to protect the wearer."
 	name = "Commissar's jumpsuit"
@@ -176,10 +159,6 @@
 	flags_inv = 0
 	siemens_coefficient = 0.6
 
-/*
- * Navy uniforms
- */
-
 /obj/item/clothing/under/rank/security/navyblue
 	name = "security officer's uniform"
 	desc = "The latest in fashionable security outfits."
@@ -188,7 +167,7 @@
 	worn_state = "officerblueclothes"
 
 /obj/item/clothing/under/rank/head_of_security/navyblue
-	desc = "The insignia on this uniform tells you that this uniform belongs to the Commissar."
+	desc = "The insignia on this uniform tells you that this uniform belongs to the Head Of Security."
 	name = "Commissar's uniform"
 	icon_state = "hosblueclothes"
 	item_state = "ba_suit"
@@ -207,21 +186,71 @@
 	item_state = "ba_suit"
 	worn_state = "barny"
 
-/obj/item/clothing/under/rank/krieger
-	name = "krieg fatigues"
-	desc = "It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection."
+// ASTRA MILITARUM STUFF
+
+/obj/item/clothing/under/rank/krieg_uniform
+	name = "krieg Battle Uniform"
+	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, Though it smells like shit."
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
-	siemens_coefficient = 0.9
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/under/guard_uniform
-	name = "Imperial Guard uniform"
-	desc = "The uniform of those who fight in His name."
-	icon_state = "guard_s"
+/obj/item/clothing/under/cadian_uniform
+	name = "Cadian Battle Dress Uniform"
+	desc = "The uniform of the common, but brave Cadian Regiment."
+	icon_state = "guard"
 	item_state = "guard"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/rank/valhallan_uniform
+	name = "Valhalla Battle Uniform"
+	desc = "The uniform made out of their planetary predator's furs, durable and warm, made for the cold warriors of Valhalla Regiment."
+	icon_state = "krieg"
+	item_state = "krieg"
+	worn_state = "krieg"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/casual_pants/catachan
+	name = "Catachan Battle Shorts"
+	desc = "Catachan fear no temperature, no boltguns, no lasguns, they don't need shirts, They're Catachan Regiment."
+	icon_state = "camopants"
+	cold_protection = LOWER_TORSO
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/under/rank/krieg_uniform/commissar
+	name = "commissar Dress Uniform"
+	desc = "More standard uniform of the Commissars of the Officio Prefectus, just with some Krieg emblems on them in an attempt to similate."
+	icon_state = "kriegissar"
+	item_state = "kriegissar"
+	worn_state = "kriegissar"
+
+/obj/item/clothing/under/rank/catachancommissar
+	name = "commissar Field Pants"
+	desc = "What used to be green tailoring of the uniform given by the Officio Prefectus has been cut down and stripped to be the bare essentials, just like that of the Catachans under you. Around your neck being an emblematic symbol of the Emperor as a necklace."
+	icon_state = "catacomm"
+	item_state = "catacomm"
+	worn_state = "catacomm"
+
+// Astarte
+
+/obj/item/clothing/under/astarte/bodysuit
+	name = "Astarte Bodysuit"
+	desc = "The bodysuit worn by Astartes underneath their Power Armour."
+	icon_state = "swatunder"
+	worn_state = "swatunder"
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+
+// Adepta Sororitas
+
+/obj/item/clothing/under/guard/uniform/sisterelohiem
+	name = "Adepta Sororitas Bodysuit"
+	desc = "If you can inspect this, you're a coomer, do not ERP."
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	siemens_coefficient = 0.9
+	species_restricted = list(SPECIES_HUMAN)
