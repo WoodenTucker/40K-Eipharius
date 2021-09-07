@@ -7,7 +7,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	alt_titles = list(
 		"Catachan Jungle Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
-		"Death Korps of Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
+		"Death Korps of Krieg" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 	selection_color = "#33813A"
