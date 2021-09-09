@@ -107,6 +107,19 @@
 	icon_state = "akarabiner"
 
 
+/obj/item/ammo_magazine/autogrim
+	name = "auto GRIM magazine (5.56mm)"
+	icon_state = "auto_grim"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/a556
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	caliber = "a556"
+	max_ammo = 35
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/autogrim/empty
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
 	icon_state = "9x19p"
