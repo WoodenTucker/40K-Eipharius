@@ -292,6 +292,20 @@
 	..()
 	icon_state = "fullgrass_[rand(1, 3)]"
 
+/obj/structure/flora/ausbushes/meatshroom
+	icon_state = "meatshroom1"
+
+/obj/structure/flora/ausbushes/meatshroom/New()
+	..()
+	icon_state = "meatshroom[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/minishroom
+	icon_state = "minishroom"
+
+/obj/structure/flora/ausbushes/minishroom/New()
+	..()
+	icon_state = "minishroom"
+
 /obj/structure/flora/ash
 	name = "ashroom"
 	icon = 'icons/obj/flora/ash_flora.dmi'

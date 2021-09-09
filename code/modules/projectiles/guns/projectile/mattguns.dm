@@ -414,6 +414,24 @@
 
 	gun_type = GUN_SMG
 
+/obj/item/gun/projectile/automatic/autogrim
+	name = "Autogun pattern GRIM"
+	desc = "A rugged autogun that seems to be somewhat decent."
+	icon_state = "auto_grim"
+	item_state = "auto_grim"
+	wielded_item_state = "auto_grim-wielded"
+	one_hand_penalty = 50
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	unloaded_icon = "auto_grim-e"
+	loaded_icon = "auto_grim"
+	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
+
+	magazine_type = /obj/item/ammo_magazine/autogrim
+	allowed_magazines = /obj/item/ammo_magazine/autogrim
+
+	gun_type = GUN_SMG
+
 /obj/item/gun/projectile/automatic/machinepistol/wooden
 	name = "Mk.1 Soulburn SMG"
 	desc = "A prototype, protoype SMG. Prone to malfunction but it shoots perty fast."
