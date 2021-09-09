@@ -89,6 +89,23 @@
 		to_chat(M, "You name the gun [input]. Say hello to your new friend.")
 		return 1
 
+/obj/item/gun/projectile/mervex
+	name = "mervex revolver"
+	desc = "The mervex revolver is commonly used by pilgrims that like classy. Commonly found on many hive worlds. Uses .357 ammo."
+	icon_state = "mervex"
+	item_state = "crevolver"
+	caliber = "357"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
+	max_shells = 6
+	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	ammo_type = /obj/item/ammo_casing/a357
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+
 // Blade Runner pistol.
 /obj/item/gun/projectile/revolver/deckard
 	name = "Deckard .44"

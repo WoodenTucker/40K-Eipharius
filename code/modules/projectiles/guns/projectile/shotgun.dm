@@ -135,6 +135,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/border
 	name = "border shotgun"
+	desc = "A shotgun commonly used by kriegs. Very effective against trench meat."
 	icon_state = "border"
 	item_state = "cshotgun"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
