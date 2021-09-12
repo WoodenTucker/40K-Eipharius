@@ -421,6 +421,9 @@
 	item_state = "auto_grim"
 	wielded_item_state = "auto_grim-wielded"
 	one_hand_penalty = 50
+	caliber = "a556"
+	max_shells = 35
+	ammo_type = /obj/item/ammo_casing/a556
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	unloaded_icon = "auto_grim-e"
