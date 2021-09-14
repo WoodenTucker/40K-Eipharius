@@ -114,6 +114,19 @@
 	off_state = "denight"
 	electric = 1
 
+/obj/item/clothing/glasses/blacksun
+	name = "blacksun goggles"
+	desc = "The Blacksun Filter is an advanced Tau optical filter that allows the user not only to see at much greater distances when fighting in nighttime conditions but also filters bright flares of light that could blind them."
+	icon_state = "blacksun"
+	item_state = "blacksun"
+	origin_tech = list(TECH_MAGNET = 2)
+	darkness_view = 7
+	action_button_name = "Toggle Goggles"
+	toggleable = 1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	off_state = "blacksun"
+	electric = 1
+
 /obj/item/clothing/glasses/night/New()
 	..()
 	overlay = GLOB.global_hud.nvg

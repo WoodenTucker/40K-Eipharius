@@ -276,3 +276,11 @@
 	icon_state = "hdevice"
 	maxcharge = 3000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
+
+/obj/item/cell/ion
+	name = "ION rifle crystal"
+	desc = "A small, portable magazine crystal for a Tau ION rifle."
+	origin_tech = list(TECH_POWER = 6)
+	icon_state = "ion"
+	maxcharge = 200
+	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
