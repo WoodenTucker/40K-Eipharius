@@ -220,6 +220,17 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/scout
+	name = "fire warrior scout helmet"
+	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
+	icon_state = "scout"
+	item_state = "scout"
+	armor = list(melee = 30, bullet = 65, laser = 65, energy = 55, bomb = 30, bio = 0, rad = 0)
+	siemens_coefficient = 0.6
+	body_parts_covered = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 // Eldar
 
 /obj/item/clothing/head/helmet/eldar

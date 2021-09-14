@@ -3373,6 +3373,13 @@
 	desc = "Just in case catching one yourself is too hard."
 	trash = /obj/item/trash/warfare_can/rat
 
+/obj/item/reagent_containers/food/snacks/warfare/nim
+	name = "Nim ko’nai"
+	icon_state = "nim"
+	open_can_icon = "nim_open"
+	desc = "Shake the noodles inside in order to eat."
+	trash = /obj/item/trash/warfare_can/nim
+
 /obj/item/reagent_containers/food/snacks/warfare/sardine
 	name = "\improper pissardines"
 	icon_state = "pisssardine"

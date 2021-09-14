@@ -262,6 +262,31 @@ obj/item/gun/energy/retro
 		list(mode_name="semiauto", fire_delay = 4, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
+/obj/item/gun/energy/las/boarding
+	name = "Thilium boarding Lascar"
+	desc = "The Thilium-pattern lascarbine, Is a special type of larcarbines used for CQC."
+	icon_state = "boarding"
+	item_state = "lasgun"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 1
+	accuracy = 3
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 40
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lasgun-wielded"
+
+	fire_delay = 1 // 0.2 seconds
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		)
+
 /obj/item/gun/energy/las/lasgun/tinkered
 	name = "Kantrael M36 'Veteran Configuration' Lasgun"
 	desc = "This M36 has been upgraded to consume less power and discharge higher powered shots, Usually found in the hands of Cadian Veterans."
@@ -354,6 +379,27 @@ obj/item/gun/energy/retro
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)
 
+/obj/item/gun/energy/pulse/ionrifle
+	name = "ION rifle"
+	desc = "The ION rifle is a high-energy device that makes a electromagnetic field and react explosively with the target as a result of direct transfer of energy at an atomic level."
+	icon_state = "ionriflet"
+	item_state = "ionriflet"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 2
+	accuracy = 3
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/ion
+	cell_type = /obj/item/cell/ion
+	ammoType = /obj/item/cell/ion
+	wielded_item_state = "ionriflet-wielded"
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		)
+
 /obj/item/gun/energy/pulse/pulsepistol
 	name = "pulse pistol"
 	desc = "The trusty sidearm of the Tau."
@@ -372,4 +418,26 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		)
+
+/obj/item/gun/energy/pulse/pulserifle
+	name = "pulse rifle"
+	desc = "The standard-issue pulse rifle of the Fire Warrior Caste"
+	icon_state = "pulseb"
+	item_state = "pulseb"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 2
+	accuracy = 3
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	cell_type = /obj/item/cell/pulserifle
+	ammoType = /obj/item/cell/pulserifle
+	wielded_item_state = "pulseb_wielded"
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)

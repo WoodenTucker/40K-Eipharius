@@ -91,5 +91,8 @@
 /obj/item/trash/warfare_can/rat
 	icon_state = "ratmeat_empty"
 
+/obj/item/trash/warfare_can/nim
+	icon_state = "nim_empty"
+
 /obj/item/trash/attack(mob/M as mob, mob/living/user as mob)
 	return

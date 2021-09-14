@@ -106,6 +106,40 @@
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
 
+/obj/item/gun/projectile/necros
+	name = "necros revolver"
+	desc = "The necros is a very heavy revolver used commonly by merchants. Uses .44 magnum ammo."
+	icon_state = "necros"
+	item_state = "crevolver"
+	caliber = ".44"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
+	max_shells = 12
+	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	ammo_type = /obj/item/ammo_casing/c44
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+
+/obj/item/gun/projectile/slugrevolver
+	name = "slug revolver"
+	desc = "The slug revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .357 ammo."
+	icon_state = "slug_revolver"
+	item_state = "crevolver"
+	caliber = ".44"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
+	max_shells = 12
+	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	ammo_type = /obj/item/ammo_casing/c44
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+
 // Blade Runner pistol.
 /obj/item/gun/projectile/revolver/deckard
 	name = "Deckard .44"
