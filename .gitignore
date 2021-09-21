@@ -45,3 +45,5 @@ tools/dmitool/bin/main/dmitool/NonPalettedImage.class
 tools/dmitool/bin/main/dmitool/PalettedImage.class
 tools/dmitool/bin/main/dmitool/PNGChunk.class
 tools/dmitool/bin/main/dmitool/RGBA.class
+code/modules/clothing/gloves/legacy.dm
+code/modules/clothing/gloves/legacy.dm
