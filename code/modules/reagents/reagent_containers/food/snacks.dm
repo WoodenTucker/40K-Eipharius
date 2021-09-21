@@ -754,8 +754,8 @@
 	nutriment_amt = 10
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/nutriment/vitamin, 5)
-		bitesize = 3
+		reagents.add_reagent(/datum/reagent/nutriment/vitamin, 1)
+		bitesize = 5
 
 /obj/item/reagent_containers/food/snacks/donkpocket/sinpocket
 	name = "\improper Sin-pocket"
