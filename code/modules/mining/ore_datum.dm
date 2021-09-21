@@ -90,7 +90,7 @@ var/global/list/ores_by_type = list()
 
 /ore/phoron
 	name = "phoron"
-	display_name = "promethium crystals"
+	display_name = "phoron crystals"
 	compresses_to = "phoron"
 	//smelts_to = something that explodes violently on the conveyor, huhuhuhu
 	result_amount = 5
