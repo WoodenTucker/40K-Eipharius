@@ -151,7 +151,7 @@ research holder datum.
 	id = TECH_ENGINEERING
 
 /datum/tech/phorontech
-	name = "Phoron Technology"
+	name = "Promethium Refining Technology"
 	desc = "Manipulation of the mysterious substance colloqually known as 'phoron'."
 	id = TECH_PHORON
 

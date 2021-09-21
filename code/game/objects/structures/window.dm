@@ -411,7 +411,7 @@
 	maxhealth = 12.0
 
 /obj/structure/window/phoronbasic
-	name = "phoron window"
+	name = "promethium-coated window"
 	desc = "A borosilicate alloy window. It seems to be quite strong."
 	basestate = "phoronwindow"
 	icon_state = "phoronwindow"
@@ -422,7 +422,7 @@
 	maxhealth = 40.0
 
 /obj/structure/window/phoronreinforced
-	name = "reinforced borosilicate window"
+	name = "reinforced promethium-coated window"
 	desc = "A borosilicate alloy window, with rods supporting it. It seems to be very strong."
 	basestate = "phoronrwindow"
 	icon_state = "phoronrwindow"

@@ -743,6 +743,20 @@
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 6)
 		bitesize = 2
 
+/obj/item/reagent_containers/food/snacks/frostpunksoup
+	name = "Sawdust Soup"
+	desc = "You might be quite poor on food, if you decided to use sawdust as soup ingredient... Disgusting choice for everyday ration in matter of taste, but it is quite nutritious."
+	icon_state = "frostpunksoup"
+	trash = /obj/item/trash/snack_bowl
+	filling_color = "#d92929"
+	center_of_mass = "x=16;y=7"
+	nutriment_desc = list("soup" = 5)
+	nutriment_amt = 10
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/nutriment/vitamin, 5)
+		bitesize = 3
+
 /obj/item/reagent_containers/food/snacks/donkpocket/sinpocket
 	name = "\improper Sin-pocket"
 	desc = "The food of choice for the veteran. Do <B>NOT</B> overconsume."
