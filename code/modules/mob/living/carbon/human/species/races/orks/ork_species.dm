@@ -44,12 +44,12 @@
 
 /mob/living/carbon/human/ork/Life()
 	..()
-	var/regen = 0.5
+	var/regen = 0.25
 	if(max_waaagh > 0)
 		if(inspired)
-			regen = 2
+			regen = 1
 		else
-			regen = 0.5
+			regen = 0.25
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
 
@@ -62,7 +62,6 @@
 	var/waaagh = 0
 	var/max_waaagh = 0
 	var/inspired = FALSE  //this changes when the ork is buffed by the warboss
-	var/new_species = SPECIES_ORK
 
 /mob/living/carbon/human/ork/New(var/new_loc)
 	max_waaagh = 300
@@ -73,7 +72,7 @@
 			playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
 		if(2)
 			playsound(src, 'sound/voice/ork/workwork.ogg', 50)
-	..(new_loc, new_species)
+	..(new_loc, new_orkz)
 
 /mob/living/carbon/human/ork/Initialize()
 	. = ..()
@@ -86,29 +85,5 @@
 	put_in_hands(new /obj/item/gun/projectile/ork/automatic/shoota)//Give them a weapon.
 	src.isburied = 1
 
-/mob/living/carbon/human/ork/nob/New(var/new_loc)
-	h_style = "Bald"
-	size_multiplier = 1.2
-	max_waaagh = 300
-	waaagh = max_waaagh
-	new_species = SPECIES_ORK_NOB
-	playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
-	..(new_loc, SPECIES_ORK_NOB)
-
-/mob/living/carbon/human/ork/mek/New(var/new_loc)
-	h_style = "Bald"
-	max_waaagh = 200
-	waaagh = max_waaagh
-	new_species = SPECIES_ORK_MEK
-	playsound(src, 'sound/voice/ork/workwork.ogg', 50)
-	..(new_loc, SPECIES_ORK_MEK)
-
-/mob/living/carbon/human/ork/boss/New(var/new_loc)
-	..()
-	h_style = "Bald"
-	size_multiplier = 1.4
-	waaagh = max_waaagh
-	new_species = SPECIES_ORK_BOSS
-	playsound(src, 'sound/voice/ork/warboss.ogg', 50)
-	..(new_loc, SPECIES_ORK_BOSS)
-
+/mob/living/carbon/human //the most cursed line in all of this code
+	var/new_orkz = SPECIES_ORK

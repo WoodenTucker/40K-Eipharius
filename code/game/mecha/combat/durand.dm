@@ -4,9 +4,9 @@
 	icon_state = "durand"
 	initial_icon = "durand"
 	step_in = 4
-	health = 400
+	health = 500
 	deflect_chance = 20
-	damage_absorption = list("brute"=0.5,"fire"=1.1,"bullet"=0.65,"laser"=0.85,"energy"=0.9,"bomb"=0.8)
+	damage_absorption = list("brute"=0.5,"fire"=1,"bullet"=0.5,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000
 	infra_luminosity = 8
 	force = 40

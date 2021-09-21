@@ -53,6 +53,7 @@
 	icon_state = "genetics"
 	item_state = "w_suit"
 	worn_state = "geneticswhite"
+	unacidable = 1
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 10, rad = 0)
 

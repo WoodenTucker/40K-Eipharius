@@ -20,7 +20,6 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 	var/is_manifest = FALSE
 	var/next_visibility_toggle = 0
 	var/can_reenter_corpse
-	var/can_respawn_is_buried
 	var/bootime = 0
 	var/started_as_observer //This variable is set to 1 when you enter the game as an observer.
 							//If you died in the game and are a ghost - this will remain as null.
@@ -150,7 +149,7 @@ Works together with spawning an observer, noted above.
 		C.images += target.hud_list[SPECIALROLE_HUD]
 	return 1
 
-/mob/proc/ghostize(var/can_reenter_corpse = CORPSE_CAN_REENTER)
+/mob/proc/ghostize(can_reenter_corpse = CORPSE_CAN_REENTER)
 	// Are we the body of an aghosted admin? If so, don't make a ghost.
 	if(teleop && istype(teleop, /mob/observer/ghost))
 		var/mob/observer/ghost/G = teleop
@@ -205,8 +204,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		var/turf/location = get_turf(src)
 		message_admins("[key_name_admin(usr)] has ghosted. (<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[location.x];Y=[location.y];Z=[location.z]'>JMP</a>)")
 		log_game("[key_name_admin(usr)] has ghosted.")
-		var/mob/observer/ghost/ghost = ghostize(0)	//0 parameter is so we can never re-enter our body, "Charlie, you can never come baaaack~" :3
-		ghost.timeofdeath = world.time // Because the living mob won't have a time of death and we want the respawn timer to work properly.
+		var/mob/observer/ghost/ghost = ghostize(0)
+		ghost.timeofdeath = world.time
 		announce_ghost_joinleave(ghost)
 	*/
 
@@ -524,23 +523,13 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 				to_chat(src, "We control no trenches, we cannot respawn.")
 				return FALSE
 
-	if(isburied == 0)
-		to_chat(src, "Your body hasn't been buried yet! If you think it has, re-enter your corpse, ghost and try to respawn again!")
-		return FALSE
-
-	if(isburied == 1)
-		return TRUE
-
-
-
-
-
-	if(!client.holder && respawn_time && timeofdeath && timedifference < respawn_time MINUTES)
+	if(!client.holder && respawn_time && timeofdeath && timedifference < respawn_time MINUTES && isburied == 0)
 		var/timedifference_text = time2text(respawn_time MINUTES - timedifference,"mm:ss")
-		to_chat(src, "<span class='warning'>You must have been dead for [respawn_time] minute\s to respawn. You have [timedifference_text] left.</span>")
+		to_chat(src, "<span class='warning'>Your body had not rotted yet... [respawn_time] minute\s until you have decayed enough to respawn. You have [timedifference_text] left. You can skip this by being buried!</span>")
 		return FALSE
 
 	return TRUE
+
 
 /proc/isghostmind(var/datum/mind/player)
 	return player && !isnewplayer(player.current) && (!player.current || isghost(player.current) || (isliving(player.current) && player.current.stat == DEAD) || !player.current.client)
@@ -598,3 +587,58 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	var/mob/new_player/M = new /mob/new_player()
 	M.key = key
 	log_and_message_admins("has respawned.", M)
+
+/mob/observer/ghost/verb/see_offered_mobs()
+	set name = "Join as Offered mob."
+	set category = "Ghost"
+
+	if(!length(GLOB.offered_mob_list))
+		to_chat(usr, SPAN_BNOTICE("there's no mobs being offered currently."))
+		return
+
+	var/mob/living/mob_to_take = input(usr, "Choose an Offered mob to take over.", "Offered mobs.", null) as null|anything in GLOB.offered_mob_list
+	if(!istype(mob_to_take))
+		to_chat(usr, SPAN_WARNING("Invalid target."))
+		return
+
+	mob_to_take.take_over(usr)
+
+
+/mob/observer/ghost/Topic(href, href_list)
+	. = ..()
+	if(.)
+		return
+	else if(href_list["track"])
+		var/mob/target = locate(href_list["track"]) in GLOB.living_mob_list_ + GLOB.dead_mob_list_
+		if(istype(target))
+			ManualFollow(target)
+			return
+		else
+			var/atom/movable/AM = locate(href_list["track"])
+			ManualFollow(AM)
+			return
+
+
+	else if(href_list["jump"])
+		var/x = text2num(href_list["x"])
+		var/y = text2num(href_list["y"])
+		var/z = text2num(href_list["z"])
+
+		if(x == 0 && y == 0 && z == 0)
+			return
+
+		var/turf/T = locate(x, y, z)
+		if(!T)
+			return
+
+		var/mob/observer/ghost/A = usr
+		A.forceMove(T)
+		return
+
+	else if(href_list["claim"])
+		var/mob/living/target = locate(href_list["claim"]) in GLOB.offered_mob_list
+		if(!istype(target))
+			to_chat(usr, SPAN_WARNING("Invalid target."))
+			return
+
+		target.take_over(usr)

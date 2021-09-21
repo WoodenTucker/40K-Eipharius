@@ -107,6 +107,19 @@
 	icon_state = "akarabiner"
 
 
+/obj/item/ammo_magazine/autogrim
+	name = "auto GRIM magazine (5.56mm)"
+	icon_state = "auto_grim"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/a556
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	caliber = "a556"
+	max_ammo = 35
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/autogrim/empty
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
 	icon_state = "9x19p"
@@ -254,7 +267,7 @@
 
 /obj/item/ammo_magazine/box/a556
 	name = "magazine box (5.56mm)"
-	icon_state = "a762"
+	icon_state = "hmg"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "a556"
@@ -305,7 +318,7 @@
 	return
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
-	name = "bolt pistol magazine"
+	name = "Boltpistol Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -319,7 +332,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/bolt_rifle_magazine
-	name = "bolt rifle magazine"
+	name = "Bolter Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
@@ -331,6 +344,10 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/empty
 	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/sister
+	name = "godwyn-de'az pattern bolter rifle magazine"
+	ammo_type = /obj/item/ammo_casing/bolter
 
 /* ork mags */
 

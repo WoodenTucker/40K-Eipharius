@@ -411,7 +411,7 @@
 	maxhealth = 12.0
 
 /obj/structure/window/phoronbasic
-	name = "phoron window"
+	name = "promethium-coated window"
 	desc = "A borosilicate alloy window. It seems to be quite strong."
 	basestate = "phoronwindow"
 	icon_state = "phoronwindow"
@@ -422,7 +422,7 @@
 	maxhealth = 40.0
 
 /obj/structure/window/phoronreinforced
-	name = "reinforced borosilicate window"
+	name = "reinforced promethium-coated window"
 	desc = "A borosilicate alloy window, with rods supporting it. It seems to be very strong."
 	basestate = "phoronrwindow"
 	icon_state = "phoronrwindow"
@@ -488,6 +488,27 @@
 	reinf = 1
 	basestate = "w"
 	dir = 5
+
+/obj/structure/window/reinforced/reliquary
+	name = "reliquary glass"
+	desc = "Ornate and durable fereter glass, it is used to protect the Adeptus Ministorum's most prized possessions, their relics, while still letting them remain proudly on display. A small conversion field runs through it, it doesn't look like you're getting in any time soon."
+	reinf = 1000
+	health = 1000
+	maxhealth = 1000
+	glasstype = null
+
+/obj/structure/window/reinforced/reliquary/attackby(obj/item/W, mob/user)
+	if(istype(W, /obj/item/staff/ministorumstaff))
+		var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
+		if (security_state.current_security_level_is_same_or_higher_than(security_state.highest_standard_security_level)) // can only be opened on code red, very big emergency bad bad aaa. this is also mapper code.
+
+			to_chat(user, "<span class='notice'>You touch the end of your staff to the glass and send a surge of power from its internal capacitor into the reliquary glass, the shield inside shutters for a second or two, before bursting the glass and opening the case.")
+			shatter()
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	else
+		to_chat(user, "<span class='warning'>The glass metaphorically guffaws at your attempt to bypass it.</span>")
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	return
 
 /obj/structure/window/reinforced/polarized
 	name = "electrochromic window"

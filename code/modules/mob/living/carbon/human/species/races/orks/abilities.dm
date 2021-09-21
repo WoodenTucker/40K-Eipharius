@@ -40,14 +40,17 @@
 	set name = "WAAAAGH! (100)"
 	set desc = "Scream your lungs out to heal yourself, no one knows how it works but it does."
 	var/cooldown = FALSE
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>Ya can't waaaagh when ya' dead ya' git!</span>",)
+		return
 	if(waaagh >= 100 && !cooldown)
 		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
 		playsound(src, 'sound/voice/ork/orkscream.ogg', 50, 5)
-		adjustBruteLoss(-10)
-		adjustFireLoss(-10)
-		adjustOxyLoss(-10)
-		adjustToxLoss(-10)
-		adjustBrainLoss(-10)
+		adjustBruteLoss(-5)
+		adjustFireLoss(-5)
+		adjustOxyLoss(-5)
+		adjustToxLoss(-5)
+		adjustBrainLoss(-5)
 		restore_all_organs()
 		src.radiation = 0
 		src.bodytemperature = T20C
@@ -60,7 +63,7 @@
 		src.ear_damage = 0
 		src.inject_blood(src, 200)
 		cooldown = TRUE
-		spawn(50)
+		spawn(120)
 			cooldown = FALSE
 		waaagh -= 100
 	else
@@ -77,10 +80,10 @@
 		if(do_after(src, 30))
 			new /obj/item/stack/material/scrap/fifty(loc)
 			to_chat(src, "<span class='notice'> You found scrap! </span>")
-			waaagh -= 150
+			waaagh -= 150 /*
 			if(istype(src, /mob/living/carbon/human/ork/mek))
 				playsound(src, 'sound/voice/ork/orknobscav.ogg', 50)
-				return
+				return*/
 			playsound(src, 'sound/voice/ork/gretpilo.ogg', 50)
 		else
 			to_chat(src, "<span class='notice'> You stop searching for resources. </span>")

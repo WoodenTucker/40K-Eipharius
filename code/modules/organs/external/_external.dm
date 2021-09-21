@@ -26,7 +26,6 @@
 	var/pain_disability_threshold      // Point at which a limb becomes unusable due to pain.
 
 	// Appearance vars.
-	var/nonsolid                       // Snowflake warning, reee. Used for slime limbs.
 	var/icon_name = null               // Icon state base.
 	var/body_part = null               // Part flag
 	var/icon_position = 0              // Used in mob overlay layering calculations.
@@ -760,8 +759,9 @@ Note that amputating the affected organ does in fact remove the infection from t
 
 	owner.Stun(1)//Makes them drop what they're holding.
 
-	if(disintegrate == DROPLIMB_EDGE && nonsolid)
-		disintegrate = DROPLIMB_BLUNT //splut
+//	????
+//	if(disintegrate == DROPLIMB_EDGE)
+//		disintegrate = DROPLIMB_BLUNT //splut
 
 	switch(disintegrate)
 		if(DROPLIMB_EDGE)

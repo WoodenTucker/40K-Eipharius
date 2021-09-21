@@ -108,6 +108,7 @@ area/space/atmosalert()
 /area/chapel
 	name = "Chapel"
 	icon_state = "chapel"
+	requires_power = 0
 
 /area/centcom/specops
 	name = "Centcom Special Ops"
@@ -196,6 +197,12 @@ area/space/atmosalert()
 	icon_state = "yellow"
 	requires_power = 0
 	dynamic_lighting = 0
+
+/area/inqmoon
+	name = "Inquisitorial Outpost Aecor"
+	icon_state = "blue"
+	requires_power = 0
+	dynamic_lighting = 1
 
 /area/beach
 	name = "Keelin's private beach"

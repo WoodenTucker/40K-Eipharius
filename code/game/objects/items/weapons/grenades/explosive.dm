@@ -23,7 +23,7 @@
 	icon = 'icons/obj/grenade.dmi'
 
 	var/list/fragment_types = list(/obj/item/projectile/bullet/pellet/fragment = 1)
-	var/num_fragments = 72  //total number of fragments produced by the grenade
+	var/num_fragments = 18  //total number of fragments produced by the grenade (nerfed by x4. 72 / 4 = 18 let's see if this is too little -plinypotter)
 	var/explosion_size = 2   //size of the center explosion
 
 	//The radius of the circle used to launch projectiles. Lower values mean less projectiles are used but if set too low gaps may appear in the spread pattern
@@ -158,7 +158,7 @@ obj/mortar/flare/blue
 	desc = "A light fragmentation grenade, designed to be fired from a launcher. It can still be activated and thrown by hand if necessary."
 	icon_state = "fragshell"
 
-	num_fragments = 50 //less powerful than a regular frag grenade
+	num_fragments = 12 //less powerful than a regular frag grenade (nerfed by x4. 50 / 4 = 12, let's see if this helps lag -plinypotter)
 
 
 /obj/item/grenade/frag/high_yield
@@ -171,7 +171,7 @@ obj/mortar/flare/blue
 	throw_range = 5 //heavy, can't be thrown as far
 
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1,/obj/item/projectile/bullet/pellet/fragment/strong=4)
-	num_fragments = 200  //total number of fragments produced by the grenade
+	num_fragments = 50  //total number of fragments produced by the grenade (nerfed by x4. 200 / 4 = 50 -plinypotter)
 	explosion_size = 3
 
 /obj/item/grenade/frag/high_yield/on_explosion(var/turf/O)
@@ -180,9 +180,9 @@ obj/mortar/flare/blue
 
 /obj/item/grenade/frag/high_yield/krak
 	name = "Krak Grenade"
-	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius, its weight makes it harder to throw."
+	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
-	num_fragments = 250
+	num_fragments = 40 // nerfed by x6. 250 / 6 = 41 i rounded it to 40. let's see if this helps lag - plinypotter
 	explosion_size = 4
 
 /obj/item/grenade/frag/high_yield/krak/prime()

@@ -233,8 +233,6 @@
 					if(ishuman(M))
 						var/mob/living/carbon/human/H = M
 						M_job = H.job
-					else if(isslime(M))
-						M_job = "slime"
 					else if(issmall(M))
 						M_job = "Monkey"
 					else if(isalien(M))

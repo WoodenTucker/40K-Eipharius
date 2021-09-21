@@ -175,8 +175,9 @@
 
 /obj/item/storage/fancy/cigarettes/dromedaryco
 	name = "pack of lho sticks"
-	desc = "A packet of six smuggled lho sticks. A label on the packaging reads, \"Wouldn't a slow death make a change?\"."
-	icon_state = "Dpacket"
+	desc = "A packet of six lho sticks, a common recreational drug found among the populace of the Imperium. A label on the packaging reads, \"Durable, rugged, and cool, perfect for the trenches\"."
+	icon_state = "Jpacket"
+	item_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/dromedaryco = 6)
 
 /obj/item/storage/fancy/cigarettes/killthroat

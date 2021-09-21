@@ -1,17 +1,17 @@
-//Due to how large this one is it gets its own file
+//Due to how large this one is it gets its own file. Sister of Battle Guard and all her stuff including items, excluding weapons those are in mattguns.dm, is also located here.
 /datum/job/chaplain
-	title = "Ministorum Priest"
+	title = "Ministorum Confessor"
 	department = "Civilian"
-	department_flag = CIV
+	department_flag = CIV|COM
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Ecclesiarchy"
-	selection_color = "#337C81"
-	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
-	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
+	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
+	selection_color = "#FCFBFA"
+	access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_sob)
+	minimal_access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_sob)
 	announced = FALSE
 //	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
@@ -20,13 +20,13 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Abbot [current_name]")
-		H.add_stats(rand(8,11), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.fully_replace_character_name("Confessor [current_name]")
+		H.add_stats(rand(10,13), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
+		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.add_skills(rand(2,4),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are an Abbot of the Ecclesiarchy. The chapel on the lower floor is your domain. Lead and guide the faithful of this world. Do not be afraid to embark from the outpost and preach to the masses.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Confessor-Millitant attached to the Rogue Trader through the Missionarus Galaxia. You are one of the Ecclesiarchy's fearsome zealot preachers, your oratory skills can stir entire crowds and cause them to turn on one another, exposing eachother's darkest secrets. You often work on worlds where faith is lacking, and people are rebellious. It is your job to preach to the flock and indoctrinate new individuals into it, protect the chapel, and ensure the relics in your reliquary remain safe and untouched by the unworthly.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -162,7 +162,7 @@
 		O.armor_penetration += 1
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
-		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
 /obj/item/melee/whip/censer/attackby(var/obj/item/material/sword/O, var/mob/user)
@@ -175,4 +175,75 @@
 		O.block_chance += 5
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
-		visible_message("[O] is bathed in righteous incense as the abbot chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
+
+/* start of the sister section */
+
+//job
+
+/datum/job/sisterelohiem
+	title = "Sister Elohiem"
+	department = "Civilian"
+	department_flag = CIV
+	total_positions = 0
+	spawn_positions = 0
+	open_when_dead = 0
+	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
+	supervisors = "the Adepta Sororitas"
+	selection_color = "#FCFBFA"
+	announced = FALSE
+	outfit_type = /decl/hierarchy/outfit/job/sisterelohiem
+	auto_rifle_skill = 10 // idk how these skills work but imperial guards have 10 and sisters are better trained than the average guard so they get 10.
+	semi_rifle_skill = 10
+	sniper_skill = 6
+	shotgun_skill = 9
+	lmg_skill = 10
+	smg_skill = 10
+	melee_skill = 10
+	ranged_skill = 10
+	medical_skill = 4
+	engineering_skill = 0
+	surgery_skill = 1
+	req_admin_notify = 1
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister Elohiem [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant)
+		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
+		H.add_stats(35, rand(20,25), rand(20,25), rand(15,25)) // 5 down from astartes. they're strong women and literally believe so much in the god emperor's protection and strength that it becomes reality.
+		H.get_idcard()?.access = get_all_accesses()
+		H.get_equipped_item(slot_s_store)
+		H.warfare_faction = IMPERIUM
+		H.gender = FEMALE
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.f_style = "shaved"
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
+
+
+//outfit
+
+/decl/hierarchy/outfit/job/sisterelohiem
+	name = OUTFIT_JOB_NAME("Sister Elohiem")
+	head = /obj/item/clothing/head/helmet/sisterelohiem
+	l_ear = /obj/item/device/radio/headset/red_team
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterelohiem
+	uniform = /obj/item/clothing/under/guard/uniform/sisterelohiem
+	back = /obj/item/storage/backpack/satchel/warfare/sisterelohiem
+	gloves = /obj/item/clothing/gloves/sisterelohiem
+	shoes = /obj/item/clothing/shoes/sisterelohiem
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterelohiem
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/stack/thrones/ten = 1,
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/stack/thrones3/ten = 2,
+	)

@@ -90,30 +90,8 @@
 	pda_type = null
 	pda_slot = null
 
-/decl/hierarchy/outfit/job/internal_affairs_agent
-	name = OUTFIT_JOB_NAME("principal agent")
-	l_ear = /obj/item/device/radio/headset/inquisition
-	uniform = /obj/item/clothing/under/rank/principalagent
-	suit = /obj/item/clothing/suit/armor/agent
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots
-	glasses = /obj/item/clothing/glasses/sunglasses/big
-	id_type = /obj/item/card/id/inquisition/principal_agent
-	back = /obj/item/storage/backpack/satchel/warfare
-	l_pocket = /obj/item/storage/box/ifak
-	belt = /obj/item/device/flashlight/lantern
-	pda_type = null
-	pda_slot = null
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	head = /obj/item/clothing/head/inqhelm
-	mask = /obj/item/clothing/mask/gas/security/agent
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1)
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Ministorum Priest")
+	name = OUTFIT_JOB_NAME("Ministorum Confessor-Millitant")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain
@@ -125,6 +103,7 @@
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
 	suit = /obj/item/clothing/suit/ministorumrobes
+	suit_store = /obj/item/melee/pcsword/eviscerator
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = /obj/item/melee/whip/censer
 	backpack_contents = list(
@@ -132,29 +111,6 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
-		)
-/decl/hierarchy/outfit/job/inquisitor
-	name = OUTFIT_JOB_NAME("Inquisitor")
-	l_ear = /obj/item/device/radio/headset/inquisition
-	uniform = /obj/item/clothing/under/rank/inquisitor
-	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
-	glasses = null
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
-	r_hand = /obj/item/gun/projectile/bolter_pistol
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
-	id_type = /obj/item/card/id/inquisition/principal_agent
-	pda_type = null
-	pda_slot = null
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
-	/obj/item/stack/thrones2/ten = 1,
-	/obj/item/stack/thrones3/twenty = 1
 		)
 
 /decl/hierarchy/outfit/job/service/undertaker

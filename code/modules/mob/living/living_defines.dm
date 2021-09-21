@@ -36,7 +36,6 @@
 	var/mob/living/cameraFollow = null
 	var/list/datum/action/actions = list()
 
-	var/update_slimes = 1
 	var/on_fire = 0 //The "Are we on fire?" var
 	var/fire_stacks
 

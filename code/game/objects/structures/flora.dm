@@ -7,7 +7,6 @@
 	alpha = 200
 	density = FALSE
 	layer = 1
-	mouse_opacity = 2
 	plane = ABOVE_HUMAN_PLANE
 	layer = ABOVE_HUMAN_LAYER
 	var/log_type //type of log
@@ -292,6 +291,20 @@
 /obj/structure/flora/ausbushes/fullgrass/New()
 	..()
 	icon_state = "fullgrass_[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/meatshroom
+	icon_state = "meatshroom1"
+
+/obj/structure/flora/ausbushes/meatshroom/New()
+	..()
+	icon_state = "meatshroom[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/minishroom
+	icon_state = "minishroom"
+
+/obj/structure/flora/ausbushes/minishroom/New()
+	..()
+	icon_state = "minishroom"
 
 /obj/structure/flora/ash
 	name = "ashroom"

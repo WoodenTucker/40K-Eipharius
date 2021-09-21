@@ -5,7 +5,20 @@
 	head_position = 0
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
-	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
+	outfit_type = /decl/hierarchy/outfit/job/astarte
+	alt_titles = list(
+		"Salamander Tactical Marine" = /decl/hierarchy/outfit/job/astarte/ravenguard,
+		"Ravenguard Tactical Marine" = /decl/hierarchy/outfit/job/astarte/salamander,
+		"Ultramarine Company Captain" = /decl/hierarchy/outfit/job/astarte/ultramarine/captain,
+		"Salamander Company Captain" = /decl/hierarchy/outfit/job/astarte/ravenguard/captain,
+		"Ravenguard Company Captain" = /decl/hierarchy/outfit/job/astarte/salamander/captain,
+		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astarte/ultramarine/apothecracy,
+		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astarte/ravenguard/apothecracy,
+		"Ravenguard Apothecary" = /decl/hierarchy/outfit/job/astarte/salamander/apothecracy,
+		"Ultramarine Tech-Marine" = /decl/hierarchy/outfit/job/astarte/ultramarine/tech,
+		"Salamander Tech-Marine" = /decl/hierarchy/outfit/job/astarte/ravenguard/tech,
+		"Ravenguard Tech-Marine" = /decl/hierarchy/outfit/job/astarte/salamander/tech
+		)
 	selection_color = "#344FAA"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
@@ -26,8 +39,6 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
-
-
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
@@ -36,7 +47,7 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of humanitys greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of Mankind's greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
@@ -48,83 +59,15 @@
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black
 	l_ear = /obj/item/device/radio/headset/red_team
-	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	l_pocket = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = null //for future power packs
+	back = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	shoes = null
 	backpack_contents = null //for now
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(src)
-
-/mob/living/carbon/human/proc/chapterselection()
-	set name = "Select your chapter"
-	set category = "Astartes"
-	set desc = "Choose your chapter"
-	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
-		return
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
-		return
-	var/mob/living/carbon/human/U = src
-	var/chapter = list("Raven Guard","Ultramarines","Salamanders", "Raven Guard Chaplain", "Ultramarine Chaplain", "Blood Ravens") //lists all possible chapters
-	var/chapterchoice = input("Choose your chapter", "Available chapters") as anything in chapter
-
-	switch(chapterchoice)
-		if("Raven Guard")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/ravenguard, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Raven Guard Chaplain")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/ravenguard/chaplain, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/ravenhelm, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/classic_baton/crozius, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Ultramarines")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/smurfs, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/smurfhelm, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/smurfs, slot_back)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Salamanders")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/sallys, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sallyhelm, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/sallys, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Ultramarine Chaplain")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/smurfs/chaplain, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/chaplainhelm, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/smurfs, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/classic_baton/crozius, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Blood Ravens")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bloodraven, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/brhelm, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/rgboots/br, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-

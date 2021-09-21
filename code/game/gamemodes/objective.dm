@@ -422,7 +422,6 @@ datum/objective/nuclear
 		//"the [station_name()] blueprints" = /obj/item/blueprints,
 		//"a nasa voidsuit" = /obj/item/clothing/suit/space/void,
 		//"28 moles of phoron (full tank)" = /obj/item/tank,
-		//"a sample of slime extract" = /obj/item/slime_extract,
 		"a piece of corgi meat" = /obj/item/reagent_containers/food/snacks/meat/corgi,
 		//"a research director's jumpsuit" = /obj/item/clothing/under/rank/research_director,
 		//"a Magos's jumpsuit" = /obj/item/clothing/under/rank/chief_engineer,

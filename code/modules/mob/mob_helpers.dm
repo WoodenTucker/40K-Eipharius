@@ -363,7 +363,7 @@ var/list/intents = list(I_HELP,I_DISARM,I_GRAB,I_HURT)
 	set name = "a-intent"
 	set hidden = 1
 
-	if(ishuman(src) || isbrain(src) || isslime(src))
+	if(ishuman(src) || isbrain(src))
 		switch(input)
 			if(I_HELP,I_DISARM,I_GRAB,I_HURT)
 				a_intent = input
@@ -453,6 +453,31 @@ proc/is_blind(A)
 		else
 			message = "<span class='name'>[name]</span> no longer [pick("skulks","lurks","prowls","creeps","stalks")] in the realm of the dead. [message]"
 		communicate(/decl/communication_channel/dsay, C || O, message, /decl/dsay_communication/direct)
+
+/proc/notify_ghost(mob/observer/ghost/O, message, ghost_sound = null, enter_link = null, enter_text = null, atom/source = null, action = NOTIFY_JUMP, flashwindow = TRUE, ignore_mapload = TRUE, header = null, notify_volume = 100, extra_large = FALSE) //Easy notification of a single ghosts.
+	if(!O.client)
+		return
+	var/track_link
+	if (source && action == NOTIFY_ORBIT)
+		track_link = " <a href='byond://?src=\ref[O];track=\ref[source]]'>(Follow)</a>"
+	if (source && action == NOTIFY_JUMP)
+		var/turf/T = get_turf(source)
+		track_link = " <a href='byond://?src=\ref[O];jump=1;x=[T.x];y=[T.y];z=[T.z]'>(Jump)</a>"
+	var/full_enter_link
+	if (enter_link)
+		full_enter_link = "<a href='byond://?src=\ref[O];[enter_link]'>[(enter_text) ? "[enter_text]" : "(Claim)"]</a>"
+	to_chat(O, "[(extra_large) ? "<br><hr>" : ""]<span class='deadsay'>[message][(enter_link) ? " [full_enter_link]" : ""][track_link]</span>[(extra_large) ? "<hr><br>" : ""]")
+	if(ghost_sound)
+		O << sound(ghost_sound, volume = notify_volume)
+	if(flashwindow)
+		winset(O.client, "mainwindow", "flash=5")
+
+/proc/notify_ghosts(message, ghost_sound = null, enter_link = null, enter_text = null, atom/source = null, action = NOTIFY_JUMP, flashwindow = TRUE, ignore_mapload = TRUE, header = null, notify_volume = 100, extra_large = FALSE) //Easy notification of ghosts.
+	for(var/mob/observer/ghost/O in GLOB.ghost_mob_list)
+		if(!O.client)
+			continue
+		notify_ghost(O, message, ghost_sound, enter_link, enter_text,  action, flashwindow, ignore_mapload, header, notify_volume, extra_large)
+
 
 /mob/proc/switch_to_camera(var/obj/machinery/camera/C)
 	if (!C.can_use() || stat || (get_dist(C, src) > 1 || machine != src || blinded || !canmove))

@@ -114,6 +114,19 @@
 	off_state = "denight"
 	electric = 1
 
+/obj/item/clothing/glasses/blacksun
+	name = "blacksun goggles"
+	desc = "The Blacksun Filter is an advanced Tau optical filter that allows the user not only to see at much greater distances when fighting in nighttime conditions but also filters bright flares of light that could blind them."
+	icon_state = "blacksun"
+	item_state = "blacksun"
+	origin_tech = list(TECH_MAGNET = 2)
+	darkness_view = 7
+	action_button_name = "Toggle Goggles"
+	toggleable = 1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	off_state = "blacksun"
+	electric = 1
+
 /obj/item/clothing/glasses/night/New()
 	..()
 	overlay = GLOB.global_hud.nvg
@@ -496,3 +509,41 @@
 	item_state = "tajblind_meson"
 	off_state = "tajblind_meson"
 	body_parts_covered = EYES
+
+//ASTRA MILITARUM STUFF
+
+/obj/item/clothing/glasses/cadiangoggles
+	name = "Mark XIc Visor"
+	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness."
+	icon_state = "iggoggles"
+	item_state = "iggoggles"
+	body_parts_covered = EYES
+
+/obj/item/clothing/glasses/cadiangoggles/elite
+	name = "Mark XIc/NV Visor"
+	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
+	darkness_view = 7
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+
+/obj/item/clothing/glasses/astarte/visor
+	name = "Mark VII Visor"
+	desc = "The support system of Astarte's helmet."
+	str_requirement = 25
+	canremove = 0
+	darkness_view = 10
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	flash_protection = FLASH_PROTECTION_MAJOR
+	body_parts_covered = EYES
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/glasses/astarte/visor/apoc
+	name = "Mark VII Visor"
+	desc = "The support system of Astarte's helmet. This one has intergrated medical scanner."
+	hud = /obj/item/clothing/glasses/hud/health
+	str_requirement = 25
+	canremove = 0
+	darkness_view = 10
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	flash_protection = FLASH_PROTECTION_MAJOR
+	body_parts_covered = EYES
+	siemens_coefficient = 0.9

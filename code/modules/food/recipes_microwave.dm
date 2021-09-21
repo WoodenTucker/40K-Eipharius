@@ -62,13 +62,6 @@ I said no!
 	)
 	result = /obj/item/reagent_containers/food/snacks/donut/jelly
 
-/datum/recipe/jellydonut/slime
-	reagents = list(/datum/reagent/slimejelly = 5, /datum/reagent/sugar = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/dough
-	)
-	result = /obj/item/reagent_containers/food/snacks/donut/slimejelly
-
 /datum/recipe/jellydonut/cherry
 	reagents = list(/datum/reagent/nutriment/cherryjelly = 5, /datum/reagent/sugar = 5)
 	items = list(
@@ -531,6 +524,11 @@ I said no!
 	reagents = list(/datum/reagent/water = 20)
 	result= /obj/item/reagent_containers/food/snacks/wishsoup
 
+/datum/recipe/frostpunksoup
+	reagents = list(/datum/reagent/water = 10)
+	items = list (/obj/item/stack/logs)
+	result= /obj/item/reagent_containers/food/snacks/frostpunksoup
+
 /datum/recipe/hotchili
 	fruit = list("chili" = 1, "tomato" = 1)
 	items = list(/obj/item/reagent_containers/food/snacks/meat)
@@ -661,13 +659,6 @@ I said no!
 	items = list(/obj/item/reagent_containers/food/snacks/meat)
 	result = /obj/item/reagent_containers/food/snacks/stew
 
-/datum/recipe/slimetoast
-	reagents = list(/datum/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/slice/bread,
-	)
-	result = /obj/item/reagent_containers/food/snacks/jelliedtoast/slime
-
 /datum/recipe/jelliedtoast
 	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
 	items = list(
@@ -767,13 +758,6 @@ I said no!
 	items = list(/obj/item/reagent_containers/food/snacks/sliceable/flatdough)
 	result = /obj/item/reagent_containers/food/snacks/applepie
 
-/datum/recipe/slimeburger
-	reagents = list(/datum/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/bun
-	)
-	result = /obj/item/reagent_containers/food/snacks/jellyburger/slime
-
 /datum/recipe/jellyburger
 	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
 	items = list(
@@ -796,14 +780,6 @@ I said no!
 	)
 	result = /obj/item/reagent_containers/food/snacks/threebread
 
-/datum/recipe/slimesandwich
-	reagents = list(/datum/reagent/slimejelly = 5)
-	items = list(
-		/obj/item/reagent_containers/food/snacks/slice/bread,
-		/obj/item/reagent_containers/food/snacks/slice/bread,
-	)
-	result = /obj/item/reagent_containers/food/snacks/jellysandwich/slime
-
 /datum/recipe/cherrysandwich
 	reagents = list(/datum/reagent/nutriment/cherryjelly = 5)
 	items = list(
@@ -815,18 +791,6 @@ I said no!
 /datum/recipe/bloodsoup
 	reagents = list(/datum/reagent/blood = 30)
 	result = /obj/item/reagent_containers/food/snacks/bloodsoup
-
-/datum/recipe/slimesoup
-	reagents = list(/datum/reagent/water = 10, /datum/reagent/slimejelly = 5)
-	items = list()
-	result = /obj/item/reagent_containers/food/snacks/slimesoup
-
-/datum/recipe/boiledslimeextract
-	reagents = list(/datum/reagent/water = 5)
-	items = list(
-		/obj/item/slime_extract,
-	)
-	result = /obj/item/reagent_containers/food/snacks/boiledslimecore
 
 /datum/recipe/chocolateegg
 	items = list(

@@ -135,6 +135,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/border
 	name = "border shotgun"
+	desc = "A shotgun commonly used by kriegs. Very effective against trench meat."
 	icon_state = "border"
 	item_state = "cshotgun"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
@@ -243,6 +244,7 @@
 	icon_state = "mosin"
 	item_state = "mosin"
 	caliber = "a762"
+	fire_delay = 10
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
 	casingsound = 'sound/weapons/guns/misc/casingfall1.ogg'
 	pumpsound = 'sound/weapons/boltpump.ogg'

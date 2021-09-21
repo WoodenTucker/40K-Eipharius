@@ -70,7 +70,7 @@
 	if(Adjacent(user))
 		attack_hand(user)
 
-/obj/effect/rune/attack_generic(var/mob/living/user) // Cult constructs/slimes/whatnot!
+/obj/effect/rune/attack_generic(var/mob/living/user) // Cult constructs/whatnot!
 	attack_hand(user)
 
 /obj/effect/rune/proc/cast(var/mob/living/user)

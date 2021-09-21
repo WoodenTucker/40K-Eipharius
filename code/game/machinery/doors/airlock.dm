@@ -466,6 +466,11 @@
 	icon = 'icons/obj/doors/Doorresearch.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_research
 
+/obj/machinery/door/airlock/suicidedoor
+	name = "Airlock"
+	icon = 'icons/obj/doors/glass_door.dmi'
+	assembly_type = /obj/structure/door_assembly/door_assembly_research
+
 /obj/machinery/door/airlock/red
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorred.dmi'
@@ -636,6 +641,38 @@
 	icon_state = "door_locked"
 	locked = 1
 
+/obj/machinery/door/airlock/imperiumdoor
+	name = "Minor Imperialis Doorway"
+	desc = "A solemn door with a grim archway. It is made of gothic stone, copper mechanations, and human bones."
+	icon = 'icons/obj/doors/imperiumdoor.dmi'
+
+/obj/machinery/door/airlock/highsecurity/imperiumdoor
+	name = "Imperialis Doorway"
+	desc = "A reinforced monstrous door with an ornate archway. It is made of gothic stone, copper mechanations, and human bones. It proudly displays the Imperium's iconography on its front and is lathered in holy Mechanicus oils, it also smells of pure Ecclesiarchal incense."
+	icon = 'icons/obj/doors/imperiumdoor.dmi'
+	req_access = newlist()
+
+/obj/machinery/door/airlock/highsecurity/imperiumdoor/armamentarium
+	name = "Imperialis Doorway - Armamentarium"
+	locked = 1
+	req_access = list(213)
+
+/obj/machinery/door/airlock/highsecurity/imperiumdoor/armamentarium/attackby(obj/item/W, mob/user)
+	if(istype(W, /obj/item/staff/ministorumstaff))
+		var/decl/security_state/security_state = decls_repository.get_decl(GLOB.using_map.security_state)
+		if (security_state.current_security_level_is_same_or_higher_than(security_state.highest_standard_security_level)) // can only be opened on code red, very big emergency bad bad aaa. this is also mapper code.
+			to_chat(user, "<span class='notice'>You raise your holy staff, slotting it into the impenetrable mechanations before you, waiting for the door to scan its sigils.")
+			if(do_after(user, 10 SECONDS))
+				to_chat(user, "<span class='notice'>After muttering a few holy prayers under your breath, the bolts holding the door shut move out of the way with a clunk. </span>")
+				unlock()
+				user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+				return 0
+
+		if (security_state.current_security_level_is_lower_than(security_state.highest_standard_security_level))
+			lock()
+			to_chat(user, "<span class='warning'>The mechanations smartly refuse your attempts to access them. Perhaps an emergency needs to be declared?</span>")
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	return
 
 /*
 About the new airlock wires panel:

@@ -18,8 +18,8 @@
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels,)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
+			            access_all_personal_lockers, access_maint_tunnels, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory
 			            )
 
 	equip(var/mob/living/carbon/human/H)
@@ -27,14 +27,14 @@
 		..()
 		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
 		H.add_skills(rand(10,16))
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Trooper [H.real_name]")
+		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
@@ -50,14 +50,14 @@
 	spawn_positions = 2
 	selection_color = "#33813A"
 	social_class = SOCIAL_CLASS_MED
-	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
+	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC|COM
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory
+			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
 			            )
 
 	auto_rifle_skill = 10
@@ -77,16 +77,17 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-		H.fully_replace_character_name("Sgt. [current_name]")
+		H.fully_replace_character_name("Sergeant [current_name]")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		/mob/living/carbon/human/proc/tzeentch,
+		/mob/living/carbon/human/proc/sergeantselection,)
 
 
 /datum/job/ig/commissar
@@ -194,9 +195,7 @@
 	can_be_in_squad = FALSE
 	open_when_dead = TRUE
 	department_flag = SEC
-
 	announced = FALSE
-
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
@@ -256,30 +255,23 @@ Begin Warhammer loadouts
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/ig/sergeant
+/decl/hierarchy/outfit/job/sergeant
 	name = OUTFIT_JOB_NAME("Imperial Guard Sergeant")
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/sgt
-	glasses = /obj/item/clothing/glasses/sunglasses
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	belt = /obj/item/melee/mercycs
-	l_ear = null
-	r_pocket = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	head = null
+	uniform = null
+	shoes = null
+	l_pocket = null
+	suit = null
+	gloves = null
+	back = null
 	pda_slot = null
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel/warfare
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	backpack_contents = list(
-		/obj/item/ammo_magazine/box/a556/mg08 = 2,
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,
-)
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = null
+	l_ear = null
+	r_ear = null
+	belt = null
+
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/enforcer
@@ -292,7 +284,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/melee/baton
+	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team/delta
@@ -309,117 +301,6 @@ Begin Warhammer loadouts
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-/decl/hierarchy/outfit/job/redsoldier/engineer
-	r_pocket = /obj/item/ammo_magazine/mc9mmt/machinepistol
-	l_pocket = /obj/item/wirecutters
-	suit_store = /obj/item/gun/projectile/automatic/machinepistol/wooden
-	back = /obj/item/storage/backpack/warfare
-	backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/shovel = 1, /obj/item/defensive_barrier = 4, /obj/item/storage/box/ifak = 1)
-
-/decl/hierarchy/outfit/job/redsoldier/engineer/equip()
-	if(prob(1))//Rare engineer spawn
-		suit_store = /obj/item/gun/projectile/automatic/autoshotty
-		r_pocket = /obj/item/shovel
-		belt = /obj/item/storage/belt/autoshotty
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
-	else if(prob(50))
-		suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-		r_pocket = /obj/item/ammo_box/shotgun
-		belt = /obj/item/shovel
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
-	else
-		suit_store = /obj/item/gun/projectile/automatic/machinepistol
-		r_pocket = /obj/item/shovel
-		belt = /obj/item/storage/belt/warfare
-		backpack_contents = list(/obj/item/stack/barbwire = 1, /obj/item/defensive_barrier = 3, /obj/item/storage/box/ifak = 1, /obj/item/grenade/smokebomb = 1)
-
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
-	..()
-
-
-/decl/hierarchy/outfit/job/redsoldier/sentry
-	l_ear = /obj/item/device/radio/headset/red_team/all
-	suit = /obj/item/clothing/suit/armor/sentry/red
-	head = /obj/item/clothing/head/helmet/sentryhelm/red
-	belt = /obj/item/melee/trench_axe
-	suit_store = /obj/item/gun/projectile/automatic/mg08
-	backpack_contents = list(/obj/item/ammo_magazine/box/a556/mg08 = 3, /obj/item/grenade/smokebomb = 1)
-
-/decl/hierarchy/outfit/job/redsoldier/sentry/equip()
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
-	..()
-
-/decl/hierarchy/outfit/job/redsoldier/flamer
-	l_ear = /obj/item/device/radio/headset/red_team/all
-	suit = /obj/item/clothing/suit/fire/red
-	head = /obj/item/clothing/head/helmet/redhelmet/fire
-	belt = /obj/item/gun/projectile/automatic/flamer
-	suit_store = /obj/item/melee/trench_axe
-	r_pocket = /obj/item/grenade/fire
-	backpack_contents = list(/obj/item/ammo_magazine/flamer = 4, /obj/item/grenade/smokebomb = 1)
-
-/decl/hierarchy/outfit/job/redsoldier/sniper
-	l_ear = /obj/item/device/radio/headset/red_team/all
-	suit = /obj/item/clothing/suit/armor/redcoat/sniper
-	head = /obj/item/clothing/head/helmet/redhelmet/sniper
-	suit_store = /obj/item/gun/projectile/heavysniper
-	belt = /obj/item/gun/projectile/revolver //Backup weapon.
-	r_pocket = /obj/item/ammo_box/ptsd
-	backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-
-/decl/hierarchy/outfit/job/redsoldier/sniper/equip()
-	if(prob(50))
-		belt = /obj/item/gun/projectile/warfare
-	else
-		belt = /obj/item/gun/projectile/revolver
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
-	..()
-
-/decl/hierarchy/outfit/job/redsoldier/medic
-	belt = /obj/item/storage/belt/medical/full
-	r_pocket = /obj/item/ammo_magazine/c45rifle/akarabiner
-	l_pocket = /obj/item/stack/medical/bruise_pack
-	suit_store = /obj/item/gun/projectile/automatic/m22/warmonger
-	gloves = /obj/item/clothing/gloves/latex
-	head = /obj/item/clothing/head/helmet/redhelmet/medic
-
-/decl/hierarchy/outfit/job/redsoldier/medic/equip()
-	if(prob(50))
-		suit_store = /obj/item/gun/projectile/automatic/m22/warmonger
-		r_pocket = /obj/item/ammo_magazine/c45rifle/akarabiner
-		backpack_contents = list( /obj/item/ammo_magazine/c45rifle/akarabiner = 3, /obj/item/grenade/smokebomb = 1)
-
-	else
-		suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
-		r_pocket = /obj/item/ammo_box/rifle
-		backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1, /obj/item/torch/self_lit = 1)
-	..()
-
-/decl/hierarchy/outfit/job/redsoldier/leader/equip()
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1 , /obj/item/torch/self_lit = 1)
-	..()
-
-/decl/hierarchy/outfit/job/redsoldier/scout
-	suit = /obj/item/clothing/suit/child_coat/red
-	l_ear = /obj/item/device/radio/headset/red_team/all
-	uniform = /obj/item/clothing/under/child_jumpsuit/warfare/red
-	shoes = /obj/item/clothing/shoes/child_shoes
-	gloves = null
-	r_pocket = /obj/item/device/binoculars
-	backpack_contents = list(/obj/item/grenade/smokebomb = 1)
-
-/decl/hierarchy/outfit/job/redsoldier/scout/equip()
-	if(aspect_chosen(/datum/aspect/nightfare))
-		backpack_contents += list(/obj/item/ammo_box/flares = 1 , /obj/item/torch/self_lit = 1)
-	..()
-
 
 /decl/hierarchy/outfit/job/kroot
 	uniform = /obj/item/clothing/under/rank/kroot
@@ -506,6 +387,8 @@ Begin Warhammer loadouts
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
+/// TROOPER REGIMENT SELECTION
+
 /mob/living/carbon/human/proc/regimentselection()
 	set name = "Select your regiment"
 	set category = "Guardsmen"
@@ -517,51 +400,55 @@ Begin Warhammer loadouts
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger", "Catachan") //lists all possible chapters
+	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
 	switch(chapterchoice)
 		if("Krieger")
 			var/troopnum = rand(1,50000)
-			src.name = "Troop [troopnum]"
-			src.real_name = "Troop [troopnum]"
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieger, slot_w_uniform)
+			src.name = "Guardsman [troopnum]"
+			src.real_name = "Guardsman [troopnum]"
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/krieg, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/krieg, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+			U.verbs -= list(
+			/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Krieger"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Krieg Guardsman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/guard/uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
@@ -573,21 +460,22 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Cadian"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Cadian Guardsman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
 		if("Catachan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/camo, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
@@ -599,7 +487,171 @@ Begin Warhammer loadouts
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
-			W.assignment = "Catachan"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Catachan Guardsman"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+		if("Valhallan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+			W.assignment = "Valhallan Guardsman"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+/// SERGEANT REGIMENT SELECTION
+
+/mob/living/carbon/human/proc/sergeantselection()
+	set name = "Select your regiment"
+	set category = "Regimental Sergeant Position"
+	set desc = "Choose your regiment"
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+	var/mob/living/carbon/human/U = src
+	var/static/list/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
+	if(!length(chapter))
+		chapter = list("Cadian", "Krieger", "Catachan", "Valhallan")
+	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
+	if(chapterchoice)
+		chapter -= chapterchoice
+
+	switch(chapterchoice)
+		if("Krieger")
+			var/troopnum = rand(1,50000)
+			src.name = "Watchmaster [troopnum]"
+			src.real_name = "Watchmaster [troopnum]"
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/kriegsgt, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/krieg, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
+			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(
+			/mob/living/carbon/human/proc/sergeantselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+			W.assignment = "Krieg Watchmaster"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+		if("Cadian")
+			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/cadiansgt, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
+			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles/elite, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+			W.assignment = "Cadian Sergeant"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+		if("Catachan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/catachan, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/catachansgt, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+			W.assignment = "Catachan Sergeant"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+		if("Valhallan")
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallasgt, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
+
+			var/obj/item/card/id/dog_tag/guardsman/W = new
+
+			W.icon_state = "tagred"
+			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+			W.assignment = "Valhallan Sergeant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)

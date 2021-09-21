@@ -20,6 +20,10 @@
 	desc = "Looks much stronger than a paper sheet."
 	integrity = 7500
 
+/turf/simulated/wall/concrete/strong/chapel
+	name = "monastic stone wall"
+	desc = "Ornate stone packed together in a gothic fashion with various holy scribbles etching the framework. It looks extremely tough."
+
 /turf/simulated/wall/rust
 	desc = "An old rusty wall. It's definitely seen better days."
 	icon_state = "rust0"
@@ -34,9 +38,6 @@
 
 /turf/simulated/wall/ocp_wall/New(var/newloc)
 	..(newloc)
-
-
-
 
 /turf/simulated/wall/cult
 	icon_state = "cult"
@@ -134,7 +135,6 @@
 	walltype = "snow"
 	mineral = "stone"
 	integrity = 500 //Tough bois
-
 
 /turf/simulated/wall/grim
 	name = "grim wall"

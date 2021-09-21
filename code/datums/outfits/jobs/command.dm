@@ -36,7 +36,8 @@
 /decl/hierarchy/outfit/job/hop
 	name = OUTFIT_JOB_NAME("Seneschal")
 	uniform = /obj/item/clothing/under/rank/seneschal
-	head = /obj/item/clothing/head/seneschal
+	suit = /obj/item/clothing/suit/storage/senkhalat
+	head = /obj/item/clothing/head/senturban
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	back = /obj/item/storage/backpack/satchel/warfare
