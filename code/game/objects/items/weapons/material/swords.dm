@@ -191,6 +191,41 @@
 		..()
 
 
+/obj/item/material/sword/chaosknife
+	name = "chaos knife"
+	desc = "A knife made of bones and corruption."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "chaos_knife"
+	item_state = "EB-knife"//"knife"
+	attack_verb = list("slashed")
+	force_divisor = 0.3
+	block_chance = 15
+	w_class = ITEM_SIZE_SMALL
+	grab_sound_is_loud = TRUE
+	grab_sound = 'sound/items/unholster_knife.ogg'
+	equipsound = 'sound/items/holster_knife.ogg'
+	sharpness = TRUE//No cutting peoples heads off with a knife please.
+	weapon_speed_delay = 10
+	drop_sound = 'sound/items/knife_drop.ogg'
+	swing_sound = "blunt_swing"
+
+/obj/item/material/sword/slehdagger
+	name = "slaanesh dagger"
+	desc = "A exotic dagger used for pleasure."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "slaanesh_dagger"
+	item_state = "EB-knife"//"knife"
+	attack_verb = list("slashed")
+	force_divisor = 0.3
+	block_chance = 15
+	w_class = ITEM_SIZE_SMALL
+	grab_sound_is_loud = TRUE
+	grab_sound = 'sound/items/unholster_knife.ogg'
+	equipsound = 'sound/items/holster_knife.ogg'
+	sharpness = TRUE//No cutting peoples heads off with a knife please.
+	weapon_speed_delay = 10
+	drop_sound = 'sound/items/knife_drop.ogg'
+	swing_sound = "blunt_swing"
 
 /obj/item/material/sword/skinning_knife
 	name = "ritual knife"

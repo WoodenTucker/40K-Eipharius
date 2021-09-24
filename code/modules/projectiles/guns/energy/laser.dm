@@ -150,6 +150,22 @@ obj/item/gun/energy/retro
 	accuracy = 0 //mounted laser cannons don't need any help, thanks
 	one_hand_penalty = 0
 
+/obj/item/gun/energy/plasmacannon
+	name = "Plasma cannon"
+	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
+	icon_state = "chaosplaspistol"
+	item_state = null
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
+	slot_flags = SLOT_BELT|SLOT_BACK
+	one_hand_penalty = 6 //large and heavy
+	w_class = ITEM_SIZE_HUGE
+	projectile_type = /obj/item/projectile/beam/plasmabeam
+	charge_cost = 2000
+	max_shots = 20
+	accuracy = 2
+	fire_delay = 70
+	wielded_item_state = "gun_wielded"
+
 /obj/item/gun/energy/sniperrifle
 	name = "marksman energy rifle"
 	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
@@ -239,6 +255,30 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/luscius
+	name = "Lucius No.98 Lasgun"
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
+	icon_state = "luscius"
+	item_state = "luscius"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 30 //BAYOONEEEET
+	one_hand_penalty = 2
+	fire_delay = 4
+	accuracy = 2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lusgun
+	charge_cost = 75
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "luscius-wielded"
+
+
+	firemodes = list(
+		list(mode_name="semiauto", fire_delay = 4, move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		)
+
+/obj/item/gun/energy/las/lasgun/luscius98
 	name = "Lucius No.98 Lasgun"
 	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
 	icon_state = "luscius"
