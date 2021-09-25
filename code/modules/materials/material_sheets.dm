@@ -143,7 +143,7 @@
 	amount = 50
 
 /obj/item/stack/material/phoron
-	name = "promethium crystal"
+	name = "solid phoron"
 	icon_state = "sheet-phoron"
 	default_type = "phoron"
 	icon = 'icons/obj/items.dmi'
@@ -360,7 +360,7 @@
 
 /obj/item/stack/material/glass/phoronglass
 	name = "borosilicate glass"
-	desc = "This sheet is special promethium-coated glass alloy designed to withstand large temperatures."
+	desc = "This sheet is special platinum-glass alloy designed to withstand large temperatures."
 	singular_name = "borosilicate glass sheet"
 	icon_state = "sheet-phoronglass"
 	default_type = "phglass"
@@ -374,7 +374,7 @@
 
 /obj/item/stack/material/glass/phoronrglass
 	name = "reinforced borosilicate glass"
-	desc = "This sheet is special promethium-coated glass alloy designed to withstand large temperatures. It is reinforced with few rods."
+	desc = "This sheet is special platinum-glass alloy designed to withstand large temperatures. It is reinforced with few rods."
 	singular_name = "reinforced borosilicate glass sheet"
 	icon_state = "sheet-phoronrglass"
 	default_type = "rphglass"
