@@ -284,3 +284,11 @@
 	icon_state = "ion"
 	maxcharge = 200
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
+
+/obj/item/cell/pulserail
+	name = "rail pulse rifle magazine"
+	desc = "A small, portable magazine for a Tau rail pulse rifle."
+	origin_tech = list(TECH_POWER = 6)
+	icon_state = "rail"
+	maxcharge = 1000
+	matter = list(DEFAULT_WALL_MATERIAL = 750, "glass" = 150)

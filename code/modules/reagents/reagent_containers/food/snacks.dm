@@ -3375,7 +3375,7 @@
 
 /obj/item/reagent_containers/food/snacks/warfare/nim
 	name = "Nim ko’nai"
-	icon_state = "nim"
+	icon_state = "nim_open"
 	open_can_icon = "nim_open"
 	desc = "Shake the noodles inside in order to eat."
 	trash = /obj/item/trash/warfare_can/nim
