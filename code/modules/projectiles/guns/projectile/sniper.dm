@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/heavysniper
-	name = "PTSD 41"
-	desc = "A portable anti-armour rifle fitted with a scope. Completely useless at close range, marginally less useless at high ranges."
+	name = "Pattern Mk. III Sniper Rifle"
+	desc = "The Mark III Sniper rifle is a Needler sniper rifle used by the Imperial Guard for long-range anti-personnel and anti-materiel work."
 	icon_state = "heavysniper"
 	item_state = "heavysniper"
 	w_class = ITEM_SIZE_HUGE
