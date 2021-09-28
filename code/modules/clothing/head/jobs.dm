@@ -422,7 +422,7 @@
 	desc = "An helmet issued to member of the Inquisition Investigation Team, Very protective unlike Average Guardsman's."
 	icon_state = "inq_helm"
 	item_state = "inq_helm"
-	armor = list(melee = 40, bullet = 40, laser = 40,energy = 40, bomb = 30, bio = 10 rad = 10)
+	armor = list(melee = 40, bullet = 40, laser = 40,energy = 40, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/ordohereticus
