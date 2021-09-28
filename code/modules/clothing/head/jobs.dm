@@ -175,7 +175,7 @@
 	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in dark blue colour."
 	icon_state = "Jhelm2"
 	item_state = "Jhelm2"
-	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 15, bomb = 10, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -184,7 +184,7 @@
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it forehead."
 	icon_state = "guard"
 	item_state = "guard"
-	armor = list(melee = 10, bullet = 10, laser = 10,energy = 10, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 15, bomb = 10, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -193,7 +193,7 @@
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the red Cross Emblem engraved on it forehead."
 	icon_state = "medicae"
 	item_state = "medicae"
-	armor = list(melee = 20, bullet = 10, laser = 10,energy = 10, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 15, bomb = 10, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -202,7 +202,7 @@
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
 	icon_state = "krieghelm"
 	item_state = "krieghelm"
-	armor = list(melee = 40, bullet = 40, laser = 40,energy = 40, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 25, bio = 30, rad = 30)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -214,6 +214,7 @@
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 15, bomb = 10, bio = 10, rad = 10)
 
 /obj/item/clothing/head/valushanka/attack_self(mob/user as mob)
 	if(icon_state == initial(icon_state))
@@ -229,6 +230,7 @@
 	icon_state = "Catachan_Headband"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 50, bullet = 10, laser = 10, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/commissar
 	name = "Commissar's Peaked Cap"
@@ -237,18 +239,21 @@
 	item_state = "Commissar4Hat"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/commissar/krieg
 	name = "Commissar's Peaked Cap"
 	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
 	icon_state = "KriegissarHat"
 	item_state = "KriegissarHat"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/commissar/catachan
 	name = "Commissar's Peaked Cap"
 	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
 	icon_state = "CataCommissarHat"
 	item_state = "CataCommissarHat"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 // Administratum Stuff
 
@@ -338,6 +343,7 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	flags_inv = BLOCKHAIR
+	armor = list(melee = 35, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 5)
 
 /obj/item/clothing/head/senturban
 	name = "ornate turban"
@@ -367,6 +373,7 @@
 	desc = "A fanciful hat fitting a wealthy Rogue Trader."
 	icon_state = "fancyhat"
 	item_state = "fancyhat"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/rtpimp
 	name = "rogue trader's big cap"
@@ -383,6 +390,7 @@
 	name = "rogue trader's hat"
 	desc = "The wonderfully fancy hat of a wealthy Rogue Trader."
 	icon_state = "capcap"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/tradertricorn
 	name = "fanciful tricorn"
@@ -399,6 +407,7 @@
 	desc = "This hat is the mark of the right-hand of a Rogue Trader. He handles business while the Trader is otherwise occupied."
 	icon_state = "chaperon"
 	item_state = "chaperon"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 // Inquisition Stuff
 
@@ -413,7 +422,7 @@
 	desc = "An helmet issued to member of the Inquisition Investigation Team, Very protective unlike Average Guardsman's."
 	icon_state = "inq_helm"
 	item_state = "inq_helm"
-	armor = list(melee = 50, bullet = 50, laser = 50,energy = 50, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 40, laser = 40,energy = 40, bomb = 30, bio = 10 rad = 10)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/ordohereticus
@@ -422,7 +431,7 @@
  	icon_state = "hereticushat"
  	item_state = "hereticushat"
  	cold_protection = HEAD
- 	armor = list (melee = 60, bullet = 60, laser = 60,energy = 60, bomb = 50, bio = 0, rad = 0)
+ 	armor = list (melee = 50, bullet = 50, laser = 50,energy = 30, bomb = 40, bio = 20, rad = 20)
 
 
 

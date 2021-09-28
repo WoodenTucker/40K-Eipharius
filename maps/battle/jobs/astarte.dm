@@ -31,9 +31,9 @@
 	smg_skill = 10
 	melee_skill = 10
 	ranged_skill = 10
-	medical_skill = 5
-	engineering_skill = 0
-	surgery_skill = 1
+	medical_skill = 3
+	engineering_skill = 3
+	surgery_skill = 0
 	req_admin_notify = 1
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1

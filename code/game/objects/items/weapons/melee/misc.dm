@@ -60,7 +60,7 @@
 /obj/item/material/mekmace
 	name = "scrap mace"
 	desc = "A mace normally used by mek boys made of scrap."
-	force = 40
+	force = 30
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
 	item_state = "mekmace"
@@ -98,32 +98,8 @@
 /obj/item/melee/whip/lashoftorment/pickup(var/mob/living/carbon/human/user)
 	if(user.lust <= 7 )
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
-		user.make_dizzy(220)
-		user.vomit()
+		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
-
-/obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
-	user.setClickCooldown(20)
-	var/hit_zone = ran_zone()
-	if(user.lust <=6)
-		to_chat(user, "The [src] resists you!")
-		return
-	if(C.stat == DEAD)
-		to_chat(user,"<font color='#800080'>There is no pain to be harvested from the dead, a waste...</font>")
-	if(user.a_intent == I_HELP)
-		visible_message("<font color='#800080'>[user] lustfully slaps [C] with the whip, leaving a red mark but no real damage.</font>")
-		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
-	else
-		playsound(usr, 'sound/weapons/whip.ogg', 100, 1, 1)
-		C.apply_damage(rand(30,55), BRUTE, hit_zone, 0, (DAM_SHARP|DAM_EDGE))
-		C.Weaken(10)
-		user.slanpain += rand(3,8)
-		to_chat(C, "<span class='warning'>As the lash hits your body you feel an excruciating amount of pain. The weapon feels somehow alive, moving to cause you as much pain as possible.</span>")
-		if(C.gender == MALE)
-			playsound(usr, 'sound/voice/Screams_Male_3.ogg', 100, 1, 1)
-		else if(C.gender == FEMALE)
-			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
-		..()
 
 // KRIEG AXE 
 
@@ -135,7 +111,7 @@
 	item_state = "trenchaxe"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 20
+	force = 30
 	block_chance = 20
 	sharp = TRUE
 	edge = TRUE
@@ -155,8 +131,8 @@
 	item_state = "mercychainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 40
-	block_chance = 20
+	force = 38
+	block_chance = 15
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -173,8 +149,8 @@
 	item_state = "inqchainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 25
-	block_chance = 40
+	force = 30
+	block_chance = 25
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -208,9 +184,9 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
-	force = 1// it's unwieldy when you don't use two hands, baby sword.
+	force = 15// it's unwieldy when you don't use two hands, baby sword.
 	force_wielded = 45
-	block_chance = 0
+	block_chance = 25
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_HUGE

@@ -20,17 +20,22 @@
 		access_all_personal_lockers, access_maint_tunnels, access_armory)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory
 		)
-	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
-	semi_rifle_skill = 10
-	sniper_skill = 3
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
 	shotgun_skill = 6
-	lmg_skill = 3
-	smg_skill = 3
+	lmg_skill = 6
+	smg_skill = 6
+	melee_skill = 6
+	ranged_skill = 6
+	medical_skill = 3
+	engineering_skill = 1
+	surgery_skill = 1
+
 /datum/job/guardsman/equip(var/mob/living/carbon/human/H, alt_title)
 	H.warfare_faction = IMPERIUM
 	..()
-	H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
-	H.add_skills(rand(10,16))
+	H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (10,13))
 	H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 	SSwarfare.red.team += H
 	if(can_be_in_squad)
@@ -74,18 +79,24 @@
 			access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
 			)
-	auto_rifle_skill = 10
-	semi_rifle_skill = 10
-	shotgun_skill = 10
-	lmg_skill = 10
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
+	melee_skill = 7
+	ranged_skill = 7
+	medical_skill = 4
+	engineering_skill = 1
+	surgery_skill = 1
 	announced = FALSE
 /datum/job/sergeant/equip(var/mob/living/carbon/human/H, alt_title)
 	var/current_name = H.real_name
 	..()
 	H.verbs += /mob/living/carbon/human/proc/morale_boost
 	H.set_trait(new/datum/trait/death_tolerant())
-	H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
-	H.add_skills(rand(7,10),rand(8,10),rand(0,3),0,0)
+	H.add_stats(rand(14,17), rand(14,16), rand(14,16), rand(12,13))
 	H.assign_random_quirk()
 	H.witchblood()
 	H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -122,22 +133,27 @@
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
 	can_be_in_squad = FALSE
-	sniper_skill = 10
-	auto_rifle_skill = 10
-	semi_rifle_skill = 10
-	shotgun_skill = 10
-	lmg_skill = 10
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+	melee_skill = 8
+	ranged_skill = 8
+	medical_skill = 1
+	engineering_skill = 1
+	surgery_skill = 0
 	announced = FALSE
 /datum/job/ig/commissar/equip(var/mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	..()
 	H.fully_replace_character_name("Commissar [current_name]")
 	H.set_trait(new/datum/trait/death_tolerant())
-	H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
-	H.add_skills(rand(14,18))
+	H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand(14,16))
 	H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 	H.get_idcard()?.access = get_all_accesses()
 	H.warfare_faction = IMPERIUM
@@ -163,13 +179,17 @@
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
-	sniper_skill = 3
-	shotgun_skill = 8
-	lmg_skill = 10
-	smg_skill = 3
-	melee_skill = 9
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 6
+	ranged_skill = 5
+	medical_skill = 2
+	engineering_skill = 1
+	surgery_skill = 1
 	can_be_in_squad = FALSE
 	open_when_dead = TRUE
 	department_flag = SEC
@@ -183,8 +203,7 @@
 	var/current_name = H.real_name
 	..()
 	H.fully_replace_character_name("Enforcer [current_name]")
-	H.add_stats(rand(14,18), rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
-	H.add_skills(rand(6,10),rand(6,10))
+	H.add_stats(rand(13,17), rand(13,17), rand(14,17), rand(12,15)) //meant to be a brute keeping the plebs in line
 	H.assign_random_quirk()
 	H.witchblood()
 	H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -295,10 +314,15 @@
 	outfit_type = /decl/hierarchy/outfit/job/redsoldier/sentry
 	auto_rifle_skill = 5
 	semi_rifle_skill = 5
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 10
-	smg_skill = 3
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 6
+	ranged_skill = 5
+	medical_skill = 2
+	engineering_skill = 1
+	surgery_skill = 1
 	can_be_in_squad = FALSE
 	open_when_dead = TRUE
 	department_flag = SEC

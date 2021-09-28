@@ -1,21 +1,21 @@
 //Shitty variant of the normal bolt action rifle.
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
-	name = "\improper Mark I Stormrider"
-	desc = "A scrapped together piece of shit. Prone to jamming, but fires a very powerful round."//"The much, much older brother of the sleeker, better, Mark II. Kind of a piece of shit."
+	name = "\improper Stub Rifle"
+	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."//"The much, much older brother of the sleeker, better, Mark II. Kind of a piece of shit."
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
-	condition = 75
+	condition = 100
 	fire_sound = "brifle"
 	caliber = "763"
 	ammo_type = /obj/item/ammo_casing/brifle
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
 	empty_icon = "boltaction-e"
 	far_fire_sound = "sniper_fire"
-	fire_delay = 10
+	fire_delay = 6
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
-	name = "\improper Mark I Stormrider"
+	name = "\improper Stub Rifle"
 	force = 20
 	sharp = 1
 	attack_verb = list ("stabbed", "sliced")
@@ -27,8 +27,8 @@
 	desc += " This one has a bayonet."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
-	name = "\improper Mark I Snapper"
-	desc = "The lever action version of the Stormrider. Has all the same benefits and issues."
+	name = "\improper Lever Rifle"
+	desc = "The lever action version of the Stub Rifle. Has all the same benefits and issues."
 	icon_state = "leverchester"
 	item_state = "leverchester"
 	wielded_item_state = "leverchester-wielded"
@@ -102,7 +102,7 @@
 	icon_state = "winchester"
 	item_state = "winchester"
 	wielded_item_state = "winchester-wielded"
-	condition = 85
+	condition = 150
 	str_requirement = 8
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS AS WELL
@@ -156,7 +156,7 @@
 	unloaded_icon = "autorifle-e"
 	unwielded_unloaded_icon = "autorifle-e"
 	wielded_unloaded_icon = "autorifle-wielded-e"
-	condition = 75
+	condition = 100
 
 	magazine_type = /obj/item/ammo_magazine/c45rifle/akarabiner
 	allowed_magazines = /obj/item/ammo_magazine/c45rifle/akarabiner
@@ -555,7 +555,7 @@
 
 /obj/item/gun/projectile/automatic/stubber
 	name = "Vrak Pattern Heavy Stubber"
-	desc = "The Heavy Stubber is the Astra Militarum's standard issued support weapon, though crude and primitive, it's can provide what thousand of lasguns cannot: Its high rate of fire can fight off large amount of enemies, while it lacks armour-piercing capabilities and strength, it make up by sheer volumes of fire."
+	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
 	str_requirement = 10

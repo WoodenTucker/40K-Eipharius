@@ -14,7 +14,17 @@
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
 	announced = FALSE
-
+	auto_rifle_skill = 1
+	semi_rifle_skill = 1
+	sniper_skill = 1
+	shotgun_skill = 1
+	lmg_skill = 1
+	smg_skill = 1
+	melee_skill = 4
+	ranged_skill = 1
+	medical_skill = 4
+	engineering_skill = 2
+	surgery_skill = 1
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -22,8 +32,7 @@
 		var/servitor_name = "abel"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
-		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //extremely simple minded
-		H.add_skills(rand(1,2),rand(1,2),0,0,0)
+		H.add_stats(rand(10,10), rand(8,11), rand(16,17), rand(8,10)) //extremely simple minded
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
@@ -77,13 +86,23 @@
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
 	announced = FALSE
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 4
+	ranged_skill = 3
+	medical_skill = 3
+	engineering_skill = 0
+	surgery_skill = 0
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(13,16), rand(10,11), rand(10,11), rand(8,10))
-		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.add_stats(rand(13,15), rand(10,13), rand(12,15), rand(8,13))
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -112,13 +131,23 @@
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
 	latejoin_at_spawnpoints = 1
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 3
+	ranged_skill = 4
+	medical_skill = 3
+	engineering_skill = 4
+	surgery_skill = 0
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(10,16), rand(10,11), rand(10,11), rand(8,10))
-		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.add_stats(rand(10,15), rand(10,13), rand(10,13), rand(8,13))
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -143,13 +172,23 @@
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 2
+	ranged_skill = 3
+	medical_skill = 2
+	engineering_skill = 3
+	surgery_skill = 0
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(13,16), rand(10,11), rand(10,11), rand(8,10))
-		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.add_stats(rand(10,14), rand(10,13), rand(10,13), rand(10,13))
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -192,14 +231,24 @@
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 	announced = FALSE
+	auto_rifle_skill = 1
+	semi_rifle_skill = 1
+	sniper_skill = 1
+	shotgun_skill = 1
+	lmg_skill = 1
+	smg_skill = 1
+	melee_skill = 4
+	ranged_skill = 1
+	medical_skill = 4
+	engineering_skill = 2
+	surgery_skill = 1
 
 	equip(var/mob/living/carbon/human/H)
 		var/servitor_number = rand(1,1000)
 		var/servitor_name = "daan"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
-		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //extremely simple minded
-		H.add_skills(rand(1,2),rand(1,2),0,0,0)
+		H.add_stats(rand(10,10), rand(8,11), rand(16,17), rand(8,10)) //extremely simple minded
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
@@ -240,13 +289,23 @@
 		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 5
+	ranged_skill = 5
+	medical_skill = 3
+	engineering_skill = 0
+	surgery_skill = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Acolyte [current_name]")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18)) //highly trained and skilled
-		H.add_skills(rand(6,10),rand(6,10),rand(4,8),rand(1,8),0)
 		H.assign_random_quirk()
 		H.witchblood()
 		H.set_trait(new/datum/trait/death_tolerant())
@@ -280,13 +339,23 @@
 		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
+	melee_skill = 8
+	ranged_skill = 7
+	medical_skill = 4
+	engineering_skill = 1
+	surgery_skill = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Inquisitor [current_name]")
 		H.add_stats(rand(16,18), rand(16,18), rand(16,18), rand(16,18)) //highly trained and skilled
-		H.add_skills(rand(7,15),rand(7,15),rand(6,12),rand(4,8),0)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
@@ -316,10 +385,21 @@
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
 	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
 	announced = FALSE
+	auto_rifle_skill = 2
+	semi_rifle_skill = 2
+	sniper_skill = 2
+	shotgun_skill = 2
+	lmg_skill = 2
+	smg_skill = 2
+	melee_skill = 4
+	ranged_skill = 2
+	medical_skill = 2
+	engineering_skill = 0
+	surgery_skill = 4
+
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(6,8), rand(5,7), rand(6,8), rand(6,8)) //kids are dumb and weak
-		H.add_skills(rand(1,2),rand(1,2),0,0,0)
+		H.add_stats(rand(8,11), rand(10,13), rand(8,12), rand(6,10)) //kids are dumb and weak
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)

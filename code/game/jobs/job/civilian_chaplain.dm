@@ -15,15 +15,25 @@
 	announced = FALSE
 //	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
+	auto_rifle_skill = 2
+	semi_rifle_skill = 2
+	sniper_skill = 2
+	shotgun_skill = 2
+	lmg_skill = 2
+	smg_skill = 2
+	melee_skill = 4
+	ranged_skill = 2
+	medical_skill = 5
+	engineering_skill = 0
+	surgery_skill = 3
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Confessor [current_name]")
-		H.add_stats(rand(10,13), rand(8,13), rand(8,11), rand(12,16)) //frail and holy
+		H.add_stats(rand(10,13), rand(10,13), rand(10,12), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
-		H.add_skills(rand(2,4),rand(1,2),0,0,0)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Confessor-Millitant attached to the Rogue Trader through the Missionarus Galaxia. You are one of the Ecclesiarchy's fearsome zealot preachers, your oratory skills can stir entire crowds and cause them to turn on one another, exposing eachother's darkest secrets. You often work on worlds where faith is lacking, and people are rebellious. It is your job to preach to the flock and indoctrinate new individuals into it, protect the chapel, and ensure the relics in your reliquary remain safe and untouched by the unworthly.</font></b></span>")
@@ -194,14 +204,14 @@
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterelohiem
-	auto_rifle_skill = 10 // idk how these skills work but imperial guards have 10 and sisters are better trained than the average guard so they get 10.
-	semi_rifle_skill = 10
-	sniper_skill = 6
+	auto_rifle_skill = 9
+	semi_rifle_skill = 9
+	sniper_skill = 9
 	shotgun_skill = 9
-	lmg_skill = 10
-	smg_skill = 10
-	melee_skill = 10
-	ranged_skill = 10
+	lmg_skill = 9
+	smg_skill = 9
+	melee_skill = 7
+	ranged_skill = 9
 	medical_skill = 4
 	engineering_skill = 0
 	surgery_skill = 1
@@ -213,7 +223,7 @@
 		H.fully_replace_character_name("Sister Elohiem [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(35, rand(20,25), rand(20,25), rand(15,25)) // 5 down from astartes. they're strong women and literally believe so much in the god emperor's protection and strength that it becomes reality.
+		H.add_stats(rand(18,22), rand(18,22), rand(18,22), rand(18,22))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
