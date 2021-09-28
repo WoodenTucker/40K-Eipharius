@@ -18,6 +18,7 @@
 	icon_state = "undertaker"
 	item_state = "undertaker"
 	blood_overlay_type = "armor"
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 10, bio = 5, rad = 5)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -79,6 +80,7 @@
 /obj/item/clothing/suit/guardchef
 	name = "imperial guard cook's apron"
 	desc = "The dirty apron of a guard cook."
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	icon_state = "bsapron"
 	item_state = "bsapron"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
@@ -113,6 +115,7 @@
 /obj/item/clothing/suit/security/navyhos
 	name = "Commissar's jacket"
 	desc = "This piece of clothing was specifically designed for asserting superior authority."
+	armor = list(melee = 25, bullet = 35, laser = 35, energy = 0, bomb = 10, bio = 5, rad = 5)
 	icon_state = "hosbluejacket"
 	item_state = "hosbluejacket"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
@@ -127,7 +130,7 @@
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/tank/emergency,/obj/item/device/flashlight,/obj/item/gun/energy,/obj/item/gun/projectile,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/handcuffs,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter,/obj/item/device/taperecorder)
-	armor = list(melee = 50, bullet = 10, laser = 25, energy = 10, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 30, laser = 25, energy = 10, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/suit/storage/det_trench/grey
 	name = "grey trenchcoat"
@@ -185,6 +188,7 @@
 	desc = "Plain robes with numerous mechanical appendages sticking out and wriggling about."
 	icon_state = "magos"
 	item_state = "magos"
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 0, bomb = 30, bio = 50, rad = 50)
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -198,6 +202,7 @@
 	canremove = 0
 	icon_state = "techpriest"
 	item_state = "techpriest"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 20, bio = 50, rad = 50)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -291,6 +296,7 @@
 	icon_state = "male2"
 	item_state = "male2"
 	blood_overlay_type = "coat"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -301,6 +307,7 @@
 	desc = "Stinking, torn robes"
 	icon_state = "grosthrobe"
 	item_state = "grosthrobe"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
@@ -311,6 +318,7 @@
 	desc = "An amasec and caff stained apron."
 	icon_state = "mapron"
 	item_state = "mapron"
+	armor = list(melee = 25, bullet = 25, laser = 35, energy = 0, bomb = 10, bio = 5, rad = 5)
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -323,6 +331,7 @@
 	desc = "Shabby robes worn by a servitor unit."
 	icon_state = "servitor_robe"
 	item_state = "servitor_robe"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	blood_overlay_type = "coat"
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
@@ -332,6 +341,7 @@
 /obj/item/clothing/suit/servitor/janitor
 	icon_state = "servitor_robe2"
 	item_state = "servitor_robe2"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -341,6 +351,7 @@
 	desc = "Gorgeous robes littered  with holy seals and writs. Smells faintly of incense."
 	icon_state = "ministorum_priest"
 	item_state = "ministorum_priest"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	body_parts_covered = UPPER_TORSO|ARMS|LEGS|LOWER_TORSO
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -350,6 +361,7 @@
 	name = "undertaker's coat"
 	desc = "Fitted just for scavs."
 	icon_state = "child_redcoat"
+	armor = list(melee = 35, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	can_be_worn_by_child = TRUE
 	child_exclusive = TRUE
 
@@ -360,6 +372,7 @@
 	desc = "A red hunters uniform"
 	icon_state = "chokha"
 	item_state = "chokha"
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 0, bomb = 10, bio = 5, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -368,6 +381,7 @@
 	desc = "A miner's vestaments"
 	icon_state = "yminer"
 	item_state = "yminer"
+	armor = list(melee = 48, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -376,6 +390,7 @@
 	desc = "A sherpa's vestaments"
 	icon_state = "sherpa"
 	item_state = "sherpa"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -384,6 +399,7 @@
 	desc = "A jacket that only the shadiest of characters would wear."
 	icon_state = "scum"
 	item_state = "scum"
+	armor = list(melee = 20, bullet = 25, laser = 40, energy = 0, bomb = 10, bio = 5, rad = 5)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -393,6 +409,7 @@
 	desc = "Worn by practioners and other surgoens."
 	icon_state = "prac_robes"
 	item_state = "prac_robes"
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 50, rad = 30)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -401,7 +418,7 @@
 	desc = "The holy garments marking the wearer as sister hospitaller"
 	icon_state = "hospitaller"
 	item_state = "hospitaller"
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 10, bio = 50, rad = 0)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 20, bio = 50, rad = 10)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/storage/firstaid/adv) //i'll figure out what can go in here idk
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -412,7 +429,7 @@
 	desc = "The holy garments marking the wearer as a discipulus hospitaller"
 	icon_state = "hospitallerold"
 	item_state = "hospitallerold"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 10, bio = 50, rad = 0)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 50, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -421,6 +438,7 @@
 	desc = "The ornate khalat of the Seneschal. It is made from the finest fabrics this side of the galaxy and interwoven with real gold. Very fancy."
 	icon_state = "senkhalat"
 	item_state = "senkhalat"
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 0, bomb = 20, bio = 15, rad = 15)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -429,7 +447,7 @@
 	desc = "A rugged, regal, trader coat. It is dyed with the finest of dyes and made from durable and armored fabric. For when you need to plunder and pillage the galactic seas."
 	icon_state = "traderpirate"
 	item_state = "traderpirate"
-	armor = list (melee = 10, bullet = 15, laser = 15, energy = 15)
+	armor = list(melee = 45, bullet = 45, laser = 45, energy = 20, bomb = 40, bio = 15, rad = 15)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
