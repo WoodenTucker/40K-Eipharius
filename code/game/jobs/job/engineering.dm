@@ -15,6 +15,17 @@
 	economic_modifier = 20
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 4
+	ranged_skill = 5
+	medical_skill = 4
+	engineering_skill = 10
+	surgery_skill = 5
 
 	ideal_character_age = 70 // Old geezer captains ftw
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
@@ -31,8 +42,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Magos [current_name]")
-		H.add_stats(rand(12,15), rand(10,13), rand(14,18), rand(16,20)) //idk what to do with Magos xd
-		H.add_skills(rand(1,3), rand(3,5), rand(4,6),10, rand(1,3))
+		H.add_stats(rand(12,15), rand(14,16), rand(15,18), rand(16,20)) //idk what to do with Magos xd
 		H.warfare_faction = IMPERIUM
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos. The highest ranking member of the Adeptus Mechanicus on the outpost. Your duty is to ensure all mechanical and electrical services remain online and operational. Use your talents and the skills of your tech priests to further the goals of the Imperium. Praise the Omnissiah!</font></b></span>")
@@ -63,6 +73,17 @@
 	//alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
 	//	"Atmospheric Technician" = /decl/hierarchy/outfit/job/engineering/atmos)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 3
+	ranged_skill = 3
+	medical_skill = 3
+	engineering_skill = 9
+	surgery_skill = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
