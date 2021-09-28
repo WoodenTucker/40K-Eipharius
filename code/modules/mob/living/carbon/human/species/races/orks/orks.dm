@@ -11,8 +11,8 @@
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_VHIGH
 	mob_size = MOB_LARGE
-	brute_mod = 0.9
-	burn_mod = 0.9
+	brute_mod = 1.0
+	burn_mod = 1.0
 	toxins_mod = 0.9
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream    //,
@@ -25,7 +25,7 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_HIGH
-	total_health = 400
+	total_health = 200
 	mob_size = MOB_MEDIUM
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,
@@ -40,9 +40,9 @@
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = 30
 	mob_size = MOB_LARGE
-	brute_mod = 0.7
-	burn_mod = 0.8
-	toxins_mod = 0.7
+	brute_mod = 0.9
+	burn_mod = 0.9
+	toxins_mod = 0.8
 	inherent_verbs = list(
 		/mob/living/carbon/human/ork/proc/warscream,
 		/mob/living/carbon/human/ork/proc/bozzscream
