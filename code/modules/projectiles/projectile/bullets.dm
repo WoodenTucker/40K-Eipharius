@@ -364,7 +364,7 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 50
+	damage = 30
 
 /obj/item/projectile/bullet/ork/shoota
 	name = "piece of trash"
