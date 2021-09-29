@@ -19,15 +19,25 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
 
-	ideal_character_age = 70 // Old geezer captains ftw
+	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/captain
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 5
+	ranged_skill = 6
+	medical_skill = 4
+	engineering_skill = 3
+	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Rogue Trader [current_name]")
-		H.add_stats(rand(10,18), rand(10,18), rand(10,18), rand(10,18)) //RT's are really fucking random in lore so we'll make his stats random
-		H.add_skills(rand(1,9), rand(1,9), rand(1,9), rand(1,9), rand(1,9))
+		H.add_stats(rand(12,18), rand(12,18), rand(12,18), rand(12,18)) 
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire,)
@@ -58,10 +68,21 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	ideal_character_age = 50
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 3
+	ranged_skill = 4
+	medical_skill = 5
+	engineering_skill = 0
+	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(6,8), rand(8,14), rand(7,13), rand(13,18))  //Seneschals to me feel like a smart right-hand man rather than a brute, their stats reflect this
+		H.add_stats(rand(10,12), rand(10,14), rand(10,13), rand(13,18))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")

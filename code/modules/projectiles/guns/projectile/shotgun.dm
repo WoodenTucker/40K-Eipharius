@@ -18,8 +18,8 @@
 
 
 /obj/item/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "Accatran pattern Mk XI"
+	desc = "This model has an eight round internal magazine and uses a manual pump action to to fire a single shot then re-cock the weapon. It can fire a variety of ammunition."
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 5
@@ -239,12 +239,12 @@
 
 
 /obj/item/gun/projectile/shotgun/pump/boltaction
-	name = "\improper Mark II Stormrider" //I used a random rifle generator to come up with that.
-	desc = "This piece of junk looks like something that could have been used 700 years ago"
+	name = "\improper Stub Rifle" //I used a random rifle generator to come up with that.
+	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."
 	icon_state = "mosin"
 	item_state = "mosin"
 	caliber = "a762"
-	fire_delay = 10
+	fire_delay = 4
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
 	casingsound = 'sound/weapons/guns/misc/casingfall1.ogg'
 	pumpsound = 'sound/weapons/boltpump.ogg'

@@ -11,9 +11,9 @@
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	brute_mod = 1.1 //orkz want melee
-	burn_mod = 1.5
-	toxins_mod = 1
+	brute_mod = 1.0
+	burn_mod = 1.0
+	toxins_mod = 0.9
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
@@ -44,12 +44,12 @@
 
 /mob/living/carbon/human/ork/Life()
 	..()
-	var/regen = 0.25
+	var/regen = 0.08
 	if(max_waaagh > 0)
 		if(inspired)
-			regen = 1
+			regen = 0.10
 		else
-			regen = 0.25
+			regen = 0.08
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
 
@@ -64,7 +64,7 @@
 	var/inspired = FALSE  //this changes when the ork is buffed by the warboss
 
 /mob/living/carbon/human/ork/New(var/new_loc)
-	max_waaagh = 300
+	max_waaagh = 200
 	waaagh = max_waaagh
 	var/dice = rand(1, 2)
 	switch(dice)

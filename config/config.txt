@@ -204,7 +204,7 @@ GUEST_BAN
  GITHUBURL https://github.com/Daelso/Warhammer-IS12
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
- BANAPPEALS https://discord.gg/Avp9z7r
+ BANAPPEALS https://discord.gg/eJb7RDV6
 
 ## In-game features
 ## spawns a spellbook which gives object-type spells instead of verb-type spells for the wizard

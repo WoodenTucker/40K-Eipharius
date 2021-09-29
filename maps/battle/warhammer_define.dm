@@ -12,7 +12,7 @@
 	company_short = "SU"
 	system_name = "Helican Subsector"
 
-	lobby_icon = 'maps/warhammer/fullscreen.dmi'
+	lobby_icon = 'maps/battle/fullscreen.dmi'
 	lobby_screens = list("lobby1","lobby2","lobby3","lobby4","lobby5", "lobby6")
 
 	station_levels = list(1,2)

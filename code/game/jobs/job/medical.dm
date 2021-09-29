@@ -3,11 +3,6 @@
 	head_position = 1
 	department = "Medical"
 	department_flag = COM|MED
-	medical_skill = 10
-	surgery_skill = 10
-	engineering_skill = 0
-	ranged_skill = 3
-	melee_skill = 3
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Orders Hospitaller"
@@ -28,14 +23,24 @@
 	minimal_player_age = 14
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 6
+	ranged_skill = 5
+	medical_skill = 10
+	engineering_skill = 1
+	surgery_skill = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Sister Hospitaller [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(8,12), rand(10,16), rand(10,14), rand(14,17))
-		H.add_skills(3,3,10,0,10)
+		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
@@ -44,7 +49,7 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge on this world, organize your sisters and ensure they are doing their duty to both the outpost and citizens of this world. Your own skills should not be wasted on the ordinary, keep available for injuries to important people</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge within the Ordos Hospitaller, organize your sisters and ensure they are doing their duty to both the Lord Trader and the Codex Sororitas. Sanctify and heal this unholy land of it's festering heretical past... in the name of your Emperor.</font></b></span>")
 
 /datum/job/doctor
 	title = "Discipulus Hospitaller"
@@ -63,14 +68,24 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, access_sob)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels, access_sob)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 5
+	ranged_skill = 4
+	medical_skill = 8
+	engineering_skill = 0
+	surgery_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(8,12), rand(10,14), rand(10,14), rand(12,15))
-		H.add_skills(3,3,rand(7,9),0,rand(7,9))
+		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(12,15))
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_equipped_item(slot_s_store)
@@ -84,7 +99,7 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are responsible for the health of not only the outpost but the various pilgrims and penitents that live in the shanty town north of the outpost</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a junior sister of the Ordos Hospitaller, serving under the Sister Hospitaller to maintain the health and divinity of the garrison.</font></b></span>")
 
 
 //Chemist is a medical job damnit	//YEAH FUCK YOU SCIENCE	-Pete	//Guys, behave -Erro
@@ -104,20 +119,29 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
-
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 4
+	ranged_skill = 4
+	medical_skill = 8
+	engineering_skill = 1
+	surgery_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(6,10), rand(7,12), rand(8,12), rand(9,13))
+		H.add_stats(rand(9,13), rand(9,13), rand(9,13), rand(10,13))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.add_skills(2,2,rand(2,4),0,rand(1,3)) //they have limited medical knowledge
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous healing tincures and salves so beloved by the Ordos Hospitaller. Keep the outpost stocked and maybe sell a little something on the side if you're willing to brave the Inquisition.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
 
 /datum/job/geneticist
 	title = "Biologis"
@@ -135,13 +159,23 @@
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine, access_engine_equip,)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine_equip, access_engine)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 3
+	ranged_skill = 3
+	medical_skill = 6
+	engineering_skill = 8
+	surgery_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Biologis [current_name]")
-		H.add_stats(rand(6,14), rand(8,14), rand(10,13), rand(15,20))
-		H.add_skills(rand(0,5),rand(0,5),rand(6,10),rand(3,6),10)
+		H.add_stats(rand(10,14), rand(10,14), rand(10,13), rand(15,20))
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
@@ -178,6 +212,17 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 5
+	ranged_skill = 5
+	medical_skill = 8
+	engineering_skill = 0
+	surgery_skill = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -187,8 +232,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
-		H.add_stats(rand(10,13), rand(10,14), rand(10,14), rand(12,15))
-		H.add_skills(rand(4,6),rand(4,6),10,0,rand(5,7))
+		H.add_stats(rand(11,14), rand(11,14), rand(12,15), rand(12,15))
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)

@@ -326,8 +326,8 @@
 	item_state = "bpistol"
 	force = 50.0
 	caliber = ".75"
-	accuracy = 0.15
-	fire_delay = 4 // its a hecking bolter pistol
+	accuracy = 1
+	fire_delay = 3
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -348,8 +348,8 @@
 	str_requirement = 18
 	force = 50.0
 	caliber = ".75"
-	accuracy = 0.75
-	fire_delay = 3.5 //better than standard
+	accuracy = 2
+	fire_delay = 3
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
