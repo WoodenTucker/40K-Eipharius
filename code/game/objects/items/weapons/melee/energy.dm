@@ -89,6 +89,38 @@
 	icon_state = initial(icon_state)
 	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a regular axe now.</span>")
 
+/obj/item/melee/energy/tau
+	name = "Tau Blade"
+	desc = "A taU blade using high heated plasma to cut through things."
+	icon_state = "tau0"
+	item_state = "EB-knife"
+	//active_force = 150 //holy...
+	active_force = 30
+	active_throwforce = 35
+	//force = 40
+	//throwforce = 25
+	force = 20
+	throwforce = 10
+	throw_speed = 1
+	throw_range = 5
+	w_class = ITEM_SIZE_NORMAL
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	origin_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4)
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	sharp = 1
+	edge = 1
+
+/obj/item/melee/energy/tau/activate(mob/living/user)
+	..()
+	icon_state = "tau"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
+
+/obj/item/melee/energy/tau/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a regular knife now.</span>")
+
 /*
  * Energy Sword
  */
