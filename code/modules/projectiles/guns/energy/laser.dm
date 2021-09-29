@@ -417,6 +417,7 @@ obj/item/gun/energy/retro
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="automatic", burst=1, fire_delay= 0.9,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
 		)
 
 /obj/item/gun/energy/pulse/railgun
@@ -428,7 +429,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2
-	accuracy = 5
+	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 3)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserail
@@ -437,7 +438,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "railgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=10,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=60,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/ionrifle
@@ -458,7 +459,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "ionriflet-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=40,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulsepistol

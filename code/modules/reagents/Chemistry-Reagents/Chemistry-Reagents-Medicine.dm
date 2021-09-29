@@ -780,3 +780,18 @@
 		M.immunity = max(M.immunity - 0.1, 0)
 		if(M.chem_doses[type] > M.species.blood_volume/8) //half of blood was replaced with us, rip white bodies
 			M.immunity = max(M.immunity - 0.5, 0)
+
+/datum/reagent/tr
+	name = "tissue rebuilder"
+	description = "helps to seal the wounds and rejuvenate the blood supply of the user."
+	taste_description = "blood with bubbles"
+	reagent_state = REAGENT_LIQUID
+	color = "#c10158"
+	scannable = 1
+	overdose = 20
+	metabolism = 1
+	flags = IGNORE_MOB_SIZE
+
+/datum/reagent/tr/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien != IS_DIONA)
+		M.heal_organ_damage(300 * removed, 300 * removed)
