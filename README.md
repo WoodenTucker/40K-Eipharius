@@ -1,6 +1,6 @@
 ## Cadia Station: 40k 
 
-**Discord:** https://discord.gg/Avp9z7r
+**Discord:** https://discord.gg/E5njx9xJzh
 
 ## Based off of Interstation12: Warfare
 

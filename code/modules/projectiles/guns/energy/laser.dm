@@ -238,7 +238,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2
-	accuracy = 2
+	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -263,8 +263,8 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 30 //BAYOONEEEET
 	one_hand_penalty = 2
-	fire_delay = 4
-	accuracy = 2
+	fire_delay = 3
+	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lusgun
@@ -288,7 +288,7 @@ obj/item/gun/energy/retro
 	force = 30 //BAYOONEEEET
 	one_hand_penalty = 2
 	fire_delay = 4
-	accuracy = 2
+	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lusgun
@@ -418,27 +418,6 @@ obj/item/gun/energy/retro
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		list(mode_name="automatic", burst=1, fire_delay= 0.9,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
-		)
-
-/obj/item/gun/energy/pulse/railgun
-	name = "rail pulse rifle"
-	desc = "A large pulse rifle with only 1 setting. This seems like it could pack a punch"
-	icon_state = "railgun"
-	item_state = "railgun"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
-	force = 10
-	one_hand_penalty = 2
-	accuracy = 3
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 3)
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/pulse/pulserail
-	cell_type = /obj/item/cell/pulserail
-	ammoType = /obj/item/cell/pulserail
-	wielded_item_state = "railgun-wielded"
-
-	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=60,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/ionrifle
