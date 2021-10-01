@@ -4,8 +4,8 @@
 	department = "Science"
 	department_flag = COM|SCI
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Rogue Trader"
 	selection_color = "#ad6bad"
 	req_admin_notify = 1
@@ -27,8 +27,8 @@
 	department = "Science"
 	department_flag = SCI
 
-	total_positions = 5
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the research director"
 	selection_color = "#633d63"
 	economic_modifier = 7
@@ -38,29 +38,13 @@
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
 
-/datum/job/xenobiologist
-	title = "Xenobiologist"
-	department = "Science"
-	department_flag = SCI
-
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = "the research director"
-	selection_color = "#633d63"
-	economic_modifier = 7
-	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_hydroponics)
-	minimal_access = list(access_research, access_xenobiology, access_hydroponics)
-//	alt_titles = list("Xenobotanist")
-	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
-
 /datum/job/roboticist
 	title = "Roboticist"
 	department = "Science"
 	department_flag = SCI
 
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "research director"
 	selection_color = "#633d63"
 	economic_modifier = 5

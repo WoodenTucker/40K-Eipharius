@@ -323,7 +323,7 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/psychiatrist
 
 /obj/item/card/id/medical/paramedic
-	job_access_type = /datum/job/Paramedic
+	job_access_type = /datum/job/ig/medicae
 
 /obj/item/card/id/medical/head
 	name = "identification card"
@@ -347,7 +347,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card which represents honor and protection."
 	icon_state = "secGold"
-	job_access_type = /datum/job/hos
+	job_access_type = /datum/job/ig/commissar
 
 /obj/item/card/id/engineering
 	name = "identification card"
@@ -401,7 +401,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card issued to civilian staff."
 	icon_state = "civ"
-	job_access_type = /datum/job/assistant
+	//job_access_type = /datum/job/assistant
 
 /obj/item/card/id/innkey1
 	name = "inn room key 1"

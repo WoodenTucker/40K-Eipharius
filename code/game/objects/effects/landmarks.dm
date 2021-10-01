@@ -119,9 +119,9 @@ Template:
 /obj/effect/landmark/start/rd
 	name = "Research Director"
 /obj/effect/landmark/start/chief_engineer
-	name = "Magos"
+	name = "Magos Dominus"
 /obj/effect/landmark/start/cmo
-	name = "Sister Hospitaller"
+	name = "Almoness Advance"
 /obj/effect/landmark/start/inquisitor
 	name = "Inquisitor"
 /obj/effect/landmark/start/envoy
@@ -129,11 +129,11 @@ Template:
 
 //Science//
 /obj/effect/landmark/start/geneticist
-	name = "Genetor"
+	name = "Magos Biologis"
 /obj/effect/landmark/start/scientist
 	name = "Tenchotrainee"
 /obj/effect/landmark/start/xenobiologist
-	name = "Xenobiologist"
+	name = "Magos Xenologist"
 /obj/effect/landmark/start/roboticist
 	name = "Cybernetica Acolyte"
 
@@ -155,34 +155,34 @@ Template:
 	name = "Enforcer"
 /obj/effect/landmark/start/ig
 	name = "Imperial Guardsman"
+
 //Engineering//
 
-
 /obj/effect/landmark/start/engineer
-	name = "Tech Priest"
+	name = "Tech Priest Enginseer"
 
 //Supply//
 
 /obj/effect/landmark/start/cargo
-	name = "Crate Pusher"
+	name = "Munitorum Menial"
 /obj/effect/landmark/start/qm
-	name = "Munitorum Priest"
+	name = "Munitorum Tribunus"
 /obj/effect/landmark/start/shaft_miner
-	name = "Shaft Miner"
+	name = "Munitorum Explorator"
 
 //Service//
 /obj/effect/landmark/start/botanic
-	name = "Botanic"
+	name = "Farmer"
 /obj/effect/landmark/start/bartender
-	name = "Bartender"
+	name = "Bar Servitor"
 /obj/effect/landmark/start/chef
-	name = "Chef"
+	name = "Cook"
 /obj/effect/landmark/start/chaplain
 	name = "Chaplain"
 /obj/effect/landmark/start/janitor
-	name = "Janitor"
+	name = "Janitor Servitor"
 /obj/effect/landmark/start/librarian
-	name = "Librarian"
+	name = "Record Keeper"
 
 //Pilgrims//
 /obj/effect/landmark/start/assistant

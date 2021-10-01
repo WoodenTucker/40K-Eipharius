@@ -226,7 +226,7 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
-/obj/item/storage/backpack/satchel/warfare/sisterelohiem
+/obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	name = "Order of the Sacred Rose Powerpack"
 	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
 	icon_state = "sister"
