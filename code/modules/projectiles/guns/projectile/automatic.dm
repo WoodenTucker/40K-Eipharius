@@ -367,8 +367,9 @@
 	max_shells = 50
 	caliber = ".75"
 	can_jam = FALSE
-	accuracy = 1.5
-	condition = 60
+	move_delay= 5
+	one_hand_penalty = 6
+	accuracy = 0
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
