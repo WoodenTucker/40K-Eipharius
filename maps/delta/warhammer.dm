@@ -1,10 +1,7 @@
 #if !defined(using_map_DATUM)
 	#include "warhammer_areas.dm"
 	#include "warhammer_unit_testing.dm"
-	#include "jobs/commissar_verbs.dm"
 	#include "jobs/warhammer_jobs.dm"
-	#include "jobs/guard.dm"
-	#include "jobs/guardsmen.dm"
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
 

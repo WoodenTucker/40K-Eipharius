@@ -72,3 +72,33 @@
 /*All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
 Begin Warhammer loadouts
 */
+
+//Outfits
+
+/decl/hierarchy/outfit/job/ig/enforcer
+	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
+	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
+	uniform = /obj/item/clothing/under/color/brown
+	shoes = /obj/item/clothing/shoes/jackboots
+	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	suit = /obj/item/clothing/suit/armor/enforcer
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	belt = /obj/item/melee/baton/loaded
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	l_ear = /obj/item/device/radio/headset/red_team/delta
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	l_hand = /obj/item/device/flashlight/lantern
+	backpack_contents = list(
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
+	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/handcuffs = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	)
+
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR

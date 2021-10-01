@@ -95,7 +95,7 @@
 
 // Combat Medicae
 
-/datum/job/ig/Paramedic
+/datum/job/ig/medicae
 	title = "Combat Medicae"
 	department = "Medical"
 	department_flag = SEC|MED
@@ -557,3 +557,367 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
+//Squads
+
+/mob/living/carbon/human/proc/assign_random_squad(var/team, var/rank)
+	switch(team)
+		if(IMPERIUM)//You're now put in whatever squad has the least amount of living people in it.
+			var/alpha_members = SSwarfare.red.squadA.members.len
+			var/bravo_members = SSwarfare.red.squadB.members.len
+			var/charlie_members = SSwarfare.red.squadC.members.len
+			var/minimum = min(alpha_members, bravo_members, charlie_members)
+			if(minimum == alpha_members)
+				SSwarfare.red.squadA.members += src
+				src.squad = SSwarfare.red.squadA
+				//equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear) //Saving the original here in case I want to return to it.
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
+				RC.attach_accessory(src,A)
+				if(rank == "medic")
+					var/obj/item/clothing/accessory/medal/medical/M = new(src)
+					RC.attach_accessory(src,M)
+					//var/obj/item/clothing/suit/armor/redcoat/medic/MC = get_equipped_item(slot_wear_suit)
+					//MC.icon_state = "redcoat_medic_alpha"
+					//MC.item_state = "redcoat_medic_alpha"
+
+			else if(minimum == bravo_members)
+				SSwarfare.red.squadB.members += src
+				src.squad = SSwarfare.red.squadB
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/bravo/B = new(src)
+				RC.attach_accessory(src,B)
+				if(rank == "medic")
+					var/obj/item/clothing/accessory/medal/medical/M = new(src)
+					RC.attach_accessory(src,M)
+
+			else if(minimum == charlie_members)
+				SSwarfare.red.squadC.members += src
+				src.squad = SSwarfare.red.squadC
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/charlie(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/charlie/C = new(src.loc)
+				RC.attach_accessory(src,C)
+				if(rank == "medic")
+					var/obj/item/clothing/accessory/medal/medical/M = new(src)
+					RC.attach_accessory(src,M)
+			else
+				SSwarfare.red.squadB.members += src
+				src.squad = SSwarfare.red.squadB
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/bravo/B = new(src.loc)
+				RC.attach_accessory(src,B)
+				if(rank == "medic")
+					var/obj/item/clothing/accessory/medal/medical/M = new(src)
+					RC.attach_accessory(src,M)
+			/*if(4)
+				SSwarfare.red.squadD.members += src
+				src.squad = SSwarfare.red.squadD
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/delta(src),slot_l_ear)
+			*/
+
+	var/obj/item/card/id/I = GetIdCard()
+	var/actual_job = "Guardsman"
+	switch(rank)
+		if("medic")
+			actual_job = "Medic"
+		if("engineer")
+			actual_job = "Engineer"
+	I.assignment = "[src.squad.name] Squad [actual_job]"
+
+	to_chat(src, "<b>I am apart of [src.squad.name] Squad</b>")
+
+
+/mob/living/carbon/human/proc/assign_squad_leader(var/team)
+	switch(team)
+		if(IMPERIUM)//Start from A, go to D
+			if(!SSwarfare.red.squadA.squad_leader)
+				SSwarfare.red.squadA.members += src
+				SSwarfare.red.squadA.squad_leader = src
+				src.squad = SSwarfare.red.squadA
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_alpha(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
+				RC.attach_accessory(src,A)
+
+			else if(!SSwarfare.red.squadB.squad_leader)
+				SSwarfare.red.squadB.members += src
+				SSwarfare.red.squadB.squad_leader = src
+				src.squad = SSwarfare.red.squadB
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_bravo(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/bravo/B = new(src)
+				RC.attach_accessory(src,B)
+
+			else if(!SSwarfare.red.squadC.squad_leader)
+				SSwarfare.red.squadC.members += src
+				SSwarfare.red.squadC.squad_leader = src
+				src.squad = SSwarfare.red.squadC
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_charlie(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/charlie/C = new(src)
+				RC.attach_accessory(src,C)
+
+			/*
+			else if(!SSwarfare.red.squadD.squad_leader)
+				SSwarfare.red.squadD.members += src
+				SSwarfare.red.squadD.squad_leader = src
+				src.squad = SSwarfare.red.squadD
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_delta(src),slot_l_ear)
+			*/
+			else//Somehow we have more than 3 SLs, no idea how but let's just exit now.
+				return
+
+	var/obj/item/card/id/I = GetIdCard()
+	I.assignment = "[src.squad.name] Squad"
+
+	to_chat(src, "<b>I am the Squad Leader of [src.squad.name] Squad</b>")
+
+//Misc
+
+/mob/proc/voice_in_head(message)
+	to_chat(src, "<i>...[message]</i>")
+
+GLOBAL_LIST_INIT(lone_thoughts, list(
+		"Why are we still here, just to suffer?",
+		"We fight to win, and that's all that matters.",
+		"Why we don't get any more reinforcements?",
+		"We have not gotten any orders from central command in months...",
+		"Did something happened while we were fighting in trenches?",
+		"Is there any reason to keep fighting?",
+		"Did anyone notice when ash started to fall?",
+		"It's middle of summer. Why it's so cold?",
+		"Greg died last night.",
+		"I do not want to die.",
+		"I miss my loved ones.",
+		"There is no hope... anymore...",
+		"Is there actually a central command?",
+		"Is any of this real?",
+		"My teeth hurt.",
+		"I am not ready to die.",
+		"Who keeps dropping the artillery?",
+		"I don't remember joining the military...",
+		"Does the Emperor truly protect?",
+		"I hope the Inquisitor doesn't find my Eldar milf fan-fiction",))
+
+/mob/living/proc/assign_random_quirk()
+	if(prob(75))//75% of not choosing a quirk at all.
+		return
+	if(is_hellbanned())//Hellbanned people will never get quirks.
+		return
+	var/list/random_quirks = list()
+	for(var/thing in subtypesof(/datum/quirk))//Populate possible quirks list.
+		var/datum/quirk/Q = thing
+		random_quirks += Q
+	if(!random_quirks.len)//If there's somewhow nothing there afterwards return.
+		return
+	var/datum/quirk/chosen_quirk = pick(random_quirks)
+	src.quirk = new chosen_quirk
+	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
+	switch(chosen_quirk)
+		if(/datum/quirk/cig_addict)
+			var/datum/reagent/new_reagent = new /datum/reagent/nicotine
+			src.reagents.addiction_list.Add(new_reagent)
+		if(/datum/quirk/alcoholic)
+			var/datum/reagent/new_reagent = new /datum/reagent/ethanol
+			src.reagents.addiction_list.Add(new_reagent)
+		if(/datum/quirk/obscura)
+			var/datum/reagent/new_reagent = new /datum/reagent/space_drugs
+			src.reagents.addiction_list.Add(new_reagent)
+
+/mob/living/carbon/human/proc/witchblood()
+	if(prob(99))//99% of not being a psyker
+		return
+	else
+		src.psyker = 1
+		src.verbs += list(/mob/living/carbon/human/proc/remotesay,)
+
+
+// Commissar Verbs
+
+/mob/living/carbon/human/proc/help_me()
+	set name = "Help me!"
+	set category = "Commissar"
+
+	if(stat)
+		return
+
+	var/is_blue = IMPERIUM
+	var/class = "red_team"
+	var/datum/team/T = SSwarfare.red
+	if(is_blue)
+		class = "Imperium of Man"
+		T = SSwarfare.blue
+
+	if(T.checkCooldown("Help me!"))
+		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
+		return
+
+	for(var/mob/living/carbon/human/H in T.team)
+		if(H == src)
+			continue
+		H.tracking.track(src)
+
+	to_chat(T.team, "<h1><span class='[class]'>Your Commissar requires help!</span></h1>")
+
+	T.startCooldown("Help me!")
+	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
+
+/mob/living/carbon/human/proc/retreat()
+	set name = "Retreat!"
+	set category = "Commissar"
+	if(stat)
+		return
+
+	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
+	var/class = "red_team"
+	var/datum/team/T =  SSwarfare.red
+	if(is_blue)
+		class = "Imperium of Man"
+		T = SSwarfare.blue
+
+	if(T.checkCooldown("Retreat!"))
+		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
+		return
+
+	to_chat(T.team, "<h1><span class='[class]'>Your Captain has ordered a retreat!</span></h1>")
+
+	T.startCooldown("Retreat!")
+	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
+
+/mob/living/carbon/human/proc/announce()
+	set name = "Make Announcement!"
+	set category = "Commissar"
+	if(stat)
+		return
+
+	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
+	var/class = "red_team"
+	var/datum/team/T =  SSwarfare.red
+	if(is_blue)
+		class = "Imperium of Man"
+		T = SSwarfare.blue
+
+	if(T.checkCooldown("Make Announcement!"))
+		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
+		return
+
+	var/announcement = sanitize(input(src, "What would you like to announce?", "Announcement"))
+	if(!announcement)
+		return
+
+	if(findtext(announcement, config.ic_filter_regex))
+		var/warning_message = "<span class='warning'>Bro you just tried to announce cringe! You're going to loose subscribers! Check the server rules!</br>The bolded terms are disallowed: &quot;"
+		var/list/words = splittext(announcement, " ")
+		var/cringe = ""
+		for (var/word in words)
+			if (findtext(word, config.ic_filter_regex))
+				warning_message = "[warning_message]<b>[word]</b> "
+				cringe += "/<b>[word]</b>"
+			else
+				warning_message = "[warning_message][word] "
+
+
+		warning_message = trim(warning_message)
+		to_chat(src, "[warning_message]&quot;</span>")
+		log_and_message_admins("[src] just tried to ANNOUNCE cringe: [cringe]", src)
+		return
+
+	to_chat(T.team, "<h1><span class='[class]'>Announcement from Captain: <br> [announcement]</span></h1>")
+
+	T.startCooldown("Make Announcement!")
+	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
+
+/mob/living/carbon/human/proc/give_order()
+	set name = "Give Order!"
+	set category = "Commissar"
+	if(stat)
+		return
+
+	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
+	var/class = "red_team"
+	var/datum/team/T =  SSwarfare.red
+	if(is_blue)
+		class = "Imperium of Man"
+		T = SSwarfare.blue
+
+	if(T.checkCooldown("Give Order!"))
+		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
+		return
+
+	var/announcement = input(src, "What would you like to command?", "Give Order")
+	if(!announcement)
+		return
+	if(findtext(announcement, config.ic_filter_regex))
+		var/warning_message = "<span class='warning'>Bro you just tried to announce cringe! You're going to loose subscribers! Check the server rules!</br>The bolded terms are disallowed: &quot;"
+		var/list/words = splittext(announcement, " ")
+		var/cringe = ""
+		for (var/word in words)
+			if (findtext(word, config.ic_filter_regex))
+				warning_message = "[warning_message]<b>[word]</b> "
+				cringe += "/<b>[word]</b>"
+			else
+				warning_message = "[warning_message][word] "
+
+
+		warning_message = trim(warning_message)
+		to_chat(src, "[warning_message]&quot;</span>")
+		log_and_message_admins("[src] just tried to ANNOUNCE cringe: [cringe]", src)
+		return
+	to_chat(T.team, "<h1><span class='[class]'>Order from Captain: <br> [announcement]</span></h1>")
+	log_and_message_admins("[src] gave the order: <b>[announcement]</b>.", src)
+
+	T.startCooldown("Give Order!")
+	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
+
+
+/mob/living/carbon/human/proc/check_reinforcements()
+	set name = "Check Reinforcements"
+	set category = "Commissar"
+
+	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
+	var/datum/team/T =  SSwarfare.red
+	if(is_blue)
+		T = SSwarfare.blue
+	if(T.checkCooldown("Check Reinforcements"))
+		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
+		return
+	if(is_blue)
+		to_chat(src, "<span class='bnotice'><font size=4>Reinforcements Left: [SSwarfare.blue.left]</font></span>")
+	else
+		to_chat(src, "<span class='bnotice'><font size=4>Reinforcements Left: [SSwarfare.red.left]</font></span>")
+	T.startCooldown("Check Reinforcements")
+
+
+
+/mob/living/carbon/human/proc/morale_boost()
+	set name = "Morale Boost"
+	set category = "Squad Leader"
+	if(stat)
+		return
+
+	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
+	var/class = "red_team"
+	var/datum/team/T =  SSwarfare.red
+	if(is_blue)
+		class = "Imperium of Man"
+		T = SSwarfare.blue
+
+	switch(alert(src,"This has a long cool down are you sure you wish to use this?", "Cooldown", "Yes", "No"))
+		if("No")
+			to_chat(src, "You decide not to use this power right now.")
+			return
+
+	if(T.checkCooldown("Morale Boost"))
+		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
+		return
+
+	for(var/mob/living/carbon/human/H in T.team)
+		H.add_event("morale boost", /datum/happiness_event/morale_boost)
+
+	T.startCooldown("Morale Boost", 10 MINUTES)
+	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
+	to_chat(T.team, "<h1><span class='[class]'>OOORAH!</span></h1>")

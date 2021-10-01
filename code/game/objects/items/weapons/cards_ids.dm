@@ -323,7 +323,7 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/psychiatrist
 
 /obj/item/card/id/medical/paramedic
-	job_access_type = /datum/job/Paramedic
+	job_access_type = /datum/job/ig/medicae
 
 /obj/item/card/id/medical/head
 	name = "identification card"

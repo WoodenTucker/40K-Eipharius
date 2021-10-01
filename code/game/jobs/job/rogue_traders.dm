@@ -1,3 +1,5 @@
+// Rogue Trader
+
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain
@@ -51,6 +53,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain/get_access()
 	return get_all_station_access()
+
+// Seneschal
 
 /datum/job/hop
 	title = "Seneschal"
