@@ -362,7 +362,7 @@
 	else
 		icon_state = "bpistol-10-e"
 
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem
+/obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"
 	desc = "A heavily modified Bolter Pistol designed solely for the Militant wing of the Adepta Sororitas, It is more reliable and potent than another Bolt pistol pattern. Because it is designed for human usage, It is much smaller than standard Astarte Bolter pistol.</i>"
 	icon_state = "sisterbpistol"
@@ -373,7 +373,7 @@
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem/update_icon()
+/obj/item/gun/projectile/bolter_pistol/sisterofbattle/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "sisterbpistol"

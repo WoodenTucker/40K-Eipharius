@@ -36,7 +36,7 @@
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 
-/mob/living/carbon/human/proc/isSkittari()//Used to tell if someone is a skit boy, can be used for possible jobs later down the line, stole from children
+/mob/living/carbon/human/proc/isSkitarii()//Used to tell if someone is a skit boy, can be used for possible jobs later down the line, stole from children
 	if(species?.name == "Skitarii")
 		return 1
 	else

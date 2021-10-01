@@ -4,7 +4,7 @@
 	allowed_jobs = list(
 	/datum/job/captain,
 	/datum/job/envoy,
-	/datum/job/leadinquisitor,
+	/datum/job/acolyte,
 	/datum/job/inquisitor,
 	/datum/job/ig/commissar,
 	/datum/job/ig/sergeant,

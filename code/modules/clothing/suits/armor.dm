@@ -616,7 +616,7 @@ obj/item/clothing/suit/armor
 
 // Adepta Sororitas
 
-/obj/item/clothing/suit/sisterelohiem
+/obj/item/clothing/suit/sisterofbattle
 	name = "Order of the Sacred Rose Power Armor"
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
 	icon_state = "sister"
