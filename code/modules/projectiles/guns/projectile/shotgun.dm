@@ -18,8 +18,8 @@
 
 
 /obj/item/gun/projectile/shotgun/pump
-	name = "shotgun"
-	desc = "The mass-produced W-T Remmington 29x shotgun is a favourite of police and security forces on many worlds. Useful for sweeping alleys."
+	name = "Accatran pattern Mk XI"
+	desc = "This model has an eight round internal magazine and uses a manual pump action to to fire a single shot then re-cock the weapon. It can fire a variety of ammunition."
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 5
@@ -30,7 +30,6 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	handle_casings = HOLD_CASINGS
-	one_hand_penalty = 25
 	var/recentpump = 0 // to prevent spammage
 	var/pumpsound = 'sound/weapons/guns/interact/newpump.ogg' //Support for other kinds of pump weapons.
 	var/backsound = 'sound/weapons/guns/interact/shotgun_back.ogg'
@@ -38,6 +37,10 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
+	move_delay= 2.5
+	one_hand_penalty = 4
+	accuracy = 2.5
+	fire_delay= 3
 
 /obj/item/gun/projectile/shotgun/pump/New()
 	..()
@@ -130,7 +133,7 @@
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
 	ammo_type = /obj/item/ammo_casing/shotgun
-	one_hand_penalty = 50 //a little heavier than the regular shotgun
+	one_hand_penalty = 5
 	wielded_item_state = "shotgun-wielded"
 
 /obj/item/gun/projectile/shotgun/pump/border
@@ -239,12 +242,11 @@
 
 
 /obj/item/gun/projectile/shotgun/pump/boltaction
-	name = "\improper Mark II Stormrider" //I used a random rifle generator to come up with that.
-	desc = "This piece of junk looks like something that could have been used 700 years ago"
+	name = "\improper Stub Rifle" //I used a random rifle generator to come up with that.
+	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."
 	icon_state = "mosin"
 	item_state = "mosin"
 	caliber = "a762"
-	fire_delay = 10
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
 	casingsound = 'sound/weapons/guns/misc/casingfall1.ogg'
 	pumpsound = 'sound/weapons/boltpump.ogg'
@@ -254,3 +256,7 @@
 	wielded_item_state = "rifle-wielded"
 	block_chance = 45
 	gun_type = GUN_PISTOL
+	move_delay= 2
+	one_hand_penalty = 3
+	accuracy = 2.5
+	fire_delay= 4.5

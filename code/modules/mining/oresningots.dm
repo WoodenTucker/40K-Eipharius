@@ -55,8 +55,8 @@
 	icon_state = "uranium"
 
 /obj/item/newore/phoronore
-	name = "promethium ore"
-	desc = "A chunk of promethium ore, a highly flammable ore used in many spheres of imperial industry."
+	name = "phoron ore"
+	desc = "A chunk of phoron ore, a highly flammable ore that came from another galaxy.(Forges can still smelt it)"
 	icon_state = "phoron"
 
  /* _____                   _

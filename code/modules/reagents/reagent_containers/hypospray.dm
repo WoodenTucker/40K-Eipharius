@@ -199,6 +199,18 @@
 	else
 		icon_state = "syrette_open"
 
+/obj/item/reagent_containers/hypospray/autoinjector/tau
+	name = "Tissue Rebuilder syrette"
+	icon_state = "tau_closed"
+	starts_with = list(/datum/reagent/tr = 10)
+	inject_sound = 'sound/items/syrette_inject.ogg'
+
+/obj/item/reagent_containers/hypospray/autoinjector/tau/update_icon()
+	if(reagents.total_volume > 0)
+		icon_state = "tau_closed"
+	else
+		icon_state = "tau_open"
+
 /obj/item/reagent_containers/glass/ampule
 	name = "ampule"
 	desc = "An ampule. Holds reagents. Usually pain medication. Use a syrette on it to refill the syrette."

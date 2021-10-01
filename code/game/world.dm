@@ -1,4 +1,4 @@
-/var/server_name = "Cadia Station - Warhammer 40k"
+/var/server_name = "Grimdark 13 - Warhammer 40k"
 /var/game_id = null
 /var/list/warfare_taglines = list( "BLOOD FOR THE BLOOD GOD",  "The Emperor Protects","'ERE WE GO BOYZ","Only in death does duty end","Hatred is the Emperor's greatest gift to humanity", "For the Greater Good")// list("It's Getting Cold Out There", "New Guns", "New Classes", "Cold", "Winter", "Frozen Solid", "Frozen Trench Pizza", "Warcrime Simulator", "Your Heart Has Stopped", )
 /var/warfare_tagline = null
@@ -624,7 +624,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	//Pick a random tagline.
 	s += "<b>[warfare_tagline]</b>"
 	s += " ("
-	s += "<a href=\"https://discord.gg/Avp9z7r\">" //This should be a config but it's not.
+	s += "<a href=\"https://discord.gg/eJb7RDV6\">" //This should be a config but it's not.
 	s += "Discord"
 	s += "</a>"
 	s += ")"

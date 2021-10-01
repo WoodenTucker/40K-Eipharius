@@ -12,19 +12,18 @@
 	announced = TRUE
 
 	//Baseline skill defines
-	medical_skill = 6
-	surgery_skill = 4
-	ranged_skill = 10
-	engineering_skill = 5
-	melee_skill = 10
+	melee_skill = 6
+	ranged_skill = 6
+	medical_skill = 3
+	engineering_skill = 1
+	surgery_skill = 1
 	//Gun skills
-	auto_rifle_skill = 10
-	semi_rifle_skill = 8
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
 
 /mob/living/carbon/human/proc/assign_random_squad(var/team, var/rank)
 	switch(team)

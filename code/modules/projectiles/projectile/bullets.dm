@@ -296,10 +296,10 @@
 	embed = 0
 
 
-/obj/item/projectile/bullet/bpistol
+/obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 60
-	armor_penetration = 25
+	damage = 80
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -309,8 +309,8 @@
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 85 //ow
-	armor_penetration = 25
+	damage = 90 //ow
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -364,7 +364,7 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 50
+	damage = 30
 
 /obj/item/projectile/bullet/ork/shoota
 	name = "piece of trash"

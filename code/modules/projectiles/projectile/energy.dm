@@ -143,6 +143,14 @@
 	icon_state = "pulse1"
 	damage = 45
 
+/obj/item/projectile/energy/pulse/pulserail
+	name = "pulse round"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1"
+	damage = 140
+	agony = 60
+
 /obj/item/projectile/energy/pulse/ion
 	name = "ION round"
 	fire_sound='sound/weapons/lasgun.ogg'

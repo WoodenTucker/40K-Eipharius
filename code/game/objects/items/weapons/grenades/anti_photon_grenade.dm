@@ -1,10 +1,10 @@
 /obj/item/grenade/anti_photon
-	desc = "An experimental device for temporarily removing light in a limited area."
+	desc = "A TaU device that removes light for some seconds."
 	name = "photon disruption grenade"
 	icon = 'icons/obj/grenade.dmi'
-	icon_state = "emp"
+	icon_state = "tau"
 	item_state = "emp"
-	det_time = 20
+	det_time = 40
 	origin_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 4)
 
 /obj/item/grenade/anti_photon/detonate()

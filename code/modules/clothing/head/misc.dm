@@ -335,6 +335,7 @@
 /obj/item/clothing/head/hospitallerhelm
 	name = "sister hospitaller's medical rig"
 	desc = "The holy garments marking the wearer as a sister hospitaller"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 30, bio = 40, rad = 10)
 	icon_state = "medical_rig"
 	item_state = "medical_rig"
 	flags_inv = BLOCKHAIR

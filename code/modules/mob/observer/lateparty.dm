@@ -59,12 +59,12 @@
 
 	switch(partyteam)
 
-		if("Kroot")
-			message_admins("[usr.key] has joined the late party: Kroot.", 0) //msgs jannies
-			to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Kroot tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
-			usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
-			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
-			new_character.key = usr.key //puts ghost in body with new key
+		//if("Kroot")
+			//message_admins("[usr.key] has joined the late party: Kroot.", 0) //msgs jannies
+			//to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Kroot tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
+			//usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
+			//var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
+			//new_character.key = usr.key //puts ghost in body with new key
 		if("Orkz")
 			message_admins("[usr.key] has joined the late party: Orkz.", 0) //msgs jannies
 			to_chat(usr, "<span class='warning'><b><font size=3>It's been a long flight, go to your Ork tab and be sure to stretch!</b></font size=3>") //tells mob to do thing
@@ -90,7 +90,7 @@
 	return
 
 /proc/Get_Party() //dis is the proc that actually selects the party
-	GLOB.latepartyoptions += pick("Kroot", "Orkz", "Tau",)
+	GLOB.latepartyoptions += pick("Orkz", "Tau",)
 
 	//note for myself, make procs to spawn as group if you ever wanna switch to that.
 	//Something like the new_character key that uses an if isreadied to pull them all at once. You could make like beKroot() that contains everything under if("kroot")

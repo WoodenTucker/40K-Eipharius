@@ -12,8 +12,6 @@
 	name = "military .45 pistol"
 	desc = "The WT45 - a mass produced kinetic sidearm well-known in films and entertainment programming for being the daily carry choice issued to officers of the Sol Central Government Defense Forces. Uses .45 rounds."
 	icon_state = "usp"
-	accuracy = 0.35
-	fire_delay = 6.5
 
 /obj/item/gun/projectile/colt/officer/update_icon()
 	..()
@@ -29,8 +27,6 @@
 	magazine_type = /obj/item/ammo_magazine/c45m
 	allowed_magazines = /obj/item/ammo_magazine/c45m
 	caliber = ".45"
-	accuracy = -0.35
-	fire_delay = 5.5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 
@@ -68,7 +64,6 @@
 	magazine_type = /obj/item/ammo_magazine/c45m
 	allowed_magazines = /obj/item/ammo_magazine/c45m
 	caliber = ".45"
-	condition = 70
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
@@ -311,8 +306,7 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = FALSE
-	accuracy = -2
-	condition = 60
+	accuracy = 0
 	force = 20
 	load_method = MAGAZINE
 
@@ -326,8 +320,9 @@
 	item_state = "bpistol"
 	force = 50.0
 	caliber = ".75"
-	accuracy = 0.15
-	fire_delay = 4 // its a hecking bolter pistol
+	accuracy = 1
+	fire_delay = 3
+	move_delay = 2
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -348,8 +343,9 @@
 	str_requirement = 18
 	force = 50.0
 	caliber = ".75"
-	accuracy = 0.75
-	fire_delay = 3.5 //better than standard
+	accuracy = 2
+	fire_delay = 3
+	move_delay = 3.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -370,6 +366,7 @@
 	force = 25
 	sharp = 1
 	edge = 1
+	move_delay = 1.5
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 
