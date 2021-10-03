@@ -1,4 +1,5 @@
 /mob/living/silicon/say(var/message, var/sanitize = 1)
+	winset(src, null, "mainwindow.macro=borghotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true input.background-color=#F0F0F0")
 	return ..(sanitize ? sanitize(message) : message)
 
 /mob/living/silicon/handle_message_mode(message_mode, message, verb, speaking, used_radios, alt_name)
