@@ -1,8 +1,8 @@
 /datum/job/magos
-	title = "Magos"
-	department = "Engineering"
+	title = "Magos Dominus"
+	department = "Adeptus Mechanicus"
 	head_position = 1
-	department_flag = ENG|COM
+	department_flag = ENG|COM|SCI
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 1
 	spawn_positions = 1
@@ -55,7 +55,7 @@
 
 
 /datum/job/engineer
-	title = "Tech Priest"
+	title = "Tech Priest Enginseer"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
@@ -70,8 +70,6 @@
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
-	//alt_titles = list("Maintenance Technician","Engine Technician","Electrician",
-	//	"Atmospheric Technician" = /decl/hierarchy/outfit/job/engineering/atmos)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	auto_rifle_skill = 3
 	semi_rifle_skill = 3
@@ -99,8 +97,82 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		to_chat(H, "<span class='notice'><b><font size=3>Praise the Omnissiah! You live to further mankinds knowledge and understanding of technology. Obey your Magos and ensure all machine spirits are pleased.</font></b></span>")
 
+// Biologis
+
+// Magos
+
+/datum/job/geneticist
+	title = "Magos Biologis"
+	department = "Medical"
+	department_flag = MED|SCI|ENG
+	total_positions = 1
+	spawn_positions = 1
+	minimal_player_age = 7
+	open_when_dead = 1
+	supervisors = "the Sister Hospitaller and Magos"
+	selection_color = "#967096"
+	economic_modifier = 7
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine, access_engine_equip,)
+	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine_equip, access_engine)
+	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 3
+	ranged_skill = 3
+	medical_skill = 6
+	engineering_skill = 8
+	surgery_skill = 8
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Biologis [current_name]")
+		H.add_stats(rand(10,14), rand(10,14), rand(10,13), rand(15,20))
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
+
+// Magos Biologis Xenobiologist
+
+/datum/job/xenobiologist
+	title = "Magos Xenologist"
+	department = "Science"
+	department_flag = SCI
+
+	total_positions = 3
+	spawn_positions = 2
+	supervisors = "the Magos Dominus"
+	selection_color = "#633d63"
+	economic_modifier = 7
+	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_hydroponics)
+	minimal_access = list(access_research, access_xenobiology, access_hydroponics)
+//	alt_titles = list("Xenobotanist")
+	minimal_player_age = 7
+	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
 
 
+
+
+//Skitarii
+/decl/hierarchy/outfit/job/skitarii
+	uniform = /obj/item/clothing/under/rank/skitarii
+	suit = /obj/item/clothing/suit/storage/hooded/skitarii
+	shoes = /obj/item/clothing/shoes/skitshoes
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/red_team
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 
 /*

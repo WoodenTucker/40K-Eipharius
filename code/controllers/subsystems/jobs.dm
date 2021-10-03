@@ -278,14 +278,14 @@ SUBSYSTEM_DEF(jobs)
 
 	//People who wants to be assistants, sure, go on.
 	Debug("DO, Running Assistant Check 1")
-	var/datum/job/assist = new DEFAULT_JOB_TYPE ()
+/*z	var/datum/job/assist = new DEFAULT_JOB_TYPE ()
 	var/list/assistant_candidates = FindOccupationCandidates(assist, 3)
 	Debug("AC1, Candidates: [assistant_candidates.len]")
 	for(var/mob/new_player/player in assistant_candidates)
 		Debug("AC1 pass, Player: [player]")
 		AssignRole(player, "Assistant")
 		assistant_candidates -= player
-	Debug("DO, AC1 end")
+	Debug("DO, AC1 end")*/
 
 	//Select one head
 	Debug("DO, Running Head Check")

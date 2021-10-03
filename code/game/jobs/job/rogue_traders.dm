@@ -1,8 +1,10 @@
+// Rogue Trader
+
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain
 	title = "Rogue Trader"
-	department = "Command"
+	department = "Rogue Trader"
 	head_position = 1
 	department_flag = COM|CIV
 	social_class = SOCIAL_CLASS_MAX
@@ -37,7 +39,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Rogue Trader [current_name]")
-		H.add_stats(rand(12,18), rand(12,18), rand(12,18), rand(12,18)) 
+		H.add_stats(rand(12,18), rand(12,18), rand(12,18), rand(12,18))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire,)
@@ -51,6 +53,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain/get_access()
 	return get_all_station_access()
+
+// Seneschal
 
 /datum/job/hop
 	title = "Seneschal"
@@ -149,3 +153,41 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			src.say("Welcome to my service.")
 		else
 			return
+
+// Undertaker
+
+/datum/job/undertaker
+	title = "Undertaker"
+	department = "Service"
+	department_flag = CIV
+	social_class = SOCIAL_CLASS_MIN
+	total_positions = 3
+	spawn_positions = 3
+	latejoin_at_spawnpoints = TRUE
+	species_role = "Child"
+	open_when_dead = 1
+	supervisors = "the Abbot and every adult you see."
+	selection_color = "#848484"
+	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
+	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
+	announced = FALSE
+	auto_rifle_skill = 2
+	semi_rifle_skill = 2
+	sniper_skill = 2
+	shotgun_skill = 2
+	lmg_skill = 2
+	smg_skill = 2
+	melee_skill = 4
+	ranged_skill = 2
+	medical_skill = 2
+	engineering_skill = 0
+	surgery_skill = 4
+
+	equip(var/mob/living/carbon/human/H)
+		H.add_stats(rand(10,10), rand(8,11), rand(16,17), rand(8,10))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.set_trait(new/datum/trait/death_tolerant())
+		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Rogue Trader you owe him your life. However, you must earn your keep. The Rogue Trader has placed you in the charge of the Abbot who has you burying the dead. This is a vital task, it is said bodies that are left unburied are unable to move on to the Emperor's Grace! Make sure you bury any body you see! </font></b></span>")

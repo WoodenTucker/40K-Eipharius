@@ -449,7 +449,7 @@
 
 // Adepta Sororitas
 
-/obj/item/clothing/head/helmet/sisterelohiem
+/obj/item/clothing/head/helmet/sisterofbattle
 	name = "Order of the Sacred Rose Power Helmet"
 	desc = "An helmet issued to the Battle Sister of the Adepta Sororitas Militant Wing, This one bears the Sigil of the Order of The Sacred Rose, If you looks closely, you can see it's omits holy power, making you feels safer and secure.</i>"
 	icon_state = "sister"

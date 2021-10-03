@@ -1,7 +1,10 @@
-//Due to how large this one is it gets its own file. Sister of Battle Guard and all her stuff including items, excluding weapons those are in mattguns.dm, is also located here.
+//Due to how large this one is it gets its own file. Sister of Battle and all her stuff including items, excluding weapons those are in mattguns.dm, is also located here.
+
+//Confessor
+
 /datum/job/chaplain
 	title = "Ministorum Confessor"
-	department = "Civilian"
+	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
 	spawn_positions = 1
@@ -187,23 +190,25 @@
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
 
-/* start of the sister section */
 
-//job
 
-/datum/job/sisterelohiem
-	title = "Sister Elohiem"
-	department = "Civilian"
+// Adepta Sororitas
+
+// Battle Sister
+
+/datum/job/sisterofbattle
+	title = "Battle Sister"
+	department = "Ministorum"
 	department_flag = CIV
 	total_positions = 0
 	spawn_positions = 0
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Adepta Sororitas"
+	supervisors = "the Adepta Sororitas and the Ministorum Confessor"
 	selection_color = "#FCFBFA"
 	announced = FALSE
-	outfit_type = /decl/hierarchy/outfit/job/sisterelohiem
+	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
 	auto_rifle_skill = 9
 	semi_rifle_skill = 9
 	sniper_skill = 9
@@ -235,20 +240,20 @@
 
 //outfit
 
-/decl/hierarchy/outfit/job/sisterelohiem
-	name = OUTFIT_JOB_NAME("Sister Elohiem")
-	head = /obj/item/clothing/head/helmet/sisterelohiem
+/decl/hierarchy/outfit/job/sisterofbattle
+	name = OUTFIT_JOB_NAME("Sister of Battle")
+	head = /obj/item/clothing/head/helmet/sisterofbattle
 	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterelohiem
-	uniform = /obj/item/clothing/under/guard/uniform/sisterelohiem
-	back = /obj/item/storage/backpack/satchel/warfare/sisterelohiem
-	gloves = /obj/item/clothing/gloves/sisterelohiem
-	shoes = /obj/item/clothing/shoes/sisterelohiem
+	suit = /obj/item/clothing/suit/sisterofbattle
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
+	gloves = /obj/item/clothing/gloves/sisterofbattle
+	shoes = /obj/item/clothing/shoes/sisterofbattle
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterelohiem
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
@@ -257,3 +262,154 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/ten = 2,
 	)
+
+// Orders Hospitaller
+
+// Almoness Advance
+
+/datum/job/cmo
+	title = "Almoness Advance"
+	head_position = 1
+	department = list("Ministorum", "Medical")
+	department_flag = COM|MED
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Orders Hospitaller"
+	selection_color = "#633d63"
+	req_admin_notify = 1
+	economic_modifier = 10
+	open_when_dead = FALSE
+	social_class = SOCIAL_CLASS_HIGH
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
+			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
+			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
+
+	minimal_player_age = 14
+	ideal_character_age = 50
+	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 6
+	ranged_skill = 5
+	medical_skill = 10
+	engineering_skill = 1
+	surgery_skill = 10
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister Hospitaller [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
+		H.get_idcard()?.access = get_all_accesses()
+		H.get_equipped_item(slot_s_store)
+		H.warfare_faction = IMPERIUM
+		H.gender = FEMALE
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.f_style = "shaved"
+		H.h_style = "Bob"
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge within the Ordos Hospitaller, organize your sisters and ensure they are doing their duty to both the Lord Trader and the Codex Sororitas. Sanctify and heal this unholy land of it's festering heretical past... in the name of your Emperor.</font></b></span>")
+
+// Hospitaller Advance
+
+/datum/job/doctor
+	title = "Curia Advance"
+	department = list("Ministorum", "Medical")
+	department_flag = MED
+	minimal_player_age = 3
+	total_positions = 5
+	spawn_positions = 3
+	supervisors = "the Almoness Advance and the Orders Hospitaller"
+	selection_color = "#967096"
+	economic_modifier = 7
+	social_class = SOCIAL_CLASS_HIGH
+	open_when_dead = TRUE
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, access_sob)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels, access_sob)
+	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 5
+	ranged_skill = 4
+	medical_skill = 8
+	engineering_skill = 0
+	surgery_skill = 8
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Sister [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(12,15))
+		H.get_idcard()?.access = get_all_accesses()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.get_equipped_item(slot_s_store)
+		H.gender = FEMALE
+		H.warfare_faction = IMPERIUM
+		H.f_style = "shaved"
+		H.h_style = "Bob"
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are a junior sister of the Ordos Hospitaller, serving under the Sister Hospitaller to maintain the health and divinity of the garrison.</font></b></span>")
+
+//Hospitaller
+
+/datum/job/chemist
+	title = "Hospitaller Advance"
+	department = "Medical"
+	department_flag = MED
+	social_class = SOCIAL_CLASS_MED
+	minimal_player_age = 7
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Sister Hospitaller"
+	selection_color = "#967096"
+	economic_modifier = 5
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
+	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
+	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 4
+	ranged_skill = 4
+	medical_skill = 8
+	engineering_skill = 1
+	surgery_skill = 7
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(9,13), rand(9,13), rand(9,13), rand(10,13))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
