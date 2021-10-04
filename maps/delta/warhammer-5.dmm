@@ -575,7 +575,6 @@
 "mY" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/machinery/door/airlock/medical{name = "Laboratorum"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "nh" = (/obj/structure/closet/crate/meat,/turf/simulated/floor/tiled/freezer,/area/inqmoon)
 "ni" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/window/brigdoor/westleft,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"nl" = (/obj/effect/floor_decal/turf/plating,/turf/space,/area/inqmoon)
 "ns" = (/obj/effect/floor_decal/turf/brick,/obj/item/material/knife/folding/combat/switchblade,/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "nt" = (/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/carpet,/area/centcom)
 "nH" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/structure/reagent_dispensers/watertank,/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -780,7 +779,6 @@
 "JZ" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/simulated/floor/tiled/freezer,/area/centcom)
 "Ko" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "Ks" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/l1,/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/obj/structure/cult/forge,/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"Kx" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/turf/space,/area/inqmoon)
 "Kz" = (/mob/living/simple_animal/cow,/turf/simulated/floor/tiled/freezer,/area/centcom)
 "KB" = (/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "KZ" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/rack/dark,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/turf/simulated/floor/tiled/dark,/area/inqmoon)
@@ -999,7 +997,7 @@ axaxaxbDbDbDbEbEbEegeHeHeHeHfMeQeQeQfNeQeQeQfjfPfQfQfSfpeQeQeQfNfHfHfHfHfHfHfHfH
 axaxbDbDbEbEbEbEbEdTfUfVfUfWfXfYgagcdTgdeQeQeQgegfgfgggheQeQgddTgkfHglgmgogpfHgkdTjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbbFbFbFbFbFdxcUdodydzGocrcrcrdAbGdBdBdBbFbPbPbPbFjbbEbEbEbEbEbEbEbEbDbD
 axbDbDbEbEbEbEbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLgqdLdLgrcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFbFbFbFbFJObFbFbFgYbFbFbFgYbFbFJObFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFdCdCbFbFbFbFbFbFbFgzgQgWbFjbbEbEbEbEbEbEbEbEbDax
 axbDcGdLdLdLdLcLcGcLdLcLdLcLdLcLdLcLdTePWoeQeQeQgtgtgweQeQeQePfNgxgxgygxgxgxgxgxombFgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAepbFgBgPbFbFbEbEbEbEbFdEdEdEdEdEdEdFdGdEdEdEdEdEbFbFbFbFbFbFjbbEbEbEbEbEbEbEbEbDax
-axbDdTgDgDgEgFgtgtgGgHgtgHgtgHgtgHgtgIeQeQeQgJeQgtgtgKgMgMgMgNgOgxgxgxgxgxgxgxgxlUbFuAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAnldNdNdNbFbFbEbEbEbEbFdEdEdEdIdEdEdFdGdEdIdEdEbFbFjbjbjbjbjbjbbEbEbEbEbEbEbEbDbDax
+axbDdTgDgDgEgFgtgtgGgHgtgHgtgHgtgHgtgIeQeQeQgJeQgtgtgKgMgMgMgNgOgxgxgxgxgxgxgxgxlUbFuAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAdNdNdNbFbFbEbEbEbEbFdEdEdEdIdEdEdFdGdEdIdEdEbFbFjbjbjbjbjbjbbEbEbEbEbEbEbEbDbDax
 axbDfNgSgtgtgtgtgtcLcLcLcLcLcLcLcLcLdTgdeQeQeQeQgUgUeQDUeQeQgdfigxgxgVgxgxgxgxgxFnbFgAgAgAgAgAhCgAgAgAgAgAgAhCgAgAgAgAgRbFdNdNbFbFbFbFbFbFbFdEdEdEdEdEdEdFdGdEdEdEbFbFjbjbjbjbbEbEbEbEbEbEbEbEbEbEbDaxax
 axbDdTgSgtgtgtgtgtcGcLcLcLcLcLcLcLcLcGcLcLcLcLgqdLdLgqcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFbFbFbFgsgsbFbFhDbFbFgsgsbFbFbFiJiJbFbFheLsbFbFgYbFbFbFbFdEdEdEdEdEdEdFdGdEbFbFbFJObFbFbFbFbEbEbEbEbEbEbEbEbEbDbDaxax
 axbDdThfRihhhihjgTdThlhmhohphphqhshtdTePeQeQeQeReReReReQeQeQePdThuhvhvhwhxhAekhBdTjbjbjbbFhFhFbFhGixiIbFhFhFbFbFbFbFbFbFbFdNdNhedNdNhedNdNbFdEdEdEdEdEbFdJdJbFquSOSOLlbPPZbFbFbEbEbEbEbEbEbEbEbEbDaxaxax
@@ -1014,7 +1012,7 @@ axaxaxaxaxaxaxaxaxbDbDbEbEbDbDbDbDbEdTiRiSeQifiTiUiUiTifeQiViRdTbEbEbEbEbDbDbDbD
 axaxaxaxaxaxaxaxaxaxbDbDbEbEbDbDbDbEdTiYeQeQeQeQipipeQeQeQeQiRdTbEbEbEbDbDaxaxaxaxaxaxjbbFhLhdiWiOiOiOiXhdhLbFjbbEbEbEbEbEbEbWbWaxjbjbjbjbjbjbjbbFVWVWVWbFLaVWVWVWVWVWVWVWVWxppSVWVWbFjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbDbEcGcLjajajajajajajajajajacLcGbEbEbDbDaxaxaxaxaxaxaxjbbFhLiHiHiHmDiHiHiHhLbFjbbEbEbEbEbEbWbWbWbWbWbWbWbWbWbWjbbFQBVWqlbFmQVWBhUsVWozBhVWVWxppSVWVWbFjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxbDbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxjbbFhLiHrDiOiOiOrDiHhLbFjbbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWjbbFbFmYbFbFVNVWVWVWVWVWVWVWVWqjFFVWPwbFjbaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxjbbFhLiHiHjrqwjsiHiHhLbFjbbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWjbbFFGVWVWVxVWVWVWKxVWvmuIVWVWxppSVWVWbFjbaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxjbbFhLiHiHjrqwjsiHiHhLbFjbbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWjbbFFGVWVWVxVWVWVWVWVWvmuIVWVWxppSVWVWbFjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbWbWbDbEbDbDbWbWbWbWbDbDbEbDbDaxaxaxaxaxaxaxaxaxaxjbbFhLhLiHiHjhiHiHhLhLbFjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjbbFFGVWVWVWVWVWMDVWVWWmKsVWVWxppSVWxlbFjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxjbbFhLhLhLiHjuiHhLhLhLbFjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjbbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFhLhLhLhLhLhLhLhLhLbFjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbaxaxaxaxaxaxaxax
