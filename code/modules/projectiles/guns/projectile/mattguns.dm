@@ -1,20 +1,30 @@
 //Shitty variant of the normal bolt action rifle.
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
-	name = "\improper Stub Rifle"
-	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."//"The much, much older brother of the sleeker, better, Mark II. Kind of a piece of shit."
+	name = "\improper Boscolet Frontiersman"
+	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
 	fire_sound = "brifle"
 	caliber = "763"
 	ammo_type = /obj/item/ammo_casing/brifle
-	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
+	one_hand_penalty = 10
 	empty_icon = "boltaction-e"
 	far_fire_sound = "sniper_fire"
 	move_delay= 2
 	one_hand_penalty = 3
 	accuracy = 2.5
 	fire_delay= 4.5
+
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
+	name = "\improper Triangong 4-46"
+	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one is made of quality materials and has been laboured over extensively by expert hands."
+	move_delay= 1.8
+	one_hand_penalty = 3
+	accuracy = 3
+	fire_delay= 3.8
+	armor_penetration = 10
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
 	name = "\improper Stub Rifle"
@@ -103,7 +113,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/shitty
 	name = "\improper WTX Frontier Special"
-	desc = "A common shotgun used for crowd control. It's not the best made and is prone to jamming."
+	desc = "A common shotgun used for hunting and law enforcement. It's cheap and reliable nature is the very model of imperial culture."
 	icon_state = "winchester"
 	item_state = "winchester"
 	wielded_item_state = "winchester-wielded"
@@ -112,12 +122,22 @@
 	empty_icon = "winchester-e"
 	move_delay= 2
 	one_hand_penalty = 4
-	accuracy = 2
+	accuracy = 1
 	fire_delay= 3
+	armor_penetration = 1
 
 	ammo_type = list(
 		/obj/item/ammo_casing/shotgun/pellet,
 		/obj/item/ammo_casing/shotgun/beanbag)
+
+/obj/item/gun/projectile/shotgun/pump/shitty/magrave
+	name = "\improper WTX Belle Magrave"
+	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
+	move_delay= 1.7
+	one_hand_penalty = 3.5
+	accuracy = 1.5
+	fire_delay= 2.5
+	armor_penetration = 2
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"
@@ -130,6 +150,8 @@
 	max_shells = 4
 	empty_icon = "sawnchester-e"
 	one_hand_penalty = 2
+	fire_delay= 2
+	armor_penetration = 0
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
 	name = "\improper WTX Reckoning"
@@ -139,6 +161,7 @@
 	wielded_item_state = "smallshotty-wielded"
 	empty_icon = "smallshotty-e"
 	one_hand_penalty = 2.5 
+	armor_penetration = 2
 
 /obj/item/gun/projectile/shotgun/pump/shitty/bayonet
 	force = 20
@@ -167,7 +190,7 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 	move_delay= 2
 	one_hand_penalty = 3
-	accuracy = 2.5
+	accuracy = 2
 	fire_delay= 2.5
 
 	magazine_type = /obj/item/ammo_magazine/c45rifle/akarabiner
@@ -221,7 +244,7 @@
 	wielded_unloaded_icon = "bar-wielded-e"
 	move_delay= 2
 	one_hand_penalty = 3
-	accuracy = 2.5
+	accuracy = 2
 	fire_delay= 2.5
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14
@@ -262,7 +285,7 @@
 	cock_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
 	move_delay= 2
 	one_hand_penalty = 3
-	accuracy = 2.5
+	accuracy = 2.4
 	fire_delay = 2.5
 
 	magazine_type = /obj/item/ammo_magazine/a762/m14/battlerifle_mag
@@ -415,8 +438,8 @@
 	move_delay=5
 
 /obj/item/gun/projectile/automatic/machinepistol
-	name = "Mk.2 Soulburn SMG"
-	desc = "A prototype SMG. Prone to malfunction but it shoots perty fast."
+	name = "Mk.22 Autogun"
+	desc = "A mass-produced autogun local to the frontier, often used by pirates and revolutionaries."
 	icon_state = "machinepistol"
 	item_state = "machinepistol"
 	wielded_item_state = "machinepistol-wielded"
@@ -440,6 +463,16 @@
 	wielded_unloaded_icon = "machinepistol-e"
 
 	gun_type = GUN_SMG
+
+/obj/item/gun/projectile/automatic/machinepistol/a80
+	name = "Nachtwey A80 Autogun"
+	desc = "A specialty autogun made by local gunsmiths - a modified bootleg version of the Mk.22 Autogun."
+	move_delay= 1.4
+	one_hand_penalty = 3
+	accuracy = 2
+	fire_delay= 1.4
+	armor_penetration = 8
+
 
 /obj/item/gun/projectile/automatic/autogrim
 	name = "Autogun pattern GRIM"
@@ -466,8 +499,8 @@
 	gun_type = GUN_SMG
 
 /obj/item/gun/projectile/automatic/machinepistol/wooden
-	name = "Mk.1 Soulburn SMG"
-	desc = "A prototype, protoype SMG. Prone to malfunction but it shoots perty fast."
+	name = "Mk.23 Soulburn SMG"
+	desc = "A mass-produced autogun local to the frontier, often used by pirates and revolutionaries."
 	icon_state = "schmeiser"
 	item_state = "schmeiser"
 	wielded_item_state = "schmeiser-wielded"
@@ -481,19 +514,19 @@
 
 /obj/item/gun/projectile/automatic/flamer
 	name = "Mk.1 Scorcher"
-	desc = "Used to shoot flames at people when bullets just won't do."
+	desc = "An incredibly dangerous hand-held flamethrower used often in infiltration or siege operations."
 	icon_state = "flamer"
 	item_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
 	one_hand_penalty = 0
-	str_requirement = 12
+	str_requirement = 10
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
 	firemodes = list()
 	automatic = 0.1
 	fire_delay=0
-	burst=1
+	burst=0
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
 	can_jam = FALSE
@@ -509,7 +542,7 @@
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 /obj/item/gun/projectile/automatic/autoshotty
-	name = "MS Warcrime"
+	name = "Wargrave Shotgun"
 	desc = "Someone came up with the idea of making a shotgun shoot quickly, and it's dreadful."
 	icon_state = "autoshotty"
 	item_state = "autoshotty"
@@ -530,8 +563,10 @@
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
 	burst=1
-	fire_delay=3
+	fire_delay=2.5
 	one_hand_penalty=5
+	move_delay= 2
+	accuracy = 0
 	dispersion=list(0.0, 0.8, 1.5)
 	automatic = 2
 	firemodes = list()
@@ -539,7 +574,7 @@
 	gun_type = GUN_SHOTGUN
 
 /obj/item/ammo_magazine/autoshotty
-	name = "Warcrime mag"
+	name = "Wargrave Shotgun"
 	desc = "Just looking at it makes you bloodthirsty."
 	icon_state = "autoshotty"
 	caliber = "shotgun"
@@ -549,11 +584,11 @@
 	multiple_sprites = 1
 
 /obj/item/gun/projectile/warfare
-	name = "Mk.1 Reckoning"
+	name = "Villiers Pistol"
 	icon_state = "handgun"
 	item_state = "handgun"
 	fire_sound = "gunshot"//Pistol sounds.
-	desc = "A 45 caliber pistol that will put holes in your enemy if you're lucky. Better than nothing, but not by much."
+	desc = "A mass-produced slug pistol common in the frontier."
 	magazine_type = /obj/item/ammo_magazine/c45m/warfare
 	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
 	caliber = ".45"
@@ -573,6 +608,14 @@
 	else
 		icon_state = "handgun-e"
 
+/obj/item/gun/projectile/warfare/kieji
+	name = "Kieji Pistol"
+	desc = "A rare slug pistol of excellent quality and design."
+	move_delay= 1.3
+	one_hand_penalty = 2
+	accuracy = 1.8
+	fire_delay= 2
+	armor_penetration = 10
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "Reckoning magazine (.45)"
@@ -593,7 +636,7 @@
 	item_state = "hmg"
 	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
-	force = 10
+	force = 17
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 50
 	caliber = "a556"
@@ -602,7 +645,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/box/a556/mg08
 	allowed_magazines = /obj/item/ammo_magazine/box/a556/mg08
-	one_hand_penalty = 50
+	one_hand_penalty = 9
 	wielded_item_state = "hmg-wielded"
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -620,8 +663,17 @@
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 7
-	accuracy = 2
+	accuracy = 1
 	fire_delay = 2
+
+/obj/item/gun/projectile/automatic/stubber/villiers
+	name = "Villiers Heavy Stubber"
+	desc = "A rugged belt-fed villiers stub gun that is long out of service. This one seems to have been diligently maintained over the years."
+	move_delay= 4.5
+	one_hand_penalty = 7
+	accuracy = 2
+	fire_delay = 3
+	armor_penetration = 5
 
 // Boltgun
 
@@ -640,7 +692,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 15
+	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -654,7 +706,8 @@
 	automatic = 3.5 // takes a bit longer than a normal automatic weapon to shoot but shoots well
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = 2
+	accuracy = 0
+
 /obj/item/gun/projectile/ravenbolter/update_icon()
 	..()
 	if(ammo_magazine)
@@ -678,7 +731,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 15
+	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -692,7 +745,7 @@
 	automatic = 3.5
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = 2
+	accuracy = 0
 
 /obj/item/gun/projectile/smurfbolter/update_icon()
 	..()
@@ -716,7 +769,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 15
+	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -730,7 +783,7 @@
 	automatic = 4
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = 2
+	accuracy = 0
 
 /obj/item/gun/projectile/sallybolter/update_icon()
 	..()
@@ -754,7 +807,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 15
+	one_hand_penalty = 6
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -768,7 +821,7 @@
 	automatic = 4.5
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = 2
+	accuracy = 1
 
 /obj/item/gun/projectile/sallybolter/update_icon()
 	..()
@@ -795,7 +848,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 15
+	one_hand_penalty = 5
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -806,9 +859,9 @@
 	burst= 1
 	move_delay= 4.5
 	automatic = 4.5
+	accuracy = 1.5
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = 2
 
 /obj/item/gun/projectile/sisterbolter/update_icon()
 	..()
@@ -828,10 +881,13 @@
 	fire_sound = "brifle"
 	caliber = "640" //its basically a musket ball
 	ammo_type = /obj/item/ammo_casing/krootbullet
-	one_hand_penalty = 20 //FIRE THIS THING WITH BOTH FUCKING HANDS.
+	one_hand_penalty = 7
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
-	fire_delay = 10 // 1 second to shoot
+	fire_delay = 8
+	move_delay= 3
+	one_hand_penalty = 6
+	accuracy = 1.5
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
 	name = "\improper Kroot Bolt Rifle"
