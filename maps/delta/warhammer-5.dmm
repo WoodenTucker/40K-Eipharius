@@ -414,7 +414,7 @@
 "ie" = (/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 6},/turf/simulated/floor/carpet/red,/area/centcom)
 "if" = (/obj/structure/table/steel_reinforced,/obj/item/modular_computer/console/preset/security,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "ig" = (/obj/structure/table/steel_reinforced,/obj/item/deck/cards,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/gma/inquisitoracolyte)
-"ih" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
+"ih" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "ii" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ij" = (/obj/structure/bed/chair/wood/wings{dir = 4; icon_state = "wooden_chair_wings_preview"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ik" = (/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -575,6 +575,7 @@
 "mY" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/machinery/door/airlock/medical{name = "Laboratorum"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "nh" = (/obj/structure/closet/crate/meat,/turf/simulated/floor/tiled/freezer,/area/inqmoon)
 "ni" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/window/brigdoor/westleft,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
+"nl" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "ns" = (/obj/effect/floor_decal/turf/brick,/obj/item/material/knife/folding/combat/switchblade,/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "nt" = (/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/carpet,/area/centcom)
 "nH" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/structure/reagent_dispensers/watertank,/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -660,7 +661,6 @@
 "wB" = (/obj/machinery/chemical_dispenser/full,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "wD" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "wL" = (/obj/machinery/photocopier,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
-"xb" = (/obj/effect/floor_decal/turf/brick/two,/turf/simulated/wall/techno,/area/inqmoon)
 "xl" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/effect/decal/cleanable/blood/gibs/xeno,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "xp" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "xu" = (/obj/structure/table/steel,/obj/item/defibrillator/loaded,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
@@ -796,7 +796,6 @@
 "LT" = (/obj/structure/closet/cabinet,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/suit/armor/agent,/obj/item/clothing/head/helmet,/obj/item/clothing/mask/chameleon,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "LW" = (/obj/structure/table/woodentable,/obj/machinery/chemical_dispenser/bar_soft/full,/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Ma" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/steel,/obj/item/flame/candle/dinner{desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented."; name = "wax candle"},/obj/item/flame/candle/dinner{desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented."; name = "wax candle"},/obj/item/flame/candle/dinner{desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented."; name = "wax candle"},/obj/item/flame/candle/dinner{desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented."; name = "wax candle"},/obj/item/flame/candle/dinner{desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented."; name = "wax candle"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
-"Ml" = (/obj/machinery/door/window,/turf/simulated/wall/techno,/area/inqmoon)
 "Mz" = (/obj/structure/table/woodentable,/obj/machinery/chemical_dispenser/bar_coffee/full,/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "MB" = (/obj/effect/floor_decal/turf/brick,/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/torchwall/service{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "MD" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/cult/pylon,/obj/effect/cultwall,/turf/space,/area/inqmoon)
@@ -982,10 +981,10 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFbFJObFbFbFbFbFbKbFbFbFbFbZJObFbFbFbFJObFbFbFbFbFbFbFjbaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFcbEDXUYIbFjdjejgxQCibFAHcpcpMabFRFYWcpYWtvcpcpLtLtbFjbaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFcpcpcpcpcqcpcpcpcpNFbFcpcpcpcpbFcpcpcpcpcpcpcpcpDAbFjbaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFtscpDRXdbFcpEUEUEUcpNzcpcpcpcpNzOHcpcpcpcpcpcpxbDqbFjbaxaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFtscpDRXdbFcpEUEUEUcpNzcpcpcpcpNzOHcpcpcpcpcpcpcpDqbFjbaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFbFJWbFbFbFcpEUEUEUcpbFymlRmVtMbFRFYWcpYWRFbFJOvSbFbFjbaxaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEcGcLcLdLcLcLcLcLcLdLcLcLcLcGbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFLKLKLKnhbFcpcpcpcpNFbFjlbFbFjlbFcpcpcpcpcpbFcpcpQPbFjbbDbDaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxbDbDbDbDbDbDbEbEbEdTdUdVdWeidYeacGebececededdTeebEbEbEbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFvdLKLKlwbFcpcpcpcpcpbFbHbIbLefbFRFyGLTTVRFMlCwcpAIbFjbbEbDbDaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxbDbDbEbEcGcLcLdLcLcLcLcLcLdLcLcLcLcGbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFLKLKLKnhbFcpcpcpcpNFbFjlbFbFjlbFihcpcpcpcpbFcpcpQPbFjbbDbDaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxbDbDbDbDbDbDbEbEbEdTdUdVdWeidYeacGebececededdTeebEbEbEbDbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFvdLKLKlwbFcpcpcpcpcpbFbHbIbLefbFRFyGLTTVRFbFCwcpAIbFjbbEbDbDaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxbDbEbEbEbEbEbEbEbEegeheieieieiejcGekekekekekegbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFbFbFbFbFbFbFbFcqcqbFbFbNbPbPbQbFbFbFbFbFbFbFbFbFbFbFjbbEbEbDbDaxaxaxaxax
 axaxaxaxaxaxbDbDbDbDbEbEbEbEbEbEbEbEegelemeieieicGcGenekeoekekegbEbEbEbEbEbEbEbEbEbDbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjbbFbRbSbTbVbFcdcpcpcdbFcecfcfcgbFchcicichbFcjckclcmbFjbbEbEbEbDbDaxaxaxax
 axaxaxaxaxbDbDbEbEbEbEbEerererbEbEbEdTeseteueidYcGevewexeyezeAdTbEbEbEerererbEbEbEbEbEbDbDaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbbFcnbPbPbPZacpcpcpcpcqcrcrcrcrcscrcrcrcrctcucucucubFjbbEbEbEbEbDbDaxaxax
@@ -1001,7 +1000,7 @@ axbDdTgDgDgEgFgtgtgGgHgtgHgtgHgtgHgtgIeQeQeQgJeQgtgtgKgMgMgMgNgOgxgxgxgxgxgxgxgx
 axbDfNgSgtgtgtgtgtcLcLcLcLcLcLcLcLcLdTgdeQeQeQeQgUgUeQDUeQeQgdfigxgxgVgxgxgxgxgxFnbFgAgAgAgAgAhCgAgAgAgAgAgAhCgAgAgAgAgRbFdNdNbFbFbFbFbFbFbFdEdEdEdEdEdEdFdGdEdEdEbFbFjbjbjbjbbEbEbEbEbEbEbEbEbEbEbDaxax
 axbDdTgSgtgtgtgtgtcGcLcLcLcLcLcLcLcLcGcLcLcLcLgqdLdLgqcLcLcLcLcGcLcLcLcLcLcLcLcLcGbFbFbFbFgsgsbFbFhDbFbFgsgsbFbFbFiJiJbFbFheLsbFbFgYbFbFbFbFdEdEdEdEdEdEdFdGdEbFbFbFJObFbFbFbFbEbEbEbEbEbEbEbEbEbDbDaxax
 axbDdThfRihhhihjgTdThlhmhohphphqhshtdTePeQeQeQeReReReReQeQeQePdThuhvhvhwhxhAekhBdTjbjbjbbFhFhFbFhGixiIbFhFhFbFbFbFbFbFbFbFdNdNhedNdNhedNdNbFdEdEdEdEdEbFdJdJbFquSOSOLlbPPZbFbFbEbEbEbEbEbEbEbEbEbDaxaxax
-axbDcGcLcLcLcLcLcGdThmhmhmhmhmhmhmhmfNeQeQeQfjhHhIhIhJfAeQeQeQfNeQeQeQfjekekekhKdTjbjbjbbFhLhLhLhGixiIhLhLhLbFjbaxaxaxbFbFdNdNhedNdNhedNihbFdEdEdEdEdEbFbPbPbFbPYDbPrAbPbPbFbFbEbEbEbEbEbEbEbEbDbDaxaxax
+axbDcGcLcLcLcLcLcGdThmhmhmhmhmhmhmhmfNeQeQeQfjhHhIhIhJfAeQeQeQfNeQeQeQfjekekekhKdTjbjbjbbFhLhLhLhGixiIhLhLhLbFjbaxaxaxbFbFdNdNhedNdNhedNnlbFdEdEdEdEdEbFbPbPbFbPYDbPrAbPbPbFbFbEbEbEbEbEbEbEbEbDbDaxaxax
 axbDbDbDbEbEbEbEbEdThmhmhmhMhNhmhmhmhQeQeQIIfjhRfDfDhSfAeQeQeQhUeQeQeQhVekhWhXhYdTaxaxjbbFhLhLhLhGixiIhLhLhLbFjbaxaxaxbFbFbFbFbFbFbFbFhehebFdEdEdEbWdEbFbPbPZabPbPbPCLbPbPbFbFbEbEbWbEbWbWbEbEbDaxaxaxax
 axaxaxbDbDbEbEbEbEdThZhmhmhmhmhmiahmfieQeQeQfjhTibibicfAeQeQeQfiifigeQfjekekekhKdTaxaxjbbFhLhLhLhGixiIhLhLhLbFjbaxaxaxjbjbjbjbjbjbbFbFdNdNbFbFbFdEdEdEbFbPbPbFqalEZXMBGpnsbFbFbFbFbFbFbWbWbWbDbDaxaxaxax
 axaxaxaxbDbDbEbEbEdTiihmijikikimhmiidTgdeQeQeQgegfgfgeeQeQeQgddTinioipfjekekekiqdTaxaxjbbFbFirhLhGixiIhLisbFbFjbbDbDbDbDbDbDbDbDjbbFbFdNdNdKjtbFJObFbKbFbPzUbFbFbFbFbFbFbFbFbFbFbFbFbFiwiwiwbDaxaxaxaxax
