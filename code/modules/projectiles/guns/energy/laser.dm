@@ -231,15 +231,15 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun
 	name = "Kantrael M36 Lasgun"
-	desc = "The M36 is Cadian-made Lasgun, it is one of the most common and less unique Lasgun that can be found throughout the Imperial Arsenal due to its cheap price and ease to produce."
+	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
+	force = 15
 	one_hand_penalty = 1.7
 	fire_delay = 2
-	accuracy = 3
+	accuracy = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -255,6 +255,14 @@ obj/item/gun/energy/retro
 		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
 		)
 
+/obj/item/gun/energy/las/lasgun/rare
+	name = "Kantrael M37 Lasgun"
+	desc = "The M37 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has a modified heatsink, heavier frame and crystal assembly."
+	armor_penetration = 10
+	accuracy = 3
+	one_hand_penalty = 1.9
+	charge_cost = 70	
+
 /obj/item/gun/energy/las/lasgun/luscius
 	name = "Lucius No.98 Lasgun"
 	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
@@ -265,7 +273,7 @@ obj/item/gun/energy/retro
 	force = 20
 	one_hand_penalty = 2
 	fire_delay = 4
-	accuracy = 4
+	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lusgun
@@ -279,29 +287,12 @@ obj/item/gun/energy/retro
 		list(mode_name="semiauto", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
-/obj/item/gun/energy/las/lasgun/luscius98
-	name = "Lucius No.98 Lasgun"
-	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
-	icon_state = "luscius"
-	item_state = "luscius"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
-	force = 20
-	one_hand_penalty = 2
-	fire_delay = 4
-	accuracy = 4
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/las/lusgun
-	charge_cost = 80
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "luscius-wielded"
-
-
-	firemodes = list(
-		list(mode_name="semiauto", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		)
+/obj/item/gun/energy/las/lasgun/luscius/rare
+	name = "Lucius No.99 Lasgun"
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
+	armor_penetration = 8
+	one_hand_penalty = 1.7
+	charge_cost = 75
 
 /obj/item/gun/energy/las/boarding
 	name = "Thilium boarding Lascarbine"
@@ -310,9 +301,9 @@ obj/item/gun/energy/retro
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
-	one_hand_penalty = 1.1
-	accuracy = 2
+	force = 15
+	one_hand_penalty = 0.7
+	accuracy = 0.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -335,9 +326,9 @@ obj/item/gun/energy/retro
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
+	force = 15
 	one_hand_penalty = 1.5
-	accuracy = 4
+	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -360,9 +351,10 @@ obj/item/gun/energy/retro
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
-	one_hand_penalty = 1
-	accuracy = 3
+	force = 25
+	armor_penetration = 8
+	one_hand_penalty = 1.5
+	accuracy = 1.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -384,19 +376,29 @@ obj/item/gun/energy/retro
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
-	force = 5
+	force = 8
 	accuracy = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
 	charge_cost = 120
+	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=1,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
+
+/obj/item/gun/energy/las/laspistol/heavy
+	name = "Kantrael Heavy Laspistol"
+	desc = "Cadian made service laspistol for Cadian Regiment Officers, Non-Commissioned and Mechanicum Retinue."
+	move_delay= 1.2
+	one_hand_penalty = 1
+	accuracy = 1.5
+	fire_delay= 1.5
+	armor_penetration = 12
 
 /obj/item/gun/energy/pulse/pulserifle
 	name = "pulse rifle"
@@ -405,7 +407,7 @@ obj/item/gun/energy/retro
 	item_state = "pulseb"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
+	force = 15
 	one_hand_penalty = 2
 	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -428,7 +430,7 @@ obj/item/gun/energy/retro
 	item_state = "ionriflet"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
+	force = 15
 	one_hand_penalty = 2
 	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -449,7 +451,7 @@ obj/item/gun/energy/retro
 	item_state = "pulsep"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
-	force = 5
+	force = 8
 	accuracy = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -469,7 +471,7 @@ obj/item/gun/energy/retro
 	item_state = "pulseb"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 10
+	force = 15
 	one_hand_penalty = 2
 	accuracy = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
