@@ -2514,4 +2514,9 @@
 #include "maps\~mapsystem\maps_jobs.dm"
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
+#include "~code\global_init.dm"
 // END_INCLUDE
+// This is a buffer
+// This is also a buffer
+/* This is a buffer, but Scottish
+This is a deep fried buffer. Also Scottish*/
