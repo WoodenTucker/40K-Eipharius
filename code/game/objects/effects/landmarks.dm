@@ -279,7 +279,6 @@ Template:
 
 /obj/random/loot/heavymelee/spawn_choices()
 	return list(/obj/item/melee/trench_axe = 15,
-				/obj/item/melee/trench_axe/runic = 1,
 				/obj/item/melee/inqcs = 2,
 				/obj/item/melee/pcsword/eviscerator = 1,
 				/obj/item/melee/classic_baton/trench_club = 12,
