@@ -174,6 +174,12 @@
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 
+/obj/item/material/sword/combat_knife/rare
+	name = "combat knife"
+	desc = "For self defense, and self offense. This particular knife is made of special materials."
+	force_divisor = 0.4
+	weapon_speed_delay = 5
+
 /obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
 		usr.visible_message("\The [usr] cuts \the [C]'s restraints with \the [src]!",\

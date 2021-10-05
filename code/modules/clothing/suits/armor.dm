@@ -394,7 +394,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/guardsman
 	name = "Cadian Pattern Flak Armour - Medium"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it standard configuration"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it standard configuration."
 	icon_state = "farmor"
 	item_state = "farmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -404,6 +404,11 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/guardsman/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = -0.5
+
+/obj/item/clothing/suit/armor/guardsman/caraspace
+	name = "Cadian Pattern Flak Armour - Caraspace"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Caraspace plates, giving it better protection than average Guardsmen."
+	armor = list(melee = 45, bullet = 55, laser = 45, energy = 30, bomb = 35, bio = 10, rad = 20)	
 
 /obj/item/clothing/suit/armor/flak/heavy
 	name = "Cadian Pattern Flak Armour - Heavy"
@@ -480,7 +485,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/cadiansgt
 	name = "Cadian Sergeant's Flak Armour"
-	desc = "The well-worn armor of an Cadian Regiment Sergeant, This one is padded with Caraspace plates, giving it better protection than average Guardsmen. It has the three-chevrons marked on it upper chest."
+	desc = "The well-worn armor of an Cadian Regiment Sergeant, this one is padded with Caraspace plates, giving it better protection than average Guardsmen. It has the three-chevrons marked on it upper chest."
 	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 40, bullet = 50, laser = 40, energy = 25, bomb = 45, bio = 10, rad = 30)

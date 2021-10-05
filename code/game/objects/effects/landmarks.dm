@@ -194,6 +194,200 @@ Template:
 /obj/effect/landmark/JoinLate
 	name = "JoinLate"
 
+/// LOOT SPAWNERS HERE
+/// BEGINNING OF LOOT SPAWNERS
+/// Be careful. Make sure to search up all items related to what you are spawning and make it possible for it's ammo to spawn as well. 
+
+
+/obj/random/loot/example
+	name = "Example ??? Loot"
+	desc = "This is a ??? loot spawner with a ??? chance of spawning ???? items."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "gift3"
+
+/obj/random/loot/example/spawn_choices()
+	return list(/obj/random/voidhelmet = 69, /// Numbers represent chance the item will be chosen to spawn.
+				/obj/random/voidsuit = 42,
+				/obj/item/clothing/mask/muzzle = 0,
+				/obj/item/clothing/mask/gas/vox = 8,
+				/obj/item/clothing/mask/gas/syndicate = 10,
+				/obj/item/clothing/glasses/night = 3,
+				/obj/item/clothing/glasses/thermal = 1)
+
+/obj/random/loot/guardgear
+	name = "Guard Gear"
+	desc = "This is a loot spawner that spawns essential imperial guardsmen gear."
+	icon = 'icons/obj/clothing/ties.dmi'
+	icon_state = "horribletie"
+
+/obj/random/loot/guardgear/spawn_choices()
+	return list(/obj/item/storage/belt/medical/full = 4,
+	            /obj/item/clothing/accessory/holster/waist = 1,
+				/obj/item/storage/box/ifak = 5,
+				/obj/item/clothing/accessory/holster/hip = 1,
+				/obj/item/clothing/accessory/storage/webbing = 3,
+				/obj/item/clothing/accessory/legguards = 2,
+				/obj/item/clothing/accessory/armguards/ballistic = 3,
+				/obj/item/clothing/accessory/armguards/riot = 4,
+				/obj/item/clothing/accessory/legguards/riot = 3)
+
+/obj/random/loot/guardarmor
+	name = "Guard Armor"
+	desc = "This is a loot spawner that spawns imperial guardsmen armor."
+	icon = 'icons/obj/clothing/ties.dmi'
+	icon_state = "horribletie"
+
+/obj/random/loot/guardarmor/spawn_choices()
+	return list(/obj/item/clothing/suit/armor/guardsman = 8,
+	            /obj/item/clothing/suit/armor/flak/heavy = 3,
+				/obj/item/clothing/suit/armor/guardsman/caraspace =1,
+				/obj/item/clothing/suit/armor/medicae = 1,
+				/obj/item/clothing/suit/armor/valhallanarmor = 1,
+				/obj/item/clothing/suit/armor/krieger = 1,
+				/obj/item/clothing/suit/armor/krieger/grenadier = 1,)
+
+/obj/random/loot/guardhelmet
+	name = "Guard Helmet"
+	desc = "This is a loot spawner that spawns imperial guardsmen armor."
+	icon = 'icons/obj/clothing/ties.dmi'
+	icon_state = "horribletie"
+
+/obj/random/loot/guardhelmet/spawn_choices()
+	return list(/obj/item/clothing/head/helmet/guardhelmet = 3,
+				/obj/item/clothing/head/helmet = 2,
+				/obj/item/clothing/head/valushanka = 2,
+				/obj/item/clothing/head/helmet/krieghelmet = 1,
+				/obj/item/clothing/mask/gas/krieg = 1,
+				/obj/item/clothing/head/helmet/riot = 1,)
+
+/obj/random/loot/lightmelee
+	name = "Light Melee"
+	desc = "This is a weapon loot spawner with a high chance of spawning common light melee weapons."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
+
+/obj/random/loot/lightmelee/spawn_choices()
+	return list(/obj/item/material/sword/combat_knife = 6,
+				/obj/item/material/sword/combat_knife/rare = 3,
+				/obj/item/material/sword/machete = 1)
+
+/obj/random/loot/heavymelee
+	name = "Heavy Melee"
+	desc = "This is a weapon loot spawner with a high chance of spawning common heavy melee weapons."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
+
+/obj/random/loot/heavymelee/spawn_choices()
+	return list(/obj/item/melee/trench_axe = 15,
+				/obj/item/melee/inqcs = 2,
+				/obj/item/melee/pcsword/eviscerator = 1,
+				/obj/item/melee/classic_baton/trench_club = 12,
+				/obj/item/melee/telebaton = 7,
+				/obj/item/material/sword/machete = 10,
+				/obj/item/material/sword/sabre = 1,
+				/obj/item/melee/mercycs = 1)
+
+/obj/random/loot/lightstubberammo
+	name = "Light Stubber Ammo"
+	desc = "This is an ammo spawner that spawns ammo for light stubbers."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "45-10"
+
+/obj/random/loot/lightstubberammo/spawn_choices()
+	return list(/obj/item/ammo_box/shotgun = 10,
+				/obj/item/ammo_box/shotgun = 9,
+				/obj/item/ammo_magazine/box/shotgun/bean = 2,
+				/obj/item/ammo_magazine/c45m/warfare = 9,
+				/obj/item/ammo_magazine/c45m/warfare = 8,
+				/obj/item/ammo_magazine/mc9mmt/machinepistol = 9,
+				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
+				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
+
+/obj/random/loot/lightstubber
+	name = "Light Stubber"
+	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
+
+/obj/random/loot/lightstubber/spawn_choices()
+	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 10,
+				/obj/item/gun/projectile/automatic/machinepistol = 9,
+				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
+				/obj/item/gun/projectile/warfare = 12,
+				/obj/item/gun/projectile/warfare/kieji = 10,
+				/obj/item/gun/projectile/automatic/flamer = 3,
+				/obj/item/clothing/accessory/holster/waist = 1,
+				/obj/item/clothing/accessory/holster/hip = 1,
+				/obj/item/clothing/accessory/storage/webbing = 3,
+				/obj/item/gun/projectile/bolter_pistol = 1)
+
+/obj/random/loot/lightlasgun
+	name = "Light Lasgun"
+	desc = "This is a weapon loot spawner with a high chance of spawning common light lasguns."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
+
+/obj/random/loot/lightlasgun/spawn_choices()
+	return list(/obj/item/gun/energy/las/lasgun = 11,
+				/obj/item/gun/energy/las/lasgun/rare = 4,
+				/obj/item/gun/energy/las/lasgun/luscius = 8,
+				/obj/item/gun/energy/las/lasgun/luscius/rare = 3,
+				/obj/item/gun/energy/las/boarding = 3,
+				/obj/item/gun/energy/las/laspistol = 6,
+				/obj/item/gun/energy/las/laspistol/heavy = 3,
+				/obj/item/gun/energy/las/lasgun/tinkered = 1,
+				/obj/item/gun/energy/las/lasgun/tinkered/lascarbine = 1)
+
+/obj/random/loot/lasgunammo
+	name = "Lasgun Ammo"
+	desc = "This is an ammo spawner that spawns ammo for lasguns."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "45-10"
+
+/obj/random/loot/lasgunammo/spawn_choices()
+	return list(/obj/item/cell/lasgun = 20,
+				/obj/item/cell/hyper = 1)
+
+/obj/random/loot/heavystubberammo
+	name = "Heavy Stubber Ammo"
+	desc = "This is an ammo spawner that spawns ammo for heavy stubbers."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "45-10"
+
+/obj/random/loot/heavystubberammo/spawn_choices()
+	return list(/obj/item/ammo_magazine/mc9mmt/machinepistol = 10,
+	            /obj/item/ammo_magazine/bolt_rifle_magazine = 1,
+				/obj/item/ammo_box/shotgun = 3,
+				/obj/item/ammo_box/rifle = 8,
+				/obj/item/ammo_box/rifle = 9,
+				/obj/item/ammo_box/shotgun = 9,
+				/obj/item/ammo_box/shotgun = 8,
+				/obj/item/ammo_magazine/box/a556/mg08 = 10,
+				/obj/item/ammo_magazine/box/a556/mg08 = 7)
+
+/obj/random/loot/heavystubber
+	name = "Heavy Stubber"
+	desc = "This is a weapon loot spawner with a high chance of spawning common heavy stubbers."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
+
+/obj/random/loot/heavystubber/spawn_choices()
+	return list(/obj/item/gun/projectile/automatic/machinepistol/a80 = 10,
+	            /obj/item/gun/projectile/lockebolter = 1,
+				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 12,
+				/obj/item/gun/projectile/shotgun/pump = 6,
+				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 8,
+				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 9,
+				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
+				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 8,
+				/obj/item/gun/projectile/automatic/stubber = 14,
+				/obj/item/gun/projectile/automatic/stubber/villiers = 7)
+
+/// To Do List. Create spawners that are completely random for categories; medicine, ammo, armor, weapon, clothing, item, explosive, food, explosive, decor, tool and material.
+
+/// THIS IS THE END OF LOOT SPAWNERS
+
+
 //Costume spawner landmarks
 /obj/effect/landmark/costume/New() //costume spawner, selects a random subclass and disappears
 

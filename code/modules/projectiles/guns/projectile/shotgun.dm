@@ -24,7 +24,7 @@
 	item_state = "shotgun"
 	max_shells = 5
 	w_class = ITEM_SIZE_HUGE
-	force = 10
+	force = 15
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
@@ -38,9 +38,10 @@
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
 	move_delay= 2.5
-	one_hand_penalty = 4
-	accuracy = 2.5
+	one_hand_penalty = 6
+	accuracy = 1.5
 	fire_delay= 3
+	armor_penetration = 2
 
 /obj/item/gun/projectile/shotgun/pump/New()
 	..()
