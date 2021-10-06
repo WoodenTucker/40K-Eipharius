@@ -21,7 +21,7 @@
 
 /obj/structure/closet/secure_closet/freezer/meat/WillContain()
 	return list(
-		/obj/item/reagent_containers/food/snacks/meat/monkey = 10
+		/obj/item/reagent_containers/food/snacks/meat/monkey = 2
 	)
 
 /obj/structure/closet/secure_closet/freezer/fridge
