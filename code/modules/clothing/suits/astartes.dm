@@ -7,7 +7,7 @@
 	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 115, bullet = 115, laser = 100, energy = 70, bomb = 100, bio = 70, rad = 70)
+	armor = list(melee = 90, bullet = 100, laser = 90, energy = 70, bomb = 100, bio = 70, rad = 70)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
