@@ -107,7 +107,7 @@
 //For projectiles that actually represent clouds of projectiles
 /obj/item/projectile/bullet/pellet
 	name = "shrapnel" //'shrapnel' sounds more dangerous (i.e. cooler) than 'pellet'
-	damage = 60
+	damage = 50
 	icon_state = "shot" //TODO: would be nice to have it's own icon state
 	range = 10 	//These disappear after a short distance.
 	var/pellets = 4			//number of pellets
@@ -219,7 +219,8 @@
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
 	check_armour = "melee"
-	damage = 25
+	damage = 10
+	armor_penetration = 15
 	agony = 60
 	embed = 0
 	sharp = 0
@@ -238,30 +239,32 @@
 /* "Rifle" rounds */
 
 /obj/item/projectile/bullet/rifle
-	armor_penetration = 25
+	damage = 38
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 25
+	damage = 38
+	armor_penetration = 10
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 65
-	armor_penetration = 30
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
 	damage = 85
 	stun = 3
 	weaken = 3
-	armor_penetration = 80
+	armor_penetration = 30
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1.25
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a145/apds
 	damage = 75
-	armor_penetration = 95
+	armor_penetration = 60
 	penetration_modifier = 1.5
 
 /* Miscellaneous */
@@ -298,7 +301,7 @@
 
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 80
+	damage = 70
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
@@ -309,7 +312,7 @@
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 90 //ow
+	damage = 80
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0)
@@ -364,7 +367,8 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 30
+	damage = 38
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/ork/shoota
 	name = "piece of trash"
