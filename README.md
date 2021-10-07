@@ -16,7 +16,7 @@
 
 **Please carefully read the following statement:**
 
-If you desire to host your own server based off of IS12 Warfare source code - you may not pretend to be an "Official IS12 Warfare" server.
+If you desire to host your own server based off of IS12 Warfare source code - you may not pretend to be an "Official IS12 Warfare" server. 
 
 **By our terms and conditions we require any potential host to specify that they are an unofficial server in announcements and the Byond HUB.**
 
