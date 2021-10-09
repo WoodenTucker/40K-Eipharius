@@ -12,7 +12,10 @@
 	do_not_pass_trench = TRUE
 
 /obj/item/projectile/bullet/pellet/fragment/strong
-	damage = 40
+	damage = 80
+
+/obj/item/projectile/bullet/pellet/fragment/weak
+	damage = 50
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -23,8 +26,8 @@
 	icon = 'icons/obj/grenade.dmi'
 
 	var/list/fragment_types = list(/obj/item/projectile/bullet/pellet/fragment = 1)
-	var/num_fragments = 18  //total number of fragments produced by the grenade (nerfed by x4. 72 / 4 = 18 let's see if this is too little -plinypotter)
-	var/explosion_size = 2   //size of the center explosion
+	var/num_fragments = 16  //total number of fragments produced by the grenade (nerfed by x4. 72 / 4 = 18 let's see if this is too little -plinypotter)
+	var/explosion_size = 1   //size of the center explosion
 
 	//The radius of the circle used to launch projectiles. Lower values mean less projectiles are used but if set too low gaps may appear in the spread pattern
 	var/spread_range = 7 //leave as is, for some reason setting this higher makes the spread pattern have gaps close to the epicenter
@@ -49,7 +52,7 @@
 	qdel(src)
 
 
-/atom/proc/fragmentate(var/turf/T=get_turf(src), var/fragment_number = 30, var/spreading_range = 5, var/list/fragtypes=list(/obj/item/projectile/bullet/pellet/fragment/))
+/atom/proc/fragmentate(var/turf/T=get_turf(src), var/fragment_number = 1, var/spreading_range = 5, var/list/fragtypes=list(/obj/item/projectile/bullet/pellet/fragment/))
 	set waitfor = 0
 	var/list/target_turfs = getcircle(T, spreading_range)
 	var/fragments_per_projectile = round(fragment_number/target_turfs.len)
@@ -73,16 +76,16 @@
 			else if(!M.lying && src.loc != get_turf(src)) //if it's not on the turf, it must be in the mob!
 				P.attack_mob(M, 0, 25) //you're holding a grenade, dude!
 			else
-				P.attack_mob(M, 0, 100) //otherwise, allow a decent amount of fragments to pass
+				P.attack_mob(M, 0, 50) //otherwise, allow a decent amount of fragments to pass
 
 /obj/item/grenade/fire
 	name = "incendiary grenade"
 	desc = "A military incendiary grenade designed to spread and ignite a vast ammount of highly flammable liquid."
 	icon_state = "fire_grenade"
 	arm_sound = 'sound/weapons/grenade_arm.ogg'
-	throw_range = 10
+	throw_range = 8
 
-	var/fire_range = 2 // size of the fire zone
+	var/fire_range = 3 // size of the fire zone
 
 /obj/item/grenade/fire/detonate()
 	..()
@@ -158,8 +161,8 @@ obj/mortar/flare/blue
 	desc = "A light fragmentation grenade, designed to be fired from a launcher. It can still be activated and thrown by hand if necessary."
 	icon_state = "fragshell"
 
-	num_fragments = 12 //less powerful than a regular frag grenade (nerfed by x4. 50 / 4 = 12, let's see if this helps lag -plinypotter)
-
+	explosion_size = 4
+	num_fragments = 4
 
 /obj/item/grenade/frag/high_yield
 	name = "fragmentation bomb"
@@ -167,23 +170,30 @@ obj/mortar/flare/blue
 	icon_state = "frag"
 
 	w_class = ITEM_SIZE_NORMAL
-	throw_speed = 3
-	throw_range = 5 //heavy, can't be thrown as far
+	throw_speed = 2
+	throw_range = 6 //heavy, can't be thrown as far
 
-	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1,/obj/item/projectile/bullet/pellet/fragment/strong=4)
-	num_fragments = 50  //total number of fragments produced by the grenade (nerfed by x4. 200 / 4 = 50 -plinypotter)
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment=1)
 	explosion_size = 3
-
-/obj/item/grenade/frag/high_yield/on_explosion(var/turf/O)
-	if(explosion_size)
-		explosion(O, -1, round(explosion_size/2), explosion_size, round(explosion_size/2), 0) //has a chance to blow a hole in the floor
+	num_fragments = 8
 
 /obj/item/grenade/frag/high_yield/krak
 	name = "Krak Grenade"
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
-	num_fragments = 40 // nerfed by x6. 250 / 6 = 41 i rounded it to 40. let's see if this helps lag - plinypotter
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
 	explosion_size = 4
+	num_fragments = 2
+
+/obj/item/grenade/frag/high_yield/homemade
+	name = "Pipe Grenade"
+	desc = "A low yield explosive used by miners to clear out caves and demolish stone."
+	icon_state = "fire_grenade"
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/weak=1)
+	explosion_size = 3
+	num_fragments = 0
+	throw_speed = 1.5
+	throw_range = 8
 
 /obj/item/grenade/frag/high_yield/krak/prime()
 	update_mob()
