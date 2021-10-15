@@ -299,6 +299,34 @@
 	..()
 	icon_state = "meatshroom[rand(1, 3)]"
 
+/obj/structure/flora/ausbushes/lrock
+	icon_state = "lrock1"
+
+/obj/structure/flora/ausbushes/lrock/New()
+	..()
+	icon_state = "lrock[rand(1, 9)]"
+
+/obj/structure/flora/ausbushes/rock
+	icon_state = "rock1"
+
+/obj/structure/flora/ausbushes/rock/New()
+	..()
+	icon_state = "rock[rand(1, 5)]"
+
+/obj/structure/flora/ausbushes/busha
+	icon_state = "busha1"
+
+/obj/structure/flora/ausbushes/busha/New()
+	..()
+	icon_state = "busha[rand(1, 3)]"
+
+/obj/structure/flora/ausbushes/bushab
+	icon_state = "bushab1"
+
+/obj/structure/flora/ausbushes/bushab/New()
+	..()
+	icon_state = "bushab[rand(1, 3)]"
+
 /obj/structure/flora/ausbushes/minishroom
 	icon_state = "minishroom"
 
