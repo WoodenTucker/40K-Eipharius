@@ -21,11 +21,11 @@
 	shotgun_skill = 5
 	lmg_skill = 5
 	smg_skill = 5
-	melee_skill = 4
-	ranged_skill = 5
-	medical_skill = 4
-	engineering_skill = 10
-	surgery_skill = 5
+	melee_skill = 5
+	ranged_skill = 9
+	medical_skill = 7
+	engineering_skill = 15
+	surgery_skill = 9
 
 	ideal_character_age = 70 // Old geezer captains ftw
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
@@ -71,17 +71,17 @@
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
-	melee_skill = 3
-	ranged_skill = 3
-	medical_skill = 3
-	engineering_skill = 9
-	surgery_skill = 4
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 4
+	ranged_skill = 7
+	medical_skill = 5
+	engineering_skill = 13
+	surgery_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -117,17 +117,17 @@
 	access = list(access_medical, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine, access_engine_equip,)
 	minimal_access = list(access_medical, access_morgue, access_genetics, access_research,access_maint_tunnels, access_robotics, access_engine_equip, access_engine)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
-	melee_skill = 3
-	ranged_skill = 3
-	medical_skill = 6
-	engineering_skill = 8
-	surgery_skill = 8
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 6
+	ranged_skill = 6
+	medical_skill = 5
+	engineering_skill = 10
+	surgery_skill = 13
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

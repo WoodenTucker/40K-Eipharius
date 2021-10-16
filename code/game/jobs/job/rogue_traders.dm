@@ -23,17 +23,17 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/captain
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
-	melee_skill = 5
-	ranged_skill = 6
-	medical_skill = 4
-	engineering_skill = 3
-	surgery_skill = 2
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 12
+	ranged_skill = 12
+	medical_skill = 5
+	engineering_skill = 6
+	surgery_skill = 3
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -72,16 +72,16 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	ideal_character_age = 50
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
-	melee_skill = 3
-	ranged_skill = 4
-	medical_skill = 5
-	engineering_skill = 0
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 9
+	ranged_skill = 9
+	medical_skill = 3
+	engineering_skill = 4
 	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
@@ -179,10 +179,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	lmg_skill = 2
 	smg_skill = 2
 	melee_skill = 4
-	ranged_skill = 2
-	medical_skill = 2
-	engineering_skill = 0
-	surgery_skill = 4
+	ranged_skill = 6
+	medical_skill = 5
+	engineering_skill = 2
+	surgery_skill = 5
 
 	equip(var/mob/living/carbon/human/H)
 		H.add_stats(rand(10,10), rand(8,11), rand(16,17), rand(8,10))

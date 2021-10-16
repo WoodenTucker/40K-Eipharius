@@ -17,17 +17,17 @@
 		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
-	melee_skill = 5
-	ranged_skill = 5
-	medical_skill = 3
-	engineering_skill = 0
-	surgery_skill = 4
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 10
+	ranged_skill = 9
+	medical_skill = 5
+	engineering_skill = 3
+	surgery_skill = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -69,17 +69,17 @@
 		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 7
-	shotgun_skill = 7
-	lmg_skill = 7
-	smg_skill = 7
-	melee_skill = 8
-	ranged_skill = 7
-	medical_skill = 4
-	engineering_skill = 1
-	surgery_skill = 4
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 12
+	ranged_skill = 10
+	medical_skill = 6
+	engineering_skill = 5
+	surgery_skill = 6
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -92,28 +92,8 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.witchblood()
-		H.verbs += list(/mob/living/carbon/human/proc/declareheretic,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium. As full-fledged Inquisitor. Your task is to seek and destroy enemies of the Imperium, whether they're daemons, Chaos, Xenos or Heretics. The Emperor Protects.</font></b></span>")
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(H)
-
-//Verb
-
-/mob/living/carbon/human/proc/declareheretic(var/mob/living/carbon/human/M)
-	set category = "Inquisitor"
-	set name = "Declare Heretic"
-	set desc="Declare a member of the crew a heretic!"
-	if(M.stat==DEAD)
-		return
-	if(!M.canmove || M.stat || M.restrained())
-		to_chat(M, "You cannot declare a heretic if you're tied up!")	//user is tied up
-		return
-
-	var/message = input("Name of the heretic", "Declare heretic", null, null) as message
-	message = sanitize(message, 500, extra = 0)
-	if(message)
-		message = replacetext(message, "\n", "<br>") // required since we're putting it in a <p> tag
-		to_world("<span class=danger><b>[src.real_name] declares the following as heretic(s):</b><p style='text-indent: 50px'>[message]</p></span>")
-		log_admin("Announce: [key_name(usr)] : [message]")
