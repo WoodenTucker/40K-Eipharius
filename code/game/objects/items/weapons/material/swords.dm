@@ -23,7 +23,7 @@
 	grab_sound = 'sound/items/unholster_sword02.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'
 	sharpness = 25
-	weapon_speed_delay = 20
+	weapon_speed_delay = 10
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
 	drop_sound = 'sound/items/drop_sword.ogg'
 	unbreakable = TRUE
@@ -154,6 +154,8 @@
 	item_state = "machete"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
+	force_divisor = 0.35
+	block_chance = 20
 
 
 /obj/item/material/sword/combat_knife
@@ -164,21 +166,35 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force_divisor = 0.3
+	thrown_force_divisor = 0.3
 	block_chance = 15
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 10
+	weapon_speed_delay = 7
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 
 /obj/item/material/sword/combat_knife/rare
 	name = "combat knife"
-	desc = "For self defense, and self offense. This particular knife is made of special materials."
+	desc = "For self defense, and self offense. This model is made of special materials."
 	force_divisor = 0.4
-	weapon_speed_delay = 5
+	thrown_force_divisor = 0.4
+	weapon_speed_delay = 6
+
+/obj/item/material/sword/combat_knife/catachan
+	name = "catachan knife"
+	desc = "The legendary blade of the catachan jungle fighters. The balance of the knife is near perfect."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "catachanfang"
+	item_state = "EB-knife"//"knife"
+	attack_verb = list("slashed")
+	force_divisor = 0.4
+	weapon_speed_delay = 4
+	thrown_force_divisor = 0.5
+
 
 /obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
@@ -211,7 +227,7 @@
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 10
+	weapon_speed_delay = 7
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 
@@ -229,7 +245,7 @@
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 10
+	weapon_speed_delay = 7
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 
@@ -247,7 +263,7 @@
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 10
+	weapon_speed_delay = 8
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 	var/skinning = 0
