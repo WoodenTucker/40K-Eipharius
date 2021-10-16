@@ -1,13 +1,13 @@
 //For the nurgle path
 /mob/living/simple_animal/hostile/abomination
-	name = "plague monstrosity"
-	desc = "A hulking, stinking behemoth of Nurgle!"
+	name = "Hulking Daemon" // Path of Nurgle Daemon Summon
+	desc = "A hulking, grotesque behemoth of CHAOS!"
 	icon = 'icons/mob/critter.dmi'
 	icon_state = "vargo"
 	icon_living = "vargo"
 	icon_dead = "vargo2"
 	icon_gib = "vargo2"
-	speak = list("COME INTO MY EMBRACE!","THE LORD OF THE FLIES WELCOMES YOU!","THE MIGHT OF THE PLAGUEFATHER!",)
+	// speak = list("COME INTO MY EMBRACE!","THE LORD OF THE FLIES WELCOMES YOU!","THE MIGHT OF THE PLAGUEFATHER!",)
 	speak_emote = list("chortles", "roars")
 	emote_hear = list("belches","grumbles","vomits")
 	emote_see = list("shoots ichor from his syringe", "stomps")
@@ -15,18 +15,19 @@
 	turns_per_move = 5
 	see_in_dark = 6
 	wander = 1
-	meat_type = null
+	meat_type = /obj/item/reagent_containers/food/snacks/khornemeat
+	meat_amount = 8
 	response_help  = "licks"
 	response_disarm = "struggles against the mass of"
 	response_harm   = "slaps"
+	maxHealth = 4000
+	health = 4000
 	stop_automated_movement_when_pulled = 1 //lets you pull and release your new friend
-	maxHealth = 5000 //lamo lets see if this is retarded
-	health = 5000
-	melee_damage_lower = 90
-	melee_damage_upper = 90
-	harm_intent_damage = 90
+	melee_damage_lower = 60 // This value does nothing
+	melee_damage_upper = 80 // This value does nothing
+	harm_intent_damage = 60
 	attacktext = "impaled"
-	speed = -1 //ZOOM
+	speed = 0 //ZOOM
 
 
 	//aboms dont need NO ATMOS
@@ -35,7 +36,7 @@
 	minbodytemp = 0
 	var/stance_step = 0
 
-	faction = "Nurgle" //keeps the nurgle homies safe
+	faction = "Nurgle" //keeps the cultist homies safe
 
 /mob/living/simple_animal/hostile/abomination/Life()
 	. =..()
@@ -112,9 +113,9 @@
 /mob/living/simple_animal/hostile/abomination/AttackingTarget()
 	if(!Adjacent(target_mob))
 		return
-	custom_emote(1, pick( list("impales [target_mob]", "vomits on [target_mob]") ) )
+	custom_emote(1, pick( list("impales [target_mob]") ) )
 
-	var/damage = rand(100,130)
+	var/damage = rand(60,80)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
