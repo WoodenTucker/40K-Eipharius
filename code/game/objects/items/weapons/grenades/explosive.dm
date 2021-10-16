@@ -1,5 +1,5 @@
 /obj/item/projectile/bullet/pellet/fragment
-	damage = 100
+	damage = 70
 	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
@@ -12,10 +12,11 @@
 	do_not_pass_trench = TRUE
 
 /obj/item/projectile/bullet/pellet/fragment/strong
-	damage = 80
+	damage = 90
+	range_step = 4 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 /obj/item/projectile/bullet/pellet/fragment/weak
-	damage = 50
+	damage = 60
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -182,7 +183,7 @@ obj/mortar/flare/blue
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 4
+	explosion_size = 3
 	num_fragments = 2
 
 /obj/item/grenade/frag/high_yield/homemade
@@ -190,7 +191,7 @@ obj/mortar/flare/blue
 	desc = "A low yield explosive used by miners to clear out caves and demolish stone."
 	icon_state = "fire_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/weak=1)
-	explosion_size = 3
+	explosion_size = 2
 	num_fragments = 0
 	throw_speed = 1.5
 	throw_range = 8
