@@ -117,23 +117,23 @@
 
 	var/special_controls = {"<span class='interface'>
 <h3>Speacial Controls:</h3>
-<br>look up = RMB+Fixeye button OR Shift+F
-<br>look into distance = ALT+RMB
-<br>give = RMB+help intent
-<br>wave friendly = RMB+help intent at a distance
-<br>threaten = RMB+harm intent at a distance
-<br>toggle fullscreen = CTRL+ENTER
-<br>jump = select "jump" on the UI and middle click
-<br>kick = select "kick" on the UI and middle click
+<br>look up = RMB + Fixeye button OR Shift + F
+<br>look into distance = ALT + RMB
+<br>give = RMB + Help intent
+<br>wave friendly = RMB + Help intent at a distance
+<br>threaten = RMB + Harm intent at a distance
+<br>toggle fullscreen = CTRL + Enter
+<br>jump = Select "jump" on the UI and middle click
+<br>kick = Select "kick" on the UI and middle click
 </span>"}
 
 	var/gun_controls = {"<span class='interface'>
 <h3>Weapon controls:</h3>
-<br>toggle safety = RMB on gun OR shift+z
-<br>do special attack = RMB + harm intent + combat mode
-<br>unload gun = click drag into empty hand
-<br>clean gun = ALT + Click on gun
-<br>unjam gun = RMB on gun when it's jammed
+<br>toggle safety = RMB on Gun OR Shift + Z
+<br>Special Attack = RMB + Harm + Combat Mode
+<br>Unload Firearm = Click Drag into empty hand
+<br>Repair Firearm = Alt + Click on damaged gun
+<br>Clear Malfunction = RMB on gun when it's jammed
 </span>"}
 
 	var/robot_hotkey_mode = {"<span class='interface'>
