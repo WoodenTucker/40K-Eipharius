@@ -177,7 +177,7 @@ obj/item/gun/energy/retro
 	slot_flags = SLOT_BACK
 	charge_cost = 40
 	max_shots = 4
-	fire_delay = 35
+	fire_delay = 10
 	force = 10
 	w_class = ITEM_SIZE_HUGE
 	accuracy = -2 //shooting at the hip
@@ -236,10 +236,10 @@ obj/item/gun/energy/retro
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 15
+	force = 12
 	one_hand_penalty = 1.7
-	fire_delay = 2
-	accuracy = 2.5
+	fire_delay = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -248,18 +248,16 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
 
-	fire_delay = 2 // 0.2 seconds
-
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=2, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/rare
 	name = "Kantrael M37 Lasgun"
 	desc = "The M37 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has a modified heatsink, heavier frame and crystal assembly."
 	armor_penetration = 10
-	accuracy = 3
+	force = 15
 	one_hand_penalty = 1.9
 	charge_cost = 70	
 
@@ -270,10 +268,10 @@ obj/item/gun/energy/retro
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 20
+	force = 15
 	one_hand_penalty = 2
 	fire_delay = 4
-	accuracy = 3
+	accuracy = 0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lusgun
@@ -291,7 +289,8 @@ obj/item/gun/energy/retro
 	name = "Lucius No.99 Lasgun"
 	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
 	armor_penetration = 8
-	one_hand_penalty = 1.7
+	force = 12
+	one_hand_penalty = 1.8
 	charge_cost = 75
 
 /obj/item/gun/energy/las/boarding
@@ -301,9 +300,9 @@ obj/item/gun/energy/retro
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 15
+	force = 18
 	one_hand_penalty = 0.7
-	accuracy = 0.5
+	accuracy = -0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -315,8 +314,8 @@ obj/item/gun/energy/retro
 	fire_delay = 1 // 0.2 seconds
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=1, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=2, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
@@ -326,9 +325,9 @@ obj/item/gun/energy/retro
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 15
+	force = 12
 	one_hand_penalty = 1.5
-	accuracy = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -339,9 +338,8 @@ obj/item/gun/energy/retro
 
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=1.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=2,  move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 2),
+		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
@@ -351,10 +349,10 @@ obj/item/gun/energy/retro
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 25
+	force = 22
 	armor_penetration = 8
 	one_hand_penalty = 1.5
-	accuracy = 1.5
+	accuracy = -0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -364,20 +362,19 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=1.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=2,  move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 2),
+		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		)
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Defender Laspistol"
-	desc = "Cadian made service laspistol for Cadian Regiment Officers, Non-Commissioned and Mechanicum Retinue."
+	desc = "Cadian made service laspistol for Cadian Enlisted, Non-Commissioned and Mechanicum Retinue."
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = 2
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -388,16 +385,16 @@ obj/item/gun/energy/retro
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=1,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/las/laspistol/heavy
 	name = "Kantrael Heavy Laspistol"
-	desc = "Cadian made service laspistol for Cadian Regiment Officers, Non-Commissioned and Mechanicum Retinue."
+	desc = "Cadian made service laspistol for Cadian Enlisted, Non-Commissioned and Mechanicum Retinue."
 	move_delay= 1.2
 	one_hand_penalty = 1
-	accuracy = 1.5
-	fire_delay= 1.5
+	accuracy = -1.2
+	fire_delay= 3
 	armor_penetration = 12
 
 /obj/item/gun/energy/pulse/pulserifle
@@ -409,7 +406,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -419,8 +416,7 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic", burst=1, fire_delay= 0.9,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/ionrifle
@@ -432,7 +428,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/ion
@@ -452,7 +448,7 @@ obj/item/gun/energy/retro
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = 2
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -473,7 +469,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = 3
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -483,5 +479,5 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
