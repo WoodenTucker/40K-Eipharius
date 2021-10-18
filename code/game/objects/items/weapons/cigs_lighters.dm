@@ -221,7 +221,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 
 /obj/item/clothing/mask/smokable/cigarette
 	name = "lho stick"
-	desc = "A small paper cylinder filled with processed tobacco and various fillers."
+	desc = "A small paper cylinder filled with processed lho and various fillers."
 	icon_state = "cigoff"
 	throw_speed = 0.5
 	item_state = "cigoff"
@@ -272,8 +272,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		qdel(src)
 
 /obj/item/clothing/mask/smokable/cigarette/menthol
-	name = "menthol cigarette"
-	desc = "A cigarette with a little minty kick. Well, minty in theory."
+	name = "flavoured lho-stick"
+	desc = "A lho-stick with a little minty kick."
 	icon_state = "cigmentol"
 	brand = "\improper Temperamento Menthol"
 	color = "#ddffe8"
@@ -284,7 +284,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigbuttmentol"
 
 /obj/item/clothing/mask/smokable/cigarette/luckystars
-	brand = "\improper Brouzefs"//It's spelled wrong on purpose.
+	brand = "\improper Imperial-Cut"//It's spelled wrong on purpose.
 	icon_state = "BrouzoufCig"
 	type_butt = /obj/item/cigbutt/brouzef
 
@@ -292,7 +292,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "BrourzoufCigButt"
 
 /obj/item/clothing/mask/smokable/cigarette/jerichos
-	name = "rugged cigarette"
+	name = "Guardsmen Choice lho"
 	brand = "\improper RoachEyes"
 	icon_state = "cigjer"
 	color = "#dcdcdc"
@@ -303,7 +303,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigbuttjer"
 
 /obj/item/clothing/mask/smokable/cigarette/carcinomas
-	name = "tannhauser cigarette"
+	name = "Imperial Select"
 	brand = "\improper Tannhauser Gate"
 	icon_state = "TannhauserGateCig"
 	type_butt = /obj/item/cigbutt/jerichos
@@ -313,7 +313,7 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "TannhauserGateCigButt"
 
 /obj/item/clothing/mask/smokable/cigarette/professionals
-	name = "thin cigarette"
+	name = "Thin lho-stick"
 	brand = "\improper Professional"
 	icon_state = "cigpro"
 	type_butt = /obj/item/cigbutt/professionals
@@ -323,14 +323,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "cigbuttpro"
 
 /obj/item/clothing/mask/smokable/cigarette/killthroat
-	brand = "\improper Acme Co. cigarette"
+	brand = "\improper Low-Quality Lho"
 
 /obj/item/clothing/mask/smokable/cigarette/dromedaryco
-	brand = "\improper Dromedary Co. cigarette"
+	brand = "\improper Low-Quality Lho"
 
 /obj/item/clothing/mask/smokable/cigarette/trident
 	name = "wood tip cigar"
-	brand = "\improper Trident cigar"
+	brand = "\improper Astartes cigar"
 	desc = "A narrow cigar with a wooden tip."
 	icon_state = "cigarello"
 	item_state = "cigaroff"
