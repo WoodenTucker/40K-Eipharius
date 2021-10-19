@@ -185,8 +185,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/gin
-	name = "Griffeater Gin"
-	desc = "A bottle of high quality gin, produced in the New London Space Station."
+	name = "Gosk White-Gyn"
+	desc = "A bottle of White-Gyn: As expensive as it is liver-destroying!"
 	icon_state = "ginbottle"
 	center_of_mass = "x=16;y=4"
 	New()
@@ -194,8 +194,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/gin, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/whiskey
-	name = "Uncle Cap's Special Reserve"
-	desc = "A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES."
+	name = "Agri-Whiskey"
+	desc = "A fairly good-quality grain-based liquor fit for the Imperiums stout defenders!"
 	icon_state = "whiskeybottle"
 	center_of_mass = "x=16;y=3"
 	New()
@@ -203,8 +203,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/whiskey, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey
-	name = "Special Blend Whiskey"
-	desc = "Just when you thought regular whiskey was good... This silky, amber goodness has to come along and ruin everything."
+	name = "Agri-Select Whiskey"
+	desc = "Agri-Select. Distilled using techniques older than the Imperium itself: It's seriously good stuff!"
 	icon_state = "whiskeybottle2"
 	center_of_mass = "x=16;y=3"
 	New()
@@ -212,8 +212,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/specialwhiskey, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/vodka
-	name = "Tunguska Triple Distilled"
-	desc = "Aah, vodka. Prime choice of drink AND fuel by Terrans around the galaxy."
+	name = "Rahzvod"
+	desc = "Kicks like a Grox and tastes like you licked the grease off your lasgun! Commonly dispensed as a ration to the Firstborn Regiment!"
 	icon_state = "vodkabottle"
 	center_of_mass = "x=17;y=3"
 	New()
@@ -221,8 +221,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/vodka, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/tequilla
-	name = "Caccavo Guaranteed Quality Tequilla"
-	desc = "Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!"
+	name = "Petro-Rotgut"
+	desc = "Made from what can only be described as 'Questionable' materials. It'll put you on your ass fast!"
 	icon_state = "tequillabottle"
 	center_of_mass = "x=16;y=3"
 	New()
@@ -248,8 +248,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/patron, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/rum
-	name = "Captain Pete's Cuban Spiced Rum"
-	desc = "This isn't just rum, oh no. It's practically GRIFF in a bottle."
+	name = "Old Foiz"
+	desc = "Distilled Sugar. You don't get much more classic than Old Foiz!"
 	icon_state = "rumbottle"
 	center_of_mass = "x=16;y=8"
 	New()
@@ -266,8 +266,8 @@
 		reagents.add_reagent(/datum/reagent/water/holywater, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/vermouth
-	name = "Goldeneye Vermouth"
-	desc = "Sweet, sweet dryness~"
+	name = "Vlod"
+	desc = "Dry, yet sweet. Of course the bloody Valhallans made it!"
 	icon_state = "vermouthbottle"
 	center_of_mass = "x=17;y=3"
 	New()
@@ -275,8 +275,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/vermouth, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/kahlua
-	name = "Robert Robust's Coffee Liqueur"
-	desc = "A widely known, Mexican coffee-flavoured liqueur. In production since 1936, HONK!"
+	name = "Recaf Rotgut"
+	desc = "Because adding liquor to your cup of mud is just a little too tiresome!"
 	icon_state = "kahluabottle"
 	center_of_mass = "x=17;y=3"
 	New()
@@ -284,8 +284,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/coffee/kahlua, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/goldschlager
-	name = "College Girl Goldschlager"
-	desc = "Because they are the only ones who will drink 100 proof cinnamon schnapps."
+	name = "Hive-Spire Goldschlager"
+	desc = "Somebody is going to murder you for owning this!"
 	icon_state = "goldschlagerbottle"
 	center_of_mass = "x=15;y=3"
 	New()
@@ -293,8 +293,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/goldschlager, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/cognac
-	name = "Chateau De Baton Premium Cognac"
-	desc = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time."
+	name = "Gleece"
+	desc = "A sweet and strongly alchoholic drink. It costs more than you're worth!"
 	icon_state = "cognacbottle"
 	center_of_mass = "x=16;y=6"
 	New()
@@ -311,8 +311,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/wine, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/absinthe
-	name = "Jailbreaker Verte"
-	desc = "One sip of this and you just know you're gonna have a good time."
+	name = "Estufagemi Wine"
+	desc = "Pungant, terpy and generally a hardcore alcoholics version of Wine!"
 	icon_state = "absinthebottle"
 	center_of_mass = "x=16;y=6"
 	New()
@@ -320,8 +320,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/absinthe, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/melonliquor
-	name = "Emeraldine Melon Liquor"
-	desc = "A bottle of 46 proof Emeraldine Melon Liquor. Sweet and light."
+	name = "Melon Liquor"
+	desc = "A bottle of sweet sugary melon-liquor. Because the God-Emperor is dead!"
 	icon_state = "alco-green" //Placeholder.
 	center_of_mass = "x=16;y=6"
 	New()
@@ -329,8 +329,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/melonliquor, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/bluecuracao
-	name = "Miss Blue Curacao"
-	desc = "A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic."
+	name = "Blue Curacao"
+	desc = "A fruity, exceptionally azure drink. Somehow still popular in the Grimdarkness!"
 	icon_state = "alco-blue" //Placeholder.
 	center_of_mass = "x=16;y=6"
 	New()
@@ -347,7 +347,7 @@
 		reagents.add_reagent(/datum/reagent/ethanol/herbal, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/grenadine
-	name = "Briar Rose Grenadine Syrup"
+	name = "Grenadine Syrup"
 	desc = "Sweet and tangy, a bar syrup used to add color or flavor to drinks."
 	icon_state = "grenadinebottle"
 	center_of_mass = "x=16;y=6"
@@ -356,8 +356,8 @@
 		reagents.add_reagent(/datum/reagent/drink/grenadine, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/cola
-	name = "\improper Space Cola"
-	desc = "Cola. in space."
+	name = "\improper Imperial Cola"
+	desc = "Imperial-Cola in a bottle!"
 	icon_state = "colabottle"
 	center_of_mass = "x=16;y=6"
 	New()
@@ -365,8 +365,8 @@
 		reagents.add_reagent(/datum/reagent/drink/space_cola, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/space_up
-	name = "\improper Space-Up"
-	desc = "Tastes like a hull breach in your mouth."
+	name = "\improper Warp-Up"
+	desc = "Warp-Up in a bottle!"
 	icon_state = "space-up_bottle"
 	center_of_mass = "x=16;y=6"
 	New()
@@ -374,8 +374,8 @@
 		reagents.add_reagent(/datum/reagent/drink/space_up, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/space_mountain_wind
-	name = "\improper Trench Mountain Wind"
-	desc = "Blows right through you like a mortar wind."
+	name = "\improper Imperial Ploin-Fizz"
+	desc = "Imperial Ploin-Fizz in a bottle!"
 	icon_state = "space_mountain_wind_bottle"
 	center_of_mass = "x=16;y=6"
 	New()
@@ -383,8 +383,8 @@
 		reagents.add_reagent(/datum/reagent/drink/spacemountainwind, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/pwine
-	name = "Warlock's Velvet"
-	desc = "What a delightful packaging for a surely high quality wine! The vintage must be amazing!"
+	name = "Madgods Folly"
+	desc = "Certainly the finest sin anyone can guzzle down!"
 	icon_state = "pwinebottle"
 	center_of_mass = "x=16;y=4"
 	New()
@@ -393,8 +393,8 @@
 
 //////////////////////////PREMIUM ALCOHOL ///////////////////////
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka
-	name = "Four Stripes Quadruple Distilled"
-	desc = "Premium distilled vodka imported directly from the Terran Colonial Confederation."
+	name = "Premium Tridistilled Vodka"
+	desc = "Premium distilled vodka from the botanical starchs of a 'potato'!"
 	icon_state = "premiumvodka"
 	center_of_mass = "x=17;y=3"
 
@@ -406,8 +406,8 @@
 	name = "[namepick] [typepick]"
 
 /obj/item/reagent_containers/food/drinks/bottle/premiumwine
-	name = "Uve De Blanc"
-	desc = "You feel pretentious just looking at it."
+	name = "House Amasec"
+	desc = "You feel pretentious just looking at it. Produced in-house by the Rogue Traders snobbish brethren!"
 	icon_state = "premiumwine"
 	center_of_mass = "x=16;y=4"
 
@@ -473,8 +473,8 @@
 	rag_underlay = "rag_small"
 
 /obj/item/reagent_containers/food/drinks/bottle/small/beer
-	name = "trench beer"
-	desc = "Contains only water, malt and hops."
+	name = "Imperial Beer"
+	desc = "Contains only recycled water, refined starchs and yeast."
 	icon_state = "beer"
 	center_of_mass = "x=16;y=12"
 /obj/item/reagent_containers/food/drinks/bottle/small/beer/New()
@@ -482,8 +482,8 @@
 	reagents.add_reagent(/datum/reagent/ethanol/beer, 30)
 
 /obj/item/reagent_containers/food/drinks/bottle/small/ale
-	name = "\improper Magm-Ale"
-	desc = "A true dorf's drink of choice."
+	name = "\improper Imperial Bitter"
+	desc = "A staple of any hardened son-of-a-bitch's diet."
 	icon_state = "alebottle"
 	item_state = "beer"
 	center_of_mass = "x=16;y=10"
@@ -493,8 +493,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/bottle/amasecpoor
-	name = "Cheap Amasec"
-	desc = "Affordable, golden, amasec. The beloved drink of the Imperium"
+	name = "Rotgut Amasec"
+	desc = "Affordable, through of questionable quality and flavour. The beloved drink of the Imperium's Hive-Scum!"
 	icon_state = "amasecpoor"
 	center_of_mass = "x=16;y=8"
 	New()
@@ -502,8 +502,8 @@
 		reagents.add_reagent(/datum/reagent/ethanol/amasec/cheap, 100)
 
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive
-	name = "Exppensive Amasec"
-	desc = "Expensive, aged and meant for the nobility of the Imperium. This bottle of amasec tastes and smells like the embrace of the Emperor himself."
+	name = "Expensive Amasec"
+	desc = "Expensive, aged and meant for the nobility of the Imperium. This bottle of amasec tastes and smells like the embrace of the Emperor himself!"
 	icon_state = "amasecpricey"
 	center_of_mass = "x=16;y=8"
 	New()

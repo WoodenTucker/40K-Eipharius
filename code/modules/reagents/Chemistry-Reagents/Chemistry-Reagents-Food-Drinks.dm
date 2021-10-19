@@ -637,17 +637,17 @@
 	glass_desc = "White and nutritious soy goodness!"
 
 /datum/reagent/drink/tea
-	name = "Tea"
-	description = "Tasty black tea, it has antioxidants, it's good for you!"
-	taste_description = "tart black tea"
+	name = "Tanna"
+	description = "A fairly robust and offensive tea enjoyed by the Valhallan Guard regiment."
+	taste_description = "incredibly strong and bitter black-tea"
 	color = "#101000"
 	adj_dizzy = -2
 	adj_drowsy = -1
 	adj_sleepy = -3
 	adj_temp = 20
 
-	glass_name = "tea"
-	glass_desc = "Tasty black tea, it has antioxidants, it's good for you!"
+	glass_name = "Tanna"
+	glass_desc = "A fairly robust and offensive tea enjoyed by the Valhallan Guard regiment."
 	glass_special = list(DRINK_VAPOR)
 
 /datum/reagent/drink/tea/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
@@ -658,19 +658,19 @@
 
 /datum/reagent/drink/tea/icetea
 	name = "Iced Tea"
-	description = "No relation to a certain rap artist/ actor."
+	description = "Standard Imperial 'tea' brewed from various plant and sugars!"
 	taste_description = "sweet tea"
 	color = "#104038" // rgb: 16, 64, 56
 	adj_temp = -5
 
 	glass_name = "iced tea"
-	glass_desc = "No relation to a certain rap artist/ actor."
+	glass_desc = "Standard Imperial 'tea' brewed from various plant and sugars!"
 	glass_special = list(DRINK_ICE)
 
 /datum/reagent/drink/coffee
-	name = "Coffee"
-	description = "Coffee is a brewed drink prepared from roasted seeds, commonly called coffee beans, of the coffee plant."
-	taste_description = "bitterness"
+	name = "Recaf"
+	description = "Effectively the lifeblood of any schola, guardsmen or human to ever have walked the materium."
+	taste_description = "bitter shitty coffee"
 	taste_mult = 1.3
 	color = "#482000"
 	adj_dizzy = -5
@@ -679,8 +679,8 @@
 	adj_temp = 25
 	overdose = 45
 
-	glass_name = "coffee"
-	glass_desc = "Don't drop it, or you'll send scalding liquid and glass shards everywhere."
+	glass_name = "Recaf"
+	glass_desc = "Don't drop it, or you'll send scalding liquid over yourself faster than your local Munitorium Enforcer can shoot you for wastefulness!"
 	glass_special = list(DRINK_VAPOR)
 
 /datum/reagent/drink/coffee/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
@@ -713,14 +713,14 @@
 	M.add_chemical_effect(CE_PULSE, 2)
 
 /datum/reagent/drink/coffee/icecoffee
-	name = "Iced Coffee"
-	description = "Coffee and ice, refreshing and cool."
-	taste_description = "bitter coldness"
+	name = "Iced Recaf"
+	description = "Recaf, now with ice!"
+	taste_description = "bitter watery and freezing shitty coffee"
 	color = "#102838"
 	adj_temp = -5
 
-	glass_name = "iced coffee"
-	glass_desc = "A drink to perk you up and refresh you!"
+	glass_name = "iced recaf"
+	glass_desc = "Recaf, now with ice!"
 	glass_special = list(DRINK_ICE)
 
 /datum/reagent/drink/coffee/soy_latte
@@ -753,15 +753,15 @@
 
 /datum/reagent/drink/hot_coco
 	name = "Hot Chocolate"
-	description = "Made with love! And cocoa beans."
-	taste_description = "creamy chocolate"
+	description = "Made with love! If love was synthetic chemicals that could be used as Flamer fuel."
+	taste_description = "creamy shitty chocolate"
 	reagent_state = REAGENT_LIQUID
 	color = "#403010"
 	nutrition = 2
 	adj_temp = 5
 
 	glass_name = "hot chocolate"
-	glass_desc = "Made with love! And cocoa beans."
+	glass_desc = "Watch it! It'll be warm!"
 	glass_special = list(DRINK_VAPOR)
 
 /datum/reagent/drink/sodawater
@@ -813,14 +813,14 @@
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/kiraspecial
-	name = "Kira Special"
-	description = "Long live the guy who everyone had mistaken for a girl. Baka!"
+	name = "Saint Special"
+	description = "Praise be to the saints!"
 	taste_description = "fruity sweetness"
 	color = "#cccc99"
 	adj_temp = -5
 
-	glass_name = "Kira Special"
-	glass_desc = "Long live the guy who everyone had mistaken for a girl. Baka!"
+	glass_name = "Saints Special"
+	glass_desc = "Praise be to the saints!"
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/brownstar
@@ -905,51 +905,51 @@
 	glass_desc = "Sweet and tangy, a bar syrup used to add color or flavor to drinks."
 
 /datum/reagent/drink/space_cola
-	name = "Trench Cola"
-	description = "A refreshing beverage."
-	taste_description = "cola"
+	name = "Imperial Cola"
+	description = "About as refreshing as luke-warm piss. Very likely made FROM recycled piss!"
+	taste_description = "slightly tangy water with fizz"
 	reagent_state = REAGENT_LIQUID
 	color = "#100800"
 	adj_drowsy = -3
 	adj_temp = -5
 
-	glass_name = "Trench Cola"
-	glass_desc = "A glass of refreshing Trench Cola"
+	glass_name = "Imperial Cola"
+	glass_desc = "A glass of refreshing Imperial Cola! About as refreshing as luke-warm piss. Very likely made FROM recycled piss!"
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/spacemountainwind
-	name = "Trench Mountain Wind"
-	description = "Blows right through you like a mortar."
+	name = "Imperial Ploin-Fizz"
+	description = "Fizzy ploin juice. Rather sweet and tangy!"
 	taste_description = "sweet citrus soda"
 	color = "#102000"
 	adj_drowsy = -7
 	adj_sleepy = -1
 	adj_temp = -5
 
-	glass_name = "Trench Mountain Wind"
-	glass_desc = "Trench Mountain Wind. As you know, there are no mountains in the trenches, only death."
+	glass_name = "Imperial Ploin-Fizz"
+	glass_desc = "Fizzy ploin juice. Rather sweet and tangy!"
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/dr_gibb
-	name = "Dr. Gibb"
-	description = "A delicious blend of 42 different flavours"
-	taste_description = "cherry soda"
+	name = "Dr. Russ"
+	description = "A delicious blend of 42 different flavours. Including Bloodthirster juice!"
+	taste_description = "like PURE HATRED FOR THE FUCKING LION! Oh and Cherries!"
 	color = "#102000"
 	adj_drowsy = -6
 	adj_temp = -5
 
-	glass_name = "Dr. Gibb"
-	glass_desc = "Dr. Gibb. Not as dangerous as the name might imply."
+	glass_name = "Dr. Russ"
+	glass_desc = "A delicious blend of 42 different flavours. Including Bloodthirster juice!"
 
 /datum/reagent/drink/space_up
-	name = "Space-Up"
-	description = "Tastes like a hull breach in your mouth."
-	taste_description = "a hull breach"
+	name = "Warp-Up"
+	description = "Sends your taste-buds to the warp! Because it tastes like SHIT!"
+	taste_description = "slightly batshit flavour compounds"
 	color = "#202800"
 	adj_temp = -8
 
-	glass_name = "Space-up"
-	glass_desc = "Space-up. It helps keep your cool."
+	glass_name = "Warp-up"
+	glass_desc = "Sends your taste-buds to the warp! Because it tastes like SHIT!"
 	glass_special = list(DRINK_FIZZ)
 
 /datum/reagent/drink/lemon_lime
@@ -988,7 +988,7 @@
 
 /datum/reagent/drink/dry_ramen
 	name = "Dry Ramen"
-	description = "Space age food, since August 25, 1958. Contains dried noodles, vegetables, and chemicals that boil in contact with water."
+	description = "Space age food, since well before the Imperium! Contains dried noodles, 'vegetables', and chemicals that boil in contact with water."
 	taste_description = "dry and cheap noodles"
 	reagent_state = REAGENT_SOLID
 	nutrition = 1
@@ -1043,36 +1043,36 @@
 // Basic
 
 /datum/reagent/ethanol/absinthe
-	name = "Absinthe"
-	description = "Watch out that the Green Fairy doesn't come for you!"
-	taste_description = "death and licorice"
+	name = "Estufagemi Wine"
+	description = "More expensive than you!"
+	taste_description = "powerful licoricey wine"
 	taste_mult = 1.5
 	color = "#33ee00"
 	strength = 12
 
-	glass_name = "absinthe"
-	glass_desc = "Wormwood, anise, oh my."
+	glass_name = "Estufagemi Wine"
+	glass_desc = "This glass is worth more than you!"
 
 /datum/reagent/ethanol/ale
-	name = "Ale"
+	name = "Imperial Ale"
 	description = "A dark alchoholic beverage made by malted barley and yeast."
-	taste_description = "hearty barley ale"
+	taste_description = "hearty and bitter grain ale"
 	color = "#4c3100"
 	strength = 50
 
-	glass_name = "ale"
-	glass_desc = "A freezing pint of delicious ale"
+	glass_name = "Imperial Bitter"
+	glass_desc = "A wickedly dark pint of delicious bitter ale"
 
 /datum/reagent/ethanol/beer
-	name = "Beer"
-	description = "An alcoholic beverage made from malted grains, hops, yeast, and water."
-	taste_description = "piss water"
+	name = "Imperial Beer"
+	description = "Contains only recycled water, refined starchs and yeast."
+	taste_description = "shitty piss-water beer"
 	color = "#ffd300"
 	strength = 50
 	nutriment_factor = 1
 
-	glass_name = "beer"
-	glass_desc = "A freezing pint of beer"
+	glass_name = "Imperial Beer"
+	glass_desc = "A pale pint of beer"
 
 /datum/reagent/ethanol/beer/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
@@ -1092,15 +1092,15 @@
 	glass_desc = "Exotically blue, fruity drink, distilled from oranges."
 
 /datum/reagent/ethanol/cognac
-	name = "Cognac"
-	description = "A sweet and strongly alchoholic drink, made after numerous distillations and years of maturing. Classy as fornication."
-	taste_description = "rich and smooth alcohol"
+	name = "Gleece"
+	description = "How very fancy.."
+	taste_description = "Expensive sweet burning"
 	taste_mult = 1.1
 	color = "#ab3c05"
 	strength = 15
 
-	glass_name = "cognac"
-	glass_desc = "Damn, you feel like some kind of French aristocrat just by holding this."
+	glass_name = "Gleece"
+	glass_desc = "Worth alot more than you are!"
 
 /datum/reagent/ethanol/deadrum
 	name = "Deadrum"
@@ -1119,14 +1119,14 @@
 	M.dizziness +=5
 
 /datum/reagent/ethanol/gin
-	name = "Gin"
-	description = "It's gin. In space. I say, good sir."
-	taste_description = "an alcoholic christmas tree"
+	name = "White Gyn"
+	description = "White-Gyn! It's a shocker it got out this far.."
+	taste_description = "an alcoholic Emperors-Day tree"
 	color = "#0064c6"
 	strength = 15
 
-	glass_name = "gin"
-	glass_desc = "A crystal clear glass of Griffeater gin."
+	glass_name = "Gyn"
+	glass_desc = "A crystal clear glass of White-Gyn!"
 
 //Base type for alchoholic drinks containing coffee
 /datum/reagent/ethanol/coffee
@@ -1161,15 +1161,15 @@
 	M.make_jittery(5)
 
 /datum/reagent/ethanol/coffee/kahlua
-	name = "Kahlua"
-	description = "A widely known, Mexican coffee-flavoured liqueur. In production since 1936!"
-	taste_description = "spiked latte"
+	name = "Rotgut Recaf"
+	description = "For fuck sakes.. Just drink your Recaf and LIKE IT!"
+	taste_description = "spiked recaf"
 	taste_mult = 1.1
 	color = "#4c3100"
 	strength = 15
 
-	glass_name = "RR coffee liquor"
-	glass_desc = "DAMN, THIS THING LOOKS ROBUST"
+	glass_name = "Rotgut Recaf"
+	glass_desc = "You're pretty sure this is just grain-alcohol shoved into recaf."
 
 /datum/reagent/ethanol/melonliquor
 	name = "Melon Liquor"
@@ -1182,15 +1182,15 @@
 	glass_desc = "A relatively sweet and fruity 46 proof liquor."
 
 /datum/reagent/ethanol/rum
-	name = "Rum"
-	description = "Yohoho and all that."
-	taste_description = "spiked butterscotch"
+	name = "Old Foiz"
+	description = "This is where the Rum has gone!"
+	taste_description = "Buttery sugar"
 	taste_mult = 1.1
 	color = "#ecb633"
 	strength = 15
 
-	glass_name = "rum"
-	glass_desc = "Now you want to Pray for a pirate suit, don't you?"
+	glass_name = "Old Foiz"
+	glass_desc = "Sweet, sweet Foiz!"
 
 /datum/reagent/ethanol/sake
 	name = "Sake"
@@ -1203,14 +1203,14 @@
 	glass_desc = "A glass of sake."
 
 /datum/reagent/ethanol/tequilla
-	name = "Tequila"
-	description = "A strong and mildly flavoured, mexican produced spirit. Feeling thirsty hombre?"
-	taste_description = "paint stripper"
+	name = "Petro-Rotgut"
+	description = "Say goodnight to your liver."
+	taste_description = "greasy shitty liquor"
 	color = "#ffff91"
 	strength = 25
 
 	glass_name = "Tequilla"
-	glass_desc = "Now all that's missing is the weird colored shades!"
+	glass_desc = "Somehow the scent is even worse than when it was in the bottle!"
 
 /datum/reagent/ethanol/thirteenloko
 	name = "Thirteen Loko"
@@ -1234,25 +1234,25 @@
 	M.add_chemical_effect(CE_PULSE, 2)
 
 /datum/reagent/ethanol/vermouth
-	name = "Vermouth"
-	description = "You suddenly feel a craving for a martini..."
+	name = "Vlod"
+	description = "You suddenly feel a craving to freeze your ass off and be miserable.."
 	taste_description = "dry alcohol"
 	taste_mult = 1.3
 	color = "#91ff91" // rgb: 145, 255, 145
 	strength = 15
 
-	glass_name = "vermouth"
-	glass_desc = "You wonder why you're even drinking this straight."
+	glass_name = "Vlod"
+	glass_desc = "This is gonna be dry!"
 
 /datum/reagent/ethanol/vodka
-	name = "Vodka"
-	description = "Number one drink AND fueling choice for Terrans around the galaxy."
+	name = "Rahzvod"
+	description = "Kicks like a Grox and tastes like you licked the grease off your lasgun! Commonly dispensed as a ration to the Firstborn Regiment!"
 	taste_description = "grain alcohol"
 	color = "#0064c8" // rgb: 0, 100, 200
 	strength = 15
 
-	glass_name = "vodka"
-	glass_desc = "The glass contain wodka. Xynta."
+	glass_name = "Rahzvod"
+	glass_desc = "Kicks like a Grox. You sure you'll be able to finish the glass, Soldier?"
 
 /datum/reagent/ethanol/vodka/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
@@ -1260,20 +1260,20 @@
 
 /datum/reagent/ethanol/vodka/premium
 	name = "Premium Vodka"
-	description = "Premium distilled vodka imported directly from the Terran Colonial Confederation."
-	taste_description = "clear kvass"
+	description = "Premium distilled vodka imported directly from an Imperial-Secret House!"
+	taste_description = "Victory"
 	color = "#aaddff" // rgb: 170, 221, 255 - very light blue.
 	strength = 10
 
 /datum/reagent/ethanol/whiskey
-	name = "Whiskey"
-	description = "A superb and well-aged single-malt whiskey. Damn."
+	name = "Agri-Whiskey"
+	description = "Whiskey! Warming the hearts of any Imperial since before the Imperium!"
 	taste_description = "molasses"
 	color = "#4c3100"
 	strength = 25
 
-	glass_name = "whiskey"
-	glass_desc = "The silky, smokey whiskey goodness inside the glass makes the drink look very classy."
+	glass_name = "Agri-Whiskey"
+	glass_desc = "A fairly good-quality grain-based liquor fit for the Imperiums stout defenders!"
 
 /datum/reagent/ethanol/wine
 	name = "Wine"

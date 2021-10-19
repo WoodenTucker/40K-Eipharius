@@ -3360,17 +3360,17 @@
 		icon_state = open_can_icon
 
 /obj/item/reagent_containers/food/snacks/warfare/flower
-	name = "\improper canned flowergrub"
+	name = "\improper canned soylent"
 	icon_state = "flowersgrub"
 	open_can_icon = "flowersgrub_open"
-	desc = "A spinchy flowergrub mix. Tastes like shit but you'll eat it anyway."
+	desc = "Soylent in a can! Blander than your life, but you'll still eat it!"
 	trash = /obj/item/trash/warfare_can/flower
 
 /obj/item/reagent_containers/food/snacks/warfare/rat
-	name = "\improper canned ratmeat"
+	name = "\improper canned corpse-starch"
 	icon_state = "ratmeat"
 	open_can_icon = "ratmeat_open"
-	desc = "Just in case catching one yourself is too hard."
+	desc = "The closest thing to a casket any hive-scum will see in the Imperium!"
 	trash = /obj/item/trash/warfare_can/rat
 
 /obj/item/reagent_containers/food/snacks/warfare/nim
@@ -3381,10 +3381,10 @@
 	trash = /obj/item/trash/warfare_can/nim
 
 /obj/item/reagent_containers/food/snacks/warfare/sardine
-	name = "\improper pissardines"
+	name = "\improper canned fishy-squig"
 	icon_state = "pisssardine"
 	open_can_icon = "pisssardine_open"
-	desc = "A can of the only sort of fish that could live in these waters."
+	desc = "A can of... Squig... Fish?... Is that even safe to eat?"
 	trash = /obj/item/trash/warfare_can/sardine
 
 /obj/item/reagent_containers/food/snacks/skewered_rat_meat
