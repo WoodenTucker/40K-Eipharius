@@ -4,6 +4,7 @@
 	parry_sounds = list('sound/weapons/blunt_parry1.ogg', 'sound/weapons/blunt_parry2.ogg', 'sound/weapons/blunt_parry3.ogg')
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	slot_flags = SLOT_BACK|SLOT_S_STORE
+	force = 13
 	var/empty_icon = null
 
 /obj/item/gun/projectile/shotgun/update_icon()
@@ -24,7 +25,7 @@
 	item_state = "shotgun"
 	max_shells = 5
 	w_class = ITEM_SIZE_HUGE
-	force = 15
+	force = 20
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
@@ -37,11 +38,11 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
-	move_delay= 2.5
-	one_hand_penalty = 6
-	accuracy = 1.5
+	move_delay= 2
+	one_hand_penalty = 4
+	accuracy = -1.3
 	fire_delay= 3
-	armor_penetration = 2
+	armor_penetration = 1
 
 /obj/item/gun/projectile/shotgun/pump/New()
 	..()
@@ -146,6 +147,11 @@
 	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/shotgun
 	wielded_item_state = "cshotgun2"
+	move_delay= 2
+	one_hand_penalty = 4
+	accuracy = -1.3
+	fire_delay= 3.5
+	armor_penetration = 1
 
 /obj/item/gun/projectile/shotgun/doublebarrel
 	name = "\improper MS Doom"
@@ -259,5 +265,5 @@
 	gun_type = GUN_PISTOL
 	move_delay= 2
 	one_hand_penalty = 3
-	accuracy = 2.5
+	accuracy = -1
 	fire_delay= 4.5

@@ -155,7 +155,7 @@
 	name = "heavy asset protection beret"
 	desc = "An armored red beret adorned with the crest of corporate asset protection. Doesn't sacrifice style or safety."
 	icon_state = "beret_red"
-	armor = list(melee = 65, bullet = 55, laser = 35,energy = 20, bomb = 30, bio = 30, rad = 30)
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 20, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/beret/guard
@@ -168,16 +168,38 @@
 	desc = "A simple, solid color beret. This one has no emblems or insignia on it."
 	icon_state = "beret_white"
 
+// NEW HELMETS
+/obj/item/clothing/head/helmet/salvage
+	name = "Reinforced Salvage Helmet"
+	desc = "An old salvage helmet reinforced with metal plates."
+	icon_state = "eva_rig"
+	item_state = "eva_rig"
+	armor = list(melee = 35, bullet = 35, laser = 25, energy = 30, bomb = 20, bio = 10, rad = 20)
+
+/obj/item/clothing/head/helmet/mining
+	name = "Reinforced Mining Helmet"
+	desc = "A reinforced mining helmet designed to protect the face from blunt force trauma - particularly from falling rock and debris."
+	icon_state = "rig0-ancient"
+	item_state = "rig0-ancient"
+	armor = list(melee = 50, bullet = 25, laser = 20, energy = 30, bomb = 30, bio = 10, rad = 30)
+
 // Astra Militarum Stuff
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
-	name = "Magistratum Enforcers Helmet"
-	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in dark blue colour."
+	name = "Magistratum Enforcer Helmet"
+	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in a dark blue colour."
 	icon_state = "Jhelm2"
 	item_state = "Jhelm2"
-	armor = list(melee = 40, bullet = 35, laser = 25, energy = 15, bomb = 10, bio = 10, rad = 10)
+	armor = list(melee = 38, bullet = 30, laser = 20, energy = 35, bomb = 10, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/captain
+	name = "Magistratum Captain Helmet"
+	desc = "The Enforcer Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Captain's both to show rank and for intimidation, It is painted in a dark blue colour."
+	icon_state = "arbiter"
+	item_state = "arbiter"
+	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
@@ -431,21 +453,35 @@
 
 /obj/item/clothing/head/inqhelm
 	name = "Inquisition Retinue Helmet"
-	desc = "An helmet issued to member of the Inquisition Investigation Team, Very protective unlike Average Guardsman's."
+	desc = "An helmet issued to members of the Inquisition."
 	icon_state = "inq_helm"
 	item_state = "inq_helm"
-	armor = list(melee = 40, bullet = 40, laser = 30, energy = 20, bomb = 30, bio = 10, rad = 10)
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/head/inqhelm/rare
+	name = "Inquisition Shrouded Helmet"
+	desc = "An helmet issued to members of the Inquisition."
+	icon_state = "ihhelmet"
+	item_state = "ihhelmet"
+	armor = list(melee = 40, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
+	siemens_coefficient = 0.9
+
+/obj/item/clothing/head/inqhelm/stealth
+	name = "Inquisition Stealth Helmet"
+	desc = "An helmet issued to members of the Vindicare Temple."
+	icon_state = "stealth_rig_sealed"
+	item_state = "stealth_rig_sealed"
+	armor = list(melee = 25, bullet = 50, laser = 45, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/ordohereticus
  	name = "Inquisition Holy Hat"
- 	desc = "An hat issued to Ordo Hereticus Inquisitor's. Very Protective unlike the average flak helmet."
+ 	desc = "An hat issued to Ordo Hereticus Inquisitor's."
  	icon_state = "hereticushat"
  	item_state = "hereticushat"
  	cold_protection = HEAD
  	armor = list (melee = 50, bullet = 50, laser = 40, energy = 30, bomb = 40, bio = 20, rad = 20)
-
-
 
 // Adepta Sororitas
 
@@ -454,5 +490,5 @@
 	desc = "An helmet issued to the Battle Sister of the Adepta Sororitas Militant Wing, This one bears the Sigil of the Order of The Sacred Rose, If you looks closely, you can see it's omits holy power, making you feels safer and secure.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 52, bullet = 52, laser = 42, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_ORK)

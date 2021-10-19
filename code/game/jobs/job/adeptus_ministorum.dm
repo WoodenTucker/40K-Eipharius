@@ -24,18 +24,18 @@
 	shotgun_skill = 2
 	lmg_skill = 2
 	smg_skill = 2
-	melee_skill = 4
-	ranged_skill = 2
-	medical_skill = 5
-	engineering_skill = 0
-	surgery_skill = 3
+	melee_skill = 6
+	ranged_skill = 6
+	medical_skill = 6
+	engineering_skill = 3
+	surgery_skill = 4
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Confessor [current_name]")
-		H.add_stats(rand(10,13), rand(10,13), rand(10,12), rand(12,16)) //frail and holy
+		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -209,17 +209,17 @@
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
-	auto_rifle_skill = 9
-	semi_rifle_skill = 9
-	sniper_skill = 9
-	shotgun_skill = 9
-	lmg_skill = 9
-	smg_skill = 9
-	melee_skill = 7
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
+	melee_skill = 12
 	ranged_skill = 9
-	medical_skill = 4
-	engineering_skill = 0
-	surgery_skill = 1
+	medical_skill = 6
+	engineering_skill = 3
+	surgery_skill = 2
 	req_admin_notify = 1
 
 	equip(var/mob/living/carbon/human/H)
@@ -292,24 +292,24 @@
 	minimal_player_age = 14
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
-	melee_skill = 6
-	ranged_skill = 5
-	medical_skill = 10
-	engineering_skill = 1
-	surgery_skill = 10
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 9
+	ranged_skill = 8
+	medical_skill = 12
+	engineering_skill = 3
+	surgery_skill = 12
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Sister Hospitaller [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
+		H.add_stats(rand(13,17), rand(13,17), rand(13,17), rand(12,17))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
@@ -339,16 +339,16 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, access_sob)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels, access_sob)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-	melee_skill = 5
-	ranged_skill = 4
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 7
+	ranged_skill = 6
 	medical_skill = 8
-	engineering_skill = 0
+	engineering_skill = 1
 	surgery_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
@@ -390,21 +390,21 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
 	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-	melee_skill = 4
-	ranged_skill = 4
-	medical_skill = 8
-	engineering_skill = 1
-	surgery_skill = 7
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 8
+	ranged_skill = 7
+	medical_skill = 10
+	engineering_skill = 2
+	surgery_skill = 10
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(9,13), rand(9,13), rand(9,13), rand(10,13))
+		H.add_stats(rand(10,16), rand(10,16), rand(10,13), rand(10,16))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(

@@ -7,7 +7,8 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
-	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	accuracy = -2
+	fire_delay= 4.1
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
@@ -98,7 +99,9 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
-	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	force = 10
+	accuracy = -0.2
+	fire_delay= 4.3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
@@ -114,8 +117,10 @@
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
-	max_shells = 12
-	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	max_shells = 6
+	force = 12
+	accuracy = -0.3
+	fire_delay= 4.5
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
@@ -125,14 +130,17 @@
 
 /obj/item/gun/projectile/slugrevolver
 	name = "slug revolver"
-	desc = "The slug revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .357 ammo."
+	desc = "The slug revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .44 ammo."
 	icon_state = "slug_revolver"
 	item_state = "crevolver"
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
-	max_shells = 12
-	fire_delay = 6.75 //Revolvers are naturally slower-firing
+	max_shells = 6
+	force = 10
+	accuracy = -0.3
+	fire_delay= 4.5
+	armor_penetration = 5
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'

@@ -11,6 +11,7 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	multi_aim = 1
 	burst_delay = 2
+	force = 8
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
@@ -18,9 +19,9 @@
 
 	//machine pistol, easier to one-hand with
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=list(0), automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 3, 5), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 3, 5), automatic = 1)
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 1)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
@@ -35,7 +36,7 @@
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
 	cock_sound 	 = 'sound/weapons/guns/interact/smg_cock.ogg'
-	condition = 80
+	condition = 500
 
 /obj/item/gun/projectile/automatic/c20r/oldsmg/update_icon()
 	..()
@@ -62,7 +63,7 @@
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 3, 5), automatic = 2)
+		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1), automatic = 2)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
@@ -97,7 +98,7 @@
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 3, 5), automatic = 2)
+		list(mode_name="automatic",   	 burst=1, fire_delay=0,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1), automatic = 2)
 		)
 
 /obj/item/gun/projectile/automatic/c20r/update_icon()
@@ -130,7 +131,7 @@
 
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic",   	 burst=2, fire_delay=0,  move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
+		list(mode_name="automatic",   	 burst=2, fire_delay=0,  move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		)
 
 
@@ -158,7 +159,7 @@
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=6,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
+		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=6,    one_hand_penalty=6, burst_accuracy=list(0,-1,-2,-3,-3), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
 		)
 
@@ -186,7 +187,7 @@
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
+		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null, move_delay=4,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
 
@@ -224,7 +225,7 @@
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1,    fire_delay=0,    move_delay=null, use_launcher=null, one_hand_penalty=5, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3,    fire_delay=null, move_delay=6,    use_launcher=null, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1),
+		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1),
 		list(mode_name="fire grenades",  burst=null, fire_delay=null, move_delay=null, use_launcher=1,    one_hand_penalty=5, burst_accuracy=null, dispersion=null, automatic = 0)
 		)
 
@@ -299,7 +300,7 @@
 	//No single-shot or 3-round-burst modes since using this weapon should come at a cost to flexibility.
 	firemodes = list(
 		list(mode_name="short bursts",	burst=5, move_delay=12, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2), dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2), automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
+		list(mode_name="automatic",   	 burst=1, fire_delay=0.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		//list(mode_name="long bursts",	burst=8, move_delay=15, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		)
 
@@ -369,15 +370,15 @@
 	can_jam = FALSE
 	move_delay= 5
 	one_hand_penalty = 6
-	accuracy = 0
+	accuracy = -0.2
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
 
 	firemodes = list(
-		list(mode_name="short bursts", burst=3, fire_delay= 3, move_delay=8, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2), dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2), automatic = 0),
-		list(mode_name="long bursts", burst=5, fire_delay= 4, move_delay=10, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
-		list(mode_name="automatic", burst=1, fire_delay= 1.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.2), automatic = 0.1)
+		list(mode_name="short bursts", burst=3, fire_delay= 3, move_delay=8, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2), dispersion=list(0.1, 0.5, 0.6), automatic = 0),
+		list(mode_name="long bursts", burst=5, fire_delay= 4, move_delay=10, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion=list(0.1, 0.5, 0.6)),
+		list(mode_name="automatic", burst=1, fire_delay= 1.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		)
 

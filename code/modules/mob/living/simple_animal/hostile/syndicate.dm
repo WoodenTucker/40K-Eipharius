@@ -1,112 +1,56 @@
 /mob/living/simple_animal/hostile/syndicate
-	name = "corrupted guardsman"
-	desc = "BLOOD FOR THE BLOOD GOD!"
-	icon_state = "syndicate"
-	icon_living = "syndicate"
-	icon_dead = "syndicate_dead"
+	name = "Traitor Guardsman" // They're not very smart and aren't sprited well. Shoots kantrael laser projectiles and stabs with bayonet up close.
+	desc = "Battle worn and exhausted, they stare right through you."
+	icon_state = "traitorguard"
+	icon_living = "traitorguard"
+	icon_dead = "traitorguard_dead"
 	icon_gib = "syndicate_gib"
 	speak_chance = 0
 	turns_per_move = 5
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 4
+	speed = 3 // Their speed is low to prevent them from charging into melee range immediately.
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 100
-	health = 100
+	maxHealth = 170
+	health = 170
 	harm_intent_damage = 5
-	melee_damage_lower = 10
-	melee_damage_upper = 10
+	melee_damage_lower = 20
+	melee_damage_upper = 30
 	wander = 1
 	see_in_dark = 6
-	attacktext = "punched"
+	attacktext = "stabbed"
 	a_intent = I_HURT
-	var/corpse = /obj/effect/landmark/corpse/syndicate
-	var/weapon1
-	var/weapon2
+	// var/corpse = /obj/effect/landmark/corpse/syndicate
+	// var/weapon1
+	// var/weapon2
 	unsuitable_atoms_damage = 15
 	environment_smash = 1
 	faction = "chaos"
 	status_flags = CANPUSH
 
-/mob/living/simple_animal/hostile/syndicate/death(gibbed, deathmessage, show_dead_message)
-	..(gibbed, deathmessage, show_dead_message)
-	if(corpse)
-		new corpse (src.loc)
-	if(weapon1)
-		new weapon1 (src.loc)
-	if(weapon2)
-		new weapon2 (src.loc)
-	qdel(src)
-	return
+	ranged = 1
+	rapid = 1
+	projectilesound = 'sound/weapons/lasgun.ogg'
+	projectiletype = /obj/item/projectile/beam
 
 ///////////////Sword and shield////////////
 
-/mob/living/simple_animal/hostile/syndicate/melee
-	melee_damage_lower = 20
-	melee_damage_upper = 25
-	icon_state = "syndicatemelee"
-	icon_living = "syndicatemelee"
-	weapon1 = /obj/item/melee/classic_baton/trench_club
-	weapon2 = /obj/item/shield/energy
-	attacktext = "bashes"
-	status_flags = 0
-
-/mob/living/simple_animal/hostile/syndicate/melee/attackby(var/obj/item/O as obj, var/mob/user as mob)
-	if(O.force)
-		if(prob(80))
-			var/damage = O.force
-			if (O.damtype == PAIN)
-				damage = 0
-			health -= damage
-			visible_message("<span class='danger'>\The [src] has been attacked with \the [O] by \the [user].</span>")
-		else
-			visible_message("<span class='danger'>\The [src] blocks the [O] with its shield!</span>")
-		//user.do_attack_animation(src)
-	else
-		to_chat(usr, "<span class='warning'>This weapon is ineffective, it does no damage.</span>")
-		visible_message("<span class='warning'>\The [user] gently taps \the [src] with \the [O].</span>")
-
-
-/mob/living/simple_animal/hostile/syndicate/melee/bullet_act(var/obj/item/projectile/Proj)
-	if(!Proj)	return
-	if(prob(65))
-		src.health -= Proj.damage
-	else
-		visible_message("<span class='danger'>\The [src] blocks \the [Proj] with its shield!</span>")
-	return 0
-
-
-/mob/living/simple_animal/hostile/syndicate/melee/space
-	min_gas = null
-	max_gas = null
-	minbodytemp = 0
-	icon_state = "syndicatemeleespace"
-	icon_living = "syndicatemeleespace"
-	name = "Corrupted Guard Sergeant"
-	corpse = /obj/effect/landmark/corpse/syndicate
-	speed = 0
-
-/mob/living/simple_animal/hostile/syndicate/ranged
+/mob/living/simple_animal/hostile/syndicate/ranged // 
 	ranged = 1
 	rapid = 1
-	icon_state = "syndicateranged"
-	icon_living = "syndicateranged"
-	casingtype = /obj/item/ammo_casing/a10mm
-	projectilesound = 'sound/weapons/gunshot/gunshot_smg.ogg'
-	projectiletype = /obj/item/projectile/beam
+	icon_state = "traitorguard"
+	icon_living = "traitorguard"
+	projectilesound = 'sound/weapons/guns/fire/smg_fire.ogg'
+	projectiletype = /obj/item/projectile/bullet/rifle/a556
 
-	weapon1 = /obj/item/gun/energy/las/lasgun
-
-/mob/living/simple_animal/hostile/syndicate/ranged/space
-	icon_state = "syndicaterangedpsace"
-	icon_living = "syndicaterangedpsace"
-	name = "Corrupted Guard Sergeant"
-	min_gas = null
-	max_gas = null
-	minbodytemp = 0
-	corpse = /obj/effect/landmark/corpse/syndicate/commando
-	speed = 0
+/mob/living/simple_animal/hostile/syndicate/ranged/space // Same as above but more HP.
+	icon_state = "traitorguard"
+	icon_living = "traitorguard"
+	name = "Veteran Traitor Guardsmen"
+	maxHealth = 240
+	health = 240
+	speed = 2
 
 /mob/living/simple_animal/hostile/viscerator
 	name = "viscerator"

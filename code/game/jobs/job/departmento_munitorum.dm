@@ -17,23 +17,23 @@
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
 	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-	melee_skill = 3
-	ranged_skill = 4
-	medical_skill = 3
-	engineering_skill = 4
-	surgery_skill = 0
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 7
+	ranged_skill = 9
+	medical_skill = 4
+	engineering_skill = 5
+	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(10,15), rand(10,13), rand(10,13), rand(8,13))
+		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand(12,16))
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -66,11 +66,11 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 2
-	ranged_skill = 3
-	medical_skill = 2
+	melee_skill = 6
+	ranged_skill = 8
+	medical_skill = 3
 	engineering_skill = 3
-	surgery_skill = 0
+	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -118,3 +118,14 @@
 	minimal_access = list(access_library)
 	alt_titles = list("Journalist")
 	outfit_type = /decl/hierarchy/outfit/job/librarian
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 6
+	ranged_skill = 7
+	medical_skill = 3
+	engineering_skill = 3
+	surgery_skill = 2

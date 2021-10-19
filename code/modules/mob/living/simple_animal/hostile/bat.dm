@@ -1,24 +1,24 @@
 /mob/living/simple_animal/hostile/scarybat
-	name = "space bats"
-	desc = "A swarm of cute little blood sucking bats that looks pretty upset."
-	icon = 'icons/mob/bats.dmi'
-	icon_state = "bat"
-	icon_living = "bat"
-	icon_dead = "bat_dead"
-	icon_gib = "bat_dead"
+	name = "swarm"
+	desc = "A swarm of disgusting flesh eating insects."
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "swarm"
+	icon_living = "swarm"
+	icon_dead = "lizard_dead"
+	icon_gib = "lizard_dead"
 	speak_chance = 0
 	turns_per_move = 3
 	meat_type = /obj/item/reagent_containers/food/snacks/meat
 	response_help = "pets the"
 	response_disarm = "gently pushes aside the"
 	response_harm = "hits the"
-	speed = 4
-	maxHealth = 20
-	health = 20
+	speed = 0
+	maxHealth = 50
+	health = 50
 
 	harm_intent_damage = 8
-	melee_damage_lower = 10
-	melee_damage_upper = 10
+	melee_damage_lower = 2
+	melee_damage_upper = 8
 	attacktext = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'
 

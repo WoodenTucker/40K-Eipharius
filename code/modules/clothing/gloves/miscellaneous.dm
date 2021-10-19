@@ -150,7 +150,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 25, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/gloves/thick/swat/combat/krieg
 	icon_state = "krieggloves"

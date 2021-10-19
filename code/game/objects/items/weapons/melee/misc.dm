@@ -11,7 +11,6 @@
 	origin_tech = list(TECH_COMBAT = 4)
 	attack_verb = list("flicked", "whipped", "lashed")
 
-
 /obj/item/melee/whip/abyssal
 	name = "abyssal whip"
 	desc = "A weapon from the abyss. Requires 70 attack to wield."
@@ -101,7 +100,7 @@
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
 
-// KRIEG AXE 
+// KRIEG MELEE
 
 /obj/item/melee/trench_axe
 	name = "Trench Axe"
@@ -112,13 +111,29 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 30
-	block_chance = 20
+	block_chance = 30
 	sharp = TRUE
 	edge = TRUE
 	hitsound = "slash_sound"
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+
+// NEW MELEE
+
+/obj/item/melee/classic_baton/daemonhammer
+	name = "Daemonhammer"
+	desc = "A power weapon of incredible legend and stature amongst the Ordos Malleus, this Daemonhammer has been used by countless Inquisitor's in their conflict against the unholy creatures of chaos."
+	icon_state = "thunder_hammer"
+	item_state = "thunder_hammer"
+	wielded_icon = "thunder_hammer-w"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	str_requirement = 12
+	force = 42
+	armor_penetration = 10
+	block_chance = 8
 	grab_sound_is_loud = TRUE
 
 // CHAINSWORD 
@@ -131,8 +146,9 @@
 	item_state = "mercychainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 38
-	block_chance = 15
+	str_requirement = 12
+	force = 32
+	block_chance = 10
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -149,6 +165,7 @@
 	item_state = "inqchainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	str_requirement = 10
 	force = 30
 	block_chance = 25
 	sharp = TRUE
@@ -167,6 +184,7 @@
 	item_state = "pcsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	str_requirement = 14
 	force = 35
 	block_chance = 35
 	sharp = TRUE
@@ -184,8 +202,9 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
+	str_requirement = 12
 	force = 15// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 45
+	force_wielded = 38
 	block_chance = 25
 	sharp = 1
 	edge = 1

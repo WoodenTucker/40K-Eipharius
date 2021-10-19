@@ -344,6 +344,115 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/uranium/WillContain()
 	return list(/obj/item/stack/material/uranium/ten = 5)
 
+/// THIS IS THE SPECIAL CRATE SECTION FOR MERCHANT CONSOLE ///
+
+// NEED TO MAKE PILGRIM AND NON GUARD CRATES. PRIEST / MATERIAL - INCLUDE OTHER CRATES ABOVE/BELOW IN CARGO
+
+/obj/structure/closet/crate/carapace
+	name = "carapace armor"
+	desc = "A hefty, reinforced metal crate with an electronic locking system."
+	icon_state = "largermetal"
+	icon_opened = "largermetalopen"
+	icon_closed = "largermetal"
+
+/obj/structure/closet/crate/carapace/New()
+	new /obj/item/clothing/suit/armor/guardsman/carapace(src)
+
+/obj/structure/closet/crate/krieg
+	name = "deaths krieg equipment"
+	desc = "A hefty, reinforced metal crate with an electronic locking system."
+	icon_state = "largermetal"
+	icon_opened = "largermetalopen"
+	icon_closed = "largermetal"
+
+/obj/structure/closet/crate/krieg/New()
+	new /obj/item/clothing/head/helmet/krieghelmet(src)
+	new /obj/item/clothing/head/helmet/krieghelmet(src)
+	new /obj/item/clothing/mask/gas/krieg(src)
+	new /obj/item/clothing/mask/gas/krieg(src)
+	new /obj/item/clothing/shoes/jackboots/krieg(src)
+	new /obj/item/clothing/shoes/jackboots/krieg(src)
+	new /obj/item/clothing/gloves/thick/swat/combat/krieg(src)
+	new /obj/item/clothing/gloves/thick/swat/combat/krieg(src)
+	new /obj/item/clothing/suit/armor/krieger(src)
+	new /obj/item/clothing/suit/armor/krieger(src)
+	new /obj/item/clothing/under/rank/krieg_uniform(src)
+	new /obj/item/clothing/under/rank/krieg_uniform(src)
+
+/obj/structure/closet/crate/valhallan
+	name = "valhallan equipment"
+	desc = "A hefty, reinforced metal crate with an electronic locking system."
+	icon_state = "largermetal"
+	icon_opened = "largermetalopen"
+	icon_closed = "largermetal"
+
+/obj/structure/closet/crate/valhallan/New()
+	new /obj/item/clothing/head/helmet/guardhelmet(src)
+	new /obj/item/clothing/head/helmet/guardhelmet(src)
+	new /obj/item/clothing/shoes/jackboots/cadian(src)
+	new /obj/item/clothing/shoes/jackboots/cadian(src)
+	new /obj/item/clothing/gloves/combat/cadian(src)
+	new /obj/item/clothing/gloves/combat/cadian(src)
+	new /obj/item/clothing/suit/armor/valhallanarmor(src)
+	new /obj/item/clothing/suit/armor/valhallanarmor(src)
+	new /obj/item/clothing/under/rank/valhallan_uniform(src)
+	new /obj/item/clothing/under/rank/valhallan_uniform(src)
+
+/obj/structure/closet/crate/operations
+	name = "extended operations crate"
+	desc = "A hefty, reinforced metal crate with an electronic locking system."
+	icon_state = "largermetal"
+	icon_opened = "largermetalopen"
+	icon_closed = "largermetal"
+
+/obj/structure/closet/crate/operations/New()
+	new /obj/item/clothing/accessory/legguards(src)
+	new /obj/item/clothing/accessory/armguards/ballistic(src)
+	new /obj/item/clothing/accessory/holster/waist(src)
+	new /obj/item/storage/box/ifak(src)
+	new /obj/item/clothing/accessory/storage/webbing(src)
+	new /obj/item/device/binoculars(src)
+	new /obj/item/shovel(src)
+	new /obj/item/warflare/blue(src)
+	new /obj/item/warflare/blue(src)
+	new /obj/item/warflare/blue(src)
+	new /obj/item/stack/material/steel/fifty(src)
+	new /obj/item/stack/barbwire(src)
+	new /obj/item/clothing/mask/smokable/cigarette/cigar/havana(src)
+	new /obj/item/clothing/mask/smokable/cigarette/cigar/havana(src)
+	new /obj/item/clothing/mask/smokable/cigarette/cigar/havana(src)
+	new /obj/item/flame/lighter/zippo(src)
+	new /obj/random/canned_food(src)
+	new /obj/random/canned_food(src)
+	new /obj/random/canned_food(src)
+
+/obj/structure/closet/crate/miner
+	name = "mining equipment crate"
+	desc = "A hefty, reinforced metal crate with an electronic locking system."
+	icon_state = "largermetal"
+	icon_opened = "largermetalopen"
+	icon_closed = "largermetal"
+
+/obj/structure/closet/crate/miner/New()
+	new /obj/item/clothing/suit/armor/militia(src)
+	new /obj/item/clothing/suit/armor/salvage(src)
+	new /obj/item/storage/box/ifak(src)
+	new /obj/item/storage/box/ifak(src)
+	new /obj/item/shovel(src)
+	new /obj/item/device/flashlight/lantern(src)
+	new /obj/item/device/flashlight/lantern(src)
+	new /obj/item/clothing/head/helmet/mining(src)
+	new /obj/item/clothing/head/helmet/salvage(src)
+	new /obj/item/pickaxe(src)
+	new /obj/item/pickaxe(src)
+	new /obj/item/grenade/frag/high_yield/homemade(src)
+	new /obj/item/grenade/frag/high_yield/homemade(src)
+	new /obj/item/grenade/frag/high_yield/homemade(src)
+	new /obj/item/grenade/frag/high_yield/homemade(src)
+	new /obj/item/grenade/frag/high_yield/homemade(src)
+
+/// END OF SPECIAL CRATE SECTION
+
 /obj/structure/closet/crate/ateopoine
 	name = "ateopoine crate"
 	desc = "A crate with ateopoine in it!"

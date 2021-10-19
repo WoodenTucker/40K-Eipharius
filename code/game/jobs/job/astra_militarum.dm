@@ -1,7 +1,7 @@
 // IG Datum
 
 /datum/job/ig
-	title = "IGDATUM"
+	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
 	supervisors = "The Commissar and your Sergeant."
 	total_positions = 0
 	spawn_positions = 0
@@ -9,12 +9,17 @@
 	outfit_type = /decl/hierarchy/outfit/job/ig //will need to be replaced eventually - wel
 	selection_color = "#33813A"
 	department_flag = SEC
-	auto_rifle_skill = 10 //This is leftover from coldfare, but we could go back to that one day so better not to mess with it.
-	semi_rifle_skill = 10
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
 	sniper_skill = 3
-	shotgun_skill = 6
+	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
+	melee_skill = 8
+	ranged_skill = 10
+	medical_skill = 3
+	engineering_skill = 3
+	surgery_skill = 1
 	open_when_dead = TRUE
 	announced = FALSE
 	can_be_in_squad = TRUE
@@ -27,8 +32,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,16), rand(10,16), rand(8,14), rand (8,11))
-		H.add_skills(rand(10,16))
+		H.add_stats(rand(12,16), rand(12,16), rand(8,14), rand (8,11))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -68,16 +72,23 @@
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
 			            )
 
-	shotgun_skill = 10
-	lmg_skill = 10
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
+	melee_skill = 10
+	ranged_skill = 11
+	medical_skill = 4
+	engineering_skill = 4
+	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.verbs += /mob/living/carbon/human/proc/morale_boost
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(12,17), rand(10,16), rand(10,14), rand(10,13))
-		H.add_skills(rand(7,10),rand(8,10),rand(0,3),0,0)
+		H.add_stats(rand(13,17), rand(13,17), rand(12,14), rand(10,15))
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -112,17 +123,17 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
-	melee_skill = 5
-	ranged_skill = 5
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 7
+	ranged_skill = 9
 	medical_skill = 8
-	engineering_skill = 0
-	surgery_skill = 5
+	engineering_skill = 1
+	surgery_skill = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -132,7 +143,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
-		H.add_stats(rand(11,14), rand(11,14), rand(12,15), rand(12,15))
+		H.add_stats(rand(11,15), rand(11,15), rand(12,15), rand(12,16))
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -157,11 +168,17 @@
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	can_be_in_squad = FALSE
-	sniper_skill = 10
-	auto_rifle_skill = 10
-	semi_rifle_skill = 10
-	shotgun_skill = 10
-	lmg_skill = 10
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
+	melee_skill = 11
+	ranged_skill = 11
+	medical_skill = 2
+	engineering_skill = 3
+	surgery_skill = 1
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
@@ -173,8 +190,7 @@
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,17), rand(10,16), rand(10,14), rand(14,16))
-		H.add_skills(rand(14,18))
+		H.add_stats(rand(14,17), rand(13,17), rand(12,16), rand(14,17))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
@@ -183,14 +199,6 @@
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
 			qdel(O)
-		H.verbs += list(
-			/mob/living/carbon/human/proc/help_me,
-			/mob/living/carbon/human/proc/retreat,
-			/mob/living/carbon/human/proc/announce,
-			/mob/living/carbon/human/proc/give_order,
-			/mob/living/carbon/human/proc/check_reinforcements
-		)
-
 
 // Outfits
 
@@ -218,7 +226,7 @@
 // Guardsman
 
 /decl/hierarchy/outfit/job/ig/guardsman
-	name = OUTFIT_JOB_NAME("Imeperial Guardsman")
+	name = OUTFIT_JOB_NAME("Imperial Guardsman")
 	head = null
 	uniform = null
 	shoes = null
@@ -326,7 +334,7 @@
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/homemade, slot_in_backpack)
 			U.verbs -= list(
 			/mob/living/carbon/human/proc/regimentselection,)
 
@@ -354,7 +362,7 @@
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol/heavy, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
@@ -381,7 +389,7 @@
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/material/sword/combat_knife/catachan, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
@@ -400,6 +408,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -407,7 +416,6 @@
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
@@ -455,12 +463,12 @@
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/krieg, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius/rare, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
 			U.verbs -= list(
 			/mob/living/carbon/human/proc/sergeantselection,)
@@ -491,8 +499,8 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/slugrevolver, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_casing/c44, slot_in_backpack)
 			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
@@ -513,13 +521,13 @@
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/material/sword/combat_knife/catachan, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/beartrap, slot_in_backpack)
 			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
@@ -540,9 +548,9 @@
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/autogrim, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/autogrim, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/autogrim, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
@@ -734,190 +742,3 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	else
 		src.psyker = 1
 		src.verbs += list(/mob/living/carbon/human/proc/remotesay,)
-
-
-// Commissar Verbs
-
-/mob/living/carbon/human/proc/help_me()
-	set name = "Help me!"
-	set category = "Commissar"
-
-	if(stat)
-		return
-
-	var/is_blue = IMPERIUM
-	var/class = "red_team"
-	var/datum/team/T = SSwarfare.red
-	if(is_blue)
-		class = "Imperium of Man"
-		T = SSwarfare.blue
-
-	if(T.checkCooldown("Help me!"))
-		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
-		return
-
-	for(var/mob/living/carbon/human/H in T.team)
-		if(H == src)
-			continue
-		H.tracking.track(src)
-
-	to_chat(T.team, "<h1><span class='[class]'>Your Commissar requires help!</span></h1>")
-
-	T.startCooldown("Help me!")
-	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
-
-/mob/living/carbon/human/proc/retreat()
-	set name = "Retreat!"
-	set category = "Commissar"
-	if(stat)
-		return
-
-	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
-	var/class = "red_team"
-	var/datum/team/T =  SSwarfare.red
-	if(is_blue)
-		class = "Imperium of Man"
-		T = SSwarfare.blue
-
-	if(T.checkCooldown("Retreat!"))
-		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
-		return
-
-	to_chat(T.team, "<h1><span class='[class]'>Your Captain has ordered a retreat!</span></h1>")
-
-	T.startCooldown("Retreat!")
-	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
-
-/mob/living/carbon/human/proc/announce()
-	set name = "Make Announcement!"
-	set category = "Commissar"
-	if(stat)
-		return
-
-	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
-	var/class = "red_team"
-	var/datum/team/T =  SSwarfare.red
-	if(is_blue)
-		class = "Imperium of Man"
-		T = SSwarfare.blue
-
-	if(T.checkCooldown("Make Announcement!"))
-		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
-		return
-
-	var/announcement = sanitize(input(src, "What would you like to announce?", "Announcement"))
-	if(!announcement)
-		return
-
-	if(findtext(announcement, config.ic_filter_regex))
-		var/warning_message = "<span class='warning'>Bro you just tried to announce cringe! You're going to loose subscribers! Check the server rules!</br>The bolded terms are disallowed: &quot;"
-		var/list/words = splittext(announcement, " ")
-		var/cringe = ""
-		for (var/word in words)
-			if (findtext(word, config.ic_filter_regex))
-				warning_message = "[warning_message]<b>[word]</b> "
-				cringe += "/<b>[word]</b>"
-			else
-				warning_message = "[warning_message][word] "
-
-
-		warning_message = trim(warning_message)
-		to_chat(src, "[warning_message]&quot;</span>")
-		log_and_message_admins("[src] just tried to ANNOUNCE cringe: [cringe]", src)
-		return
-
-	to_chat(T.team, "<h1><span class='[class]'>Announcement from Captain: <br> [announcement]</span></h1>")
-
-	T.startCooldown("Make Announcement!")
-	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
-
-/mob/living/carbon/human/proc/give_order()
-	set name = "Give Order!"
-	set category = "Commissar"
-	if(stat)
-		return
-
-	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
-	var/class = "red_team"
-	var/datum/team/T =  SSwarfare.red
-	if(is_blue)
-		class = "Imperium of Man"
-		T = SSwarfare.blue
-
-	if(T.checkCooldown("Give Order!"))
-		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
-		return
-
-	var/announcement = input(src, "What would you like to command?", "Give Order")
-	if(!announcement)
-		return
-	if(findtext(announcement, config.ic_filter_regex))
-		var/warning_message = "<span class='warning'>Bro you just tried to announce cringe! You're going to loose subscribers! Check the server rules!</br>The bolded terms are disallowed: &quot;"
-		var/list/words = splittext(announcement, " ")
-		var/cringe = ""
-		for (var/word in words)
-			if (findtext(word, config.ic_filter_regex))
-				warning_message = "[warning_message]<b>[word]</b> "
-				cringe += "/<b>[word]</b>"
-			else
-				warning_message = "[warning_message][word] "
-
-
-		warning_message = trim(warning_message)
-		to_chat(src, "[warning_message]&quot;</span>")
-		log_and_message_admins("[src] just tried to ANNOUNCE cringe: [cringe]", src)
-		return
-	to_chat(T.team, "<h1><span class='[class]'>Order from Captain: <br> [announcement]</span></h1>")
-	log_and_message_admins("[src] gave the order: <b>[announcement]</b>.", src)
-
-	T.startCooldown("Give Order!")
-	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
-
-
-/mob/living/carbon/human/proc/check_reinforcements()
-	set name = "Check Reinforcements"
-	set category = "Commissar"
-
-	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
-	var/datum/team/T =  SSwarfare.red
-	if(is_blue)
-		T = SSwarfare.blue
-	if(T.checkCooldown("Check Reinforcements"))
-		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
-		return
-	if(is_blue)
-		to_chat(src, "<span class='bnotice'><font size=4>Reinforcements Left: [SSwarfare.blue.left]</font></span>")
-	else
-		to_chat(src, "<span class='bnotice'><font size=4>Reinforcements Left: [SSwarfare.red.left]</font></span>")
-	T.startCooldown("Check Reinforcements")
-
-
-
-/mob/living/carbon/human/proc/morale_boost()
-	set name = "Morale Boost"
-	set category = "Squad Leader"
-	if(stat)
-		return
-
-	var/is_blue = SSjobs.GetJobByTitle(job).is_blue_team
-	var/class = "red_team"
-	var/datum/team/T =  SSwarfare.red
-	if(is_blue)
-		class = "Imperium of Man"
-		T = SSwarfare.blue
-
-	switch(alert(src,"This has a long cool down are you sure you wish to use this?", "Cooldown", "Yes", "No"))
-		if("No")
-			to_chat(src, "You decide not to use this power right now.")
-			return
-
-	if(T.checkCooldown("Morale Boost"))
-		to_chat(src, "<span class='notice'>I can't overuse this!</span>")
-		return
-
-	for(var/mob/living/carbon/human/H in T.team)
-		H.add_event("morale boost", /datum/happiness_event/morale_boost)
-
-	T.startCooldown("Morale Boost", 10 MINUTES)
-	sound_to(T.team, 'sound/effects/klaxon_alarm.ogg')
-	to_chat(T.team, "<h1><span class='[class]'>OOORAH!</span></h1>")

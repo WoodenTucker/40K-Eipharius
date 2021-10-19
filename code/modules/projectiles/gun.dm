@@ -81,7 +81,7 @@
 	var/wielded_item_state
 	var/combustion	//whether it creates hotspot when fired
 	var/is_jammed = FALSE	//Whether this gun is jammed
-	var/condition = 100
+	var/condition = 600
 	var/safety = TRUE	//Whether or not the safety is on.
 	var/broken = FALSE //weapon broken or no
 	var/jammed_icon
@@ -434,12 +434,12 @@
 		P.accuracy -= 3
 
 	if(user.combat_mode)
-		P.accuracy += 3
+		P.accuracy += 2
 
 	if(!user.combat_mode)
 		P.dispersion += mod
 
-	if(user.staminaloss >= (user.staminaexhaust/2))
+	if(user.staminaloss >= (user.staminaexhaust/1))
 		P.dispersion += mod
 
 	user.dispersion_mouse_display_number = P.dispersion
@@ -617,18 +617,18 @@
 		return
 	if(!ishuman(user))
 		return
-	var/allowed_condition = 60//Non smart engeery people can only repair their weapon up to 60%
-	var/repair_speed = 50
+	var/allowed_condition = 500//Non smart engeery people can only repair their weapon up to 60%
+	var/repair_speed = 200
 	var/mob/living/carbon/human/H = user
 	if(istype(src, /obj/item/gun/projectile/ork))
-		if(H.SKILL_LEVEL(engineering) >= 6)//If you're a smart mek boi you can repair your piece of scrap to do more noisy noise
-			allowed_condition = 40
-			repair_speed = 20
+		if(H.SKILL_LEVEL(engineering) >= 3)//If you're a smart mek boi you can repair your piece of scrap to do more noisy noise
+			allowed_condition = 300
+			repair_speed = 100
 		else
-			allowed_condition = 30
-	else if(H.SKILL_LEVEL(engineering) >= 6)//If you're a smart engineery boi u can repair da wepon all da wey
-		allowed_condition = 90
-		repair_speed = 20
+			allowed_condition = 250
+	else if(H.SKILL_LEVEL(engineering) >= 5)//If you're a smart engineery boi u can repair da wepon all da wey
+		allowed_condition = 550
+		repair_speed = 120
 	if(condition <= allowed_condition)
 		if(!H.doing_something)//No spamming repairs
 			H.visible_message("<span class='notice'>[H] starts to repair their weapon.</span>")
@@ -637,8 +637,8 @@
 				H.doing_something = FALSE
 				condition += 10
 				H.visible_message("<span class='info'>[H] successfully repairs their weapon.</span>")
-				if(condition > 100)//If it's greater than 100
-					condition = 100
+				if(condition > 600)//If it's greater than 100
+					condition = 600
 			else
 				H.visible_message("<span class='warning'>[H] fails to repair their weapon.</span>")
 				H.doing_something = FALSE

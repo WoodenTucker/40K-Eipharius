@@ -17,17 +17,17 @@
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/service/bartender
 	announced = FALSE
-	auto_rifle_skill = 1
-	semi_rifle_skill = 1
-	sniper_skill = 1
-	shotgun_skill = 1
-	lmg_skill = 1
-	smg_skill = 1
-	melee_skill = 4
-	ranged_skill = 1
-	medical_skill = 4
-	engineering_skill = 2
-	surgery_skill = 1
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 8
+	ranged_skill = 3
+	medical_skill = 5
+	engineering_skill = 5
+	surgery_skill = 5
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -59,6 +59,17 @@
 	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
 	announced = FALSE
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 9
+	ranged_skill = 7
+	medical_skill = 3
+	engineering_skill = 2
+	surgery_skill = 2
 //	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
@@ -66,8 +77,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Pvt. [current_name]")
-		H.add_stats(rand(8,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
-		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.add_stats(rand(11,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -100,11 +110,11 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 4
-	ranged_skill = 3
+	melee_skill = 8
+	ranged_skill = 8
 	medical_skill = 3
-	engineering_skill = 0
-	surgery_skill = 0
+	engineering_skill = 3
+	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -139,17 +149,17 @@
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 	announced = FALSE
-	auto_rifle_skill = 1
-	semi_rifle_skill = 1
-	sniper_skill = 1
-	shotgun_skill = 1
-	lmg_skill = 1
-	smg_skill = 1
-	melee_skill = 4
-	ranged_skill = 1
-	medical_skill = 4
-	engineering_skill = 2
-	surgery_skill = 1
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 8
+	ranged_skill = 3
+	medical_skill = 5
+	engineering_skill = 5
+	surgery_skill = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/servitor_number = rand(1,1000)
