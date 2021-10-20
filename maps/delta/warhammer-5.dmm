@@ -354,7 +354,6 @@
 "gW" = (/obj/effect/floor_decal/turf/brick,/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/glass/jar/radium,/obj/item/reagent_containers/glass/jar/sulphuric_acid,/obj/item/reagent_containers/glass/jar/ethanol,/obj/item/reagent_containers/glass/jar/hydrochloric,/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "gX" = (/obj/item/modular_computer/console/preset/civilian,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "gY" = (/obj/structure/sign/inquisition,/turf/simulated/wall/techno,/area/inqmoon)
-"gZ" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/inqmoon)
 "ha" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/wood,/area/centcom)
 "hb" = (/obj/effect/floor_decal/industrial/warning_red/corner{dir = 4},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "hc" = (/obj/effect/floor_decal/carpet/red{dir = 8},/obj/machinery/hologram/holopad/longrange,/turf/simulated/floor/carpet/red,/area/centcom)
@@ -467,14 +466,14 @@
 "jg" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/bookcase/manuals/medical{name = "Ordus Hospitaller Manuals"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "jh" = (/obj/machinery/computer/shuttle_control/ferry/inquisition,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "ji" = (/obj/machinery/door/blast/id_door,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"jj" = (/obj/machinery/door/blast/id_door/open{id = "arvusrampdoor"},/turf/simulated/floor/tiled/ramp{dir = 1; icon_state = "ramptop"},/area/inqmoon)
+"jj" = (/obj/machinery/door/blast/id_door/open{id = "arvusrampdoor"},/turf/simulated/floor/tiled/ramp{dir = 1; icon_state = "ramptop"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "jk" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/blast/id_door{name = "EMERGENCY LOCKDOWN"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "jl" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/inqmoon)
 "jm" = (/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/space)
 "jn" = (/obj/structure/bed/chair/comfy/black{dir = 1; icon_state = "comfychair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"jo" = (/obj/effect/shuttle_landmark/ferry/inquisition_start,/obj/machinery/door/blast/id_door/open{id = "arvusrampdoor"},/turf/simulated/floor/tiled/ramp{dir = 1; icon_state = "ramptop"},/area/inqmoon)
+"jo" = (/obj/effect/shuttle_landmark/ferry/inquisition_start,/obj/machinery/door/blast/id_door/open{id = "arvusrampdoor"},/turf/simulated/floor/tiled/ramp{dir = 1; icon_state = "ramptop"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "jp" = (/obj/structure/table/standard,/obj/item/storage/firstaid/surgery,/obj/item/reagent_containers/spray/hair_remover,/obj/item/FixOVein,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
-"jq" = (/obj/machinery/button/remote/blast_door/id_scan{id = "arvusrampdoor"; pixel_x = -5; pixel_y = 0; req_access = list(202)},/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/inqmoon)
+"jq" = (/obj/machinery/button/remote/blast_door/id_scan{id = "arvusrampdoor"; pixel_x = -5; pixel_y = 0; req_access = list(202)},/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "jr" = (/obj/machinery/button/remote/blast_door{id = "arvuslockdown"; pixel_y = -30},/obj/machinery/light/small/red{dir = 8; icon_state = "bulb1"},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "js" = (/obj/machinery/button/remote/blast_door{id = "arvusrampdoor"; pixel_x = -5; pixel_y = -30; req_access = list(202)},/obj/machinery/light/small/red{dir = 4; icon_state = "bulb1"},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "jt" = (/obj/effect/floor_decal/turf/metal/five,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/machinery/computer/shuttle_control/ferry/inquisition,/turf/simulated/floor/tiled/dark,/area/inqmoon)
@@ -1005,7 +1004,7 @@ axbDcGcLcLcLcLcLcGdThmhmhmhmhmhmhmhmfNeQeQeQfjhHhIhIhJfAeQeQeQfNeQeQeQfjekekekhK
 axbDbDbDbEbEbEbEbEdThmhmhmhMhNhmhmhmhQeQeQIIfjhRfDfDhSfAeQeQeQhUeQeQeQhVekhWhXhYdTaxaxjbbFhLhLhLhGixiIhLhLhLbFjbaxaxaxbFbFbFbFbFbFbFbFhehebFdRdRdRdSdRbFbPbPZabPbPbPCLbPbPbFbFbEbEbWbEbWbWbEbEbDaxaxaxax
 axaxaxbDbDbEbEbEbEdThZhmhmhmhmhmiahmfieQeQeQfjhTibibicfAeQeQeQfiifigeQfjekekekhKdTaxaxjbbFhLhLhLhGixiIhLhLhLbFjbaxaxaxjbjbjbjbjbjbbFbFdNdNbFbFbFdRdRdRbFbPbPbFqalEZXMBGpnsbFbFbFbFbFbFbWbWbWbDbDaxaxaxax
 axaxaxaxbDbDbEbEbEdTiihmijikikimhmiidTgdeQeQeQgegfgfgeeQeQeQgddTinioipfjekekekiqdTaxaxjbbFbFirhLhGixiIhLisbFbFjbbDbDbDbDbDbDbDbDjbbFbFdNdNdKjtbFJObFbKbFbPzUbFbFbFbFbFbFbFbFbFbFbFbFbFiwiwiwbDaxaxaxaxax
-axaxaxaxaxbDbDbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLivcLcLivcLcLcLcLcGcLcLcLcLcLcLcLcLcGaxaxjbbFhLgZgZjjjojjjqgZhLbFjbbDbDbDbDbDbDbDbDjbbFdMdNdNdNdNZabPbPbPbPbPbPSkjkbPbPbPbPbPbPbPbPbPZtbFpfjmbDbDaxaxaxaxax
+axaxaxaxaxbDbDbEbEcGcLcLcLcLcLcLcLcLcGcLcLcLcLivcLcLivcLcLcLcLcGcLcLcLcLcLcLcLcLcGaxaxjbbFhLiHiHjjjojjjqiHhLbFjbbDbDbDbDbDbDbDbDjbbFdMdNdNdNdNZabPbPbPbPbPbPSkjkbPbPbPbPbPbPbPbPbPZtbFpfjmbDbDaxaxaxaxax
 axaxaxaxaxaxbDbDbEbEbEbEbEbEbEbEbEbEdTiyiziBiCeQiDiDeQeQeQeQiEdTbEbEbEbEbEbEbEbEbEaxaxjbbFhLiHiNiOiOiOiPiHhLbFjbbDbDbEbDbDbDbDbDjbbFdPdNdNdNdNZabPbPbPbPbPbPYqjkbPbPbPbPbPbPbPbPbPZtbFpfjmbDaxaxaxaxaxax
 axaxaxaxaxaxaxbDbDbDbEbEbEbEbDbDbEbEdTiLeQeQeQeQeQeQeQeQeQeQiMdTbEbEbEbEbEbEbEbDbDaxaxjbbFhLiHiNiOiOiOiPiHhLbFjbbDbEbEbEbEbEbEbEjbbFbFdNdNdNiQbFbFbFBZbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbFbDbDaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxbDbDbEbEbDbDbDbDbEdTiRiSeQifiTiUiUiTifeQiViRdTbEbEbEbEbDbDbDbDbDaxaxjbbFhLiHiWiOiOiOiXiHhLbFjbbDbEbEbEbEbEbEbEjbbFbFbFbFbFbFbFbFQBVWSNbFGDxxqOAtVxrqJfxxVWxppSVWVWbFjbaxaxaxaxaxaxaxax

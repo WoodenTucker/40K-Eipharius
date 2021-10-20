@@ -449,7 +449,7 @@
 	move_delay= 1.5
 	one_hand_penalty = 4
 	accuracy = -0.3
-	fire_delay = 1.9
+	fire_delay = 2.9
 	automatic = 1
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
@@ -474,7 +474,7 @@
 	move_delay= 1.4
 	one_hand_penalty = 3
 	accuracy = -0.2
-	fire_delay = 1.7
+	fire_delay = 2.8
 	armor_penetration = 8
 
 	wielded_item_state = "autorifle-wielded"
@@ -501,7 +501,7 @@
 	move_delay= 2
 	one_hand_penalty = 4
 	accuracy = -0.2
-	fire_delay = 1.9
+	fire_delay = 3
 	automatic = 1
 
 	magazine_type = /obj/item/ammo_magazine/autogrim
@@ -698,7 +698,7 @@
 	move_delay= 5
 	one_hand_penalty = 7
 	accuracy = -0.2
-	fire_delay = 3.2
+	fire_delay = 2.9
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
@@ -706,7 +706,7 @@
 	move_delay= 4.5
 	one_hand_penalty = 7
 	accuracy = 0
-	fire_delay = 3.4
+	fire_delay = 3.2
 	automatic = 1.2
 	armor_penetration = 5
 
@@ -734,11 +734,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ravenbolter-30"
 	unloaded_icon = "ravenbolter-e"
-	fire_delay = 3.6
+	fire_delay = 3.5
 	burst = 1
 	move_delay = 5
 	one_hand_penalty = 8
-	automatic = 1.4
+	automatic = 1.1
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -773,11 +773,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	fire_delay = 3.6
+	fire_delay = 3.5
 	burst = 1
 	move_delay = 5
 	one_hand_penalty = 4
-	automatic = 1.4
+	automatic = 1.1
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -811,11 +811,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
-	fire_delay = 3.6
+	fire_delay = 3.5
 	burst = 1
 	move_delay = 5
 	one_hand_penalty = 4
-	automatic = 1.4
+	automatic = 1.1
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -849,11 +849,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
-	fire_delay = 3.9
+	fire_delay = 3.7
 	burst = 1
 	move_delay = 4
 	one_hand_penalty = 3
-	automatic = 1.6
+	automatic = 1.3
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.5
@@ -890,11 +890,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sisterbolter-30"
 	unloaded_icon = "sisterbolter-30-e"
-	fire_delay = 3.6
+	fire_delay = 3.5
 	burst = 1
 	move_delay = 3.5
 	one_hand_penalty = 2
-	automatic = 1.4
+	automatic = 1.1
 	accuracy = -0.35
 	firemodes = list()
 	gun_type = GUN_LMG
