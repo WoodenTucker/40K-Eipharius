@@ -642,17 +642,17 @@ mob/new_player/MayRespawn()
 	show_new_information()
 
 /mob/new_player/proc/show_new_information()
-	var/dat = {"<h2>Cadia Station</h2>
-Hello! It appears you are new here! Thanks for joining Cadia Station. Here is some important information to get you started!
+	var/dat = {"<h2>Grimdark 13</h2>
+Hello! It appears you are new here! Thanks for joining Grimdark 13. We recommend that if you are new to the Grimdark of 40k to do a deep dive into the lore of 40k.
 <h3>Discord Link</h3>
-<font size='4'><a href=\"https://discord.gg/eJb7RDV6\">Discord</a></font>
+<font size='4'><a href=\"https://discord.gg/E5njx9xJzh\">Discord</a></font>
 <h3>Wiki Link</h3>
 <font size='4'><a href=\"http://is12wiki.xyz/index.php/Main_Page\">Wiki</a></font>
+<h3>Lexicanum</h3>
+<font size='4'><a href=\"https://wh40k.lexicanum.com/wiki/Portal:Imperium\">Wiki</a></font>
 <h3>Server Summary</h3>
-Grimdark 13 is a Warhammer 40k SS13 server running a modified version of the IS12 codebase. Set on a recently settled planet. You serve under a Rogue Trader who goes about ensuring Imperial expansion and growing his own riches. North of the outpost is a village populated by random Imperial citizens, runaways and pilgrims from the sector. Heavy role-play is expected.
+Grimdark 13 is a Warhammer 40k SS13 server running a modified version of the IS12 codebase. 
 <h3>Some Notes</h3>
-Just as a general note, chat bar commands in game do not work. You will have to use the panels on the side if you wish to use any commands. Typing in the command bar will use OOC if you are in the lobby, and it will use say automatically if you're in game.
 Controls are ingame under the \"view controls\" button in OOC.
-Rules are ingame under the \"rules\" button in OOC.
 <h3>Enjoy your stay!</h3>"}
 	src << browse(dat, "window=welcome")

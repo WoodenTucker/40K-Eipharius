@@ -7,7 +7,7 @@
 /obj/structure/closet/secure_closet/personal/WillContain()
 	return list(
 		new /datum/atom_creator/weighted(list(/obj/item/storage/backpack, /obj/item/storage/backpack/satchel/grey)),
-		/obj/item/device/radio/headset
+		/obj/item/device/radio/headset/red_team/voxcaster
 	)
 
 /obj/structure/closet/secure_closet/personal/empty/WillContain()
