@@ -264,8 +264,8 @@ Template:
 	return list(/obj/item/melee/trench_axe = 15,
 				/obj/item/melee/inqcs = 2,
 				/obj/item/melee/pcsword/eviscerator = 1,
-				/obj/item/melee/classic_baton/trench_club = 12,
-				/obj/item/melee/telebaton = 7,
+				/obj/item/melee/classic_baton/trench_club = 8,
+				/obj/item/melee/telebaton = 4,
 				/obj/item/material/sword/machete = 10,
 				/obj/item/material/sword/sabre = 1,
 				/obj/item/melee/mercycs = 1)
@@ -277,10 +277,11 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/lightstubber/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 10,
+	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 3,
 				/obj/item/gun/projectile/automatic/machinepistol = 9,
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
 				/obj/item/gun/projectile/warfare/kieji = 3,
+				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 8,
 				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
 				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 3,
@@ -297,9 +298,10 @@ Template:
 	icon_state = "45-10"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
-	return list(/obj/item/ammo_box/shotgun = 12,
+	return list(/obj/item/ammo_box/shotgun = 7,
 				/obj/item/ammo_magazine/box/shotgun/slug = 3,
 				/obj/item/ammo_magazine/box/shotgun/bean = 1,
+				/obj/item/ammo_box/rifle = 8,
 				/obj/item/ammo_magazine/autogrim = 1,
 				/obj/item/ammo_magazine/c45m/warfare = 3,
 				/obj/item/ammo_magazine/mc9mmt/machinepistol = 9,
@@ -337,6 +339,7 @@ Template:
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
 				/obj/item/gun/projectile/slugrevolver = 2,
+				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
@@ -437,6 +440,7 @@ Template:
 				/obj/item/gun/energy/las/laspistol/heavy = 4,
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
+				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/slugrevolver = 2,
 				/obj/item/gun/projectile/shotgun/pump = 8,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 4,
@@ -458,23 +462,24 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/warfare/kieji = 5,
-				/obj/item/gun/energy/las/laspistol/heavy = 4,
-				/obj/item/gun/projectile/mervex = 4,
-				/obj/item/gun/projectile/necros = 3,
-				/obj/item/gun/projectile/slugrevolver = 2,
+	return list(/obj/item/gun/projectile/warfare/kieji = 1,
+				/obj/item/gun/energy/las/laspistol/heavy = 1,
+				/obj/item/gun/projectile/mervex = 1,
+				/obj/item/gun/projectile/necros = 1,
+				/obj/item/gun/projectile/slugrevolver = 1,
 				/obj/item/gun/projectile/lockebolter = 1,
+				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 8,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 9,
-				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 8,
-				/obj/item/gun/projectile/automatic/stubber = 11,
-				/obj/item/gun/projectile/automatic/stubber/villiers = 7,
+				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 6,
+				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 6,
+				/obj/item/gun/projectile/automatic/stubber = 6,
+				/obj/item/gun/projectile/automatic/stubber/villiers = 6,
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
 				/obj/item/gun/projectile/bolter_pistol = 2,
 				/obj/item/gun/energy/las/lasgun/rare = 4,
 				/obj/item/gun/energy/las/lasgun/luscius = 8,
 				/obj/item/gun/energy/las/lasgun/luscius/rare = 3,
-				/obj/item/gun/energy/las/boarding = 3,
+				/obj/item/gun/energy/las/boarding = 1,
 				/obj/item/gun/projectile/automatic/autogrim = 2,
 				/obj/item/gun/energy/las/lasgun/tinkered = 3,
 				/obj/item/gun/energy/las/lasgun/tinkered/lascarbine = 3)
@@ -505,11 +510,12 @@ Template:
 
 /obj/random/loot/randomarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/militia = 4,
-				/obj/item/clothing/suit/armor/militia/sniper = 3,
 				/obj/item/clothing/suit/cloak = 2,
-				/obj/item/clothing/suit/armor/salvage = 4,
+				/obj/item/clothing/suit/armor/cuirass = 1,
+				/obj/item/clothing/suit/armor/salvage = 2,
 				/obj/item/clothing/suit/armor/guardsman/mercenary = 1,
 				/obj/item/clothing/mask/gas/explorer = 2,
+				/obj/item/clothing/suit/armor/slanclothing/maleslan = 1,
 				/obj/item/clothing/head/helmet/salvage = 1,
 				/obj/item/clothing/head/helmet/mining = 1,
 				/obj/item/clothing/head/helmet = 1,
@@ -580,7 +586,6 @@ Template:
 				/obj/item/storage/box/ifak = 3,
 				/obj/item/storage/firstaid/adv = 1,
 				/obj/item/clothing/suit/armor/militia = 2,
-				/obj/item/clothing/suit/armor/militia/sniper = 1,
 				/obj/item/material/sword/combat_knife/rare = 4,
 				/obj/item/gun/projectile/mervex = 1,
 				/obj/item/gun/projectile/necros = 1,
@@ -610,8 +615,7 @@ Template:
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
+		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/bubblingmass(src.loc)
@@ -620,17 +624,16 @@ Template:
 	delete_me = 1
 
 /obj/effect/landmark/animal/bloodletter1/New()
-	if (prob(90)) // Difficulty: Very Hard. Squad level threat.
+	if (prob(95)) // Difficulty: Very Hard. Squad level threat.
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
+		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
 	if (prob(100))
 		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
 	delete_me = 1
 
 /obj/effect/landmark/animal/bloodletter2/New() // Difficulty: Very Hard. Squad level threat.
-	if (prob(85))
+	if (prob(90))
 		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/bloodletter(src.loc)
 	if (prob(100))
@@ -638,18 +641,16 @@ Template:
 	delete_me = 1
 
 /obj/effect/landmark/animal/bubblingmass1/New() // Difficulty: Medium. Guard level threat.
-	if (prob(75))
+	if (prob(95))
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
+		new /mob/living/simple_animal/hostile/smalldemon/fleshbeast(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/bubblingmass(src.loc)
 	if (prob(100))
 		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
 	delete_me = 1
 
 /obj/effect/landmark/animal/zygote1/New() // Difficulty: Medium. Guard level threat.
-	if (prob(75))
-		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
+	if (prob(80))
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
 		new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc)
@@ -659,7 +660,7 @@ Template:
 
 // TRAITOR GUARD
 /obj/effect/landmark/animal/syndicate/New() // Difficulty: Medium. Guard level threat. They're not very smart and aren't sprited well. Shoots kantrael laser projectiles and stabs with bayonet up close.
-	if (prob(85))
+	if (prob(90))
 		new /mob/living/simple_animal/hostile/syndicate/ranged(src.loc)
 		new /mob/living/simple_animal/hostile/syndicate/ranged(src.loc)
 		new /mob/living/simple_animal/hostile/syndicate/ranged(src.loc) // Generic traitor guard sprites and low HP. Their speed is low to prevent them from charging into melee range immediately.

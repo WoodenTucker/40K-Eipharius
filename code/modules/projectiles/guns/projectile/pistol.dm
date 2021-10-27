@@ -61,12 +61,23 @@
 	fire_delay = 5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/c45m
-	allowed_magazines = /obj/item/ammo_magazine/c45m
+	magazine_type = /obj/item/ammo_magazine/c45m/warfare
+	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
 	caliber = ".45"
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
+
+/obj/item/gun/projectile/talon/renegade
+	name = "Renegade Pistol"
+	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
+	move_delay= 1.3
+	one_hand_penalty = 0.5
+	accuracy = 0
+	fire_delay = 1
+	armor_penetration = 14
+	silenced = 1
+	force = 10
 
 /obj/item/gun/projectile/talon/adept
 	name = "dulled stub pistol"

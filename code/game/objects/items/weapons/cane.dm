@@ -5,6 +5,7 @@
 	icon_state = "canesword_hidden"
 	item_state = "stick"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 5.0
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
@@ -62,9 +63,12 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "cane_sword"
 
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	block_chance = 60
+	force = 28
+	sharp = TRUE
 	item_state = "sabre"
 	name = "cane sword"
 	desc = "A sword specially modified to nest inside the body of a cane"
-	slot_flags = SLOT_BELT
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_sword01.ogg'

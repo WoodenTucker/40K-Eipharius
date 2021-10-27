@@ -14,6 +14,31 @@
 	desc = "A forge used in crafting the unholy weapons used by the armies of Nar-Sie."
 	icon_state = "forge"
 
+/obj/structure/cult/tinkerscache
+	name = "bronze statue"
+	desc = "A heavy bronze statue affixed to the ground."
+	icon_state = "tinkerscache"
+
+/obj/structure/cult/clockworkobelisk
+	name = "ancient obelisk "
+	desc = "This massive floating crystal emenates powerful and chaotic pulses of energy."
+	icon_state = "clockworkobelisk"
+
+/obj/structure/cult/maniamotor
+	name = "ancient structure"
+	desc = "Sparks of strange energy leap between the metallic rods of the relic."
+	icon_state = "maniamotor"
+
+/obj/structure/cult/mendingmotor
+	name = "strange relic"
+	desc = "Patterns and runic words appear faintly across the metal before fading into obscurity."
+	icon_state = "mendingmotor"
+
+/obj/structure/cult/interdictionlensinactive
+	name = "ancient pylon"
+	desc = "This object seems to be an energy pylon - it appears to be unpowered."
+	icon_state = "interdictionlensinactive"
+
 /obj/structure/cult/pylon
 	name = "Pylon"
 	desc = "A floating crystal that hums with an unearthly energy."

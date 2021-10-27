@@ -21,8 +21,8 @@
 
 	var/raised = 0			//if the turret cover is "open" and the turret is raised
 	var/raising= 0			//if the turret is currently opening or closing its cover
-	var/health = 80			//the turret's health
-	var/maxhealth = 80		//turrets maximal health.
+	var/health = 1000		//the turret's health
+	var/maxhealth = 1000		//turrets maximal health.
 	var/auto_repair = 0		//if 1 the turret slowly repairs itself.
 	var/locked = 1			//if the turret's behaviour control access is locked
 	var/controllock = 0		//if the turret responds to control panels
@@ -36,20 +36,20 @@
 	var/egun = null			//holder to handle certain guns switching bullettypes
 
 	var/last_fired = 0		//1: if the turret is cooling down from a shot, 0: turret is ready to fire
-	var/shot_delay = 15		//1.5 seconds between each shot
+	var/shot_delay = 1		//0.1 seconds between each shot
 
 	var/check_arrest = 1	//checks if the perp is set to arrest
-	var/check_records = 1	//checks if a security record exists at all
+	var/check_records = 0	//checks if a security record exists at all
 	var/check_weapons = 0	//checks if it can shoot people that have a weapon they aren't authorized to have
-	var/check_access = 1	//if this is active, the turret shoots everything that does not meet the access requirements
+	var/check_access = 0	//if this is active, the turret shoots everything that does not meet the access requirements
 	var/check_anomalies = 1	//checks if it can shoot at unidentified lifeforms (ie xenos)
-	var/check_synth	 = 0 	//if active, will shoot at anything not an AI or cyborg
+	var/check_synth	 = 1 	//if active, will shoot at anything not an AI or cyborg
 	var/ailock = 0 			// AI cannot use this
 
 	var/attacked = 0		//if set to 1, the turret gets pissed off and shoots at people nearby (unless they have sec access!)
 
-	var/enabled = 1				//determines if the turret is on
-	var/lethal = 0			//whether in lethal or stun mode
+	var/enabled = 1			//determines if the turret is on
+	var/lethal = 1			//whether in lethal or stun mode
 	var/disabled = 0
 
 	var/shot_sound 			//what sound should play when the turret fires
@@ -73,7 +73,7 @@
 /obj/machinery/porta_turret/stationary
 	ailock = 1
 	lethal = 1
-	installation = /obj/item/gun/energy/laser
+	enabled = 1
 
 /obj/machinery/porta_turret/malf_upgrade(var/mob/living/silicon/ai/user)
 	..()
@@ -145,9 +145,9 @@
 			eprojectile = /obj/item/projectile/beam
 			eshot_sound = 'sound/weapons/Laser.ogg'
 
-		if(/obj/item/gun/energy/stunrevolver)
-			eprojectile = /obj/item/projectile/beam
-			eshot_sound = 'sound/weapons/Laser.ogg'
+		if(/obj/item/gun/projectile/automatic/machinepistol)
+			projectile = /obj/item/projectile/bullet/pistol
+			shot_sound = 'sound/weapons/gunshot.ogg'
 
 		if(/obj/item/gun/energy/gun)
 			eprojectile = /obj/item/projectile/beam	//If it has, going to kill mode

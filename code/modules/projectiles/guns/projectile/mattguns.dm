@@ -487,7 +487,7 @@
 
 /obj/item/gun/projectile/automatic/autogrim
 	name = "Autogun pattern GRIM"
-	desc = "A rugged autogun with ."
+	desc = "A rugged autogun of Valhallan design, it has a moderate rate of fire and excellent stopping power."
 	icon_state = "autorifle"
 	item_state = "autorifle"
 	caliber = "a556"
@@ -615,7 +615,7 @@
 	move_delay= 1
 	one_hand_penalty = 1
 	accuracy = 0
-	fire_delay = 3
+	fire_delay = 2.8
 	force = 8
 
 /obj/item/gun/projectile/warfare/update_icon()//We gotta snowflake this a bit.
@@ -636,21 +636,8 @@
 	move_delay = 1
 	one_hand_penalty = 0.7
 	accuracy = -0.1
-	fire_delay = 1.5
+	fire_delay = 2.5
 	armor_penetration = 10
-
-/obj/item/gun/projectile/warfare/heavy
-	name = "Renegade Pistol"
-	icon_state = "handgun"
-	item_state = "handgun"
-	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
-	move_delay= 1.3
-	one_hand_penalty = 0.5
-	accuracy = 0
-	fire_delay = 1
-	armor_penetration = 14
-	silenced = 1
-	force = 10
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "Reckoning magazine (.45)"
