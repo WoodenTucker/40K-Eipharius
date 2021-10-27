@@ -340,16 +340,7 @@ obj/item/clothing/suit/armor
 	icon_state = "bluecoat"
 	item_state = "bluecoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/melee/whip/lashoftorment,)
-	armor = list(melee = 35, bullet = 35, laser = 30, energy = 20, bomb = 25, bio = 20, rad = 20)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/militia/sniper
-	name = "Overcoat"
-	desc = "A flexible and light overcoat designed to protect against indirect blast and small arms fire."
-	icon_state = "prac_robes"
-	item_state = "prac_robes"
-	armor = list(melee = 25, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 20, rad = 20)
+	armor = list(melee = 35, bullet = 30, laser = 25, energy = 20, bomb = 25, bio = 20, rad = 20)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -358,7 +349,7 @@ obj/item/clothing/suit/armor
 	desc = "A tough black cloak made from animal leather."
 	icon_state = "bluecoat_sniper"
 	item_state = "bluecoat_sniper"
-	armor = list(melee = 25, bullet = 25, laser = 15, energy = 10, bomb = 10, bio = 10, rad = 20)
+	armor = list(melee = 25, bullet = 35, laser = 25, energy = 10, bomb = 10, bio = 10, rad = 20)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -367,13 +358,26 @@ obj/item/clothing/suit/armor
 	desc = "An old mining suit reinforced with metal plating and dense fibers."
 	icon_state = "rig-excavation"
 	item_state = "rig-excavation"
-	armor = list(melee = 48, bullet = 40, laser = 40, energy = 40, bomb = 35, bio = 10, rad = 50)
+	armor = list(melee = 48, bullet = 35, laser = 35, energy = 40, bomb = 35, bio = 10, rad = 50)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/salvage/heavy/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1.0
+
+/obj/item/clothing/suit/armor/cuirass
+	name = "Plate Cuirass"
+	desc = "An old cuirass reinforced with scrap metal plating and dense fabric."
+	icon_state = "combat"
+	item_state = "combat"
+	armor = list(melee = 55, bullet = 30, laser = 40, energy = 40, bomb = 35, bio = 10, rad = 50)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+/obj/item/clothing/suit/armor/salvage/heavy/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/guardsman/mercenary
 	name = "Mercenary Flak Armour - Medium"
@@ -432,8 +436,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/guardsman/carapace
 	name = "Cadian Pattern Flak Armour - Carapace"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Guardsmen."
-	icon_state = "fharmor"
-	item_state = "fharmor"
+	icon_state = "carapace"
+	item_state = "carapace"
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)	
 
 /obj/item/clothing/suit/armor/flak/heavy
