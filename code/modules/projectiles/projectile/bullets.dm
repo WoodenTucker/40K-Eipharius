@@ -172,32 +172,33 @@
 /* short-casing projectiles, like the kind used in pistols or SMGs */
 
 /obj/item/projectile/bullet/pistol
-	damage = 25 //9mm, .38, etc
+	damage = 30 //9mm, .38, etc
 	fire_sound = "gunshot"
 	armor_penetration = 10
 
 /obj/item/projectile/bullet/pistol/medium
-	damage = 35 //.45
-	armor_penetration = 14.5
+	damage = 33 //.45
+	armor_penetration = 10
 	fire_sound = "gunshot"
 
 /obj/item/projectile/bullet/pistol/medium/smg
 	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
-	damage = 28 //10mm
-	armor_penetration = 18
+	damage = 33 //10mm
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/medium/revolver
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 35 //.44 magnum or something
+	damage = 39 //.44 magnum or something
+	armor_penetration = 10
 
 /obj/item/projectile/bullet/pistol/strong //matebas
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 50 //.50AE
-	armor_penetration = 30
+	damage = 43 //.50AE
+	armor_penetration = 10
 
 /obj/item/projectile/bullet/pistol/strong/revolver //revolvers
-	damage = 50 //Revolvers get snowflake bullets, to keep them relevant
-	armor_penetration = 20
+	damage = 42 //Revolvers get snowflake bullets, to keep them relevant
+	armor_penetration = 10
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -214,7 +215,7 @@
 	name = "slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 55
-	armor_penetration = 20
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
@@ -239,32 +240,32 @@
 /* "Rifle" rounds */
 
 /obj/item/projectile/bullet/rifle
-	damage = 38
-	armor_penetration = 5
+	damage = 33
+	armor_penetration = 10
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 38
+	damage = 35
 	armor_penetration = 10
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 65
-	armor_penetration = 15
+	damage = 45
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
-	damage = 85
+	damage = 65
 	stun = 3
 	weaken = 3
-	armor_penetration = 30
+	armor_penetration = 45
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1.25
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a145/apds
-	damage = 75
-	armor_penetration = 60
+	damage = 55
+	armor_penetration = 75
 	penetration_modifier = 1.5
 
 /* Miscellaneous */
@@ -301,24 +302,25 @@
 
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 70
-	armor_penetration = 15
-
+	damage = 48
+	armor_penetration = 30
+/* Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
 	..()
-
+*/
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 80
-	armor_penetration = 15
-
-/obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0)
+	damage = 48
+	armor_penetration = 35
+/* Explosive aspect of bullets doesn't work so triaging the code for now.
+ /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
-	..()
+	..() 
+*/
 
 /* Practice */
 
@@ -373,23 +375,5 @@
 /obj/item/projectile/bullet/ork/shoota
 	name = "piece of trash"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-
-/obj/item/projectile/bullet/ork/shoota/New()
-
-	switch(rand(1, 100))
-		if(100)
-			damage = 100
-			agony = 20
-		if(90 to 99)
-			damage = 80
-		if(80 to 89)
-			damage = rand(60, 70)
-		if(40 to 79)
-			damage = rand(40, 60)
-		if(20 to 39)
-			damage = rand(30, 40)
-		if(10 to 19)
-			damage = rand(10, 30)
-		if(1 to 9)
-			damage = 1
-	return ..()
+	damage = 40
+	armor_penetration = 5
