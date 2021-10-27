@@ -7,8 +7,8 @@
 	icon = 'icons/turf/dirt.dmi'
 	icon_state = "dirt1"
 	movement_delay = 0.25
-	has_coldbreath = TRUE
 	atom_flags = ATOM_FLAG_CLIMBABLE
+	has_coldbreath = FALSE // No more freezing to death indoors.
 	var/has_light = TRUE
 	var/can_generate_water = TRUE
 	var/can_be_dug = TRUE
