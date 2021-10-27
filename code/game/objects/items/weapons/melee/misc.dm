@@ -110,7 +110,7 @@
 	item_state = "trenchaxe"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 30
+	force = 35
 	block_chance = 30
 	sharp = TRUE
 	edge = TRUE
@@ -131,10 +131,10 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	str_requirement = 12
-	force = 42
-	armor_penetration = 10
-	block_chance = 8
+	force = 50
+	block_chance = 38
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 12
 
 // CHAINSWORD 
 
@@ -147,7 +147,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 12
-	force = 32
+	force = 44
 	block_chance = 10
 	sharp = TRUE
 	edge = TRUE
@@ -156,6 +156,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 14
 
 /obj/item/melee/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -166,7 +167,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 10
-	force = 30
+	force = 40
 	block_chance = 25
 	sharp = TRUE
 	edge = TRUE
@@ -175,6 +176,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 13
 
 /obj/item/melee/pcsword
 	name = "Mark I Pattern Chainsword"
@@ -185,7 +187,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14
-	force = 35
+	force = 45
 	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
@@ -194,6 +196,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 11
 
 /obj/item/melee/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -203,8 +206,8 @@
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
 	str_requirement = 12
-	force = 15// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 38
+	force = 25// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 49
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -216,3 +219,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
+	weapon_speed_delay = 16
