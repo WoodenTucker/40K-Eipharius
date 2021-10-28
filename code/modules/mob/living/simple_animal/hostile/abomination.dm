@@ -36,6 +36,7 @@
 	minbodytemp = 0
 	var/stance_step = 0
 
+	faction = "Chaos"
 	faction = "Nurgle" //keeps the cultist homies safe
 
 /mob/living/simple_animal/hostile/abomination/Life()
