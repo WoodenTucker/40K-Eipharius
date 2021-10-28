@@ -299,7 +299,7 @@
 	icon_state = "candy_corn"
 	filling_color = "#fffcb0"
 	center_of_mass = "x=14;y=10"
-	nutriment_amt = 4
+	nutriment_amt = 3
 	nutriment_desc = list("candy corn" = 4)
 	New()
 		..()
@@ -326,7 +326,7 @@
 	icon_state = "COOKIE!!!"
 	filling_color = "#dbc94f"
 	center_of_mass = "x=17;y=18"
-	nutriment_amt = 5
+	nutriment_amt = 2
 	nutriment_desc = list("sweetness" = 3, "cookie" = 2)
 	New()
 		..()
@@ -338,7 +338,7 @@
 	icon_state = "chocolatebar"
 	filling_color = "#7d5f46"
 	center_of_mass = "x=15;y=15"
-	nutriment_amt = 2
+	nutriment_amt = 3
 	nutriment_desc = list("chocolate" = 5)
 	New()
 		..()
@@ -352,7 +352,7 @@
 	icon_state = "chocolateegg"
 	filling_color = "#7d5f46"
 	center_of_mass = "x=16;y=13"
-	nutriment_amt = 3
+	nutriment_amt = 4
 	nutriment_desc = list("chocolate" = 5)
 	New()
 		..()
@@ -3290,13 +3290,24 @@
 	trash = /obj/item/trash/liquidfood
 	filling_color = "#a8a8a8"
 	center_of_mass = "x=16;y=15"
-	nutriment_desc = list("chalk" = 6)
-	nutriment_amt = 20
+	nutriment_desc = list("meat" = 6)
+	nutriment_amt = 9
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/iron, 3)
-		bitesize = 4
+		bitesize = 2
 
+/obj/item/reagent_containers/food/snacks/foodtray
+	name = "Food Tray"
+	desc = "Disgusting grey slurry and a side of boiled vegetables."
+	icon_state = "trayfilled01"
+	trash = /obj/item/trash/foodtray
+	nutriment_desc = list("protein" =3, "taters" =1, "greens" = 1)
+	nutriment_amt = 10
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 1)
+		bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/tastybread
 	name = "bread tube"
@@ -3305,8 +3316,8 @@
 	trash = /obj/item/trash/tastybread
 	filling_color = "#a66829"
 	center_of_mass = "x=17;y=16"
-	nutriment_desc = list("bread" = 2, "sweetness" = 3)
-	nutriment_amt = 6
+	nutriment_desc = list("bread" = 2, "sweetness" = 1)
+	nutriment_amt = 3
 	New()
 		..()
 		bitesize = 2
@@ -3326,12 +3337,12 @@
 
 /obj/item/reagent_containers/food/snacks/warfare
 	name = "\improper canned beans"
-	desc = "Supposedly what's in there is edible. But out on the frontlines it's about all you're getting."
+	desc = "Supposedly what's in there is edible."
 	icon_state = "cbeans"
 	atom_flags = 0 //They start closed
 	trash = /obj/item/trash/warfare_can
-	nutriment_desc = list("gross shit" = 6)
-	nutriment_amt = 20
+	nutriment_desc = list("meat" = 1)
+	nutriment_amt = 8
 	open_sound = 'sound/items/nonsoda_canopen.ogg'
 	drop_sound = 'sound/items/handle/can_drop.ogg'
 	var/open_can_icon = "cbeans_open"
