@@ -8,7 +8,7 @@
 //thirst
 /datum/happiness_event/thirst/filled
 	description = "<span class='binfo'>I've had enough to drink for a while!</span>\n"
-	happiness = 4
+	happiness = 5
 
 /datum/happiness_event/thirst/watered
 	description = "<span class='info'>I have recently had something to drink.</span>\n"
@@ -20,22 +20,22 @@
 
 /datum/happiness_event/thirst/dehydrated
 	description = "<span class='danger'>I need water!</span>\n"
-	happiness = -14
+	happiness = -12
 
 
 
 //nutrition
 /datum/happiness_event/nutrition/fat
 	description = "<span class='warning'><B>I'm so fat..</B></span>\n" //muh fatshaming
-	happiness = -4
+	happiness = -2
 
 /datum/happiness_event/nutrition/wellfed
 	description = "<span class='binfo'>My belly feels round and full.</span>\n"
-	happiness = 4
+	happiness = 6
 
 /datum/happiness_event/nutrition/fed
 	description = "<span class='info'>I have recently had some food.</span>\n"
-	happiness = 2
+	happiness = 3
 
 /datum/happiness_event/nutrition/hungry
 	description = "<span class='warning'>I'm getting a bit hungry.</span>\n"
@@ -57,7 +57,7 @@
 
 /datum/happiness_event/hygiene/vomitted
 	description = "<span class='warning'>Ugh, I've vomitted.\n"
-	happiness = -5
+	happiness = -2
 	timeout = 1800
 
 
@@ -65,17 +65,17 @@
 //Disgust
 /datum/happiness_event/disgust/gross
 	description = "<span class='warning'>That was gross.</span>\n"
-	happiness = -2
+	happiness = -1
 	timeout = 1800
 
 /datum/happiness_event/disgust/verygross
 	description = "<span class='warning'>I think I'm going to puke...</span>\n"
-	happiness = -4
+	happiness = -2
 	timeout = 1800
 
 /datum/happiness_event/disgust/disgusted
 	description = "<span class='danger'>Oh god that's disgusting...</span>\n"
-	happiness = -6
+	happiness = -4
 	timeout = 1800
 
 
@@ -157,14 +157,14 @@
 //For when you see someone die and you're not hardcore.
 /datum/happiness_event/dead
 	description = "<span class='danger'>OH MY GOD THEY'RE DEAD!</span>\n"
-	happiness = -10
-	timeout = 5 MINUTES
+	happiness = -1
+	timeout = 15 MINUTES
 
 //For when you see a family member die.
 /datum/happiness_event/family_death
 	description = "<span class='danger'>I SAW A FAMILY MEMBER DIE!</span>\n"
 	happiness = -12
-	timeout = 5 MINUTES
+	timeout = 15 MINUTES
 
 /datum/happiness_event/captain_death
 	description = "<span class='danger'>My captain is dead!</span>\n"
@@ -180,34 +180,34 @@
 
 /datum/happiness_event/addiction/withdrawal_small
 	description = "<span class='danger'>I don't indulge in my addiction.</span>\n"
-	happiness = -3
+	happiness = -1
 	timeout = FALSE
 
 /datum/happiness_event/addiction/withdrawal_medium
 	description = "<span class='danger'>I don't indulge in my addiction, that makes me unhappy!</span>\n"
-	happiness = -5
+	happiness = -2
 	timeout = FALSE
 
 /datum/happiness_event/addiction/withdrawal_large
 	description = "<span class='danger'>I don't indulge in my addiction, that makes me very unhappy!</span>\n"
-	happiness = -10
+	happiness = -5
 	timeout = FALSE
 
 /datum/happiness_event/addiction/withdrawal_extreme
 	description = "<span class='danger'>I DON'T INDULGE IN MY ADDICTION, MY DAY IS SHIT!!</span>\n"
-	happiness = -12
+	happiness = -8
 	timeout = FALSE
 
 /datum/happiness_event/high
 	description = "<span class='binfo'>I'm high as fuck</span>\n"
-	happiness = 12
+	happiness = 8
 
 /datum/happiness_event/relaxed
 	description = "<span class='binfo'>That cigarette was good.</span>\n"
-	happiness = 10
+	happiness = 3
 	timeout = 1800
 
 /datum/happiness_event/booze
 	description = "<span class='binfo'>Alcohol makes the pain go away.</span>\n"
-	happiness = 10
+	happiness = 4
 	timeout = 2400
