@@ -14,7 +14,7 @@
 	icon_state = "baton"
 	item_state = "EB-shaft"
 	slot_flags = SLOT_BELT
-	force = 15
+	force = 22
 	block_chance = 15
 	parry_sounds = list('sound/weapons/blunt_parry1.ogg', 'sound/weapons/blunt_parry2.ogg', 'sound/weapons/blunt_parry3.ogg')
 
@@ -56,7 +56,7 @@
 	item_state = "telebaton_0"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
-	force = 3
+	force = 5
 	var/on = 0
 
 
@@ -69,7 +69,7 @@
 		icon_state = "telebaton_1"
 		item_state = "nullrod"//was teletbaton_1 but guess what... that icon doesn't exist
 		w_class = ITEM_SIZE_NORMAL
-		force = 10//quite robust
+		force = 20//quite robust
 		attack_verb = list("smacked", "struck", "slapped")
 	else
 		user.visible_message("<span class='notice'>\The [user] collapses their telescopic baton.</span>",\

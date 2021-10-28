@@ -72,6 +72,10 @@
 	name = "\improper \"LiquidFood\" MRE"
 	icon_state = "liquidfood"
 
+/obj/item/trash/foodtray
+	name = "Empty Food Tray"
+	icon_state = "trayempty01"
+
 /obj/item/trash/tastybread
 	name = "bread tube"
 	icon_state = "tastybread"

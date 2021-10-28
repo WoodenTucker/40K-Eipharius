@@ -247,11 +247,12 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/lightmelee/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 1,
+	return list(/obj/item/material/sword/combat_knife = 2,
 				/obj/item/material/sword/combat_knife/rare = 3,
 				/obj/item/melee/classic_baton/trench_club = 1,
 				/obj/item/material/sword/sabre = 1,
 				/obj/item/melee/telebaton = 1,
+				/obj/item/material/sword/cane = 1,
 				/obj/item/material/sword/machete = 1)
 
 /obj/random/loot/heavymelee
@@ -261,12 +262,13 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/heavymelee/spawn_choices()
-	return list(/obj/item/melee/trench_axe = 15,
+	return list(/obj/item/melee/trench_axe = 12,
 				/obj/item/melee/inqcs = 2,
+				/obj/item/material/sword/cane = 3,
 				/obj/item/melee/pcsword/eviscerator = 1,
-				/obj/item/melee/classic_baton/trench_club = 8,
-				/obj/item/melee/telebaton = 4,
-				/obj/item/material/sword/machete = 10,
+				/obj/item/melee/classic_baton/trench_club = 4,
+				/obj/item/melee/telebaton = 3,
+				/obj/item/material/sword/machete = 6,
 				/obj/item/material/sword/sabre = 1,
 				/obj/item/melee/mercycs = 1)
 
