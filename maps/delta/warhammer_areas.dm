@@ -397,13 +397,13 @@ Area basic template
 	name = "Security"
 	icon_state = "security"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/armory
 	name = "Armory"
 	icon_state = "armory"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/barracks
 	name = "Barracks"
@@ -737,7 +737,7 @@ Area basic template
 	name = "The Maltese Falcon"
 	icon_state = "bar"
 	music = 'sound/newmusic/Inn_Ambient.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/service/kitchen
 	name = "Kitchen"
