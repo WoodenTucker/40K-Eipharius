@@ -21,8 +21,8 @@
 
 	var/raised = 0			//if the turret cover is "open" and the turret is raised
 	var/raising= 0			//if the turret is currently opening or closing its cover
-	var/health = 1000		//the turret's health
-	var/maxhealth = 1000		//turrets maximal health.
+	var/health = 500		//the turret's health
+	var/maxhealth = 500	//turrets maximal health.
 	var/auto_repair = 0		//if 1 the turret slowly repairs itself.
 	var/locked = 1			//if the turret's behaviour control access is locked
 	var/controllock = 0		//if the turret responds to control panels
@@ -36,7 +36,7 @@
 	var/egun = null			//holder to handle certain guns switching bullettypes
 
 	var/last_fired = 0		//1: if the turret is cooling down from a shot, 0: turret is ready to fire
-	var/shot_delay = 1		//0.1 seconds between each shot
+	var/shot_delay = 12		//1.2 seconds between each shot
 
 	var/check_arrest = 1	//checks if the perp is set to arrest
 	var/check_records = 0	//checks if a security record exists at all
@@ -559,6 +559,7 @@ var/list/turret_icons
 	var/atom/flick_holder = new /atom/movable/porta_turret_cover(loc)
 	flick_holder.layer = layer + 0.1
 	flick("popup", flick_holder)
+	playsound(loc, 'sound/machines/turret_open.ogg', 150, 1)
 	sleep(10)
 	qdel(flick_holder)
 
@@ -579,6 +580,7 @@ var/list/turret_icons
 	var/atom/flick_holder = new /atom/movable/porta_turret_cover(loc)
 	flick_holder.layer = layer + 0.1
 	flick("popdown", flick_holder)
+	playsound(loc, 'sound/machines/turret_close.ogg', 150, 1)
 	sleep(10)
 	qdel(flick_holder)
 

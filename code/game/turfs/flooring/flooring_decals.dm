@@ -838,6 +838,23 @@ var/list/floor_decals = list()
 ////////// NEW FLOORING //////////
 //////////////////////////////////
 
+// Even Newer
+/obj/effect/floor_decal/turf/grimy
+	name = "grimy floor"
+	icon = 'icons/turf/flooring/floors.dmi' // It will break without this.
+	icon_state = "grimy"
+
+/obj/effect/floor_decal/turf/nf2
+	name = "stone floor"
+	icon = 'icons/turf/flooring/floors.dmi'
+	icon_state = "nf2"
+
+/obj/effect/floor_decal/turf/lfloorscorched1
+	name = "scorched floor"
+	icon = 'icons/turf/flooring/floors.dmi'
+	icon_state = "lfloorscorched1"
+
+// Slightly New
 /obj/effect/floor_decal/turf/basalt0
 	name = "volcanic floor"
 	icon_state = "basalt0"
