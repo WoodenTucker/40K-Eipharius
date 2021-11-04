@@ -1,6 +1,6 @@
 ## Cadia Station: 40k 
 
-**Discord:** https://discord.gg/Avp9z7r
+**Discord:** https://discord.gg/xthVK85W3M
 
 ## Based off of Interstation12: Warfare
 
@@ -8,7 +8,7 @@
 
 **Main source code:** https://github.com/mattroks101/IS12-Warfare
 
-**Discord:**  https://discord.gg/FVRctMD
+**Discord:**  https://discord.gg/xthVK85W3M
 
 ## Terms of service
 
