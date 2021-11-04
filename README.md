@@ -8,7 +8,7 @@
 
 **Main source code:** https://github.com/mattroks101/IS12-Warfare
 
-**Discord:**  https://discord.gg/xthVK85W3M
+**Discord:**  https://discord.gg/FVRctMD
 
 ## Terms of service
 
