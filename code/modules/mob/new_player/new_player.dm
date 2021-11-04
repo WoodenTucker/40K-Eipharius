@@ -645,7 +645,7 @@ mob/new_player/MayRespawn()
 	var/dat = {"<h2>Cadia Station</h2>
 Hello! It appears you are new here! Thanks for joining Cadia Station. Here is some important information to get you started!
 <h3>Discord Link</h3>
-<font size='4'><a href=\"https://discord.gg/Avp9z7r\">Discord</a></font>
+<font size='4'><a href=\"https://discord.gg/xthVK85W3M\">Discord</a></font>
 <h3>Wiki Link</h3>
 <font size='4'><a href=\"http://is12wiki.xyz/index.php/Main_Page\">Wiki</a></font>
 <h3>Server Summary</h3>
