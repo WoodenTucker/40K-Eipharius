@@ -581,7 +581,7 @@ macro "hotkeymode"
 		command = "Invisimin"
 
 macro "borgmacro"
-	elem "enable_hotkey_mode_borg"
+	elem 
 		name = "Tab"
 		command = ".winset \"mainwindow.macro=borghotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true input.background-color=#F0F0F0\""
 	elem 
