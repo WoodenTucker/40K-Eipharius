@@ -44,6 +44,18 @@
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
 	impact_type = /obj/effect/projectile/laser/heavy/impact
+
+/obj/item/projectile/beam/plasmabeam
+	name = "plasma beam"
+	icon_state = "heavylaser"
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	damage = 200
+	armor_penetration = 30
+
+	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
+	tracer_type = /obj/effect/projectile/laser/heavy/tracer
+	impact_type = /obj/effect/projectile/laser/heavy/impact
+
 /obj/item/projectile/beam/pulse/bogani
 	name = "pulsar"
 	icon_state = "bogb"

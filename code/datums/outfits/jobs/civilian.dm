@@ -50,6 +50,7 @@
 	l_ear = null
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_hand = /obj/item/farmshovel
 	belt = /obj/item/storage/plants
@@ -102,8 +103,8 @@
 	l_pocket = /obj/item/storage/box/ifak
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
 	suit = /obj/item/clothing/suit/ministorumrobes
-	suit_store = /obj/item/melee/pcsword/eviscerator
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = /obj/item/melee/whip/censer
 	backpack_contents = list(

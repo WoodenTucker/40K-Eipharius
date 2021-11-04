@@ -181,8 +181,8 @@
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/dromedaryco = 6)
 
 /obj/item/storage/fancy/cigarettes/killthroat
-	name = "pack of Acme Co. cigarettes"
-	desc = "A packet of six Acme Company cigarettes. For those who somehow want to obtain the record for the most amount of cancerous tumors."
+	name = "pack of Low-Quality Lho"
+	desc = "A packet of six shitty Lho-sticks. Barely fit for Hive-Scum!"
 	icon_state = "Bpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/killthroat = 6)
 
@@ -193,22 +193,22 @@
 // New exciting ways to kill your lungs! - Earthcrusher //
 
 /obj/item/storage/fancy/cigarettes/luckystars
-	name = "pack of Brouzefs"
-	desc = "Captain Brouzef's famous cigarettes. It's rumored they're used as currency in the shittier parts of the planet."
+	name = "pack of Imperial-Cut"
+	desc = "Imperial-Cut Lho. The standard of any Hiver worth their thrones!"
 	icon_state = "LSpacket"
 	item_state = "Dpacket" //I actually don't mind cig packs not showing up in the hand. whotf doesn't just keep them in their pockets/coats //
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/luckystars = 6)
 
 /obj/item/storage/fancy/cigarettes/jerichos
-	name = "pack of Roacheyes"
-	desc = "Typically seen dangling from the lips of soldiers. Feels like warm liquid death down your lungs."
+	name = "pack of Guardsmen-Choice"
+	desc = "Guardsmen-Choice Lho makes one simple promise: Overpowering Lho-Flavour and a /tiny/ amount of stimulants to keep any Guardsmen going!"
 	icon_state = "Jpacket"
 	item_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/jerichos = 6)
 
 /obj/item/storage/fancy/cigarettes/menthols
-	name = "pack of Temperamento Menthols"
-	desc = "With a sharp and natural organic menthol flavor, these Temperamentos are a favorite of NDV crews. Hardly anyone knows they make 'em in non-menthol!"
+	name = "pack of Lho-Menthols"
+	desc = "The choice for anyone who isn't actually a Lho-Smoker."
 	icon_state = "TMpacket"
 	item_state = "Dpacket"
 
@@ -216,31 +216,31 @@
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/menthol = 6)
 
 /obj/item/storage/fancy/cigarettes/carcinomas
-	name = "pack of Tannhauser Gates"
-	desc = "Know one really knows who Tannhauser Gate was, or why he sold cigarettes."
+	name = "pack of Imperial-Select"
+	desc = "Premium cut Lho. You're paying for delayed cancer and smoother flavour!"
 	icon_state = "CApacket"
 	item_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/carcinomas = 6)
 
 /obj/item/storage/fancy/cigarettes/professionals
-	name = "pack of Professional 120s"
-	desc = "Let's face it - if you're smoking these, you're either trying to look upper-class or you're 80 years old. That's the only excuse. They taste disgusting, too."
+	name = "pack of Pinner-Lho"
+	desc = "You're smoking these because you're apart of the Upper-Crust of Imperial-Society but forgot your wallet somewhere else.."
 	icon_state = "P100packet"
 	item_state = "Dpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/professionals = 6)
 
 //cigarellos
 /obj/item/storage/fancy/cigarettes/cigarello
-	name = "pack of Trident Original cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years."
+	name = "pack of Astartes-Cut"
+	desc = "Made from only the most premium cut of Lho and coming with a synthetic-wood tip! How fancy."
 	icon_state = "CRpacket"
 	item_state = "Dpacket"
 	key_type = /obj/item/clothing/mask/smokable/cigarette/trident
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/trident = 5)
 
 /obj/item/storage/fancy/cigarettes/cigarello/variety
-	name = "pack of Trident Fruit cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. This is a fruit variety pack."
+	name = "pack of Warcrimes"
+	desc = "You sick fuck.."
 	icon_state = "CRFpacket"
 	startswith = list(	/obj/item/clothing/mask/smokable/cigarette/trident/watermelon,
 						/obj/item/clothing/mask/smokable/cigarette/trident/orange,
@@ -249,8 +249,8 @@
 						/obj/item/clothing/mask/smokable/cigarette/trident/berry)
 
 /obj/item/storage/fancy/cigarettes/cigarello/mint
-	name = "pack of Trident Menthol cigars"
-	desc = "The Trident brand's wood tipped little cigar, favored by the Sol corps diplomatique for their pleasant aroma. Machine made on Mars for over 100 years. These are the menthol variety."
+	name = "pack of Astartes-Cut Mint"
+	desc = "Made from only the most premium cut of Lho and coming with a synthetic-wood tip! How fancy. Now minty!"
 	icon_state = "CRMpacket"
 	startswith = list(/obj/item/clothing/mask/smokable/cigarette/trident/mint = 5)
 

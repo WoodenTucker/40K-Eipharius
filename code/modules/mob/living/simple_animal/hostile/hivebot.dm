@@ -9,32 +9,34 @@
 	icon_state = "basic"
 	icon_living = "basic"
 	icon_dead = "basic"
-	health = 15
-	maxHealth = 15
+	health = 300
+	maxHealth = 300
 	melee_damage_lower = 2
 	melee_damage_upper = 3
 	attacktext = "clawed"
 	projectilesound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	projectiletype = /obj/item/projectile/hivebotbullet
+	projectiletype = /obj/item/projectile/bullet/rifle/a556
 	faction = "hivebot"
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
-	speed = 4
+	speed = 1.7
 
 /mob/living/simple_animal/hostile/hivebot/range
 	name = "Hivebot"
 	desc = "A smallish robot, this one is armed!"
+	health = 200
 	ranged = 1
 
 /mob/living/simple_animal/hostile/hivebot/rapid
 	ranged = 1
+	health = 150
 	rapid = 1
 
 /mob/living/simple_animal/hostile/hivebot/strong
 	name = "Strong Hivebot"
 	desc = "A robot, this one is armed and looks tough!"
-	health = 80
+	health = 400
 	ranged = 1
 
 

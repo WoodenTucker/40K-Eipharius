@@ -1,6 +1,12 @@
-## Cadia Station: 40k 
+## Cadia Station: 40k   
+
 
 **Discord:** https://discord.gg/xthVK85W3M
+=======
+[![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
+
+**Discord:** https://discord.gg/E5njx9xJzh
+
 
 ## Based off of Interstation12: Warfare
 
@@ -14,7 +20,7 @@
 
 **Please carefully read the following statement:**
 
-If you desire to host your own server based off of IS12 Warfare source code - you may not pretend to be an "Official IS12 Warfare" server.
+If you desire to host your own server based off of IS12 Warfare source code - you may not pretend to be an "Official IS12 Warfare" server. 
 
 **By our terms and conditions we require any potential host to specify that they are an unofficial server in announcements and the Byond HUB.**
 

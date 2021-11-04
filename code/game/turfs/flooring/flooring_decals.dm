@@ -833,6 +833,89 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/turf/steel
 	icon_state = "steel"
 
+
+//////////////////////////////////
+////////// NEW FLOORING //////////
+//////////////////////////////////
+
+// Even Newer
+/obj/effect/floor_decal/turf/grimy
+	name = "grimy floor"
+	icon = 'icons/turf/flooring/floors.dmi' // It will break without this.
+	icon_state = "grimy"
+
+/obj/effect/floor_decal/turf/nf2
+	name = "stone floor"
+	icon = 'icons/turf/flooring/floors.dmi'
+	icon_state = "nf2"
+
+/obj/effect/floor_decal/turf/lfloorscorched1
+	name = "scorched floor"
+	icon = 'icons/turf/flooring/floors.dmi'
+	icon_state = "lfloorscorched1"
+
+// Slightly New
+/obj/effect/floor_decal/turf/basalt0
+	name = "volcanic floor"
+	icon_state = "basalt0"
+
+/obj/effect/floor_decal/turf/basalt1
+	name = "volcanic floor"
+	icon_state = "basalt1"
+
+/obj/effect/floor_decal/turf/basalt3
+	name = "volcanic floor"
+	icon_state = "basalt3"
+
+/obj/effect/floor_decal/turf/basalt9
+	name = "volcanic floor"
+	icon_state = "basalt9"
+
+/obj/effect/floor_decal/turf/basalt10
+	name = "volcanic floor"
+	icon_state = "basalt10"
+
+/obj/effect/floor_decal/turf/necro1
+	name = "infestation"
+	icon_state = "necro1"
+
+/obj/effect/floor_decal/turf/necro2
+	name = "horrific infestation"
+	desc = "You notice sharp teeth beneath it's flesh."
+	icon_state = "necro2"
+
+/obj/effect/floor_decal/turf/oldsmoothdirt
+	name = "dirt floor"
+	icon_state = "oldsmoothdirt"
+
+/obj/effect/floor_decal/turf/tunneldirty
+	name = "tunnel floor"
+	icon_state = "tunneldirty"
+
+/obj/effect/floor_decal/turf/tunnelchess
+	name = "tunnel floor"
+	icon_state = "tunnelchess"
+
+/obj/effect/floor_decal/turf/carpetn00
+	name = "carpet floor"
+	icon_state = "n00"
+
+/obj/effect/floor_decal/turf/surgery2
+	name = "surgery floor"
+	icon_state = "surgery2"
+
+/obj/effect/floor_decal/turf/brothel
+	name = "brothel floor"
+	icon_state = "brothel"
+
+/obj/effect/floor_decal/turf/clockwork
+	name = "alien floor"
+	icon_state = "clockwork"
+
+//////////////////////////////////
+//////// REGULAR FLOORING ////////
+//////////////////////////////////
+
 /obj/effect/floor_decal/turf/aesculapius
 	icon_state = "aesculapius"
 /obj/effect/floor_decal/turf/aesculapius/mem
@@ -866,7 +949,6 @@ var/list/floor_decals = list()
 
 /obj/effect/floor_decal/turf/rectangles/two
 	icon_state = "rectangles2"
-
 
 /obj/effect/floor_decal/turf/brick
 	icon_state = "brick1"

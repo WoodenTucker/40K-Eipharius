@@ -38,7 +38,7 @@
 /mob/living/carbon/human/ork/proc/warscream()
 	set category = "Ork"
 	set name = "WAAAAGH! (100)"
-	set desc = "Scream your lungs out to heal yourself, no one knows how it works but it does."
+	set desc = "WE AIN'T DONE FIGHTIN' YET!"
 	var/cooldown = FALSE
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>Ya can't waaaagh when ya' dead ya' git!</span>",)
@@ -46,22 +46,17 @@
 	if(waaagh >= 100 && !cooldown)
 		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
 		playsound(src, 'sound/voice/ork/orkscream.ogg', 50, 5)
-		adjustBruteLoss(-5)
-		adjustFireLoss(-5)
-		adjustOxyLoss(-5)
-		adjustToxLoss(-5)
-		adjustBrainLoss(-5)
-		restore_all_organs()
+		adjustBruteLoss(-1)
+		adjustFireLoss(-1)
+		adjustOxyLoss(-1)
+		adjustToxLoss(-1)
+		adjustBrainLoss(-1)
 		src.radiation = 0
 		src.bodytemperature = T20C
-		src.sdisabilities = 0
-		src.disabilities = 0
-		src.blinded = 0
-		src.eye_blind = 0
 		src.eye_blurry = 0
 		src.ear_deaf = 0
 		src.ear_damage = 0
-		src.inject_blood(src, 200)
+		src.inject_blood(src, 50)
 		cooldown = TRUE
 		spawn(120)
 			cooldown = FALSE
@@ -76,7 +71,7 @@
 	set name = "Scavenge (150)"
 	set desc = "Scavenge for scrap."
 	if(waaagh >= 150)
-		to_chat(src, "<span class='notice'> You start searching resources in your area. </span>")
+		to_chat(src, "<span class='notice'> You search the area for scrap metal. </span>")
 		if(do_after(src, 30))
 			new /obj/item/stack/material/scrap/fifty(loc)
 			to_chat(src, "<span class='notice'> You found scrap! </span>")
@@ -123,7 +118,7 @@
 		return
 
 	visible_message("[name] flexs der' muscles afa' a long nap, feelin' der' strength an' skill return to 'em.")
-	src.add_stats(rand(14,18),rand(14,18),rand(12,15),8) //gives stats str, end, int, dex
+	src.add_stats(rand(16,18),rand(14,18),rand(12,15),8) //gives stats str, end, int, dex
 	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(ORKZ) //secondary language

@@ -12,19 +12,18 @@
 	announced = TRUE
 
 	//Baseline skill defines
-	medical_skill = 6
-	surgery_skill = 4
-	ranged_skill = 10
-	engineering_skill = 5
-	melee_skill = 10
+	melee_skill = 6
+	ranged_skill = 6
+	medical_skill = 3
+	engineering_skill = 1
+	surgery_skill = 1
 	//Gun skills
-	auto_rifle_skill = 10
-	semi_rifle_skill = 8
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
 
 /mob/living/carbon/human/proc/assign_random_squad(var/team, var/rank)
 	switch(team)
@@ -143,59 +142,3 @@
 	to_chat(src, "<b>I am the Squad Leader of [src.squad.name] Squad</b>")
 
 
-/mob/proc/voice_in_head(message)
-	to_chat(src, "<i>...[message]</i>")
-
-GLOBAL_LIST_INIT(lone_thoughts, list(
-		"Why are we still here, just to suffer?",
-		"We fight to win, and that's all that matters.",
-		"Why we don't get any more reinforcements?",
-		"We have not gotten any orders from central command in months...",
-		"Did something happened while we were fighting in trenches?",
-		"Is there any reason to keep fighting?",
-		"Did anyone notice when ash started to fall?",
-		"It's middle of summer. Why it's so cold?",
-		"Greg died last night.",
-		"I do not want to die.",
-		"I miss my loved ones.",
-		"There is no hope... anymore...",
-		"Is there actually a central command?",
-		"Is any of this real?",
-		"My teeth hurt.",
-		"I am not ready to die.",
-		"Who keeps dropping the artillery?",
-		"I don't remember joining the military...",
-		"Does the Emperor truly protect?",
-		"I hope the Inquisitor doesn't find my Eldar milf fan-fiction",))
-
-/mob/living/proc/assign_random_quirk()
-	if(prob(75))//75% of not choosing a quirk at all.
-		return
-	if(is_hellbanned())//Hellbanned people will never get quirks.
-		return
-	var/list/random_quirks = list()
-	for(var/thing in subtypesof(/datum/quirk))//Populate possible quirks list.
-		var/datum/quirk/Q = thing
-		random_quirks += Q
-	if(!random_quirks.len)//If there's somewhow nothing there afterwards return.
-		return
-	var/datum/quirk/chosen_quirk = pick(random_quirks)
-	src.quirk = new chosen_quirk
-	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
-	switch(chosen_quirk)
-		if(/datum/quirk/cig_addict)
-			var/datum/reagent/new_reagent = new /datum/reagent/nicotine
-			src.reagents.addiction_list.Add(new_reagent)
-		if(/datum/quirk/alcoholic)
-			var/datum/reagent/new_reagent = new /datum/reagent/ethanol
-			src.reagents.addiction_list.Add(new_reagent)
-		if(/datum/quirk/obscura)
-			var/datum/reagent/new_reagent = new /datum/reagent/space_drugs
-			src.reagents.addiction_list.Add(new_reagent)
-
-/mob/living/carbon/human/proc/witchblood()
-	if(prob(99))//99% of not being a psyker
-		return
-	else
-		src.psyker = 1
-		src.verbs += list(/mob/living/carbon/human/proc/remotesay,)

@@ -177,6 +177,10 @@
 	icon_state = "phazon-broken"
 
 
+/obj/effect/decal/mecha_wreckage/tau
+	name = "TaU battlesuit"
+	icon_state = "tau-broken"
+
 /obj/effect/decal/mecha_wreckage/odysseus
 	name = "Odysseus wreckage"
 	icon_state = "odysseus-broken"

@@ -3,7 +3,7 @@
 	desc = "Truely a life-saver: this device protects its user from being hit by objects moving very, very fast, though only for a few shots."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "batterer"
-	var/uses = 5
+	var/uses = 60
 	var/obj/aura/personal_shield/device/shield
 
 /obj/item/device/personal_shield/attack_self(var/mob/living/user)

@@ -248,7 +248,7 @@
 
 // Adepta Sororitas
 
-/obj/item/clothing/under/guard/uniform/sisterelohiem
+/obj/item/clothing/under/guard/uniform/sisterofbattle
 	name = "Adepta Sororitas Bodysuit"
 	desc = "If you can inspect this, you're a coomer, do not ERP."
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)

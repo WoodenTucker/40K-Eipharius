@@ -89,7 +89,37 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	
+
+/obj/item/material/sword/slaanesh
+	name = "slaanesh sword"
+	desc = "A sword made of corruption."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "slaanesh_sword"
+	item_state = "sabre"
+	attack_verb = list("stabbed", "chopped", "cut", "sliced")
+	force = 30
+	sharp = 1
+	edge = 1
+	block_chance = 30
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
+	slot_flags = SLOT_BELT
+
+/obj/item/material/sword/hellblade
+	name = "hellblade sword"
+	desc = "A sword forged with corruption and souls of the raged."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "hellblade"
+	item_state = "sabre"
+	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
+	force = 50
+	sharp = 1
+	edge = 1
+	block_chance = 60
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
+	slot_flags = SLOT_BELT
+
 /obj/item/material/sword/commissword/sabre
 	name = "Sabre"
 	desc = "A well crafted sabre. Looks sharp."

@@ -12,8 +12,6 @@
 	name = "military .45 pistol"
 	desc = "The WT45 - a mass produced kinetic sidearm well-known in films and entertainment programming for being the daily carry choice issued to officers of the Sol Central Government Defense Forces. Uses .45 rounds."
 	icon_state = "usp"
-	accuracy = 0.35
-	fire_delay = 6.5
 
 /obj/item/gun/projectile/colt/officer/update_icon()
 	..()
@@ -29,8 +27,6 @@
 	magazine_type = /obj/item/ammo_magazine/c45m
 	allowed_magazines = /obj/item/ammo_magazine/c45m
 	caliber = ".45"
-	accuracy = -0.35
-	fire_delay = 5.5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	load_method = MAGAZINE
 
@@ -65,13 +61,23 @@
 	fire_delay = 5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/c45m
-	allowed_magazines = /obj/item/ammo_magazine/c45m
+	magazine_type = /obj/item/ammo_magazine/c45m/warfare
+	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
 	caliber = ".45"
-	condition = 70
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
+
+/obj/item/gun/projectile/talon/renegade
+	name = "Renegade Pistol"
+	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
+	move_delay= 1.3
+	one_hand_penalty = 0.5
+	accuracy = 0
+	fire_delay = 1
+	armor_penetration = 14
+	silenced = 1
+	force = 10
 
 /obj/item/gun/projectile/talon/adept
 	name = "dulled stub pistol"
@@ -165,7 +171,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
-	condition = 75
+	condition = 400
 
 /obj/item/gun/projectile/pistol/flash
 	name = "holdout signal pistol"
@@ -311,8 +317,7 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = FALSE
-	accuracy = -2
-	condition = 60
+	accuracy = -0.2
 	force = 20
 	load_method = MAGAZINE
 
@@ -324,10 +329,11 @@
 	desc = "The human sized bolter pistol, designed for usage by the Commissars of the Officio Prefectus, It also found itself in usage by officers of Astra Militarum, Rogue Traders as well Inquisitorial agents, Thus, it is relatively common and easily found across the Galaxy."
 	icon_state = "bpistol"
 	item_state = "bpistol"
-	force = 50.0
+	force = 10
 	caliber = ".75"
-	accuracy = 0.15
-	fire_delay = 4 // its a hecking bolter pistol
+	accuracy = -0.4
+	fire_delay = 4.1
+	move_delay = 2
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -342,14 +348,15 @@
 
 /obj/item/gun/projectile/bolter_pistol/astarte
 	name = "Mark III Pattern Bolt Pistol"
-	desc = "The standard Astarte-issued bolt pistol, larger and of course, better. And as usual, only the Astartes can carries these due to it massive size."
+	desc = "The standard Astarte-issued bolt pistol unlike many other sidearms is often used as a Primary weapon by the Adeptus Astartes and has proven itself just as capable as it's heavier cousins."
 	icon_state = "bpistol"
 	item_state = "bpistol"
 	str_requirement = 18
-	force = 50.0
+	force = 14
 	caliber = ".75"
-	accuracy = 0.75
-	fire_delay = 3.5 //better than standard
+	accuracy = -0.2
+	fire_delay = 3.8
+	move_delay = 3
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -362,18 +369,22 @@
 	else
 		icon_state = "bpistol-10-e"
 
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem
+/obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"
 	desc = "A heavily modified Bolter Pistol designed solely for the Militant wing of the Adepta Sororitas, It is more reliable and potent than another Bolt pistol pattern. Because it is designed for human usage, It is much smaller than standard Astarte Bolter pistol.</i>"
 	icon_state = "sisterbpistol"
 	loaded_icon = "sisterbpistol"
-	force = 25
+	force = 12
 	sharp = 1
 	edge = 1
+	move_delay = 1.5
+	accuracy = -0.3
+	fire_delay = 3.5
+	move_delay = 1.5
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 
-/obj/item/gun/projectile/bolter_pistol/sisterelohiem/update_icon()
+/obj/item/gun/projectile/bolter_pistol/sisterofbattle/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "sisterbpistol"

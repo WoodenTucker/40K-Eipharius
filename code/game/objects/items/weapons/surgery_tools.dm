@@ -95,7 +95,7 @@
 					H.custom_pain("The pain in your [affected.name] is unbearable!",rand(50, 65),affecting = affected)
 					if(do_mob(user, H, (backwards_skill_scale(user.SKILL_LEVEL(medical)) * 5)))
 						// Close it up to a point that it can be bandaged and heal naturally!
-						W.heal_damage(rand(5,20)+10)
+						W.heal_damage(rand(5,10)+10)
 						if(W.damage >= W.autoheal_cutoff)
 							user.visible_message("<span class='notice'>\The [user] partially closes a wound on [H]'s [affected.name] with \the [src.name].</span>", \
 							"<span class='notice'>You partially close a wound on [H]'s [affected.name] with \the [src.name].</span>")

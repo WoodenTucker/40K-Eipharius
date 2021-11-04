@@ -91,7 +91,7 @@
 	var/list/parry_sounds = list() //List of parry sounds to play when we block.
 
 	var/next_attack_time = 0
-	var/weapon_speed_delay = 15
+	var/weapon_speed_delay = 9
 	var/drop_sound = 'sound/items/handle/generic_drop1.ogg'
 	var/swing_sound = null
 	var/grab_sound = null

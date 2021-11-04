@@ -746,23 +746,9 @@ obj/random/obstruction/spawn_choices()
 /obj/random/shoes/spawn_choices()
 	return list(/obj/item/clothing/shoes/workboots = 3,
 				/obj/item/clothing/shoes/jackboots = 3,
-				/obj/item/clothing/shoes/swat = 1,
-				/obj/item/clothing/shoes/combat = 1,
-				/obj/item/clothing/shoes/galoshes = 2,
-				/obj/item/clothing/shoes/syndigaloshes = 1,
-				/obj/item/clothing/shoes/magboots = 1,
-				/obj/item/clothing/shoes/laceup = 4,
-				/obj/item/clothing/shoes/black = 4,
 				/obj/item/clothing/shoes/jungleboots = 3,
 				/obj/item/clothing/shoes/desertboots = 3,
 				/obj/item/clothing/shoes/dutyboots = 3,
-				/obj/item/clothing/shoes/tactical = 1,
-				/obj/item/clothing/shoes/dress = 3,
-				/obj/item/clothing/shoes/dress/white = 3,
-				/obj/item/clothing/shoes/sandal = 3,
-				/obj/item/clothing/shoes/brown = 4,
-				/obj/item/clothing/shoes/red = 4,
-				/obj/item/clothing/shoes/blue = 4,
 				/obj/item/clothing/shoes/leather = 4)
 
 /obj/random/gloves

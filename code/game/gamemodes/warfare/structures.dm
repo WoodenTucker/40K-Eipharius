@@ -303,25 +303,25 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(3, FALSE))
+				if (affecting.take_damage(18, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
-				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets slightly cut by \the [src]!</b></span>")
-			else if (prob (33))
+				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets cut by \the [src]!</b></span>")
+			else if (prob (43))
 				playsound(loc, "stab_sound", 50, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(8, FALSE))
+				if (affecting.take_damage(24, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
-				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets cut by \the [src]!</b></span>")
+				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets torn by \the [src]!</b></span>")
 			else
 				playsound(loc, "stab_sound", 50, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(13, FALSE))
+				if (affecting.take_damage(26, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets deeply cut by \the [src]!</b></span>")
@@ -331,14 +331,14 @@
 	if(ismob(AM))
 		var/mob/M = AM
 		if (ishuman(M))
-			if(prob(50))
+			if(prob(75))
 				M.visible_message("<span class='danger'>[M] struggle to free themselves from the barbed wire!</span>")
 				var/mob/living/carbon/human/H = M
 				playsound(loc, "stab_sound", 50, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(8, FALSE))
+				if (affecting.take_damage(7, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				return FALSE
@@ -400,7 +400,7 @@
 
 /obj/structure/anti_tank
 	name = "metal barricade"
-	desc = "Usually found in no man\'s land IN YOUR FUCKING WAY. It's dense enough to block bullets, don't even try to fucking shoot over it."
+	desc = "Sturdy enough to stop a bolter round and bulky enough to take cover behind."
 	icon = 'icons/obj/warfare.dmi'
 	icon_state = "anti-tank"
 	anchored = TRUE
@@ -456,7 +456,7 @@
 
 /obj/structure/landmine
 	name = "landmine"
-	desc = "If you step on this you'll probably fucking die."
+	desc = "You'd need a shovel or wirecutter to disable this explosive trap."
 	icon = 'icons/obj/warfare.dmi'
 	icon_state = "mine"
 	anchored = TRUE

@@ -133,7 +133,7 @@
 	desc = "Usually filled with water. Keeps most people from dying of dehydration."
 	icon_state = "canteen"
 	center_of_mass = "x=16;y=9"
-	volume = 50
+	volume = 100
 	slot_flags = SLOT_TIE
 
 /obj/item/reagent_containers/food/drinks/canteen/New()
@@ -178,8 +178,8 @@
 
 
 /obj/item/reagent_containers/food/drinks/coffee
-	name = "\improper Robust Coffee"
-	desc = "Careful, the beverage you're about to enjoy is extremely hot."
+	name = "\improper Robust Recaf"
+	desc = "Recaf! Effectively the lifeblood of any schola, guardsmen or human to ever have walked the materium."
 	icon_state = "coffee"
 	center_of_mass = "x=15;y=10"
 /obj/item/reagent_containers/food/drinks/coffee/New()
@@ -187,8 +187,8 @@
 	reagents.add_reagent(/datum/reagent/drink/coffee, 30)
 
 /obj/item/reagent_containers/food/drinks/tea
-	name = "cup of Duke Purple Tea"
-	desc = "An insult to Duke Purple is an insult to the Space Queen! Any proper gentleman will fight you, if you sully this tea."
+	name = "cup of Tanna"
+	desc = "An insult to this Tea is certain to get you shot!"
 	icon_state = "teacup"
 	item_state = "coffee"
 	center_of_mass = "x=16;y=14"
@@ -209,8 +209,8 @@
 	reagents.add_reagent(/datum/reagent/drink/ice, 30)
 
 /obj/item/reagent_containers/food/drinks/h_chocolate
-	name = "cup of Dutch hot coco"
-	desc = "Made in Space South America."
+	name = "cup of Noble hot coco"
+	desc = "Made with things you don't want to know."
 	icon_state = "hot_coco"
 	item_state = "coffee"
 	center_of_mass = "x=15;y=13"

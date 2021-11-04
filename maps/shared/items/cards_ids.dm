@@ -24,7 +24,7 @@
 
 /obj/item/card/id/shared/hos
 	icon_state = "id_hos"
-	job_access_type = /datum/job/hos
+	job_access_type = /datum/job/ig/commissar
 
 
 /obj/item/card/id/shared/sec

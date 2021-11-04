@@ -150,7 +150,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	siemens_coefficient = 0.7
 	permeability_coefficient = 0.03
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 25, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 25, bomb = 30, bio = 0, rad = 0)
 
 /obj/item/clothing/gloves/thick/swat/combat/krieg
 	icon_state = "krieggloves"
@@ -190,7 +190,7 @@
 	heat_protection = HANDS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/gloves/sisterelohiem
+/obj/item/clothing/gloves/sisterofbattle
 	name = "Order of the Sacred Rose Power Gauntlets"
 	desc = "Gauntlets of the Adepta Sororitas's Order Of Sacred Rose Battle Sisters, Part of their Power Armour System."
 	icon_state = "sister"

@@ -111,7 +111,74 @@
 			F.unlock_achievement(new/datum/achievement/child_fire())
 
 
-//Create a flame sprite object. Doesn't work like regular fire, ie. does not affect atmos or heat
+// FLESH MOUTH
+/obj/necrofleshmouth
+	name = "infester mouth"
+	icon = 'icons/turf/flooring/decals.dmi'
+	icon_state = "necro2"
+	anchored = 1
+	mouse_opacity = 0
+	layer = BELOW_OBJ_LAYER
+
+/obj/necrofleshmouth/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
+	return TRUE
+
+/obj/necrofleshmouth/Crossed(AM as mob|obj)
+	if (ismob(AM))
+		var/mob/M = AM
+		if (ishuman(M))
+			var/mob/living/carbon/human/H = M
+			if (prob (33))
+				playsound(loc, "stab_sound", 50, TRUE)
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(3, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
+			else if (prob (33))
+				playsound(loc, "stab_sound", 50, TRUE)
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(45, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
+			else
+				playsound(loc, "stab_sound", 50, TRUE)
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(55, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets chomped by \the [src]!</b></span>")
+	return ..()
+
+/obj/necrofleshmouth/Uncross(AM as mob)
+	if(ismob(AM))
+		var/mob/M = AM
+		if (ishuman(M))
+			if(prob(90))
+				M.visible_message("<span class='danger'>[M] struggle to free themselves from the barbed teeth!</span>")
+				var/mob/living/carbon/human/H = M
+				playsound(loc, "stab_sound", 50, TRUE)
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(6, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+				return FALSE
+			else
+				M.visible_message("<span class='danger'>[M] frees themself from the barbed teeth!</span>")
+				return TRUE
+	return ..()
+
+/// FLAME FIRE
+
 /obj/flamer_fire
 	name = "fire"
 	desc = "Ouch!"
