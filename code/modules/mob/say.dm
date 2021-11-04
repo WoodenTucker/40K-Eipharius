@@ -13,6 +13,7 @@
 	if(typing_indicator)
 		qdel(typing_indicator)
 	usr.say(message)
+	winset(src, null, "mainwindow.macro=hotkeymode hotkey_toggle.is-checked=true mapwindow.map.focus=true")
 
 /mob/verb/me_verb(message as text)
 	set name = "Me"
