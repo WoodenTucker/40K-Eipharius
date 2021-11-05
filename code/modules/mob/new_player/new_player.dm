@@ -645,7 +645,7 @@ mob/new_player/MayRespawn()
 	var/dat = {"<h2>Grimdark 13</h2>
 Hello! It appears you are new here! Thanks for joining Grimdark 13. We recommend that if you are new to the Grimdark of 40k to do a deep dive into the lore of 40k.
 <h3>Discord Link</h3>
-<font size='4'><a href=\"https://discord.gg/E5njx9xJzh\">Discord</a></font>
+<font size='4'><a href=\"https://discord.gg/xthVK85W3M\">Discord</a></font>
 <h3>Wiki Link</h3>
 <font size='4'><a href=\"http://is12wiki.xyz/index.php/Main_Page\">Wiki</a></font>
 <h3>Lexicanum</h3>
