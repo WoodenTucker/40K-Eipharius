@@ -278,6 +278,7 @@
     icon_state = "mecha_grenadelnchr"
     projectile = /obj/item/shell_heat
     fire_sound = 'sound/weapons/gunshot/tank.ogg'
+    fire_volume = 100 //Loud
     projectiles = 1
     projectile_energy_cost = 100 KILOWATTS
     equip_cooldown = 60
@@ -293,6 +294,7 @@
     equip_cooldown = 30
     projectile = /obj/item/projectile/bullet/bolt
     fire_sound = 'sound/weapons/gunshot/harbringer.ogg'
+    fire_volume = 100
     projectiles = 300
     projectiles_per_shot = 6
     deviation = 0.3
