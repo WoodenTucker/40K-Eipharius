@@ -1,11 +1,11 @@
-/obj/mecha/combat/durand
-	desc = "An aging combat exosuit utilized by many corporations. Originally developed to combat hostile alien lifeforms."
-	name = "Durand"
+/
+	desc = "An aging combat sarcophagus, designed to sustain mortally-wounded Astartes, while allowing them to continue their service."
+	name = "Dreadnaught"
 	icon_state = "durand"
 	initial_icon = "durand"
 	step_in = 4
-	health = 500
-	deflect_chance = 20
+	health = 600
+	deflect_chance = 30
 	damage_absorption = list("brute"=0.5,"fire"=1,"bullet"=0.5,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000
 	infra_luminosity = 8
@@ -17,8 +17,8 @@
 /*
 /obj/mecha/combat/durand/New()
 	..()
-	weapons += new /datum/mecha_weapon/ballistic/lmg(src)
-	weapons += new /datum/mecha_weapon/ballistic/scattershot(src)
+	weapons += new /datum/mecha_weapon/ballistic/autocannon(src)
+	weapons += new /datum/mecha_equipment/hydraulic_clamp(src)
 	selected_weapon = weapons[1]
 	return
 */
