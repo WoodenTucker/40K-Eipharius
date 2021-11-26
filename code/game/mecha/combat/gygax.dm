@@ -1,11 +1,11 @@
 /obj/mecha/combat/gygax
-	desc = "A lightweight, security exosuit. Popular among private and corporate security."
-	name = "Gygax"
+	desc = "A lightweight combat exosuit, utilized by Sororitas Repentias."
+	name = "Repentance Machine"
 	icon_state = "gygax"
 	initial_icon = "gygax"
 	step_in = 3
 	dir_in = 1 //Facing North.
-	health = 400
+	health = 500
 	deflect_chance = 15
 	damage_absorption = list("brute"=0.6,"fire"=1,"bullet"=0.7,"laser"=0.65,"energy"=0.85,"bomb"=0.85)
 	max_temperature = 25000
