@@ -1,5 +1,5 @@
 /obj/mecha/combat/gygax
-	desc = "A lightweight combat exosuit, utilized by Sororitas Repentias."
+	desc = "A lightweight combat exosuit, utilized by Sororitas Repentia."
 	name = "Repentance Machine"
 	icon_state = "gygax"
 	initial_icon = "gygax"
