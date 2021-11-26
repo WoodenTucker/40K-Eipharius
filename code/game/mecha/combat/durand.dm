@@ -18,7 +18,7 @@
 /obj/mecha/combat/durand/New()
 	..()
 	weapons += new /datum/mecha_weapon/ballistic/autocannon(src)
-	weapons += new /datum/mecha_equipment/hydraulic_clamp(src)
+	weapons += new /datum/mecha_equipment/tool/hydraulic_clamp(src)
 	selected_weapon = weapons[1]
 	return
 */
