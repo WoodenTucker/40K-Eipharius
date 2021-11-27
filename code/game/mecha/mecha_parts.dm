@@ -119,44 +119,44 @@
 //////////// Durand
 
 /obj/item/mecha_parts/chassis/durand
-	name = "Durand Chassis"
+	name = "Dreadnought Chassis"
 
 	New()
 		..()
 		construct = new /datum/construction/mecha/durand_chassis(src)
 
 /obj/item/mecha_parts/part/durand_torso
-	name="Durand Torso"
+	name="Dreadnought Torso"
 	icon_state = "durand_harness"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 3, TECH_BIO = 3, TECH_ENGINEERING = 3)
 
 /obj/item/mecha_parts/part/durand_head
-	name="Durand Head"
+	name="Dreadnought Head"
 	icon_state = "durand_head"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 3, TECH_MAGNET = 3, TECH_ENGINEERING = 3)
 
 /obj/item/mecha_parts/part/durand_left_arm
-	name="Durand Left Arm"
+	name="Dreadnought Left Arm"
 	icon_state = "durand_l_arm"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
 
 /obj/item/mecha_parts/part/durand_right_arm
-	name="Durand Right Arm"
+	name="Dreadnought Right Arm"
 	icon_state = "durand_r_arm"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
 
 /obj/item/mecha_parts/part/durand_left_leg
-	name="Durand Left Leg"
+	name="Dreadnought Left Leg"
 	icon_state = "durand_l_leg"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
 
 /obj/item/mecha_parts/part/durand_right_leg
-	name="Durand Right Leg"
+	name="Dreadnought Right Leg"
 	icon_state = "durand_r_leg"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 3, TECH_ENGINEERING = 3)
 
 /obj/item/mecha_parts/part/durand_armour
-	name="Durand Armour Plates"
+	name="Dreadnought Armour Plates"
 	icon_state = "durand_armour"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 4, TECH_ENGINEERING = 5)
 
