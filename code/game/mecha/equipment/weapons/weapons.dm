@@ -208,8 +208,8 @@
 	deviation = 0.7
 	projectile_energy_cost = 50 KILOWATTS
 
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
-	name = "\improper Heavy automatic bolter"
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/autocannon
+	name = "\improper heavy autocannon"
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
 	projectile = /obj/item/projectile/bullet/pistol/medium
@@ -219,6 +219,14 @@
 	deviation = 0.3
 	projectile_energy_cost = 40 KILOWATTS
 	fire_cooldown = 2
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/assault
+	name = "\improper assault cannon"
+	equip_cooldown = 20
+	fire_cooldown = 1
+	projectiles_per_shot = 6
+	projectiles = 900
+	projectile_energy_cost = 120 KILOWATTS
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack
 	var/missile_speed = 2
@@ -267,40 +275,47 @@
 
 	throw_impact(atom/hit_atom)
 		if(primed)
-			explosion(hit_atom, 2, 2, 3, 6)
+			explosion(hit_atom, 0, 1, 3, 4)
 			qdel(src)
 		else
 			..()
 		return
 
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/tank_cannon
-    name = "\improper Predator cannon"
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/tank_cannon
+    name = "\improper Vanquisher cannon"
     icon_state = "mecha_grenadelnchr"
-    projectile = /obj/item/ammo_casing/shell_heat
+    projectile = /obj/item/recoilless_shell
     fire_sound = 'sound/weapons/gunshot/tank.ogg'
     fire_volume = 100 //Loud
     projectiles = 1
     projectile_energy_cost = 100 KILOWATTS
     equip_cooldown = 60
 
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/tank_cannon/Fire(atom/movable/AM, atom/target)
-    var/obj/item/shell/M = AM
-    ..()
+/obj/item/recoilless_shell
+	icon = 'icons/obj/projectiles.dmi'
+	icon_state = "heat_shell"
+	var/primed = null
+	throwforce = 30
 
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/autocannon
-    name = "\improper heavy autocannon"
+	throw_impact(atom/hit_atom)
+		if(primed)
+			explosion(hit_atom, 0, 2, 2, 3)
+			qdel(src)
+		else
+			..()
+		return
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavybolter
+    name = "\improper heavy bolter"
     icon_state = "mecha_uac2"
     equip_cooldown = 30
     projectile = /obj/item/projectile/bullet/bolt
     fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
     fire_volume = 100
-    projectiles = 300
-    projectiles_per_shot = 6
-    deviation = 0.3
-    projectile_energy_cost = 40 KILOWATTS
+    projectiles = 60
+    projectiles_per_shot = 3
+    deviation = 0.15
+    projectile_energy_cost = 80 KILOWATTS
     fire_cooldown = 5
-
-
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang
 	name = "\improper SGL-6 grenade launcher"

@@ -1,8 +1,8 @@
 /obj/mecha/combat/gygax/leman
 	desc = "A tank used by Astra Militarum"
 	name = "Leman Russ"
-	icon_state = "durand"
-	initial_icon = "durand"
+	icon_state = "impknight"
+	initial_icon = "impknight"
 	step_in = 2.5
 	health = 800
 	deflect_chance = 45
