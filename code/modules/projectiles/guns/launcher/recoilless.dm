@@ -1,8 +1,8 @@
 /obj/item/gun/launcher/rcl_rifle
         name = "recoilless rifle"
         desc = "Auf wiedersein, untermensch."
-        icon_state = "rocket"
-        item_state = "rocket"
+        icon_state = "rcl_rifle-e"
+        item_state = "rcl_rifle-e"
         w_class = ITEM_SIZE_LARGE
         throw_speed = 2
         throw_range = 10
@@ -17,6 +17,13 @@
         var/max_shells = 1
         var/list/shells = new/list()
 
+/obj/item/gun/launcher/rcl_rifle/update_icon()
+	..()
+	if(shells.len == max_shells)
+		icon_state = "rcl_rifle"
+	else
+		icon_state = "rcl_rifle-e"
+
 /obj/item/gun/launcher/rcl_rifle/examine(mob/user)
         if(!..(user, 2))
                 return
@@ -27,6 +34,8 @@
 		if(shells.len < max_shells)
 			user.drop_item()
 			I.loc = src
+			flick("rcl_rifle-l",src)
+			playsound(src.loc, 'sound/effects/cannon_load.ogg', 100, 1)
 			shells += I
 			to_chat(user, "<span class='notice'>You put the shell in [src].</span>")
 			to_chat(user, "<span class='notice'>[shells.len] / [max_shells] shells.</span>")
