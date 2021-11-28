@@ -1,4 +1,3 @@
-
 /obj/item/gun/launcher/rcl_rifle
         name = "recoilless rifle"
         desc = "Auf wiedersein, untermensch."
