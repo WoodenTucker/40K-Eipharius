@@ -95,226 +95,64 @@
 	name = "Armour plating"
 	id = "armour"
 	build_path = /obj/item/robot_parts/robot_component/armour
-
-/datum/design/item/mechfab/ripley
-	category = "Ripley"
-
-/datum/design/item/mechfab/ripley/chassis
-	name = "Ripley chassis"
-	id = "ripley_chassis"
-	build_path = /obj/item/mecha_parts/chassis/ripley
-	time = 10
-	materials = list(DEFAULT_WALL_MATERIAL = 20000)
-
-/datum/design/item/mechfab/ripley/chassis/firefighter
-	name = "Firefigher chassis"
-	id = "firefighter_chassis"
-	build_path = /obj/item/mecha_parts/chassis/firefighter
-
-/datum/design/item/mechfab/ripley/torso
-	name = "Ripley torso"
-	id = "ripley_torso"
-	build_path = /obj/item/mecha_parts/part/ripley_torso
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 40000, "glass" = 15000)
-
-/datum/design/item/mechfab/ripley/left_arm
-	name = "Ripley left arm"
-	id = "ripley_left_arm"
-	build_path = /obj/item/mecha_parts/part/ripley_left_arm
-	time = 15
-	materials = list(DEFAULT_WALL_MATERIAL = 25000)
-
-/datum/design/item/mechfab/ripley/right_arm
-	name = "Ripley right arm"
-	id = "ripley_right_arm"
-	build_path = /obj/item/mecha_parts/part/ripley_right_arm
-	time = 15
-	materials = list(DEFAULT_WALL_MATERIAL = 25000)
-
-/datum/design/item/mechfab/ripley/left_leg
-	name = "Ripley left leg"
-	id = "ripley_left_leg"
-	build_path = /obj/item/mecha_parts/part/ripley_left_leg
-	time = 15
-	materials = list(DEFAULT_WALL_MATERIAL = 30000)
-
-/datum/design/item/mechfab/ripley/right_leg
-	name = "Ripley right leg"
-	id = "ripley_right_leg"
-	build_path = /obj/item/mecha_parts/part/ripley_right_leg
-	time = 15
-	materials = list(DEFAULT_WALL_MATERIAL = 30000)
-
-/datum/design/item/mechfab/odysseus
-	category = "Odysseus"
-
-/datum/design/item/mechfab/odysseus/chassis
-	name = "Odysseus chassis"
-	id = "odysseus_chassis"
-	build_path = /obj/item/mecha_parts/chassis/odysseus
-	time = 10
-	materials = list(DEFAULT_WALL_MATERIAL = 20000)
-
-/datum/design/item/mechfab/odysseus/torso
-	name = "Odysseus torso"
-	id = "odysseus_torso"
-	build_path = /obj/item/mecha_parts/part/odysseus_torso
-	time = 18
-	materials = list(DEFAULT_WALL_MATERIAL = 25000)
-
-/datum/design/item/mechfab/odysseus/head
-	name = "Odysseus head"
-	id = "odysseus_head"
-	build_path = /obj/item/mecha_parts/part/odysseus_head
-	time = 10
-	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 10000)
-
-/datum/design/item/mechfab/odysseus/left_arm
-	name = "Odysseus left arm"
-	id = "odysseus_left_arm"
-	build_path = /obj/item/mecha_parts/part/odysseus_left_arm
-	time = 12
-	materials = list(DEFAULT_WALL_MATERIAL = 10000)
-
-/datum/design/item/mechfab/odysseus/right_arm
-	name = "Odysseus right arm"
-	id = "odysseus_right_arm"
-	build_path = /obj/item/mecha_parts/part/odysseus_right_arm
-	time = 12
-	materials = list(DEFAULT_WALL_MATERIAL = 10000)
-
-/datum/design/item/mechfab/odysseus/left_leg
-	name = "Odysseus left leg"
-	id = "odysseus_left_leg"
-	build_path = /obj/item/mecha_parts/part/odysseus_left_leg
-	time = 13
-	materials = list(DEFAULT_WALL_MATERIAL = 15000)
-
-/datum/design/item/mechfab/odysseus/right_leg
-	name = "Odysseus right leg"
-	id = "odysseus_right_leg"
-	build_path = /obj/item/mecha_parts/part/odysseus_right_leg
-	time = 13
-	materials = list(DEFAULT_WALL_MATERIAL = 15000)
-
-/datum/design/item/mechfab/gygax
-	category = "Gygax"
-
-/datum/design/item/mechfab/gygax/chassis
-	name = "Gygax chassis"
-	id = "gygax_chassis"
-	build_path = /obj/item/mecha_parts/chassis/gygax
-	time = 10
-	materials = list(DEFAULT_WALL_MATERIAL = 25000)
-
-/datum/design/item/mechfab/gygax/torso
-	name = "Gygax torso"
-	id = "gygax_torso"
-	build_path = /obj/item/mecha_parts/part/gygax_torso
-	time = 30
-	materials = list(DEFAULT_WALL_MATERIAL = 50000, "glass" = 20000)
-
-/datum/design/item/mechfab/gygax/head
-	name = "Gygax head"
-	id = "gygax_head"
-	build_path = /obj/item/mecha_parts/part/gygax_head
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 20000, "glass" = 10000)
-
-/datum/design/item/mechfab/gygax/left_arm
-	name = "Gygax left arm"
-	id = "gygax_left_arm"
-	build_path = /obj/item/mecha_parts/part/gygax_left_arm
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 30000)
-
-/datum/design/item/mechfab/gygax/right_arm
-	name = "Gygax right arm"
-	id = "gygax_right_arm"
-	build_path = /obj/item/mecha_parts/part/gygax_right_arm
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 30000)
-
-/datum/design/item/mechfab/gygax/left_leg
-	name = "Gygax left leg"
-	id = "gygax_left_leg"
-	build_path = /obj/item/mecha_parts/part/gygax_left_leg
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 35000)
-
-/datum/design/item/mechfab/gygax/right_leg
-	name = "Gygax right leg"
-	id = "gygax_right_leg"
-	build_path = /obj/item/mecha_parts/part/gygax_right_leg
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 35000)
-
-/datum/design/item/mechfab/gygax/armour
-	name = "Gygax armour plates"
-	id = "gygax_armour"
-	build_path = /obj/item/mecha_parts/part/gygax_armour
-	time = 60
-	materials = list(DEFAULT_WALL_MATERIAL = 50000, "diamond" = 10000)
-
 /datum/design/item/mechfab/durand
-	category = "Durand"
+	category = "Dreadnought"
 
 /datum/design/item/mechfab/durand/chassis
-	name = "Durand chassis"
+	name = "Dreadnought chassis"
 	id = "durand_chassis"
 	build_path = /obj/item/mecha_parts/chassis/durand
 	time = 10
-	materials = list(DEFAULT_WALL_MATERIAL = 25000)
+	materials = list(DEFAULT_WALL_MATERIAL = 50000)
 
 /datum/design/item/mechfab/durand/torso
-	name = "Durand torso"
+	name = "Dreadnought torso"
 	id = "durand_torso"
 	build_path = /obj/item/mecha_parts/part/durand_torso
 	time = 30
-	materials = list(DEFAULT_WALL_MATERIAL = 55000, "glass" = 20000, "silver" = 10000)
+	materials = list(DEFAULT_WALL_MATERIAL = 110000, "glass" = 40000, "silver" = 20000)
 
 /datum/design/item/mechfab/durand/head
-	name = "Durand head"
+	name = "Dreadnought head"
 	id = "durand_head"
 	build_path = /obj/item/mecha_parts/part/durand_head
 	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 25000, "glass" = 10000, "silver" = 3000)
+	materials = list(DEFAULT_WALL_MATERIAL = 50000, "glass" = 20000, "silver" = 6000)
 
 /datum/design/item/mechfab/durand/left_arm
-	name = "Durand left arm"
+	name = "Dreadnought left arm"
 	id = "durand_left_arm"
 	build_path = /obj/item/mecha_parts/part/durand_left_arm
 	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 35000, "silver" = 3000)
+	materials = list(DEFAULT_WALL_MATERIAL = 70000, "silver" = 6000)
 
 /datum/design/item/mechfab/durand/right_arm
-	name = "Durand right arm"
+	name = "Dreadnought right arm"
 	id = "durand_right_arm"
 	build_path = /obj/item/mecha_parts/part/durand_right_arm
 	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 35000, "silver" = 3000)
+	materials = list(DEFAULT_WALL_MATERIAL = 70000, "silver" = 6000)
 
 /datum/design/item/mechfab/durand/left_leg
-	name = "Durand left leg"
+	name = "Dreadnought left leg"
 	id = "durand_left_leg"
 	build_path = /obj/item/mecha_parts/part/durand_left_leg
 	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 40000, "silver" = 3000)
+	materials = list(DEFAULT_WALL_MATERIAL = 80000, "silver" = 6000)
 
 /datum/design/item/mechfab/durand/right_leg
-	name = "Durand right leg"
+	name = "Dreadnought right leg"
 	id = "durand_right_leg"
 	build_path = /obj/item/mecha_parts/part/durand_right_leg
 	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 40000, "silver" = 3000)
+	materials = list(DEFAULT_WALL_MATERIAL = 80000, "silver" = 6000)
 
 /datum/design/item/mechfab/durand/armour
-	name = "Durand armour plates"
+	name = "Dreadnought armour plates"
 	id = "durand_armour"
 	build_path = /obj/item/mecha_parts/part/durand_armour
 	time = 60
-	materials = list(DEFAULT_WALL_MATERIAL = 50000, "uranium" = 10000)
+	materials = list(DEFAULT_WALL_MATERIAL = 100000, "uranium" = 20000)
 
 /datum/design/item/robot_upgrade
 	build_type = MECHFAB
@@ -410,43 +248,11 @@
 	name = "Drill"
 	id = "mech_drill"
 	build_path = /obj/item/mecha_parts/mecha_equipment/tool/drill
-
-/datum/design/item/mecha/extinguisher
-	name = "Extinguisher"
-	id = "extinguisher"
-	build_path = /obj/item/mecha_parts/mecha_equipment/tool/extinguisher
-
-/datum/design/item/mecha/cable_layer
-	name = "Cable layer"
-	id = "mech_cable_layer"
-	build_path = /obj/item/mecha_parts/mecha_equipment/tool/cable_layer
-	
 /datum/design/item/mecha/flaregun
 	name = "Flare launcher"
 	id = "mecha_flare_gun"
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flare
 	materials = list(DEFAULT_WALL_MATERIAL = 12500)
-
-/datum/design/item/mecha/sleeper
-	name = "Sleeper"
-	id = "mech_sleeper"
-	build_path = /obj/item/mecha_parts/mecha_equipment/tool/sleeper
-	materials = list(DEFAULT_WALL_MATERIAL = 5000, "glass" = 10000)
-
-/datum/design/item/mecha/syringe_gun
-	name = "Syringe gun"
-	id = "mech_syringe_gun"
-	build_path = /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun
-	time = 20
-	materials = list(DEFAULT_WALL_MATERIAL = 3000, "glass" = 2000)
-
-/*
-/datum/design/item/mecha/syringe_gun
-	desc = "Exosuit-mounted syringe gun and chemical synthesizer."
-	id = "mech_syringe_gun"
-	req_tech = list(TECH_MATERIAL = 3, TECH_BIO = 4, TECH_MAGNET = 4, TECH_DATA = 3)
-	build_path = /obj/item/mecha_parts/mecha_equipment/tool/syringe_gun
-	*/
 
 /datum/design/item/mecha/passenger
 	name = "Passenger compartment"
@@ -463,7 +269,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/taser
 
 /datum/design/item/mecha/lmg
-	name = "Ultra AC 2"
+	name = "Heavy automatic bolter"
 	id = "mech_lmg"
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 
@@ -478,7 +284,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
 
 /datum/design/item/mecha/weapon/laser
-	name = "CH-PS \"Immolator\" laser"
+	name = "Heavy mounted lascannon"
 	id = "mech_laser"
 	req_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 3)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser
@@ -501,51 +307,7 @@
 	id = "mech_ion"
 	req_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/energy/ion
-
-/datum/design/item/mecha/weapon/grenade_launcher
-	name = "SGL-6 grenade launcher"
-	id = "mech_grenade_launcher"
-	req_tech = list(TECH_COMBAT = 3)
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang
-
-/datum/design/item/mecha/weapon/clusterbang_launcher
-	name = "SOP-6 grenade launcher"
-	desc = "A weapon that violates the Geneva Convention at 6 rounds per minute."
-	id = "clusterbang_launcher"
-	req_tech = list(TECH_COMBAT= 5, TECH_MATERIAL = 5, TECH_ILLEGAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 20000, "gold" = 6000, "uranium" = 6000)
-	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang/clusterbang/limited
-
 // *** Nonweapon modules
-/datum/design/item/mecha/wormhole_gen
-	name = "Wormhole generator"
-	desc = "An exosuit module that can generate small quasi-stable wormholes."
-	id = "mech_wormhole_gen"
-	req_tech = list(TECH_BLUESPACE = 3, TECH_MAGNET = 2)
-	build_path = /obj/item/mecha_parts/mecha_equipment/wormhole_generator
-
-/datum/design/item/mecha/teleporter
-	name = "Teleporter"
-	desc = "An exosuit module that allows teleportation to any position in view."
-	id = "mech_teleporter"
-	req_tech = list(TECH_BLUESPACE = 10, TECH_MAGNET = 5)
-	build_path = /obj/item/mecha_parts/mecha_equipment/teleporter
-
-/datum/design/item/mecha/rcd
-	name = "RCD"
-	desc = "An exosuit-mounted rapid construction device."
-	id = "mech_rcd"
-	time = 120
-	materials = list(DEFAULT_WALL_MATERIAL = 30000, "phoron" = 25000, "silver" = 20000, "gold" = 20000)
-	req_tech = list(TECH_MATERIAL = 4, TECH_BLUESPACE = 3, TECH_MAGNET = 4, TECH_POWER = 4, TECH_ENGINEERING = 4)
-	build_path = /obj/item/mecha_parts/mecha_equipment/tool/rcd
-
-/datum/design/item/mecha/gravcatapult
-	name = "Gravitational catapult"
-	desc = "An exosuit-mounted gravitational catapult."
-	id = "mech_gravcatapult"
-	req_tech = list(TECH_BLUESPACE = 2, TECH_MAGNET = 3, TECH_ENGINEERING = 3)
-	build_path = /obj/item/mecha_parts/mecha_equipment/gravcatapult
 
 /datum/design/item/mecha/repair_droid
 	name = "Repair droid"
@@ -554,13 +316,6 @@
 	req_tech = list(TECH_MAGNET = 3, TECH_DATA = 3, TECH_ENGINEERING = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 10000, "gold" = 1000, "silver" = 2000, "glass" = 5000)
 	build_path = /obj/item/mecha_parts/mecha_equipment/repair_droid
-
-/datum/design/item/mecha/phoron_generator
-	desc = "Phoron reactor."
-	id = "mech_phoron_generator"
-	req_tech = list(TECH_PHORON = 2, TECH_POWER= 2, TECH_ENGINEERING = 2)
-	build_path = /obj/item/mecha_parts/mecha_equipment/generator
-	materials = list(DEFAULT_WALL_MATERIAL = 10000, "silver" = 500, "glass" = 1000)
 
 /datum/design/item/mecha/energy_relay
 	name = "Energy relay"
@@ -586,7 +341,7 @@
 
 /datum/design/item/mecha/diamond_drill
 	name = "Diamond drill"
-	desc = "A diamond version of the exosuit drill. It's harder, better, faster, stronger."
+	desc = "A diamond version of the dreadnought drill. It's harder, better, faster, stronger."
 	id = "mech_diamond_drill"
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 10000, "diamond" = 6500)

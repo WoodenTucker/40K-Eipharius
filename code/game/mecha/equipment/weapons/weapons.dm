@@ -82,7 +82,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy
 	equip_cooldown = 15
-	name = "\improper CH-LC \"Solaris\" laser cannon"
+	name = "\improper Heavy mounted lascannon"
 	icon_state = "mecha_laser"
 	energy_drain = 6 KILOWATTS
 	projectile = /obj/item/projectile/beam/heavylaser
@@ -209,7 +209,7 @@
 	projectile_energy_cost = 50 KILOWATTS
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
-	name = "\improper Ultra AC 2"
+	name = "\improper Heavy automatic bolter"
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
 	projectile = /obj/item/projectile/bullet/pistol/medium

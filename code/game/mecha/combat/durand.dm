@@ -1,12 +1,12 @@
-/
-	desc = "An aging combat sarcophagus, designed to sustain mortally-wounded Astartes, while allowing them to continue their service."
-	name = "Dreadnaught"
+/obj/mecha/combat/durand
+	desc = "Dreadnought is a massive war-machine piloted by an honoured Space Marine whose body has been ravaged in battle."
+	name = "Dreadnought"
 	icon_state = "durand"
 	initial_icon = "durand"
 	step_in = 4
-	health = 600
-	deflect_chance = 30
-	damage_absorption = list("brute"=0.5,"fire"=1,"bullet"=0.5,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
+	health = 750
+	deflect_chance = 20
+	damage_absorption = list("brute"=0.3,"fire"=1,"bullet"=0.3,"laser"=0.4,"energy"=0.3,"bomb"=0.75)
 	max_temperature = 30000
 	infra_luminosity = 8
 	force = 40
@@ -72,3 +72,7 @@
 	if (href_list["toggle_defence_mode"])
 		src.defence_mode()
 	return
+
+/obj/mecha/combat/durand/Destroy()
+	occupant.gib()
+	. = ..()
