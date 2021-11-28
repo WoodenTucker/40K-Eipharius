@@ -94,6 +94,10 @@
 				parts -= part
 		return
 
+/obj/effect/decal/mecha_wreckage/lemam
+	name = "leman wreckage"
+	icon_state = "leman-broken"//i will add code here later
+
 /obj/effect/decal/mecha_wreckage/gygax/dark
 	name = "Dark Gygax wreckage"
 	icon_state = "darkgygax-broken"

@@ -267,7 +267,7 @@
 
 	throw_impact(atom/hit_atom)
 		if(primed)
-			explosion(hit_atom, 0, 1, 2, 4)
+			explosion(hit_atom, 2, 2, 3, 6)
 			qdel(src)
 		else
 			..()
@@ -276,7 +276,7 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/tank_cannon
     name = "\improper Predator cannon"
     icon_state = "mecha_grenadelnchr"
-    projectile = /obj/item/shell_heat
+    projectile = /obj/item/ammo_casing/shell_heat
     fire_sound = 'sound/weapons/gunshot/tank.ogg'
     fire_volume = 100 //Loud
     projectiles = 1
@@ -285,7 +285,6 @@
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/tank_cannon/Fire(atom/movable/AM, atom/target)
     var/obj/item/shell/M = AM
-    M.primed = 1
     ..()
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/autocannon
@@ -293,7 +292,7 @@
     icon_state = "mecha_uac2"
     equip_cooldown = 30
     projectile = /obj/item/projectile/bullet/bolt
-    fire_sound = 'sound/weapons/gunshot/harbringer.ogg'
+    fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
     fire_volume = 100
     projectiles = 300
     projectiles_per_shot = 6

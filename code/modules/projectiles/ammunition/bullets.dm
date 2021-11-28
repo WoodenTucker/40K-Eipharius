@@ -186,6 +186,13 @@
 	projectile_type = /obj/item/missile
 	caliber = "rocket"
 
+/obj/item/ammo_casing/shell_heat
+	name = "heat shell"
+	desc = "A high explosive designed to be fired from a recoilless rifle."
+	icon_state = "rocketshell"
+	projectile_type = /obj/item/missile
+	caliber = "shell"
+
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
