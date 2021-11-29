@@ -208,7 +208,11 @@
 	deviation = 0.7
 	projectile_energy_cost = 50 KILOWATTS
 
+<<<<<<< HEAD
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/autocannon
+=======
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
+>>>>>>> 04ba10d5 (Recoilless Rifle Release)
 	name = "\improper heavy autocannon"
 	icon_state = "mecha_uac2"
 	equip_cooldown = 10
@@ -282,7 +286,11 @@
 		return
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/tank_cannon
+<<<<<<< HEAD
+    name = "\improper Vanquisher cannon"
+=======
     name = "\improper Predator cannon"
+>>>>>>> 04ba10d5 (Recoilless Rifle Release)
     icon_state = "mecha_grenadelnchr"
     projectile = /obj/item/recoilless_shell
     fire_sound = 'sound/weapons/gunshot/tank.ogg'
