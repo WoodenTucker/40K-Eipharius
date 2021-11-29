@@ -75,6 +75,7 @@
 		dat += "<A href='byond://?src=\ref[src];rifleammo=1'>Rifle Ammo Box (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];lasmag=1'>Las Magazine (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];shotshell=1'>Shotgun Shell Box (6)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];heatshell=1'>Recoilless shell (50)</A><BR>"
 		dat += "<B> Laboratory/Misc Materials:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];silver=1'>Cut Silver (100)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];gold=1'>Cut Gold (100)</A><BR>"
@@ -560,7 +561,7 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/gun/projectile/automatic/autogrim(T.loc) //what they spawning
-			src.buying = 0			
+			src.buying = 0
 	if (href_list["stubber"])
 		if(GLOB.thrones < 35) //do we got enough shekels?
 			visible_message("You cannot afford that!")
@@ -592,7 +593,7 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/ammo_magazine/autogrim(T.loc) //what they spawning
-			src.buying = 0		
+			src.buying = 0
 	if (href_list["stubberammo"])
 		if(GLOB.thrones < 7) //do we got enough shekels?
 			visible_message("You cannot afford that!")
@@ -689,6 +690,22 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/ammo_box/shotgun(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["heatshell"])
+		if(GLOB.thrones < 50)
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1)
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 50 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/ammo_casing/heat_shell(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["meat"])
 		if(GLOB.thrones < 25) //do we got enough shekels?
