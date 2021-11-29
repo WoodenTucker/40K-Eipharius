@@ -41,6 +41,7 @@
 			to_chat(user, "<span class='notice'>[shells.len] / [max_shells] shells.</span>")
 		else
 			to_chat(usr, "<span class='warning'>\The [src] cannot hold more shells.</span>")
+		update_icon()
 
 /obj/item/gun/launcher/rcl_rifle/consume_next_projectile()
         if(shells.len)
