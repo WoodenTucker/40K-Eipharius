@@ -470,6 +470,9 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/launcher/rcl_rifle, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/ammo_casing/heat_shell, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_casing/heat_shell, slot_in_backpack)
 			U.verbs -= list(
 			/mob/living/carbon/human/proc/sergeantselection,)
 
