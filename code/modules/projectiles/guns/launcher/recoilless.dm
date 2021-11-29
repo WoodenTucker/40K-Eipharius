@@ -51,6 +51,8 @@
                 return M
         return null
 
+
+//a lot of shitcode. i fix it someday
 /obj/item/gun/launcher/rcl_rifle/handle_post_fire(mob/user, atom/target)
         log_and_message_admins("fired a shell from a recoilless rifle ([src.name]) at [target].")
         ..()
