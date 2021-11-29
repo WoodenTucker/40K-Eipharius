@@ -2068,6 +2068,7 @@
 #include "code\modules\projectiles\guns\launcher\grenade_launcher.dm"
 #include "code\modules\projectiles\guns\launcher\net.dm"
 #include "code\modules\projectiles\guns\launcher\pneumatic.dm"
+#include "code\modules\projectiles\guns\launcher\recoilless.dm"
 #include "code\modules\projectiles\guns\launcher\rocket.dm"
 #include "code\modules\projectiles\guns\launcher\slugsling.dm"
 #include "code\modules\projectiles\guns\launcher\syringe_gun.dm"

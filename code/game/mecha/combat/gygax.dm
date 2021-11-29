@@ -15,6 +15,8 @@
 	wreckage = /obj/effect/decal/mecha_wreckage/gygax
 	internal_damage_threshold = 35
 	max_equip = 3
+	var/overload_disable_message = "You disable leg actuators overload"
+	var/overload_enable_message = "You enable leg actuators overload"
 
 /obj/mecha/combat/gygax/dark
 	desc = "A lightweight exosuit used by Heavy Asset Protection. A significantly upgraded Gygax security mech."
@@ -56,12 +58,12 @@
 		overload = 0
 		step_in = initial(step_in)
 		step_energy_drain = initial(step_energy_drain)
-		src.occupant_message("<font color='blue'>You disable leg actuators overload.</font>")
+		src.occupant_message("<font color='blue'>[overload_disable_message]</font>")
 	else
 		overload = 1
 		step_in = min(1, round(step_in/2))
 		step_energy_drain = step_energy_drain*overload_coeff
-		src.occupant_message("<font color='red'>You enable leg actuators overload.</font>")
+		src.occupant_message("<font color='red'>[overload_enable_message]</font>")
 	src.log_message("Toggled leg actuators overload.")
 	return
 
