@@ -1259,8 +1259,8 @@
 	M.apply_effect(max(M.radiation - 1 * removed, 0), IRRADIATE, blocked = 0)
 
 /datum/reagent/ethanol/vodka/premium
-	name = "Premium Vodka"
-	description = "Premium distilled vodka imported directly from an Imperial-Secret House!"
+	name = "Zakat Premium"
+	description = "Premium distilled rahzvod imported directly from the city of Zakat, industrial center of Vostroya."
 	taste_description = "Victory"
 	color = "#aaddff" // rgb: 170, 221, 255 - very light blue.
 	strength = 10
@@ -1305,6 +1305,39 @@
 	strength = 30
 	color = "#ff9100"
 	taste_description = "the finest fruits and aged wood, carefully selected from numerous Imperial worlds."
+
+/datum/reagent/ethanol/amasec/caddis/extra
+	name = "Mourning Collection"
+	description = "Expensive, aged and meant for the nobility of the Imperium. This bottle of wine tastes and smells indescribably good, produced from precious fruits and herbs of the paradise world of Caddis for the lowest class of it's citizens."
+	strength = 30
+	color = "#722f37"
+	taste_description = "the perfect collection fruits and herbs, carefully gathered on Caddis with effort and respect, saturating the drink with unique hints of noble wines."
+
+/datum/reagent/ethanol/amasec/caddis/elite
+	name = "Golden Tokay"
+	description = "Expensive, aged and meant for the nobility of the Imperium. This bottle of wine tastes and smells indescribably good, produced from precious fruits and herbs of the paradise world of Caddis for the middle-class citizens."
+	strength = 30
+	color = "#722f37"
+	taste_description = "the ultimate collection of fruits and herbs, carefully gathered on Caddis with proper effort and respect, saturating the drink with it's pleasant taste."
+
+/datum/reagent/ethanol/amasec/caddis/supreme
+	name = "Catalina Malvasia"
+	description = "Expensive, extremely aged and meant for the nobility of the Imperium. This bottle of wine tastes and smells indescribably good, produced from precious fruits and herbs of the paradise world of Caddis for it's highest nobility."
+	strength = 35
+	color = "#722f37"
+	taste_description = "the supreme collection of fruits and herbs, carefully gathered on Caddis with incredible proper effort and respect. You surely could give your own soul for this ideal wine."
+
+/datum/reagent/ethanol/amasec/mjod
+	name = "Mjød"
+	description = "Extremely potent alcoholic beverage, able to intoxicate even Adeptus Astartes."
+	strength = 10
+	toxicity = 2.5
+	nutriment_factor = 5
+	color = "#ff9100"
+	taste_description = "cold and bitter sweet with a hint of ."
+
+	glass_name = "mjød"
+	glass_desc = "Extremely potent alcoholic beverage, able to intoxicate even Adeptus Astartes. Probably lethal for non-Astartes, but tastes quite good."
 
 /datum/reagent/ethanol/herbal
 	name = "Herbal Liquor"

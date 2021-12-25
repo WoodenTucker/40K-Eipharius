@@ -3334,6 +3334,31 @@
 		..()
 		bitesize = 3
 
+/obj/item/reagent_containers/food/snacks/corpsestarch
+	name = "\improper corpse starch bar"
+	desc = "A synthetic food source created from the recycled human corpses in depths of the hive cities on many of the countless Hive Worlds of the Imperium of Man."
+	icon_state = "proteinbar"
+	trash = /obj/item/trash/corpsestarch
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/nutriment, 20)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 20)
+		bitesize = 3
+
+/obj/item/reagent_containers/food/snacks/triglyceride
+	name = "\improper triglyceride gel"
+	desc = "A pack of dull grey slurry, designed to sustain an Astartes during long deployments, enough to keep one of His angels full for several hours."
+	filling_color = "#a8a8a8"
+	center_of_mass = "x=16;y=15"
+	nutriment_desc = list("dull proteine mess" = 6)
+	nutriment_amt = 100
+	trash = /obj/item/trash/liquidfood/triglyceride
+
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/iron, 30)
+		bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/warfare
 	name = "\improper canned beans"
@@ -3378,7 +3403,7 @@
 	trash = /obj/item/trash/warfare_can/flower
 
 /obj/item/reagent_containers/food/snacks/warfare/rat
-	name = "\improper canned corpse-starch"
+	name = "\improper canned corpse starch"
 	icon_state = "ratmeat"
 	open_can_icon = "ratmeat_open"
 	desc = "The closest thing to a casket any hive-scum will see in the Imperium!"
