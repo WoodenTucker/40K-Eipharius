@@ -1003,3 +1003,8 @@ I said no!
 /datum/recipe/cake/brain
 	items = list(/obj/item/organ/internal/brain)
 	result = /obj/item/reagent_containers/food/snacks/sliceable/braincake
+
+/datum/recipe/corpsestarch
+	items = list(
+	/obj/item/reagent_containers/food/snacks/meat/human)
+	result = /obj/item/reagent_containers/food/snacks/corpsestarch
