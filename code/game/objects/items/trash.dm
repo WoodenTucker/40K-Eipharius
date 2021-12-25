@@ -72,6 +72,10 @@
 	name = "\improper \"LiquidFood\" MRE"
 	icon_state = "liquidfood"
 
+/obj/item/trash/liquidfood/triglyceride
+	name = "\improper triglyceride gel"
+	icon_state = "liquidfood"
+
 /obj/item/trash/foodtray
 	name = "Empty Food Tray"
 	icon_state = "trayempty01"
@@ -97,6 +101,10 @@
 
 /obj/item/trash/warfare_can/nim
 	icon_state = "nim_empty"
+
+/obj/item/trash/corpsestarch
+	name = "protein bar"
+	icon_state = "proteinbar"
 
 /obj/item/trash/attack(mob/M as mob, mob/living/user as mob)
 	return
