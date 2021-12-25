@@ -35,6 +35,9 @@
 		dat += "<B> Luxury Foods/Drinks:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];ca=1'>Cheap Amasec (3)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];ea=1'>Expensive Amasec (8)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];ea1=1'>Caddis Mourning Collection (30)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];ea2=1'>Caddis Golden Tokay (45)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];ea3=1'>Caddis Catalina Malvasia (60)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];meat=1'>Meat Crate (25)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];lho=1'>Pack of Lho (10)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];lighter=1'>Lighter (3)</A><BR>"
@@ -225,6 +228,54 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["ea1"])
+		if(GLOB.thrones < 30) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 30 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/reagent_containers/food/drinks/bottle/amasecextra(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["ea2"])
+		if(GLOB.thrones < 45) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 45 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/reagent_containers/food/drinks/bottle/amasecelite(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["ea3"])
+		if(GLOB.thrones < 60) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 60 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/reagent_containers/food/drinks/bottle/amasecsupreme(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["glass"])
 		if(GLOB.thrones < 15) //do we got enough shekels?
