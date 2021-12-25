@@ -20,7 +20,7 @@
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = null
 	pda_slot = null
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	backpack_contents = list(/obj/item/stack/thrones/five = 1,
 		/obj/item/stack/thrones2/five = 1,
 		/obj/item/stack/thrones3/five = 1,)

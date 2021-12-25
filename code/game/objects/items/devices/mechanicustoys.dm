@@ -126,6 +126,22 @@
 	..()
 	spawn(1) if(src) qdel(src)
 
+/obj/item/melee/omnissiah_axe
+	name = "Omnissiah`s axe"
+	desc = "Holy axe for Magos"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "trenchaxe"
+	item_state = "trenchaxe"
+	wielded_icon = "trenchaxe-w"
+	force = 25
+	block_chance = 50
+	sharp = TRUE
+	edge = TRUE
+
+/obj/item/melee/omnissiah_axe/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
+
 
 //Biologis toys go below here---------------------------------------------------------------------------------
 /obj/item/device/neuraladapter

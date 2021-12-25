@@ -391,6 +391,34 @@
 		usr.put_in_hands(new /obj/item/device/lasercutter(usr))
 		src.is_toggled = 2
 
+/obj/item/storage/backpack/satchel/warfare/techpriest/magos
+	name = "Magos satchel"
+
+/obj/item/storage/backpack/satchel/warfare/techpriest/magos/verb/toggle_axe()
+	set name =  "Deploy axe"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/melee/omnissiah_axe))
+			visible_message("<span class='warning'> [usr] quickly hides an axe of incredible power.</span>", "<span class='notice'>You put away the axe!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/melee/omnissiah_axe))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] hides an axe of incredible power.</span>", "<span class='notice'>You put away the axe!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the axe.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the axe.")
+		usr.put_in_hands(new /obj/item/melee/omnissiah_axe(usr))
+		src.is_toggled = 2
+
 /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
