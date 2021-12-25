@@ -509,3 +509,30 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/amasec/expensive, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/caddis/extra
+	name = "Mourning Collection"
+	desc = "Expensive, aged and meant for the nobility of the Imperium. This bottle of wine tastes and smells indescribably good, produced from precious fruits and herbs of the paradise world of Caddis for the lowest class of it's citizens."
+	icon_state = "amasecpricey"
+	center_of_mass = "x=16;y=8"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/amasec/caddis/extra, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/caddis/elite
+	name = "Golden Tokay"
+	desc = "Expensive, aged and meant for the nobility of the Imperium. This bottle of wine tastes and smells indescribably good, produced from precious fruits and herbs of the paradise world of Caddis for the middle-class citizens."
+	icon_state = "amasecpricey"
+	center_of_mass = "x=16;y=8"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/amasec/caddis/elite, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/caddis/supreme
+	name = "Catalina Malvasia"
+	desc = "Expensive, extremely aged and meant for the nobility of the Imperium. This bottle of wine tastes and smells indescribably good, produced from precious fruits and herbs of the paradise world of Caddis for it's highest nobility."
+	icon_state = "amasecpricey"
+	center_of_mass = "x=16;y=8"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/amasec/caddis/supreme, 100)
