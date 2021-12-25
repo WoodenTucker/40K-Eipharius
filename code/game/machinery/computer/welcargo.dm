@@ -243,7 +243,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/reagent_containers/food/drinks/bottle/amasecextra(T.loc) //what they spawning
+			new /obj/item/reagent_containers/food/drinks/bottle/caddis/extra(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["ea2"])
 		if(GLOB.thrones < 45) //do we got enough shekels?
@@ -259,7 +259,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/reagent_containers/food/drinks/bottle/amasecelite(T.loc) //what they spawning
+			new /obj/item/reagent_containers/food/drinks/bottle/caddis/elite(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["ea3"])
 		if(GLOB.thrones < 60) //do we got enough shekels?
@@ -275,7 +275,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/reagent_containers/food/drinks/bottle/amasecsupreme(T.loc) //what they spawning
+			new /obj/item/reagent_containers/food/drinks/bottle/caddis/supreme(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["glass"])
 		if(GLOB.thrones < 15) //do we got enough shekels?
