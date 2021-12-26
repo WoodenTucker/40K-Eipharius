@@ -1,5 +1,5 @@
 /obj/item/gun/launcher/rcl_rifle
-        name = "Caddis-pattern recoilless rifle"
+        name = "Kaurawa-pattern recoilless rifle"
         desc = "Auf wiedersein, untermensch."
         icon_state = "rcl_rifle-e"
         item_state = "rcl_rifle-e"
