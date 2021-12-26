@@ -146,7 +146,7 @@
 
 /obj/item/device/cassette/tape5/New()
 	..()
-	name = "\"The Officio Prefectus-Approved Morale Boosting Vox Compositions\" magn-o-tape"
+	name = "\"The Officio Prefectus-Approved Morale Boosting Chants\" magn-o-tape"
 	a_side = pick('sound/music/boombox11.ogg','sound/music/boombox12.ogg')
 	b_side = pick('sound/music/boombox2.ogg')
 	current_side = 2
@@ -154,7 +154,7 @@
 
 /obj/item/device/cassette/tape6/New()
 	..()
-	name = "\"The General Fabricator-Approved Vox Compositions\" magn-o-tape"
+	name = "\"The General Fabricator-Approved Chants\" magn-o-tape"
 	a_side = pick('sound/music/boombox13.ogg')
 	b_side = pick('sound/music/boombox14.ogg')
 	sound_inside = a_side
