@@ -904,7 +904,7 @@ Area basic template
 	music = 'sound/newmusic/General_Ambient2.ogg'
 
 /area/cadiaoutpost/oa/caves
-	name = "Caves" // Regular caves - little to no danger. Soft ambience. 
+	name = "Caves" // Regular caves - little to no danger. Soft ambience.
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	var/instability = 0
@@ -935,7 +935,7 @@ Area basic template
 	requires_power = FALSE
 	dynamic_lighting = 1
 
-/area/cadiaoutpost/oa/villageinside 
+/area/cadiaoutpost/oa/villageinside
 	name = "Inside Village"
 	icon_state = "village"
 	music = 'sound/newmusic/VillageInside.ogg'
@@ -1363,7 +1363,7 @@ Area basic template
 	icon_state = "shuttle"
 
 /area/cadiaoutpost/oa/shuttle/assultpod
-	name = "Assult Pod"
+	name = "Assault Pod"
 	icon_state = "shuttle"
 
 /area/cadiaoutpost/oa/shuttle/custom
@@ -1451,7 +1451,7 @@ Area basic template
 	icon_state = "shuttle"
 
 /area/cadiaoutpost/oa/shuttle/inquisition
-	name = "Inquisition Ship"
+	name = "Saruei Inquisition Shuttle"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = 0
