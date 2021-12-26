@@ -1,6 +1,6 @@
 /obj/item/gun/launcher/rcl_rifle
-        name = "Kaurawa-pattern recoilless rifle"
-        desc = "Auf wiedersein, untermensch."
+        name = "Vraks pattern rocket launcher"
+        desc = "A rocket launcher of Vraks pattern, being supplied to Krieg for combat against armoured targets."
         icon_state = "rcl_rifle-e"
         item_state = "rcl_rifle-e"
         w_class = ITEM_SIZE_LARGE
