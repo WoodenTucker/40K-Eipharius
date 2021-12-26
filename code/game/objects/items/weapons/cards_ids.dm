@@ -296,12 +296,12 @@ var/const/NO_EMAG_ACT = -50
 	access |= get_all_station_access()
 
 /obj/item/card/id/all_access
-	name = "\improper Administrator's spare ID"
-	desc = "The spare ID of the Lord of Lords himself."
+	name = "\improper Card of Terra"
+	desc = "The sacred card of the High Lords of Terra."
 	icon_state = "data"
 	item_state = "tdgreen"
-	registered_name = "Administrator"
-	assignment = "Administrator"
+	registered_name = "Highest Lord of Terra"
+	assignment = "Highest Lord of Terra"
 /obj/item/card/id/all_access/New()
 	access = get_access_ids()
 	..()
@@ -468,6 +468,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/dog_tag
 	var/warfare_faction = null
 	icon_state = "dogtag"
+	item_state = "gold_id"
 	desc = "A metal dog tag. Functions like an ID."
 
 /obj/item/card/id/dog_tag/update_name()
@@ -484,7 +485,30 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
-	access = list(access_maint_tunnels,)
+	access = list(access_maint_tunnels)
+
+/obj/item/card/id/commissar
+	name = "identification card"
+	desc = "A card which represents honor of the Officio Prefectum and Commissar."
+	assignment = "Commissar"
+	icon_state = "gold"
+	item_state = "gold_id"
+	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
+			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
+			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks)
+
+/obj/item/card/id/commissar/update_name()
+	var/final_name = "[registered_name]"
+	if(military_rank && military_rank.name_short)
+		final_name = military_rank.name_short + " " + final_name
+	if(assignment)
+		final_name = final_name + " ([assignment])"
+	SetName(final_name)
+
+/obj/item/card/id/commissar/spare
+	name = "commissar's spare ID"
+	desc = "A spare card which represents honor of the Officio Prefectum and Commissar."
 
 /obj/item/card/id/dog_tag/kroot
 	icon_state = "tagred"
