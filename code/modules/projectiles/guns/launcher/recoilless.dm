@@ -1,5 +1,5 @@
 /obj/item/gun/launcher/rcl_rifle
-        name = "recoilless rifle"
+        name = "Caddis-pattern recoilless rifle"
         desc = "Auf wiedersein, untermensch."
         icon_state = "rcl_rifle-e"
         item_state = "rcl_rifle-e"
@@ -34,7 +34,6 @@
 		if(shells.len < max_shells)
 			user.drop_item()
 			I.loc = src
-			flick("rcl_rifle-l",src)
 			playsound(src.loc, 'sound/effects/cannon_load.ogg', 100, 1)
 			shells += I
 			to_chat(user, "<span class='notice'>You put the shell in [src].</span>")
