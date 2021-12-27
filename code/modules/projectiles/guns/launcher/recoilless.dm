@@ -2,7 +2,7 @@
         name = "Vraks pattern rocket launcher"
         desc = "A rocket launcher of Vraks pattern, being supplied to Krieg for combat against armoured targets."
         icon_state = "rcl_rifle-e"
-        item_state = "rcl_rifle-e"
+        item_state = "rcl_rifle"
         w_class = ITEM_SIZE_LARGE
         throw_speed = 2
         throw_range = 10
