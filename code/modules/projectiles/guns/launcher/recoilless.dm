@@ -1,8 +1,8 @@
 /obj/item/gun/launcher/rcl_rifle
-        name = "recoilless rifle"
-        desc = "Auf wiedersein, untermensch."
+        name = "Vraks pattern rocket launcher"
+        desc = "A rocket launcher of Vraks pattern, being supplied to Krieg for combat against armoured targets."
         icon_state = "rcl_rifle-e"
-        item_state = "rcl_rifle-e"
+        item_state = "rcl_rifle"
         w_class = ITEM_SIZE_LARGE
         throw_speed = 2
         throw_range = 10
@@ -34,7 +34,6 @@
 		if(shells.len < max_shells)
 			user.drop_item()
 			I.loc = src
-			flick("rcl_rifle-l",src)
 			playsound(src.loc, 'sound/effects/cannon_load.ogg', 100, 1)
 			shells += I
 			to_chat(user, "<span class='notice'>You put the shell in [src].</span>")

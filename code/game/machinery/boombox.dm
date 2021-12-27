@@ -143,3 +143,18 @@
 	a_side = pick('sound/music/inn.ogg',)
 	b_side = pick('sound/music/boombox9.ogg', 'sound/music/boombox10.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/tape5/New()
+	..()
+	name = "\"The Officio Prefectus-Approved Morale Boosting Chants\" magn-o-tape"
+	a_side = pick('sound/music/boombox11.ogg','sound/music/boombox12.ogg')
+	b_side = pick('sound/music/boombox2.ogg')
+	current_side = 2
+	sound_inside = b_side
+
+/obj/item/device/cassette/tape6/New()
+	..()
+	name = "\"The General Fabricator-Approved Chants\" magn-o-tape"
+	a_side = pick('sound/music/boombox13.ogg')
+	b_side = pick('sound/music/boombox14.ogg')
+	sound_inside = a_side
