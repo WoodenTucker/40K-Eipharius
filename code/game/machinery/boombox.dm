@@ -147,8 +147,8 @@
 /obj/item/device/cassette/tape5/New()
 	..()
 	name = "\"The Officio Prefectus-Approved Morale Boosting Chants\" magn-o-tape"
-	a_side = pick('sound/music/boombox11.ogg','sound/music/boombox12.ogg')
-	b_side = pick('sound/music/boombox2.ogg')
+	a_side = pick('sound/music/boombox11.ogg', 'sound/music/boombox12.ogg')
+	b_side = pick('sound/music/boombox2.ogg', 'sound/music/boombox15.ogg')
 	current_side = 2
 	sound_inside = b_side
 
