@@ -1061,7 +1061,7 @@ Area basic template
 	icon_state = "shuttle"
 
 /area/cadiaoutpost/oa/shuttle/assultpod
-	name = "Assault Pod"
+	name = "Assult Pod"
 	icon_state = "shuttle"
 
 /area/cadiaoutpost/oa/shuttle/custom
