@@ -1094,8 +1094,7 @@
 	set popup_menu = 0
 	if(usr!=src.occupant)
 		return
-	src.go_out()
-	add_fingerprint(usr)
+	to_chat(usr, "You can`t exit exosuit")
 	return
 
 
