@@ -183,6 +183,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"aw" = (
+/obj/effect/floor_decal/snow,
+/obj/effect/floor_decal/snow,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/theforest)
 "ax" = (
 /obj/structure/bed/chair/throne{
 	desc = "Fit for a king... or a uh... rogue trader";
@@ -290,6 +300,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"aJ" = (
+/obj/effect/floor_decal/snow,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/theforest)
 "aM" = (
 /obj/machinery/door/airlock/cone,
 /obj/item/taperoll/engineering/applied,
@@ -2469,19 +2488,6 @@
 /obj/item/archaeological_find/remains,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"Hy" = (
-/obj/effect/floor_decal/snow,
-/obj/effect/floor_decal/snow,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/theforest)
 "HJ" = (
 /obj/effect/floor_decal/carpet/green{
 	dir = 10
@@ -2566,18 +2572,6 @@
 	name = "scouts report"
 	},
 /turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
-"KK" = (
-/obj/effect/floor_decal/snow,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
 /area/cadiaoutpost/oa/theforest)
 "LE" = (
 /obj/structure/flora/tree/pine,
@@ -40242,7 +40236,7 @@ Dm
 Dm
 Dm
 Dm
-KK
+aJ
 TW
 TW
 TW
@@ -40453,7 +40447,7 @@ Dm
 Dm
 Dm
 Dm
-Hy
+aw
 TW
 TW
 TW
