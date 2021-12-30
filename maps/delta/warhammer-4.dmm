@@ -287,6 +287,24 @@
 /obj/item/reagent_containers/food/drinks/coffeecup/metal,
 /obj/item/reagent_containers/food/drinks/coffeecup/metal,
 /obj/item/reagent_containers/food/drinks/coffeecup/metal,
+/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/material/kitchen/utensil/fork/plastic,
+/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/material/kitchen/utensil/spoon/plastic,
+/obj/item/material/kitchen/utensil/knife/plastic,
+/obj/item/material/kitchen/utensil/knife/plastic,
+/obj/item/material/kitchen/utensil/knife/plastic,
+/obj/item/material/kitchen/utensil/knife/plastic,
+/obj/item/material/kitchen/utensil/knife/plastic,
+/obj/item/material/kitchen/utensil/knife/plastic,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -309,6 +327,35 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
+"aK" = (
+/obj/effect/floor_decal/turf/cafe2,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/towel/fleece{
+	desc = "The beloved golden towel of Rogue Trader, woven of smoothiest silk, waiting it's time to wipe the noble body of it's owner.";
+	name = "golden silk towel"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"aL" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus"
+	},
+/obj/structure/sign/stainedglass1{
+	pixel_y = 30
+	},
+/obj/item/clothing/mask/gas/explorer{
+	desc = "Often worn on Adeptus Astartes Scouts to protect their precious lungs from harmful gasses.";
+	name = "Astartes Respirator"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aM" = (
 /obj/machinery/door/airlock/cone,
 /obj/item/taperoll/engineering/applied,
@@ -316,6 +363,22 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"aN" = (
+/obj/structure/curtain/open/bed,
+/obj/effect/floor_decal/carpet/purple{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/item/bedsheet/captain,
+/obj/structure/bed{
+	desc = "This is used to lie in, sleep in or strap on.";
+	icon_state = "bed_padding1";
+	name = "comfy bed"
+	},
+/turf/simulated/floor/carpet/purple,
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aO" = (
 /obj/item/ammo_box/flares,
 /turf/simulated/floor/plating{
@@ -345,6 +408,29 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering/solars)
+"aR" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/flame/candle{
+	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
+	},
+/obj/item/flame/candle{
+	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
+	},
+/obj/item/flame/candle/dinner{
+	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
+	name = "wax candle";
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/flame/candle{
+	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
+	},
+/obj/item/reagent_containers/food/drinks/bottle/mjod,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aS" = (
 /obj/effect/shuttle_landmark/ferry/inquisition_end,
 /turf/simulated/floor/plating{
@@ -368,6 +454,16 @@
 	},
 /turf/simulated/floor/carpet/green,
 /area/cadiaoutpost/oa/bridge/meetingroom)
+"aV" = (
+/obj/structure/closet/secure_closet/captains{
+	color = "grey"
+	},
+/obj/item/clothing/suit/armor/rtdrip,
+/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aX" = (
 /obj/item/flame/candle/dinner,
 /obj/structure/table/woodentable{
@@ -928,28 +1024,6 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"cr" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cs" = (
 /obj/effect/floor_decal/carpet/blue2,
 /turf/simulated/floor/carpet/blue2,
@@ -980,23 +1054,6 @@
 "cG" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/theforest)
-"cL" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/obj/structure/sign/stainedglass1{
-	pixel_y = 30
-	},
-/obj/item/clothing/mask/gas/explorer{
-	name = "Astartes Respirator"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cV" = (
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -1706,15 +1763,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"qX" = (
-/obj/structure/closet/secure_closet/captains{
-	color = "grey"
-	},
-/obj/item/clothing/suit/armor/rtdrip,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "re" = (
 /obj/machinery/computer/evaccogitator,
 /turf/simulated/floor/wood{
@@ -1985,20 +2033,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"vI" = (
-/obj/structure/bed,
-/obj/structure/curtain/open/bed,
-/obj/item/bedsheet/clown{
-	color = "grey"
-	},
-/obj/effect/floor_decal/carpet/purple{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/carpet/purple,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "vN" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -28390,7 +28424,7 @@ vn
 vn
 nh
 lL
-lL
+aK
 vn
 TW
 TW
@@ -29929,7 +29963,7 @@ is
 kU
 UB
 vn
-qX
+aV
 UB
 uW
 UB
@@ -30702,7 +30736,7 @@ aa
 qi
 aa
 aa
-vI
+aN
 aa
 ac
 vn
@@ -31207,7 +31241,7 @@ TW
 TW
 TW
 vn
-cr
+aR
 nW
 gO
 vn
@@ -31464,7 +31498,7 @@ TW
 TW
 TW
 vn
-cL
+aL
 bU
 nW
 iv
