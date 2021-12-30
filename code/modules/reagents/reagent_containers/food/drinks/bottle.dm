@@ -536,3 +536,12 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/amasec/caddis/supreme, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/mjod
+	name = "Fenrisian Ale"
+	desc = "Extremely strong and toxic beverage, designed to pass through the Adeptus Astartes liver and oolithic kidney. May be lethal for humans, but tastes quite good, so it worths the risk to take a sip sometimes."
+	icon_state = "amasecpoor"
+	center_of_mass = "x=16;y=8"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/amasec/mjod, 100)
