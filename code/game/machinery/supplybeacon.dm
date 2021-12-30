@@ -1,8 +1,8 @@
 // Used to deploy the bacon.
 /obj/item/supply_beacon
-	name = "inactive supply beacon"
+	name = "inactive supply droppod beacon"
 	icon = 'icons/obj/supplybeacon.dmi'
-	desc = "An inactive, hacked supply beacon stamped with the Nyx Rapid Fabrication logo. Good for one (1) ballistic supply pod shipment."
+	desc = "An inactive, hacked supply beacon stamped with the Departmento Munitorum logo. Good for one (1) droppod shipment."
 	icon_state = "beacon"
 	var/deploy_path = /obj/machinery/power/supply_beacon
 	var/deploy_time = 30
@@ -21,7 +21,7 @@
 	qdel(src)
 
 /obj/machinery/power/supply_beacon
-	name = "supply beacon"
+	name = "supply droppod beacon"
 	desc = "A bulky moonshot supply beacon. Someone has been messing with the wiring."
 	icon = 'icons/obj/supplybeacon.dmi'
 	icon_state = "beacon"
@@ -113,6 +113,6 @@
 		var/drop_x = src.x-2
 		var/drop_y = src.y-2
 		var/drop_z = src.z
-		command_announcement.Announce("Nyx Rapid Fabrication priority supply request #[rand(1000,9999)]-[rand(100,999)] recieved. Shipment dispatched via ballistic supply pod for immediate delivery. Have a nice day.", "Thank You For Your Patronage")
+		command_announcement.Announce("Departmento Munitorum priority supply delivery request #[rand(1000,9999)]-[rand(100,999)] recieved. Shipment dispatched via freight droppod for immediate delivery. Have a nice day.", "Thank You For Your Patronage")
 		spawn(rand(100,300))
 			new /datum/random_map/droppod/supply(null, drop_x, drop_y, drop_z, supplied_drop = drop_type) // Splat.

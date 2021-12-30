@@ -19,6 +19,24 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
+"ae" = (
+/obj/effect/floor_decal/turf/metal,
+/obj/structure/window/reinforced{
+	color = "grey";
+	dir = 8;
+	maxhealth = 400
+	},
+/obj/structure/window/reinforced{
+	color = "grey";
+	dir = 8;
+	maxhealth = 400
+	},
+/obj/structure/window/reinforced{
+	dir = 8;
+	icon_state = "rwindow"
+	},
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "af" = (
 /obj/effect/decal/cleanable/cobweb,
 /turf/simulated/floor/plating,
@@ -92,6 +110,26 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
+"ao" = (
+/obj/effect/floor_decal/turf/metal/two,
+/obj/structure/window/reinforced{
+	color = "grey";
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 4;
+	icon_state = "rwindow"
+	},
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ap" = (
+/turf/space,
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	dir = 10;
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "aq" = (
 /obj/machinery/door/airlock/arbiter{
 	req_access = list()
@@ -126,6 +164,14 @@
 /obj/random/loot/randomsupply,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
+"av" = (
+/turf/space,
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	dir = 6;
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "aw" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 1;
@@ -136,6 +182,14 @@
 "ax" = (
 /turf/space,
 /area/space)
+"ay" = (
+/obj/mecha/combat/tau{
+	desc = "A highly advanced XV8 Crisis battlesuit, made by the T'au Empire.";
+	name = "XV8 Crisis Battlesuit"
+	},
+/obj/machinery/mech_recharger,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "az" = (
 /obj/structure/closet/crate,
 /obj/random/loot/randomitemcaves,
@@ -1629,10 +1683,6 @@
 /obj/effect/floor_decal/turf/metal/three,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"hG" = (
-/obj/effect/floor_decal/turf/metal,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "hO" = (
 /obj/effect/wingrille_spawn/reinforced_phoron/full,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -1727,10 +1777,6 @@
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"iI" = (
-/obj/effect/floor_decal/turf/metal/two,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "iJ" = (
 /obj/structure/grille,
 /obj/structure/window_frame{
@@ -2083,11 +2129,6 @@
 "jP" = (
 /obj/machinery/photocopier,
 /turf/simulated/floor/shuttle/white,
-/area/cadiaoutpost/oa/tauship)
-"jQ" = (
-/obj/mecha/combat/tau,
-/obj/machinery/mech_recharger,
-/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jR" = (
 /obj/structure/table/rack,
@@ -2615,11 +2656,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
-"nz" = (
-/obj/machinery/teleport/station,
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "nH" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/reagent_dispensers/watertank,
@@ -2678,11 +2714,6 @@
 /obj/item/device/radio/beacon,
 /turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
-"oq" = (
-/obj/machinery/teleport/hub,
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "or" = (
 /obj/structure/bed/chair/comfy/captain{
 	dir = 1;
@@ -5096,11 +5127,6 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"YW" = (
-/obj/machinery/computer/teleporter,
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Za" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/door/airlock/imperiumdoor{
@@ -7457,7 +7483,7 @@ ax
 ax
 ax
 gL
-jQ
+ay
 jB
 jB
 kN
@@ -9986,7 +10012,7 @@ iH
 hd
 iH
 iH
-iH
+ap
 gx
 gx
 gx
@@ -10089,7 +10115,7 @@ iW
 iH
 rD
 iH
-iH
+ap
 gx
 gx
 lU
@@ -10178,11 +10204,11 @@ gA
 gA
 gA
 lU
-hG
-hG
-hG
-hG
-hG
+ae
+ae
+ae
+ae
+ae
 jj
 iO
 iO
@@ -10192,7 +10218,7 @@ iH
 iO
 jr
 iH
-iH
+ap
 gx
 lU
 jb
@@ -10382,11 +10408,11 @@ gA
 gA
 gA
 lU
-iI
-iI
-iI
-iI
-iI
+ao
+ao
+ao
+ao
+ao
 jj
 iO
 iO
@@ -10396,10 +10422,10 @@ iH
 iO
 js
 iH
-iH
+av
 gx
 lU
-jb
+bF
 ax
 ax
 ax
@@ -10497,11 +10523,11 @@ iX
 iH
 IC
 iH
-iH
+av
 gx
 gx
 lU
-jb
+bF
 ax
 ax
 ax
@@ -10598,13 +10624,13 @@ iH
 hd
 iH
 iH
-iH
+av
 gx
 gx
 gx
 lU
-jb
-ax
+bF
+bE
 ax
 ax
 ax
@@ -10705,9 +10731,9 @@ gx
 gx
 gx
 lU
-jb
-ax
-ax
+bF
+bE
+bE
 ax
 ax
 ax
@@ -10807,9 +10833,9 @@ lU
 lU
 lU
 lU
-jb
-ax
-ax
+bF
+bE
+bE
 ax
 ax
 ax
@@ -10893,25 +10919,25 @@ gA
 gA
 lU
 lU
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-ax
-ax
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bE
+bE
 ax
 ax
 ax
@@ -10995,14 +11021,14 @@ gA
 gA
 lU
 lU
-ax
-ax
-ax
-bD
-bD
-bD
-bD
-bD
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+bE
 bE
 bE
 bE
@@ -11097,12 +11123,12 @@ gA
 gA
 iJ
 lU
-ax
-ax
-ax
-bD
-bD
-bD
+bE
+bE
+bE
+bE
+bE
+bE
 bE
 bE
 bE
@@ -11199,11 +11225,11 @@ gA
 gA
 iJ
 lU
-ax
-ax
-ax
-bD
-bD
+bE
+bE
+bE
+bE
+bE
 bE
 bE
 bE
@@ -11293,7 +11319,7 @@ ax
 ax
 ax
 ax
-fT
+ax
 jb
 lU
 ep
@@ -11303,10 +11329,10 @@ lU
 lU
 lU
 lU
-jb
-bD
-bD
-bD
+bF
+bE
+bE
+bE
 bE
 bE
 bE
@@ -11405,10 +11431,10 @@ lU
 lU
 lU
 lU
-jb
-bD
-bD
-bD
+bF
+bE
+bE
+bE
 bE
 bE
 bE
@@ -11507,10 +11533,10 @@ he
 dN
 dN
 lU
-jb
-bD
-bD
-bD
+bF
+bE
+bE
+bE
 bE
 bE
 bE
@@ -11609,10 +11635,10 @@ Ls
 dN
 dN
 lU
-jb
-bD
-bD
-bD
+bF
+bE
+bE
+bE
 bE
 bE
 bW
@@ -11711,10 +11737,10 @@ lU
 he
 he
 lU
-jb
-bD
-bD
-bD
+bF
+bE
+bE
+bE
 bE
 bE
 bW
@@ -11813,13 +11839,13 @@ lU
 dN
 dN
 lU
-jb
-jb
-jb
-jb
-jb
-jb
-ax
+bF
+bF
+bF
+bF
+bF
+bF
+bE
 bW
 bW
 bW
@@ -11921,7 +11947,7 @@ lU
 lU
 lU
 lU
-jb
+bF
 bW
 bW
 bW
@@ -12023,7 +12049,7 @@ dM
 dP
 lU
 lU
-jb
+bF
 bW
 bW
 bW
@@ -12125,7 +12151,7 @@ dN
 dN
 dN
 lU
-YW
+bF
 bW
 bW
 bW
@@ -12227,7 +12253,7 @@ dN
 dN
 dN
 lU
-nz
+bF
 bW
 bW
 bW
@@ -12329,7 +12355,7 @@ dN
 dN
 dN
 lU
-oq
+bF
 bW
 bW
 bW
@@ -12359,8 +12385,8 @@ ax
 ax
 ax
 ax
-ax
-ax
+vE
+fT
 vE
 YE
 Ng
@@ -12431,7 +12457,7 @@ dN
 dN
 iQ
 lU
-jb
+bF
 bW
 bW
 bW
@@ -12461,8 +12487,8 @@ ax
 ax
 ax
 ax
-ax
-ax
+vE
+vE
 vE
 YE
 ul
@@ -12533,13 +12559,13 @@ Za
 Za
 lU
 lU
-jb
-jb
-jb
-jb
-jb
-jb
-jb
+bF
+bF
+bF
+bF
+bF
+bF
+bF
 bE
 bE
 bE
@@ -12641,10 +12667,10 @@ lU
 lU
 lU
 lU
-jb
-ax
-ax
-ax
+bF
+bE
+bE
+bE
 ax
 ax
 ax
@@ -12743,9 +12769,9 @@ lU
 FG
 FG
 lU
-jb
-ax
-ax
+bF
+bE
+bE
 ax
 ax
 ax
@@ -12845,8 +12871,8 @@ mY
 VW
 VW
 lU
-jb
-ax
+bF
+bE
 ax
 ax
 ax
@@ -12947,8 +12973,8 @@ lU
 VW
 VW
 lU
-jb
-ax
+bF
+bE
 ax
 ax
 ax
@@ -13049,8 +13075,8 @@ lU
 Vx
 VW
 lU
-jb
-ax
+bF
+bE
 ax
 ax
 ax
@@ -13151,7 +13177,7 @@ VN
 VW
 VW
 lU
-jb
+bF
 ax
 ax
 ax
@@ -13253,7 +13279,7 @@ VW
 VW
 VW
 lU
-jb
+bF
 ax
 ax
 ax

@@ -904,7 +904,7 @@ Area basic template
 	music = 'sound/newmusic/General_Ambient2.ogg'
 
 /area/cadiaoutpost/oa/caves
-	name = "Caves" // Regular caves - little to no danger. Soft ambience. 
+	name = "Caves" // Regular caves - little to no danger. Soft ambience.
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	var/instability = 0
@@ -935,7 +935,7 @@ Area basic template
 	requires_power = FALSE
 	dynamic_lighting = 1
 
-/area/cadiaoutpost/oa/villageinside 
+/area/cadiaoutpost/oa/villageinside
 	name = "Inside Village"
 	icon_state = "village"
 	music = 'sound/newmusic/VillageInside.ogg'
@@ -1452,6 +1452,12 @@ Area basic template
 
 /area/cadiaoutpost/oa/shuttle/inquisition
 	name = "Inquisition Ship"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/General_Ambient2.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/aquila
+	name = "Rogue Trader's Aquila Lander"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = 0
