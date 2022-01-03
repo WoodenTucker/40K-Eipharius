@@ -525,9 +525,11 @@
 	darkness_view = 7
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
+// SPESS MUHREEN STUFF
+
 /obj/item/clothing/glasses/astarte/visor
 	name = "Mark VII Visor"
-	desc = "The support system of Astarte's helmet."
+	desc = "The support system of Astartes helmet."
 	str_requirement = 25
 	canremove = 0
 	darkness_view = 10
@@ -537,8 +539,8 @@
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/glasses/astarte/visor/apoc
-	name = "Mark VII Visor"
-	desc = "The support system of Astarte's helmet. This one has intergrated medical scanner."
+	name = "Mark VII Apothecary Visor"
+	desc = "The support system of Astartes helmet. This one has intergrated medical scanner."
 	hud = /obj/item/clothing/glasses/hud/health
 	str_requirement = 25
 	canremove = 0

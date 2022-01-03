@@ -952,7 +952,6 @@ something, make sure it's not in one of the other lists.*/
 				/obj/random/voidhelmet = 10,
 				/obj/random/voidsuit = 10,
 				/obj/item/clothing/mask/muzzle = 7,
-				/obj/item/clothing/mask/gas/vox = 8,
 				/obj/item/clothing/mask/gas/syndicate = 10,
 				/obj/item/clothing/glasses/night = 3,
 				/obj/item/clothing/glasses/thermal = 1,

@@ -32,7 +32,7 @@
 	icon_state = "fullgas"
 	item_state = "fullgas"
 	name = "ancient gas mask"
-	desc = "A leftover from the Old War, you can barely fucking see out of the thing, but it gets the job done."
+	desc = "A leftover from the Dark Age of Technologies, you can barely fucking see out of the thing, but it gets the job done."
 	helmet_vision = TRUE
 
 /obj/item/clothing/mask/gas/security

@@ -155,10 +155,10 @@
 	item_state = "comm_boots"
 	species_restricted = null
 
-// Astarte Stuff
+// Astartes Stuff
 
 /obj/item/clothing/shoes/astarte/boots
-	name = "Astarte Mark VII Combat Boots"
+	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
@@ -168,6 +168,8 @@
 	cold_protection = FEET|LEGS
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	var/obj/item/material/sword/combat_knife/knife = null
+	species_restricted = list(SPECIES_ASTARTES)
+
 /obj/item/clothing/shoes/astarte/boots/New()
 	..()
 	knife = new
@@ -190,25 +192,25 @@
 		return
 	..()
 /obj/item/clothing/shoes/astarte/boots/smurfs
-	name = "Astarte Mark VII Combat Boots"
+	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "umboots"
 	item_state = "umboots"
 
 /obj/item/clothing/shoes/astarte/boots/bloodraven
-	name = "Astarte Mark VII Combat Boots"
+	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in Chapter Blood Ravens's colour scheme."
 	icon_state = "brboots"
 	item_state = "brboots"
 
 /obj/item/clothing/shoes/astarte/boots/sallys
-	name = "Astarte Mark VII Combat Boots"
+	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
 
 /obj/item/clothing/shoes/astarte/boots/raven
-	name = "Astarte Mark VII Combat Boots"
+	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
@@ -221,6 +223,7 @@
 	siemens_coefficient = 1
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
 	canremove = 0
+	unacidable = 1
 
 /obj/item/clothing/shoes/technoboots
 	name = "Mars Pattern Advanced Boots"
@@ -235,7 +238,7 @@
 
 /obj/item/clothing/shoes/sisterofbattle
 	name = "Order of the Sacred Rose Power Boots"
-	desc = "A pair of Power Boots issued to the Battle Sisters of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
+	desc = "A pair of Power Boots issued to the Sororitas-Militant of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
 	icon_state = "sister"
 	item_state = "sister"
 	canremove = 0

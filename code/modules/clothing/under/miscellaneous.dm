@@ -171,7 +171,7 @@
 	worn_state = "green_suit"
 
 /obj/item/clothing/under/gimmick/rank/head_of_personnel/suit
-	name = "Seneschal's suit"
+	name = "Seneschal's formal attire"
 	desc = "A teal suit and yellow necktie. An authoritative yet tacky ensemble."
 	icon_state = "teal_suit"
 	item_state = "g_suit"
@@ -342,15 +342,15 @@
 
 /obj/item/clothing/under/dress/dress_hop
 	name = "Seneschal dress uniform"
-	desc = "Feminine fashion for the style concious HoP."
+	desc = "Feminine fashion for the style concious seneschal."
 	icon_state = "dress_hop"
 	item_state = "b_suit"
 	worn_state = "dress_hop"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/dress/dress_hr
-	name = "human resources director uniform"
-	desc = "Superior class for the nosy H.R. Director."
+	name = "Administratum servant uniform"
+	desc = "Superior class for the nosy Administratum servant."
 	icon_state = "huresource"
 	item_state = "y_suit"
 	worn_state = "huresource"
@@ -556,7 +556,7 @@
 	worn_state = "gear_harness"
 	species_restricted = null
 	body_parts_covered = 0
-
+/*
 /obj/item/clothing/under/pcrc
 	name = "\improper PCRC uniform"
 	desc = "A uniform belonging to Proxima Centauri Risk Control, a private security firm."
@@ -581,8 +581,9 @@
 	desc = "A uniform belonging to Major Bill's Transportation, a shipping megacorporation."
 	icon_state = "mbill"
 	worn_state = "mbill"
-
+*/
 // Replace this with actual uniform when someone wants to sprite one
+/*
 /obj/item/clothing/under/confederacy
 	name = "\improper Confederate uniform"
 	desc = "A military uniform belonging to the Terran Colonial Confederation, an independent human government."
@@ -595,12 +596,14 @@
 	icon_state = "saare"
 	worn_state = "saare"
 
+*/
 /obj/item/clothing/under/frontier
 	name = "frontier clothes"
 	desc = "A rugged flannel shirt and denim overalls. A popular style among frontier colonists."
 	icon_state = "frontier"
 	worn_state = "frontier"
 
+/*
 /obj/item/clothing/under/aether
 	name = "\improper Aether jumpsuit"
 	desc = "A jumpsuit belonging to Aether Atmospherics and Recycling, a Trans-Stellar that supplies recycling and atmospheric systems to colonies."
@@ -618,6 +621,7 @@
 	desc = "A jumpsuit belonging to Hephaestus Industries, a Trans-Stellar best known for its arms production."
 	icon_state = "heph"
 	worn_state = "heph"
+*/
 
 /obj/item/clothing/under/punpun
 	name = "fancy uniform"
@@ -682,16 +686,13 @@
 	permeability_coefficient = 0.50
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 0)
 
+//Putting all the 40k stuff down below here.
 /obj/item/clothing/under/inquisitor
 	name = "inquisitor's suit"
 	desc = "Heretics beware."
 	icon_state = "uni-church"
 	item_state = "uni-church"
 	slowdown_general = -20
-	//_color = "uni-church"
-
-
-//Putting all the 40k stuff down below here.
 
 /obj/item/clothing/under/guard/uniform
 	name = "trooper uniform"

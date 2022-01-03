@@ -194,6 +194,7 @@
 	siemens_coefficient = 0.9
 	body_parts_covered = HEAD|FACE|EYES
 
+/*
 /obj/item/clothing/mask/rubber/trasen
 	name = "Jack Trasen mask"
 	desc = "CEO of NanoTrasen corporation. Perfect for scaring the unionizing children."
@@ -217,7 +218,9 @@
 	desc = "Premier of the Terran Colonial Confederation. Probably shouldn't wear this in front of your veteran uncle."
 	icon_state = "turner"
 	visible_name = "Charles Turner"
+*/
 
+/*
 /obj/item/clothing/mask/rubber/species
 	name = "human mask"
 	desc = "A rubber human mask."
@@ -248,6 +251,7 @@
 	desc = "A rubber skrell mask."
 	icon_state = "skrellmet"
 	species = SPECIES_SKRELL
+*/
 
 /obj/item/clothing/mask/spirit
 	name = "spirit mask"
@@ -332,7 +336,7 @@
 
 /obj/item/clothing/mask/masquerade
 	name = "masquerade mask"
-	desc = "Every face a different shade . . ."
+	desc = "Every face has a different shade..."
 	icon_state = "slaanesh"
 	item_state = "slaanesh"
 	body_parts_covered = FACE

@@ -40,6 +40,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 
@@ -51,6 +52,8 @@ Begin Warhammer loadouts
 	belt = null
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
+	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
 	suit_store = /obj/item/gun/projectile/sallybolter
 
 /decl/hierarchy/outfit/job/astarte/ultramarine/captain

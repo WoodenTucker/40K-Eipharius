@@ -535,8 +535,8 @@
 /datum/reagent/toxin/poisonberryjuice/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien == IS_UNATHI)
 		return //unathi are immune!
-	else
-			M.adjustToxLoss(2.5 * removed)
+	else ()
+	(M.adjustToxLoss(2.5 * removed))
 	return ..()
 
 /datum/reagent/drink/juice/potato
