@@ -15,9 +15,8 @@
 			/obj/item/lipstick/random,
 			/obj/item/reagent_containers/food/drinks/bottle/small/ale = 2,
 			/obj/item/reagent_containers/food/drinks/bottle/small/beer = 4,
-			/obj/item/storage/box/glowsticks = 2,
-			/obj/item/clothingbag/rubbermask,
-			/obj/item/clothingbag/rubbersuit)
+			/obj/item/storage/box/glowsticks = 2
+			)
 	cost = 20
 	containername = "\improper Party equipment"
 

@@ -17,6 +17,7 @@
 	else
 		to_chat(user, "<span class='warning'>\The [src.name] is already ripped open and is now completely useless!</span>")
 
+/*
 /obj/item/clothingbag/rubbersuit
 	name = "rubber suit bag"
 	desc = "A cheap plastic bag that contains an emergency party set."
@@ -45,3 +46,4 @@
 	..()
 	for(var/T in subtypesof(/obj/item/clothing/mask/rubber))
 		new T(src)
+*/
