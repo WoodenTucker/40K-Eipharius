@@ -81,14 +81,14 @@
 	ranged_skill = 7
 	medical_skill = 5
 	engineering_skill = 13
-	surgery_skill = 7
+	surgery_skill = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Tech-Priest [current_name]")
 		H.add_stats(rand(12,14), rand(10,13), rand(12,15), rand(14,16)) //idk what to do with Magos xd
-		H.add_skills(rand(2,5),rand(2,5),rand(1,2),rand(6,9),0)
+		H.add_skills(rand(2,5),rand(2,5),rand(1,2),rand(6,9),3,6)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY

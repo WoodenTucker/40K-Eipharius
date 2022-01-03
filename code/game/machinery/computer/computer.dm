@@ -199,7 +199,7 @@
 	return
 
 /obj/machinery/computer/exterminatus/proc/move()
-	to_chat(usr, "\red Stargazer moving into position.")
+	to_chat(usr, "\red Affirmative, re-aligning fleet into bombardment formation. May the Emperor forgive us for what we are about to do.")
 	if(!moving)
 		spawn (0)
 			moving = 1
