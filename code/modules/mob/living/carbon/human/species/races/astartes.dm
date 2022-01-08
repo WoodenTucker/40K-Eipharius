@@ -35,6 +35,10 @@ Astartes
 	inherent_verbs = list()
 
 	radiation_mod = 0.7
+//gives assfartes the astartes aura
+	base_auras = list(
+		/obj/aura/regenerating/human/astartes
+		)
 
 /datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/astartes/H)
 	. = ..()
