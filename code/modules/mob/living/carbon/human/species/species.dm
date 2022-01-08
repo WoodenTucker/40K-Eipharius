@@ -140,6 +140,7 @@
 	// Body/form vars.
 	var/list/inherent_verbs 	  // Species-specific verbs.
 	var/has_fine_manipulation = 1 // Can use small items.
+	var/list/base_auras
 	var/siemens_coefficient = 1   // The lower, the thicker the skin and better the insulation.
 	var/darksight = 2             // Native darksight distance.
 	var/species_flags = 0         // Various specific features.
@@ -433,6 +434,23 @@ The slots that you can use are found in items_clothing.dm and are the inventory 
 		H.client.screen |= overlay
 
 	return 1
+
+
+/datum/species/proc/add_base_auras(var/mob/living/carbon/human/H)
+	if(base_auras)
+		for(var/type in base_auras)
+			H.add_aura(new type(H))
+
+/datum/species/proc/remove_base_auras(var/mob/living/carbon/human/H)
+	if(base_auras)
+		var/list/bcopy = base_auras.Copy()
+		for(var/a in H.auras)
+			var/obj/aura/A = a
+			if(is_type_in_list(a, bcopy))
+				bcopy -= A.type
+				H.remove_aura(A)
+				qdel(A)
+
 
 /datum/species/proc/get_how_nearsighted(var/mob/living/carbon/human/H)
 	var/prescriptions = short_sighted
