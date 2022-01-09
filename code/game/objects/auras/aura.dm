@@ -66,12 +66,12 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 //	user.adjustToxLoss(-tox_mult)
 
 /obj/aura/regenerating/human/astartes
-	var/nutrition_damage_mult = 0.02 //how much nutrition the retardes needs to heal their limbs
+	var/nutrition_damage_mult = 1 //how much nutrition the retardes needs to heal their limbs
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	var/last_nutrition_warning = 0
 	var/innate_heal = TRUE // Whether the aura is on, basically.
-	brute_mult = 0.25 //heals 25% of one brute damage per second meaning that 4 ticks equals to one brute damage, believe me, this is pretty OP
-	fire_mult = 0.25
+	brute_mult = 0.5
+	fire_mult = 0.5
 
 
 /obj/aura/regenerating/human/astartes/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
@@ -98,16 +98,6 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 		return 1
 */
 /*
-/obj/aura/regenerating/human/proc/toggle()
-	innate_heal = !innate_heal
-
-/obj/aura/regenerating/human/proc/can_toggle()
-	return TRUE
-
-/obj/aura/regenerating/human/proc/can_regenerate_organs()
-	return TRUE
-*/
-		
 /obj/aura/regenerating/human/proc/toggle()
 	innate_heal = !innate_heal
 
