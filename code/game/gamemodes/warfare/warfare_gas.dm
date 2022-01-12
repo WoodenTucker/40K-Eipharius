@@ -1,10 +1,10 @@
 //That's just the way it goes on this bitch of an earth.
 /datum/reagent/toxin/mustard_gas
 	name = "Mustard Gas"
-	description = "Doesn't go on hotdogs"
+	description = "Doesn't go on hotdogs."
 	reagent_state = REAGENT_GAS
 	color = "#a2cd5a"
-	strength = 30
+	strength = 25
 	touch_met = 5
 
 /datum/reagent/toxin/mustard_gas/affect_touch(var/mob/living/carbon/M, var/alien, var/removed)
@@ -14,4 +14,4 @@
 		M.take_organ_damage(0, strength * 0.1)
 		M.adjustToxLoss(strength)
 
-	M.take_overall_damage(0, rand(1,15))
+	M.take_overall_damage(0, rand(1,10))

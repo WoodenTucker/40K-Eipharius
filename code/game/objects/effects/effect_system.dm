@@ -303,7 +303,7 @@ steam.start() -- spawns the effect
 	if (R.wear_suit != null)
 		return 0
 
-	R.burn_skin(0.75)
+	R.burn_skin(0.5)
 	if (R.coughedtime != 1)
 		R.coughedtime = 1
 		R.emote("gasp")
@@ -339,7 +339,7 @@ steam.start() -- spawns the effect
 		if(src.total_smoke > 20)
 			return
 		addtimer(CALLBACK(src, .proc/make_smokes, i), 0)
-			
+
 
 //Hi, this isn't bay. Please don't think too hard about how ugly these are. It's better than a billion spawns.
 /datum/effect/effect/system/smoke_spread/proc/make_smokes(var/i)
@@ -448,7 +448,7 @@ steam.start() -- spawns the effect
 	T.icon_state = "blank"
 
 /obj/effect/effect/thermal_trail
-	name = "therman trail"
+	name = "thermal trail"
 	icon_state = "explosion_particle"
 	anchored = 1
 
