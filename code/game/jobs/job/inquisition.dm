@@ -23,17 +23,13 @@
 	shotgun_skill = 4
 	lmg_skill = 4
 	smg_skill = 4
-	melee_skill = 10
-	ranged_skill = 9
-	medical_skill = 5
-	engineering_skill = 3
-	surgery_skill = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Acolyte [current_name]")
-		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18)) //highly trained and skilled
+		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(14,17)) //highly trained and skilled
+		H.add_skills(rand(9,10),rand(9,10),rand(5,7),rand(5,6),rand(6,7)) //SUFFER NOT THE ALIEN, SUFFER NOT THE HERETIC
 		H.assign_random_quirk()
 		H.witchblood()
 		H.set_trait(new/datum/trait/death_tolerant())
@@ -75,17 +71,13 @@
 	shotgun_skill = 4
 	lmg_skill = 4
 	smg_skill = 4
-	melee_skill = 12
-	ranged_skill = 10
-	medical_skill = 6
-	engineering_skill = 5
-	surgery_skill = 6
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Inquisitor [current_name]")
-		H.add_stats(rand(16,18), rand(16,18), rand(16,18), rand(16,18)) //highly trained and skilled
+		H.add_stats(rand(17,20), rand(17,20), rand(17,20), rand(17,20)) //PRAISE THE EMPEROR
+		H.add_skills(10,10,rand(7,10),rand(5,7),rand(7,8)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
