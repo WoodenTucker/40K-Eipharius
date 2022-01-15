@@ -29,18 +29,16 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 4
 	lmg_skill = 4
 	smg_skill = 4
-	melee_skill = 12
-	ranged_skill = 12
-	medical_skill = 5
-	engineering_skill = 6
-	surgery_skill = 3
+
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Rogue Trader [current_name]")
-		H.add_stats(rand(12,18), rand(12,18), rand(12,18), rand(12,18))
+		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
+		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Rogue Trader, the owner and leader of this outpost. You wield a golden writ of authority directly from the High Lords of Terra themselves. None can command you except your lust for profit and your mission to expand Imperial influence.</font></b></span>")
@@ -78,18 +76,16 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 4
 	lmg_skill = 4
 	smg_skill = 4
-	melee_skill = 9
-	ranged_skill = 9
-	medical_skill = 3
-	engineering_skill = 4
-	surgery_skill = 2
+
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(10,12), rand(10,14), rand(10,13), rand(13,18))
+		H.add_stats(rand(12,14), rand(16,18), rand(10,13), rand(13,18)) //they are like rogues but smarter and faster
+		H.add_skills(rand(7,10),rand(7,10),rand(5,6),rand(4,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it. You are a absolute psychopath, do not fear getting your hands dirty.</font></b></span>")
 
 
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
