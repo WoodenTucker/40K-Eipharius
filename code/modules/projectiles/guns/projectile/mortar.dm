@@ -137,11 +137,62 @@
 	QDEL_NULL(loaded)
 
 /obj/item/mortar_launcher/proc/launch_mortar(atom/A, mob/living/user, var/mortar_type)
+	if(prob(rand(1, 5))) //Mortar meme
+		log_and_message_admins("[user] has tried to fire a mortar, but it malfunctioned!", user)
+		if(prob(50))
+			user.visible_message("<span class='danger'>[user] fires the [src], but it malfunctions and falls onto the ground!</span>")
+			playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)
+			if(prob(35))
+				if(mortar_type == "frag")
+					spawn(5)
+					/obj/structure/dud
+					return
+				spawn(rand(60, 100))
+				drop_mortar(get_turf(user),mortar_type)
+				loaded = FALSE
+				return
+			loaded = FALSE
+			return
+		user.visible_message("<span class='danger'>[user] fires the [src], but it malfunctions, resulting in explosive misfire!</span>")
+		playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)
+		spawn(0)
+		drop_mortar(get_turf(user),mortar_type)
+		loaded = FALSE
+		pack_up_mortar(user)
+		qdel(src)
+		return
 	user.visible_message("<span class='danger'>[user] fires the [src]!</span>")
 	playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)
 	spawn(35)
 		drop_mortar(get_turf(A),mortar_type)
 	loaded = FALSE
+
+/obj/item/mortar_launcher/basilisk/launch_mortar(atom/A, mob/living/user, mortar_type)
+    if(prob(rand(15, 65))) //Mortar meme override for hereteks
+        log_and_message_admins("[user] has tried to fire a mortar, but it malfunctioned!", user)
+        if(prob(50))
+            user.visible_message("<span class='danger'>[user] fires the [src], but it malfunctions and falls onto the ground!</span>")
+            playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)
+            if(prob(35))
+                spawn(rand(60, 100))
+                drop_mortar(get_turf(user),mortar_type)
+                loaded = FALSE
+                return
+            loaded = FALSE
+            return
+        user.visible_message("<span class='danger'>[user] fires the [src], but it malfunctions, resulting in explosive misfire!</span>")
+        playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)
+        spawn(0)
+        drop_mortar(get_turf(user),mortar_type)
+        loaded = FALSE
+        pack_up_mortar(user)
+        qdel(src)
+        return
+    user.visible_message("<span class='danger'>[user] fires the [src]!</span>")
+    playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)
+    spawn(35)
+        drop_mortar(get_turf(A),mortar_type)
+    loaded = FALSE
 
 /obj/item/mortar_launcher/attack_self(mob/user)
 	. = ..()
