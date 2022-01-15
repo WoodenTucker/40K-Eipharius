@@ -23,17 +23,13 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 7
-	ranged_skill = 9
-	medical_skill = 4
-	engineering_skill = 5
-	surgery_skill = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand(12,16))
+		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand(15,16))
+		H.add_skills(rand(6,8),rand(6,8),rand(3,5),rand(3,5),4) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -66,17 +62,14 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 6
-	ranged_skill = 8
-	medical_skill = 3
-	engineering_skill = 3
-	surgery_skill = 2
+
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
 		H.add_stats(rand(10,14), rand(10,13), rand(10,13), rand(10,13))
+		H.add_skills(rand(5,7),rand(5,7),rand(3,5),rand(2,4),1) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -86,7 +79,6 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>Keep things moving! Make sure imports and exports get where they need to go! If you're lost, speak to the Munitorum Priest!</font></b></span>")
-
 // Munitorum Explorator
 
 /datum/job/mining
