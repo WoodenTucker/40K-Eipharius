@@ -2,7 +2,7 @@
 	name = "Skitarii"
 	name_plural = "Skitarii"
 	blurb = "The Mechanicus' loyal soldiers."
-	total_health = 250
+	total_health = 400 //made to be recovered even if they get severely injured
 	min_age = 18
 	max_age = 80
 	icobase = 'icons/mob/human_races/r_human.dmi'
@@ -10,6 +10,10 @@
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	pixel_offset_y = -4
+	strength = STR_HIGH
+	radiation_mod = 0.2
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN|
+	slowdown = -0.30 //a bit faster than astartes due to being smaller and lighter
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
 		)
@@ -85,8 +89,9 @@
 
 	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 	playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
-	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
+	H.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+	H.set_trait(new/datum/trait/death_tolerant())
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
 	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
