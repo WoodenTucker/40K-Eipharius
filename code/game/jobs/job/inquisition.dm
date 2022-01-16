@@ -17,12 +17,12 @@
 		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -65,12 +65,12 @@
 		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	sniper_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	smg_skill = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
