@@ -9,12 +9,12 @@
 	outfit_type = /decl/hierarchy/outfit/job/ig //will need to be replaced eventually - wel
 	selection_color = "#33813A"
 	department_flag = SEC
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
 	open_when_dead = TRUE
 	announced = FALSE
 	can_be_in_squad = TRUE
@@ -115,12 +115,12 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -157,17 +157,12 @@
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	can_be_in_squad = FALSE
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-	melee_skill = 11
-	ranged_skill = 11
-	medical_skill = 2
-	engineering_skill = 3
-	surgery_skill = 1
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
@@ -182,6 +177,7 @@
 		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
 		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are extremely trained
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Guard force on this planet. The mission is all, maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
