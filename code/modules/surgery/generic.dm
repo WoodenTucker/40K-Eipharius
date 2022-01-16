@@ -110,6 +110,7 @@
 /datum/surgery_step/generic/cut_open
 	allowed_tools = list(
 	/obj/item/scalpel = 100,		\
+	/obj/item/material/sword/combat_knife = 75 \
 	/obj/item/material/knife = 75,	\
 	/obj/item/material/kitchen/utensil/knife = 75,	\
 	/obj/item/broken_bottle = 50,
@@ -197,6 +198,7 @@
 	/obj/item/retractor = 100, 	\
 	/obj/item/crowbar = 75,
 	/obj/item/material/knife = 50,	\
+	/obj/item/material/sword/combat_knife = 50 \
 	/obj/item/material/kitchen/utensil/fork = 50
 	)
 
@@ -238,9 +240,11 @@
 /datum/surgery_step/generic/cauterize
 	allowed_tools = list(
 	/obj/item/cautery = 100,			\
+	/obj/item/device/lasercutter = 100 \
 	/obj/item/clothing/mask/smokable/cigarette = 75,	\
 	/obj/item/flame/lighter = 50,			\
 	/obj/item/weldingtool = 25
+	
 	)
 
 	min_duration = 70
@@ -296,7 +300,11 @@
 /datum/surgery_step/generic/amputate
 	allowed_tools = list(
 	/obj/item/circular_saw = 100, \
-	/obj/item/material/hatchet = 75
+	/obj/item/material/hatchet = 75 \
+	/obj/item/melee/pcsword = 90 \ 
+	/obj/item/melee/omnissiah_axe = 100 \
+	/obj/item/melee/trench_axe = 100 \ 
+
 	)
 
 	min_duration = 110
