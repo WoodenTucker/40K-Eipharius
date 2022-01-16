@@ -24,18 +24,15 @@
 	shotgun_skill = 2
 	lmg_skill = 2
 	smg_skill = 2
-	melee_skill = 6
-	ranged_skill = 6
-	medical_skill = 6
-	engineering_skill = 3
-	surgery_skill = 4
+
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Confessor [current_name]")
-		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(12,16)) //frail and holy
+		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(14,18)) //frail and holy
+		H.add_skills(rand(8,10),rand(5,6),rand(5,7),3,rand(4,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -215,11 +212,6 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	melee_skill = 12
-	ranged_skill = 9
-	medical_skill = 6
-	engineering_skill = 3
-	surgery_skill = 2
 	req_admin_notify = 1
 
 	equip(var/mob/living/carbon/human/H)
@@ -228,12 +220,14 @@
 		H.fully_replace_character_name("Sister Elohiem [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(rand(18,22), rand(18,22), rand(18,22), rand(18,22))
+		H.add_stats(rand(18,22), rand(18,22), rand(18,22), 16)
+		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
 
@@ -289,7 +283,7 @@
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
 			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
 
-	minimal_player_age = 14
+	minimal_player_age = 20
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
 	auto_rifle_skill = 3
@@ -298,23 +292,20 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 9
-	ranged_skill = 8
-	medical_skill = 12
-	engineering_skill = 3
-	surgery_skill = 12
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Sister Hospitaller [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(13,17), rand(13,17), rand(13,17), rand(12,17))
+		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand(15,17))
+		H.add_skills(rand(5,8),rand(5,7),rand(10,11),rand(3,5),rand(10,11)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
@@ -345,20 +336,17 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 7
-	ranged_skill = 6
-	medical_skill = 8
-	engineering_skill = 1
-	surgery_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(12,15))
+		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(16,18))
+		H.add_skills(rand(3,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE
 		H.warfare_faction = IMPERIUM
@@ -396,15 +384,12 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 8
-	ranged_skill = 7
-	medical_skill = 10
-	engineering_skill = 2
-	surgery_skill = 10
+
 
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_stats(rand(10,16), rand(10,16), rand(10,13), rand(10,16))
+		H.add_skills(rand(3,6),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
