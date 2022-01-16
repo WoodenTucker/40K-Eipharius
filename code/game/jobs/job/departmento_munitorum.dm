@@ -32,6 +32,7 @@
 		H.add_skills(rand(6,8),rand(6,8),rand(3,5),rand(3,5),4) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
