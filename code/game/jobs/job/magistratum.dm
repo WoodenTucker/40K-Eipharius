@@ -8,17 +8,12 @@
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-	melee_skill = 11
-	ranged_skill = 8
-	medical_skill = 2
-	engineering_skill = 2
-	surgery_skill = 1
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 8
+	lmg_skill = 6
+	smg_skill = 6
 	can_be_in_squad = FALSE
 	open_when_dead = TRUE
 	department_flag = SEC
@@ -35,9 +30,11 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Enforcer [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
-		H.witchblood()
+//		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)

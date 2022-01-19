@@ -23,11 +23,7 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 8
-	ranged_skill = 3
-	medical_skill = 5
-	engineering_skill = 5
-	surgery_skill = 5
+
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -35,7 +31,8 @@
 		var/servitor_name = "abel"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
-		H.add_stats(rand(10,10), rand(8,11), rand(16,17), rand(8,10)) //extremely simple minded
+		H.add_stats(rand(10,11), rand(8), rand(6,16), rand(7,8)) //extremely simple minded and weak
+		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
@@ -65,11 +62,6 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 9
-	ranged_skill = 7
-	medical_skill = 3
-	engineering_skill = 2
-	surgery_skill = 2
 //	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
@@ -78,6 +70,7 @@
 		..()
 		H.fully_replace_character_name("Pvt. [current_name]")
 		H.add_stats(rand(11,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
+		H.add_skills(rand(6,8),rand(6,7),rand(1,6),rand(1,2),1)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -110,17 +103,14 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 8
-	ranged_skill = 8
-	medical_skill = 3
-	engineering_skill = 3
-	surgery_skill = 2
+
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(13,15), rand(10,13), rand(12,15), rand(8,13))
+		H.add_stats(rand(14,16), rand(13,15), rand(14,16), rand(8,14)) //well fed and robust
+		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -155,18 +145,15 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	melee_skill = 8
-	ranged_skill = 3
-	medical_skill = 5
-	engineering_skill = 5
-	surgery_skill = 5
+
 
 	equip(var/mob/living/carbon/human/H)
 		var/servitor_number = rand(1,1000)
 		var/servitor_name = "daan"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
-		H.add_stats(rand(10,10), rand(8,11), rand(16,17), rand(8,10)) //extremely simple minded
+		H.add_stats(rand(10,10), rand(8,11), rand(10,16), rand(8,12)) //simple minded
+		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
