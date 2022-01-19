@@ -542,8 +542,8 @@
 
 
 /obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster //what is that noise? A BAWWW from TK mutants.
-	name = "\improper CCW armor booster"
-	desc = "Close-combat armor booster. Boosts exosuit armor against armed melee attacks. Requires energy to operate."
+	name = "\improper Close Combat Armor"
+	desc = "Close-combat armor booster. Boosts exosuit armor against armed melee attacks. Requires extra energy to operate."
 	icon_state = "mecha_abooster_ccw"
 	origin_tech = list(TECH_MATERIAL = 3)
 	deflect_coeff = 1.15
@@ -565,8 +565,8 @@
 
 
 /obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster
-	name = "\improper RW armor booster"
-	desc = "Ranged-weaponry armor booster. Boosts exosuit armor against ranged attacks. Completely blocks taser shots, but requires energy to operate."
+	name = "\improper Ranged Weapons Armor"
+	desc = "Ranged-weaponry armor booster. Boosts exosuit armor against ranged attacks. Completely blocks taser shots, but requires extra energy to operate."
 	icon_state = "mecha_abooster_proj"
 	origin_tech = list(TECH_MATERIAL = 4)
 	deflect_coeff = 1.15
@@ -587,8 +587,8 @@
 
 
 /obj/item/mecha_parts/mecha_equipment/repair_droid
-	name = "repair droid"
-	desc = "Automated repair droid. Scans exosuit for damage and repairs it. Can fix almost any type of external or internal damage."
+	name = "Repair Servo Skull"
+	desc = "A Repair Servo Skull made specially to repair the mech."
 	icon_state = "repair_droid"
 	origin_tech = list(TECH_MAGNET = 3, TECH_DATA = 3)
 	equip_cooldown = 20
@@ -766,8 +766,8 @@
 
 
 /obj/item/mecha_parts/mecha_equipment/generator
-	name = "phoron generator"
-	desc = "Generates power using solid phoron as fuel. Pollutes the environment."
+	name = "promethium generator"
+	desc = "Generates power using solid promethium as fuel, Pollutes the environment."
 	icon_state = "tesla"
 	origin_tech = list(TECH_PHORON = 2, TECH_POWER = 2, TECH_ENGINEERING = 1)
 	equip_cooldown = 10
@@ -904,7 +904,7 @@
 
 /obj/item/mecha_parts/mecha_equipment/generator/nuclear
 	name = "\improper ExoNuclear reactor"
-	desc = "Generates power using uranium. Pollutes the environment."
+	desc = "Generates power using uranium, less poluting than promethium."
 	icon_state = "tesla"
 	origin_tech = list(TECH_POWER = 3, TECH_ENGINEERING = 3)
 	max_fuel = 50000
