@@ -28,8 +28,9 @@
 /datum/surgery_step/internal/fix_organ
 	allowed_tools = list(
 	/obj/item/stack/medical/advanced/bruise_pack= 100,		\
+	/obj/item/FixOVein/suture = 70 \
 	/obj/item/stack/medical/bruise_pack = 40,	\
-	/obj/item/tape_roll = 20
+	/obj/item/tape_roll = 20 \
 	)
 
 	min_duration = 70
@@ -124,6 +125,7 @@
 	allowed_tools = list(
 	/obj/item/scalpel = 100,		\
 	/obj/item/material/knife = 75,	\
+	/obj/item/material/sword/combat_knife = 80\
 	/obj/item/material/kitchen/utensil/knife = 75,	\
 	/obj/item/material/shard = 50, 		\
 	)
@@ -187,7 +189,7 @@
 	priority = 2
 	allowed_tools = list(
 	/obj/item/hemostat = 100,	\
-	/obj/item/wirecutters = 75,
+	/obj/item/wirecutters = 75, \
 	/obj/item/material/knife = 75,	\
 	/obj/item/material/kitchen/utensil/fork = 20
 	)
@@ -343,6 +345,7 @@
 	allowed_tools = list(
 	/obj/item/FixOVein = 100,	\
 	/obj/item/stack/cable_coil = 75,	\
+	/obj/item/FixOVein/suture = 20 \
 	/obj/item/tape_roll = 50
 	)
 
