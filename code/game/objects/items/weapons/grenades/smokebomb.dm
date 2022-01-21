@@ -36,15 +36,24 @@
 
 //These are debug items and are not used in game.
 /obj/item/grenade/smokebomb/mortar
-	name = "mortar marker"
+	name = "HE mortar marker"
 	desc = "Throw it at the spot you want mortar fire at. MAKE SURE YOU'RE NOT THERE!"
 	det_time = 50
-	var/mortar_type = "shrapnel"
+	var/mortar_type = "frag"
 
 /obj/item/grenade/smokebomb/mortar/detonate()
 	drop_mortar(get_turf(src), mortar_type)
 	qdel(src)
 
+/obj/item/grenade/smokebomb/mortar/fire
+	name = "incendiary mortar marker"
+	mortar_type = "fire"
 
 /obj/item/grenade/smokebomb/mortar/gas
+	name = "chemical mortar marker"
 	mortar_type = "gas"
+
+/obj/item/grenade/smokebomb/mortar/arty
+	name = "artillery marker"
+	mortar_type = "arty"
+	det_time = 75

@@ -70,6 +70,41 @@
 /obj/item/card/id/commissar/spare,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"am" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/turf/checkers/two,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
+"an" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/item/mortar_launcher,
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/smoke,
+/obj/item/mortar_shell/smoke,
+/obj/item/mortar_shell/smoke,
+/obj/item/mortar_shell/smoke,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/flare,
+/obj/item/mortar_shell/gas,
+/obj/item/mortar_shell/gas,
+/obj/item/mortar_shell/incendiary,
+/obj/item/mortar_shell/incendiary,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "ar" = (
 /obj/effect/decal/cleanable/spiderling_remains,
 /turf/simulated/floor/tiled{
@@ -506,11 +541,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"dZ" = (
-/obj/structure/table/rack/dark,
-/obj/effect/floor_decal/turf/checkers/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security)
 "eb" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	name = "Imperialis Doorway - Monasterium"
@@ -5104,27 +5134,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"LD" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/effect/floor_decal/turf/checkers/two,
-/obj/item/mortar_launcher,
-/obj/item/mortar_shell/flare,
-/obj/item/mortar_shell/flare,
-/obj/item/mortar_shell/flare,
-/obj/item/mortar_shell/flare,
-/obj/item/mortar_shell/flare,
-/obj/item/mortar_shell/flare,
-/obj/item/mortar_shell/flare,
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/item/mortar_shell,
-/obj/item/mortar_shell,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security)
 "LE" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -27272,7 +27281,7 @@ ED
 dj
 Cn
 dj
-dZ
+am
 dj
 dj
 Ku
@@ -28304,7 +28313,7 @@ dj
 sI
 Ez
 dj
-LD
+an
 Gh
 dm
 eD

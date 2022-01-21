@@ -248,12 +248,13 @@
 	name = "Drill"
 	id = "mech_drill"
 	build_path = /obj/item/mecha_parts/mecha_equipment/tool/drill
+/*
 /datum/design/item/mecha/flaregun
 	name = "Flare launcher"
 	id = "mecha_flare_gun"
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flare
 	materials = list(DEFAULT_WALL_MATERIAL = 12500)
-
+*/
 /datum/design/item/mecha/passenger
 	name = "Passenger compartment"
 	id = "mech_passenger"
@@ -277,12 +278,13 @@
 	req_tech = list(TECH_COMBAT = 3)
 
 // *** Weapon modules
+/*
 /datum/design/item/mecha/weapon/scattershot
 	name = "LBX AC 10 \"Scattershot\""
 	id = "mech_scattershot"
 	req_tech = list(TECH_COMBAT = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
-
+*/
 /datum/design/item/mecha/weapon/laser
 	name = "Heavy mounted lascannon"
 	id = "mech_laser"
@@ -317,15 +319,16 @@
 	materials = list(DEFAULT_WALL_MATERIAL = 10000, "gold" = 1000, "silver" = 2000, "glass" = 5000)
 	build_path = /obj/item/mecha_parts/mecha_equipment/repair_droid
 
+/*
 /datum/design/item/mecha/energy_relay
 	name = "Energy relay"
 	id = "mech_energy_relay"
 	req_tech = list(TECH_MAGNET = 4, TECH_POWER = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 10000, "gold" = 2000, "silver" = 3000, "glass" = 2000)
 	build_path = /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay
-
+*/
 /datum/design/item/mecha/ccw_armor
-	name = "CCW armor booster"
+	name = "Close combat armor booster"
 	desc = "Exosuit close-combat armor booster."
 	id = "mech_ccw_armor"
 	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 4)
@@ -333,7 +336,7 @@
 	build_path = /obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster
 
 /datum/design/item/mecha/proj_armor
-	desc = "Exosuit projectile armor booster."
+	desc = "Consecrated armor booster."
 	id = "mech_proj_armor"
 	req_tech = list(TECH_MATERIAL = 5, TECH_COMBAT = 5, TECH_ENGINEERING = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 20000, "gold" = 5000)
