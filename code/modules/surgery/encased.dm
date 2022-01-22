@@ -25,7 +25,7 @@
 //////////////////////////////////////////////////////////////////
 /datum/surgery_step/open_encased/saw
 	allowed_tools = list(
-	/obj/item/circular_saw = 100,
+	/obj/item/circular_saw = 100, \
 	/obj/item/material/knife = 50, \
 	/obj/item/material/hatchet = 75 \
 	/obj/item/melee/pcsword = 90 \ 
