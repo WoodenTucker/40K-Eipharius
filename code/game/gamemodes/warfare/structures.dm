@@ -523,7 +523,80 @@
 		if(armed)
 			blow()
 
+/obj/structure/dud
+	name = "unexploded mortar shell"
+	desc = "You'd better stay away from this one..."
+	icon = 'icons/obj/items/mortars.dmi'
+	icon_state = "dud"
+	anchored = TRUE
+	density = FALSE
+	var/armed = TRUE//Whether or not it will blow up.
+	var/can_be_armed = TRUE//Whether or not it can be armed to blow up. Disarmed mines won't blow.
 
+/obj/structure/dud/New()
+	..()
+	if(prob(15))
+		desc = "You probably should get civilians away from this thing..."
+		if(prob(1))
+			desc = "One more remnant about the horrors of real-life wars. May the God bless you that nobody of your loved ones would meet it in their life..."
+
+/obj/structure/dud/proc/blow()
+	GLOB.mines_tripped++
+	explosion(src.loc,2.5,3.5,5.5,flame_range = 2.5)
+	fragmentate(get_turf(src), 72)
+	qdel(src)
+
+
+/obj/structure/dud/update_icon()
+	if(!can_be_armed)
+		desc = "Good that this one has been defused..."
+		icon_state = "dud_safe"
+
+
+/obj/structure/dud/attackby(obj/item/W as obj, mob/user as mob)
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/H = user
+	if(istype(W, /obj/item/wirecutters))
+		if(!can_be_armed)
+			return
+		H.visible_message("<span class='danger'>[H] begins to disarm the shell...</span>")
+		if(do_after(user,100)) //quite hard to defuse UXO
+			if(H.statscheck(skills = H.SKILL_LEVEL(engineering)) >= SUCCESS*0.55)
+				armed = FALSE
+				to_chat(H, "You successfully disarm and disconnect the fuse of [src]. You better find a way to detach it now.")
+				playsound(src, 'sound/items/Wirecutter.ogg', 100, FALSE)
+				return
+			blow()
+	if(istype(W, /obj/item/wrench) & (armed = FALSE))
+		if(!can_be_armed)
+			return
+		if(armed)
+			return
+		H.visible_message("<span class='danger'>[H] begins to detach the fuse from [src]...</span>")
+		if(do_after(user,100)) //quite hard to defuse UXO
+			if(H.statscheck(skills = H.SKILL_LEVEL(engineering)) >= SUCCESS*0.55)
+				can_be_armed = FALSE
+				to_chat(H, "You successfully detach the fuse of [src] and put it away.")
+				playsound(src, 'sound/items/Ratchet.ogg', 100, FALSE)
+				GLOB.mines_disarmed++
+				update_icon()
+				return
+			blow()
+
+/obj/structure/dud/Crossed(mob/living/M as mob)
+	if(ishuman(M))
+		if(!M.throwing && !armed && can_be_armed)
+			to_chat(M, "<span class='danger'>You hear a sickening thud as you stumble against unexploded shell!</span>")
+			playsound(src, 'sound/effects/Glasshit.ogg', 100, FALSE)
+			if(prob(rand(15,85)))
+				playsound(src, 'sound/effects/mine_arm.ogg', 100, FALSE)
+				blow()
+
+/obj/structure/dud/Uncrossed(mob/living/M as mob)
+	if(istype(M))
+		if(armed)
+			blow()
 
 //Activate this to win!
 /obj/structure/destruction_computer

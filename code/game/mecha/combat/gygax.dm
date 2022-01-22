@@ -17,7 +17,7 @@
 	max_equip = 3
 	var/overload_disable_message = "You disable leg actuators overload"
 	var/overload_enable_message = "You enable leg actuators overload"
-
+/*
 /obj/mecha/combat/gygax/dark
 	desc = "A lightweight exosuit used by Heavy Asset Protection. A significantly upgraded Gygax security mech."
 	name = "Dark Gygax"
@@ -100,3 +100,4 @@
 	if (href_list["toggle_leg_overload"])
 		src.overload()
 	return
+*/

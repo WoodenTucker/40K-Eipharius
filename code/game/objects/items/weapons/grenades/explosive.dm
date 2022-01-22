@@ -98,20 +98,30 @@
 
 	qdel(src)
 
+/obj/mortar
+	name = "Mortar Shell"
+	desc = "You'll never see this as never supposed to, it just explodes."
+
+/obj/mortar/New()
+	..()
+	qdel(src)
+
 /obj/mortar/frag
-	name = "Mortar"
-	desc = "You'll never see this it just explodes."
+	name = "HE Mortar Shell"
 
 /obj/mortar/frag/New()
 	..()
+	explosion(src.loc,2.5,3.5,5.5,flame_range = 2.5)
 	fragmentate(get_turf(src), 72)
 	qdel(src)
 
 /obj/mortar/gas
-	name = "gas mortar"
+	name = "Gas Mortar Shell"
 
 /obj/mortar/gas/New()
 	..()
+	playsound(src.loc, 'sound/effects/smoke.ogg', 50)
+	explosion(src.loc,0,0,1,flame_range = 0)
 	create_reagents(100)
 	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 50)
 	var/location = get_turf(src)
@@ -122,16 +132,27 @@
 		S.start()
 	qdel(src)
 
+/obj/mortar/smoke
+	name = "Smoke Mortar Shell"
+
+/obj/mortar/smoke/New()
+	..()
+	explosion(src.loc,0,0,1,flame_range = 0)
+	playsound(src.loc, 'sound/effects/smoke.ogg', 50)
+	new /datum/effect/effect/system/smoke_spread
+	qdel(src)
+
 /obj/mortar/fire
-	name = "fire mortar"
+	name = "Incendiary Mortar Shell"
 
 /obj/mortar/fire/New()//Just spawns fire.
 	..()
+	explosion(src.loc,0,1.5,2.5,flame_range = 2.5)
 	new /obj/flamer_fire(loc, 12, 10, "red", 8)
 	qdel(src)
 
 /obj/mortar/flare
-	name = "illumination mortar"
+	name = "Illumination Mortar Shell"
 	var/flare_type = /obj/effect/lighting_dummy/flare
 
 obj/mortar/flare/blue
@@ -140,6 +161,15 @@ obj/mortar/flare/blue
 /obj/mortar/flare/New()//Just spawns a flare.
 	..()
 	new flare_type(loc)
+	qdel(src)
+
+/obj/mortar/arty
+	name = "Basilisk Artillery Shell"
+
+/obj/mortar/arty/New()
+	..()
+	explosion(src.loc,4.5,6.5,8.5,flame_range = 2.5)
+	fragmentate(get_turf(src), 84)
 	qdel(src)
 
 /obj/item/grenade/frag/proc/on_explosion(var/turf/O)
