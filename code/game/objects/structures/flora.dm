@@ -7,7 +7,7 @@
 	alpha = 200
 	density = FALSE
 	layer = 1
-	plane = ABOVE_HUMAN_PLANE
+	plane = PLATING_PLANE
 	layer = ABOVE_HUMAN_LAYER
 	var/log_type //type of log
 	var/log_amount //amount of logs when cut down
