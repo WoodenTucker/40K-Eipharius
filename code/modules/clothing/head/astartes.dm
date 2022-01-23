@@ -173,9 +173,9 @@
 	item_state = "techhelm"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
-/obj/item/clothing/head/helmet/astartes/bloodravens
+/obj/item/clothing/head/helmet/astartes/bloodangels
 	name = "Astarte Mark VII Helmet"
-	desc = "The daunting helmet of the Emperor's angels of death, This one bears the symbol of The Blood Ravens."
+	desc = "The daunting helmet of the sons of the Angel, This one bears the symbol of The Blood Angels."
 	icon_state = "bravhelm"
 	item_state = "bravhelm"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
