@@ -300,10 +300,12 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand(15,17))
 		H.add_skills(rand(5,8),rand(5,7),rand(10,11),rand(3,5),rand(10,11)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
+			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
@@ -327,8 +329,8 @@
 	open_when_dead = TRUE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, access_sob)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels, access_sob)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	auto_rifle_skill = 3
 	semi_rifle_skill = 3
@@ -344,7 +346,9 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(16,18))
 		H.add_skills(rand(3,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = get_all_accesses()
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue
+			access_chemistry, access_virology, access_surgery,
+			access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_equipped_item(slot_s_store)
