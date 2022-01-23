@@ -164,6 +164,7 @@
 	item_state = "rg_lib"
 	str_requirement = 25
 	canremove = 0
+	unacidable = 1
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 90, bomb = 90, bio = 50, rad = 50)
 	cold_protection = FEET|LEGS
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -193,25 +194,25 @@
 	..()
 /obj/item/clothing/shoes/astarte/boots/smurfs
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 12th chapter, the Ultramarines."
 	icon_state = "umboots"
 	item_state = "umboots"
 
-/obj/item/clothing/shoes/astarte/boots/bloodraven
+/obj/item/clothing/shoes/astarte/boots/bloodangels
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in Chapter Blood Ravens's colour scheme."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 9th chapter, the Blood Angels."
 	icon_state = "brboots"
 	item_state = "brboots"
 
 /obj/item/clothing/shoes/astarte/boots/sallys
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 18th chapter, the Salamanders."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
 
 /obj/item/clothing/shoes/astarte/boots/raven
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 19th chapter, the Raven Guard."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 
