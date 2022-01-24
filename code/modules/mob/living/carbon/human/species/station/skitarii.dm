@@ -12,8 +12,8 @@
 	pixel_offset_y = -4
 	strength = STR_HIGH
 	radiation_mod = 0.2
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN|
-	slowdown = -0.30 //a bit faster than astartes due to being smaller and lighter
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN
+//	slowdown = -0.30 //a bit faster than astartes due to being smaller and lighter //almost sure that slowdown may be broken
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
 		)
@@ -90,8 +90,8 @@
 	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 	playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 	src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
-	H.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
-	H.set_trait(new/datum/trait/death_tolerant())
+	src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+	src.set_trait(new/datum/trait/death_tolerant())
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
 	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
