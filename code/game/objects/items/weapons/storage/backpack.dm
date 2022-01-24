@@ -254,9 +254,9 @@
 	icon_state = "ravpack"
 	item_state = "ravpack"
 
-/obj/item/storage/backpack/satchel/astartes/bloodravens
-	name = "Blood Ravens powerpack"
-	desc = "A Blood Raven powerpack"
+/obj/item/storage/backpack/satchel/astartes/bloodangels
+	name = "Blood Angels powerpack"
+	desc = "A Blood Angels powerpack"
 	icon_state = "bravpack"
 	item_state = "bravpack"
 

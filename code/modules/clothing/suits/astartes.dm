@@ -97,8 +97,8 @@
 
 // SPESS MUHREEN GLORIFIED HOMEBREW
 
-/obj/item/clothing/suit/armor/astartes/bloodravens
+/obj/item/clothing/suit/armor/astartes/bloodangels
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's angels of death, This one bears the symbol of his position, Tactical Marine of the Blood Ravens."
+	desc = "The Holy armour of the sons of the Angel, This one bears the symbol of his position, Tactical Marine of the Blood Angels."
 	icon_state = "bravsuit"
 	item_state = "bravsuit"
