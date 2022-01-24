@@ -74,7 +74,7 @@
 		return
 	var/mob/living/carbon/human/U = src
 	src.verbs -= /mob/living/carbon/human/proc/chapterselection
-	var/static/list/chapter = list("Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary", "Ultramarines", "Ultramarines techmarine", "Ultramarines Apothecary", "Salamanders","Blood Ravens", "Salamanders Techmarine", "Salamanders Apothecary") //lists all possible chapters
+	var/static/list/chapter = list("Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary", "Ultramarines", "Ultramarines techmarine", "Ultramarines Apothecary", "Salamanders","Blood Angels", "Salamanders Techmarine", "Salamanders Apothecary") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter and role", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)
