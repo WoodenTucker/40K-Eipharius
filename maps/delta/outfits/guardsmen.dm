@@ -126,7 +126,7 @@
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	belt = /obj/item/melee/mercycs
-	glasses = /obj/item/clothing/glasses/night
+	glasses = null
 	l_hand = /obj/item/grenade/frag/high_yield/krak
 	r_hand = /obj/item/gun/launcher/rcl_rifle
 	head = /obj/item/clothing/head/helmet/krieghelmet
@@ -153,7 +153,7 @@
 	head = /obj/item/clothing/head/catachan
 	belt = /obj/item/melee/mercycs
 	mask = null
-	glasses = /obj/item/clothing/glasses/night
+	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	backpack_contents = list(
@@ -175,7 +175,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/valushanka
 	mask = null
-	glasses = /obj/item/clothing/glasses/night
+	glasses = null
 	belt = /obj/item/melee/mercycs
 	suit_store = /obj/item/gun/energy/las/lasgun
 	l_pocket = /obj/item/storage/box/ifak
