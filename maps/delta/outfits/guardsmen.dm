@@ -37,6 +37,7 @@
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
 	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/luscius
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
@@ -57,6 +58,7 @@
 	head = /obj/item/clothing/head/catachan
 	mask = null
 	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	backpack_contents = list(
@@ -65,7 +67,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
+	/obj/item/shovel = 1,
 	/obj/item/material/sword/combat_knife/catachan = 1
 	)
 
@@ -81,6 +83,7 @@
 	belt = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/lasgun
 	r_hand = /obj/item/gun/projectile/automatic/machinepistol
+	l_pocket = /obj/item/storage/box/ifak
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -123,15 +126,21 @@
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	belt = /obj/item/melee/mercycs
+	glasses = /obj/item/clothing/glasses/night
+	l_hand = /obj/item/grenade/frag/high_yield/krak
+	r_hand = /obj/item/gun/launcher/rcl_rifle
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	l_pocket = /obj/item/storage/box/ifak
+	suit_store = /obj/item/gun/energy/las/lasgun/luscius/rare
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
+	/obj/item/shovel = 1,
+	/obj/item/ammo_casing/heat_shell = 2
 	)
 
 /decl/hierarchy/outfit/job/sergeant/catachan
@@ -144,7 +153,8 @@
 	head = /obj/item/clothing/head/catachan
 	belt = /obj/item/melee/mercycs
 	mask = null
-	glasses = null
+	glasses = /obj/item/clothing/glasses/night
+	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
@@ -152,8 +162,8 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
-	/obj/item/material/sword/combat_knife/catachan = 1
+	/obj/item/shovel = 1,
+	/obj/item/material/sword/combat_knife/catachan = 1,
 	/obj/item/beartrap = 1
 	)
 
@@ -165,9 +175,10 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/valushanka
 	mask = null
-	glasses = null
+	glasses = /obj/item/clothing/glasses/night
 	belt = /obj/item/melee/mercycs
 	suit_store = /obj/item/gun/energy/las/lasgun
+	l_pocket = /obj/item/storage/box/ifak
 	r_hand = /obj/item/gun/projectile/automatic/autogrim
 	backpack_contents = list(
 	/obj/item/ammo_magazine/autogrim = 2,
@@ -201,7 +212,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones3/five = 1
 	)
 
 	pda_slot = null
@@ -232,7 +243,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones3/five = 1
 	)
 
 	pda_slot = null
