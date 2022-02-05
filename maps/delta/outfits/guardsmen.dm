@@ -107,11 +107,10 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/energy/las/lasgun/rare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	backpack_contents = list(/
+	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -151,9 +150,11 @@
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/catachan
-	belt = /obj/item/melee/mercycs
+	belt = null
 	mask = null
 	glasses = null
+	r_hand = /obj/item/melee/mercycs
+	l_hand = /obj/item/gun/energy/las/laspistol/heavy
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	backpack_contents = list(
