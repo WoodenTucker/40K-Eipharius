@@ -23,7 +23,7 @@
 	smg_skill = 5
 
 
-	ideal_character_age = 70 // Oldfag magos
+	ideal_character_age = 70 // Old geezer captains ftw
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
@@ -54,7 +54,7 @@
 
 
 /datum/job/engineer
-	title = "Tech-priest Enginseer"
+	title = "Tech Priest Enginseer"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
@@ -102,7 +102,7 @@
 // Magos
 
 /datum/job/geneticist
-	title = "Tech-priest Biologis"
+	title = "Magos Biologis"
 	department = "Medical"
 	department_flag = MED|SCI|ENG
 	total_positions = 1
@@ -128,9 +128,9 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Tech-priest Biologis [current_name]")
+		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
-		H.add_stats(rand(14,15), rand(14,15), rand(10,13), rand(20,30))
+		H.add_stats(rand(14,15), rand(14,15), rand(10,13), rand(20,30)) 
 		H.add_skills(rand(4,7),rand(4,7),rand(8,11),rand(7,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
@@ -138,7 +138,6 @@
 
 // Magos Biologis Xenobiologist
 
-/*
 /datum/job/xenobiologist
 	title = "Magos Xenologist"
 	department = "Science"
@@ -154,7 +153,8 @@
 //	alt_titles = list("Xenobotanist")
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
-*/
+
+
 
 
 //Skitarii
@@ -172,19 +172,7 @@
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
-/decl/hierarchy/outfit/job/skitarii/alpha
-	uniform = /obj/item/clothing/under/rank/skitarii
-	suit = /obj/item/clothing/suit/storage/hooded/skitarii
-	shoes = /obj/item/clothing/shoes/skitshoes
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team
-	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
-	id = null
-	id_slot = null
-	pda_slot = null
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+
 /*
 /datum/job/atmos
 	title = "Atmospheric Technician"
