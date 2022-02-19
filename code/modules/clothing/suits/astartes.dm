@@ -1,5 +1,5 @@
 /obj/item/clothing/suit/armor/astartes
-	name = "Astartes Mark VII Power Armour"
+	name = "Astarte Mark VII Power Armour"
 	icon = 'icons/mob/32x40/suits.dmi'
 	item_icons = list(slot_wear_suit_str = 'icons/mob/32x40/suits.dmi')
 	icon_state = "umpowerarmor"
@@ -15,13 +15,13 @@
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 	species_restricted = list(SPECIES_ASTARTES)
 
-// SPESS MUUHREEN TACTICOOL
+// SPACE MUUHREEN TACTICOOL
 
-/obj/item/clothing/suit/armor/astartes/bloodangel
+/obj/item/clothing/suit/armor/astartes/ultramarine
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the sons of the Sanguinius, This one bears the symbol of his position, Tactical Marine of the IXth Chapter, Blood Angels."
-	icon_state = "bangsuit"
-	item_state = "bangsuit"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrasuit"
+	item_state = "ultrasuit"
 
 /obj/item/clothing/suit/armor/astartes/ravenguard
 	name = "Astartes Mark VII Power Armour"
@@ -35,13 +35,13 @@
 	icon_state = "salsuit"
 	item_state = "salsuit"
 
-/obj/item/clothing/suit/armor/astartes/ultramarine
-	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
-	icon_state = "ultrasuit"
-	item_state = "ultrasuit"
+// SPACE MUUHREEN CAPTAIN
 
-// SPESS MUUHREEN CAPTAIN
+/obj/item/clothing/suit/armor/astartes/ultramarine/captain
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultracap"
+	item_state = "ultracap"
 
 /obj/item/clothing/suit/armor/astartes/captain/ravenguard
 	name = "Astartes Mark VII Power Armour"
@@ -55,45 +55,27 @@
 	icon_state = "salcap"
 	item_state = "salcap"
 
-/obj/item/clothing/suit/armor/astartes/ultramarine/captain
-	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XIIIth Chapter, Ultramarines."
-	icon_state = "ultracap"
-	item_state = "ultracap"
-
 // SPESS MUHREEN SPERM MAN
 
 /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Sanguinary Priest of the IXth Chapter, Blood Angels."
-	icon_state = "bangapoth"
-	item_state = "bangapoth"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apocthecary of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultrapoth"
+	item_state = "ultrapoth"
 
 /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apothecary of the XIXth Chapter, Raven Guards."
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apocthecary of the XIXth Chapter, Raven Guards."
 	icon_state = "ravapoth"
 	item_state = "ravapoth"
 
 /obj/item/clothing/suit/armor/astartes/apothecary/salamander
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apothecary of the XVIIIth Chapter, Salamanders."
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apocthecary of the XVIIIth Chapter, Salamanders."
 	icon_state = "salapoth"
 	item_state = "salapoth"
 
-/obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
-	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Apothecary of the XIIIth Chapter, Ultramarines."
-	icon_state = "ultrapoth"
-	item_state = "ultrapoth"
-
 // SPESS MUHREEN TOASTER FUCKER
-
-/obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
-	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the IXth Chapter, Blood Angels."
-	icon_state = "bangtech"
-	item_state = "bangtech"
 
 /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
 	name = "Astartes Mark VII Power Armour"
@@ -112,3 +94,11 @@
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Techmarine of the XVIIIth Chapter, Salamanders."
 	icon_state = "saltech"
 	item_state = "saltech"
+
+// SPESS MUHREEN GLORIFIED HOMEBREW
+
+/obj/item/clothing/suit/armor/astartes/bloodangels
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the sons of the Angel, This one bears the symbol of his position, Tactical Marine of the Blood Angels."
+	icon_state = "bravsuit"
+	item_state = "bravsuit"

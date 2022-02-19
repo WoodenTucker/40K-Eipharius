@@ -70,9 +70,9 @@
 	icon_state = "workbootstoeless"
 	species_restricted = null
 
-// Mechanicus Stuff
+// Pilgrim Stuff
 
-/obj/item/clothing/shoes/technoboots
+/obj/item/clothing/shoes/workboots
 	name = "techno-boots"
 	desc = "Cybernetic legs scurry the Tech-priest where he is needed."
 	icon_state = "techpriest"
@@ -80,29 +80,6 @@
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
-	canremove = 0
-	unacidable = 1
-
-/obj/item/clothing/shoes/skitshoes //walking sounds only play with shoes and I was losing my mind not having them
-	name = "Skitarii feet"
-	desc = "Augmented for speed and power"
-	icon_state = "skitshoes"
-	item_state = "skitshoes"
-	siemens_coefficient = 1
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
-	canremove = 0
-	unacidable = 1
-
-/obj/item/clothing/shoes/workboots
-	name = "Mars Pattern Advanced Boots"
-	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
-	icon_state = "techpriest"
-	item_state = "techpriest"
-	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
-	siemens_coefficient = 1
-	can_hold_knife = 1
-
-// Pilgrim Stuff
 
 /obj/item/clothing/shoes/commandboots
 	name = "boots of command"
@@ -110,7 +87,6 @@
 	icon_state = "hopboots"
 	item_state = "hopboots"
 	species_restricted = null
-
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
 	desc = "A shined pair of shoes"
@@ -126,7 +102,7 @@
 	icon_state = "prac_boots"
 	item_state = "prac_boots"
 
-// Kroot Stuff
+// Tau
 
 /obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
 	name = "kroot feet"
@@ -134,9 +110,8 @@
 	icon_state = "krootboot"
 	item_state = "krootboot"
 	canremove = 0
-	unacidable = 1
 
-// Genestealer Stuff
+// Genestealer
 
 /obj/item/clothing/shoes/genestealerfeet //walking sounds only play with shoes and I was losing my mind not having them
 	name = "tyranid feet"
@@ -144,9 +119,8 @@
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
-	unacidable = 1
 
-// Ork Stuff
+// Ork
 
 /obj/item/clothing/shoes/orkboots //walking sounds only play with shoes and I was losing my mind not having them
 	name = "ork boots"
@@ -183,7 +157,7 @@
 
 // Astartes Stuff
 
-/obj/item/clothing/shoes/astartes/boots
+/obj/item/clothing/shoes/astarte/boots
 	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine."
 	icon_state = "rg_lib"
@@ -197,11 +171,11 @@
 	var/obj/item/material/sword/combat_knife/knife = null
 	species_restricted = list(SPECIES_ASTARTES)
 
-/obj/item/clothing/shoes/astartes/boots/New()
+/obj/item/clothing/shoes/astarte/boots/New()
 	..()
 	knife = new
 	update_icon()
-/obj/item/clothing/shoes/astartes/boots/attackby(obj/item/I, mob/user)
+/obj/item/clothing/shoes/astarte/boots/attackby(obj/item/I, mob/user)
 	. = ..()
 	if(istype(I, /obj/item/material/sword/combat_knife))
 		if(knife)//We've already got a knife in there, no need for another.
@@ -218,31 +192,50 @@
 		update_icon()
 		return
 	..()
-/obj/item/clothing/shoes/astartes/boots/smurfs
+/obj/item/clothing/shoes/astarte/boots/smurfs
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's chosen, the Adeptus Astartes, This one is painted in the colour scheme of the 12th chapter, the Ultramarines."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 12th chapter, the Ultramarines."
 	icon_state = "umboots"
 	item_state = "umboots"
 
-/obj/item/clothing/shoes/astartes/boots/bloodangels
+/obj/item/clothing/shoes/astarte/boots/bloodangels
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's angels, the Adeptus Astartes, This one is painted in the colour scheme of the 9th chapter, the Blood Angels."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 9th chapter, the Blood Angels."
 	icon_state = "brboots"
 	item_state = "brboots"
 
-/obj/item/clothing/shoes/astartes/boots/sallys
+/obj/item/clothing/shoes/astarte/boots/sallys
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's dragon warriors, the Adeptus Astartes, This one is painted in the colour scheme of the 18th chapter, the Salamanders."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 18th chapter, the Salamanders."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
 
 /obj/item/clothing/shoes/astarte/boots/raven
 	name = "Astartes Mark VII Combat Boots"
-	desc = "Boots of the Emperor's black ravens, the Adeptus Astartes, This one is painted in the colour scheme of the 19th chapter, the Raven Guard."
+	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 19th chapter, the Raven Guard."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 
-// Sororitas Stuff
+/obj/item/clothing/shoes/skitshoes //walking sounds only play with shoes and I was losing my mind not having them
+	name = "Skitarii feet"
+	desc = "Augmented for speed and power"
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	siemens_coefficient = 1
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
+	canremove = 0
+	unacidable = 1
+
+/obj/item/clothing/shoes/technoboots
+	name = "Mars Pattern Advanced Boots"
+	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
+	icon_state = "techpriest"
+	item_state = "techpriest"
+	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	siemens_coefficient = 1
+	can_hold_knife = 1
+
+// Sororitas
 
 /obj/item/clothing/shoes/sisterofbattle
 	name = "Order of the Sacred Rose Power Boots"
@@ -250,7 +243,6 @@
 	icon_state = "sister"
 	item_state = "sister"
 	canremove = 0
-	unacidable = 1
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
 
