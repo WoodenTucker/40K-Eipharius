@@ -1,12 +1,17 @@
 // IG Datum
 
 /datum/job/ig
-	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
+	title = "Guardsman"
 	supervisors = "The Commissar and your Sergeant."
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
-	outfit_type = /decl/hierarchy/outfit/job/ig //will need to be replaced eventually - wel
+	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel //replaced - Walker9
+	alt_titles = list( 
+		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg
+		"Catachan Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan
+		"Valhallan Guardsman" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		)
 	selection_color = "#33813A"
 	department_flag = SEC
 	auto_rifle_skill = 6
@@ -60,7 +65,12 @@
 	total_positions = 2
 	spawn_positions = 2
 	selection_color = "#33813A"
-	outfit_type = /decl/hierarchy/outfit/job/ig/sergeant
+	outfit_type = /decl/hierarchy/outfit/job/sergeant
+		alt_titles = list(
+		"Krieg WatchMaster" = /decl/hierarchy/outfit/job/sergeant/krieg
+		"Catachan Sergent" = /decl/hierarchy/outfit/job/sergeant/catachan
+		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
+		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC|COM
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
@@ -281,290 +291,6 @@
 	/obj/item/stack/thrones3/five = 1,
 )
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-// REGIMENT SELECTION
-
-// TROOPER REGIMENT SELECTION
-
-/mob/living/carbon/human/proc/regimentselection()
-	set name = "Select your regiment"
-	set category = "Guardsmen"
-	set desc = "Choose your regiment"
-	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
-		return
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
-		return
-	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
-	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
-
-	switch(chapterchoice)
-		if("Krieger")
-			var/troopnum = rand(1,50000)
-			src.name = "Guardsman [troopnum]"
-			src.real_name = "Guardsman [troopnum]"
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/krieg, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/homemade, slot_in_backpack)
-			U.verbs -= list(
-			/mob/living/carbon/human/proc/regimentselection,
-			/mob/living/carbon/human/proc/khorne,
-			/mob/living/carbon/human/proc/nurgle,
-			/mob/living/carbon/human/proc/slaanesh,
-			/mob/living/carbon/human/proc/tzeentch
-			)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Krieg Guardsman"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol/heavy, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Cadian Guardsman"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-		if("Catachan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/head/catachan, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/CatachanVest, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/material/sword/combat_knife/catachan, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Catachan Guardsman"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-		if("Valhallan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Valhallan Guardsman"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-/// SERGEANT REGIMENT SELECTION
-
-/mob/living/carbon/human/proc/sergeantselection()
-	set name = "Select your regiment"
-	set category = "Regimental Sergeant Position"
-	set desc = "Choose your regiment"
-	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
-		return
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
-		return
-	var/mob/living/carbon/human/U = src
-	var/static/list/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
-	if(!length(chapter))
-		chapter = list("Cadian", "Krieger", "Catachan", "Valhallan")
-	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
-	if(chapterchoice)
-		chapter -= chapterchoice
-
-	switch(chapterchoice)
-		if("Krieger")
-			var/troopnum = rand(1,50000)
-			src.name = "Watchmaster [troopnum]"
-			src.real_name = "Watchmaster [troopnum]"
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/kriegsgt, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/krieg, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/krieghelmet, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/krieg, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
-			equip_to_slot_or_del(new /obj/item/shovel, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/luscius/rare, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/grenade/frag/high_yield/krak, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/launcher/rcl_rifle, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/ammo_casing/heat_shell, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_casing/heat_shell, slot_in_backpack)
-			U.verbs -= list(
-			/mob/living/carbon/human/proc/sergeantselection,
-			/mob/living/carbon/human/proc/khorne,
-			/mob/living/carbon/human/proc/nurgle,
-			/mob/living/carbon/human/proc/slaanesh,
-			/mob/living/carbon/human/proc/tzeentch
-			)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Krieg Watchmaster"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-		if("Cadian")
-			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/cadiansgt, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
-			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/cadiangoggles/elite, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/slugrevolver, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_casing/c44, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Cadian Sergeant"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-		if("Catachan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/head/catachan, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/catachansgt, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/material/sword/combat_knife/catachan, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/beartrap, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Catachan Sergeant"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-		if("Valhallan")
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallasgt, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/autogrim, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/autogrim, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/autogrim, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			U.verbs -= list(/mob/living/carbon/human/proc/sergeantselection,)
-
-			var/obj/item/card/id/dog_tag/guardsman/W = new
-
-			W.icon_state = "tagred"
-			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Valhallan Sergeant"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
 
 //Squads
 
