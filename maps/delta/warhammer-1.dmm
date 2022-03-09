@@ -76,15 +76,17 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "an" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/structure/table/rack/dark,
+/obj/item/mortar_launcher,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
+"ao" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/mortar_launcher,
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
 /obj/item/mortar_shell/frag,
 /obj/item/mortar_shell/frag,
 /obj/item/mortar_shell/frag,
@@ -103,6 +105,7 @@
 /obj/item/mortar_shell/gas,
 /obj/item/mortar_shell/incendiary,
 /obj/item/mortar_shell/incendiary,
+/obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "ar" = (
@@ -28312,8 +28315,8 @@ dj
 dj
 sI
 Ez
-dj
 an
+ao
 Gh
 dm
 eD

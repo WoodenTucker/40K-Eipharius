@@ -183,11 +183,12 @@
 /turf/space,
 /area/space)
 "ay" = (
-/obj/mecha/combat/tau{
-	desc = "A highly advanced XV8 Crisis battlesuit, made by the T'au Empire.";
-	name = "XV8 Crisis Battlesuit"
-	},
 /obj/machinery/mech_recharger,
+/obj/effect/decal/mecha_wreckage/tau{
+	anchored = 1;
+	desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions.";
+	name = "XV8 Crisis battlesuit wreckage"
+	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "az" = (
@@ -7381,7 +7382,7 @@ ax
 ax
 ax
 gL
-jM
+ay
 jB
 kh
 kK
@@ -7483,7 +7484,7 @@ ax
 ax
 ax
 gL
-ay
+jM
 jB
 jB
 kN

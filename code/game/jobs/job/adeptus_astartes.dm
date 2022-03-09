@@ -130,8 +130,8 @@
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
 		if("Blood Angels")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/bloodangels, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/bloodangels, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/bloodangel, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/bloodangel, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/astarte/boots/bloodangels, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/bloodangels, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)

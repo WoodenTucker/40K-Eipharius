@@ -91,7 +91,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "am" = (
-/obj/machinery/light,
+/obj/structure/railing,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/theforest)
 "an" = (
@@ -550,10 +550,10 @@
 /turf/simulated/floor/carpet/green,
 /area/cadiaoutpost/oa/bridge/meetingroom)
 "bg" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+/obj/structure/railing{
+	dir = 8
 	},
+/obj/structure/railing,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/theforest)
 "bh" = (
@@ -595,12 +595,13 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/theforest)
 "bl" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
 	},
+/obj/structure/railing,
 /turf/simulated/open,
-/area/cadiaoutpost/oa/bridge/hallway)
+/area/cadiaoutpost/oa/theforest)
 "bm" = (
 /obj/machinery/firealarm{
 	pixel_y = 30
@@ -1161,13 +1162,16 @@
 /turf/simulated/shuttle/wall/corner/smoothwhite,
 /area/cadiaoutpost/oa/shuttle/aquila)
 "cy" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 1
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
 	},
-/area/cadiaoutpost/oa/shuttle/aquila)
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
 "cz" = (
 /obj/machinery/door/airlock/command{
 	desc = "GET TO DAT SHUTTLE!.";
@@ -1178,13 +1182,53 @@
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
 "cA" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 6
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
 	},
-/area/cadiaoutpost/oa/shuttle/aquila)
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cB" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/hallway)
+"cC" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/hallway)
+"cD" = (
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cE" = (
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
 "cF" = (
 /obj/effect/floor_decal/carpet/blue{
 	dir = 1
@@ -1200,6 +1244,185 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
+"cG" = (
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cH" = (
+/obj/machinery/light,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/engineering/solars)
+"cI" = (
+/obj/machinery/light,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/engineering/solars)
+"cJ" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/open,
+/turf/simulated/shuttle/wall/corner/smoothwhite{
+	icon_state = "corner_white";
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/aquila)
+"cK" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/open,
+/turf/simulated/shuttle/wall/corner/smoothwhite{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/area/cadiaoutpost/oa/shuttle/aquila)
+"cL" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/engineering/solars)
+"cM" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/engineering/solars)
+"cN" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/structure/railing,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/bridge/hallway)
+"cO" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cP" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cQ" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/bridge/hallway)
+"cR" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cS" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cT" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cU" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cV" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/obj/structure/railing,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cW" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/obj/structure/railing,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
+"cX" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/structure/railing,
+/turf/simulated/open,
+/area/cadiaoutpost/oa/engineering/solars)
+"cY" = (
+/obj/structure/catwalk,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
 "de" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/woodentable{
@@ -1705,14 +1928,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"px" = (
-/obj/item/fireplacebl/l{
-	randpixel = 0
-	},
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "pA" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -1734,14 +1949,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"pO" = (
-/obj/item/fireplacebl/r{
-	randpixel = 0
-	},
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "qb" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1778,22 +1985,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"qp" = (
-/obj/item/fireplacebl{
-	randpixel = 0
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"qC" = (
-/obj/item/fireplacebl/br{
-	randpixel = 0
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "re" = (
 /obj/machinery/computer/evaccogitator,
 /turf/simulated/floor/wood{
@@ -2319,18 +2510,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"Fl" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "FA" = (
 /turf/simulated/wall/ancient{
 	color = null
@@ -2343,18 +2522,6 @@
 	},
 /area/cadiaoutpost/oa/engineering/solars)
 "GO" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"Ha" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -25228,7 +25395,7 @@ cm
 cm
 cm
 cm
-cy
+cJ
 aw
 aD
 fB
@@ -26256,7 +26423,7 @@ cm
 cm
 cm
 cm
-cA
+cK
 aE
 aD
 fB
@@ -31939,8 +32106,8 @@ eq
 cq
 kq
 UB
-px
-qp
+vn
+UB
 UB
 UB
 wi
@@ -32196,8 +32363,8 @@ eq
 in
 cs
 UB
-pO
-qC
+vn
+UB
 UB
 UB
 UB
@@ -34270,7 +34437,7 @@ ai
 ai
 ai
 ai
-ai
+aJ
 ai
 ai
 ai
@@ -34492,7 +34659,7 @@ RA
 FA
 GO
 Qp
-Qp
+wG
 fB
 ai
 ai
@@ -34524,11 +34691,11 @@ ai
 ai
 ai
 ai
+aJ
 ai
-ai
-ai
-Zo
-ai
+aw
+GB
+cD
 ai
 ai
 ai
@@ -34778,14 +34945,14 @@ ai
 ai
 ai
 ai
+aJ
 ai
-ai
-ai
-Zo
-ai
-Zo
-Zo
-ai
+aw
+GB
+bl
+GB
+GB
+cD
 ai
 ai
 ai
@@ -35004,7 +35171,7 @@ ai
 ai
 ai
 fB
-Ha
+GO
 Qp
 Qp
 fB
@@ -35034,15 +35201,15 @@ ai
 ai
 ai
 ai
-ai
-Zo
-ai
-Zo
-Zo
-ai
-Zo
+aw
 GB
-ai
+cS
+GB
+GB
+bl
+GB
+GB
+cD
 ai
 ai
 ai
@@ -35261,7 +35428,7 @@ ai
 ai
 ai
 fB
-GO
+cB
 Qp
 Qp
 fB
@@ -35290,16 +35457,16 @@ ai
 ai
 ai
 ai
-ai
-Zo
-Zo
-ai
-Zo
+am
 GB
-ai
+GB
+cS
+GB
+GB
+bl
 aQ
 ue
-ai
+cD
 ai
 ai
 ai
@@ -35547,16 +35714,16 @@ ai
 ai
 ai
 ai
-ai
-Zo
-Zo
-ai
+am
+GB
+GB
+cS
 aQ
 ue
-ai
+bl
 aQ
 ue
-ai
+cD
 ai
 ai
 ai
@@ -35804,16 +35971,16 @@ ai
 ai
 ai
 ai
-ai
-Zo
+am
 GB
-ai
+GB
+cS
 aQ
 ue
-ai
+bl
 aQ
 ue
-ai
+cD
 ai
 ai
 ai
@@ -36034,7 +36201,7 @@ ai
 fB
 GO
 Qp
-Qp
+wG
 fB
 ai
 ai
@@ -36061,16 +36228,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 ue
-ai
+cS
 aQ
 ue
-ai
+bl
 aQ
 ue
-ai
+cD
 ai
 ai
 ai
@@ -36289,7 +36456,7 @@ ai
 ai
 ai
 fB
-Ha
+GO
 Qp
 Qp
 fB
@@ -36318,16 +36485,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 ue
-ai
+cS
 aQ
 ue
-ai
+bl
 aQ
 ue
-ai
+cD
 ai
 eK
 eK
@@ -36575,25 +36742,25 @@ ai
 ai
 ai
 ai
-ai
+cO
 aQ
 ue
-ai
+cT
 aQ
 ue
-ai
+cV
 aQ
 ue
-ai
-am
+cE
+cH
 eK
 eN
 fp
 fy
 gp
 eK
-bg
-ai
+cL
+aJ
 ai
 ai
 ai
@@ -36803,7 +36970,7 @@ ai
 ai
 ai
 fB
-GO
+cB
 Qp
 Qp
 fB
@@ -36831,7 +36998,7 @@ ai
 ai
 ai
 ai
-ai
+am
 wH
 jA
 jA
@@ -36851,7 +37018,7 @@ gA
 Ww
 bk
 cj
-ai
+cD
 ai
 ai
 ai
@@ -37089,26 +37256,26 @@ ai
 ai
 ai
 ai
-ai
+bg
 aQ
 QJ
-ai
+cU
 aQ
 QJ
-ai
+cW
 aQ
 QJ
-ai
-am
+cP
+cI
 eK
 fg
 fv
 Cq
 dH
 eK
-bg
+cX
 bM
-ai
+cD
 ai
 ai
 ai
@@ -37346,26 +37513,26 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 QJ
-ai
+cS
 aQ
 QJ
-ai
+bl
 aQ
 QJ
+cD
 ai
-ai
 eK
 eK
 eK
 eK
 eK
 eK
-ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -37560,7 +37727,7 @@ ai
 ai
 ai
 ai
-ai
+aJ
 ai
 ai
 ai
@@ -37574,10 +37741,10 @@ ai
 ai
 ai
 fB
-Fl
+cC
 Ck
+wG
 fB
-fB
 ai
 ai
 ai
@@ -37603,15 +37770,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 QJ
-ai
+cS
 aQ
 QJ
-ai
+bl
 aQ
 QJ
+cD
 ai
 ai
 ai
@@ -37619,10 +37787,9 @@ ai
 ai
 ai
 ai
-ai
-ai
+am
 aD
-ai
+cD
 ai
 ai
 ai
@@ -37814,11 +37981,11 @@ ai
 ai
 ai
 ai
+aJ
 ai
-ai
-ai
+aw
 Zo
-ai
+cD
 ai
 ai
 ai
@@ -37860,15 +38027,16 @@ ai
 ai
 ai
 ai
-ai
-Zo
+am
 GB
-ai
+GB
+cS
 aQ
 QJ
-ai
+bl
 aQ
 QJ
+cD
 ai
 ai
 ai
@@ -37876,10 +38044,9 @@ ai
 ai
 ai
 ai
-ai
-ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -38068,14 +38235,14 @@ ai
 ai
 ai
 ai
+aJ
 ai
-ai
-ai
+aw
 Zo
-ai
+am
 Zo
 Zo
-ai
+cD
 ai
 ai
 ai
@@ -38117,15 +38284,16 @@ ai
 ai
 ai
 ai
-ai
-Zo
-Zo
-ai
+am
+GB
+GB
+cS
 aQ
 QJ
-ai
+bl
 aQ
 QJ
+cD
 ai
 ai
 ai
@@ -38133,10 +38301,9 @@ ai
 ai
 ai
 ai
-ai
-ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -38324,15 +38491,15 @@ ai
 ai
 ai
 ai
-ai
+aw
 Zo
-ai
+bl
 Zo
 Zo
-ai
+am
 Zo
 GB
-ai
+cD
 ai
 ai
 ai
@@ -38374,15 +38541,16 @@ ai
 ai
 ai
 ai
-ai
-Zo
-Zo
-ai
-Zo
+am
 GB
-ai
-Zo
 GB
+cS
+GB
+GB
+bl
+GB
+GB
+cD
 ai
 ai
 ai
@@ -38390,10 +38558,9 @@ ai
 ai
 ai
 ai
-ai
-ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -38580,16 +38747,16 @@ ai
 ai
 ai
 ai
-ai
+am
 Zo
 Zo
-ai
+bl
 Zo
 GB
-ai
+am
 aQ
 ue
-ai
+cD
 ai
 ai
 ai
@@ -38632,25 +38799,25 @@ ai
 ai
 ai
 ai
-ai
-Zo
-ai
-Zo
-Zo
-ai
-Zo
-Zo
-ai
-ai
-ai
+bg
+GB
+cS
+GB
+GB
+bl
+GB
+GB
+cD
 ai
 ai
 ai
 ai
 ai
 ai
+ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -38837,16 +39004,16 @@ ai
 ai
 ai
 ai
-ai
+am
 Zo
 Zo
-ai
+bl
 aQ
 ue
-ai
+am
 aQ
 ue
-ai
+cD
 ai
 ai
 ai
@@ -38890,24 +39057,24 @@ ai
 ai
 ai
 ai
+aW
 ai
-ai
-ai
-Zo
-ai
-Zo
-Zo
-ai
-ai
-ai
-ai
-ai
+bg
+GB
+bl
+GB
+GB
+cD
 ai
 ai
 ai
 ai
+ai
+ai
+ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -39094,32 +39261,46 @@ ai
 ai
 ai
 ai
-ai
+am
 Zo
 GB
-ai
-aQ
-ue
-ai
-aQ
-ue
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
 bl
+aQ
+ue
+am
+aQ
+ue
+cD
+ai
+ai
+ai
+ai
+ai
+ai
+ai
+ai
+ai
+ai
+ai
+cN
 bq
 bA
 bq
-bl
+cQ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
 ai
 ai
 ai
@@ -39136,6 +39317,11 @@ ai
 ai
 ai
 ai
+aW
+ai
+bg
+GB
+cD
 ai
 ai
 ai
@@ -39143,28 +39329,9 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-Zo
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -39351,15 +39518,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 ue
-ai
+bl
 aQ
 ue
-ai
+am
 aQ
 ue
+cD
 ai
 ai
 ai
@@ -39371,8 +39539,7 @@ ai
 ai
 ai
 ai
-ai
-ai
+am
 aD
 bG
 bk
@@ -39390,7 +39557,27 @@ bk
 bk
 bk
 bk
-aD
+cY
+cR
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aW
 ai
 ai
 ai
@@ -39399,29 +39586,9 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+am
 bM
-ai
+cD
 ai
 ai
 ai
@@ -39608,16 +39775,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 ue
-ai
+bl
 aQ
 rf
-ai
+am
 aQ
 ue
-ai
+cD
 ai
 eK
 eK
@@ -39630,23 +39797,23 @@ ai
 ai
 ai
 ai
-ai
+aE
 bM
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+cP
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aE
 ch
 bk
 bk
@@ -39667,18 +39834,18 @@ bk
 bk
 bk
 cj
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+cR
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aJ
+aw
 bM
-ai
+cD
 ai
 ai
 ai
@@ -39865,30 +40032,31 @@ ai
 ai
 ai
 ai
-ai
+aw
 aQ
 ue
-ai
+cy
 aQ
 ue
-ai
-aQ
-ue
-ai
 am
+aQ
+ue
+cE
+cH
 eK
 eN
 fp
 fy
 gp
 eK
-bg
-ai
-ai
-ai
-ai
-ai
+cL
+aJ
+aJ
+aJ
+aJ
+cO
 bM
+cD
 ai
 ai
 ai
@@ -39903,26 +40071,25 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+bg
 ch
 bk
 bk
@@ -39935,7 +40102,7 @@ bk
 bk
 bk
 bV
-ai
+cD
 ai
 ai
 ai
@@ -40121,7 +40288,7 @@ ai
 ai
 ai
 ai
-ai
+am
 jf
 jA
 uC
@@ -40146,6 +40313,7 @@ bk
 bk
 bk
 bV
+cD
 ai
 ai
 ai
@@ -40179,19 +40347,18 @@ ai
 ai
 ai
 ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
-ai
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
+aW
 ai
 ai
 ai
@@ -40379,30 +40546,30 @@ ai
 ai
 ai
 ai
-ai
+bg
 aQ
 QJ
-ai
+cA
 aQ
 QJ
-ai
+aE
 aQ
 QJ
-ai
-am
+cG
+cI
 eK
 fg
 fv
 Cq
 dH
 eK
-bg
-ai
-ai
-ai
-ai
-ai
-ai
+cM
+aW
+aW
+aW
+aW
+aW
+aW
 ai
 ai
 ai
@@ -40636,16 +40803,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 QJ
-ai
+bl
 aQ
 QJ
-ai
+am
 aQ
 QJ
-ai
+cD
 ai
 eK
 eK
@@ -40893,16 +41060,16 @@ ai
 ai
 ai
 ai
-ai
+am
 aQ
 QJ
-ai
+bl
 aQ
 QJ
-ai
+am
 aQ
 QJ
-ai
+cD
 ai
 ai
 ai
@@ -41150,16 +41317,16 @@ ai
 ai
 ai
 ai
-ai
+am
 Zo
 GB
-ai
+bl
 aQ
 QJ
-ai
+am
 aQ
 QJ
-ai
+cD
 ai
 ai
 ai
@@ -41407,16 +41574,16 @@ ai
 ai
 ai
 ai
-ai
+am
 Zo
 Zo
-ai
+bl
 aQ
 QJ
-ai
+am
 aQ
 QJ
-ai
+cD
 ai
 ai
 ai
@@ -41665,15 +41832,15 @@ ai
 ai
 ai
 ai
-ai
+bg
 Zo
-ai
-Zo
-GB
-ai
+bl
 Zo
 GB
-ai
+am
+Zo
+GB
+cD
 ai
 ai
 ai
@@ -41923,14 +42090,14 @@ ai
 ai
 ai
 ai
-ai
-ai
+aW
+am
 Zo
 Zo
-ai
+am
 Zo
 Zo
-ai
+cD
 ai
 ai
 ai
@@ -42182,12 +42349,12 @@ ai
 ai
 ai
 ai
-ai
+aE
 Zo
 ai
-ai
+aE
 Zo
-ai
+cD
 ai
 ai
 ai
@@ -42440,10 +42607,10 @@ ai
 ai
 ai
 ai
+aW
 ai
 ai
-ai
-ai
+aW
 ai
 ai
 ai

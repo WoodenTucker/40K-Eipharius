@@ -1,4 +1,9 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/item/stack/thrones2/five,
+/mob/living/simple_animal/hostile/scarybat,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "ab" = (
 /obj/effect/landmark/animal/rnghostilespawner,
 /turf/simulated/floor/stone,
@@ -60,6 +65,23 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"al" = (
+/obj/effect/floor_decal/turf/splate,
+/obj/machinery/recharge_station{
+	name = "servitor recharging station"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/hallway/western)
+"am" = (
+/obj/structure/sign/imperial{
+	desc = "Golden eagle of Holy Aquila, symbolizing His holy gaze upon this place.";
+	icon_state = "imperials";
+	name = "Armory"
+	},
+/turf/simulated/wall/ancient{
+	color = null
+	},
+/area/cadiaoutpost/oa/security)
 "an" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -71,10 +93,10 @@
 /area/cadiaoutpost/oa/security)
 "ao" = (
 /obj/machinery/firealarm{
-	pixel_y = 30
+	pixel_y = -30
 	},
-/turf/simulated/wall/ancient{
-	color = null
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
 "ap" = (
@@ -225,6 +247,17 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"aK" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/carpetn00,
+/mob/living/simple_animal/lizard{
+	desc = "A holy lizard named Luciah. For when the abbot has to stroke their lizard and contemplate the God Emperor's teachings.";
+	faction = "IMPERIUM";
+	mob_size = 4;
+	name = "Luciah"
+	},
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "aL" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/structure/bed/chair/wood{
@@ -383,11 +416,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"bd" = (
-/mob/living/simple_animal/hostile/scarybat,
-/obj/item/stack/thrones2/five,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "be" = (
 /obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/stone,
@@ -523,12 +551,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"bx" = (
-/obj/item/fireplacebl/r{
-	randpixel = 0
-	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/magistratumpost)
 "by" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -626,12 +648,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"bM" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/service/bar)
 "bN" = (
 /obj/structure/table/rack,
 /obj/item/shield/riot,
@@ -1882,17 +1898,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/west)
-"eP" = (
-/obj/effect/floor_decal/turf/brick,
-/mob/living/simple_animal/lizard{
-	desc = "A holy lizard named Luciah. For when the abbot has to stroke their lizard and contemplate the God Emperor's teachings.";
-	faction = "IMPERIUM";
-	mob_size = 4;
-	name = "Luciah"
-	},
-/obj/effect/floor_decal/turf/carpetn00,
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/service/chapel)
 "eQ" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/steel,
@@ -2120,17 +2125,6 @@
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/cryopod/robot{
 	name = "servitor storage unit"
-	},
-/obj/machinery/light/small/red{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/western)
-"ft" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/machinery/recharge_station{
-	name = "servitor recharging station"
 	},
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -2836,8 +2830,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "hp" = (
-/obj/item/fireplacebl{
-	randpixel = 0
+/obj/structure/fireplacebl,
+/obj/structure/fireplacebl/l{
+	pixel_y = 32
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -6765,18 +6760,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
-"vb" = (
-/obj/machinery/door/airlock/glass_external{
-	color = null;
-	name = "Exterior Access"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/hallway/centralhall)
 "vc" = (
 /obj/structure/closet/crate/bin,
 /turf/simulated/floor/tiled{
@@ -7141,9 +7124,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "xT" = (
-/obj/item/fireplacebl/br{
-	randpixel = 0
+/obj/structure/fireplacebl/r{
+	pixel_y = 32
 	},
+/obj/structure/fireplacebl/br,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -7754,12 +7738,6 @@
 /obj/effect/decal/dead/two,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"Cq" = (
-/obj/structure/sign/inkvd,
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/security)
 "Ct" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -8518,12 +8496,6 @@
 /obj/item/flame/lighter/random,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"JS" = (
-/obj/item/fireplacebl/l{
-	randpixel = 0
-	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/magistratumpost)
 "JU" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/reagent_dispensers/fueltank,
@@ -8564,10 +8536,10 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "Kf" = (
-/obj/machinery/suit_cycler,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
+/turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
 "Ki" = (
 /obj/structure/bed/chair/wood{
@@ -10538,7 +10510,7 @@
 "Yt" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -30672,7 +30644,7 @@ dJ
 eg
 dD
 em
-eP
+aK
 aY
 dV
 bu
@@ -32793,7 +32765,7 @@ Ph
 hb
 hm
 sn
-JS
+IK
 hp
 bo
 UU
@@ -33050,7 +33022,7 @@ IK
 IK
 IK
 IK
-bx
+IK
 xT
 bo
 WF
@@ -33263,8 +33235,8 @@ bu
 bu
 hN
 aY
-ro
 EV
+ro
 ro
 ro
 ro
@@ -33453,7 +33425,7 @@ ro
 ph
 ro
 ro
-Cq
+am
 Ot
 MR
 hR
@@ -33725,8 +33697,8 @@ MR
 MR
 MR
 MR
-MR
 ao
+pZ
 MR
 MR
 pZ
@@ -33967,7 +33939,7 @@ NN
 NN
 NN
 NN
-Cq
+am
 Ot
 MR
 hR
@@ -36026,7 +35998,7 @@ Es
 Es
 Ap
 pZ
-dn
+hR
 MR
 MR
 pZ
@@ -37791,7 +37763,7 @@ xE
 xE
 xE
 xE
-bd
+aa
 ae
 ae
 xE
@@ -38590,7 +38562,7 @@ En
 En
 wb
 En
-ft
+fh
 LX
 LX
 LX
@@ -38847,7 +38819,7 @@ ck
 gQ
 SA
 En
-En
+al
 fI
 LX
 LX
@@ -39103,7 +39075,7 @@ bH
 ek
 yn
 LX
-LX
+En
 En
 En
 En
@@ -41419,7 +41391,7 @@ cA
 cA
 cA
 wj
-jY
+cU
 cU
 cU
 cU
@@ -41675,9 +41647,9 @@ ro
 ro
 rR
 cA
-vb
-cA
-cA
+pA
+jY
+cU
 cU
 cU
 cU
@@ -41931,9 +41903,9 @@ ro
 ro
 ro
 ro
-ro
-ro
-ro
+cA
+cA
+cA
 cA
 cP
 ap
@@ -42191,7 +42163,7 @@ ro
 ro
 ro
 ro
-cA
+ro
 cP
 pp
 bU
@@ -44754,10 +44726,10 @@ ro
 yM
 SW
 DB
-bM
-Kf
-Kf
-bM
+ro
+ro
+ro
+ro
 ro
 ro
 IZ
@@ -47333,7 +47305,7 @@ Xg
 Nc
 TF
 XL
-Ss
+ro
 ro
 hG
 Kn
@@ -48352,7 +48324,7 @@ ro
 ro
 ro
 ro
-ro
+Kf
 ro
 ro
 ro
