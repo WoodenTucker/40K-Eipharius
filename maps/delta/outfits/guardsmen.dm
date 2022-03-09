@@ -1,3 +1,6 @@
+/*All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
+Begin Warhammer loadouts
+*/
 
 /decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Cadian Guardsman")
@@ -36,10 +39,7 @@
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
-	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
-	suit_store = /obj/item/gun/energy/las/lasgun/luscius
-	backpack_contents = list(
+	suit_store = list(/obj/item/gun/energy/las/lasgun/luscius,
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
@@ -52,46 +52,18 @@
 	name = OUTFIT_JOB_NAME("Catachan Fighter")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/CatachanVest
-	back = /obj/item/storage/backpack/satchel/warfare
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/catachan
 	mask = null
-	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1,
-	/obj/item/material/sword/combat_knife/catachan = 1
-	)
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
 	name = OUTFIT_JOB_NAME("Valhallan Guardsman")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = null
-	belt = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/lasgun
-	r_hand = /obj/item/gun/projectile/automatic/machinepistol
-	l_pocket = /obj/item/storage/box/ifak
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
-	)
 
 /// Sergeant
 
@@ -107,15 +79,20 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
-	suit_store = /obj/item/gun/energy/las/lasgun/rare
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/automatic/stubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(/
-	/obj/item/cell/lasgun = 2,
+	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/sergeant/krieg
 	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
@@ -124,72 +101,35 @@
 	back = /obj/item/storage/backpack/satchel/krieger
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	belt = /obj/item/melee/mercycs
-	glasses = null
-	l_hand = /obj/item/grenade/frag/high_yield/krak
-	r_hand = /obj/item/gun/launcher/rcl_rifle
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
-	l_pocket = /obj/item/storage/box/ifak
-	suit_store = /obj/item/gun/energy/las/lasgun/luscius/rare
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1,
-	/obj/item/ammo_casing/heat_shell = 2
-	)
-
-/decl/hierarchy/outfit/job/sergeant/catachan
-	name = OUTFIT_JOB_NAME("Catachan Sergeant")
-	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/CatachanVest
-	back = /obj/item/storage/backpack/satchel/warfare
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/catachan
-	belt = null
-	mask = null
-	glasses = null
-	r_hand = /obj/item/melee/mercycs
-	l_hand = /obj/item/gun/energy/las/laspistol/heavy
-	l_pocket = /obj/item/storage/box/ifak
-	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1,
-	/obj/item/material/sword/combat_knife/catachan = 1,
-	/obj/item/beartrap = 1
-	)
-
-/decl/hierarchy/outfit/job/sergeant/valhallan
-	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
-	uniform = /obj/item/clothing/under/rank/valhallan_uniform
-	suit = /obj/item/clothing/suit/armor/valhallasgt
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots
-	head = /obj/item/clothing/head/valushanka
-	mask = null
-	glasses = null
-	belt = /obj/item/melee/mercycs
-	suit_store = /obj/item/gun/energy/las/lasgun
-	l_pocket = /obj/item/storage/box/ifak
-	r_hand = /obj/item/gun/projectile/automatic/autogrim
-	backpack_contents = list(
-	/obj/item/ammo_magazine/autogrim = 2,
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel = 1
+	)
+
+/decl/hierarchy/outfit/job/sergeant/catachan
+	name = OUTFIT_JOB_NAME("Catachan Sergeant")
+	uniform = /obj/item/clothing/under/casual_pants/catachan
+	suit = /obj/item/clothing/suit/armor/catachansgt
+	head = /obj/item/clothing/head/catachan
+	mask = null
+	glasses = null
+
+/decl/hierarchy/outfit/job/sergeant/valhallan
+	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
+	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
+	suit = /obj/item/clothing/suit/armor/valhallasgt
+	head = /obj/item/clothing/head/valushanka
+	mask = null
+	glasses = null
+
 /// Enforcer
-/*
+
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
 	uniform = /obj/item/clothing/under/color/brown
@@ -213,7 +153,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
 	)
 
 	pda_slot = null
@@ -244,12 +184,12 @@
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
 	)
 
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-//template
+
 /decl/hierarchy/outfit/job/ig/commissar/krieg
 	name = OUTFIT_JOB_NAME("Commissar")
 	uniform =  /obj/item/clothing/under/rank/krieg_uniform/commissar
@@ -267,4 +207,3 @@
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null
 	glasses = null
-*/
