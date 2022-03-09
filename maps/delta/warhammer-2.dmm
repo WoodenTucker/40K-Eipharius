@@ -551,12 +551,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"bx" = (
-/obj/item/fireplacebl/r{
-	randpixel = 0
-	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/magistratumpost)
 "by" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -654,12 +648,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"bM" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/service/bar)
 "bN" = (
 /obj/structure/table/rack,
 /obj/item/shield/riot,
@@ -2842,8 +2830,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "hp" = (
-/obj/item/fireplacebl{
-	randpixel = 0
+/obj/structure/fireplacebl,
+/obj/structure/fireplacebl/l{
+	pixel_y = 32
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -7135,9 +7124,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "xT" = (
-/obj/item/fireplacebl/br{
-	randpixel = 0
+/obj/structure/fireplacebl/r{
+	pixel_y = 32
 	},
+/obj/structure/fireplacebl/br,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -8506,12 +8496,6 @@
 /obj/item/flame/lighter/random,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"JS" = (
-/obj/item/fireplacebl/l{
-	randpixel = 0
-	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/oa/magistratumpost)
 "JU" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/reagent_dispensers/fueltank,
@@ -8552,10 +8536,10 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "Kf" = (
-/obj/machinery/suit_cycler,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
+/turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
 "Ki" = (
 /obj/structure/bed/chair/wood{
@@ -10526,7 +10510,7 @@
 "Yt" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
-	dir = 4
+	dir = 8
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -32781,7 +32765,7 @@ Ph
 hb
 hm
 sn
-JS
+IK
 hp
 bo
 UU
@@ -33038,7 +33022,7 @@ IK
 IK
 IK
 IK
-bx
+IK
 xT
 bo
 WF
@@ -44742,10 +44726,10 @@ ro
 yM
 SW
 DB
-bM
-Kf
-Kf
-bM
+ro
+ro
+ro
+ro
 ro
 ro
 IZ
@@ -47321,7 +47305,7 @@ Xg
 Nc
 TF
 XL
-Ss
+ro
 ro
 hG
 Kn
@@ -48340,7 +48324,7 @@ ro
 ro
 ro
 ro
-ro
+Kf
 ro
 ro
 ro
