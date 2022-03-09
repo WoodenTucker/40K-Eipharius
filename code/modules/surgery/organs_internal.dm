@@ -27,9 +27,9 @@
 //////////////////////////////////////////////////////////////////
 /datum/surgery_step/internal/fix_organ
 	allowed_tools = list(
-	/obj/item/stack/medical/advanced/bruise_pack= 100,		\
-	/obj/item/FixOVein/suture = 70 \
-	/obj/item/stack/medical/bruise_pack = 40,	\
+	/obj/item/stack/medical/advanced/bruise_pack = 100, \
+	/obj/item/suture = 70, \
+	/obj/item/stack/medical/bruise_pack = 40, \
 	/obj/item/tape_roll = 20 \
 	)
 
@@ -123,11 +123,11 @@
 /datum/surgery_step/internal/detatch_organ
 
 	allowed_tools = list(
-	/obj/item/scalpel = 100,		\
-	/obj/item/material/knife = 75,	\
-	/obj/item/material/sword/combat_knife = 80\
-	/obj/item/material/kitchen/utensil/knife = 75,	\
-	/obj/item/material/shard = 50, 		\
+	/obj/item/scalpel = 100, \
+	/obj/item/material/knife = 75, \
+	/obj/item/material/sword/combat_knife = 80, \
+	/obj/item/material/kitchen/utensil/knife = 75, \
+	/obj/item/material/shard = 50 \
 	)
 
 	min_duration = 90
@@ -344,9 +344,9 @@
 /datum/surgery_step/internal/attach_organ
 	allowed_tools = list(
 	/obj/item/FixOVein = 100,	\
-	/obj/item/stack/cable_coil = 75,	\
-	/obj/item/FixOVein/suture = 20 \
-	/obj/item/tape_roll = 50
+	/obj/item/stack/cable_coil = 75, \
+	/obj/item/tape_roll = 50, \
+	/obj/item/suture = 65 \
 	)
 
 	min_duration = 100

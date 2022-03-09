@@ -30,7 +30,7 @@
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
-		H.add_skills(rand(13),rand(13),5,5,5)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(13),rand(13),5,5,5) //melee, ranged, med, eng, surgery
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -74,7 +74,7 @@
 		return
 	var/mob/living/carbon/human/U = src
 	src.verbs -= /mob/living/carbon/human/proc/chapterselection
-	var/static/list/chapter = list("Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary", "Ultramarines", "Ultramarines techmarine", "Ultramarines Apothecary", "Salamanders","Blood Angels", "Salamanders Techmarine", "Salamanders Apothecary") //lists all possible chapters
+	var/static/list/chapter = list("Blood Angels", "Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary",  "Salamanders", "Salamanders Techmarine", "Salamanders Apothecary", "Ultramarines", "Ultramarines techmarine", "Ultramarines Apothecary") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter and role", "Available chapters") as anything in chapter
 
 	switch(chapterchoice)

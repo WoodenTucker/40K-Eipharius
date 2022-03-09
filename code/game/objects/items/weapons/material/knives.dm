@@ -45,23 +45,6 @@
 	update_force()
 	add_fingerprint(user)
 
-/*
- * Kitchen knives
- */
-/obj/item/material/knife
-	name = "kitchen knife"
-	icon = 'icons/obj/kitchen.dmi'
-	icon_state = "knife"
-	desc = "A general purpose Chef's Knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come."
-	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	sharp = 1
-	edge = 1
-	force_divisor = 0.15 // 9 when wielded with hardness 60 (steel)
-	matter = list(DEFAULT_WALL_MATERIAL = 12000)
-	origin_tech = list(TECH_MATERIAL = 1)
-	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	unbreakable = 1
-
 /obj/item/material/knife/hook
 	name = "meat hook"
 	desc = "A sharp, metal hook what sticks into things."
