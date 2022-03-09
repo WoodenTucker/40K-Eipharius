@@ -130,7 +130,6 @@
 		/obj/item/material/hatchet/tacknife,
 		/obj/item/material/kitchen/utensil/knife,
 		/obj/item/material/knife,
-		/obj/item/material/star,
 		/obj/item/rcd_ammo,
 		/obj/item/reagent_containers/syringe,
 		/obj/item/reagent_containers/hypospray,

@@ -346,9 +346,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(16,18))
 		H.add_skills(rand(3,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue
-			access_chemistry, access_virology, access_surgery,
-			access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_equipped_item(slot_s_store)
