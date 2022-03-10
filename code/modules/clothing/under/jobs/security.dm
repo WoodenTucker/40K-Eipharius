@@ -41,6 +41,22 @@
 	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 
+/obj/item/clothing/under/rank/head_of_security/jensen
+	name = "commissar's jumpsuit"
+	desc = "You never asked for anything that stylish."
+	icon_state = "jensen"
+	item_state = "jensen"
+	worn_state = "jensen"
+	siemens_coefficient = 0.6
+
+/obj/item/clothing/suit/armor/hos/jensen
+	name = "commissar's trenchcoat"
+	desc = "A trenchcoat augmented with plates of flak armour for some protection and style."
+	icon_state = "hostrench"
+	item_state = "hostrench"
+	flags_inv = 0
+	siemens_coefficient = 0.6
+
 /obj/item/clothing/under/rank/security/corp
 	icon_state = "sec_corporate"
 	//item_state = "sec_corporate"
@@ -104,74 +120,12 @@
 	icon_state = "detective2"
 	desc = "A grey fedora - either the cornerstone of a detective's style or a poor attempt at looking cool, depending on the person wearing it."
 
-/obj/item/clothing/under/rank/head_of_security
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Commissar\". It has additional armor to protect the wearer."
-	name = "Commissar's jumpsuit"
-	icon_state = "hos"
-	item_state = "r_suit"
-	worn_state = "hosred"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
-	siemens_coefficient = 0.8
-
-/obj/item/clothing/under/rank/head_of_security/corp
-	icon_state = "hos_corporate"
-	//item_state = "hos_corporate"
-	worn_state = "hos_corporate"
-
-/obj/item/clothing/head/HoS
-	name = "Commissar Hat"
-	desc = "The hat of the Commissar. For showing the officers who's in charge."
-	icon_state = "hoscap"
-	body_parts_covered = 0
-	siemens_coefficient = 0.8
-
-/obj/item/clothing/head/HoS/dermal
-	name = "Dermal Armour Patch"
-	desc = "You're not quite sure how you manage to take it on and off, but it implants nicely in your head."
-	icon_state = "dermal"
-	armor = list(melee = 50, bullet = 50, laser = 50,energy = 25, bomb = 30, bio = 0, rad = 0)
-	siemens_coefficient = 0.6
-
-/obj/item/clothing/suit/armor/hos
-	name = "armored coat"
-	desc = "A greatcoat enhanced with a special alloy for some protection and style."
-	icon_state = "hos"
-	item_state = "hos"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	armor = list(melee = 65, bullet = 30, laser = 50, energy = 10, bomb = 25, bio = 0, rad = 0)
-	flags_inv = HIDEJUMPSUIT
-	siemens_coefficient = 0.6
-
-//Jensen cosplay gear
-/obj/item/clothing/under/rank/head_of_security/jensen
-	desc = "You never asked for anything that stylish."
-	name = "Commissar's jumpsuit"
-	icon_state = "jensen"
-	item_state = "jensen"
-	worn_state = "jensen"
-	siemens_coefficient = 0.6
-
-/obj/item/clothing/suit/armor/hos/jensen
-	name = "armored trenchcoat"
-	desc = "A trenchcoat augmented with a special alloy for some protection and style."
-	icon_state = "hostrench"
-	item_state = "hostrench"
-	flags_inv = 0
-	siemens_coefficient = 0.6
-
 /obj/item/clothing/under/rank/security/navyblue
 	name = "security officer's uniform"
 	desc = "The latest in fashionable security outfits."
 	icon_state = "officerblueclothes"
 	item_state = "ba_suit"
 	worn_state = "officerblueclothes"
-
-/obj/item/clothing/under/rank/head_of_security/navyblue
-	desc = "The insignia on this uniform tells you that this uniform belongs to the Head Of Security."
-	name = "Commissar's uniform"
-	icon_state = "hosblueclothes"
-	item_state = "ba_suit"
-	worn_state = "hosblueclothes"
 
 /obj/item/clothing/under/rank/warden/navyblue
 	desc = "The insignia on this uniform tells you that this uniform belongs to the Warden."
@@ -217,29 +171,29 @@
 
 /obj/item/clothing/under/casual_pants/catachan
 	name = "Catachan Battle Shorts"
-	desc = "Catachan fear no temperature, no boltguns, no lasguns, they don't need shirts, They're Catachan Regiment."
+	desc = "Catachan fear no heat, no boltguns, no lasguns. They don't need shirts, They're Catachan Jungle Hunters."
 	icon_state = "camopants"
-	cold_protection = LOWER_TORSO
+	cold_protection = LOWER_TORSO | LEGS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/krieg_uniform/commissar
-	name = "commissar Dress Uniform"
+	name = "commissar's Dress Uniform"
 	desc = "More standard uniform of the Commissars of the Officio Prefectus, just with some Krieg emblems on them in an attempt to similate."
 	icon_state = "kriegissar"
 	item_state = "kriegissar"
 	worn_state = "kriegissar"
 
 /obj/item/clothing/under/rank/catachancommissar
-	name = "commissar Field Pants"
+	name = "commissar's Field Pants"
 	desc = "What used to be green tailoring of the uniform given by the Officio Prefectus has been cut down and stripped to be the bare essentials, just like that of the Catachans under you. Around your neck being an emblematic symbol of the Emperor as a necklace."
 	icon_state = "catacomm"
 	item_state = "catacomm"
 	worn_state = "catacomm"
 
-// Astarte
+// Astartes
 
-/obj/item/clothing/under/astarte/bodysuit
-	name = "Astarte Bodysuit"
+/obj/item/clothing/under/astartes/bodysuit
+	name = "Astartes Bodysuit"
 	desc = "The bodysuit worn by Astartes underneath their Power Armour."
 	icon_state = "swatunder"
 	worn_state = "swatunder"

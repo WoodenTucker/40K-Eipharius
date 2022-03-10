@@ -416,6 +416,19 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"bd" = (
+/obj/structure/table/rack,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/obj/item/crowbar,
+/obj/random/loot/randomsupply,
+/obj/random/loot/randomsupply,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "be" = (
 /obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/stone,
@@ -5789,19 +5802,6 @@
 	color = "grey"
 	},
 /turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
-"oK" = (
-/obj/structure/table/rack,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/obj/item/crowbar,
-/obj/item/device/radio/headset/red_team/voxcaster,
-/obj/item/device/radio/headset/red_team/voxcaster,
-/turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
@@ -33772,7 +33772,7 @@ kf
 rf
 ox
 zE
-oK
+bd
 mx
 oP
 oq

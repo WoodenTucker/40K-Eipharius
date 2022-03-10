@@ -109,7 +109,7 @@ proc/drop_mortar(turf/dropped, mortar)
 		if(mortar == "bflare")
 			new /obj/mortar/flare/blue(dropped_turf)
 			return
-		explosion(dropped_turf, 1, 1, 1, 1)
+		explosion(dropped_turf, 0, 0, 1, 1)
 		if(mortar == "shrapnel")
 			new /obj/mortar/frag(dropped_turf)
 		if(mortar == "gas")

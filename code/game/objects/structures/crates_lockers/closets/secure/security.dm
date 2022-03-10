@@ -87,31 +87,11 @@
 
 /obj/structure/closet/secure_closet/hos/WillContain()
 	return list(
-		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/satchel_sec)),
-		/obj/item/clothing/head/HoS,
-		///obj/item/clothing/head/helmet/nt,
-		///obj/item/clothing/suit/armor/vest/nt,
-		///obj/item/clothing/suit/storage/vest/nt/hos,
-		/obj/item/clothing/under/rank/head_of_security/jensen,
-		/obj/item/clothing/under/rank/head_of_security/corp,
-		/obj/item/clothing/suit/armor/hos/jensen,
-		/obj/item/clothing/suit/armor/hos,
-		///obj/item/clothing/head/HoS/dermal,
-		///obj/item/cartridge/hos,
-		/obj/item/device/radio/headset/heads/hos,
 		/obj/item/clothing/glasses/sunglasses,
-		///obj/item/taperoll/police,
 		/obj/item/shield/riot,
-		/obj/item/storage/box/flashbangs,
-		/obj/item/storage/belt/security,
 		/obj/item/device/flash,
-		/obj/item/material/sword,//Broadsword, the most powerful melee weapon a HoS could ask for.
-		/obj/item/melee/classic_baton,///obj/item/melee/baton/loaded,
-		///obj/item/gun/energy/gun,
-		///obj/item/clothing/accessory/holster/waist,
+		/obj/item/material/sword,
 		/obj/item/melee/telebaton,
-		/obj/item/clothing/head/beret/sec/corporate/hos,
-		/obj/item/device/holowarrant
 	)
 
 /obj/structure/closet/secure_closet/warden
@@ -125,27 +105,8 @@
 
 /obj/structure/closet/secure_closet/warden/WillContain()
 	return list(
-		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/security, /obj/item/storage/backpack/satchel/satchel_sec)),
-		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/sec, 50),
-		///obj/item/clothing/head/helmet/nt,
-		///obj/item/clothing/suit/armor/vest/nt,
-		///obj/item/clothing/suit/storage/vest/nt/warden,
-		/obj/item/clothing/under/rank/warden,
-		/obj/item/clothing/under/rank/warden/corp,
-		/obj/item/clothing/head/warden,
-		/obj/item/cartridge/security,
-		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/taperoll/police,
-		/obj/item/storage/box/flashbangs,
-		/obj/item/storage/box/teargas,
-		/obj/item/storage/belt/security,
-		/obj/item/reagent_containers/spray/pepper,
-		/obj/item/melee/classic_baton,///obj/item/melee/baton/loaded,
-		///obj/item/gun/energy/gun,
-		/obj/item/storage/box/holobadge,
-		/obj/item/clothing/head/beret/sec/corporate/warden,
-		/obj/item/device/holowarrant
+		/obj/item/melee/telebaton,
 	)
 
 /obj/structure/closet/secure_closet/security
@@ -165,16 +126,10 @@
 		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/mask/gas/security,
 		/obj/item/clothing/mask/balaclava,
-		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/storage/belt/security,
 		/obj/item/device/flash,
-		/obj/item/reagent_containers/spray/pepper,
-		/obj/item/grenade/chem_grenade/teargas,
-		/obj/item/melee/classic_baton,///obj/item/melee/baton/loaded,
+		/obj/item/melee/classic_baton,
 		/obj/item/clothing/glasses/sunglasses,
-		/obj/item/taperoll/police,
-		///obj/item/device/hailer,
-		///obj/item/clothing/accessory/storage/black_vest,
 		/obj/item/clothing/head/soft/sec/corp,
 		/obj/item/clothing/under/rank/security/corp,
 		/obj/item/gun/energy/taser
