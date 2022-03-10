@@ -40,8 +40,7 @@
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
-		H.verbs += /mob/living/carbon/human/proc/chapterselection
-		H.adjustStaminaLoss(-INFINITY) //astardes have basically infinite fight in them
+		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
@@ -56,11 +55,11 @@
 	backpack_contents = null //for now
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(src)
+		H.chapterselection()
 
 /mob/living/carbon/human/proc/chapterselection()
 	set name = "Select your chapter"
@@ -73,7 +72,6 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	src.verbs -= /mob/living/carbon/human/proc/chapterselection
 	var/static/list/chapter = list("Blood Angels", "Blood Angels Techmarine", "Blood Angels Apothecary", "Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary",  "Salamanders", "Salamanders Techmarine", "Salamanders Apothecary", "Ultramarines", "Ultramarines Techmarine", "Ultramarines Apothecary") //lists all possible chapters
 	var/chapterchoice = input("Choose your chapter and role", "Available chapters") as anything in chapter
 
@@ -307,4 +305,3 @@
 			U.add_skills(13, 13, 9, 1, 10)
 			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
 			)
-
