@@ -426,7 +426,6 @@ datum/objective/nuclear
 		//"a research director's jumpsuit" = /obj/item/clothing/under/rank/research_director,
 		//"a Magos's jumpsuit" = /obj/item/clothing/under/rank/chief_engineer,
 		//"a Sister Hospitaller's jumpsuit" = /obj/item/clothing/under/rank/chief_medical_officer,
-		"the headpeackeepers's uniform" = /obj/item/clothing/under/rank/head_of_security,
 		"the overseers's uniform" = /obj/item/clothing/under/rank/head_of_personnel,
 		"the hypospray" = /obj/item/reagent_containers/hypospray,
 		"the magistrate's pinpointer" = /obj/item/pinpointer,

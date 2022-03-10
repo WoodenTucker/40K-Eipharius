@@ -527,7 +527,7 @@
 
 // SPESS MUHREEN STUFF
 
-/obj/item/clothing/glasses/astarte/visor
+/obj/item/clothing/glasses/astartes/visor
 	name = "Mark VII Visor"
 	desc = "The support system of Astartes helmet."
 	str_requirement = 25
@@ -538,7 +538,7 @@
 	body_parts_covered = EYES
 	siemens_coefficient = 0.9
 
-/obj/item/clothing/glasses/astarte/visor/apoc
+/obj/item/clothing/glasses/astartes/visor/apoth
 	name = "Mark VII Apothecary Visor"
 	desc = "The support system of Astartes helmet. This one has intergrated medical scanner."
 	hud = /obj/item/clothing/glasses/hud/health

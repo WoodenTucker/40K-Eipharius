@@ -127,6 +127,7 @@
 	desc = "da stompas"
 	icon_state = "ork_boots"
 	item_state = "ork_boots"
+	species_restricted = list(SPECIES_ORK)
 
 // Astra Militarum Stuff
 
@@ -149,15 +150,15 @@
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/shoes/commissar
-	name = "boots of the commissar"
-	desc = "Knee high riding boots of an officer of the Officio Prefectus."
+	name = "commissar boots"
+	desc = "Knee-high riding boots of an officer of the Officio Prefectus."
 	icon_state = "comm_boots"
 	item_state = "comm_boots"
-	species_restricted = null
+	species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_ELDAR)
 
 // Astartes Stuff
 
-/obj/item/clothing/shoes/astarte/boots
+/obj/item/clothing/shoes/astartes/boots
 	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine."
 	icon_state = "rg_lib"
@@ -171,11 +172,11 @@
 	var/obj/item/material/sword/combat_knife/knife = null
 	species_restricted = list(SPECIES_ASTARTES)
 
-/obj/item/clothing/shoes/astarte/boots/New()
+/obj/item/clothing/shoes/astartes/boots/New()
 	..()
 	knife = new
 	update_icon()
-/obj/item/clothing/shoes/astarte/boots/attackby(obj/item/I, mob/user)
+/obj/item/clothing/shoes/astartes/boots/attackby(obj/item/I, mob/user)
 	. = ..()
 	if(istype(I, /obj/item/material/sword/combat_knife))
 		if(knife)//We've already got a knife in there, no need for another.
@@ -185,32 +186,32 @@
 		knife = I
 		update_icon()
 		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
-/obj/item/clothing/shoes/astarte/boots/attack_hand(mob/living/user)
+/obj/item/clothing/shoes/astartes/boots/attack_hand(mob/living/user)
 	if(knife)
 		user.put_in_active_hand(knife)
 		knife = null
 		update_icon()
 		return
 	..()
-/obj/item/clothing/shoes/astarte/boots/smurfs
+/obj/item/clothing/shoes/astartes/boots/smurfs
 	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 12th chapter, the Ultramarines."
 	icon_state = "umboots"
 	item_state = "umboots"
 
-/obj/item/clothing/shoes/astarte/boots/bloodangels
+/obj/item/clothing/shoes/astartes/boots/bloodangel
 	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 9th chapter, the Blood Angels."
-	icon_state = "brboots"
-	item_state = "brboots"
+	icon_state = "ba_boots"
+	item_state = "ba_boots"
 
-/obj/item/clothing/shoes/astarte/boots/sallys
+/obj/item/clothing/shoes/astartes/boots/sallys
 	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 18th chapter, the Salamanders."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
 
-/obj/item/clothing/shoes/astarte/boots/raven
+/obj/item/clothing/shoes/astartes/boots/raven
 	name = "Astartes Mark VII Combat Boots"
 	desc = "Boots of the Emperor's Space Marine, This one is painted in the colour scheme of the 19th chapter, the Raven Guard."
 	icon_state = "rg_lib"
@@ -222,7 +223,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 80)
 	canremove = 0
 	unacidable = 1
 
@@ -231,7 +232,7 @@
 	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 60)
 	siemens_coefficient = 1
 	can_hold_knife = 1
 

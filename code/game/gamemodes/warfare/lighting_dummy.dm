@@ -31,9 +31,9 @@ GLOBAL_LIST_EMPTY(lighting_dummies)
     light_range = 10
     light_color = COLOR_RED
 
-    Initialize()
-        . = ..()
-        QDEL_IN(src, 3 MINUTES)
+/obj/effect/lighting_dummy/flare/Initialize()
+	. = ..()
+	QDEL_IN(src, 3 MINUTES)
 
 /obj/effect/lighting_dummy/flare/blue
     icon_state = "blueFlare"

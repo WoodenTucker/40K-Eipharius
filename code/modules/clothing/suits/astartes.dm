@@ -63,7 +63,7 @@
 
 // SPESS MUHREEN SPERM MAN
 
-/obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
+/obj/item/clothing/suit/armor/astartes/apothecary/bloodangel
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Sanguinary Priest of the IXth Chapter, Blood Angels."
 	icon_state = "bangapoth"

@@ -181,7 +181,12 @@
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Guard force on this planet. The mission is all, maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
-
+		H.verbs -= list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch,
+		/mob/living/carbon/human/proc/regimentselection,)
 
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)

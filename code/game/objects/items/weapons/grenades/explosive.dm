@@ -111,7 +111,7 @@
 
 /obj/mortar/frag/New()
 	..()
-	explosion(src.loc,2.5,3.5,5.5,flame_range = 2.5)
+	explosion(src.loc,2,3,5,flame_range = 2)
 	fragmentate(get_turf(src), 72)
 	qdel(src)
 
@@ -130,6 +130,7 @@
 	S.set_up(reagents, 50, 0, location)
 	spawn(0)
 		S.start()
+	sleep(100)
 	qdel(src)
 
 /obj/mortar/smoke
@@ -138,8 +139,10 @@
 /obj/mortar/smoke/New()
 	..()
 	explosion(src.loc,0,0,1,flame_range = 0)
+	sleep(5)
 	playsound(src.loc, 'sound/effects/smoke.ogg', 50)
 	new /datum/effect/effect/system/smoke_spread
+	sleep(100)
 	qdel(src)
 
 /obj/mortar/fire
@@ -147,8 +150,11 @@
 
 /obj/mortar/fire/New()//Just spawns fire.
 	..()
-	explosion(src.loc,0,1.5,2.5,flame_range = 2.5)
-	new /obj/flamer_fire(loc, 12, 10, "red", 8)
+
+	var/turf/O = get_turf(src)
+	if(!O) return
+
+	new /obj/flamer_fire(loc, 30, 15, "red", 8)
 	qdel(src)
 
 /obj/mortar/flare
@@ -168,7 +174,7 @@ obj/mortar/flare/blue
 
 /obj/mortar/arty/New()
 	..()
-	explosion(src.loc,4.5,6.5,8.5,flame_range = 2.5)
+	explosion(src.loc,5,7,9,flame_range = 2.5)
 	fragmentate(get_turf(src), 84)
 	qdel(src)
 
@@ -222,7 +228,7 @@ obj/mortar/flare/blue
 	icon_state = "fire_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/weak=1)
 	explosion_size = 2
-	num_fragments = 0
+	num_fragments = 3
 	throw_speed = 1.5
 	throw_range = 8
 
