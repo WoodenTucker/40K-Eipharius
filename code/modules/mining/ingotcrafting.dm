@@ -449,7 +449,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Locke Pattern Bolt-Rifle",) //lists all possible crafting choices
+		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -461,6 +461,30 @@
 				src.whatwemaking = 1
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Locke Pattern Bolter)"
+			if("Blood Angels Baal Mark Vb Pattern Bolt-Rifle")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Blood Angels Baal Mark Vb Pattern Bolt Rifle.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 2
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Blood Angels Baal Mark Vb Pattern Bolter)"
+			if("Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Raven Guard Godwyn Mark Vb Pattern Bolt Rifle.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 3
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Raven Guard Godwyn Mark Vb Pattern Bolter)"
+			if("Salamanders Godwyn Mark Vb Pattern Bolt-Rifle")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Salamanders Godwyn Mark Vb Pattern Bolt Rifle.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 4
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Ultramarines Godwyn Mark Vb Pattern Bolter)"
+			if("Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Ultramarines Godwyn Mark Vb Pattern Bolt Rifle.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 5
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Ultramarines Godwyn Mark Vb Pattern Bolter)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -471,13 +495,40 @@
 			return
 
 		switch(whatwemaking)
-
 			if(1)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Locke Pattern Bolt Rifle! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Locke Pattern Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Locke Pattern Bolt Rifle)"
+					src.name = "Adamantium Ingot (Carved Locke Pattern Bolt-Rifle)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(2)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Blood Angels Baal Mark Vb Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Carved Baal Mark Vb Bolt-Rifle)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(3)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Raven Guard Godwyn Mark Vb Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Carved Raven Guard Godwyn Mark Vb Bolt-Rifle)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(4)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Salamanders Godwyn Mark Vb Pattern Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Carved Salamanders Godwyn Mark Vb Pattern Bolt-Rifle)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(5)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Carved Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -496,5 +547,29 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/lockebolter(user.loc)
+				qdel(src)
+				return
+			if(2)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/bangbolter(user.loc)
+				qdel(src)
+				return
+			if(3)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/ravenbolter(user.loc)
+				qdel(src)
+				return
+			if(4)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/sallybolter(user.loc)
+				qdel(src)
+				return
+			if(5)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/smurfbolter(user.loc)
 				qdel(src)
 				return
