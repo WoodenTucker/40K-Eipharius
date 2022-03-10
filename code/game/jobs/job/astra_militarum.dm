@@ -43,7 +43,10 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
-		/mob/living/carbon/human/proc/regimentselection,)
+		)
+		if(title == "Imperial Guardsman")
+			H.regimentselection()
+			return
 
 // Guardsmen
 
@@ -94,7 +97,8 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
-		/mob/living/carbon/human/proc/sergeantselection,)
+		)
+		H.sergeantselection()
 
 // Combat Medicae
 
@@ -186,7 +190,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
-		/mob/living/carbon/human/proc/regimentselection,)
+		)
 
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
