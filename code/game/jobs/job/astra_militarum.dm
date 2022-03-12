@@ -43,10 +43,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
-		)
-		if(title == "Imperial Guardsman")
-			H.regimentselection()
-			return
+		/mob/living/carbon/human/proc/regimentselection,)
 
 // Guardsmen
 
@@ -97,8 +94,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
-		)
-		H.sergeantselection()
+		/mob/living/carbon/human/proc/sergeantselection,)
 
 // Combat Medicae
 
@@ -190,7 +186,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch,
-		)
+		/mob/living/carbon/human/proc/regimentselection,)
 
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
@@ -583,11 +579,11 @@
 			var/alpha_members = SSwarfare.red.squadA.members.len
 			var/bravo_members = SSwarfare.red.squadB.members.len
 			var/charlie_members = SSwarfare.red.squadC.members.len
-			var/minimum = min(alpha_members, bravo_members, charlie_members)
+			var/delta_members = SSwarfare.red.squadD.members.len
+			var/minimum = min(alpha_members, bravo_members, charlie_members, delta_members)
 			if(minimum == alpha_members)
 				SSwarfare.red.squadA.members += src
 				src.squad = SSwarfare.red.squadA
-				//equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear) //Saving the original here in case I want to return to it.
 				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
@@ -595,9 +591,6 @@
 				if(rank == "medic")
 					var/obj/item/clothing/accessory/medal/medical/M = new(src)
 					RC.attach_accessory(src,M)
-					//var/obj/item/clothing/suit/armor/redcoat/medic/MC = get_equipped_item(slot_wear_suit)
-					//MC.icon_state = "redcoat_medic_alpha"
-					//MC.item_state = "redcoat_medic_alpha"
 
 			else if(minimum == bravo_members)
 				SSwarfare.red.squadB.members += src
@@ -620,6 +613,18 @@
 				if(rank == "medic")
 					var/obj/item/clothing/accessory/medal/medical/M = new(src)
 					RC.attach_accessory(src,M)
+/*
+			else if(minimum == delta_members)
+				SSwarfare.red.squadD.members += src
+				src.squad = SSwarfare.red.squadD
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/delta(src),slot_l_ear)
+				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
+				var/obj/item/clothing/accessory/armband/delta/D = new(src.loc)
+				RC.attach_accessory(src,D)
+				if(rank == "medic")
+					var/obj/item/clothing/accessory/medal/medical/M = new(src)
+					RC.attach_accessory(src,M)
+*/
 			else
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
@@ -678,14 +683,16 @@
 				var/obj/item/clothing/accessory/armband/charlie/C = new(src)
 				RC.attach_accessory(src,C)
 
-			/*
+/*
 			else if(!SSwarfare.red.squadD.squad_leader)
 				SSwarfare.red.squadD.members += src
 				SSwarfare.red.squadD.squad_leader = src
 				src.squad = SSwarfare.red.squadD
 				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/sl_delta(src),slot_l_ear)
-			*/
-			else//Somehow we have more than 3 SLs, no idea how but let's just exit now.
+				var/obj/item/clothing/accessory/armband/delta/D = new(src)
+				RC.attach_accessory(src,D)
+*/
+			else
 				return
 
 	var/obj/item/card/id/I = GetIdCard()

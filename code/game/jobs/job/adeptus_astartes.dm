@@ -7,7 +7,21 @@
 	head_position = 0
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
-	outfit_type = /decl/hierarchy/outfit/job/envoy //will need to be replaced eventually - wel
+	outfit_type = /decl/hierarchy/outfit/job/astartes //will need to be replaced eventually - wel
+	alt_titles = list(
+		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes/bloodangel,
+		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bloodangel/apothecary,
+		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bloodangel/techmarine,
+		"Raven Guard Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ravenguard,
+		"Raven Guard Apothecary" = /decl/hierarchy/outfit/job/astartes/ravenguard/apothecary,
+		"Raven Guard Techmarine" = /decl/hierarchy/outfit/job/astartes/ravenguard/techmarine,
+		"Salamander Tactical Marine" = /decl/hierarchy/outfit/job/astartes/salamander,
+		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astartes/salamander/apothecary,
+		"Salamander Techmarine" = /decl/hierarchy/outfit/job/astartes/salamander/techmarine,
+		"Ultramarine Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ultramarine,
+		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultramarine/apothecary,
+		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultramarine/techmarine,
+		)
 	selection_color = "#344FAA"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
@@ -22,7 +36,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 	announced = 0
-	species_role = "Astartes"
+	species_role = "Adeptus Astartes"
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -30,7 +44,31 @@
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
-		H.add_skills(rand(13),rand(13),5,5,5) //melee, ranged, med, eng, surgery
+		switch(title)
+			if("Blood Angel Tactical Marine")
+				H.add_skills(rand(15),rand(13),5,5,5)
+			if("Raven Guard Tactical Marine")
+				H.add_skills(rand(13),rand(15),5,5,5)
+			if("Salamander Tactical Marine")
+				H.add_skills(rand(13),rand(13),5,7,5)
+			if("Ultramarine Tactical Marine")
+				H.add_skills(rand(13),rand(13),5,5,5)
+			if("Blood Angel Sanguinary Priest")
+				H.add_skills(15, 13, 9, 1, 10)
+			if("Raven Guard Apothecary")
+				H.add_skills(13, 15, 9, 1, 10)
+			if("Salamander Apothecary")
+				H.add_skills(13, 13, 9, 3, 10)
+			if("Ultramarine Apothecary")
+				H.add_skills(13, 13, 9, 1, 10)
+			if("Blood Angel Techmarine")
+				H.add_skills(15, 13, 2, 11, 1)
+			if("Raven Guard Techmarine")
+				H.add_skills(13, 15, 2, 11, 1)
+			if("Salamander Techmarine")
+				H.add_skills(13, 13, 4, 11, 1)
+			if("Ultramarine Techmarine")
+				H.add_skills(13, 13, 2, 11, 1)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -40,268 +78,9 @@
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
-		H.verbs += list(/mob/living/carbon/human/proc/chapterselection)
 		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-
-/decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
-	name = OUTFIT_JOB_NAME("Astartes Envoy")
-	uniform = /obj/item/clothing/under/color/black
-	l_ear = /obj/item/device/radio/headset/red_team
-	l_pocket = null
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = null
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	shoes = null
-	backpack_contents = null //for now
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)
 		H.implant_loyalty(src)
-
-/mob/living/carbon/human/proc/chapterselection()
-	set name = "Select your chapter"
-	set category = "Astartes"
-	set desc = "Choose your chapter"
-	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping LeadOnTaste immediately!</span>")
-		return
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
-		return
-	var/mob/living/carbon/human/U = src
-	var/static/list/chapter = list("Blood Angels", "Blood Angels Techmarine", "Blood Angels Apothecary", "Raven Guard", "Raven Guard Techmarine", "Raven Guard Apothecary",  "Salamanders", "Salamanders Techmarine", "Salamanders Apothecary", "Ultramarines", "Ultramarines Techmarine", "Ultramarines Apothecary") //lists all possible chapters
-	var/chapterchoice = input("Choose your chapter and role", "Available chapters") as anything in chapter
-
-	switch(chapterchoice)
-		if("Blood Angels")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/bloodangel, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/bloodangel, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/bloodangel, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/bloodangels, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/bangbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Raven Guard")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ravenguard, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ravenguard, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/raven, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/ravenguard, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Salamanders")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/salamander, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/salamander, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/sallys, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/salamander, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Ultramarines")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ultramarine, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/ultramarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/smurfs, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/ultramarine, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Blood Angels Techmarine")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/smurfs, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest/techpack, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_belt)
-			U.add_skills(13, 13, 2, 10, 1)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Raven Guard Techmarine")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/raven, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/ravenbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_belt)
-			U.add_skills(13, 13, 2, 10, 1)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Salamanders Techmarine")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/salamander, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/sallys, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest/techpack, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/sallybolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			U.add_skills(13, 13, 2, 11, 1)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Ultramarines Techmarine")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/techmarine, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/smurfs, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/smurfbolter, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest/techpack, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_rifle_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_belt)
-			U.add_skills(13, 13, 2, 10, 1)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Blood Angels Sanguinary Priest")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/bloodangel, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor/apoth, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/bloodangel, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(13, 13, 9, 1, 10)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Raven Guard Apothecary")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor/apoth, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/raven, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(13, 13, 9, 1, 10)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Salamanders Apothecary")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/salamander, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor/apoth, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/sallys, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(13, 13, 9, 1, 10)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
-		if("Ultramarines Apothecary")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/astartes/visor/apoth, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/astartes/apothecary, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/smurfs, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/bolter_pistol, slot_s_store)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/astartes/apothecary, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/box/ifak, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/bolt_pistol_magazine, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/melee/pcsword, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			U.add_skills(13, 13, 9, 1, 10)
-			U.verbs -= list(/mob/living/carbon/human/proc/chapterselection,
-			)
