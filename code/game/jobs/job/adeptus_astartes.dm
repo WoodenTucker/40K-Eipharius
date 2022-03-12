@@ -9,18 +9,19 @@
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/astartes //will need to be replaced eventually - wel
 	alt_titles = list(
-		"Blood Angels Tactical Marine" = decl/hierarchy/outfit/job/astartes/bloodangel,
-		"Blood Angels Sanguinary Priest" = decl/hierarchy/outfit/job/astartes/bloodangel/apothecary
-		"Blood Angels Techmarine" = decl/hierarchy/outfit/job/astartes/bloodangel/techmarine
-		"Raven Guard Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ravenguard
-		"Raven Guard Apothecary" = /decl/hierarchy/outfit/job/astartes/ravenguard/apothecary
-		"Raven Guard Techmarine" = /decl/hierarchy/outfit/job/astartes/ravenguard/techmarine
-		"Salamander Tactical Marine" = /decl/hierarchy/outfit/job/astartes/salamander
-		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astartes/salamander/apothecary
-		"Salamander Techmarine" = /decl/hierarchy/outfit/job/astartes/salamander/techmarine
-		"Ultramarine Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ultramarine
-		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultramarine/apothecary
-		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultramarine/techmarine
+		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes/bloodangel,
+		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bloodangel/apothecary,
+		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bloodangel/techmarine,
+		"Raven Guard Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ravenguard,
+		"Raven Guard Apothecary" = /decl/hierarchy/outfit/job/astartes/ravenguard/apothecary,
+		"Raven Guard Techmarine" = /decl/hierarchy/outfit/job/astartes/ravenguard/techmarine,
+		"Salamander Tactical Marine" = /decl/hierarchy/outfit/job/astartes/salamander,
+		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astartes/salamander/apothecary,
+		"Salamander Techmarine" = /decl/hierarchy/outfit/job/astartes/salamander/techmarine,
+		"Ultramarine Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ultramarine,
+		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultramarine/apothecary,
+		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultramarine/techmarine,
+		)
 	selection_color = "#344FAA"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
@@ -44,30 +45,30 @@
 		H.fully_replace_character_name("Brother [current_name]")
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
 		switch(title)
-		if("Blood Angel Tactical Marine")
-		H.add_skills(rand(15),rand(13),5,5,5)
-		if("Raven Guard Tactical Marine")
-		H.add_skills(rand(13),rand(15),5,5,5)
-		if("Salamander Tactical Marine")
-		H.add_skills(rand(13),rand(13),5,7,5)
-		if("Ultramarine Tactical Marine")
-		H.add_skills(rand(13),rand(13),5,5,5)
-		if("Blood Angel Sanguinary Priest")
-			H.add_skills(15, 13, 9, 1, 10)
-		if("Raven Guard Apothecary")
-			H.add_skills(13, 15, 9, 1, 10)
-		if("Salamander Apothecary")
-			H.add_skills(13, 13, 9, 3, 10)
-		if("Ultramarine Apothecary")
-			H.add_skills(13, 13, 9, 1, 10)
-		if("Blood Angel Techmarine")
-			H.add_skills(15, 13, 2, 11, 1)
-		if("Raven Guard Techmarine")
-			H.add_skills(13, 15, 2, 11, 1)
-		if("Salamander Techmarine")
-			H.add_skills(13, 13, 4, 11, 1)
-		if("Ultramarine Techmarine")
-			H.add_skills(13, 13, 2, 11, 1)
+			if("Blood Angel Tactical Marine")
+				H.add_skills(rand(15),rand(13),5,5,5)
+			if("Raven Guard Tactical Marine")
+				H.add_skills(rand(13),rand(15),5,5,5)
+			if("Salamander Tactical Marine")
+				H.add_skills(rand(13),rand(13),5,7,5)
+			if("Ultramarine Tactical Marine")
+				H.add_skills(rand(13),rand(13),5,5,5)
+			if("Blood Angel Sanguinary Priest")
+				H.add_skills(15, 13, 9, 1, 10)
+			if("Raven Guard Apothecary")
+				H.add_skills(13, 15, 9, 1, 10)
+			if("Salamander Apothecary")
+				H.add_skills(13, 13, 9, 3, 10)
+			if("Ultramarine Apothecary")
+				H.add_skills(13, 13, 9, 1, 10)
+			if("Blood Angel Techmarine")
+				H.add_skills(15, 13, 2, 11, 1)
+			if("Raven Guard Techmarine")
+				H.add_skills(13, 15, 2, 11, 1)
+			if("Salamander Techmarine")
+				H.add_skills(13, 13, 4, 11, 1)
+			if("Ultramarine Techmarine")
+				H.add_skills(13, 13, 2, 11, 1)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
