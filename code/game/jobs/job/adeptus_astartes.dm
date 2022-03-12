@@ -40,6 +40,7 @@
 		H.gender = MALE
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
+		H.verbs += list(/mob/living/carbon/human/proc/chapterselection)
 		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
@@ -59,7 +60,6 @@
 	. = ..()
 	if(.)
 		H.implant_loyalty(src)
-		H.chapterselection()
 
 /mob/living/carbon/human/proc/chapterselection()
 	set name = "Select your chapter"
