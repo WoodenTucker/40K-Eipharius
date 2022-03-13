@@ -706,21 +706,19 @@
 	to_chat(src, "<i>...[message]</i>")
 
 GLOBAL_LIST_INIT(lone_thoughts, list(
-		"Why are we still here, just to suffer?",
+		"Why are we still here... just to suffer?",
 		"We fight to win, and that's all that matters.",
 		"Why we don't get any more reinforcements?",
 		"We have not gotten any orders from segmentum command in months...",
-		"Did something happened while we were fighting in trenches?",
+		"Did something happened while we were holding this outpost?",
 		"Is there any reason to keep fighting?",
-		"It's middle of summer. Why it's so cold?",
+		"It's middle of summer... Why it's so cold?",
 		"Greg died last night.",
 		"I do not want to die.",
-		"I miss my loved ones.",
 		"There is no hope... anymore...",
 		"Is any of this real?",
 		"My teeth hurt.",
 		"I am not ready to die.",
-		"Who keeps dropping the artillery?",
 		"I don't remember joining the military...",
 		"Does the Emperor truly protect?",
 		"I hope the Inquisitor doesn't find my Eldar milf fan-fiction",))

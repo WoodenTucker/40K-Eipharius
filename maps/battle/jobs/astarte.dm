@@ -55,6 +55,7 @@
 		H.adjustStaminaLoss(-INFINITY) //astardes have basically infinite fight in them
 		H.health = 500
 		H.maxHealth = 500
+
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black

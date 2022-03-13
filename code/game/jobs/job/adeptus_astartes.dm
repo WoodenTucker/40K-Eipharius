@@ -10,17 +10,17 @@
 	outfit_type = /decl/hierarchy/outfit/job/astartes //will need to be replaced eventually - wel
 	alt_titles = list(
 		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes/bloodangel,
-		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bloodangel/apothecary,
-		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bloodangel/techmarine,
+		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bangapoth,
+		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bangtech,
 		"Raven Guard Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ravenguard,
-		"Raven Guard Apothecary" = /decl/hierarchy/outfit/job/astartes/ravenguard/apothecary,
-		"Raven Guard Techmarine" = /decl/hierarchy/outfit/job/astartes/ravenguard/techmarine,
+		"Raven Guard Apothecary" = /decl/hierarchy/outfit/job/astartes/ravapoth,
+		"Raven Guard Techmarine" = /decl/hierarchy/outfit/job/astartes/raventech,
 		"Salamander Tactical Marine" = /decl/hierarchy/outfit/job/astartes/salamander,
-		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astartes/salamander/apothecary,
-		"Salamander Techmarine" = /decl/hierarchy/outfit/job/astartes/salamander/techmarine,
+		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astartes/salapoth,
+		"Salamander Techmarine" = /decl/hierarchy/outfit/job/astartes/saltech,
 		"Ultramarine Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ultramarine,
-		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultramarine/apothecary,
-		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultramarine/techmarine,
+		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultrapoth,
+		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultratech
 		)
 	selection_color = "#344FAA"
 	department_flag = SEC|COM
@@ -36,7 +36,7 @@
 	open_when_dead = 0
 	latejoin_at_spawnpoints = 1
 	announced = 0
-	species_role = "Adeptus Astartes"
+	species_role = "Astartes"
 
 
 	equip(var/mob/living/carbon/human/H)
