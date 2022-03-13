@@ -49,7 +49,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
-	name = OUTFIT_JOB_NAME("Catachan Fighter")
+	name = OUTFIT_JOB_NAME("Catachan Jungle Fighter")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/CatachanVest
 	head = /obj/item/clothing/head/catachan
@@ -58,7 +58,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
-	name = OUTFIT_JOB_NAME("Valhallan Guardsman")
+	name = OUTFIT_JOB_NAME("Valhallan Ice Warrior")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	head = /obj/item/clothing/head/valushanka
@@ -103,8 +103,9 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	suit_store = /obj/item/gun/launcher/rcl_rifle
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_casing/heat_shell = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -162,7 +163,7 @@ Begin Warhammer loadouts
 /// Commissar
 
 /decl/hierarchy/outfit/job/ig/commissar
-	name = OUTFIT_JOB_NAME("Commissar")
+	name = OUTFIT_JOB_NAME("Cadian Commissar")
 	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/commissar
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -191,7 +192,7 @@ Begin Warhammer loadouts
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/commissar/krieg
-	name = OUTFIT_JOB_NAME("Commissar")
+	name = OUTFIT_JOB_NAME("Krieg Commissar")
 	uniform =  /obj/item/clothing/under/rank/krieg_uniform/commissar
 	suit = /obj/item/clothing/suit/armor/commissar/krieg
 	head = /obj/item/clothing/head/commissar/krieg
@@ -199,7 +200,7 @@ Begin Warhammer loadouts
 	glasses = null
 
 /decl/hierarchy/outfit/job/ig/commissar/catachan
-	name = OUTFIT_JOB_NAME("Commissar")
+	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
 	belt = /obj/item/melee/pcsword

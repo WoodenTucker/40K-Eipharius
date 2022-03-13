@@ -9,7 +9,7 @@
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/astartes //will need to be replaced eventually - wel
 	alt_titles = list(
-		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes/bloodangel,
+		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes,
 		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bangapoth,
 		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bangtech,
 		"Raven Guard Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ravenguard,

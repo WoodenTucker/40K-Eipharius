@@ -4,7 +4,7 @@ Begin Warhammer loadouts
 /* template for new chapters - leadontaste
 /decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
@@ -29,12 +29,12 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Blood Angel Tactical Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/bloodangel
-	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
+	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
-	head = /obj/item/clothing/head/helmet/astartes/ultramarine
+	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -45,7 +45,7 @@ Begin Warhammer loadouts
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
@@ -59,7 +59,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/bangapoth
 	name = OUTFIT_JOB_NAME("Blood Angel Sanguinary Priest")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
@@ -83,7 +83,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/bangtech
 	name = OUTFIT_JOB_NAME("Blood Angel Tech-Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
@@ -106,7 +106,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ravenguard
 	name = OUTFIT_JOB_NAME("Ravenguard Tactical Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = null
@@ -119,7 +119,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ravenguard/captain
 	name = OUTFIT_JOB_NAME("Ravenguard Company Captain")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/captain/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/pcsword
@@ -141,7 +141,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ravapoth
 	name = OUTFIT_JOB_NAME("Ravenguard Apothecary")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
@@ -165,7 +165,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/raventech
 	name = OUTFIT_JOB_NAME("Ravenguard Tech-Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
@@ -188,7 +188,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/salamander
 	name = OUTFIT_JOB_NAME("Salamander Tactical Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = null
@@ -200,7 +200,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/salamander/captain
 	name = OUTFIT_JOB_NAME("Salamander Company Captain")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/captain/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/pcsword
@@ -222,7 +222,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/salapoth
 	name = OUTFIT_JOB_NAME("Salamander Apothecary")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
@@ -246,7 +246,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/saltech
 	name = OUTFIT_JOB_NAME("Salamander Tech-Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
@@ -269,7 +269,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ultramarine
 	name = OUTFIT_JOB_NAME("Ultramarine Tactical Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = null
@@ -297,7 +297,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ultramarine/captain
 	name = OUTFIT_JOB_NAME("Ultramarine Company Captain")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/captain
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/pcsword
@@ -319,7 +319,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ultrapoth
 	name = OUTFIT_JOB_NAME("Ultramarine Apothecary")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
@@ -343,7 +343,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ultratech
 	name = OUTFIT_JOB_NAME("Ultramarine Tech-Marine")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
+	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full

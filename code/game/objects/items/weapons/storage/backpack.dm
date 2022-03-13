@@ -234,8 +234,8 @@
 	canremove = 0
 
 /obj/item/storage/backpack/satchel/astartes
-	name = "Astarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack."
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
@@ -243,38 +243,38 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE //backpack storage with satchel access.
 
 /obj/item/storage/backpack/satchel/astartes/ultramarine
-	name = "Astarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 
 /obj/item/storage/backpack/satchel/astartes/ravenguard
-	name = "RAstarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIXth Chapter, Raven Guards."
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XIXth Chapter, Raven Guards."
 	icon_state = "ravpack"
 	item_state = "ravpack"
 
-/obj/item/storage/backpack/satchel/astartes/bloodangels
-	name = "Blood Angels powerpack"
-	desc = "A Blood Angels powerpack"
+/obj/item/storage/backpack/satchel/astartes/bloodangel
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the IXth Chapter, Blood Angels."
 	icon_state = "bravpack"
 	item_state = "bravpack"
 
 /obj/item/storage/backpack/satchel/astartes/salamander
-	name = "Astarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XVIIIth Chapter, Salamanders."
+	name = "Astartes Mark VII Powerpack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This one bears the marking of the XVIIIth Chapter, Salamanders."
 	icon_state = "salpack"
 	item_state = "salpack"
 
 /obj/item/storage/backpack/satchel/astartes/apothecary
-	name = "Astarte Mark VII Medipack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been upgraded with additional spotlight and surgical arms."
+	name = "Astartes Mark VII Medipack"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This Powerpack has been upgraded with additional spotlight and surgical arms to serve medical purposes."
 	icon_state = "salpack"
 	item_state = "salpack"
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/techpack //because it uses techpriest stuff.
-	name = "Astarte Mark VII Servo-Harness"
-	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been equipped with additional Servo-Arms."
+	name = "Astartes Mark VII Servo-Harness"
+	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This Powerpack has been equipped with additional Servo-Arms to serve engineering purposes."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "techpack"
 	item_state = "techpack"
@@ -392,7 +392,7 @@
 		src.is_toggled = 2
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos
-	name = "Magos satchel"
+	name = "Magos Dominus Servo-Satchel"
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos/verb/toggle_axe()
 	set name =  "Deploy axe"
