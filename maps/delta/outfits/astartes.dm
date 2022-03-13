@@ -53,7 +53,7 @@ Begin Warhammer loadouts
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/astartes/bloodangel/apothecary
+/decl/hierarchy/outfit/job/astartes/bangapoth
 	name = OUTFIT_JOB_NAME("Blood Angel Sanguinary Priest")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/bloodangel
@@ -77,7 +77,7 @@ Begin Warhammer loadouts
 	/obj/item/clothing/accessory/storage/black_vest = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/bloodangel/techmarine
+/decl/hierarchy/outfit/job/astartes/bangtech
 	name = OUTFIT_JOB_NAME("Blood Angel Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
@@ -135,7 +135,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ravenguard/apothecary
+/decl/hierarchy/outfit/job/astartes/ravapoth
 	name = OUTFIT_JOB_NAME("Ravenguard Apothecary")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
@@ -159,7 +159,7 @@ Begin Warhammer loadouts
 	/obj/item/clothing/accessory/storage/black_vest = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ravenguard/techmarine
+/decl/hierarchy/outfit/job/astartes/raventech
 	name = OUTFIT_JOB_NAME("Ravenguard Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
@@ -216,7 +216,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/salamander/apothecary
+/decl/hierarchy/outfit/job/astartes/salapoth
 	name = OUTFIT_JOB_NAME("Salamander Apothecary")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/salamander
@@ -240,7 +240,7 @@ Begin Warhammer loadouts
 	/obj/item/clothing/accessory/storage/black_vest = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/salamander/techmarine
+/decl/hierarchy/outfit/job/astartes/saltech
 	name = OUTFIT_JOB_NAME("Salamander Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
@@ -313,7 +313,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ultramarine/apothecary
+/decl/hierarchy/outfit/job/astartes/ultrapoth
 	name = OUTFIT_JOB_NAME("Ultramarine Apothecary")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
@@ -337,7 +337,7 @@ Begin Warhammer loadouts
 	/obj/item/clothing/accessory/storage/black_vest = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ultramarine/techmarine
+/decl/hierarchy/outfit/job/astartes/ultratech
 	name = OUTFIT_JOB_NAME("Ultramarine Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
