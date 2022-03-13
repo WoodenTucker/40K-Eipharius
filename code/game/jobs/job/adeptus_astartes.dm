@@ -9,7 +9,7 @@
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/astartes //will need to be replaced eventually - wel
 	alt_titles = list(
-		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes/bloodangel,
+		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes,
 		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bangapoth,
 		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bangtech,
 		"Raven Guard Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ravenguard,
@@ -76,6 +76,8 @@
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Space Marine, hired to guard the Rogue Trader and further the goals of the Imperium. You are a beacon of Mankind's greatness, your behavior should reflect this always. Guardsmen revere you and will defer to your judgement, make sure it is sound.</font></b></span>")
 		H.gender = MALE
+		H.f_style = "shaved"
+		H.h_style = "Bald"
 		H.bladder = 0 //should make jimmy space marines not have to shit/piss
 		H.bowels = 0
 		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
