@@ -214,8 +214,7 @@
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch,
-		/mob/living/carbon/human/proc/regimentselection,)
+		/mob/living/carbon/human/proc/tzeentch,)
 
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
