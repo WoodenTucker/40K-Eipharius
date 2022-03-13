@@ -494,7 +494,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 			src.reagents.addiction_list.Add(new_reagent)
 
 /mob/living/carbon/human/proc/witchblood()
-	if(prob(99) || title == "Krieg Guardsman" || title == "Krieg Watchmaster")//99% of not being a psyker, Krieg also does not get it
+	if(prob(99))//99% of not being a psyker
 		return
 	else
 		src.psyker = 1
