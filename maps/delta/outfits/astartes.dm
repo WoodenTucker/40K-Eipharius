@@ -1,6 +1,7 @@
 /*All of this will need to be redone/re-pointed to once we have actual sprites to use - wel
 Begin Warhammer loadouts
 */
+/* template for new chapters - leadontaste
 /decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
@@ -24,8 +25,9 @@ Begin Warhammer loadouts
 	pda_slot = null
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+*/
 
-/decl/hierarchy/outfit/job/astartes/bloodangel
+/decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Blood Angel Tactical Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/bloodangel
@@ -36,6 +38,7 @@ Begin Warhammer loadouts
 	mask = null
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_ear = /obj/item/device/radio/headset/red_team
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bangbolter
@@ -47,6 +50,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
 	)
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
