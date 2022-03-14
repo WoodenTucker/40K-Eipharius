@@ -58,7 +58,7 @@
 
 /obj/item/material/mekmace
 	name = "scrap mace"
-	desc = "A mace normally used by mek boys made of scrap."
+	desc = "A mace normally used by the ork meks, made of scrap."
 	force = 30
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
@@ -160,7 +160,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 12
 
-// CHAINSWORD 
+// CHAINSWORD
 
 /obj/item/melee/mercycs
 	name = "Locke Pattern Double-Edged Chainsword"

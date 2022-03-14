@@ -38,7 +38,6 @@
 	announced = 0
 	species_role = "Astartes"
 
-
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
