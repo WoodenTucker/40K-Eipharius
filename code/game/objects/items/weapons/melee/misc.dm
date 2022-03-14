@@ -86,12 +86,36 @@
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 45 //max hit with 60 strength and no equipment. Duel Arena no No forfeit - Snapshot
+	force = 30 //nerfed from 45 to 30, stil stronger than a trench club
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 4)
 	attack_verb = list("flicked", "whipped", "lashed")
 	var/slan = 1
+
+//code copypasted from the mutated arm
+/obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
+	user.setClickCooldown(5)
+	var/hit_zone = ran_zone()
+	if(user.lust <=7)
+		to_chat(user, "The mutated arm resists you!")
+		return
+	if(C.stat == DEAD)
+		to_chat(user,"<font color='#800080'>There is no pain to be harvested from the dead, a waste...</font>")
+	if(user.a_intent == I_HELP)
+		visible_message("<font color='#800080'>[user] lustfully whips [C] , leaving a red mark.</font>")
+		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
+	else
+		playsound(usr, 'sound/effects/slanattack.ogg', 100, 1, 1)
+		C.apply_damage(rand(55,75), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
+		C.Weaken(10)
+		user.slanpain += rand(1, 10)
+		to_chat(C, "<span class='warning'>[user] mangles your body with the whip. It causes you pain on a level you didn't know existed.</span>")
+		if(C.gender == MALE)
+			playsound(usr, 'sound/voice/Screams_Male_3.ogg', 100, 1, 1)
+		else if(C.gender == FEMALE)
+			playsound(usr, 'sound/voice/Screams_Woman_1.ogg', 100, 1, 1)
+		..()
 
 
 /obj/item/melee/whip/lashoftorment/pickup(var/mob/living/carbon/human/user)
