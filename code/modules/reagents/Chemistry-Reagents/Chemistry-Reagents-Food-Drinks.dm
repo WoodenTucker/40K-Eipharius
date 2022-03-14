@@ -1357,7 +1357,7 @@
 	toxicity = 5
 	nutriment_factor = 5
 	color = "#ff9100"
-	taste_description = "cold and bitter sweet with a hint of ."
+	taste_description = "cold and bitter sweetness with a hint of herbs"
 
 	glass_name = "mjod"
 	glass_desc = "Extremely potent alcoholic beverage, able to intoxicate even Adeptus Astartes. Probably lethal for non-Astartes, but tastes quite good."
@@ -1428,7 +1428,7 @@
 /datum/reagent/ethanol/antifreeze
 	name = "Anti-freeze"
 	description = "Ultimate refreshment."
-	taste_description = "Jack Frost's piss"
+	taste_description = "piss of Saint Drusus"
 	color = "#56deea"
 	strength = 12
 	adj_temp = 20
