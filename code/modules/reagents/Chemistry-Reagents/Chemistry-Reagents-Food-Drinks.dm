@@ -863,6 +863,34 @@
 			M.sleeping = max(M.sleeping, 20)
 			M.drowsyness = max(M.drowsyness, 60)
 
+/datum/reagent/drink/dangomilk
+	name = "Dango Milk"
+	description = "Tasty snack, made of milk and grain, rumoured to be favoured by T'au Empire and, especially, their Gue'vesa Auxiliaries."
+	taste_description = "creamy and milky rice"
+	color = "#aee5e4"
+	adj_temp = -5
+
+	glass_name = "dango milk"
+	glass_desc = "Tasty snack, made of milk and grain, rumoured to be favoured by T'au Empire and, especially, their Gue'vesa Auxiliaries." // Yes, I really made it. Just as reference to GI and meme about T'au being weebs. - LeadOnTaste.
+
+/datum/reagent/dangomilk/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+	..()
+
+	var/effective_dose = M.chem_doses[type]/2
+	if(alien == IS_UNATHI)
+		if(effective_dose < 2)
+			if(effective_dose == metabolism * 2 || prob(5))
+				M.emote("yawn")
+		else if(effective_dose < 5)
+			M.eye_blurry = max(M.eye_blurry, 10)
+		else if(effective_dose < 20)
+			if(prob(50))
+				M.Weaken(2)
+			M.drowsyness = max(M.drowsyness, 20)
+		else
+			M.sleeping = max(M.sleeping, 20)
+			M.drowsyness = max(M.drowsyness, 60)
+
 /datum/reagent/drink/rewriter
 	name = "Rewriter"
 	description = "The secret of the sanctuary of the Librarium..."
