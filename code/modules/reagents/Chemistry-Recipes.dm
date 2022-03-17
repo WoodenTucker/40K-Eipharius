@@ -1503,7 +1503,13 @@
 /datum/chemical_reaction/milkshake
 	name = "Milkshake"
 	result = /datum/reagent/drink/milkshake
-	required_reagents = list(/datum/reagent/drink/milk/cream = 1, /datum/reagent/drink/ice = 2, /datum/reagent/drink/milk = 2)
+	required_reagents = list(/datum/reagent/drink/milk/cream = 1, /datum/reagent/drink/ice = 2, /datum/reagent/drink/milk/soymilk = 2)
+	result_amount = 5
+
+/datum/chemical_reaction/dangomilk
+	name = "Dango Milk"
+	result = /datum/reagent/drink/milkshake
+	required_reagents = list(/datum/reagent/drink/milk/cream = 1, /datum/reagent/nutriment/flour = 2, /datum/reagent/drink/milk = 2)
 	result_amount = 5
 
 /datum/chemical_reaction/rewriter

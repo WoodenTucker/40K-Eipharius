@@ -328,7 +328,7 @@ Area basic template
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/gma/inquisitoracolyte
-	name = "Inquisitorial Acolyte Vessel ''Simiel''"
+	name = "Simiel Black Ship"
 	icon_state = "red"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = FALSE //is a separate ship presumably has its own power source
@@ -343,7 +343,7 @@ Area basic template
 //////////////////////////////////////
 
 /area/cadiaoutpost/oa/bridge/hallway
-	name = "Bridge Hallway"
+	name = "Spire Hallway"
 	icon_state = "blueold"
 	requires_power = TRUE
 	music = 'sound/newmusic/Outpost1.ogg'
@@ -450,7 +450,7 @@ Area basic template
 	requires_power = TRUE
 
 /area/cadiaoutpost/oa/security/execution
-	name = "Execution"
+	name = "Execution Room"
 	icon_state = "execution_room"
 	requires_power = TRUE
 

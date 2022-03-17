@@ -1,15 +1,15 @@
 
 /datum/map/warhammer
-	name = "Warhammer"
-	full_name = "Warhammer 40k"
+	name = "Eipharius"
+	full_name = "Eipharius"
 	path = "warhammer"
 	station_name  = "The Spirit of Cadia"
-	station_short = "Cadia"
-	dock_name     = "Cadia"
+	station_short = "Eipharius"
+	dock_name     = "Eipharius"
 	boss_name     = "Segmentum Command"
 	boss_short    = "SC"
-	company_name  = "Segmentum Ultima"
-	company_short = "SU"
+	company_name  = "Imperium of Man"
+	company_short = "Imperium"
 	system_name = "Helican Subsector"
 
 	lobby_icon = 'maps/warhammer/fullscreen.dmi'
@@ -21,10 +21,10 @@
 
 	allowed_spawns = list("Arrivals Shuttle")
 	base_turf_by_z = list("1" = /turf/simulated/floor/dirty, "2" = /turf/simulated/floor/dirty, "3" = /turf/simulated/floor/dirty,"4" = /turf/simulated/floor/dirty)
-	shuttle_docked_message = "The shuttle has docked."
-	shuttle_leaving_dock = "The shuttle has departed from home dock."
-	shuttle_called_message = "A scheduled transfer shuttle has been sent."
-	shuttle_recall_message = "The shuttle has been recalled"
+	shuttle_docked_message = "The slipstream has been opened."
+	shuttle_leaving_dock = "The slipstream is closing."
+	shuttle_called_message = "A requested slipstream is being opened."
+	shuttle_recall_message = "The slipstream opening has been aborted"
 	emergency_shuttle_docked_message = "The emergency escape shuttle has docked."
 	emergency_shuttle_leaving_dock = "The emergency escape shuttle has departed from %dock_name%."
 	emergency_shuttle_called_message = "An emergency escape shuttle has been sent."
