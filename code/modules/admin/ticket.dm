@@ -38,6 +38,29 @@ var/list/ticket_panels = list()
 
 	return 1
 
+/datum/ticket/proc/close_ic(var/datum/client_lite/closed_by)
+	if(status == TICKET_CLOSED)
+		return
+
+	if(status == TICKET_ASSIGNED && !((closed_by.ckey in assigned_admin_ckeys()) || owner.ckey == closed_by.ckey) && alert(client_by_ckey(closed_by.ckey), "You are not assigned to this ticket. Are you sure you want to close it?",  "Close ticket?" , "Yes" , "No") != "Yes")
+		return
+
+	var/client/real_client = client_by_ckey(closed_by.ckey)
+	if(status == TICKET_ASSIGNED && (!real_client || !real_client.holder)) // non-admins can only close a ticket if no admin has taken it
+		return
+
+	src.status = TICKET_CLOSED
+	src.closed_by = closed_by
+
+	to_chat(client_by_ckey(src.owner.ckey), "<span class='notice'><b>Your ticket has been marked as an IC issue by [closed_by.ckey].</b></span>")
+	message_staff("<span class='notice'><b>[src.owner.key_name(0)]</b>'s ticket has been as an IC issue by <b>[closed_by.key_name(0)]</b>.</span>")
+	send2adminirc("[src.owner.key_name(0)]'s ticket has been marked as an IC issue by [closed_by.key_name(0)].")
+	sound_to(client_by_ckey(src.owner.ckey), 'sound/misc/custodesdisagree.ogg')
+
+	update_ticket_panels()
+
+	return 1
+
 /datum/ticket/proc/take(var/datum/client_lite/assigned_admin)
 	if(status == TICKET_CLOSED)
 		return
@@ -196,6 +219,9 @@ proc/get_open_ticket_by_client(var/datum/client_lite/owner)
 			ticket_panel_window.update()
 		if("take")
 			ticket.take(client_repository.get_lite_client(usr.client))
+		if("ic")
+			ticket.close(client_repository.get_lite_client(usr.client))
+
 		if("close")
 			ticket.close(client_repository.get_lite_client(usr.client))
 		if("pm")

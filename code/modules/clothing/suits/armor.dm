@@ -438,7 +438,7 @@ obj/item/clothing/suit/armor
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Guardsmen."
 	icon_state = "carapace"
 	item_state = "carapace"
-	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)	
+	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)
 
 /obj/item/clothing/suit/armor/flak/heavy
 	name = "Cadian Pattern Flak Armour - Heavy"
@@ -467,9 +467,9 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = -1
 
-/obj/item/clothing/suit/armor/CatachanVest
+/obj/item/clothing/suit/armor/catachan
 	name = "Catachan Flak Vest"
-	desc = "Unlike the common Cadian or famous Krieg, the Catachan only wears their lightly protected Flak vest to protect against bruises and sharpnels."
+	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels." // uh... yes, I know how it sounds
 	icon_state = "Catachan_Vest"
 	item_state = "Catachan_Vest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -481,7 +481,7 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/valhallanarmor
-	name = "valhallan Greatcoat"
+	name = "Valhallan Overcoat"
 	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions."
 	icon_state = "valarmor"
 	item_state = "valarmor"
@@ -491,7 +491,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/krieger
-	name = "Krieg Greatcoat"
+	name = "Krieg Overcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
@@ -527,7 +527,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/catachansgt
 	name = "Catachan Sergeant's Flak Vest"
-	desc = "The Imperial Aquila is engraved with the word 'Devil' on this light flak vest."
+	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. The Imperial Aquila is engraved with the word 'Devil' on this one."
 	icon_state = "Catachan_Vest"
 	item_state = "Catachan_Vest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -539,7 +539,7 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/valhallasgt
-	name = "valhallan Sergeant's Greatcoat"
+	name = "Valhallan Sergeant's Overcoat"
 	desc = "Though indentical to the other standard Valhallan Guardsman, this one have it sleeves trimmed with red line and a white undershirt, representing their position as Sergeant."
 	icon_state = "valarmor"
 	item_state = "valarmor"
@@ -549,7 +549,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/kriegsgt
-	name = "Krieg Watchmaster's Coat"
+	name = "Krieg Watchmaster's Overcoat"
 	desc = "A ornated uniform with silver-trimming and red waffenfarbe by it collar. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster.... Its still stinks."
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"

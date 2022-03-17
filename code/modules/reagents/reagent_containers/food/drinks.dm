@@ -140,6 +140,19 @@
 	. = ..()
 	reagents.add_reagent(/datum/reagent/water, 50)
 
+/obj/item/reagent_containers/food/drinks/canteen/valhallan
+	name = "canteen"
+	desc = "Usually filled with water. Keeps most people from dying of dehydration."
+	icon_state = "canteen"
+	center_of_mass = "x=16;y=9"
+	volume = 100
+	slot_flags = SLOT_TIE
+
+/obj/item/reagent_containers/food/drinks/canteen/New()
+	. = ..()
+	reagents.add_reagent(/datum/reagent/water, 50)
+	reagents.add_reagent(/datum/reagent/ethanol/cognac, 50)
+
 /obj/item/reagent_containers/food/drinks/milk
 	name = "milk carton"
 	desc = "It's milk. White and nutritious goodness!"

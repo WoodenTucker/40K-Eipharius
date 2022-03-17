@@ -110,6 +110,7 @@
 	icon_state = "krootboot"
 	item_state = "krootboot"
 	canremove = 0
+	unacidable = 1
 
 // Genestealer
 
@@ -119,6 +120,7 @@
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
+	unacidable = 1
 
 // Ork
 
@@ -140,6 +142,20 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/shoes/jackboots/catachan
+	name = "Mars Pattern Combat Boots"
+	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
+	icon_state = "jackboots"
+	item_state = "jackboots"
+	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 10, bio = 0, rad = 0)
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/shoes/jackboots/catachan/New()
+	..()
+	knife = new /obj/item/material/sword/combat_knife/catachan
+	update_icon()
+
 /obj/item/clothing/shoes/jackboots/krieg
 	name = "Krieg Pattern Combat Boots"
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
@@ -154,7 +170,7 @@
 	desc = "Knee-high riding boots of an officer of the Officio Prefectus."
 	icon_state = "comm_boots"
 	item_state = "comm_boots"
-	species_restricted = list(SPECIES_HUMAN, SPECIES_TAU, SPECIES_ELDAR)
+	species_restricted = list(SPECIES_HUMAN)
 
 // Astartes Stuff
 
@@ -235,6 +251,7 @@
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 60)
 	siemens_coefficient = 1
 	can_hold_knife = 1
+	unacidable = 1
 
 // Sororitas
 
@@ -244,6 +261,7 @@
 	icon_state = "sister"
 	item_state = "sister"
 	canremove = 0
+	unacidable = 1
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
 

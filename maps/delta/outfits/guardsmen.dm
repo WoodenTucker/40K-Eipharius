@@ -39,7 +39,8 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
-	suit_store = list(/obj/item/gun/energy/las/lasgun/luscius,
+	suit_store = /obj/item/gun/energy/las/lasgun/luscius
+	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
@@ -51,17 +52,35 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/guardsman/catachan
 	name = OUTFIT_JOB_NAME("Catachan Jungle Fighter")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/CatachanVest
+	suit = /obj/item/clothing/suit/armor/catachan
 	head = /obj/item/clothing/head/catachan
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/device/flashlight/lantern
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
 	name = OUTFIT_JOB_NAME("Valhallan Ice Warrior")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	head = /obj/item/clothing/head/valushanka
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/device/flashlight/lantern
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
 
@@ -117,9 +136,22 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
+	belt = /obj/item/melee/mercycs
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/catachan
-	mask = null
-	glasses = null
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
 
 /decl/hierarchy/outfit/job/sergeant/valhallan
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
@@ -127,7 +159,18 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/valhallasgt
 	head = /obj/item/clothing/head/valushanka
 	mask = null
-	glasses = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
+	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
 
 /// Enforcer
 
