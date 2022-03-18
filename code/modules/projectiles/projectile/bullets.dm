@@ -268,26 +268,35 @@
 	armor_penetration = 75
 	penetration_modifier = 1.5
 
-/obj/item/projectile/bullet/rifle/lp308
+/obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
+	stun = 1.5
+	weaken = 1.5
 	damage = 90
 	armor_penetration = 45
 
-/obj/item/projectile/bullet/rifle/lp308/needler
-	name = "needler bullet"
+/obj/item/projectile/bullet/rifle/lp338/jhp
+	name = "JHP bullet"
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
+	stun = 2.5
+	weaken = 2.5
+	damage = 100
+	armor_penetration = 30
+	edge = 1
+
+/obj/item/projectile/bullet/rifle/lp338/needler
+	name = "needler bullet"
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	damage = 120
 	damage_type = TOX
-	stun = 3
-	weaken = 3
-	armor_penetration = 90
-	penetration_modifier = 1.25
-	penetrating = 0
+	stun = null
+	weaken = null
+	penetration_modifier = 2
 
 /* Miscellaneous */
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?
-	name = "co bullet"
+	name = "CO2 bullet"
 	damage = 25
 	damage_type = OXY
 

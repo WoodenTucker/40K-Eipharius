@@ -178,28 +178,35 @@
 /obj/item/ammo_casing/lp338
 	desc = "A .338 Lapua Magnum bullet casing."
 	caliber = ".338"
-	projectile_type = /obj/item/projectile/bullet/rifle/lp308
+	projectile_type = /obj/item/projectile/bullet/rifle/lp338
+	icon_state = "rifle-casing"
+	spent_icon = "rifle-casing-spent"
+
+/obj/item/ammo_casing/lp338/jhp
+	desc = "A .338 Lapua Magnum bullet casing."
+	caliber = ".338"
+	projectile_type = /obj/item/projectile/bullet/rifle/lp338/jhp
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
 
 /obj/item/ammo_casing/lp338/needler
 	desc =   "A spent .338 needler casing."
-	projectile_type = /obj/item/projectile/bullet/rifle/lp308/needler
+	projectile_type = /obj/item/projectile/bullet/rifle/lp338/needler
 
 /obj/item/ammo_casing/a762/practice
 	desc = "A 7.62mm practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/practice
 
 /obj/item/ammo_casing/rocket
-	name = "rocket shell"
-	desc = "A high explosive designed to be fired from a launcher."
+	name = "\improper rocket shell"
+	desc = "A high explosive shell designed to be fired from a personal launcher."
 	icon_state = "rocketshell"
 	projectile_type = /obj/item/missile
 	caliber = "rocket"
 
 /obj/item/ammo_casing/heat_shell
 	name = "\improper HEAT shell"
-	desc = "A high explosive anti-tank shell designed to be fired from a proper cannon."
+	desc = "A high explosive anti-tank shell designed to be fired from a battlecannon."
 	icon_state = "heat_shell"
 	projectile_type = /obj/item/recoilless_shell
 	caliber = "84mm"
@@ -242,7 +249,7 @@
 
 /obj/item/ammo_casing/flamer
 	name = "fire"
-	desc = "Fire ammo isn't deleting properly for some reason. Please don't bug Matt about this he knows."
+	desc = "Fire ammo isn't deleting properly for some reason. Please don't bug Matt about this, he knows."
 	icon_state = "null"
 	spent_icon = "null"
 	caliber = "flamer"
