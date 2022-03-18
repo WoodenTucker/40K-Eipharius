@@ -102,8 +102,9 @@
 	overlay = GLOB.global_hud.science
 
 /obj/item/clothing/glasses/night
-	name = "night vision goggles"
+	name = "Mark IX Photovisor"
 	desc = "You can totally see in the dark now!"
+	gender = NEUTER
 	icon_state = "night"
 	item_state = "glasses"
 	origin_tech = list(TECH_MAGNET = 2)
@@ -136,7 +137,7 @@
 	desc = "Self-polarizing goggles with light amplification for dark environments. Made from durable synthetic."
 	icon_state = "swatgoggles"
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 4)
-	darkness_view = 5
+	darkness_view = 15
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -537,6 +538,8 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	body_parts_covered = EYES
 	siemens_coefficient = 0.9
+	unacidable = 1
+	species_restricted = list(SPECIES_ASTARTES)
 
 /obj/item/clothing/glasses/astartes/visor/apoth
 	name = "Mark VII Apothecary Visor"
@@ -549,3 +552,5 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	body_parts_covered = EYES
 	siemens_coefficient = 0.9
+	unacidable = 1
+	species_restricted = list(SPECIES_ASTARTES)

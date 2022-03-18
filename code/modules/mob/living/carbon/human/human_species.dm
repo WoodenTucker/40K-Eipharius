@@ -59,6 +59,8 @@
 /mob/living/carbon/human/astartes/New(var/new_loc)
 	..(new_loc, SPECIES_ASTARTES)
 
+/mob/living/carbon/human/scout/New(var/new_loc)
+	..(new_loc, SPECIES_SCOUT)
 
 /mob/living/carbon/human/monkey/New(var/new_loc)
 	..(new_loc, "Monkey")

@@ -38,6 +38,11 @@
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
+		var/troopnum = rand(1,50000)
+		switch(title)
+			if("Krieg Guardsman")
+				H.fully_replace_character_name("Guardsman [troopnum]")
+				H.implant_loyalty(src)
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
@@ -59,14 +64,33 @@
 		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
-
 	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
+		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		SSwarfare.red.team += H
+		if(can_be_in_squad)
+			H.assign_random_squad(IMPERIUM)
+		H.fully_replace_character_name("Guardsman [H.real_name]")
+		H.assign_random_quirk()
+		H.witchblood()
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		var/troopnum = rand(1,50000)
 		switch(title)
 			if("Krieg Guardsman")
-				H.name = "Guardsman [troopnum]"
-				H.real_name = "Guardsman [troopnum]"
+				H.fully_replace_character_name("Guardsman [troopnum]")
 				H.implant_loyalty(src)
+		switch(title)
+			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch
+				)
 
 // Sergeants
 
@@ -185,6 +209,10 @@
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
+	alt_titles = list(
+		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
+		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
+		)
 	can_be_in_squad = FALSE
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7

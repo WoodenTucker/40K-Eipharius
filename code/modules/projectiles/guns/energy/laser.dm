@@ -259,7 +259,7 @@ obj/item/gun/energy/retro
 	armor_penetration = 10
 	force = 15
 	one_hand_penalty = 1.9
-	charge_cost = 70	
+	charge_cost = 70
 
 /obj/item/gun/energy/las/lasgun/luscius
 	name = "Lucius No.98 Lasgun"
@@ -291,7 +291,8 @@ obj/item/gun/energy/retro
 	armor_penetration = 8
 	force = 12
 	one_hand_penalty = 1.8
-	charge_cost = 75
+	fire_delay = 3.5
+	charge_cost = 80
 
 /obj/item/gun/energy/las/boarding
 	name = "Thilium boarding Lascarbine"

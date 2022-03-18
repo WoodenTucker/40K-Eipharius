@@ -305,7 +305,7 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/flamer
-	name = "flamer fuel"
+	name = "flamer fuel tank"
 	desc = "Put it in your flamer and roast those you don't like."
 	icon_state = "flamer"
 	caliber = "flamer"
@@ -346,7 +346,7 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/sister
-	name = "godwyn-de'az pattern bolter rifle magazine"
+	name = "Godwyn-De'az Pattern Bolter Rifle Magazine"
 	ammo_type = /obj/item/ammo_casing/bolter
 
 /* ork mags */

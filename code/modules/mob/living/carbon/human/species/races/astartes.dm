@@ -30,8 +30,8 @@ Astartes
 	strength = STR_VHIGH
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
-	//sexybits_location = BP_GROIN //dude, they have no balls
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN
+	//sexybits_location = BP_GROIN //dude, they have no balls - they actually do, it's old myth since they have libido being put down to the rock bottom
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
 	inherent_verbs = list()
 
 	radiation_mod = 0.7
@@ -56,7 +56,7 @@ Astartes
 	gender = MALE
 
 /mob/living/carbon/human/astartes/New(var/new_loc,var/new_astartes = SPECIES_ASTARTES)
-	. = ..(/*new_loc,new_astartes*/)
+	. = ..()
 	src.rejuvenate()
 	src.job = "Astartes Envoy"
 
@@ -64,8 +64,3 @@ Astartes
 /mob/living/carbon/human/astartes/Initialize()
 	. = ..()
 	src.rejuvenate()
-/*
-	fully_replace_character_name(random_kroot_name(src.gender))
-	warfare_faction = TAU
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
-	outfit.equip(src)*/

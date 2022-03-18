@@ -52,11 +52,22 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/guardsman/catachan
 	name = OUTFIT_JOB_NAME("Catachan Fighter")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/CatachanVest
+	suit = /obj/item/clothing/suit/armor/catachan
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/device/flashlight/lantern
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
 
 /decl/hierarchy/outfit/job/guardsman/valhallan
 	name = OUTFIT_JOB_NAME("Valhallan Guardsman")
@@ -192,19 +203,50 @@ Begin Warhammer loadouts
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/ig/commissar/krieg
-	name = OUTFIT_JOB_NAME("Commissar")
+	name = OUTFIT_JOB_NAME("Krieg Commissar")
 	uniform =  /obj/item/clothing/under/rank/krieg_uniform/commissar
 	suit = /obj/item/clothing/suit/armor/commissar/krieg
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/commissar
 	head = /obj/item/clothing/head/commissar/krieg
 	mask = /obj/item/clothing/mask/gas/commissar
 	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/binoculars
+	suit_store = /obj/item/gun/projectile/bolter_pistol
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/grenade/smokebomb = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/five = 1,
+	)
 
 /decl/hierarchy/outfit/job/ig/commissar/catachan
-	name = OUTFIT_JOB_NAME("Commissar")
+	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
 	belt = /obj/item/melee/pcsword
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null
 	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/binoculars
+	suit_store = /obj/item/gun/projectile/bolter_pistol
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/grenade/smokebomb = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/five = 1,
+	)

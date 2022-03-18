@@ -3,15 +3,11 @@
 	name_plural = "Humans"
 	primitive_form = "Monkey"
 	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
-	blurb = "Humanity originated in the Sol system, and over the last five centuries has spread \
-	colonies across a wide swathe of space. They hold a wide range of forms and creeds.<br/><br/> \
-	While the central Sol government maintains control of its far-flung people, powerful corporate \
-	interests, rampant cyber and bio-augmentation and secretive factions make life on most human \
-	worlds tumultous at best."
+	blurb = "Humanity originated in the Solar System, and over the last five centuries has spread colonies across a wide swathe of space. They hold a wide range of forms and creeds."
 	num_alternate_languages = 2
 	secondary_langs = list(LANGUAGE_SOL_COMMON)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
-	min_age = 17
+	min_age = 16
 	max_age = 65
 	gluttonous = GLUT_TINY
 
@@ -31,7 +27,7 @@
 	if(!firstspace)	//we need a surname
 		sanitized_name += " [pick(GLOB.last_names)]"
 
-	return sanitized_name 
+	return sanitized_name
 
 /datum/species/human/handle_npc(var/mob/living/carbon/human/H)
 	if(H.stat != CONSCIOUS)
@@ -99,3 +95,53 @@
 	name = "Lackey"
 	name_plural = "Lackeys"
 	spawn_flags = SPECIES_IS_RESTRICTED
+
+/datum/species/human/scout
+	name = SPECIES_SCOUT
+	name_plural = "Astartes Scouts"
+	primitive_form = SPECIES_HUMAN
+	brute_mod =      0.8                    // 80% brute damage
+	burn_mod =       0.8                  //  80% burn damage
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/kick,
+		/datum/unarmed_attack/punch,
+		/datum/unarmed_attack/bite
+		)
+	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
+	min_age = 16
+	max_age = 18
+	blood_volume = 450 // how much blood a retardes has
+	slowdown = -0.25 //Increased move speed
+	gluttonous = GLUT_ITEM_NORMAL
+	total_health = 250 // a normal human has 200 brain health, retardes have 250 //P.S this is brain health
+	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
+	strength = STR_HIGH
+	genders = list(MALE)
+
+	spawn_flags = null
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
+	inherent_verbs = list()
+
+	radiation_mod = 0.85
+//gives assfartes the astartes aura
+	base_auras = list(
+		/obj/aura/regenerating/human/astartes
+		)
+
+/datum/species/human/scout/handle_post_spawn(var/mob/living/carbon/human/scout/H)
+	. = ..()
+	H.age = rand(min_age,max_age)
+	to_chat(H, "<big><span class='warning'>You are the one of His angels! Act like it!</span></big>")
+
+/mob/living/carbon/human/scout
+	gender = MALE
+
+/mob/living/carbon/human/scout/New(var/new_loc,var/new_astartes_scout = SPECIES_SCOUT)
+	. = ..()
+	src.rejuvenate()
+	src.job = "Astartes Scout"
+
+/mob/living/carbon/human/scout/Initialize()
+	. = ..()
+	src.rejuvenate()
