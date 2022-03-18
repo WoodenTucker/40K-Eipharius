@@ -101,11 +101,12 @@
 	caliber = ".338"
 	screen_shake = 1.25 //extra kickback
 	handle_casings = HOLD_CASINGS
-	load_method = MAGAZINE
+	load_method = SINGLE_CASING|MAGAZINE
 	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/lp338
 	one_hand_penalty = 50
 	accuracy = -2
+	far_fire_sound = "sniper_fire"
 
 /obj/item/gun/projectile/heavysniper/lp338/scope()
 	set category = "Object"
@@ -123,7 +124,8 @@
 /obj/item/gun/projectile/heavysniper/lp338/needler
 	name = "Mark IVb Needler Sniper Rifle"
 	desc = "Powerful bolt-action needler rifle, chambered in .338 and issued to the Adeptus Astartes for long-range assasinations."
-	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
+	fire_sound = 'sound/weapons/guns/fire/needler_fire.ogg'
+	far_fire_sound = "needler_fire"
 
 /obj/item/ammo_magazine/lp338
 	name = "magazine (.338 Lapua Magnum)"
