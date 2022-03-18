@@ -208,7 +208,7 @@
 
 /obj/item/gun/projectile/automatic/m22/warmonger/fully_auto
 	name = "Mk.5 Warmonger"
-	desc = "A fully automatic battle rifle. Fires faster, and more reliably than the old shitty bolt action rifles from the old war."
+	desc = "A fully automatic stubber. Fires faster, and more reliably than the old shitty bolt-action stubbers from agriworlds."
 	icon_state = "autorifle"
 	item_state = "autorifle"
 	wielded_item_state = "autorifle-wielded"
@@ -250,7 +250,7 @@
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14
 	name = "M41 Eclipse"
-	desc = "A semi automatic rifle. It's made out of the leftover scraps from the old war. Fires a powerful round, but only one at a time."
+	desc = "A semi-automatic stubber. It's made out of the leftover scraps, mostly for agriworld purposes. Fires a powerful round, but only one at a time."
 	icon_state = "semirifle"
 	item_state = "semirifle"
 	wielded_item_state = "semirifle-wielded"
@@ -270,13 +270,13 @@
 
 /obj/item/ammo_magazine/a762/m14
 	name = "M41 magazine"
-	desc = "Found either in your gun, in your satchel, or on the ground empty."
+	desc = "Found either in your stubber, in your satchel, or on the ground empty."
 	max_ammo = 20
 	icon_state = "autorifle"
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Mk.1 Armageddon"
-	desc = "A very powerful semi automatic rifle. Much nicer than whatever scrap those medics are using."
+	desc = "A very powerful semi-automatic stubber. Much nicer than whatever scrap those medics are using."
 	icon_state = "battlerifle"
 	item_state = "battlerifle"
 	wielded_item_state = "battlerifle-wielded"
@@ -300,10 +300,10 @@
 	wielded_unloaded_icon = "battlerifle-wielded-e"
 
 /obj/item/ammo_magazine/a762/m14/battlerifle_mag
-	name = "Armageddon magazine"
+	name = "Armageddon Pattern magazine"
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
-	name = "Mk.1 Armageddon"
+	name = "Mk.1 Armageddon Pattern Stubber"
 	icon_state = "rsc"
 	item_state = "rsc"
 	wielded_item_state = "rsc-wielded"
@@ -322,14 +322,14 @@
 
 /obj/item/ammo_magazine/a762/rsc
 	icon_state = "rsc"
-	name = "Armageddon clip"
+	name = "Armageddon Pattern clip"
 	max_ammo = 5
 	caliber = "763"
 	ammo_type = /obj/item/ammo_casing/brifle
 
 /obj/item/gun/projectile/automatic/m22/combatrifle
 	name = "Mk. 2 Nightfall"
-	desc = "An advanced post war rifle, this one has different fire modes and relative accuracy!"
+	desc = "An advanced stubber of unknown pattern, this one has different fire modes and relative accuracy!"
 	icon_state = "combatrifle"
 	item_state ="combatrifle"
 	magazine_type = /obj/item/ammo_magazine/c45rifle/combatrifle
@@ -486,7 +486,7 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
 /obj/item/gun/projectile/automatic/autogrim
-	name = "Autogun pattern GRIM"
+	name = "Grim Pattern Autogun"
 	desc = "A rugged autogun of Valhallan design, it has a moderate rate of fire and excellent stopping power."
 	icon_state = "autorifle"
 	item_state = "autorifle"
@@ -518,7 +518,7 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
 /obj/item/gun/projectile/automatic/machinepistol/wooden
-	name = "Mk.23 Soulburn SMG"
+	name = "Mk.23 Soulburn Pattern Autogun"
 	desc = "A mass-produced autogun local to the frontier, often used by pirates and revolutionaries."
 	icon_state = "schmeiser"
 	item_state = "schmeiser"
@@ -543,6 +543,7 @@
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
 	firemodes = list()
+	accuracy = 0
 	automatic = 1
 	fire_delay = 1
 	burst=1
@@ -651,7 +652,7 @@
 // Stubber //
 
 /obj/item/gun/projectile/automatic/stubber
-	name = "Vrak Pattern Heavy Stubber"
+	name = "Vraks Pattern Heavy Stubber"
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
@@ -689,7 +690,7 @@
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
-	desc = "A rugged belt-fed villiers stub gun that is long out of service. This one seems to have been diligently maintained over the years."
+	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
 	accuracy = 0
@@ -701,7 +702,7 @@
 
 /obj/item/gun/projectile/ravenbolter //needs lots of work and love, ok standin for now
 	name = "Godwyn Mark Vb Pattern Bolter"
-	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XIXth Chapter Raven Guards's colour scheme."
+	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIXth Chapter Raven Guards's colour scheme."
 	icon_state = "ravenbolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -740,7 +741,7 @@
 
 /obj/item/gun/projectile/smurfbolter //needs lots of work and love, ok standin for now
 	name = "Godwyn Mark Vb Pattern Bolter"
-	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
+	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -778,7 +779,7 @@
 
 /obj/item/gun/projectile/sallybolter //needs lots of work and love, ok standin for now
 	name = "Godwyn Mark Vb Pattern Bolter"
-	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
+	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sallybolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -816,7 +817,7 @@
 
 /obj/item/gun/projectile/bangbolter //needs lots of work and love, ok standin for now
 	name = "Baal Mark Vb Pattern Bolter"
-	desc = "The Adeptus Astartes's legendary and destructive Bolter, This one is painted in IXth Chapter Blood Angels's colour scheme."
+	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in IXth Chapter Blood Angels's colour scheme."
 	icon_state = "bangbolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
@@ -854,7 +855,7 @@
 
 /obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
 	name = "Locke Pattern bolter"
-	desc = "The Locke Pattern Bolter, designed for Adepta Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
+	desc = "The Locke Pattern Bolter, designed for Adeptus Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
 	icon_state = "lockebolter"
 	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
@@ -934,7 +935,7 @@
 //various kroot rifles, bolt action and lever
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
-	name = "\improper Kroot Bolt Rifle"
+	name = "\improper Kroot Rifle"
 	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
@@ -952,7 +953,7 @@
 	force = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
-	name = "\improper Kroot Bolt Rifle"
+	name = "\improper Kroot Rifle"
 	force = 30
 	sharp = 1
 	ammo_type = /obj/item/ammo_casing/krootbullet
@@ -960,7 +961,7 @@
 	hitsound = "stab_sound"
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
-	name = "\improper Kroot Lever Rifle"
+	name = "\improper Kroot Rifle"
 	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
@@ -980,7 +981,7 @@
 	force = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
-	name = "improper Kroot Lever Rifle"
+	name = "improper Kroot Rifle"
 	force = 30
 	sharp = 1
 	force_wielded = 40

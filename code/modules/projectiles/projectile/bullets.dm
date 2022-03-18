@@ -268,6 +268,22 @@
 	armor_penetration = 75
 	penetration_modifier = 1.5
 
+/obj/item/projectile/bullet/rifle/lp308
+	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
+	damage = 90
+	armor_penetration = 45
+
+/obj/item/projectile/bullet/rifle/lp308/needler
+	name = "needler bullet"
+	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
+	damage = 120
+	damage_type = TOX
+	stun = 3
+	weaken = 3
+	armor_penetration = 90
+	penetration_modifier = 1.25
+	penetrating = 0
+
 /* Miscellaneous */
 
 /obj/item/projectile/bullet/suffocationbullet//How does this even work?
@@ -296,7 +312,7 @@
 
 /obj/item/projectile/bullet/blank
 	invisibility = 101
-	damage = 1
+	damage = 0
 	embed = 0
 
 
@@ -319,7 +335,7 @@
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
-	..() 
+	..()
 */
 
 /* Practice */

@@ -175,6 +175,17 @@
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
 
+/obj/item/ammo_casing/lp338
+	desc = "A .338 Lapua Magnum bullet casing."
+	caliber = ".338"
+	projectile_type = /obj/item/projectile/bullet/rifle/lp308
+	icon_state = "rifle-casing"
+	spent_icon = "rifle-casing-spent"
+
+/obj/item/ammo_casing/lp338/needler
+	desc =   "A spent .338 needler casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/lp308/needler
+
 /obj/item/ammo_casing/a762/practice
 	desc = "A 7.62mm practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/practice

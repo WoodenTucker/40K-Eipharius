@@ -9,8 +9,8 @@
 	slot_flags = SLOT_BACK
 	w_class = 4
 	force = 15
-//	fire_sound = 'sound/weapons/gun_flamethrower2.ogg'
-//	ammo_type = /obj/item/ammo_magazine/flamer_tank
+	fire_sound = 'sound/weapons/gun_flamethrower2.ogg'
+	ammo_type = /obj/item/ammo_magazine/flamer_tank
 	var/max_range = 5
 	var/lit = 0 //Turn the flamer on/off
 
@@ -249,7 +249,7 @@ obj/flamer_fire/proc/make_more_fire(var/T, var/f_level, var/b_level, var/fcolor,
 	for(var/mob/living/I in loc)
 		if(istype(I,/mob/living/carbon/human))
 			var/mob/living/carbon/human/M = I
-			if(istype(M.wear_suit, /obj/item/clothing/suit/fire))
+			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes))
 				M.show_message(text("Your suit protects you from the flames."),1)
 				M.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
 				continue

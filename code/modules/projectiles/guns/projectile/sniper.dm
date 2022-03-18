@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/heavysniper
-	name = "Pattern Mk. III Sniper Rifle"
+	name = "Mk. III Sniper Rifle"
 	desc = "The Mark III Sniper rifle is a Needler sniper rifle used by the Imperial Guard for long-range anti-personnel and anti-materiel work."
 	icon_state = "heavysniper"
 	item_state = "heavysniper"
@@ -88,3 +88,63 @@
 	..()
 	if(user.zoomed)
 		user.do_zoom()
+
+/obj/item/gun/projectile/heavysniper/lp338
+	name = "Mark IV .338 Stub-Rifle"
+	desc = "Powerful bolt-action stub-rifle, chambered in .338 for long-range assasinations."
+	icon_state = "needler"
+	item_state = "needler"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	caliber = ".338"
+	screen_shake = 1.25 //extra kickback
+	handle_casings = HOLD_CASINGS
+	load_method = MAGAZINE
+	max_shells = 10
+	ammo_type = /obj/item/ammo_casing/lp338
+	one_hand_penalty = 50
+	accuracy = -2
+
+/obj/item/gun/projectile/heavysniper/lp338/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 4)
+
+
+/obj/item/gun/projectile/heavysniper/lp338/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+/obj/item/gun/projectile/heavysniper/lp338/needler
+	name = "Mark IVb Needler Sniper Rifle"
+	desc = "Powerful bolt-action needler rifle, chambered in .338 and issued to the Adeptus Astartes for long-range assasinations."
+	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
+
+/obj/item/ammo_magazine/lp338
+	name = "magazine (.338 Lapua Magnum)"
+	icon_state = "needler"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".338"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/lp338
+	max_ammo = 10
+	multiple_sprites = 0
+
+/obj/item/ammo_magazine/lp338/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/lp338/needler
+	name = "magazine (.338 Needler Rifle)"
+	desc = "Toxin-coated needles, when you need to deal with some extradimensional baddies to not ruin the reality. Or to just kill an enemy leader with style."
+	ammo_type = /obj/item/ammo_casing/lp338/needler
+	max_ammo = 5
+
+/obj/item/ammo_magazine/lp338/needler/empty
+	ammo_type = /obj/item/ammo_casing/lp338/needler
+	initial_ammo = 0
