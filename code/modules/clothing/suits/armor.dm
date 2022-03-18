@@ -579,11 +579,11 @@ obj/item/clothing/suit/armor
 	armor = list(melee = 47, bullet = 47, laser = 37, energy = 25, bomb = 47, bio = 60, rad = 60)
 
 /obj/item/clothing/suit/armor/commissar/catachan
-	name = "Commissar's Trenchcoat"
-	desc = "What used to be a decorated and custom tailored suitcoat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan. Though, wearing something like this out here is more of a power move."
+	name = "Commissar's Trenchjacket"
+	desc = "What used to be a decorated and custom tailored coat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan, although, also padded to be more resistant to melee attacks. Though, wearing something like this out here is more of a power move."
 	icon_state = "catacommissar"
 	item_state = "catacommissar"
-	armor = list(melee = 70, bullet = 35, laser = 25, energy = 25, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 70, bullet = 35, laser = 25, energy = 25, bomb = 20, bio = 0, rad = 10)
 
 // INQUISITION
 
