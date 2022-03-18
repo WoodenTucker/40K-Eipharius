@@ -2,7 +2,7 @@ var/datum/antagonist/deathsquad/deathsquad
 
 /datum/antagonist/deathsquad
 	id = MODE_DEATHSQUAD
-	role_text = "Custode"
+	role_text = "Custodes"
 	role_text_plural = "Custodes"
 	welcome_text = "You work in the service of your eternal golden overlord, The Emperor of Man."
 	landmark_id = "Commando"
