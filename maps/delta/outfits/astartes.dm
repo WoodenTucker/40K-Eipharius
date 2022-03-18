@@ -355,3 +355,23 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
 	)
+
+/* ADMEME OUTFIT FOR SCOUT - This one is for human-sized ones, don't try to put it onto big astartes */
+/decl/hierarchy/outfit/job/astartes/scout
+	name = OUTFIT_JOB_NAME("Adeptus Astartes Scout")
+	uniform = /obj/item/clothing/under/cadian_uniform
+	suit = /obj/item/clothing/suit/armor/aascout
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = null
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = null
+	mask = null
+	glasses = /obj/item/clothing/glasses/night
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/projectile/heavysniper/lp338/needler
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/lp338/needler = 4,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1
+	)

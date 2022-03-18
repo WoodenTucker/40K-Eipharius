@@ -12,16 +12,15 @@
 	pixel_offset_y = -4
 	strength = STR_HIGH
 	radiation_mod = 0.2
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN
-//	slowdown = -0.30 //a bit faster than astartes due to being smaller and lighter //almost sure that slowdown may be broken
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
+	slowdown = -0.30
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
 		)
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/kick,
-		/datum/unarmed_attack/punch,
-		/datum/unarmed_attack/bite
+		/datum/unarmed_attack/punch
 		)
 
 /mob/living/carbon/human
@@ -81,7 +80,7 @@
 /mob/living/carbon/human/skitarii/proc/giveskitstats()
 	set name = "Run startup diagnostics"
 	set category = "Skitarii"
-	set desc = "Gives Skitarii stats since I can't seem to do it any other way in this clown world."
+	set desc = "Gives Skitarii stats."
 
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")

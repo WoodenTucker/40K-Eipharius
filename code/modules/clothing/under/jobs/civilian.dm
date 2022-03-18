@@ -71,7 +71,7 @@
 
 
 /obj/item/clothing/under/rank/chef
-	desc = "It's an apron which is given only to the most <b>hardcore</b> chefs in space."
+	desc = "A white apron, issued to the chefs of the grim darkness of far future."
 	name = "chef's uniform"
 	icon_state = "chef"
 	item_state = "w_suit"
@@ -87,11 +87,13 @@
 
 
 /obj/item/clothing/under/rank/head_of_personnel
-	desc = "It's a jumpsuit worn by someone who works in the position of \"Seneschal\"."
-	name = "Seneschal's jumpsuit"
-	icon_state = "hop"
-	item_state = "b_suit"
-	worn_state = "hop"
+	desc = "A fancy jumpsuit worn by someone who works in the position of Seneschal, the right-hand of the Rogue Trader."
+	name = "seneschal's jumpsuit"
+	icon_state = "arbiter"
+	item_state = "arbiter"
+	worn_state = "arbiter"
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/head_of_personnel_whimsy
 	desc = "A blue jacket and red tie, with matching red cuffs! Snazzy. Wearing this makes you feel more important than your job title does."
@@ -101,7 +103,7 @@
 	worn_state = "heir"
 
 /obj/item/clothing/under/rank/seneschal
-	desc = "It's a jumpsuit worn by someone who works in the position of \"Seneschal\", the right-hand of the Rogue Trader."
+	desc = "A fancy jumpsuit worn by someone who works in the position of Seneschal, the right-hand of the Rogue Trader."
 	name = "seneschal's jumpsuit"
 	icon_state = "arbiter"
 	item_state = "arbiter"
@@ -110,7 +112,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/hydroponics
-	desc = "It's a jumpsuit designed to protect against minor plant-related hazards."
+	desc = "Standard-issue green-and-blue jumpsuit designed to protect against minor plant-related hazards."
 	name = "botanist's jumpsuit"
 	icon_state = "hydroponics"
 	item_state = "g_suit"
@@ -118,7 +120,6 @@
 	permeability_coefficient = 0.50
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
 
 /obj/item/clothing/under/rank/internalaffairs
 	desc = "The plain, professional attire of an Internal Affairs Agent. The collar is <i>immaculately</i> starched."
@@ -129,7 +130,7 @@
 	starting_accessories = list(/obj/item/clothing/accessory/black)
 
 /obj/item/clothing/under/rank/principalagent
-	desc = "A slick bodyglove befitting of an agent of the Inquisition"
+	desc = "A slick bodyglove, befitting of an agent of the Inquisition."
 	name = "principal agent's bodyglove"
 	icon_state = "combat"
 	item_state = "combat"
@@ -138,7 +139,7 @@
 
 
 /obj/item/clothing/under/rank/inquisitor
-	desc = "A slick bodyglove befitting of an agent of the Inquisition"
+	desc = "A slick bodyglove, befitting of an agent of the Inquisition."
 	name = "inquisitor's bodyglove"
 	icon_state = "assistant_formal"
 	item_state = "assistant_formal"
@@ -158,7 +159,7 @@
 
 
 /obj/item/clothing/under/rank/janitor
-	desc = "It's the official uniform of the janitor. It has minor protection from biohazards."
+	desc = "Standard-issue uniform of the janitor. It has minor protection from biohazards."
 	name = "janitor's jumpsuit"
 	icon_state = "janitor"
 	worn_state = "janitor"
@@ -217,8 +218,8 @@
 	worn_state = "lawyer_purp"
 
 /obj/item/clothing/under/lawyer/oldman
-	name = "Old Man's Suit"
-	desc = "A classic suit for the older gentleman with built in back support."
+	name = "old man's Suit"
+	desc = "A classic suit for the older gentleman with built-in back support."
 	icon_state = "oldman"
 	item_state = "johnny"
 	worn_state = "oldman"
@@ -254,7 +255,7 @@
 
 //pilgrim stuff
 /obj/item/clothing/under/rank/penitent
-	desc = "A simple jumpsuit"
+	desc = "A simple jumpsuit, usually worn by poorest citizens of the Imperium of Man."
 	name = "simple jumpsuit"
 	icon_state = "jumpsuitdown"
 	item_state = "jumpsuitdown"
@@ -272,12 +273,13 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/skitarii
-	desc = "Tattered and torn from a life of battle and strife."
-	name = "skitarri body"
+	desc = "Heavily-augmented body, reinforced to fit the Mechanicus purposes."
+	name = "skitarii body"
 	icon_state = "skit"
 	item_state = "skit"
 	worn_state = "skit"
 	canremove = 0
+	unacidable = 1
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 25, bomb = 30, bio = 30, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

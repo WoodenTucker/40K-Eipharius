@@ -15,7 +15,7 @@ this shit is just the barebones of the race im going to add the verbs later
     name_language = LANGUAGE_ELDAR
     additional_langs = LANGUAGE_LOW_GOTHIC
     grab_type = GRAB_TAKEDOWN
-    total_health = 300
+    total_health = 250
     slowdown = -1.5
     gluttonous = GLUT_TINY
-    sexybits_location = null
+    sexybits_location = BP_GROIN

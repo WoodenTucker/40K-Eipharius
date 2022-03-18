@@ -389,6 +389,17 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/aascout
+	name = "Adeptus Astartes Scout's Carapace"
+	desc = "The sturdy armour, issued to Adeptus Astartes Scouts for their service until they prove themselves worthy to become full-fledged Battlebrothers."
+	icon_state = "fharmor"
+	item_state = "fharmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 45, bullet = 45, laser = 35, energy = 20, bomb = 40, bio = 10, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	species_restricted = list(SPECIES_SCOUT)
+
 //// ADMINISTRATUM
 /obj/item/clothing/suit/armor/bountyhunter
 	name = "bounty hunter's armor"
@@ -420,7 +431,6 @@ obj/item/clothing/suit/armor
 	name = "Enforcer Patrol Armour - Reinforced"
 	desc = "The flak armour worn by a Magistratum Enforcer Captain. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	armor = list(melee = 45, bullet = 50, laser = 40, energy = 35, bomb = 40, bio = 30, rad = 30)
-
 
 //// ASTRA MILITARUM
 /obj/item/clothing/suit/armor/guardsman
@@ -652,11 +662,12 @@ obj/item/clothing/suit/armor
 	var/slan = 1
 
 /obj/item/clothing/suit/storage/hooded/skitarii
-	name = "Skitarii Ceramite War Plate"
-	desc = "Forged by the Mechanicum, These War plate are durable, protective and extremely expensive to produce, Thus only given to the soulless Skitarii."
+	name = "Skitarii Armored Robes"
+	desc = "Tailored and reinforced by the Adeptus Mechanicus, these sturdy and protective robes are being issued to Skitarii warriors."
 	icon_state = "skitsuit"
 	item_state = "skitsuit"
 	canremove = 0
+	unacidable = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 60, bullet = 60, laser = 50, energy = 30, bomb = 40, bio = 100, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS

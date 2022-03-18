@@ -112,7 +112,7 @@
 	set name = "Use Scope"
 	set popup_menu = 1
 
-	toggle_scope(usr, 4)
+	toggle_scope(usr, 3)
 
 
 /obj/item/gun/projectile/heavysniper/lp338/equipped(mob/user)
