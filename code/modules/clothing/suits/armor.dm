@@ -435,9 +435,9 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/guardsman/carapace
 	name = "Cadian Pattern Flak Armour - Carapace"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Guardsmen."
-	icon_state = "carapace"
-	item_state = "carapace"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Flak Armour."
+	icon_state = "fharmor"
+	item_state = "fharmor"
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)
 
 /obj/item/clothing/suit/armor/flak/heavy
@@ -501,7 +501,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/krieger/grenadier
-	name = "Krieg Grenadier Greatcoat"
+	name = "Krieg Grenadier Overcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Carapace platings, making it extremely protective at the cost of mobility."
 	icon_state = "grencoat"
 	item_state = "grencoat"
@@ -588,8 +588,8 @@ obj/item/clothing/suit/armor
 // INQUISITION
 
 /obj/item/clothing/suit/armor/agent/caraspace
-	name = "Acolyte's Caraspace Armour"
-	desc = "The formidable, brillantly made Caraspace armour for the Inquistorial Agent, On it, bears the holy symbol of the Inquisition, The Rosette."
+	name = "Acolyte's Carapace Armour"
+	desc = "The formidable, brillantly made Carapace Armour for the Inquistorial Agent, On it, bears the holy symbol of the Inquisition, The Rosette."
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -599,8 +599,8 @@ obj/item/clothing/suit/armor
 
 
 /obj/item/clothing/suit/armor/agent/coat
-	name = "Acolyte's Caraspace Coat"
-	desc = "The formidable, brillantly made Caraspace armour for the Inquistorial Agent, This one bears many holy seals along with it Rosette, to ward off the corruption of Chaos."
+	name = "Acolyte's Carapace Coat"
+	desc = "The formidable, brillantly made Caraspace Armour for the Inquistorial Agent, This one bears many holy seals along with it Rosette, to ward off the corruption of Chaos."
 	icon_state = "acolytecoat"
 	item_state = "acolytecoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -609,7 +609,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/storage/hooded/inquisitor
-	name = "Throne Agent's Ignatus Power Armour"
+	name = "Throne Agent's Ignatus Pattern Power Armour"
 	desc = "The Inquisitor's holy armour, forged by the Tech-priest of Mars for his use in his path of destruction toward enemies of our Emperor, Engraved the Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
@@ -624,7 +624,7 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/ordohereticus
-	name = "Throne Agent's Holy Coat"
+	name = "Throne Agent's Hereticus Holy Coat"
 	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
 	icon_state = "hereticuscoat"
 	item_state = "hereticuscoat"
@@ -636,7 +636,7 @@ obj/item/clothing/suit/armor
 
 // MECHANICUS
 /obj/item/clothing/suit/storage/hooded/genetor
-	name = "genetor's robes"
+	name = "Magos Genetor's robes"
 	desc = "Green robes riddled with augments, scanners and syringes. The robes look incredibly old and worn, you can tell this magos has lived a long and scholarly life."
 	icon_state = "genetor"
 	item_state = "genetor"
@@ -680,7 +680,7 @@ obj/item/clothing/suit/armor
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/sobrelic
-	name = "primeval order of our martyred lady chestpiece"
+	name = "Order of Our Martyred Lady's Primeval Chespiece"
 	desc = "A primeval chestpiece of Adeptus Sororitas power armor, draped in the marks of the Order of Our Martyred Lady. It looks worn down, battle-hardened, and retired for good reason, yet it still radiates with holy energy."
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "ooml"
