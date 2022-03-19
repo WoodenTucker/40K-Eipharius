@@ -297,7 +297,7 @@ var/list/name_to_material
 	sheet_plural_name = "ingots"
 
 /material/phoron
-	name = "phoron"
+	name = "promethium"
 	stack_type = /obj/item/stack/material/phoron
 	ignition_point = PHORON_MINIMUM_BURN_TEMPERATURE
 	icon_base = "stone"
