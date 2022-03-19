@@ -69,5 +69,14 @@ GLOBAL_LIST_EMPTY(pilgrim_positions) //pilgrims to the outpost, non-guard, non R
 	for(var/datum/job/J in jobs)
 		if(J.title == job)
 			titles = J.alt_titles
-
+		switch(J.title)
+			if("Astartes Envoy")
+				J.title = "Blood Angels Tactical Marine"
+				job = "Astartes Envoy"
+			if("Imperial Guardsman")
+				J.title = "Cadian Guardsman"
+				job = "Imperial Guardsman
+			if("Sergeant")
+				J.title = "Cadian Sergeant"
+				job = "Sergeant"
 	return titles
