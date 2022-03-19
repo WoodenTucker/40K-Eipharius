@@ -75,23 +75,14 @@
 	strength = 10
 
 /datum/reagent/toxin/phoron
-	name = "Phoron"
-	description = "Phoron in its liquid form."
+	name = "Promethium"
+	description = "Promethium in its dust form."
 	taste_mult = 1.5
 	reagent_state = REAGENT_LIQUID
 	color = "#ff3300"
 	strength = 30
 	touch_met = 5
 	var/fire_mult = 5
-
-/datum/reagent/toxin/chlorine
-	name = "Chlorine"
-	description = "A highly poisonous liquid. Smells strongly of bleach."
-	reagent_state = REAGENT_LIQUID
-	taste_description = "bleach"
-	color = "#707C13"
-	strength = 15
-	metabolism = REM
 
 /datum/reagent/toxin/phoron/touch_mob(var/mob/living/L, var/amount)
 	if(istype(L))
@@ -106,12 +97,22 @@
 	M.take_organ_damage(0, removed * 0.1) //being splashed directly with phoron causes minor chemical burns
 	if(prob(10 * fire_mult))
 		M.pl_effects()
-
+/* //this probably isn't working, and if it is, its OP as fuck and could easily be used for griefing
 /datum/reagent/toxin/phoron/touch_turf(var/turf/simulated/T)
 	if(!istype(T))
 		return
 	T.assume_gas("phoron", volume, T20C)
 	remove_self(volume)
+*/
+
+/datum/reagent/toxin/chlorine
+	name = "Chlorine"
+	description = "A highly poisonous liquid. Smells strongly of bleach."
+	reagent_state = REAGENT_LIQUID
+	taste_description = "bleach"
+	color = "#707C13"
+	strength = 15
+	metabolism = REM
 
 // Produced during deuterium synthesis. Super poisonous, SUPER flammable (doesn't need oxygen to burn).
 /datum/reagent/toxin/phoron/oxygen
