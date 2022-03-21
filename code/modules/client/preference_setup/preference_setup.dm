@@ -31,12 +31,12 @@ var/const/CHARACTER_PREFERENCE_INPUT_TITLE = "Character Preference"
 /datum/category_group/player_setup_category/loadout_preferences
 	name = "Loadout"
 	sort_order = 6
-	category_item_type = /datum/category_item/player_setup_item/loadout 
+	category_item_type = /datum/category_item/player_setup_item/loadout
 */
 
 /datum/category_group/player_setup_category/global_preferences
-	name = "!SETTINGS!"
-	sort_order = 2 //3
+	name = "Settings"
+	sort_order = 4 //3
 	category_item_type = /datum/category_item/player_setup_item/player_global
 
 

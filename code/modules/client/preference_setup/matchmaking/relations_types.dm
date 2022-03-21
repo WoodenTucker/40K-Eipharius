@@ -41,6 +41,7 @@
 	var/list/rest = ..()
 	var/list/best = list()
 	var/list/good = list()
+	var/list/worst = list()
 	for(var/datum/relation/R in rest)
 		if(!R.holder.assigned_job || !holder.assigned_job)
 			continue
@@ -48,10 +49,14 @@
 			best += R
 		if(R.holder.assigned_job.department_flag & holder.assigned_job.department_flag)
 			good += R
+		if(R.holder.assigned_job.department_flag != holder.assigned_job.department_flag)
+			worst += R
 	if(best.len)
 		return best
 	else if (good.len)
 		return good
+	else if (worst.len)
+		return worst
 	return rest
 
 /datum/relation/ex
@@ -63,7 +68,7 @@
 
 /datum/relation/spessnam
 	name = "Served Together"
-	desc = "You have crossed paths while in active military service."
+	desc = "You have crossed paths in another campaign."
 
 /datum/relation/spessnam/get_desc_string()
-	return "[holder] and [other.holder] served in military together at some point in the past."
+	return "[holder] and [other.holder] served together in another campaign."

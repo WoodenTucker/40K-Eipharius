@@ -26,6 +26,7 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	var/obj/item/material/sword/combat_knife/knife = null
+	var/spawn_done = null //trying to do the thing for animation
 /obj/item/clothing/shoes/jackboots/New()
 	..()
 	knife = new
@@ -45,12 +46,17 @@
 		user.put_in_active_hand(knife)
 		knife = null
 		update_icon()
+		spawn_done = 1
 		return
 	..()
 /obj/item/clothing/shoes/jackboots/update_icon()
 	..()//I am aware this breaks the blood overlay, however I'm not particularly worried about that. We can fix that later. - Matt
 	var/image/I = image('icons/obj/clothing/accessory_overlays.dmi', "bootknife_0")
-	if(knife)
+	/*if(!knife && spawn_done)
+		//B.flick ("knife_out", src)
+		I = image('icons/obj/clothing/accessory_overlays.dmi', "bootknife_0")*/
+	if(knife /*&& spawn_done*/)
+		//B.flick ("knife_in", src)
 		I = image('icons/obj/clothing/accessory_overlays.dmi', "bootknife_1")
 
 	overlays += I

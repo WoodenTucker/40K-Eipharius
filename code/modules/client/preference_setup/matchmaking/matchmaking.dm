@@ -56,7 +56,7 @@ var/global/datum/matchmaker/matchmaker = new()
 			continue
 		. += R
 
-/datum/relation/proc/valid_candidate(datum/mind/M)
+/datum/relation/proc/valid_candidate(datum/mind/M, var/datum/relation/R in matchmaker.relations)
 	if(M == holder)	//no, you NEED other people
 		return FALSE
 
