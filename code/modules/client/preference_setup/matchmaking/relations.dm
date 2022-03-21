@@ -3,8 +3,8 @@
 	var/list/relations_info
 
 /datum/category_item/player_setup_item/relations
-	name = "Matchmaking"
-	sort_order = 1
+	name = "Relations"
+	sort_order = 3
 
 /datum/category_item/player_setup_item/relations/load_character(var/savefile/S)
 	S["relations"]	>> pref.relations
@@ -49,7 +49,7 @@
 		return TOPIC_REFRESH
 	if(href_list["relation_info"])
 		var/R = href_list["relation_info"]
-		var/info = sanitize(input("Character info", "What would you like the other party for this connection to know about your character?",pref.relations_info[R]) as message|null)
+		var/info = sanitize(input("Character info", "What would you like the other end for this connection to know about you IC?",pref.relations_info[R]) as message|null)
 		if(info)
 			pref.relations_info[R] = info
 		return TOPIC_REFRESH

@@ -1,7 +1,7 @@
 // Acolytes
 
 /datum/job/acolyte
-	title = "Acolyte"
+	title = "Inquisition Acolyte"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 3
@@ -14,6 +14,7 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
+		"Acolyte Of Ordo Hereticus" = /decl/hierarchy/outfit/job/acolyte
 		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
@@ -47,7 +48,7 @@
 // Inquisitors
 
 /datum/job/inquisitor
-	title = "Inquisitor"
+	title = "Imperial Inquisitor"
 	department_flag = INQ|COM
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
@@ -62,6 +63,7 @@
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 	alt_titles = list(
+		"Inquisitor Of Ordo Hereticus" = /decl/hierarchy/outfit/job/inquisitor
 		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
@@ -84,7 +86,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.witchblood()
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium. As full-fledged Inquisitor. Your task is to seek and destroy enemies of the Imperium, whether they're daemons, Chaos, Xenos or Heretics. The Emperor Protects.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium. As full-fledged Inquisitor. Your task is to seek and destroy enemies of the Imperium, whether they're Daemons, Chaos, Xenos or Heretics. The Emperor Protects.</font></b></span>")
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)

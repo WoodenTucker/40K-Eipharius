@@ -1,11 +1,12 @@
 /datum/job/guardsman
-	title = "Cadian Guardsman"
+	title = "Imperial Guardsman"
 	supervisors = "the Commissar and your Sergeant."
 	total_positions = 20
 	spawn_positions = 20
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	alt_titles = list(
+		"Cadian Guardsman" = /decl/hierarchy/outfit/job/guardsman,
 		"Catachan Fighter" = /decl/hierarchy/outfit/job/guardsman/catachan,
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Guardsman" = /decl/hierarchy/outfit/job/guardsman/valhallan
@@ -54,7 +55,7 @@
 // Sergeant
 
 /datum/job/sergeant
-	title = "Cadian Sergeant"
+	title = "Imperial Guard Sergeant"
 	supervisors = "the Commissar"
 	total_positions = 2
 	spawn_positions = 2
@@ -62,6 +63,7 @@
 	social_class = SOCIAL_CLASS_MED
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
+		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
 		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
@@ -118,6 +120,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	alt_titles = list(
+		"Commissar" = /decl/hierarchy/outfit/job/ig/commissar,
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)

@@ -63,20 +63,16 @@ GLOBAL_LIST_EMPTY(pilgrim_positions) //pilgrims to the outpost, non-guard, non R
 	return occupations
 
 /proc/get_alternate_titles(var/job)
+	if(!job)
+		return
 	var/list/jobs = get_job_datums()
 	var/list/titles = list()
+	var/datum/job/job_datum = jobs[job]
+	if(!job)
+		return
 
-	for(var/datum/job/J in jobs)
-		if(J.title == job)
-			titles = J.alt_titles
-		switch(J.title)
-			if("Astartes Envoy")
-				J.title = "Blood Angels Tactical Marine"
-				job = "Astartes Envoy"
-			if("Imperial Guardsman")
-				J.title = "Cadian Guardsman"
-				job = "Imperial Guardsman
-			if("Sergeant")
-				J.title = "Cadian Sergeant"
-				job = "Sergeant"
+	for(var/alt_title in job_datum.alt_titles)
+		if(alt_title == job)
+			continue
+		titles += alt_title
 	return titles
