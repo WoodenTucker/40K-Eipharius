@@ -276,7 +276,7 @@
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Mk.1 Armageddon"
-	desc = "A very powerful semi-automatic stubber. Much nicer than whatever scrap those medics are using."
+	desc = "A very powerful semi-automatic stubber. Much nicer than whatever scrap those farmers are using."
 	icon_state = "battlerifle"
 	item_state = "battlerifle"
 	wielded_item_state = "battlerifle-wielded"
@@ -656,7 +656,7 @@
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
-	str_requirement = 10
+	str_requirement = 14 //THIS THING IS HEAVY
 	w_class = ITEM_SIZE_HUGE
 	force = 17
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -704,7 +704,7 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIXth Chapter Raven Guards's colour scheme."
 	icon_state = "ravenbolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	str_requirement = 19 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
 	force = 20
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -715,7 +715,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
+	one_hand_penalty = 7 // astartes are stronger than normal humans
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -725,8 +725,7 @@
 	fire_delay = 3.5
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 8
-	automatic = 1.1
+	automatic = 1.3
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -743,7 +742,7 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	str_requirement = 19 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
 	force = 20
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -754,7 +753,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
+	one_hand_penalty = 7
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -764,8 +763,7 @@
 	fire_delay = 3.5
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 4
-	automatic = 1.1
+	automatic = 1.3
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -781,7 +779,7 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sallybolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	str_requirement = 19 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
 	force = 20
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -792,18 +790,17 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
+	one_hand_penalty = 7
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
-	fire_delay = 3.5
+	fire_delay = 2 //salamanders love to fix their weapons and their guns normally are master crafted
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 4
-	automatic = 1.1
+	automatic = 1.3
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -819,7 +816,7 @@
 	name = "Baal Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in IXth Chapter Blood Angels's colour scheme."
 	icon_state = "bangbolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
+	str_requirement = 19 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
 	force = 20
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -830,7 +827,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
+	one_hand_penalty = 7
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -840,8 +837,7 @@
 	fire_delay = 3.5
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 4
-	automatic = 1.1
+	automatic = 1.3
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.4
@@ -855,9 +851,9 @@
 
 /obj/item/gun/projectile/lockebolter //needs lots of work and love, ok standin for now
 	name = "Locke Pattern bolter"
-	desc = "The Locke Pattern Bolter, designed for Adeptus Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
+	desc = "The Locke Pattern Bolter, designed for Adeptus Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boys."
 	icon_state = "lockebolter"
-	str_requirement = 10
+	str_requirement = 14 //its a bolter
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -868,7 +864,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 6
+	one_hand_penalty = 8
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -877,9 +873,8 @@
 	unloaded_icon = "lockebolter-e"
 	fire_delay = 3.7
 	burst = 1
-	move_delay = 4
-	one_hand_penalty = 3
-	automatic = 1.3
+	move_delay = 3
+	automatic = 1 //
 	firemodes = list()
 	gun_type = GUN_LMG
 	accuracy = -0.5
@@ -899,7 +894,7 @@
 	edge = 1
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	str_requirement = 10
+	str_requirement = 14 
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
@@ -919,9 +914,8 @@
 	fire_delay = 3.5
 	burst = 1
 	move_delay = 3.5
-	one_hand_penalty = 2
 	automatic = 1.1
-	accuracy = -0.35
+	accuracy = -0.4
 	firemodes = list()
 	gun_type = GUN_LMG
 
