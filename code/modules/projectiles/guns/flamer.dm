@@ -70,12 +70,12 @@
 			break
 		if(prev_T && LinkBlocked(prev_T, T))
 			break
-		flame_turf(T,user, burntime, burnlevel, fire_color)
+		flame_turf(T,user, burntime, burnlevel, fire_color, turn(target.dir, 180))
 		distance++
 		prev_T = T
 		sleep(1)
 
-/obj/item/gun/flamer/proc/flame_turf(turf/T, mob/living/user, heat, burn, f_color = "red")
+/obj/item/gun/flamer/proc/flame_turf(turf/T, mob/living/user, heat, burn, f_color = "red", blockedDirs)
 	if(!istype(T))
 		return
 
@@ -83,7 +83,7 @@
 	if (locate(/obj/flamer_fire) in T)
 		return
 
-	new /obj/flamer_fire(T, heat, burn, f_color)
+	new /obj/flamer_fire(T, heat, burn, f_color, blockedDirs)
 
 	for(var/mob/living/M in T) //Deal bonus damage if someone's caught directly in initial stream
 		if(M.stat == DEAD)		continue
@@ -96,11 +96,12 @@
 	set waitfor = 0
 
 	var/unleash_dir = user.dir //don't want the player to turn around mid-unleash to bend the fire.
+	var/blockdir = turn(unleash_dir, 180)
 	var/list/turf/turfs = getline2(user,target)
 	playsound(user, fire_sound, 50, 1)
 	var/distance = 1
 	var/turf/prev_T
-
+	var/first = TRUE
 	for(var/turf/T in turfs)
 		if(T == user.loc)
 			prev_T = T
@@ -113,7 +114,8 @@
 			break
 		if(prev_T && LinkBlocked(prev_T, T))
 			break
-		flame_turf(T,user, burntime, burnlevel, "green")
+		if(first)
+			flame_turf(T,user, burntime, burnlevel, "green", blockdir)
 		prev_T = T
 		sleep(1)
 
@@ -137,7 +139,7 @@
 			if(prev_R && LinkBlocked(prev_R, R))
 				break
 
-			flame_turf(R, user, burntime, burnlevel, "green")
+			flame_turf(R, user, burntime, burnlevel, "green", blockdir)
 			prev_R = R
 			sleep(1)
 
@@ -147,7 +149,7 @@
 				break
 			if(prev_L && LinkBlocked(prev_L, L))  break
 
-			flame_turf(L, user, burntime, burnlevel, "green")
+			flame_turf(L, user, burntime, burnlevel, "green", blockdir)
 			prev_L = L
 			sleep(1)
 
@@ -167,8 +169,9 @@
 	var/firelevel = 12 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
 	var/burnlevel = 10 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
 	var/flame_color = "red"
+	var/canSpreadDir = NORTH | SOUTH | EAST | WEST
 
-/obj/flamer_fire/New(loc, fire_lvl, burn_lvl, f_color, fire_spread_amount)
+/obj/flamer_fire/New(loc, fire_lvl, burn_lvl, f_color, fire_spread_amount, BlockedDirs)
 	..()
 	if (f_color)
 		flame_color = f_color
@@ -176,11 +179,15 @@
 	icon_state = "[flame_color]_2"
 	if(fire_lvl) firelevel = fire_lvl
 	if(burn_lvl) burnlevel = burn_lvl
+	if(BlockedDirs)
+		CanSpreadDir &= ~BlockedDirs
 	START_PROCESSING(SSobj,src)
 
 	if(fire_spread_amount > 0)
 		var/turf/T
 		for(var/dirn in GLOB.cardinal)
+			if(!(dirn & canSpreadDir))
+				continue
 			T = get_step(loc, dirn)
 			if(istype(T,/turf/simulated/open)) continue
 			if(locate(/obj/flamer_fire) in T) continue //No stacking
@@ -190,10 +197,10 @@
 					if(!O.CanPass(src, loc))
 						new_spread_amt = 0
 						break
-			addtimer(CALLBACK(src, .proc/make_more_fire,T, fire_lvl, burn_lvl, f_color, new_spread_amt), 0) //Do not put spawns in recursive things.
+			addtimer(CALLBACK(src, .proc/make_more_fire,T, fire_lvl, burn_lvl, f_color, new_spread_amt, ~canSpreadDir), 0) //Do not put spawns in recursive things.
 
-obj/flamer_fire/proc/make_more_fire(var/T, var/f_level, var/b_level, var/fcolor, var/new_spread)
-	new /obj/flamer_fire(T, f_level, b_level, fcolor, new_spread)
+/obj/flamer_fire/proc/make_more_fire(var/T, var/f_level, var/b_level, var/fcolor, var/new_spread, var/blockedDirs)
+	new /obj/flamer_fire(T, f_level, b_level, fcolor, new_spread, blockedDirs)
 
 /obj/flamer_fire/Destroy()
 	set_light(0)
