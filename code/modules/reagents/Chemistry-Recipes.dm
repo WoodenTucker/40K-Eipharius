@@ -998,7 +998,7 @@
 /datum/chemical_reaction/patron
 	name = "Patron"
 	result = /datum/reagent/ethanol/patron
-	required_reagents = list(/datum/reagent/ethanol/tequilla = 10, "silver" = 1)
+	required_reagents = list(/datum/reagent/ethanol/tequilla = 10, /datum/reagent/silver = 1)
 	result_amount = 10
 
 /datum/chemical_reaction/bilk
@@ -1008,19 +1008,19 @@
 	result_amount = 2
 
 /datum/chemical_reaction/icetea
-	name = "Iced Tea"
+	name = "Iced Tanna"
 	result = /datum/reagent/drink/tea/icetea
 	required_reagents = list(/datum/reagent/drink/ice = 1, /datum/reagent/drink/tea = 2)
 	result_amount = 3
 
 /datum/chemical_reaction/icecoffee
-	name = "Iced Coffee"
+	name = "Iced Recaf"
 	result = /datum/reagent/drink/coffee/icecoffee
 	required_reagents = list(/datum/reagent/drink/ice = 1, /datum/reagent/drink/coffee = 2)
 	result_amount = 3
 
 /datum/chemical_reaction/nuka_cola
-	name = "Nuka Cola"
+	name = "Krieg Cola"
 	result = /datum/reagent/drink/nuka_cola
 	required_reagents = list(/datum/reagent/uranium = 1, /datum/reagent/drink/space_cola = 5)
 	result_amount = 5
@@ -1068,14 +1068,14 @@
 	result_amount = 10
 
 /datum/chemical_reaction/spacebeer
-	name = "Space Beer"
+	name = "Imperial Beer"
 	result = /datum/reagent/ethanol/beer
 	required_reagents = list(/datum/reagent/nutriment/cornoil = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
 	result_amount = 10
 
 /datum/chemical_reaction/vodka
-	name = "Vodka"
+	name = "Rahzvod"
 	result = /datum/reagent/ethanol/vodka
 	required_reagents = list(/datum/reagent/drink/juice/potato = 10)
 	catalysts = list(/datum/reagent/enzyme = 5)
@@ -1089,20 +1089,20 @@
 	result_amount = 10
 
 /datum/chemical_reaction/kahlua
-	name = "Kahlua"
+	name = "Rotgut Recaf"
 	result = /datum/reagent/ethanol/coffee/kahlua
 	required_reagents = list(/datum/reagent/drink/coffee = 5, /datum/reagent/sugar = 5)
 	catalysts = list(/datum/reagent/enzyme = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/gin_tonic
-	name = "Gin and Tonic"
+	name = "Gyn and Tonic"
 	result = /datum/reagent/ethanol/gintonic
 	required_reagents = list(/datum/reagent/ethanol/gin = 2, /datum/reagent/drink/tonic = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/cuba_libre
-	name = "Cuba Libre"
+	name = "Caddis Libre"
 	result = /datum/reagent/ethanol/cuba_libre
 	required_reagents = list(/datum/reagent/ethanol/rum = 2, /datum/reagent/drink/space_cola = 1)
 	result_amount = 3
@@ -1114,13 +1114,13 @@
 	result_amount = 3
 
 /datum/chemical_reaction/vodkamartini
-	name = "Vodka Martini"
+	name = "Rahzvod Martini"
 	result = /datum/reagent/ethanol/vodkamartini
 	required_reagents = list(/datum/reagent/ethanol/vodka = 2, /datum/reagent/ethanol/vermouth = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/white_russian
-	name = "White Russian"
+	name = "White Vostroyan"
 	result = /datum/reagent/ethanol/white_russian
 	required_reagents = list(/datum/reagent/ethanol/black_russian = 2, /datum/reagent/drink/milk/cream = 1)
 	result_amount = 3
@@ -1170,7 +1170,7 @@
 	result_amount = 6
 
 /datum/chemical_reaction/gargle_blaster
-	name = "Pan-Galactic Gargle Blaster"
+	name = "Pan-Imperial Gargle Blaster"
 	result = /datum/reagent/ethanol/gargle_blaster
 	required_reagents = list(/datum/reagent/ethanol/vodka = 2, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/whiskey = 1, /datum/reagent/ethanol/cognac = 1, /datum/reagent/drink/juice/lime = 1)
 	result_amount = 6
@@ -1182,37 +1182,37 @@
 	result_amount = 3
 
 /datum/chemical_reaction/tequilla_sunrise
-	name = "Tequilla Sunrise"
+	name = "Rotgut Sunrise"
 	result = /datum/reagent/ethanol/tequilla_sunrise
 	required_reagents = list(/datum/reagent/ethanol/tequilla = 2, /datum/reagent/drink/juice/orange = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/phoron_special
-	name = "Toxins Special"
+	name = "Promethium Special"
 	result = /datum/reagent/ethanol/toxins_special
 	required_reagents = list(/datum/reagent/ethanol/rum = 2, /datum/reagent/ethanol/vermouth = 2, /datum/reagent/toxin/phoron = 2)
 	result_amount = 6
 
 /datum/chemical_reaction/beepsky_smash
-	name = "Beepksy Smash"
+	name = "Servitor Smash"
 	result = /datum/reagent/ethanol/beepsky_smash
 	required_reagents = list(/datum/reagent/drink/juice/lime = 1, /datum/reagent/ethanol/whiskey = 1, /datum/reagent/iron = 1)
 	result_amount = 2
 
 /datum/chemical_reaction/doctor_delight
-	name = "The Doctor's Delight"
+	name = "The Medicae's Mercy"
 	result = /datum/reagent/drink/doctor_delight
 	required_reagents = list(/datum/reagent/drink/juice/lime = 1, /datum/reagent/drink/juice/tomato = 1, /datum/reagent/drink/juice/orange = 1, /datum/reagent/drink/milk/cream = 2, /datum/reagent/tricordrazine = 1)
 	result_amount = 6
 
 /datum/chemical_reaction/irish_cream
-	name = "Irish Cream"
+	name = "Tannithian Cream"
 	result = /datum/reagent/ethanol/irish_cream
 	required_reagents = list(/datum/reagent/ethanol/whiskey = 2, /datum/reagent/drink/milk/cream = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/manly_dorf
-	name = "The Manly Dorf"
+	name = "The Manly Squat"
 	result = /datum/reagent/ethanol/manly_dorf
 	required_reagents = list (/datum/reagent/ethanol/beer = 1, /datum/reagent/ethanol/ale = 2)
 	result_amount = 3
@@ -1224,19 +1224,19 @@
 	result_amount = 3
 
 /datum/chemical_reaction/irish_coffee
-	name = "Irish Coffee"
+	name = "Tannithian Recaf"
 	result = /datum/reagent/ethanol/coffee/irishcoffee
 	required_reagents = list(/datum/reagent/ethanol/irish_cream = 1, /datum/reagent/drink/coffee = 1)
 	result_amount = 2
 
 /datum/chemical_reaction/b52
-	name = "B-52"
+	name = "Maradeur"
 	result = /datum/reagent/ethanol/coffee/b52
 	required_reagents = list(/datum/reagent/ethanol/irish_cream = 1, /datum/reagent/ethanol/coffee/kahlua = 1, /datum/reagent/ethanol/cognac = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/atomicbomb
-	name = "Atomic Bomb"
+	name = "Vraks Vibecheck"
 	result = /datum/reagent/ethanol/atomicbomb
 	required_reagents = list(/datum/reagent/ethanol/coffee/b52 = 10, /datum/reagent/uranium = 1)
 	result_amount = 10
@@ -1248,13 +1248,13 @@
 	result_amount = 3
 
 /datum/chemical_reaction/longislandicedtea
-	name = "Long Island Iced Tea"
+	name = "Long Island Iced Tanna"
 	result = /datum/reagent/ethanol/longislandicedtea
 	required_reagents = list(/datum/reagent/ethanol/vodka = 1, /datum/reagent/ethanol/gin = 1, /datum/reagent/ethanol/tequilla = 1, /datum/reagent/ethanol/cuba_libre = 3)
 	result_amount = 6
 
 /datum/chemical_reaction/threemileisland
-	name = "Three Mile Island Iced Tea"
+	name = "Three Mile Island Iced Tanna"
 	result = /datum/reagent/ethanol/threemileisland
 	required_reagents = list(/datum/reagent/ethanol/longislandicedtea = 10, /datum/reagent/uranium = 1)
 	result_amount = 10
@@ -1266,31 +1266,31 @@
 	result_amount = 3
 
 /datum/chemical_reaction/black_russian
-	name = "Black Russian"
+	name = "Black Vostroyan"
 	result = /datum/reagent/ethanol/black_russian
 	required_reagents = list(/datum/reagent/ethanol/vodka = 2, /datum/reagent/ethanol/coffee/kahlua = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/manhattan
-	name = "Manhattan"
+	name = "Necromunda"
 	result = /datum/reagent/ethanol/manhattan
 	required_reagents = list(/datum/reagent/ethanol/whiskey = 2, /datum/reagent/ethanol/vermouth = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/manhattan_proj
-	name = "Manhattan Project"
+	name = "Jurten"
 	result = /datum/reagent/ethanol/manhattan_proj
 	required_reagents = list(/datum/reagent/ethanol/manhattan = 10, /datum/reagent/uranium = 1)
 	result_amount = 10
 
 /datum/chemical_reaction/vodka_tonic
-	name = "Vodka and Tonic"
+	name = "Rahzvod and Tonic"
 	result = /datum/reagent/ethanol/vodkatonic
 	required_reagents = list(/datum/reagent/ethanol/vodka = 2, /datum/reagent/drink/tonic = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/gin_fizz
-	name = "Gin Fizz"
+	name = "Gyn Fizz"
 	result = /datum/reagent/ethanol/ginfizz
 	required_reagents = list(/datum/reagent/ethanol/gin = 1, /datum/reagent/drink/sodawater = 1, /datum/reagent/drink/juice/lime = 1)
 	result_amount = 3
@@ -1302,7 +1302,7 @@
 	result_amount = 6
 
 /datum/chemical_reaction/singulo
-	name = "Singulo"
+	name = "Geller"
 	result = /datum/reagent/ethanol/singulo
 	required_reagents = list(/datum/reagent/ethanol/vodka = 5, /datum/reagent/radium = 1, /datum/reagent/ethanol/wine = 5)
 	result_amount = 10
@@ -1314,7 +1314,7 @@
 	result_amount = 2
 
 /datum/chemical_reaction/demonsblood
-	name = "Demons Blood"
+	name = "Bloodthirster's Blood"
 	result = /datum/reagent/ethanol/demonsblood
 	required_reagents = list(/datum/reagent/ethanol/rum = 3, /datum/reagent/drink/spacemountainwind = 1, /datum/reagent/blood = 1, /datum/reagent/drink/dr_gibb = 1)
 	result_amount = 6
@@ -1381,19 +1381,19 @@
 	result_amount = 2
 
 /datum/chemical_reaction/soy_latte
-	name = "Soy Latte"
+	name = "Soy Recaf Latte"
 	result = /datum/reagent/drink/coffee/soy_latte
 	required_reagents = list(/datum/reagent/drink/coffee = 1, /datum/reagent/drink/milk/soymilk = 1)
 	result_amount = 2
 
 /datum/chemical_reaction/cafe_latte
-	name = "Cafe Latte"
+	name = "Recaf Latte"
 	result = /datum/reagent/drink/coffee/cafe_latte
 	required_reagents = list(/datum/reagent/drink/coffee = 1, /datum/reagent/drink/milk = 1)
 	result_amount = 2
 
 /datum/chemical_reaction/acidspit
-	name = "Acid Spit"
+	name = "Astartes Spit"
 	result = /datum/reagent/ethanol/acid_spit
 	required_reagents = list(/datum/reagent/acid = 1, /datum/reagent/ethanol/wine = 5)
 	result_amount = 6
@@ -1405,9 +1405,9 @@
 	result_amount = 10
 
 /datum/chemical_reaction/changelingsting
-	name = "Changeling Sting"
+	name = "Genestaler Sting"
 	result = /datum/reagent/ethanol/changelingsting
-	required_reagents = list("screwdrivercocktail" = 1, /datum/reagent/drink/juice/lime = 1, /datum/reagent/drink/juice/lemon = 1)
+	required_reagents = list(/datum/reagent/ethanol/screwdrivercocktail = 1, /datum/reagent/drink/juice/lime = 1, /datum/reagent/drink/juice/lemon = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/aloe
@@ -1435,13 +1435,13 @@
 	result_amount = 2
 
 /datum/chemical_reaction/irishcarbomb
-	name = "Irish Car Bomb"
+	name = "Tannithian Car Bomb"
 	result = /datum/reagent/ethanol/irishcarbomb
 	required_reagents = list(/datum/reagent/ethanol/ale = 1, /datum/reagent/ethanol/irish_cream = 1)
 	result_amount = 2
 
 /datum/chemical_reaction/syndicatebomb
-	name = "Syndicate Bomb"
+	name = "Bloodpact Bomb"
 	result = /datum/reagent/ethanol/syndicatebomb
 	required_reagents = list(/datum/reagent/ethanol/beer = 1, /datum/reagent/ethanol/whiskey_cola = 1)
 	result_amount = 2
@@ -1453,13 +1453,13 @@
 	result_amount = 6
 
 /datum/chemical_reaction/devilskiss
-	name = "Devils Kiss"
+	name = "Daemonette's Kiss"
 	result = /datum/reagent/ethanol/devilskiss
 	required_reagents = list(/datum/reagent/blood = 1, /datum/reagent/ethanol/coffee/kahlua = 1, /datum/reagent/ethanol/rum = 1)
 	result_amount = 3
 
 /datum/chemical_reaction/hippiesdelight
-	name = "Hippies Delight"
+	name = "Mirael's Kiss"
 	result = /datum/reagent/ethanol/hippies_delight
 	required_reagents = list(/datum/reagent/psilocybin = 1, /datum/reagent/ethanol/gargle_blaster = 1)
 	result_amount = 2
@@ -1489,7 +1489,7 @@
 	result_amount = 3
 
 /datum/chemical_reaction/kiraspecial
-	name = "Kira Special"
+	name = "Saints Special"
 	result = /datum/reagent/drink/kiraspecial
 	required_reagents = list(/datum/reagent/drink/juice/orange = 1, /datum/reagent/drink/juice/lime = 1, /datum/reagent/drink/sodawater = 1)
 	result_amount = 3
@@ -1508,7 +1508,7 @@
 
 /datum/chemical_reaction/dangomilk
 	name = "Dango Milk"
-	result = /datum/reagent/drink/milkshake
+	result = /datum/reagent/drink/dangomilk
 	required_reagents = list(/datum/reagent/drink/milk/cream = 1, /datum/reagent/nutriment/flour = 2, /datum/reagent/drink/milk = 2)
 	result_amount = 5
 
@@ -1525,14 +1525,14 @@
 	result_amount = 3
 
 /datum/chemical_reaction/rum
-	name = "Rum"
+	name = "Old Foiz"
 	result = /datum/reagent/ethanol/rum
 	required_reagents = list(/datum/reagent/sugar = 1, /datum/reagent/water = 1)
 	catalysts = list(/datum/reagent/enzyme = 5)
 	result_amount = 2
 
 /datum/chemical_reaction/ships_surgeon
-	name = "Ship's Surgeon"
+	name = "Ship's Chiurgeon"
 	result = /datum/reagent/ethanol/ships_surgeon
 	required_reagents = list(/datum/reagent/ethanol/rum = 1, /datum/reagent/drink/dr_gibb = 2, /datum/reagent/drink/ice = 1)
 	result_amount = 4

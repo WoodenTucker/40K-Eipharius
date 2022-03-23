@@ -14,7 +14,7 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
-		"Acolyte Of Ordo Hereticus" = /decl/hierarchy/outfit/job/acolyte
+		"Acolyte Of Ordo Hereticus" = /decl/hierarchy/outfit/job/acolyte,
 		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
@@ -63,7 +63,7 @@
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 	alt_titles = list(
-		"Inquisitor Of Ordo Hereticus" = /decl/hierarchy/outfit/job/inquisitor
+		"Inquisitor Of Ordo Hereticus" = /decl/hierarchy/outfit/job/inquisitor,
 		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
