@@ -114,7 +114,7 @@
 	/obj/item/stack/thrones3/ten = 1
 		)
 
-/decl/hierarchy/outfit/job/service/undertaker
+/decl/hierarchy/outfit/job/undertaker
 	name = OUTFIT_JOB_NAME("Undertaker")
 	uniform = /obj/item/clothing/under/child_jumpsuit
 	id_type = /obj/item/card/id/civilian/bartender

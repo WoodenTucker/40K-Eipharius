@@ -166,7 +166,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	selection_color = "#848484"
 	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
 	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
-	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
+	outfit_type = /decl/hierarchy/outfit/job/undertaker
 	announced = FALSE
 	auto_rifle_skill = 2
 	semi_rifle_skill = 2
@@ -186,4 +186,4 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		H.set_trait(new/datum/trait/death_tolerant())
-		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Rogue Trader you owe him your life. However, you must earn your keep. The Rogue Trader has placed you in the charge of the Abbot who has you burying the dead. This is a vital task, it is said bodies that are left unburied are unable to move on to the Emperor's Grace! Make sure you bury any body you see! </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Rogue Trader you owe him your life. However, you must earn your keep. The Rogue Trader has placed you in the charge of the Abbot who has you burying the dead. This is a vital task as it is said bodies that are left unburied are unable to move on to the Emperor's Grace! Make sure you bury any body you see! </font></b></span>")

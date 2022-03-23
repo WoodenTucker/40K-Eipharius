@@ -99,7 +99,7 @@
 	qdel(src)
 
 /obj/mortar
-	name = "Mortar Shell"
+	name = "mortar"
 	desc = "You'll never see this as never supposed to, it just explodes."
 
 /obj/mortar/New()
@@ -107,21 +107,19 @@
 	qdel(src)
 
 /obj/mortar/frag
-	name = "HE Mortar Shell"
+	name = "HE mortar"
 
 /obj/mortar/frag/New()
 	..()
-	explosion(src.loc,2,3,5,flame_range = 2)
 	fragmentate(get_turf(src), 72)
+	explosion(src.loc,1,1,4,flame_range = 1)
 	qdel(src)
 
 /obj/mortar/gas
-	name = "Gas Mortar Shell"
+	name = "gas mortar"
 
 /obj/mortar/gas/New()
 	..()
-	playsound(src.loc, 'sound/effects/smoke.ogg', 50)
-	explosion(src.loc,0,0,1,flame_range = 0)
 	create_reagents(100)
 	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 50)
 	var/location = get_turf(src)
@@ -130,7 +128,16 @@
 	S.set_up(reagents, 50, 0, location)
 	spawn(0)
 		S.start()
-	sleep(100)
+	explosion(src.loc,0,0,1,flame_range = 1)
+	qdel(src)
+
+/obj/mortar/fire
+	name = "incendiary mortar"
+
+/obj/mortar/fire/New()//Just spawns fire.
+	..()
+	new /obj/flamer_fire(loc, 12, 10, "red", 8)
+	explosion(src.loc,0,0,2,flame_range = 1)
 	qdel(src)
 
 /obj/mortar/smoke
@@ -138,15 +145,14 @@
 
 /obj/mortar/smoke/New()
 	..()
-	explosion(src.loc,0,0,1,flame_range = 0)
-	sleep(5)
 	playsound(src.loc, 'sound/effects/smoke.ogg', 50)
 	new /datum/effect/effect/system/smoke_spread
+	explosion(src.loc,0,0,1,flame_range = 1)
 	sleep(100)
 	qdel(src)
 
 /obj/mortar/fire
-	name = "Incendiary Mortar Shell"
+	name = "incendiary mortar"
 
 /obj/mortar/fire/New()//Just spawns fire.
 	..()
@@ -158,7 +164,7 @@
 	qdel(src)
 
 /obj/mortar/flare
-	name = "Illumination Mortar Shell"
+	name = "illumination mortar"
 	var/flare_type = /obj/effect/lighting_dummy/flare
 
 obj/mortar/flare/blue
@@ -170,12 +176,12 @@ obj/mortar/flare/blue
 	qdel(src)
 
 /obj/mortar/arty
-	name = "Basilisk Artillery Shell"
+	name = "artillery shell"
 
 /obj/mortar/arty/New()
 	..()
-	explosion(src.loc,5,7,9,flame_range = 2.5)
 	fragmentate(get_turf(src), 84)
+	explosion(src.loc,2,5,7,flame_range = 3)
 	qdel(src)
 
 /obj/item/grenade/frag/proc/on_explosion(var/turf/O)
