@@ -60,7 +60,7 @@
 				crumbling_message = "The wall crumbles under [O], revealing gold!"
 				ore_inside = GOLD
 			if(69 to  73)
-				crumbling_message = "The wall crumbles under [O], revealing phoron!"
+				crumbling_message = "The wall crumbles under [O], revealing promethium!"
 				ore_inside = PHORON
 			if(74 to  75)
 				crumbling_message = "The wall crumbles under [O], revealing adamantium!"
