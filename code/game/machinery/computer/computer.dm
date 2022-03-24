@@ -194,7 +194,6 @@
 
 /obj/machinery/computer/exterminatus/proc/exterminatus()
 	firing = 1	//Are we already firing?
-
 	ticker.station_heretics_cinematic()
 	return
 
