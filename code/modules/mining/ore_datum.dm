@@ -89,10 +89,10 @@ var/global/list/ores_by_type = list()
 	ore = /obj/item/ore/glass //Technically not needed since there's no glass ore vein, but consistency is nice
 
 /ore/phoron
-	name = "phoron"
-	display_name = "phoron crystals"
+	name = "promethium"
+	display_name = "promethium crystals"
 	compresses_to = "phoron"
-	smelts_to = something that explodes violently on the conveyor, huhuhuhu
+	smelts_to = "phoron"
 	result_amount = 5
 	spread_chance = 25
 	ore = /obj/item/ore/phoron
