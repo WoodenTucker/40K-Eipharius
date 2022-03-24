@@ -98,21 +98,15 @@
 
 	qdel(src)
 
-/obj/mortar
-	name = "mortar"
-	desc = "You'll never see this as never supposed to, it just explodes."
-
-/obj/mortar/New()
-	..()
-	qdel(src)
-
 /obj/mortar/frag
-	name = "HE mortar"
+	name = "Mortar"
+	desc = "You'll never see this it just explodes."
 
 /obj/mortar/frag/New()
 	..()
+	explosion(get_turf(src), -1, -1, 6, 3, 0)
+	sleep(0)
 	fragmentate(get_turf(src), 72)
-	explosion(src.loc,1,1,4,flame_range = 1)
 	qdel(src)
 
 /obj/mortar/gas
@@ -128,39 +122,14 @@
 	S.set_up(reagents, 50, 0, location)
 	spawn(0)
 		S.start()
-	explosion(src.loc,0,0,1,flame_range = 1)
 	qdel(src)
 
 /obj/mortar/fire
-	name = "incendiary mortar"
+	name = "fire mortar"
 
 /obj/mortar/fire/New()//Just spawns fire.
 	..()
 	new /obj/flamer_fire(loc, 12, 10, "red", 8)
-	explosion(src.loc,0,0,2,flame_range = 1)
-	qdel(src)
-
-/obj/mortar/smoke
-	name = "Smoke Mortar Shell"
-
-/obj/mortar/smoke/New()
-	..()
-	playsound(src.loc, 'sound/effects/smoke.ogg', 50)
-	new /datum/effect/effect/system/smoke_spread
-	explosion(src.loc,0,0,1,flame_range = 1)
-	sleep(100)
-	qdel(src)
-
-/obj/mortar/fire
-	name = "incendiary mortar"
-
-/obj/mortar/fire/New()//Just spawns fire.
-	..()
-
-	var/turf/O = get_turf(src)
-	if(!O) return
-
-	new /obj/flamer_fire(loc, 30, 15, "red", 8)
 	qdel(src)
 
 /obj/mortar/flare
@@ -177,11 +146,13 @@ obj/mortar/flare/blue
 
 /obj/mortar/arty
 	name = "artillery shell"
+	desc = "You'll never see this it just explodes."
 
 /obj/mortar/arty/New()
 	..()
+	explosion(get_turf(src), -1, -1, 10, 5, 0)
+	sleep(0)
 	fragmentate(get_turf(src), 84)
-	explosion(src.loc,2,5,7,flame_range = 3)
 	qdel(src)
 
 /obj/item/grenade/frag/proc/on_explosion(var/turf/O)

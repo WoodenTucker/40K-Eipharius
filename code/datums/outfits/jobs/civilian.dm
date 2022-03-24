@@ -92,7 +92,7 @@
 	pda_slot = null
 
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Ministorum Confessor-Millitant")
+	name = OUTFIT_JOB_NAME("Ministorum Confessor")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain
@@ -114,7 +114,7 @@
 	/obj/item/stack/thrones3/ten = 1
 		)
 
-/decl/hierarchy/outfit/job/undertaker
+/decl/hierarchy/outfit/job/service/undertaker
 	name = OUTFIT_JOB_NAME("Undertaker")
 	uniform = /obj/item/clothing/under/child_jumpsuit
 	id_type = /obj/item/card/id/civilian/bartender

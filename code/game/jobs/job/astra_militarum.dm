@@ -76,11 +76,11 @@
 		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		var/troopnum = rand(1,50000)
 		switch(title)
 			if("Krieg Guardsman")
+				H.set_trait(new/datum/trait/death_tolerant())
 				H.fully_replace_character_name("Guardsman [troopnum]")
 				H.implant_loyalty(src)
 		switch(title)
@@ -91,6 +91,7 @@
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch
 				)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 // Sergeants
 
@@ -130,7 +131,6 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Sergeant [current_name]")
@@ -148,6 +148,7 @@
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch
 				)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 
 // Combat Medicae
 
