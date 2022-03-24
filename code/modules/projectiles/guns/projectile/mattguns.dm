@@ -21,6 +21,12 @@
 	fire_delay= 4.5
 	force = 15
 
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/attackby(var/obj/item/screwdriver/O,  var/mob/user, var/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/G)
+		qdel(G)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly attaches a scope to the [O] and adjusts it's firing mechanism.")
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
 	name = "\improper Boscolet Pattern Stub Rifle"
 	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
@@ -28,6 +34,12 @@
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
 	accuracy = -0.075
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/attackby(var/obj/item/screwdriver/O,  var/mob/user, var/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/G)
+		qdel(G)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly detaches a scope from the [O] and adjusts it's firing mechanism back.")
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope()
 	set category = "Object"
