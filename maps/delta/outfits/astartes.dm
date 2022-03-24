@@ -34,9 +34,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_ear = /obj/item/device/radio/headset/red_team
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
@@ -64,9 +64,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
+	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
@@ -87,9 +87,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bangbolter
@@ -109,9 +109,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 
@@ -122,9 +122,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/captain/ravenguard
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/ravenbolter
@@ -144,9 +144,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
@@ -167,9 +167,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/suit/armor/astartes/ravenguard
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/ravenbolter
@@ -189,9 +189,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	suit_store = /obj/item/gun/projectile/sallybolter
 
 /decl/hierarchy/outfit/job/astartes/salamander/captain
@@ -201,9 +201,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/captain/salamander
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/sallybolter
@@ -223,9 +223,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
@@ -246,9 +246,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/sallybolter
@@ -268,9 +268,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
@@ -296,9 +296,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/captain/ultramarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/smurfbolter
@@ -318,9 +318,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_magazine/bolt_pistol_magazine
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
@@ -341,9 +341,9 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/smurfbolter
@@ -369,7 +369,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/night
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/heavysniper/lp338/needler
+	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/lp338/needler = 4,
