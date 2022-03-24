@@ -80,6 +80,8 @@
 		var/troopnum = rand(1,50000)
 		switch(title)
 			if("Krieg Guardsman")
+				H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(3,6),rand(1,3))
+				H.set_quirk(new/datum/quirk/brave())
 				H.set_trait(new/datum/trait/death_tolerant())
 				H.fully_replace_character_name("Guardsman [troopnum]")
 				H.implant_loyalty(src)
@@ -91,6 +93,10 @@
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch
 				)
+				if(title == "Catachan Jungle Hunter")
+					H.add_skills(rand(8,11),rand(6,10),rand(3,6),rand(1,4),rand(1,3))
+				if(title == "Valhallan Ice Warrior")
+					H.add_skills(rand(7,10),rand(7,11),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 // Sergeants
@@ -105,7 +111,7 @@
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
-		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
+		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -136,8 +142,11 @@
 		H.fully_replace_character_name("Sergeant [current_name]")
 		var/watchnum = rand(1,5000)
 		switch(title)
-			if("Krieg Watchmaster")
-				H.fully_replace_character_name("Watchmaster [watchnum]")
+			if("Krieg Quartermaster")
+				H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
+				H.set_quirk(new/datum/quirk/brave())
+				H.set_trait(new/datum/trait/death_tolerant())
+				H.fully_replace_character_name("Quartermaster [watchnum]")
 				H.implant_loyalty(src)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
 		switch(title)
@@ -148,6 +157,10 @@
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch
 				)
+				if(title == "Catachan Sergeant")
+					H.add_skills(rand(9,11),rand(9,10),rand(5,7),5,rand(4,6))
+				if(title == "Valhallan Sergeant")
+					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 
 // Combat Medicae

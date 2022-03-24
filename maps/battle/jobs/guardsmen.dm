@@ -40,7 +40,7 @@
 	SSwarfare.red.team += H
 	if(can_be_in_squad)
 		H.assign_random_squad(IMPERIUM) //This should handle giving Guardsmen their radio headsets.
-	if(alt_title == "Krieg Guardsman")
+	if(title == "Krieg Guardsman")
 		var/troopnum = rand(1,50000)
 		H.fully_replace_character_name("Guardsman [troopnum]")
 	else
@@ -103,7 +103,7 @@
 	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 	H.assign_squad_leader(IMPERIUM)
 	H.warfare_faction = IMPERIUM
-	if(alt_title == "Krieg Watchmaster")
+	if(title == "Krieg Watchmaster")
 		var/troopnum = rand(1,50000)
 		H.fully_replace_character_name("Watchmaster [troopnum]")
 	else
