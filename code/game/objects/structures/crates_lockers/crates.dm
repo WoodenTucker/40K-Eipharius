@@ -387,8 +387,8 @@ obj/structure/closet/crate
 	icon_closed = "largermetal"
 
 /obj/structure/closet/crate/valhallan/New()
-	new /obj/item/clothing/head/helmet/guardhelmet(src)
-	new /obj/item/clothing/head/helmet/guardhelmet(src)
+	new /obj/item/clothing/head/valushanka(src)
+	new /obj/item/clothing/head/valushanka(src)
 	new /obj/item/clothing/shoes/jackboots/cadian(src)
 	new /obj/item/clothing/shoes/jackboots/cadian(src)
 	new /obj/item/clothing/gloves/combat/cadian(src)

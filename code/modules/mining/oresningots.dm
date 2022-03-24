@@ -534,7 +534,6 @@
 		src.smelting = 0
 		new /obj/item/stack/material/phoron(src.loc)
 		src.coalfed -= 0.5
-		return
 
 
 //Gem washer

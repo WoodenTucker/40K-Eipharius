@@ -62,7 +62,6 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-//	alt_titles = list("Cook")
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 
 	equip(var/mob/living/carbon/human/H)
@@ -161,3 +160,66 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for cleaning and maintaining the outpost. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
+
+// Undertaker
+/mob/living/proc/assign_child_quirk()
+	if(prob(75))//75% of not choosing a quirk at all.
+		return
+	if(is_hellbanned())//Hellbanned people will never get quirks.
+		return
+	var/list/random_quirks = list()
+	for(var/thing in subtypesof(/datum/quirk))//Populate possible quirks list.
+		var/datum/quirk/Q = thing
+		random_quirks += Q
+	if(!random_quirks.len)//If there's somewhow nothing there afterwards return.
+		return
+	var/datum/quirk/chosen_quirk = pick(random_quirks)
+	if(chosen_quirk == /datum/quirk/cig_addict || chosen_quirk == /datum/quirk/alcoholic || chosen_quirk == /datum/quirk/obscura)
+		random_quirks -= list(
+			/datum/quirk/cig_addict,
+			/datum/quirk/alcoholic,
+			/datum/quirk/obscura
+			)
+		chosen_quirk = pick(random_quirks)
+		return
+	src.quirk = new chosen_quirk
+	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
+
+/datum/job/undertaker
+	title = "Undertaker"
+	department = "Service"
+	department_flag = CIV
+	social_class = SOCIAL_CLASS_MIN
+	total_positions = 3
+	spawn_positions = 3
+	latejoin_at_spawnpoints = TRUE
+	open_when_dead = 1
+	supervisors = "the Abbot and every adult you see."
+	selection_color = "#848484"
+	access = list(access_janitor, access_maint_tunnels, access_medical)
+	minimal_access = list(access_janitor, access_maint_tunnels, access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
+	announced = FALSE
+	auto_rifle_skill = 2
+	semi_rifle_skill = 2
+	sniper_skill = 2
+	shotgun_skill = 2
+	lmg_skill = 2
+	smg_skill = 2
+	melee_skill = 4
+	ranged_skill = 6
+	medical_skill = 5
+	engineering_skill = 2
+	surgery_skill = 5
+	species_role = "Child"
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(2,12), rand(2,12), rand(2,12), rand(2,8))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.witchblood()
+		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
+		H.assign_child_quirk()
+		H.set_trait(new/datum/trait/death_tolerant())
+		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Rogue Trader you owe him your life. However, you must earn your keep. The Rogue Trader has placed you in the charge of the Abbot who has you burying the dead. This is a vital task as it is said bodies that are left unburied are unable to move on to the Emperor's Grace! Make sure you bury any body you see! </font></b></span>")

@@ -177,7 +177,7 @@
 				return TRUE
 	return ..()
 
-/// FLAME FIRE
+/// FLAMER FIRE
 
 /obj/flamer_fire
 	name = "fire"
@@ -190,25 +190,27 @@
 	var/firelevel = 12 //Tracks how much "fire" there is. Basically the timer of how long the fire burns
 	var/burnlevel = 10 //Tracks how HOT the fire is. This is basically the heat level of the fire and determines the temperature.
 	var/flame_color = "red"
+	var/canSpreadDir = NORTH | SOUTH | EAST | WEST
 
-/obj/flamer_fire/New(loc, fire_lvl, burn_lvl, f_color, fire_spread_amount)
+/obj/flamer_fire/New(loc, fire_lvl, burn_lvl, f_color, fire_spread_amount, BlockedDirs)
 	..()
-	if(istype(loc, /turf/simulated/floor/exoplanet/water/shallow))//No catching the water on fire.
-		qdel(src)
-	playsound(src, "sound/effects/fire.ogg", 50, FALSE)
 	if (f_color)
 		flame_color = f_color
 
 	icon_state = "[flame_color]_2"
 	if(fire_lvl) firelevel = fire_lvl
 	if(burn_lvl) burnlevel = burn_lvl
+	if(BlockedDirs)
+		canSpreadDir &= ~BlockedDirs
 	START_PROCESSING(SSobj,src)
 
 	if(fire_spread_amount > 0)
 		var/turf/T
 		for(var/dirn in GLOB.cardinal)
+			if(!(dirn & canSpreadDir))
+				continue
 			T = get_step(loc, dirn)
-			if(istype(T,/turf/simulated/floor/exoplanet/water/shallow)) continue//Do not light the water on fire please.
+			if(istype(T,/turf/simulated/open)) continue
 			if(locate(/obj/flamer_fire) in T) continue //No stacking
 			var/new_spread_amt = T.density ? 0 : fire_spread_amount - 1 //walls stop the spread
 			if(new_spread_amt)
@@ -216,28 +218,30 @@
 					if(!O.CanPass(src, loc))
 						new_spread_amt = 0
 						break
-			spawn(0) //delay so the newer flame don't block the spread of older flames
-				new /obj/flamer_fire(T, fire_lvl, burn_lvl, f_color, new_spread_amt)
+			addtimer(CALLBACK(src, .proc/make_more_fire,T, fire_lvl, burn_lvl, f_color, new_spread_amt, ~canSpreadDir), 0) //Do not put spawns in recursive things.
 
+/obj/flamer_fire/proc/make_more_fire(var/T, var/f_level, var/b_level, var/fcolor, var/new_spread, var/blockedDirs)
+	new /obj/flamer_fire(T, f_level, b_level, fcolor, new_spread, blockedDirs)
 
 /obj/flamer_fire/Destroy()
 	set_light(0)
 	STOP_PROCESSING(SSobj,src)
 	. = ..()
 
-
 /obj/flamer_fire/Crossed(mob/living/M) //Only way to get it to reliable do it when you walk into it.
 	if(istype(M))
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
-			if(istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			if(istype(H.wear_suit, /obj/item/clothing/suit/fire) || istype(H.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(H.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(H.wear_suit, /obj/item/clothing/suit/armor/ordohereticus))
+				H.show_message(text("Your suit protects you from the flames."),1)
+				H.adjustFireLoss(burnlevel*0.25) //Does small burn damage to a person wearing one of the suits.
 				return
 		M.adjust_fire_stacks(burnlevel) //Make it possible to light them on fire later.
 		if (prob(firelevel + 2*M.fire_stacks)) //the more soaked in fire you are, the likelier to be ignited
 			M.IgniteMob()
 
 		M.adjustFireLoss(round(burnlevel*0.5)) //This makes fire stronk.
-
+		to_chat(M, "<span class='danger'>You are burned!</span>")
 
 /obj/flamer_fire/proc/updateicon()
 	if(burnlevel < 15)
@@ -245,14 +249,13 @@
 	switch(firelevel)
 		if(1 to 9)
 			icon_state = "[flame_color]_1"
-			set_light(2)
+			set_light(2, l_color = "#E38F46")
 		if(10 to 25)
 			icon_state = "[flame_color]_2"
-			set_light(4)
+			set_light(4, l_color = "#E38F46")
 		if(25 to INFINITY) //Change the icons and luminosity based on the fire's intensity
 			icon_state = "[flame_color]_3"
-			set_light(6)
-
+			set_light(6, l_color = "#E38F46")
 
 /obj/flamer_fire/Process()
 	var/turf/T = loc
@@ -267,17 +270,16 @@
 		qdel(src)
 		return
 
-	var/j = 0
-	for(var/i in loc)
-		if(++j >= 11) break
-		if(isliving(i))
-			var/mob/living/I = i
-			if(istype(I,/mob/living/carbon/human))
-				var/mob/living/carbon/human/M = I
-				if(istype(M.wear_suit, /obj/item/clothing/suit/fire))
-					continue
-			I.adjust_fire_stacks(burnlevel) //If i stand in the fire i deserve all of this. Also Napalm stacks quickly.
-			I.IgniteMob()
+	for(var/mob/living/I in loc)
+		if(istype(I,/mob/living/carbon/human))
+			var/mob/living/carbon/human/M = I
+			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit, /obj/item/clothing/suit/armor/ordohereticus))
+				M.show_message(text("Your suit protects you from the flames."),1)
+				M.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
+				continue
+		I.adjust_fire_stacks(burnlevel) //If i stand in the fire i deserve all of this. Also Napalm stacks quickly.
+		if(prob(firelevel)) I.IgniteMob()
+		I.show_message(text("<span class='warning'>You are burned!</span>"),1)
 
 	//This has been made a simple loop, for the most part flamer_fire_act() just does return, but for specific items it'll cause other effects.
 	firelevel -= 2 //reduce the intensity by 2 per tick

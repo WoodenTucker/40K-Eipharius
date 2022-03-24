@@ -92,7 +92,7 @@
 	pda_slot = null
 
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Ministorum Confessor-Millitant")
+	name = OUTFIT_JOB_NAME("Ministorum Confessor")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain

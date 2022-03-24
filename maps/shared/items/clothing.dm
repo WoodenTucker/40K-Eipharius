@@ -1,7 +1,7 @@
 //I'LL MOVE THIS SOMEWHERE ELSE SOON AS I GET TO IT
 /obj/item/clothing/under/rank/undertaker
 	name = "undertaker's uniform"
-	desc = "A suit worn by that creepy guy who messes with dead bodies."
+	desc = "A suit worn by that creepy kid who messes with dead bodies."
 	icon_state = "undertaker"
 	worn_state = "undertaker"
 	item_state = "undertaker"

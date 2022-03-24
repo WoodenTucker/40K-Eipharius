@@ -524,7 +524,7 @@
 			blow()
 
 /obj/structure/dud
-	name = "unexploded mortar shell"
+	name = "unexploded mortar"
 	desc = "You'd better stay away from this one..."
 	icon = 'icons/obj/items/mortars.dmi'
 	icon_state = "dud"
@@ -542,8 +542,8 @@
 
 /obj/structure/dud/proc/blow()
 	GLOB.mines_tripped++
-	explosion(src.loc,2.5,3.5,5.5,flame_range = 2.5)
 	fragmentate(get_turf(src), 72)
+	explosion(src.loc,1,1,4,flame_range = 2)
 	qdel(src)
 
 

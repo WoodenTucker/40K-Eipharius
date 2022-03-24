@@ -1269,19 +1269,22 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/engineering/solars)
 "cJ" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 1
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
 	},
-/area/cadiaoutpost/oa/shuttle/aquila)
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
 "cK" = (
 /obj/structure/shuttle/engine/propulsion,
 /turf/simulated/open,
 /turf/simulated/shuttle/wall/corner/smoothwhite{
 	icon_state = "corner_white";
-	dir = 6
+	dir = 1
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
 "cL" = (
@@ -1423,6 +1426,34 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/theforest)
+"cZ" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/open,
+/turf/simulated/shuttle/wall/corner/smoothwhite{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/area/cadiaoutpost/oa/shuttle/aquila)
+"da" = (
+/obj/effect/floor_decal/carpet/blue2{
+	dir = 8
+	},
+/obj/effect/floor_decal/carpet/blue2,
+/obj/effect/floor_decal/carpet/blue2{
+	dir = 10
+	},
+/obj/item/modular_computer/console/preset/command,
+/turf/simulated/floor/carpet/blue2,
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"db" = (
+/obj/machinery/light,
+/obj/machinery/firealarm{
+	pixel_y = -30
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "de" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/woodentable{
@@ -1711,20 +1742,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"jN" = (
-/obj/machinery/firealarm{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 8
-	},
-/obj/effect/floor_decal/carpet/blue2,
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 10
-	},
-/obj/item/modular_computer/console/preset/command,
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "kq" = (
 /obj/effect/floor_decal/carpet/blue2,
 /obj/structure/bed/chair/comfy/captain{
@@ -25395,7 +25412,7 @@ cm
 cm
 cm
 cm
-cJ
+cK
 aw
 aD
 fB
@@ -26423,7 +26440,7 @@ cm
 cm
 cm
 cm
-cK
+cZ
 aE
 aD
 fB
@@ -31590,8 +31607,8 @@ cc
 UB
 cn
 cp
-jN
-td
+da
+db
 vn
 vn
 uV
@@ -38239,7 +38256,7 @@ aJ
 ai
 aw
 Zo
-am
+cS
 Zo
 Zo
 cD
@@ -38496,7 +38513,7 @@ Zo
 bl
 Zo
 Zo
-am
+cS
 Zo
 GB
 cD
@@ -38753,7 +38770,7 @@ Zo
 bl
 Zo
 GB
-am
+cS
 aQ
 ue
 cD
@@ -39010,7 +39027,7 @@ Zo
 bl
 aQ
 ue
-am
+cS
 aQ
 ue
 cD
@@ -39267,7 +39284,7 @@ GB
 bl
 aQ
 ue
-am
+cS
 aQ
 ue
 cD
@@ -39524,7 +39541,7 @@ ue
 bl
 aQ
 ue
-am
+cS
 aQ
 ue
 cD
@@ -39781,7 +39798,7 @@ ue
 bl
 aQ
 rf
-am
+cS
 aQ
 ue
 cD
@@ -40038,7 +40055,7 @@ ue
 cy
 aQ
 ue
-am
+cT
 aQ
 ue
 cE
@@ -40552,7 +40569,7 @@ QJ
 cA
 aQ
 QJ
-aE
+cJ
 aQ
 QJ
 cG
@@ -40809,7 +40826,7 @@ QJ
 bl
 aQ
 QJ
-am
+cS
 aQ
 QJ
 cD
@@ -41066,7 +41083,7 @@ QJ
 bl
 aQ
 QJ
-am
+cS
 aQ
 QJ
 cD
@@ -41323,7 +41340,7 @@ GB
 bl
 aQ
 QJ
-am
+cS
 aQ
 QJ
 cD
@@ -41580,7 +41597,7 @@ Zo
 bl
 aQ
 QJ
-am
+cS
 aQ
 QJ
 cD
@@ -41837,7 +41854,7 @@ Zo
 bl
 Zo
 GB
-am
+cS
 Zo
 GB
 cD
@@ -42094,7 +42111,7 @@ aW
 am
 Zo
 Zo
-am
+cS
 Zo
 Zo
 cD
@@ -42351,7 +42368,7 @@ ai
 ai
 aE
 Zo
-ai
+cD
 aE
 Zo
 cD

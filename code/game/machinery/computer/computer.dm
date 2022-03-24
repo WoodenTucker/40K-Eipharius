@@ -194,18 +194,17 @@
 
 /obj/machinery/computer/exterminatus/proc/exterminatus()
 	firing = 1	//Are we already firing?
-
 	ticker.station_heretics_cinematic()
 	return
 
 /obj/machinery/computer/exterminatus/proc/move()
-	to_chat(usr, "\red Affirmative, re-aligning fleet into bombardment formation. May the Emperor forgive us for what we are about to do.")
+	to_chat(usr, "<span class='notice'><b><font size=2>Affirmative, re-aligning fleet into bombardment formation. May the Emperor forgive us for what we are about to do.</font></b></span>")
 	if(!moving)
 		spawn (0)
 			moving = 1
 			playsound(src.loc,'sound/effects/droppod.ogg',75,1)
 			sleep(240)
-			to_world("As you peer into the sky, a dreaded chill runs down your spine. For you thought that the utter monstrosity you are having the misfortune of gazing upon was legend, not reality.. A Black Ship of the Ordo Hereticus coldly stares back at you. Pray to your god, or gods, for there is no escaping the Emperor's Wrath...")
+			to_world("<span class='notice'><b><font size=2>As you peer into the sky, a dreaded chill runs down your spine. For you thought that the utter monstrosity you are having the misfortune of gazing upon was legend, not reality.. A Black Ship of the Ordo Hereticus coldly stares back at you. Pray to your god, or gods, for there is no escaping the Emperor's Wrath...</font></b></span>")
 			inrange = 1	//Now in range
 			moving = 0
 			return

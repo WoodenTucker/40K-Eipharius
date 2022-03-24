@@ -385,20 +385,14 @@
 /area/cadiaoutpost/oa/caves)
 "ba" = (
 /obj/effect/floor_decal/turf/barnew,
-/obj/item/coin/platinum,
-/obj/item/card/id/innkey1,
-/obj/item/card/id/innkey2,
-/obj/item/card/id/innkey3,
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/machinery/button/remote/blast_door/lever{
-	color = "grey";
-	desc = "A worn down, rusted, lever. It controls something.";
-	id = "innshut";
-	name = "dulled lever";
-	pixel_x = -32;
-	pixel_y = 0
+/obj/machinery/door/blast/grates{
+	dir = 4;
+	icon_state = "gshutter1";
+	id = "inn"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
@@ -433,6 +427,18 @@
 /obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"bf" = (
+/obj/effect/floor_decal/turf/barnew,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/machinery/door/blast/grates{
+	dir = 4;
+	icon_state = "gshutter1";
+	id = "inn"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "bg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/wood{
@@ -564,6 +570,25 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"bw" = (
+/obj/effect/floor_decal/turf/barnew,
+/obj/item/coin/platinum,
+/obj/item/card/id/innkey1,
+/obj/item/card/id/innkey2,
+/obj/item/card/id/innkey3,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/machinery/button/remote/blast_door/lever{
+	color = "grey";
+	desc = "A worn down, rusted, lever. It controls something.";
+	id = "inn";
+	name = "dulled lever";
+	pixel_x = -32;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "by" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -3911,31 +3936,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
-"jI" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/door/blast/grates{
-	dir = 4;
-	icon_state = "gshutter1";
-	id = "biocogitatumgtfo"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
-"jJ" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/door/blast/grates{
-	dir = 4;
-	icon_state = "gshutter1";
-	id = "biocogitatumgtfo"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "jK" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/light/small/red{
@@ -29404,7 +29404,7 @@ lO
 at
 aN
 aR
-ba
+bw
 Nk
 ag
 Qp
@@ -29915,11 +29915,11 @@ ve
 ha
 ha
 ha
-jI
-jI
-jJ
-jI
-jJ
+ba
+ba
+bf
+ba
+bf
 ha
 mg
 mg

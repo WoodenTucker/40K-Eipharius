@@ -1241,6 +1241,40 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"cj" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/spline/plain{
+	dir = 1;
+	icon_state = "spline_plain"
+	},
+/obj/structure/bed/roller{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
+"ck" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/spline/plain{
+	dir = 10;
+	icon_state = "spline_plain"
+	},
+/obj/structure/bed/roller{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
 "cl" = (
 /obj/machinery/sleeper{
 	color = null
@@ -1262,12 +1296,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "cn" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/plain{
-	dir = 1;
-	icon_state = "spline_plain"
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
 	},
-/obj/structure/bed/roller,
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/spline/plain,
 /obj/structure/bed/roller{
 	color = "grey"
 	},
@@ -1609,6 +1645,26 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
+"cS" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/spline/plain{
+	dir = 6;
+	icon_state = "spline_plain"
+	},
+/obj/structure/bed/roller{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
 "cT" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -1887,54 +1943,6 @@
 	},
 /obj/structure/bed/roller{
 	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/medicae)
-"dy" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/plain{
-	dir = 10;
-	icon_state = "spline_plain"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/medicae)
-"dz" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/plain,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/medicae)
-"dA" = (
-/obj/structure/cable{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8";
-	pixel_y = 0
-	},
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/plain{
-	dir = 6;
-	icon_state = "spline_plain"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -4002,14 +4010,6 @@
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"pA" = (
-/turf/simulated/floor/reinforced{
-	name = "shuttle roof"
-	},
-/turf/simulated/floor/reinforced{
-	name = "shuttle roof"
-	},
-/area/cadiaoutpost/oa/service/bar)
 "pC" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -38922,7 +38922,7 @@ cb
 bK
 bQ
 dv
-dy
+ck
 bK
 dh
 lV
@@ -39177,9 +39177,9 @@ bo
 bI
 cb
 bK
-cn
+cj
 cu
-dz
+cn
 bK
 di
 lV
@@ -39436,7 +39436,7 @@ cb
 bK
 cr
 dx
-dA
+cS
 bK
 dj
 lV
@@ -42233,8 +42233,8 @@ Tf
 Tf
 du
 du
-pA
-pA
+kx
+kx
 jL
 jL
 jL
@@ -44289,8 +44289,8 @@ Tf
 Tf
 du
 du
-pA
-pA
+kx
+kx
 jL
 jL
 jL

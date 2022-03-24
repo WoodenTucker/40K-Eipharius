@@ -4,8 +4,8 @@
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
-	name = "\improper Boscolet Frontiersman"
-	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."
+	name = "\improper Boscolet Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
@@ -21,6 +21,105 @@
 	fire_delay= 4.5
 	force = 15
 
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/attackby(var/obj/item/screwdriver/O,  var/mob/user, var/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/G)
+		qdel(G)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly attaches a scope to the [O] and adjusts it's firing mechanism.")
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
+	name = "\improper Boscolet Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
+	icon_state = "boltactionsharp"
+	item_state = "boltactionsharp"
+	empty_icon = "boltactionsharp-e"
+	accuracy = -0.075
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/attackby(var/obj/item/screwdriver/O,  var/mob/user, var/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/G)
+		qdel(G)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly detaches a scope from the [O] and adjusts it's firing mechanism back.")
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/heavysniper/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
+	name = "Mark IV .338 Stub Rifle"
+	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
+	icon_state = "needler"
+	item_state = "needler"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	caliber = ".338"
+	screen_shake = 1.2 //extra kickback
+	max_shells = 10
+	ammo_type = /obj/item/ammo_casing/lp338
+	one_hand_penalty = 50
+	accuracy = -2
+	gun_type = GUN_SNIPER
+	far_fire_sound = "sniper_fire"
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2.5)
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
+	name = "Mark IVb Needler Sniper Rifle"
+	desc = "Powerful needler rifle, chambered in .338 and issued to the Adeptus Astartes for long-range assasinations."
+	fire_sound = 'sound/weapons/guns/fire/needler_fire.ogg'
+	far_fire_sound = "needler_fire"
+
+/obj/item/ammo_magazine/lp338
+	name = "magazine (.338 Lapua Magnum)"
+	icon_state = "needler"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".338"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/lp338
+	max_ammo = 10
+	multiple_sprites = 0
+
+/obj/item/ammo_magazine/lp338/jhp
+	name = "magazine (.338 Lapua Magnum JHP)"
+	ammo_type = /obj/item/ammo_casing/lp338/jhp
+
+/obj/item/ammo_magazine/lp338/jhp/empty
+	ammo_type = /obj/item/ammo_casing/lp338/jhp
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/lp338/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/lp338/needler
+	name = "magazine (.338 Needler Rifle)"
+	desc = "Toxin-coated needles, when you need to deal with some extradimensional baddies to not ruin the reality. Or to just kill an enemy leader with style."
+	ammo_type = /obj/item/ammo_casing/lp338/needler
+	max_ammo = 5
+
+/obj/item/ammo_magazine/lp338/needler/empty
+	ammo_type = /obj/item/ammo_casing/lp338/needler
+	initial_ammo = 0
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 	name = "\improper Triangong 4-46"
@@ -45,7 +144,7 @@
 	desc += " This one has a bayonet."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
-	name = "\improper Lever Rifle"
+	name = "\improper Snapper Pattern Stub Rifle"
 	desc = "The lever action version of the Stub Rifle. Has all the same benefits and issues."
 	icon_state = "leverchester"
 	item_state = "leverchester"
