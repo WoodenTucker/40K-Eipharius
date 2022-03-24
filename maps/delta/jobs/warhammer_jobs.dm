@@ -29,7 +29,7 @@
 	/datum/job/enforcer,
 	/datum/job/innkeeper,
 	/datum/job/hydro,
-	/datum/job/service/undertaker,
+	/datum/job/undertaker,
 	/datum/job/penitent,
 	)
 
