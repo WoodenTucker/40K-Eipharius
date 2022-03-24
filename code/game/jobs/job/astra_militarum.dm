@@ -76,7 +76,12 @@
 		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
+
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
+
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
+
 		var/troopnum = rand(1,50000)
 		switch(title)
 			if("Krieg Guardsman")
