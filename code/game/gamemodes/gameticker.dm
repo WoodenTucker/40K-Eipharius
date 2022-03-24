@@ -277,7 +277,7 @@ Exterminatus
 
 		var/obj/structure/bed/temp_buckle = new(src)
 		world << sound('sound/effects/heresy.ogg')
-		sleep(74)
+		flick("heretics",cinematic)
 		for(var/mob/living/carbon/human/M in world)
 			M.buckled = temp_buckle
 			if(M.client)
@@ -294,7 +294,6 @@ Exterminatus
 					M.death(0) //no mercy
 				if(T && T.z==5)						//getturf, getturf z level
 					M.death(1) //some mercy
-		flick("heretics",cinematic)
 
 
 		sleep(200)
