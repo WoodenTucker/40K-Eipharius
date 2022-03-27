@@ -21,11 +21,11 @@
 	fire_delay= 4.5
 	force = 15
 
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/attackby(var/obj/item/screwdriver/O as obj,  var/mob/user as mob)
-		qdel(src)
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/verb/scope_attach()
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter (get_turf(src))
 		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
 		visible_message("[user] quickly attaches a scope to the [src] and adjusts it's firing mechanism.")
+		qdel(src)
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
 	name = "\improper Boscolet Pattern Stub Rifle"
@@ -35,7 +35,7 @@
 	empty_icon = "boltactionsharp-e"
 	accuracy = -0.075
 
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/attackby(var/obj/item/screwdriver/O as obj, var/mob/user as mob)
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach()
 		qdel(src)
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty (get_turf(src))
 		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
@@ -48,7 +48,7 @@
 
 	toggle_scope(usr, 2)
 
-/obj/item/gun/projectile/heavysniper/equipped(mob/user)
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/equipped(mob/user)
 	..()
 	if(user.zoomed)
 		user.do_zoom()
