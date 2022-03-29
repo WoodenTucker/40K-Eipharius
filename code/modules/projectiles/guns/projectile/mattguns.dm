@@ -21,7 +21,7 @@
 	fire_delay= 4.5
 	force = 15
 
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/verb/scope_attach()
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/verb/scope_attach(mob/user)
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter (get_turf(src))
 		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
 		visible_message("[user] quickly attaches a scope to the [src] and adjusts it's firing mechanism.")
@@ -35,11 +35,11 @@
 	empty_icon = "boltactionsharp-e"
 	accuracy = -0.075
 
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach()
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
 		qdel(src)
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty (get_turf(src))
 		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
-		visible_message("[user] quickly detaches a scope from the [src] and adjusts it's firing mechanism back.")
+		visible_message("[user] quickly detaches a scope from the [src] and adjusts it's firing mechanism.")
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope()
 	set category = "Object"
