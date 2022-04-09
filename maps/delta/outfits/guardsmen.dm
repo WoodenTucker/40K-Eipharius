@@ -212,7 +212,7 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/material/sword/commissword
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/commissar
+	shoes = /obj/item/clothing/shoes/jackboots/commissar
 	head = /obj/item/clothing/head/commissar
 	mask = null
 	glasses = null
@@ -247,7 +247,7 @@ Begin Warhammer loadouts
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
 	belt = /obj/item/melee/pcsword
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/commissar //cadian commissars also go to the schola progenium or whatever its called, they aren't salvages
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null
 	glasses = null
