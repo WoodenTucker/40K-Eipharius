@@ -8,7 +8,7 @@
 	belt = /obj/item/gun/projectile/bolter_pistol
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team
-	shoes = /obj/item/clothing/shoes/commandboots
+	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
@@ -42,7 +42,7 @@
 	l_ear = /obj/item/device/radio/headset/red_team
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/gun/projectile/talon
-	shoes = /obj/item/clothing/shoes/commandboots
+	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_type = /obj/item/card/id/silver
 	pda_type = null
 	pda_slot = null

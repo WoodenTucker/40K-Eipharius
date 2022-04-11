@@ -86,13 +86,16 @@
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
-
+	
+/* //"Duplicate" of noble boots
 /obj/item/clothing/shoes/commandboots
 	name = "boots of command"
 	desc = "Expensive leather boots that demand respect."
 	icon_state = "hopboots"
 	item_state = "hopboots"
 	species_restricted = null
+*/ 
+
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
 	desc = "A shined pair of shoes"
@@ -171,12 +174,14 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/shoes/commissar
+/obj/item/clothing/shoes/jackboots/commissar
 	name = "commissar boots"
 	desc = "Knee-high riding boots of an officer of the Officio Prefectus."
 	icon_state = "comm_boots"
 	item_state = "comm_boots"
 	species_restricted = list(SPECIES_HUMAN)
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 // Astartes Stuff
 
@@ -254,7 +259,7 @@
 	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 60)
+	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
 	siemens_coefficient = 1
 	can_hold_knife = 1
 	unacidable = 1
@@ -266,6 +271,8 @@
 	desc = "A pair of Power Boots issued to the Sororitas-Militant of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
 	icon_state = "sister"
 	item_state = "sister"
+	siemens_coefficient = 1
+	can_hold_knife = 1
 	canremove = 0
 	unacidable = 1
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)

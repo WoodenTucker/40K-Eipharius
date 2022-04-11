@@ -452,7 +452,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/material/sword/commissword
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/commissar
+	shoes = /obj/item/clothing/shoes/jackboots/commissar
 	head = /obj/item/clothing/head/commissar
 	mask = null
 	glasses = null
