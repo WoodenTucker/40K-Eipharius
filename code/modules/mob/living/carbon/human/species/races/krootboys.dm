@@ -29,7 +29,7 @@
 	H.age = rand(min_age,max_age)//Random age for kiddos.
 	if(H.f_style)//kroot don't get beards.
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.</span></big>")
+	to_chat(H, "<big><span class='warning'>Your a mercenary hired by the Tau. Obey whatever instructions they have, if you cannot communicate with any Tau immediately, then prepare a frontal base..</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 /mob/living/carbon/human
