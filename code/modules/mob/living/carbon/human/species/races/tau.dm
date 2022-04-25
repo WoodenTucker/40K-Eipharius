@@ -30,7 +30,7 @@
 	H.age = rand(20,35)//Random age for kiddos.
 	if(H.f_style)//tau don't get beards.
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>You wake up after a long flight to find yourself in Imperial space. Go to your Tau tab and stretch your muscles.</span></big>")
+	to_chat(H, "<big><span class='warning'>For the Greater Good! Our warship has arrived in orbital range to convert this world to the greater good. We must first try diplomacy, see if a water caste awakes so that we can trade and convince the humans that we are not the true enemy. In time they may learn to convert to the Greater Good..</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 /mob/living/carbon/human
