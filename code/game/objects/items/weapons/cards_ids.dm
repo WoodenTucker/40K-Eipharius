@@ -468,7 +468,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/dog_tag
 	var/warfare_faction = null
 	icon_state = "dogtag"
-	item_state = "gold_id"
+	item_state = "dogtag"
 	desc = "A metal dog tag. Functions like an ID."
 
 /obj/item/card/id/dog_tag/update_name()
@@ -485,14 +485,22 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
-	access = list(access_maint_tunnels)
+	access = list(access_maint_tunnels, access_security)
+
+/obj/item/card/id/dog_tag/guardsman/update_name()
+	var/final_name = "[registered_name]"
+	if(military_rank && military_rank.name_short)
+		final_name = military_rank.name_short + " " + final_name
+	if(assignment)
+		final_name = final_name + " ([assignment])"
+	SetName(final_name)
 
 /obj/item/card/id/commissar
-	name = "identification card"
-	desc = "A card which represents honor of the Officio Prefectum and Commissar."
+	name = "officio prefectus dog tag"
+	desc = "A metal dog tag with a winged skull engraved on it's opposite side, representing honor of the Officio Prefectus and Commissar and functioning like an ID."
 	assignment = "Commissar"
-	icon_state = "gold"
-	item_state = "gold_id"
+	icon_state = "tagred"
+	item_state = "tagred"
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
@@ -507,8 +515,8 @@ var/const/NO_EMAG_ACT = -50
 	SetName(final_name)
 
 /obj/item/card/id/commissar/spare
-	name = "commissar's spare ID"
-	desc = "A spare card which represents honor of the Officio Prefectum and Commissar."
+	name = "commissar's spare dog tag"
+	desc = "A spare dog tag with a winged skull engraved on it's opposite side, representing honor of the Officio Prefectum and Commissar."
 
 /obj/item/card/id/dog_tag/kroot
 	icon_state = "tagred"

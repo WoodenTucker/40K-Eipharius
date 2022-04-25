@@ -376,13 +376,15 @@
 /turf/simulated/wall/concrete/strong/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "aZ" = (
-/obj/structure/stairs/west,
-/obj/structure/railing{
-	dir = 1
+/obj/effect/floor_decal/turf/checkers,
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/turf/simulated/open,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
+/obj/machinery/door/airlock/imperiumdoor{
+	req_access = list(63)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "ba" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/effect/decal/cleanable/dirt,
@@ -493,10 +495,9 @@
 /area/cadiaoutpost/oa/service/bar)
 "bm" = (
 /obj/effect/floor_decal/turf/checkers,
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/door/airlock/imperiumdoor{
+	req_access = list(63)
 	},
-/obj/machinery/door/airlock/imperiumdoor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "bn" = (
@@ -589,6 +590,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"bx" = (
+/obj/machinery/door/firedoor/multi_tile,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/door/airlock/multi_tile/metal/imperium,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/hallway/centralhall)
 "by" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -597,6 +607,14 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"bz" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Minor Imperialis Door - Astra Militarum";
+	req_access = list(63)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "bA" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -661,6 +679,13 @@
 /obj/structure/railing,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/western)
+"bI" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "bJ" = (
 /obj/structure/bed/chair/wood{
 	dir = 1;
@@ -686,6 +711,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"bM" = (
+/obj/machinery/door/window/westleft,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	dir = 4;
+	icon = 'icons/obj/sstairs.dmi';
+	icon_state = "above"
+	},
+/area/cadiaoutpost/oa/security)
 "bN" = (
 /obj/structure/table/rack,
 /obj/item/shield/riot,
@@ -723,11 +757,24 @@
 "bQ" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/magistratumpost)
-"bS" = (
-/obj/effect/floor_decal/turf/checkers,
-/obj/machinery/door/airlock/imperiumdoor,
-/turf/simulated/floor/tiled/dark,
+"bR" = (
+/obj/machinery/door/window/eastright,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	dir = 8;
+	icon = 'icons/obj/sstairs.dmi';
+	icon_state = "above";
+	name = "stairs"
+	},
 /area/cadiaoutpost/oa/security)
+"bS" = (
+/obj/structure/stairs/west,
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/simulated/open,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "bT" = (
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -2257,15 +2304,6 @@
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/cargo/mailroom)
-"fH" = (
-/obj/machinery/door/firedoor/multi_tile,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/door/airlock/multi_tile/metal/maintenance,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "fI" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
@@ -2481,6 +2519,9 @@
 /area/cadiaoutpost/oa/gatehouse)
 "gm" = (
 /obj/effect/landmark/start/warden,
+/obj/structure/defensive_barrier/fixed{
+	dir = 1
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3451,10 +3492,16 @@
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
-/obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
-/obj/item/reagent_containers/food/drinks/bottle/premiumvodka,
+/obj/item/reagent_containers/food/drinks/bottle/premiumvodka{
+	desc = "Premium distilled rahzvod";
+	name = "Premium Tridistilled Rahzvod"
+	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
 /obj/effect/floor_decal/turf/plating,
+/obj/item/reagent_containers/food/drinks/bottle/premiumvodka{
+	desc = "Premium distilled rahzvod";
+	name = "Premium Tridistilled Rahzvod"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "iD" = (
@@ -3668,7 +3715,6 @@
 /obj/effect/floor_decal/turf/rectangles,
 /obj/item/stack/thrones2/five,
 /obj/random/shoes,
-/obj/item/device/radio/headset/red_team/voxcaster,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "jc" = (
@@ -4042,7 +4088,6 @@
 /obj/item/clothing/head/helmet/hard_had,
 /obj/item/clothing/head/helmet/hard_had,
 /obj/item/clothing/head/helmet/hard_had,
-/obj/item/device/radio/headset/red_team/voxcaster,
 /obj/item/crowbar,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -5930,17 +5975,6 @@
 /obj/random/loot/sidearmammo,
 /turf/simulated/floor/carpet/green,
 /area/cadiaoutpost/oa/villageinside)
-"pb" = (
-/obj/effect/floor_decal/turf/checkers/two,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/imperiumdoor{
-	name = "Minor Imperialis Door - Astra Militarum";
-	req_access = list(63)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security)
 "pc" = (
 /obj/effect/floor_decal/turf/rectangles,
 /obj/machinery/door/unpowered/inn{
@@ -6245,7 +6279,10 @@
 /obj/effect/floor_decal/newcorner/red{
 	dir = 4
 	},
-/obj/machinery/microscope,
+/obj/machinery/microscope{
+	desc = "A highly advanced optical scanner capable of zooming up to 3000x.";
+	name = "high powered electronic-optical augury"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6663,7 +6700,7 @@
 "tS" = (
 /obj/machinery/door/airlock/hatch/simiel{
 	name = "Bridge";
-	req_access = list()
+	req_access = list(20)
 	},
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/plating/reinforced,
@@ -6752,7 +6789,7 @@
 "uW" = (
 /obj/machinery/door/airlock/hatch/simiel{
 	name = "Bridge";
-	req_access = list()
+	req_access = list(20)
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -6760,6 +6797,15 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
+"vb" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/turf/plating,
+/obj/random/loot/randomsupply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "vc" = (
 /obj/structure/closet/crate/bin,
 /turf/simulated/floor/tiled{
@@ -7132,6 +7178,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"xZ" = (
+/obj/structure/defensive_barrier/fixed{
+	dir = 1
+	},
+/obj/structure/defensive_barrier/fixed{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "ya" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 30
@@ -8328,6 +8385,15 @@
 	icon_state = "steel_dirty"
 	},
 /area/cadiaoutpost/oa/theforest)
+"HY" = (
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hallway/western)
 "Ia" = (
 /obj/structure/torchwall{
 	pixel_y = 16
@@ -9538,9 +9604,8 @@
 "RE" = (
 /obj/structure/toilet,
 /obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -9563,13 +9628,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/cargo/warehouse)
 "RP" = (
-/obj/structure/toilet,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
+/obj/structure/defensive_barrier/fixed{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/obj/structure/defensive_barrier/fixed{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "RT" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/cable{
@@ -9759,7 +9827,15 @@
 /obj/effect/floor_decal/newcorner/red/quarter{
 	dir = 4
 	},
-/obj/structure/closet/secure_closet/bar,
+/obj/structure/closet/secure_closet/bar{
+	icon_broken = "sparks";
+	icon_closed = "guncloset";
+	icon_locked = null;
+	icon_off = null;
+	icon_opened = "gunclosetopen";
+	icon_state = "guncloset";
+	locked = 0
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10004,6 +10080,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"UZ" = (
+/obj/effect/floor_decal/floordetail/edgedrain,
+/obj/structure/sink{
+	dir = 1;
+	pixel_y = -15
+	},
+/obj/structure/mirror{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/hallway/centralhall)
 "Vg" = (
 /obj/structure/torchwall,
 /turf/simulated/wall/concrete,
@@ -10037,14 +10124,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/security)
-"Vt" = (
-/obj/effect/floor_decal/turf/checkers/two,
-/obj/machinery/door/airlock/imperiumdoor{
-	name = "Minor Imperialis Door - Astra Militarum";
-	req_access = list(63)
-	},
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Vv" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -10128,7 +10207,9 @@
 /obj/effect/floor_decal/newcorner/red/quarter{
 	dir = 1
 	},
-/obj/machinery/suit_cycler,
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10298,11 +10379,12 @@
 "Xo" = (
 /obj/structure/toilet,
 /obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/obj/random/loot/lightmelee,
+/obj/item/reagent_containers/food/snacks/poo{
+	icon_state = "poop6"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Xp" = (
@@ -15264,7 +15346,7 @@ ae
 ae
 ae
 vj
-aZ
+bS
 rO
 xE
 rO
@@ -33183,7 +33265,7 @@ rx
 nZ
 rx
 Qy
-MR
+Bi
 pZ
 pZ
 lA
@@ -33701,13 +33783,13 @@ ao
 pZ
 MR
 MR
-pZ
 MR
 MR
-pZ
 MR
 MR
-pZ
+MR
+MR
+MR
 MR
 dg
 gC
@@ -34211,7 +34293,7 @@ rx
 PH
 nZ
 rx
-MR
+Bi
 pZ
 Nn
 MR
@@ -34472,14 +34554,14 @@ MR
 pZ
 Vs
 MR
-pZ
 MR
 MR
-pZ
 MR
 MR
-pZ
 MR
+MR
+xZ
+bM
 pZ
 ro
 ro
@@ -34726,7 +34808,7 @@ MR
 MR
 MR
 MR
-Vt
+bz
 MR
 MR
 MR
@@ -34970,9 +35052,9 @@ Es
 jr
 jo
 pZ
-bm
+aZ
 pZ
-bS
+bm
 pZ
 pZ
 pZ
@@ -34983,7 +35065,7 @@ Wy
 Wy
 WG
 Wy
-pb
+bI
 AI
 MR
 MR
@@ -35243,14 +35325,14 @@ MR
 pZ
 jP
 MR
-pZ
 MR
 MR
-pZ
 MR
 MR
-pZ
 MR
+MR
+RP
+bR
 pZ
 ro
 ro
@@ -36014,13 +36096,13 @@ MR
 pZ
 ya
 MR
-pZ
 MR
 MR
-pZ
 MR
 MR
-pZ
+MR
+MR
+MR
 MR
 dg
 gC
@@ -37041,7 +37123,7 @@ hR
 MR
 et
 et
-TT
+et
 TT
 ni
 et
@@ -37297,7 +37379,7 @@ pZ
 hR
 MR
 MR
-pZ
+vb
 et
 TT
 BF
@@ -39080,9 +39162,9 @@ En
 En
 En
 En
-cA
 En
-ZG
+En
+HY
 dn
 BA
 En
@@ -39589,7 +39671,7 @@ cA
 eG
 if
 Vr
-fk
+UZ
 cA
 cU
 cU
@@ -39846,7 +39928,7 @@ cA
 cA
 cA
 ZJ
-fk
+UZ
 cA
 cU
 cU
@@ -40100,7 +40182,7 @@ ro
 ro
 ro
 cA
-RP
+RE
 if
 Vr
 Vr
@@ -40115,7 +40197,7 @@ Qj
 pA
 pA
 pA
-fH
+bx
 gv
 gG
 gN
@@ -45231,7 +45313,7 @@ ro
 ro
 ro
 ro
-ro
+TF
 TF
 TF
 TF
@@ -45486,7 +45568,7 @@ xE
 rO
 ro
 ro
-ro
+TF
 TF
 TF
 dU
@@ -47542,7 +47624,7 @@ xE
 rO
 ro
 ro
-ro
+TF
 TF
 TF
 fi
@@ -47801,7 +47883,7 @@ ro
 ro
 ro
 ro
-ro
+TF
 TF
 TF
 TF
