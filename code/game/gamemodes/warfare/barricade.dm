@@ -89,6 +89,7 @@
 
 /obj/structure/defensive_barrier/proc/try_pack_up(var/mob/user)
 	if(fixed)
+		return FALSE
 
 	if(secured)
 		to_chat(user, SPAN_WARNING("\The [src] is secured in place and cannot be packed up. You will need to unsecure it with a screwdriver."))
