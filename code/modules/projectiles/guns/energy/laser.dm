@@ -243,27 +243,34 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 60
+	charge_cost = 100
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge", fire_delay = 3.3, move_delay=2, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		)
 
 /obj/item/gun/energy/las/lasgun/rare
-	name = "Kantrael M37 Lasgun"
-	desc = "The M37 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has a modified heatsink, heavier frame and crystal assembly."
+	name = "Custom Kantrael M36 Lasgun"
+	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has modified heatsink and rearranged crystal assembly."
 	armor_penetration = 10
 	force = 15
 	one_hand_penalty = 1.9
-	charge_cost = 70
+	charge_cost = 60
 
-/obj/item/gun/energy/las/lasgun/luscius
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge", fire_delay = 3.3, move_delay=2, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
+		)
+
+/obj/item/gun/energy/las/lasgun/lucius
 	name = "Lucius No.98 Lasgun"
-	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat."
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat."
 	icon_state = "luscius"
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -274,29 +281,20 @@ obj/item/gun/energy/retro
 	accuracy = 0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/las/lusgun
-	charge_cost = 80
+	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
+	charge_cost = 200
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
 
-
 	firemodes = list(
-		list(mode_name="semiauto", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=400),
 		)
 
-/obj/item/gun/energy/las/lasgun/luscius/rare
-	name = "Lucius No.99 Lasgun"
-	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
-	armor_penetration = 8
-	force = 12
-	one_hand_penalty = 1.8
-	fire_delay = 3.5
-	charge_cost = 80
-
-/obj/item/gun/energy/las/boarding
-	name = "Thilium boarding Lascarbine"
-	desc = "The Thilium-pattern lascarbine, Is a special type of larcarbines used for CQC."
+/obj/item/gun/energy/las/lasgun/catachan
+	name = "Catachan Mark IV Lascarbine"
+	desc = "The Mark IV lascarbine is a special lascarbine used by Catachan Jungle Fighters for CQC purposes."
 	icon_state = "boarding"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -315,13 +313,14 @@ obj/item/gun/energy/retro
 	fire_delay = 1 // 0.2 seconds
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=2, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=2.2, move_delay=1, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
-	name = "Kantrael M36 'Veteran Configuration' Lasgun"
-	desc = "This M36 has been upgraded to consume less energy from the power pack."
+	name = "Kantrael M36 \"Veteran Configuration\" Lasgun"
+	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. This variant has been upgraded to consume less energy from the ammo cell."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -337,15 +336,30 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
 
-
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine
-	name = "Catachan Mark 4 Lascarbine"
-	desc = "The Catachan modified the standard Kantrael by having the stock cut in half, reduced receiver and barrel length for better close-quarter engagements and mobility."
+/obj/item/gun/energy/las/lasgun/lucius/tinkered
+	name = "Lucius No.98 \"Veteran Configuration\" Lasgun"
+	desc = "A Lucius-pattern lasgun No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
+	armor_penetration = 15
+	force = 12
+	one_hand_penalty = 1.8
+	fire_delay = 3.5
+	charge_cost = 150
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=300),
+		)
+
+/obj/item/gun/energy/las/lasgun/tinkered/catachan
+	name = "Catachan Mark IV \"Veteran Configuration\" Lascarbine"
+	desc = "The Mark IV lascarbine is a special lascarbine used by Catachan Jungle Fighters for CQC purposes. This variant has a modified heatsink and crystal assembly."
 	icon_state = "lascar"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -357,19 +371,20 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 40
+	charge_cost = 30
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=2.75,    move_delay=1, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
 		)
 
 /obj/item/gun/energy/las/laspistol
-	name = "Kantrael MG Defender Laspistol"
-	desc = "Cadian made service laspistol for Cadian Enlisted, Non-Commissioned and Mechanicum Retinue."
+	name = "Kantrael MG Laspistol"
+	desc = "Cadian made service laspistol for enlisted personnel, non-commissioned officers, or Mechanicum Retinue."
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
@@ -379,50 +394,82 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 120
+	charge_cost = 100
 	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=2.2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		)
 
-/obj/item/gun/energy/las/laspistol/heavy
-	name = "Kantrael Heavy Laspistol"
-	desc = "Cadian made service laspistol for Cadian Enlisted, Non-Commissioned and Mechanicum Retinue."
+/obj/item/gun/energy/las/laspistol/mechanicus
+	name = "Adeptus Mechanicus Kantrael MG Laspistol"
+	desc = "Cadian made service laspistol for enlisted personnel, non-commissioned officers, or Mechanicum Retinue. This instance has been modified to concentrate the beam, resulting in more powerful shot for Adeptus Mechanicus purposes."
 	move_delay= 1.2
 	one_hand_penalty = 1
 	accuracy = -1.2
 	fire_delay= 3
-	armor_penetration = 12
+	armor_penetration = 12.5
 
-/obj/item/gun/energy/pulse/pulserifle
-	name = "pulse rifle"
-	desc = "The standard-issue pulse rifle of the Fire Warrior Caste"
-	icon_state = "pulseb"
-	item_state = "pulseb"
+/obj/item/gun/energy/las/laspistol/commissar
+	name = "Officio Prefectus Kantrael MG Laspistol"
+	desc = "Cadian made service laspistol for enlisted personnel, non-commissioned officers, or Mechanicum Retinue. This instance has been modified to amplify the overcharge mode for Officio Prefectus purposes."
+	move_delay= 1.2
+	one_hand_penalty = 1
+	accuracy = -1.2
+	fire_delay= 3
+	armor_penetration = 12.5
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		list(mode_name="execution", fire_delay = 4.8, move_delay=2, one_hand_penalty=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
+		)
+
+/obj/item/gun/energy/las/lasgun/longlas
+	name = "M35 'M-Galaxy' Longlas"
+	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
+	icon_state = "longlas"
+	item_state = "longlas"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
-	one_hand_penalty = 2
+	one_hand_penalty = 3.4
+	fire_delay = 4.5
 	accuracy = 0
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
-	cell_type = /obj/item/cell/pulserifle
-	ammoType = /obj/item/cell/pulserifle
-	wielded_item_state = "pulseb_wielded"
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
+	matter = list(DEFAULT_WALL_MATERIAL = 4000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
+	charge_cost = 200
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=4.5, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 4.95, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=300),
 		)
+
+/obj/item/gun/energy/las/lasgun/longlas/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/energy/las/lasgun/longlas/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+//Tau weapons
 
 /obj/item/gun/energy/pulse/ionrifle
 	name = "ION rifle"
-	desc = "The ION rifle is a high-energy device that makes a electromagnetic field and react explosively with the target as a result of direct transfer of energy at an atomic level."
+	desc = "The ION rifle is a high-energy device, firing electromagnetic fields that cause explosive reaction target as a result of direct transfer of energy at an atomic level."
 	icon_state = "ionriflet"
 	item_state = "ionriflet"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -438,12 +485,12 @@ obj/item/gun/energy/retro
 	wielded_item_state = "ionriflet-wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=40,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=40,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulsepistol
 	name = "pulse pistol"
-	desc = "The trusty sidearm of the Tau."
+	desc = "The trusty sidearm of the T'au Empire."
 	icon_state = "pulsep"
 	item_state = "pulsep"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
@@ -458,7 +505,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-auto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulserifle
@@ -479,6 +526,6 @@ obj/item/gun/energy/retro
 	wielded_item_state = "pulseb_wielded"
 
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)

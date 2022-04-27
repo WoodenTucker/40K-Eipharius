@@ -445,6 +445,14 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/inquisition/principal_agent
 	job_access_type = /datum/job/inquisitor
 
+/obj/item/card/id/inquisition/update_name()
+	var/final_name = "[registered_name]"
+	if(military_rank && military_rank.name_short)
+		final_name = military_rank.name_short + " " + final_name
+	if(assignment)
+		final_name = final_name + " ([assignment])"
+	SetName(final_name)
+
 /obj/item/card/id/civilian/chaplain
 	job_access_type = /datum/job/chaplain
 

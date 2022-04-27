@@ -136,6 +136,53 @@
 	damage = 20
 	armor_penetration = 10
 
+/obj/item/projectile/energy/las/lasgun/overcharge
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 35
+	armor_penetration = 15
+
+/obj/item/projectile/energy/las/lasgun/execution
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 400
+	armor_penetration = 40
+
+/obj/item/projectile/energy/las/lasgun/lucius
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 40
+
+/obj/item/projectile/energy/las/lasgun/lucius/overcharge
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 70
+	armor_penetration = 15
+
+/obj/item/projectile/energy/las/lasgun/longlas
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 35
+	armor_penetration = 15
+
+/obj/item/projectile/energy/las/lasgun/longlas/overcharge
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 60
+	armor_penetration = 20
+
 /obj/item/projectile/energy/pulse/pulserifle
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
@@ -160,10 +207,3 @@
 	armor_penetration = 20
 	agony = 50
 	stun = 5
-
-/obj/item/projectile/energy/las/lusgun
-	name = "lasbolt"
-	fire_sound='sound/weapons/lasgun.ogg'
-	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "lasbolt"
-	damage = 40
