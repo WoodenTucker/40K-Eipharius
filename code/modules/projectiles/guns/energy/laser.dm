@@ -271,7 +271,7 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/lasgun/lucius
 	name = "Lucius No.98 Lasgun"
 	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat."
-	icon_state = "luscius"
+	icon_state = "lucius"
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
@@ -289,13 +289,13 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=400),
+		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=375),
 		)
 
 /obj/item/gun/energy/las/lasgun/catachan
 	name = "Catachan Mark IV Lascarbine"
 	desc = "The Mark IV lascarbine is a special lascarbine used by Catachan Jungle Fighters for CQC purposes."
-	icon_state = "boarding"
+	icon_state = "lascar"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
@@ -319,7 +319,7 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
-	name = "Kantrael M36 \"Veteran Configuration\" Lasgun"
+	name = "Kantrael M36 'Veteran Configuration' Lasgun"
 	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. This variant has been upgraded to consume less energy from the ammo cell."
 	icon_state = "lasgun"
 	item_state = "lasgun"
@@ -343,7 +343,7 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/lucius/tinkered
-	name = "Lucius No.98 \"Veteran Configuration\" Lasgun"
+	name = "Lucius No.98 'Veteran Configuration' Lasgun"
 	desc = "A Lucius-pattern lasgun No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
 	armor_penetration = 15
 	force = 12
@@ -358,7 +358,7 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered/catachan
-	name = "Catachan Mark IV \"Veteran Configuration\" Lascarbine"
+	name = "Catachan Mark IV 'Veteran Configuration' Lascarbine"
 	desc = "The Mark IV lascarbine is a special lascarbine used by Catachan Jungle Fighters for CQC purposes. This variant has a modified heatsink and crystal assembly."
 	icon_state = "lascar"
 	item_state = "lascar"
@@ -384,7 +384,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
-	desc = "Cadian made service laspistol for enlisted personnel, non-commissioned officers, or Mechanicum Retinue."
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
@@ -405,9 +405,33 @@ obj/item/gun/energy/retro
 		list(mode_name="overcharge",       burst=1, fire_delay=2.2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		)
 
+/obj/item/gun/energy/las/laspistol/defender
+	name = "Kantrael MG Defender Laspistol"
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears no markings except standard serial number and the Imperial Aquila, belonging to a civilian modification."
+	icon_state = "laspistolciv"
+
+/obj/item/gun/energy/las/laspistol/militarum
+	name = "Astra Militarum Kantrael MG Laspistol"
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers"
+
+/obj/item/gun/energy/las/laspistol/militarum/lucius
+	name = "Astra Militarum Lucius-pattern Laspistol"
+	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
+	force = 10
+	one_hand_penalty = 2.55
+	accuracy = -0.6
+	fire_delay = 2.7
+	armor_penetration = 8.75
+	charge_cost = 200
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=3,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=375),
+		)
+
 /obj/item/gun/energy/las/laspistol/mechanicus
 	name = "Adeptus Mechanicus Kantrael MG Laspistol"
-	desc = "Cadian made service laspistol for enlisted personnel, non-commissioned officers, or Mechanicum Retinue. This instance has been modified to concentrate the beam, resulting in more powerful shot for Adeptus Mechanicus purposes."
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified by Adeptus Mechanicus to concentrate the beam, resulting in more powerful shot for their self-defense purposes."
 	move_delay= 1.2
 	one_hand_penalty = 1
 	accuracy = -1.2
@@ -416,7 +440,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/laspistol/commissar
 	name = "Officio Prefectus Kantrael MG Laspistol"
-	desc = "Cadian made service laspistol for enlisted personnel, non-commissioned officers, or Mechanicum Retinue. This instance has been modified to amplify the overcharge mode for Officio Prefectus purposes."
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified to amplify the overcharge mode, issued to the Officio Prefectus for their purposes."
 	move_delay= 1.2
 	one_hand_penalty = 1
 	accuracy = -1.2
@@ -433,7 +457,7 @@ obj/item/gun/energy/retro
 	name = "M35 'M-Galaxy' Longlas"
 	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
 	icon_state = "longlas"
-	item_state = "longlas"
+	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
