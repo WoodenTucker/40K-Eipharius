@@ -8,6 +8,10 @@
 	step_x = 0;
 	step_y = 0
 	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4;
+	icon_state = "warningcorner_red"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "ab" = (
@@ -81,6 +85,9 @@
 	icon_state = "warningcorner_red"
 	},
 /obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning_red{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
@@ -236,12 +243,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"ax" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 9
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "ay" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/steel,
@@ -266,12 +267,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"aB" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "aC" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/cable{
@@ -376,6 +371,9 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
+/obj/effect/floor_decal/industrial/warning_red{
+	icon_state = "warningcorner_red"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "aL" = (
@@ -397,14 +395,22 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
+/obj/effect/floor_decal/industrial/warning_red,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "aN" = (
-/obj/effect/floor_decal/industrial/warning{
-	dir = 5
+/obj/effect/floor_decal/newcorner/red/diagonal,
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
+	},
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/area/cadiaoutpost/oa/engineering)
 "aO" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/statue/verina/broken{
@@ -475,11 +481,16 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "aU" = (
-/obj/effect/floor_decal/industrial/warning/corner{
+/obj/effect/floor_decal/newcorner/purple/diagonal,
+/obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/computer/rdconsole/core,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/area/cadiaoutpost/oa/research)
 "aV" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/table/standard{
@@ -491,14 +502,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae/virology)
-"aW" = (
-/obj/effect/landmark/runaway,
-/obj/effect/floor_decal/turf/bar2{
-	dir = 1;
-	icon_state = "bar2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "aX" = (
 /obj/structure/cable{
 	icon_state = "16-0"
@@ -507,15 +510,6 @@
 	icon_state = "0-8"
 	},
 /obj/structure/ladder/up,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
-"aY" = (
-/obj/effect/landmark/runaway,
-/obj/effect/landmark/evac/two,
-/obj/effect/floor_decal/turf/bar2{
-	dir = 1;
-	icon_state = "bar2"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "aZ" = (
@@ -556,11 +550,6 @@
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 5
 	},
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	maxhealth = 1500;
-	name = "Machinamentum"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "bd" = (
@@ -599,7 +588,8 @@
 "bg" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/chemical_dispenser/full{
-	color = "grey"
+	color = "grey";
+	emagged = 1
 	},
 /obj/structure/sign/sancposter/three{
 	pixel_y = 32
@@ -675,8 +665,8 @@
 "bm" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning,
-/obj/machinery/firealarm{
-	pixel_x = 0;
+/obj/machinery/button/remote/blast_door/lever{
+	id = "biocogitatumgtfo";
 	pixel_y = -30
 	},
 /turf/simulated/floor/tiled/dark,
@@ -720,7 +710,8 @@
 "bq" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/chemical_dispenser/full{
-	color = "grey"
+	color = "grey";
+	emagged = 1
 	},
 /obj/structure/sign/sancposter/two{
 	pixel_y = 32
@@ -794,13 +785,21 @@
 	},
 /area/cadiaoutpost/oa/medicae/storage)
 "bw" = (
-/obj/effect/landmark/runaway,
-/obj/effect/floor_decal/turf/bar2{
-	dir = 4;
-	icon_state = "bar2"
+/obj/machinery/light,
+/obj/effect/floor_decal/newcorner/red/diagonal,
+/obj/effect/floor_decal/newcorner/plating,
+/obj/effect/floor_decal/industrial/warning_red,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/blast/regular/open{
+	id = 16;
+	name = "Machinamentum Lockdown";
+	health = 500;
+	use_power = 0
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/area/cadiaoutpost/oa/engineering)
 "bx" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -1053,11 +1052,21 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "bU" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 4
+/obj/effect/floor_decal/newcorner/red/diagonal,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1
+	},
+/obj/machinery/door/blast/regular/open{
+	id = 16;
+	name = "Machinamentum Lockdown";
+	health = 500;
+	use_power = 0
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/area/cadiaoutpost/oa/engineering)
 "bV" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/statue/verina{
@@ -1085,16 +1094,16 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "bX" = (
-/obj/structure/sign/directions/evac{
-	dir = 1;
-	pixel_y = 30
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/grille,
+/obj/structure/window_frame{
+	color = "grey"
 	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/area/cadiaoutpost/oa/medicae)
 "bY" = (
 /obj/machinery/light{
 	dir = 8;
@@ -1289,10 +1298,6 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
-/obj/structure/sign/directions/evac{
-	dir = 1;
-	pixel_y = 30
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "cn" = (
@@ -1392,6 +1397,9 @@
 	},
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
@@ -1572,17 +1580,17 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "cM" = (
-/obj/structure/window_frame{
-	color = "grey"
-	},
-/obj/structure/grille,
-/obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
 	icon_state = "4-8";
 	pixel_y = 0
 	},
+/obj/structure/window_frame{
+	color = "grey"
+	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/grille,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -1769,11 +1777,9 @@
 	color = "grey";
 	dir = 4
 	},
-/obj/machinery/power/apc{
-	dir = 8;
-	pixel_x = -30
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
-/obj/structure/cable,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -1801,14 +1807,12 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "di" = (
-/obj/structure/sign/inkvd/two{
-	pixel_y = -32
+/obj/effect/floor_decal/newcorner/purple/diagonal,
+/obj/structure/bed/chair{
+	dir = 1
 	},
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/medicae)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/research)
 "dj" = (
 /obj/machinery/body_scanconsole{
 	color = "grey";
@@ -1838,6 +1842,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
+"dm" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "dn" = (
 /obj/structure/table/standard{
 	color = "grey"
@@ -1851,10 +1862,6 @@
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
 "dp" = (
-/obj/structure/table/steel,
-/obj/item/defibrillator/loaded{
-	color = "grey"
-	},
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1"
@@ -2058,11 +2065,9 @@
 	},
 /area/cadiaoutpost/oa/medicae/storage)
 "dN" = (
-/obj/effect/floor_decal/turf/brick,
 /obj/machinery/smartfridge/chemistry,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
+/turf/simulated/wall/ancient{
+	color = null
 	},
 /area/cadiaoutpost/oa/medicae)
 "dO" = (
@@ -2076,9 +2081,6 @@
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/research)
 "dQ" = (
-/obj/structure/table/steel,
-/obj/random/tech_supply,
-/obj/random/tech_supply,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
@@ -2098,11 +2100,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
-"dS" = (
-/obj/effect/floor_decal/newcorner/purple/diagonal,
-/obj/machinery/computer/rdconsole/core,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/research)
 "dT" = (
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/white{
@@ -2199,7 +2196,6 @@
 /obj/machinery/firealarm{
 	pixel_y = 30
 	},
-/obj/machinery/vending/phoronresearch,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "ef" = (
@@ -2350,6 +2346,18 @@
 	maxhealth = 1200;
 	name = "Cybersmithy"
 	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 1;
+	icon_state = "warningcorner_red"
+	},
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 4;
+	icon_state = "warningcorner_red"
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "ev" = (
@@ -2514,12 +2522,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"eJ" = (
-/obj/structure/railing,
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/medicae)
 "eK" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -2562,10 +2564,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	maxhealth = 1500;
-	name = "Machinamentum"
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Machinamentum";
+	maxhealth = 3000;
+	req_access = list(10);
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
@@ -2603,15 +2606,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
 "eR" = (
-/obj/effect/floor_decal/industrial/warning/corner,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/floor_decal/industrial/warning/corner,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 5
+	},
+/obj/structure/table/steel,
+/obj/random/tech_supply,
+/obj/random/tech_supply,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
 "eS" = (
@@ -2878,7 +2882,8 @@
 /obj/effect/floor_decal/turf/coldroom,
 /turf/simulated/floor/tiled{
 	color = "grey";
-	icon_state = "white1"
+	icon_state = "white1";
+	name = "freezer floor"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
 "fu" = (
@@ -2909,7 +2914,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "fx" = (
-/obj/machinery/shieldwallgen,
+/obj/machinery/vending/phoronresearch,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 9
@@ -2917,7 +2922,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "fy" = (
-/obj/machinery/shieldwallgen,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -2926,6 +2930,7 @@
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/machinery/vending/robotics,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "fz" = (
@@ -2936,7 +2941,8 @@
 /obj/effect/floor_decal/turf/coldroom,
 /turf/simulated/floor/tiled{
 	color = "grey";
-	icon_state = "white1"
+	icon_state = "white1";
+	name = "freezer floor"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
 "fA" = (
@@ -2948,7 +2954,8 @@
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
-	icon_state = "white1"
+	icon_state = "white1";
+	name = "freezer floor"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
 "fB" = (
@@ -3112,6 +3119,7 @@
 "fS" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/floordetail/edgedrain,
+/obj/machinery/light,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -3149,6 +3157,9 @@
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle"
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
@@ -3353,9 +3364,6 @@
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 4
 	},
-/obj/machinery/cryopod/robot{
-	name = "servitor storage unit"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3462,17 +3470,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"je" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4
-	},
-/obj/machinery/recharge_station{
-	name = "servitor recharging station"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/engineering)
 "jj" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
@@ -3928,8 +3925,11 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "oK" = (
-/obj/machinery/door/airlock/glass_engineering{
-	color = null
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Minor Machinamentum Door - Adeptus Mechanicus";
+	maxhealth = 3000;
+	req_access = list(10);
+	dir = 1
 	},
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -4079,7 +4079,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "qt" = (
-/obj/machinery/vending/robotics,
+/obj/machinery/shieldwallgen,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 6
@@ -4150,13 +4150,16 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "rW" = (
-/obj/structure/table/steel_reinforced,
-/obj/effect/floor_decal/turf/plating,
-/obj/random/tank,
-/obj/random/tank,
-/obj/random/tank,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/magoserrant)
+/obj/structure/grille,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/window_frame{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae/surgery)
 "rX" = (
 /turf/simulated/mineral/snowycave,
 /turf/simulated/floor/reinforced{
@@ -4815,10 +4818,13 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "xO" = (
-/obj/effect/floor_decal/industrial/warning_red,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/floor_decal/industrial/warning_red/corner{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning_red/corner,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5615,16 +5621,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
-"HX" = (
-/obj/machinery/door/airlock/glass_engineering{
-	color = null
-	},
-/obj/effect/floor_decal/newcorner/red/diagonal,
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/engineering)
 "HY" = (
 /obj/structure/table/rack/shelf,
 /obj/item/tank/jetpack/void,
@@ -5887,16 +5883,22 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
 "KE" = (
-/obj/effect/floor_decal/industrial/warning_red{
-	dir = 4
+/obj/machinery/power/apc{
+	dir = 8;
+	pixel_x = -30
 	},
-/obj/machinery/cryopod/robot{
-	name = "servitor storage unit"
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled{
+/obj/structure/table/steel,
+/obj/item/defibrillator/loaded{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/engineering)
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
 "KL" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/floor_decal/newcorner/red/diagonal,
@@ -5984,11 +5986,6 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/newcorner/red/diagonal,
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	maxhealth = 1500;
-	name = "Machinamentum"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "LQ" = (
@@ -6194,13 +6191,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
 "Om" = (
-/obj/machinery/recharge_station{
-	name = "servitor recharging station"
-	},
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 10
 	},
+/obj/machinery/shieldwallgen,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
 "Ow" = (
@@ -6225,11 +6220,14 @@
 /area/cadiaoutpost/oa/engineering)
 "OP" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
@@ -6544,6 +6542,7 @@
 	},
 /obj/random/maintenance,
 /obj/random/maintenance,
+/obj/machinery/cell_charger,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6652,10 +6651,11 @@
 "Uf" = (
 /obj/effect/floor_decal/industrial/warning_red,
 /obj/effect/floor_decal/newcorner/red/diagonal,
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	maxhealth = 1500;
-	name = "Machinamentum"
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Minor Machinamentum Door - Adeptus Mechanicus";
+	maxhealth = 3000;
+	req_access = list(10);
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
@@ -6832,8 +6832,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "Vs" = (
-/turf/simulated/wall,
-/area/cadiaoutpost/oa/medicae)
+/obj/effect/floor_decal/industrial/warning_red{
+	dir = 8
+	},
+/obj/machinery/recharger/wallcharger{
+	pixel_x = -28
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/engineering)
 "Vt" = (
 /turf/simulated/wall/ancient{
 	color = null
@@ -6892,9 +6900,11 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "We" = (
-/turf/simulated/wall/ancient{
-	color = null
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 4
 	},
+/turf/simulated/floor,
 /area/cadiaoutpost/gma/air)
 "Wj" = (
 /obj/structure/bed/padded,
@@ -25546,8 +25556,8 @@ MQ
 Ng
 SG
 US
-US
-US
+Vs
+Vs
 US
 US
 bh
@@ -26060,10 +26070,10 @@ MQ
 Ng
 Kl
 aL
-je
+aA
 hR
-je
-KE
+aA
+aA
 to
 NG
 aA
@@ -26592,8 +26602,8 @@ Ga
 tR
 Ok
 Vl
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -26849,8 +26859,8 @@ xu
 KC
 ur
 Vl
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -27106,8 +27116,8 @@ KC
 KC
 KC
 Vl
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -27355,7 +27365,7 @@ vI
 wc
 ca
 Bj
-rW
+Cr
 Rv
 jm
 Vl
@@ -27363,8 +27373,8 @@ mj
 jy
 Wq
 Vl
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -27620,8 +27630,8 @@ Lb
 Lb
 Lb
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -27877,8 +27887,8 @@ WR
 YR
 PJ
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -28134,8 +28144,8 @@ OG
 OG
 ig
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -28391,8 +28401,8 @@ OG
 OG
 fM
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -28648,8 +28658,8 @@ Xl
 Nb
 fN
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -28905,8 +28915,8 @@ Gu
 Jk
 Lb
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -28936,8 +28946,8 @@ uH
 Ef
 Ef
 Ef
-Ef
-Ef
+dm
+dm
 Ef
 Ef
 Ef
@@ -29162,8 +29172,8 @@ mP
 nF
 fG
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -29419,8 +29429,8 @@ SK
 SK
 Zy
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -29676,8 +29686,8 @@ ga
 SK
 iT
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -29933,8 +29943,8 @@ SK
 SK
 Zy
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -30190,8 +30200,8 @@ qp
 SK
 Zy
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -30447,8 +30457,8 @@ SK
 SK
 Zy
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -30704,8 +30714,8 @@ SK
 SK
 Zy
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -30961,8 +30971,8 @@ SK
 SK
 Ow
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -31200,7 +31210,7 @@ MQ
 MQ
 Ng
 Ng
-HX
+cX
 oK
 Ng
 Ng
@@ -31218,8 +31228,8 @@ SK
 SK
 eh
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -31475,8 +31485,8 @@ Xa
 tU
 ei
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -31732,8 +31742,8 @@ Lb
 eH
 Lb
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -31989,8 +31999,8 @@ mP
 TD
 Om
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -32246,8 +32256,8 @@ SK
 SK
 Ud
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -32503,8 +32513,8 @@ SK
 gs
 Ud
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -32760,8 +32770,8 @@ hi
 hi
 qt
 Lb
-ae
-ae
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -33018,7 +33028,7 @@ Xn
 Xn
 Xn
 Xn
-ae
+MQ
 MQ
 MQ
 MQ
@@ -35060,7 +35070,7 @@ Xn
 eQ
 cD
 cD
-dS
+cD
 cD
 fd
 Xn
@@ -35075,10 +35085,10 @@ cD
 us
 Xn
 ae
-We
 rg
 rg
-We
+rg
+Fe
 MQ
 MQ
 MQ
@@ -35311,11 +35321,11 @@ bB
 nq
 nq
 Ng
-cX
+aN
 VS
 Xn
-ts
-cD
+aU
+di
 cD
 cD
 cD
@@ -35568,8 +35578,8 @@ aD
 dE
 nq
 Ng
-Rb
-oV
+bU
+bw
 Xn
 eR
 dQ
@@ -36331,11 +36341,11 @@ Tf
 du
 MQ
 MQ
+MQ
+MQ
+MQ
 rv
-rv
-rv
-rv
-bX
+cm
 nq
 nq
 kB
@@ -36588,10 +36598,10 @@ Tf
 du
 MQ
 MQ
+MQ
+MQ
+MQ
 rv
-aW
-ax
-aU
 nq
 nq
 nq
@@ -36845,10 +36855,10 @@ Tf
 du
 MQ
 MQ
+MQ
+MQ
+MQ
 rv
-aY
-aB
-nq
 nq
 nq
 nq
@@ -37102,10 +37112,10 @@ Tf
 MQ
 MQ
 MQ
+MQ
+MQ
+MQ
 rv
-bw
-aN
-bU
 nq
 nq
 nq
@@ -37359,9 +37369,9 @@ du
 MQ
 MQ
 MQ
-rv
-rv
-rv
+MQ
+MQ
+MQ
 rv
 cm
 nq
@@ -38143,7 +38153,7 @@ lV
 lV
 lV
 at
-Vs
+lV
 ba
 lV
 lV
@@ -38154,7 +38164,7 @@ cy
 cy
 lV
 lV
-eJ
+lV
 MQ
 MQ
 MQ
@@ -38410,7 +38420,7 @@ cl
 bK
 bK
 dp
-lV
+KE
 lV
 MQ
 MQ
@@ -39181,7 +39191,7 @@ cj
 cu
 cn
 bK
-di
+bK
 lV
 MQ
 MQ
@@ -39439,7 +39449,7 @@ dx
 cS
 bK
 dj
-lV
+bX
 MQ
 MQ
 MQ
@@ -39696,7 +39706,7 @@ cz
 cL
 bK
 dh
-aj
+lV
 MQ
 MQ
 MQ
@@ -39951,8 +39961,8 @@ bK
 cs
 Tc
 cM
-dK
 Tc
+rW
 Tc
 Tc
 MQ
@@ -40201,15 +40211,15 @@ aC
 az
 az
 bd
-Vs
+lV
 aP
 ce
 bK
 bK
 Tc
 cO
-ZH
 dk
+ZH
 Ev
 Tc
 MQ
@@ -40458,7 +40468,7 @@ aC
 az
 az
 bf
-Vs
+lV
 bN
 cf
 bK
@@ -40715,7 +40725,7 @@ cJ
 az
 az
 dD
-Vs
+lV
 bM
 cg
 bK
@@ -41719,7 +41729,7 @@ Tf
 Tf
 Tf
 Tf
-Tf
+du
 du
 du
 du
@@ -41974,10 +41984,10 @@ Tf
 Tf
 Tf
 Tf
-Tf
 du
 du
 du
+kx
 kx
 kx
 kx
@@ -42232,7 +42242,7 @@ Tf
 Tf
 Tf
 du
-du
+kx
 kx
 kx
 jL
@@ -44288,7 +44298,7 @@ Tf
 Tf
 Tf
 du
-du
+kx
 kx
 kx
 jL
@@ -44544,10 +44554,10 @@ Tf
 Tf
 Tf
 Tf
-Tf
 du
 du
 du
+kx
 kx
 kx
 kx
@@ -44803,7 +44813,7 @@ Tf
 Tf
 Tf
 Tf
-Tf
+du
 du
 du
 du
@@ -45070,10 +45080,10 @@ Tf
 du
 du
 du
-kx
 MQ
-du
-du
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ

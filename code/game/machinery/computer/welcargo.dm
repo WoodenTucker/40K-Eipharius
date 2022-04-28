@@ -531,7 +531,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/gun/energy/las/lasgun/luscius(T.loc) //what they spawning
+			new /obj/item/gun/energy/las/lasgun/lucius(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["lascarb"])
 		if(GLOB.thrones < 35) //do we got enough shekels?
@@ -547,7 +547,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(T.loc) //what they spawning
+			new /obj/item/gun/energy/las/lasgun/catachan(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["laspistol"])
 		if(GLOB.thrones < 15) //do we got enough shekels?
