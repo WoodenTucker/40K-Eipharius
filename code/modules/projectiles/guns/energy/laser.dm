@@ -385,8 +385,8 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
-	icon_state = "laspistol"
-	item_state = "laspistol"
+	icon_state = "laspistolunmark"
+	item_state = "laspistolunmark"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
@@ -413,10 +413,14 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/laspistol/militarum
 	name = "Astra Militarum Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers"
+	icon_state = "laspistol"
+	item_state = "laspistol"
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
 	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
+	icon_state = "laspistol"
+	item_state = "laspistol"
 	force = 10
 	one_hand_penalty = 2.55
 	accuracy = -0.6
@@ -432,6 +436,8 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/laspistol/mechanicus
 	name = "Adeptus Mechanicus Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified by Adeptus Mechanicus to concentrate the beam, resulting in more powerful shot for their self-defense purposes."
+	icon_state = "laspistol"
+	item_state = "laspistol"
 	move_delay= 1.2
 	one_hand_penalty = 1
 	accuracy = -1.2
@@ -441,6 +447,8 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/laspistol/commissar
 	name = "Officio Prefectus Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified to amplify the overcharge mode, issued to the Officio Prefectus for their purposes."
+	icon_state = "laspistol"
+	item_state = "laspistol"
 	move_delay= 1.2
 	one_hand_penalty = 1
 	accuracy = -1.2
