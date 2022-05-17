@@ -5098,7 +5098,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/wrench,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/boarding,
 /obj/item/crowbar,
 /obj/item/crowbar,
 /obj/item/wrench,

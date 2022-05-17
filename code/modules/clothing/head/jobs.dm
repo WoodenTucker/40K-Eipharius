@@ -211,19 +211,10 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/medicae
-	name = "Cadian Pattern Medicae Flak Helmet"
+	name = "Cadian Pattern Flak Helmet"
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the red Cross Emblem engraved on it forehead."
 	icon_state = "medicae"
 	item_state = "medicae"
-	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
-	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/helmet/whiteshield
-	name = "Cadian Pattern Whiteshield Flak Helmet"
-	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the white stripe painted on it, marking it's owner as a Cadian Whiteshield."
-	icon_state = "wshield"
-	item_state = "wshield"
 	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -238,7 +229,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/valushanka
-	name = "Valhallan Ushanka"
+	name = "valhallan Ushanka"
 	desc = "The Ushanka worn by Valhallan Regiment, smells of piss, amasec and sweat. You shouldn't touches it if you're not Valhallan."
 	icon_state = "valshanka2"
 	var/icon_state_up = "valshanka"

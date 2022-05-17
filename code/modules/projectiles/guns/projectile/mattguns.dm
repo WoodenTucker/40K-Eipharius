@@ -20,55 +20,6 @@
 	accuracy = -0.1
 	fire_delay= 4.5
 	force = 15
-	var/gping = TRUE
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/pump(mob/M as mob, silent = FALSE)
-	if(is_jammed)
-		if(M)
-			M.visible_message("\The [M] begins to unjam [src].", "You begin to clear the jam of [src]")
-		if(!do_after(M, 40, src))
-			return
-		is_jammed = 0
-		playsound(src.loc, 'sound/effects/unjam.ogg', 50, 1)
-		if(M)
-			M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-		return
-
-	if(!chambered && !loaded.len)//If there's an empty icon then use it.
-		pumpsound = null
-		if (gping && !loaded.len)
-			playsound(src, 'sound/effects/gping.ogg', 100, 1)
-			to_chat(M, "<span class='warning'>Ping!</span>")
-		if(M)
-			to_chat(M, "<span class='warning'>It's empty.</span>")
-		return
-
-	if(chambered && loaded.len)
-		pumpsound = initial(pumpsound)
-
-	else if(!chambered && loaded.len)
-		pumpsound = forwardsound
-
-	if(chambered)//We have a shell in the chamber
-		chambered.loc = get_turf(src)//Eject casing
-		playsound(src, casingsound, 100, 1)
-		chambered = null
-
-	if(loaded.len)
-		var/obj/item/ammo_casing/AC = loaded[1] //load next casing.
-		loaded -= AC //Remove casing from loaded list.
-		chambered = AC
-
-	if(!chambered && !loaded.len)
-		pumpsound = backsound
-
-	update_icon()
-
-	if(!silent)
-		playsound(src, pumpsound, 45, 1)
-
-	if(M)
-		M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/verb/scope_attach(mob/user)
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter (get_turf(src))
@@ -119,7 +70,6 @@
 	accuracy = -2
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	gping = FALSE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
 	set category = "Object"
@@ -207,7 +157,6 @@
 	empty_icon = "leverchester-e"
 	fire_delay = 4
 	move_delay= 2.5
-	gping = FALSE
 
 //Paryying.
 
@@ -1129,7 +1078,6 @@
 	one_hand_penalty = 7
 	accuracy = -0.2
 	force = 20
-	gping = FALSE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
 	name = "improper Kroot Rifle"

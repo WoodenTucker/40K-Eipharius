@@ -1,5 +1,5 @@
 /obj/structure/defensive_barrier
-	name = "compact defensive barrier"
+	name = "defensive barrier"
 	desc = "A portable defensive barrier. It stops bullets from hitting you... most of the time. CTRL click it to pack it up."
 	icon = 'icons/obj/structures/barrier.dmi'
 	icon_state = "barrier_rised"
@@ -10,7 +10,6 @@
 	var/health = 300
 	var/maxhealth = 300
 	var/secured
-	var/fixed
 
 /obj/structure/defensive_barrier/Initialize()
 	. = ..()
@@ -88,8 +87,6 @@
 	return TRUE
 
 /obj/structure/defensive_barrier/proc/try_pack_up(var/mob/user)
-	if(fixed)
-		return FALSE
 
 	if(secured)
 		to_chat(user, SPAN_WARNING("\The [src] is secured in place and cannot be packed up. You will need to unsecure it with a screwdriver."))
@@ -117,9 +114,6 @@
 	try_pack_up(user)
 
 /obj/structure/defensive_barrier/attack_hand(mob/living/carbon/human/user)
-
-	if(fixed)
-		return TRUE
 
 	if(ishuman(user) && user.species.can_shred(user) && user.a_intent == I_HURT)
 		take_damage(20)
@@ -245,9 +239,3 @@
 		return TRUE
 
 	. = ..()
-
-/obj/structure/defensive_barrier/fixed
-	name = "fixed defensive barrier"
-	desc = "A defensive barrier. It stops bullets from hitting you... most of the time."
-	icon_state = "barrier_deployed"
-	fixed = TRUE

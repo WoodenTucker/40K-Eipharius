@@ -22,6 +22,7 @@
 	lmg_skill = 5
 	smg_skill = 5
 
+
 	ideal_character_age = 70 // Old geezer captains ftw
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
@@ -96,7 +97,9 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		to_chat(H, "<span class='notice'><b><font size=3>Praise the Omnissiah! You live to further mankinds knowledge and understanding of technology. Obey your Magos and ensure all machine spirits are pleased.</font></b></span>")
 
-// Magos Biologis
+// Biologis
+
+// Magos
 
 /datum/job/geneticist
 	title = "Magos Biologis"
@@ -127,11 +130,11 @@
 		..()
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
-		H.add_stats(rand(14,15), rand(14,15), rand(10,13), rand(20,30))
+		H.add_stats(rand(14,15), rand(14,15), rand(10,13), rand(20,30)) 
 		H.add_skills(rand(4,7),rand(4,7),rand(8,11),rand(7,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Biologis. You lead biological research on the outpost and oversee the construction of Skitarii.</font></b></span>")
 
 // Magos Biologis Xenobiologist
 
@@ -147,6 +150,7 @@
 	economic_modifier = 7
 	access = list(access_robotics, access_tox, access_tox_storage, access_research, access_xenobiology, access_hydroponics)
 	minimal_access = list(access_research, access_xenobiology, access_hydroponics)
+//	alt_titles = list("Xenobotanist")
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
 

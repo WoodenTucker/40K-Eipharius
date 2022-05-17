@@ -1,8 +1,7 @@
 /datum/species/proc/get_valid_shapeshifter_forms(var/mob/living/carbon/human/H)
 	return list()
 
-/datum/species/proc/get_additional_examine_text(var/mob/living/carbon/human/H)
-	return
+/datum/species/proc/get_additional_examine_text(var/mob/living/carbon/human/H)	return
 
 /datum/species/proc/get_blood_mask(var/mob/living/carbon/human/H)
 	return blood_mask
@@ -71,7 +70,8 @@
 	if(!name_language)
 		if(gender == FEMALE)
 			return capitalize(pick(GLOB.first_names_female)) + " " + capitalize(pick(GLOB.last_names))
-		else return capitalize(pick(GLOB.first_names_male)) + " " + capitalize(pick(GLOB.last_names))
+		else
+			return capitalize(pick(GLOB.first_names_male)) + " " + capitalize(pick(GLOB.last_names))
 
 	var/datum/language/species_language = all_languages[name_language]
 	if(!species_language)

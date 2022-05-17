@@ -200,9 +200,6 @@
 /obj/structure/door_assembly/multi_tile/maintenance
 	dir = EAST
 
-/obj/structure/door_assembly/multi_tile/imperium
-	dir = EAST
-
 /obj/structure/door_assembly/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/pen))
 		var/t = sanitizeSafe(input(user, "Enter the name for the door.", src.name, src.created_name), MAX_NAME_LEN)

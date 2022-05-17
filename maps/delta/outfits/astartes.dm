@@ -28,7 +28,7 @@ Begin Warhammer loadouts
 */
 
 /decl/hierarchy/outfit/job/astartes
-	name = OUTFIT_JOB_NAME("Blood Angels Tactical Marine")
+	name = OUTFIT_JOB_NAME("Blood Angel Tactical Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
@@ -53,12 +53,12 @@ Begin Warhammer loadouts
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = /obj/item/device/pda
+	pda_slot = null
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/astartes/bangapoth
-	name = OUTFIT_JOB_NAME("Blood Angels Sanguinary Priest")
+	name = OUTFIT_JOB_NAME("Blood Angel Sanguinary Priest")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
@@ -81,7 +81,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/bangtech
-	name = OUTFIT_JOB_NAME("Blood Angels Tech-Marine")
+	name = OUTFIT_JOB_NAME("Blood Angel Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
@@ -183,7 +183,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander
-	name = OUTFIT_JOB_NAME("Salamanders Tactical Marine")
+	name = OUTFIT_JOB_NAME("Salamander Tactical Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
@@ -195,7 +195,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/sallybolter
 
 /decl/hierarchy/outfit/job/astartes/salamander/captain
-	name = OUTFIT_JOB_NAME("Salamanders Company Captain")
+	name = OUTFIT_JOB_NAME("Salamander Company Captain")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/captain/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
@@ -217,7 +217,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
-	name = OUTFIT_JOB_NAME("Salamanders Apothecary")
+	name = OUTFIT_JOB_NAME("Salamander Apothecary")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
@@ -240,7 +240,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/saltech
-	name = OUTFIT_JOB_NAME("Salamanders Tech-Marine")
+	name = OUTFIT_JOB_NAME("Salamander Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
@@ -262,7 +262,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultramarine
-	name = OUTFIT_JOB_NAME("Ultramarines Tactical Marine")
+	name = OUTFIT_JOB_NAME("Ultramarine Tactical Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
@@ -275,11 +275,22 @@ Begin Warhammer loadouts
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/smurfbolter
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/astartes/ultramarine/captain
-	name = OUTFIT_JOB_NAME("Ultramarines Company Captain")
+	name = OUTFIT_JOB_NAME("Ultramarine Company Captain")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/captain
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
@@ -301,7 +312,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultrapoth
-	name = OUTFIT_JOB_NAME("Ultramarines Apothecary")
+	name = OUTFIT_JOB_NAME("Ultramarine Apothecary")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
@@ -324,7 +335,7 @@ Begin Warhammer loadouts
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultratech
-	name = OUTFIT_JOB_NAME("Ultramarines Tech-Marine")
+	name = OUTFIT_JOB_NAME("Ultramarine Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack

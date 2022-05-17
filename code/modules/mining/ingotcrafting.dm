@@ -249,7 +249,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Bolt Rifle Magazine", "Catachan Mark IV Lascarbine", "Machine Silver",) //lists all possible crafting choices
+		var/craftingchoices = list("Bolt Rifle Magazine", "Las-Carbine", "Machine Silver",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -262,12 +262,12 @@
 				src.ismarked = 1
 				src.name = "Silver Ingot (Bolt Rifle Magazine)"
 
-			if("Catachan Mark IV Lascarbine")
+			if("Las-Carbine")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Las-Carbine.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 2
 				src.ismarked = 1
-				src.name = "Silver Ingot (Catachan Mark IV Lascarbine)"
+				src.name = "Silver Ingot (Las-Carbine)"
 
 			if("Machine Silver")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Silver.")
@@ -337,7 +337,7 @@
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/energy/las/lasgun/tinkered/catachan(user.loc)
+				new /obj/item/gun/energy/las/lasgun/tinkered/lascarbine(user.loc)
 				qdel(src)
 				return
 			if(3)
