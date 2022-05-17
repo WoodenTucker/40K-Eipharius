@@ -73,10 +73,7 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		if(title == "Krieg Guardsman")
-			var/troopnum = rand(1,50000)
-			H.fully_replace_character_name("Guardsman [troopnum]")
-		else H.fully_replace_character_name("Guardsman [H.real_name]")
+		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -85,11 +82,14 @@
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
 
-		if(title == "Krieg Guardsman")
-			H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(3,6),rand(1,3))
-			H.set_quirk(new/datum/quirk/brave())
-			H.set_trait(new/datum/trait/death_tolerant())
-			H.implant_loyalty(src)
+		var/troopnum = rand(1,50000)
+		switch(title)
+			if("Krieg Guardsman")
+				H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(3,6),rand(1,3))
+				H.set_quirk(new/datum/quirk/brave())
+				H.set_trait(new/datum/trait/death_tolerant())
+				H.fully_replace_character_name("Guardsman [troopnum]")
+				H.implant_loyalty(src)
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				H.verbs += list(
@@ -102,73 +102,6 @@
 					H.add_skills(rand(8,11),rand(6,10),rand(3,6),rand(1,4),rand(1,3))
 				if(title == "Valhallan Ice Warrior")
 					H.add_skills(rand(7,10),rand(7,11),rand(3,6),rand(1,4),rand(1,3))
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-
-//Whiteshield
-
-/datum/job/ig/guardsman/whiteshield
-	title = "Imperial Guard Whiteshield"
-	total_positions = 20
-	spawn_positions = 20
-	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(74,7),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		SSwarfare.red.team += H
-		H.fully_replace_character_name("Whiteshield [H.real_name]")
-		H.assign_random_quirk()
-		H.witchblood()
-
-		to_chat(H, "<span class='notice'><b><font size=3>You are nothing but a young recruit, future soldier of the Imperium. Obey your Sergeant and Commissar and assist the fellow guardsmen while trying to survive. The Emperor Protects. </font></b></span>")
-
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are nothing but a young recruit, future soldier of the Imperium. Obey your Sergeant and Commissar and assist the fellow guardsmen while trying to survive. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
-
-//Sharpshooters
-
-/datum/job/ig/guardsman/sharpshooter
-	title = "Imperial Guard Sharpshooter"
-	total_positions = 2
-	spawn_positions = 2
-	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
-	alt_titles = list(
-		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/guardsman,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
-		)
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(8,10),rand(9,12),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		SSwarfare.red.team += H
-		if(can_be_in_squad)
-			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Guardsman [H.real_name]")
-		H.assign_random_quirk()
-		H.witchblood()
-
-		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
-
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. Obey your Sergeant and Commissar. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
-
-		switch(title)
-			if("Cadian Sharpshooter" || "Valhallan Sharpshooter")
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch
-				)
-				if(title == "Valhallan Sharpshooter")
-					H.add_skills(rand(8,10),rand(9,12),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 // Sergeants
@@ -201,6 +134,7 @@
 	smg_skill = 6
 
 	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(14,18), rand(13,15))
@@ -210,17 +144,15 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-
-		if(title == "Krieg Guardsman")
-			var/watchnum = rand(1,50000)
-			H.fully_replace_character_name("Guardsman [watchnum]")
-		else H.fully_replace_character_name("Sergeant [H.real_name]")
-
-		if(title == "Krieg Quartermaster")
-			H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
-			H.set_quirk(new/datum/quirk/brave())
-			H.set_trait(new/datum/trait/death_tolerant())
-			H.implant_loyalty(src)
+		H.fully_replace_character_name("Sergeant [current_name]")
+		var/watchnum = rand(1,5000)
+		switch(title)
+			if("Krieg Quartermaster")
+				H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
+				H.set_quirk(new/datum/quirk/brave())
+				H.set_trait(new/datum/trait/death_tolerant())
+				H.fully_replace_character_name("Quartermaster [watchnum]")
+				H.implant_loyalty(src)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
 		switch(title)
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
@@ -249,7 +181,7 @@
 	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#967096"
 	economic_modifier = 4
-	minimal_player_age = 18
+	minimal_player_age = 4
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
@@ -261,6 +193,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
+
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -287,7 +220,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the Astartes Envoy and His will."
+	supervisors = "the astartes envoy"
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
@@ -340,31 +273,6 @@
 
 // Guardsman
 
-/decl/hierarchy/outfit/job/whiteshield
-	name = OUTFIT_JOB_NAME("Cadian Whiteshield")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/whiteshield
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
 /decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Cadian Guardsman")
 	uniform = /obj/item/clothing/under/cadian_uniform
@@ -402,7 +310,7 @@
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
-	suit_store = /obj/item/gun/energy/las/lasgun/lucius
+	suit_store = /obj/item/gun/energy/las/lasgun/luscius
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -423,7 +331,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	mask = null
 	glasses = null
-	suit_store = /obj/item/gun/energy/las/lasgun/catachan
+	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -446,69 +354,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-///Sharpshooter
-
-/decl/hierarchy/outfit/job/sharpshooter
-	name = OUTFIT_JOB_NAME("Cadian Sharpshooter")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/guardsman
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-/decl/hierarchy/outfit/job/sharpshooter/valhalla
-	name = OUTFIT_JOB_NAME("Valhallan Sharpshooter")
-	uniform = /obj/item/clothing/under/rank/valhallan_uniform
-	suit = /obj/item/clothing/suit/armor/valhallanarmor
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/valushanka
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/ammo_box/rifle
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/brifle_handful = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
 
 // Sergeant
 
@@ -569,7 +414,7 @@
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/catachan
+	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
