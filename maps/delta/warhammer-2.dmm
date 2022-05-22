@@ -5717,7 +5717,6 @@
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/shoes/jackboots/inquisitor,
-/obj/item/clothing/shoes/commandboots,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
