@@ -71,14 +71,9 @@ var/datum/antagonist/wizard/wizards
 	wizard.current.real_name = "[pick(GLOB.wizard_first)] [pick(GLOB.wizard_second)]"
 	wizard.current.SetName(wizard.current.real_name)
 
-/datum/antagonist/wizard/equip(var/mob/living/carbon/human/wizard_mob)
+/datum/antagonist/wizard/equip(var/mob/living/carbon/human/player)
 
-	if(!..())
-		return 0
-
-	var/outfit_type = pick(subtypesof(/decl/hierarchy/outfit/wizard))
-	var/decl/hierarchy/outfit/wizard_outfit = outfit_by_type(outfit_type)
-	wizard_outfit.equip(wizard_mob)
+	player.equip_to_slot_or_del(new /obj/item/(src), slot_r_hand)
 
 	return 1
 
