@@ -1454,6 +1454,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"dc" = (
+/obj/structure/catwalk,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/simulated/open,
+/area/cadiaoutpost/oa/theforest)
 "de" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/woodentable{
@@ -37805,7 +37812,7 @@ ai
 ai
 ai
 am
-aD
+dc
 cD
 ai
 ai

@@ -196,7 +196,7 @@ Template:
 
 /// LOOT SPAWNERS HERE
 /// BEGINNING OF LOOT SPAWNERS
-/// Be careful. Make sure to search up all items related to what you are spawning and make it possible for it's ammo to spawn as well. 
+/// Be careful. Make sure to search up all items related to what you are spawning and make it possible for it's ammo to spawn as well.
 
 /obj/random/loot/guardgear
 	name = "Guard Gear"
@@ -337,7 +337,6 @@ Template:
 				/obj/item/gun/projectile/warfare = 9,
 				/obj/item/gun/projectile/warfare/kieji = 7,
 				/obj/item/gun/energy/las/laspistol = 7,
-				/obj/item/gun/energy/las/laspistol/heavy = 4,
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
 				/obj/item/gun/projectile/slugrevolver = 2,
@@ -353,12 +352,13 @@ Template:
 /obj/random/loot/lightlasgun/spawn_choices()
 	return list(/obj/item/gun/energy/las/lasgun = 11,
 				/obj/item/gun/energy/las/lasgun/rare = 4,
-				/obj/item/gun/energy/las/lasgun/luscius = 8,
-				/obj/item/gun/energy/las/lasgun/luscius/rare = 3,
-				/obj/item/gun/energy/las/boarding = 3,
-				/obj/item/gun/energy/las/laspistol/heavy = 1,
+				/obj/item/gun/energy/las/lasgun/lucius = 8,
+				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 3,
+				/obj/item/gun/energy/las/laspistol = 1,
 				/obj/item/gun/energy/las/lasgun/tinkered = 1,
-				/obj/item/gun/energy/las/lasgun/tinkered/lascarbine = 1)
+				/obj/item/gun/energy/las/lasgun/catachan = 1,
+				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 1,
+				)
 
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
@@ -439,7 +439,6 @@ Template:
 				/obj/item/gun/projectile/warfare = 6,
 				/obj/item/gun/projectile/warfare/kieji = 5,
 				/obj/item/gun/energy/las/laspistol = 7,
-				/obj/item/gun/energy/las/laspistol/heavy = 4,
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
 				/obj/item/gun/projectile/talon/renegade = 1,
@@ -455,7 +454,7 @@ Template:
 				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
 				/obj/item/gun/projectile/automatic/autogrim = 1,
 				/obj/item/gun/energy/las/lasgun = 4,
-				/obj/item/gun/energy/las/lasgun/luscius = 2)
+				/obj/item/gun/energy/las/lasgun/lucius = 2)
 
 /obj/random/loot/goodweapon
 	name = "Good Weapon Spawner" // This spawner is similar to the above but has better quality spawns.
@@ -465,7 +464,7 @@ Template:
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(/obj/item/gun/projectile/warfare/kieji = 1,
-				/obj/item/gun/energy/las/laspistol/heavy = 1,
+				/obj/item/gun/energy/las/laspistol = 1,
 				/obj/item/gun/projectile/mervex = 1,
 				/obj/item/gun/projectile/necros = 1,
 				/obj/item/gun/projectile/slugrevolver = 1,
@@ -479,12 +478,12 @@ Template:
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
 				/obj/item/gun/projectile/bolter_pistol = 2,
 				/obj/item/gun/energy/las/lasgun/rare = 4,
-				/obj/item/gun/energy/las/lasgun/luscius = 8,
-				/obj/item/gun/energy/las/lasgun/luscius/rare = 3,
-				/obj/item/gun/energy/las/boarding = 1,
+				/obj/item/gun/energy/las/lasgun/lucius = 8,
+				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 3,
+				/obj/item/gun/energy/las/lasgun/catachan = 1,
 				/obj/item/gun/projectile/automatic/autogrim = 2,
 				/obj/item/gun/energy/las/lasgun/tinkered = 3,
-				/obj/item/gun/energy/las/lasgun/tinkered/lascarbine = 3)
+				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 3)
 
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
@@ -607,7 +606,7 @@ Template:
 // MOB AND ANIMAL SPAWNERS
 
 // CHAOS BEASTIES
-// Zygotes = Slow acid zombies. Only idiots get killed by these. 
+// Zygotes = Slow acid zombies. Only idiots get killed by these.
 // Bloodletter = Khorne Demon / Blood Legion Commander. Very high damage and decent HP. Friendly to cultists.
 // Bubbling Mass = Big fat daemon. High HP and damage. Slow.
 // Flesh Beast = Medium daemon. Average HP and damage.
