@@ -33,8 +33,7 @@
 		H.h_style = "Bald" //never seen an ork wif hair
 	if(H.f_style)//orks dont have beards
 		H.f_style = "Shaved"
-		to_chat(H, "<big><span class='warning'>Youz a Freeboota! Warboss a lazy git and is asleep roight now, but you'z can elect a Nob as a leada till he awakes. We'd come fars and widez on a space hulkz, then we got blasted out of da worp and landed in 'ere. Moight be 'Umies we could offer our servicz too, and if they say nah, we'z can ransack their village..</span></big>
-	H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+		H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
 	return ..()
 
 
