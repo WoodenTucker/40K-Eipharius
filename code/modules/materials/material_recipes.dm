@@ -72,10 +72,13 @@
 		new/datum/stack_recipe("maintenance hatch assembly", /obj/structure/door_assembly/door_assembly_mhatch, 4, time = 50, one_per_turf = 1, on_floor = 1), \
 		new/datum/stack_recipe("high security airlock assembly", /obj/structure/door_assembly/door_assembly_highsecurity, 4, time = 50, one_per_turf = 1, on_floor = 1), \
 		new/datum/stack_recipe("emergency shutter", /obj/structure/firedoor_assembly, 4, time = 50, one_per_turf = 1, on_floor = 1), \
-		new/datum/stack_recipe("wide airlock assembly", /obj/structure/door_assembly/multi_tile, 4, time = 50, one_per_turf = 1, on_floor = 1), \
+		))
+	recipes += new/datum/stack_recipe_list("wide airlock assemblies", list( \
+		new/datum/stack_recipe("wide imperial airlock assembly", /obj/structure/door_assembly/multi_tile/imperium, 4, time = 50, one_per_turf = 1, on_floor = 1), \
+		new/datum/stack_recipe("wide maintenance airlock assembly", /obj/structure/door_assembly/multi_tile/maintenance, 4, time = 50, one_per_turf = 1, on_floor = 1), \
 		))
 
-	recipes += new/datum/stack_recipe("grenade casing", /obj/item/grenade/chem_grenade)
+	recipes += new/datum/stack_recipe("grenade casing", /obj/item/grenade/chem_grenade, 1)
 	recipes += new/datum/stack_recipe("light fixture frame", /obj/item/frame/light, 2)
 	recipes += new/datum/stack_recipe("small light fixture frame", /obj/item/frame/light/small, 1)
 	recipes += new/datum/stack_recipe("apc frame", /obj/item/frame/apc, 2)

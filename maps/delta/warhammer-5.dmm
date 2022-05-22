@@ -428,7 +428,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bI" = (
-/obj/machinery/computer/exterminatus,
+/obj/machinery/computer/exterminatus{
+	desc = "This terminal acts as the control center for the Simiel's weapon systems."
+	},
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/sign/double/planet/left{
 	desc = "A screen showing the planet from orbit. It would be a beautiful sight. The screen itself would be decorated in various holy markings.";
@@ -759,6 +761,7 @@
 /obj/item/melee/baton/loaded,
 /obj/item/melee/baton/loaded,
 /obj/effect/floor_decal/turf/brick,
+/obj/item/melee/baton/loaded,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cz" = (
@@ -924,7 +927,9 @@
 /obj/structure/table/marble{
 	color = "grey"
 	},
-/obj/item/modular_computer/console/preset/sysadmin,
+/obj/item/modular_computer/console/preset/sysadmin{
+	name = "Administratum Terminal"
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cQ" = (
@@ -1321,7 +1326,9 @@
 	dir = 5;
 	icon_state = "spline_plain"
 	},
-/obj/item/modular_computer/console/preset/command,
+/obj/item/modular_computer/console/preset/command{
+	name = "Command Terminal"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ep" = (
@@ -2813,6 +2820,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"pT" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "qa" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/item/modular_computer/console/preset/security,
@@ -3107,12 +3119,12 @@
 "uG" = (
 /obj/machinery/light,
 /obj/structure/table/rack,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -3565,6 +3577,10 @@
 	color = "grey"
 	},
 /area/centcom)
+"Bz" = (
+/obj/effect/decal/remains,
+/turf/simulated/floor/asteroid/air,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "BA" = (
 /obj/machinery/teleport/hub,
 /turf/simulated/floor/shuttle/yellow,
@@ -3591,6 +3607,14 @@
 	color = "grey"
 	},
 /area/centcom)
+"BS" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "BZ" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/door/airlock/medical{
@@ -4111,6 +4135,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"JG" = (
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Minor Imperialis Doorway - Retinue"
+	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "JO" = (
 /obj/structure/torchwall/service,
 /turf/simulated/wall/techno,
@@ -4266,6 +4298,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"LU" = (
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue"
+	},
+/obj/effect/floor_decal/turf/metal/five,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "LW" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_soft/full,
@@ -4401,8 +4441,8 @@
 /area/centcom)
 "Nz" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	dir = 2;
 	name = "Minor Imperialis Doorway - Retinue"
 	},
 /turf/simulated/floor/tiled/dark,
@@ -11426,7 +11466,7 @@ ax
 jb
 lU
 lU
-dN
+BS
 lU
 lU
 lU
@@ -11726,9 +11766,9 @@ jb
 jb
 jb
 jb
-ax
-ax
-ax
+jb
+jb
+jb
 jb
 lU
 lU
@@ -11830,12 +11870,12 @@ lU
 lU
 lU
 lU
-ax
-jb
 lU
 lU
 lU
-lU
+dN
+dN
+dN
 lU
 dN
 dN
@@ -11930,14 +11970,14 @@ bR
 cn
 cv
 lU
+cT
+Bz
+cU
+dk
 lU
-lU
-lU
-lU
-lU
-bF
-bF
-lU
+dN
+dN
+dN
 gY
 dN
 dN
@@ -12032,14 +12072,14 @@ bS
 bP
 cw
 lU
-cT
+cU
+cU
+cU
+cU
 lU
-lU
-lU
-lU
-bF
-bF
-lU
+dN
+dN
+dN
 lU
 he
 he
@@ -12136,12 +12176,12 @@ cx
 lU
 cU
 di
-dk
+cU
+cU
 lU
-lU
-bF
-bF
-lU
+dN
+dN
+dN
 lU
 dN
 dN
@@ -12239,12 +12279,12 @@ lU
 cV
 cU
 cU
+cU
 lU
-lU
-bF
-bF
-lU
-lU
+dN
+dN
+dN
+LU
 dN
 jl
 he
@@ -12537,7 +12577,7 @@ EU
 EU
 cp
 cp
-cq
+JG
 cp
 cp
 cp
@@ -12639,7 +12679,7 @@ EU
 EU
 cp
 cp
-cq
+pT
 cp
 cp
 cp
@@ -12838,7 +12878,7 @@ ax
 jb
 lU
 lU
-lU
+cp
 Nz
 lU
 lU
@@ -12938,7 +12978,7 @@ YE
 vE
 ax
 jb
-lU
+JO
 AH
 cp
 cp
@@ -13142,7 +13182,7 @@ YE
 vE
 ax
 jb
-JO
+bZ
 cp
 cp
 cp
@@ -13244,7 +13284,7 @@ YE
 vE
 ax
 jb
-lU
+JO
 Ma
 cp
 cp
@@ -13348,7 +13388,7 @@ ax
 jb
 lU
 lU
-lU
+cp
 Nz
 lU
 lU

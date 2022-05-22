@@ -466,9 +466,22 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/medicae
 	name = "Cadian Pattern Medicae Flak Armour - Light"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, On it chest and shoulderplate bears the Red Cross of a Combat Medicae."
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, bearing the Red Cross of a Combat Medicae."
 	icon_state = "medicae"
 	item_state = "medicae"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/medicae/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1
+
+/obj/item/clothing/suit/armor/whiteshield
+	name = "Cadian Pattern Whiteshield Flak Armour - Light"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
+	icon_state = "wshield"
+	item_state = "wshield"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 30, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -634,7 +647,7 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/ordohereticus
-	name = "Throne Agent's Hereticus Holy Coat"
+	name = "Throne Agent's Ordo Hereticus Holy Coat"
 	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
 	icon_state = "hereticuscoat"
 	item_state = "hereticuscoat"
@@ -646,7 +659,7 @@ obj/item/clothing/suit/armor
 
 // MECHANICUS
 /obj/item/clothing/suit/storage/hooded/genetor
-	name = "Magos Genetor's robes"
+	name = "Magos Biologis robes"
 	desc = "Green robes riddled with augments, scanners and syringes. The robes look incredibly old and worn, you can tell this magos has lived a long and scholarly life."
 	icon_state = "genetor"
 	item_state = "genetor"
