@@ -92,7 +92,7 @@
 	species_restricted = null
 	body_parts_covered = 0
 
-	wizard_garb = 1
+	//wizard_garb = 1 40k Edit: Commented out unecessary proc
 
 /obj/item/clothing/shoes/sandal/marisa
 	desc = "A pair of magic, black shoes."

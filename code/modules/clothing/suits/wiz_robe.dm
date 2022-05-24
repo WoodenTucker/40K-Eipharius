@@ -9,7 +9,7 @@
 	//Not given any special protective value since the magic robes are full-body protection --NEO
 	siemens_coefficient = 0.8
 	body_parts_covered = 0
-	wizard_garb = 1
+	//wizard_garb = 1 40k Edit: Commented out unecessary proc
 
 /obj/item/clothing/head/wizard/red
 	name = "red wizard hat"
@@ -71,7 +71,7 @@
 	armor = list(melee = 30, bullet = 20, laser = 20,energy = 20, bomb = 20, bio = 20, rad = 20)
 	allowed = list(/obj/item/teleportation_scroll)
 	siemens_coefficient = 0.8
-	wizard_garb = 1
+	//wizard_garb = 1 40k Edit: Commented out unecessary proc
 
 /obj/item/clothing/suit/wizrobe/red
 	name = "red wizard robe"

@@ -11,7 +11,7 @@
 	armor = list(melee = 40, bullet = 20, laser = 20,energy = 20, bomb = 35, bio = 100, rad = 60)
 	siemens_coefficient = 0.7
 	sprite_sheets_obj = null
-	wizard_garb = 1
+	//wizard_garb = 1 40k Edit: Commented out unecessary proc
 
 /obj/item/clothing/suit/space/void/wizard
 	icon_state = "rig-wiz"
@@ -22,7 +22,7 @@
 	armor = list(melee = 40, bullet = 20, laser = 20,energy = 20, bomb = 35, bio = 100, rad = 60)
 	siemens_coefficient = 0.7
 	sprite_sheets_obj = null
-	wizard_garb = 1
+	//wizard_garb = 1 40k Edit: Commented out unecessary proc
 	flags_inv = HIDESHOES|HIDEJUMPSUIT|HIDETAIL //For gloves.
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS

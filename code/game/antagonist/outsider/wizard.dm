@@ -2,9 +2,9 @@ var/datum/antagonist/wizard/wizards
 
 /datum/antagonist/wizard
 	id = MODE_WIZARD
-	role_text = "Rouge Psyker"
-	role_text_plural = "Rouge Psykers"
-	landmark_id = "Rouge Psyker"
+	role_text = "Rogue Psyker" //40k Edit: Corrected spelling
+	role_text_plural = "Rogue Psykers" //40k Edit: Corrected spelling
+	landmark_id = "Rogue Psyker" //40k Edit: Corrected spelling
 	welcome_text = "For too long have you been running, from the dark whispers in your mind and the people in the black cloaks that seem to melt from the shadows trying to take you away. And now you find yourself here in this filthy backwater, try to survive another day but always look over your shoulder."
 	flags = ANTAG_OVERRIDE_JOB | ANTAG_CLEAR_EQUIPMENT | ANTAG_CHOOSE_NAME | ANTAG_VOTABLE | ANTAG_SET_APPEARANCE
 	antaghud_indicator = "hudwizard"
@@ -15,7 +15,7 @@ var/datum/antagonist/wizard/wizards
 	initial_spawn_target = 1
 	min_player_age = 18
 
-	faction = "wizard"
+	faction = "IMPERIUM" //40k Edit: Changed faction to appropriate one for Psykers.
 
 
 /datum/antagonist/wizard/New()
@@ -71,14 +71,9 @@ var/datum/antagonist/wizard/wizards
 	wizard.current.real_name = "[pick(GLOB.wizard_first)] [pick(GLOB.wizard_second)]"
 	wizard.current.SetName(wizard.current.real_name)
 
-/datum/antagonist/wizard/equip(var/mob/living/carbon/human/wizard_mob)
+/datum/antagonist/wizard/equip(var/mob/living/carbon/human/player)
 
-	if(!..())
-		return 0
-
-	var/outfit_type = pick(subtypesof(/decl/hierarchy/outfit/wizard))
-	var/decl/hierarchy/outfit/wizard_outfit = outfit_by_type(outfit_type)
-	wizard_outfit.equip(wizard_mob)
+	player.equip_to_slot_or_del(new /obj/item/(src), slot_r_hand)
 
 	return 1
 
@@ -90,7 +85,7 @@ var/datum/antagonist/wizard/wizards
 		survivor = 1
 		break
 	if(!survivor)
-		feedback_set_details("round_end_result","loss - wizard killed")
+		feedback_set_details("round_end_result","loss - psyker killed") ////40k Edit: Corrected name
 		to_world("<span class='danger'><font size = 3>The [(current_antagonists.len>1)?"[role_text_plural] have":"[role_text] has"] been killed by the crew! The Space Wizards Federation has been taught a lesson they will not soon forget!</font></span>")
 
 
@@ -117,28 +112,7 @@ var/datum/antagonist/wizard/wizards
 	for(var/spell/spell_to_remove in mind.learned_spells)
 		remove_spell(spell_to_remove)
 
-obj/item/clothing
-	var/wizard_garb = 0
 
-// Does this clothing slot count as wizard garb? (Combines a few checks)
-/proc/is_wiz_garb(var/obj/item/clothing/C)
-	return C && C.wizard_garb
-
-/*Checks if the wizard is wearing the proper attire.
-Made a proc so this is not repeated 14 (or more) times.*/
-/mob/proc/wearing_wiz_garb()
-	to_chat(src, "Silly creature, you're not a human. Only humans can cast this spell.")
-	return 0
 
 // Humans can wear clothes.
-/mob/living/carbon/human/wearing_wiz_garb()
-	if(!is_wiz_garb(src.wear_suit) && (!src.species.hud || (slot_wear_suit in src.species.hud.equip_slots)))
-		to_chat(src, "<span class='warning'>I don't feel strong enough without my robe.</span>")
-		return 0
-	if(!is_wiz_garb(src.shoes) && (!species.hud || (slot_shoes in src.species.hud.equip_slots)))
-		to_chat(src, "<span class='warning'>I don't feel strong enough without my sandals.</span>")
-		return 0
-	if(!is_wiz_garb(src.head) && (!species.hud || (slot_head in src.species.hud.equip_slots)))
-		to_chat(src, "<span class='warning'>I don't feel strong enough without my hat.</span>")
-		return 0
-	return 1
+//40k Edit: Removed clothing requirements - Psykers don't need to wear sandals
