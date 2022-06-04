@@ -13,6 +13,7 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
+	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/lasgun
@@ -38,6 +39,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	l_ear = /obj/item/device/radio/headset/red_team
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/luscius
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -55,9 +57,11 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/catachan
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/device/flashlight/lantern
+	l_ear = /obj/item/device/radio/headset/red_team
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
+
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
@@ -74,6 +78,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	head = /obj/item/clothing/head/valushanka
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 
@@ -90,6 +95,7 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/automatic/stubber
@@ -115,6 +121,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08 = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
