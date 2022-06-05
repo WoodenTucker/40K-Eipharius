@@ -133,7 +133,7 @@
 
 //Walker here, why the fuck does this even exist? all Genetors research aliens, thats like, their speciality, who added this in? im not going to remove it for now but, idk why its here.
 // Magos Biologis Xenobiologist
-/*
+
 /datum/job/xenobiologist
 	title = "Magos Xenologist"
 	department = "Science"
@@ -149,7 +149,7 @@
 //	alt_titles = list("Xenobotanist")
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
-*/
+
 
 
 
