@@ -369,10 +369,10 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A card issued to science staff."
 	icon_state = "sci"
 	job_access_type = /datum/job/scientist
-
+/*
 /obj/item/card/id/science/xenobiologist
 	job_access_type = /datum/job/xenobiologist
-
+*/
 /obj/item/card/id/science/roboticist
 	job_access_type = /datum/job/roboticist
 
