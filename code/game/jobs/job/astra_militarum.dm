@@ -9,12 +9,12 @@
 	outfit_type = /decl/hierarchy/outfit/job/ig //will need to be replaced eventually - wel
 	selection_color = "#33813A"
 	department_flag = SEC
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
 	sniper_skill = 6
-	shotgun_skill = 6
+	shotgun_skill = 7
 	lmg_skill = 6
-	smg_skill = 6
+	smg_skill = 7
 	open_when_dead = TRUE
 	announced = FALSE
 	can_be_in_squad = TRUE
@@ -56,6 +56,13 @@
 	title = "Imperial Guardsman"
 	total_positions = 20
 	spawn_positions = 20
+	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 6
+	shotgun_skill = 7
+	lmg_skill = 6
+	smg_skill = 7
 	outfit_type = /decl/hierarchy/outfit/job/guardsman
 	alt_titles = list(
 		"Cadian Guardsman" = /decl/hierarchy/outfit/job/guardsman,
@@ -99,9 +106,9 @@
 				/mob/living/carbon/human/proc/tzeentch
 				)
 				if(title == "Catachan Jungle Hunter")
-					H.add_skills(rand(8,11),rand(6,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
 				if(title == "Valhallan Ice Warrior")
-					H.add_skills(rand(7,10),rand(7,11),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 //Whiteshield
@@ -110,22 +117,26 @@
 	title = "Imperial Guard Whiteshield"
 	total_positions = 20
 	spawn_positions = 20
+	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
 	can_be_in_squad = FALSE
+	auto_rifle_skill = 7
+	semi_rifle_skill = 6
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 6
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(74,7),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(12,14), rand(12,14), rand(12,14), rand (8,14))
+		H.add_skills(rand(4,7),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("Whiteshield [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-
-		to_chat(H, "<span class='notice'><b><font size=3>You are nothing but a young recruit, future soldier of the Imperium. Obey your Sergeant and Commissar and assist the fellow guardsmen while trying to survive. The Emperor Protects. </font></b></span>")
-
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>You are nothing but a young recruit, future soldier of the Imperium. Obey your Sergeant and Commissar and assist the fellow guardsmen while trying to survive. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
 
@@ -136,6 +147,12 @@
 	total_positions = 2
 	spawn_positions = 2
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 10
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 7
 	alt_titles = list(
 		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/guardsman,
 		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
@@ -144,8 +161,8 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(8,10),rand(9,12),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(14,16), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
+		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -168,7 +185,7 @@
 				/mob/living/carbon/human/proc/tzeentch
 				)
 				if(title == "Valhallan Sharpshooter")
-					H.add_skills(rand(8,10),rand(9,12),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 // Sergeants
@@ -193,12 +210,12 @@
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
 			            )
 
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
-	sniper_skill = 6
-	shotgun_skill = 6
-	lmg_skill = 6
-	smg_skill = 6
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -221,7 +238,7 @@
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Krieg Quartermaster, you are brave just like a normal kriegsman, but, you are also smarter making your lifespan twice as good as that of your fellow kriegsman, you are a beacon of discipline, and remember, if your squad's trenches are horrible, its your fault.</font></b></span>")
 		switch(title)
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
 				H.verbs += list(
@@ -244,8 +261,8 @@
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 6
+	spawn_positions = 6
 	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#967096"
 	economic_modifier = 4
@@ -255,18 +272,19 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
 	sniper_skill = 6
-	shotgun_skill = 6
-	lmg_skill = 6
-	smg_skill = 6
+	shotgun_skill = 8
+	lmg_skill = 7
+	smg_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		H.warfare_faction = IMPERIUM
 		..()
 		H.fully_replace_character_name("Medicae [current_name]")
+		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
@@ -287,7 +305,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the Astartes Envoy and His will."
+	supervisors = "the Rogue Trader and his Astartes Bodyguard."
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
@@ -300,12 +318,12 @@
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
 	can_be_in_squad = FALSE
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 7
-	shotgun_skill = 7
-	lmg_skill = 7
-	smg_skill = 7
+	auto_rifle_skill = 9 //commissars are more trained than almost any guardsman
+	semi_rifle_skill = 9
+	sniper_skill = 9
+	shotgun_skill = 9
+	lmg_skill = 9
+	smg_skill = 9
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
@@ -316,19 +334,21 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
+		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
-		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are extremely trained
+		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are heavily trained
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Guard force on this planet. The mission is all, maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Astra Militarum on this outpost. Maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
+/*
 		H.verbs -= list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch,)
+		/mob/living/carbon/human/proc/tzeentch,)*/
 
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
