@@ -876,7 +876,7 @@
 	one_hand_penalty = 10
 	automatic = 1
 	firemodes = list()
-	gun_type = GUN_LMG
+	gun_type = GUN_AUTOMATIC
 	accuracy = 0
 
 /obj/item/gun/projectile/ravenbolter/update_icon()
@@ -914,7 +914,7 @@
 	one_hand_penalty = 10
 	automatic = 1
 	firemodes = list()
-	gun_type = GUN_LMG
+	gun_type = GUN_AUTOMATIC
 	accuracy = 0
 
 /obj/item/gun/projectile/smurfbolter/update_icon()
@@ -951,7 +951,7 @@
 	one_hand_penalty = 10
 	automatic = 1
 	firemodes = list()
-	gun_type = GUN_LMG
+	gun_type = GUN_AUTOMATIC
 	accuracy = 0
 
 /obj/item/gun/projectile/sallybolter/update_icon()
@@ -988,7 +988,7 @@
 	one_hand_penalty = 10
 	automatic = 1
 	firemodes = list()
-	gun_type = GUN_LMG
+	gun_type = GUN_AUTOMATIC
 	accuracy = 0
 
 /obj/item/gun/projectile/bangbolter/update_icon()
@@ -1064,8 +1064,8 @@
 	burst = 1
 	move_delay = 3
 	automatic = 1
-	accuracy = 0 //only one gun per round so yeah 
 	firemodes = list()
+	accuracy = 0 //only one gun per round so yeah 
 	gun_type = GUN_AUTOMATIC
 
 /obj/item/gun/projectile/sisterbolter/update_icon()
@@ -1153,10 +1153,6 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
-
-	firemodes = list(
-		list(mode_name="short bursts", burst=3, fire_delay= 3, move_delay=8, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2), dispersion=list(0.1, 0.5, 0.6), automatic = 0),
-		list(mode_name="long bursts", burst=5, fire_delay= 4, move_delay=10, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion=list(0.1, 0.5, 0.6)),
-		list(mode_name="automatic", burst=1, fire_delay= 1.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
-		)
-
+	gun_type = GUN_AUTOMATIC
+	automatic = 1
+	firemodes = list()
