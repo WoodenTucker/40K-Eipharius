@@ -4,7 +4,7 @@
 	icon_state = "heavysniper"
 	item_state = "heavysniper"
 	w_class = ITEM_SIZE_HUGE
-	force = 10
+	force = 10 //give it to the assfartes for the funny.
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	caliber = "14.5mm"
@@ -15,7 +15,7 @@
 	ammo_type = /obj/item/ammo_casing/a145
 	one_hand_penalty = 50
 	accuracy = -2
-	scoped_accuracy = 5 //increased accuracy over the LWAP because only one shot
+	scoped_accuracy = 5 //increased accuracy over the LWAP because only one shot //Walker here, i doubt that this does anything, but imma just leave it in.
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/sniper_load.ogg'
