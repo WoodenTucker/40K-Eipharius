@@ -806,7 +806,7 @@
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
-	str_requirement = 10
+	str_requirement = 16
 	w_class = ITEM_SIZE_HUGE
 	force = 17
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -817,7 +817,6 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/box/a556/mg08
 	allowed_magazines = /obj/item/ammo_magazine/box/a556/mg08
-	one_hand_penalty = 9
 	wielded_item_state = "hmg-wielded"
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -834,8 +833,8 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	move_delay= 5
-	one_hand_penalty = 7
-	accuracy = -0.2
+	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
+	accuracy = -0.5
 	fire_delay = 2.9
 
 /obj/item/gun/projectile/automatic/stubber/villiers
@@ -843,10 +842,10 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
-	accuracy = 0
+	accuracy = -0.5
 	fire_delay = 3.2
-	automatic = 1.2
-	armor_penetration = 5
+	automatic = 1
+	armor_penetration = 5 //this is melee
 
 // Boltgun
 
@@ -856,7 +855,7 @@
 	icon_state = "ravenbolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
-	force = 20
+	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
 	caliber = ".75"
@@ -865,21 +864,20 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ravenbolter-30"
 	unloaded_icon = "ravenbolter-e"
-	fire_delay = 3.5
+	fire_delay = 3
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 8
-	automatic = 1.1
+	one_hand_penalty = 10
+	automatic = 1
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = -0.4
+	accuracy = 0
 
 /obj/item/gun/projectile/ravenbolter/update_icon()
 	..()
@@ -895,7 +893,7 @@
 	icon_state = "ultrabolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
-	force = 20
+	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
 	caliber = ".75"
@@ -904,21 +902,20 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	fire_delay = 3.5
+	fire_delay = 3
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 4
-	automatic = 1.1
+	one_hand_penalty = 10
+	automatic = 1
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = -0.4
+	accuracy = 0
 
 /obj/item/gun/projectile/smurfbolter/update_icon()
 	..()
@@ -933,7 +930,7 @@
 	icon_state = "sallybolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
-	force = 20
+	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
 	caliber = ".75"
@@ -942,21 +939,20 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
-	fire_delay = 3.5
+	fire_delay = 3
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 4
-	automatic = 1.1
+	one_hand_penalty = 10
+	automatic = 1
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = -0.4
+	accuracy = 0
 
 /obj/item/gun/projectile/sallybolter/update_icon()
 	..()
@@ -971,7 +967,7 @@
 	icon_state = "bangbolter"
 	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	w_class = ITEM_SIZE_HUGE
-	force = 20
+	force = 30
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
 	caliber = ".75"
@@ -980,21 +976,20 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 9
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "bangbolter-30"
 	unloaded_icon = "bangbolter-e"
-	fire_delay = 3.5
+	fire_delay = 3
 	burst = 1
 	move_delay = 5
-	one_hand_penalty = 4
-	automatic = 1.1
+	one_hand_penalty = 10
+	automatic = 1
 	firemodes = list()
 	gun_type = GUN_LMG
-	accuracy = -0.4
+	accuracy = 0
 
 /obj/item/gun/projectile/bangbolter/update_icon()
 	..()
@@ -1018,20 +1013,19 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 6
+	one_hand_penalty = 10 //its a bolter not a toy gun
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
-	fire_delay = 3.7
+	fire_delay = 3
 	burst = 1
-	move_delay = 4
-	one_hand_penalty = 3
-	automatic = 1.3
+	move_delay = 3
+	automatic = 1
 	firemodes = list()
-	gun_type = GUN_LMG
+	gun_type = GUN_AUTOMATIC
 	accuracy = -0.5
 
 /obj/item/gun/projectile/lockebolter/update_icon()
@@ -1044,12 +1038,12 @@
 /obj/item/gun/projectile/sisterbolter
 	name = "Godwyn-De'az Pattern Bolter Rifle"
 	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
-	force = 20
+	force = 20 //what even is this description? 
 	sharp = 1
 	edge = 1
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	str_requirement = 10
+	str_requirement = 14
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
@@ -1059,7 +1053,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	one_hand_penalty = 5
+	one_hand_penalty = 10 //its still a bolter bro...
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -1068,12 +1062,11 @@
 	unloaded_icon = "sisterbolter-30-e"
 	fire_delay = 3.5
 	burst = 1
-	move_delay = 3.5
-	one_hand_penalty = 2
-	automatic = 1.1
-	accuracy = -0.35
+	move_delay = 3
+	automatic = 1
+	accuracy = 0 //only one gun per round so yeah 
 	firemodes = list()
-	gun_type = GUN_LMG
+	gun_type = GUN_AUTOMATIC
 
 /obj/item/gun/projectile/sisterbolter/update_icon()
 	..()
