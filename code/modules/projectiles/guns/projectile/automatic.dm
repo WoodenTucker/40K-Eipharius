@@ -357,28 +357,3 @@
 		to_chat(user, "<span class='warning'>You need to open the cover to unload [src].</span>")
 		return
 	..()
-
-/obj/item/gun/projectile/ork/automatic/shoota
-	name = "shoota"
-	desc = "A kinectic, automatic ballistic weapon with low efficiency but does a lot of noise and damage when luck is on your side."
-	icon_state = "shoota"
-	item_state = "shoota"
-	w_class = ITEM_SIZE_LARGE
-	force = 10
-	max_shells = 50
-	caliber = ".75"
-	can_jam = FALSE
-	move_delay= 5
-	one_hand_penalty = 6
-	accuracy = -0.2
-	ammo_type = /obj/item/ammo_casing/ork/shoota
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/ork/shoota
-	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
-
-	firemodes = list(
-		list(mode_name="short bursts", burst=3, fire_delay= 3, move_delay=8, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2), dispersion=list(0.1, 0.5, 0.6), automatic = 0),
-		list(mode_name="long bursts", burst=5, fire_delay= 4, move_delay=10, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion=list(0.1, 0.5, 0.6)),
-		list(mode_name="automatic", burst=1, fire_delay= 1.5,  move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
-		)
-
