@@ -5,6 +5,7 @@
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	force = 13
+	gun_type = GUN_SHOTGUN
 	var/empty_icon = null
 
 /obj/item/gun/projectile/shotgun/update_icon()
@@ -20,7 +21,7 @@
 
 /obj/item/gun/projectile/shotgun/pump
 	name = "Accatran pattern Mk XI"
-	desc = "This model has an eight round internal magazine and uses a manual pump action to to fire a single shot then re-cock the weapon. It can fire a variety of ammunition."
+	desc = "This model has an eight round internal magazine and uses a manual pump action to to fire a single shot then re-cock the weapon, its normally used for shock troops due to how reliable it is. It can fire a variety of ammunition."
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 5
@@ -38,9 +39,9 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
-	move_delay= 2
+	move_delay= 2 
 	one_hand_penalty = 4
-	accuracy = -1.3
+	accuracy = -1
 	fire_delay= 3
 	armor_penetration = 1
 
@@ -140,17 +141,18 @@
 
 /obj/item/gun/projectile/shotgun/pump/border
 	name = "border shotgun"
-	desc = "A shotgun commonly used by kriegs. Very effective against trench meat."
+	desc = "A shotgun commonly used by kriegs, its not very accurate, but it sure fires quickly and is light. Very effective against trench meat."
 	icon_state = "border"
 	item_state = "cshotgun"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
+	force = 20
 	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/shotgun
 	wielded_item_state = "cshotgun2"
-	move_delay= 2
+//	move_delay= 2 //slowdown removed because... its literally supposed to be for fast combat and trench taking
 	one_hand_penalty = 4
-	accuracy = -1.3
-	fire_delay= 3.5
+	accuracy = -1.8
+	fire_delay= 1.5
 	armor_penetration = 1
 
 /obj/item/gun/projectile/shotgun/doublebarrel

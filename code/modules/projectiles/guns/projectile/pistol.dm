@@ -44,7 +44,7 @@
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. This one has a sweet wooden grip, among other modifications. Uses .45 rounds."
 	name = "custom .45 Pistol"
 	icon_state = "secgundark"
-	accuracy = 0
+	accuracy = -1
 
 /obj/item/gun/projectile/sec/wood/update_icon()
 	..()
@@ -65,6 +65,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
 	caliber = ".45"
 	auto_eject = 1
+	accuracy = -0.5 //not the best stub pistol but still pretty good
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
 
@@ -75,9 +76,9 @@
 	one_hand_penalty = 0.5
 	accuracy = 0
 	fire_delay = 1
-	armor_penetration = 14
+	armor_penetration = 14 //this is melee??? im not gonna remove it but i just felt like i should point this out
 	silenced = 1
-	force = 10
+	force = 20
 
 /obj/item/gun/projectile/talon/adept
 	name = "dulled stub pistol"
@@ -98,6 +99,8 @@
 	w_class = ITEM_SIZE_NORMAL
 	caliber = ".45"
 	silenced = 1
+	accuracy = 0
+	fire_delay = 1.3
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/c45m
@@ -143,6 +146,7 @@
 	icon_state = "gyropistol"
 	max_shells = 8
 	caliber = "75"
+	accuracy = -5
 	origin_tech = list(TECH_COMBAT = 3)
 	ammo_type = /obj/item/ammo_casing/a75
 	load_method = MAGAZINE
@@ -316,8 +320,8 @@
 	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
 	icon_state = "slugga"
 	caliber = ".75"
-	can_jam = FALSE
-	accuracy = -0.2
+	can_jam = TRUE //yes it can jam
+	accuracy = -5 //WHY WAS IT SO FUCKING ACCURATE BEFORE? IT WAS 0.2! 
 	force = 20
 	load_method = MAGAZINE
 
@@ -326,14 +330,14 @@
 
 /obj/item/gun/projectile/bolter_pistol
 	name = "Garm Pattern Service Bolt Pistol"
-	desc = "The human sized bolter pistol, designed for usage by the Commissars of the Officio Prefectus, It also found itself in usage by officers of Astra Militarum, Rogue Traders as well Inquisitorial agents, Thus, it is relatively common and easily found across the Galaxy."
+	desc = "A human sized bolter pistol, designed for usage by the Commissars of the Officio Prefectus, It also found itself in usage by officers of Astra Militarum, Rogue Traders as well Inquisitorial agents, Thus, it is relatively common and easily found across the Galaxy."
 	icon_state = "bpistol"
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -0.4
-	fire_delay = 4.1
-	move_delay = 2
+	accuracy = -0.3 
+	fire_delay = 2.1
+	move_delay = 1
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -352,9 +356,9 @@
 	icon_state = "bpistol"
 	item_state = "bpistol"
 	str_requirement = 18
-	force = 14
+	force = 30
 	caliber = ".75"
-	accuracy = -0.2
+	accuracy = 0 //VERY well maintained--maintened? eh, you get what i mean!
 	fire_delay = 3.8
 	move_delay = 3
 	load_method = MAGAZINE
@@ -371,16 +375,15 @@
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"
-	desc = "A heavily modified Bolter Pistol designed solely for the Militant wing of the Adepta Sororitas, It is more reliable and potent than another Bolt pistol pattern. Because it is designed for human usage, It is much smaller than standard Astarte Bolter pistol.</i>"
+	desc = "A heavily modified Bolter Pistol designed for the Adeptas Sororitas, It is more reliable and potent than most Bolt pistol patterns, and because it is designed for human usage, It is much smaller and lighter than most boltpistols, strangely enough, this bolt pistol has a bayonet attached to it.</i>"
 	icon_state = "sisterbpistol"
 	loaded_icon = "sisterbpistol"
-	force = 12
-	sharp = 1
+	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
+	sharp = 1 
 	edge = 1
-	move_delay = 1.5
-	accuracy = -0.3
-	fire_delay = 3.5
-	move_delay = 1.5
+	accuracy = 0 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
+	fire_delay = 2 //fastaa!
+	move_delay = 1 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 

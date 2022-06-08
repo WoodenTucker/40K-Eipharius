@@ -65,7 +65,7 @@
 
 /obj/item/gun/projectile/revolver/detective
 	name = "revolver"
-	desc = "A cheap Martian knock-off of a Smith & Wesson Model 10. Uses .38-Special rounds."
+	desc = "A cheap knock-off of a Smith & Wesson Model 10. Uses .38-Special rounds."
 	icon_state = "detective"
 	max_shells = 6
 	caliber = "38"
@@ -99,8 +99,8 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
-	force = 10
-	accuracy = -0.2
+	force = 15
+	accuracy = -1.2 //not the best craftsmanship
 	fire_delay= 4.3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -118,8 +118,8 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
-	force = 12
-	accuracy = -0.3
+	force = 20
+	accuracy = -1
 	fire_delay= 4.5
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -138,7 +138,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 10
-	accuracy = -0.3
+	accuracy = 0 
 	fire_delay= 4.5
 	armor_penetration = 5
 	ammo_type = /obj/item/ammo_casing/c44
