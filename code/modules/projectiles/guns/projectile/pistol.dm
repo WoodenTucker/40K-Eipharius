@@ -320,8 +320,8 @@
 	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
 	icon_state = "slugga"
 	caliber = ".75"
-	can_jam = FALSE
-	accuracy = -0.2
+	can_jam = TRUE //yes it can jam
+	accuracy = -5 //WHY WAS IT SO FUCKING ACCURATE BEFORE? IT WAS 0.2! 
 	force = 20
 	load_method = MAGAZINE
 
