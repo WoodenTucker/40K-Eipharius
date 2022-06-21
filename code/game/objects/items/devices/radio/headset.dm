@@ -273,6 +273,16 @@
 	item_state = "t_tactical_headset_f"
 	ks2type = null
 
+/obj/item/device/radio/headset/red_team
+	icon = 'icons/obj/radio.dmi'
+	name = "vox-caster headset"
+	desc = "A standard Guard issue vox-caster headset. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
+	ks1type = /obj/item/device/encryptionkey/red_all
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
 /obj/item/device/radio/headset/red_team/voxcaster
 	icon = 'icons/obj/radio.dmi'
 	name = "vox-caster rig"
