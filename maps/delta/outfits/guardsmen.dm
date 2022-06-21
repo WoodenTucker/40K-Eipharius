@@ -11,6 +11,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/whiteshield
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -32,6 +33,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
@@ -58,6 +60,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/lucius
@@ -79,6 +82,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/device/flashlight/lantern
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/catachan
@@ -98,6 +102,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	head = /obj/item/clothing/head/valushanka
+	l_ear = /obj/item/device/radio/headset/red_team
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
@@ -116,6 +121,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
@@ -143,6 +149,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -168,6 +175,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
@@ -194,6 +202,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/krieg
 	suit_store = /obj/item/gun/launcher/rcl_rifle
 	backpack_contents = list(
@@ -212,6 +221,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/mercycs
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/catachan
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
@@ -231,6 +241,7 @@ Begin Warhammer loadouts
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
 	head = /obj/item/clothing/head/valushanka
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
@@ -287,6 +298,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/commissar
 	head = /obj/item/clothing/head/commissar
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -311,6 +323,7 @@ Begin Warhammer loadouts
 	uniform =  /obj/item/clothing/under/rank/krieg_uniform/commissar
 	suit = /obj/item/clothing/suit/armor/commissar/krieg
 	head = /obj/item/clothing/head/commissar/krieg
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/commissar
 	glasses = null
 
@@ -321,5 +334,6 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/jackboots/commissar //cadian commissars also go to the schola progenium or whatever its called, they aren't salvages
 	head = /obj/item/clothing/head/commissar/catachan
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
