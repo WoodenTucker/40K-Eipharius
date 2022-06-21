@@ -61,7 +61,6 @@ Begin Warhammer loadouts
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
-
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
@@ -136,6 +135,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
 	head = /obj/item/clothing/head/catachan
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 
@@ -144,6 +144,7 @@ Begin Warhammer loadouts
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
 	head = /obj/item/clothing/head/valushanka
+	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
 
