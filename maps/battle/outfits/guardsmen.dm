@@ -61,7 +61,6 @@ Begin Warhammer loadouts
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
-
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/lascarbine
