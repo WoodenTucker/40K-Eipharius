@@ -17,6 +17,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/white
 	l_hand = /obj/item/storage/firstaid/adv
+	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
@@ -34,6 +35,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/storage/sistersuit
 	back = /obj/item/storage/backpack/satchel/warfare
+	glasses = /obj/item/clothing/glasses/hud/health
 	l_hand = /obj/item/storage/firstaid/adv
 	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/pen
@@ -53,6 +55,7 @@
 	pda_type = /obj/item/device/pda/chemist
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
@@ -71,6 +74,7 @@
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	glasses = /obj/item/clothing/glasses/hud/health
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
@@ -88,6 +92,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/full
 	head = /obj/item/clothing/head/helmet/medicae
 	r_pocket = /obj/item/storage/box/ifak
