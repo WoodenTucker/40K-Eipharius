@@ -43,7 +43,8 @@
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
-		switch(title)
+		H.add_skills(11,11,11,11,11)
+/*switch(title) //either you get this to work or you dont change it, ok?
 			if("Blood Angel Tactical Marine")
 				H.add_skills(rand(13,15),rand(11,13),5,5,5)
 			if("Raven Guard Tactical Marine")
@@ -67,7 +68,7 @@
 			if("Salamander Techmarine")
 				H.add_skills(13, 13, 4, 11, 1)
 			if("Ultramarine Techmarine")
-				H.add_skills(13, 13, 2, 11, 1)
+				H.add_skills(13, 13, 2, 11, 1)*/
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
