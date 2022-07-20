@@ -36,7 +36,7 @@
 		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security access_brig, access_forensics_lockers, access_all_personal_lockers, access_armory)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 		var/troopnum = rand(1,50000)
 		switch(title)
@@ -89,7 +89,7 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security access_brig, access_forensics_lockers, access_all_personal_lockers, access_armory)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
 
 		if(title == "Krieg Guardsman")
@@ -269,8 +269,8 @@
 	minimal_player_age = 18
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
+	access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security access_brig, access_forensics_lockers, access_all_personal_lockers, access_armory)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security access_brig, access_forensics_lockers, access_all_personal_lockers, access_armory)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
