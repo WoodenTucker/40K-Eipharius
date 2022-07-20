@@ -78,8 +78,8 @@
 		H.gender = MALE
 		H.f_style = "shaved"
 		H.h_style = "Bald"
-		H.bladder = 0 //should make jimmy space marines not have to shit/piss
-		H.bowels = 0
+		H.bladder = -INFINITY
+		H.bowels = -INFINITY //integrated shitter
 		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
 
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)
