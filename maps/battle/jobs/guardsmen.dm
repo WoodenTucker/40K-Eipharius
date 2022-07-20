@@ -47,7 +47,7 @@
 		H.fully_replace_character_name("Guardsman [H.real_name]")
 	H.assign_random_quirk()
 	H.witchblood()
-	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory)
+	H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security access_brig, access_forensics_lockers, access_all_personal_lockers, access_armory)
 	to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 	H.verbs += list(
 	/mob/living/carbon/human/proc/khorne,
