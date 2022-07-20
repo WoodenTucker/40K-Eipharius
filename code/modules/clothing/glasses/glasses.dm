@@ -524,6 +524,8 @@
 	name = "Mark XIc/NV Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
 	darkness_view = 7
+	icon_state = "iggoggles"
+	item_state = "iggoggles"
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
 // SPESS MUHREEN STUFF
@@ -531,11 +533,11 @@
 /obj/item/clothing/glasses/astartes/visor
 	name = "Mark VII Visor"
 	desc = "The support system of Astartes helmet."
-	str_requirement = 25
-	canremove = 0
-	darkness_view = 10
+	darkness_view = 20 //in case we got a snaiper
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	flash_protection = FLASH_PROTECTION_MAJOR
+	icon_state = "thermal"
+	item_state = "glasses"
 	body_parts_covered = EYES
 	siemens_coefficient = 0.9
 	unacidable = 1
@@ -545,11 +547,11 @@
 	name = "Mark VII Apothecary Visor"
 	desc = "The support system of Astartes helmet. This one has intergrated medical scanner."
 	hud = /obj/item/clothing/glasses/hud/health
-	str_requirement = 25
-	canremove = 0
-	darkness_view = 10
+	darkness_view = 20
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	flash_protection = FLASH_PROTECTION_MAJOR
+	icon_state = "thermal"
+	item_state = "glasses"
 	body_parts_covered = EYES
 	siemens_coefficient = 0.9
 	unacidable = 1
