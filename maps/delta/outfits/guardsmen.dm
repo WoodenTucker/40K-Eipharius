@@ -119,11 +119,11 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
+	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
@@ -151,7 +151,7 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/valushanka
 	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
-	glasses = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_box/rifle
 	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
