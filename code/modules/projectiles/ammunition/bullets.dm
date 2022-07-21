@@ -200,7 +200,7 @@
 /obj/item/ammo_casing/rocket
 	name = "\improper rocket shell"
 	desc = "A high explosive shell designed to be fired from a personal launcher."
-	icon_state = "rocketshell"
+	icon_state = "rocket"
 	projectile_type = /obj/item/missile
 	caliber = "rocket"
 
