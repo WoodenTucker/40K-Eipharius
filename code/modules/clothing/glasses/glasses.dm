@@ -523,7 +523,7 @@
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
-	darkness_view = 7
+	darkness_view = 20 //if you want to be a sniper without being a astartes/sharpshooter, you may now
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -556,3 +556,13 @@
 	siemens_coefficient = 0.9
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
+
+/obj/item/clothing/glasses/cadiangoggles/sniper
+	name = "Mark XIIc Visor"
+	desc = "The Mark XIIc sniper variant night vision visor are special night vision goggles which make a much larger area visible to the user without adding any negative effects to their vision."
+	icon_state = "thermal"
+	darkness_view = 50
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	item_state = "glasses"
+	body_parts_covered = EYES
+	unacidable = 1
