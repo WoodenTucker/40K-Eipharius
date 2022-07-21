@@ -407,18 +407,17 @@
 
 //-----SPECIAL BOLT ROUNDS-----
 
-/obj/item/ammo_casing/boltpistol/kp // This is .75 Bolt Pistol Round
+/obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 70
 	armor_penetration = 50
-	penetration_modifier = 2
-
+	penetration_modifier = 1.4
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 70
 	armor_penetration = 50
-
+	penetration_modifier = 1.8
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
