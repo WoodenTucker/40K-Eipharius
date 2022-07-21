@@ -402,3 +402,41 @@
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 40
 	armor_penetration = 5
+
+
+
+//-----SPECIAL BOLT ROUNDS-----
+
+/obj/item/ammo_casing/boltpistol/KP // This is .75 Bolt Pistol Round
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 70
+	armor_penetration = 50
+
+
+/obj/item/projectile/bullet/bolt/kp
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 70
+	armor_penetration = 50
+
+
+/obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 50
+	armor_penetration = 20
+/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
+	if(isturf(target))
+		explosion(target, -1, 0, 2)
+	..()
+
+/obj/item/projectile/bullet/bolt/ms
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 50
+	armor_penetration = 20
+/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
+	if(isturf(target))
+		explosion(target, -1, 0, 2)
+	..()
+
+
+
+
