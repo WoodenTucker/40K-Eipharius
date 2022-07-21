@@ -376,3 +376,63 @@
 
 /obj/item/ammo_magazine/ork/shoota/empty
 	initial_ammo = 0
+
+
+//-----SPECIAL BOLTER MAGS-----
+/obj/item/ammo_magazine/bolt_pistol_magazine
+	name = "Boltpistol Magazine"
+	icon_state = "ersatz"
+	origin_tech = list(TECH_COMBAT = 4)
+	mag_type = MAGAZINE
+	caliber = "ms.75"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/boltpistol
+	max_ammo = 10
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/MS/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/MS
+	name = "Metal Storm Bolter Magazine"
+	icon_state = "ersatz"
+	origin_tech = list(TECH_COMBAT = 4)
+	mag_type = MAGAZINE
+	caliber = "ms.75"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/bolter/MS
+	max_ammo = 40
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/MS/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/KP
+	name = "Kraken Penetrator Boltpistol Magazine"
+	icon_state = "ersatz"
+	origin_tech = list(TECH_COMBAT = 4)
+	mag_type = MAGAZINE
+	caliber = "kp.75"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/boltpistol/KP
+	max_ammo = 10
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_pistol_magazine/KP/empty
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/KP
+	name = "Kraken Penetrator Bolter Magazine"
+	icon_state = "ersatz"
+	origin_tech = list(TECH_COMBAT = 4)
+	mag_type = MAGAZINE
+	caliber = "kp.75"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/bolter/KP
+	max_ammo = 40
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/bolt_rifle_magazine/KP/empty
+	initial_ammo = 0
+
+
