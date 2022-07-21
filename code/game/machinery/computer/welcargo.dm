@@ -25,12 +25,12 @@
 		dat += "<A href='byond://?src=\ref[src];withdraw=1'>Withdraw Thrones</A><BR>"
 		dat += "<B>Items on the Market:</B><BR>"
 		dat += "<B> Medical Supplies:</B><BR>"
-		dat += "<A href='byond://?src=\ref[src];ifak=1'>IFAK (8)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];akit=1'>Advanced Aid Kit (15)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];mb=1'>Medical Belt (20)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];ckit=1'>Combat Aid Kit (25)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];skit=1'>Surgery Kit (20)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];ac=1'>Ateopoine Crate (25)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];ifak=1'>IFAK (16)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];akit=1'>Advanced Aid Kit (19)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];mb=1'>Medical Belt (35)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];ckit=1'>Combat Aid Kit (30)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];skit=1'>Surgery Kit (25)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];ac=1'>Ateopoine Crate (40)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];vatboy=1'>Vat-Grown Human (80)</A><BR>"
 		dat += "<B> Luxury Foods/Drinks:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];ca=1'>Cheap Amasec (3)</A><BR>"
@@ -43,34 +43,34 @@
 		dat += "<A href='byond://?src=\ref[src];lighter=1'>Lighter (3)</A><BR>"
 		dat += "<B> Construction Materials & Tools:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];glass=1'>Stack of Glass (15)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];metal=1'>Stack of Metal (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];metal=1'>Stack of Metal (25)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];wire=1'>Barbed Wire (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];cloth=1'>Stack of Cloth (20)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];miningcrate=1'>Mining Crate (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];miningcrate=1'>Mining Crate (25)</A><BR>"
 		dat += "<B> Equipment:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];shovel=1'>Shovel (5)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];sabre=1'>Sabre (15)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];sabre=1'>Sabre (25)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];cmask=1'>Military Gas Mask (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];chelmet=1'>Flak Helmet (10)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];carmor=1'>Flak Armor (20)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];carapace=1'>Carapace Armor (60)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];nvg=1'>Photo Visor (35)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];carmor=1'>Flak Armor (30)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];carapace=1'>Carapace Armor (70)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];nvg=1'>Visor (45)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];valheq=1'>Valhallan Equipment Crate (40)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];kriegeq=1'>Krieg Equipment Crate (45)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];extop=1'>Extended Operations Crate (70)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];miningeqcrate=1'>Mining Equipment Crate (60)</A><BR>"
 		dat += "<B> Weaponry:</B><BR>"
-		dat += "<A href='byond://?src=\ref[src];lasgun=1'>Kantrael Lasgun (25)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];lusgun=1'>Lucius Lasgun (30)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];lascarb=1'>Catachan Carbine (35)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];laspistol=1'>Las Pistol (15)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];mcsword=1'>Mercy Chainsword (45)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];grim=1'>GRIM Autogun (25)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];stubber=1'>Vraks Stubber (35)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];bolter=1'>Bolt Pistol (50)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];frag=1'>Frag Grenade (14)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];incen=1'>Incendiary Grenade (16)</A><BR>"
-		dat += "<A href='byond://?src=\ref[src];krak=1'>Krak Grenade (20)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];lasgun=1'>Kantrael Lasgun (45)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];lusgun=1'>Lucius Lasgun (50)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];lascarb=1'>Catachan Carbine (55)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];laspistol=1'>Las Pistol (35)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];mcsword=1'>Mercy Chainsword (75)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];grim=1'>GRIM Autogun (35)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];stubber=1'>Vraks Stubber (40)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];bolter=1'>Bolt Pistol (60)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];frag=1'>Frag Grenade (16)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];incen=1'>Incendiary Grenade (18)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];krak=1'>Krak Grenade (22)</A><BR>"
 		dat += "<B> Ammunition:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];bolterammo=1'>Bolt Pistol Magazine (8)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];grimammo=1'>GRIM Autogun Magazine (4)</A><BR>"
@@ -102,7 +102,7 @@
 		return
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["ifak"])
-		if(GLOB.thrones < 8) //do we got enough shekels?
+		if(GLOB.thrones < 16) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -110,7 +110,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 8 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 16 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -118,7 +118,7 @@
 			new /obj/item/storage/box/ifak(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["akit"])
-		if(GLOB.thrones < 15) //do we got enough shekels?
+		if(GLOB.thrones < 19) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -126,7 +126,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 15 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 19 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -134,7 +134,7 @@
 			new /obj/item/storage/firstaid/adv(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["mb"])
-		if(GLOB.thrones < 20) //do we got enough shekels?
+		if(GLOB.thrones < 35) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -142,7 +142,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 20 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 35 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -150,7 +150,7 @@
 			new /obj/item/storage/belt/medical/full(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["ckit"])
-		if(GLOB.thrones < 25) //do we got enough shekels?
+		if(GLOB.thrones < 30) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -158,7 +158,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 30 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -166,22 +166,6 @@
 			new /obj/item/storage/firstaid/combat(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["skit"])
-		if(GLOB.thrones < 20) //do we got enough shekels?
-			visible_message("You cannot afford that!")
-			return
-		if (src.buying == 1) //stops spam buying
-			visible_message("Please wait for your previous order to finish!")
-			return
-		else
-			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 20 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-			src.buying = 1
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			sleep(40)
-			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/storage/firstaid/surgery(T.loc) //what they spawning
-			src.buying = 0
-	if (href_list["ac"])
 		if(GLOB.thrones < 25) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -191,6 +175,22 @@
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
 			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/storage/firstaid/surgery(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["ac"])
+		if(GLOB.thrones < 40) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 40 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -294,7 +294,7 @@
 			new /obj/item/stack/material/glass/fifty(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["metal"])
-		if(GLOB.thrones < 15) //do we got enough shekels?
+		if(GLOB.thrones < 25) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -302,7 +302,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 15 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -342,7 +342,7 @@
 			new /obj/item/shovel(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["sabre"])
-		if(GLOB.thrones < 15) //do we got enough shekels?
+		if(GLOB.thrones < 25) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -350,7 +350,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 15 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -390,7 +390,7 @@
 			new /obj/item/clothing/head/helmet/guardhelmet(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["carmor"])
-		if(GLOB.thrones < 20) //do we got enough shekels?
+		if(GLOB.thrones < 30) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -398,7 +398,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 20 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 30 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -406,7 +406,7 @@
 			new /obj/item/clothing/suit/armor/guardsman(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["carapace"])
-		if(GLOB.thrones < 60) //do we got enough shekels?
+		if(GLOB.thrones < 70) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -414,7 +414,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 60 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 70 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -422,7 +422,7 @@
 			new /obj/structure/closet/crate/carapace(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["nvg"])
-		if(GLOB.thrones < 35) //do we got enough shekels?
+		if(GLOB.thrones < 45) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -430,7 +430,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 35 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 45 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -502,7 +502,7 @@
 			new /obj/structure/closet/crate/miner(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["lasgun"])
-		if(GLOB.thrones < 25) //do we got enough shekels?
+		if(GLOB.thrones < 45) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -510,7 +510,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 45 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -518,7 +518,7 @@
 			new /obj/item/gun/energy/las/lasgun(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["lusgun"])
-		if(GLOB.thrones < 30) //do we got enough shekels?
+		if(GLOB.thrones < 50) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -526,7 +526,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 30 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 50 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -534,6 +534,22 @@
 			new /obj/item/gun/energy/las/lasgun/lucius(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["lascarb"])
+		if(GLOB.thrones < 55) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 55 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/gun/energy/las/lasgun/catachan(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["laspistol"])
 		if(GLOB.thrones < 35) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -543,22 +559,6 @@
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
 			GLOB.thrones -= 35 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-			src.buying = 1
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			sleep(40)
-			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/gun/energy/las/lasgun/catachan(T.loc) //what they spawning
-			src.buying = 0
-	if (href_list["laspistol"])
-		if(GLOB.thrones < 15) //do we got enough shekels?
-			visible_message("You cannot afford that!")
-			return
-		if (src.buying == 1) //stops spam buying
-			visible_message("Please wait for your previous order to finish!")
-			return
-		else
-			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 15 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -582,7 +582,7 @@
 			new /obj/item/cell/lasgun(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["mcsword"])
-		if(GLOB.thrones < 45) //do we got enough shekels?
+		if(GLOB.thrones < 75) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -590,7 +590,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 45 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 75 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -598,22 +598,6 @@
 			new /obj/item/melee/mercycs(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["grim"])
-		if(GLOB.thrones < 25) //do we got enough shekels?
-			visible_message("You cannot afford that!")
-			return
-		if (src.buying == 1) //stops spam buying
-			visible_message("Please wait for your previous order to finish!")
-			return
-		else
-			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-			src.buying = 1
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			sleep(40)
-			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/gun/projectile/automatic/autogrim(T.loc) //what they spawning
-			src.buying = 0
-	if (href_list["stubber"])
 		if(GLOB.thrones < 35) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -623,6 +607,22 @@
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
 			GLOB.thrones -= 35 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/gun/projectile/automatic/autogrim(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["stubber"])
+		if(GLOB.thrones < 40) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 40 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -662,7 +662,7 @@
 			new /obj/item/ammo_magazine/box/a556/mg08(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["bolter"])
-		if(GLOB.thrones < 50) //do we got enough shekels?
+		if(GLOB.thrones < 60) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -670,7 +670,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 50 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 60 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -678,7 +678,7 @@
 			new /obj/item/gun/projectile/bolter_pistol(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["krak"])
-		if(GLOB.thrones < 20) //do we got enough shekels?
+		if(GLOB.thrones < 22) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -686,7 +686,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 20
+			GLOB.thrones -= 22
 			 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
@@ -807,7 +807,7 @@
 			new /obj/item/flame/lighter/zippo(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["miningcrate"])
-		if(GLOB.thrones < 15) //do we got enough shekels?
+		if(GLOB.thrones < 25) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		if (src.buying == 1) //stops spam buying
@@ -815,7 +815,7 @@
 			return
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 15 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 25 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -855,22 +855,6 @@
 			new /obj/item/stack/material/cloth/fifty(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["frag"])
-		if(GLOB.thrones < 14) //do we got enough shekels?
-			visible_message("You cannot afford that!")
-			return
-		if (src.buying == 1) //stops spam buying
-			visible_message("Please wait for your previous order to finish!")
-			return
-		else
-			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 14 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-			src.buying = 1
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			sleep(40)
-			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/grenade/frag/warfare(T.loc) //what they spawning
-			src.buying = 0
-	if (href_list["incen"])
 		if(GLOB.thrones < 16) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -880,6 +864,22 @@
 		else
 			visible_message("Your order has been confirmed!") //lil flavor text confirming
 			GLOB.thrones -= 16 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/grenade/frag/warfare(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["incen"])
+		if(GLOB.thrones < 18) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 18 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			src.buying = 1
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
@@ -1173,12 +1173,12 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["tithe"])
-		if(GLOB.thrones < 750) //do we got enough shekels?
+		if(GLOB.thrones < 400) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		else
 			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
-			GLOB.thrones -= 750 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 400 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			GLOB.tithe_paid = 1 //yay we paid the tithe
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
