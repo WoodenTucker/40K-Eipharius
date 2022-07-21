@@ -269,3 +269,21 @@
 	one_hand_penalty = 3
 	accuracy = -1
 	fire_delay= 4.5
+
+
+
+/obj/item/gun/projectile/meltagun
+	name = "Melta Rifle"
+	desc = "A melta gun is the generalized term for melta weaponry, this one is a melta rifle and should be used with both hands."
+	icon_state = "pistol"
+	item_state = "melta"
+	slot_flags = SLOT_BELT|SLOT_BACK
+	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	w_class = ITEM_SIZE_HUGE
+	force = 30 //ITS HEAVY
+	one_hand_penalty = 6 //who the fuck would try to use a meltagun with one hand?
+	block_chance = 60 //pretty big, could be used as a shield in theory considering how armored it is
+	gun_type = GUN_SHOTGUN
+	move_delay= 5
+	accuracy = -1.5
+	fire_delay= 5
