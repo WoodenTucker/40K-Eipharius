@@ -277,22 +277,22 @@
 	projectile_type = /obj/item/projectile/bullet/ork/shoota
 
 //-----SPECIAL BULLETS:-----
-/obj/item/ammo_casing/boltpistol/KP
+/obj/item/ammo_casing/boltpistol/kp
 	desc = "A kraken penetrator .75 bolt pistol casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bpistol/kp
 
-/obj/item/ammo_casing/bolter/KP
+/obj/item/ammo_casing/bolter/kp
 	desc = "A kraken penetrator .75 bolt rifle casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt/kp
 
-/obj/item/ammo_casing/boltpistol/MS
+/obj/item/ammo_casing/boltpistol/ms
 	desc = "A metal storm .75 bolt pistol casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bpistol/ms
 
-/obj/item/ammo_casing/bolter/MS
+/obj/item/ammo_casing/bolter/ms
 	desc = "A metal storm .75 bolt rifle casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt/ms
