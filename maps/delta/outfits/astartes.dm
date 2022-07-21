@@ -34,7 +34,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -48,7 +47,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -64,7 +64,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -77,7 +76,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/bangtech
@@ -87,7 +87,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -99,7 +98,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ravenguard
@@ -114,6 +114,14 @@ Begin Warhammer loadouts
 	mask = null
 	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/melee/pcsword = 1,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+	)
 
 /decl/hierarchy/outfit/job/astartes/ravenguard/captain
 	name = OUTFIT_JOB_NAME("Ravenguard Company Captain")
@@ -122,7 +130,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/captain/ravenguard
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -134,7 +141,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ravapoth
@@ -144,7 +152,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -157,7 +164,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/raventech
@@ -167,7 +175,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/suit/armor/astartes/ravenguard
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -179,7 +186,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander
@@ -189,10 +197,17 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
 	suit_store = /obj/item/gun/projectile/bolter/sally
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
+	)
 
 /decl/hierarchy/outfit/job/astartes/salamander/captain
 	name = OUTFIT_JOB_NAME("Salamanders Company Captain")
@@ -201,7 +216,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/captain/salamander
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -213,7 +227,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
@@ -223,7 +238,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -237,6 +251,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/saltech
@@ -246,7 +261,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -259,6 +273,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultramarine
@@ -268,7 +283,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = null
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -277,6 +291,14 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
+	)
 
 /decl/hierarchy/outfit/job/astartes/ultramarine/captain
 	name = OUTFIT_JOB_NAME("Ultramarines Company Captain")
@@ -285,7 +307,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/pcsword
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/captain/ultramarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -297,7 +318,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultrapoth
@@ -307,7 +329,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
-	glasses = /obj/item/clothing/glasses/astartes/visor/apoth
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -320,7 +341,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor/apoth = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultratech
@@ -330,7 +352,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -342,7 +363,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /* ADMEME OUTFIT FOR SCOUT - This one is for human-sized ones, don't try to put it onto big astartes */
@@ -364,3 +386,4 @@ Begin Warhammer loadouts
 	/obj/item/ammo_magazine/lp338/needler = 4,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1
 	)
+
