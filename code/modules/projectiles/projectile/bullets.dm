@@ -439,6 +439,7 @@
 
 /obj/item/projectile/bullet/rifle/lascannon
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
 	damage = 100
 	damage_type = BURN
 	armor_penetration = 50
@@ -483,6 +484,7 @@
 	
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
 	damage = 70
 	damage_type = BURN
 	armor_penetration = 100
@@ -490,6 +492,7 @@
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
 	damage = 40
 	damage_type = BURN
 	armor_penetration = 100
