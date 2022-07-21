@@ -86,7 +86,7 @@
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 30 //nerfed from 45 to 30, stil stronger than a trench club
+	force = 5
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 4)
@@ -107,8 +107,7 @@
 		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
 	else
 		playsound(usr, 'sound/effects/slanattack.ogg', 100, 1, 1)
-		C.apply_damage(rand(55,75), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
-		C.Weaken(10)
+		C.apply_damage(rand(30,40), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
 		user.slanpain += rand(1, 10)
 		to_chat(C, "<span class='warning'>[user] mangles your body with the whip. It causes you pain on a level you didn't know existed.</span>")
 		if(C.gender == MALE)
