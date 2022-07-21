@@ -296,3 +296,12 @@
 	desc = "A metal storm .75 bolt rifle casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt/ms
+
+
+/obj/item/ammo_casing/melta
+	name = "melted melta"
+	desc = "Melta Ammo needs this to work, don't ping walker or arch."
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "melta"
+	projectile_type = /obj/item/projectile/bullet/rifle/lascannon/melta
