@@ -384,7 +384,7 @@
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
-	caliber = "ms.75"
+	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol/ms
 	max_ammo = 10
@@ -398,7 +398,7 @@
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
-	caliber = "ms.75"
+	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/bolter/MS
 	max_ammo = 40
@@ -412,7 +412,7 @@
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
-	caliber = "kp.75"
+	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol/KP
 	max_ammo = 10
@@ -426,7 +426,7 @@
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
-	caliber = "kp.75"
+	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/bolter/KP
 	max_ammo = 40
