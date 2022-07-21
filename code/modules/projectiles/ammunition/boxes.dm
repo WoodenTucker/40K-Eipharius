@@ -436,3 +436,17 @@
 	initial_ammo = 0
 
 
+/obj/item/ammo_magazine/melta
+	name = "Melta Canister"
+	icon_state = "flamer"
+	origin_tech = list(TECH_COMBAT = 6)
+	mag_type = MAGAZINE
+	caliber = "melta"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/melta
+	max_ammo = 10
+	multiple_sprites = 0
+
+/obj/item/ammo_magazine/melta/empty
+	initial_ammo = 0
+
