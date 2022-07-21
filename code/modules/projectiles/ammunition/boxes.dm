@@ -379,7 +379,7 @@
 
 
 //-----SPECIAL BOLTER MAGS-----
-/obj/item/ammo_magazine/bolt_pistol_magazine/MS
+/obj/item/ammo_magazine/bolt_pistol_magazine/ms
 	name = "Metal Storm Boltpistol Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
@@ -390,49 +390,49 @@
 	max_ammo = 10
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/bolt_pistol_magazine/MS/empty
+/obj/item/ammo_magazine/bolt_pistol_magazine/ms/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/bolt_rifle_magazine/MS
+/obj/item/ammo_magazine/bolt_rifle_magazine/ms
 	name = "Metal Storm Bolter Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
-	ammo_type = /obj/item/ammo_casing/bolter/MS
+	ammo_type = /obj/item/ammo_casing/bolter/ms
 	max_ammo = 40
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/bolt_rifle_magazine/MS/empty
+/obj/item/ammo_magazine/bolt_rifle_magazine/ms/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/bolt_pistol_magazine/KP
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp
 	name = "Kraken Penetrator Boltpistol Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
-	ammo_type = /obj/item/ammo_casing/boltpistol/KP
+	ammo_type = /obj/item/ammo_casing/boltpistol/kp
 	max_ammo = 10
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/bolt_pistol_magazine/KP/empty
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp/empty
 	initial_ammo = 0
 
-/obj/item/ammo_magazine/bolt_rifle_magazine/KP
+/obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	name = "Kraken Penetrator Bolter Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
-	ammo_type = /obj/item/ammo_casing/bolter/KP
+	ammo_type = /obj/item/ammo_casing/bolter/kp
 	max_ammo = 40
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/bolt_rifle_magazine/KP/empty
+/obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
 	initial_ammo = 0
 
 
