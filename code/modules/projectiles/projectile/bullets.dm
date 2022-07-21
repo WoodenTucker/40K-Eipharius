@@ -411,6 +411,7 @@
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 70
 	armor_penetration = 50
+	penetration_modifier = 2
 
 
 /obj/item/projectile/bullet/bolt/kp
@@ -437,6 +438,62 @@
 		explosion(target, -1, 0, 2)
 	..()
 
+/obj/item/projectile/bullet/rifle/lascannon
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 100
+	damage_type = BURN
+	armor_penetration = 50
+	penetration_modifier = 2
 
+/obj/item/projectile/bullet/rifle/plasma
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 90
+	damage_type = BURN
+	armor_penetration = 50
+	penetration_modifier = 1.4
+
+/obj/item/projectile/bullet/rifle/plasma/cannon //D E A T H
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 200
+	damage_type = BURN
+	armor_penetration = 50
+	penetration_modifier = 5
+
+/obj/item/projectile/bullet/rifle/plasma/cannon/orkish //three colors of green!
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 150
+	damage_type = BURN
+	armor_penetration = 30
+	penetration_modifier = 3
+
+/obj/item/projectile/bullet/rifle/plasma/pistol
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 70
+	damage_type = BURN
+	armor_penetration = 45
+	penetration_modifier = 1.2
+
+/obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 40
+	damage_type = BURN
+	armor_penetration = 40
+	penetration_modifier = 1.4
+
+
+	
+/obj/item/projectile/bullet/rifle/lascannon/melta
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 70
+	damage_type = BURN
+	armor_penetration = 100
+	penetration_modifier = 3 
+
+/obj/item/projectile/bullet/rifle/lascannon/melta/inferno
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	damage = 40
+	damage_type = BURN
+	armor_penetration = 100
+	penetration_modifier = 2
 
 
