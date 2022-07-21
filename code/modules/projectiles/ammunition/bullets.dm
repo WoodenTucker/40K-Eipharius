@@ -265,6 +265,7 @@
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt
 
+
 /obj/item/ammo_casing/ork
 	desc = "A giant and crude bullet that was made with scrap."
 	caliber = ".75"
@@ -274,3 +275,24 @@
 	desc = "A small and crude bullet that was made with scrap. Looks poorly-made."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/ork/shoota
+
+//-----SPECIAL BULLETS:-----
+/obj/item/ammo_casing/boltpistol/KP
+	desc = "A kraken penetrator .75 bolt pistol casing."
+	caliber = "kp.75"
+	projectile_type = /obj/item/projectile/bullet/bpistol/kp
+
+/obj/item/ammo_casing/bolter/KP
+	desc = "A kraken penetrator .75 bolt rifle casing."
+	caliber = "kp.75"
+	projectile_type = /obj/item/projectile/bullet/bolt/kp
+
+/obj/item/ammo_casing/boltpistol/MS
+	desc = "A metal storm .75 bolt pistol casing."
+	caliber = "ms.75"
+	projectile_type = /obj/item/projectile/bullet/bpistol/ms
+
+/obj/item/ammo_casing/bolter/MS
+	desc = "A metal storm .75 bolt rifle casing."
+	caliber = "ms.75"
+	projectile_type = /obj/item/projectile/bullet/bolt/ms
