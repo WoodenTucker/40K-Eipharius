@@ -290,6 +290,7 @@
 	one_hand_penalty = 6 //who the fuck would try to use a meltagun with one hand?
 	block_chance = 60 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
-	move_delay= 5
+	move_delay= 4
 	accuracy = -1.5
-	fire_delay= 5
+	fire_delay= 20
+
