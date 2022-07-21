@@ -379,14 +379,14 @@
 
 
 //-----SPECIAL BOLTER MAGS-----
-/obj/item/ammo_magazine/bolt_pistol_magazine
-	name = "Boltpistol Magazine"
+/obj/item/ammo_magazine/bolt_pistol_magazine/MS
+	name = "Metal Storm Boltpistol Magazine"
 	icon_state = "ersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = "ms.75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
-	ammo_type = /obj/item/ammo_casing/boltpistol
+	ammo_type = /obj/item/ammo_casing/boltpistol/ms
 	max_ammo = 10
 	multiple_sprites = 1
 
