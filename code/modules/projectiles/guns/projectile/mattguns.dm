@@ -862,7 +862,7 @@
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/MS, /obj/item/ammo_magazine/bolt_rifle_magazine/KP)
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/ms, /obj/item/ammo_magazine/bolt_rifle_magazine/ms)
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -889,7 +889,6 @@
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIXth Chapter Raven Guards's colour scheme."
 	icon_state = "ravenbolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
 	loaded_icon = "ravenbolter-30"
 	unloaded_icon = "ravenbolter-e"
 
