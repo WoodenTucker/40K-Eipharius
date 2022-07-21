@@ -940,9 +940,9 @@
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/ms, /obj/item/ammo_magazine/bolt_rifle_magazine/kp)
 	one_hand_penalty = 10 //its a bolter not a toy gun
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine	
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
