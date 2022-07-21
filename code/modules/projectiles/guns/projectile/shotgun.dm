@@ -274,11 +274,17 @@
 
 /obj/item/gun/projectile/meltagun
 	name = "Melta Rifle"
-	desc = "A melta gun is the generalized term for melta weaponry, this one is a melta rifle and should be used with both hands."
-	icon_state = "pistol"
-	item_state = "melta"
+	desc = "Melta Guns are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
+	icon_state = "melta"
+	item_state = "meltagun"
+	wielded_item_state = "machinepistol-wielded"
+	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = SLOT_BELT|SLOT_BACK
-	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	ammo_type = /obj/item/ammo_casing/melta
+	caliber = "melta"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/melta
+	allowed_magazines = /obj/item/ammo_magazine/melta
 	w_class = ITEM_SIZE_HUGE
 	force = 30 //ITS HEAVY
 	one_hand_penalty = 6 //who the fuck would try to use a meltagun with one hand?
