@@ -41,7 +41,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bangbolter
+	suit_store = /obj/item/gun/projectile/bolter/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -92,7 +92,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bangbolter
+	suit_store = /obj/item/gun/projectile/bolter/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -112,7 +112,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
-	suit_store = /obj/item/gun/projectile/ravenbolter
+	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 
 /decl/hierarchy/outfit/job/astartes/ravenguard/captain
@@ -127,7 +127,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/ravenbolter
+	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -172,7 +172,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/ravenbolter
+	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -192,7 +192,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
-	suit_store = /obj/item/gun/projectile/sallybolter
+	suit_store = /obj/item/gun/projectile/bolter/sally
 
 /decl/hierarchy/outfit/job/astartes/salamander/captain
 	name = OUTFIT_JOB_NAME("Salamanders Company Captain")
@@ -206,7 +206,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/sallybolter
+	suit_store = /obj/item/gun/projectile/bolter/sally
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -251,7 +251,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/sallybolter
+	suit_store = /obj/item/gun/projectile/bolter/sally
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -274,7 +274,7 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/smurfbolter
+	suit_store = /obj/item/gun/projectile/bolter
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
@@ -290,7 +290,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/smurfbolter
+	suit_store = /obj/item/gun/projectile/bolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -335,7 +335,7 @@ Begin Warhammer loadouts
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/smurfbolter
+	suit_store = /obj/item/gun/projectile/bolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
