@@ -200,7 +200,7 @@
 /obj/item/ammo_casing/rocket
 	name = "\improper rocket shell"
 	desc = "A high explosive shell designed to be fired from a personal launcher."
-	icon_state = "rocketshell"
+	icon_state = "rocket"
 	projectile_type = /obj/item/missile
 	caliber = "rocket"
 
@@ -265,6 +265,7 @@
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt
 
+
 /obj/item/ammo_casing/ork
 	desc = "A giant and crude bullet that was made with scrap."
 	caliber = ".75"
@@ -274,3 +275,33 @@
 	desc = "A small and crude bullet that was made with scrap. Looks poorly-made."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/ork/shoota
+
+//-----SPECIAL BULLETS:-----
+/obj/item/ammo_casing/boltpistol/kp
+	desc = "A kraken penetrator .75 bolt pistol casing."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/bpistol/kp
+
+/obj/item/ammo_casing/bolter/kp
+	desc = "A kraken penetrator .75 bolt rifle casing."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/bolt/kp
+
+/obj/item/ammo_casing/boltpistol/ms
+	desc = "A metal storm .75 bolt pistol casing."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/bpistol/ms
+
+/obj/item/ammo_casing/bolter/ms
+	desc = "A metal storm .75 bolt rifle casing."
+	caliber = ".75"
+	projectile_type = /obj/item/projectile/bullet/bolt/ms
+
+
+/obj/item/ammo_casing/melta
+	name = "melted melta"
+	desc = "Melta Ammo needs this to work, don't ping walker or arch."
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "melta"
+	projectile_type = /obj/item/projectile/bullet/rifle/lascannon/melta

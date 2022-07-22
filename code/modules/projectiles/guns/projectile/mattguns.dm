@@ -848,46 +848,7 @@
 	armor_penetration = 5 //this is melee
 
 // Boltgun
-
-/obj/item/gun/projectile/ravenbolter //needs lots of work and love, ok standin for now
-	name = "Godwyn Mark Vb Pattern Bolter"
-	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIXth Chapter Raven Guards's colour scheme."
-	icon_state = "ravenbolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
-	w_class = ITEM_SIZE_HUGE
-	force = 30
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	max_shells = 30
-	caliber = ".75"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
-	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
-	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
-	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
-	loaded_icon = "ravenbolter-30"
-	unloaded_icon = "ravenbolter-e"
-	fire_delay = 3
-	burst = 1
-	move_delay = 5
-	one_hand_penalty = 10
-	automatic = 1
-	firemodes = list()
-	gun_type = GUN_AUTOMATIC
-	accuracy = 0
-
-/obj/item/gun/projectile/ravenbolter/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "ravenbolter-30"
-	else
-		icon_state = "ravenbolter-e"
-
-
-/obj/item/gun/projectile/smurfbolter //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/bolter //boltus
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
 	icon_state = "ultrabolter"
@@ -901,7 +862,7 @@
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/ms, /obj/item/ammo_magazine/bolt_rifle_magazine/ms)
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -917,81 +878,49 @@
 	gun_type = GUN_AUTOMATIC
 	accuracy = 0
 
-/obj/item/gun/projectile/smurfbolter/update_icon()
+/obj/item/gun/projectile/bolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "ultrabolter-30"
 	else
 		icon_state = "ultrabolter-e"
 
-/obj/item/gun/projectile/sallybolter //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/bolter/raven
+	name = "Godwyn Mark Vb Pattern Bolter"
+	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIXth Chapter Raven Guards's colour scheme."
+	icon_state = "ravenbolter"
+	loaded_icon = "ravenbolter-30"
+	unloaded_icon = "ravenbolter-e"
+
+/obj/item/gun/projectile/bolter/ravenbolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ravenbolter-30"
+	else
+		icon_state = "ravenbolter-e"
+
+/obj/item/gun/projectile/bolter/sally
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
 	icon_state = "sallybolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
-	w_class = ITEM_SIZE_HUGE
-	force = 30
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	max_shells = 30
-	caliber = ".75"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
-	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
-	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
-	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
-	fire_delay = 3
-	burst = 1
-	move_delay = 5
-	one_hand_penalty = 10
-	automatic = 1
-	firemodes = list()
-	gun_type = GUN_AUTOMATIC
-	accuracy = 0
 
-/obj/item/gun/projectile/sallybolter/update_icon()
+/obj/item/gun/projectile/bolter/sally/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "sallybolter-30"
 	else
 		icon_state = "sallybolter-e"
 
-/obj/item/gun/projectile/bangbolter //needs lots of work and love, ok standin for now
+/obj/item/gun/projectile/bolter/bang
 	name = "Baal Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in IXth Chapter Blood Angels's colour scheme."
 	icon_state = "bangbolter"
-	str_requirement = 18 //IS12 has a 20 str cap so dont go over it
-	w_class = ITEM_SIZE_HUGE
-	force = 30
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	max_shells = 30
-	caliber = ".75"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
-	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
-	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
-	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "bangbolter-30"
 	unloaded_icon = "bangbolter-e"
-	fire_delay = 3
-	burst = 1
-	move_delay = 5
-	one_hand_penalty = 10
-	automatic = 1
-	firemodes = list()
-	gun_type = GUN_AUTOMATIC
-	accuracy = 0
 
-/obj/item/gun/projectile/bangbolter/update_icon()
+/obj/item/gun/projectile/bolter/bang/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "bangbolter-30"
@@ -1011,9 +940,9 @@
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	one_hand_penalty = 10 //its a bolter not a toy gun
+	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine	
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -1156,3 +1085,5 @@
 	gun_type = GUN_AUTOMATIC
 	automatic = 1
 	firemodes = list()
+
+
