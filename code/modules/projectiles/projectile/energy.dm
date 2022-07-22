@@ -141,7 +141,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 50
+	damage = 35
 	armor_penetration = 15
 
 /obj/item/projectile/energy/las/lasgun/execution
@@ -164,8 +164,8 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 50 
-	armor_penetration = 40
+	damage = 70
+	armor_penetration = 15
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
@@ -180,8 +180,8 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 50
-	armor_penetration = 40
+	damage = 60
+	armor_penetration = 20
 
 /obj/item/projectile/energy/pulse/pulserifle
 	name = "pulse round"
@@ -189,7 +189,6 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 45
-	armor_penetration = 30
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"

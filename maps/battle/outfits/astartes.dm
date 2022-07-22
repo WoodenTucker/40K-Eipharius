@@ -16,7 +16,7 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/projectile/bolter
+	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -40,7 +40,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
-	suit_store = /obj/item/gun/projectile/bolter/raven
+	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 
 /decl/hierarchy/outfit/job/astarte/salamander
@@ -51,7 +51,7 @@ Begin Warhammer loadouts
 	belt = null
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
-	suit_store = /obj/item/gun/projectile/bolter/sally
+	suit_store = /obj/item/gun/projectile/sallybolter
 
 /decl/hierarchy/outfit/job/astarte/ultramarine/captain
 	name = OUTFIT_JOB_NAME("Ultramarine Company Captain")
@@ -66,7 +66,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/projectile/bolter/smurf
+	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -89,7 +89,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/projectile/bolter/raven
+	suit_store = /obj/item/gun/projectile/ravenbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -112,7 +112,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/projectile/bolter/sally
+	suit_store = /obj/item/gun/projectile/sallybolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
@@ -210,7 +210,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter
+	suit_store = /obj/item/gun/projectile/smurfbolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,

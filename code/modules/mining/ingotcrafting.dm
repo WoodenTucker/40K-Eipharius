@@ -449,7 +449,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle", "Kraken penetrator bolter magazine") //lists all possible crafting choices
+		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -485,14 +485,6 @@
 				src.whatwemaking = 5
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Ultramarines Godwyn Mark Vb Pattern Bolter)"
-				
-			if("Kraken penetrator bolter magazine")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Kraken penetrator bolter magazine.")
-				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 6
-				src.ismarked = 1
-				src.name = "Adamantium Ingot (Kraken penetrator bolter magazine)"
-
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -538,13 +530,6 @@
 					src.rubtheoils = 1
 					src.name = "Adamantium Ingot (Carved Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-			if(6)
-				if(prob(25))
-					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Kraken penetrator bolter magazine! Now take the ingot and dip it into the holy oil!")
-					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Kraken penetrator bolter magazine)"
-					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
@@ -567,30 +552,24 @@
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter/bang(user.loc)
+				new /obj/item/gun/projectile/bangbolter(user.loc)
 				qdel(src)
 				return
 			if(3)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter/raven(user.loc)
+				new /obj/item/gun/projectile/ravenbolter(user.loc)
 				qdel(src)
 				return
 			if(4)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter/sally(user.loc)
+				new /obj/item/gun/projectile/sallybolter(user.loc)
 				qdel(src)
 				return
 			if(5)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter(user.loc)
-				qdel(src)
-				return
-			if(6)
-				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
-				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/bolt_rifle_magazine/kp(user.loc)
+				new /obj/item/gun/projectile/smurfbolter(user.loc)
 				qdel(src)
 				return

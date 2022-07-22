@@ -154,7 +154,7 @@
 	lmg_skill = 5
 	smg_skill = 7
 	alt_titles = list(
-		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter
+		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/guardsman,
 		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
@@ -185,7 +185,7 @@
 				/mob/living/carbon/human/proc/tzeentch
 				)
 				if(title == "Valhallan Sharpshooter")
-					H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 // Sergeants
