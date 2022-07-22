@@ -131,7 +131,7 @@
 	icon = 'icons/obj/items/OmmisianAxe.dmi'
 	icon_state = "Whistle_InHand_L"
 	item_state = "Whistle_InHand_L"
-	wielded_icon = "trenchaxe-w"
+	wielded_icon = "Whistle_InHand_L_W"
 	force = 25
 	block_chance = 50
 	sharp = TRUE

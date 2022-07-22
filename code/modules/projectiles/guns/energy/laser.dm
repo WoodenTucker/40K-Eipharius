@@ -385,8 +385,8 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
-	icon_state = "laspistol"
-	item_state = "laspistol"
+	icon_state = "laspistolunmark"
+	item_state = "laspistolunmark"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
