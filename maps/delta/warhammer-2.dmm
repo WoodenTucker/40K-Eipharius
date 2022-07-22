@@ -1677,6 +1677,7 @@
 	name = "sleeping mat"
 	},
 /obj/effect/floor_decal/turf/carpetn00,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "eb" = (
@@ -3199,7 +3200,6 @@
 	},
 /obj/item/stack/thrones2,
 /obj/item/stack/thrones2,
-/obj/item/device/radio/headset/red_team/voxcaster,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3455,6 +3455,7 @@
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "iy" = (
@@ -4592,12 +4593,9 @@
 /area/cadiaoutpost/oa/village)
 "lx" = (
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/item/device/radio/headset/red_team/voxcaster,
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "lz" = (
@@ -5362,7 +5360,7 @@
 /obj/random/canned_food,
 /obj/random/canned_food,
 /obj/random/canned_food,
-/obj/item/device/radio/headset/red_team/voxcaster,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -5737,11 +5735,12 @@
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomitemtown,
-/obj/item/device/radio/headset/red_team/voxcaster,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "ou" = (
 /obj/structure/table/rack,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -6158,6 +6157,7 @@
 /obj/structure/closet/cabinet{
 	color = "grey"
 	},
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/villageinside)
 "pD" = (
@@ -9396,6 +9396,7 @@
 "OD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10179,6 +10180,7 @@
 /obj/structure/table/rack,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/random/canned_food,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -10236,7 +10238,7 @@
 /obj/effect/floor_decal/newcorner/plating/corner{
 	dir = 8
 	},
-/obj/item/device/radio/headset/red_team/voxcaster,
+/obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -29073,7 +29075,7 @@ Ns
 aY
 eC
 bu
-lx
+eC
 bu
 eL
 aY
@@ -30359,7 +30361,7 @@ aY
 bu
 bu
 bu
-ci
+bu
 bu
 bu
 bu
@@ -31635,7 +31637,7 @@ ro
 ZH
 aY
 aY
-dJ
+lx
 dJ
 ei
 en
