@@ -155,7 +155,7 @@
 	smg_skill = 7
 	alt_titles = list(
 		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/sharpshooter/valhalla
 		)
 
 	equip(var/mob/living/carbon/human/H)
