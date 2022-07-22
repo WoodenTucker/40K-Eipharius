@@ -3034,15 +3034,15 @@
 /obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
-/obj/item/book/manual{
-	desc = dd;
-	name = "Inquisitorial Report"
-	},
 /obj/item/card/id/innkey1{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	access = list(302)
+	},
+/obj/item/book/manual{
+	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
+	name = "Inquisitorial Report"
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
