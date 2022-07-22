@@ -6,7 +6,7 @@
 	icon_state = "ntguard"
 	item_state = "r_suit"
 	worn_state = "ntguard"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/nanotrasen.dmi')
 
@@ -18,7 +18,7 @@
 	item_state = "w_suit"
 	worn_state = "ntsmock"
 	permeability_coefficient = 0.50
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/nanotrasen.dmi')
 	starting_accessories = list(/obj/item/clothing/accessory/nt_tunic)
 
@@ -35,7 +35,7 @@
 	icon_state = "ntwork"
 	item_state = "lb_suit"
 	worn_state = "ntwork"
-	armor = list(melee = 5, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 5, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
 	item_icons = list(slot_w_uniform_str = 'icons/mob/onmob/nanotrasen.dmi')
 
 /obj/item/clothing/under/rank/ntpilot
