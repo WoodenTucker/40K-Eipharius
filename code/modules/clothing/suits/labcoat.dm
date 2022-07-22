@@ -8,7 +8,7 @@
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
 	allowed = list(/obj/item/device/analyzer,/obj/item/stack/medical,/obj/item/reagent_containers/dropper,/obj/item/reagent_containers/syringe,/obj/item/reagent_containers/hypospray,/obj/item/device/healthanalyzer,/obj/item/device/flashlight/pen,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/beaker,/obj/item/reagent_containers/pill,/obj/item/storage/pill_bottle,/obj/item/paper)
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 50, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 10)
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
@@ -64,7 +64,7 @@
 	icon_state = "labcoat_vir_open"
 	icon_open = "labcoat_vir_open"
 	icon_closed = "labcoat_vir"
-	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 70, rad = 30)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science
 	name = "\improper NanoTrasen labcoat"
@@ -99,5 +99,4 @@
 	icon_state = "labcoat_xy"
 	icon_open = "labcoat_xy_open"
 	icon_closed = "labcoat_xy"
-	armor = list(melee = 10, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 20, rad = 0)
-	species_restricted = list(SPECIES_IPC)
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 20, bomb = 20, bio = 0, rad = 0)
