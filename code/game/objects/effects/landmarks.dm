@@ -350,15 +350,15 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/lightlasgun/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun = 11,
-				/obj/item/gun/energy/las/lasgun/rare = 4,
-				/obj/item/gun/energy/las/lasgun/lucius = 8,
-				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 3,
-				/obj/item/gun/energy/las/laspistol = 1,
-				/obj/item/gun/energy/las/lasgun/tinkered = 1,
-				/obj/item/gun/energy/las/lasgun/catachan = 1,
-				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 1,
-				)
+	return list(/obj/item/gun/energy/las/lasgun = 12,
+				/obj/item/gun/energy/las/lasgun/rare = 6,
+				/obj/item/gun/energy/las/lasgun/lucius = 9,
+				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 4,
+				/obj/item/gun/energy/las/laspistol/militarum = 3,
+				/obj/item/gun/energy/las/lasgun/tinkered = 2,
+				/obj/item/gun/energy/las/lasgun/catachan = 4,
+				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 2,
+				/obj/item/gun/energy/las/lasgun/longlas = 1)
 
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
@@ -438,7 +438,7 @@ Template:
 	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 5,
 				/obj/item/gun/projectile/warfare = 6,
 				/obj/item/gun/projectile/warfare/kieji = 5,
-				/obj/item/gun/energy/las/laspistol = 7,
+				/obj/item/gun/energy/las/laspistol/militarum = 7,
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
 				/obj/item/gun/projectile/talon/renegade = 1,
@@ -463,22 +463,15 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/warfare/kieji = 1,
-				/obj/item/gun/energy/las/laspistol = 1,
-				/obj/item/gun/projectile/mervex = 1,
+	return list(/obj/item/gun/energy/las/laspistol/mechanicus = 1,
 				/obj/item/gun/projectile/necros = 1,
 				/obj/item/gun/projectile/slugrevolver = 1,
 				/obj/item/gun/projectile/lockebolter = 1,
 				/obj/item/gun/projectile/talon/renegade = 1,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 8,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 6,
 				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 6,
 				/obj/item/gun/projectile/automatic/stubber = 6,
-				/obj/item/gun/projectile/automatic/stubber/villiers = 6,
-				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
 				/obj/item/gun/projectile/bolter_pistol = 2,
 				/obj/item/gun/energy/las/lasgun/rare = 4,
-				/obj/item/gun/energy/las/lasgun/lucius = 8,
 				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 3,
 				/obj/item/gun/energy/las/lasgun/catachan = 1,
 				/obj/item/gun/projectile/automatic/autogrim = 2,
@@ -497,7 +490,7 @@ Template:
 				/obj/item/melee/trench_axe = 12,
 				/obj/item/melee/inqcs = 1,
 				/obj/item/melee/pcsword/eviscerator = 1,
-				/obj/item/melee/classic_baton/trench_club = 8,
+				/obj/item/melee/classic_baton/trench_club = 5,
 				/obj/item/melee/telebaton = 6,
 				/obj/item/material/sword/machete = 8,
 				/obj/item/material/sword/sabre = 4,

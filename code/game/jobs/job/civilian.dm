@@ -67,7 +67,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Pvt. [current_name]")
+		H.fully_replace_character_name("[current_name]")
 		H.add_stats(rand(11,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
 		H.add_skills(rand(6,8),rand(6,7),rand(1,6),rand(1,2),1)
 		H.assign_random_quirk()

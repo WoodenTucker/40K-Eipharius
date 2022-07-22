@@ -34,7 +34,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Rogue Trader [current_name]")
+		H.fully_replace_character_name("Lord Trader [current_name]")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -55,7 +55,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 // Seneschal
 
 /datum/job/hop
-	title = "Seneschal"
+	title = "Steward"
 	head_position = 1
 	department_flag = COM|CIV
 	social_class = SOCIAL_CLASS_HIGH
@@ -85,7 +85,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Seneschal, the right hand of the Rogue Trader. You are to handle his/her issues when he/she is not present. If the Rogue Trader is incapacitated then you assume command. While he is alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it. You are a absolute psychopath, do not fear getting your hands dirty.</font></b></span>")
+			to_chat(H, "<span class='notice'><b><font size=3>You are the Steward and personal aid to the Lord Trader acting as their Major-Domo, you interact with the Administratum and Munitorium on behalf of your Lord while wielding some semblence of the golden writ of authority in their absence.</font></b></span>")
 
 
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,

@@ -185,7 +185,7 @@
 /datum/job/ig/enforcer/equip(var/mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	..()
-	H.fully_replace_character_name("Enforcer [current_name]")
+	H.fully_replace_character_name("[current_name]")
 	H.add_stats(rand(14,18), rand(10,14), rand(12,13), rand(10,13)) //meant to be a brute keeping the plebs in line
 	H.add_skills(rand(6,10),rand(6,10))
 	H.assign_random_quirk()
