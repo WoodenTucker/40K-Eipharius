@@ -1,3 +1,35 @@
+
+/obj/item/gun/projectile/automatic/flamer/handflamer
+	name = "Mk.1 hand flamer"
+	desc = "An incredibly small hand-held flamethrower often used by the inquisition and the sisters."
+	icon_state = "flamer"
+	item_state = "flamer"
+	wielded_item_state = "flamer-wielded"
+	caliber = "flamer"
+	one_hand_penalty = 0
+	str_requirement = 10
+	fire_sound = 'sound/effects/fire01.ogg'
+	casingsound = null//No eject sound for you.
+	firemodes = list()
+	accuracy = 0.5
+	automatic = 1
+	fire_delay = 1
+	burst=0
+	magazine_type = /obj/item/ammo_magazine/flamer
+	allowed_magazines = /obj/item/ammo_magazine/flamer
+	can_jam = FALSE
+
+	loaded_icon = "flamer"
+	unwielded_loaded_icon = "flamer"
+	wielded_loaded_icon = "flamer-wielded"
+	unloaded_icon = "flamer-e"
+	unwielded_unloaded_icon = "flamer-e"
+	wielded_unloaded_icon = "flamer-wielded-e"
+
+	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+
+
 /obj/item/gun/projectile/colt
 	name = "vintage .45 pistol"
 	desc = "A cheap Martian knock-off of a Colt M1911. Uses .45 rounds."
