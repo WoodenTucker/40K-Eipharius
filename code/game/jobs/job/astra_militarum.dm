@@ -43,12 +43,6 @@
 			if("Krieg Guardsman")
 				H.fully_replace_character_name("Guardsman [troopnum]")
 				H.implant_loyalty(src)
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch
-		)
 
 // Guardsmen
 
@@ -99,12 +93,6 @@
 			H.implant_loyalty(src)
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch
-				)
 				if(title == "Catachan Jungle Hunter")
 					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
 				if(title == "Valhallan Ice Warrior")
@@ -178,12 +166,6 @@
 
 		switch(title)
 			if("Cadian Sharpshooter" || "Valhallan Sharpshooter")
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch
-				)
 				if(title == "Valhallan Sharpshooter")
 					H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
@@ -241,12 +223,6 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Krieg Quartermaster, you are brave just like a normal kriegsman, but, you are also smarter making your lifespan twice as good as that of your fellow kriegsman, you are a beacon of discipline, and remember, if your squad's trenches are horrible, its your fault.</font></b></span>")
 		switch(title)
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch
-				)
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(9,11),rand(9,10),rand(5,7),5,rand(4,6))
 				if(title == "Valhallan Sergeant")
@@ -293,11 +269,6 @@
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
 
