@@ -21,20 +21,6 @@
 /area/cadiaoutpost/oa/krootship)
 "ae" = (
 /obj/effect/floor_decal/turf/metal,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "af" = (
@@ -112,14 +98,6 @@
 /area/cadiaoutpost/oa/krootship)
 "ao" = (
 /obj/effect/floor_decal/turf/metal/two,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "rwindow"
-	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ap" = (
@@ -285,6 +263,19 @@
 /obj/structure/railing,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
+"aZ" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/melee/telebaton,
+/obj/item/melee/telebaton,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ba" = (
 /obj/machinery/light{
 	dir = 1;
@@ -511,8 +502,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bR" = (
 /obj/structure/table/steel,
-/obj/item/gun/projectile/bolter_pistol,
 /obj/effect/floor_decal/turf/brick,
+/obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -520,8 +511,8 @@
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
 /obj/random/loot/heavystubber,
-/obj/random/loot/heavystubber,
-/obj/random/loot/heavystubber,
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bT" = (
@@ -549,11 +540,6 @@
 "bV" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/brick,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
@@ -697,12 +683,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cq" = (
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
-	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/plating,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(213)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cr" = (
@@ -734,8 +721,6 @@
 /obj/effect/floor_decal/turf/brick,
 /obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
-/obj/random/loot/lightstubber,
-/obj/random/loot/lightstubber,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cw" = (
@@ -751,6 +736,7 @@
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /obj/effect/floor_decal/turf/brick,
+/obj/item/ammo_magazine/melta,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cy" = (
@@ -758,10 +744,7 @@
 /obj/item/melee/inqcs,
 /obj/item/melee/inqcs,
 /obj/item/melee/inqcs,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
 /obj/effect/floor_decal/turf/brick,
-/obj/item/melee/baton/loaded,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cz" = (
@@ -834,59 +817,22 @@
 /obj/item/ammo_magazine/a357,
 /obj/item/ammo_magazine/a357,
 /obj/item/clothing/accessory/holster/waist,
-/obj/item/gun/projectile/lockebolter,
-/obj/item/clothing/glasses/chameleon,
-/obj/item/clothing/mask/chameleon,
 /obj/item/card/id/captains_spare{
 	desc = "The spare ID of the Inquisitor";
 	name = "Inquisitor";
 	registered_name = "Inquisitor"
 	},
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cJ" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
-/obj/item/ammo_magazine/bolt_rifle_magazine/empty,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter{
-	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = -4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_y = -4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = 3
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_y = 3
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_y = 3
-	},
+/obj/item/ammo_magazine/bolt_rifle_magazine,
+/obj/item/ammo_magazine/bolt_rifle_magazine,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cL" = (
@@ -1015,6 +961,24 @@
 	},
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "da" = (
@@ -1022,6 +986,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/crowbar,
 /obj/item/wrench,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "db" = (
@@ -1136,7 +1101,8 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1183,17 +1149,14 @@
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dy" = (
-/obj/machinery/door/blast/grates/open{
-	dir = 4;
-	icon_state = "gshutter0";
-	id = "inqexec"
-	},
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
-	},
-/turf/simulated/floor/asteroid/air,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/clothing/glasses/thermal/syndi,
+/obj/item/clothing/glasses/thermal/syndi,
+/obj/item/clothing/glasses/thermal/syndi,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dz" = (
 /obj/machinery/button/remote/blast_door/lever{
@@ -1291,9 +1254,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dQ" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/landmark/start{
-	name = "Principal Agent"
+/obj/effect/floor_decal/turf/brick,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Secure Door";
+	req_access = list(302)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1354,8 +1319,15 @@
 /obj/item/bedsheet/hos,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/landmark/start{
-	name = "Inquisitor"
+	name = "Imperial Inquisitor"
 	},
+/obj/item/clothing/suit/chameleon,
+/obj/item/clothing/under/chameleon,
+/obj/item/clothing/shoes/chameleon,
+/obj/item/clothing/mask/chameleon/voice,
+/obj/item/clothing/head/chameleon,
+/obj/item/clothing/gloves/chameleon,
+/obj/item/clothing/glasses/thermal/syndi,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "eF" = (
@@ -1439,6 +1411,16 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"fQ" = (
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
+	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "fR" = (
 /obj/machinery/computer/operating,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -1493,7 +1475,8 @@
 "gs" = (
 /obj/structure/grille,
 /obj/structure/window_frame{
-	color = "grey"
+	color = "grey";
+	maxhealth = 5000
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1679,7 +1662,8 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1963,7 +1947,7 @@
 	id = "arvusrampdoor";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_access = list(202)
+	req_access = list(302)
 	},
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -2545,6 +2529,24 @@
 "lR" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "lU" = (
@@ -2583,7 +2585,8 @@
 "mD" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
@@ -2607,6 +2610,7 @@
 /obj/item/forensics/swab,
 /obj/item/forensics/sample_kit/powder,
 /obj/structure/table/steel,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "mV" = (
@@ -2620,7 +2624,8 @@
 /obj/machinery/door/airlock/medical{
 	color = "grey";
 	maxhealth = 600;
-	name = "Laboratorum"
+	name = "Laboratorum";
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -2920,6 +2925,7 @@
 /area/centcom)
 "rD" = (
 /obj/structure/closet/emcloset,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rI" = (
@@ -3024,19 +3030,21 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "tv" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
+/obj/structure/table/steel,
+/obj/item/book/manual{
+	desc = dd;
+	name = "Inquisitorial Report"
 	},
-/obj/structure/sign/sancposter{
-	pixel_y = 32
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
 	},
-/obj/effect/landmark/start{
-	name = "Principal Agent"
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tC" = (
 /obj/machinery/light{
@@ -3088,6 +3096,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"uj" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ul" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /obj/machinery/organ_printer/flesh,
@@ -3218,7 +3235,8 @@
 "vS" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
@@ -3417,11 +3435,13 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/clothing/suit/armor/agent,
 /obj/item/clothing/head/helmet/barney_helmet,
-/obj/item/clothing/mask/chameleon,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
+/obj/item/clothing/mask/chameleon,
+/obj/item/clothing/under/chameleon,
+/obj/item/clothing/head/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -3611,7 +3631,8 @@
 /obj/effect/floor_decal/turf/metal/five,
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3620,7 +3641,8 @@
 /obj/machinery/door/airlock/medical{
 	color = "grey";
 	maxhealth = 600;
-	name = "Laboratorum"
+	name = "Laboratorum";
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3853,6 +3875,10 @@
 "EU" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
+/obj/item/clothing/head/helmet/salvage,
+/obj/item/clothing/head/helmet/salvage,
+/obj/item/clothing/head/helmet/mining,
+/obj/item/clothing/head/helmet/mining,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "EX" = (
@@ -3891,6 +3917,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"FC" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/suit/armor/guardsman,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "FF" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/metal/five,
@@ -4105,6 +4138,13 @@
 	icon_state = "rwall3"
 	},
 /area/centcom)
+"Ja" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/clothing/head/helmet/guardhelmet,
+/obj/item/clothing/head/helmet/medicae,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Jb" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/vending/engivend,
@@ -4296,12 +4336,15 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
+/obj/item/clothing/under/chameleon,
+/obj/item/clothing/head/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "LU" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/dark,
@@ -4334,6 +4377,10 @@
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle"
+	},
+/obj/item/book/manual{
+	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
+	name = "Inquisitorial Report"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4760,7 +4807,7 @@
 	name = "sleeping mat"
 	},
 /obj/effect/landmark/start{
-	name = "Principal Agent"
+	name = "Inquisition Acolyte"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4889,6 +4936,8 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
+/obj/item/clothing/under/chameleon,
+/obj/item/clothing/head/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Ua" = (
@@ -4956,6 +5005,15 @@
 /obj/item/stool/bar/padded,
 /turf/simulated/floor/wood,
 /area/centcom)
+"Vm" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(213)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Vt" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -5172,7 +5230,8 @@
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -11654,7 +11713,7 @@ ax
 jb
 jb
 jb
-jb
+lU
 jb
 jb
 jb
@@ -12266,7 +12325,7 @@ ax
 jb
 lU
 lU
-cq
+fQ
 lU
 lU
 lU
@@ -12375,7 +12434,7 @@ cp
 cp
 lU
 lU
-Za
+dQ
 lU
 lU
 lU
@@ -12472,7 +12531,7 @@ lU
 je
 cp
 EU
-EU
+aZ
 cp
 cp
 lU
@@ -12573,8 +12632,8 @@ jb
 bK
 jg
 cp
-EU
-EU
+uj
+dy
 cp
 cp
 JG
@@ -12675,8 +12734,8 @@ jb
 lU
 xQ
 cp
-EU
-EU
+Ja
+FC
 cp
 cp
 pT
@@ -12789,7 +12848,7 @@ fc
 KZ
 lU
 dp
-dy
+dr
 lU
 fD
 dI
@@ -13897,7 +13956,7 @@ ax
 ax
 jb
 lU
-tv
+RF
 cp
 cp
 RF
@@ -13910,7 +13969,7 @@ lU
 lU
 lU
 lU
-Za
+Vm
 lU
 lU
 lU
@@ -14102,7 +14161,7 @@ ax
 jb
 lU
 cp
-dQ
+cp
 cp
 JO
 cp
@@ -14314,7 +14373,7 @@ AI
 lU
 cm
 cu
-cJ
+tv
 lU
 lU
 lU
