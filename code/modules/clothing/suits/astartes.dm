@@ -4,16 +4,18 @@
 	item_icons = list(slot_wear_suit_str = 'icons/mob/32x40/suits.dmi')
 	icon_state = "umpowerarmor"
 	item_state = "umpowerarmor"
-	str_requirement = 25
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 75, bullet = 80, laser = 70, energy = 60, bomb = 70, bio = 70, rad = 70)
+	armor = list(melee = 80, bullet = 70, laser = 90, energy = 90, bomb = 60, bio = 100, rad = 100)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES
 	species_restricted = list(SPECIES_ASTARTES)
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	germ_level = 0 //sterile...
 
 // SPESS MUUHREEN TACTICOOL
 
