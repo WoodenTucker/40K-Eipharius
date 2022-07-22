@@ -49,12 +49,6 @@
 	H.witchblood()
 	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 	to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
-	H.verbs += list(
-	/mob/living/carbon/human/proc/khorne,
-	/mob/living/carbon/human/proc/nurgle,
-	/mob/living/carbon/human/proc/slaanesh,
-	/mob/living/carbon/human/proc/tzeentch
-	)
 
 // Sergeant
 
@@ -109,12 +103,6 @@
 	else
 		H.fully_replace_character_name("Sergeant [current_name]")
 	to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the Imperial Guard. Round up some guardsmen and construct your own squad. You are to be a beacon of discipline and order amongst your men, let your behavior reflect this.</font></b></span>")
-	H.verbs += list(
-	/mob/living/carbon/human/proc/khorne,
-	/mob/living/carbon/human/proc/nurgle,
-	/mob/living/carbon/human/proc/slaanesh,
-	/mob/living/carbon/human/proc/tzeentch
-	)
 
 // Commissar
 
@@ -161,13 +149,6 @@
 	var/obj/O = H.get_equipped_item(slot_s_store)
 	if(O)
 		qdel(O)
-	H.verbs += list(
-		/mob/living/carbon/human/proc/help_me,
-		/mob/living/carbon/human/proc/retreat,
-		/mob/living/carbon/human/proc/announce,
-		/mob/living/carbon/human/proc/give_order,
-		/mob/living/carbon/human/proc/check_reinforcements
-	)
 
 // Enforcer
 
@@ -209,11 +190,6 @@
 	H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 	H.warfare_faction = IMPERIUM
 	H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-	H.verbs += list(
-	/mob/living/carbon/human/proc/khorne,
-	/mob/living/carbon/human/proc/nurgle,
-	/mob/living/carbon/human/proc/slaanesh,
-	/mob/living/carbon/human/proc/tzeentch)
 
 	to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Planetary Magistratum, your duty is to uphold outpost law on this planet amongst the civilians. You are not to meddle in Guard duties lest absolutely necessary, focus your effort on maintaining the peace/order in the shanty town north of the outpost.</font></b></span>")
 
