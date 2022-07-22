@@ -133,7 +133,8 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/glasses/cadiangoggles/sniper
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -151,7 +152,6 @@ Begin Warhammer loadouts
 	head = /obj/item/clothing/head/valushanka
 	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
-	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_box/rifle
 	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
@@ -162,6 +162,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
+	/obj/item/clothing/glasses/cadiangoggles/sniper
 	)
 
 /// Sergeant
