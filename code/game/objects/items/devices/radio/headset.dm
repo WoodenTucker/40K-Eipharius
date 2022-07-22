@@ -239,7 +239,7 @@
 	ks2type = /obj/item/device/encryptionkey/entertainment
 
 /obj/item/device/radio/headset/inquisition
-	name = "inquisition's headset"
+	name = "vox headset"
 	desc = "The headset of religious intolorence."
 	icon_state = "rob_headset"
 	item_state = "headset"
