@@ -14,7 +14,7 @@
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/storage/box/ids = 1,
-	/obj/item/stack/thrones/twenty = 1,
+	/obj/item/stack/thrones/ten = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,

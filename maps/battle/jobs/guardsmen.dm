@@ -1,8 +1,8 @@
 /datum/job/guardsman
 	title = "Guardsman"
 	supervisors = "the Commissar and your Sergeant."
-	total_positions = 20
-	spawn_positions = 20
+	total_positions = 9
+	spawn_positions = 9
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/guardsman //will need to be replaced eventually - wel
 	alt_titles = list(
@@ -73,7 +73,7 @@
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
 			access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
@@ -202,7 +202,7 @@
 /datum/job/ig/enforcer/equip(var/mob/living/carbon/human/H)
 	var/current_name = H.real_name
 	..()
-	H.fully_replace_character_name("Enforcer [current_name]")
+	H.fully_replace_character_name("[current_name]")
 	H.add_stats(rand(13,17), rand(13,17), rand(14,17), rand(12,15)) //meant to be a brute keeping the plebs in line
 	H.assign_random_quirk()
 	H.witchblood()

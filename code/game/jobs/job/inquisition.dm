@@ -14,8 +14,8 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
-		"Acolyte Of Ordo Hereticus" = /decl/hierarchy/outfit/job/acolyte,
-		"Acolyte Of Ordo Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
+		"Acolyte" = /decl/hierarchy/outfit/job/acolyte,
+		"Acolyte" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
 	auto_rifle_skill = 7
@@ -28,7 +28,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Acolyte [current_name]")
+		H.fully_replace_character_name("[current_name]")
 		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(14,17)) //highly trained and skilled
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),rand(5,6),rand(6,7)) //SUFFER NOT THE ALIEN, SUFFER NOT THE HERETIC
 		H.assign_random_quirk()
@@ -38,7 +38,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
-		to_chat(H, "<span class='notice'><b><font size=3>You are an inquisitor-in-training, referred as Acolyte, Your task is to assist the Throne Agent, Lord Inquisitor in investigating, neutralising and erasing traces of heresy, chaos, xenos and daemons.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are an interrogator-in-training, referred as Acolyte, Your task is to assist the Lord Inquisitor in investigating, neutralising and erasing traces of heresy, chaos, xenos and daemons. Should you fail in your duties, you have no doubt of what will become of you -- this may be your final test.</font></b></span>")
 
 /datum/job/acolyte/equip(var/mob/living/carbon/human/H)
 	. = ..()
@@ -63,8 +63,8 @@
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 	alt_titles = list(
-		"Inquisitor Of Ordo Hereticus" = /decl/hierarchy/outfit/job/inquisitor,
-		"Inquisitor Of Ordo Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
+		"Inquisitor" = /decl/hierarchy/outfit/job/inquisitor,
+		"Inquisitor" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
 	auto_rifle_skill = 10
@@ -77,7 +77,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Inquisitor [current_name]")
+		H.fully_replace_character_name("[current_name]")
 		H.add_stats(rand(17,20), rand(17,20), rand(17,20), rand(17,20)) //PRAISE THE EMPEROR
 		H.add_skills(10,10,rand(7,10),rand(5,7),rand(7,8)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
@@ -88,7 +88,7 @@
 		H.witchblood()
 		H.inquisitor = 1
 		H.get_idcard()?.access = get_all_accesses()
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium. As full-fledged Inquisitor. Your task is to seek and destroy enemies of the Imperium, whether they're Daemons, Chaos, Xenos or Heretics. The Emperor Protects.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium and Lords of the Inquisition. A single drop of mercy may result in the spilled bloods of untold millions, steel your heart to their suffering. Every person, asset and object on this planet is a tool or resource to be exploited. Excommunication and the dull thud of a bolt pistol is what awaits you in failure. Your acolytes personally selected to serve only you, whether they survive and rise to the ranks of Interrogator shall be determined in the coming weeks.</font></b></span>")
 
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()

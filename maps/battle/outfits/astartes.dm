@@ -21,7 +21,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
 	)
@@ -71,7 +70,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
 	)
@@ -94,7 +92,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
 	)
@@ -117,7 +114,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
 	)
@@ -141,7 +137,6 @@ Begin Warhammer loadouts
 	/obj/item/melee/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/accessory/storage/black_vest = 1
@@ -166,7 +161,6 @@ Begin Warhammer loadouts
 	/obj/item/melee/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/accessory/storage/black_vest = 1
@@ -191,7 +185,6 @@ Begin Warhammer loadouts
 	/obj/item/melee/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/accessory/storage/black_vest = 1
@@ -215,7 +208,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/accessory/storage/black_vest = 1
@@ -239,7 +231,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/accessory/storage/black_vest = 1
@@ -263,7 +254,6 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
-	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/accessory/storage/black_vest = 1
