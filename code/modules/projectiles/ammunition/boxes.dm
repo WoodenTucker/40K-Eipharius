@@ -459,3 +459,13 @@
 	caliber = "shuriken"
 	max_ammo = 1000
 	multiple_sprites = 0
+
+/obj/item/ammo_magazine/spistol_magazine
+	name = "Shuriken Pistol Magazine"
+	icon_state = "ersatz"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/shuriken/pistol
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	caliber = "shuriken"
+	max_ammo = 1000
+	multiple_sprites = 0
