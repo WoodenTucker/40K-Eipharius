@@ -313,3 +313,13 @@
 	spent_icon = "null"
 	caliber = "shuriken"
 	projectile_type = /obj/item/projectile/bullet/rifle/shuriken/catapult
+	
+
+/obj/item/ammo_casing/shuriken/pistol
+	name = "shuriken casings"
+	desc = "A shuriken projectile casing"
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "shuriken"
+	projectile_type = /obj/item/projectile/bullet/rifle/shuriken/pistol
+
