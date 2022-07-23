@@ -20,7 +20,7 @@
 	icon_state = "swat"
 	force = 3
 	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
-	item_flags = ITEM_FLAG_NOSLIP
+//	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
 	var/obj/item/material/sword/combat_knife/knife = null
@@ -31,7 +31,7 @@
 	icon_state = "jungle"
 	force = 5
 	armor = list(melee = 80, bullet = 60, laser = 60,energy = 25, bomb = 50, bio = 10, rad = 0)
-	item_flags = ITEM_FLAG_NOSLIP
+//	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
 
@@ -185,6 +185,7 @@
 	desc = "A pair of high quality black leather boots for stomping heretics faces in."
 	icon_state = "noble-boots"
 	item_state = "noble-boots"
+	item_flags = ITEM_FLAG_NOSLIP
 
 /obj/item/clothing/shoes/jackboots/noble
 	name = "noble boots"
