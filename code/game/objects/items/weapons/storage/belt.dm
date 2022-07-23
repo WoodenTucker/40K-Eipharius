@@ -309,3 +309,66 @@
 	name = "Chestrig"
 	desc = "Holds ammo. But not much else. This one starts with Warcrime ammo."
 	icon_state = "chestrig"
+
+/obj/item/storage/belt/medical/apothecary
+	name = "medical belt"
+	desc = "A special belt made for Apothecaries, Genetors, and Hospitallers, its able to hold surgical and medical tools, they are preloaded with important gear."
+	icon_state = "medicalbelt"
+	item_state = "medical"
+	canremove = 0
+	storage_slots = 30
+	max_storage_space = 30 
+	can_hold = list(
+		/obj/item/device/healthanalyzer,
+		/obj/item/reagent_containers/dropper,
+		/obj/item/reagent_containers/glass/beaker,
+		/obj/item/reagent_containers/glass/bottle,
+		/obj/item/reagent_containers/pill,
+		/obj/item/reagent_containers/syringe,
+		/obj/item/flame/lighter/zippo,
+		/obj/item/storage/fancy/cigarettes,
+		/obj/item/storage/pill_bottle,
+		/obj/item/stack/medical,
+		/obj/item/device/flashlight/pen,
+		/obj/item/clothing/mask/surgical,
+		/obj/item/clothing/head/surgery,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/reagent_containers/hypospray,
+		/obj/item/clothing/glasses/hud/health,
+		/obj/item/crowbar,
+		/obj/item/device/flashlight,
+		/obj/item/taperoll,
+		/obj/item/extinguisher/mini,
+		/obj/item/wirecutters,
+		/obj/item/reagent_containers/glass/ampule,
+		/obj/item/suture,
+		/obj/item/bonesetter,
+		/obj/item/cautery,
+		/obj/item/circular_saw,
+		/obj/item/hemostat,
+		/obj/item/retractor,
+		/obj/item/scalpel,
+		/obj/item/surgicaldrill,
+		/obj/item/bonegel,
+		/obj/item/reagent_containers/hypospray,
+		/obj/item/suture,
+		/obj/item/FixOVein,
+		/obj/item/stack/medical/advanced/bruise_pack,
+		/obj/item/stack/nanopaste
+		)
+	New()
+		..()
+		new /obj/item/reagent_containers/hypospray/autoinjector/blood(src)
+		new/obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+		new/obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+		new/obj/item/reagent_containers/hypospray/autoinjector/revive(src)
+		new/obj/item/reagent_containers/hypospray(src)
+		new/obj/item/cautery(src)
+		new/obj/item/bonesetter(src)
+		new/obj/item/bonegel(src)
+		new/obj/item/FixOVein(src)
+		new/obj/item/scalpel/manager(src)
+		new/obj/item/reagent_containers/glass/ampule/morphine(src)
+		new/obj/item/suture(src)
+		new/obj/item/wirecutters(src)
+		new/obj/item/device/healthanalyzer(src)
