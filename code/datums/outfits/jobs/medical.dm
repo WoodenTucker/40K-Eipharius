@@ -18,7 +18,7 @@
 	shoes = /obj/item/clothing/shoes/white
 	l_hand = /obj/item/storage/firstaid/adv
 	glasses = /obj/item/clothing/glasses/hud/health
-	belt = /obj/item/storage/belt/medical/full
+	belt = /obj/item/storage/belt/medical/apothecary
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
 	head = /obj/item/clothing/head/hospitallerhelm
