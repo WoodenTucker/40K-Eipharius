@@ -569,3 +569,6 @@
 	item_state = "glasses"
 	body_parts_covered = EYES
 	unacidable = 1
+
+/obj/item/clothing/glasses/astartes/needs_vision_update()
+	return ..() || inv_overlay || vision_flags || see_invisible || darkness_view
