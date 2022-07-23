@@ -665,11 +665,15 @@ obj/item/clothing/suit/armor
 	item_state = "genetor"
 	unacidable = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun) //TODO make this more applicable to genetor
-	armor = list(melee = 30, bullet = 30, laser = 25, energy = 25, bomb = 20, bio = 50, rad = 50)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	armor = list(melee = 45, bullet = 45, laser = 70, energy = 40, bomb = 60, bio = 100, rad = 100) //while it is magos armor, it should be a bit weaker than the dominus armor
+	canremove = 0
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/genehood
+	canremove = 0
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	unacidable = 1
 
 /obj/item/clothing/suit/armor/slanclothing
 	var/slan = 1
@@ -682,7 +686,7 @@ obj/item/clothing/suit/armor
 	canremove = 0
 	unacidable = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 58, bullet = 60, laser = 60, energy = 30, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 60, bullet = 60, laser = 80, energy = 30, bomb = 60, bio = 100, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	action_button_name = "Toggle Hood"
@@ -694,7 +698,7 @@ obj/item/clothing/suit/armor
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 75, bullet = 75, laser = 60, energy = 20, bomb = 60, bio = 70, rad = 70)
+	armor = list(melee = 70, bullet = 60, laser = 90, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -709,13 +713,14 @@ obj/item/clothing/suit/armor
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 75, bullet = 75, laser = 60, energy = 20, bomb = 60, bio = 70, rad = 70)
+	armor = list(melee = 80, bullet = 80, laser = 90, energy = 90, bomb = 70, bio = 100, rad = 100) //it may be old, but its still a holy artifact
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	flags_inv = HIDEJUMPSUIT|HIDEGLOVES*/ // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
-
+	canremove = 0 /no removing
+	flags_inv = HIDEJUMPSUIT|HIDEGLOVES // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
+	species_restricted = list(SPECIES_HUMAN)
 
 // Eldar
 /obj/item/clothing/suit/armor/eldar
