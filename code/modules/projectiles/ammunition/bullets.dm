@@ -305,3 +305,11 @@
 	spent_icon = "null"
 	caliber = "melta"
 	projectile_type = /obj/item/projectile/bullet/rifle/lascannon/melta
+
+/obj/item/ammo_casing/shuriken
+	name = "shuriken casings"
+	desc = "A shuriken projectile casing"
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "shuriken"
+	projectile_type = /obj/item/projectile/bullet/rifle/shuriken/catapult
