@@ -22,7 +22,7 @@
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
-	/obj/item/stack/thrones3/twenty = 1
+	/obj/item/stack/thrones3/twenty = 1,
 	/obj/item/gun/energy/las/lasgun/hotshot
 	)
 
