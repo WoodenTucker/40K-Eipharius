@@ -381,6 +381,32 @@ obj/item/gun/energy/retro
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		list(mode_name="overcharge",       burst=1, fire_delay=2.75,    move_delay=1, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
 		)
+	
+/obj/item/gun/energy/las/lasgun/hotshot
+	name = "Ryza Pattern Hot-Shot Lasgun"
+	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
+	icon_state = "lascar"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 22
+	armor_penetration = 10
+	one_hand_penalty = 1.8
+	accuracy = -0.1
+	self_recharge = 1
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = obj/item/projectile/energy/las/lasgun/hotshot
+	charge_cost = 300
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lascar-wielded"
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		)
+
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
