@@ -114,6 +114,9 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	off_state = "denight"
 	electric = 1
+	
+/obj/item/clothing/glasses/night/needs_vision_update()
+	return ..() || inv_overlay || vision_flags || see_invisible || darkness_view
 
 /obj/item/clothing/glasses/blacksun
 	name = "blacksun goggles"
