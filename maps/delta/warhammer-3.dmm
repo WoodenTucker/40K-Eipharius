@@ -3214,7 +3214,7 @@
 /area/cadiaoutpost/oa/engineering)
 "gd" = (
 /obj/structure/table/marble,
-/obj/item/sobrelic,
+/obj/item/clothing/suit/sisterofbattle/sobrelic,
 /obj/structure/window/reinforced/reliquary,
 /obj/structure/window/reinforced/reliquary{
 	dir = 4;
