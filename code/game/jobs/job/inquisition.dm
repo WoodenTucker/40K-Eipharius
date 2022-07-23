@@ -15,7 +15,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
 		"Acolyte" = /decl/hierarchy/outfit/job/acolyte,
-		"Acolyte" = /decl/hierarchy/outfit/job/acolyte/malleus
+		"Acolyte of Ordos Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
 	auto_rifle_skill = 7
@@ -64,7 +64,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 	alt_titles = list(
 		"Inquisitor" = /decl/hierarchy/outfit/job/inquisitor,
-		"Inquisitor" = /decl/hierarchy/outfit/job/inquisitor/malleus
+		"Inquisitor of Ordos Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE
 	auto_rifle_skill = 10
