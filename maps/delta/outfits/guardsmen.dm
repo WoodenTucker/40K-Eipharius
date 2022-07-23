@@ -153,15 +153,14 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/ammo_box/rifle
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/brifle_handful = 2,
+	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/glasses/cadiangoggles/sniper
 	)
 
