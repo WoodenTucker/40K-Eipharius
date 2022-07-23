@@ -202,7 +202,7 @@
 	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
 	icon_state = "ig_halfgas"
 	item_state = "ig_halfgas"
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEFACE
 
 /obj/item/clothing/mask/gas/krieg
@@ -210,7 +210,7 @@
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
 	icon_state = "kriegmask"
 	item_state = "kriegmask"
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
 /obj/item/clothing/mask/gas/commissar
@@ -218,5 +218,5 @@
 	desc = "Krieg Regiment Commissar are issued with the same pattern of Gas mask like the others, However this one have slight different hue."
 	icon_state = "commask"
 	item_state = "commask"
-	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
