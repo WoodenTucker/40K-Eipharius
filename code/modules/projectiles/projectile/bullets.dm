@@ -498,4 +498,10 @@
 	armor_penetration = 100
 	penetration_modifier = 2
 
-
+/obj/item/projectile/bullet/rifle/shuriken/catapult
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	icon_state = "shot"
+	damage = 60
+	damage_type = BRUTE
+	armor_penetration = 75
+	penetration_modifier = 2
