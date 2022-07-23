@@ -450,3 +450,12 @@
 /obj/item/ammo_magazine/melta/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/catapult_magazine
+	name = "Shuriken Catapult Magazine"
+	icon_state = "ersatz"
+	mag_type = MAGAZINE
+	ammo_type = /obj/item/ammo_casing/shuriken
+	matter = list(DEFAULT_WALL_MATERIAL = 1500)
+	caliber = "shuriken"
+	max_ammo = 1000
+	multiple_sprites = 0
