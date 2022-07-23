@@ -31,7 +31,7 @@ Astartes
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	//sexybits_location = BP_GROIN //dude, they have no balls - they actually do, it's old myth since they have libido being put down to the rock bottom
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_MINOR_CUT
 	inherent_verbs = list()
 
 	radiation_mod = 0.7
@@ -64,3 +64,72 @@ Astartes
 /mob/living/carbon/human/astartes/Initialize()
 	. = ..()
 	src.rejuvenate()
+
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest/unbreakable/astartes),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/astartes),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/unbreakable/astartes),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/unbreakable/astartes),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/unbreakable/astartes),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/unbreakable/astartes),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/unbreakable/astartes),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/unbreakable/astartes),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/unbreakable/astartes),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/unbreakable/astartes),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/astartes)
+		)
+
+/obj/item/organ/external/chest/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/groin/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/arm/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/arm/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/leg/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/leg/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/foot/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = ORGAN_FLAG_CAN_STAND
+
+/obj/item/organ/external/foot/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/hand/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags =  ORGAN_FLAG_CAN_GRASP
+
+/obj/item/organ/external/hand/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
+
+/obj/item/organ/external/head/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	limb_flags = 0
