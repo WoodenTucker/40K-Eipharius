@@ -18,7 +18,7 @@
 	shoes = /obj/item/clothing/shoes/white
 	l_hand = /obj/item/storage/firstaid/adv
 	glasses = /obj/item/clothing/glasses/hud/health
-	belt = /obj/item/storage/belt/medical/full
+	belt = /obj/item/storage/belt/medical/apothecary
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/head
 	head = /obj/item/clothing/head/hospitallerhelm
@@ -69,12 +69,15 @@
 	name = OUTFIT_JOB_NAME("Genetor")
 	uniform = /obj/item/clothing/under/rank/geneticist
 	suit = /obj/item/clothing/suit/storage/hooded/genetor
+	mask = /obj/item/clothing/mask/gas/techpriest
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/medical/geneticist
 	pda_type = /obj/item/device/pda/geneticist
-	belt = /obj/item/storage/belt/medical/alchemist
+	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	gloves = /obj/item/clothing/gloves/thick/techpriest
 	glasses = /obj/item/clothing/glasses/hud/health
+	shoes = /obj/item/clothing/shoes/workboots
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis

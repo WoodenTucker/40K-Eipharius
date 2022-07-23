@@ -11,7 +11,7 @@
 	//restricted_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
-	armor = list(melee = 40, bullet = 40, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 10)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 10)
 	flags_inv = BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -64,13 +64,13 @@
 	name = "combat helmet"
 	desc = "A heavily reinforced helmet painted with red markings. Feels like it could take a lot of punishment."
 	icon_state = "helmet_merc"
-	armor = list(melee = 35, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
+	armor = list(melee = 40, bullet = 45, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.5
 
 /obj/item/clothing/head/helmet/barney_helmet
 	name = "security helmet"
 	icon_state = "helmet_barney"
-	armor = list(melee = 40, bullet = 30, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
+	armor = list(melee = 40, bullet = 40, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
 
 
 /obj/item/clothing/head/helmet/riot
@@ -79,7 +79,7 @@
 	icon_state = "helmet_riot"
 	valid_accessory_slots = null
 	body_parts_covered = HEAD|FACE|EYES //face shield
-	armor = list(melee = 62, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 12, rad = 20)
+	armor = list(melee = 62, bullet = 40, laser = 60, energy = 15, bomb = 40, bio = 12, rad = 20)
 	siemens_coefficient = 0.7
 	action_button_name = "Toggle Visor"
 
@@ -97,12 +97,12 @@
 	desc = "A helmet made from advanced materials which protects against concentrated energy weapons."
 	icon_state = "helmet_reflect"
 	valid_accessory_slots = null
-	armor = list(melee = 15, bullet = 15, laser = 62, energy = 50, bomb = 5, bio = 2, rad = 0)
+	armor = list(melee = 5, bullet = 5, laser = 62, energy = 50, bomb = 5, bio = 2, rad = 0)
 	siemens_coefficient = 0
 
 /obj/item/clothing/head/helmet/ballistic
 	name = "ballistic helmet"
-	desc = "A helmet with reinforced plating to protect against ballistic projectiles."
+	desc = "A helmet with reinforced flak plating to protect against ballistic projectiles."
 	icon_state = "helmet_bulletproof"
 	valid_accessory_slots = null
 	armor = list(melee = 35, bullet = 40, laser = 30, energy = 5, bomb = 30, bio = 5, rad = 5)
@@ -112,7 +112,7 @@
 	name = "\improper SWAT helmet"
 	desc = "They're often used by highly trained Swat Members."
 	icon_state = "helmet_merc"
-	armor = list(melee = 10, bullet = 50, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 10)
+	armor = list(melee = 50, bullet = 58, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
@@ -122,7 +122,7 @@
 	desc = "<i>'Let the battle commence!'</i>"
 	icon_state = "thunderdome"
 	valid_accessory_slots = null
-	armor = list(melee = 80, bullet = 60, laser = 50,energy = 10, bomb = 25, bio = 10, rad = 0)
+	armor = list(melee = 50, bullet = 50, laser = 50,energy = 10, bomb = 25, bio = 10, rad = 0)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 1
@@ -147,7 +147,7 @@
 		SPECIES_UNATHI = 'icons/mob/species/unathi/helmet.dmi'
 		)
 
-	armor = list(melee = 62, bullet = 50, laser = 50,energy = 35, bomb = 10, bio = 2, rad = 0)
+	armor = list(melee = 50, bullet = 50, laser = 50,energy = 35, bomb = 10, bio = 2, rad = 0)
 	flags_inv = HIDEEARS
 	siemens_coefficient = 0.7
 */
@@ -157,7 +157,7 @@
 	desc = "A helmet with optical and cranial augments coupled to it."
 	icon_state = "v62"
 	valid_accessory_slots = null
-	armor = list(melee = 40, bullet = 40, laser = 30,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 50, bullet = 40, laser = 30,energy = 25, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	body_parts_covered = HEAD|EYES|BLOCKHEADHAIR
 	cold_protection = HEAD
@@ -174,17 +174,17 @@
 /obj/item/clothing/head/helmet/sentryhelm
 	name = "Sentry Helmet"
 	desc = "Used for taking blows to the noggin without getting hurt."
-	armor = list(melee = 55, bullet = 55, laser = 55, energy = 40, bomb = 50, bio = 5, rad = 5)//proteck ya neck
+	armor = list(melee = 55, bullet = 58, laser = 58, energy = 40, bomb = 50, bio = 5, rad = 5)//proteck ya neck
 	str_requirement = 18
 
 // Ork
 
 /obj/item/clothing/head/helmet/orkhelmet
 	name = "Ork Helmet"
-	desc = "Literal bucket with horns glued on it, what did you expect?"
+	desc = "Literal bucket with horns glued on it, due to orkish belief it is a bit stronger than light flak helmets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
-	armor = list(melee = 25, bullet = 25, laser = 5, energy = 30, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -194,28 +194,31 @@
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
 	cold_protection = HEAD
+	armor = list(melee = 30, bullet = 30, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/three
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
+	armor = list(melee = 40, bullet = 00, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/four
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
 	cold_protection = HEAD
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 // Tau
 
 /obj/item/clothing/head/helmet/fw
 	name = "fire warrior Helmet"
-	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
+	desc = "A advanced helmet produced for Tau Fire Caste Warriors, made out of...acceptable quality ceramite."
 	icon_state = "fwhelm"
 	item_state = "fwhelm"
-	armor = list(melee = 35, bullet = 50, laser = 40, energy = 45, bomb = 30, bio = 100, rad = 100)
+	armor = list(melee = 45, bullet = 50, laser = 40, energy = 45, bomb = 30, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -223,10 +226,10 @@
 
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"
-	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
+	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
 	icon_state = "scout"
 	item_state = "scout"
-	armor = list(melee = 30, bullet = 55, laser = 45, energy = 45, bomb = 25, bio = 100, rad = 100)
+	armor = list(melee = 50, bullet = 60, laser = 57, energy = 45, bomb = 40, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -238,7 +241,7 @@
   desc = "A ancient helmet. It looks like it's made from Thermoplas in a scale like pattern."
   icon_state = "eldhelmet"
   item_state = "eldhelmet"
-  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  armor = list(melee = 45, bullet = 45, laser = 70, energy = 70, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -250,7 +253,7 @@
   desc = "A ancient helmet. It looks like it's made from hardened resin in a thin-scale like pattern."
   icon_state = "deldhelmet"
   item_state = "deldhelmet"
-  armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
+  armor = list(melee = 45, bullet = 50, laser = 40, energy = 45, bomb = 15, bio = 40, rad = 0)
   body_parts_covered = HEAD
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
