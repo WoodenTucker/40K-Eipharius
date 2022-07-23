@@ -86,6 +86,7 @@
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
+	item_flags = ITEM_FLAG_NOSLIP
 	
 /* //"Duplicate" of noble boots
 /obj/item/clothing/shoes/commandboots
@@ -101,16 +102,17 @@
 	desc = "A shined pair of shoes"
 	icon_state = "vigilante_boots"
 	item_state = "vigilante_boots"
-	armor = list(melee = 10, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 30, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
+	item_flags = ITEM_FLAG_NOSLIP
 
 /obj/item/clothing/shoes/prac_boots
 	name = "practioner boots"
 	desc = "Squish."
 	icon_state = "prac_boots"
 	item_state = "prac_boots"
-
+	armor = list(melee = 0, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 100, rad = 20)
 // Tau
 
 /obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
@@ -120,7 +122,7 @@
 	item_state = "krootboot"
 	canremove = 0
 	unacidable = 1
-
+	item_flags = ITEM_FLAG_NOSLIP
 // Genestealer
 
 /obj/item/clothing/shoes/genestealerfeet //walking sounds only play with shoes and I was losing my mind not having them
@@ -130,7 +132,7 @@
 	item_state = "gsfeet"
 	canremove = 0
 	unacidable = 1
-
+	item_flags = ITEM_FLAG_NOSLIP
 // Ork
 
 /obj/item/clothing/shoes/orkboots //walking sounds only play with shoes and I was losing my mind not having them
@@ -139,7 +141,7 @@
 	icon_state = "ork_boots"
 	item_state = "ork_boots"
 	species_restricted = list(SPECIES_ORK)
-
+//	item_flags = ITEM_FLAG_NOSLIP //walker here, add this if you don't like orks being goofy or funny or if you are a nerd
 // Astra Militarum Stuff
 
 /obj/item/clothing/shoes/jackboots/cadian
@@ -147,7 +149,7 @@
 	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
 	icon_state = "jackboots"
 	item_state = "jackboots"
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 5, bomb = 10, bio = 0, rad = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -156,7 +158,7 @@
 	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
 	icon_state = "jackboots"
 	item_state = "jackboots"
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 20, laser = 30, energy = 5, bomb = 10, bio = 0, rad = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -170,7 +172,7 @@
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
 	icon_state = "kriegboots"
 	item_state = "kriegboots"
-	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 30, laser = 40, energy = 30, bomb = 40, bio = 100, rad = 100)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -182,7 +184,8 @@
 	species_restricted = list(SPECIES_HUMAN)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 30, bomb = 40, bio = 100, rad = 100)
+	item_flags = ITEM_FLAG_NOSLIP
 // Astartes Stuff
 
 /obj/item/clothing/shoes/astartes/boots
@@ -195,6 +198,7 @@
 	unacidable = 1
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 90, bomb = 90, bio = 50, rad = 50)
 	cold_protection = FEET|LEGS
+	item_flags = ITEM_FLAG_NOSLIP
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	var/obj/item/material/sword/combat_knife/knife = null
 	species_restricted = list(SPECIES_ASTARTES)
@@ -253,6 +257,7 @@
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 80)
 	canremove = 0
 	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
 
 /obj/item/clothing/shoes/technoboots
 	name = "Mars Pattern Advanced Boots"
@@ -263,6 +268,7 @@
 	siemens_coefficient = 1
 	can_hold_knife = 1
 	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
 
 // Sororitas
 
@@ -275,6 +281,7 @@
 	can_hold_knife = 1
 	canremove = 0
 	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
 
@@ -308,12 +315,14 @@
 	icon_state = "inqshoes"
 	item_state = "inqshoes"
 	force = 3
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio = 0, rad = 0)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	var/obj/item/material/sword/combat_knife/knife = null
+	item_flags = ITEM_FLAG_NOSLIP
+	
 /obj/item/clothing/shoes/hereticusboots/New()
 	..()
 	knife = new
