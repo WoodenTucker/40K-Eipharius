@@ -425,3 +425,45 @@
 		icon_state = "sisterbpistol"
 	else
 		icon_state = "sisterbpistol-e"
+		
+/obj/item/gun/projectile/eldar/spistol
+	name = "Shuriken pistol"
+	desc = "A small shuriken-firing ballistic weapon that is the standard and most common sidearm found amongst Craftworld Aeldari warriors."
+	icon_state = "shuriken_pistol"
+	str_requirement = 8
+	w_class = ITEM_SIZE_NORMAL
+	force = 15
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
+	max_shells = 1000 //Lots of ammo
+	caliber = "shuriken"
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5, TECH_ILLEGAL = 3)
+	ammo_type = /obj/item/ammo_casing/shuriken/pistol
+	load_method = MAGAZINE
+	one_hand_penalty = 0 //Eldar magic
+	magazine_type = /obj/item/ammo_magazine/spistol_magazine
+	allowed_magazines = /obj/item/ammo_magazine/spistol_magazine
+	handle_casings = CLEAR_CASINGS
+	auto_eject = 1
+	fire_sound = 'sound/weapons/guns/fire/needler_fire.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "scatapult"
+	unloaded_icon = "scatapult-e"
+	fire_delay = 0.5
+	burst = 1
+	move_delay = 0
+	automatic = 1
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0.5,    move_delay=null, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic",   	 burst=10, fire_delay=1.5,  move_delay=0, one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
+		)
+	gun_type = GUN_AUTOMATIC
+	accuracy = 2
+
+/obj/item/gun/projectile/eldar/spistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "shuriken_pistol"
+	else
+		icon_state = "shuriken_pistol-e"

@@ -396,7 +396,7 @@ obj/item/gun/energy/retro
 	self_recharge = 1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = obj/item/projectile/energy/las/lasgun/hotshot
+	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
 	charge_cost = 300
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
