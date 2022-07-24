@@ -111,10 +111,10 @@
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 16
 	max_age = 18
-	blood_volume = 450 // how much blood a retardes has
+	blood_volume = 600 // how much blood a retardes has
 	slowdown = -0.25 //Increased move speed
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 250 // a normal human has 200 brain health, retardes have 250 //P.S this is brain health
+	total_health = 300 // a normal human has 200 brain health, retardes have 250 //P.S this is brain health
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	strength = STR_HIGH
 	genders = list(MALE)
@@ -123,7 +123,7 @@
 	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
 	inherent_verbs = list()
 
-	radiation_mod = 0.85
+	radiation_mod = 0.5
 //gives assfartes the astartes aura
 	base_auras = list(
 		/obj/aura/regenerating/human/astartes
