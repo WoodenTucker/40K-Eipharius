@@ -73,7 +73,6 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/structure/table/rack/dark,
 /obj/item/mortar_launcher,
-/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "ao" = (
@@ -807,10 +806,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "eH" = (
 /obj/structure/table/rack/dark,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/item/ammo_magazine/melta,
+/obj/item/ammo_magazine/melta,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "eK" = (
@@ -1757,6 +1755,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"kR" = (
+/obj/structure/table/rack/dark,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "kS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/archaeological_find/remains/xeno{
@@ -1863,6 +1874,15 @@
 "lm" = (
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/caves)
+"lp" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/projectile/automatic/flamer,
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "lq" = (
 /obj/structure/sewers/pipeflow,
 /turf/simulated/wall/ancient{
@@ -2536,6 +2556,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"pq" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	maxhealth = 3000;
+	name = "Imperialis Doorway - Armory";
+	req_access = list(330)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "ps" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -2643,11 +2672,20 @@
 	icon_state = "spline_plain"
 	},
 /obj/structure/table/steel,
-/obj/item/clothing/suit/armor/militia,
-/obj/item/clothing/suit/armor/militia,
-/obj/item/clothing/suit/cloak,
+/obj/item/clothing/suit/armor/militia{
+	name = "Frateris Armor"
+	},
 /obj/item/clothing/head/helmet/salvage,
 /obj/item/clothing/head/helmet/salvage,
+/obj/item/clothing/suit/armor/militia{
+	name = "Frateris Armor"
+	},
+/obj/item/clothing/suit/armor/militia{
+	name = "Frateris Armor"
+	},
+/obj/item/clothing/suit/armor/militia{
+	name = "Frateris Armor"
+	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "pP" = (
@@ -2786,6 +2824,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"qr" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	maxhealth = 3000;
+	name = "Imperialis Doorway - Armory";
+	req_access = list(63)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "qs" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/effect/floor_decal/industrial/warning{
@@ -2890,6 +2937,11 @@
 /obj/item/mortar_shell/flare,
 /obj/item/mortar_shell/flare,
 /obj/structure/table/rack/dark,
+/obj/item/card/id/innkey3{
+	name = "Armory Key";
+	req_access = list(330);
+	access = list(330)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "qZ" = (
@@ -3038,7 +3090,6 @@
 /obj/effect/floor_decal/spline/plain,
 /obj/random/loot/badweapon,
 /obj/random/loot/badweapon,
-/obj/random/loot/badweapon,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "sc" = (
@@ -3143,8 +3194,6 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/item/grenade/fire,
 /obj/item/grenade/frag/warfare,
-/obj/item/ammo_magazine/melta,
-/obj/item/ammo_magazine/melta,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "sH" = (
@@ -3824,6 +3873,11 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/flame/candle/dinner,
 /obj/item/material/sword/commissword,
+/obj/item/card/id/innkey3{
+	name = "Master Key";
+	req_access = list(331);
+	access = list(331,330,225)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "wf" = (
@@ -4046,9 +4100,8 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/dark)
 "yd" = (
-/obj/structure/table/rack/dark,
-/obj/effect/floor_decal/turf/checkers/two,
-/obj/item/gun/projectile/automatic/flamer,
+/obj/effect/floor_decal/turf/splate,
+/obj/item/clothing/accessory/holster/armpit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "ye" = (
@@ -4083,6 +4136,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"yo" = (
+/obj/structure/table/steel_reinforced,
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/heavystubber,
+/obj/random/loot/heavystubber,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "yw" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/sign/warning/detailed{
@@ -5485,6 +5545,12 @@
 	color = "grey"
 	},
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/item/card/id/innkey3{
+	name = "Armory Key";
+	req_access = list(330);
+	access = list(330)
+	},
+/obj/item/clothing/accessory/holster/armpit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Gi" = (
@@ -5596,6 +5662,7 @@
 	color = "grey"
 	},
 /obj/item/clothing/head/helmet,
+/obj/item/clothing/accessory/holster/armpit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "GR" = (
@@ -6388,6 +6455,16 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/dark)
+"KR" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/guardhelmet,
+/obj/random/loot/guardhelmet,
+/obj/random/loot/guardhelmet,
+/obj/random/loot/guardhelmet,
+/obj/random/loot/guardhelmet,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "KU" = (
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -6458,7 +6535,6 @@
 /obj/structure/table/rack/dark,
 /obj/item/wrench,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/gun/energy/las/lasgun/tinkered/catachan,
 /obj/item/crowbar,
 /obj/item/crowbar,
 /obj/item/wrench,
@@ -7037,8 +7113,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/guardarmor,
-/obj/random/loot/guardhelmet,
-/obj/random/loot/guardhelmet,
+/obj/random/loot/guardarmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "OX" = (
@@ -7111,6 +7186,7 @@
 	},
 /obj/item/melee/baton,
 /obj/item/melee/baton,
+/obj/random/loot/heavymelee,
 /obj/random/loot/heavymelee,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
@@ -7330,7 +7406,7 @@
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	maxhealth = 3000;
 	name = "Imperialis Doorway - Armory";
-	req_access = list(67)
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -8749,8 +8825,6 @@
 	icon_state = "tube1"
 	},
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/heavystubber,
-/obj/random/loot/heavystubber,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
@@ -28440,7 +28514,7 @@ Jm
 dj
 et
 dj
-yd
+am
 dj
 tc
 dj
@@ -29213,7 +29287,7 @@ ED
 dj
 Cn
 dj
-am
+KR
 dj
 dj
 Ku
@@ -29726,7 +29800,7 @@ Ez
 Ez
 Ez
 Ez
-hg
+qr
 Ez
 Ez
 Ez
@@ -29977,10 +30051,10 @@ PI
 PI
 eD
 Ez
-eH
+kR
 dj
 dj
-hg
+pq
 uX
 EB
 dj
@@ -30234,7 +30308,7 @@ PI
 PI
 eD
 Ez
-eH
+lp
 dj
 ON
 Ez
@@ -30493,7 +30567,7 @@ eD
 Ez
 eH
 dj
-ON
+yo
 Ez
 KG
 dj
@@ -31293,7 +31367,7 @@ Ez
 ee
 lc
 rF
-Xz
+yd
 Ez
 eD
 PI

@@ -368,7 +368,7 @@
 	force = 10
 	caliber = ".75"
 	accuracy = -0.3 
-	fire_delay = 2.1
+	fire_delay = 1.8
 	move_delay = 1
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
