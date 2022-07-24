@@ -262,7 +262,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	head = /obj/item/clothing/head/bardhat
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
