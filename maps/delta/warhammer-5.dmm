@@ -3103,6 +3103,8 @@
 /obj/random/loot/randomarmor,
 /obj/random/loot/randomarmor,
 /obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ul" = (
@@ -3440,8 +3442,6 @@
 	name = "Lectitio Divinitatus"
 	},
 /obj/item/clothing/mask/chameleon,
-/obj/item/clothing/under/chameleon,
-/obj/item/clothing/head/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -3922,6 +3922,13 @@
 /obj/structure/table/steel,
 /obj/item/clothing/suit/armor/guardsman,
 /obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/rank/roboticist,
+/obj/item/clothing/under/syndicate,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/wedding/bride_red,
+/obj/item/clothing/under/rank/seneschal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "FF" = (
@@ -4336,8 +4343,6 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
-/obj/item/clothing/under/chameleon,
-/obj/item/clothing/head/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "LU" = (
@@ -4936,8 +4941,6 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
-/obj/item/clothing/under/chameleon,
-/obj/item/clothing/head/chameleon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Ua" = (

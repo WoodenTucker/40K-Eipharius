@@ -599,7 +599,7 @@
 	move_delay= 1.5
 	one_hand_penalty = 4
 	accuracy = -0.3
-	fire_delay = 2.9
+	fire_delay = 1.7
 	automatic = 1
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
@@ -624,7 +624,7 @@
 	move_delay= 1.4
 	one_hand_penalty = 3
 	accuracy = -0.2
-	fire_delay = 2.8
+	fire_delay = 1.5
 	armor_penetration = 8
 
 	wielded_item_state = "autorifle-wielded"
@@ -651,7 +651,7 @@
 	move_delay= 2
 	one_hand_penalty = 4
 	accuracy = -0.2
-	fire_delay = 3
+	fire_delay = 1.6
 	automatic = 1
 
 	magazine_type = /obj/item/ammo_magazine/autogrim
@@ -695,7 +695,7 @@
 	firemodes = list()
 	accuracy = 0
 	automatic = 1
-	fire_delay = 1
+	fire_delay = 4
 	burst=1
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -766,7 +766,7 @@
 	move_delay= 1
 	one_hand_penalty = 1
 	accuracy = 0
-	fire_delay = 2.8
+	fire_delay = 1.7
 	force = 8
 
 /obj/item/gun/projectile/warfare/update_icon()//We gotta snowflake this a bit.
@@ -787,7 +787,7 @@
 	move_delay = 1
 	one_hand_penalty = 0.7
 	accuracy = -0.1
-	fire_delay = 2.5
+	fire_delay = 1.5
 	armor_penetration = 10
 
 /obj/item/ammo_magazine/c45m/warfare
@@ -829,22 +829,22 @@
 	unwielded_unloaded_icon = "hmg-e"
 	wielded_unloaded_icon = "hmg-wielded-e"
 	burst = 1
-	automatic = 1
+	automatic = 0.8
 	firemodes = list()
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
 	accuracy = -0.5
-	fire_delay = 2.9
+	fire_delay = 1.6
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
-	accuracy = -0.5
-	fire_delay = 3.2
-	automatic = 1
+	accuracy = 1
+	fire_delay = 1.8
+	automatic = 0.8
 	armor_penetration = 5 //this is melee
 
 // Boltgun
@@ -869,7 +869,7 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	fire_delay = 3
+	fire_delay = 2
 	burst = 1
 	move_delay = 5
 	one_hand_penalty = 10
@@ -949,7 +949,7 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
-	fire_delay = 3
+	fire_delay = 2
 	burst = 1
 	move_delay = 3
 	automatic = 1
@@ -989,7 +989,7 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sisterbolter-30"
 	unloaded_icon = "sisterbolter-30-e"
-	fire_delay = 3.5
+	fire_delay = 1.8
 	burst = 1
 	move_delay = 3
 	automatic = 1
@@ -1018,7 +1018,7 @@
 	one_hand_penalty = 7
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
-	fire_delay = 8
+	fire_delay = 6
 	move_delay= 2
 	one_hand_penalty = 6
 	accuracy = -0.1
@@ -1046,7 +1046,7 @@
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
 	ammo_type = /obj/item/ammo_casing/krootbullet
-	fire_delay = 6
+	fire_delay = 5
 	move_delay= 2
 	one_hand_penalty = 7
 	accuracy = -0.2

@@ -3534,6 +3534,11 @@
 	pixel_w = 2;
 	pixel_x = 31
 	},
+/obj/item/card/id/innkey3{
+	name = "Master Key";
+	req_access = list(331);
+	access = list(331,330,225)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
 "jD" = (
@@ -4137,13 +4142,10 @@
 /obj/structure/closet/secure_closet/hop{
 	color = "grey"
 	},
-/obj/item/card/id/innkey2{
-	access = list(225);
-	name = "storage key"
-	},
 /obj/item/card/id/innkey3{
-	name = "Vault Key";
-	req_access = list(331)
+	name = "Master Key";
+	req_access = list(331);
+	access = list(331,330,225)
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
