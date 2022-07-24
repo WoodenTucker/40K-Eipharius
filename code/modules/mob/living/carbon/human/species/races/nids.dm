@@ -7,10 +7,10 @@
 	deform = 'icons/mob/human_races/tyranids/r_def_tyranid.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
-	min_age = 50
+	min_age = 1
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 250
+	total_health = 300
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
@@ -38,8 +38,11 @@
 	darksight = 20
 
 	brute_mod = 0.25 // Hardened carapace.
-	burn_mod = 0.65    // Weak to fire.
-
+	burn_mod = 3    // They are actually weak to fire.
+	oxy_mod =        0.01                    // Oxyloss modifier
+	radiation_mod =  0.1                    // Radiation modifier
+	flash_mod =      0                    // Stun from blindness modifier.
+	metabolism_mod = 2                    // Reagent metabolism modifier
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
@@ -94,11 +97,10 @@
 	mind.special_role = "Tyranid" //For hud icons
 	AddInfectionImages()
 	thirst = INFINITY
-	nutrition = INFINITY
 	bladder = -INFINITY
 	bowels = -INFINITY
 	gsc = 1
-	add_stats(rand(12,15),rand(15,22),rand(15,22),20)
+	add_stats(rand(12,22),rand(15,22),rand(15,22),20)
 
 
 
@@ -214,7 +216,7 @@
 
 	var/obj/item/projectile/energy/neurotoxin/A = new /obj/item/projectile/energy/neurotoxin(usr.loc)
 	A.launch_projectile(target,get_organ_target())
-	src.biomass -=10
+	src.biomass -=0
 
 /mob/living/carbon/human/genestealer/proc/makepool(mob/target as mob in oview())
 	set name = "Create Spawning Pool"
