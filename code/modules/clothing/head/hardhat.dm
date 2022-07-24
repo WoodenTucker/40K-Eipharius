@@ -34,6 +34,7 @@
 	brightness_on = 4 //luminosity when on
 	light_overlay = "hardhat_light"
 
+//LAST CHANGE DONE BY WALKER9, GLORY TO THE OMNISSIAH.
 /obj/item/clothing/head/hardhat/techpriest
 	name = "augmented head"
 	desc = "The augmented skull and hood signifying one is a priest of the Adeptus Mechanicus."
@@ -42,7 +43,7 @@
 	brightness_on = 6
 	unacidable = 1
 	canremove = 0
-	armor = list(melee = 40, bullet = 15, laser = 30,energy = 20, bomb = 50, bio = 50, rad = 20)
+	armor = list(melee = 45, bullet = 48, laser = 60,energy = 30, bomb = 50, bio = 100, rad = 100) //marsi bois ain't fuckin' around
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 
@@ -51,4 +52,4 @@
 	item_state = "magoshelm"
 	brightness_on = 8
 	unacidable = 1
-	armor = list(melee = 50, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+armor = list(melee = 50, bullet = 58, laser = 70, energy = 50, bomb = 70, bio = 100, rad = 100)//in lore its stronger than carapace armor but for balance's sake, lets keep it this way.
