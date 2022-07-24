@@ -1,7 +1,7 @@
 //  Munitorum Tribunus
 
 /datum/job/qm
-	title = "Munitorum Tribunus"
+	title = "Munitorum Prefectus"
 	department = "Supply"
 	department_flag = CIV
 	total_positions = 1
@@ -47,8 +47,8 @@
 	title = "Munitorum Menial"
 	department = "Supply"
 	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	latejoin_at_spawnpoints = 1
 	social_class = SOCIAL_CLASS_MED
 	announced = 0

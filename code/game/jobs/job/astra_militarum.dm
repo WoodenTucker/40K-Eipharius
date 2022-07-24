@@ -15,7 +15,7 @@
 	shotgun_skill = 7
 	lmg_skill = 6
 	smg_skill = 7
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	announced = FALSE
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
@@ -48,8 +48,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 20
-	spawn_positions = 20
+	total_positions = 10
+	spawn_positions = 10
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -68,7 +68,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
+		H.add_stats(rand(14,16), rand(14,16), rand(12,16), rand (8,14))
 		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -81,10 +81,10 @@
 		H.assign_random_quirk()
 		H.witchblood()
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
-
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 
 		if(title == "Krieg Guardsman")
 			H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(3,6),rand(1,3))
@@ -102,9 +102,9 @@
 //Whiteshield
 
 /datum/job/ig/guardsman/whiteshield
-	title = "Imperial Guard Whiteshield"
-	total_positions = 20
-	spawn_positions = 20
+	title = "Imperial Guard Conscript"
+	total_positions = 4
+	spawn_positions = 4
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
 	can_be_in_squad = FALSE
@@ -126,7 +126,7 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are nothing but a young recruit, future soldier of the Imperium. Obey your Sergeant and Commissar and assist the fellow guardsmen while trying to survive. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 //Sharpshooters
 
@@ -143,7 +143,7 @@
 	smg_skill = 7
 	alt_titles = list(
 		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/sharpshooter/valhalla
+		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -237,8 +237,8 @@
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#967096"
 	economic_modifier = 4
@@ -264,7 +264,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
-		H.add_stats(rand(10,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
+		H.add_stats(rand(12,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
@@ -313,7 +313,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Astra Militarum on this outpost. Maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 /*
 		H.verbs -= list(
 		/mob/living/carbon/human/proc/khorne,
