@@ -243,7 +243,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 100
+	charge_cost = 80
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -260,7 +260,7 @@ obj/item/gun/energy/retro
 	armor_penetration = 10
 	force = 15
 	one_hand_penalty = 1.9
-	charge_cost = 60
+	charge_cost = 65
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -282,7 +282,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
-	charge_cost = 200
+	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
@@ -305,7 +305,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 50
+	charge_cost = 60
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -331,7 +331,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 50
+	charge_cost = 70
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -349,7 +349,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 1.8
 	fire_delay = 3.5
-	charge_cost = 150
+	charge_cost = 90
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -371,7 +371,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 30
+	charge_cost = 55
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
@@ -397,7 +397,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
-	charge_cost = 300
+	charge_cost = 200
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
@@ -420,7 +420,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 100
+	charge_cost = 90
 	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
@@ -441,6 +441,7 @@ obj/item/gun/energy/retro
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers"
 	icon_state = "laspistol"
 	item_state = "laspistol"
+	charge_cost = 80
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
@@ -450,9 +451,9 @@ obj/item/gun/energy/retro
 	force = 10
 	one_hand_penalty = 2.55
 	accuracy = -0.6
-	fire_delay = 2.7
+	fire_delay = 2.5
 	armor_penetration = 8.75
-	charge_cost = 200
+	charge_cost = 100
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -543,7 +544,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "ionriflet-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=40,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=10,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulsepistol
