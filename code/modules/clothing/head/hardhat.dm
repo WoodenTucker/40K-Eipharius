@@ -52,5 +52,5 @@
 	item_state = "magoshelm"
 	brightness_on = 8
 	unacidable = 1
-  armor = list(melee = 50, bullet = 58, laser = 70, energy = 50, bomb = 70, bio = 100, rad = 100)//in lore its stronger than carapace armor but for balance's sake, lets keep it this way.
+	armor = list(melee = 50, bullet = 58, laser = 70, energy = 50, bomb = 70, bio = 100, rad = 100)//in lore its stronger than carapace armor but for balance's sake, lets keep it this way.
 
