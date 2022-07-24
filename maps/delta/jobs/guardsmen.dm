@@ -13,7 +13,7 @@
 		)
 	selection_color = "#33813A"
 	department_flag = SEC
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	announced = FALSE
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
@@ -70,7 +70,7 @@
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
 			access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
@@ -144,7 +144,7 @@
 	H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 	H.get_idcard()?.access = get_all_accesses()
 	H.warfare_faction = IMPERIUM
-	to_chat(H, "<span class='notice'><b><font size=3>You are an Imperial Commissar. You are the acting head of the Guard force on this planet. The mission is all, maintain morale and maintain discipline. Do not be afraid to execute an unruly guardsmen. </font></b></span>")
+	to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 	var/obj/O = H.get_equipped_item(slot_s_store)
 	if(O)
 		qdel(O)
