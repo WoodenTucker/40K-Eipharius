@@ -6,6 +6,7 @@
 	icobase = 'icons/mob/human_races/tyranids/r_tyranid.dmi'
 	deform = 'icons/mob/human_races/tyranids/r_def_tyranid.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_volume = 1000
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	min_age = 1
 	max_age = 800
