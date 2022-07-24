@@ -726,6 +726,7 @@
 	name = "Magistratum Enforcer"
 	},
 /obj/item/stack/thrones2,
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -1059,19 +1060,6 @@
 /obj/random/shoes,
 /obj/item/device/radio/headset/red_team/voxcaster,
 /obj/effect/floor_decal/turf/carpetn00,
-/obj/item/card/id/ring/disgracedmedicae{
-	access = list(213);
-	name = "Frateris"
-	},
-/obj/item/card/id/ring/disgracedmedicae{
-	access = list(213);
-	name = "Frateris"
-	},
-/obj/item/card/id/ring/disgracedmedicae{
-	access = list(213);
-	desc = "An old ring signifying your position as a member of the Frateris Militia.";
-	name = "Frateris"
-	},
 /obj/item/stack/thrones/ten,
 /obj/item/stack/thrones/ten,
 /obj/item/card/id/innkey3{
@@ -1086,6 +1074,7 @@
 	access = list(333);
 	name = "monastary key"
 	},
+/obj/item/stamp/chameleon,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "cE" = (
@@ -2545,13 +2534,26 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "gp" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/carpetn00,
 /obj/item/card/id/ring/disgracedmedicae{
 	access = list(213);
-	desc = "An old ring signifying your position as a member of the Frateris Militia.";
 	name = "Frateris"
 	},
-/turf/unsimulated/miningtime,
-/area/cadiaoutpost/oa/caves)
+/obj/item/card/id/ring/disgracedmedicae{
+	access = list(213);
+	name = "Frateris"
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	access = list(213);
+	name = "Frateris"
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	access = list(213);
+	name = "Frateris"
+	},
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "gq" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -3151,6 +3153,7 @@
 	name = "Magistratum Enforcer"
 	},
 /obj/item/storage/box/ifak,
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -3830,6 +3833,7 @@
 /obj/structure/sign/magistrate{
 	pixel_x = -30
 	},
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -4303,7 +4307,10 @@
 /area/cadiaoutpost/oa/villageinside)
 "kL" = (
 /obj/structure/undies_wardrobe,
-/obj/item/clothing/suit/armor/guardsman/mercenary,
+/obj/item/clothing/suit/armor/guardsman/mercenary{
+	armor = list("melee" = 56, "bullet" = 40, "laser" = 54, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 20);
+	name = "Heavy Flak Plate"
+	},
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -4627,6 +4634,7 @@
 	dir = 8
 	},
 /obj/random/loot/randomammo,
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -4688,10 +4696,10 @@
 	dir = 4
 	},
 /obj/structure/closet/crate/freezer/rations,
-/obj/random/loot/lightlasgun,
 /obj/random/loot/guardarmor,
 /obj/random/loot/guardgear,
 /obj/random/loot/guardhelmet,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5097,9 +5105,6 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/turf/barnew,
-/obj/effect/mine/stun{
-	color = "grey"
-	},
 /obj/item/reagent_containers/food/snacks/poo,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -5811,6 +5816,7 @@
 "oE" = (
 /obj/structure/table/rack,
 /obj/random/maintenance,
+/obj/random/accessory,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -6158,6 +6164,7 @@
 	color = "grey"
 	},
 /obj/item/device/radio/headset/red_team,
+/obj/random/accessory,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/villageinside)
 "pD" = (
@@ -6605,6 +6612,8 @@
 /area/cadiaoutpost/oa/tradefloor)
 "sA" = (
 /obj/structure/new_ore_box,
+/obj/random/loot/randomammo,
+/obj/random/loot/randomammo,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "sD" = (
@@ -6677,12 +6686,19 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "tm" = (
-/obj/item/card/id/innkey2{
-	access = list(212);
-	name = "rusty key 3"
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
 	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
+/obj/effect/floor_decal/newcorner/plating/corner{
+	dir = 8
+	},
+/obj/item/clothing/accessory/storage/webbing_large,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/village)
 "tn" = (
 /obj/effect/floor_decal/turf/checkers,
 /obj/structure/table/rack,
@@ -6793,6 +6809,7 @@
 /obj/item/remains/human{
 	color = "grey"
 	},
+/obj/random/accessory,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "ui" = (
@@ -6806,6 +6823,10 @@
 	dir = 4
 	},
 /obj/item/stack/thrones3/five,
+/obj/item/card/id/innkey2{
+	access = list(212);
+	name = "rusty key 3"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6853,6 +6874,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"uT" = (
+/obj/effect/decal/remains,
+/obj/random/loot/randomarmor,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "uV" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -6928,6 +6954,7 @@
 /obj/item/remains/human{
 	color = "grey"
 	},
+/obj/random/loot/badweapon,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "vx" = (
@@ -7203,6 +7230,7 @@
 "xC" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/structure/closet/crate/bin,
+/obj/random/accessory,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "xE" = (
@@ -7341,7 +7369,6 @@
 /area/cadiaoutpost/oa/service/bar)
 "yr" = (
 /obj/structure/bed/chair/office,
-/obj/effect/landmark/start/cargo,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/effect/floor_decal/turf/metal,
 /turf/simulated/floor/tiled/dark,
@@ -7386,6 +7413,7 @@
 /obj/structure/closet/coffin{
 	color = "grey"
 	},
+/obj/random/accessory,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "yB" = (
@@ -7612,6 +7640,8 @@
 /area/cadiaoutpost/oa/caves)
 "Ae" = (
 /obj/structure/largecrate,
+/obj/random/loot/randomammo,
+/obj/random/loot/randomammo,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "Ag" = (
@@ -8222,8 +8252,10 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "EV" = (
-/turf/simulated/wall/wood,
-/area/cadiaoutpost/oa/villageinside)
+/obj/effect/decal/remains,
+/obj/effect/landmark/animal/rnghostilespawner,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "EY" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -8506,7 +8538,8 @@
 "HL" = (
 /obj/machinery/door/unpowered/inn/room2{
 	name = "locked room";
-	req_access = list(212)
+	req_access = list(212);
+	maxhealth = 3000
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -8597,6 +8630,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"IG" = (
+/obj/random/accessory,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "II" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -8640,7 +8677,6 @@
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/clothing/accessory/storage/webbing_large,
-/obj/random/loot/badweapon,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -8718,13 +8754,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/cargo/warehouse)
 "JV" = (
-/obj/effect/floor_decal/newcorner/red/solid,
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/random/loot/goodweapon,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/mob/living/simple_animal/hostile/syndicate/ranged{
+	health = 250
 	},
-/area/cadiaoutpost/oa/service/bar)
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "JW" = (
 /obj/random/junk,
 /turf/simulated/floor/stone,
@@ -9095,6 +9129,9 @@
 /obj/item/melee/trench_axe,
 /obj/item/beartrap,
 /obj/item/beartrap,
+/obj/item/beartrap,
+/obj/item/beartrap,
+/obj/item/beartrap,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -9367,6 +9404,7 @@
 /obj/structure/closet/crate,
 /obj/item/stack/barbwire,
 /obj/item/stack/material/steel/ten,
+/obj/item/stack/barbwire,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -9519,6 +9557,7 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
+/obj/item/clothing/accessory/holster/armpit,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9784,7 +9823,6 @@
 /area/cadiaoutpost/oa/caves)
 "RB" = (
 /obj/structure/bed/chair/office,
-/obj/effect/landmark/start/cargo,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/effect/floor_decal/turf/metal/six,
 /turf/simulated/floor/tiled/dark,
@@ -10782,7 +10820,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "YK" = (
-/obj/effect/landmark/start/qm,
+/obj/effect/landmark/start/qm{
+	name = "Munitorum Prefectus"
+	},
 /obj/structure/bed/chair{
 	dir = 8;
 	icon_state = "chair_preview"
@@ -10960,6 +11000,7 @@
 	name = "Magistratum Enforcer"
 	},
 /obj/item/storage/box/teargas,
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -13452,7 +13493,7 @@ xE
 rO
 rO
 ae
-Uj
+uT
 rO
 xE
 xE
@@ -21355,7 +21396,7 @@ xE
 xE
 xE
 xE
-gp
+xE
 xE
 xE
 rO
@@ -23421,7 +23462,7 @@ rO
 xE
 xE
 xE
-gp
+xE
 xE
 xE
 xE
@@ -28332,7 +28373,7 @@ fM
 fM
 jt
 kb
-vQ
+QS
 yh
 kb
 vQ
@@ -30865,7 +30906,7 @@ ro
 ro
 ro
 aY
-dJ
+gp
 dJ
 eg
 dD
@@ -37316,7 +37357,7 @@ kb
 vM
 ES
 ES
-lW
+tm
 kb
 ES
 Jr
@@ -37481,8 +37522,8 @@ ae
 xE
 xE
 xE
-xE
-rO
+ae
+ae
 aC
 ae
 rO
@@ -37736,9 +37777,9 @@ xE
 ae
 ae
 ae
-xE
-xE
-xE
+ae
+ae
+ae
 rO
 rO
 rO
@@ -47013,7 +47054,7 @@ mU
 TF
 EF
 AX
-JV
+SZ
 SZ
 TF
 XL
@@ -49335,10 +49376,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+ae
+ae
+ae
+ae
 rO
 rO
 rO
@@ -49591,10 +49632,10 @@ rO
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+ae
+ae
+ae
+ae
 xE
 xE
 xE
@@ -52479,17 +52520,17 @@ ro
 ro
 ro
 ro
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
 ro
 ro
 ro
@@ -52736,17 +52777,17 @@ ro
 ro
 ro
 NS
-EV
+rf
 kL
 nX
 WM
-EV
 mx
+rf
 mx
 Xz
 mx
 mx
-EV
+rf
 ro
 ro
 ro
@@ -52993,17 +53034,17 @@ ro
 ZH
 ro
 ro
-EV
-mx
-mx
-mx
-EV
+rf
 mx
 mx
 mx
 mx
+rf
 mx
-EV
+mx
+mx
+mx
+rf
 ro
 ro
 NS
@@ -53250,18 +53291,18 @@ NS
 ro
 ro
 ro
-EV
+rf
 mx
 mx
 mx
-EV
 mx
+rf
 Zq
 mx
 mx
 mx
-EV
-tm
+rf
+ro
 ro
 ro
 ro
@@ -53507,12 +53548,12 @@ ro
 ro
 ro
 ro
-EV
+rf
 mx
 mx
 mx
-EV
 mx
+rf
 mw
 mx
 mx
@@ -53764,17 +53805,17 @@ ro
 ro
 ro
 ro
-EV
+rf
+la
 mx
 mx
 mx
-EV
+rf
 mx
 mx
 mx
 mx
-mx
-EV
+rf
 ro
 ro
 NS
@@ -54021,17 +54062,17 @@ ro
 ro
 ro
 ro
-EV
+rf
+bB
 mx
 mx
 mx
-EV
+rf
 mx
 mx
 mx
 mx
-mx
-EV
+rf
 ro
 ro
 ro
@@ -54278,17 +54319,17 @@ ro
 ro
 ro
 ro
-EV
+rf
 Mf
 On
 mx
+mx
 gr
 mx
-bB
-la
+mx
 mx
 WM
-EV
+rf
 ro
 ro
 ro
@@ -54414,7 +54455,7 @@ ae
 rO
 rO
 aC
-ae
+ab
 ae
 ae
 rO
@@ -54535,17 +54576,17 @@ ro
 ro
 ro
 ro
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
-EV
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
+rf
 ro
 ro
 ro
@@ -66236,7 +66277,7 @@ ae
 rO
 rO
 rO
-Uj
+EV
 rO
 ae
 rO
@@ -67422,7 +67463,7 @@ rO
 oP
 vx
 ne
-FP
+xr
 rf
 xE
 xE
@@ -68193,7 +68234,7 @@ ae
 rO
 rO
 rO
-ae
+JV
 rO
 rO
 rO
@@ -69473,7 +69514,7 @@ ae
 ae
 ae
 xE
-ae
+JV
 xE
 xE
 xE
@@ -72288,7 +72329,7 @@ ae
 ae
 ae
 ae
-ae
+IG
 aC
 ae
 ae
@@ -74688,7 +74729,7 @@ xE
 xE
 xE
 xE
-ae
+av
 by
 xE
 xE
@@ -75458,9 +75499,9 @@ xE
 xE
 xE
 xE
+nt
 ae
-ae
-ae
+av
 xE
 xE
 ae

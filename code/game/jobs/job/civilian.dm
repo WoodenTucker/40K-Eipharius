@@ -47,8 +47,8 @@
 	title = "Cook"
 	department = "Service"
 	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = 1
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Seneschal, the Commissar"
@@ -87,7 +87,7 @@
 	department = "Service"
 	department_flag = CIV
 	total_positions = 2
-	spawn_positions = 1
+	spawn_positions = 2
 	supervisors = "the Seneschal"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE

@@ -18,6 +18,7 @@
 /obj/machinery/power/apc{
 	pixel_y = -32
 	},
+/obj/item/clothing/accessory/holster/armpit,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -426,10 +427,6 @@
 /obj/item/clothing/suit/armor/rtdrip,
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,
 /obj/item/clothing/glasses/cadiangoggles/elite,
-/obj/item/card/id/innkey2{
-	access = list(225);
-	name = "storage key"
-	},
 /obj/item/clothing/glasses/monocle,
 /obj/item/storage/pill_bottle/dexalin_plus,
 /obj/item/storage/pill_bottle/kelotane,
@@ -1873,6 +1870,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"pF" = (
+/obj/structure/closet/secure_closet/guncabinet,
+/obj/random/loot/goodweapon,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/meetingroom)
 "qi" = (
 /obj/machinery/door/airlock/glass_command/rt{
 	color = null;
@@ -1887,8 +1891,9 @@
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "qo" = (
 /obj/item/card/id/innkey3{
-	name = "Vault Key";
-	req_access = list(331)
+	name = "Master Key";
+	req_access = list(331);
+	access = list(331,330,225)
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -30047,7 +30052,7 @@ ai
 ai
 ai
 rr
-ym
+pF
 bc
 ct
 mm
