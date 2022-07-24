@@ -6,14 +6,15 @@
 	icobase = 'icons/mob/human_races/r_ork.dmi'
 	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	min_age = 1
-	max_age = 65
+	max_age = 10000
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_EMBED
 	total_health = 200
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
 	brute_mod = 1.0
-	burn_mod = 1.0
-	toxins_mod = 0.9
+	burn_mod = 1.15
+	toxins_mod = 1.0
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,

@@ -3,8 +3,8 @@
 	name_plural = "Skitarii"
 	blurb = "The Mechanicus' loyal soldiers."
 	total_health = 400 //made to be recovered even if they get severely injured
-	min_age = 18
-	max_age = 80
+	min_age = 15
+	max_age = 150
 	icobase = 'icons/mob/human_races/r_human.dmi'
 	deform = 'icons/mob/human_races/r_def_human.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
@@ -12,7 +12,13 @@
 	pixel_offset_y = -4
 	strength = STR_HIGH
 	radiation_mod = 0.2
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
+	brute_mod =      0.9                    // Physical damage multiplier.
+	burn_mod =       0.9                    // Burn damage multiplier.
+	oxy_mod =        0.5                    // Oxyloss modifier
+	toxins_mod =     0.2                    // Toxloss modifier
+	flash_mod =      0                    // Stun from blindness modifier.
+	metabolism_mod = 0.1                    // Reagent metabolism modifier
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED
 	slowdown = -0.30
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
