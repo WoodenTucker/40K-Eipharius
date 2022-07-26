@@ -855,7 +855,7 @@ Area basic template
 	name = "Trade Floor"
 	icon_state = "tradefloor"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /////////////////////////////////////////
 //////////////////THE MINES////////////////

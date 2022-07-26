@@ -106,9 +106,8 @@
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
 	one_hand_penalty = 0.5
-	accuracy = 0
-	fire_delay = 1
-	armor_penetration = 14 //this is melee??? im not gonna remove it but i just felt like i should point this out
+	accuracy = 1
+	fire_delay = 0.5
 	silenced = 1
 	force = 20
 
@@ -367,7 +366,7 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -0.3 
+	accuracy = -1 
 	fire_delay = 1.8
 	move_delay = 1
 	load_method = MAGAZINE
@@ -391,7 +390,7 @@
 	force = 30
 	caliber = ".75"
 	accuracy = 0 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 3.8
+	fire_delay = 1
 	move_delay = 3
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -414,7 +413,7 @@
 	sharp = 1 
 	edge = 1
 	accuracy = 0 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
-	fire_delay = 2 //fastaa!
+	fire_delay = 1 //fastaa!
 	move_delay = 1 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"

@@ -151,9 +151,9 @@
 	icon_state = "slanarm"
 	item_state = "slanarm"
 	attack_verb = list("stabbed", "impales", "rends", "tears", "flays", "rips")
-	force = 75
-	sharpness = 75
-	block_chance = 75
+	force = 5
+	sharpness = 35
+	block_chance = 35
 	hitsound = 'sound/effects/slanattack.ogg'
 	sharp = 1
 	edge = 1
@@ -179,8 +179,7 @@
 		playsound(usr, 'sound/weapons/succubus.ogg', 100, 1, 1)
 	else
 		playsound(usr, 'sound/effects/slanattack.ogg', 100, 1, 1)
-		C.apply_damage(rand(55,75), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
-		C.Weaken(10)
+		C.apply_damage(rand(35,50), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
 		user.slanpain += rand(6,16)
 		to_chat(C, "<span class='warning'>[user] mangles your body with their mutated arm. It causes you pain on a level you didn't know existed.</span>")
 		if(C.gender == MALE)

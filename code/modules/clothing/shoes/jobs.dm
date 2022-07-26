@@ -141,6 +141,7 @@
 	icon_state = "ork_boots"
 	item_state = "ork_boots"
 	species_restricted = list(SPECIES_ORK)
+	canremove = 0
 //	item_flags = ITEM_FLAG_NOSLIP //walker here, add this if you don't like orks being goofy or funny or if you are a nerd
 // Astra Militarum Stuff
 

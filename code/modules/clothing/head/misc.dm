@@ -333,11 +333,10 @@
 	armor = list(melee = 15, bullet = 0, laser = 15, energy = 15, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/head/hospitallerhelm
-	name = "sister hospitaller's medical rig"
-	desc = "The holy garments marking the wearer as a sister hospitaller"
-	armor = list(melee = 50, bullet = 58, laser = 80, energy = 60, bomb = 60, bio = 100, rad = 100) //essentially power armor but without the front cover so that the hospitaller can speak with the dead easily
+	name = "blessed head garments"
+	desc = "The holy garments marking the wearer as a member of the Adeptus Sororitas"
+	armor = list(melee = 40, bullet = 48, laser = 40, energy = 60, bomb = 60, bio = 100, rad = 100) //essentially power armor but without the front cover so that the hospitaller can speak with the dead easily
 	icon_state = "medical_rig"
 	item_state = "medical_rig"
-	flags_inv = BLOCKHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

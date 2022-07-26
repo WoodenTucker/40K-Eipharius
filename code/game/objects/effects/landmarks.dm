@@ -288,7 +288,6 @@ Template:
 				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
 				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 3,
 				/obj/item/gun/projectile/shotgun/pump = 3,
-				/obj/item/gun/projectile/automatic/autogrim = 1,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 4,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 5,
 				/obj/item/gun/projectile/bolter_pistol = 1)
@@ -304,7 +303,6 @@ Template:
 				/obj/item/ammo_magazine/box/shotgun/slug = 3,
 				/obj/item/ammo_magazine/box/shotgun/bean = 1,
 				/obj/item/ammo_box/rifle = 8,
-				/obj/item/ammo_magazine/autogrim = 1,
 				/obj/item/ammo_magazine/c45m/warfare = 3,
 				/obj/item/ammo_magazine/mc9mmt/machinepistol = 9,
 				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
@@ -380,7 +378,6 @@ Template:
 	return list(/obj/item/ammo_magazine/mc9mmt/machinepistol = 10,
 	            /obj/item/ammo_magazine/bolt_rifle_magazine = 1,
 				/obj/item/ammo_box/rifle = 5,
-				/obj/item/ammo_magazine/autogrim = 5,
 				/obj/item/ammo_box/shotgun = 4,
 				/obj/item/ammo_magazine/box/shotgun/slug = 2,
 				/obj/item/ammo_magazine/box/a556/mg08 = 10,
@@ -394,7 +391,6 @@ Template:
 
 /obj/random/loot/heavystubber/spawn_choices()
 	return list(/obj/item/gun/projectile/lockebolter = 1,
-				/obj/item/gun/projectile/automatic/autogrim = 5,
 				/obj/item/gun/projectile/shotgun/pump = 6,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 8,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 9,
@@ -422,7 +418,6 @@ Template:
 				/obj/item/ammo_magazine/box/shotgun/bean = 1,
 				/obj/item/ammo_magazine/c45m/warfare = 8,
 				/obj/item/ammo_magazine/c45m/warfare = 6,
-				/obj/item/ammo_magazine/autogrim = 2,
 				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
 				/obj/item/ammo_magazine/a357 = 2,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 2)
@@ -452,7 +447,6 @@ Template:
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 4,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 6,
 				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
-				/obj/item/gun/projectile/automatic/autogrim = 1,
 				/obj/item/gun/energy/las/lasgun = 4,
 				/obj/item/gun/energy/las/lasgun/lucius = 2)
 
@@ -474,8 +468,8 @@ Template:
 				/obj/item/gun/energy/las/lasgun/rare = 4,
 				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 3,
 				/obj/item/gun/energy/las/lasgun/catachan = 1,
-				/obj/item/gun/projectile/automatic/autogrim = 2,
 				/obj/item/gun/energy/las/lasgun/tinkered = 3,
+				/obj/item/gun/energy/las/lasgun/longlas = 1,
 				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 3)
 
 /obj/random/loot/meleespawner

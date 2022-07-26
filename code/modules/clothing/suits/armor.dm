@@ -253,9 +253,10 @@ obj/item/clothing/suit/armor
 	desc = "Scavenged bitz to keep ya' krumpin' longa'!"
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor"
-	armor = list(melee = 55, bullet = 60, laser = 50, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 55, bullet = 30, laser = 20, energy = 20, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
 	blood_overlay_type = "armor"
+	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -427,9 +428,9 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer/captain
-	name = "Enforcer Patrol Armour - Reinforced"
-	desc = "The flak armour worn by a Magistratum Enforcer Captain. Light and robust in the colour blue, designed to protect against blast and small arms fire."
+/obj/item/clothing/suit/armor/enforcer/arbitrator
+	name = "Enforcer Patrol Armour - Arbitrator"
+	desc = "The flak armour worn by a Magistratum Arbitrator. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	armor = list(melee = 48, bullet = 55, laser = 60, energy = 35, bomb = 60, bio = 30, rad = 30)
 
 //// ASTRA MILITARUM
@@ -470,7 +471,7 @@ obj/item/clothing/suit/armor
 	icon_state = "medicae"
 	item_state = "medicae"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 30, bullet = 35, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
+	armor = list(melee = 35, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/medicae/New()
@@ -478,12 +479,12 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/whiteshield
-	name = "Cadian Pattern Whiteshield Flak Armour - Light"
+	name = "Cadian Pattern Conscript Flak Armour - Light"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
 	icon_state = "wshield"
 	item_state = "wshield"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 25, bullet = 30, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
+	armor = list(melee = 35, bullet = 35, laser = 30, energy = 20, bomb = 30, bio = 40, rad = 30)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/medicae/New()
@@ -698,13 +699,27 @@ obj/item/clothing/suit/armor
 	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 70, bullet = 60, laser = 90, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
+	armor = list(melee = 70, bullet = 75, laser = 70, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 0
+	canremove = 1
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/suit/sisterofbattle/training
+	name = "Scholam Power Armor"
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Ember Thorn, this particular pattern has been maintained for many terran centuries, with scriptures across all speaking to The Beatie and her crusade across the Sabbat worlds."
+	icon_state = "ooml"
+	item_state = "ooml"
+	armor = list(melee = 55, bullet = 60, laser = 55, energy = 50, bomb = 60, bio = 100, rad = 50) // This is power armor forged centuries ago and is for use by the Schola Progena who wish to become sisters of battle.
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/sisterofbattle/sobrelic
@@ -718,7 +733,7 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	canremove = 0 //no removing
+	canremove = 1
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
 	species_restricted = list(SPECIES_HUMAN)
 

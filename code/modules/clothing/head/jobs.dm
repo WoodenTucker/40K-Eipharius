@@ -194,11 +194,11 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/head/helmet/guardhelmet/enforcer/captain
-	name = "Magistratum Captain Helmet"
-	desc = "The Enforcer Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Captain's both to show rank and for intimidation, It is painted in a dark blue colour."
-	icon_state = "arbiter"
-	item_state = "arbiter"
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
+	name = "Magistratum Arbitrator Helmet"
+	desc = "The Arbitrator Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Arbitrator's both to show rank and for intimidation, It is painted in a dark blue colour."
+	icon_state = "Jhelm2"
+	item_state = "Jhelm2"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet
@@ -499,5 +499,4 @@
 	desc = "An helmet issued to the Battle Sister of the Adepta Sororitas Militant Wing, This one bears the Sigil of the Order of The Sacred Rose, If you looks closely, you can see it's omits holy power, making you feels safer and secure.</i>"
 	icon_state = "sister"
 	item_state = "sister"
-	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 0)
-	species_restricted = list(SPECIES_ORK)
+	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)

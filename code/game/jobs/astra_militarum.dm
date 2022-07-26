@@ -9,12 +9,12 @@
 	outfit_type = /decl/hierarchy/outfit/job/ig //will need to be replaced eventually - wel
 	selection_color = "#33813A"
 	department_flag = SEC
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 6
-	shotgun_skill = 7
-	lmg_skill = 6
-	smg_skill = 7
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 7
+	shotgun_skill = 8
+	lmg_skill = 7
+	smg_skill = 8
 	open_when_dead = FALSE
 	announced = FALSE
 	can_be_in_squad = TRUE
@@ -48,15 +48,15 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 10
-	spawn_positions = 10
+	total_positions = 6
+	spawn_positions = 6
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 6
-	shotgun_skill = 7
-	lmg_skill = 6
-	smg_skill = 7
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 7
+	shotgun_skill = 8
+	lmg_skill = 7
+	smg_skill = 8
 	outfit_type = /decl/hierarchy/outfit/job/guardsman
 	alt_titles = list(
 		"Cadian Guardsman" = /decl/hierarchy/outfit/job/guardsman,
@@ -101,19 +101,19 @@
 
 //Whiteshield
 
-/datum/job/ig/guardsman/whiteshield
+/datum/job/ig/whiteshield
 	title = "Imperial Guard Conscript"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 7
+	spawn_positions = 7
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE
-	auto_rifle_skill = 7
-	semi_rifle_skill = 6
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 6
+	can_be_in_squad = FALSE	
+	auto_rifle_skill = 8
+	semi_rifle_skill = 7
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -132,15 +132,15 @@
 
 /datum/job/ig/guardsman/sharpshooter
 	title = "Imperial Guard Sharpshooter"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 10
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 7
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 11
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 8
 	alt_titles = list(
 		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
@@ -192,12 +192,12 @@
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
 			            )
 
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
+	auto_rifle_skill = 9
+	semi_rifle_skill = 9
+	sniper_skill = 9
+	shotgun_skill = 9
+	lmg_skill = 9
+	smg_skill = 9
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -248,12 +248,12 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 6
-	shotgun_skill = 8
-	lmg_skill = 7
-	smg_skill = 8
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 7
+	shotgun_skill = 9
+	lmg_skill = 8
+	smg_skill = 9
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -277,8 +277,8 @@
 /datum/job/ig/commissar
 	title = "Commissar"
 	supervisors = "the Rogue Trader and his Astartes Bodyguard."
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#004e07"
 	req_admin_notify = TRUE
