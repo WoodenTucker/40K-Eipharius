@@ -58,13 +58,13 @@
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 5
+	spawn_positions = 5
 	supervisors = "You obey the Magos Dominus and secondarily, the Magos Biologis"
 	selection_color = "#B2A15F"
 	economic_modifier = 5
 	minimal_player_age = 7
-	open_when_dead = 1
+	open_when_dead = 0
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
@@ -103,7 +103,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 7
-	open_when_dead = 1
+	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus and the Omnissiah."
 	selection_color = "#967096"
 	economic_modifier = 7
