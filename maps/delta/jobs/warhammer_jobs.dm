@@ -13,6 +13,7 @@
 	/datum/job/ig/guardsman/whiteshield,
 	/datum/job/cmo,
 	/datum/job/doctor,
+	/datum/job/progena,
 	/datum/job/ig/medicae,
 	/datum/job/chemist,
 	/datum/job/geneticist,
