@@ -101,6 +101,31 @@
 	..()
 	overlay = GLOB.global_hud.science
 
+/obj/item/clothing/glasses/science/magos
+	name = "magos goggles"
+	desc = "The goggles do nothing!"
+	hud = /obj/item/clothing/glasses/hud/health
+	icon_state = "thermoncle"
+	item_state = "thermoncle"
+	action_button_name = "Toggle Goggles"
+	toggleable = 1
+	electric = 1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	vision_flags = SEE_MOBS
+	vision_flags = SEE_TURFS
+
+/obj/item/clothing/glasses/science/tech
+	name = "priest goggles"
+	desc = "The goggles do nothing!"
+	hud = /obj/item/clothing/glasses/hud/health
+	icon_state = "thermoncle"
+	item_state = "thermoncle"
+	action_button_name = "Toggle Goggles"
+	toggleable = 1
+	electric = 1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	vision_flags = SEE_TURFS
+
 /obj/item/clothing/glasses/night
 	name = "Mark IX Photovisor"
 	desc = "You can totally see in the dark now!"
