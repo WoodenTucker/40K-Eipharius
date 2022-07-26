@@ -91,14 +91,16 @@
 	pda_type = null
 	pda_slot = null
 
+/decl/hierarchy/outfit/job/abbess
+
 /decl/hierarchy/outfit/job/chaplain
-	name = OUTFIT_JOB_NAME("Ministorum Confessor")
+	name = OUTFIT_JOB_NAME("Deacon")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/civilian/chaplain
 	pda_type = null
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	belt = /obj/item/device/flashlight/lantern
@@ -119,7 +121,7 @@
 	uniform = /obj/item/clothing/under/child_jumpsuit
 	id_type = /obj/item/card/id/civilian/bartender
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	r_ear = null
 	suit = /obj/item/clothing/suit/child_coat/red
 	back = /obj/item/storage/backpack/satchel/warfare
