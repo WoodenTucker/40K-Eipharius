@@ -824,6 +824,7 @@
 	},
 /obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cJ" = (
@@ -1237,11 +1238,10 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dM" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
 /obj/structure/table/rack/dark,
+/obj/item/clothing/accessory/armguards/ballistic,
+/obj/item/clothing/accessory/armguards/riot,
+/obj/item/clothing/accessory/armguards/ablative,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dN" = (
@@ -1251,6 +1251,9 @@
 "dP" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/structure/table/rack/dark,
+/obj/item/clothing/accessory/legguards/ablative,
+/obj/item/clothing/accessory/legguards/ballistic,
+/obj/item/clothing/accessory/legguards/riot,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dQ" = (
@@ -1321,12 +1324,7 @@
 /obj/effect/landmark/start{
 	name = "Imperial Inquisitor"
 	},
-/obj/item/clothing/suit/chameleon,
-/obj/item/clothing/under/chameleon,
-/obj/item/clothing/shoes/chameleon,
 /obj/item/clothing/mask/chameleon/voice,
-/obj/item/clothing/head/chameleon,
-/obj/item/clothing/gloves/chameleon,
 /obj/item/clothing/glasses/thermal/syndi,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3044,6 +3042,9 @@
 	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
 	name = "Inquisitorial Report"
 	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "ordos bracelet"
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tC" = (
@@ -3436,12 +3437,12 @@
 /obj/structure/closet/cabinet,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/clothing/suit/armor/agent,
-/obj/item/clothing/head/helmet/barney_helmet,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
 /obj/item/clothing/mask/chameleon,
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -4337,12 +4338,12 @@
 /obj/structure/closet/cabinet,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/clothing/suit/armor/agent,
-/obj/item/clothing/head/helmet,
 /obj/item/clothing/mask/chameleon,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
+/obj/item/clothing/accessory/storage/black_vest,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "LU" = (
@@ -4382,10 +4383,6 @@
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle"
-	},
-/obj/item/book/manual{
-	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
-	name = "Inquisitorial Report"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4931,18 +4928,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"TV" = (
-/obj/structure/closet/cabinet,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/suit/armor/agent,
-/obj/item/clothing/head/helmet/riot,
-/obj/item/clothing/mask/chameleon,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ua" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/floor_decal/newcorner/bar/diagonal,
@@ -13862,7 +13847,7 @@ cp
 cp
 cp
 cp
-TV
+LT
 lU
 ch
 cr
