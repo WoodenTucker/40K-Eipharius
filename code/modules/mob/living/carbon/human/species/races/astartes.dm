@@ -10,7 +10,7 @@ Astartes
 	primitive_form = SPECIES_HUMAN
 	brute_mod =      0.5                    // 50% brute damage
 	burn_mod =       0.5                  //  50% burn damage
-	unarmed_types = list(/datum/unarmed_attack/stomp, /datum/unarmed_attack/kick, /datum/unarmed_attack/punch, /datum/unarmed_attack/bite)
+	unarmed_types = list(/datum/unarmed_attack/stomp/astartes, /datum/unarmed_attack/kick/astartes, /datum/unarmed_attack/punch/astartes, /datum/unarmed_attack/bite/astartes)
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 25
 	max_age = 500
@@ -31,7 +31,7 @@ Astartes
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	//sexybits_location = BP_GROIN //dude, they have no balls - they actually do, it's old myth since they have libido being put down to the rock bottom
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_MINOR_CUT
 	inherent_verbs = list()
 
 	radiation_mod = 0.7
@@ -64,3 +64,78 @@ Astartes
 /mob/living/carbon/human/astartes/Initialize()
 	. = ..()
 	src.rejuvenate()
+
+	has_limbs = list(
+		BP_CHEST =  list("path" = /obj/item/organ/external/chest/unbreakable/astartes),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/astartes),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/unbreakable/astartes),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/unbreakable/astartes),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/unbreakable/astartes),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/unbreakable/astartes),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/unbreakable/astartes),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/unbreakable/astartes),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/unbreakable/astartes),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/unbreakable/astartes),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/astartes)
+		)
+
+
+/obj/item/organ/external/chest/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+
+/obj/item/organ/external/groin/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+
+/obj/item/organ/external/arm/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+
+/obj/item/organ/external/arm/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+
+/obj/item/organ/external/leg/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+
+/obj/item/organ/external/leg/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+
+/obj/item/organ/external/foot/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	can_stand = 1
+
+/obj/item/organ/external/foot/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	can_stand = 1
+
+/obj/item/organ/external/hand/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	can_grasp = 1
+
+/obj/item/organ/external/hand/right/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	can_grasp = 1
+
+
+/obj/item/organ/external/head/unbreakable/astartes
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+

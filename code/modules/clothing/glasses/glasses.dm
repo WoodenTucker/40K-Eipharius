@@ -115,6 +115,7 @@
 	off_state = "denight"
 	electric = 1
 
+
 /obj/item/clothing/glasses/blacksun
 	name = "blacksun goggles"
 	desc = "The Blacksun Filter is an advanced Tau optical filter that allows the user not only to see at much greater distances when fighting in nighttime conditions but also filters bright flares of light that could blind them."
@@ -566,3 +567,4 @@
 	item_state = "glasses"
 	body_parts_covered = EYES
 	unacidable = 1
+

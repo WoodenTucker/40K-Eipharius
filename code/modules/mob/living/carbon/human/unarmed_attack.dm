@@ -126,6 +126,15 @@ var/global/list/sparring_attack_cache = list()
 		return 0 //how do you bite yourself in the head?
 	return 1
 
+
+/datum/unarmed_attack/bite/astartes
+	attack_verb = list("bit")
+	attack_sound = 'sound/weapons/bite.ogg'
+	shredding = 1
+	damage = 25
+	sharp = 1
+	edge = 1
+
 /datum/unarmed_attack/punch
 	attack_verb = list("punched")
 	attack_noun = list("fist")
@@ -170,6 +179,13 @@ var/global/list/sparring_attack_cache = list()
 	else
 		user.visible_message("<span class='danger'>[user] [pick("punched", "threw a punch at", "struck", "slammed their [pick(attack_noun)] into")] [target]'s [organ]!</span>") //why do we have a separate set of verbs for lying targets?
 
+/datum/unarmed_attack/punch/astartes
+	attack_verb = list("punched")
+	attack_noun = list("fist")
+	eye_attack_text = "fingers"
+	eye_attack_text_victim = "digits"
+	damage = 40
+	
 /datum/unarmed_attack/kick
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
@@ -206,6 +222,12 @@ var/global/list/sparring_attack_cache = list()
 		if(1 to 2)	user.visible_message("<span class='danger'>[user] threw [target] a glancing [pick(attack_noun)] to the [organ]!</span>") //it's not that they're kicking lightly, it's that the kick didn't quite connect
 		if(3 to 4)	user.visible_message("<span class='danger'>[user] [pick(attack_verb)] [target] in \his [organ]!</span>")
 		if(5)		user.visible_message("<span class='danger'>[user] landed a strong [pick(attack_noun)] against [target]'s [organ]!</span>")
+
+/datum/unarmed_attack/kick/astartes
+	attack_verb = list("kicked", "kicked", "kicked", "kneed")
+	attack_noun = list("kick", "kick", "kick", "knee strike")
+	attack_sound = "swing_hit"
+	damage = 50
 
 /datum/unarmed_attack/stomp
 	attack_verb = list("stomped on")
@@ -251,6 +273,13 @@ var/global/list/sparring_attack_cache = list()
 			user.visible_message(pick(
 				"<span class='danger'>[user] stomped down hard onto [target]'s [organ] [pick("", "with their [shoe_text]")]!</span>",
 				"<span class='danger'>[user] slammed \his [shoe_text] down onto [target]'s [organ]!</span>"))
+
+/datum/unarmed_attack/stomp/astartes
+	attack_verb = list("stomped on")
+	attack_noun = list("stomp")
+	attack_sound = "swing_hit"
+	damage = 60
+
 
 /datum/unarmed_attack/light_strike
 	deal_halloss = 3
