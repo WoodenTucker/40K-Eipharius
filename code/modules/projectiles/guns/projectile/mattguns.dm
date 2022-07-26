@@ -116,7 +116,7 @@
 	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/lp338
 	one_hand_penalty = 50
-	accuracy = -2
+	accuracy = -1
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
@@ -279,7 +279,6 @@
 	one_hand_penalty = 4
 	accuracy = -0.2
 	fire_delay= 3
-	armor_penetration = 1
 
 	ammo_type = list(
 		/obj/item/ammo_casing/shotgun/pellet,
@@ -290,9 +289,8 @@
 	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
 	move_delay= 1.7
 	one_hand_penalty = 3.5
-	accuracy = -1.1
-	fire_delay = 3.5
-	armor_penetration = 2
+	accuracy = 0
+	fire_delay = 2
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"
@@ -304,9 +302,9 @@
 	w_class = ITEM_SIZE_NORMAL
 	max_shells = 4
 	empty_icon = "sawnchester-e"
-	one_hand_penalty = 2
-	fire_delay = 3
-	accuracy = -0.4
+	one_hand_penalty = 1
+	fire_delay = 2
+	accuracy = -1
 	armor_penetration = 0
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
@@ -396,7 +394,7 @@
 	move_delay= 2
 	one_hand_penalty = 3
 	accuracy = -1.5
-	fire_delay= 2.5
+	fire_delay = 2.5
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14
 	name = "M41 Eclipse"
@@ -623,8 +621,8 @@
 	item_state = "autorifle"
 	move_delay= 1.4
 	one_hand_penalty = 3
-	accuracy = -0.2
-	fire_delay = 1.5
+	accuracy = -1
+	fire_delay = 1.6
 	armor_penetration = 8
 
 	wielded_item_state = "autorifle-wielded"
@@ -834,7 +832,7 @@
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
-	accuracy = -0.5
+	accuracy = -1
 	fire_delay = 1.6
 
 /obj/item/gun/projectile/automatic/stubber/villiers
@@ -842,7 +840,7 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
-	accuracy = 1
+	accuracy = 0
 	fire_delay = 1.8
 	automatic = 0.8
 	armor_penetration = 5 //this is melee

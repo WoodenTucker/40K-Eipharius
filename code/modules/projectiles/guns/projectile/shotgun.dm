@@ -41,7 +41,7 @@
 	gun_type = GUN_SHOTGUN
 	move_delay= 2 
 	one_hand_penalty = 4
-	accuracy = -1
+	accuracy = 0
 	fire_delay= 3
 	armor_penetration = 1
 
