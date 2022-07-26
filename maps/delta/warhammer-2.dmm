@@ -3554,6 +3554,7 @@
 "jk" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/crate/freezer/rations,
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "jm" = (
@@ -5422,6 +5423,7 @@
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
+/obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6735,6 +6737,15 @@
 "wA" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/village)
+"wD" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/village)
 "wI" = (
 /obj/effect/landmark/start{
@@ -8956,6 +8967,11 @@
 	integrity = 3000
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"Po" = (
+/obj/structure/table/woodentable,
+/obj/item/storage/toolbox/mechanical,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "Pp" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -24308,7 +24324,7 @@ zc
 FR
 sk
 kb
-TH
+wD
 TH
 It
 kb
@@ -27655,7 +27671,7 @@ fM
 fM
 jt
 kb
-QS
+Po
 yh
 kb
 vQ
