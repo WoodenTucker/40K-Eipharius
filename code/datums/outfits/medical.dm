@@ -81,7 +81,7 @@
 	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	gloves = /obj/item/clothing/gloves/thick/techpriest
-	glasses = /obj/item/clothing/glasses/hud/health
+	glasses = /obj/item/clothing/glasses/science/tech
 	shoes = /obj/item/clothing/shoes/workboots
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
