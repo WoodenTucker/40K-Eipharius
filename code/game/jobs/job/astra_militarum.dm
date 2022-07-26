@@ -101,13 +101,13 @@
 
 //Whiteshield
 
-/datum/job/ig/guardsman/whiteshield
+/datum/job/ig/whiteshield
 	title = "Imperial Guard Conscript"
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 7
+	spawn_positions = 7
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE
+	can_be_in_squad = FALSE	
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
 	sniper_skill = 6
@@ -277,8 +277,8 @@
 /datum/job/ig/commissar
 	title = "Commissar"
 	supervisors = "the Rogue Trader and his Astartes Bodyguard."
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#004e07"
 	req_admin_notify = TRUE
