@@ -315,7 +315,7 @@
 	desc = "A special belt made for Apothecaries, Genetors, and Hospitallers, its able to hold surgical and medical tools, they are preloaded with important gear."
 	icon_state = "medicalbelt"
 	item_state = "medical"
-	canremove = 0
+	canremove = 1
 	storage_slots = 30
 	max_storage_space = 30 
 	can_hold = list(
