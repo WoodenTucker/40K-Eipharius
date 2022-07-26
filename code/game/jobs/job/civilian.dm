@@ -113,11 +113,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>Possibly the most important job on the entire planet. The Guard will thrive or starve depending on how skilled you are. Report to your farm in the southeastern corner of the outpost and get growing!</font></b></span>")
 
 // Janitor Servitor

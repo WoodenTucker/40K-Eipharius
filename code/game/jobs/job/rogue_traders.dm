@@ -23,12 +23,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/captain
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -70,12 +70,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	ideal_character_age = 50
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
 
 
 	equip(var/mob/living/carbon/human/H)

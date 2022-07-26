@@ -18,12 +18,12 @@
 	announced = FALSE
 //	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
-	auto_rifle_skill = 2
-	semi_rifle_skill = 2
-	sniper_skill = 2
-	shotgun_skill = 2
-	lmg_skill = 2
-	smg_skill = 2
+	auto_rifle_skill = 4
+	semi_rifle_skill = 4
+	sniper_skill = 4
+	shotgun_skill = 4
+	lmg_skill = 4
+	smg_skill = 4
 
 
 
@@ -206,13 +206,12 @@
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
-	sniper_skill = 6
-	shotgun_skill = 6
-	lmg_skill = 6
-	smg_skill = 6
-	req_admin_notify = 1
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	sniper_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	smg_skill = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -237,7 +236,7 @@
 /decl/hierarchy/outfit/job/sisterofbattle
 	name = OUTFIT_JOB_NAME("Sister of Battle")
 	head = /obj/item/clothing/head/helmet/sisterofbattle
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
@@ -257,20 +256,32 @@
 	/obj/item/stack/thrones3/ten = 2
 	)
 
+/decl/hierarchy/outfit/job/progena
+	name = OUTFIT_JOB_NAME("Progena")
+	uniform = /obj/item/clothing/under/rank/medical
+	l_ear  = /obj/item/device/radio/headset/red_team/medicae
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/storage/belt
+	r_pocket = /obj/item/device/flashlight/lantern
+	id_type = /obj/item/card/id/medical
+	backpack_contents = list(
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+		/obj/item/stack/thrones3/five = 1,)
+
 // Orders Hospitaller
 
 // Almoness Advance
 
 /datum/job/cmo
-	title = "Almoness Advance"
+	title = "Abbess"
 	head_position = 1
 	department = list("Ministorum", "Medical")
 	department_flag = COM|MED
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Orders Hospitaller"
+	supervisors = "The Deacon and Inquisition"
 	selection_color = "#633d63"
-	req_admin_notify = 1
 	economic_modifier = 10
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_HIGH
@@ -286,12 +297,12 @@
 	minimal_player_age = 20
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	sniper_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	smg_skill = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -311,40 +322,40 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge within the Ordos Hospitaller, organize your sisters and ensure they are doing their duty to both the Lord Trader and the Codex Sororitas. Sanctify and heal this unholy land of it's festering heretical past... in the name of your Emperor.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
 
 // Hospitaller Advance
 
 /datum/job/doctor
-	title = "Curia Advance"
+	title = "Sister Hospitaller"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
-	minimal_player_age = 3
-	total_positions = 5
-	spawn_positions = 3
-	supervisors = "the Almoness Advance and the Orders Hospitaller"
+	minimal_player_age = 22
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "the Abbess or The Deacon"
 	selection_color = "#967096"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, 211)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(16,18))
+		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(3,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -355,18 +366,58 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are a junior sister of the Ordos Hospitaller, serving under the Sister Hospitaller to maintain the health and divinity of the garrison.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a senior sister of the Ordos Hospitaller, serving under The Deacon/Abbess to maintain the health and divinity of the township.</font></b></span>")
+
+
+/datum/job/progena
+	title = "Progena"
+	department = list("Ministorum", "Medical")
+	department_flag = MED
+	minimal_player_age = 14
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the Abbess or The Deacon"
+	selection_color = "#967096"
+	economic_modifier = 7
+	social_class = SOCIAL_CLASS_HIGH
+	open_when_dead = FALSE
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, 211)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels)
+	outfit_type = /decl/hierarchy/outfit/job/progena
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("[current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
+		H.add_skills(rand(3,6),rand(3,7),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.get_equipped_item(slot_s_store)
+		H.warfare_faction = IMPERIUM
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
 
 //Hospitaller
 
 /datum/job/chemist
-	title = "Hospitaller Advance"
+	title = "Hospitaller Advance" // Do not enable this ever. They spawn as an alchemist if you do.
 	department = "Medical"
 	department_flag = MED
 	social_class = SOCIAL_CLASS_MED
 	minimal_player_age = 7
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0 // Leave this off. This is borked role.
+	spawn_positions = 0
 	supervisors = "the Sister Hospitaller"
 	selection_color = "#967096"
 	economic_modifier = 5
