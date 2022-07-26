@@ -467,7 +467,7 @@ obj/item/gun/energy/retro
 	item_state = "laspistol"
 	move_delay= 1.2
 	one_hand_penalty = 1
-	accuracy = -1.2
+	accuracy = -0.2
 	fire_delay= 3
 	armor_penetration = 12.5
 
@@ -478,7 +478,7 @@ obj/item/gun/energy/retro
 	item_state = "laspistol"
 	move_delay= 1.2
 	one_hand_penalty = 1
-	accuracy = -1.2
+	accuracy = -1
 	fire_delay= 3
 	armor_penetration = 12.5
 
