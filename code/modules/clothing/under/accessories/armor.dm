@@ -1,4 +1,22 @@
 //Pouches
+
+/obj/item/clothing/accessory/storage/torso/armor
+	name = "carapace plate"
+	desc = "A lightweight carapace vest which can be worn over your armor(attaches at the neck)."
+	icon_override = 'icons/mob/onmob/modular_armor.dmi'
+	icon = 'icons/obj/clothing/modular_armor.dmi'
+	accessory_icons = list(slot_tie_str = 'icons/mob/onmob/modular_armor.dmi', slot_wear_suit_str = 'icons/mob/onmob/modular_armor.dmi')
+	icon_state = "ballistic"
+	gender = PLURAL
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	armor = list(melee = 8, bullet = 10, laser = 10, energy = 1, bomb = 5, bio = 0, rad = 5)
+	slot = ACCESSORY_SLOT_ARMOR_A
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/accessory/storage/torso/armor/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.3
+
 /obj/item/clothing/accessory/storage/pouches
 	name = "storage pouches"
 	desc = "A collection of black pouches that can be attached to a plate carrier. Carries up to two items."
@@ -120,21 +138,21 @@
 	name = "riot arm guards"
 	desc = "A pair of armored arm pads with heavy padding to protect against melee attacks."
 	icon_state = "armguards_riot"
-	armor = list(melee = 12, bullet = 4, laser = 2, energy = 4, bomb = 2, bio = 0, rad = 0)
+	armor = list(melee = 8, bullet = 4, laser = 4, energy = 4, bomb = 2, bio = 0, rad = 0)
 	siemens_coefficient = 0.5
 
 /obj/item/clothing/accessory/armguards/ballistic
 	name = "ballistic arm guards"
 	desc = "A pair of armored arm pads with heavy plates to protect against ballistic projectiles."
 	icon_state = "armguards_ballistic"
-	armor = list(melee = 2, bullet = 12, laser = 2, energy = 4, bomb = 4, bio = 0, rad = 0)
+	armor = list(melee = 4, bullet = 8, laser = 4, energy = 4, bomb = 4, bio = 0, rad = 0)
 	siemens_coefficient = 0.7
 
 /obj/item/clothing/accessory/armguards/ablative
 	name = "ablative arm guards"
 	desc = "A pair of armored arm pads with advanced shielding to protect against energy weapons."
 	icon_state = "armguards_ablative"
-	armor = list(melee = 2, bullet = 2, laser = 10, energy = 4, bomb = 2, bio = 0, rad = 0)
+	armor = list(melee = 2, bullet = 2, laser = 12, energy = 4, bomb = 2, bio = 0, rad = 0)
 	siemens_coefficient = 0
 
 //Leg guards
@@ -192,7 +210,7 @@
 	name = "ablative leg guards"
 	desc = "A pair of armored leg pads with advanced shielding to protect against energy weapons. Looks like they might impair movement."
 	icon_state = "legguards_ablative"
-	armor = list(melee = 1, bullet = 1, laser = 4, energy = 2, bomb = 2, bio = 0, rad = 0)
+	armor = list(melee = 1, bullet = 1, laser = 10, energy = 2, bomb = 2, bio = 0, rad = 0)
 	siemens_coefficient = 0
 	slowdown = 1
 
