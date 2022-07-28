@@ -35,7 +35,7 @@
 	uniform = /obj/item/clothing/under/rank/medical
 	l_ear  = /obj/item/device/radio/headset/red_team/medicae
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/storage/sistersuit
+	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health
