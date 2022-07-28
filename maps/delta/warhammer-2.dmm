@@ -482,6 +482,13 @@
 	},
 /obj/effect/floor_decal/turf/barnew,
 /obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "bs" = (
@@ -986,6 +993,12 @@
 	access = list(333,211);
 	name = "monastary key"
 	},
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones/ten,
+/obj/item/stack/thrones/ten,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "cE" = (
@@ -1283,6 +1296,7 @@
 "dy" = (
 /obj/structure/pit/closed/grave,
 /obj/structure/gravemarker/random,
+/obj/item/stack/thrones,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/village)
 "dz" = (
@@ -1553,6 +1567,10 @@
 	},
 /obj/effect/floor_decal/turf/carpetn00,
 /obj/item/device/radio/headset/red_team,
+/obj/item/card/id/innkey3{
+	access = list(333,211);
+	name = "monastary key"
+	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "eb" = (
@@ -1582,12 +1600,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/bar)
-"ee" = (
-/obj/structure/sign/redcross{
-	pixel_x = 30
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "ef" = (
 /obj/effect/floor_decal/newcorner/white/diagonal,
 /obj/structure/torchwall{
@@ -2359,6 +2371,8 @@
 /area/cadiaoutpost/oa/gatehouse)
 "gp" = (
 /obj/structure/table/rack,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2557,19 +2571,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/western)
 "gR" = (
-/obj/structure/table/rack,
-/obj/item/clothing/accessory/legguards/ablative,
-/obj/item/clothing/accessory/legguards/ablative,
-/obj/item/clothing/accessory/legguards/ballistic,
-/obj/item/clothing/accessory/legguards/ballistic,
-/obj/item/clothing/accessory/armguards/ablative,
-/obj/item/clothing/accessory/armguards/ablative,
-/obj/item/clothing/accessory/armguards/ballistic,
-/obj/item/clothing/accessory/armguards/ballistic,
-/turf/simulated/floor/tiled{
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "ordos bracelet"
+	},
+/turf/simulated/floor/wood{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/tradefloor)
+/area/cadiaoutpost/oa/village)
 "gS" = (
 /obj/machinery/cooker/grill{
 	color = "grey"
@@ -4062,7 +4073,10 @@
 "kT" = (
 /obj/structure/closet/crate/bin,
 /obj/random/maintenance,
-/obj/item/stack/thrones,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -5215,7 +5229,6 @@
 /obj/structure/sink/puddle{
 	color = "grey"
 	},
-/obj/item/stack/thrones,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/service/inn)
 "nK" = (
@@ -6023,10 +6036,7 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/item/card/id/ring/disgracedmedicae{
-	desc = "An old ring signifying your position as a member of the Frateris Militia.";
-	name = "Frateris"
-	},
+/obj/random/loot/guardgear,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -7113,6 +7123,9 @@
 	color = "grey"
 	},
 /obj/random/loot,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -8503,7 +8516,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "Ln" = (
-/obj/item/stack/thrones,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -9314,6 +9328,14 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"Sm" = (
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "Sn" = (
 /obj/machinery/door/airlock/virology{
 	color = "grey";
@@ -24840,7 +24862,7 @@ Fd
 kb
 DO
 FR
-TH
+gR
 kb
 Ns
 Ns
@@ -43580,7 +43602,7 @@ fM
 Qo
 kf
 kf
-ee
+fM
 kf
 Qo
 fM
@@ -44121,7 +44143,7 @@ ku
 cP
 cV
 gp
-gR
+gp
 fA
 Qe
 Qe
@@ -44870,7 +44892,7 @@ mx
 mx
 oP
 nu
-Ln
+Sm
 mx
 mx
 rf

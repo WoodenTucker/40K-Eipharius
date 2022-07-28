@@ -1082,9 +1082,14 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "fl" = (
+/obj/machinery/optable,
+/obj/effect/floor_decal/floordetail/edgedrain,
+/obj/machinery/light,
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/iv_drip,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "fm" = (
 /turf/simulated/floor/trench,
@@ -2801,11 +2806,6 @@
 /obj/item/clothing/accessory/storage/webbing_large,
 /obj/item/clothing/accessory/storage/webbing_large,
 /obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "oa" = (
@@ -3885,14 +3885,6 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "ta" = (
@@ -4378,8 +4370,7 @@
 	},
 /obj/structure/table/rack/dark,
 /obj/item/shovel,
-/obj/item/shovel,
-/obj/item/shovel,
+/obj/item/stack/barbwire,
 /obj/item/stack/barbwire,
 /obj/item/stack/barbwire,
 /obj/item/stack/barbwire,
@@ -4580,11 +4571,15 @@
 	},
 /area/cadiaoutpost/oa/security)
 "vA" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/chapel{
+/obj/machinery/bodyscanner{
+	color = "grey";
 	dir = 4
 	},
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "vC" = (
 /obj/machinery/organ_printer/flesh/mapped,
@@ -4954,13 +4949,6 @@
 /obj/random/loot/randomitemcaves,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
-"xI" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/chapel{
-	dir = 8
-	},
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/service/chapel)
 "xO" = (
 /obj/structure/window_frame{
 	color = "grey";
@@ -5042,6 +5030,14 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/heavystubber,
 /obj/random/loot/heavystubber,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "yu" = (
@@ -5319,17 +5315,17 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "zC" = (
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -15
+/obj/structure/table/standard{
+	color = "grey"
 	},
-/obj/effect/floor_decal/spline/fancy{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
+/obj/item/storage/firstaid/surgery,
+/obj/item/FixOVein,
+/obj/effect/floor_decal/floordetail/edgedrain,
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/iv_drip,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "zI" = (
 /obj/structure/cable{
@@ -6021,11 +6017,10 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Dk" = (
 /obj/structure/table/rack/dark,
-/obj/random/accessory,
-/obj/random/accessory,
-/obj/random/accessory,
-/obj/random/accessory,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Dm" = (
@@ -6529,6 +6524,9 @@
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/newcorner/teal/diagonal,
+/obj/machinery/sleeper{
+	color = null
+	},
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "Fa" = (
@@ -6715,9 +6713,9 @@
 /area/cadiaoutpost/oa/supply/mining/eva)
 "FH" = (
 /obj/structure/table/rack/dark,
-/obj/item/clothing/accessory/armguards/ballistic,
-/obj/item/clothing/accessory/armguards/ballistic,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "FI" = (
@@ -6933,11 +6931,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"GG" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/chapel,
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/service/chapel)
 "GH" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/cult/talisman{
@@ -7345,15 +7338,15 @@
 	},
 /area/cadiaoutpost/oa/tradefloor)
 "Iu" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/smartfridge/chemistry{
+/obj/machinery/body_scanconsole{
 	color = "grey";
-	pixel_y = 32
+	dir = 4
 	},
-/obj/effect/floor_decal/chapel{
-	dir = 1
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
 	},
-/turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Iw" = (
 /obj/flamer_fire{
@@ -7433,14 +7426,6 @@
 /obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"IO" = (
-/obj/structure/table/rack/dark,
-/obj/item/clothing/accessory/legguards,
-/obj/item/clothing/accessory/legguards,
-/obj/item/clothing/accessory/legguards,
-/obj/effect/floor_decal/turf/checkers/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security)
 "IP" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark{
@@ -7916,11 +7901,11 @@
 "KR" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/guardhelmet,
-/obj/random/loot/guardhelmet,
-/obj/random/loot/guardhelmet,
-/obj/random/loot/guardhelmet,
-/obj/random/loot/guardhelmet,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "KU" = (
@@ -9968,10 +9953,12 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "UE" = (
-/obj/structure/table/steel,
-/obj/item/storage/firstaid/surgery,
+/obj/machinery/computer/operating,
 /obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "UG" = (
 /obj/structure/window/reinforced{
@@ -10572,11 +10559,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"XE" = (
-/obj/machinery/optable,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/service/chapel)
 "XF" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark{
@@ -10742,19 +10724,11 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Yv" = (
 /obj/structure/table/rack/dark,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
+/obj/item/storage/belt/warfare,
+/obj/item/storage/belt/warfare,
+/obj/item/storage/belt/warfare,
+/obj/item/storage/belt/warfare,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Yw" = (
@@ -27678,7 +27652,7 @@ PI
 PI
 PI
 Tn
-XE
+UE
 Of
 kD
 Of
@@ -28192,7 +28166,7 @@ PI
 PI
 PI
 Tn
-UE
+zC
 Of
 Of
 Of
@@ -28707,9 +28681,9 @@ PI
 PI
 Tn
 Iu
-xI
 Of
-XE
+Of
+fl
 Tn
 Bp
 tn
@@ -28964,7 +28938,7 @@ PI
 PI
 Tn
 vA
-GG
+Of
 Of
 zC
 Tn
@@ -33545,7 +33519,7 @@ PI
 PI
 eD
 Ez
-IO
+FH
 dj
 Dk
 Ez
@@ -52171,9 +52145,9 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
+PY
+PY
+PY
 PY
 PY
 PY
@@ -52428,7 +52402,7 @@ bf
 bf
 bf
 bf
-bf
+PY
 bf
 bf
 PY
@@ -52683,9 +52657,9 @@ PY
 bf
 bf
 bf
-bf
-bf
-bf
+PY
+PY
+PY
 bf
 bf
 bf
@@ -52940,7 +52914,7 @@ PY
 PY
 bf
 bf
-bf
+PY
 bf
 bf
 bf
@@ -53196,8 +53170,8 @@ bf
 bf
 PY
 PY
-bf
-bf
+PY
+PY
 bf
 bf
 bf
@@ -53408,7 +53382,7 @@ bf
 bf
 bf
 bf
-PY
+PI
 PY
 PY
 PY
@@ -53666,8 +53640,8 @@ bf
 bf
 bf
 bf
-PY
-PY
+PI
+PI
 PY
 bf
 bf
@@ -53688,7 +53662,7 @@ bf
 bf
 PY
 fZ
-bf
+PI
 bf
 bf
 bf
@@ -53923,7 +53897,7 @@ bf
 bf
 bf
 bf
-PY
+PI
 bf
 bf
 bf
@@ -53944,8 +53918,8 @@ PI
 bf
 bf
 bf
-PY
-bf
+PI
+PI
 bf
 bf
 bf
@@ -54180,7 +54154,7 @@ bf
 bf
 bf
 bf
-PY
+PI
 bf
 bf
 bf
@@ -54201,9 +54175,9 @@ PI
 bf
 bf
 bf
-PY
-PY
-bf
+PI
+PI
+PI
 bf
 bf
 bf
@@ -54437,7 +54411,7 @@ bf
 bf
 bf
 bf
-PY
+PI
 bf
 bf
 bf
@@ -54457,10 +54431,10 @@ PI
 PI
 bf
 bf
-PY
-PY
-PY
-bf
+PI
+PI
+PI
+PI
 bf
 bf
 bf
@@ -54694,7 +54668,7 @@ bf
 bf
 bf
 bf
-PY
+PI
 bf
 bf
 bf
@@ -54716,8 +54690,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -54974,8 +54948,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -55231,9 +55205,9 @@ PI
 PI
 PI
 PI
-PY
-PY
-PY
+PI
+PI
+PI
 PI
 PI
 PI
@@ -55489,8 +55463,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -55746,8 +55720,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -56003,8 +55977,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -56260,9 +56234,9 @@ PI
 PI
 PI
 PI
-PY
-PY
-PY
+PI
+PI
+PI
 PI
 PI
 PI
@@ -56518,8 +56492,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -56775,8 +56749,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -57032,8 +57006,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -57288,8 +57262,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -57545,7 +57519,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PI
 PI
 PI
@@ -57802,7 +57776,7 @@ PI
 PI
 PI
 PY
-PY
+PI
 PI
 PI
 PI
@@ -59105,7 +59079,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PY
 PY
 PI
@@ -59362,7 +59336,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PY
 PY
 PY
@@ -59619,8 +59593,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PY
 PY
 PI
@@ -59876,7 +59850,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PY
 PY
 PI
@@ -60132,8 +60106,8 @@ PY
 PY
 PY
 PY
-PY
-PY
+PI
+PI
 PY
 PY
 PI
@@ -60388,9 +60362,9 @@ PY
 PY
 PY
 PY
-PY
-PY
-PY
+PI
+PI
+PI
 PY
 PI
 PI
