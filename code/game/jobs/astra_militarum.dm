@@ -290,7 +290,7 @@
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	alt_titles = list(
-		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/
+		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/lieutenant
 	)
 	/*
 	alt_titles = list(
