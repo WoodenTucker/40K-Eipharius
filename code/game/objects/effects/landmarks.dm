@@ -200,23 +200,20 @@ Template:
 
 /obj/random/loot/guardgear
 	name = "Guard Gear"
-	desc = "This is a loot spawner that spawns combat accessories."
+	desc = "This is a loot spawner that spawns essential imperial guardsmen gear."
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
 
 /obj/random/loot/guardgear/spawn_choices()
-	return list(/obj/item/clothing/accessory/holster/waist = 2,
-				/obj/item/clothing/accessory/holster/hip = 2,
-				/obj/item/storage/belt/warfare = 1,
-				/obj/item/clothing/accessory/storage/torso/armor = 2,
-				/obj/item/clothing/accessory/storage/webbing = 8,
-				/obj/item/clothing/accessory/legguards/ballistic = 6,
-				/obj/item/clothing/accessory/legguards/ablative = 4,
-				/obj/item/clothing/accessory/armguards/ablative = 4,
-				/obj/item/clothing/accessory/armguards/ballistic = 6,
-				/obj/item/clothing/accessory/armguards/riot = 6,
-				/obj/item/clothing/glasses/cadiangoggles/elite = 1,
-				/obj/item/clothing/accessory/legguards/riot = 6)
+	return list(/obj/item/storage/belt/medical/full = 1,
+	            /obj/item/clothing/accessory/holster/waist = 1,
+				/obj/item/storage/box/ifak = 5,
+				/obj/item/clothing/accessory/holster/hip = 1,
+				/obj/item/clothing/accessory/storage/webbing = 3,
+				/obj/item/clothing/accessory/legguards = 2,
+				/obj/item/clothing/accessory/armguards/ballistic = 3,
+				/obj/item/clothing/accessory/armguards/riot = 4,
+				/obj/item/clothing/accessory/legguards/riot = 3)
 
 /obj/random/loot/guardarmor
 	name = "Special Guard Armor"
@@ -225,7 +222,7 @@ Template:
 	icon_state = "horribletie"
 
 /obj/random/loot/guardarmor/spawn_choices()
-	return list(/obj/item/clothing/suit/armor/flak/heavy = 2,
+	return list(/obj/item/clothing/suit/armor/flak/heavy = 7,
 				/obj/item/clothing/suit/armor/guardsman/carapace =1,
 				/obj/item/clothing/suit/armor/krieger/grenadier = 1)
 

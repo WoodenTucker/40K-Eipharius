@@ -48,8 +48,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 6
+	spawn_positions = 6
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -57,7 +57,6 @@
 	shotgun_skill = 8
 	lmg_skill = 7
 	smg_skill = 8
-	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/guardsman
 	alt_titles = list(
 		"Cadian Guardsman" = /decl/hierarchy/outfit/job/guardsman,
@@ -104,9 +103,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Conscript"
-	total_positions = 4
-	spawn_positions = 4
-	open_when_dead = FALSE
+	total_positions = 7
+	spawn_positions = 7
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
 	can_be_in_squad = FALSE	
@@ -136,7 +134,6 @@
 	title = "Imperial Guard Sharpshooter"
 	total_positions = 1
 	spawn_positions = 1
-	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -152,7 +149,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
+		H.add_stats(rand(14,16), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
 		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -180,7 +177,6 @@
 	supervisors = "The Commissar and Astartes Envoy."
 	total_positions = 2
 	spawn_positions = 2
-	open_when_dead = FALSE
 	selection_color = "#33813A"
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
@@ -243,7 +239,6 @@
 	can_be_in_squad = TRUE
 	total_positions = 1
 	spawn_positions = 1
-	open_when_dead = TRUE
 	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#967096"
 	economic_modifier = 4
@@ -282,22 +277,17 @@
 /datum/job/ig/commissar
 	title = "Commissar"
 	supervisors = "the Rogue Trader and his Astartes Bodyguard."
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#004e07"
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
 	alt_titles = list(
-		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/
-	)
-	/*
-	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
-	*/
 	can_be_in_squad = FALSE
 	auto_rifle_skill = 9 //commissars are more trained than almost any guardsman
 	semi_rifle_skill = 9
@@ -314,7 +304,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("[current_name]")
+		H.fully_replace_character_name("Commissar [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
@@ -342,7 +332,7 @@
 // Guardsman
 
 /decl/hierarchy/outfit/job/whiteshield
-	name = OUTFIT_JOB_NAME("Imperial Guard Conscript")
+	name = OUTFIT_JOB_NAME("Cadian Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -564,7 +554,7 @@
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
 	belt = /obj/item/melee/mercycs
-	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/catachan
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite

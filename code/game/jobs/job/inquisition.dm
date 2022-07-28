@@ -14,8 +14,8 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
-		"Acolyte of Ordos Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus,
-		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion
+		"Acolyte" = /decl/hierarchy/outfit/job/acolyte,
+		"Acolyte of Ordos Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus
 		)
 	announced = FALSE
 	auto_rifle_skill = 7

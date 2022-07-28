@@ -83,7 +83,7 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 33
+	force = 30
 	sharp = 1
 	edge = 1
 	block_chance = 30
@@ -127,7 +127,7 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "sabre"
 	item_state = "sabre"
-	force = 35
+	force = 18
 
 /obj/item/material/sword/choppa
 	name = "choppa"
@@ -152,10 +152,11 @@
 	item_state = "slanarm"
 	attack_verb = list("stabbed", "impales", "rends", "tears", "flays", "rips")
 	force = 5
+	sharpness = 35
 	block_chance = 35
 	hitsound = 'sound/effects/slanattack.ogg'
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|HEAD
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	sharp = 1
+	edge = 1
 	w_class = ITEM_SIZE_HUGE
 	grab_sound = 'sound/effects/slanarm.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'

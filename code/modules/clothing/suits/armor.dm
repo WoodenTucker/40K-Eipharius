@@ -380,19 +380,6 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1.5
 
-/obj/item/clothing/suit/armor/explorer
-	name = "Explorer Armor"
-	desc = "Heavy explorer armor designed for long expeditions into the frontier."
-	icon_state = "stealth_rig" // mob/suit.dmi
-	item_state = "stealth_rig"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 48, bullet = 38, laser = 28, energy = 20, bomb = 30, bio = 10, rad = 20)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/explorer/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.6
-
 /obj/item/clothing/suit/armor/guardsman/mercenary
 	name = "Mercenary Flak Armour - Medium"
 	desc = "An altered fabrication of Imperial Pattern Flak Armor - this particular version is commonly used by mercenaries guilds in service to the renegade houses of the frontier."
@@ -402,19 +389,6 @@ obj/item/clothing/suit/armor
 	armor = list(melee = 38, bullet = 48, laser = 48, energy = 20, bomb = 30, bio = 10, rad = 20)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/suit/armor/guardsman/mercenary/carapace
-	name = "Mercenary Carapace Armour - Medium"
-	desc = "An altered fabrication of Imperial Pattern Flak Armor - this particular version is commonly used by mercenaries guilds in service to the renegade houses of the frontier."
-	icon_state = "explorer" // mob/suit.dmi
-	item_state = "explorer"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 48, bullet = 58, laser = 58, energy = 20, bomb = 50, bio = 10, rad = 20)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/guardsman/mercenary/carapace/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/aascout
 	name = "Adeptus Astartes Scout's Carapace"
@@ -432,7 +406,7 @@ obj/item/clothing/suit/armor
 	name = "bounty hunter's armor"
 	icon_state = "cadianarmor"
 	item_state = "cadianarmor"
-	armor = list(melee = 35, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	armor = list(melee = 25, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -440,7 +414,7 @@ obj/item/clothing/suit/armor
 	name = "bounty hunter's armor"
 	icon_state = "valhalla"
 	item_state = "valhalla"
-	armor = list(melee = 35, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	armor = list(melee = 25, bullet = 30, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -476,9 +450,6 @@ obj/item/clothing/suit/armor
 	icon_state = "fharmor"
 	item_state = "fharmor"
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)
-/obj/item/clothing/suit/armor/guardsman/carapace/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.6
 
 /obj/item/clothing/suit/armor/flak/heavy
 	name = "Cadian Pattern Flak Armour - Heavy"
@@ -492,7 +463,7 @@ obj/item/clothing/suit/armor
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/flak/heavy/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.7
+	slowdown_per_slot[slot_wear_suit] = 1.0
 
 /obj/item/clothing/suit/armor/medicae
 	name = "Cadian Pattern Medicae Flak Armour - Light"
@@ -578,31 +549,6 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
 
-/obj/item/clothing/suit/armor/lieutenant
-	name = "Cadian Lieutenant's Flak Armour"
-	desc = "The well-worn armor of an Cadian Regiment Lieutenant, this one is padded with Caraspace plates, giving it better protection than average Guardsmen."
-	icon_state = "fharmor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 48, bullet = 58, laser = 48, energy = 28, bomb = 48, bio = 20, rad = 35)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/lieutenant/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
-
-/obj/item/clothing/suit/armor/scion
-	name = "Tempestus Scion's Carapace Armour"
-	desc = "The black carapace body armor of the Tempestus Scion, this one has scorch marks and nicks covering it like a mural of carnage."
-	icon_state = "storm"
-	item_state = "storm"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 52, bullet = 62, laser = 54, energy = 28, bomb = 68, bio = 20, rad = 35)
-	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
-	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/scion/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.3
-
 /obj/item/clothing/suit/armor/catachansgt
 	name = "Catachan Sergeant's Flak Vest"
 	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. The Imperial Aquila is engraved with the word 'Devil' on this one."
@@ -666,7 +612,7 @@ obj/item/clothing/suit/armor
 // INQUISITION
 
 /obj/item/clothing/suit/armor/agent/caraspace
-	name = "Carapace Armour"
+	name = "Acolyte's Carapace Armour"
 	desc = "The formidable, brillantly made Carapace Armour for the Inquistorial Agent, On it, bears the holy symbol of the Inquisition, The Rosette."
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
@@ -677,7 +623,7 @@ obj/item/clothing/suit/armor
 
 
 /obj/item/clothing/suit/armor/agent/coat
-	name = "Carapace Coat"
+	name = "Acolyte's Carapace Coat"
 	desc = "The formidable, brillantly made Caraspace Armour for the Inquistorial Agent, This one bears many holy seals along with it Rosette, to ward off the corruption of Chaos."
 	icon_state = "acolytecoat"
 	item_state = "acolytecoat"
@@ -687,7 +633,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/storage/hooded/inquisitor
-	name = "Mechanicus Power Armour"
+	name = "Throne Agent's Ignatus Pattern Power Armour"
 	desc = "The Inquisitor's holy armour, forged by the Tech-priest of Mars for his use in his path of destruction toward enemies of our Emperor, Engraved the Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
@@ -699,10 +645,10 @@ obj/item/clothing/suit/armor
 	hoodtype = /obj/item/clothing/head/inqhood
 /obj/item/clothing/suit/storage/hooded/inquisitor/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/ordohereticus
-	name = "Armored Coat"
+	name = "Throne Agent's Ordo Hereticus Holy Coat"
 	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
 	icon_state = "hereticuscoat"
 	item_state = "hereticuscoat"

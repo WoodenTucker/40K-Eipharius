@@ -186,7 +186,7 @@
 	icon = 'icons/obj/storage.dmi'
 	icon_state = "miningcar"
 	density = 1
-	icon_opened = "miningcar"
+	icon_opened = "miningcaropen"
 	icon_closed = "miningcar"
 
 // Flags.

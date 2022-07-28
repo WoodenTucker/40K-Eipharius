@@ -239,7 +239,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 1.7
 	fire_delay = 3
-	accuracy = -1
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -257,10 +257,10 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/lasgun/rare
 	name = "Custom Kantrael M36 Lasgun"
 	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has modified heatsink and rearranged crystal assembly."
+	armor_penetration = 10
 	force = 15
 	one_hand_penalty = 1.9
-	charge_cost = 75
-	fire_delay = 2.5
+	charge_cost = 65
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -278,7 +278,7 @@ obj/item/gun/energy/retro
 	force = 15
 	one_hand_penalty = 2
 	fire_delay = 4
-	accuracy = -1
+	accuracy = 0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
@@ -301,7 +301,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 18
 	one_hand_penalty = 0.7
-	accuracy = -1
+	accuracy = -0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -338,7 +338,7 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
@@ -367,7 +367,7 @@ obj/item/gun/energy/retro
 	force = 22
 	armor_penetration = 8
 	one_hand_penalty = 1.5
-	accuracy = 0
+	accuracy = -0.1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -378,11 +378,11 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		list(mode_name="overcharge",       burst=1, fire_delay=2.75,    move_delay=1, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
 		)
-
-/obj/item/gun/energy/las/hotshot
+	
+/obj/item/gun/energy/las/lasgun/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
 	icon_state = "lascar"
@@ -390,20 +390,21 @@ obj/item/gun/energy/retro
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 22
+	armor_penetration = 10
 	one_hand_penalty = 1.8
-	accuracy = 0
+	accuracy = -0.1
 	self_recharge = 1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
-	charge_cost = 150
+	charge_cost = 200
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", burst=1, fire_delay=2.5, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.8),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		)
 
 
@@ -415,7 +416,7 @@ obj/item/gun/energy/retro
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = -1
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -575,7 +576,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = -1
+	accuracy = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
