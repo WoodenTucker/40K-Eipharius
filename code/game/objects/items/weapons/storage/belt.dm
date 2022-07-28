@@ -253,19 +253,12 @@
 
 /obj/item/storage/belt/warfare
 	name = "ammo belt"
-	desc = "Great for holding ammo! This one starts with smg ammo."
+	desc = "Great for holding ammo!"
 	icon_state = "warfare_belt"
 	item_state = "warfare_belt"
 	can_hold = list(
 		/obj/item/ammo_magazine,
 		)
-
-	New()
-		..()
-		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
-		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
-		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
-		new /obj/item/ammo_magazine/mc9mmt/machinepistol(src)
 
 /obj/item/storage/belt/armageddon
 	name = "ammo belt"
