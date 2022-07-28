@@ -85,7 +85,7 @@
 	icon_state = "thermoncle"
 	item_state = "thermoncle"
 	action_button_name = "Toggle Goggles"
-	darkness_view = 7
+	darkness_view = 20
 	toggleable = 1
 	electric = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -97,7 +97,7 @@
 	desc = "The goggles do nothing!"
 	hud = /obj/item/clothing/glasses/hud/health
 	action_button_name = "Toggle Goggles"
-	darkness_view = 7
+	darkness_view = 20
 	toggleable = 1
 	electric = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -132,7 +132,7 @@
 	icon_state = "night"
 	item_state = "glasses"
 	origin_tech = list(TECH_MAGNET = 2)
-	darkness_view = 7
+	darkness_view = 20
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -145,7 +145,7 @@
 	icon_state = "blacksun"
 	item_state = "blacksun"
 	origin_tech = list(TECH_MAGNET = 2)
-	darkness_view = 7
+	darkness_view = 50
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -557,7 +557,7 @@
 /obj/item/clothing/glasses/astartes/visor
 	name = "Mark VII Visor"
 	desc = "The support system of Astartes helmet."
-	darkness_view = 20 //in case we got a snaiper
+	darkness_view = 50 //in case we got a snaiper
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	flash_protection = FLASH_PROTECTION_MAJOR
 	icon_state = "thermal"
@@ -571,7 +571,7 @@
 	name = "Mark VII Apothecary Visor"
 	desc = "The support system of Astartes helmet. This one has intergrated medical scanner."
 	hud = /obj/item/clothing/glasses/hud/health
-	darkness_view = 20
+	darkness_view = 50
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	flash_protection = FLASH_PROTECTION_MAJOR
 	icon_state = "thermal"

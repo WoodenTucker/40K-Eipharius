@@ -337,3 +337,24 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = null
+
+/decl/hierarchy/outfit/job/ig/lieutenant
+	name = OUTFIT_JOB_NAME("Cadian Lieutenant")
+	uniform = /obj/item/clothing/under/cadian_uniform
+	suit = /obj/item/clothing/suit/armor/lieutenant
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/gun/projectile/bolter_pistol
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	l_ear = /obj/item/device/radio/headset/red_team
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1
+	)

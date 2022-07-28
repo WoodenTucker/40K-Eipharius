@@ -241,8 +241,6 @@
 /obj/item/device/radio/headset/inquisition
 	name = "vox headset"
 	desc = "The headset of religious intolorence."
-	icon_state = "rob_headset"
-	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_inquisition
 
 /obj/item/device/radio/headset/specops
