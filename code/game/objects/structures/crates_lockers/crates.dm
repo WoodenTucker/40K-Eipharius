@@ -2,9 +2,9 @@ obj/structure/closet/crate
 	name = "crate"
 	desc = "A rectangular steel crate."
 	icon = 'icons/obj/storage.dmi'
-	icon_state = "crate"
-	icon_opened = "crateopen"
-	icon_closed = "crate"
+	icon_state = "cgold"
+	icon_opened = "cgoldopen"
+	icon_closed = "cgold"
 	open_sound = 'sound/effects/locker_open.ogg'
 	close_sound = 'sound/effects/locker_close.ogg'
 	atom_flags = ATOM_FLAG_CLIMBABLE
@@ -69,9 +69,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/secure
 	desc = "A secure crate."
 	name = "Secure crate"
-	icon_state = "securecrate"
-	icon_opened = "securecrateopen"
-	icon_closed = "securecrate"
+	icon_state = "dgold"
+	icon_opened = "dgoldeopen"
+	icon_closed = "dgold"
 	var/redlight = "securecrater"
 	var/greenlight = "securecrateg"
 	var/sparks = "securecratesparks"
@@ -125,9 +125,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/medical
 	name = "medical crate"
 	desc = "A medical crate."
-	icon_state = "medicalcrate"
-	icon_opened = "medicalcrateopen"
-	icon_closed = "medicalcrate"
+	icon_state = "ecrate"
+	icon_opened = "ecrateopen"
+	icon_closed = "ecrate"
 
 /obj/structure/closet/crate/rcd
 	name = "\improper RCD crate"
@@ -256,9 +256,9 @@ obj/structure/closet/crate
 	name = "large crate"
 	desc = "A hefty metal crate."
 	icon = 'icons/obj/storage.dmi'
-	icon_state = "largemetal"
-	icon_opened = "largemetalopen"
-	icon_closed = "largemetal"
+	icon_state = "ecrate"
+	icon_opened = "ecrateopen"
+	icon_closed = "ecrate"
 
 	storage_capacity = 2 * MOB_LARGE
 	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
@@ -272,14 +272,22 @@ obj/structure/closet/crate
 	name = "large crate"
 	desc = "A hefty metal crate with an electronic locking system."
 	icon = 'icons/obj/storage.dmi'
-	icon_state = "largemetal"
-	icon_opened = "largemetalopen"
-	icon_closed = "largemetal"
+	icon_state = "ancientclosed"
+	icon_opened = "ancientopen"
+	icon_closed = "ancientclosed"
 	redlight = "largemetalr"
 	greenlight = "largemetalg"
 
 	storage_capacity = 2 * MOB_LARGE
 	storage_types = CLOSET_STORAGE_ITEMS|CLOSET_STORAGE_STRUCTURES
+
+/obj/structure/closet/crate/secure/large/cargo
+	name = "cargo crate"
+	desc = "A hefty metal crate with an electronic locking system."
+	icon = 'icons/obj/storage.dmi'
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/secure/large/phoron
 	icon_state = "phoron_crate_large"
@@ -289,16 +297,16 @@ obj/structure/closet/crate
 //fluff variant
 /obj/structure/closet/crate/secure/large/reinforced
 	desc = "A hefty, reinforced metal crate with an electronic locking system."
-	icon_state = "largermetal"
-	icon_opened = "largermetalopen"
-	icon_closed = "largermetal"
+	icon_state = "ecrate"
+	icon_opened = "ecrateopen"
+	icon_closed = "ecrate"
 
 /obj/structure/closet/crate/hydroponics
 	name = "hydroponics crate"
 	desc = "All you need to destroy those pesky weeds and pests."
-	icon_state = "hydrocrate"
-	icon_opened = "hydrocrateopen"
-	icon_closed = "hydrocrate"
+	icon_state = "ecrate"
+	icon_opened = "ecrateopen"
+	icon_closed = "ecrate"
 
 /obj/structure/closet/crate/hydroponics/prespawned/WillContain()
 	return list(
@@ -348,22 +356,12 @@ obj/structure/closet/crate
 
 // NEED TO MAKE PILGRIM AND NON GUARD CRATES. PRIEST / MATERIAL - INCLUDE OTHER CRATES ABOVE/BELOW IN CARGO
 
-/obj/structure/closet/crate/carapace
-	name = "carapace armor"
-	desc = "A hefty, reinforced metal crate with an electronic locking system."
-	icon_state = "largermetal"
-	icon_opened = "largermetalopen"
-	icon_closed = "largermetal"
-
-/obj/structure/closet/crate/carapace/New()
-	new /obj/item/clothing/suit/armor/guardsman/carapace(src)
-
 /obj/structure/closet/crate/krieg
 	name = "deaths krieg equipment"
 	desc = "A hefty, reinforced metal crate with an electronic locking system."
-	icon_state = "largermetal"
-	icon_opened = "largermetalopen"
-	icon_closed = "largermetal"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/krieg/New()
 	new /obj/item/clothing/head/helmet/krieghelmet(src)
@@ -382,9 +380,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/valhallan
 	name = "valhallan equipment"
 	desc = "A hefty, reinforced metal crate with an electronic locking system."
-	icon_state = "largermetal"
-	icon_opened = "largermetalopen"
-	icon_closed = "largermetal"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/valhallan/New()
 	new /obj/item/clothing/head/valushanka(src)
@@ -401,9 +399,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/operations
 	name = "extended operations crate"
 	desc = "A hefty, reinforced metal crate with an electronic locking system."
-	icon_state = "largermetal"
-	icon_opened = "largermetalopen"
-	icon_closed = "largermetal"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/operations/New()
 	new /obj/item/clothing/accessory/legguards(src)
@@ -429,9 +427,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/miner
 	name = "mining equipment crate"
 	desc = "A hefty, reinforced metal crate with an electronic locking system."
-	icon_state = "largermetal"
-	icon_opened = "largermetalopen"
-	icon_closed = "largermetal"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/miner/New()
 	new /obj/item/clothing/suit/armor/militia(src)
@@ -456,9 +454,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/ateopoine
 	name = "ateopoine crate"
 	desc = "A crate with ateopoine in it!"
-	icon_state = "medicalcrate"
-	icon_opened = "medicalcrateopen"
-	icon_closed = "medicalcrate"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/ateopoine/New()
 	new /obj/item/reagent_containers/hypospray/autoinjector/revive(src)
@@ -473,9 +471,9 @@ obj/structure/closet/crate
 /obj/structure/closet/crate/meat
 	name = "meat crate"
 	desc = "A crate with meat in it!"
-	icon_state = "freezer"
-	icon_opened = "freezeropen"
-	icon_closed = "freezer"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
 
 /obj/structure/closet/crate/meat/New()
 	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
