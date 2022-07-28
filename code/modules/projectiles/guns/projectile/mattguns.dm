@@ -17,8 +17,8 @@
 	far_fire_sound = "sniper_fire"
 	move_delay= 2
 	one_hand_penalty = 3
-	accuracy = -0.1
-	fire_delay= 4.5
+	accuracy = 0
+	fire_delay = 3
 	force = 15
 	var/gping = TRUE
 
@@ -82,7 +82,7 @@
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
-	accuracy = -0.075
+	accuracy = 0
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
 		qdel(src)
@@ -116,7 +116,7 @@
 	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/lp338
 	one_hand_penalty = 50
-	accuracy = -1
+	accuracy = 0
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
@@ -174,11 +174,10 @@
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 	name = "\improper Triangong 4-46"
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one is made of quality materials and has been laboured over extensively by expert hands."
-	move_delay= 1.8
+	move_delay = 1
 	one_hand_penalty = 3
-	accuracy = -0
-	fire_delay = 5
-	armor_penetration = 10
+	accuracy = 0
+	fire_delay = 4
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
 	name = "\improper Stub Rifle"
@@ -206,7 +205,7 @@
 	forwardsound = 'sound/weapons/guns/interact/la_forward.ogg'
 	empty_icon = "leverchester-e"
 	fire_delay = 4
-	move_delay= 2.5
+	move_delay = 2.5
 	gping = FALSE
 
 //Paryying.
@@ -275,7 +274,7 @@
 	str_requirement = 8
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	empty_icon = "winchester-e"
-	move_delay= 2
+	move_delay = 2
 	one_hand_penalty = 4
 	accuracy = -0.2
 	fire_delay= 3
@@ -507,7 +506,7 @@
 	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=3.5,  move_delay=0, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.3, 0.6), automatic = 2)
+		list(mode_name="automatic",   	 burst=1, fire_delay=3.5,  move_delay=0, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 2)
 		)
 
 /obj/item/gun/projectile/automatic/mg08
@@ -580,7 +579,7 @@
 	can_jam = FALSE
 	one_hand_penalty=7
 	burst_accuracy=list(0,-1,-1)
-	dispersion=list(0.0, 3, 5)
+	dispersion=list(0.0, 0.1, 0.1)
 	automatic = 2
 	firemodes = list()
 	gun_type = GUN_LMG
@@ -596,7 +595,7 @@
 	w_class = ITEM_SIZE_HUGE
 	move_delay= 1.5
 	one_hand_penalty = 4
-	accuracy = -0.3
+	accuracy = -2
 	fire_delay = 1.7
 	automatic = 1
 
@@ -639,8 +638,6 @@
 	icon_state = "autorifle"
 	item_state = "autorifle"
 	caliber = "a556"
-	max_shells = 35
-	ammo_type = /obj/item/ammo_casing/a556
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	unloaded_icon = "auto_grim-e"
@@ -648,12 +645,12 @@
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 	move_delay= 2
 	one_hand_penalty = 4
-	accuracy = -0.2
+	accuracy = -1
 	fire_delay = 1.6
 	automatic = 1
 
-	magazine_type = /obj/item/ammo_magazine/autogrim
-	allowed_magazines = /obj/item/ammo_magazine/autogrim
+	magazine_type = /obj/item/ammo_magazine/mc9mmt/machinepistol
+	allowed_magazines = /obj/item/ammo_magazine/mc9mmt/machinepistol
 
 	gun_type = GUN_SMG
 
@@ -763,7 +760,7 @@
 	load_method = MAGAZINE
 	move_delay= 1
 	one_hand_penalty = 1
-	accuracy = 0
+	accuracy = -2
 	fire_delay = 1.7
 	force = 8
 
@@ -784,9 +781,8 @@
 	desc = "A rare slug pistol of excellent quality and design."
 	move_delay = 1
 	one_hand_penalty = 0.7
-	accuracy = -0.1
-	fire_delay = 1.5
-	armor_penetration = 10
+	accuracy = -1
+	fire_delay = 1.2
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "Reckoning magazine (.45)"
@@ -832,7 +828,7 @@
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
-	accuracy = -1
+	accuracy = -2
 	fire_delay = 1.6
 
 /obj/item/gun/projectile/automatic/stubber/villiers
@@ -840,7 +836,7 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
-	accuracy = 0
+	accuracy = -1
 	fire_delay = 1.8
 	automatic = 0.8
 	armor_penetration = 5 //this is melee
@@ -867,6 +863,7 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
+	wielded_item_state = "autoshotty"
 	fire_delay = 2
 	burst = 1
 	move_delay = 5
@@ -889,6 +886,7 @@
 	icon_state = "ravenbolter"
 	loaded_icon = "ravenbolter-30"
 	unloaded_icon = "ravenbolter-e"
+	wielded_item_state = "autoshotty"
 
 /obj/item/gun/projectile/bolter/ravenbolter/update_icon()
 	..()
@@ -903,6 +901,7 @@
 	icon_state = "sallybolter"
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
+	wielded_item_state = "autoshotty"
 
 /obj/item/gun/projectile/bolter/sally/update_icon()
 	..()
@@ -917,6 +916,7 @@
 	icon_state = "bangbolter"
 	loaded_icon = "bangbolter-30"
 	unloaded_icon = "bangbolter-e"
+	wielded_item_state = "autoshotty"
 
 /obj/item/gun/projectile/bolter/bang/update_icon()
 	..()
@@ -947,13 +947,14 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
+	wielded_item_state = "autoshotty"
 	fire_delay = 2
 	burst = 1
 	move_delay = 3
 	automatic = 1
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = -0.5
+	accuracy = -1
 
 /obj/item/gun/projectile/lockebolter/update_icon()
 	..()
@@ -987,6 +988,7 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "sisterbolter-30"
 	unloaded_icon = "sisterbolter-30-e"
+	wielded_item_state = "autoshotty"
 	fire_delay = 1.8
 	burst = 1
 	move_delay = 3
@@ -1019,7 +1021,7 @@
 	fire_delay = 6
 	move_delay= 2
 	one_hand_penalty = 6
-	accuracy = -0.1
+	accuracy = -1
 	force = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
@@ -1047,7 +1049,7 @@
 	fire_delay = 5
 	move_delay= 2
 	one_hand_penalty = 7
-	accuracy = -0.2
+	accuracy = -1
 	force = 20
 	gping = FALSE
 
@@ -1069,19 +1071,20 @@
 	icon_state = "shoota"
 	item_state = "shoota"
 	w_class = ITEM_SIZE_LARGE
-	force = 40
+	force = 30
 	max_shells = 30
 	caliber = ".75"
 	can_jam = TRUE	
 	move_delay= 5
-	one_hand_penalty = 10
-	accuracy = -6
+	one_hand_penalty = 4
+	accuracy = -7
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
 	gun_type = GUN_AUTOMATIC
-	automatic = 1
+	fire_delay = 2
+	automatic = 0.8
 	firemodes = list()
 
 //Eldar

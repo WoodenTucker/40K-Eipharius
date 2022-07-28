@@ -8,7 +8,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	accuracy = -2
-	fire_delay= 4.1
+	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
@@ -100,8 +100,8 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = -1.2 //not the best craftsmanship
-	fire_delay= 4.3
+	accuracy = -1 //not the best craftsmanship
+	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
@@ -120,7 +120,7 @@
 	max_shells = 6
 	force = 20
 	accuracy = -1
-	fire_delay= 4.5
+	fire_delay= 2.8
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
@@ -138,9 +138,8 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 10
-	accuracy = 0 
-	fire_delay= 4.5
-	armor_penetration = 5
+	accuracy = 0
+	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
