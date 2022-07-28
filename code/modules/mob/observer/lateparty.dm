@@ -5,7 +5,7 @@
 	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
 
-	var/partydelay = 25000 //in deciseconds (40 min rn or 18000 deciseconds)
+	var/partydelay = 18000 //in deciseconds (30 min rn or 18000 deciseconds)
 
 	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
 		to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:40!")
@@ -53,6 +53,24 @@
 		if(12)
 			src.say("I'm joining the late party 12/12 deployed! All slots are now filled!")
 			GLOB.deployed++ //ensures that only 1 party can be sent
+		if(13)
+			src.say("I'm joining the late party 13/20 deployed! Admemes have opened another party!")
+		if(14)
+			src.say("I'm joining the late party 14/20 deployed!")
+		if(15)
+			src.say("I'm joining the late party 15/20 deployed!")
+		if(16)
+			src.say("I'm joining the late party 16/20 deployed!")
+		if(17)
+			src.say("I'm joining the late party 17/20 deployed!")
+		if(18)
+			src.say("I'm joining the late party 18/20 deployed!")
+		if(19)
+			src.say("I'm joining the late party 19/20 deployed!")
+		if(20)
+			src.say("I'm joining the late party 20/20 deployed! All slots are now filled!")
+			GLOB.deployed++ //ensures that only 1 party can be sent
+
 
 
 	var/partyteam = input("Spawn as late party", "Randomly selected party!") as anything in GLOB.latepartyoptions //automagically puts them into whatever the pick proc chooses
