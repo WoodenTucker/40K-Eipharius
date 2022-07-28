@@ -1082,9 +1082,14 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "fl" = (
+/obj/machinery/optable,
+/obj/effect/floor_decal/floordetail/edgedrain,
+/obj/machinery/light,
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/iv_drip,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "fm" = (
 /turf/simulated/floor/trench,
@@ -4566,11 +4571,15 @@
 	},
 /area/cadiaoutpost/oa/security)
 "vA" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/chapel{
+/obj/machinery/bodyscanner{
+	color = "grey";
 	dir = 4
 	},
-/turf/simulated/floor/stone/chapel,
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "vC" = (
 /obj/machinery/organ_printer/flesh/mapped,
@@ -4940,17 +4949,6 @@
 /obj/random/loot/randomitemcaves,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
-"xI" = (
-/obj/machinery/body_scanconsole{
-	color = "grey";
-	dir = 4
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/chapel)
 "xO" = (
 /obj/structure/window_frame{
 	color = "grey";
@@ -5317,17 +5315,17 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "zC" = (
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -15
+/obj/structure/table/standard{
+	color = "grey"
 	},
-/obj/effect/floor_decal/spline/fancy{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
+/obj/item/storage/firstaid/surgery,
+/obj/item/FixOVein,
+/obj/effect/floor_decal/floordetail/edgedrain,
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/iv_drip,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "zI" = (
 /obj/structure/cable{
@@ -6526,6 +6524,9 @@
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/newcorner/teal/diagonal,
+/obj/machinery/sleeper{
+	color = null
+	},
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "Fa" = (
@@ -6930,17 +6931,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"GG" = (
-/obj/machinery/bodyscanner{
-	color = "grey";
-	dir = 4
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/chapel)
 "GH" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/cult/talisman{
@@ -7348,15 +7338,15 @@
 	},
 /area/cadiaoutpost/oa/tradefloor)
 "Iu" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/smartfridge/chemistry{
+/obj/machinery/body_scanconsole{
 	color = "grey";
-	pixel_y = 32
+	dir = 4
 	},
-/obj/effect/floor_decal/chapel{
-	dir = 1
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
 	},
-/turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Iw" = (
 /obj/flamer_fire{
@@ -9963,10 +9953,12 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "UE" = (
-/obj/structure/table/steel,
-/obj/item/storage/firstaid/surgery,
+/obj/machinery/computer/operating,
 /obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "UG" = (
 /obj/structure/window/reinforced{
@@ -10567,11 +10559,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"XE" = (
-/obj/machinery/optable,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/service/chapel)
 "XF" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark{
@@ -27665,7 +27652,7 @@ PI
 PI
 PI
 Tn
-XE
+UE
 Of
 kD
 Of
@@ -28179,7 +28166,7 @@ PI
 PI
 PI
 Tn
-UE
+zC
 Of
 Of
 Of
@@ -28694,9 +28681,9 @@ PI
 PI
 Tn
 Iu
-xI
 Of
-XE
+Of
+fl
 Tn
 Bp
 tn
@@ -28951,7 +28938,7 @@ PI
 PI
 Tn
 vA
-GG
+Of
 Of
 zC
 Tn
