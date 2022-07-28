@@ -48,8 +48,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 7
-	spawn_positions = 7
+	total_positions = 8
+	spawn_positions = 8
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -241,8 +241,8 @@
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = TRUE
 	supervisors = "the Sister Hospitaller and the Commissar"
 	selection_color = "#967096"
