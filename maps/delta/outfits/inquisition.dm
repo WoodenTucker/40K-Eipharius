@@ -23,7 +23,6 @@
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
-	/obj/item/gun/energy/las/lasgun/hotshot
 	)
 
 	pda_slot = null
@@ -32,6 +31,29 @@
 /decl/hierarchy/outfit/job/acolyte/malleus
 	name = OUTFIT_JOB_NAME("Ordo Malleus Acolyte")
 	suit = /obj/item/clothing/suit/armor/agent/coat
+
+/decl/hierarchy/outfit/job/scion
+	name = OUTFIT_JOB_NAME("Tempestus Scion")
+	uniform = /obj/item/clothing/under/rank/principalagent
+	suit = /obj/item/clothing/suit/armor/scion
+	back = /obj/item/storage/backpack/satchel/warfare
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/scion
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
+	id = /obj/item/card/id/inquisition/principal_agent
+	l_ear = /obj/item/device/radio/headset/inquisition
+	r_ear = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/energy/las/hotshot
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/cell/lasgun = 2,
+	)
 
 /decl/hierarchy/outfit/job/inquisitor
 	name = OUTFIT_JOB_NAME("Inquisitor Of Ordo Hereticus")
