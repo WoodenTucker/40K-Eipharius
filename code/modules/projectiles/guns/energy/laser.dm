@@ -152,7 +152,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/plasmacannon
 	name = "Plasma cannon"
-	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
+	desc = "ALRIGHT, YOU ARENT SUPPOSED TO HAVE THIS, ITS NOT A CANNON, BUT IT SHOOTS LIKE A CANNON, YOU SHOULD ONLY BE GETTING THIS WITH ADMIN HELP."
 	icon_state = "chaosplaspistol"
 	item_state = null
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
@@ -166,34 +166,7 @@ obj/item/gun/energy/retro
 	fire_delay = 70
 	wielded_item_state = "gun_wielded"
 
-/obj/item/gun/energy/sniperrifle
-	name = "marksman energy rifle"
-	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
-	icon_state = "sniper"
-	item_state = "laser"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 5, TECH_POWER = 4)
-	projectile_type = /obj/item/projectile/beam/sniper
-	one_hand_penalty = 5 // The weapon itself is heavy, and the long barrel makes it hard to hold steady with just one hand.
-	slot_flags = SLOT_BACK
-	charge_cost = 40
-	max_shots = 4
-	fire_delay = 10
-	force = 10
-	w_class = ITEM_SIZE_HUGE
-	accuracy = -2 //shooting at the hip
-	scoped_accuracy = 0
-	wielded_item_state = "gun_wielded"
 
-/obj/item/gun/energy/sniperrifle/update_icon()
-	..()
-	item_state_slots[slot_back_str] = icon_state //so that the on-back overlay uses the different charged states
-
-/obj/item/gun/energy/sniperrifle/verb/scope()
-	set category = "Object"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr, 2.0)
 
 ////////Laser Tag////////////////////
 
@@ -249,8 +222,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
 		list(mode_name="overcharge", fire_delay = 3.3, move_delay=2, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		)
 
@@ -263,8 +236,8 @@ obj/item/gun/energy/retro
 	fire_delay = 2.5
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
 		list(mode_name="overcharge", fire_delay = 3.3, move_delay=2, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
 		)
 
@@ -288,7 +261,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "luscius-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
 		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=375),
 		)
 
@@ -313,8 +286,8 @@ obj/item/gun/energy/retro
 	fire_delay = 1 // 0.2 seconds
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=60),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0, charge_cost=60),
 		list(mode_name="overcharge",       burst=1, fire_delay=2.2, move_delay=1, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
@@ -337,8 +310,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=70),
 		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
@@ -352,8 +325,8 @@ obj/item/gun/energy/retro
 	charge_cost = 90
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0, charge_cost=90),
 		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=300),
 		)
 
@@ -377,8 +350,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=55),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=55),
 		list(mode_name="overcharge",       burst=1, fire_delay=2.75,    move_delay=1, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
 		)
 
@@ -426,7 +399,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
 		list(mode_name="overcharge",       burst=1, fire_delay=2.2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		)
 
@@ -441,7 +414,11 @@ obj/item/gun/energy/retro
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	charge_cost = 80
-
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="overcharge",       burst=1, fire_delay=2.2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		)
+		
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
 	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
@@ -455,7 +432,7 @@ obj/item/gun/energy/retro
 	charge_cost = 100
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
 		list(mode_name="overcharge",       burst=1, fire_delay=3,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=375),
 		)
 
@@ -482,46 +459,11 @@ obj/item/gun/energy/retro
 	armor_penetration = 12.5
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
 		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		list(mode_name="execution", fire_delay = 4.8, move_delay=2, one_hand_penalty=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
 		)
 
-/obj/item/gun/energy/las/lasgun/longlas
-	name = "M35 'M-Galaxy' Longlas"
-	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
-	icon_state = "longlas"
-	item_state = "lasgun"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
-	force = 15
-	one_hand_penalty = 3.4
-	fire_delay = 4.5
-	accuracy = 0
-	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
-	matter = list(DEFAULT_WALL_MATERIAL = 4000)
-	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
-	charge_cost = 200
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "lasgun-wielded"
-
-	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=4.5, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4.95, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=300),
-		)
-
-/obj/item/gun/energy/las/lasgun/longlas/verb/scope()
-	set category = "Object"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr, 2)
-
-/obj/item/gun/energy/las/lasgun/longlas/equipped(mob/user)
-	..()
-	if(user.zoomed)
-		user.do_zoom()
 
 //Tau weapons
 
