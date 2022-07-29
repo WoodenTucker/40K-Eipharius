@@ -280,7 +280,6 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/administrator
 	name = OUTFIT_JOB_NAME("Administrator")
 	uniform = /obj/item/clothing/under/rank/consort/adept
-	head = /obj/item/clothing/head/commissar/adept
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
