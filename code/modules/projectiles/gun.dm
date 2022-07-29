@@ -376,7 +376,7 @@
 
 	//Accuracy modifiers
 	P.accuracy = accuracy + acc_mod + dexToAccuracyModifier(user.my_stats[STAT(dex)].level)
-	P.dispersion = disp_mod + (user.recoil / 2)//Recoil gets added when you shoot. The faster we shoot our semi-auto gun the less accurate it is.
+	P.dispersion = disp_mod + (user.recoil / 1.05)//Recoil gets added when you shoot. The faster we shoot our semi-auto gun the less accurate it is.
 	if(user.crouching || user.lying)//Blind firing out of the trench.
 		if(istype(user.loc, /turf/simulated/floor/trench))
 			P.dispersion += 10
@@ -392,7 +392,7 @@
 	*/
 
 	//Dispersion stuff. I'll put it in its own proc soon enough.
-	var/mod = rand(5,20)
+	var/mod = rand(1,3)
 	var/wrong_gun_class_mod = mod + (mod * 0.5)//A lot.
 	switch(gun_type)
 		if(GUN_AUTOMATIC)
