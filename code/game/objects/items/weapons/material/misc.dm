@@ -83,10 +83,10 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 33
+	force = 55
 	sharp = 1
 	edge = 1
-	block_chance = 30
+	block_chance = 60
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
@@ -127,7 +127,7 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "sabre"
 	item_state = "sabre"
-	force = 35
+	force = 70
 
 /obj/item/material/sword/choppa
 	name = "choppa"
