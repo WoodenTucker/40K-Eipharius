@@ -14,8 +14,8 @@
 	icon_state = "baton"
 	item_state = "nullrod"
 	slot_flags = SLOT_BELT
-	force = 15
-	block_chance = 35
+	force = 20
+	block_chance = 45
 
 /*
 /obj/item/melee/classic_baton/attack(mob/M as mob, mob/living/user as mob)
@@ -36,8 +36,7 @@
 	desc = "A truncheon for beating other people in the same trench as you."
 	icon_state = "trench_club1"
 	item_state = "trench_club"
-	force = 20
-	block_chance = 40
+	force = 25
 
 /obj/item/melee/classic_baton/trench_club/New()
 	..()
@@ -52,9 +51,9 @@
 	item_state = "telebaton_0"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
-	force = 15
+	force = 5
 	var/on = 0
-	block_chance = 45
+
 
 /obj/item/melee/telebaton/attack_self(mob/user as mob)
 	on = !on
@@ -65,7 +64,7 @@
 		icon_state = "telebaton_1"
 		item_state = "nullrod"//was teletbaton_1 but guess what... that icon doesn't exist
 		w_class = ITEM_SIZE_NORMAL
-		force = 15//quite robust
+		force = 20//quite robust
 		block_chance = 45
 		attack_verb = list("smacked", "struck", "slapped")
 	else
@@ -76,7 +75,6 @@
 		item_state = "telebaton_0"//lmao these item_state icons don't even exist
 		w_class = ITEM_SIZE_SMALL
 		force = 0//not so robust now
-		block_chance = 5
 		attack_verb = list("hit", "punched")
 
 	update_held_icon()
