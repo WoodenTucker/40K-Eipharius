@@ -10,8 +10,8 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_HUGE
-	force = 35
-	block_chance = 35
+	force = 55
+	block_chance = 70
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 // 
 	sharp = 1
@@ -19,12 +19,11 @@
 	attack_verb = list("slashed", "sliced")
 	hitsound = "slash_sound"
 	var/atk_mode = SLASH
-	block_chance = 25
 	applies_material_colour = FALSE
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_sword02.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'
-	sharpness = 25
+	sharpness = 25 //???
 	weapon_speed_delay = 8
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
 	drop_sound = 'sound/items/drop_sword.ogg'
@@ -157,8 +156,8 @@
 	item_state = "machete"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
-	force = 28
-	block_chance = 15
+	force = 45
+	block_chance = 55
 
 
 /obj/item/material/sword/combat_knife
@@ -169,7 +168,7 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force = 20
-	block_chance = 8
+	block_chance = 15
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
@@ -194,7 +193,7 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force = 30
-	block_chance = 20
+	block_chance = 40
 	weapon_speed_delay = 4
 
 

@@ -231,7 +231,7 @@
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "buckshot"
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
-	damage = 40
+	damage = 20
 	pellets = 8
 	range_step = 1
 	spread_step = 10
@@ -327,8 +327,8 @@
 
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 48
-	armor_penetration = 30
+	damage = 55
+	armor_penetration = 40
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -338,8 +338,8 @@
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 48
-	armor_penetration = 35
+	damage = 65
+	armor_penetration = 50
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))

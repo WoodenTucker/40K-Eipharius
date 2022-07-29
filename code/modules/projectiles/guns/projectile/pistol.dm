@@ -1,4 +1,4 @@
-
+//WIP handflamer
 /obj/item/gun/projectile/automatic/flamer/handflamer
 	name = "Mk.1 hand flamer"
 	desc = "An incredibly small hand-held flamethrower often used by the inquisition and the sisters."
@@ -28,7 +28,7 @@
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
-
+//^^NOT READY
 
 /obj/item/gun/projectile/colt
 	name = "vintage .45 pistol"
@@ -105,8 +105,7 @@
 	name = "Renegade Pistol"
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
-	one_hand_penalty = 0.5
-	accuracy = 1
+	accuracy = 0 //supposed to be a assasin weapon
 	fire_delay = 0.5
 	silenced = 1
 	force = 20
@@ -206,7 +205,6 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
-	condition = 400
 
 /obj/item/gun/projectile/pistol/flash
 	name = "holdout signal pistol"
@@ -366,8 +364,8 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -1 
-	fire_delay = 1.8
+	accuracy = -0.4 //pretty fucking accurate 
+	fire_delay = 1.5
 	move_delay = 1
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -412,7 +410,7 @@
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
 	sharp = 1 
 	edge = 1
-	accuracy = 0 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
+	accuracy = -0.4 //alright, now a lot of these spawn so yeah, lets give them the same as the commissar boltpistol
 	fire_delay = 1 //fastaa!
 	move_delay = 1 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
@@ -458,7 +456,7 @@
 		list(mode_name="automatic",   	 burst=10, fire_delay=1.5,  move_delay=0, one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
 		)
 	gun_type = GUN_AUTOMATIC
-	accuracy = 2
+	accuracy = 2 //this IS 300% accurate... what?
 
 /obj/item/gun/projectile/eldar/spistol/update_icon()
 	..()

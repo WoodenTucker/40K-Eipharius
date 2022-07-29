@@ -7,6 +7,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 5.0
+	block_chance = 35
 	throwforce = 7.0
 	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 50)
@@ -64,8 +65,8 @@
 	icon_state = "cane_sword"
 
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	block_chance = 60
-	force = 28
+	block_chance = 70
+	force = 40
 	sharp = TRUE
 	item_state = "sabre"
 	name = "cane sword"
