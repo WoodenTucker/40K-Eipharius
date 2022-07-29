@@ -51,7 +51,7 @@
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2
-	accuracy = 2
+	accuracy = -2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/beam/midlaser
@@ -138,7 +138,7 @@ obj/item/gun/energy/retro
 	projectile_type = /obj/item/projectile/beam/heavylaser
 	charge_cost = 40
 	max_shots = 6
-	accuracy = 2
+	accuracy = -1
 	fire_delay = 20
 	wielded_item_state = "gun_wielded"
 
@@ -152,7 +152,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/plasmacannon
 	name = "Plasma cannon"
-	desc = "ALRIGHT, YOU ARENT SUPPOSED TO HAVE THIS, ITS NOT A CANNON, BUT IT SHOOTS LIKE A CANNON, YOU SHOULD ONLY BE GETTING THIS WITH ADMIN HELP."
+	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
 	icon_state = "chaosplaspistol"
 	item_state = null
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
@@ -212,7 +212,8 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 1.7
 	fire_delay = 3
-	accuracy = -1
+	accuracy = -3
+	move_delay = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -222,9 +223,9 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 3.3, move_delay=2, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge", fire_delay = 4, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
 		)
 
 /obj/item/gun/energy/las/lasgun/rare
@@ -234,11 +235,12 @@ obj/item/gun/energy/retro
 	one_hand_penalty = 1.9
 	charge_cost = 75
 	fire_delay = 2.5
+	move_delay = 2.8
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3, move_delay=1.5, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, move_delay=1.5, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 3.3, move_delay=2, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay = 4, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
 		)
 
 /obj/item/gun/energy/las/lasgun/lucius
@@ -251,7 +253,8 @@ obj/item/gun/energy/retro
 	force = 15
 	one_hand_penalty = 2
 	fire_delay = 4
-	accuracy = -1
+	accuracy = -3
+	move_delay = 3.2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
@@ -261,8 +264,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "luscius-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
-		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=375),
+		list(mode_name="semi-automatic", fire_delay = 4, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
 
 /obj/item/gun/energy/las/lasgun/catachan
@@ -274,7 +277,8 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 18
 	one_hand_penalty = 0.7
-	accuracy = -1
+	accuracy = -3
+	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -286,9 +290,9 @@ obj/item/gun/energy/retro
 	fire_delay = 1 // 0.2 seconds
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, move_delay=1, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=60),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0, charge_cost=60),
-		list(mode_name="overcharge",       burst=1, fire_delay=2.2, move_delay=1, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
@@ -300,7 +304,8 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 12
 	one_hand_penalty = 1.5
-	accuracy = 0
+	accuracy = -2
+	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -310,9 +315,9 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=70),
-		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge", burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
 /obj/item/gun/energy/las/lasgun/lucius/tinkered
@@ -321,13 +326,14 @@ obj/item/gun/energy/retro
 	armor_penetration = 15
 	force = 12
 	one_hand_penalty = 1.8
+	move_delay = 2.5
 	fire_delay = 3.5
 	charge_cost = 90
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.5,    move_delay = 1.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay = 1.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.2, 0.2), automatic = 0, charge_cost=90),
-		list(mode_name="overcharge", burst=1, fire_delay=2.75,    move_delay = 1.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=300),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge", burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=180),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered/catachan
@@ -340,7 +346,8 @@ obj/item/gun/energy/retro
 	force = 22
 	armor_penetration = 8
 	one_hand_penalty = 1.5
-	accuracy = 0
+	accuracy = -2
+	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -350,9 +357,9 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=55),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=55),
-		list(mode_name="overcharge",       burst=1, fire_delay=2.75,    move_delay=1, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
 		)
 
 /obj/item/gun/energy/las/hotshot
@@ -364,7 +371,8 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 22
 	one_hand_penalty = 1.8
-	accuracy = 0
+	accuracy = -2.5
+	move_delay = 4
 	self_recharge = 1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -375,8 +383,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", burst=1, fire_delay=2.5, move_delay=1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.8),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.8, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", burst=1, fire_delay=2.8,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 		)
 
 
@@ -388,7 +396,8 @@ obj/item/gun/energy/retro
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = -1
+	accuracy = -3.2
+	move_delay = 1.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
@@ -399,8 +408,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
-		list(mode_name="overcharge",       burst=1, fire_delay=2.2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=180),
 		)
 
 /obj/item/gun/energy/las/laspistol/defender
@@ -414,11 +423,7 @@ obj/item/gun/energy/retro
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	charge_cost = 80
-	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge",       burst=1, fire_delay=2.2,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
-		)
-		
+
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
 	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
@@ -426,14 +431,15 @@ obj/item/gun/energy/retro
 	item_state = "laspistol"
 	force = 10
 	one_hand_penalty = 2.55
-	accuracy = -0.6
+	move_delay = 1.5
+	accuracy = -3.2
 	fire_delay = 2.5
 	armor_penetration = 8.75
 	charge_cost = 100
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="overcharge",       burst=1, fire_delay=3,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=375),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
 
 /obj/item/gun/energy/las/laspistol/mechanicus
@@ -441,9 +447,9 @@ obj/item/gun/energy/retro
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified by Adeptus Mechanicus to concentrate the beam, resulting in more powerful shot for their self-defense purposes."
 	icon_state = "laspistol"
 	item_state = "laspistol"
-	move_delay= 1.2
+	move_delay = 1.5
 	one_hand_penalty = 1
-	accuracy = -0.2
+	accuracy = -2.2
 	fire_delay= 3
 	armor_penetration = 12.5
 
@@ -452,16 +458,16 @@ obj/item/gun/energy/retro
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified to amplify the overcharge mode, issued to the Officio Prefectus for their purposes."
 	icon_state = "laspistol"
 	item_state = "laspistol"
-	move_delay= 1.2
+	move_delay = 1.5
 	one_hand_penalty = 1
-	accuracy = -1
+	accuracy = -3.2
 	fire_delay= 3
 	armor_penetration = 12.5
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, move_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="overcharge", fire_delay = 4.4, move_delay=2, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
-		list(mode_name="execution", fire_delay = 4.8, move_delay=2, one_hand_penalty=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
+		list(mode_name="semi-automatic", fire_delay = 4, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		list(mode_name="execution", fire_delay = 5, one_hand_penalty=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
 		)
 
 
@@ -476,7 +482,8 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = 0
+	accuracy = -1.5
+	move_delay = 5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/ion
@@ -485,7 +492,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "ionriflet-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=10,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=10, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulsepistol
@@ -496,7 +503,8 @@ obj/item/gun/energy/retro
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = 0
+	accuracy = -2.5
+	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -505,7 +513,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semi-auto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-auto",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulserifle
@@ -517,7 +525,8 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = -1
+	accuracy = -2
+	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -526,6 +535,6 @@ obj/item/gun/energy/retro
 	wielded_item_state = "pulseb_wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=0,    move_delay=null, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=null, move_delay=4,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)

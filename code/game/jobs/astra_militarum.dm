@@ -289,15 +289,14 @@
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
-	alt_titles = list(
+	/*alt_titles = list(
 		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/lieutenant
 	)
-	/*
+	*/
 	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
-	*/
 	can_be_in_squad = FALSE
 	auto_rifle_skill = 9 //commissars are more trained than almost any guardsman
 	semi_rifle_skill = 9
@@ -314,7 +313,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("[current_name]")
+		H.fully_replace_character_name("Commissar [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))

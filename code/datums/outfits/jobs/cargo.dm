@@ -3,8 +3,8 @@
 	hierarchy_type = /decl/hierarchy/outfit/job/cargo
 
 /decl/hierarchy/outfit/job/cargo/qm
-	name = OUTFIT_JOB_NAME("Cargo")
-	uniform = /obj/item/clothing/under/rank/consort/adept
+	name = OUTFIT_JOB_NAME("House Penitent")
+	uniform = /obj/item/clothing/suit/raggedrobe
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	id_type = /obj/item/card/id/shared/cargo
 	neck = /obj/item/reagent_containers/food/drinks/canteen

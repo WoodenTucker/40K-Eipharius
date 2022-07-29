@@ -1,11 +1,11 @@
 // Acolytes
 
 /datum/job/acolyte
-	title = "Inquisition Acolyte"
+	title = "Interrogator"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_HIGH
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Ministorum, the Inquisition."
@@ -14,7 +14,7 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
-		"Acolyte of Ordos Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus,
+		"Interrogator of Ordos Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus,
 		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion
 		)
 	announced = FALSE

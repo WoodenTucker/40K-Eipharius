@@ -59,7 +59,7 @@
 /obj/item/material/mekmace
 	name = "scrap mace"
 	desc = "A mace normally used by the ork meks, made of scrap."
-	force = 40
+	force = 30
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
 	item_state = "mekmace"
@@ -87,6 +87,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	force = 5
+	block_chance = 35
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 4)
@@ -134,7 +135,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 35
-	block_chance = 50 //50%
+	block_chance = 30
 	sharp = TRUE
 	edge = TRUE
 	hitsound = "slash_sound"
@@ -153,11 +154,11 @@
 	wielded_icon = "thunder_hammer-w"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	str_requirement = 18
-	force = 75
-	block_chance = 90 //percent
+	str_requirement = 12
+	force = 50
+	block_chance = 38
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 12 //ITS A HOLY HAMMER
+	weapon_speed_delay = 12
 
 // CHAINSWORD
 
@@ -171,7 +172,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 12
 	force = 44
-	block_chance = 55 //chance
+	block_chance = 10
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -190,8 +191,8 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 10
-	force = 48
-	block_chance = 65
+	force = 40
+	block_chance = 25
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -209,9 +210,9 @@
 	item_state = "pcsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 18
-	force = 50
-	block_chance = 75 //THIS SHIT HUGE
+	str_requirement = 14
+	force = 45
+	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -228,10 +229,10 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
-	str_requirement = 18
-	force = 20// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 60
-	block_chance = 90
+	str_requirement = 12
+	force = 25// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 49
+	block_chance = 25
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_HUGE
@@ -242,4 +243,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 20 //should be enough
+	weapon_speed_delay = 16

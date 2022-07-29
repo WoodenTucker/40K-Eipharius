@@ -274,7 +274,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team/delta
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_box/shotgun = 2,
 	/obj/item/handcuffs = 2,

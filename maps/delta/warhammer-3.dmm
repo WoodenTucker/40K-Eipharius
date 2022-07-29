@@ -3801,10 +3801,6 @@
 	req_access = list(21,213)
 	},
 /obj/item/storage/firstaid/combat,
-/obj/item/card/id/innkey3{
-	access = list(333,211);
-	name = "monastary key"
-	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "oy" = (
@@ -5180,6 +5176,15 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
+"DS" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/card/id/innkey3{
+	access = list(333,211);
+	name = "monastary key"
+	},
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "Eb" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/closet/wardrobe/virology_white,
@@ -5775,6 +5780,13 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
+"KV" = (
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/obj/item/storage/pill_bottle/happy,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "KW" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/machinery/door/airlock/engineering{
@@ -5799,6 +5811,12 @@
 "Lb" = (
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/research/robotics)
+"Le" = (
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "Li" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -6294,6 +6312,13 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/medicae)
+"RD" = (
+/obj/item/storage/pill_bottle/happy,
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/turf/simulated/floor/new_wood,
+/area/cadiaoutpost/oa/service/inn)
 "RI" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/sign/stainedglass2{
@@ -24590,7 +24615,7 @@ aq
 Fu
 cV
 SH
-bO
+DS
 aq
 Rt
 cV
@@ -32560,7 +32585,7 @@ BY
 BY
 BY
 Nn
-YM
+Le
 YM
 YM
 YM
@@ -32568,7 +32593,7 @@ YM
 YM
 Jx
 Nn
-YM
+Fj
 YM
 YM
 YM
@@ -33080,9 +33105,9 @@ YM
 YM
 YM
 YM
-YM
+Fj
 Nn
-YM
+KV
 YM
 YM
 eL
@@ -34359,8 +34384,8 @@ fv
 YM
 YM
 YM
-YM
-YM
+Fj
+Fj
 YM
 YM
 Nn
@@ -34613,7 +34638,7 @@ RK
 RK
 cp
 Nn
-YM
+Le
 YM
 YM
 YM
@@ -35386,7 +35411,7 @@ cp
 fv
 YM
 YM
-YM
+Fj
 YM
 Nn
 YM
@@ -36161,7 +36186,7 @@ Jx
 YM
 YM
 YM
-YM
+KV
 Nn
 gv
 Xg
@@ -36415,8 +36440,8 @@ Nn
 YM
 YM
 YM
-YM
-YM
+Fj
+Fj
 YM
 YM
 Nn
@@ -36680,7 +36705,7 @@ Nn
 GV
 wu
 Xg
-Xg
+RD
 PS
 GR
 wS

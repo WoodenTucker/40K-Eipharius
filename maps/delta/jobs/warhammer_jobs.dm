@@ -28,7 +28,7 @@
 	/datum/job/qm,
 	/datum/job/chaplain,
 	/datum/job/sisterofbattle,
-	/datum/job/administrator,
+	/datum/job/qm2,
 	/datum/job/enforcer,
 	/datum/job/innkeeper,
 	/datum/job/hydro,

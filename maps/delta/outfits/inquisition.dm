@@ -1,5 +1,5 @@
 /decl/hierarchy/outfit/job/acolyte
-	name = OUTFIT_JOB_NAME("Ordo Hereticus Acolyte")
+	name = OUTFIT_JOB_NAME("Interrogator")
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent/caraspace
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -14,10 +14,10 @@
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/lockebolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -29,7 +29,7 @@
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/acolyte/malleus
-	name = OUTFIT_JOB_NAME("Ordo Malleus Acolyte")
+	name = OUTFIT_JOB_NAME("Ordo Malleus Interrogator")
 	suit = /obj/item/clothing/suit/armor/agent/coat
 
 /decl/hierarchy/outfit/job/scion
@@ -52,7 +52,6 @@
 	backpack_contents = list(
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/cell/lasgun = 2,
 	)
 
 /decl/hierarchy/outfit/job/inquisitor

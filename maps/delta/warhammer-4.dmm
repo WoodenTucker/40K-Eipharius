@@ -1737,13 +1737,8 @@
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "kV" = (
-/obj/machinery/light,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
+/obj/machinery/computer/tithecogitator,
+/turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "lc" = (
 /obj/structure/cable{
@@ -2360,6 +2355,15 @@
 	icon_state = "officechair_dark_preview"
 	},
 /turf/simulated/floor/carpet/green,
+/area/cadiaoutpost/oa/bridge/meetingroom)
+"NY" = (
+/obj/machinery/light{
+	name = "the rogue trader's floating light.";
+	desc = "A special anti-gravity light fixture."
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/bridge/meetingroom)
 "Oh" = (
 /obj/structure/sign/art/lordgovenor{
@@ -31602,7 +31606,7 @@ bh
 cc
 UB
 eq
-cq
+kV
 cs
 UB
 vn
@@ -32105,7 +32109,7 @@ GO
 Qp
 Sq
 WX
-WX
+NY
 ax
 aT
 ga
@@ -32631,7 +32635,7 @@ cc
 UB
 UB
 UB
-kV
+lc
 UB
 vn
 re

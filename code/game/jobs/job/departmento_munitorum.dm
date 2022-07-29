@@ -1,12 +1,46 @@
 //  Munitorum Tribunus
 
-/datum/job/qm
-	title = "Munitorum Prefectus"
-	department = "Supply"
-	department_flag = CIV
+/datum/job/qm2
+	title = "House Noble"
+	department_flag = PIL
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Administrator"
+	supervisors = "the merchant guilds"
+	selection_color = "#337C81"
+	economic_modifier = 5
+	social_class = SOCIAL_CLASS_MED
+	announced = 0
+	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_player_age = 3
+	ideal_character_age = 40
+	outfit_type = /decl/hierarchy/outfit/job/administrator
+	latejoin_at_spawnpoints = 1
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Lord [current_name]")
+		H.add_stats(rand(16,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and your merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on them as they are upon you.</font></b></span>")
+
+/datum/job/qm
+	title = "House Penitent"
+	department_flag = PIL
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Noble household"
 	selection_color = "#337C81"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
@@ -17,24 +51,25 @@
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
 	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand(15,16))
-		H.add_skills(rand(6,8),rand(6,8),rand(3,5),rand(3,5),4) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(16,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>The others may not know it, but you're the most powerful man on the planet. A 'delayed' order of munitions to guardsmen on the frontline could mean thousands dead -- you alone decide the value of life.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>A penitent in service to the Noble Household of this planet, you owe a debt of life to the family that extends generations down your lines to a distant ancestor, though despite the brand upon your neck and your status as a penitent. You fare better then most who come seeking fortune in this accursed world.</font></b></span>")
+
 
 // Munitorum Menial
 

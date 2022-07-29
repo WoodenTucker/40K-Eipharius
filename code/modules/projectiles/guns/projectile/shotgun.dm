@@ -39,7 +39,7 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
-	move_delay= 1.6 
+	move_delay= 2.6 
 	one_hand_penalty = 4
 	accuracy = -0.5
 	fire_delay= 3
@@ -137,6 +137,9 @@
 	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 5
+	accuracy = -1
+	fire_delay= 3
+	armor_penetration = 5
 	wielded_item_state = "shotgun-wielded"
 
 /obj/item/gun/projectile/shotgun/pump/border
@@ -149,10 +152,10 @@
 	max_shells = 5 //6 bullets in exchange for no slowdown
 	ammo_type = /obj/item/ammo_casing/shotgun
 	wielded_item_state = "cshotgun2"
-	move_delay= 0 //slowdown removed because... its literally supposed to be for fast combat and trench taking
+	move_delay= 2 //slowdown removed because... its literally supposed to be for fast combat and trench taking
 	one_hand_penalty = 5
 	accuracy = -1
-	fire_delay= 1.5
+	fire_delay= 3
 	armor_penetration = 5
 
 /obj/item/gun/projectile/shotgun/doublebarrel
@@ -164,7 +167,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 2
 	w_class = ITEM_SIZE_HUGE
-	force = 10
+	force = 20
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
@@ -172,7 +175,7 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg'
 	wielded_item_state = "dshotgun1"
 	gun_type = GUN_SHOTGUN //ITS A SHOTGUN
-	one_hand_penalty = 6
+	one_hand_penalty = 3
 	burst_delay = 0
 	var/broke_open = FALSE
 
@@ -264,7 +267,7 @@
 	wielded_item_state = "rifle-wielded"
 	block_chance = 45
 	gun_type = GUN_PISTOL
-	move_delay= 2
+	move_delay= 2.5
 	one_hand_penalty = 3
 	accuracy = -1
 	fire_delay= 4.5

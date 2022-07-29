@@ -51,10 +51,19 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "aj" = (
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/magistratumpost)
+/obj/structure/table/steel,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "ak" = (
 /obj/item/campfire,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
 /turf/simulated/floor/dirty/indestructable/lightless,
 /area/cadiaoutpost/oa/caves/dark)
 "al" = (
@@ -171,9 +180,14 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "az" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/magistratumpost)
+/obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	maxhealth = 3000;
+	req_access = list(63)
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "aB" = (
 /obj/structure/table/rack,
 /obj/item/reagent_containers/spray/cleaner,
@@ -580,6 +594,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"cD" = (
+/obj/structure/table/rack,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "cF" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood/gibs/xeno,
@@ -628,6 +651,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"cO" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I have a reputation, Modile, a reputation as a fair, honest man who treats his soldiers well and supports them in the face of darkness. Potentially, that reputation makes me soft. It seems I understand failure and forgive it. Some, like Kowle, believe me to be a weak commissar, not prepared to take the action my rank demands. Not prepared to enforce field discipline where I see it failing. I am an Imperial commissar. I will enflame the weak, support the wavering, guide the lost. I will be all things to all men who need me. But I will also punish without hesitation the incompetent, the cowardly, and the treasonous. Choose, for courtesy's sake, summary execution or a firing squad of your own men.";
+	name = "tome"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "cP" = (
 /obj/effect/floor_decal/turf/basalt3,
 /turf/simulated/floor/dirty/indestructable,
@@ -932,6 +966,7 @@
 	name = "Secure Storage";
 	req_access = list(221,222,223)
 	},
+/obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1018,6 +1053,13 @@
 	req_access = list()
 	},
 /obj/effect/landmark/animal/bubblingmass1,
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1082,15 +1124,9 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "fl" = (
-/obj/machinery/optable,
-/obj/effect/floor_decal/floordetail/edgedrain,
-/obj/machinery/light,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/chapel)
+/obj/item/grenade/frag/high_yield/krak,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "fm" = (
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
@@ -1160,6 +1196,16 @@
 /obj/random/loot/heavymelee,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"fI" = (
+/obj/machinery/door/unpowered/cargo{
+	maxhealth = 1500;
+	name = "Storage Room";
+	req_access = list(225)
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "fM" = (
 /obj/structure/table/marble,
 /obj/item/rosarius,
@@ -1463,6 +1509,28 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"hp" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
+"hq" = (
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
+"hr" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/window/basic{
+	dir = 8;
+	icon_state = "window"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "hu" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/firealarm{
@@ -1574,6 +1642,12 @@
 /obj/machinery/microwave{
 	name = "futuristic cooking device"
 	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
+"ib" = (
+/obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1903,7 +1977,8 @@
 	color = "grey";
 	health = 1100;
 	mob_size = 25;
-	name = "The Dark One"
+	name = "The Dark One";
+	attacktext = "rends"
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -2007,6 +2082,20 @@
 /obj/effect/floor_decal/turf/tunnelchess,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"kq" = (
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/structure/curtain/open/bed,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/bedsheet/captain,
+/obj/effect/landmark/start{
+	name = "House Noble"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "ks" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/woodentable{
@@ -2106,18 +2195,12 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "kR" = (
-/obj/structure/table/rack/dark,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/effect/floor_decal/turf/checkers/two,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security)
+/obj/flamer_fire{
+	burnlevel = 33;
+	firelevel = 1.#INF
+	},
+/turf/simulated/floor/airless/lava,
+/area/cadiaoutpost/oa/caves)
 "kS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/archaeological_find/remains/xeno{
@@ -2390,6 +2473,7 @@
 	color = "grey"
 	},
 /obj/effect/landmark/animal/zygote1,
+/obj/random/loot/randomsupply,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -2461,6 +2545,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"mq" = (
+/obj/effect/floor_decal/turf/basalt0,
+/obj/effect/landmark/animal/bubblingmass1,
+/turf/simulated/floor/dirty/indestructable/mud,
+/area/cadiaoutpost/oa/caves)
 "ms" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cable{
@@ -2599,10 +2688,7 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "nd" = (
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/turf/simulated/floor/plating,
+/turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/magistratumpost)
 "ne" = (
 /obj/effect/floor_decal/turf/plating,
@@ -2757,16 +2843,7 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "nU" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/decal/remains{
-	color = "grey"
-	},
-/turf/simulated/floor/plating,
+/turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/magistratumpost)
 "nW" = (
 /obj/structure/window/reinforced{
@@ -2825,6 +2902,15 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"oe" = (
+/obj/machinery/door/airlock/gold{
+	color = "grey"
+	},
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "of" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -2933,14 +3019,9 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "oz" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/poo,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/magistratumpost)
+/obj/structure/statue/verina,
+/turf/simulated/floor/airless/lava,
+/area/cadiaoutpost/oa/caves)
 "oA" = (
 /obj/structure/cult/interdictionlensinactive{
 	color = "grey";
@@ -2992,15 +3073,16 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "oL" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "My people shackled the stars, and broke mortality when the species you sprang from had barely left the slime pools it spawned in. Our wars burned reality, and the dominion of our kings is without limit. The ground you tread on is not yours; it is ours.";
+	name = "tome"
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled{
+/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/magistratumpost)
+/area/cadiaoutpost/oa/tradefloor)
 "oM" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/machinery/light{
@@ -3443,6 +3525,18 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"qE" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/structure/curtain/open/privacy,
+/obj/item/card/id/innkey2{
+	access = list(225);
+	name = "golden key"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "qF" = (
 /obj/structure/railing{
 	dir = 1
@@ -3554,11 +3648,6 @@
 /obj/effect/floor_decal/turf/surgery2,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
-"ri" = (
-/obj/item/gun/projectile/ork/slugga,
-/mob/living/simple_animal/hostile/scarybat,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "rk" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -3652,6 +3741,26 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"rG" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/item/clothing/accessory/holster/armpit,
+/obj/item/card/id/innkey2{
+	access = list(225);
+	name = "golden key"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
+"rN" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/undercity)
 "rR" = (
 /obj/machinery/alarm/cold{
 	color = "grey";
@@ -3818,6 +3927,7 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/item/grenade/fire,
 /obj/item/grenade/frag/warfare,
+/obj/item/grenade/frag/high_yield/krak,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "sH" = (
@@ -4104,6 +4214,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"tL" = (
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/obj/item/device/radio/headset/red_team,
+/obj/random/accessory,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/random/loot/goodweapon,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/under/wedding/bride_red,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "tN" = (
 /obj/structure/table/steel,
 /obj/item/material/knife/butch{
@@ -4309,6 +4433,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"uA" = (
+/obj/effect/floor_decal/turf/basalt0,
+/turf/simulated/floor/dirty/indestructable/mud,
+/area/cadiaoutpost/oa/caves)
 "uC" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -4374,6 +4502,17 @@
 /obj/item/stack/barbwire,
 /obj/item/stack/barbwire,
 /obj/item/stack/barbwire,
+/obj/item/stack/barbwire,
+/obj/item/stack/barbwire,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "uO" = (
@@ -4442,10 +4581,6 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Doorway - Sanctificatio";
-	req_access = list(211)
-	},
 /turf/simulated/floor/tiled{
 	icon_state = "white1"
 	},
@@ -4478,6 +4613,12 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"vf" = (
+/obj/machinery/shower,
+/obj/structure/curtain/open/privacy,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "vg" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
@@ -4524,9 +4665,7 @@
 	color = "#36261B"
 	},
 /obj/random/loot/sidearms,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/tradefloor)
 "vw" = (
 /obj/item/clothing/under/psysuit,
@@ -4778,18 +4917,29 @@
 /obj/item/crowbar,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"wA" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	layer = 50;
+	pixel_x = -10;
+	pixel_y = 2
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "wB" = (
-/mob/living/simple_animal/hostile/hivebot/rapid{
-	desc = "A terrifying death machine.";
-	health = 700;
-	melee_damage_lower = 30;
-	melee_damage_upper = 40;
-	name = "Security Droid"
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/window/reinforced{
+	dir = 4;
+	icon_state = "rwindow"
 	},
-/turf/simulated/wall/ancient{
-	color = "grey"
+/obj/structure/window/reinforced{
+	color = "grey";
+	dir = 4
 	},
-/area/cadiaoutpost/oa/caves/dark)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/caves)
 "wJ" = (
 /obj/machinery/door/unpowered/inn{
 	color = "grey";
@@ -4841,6 +4991,15 @@
 /obj/effect/floor_decal/turf/tunneldirty,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"wW" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "wY" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/marble,
@@ -4932,7 +5091,15 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "xv" = (
-/turf/simulated/wall/concrete,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/machinery/door/unpowered/administratum{
+	maxhealth = 2000;
+	name = "Guest Room";
+	req_access = list()
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/tradefloor)
 "xz" = (
 /obj/machinery/door/airlock/glass_medical{
@@ -4944,6 +5111,16 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
+"xD" = (
+/obj/structure/table/steel,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "xG" = (
 /obj/structure/closet/crate/miningcar,
 /obj/random/loot/randomitemcaves,
@@ -5005,6 +5182,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"yl" = (
+/turf/simulated/wall/ancient{
+	color = null
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "ym" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/accessory/kneepads,
@@ -5251,6 +5433,17 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
+"zp" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "We are raised to believe that the God Emperor watches over us all. And so we are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none, we beseech thee, destroy them. Even in the face of death, we shall not submit. Suffering is our prayer... faith is our armour.";
+	name = "tome"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "zs" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/torchwall/service{
@@ -5791,9 +5984,9 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 2000;
-	name = "Administratum";
+	name = "Lord's Chambers";
 	req_access = list();
-	req_one_access = list(212,31)
+	req_one_access = list(225)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -6417,10 +6610,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "EL" = (
-/obj/item/stool/padded,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/tradefloor)
 "EM" = (
 /obj/effect/floor_decal/turf/basalt9,
@@ -6428,6 +6618,12 @@
 /obj/item/ammo_magazine/bolt_pistol_magazine,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"EN" = (
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/wall/ancient{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "EO" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/cult/tinkerscache,
@@ -6971,10 +7167,6 @@
 "GR" = (
 /obj/structure/cult/forge,
 /obj/item/material/sword/chaosknife,
-/obj/item/book/manual{
-	desc = "I once walked the same ground as your idol. I breathed the same air as him. And I tell you this, without lie or artifice. He never wanted to become what you have made him. He did not wish to be your god-thing. He abhorred such ideals. The slavery of your crippled, blind Imperium would sicken him, if he had eyes to see it.";
-	name = "Daemonic Tome"
-	},
 /obj/effect/floor_decal/turf/basalt0,
 /turf/simulated/floor/dirty/indestructable,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -7018,15 +7210,18 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "Hc" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/marble{
-	color = "grey"
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/window/reinforced{
+	dir = 8;
+	icon_state = "rwindow"
+	},
+/obj/structure/window/reinforced{
+	color = "grey";
+	dir = 8;
+	maxhealth = 400
 	},
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/tradefloor)
+/area/cadiaoutpost/oa/caves)
 "Hd" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/anti_tank,
@@ -7049,12 +7244,11 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "Hg" = (
-/obj/machinery/door/unpowered/inn{
-	color = "grey";
-	name = "ancient door"
-	},
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/oa/caves)
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/effect/floor_decal/turf/metal/two,
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/tradefloor)
 "Hh" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/statue/verina{
@@ -7402,6 +7596,17 @@
 /obj/structure/closet/pit,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/service/chapel)
+"ID" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
+	name = "tome"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "IG" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/effect/decal/dead,
@@ -8832,6 +9037,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Pq" = (
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/structure/curtain/open/bed,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "Pr" = (
 /obj/machinery/firealarm{
 	pixel_y = 30
@@ -8861,20 +9078,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "Pw" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/item/clothing/accessory/holster/armpit,
-/obj/item/card/id/innkey2{
-	access = list(225);
-	name = "storage key"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
+/turf/simulated/wall/ancient{
+	color = null;
+	integrity = 10000
 	},
 /area/cadiaoutpost/oa/tradefloor)
 "Px" = (
@@ -9131,19 +9337,8 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "QA" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/structure/curtain/open/bed,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/effect/landmark/start/qm{
-	name = "Munitorum Prefectus"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/tradefloor)
 "QB" = (
 /obj/structure/table/woodentable{
@@ -9158,6 +9353,17 @@
 /obj/item/handcuffs,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel)
+"QE" = (
+/obj/structure/table/rack,
+/obj/item/staff/gentcane,
+/obj/item/device/radio/headset/red_team/voxcaster,
+/obj/item/storage/toolbox/mechanical{
+	color = "grey"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "QF" = (
 /obj/effect/floor_decal/turf/basalt10,
 /turf/simulated/floor/dirty/indestructable/mud,
@@ -9213,12 +9419,8 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "QS" = (
-/obj/effect/floor_decal/turf/surgery2,
-/obj/effect/landmark/animal/zygote1,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
+/turf/simulated/floor/airless/lava,
+/area/cadiaoutpost/oa/caves)
 "QV" = (
 /obj/structure/bed/bigbedl,
 /turf/simulated/floor/tiled{
@@ -9246,6 +9448,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Rc" = (
+/obj/structure/closet/crate,
+/obj/item/book/manual{
+	desc = "I once walked the same ground as your idol. I breathed the same air as him. And I tell you this, without lie or artifice. He never wanted to become what you have made him. He did not wish to be your god-thing. He abhorred such ideals. The slavery of your crippled, blind Imperium would sicken him, if he had eyes to see it.";
+	name = "Daemonic Tome"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "Ro" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/torchwall/service{
@@ -9293,6 +9505,25 @@
 	icon_state = "wood_broken4"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Rx" = (
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/obj/item/device/radio/headset/red_team,
+/obj/random/accessory,
+/obj/item/stack/thrones,
+/obj/item/stack/thrones2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/random/loot/goodweapon,
+/obj/random/loot/randomarmor,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/clothing/head/helmet/mining{
+	armor = list("melee" = 40, "bullet" = 35, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 30);
+	name = "Penitent Visor"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "RA" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/box/flashbangs,
@@ -9465,6 +9696,16 @@
 /obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"Sr" = (
+/obj/structure/table/rack,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/obj/random/loot/guardgear,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "Sv" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 1
@@ -9960,6 +10201,19 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/chapel)
+"UF" = (
+/obj/structure/table/steel,
+/obj/item/stack/thrones2/five,
+/obj/item/stack/thrones2/five,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "UG" = (
 /obj/structure/window/reinforced{
 	color = "grey";
@@ -10064,9 +10318,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Vg" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/structure/landmine,
-/turf/simulated/floor/stone,
+/obj/flamer_fire{
+	burnlevel = 33;
+	firelevel = 1.#INF
+	},
+/turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/oa/caves/undercity)
 "Vi" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
@@ -10193,10 +10449,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"VP" = (
-/obj/effect/floor_decal/turf/brick,
-/turf/space,
-/area/cadiaoutpost/oa/service/chapel)
+"VK" = (
+/obj/machinery/door/airlock/arbiter{
+	color = "grey";
+	maxhealth = 3000;
+	name = "Groomlake Facility";
+	req_access = list(221,222,223)
+	},
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "VQ" = (
 /obj/machinery/cooker/grill{
 	color = "grey"
@@ -10229,11 +10493,17 @@
 	},
 /area/cadiaoutpost/oa/tradefloor)
 "VX" = (
-/obj/effect/decal/cleanable/vomit,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
 	},
-/area/cadiaoutpost/oa/magistratumpost)
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/landmark/start/qm{
+	name = "House Penitent"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "Wa" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -10428,15 +10698,12 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Xb" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/structure/curtain/open/bed,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/effect/landmark/start{
-	name = "Administratum Adept"
+/obj/machinery/door/unpowered/administratum{
+	maxhealth = 2000;
+	name = "Penitent";
+	req_access = list();
+	req_one_access = list(225)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -10559,6 +10826,16 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"XE" = (
+/obj/machinery/optable,
+/obj/effect/floor_decal/floordetail/edgedrain,
+/obj/machinery/light,
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/service/chapel)
 "XF" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark{
@@ -10749,6 +11026,8 @@
 /obj/effect/water/bottom,
 /obj/effect/water/top,
 /obj/effect/decal/dead,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
 /turf/simulated/floor/dirty/indestructable/lightless,
 /area/cadiaoutpost/oa/caves/dark)
 "YL" = (
@@ -10787,6 +11066,17 @@
 	},
 /turf/simulated/floor/dirty/indestructable/lightless,
 /area/cadiaoutpost/oa/caves/dark)
+"YP" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "What is Chaos? Suffering, you might say. Oppression. Deceit. But could not all these things be said of your Imperium? You hunt down the talented and the strong-willed. You break them or sacrifice them. You lie to your citizens and wage war on those who dare speak out. The inquisitors you call masters assume guilt and execute millions on a whim. And why? Why do you do this? Because you know Chaos is there but you do not know how to fight it, so you crush your own citizens for fear that they might aid the Enemy. The Imperium suffers because of Chaos. No matter how hard you fight, that will never change. Chaos exists in a state of permanent victory over you - you dance to our tune, mortal one, you butcher and torture and repress one another because the gods of the warp require you to. The Imperium is founded on Chaos. My lord Tzeentch won your war a long, long time ago.";
+	name = "tome"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "YQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/archaeological_find/remains/xeno{
@@ -10877,6 +11167,23 @@
 	firelevel = 1.#INF
 	},
 /turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/caves/dark)
+"Zg" = (
+/obj/machinery/door/airlock/arbiter{
+	color = "grey";
+	name = "Groomlake Facility";
+	req_access = list()
+	},
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/caves/dark)
 "Zh" = (
 /obj/effect/floor_decal/turf/necro1,
@@ -10969,11 +11276,17 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Zw" = (
-/obj/structure/landmine,
+/obj/structure/table/steel,
+/obj/item/stack/thrones3/ten,
+/obj/item/stack/thrones3/ten,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/dark)
+/area/cadiaoutpost/oa/tradefloor)
 "Zx" = (
 /obj/structure/iv_drip,
 /obj/item/reagent_containers/ivbag/blood/OPlus,
@@ -14390,7 +14703,7 @@ Xe
 Xe
 Xe
 Qq
-Lx
+oe
 Xe
 Xe
 ui
@@ -14904,7 +15217,7 @@ dq
 jC
 Bv
 Xe
-wB
+ui
 Xe
 Xe
 ui
@@ -15557,7 +15870,7 @@ SI
 SI
 SI
 fm
-ri
+Kz
 ku
 PY
 PY
@@ -16333,7 +16646,7 @@ lm
 dl
 kO
 Kz
-fm
+fl
 fm
 lm
 PY
@@ -16589,7 +16902,7 @@ iD
 iO
 lm
 fm
-fm
+gW
 PY
 lm
 PY
@@ -16716,7 +17029,7 @@ ui
 Xe
 Xe
 Xe
-wB
+ui
 Xe
 Xe
 Xe
@@ -17104,7 +17417,7 @@ iO
 CG
 IY
 ku
-fm
+gW
 PY
 PY
 RH
@@ -17218,7 +17531,7 @@ ui
 ui
 ui
 ui
-xn
+VK
 xn
 ui
 SI
@@ -17500,10 +17813,10 @@ bf
 PI
 PI
 PI
-PI
-PI
-PI
-PI
+qb
+qb
+qb
+qb
 PI
 PI
 PI
@@ -17620,7 +17933,7 @@ lm
 Kz
 fm
 PY
-fm
+fl
 PY
 lm
 PY
@@ -17744,7 +18057,7 @@ ui
 Xe
 Xe
 Xe
-wB
+ui
 Xe
 Xe
 Xe
@@ -17756,11 +18069,11 @@ SI
 bf
 PI
 PI
-PI
-PI
-PI
-PI
-PI
+qb
+qb
+kR
+kR
+qb
 PI
 PI
 PI
@@ -17872,7 +18185,7 @@ fm
 lm
 fm
 fm
-fm
+gW
 JH
 PY
 JH
@@ -18013,14 +18326,14 @@ SI
 bf
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+qb
+kR
+kR
+kR
+qb
+qb
+qb
+qb
 PI
 PI
 PI
@@ -18129,7 +18442,7 @@ kO
 fm
 lm
 tP
-fm
+gW
 ql
 md
 PY
@@ -18270,14 +18583,14 @@ SI
 bf
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+qb
+kR
+kR
+kR
+kR
+kR
+kR
+qb
 PI
 PI
 PI
@@ -18527,14 +18840,14 @@ SI
 PI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-bf
-PI
+qb
+kR
+kR
+kR
+kR
+kR
+kR
+qb
 PI
 PI
 PI
@@ -18759,7 +19072,7 @@ UD
 Xe
 Xe
 Xe
-Xe
+ib
 Xe
 RL
 Xe
@@ -18784,14 +19097,14 @@ SI
 SI
 SI
 SI
-SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+qb
+kR
+kR
+kR
+kR
+kR
+kR
+qb
 PI
 PI
 PI
@@ -19041,14 +19354,14 @@ ui
 ui
 ui
 ui
-SI
-SI
-PI
-PI
-PI
-PI
-bf
-bf
+qb
+QS
+oz
+kR
+kR
+kR
+kR
+qb
 bf
 PI
 PI
@@ -19059,8 +19372,8 @@ SY
 SY
 qV
 qV
-qV
-qV
+Vg
+Vg
 cB
 Vt
 Tq
@@ -19299,25 +19612,25 @@ FJ
 Cj
 ui
 ui
-SI
-PI
-PI
-PI
-PI
-PI
+QS
+QS
+kR
+kR
+kR
+kR
+qb
 bf
 bf
-bf
 PI
 PI
-PI
-PI
-SY
-SY
-qV
-qV
-qV
-qV
+kR
+kR
+Vg
+Vg
+Vg
+Vg
+Vg
+Vg
 cB
 Vt
 MY
@@ -19554,27 +19867,27 @@ Mo
 Mo
 Mo
 Mo
-Er
+Mo
 ui
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 SI
-PI
-PI
-PI
-PI
-bf
-bf
-bf
-bf
-bf
-PI
-PI
-PI
-SY
-SY
-SY
-SY
-SY
-SY
+cB
+cB
+cB
+cB
+cB
+cB
 cB
 Vt
 Vt
@@ -19804,35 +20117,35 @@ Xe
 AX
 Xe
 Xe
-wB
-Mo
-Mo
-Mo
-Mo
-Mo
-Mo
-mp
 ui
-SI
-PI
-PI
-PI
-PI
-bf
-bf
-bf
-bf
-bf
-PI
-PI
-PI
-SY
-SY
-SY
-SY
-SY
-SY
-cB
+Mo
+Mo
+Mo
+Mo
+Mo
+Mo
+Mo
+Mo
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+Hc
+uA
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
 Vt
 Ml
 Ml
@@ -20068,30 +20381,30 @@ Mo
 uM
 Mo
 Mo
-Wl
-ui
-SI
-PI
-PI
-PI
-PI
-bf
-bf
-bf
-bf
-bf
-PI
-PI
-PI
-SY
-SY
-SY
-SY
-SY
-SY
-cB
+Mo
+Mo
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+wB
+mq
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
+YZ
 Vt
-Vt
+YZ
 YZ
 Vt
 Vt
@@ -20327,27 +20640,27 @@ Mc
 Mo
 Mo
 ui
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
+kR
 SI
-PI
-PI
-bf
-PI
-bf
-bf
-bf
-bf
-bf
-bf
-PI
-PI
-SY
-SY
-SY
-SY
-SY
-SY
 cB
-Vt
+cB
+cB
+cB
+cB
+cB
+YZ
+YZ
 YZ
 aV
 aV
@@ -20576,7 +20889,7 @@ ui
 Xe
 Xe
 ui
-Mo
+Er
 Mo
 Mo
 hT
@@ -20584,25 +20897,25 @@ BW
 Mo
 Fn
 ui
+QS
+oz
+kR
+qb
+qb
+bf
+bf
+bf
+bf
+bf
+bf
+kR
+kR
+kR
+kR
+kR
 SI
-PI
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-PI
-PI
-PI
-PI
-PI
-PI
-SY
-SY
+cB
+cB
 cB
 Vt
 Vt
@@ -20833,7 +21146,7 @@ ui
 dq
 Xe
 ui
-Mo
+mp
 Mo
 Mo
 Gi
@@ -20841,25 +21154,25 @@ Mo
 Mo
 ui
 ui
-SI
-PI
+QS
+QS
+kR
+qb
 bf
 bf
 bf
-PI
 bf
 bf
 bf
 bf
-bf
-PI
-PI
 PI
 PI
 PI
 PI
-SY
-SY
+kR
+kR
+Vg
+Vg
 cB
 Vt
 qh
@@ -21063,8 +21376,8 @@ ui
 ui
 ui
 ui
+Zg
 Fj
-Fj
 ui
 SI
 SI
@@ -21090,33 +21403,33 @@ Xe
 Xe
 Xe
 ui
+Wl
+Mo
 oM
 Mo
 Mo
-Mo
-Mo
 ui
 ui
-SI
-SI
-PI
-bf
-bf
-bf
-PI
-bf
+qb
+kR
+kR
+qb
+qb
 bf
 bf
 bf
 bf
-PI
-PI
-PI
+bf
 bf
 bf
 PI
-SY
-SY
+PI
+PI
+bf
+bf
+PI
+Vg
+Vg
 cB
 Vt
 Vt
@@ -21354,10 +21667,10 @@ ui
 ui
 ui
 SI
-SI
-PI
-bf
-bf
+qb
+kR
+qb
+qb
 bf
 bf
 bf
@@ -21611,12 +21924,12 @@ SI
 SI
 SI
 SI
+qb
+qb
+qb
 bf
 bf
-PI
 bf
-PI
-PI
 bf
 bf
 bf
@@ -27273,7 +27586,7 @@ ru
 ui
 oa
 FE
-QS
+FE
 nc
 nc
 nc
@@ -27909,7 +28222,7 @@ PI
 PI
 PI
 Tn
-fl
+XE
 Of
 Of
 Of
@@ -28683,7 +28996,7 @@ Tn
 Iu
 Of
 Of
-fl
+XE
 Tn
 Bp
 tn
@@ -31977,7 +32290,7 @@ PI
 PI
 eD
 Ez
-kR
+sG
 dj
 dj
 pq
@@ -34444,7 +34757,7 @@ ui
 QG
 Xe
 EF
-ui
+EN
 QG
 Xe
 sH
@@ -34482,7 +34795,7 @@ UU
 RP
 UU
 UU
-Vg
+UU
 UU
 UU
 ii
@@ -34984,7 +35297,7 @@ qV
 qV
 qV
 UU
-UU
+rN
 UU
 UU
 Gx
@@ -35068,8 +35381,8 @@ PI
 eD
 Ez
 Ez
-Ez
-Ez
+az
+az
 Ez
 Ez
 Ez
@@ -35325,8 +35638,8 @@ PI
 eD
 eD
 eD
-eD
-eD
+PY
+PY
 eD
 eD
 eD
@@ -35581,10 +35894,10 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
-PI
+ah
+PY
+PY
+ah
 PI
 PI
 PI
@@ -35839,8 +36152,8 @@ PI
 PI
 PI
 ah
-ah
-ah
+PY
+PY
 ah
 PI
 PI
@@ -38216,7 +38529,7 @@ Tn
 ch
 HK
 Tn
-VP
+HK
 HK
 HK
 HK
@@ -41122,7 +41435,7 @@ Xe
 Xe
 Xe
 ui
-Zw
+Xe
 Xe
 Xe
 Xe
@@ -42111,7 +42424,7 @@ PI
 PY
 PY
 SI
-Hg
+SI
 SI
 SI
 SI
@@ -43380,7 +43693,7 @@ HD
 HD
 FY
 aX
-SI
+PI
 PI
 PI
 PI
@@ -43629,15 +43942,15 @@ PI
 PI
 aX
 aX
-Gk
-Yo
-aX
-Yo
-Gk
 aX
 aX
 aX
-SI
+aX
+aX
+aX
+aX
+aX
+PI
 PI
 PI
 PI
@@ -43884,17 +44197,17 @@ PI
 PI
 PI
 PI
-aX
-oz
-aj
-aj
-aX
-nO
-nO
-oL
-aX
-SI
-SI
+nd
+nd
+nd
+nd
+nd
+nd
+nd
+nd
+nd
+PI
+PI
 PI
 PI
 PI
@@ -44131,8 +44444,8 @@ bf
 bf
 bf
 bf
+PI
 bf
-bf
 PI
 PI
 PI
@@ -44141,17 +44454,17 @@ PI
 PI
 PI
 PI
-aX
-aj
 nd
-aj
-aX
-nO
-VX
-nO
-aX
-SI
-SI
+nd
+nd
+nd
+nd
+nd
+nd
+nd
+nd
+PI
+PI
 PI
 PI
 PI
@@ -44394,32 +44707,32 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
-PI
-aX
+SI
+SI
+SI
+SI
 nU
-aj
-az
-aX
-Ec
-nO
-tK
-aX
+nU
+nU
+nU
+nU
+nU
+nU
+nU
+nU
 SI
 SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
 PI
 PI
 PI
@@ -44651,32 +44964,32 @@ PI
 PI
 PI
 PI
-PI
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+SI
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+SI
 PI
 PI
 PI
@@ -44907,33 +45220,33 @@ PI
 PI
 PI
 PI
-PI
-PI
-xv
-xv
-xv
-xv
+SI
+SI
+Pw
+Pw
+Pw
+Pw
 aQ
-xv
+Pw
 mi
 wm
 wm
-wm
+YP
 wm
 ck
 wm
-xv
-BE
-VW
-SP
-Ir
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+Pw
+vf
+QA
+wA
+qE
+Pw
+Hg
+cD
+Sr
+QE
+Pw
+SI
 PI
 PI
 PI
@@ -45164,33 +45477,33 @@ PI
 PI
 PI
 PI
-PI
-xv
-xv
-xv
-xv
+SI
+Pw
+Pw
+Pw
+Pw
 mi
 mi
 ln
 mi
 wm
-Hc
-EL
 mi
 mi
 mi
-xv
-Nd
-VW
-VW
-Nd
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+mi
+mi
+Pw
+hr
+QA
+QA
+hr
+yl
+mi
+mi
+mi
+hq
+Pw
+SI
 PI
 PI
 PI
@@ -45414,21 +45727,21 @@ PY
 bf
 bf
 bf
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+Pw
 wm
 ln
 wm
 mi
 mi
-mi
+wm
 wm
 wm
 wm
@@ -45437,17 +45750,17 @@ wm
 mi
 mi
 BX
-VW
-vr
-VW
-VW
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+QA
+QA
+QA
+QA
+fI
+mi
+mi
+mi
+Rc
+Pw
+SI
 PI
 PI
 PI
@@ -45671,40 +45984,40 @@ PY
 PY
 bf
 bf
+SI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
-wm
-mi
-wm
-mi
-mi
-mi
-mi
-mi
-mi
-mi
-mi
-mi
-mi
-xv
-Gz
 Pw
-EH
+Pw
+Pw
+Pw
+Pw
+Pw
+wm
+mi
+wm
+mi
+mi
+mi
+mi
+wm
+mi
+mi
+mi
+mi
+mi
+Pw
+vr
 QA
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+QA
+QA
+Pw
+mi
+mi
+mi
+hq
+Pw
+SI
 PI
 PI
 PI
@@ -45928,20 +46241,20 @@ PY
 PY
 bf
 bf
+SI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
-wm
+Pw
+BE
+VW
+SP
+Ir
+Pw
+ID
 mi
 wm
 mi
-wm
+mi
 wm
 wm
 wm
@@ -45950,18 +46263,18 @@ wm
 wm
 mi
 wm
-xv
-xv
-xv
-xv
-xv
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+Pw
+tL
+QA
+QA
+QA
+Pw
+mi
+mi
+mi
+aj
+Pw
+SI
 PI
 PI
 PI
@@ -46185,40 +46498,40 @@ PY
 PY
 bf
 bf
+SI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
-wm
-mi
-wm
-mi
-mi
-EL
-Hc
-wm
-Hc
-EL
-mi
-mi
-mi
-xv
-BE
+Pw
+Nd
 VW
-SP
-Ir
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+VW
+Nd
+Pw
+wm
+mi
+wm
+mi
+mi
+mi
+mi
+wm
+mi
+mi
+mi
+mi
+mi
+Pw
+QA
+QA
+rG
+kq
+Pw
+xD
+Zw
+UF
+aj
+Pw
+SI
 PI
 PI
 PI
@@ -46251,7 +46564,7 @@ Xe
 pA
 zl
 zl
-Zw
+Xe
 gH
 Xe
 uz
@@ -46443,39 +46756,39 @@ PY
 bf
 bf
 PI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
-mi
-mi
-mi
-mi
-wm
-wm
-wm
-wm
-wm
-wm
-wm
-mi
-wm
-xv
-Nd
+Pw
 VW
 VW
-Nd
+VW
+VW
 xv
-PI
-PI
-PI
-PI
-PI
-PI
+mi
+mi
+wm
+mi
+mi
+wm
+wm
+wm
+wm
+cO
+wm
+mi
+wm
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+SI
 PI
 PI
 PI
@@ -46700,39 +47013,39 @@ PY
 bf
 bf
 PI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
+Pw
+Gz
+wW
+EH
+Pq
+Pw
 wm
 ww
 wm
 mi
 mi
-EL
-Hc
+mi
+mi
 wm
-Hc
-EL
 mi
 mi
 mi
-BX
-VW
+mi
+mi
+Pw
+vf
 vr
-VW
-VW
-xv
-PI
-PI
-PI
-PI
-PI
-PI
+wA
+qE
+Pw
+SI
+SI
+SI
+SI
+SI
+SI
 PI
 PI
 PI
@@ -46957,34 +47270,34 @@ PY
 bf
 bf
 PI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
-wm
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+zp
 ww
 wm
 mi
-wm
-wm
-wm
-wm
+mi
 wm
 wm
 wm
 mi
 wm
-xv
-Gz
+wm
+mi
+wm
 Pw
-EH
 QA
-xv
-PI
+QA
+QA
+QA
+Pw
+SI
 PI
 PI
 PI
@@ -47028,10 +47341,10 @@ fP
 Bi
 zl
 SI
-PY
-PY
-PY
-PY
+bf
+bf
+bf
+bf
 bf
 bf
 bf
@@ -47214,34 +47527,34 @@ PY
 bf
 bf
 PI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
+Pw
+BE
+SP
+VW
+VW
 xv
-wm
+ww
 ww
 wm
 mi
 mi
-EL
-Hc
+mi
+mi
 wm
-Hc
-EL
+mi
+wm
 mi
 mi
 mi
-xv
-xv
-xv
-xv
-xv
-xv
-PI
+Xb
+QA
+QA
+QA
+Rx
+Pw
+SI
 PI
 PI
 PI
@@ -47285,9 +47598,9 @@ fP
 Bi
 zl
 SI
-PY
-PY
-PY
+bf
+bf
+bf
 bf
 bf
 bf
@@ -47471,34 +47784,34 @@ PY
 bf
 bf
 PI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
+Pw
+Nd
+VW
+VW
+VW
+Pw
 wm
 ww
 wm
 mi
-wm
-wm
-wm
-wm
+mi
 wm
 wm
 wm
 mi
 wm
-xv
-BE
-VW
-SP
-Ir
-xv
-PI
+mi
+mi
+wm
+Pw
+QA
+QA
+QA
+VX
+Pw
+SI
 PI
 PI
 PI
@@ -47542,10 +47855,10 @@ zl
 zl
 zl
 SI
-PY
 bf
-PY
-PY
+bf
+bf
+bf
 bf
 bf
 bf
@@ -47728,34 +48041,34 @@ PY
 bf
 bf
 PI
+SI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-xv
+Pw
+VW
+VW
+VW
+VW
+Pw
 wm
 ww
-wm
 mi
 mi
-EL
-Hc
+mi
+mi
+mi
+mi
+mi
 wm
-Hc
-EL
 mi
 sA
 mi
-xv
-Nd
-VW
-VW
-Nd
-xv
-PI
+Pw
+QA
+QA
+QA
+QA
+Pw
+SI
 PI
 PI
 PI
@@ -47802,9 +48115,9 @@ SI
 bf
 bf
 bf
-PY
-PY
-PY
+bf
+bf
+bf
 bf
 PY
 PY
@@ -47985,34 +48298,34 @@ PY
 PY
 bf
 bf
+SI
 bf
-bf
-bf
-bf
-bf
-bf
-bf
-xv
+Pw
+Ir
+wW
+EH
+Pq
+Pw
 wm
-Hc
+mi
 wm
 sA
-wm
-xv
-xv
-xv
-xv
-xv
-xv
-xv
+oL
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
 mi
-BX
-VW
-vr
-VW
-VW
-xv
-PI
+Pw
+QA
+rG
+hp
+QA
+Pw
+SI
 PI
 PI
 PI
@@ -48242,34 +48555,34 @@ PY
 PY
 bf
 bf
+SI
 bf
-bf
-bf
-bf
-bf
-bf
-bf
-xv
-xv
-xv
-xv
-xv
-xv
-xv
-bf
-bf
-bf
-bf
-bf
-xv
-xv
-xv
-Gz
 Pw
-EH
-Xb
-xv
-PI
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+SI
+SI
+SI
+SI
+SI
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+Pw
+SI
 PI
 PI
 PI
@@ -48317,9 +48630,9 @@ bf
 bf
 bf
 bf
-bf
-bf
-bf
+PY
+PY
+PY
 PY
 PY
 bf
@@ -48499,34 +48812,34 @@ PY
 PY
 bf
 bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
+SI
 Af
 Af
 Af
-bf
-bf
-bf
-xv
-xv
-xv
-xv
-xv
-xv
-PI
+SI
+SI
+SI
+EL
+EL
+EL
+EL
+EL
+EL
+SI
 PI
 PI
 PI
@@ -48537,7 +48850,7 @@ PI
 PI
 PY
 PY
-PI
+PY
 PI
 PI
 SI
@@ -48573,8 +48886,8 @@ bf
 bf
 bf
 bf
-bf
-bf
+PY
+PY
 bf
 bf
 bf
@@ -48779,7 +49092,7 @@ Af
 bf
 bf
 bf
-PI
+bf
 PI
 PI
 PI
@@ -48795,7 +49108,7 @@ PI
 PY
 PY
 PY
-PI
+PY
 PI
 SI
 SI
@@ -48830,7 +49143,7 @@ bf
 bf
 bf
 bf
-bf
+PY
 bf
 bf
 bf
@@ -49052,8 +49365,8 @@ PI
 PY
 PY
 PY
-PI
-PI
+PY
+PY
 PI
 PI
 PI
@@ -49275,10 +49588,10 @@ bf
 bf
 bf
 bf
-PI
-PI
-PI
-PI
+bf
+bf
+bf
+bf
 PI
 PI
 PI
@@ -49310,7 +49623,7 @@ PY
 PI
 bf
 PI
-PI
+PY
 PI
 PI
 PI
@@ -49365,7 +49678,7 @@ bf
 bf
 bf
 bf
-PY
+PI
 bf
 bf
 bf
@@ -49534,8 +49847,8 @@ bf
 bf
 PI
 PI
-PI
-PI
+bf
+bf
 PI
 PI
 PI
@@ -49567,8 +49880,8 @@ PY
 PI
 bf
 PI
-PI
-PI
+PY
+PY
 PI
 PI
 PI
@@ -49606,32 +49919,32 @@ bf
 bf
 PY
 PY
+PY
+PY
+PY
+bf
+bf
+PY
+PY
+PY
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+PY
+PY
+PY
 ai
 PY
 PY
-bf
-bf
 PY
 PY
-PY
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-bf
-bf
+PI
+PI
 PI
 PI
 PI
@@ -49825,6 +50138,8 @@ bf
 bf
 PI
 PI
+PY
+PY
 PI
 PI
 PI
@@ -49833,62 +50148,60 @@ PI
 PI
 PI
 PI
+bf
+PY
+PY
+PY
+PY
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+PY
+PY
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+PY
+PY
+PY
+PY
+PY
+PY
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+PY
+PY
+PY
+PY
+by
+PY
+PY
+PY
+bf
 PI
-PI
-bf
-PY
-PY
-PY
-PY
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-PY
-PY
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-PY
-PY
-PY
-PY
-PY
-PY
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-bf
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
 PI
 PI
 PI
@@ -50083,8 +50396,8 @@ bf
 PI
 PI
 PI
-PI
-PI
+PY
+PY
 PI
 PI
 PI
@@ -50123,7 +50436,7 @@ bf
 bf
 bf
 PY
-PY
+bf
 bf
 bf
 bf
@@ -50137,15 +50450,15 @@ bf
 bf
 HT
 PY
+Dz
 PY
 PY
 PY
 PY
 PY
 PY
-PY
-PY
-PY
+Af
+bf
 PI
 PI
 PI
@@ -50341,8 +50654,8 @@ PI
 PI
 PI
 PI
-PI
-PI
+PY
+PY
 PI
 PI
 PI
@@ -50382,27 +50695,27 @@ PI
 bB
 PY
 PY
+PY
+PY
+PY
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
 Af
-Af
-PY
 bf
-bf
-bf
-bf
-bf
-bf
-bf
-PY
-PY
-PY
-PY
-PY
-PY
-ai
-PY
-PY
-PY
-PY
 PI
 PI
 PI
@@ -50599,7 +50912,7 @@ PI
 PI
 PI
 PI
-PI
+PY
 PI
 PI
 PI
@@ -50656,11 +50969,11 @@ PY
 PY
 PY
 PY
-by
 PY
 PY
-PY
+Af
 bf
+PI
 PI
 PI
 PI
@@ -50856,9 +51169,9 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
+PY
+PY
+PY
 PI
 PI
 PI
@@ -50910,15 +51223,15 @@ PY
 PY
 PY
 PY
-Dz
 PY
+Pv
 PY
-PY
-PY
-PY
+ai
 PY
 Af
 bf
+PI
+PI
 PI
 PI
 PI
@@ -51115,8 +51428,8 @@ PI
 PI
 PI
 PI
-PI
-PI
+PY
+PY
 PI
 PI
 PI
@@ -51166,16 +51479,16 @@ PY
 PY
 PY
 PY
-PY
-PY
-PY
+Pv
 PY
 PY
 PY
 PY
 PY
 Af
-bf
+Af
+PI
+PI
 PI
 PI
 PI
@@ -51373,8 +51686,8 @@ PI
 PI
 PI
 PI
-PI
-PI
+PY
+PY
 PI
 PI
 bf
@@ -51417,22 +51730,22 @@ bf
 bf
 bf
 bf
+bf
+bf
+bf
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
 Af
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-Af
-bf
+PI
+PI
 PI
 PI
 PI
@@ -51579,7 +51892,7 @@ bf
 bf
 PY
 PY
-ai
+PY
 PY
 PY
 PY
@@ -51631,9 +51944,9 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
+PY
+PY
+PY
 PY
 PY
 by
@@ -51674,6 +51987,9 @@ PI
 PI
 bf
 bf
+bf
+bf
+bf
 PY
 PY
 PY
@@ -51681,15 +51997,12 @@ PY
 PY
 PY
 PY
-PY
-PY
-PY
-Pv
 PY
 PY
 PY
 Af
-bf
+PI
+PI
 PI
 PI
 PI
@@ -51889,8 +52202,8 @@ PI
 PI
 PI
 PI
-PI
-PI
+PY
+PY
 PY
 PY
 PY
@@ -51938,15 +52251,15 @@ PY
 PY
 PY
 PY
-PY
-Pv
+FZ
 PY
 PY
 PY
 PY
 PY
 Af
-Af
+PI
+PI
 PI
 PI
 PI
@@ -52145,9 +52458,9 @@ PI
 PI
 PI
 PI
-PY
-PY
-PY
+bf
+bf
+bf
 PY
 PY
 PY
@@ -52191,8 +52504,6 @@ bf
 bf
 bf
 bf
-PY
-PY
 PY
 PY
 PY
@@ -52204,6 +52515,8 @@ PY
 PY
 PY
 Af
+PI
+PI
 PI
 PI
 PI
@@ -52402,49 +52715,6 @@ bf
 bf
 bf
 bf
-PY
-bf
-bf
-PY
-PY
-PY
-PY
-bf
-bf
-bf
-bf
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-bf
-bf
 bf
 bf
 bf
@@ -52452,15 +52722,58 @@ PY
 PY
 PY
 PY
+bf
+bf
+bf
+bf
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+bf
+bf
+bf
+bf
+bf
 PY
 PY
 PY
+PY
+by
 PY
 PY
 PY
 PY
 PY
 Af
+PI
+PI
 PI
 PI
 PI
@@ -52657,9 +52970,9 @@ PY
 bf
 bf
 bf
-PY
-PY
-PY
+bf
+bf
+bf
 bf
 bf
 bf
@@ -52711,13 +53024,13 @@ PY
 PY
 PY
 PY
-FZ
-PY
-PY
 PY
 PY
 PY
 Af
+Af
+PI
+PI
 PI
 PI
 PI
@@ -52914,19 +53227,19 @@ PY
 PY
 bf
 bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
+bf
 PY
 bf
 bf
 bf
 bf
-bf
-bf
-bf
-PY
-bf
-bf
-bf
-bf
 PI
 PI
 PI
@@ -52963,18 +53276,18 @@ bf
 bf
 bf
 bf
-tT
-PY
-PY
-PY
-PY
-PY
+vw
+Af
 PY
 PY
 PY
 PY
 PY
 Af
+Af
+PI
+PI
+PI
 PI
 PI
 PI
@@ -53171,7 +53484,7 @@ bf
 PY
 PY
 PY
-PY
+bf
 bf
 bf
 bf
@@ -53221,17 +53534,17 @@ bf
 bf
 bf
 bf
-bf
-PY
-PY
-PY
-by
-PY
-PY
-PY
-PY
-PY
 Af
+Af
+Af
+Af
+Af
+Af
+Af
+bf
+PI
+PI
+PI
 PI
 PI
 PI
@@ -53478,17 +53791,17 @@ bf
 bf
 bf
 bf
+Af
+Af
+Af
 bf
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-PY
-Af
-Af
+bf
+bf
+PI
+PI
+PI
+PI
+PI
 PI
 PI
 PI
@@ -53736,15 +54049,15 @@ bf
 bf
 bf
 bf
-vw
-Af
-PY
-PY
-PY
-PY
-PY
-Af
-Af
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
 PI
 PI
 PI
@@ -53932,18 +54245,11 @@ bf
 bf
 bf
 PY
-ai
+PY
 PY
 PY
 bf
 bf
-bf
-bf
-bf
-PY
-PY
-PY
-PY
 bf
 bf
 bf
@@ -53951,6 +54257,13 @@ PY
 PY
 PY
 PY
+bf
+bf
+PY
+PY
+PY
+PY
+PY
 PY
 bf
 bf
@@ -53994,14 +54307,14 @@ bf
 bf
 bf
 bf
-Af
-Af
-Af
-Af
-Af
-Af
-Af
-bf
+PI
+PI
+PI
+PI
+PI
+PI
+PI
+PI
 PI
 PI
 PI
@@ -54203,13 +54516,13 @@ PY
 PY
 PY
 PY
-bf
-bf
 PY
 PY
 PY
 PY
 PY
+PY
+PY
 bf
 bf
 PI
@@ -54250,10 +54563,10 @@ bf
 bf
 bf
 bf
-bf
-Af
-Af
-Af
+PI
+PI
+PI
+PI
 bf
 bf
 bf
@@ -54460,7 +54773,6 @@ PY
 PY
 PY
 PY
-bf
 PY
 PY
 PY
@@ -54468,6 +54780,7 @@ PY
 PY
 PY
 PY
+PY
 bf
 PI
 PI
@@ -54508,7 +54821,7 @@ bf
 bf
 bf
 bf
-bf
+PI
 bf
 bf
 PI
@@ -56767,7 +57080,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PY
 PY
 PI
@@ -57024,8 +57337,8 @@ PI
 PI
 PI
 PI
-PY
-PY
+PI
+PI
 PY
 PI
 PI
@@ -57281,9 +57594,9 @@ PY
 PI
 PI
 PI
-PY
-PY
-PY
+PI
+PI
+PI
 PI
 PI
 PI
@@ -57538,13 +57851,13 @@ PY
 PY
 PY
 PI
-PY
-PY
-PY
 PI
 PI
-PY
-PY
+PI
+PI
+PI
+PI
+PI
 PI
 PI
 PI
@@ -57796,11 +58109,11 @@ PY
 PY
 PY
 PY
-PY
 PI
 PI
 PI
-PY
+PI
+PI
 PI
 PI
 PI
@@ -58057,7 +58370,7 @@ PY
 PI
 PI
 PI
-PY
+PI
 PI
 PI
 PI
@@ -58314,7 +58627,7 @@ PY
 PI
 PI
 PI
-fZ
+PI
 PI
 PI
 PI
@@ -58571,10 +58884,10 @@ PY
 PI
 PI
 PI
-PY
 PI
 PI
-PY
+PI
+PI
 PY
 PY
 PI
@@ -58831,9 +59144,9 @@ PY
 PY
 PI
 PI
-PY
-PY
-PY
+PI
+PI
+PI
 PI
 PI
 PI
@@ -59088,8 +59401,8 @@ PY
 PY
 PI
 PI
-PY
-PY
+PI
+PI
 PI
 PI
 PI
@@ -59347,7 +59660,7 @@ PI
 PI
 PY
 PY
-PY
+PI
 PI
 PI
 PI

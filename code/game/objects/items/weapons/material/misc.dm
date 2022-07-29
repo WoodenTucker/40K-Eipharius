@@ -83,10 +83,10 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 55
+	force = 33
 	sharp = 1
 	edge = 1
-	block_chance = 60
+	block_chance = 50
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
@@ -113,21 +113,21 @@
 	icon_state = "hellblade"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
-	force = 50
+	force = 40
 	sharp = 1
 	edge = 1
-	block_chance = 60
+	block_chance = 65
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 
 /obj/item/material/sword/commissword/sabre
 	name = "Sabre"
-	desc = "A well crafted sabre. Looks sharp."
+	desc = "A masteredcrafted sabre of exceptional quality, it has a duelists grip."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "sabre"
 	item_state = "sabre"
-	force = 70
+	block_chance = 65
 
 /obj/item/material/sword/choppa
 	name = "choppa"
@@ -136,7 +136,7 @@
 	icon_state = "choppa"
 	item_state = "choppa"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 35
+	force = 27
 	sharp = 1
 	edge = 1
 	hitsound = "slash_sound"
@@ -152,7 +152,7 @@
 	item_state = "slanarm"
 	attack_verb = list("stabbed", "impales", "rends", "tears", "flays", "rips")
 	force = 5
-	block_chance = 35
+	block_chance = 45
 	hitsound = 'sound/effects/slanattack.ogg'
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|HEAD
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)

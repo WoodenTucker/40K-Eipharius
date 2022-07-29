@@ -1,8 +1,8 @@
 // Enforcers
 
 /datum/job/enforcer
-	title = "Magistratum Enforcer"
-	supervisors = "The Administratum and Arbitrator"
+	title = "Planetary Enforcer"
+	supervisors = "the Rogue Trader"
 	total_positions = 3
 	spawn_positions = 3
 	social_class = SOCIAL_CLASS_MED
@@ -42,51 +42,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians and to assist the Administratum where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
-
-/datum/job/enforcer/arbitrator
-	title = "Magistratum Arbitrator"
-	supervisors = "The Administratum"
-	total_positions = 1
-	spawn_positions = 1
-	social_class = SOCIAL_CLASS_MED
-	selection_color = "#848484"
-	outfit_type = /decl/hierarchy/outfit/job/ig/arbitrator
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
-	sniper_skill = 7
-	shotgun_skill = 9
-	lmg_skill = 7
-	smg_skill = 7
-	medical_skill = 3
-	engineering_skill = 2
-	surgery_skill = 3
-	can_be_in_squad = FALSE
-	open_when_dead = TRUE
-	department_flag = SEC
-	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels,)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
-			            )
-
-
-	announced = FALSE
-
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
-		..()
-		H.fully_replace_character_name("[current_name]")
-		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
-		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
-		H.assign_random_quirk()
-//		H.witchblood() //Psyker Enforcers don't exist
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
-
-		to_chat(H, "<span class='notice'><b><font size=3>You are a veteran officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the civilians and to aid the Rogue Trader where necessary. The Magistratum is at your command, on this new world you must with the aid of the Administratum construct a semblance of order so that one day this unruly planet may provide Terra with both a bountiful tithe and loyal citizens able to prove themselves worthy of The Guard. But before this you must curry favor and power with the factions present both within and outside the fortress, for neither you nor your Enforcers can survive alone.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
 /*/datum/job/arbites
 	title = "Adeptus Arbites"
@@ -118,7 +74,7 @@ Begin Warhammer loadouts
 //Outfits
 
 /decl/hierarchy/outfit/job/ig/enforcer
-	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
+	name = OUTFIT_JOB_NAME("Planetary Enforcer")
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -130,7 +86,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team/delta
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(

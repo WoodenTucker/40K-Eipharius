@@ -24,7 +24,7 @@
 	/datum/job/mining,
 	/datum/job/cargo_tech,
 	/datum/job/qm,
-	/datum/job/administrator,
+	/datum/job/qm2,
 	/datum/job/enforcer,
 	/datum/job/innkeeper,
 	/datum/job/hydro,

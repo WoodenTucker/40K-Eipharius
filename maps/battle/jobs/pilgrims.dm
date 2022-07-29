@@ -225,8 +225,8 @@ Pilgrim Fate System
 
 
 /datum/job/administrator  //so that the inn always has someone working
-	title = "Administratum Adept"
-	department_flag = PIL|COM
+	title = "House Noble"
+	department_flag = PIL
 	social_class = SOCIAL_CLASS_HIGH //better off than your average gross pilgrim
 	total_positions = 1
 	spawn_positions = 1
@@ -252,8 +252,10 @@ Pilgrim Fate System
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and to collect taxes to pay off the tithe. Ensure there are pilgrims working the farm and manage the market, the stalls are yours to rent out! </font></b></span>")
-
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and distant merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on the Pilgrims as they are upon you. </font></b></span>")
 
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
@@ -295,7 +297,6 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/administrator
 	name = OUTFIT_JOB_NAME("Administrator")
 	uniform = /obj/item/clothing/under/rank/consort/adept
-	head = /obj/item/clothing/head/commissar/adept
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare

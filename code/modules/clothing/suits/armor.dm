@@ -671,7 +671,7 @@ obj/item/clothing/suit/armor
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 90)
+	armor = list(melee = 54, bullet = 58, laser = 54, energy = 30, bomb = 40, bio = 100, rad = 90)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -682,7 +682,7 @@ obj/item/clothing/suit/armor
 	icon_state = "acolytecoat"
 	item_state = "acolytecoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 90)
+	armor = list(melee = 54, bullet = 58, laser = 54, energy = 30, bomb = 40, bio = 100, rad = 90)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -707,7 +707,7 @@ obj/item/clothing/suit/armor
 	icon_state = "hereticuscoat"
 	item_state = "hereticuscoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 60, bullet = 60, laser = 50, energy = 20, bomb = 50, bio = 10, rad = 10) //walker here, i feel like i should give them more armor, but i wont touch this
+	armor = list(melee = 64, bullet = 64, laser = 60, energy = 20, bomb = 50, bio = 10, rad = 10) //walker here, i feel like i should give them more armor, but i wont touch this
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
