@@ -498,16 +498,9 @@
 	unloaded_icon = "combatrifle-e"
 	unwielded_unloaded_icon = "combatrifle-e"
 	wielded_unloaded_icon = "combatrifle-wielded-e"
-
 	gun_type = GUN_AUTOMATIC
-
 	w_class = ITEM_SIZE_HUGE
-
-	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
-	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic",   	 burst=1, fire_delay=3.5,  move_delay=0, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 2)
-		)
+	automatic = 1
 
 /obj/item/gun/projectile/automatic/mg08
 	name = "LMG Harbinger"
@@ -542,8 +535,7 @@
 	burst=1
 	move_delay=5
 	one_hand_penalty=7
-	automatic = 2
-	firemodes = list()
+	automatic = 1
 	gun_type = GUN_LMG
 
 /obj/item/gun/projectile/automatic/gpmg
@@ -575,13 +567,9 @@
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	fire_delay=2.2
-	burst=1
 	can_jam = FALSE
 	one_hand_penalty=7
-	burst_accuracy=list(0,-1,-1)
-	dispersion=list(0.0, 0.1, 0.1)
-	automatic = 2
-	firemodes = list()
+	automatic = 1
 	gun_type = GUN_LMG
 	move_delay=5
 
@@ -683,11 +671,10 @@
 	item_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
-	one_hand_penalty = 0
+	one_hand_penalty = 70 //WHY WOULD YOU FUCKING USE THIS
 	str_requirement = 10
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
-	firemodes = list()
 	accuracy = 0
 	automatic = 1
 	fire_delay = 4
@@ -732,8 +719,7 @@
 	move_delay= 2
 	accuracy = -0.7
 	dispersion=list(0.0, 0.8, 1.5)
-	automatic = 2.4
-	firemodes = list()
+	automatic = 1
 
 	gun_type = GUN_SHOTGUN
 
@@ -823,8 +809,7 @@
 	unwielded_unloaded_icon = "hmg-e"
 	wielded_unloaded_icon = "hmg-wielded-e"
 	burst = 1
-	automatic = 0.8
-	firemodes = list()
+	automatic = 1
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
@@ -838,7 +823,7 @@
 	one_hand_penalty = 7
 	accuracy = -1
 	fire_delay = 1.8
-	automatic = 0.8
+	automatic = 1
 	armor_penetration = 5 //this is melee
 
 // Boltgun
@@ -869,7 +854,6 @@
 	move_delay = 5
 	one_hand_penalty = 10
 	automatic = 1
-	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 0
 
@@ -952,7 +936,6 @@
 	burst = 1
 	move_delay = 3
 	automatic = 1
-	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = -1
 
@@ -993,7 +976,6 @@
 	burst = 1
 	move_delay = 3
 	automatic = 1
-	firemodes = list()
 	accuracy = 0 //only one gun per round so yeah 
 	gun_type = GUN_AUTOMATIC
 
@@ -1084,10 +1066,9 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 2
-	automatic = 0.8
-	firemodes = list()
+	automatic = 1
 
-//Eldar
+//Eldar 
 
 /obj/item/gun/projectile/eldar/scatapult
 	name = "Shuriken Catapult"
