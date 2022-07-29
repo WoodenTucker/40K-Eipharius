@@ -59,7 +59,7 @@
 /obj/item/material/mekmace
 	name = "scrap mace"
 	desc = "A mace normally used by the ork meks, made of scrap."
-	force = 30
+	force = 40
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
 	item_state = "mekmace"
@@ -134,7 +134,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 35
-	block_chance = 30
+	block_chance = 50 //50%
 	sharp = TRUE
 	edge = TRUE
 	hitsound = "slash_sound"
@@ -153,11 +153,11 @@
 	wielded_icon = "thunder_hammer-w"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	str_requirement = 12
-	force = 50
-	block_chance = 38
+	str_requirement = 18
+	force = 75
+	block_chance = 90 //percent
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 12
+	weapon_speed_delay = 12 //ITS A HOLY HAMMER
 
 // CHAINSWORD
 
@@ -171,7 +171,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 12
 	force = 44
-	block_chance = 10
+	block_chance = 55 //chance
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -190,8 +190,8 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 10
-	force = 40
-	block_chance = 25
+	force = 48
+	block_chance = 65
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -209,9 +209,9 @@
 	item_state = "pcsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 14
-	force = 45
-	block_chance = 35
+	str_requirement = 18
+	force = 50
+	block_chance = 75 //THIS SHIT HUGE
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -228,10 +228,10 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
-	str_requirement = 12
-	force = 25// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 49
-	block_chance = 25
+	str_requirement = 18
+	force = 20// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 60
+	block_chance = 90
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_HUGE
@@ -242,4 +242,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 16
+	weapon_speed_delay = 20 //should be enough
