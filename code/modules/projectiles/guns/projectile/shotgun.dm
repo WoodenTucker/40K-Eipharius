@@ -148,7 +148,7 @@
 	force = 25
 	max_shells = 5 //6 bullets in exchange for no slowdown
 	ammo_type = /obj/item/ammo_casing/shotgun
-	wielded_item_state = "cshotgun2
+	wielded_item_state = "cshotgun2"
 	move_delay= 0 //slowdown removed because... its literally supposed to be for fast combat and trench taking
 	one_hand_penalty = 5
 	accuracy = -1
