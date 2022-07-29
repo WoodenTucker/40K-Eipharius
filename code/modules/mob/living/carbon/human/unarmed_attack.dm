@@ -297,17 +297,14 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("claw")
 	eye_attack_text = "blades"
 	eye_attack_text_victim = "daggers"
-	damage = 35
+	damage = 30
 	sharp = 1
-	edge = 1
 	attack_sound = 'sound/effects/nidslash.ogg'
 
 
 /datum/unarmed_attack/rendingclaws/show_attack(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone, var/attack_damage)
 	var/obj/item/organ/external/affecting = target.get_organ(zone)
 	var/organ = affecting.name
-
-	attack_damage = rand(35,55) //lets crank this bad boy for nids
 
 	if(target == user)
 		user.visible_message("<span class='danger'>[user] [pick(attack_verb)] \himself in the [organ]!</span>")
