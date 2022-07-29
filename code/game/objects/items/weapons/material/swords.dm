@@ -10,8 +10,8 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_HUGE
-	force = 55
-	block_chance = 70
+	force = 35
+	block_chance = 35
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 // 
 	sharp = 1
@@ -19,11 +19,12 @@
 	attack_verb = list("slashed", "sliced")
 	hitsound = "slash_sound"
 	var/atk_mode = SLASH
+	block_chance = 35
 	applies_material_colour = FALSE
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_sword02.ogg'
 	equipsound = 'sound/items/holster_sword1.ogg'
-	sharpness = 25 //???
+	sharpness = 25
 	weapon_speed_delay = 8
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
 	drop_sound = 'sound/items/drop_sword.ogg'
@@ -126,18 +127,18 @@
 	block_chance = 30
 
 /obj/item/material/sword/katana
-	name = "katana"
-	desc = "Woefully underpowered in D20. This one looks pretty sharp."
+	name = "iron sword"
+	desc = "A well crafted iron sword."
 	icon_state = "katana"
 	item_state = "sabre"
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 30
-	block_chance = 35
+	force = 35
+	block_chance = 25
 
 /obj/item/material/sword/katana/replica
 	edge = 1
 	sharp = 1
-	force = 20
+	force = 33
 	block_chance = 30
 
 /obj/item/material/sword/sabre
@@ -145,8 +146,8 @@
 	desc = "Like a claymore but for an officer."
 	icon_state = "sabre"
 	item_state = "sabre"
-	force = 35
-	block_chance = 40
+	force = 33
+	block_chance = 45
 
 
 /obj/item/material/sword/machete
@@ -156,8 +157,8 @@
 	item_state = "machete"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
-	force = 45
-	block_chance = 55
+	force = 25
+	block_chance = 50
 
 
 /obj/item/material/sword/combat_knife
@@ -167,8 +168,8 @@
 	icon_state = "combatknife"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 20
-	block_chance = 15
+	force = 18
+	block_chance = 50
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
@@ -181,8 +182,8 @@
 /obj/item/material/sword/combat_knife/rare
 	name = "combat knife"
 	desc = "For self defense, and self offense. This model is made of special materials."
-	force = 25
-	block_chance = 15
+	force = 20
+	block_chance = 60
 	weapon_speed_delay = 5
 
 /obj/item/material/sword/combat_knife/catachan
@@ -192,9 +193,9 @@
 	icon_state = "catachanfang"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 30
-	block_chance = 40
-	weapon_speed_delay = 4
+	force = 25
+	block_chance = 70
+	weapon_speed_delay = 5
 
 
 /obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
@@ -221,14 +222,14 @@
 	icon_state = "chaos_knife"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force_divisor = 0.6
-	block_chance = 15
+	force = 24
+	block_chance = 30
+	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 7
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 
@@ -239,14 +240,14 @@
 	icon_state = "slaanesh_dagger"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force_divisor = 0.6
-	block_chance = 15
+	force = 24
+	block_chance = 30
+	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 7
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 
@@ -257,14 +258,14 @@
 	icon_state = "artknife"
 	item_state = "artknife"//"knife"
 	attack_verb = list("slashed")
-	force_divisor = 0.6
-	block_chance = 15
+	force = 24
+	block_chance = 30
+	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
 	equipsound = 'sound/items/holster_knife.ogg'
 	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	weapon_speed_delay = 8
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
 	var/skinning = 0
