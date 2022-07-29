@@ -21,8 +21,8 @@
 	worn_state = "consort"
 
 /obj/item/clothing/under/rank/consort/adept
-	name = "adept\'s uniform"
-	desc = "A drab grey uniform fit for a self-important pencil pusher."
+	name = "noble\'s uniform"
+	desc = "A drab grey outfit fit for a self-important noble."
 	icon_state = "consort"
 	worn_state = "consort"
 
