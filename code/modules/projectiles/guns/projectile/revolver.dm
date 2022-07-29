@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/revolver
 	name = "revolver"
-	desc = "The Lumoco Arms HE Colt is a choice revolver for when you absolutely, positively need to put a hole in the other guy. Uses .357 ammo."
+	desc = "The Lumoco Arms HE Colt is a choice revolver for when you need to put a hole in the other guy. Uses .357 ammo."
 	icon_state = "cptrevolver"
 	item_state = "crevolver"
 	caliber = "357"
@@ -100,7 +100,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = -1 //not the best craftsmanship
+	accuracy = -0.4 //not the best craftsmanship
 	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -111,7 +111,7 @@
 
 /obj/item/gun/projectile/necros
 	name = "necros revolver"
-	desc = "The necros is a very heavy revolver used commonly by merchants. Uses .44 magnum ammo."
+	desc = "The necros is a heavy revolver used commonly by merchants. Uses .44 magnum ammo."
 	icon_state = "necros"
 	item_state = "crevolver"
 	caliber = ".44"
@@ -119,7 +119,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 20
-	accuracy = -1
+	accuracy = -0.5
 	fire_delay= 2.8
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -138,7 +138,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 10
-	accuracy = 0
+	accuracy = -0.3
 	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
