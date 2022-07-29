@@ -15,9 +15,9 @@
 	one_hand_penalty = 10
 	empty_icon = "boltaction-e"
 	far_fire_sound = "sniper_fire"
-	move_delay= 2
+	move_delay = 3
 	one_hand_penalty = 3
-	accuracy = 0
+	accuracy = -2
 	fire_delay = 3
 	force = 15
 	var/gping = TRUE
@@ -76,6 +76,69 @@
 		visible_message("[user] quickly attaches a scope to the [src] and adjusts it's firing mechanism.")
 		qdel(src)
 
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
+	name = "\improper Boscolet Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
+	icon_state = "boltactionsharp"
+	item_state = "boltactionsharp"
+	empty_icon = "boltactionsharp-e"
+	accuracy = -2.5
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
+		qdel(src)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly detaches a scope from the [src] and adjusts it's firing mechanism.")
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
+	name = "Mark IV .338 Stub Rifle"
+	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
+	icon_state = "needler"
+	item_state = "needler"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	caliber = ".338"
+	screen_shake = 1.2 //extra kickback
+	max_shells = 10
+	ammo_type = /obj/item/ammo_casing/lp338
+	one_hand_penalty = 50
+	accuracy = -2.3
+	gun_type = GUN_SNIPER
+	far_fire_sound = "sniper_fire"
+	gping = FALSE
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2.5)
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
+	name = "Mark IVb Needler Sniper Rifle"
+	desc = "Powerful needler rifle, chambered in .338 and issued to the Adeptus Astartes for long-range assasinations."
+	fire_sound = 'sound/weapons/guns/fire/needler_fire.ogg'
+	far_fire_sound = "needler_fire"
+
 /obj/item/ammo_magazine/lp338
 	name = "magazine (.338 Lapua Magnum)"
 	icon_state = "needler"
@@ -111,10 +174,22 @@
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 	name = "\improper Triangong 4-46"
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one is made of quality materials and has been laboured over extensively by expert hands."
-	move_delay = 1
+	move_delay = 2.5
 	one_hand_penalty = 3
-	accuracy = 0
+	accuracy = -2
 	fire_delay = 4
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2.5)
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
 	name = "\improper Stub Rifle"
@@ -211,9 +286,9 @@
 	str_requirement = 8
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	empty_icon = "winchester-e"
-	move_delay = 2
+	move_delay = 3
 	one_hand_penalty = 4
-	accuracy = -0.2
+	accuracy = -1.5
 	fire_delay= 3
 
 	ammo_type = list(
@@ -223,9 +298,9 @@
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
 	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
-	move_delay= 1.7
+	move_delay= 2.5
 	one_hand_penalty = 3.5
-	accuracy = 0
+	accuracy = -1
 	fire_delay = 2
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
@@ -240,7 +315,7 @@
 	empty_icon = "sawnchester-e"
 	one_hand_penalty = 1
 	fire_delay = 2
-	accuracy = -1
+	accuracy = -2
 	armor_penetration = 0
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
@@ -435,9 +510,16 @@
 	unloaded_icon = "combatrifle-e"
 	unwielded_unloaded_icon = "combatrifle-e"
 	wielded_unloaded_icon = "combatrifle-wielded-e"
+
 	gun_type = GUN_AUTOMATIC
+
 	w_class = ITEM_SIZE_HUGE
-	automatic = 1
+
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=2.5,    move_delay=null, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=3.5,  move_delay=0, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 2)
+		)
 
 /obj/item/gun/projectile/automatic/mg08
 	name = "LMG Harbinger"
@@ -472,7 +554,8 @@
 	burst=1
 	move_delay=5
 	one_hand_penalty=7
-	automatic = 1
+	automatic = 2
+	firemodes = list()
 	gun_type = GUN_LMG
 
 /obj/item/gun/projectile/automatic/gpmg
@@ -504,9 +587,13 @@
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	fire_delay=2.2
+	burst=1
 	can_jam = FALSE
 	one_hand_penalty=7
-	automatic = 1
+	burst_accuracy=list(0,-1,-1)
+	dispersion=list(0.0, 0.1, 0.1)
+	automatic = 2
+	firemodes = list()
 	gun_type = GUN_LMG
 	move_delay=5
 
@@ -518,9 +605,9 @@
 	wielded_item_state = "machinepistol-wielded"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	move_delay= 1.5
+	move_delay = 2.2
 	one_hand_penalty = 4
-	accuracy = -2
+	accuracy = -4
 	fire_delay = 1.7
 	automatic = 1
 
@@ -543,9 +630,9 @@
 	desc = "A specialty autogun made by frontier gunsmiths - an improved version of the Mk.22 Autogun with a more stable firing platform."
 	icon_state = "autorifle"
 	item_state = "autorifle"
-	move_delay= 1.4
+	move_delay = 2
 	one_hand_penalty = 3
-	accuracy = -1
+	accuracy = -3.5
 	fire_delay = 1.6
 	armor_penetration = 8
 
@@ -568,9 +655,9 @@
 	unloaded_icon = "auto_grim-e"
 	loaded_icon = "auto_grim"
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
-	move_delay= 2
+	move_delay = 2.5
 	one_hand_penalty = 4
-	accuracy = -1
+	accuracy = -3.2
 	fire_delay = 1.6
 	automatic = 1
 
@@ -608,13 +695,15 @@
 	item_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
-	one_hand_penalty = 70 //WHY WOULD YOU FUCKING USE THIS
+	one_hand_penalty = 0
 	str_requirement = 10
 	fire_sound = 'sound/effects/fire01.ogg'
 	casingsound = null//No eject sound for you.
+	firemodes = list()
 	accuracy = 0
 	automatic = 1
-	fire_delay = 4
+	fire_delay = 8
+	move_delay = 5
 	burst=1
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -630,8 +719,8 @@
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 /obj/item/gun/projectile/automatic/autoshotty
-	name = "Ripper Shotgun"
-	desc = "A shotgun made for the ogryn, this one seems to have been modified to be fully automatic... huh..."
+	name = "Astartes Shotgun"
+	desc = "A shotgun made for the Adeptus Astartes."
 	icon_state = "autoshotty"
 	item_state = "autoshotty"
 	wielded_item_state = "autoshotty"
@@ -650,26 +739,27 @@
 	unloaded_icon = "autoshotty-e"
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
-	burst= 1
+	burst=1
 	fire_delay = 3.1
 	one_hand_penalty=5
-	move_delay= 10
-	accuracy = -2
+	move_delay= 2
+	accuracy = -1
 	dispersion=list(0.0, 0.8, 1.5)
-	automatic = 1
-	force = 35 //REALLY fucking heavy
+	automatic = 2.4
+	firemodes = list()
+
 	gun_type = GUN_SHOTGUN
 
 /obj/item/ammo_magazine/autoshotty
-	name = "Wargrave Shotgun"
-	desc = "A magazine full of shotgun shells... its very heavy... perhaps this is for some kind of modified ripper gun?"
+	name = "Astartes Shotgun"
+	desc = "Just looking at it makes you bloodthirsty."
 	icon_state = "autoshotty"
 	caliber = "shotgun"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	max_ammo = 6
 	multiple_sprites = 1
-	force = 17
+	force = 8
 
 /obj/item/gun/projectile/warfare
 	name = "Villiers Pistol"
@@ -681,9 +771,9 @@
 	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
 	caliber = ".45"
 	load_method = MAGAZINE
-	move_delay= 1
+	move_delay = 1.5
 	one_hand_penalty = 1
-	accuracy = -1 //pretty common
+	accuracy = -3
 	fire_delay = 1.7
 	force = 8
 
@@ -702,9 +792,9 @@
 	icon_state = "handgun"
 	item_state = "handgun" // Need to get icons for pistols later.
 	desc = "A rare slug pistol of excellent quality and design."
-	move_delay = 1
+	move_delay = 1.5
 	one_hand_penalty = 0.7
-	accuracy = -1
+	accuracy = -2
 	fire_delay = 1.2
 
 /obj/item/ammo_magazine/c45m/warfare
@@ -713,7 +803,7 @@
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
-	max_ammo = 12 //buffed to 12 bullets
+	max_ammo = 7
 	multiple_sprites = 1
 
 // Stubber //
@@ -746,11 +836,12 @@
 	unwielded_unloaded_icon = "hmg-e"
 	wielded_unloaded_icon = "hmg-wielded-e"
 	burst = 1
-	automatic = 1
+	automatic = 0.8
+	firemodes = list()
 	gun_type = GUN_LMG
 	move_delay= 5
-	one_hand_penalty = 8 //it is a LMG, but its also not a bolter, this is probably enough penalty
-	accuracy = -2
+	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
+	accuracy = -3
 	fire_delay = 1.6
 
 /obj/item/gun/projectile/automatic/stubber/villiers
@@ -758,9 +849,9 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
-	accuracy = -1
+	accuracy = -2
 	fire_delay = 1.8
-	automatic = 1
+	automatic = 0.8
 	armor_penetration = 5 //this is melee
 
 // Boltgun
@@ -785,14 +876,21 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	wielded_item_state = "autoshotty"
+	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect. 
+	loaded_icon = "autoshotty"
+	unwielded_loaded_icon = "autoshotty"
+	wielded_loaded_icon = "autoshotty-wielded"
+	unloaded_icon = "autoshotty-e"
+	unwielded_unloaded_icon = "autoshotty-e"
+	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 2
 	burst = 1
-	move_delay = 5
+	move_delay = 3
 	one_hand_penalty = 10
 	automatic = 1
+	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = 0
+	accuracy = -2
 
 /obj/item/gun/projectile/bolter/update_icon()
 	..()
@@ -807,7 +905,6 @@
 	icon_state = "ravenbolter"
 	loaded_icon = "ravenbolter-30"
 	unloaded_icon = "ravenbolter-e"
-	wielded_item_state = "autoshotty"
 
 /obj/item/gun/projectile/bolter/ravenbolter/update_icon()
 	..()
@@ -822,7 +919,6 @@
 	icon_state = "sallybolter"
 	loaded_icon = "sallybolter-30"
 	unloaded_icon = "sallybolter-e"
-	wielded_item_state = "autoshotty"
 
 /obj/item/gun/projectile/bolter/sally/update_icon()
 	..()
@@ -837,7 +933,6 @@
 	icon_state = "bangbolter"
 	loaded_icon = "bangbolter-30"
 	unloaded_icon = "bangbolter-e"
-	wielded_item_state = "autoshotty"
 
 /obj/item/gun/projectile/bolter/bang/update_icon()
 	..()
@@ -869,12 +964,19 @@
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
 	wielded_item_state = "autoshotty"
+	loaded_icon = "autoshotty"
+	unwielded_loaded_icon = "autoshotty"
+	wielded_loaded_icon = "autoshotty-wielded"
+	unloaded_icon = "autoshotty-e"
+	unwielded_unloaded_icon = "autoshotty-e"
+	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 2
 	burst = 1
 	move_delay = 3
 	automatic = 1
+	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = -1
+	accuracy = -3
 
 /obj/item/gun/projectile/lockebolter/update_icon()
 	..()
@@ -909,11 +1011,18 @@
 	loaded_icon = "sisterbolter-30"
 	unloaded_icon = "sisterbolter-30-e"
 	wielded_item_state = "autoshotty"
+	loaded_icon = "autoshotty"
+	unwielded_loaded_icon = "autoshotty"
+	wielded_loaded_icon = "autoshotty-wielded"
+	unloaded_icon = "autoshotty-e"
+	unwielded_unloaded_icon = "autoshotty-e"
+	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 1.8
 	burst = 1
 	move_delay = 3
 	automatic = 1
-	accuracy = 0 //only one gun per round so yeah 
+	firemodes = list()
+	accuracy = -1.5 //only one gun per round so yeah 
 	gun_type = GUN_AUTOMATIC
 
 /obj/item/gun/projectile/sisterbolter/update_icon()
@@ -938,9 +1047,9 @@
 	empty_icon = "krootrifle"
 	far_fire_sound = "sniper_fire"
 	fire_delay = 6
-	move_delay= 2
+	move_delay= 2.5
 	one_hand_penalty = 6
-	accuracy = -1
+	accuracy = -2
 	force = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
@@ -966,9 +1075,9 @@
 	far_fire_sound = "sniper_fire"
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	fire_delay = 5
-	move_delay= 2
+	move_delay= 2.5
 	one_hand_penalty = 7
-	accuracy = -1
+	accuracy = -2
 	force = 20
 	gping = FALSE
 
@@ -996,16 +1105,17 @@
 	can_jam = TRUE	
 	move_delay= 5
 	one_hand_penalty = 4
-	accuracy = -7
+	accuracy = -8
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 2
-	automatic = 1
+	automatic = 0.7
+	firemodes = list()
 
-//Eldar 
+//Eldar
 
 /obj/item/gun/projectile/eldar/scatapult
 	name = "Shuriken Catapult"
@@ -1036,11 +1146,11 @@
 	move_delay = 0
 	automatic = 1
 	firemodes = list(
-		list(mode_name="semiauto",       burst=1, fire_delay=0.5,    move_delay=null, one_hand_penalty=1, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic",   	 burst=10, fire_delay=1.5,  move_delay=0, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
+		list(mode_name="semiauto",       burst=1, fire_delay=0.5, one_hand_penalty=1, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic",   	 burst=10, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
 		)
 	gun_type = GUN_AUTOMATIC
-	accuracy = 5
+	accuracy = -1
 
 /obj/item/gun/projectile/eldar/scatapult/update_icon()
 	..()

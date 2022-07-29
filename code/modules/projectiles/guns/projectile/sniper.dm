@@ -83,75 +83,6 @@
 
 	toggle_scope(usr, 2)
 
-
-
-
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
-	name = "\improper Boscolet Pattern Stub Rifle"
-	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
-	icon_state = "boltactionsharp"
-	item_state = "boltactionsharp"
-	empty_icon = "boltactionsharp-e"
-	accuracy = 0
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
-		qdel(src)
-		new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty (get_turf(src))
-		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
-		visible_message("[user] quickly detaches a scope from the [src] and adjusts it's firing mechanism.")
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope()
-	set category = "Object"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr, 2)
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/equipped(mob/user)
-	..()
-	if(user.zoomed)
-		user.do_zoom()
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
-	name = "Mark IV .338 Stub Rifle"
-	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
-	icon_state = "needler"
-	item_state = "needler"
-	w_class = ITEM_SIZE_HUGE
-	force = 10
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
-	caliber = ".338"
-	screen_shake = 1.2 //extra kickback
-	max_shells = 10
-	ammo_type = /obj/item/ammo_casing/lp338
-	one_hand_penalty = 50
-	accuracy = 0
-	gun_type = GUN_SNIPER
-	far_fire_sound = "sniper_fire"
-	gping = FALSE
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
-	set category = "Object"
-	set name = "Use Scope"
-	set popup_menu = 1
-
-	toggle_scope(usr, 2.5)
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/equipped(mob/user)
-	..()
-	if(user.zoomed)
-		user.do_zoom()
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
-	name = "Mark IVb Needler Sniper Rifle"
-	desc = "Powerful needler rifle, chambered in .338 and issued to the Adeptus Astartes for long-range assasinations."
-	fire_sound = 'sound/weapons/guns/fire/needler_fire.ogg'
-	far_fire_sound = "needler_fire"
-
-
-
 /obj/item/gun/energy/sniperrifle
 	name = "marksman energy rifle"
 	desc = "The HI DMR 9E is an older design of Hephaestus Industries. A designated marksman rifle capable of shooting powerful ionized beams, this is a weapon to kill from a distance."
@@ -192,7 +123,8 @@
 	force = 15
 	one_hand_penalty = 3.4
 	fire_delay = 4.5
-	accuracy = 0
+	accuracy = -3.5
+	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
@@ -202,8 +134,8 @@
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=4.5, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 4.95, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=300),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=4.5, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 4.95, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=400),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()

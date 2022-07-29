@@ -12,11 +12,20 @@
 	multi_aim = 1
 	burst_delay = 2
 	force = 8
+	fire_delay = 2.2
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
 	cock_sound 	 = 'sound/weapons/guns/interact/smg_cock.ogg'
-	automatic = 1
+	condition = 10000
+
+	//machine pistol, easier to one-hand with
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=3, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 1)
+		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
 
 /obj/item/gun/projectile/automatic/c20r/oldsmg
 	name = "\improper 9MM Harbinger"
@@ -51,7 +60,13 @@
 	ammo_type = /obj/item/ammo_casing/c45
 	magazine_type = /obj/item/ammo_magazine/c45uzi
 	allowed_magazines = /obj/item/ammo_magazine/c45uzi //more damage compared to the wt550, smaller mag size
-	automatic = 1
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=3, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 2)
+		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
 
 /obj/item/gun/projectile/automatic/mini_uzi/update_icon()
 	..()
@@ -79,7 +94,13 @@
 	unload_sound 	= 'sound/weapons/guns/interact/sfrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/sfrifle_magin.ogg'
 	cock_sound  	= 'sound/weapons/guns/interact/sfrifle_cock.ogg'
-	automatic = 1
+
+	//SMG
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=0, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1), automatic = 2)
+		)
 
 /obj/item/gun/projectile/automatic/c20r/update_icon()
 	..()
@@ -108,7 +129,11 @@
 	reload_sound 	= 'sound/weapons/guns/interact/sfrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/sfrifle_cock.ogg'
 	far_fire_sound = "rifle_fire"
-	automatic = 1
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=3, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic",   	 burst=2, fire_delay=3, one_hand_penalty=4, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
+		)
 
 
 /obj/item/gun/projectile/automatic/sts35
@@ -129,7 +154,15 @@
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
-	automatic = 1
+
+
+	//Assault rifle, burst fire degrades quicker than SMG, worse one-handing penalty, slightly increased move delay
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=3, one_hand_penalty=4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=5, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
+		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=6, burst_accuracy=list(0,-1,-2,-3,-3), dispersion=list(0.6, 1.0, 1.2, 1.2, 1.5)),
+		)
 
 /obj/item/gun/projectile/automatic/sts35/update_icon()
 	icon_state = (ammo_magazine)? "arifle" : "arifle-empty"
@@ -150,7 +183,14 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/rubber
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt
-	automatic = 1
+
+	//machine pistol, like SMG but easier to one-hand with
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0, one_hand_penalty=0, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=null,    one_hand_penalty=1, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=0.5, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
+		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
+		)
 
 /obj/item/gun/projectile/automatic/wt550/update_icon()
 	..()
@@ -182,7 +222,13 @@
 	unload_sound 	= 'sound/weapons/guns/interact/batrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/batrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/batrifle_cock.ogg'
-	automatic = 1
+	//would have one_hand_penalty=4,5 but the added weight of a grenade launcher makes one-handing even harder
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1,    fire_delay=3, use_launcher=null, one_hand_penalty=5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3,    fire_delay=3,    use_launcher=null, one_hand_penalty=6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.6, 1.0), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1),
+		list(mode_name="fire grenades",  burst=null, fire_delay=3, use_launcher=1,    one_hand_penalty=5, burst_accuracy=null, dispersion=null, automatic = 0)
+		)
 
 	var/use_launcher = 0
 	var/obj/item/gun/launcher/grenade/underslung/launcher
@@ -250,7 +296,14 @@
 	unload_sound 	= 'sound/weapons/guns/interact/lmg_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/lmg_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/lmg_cock.ogg'
-	automatic = 1
+
+	//LMG, better sustained fire accuracy than assault rifles (comparable to SMG), higer move delay and one-handing penalty
+	//No single-shot or 3-round-burst modes since using this weapon should come at a cost to flexibility.
+	firemodes = list(
+		list(mode_name="short bursts",	burst=5, one_hand_penalty=8, burst_accuracy = list(0,-1,-1,-2,-2), dispersion = list(0.6, 1.0, 1.0, 1.0, 1.2), automatic = 0),
+		list(mode_name="automatic",   	 burst=1, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
+		//list(mode_name="long bursts",	burst=8, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
+		)
 
 	var/cover_open = 0
 
