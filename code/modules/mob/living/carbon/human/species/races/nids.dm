@@ -10,16 +10,14 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 250
+	total_health = 400
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
 	sexybits_location = BP_GROIN
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
-	/mob/living/carbon/human/genestealer/proc/neurotoxin,
 	/mob/living/carbon/human/genestealer/proc/makepool,
-	/mob/living/carbon/human/genestealer/proc/ripperswarm,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
 	/mob/living/carbon/human/genestealer/proc/gsheal,
@@ -51,7 +49,6 @@
 	death_message = "lets out a waning guttural screech, green blood bubbling from its maw."
 	death_sound = 'sound/voice/hiss6.ogg'
 
-	speech_sounds = list('sound/voice/hiss1.ogg','sound/voice/hiss2.ogg','sound/voice/hiss3.ogg','sound/voice/hiss4.ogg')
 	speech_chance = 100
 
 	breath_type = null
@@ -69,7 +66,7 @@
 
 /mob/living/carbon/human
 	var/new_nid = SPECIES_TYRANID
-	var/biomass = 40
+	var/biomass = 80
 	var/isconverting = 0
 	var/dnastore = 0
 	var/poolparty = 0
