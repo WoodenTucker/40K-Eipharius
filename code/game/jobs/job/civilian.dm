@@ -47,8 +47,8 @@
 	title = "Cook"
 	department = "Service"
 	department_flag = CIV
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 1
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Seneschal, the Commissar"
@@ -88,7 +88,7 @@
 	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Seneschal"
+	supervisors = "the Town"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels, access_grox)
@@ -113,7 +113,7 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>Possibly the most important job on the entire planet. The Guard will thrive or starve depending on how skilled you are. Report to your farm in the southeastern corner of the outpost and get growing!</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
 
 // Janitor Servitor
 
@@ -146,7 +146,7 @@
 		var/servitor_name = "daan"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
-		H.add_stats(rand(10,10), rand(8,11), rand(10,16), rand(8,12)) //simple minded
+		H.add_stats(rand(18,18), rand(8,11), rand(10,16), rand(8,12)) //simple minded
 		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
@@ -181,15 +181,15 @@
 	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
 
 /datum/job/undertaker
-	title = "Undertaker"
+	title = "Scholam Youth"
 	department = "Service"
 	department_flag = CIV
 	social_class = SOCIAL_CLASS_MIN
 	total_positions = 3
 	spawn_positions = 3
 	latejoin_at_spawnpoints = TRUE
-	open_when_dead = 1
-	supervisors = "the Abbot and every adult you see."
+	open_when_dead = 0
+	supervisors = "the Ecclesiarchy."
 	selection_color = "#848484"
 	access = list(access_janitor, access_maint_tunnels, access_medical)
 	minimal_access = list(access_janitor, access_maint_tunnels, access_medical)
@@ -211,10 +211,11 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(2,12), rand(2,12), rand(2,12), rand(2,8))
+		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(2,8))
+		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.witchblood()
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
-		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Rogue Trader you owe him your life. However, you must earn your keep. The Rogue Trader has placed you in the charge of the Abbot who has you burying the dead. This is a vital task as it is said bodies that are left unburied are unable to move on to the Emperor's Grace! Make sure you bury any body you see! </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Deacon you owe him your life. However, you must earn your keep. </font></b></span>")
