@@ -10,7 +10,7 @@
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 400
+	total_health = 300
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
@@ -35,8 +35,8 @@
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.25 // Hardened carapace.
-	burn_mod = 0.65    // Weak to fire.
+	brute_mod = 0.6 // Hardened carapace.
+	burn_mod = 0.7    // Weak to fire.
 
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
