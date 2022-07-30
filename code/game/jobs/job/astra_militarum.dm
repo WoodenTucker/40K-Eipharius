@@ -120,7 +120,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,14), rand(12,14), rand(12,14), rand (8,14))
+		H.add_stats(rand(12,15), rand(12,15), rand(12,14), rand (8,14)) //young and healthy, although not trained yet
 		H.add_skills(rand(4,7),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -206,7 +206,7 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,17), rand(14,17), rand(14,18), rand(13,15))
+		H.add_stats(rand(15,18), rand(15,18), rand(14,18), rand(13,15)) //most of these roles get special weapons which need good stats
 		H.add_skills(rand(8,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
@@ -317,7 +317,7 @@
 		H.fully_replace_character_name("[current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
+		H.add_stats(rand(16,22), rand(16,18), rand(12,16), rand(16,17)) //commissars are professional wifebeaters, making their strength pretty high
 		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are heavily trained
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
