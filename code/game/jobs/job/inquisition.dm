@@ -29,7 +29,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(14,17), rand(14,17), rand(14,17), rand(14,17)) //highly trained and skilled
+		H.add_stats(rand(14,19), rand(14,19), rand(14,19), rand(14,19)) //highly trained and skilled
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),rand(5,6),rand(6,7)) //SUFFER NOT THE ALIEN, SUFFER NOT THE HERETIC
 		H.assign_random_quirk()
 		H.witchblood()
@@ -78,7 +78,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(17,20), rand(17,20), rand(17,20), rand(17,20)) //PRAISE THE EMPEROR
+		H.add_stats(rand(17,22), rand(17,22), rand(17,22), rand(17,22)) //PRAISE THE EMPEROR
 		H.add_skills(10,10,rand(7,10),rand(5,7),rand(7,8)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
