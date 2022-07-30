@@ -35,7 +35,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Lord Trader [current_name]")
-		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
+		H.add_stats(rand(14,20), rand(14,20), rand(14,20), rand(14,22))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
@@ -80,7 +80,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	equip(var/mob/living/carbon/human/H)
 		..()
-		H.add_stats(rand(12,14), rand(16,18), rand(10,13), rand(13,18)) //they are like rogues but smarter and faster
+		H.add_stats(rand(12,14), rand(16,18), rand(10,13), rand(18,25)) //they are like rogues but smarter and faster
 		H.add_skills(rand(7,10),rand(7,10),rand(5,6),rand(4,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
