@@ -125,15 +125,15 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant
 	name = OUTFIT_JOB_NAME("Ravenguard Sergeant")
-	uniform = /obj/item/clothing/under/astarte/bodysuit
+	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/energy/powersword
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/astarte/boots/raven
+	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
-	glasses = /obj/item/clothing/glasses/astarte/visor
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/raven
@@ -214,15 +214,15 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/salamander/sergeant
 	name = OUTFIT_JOB_NAME("Salamander Company Sergeant")
-	uniform = /obj/item/clothing/under/astarte/bodysuit
+	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/energy/powersword
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
+	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
-	glasses = /obj/item/clothing/glasses/astarte/visor
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/sally
@@ -308,18 +308,18 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/astartes/ultramarine/sergeant
 	name = OUTFIT_JOB_NAME("Ultramarine Sergeant")
-	uniform = /obj/item/clothing/under/astarte/bodysuit
+	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/energy/powersword
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
+	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	mask = null
-	glasses = /obj/item/clothing/glasses/astarte/visor
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
-	suit_store = /obj/item/gun/projectile/bolter/smurf
+	suit_store = /obj/item/gun/projectile/bolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
