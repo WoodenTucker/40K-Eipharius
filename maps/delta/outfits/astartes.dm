@@ -128,7 +128,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/energy/powersword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
@@ -141,8 +141,10 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ravapoth
@@ -206,7 +208,8 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor = 1,
+	/obj/item/gun/projectile/automatic/flamer = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salamander/sergeant
@@ -214,7 +217,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/energy/powersword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
@@ -227,8 +230,12 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/i
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1,
+	/obj/item/gun/projectile/automatic/flamer = 1
+	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
 	name = OUTFIT_JOB_NAME("Salamanders Apothecary")
@@ -304,7 +311,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/energy/powersword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
@@ -317,8 +324,10 @@ Begin Warhammer loadouts
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
+	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultrapoth
