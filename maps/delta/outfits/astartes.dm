@@ -123,26 +123,26 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ravenguard/captain
-	name = OUTFIT_JOB_NAME("Ravenguard Company Captain")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/captain/ravenguard
+/decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant
+	name = OUTFIT_JOB_NAME("Ravenguard Sergeant")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/raven
-	head = /obj/item/clothing/head/helmet/astartes/captain/ravenguard
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/raven
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/stack/thrones3/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ravapoth
@@ -209,27 +209,26 @@ Begin Warhammer loadouts
 	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/salamander/captain
-	name = OUTFIT_JOB_NAME("Salamanders Company Captain")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/captain/salamander
+/decl/hierarchy/outfit/job/astartes/salamander/sergeant
+	name = OUTFIT_JOB_NAME("Salamander Company Sergeant")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
-	head = /obj/item/clothing/head/helmet/astartes/captain/salamander
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/sally
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
-	)
+	/obj/i
 
 /decl/hierarchy/outfit/job/astartes/salapoth
 	name = OUTFIT_JOB_NAME("Salamanders Apothecary")
@@ -300,26 +299,26 @@ Begin Warhammer loadouts
 	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ultramarine/captain
-	name = OUTFIT_JOB_NAME("Ultramarines Company Captain")
-	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/captain
+/decl/hierarchy/outfit/job/astartes/ultramarine/sergeant
+	name = OUTFIT_JOB_NAME("Ultramarine Sergeant")
+	uniform = /obj/item/clothing/under/astarte/bodysuit
+	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
-	head = /obj/item/clothing/head/helmet/astartes/captain/ultramarine
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	mask = null
+	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter
+	r_pocket = /obj/item/grenade/frag/shell
+	suit_store = /obj/item/gun/projectile/bolter/smurf
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/stack/thrones3/ten = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ultrapoth
