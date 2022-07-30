@@ -270,3 +270,107 @@
 			host.drop_from_inventory(src)
 		spawn(1) if(src) qdel(src)
 
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//WARHAMMER 40 THOUSAND IMPERIAL BITCHES WITH BOLTERS!
+
+
+
+/obj/item/melee/energy/powersword //basis for other power weapons
+	name = "Power Sword"
+	desc = "A adamantium sword with a void shield generator inside of it, the void shield will cut through almost anything that it touches when its on, so make sure you don't cut yourself."
+	icon_state = "powersword"
+	active_force = 90 //should be enough to cut off most limbs
+	active_throwforce = 70
+	icon = 'icons\obj\guardpower_gear_32xOBJ.dmi'
+	force = 50 //its just a adamantium sword when offline
+	throwforce = 40
+	throw_speed = 1
+	throw_range = 4
+	block_chance = 75
+	armor_penetration = 90 //you've messed with the wrong house fool!
+	w_class = ITEM_SIZE_HUGE 
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	sharp = 1
+	edge = 1
+
+/obj/item/melee/energy/powersword/activate(mob/living/user)
+	..()
+	icon_state = "powersword_on"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
+
+/obj/item/melee/energy/powersword/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just a regular adamantium sword now.</span>")
+
+/obj/item/melee/energy/powersword/astartes/ingelldina
+	name = "Ingelldina Pattern Power Sword"
+	desc = "A adamantium sword with a void shield generator inside of it, this one is very long and heavy, clearly having been made for one of the sons of the emperor."
+	icon_state = "powersword"
+	active_force = 90 //should be enough to cut off most limbs
+	active_throwforce = 70
+	force = 60 //its just a adamantium sword when offline
+	throwforce = 40
+	throw_speed = 1
+	throw_range = 4
+	block_chance = 75
+	armor_penetration = 90 //you've messed with the wrong house fool!
+	w_class = ITEM_SIZE_HUGE 
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	sharp = 1
+	edge = 1
+
+
+
+/obj/item/melee/energy/powersword/claw/integrated
+	name = "Power Claws"
+	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
+	icon_state = "powerclaw-alt_mag"
+	active_force = 60 //This should be enough to cut off most limbs in a few hits
+	active_throwforce = 0 
+	force = 30
+	throwforce = 1
+	throw_speed = 1
+	throw_range = 1
+	block_chance = 40 //not the best block chance
+	armor_penetration = 90 //you've messed with the wrong house fool!
+	item_flags = ITEM_FLAG_NODROP
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_HUGE
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
+	sharp = 1
+	edge = 1
+
+/obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
+	..()
+	icon_state = "powerclaw-alt_on_mag"
+	to_chat(user, "<span class='notice'>\The [src] is now energised.</span>")
+
+/obj/item/melee/energy/powersword/claw/integrated/deactivate(mob/living/user)
+	..()
+	icon_state = initial(icon_state)
+	to_chat(user, "<span class='notice'>\The [src] is de-energised. It's just some adamantium claws now now.</span>")
+
+
+/obj/item/melee/energy/powersword/claw/integrated/dropped()
+	..()
+	spawn(1) if(src) qdel(src)
