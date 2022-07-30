@@ -29,7 +29,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(14,19), rand(14,19), rand(14,19), rand(14,19)) //highly trained and skilled
+		H.add_stats(rand(15,20), rand(15,20), rand(15,20), rand(15,20)) //highly trained and skilled
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),rand(5,6),rand(6,7)) //SUFFER NOT THE ALIEN, SUFFER NOT THE HERETIC
 		H.assign_random_quirk()
 		H.witchblood()
