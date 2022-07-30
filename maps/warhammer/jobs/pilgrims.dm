@@ -50,13 +50,7 @@ Pilgrim Fate System
 	src.verbs -= list(/mob/living/carbon/human/proc/penitentclass)
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list() //lists all possible fates
-
-	fates += pick("Merchant","Bounty Hunter","Penitent",) //adds a fate randomly to essentially give rng pick
-	fates += pick("Sherpa","Musician","Disgraced Medicae",) //adds a fate randomly to essentially give rng pick
-	fates += pick("Stalker","Scum","Miner",) //adds a fate randomly to essentially give rng pick
-
-	mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
+	var/fates = list("Merchant","Bounty Hunter","Penitent","Sherpa","Musician","Disgraced Medicae","Stalker","Scum","Miner")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -280,6 +274,7 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/administrator
 	name = OUTFIT_JOB_NAME("Administrator")
 	uniform = /obj/item/clothing/under/rank/consort/adept
+	head = /obj/item/clothing/head/commissar/adept
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
