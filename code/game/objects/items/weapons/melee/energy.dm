@@ -292,7 +292,7 @@
 	icon_state = "powersword"
 	active_force = 90 //should be enough to cut off most limbs
 	active_throwforce = 70
-	icon = 'icons\obj\guardpower_gear_32xOBJ.dmi'
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	force = 50 //its just a adamantium sword when offline
 	throwforce = 40
 	throw_speed = 1
