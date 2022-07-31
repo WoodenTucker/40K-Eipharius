@@ -1183,19 +1183,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/chem)
-"ch" = (
-/obj/structure/table/standard{
-	color = "grey"
-	},
-/obj/machinery/door/blast/grates{
-	dir = 8;
-	icon_state = "gshutter1";
-	id = "cliniclockdown"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "cj" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/plain{
@@ -1783,12 +1770,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
-"do" = (
-/obj/effect/floor_decal/turf/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "dp" = (
 /obj/machinery/light{
 	dir = 8;
@@ -1884,12 +1865,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"dA" = (
-/obj/item/paper/crumpled/bloody{
-	desc = "If you're looking for the woodsman, I've gone east on a hunting trip - won't be back anytime soon."
-	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/gma/air)
 "dB" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/plain{
@@ -2456,14 +2431,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"eJ" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "eK" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -2636,21 +2603,6 @@
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/engineering)
-"fb" = (
-/obj/structure/closet/crate,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/obj/random/loot/lasgunammo,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "fc" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
@@ -3207,26 +3159,10 @@
 /mob/living/simple_animal/mouse/gray,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"gt" = (
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
 "gv" = (
 /obj/structure/undies_wardrobe,
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/oa/service/inn)
-"gA" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "gE" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -3237,24 +3173,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"gK" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/structure/curtain/open/bed,
-/obj/effect/landmark/start{
-	name = "Magistratum Enforcer"
-	},
-/obj/item/storage/box/ifak,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "gP" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/floor_decal/newcorner/red/diagonal,
@@ -3264,15 +3182,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering/engineeringbreak)
-"gQ" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/brick,
-/obj/item/paper_bin,
-/obj/item/pen/multi,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "gV" = (
 /obj/effect/floor_decal/industrial/warning_red/corner,
 /obj/effect/floor_decal/newcorner/plating{
@@ -3286,38 +3195,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"gW" = (
-/obj/effect/floor_decal/turf/checkers,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/obj/structure/toilet,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"gX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/medical,
-/obj/random/medical,
-/obj/item/storage/belt/medical/full,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/storage/box/ifak,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"hh" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/device/radio/headset/red_team/voxcaster,
-/obj/random/loot/heavymelee,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "hi" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -3344,26 +3221,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"hv" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/critter,
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "hx" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering/engineeringbreak)
-"hA" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/obj/structure/sign/magistrate{
-	pixel_x = 30
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
 "hC" = (
 /obj/effect/floor_decal/carpet/blue{
 	dir = 4
@@ -3377,12 +3238,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"hE" = (
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "hR" = (
 /obj/machinery/light{
 	dir = 4;
@@ -3402,17 +3257,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"hT" = (
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "hX" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -3421,27 +3265,12 @@
 /obj/structure/railing,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"id" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom Door";
-	req_access = list(211)
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "ig" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"il" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/operations,
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "io" = (
 /obj/structure/curtain/open/bed,
 /turf/simulated/floor/tiled/dark,
@@ -3454,39 +3283,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"iu" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"iv" = (
-/obj/effect/floor_decal/turf/metal,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"iC" = (
-/obj/effect/decal/cleanable/dirt{
-	icon_state = ""
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"iI" = (
-/obj/structure/cargo_pad,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "iJ" = (
 /obj/structure/railing{
 	dir = 1
@@ -3524,11 +3320,6 @@
 	temperature = 53.15
 	},
 /area/cadiaoutpost/oa/research)
-"iO" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "iP" = (
 /obj/structure/torchwall{
 	pixel_y = 16
@@ -3555,23 +3346,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"jf" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"ji" = (
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "jj" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
@@ -3622,31 +3396,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"jt" = (
-/obj/machinery/door/unpowered/inn/room2{
-	name = "locked room";
-	req_access = list(212);
-	maxhealth = 3000
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"jv" = (
-/obj/machinery/computer/tithecogitator,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"jw" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/rack,
-/obj/random/loot/sidearms,
-/obj/random/loot/sidearms,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "jy" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/steel_reinforced,
@@ -3665,20 +3414,11 @@
 "jD" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/service/chapel)
-"jF" = (
-/obj/structure/flora/ausbushes/palebush,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
 "jI" = (
 /obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"jJ" = (
-/obj/structure/closet/crate/freezer/rations,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "jL" = (
 /turf/unsimulated/miningtime,
 /turf/simulated/floor/reinforced{
@@ -3703,69 +3443,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "jX" = (
-/obj/structure/sign/commissar{
-	pixel_x = 30
-	},
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
-"jY" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/modular_computer/console/preset/security,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"ke" = (
-/obj/structure/table/steel,
-/obj/machinery/microscope,
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"kk" = (
-/obj/structure/table/rack,
-/obj/item/ammo_magazine/box/shotgun/stun,
-/obj/item/ammo_magazine/box/shotgun/stun,
-/obj/structure/railing{
-	dir = 4
-	},
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"kv" = (
-/obj/structure/urinal{
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"kw" = (
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/tradefloor)
 "kx" = (
 /turf/simulated/floor/reinforced{
 	name = "shuttle roof"
@@ -3799,17 +3481,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"kZ" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 1
-	},
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "la" = (
 /obj/structure/railing,
 /obj/structure/railing{
@@ -3907,50 +3578,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"lK" = (
-/obj/structure/railing,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"lS" = (
-/obj/structure/table/rack,
-/obj/item/storage/belt/medical/full,
-/obj/item/storage/belt/medical/full,
-/obj/item/storage/firstaid/adv,
-/obj/item/storage/firstaid/adv,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"lT" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt{
-	icon_state = "cobweb2"
-	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "lV" = (
 /turf/simulated/wall/ancient{
 	color = null
 	},
 /area/cadiaoutpost/oa/medicae)
-"mf" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/four,
-/obj/machinery/button/remote/blast_door/lever{
-	id = "munitorumgtfo";
-	pixel_x = -30
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "mg" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light,
@@ -3968,16 +3600,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"mn" = (
-/obj/structure/undies_wardrobe,
-/obj/item/clothing/suit/armor/guardsman/mercenary{
-	armor = list("melee"=56,"bullet"=40,"laser"=54,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
-	name = "Heavy Flak Plate"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "mo" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -3995,10 +3617,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"mu" = (
-/obj/effect/decal/remains,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
 "my" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/bed{
@@ -4061,35 +3679,11 @@
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"mU" = (
-/obj/effect/floor_decal/turf/metal,
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"mV" = (
-/obj/random/junk,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "mW" = (
 /obj/item/modular_computer/console/preset/command,
 /obj/effect/floor_decal/carpet/blue,
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"na" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "nk" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -4148,28 +3742,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"nw" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/crutches,
-/obj/item/crutches,
-/obj/item/defibrillator,
-/obj/random/loot/randomitemtown,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"nz" = (
-/obj/structure/closet/crate,
-/obj/random/loot/randomitemtown,
-/obj/random/loot/randomitemtown,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "nA" = (
 /obj/structure/railing{
 	dir = 4
@@ -4220,22 +3792,12 @@
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "nX" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled{
+/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
-"ob" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/closet/crate/freezer/rations,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "oc" = (
 /obj/machinery/computer/account_database,
 /obj/effect/floor_decal/carpet/blue,
@@ -4243,13 +3805,10 @@
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
 "oj" = (
 /obj/effect/floor_decal/turf/barnew,
-/obj/structure/sink{
-	pixel_y = -15
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "on" = (
 /obj/structure/railing,
 /turf/simulated/floor,
@@ -4264,39 +3823,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
-"ot" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/obj/machinery/button/remote/blast_door/lever{
-	id = "cliniclockdown";
-	pixel_x = -30
-	},
-/obj/structure/table/standard{
-	color = "grey"
-	},
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"ou" = (
-/obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	layer = 50;
-	pixel_x = -10;
-	pixel_y = 2
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "ox" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/closet/secure_closet/guncabinet{
@@ -4340,16 +3866,6 @@
 "oH" = (
 /turf/simulated/wall/concrete/strong/chapel,
 /area/cadiaoutpost/oa/hangar)
-"oI" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "oK" = (
 /obj/machinery/door/airlock/multi_tile/metal/imperium{
 	name = "Minor Machinamentum Door - Adeptus Mechanicus";
@@ -4369,23 +3885,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"oM" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/lighter,
-/obj/item/storage/fancy/cigarettes/dromedaryco,
-/obj/item/material/ashtray/bronze,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"oN" = (
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "oU" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -4403,30 +3902,16 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "oX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/stack/thrones,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "oY" = (
 /obj/machinery/smartfridge/secure/virology{
 	color = "grey"
 	},
 /turf/simulated/wall,
 /area/cadiaoutpost/oa/medicae)
-"pa" = (
-/obj/structure/sign/inkvd{
-	color = "grey";
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "pb" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/window/reinforced{
@@ -4450,29 +3935,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"pd" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/metal/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "pg" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "pj" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/medicae/virology)
-"pk" = (
-/obj/machinery/door/airlock/multi_tile/glass{
-	color = "grey";
-	dir = 2;
-	maxhealth = 900;
-	name = "Clinic"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "pl" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 1
@@ -4486,10 +3954,6 @@
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"pB" = (
-/obj/structure/flora/tree/snowy,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
 "pC" = (
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
@@ -4510,22 +3974,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/medicae/chem)
-"pG" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"pH" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Door"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "pK" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -4591,12 +4039,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"qo" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "qp" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/decal/mecha_wreckage/hoverpod,
@@ -4610,68 +4052,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"qG" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/effect/decal/cleanable/blood/drip,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "qI" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/effect/floor_decal/floordetail/edgedrain,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
-"qM" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"qO" = (
-/obj/structure/bed/chair/wheelchair{
-	dir = 8;
-	icon_state = "wheelchair"
-	},
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"qQ" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"rc" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/hydroponics/prespawned,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "rg" = (
 /obj/structure/railing{
 	dir = 8
@@ -4725,27 +4112,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
-"rz" = (
-/obj/structure/barbwire{
-	color = "grey"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
-"rD" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/rack,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/item/clothing/head/helmet/space/void/atmos/alt,
-/obj/item/clothing/head/helmet/space/void/engineering/salvage,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"rF" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/dirty/indestructable/mud,
-/area/cadiaoutpost/gma/air)
 "rL" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/window/southright{
@@ -4817,15 +4183,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/medicae)
-"sr" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/guardgear,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "sF" = (
 /obj/structure/toilet{
 	dir = 4
@@ -4833,46 +4190,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/service/inn)
-"sJ" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/obj/structure/iv_drip,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "sR" = (
 /obj/structure/torchwall{
 	pixel_y = 16
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/inn)
-"sV" = (
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"sY" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/item/storage/belt/medical/full,
-/obj/item/storage/box/ifak,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "tf" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light{
@@ -4919,28 +4242,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
 "tu" = (
-/obj/effect/floor_decal/turf/rectangles,
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 600;
-	name = "locked room";
-	req_access = list(211)
+/obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"tx" = (
-/obj/machinery/chemical_dispenser/full{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"tz" = (
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/village)
 "tC" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain,
@@ -4949,9 +4258,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"tF" = (
-/turf/simulated/floor/dirty/indestructable/mud,
-/area/cadiaoutpost/gma/air)
 "tP" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -4999,26 +4305,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"uf" = (
-/obj/structure/coatrack,
-/turf/simulated/floor/carpet/red,
-/area/cadiaoutpost/gma/air)
-"ui" = (
-/obj/structure/window_frame,
-/obj/structure/grille,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"uj" = (
-/obj/structure/curtain/black,
-/obj/structure/barricade{
-	color = "grey"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "uk" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/book/manual{
@@ -5029,13 +4315,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"uo" = (
-/obj/structure/window_frame,
-/obj/structure/grille,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "uq" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -5076,11 +4355,6 @@
 	temperature = 53.15
 	},
 /area/cadiaoutpost/oa/research)
-"ut" = (
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "uu" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/light{
@@ -5151,15 +4425,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"ve" = (
-/obj/structure/bed/chair{
-	dir = 1
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "vi" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -5185,13 +4450,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"vq" = (
-/obj/structure/curtain/black,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel_dirty"
-	},
-/area/cadiaoutpost/gma/air)
 "vu" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/power/apc{
@@ -5218,22 +4476,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"vz" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"vE" = (
-/obj/structure/sink/puddle{
-	color = "grey"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "vI" = (
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -5241,24 +4483,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"vJ" = (
-/obj/structure/cargo_pad/bottom_right,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"vK" = (
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "vM" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -5267,21 +4491,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/medicae/chem)
-"vN" = (
-/obj/structure/sign/double/planet/right,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"vO" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "vP" = (
 /obj/machinery/computer/rdconsole/core,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
@@ -5290,28 +4499,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"vV" = (
-/obj/structure/window/basic,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"vZ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/bin,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "wa" = (
 /obj/effect/floor_decal/industrial/warning_red/corner{
 	dir = 4
@@ -5385,14 +4572,6 @@
 	},
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/oa/service/inn)
-"wv" = (
-/obj/effect/floor_decal/turf/rectangles,
-/obj/machinery/door/unpowered/inn{
-	name = "door"
-	},
-/obj/structure/curtain/open,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "wA" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -5406,20 +4585,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"wH" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/effect/decal/cleanable/dirt{
-	icon_state = ""
-	},
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
-/obj/effect/decal/cleanable/blood/drip,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "wL" = (
 /obj/machinery/computer/rdconsole/robotics,
 /obj/effect/floor_decal/newcorner/purple/diagonal,
@@ -5494,22 +4659,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"xg" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/machinery/door/unpowered/administratum{
-	maxhealth = 2000;
-	name = "Noble Estate";
-	req_access = list()
-	},
-/obj/machinery/door/blast/grates{
-	dir = 8;
-	icon_state = "gshutter1";
-	id = "munitorumgtfo2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "xh" = (
 /obj/effect/shuttle_landmark/ferry/inquisition_end,
 /turf/simulated/floor/plating{
@@ -5534,28 +4683,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"xy" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomsupply,
-/obj/random/loot/randomsupply,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"xA" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/guardgear,
-/obj/random/loot/guardgear,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "xB" = (
 /turf/simulated/mineral,
 /area/cadiaoutpost/oa/caves)
@@ -5575,17 +4702,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"xK" = (
-/obj/structure/table/rack,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/stack/material/steel/fifty,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "xN" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/closet/l3closet/virology{
@@ -5611,24 +4727,6 @@
 /obj/effect/wingrille_spawn/reinforced,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"xU" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/rack,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/item/clothing/head/helmet/hard_had,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"xX" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/melee/baton/loaded,
-/obj/item/wrench,
-/obj/item/crowbar,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "yb" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
@@ -5665,15 +4763,6 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel)
-"yk" = (
-/obj/structure/cargo_pad/bottom_left,
-/obj/effect/landmark/cargospawn,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "ym" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -5693,69 +4782,11 @@
 /obj/item/storage/toolbox/mechanical,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/medicae)
-"yz" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"yA" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/rack,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"yD" = (
-/obj/structure/table/rack/dark,
-/obj/item/toothpuller,
-/obj/item/toothpuller,
-/obj/item/toothpuller,
-/obj/item/halter,
-/obj/effect/floor_decal/turf/metal/ten,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"yE" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "yG" = (
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
-"yM" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/ten,
-/obj/structure/bookcase,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"yP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/tradefloor)
 "yS" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/window/reinforced{
@@ -5784,28 +4815,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"yX" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/computer/bountycogitator,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"zg" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/cell_charger{
-	color = "grey"
-	},
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "zn" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/newcorner/plating{
@@ -5831,15 +4840,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"zx" = (
-/obj/structure/closet/crate,
-/obj/item/stack/barbwire,
-/obj/item/stack/material/steel/ten,
-/obj/item/stack/barbwire,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "zC" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/plating,
@@ -5853,7 +4853,7 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "zL" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -5865,18 +4865,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/service/inn)
-"zR" = (
-/obj/effect/floor_decal/turf/checkers,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "zU" = (
 /obj/machinery/door/airlock/glass_engineering{
 	color = null;
@@ -5891,32 +4879,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"zX" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/carpet/red,
-/area/cadiaoutpost/gma/air)
-"Ac" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 1
-	},
-/obj/random/drinkbottle,
-/obj/random/drinkbottle,
-/obj/random/drinkbottle,
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"Ae" = (
-/obj/item/reagent_containers/ivbag/blood/OMinus,
-/obj/structure/closet/crate/freezer,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Ak" = (
 /obj/item/modular_computer/console/preset/security,
 /obj/effect/floor_decal/carpet/blue{
@@ -5997,11 +4959,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"AN" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/bigbedl,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "AP" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/structure/cable{
@@ -6009,17 +4966,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"AT" = (
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/random/loot/randomitemtown,
-/obj/item/device/radio/headset/red_team/voxcaster,
-/obj/random/loot/heavymelee,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "AU" = (
 /obj/structure/railing{
 	dir = 4
@@ -6033,33 +4979,12 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"Bb" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/rack,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/item/clothing/accessory/storage/white_vest,
-/obj/item/clothing/accessory/storage/webbing,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/black_vest,
-/obj/item/clothing/accessory/storage/webbing,
-/obj/item/clothing/accessory/storage/webbing,
-/obj/item/clothing/accessory/storage/webbing,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "Bc" = (
 /obj/structure/bed/chair{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"Bg" = (
-/obj/machinery/chem_master{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Bj" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/plating,
@@ -6068,15 +4993,6 @@
 /obj/random/technology_scanner,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Bo" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 1
-	},
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "Bs" = (
 /obj/structure/railing{
 	dir = 1
@@ -6099,61 +5015,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Bx" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/nine,
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/structure/table/steel,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"BA" = (
-/obj/structure/flora/tree/pine,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/caves)
-"BI" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"BP" = (
-/obj/effect/floor_decal/turf/checkers,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"BQ" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/medical,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "BR" = (
 /obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/window_frame,
-/obj/structure/grille,
 /turf/simulated/floor/tiled/white{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "BS" = (
 /obj/structure/bed/padded,
 /obj/item/bedsheet/hop,
@@ -6250,14 +5117,6 @@
 "Cu" = (
 /turf/simulated/floor/new_wood/two,
 /area/cadiaoutpost/oa/service/inn)
-"Cv" = (
-/obj/structure/closet,
-/obj/item/storage/firstaid/surgery,
-/obj/item/storage/firstaid/surgery,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Cw" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/newcorner/plating{
@@ -6310,38 +5169,6 @@
 /obj/structure/bed/chair/wood,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"CV" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"CY" = (
-/obj/effect/floor_decal/turf/metal/two,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"CZ" = (
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Da" = (
-/obj/structure/window/basic,
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Di" = (
 /obj/effect/floor_decal/carpet/blue{
 	dir = 1
@@ -6406,13 +5233,6 @@
 "DM" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/caves)
-"DN" = (
-/obj/effect/floor_decal/turf/rectangles,
-/obj/machinery/door/unpowered/inn{
-	name = "door"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "DQ" = (
 /obj/effect/floor_decal/carpet/blue,
 /obj/effect/floor_decal/carpet/blue{
@@ -6432,13 +5252,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"Ea" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
 "Eb" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/closet/wardrobe/virology_white,
@@ -6470,16 +5283,6 @@
 /obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Em" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "En" = (
 /obj/structure/stairs/east,
 /turf/simulated/floor/stone,
@@ -6494,36 +5297,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"Ep" = (
-/obj/structure/table/rack,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/shield/riot,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/obj/item/clothing/mask/gas/half,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Et" = (
-/obj/machinery/dnaforensics,
-/obj/effect/floor_decal/turf/metal/eight,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Eu" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/random/shoes,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Ev" = (
 /obj/machinery/computer/operating,
 /turf/simulated/floor/tiled{
@@ -6531,71 +5304,11 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
-"Ew" = (
-/obj/item/card/id/innkey2{
-	access = list(211);
-	name = "rusty key 2"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
-"EH" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"EI" = (
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/item/pickaxe,
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/lightmelee,
-/obj/item/reagent_containers/food/snacks/candy/proteinbar,
-/obj/item/reagent_containers/food/snacks/candy/proteinbar,
-/obj/item/reagent_containers/food/drinks/cans/waterbottle,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"EJ" = (
-/obj/structure/bed/chair/wood{
-	dir = 8;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "EM" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel)
 "EP" = (
 /turf/simulated/mineral/snowycave,
-/area/cadiaoutpost/gma/air)
-"EQ" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/structure/curtain/open/bed,
-/obj/effect/landmark/start{
-	name = "Magistratum Enforcer"
-	},
-/obj/item/stack/thrones2,
-/obj/structure/sign/magistrate{
-	pixel_x = -30
-	},
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
 /area/cadiaoutpost/gma/air)
 "Fb" = (
 /obj/effect/floor_decal/newcorner/plating/quarter,
@@ -6605,16 +5318,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"Fc" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/structure/sign/imperial{
-	pixel_x = -30
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "Fe" = (
 /obj/structure/railing{
 	dir = 8
@@ -6633,19 +5336,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
-"Fh" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Fj" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -6656,12 +5346,6 @@
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"Fs" = (
-/obj/structure/curtain/open/privacy,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Fu" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -6691,50 +5375,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"FE" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"FF" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"FP" = (
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/caves)
-"FT" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
-"FU" = (
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/wall/ancient{
-	color = null;
-	integrity = 10000
-	},
-/area/cadiaoutpost/gma/air)
 "Ga" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/secure_closet/engineering_chief{
@@ -6747,11 +5387,6 @@
 /obj/item/stack/thrones,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Gd" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "Ge" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/toilet{
@@ -6799,21 +5434,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
 "Gz" = (
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"GB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair{
-	dir = 4;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
+/turf/simulated/floor/plating/n2floor,
+/area/cadiaoutpost/oa/village)
 "GC" = (
 /obj/machinery/power/port_gen/pacman/super,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -6821,15 +5443,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"GE" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "GG" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -6855,12 +5468,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/service/inn)
-"GQ" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/radiation,
-/obj/effect/floor_decal/turf/metal/five,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "GR" = (
 /obj/effect/floor_decal/carpet/purple{
 	dir = 1
@@ -6896,14 +5503,6 @@
 /obj/item/pen,
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/oa/service/inn)
-"GW" = (
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "GX" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/standard{
@@ -6918,10 +5517,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Hd" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
 "Hl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -6933,11 +5528,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Hm" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "Hp" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -6958,15 +5548,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Hv" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Hx" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -6974,41 +5555,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering/engineeringbreak)
-"HA" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "HD" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/bookcase,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
-"HK" = (
-/obj/machinery/optable,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"HL" = (
-/obj/machinery/door/unpowered/administratum{
-	maxhealth = 2000;
-	name = "Noble Estate";
-	req_access = list();
-	req_one_access = list(225)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/tradefloor)
 "HN" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -7016,23 +5568,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"HO" = (
-/obj/effect/decal/cleanable/dirt{
-	icon_state = ""
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "HT" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/fancy/wood/cee{
@@ -7057,7 +5592,7 @@
 /area/cadiaoutpost/oa/research)
 "Ib" = (
 /turf/simulated/floor/exoplanet/concrete,
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "Ic" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/cable{
@@ -7076,58 +5611,12 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"If" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Ih" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/closet/firecloset/full{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"Io" = (
-/obj/item/clothing/mask/bandana/blue,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
-/obj/item/clothing/suit/apron,
-/obj/random/soap,
-/obj/item/reagent_containers/spray/sterilizine,
-/obj/item/FixOVein,
-/obj/item/FixOVein,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/gma/air)
 "Iq" = (
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"Ix" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/toilet,
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Iz" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/service/chapel)
@@ -7161,20 +5650,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"IN" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/machinery/button/remote/blast_door/lever{
-	id = "munitorumgtfo2";
-	pixel_x = -30
-	},
-/obj/effect/floor_decal/turf/metal,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "IQ" = (
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -7196,28 +5671,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"IT" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/rack,
-/obj/random/loot/badweapon,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"IU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/random/firstaid,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/storage/toolbox/mechanical{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "IV" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/metal/five,
@@ -7226,19 +5679,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/storage)
-"Jb" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/four,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"Jc" = (
-/obj/structure/closet/crate,
-/obj/random/loot/randomitemcaves,
-/obj/random/loot/randomitemcaves,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Jk" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -7250,16 +5690,6 @@
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"Jn" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/sign/medinfo{
-	pixel_y = 30
-	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Jp" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 4
@@ -7271,19 +5701,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"Js" = (
-/obj/machinery/door/airlock/virology{
-	color = "grey";
-	maxhealth = 900;
-	name = "Surgery"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Jt" = (
+/obj/effect/floor_decal/turf/brick,
 /turf/simulated/wall/concrete,
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "Jx" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -7301,18 +5722,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"JB" = (
-/obj/structure/table/rack/dark,
-/obj/item/reagent_containers/hypospray/autoinjector/morphine,
-/obj/item/handcuffs,
-/obj/item/reagent_containers/hypospray/autoinjector/morphine,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/effect/floor_decal/turf/metal/four,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "JC" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -7337,10 +5746,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"JM" = (
-/obj/structure/warfare/barricade/concrete_barrier,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "JR" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/window/reinforced{
@@ -7360,30 +5765,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"Kb" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/device/flashlight/lantern,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Ke" = (
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/gma/air)
-"Kj" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Kk" = (
 /obj/structure/sink{
 	dir = 8;
@@ -7463,23 +5844,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"KF" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/steel,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/effect/floor_decal/turf/metal/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"KG" = (
-/obj/item/storage/firstaid/surgery,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
-/obj/item/tourniquet,
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/gma/air)
 "KL" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/floor_decal/newcorner/red/diagonal,
@@ -7499,10 +5863,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"KU" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "KV" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -7540,23 +5900,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"Lf" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
-"Lg" = (
-/obj/structure/fireplacebl,
-/obj/structure/fireplacebl/l{
-	pixel_y = 32
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Li" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -7567,37 +5910,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"Lp" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Lt" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Lu" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"Lx" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/item/paper_bin,
-/obj/item/pen,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "LA" = (
 /obj/machinery/blackbox_recorder,
 /obj/structure/window/reinforced{
@@ -7627,31 +5944,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"LE" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/solar_assembly,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"LI" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 1
-	},
-/obj/random/gloves,
-/obj/random/gloves,
-/obj/random/gloves,
-/obj/random/gloves,
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "LL" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 1
@@ -7659,32 +5951,6 @@
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"LN" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/rack,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/item/clothing/accessory/holster/hip,
-/obj/item/clothing/accessory/holster/hip,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/gma/air)
-"LO" = (
-/obj/structure/table/rack,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 1
-	},
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/random/clothing,
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "LT" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 8
@@ -7692,49 +5958,6 @@
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"LU" = (
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
-"LZ" = (
-/obj/structure/closet/crate/bin,
-/obj/random/maintenance,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Mc" = (
-/obj/structure/toilet{
-	dir = 8;
-	icon_state = "toilet00"
-	},
-/obj/item/stack/thrones,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Md" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Mg" = (
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/obj/effect/floor_decal/turf/metal/seven,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Mj" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -7746,16 +5969,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"Mn" = (
-/obj/structure/flora/tree/dead,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
-"Mo" = (
-/obj/structure/barbwire{
-	color = "grey"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "Mp" = (
 /obj/structure/railing{
 	dir = 4
@@ -7765,14 +5978,6 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel)
-"Ms" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/nine,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"Mt" = (
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
 "Mz" = (
 /obj/structure/table/rack,
 /obj/random/powercell,
@@ -7806,28 +6011,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"MJ" = (
-/obj/machinery/door/unpowered/administratum{
-	maxhealth = 2000;
-	name = "Noble Estate";
-	req_access = list();
-	req_one_access = list(225)
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"ML" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/woodentable,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"MP" = (
-/obj/structure/reagent_dispensers/waterbarrel,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "MQ" = (
 /turf/simulated/open,
 /area/cadiaoutpost/gma/air)
@@ -7848,21 +6031,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"MV" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/rack,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"Na" = (
-/obj/structure/sign/art/lordgovenor{
-	pixel_y = 30
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Nb" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -7874,16 +6042,6 @@
 "Ng" = (
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/engineering)
-"Nh" = (
-/obj/machinery/door/airlock/virology{
-	color = "grey";
-	maxhealth = 1200;
-	name = "Storage"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Nn" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/service/inn)
@@ -7898,16 +6056,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
-"Ns" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Nv" = (
 /obj/structure/bed/chair/comfy/black,
 /obj/effect/floor_decal/carpet/blue,
@@ -7921,12 +6069,6 @@
 "NJ" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/caves)
-"NK" = (
-/obj/structure/curtain/medical,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "NL" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/structure/cable{
@@ -7976,24 +6118,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"NT" = (
-/obj/machinery/door/unpowered/inn{
-	name = "House"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"NY" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/obj/structure/sign/imperial{
-	pixel_x = 30
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
 "Od" = (
 /obj/machinery/logcutter,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -8001,15 +6125,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"Og" = (
-/obj/machinery/door/unpowered/inn/magistratum{
-	maxhealth = 900;
-	name = "Magistratum Barracks"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Oi" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/cable{
@@ -8030,16 +6145,6 @@
 /obj/machinery/shieldwallgen,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"Os" = (
-/obj/structure/curtain/black,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Ov" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/dirty/indestructable/mud,
-/area/cadiaoutpost/gma/air)
 "Ow" = (
 /obj/machinery/mecha_part_fabricator,
 /obj/machinery/light,
@@ -8047,17 +6152,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"OB" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/obj/structure/closet/crate/freezer/rations,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "OG" = (
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
 /turf/simulated/floor/tiled/dark,
@@ -8071,42 +6165,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"OL" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/structure/curtain/open/bed,
-/obj/effect/landmark/start{
-	name = "Magistratum Enforcer"
-	},
-/obj/item/storage/box/teargas,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"OM" = (
-/obj/structure/table/standard{
-	color = "grey";
-	name = "plastic table frame"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
-"OO" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/rack,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/item/reagent_containers/food/snacks/tastybread,
-/obj/item/reagent_containers/food/snacks/tastybread,
-/obj/item/reagent_containers/food/snacks/tastybread,
-/obj/item/reagent_containers/food/snacks/tastybread,
-/obj/item/reagent_containers/food/snacks/tastybread,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "OP" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/structure/cable{
@@ -8120,21 +6178,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"OR" = (
-/obj/effect/floor_decal/turf/checkers,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"OW" = (
-/obj/machinery/computer/bountycogitator,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "OX" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -8153,20 +6196,6 @@
 /obj/structure/stairs/south,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"Pb" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/melee/trench_axe,
-/obj/item/beartrap,
-/obj/item/beartrap,
-/obj/item/beartrap,
-/obj/item/beartrap,
-/obj/item/beartrap,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Pc" = (
 /obj/structure/target_stake,
 /obj/effect/floor_decal/industrial/warning_red,
@@ -8184,10 +6213,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering/engineeringbreak)
-"Pm" = (
-/obj/random/trash,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "Pt" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -8238,15 +6263,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"PO" = (
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "PS" = (
 /turf/simulated/floor/new_wood/three,
 /area/cadiaoutpost/oa/service/inn)
@@ -8267,83 +6283,11 @@
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"Qb" = (
-/obj/structure/torchwall{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/structure/sign/magistrate{
-	pixel_x = -30
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/gma/air)
 "Qd" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/constructable_frame/machine_frame,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Qi" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/toilet,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Qn" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/device/flashlight/lantern,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Qw" = (
-/obj/item/clothing/mask/breath/anesthetic,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
-/obj/item/reagent_containers/glass/rag,
-/obj/item/FixOVein,
-/obj/effect/floor_decal/newcorner/plating,
-/obj/random/loot/lightmelee,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"QA" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"QB" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "QF" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/newcorner/plating,
@@ -8356,27 +6300,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"QG" = (
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/random/loot/lightstubber,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/obj/random/loot/lightstubberammo,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "QI" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/oa/service/inn)
-"QO" = (
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
 "QP" = (
 /obj/machinery/door/blast/shutters,
 /turf/simulated/wall/concrete/strong/chapel,
@@ -8451,13 +6378,6 @@
 /obj/structure/curtain/open/bed,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"Ru" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/table/rack,
-/obj/random/loot/heavymelee,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "Rv" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/plating,
@@ -8497,13 +6417,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"RJ" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "RK" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/medicae)
@@ -8511,12 +6424,6 @@
 /obj/structure/railing,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel)
-"RN" = (
-/obj/effect/floor_decal/turf/metal/six,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "RQ" = (
 /obj/structure/sign/stainedglass3,
 /turf/simulated/wall/ancient{
@@ -8544,12 +6451,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering/engineeringbreak)
-"Sb" = (
-/obj/item/campfire/self_lit,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Sn" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -8557,22 +6458,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
-"Sp" = (
-/obj/effect/floor_decal/newcorner/plating/corner,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Sr" = (
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "SF" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -8627,16 +6512,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Tb" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Tc" = (
 /turf/simulated/wall/ancient{
 	color = null
@@ -8645,25 +6520,6 @@
 "Tf" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
-"Ti" = (
-/obj/structure/sign/redcross{
-	pixel_x = 30
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/gma/air)
-"Tm" = (
-/obj/structure/sign/double/planet/left,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Tn" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/closet/crate/vatgrownboy,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Tq" = (
 /obj/machinery/disease2/incubator,
 /obj/effect/floor_decal/newcorner/blue/solid,
@@ -8671,13 +6527,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Tr" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/machinery/shower,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Tz" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -8704,22 +6553,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"TO" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/item/device/radio/headset/red_team,
-/obj/random/accessory,
-/obj/item/stack/thrones,
-/obj/item/stack/thrones2,
-/obj/random/loot/badweapon,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/air)
-"TQ" = (
-/obj/structure/flora/tree/pine,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/gma/air)
 "TT" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 5
@@ -8748,12 +6581,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"TW" = (
-/obj/machinery/shower,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Uc" = (
 /obj/machinery/firealarm{
 	pixel_x = 30
@@ -8777,16 +6604,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"Un" = (
-/obj/machinery/door/airlock/glass_virology{
-	color = "grey";
-	maxhealth = 1500;
-	name = "Interior Clinic"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Uo" = (
 /obj/machinery/door/airlock/glass_engineering{
 	color = null;
@@ -8812,18 +6629,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"Uv" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/goodweapon,
-/obj/random/loot/goodweapon,
-/obj/random/loot/sidearms,
-/obj/random/loot/sidearms,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "UF" = (
 /obj/structure/railing{
 	dir = 8
@@ -8836,17 +6641,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
-"UG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "UK" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -8863,33 +6657,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"UL" = (
-/obj/machinery/computer/sidepiece,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "UO" = (
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"UP" = (
-/obj/structure/table/standard{
-	color = "grey"
-	},
-/obj/structure/window/basic{
-	dir = 8;
-	icon_state = "window"
-	},
-/obj/machinery/door/blast/grates{
-	dir = 8;
-	icon_state = "gshutter1";
-	id = "cliniclockdown"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "US" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 8
@@ -8942,16 +6712,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"Vc" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/torchwall{
-	pixel_y = 16
-	},
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Vh" = (
 /obj/structure/table/rack,
 /obj/random/powercell,
@@ -8995,15 +6755,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"Vo" = (
-/obj/effect/floor_decal/turf/barnew,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Vq" = (
+/obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/carpet/red,
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/village)
 "Vs" = (
 /obj/effect/floor_decal/industrial/warning_red{
 	dir = 8
@@ -9020,16 +6775,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/medicae/storage)
-"VF" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "VJ" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9046,16 +6791,6 @@
 /obj/structure/cable,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/engineering)
-"VR" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/random/loot/randomitemtown,
-/obj/random/loot/randomitemtown,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "VS" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/newcorner/plating,
@@ -9094,19 +6829,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
-"Wh" = (
-/turf/simulated/wall/ancient{
-	color = null;
-	integrity = 10000
-	},
-/area/cadiaoutpost/gma/air)
-"Wj" = (
-/obj/structure/closet/crate,
-/obj/item/storage/pill_bottle/happy,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Wm" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -9121,18 +6843,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"Wp" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/urinal{
-	pixel_y = 30
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Wq" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/steel_reinforced,
@@ -9142,15 +6852,6 @@
 /obj/item/weldpack,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Ws" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Wv" = (
 /obj/structure/railing{
 	dir = 8
@@ -9184,30 +6885,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"WH" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/random/ammo,
-/obj/structure/closet/crate,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
-"WJ" = (
-/obj/structure/fireplacebl/r{
-	pixel_y = 32
-	},
-/obj/structure/fireplacebl/br,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "WK" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/statue/verina{
@@ -9222,24 +6899,10 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "WO" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/machinery/door/unpowered/inn/magistratum{
-	maxhealth = 900;
-	name = "Magistratum Barracks"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/air)
-"WP" = (
-/obj/structure/toilet{
-	pixel_y = 14
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel_dirty"
-	},
-/area/cadiaoutpost/gma/air)
+/area/cadiaoutpost/oa/tradefloor)
 "WR" = (
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -9253,14 +6916,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"WV" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/device/radio/headset/red_team,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Xa" = (
 /obj/machinery/power/apc{
 	dir = 4;
@@ -9302,38 +6957,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Xy" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"XD" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/item/gun/projectile/warfare,
-/obj/item/ammo_magazine/c45m/warfare,
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/storage/firstaid/surgery,
-/obj/random/medical/lite,
-/obj/random/maintenance,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "XG" = (
 /turf/space,
 /area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
-"XP" = (
-/obj/machinery/computer/planetarytrade,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "XU" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -9376,21 +7002,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"Yp" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Yu" = (
-/obj/structure/table/steel,
-/obj/item/storage/briefcase/crimekit,
-/obj/effect/floor_decal/turf/metal/three,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Yv" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -9422,16 +7033,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"YD" = (
-/obj/structure/window/basic,
-/obj/structure/bed/chair/wheelchair{
-	dir = 8;
-	icon_state = "wheelchair"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "YJ" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -9445,26 +7046,6 @@
 "YM" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"YO" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"YQ" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/metal/two,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "YR" = (
 /obj/item/robot_parts/robot_suit,
 /obj/item/robot_parts/robot_suit,
@@ -9486,30 +7067,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"YS" = (
-/obj/structure/table/rack/shelf{
-	color = "grey"
-	},
-/obj/item/stack/material/wood/fifty,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "YU" = (
 /turf/simulated/wall/ancient{
 	color = null
 	},
 /area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
-"YV" = (
-/obj/structure/table/steel,
-/obj/machinery/door/blast/grates{
-	dir = 8;
-	icon_state = "gshutter1";
-	id = "munitorumgtfo";
-	maxhealth = 1000
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/air)
 "YW" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -9520,33 +7082,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"YZ" = (
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Za" = (
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Zc" = (
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
-"Zf" = (
-/obj/structure/sink,
-/turf/simulated/wall/concrete,
-/area/cadiaoutpost/gma/air)
 "Zj" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/floor_decal/newcorner/red/diagonal,
@@ -9584,14 +7119,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"Zu" = (
-/obj/structure/coatrack{
-	color = "grey"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 "Zv" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -9624,13 +7151,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/surgery)
-"ZU" = (
-/obj/effect/floor_decal/newcorner/white/diagonal,
-/obj/structure/bed/chair,
-/turf/simulated/floor/tiled/white{
-	color = "grey"
-	},
-/area/cadiaoutpost/gma/air)
 
 (1,1,1) = {"
 DM
@@ -34178,15 +31698,15 @@ MQ
 MQ
 MQ
 MQ
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
 MQ
@@ -34428,22 +31948,22 @@ MQ
 MQ
 MQ
 MQ
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
 MQ
@@ -34672,35 +32192,35 @@ MQ
 MQ
 MQ
 MQ
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
 MQ
@@ -34929,35 +32449,35 @@ Nn
 Nn
 Ry
 Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
 MQ
@@ -35186,41 +32706,41 @@ YM
 YM
 Ry
 Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
-MQ
+nX
 MQ
 MQ
 MQ
@@ -35443,41 +32963,41 @@ YM
 YM
 Ry
 Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
-MQ
+nX
 MQ
 MQ
 MQ
@@ -35700,41 +33220,41 @@ YM
 eL
 Ry
 Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
-MQ
+nX
 MQ
 MQ
 MQ
@@ -35957,41 +33477,41 @@ Nn
 Nn
 Ry
 Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
-MQ
+nX
 MQ
 MQ
 MQ
@@ -36214,41 +33734,41 @@ nG
 nG
 nG
 Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 MQ
 MQ
-MQ
+nX
 MQ
 MQ
 MQ
@@ -36471,41 +33991,41 @@ nG
 nG
 nG
 Gz
-Gz
-LU
-LU
-rF
-LU
-LU
-LU
-LU
-LU
-vE
-LU
-LU
-LU
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Ib
-Ib
-Ib
-Ib
-Gz
-Gz
-Gz
-Gz
-Gz
-JM
-Mt
+nX
 MQ
 MQ
 MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+Ib
+Ib
+Ib
+Ib
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -36728,41 +34248,41 @@ nG
 nG
 nG
 Gz
-Gz
-tF
-gt
-gt
-gt
-gt
-tF
-LU
-LU
-LU
-LU
-LU
-LU
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Ib
-Ib
-Ib
-Ib
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mo
+nX
 MQ
 MQ
 MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+Ib
+Ib
+Ib
+Ib
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
+nX
 MQ
 MQ
 MQ
@@ -36984,41 +34504,41 @@ Nn
 nG
 nG
 nG
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 Ib
 Ib
 Ib
 Ib
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-rz
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -37241,41 +34761,41 @@ Nn
 nG
 nG
 nG
-gt
-gt
-gt
-TQ
-gt
-gt
-gt
-Gz
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 zE
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
+nX
+nX
+nX
+nX
 Ib
 Ib
 Ib
 Ib
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-LU
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -37498,41 +35018,41 @@ Nn
 Nn
 Nn
 Nn
-Jt
-Jt
-gt
-gt
-gt
-gt
-gt
-Gz
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 zE
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-LU
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -37755,41 +35275,41 @@ Nn
 Kk
 sF
 Nn
-YO
-Jt
-tF
-gt
-gt
-gt
-gt
-Gz
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 zE
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-LU
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -38012,41 +35532,41 @@ Nn
 pK
 zP
 Nn
-RN
-Jt
-gt
-Ov
-tF
-gt
-gt
-Gz
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 zE
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-LU
-Mt
-Mt
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -38269,41 +35789,41 @@ Nn
 GP
 zP
 Nn
-tz
-Jt
-gt
-gt
-gt
-gt
-gt
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-Mt
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -38526,41 +36046,41 @@ Nn
 Nn
 QI
 Nn
-RN
-Jt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-LU
-LU
-LU
-tF
-Gz
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 zE
 zE
 zE
 zE
-Gz
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-LU
-Mt
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -38783,41 +36303,41 @@ Xg
 BX
 Rw
 Nn
-mU
-Jt
-gt
-gt
-tF
-gt
-gt
-gt
-tF
-tF
-LU
-gt
-gt
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
 zE
 zE
 zE
 zE
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-LU
-Mt
-Jt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -39040,41 +36560,41 @@ Xg
 Dz
 PG
 Nn
-Jt
-Jt
-gt
-tF
-tF
-gt
-gt
-gt
-Mn
-tF
-LU
-tF
-LU
-tF
-LU
-tF
-LU
-LU
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-gt
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-LU
-Jt
+YM
+YM
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -39297,41 +36817,41 @@ PS
 GR
 wS
 Nn
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-gt
-TQ
-gt
-gt
-gt
-gt
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Gz
-Mt
-LU
-Jt
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -39554,41 +37074,41 @@ Xm
 Nn
 Nn
 Nn
-Mt
-Mt
-Ea
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Ea
-Mt
-Mt
-Mt
-Mt
-Mt
-NY
-Mt
-hA
-Mt
-Mt
-Mt
-Mt
-Mt
-LU
-Mt
-LU
-LU
-Jt
-Gz
-Gz
-Gz
-Jt
-Mt
-LU
-Jt
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -39811,41 +37331,41 @@ MQ
 MQ
 MQ
 MQ
-Jt
-Jt
-uo
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Mt
-Mt
-Jt
-Mt
-LU
-Mt
-LU
-KU
-Gz
-Gz
-Gz
-Jt
-Mo
-Mt
-Jt
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+MQ
+MQ
+nX
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -40068,41 +37588,41 @@ MQ
 MQ
 MQ
 MQ
-Jt
-Yp
-Yp
-Zc
-YZ
-Jt
-Mg
-CY
-yD
-Jt
-OL
-Lt
-EQ
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
-gK
-Lt
-gK
 yG
-lS
-Jt
-Mt
-Mt
-Jt
-LU
-tF
-LU
-LU
-Jt
-Gz
-Gz
-Gz
-Jt
-LU
-Mo
-Jt
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+MQ
+MQ
+nX
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -40317,24 +37837,24 @@ pg
 Tf
 Tf
 du
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-YZ
-YZ
-YZ
-YZ
-YZ
-Jt
-hE
-tz
-JB
-Jt
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
 yG
 yG
@@ -40343,23 +37863,23 @@ yG
 yG
 yG
 yG
-Ep
-Jt
-Mt
-Mt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-iu
-Jt
-Jt
-Mo
-LU
-Jt
+yG
+yG
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -40574,49 +38094,49 @@ pg
 Tf
 du
 du
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-Sr
-YZ
-YZ
-YZ
-YZ
-Jt
-Yu
-RN
-do
-Og
-yG
-yG
-oM
-hh
-jY
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
 yG
 yG
-xK
-Jt
-Mt
-Mt
-Mt
-Mt
-Mt
-Jt
-Gz
-Gz
-Gz
-Gz
-Jt
-LU
-Mt
-rz
-Jt
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -40830,50 +38350,50 @@ pg
 pg
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-YZ
-YZ
-YZ
-Em
-YZ
-Jt
-ke
-tz
-tz
-Jt
-jJ
-yG
-VR
-Tm
-QB
-vK
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
 yG
-kk
-Jt
-Mt
-Mt
-Mt
-Mt
-Mt
-Jt
-Gz
-Gz
-Gz
-Gz
-Jt
-LU
-Mt
-Mt
-Jt
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -41087,50 +38607,50 @@ pg
 pg
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Na
-YZ
-gQ
-RJ
-jv
-Jt
-Et
-iv
-tz
-Jt
-Lg
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
-Tb
-vN
-Uv
-vK
 yG
-lK
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+WO
+WO
+WO
+WO
 MQ
-Jt
-Jt
-Jt
-Jt
-Mt
-Mt
-Jt
-Gz
-Gz
-Gz
-Gz
-Jt
-Mt
-Mt
-Mt
-Jt
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -41344,50 +38864,50 @@ pg
 pg
 du
 du
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-YZ
-YZ
-RJ
-ve
-YZ
-Jt
-tz
-tz
-tz
-Jt
-WJ
-yG
-zg
-xA
-xX
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
 yG
 yG
-ji
-Jt
-TW
-PO
-Jt
-Mt
-Mt
-Jt
-Gz
-Gz
-Gz
-Gz
-Jt
-Mt
-Mt
-Mt
-Jt
+yG
+yG
+yG
+yG
+yG
+yG
+WO
+WO
+WO
+WO
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -41601,50 +39121,50 @@ pg
 pg
 du
 MQ
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-YZ
-YZ
-RJ
-YZ
-yX
-Jt
-tz
-tz
-tz
-Jt
-yG
-yG
-yG
-MP
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
 yG
 yG
 yG
 yG
-Fs
-sV
-sV
-Jt
-Mt
-LU
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Mt
-Mt
-Mt
-Jt
+yG
+yG
+yG
+yG
+WO
+WO
+WO
+WO
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -41858,50 +39378,50 @@ Tf
 Tf
 du
 MQ
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Sr
-YZ
-RJ
-YZ
-pa
-Jt
-tz
-tz
-tz
-Jt
-yG
-EH
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
 yG
 yG
 yG
-EH
 yG
 yG
 yG
-Jt
-kv
-Mc
-Jt
-LU
-Mt
-tF
-LU
-Mt
-Mt
-Mt
-LU
-LU
-Mt
-Mt
-Jt
+yG
+yG
+yG
+WO
+WO
+WO
+WO
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -42115,50 +39635,50 @@ Tf
 Tf
 du
 MQ
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-YZ
-YZ
-YZ
-YZ
-YZ
+jX
+jX
+jX
+jX
+jX
 WO
-tz
-tz
-tz
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Mt
-LU
-LU
-Mt
-Mt
-Mt
-Ew
-Mt
-LU
-Mt
-Mt
-Jt
+WO
+WO
+WO
+WO
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+yG
+WO
+WO
+WO
+WO
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -42372,39 +39892,39 @@ Tf
 Tf
 du
 MQ
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Jt
 jX
-RJ
-hT
-pa
-Jt
-tz
-tz
-tz
-Jt
-tF
-LU
-LU
-LU
-LU
-Fc
-LU
-Qb
-tF
-Mt
-LU
-LU
-Mt
-Mt
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 Jt
 Jt
 Jt
@@ -42413,9 +39933,9 @@ Jt
 tu
 Jt
 Jt
-Mt
-Mt
-Jt
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -42638,41 +40158,41 @@ MQ
 MQ
 MQ
 MQ
+jX
+jX
+jX
+jX
+jX
+WO
+WO
+WO
+WO
+WO
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+tu
+tu
+tu
 Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-LU
-LU
-LU
-LU
-LU
-tF
-LU
-Mt
-LU
-Mt
-LU
-LU
-tF
-Mt
-Jt
-gW
-OR
-Jt
-uf
+tu
 Vq
 Vq
 Jt
-Mt
-Mt
-Jt
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -42895,41 +40415,41 @@ MQ
 MQ
 MQ
 MQ
-LU
-Mt
-LU
-tF
-Mt
-LU
-tF
-LU
-Mt
-LU
-tF
-LU
-LU
-LU
-LU
-Wh
-Wh
-Wh
-Wh
-Wh
-LU
-tF
-LU
-Mt
-Zf
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+MQ
+MQ
+tu
 jI
 jI
-DN
-Vq
-Vq
+tu
+tu
+tu
 Vq
 Jt
-Mt
-Mt
-Jt
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -43152,41 +40672,41 @@ MQ
 MQ
 MQ
 MQ
-Mt
-LU
-tF
-LU
-LU
-LU
-Mt
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-LU
-LU
-Mt
-Jt
-BP
-zR
-Jt
-zX
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+MQ
+tu
+tu
+tu
+tu
+tu
+tu
 Vq
-Vq
 Jt
-Mt
-Mt
-Jt
+MQ
+MQ
+nX
 MQ
 MQ
 MQ
@@ -43400,6 +40920,15 @@ Tf
 Tf
 du
 MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -43407,45 +40936,36 @@ MQ
 MQ
 MQ
 MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
-LU
-Mt
-LU
-Mt
-Mt
-LU
-LU
-Wh
-Tn
-Xy
-na
-OO
-xU
-rD
-sV
-Ke
-MV
-IT
-MV
-MV
-Wh
-Wh
-Mt
-Mt
 Jt
 Jt
 Jt
 Jt
+tu
+tu
+tu
 Jt
-wv
-Jt
-Jt
-Mt
-Mt
-Jt
-gt
-gt
+MQ
+MQ
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -43657,6 +41177,15 @@ Tf
 Tf
 du
 MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -43664,45 +41193,36 @@ MQ
 MQ
 MQ
 MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
-Mt
-LU
-Mt
-LU
-LU
-Mt
-Mt
-Wh
-Bo
-Xy
-Xy
-Xy
-Xy
-Xy
-sV
-vO
-sV
-sV
-Wj
-Jc
-Wh
-Wh
-Mt
-LU
-Mt
-Mt
+MQ
+MQ
 Jt
-AN
-QO
-Gd
-ML
-Jt
-Mt
-Mt
-Jt
-jF
-gt
+tu
+tu
+tu
+tu
+tu
+MQ
+MQ
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -43914,6 +41434,15 @@ Tf
 Tf
 du
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -43921,45 +41450,36 @@ MQ
 MQ
 MQ
 MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
-LU
-Mt
-LU
-Mt
-Mt
-LU
-LU
-Wh
-Bo
-Xy
-Xy
-OW
-UL
-Xy
-sV
+MQ
+MQ
+Jt
+tu
+tu
+tu
+tu
+Jt
+MQ
+MQ
 nX
-sV
-sV
-fb
-nz
-Wh
-Wh
-LU
-Mt
-Mt
-Mt
-Jt
-QO
-jf
-QO
-TO
-Jt
-Mt
-Mt
-Jt
-gt
-gt
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -44172,6 +41692,14 @@ Tf
 Tf
 du
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -44179,44 +41707,36 @@ MQ
 MQ
 MQ
 MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
-Mt
-Mt
-Mt
-LU
-Mt
-Mt
-LU
-Wh
-Bo
-Xy
-Xy
-Lp
-XP
-Xy
-Xy
-Wh
-Ru
-MV
-jw
-yA
-Wh
-Wh
-Mt
-Mt
-Mt
-Mt
+MQ
+MQ
+MQ
 Jt
 Jt
 Jt
 Jt
 Jt
 Jt
-Mt
-Jt
-Jt
-gt
-gt
+MQ
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -44430,6 +41950,13 @@ Tf
 Tf
 du
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -44437,43 +41964,36 @@ MQ
 MQ
 MQ
 MQ
-Mt
-Mt
-LU
-Mt
-LU
-Mt
-LU
-Wh
-LO
-Xy
-Xy
-Lp
-Lp
-Xy
-Lx
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Mt
-Mt
-LU
-Mt
-Mt
-Mt
-Mt
-LU
-Mt
-LU
-Mt
-Mt
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -44686,6 +42206,36 @@ Tf
 Tf
 du
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
 MQ
@@ -44694,43 +42244,13 @@ MQ
 MQ
 MQ
 MQ
-LU
-Mt
-LU
-Mt
-LU
-Mt
-LU
-FU
-Ac
-Xy
-Xy
-iI
-yk
-Xy
-Xy
-rc
-WH
-ob
-hv
-Hm
-Wh
-Wh
-Mt
-Mt
-Mt
-LU
-Mt
-Mt
-LU
-Mt
-LU
-Mt
-Mt
-LU
-Jt
-gt
-gt
+MQ
+MQ
+MQ
+MQ
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -44942,6 +42462,15 @@ Tf
 Tf
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -44949,45 +42478,36 @@ MQ
 MQ
 MQ
 MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
-Mt
-LU
-Mt
-LU
-Mt
-LU
-LU
-Wh
-kZ
-Xy
-Xy
-iI
-vJ
-Xy
-Xy
-BQ
-LE
-GQ
-il
-Ih
-Wh
-Wh
-Mt
-Mt
-Mt
-Mt
-Jt
-Jt
-pH
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -45199,6 +42719,15 @@ Tf
 Tf
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -45206,45 +42735,36 @@ MQ
 MQ
 MQ
 MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
-Mt
-Mt
-Mt
-Mt
-LU
-LU
-Mt
-Wh
-LI
-Xy
-Xy
-Xy
-Xy
-Xy
-Ns
-GQ
-xy
-FE
-qM
-Ih
-Wh
-Wh
-Mt
-Mt
-Mt
-Mt
-Jt
-LU
-LU
-FT
-pH
-FT
-LU
-Jt
-Jt
-gt
-gt
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -45456,6 +42976,15 @@ Tf
 Tf
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -45463,45 +42992,36 @@ MQ
 MQ
 MQ
 MQ
-MQ
-MQ
-LU
-Mt
-Mt
-Mt
-Mt
-Mt
-Mt
-Wh
-Wh
-LN
-Bb
-Xy
-Xy
 HD
-Ke
-Ke
-Ke
-Ke
-Ke
-Ke
-Ke
-Wh
-Mt
-Mt
-Mt
-Mt
-Jt
-mV
-LU
-LU
-Jt
-LU
-Lf
-Jt
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -45713,6 +43233,15 @@ Tf
 Tf
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 MQ
 MQ
 MQ
@@ -45721,44 +43250,35 @@ MQ
 MQ
 MQ
 MQ
-MQ
-Mt
-LU
-Mt
-Mt
-Ti
-Mt
-Mt
-Mt
-Wh
-Wh
 HD
-Xy
-Xy
 HD
-Ke
-Xy
-Xy
-Xy
-Xy
-Xy
-Xy
-xg
-Mt
-Mt
-Mt
-Mt
-Jt
-LU
-LU
-LU
-Jt
-OM
-LU
-LU
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -45970,52 +43490,52 @@ Tf
 Tf
 Tf
 du
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Jt
-Jt
-ut
-pk
-Jt
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
 BR
-Jt
-Jt
-Jt
-Wh
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
 HD
-Xy
-Xy
 HD
-Ke
-Xy
-Ns
-Xy
-Xy
-Xy
-Xy
-xg
-Mt
-Mt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-LU
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -46227,52 +43747,52 @@ Tf
 Tf
 Tf
 du
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-ui
-ZU
-qo
-qo
-oI
-GB
-BI
-wH
-Jt
-Wh
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
 HD
-Xy
-Xy
-Ke
-Ke
-HL
-Ke
-YV
-YV
-YV
-Ke
-Wh
-Mt
-Mt
-Jt
-sV
-Qn
-sV
-Qn
-Jt
-FT
-Jt
-mV
-LU
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -46484,52 +44004,52 @@ Tf
 Tf
 Tf
 du
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Jt
-Jn
-qo
-qo
-qo
-qo
-qo
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+BR
+BR
+BR
+BR
+BR
+BR
+BR
 nS
-Jt
-FU
+BR
 HD
-Xy
-Xy
-Ke
-Bx
-Ms
-qQ
-qQ
-qQ
-GE
-IN
-Wh
-Mt
-Mt
-Jt
-sV
-YS
-sV
-Ws
-Jt
-LU
-Jt
-Jt
-LU
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -46742,51 +44262,51 @@ Tf
 Tf
 du
 du
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Jt
-Vc
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+BR
+BR
 nS
-qo
-qo
-qo
-qo
-qo
-Jt
-Wh
+BR
+BR
+BR
+BR
+BR
+BR
 HD
-Xy
-Xy
-Ke
-mf
-iO
-iO
-iO
-iO
-iO
-iO
-Wh
-Mt
-Mt
-Jt
-sV
-sV
-sV
-GW
-Jt
-LU
-Jt
-FT
-LU
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -47000,50 +44520,50 @@ Tf
 Tf
 du
 du
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-ui
-lT
-qo
-qo
-yE
-qo
-QA
-UG
-Jt
-Wh
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
 HD
-Ns
-Xy
-MJ
-Jb
-iO
-iO
-iO
-iO
-iO
-iO
-Wh
-Mt
-Mt
-Jt
-sV
-sV
-sV
-sV
-pH
-LU
-Jt
-LU
-Pm
-Jt
-gt
-gt
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -47257,50 +44777,50 @@ Tf
 Tf
 Tf
 du
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+BR
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+HD
 MQ
 MQ
-MQ
-MQ
-MQ
-MQ
-MQ
-Jt
-UP
-ch
-UP
-Jt
-Un
-Jt
-Jt
-Jt
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-yM
-pd
-YQ
-KF
-pd
-Wh
-Mt
-Mt
-Jt
-gA
-sV
 nX
-Kj
-Jt
-LU
-Pm
-LU
-LU
-Jt
-gt
-gt
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -47521,43 +45041,43 @@ MQ
 MQ
 MQ
 MQ
-ot
-Fh
-Md
-VF
-Md
-Md
-sJ
-qO
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Wh
-Mt
-Mt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
+oj
+oj
+MQ
+MQ
+HD
+HD
+HD
+HD
+HD
+HD
+HD
+MQ
+MQ
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+nX
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -47778,43 +45298,43 @@ MQ
 MQ
 MQ
 MQ
-HA
-sV
-sV
-Sp
-vz
-CV
-CV
-FF
-id
-Vo
-Vo
-Vo
-Jt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
+oj
+oj
 MQ
 MQ
-gt
-gt
-gt
-gt
-gt
-Mt
-Mt
-LU
-Mt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -48035,43 +45555,43 @@ MQ
 MQ
 MQ
 MQ
-Za
-sV
-sV
-CZ
-Jt
-Jt
-Jt
-Jt
-Jt
-Tr
-Vo
-Vo
-Jt
-pB
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
+oj
+oj
 MQ
 MQ
 MQ
-gt
-gt
-gt
-gt
-gt
-Mt
-Mt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-TQ
-gt
-gt
-gt
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -48292,43 +45812,43 @@ MQ
 MQ
 MQ
 MQ
-Za
-Za
-sV
-oN
-Jt
-gX
-IU
-Ae
-Jt
-Jt
-Vo
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
 qI
-Jt
-gt
-mu
+oj
 MQ
 MQ
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-Hd
-gt
-gt
-gt
-gt
-gt
-gt
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -48549,43 +46069,43 @@ du
 MQ
 MQ
 MQ
-Za
-sV
-sV
-oN
-Nh
-WV
 oX
-OB
-Jt
-Ix
-Vo
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
 oj
-Jt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-Jt
-Jt
-Jt
-Jt
-Jt
-NT
-Jt
-Jt
-gt
-gt
-gt
-gt
-gt
+oj
+oj
+oj
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -48806,43 +46326,43 @@ du
 du
 MQ
 MQ
-HO
-iC
-CV
-vZ
-Jt
-sY
-XD
-nw
-Jt
-Wp
-Vo
-pG
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
-Jt
-Hv
-yz
-LZ
-yG
-yG
-Zu
-Jt
-Jt
-TQ
-gt
-gt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
+oj
+oj
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -49063,43 +46583,43 @@ Tf
 du
 MQ
 MQ
-Jt
-Jt
-Js
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Wp
-Vo
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
 oj
-Jt
-mn
-If
-Kb
-yG
-Jt
-kw
-Sb
-yG
-Jt
-gt
-gt
-Jt
-yz
-EJ
-yG
-yG
-EH
-eJ
-Jt
-gt
-gt
-gt
-gt
-Hd
+oj
+oj
+oj
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -49320,43 +46840,43 @@ Tf
 du
 MQ
 MQ
-Jt
-ou
-sV
-vV
-NK
-ou
-qG
-oN
-Jt
-Qi
-Vo
-Vo
-Jt
-yG
-yG
-yG
-yG
-Jt
-sr
-yG
-yG
-Jt
-gt
-gt
-Jt
-yz
-yG
-yG
-Jt
-Jt
-Jt
-Jt
-gt
-gt
-gt
-gt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
+oj
+oj
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -49577,43 +47097,43 @@ Tf
 du
 du
 MQ
-Jt
-yP
-sV
-sV
-NK
-sV
-sV
-Qw
-Jt
-Jt
-Jt
-Jt
-Jt
-yG
-yG
-yG
-yG
-Jt
-EJ
-yG
-yG
-jt
-gt
-gt
-Jt
-Jt
-Jt
-yG
-Jt
-yG
-Eu
-Jt
-gt
-gt
-gt
-gt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oj
+oj
+oj
+oj
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -49834,43 +47354,43 @@ Tf
 Tf
 du
 MQ
-Jt
-Bg
-sV
-Da
-NK
-sV
-sV
-HK
-Jt
-gt
-gt
-gt
-Jt
-QG
-yG
-yG
-yG
-Jt
-yG
-yG
-yG
-dA
-gt
-gt
-Jt
-WP
-vq
-yG
-uj
-EH
-AT
-Jt
-gt
-gt
-gt
-gt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+MQ
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -50091,43 +47611,43 @@ Tf
 Tf
 du
 MQ
-Jt
-tx
-nX
-YD
-NK
-Cv
-Io
-KG
-Jt
-gt
-gt
-TQ
-Jt
-EI
-yG
-yG
-yG
-Jt
-yG
-yG
-yG
-Jt
-gt
-gt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
-gt
-Hd
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+MQ
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -50348,43 +47868,43 @@ Tf
 Tf
 du
 du
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
-gt
-Jt
-Pb
-zx
-yG
-yG
-Os
-yG
-yG
-Kb
-Jt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+oX
+MQ
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -50605,43 +48125,43 @@ Tf
 Tf
 Tf
 du
-FP
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-TQ
-Hd
-gt
-gt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-Jt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
+du
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+Yb
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
@@ -50862,43 +48382,43 @@ Tf
 Tf
 Tf
 Tf
-BA
-FP
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-TQ
-gt
-gt
-gt
-gt
-gt
-gt
-gt
-gt
+du
+du
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
+MQ
 MQ
 MQ
 MQ
