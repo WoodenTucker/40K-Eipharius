@@ -32,7 +32,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
@@ -107,7 +107,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
@@ -197,7 +197,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
@@ -287,7 +287,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
