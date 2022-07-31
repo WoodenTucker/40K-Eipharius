@@ -356,7 +356,7 @@
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
-		H.add_skills(rand(3,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -399,7 +399,7 @@
 		H.fully_replace_character_name("[current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
-		H.add_skills(rand(3,6),rand(3,7),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,9),rand(5,9),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -437,7 +437,7 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.add_stats(rand(10,16), rand(10,16), rand(10,13), rand(10,16))
-		H.add_skills(rand(3,6),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,9),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")

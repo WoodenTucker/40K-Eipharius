@@ -100,7 +100,7 @@
 		..()
 		H.fully_replace_character_name("[current_name]")
 		H.add_stats(rand(10,14), rand(10,13), rand(10,13), rand(10,13))
-		H.add_skills(rand(5,7),rand(5,7),rand(3,5),rand(2,4),1) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,7),rand(5,7),rand(3,5),rand(2,4),1) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
