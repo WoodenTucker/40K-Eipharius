@@ -83,7 +83,7 @@
 		H.fully_replace_character_name("Tech-Priest [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
 		H.add_stats(rand(14,16), rand(14,16), rand(12,15), rand(14,16)) //idk what to do with Magos xd
-		H.add_skills(rand(4,8),rand(4,8),rand(5,6),rand(7,10),rand(5,7)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,8),rand(4,8),rand(5,6),rand(7,10),rand(5,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
@@ -125,7 +125,7 @@
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
 		H.add_stats(rand(14,16), rand(14,16), rand(10,13), rand(20,30)) 
-		H.add_skills(rand(4,7),rand(4,7),rand(8,11),rand(7,10),rand(10,12)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,9),rand(4,7),rand(8,11),rand(7,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
