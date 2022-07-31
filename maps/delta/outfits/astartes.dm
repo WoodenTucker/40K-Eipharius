@@ -84,7 +84,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Blood Angels Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -174,7 +174,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Ravenguard Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/suit/armor/astartes/ravenguard
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -264,7 +264,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Salamanders Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -357,7 +357,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Ultramarines Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
