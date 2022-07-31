@@ -76,7 +76,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 		if("Penitent")
-			U.add_stats(rand(12,15), rand(12,15), rand(10,14), rand (8,12)) //
+			U.add_stats(rand(14,16), rand(12,15), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(4,8),rand(2,6),rand(1,1),rand(1,1),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
@@ -86,7 +86,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 		if("Bounty Hunter")
-			U.add_stats(rand(11,15), rand(11,15), rand(10,14), rand (8,12)) //veteran hunter
+			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (8,12)) //veteran hunter
 			U.add_skills(rand(3,7),rand(2,7),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
@@ -125,7 +125,7 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Miner")
-			U.add_stats(rand(14,17), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(5,7),rand(1,5),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
@@ -137,7 +137,7 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Stalker")
-			U.add_stats(rand(11,14), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_stats(rand(12,15), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(2,6),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -210,8 +210,8 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(11,12), rand(11,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
-		H.add_skills(rand(3,6),rand(2,6),rand(2,4),rand(2,3),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(13,15), rand(13,15), rand(8,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(6,9),rand(2,6),rand(2,4),rand(2,3),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
@@ -227,35 +227,37 @@ Pilgrim Fate System
 /datum/job/administrator  //so that the inn always has someone working
 	title = "House Noble"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_HIGH //better off than your average gross pilgrim
-	total_positions = 1
-	spawn_positions = 1
+	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
+	total_positions = 2
+	spawn_positions = 2
 	head_position = 1
 	open_when_dead = 1
-	supervisors = "the Administratum at large"
-	selection_color = "#515151"
+	supervisors = "the merchant guilds"
+	selection_color = "#337C81"
 	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_skills(rand(3,6),rand(2,6),rand(2,4),rand(2,3),rand(1,3)) //melee, ranged, med, eng, surgery
-		H.add_stats(rand(10,12), rand(9,12), rand(10,12), rand (12,15)) //a lil better fed than others.
+		H.fully_replace_character_name("Lord [current_name]")
+		H.add_skills(rand(5,8),rand(5,8),rand(5,8),rand(5,8),rand(5,8)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(14,16), rand(14,16), rand(12,18), rand (12,18)) //a lil better fed than others.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and distant merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on the Pilgrims as they are upon you. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and your merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on them as they are upon you. </font></b></span>")
 
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
@@ -295,7 +297,7 @@ Pilgrim Fate System
 
 //Administrator
 /decl/hierarchy/outfit/job/administrator
-	name = OUTFIT_JOB_NAME("Administrator")
+	name = OUTFIT_JOB_NAME("House Noble")
 	uniform = /obj/item/clothing/under/rank/consort/adept
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
