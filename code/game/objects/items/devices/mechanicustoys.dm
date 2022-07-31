@@ -128,10 +128,9 @@
 /obj/item/melee/omnissiah_axe
 	name = "Omnissiah`s axe"
 	desc = "Blessed axe of Magos Dominus, decorated with holy symbols of the Adeptus Mechanicus"
-	icon = 'icons/obj/items/OmmisianAxe.dmi'
-	icon_state = "Whistle_InHand_L"
-	item_state = "Whistle_InHand_L"
-	wielded_icon = "trenchaxe-w"
+	icon_state = "Axe"
+	item_state = "Whistle_InHand"
+	wielded_icon = "Whistle_InHand_W"
 	force = 25
 	block_chance = 50
 	sharp = TRUE
@@ -143,6 +142,7 @@
 /obj/item/melee/omnissiah_axe/dropped()
 	..()
 	spawn(1) if(src) qdel(src)
+
 
 
 //Biologis toys go below here---------------------------------------------------------------------------------
