@@ -211,7 +211,7 @@ Pilgrim Fate System
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(13,15), rand(13,15), rand(8,12), rand (8,11)) //they suck and are supposed to suck
-		H.add_skills(rand(3,6),rand(2,6),rand(2,4),rand(2,3),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,9),rand(2,6),rand(2,4),rand(2,3),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
