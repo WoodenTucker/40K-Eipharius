@@ -283,7 +283,7 @@
 		
 		
 //WARHAMMER 40 THOUSAND IMPERIAL BITCHES WITH BOLTERS!
-
+//Last time modified by: Walker9
 
 
 /obj/item/melee/energy/powersword //basis for other power weapons
@@ -303,10 +303,14 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
-	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
+	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut", "slashed", "sliced")
+	hitsound = "slash_sound"
 	sharp = 1
 	edge = 1
-
+	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
+	drop_sound = 'sound/items/drop_sword.ogg'
+	grab_sound = 'sound/items/unholster_sword02.ogg'
+	equipsound = 'sound/items/holster_sword1.ogg'
 /obj/item/melee/energy/powersword/activate(mob/living/user)
 	..()
 	icon_state = "powersword_on"
@@ -327,6 +331,7 @@
 	throwforce = 40
 	throw_speed = 1
 	throw_range = 4
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 75
 	armor_penetration = 90 //you've messed with the wrong house fool!
 	w_class = ITEM_SIZE_HUGE 
@@ -349,7 +354,7 @@
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
-	block_chance = 40 //not the best block chance
+	block_chance = 40 //not the best block chance, but, you can have two of them!
 	armor_penetration = 90 //you've messed with the wrong house fool!
 	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
