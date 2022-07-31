@@ -192,7 +192,7 @@ meteor_act
 		to_chat(user, "<span class='danger'>They are missing that limb!</span>")
 		return null
 
-	if(user.statscheck(skills = user.SKILL_LEVEL(melee)) == CRIT_FAILURE || (prob(50) && is_hellbanned()))
+	if(user.statscheck(skills = user.SKILL_LEVEL(melee)) == CRIT_FAILURE || (prob(0) && is_hellbanned()))
 		user.resolve_critical_miss(I)
 		return null
 
@@ -661,7 +661,7 @@ meteor_act
 
 //We crit failed, let's see what happens to us.
 /mob/living/proc/resolve_critical_miss(var/obj/item/I)
-	var/result = rand(1,3)
+	var/result = rand(1,2)
 
 	if(!I)
 		visible_message("<span class='danger'>[src] punches themself in the face!</span>")
@@ -671,17 +671,10 @@ meteor_act
 	switch(result)
 		if(1)//They drop their weapon.
 			visible_message("<span class='danger'><big>CRITICAL FAILURE!</big></span>")
-			I.disarm(src)
 			return
 		if(2)
-			visible_message("<span class='danger'><big>CRITICAL FAILURE! [src] botches the attack, stumbles, and falls!</big></span>")
-			playsound(loc, 'sound/weapons/punchmiss.ogg', 50, 1)
-			KnockDown()
+			visible_message("<span class='danger'><big>CRITICAL FAILURE!</big></span>")
 			return
-		if(3)
-			visible_message("<span class='danger'><big>CRITICAL FAILURE! [src] botches the attack and hits themself!</big></span>")
-			I.attack(src, src, zone_sel)
-			apply_damage(rand(5,10), BRUTE)
 
 
 /mob/living/proc/resolve_critical_miss_unarmed()

@@ -32,7 +32,7 @@
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
 		H.add_stats(rand(10,11), rand(8), rand(6,16), rand(7,8)) //extremely simple minded and weak
-		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
+		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
@@ -147,7 +147,7 @@
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
 		H.add_stats(rand(18,18), rand(8,11), rand(10,16), rand(8,12)) //simple minded
-		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
+		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
@@ -212,7 +212,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(2,8))
-		H.add_skills(rand(3,6),rand(3,6),1,rand(5,7),3)
+		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.witchblood()
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)

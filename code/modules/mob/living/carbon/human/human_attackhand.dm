@@ -277,7 +277,7 @@
 						  were made for projectiles.
 					TODO: proc for melee combat miss chances depending on organ?
 				*/
-				if(prob(80))
+				if(prob(100))
 					hit_zone = ran_zone(hit_zone)
 				if(H.statscheck(skills = H.my_skills[SKILL(melee)].level) == FAILURE) // Missed!
 					if(!src.lying)

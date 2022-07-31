@@ -97,9 +97,9 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 		return
 	H.SKILL_LEVEL(medical) = rand((medical_skill - rand(3,1)), medical_skill)
 	H.SKILL_LEVEL(surgery) = rand((surgery_skill - rand(3,1)), surgery_skill)
-	H.SKILL_LEVEL(ranged) = rand((ranged_skill - rand(3,1)), ranged_skill)
+	H.SKILL_LEVEL(ranged) = rand((ranged_skill - rand(6,5)), ranged_skill)
 	H.SKILL_LEVEL(engineering) = rand((engineering_skill - rand(3,1)), engineering_skill)
-	H.SKILL_LEVEL(melee) = rand((melee_skill - rand(3,1)), melee_skill)
+	H.SKILL_LEVEL(melee) = rand((melee_skill - rand(6,5)), melee_skill)
 	//Gun skills
 	H.SKILL_LEVEL(auto_rifle) = rand((auto_rifle_skill - rand(3,1)), auto_rifle_skill)
 	H.SKILL_LEVEL(semi_rifle) = rand((semi_rifle_skill - rand(3,1)), semi_rifle_skill)

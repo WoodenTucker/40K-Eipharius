@@ -121,7 +121,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(12,14), rand(12,14), rand(12,14), rand (8,14))
-		H.add_skills(rand(4,7),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,9),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("[H.real_name]")
