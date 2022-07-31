@@ -126,13 +126,13 @@
 	spawn(1) if(src) qdel(src)
 
 /obj/item/melee/omnissiah_axe
-	name = "Omnissiah`s axe"
-	desc = "Blessed axe of Magos Dominus, decorated with holy symbols of the Adeptus Mechanicus"
+	name = "Omnissian axe"
+	desc = "The Blessed Axe of the mechanicus, this one works as a powerweapon too nad  its also decorated with holy symbols of the Adeptus Mechanicus."
 	icon_state = "Axe"
 	item_state = "Whistle_InHand"
 	wielded_icon = "Whistle_InHand_W"
-	force = 25
-	block_chance = 50
+	force = 44 //i was not aware that this was supposed to be a fucking power axe
+	block_chance = 65
 	sharp = TRUE
 	edge = TRUE
 	item_flags = ITEM_FLAG_NODROP
