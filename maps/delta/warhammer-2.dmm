@@ -4067,11 +4067,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
-"kQ" = (
-/obj/effect/floor_decal/snow,
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "kS" = (
 /obj/machinery/door/airlock/cone{
 	name = "Bathroom"
@@ -5372,11 +5367,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"og" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/obj/effect/floor_decal/snow,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "oi" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
@@ -6119,33 +6109,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
-"rj" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
-"rl" = (
-/obj/effect/landmark/start{
-	name = "Pilgrim"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "ro" = (
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"rp" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/pill/happy,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "rr" = (
 /obj/item/clothing/suit/chef/classic,
 /obj/item/material/knife/butch,
@@ -6154,9 +6120,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
-"rw" = (
-/obj/random/loot/randomsupply,
-/turf/simulated/floor/dirty,
+"rt" = (
+/obj/structure/bed/chair{
+	dir = 8;
+	icon_state = "chair_preview"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/villageinside)
 "rx" = (
 /obj/structure/table/standard{
@@ -6333,6 +6304,14 @@
 /obj/effect/decal/dead/five,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"sF" = (
+/obj/machinery/door/unpowered/inn{
+	name = "Door"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "sG" = (
 /obj/structure/closet,
 /obj/item/storage/firstaid/surgery,
@@ -6385,11 +6364,21 @@
 "sW" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/caves)
+"td" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "tf" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
 	},
 /turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
+"th" = (
+/obj/structure/bed/chair,
+/turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
@@ -6498,15 +6487,6 @@
 /obj/item/material/kitchen/utensil/knife/boot,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"tR" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/dice/d20,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "tS" = (
 /obj/machinery/door/airlock/hatch/simiel{
 	name = "Bridge";
@@ -6539,6 +6519,15 @@
 /obj/random/accessory,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"uf" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/reagent_containers/pill/happy,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "ui" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
@@ -6587,6 +6576,15 @@
 /mob/living/simple_animal/hostile/retaliate/goat/grox,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/village)
+"uI" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "uJ" = (
 /obj/random/action_figure,
 /turf/simulated/floor/stone,
@@ -6622,15 +6620,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
-"uY" = (
-/obj/structure/table/rack,
-/obj/random/loot/sidearms,
-/obj/random/loot/sidearmammo,
-/obj/random/loot/sidearmammo,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "vb" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/turf/checkers,
@@ -6747,6 +6736,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
+"vK" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/dice/d20,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "vM" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -6775,6 +6773,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"vY" = (
+/obj/structure/toilet,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/villageinside)
 "wb" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -6800,6 +6802,14 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
+"wv" = (
+/obj/machinery/door/unpowered/inn/room2{
+	maxhealth = 700;
+	name = "The Den";
+	req_access = list(280)
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/villageinside)
 "wz" = (
 /obj/structure/window/basic,
 /obj/effect/decal/cleanable/dirt,
@@ -6820,6 +6830,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
+"wH" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/obj/effect/floor_decal/snow,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
 "wI" = (
 /obj/effect/landmark/start{
 	name = "Farmer"
@@ -6923,6 +6938,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"xv" = (
+/obj/structure/flora/ausbushes/lavendergrass,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "xw" = (
 /obj/effect/floor_decal/newcorner/white/diagonal,
 /obj/structure/torchwall{
@@ -6960,14 +6979,6 @@
 "xE" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
-"xI" = (
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 700;
-	name = "The Den";
-	req_access = list(280)
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/villageinside)
 "xJ" = (
 /obj/effect/decal/dead/five,
 /obj/random/loot/goodweapon,
@@ -7046,12 +7057,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
-"yd" = (
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "ye" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -7133,10 +7138,6 @@
 /obj/random/accessory,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"yA" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "yB" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 30
@@ -7145,13 +7146,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
-"yD" = (
-/obj/effect/floor_decal/snow,
-/obj/structure/barbwire{
-	color = "grey"
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "yE" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/structure/bed/chair/wood{
@@ -7162,10 +7156,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"yG" = (
-/obj/structure/toilet,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/villageinside)
 "yJ" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -7234,10 +7224,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
-"zj" = (
-/obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
+"zd" = (
+/obj/structure/table/rack,
+/obj/random/loot/sidearms,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "zl" = (
 /obj/effect/floor_decal/turf/bloodbar,
 /obj/effect/floor_decal/spline/fancy/wood/three_quarters,
@@ -7385,6 +7380,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
+"An" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty/indestructable/mud,
+/area/cadiaoutpost/oa/village)
 "Ap" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -7437,6 +7438,10 @@
 /mob/living/simple_animal/hostile/shafra,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"AH" = (
+/obj/random/loot/randomsupply,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/villageinside)
 "AI" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -7460,14 +7465,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/bar)
-"AZ" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Door"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "Ba" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -7636,15 +7633,6 @@
 /obj/effect/decal/dead/two,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"Cp" = (
-/obj/structure/bed/chair{
-	dir = 8;
-	icon_state = "chair_preview"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "Ct" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -7937,6 +7925,15 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/village)
+"EE" = (
+/obj/item/storage/toolbox/mechanical{
+	color = "grey"
+	},
+/obj/structure/table/rack,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "EF" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/newcorner/red/solid,
@@ -8008,6 +8005,11 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"Fk" = (
+/obj/effect/floor_decal/snow,
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
 "Fp" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/theforest)
@@ -8054,6 +8056,10 @@
 /obj/structure/flora/tree/snowy,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"FK" = (
+/obj/effect/floor_decal/snow,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "FP" = (
 /mob/living/simple_animal/hostile/syndicate/ranged{
 	health = 250
@@ -8067,6 +8073,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
+"FT" = (
+/obj/structure/table/rack,
+/obj/random/loot/randomsupply,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "FY" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -8156,15 +8169,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"GJ" = (
-/obj/item/card/id/innkey2{
-	access = list(280);
-	name = "Den key 1"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "GM" = (
 /obj/machinery/firealarm{
 	pixel_y = 30
@@ -8186,40 +8190,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"GU" = (
-/obj/item/storage/toolbox/mechanical{
-	color = "grey"
-	},
-/obj/structure/table/rack,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "GW" = (
 /obj/structure/stairs/north,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"GX" = (
-/obj/item/device/boombox,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "GZ" = (
 /obj/effect/floor_decal/turf/barnew,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"Ha" = (
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/village)
 "Hb" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -8246,6 +8226,12 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/village)
+"Hr" = (
+/obj/structure/toilet,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "Hy" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -8261,6 +8247,12 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/villageinside)
+"HH" = (
+/obj/effect/landmark/start{
+	name = "Pilgrim"
+	},
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/villageinside)
 "HJ" = (
 /obj/structure/bed/chair/wood{
@@ -8420,18 +8412,18 @@
 /obj/random/canned_food,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
+"Je" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "Jg" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/structure/window_frame,
 /obj/structure/grille,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"Ji" = (
-/obj/effect/landmark/animal/rngretaliatespawner{
-	name = "rng rat"
-	},
-/turf/simulated/floor/dirty/indestructable/mud,
-/area/cadiaoutpost/oa/village)
 "Jr" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -8463,15 +8455,15 @@
 "JD" = (
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
-"JI" = (
-/obj/item/flame/lighter/random,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
-"JM" = (
+"JG" = (
 /obj/effect/floor_decal/snow,
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/village)
+"JI" = (
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "JU" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -8548,6 +8540,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
+"Kr" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/village)
 "Kw" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/snow,
@@ -8719,12 +8717,6 @@
 	name = "locked room";
 	req_access = list(213)
 	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
-"Lz" = (
-/obj/structure/bed/chair,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -9033,6 +9025,15 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"NX" = (
+/obj/item/device/boombox,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "Oc" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/machinery/door/unpowered/inn/interior{
@@ -9116,6 +9117,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"OB" = (
+/obj/effect/landmark/start{
+	name = "Pilgrim"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "OD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9168,6 +9175,12 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
+"Pw" = (
+/obj/structure/closet/crate/bin,
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "PH" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -9281,6 +9294,15 @@
 /obj/structure/stairs/west,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"Qq" = (
+/obj/item/card/id/innkey2{
+	access = list(280);
+	name = "Den key 1"
+	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/villageinside)
 "Qy" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -9462,6 +9484,10 @@
 /obj/random/firstaid,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"RY" = (
+/obj/item/crowbar/red,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "Sc" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -9503,6 +9529,13 @@
 /area/cadiaoutpost/oa/gatehouse)
 "Ss" = (
 /obj/structure/flora/tree/dead,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
+"St" = (
+/obj/effect/floor_decal/snow,
+/obj/structure/barbwire{
+	color = "grey"
+	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "Sv" = (
@@ -9737,12 +9770,6 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"Ud" = (
-/obj/effect/landmark/start{
-	name = "Pilgrim"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/villageinside)
 "Uj" = (
 /obj/effect/decal/remains,
 /turf/simulated/floor/stone,
@@ -9773,12 +9800,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"UJ" = (
-/obj/structure/closet/crate/bin,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "UM" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -9890,12 +9911,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"VG" = (
-/obj/structure/toilet,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "VO" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -9966,10 +9981,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/bar)
-"Ws" = (
-/obj/effect/floor_decal/snow,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "Wu" = (
 /obj/machinery/button/remote/blast_door/lever{
 	id = "inquisitorshipwindows";
@@ -10067,13 +10078,6 @@
 /obj/machinery/door/airlock/glass_medical,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"WT" = (
-/obj/structure/table/rack,
-/obj/random/loot/randomsupply,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "WX" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
@@ -10325,10 +10329,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/bar)
-"Yu" = (
-/obj/item/crowbar/red,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "Yw" = (
 /obj/structure/sign/imperial,
 /turf/simulated/wall/r_wall,
@@ -28430,15 +28430,15 @@ ro
 ro
 rf
 rf
-GU
+EE
 mx
-uY
+zd
 rf
 mx
 mx
 nH
 mx
-GX
+NX
 rf
 ro
 ro
@@ -28690,10 +28690,10 @@ nX
 mx
 mx
 mx
-AZ
+sF
 mx
-Lz
-tR
+th
+vK
 mJ
 mx
 rf
@@ -28945,12 +28945,12 @@ ot
 rf
 rf
 rf
-WT
-WT
+FT
+FT
 rf
 mx
-Lz
-rp
+th
+uf
 mJ
 mx
 rf
@@ -29194,9 +29194,9 @@ ro
 ZH
 ro
 rf
-rw
+AH
 nO
-nO
+ey
 rf
 ot
 ot
@@ -29207,7 +29207,7 @@ rf
 rf
 mx
 mx
-Cp
+rt
 mx
 mx
 rf
@@ -29453,20 +29453,20 @@ ro
 rf
 nO
 nO
-Ud
+HH
 rf
 ot
 ot
 rf
-VG
+Hr
 mx
-GJ
+Qq
 gr
 mx
 mx
 mx
 mx
-UJ
+Pw
 rf
 SJ
 ro
@@ -29716,18 +29716,18 @@ ot
 ot
 rf
 rf
-rj
+uI
 rf
 rf
 rf
 rf
 rf
-xI
+wv
 rf
 rf
 ro
 SJ
-yD
+St
 ro
 ro
 ro
@@ -30233,7 +30233,7 @@ fM
 fM
 fM
 kf
-JM
+JG
 fM
 fM
 fM
@@ -30496,7 +30496,7 @@ fM
 fM
 fM
 fM
-yA
+td
 ro
 ro
 SJ
@@ -30750,7 +30750,7 @@ fM
 fM
 fM
 fM
-rl
+OB
 fM
 fM
 ro
@@ -30994,7 +30994,7 @@ zM
 KS
 SJ
 SJ
-og
+wH
 ro
 SJ
 tV
@@ -31019,7 +31019,7 @@ ro
 kb
 fM
 fM
-Yu
+RY
 fM
 fM
 ro
@@ -31255,7 +31255,7 @@ rf
 rf
 rf
 fM
-zj
+xv
 fM
 kf
 kf
@@ -31264,7 +31264,7 @@ fM
 kf
 fM
 fM
-yA
+td
 fM
 Ns
 ro
@@ -31508,7 +31508,7 @@ ro
 ro
 ro
 rf
-yG
+vY
 nO
 bN
 fM
@@ -31532,7 +31532,7 @@ jR
 ro
 ro
 ro
-rl
+OB
 fM
 fM
 fM
@@ -31773,9 +31773,9 @@ kf
 fM
 fM
 Ns
-JM
-JM
-JM
+JG
+JG
+JG
 fM
 fM
 tV
@@ -32546,7 +32546,7 @@ fM
 ro
 ro
 rf
-Ud
+HH
 nO
 rf
 nO
@@ -32807,7 +32807,7 @@ nO
 nO
 rf
 nO
-Ud
+HH
 rf
 ro
 ro
@@ -33313,7 +33313,7 @@ SJ
 ro
 KS
 fM
-yA
+td
 ro
 ro
 ro
@@ -33569,7 +33569,7 @@ ro
 ro
 SJ
 SJ
-Ws
+FK
 kf
 ro
 SJ
@@ -34330,7 +34330,7 @@ Ns
 tV
 tV
 tV
-kQ
+Fk
 SJ
 SJ
 ro
@@ -34855,7 +34855,7 @@ SJ
 ro
 ro
 fM
-yA
+td
 ro
 ro
 ro
@@ -40980,7 +40980,7 @@ rf
 SD
 rf
 rf
-Ha
+Kr
 kf
 kf
 cu
@@ -41015,7 +41015,7 @@ kb
 fM
 cu
 fM
-yd
+Je
 rf
 na
 na
@@ -43558,7 +43558,7 @@ cu
 fM
 cu
 cu
-Ji
+An
 wS
 wS
 wS
