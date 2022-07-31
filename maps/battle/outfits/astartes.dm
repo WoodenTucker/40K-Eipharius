@@ -7,7 +7,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
@@ -35,7 +35,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
@@ -47,7 +47,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	suit_store = /obj/item/gun/projectile/bolter/sally
