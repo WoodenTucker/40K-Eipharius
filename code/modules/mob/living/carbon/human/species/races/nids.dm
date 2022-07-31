@@ -261,7 +261,7 @@
 		return
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near!")
-	src.add_stats(rand(18,25),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+	src.add_stats(rand(15,20),rand(14,18),rand(6,6),6) //gives stats str, end, int, dex
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
