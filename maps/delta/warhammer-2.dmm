@@ -6030,6 +6030,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/bar)
+"qJ" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/village)
 "qK" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/chem_master{
@@ -6786,6 +6792,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"wR" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty/indestructable/mud,
+/area/cadiaoutpost/oa/village)
 "wS" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/tradefloor)
@@ -8281,6 +8293,12 @@
 /obj/random/canned_food,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
+"Jf" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "Jg" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/structure/window_frame,
@@ -22073,7 +22091,7 @@ ro
 ro
 ro
 ro
-ro
+ZU
 ro
 ro
 ro
@@ -25663,7 +25681,7 @@ Ns
 ro
 ro
 ro
-ro
+ZU
 ro
 ro
 ro
@@ -28986,7 +29004,7 @@ Ns
 Ns
 Ns
 Ns
-Ns
+WX
 Ns
 Ns
 fM
@@ -33877,7 +33895,7 @@ Ns
 Ns
 Ns
 Ns
-Ns
+WX
 Ns
 Ns
 Ns
@@ -34113,7 +34131,7 @@ ro
 ro
 ro
 Ns
-Ns
+WX
 Ns
 Ns
 Ns
@@ -38468,7 +38486,7 @@ Ns
 Ns
 Ns
 Ns
-Ns
+WX
 Ns
 ha
 jL
@@ -38492,7 +38510,7 @@ ha
 cu
 Ns
 Ns
-Ns
+WX
 Ns
 Pe
 qK
@@ -40791,7 +40809,7 @@ rf
 SD
 rf
 rf
-kf
+qJ
 kf
 kf
 cu
@@ -40826,7 +40844,7 @@ kb
 fM
 cu
 fM
-fM
+Jf
 rf
 na
 na
@@ -42633,7 +42651,7 @@ fM
 fM
 kf
 kf
-kb
+kf
 ro
 ro
 ro
@@ -42890,7 +42908,7 @@ kf
 fM
 kf
 kf
-kb
+kf
 ro
 ro
 ro
@@ -43369,7 +43387,7 @@ cu
 fM
 cu
 cu
-cu
+wR
 wS
 wS
 wS
@@ -44690,7 +44708,7 @@ rf
 kf
 kf
 kb
-ro
+ZU
 ro
 ro
 ro
@@ -48267,7 +48285,7 @@ rf
 rf
 rf
 ro
-ro
+ZU
 Qe
 Qe
 Qe
@@ -48508,7 +48526,7 @@ ro
 ro
 Ua
 ro
-ro
+ZU
 rf
 hZ
 xr
@@ -49051,7 +49069,7 @@ ro
 ro
 ro
 ro
-ro
+ZU
 ro
 ro
 ZH
@@ -50036,7 +50054,7 @@ NS
 ro
 ro
 ro
-ro
+ZU
 ro
 ro
 ro
