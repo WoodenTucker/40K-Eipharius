@@ -50,8 +50,10 @@
 	item_state = "agent_mask"
 	siemens_coefficient = 0.7
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
-	body_parts_covered = FACE|EYES
+	flash_protection = FLASH_PROTECTION_MAJOR
+	unacidable = 1
 	w_class = ITEM_SIZE_SMALL
+	body_parts_covered = HEAD|FACE|EYES
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/half
