@@ -216,4 +216,4 @@
 	damage = 120
 	armor_penetration = 20
 //	agony = 0 //who did this? dumb fucks
-	stun = 5
+//	stun = 5
