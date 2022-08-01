@@ -272,16 +272,16 @@
 
 
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
 //WARHAMMER 40 THOUSAND IMPERIAL BITCHES WITH BOLTERS!
 //Last time modified by: Walker9
 
@@ -299,7 +299,7 @@
 	throw_range = 4
 	block_chance = 75
 	armor_penetration = 90 //you've messed with the wrong house fool!
-	w_class = ITEM_SIZE_HUGE 
+	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
@@ -334,7 +334,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 75
 	armor_penetration = 90 //you've messed with the wrong house fool!
-	w_class = ITEM_SIZE_HUGE 
+	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
@@ -349,7 +349,7 @@
 	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
 	icon_state = "powerclaw-alt_mag"
 	active_force = 60 //This should be enough to cut off most limbs in a few hits
-	active_throwforce = 0 
+	active_throwforce = 0
 	force = 30
 	throwforce = 1
 	throw_speed = 1
@@ -379,3 +379,83 @@
 /obj/item/melee/energy/powersword/claw/integrated/dropped()
 	..()
 	spawn(1) if(src) qdel(src)
+
+
+
+
+
+
+
+
+
+
+
+
+
+//WIP//
+
+
+/obj/item/reagent_containers/hypospray/vial/narthecium
+	name = "narthecium"
+	desc = "The DeForest Medical Corporation hypospray is a sterile, air-needle autoinjector for rapid administration of drugs to patients. Uses a replacable 30u vial."
+	volume = 60
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	icon_state = "hypogauntlet_on"
+	item_state = "hypogauntlet_on"
+	wielded_icon = "trenchaxe-w"
+	str_requirement = 18 //this shouldn't even be here but just in case of someone abusing bugs to get the apothecary's power armor
+	force = 60 //sharp enough to penetrate ceramite and adamantium alike
+	block_chance = 70 //apothecaries are based
+	armor_penetration = 50 //VERY fucking sharp
+	item_flags = ITEM_FLAG_NODROP
+	sharp = TRUE
+	edge = TRUE
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 10 //should be 5 or 3 seconds
+	sharp = 1
+	edge = 1
+	unacidable = 1
+
+/obj/item/reagent_containers/hypospray/vial/narthecium/do_surgery(mob/living/carbon/M, mob/living/user)
+	if(user.a_intent != I_GRAB) //in case it is ever used as a surgery tool
+		return ..()
+	attack(M, user)
+	return 1
+
+/obj/item/reagent_containers/hypospray/vial/narthecium/attack(mob/living/M as mob, mob/user as mob)
+	if(user.a_intent != I_HELP) //in case it is ever used as a surgery tool
+		return
+	if(!reagents.total_volume)
+		to_chat(user, "<span class='warning'>[src] is empty.</span>")
+		return
+	if (!istype(M))
+		return
+
+	var/mob/living/carbon/human/H = M
+	if(istype(H))
+		var/obj/item/organ/external/affected = H.get_organ(user.zone_sel.selecting)
+		if(!affected)
+			to_chat(user, "<span class='danger'>\The [H] is missing that limb!</span>")
+			return
+		else if(affected.robotic >= ORGAN_ROBOT)
+			to_chat(user, "<span class='danger'>You cannot inject a robotic limb.</span>")
+			return
+
+	user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+	//user.do_attack_animation(M)
+	to_chat(user, "<span class='notice'>You inject [M] with [src].</span>")
+	to_chat(M, "<span class='notice'>You feel a tiny prick!</span>")
+	user.visible_message("<span class='warning'>[user] injects [M] with [src].</span>")
+
+	if(M.reagents)
+		var/contained = reagentlist()
+		var/trans = reagents.trans_to_mob(M, amount_per_transfer_from_this, CHEM_BLOOD)
+		admin_inject_log(user, M, src, contained, trans)
+		to_chat(user, "<span class='notice'>[trans] units injected. [reagents.total_volume] units remaining in \the [src].</span>")
+
+	playsound(M, inject_sound, 100)
+	return
