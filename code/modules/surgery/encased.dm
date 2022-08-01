@@ -23,13 +23,13 @@
 //////////////////////////////////////////////////////////////////
 //	ribcage sawing surgery step
 //////////////////////////////////////////////////////////////////
-/datum/surgery_step/open_encased/saw
+/datum/surgery_step/open_encased/saw //its a power weapon
 	allowed_tools = list(
 	/obj/item/circular_saw = 100, \
 	/obj/item/material/knife = 50, \
 	/obj/item/material/hatchet = 75, \
 	/obj/item/melee/pcsword = 90, \
-	/obj/item/melee/omnissiah_axe = 100, \ //its a power weapon
+	/obj/item/melee/omnissiah_axe = 100, \
 	/obj/item/melee/trench_axe = 85 \
 	)
 

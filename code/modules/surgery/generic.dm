@@ -302,7 +302,7 @@
 	/obj/item/material/hatchet = 75, \
 	/obj/item/melee/pcsword = 90, \
 	/obj/item/melee/omnissiah_axe = 100, \
-	/obj/item/melee/trench_axe = 100 \
+	/obj/item/melee/trench_axe = 100, \
 	/obj/item/reagent_containers/hypospray/vial/narthecium = 100 \
 	)
 
