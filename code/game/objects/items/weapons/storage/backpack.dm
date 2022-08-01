@@ -272,7 +272,7 @@
 	icon_state = "salpack"
 	item_state = "salpack"
 
-/obj/item/storage/backpack/satchel/warfare/techpriest/magos//techpack //because it uses techpriest stuff.
+/obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack //because it uses techpriest stuff.
 	name = "Astartes Mark VII Servo-Harness"
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings. This Powerpack has been equipped with additional Servo-Arms to serve engineering purposes."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
