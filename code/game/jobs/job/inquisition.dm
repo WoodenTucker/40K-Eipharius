@@ -15,6 +15,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
 	alt_titles = list(
 		"Interrogator of Ordos Malleus" = /decl/hierarchy/outfit/job/acolyte/malleus,
+		"Interrogator of Ordos Xenos" = /decl/hierarchy/outfit/job/acolyte,
+		"Interrogator of Ordos Hereticus" = /decl/hierarchy/outfit/job/acolyte,
 		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion
 		)
 	announced = FALSE
@@ -63,7 +65,8 @@
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
 	alt_titles = list(
-		"Inquisitor" = /decl/hierarchy/outfit/job/inquisitor,
+		"Inquisitor of Ordos Xenos" = /decl/hierarchy/outfit/job/inquisitor,
+		"Inquisitor of Ordos Hereticus" = /decl/hierarchy/outfit/job/inquisitor,
 		"Inquisitor of Ordos Malleus" = /decl/hierarchy/outfit/job/inquisitor/malleus
 		)
 	announced = FALSE

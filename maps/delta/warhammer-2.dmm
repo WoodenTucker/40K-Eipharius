@@ -990,8 +990,6 @@
 /obj/random/shoes,
 /obj/item/device/radio/headset/red_team/voxcaster,
 /obj/effect/floor_decal/turf/carpetn00,
-/obj/item/stack/thrones/ten,
-/obj/item/stack/thrones/ten,
 /obj/item/stamp/chameleon,
 /obj/item/card/id/innkey3{
 	access = list(333,211);
@@ -1001,8 +999,6 @@
 	access = list(333,211);
 	name = "monastary key"
 	},
-/obj/item/stack/thrones2,
-/obj/item/stack/thrones2,
 /obj/item/stack/thrones2,
 /obj/item/stack/thrones2,
 /obj/item/stack/thrones/ten,
@@ -5809,18 +5805,17 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "pv" = (
-/obj/effect/floor_decal/turf/rectangles,
-/obj/machinery/door/unpowered/inn{
-	name = "door"
-	},
-/obj/structure/curtain/open,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/villageinside)
-"pw" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair,
+/obj/effect/floor_decal/turf/checkers,
 /turf/simulated/floor/wood,
-/area/cadiaoutpost/oa/villageinside)
+/area/cadiaoutpost/oa/caves)
+"pw" = (
+/obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/caves)
 "px" = (
 /obj/machinery/door/unpowered/inn{
 	name = "Door"
@@ -6303,6 +6298,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"sH" = (
+/obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/obj/structure/toilet,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/caves)
 "sI" = (
 /obj/structure/gemwasher,
 /turf/simulated/floor/tiled{
@@ -6575,6 +6579,18 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
+"uX" = (
+/obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/obj/machinery/shower{
+	dir = 8;
+	icon_state = "shower"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/caves)
 "vb" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/turf/checkers,
@@ -7423,6 +7439,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
+"Bn" = (
+/obj/structure/sink,
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/oa/caves)
 "Bo" = (
 /obj/item/campfire/self_lit,
 /turf/simulated/floor/stone,
@@ -7681,6 +7701,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"Ds" = (
+/obj/effect/floor_decal/turf/checkers,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4;
+	icon_state = "plating"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/caves)
 "Dy" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -7883,6 +7911,7 @@
 "Fa" = (
 /obj/structure/closet/crate,
 /obj/item/storage/pill_bottle/happy,
+/obj/random/loot/sidearmammo,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -8995,6 +9024,13 @@
 	integrity = 3000
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"Pf" = (
+/obj/effect/floor_decal/turf/rectangles,
+/obj/machinery/door/unpowered/inn{
+	name = "door"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/caves)
 "Po" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/toolbox/mechanical,
@@ -9012,6 +9048,24 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
+"Pz" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/effect/floor_decal/turf/metal/two,
+/obj/structure/table/rack,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/tradefloor)
 "PH" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -42885,7 +42939,7 @@ fM
 kf
 kf
 kf
-pD
+kf
 kf
 fM
 kf
@@ -43142,7 +43196,7 @@ rf
 rf
 rf
 rf
-MV
+rf
 rf
 rf
 kf
@@ -43395,12 +43449,12 @@ fM
 cu
 kf
 rf
-ol
-oo
-rf
 pl
 pm
 pm
+rf
+ol
+oo
 rf
 kf
 kf
@@ -43650,14 +43704,14 @@ Qe
 fM
 cu
 fM
-kf
+pD
+MV
+pm
+pm
+pm
 oj
 om
 om
-pc
-pm
-pm
-pm
 rf
 kf
 kf
@@ -43909,12 +43963,12 @@ fM
 fM
 kf
 rf
-on
-op
-rf
 pr
 pm
 pm
+rf
+on
+op
 rf
 kf
 kf
@@ -44159,7 +44213,7 @@ CD
 cP
 cV
 ac
-cV
+Pz
 cV
 Qe
 Qe
@@ -44168,9 +44222,9 @@ kf
 rf
 rf
 rf
+pc
 rf
-rf
-pv
+pc
 rf
 rf
 kf
@@ -44425,9 +44479,9 @@ fM
 kf
 kf
 rf
-pe
 pf
-pw
+pf
+pf
 pz
 rf
 kf
@@ -44683,9 +44737,9 @@ kf
 kf
 rf
 pf
-pt
 pf
-pB
+pf
+pf
 rf
 kf
 kf
@@ -44939,10 +44993,10 @@ kf
 kf
 kf
 rf
-rf
-rf
-rf
-rf
+pe
+pt
+pf
+pB
 rf
 kf
 kb
@@ -45195,12 +45249,12 @@ kf
 kf
 fM
 kf
-kf
-kf
-kf
-fM
-kf
-fM
+rf
+rf
+rf
+rf
+rf
+rf
 kf
 kf
 kb
@@ -58782,10 +58836,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+Gl
+Gl
+Gl
+Gl
 xE
 xE
 xE
@@ -59039,10 +59093,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+Gl
+sH
+pw
+Gl
 xE
 xE
 xE
@@ -59296,10 +59350,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+Bn
+pv
+pv
+Pf
 xE
 xE
 xE
@@ -59553,10 +59607,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+Gl
+Ds
+uX
+Gl
 xE
 xE
 xE
@@ -59810,10 +59864,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+Gl
+Gl
+Gl
+Gl
 xE
 xE
 xE

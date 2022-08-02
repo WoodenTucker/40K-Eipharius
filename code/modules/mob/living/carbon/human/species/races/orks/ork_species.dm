@@ -15,6 +15,7 @@
 	burn_mod = 1.0
 	toxins_mod = 0.9
 	sexybits_location = BP_GROIN
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_MINOR_CUT
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
 		/mob/living/carbon/human/ork/proc/scavenge,
@@ -44,12 +45,12 @@
 
 /mob/living/carbon/human/ork/Life()
 	..()
-	var/regen = 0.08
+	var/regen = 0.25
 	if(max_waaagh > 0)
 		if(inspired)
-			regen = 0.10
+			regen = 0.25
 		else
-			regen = 0.08
+			regen = 0.25
 
 		waaagh = max(0, min(waaagh + regen, max_waaagh))
 
