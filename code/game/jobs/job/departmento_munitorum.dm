@@ -33,6 +33,11 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and your merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on them as they are upon you.</font></b></span>")
 
 /datum/job/qm
@@ -68,6 +73,11 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>A penitent in service to the Noble Household of this planet, you owe a debt of life to the family that extends generations down your lines to a distant ancestor, though despite the brand upon your neck and your status as a penitent. You fare better then most who come seeking fortune in this accursed world.</font></b></span>")
 
 
@@ -126,6 +136,14 @@
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
 
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 // Munitorum Record Keeper
 
 /datum/job/librarian
@@ -152,3 +170,11 @@
 	medical_skill = 3
 	engineering_skill = 3
 	surgery_skill = 2
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
