@@ -111,8 +111,8 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("bit")
 	attack_sound = 'sound/weapons/bite.ogg'
 	shredding = 0
-	damage = 0
-	sharp = 0
+	damage = 20
+	sharp = 1
 	edge = 0
 
 /datum/unarmed_attack/bite/is_usable(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone)
@@ -140,7 +140,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("fist")
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
-	damage = 0
+	damage = 10
 
 /datum/unarmed_attack/punch/show_attack(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone, var/attack_damage)
 	var/obj/item/organ/external/affecting = target.get_organ(zone)
@@ -233,7 +233,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("stomped on")
 	attack_noun = list("stomp")
 	attack_sound = "swing_hit"
-	damage = 0
+	damage = 50
 
 /datum/unarmed_attack/stomp/is_usable(var/mob/living/carbon/human/user, var/mob/living/carbon/human/target, var/zone)
 	if(!istype(target))
@@ -297,7 +297,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("claw")
 	eye_attack_text = "blades"
 	eye_attack_text_victim = "daggers"
-	damage = 30
+	damage = 60
 	sharp = 1
 	attack_sound = 'sound/effects/nidslash.ogg'
 
