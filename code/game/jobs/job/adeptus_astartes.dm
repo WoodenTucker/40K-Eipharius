@@ -42,6 +42,14 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
+		var/corruption = rand(1,5)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
 		H.add_skills(11,11,11,11,11)
 /*switch(title) //either you get this to work or you dont change it, ok?

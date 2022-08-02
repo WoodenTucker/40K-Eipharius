@@ -121,7 +121,7 @@
 			to_chat(src, "<span class='warning'>Place into the nganga a heart with which to fuel this putrid pestilence and with it stir in logs to serve as its bones! </span>")
 			return
 		if(17)
-			to_chat(src, "<span class='warning'> Now for the final piece, a carved pumpkin head and pair of eyes to guide it.</span>")
+			to_chat(src, "<span class='warning'> Now for the final piece, a human head and pair of eyes to guide it.</span>")
 			return
 		if(18)
 			to_chat(src, "<span class='warning'> You have everything you need my child. The nganga is beyond pleased. Place the pieces of my servant into the nganga and bring him to life. Place them in this order! Right leg, left leg, right arm, left arm, torso, head!</span>")
@@ -309,7 +309,7 @@
 		pleasedeyes = 1
 		qdel(O)
 
-	else if (istype(O, /obj/item/clothing/head/pumpkinhead))
+	else if (istype(O, /obj/item/organ/external/head))
 		if(pleasedeyes == 0)
 			to_chat(usr, "<span class='warning'>The eyes first! THE EYES FIRST!</span>")
 			return
@@ -318,7 +318,7 @@
 			return
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		user.decay++ //total is now 18 decay
-		visible_message("The smiling pumpkin head fills with ichor as it submurges in the vile stew! The eye balls take their place and quickly a head forms before you!")
+		visible_message("The smiling head fills with ichor as it submurges in the vile stew! The eye balls take their place and quickly a head forms before you!")
 		playsound(usr, 'sound/effects/bubbling_cauldron.ogg', 80, 0, -1)
 		qdel(O)
 		new /obj/item/diseasedhead(src.loc)
