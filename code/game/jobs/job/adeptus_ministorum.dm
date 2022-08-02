@@ -37,15 +37,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Deacon. You are one of the Imperial Cult's priesthood, your oratory skills can stir entire crowds of the faithful and turn a coward into a zealot. You often work on worlds where faith is lacking, and people are rebellious. It is your job to spread the Imperial Cult to this new colony and it's ignorant masses, bringing their backwards beliefs in line with the faith of the God Emperor, as well as guiding the already faithful.</font></b></span>")
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
-
+	
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
 		if(!.)
@@ -236,14 +228,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
 
@@ -337,14 +321,6 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
 		H.h_style = "Bob"
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
 
@@ -389,14 +365,6 @@
 		H.warfare_faction = IMPERIUM
 		H.f_style = "shaved"
 		H.h_style = "Bob"
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a senior sister of the Ordos Hospitaller, serving under The Deacon/Abbess to maintain the health and divinity of the township.</font></b></span>")
 
@@ -437,14 +405,6 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
 
@@ -480,12 +440,4 @@
 		H.add_skills(rand(3,6),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")

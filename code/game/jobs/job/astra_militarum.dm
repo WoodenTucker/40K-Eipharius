@@ -78,16 +78,7 @@
 		if(title == "Krieg Guardsman")
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
-		else
-			var/corruption = rand(1,5)
-			H.fully_replace_character_name("[H.real_name]")
-			switch(corruption)
-				if(1)
-					H.verbs += list(
-					/mob/living/carbon/human/proc/khorne,
-					/mob/living/carbon/human/proc/nurgle,
-					/mob/living/carbon/human/proc/slaanesh,
-					/mob/living/carbon/human/proc/tzeentch)
+		else H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -118,7 +109,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE
+	can_be_in_squad = FALSE	
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
 	sniper_skill = 6
@@ -138,14 +129,6 @@
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
-		var/corruption = rand(1,2)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 
 //Sharpshooters
 
@@ -189,14 +172,6 @@
 				if(title == "Valhallan Sharpshooter")
 					H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		var/corruption = rand(1,3)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 
 // Sergeants
 
@@ -256,14 +231,6 @@
 					H.add_skills(rand(9,11),rand(9,10),rand(5,7),5,rand(4,6))
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
-				var/corruption = rand(1,3)
-				switch(corruption)
-					if(1)
-						H.verbs += list(
-						/mob/living/carbon/human/proc/khorne,
-						/mob/living/carbon/human/proc/nurgle,
-						/mob/living/carbon/human/proc/slaanesh,
-						/mob/living/carbon/human/proc/tzeentch)
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 
 // Combat Medicae
@@ -308,14 +275,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
-		var/corruption = rand(1,3)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 
 
 // Commissar

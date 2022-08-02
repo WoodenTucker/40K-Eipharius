@@ -25,32 +25,25 @@
 		return
 	switch(src.rage)
 		if(0)
-			if(istype(src.l_hand, /obj/item/organ/external/head))
+			if(istype(src.l_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.l_hand)
-				to_chat(src, "You bring your first skull to the Skull Throne. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
+				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				src.update_inv_l_hand()
 				src.rage++
 
-			else if(istype(src.r_hand, /obj/item/organ/external/head))
+			else if(istype(src.r_hand, /obj/item/reagent_containers/food/snacks/khornemeat))
 				qdel(usr.r_hand)
-				to_chat(src, "You bring your first skull to the Skull Throne. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
+				to_chat(src, "You devour the tainted meat, a burning rage fills your gut and awakens you to a grim reality. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				src.update_inv_r_hand()
 				src.rage++
 			else
-				to_chat(src, "Bring me your first skull, mortal, and prove your worship to strength and honor of battle.")
+				to_chat(src, "You need a certain type of meat... Something filled with rage and a lust for bloodshed.")
 				return
 		if(1)
 			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
-			if(src.STAT_LEVEL(str)>20)
-				src.STAT_LEVEL(str)+=3
-			else if(src.STAT_LEVEL(str)<10)
-				src.STAT_LEVEL(str)+=5
-			if(src.SKILL_LEVEL(melee)>5)
-				src.SKILL_LEVEL(melee)+=1
-			else if src.SKILL_LEVEL(melee)<5)
-				src.SKILL_LEVEL(melee)+=2
+			STAT_LEVEL(str)+=5
 			src.rage++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
 			src.mind.special_role = "Khorne Cultist"
