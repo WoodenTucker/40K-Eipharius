@@ -38,6 +38,14 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
+		var/corruption = rand(1,6)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are an interrogator-in-training, referred as Acolyte, Your task is to assist the Lord Inquisitor in investigating, neutralising and erasing traces of heresy, chaos, xenos and daemons. Should you fail in your duties, you have no doubt of what will become of you -- this may be your final test.</font></b></span>")
 
 /datum/job/acolyte/equip(var/mob/living/carbon/human/H)
@@ -88,6 +96,14 @@
 		H.witchblood()
 		H.inquisitor = 1
 		H.get_idcard()?.access = get_all_accesses()
+		var/corruption = rand(1,7)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium and Lords of the Inquisition. A single drop of mercy may result in the spilled bloods of untold millions, steel your heart to their suffering. Every person, asset and object on this planet is a tool or resource to be exploited. Excommunication and the dull thud of a bolt pistol is what awaits you in failure. Your acolytes personally selected to serve only you, whether they survive and rise to the ranks of Interrogator shall be determined in the coming weeks.</font></b></span>")
 
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)

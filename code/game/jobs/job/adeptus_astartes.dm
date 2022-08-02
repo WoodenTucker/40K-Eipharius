@@ -40,6 +40,14 @@
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
+		var/corruption = rand(1,5)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
