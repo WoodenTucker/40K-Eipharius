@@ -172,16 +172,16 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 35
-	armor_penetration = 15
+	damage = 40
+	armor_penetration = 25
 
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
 	name = "lasbolt"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 50
-	armor_penetration = 40
+	damage = 85
+	armor_penetration = 65
 	
 /obj/item/projectile/energy/las/lasgun/hotshot
 	name = "lasbolt"
@@ -205,7 +205,8 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 140
-	agony = 60
+//	agony =  //who did this? this passes through all fucking armor... EVEN IF THEY DIDNT TAKE ANY DAMAGE THEY WOULD HAVE A FUCKLOAD OF PAIN
+	armor_penetration = 30
 
 /obj/item/projectile/energy/pulse/ion
 	name = "ION round"
@@ -214,5 +215,5 @@
 	icon_state = "pulse1"
 	damage = 120
 	armor_penetration = 20
-	agony = 50
-	stun = 5
+//	agony = 0 //who did this? dumb fucks
+//	stun = 5

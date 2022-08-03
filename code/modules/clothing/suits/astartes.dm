@@ -43,23 +43,23 @@
 	icon_state = "ultrasuit"
 	item_state = "ultrasuit"
 
-// SPESS MUUHREEN CAPTAIN
+// SPESS MUUHREEN SIRGENT
 
-/obj/item/clothing/suit/armor/astartes/captain/ravenguard
+/obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XIXth Chapter, Raven Guards."
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Sergeant of the XIXth Chapter, Raven Guards."
 	icon_state = "ravcap"
 	item_state = "ravcap"
 
-/obj/item/clothing/suit/armor/astartes/captain/salamander
+/obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XVIIIth Chapter, Salamanders."
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Sergeant of the XVIIIth Chapter, Salamanders."
 	icon_state = "salcap"
 	item_state = "salcap"
 
-/obj/item/clothing/suit/armor/astartes/ultramarine/captain
+/obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	name = "Astartes Mark VII Power Armour"
-	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Company Captain of the XIIIth Chapter, Ultramarines."
+	desc = "The Holy armour of the Emperor's chosen, This one is trimmed in golden lining and bears the symbol of his position, Sergeant of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultracap"
 	item_state = "ultracap"
 

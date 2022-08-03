@@ -7,7 +7,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
@@ -35,7 +35,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
@@ -47,20 +47,20 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	suit_store = /obj/item/gun/projectile/bolter/sally
 
-/decl/hierarchy/outfit/job/astarte/ultramarine/captain
-	name = OUTFIT_JOB_NAME("Ultramarine Company Captain")
+/decl/hierarchy/outfit/job/astarte/ultramarine/sergeant
+	name = OUTFIT_JOB_NAME("Ultramarine Sergeant")
 	uniform = /obj/item/clothing/under/astarte/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/captain
+	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/pcsword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
-	head = /obj/item/clothing/head/helmet/astartes/captain/ultramarine
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	mask = null
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
@@ -74,15 +74,15 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astarte/ravenguard/captain
-	name = OUTFIT_JOB_NAME("Ravenguard Company Captain")
+/decl/hierarchy/outfit/job/astarte/ravenguard/sergeant
+	name = OUTFIT_JOB_NAME("Ravenguard Sergeant")
 	uniform = /obj/item/clothing/under/astarte/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/captain/ravenguard
+	suit = /obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/pcsword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
-	head = /obj/item/clothing/head/helmet/astartes/captain/ravenguard
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
@@ -96,15 +96,15 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astarte/salamander/captain
-	name = OUTFIT_JOB_NAME("Salamander Company Captain")
+/decl/hierarchy/outfit/job/astarte/salamander/sergeant
+	name = OUTFIT_JOB_NAME("Salamander Company Sergeant")
 	uniform = /obj/item/clothing/under/astarte/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/captain/salamander
+	suit = /obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/pcsword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
-	head = /obj/item/clothing/head/helmet/astartes/captain/salamander
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
 	glasses = /obj/item/clothing/glasses/astarte/visor
 	l_pocket = /obj/item/storage/box/ifak
