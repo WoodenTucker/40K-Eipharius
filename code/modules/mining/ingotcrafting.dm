@@ -287,7 +287,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "The WTX Frontier Special", "Mk. III Sniper Rifle", "Mk.3 Warmonger", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol", "The Chrome Stub Pistol", "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword") //lists all possible crafting choices
+		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "The WTX Frontier Special", "Mk. III Sniper Rifle", "Mk.3 Warmonger", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol", "The Chrome Stub Pistol", "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword", "Landmine") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -368,9 +368,15 @@
 			if("Cane Sword")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future cane sword.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 12
+				src.whatwemaking = 13
 				src.ismarked = 1
 				src.name = "Iron Ingot (Cane Sword)"
+			if("Landmine")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future landmine.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 14
+				src.ismarked = 1
+				src.name = "Iron Ingot (Landmine)"
 
 
 
@@ -526,6 +532,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(14)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed lanmine! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Iron Ingot (Landmine)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -612,6 +629,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/material/sword/cane(user.loc)
+				qdel(src)
+				return
+			if(14)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/landmine(user.loc)
 				qdel(src)
 				return
 
