@@ -46,8 +46,6 @@
 	if(waaagh >= 100 && !cooldown)
 		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
 		playsound(src, 'sound/voice/ork/orkscream.ogg', 50, 5)
-		adjustBruteLoss(-1)
-		adjustFireLoss(-1)
 		adjustOxyLoss(-1)
 		adjustToxLoss(-1)
 		adjustBrainLoss(-1)
@@ -118,7 +116,7 @@
 		return
 
 	visible_message("[name] flexs der' muscles afa' a long nap, feelin' der' strength an' skill return to 'em.")
-	src.add_stats(rand(16,18),rand(6,18),rand(6,10),8) //gives stats str, end, int, dex
+	src.add_stats(rand(15,16),rand(6,9),rand(6,10),8) //gives stats str, end, int, dex
 	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(ORKZ) //secondary language

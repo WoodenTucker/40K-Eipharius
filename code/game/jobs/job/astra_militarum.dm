@@ -78,7 +78,16 @@
 		if(title == "Krieg Guardsman")
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
-		else H.fully_replace_character_name("[H.real_name]")
+		else
+			var/corruption = rand(1,4)
+			H.fully_replace_character_name("[H.real_name]")
+			switch(corruption)
+				if(1)
+					H.verbs += list(
+					/mob/living/carbon/human/proc/khorne,
+					/mob/living/carbon/human/proc/nurgle,
+					/mob/living/carbon/human/proc/slaanesh,
+					/mob/living/carbon/human/proc/tzeentch)
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -109,7 +118,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE	
+	can_be_in_squad = FALSE
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
 	sniper_skill = 6
@@ -127,6 +136,14 @@
 		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
+		var/corruption = rand(1,2)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
@@ -161,6 +178,14 @@
 		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
+		var/corruption = rand(1,3)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 
@@ -217,7 +242,16 @@
 		if(title == "Krieg Guardsman")
 			var/watchnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [watchnum]")
-		else H.fully_replace_character_name("Sergeant [H.real_name]")
+		else
+			H.fully_replace_character_name("Sergeant [H.real_name]")
+			var/corruption = rand(1,3)
+			switch(corruption)
+				if(1)
+					H.verbs += list(
+					/mob/living/carbon/human/proc/khorne,
+					/mob/living/carbon/human/proc/nurgle,
+					/mob/living/carbon/human/proc/slaanesh,
+					/mob/living/carbon/human/proc/tzeentch)
 
 		if(title == "Krieg Quartermaster")
 			H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
@@ -273,6 +307,14 @@
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
+		var/corruption = rand(1,3)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
@@ -323,6 +365,14 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
+		var/corruption = rand(1,5)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 /*
 		H.verbs -= list(
