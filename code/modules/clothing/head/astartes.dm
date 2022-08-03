@@ -44,25 +44,25 @@
 	item_state = "ultrahelm"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
-/obj/item/clothing/head/helmet/astartes/captain
+/obj/item/clothing/head/helmet/astartes/sergeant
 	name = "Astartes Mark VII Helmet"
-	desc = "The daunting helmet of the Emperor's chosen, This one is worn by a Company Captain."
+	desc = "The daunting helmet of the Emperor's chosen, This one is worn by a sergeant."
 
-/obj/item/clothing/head/helmet/astartes/captain/ravenguard
+/obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's black birds, This one bears the symbol of the XIXth Chapter, Raven Guards. It's decorated with an Iron Halo, Representing his seniority in the art of deepstrike."
 	icon_state = "ravcap"
 	item_state = "ravcap"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
-/obj/item/clothing/head/helmet/astartes/captain/salamander
+/obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's dragon warriors, This one bears the symbol of the XVIIIth Chapter, Salamanders. It's decorated with an Iron Halo, Representing his seniority in the art of flame."
 	icon_state = "salcap"
 	item_state = "salcap"
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
-/obj/item/clothing/head/helmet/astartes/captain/ultramarine
+/obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	name = "Astartes Mark VII Helmet"
 	desc = "The daunting helmet of the Emperor's chosen, This one bears the symbol of the XIIIth Chapter, Ultramarines. It's decorated with an Iron Halo, Representing his seniority in the art of administration."
 	icon_state = "ultracap"

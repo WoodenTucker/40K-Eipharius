@@ -126,14 +126,13 @@
 	spawn(1) if(src) qdel(src)
 
 /obj/item/melee/omnissiah_axe
-	name = "Omnissiah`s axe"
-	desc = "Blessed axe of Magos Dominus, decorated with holy symbols of the Adeptus Mechanicus"
-	icon = 'icons/obj/items/OmmisianAxe.dmi'
-	icon_state = "Whistle_InHand_L"
-	item_state = "Whistle_InHand_L"
-	wielded_icon = "trenchaxe-w"
-	force = 25
-	block_chance = 50
+	name = "Omnissian axe"
+	desc = "The Blessed Axe of the mechanicus, this one works as a powerweapon too nad  its also decorated with holy symbols of the Adeptus Mechanicus."
+	icon_state = "Axe"
+	item_state = "Whistle_InHand"
+	wielded_icon = "Whistle_InHand_W"
+	force = 44 //i was not aware that this was supposed to be a fucking power axe
+	block_chance = 65
 	sharp = TRUE
 	edge = TRUE
 	item_flags = ITEM_FLAG_NODROP
@@ -143,6 +142,7 @@
 /obj/item/melee/omnissiah_axe/dropped()
 	..()
 	spawn(1) if(src) qdel(src)
+
 
 
 //Biologis toys go below here---------------------------------------------------------------------------------

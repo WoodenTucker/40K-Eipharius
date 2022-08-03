@@ -154,9 +154,9 @@
 	wielded_icon = "thunder_hammer-w"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	str_requirement = 12
-	force = 50
-	block_chance = 38
+	str_requirement = 18
+	force = 75 //OP weapon if you manage to grab it
+	block_chance = 70
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 12
 
@@ -170,9 +170,9 @@
 	item_state = "mercychainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 12
+	str_requirement = 14
 	force = 44
-	block_chance = 10
+	block_chance = 40
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -190,9 +190,9 @@
 	item_state = "inqchainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 10
-	force = 40
-	block_chance = 25
+	str_requirement = 15
+	force = 47
+	block_chance = 50
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -210,9 +210,9 @@
 	item_state = "pcsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 14
-	force = 45
-	block_chance = 35
+	str_requirement = 18
+	force = 55
+	block_chance = 60
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -220,7 +220,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 11
+	weapon_speed_delay = 20
 
 /obj/item/melee/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -229,10 +229,10 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
-	str_requirement = 12
-	force = 25// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 49
-	block_chance = 25
+	str_requirement = 18 
+	force = 30// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 60
+	block_chance = 65
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_HUGE
@@ -243,4 +243,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 16
+	weapon_speed_delay = 60 //should be 15 seconds or 10 seconds
