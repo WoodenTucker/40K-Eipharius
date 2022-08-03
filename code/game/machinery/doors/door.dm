@@ -320,6 +320,7 @@
 /obj/machinery/door/proc/set_broken()
 	stat |= BROKEN
 	visible_message("<span class = 'warning'>\The [src.name] breaks!</span>")
+	qdel(src)
 	update_icon()
 
 
