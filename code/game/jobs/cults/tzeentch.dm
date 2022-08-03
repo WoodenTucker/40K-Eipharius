@@ -267,7 +267,16 @@
 					if(2)
 						new /obj/item/clothing/head/spookyhood(src.loc)
 			else
-				to_chat(src, "Let me grant you thing to hide your face from unwilling eyes. Stand upon my rune")
-		if(18)
-			to_chat(src, "<font color='#0400ff'>To be continued...</font>")
+				to_chat(src, "<font color='#0400ff'>Let me grant you thing to hide your face from unwilling eyes. Stand upon my rune</font>")
 
+		if(18)
+			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
+			if(T)
+				src.intrigue++
+				to_chat(src, "<font color='#0400ff'>Take my grant, use wisely.</font>")
+				new /obj/item/reagent_containers/pill/cyanide(src.loc)
+			else
+				to_chat(src, "<font color='#0400ff'>Let me grant you thing to kill silently or to die with no word in defeat. Stand upon my rune</font>")
+
+		if(19)
+			to_chat(src, "<font color='#0400ff'>To be continued...</font>")

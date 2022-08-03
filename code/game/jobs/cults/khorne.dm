@@ -71,6 +71,7 @@
 				to_chat(src, "I must draw his symbol and stand upon it!")
 				return
 		if(3)
+			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
 			if(istype(src.l_hand, /obj/item/organ/external/head))
 				qdel(usr.l_hand)
 				to_chat(src, "You bring one more skull to the Skull Throne.")
@@ -123,10 +124,37 @@
 					src.SKILL_LEVEL(ranged)+=1
 				if(STAT_LEVEL(dex)<15)
 					STAT_LEVEL(dex)+=1
+			else if(istype(src.l_hand, /obj/item/stack/teeth) && istype(src.r_hand, /obj/item/material/sword/combat_knife))
+				qdel(usr.l_hand)
+				src.update_inv_l_hand()
+				qdel(usr.r_hand)
+				src.update_inv_r_hand()
+			else if(istype(src.r_hand, /obj/item/stack/teeth) && istype(src.l_hand, /obj/item/material/sword/combat_knife) && T)
+				qdel(src.r_hand)
+				src.update_inv_r_hand()
+				qdel(src.l_hand)
+				src.update_inv_l_hand()
+				switch(rand(1,8))
+					if(1)
+						new /obj/item/material/sword/choppa(src.loc)
+					if(2)
+						new /obj/item/material/sword/cane(src.loc)
+					if(3)
+						new /obj/item/material/sword/combat_knife/catachan(src.loc)
+					if(4)
+						new /obj/item/melee/classic_baton/trench_club(src.loc)
+					if(5)
+						new /obj/item/melee/trench_axe(src.loc)
+					if(6)
+						new /obj/item/melee/baton/loaded(src.loc)
+					if(7)
+						new /obj/item/melee/mercycs(src.loc)
+					if(8)
+						new /obj/item/gun/projectile/shotgun/pump/shitty/bayonet(src.loc)
 			else
-				to_chat(src, "Bring me next skull for health or the heart for strength, mortal.")
+				to_chat(src, "Bring me next skull for health or the heart for strength, mortal. Bring me tooth and knife upon my rune to gain weapon")
 				return
-//obj/item/stack/teeth
+/
 /mob/living/carbon/human/proc/bludforbludguy()
 	set name = "Blood for the Blood God!"
 	set category = "Ruinous Powers"
