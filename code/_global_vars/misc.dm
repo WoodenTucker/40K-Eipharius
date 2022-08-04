@@ -21,7 +21,7 @@ GLOBAL_VAR_INIT(nurgle_cult, 0)
 GLOBAL_VAR_INIT(tzeentch_cult, 0)
 GLOBAL_VAR_INIT(deployed, 0)
 GLOBAL_VAR_INIT(partygang, 0)
-GLOBAL_VAR_INIT(partydelay, 18)
+GLOBAL_VAR_INIT(partydelay, 1800)
 GLOBAL_VAR_INIT(partysize, 4)
 GLOBAL_VAR_INIT(thrones, 0) //used for cargo and reinforcement system, so it carries across computers
 GLOBAL_VAR_INIT(tax_rate, 0.15) //used for taxation

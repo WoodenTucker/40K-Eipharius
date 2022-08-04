@@ -985,6 +985,7 @@ var/list/admin_verbs_mentor = list(
 
 	if(alert("Allow another late-party to arrive?",,"Yes","No") == "Yes")
 		GLOB.deployed = 0
+		GLOB.daparty.Cut() //clears the existing party
 
 	feedback_add_details("admin_verb","AP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 	log_and_message_admins("Allowed another late party to arrive!")
