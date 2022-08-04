@@ -9,12 +9,8 @@
 	return
 
 /obj/machinery/door/unpowered/attackby(obj/item/I as obj, mob/user as mob)
-	if(health < 0)
-		qdel(src)
 	if(istype(I, /obj/item/melee/energy/blade))	return
 	if(src.locked)	return
-	if(istype(I, /obj/item/melee ))
-		health -= 50
 	..()
 	return
 
