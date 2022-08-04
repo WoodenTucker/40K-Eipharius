@@ -127,12 +127,13 @@
 
 /obj/item/clothing/shoes/genestealerfeet //walking sounds only play with shoes and I was losing my mind not having them
 	name = "tyranid feet"
-	desc = "The skittering feet of a Tyranid Genestealer"
+	desc = "The skittering feet of a Tyranid Genestealer."
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
+	species_restricted = list(SPECIES_TYRANID)
 // Ork
 
 /obj/item/clothing/shoes/orkboots //walking sounds only play with shoes and I was losing my mind not having them
@@ -280,7 +281,7 @@
 	item_state = "sister"
 	siemens_coefficient = 1
 	can_hold_knife = 1
-	canremove = 0
+	canremove = 1
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
