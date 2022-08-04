@@ -340,7 +340,7 @@
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
 	icon_state = "snow"
-	movement_delay = 1.5
+	movement_delay = 0.1
 	var/diggable = 1
 	var/can_be_dug = TRUE
 
