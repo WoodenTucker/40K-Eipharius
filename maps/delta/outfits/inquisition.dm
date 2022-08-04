@@ -70,15 +70,14 @@
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol/inquis
+	suit_store = /obj/item/gun/projectile/talon/renegade
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
+	/obj/item/gun/projectile/bolter_pistol/inquis
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
-	/obj/item/stack/thrones3/twenty = 1
 	)
 
 	pda_slot = null
