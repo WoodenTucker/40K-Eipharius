@@ -137,7 +137,6 @@
 	force = 35
 	block_chance = 30
 	sharp = TRUE
-	edge = TRUE
 	hitsound = "slash_sound"
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
@@ -154,11 +153,12 @@
 	wielded_icon = "thunder_hammer-w"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	str_requirement = 18
-	force = 75 //OP weapon if you manage to grab it
-	block_chance = 70
+	str_requirement = 12
+	force = 55
+	block_chance = 45
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 12
+	weapon_speed_delay = 9
+	edge = TRUE
 
 // CHAINSWORD
 
@@ -168,19 +168,18 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mercychainsword"
 	item_state = "mercychainsword"
-	wielded_icon = "trenchaxe-w"
+	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 14
-	force = 44
-	block_chance = 40
+	str_requirement = 12
+	force = 48
+	block_chance = 30
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 14
+	weapon_speed_delay = 11
 
 /obj/item/melee/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -188,19 +187,18 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "inqchainsword"
 	item_state = "inqchainsword"
-	wielded_icon = "trenchaxe-w"
+	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 15
-	force = 47
-	block_chance = 50
+	str_requirement = 10
+	force = 44
+	block_chance = 35
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 13
+	weapon_speed_delay = 11
 
 /obj/item/melee/pcsword
 	name = "Mark I Pattern Chainsword"
@@ -208,19 +206,18 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "pcsword"
 	item_state = "pcsword"
-	wielded_icon = "trenchaxe-w"
+	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 18
-	force = 55
-	block_chance = 60
+	str_requirement = 14
+	force = 49
+	block_chance = 55
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 20
+	weapon_speed_delay = 9
 
 /obj/item/melee/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -229,10 +226,10 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
-	str_requirement = 18 
-	force = 30// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 60
-	block_chance = 65
+	str_requirement = 12
+	force = 25// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 49
+	block_chance = 25
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_HUGE
@@ -243,4 +240,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 60 //should be 15 seconds or 10 seconds
+	weapon_speed_delay = 14

@@ -36,7 +36,7 @@
 	desc = "A truncheon for beating other people in the same trench as you."
 	icon_state = "trench_club1"
 	item_state = "trench_club"
-	force = 25
+	force = 30
 
 /obj/item/melee/classic_baton/trench_club/New()
 	..()

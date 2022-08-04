@@ -122,7 +122,7 @@
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 3.4
-	fire_delay = 4.5
+	fire_delay = 4
 	accuracy = -3.5
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
@@ -134,8 +134,8 @@
 	wielded_item_state = "lasgun-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=4.5, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4.95, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=400),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=4, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 4.5, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=400),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()

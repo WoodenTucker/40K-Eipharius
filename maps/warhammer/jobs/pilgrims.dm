@@ -18,11 +18,13 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.witchblood()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		var/corruption = rand(1,3)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
 
 
@@ -122,7 +124,7 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Stalker")
-			U.add_skills(rand(1,3),rand(5,8),rand(0,3),0,rand(0,2))
+			U.add_skills(rand(1,3),rand(5,8),0,0,0)
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
@@ -150,7 +152,7 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme you once again find yourself on a new world. You'll do whatever it takes for a throne or two. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Disgraced Medicae")
-			U.add_skills(rand(1,3),rand(1,3),rand(5,9),0,rand(5,9))
+			U.add_skills(0,0,rand(5,9),0,rand(5,9))
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -194,11 +196,13 @@ Pilgrim Fate System
 		H.add_stats(rand(9,12), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		var/corruption = rand(1,3)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
 
@@ -226,11 +230,13 @@ Pilgrim Fate System
 		H.add_stats(rand(10,12), rand(9,12), rand(10,12), rand (12,15)) //a lil better fed than others.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		var/corruption = rand(1,3)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and to collect taxes to pay off the tithe. Ensure there are pilgrims working the farm and manage the market, the stalls are yours to rent out! </font></b></span>")
 
 

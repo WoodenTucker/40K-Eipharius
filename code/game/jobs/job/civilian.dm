@@ -73,11 +73,14 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		var/corruption = rand(1,10)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 
 // Farmer
@@ -113,11 +116,13 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		var/corruption = rand(1,10)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
 
 // Janitor Servitor
@@ -223,9 +228,10 @@
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+		var/corruption = rand(1,10)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Deacon you owe him your life. However, you must earn your keep. </font></b></span>")

@@ -15,13 +15,13 @@
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
 	sexybits_location = BP_GROIN
-	base_auras = list(
-		/obj/aura/regenerating/human/nid
-		)
+	var/regen = 4
+	var/pain_power = 80
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
 	/mob/living/carbon/human/genestealer/proc/makepool,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
+	/mob/living/carbon/human/genestealer/proc/gsheal,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
 
 	 )
@@ -37,8 +37,8 @@
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.75 // Hardened carapace.
-	burn_mod = 0.85    // Weak to fire.
+	brute_mod = 0.85 // Hardened carapace.
+	burn_mod = 0.9    // Weak to fire.
 
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
@@ -68,7 +68,7 @@
 
 /mob/living/carbon/human
 	var/new_nid = SPECIES_TYRANID
-	var/biomass = 80
+	var/biomass = 100
 	var/isconverting = 0
 	var/dnastore = 0
 	var/poolparty = 0
@@ -97,7 +97,7 @@
 	bladder = -INFINITY
 	bowels = -INFINITY
 	gsc = 1
-	add_stats(rand(12,12),rand(14,16),rand(10,16),20)
+	add_stats(rand(6,6),rand(14,16),rand(10,16),20)
 
 
 
@@ -150,6 +150,7 @@
 				src.visible_message("<span class='danger'>[src] impales [T] with their tongue.</span>")
 				to_chat(T, "<span class='danger'>You feel a sharp stabbing pain!</span>")
 				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
+				src.biomass -=10
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 
 		if(!do_mob(src, T, 50))
@@ -172,6 +173,11 @@
 	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
 	T.equip_to_slot_or_del(new /obj/item/device/radio/headset/hivemind, slot_r_ear)
 	src.dnastore++
+	adjustOxyLoss(-1)
+	adjustBruteLoss(-1)
+	adjustToxLoss(-1)
+	adjustBrainLoss(-1)
+	src.inject_blood(src, 50)
 
 	return 1
 
@@ -263,7 +269,7 @@
 		return
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near!")
-	src.add_stats(rand(15,20),rand(14,18),rand(6,6),6) //gives stats str, end, int, dex
+	src.add_stats(rand(12,16),rand(14,18),rand(6,6),14) //gives stats str, end, int, dex
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
@@ -273,7 +279,7 @@
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
 /mob/living/carbon/human/genestealer/proc/gsheal()
-	set name = "Repair Physiology (20)"
+	set name = "Repair Physiology (10)"
 	set category = "Tyranid"
 	set desc = "Heals"
 
@@ -285,8 +291,16 @@
 		return
 	else
 		visible_message("[src] expends some of his stored biomass correting wounds and damage to their organs.")
-		src.revive()
-		src.biomass -=20
+		adjustOxyLoss(-1)
+		adjustToxLoss(-1)
+		adjustBrainLoss(-1)
+		src.radiation = 0
+		src.bodytemperature = T20C
+		src.eye_blurry = 0
+		src.ear_deaf = 0
+		src.ear_damage = 0
+		src.inject_blood(src, 50)
+		src.biomass -=10
 
 
 //Begin nid items

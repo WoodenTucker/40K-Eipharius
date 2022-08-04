@@ -131,21 +131,19 @@
 
 /obj/item/clothing/under/rank/principalagent
 	desc = "A slick bodyglove, befitting of an agent of the Inquisition."
-	name = "principal agent's bodyglove"
+	name = "combat uniform"
 	icon_state = "combat"
 	item_state = "combat"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-
 /obj/item/clothing/under/rank/inquisitor
 	desc = "A slick bodyglove, befitting of an agent of the Inquisition."
-	name = "inquisitor's bodyglove"
+	name = "combat uniform"
 	icon_state = "assistant_formal"
 	item_state = "assistant_formal"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	slowdown_general = -20
 
 /obj/item/clothing/under/rank/internalaffairs/plain
 	desc = "A plain shirt and pair of pressed black pants."

@@ -11,9 +11,11 @@
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	brute_mod = 0.8
-	burn_mod = 0.85
+	brute_mod = 0.95
+	burn_mod = 1
 	toxins_mod = 0.9
+	var/pain_power = 80
+	var/regen = 3
 	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_MINOR_CUT
 	inherent_verbs = list(
@@ -43,17 +45,6 @@
 	if(max_waaagh > 0)
 		stat(null, "Waaagh: [waaagh]/[max_waaagh]")
 
-/mob/living/carbon/human/ork/Life()
-	..()
-	var/regen = 1
-	if(max_waaagh > 0)
-		if(inspired)
-			regen = 1
-		else
-			regen = 1
-
-		waaagh = max(0, min(waaagh + regen, max_waaagh))
-
 /mob/living/carbon/human/ork
 	name = "ork"
 	real_name = "ork"
@@ -65,7 +56,7 @@
 	var/inspired = FALSE  //this changes when the ork is buffed by the warboss
 
 /mob/living/carbon/human/ork/New(var/new_loc)
-	max_waaagh = 200
+	max_waaagh = 100
 	waaagh = max_waaagh
 	var/dice = rand(1, 2)
 	switch(dice)

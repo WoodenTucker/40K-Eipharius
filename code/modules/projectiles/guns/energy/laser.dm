@@ -225,17 +225,17 @@ obj/item/gun/energy/retro
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=4, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		list(mode_name="overcharge", fire_delay = 4, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
 /obj/item/gun/energy/las/lasgun/rare
-	name = "Custom Kantrael M36 Lasgun"
+	name = "Masterwork Kantrael M36 Lasgun"
 	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has modified heatsink and rearranged crystal assembly."
 	force = 15
-	one_hand_penalty = 1.9
+	one_hand_penalty = 1.2
 	charge_cost = 75
-	fire_delay = 2.5
-	move_delay = 2.8
+	fire_delay = 2.2
+	move_delay = 2.5
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -292,7 +292,7 @@ obj/item/gun/energy/retro
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge",       burst=1, fire_delay=3, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=110),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
@@ -317,7 +317,7 @@ obj/item/gun/energy/retro
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge", burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
+		list(mode_name="overcharge", burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
 		)
 
 /obj/item/gun/energy/las/lasgun/lucius/tinkered
@@ -359,7 +359,7 @@ obj/item/gun/energy/retro
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge",       burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=60),
+		list(mode_name="overcharge",       burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
 /obj/item/gun/energy/las/hotshot
@@ -383,8 +383,8 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lascar-wielded"
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.8, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", burst=1, fire_delay=2.8,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 		)
 
 
