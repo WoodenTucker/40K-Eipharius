@@ -159,7 +159,7 @@ var/const/EXTRA_COST_FACTOR = 1.25
 
 /datum/autolathe/recipe/radio_headset
 	name = "voxcaster"
-	path = /obj/item/device/radio/headset/red_team/voxcaster
+	path = /obj/item/device/radio/headset/red_team
 	category = "General"
 
 /datum/autolathe/recipe/radio_bounced
