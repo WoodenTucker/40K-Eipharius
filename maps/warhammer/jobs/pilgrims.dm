@@ -18,13 +18,10 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.witchblood()
-		var/corruption = rand(1,3)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
+		H.verbs += list(
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
 
 
@@ -196,13 +193,10 @@ Pilgrim Fate System
 		H.add_stats(rand(9,12), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		var/corruption = rand(1,3)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
+		H.verbs += list(
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
 
@@ -230,13 +224,10 @@ Pilgrim Fate System
 		H.add_stats(rand(10,12), rand(9,12), rand(10,12), rand (12,15)) //a lil better fed than others.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		var/corruption = rand(1,3)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
+		H.verbs += list(
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and to collect taxes to pay off the tithe. Ensure there are pilgrims working the farm and manage the market, the stalls are yours to rent out! </font></b></span>")
 
 
