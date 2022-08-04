@@ -40,11 +40,10 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,3)
+		var/corruption = rand(1,8)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)
@@ -124,7 +123,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team/delta
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/handcuffs = 1,
 	/obj/item/gun/projectile/bolter_pistol = 1,
