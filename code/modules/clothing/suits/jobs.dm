@@ -397,6 +397,7 @@
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 0, bomb = 10, bio = 5, rad = 15)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/scum
 	name = "shady jacket"
