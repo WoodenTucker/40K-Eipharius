@@ -28,14 +28,14 @@
 	name = "inn door"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 
 /obj/machinery/door/unpowered/inn/interior
 	name = "interior inn door"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 	req_access = list(access_bar)
 
@@ -60,7 +60,7 @@
 	name = "kroot room door"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 	req_access = list(access_kroot)
 
@@ -68,7 +68,7 @@
 	name = "grox pen"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 	req_access = list(access_grox)
 
@@ -77,7 +77,7 @@
 	name = "room 1"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 	req_access = list(access_inn1) //so innkeeper always can get in if needed
 
@@ -85,7 +85,7 @@
 	name = "room 2"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 	req_access = list(access_inn2) //so innkeeper always can get in if needed
 
@@ -93,7 +93,7 @@
 	name = "room 3"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
-	autoclose = 1
+	autoclose = 0
 	normalspeed = 0
 	req_access = list(access_inn3) //so innkeeper always can get in if needed
 

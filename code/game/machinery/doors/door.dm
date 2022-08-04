@@ -29,6 +29,8 @@
 	var/obj/item/stack/material/repairing
 	var/block_air_zones = 1 //If set, air zones cannot merge across the door even when it is opened.
 	var/close_door_at = 0 //When to automatically close the door, if possible
+	var/default_pixel_x = 0
+	var/default_pixel_y = 0
 
 	//Multi-tile doors
 	dir = EAST
@@ -265,8 +267,25 @@
 				user.visible_message("<span class='danger'>\The [user] hits \the [src] with \the [W] with no visible effect.</span>")
 			else
 				user.visible_message("<span class='danger'>\The [user] forcefully strikes \the [src] with \the [W]!</span>")
-				playsound(src.loc, hitsound, 100, 1)
 				take_damage(W.force)
+
+				if(istype(src, /obj/machinery/door/unpowered))
+					pixel_x += 1.5
+					pixel_y += 1.5
+					sleep(1)
+					pixel_x = default_pixel_x
+					pixel_y = default_pixel_y
+					var soundChoice = rand(1,3)
+					switch(soundChoice)
+						if(1)
+							playsound(src.loc, 'sound/effects/fence_hit1.ogg', 100, 1)
+						if(2)
+							playsound(src.loc, 'sound/effects/fence_hit2.ogg', 100, 1)
+						if(3)
+							playsound(src.loc, 'sound/effects/fence_hit3.ogg', 100, 1)
+				else
+					playsound(src.loc, hitsound, 100, 1)
+
 		return
 
 	if(src.operating > 0 || isrobot(user))	return //borgs can't attack doors open because it conflicts with their AI-like interaction with them.
@@ -320,6 +339,8 @@
 /obj/machinery/door/proc/set_broken()
 	stat |= BROKEN
 	visible_message("<span class = 'warning'>\The [src.name] breaks!</span>")
+	playsound(src.loc, 'sound/effects/breaksound.ogg', 100, 1)
+	qdel(src)
 	update_icon()
 
 
