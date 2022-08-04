@@ -15,12 +15,14 @@
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
 	sexybits_location = BP_GROIN
+	base_auras = list(
+		/obj/aura/regenerating/human/nid
+		)
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
 	/mob/living/carbon/human/genestealer/proc/makepool,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
-	/mob/living/carbon/human/genestealer/proc/gsheal,
 
 	 )
 	slowdown = -0.8
@@ -35,8 +37,8 @@
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.6 // Hardened carapace.
-	burn_mod = 0.7    // Weak to fire.
+	brute_mod = 0.75 // Hardened carapace.
+	burn_mod = 0.85    // Weak to fire.
 
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
@@ -95,7 +97,7 @@
 	bladder = -INFINITY
 	bowels = -INFINITY
 	gsc = 1
-	add_stats(rand(12,15),rand(15,22),rand(15,22),20)
+	add_stats(rand(12,12),rand(14,16),rand(10,16),20)
 
 
 

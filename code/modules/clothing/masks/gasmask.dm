@@ -50,8 +50,10 @@
 	item_state = "agent_mask"
 	siemens_coefficient = 0.7
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
-	body_parts_covered = FACE|EYES
+	flash_protection = FLASH_PROTECTION_MAJOR
+	unacidable = 1
 	w_class = ITEM_SIZE_SMALL
+	body_parts_covered = HEAD|FACE|EYES
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/half
@@ -104,7 +106,8 @@
 	desc = "Staring into the metallic visage its hard to believe this being is human..."
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	siemens_coefficient = 0.7
+	flash_protection = FLASH_PROTECTION_MAJOR
+	siemens_coefficient = 0.7 
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
 	flags_inv = HIDEEARS|HIDEEYES
 	canremove = 0
@@ -212,7 +215,7 @@
 	item_state = "kriegmask"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
-
+	unacidable = 1 //acid proof bitch
 /obj/item/clothing/mask/gas/commissar
 	name = "Mark IXb/C Gas Mask"
 	desc = "Krieg Regiment Commissar are issued with the same pattern of Gas mask like the others, However this one have slight different hue."
@@ -220,3 +223,4 @@
 	item_state = "commask"
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	unacidable = 1 //acid proof

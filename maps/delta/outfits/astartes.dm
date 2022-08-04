@@ -32,7 +32,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
@@ -84,7 +84,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Blood Angels Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -107,7 +107,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
@@ -123,22 +123,24 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/ten = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ravenguard/captain
-	name = OUTFIT_JOB_NAME("Ravenguard Company Captain")
+/decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant
+	name = OUTFIT_JOB_NAME("Ravenguard Sergeant")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/captain/ravenguard
+	suit = /obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/energy/powersword
+	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
-	head = /obj/item/clothing/head/helmet/astartes/captain/ravenguard
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
@@ -172,7 +174,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Ravenguard Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/suit/armor/astartes/ravenguard
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -195,7 +197,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
@@ -206,29 +208,33 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor = 1,
+	/obj/item/gun/projectile/automatic/flamer = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/salamander/captain
-	name = OUTFIT_JOB_NAME("Salamanders Company Captain")
+/decl/hierarchy/outfit/job/astartes/salamander/sergeant
+	name = OUTFIT_JOB_NAME("Salamander Company Sergeant")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/captain/salamander
+	suit = /obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/energy/powersword
+	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
-	head = /obj/item/clothing/head/helmet/astartes/captain/salamander
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/sally
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
-	/obj/item/clothing/glasses/astartes/visor = 1
+	/obj/item/clothing/glasses/astartes/visor = 1,
+	/obj/item/gun/projectile/automatic/flamer = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/salapoth
@@ -258,7 +264,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Salamanders Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
@@ -281,7 +287,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = null
+	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
@@ -300,22 +306,24 @@ Begin Warhammer loadouts
 	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
-/decl/hierarchy/outfit/job/astartes/ultramarine/captain
-	name = OUTFIT_JOB_NAME("Ultramarines Company Captain")
+/decl/hierarchy/outfit/job/astartes/ultramarine/sergeant
+	name = OUTFIT_JOB_NAME("Ultramarine Sergeant")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
-	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/captain
+	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/energy/powersword
+	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
-	head = /obj/item/clothing/head/helmet/astartes/captain/ultramarine
+	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	mask = null
+	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1,
@@ -349,7 +357,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Ultramarines Tech-Marine")
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
-	back = /obj/item/storage/backpack/satchel/warfare/techpriest/techpack
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
