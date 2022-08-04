@@ -29,10 +29,12 @@
 //Genestealer
 /decl/hierarchy/outfit/job/genestealer //really just for walking sounds
 	uniform = null
+	head = /obj/item/clothing/head/helmet/genestealer
+	suit = /obj/item/clothing/suit/storage/hooded/genestealer
 	shoes = /obj/item/clothing/shoes/genestealerfeet
 	neck = null
 	back = null
-	l_ear = /obj/item/device/radio/headset/hivemind
+	l_ear = /obj/item/device/radio/headset/hivemind 
 	belt = null
 	l_pocket = null
 	id = null

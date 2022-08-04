@@ -1019,7 +1019,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "eS" = (
 /obj/item/device/radio/beacon,
-/obj/structure/flora/ausbushes/lrock,
+/obj/item/pickaxe,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "eU" = (
@@ -2313,7 +2313,6 @@
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/item/gun/energy/las/lasgun/tinkered/catachan,
-/obj/item/gun/projectile/automatic/flamer,
 /obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
@@ -9519,7 +9518,7 @@
 /obj/item/handcuffs/cable/white,
 /obj/item/handcuffs/cable/white,
 /obj/item/clothing/head/helmet/mining{
-	armor = list("melee" = 40, "bullet" = 35, "laser" = 40, "energy" = 30, "bomb" = 30, "bio" = 10, "rad" = 30);
+	armor = list("melee"=40,"bullet"=35,"laser"=40,"energy"=30,"bomb"=30,"bio"=10,"rad"=30);
 	name = "Penitent Visor"
 	},
 /turf/simulated/floor/wood,
@@ -16965,7 +16964,7 @@ PI
 PI
 PY
 PI
-PY
+PI
 PI
 PY
 Qy
@@ -17222,7 +17221,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PI
 PI
 PY
@@ -17467,17 +17466,17 @@ PY
 PY
 PY
 PY
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
 PY
 PY
 PI
@@ -47258,11 +47257,11 @@ PI
 PI
 bf
 bf
-bf
-bf
-bf
-bf
 PY
+PY
+bf
+bf
+bf
 PY
 PY
 PY
@@ -47515,11 +47514,11 @@ bf
 bf
 bf
 bf
-bf
-bf
-bf
-bf
+eS
 PY
+PY
+PY
+bf
 PY
 PY
 PY
@@ -47772,8 +47771,8 @@ bf
 bf
 bf
 bf
-bf
-bf
+PY
+PY
 bf
 bf
 bf
@@ -64257,7 +64256,7 @@ PI
 PI
 PI
 PY
-eS
+bB
 PI
 PI
 PI

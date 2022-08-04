@@ -439,27 +439,6 @@
 		. = ..()
 		set_frequency(BLUE_DELTA)
 
-/obj/item/melee/trench_axe
-	name = "trench axe"
-	desc = "Used mainly for murdering those on the enemy side."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "trenchaxe"
-	item_state = "trenchaxe"
-	wielded_icon = "trenchaxe-w"
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 20
-	block_chance = 20
-	sharp = TRUE
-	edge = TRUE
-	hitsound = "slash_sound"
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-
-
-
-
 /obj/item/clothing/suit/prac_arpon
 	name = "practioner robes"
 	desc = "Worn by practioners and other surgeons."

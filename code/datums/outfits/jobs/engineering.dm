@@ -17,14 +17,14 @@
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos
 	uniform = /obj/item/clothing/under/rank/chief_engineer
 	l_ear = /obj/item/device/radio/headset/red_team
+	l_hand = /obj/item/gun/projectile/meltagun
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	backpack_contents = list(/obj/item/stack/thrones/five = 1,
-		/obj/item/stack/thrones2/five = 1,
-		/obj/item/clothing/glasses/science/magos = 1,
+		/obj/item/stack/thrones2/five = 3,
 		/obj/item/stack/thrones3/five = 1,)
 
 /decl/hierarchy/outfit/job/engineering/engineer
@@ -46,7 +46,6 @@
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
-		/obj/item/clothing/glasses/science/tech = 1,
 		/obj/item/stack/thrones3/five = 1,
 )
 

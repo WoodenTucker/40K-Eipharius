@@ -40,11 +40,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,3)
+		var/corruption = rand(1,10)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)
@@ -93,11 +92,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,3)
+		var/corruption = rand(1,10)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)

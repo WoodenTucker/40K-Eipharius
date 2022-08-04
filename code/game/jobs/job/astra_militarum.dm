@@ -78,16 +78,14 @@
 		if(title == "Krieg Guardsman")
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
-		else
-			var/corruption = rand(1,4)
-			H.fully_replace_character_name("[H.real_name]")
-			switch(corruption)
-				if(1)
-					H.verbs += list(
-					/mob/living/carbon/human/proc/khorne,
-					/mob/living/carbon/human/proc/nurgle,
-					/mob/living/carbon/human/proc/slaanesh,
-					/mob/living/carbon/human/proc/tzeentch)
+		else H.fully_replace_character_name("[H.real_name]")
+		var/corruption = rand(1,8)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -118,7 +116,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE
+	can_be_in_squad = FALSE	
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
 	sniper_skill = 6
@@ -134,16 +132,15 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("[H.real_name]")
-		H.assign_random_quirk()
-		H.witchblood()
-		var/corruption = rand(1,2)
+		var/corruption = rand(1,6)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
 				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
+				/mob/living/carbon/human/proc/slaanesh)
+		H.assign_random_quirk()
+		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
@@ -176,16 +173,15 @@
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("[H.real_name]")
-		H.assign_random_quirk()
-		H.witchblood()
-		var/corruption = rand(1,3)
+		var/corruption = rand(1,5)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
 				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
+				/mob/living/carbon/human/proc/slaanesh)
+		H.assign_random_quirk()
+		H.witchblood()
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
 
@@ -238,20 +234,18 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
+		var/corruption = rand(1,10)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 
 		if(title == "Krieg Guardsman")
 			var/watchnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [watchnum]")
-		else
-			H.fully_replace_character_name("Sergeant [H.real_name]")
-			var/corruption = rand(1,3)
-			switch(corruption)
-				if(1)
-					H.verbs += list(
-					/mob/living/carbon/human/proc/khorne,
-					/mob/living/carbon/human/proc/nurgle,
-					/mob/living/carbon/human/proc/slaanesh,
-					/mob/living/carbon/human/proc/tzeentch)
+		else H.fully_replace_character_name("Sergeant [H.real_name]")
 
 		if(title == "Krieg Quartermaster")
 			H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
@@ -301,20 +295,19 @@
 		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
+		var/corruption = rand(1,15)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(12,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
-		var/corruption = rand(1,3)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
@@ -331,15 +324,14 @@
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_HIGH
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
-	alt_titles = list(
+	/*alt_titles = list(
 		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/lieutenant
 	)
-	/*
+	*/
 	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
-	*/
 	can_be_in_squad = FALSE
 	auto_rifle_skill = 9 //commissars are more trained than almost any guardsman
 	semi_rifle_skill = 9
@@ -356,7 +348,15 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("[current_name]")
+		H.fully_replace_character_name("Commissar [current_name]")
+		var/corruption = rand(1,30)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
@@ -365,14 +365,6 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 /*
 		H.verbs -= list(
@@ -711,7 +703,7 @@
 			if(minimum == alpha_members)
 				SSwarfare.red.squadA.members += src
 				src.squad = SSwarfare.red.squadA
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
 				RC.attach_accessory(src,A)
@@ -722,7 +714,7 @@
 			else if(minimum == bravo_members)
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src)
 				RC.attach_accessory(src,B)
@@ -733,7 +725,7 @@
 			else if(minimum == charlie_members)
 				SSwarfare.red.squadC.members += src
 				src.squad = SSwarfare.red.squadC
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/charlie(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/charlie/C = new(src.loc)
 				RC.attach_accessory(src,C)
@@ -755,7 +747,7 @@
 			else
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src.loc)
 				RC.attach_accessory(src,B)

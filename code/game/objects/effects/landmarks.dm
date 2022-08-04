@@ -461,19 +461,18 @@ Template:
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(/obj/item/gun/energy/las/laspistol/mechanicus = 1,
-				/obj/item/gun/projectile/necros = 1,
-				/obj/item/gun/projectile/slugrevolver = 1,
+				/obj/item/gun/projectile/slugrevolver = 2,
 				/obj/item/gun/projectile/lockebolter = 1,
 				/obj/item/gun/projectile/talon/renegade = 1,
-				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 6,
 				/obj/item/gun/projectile/automatic/stubber = 6,
 				/obj/item/gun/projectile/bolter_pistol = 2,
-				/obj/item/gun/energy/las/lasgun/rare = 4,
-				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 3,
-				/obj/item/gun/energy/las/lasgun/catachan = 1,
-				/obj/item/gun/energy/las/lasgun/tinkered = 3,
-				/obj/item/gun/energy/las/lasgun/longlas = 1,
-				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 3)
+				/obj/item/gun/energy/las/lasgun/rare = 5,
+				/obj/item/gun/projectile/meltagun = 1,
+				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 4,
+				/obj/item/gun/energy/las/lasgun/catachan = 2,
+				/obj/item/gun/energy/las/lasgun/tinkered = 4,
+				/obj/item/gun/energy/las/lasgun/longlas = 2,
+				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 4)
 
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"

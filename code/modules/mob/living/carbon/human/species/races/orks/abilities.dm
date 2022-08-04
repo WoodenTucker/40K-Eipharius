@@ -43,7 +43,7 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>Ya can't waaaagh when ya' dead ya' git!</span>",)
 		return
-	if(waaagh >= 100 && !cooldown)
+	if(waaagh >= 20 && !cooldown)
 		visible_message("<span class='notice'>The [src] starts healing rapidly in front of your eyes.</span>", "<span class='notice'>You heal rapidly.</span>")
 		playsound(src, 'sound/voice/ork/orkscream.ogg', 50, 5)
 		adjustOxyLoss(-1)
@@ -58,7 +58,7 @@
 		cooldown = TRUE
 		spawn(120)
 			cooldown = FALSE
-		waaagh -= 100
+		waaagh -= 20
 	else
 		to_chat(src, "<span class='notice'>YOU DON HAVE ENUF WAAAAAAAAGH!</span>")
 
@@ -116,7 +116,7 @@
 		return
 
 	visible_message("[name] flexs der' muscles afa' a long nap, feelin' der' strength an' skill return to 'em.")
-	src.add_stats(rand(15,16),rand(6,9),rand(6,10),8) //gives stats str, end, int, dex
+	src.add_stats(rand(17,18),rand(13,15),rand(6,10),8) //gives stats str, end, int, dex
 	src.add_skills(rand(6,10),rand(6,10),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(ORKZ) //secondary language

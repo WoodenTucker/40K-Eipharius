@@ -42,7 +42,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
-		var/corruption = rand(1,5)
+		var/corruption = rand(1,25)
 		switch(corruption)
 			if(1)
 				H.verbs += list(

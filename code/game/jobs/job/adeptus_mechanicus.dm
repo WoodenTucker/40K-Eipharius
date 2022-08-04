@@ -49,7 +49,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,7)
+		var/corruption = rand(1,10)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
@@ -98,7 +98,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,5)
+		var/corruption = rand(1,10)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
@@ -148,7 +148,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,5)
+		var/corruption = rand(1,8)
 		switch(corruption)
 			if(1)
 				H.verbs += list(

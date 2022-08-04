@@ -3,7 +3,7 @@
 	icon = 'icons/turf/trenches_turfs.dmi'
 	icon_state = "wood0"
 	can_smooth = TRUE
-	movement_delay = 0.5
+	movement_delay = 0.1
 
 /obj/structure/trench_wall
 	name = "trench wall"
@@ -43,7 +43,7 @@
 	icon = 'icons/obj/warfare.dmi'
 	icon_state = "trench"
 	name = "trench"
-	movement_delay = 0.5
+	movement_delay = 0.1
 	has_coldbreath = TRUE
 	var/can_be_dug = TRUE
 

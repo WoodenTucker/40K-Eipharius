@@ -840,14 +840,14 @@ Area basic template
 /area/cadiaoutpost/oa/farm
 	name = "Farm"
 	icon_state = "farm"
-	music = 'sound/newmusic/Forest_Village.ogg'
+	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = TRUE
 	dynamic_lighting = 1
 
 /area/cadiaoutpost/oa/groxpen
 	name = "groxpen"
 	icon_state = "farm"
-	music = 'sound/newmusic/Forest_Village.ogg'
+	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = TRUE
 	dynamic_lighting = 1
 
@@ -923,7 +923,7 @@ Area basic template
 /area/cadiaoutpost/oa/caves/terror
 	name = "Caves Terror" // Do not use this area unless you know what it's for.
 	icon_state = "cave"
-	music = 'sound/newmusic/Caves_Terror.ogg'
+	music = 'sound/newmusic/Caves_City.ogg'
 
 ////////////////////////////////////////
 //////////VILLAGE//////////////////
@@ -957,7 +957,7 @@ Area basic template
 	icon_state = "gatehouse"
 	requires_power = TRUE
 	dynamic_lighting = 1
-	music = 'sound/newmusic/Outpost1.ogg'
+	music = 'sound/newmusic/General_Ambient2.ogg'
 
 /area/cadiaoutpost/oa/service/inn
 	name = "Village Inn"

@@ -179,6 +179,16 @@
 	armor = list(melee = 40, bullet = 45, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 
+/obj/item/clothing/head/helmet/genestealer
+	name = "tyranid scale hide"
+	desc = "The hide of a Tyranid Genestealer"
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 100, rad = 100)
+	icon_state = "gsfeet"
+	item_state = "gsfeet"
+	canremove = 0
+	unacidable = 1
+	species_restricted = list(SPECIES_TYRANID)
+
 /obj/item/clothing/head/helmet/sentryhelm
 	name = "Sentry Helmet"
 	desc = "Used for taking blows to the noggin without getting hurt."
