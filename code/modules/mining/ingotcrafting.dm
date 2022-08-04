@@ -26,7 +26,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Heavy Stubber Ammo", "Stub Rifle Ammo", "Shells Boxes", "Sniper Rifle Ammo", "Warmonger Magazine", "Soulburn Magazine", "Pistol Magazine", ".44 Speed Loader", "Trench Shovel",) //lists all possible crafting choices
+		var/craftingchoices = list("Heavy Stubber Ammo", "Stub Rifle Ammo", "Shells Boxes", "Sniper Rifle Ammo", "Warmonger Magazine", "Mk.3 Autogun Magazine", "Pistol Magazine", ".44 Revolver Speed Loader", "Trench Shovel",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -68,12 +68,12 @@
 				src.whatwemaking = 6
 				src.ismarked = 1
 				src.name = "Copper Ingot (Pistol Magazine)"
-			if(".44 Speed Loader")
+			if(".44 Revolver Speed Loader")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future .44 Speed Loader.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 7
 				src.ismarked = 1
-				src.name = "Copper Ingot (.44 Speed Loader)"
+				src.name = "Copper Ingot (.44 Revolver Speed Loader)"
 
 			if("Trench Shovel")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future trench shovel.")
@@ -81,12 +81,12 @@
 				src.whatwemaking = 8
 				src.ismarked = 1
 				src.name = "Copper Ingot (Marked Trench Shovel)"
-			if("Soulburn Magazine")
+			if("Mk.3 Autogun Magazine")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future trench shovel.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 9
 				src.ismarked = 1
-				src.name = "Copper Ingot (Soulburn Magazine)"
+				src.name = "Copper Ingot (Mk.3 Autogun Magazine)"
 
 
 
@@ -193,7 +193,7 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] carefully carves the ingot into a blessed soulburn magazine! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Copper Ingot (Soulburn Magazine)"
+					src.name = "Copper Ingot (Mk.3 Autogun Magazine)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -287,7 +287,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "The WTX Frontier Special", "Mk. III Sniper Rifle", "Mk.3 Warmonger", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol", "The Chrome Stub Pistol", "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword") //lists all possible crafting choices
+		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "Enforcer Shotgun", "Mk. III Sniper Rifle", "Warmonger Autogun", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol", "The Chrome Stub Pistol", "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword", "Landmine") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -305,24 +305,24 @@
 				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Iron Ingot (Snapper Pattern Stub Rifle)"
-			if("The WTX Frontier Special")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future WTX Frontier Special.")
+			if("Enforcer Shotgun")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Enforcer Shotgun.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 3
 				src.ismarked = 1
-				src.name = "Iron Ingot (The WTX Frontier Special)"
+				src.name = "Iron Ingot (Enforcer Shotgun)"
 			if("Mk. III Sniper Rifle")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Mk. III Sniper Rifle.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 4
 				src.ismarked = 1
 				src.name = "Iron Ingot (Mk. III Sniper Rifle)"
-			if("Mk.3 Warmonger")
+			if("Warmonger Autogun")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Mk.3 Warmonger.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 5
 				src.ismarked = 1
-				src.name = "Iron Ingot (Mk.3 Warmonger)"
+				src.name = "Iron Ingot (Warmonger Autogun)"
 			if("Vraks Pattern Heavy Stubber")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Vraks Pattern Heavy Stubber.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
@@ -368,9 +368,15 @@
 			if("Cane Sword")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future cane sword.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 12
+				src.whatwemaking = 13
 				src.ismarked = 1
 				src.name = "Iron Ingot (Cane Sword)"
+			if("Landmine")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future landmine.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 14
+				src.ismarked = 1
+				src.name = "Iron Ingot (Landmine)"
 
 
 
@@ -409,9 +415,9 @@
 			if(3)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed The WTX Frontier Special! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Enforcer Shotgun! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Iron Ingot (The WTX Frontier Special)"
+					src.name = "Iron Ingot (Enforcer Shotgun)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -433,7 +439,7 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] carefully carves the ingot into a blessed Mk.3 Warmonger! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Iron Ingot (Mk.3 Warmonger)"
+					src.name = "Iron Ingot (Warmonger Autogun)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -526,6 +532,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(14)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed lanmine! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Iron Ingot (Landmine)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts away at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -612,6 +629,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/material/sword/cane(user.loc)
+				qdel(src)
+				return
+			if(14)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/landmine(user.loc)
 				qdel(src)
 				return
 

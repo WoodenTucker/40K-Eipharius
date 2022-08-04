@@ -81,6 +81,7 @@
 		dat += "<A href='byond://?src=\ref[src];frag=1'>Frag Grenade (16)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];incen=1'>Incendiary Grenade (18)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];krak=1'>Krak Grenade (22)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];landmine=1'>Landmine (35)</A><BR>"
 		dat += "<B> Ammunition:</B><BR>"
 		dat += "<A href='byond://?src=\ref[src];smgmag=1'>Autogun Magazine (4)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];pistolmag=1'>Pistol Magazine (3)</A><BR>"
@@ -514,7 +515,7 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/gun/projectile/talon/renegade(T.loc) //what they spawning
 			src.buying = 0
-	if (href_list["a80"])  
+	if (href_list["a80"])
 		if(GLOB.thrones < 40) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -530,7 +531,7 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/gun/projectile/automatic/machinepistol/a80(T.loc) //what they spawning
 			src.buying = 0
-	if (href_list["autogrim"])  
+	if (href_list["autogrim"])
 		if(GLOB.thrones < 40) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -578,7 +579,7 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/gun/projectile/warfare/kieji(T.loc) //what they spawning
 			src.buying = 0
-	if (href_list["pistolmag"])  
+	if (href_list["pistolmag"])
 		if(GLOB.thrones < 3) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
@@ -915,6 +916,24 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/grenade/frag/high_yield/krak(T.loc) //what they spawning
 			src.buying = 0
+	if (href_list["landmine"])
+		if(GLOB.thrones < 22) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 35
+			 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/landmine(T.loc) //what they spawning
+			src.buying = 0
+
 	if (href_list["bolterammo"])
 		if(GLOB.thrones < 8) //do we got enough shekels?
 			visible_message("You cannot afford that!")
