@@ -1055,9 +1055,9 @@ var/list/admin_verbs_mentor = list(
 			message_admins("The party will spawn at the 60 minute mark.")
 		if("120")
 			GLOB.partydelay = 72000
-			message_admins("The party will spawn at the 60 minute mark.")
+			message_admins("The party will spawn at the 120 minute mark.")
 		if("Never")
-			GLOB.partydelay = INFINITY
+			GLOB.partydelay = 432000 //12 hours, infinity apparently doesnt work.
 			message_admins("The lateparty has been disabled.")
 
 	feedback_add_details("admin_verb","XD") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!

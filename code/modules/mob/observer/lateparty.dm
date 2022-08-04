@@ -19,6 +19,9 @@
 			if(72000)
 				to_chat(src, "It is too early for a late party! This will open when round duration reaches 2:00!")
 				return
+			if(432000)
+				to_chat(src, "Sorry guy, parties cancelled!")
+				return
 
 	if(GLOB.deployed == 1) //checks if a party has already been sent, can make this value higher if you wish to send more than one!
 		to_chat(src, "The late party has already deployed!")
