@@ -79,6 +79,13 @@
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
 		else H.fully_replace_character_name("[H.real_name]")
+		var/corruption = rand(1,8)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -125,6 +132,13 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("[H.real_name]")
+		var/corruption = rand(1,6)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
@@ -159,6 +173,13 @@
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("[H.real_name]")
+		var/corruption = rand(1,5)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -213,6 +234,13 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
+		var/corruption = rand(1,10)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 
 		if(title == "Krieg Guardsman")
 			var/watchnum = rand(1,50000)
@@ -267,6 +295,13 @@
 		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
+		var/corruption = rand(1,15)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh)
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(12,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
@@ -314,6 +349,14 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
+		var/corruption = rand(1,30)
+		switch(corruption)
+			if(1)
+				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
+				/mob/living/carbon/human/proc/nurgle,
+				/mob/living/carbon/human/proc/slaanesh,
+				/mob/living/carbon/human/proc/tzeentch)
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
@@ -660,7 +703,7 @@
 			if(minimum == alpha_members)
 				SSwarfare.red.squadA.members += src
 				src.squad = SSwarfare.red.squadA
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/alpha(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/alpha/A = new(src)
 				RC.attach_accessory(src,A)
@@ -671,7 +714,7 @@
 			else if(minimum == bravo_members)
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src)
 				RC.attach_accessory(src,B)
@@ -682,7 +725,7 @@
 			else if(minimum == charlie_members)
 				SSwarfare.red.squadC.members += src
 				src.squad = SSwarfare.red.squadC
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/charlie(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/charlie/C = new(src.loc)
 				RC.attach_accessory(src,C)
@@ -704,7 +747,7 @@
 			else
 				SSwarfare.red.squadB.members += src
 				src.squad = SSwarfare.red.squadB
-				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team/bravo(src),slot_l_ear)
+				equip_to_slot_or_del(new /obj/item/device/radio/headset/red_team(src),slot_l_ear)
 				var/obj/item/clothing/suit/armor/redcoat/RC = get_equipped_item(slot_wear_suit)
 				var/obj/item/clothing/accessory/armband/bravo/B = new(src.loc)
 				RC.attach_accessory(src,B)
