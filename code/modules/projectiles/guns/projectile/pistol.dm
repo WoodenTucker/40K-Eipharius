@@ -382,6 +382,16 @@
 	else
 		icon_state = "bpistol-10-e"
 
+/obj/item/gun/projectile/bolter_pistol/inquis
+	name = "Drusian Pattern Service Bolt Pistol"
+	icon_state = "bpistol"
+	item_state = "bpistol"
+	force = 15
+	caliber = ".75"
+	accuracy = -3 //VERY well maintained--maintened? eh, you get what i mean!
+	fire_delay = 1.2
+	move_delay = 1.3
+
 /obj/item/gun/projectile/bolter_pistol/astarte
 	name = "Mark III Pattern Bolt Pistol"
 	desc = "The standard Astarte-issued bolt pistol unlike many other sidearms is often used as a Primary weapon by the Adeptus Astartes and has proven itself just as capable as it's heavier cousins."

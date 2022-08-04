@@ -246,7 +246,7 @@
 	fire_sound = "brifle"
 	penetrating = TRUE // fuck that shit penetrative rounds
 	damage = 65
-	armor_penetration = 40
+	armor_penetration = 30
 
 
 /obj/item/ammo_magazine/brifle
@@ -609,7 +609,7 @@
 	one_hand_penalty = 4
 	accuracy = -4
 	fire_delay = 1.7
-	automatic = 1
+	automatic = 0.9
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
@@ -634,7 +634,7 @@
 	one_hand_penalty = 3
 	accuracy = -3.5
 	fire_delay = 1.6
-	armor_penetration = 8
+	automatic = 0.9
 
 	wielded_item_state = "autorifle-wielded"
 	loaded_icon = "autorifle"
@@ -657,9 +657,9 @@
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 	move_delay = 2.5
 	one_hand_penalty = 4
-	accuracy = -3.2
-	fire_delay = 1.6
-	automatic = 1
+	accuracy = -3
+	fire_delay = 1.5
+	automatic = 0.8
 
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/machinepistol
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt/machinepistol
