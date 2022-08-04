@@ -747,6 +747,16 @@ obj/item/clothing/suit/armor
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/skithood
 
+/obj/item/clothing/suit/storage/hooded/genestealer
+	name = "tyranid chitin"
+	desc = "The hide of a Tyranid Genestealer"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
+	icon_state = "gsfeet"
+	item_state = "gsfeet"
+	canremove = 0
+	unacidable = 1
+	species_restricted = list(SPECIES_TYRANID)
+
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle
 	name = "Order of the Sacred Rose Power Armor"
