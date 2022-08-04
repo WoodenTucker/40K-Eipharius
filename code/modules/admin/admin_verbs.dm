@@ -104,6 +104,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/another_party,
 	/client/proc/generate_party,
 	/client/proc/choose_party,
+	/client/proc/delay_party,
 
 )
 var/list/admin_verbs_ban = list(
@@ -1031,3 +1032,32 @@ var/list/admin_verbs_mentor = list(
 			message_admins("Genestealers have been selected as the late party!")
 
 	feedback_add_details("admin_verb","XP") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+
+/client/proc/delay_party() // Runs the pick proc should you need to
+	set category = "Fun"
+	set name = "Choose When Party Arrives"
+	set desc = "Set the timer for the party to arrive."
+
+	var/options = list("Default", "45", "60", "120", "Never") //lists all possible fates
+
+	var/chooseaparty = input("Choose when the party arrives", "Options") as null|anything in options
+
+	switch(chooseaparty)
+		if("Default")
+			GLOB.partydelay = 18000
+			message_admins("The party will spawn at the 30 minute mark.")
+		if("45")
+			GLOB.partydelay = 27000
+			message_admins("The party will spawn at the 45 minute mark.")
+		if("60")
+			GLOB.partydelay = 36000
+			message_admins("The party will spawn at the 60 minute mark.")
+		if("120")
+			GLOB.partydelay = 72000
+			message_admins("The party will spawn at the 60 minute mark.")
+		if("Never")
+			GLOB.partydelay = INFINITY
+			message_admins("The lateparty has been disabled.")
+
+	feedback_add_details("admin_verb","XD") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
