@@ -5,11 +5,23 @@
 	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
 
-	var/partydelay = 18000 //in deciseconds (30 min rn or 18000 deciseconds)
-
-	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
-		to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:40!")
-		return
+	if(world.time < GLOB.partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
+		switch(GLOB.partydelay)
+			if(18000)
+				to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:30!")
+				return
+			if(27000)
+				to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:45!")
+				return
+			if(36000)
+				to_chat(src, "It is too early for a late party! This will open when round duration reaches 1:00!")
+				return
+			if(72000)
+				to_chat(src, "It is too early for a late party! This will open when round duration reaches 2:00!")
+				return
+			if(432000)
+				to_chat(src, "Sorry guy, parties cancelled!")
+				return
 
 	if(GLOB.deployed == 1) //checks if a party has already been sent, can make this value higher if you wish to send more than one!
 		to_chat(src, "The late party has already deployed!")
