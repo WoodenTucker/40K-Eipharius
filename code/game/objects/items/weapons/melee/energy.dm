@@ -290,15 +290,14 @@
 	name = "Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, the void shield will cut through almost anything that it touches when its on, so make sure you don't cut yourself."
 	icon_state = "powersword"
-	active_force = 90 //should be enough to cut off most limbs
-	active_throwforce = 70
+	active_force = 40 //should be enough to cut off most limbs
+	active_throwforce = 40
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-	force = 50 //its just a adamantium sword when offline
-	throwforce = 40
+	force = 35 //its just a adamantium sword when offline
+	throwforce = 35
 	throw_speed = 1
 	throw_range = 4
-	block_chance = 75
-	armor_penetration = 90 //you've messed with the wrong house fool!
+	block_chance = 45
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -306,7 +305,6 @@
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut", "slashed", "sliced")
 	hitsound = "slash_sound"
 	sharp = 1
-	edge = 1
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
 	drop_sound = 'sound/items/drop_sword.ogg'
 	grab_sound = 'sound/items/unholster_sword02.ogg'
@@ -325,22 +323,20 @@
 	name = "Ingelldina Pattern Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, this one is very long and heavy, clearly having been made for one of the sons of the emperor."
 	icon_state = "powersword"
-	active_force = 90 //should be enough to cut off most limbs
-	active_throwforce = 70
-	force = 60 //its just a adamantium sword when offline
+	active_force = 45 //should be enough to cut off most limbs
+	active_throwforce = 45
+	force = 40 //its just a adamantium sword when offline
 	throwforce = 40
 	throw_speed = 1
 	throw_range = 4
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
-	block_chance = 75
-	armor_penetration = 90 //you've messed with the wrong house fool!
+	block_chance = 55
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	sharp = 1
-	edge = 1
 
 
 
