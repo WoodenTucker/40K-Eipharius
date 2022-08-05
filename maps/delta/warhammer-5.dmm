@@ -1258,6 +1258,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"en" = (
+/obj/machinery/light,
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "ep" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/button/remote/blast_door/id_scan{
@@ -1933,6 +1937,9 @@
 /obj/structure/bed/chair/office/light{
 	dir = 4
 	},
+/obj/machinery/light{
+	dir = 1
+	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jw" = (
@@ -1961,6 +1968,10 @@
 	name = "plastic table frame"
 	},
 /obj/item/storage/box/cups,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jB" = (
@@ -2033,6 +2044,10 @@
 /area/cadiaoutpost/oa/tauship)
 "jL" = (
 /obj/machinery/papershredder,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jM" = (
@@ -2352,6 +2367,7 @@
 	pixel_y = -8
 	},
 /obj/structure/table/rack/shelf,
+/obj/machinery/light,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kL" = (
@@ -2391,6 +2407,13 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"kR" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
 "kV" = (
 /obj/machinery/door/airlock/centcom,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -2406,6 +2429,13 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"lc" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "ll" = (
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/toxin,
@@ -2434,6 +2464,13 @@
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"lE" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "lR" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
@@ -2669,6 +2706,12 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"oI" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "pf" = (
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/wall/techno,
@@ -3212,6 +3255,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"wO" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8;
+	icon_state = "officechair_white_preview"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "xl" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/metal/five,
@@ -3416,6 +3469,13 @@
 /obj/machinery/gibber,
 /turf/simulated/floor/tiled/freezer,
 /area/centcom)
+"zZ" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
 "Al" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/light/spot{
@@ -3431,6 +3491,12 @@
 /obj/item/archaeological_find/remains/xeno,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"AG" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "AH" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
@@ -3905,6 +3971,14 @@
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Hx" = (
+/obj/structure/filingcabinet,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "HF" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/bed/chair/office/dark{
@@ -4290,6 +4364,13 @@
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"MT" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "MX" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4594,6 +4675,13 @@
 /obj/machinery/computer/drone_control,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"QJ" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "QN" = (
 /obj/item/modular_computer/console/preset/command,
 /turf/simulated/floor/wood,
@@ -6158,7 +6246,7 @@ gL
 Uv
 kl
 Uv
-Uv
+lc
 gL
 jF
 ax
@@ -6247,15 +6335,15 @@ ax
 ax
 ax
 gL
+AG
 Uv
 Uv
 Uv
-Uv
 kl
 kl
 kl
 kl
-kl
+zZ
 kl
 kl
 kl
@@ -6354,7 +6442,7 @@ kl
 kl
 kl
 kl
-Uv
+MT
 Uv
 Uv
 Uv
@@ -6564,7 +6652,7 @@ gL
 gL
 gL
 kl
-Uv
+MT
 gL
 gL
 gL
@@ -6766,13 +6854,13 @@ gL
 gL
 jB
 jB
-jB
+QJ
 jB
 ke
 gL
 jM
 jM
-jB
+QJ
 gL
 kD
 ax
@@ -6853,7 +6941,7 @@ ax
 ax
 gL
 gL
-id
+wO
 Uv
 Uv
 id
@@ -6862,7 +6950,7 @@ Uv
 kL
 gL
 kz
-Uv
+lc
 BA
 gL
 jT
@@ -6967,7 +7055,7 @@ kg
 iu
 Uv
 gL
-jB
+oI
 jB
 jD
 ka
@@ -7063,7 +7151,7 @@ jI
 kk
 jV
 Uv
-Uv
+en
 gL
 iu
 Uv
@@ -7267,7 +7355,7 @@ jJ
 jN
 jX
 Uv
-Uv
+en
 gL
 iu
 Uv
@@ -7375,7 +7463,7 @@ ky
 iu
 Uv
 gL
-jB
+oI
 jB
 kn
 ko
@@ -7569,7 +7657,7 @@ jR
 gL
 hk
 gn
-kp
+Hx
 kp
 Uv
 gL
@@ -7582,13 +7670,13 @@ gL
 gL
 jB
 jB
-jB
+lE
 jB
 kI
 gL
 jM
 kF
-jB
+lE
 gL
 jS
 ax
@@ -7788,7 +7876,7 @@ gL
 gL
 gL
 kl
-Uv
+lc
 gL
 gL
 gL
@@ -7984,7 +8072,7 @@ gL
 kl
 kl
 kl
-kl
+zZ
 kl
 Uv
 Uv
@@ -8083,15 +8171,15 @@ ax
 ax
 ax
 gL
+AG
 Uv
 Uv
 Uv
-Uv
 kl
 kl
 kl
 kl
-kl
+kR
 kl
 kl
 kl
@@ -8198,7 +8286,7 @@ gL
 Uv
 kl
 Uv
-Uv
+MT
 gL
 jF
 ax
