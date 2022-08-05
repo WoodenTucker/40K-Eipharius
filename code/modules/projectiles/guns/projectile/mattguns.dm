@@ -1103,16 +1103,16 @@
 	max_shells = 30
 	caliber = ".75"
 	can_jam = TRUE	
-	move_delay= 5
-	one_hand_penalty = 4
-	accuracy = -8
+	move_delay = 5
+	one_hand_penalty = 5
+	accuracy = -9
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 2
-	automatic = 0.7
+	automatic = 0.75
 	firemodes = list()
 
 //Eldar
