@@ -298,6 +298,7 @@
 	throw_speed = 1
 	throw_range = 4
 	block_chance = 45
+	weapon_speed_delay = 7
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -350,6 +351,7 @@
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
+	weapon_speed_delay = 6
 	block_chance = 40 //not the best block chance, but, you can have two of them!
 	armor_penetration = 90 //you've messed with the wrong house fool!
 	item_flags = ITEM_FLAG_NODROP
@@ -359,7 +361,6 @@
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
 	sharp = 1
-	edge = 1
 
 /obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)
 	..()
