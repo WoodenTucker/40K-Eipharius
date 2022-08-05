@@ -253,7 +253,7 @@ obj/item/clothing/suit/armor
 	desc = "Scavenged bitz to keep ya' krumpin' longa'!"
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor"
-	armor = list(melee = 55, bullet = 30, laser = 20, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 10, laser = 10, energy = 20, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
 	blood_overlay_type = "armor"
 	canremove = 0
