@@ -656,12 +656,20 @@
 /obj/machinery/shower,
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
+/obj/item/clothing/glasses/thermal/plain/eyepatch,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cm" = (
 /obj/structure/toilet,
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
+/obj/item/clothing/suit/armor/bulletproof/vest,
+/obj/item/clothing/head/helmet/facecover,
+/obj/item/clothing/head/welding/knight,
+/obj/item/clothing/gloves/cyborg,
+/obj/item/clothing/gloves/thick,
+/obj/item/clothing/under/syndicate/tacticool,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cn" = (
@@ -812,6 +820,7 @@
 /obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/holster/waist,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cJ" = (
@@ -1126,6 +1135,8 @@
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/cadiangoggles/sniper,
+/obj/item/clothing/glasses/night,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dz" = (
@@ -1844,6 +1855,8 @@
 "jk" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "jl" = (
@@ -2836,6 +2849,12 @@
 /obj/item/clothing/under/syndicate,
 /obj/item/clothing/under/syndicate/combat,
 /obj/item/clothing/under/rank/seneschal,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/mask/gas/half/cadianrespirator,
+/obj/item/clothing/mask/gas/half/cadianrespirator,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "rB" = (
@@ -3374,6 +3393,7 @@
 	},
 /obj/item/clothing/mask/chameleon,
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/holster/waist,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -4038,6 +4058,11 @@
 /obj/structure/table/steel,
 /obj/item/clothing/head/helmet/guardhelmet,
 /obj/item/clothing/head/helmet/medicae,
+/obj/item/clothing/head/beret/deathsquad{
+	name = "Red Beret";
+	armor = list("melee" = 60, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 40, "bio" = 0, "rad" = 0);
+	desc = "The armored beret of the Tempestor."
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Jb" = (
@@ -4222,6 +4247,7 @@
 	name = "Lectitio Divinitatus"
 	},
 /obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/holster/waist,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "LW" = (
@@ -9467,10 +9493,10 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
+iw
+iw
+iw
+iw
 ax
 ax
 ax
@@ -11724,7 +11750,7 @@ bP
 bP
 bP
 gz
-dN
+lU
 dJ
 dN
 lU
@@ -11826,7 +11852,7 @@ dj
 dw
 bP
 gQ
-dN
+lU
 dJ
 dN
 lU
@@ -11928,7 +11954,7 @@ lU
 dX
 bP
 gW
-dN
+lU
 dJ
 dN
 dN
