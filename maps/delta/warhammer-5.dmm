@@ -161,8 +161,10 @@
 /turf/space,
 /area/space)
 "ay" = (
-/obj/structure/extinguisher_cabinet,
-/turf/simulated/shuttle/wall,
+/obj/structure/table/rack,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "az" = (
 /obj/structure/closet/crate,
@@ -218,26 +220,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aN" = (
-/obj/item/reagent_containers/food/snacks/warfare/nim,
-/obj/item/reagent_containers/food/snacks/warfare/nim,
-/obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_x = 3;
-	pixel_y = -5
-	},
-/obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_y = -2;
-	pixel_x = 9
-	},
-/obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_x = 8;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_x = 2;
-	pixel_y = 7
-	},
-/obj/structure/table/rack,
-/turf/simulated/floor/shuttle/darkred,
+/turf/simulated/shuttle/wall/corner/blockwhite/nw,
 /area/cadiaoutpost/oa/tauship)
 "aO" = (
 /obj/machinery/light{
@@ -316,11 +299,8 @@
 	},
 /area/centcom)
 "bh" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 4;
-	icon_state = "officechair_dark_preview"
-	},
-/turf/simulated/floor/shuttle/white,
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "bi" = (
 /obj/structure/railing{
@@ -1610,10 +1590,8 @@
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "hy" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/pulse/ionrifle,
-/obj/item/gun/energy/pulse/ionrifle,
-/obj/item/gun/energy/pulse/ionrifle,
+/obj/machinery/mech_recharger,
+/obj/machinery/mech_recharger,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "hz" = (
@@ -1979,36 +1957,47 @@
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jA" = (
-/obj/structure/filingcabinet,
-/turf/simulated/floor/shuttle/white,
-/area/cadiaoutpost/oa/tauship)
-"jB" = (
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"jC" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/item/storage/box/cups,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
+"jB" = (
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"jC" = (
+/obj/structure/table/rack/shelf,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "jD" = (
-/obj/machinery/computer/teleporter,
-/turf/simulated/floor/shuttle/white,
+/obj/structure/table/rack,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jE" = (
 /obj/machinery/door/airlock/gold/tau{
-	name = "Battlesuit Facility"
+	desc = "It closed, do not try to pass thought it.";
+	explosion_resistance = 1000;
+	hackProof = 1;
+	health = 3e+007;
+	heat_proof = 1;
+	locked = 1;
+	maxhealth = 3e+007;
+	name = "Bridge";
+	req_access = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
+	secured_wires = 1
 	},
-/turf/simulated/floor/shuttle/darkred,
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jF" = (
-/obj/item/mecha_parts/mecha_equipment/repair_droid{
-	pixel_x = 12;
-	pixel_y = -8
-	},
-/obj/structure/table/rack/shelf,
-/turf/simulated/floor/shuttle/darkred,
+/obj/structure/shuttle/engine/propulsion,
+/turf/space,
 /area/cadiaoutpost/oa/tauship)
 "jG" = (
 /obj/structure/railing{
@@ -2068,19 +2057,16 @@
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jR" = (
-/turf/simulated/shuttle/wall/corner/blockwhite/se,
+/turf/simulated/shuttle/wall/corner/blockwhite/ne,
 /area/cadiaoutpost/oa/tauship)
 "jS" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/device/radio/beacon,
-/turf/simulated/floor/shuttle/white,
+/turf/simulated/shuttle/wall/corner/blockwhite/se,
 /area/cadiaoutpost/oa/tauship)
 "jT" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/pulse/pulserifle,
-/obj/item/gun/energy/pulse/pulserifle,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jU" = (
@@ -2134,15 +2120,11 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kb" = (
-/turf/simulated/shuttle/wall/corner/smoothwhite/se,
+/turf/simulated/shuttle/wall/corner/smoothwhite/nw,
 /area/cadiaoutpost/oa/tauship)
 "kc" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/shuttle/white,
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kd" = (
 /obj/structure/toilet{
@@ -2151,205 +2133,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "ke" = (
-/obj/structure/table/rack/shelf,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kf" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/centcom)
-"kg" = (
-/obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kh" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/stack/material/wood/fifty,
-/obj/item/stack/material/steel/fifty,
-/turf/simulated/floor/shuttle/white,
-/area/cadiaoutpost/oa/tauship)
-"ki" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/turf/simulated/floor/tiled/dark,
-/area/centcom)
-"kj" = (
-/obj/structure/table/rack,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kk" = (
-/turf/simulated/shuttle/wall/corner/blockwhite/ne,
-/area/cadiaoutpost/oa/tauship)
-"kl" = (
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"km" = (
-/obj/structure/table/rack,
-/obj/item/storage/backpack/ert,
-/obj/item/clothing/under/ert,
-/obj/item/clothing/head/helmet/space/deathsquad,
-/obj/item/clothing/suit/space/void/swat,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/centcom)
-"kn" = (
-/turf/space,
-/area/cadiaoutpost/oa/tauship)
-"ko" = (
-/obj/structure/table/rack,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kp" = (
-/obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kq" = (
-/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/turf/simulated/floor/shuttle/white,
-/area/cadiaoutpost/oa/tauship)
-"kr" = (
-/obj/structure/bed/padded,
-/obj/item/bedsheet/hop,
-/obj/effect/landmark{
-	name = "taustart"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"ks" = (
-/obj/structure/table/rack,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kt" = (
-/obj/machinery/door/airlock/gold/tau{
-	name = "Teleporter"
-	},
-/turf/simulated/floor/shuttle/yellow,
-/area/cadiaoutpost/oa/tauship)
-"ku" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 8;
-	icon_state = "comfychair_preview"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"kv" = (
-/obj/structure/bed/chair/comfy/black{
-	dir = 4;
-	icon_state = "comfychair_preview"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"kw" = (
-/obj/machinery/door/airlock/gold/tau{
-	name = "Il'Emaar class airlock"
-	},
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kx" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/space,
-/area/cadiaoutpost/oa/tauship)
-"ky" = (
-/obj/machinery/door/airlock/gold/tau{
-	desc = "It closed, do not try to pass thought it.";
-	explosion_resistance = 1000;
-	hackProof = 1;
-	health = 3e+007;
-	heat_proof = 1;
-	locked = 1;
-	maxhealth = 3e+007;
-	name = "Bridge";
-	req_access = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
-	secured_wires = 1
-	},
-/turf/simulated/floor/shuttle/white,
-/area/cadiaoutpost/oa/tauship)
-"kz" = (
-/obj/effect/decal/mecha_wreckage/tau{
-	anchored = 1;
-	desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions.";
-	name = "XV8 Crisis battlesuit wreckage"
-	},
-/obj/machinery/mech_recharger,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kA" = (
-/obj/machinery/mech_recharger,
-/obj/machinery/mech_recharger,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kB" = (
-/obj/machinery/teleport/station,
-/turf/simulated/floor/shuttle/yellow,
-/area/cadiaoutpost/oa/tauship)
-"kC" = (
-/obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/wood,
-/area/centcom)
-"kD" = (
-/obj/structure/table/rack,
-/obj/item/device/personal_shield,
-/obj/item/shield/energy,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kE" = (
-/obj/effect/landmark{
-	name = "taustart"
-	},
-/obj/structure/bed/padded,
-/obj/item/bedsheet/hop,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"kF" = (
-/obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/floor/shuttle/yellow,
-/area/cadiaoutpost/oa/tauship)
-"kG" = (
-/turf/simulated/shuttle/wall/corner/smoothwhite/ne,
-/area/cadiaoutpost/oa/tauship)
-"kH" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/turf/simulated/floor/shuttle/yellow,
-/area/space)
-"kI" = (
-/obj/machinery/mech_recharger,
-/obj/mecha/combat/tau,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kK" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/pulse/pulsepistol,
-/obj/item/gun/energy/pulse/pulsepistol,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kL" = (
 /obj/item/reagent_containers/food/snacks/warfare/nim,
 /obj/item/reagent_containers/food/snacks/warfare/nim,
 /obj/item/reagent_containers/food/snacks/warfare/nim{
@@ -2370,8 +2153,218 @@
 /obj/structure/table/rack,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"kf" = (
+/obj/structure/window/reinforced{
+	dir = 1;
+	icon_state = "rwindow"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/centcom)
+"kg" = (
+/obj/machinery/computer/teleporter,
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
+"kh" = (
+/obj/effect/decal/mecha_wreckage/tau{
+	anchored = 1;
+	desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions.";
+	name = "XV8 Crisis battlesuit wreckage"
+	},
+/obj/machinery/mech_recharger,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"ki" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 12
+	},
+/turf/simulated/floor/tiled/dark,
+/area/centcom)
+"kj" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 4;
+	icon_state = "officechair_dark_preview"
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
+"kk" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/turf/simulated/floor/shuttle/yellow,
+/area/space)
+"kl" = (
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
+"km" = (
+/obj/structure/table/rack,
+/obj/item/storage/backpack/ert,
+/obj/item/clothing/under/ert,
+/obj/item/clothing/head/helmet/space/deathsquad,
+/obj/item/clothing/suit/space/void/swat,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/centcom)
+"kn" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/pulse/ionrifle,
+/obj/item/gun/energy/pulse/ionrifle,
+/obj/item/gun/energy/pulse/ionrifle,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"ko" = (
+/obj/structure/table/rack,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kp" = (
+/obj/structure/filingcabinet,
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
+"kq" = (
+/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
+"kr" = (
+/obj/structure/bed/padded,
+/obj/item/bedsheet/hop,
+/obj/effect/landmark{
+	name = "taustart"
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
+"ks" = (
+/obj/machinery/door/airlock/gold/tau{
+	name = "Battlesuit Facility"
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kt" = (
+/turf/simulated/shuttle/wall/corner/smoothwhite/se,
+/area/cadiaoutpost/oa/tauship)
+"ku" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 8;
+	icon_state = "comfychair_preview"
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
+"kv" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4;
+	icon_state = "comfychair_preview"
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
+"kw" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/pulse/pulserifle,
+/obj/item/gun/energy/pulse/pulserifle,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kx" = (
+/obj/machinery/door/airlock/gold/tau{
+	name = "Il'Emaar class airlock"
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"ky" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
+"kz" = (
+/obj/machinery/teleport/station,
+/turf/simulated/floor/shuttle/yellow,
+/area/cadiaoutpost/oa/tauship)
+"kA" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/pulse/pulsepistol,
+/obj/item/gun/energy/pulse/pulsepistol,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kB" = (
+/turf/space,
+/area/cadiaoutpost/oa/tauship)
+"kC" = (
+/obj/machinery/door/airlock/centcom,
+/turf/simulated/floor/wood,
+/area/centcom)
+"kD" = (
+/turf/simulated/shuttle/wall/corner/blockwhite/sw,
+/area/cadiaoutpost/oa/tauship)
+"kE" = (
+/obj/effect/landmark{
+	name = "taustart"
+	},
+/obj/structure/bed/padded,
+/obj/item/bedsheet/hop,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
+"kF" = (
+/obj/machinery/mech_recharger,
+/obj/mecha/combat/tau,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kG" = (
+/turf/simulated/shuttle/wall/corner/smoothwhite/ne,
+/area/cadiaoutpost/oa/tauship)
+"kH" = (
+/turf/simulated/shuttle/wall/corner/smoothwhite/sw,
+/area/cadiaoutpost/oa/tauship)
+"kI" = (
+/obj/item/reagent_containers/food/snacks/warfare/nim,
+/obj/item/reagent_containers/food/snacks/warfare/nim,
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_y = -2;
+	pixel_x = 9
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/obj/structure/table/rack,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kK" = (
+/obj/item/mecha_parts/mecha_equipment/repair_droid{
+	pixel_x = 12;
+	pixel_y = -8
+	},
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kL" = (
+/obj/structure/extinguisher_cabinet,
+/turf/simulated/shuttle/wall,
+/area/cadiaoutpost/oa/tauship)
 "kM" = (
-/turf/simulated/shuttle/wall/corner/smoothwhite/nw,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/stack/material/wood/fifty,
+/obj/item/stack/material/steel/fifty,
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kN" = (
 /obj/structure/table/rack/shelf,
@@ -2379,7 +2372,12 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kO" = (
-/turf/simulated/shuttle/wall/corner/smoothwhite/sw,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kP" = (
 /obj/structure/table/standard{
@@ -2389,7 +2387,9 @@
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "kQ" = (
-/turf/simulated/shuttle/wall/corner/blockwhite/nw,
+/obj/structure/table/rack/shelf,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kV" = (
 /obj/machinery/door/airlock/centcom,
@@ -2980,7 +2980,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tU" = (
-/turf/simulated/shuttle/wall/corner/blockwhite/sw,
+/obj/machinery/door/airlock/gold/tau{
+	name = "Teleporter"
+	},
+/turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "ue" = (
 /obj/structure/table/woodentable,
@@ -3684,15 +3687,6 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"DL" = (
-/obj/structure/table/rack,
-/obj/item/cell/pulserifle,
-/obj/item/cell/pulserifle,
-/obj/item/cell/pulserifle,
-/obj/item/cell/pulserifle,
-/obj/item/cell/pulserifle,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
 "DP" = (
 /obj/structure/window/reinforced,
 /obj/machinery/light{
@@ -3949,6 +3943,12 @@
 	color = "grey"
 	},
 /area/centcom)
+"HU" = (
+/obj/structure/table/rack,
+/obj/item/device/personal_shield,
+/obj/item/shield/energy,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "Ia" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -5543,9 +5543,9 @@ ax
 ax
 ax
 ax
-kM
+kb
 gL
-kO
+kH
 ax
 ax
 ax
@@ -5644,11 +5644,11 @@ ax
 ax
 ax
 ax
-kM
+kb
 gL
 gL
 gL
-kO
+kH
 ax
 ax
 ax
@@ -5745,16 +5745,16 @@ ax
 ax
 ax
 ax
-kM
+kb
 gL
 gL
 gL
 gL
 gL
-kO
-kM
+kH
+kb
 gL
-kO
+kH
 ax
 ax
 ax
@@ -5841,7 +5841,7 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 gL
 gL
@@ -5856,7 +5856,7 @@ gL
 gL
 gL
 gL
-kb
+kt
 ax
 ax
 ax
@@ -5942,7 +5942,7 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 gL
 kE
@@ -5956,7 +5956,7 @@ kl
 ku
 gL
 gL
-kb
+kt
 ax
 ax
 ax
@@ -6043,7 +6043,7 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 Uv
 gL
@@ -6144,7 +6144,7 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 Uv
 Uv
@@ -6160,7 +6160,7 @@ kl
 Uv
 Uv
 gL
-kx
+jF
 ax
 ax
 ax
@@ -6262,7 +6262,7 @@ kl
 Uv
 Uv
 gL
-kx
+jF
 ax
 ax
 ax
@@ -6364,7 +6364,7 @@ Uv
 Uv
 Uv
 gL
-kx
+jF
 ax
 ax
 ax
@@ -6446,9 +6446,9 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
-tU
+kD
 ax
 gL
 xT
@@ -6464,9 +6464,9 @@ Uv
 kl
 Uv
 Uv
-kh
+kM
 gL
-kx
+jF
 ax
 ax
 ax
@@ -6547,11 +6547,11 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 gL
 gL
-tU
+kD
 gL
 kl
 kv
@@ -6568,7 +6568,7 @@ Uv
 gL
 gL
 gL
-tU
+kD
 ax
 ax
 ax
@@ -6648,7 +6648,7 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 gL
 gL
@@ -6663,15 +6663,15 @@ kr
 kP
 gL
 Lx
-ko
+ay
 gL
-kw
+kx
 gL
 gL
-kA
-kz
+hy
+kh
 gL
-tU
+kD
 ax
 ax
 ax
@@ -6749,13 +6749,13 @@ ax
 ax
 ax
 ax
-kQ
+aN
 gL
 hk
 gn
 jL
 jP
-kc
+kO
 gL
 gL
 gL
@@ -6768,13 +6768,13 @@ jB
 jB
 jB
 jB
-kL
+ke
 gL
 jM
 jM
 jB
 gL
-tU
+kD
 ax
 ax
 ax
@@ -6859,13 +6859,13 @@ Uv
 id
 Uv
 Uv
-ay
+kL
 gL
-kB
+kz
 Uv
 BA
 gL
-kj
+jT
 jB
 jB
 jB
@@ -6963,13 +6963,13 @@ jU
 Uv
 Uv
 gL
-jD
+kg
 iu
 Uv
 gL
 jB
 jB
-ks
+jD
 ka
 jB
 jB
@@ -6977,7 +6977,7 @@ gL
 jB
 jB
 jB
-ke
+kc
 gL
 ax
 ax
@@ -7060,7 +7060,7 @@ gn
 Uv
 jx
 jI
-kH
+kk
 jV
 Uv
 Uv
@@ -7071,7 +7071,7 @@ iu
 gL
 jB
 jB
-kD
+HU
 op
 jB
 jB
@@ -7166,22 +7166,22 @@ jO
 jW
 Uv
 Uv
-ky
+jE
 Uv
 iu
 Uv
-kt
+tU
 jB
 jB
 jB
 jB
 jB
 jB
-jE
+ks
 jB
 jB
 jB
-jF
+kK
 gL
 ax
 ax
@@ -7275,8 +7275,8 @@ iu
 gL
 jB
 jB
-kK
-jT
+kA
+kw
 jB
 jB
 gL
@@ -7368,24 +7368,24 @@ jz
 jK
 jK
 jY
-bh
+kj
 gn
 gL
-jS
+ky
 iu
 Uv
 gL
 jB
 jB
-hy
-DL
+kn
+ko
 jB
 jB
 gL
 jB
 jB
 jB
-kg
+jC
 gL
 ax
 ax
@@ -7474,10 +7474,10 @@ kq
 gL
 gL
 iu
-jC
-kF
+jA
+bh
 gL
-kj
+jT
 jB
 jB
 jB
@@ -7487,7 +7487,7 @@ gL
 jB
 jB
 jB
-kp
+kQ
 gL
 ax
 ax
@@ -7565,12 +7565,12 @@ ax
 ax
 ax
 ax
-kk
+jR
 gL
 hk
 gn
-jA
-jA
+kp
+kp
 Uv
 gL
 gL
@@ -7584,13 +7584,13 @@ jB
 jB
 jB
 jB
-aN
+kI
 gL
 jM
-kI
+kF
 jB
 gL
-jR
+jS
 ax
 ax
 ax
@@ -7668,7 +7668,7 @@ ax
 ax
 ax
 ax
-kk
+jR
 gL
 gL
 gL
@@ -7683,15 +7683,15 @@ kE
 kP
 gL
 Lx
-ko
+ay
 gL
-kw
+kx
 gL
 gL
 jM
 jM
 gL
-jR
+jS
 ax
 ax
 ax
@@ -7771,11 +7771,11 @@ ax
 ax
 ax
 ax
-kk
-gL
-gL
-gL
 jR
+gL
+gL
+gL
+jS
 gL
 kl
 ku
@@ -7792,7 +7792,7 @@ Uv
 gL
 gL
 gL
-jR
+jS
 ax
 ax
 ax
@@ -7874,9 +7874,9 @@ ax
 ax
 ax
 ax
-kk
-gL
 jR
+gL
+jS
 ax
 gL
 xT
@@ -7892,9 +7892,9 @@ Uv
 kl
 Uv
 Uv
-kh
+kM
 gL
-kx
+jF
 ax
 ax
 ax
@@ -7996,7 +7996,7 @@ Uv
 Uv
 Uv
 gL
-kx
+jF
 ax
 ax
 ax
@@ -8098,7 +8098,7 @@ kl
 Uv
 Uv
 gL
-kx
+jF
 ax
 ax
 ax
@@ -8184,7 +8184,7 @@ ax
 ax
 ax
 ax
-kk
+jR
 gL
 Uv
 Uv
@@ -8200,7 +8200,7 @@ kl
 Uv
 Uv
 gL
-kx
+jF
 ax
 ax
 ax
@@ -8287,7 +8287,7 @@ ax
 ax
 ax
 ax
-kk
+jR
 gL
 Uv
 gL
@@ -8390,7 +8390,7 @@ ax
 ax
 ax
 ax
-kk
+jR
 gL
 gL
 kr
@@ -8404,7 +8404,7 @@ kl
 kv
 gL
 gL
-kO
+kH
 ax
 ax
 ax
@@ -8493,7 +8493,7 @@ ax
 ax
 ax
 ax
-kk
+jR
 gL
 gL
 gL
@@ -8508,7 +8508,7 @@ gL
 gL
 gL
 gL
-kO
+kH
 ax
 ax
 ax
@@ -8607,10 +8607,10 @@ gL
 gL
 gL
 gL
-kb
+kt
 kG
 gL
-kb
+kt
 ax
 ax
 ax
@@ -8708,9 +8708,9 @@ kG
 gL
 gL
 gL
-kb
-kn
-kn
+kt
+kB
+kB
 ax
 ax
 ax
@@ -8809,7 +8809,7 @@ ax
 ax
 kG
 gL
-kb
+kt
 ax
 ax
 ax
