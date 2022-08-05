@@ -58,18 +58,18 @@
 				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, 1) //And out it goes.
 				GLOB.teeth_lost++
 				if(H.rage >= 2)
-					if(prob(20))
+					if(prob(30))
 						playsound(src, 'sound/effects/khorne.ogg', 100, 1, 1)
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
 				if(H.intrigue >= 2)
-					if(prob(20)) //tzeentch boys are a bit softer than khorne/nurgle lads
+					if(prob(30)) //tzeentch boys are a bit softer than khorne/nurgle lads
 						H.say("THIS IS ALL ACCORDING TO HIS PLAN!")
 				if(H.lust >= 2)
 					H.happiness += 1 //Slaanesh boys enjoy the torture.
 					H.apply_damage(rand(-1, -3), BRUTE, O)
 					to_chat(H, "The Prince of Pleasure protects his sevants from pain. What would be excruciating is turned to pleasure.")
 				if(H.decay >= 2)
-					if(prob(20))
+					if(prob(30))
 						playsound(src, 'sound/effects/fornurgle.ogg', 100, 1, 1)
 						H.say("FATHER NURGLE PROTECT YOUR ACOLYTE! BLIGHT THESE CORPSE-WORSHIPPPERS!")
 
@@ -81,9 +81,10 @@
 		else
 			to_chat(user, "<span class='notice'>You are already trying to pull out a tooth!</span>")
 		return
+		
 /obj/item/halter
 	name = "adrenergic reuptake inhibitor"
-	desc = "The Inquisition's brightest chemists have devised this adrenergic reuptake inhibitor as a suitable tool to reveal followers of Slaanesh. It ceases all feeling causing them more discomfort than one could imagine."
+	desc = "The Inquisition's brightest chemists have devised this adrenergic reuptake inhibitor as a suitable tool to reveal followers of Slaanesh. It ceases all feeling causing them more discomfort than one could imagine, it also is very dangerous."
 	icon = 'icons/obj/torturetools.dmi'
 	icon_state = "halter"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -106,10 +107,10 @@
 		visible_message("[user] threatens [C] with the [src] if they do not talk!")
 	else
 		playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-		C.apply_damage(rand(5,8), TOX, BP_APPENDIX)
+		C.apply_damage(rand(10,40), TOX, BP_APPENDIX)
 		to_chat(C, "<span class='warning'>[user] momentarily connects [C] to the [src], causing complete cessation of all feeling and thought.</span>")
 		if(C.lust >= 2)
-			if(prob(20))
+			if(prob(90))
 				playsound(src, 'sound/effects/slanlaugh.ogg', 100, 1, 1)
 				C.say("GIVE IT BACK! I CAN'T FEEL IT ANYMORE! GIVE IT BACK!")
 			else
