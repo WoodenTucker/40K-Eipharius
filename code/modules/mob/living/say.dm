@@ -379,13 +379,30 @@ proc/get_radio_key_from_channel(var/channel)
 	if(!(ending in PUNCTUATION))
 		new_message = "[new_message]."
 
-	new_message = replacetext(new_message, "/", "")//None of this.
-	new_message = replacetext(new_message, "~", "")//Or this.
-	new_message = replacetext(new_message, "@", "")//I keep doing this and it annoys me.
+	new_message = replacetext(new_message, "nya", "GLORY TO SLAANESH")//heresy
+	new_message = replacetext(new_message, "nigga", "homie")//heresy
+	new_message = replacetext(new_message, "nyah", "GLORY TO TZEENTCH")//illuded heresy
+	new_message = replacetext(new_message, "nigger", "GLORY TO KHORNE")//illuded heresy
+	new_message = replacetext(new_message, "faggot", "Heretic")//illuded heresy
+	new_message = replacetext(new_message, "fag", "Gay")//illuded heresy
 	new_message = replacetext(new_message, " i ", " I ")//FUCKING USE CAPITAL LETTERS JAMES YOU FUCK!
 	new_message = replacetext(new_message, " ive ", " I've ")//I'M SO FUCKING SICK OF SEEING IVE YOU FUCKS
 	new_message = replacetext(new_message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
-	new_message = replacetext(new_message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
+	new_message = replacetext(new_message, " jesus ", " Emperor ")//STOP USING FUCKING U YOU SICK FUCKS!
+	new_message = replacetext(new_message, " christ ", " God-Emperor Of Mankind ")//STOP USING FUCKING U YOU SICK FUCKS!
+	new_message = replacetext(new_message, "Afaik", "Army First Aid Kit")//i know that this is wrong but fuck you
+	new_message = replacetext(new_message, "lol", "*laugh")//heresy
+	new_message = replacetext(new_message, "kek", "*laugh")//heresy
+	new_message = replacetext(new_message, "lmao", "*laugh")//heresy
+	new_message = replacetext(new_message, "lmfao", "*laugh")//heresy
+	new_message = replacetext(new_message, "omg", "Oh my Emperor")//heresy
+	new_message = replacetext(new_message, "tbh", "to be honest")//heresy
+	new_message = replacetext(new_message, "cbt", "cock and ball torture")//heresy
+	new_message = replacetext(new_message, "idk", "I don't know")//heresy
+	new_message = replacetext(new_message, "dont", "don't")//heresy
+	new_message = replacetext(new_message, "tfw", "That feeling when")//heresy
+	new_message = replacetext(new_message, "mfw", "My face when")//heresy
+	new_message = replacetext(new_message, "iirc", "if i remember correctly")//heresy
 
 	INVOKE_ASYNC(src, /atom/movable/proc/animate_chat, new_message, speaking, italics, speech_bubble_recipients, 40)
 

@@ -176,7 +176,7 @@ Begin Warhammer loadouts
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/suit/armor/astartes/ravenguard
+	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak

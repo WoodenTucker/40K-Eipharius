@@ -8,7 +8,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/inqhelm
 	mask = /obj/item/clothing/mask/gas/security/agent
-	glasses = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
 	id = /obj/item/card/id/inquisition/principal_agent
 	l_ear = /obj/item/device/radio/headset/inquisition
 	r_ear = null
@@ -64,16 +64,15 @@
 	shoes = /obj/item/clothing/shoes/hereticusboots
 	head = /obj/item/clothing/head/ordohereticus
 	mask = null
-	glasses = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
 	id = /obj/item/card/id/inquisition/principal_agent
 	l_ear = /obj/item/device/radio/headset/inquisition
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/talon/renegade
+	r_pocket = /obj/item/gun/projectile/talon/renegade
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/gun/projectile/bolter_pistol/inquis
+	/obj/item/gun/projectile/bolter_pistol/inquis = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones/five = 1,
