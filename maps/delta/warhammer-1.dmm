@@ -4225,6 +4225,10 @@
 /obj/random/loot/goodweapon,
 /obj/random/loot/randomarmor,
 /obj/item/clothing/under/wedding/bride_red,
+/obj/item/clothing/under/dress/plaid_red,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/clothing/under/suit_jacket,
+/obj/item/clothing/under/suit_jacket/really_black,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/tradefloor)
 "tN" = (
@@ -9521,6 +9525,11 @@
 	armor = list("melee"=40,"bullet"=35,"laser"=40,"energy"=30,"bomb"=30,"bio"=10,"rad"=30);
 	name = "Penitent Visor"
 	},
+/obj/item/clothing/under/det/grey{
+	desc = "Tattered garb.";
+	name = "penitent clothes"
+	},
+/obj/item/clothing/under/rank/penitent,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/tradefloor)
 "RA" = (

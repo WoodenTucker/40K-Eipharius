@@ -202,7 +202,7 @@
 	desc = "Literal bucket with horns glued on it, due to orkish belief it is a bit stronger than light flak helmets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
-	armor = list(melee = 30, bullet = 40, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -212,21 +212,21 @@
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
 	cold_protection = HEAD
-	armor = list(melee = 30, bullet = 30, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/three
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
-	armor = list(melee = 40, bullet = 00, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/four
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
 	cold_protection = HEAD
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 30, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 // Tau

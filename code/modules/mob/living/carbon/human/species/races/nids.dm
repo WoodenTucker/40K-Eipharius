@@ -15,7 +15,6 @@
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
 	sexybits_location = BP_GROIN
-	var/regen = 4
 	var/pain_power = 80
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
@@ -38,7 +37,9 @@
 	darksight = 20
 
 	brute_mod = 0.85 // Hardened carapace.
-	burn_mod = 0.9    // Weak to fire.
+	base_auras = list(
+		/obj/aura/regenerating/human/nid
+		)
 
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
@@ -173,12 +174,11 @@
 	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
 	T.equip_to_slot_or_del(new /obj/item/device/radio/headset/hivemind, slot_r_ear)
 	src.dnastore++
-	adjustOxyLoss(-1)
-	adjustBruteLoss(-1)
-	adjustToxLoss(-1)
-	adjustBrainLoss(-1)
-	src.inject_blood(src, 50)
-
+	T.adjustOxyLoss(-1)
+	T.adjustBruteLoss(-1)
+	T.adjustToxLoss(-1)
+	T.adjustBrainLoss(-1)
+	T.inject_blood(src, 50)
 	return 1
 
 /mob/living/carbon/human/genestealer/proc/ripperswarm() // ok

@@ -68,14 +68,14 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 /obj/aura/regenerating/human/astartes
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	var/innate_heal = TRUE // Whether the aura is on, basically.
-	brute_mult = 1
-	fire_mult = 1
+	brute_mult = 5
+	fire_mult = 5
 
 /obj/aura/regenerating/human/nid
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	var/innate_heal = TRUE // Whether the aura is on, basically.
-	brute_mult = 1.5
-	fire_mult = 1.5
+	brute_mult = 10
+	fire_mult = 10
 
 
 /obj/aura/regenerating/human/astartes/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
