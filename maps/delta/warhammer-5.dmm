@@ -1135,7 +1135,7 @@
 /obj/item/clothing/glasses/thermal/syndi,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/cadiangoggles/sniper,
+/obj/item/clothing/glasses/cadian,
 /obj/item/clothing/glasses/night,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)

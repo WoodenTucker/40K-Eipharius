@@ -255,6 +255,7 @@ obj/item/clothing/suit/armor
 	item_state = "ork_m_armor"
 	armor = list(melee = 15, bullet = 10, laser = 10, energy = 20, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
+	allowed = list(/obj/item/gun/projectile/ork/automatic/shoota, /obj/item/material/sword/choppa)
 	blood_overlay_type = "armor"
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
