@@ -397,7 +397,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("We shall gladly sacrifice our lives for Tzeentch's desires")
+		src.say("We shall gladly sacrifice our lives for Tzeentch's designs")
 		playsound(src, 'sound/effects/cults/tzeentch/weshallsacrifice.ogg', 80, 0, 3)
 		src.quote_cd = 1
 		sleep(50)

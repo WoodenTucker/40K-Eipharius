@@ -38,7 +38,6 @@
 		H.warfare_faction = IMPERIUM
 		if(prob(20))
 			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
@@ -236,7 +235,6 @@
 		H.f_style = "shaved"
 		if(prob(4))
 			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
@@ -342,7 +340,6 @@
 		H.h_style = "Bob"
 		if(prob(4))
 			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
@@ -392,7 +389,6 @@
 		H.h_style = "Bob"
 		if(prob(10))
 			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
@@ -438,7 +434,6 @@
 		H.warfare_faction = IMPERIUM
 		if(prob(20))
 			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
@@ -479,7 +474,6 @@
 		H.warfare_faction = IMPERIUM
 		if(prob(10))
 			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
 			/mob/living/carbon/human/proc/nurgle,
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
