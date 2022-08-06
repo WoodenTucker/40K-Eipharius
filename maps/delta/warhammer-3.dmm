@@ -267,12 +267,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"aB" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "aC" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/cable{
@@ -3183,6 +3177,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"gF" = (
+/obj/item/gun/projectile/ork/automatic/shoota,
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "gP" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/floor_decal/newcorner/red/diagonal,
@@ -3205,9 +3204,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"gY" = (
-/obj/item/melee/classic_baton/trench_club,
+"hf" = (
+/obj/item/grenade/chem_grenade/incendiary,
 /turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
+"hg" = (
+/obj/structure/orkbanna,
+/turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
 "hi" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
@@ -3216,10 +3219,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"hk" = (
-/obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "hl" = (
 /obj/structure/railing{
 	dir = 1
@@ -3229,6 +3228,10 @@
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/chapel)
+"hm" = (
+/obj/item/grenade/frag/high_yield/homemade,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "ht" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -3301,6 +3304,10 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/carpet/red,
 /area/cadiaoutpost/gma/air)
+"if" = (
+/obj/item/grenade/frag/high_yield/homemade,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "ig" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
@@ -3383,6 +3390,10 @@
 /obj/structure/railing,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/medicae)
+"jb" = (
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "jc" = (
 /obj/structure/railing{
 	dir = 1
@@ -3439,6 +3450,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
+"jw" = (
+/obj/item/ammo_magazine/flamer,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "jy" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/steel_reinforced,
@@ -3480,9 +3495,8 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"ku" = (
-/obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/trench,
+"ks" = (
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/caves)
 "kx" = (
 /turf/simulated/floor/reinforced{
@@ -3502,14 +3516,14 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/air)
+"kE" = (
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "kQ" = (
 /obj/machinery/door/unpowered/inn/room2,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"kR" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/caves)
 "kV" = (
 /obj/effect/floor_decal/newcorner/plating/corner,
 /obj/effect/floor_decal/industrial/warning_red/corner,
@@ -3517,6 +3531,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"kW" = (
+/obj/effect/landmark{
+	name = "orkstart"
+	},
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "kX" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
@@ -3632,6 +3652,10 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/medicae)
+"ma" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/open,
+/area/cadiaoutpost/gma/air)
 "mg" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light,
@@ -3658,10 +3682,6 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"mq" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "mt" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/closet/secure_closet/guncabinet{
@@ -3724,12 +3744,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"mJ" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "mP" = (
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -3937,6 +3951,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"oN" = (
+/obj/item/ammo_magazine/flamer,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "oU" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -4104,10 +4122,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
-"qO" = (
-/obj/item/material/sword/choppa,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "rg" = (
 /obj/structure/railing{
 	dir = 8
@@ -4171,9 +4185,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"rN" = (
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/caves)
 "rV" = (
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -4242,16 +4253,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/service/inn)
-"sM" = (
-/obj/item/grenade/chem_grenade/incendiary,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "sR" = (
 /obj/structure/torchwall{
 	pixel_y = 16
 	},
 /turf/simulated/open,
 /area/cadiaoutpost/oa/service/inn)
+"sZ" = (
+/obj/item/pyre/self_lit,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/caves)
 "tf" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/machinery/light{
@@ -4696,11 +4707,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
-"wZ" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "xd" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/bed/chair{
@@ -4718,11 +4724,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"xt" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "xu" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4741,10 +4742,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"xz" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "xB" = (
 /turf/simulated/mineral,
 /area/cadiaoutpost/oa/caves)
@@ -4878,10 +4875,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"yX" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "zn" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/newcorner/plating{
@@ -4895,11 +4888,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"zo" = (
-/obj/item/gun/projectile/ork/slugga,
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "zp" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	desc = "A reinforced monstrous door with an ornate archway. It is made with gothic stone, copper mechanations, and human bones. It proudly displays the Imperium's iconography on its front and is lathered in holy Mechanicus oils, it also smells of pure Ecclesiarchal incense.";
@@ -4931,6 +4919,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/service/inn)
+"zQ" = (
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "zU" = (
 /obj/machinery/door/airlock/glass_engineering{
 	color = null;
@@ -5009,6 +5001,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
+"AA" = (
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "AE" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain,
@@ -5059,8 +5055,8 @@
 /obj/random/technology_scanner,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Bq" = (
-/obj/item/pickaxe,
+"Bm" = (
+/obj/item/melee/classic_baton/trench_club,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "Bs" = (
@@ -5105,6 +5101,10 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
+"BT" = (
+/obj/item/pickaxe,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "BX" = (
 /obj/machinery/light/small{
 	dir = 8;
@@ -5115,6 +5115,10 @@
 "BY" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/service/inn)
+"Cd" = (
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Ce" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -5197,10 +5201,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
-"CC" = (
-/obj/item/gun/projectile/automatic/flamer,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "CF" = (
 /obj/structure/railing{
 	dir = 1;
@@ -5270,10 +5270,6 @@
 	},
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"Dk" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/caves)
 "Dz" = (
 /obj/effect/floor_decal/carpet/purple{
 	dir = 8
@@ -5470,6 +5466,11 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"FU" = (
+/obj/item/gun/projectile/ork/slugga,
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Ga" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/secure_closet/engineering_chief{
@@ -5612,10 +5613,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Hi" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "Hl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -5627,10 +5624,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Hm" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "Hp" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -5724,6 +5717,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"It" = (
+/obj/item/pyre/self_lit,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "Iw" = (
 /turf/simulated/floor/exoplanet/concrete,
 /area/cadiaoutpost/gma/air)
@@ -5789,10 +5786,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae/storage)
-"IZ" = (
-/obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/open,
-/area/cadiaoutpost/gma/air)
 "Jk" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -5977,10 +5970,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"KU" = (
-/obj/item/material/sword/choppa,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "KV" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -6082,6 +6071,10 @@
 /obj/effect/floor_decal/newcorner/purple/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
+"Ma" = (
+/obj/item/gun/projectile/automatic/flamer,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Mj" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/fancy/wood{
@@ -6093,10 +6086,6 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"Mo" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "Mp" = (
 /obj/structure/railing{
 	dir = 4
@@ -6189,6 +6178,10 @@
 /obj/effect/floor_decal/carpet/blue,
 /turf/simulated/floor/carpet/blue,
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
+"Nx" = (
+/obj/structure/orkbanna,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "NG" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red/corner,
@@ -6253,6 +6246,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"Oh" = (
+/obj/item/pyre/self_lit,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Oi" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/cable{
@@ -6363,6 +6360,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"PE" = (
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "PG" = (
 /obj/effect/floor_decal/carpet/purple{
 	dir = 8
@@ -6430,6 +6431,13 @@
 /obj/machinery/constructable_frame/machine_frame,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
+"Qe" = (
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
+"Qt" = (
+/obj/item/grenade/frag/high_yield/homemade,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/caves)
 "QF" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/newcorner/plating,
@@ -6456,10 +6464,6 @@
 /obj/item/flame/candle,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"QX" = (
-/obj/item/material/sword/choppa,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/caves)
 "Rb" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/newcorner/plating{
@@ -6592,6 +6596,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering/engineeringbreak)
+"Sf" = (
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/caves)
 "Sn" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -6668,10 +6676,6 @@
 	icon_state = "tiled"
 	},
 /area/cadiaoutpost/oa/medicae)
-"Tr" = (
-/obj/item/grenade/chem_grenade/incendiary,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "Tz" = (
 /obj/effect/floor_decal/newcorner/red/diagonal,
 /obj/effect/floor_decal/industrial/warning_red{
@@ -6689,10 +6693,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"TH" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "TK" = (
 /obj/machinery/door/airlock/glass_command/seneschal{
 	color = null;
@@ -6730,10 +6730,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/seneschal)
-"TY" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "Uc" = (
 /obj/machinery/firealarm{
 	pixel_x = 30
@@ -6991,9 +6987,6 @@
 /obj/item/weldpack,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
-"Wt" = (
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "Wv" = (
 /obj/structure/railing{
 	dir = 8
@@ -7032,6 +7025,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/magoserrant)
+"WH" = (
+/obj/effect/landmark{
+	name = "orkstart"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "WK" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/statue/verina{
@@ -7045,6 +7044,11 @@
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"WN" = (
+/obj/item/gun/projectile/ork/slugga,
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "WR" = (
 /obj/effect/floor_decal/newcorner/whitegreen/diagonal,
 /obj/effect/floor_decal/industrial/warning{
@@ -7104,6 +7108,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/air)
+"Xv" = (
+/obj/item/gun/projectile/ork/automatic/shoota,
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "XG" = (
 /turf/space,
 /area/cadiaoutpost/oa/bridge/offices/sisterhospitaller)
@@ -7144,6 +7153,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
+"Ym" = (
+/obj/item/grenade/chem_grenade/incendiary,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "Yv" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -7274,11 +7287,6 @@
 /obj/effect/floor_decal/industrial/warning,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research/robotics)
-"Zz" = (
-/obj/item/gun/projectile/ork/slugga,
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "ZD" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/medicae)
@@ -9767,7 +9775,7 @@ Tf
 Tf
 Tf
 Tf
-Tf
+du
 Tf
 Tf
 Tf
@@ -10023,9 +10031,9 @@ Tf
 Tf
 Tf
 Tf
-Tf
-Tf
-Tf
+du
+du
+du
 Tf
 pg
 pg
@@ -10279,9 +10287,9 @@ Tf
 Tf
 Tf
 Tf
-Tf
-Tf
-Tf
+du
+du
+du
 pg
 pg
 pg
@@ -10535,14 +10543,14 @@ Tf
 Tf
 Tf
 Tf
-Tf
-Tf
-Tf
+du
+pg
+pg
+Nx
 pg
 pg
 pg
-pg
-Tf
+du
 Tf
 Tf
 pg
@@ -10792,14 +10800,14 @@ Tf
 Tf
 Tf
 Tf
-Tf
+du
 pg
 pg
 pg
 pg
 pg
-Tf
-Tf
+du
+du
 Tf
 Tf
 Tf
@@ -11049,14 +11057,14 @@ Tf
 Tf
 Tf
 Tf
+du
 pg
 pg
+NJ
 pg
-Tf
-Tf
-Tf
-Tf
-Tf
+pg
+du
+du
 Tf
 Tf
 Tf
@@ -11308,11 +11316,11 @@ pg
 pg
 pg
 pg
-Tf
-Tf
-Tf
-Tf
-Tf
+pg
+pg
+pg
+pg
+du
 Tf
 Tf
 Tf
@@ -11563,13 +11571,13 @@ pg
 pg
 pg
 pg
+du
+du
 pg
-Tf
-Tf
-Tf
-Tf
-Tf
-Tf
+pg
+pg
+du
+du
 Tf
 Tf
 Tf
@@ -11652,12 +11660,12 @@ Tf
 du
 du
 du
-rN
+ks
 du
 Tf
 du
-rN
-rN
+ks
+ks
 du
 Tf
 Tf
@@ -11816,16 +11824,16 @@ Tf
 Tf
 pg
 pg
-NJ
 pg
 pg
 pg
+pg
 Tf
-Tf
-Tf
-Tf
-Tf
-Tf
+du
+pg
+du
+pg
+du
 Tf
 Tf
 Tf
@@ -11907,13 +11915,13 @@ du
 du
 du
 du
-rN
-rN
-rN
+ks
+ks
+ks
 du
 du
 du
-rN
+ks
 pg
 du
 Tf
@@ -12078,10 +12086,10 @@ pg
 pg
 Tf
 Tf
-Tf
-Tf
-Tf
-Tf
+du
+du
+du
+du
 Tf
 Tf
 Tf
@@ -12163,15 +12171,15 @@ pg
 du
 du
 du
-rN
+ks
 pg
 pg
-rN
-rN
-rN
-rN
+ks
+ks
+ks
+ks
 pg
-rN
+ks
 pg
 du
 Tf
@@ -12416,19 +12424,19 @@ Tf
 du
 pg
 pg
-Bq
+BT
 pg
 du
 du
-rN
-zo
+ks
+FU
 pg
 pg
 pg
 pg
 pg
-rN
-rN
+ks
+ks
 pg
 du
 Tf
@@ -12671,22 +12679,22 @@ Tf
 Tf
 Tf
 du
-Bq
-Hi
+BT
+jb
 pg
 pg
 pg
-Wt
-Wt
-Wt
-rN
-Dk
-rN
+Qe
+Qe
+Qe
+ks
+sZ
+ks
 pg
 pg
-rN
-rN
-rN
+ks
+ks
+ks
 du
 Tf
 Tf
@@ -12931,18 +12939,18 @@ du
 pg
 pg
 pg
-TH
+if
 pg
-Wt
-KU
-Wt
-QX
-rN
-kR
+Qe
+zQ
+Qe
+Sf
+ks
+Qt
 pg
-zo
+FU
 pg
-rN
+ks
 du
 du
 Tf
@@ -13189,13 +13197,13 @@ du
 du
 pg
 pg
-wZ
-Wt
-Wt
-aB
-Wt
-Wt
-xz
+gF
+Qe
+Qe
+kW
+Qe
+Qe
+Cd
 pg
 du
 du
@@ -13445,14 +13453,14 @@ du
 du
 pg
 pg
-rN
+ks
 pg
-Wt
-Wt
-Wt
-xt
-Wt
-gY
+Qe
+Qe
+Qe
+Xv
+Qe
+Bm
 pg
 du
 Tf
@@ -13701,14 +13709,14 @@ Tf
 du
 pg
 NJ
-rN
+ks
 pg
-sM
-Mo
-Wt
-Wt
-Wt
-Wt
+hf
+kE
+Qe
+Qe
+Qe
+Qe
 pg
 du
 Tf
@@ -13958,12 +13966,12 @@ du
 du
 pg
 pg
-rN
+ks
 pg
 pg
 pg
-Wt
-rN
+Qe
+ks
 pg
 du
 du
@@ -14209,17 +14217,17 @@ du
 du
 du
 du
-Wt
+Qe
 pg
 pg
-zo
-rN
-rN
+FU
+ks
+ks
 pg
-zo
+FU
 pg
 Tf
-qO
+AA
 pg
 du
 du
@@ -14466,18 +14474,18 @@ du
 du
 pg
 pg
-xt
-Wt
-Wt
-Wt
+Xv
+Qe
+Qe
+Qe
 pg
 pg
-xz
+Cd
 Tf
-mJ
+WH
 Tf
-rN
-hk
+ks
+jw
 du
 Tf
 Tf
@@ -14723,18 +14731,18 @@ Tf
 du
 du
 pg
-Wt
-Wt
-Wt
-Mo
-Wt
-qO
+Qe
+Qe
+Qe
+kE
+Qe
+AA
 Tf
 pg
-mq
+Oh
 pg
 pg
-CC
+Ma
 du
 Tf
 Tf
@@ -14980,18 +14988,18 @@ Tf
 du
 pg
 pg
-Wt
-yX
-Wt
-Wt
-Wt
+Qe
+hm
+Qe
+Qe
+Qe
 pg
+hg
 Tf
-Tf
-xz
+Cd
 pg
-hk
-rN
+jw
+ks
 du
 du
 du
@@ -15237,12 +15245,12 @@ Tf
 du
 pg
 pg
-ku
-Wt
-Wt
-xt
-Wt
-Wt
+oN
+Qe
+Qe
+Xv
+Qe
+Qe
 pg
 Tf
 Tf
@@ -15493,19 +15501,19 @@ du
 Tf
 du
 pg
-CC
-Wt
-Wt
-KU
-Wt
-Hm
-Wt
-Wt
+Ma
+Qe
+Qe
+zQ
+Qe
+It
+Qe
+Qe
 pg
 Tf
-zo
+FU
 pg
-rN
+ks
 pg
 du
 du
@@ -15750,19 +15758,19 @@ du
 Tf
 du
 du
-hk
-Wt
-Wt
-Wt
-Wt
-Wt
-Wt
-TY
-Wt
+jw
+Qe
+Qe
+Qe
+Qe
+Qe
+Qe
+PE
+Qe
 pg
 pg
 pg
-rN
+ks
 pg
 du
 Tf
@@ -16008,18 +16016,18 @@ Tf
 Tf
 du
 pg
-Wt
-Wt
-Zz
-Wt
-Wt
-Wt
-Wt
-Wt
+Qe
+Qe
+WN
+Qe
+Qe
+Qe
+Qe
+Qe
 pg
 pg
-rN
-rN
+ks
+ks
 du
 Tf
 Tf
@@ -16265,16 +16273,16 @@ Tf
 Tf
 du
 pg
-TY
-Wt
-Wt
-aB
-Wt
-Wt
-xt
-rN
-rN
-rN
+PE
+Qe
+Qe
+kW
+Qe
+Qe
+Xv
+ks
+ks
+ks
 du
 du
 Tf
@@ -16522,13 +16530,13 @@ Tf
 Tf
 du
 pg
-Tr
-Wt
-Wt
-Wt
-Wt
-Wt
-Wt
+Ym
+Qe
+Qe
+Qe
+Qe
+Qe
+Qe
 pg
 du
 du
@@ -16779,13 +16787,13 @@ Tf
 Tf
 du
 pg
-Wt
-Wt
-KU
-Wt
-Wt
-Wt
-Wt
+Qe
+Qe
+zQ
+Qe
+Qe
+Qe
+Qe
 du
 du
 Tf
@@ -17036,12 +17044,12 @@ Tf
 Tf
 du
 pg
-wZ
-Wt
-Mo
-Wt
-KU
-Wt
+gF
+Qe
+kE
+Qe
+zQ
+Qe
 pg
 du
 Tf
@@ -17296,7 +17304,7 @@ pg
 pg
 pg
 pg
-Wt
+Qe
 pg
 pg
 du
@@ -30932,7 +30940,7 @@ MQ
 MQ
 MQ
 MQ
-IZ
+ma
 MQ
 du
 Tf

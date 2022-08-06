@@ -7,6 +7,10 @@
 /area/cadiaoutpost/oa/krootship)
 "ab" = (
 /obj/structure/bed/chair,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "ac" = (
@@ -22,25 +26,24 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "af" = (
-/obj/item/storage/backpack/satchel/warfare/kroot,
-/obj/item/storage/backpack/satchel/warfare/kroot,
-/obj/item/storage/backpack/satchel/warfare/kroot,
-/obj/item/storage/backpack/satchel/warfare/kroot,
-/obj/structure/table/rack/shelf,
-/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall/corner/dark/nw{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/krootship)
 "ag" = (
-/obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,
+/obj/item/reagent_containers/food/snacks/meatkabob,
+/obj/item/reagent_containers/food/snacks/meatkabob,
+/obj/item/reagent_containers/food/snacks/meatkabob,
+/obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "ah" = (
-/obj/structure/railing{
-	dir = 4
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
 	},
-/obj/structure/railing,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "ai" = (
 /obj/effect/decal/cleanable/liquid_fuel,
@@ -84,8 +87,13 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "am" = (
-/turf/simulated/shuttle/wall/corner/dark/sw{
-	color = "grey"
+/obj/machinery/door/airlock/arbiter{
+	req_access = list();
+	name = "Kroot Warsphere"
+	},
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/krootship)
 "an" = (
@@ -107,12 +115,10 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "aq" = (
-/turf/simulated/shuttle/wall{
-	icon_state = "wall3";
-	dir = 6;
+/turf/simulated/shuttle/wall/corner/dark/nw{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/krootship)
+/area/space)
 "ar" = (
 /obj/structure/kitchenspike,
 /obj/item/reagent_containers/food/snacks/meat,
@@ -120,13 +126,18 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "as" = (
-/turf/simulated/shuttle/wall/corner/dark/se{
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	dir = 6;
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/krootship)
 "at" = (
-/obj/machinery/cooker/oven,
-/turf/simulated/floor/plating,
+/obj/machinery/door/airlock/arbiter{
+	req_access = list();
+	name = "Kroot Bridge"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "au" = (
 /obj/structure/closet/crate{
@@ -208,6 +219,11 @@
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle,
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle,
 /obj/structure/table/rack/shelf,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aK" = (
@@ -223,32 +239,49 @@
 	},
 /turf/simulated/floor/wood,
 /area/centcom)
+"aP" = (
+/obj/machinery/cooker/oven,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/krootship)
+"aR" = (
+/obj/structure/table/steel,
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "aT" = (
 /turf/simulated/shuttle/wall/corner/dark/ne{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/krootship)
 "aU" = (
-/obj/structure/table/steel,
-/obj/item/device/radio/beacon,
-/turf/simulated/floor/tiled/dark,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aV" = (
-/turf/simulated/shuttle/wall/corner/dark/nw{
-	color = "grey"
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
 	},
-/area/space)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "aW" = (
-/obj/machinery/smartfridge/drying_rack,
-/turf/simulated/floor/plating,
+/obj/machinery/light/small,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aX" = (
 /obj/structure/railing,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aY" = (
-/obj/structure/statue/tanningrack,
-/obj/item/shovel,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aZ" = (
@@ -295,11 +328,12 @@
 /turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "bi" = (
-/obj/item/reagent_containers/food/snacks/meatkabob,
-/obj/item/reagent_containers/food/snacks/meatkabob,
-/obj/item/reagent_containers/food/snacks/meatkabob,
-/obj/structure/closet/secure_closet/freezer/fridge,
-/turf/simulated/floor/plating,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "bj" = (
 /obj/machinery/computer/teleporter,
@@ -325,11 +359,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "bu" = (
-/obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Bridge"
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/light/small,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "bv" = (
 /obj/structure/table/marble{
@@ -355,9 +386,8 @@
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "bx" = (
-/turf/simulated/shuttle/wall/corner/dark/nw{
-	color = "grey"
-	},
+/obj/machinery/smartfridge/drying_rack,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "bz" = (
 /obj/machinery/door/airlock/arbiter{
@@ -781,11 +811,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cG" = (
-/obj/structure/railing,
-/obj/structure/railing{
-	dir = 8
+/obj/machinery/light/small{
+	dir = 1;
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "cH" = (
 /obj/structure/closet/cabinet,
@@ -1277,6 +1307,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"ez" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "eE" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -2314,8 +2351,10 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kB" = (
-/turf/space,
-/area/cadiaoutpost/oa/tauship)
+/turf/simulated/shuttle/wall/corner/dark/sw{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/krootship)
 "kC" = (
 /obj/machinery/door/airlock/centcom,
 /turf/simulated/floor/wood,
@@ -2542,16 +2581,6 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"mm" = (
-/obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Warsphere"
-	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
-	},
-/area/cadiaoutpost/oa/krootship)
 "mD" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
@@ -2630,6 +2659,13 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
+"nB" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "nH" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/reagent_dispensers/watertank,
@@ -2970,6 +3006,11 @@
 /obj/item/storage/box/cups,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"tq" = (
+/obj/structure/statue/tanningrack,
+/obj/item/shovel,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/krootship)
 "ts" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/sink{
@@ -3874,6 +3915,12 @@
 	color = "grey"
 	},
 /area/centcom)
+"Fn" = (
+/obj/structure/table/rack/shelf,
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/krootship)
 "Fy" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -5104,11 +5151,23 @@
 	color = "grey"
 	},
 /area/centcom)
+"XQ" = (
+/turf/simulated/shuttle/wall/corner/dark/se{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/krootship)
 "XU" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/cooker/oven,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"XV" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "XZ" = (
 /turf/unsimulated/wall/fakeglass{
 	color = "grey";
@@ -5471,7 +5530,7 @@ ax
 ax
 ax
 ax
-aV
+aq
 aa
 aa
 aa
@@ -5480,7 +5539,7 @@ aI
 aa
 aa
 aa
-am
+kB
 ax
 ax
 ax
@@ -5572,18 +5631,18 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
 ad
-aj
+bu
 aa
 aK
 aK
 aa
-aj
+cG
 ad
 aa
-am
+kB
 ax
 ax
 ax
@@ -5978,7 +6037,7 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
 aa
 aa
@@ -5986,13 +6045,13 @@ aa
 aa
 aa
 aK
-aK
+aW
 aa
 aa
 aa
 aa
 aa
-am
+kB
 ax
 ax
 ax
@@ -6181,7 +6240,7 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
 aa
 aa
@@ -6197,7 +6256,7 @@ aa
 aa
 aa
 aa
-am
+kB
 ax
 ax
 ax
@@ -6282,25 +6341,25 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
 ak
-af
-ag
+aU
+Fn
 al
 aJ
 ai
-mm
+am
 aK
 aK
 aa
-aj
+cG
 an
 ac
 aj
 ad
 aa
-am
+kB
 ax
 ax
 ax
@@ -6488,7 +6547,7 @@ ax
 ax
 aa
 az
-aj
+ah
 aj
 aj
 aD
@@ -6501,7 +6560,7 @@ aa
 ad
 aj
 aj
-aj
+ah
 an
 ac
 aa
@@ -6597,7 +6656,7 @@ aa
 aa
 aa
 aa
-aK
+aV
 aK
 aa
 aa
@@ -6700,12 +6759,12 @@ aa
 aa
 aa
 aa
-bu
+at
 aa
 aa
 aa
 aa
-as
+XQ
 ax
 ax
 ax
@@ -6900,9 +6959,9 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
-aK
+XV
 aK
 aK
 aX
@@ -7001,17 +7060,17 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
 aK
 aK
 aK
 aK
-ah
+ez
 aK
 bj
 aa
-am
+kB
 ax
 ax
 ax
@@ -7313,11 +7372,11 @@ aK
 aK
 aK
 aK
-cG
+nB
 aK
-aU
+aR
 aa
-as
+XQ
 ax
 ax
 ax
@@ -7412,11 +7471,11 @@ ax
 ax
 aT
 aa
-aK
+aV
 aK
 aK
 aX
-aK
+aV
 bB
 aI
 ax
@@ -7613,17 +7672,17 @@ ax
 ax
 ax
 ax
-bx
+af
 aa
 aa
 aa
 aa
-bu
+at
 aa
 aa
 aa
 aa
-am
+kB
 ax
 ax
 ax
@@ -7719,7 +7778,7 @@ aa
 aa
 aa
 aa
-aK
+bi
 aK
 aa
 aa
@@ -7814,8 +7873,8 @@ ax
 ax
 aa
 aa
-aW
-aj
+bx
+aY
 ar
 aj
 ar
@@ -7827,7 +7886,7 @@ aa
 ad
 aj
 aj
-aj
+aY
 an
 ac
 aa
@@ -7916,7 +7975,7 @@ ax
 ax
 aa
 aa
-bi
+ag
 aj
 aj
 aj
@@ -8018,23 +8077,23 @@ ax
 ax
 aT
 aa
-at
+aP
 aj
 aj
-aY
+tq
 aj
-aj
+bu
 aa
 aK
 aK
 aa
-aj
+cG
 an
 ac
 aj
 ad
 aa
-aq
+as
 ax
 ax
 ax
@@ -8135,7 +8194,7 @@ aa
 aa
 aa
 aa
-aq
+as
 ax
 ax
 ax
@@ -8332,13 +8391,13 @@ aa
 aa
 aa
 aK
-aK
+aW
 aa
 aa
 aa
 aa
 aa
-aq
+as
 ax
 ax
 ax
@@ -8635,12 +8694,12 @@ ax
 aa
 ac
 an
-aj
+bu
 aa
 aK
 aK
 aa
-aj
+cG
 an
 ac
 aa
@@ -8745,7 +8804,7 @@ bz
 aj
 ad
 aa
-as
+XQ
 ax
 ax
 ax
@@ -8825,8 +8884,8 @@ gL
 gL
 gL
 kt
-kB
-kB
+ax
+ax
 ax
 ax
 ax
@@ -8846,7 +8905,7 @@ aI
 aa
 aa
 aa
-as
+XQ
 ax
 ax
 ax
