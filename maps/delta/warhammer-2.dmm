@@ -33,7 +33,7 @@
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/service/inn)
 "ai" = (
-/obj/item/pickaxe,
+/obj/item/grenade/frag/high_yield/krak,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "aj" = (
@@ -1186,7 +1186,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "dg" = (
-/obj/item/material/sword/choppa,
+/obj/structure/stairs/east,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "dh" = (
@@ -2754,10 +2754,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
-"ht" = (
-/obj/item/grenade/frag/high_yield/krak,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "hv" = (
 /obj/machinery/light{
 	dir = 8;
@@ -2810,7 +2806,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "hD" = (
-/obj/item/grenade/frag/high_yield/homemade,
+/obj/item/pyre/self_lit,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "hE" = (
@@ -5381,10 +5377,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"og" = (
-/obj/item/material/sword/choppa,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "oi" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
@@ -6302,6 +6294,10 @@
 /obj/effect/floor_decal/turf/metal/three,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
+"sx" = (
+/obj/item/grenade/frag/high_yield/homemade,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "sA" = (
 /obj/structure/new_ore_box,
 /obj/random/loot/randomammo,
@@ -6423,7 +6419,8 @@
 	},
 /area/cadiaoutpost/oa/security)
 "tq" = (
-/turf/simulated/floor/trench,
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "tt" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
@@ -6718,6 +6715,11 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
+"vD" = (
+/obj/item/gun/projectile/ork/slugga,
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "vE" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
@@ -6779,10 +6781,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/western)
-"wg" = (
-/obj/item/melee/classic_baton/trench_club,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "wj" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
@@ -7981,6 +7979,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/village)
+"Fh" = (
+/obj/item/card/id/innkey2{
+	access = list(280);
+	name = "Den key 1"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "Fi" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/decal/dead/four{
@@ -8042,10 +8047,14 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/villageinside)
+"FO" = (
+/obj/item/melee/classic_baton/trench_club,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "FP" = (
-/obj/item/gun/projectile/ork/slugga,
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/trench,
+/obj/item/gun/projectile/ork/automatic/shoota,
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "FR" = (
 /turf/simulated/floor/wood{
@@ -8068,9 +8077,7 @@
 	},
 /area/cadiaoutpost/oa/tradefloor)
 "Gd" = (
-/obj/item/gun/projectile/ork/slugga,
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/stone,
+/turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "Gf" = (
 /obj/item/pyre/self_lit,
@@ -8201,6 +8208,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"Hl" = (
+/obj/item/melee/classic_baton/trench_club,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "Hp" = (
 /obj/effect/floor_decal/newcorner/red/corner{
 	dir = 8
@@ -8216,10 +8227,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/village)
-"Hu" = (
-/obj/structure/orkbanna,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "Hw" = (
 /obj/structure/toilet,
 /turf/simulated/floor/dirty,
@@ -8420,6 +8427,11 @@
 /obj/structure/grille,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"Ji" = (
+/obj/item/gun/projectile/ork/slugga,
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Jr" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -8619,10 +8631,6 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"KZ" = (
-/obj/item/grenade/frag/high_yield/krak,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "La" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey"
@@ -8775,6 +8783,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"LV" = (
+/obj/item/gun/projectile/automatic/flamer/handflamer,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
 "LW" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 9
@@ -9097,10 +9109,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"OA" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/caves)
 "OD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9118,8 +9126,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "OO" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/trench,
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "OW" = (
 /obj/machinery/light{
@@ -9185,7 +9193,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "PD" = (
-/obj/item/ammo_magazine/ork/slugga,
+/obj/structure/orkbanna,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "PH" = (
@@ -9308,6 +9316,10 @@
 /obj/structure/stairs/west,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"Qv" = (
+/obj/item/grenade/frag/high_yield/krak,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "Qy" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -9375,6 +9387,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
+"QR" = (
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "QS" = (
 /obj/structure/table/woodentable,
 /turf/simulated/floor/dirty,
@@ -9391,10 +9407,6 @@
 /area/cadiaoutpost/oa/caves)
 "Rh" = (
 /obj/random/medical/lite,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
-"Rj" = (
-/obj/structure/stairs/east,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "Ro" = (
@@ -9715,9 +9727,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "To" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/stone,
+/obj/item/ammo_magazine/ork/slugga,
+/turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "Tq" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -9732,10 +9743,6 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
-"Tv" = (
-/obj/item/gun/projectile/automatic/flamer/handflamer,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "Ty" = (
 /obj/structure/flora/bush,
 /turf/simulated/floor/snow,
@@ -9774,8 +9781,7 @@
 	},
 /area/cadiaoutpost/oa/service/bar)
 "TS" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/stone,
+/turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/caves)
 "TT" = (
 /obj/effect/floor_decal/turf/splate,
@@ -9792,6 +9798,10 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"Uh" = (
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/trench,
+/area/cadiaoutpost/oa/caves)
 "Uj" = (
 /obj/effect/decal/remains,
 /turf/simulated/floor/stone,
@@ -9831,13 +9841,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
-"UC" = (
-/obj/item/card/id/innkey2{
-	access = list(280);
-	name = "Den key 1"
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/village)
 "UM" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -9981,6 +9984,11 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
+"Wc" = (
+/obj/item/gun/projectile/ork/slugga,
+/obj/item/ammo_magazine/ork/shoota,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Wg" = (
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled{
@@ -9997,10 +10005,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"Wl" = (
-/obj/item/melee/classic_baton/trench_club,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "Wp" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -10319,8 +10323,7 @@
 	},
 /area/cadiaoutpost/oa/security)
 "XR" = (
-/obj/item/gun/projectile/ork/slugga,
-/obj/item/ammo_magazine/ork/shoota,
+/obj/item/pickaxe,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "XW" = (
@@ -10452,7 +10455,7 @@
 /area/cadiaoutpost/oa/theforest)
 "YV" = (
 /obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/stone,
+/turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "YW" = (
 /obj/structure/table/rack/shelf{
@@ -11571,7 +11574,7 @@ ae
 ae
 ae
 ae
-ai
+XR
 ae
 ae
 ae
@@ -13146,10 +13149,10 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
+TS
+TS
+TS
+TS
 xE
 xE
 xE
@@ -13398,16 +13401,16 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
-xE
+TS
+TS
+TS
+TS
+TS
 rO
 rO
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -13636,7 +13639,7 @@ ro
 ro
 ro
 ro
-Tv
+LV
 ro
 ro
 ro
@@ -13653,9 +13656,9 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
+TS
+TS
+TS
 rO
 rO
 rO
@@ -13665,7 +13668,7 @@ ae
 ae
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -13905,11 +13908,11 @@ xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
-xE
+TS
+TS
+TS
+TS
+TS
 rO
 rO
 rO
@@ -13919,11 +13922,11 @@ ae
 ae
 ae
 ae
-ae
+Ji
 ae
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -14162,25 +14165,25 @@ xE
 xE
 xE
 xE
-xE
+TS
 rO
 rO
 rO
 rO
 rO
 ae
+Gd
 ae
 ae
 ae
-ae
-ae
+qr
 ae
 ae
 ae
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -14350,7 +14353,7 @@ rO
 ae
 ae
 ae
-ai
+XR
 ae
 ae
 ae
@@ -14360,7 +14363,7 @@ ae
 ae
 ae
 ae
-Rj
+dg
 ae
 ae
 ae
@@ -14418,16 +14421,16 @@ xE
 xE
 xE
 xE
-xE
+TS
 rO
 ae
 ae
 ae
 ae
 ae
-ae
-ae
-ae
+Gd
+Gd
+Gd
 ae
 ae
 ae
@@ -14438,20 +14441,20 @@ ae
 ae
 rO
 rO
+TS
 xE
 xE
 xE
 xE
 xE
-xE
-xE
-xE
-xE
-xE
-xE
-xE
-xE
-xE
+TS
+TS
+TS
+TS
+TS
+TS
+TS
+TS
 xE
 xE
 xE
@@ -14674,17 +14677,17 @@ xE
 xE
 xE
 xE
-xE
+TS
 rO
 rO
 ae
 ae
 ae
-ai
+XR
 ae
-ae
-ae
-ae
+Gd
+Gd
+Gd
 ae
 ae
 ae
@@ -14695,21 +14698,21 @@ ae
 ae
 ae
 rO
+TS
+TS
+TS
 xE
 xE
-xE
-xE
-xE
-xE
-xE
+TS
+TS
 rO
 rO
 rO
-xE
+TS
 rO
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -14863,7 +14866,7 @@ xE
 rO
 ae
 ae
-ae
+qr
 ae
 vj
 ae
@@ -14874,7 +14877,7 @@ rO
 ae
 ae
 ae
-ae
+qr
 ae
 ae
 ae
@@ -14931,7 +14934,7 @@ rO
 xE
 xE
 xE
-xE
+TS
 rO
 ae
 ae
@@ -14954,20 +14957,20 @@ ae
 rO
 rO
 rO
-xE
-xE
-xE
+TS
+TS
+TS
 rO
 rO
 rO
 ae
 rO
-xE
+TS
 rO
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -15221,10 +15224,10 @@ ae
 rO
 rO
 rO
-Gd
+Ji
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -15449,7 +15452,7 @@ xE
 rO
 rO
 ae
-ai
+XR
 ae
 ae
 rO
@@ -15472,17 +15475,17 @@ rO
 rO
 rO
 ae
-To
+FP
 ae
 ae
-dg
+tq
 ae
 ae
 ae
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -15638,7 +15641,7 @@ rO
 ae
 ae
 ae
-ai
+XR
 ae
 rO
 xE
@@ -15729,17 +15732,17 @@ ae
 rO
 rO
 ae
-tq
-tq
-tq
-tq
-ae
-ae
+Gd
+Gd
+Gd
 Gd
 ae
 ae
+Ji
+ae
+ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -15980,23 +15983,23 @@ xE
 xE
 rO
 ae
-YV
+sx
 ae
-tq
+Gd
 ae
 ae
 ae
-tq
-tq
+Gd
+Gd
 zn
-tq
-tq
+Gd
+Gd
 ae
 ae
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -16236,24 +16239,24 @@ xE
 xE
 xE
 rO
-tq
-tq
-tq
-tq
+Gd
+Gd
+Gd
+Gd
 ae
 Rh
 ae
-FP
-tq
+vD
+Gd
 qr
-tq
-tq
+Gd
+Gd
 ae
 ae
-To
+FP
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -16493,24 +16496,24 @@ xE
 xE
 xE
 rO
-tq
+Gd
 ae
 ae
-ht
+ai
 ae
 ae
 ae
-tq
-tq
-tq
-hD
+Gd
+Gd
+Gd
+YV
 ae
 rO
 rO
 rO
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -16756,18 +16759,18 @@ ae
 ae
 ae
 ae
-PD
-tq
-OA
-tq
-tq
+QR
+Gd
+To
+Gd
+Gd
 ae
 rO
-xE
-xE
-xE
-xE
-xE
+TS
+TS
+TS
+TS
+TS
 xE
 xE
 xE
@@ -16999,27 +17002,27 @@ xE
 xE
 rO
 ae
-tq
-tq
-tq
-tq
-ae
-rO
+Gd
+Gd
+Gd
 Gd
 ae
-ae
-Rj
-ae
-TS
-ae
-Wl
-ae
-og
-tq
-tq
-tq
 rO
-xE
+Ji
+ae
+ae
+dg
+ae
+OO
+ae
+FO
+ae
+Uh
+Gd
+Gd
+Gd
+rO
+TS
 xE
 xE
 xE
@@ -17256,17 +17259,9 @@ xE
 xE
 xE
 rO
-tq
-tq
-tq
-ae
-Hu
-ae
-ae
-ae
-ae
-ae
-ae
+Gd
+Gd
+Gd
 ae
 PD
 ae
@@ -17274,9 +17269,17 @@ ae
 ae
 ae
 ae
+ae
+ae
+QR
+ae
+ae
+ae
+ae
+ae
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -17522,18 +17525,18 @@ ae
 ae
 ae
 ae
-PD
+QR
 ae
 ae
-YV
-dg
+sx
+tq
 ae
 ae
-Gd
+Ji
 ae
 rO
-xE
-xE
+TS
+TS
 xE
 xE
 xE
@@ -17774,22 +17777,22 @@ rO
 rO
 ae
 ae
-dg
-ae
-ae
-ae
-dg
-ae
-ae
+tq
 ae
 ae
 ae
 tq
-wg
+ae
+ae
+ae
+ae
+ae
+Gd
+Hl
+rO
+OO
 rO
 TS
-rO
-xE
 xE
 xE
 xE
@@ -18030,23 +18033,23 @@ rO
 xE
 rO
 rO
-Gd
-ae
-tq
-tq
-KZ
-ae
+Ji
 ae
 Gd
-rO
-rO
-tq
+Gd
+Qv
 ae
-Hu
+ae
+Ji
 rO
-To
 rO
-xE
+Gd
+ae
+PD
+rO
+FP
+rO
+TS
 xE
 xE
 xE
@@ -18288,22 +18291,22 @@ xE
 rO
 ae
 ae
-tq
-tq
+Gd
+Gd
 ae
-tq
-tq
+Gd
+Gd
 ae
 rO
 xE
 rO
-FP
-tq
+vD
+Gd
 ae
 rO
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -18544,13 +18547,13 @@ rO
 xE
 rO
 ae
-tq
-tq
+Gd
+Gd
 Rh
-OA
-OA
+To
+To
 ae
-tq
+Gd
 rO
 xE
 xE
@@ -18560,7 +18563,7 @@ ae
 ae
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -18801,23 +18804,23 @@ rO
 xE
 rO
 ae
-tq
+Gd
 ae
 ae
-OA
-tq
-og
-tq
+To
+Gd
+Uh
+Gd
 ae
 rO
 xE
 rO
 ae
+OO
+ae
+ae
+rO
 TS
-ae
-ae
-rO
-xE
 xE
 xE
 xE
@@ -19060,21 +19063,21 @@ rO
 rO
 ae
 ae
-tq
-tq
-tq
+Gd
+Gd
+Gd
 ae
 ae
+OO
+ae
+rO
+xE
+rO
+ae
+ae
+ae
+rO
 TS
-ae
-rO
-xE
-rO
-ae
-ae
-ae
-rO
-xE
 xE
 xE
 xE
@@ -19316,22 +19319,22 @@ xE
 xE
 rO
 ae
+Ji
 Gd
-tq
-hD
-tq
-tq
-tq
-tq
+YV
+Gd
+Gd
+Gd
+Gd
 ae
 rO
 ae
 ae
 ae
-ai
+XR
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -19575,20 +19578,20 @@ rO
 ae
 ae
 ae
-tq
-tq
-tq
 Gd
-tq
+Gd
+Gd
+Ji
+Gd
 Rh
 ae
-PD
+QR
 rO
+Gd
 ae
-ae
-ae
+Gd
 rO
-xE
+TS
 xE
 xE
 xE
@@ -19831,21 +19834,21 @@ xE
 rO
 ae
 ae
-tq
-tq
+Gd
+Gd
 ae
 ae
-tq
-tq
-ae
-rO
-rO
-rO
-ae
-ae
+Gd
+Gd
 ae
 rO
-xE
+rO
+rO
+Gd
+Gd
+Gd
+rO
+TS
 xE
 xE
 xE
@@ -20087,22 +20090,22 @@ xE
 xE
 rO
 ae
-Wl
-tq
-og
-tq
-tq
+FO
+Gd
+Uh
+Gd
+Gd
 ae
-tq
-ae
-rO
-rO
-ae
-ae
-ae
+Gd
 ae
 rO
-xE
+rO
+ae
+ae
+Gd
+Gd
+rO
+TS
 xE
 xE
 xE
@@ -20344,13 +20347,13 @@ xE
 xE
 rO
 ae
-PD
+QR
 zn
-tq
-OO
+Gd
+hD
 ae
-tq
-tq
+Gd
+Gd
 rO
 xE
 rO
@@ -20359,7 +20362,7 @@ ae
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -20604,9 +20607,9 @@ ae
 ae
 ae
 ae
+Gd
+Gd
 tq
-tq
-dg
 ae
 rO
 xE
@@ -20614,9 +20617,9 @@ rO
 ae
 rO
 ae
-ae
+qr
 rO
-xE
+TS
 xE
 xE
 xE
@@ -20858,13 +20861,13 @@ rO
 xE
 rO
 rO
-To
+FP
 ae
 ae
 ae
 ae
 ae
-XR
+Wc
 rO
 rO
 ae
@@ -20873,7 +20876,7 @@ rO
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -21130,7 +21133,7 @@ rO
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -21387,7 +21390,7 @@ ae
 ae
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -21639,11 +21642,11 @@ xE
 rO
 ae
 ae
-ai
+XR
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -21900,7 +21903,7 @@ ae
 ae
 ae
 rO
-xE
+TS
 xE
 xE
 xE
@@ -22157,7 +22160,7 @@ rO
 ae
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -22413,8 +22416,8 @@ rO
 rO
 rO
 rO
-xE
-xE
+TS
+TS
 xE
 xE
 xE
@@ -22670,7 +22673,7 @@ rO
 rO
 rO
 rO
-xE
+TS
 xE
 xE
 xE
@@ -22926,8 +22929,8 @@ rO
 rO
 rO
 rO
-xE
-xE
+TS
+TS
 xE
 xE
 xE
@@ -23183,8 +23186,8 @@ ro
 ro
 rO
 rO
-xE
-xE
+rO
+TS
 xE
 xE
 xE
@@ -29536,7 +29539,7 @@ mx
 mx
 WV
 rf
-UC
+Fh
 kb
 ro
 ro
