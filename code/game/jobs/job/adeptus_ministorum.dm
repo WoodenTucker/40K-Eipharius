@@ -36,12 +36,12 @@
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
+		if(prob(20))
+			H.verbs += list(
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Deacon. You are one of the Imperial Cult's priesthood, your oratory skills can stir entire crowds of the faithful and turn a coward into a zealot. You often work on worlds where faith is lacking, and people are rebellious. It is your job to spread the Imperial Cult to this new colony and it's ignorant masses, bringing their backwards beliefs in line with the faith of the God Emperor, as well as guiding the already faithful.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
@@ -234,12 +234,19 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
-		var/corruption = rand(1,25)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
+		if(prob(4))
+			H.verbs += list(
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
+		H.verbs += list(
+		/mob/living/carbon/human/proc/emperorgivesstrenght,
+		/mob/living/carbon/human/proc/notforsakeme,
+		/mob/living/carbon/human/proc/praise,
+		/mob/living/carbon/human/proc/sororitas,
+		/mob/living/carbon/human/proc/theemperor)
+		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
 
@@ -248,7 +255,7 @@
 /decl/hierarchy/outfit/job/sisterofbattle
 	name = OUTFIT_JOB_NAME("Sister of Battle")
 	head = /obj/item/clothing/head/helmet/sisterofbattle
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
@@ -271,7 +278,7 @@
 /decl/hierarchy/outfit/job/progena
 	name = OUTFIT_JOB_NAME("Progena")
 	uniform = /obj/item/clothing/under/rank/medical
-	l_ear  = /obj/item/device/radio/headset/red_team
+	l_ear  = /obj/item/device/radio/headset/red_team/medicae
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/storage/belt
@@ -333,12 +340,12 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
 		H.h_style = "Bob"
-		var/corruption = rand(1,25)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
+		if(prob(4))
+			H.verbs += list(
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
 
@@ -383,12 +390,12 @@
 		H.warfare_faction = IMPERIUM
 		H.f_style = "shaved"
 		H.h_style = "Bob"
-		var/corruption = rand(1,15)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
+		if(prob(10))
+			H.verbs += list(
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a senior sister of the Ordos Hospitaller, serving under The Deacon/Abbess to maintain the health and divinity of the township.</font></b></span>")
 
@@ -429,12 +436,12 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
+		if(prob(20))
+			H.verbs += list(
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
 
@@ -470,10 +477,96 @@
 		H.add_skills(rand(6,9),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
+		if(prob(10))
+			H.verbs += list(
+			/mob/living/carbon/human/proc/khorne,
+			/mob/living/carbon/human/proc/nurgle,
+			/mob/living/carbon/human/proc/slaanesh,
+			/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
+
+/mob/living/carbon/human/proc/emperorgivesstrenght()
+	set name = "Emperor gives us strenght"
+	set category = "Sororitas"
+	set desc = name
+	if(!ishuman(src))
+		return
+	if(src.stat == DEAD)
+		return
+	if(src.quote_cd == 0)
+		src.say("Emperor gives us strenght")
+		playsound(src, 'sound/effects/sob/emperorgivesstrenght.ogg', 80, 0, 5)
+		src.quote_cd = 1
+		sleep(50)
+		src.quote_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon")
+		return
+/mob/living/carbon/human/proc/notforsakeme()
+	set name = "Emperor do not forsake me"
+	set category = "Sororitas"
+	set desc = name
+	if(!ishuman(src))
+		return
+	if(src.stat == DEAD)
+		return
+	if(src.quote_cd == 0)
+		src.say("Emperor do not forsake me!")
+		playsound(src, 'sound/effects/sob/notforsakeme.ogg', 80, 0, 2)
+		src.quote_cd = 1
+		sleep(50)
+		src.quote_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon")
+		return
+/mob/living/carbon/human/proc/praise()
+	set name = "Praise the Emperor!"
+	set category = "Sororitas"
+	set desc = name
+	if(!ishuman(src))
+		return
+	if(src.stat == DEAD)
+		return
+	if(src.quote_cd == 0)
+		src.say("Praise the Emperor!")
+		playsound(src, 'sound/effects/sob/praise.ogg', 80, 0, 5)
+		src.quote_cd = 1
+		sleep(50)
+		src.quote_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon")
+		return
+/mob/living/carbon/human/proc/sororitas()
+	set name = "Prepared to serve"
+	set category = "Sororitas"
+	set desc = name
+	if(!ishuman(src))
+		return
+	if(src.stat == DEAD)
+		return
+	if(src.quote_cd == 0)
+		src.say("Adepta Sororitas prepared to serve!")
+		playsound(src, 'sound/effects/sob/sororitas.ogg', 80, 0, 4)
+		src.quote_cd = 1
+		sleep(50)
+		src.quote_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon")
+		return
+/mob/living/carbon/human/proc/theemperor()
+	set name = "Our father and guardian"
+	set category = "Sororitas"
+	set desc = name
+	if(!ishuman(src))
+		return
+	if(src.stat == DEAD)
+		return
+	if(src.quote_cd == 0)
+		src.say("The Emperor. Our father and guardian")
+		playsound(src, 'sound/effects/sob/theemperor.ogg', 80, 0, 3)
+		src.quote_cd = 1
+		sleep(50)
+		src.quote_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon")
+		return

@@ -190,7 +190,7 @@
 	desc = "Plain robes with numerous mechanical appendages sticking out and wriggling about."
 	icon_state = "magos"
 	item_state = "magos"
-	armor = list(melee = 50, bullet = 70, laser = 70, energy = 0, bomb = 60, bio = 100, rad = 100) //it is literal steel reinforced with plasteel... its not EASY to break
+	armor = list(melee = 50, bullet = 60, laser = 60, energy = 0, bomb = 60, bio = 100, rad = 100) //it is literal steel reinforced with plasteel... its not EASY to break
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -204,7 +204,7 @@
 	canremove = 0
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	armor = list(melee = 45, bullet = 55, laser = 60, energy = 0, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 45, bullet = 45, laser = 50, energy = 0, bomb = 40, bio = 100, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -397,6 +397,7 @@
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 0, bomb = 10, bio = 5, rad = 15)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
 
 /obj/item/clothing/suit/scum
 	name = "shady jacket"
