@@ -442,6 +442,14 @@ obj/item/gun/energy/retro
 		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
 
+/obj/item/gun/energy/las/laspistol/militarum/lucius/sister
+	name = "Astra Militarum Laspistol"
+	desc = "Pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Astra Militarum, this one seems to be have been modified for the gloves of Adepta Sororitas Power Armor."
+	icon_state = "laspistol"
+	item_state = "laspistol"
+	accuracy = -1
+	fire_delay = 2
+
 /obj/item/gun/energy/las/laspistol/mechanicus
 	name = "Adeptus Mechanicus Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified by Adeptus Mechanicus to concentrate the beam, resulting in more powerful shot for their self-defense purposes."
