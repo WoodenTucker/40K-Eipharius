@@ -137,6 +137,7 @@
 	force = 35
 	block_chance = 30
 	sharp = TRUE
+	edge = TRUE
 	hitsound = "slash_sound"
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
@@ -172,6 +173,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 12
 	force = 48
+	edge = TRUE
 	block_chance = 30
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -191,6 +193,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 10
 	force = 44
+	edge = TRUE
 	block_chance = 35
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -210,6 +213,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14
 	force = 49
+	edge = TRUE
 	block_chance = 55
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
