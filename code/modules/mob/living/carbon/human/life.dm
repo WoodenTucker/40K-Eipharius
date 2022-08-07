@@ -1003,7 +1003,7 @@
 
 /mob/living/carbon/human/proc/handle_shock()
 	..()
-	if(SPECIES_ASTARTES)
+	if(species.name == "Astartes") //Simple way to species check
 		shock_stage = 0
 		var/messageTimer = 0
 		heal_organ_damage(0.2, 0.2)
