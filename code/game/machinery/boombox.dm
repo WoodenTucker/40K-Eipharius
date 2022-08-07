@@ -1,8 +1,8 @@
 /obj/item/device/boombox
-	name = "Boombox"
+	name = "Audioslate Player"
 	icon = 'icons/obj/boombox.dmi'
 	icon_state = "boombox"
-	desc = "A smuggled in boombox used with smuggled in cassette tapes to listen to smuggled in tunes."
+	desc = "You should insert some tapes into this thing."
 	var/obj/item/device/cassette/casseta = null
 	var/datum/sound_token/sound_token
 	var/playing = 0
@@ -157,4 +157,18 @@
 	name = "\"The General Fabricator-Approved Chants\" magn-o-tape"
 	a_side = pick('sound/music/boombox13.ogg')
 	b_side = pick('sound/music/boombox14.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/titansbane/New()
+	..()
+	name = "Titansbane - Cadia Stands"
+	a_side = pick('sound/newmusic/TAPE-TITANSBANE1.ogg')
+	b_side = pick('sound/newmusic/TAPE-TITANSBANE2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/unknownsoldier/New()
+	..()
+	name = "Titansbane - Cadia Stands"
+	a_side = pick('sound/newmusic/TAPE-unknownsoldier.ogg')
+	b_side = pick('sound/newmusic/TAPE-unknownsoldier.ogg')
 	sound_inside = a_side

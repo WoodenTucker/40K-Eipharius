@@ -25,20 +25,20 @@
 		return
 	switch(src.rage)
 		if(0)
-			if(istype(src.l_hand, /obj/item/organ/external/head))
+			if(istype(src.l_hand, /obj/item/organ/internal/heart))
 				qdel(usr.l_hand)
-				to_chat(src, "You bring your first skull to the Skull Throne. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
+				to_chat(src, "You bring your first heart to the Throne <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/cults/khorne/khorne.ogg', 50, 0, -1)
 				src.update_inv_l_hand()
 				src.rage++
-			else if(istype(src.r_hand, /obj/item/organ/external/head))
+			else if(istype(src.r_hand, /obj/item/organ/internal/heart))
 				qdel(usr.r_hand)
-				to_chat(src, "You bring your first skull to the Skull Throne. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
+				to_chat(src, "You bring your first heart to the throne. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/cults/khorne/khorne.ogg', 50, 0, -1)
 				src.update_inv_r_hand()
 				src.rage++
 			else
-				to_chat(src, "Bring me your first skull of your enemy, mortal, and prove your worship to strength and honor of battle.")
+				to_chat(src, "Bring me your first heart of your enemy, mortal, and prove your worship to strength and honor of battle.")
 				return
 		if(1)
 			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
@@ -106,31 +106,31 @@
 				return
 		if(5)
 			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
-			if(istype(src.l_hand, /obj/item/organ/external/head))
+			if(istype(src.l_hand, /obj/item/organ/internal/heart))
 				qdel(src.l_hand)
-				to_chat(src, "<font color='#720202'>You bring one more skull to the Skull Throne.</font>")
+				to_chat(src, "<font color='#720202'>You bring one more heart to the throne.</font>")
 				playsound(src, 'sound/effects/cults/khorne/khorne.ogg', 50, 0, -1)
 				if(STAT_LEVEL(end)<20)
 					STAT_LEVEL(end) +=1
 				if(STAT_LEVEL(end)==19)
 					to_chat(src, "<font color='#720202'>That was your last endurance improvement.</font>")
 				if(STAT_LEVEL(end)>20)
-					to_chat(src, "<font color='#720202'>You cannot improve your endurance more with skulls.</font>")
+					to_chat(src, "<font color='#720202'>You cannot improve your endurance more with hearts.</font>")
 				src.update_inv_l_hand()
 				if(src.SKILL_LEVEL(melee)<7)
 					src.SKILL_LEVEL(melee)+=1
 				if(STAT_LEVEL(int)>10)
 					STAT_LEVEL(int)-=1
-			else if(istype(src.r_hand, /obj/item/organ/external/head))
+			else if(istype(src.r_hand, /obj/item/organ/internal/heart))
 				qdel(src.r_hand)
-				to_chat(src, "<font color='#720202'>You bring one more skull to the Skull Throne.</font>")
+				to_chat(src, "<font color='#720202'>You bring one more heart to the throne.</font>")
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				if(STAT_LEVEL(end)<20)
 					STAT_LEVEL(end) +=1
 				if(STAT_LEVEL(end)==19)
 					to_chat(src, "<font color='#720202'>That was your last endurance improvement.</font>")
 				if(STAT_LEVEL(end)>20)
-					to_chat(src, "<font color='#720202'>You cannot improve your endurance more with skulls.</font>")
+					to_chat(src, "<font color='#720202'>You cannot improve your endurance more with hearts.</font>")
 				src.update_inv_r_hand()
 				if(src.SKILL_LEVEL(melee)<7)
 					src.SKILL_LEVEL(melee)+=1
@@ -217,7 +217,7 @@
 						new /obj/item/gun/projectile/shotgun/pump/shitty/bayonet(src.loc)
 				to_chat(src, "<font color='#720202'>Take your weapon, warrior.</font>")
 			else
-				to_chat(src, "Bring me next skull for health or the heart for strength, mortal. Bring me tooth and knife upon my rune to gain weapon")
+				to_chat(src, "Bring me next heart for health or the heart for strength, mortal. Bring me tooth and knife upon my rune to gain weapon")
 				return
 
 /mob/living/carbon/human/proc/bludforbludguy()

@@ -1088,9 +1088,7 @@
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cq" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
+/obj/machinery/computer/bountycogitator,
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cr" = (
@@ -1737,7 +1735,9 @@
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "kV" = (
-/obj/machinery/computer/tithecogitator,
+/obj/machinery/computer/tithecogitator{
+	name = "commerce cogitator"
+	},
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "lc" = (
@@ -1890,6 +1890,7 @@
 	req_access = list(331);
 	access = list(331,330,225)
 	},
+/obj/item/card/id/ring/administrator,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},

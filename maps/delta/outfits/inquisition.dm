@@ -14,15 +14,15 @@
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/lockebolter
+	suit_store = /obj/item/gun/projectile/bolter_pistol/inquis
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
-	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/stack/thrones3/twenty = 1
 	)
 
 	pda_slot = null
@@ -31,6 +31,16 @@
 /decl/hierarchy/outfit/job/acolyte/malleus
 	name = OUTFIT_JOB_NAME("Ordo Malleus Interrogator")
 	suit = /obj/item/clothing/suit/armor/agent/coat
+	suit_store = /obj/item/gun/projectile/bolter_pistol/inquis
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	suit_store = /obj/item/gun/projectile/lockebolter,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones/five = 1,
+	/obj/item/stack/thrones2/ten = 1,
+	/obj/item/ammo_magazine/bolt_rifle_magazine = 2
+	)
 
 /decl/hierarchy/outfit/job/scion
 	name = OUTFIT_JOB_NAME("Tempestus Scion")
