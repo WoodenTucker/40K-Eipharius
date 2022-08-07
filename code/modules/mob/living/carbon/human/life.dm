@@ -1003,13 +1003,44 @@
 
 /mob/living/carbon/human/proc/handle_shock()
 	..()
+	if(SPECIES_ASTARTES)
+		shock_stage = 0
+		var/messageTimer = 0
+		heal_organ_damage(0.2, 0.2)
+		if(src.getBrainLoss() > 0)
+			adjustBrainLoss(-1.5)
+
+		if(src.getBruteLoss() > 0)
+			adjustBruteLoss(-1.5)
+
+		if(src.getToxLoss() > 0)
+			adjustToxLoss(-1.5)
+
+		if(src.getFireLoss() > 0)
+			adjustFireLoss(-1.5)
+
+		if(src.getOxyLoss() > 0)
+			adjustOxyLoss(-1.5)
+
+		if(messageTimer > 150)
+			messageTimer = 0
+			to_chat(src, "Your advanced biology pumps fresh blood through your arteries and works to repair any existing damage.")
+			restore_blood()
+			blinded = 0
+			eye_blind = 0
+			eye_blurry = 0
+			ear_deaf = 0
+			ear_damage = 0
+
+		messageTimer++
+		return
 	if(status_flags & GODMODE)	return 0	//godmode
+
+
 	if(!can_feel_pain())
 		shock_stage = 0
 		return
-	if(src.species == SPECIES_ASTARTES)
-		shock_stage = 0
-		return
+
 	if(is_asystole())
 		shock_stage = max(shock_stage, 61)
 	var/traumatic_shock = get_shock()

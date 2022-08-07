@@ -299,6 +299,12 @@
 
 //#define STAMINA_EXHAUST 250
 
+//Astartes passive healing
+#define ASTARTES_BRUTE_HEAL = -1.5
+#define ASTARTES_OXY_HEAL = -1.5
+#define ASTARTES_BRAIN_HEAL = -1.5
+#define ASTARTES_TOX_HEAL = -1.5
+
 //Moods levels for humans
 #define MOOD_LEVEL_HAPPY4 20
 #define MOOD_LEVEL_HAPPY3 15
@@ -323,7 +329,7 @@
 #define THIRST_LEVEL_MEDIUM 300
 #define THIRST_LEVEL_THIRSTY 200
 #define THIRST_LEVEL_DEHYDRATED 50
-#define THIRST_FACTOR 0.2
+#define THIRST_FACTOR 0.6
 
 //Disgust levels for humans
 #define DISGUST_LEVEL_MAXEDOUT 150
