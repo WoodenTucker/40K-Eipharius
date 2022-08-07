@@ -31,10 +31,9 @@
 /decl/hierarchy/outfit/job/acolyte/malleus
 	name = OUTFIT_JOB_NAME("Ordo Malleus Interrogator")
 	suit = /obj/item/clothing/suit/armor/agent/coat
-	suit_store = /obj/item/gun/projectile/bolter_pistol/inquis
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit_store = /obj/item/gun/projectile/lockebolter
 	backpack_contents = list(
-	suit_store = /obj/item/gun/projectile/lockebolter,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
