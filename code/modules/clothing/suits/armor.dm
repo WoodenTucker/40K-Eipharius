@@ -757,6 +757,7 @@ obj/item/clothing/suit/armor
 	canremove = 0
 	unacidable = 1
 	species_restricted = list(SPECIES_TYRANID)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle
