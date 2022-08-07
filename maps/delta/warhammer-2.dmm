@@ -1,6 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
 /obj/item/stack/thrones2/five,
+/mob/living/simple_animal/hostile/scarybat,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "ab" = (
@@ -1256,6 +1257,7 @@
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/oa/service/chapel)
 "du" = (
+/mob/living/simple_animal/hostile/scarybat,
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
 "dv" = (
@@ -2834,6 +2836,7 @@
 	},
 /area/cadiaoutpost/oa/security)
 "hI" = (
+/mob/living/simple_animal/hostile/scarybat,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "hJ" = (
@@ -4474,10 +4477,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "lT" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/stone,
+/obj/item/pyre/self_lit,
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/caves)
 "lU" = (
 /obj/effect/floor_decal/turf/barnew,
@@ -4551,7 +4552,8 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/village)
 "md" = (
-/obj/item/ammo_magazine/flamer,
+/obj/item/gun/projectile/ork/automatic/shoota,
+/obj/item/ammo_magazine/ork/shoota,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "me" = (
@@ -5755,8 +5757,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "pj" = (
-/turf/simulated/floor/plating/n2floor,
-/area/cadiaoutpost/oa/village)
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/caves)
 "pk" = (
 /obj/random/junk,
 /turf/simulated/floor/dirty,
@@ -5934,7 +5936,9 @@
 	},
 /area/cadiaoutpost/oa/security)
 "pT" = (
-/obj/item/gun/projectile/automatic/flamer,
+/obj/effect/landmark{
+	name = "orkstart"
+	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "pU" = (
@@ -6369,6 +6373,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"sW" = (
+/obj/item/gun/projectile/automatic/flamer,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "tf" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
@@ -6796,10 +6804,6 @@
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
-"wn" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/caves)
 "wz" = (
 /obj/structure/window/basic,
 /obj/effect/decal/cleanable/dirt,
@@ -6855,7 +6859,7 @@
 /area/cadiaoutpost/oa/service/bar)
 "wV" = (
 /obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/stone,
+/turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "wX" = (
 /obj/machinery/cooker/oven,
@@ -7095,6 +7099,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
 "yx" = (
+/obj/item/grenade/frag/high_yield/homemade,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/caves)
 "yy" = (
@@ -7650,10 +7655,8 @@
 	},
 /area/cadiaoutpost/oa/service/bar)
 "CB" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/trench,
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/caves)
 "CD" = (
 /turf/simulated/floor/tiled{
@@ -8001,10 +8004,6 @@
 "Fp" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/theforest)
-"Ft" = (
-/obj/item/material/sword/choppa,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/caves)
 "Fu" = (
 /obj/structure/cargo_pad/bottom_left,
 /obj/effect/landmark/cargospawn,
@@ -8978,8 +8977,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Nz" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/obj/item/ammo_magazine/ork/shoota,
+/obj/effect/landmark{
+	name = "orkstart"
+	},
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "NC" = (
@@ -10349,8 +10349,8 @@
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/service/bar)
 "Yd" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/dirty,
+/obj/item/ammo_magazine/flamer,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "Yf" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
@@ -19349,12 +19349,12 @@ YV
 rO
 rO
 rO
-yx
+pj
 rO
 YV
 rO
-yx
-yx
+pj
+pj
 rO
 YV
 xE
@@ -19604,13 +19604,13 @@ rO
 rO
 rO
 rO
-yx
-yx
-yx
+pj
+pj
+pj
 rO
 rO
 rO
-yx
+pj
 ae
 rO
 YV
@@ -19860,15 +19860,15 @@ ae
 rO
 rO
 rO
-yx
+pj
 ae
 ae
-yx
-yx
-yx
-yx
+pj
+pj
+pj
+pj
 ae
-yx
+pj
 ae
 rO
 YV
@@ -20117,15 +20117,15 @@ XR
 ae
 rO
 rO
-yx
+pj
 ub
 ae
 ae
 ae
 ae
 ae
-yx
-yx
+pj
+pj
 ae
 rO
 YV
@@ -20376,14 +20376,14 @@ ae
 dg
 dg
 dg
-yx
-wn
-yx
+pj
+lT
+pj
 ae
 ae
-yx
-yx
-yx
+pj
+pj
+pj
 rO
 YV
 xE
@@ -20633,13 +20633,13 @@ ae
 dg
 FT
 dg
-Ft
+CB
+pj
 yx
-Yd
 ae
 ub
 ae
-yx
+pj
 rO
 rO
 YV
@@ -20889,7 +20889,7 @@ ae
 ai
 dg
 dg
-CB
+Nz
 dg
 dg
 Lk
@@ -21142,12 +21142,12 @@ rO
 rO
 ae
 ae
-yx
+pj
 ae
 dg
 dg
 dg
-Nz
+md
 dg
 TS
 ae
@@ -21398,7 +21398,7 @@ YV
 rO
 ae
 Bw
-yx
+pj
 ae
 ae
 OO
@@ -21655,12 +21655,12 @@ rO
 rO
 ae
 ae
-yx
+pj
 ae
 ae
 ae
 dg
-yx
+pj
 ae
 rO
 rO
@@ -21910,12 +21910,12 @@ dg
 ae
 ae
 ub
-yx
-yx
+pj
+pj
 ae
 ub
 ae
-yx
+pj
 To
 ae
 rO
@@ -22163,7 +22163,7 @@ ae
 ae
 ae
 ae
-Nz
+md
 dg
 dg
 dg
@@ -22171,10 +22171,10 @@ ae
 ae
 Lk
 ae
-lT
-yx
-yx
-wV
+pT
+pj
+pj
+Yd
 rO
 YV
 xE
@@ -22431,7 +22431,7 @@ ae
 qr
 ae
 ae
-pT
+sW
 rO
 YV
 YV
@@ -22687,8 +22687,8 @@ zn
 ae
 Lk
 ae
-wV
-yx
+Yd
+pj
 rO
 rO
 rO
@@ -22934,10 +22934,10 @@ YV
 rO
 ae
 ae
+wV
+dg
+dg
 md
-dg
-dg
-Nz
 dg
 dg
 ae
@@ -23202,7 +23202,7 @@ ae
 xE
 ub
 ae
-yx
+pj
 ae
 rO
 rO
@@ -23447,7 +23447,7 @@ rO
 YV
 rO
 rO
-wV
+Yd
 dg
 dg
 dg
@@ -23459,7 +23459,7 @@ dg
 ae
 ae
 ae
-yx
+pj
 ae
 rO
 YV
@@ -23715,8 +23715,8 @@ dg
 dg
 ae
 ae
-yx
-yx
+pj
+pj
 rO
 YV
 xE
@@ -23965,13 +23965,13 @@ ae
 FP
 dg
 dg
-CB
-dg
-dg
 Nz
-yx
-yx
-yx
+dg
+dg
+md
+pj
+pj
+pj
 rO
 rO
 YV
@@ -29450,7 +29450,7 @@ tQ
 wX
 pZ
 ro
-hG
+ro
 Kn
 ro
 ro
@@ -35919,7 +35919,7 @@ ha
 ha
 ha
 ha
-pj
+fM
 kb
 lC
 ES
@@ -36176,7 +36176,7 @@ Xu
 mg
 mg
 ha
-pj
+fM
 kb
 ES
 ES
@@ -36433,7 +36433,7 @@ ha
 br
 rd
 ha
-pj
+fM
 kb
 ES
 ES
@@ -36690,7 +36690,7 @@ ha
 KU
 kq
 ha
-pj
+fM
 kb
 Rq
 ES
@@ -36947,7 +36947,7 @@ ha
 ha
 ha
 ha
-pj
+fM
 kb
 vM
 ES
@@ -37204,7 +37204,7 @@ jd
 jh
 ji
 ha
-pj
+fM
 kb
 kb
 ZY
@@ -37461,7 +37461,7 @@ iA
 iA
 iA
 ha
-pj
+fM
 kb
 fM
 fM
@@ -37718,7 +37718,7 @@ je
 iA
 jj
 ha
-pj
+fM
 kb
 cu
 Ns
@@ -42034,7 +42034,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -42547,7 +42547,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -42804,7 +42804,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -43317,7 +43317,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -43573,7 +43573,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 kx
 aX
@@ -43830,7 +43830,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -44343,7 +44343,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -44600,7 +44600,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -44857,7 +44857,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -45371,7 +45371,7 @@ La
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -46142,7 +46142,7 @@ XL
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -46655,7 +46655,7 @@ TF
 XL
 aX
 aX
-aX
+sn
 kx
 aX
 aX
@@ -47683,7 +47683,7 @@ TF
 TF
 aX
 kx
-aX
+sn
 aX
 aX
 aX
@@ -48195,7 +48195,7 @@ aX
 aX
 aX
 aX
-aX
+sn
 kx
 aX
 aX
