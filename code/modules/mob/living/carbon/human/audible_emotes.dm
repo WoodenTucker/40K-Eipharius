@@ -35,7 +35,7 @@
 
 	if(message)
 		custom_emote(2,message)
-	shake_camera(src, 20, 3)//suffer well pupper
+	shake_camera(src, 2, 3)//suffer well pupper
 	handle_emote_CD()
 
 /mob/proc/gasp_sound(var/collapsed_lung = FALSE, var/drowning = FALSE)

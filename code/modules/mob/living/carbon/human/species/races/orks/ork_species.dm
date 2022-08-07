@@ -8,16 +8,15 @@
 	min_age = 1
 	max_age = 65
 	total_health = 200
+	var/pain_power = 80
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
-	brute_mod = 0.95
-	burn_mod = 1
-	toxins_mod = 0.9
-	var/pain_power = 80
-	var/regen = 3
 	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_MINOR_CUT
+	base_auras = list(
+		/obj/aura/regenerating/human/astartes
+		)
 	inherent_verbs = list(
 		//mob/living/carbon/human/ork/proc/evolve,
 		/mob/living/carbon/human/ork/proc/scavenge,

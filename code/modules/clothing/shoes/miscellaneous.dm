@@ -181,7 +181,7 @@
 	icon_state = "sportshoe"
 
 /obj/item/clothing/shoes/jackboots/inquisitor
-	name = "inquisitor boots"
+	name = "noble boots"
 	desc = "A pair of high quality black leather boots for stomping heretics faces in."
 	icon_state = "noble-boots"
 	item_state = "noble-boots"

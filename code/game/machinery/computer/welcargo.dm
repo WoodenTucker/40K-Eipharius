@@ -1337,10 +1337,10 @@
 /////////Administrator PC for tax/tithes//////////
 /////////////////////////////////////////////////
 /obj/machinery/computer/tithecogitator
-	name = "tithe cogitator"
-	desc = "An Administratum cogitator used to process taxes and pay this planets Imperial tithe."
+	name = "commerce cogitator"
+	desc = "An Administratum cogitator used to process taxes and manage the estates treasury."
 	icon = 'icons/obj/modular_console.dmi'
-	icon_state = "console"
+	icon_state = "console"	
 	anchored = 1
 	density = 1
 	atom_flags = ATOM_FLAG_CLIMBABLE
@@ -1396,9 +1396,9 @@
 		visible_message("The console is locked, present your Administratum ring!")
 		return
 	user.set_machine(src)
-	var/dat = "<B>Imperial Tithe:</B><BR>"
+	var/dat = "<B>Payment Console:</B><BR>"
 	dat += "[GLOB.thrones] throne balance<BR>"
-	dat += "<B>Tithe owed to the Imperium</B></BR>"
+	dat += "<B>Payment owed for additional support.</B></BR>"
 	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (750)</A><BR>"
 	dat += "<B>Set the tax rate:</B></BR>"
 	dat += "<A href='byond://?src=\ref[src];tax=1'>Set tax rate (default is 15%)</A><BR>"
@@ -1413,12 +1413,12 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["tithe"])
-		if(GLOB.thrones < 400) //do we got enough shekels?
+		if(GLOB.thrones < 300) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		else
-			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
-			GLOB.thrones -= 400 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			visible_message("Thank you for your payment, the Emperor protects!") //lil flavor text confirming
+			GLOB.thrones -= 300 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			GLOB.tithe_paid = 1 //yay we paid the tithe
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
