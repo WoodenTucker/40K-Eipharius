@@ -724,6 +724,7 @@
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/metal/two,
+/obj/item/device/boombox,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "bW" = (
@@ -5471,6 +5472,9 @@
 "ou" = (
 /obj/structure/table/rack,
 /obj/item/device/radio/headset/red_team,
+/obj/item/device/cassette/titansbane,
+/obj/item/device/cassette/unknownsoldier,
+/obj/item/device/boombox,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -6961,6 +6965,14 @@
 /obj/structure/table/rack,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/tradefloor)
+"xA" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/table/steel,
+/obj/effect/floor_decal/turf/metal/two,
+/obj/item/device/cassette/titansbane,
+/obj/item/device/cassette/unknownsoldier,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "xC" = (
@@ -10367,6 +10379,12 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
+/obj/item/device/cassette/tape6,
+/obj/item/device/cassette/tape5,
+/obj/item/device/cassette/tape4,
+/obj/item/device/cassette/tape3,
+/obj/item/device/cassette/tape2,
+/obj/item/device/cassette/tape1,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "Yk" = (
@@ -48279,7 +48297,7 @@ Qe
 Qe
 Qe
 Lb
-bV
+xA
 Yf
 df
 bV
