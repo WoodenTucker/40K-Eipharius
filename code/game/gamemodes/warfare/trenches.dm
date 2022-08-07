@@ -44,7 +44,7 @@
 	icon_state = "trench"
 	name = "trench"
 	movement_delay = 0.1
-	has_coldbreath = TRUE
+	has_coldbreath = FALSE
 	var/can_be_dug = TRUE
 
 /turf/simulated/floor/trench/fake

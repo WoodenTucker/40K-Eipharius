@@ -1453,7 +1453,7 @@ Area basic template
 /area/cadiaoutpost/oa/shuttle/inquisition
 	name = "Inquisition Ship"
 	icon_state = "shuttle"
-	music = 'sound/newmusic/General_Ambient2.ogg'
+	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/aquila

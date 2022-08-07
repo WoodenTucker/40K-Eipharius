@@ -48,8 +48,8 @@
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
-		/obj/item/gun/projectile/bolter_pistol/sisterofbattle = 1,
-		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+		/obj/item/gun/energy/las/laspistol/militarum/lucius/sister = 1,
+		/obj/item/cell/lasgun = 2,
 		/obj/item/stack/thrones3/five = 1,)
 
 /decl/hierarchy/outfit/job/medical/chemist

@@ -119,7 +119,7 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
+	glasses = /obj/item/clothing/glasses/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -134,7 +134,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/clothing/glasses/cadiangoggles/sniper
+	/obj/item/clothing/glasses/cadian
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -161,7 +161,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/clothing/glasses/cadiangoggles/sniper
+	/obj/item/clothing/glasses/cadian
 	)
 
 /// Sergeant

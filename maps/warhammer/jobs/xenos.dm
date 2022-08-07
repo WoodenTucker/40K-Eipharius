@@ -32,6 +32,7 @@
 	head = /obj/item/clothing/head/helmet/genestealer
 	suit = /obj/item/clothing/suit/storage/hooded/genestealer
 	shoes = /obj/item/clothing/shoes/genestealerfeet
+	glasses = /obj/item/clothing/glasses/tyranid
 	neck = null
 	back = null
 	l_ear = /obj/item/device/radio/headset/hivemind 

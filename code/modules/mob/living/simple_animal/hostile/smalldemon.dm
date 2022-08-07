@@ -6,16 +6,16 @@
 	icon_state = "demon"
 	icon_living = "demon"
 	icon_dead = "demon_dead"
-	maxHealth = 200
-	health = 200 
+	maxHealth = 300
+	health = 300 
 	universal_speak = 1
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
 	response_disarm = "shoves"
 	response_harm   = "mauls"
-	melee_damage_lower = 10 // This does nothing - you must use var/damage in the script below.
-	melee_damage_upper = 30
+	melee_damage_lower = 35 // This does nothing - you must use var/damage in the script below.
+	melee_damage_upper = 70
 	attacktext = "claws"
 	maxbodytemp = 1000
 	see_in_dark = 10
@@ -105,7 +105,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
 
-	var/damage = rand(35,60)
+	var/damage = rand(35,75)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -127,8 +127,8 @@
 	icon_state = "floater"
 	icon_living = "floater"
 	icon_dead = "floater2"
-	maxHealth = 250
-	health = 250
+	maxHealth = 390
+	health = 390
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -137,14 +137,14 @@
 	attacktext = "sloshes"
 	see_in_dark = 6
 
-	speed = 1.8
+	speed = 1.9
 
 /mob/living/simple_animal/hostile/smalldemon/zygote/AttackingTarget()
 	if(!Adjacent(target_mob))
 		return
 	custom_emote(1, pick( list("sloshes at [target_mob]", "pulls [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(30,60) // Damage Value
+	var/damage = rand(40,80) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -165,8 +165,8 @@
 	icon_state = "oormat"
 	icon_living = "oormat"
 	icon_dead = "oormat2"
-	maxHealth = 700
-	health = 700
+	maxHealth = 850
+	health = 850
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -182,7 +182,7 @@
 		return
 	custom_emote(1, pick( list("bites at [target_mob]", "crushes [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(50,70) // Damage Value
+	var/damage = rand(60,90) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -203,8 +203,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 500
-	health = 500
+	maxHealth = 600
+	health = 600
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -220,7 +220,7 @@
 		return
 	custom_emote(1, pick( list("slices at [target_mob]", "tears [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(65,85) // Damage Value
+	var/damage = rand(95,125) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -246,8 +246,8 @@
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 380
-	health = 380
+	maxHealth = 480
+	health = 480
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"

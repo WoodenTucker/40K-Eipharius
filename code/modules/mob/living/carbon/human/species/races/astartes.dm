@@ -28,7 +28,6 @@ Astartes
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	mob_size = MOB_LARGE
 	strength = STR_VHIGH
-	var/regen = 3
 	var/pain_power = 80
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
@@ -38,11 +37,11 @@ Astartes
 
 	radiation_mod = 0.7
 
-/* //gives assfartes the astartes aura
+//gives assfartes the astartes aura
 	base_auras = list(
 		/obj/aura/regenerating/human/astartes
 		)
-		*/
+
 
 /datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/astartes/H)
 	. = ..()

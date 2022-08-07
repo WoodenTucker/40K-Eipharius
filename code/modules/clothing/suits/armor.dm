@@ -253,8 +253,9 @@ obj/item/clothing/suit/armor
 	desc = "Scavenged bitz to keep ya' krumpin' longa'!"
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor"
-	armor = list(melee = 55, bullet = 30, laser = 20, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 15, bullet = 10, laser = 10, energy = 20, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
+	allowed = list(/obj/item/gun/projectile/ork/automatic/shoota, /obj/item/material/sword/choppa)
 	blood_overlay_type = "armor"
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -756,6 +757,7 @@ obj/item/clothing/suit/armor
 	canremove = 0
 	unacidable = 1
 	species_restricted = list(SPECIES_TYRANID)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle

@@ -211,11 +211,6 @@
 	shotgun_skill = 2
 	lmg_skill = 2
 	smg_skill = 2
-	melee_skill = 4
-	ranged_skill = 6
-	medical_skill = 5
-	engineering_skill = 2
-	surgery_skill = 5
 	species_role = "Child"
 
 	equip(var/mob/living/carbon/human/H)
@@ -228,7 +223,7 @@
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
-		var/corruption = rand(1,10)
+		var/corruption = rand(1,2)
 		switch(corruption)
 			if(1)
 				H.verbs += list(

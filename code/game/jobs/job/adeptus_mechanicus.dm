@@ -38,8 +38,8 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Magos [current_name]")
-		H.add_stats(rand(14,16), rand(14,16), rand(15,18), rand(20,24)) //idk what to do with Magos xd
-		H.add_skills(rand(6,10),rand(6,10),rand(6,7),rand(10,12),rand(7,9)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(16,19), rand(16,19), rand(18,20), rand(20,30)) //Magos are pretty strong due to their modifications, their mods also make them able to endure much more than normal humans
+		H.add_skills(rand(9,10),rand(7,10),rand(7,10),rand(10,11),rand(7,10)) //melee, ranged, med, eng, surgery
 		H.warfare_faction = IMPERIUM
 		H.set_trait(new/datum/trait/death_tolerant()) //although Noble, he has no nose and is a psychopath, no reason he should be vomiting around
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
@@ -55,7 +55,6 @@
 				H.verbs += list(
 				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)
 
 
@@ -78,19 +77,19 @@
 	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
 	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Tech-Priest [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
-		H.add_stats(rand(14,16), rand(14,16), rand(12,15), rand(14,16)) //idk what to do with Magos xd
+		H.add_stats(rand(15,18), rand(15,18), rand(12,20), rand(14,20)) //idk what to do with Magos xd
 		H.add_skills(rand(6,8),rand(4,8),rand(5,6),rand(7,10),rand(5,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
@@ -98,7 +97,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,10)
+		var/corruption = rand(1,8)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
@@ -128,33 +127,31 @@
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_sec_doors, access_robotics, access_medical, access_morgue,  access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_RC_announce, access_tcomsat, access_ai_upload, access_robotics, access_research,)
 	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 8 //sometimes this motherfucker has to get his research material by himself
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 7
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
-		H.add_stats(rand(14,16), rand(14,16), rand(10,13), rand(20,30))
-		H.add_skills(rand(6,9),rand(4,7),rand(8,11),rand(7,10),rand(10,12)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(15,18), rand(15,18), rand(18,20), rand(20,30)) //just as modified as the magos, if not more.
+		H.add_skills(rand(7,10),rand(4,7),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,8)
+		var/corruption = rand(1,10) //biologis almost never become heretics
 		switch(corruption)
 			if(1)
 				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, you are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii, you are not forced to listen to the Magos Dominus, but be aware, he holds much more power in the outpost than you.</font></b></span>")
 

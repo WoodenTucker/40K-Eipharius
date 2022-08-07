@@ -552,6 +552,20 @@
 	item_state = "iggoggles"
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
+// XENOS VISION
+
+/obj/item/clothing/glasses/tyranid
+	name = "eyeballs"
+	desc = "Gross!"
+	darkness_view = 20 
+	body_parts_covered = EYES
+	icon_state = "gsfeet"
+	item_state = "gsfeet"
+	canremove = 0
+	unacidable = 1
+	species_restricted = list(SPECIES_TYRANID)
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+
 // SPESS MUHREEN STUFF
 
 /obj/item/clothing/glasses/astartes/visor
@@ -581,7 +595,7 @@
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
 
-/obj/item/clothing/glasses/cadiangoggles/sniper
+/obj/item/clothing/glasses/cadian
 	name = "Mark XIIc Visor"
 	desc = "The Mark XIIc sniper variant night vision visor are special night vision goggles which make a much larger area visible to the user without adding any negative effects to their vision."
 	icon_state = "thermal"
