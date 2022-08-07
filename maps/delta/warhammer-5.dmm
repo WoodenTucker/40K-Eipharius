@@ -52,7 +52,6 @@
 /obj/item/grenade/frag/warfare,
 /obj/item/grenade/frag/warfare,
 /obj/item/grenade/frag/warfare,
-/obj/item/grenade/frag/warfare,
 /obj/item/material/sword/combat_knife/rare,
 /obj/item/material/sword/combat_knife/rare,
 /obj/item/material/sword/combat_knife/rare,
@@ -181,6 +180,8 @@
 /obj/item/stack/thrones3/ten,
 /obj/item/stack/thrones3/ten,
 /obj/item/stack/thrones3/ten,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemcaves,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aA" = (
@@ -2005,7 +2006,6 @@
 /obj/item/grenade/frag,
 /obj/item/grenade/frag,
 /obj/item/grenade/frag,
-/obj/item/grenade/frag,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jE" = (
@@ -2156,6 +2156,7 @@
 /area/cadiaoutpost/oa/tauship)
 "kc" = (
 /obj/structure/table/rack/shelf,
+/obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kd" = (
@@ -2195,7 +2196,7 @@
 	},
 /area/centcom)
 "kg" = (
-/obj/machinery/computer/teleporter,
+/obj/machinery/teleport/station,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kh" = (
@@ -2222,11 +2223,12 @@
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kk" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/turf/simulated/floor/shuttle/yellow,
-/area/space)
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/adv,
+/obj/item/storage/firstaid/adv,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "kl" = (
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -2242,7 +2244,6 @@
 /area/centcom)
 "kn" = (
 /obj/structure/table/rack,
-/obj/item/gun/energy/pulse/ionrifle,
 /obj/item/gun/energy/pulse/ionrifle,
 /obj/item/gun/energy/pulse/ionrifle,
 /turf/simulated/floor/shuttle/darkred,
@@ -2318,7 +2319,7 @@
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kz" = (
-/obj/machinery/teleport/station,
+/obj/machinery/computer/teleporter,
 /turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "kA" = (
@@ -2403,7 +2404,7 @@
 /area/cadiaoutpost/oa/tauship)
 "kN" = (
 /obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse,
+/obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kO" = (
@@ -4977,6 +4978,18 @@
 /obj/machinery/door/airlock/centcom,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Va" = (
+/obj/structure/table/rack,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "Vb" = (
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
@@ -7042,9 +7055,9 @@ kL
 gL
 kz
 lc
-BA
+iu
 gL
-jT
+Va
 jB
 jB
 jB
@@ -7174,8 +7187,8 @@ aK
 aK
 aK
 aK
-aK
 bn
+aK
 aa
 ax
 ax
@@ -7239,12 +7252,12 @@ gn
 Uv
 jx
 jI
-kk
+jN
 jV
 Uv
 en
 gL
-iu
+BA
 Uv
 iu
 gL
@@ -7276,8 +7289,8 @@ aK
 aK
 aK
 aK
-aK
 bo
+aK
 aa
 ax
 ax
@@ -7861,7 +7874,7 @@ gL
 kE
 kP
 gL
-Lx
+kk
 ay
 gL
 kx
