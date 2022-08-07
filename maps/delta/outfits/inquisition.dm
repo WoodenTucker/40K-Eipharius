@@ -5,7 +5,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/inqcs
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots/inquisitor
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/inqhelm
 	mask = /obj/item/clothing/mask/gas/security/agent
 	glasses = null
@@ -38,7 +38,7 @@
 	suit = /obj/item/clothing/suit/armor/scion
 	back = /obj/item/storage/backpack/satchel/warfare
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots/inquisitor
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/scion
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/sniper
@@ -70,7 +70,7 @@
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol
+	suit_store = /obj/item/gun/projectile/bolter_pistol/inquis
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
@@ -87,7 +87,7 @@
 /decl/hierarchy/outfit/job/inquisitor/malleus
 	name = OUTFIT_JOB_NAME("Inquisitor Of Ordo Malleus")
 	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
-	shoes = /obj/item/clothing/shoes/jackboots/inquisitor
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = null
 	suit_store = /obj/item/gun/projectile/lockebolter
 	backpack_contents = list(
