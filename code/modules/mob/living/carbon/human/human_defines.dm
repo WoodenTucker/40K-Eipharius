@@ -127,4 +127,4 @@
 	var/is_anonymous = FALSE //Used when examined and speaking for whether or not they're anonymous
 	var/coldbreath = FALSE //dumb snowflake bullshit for coldbreath don't worry about it g
 	var/last_words = null
-	var/quote_cd = 0 //for yells
+	var/khorne_cd = 0 //for khorne yell

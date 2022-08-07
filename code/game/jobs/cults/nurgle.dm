@@ -48,7 +48,6 @@
 			src.mind.special_role = "Nurgle Cultist"
 			AddInfectionImages()
 			src.faction = "Nurgle"
-			src.verbs += list(/mob/living/carbon/human/proc/lordofflies)
 		if(2)
 			src.decay++
 			GLOB.nurgle_cult++
@@ -145,7 +144,6 @@
 		if(24)
 			to_chat(src, "<font color='#03420e'>You've brought my harbinger to this world... You've earned your place amongst my children. Repeat the ritual as many times as you can! (End of current Nurgle path)</font>")
 			src.decay = 8
-//			species_flags += SPECIES_FLAG_NO_PAIN
 			return
 
 
@@ -397,25 +395,3 @@
 		pleasedfoot = 0
 		pleasedheart = 0
 		pleasedeyes= 0
-
-/mob/living/carbon/human/proc/lordofflies()
-	set name = "For the Lord of the flies!"
-	set category = "Nurgle"
-	set desc = "For the Lord of the flies!"
-
-	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Nurgle immediately</span>")
-		return
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>Not in death.</span>")
-		return
-
-	if(src.quote_cd == 0)
-		src.say("For the Lord of the flies!")
-		playsound(src, 'sound/effects/cults/nurgle/fornurgle.ogg', 80, 0, 3)
-		src.quote_cd = 1
-		sleep(100)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon!")
-		return

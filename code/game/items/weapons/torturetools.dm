@@ -59,7 +59,7 @@
 				GLOB.teeth_lost++
 				if(H.rage >= 2)
 					if(prob(30))
-						playsound(src, 'sound/effects/cults/khorne/khorne.ogg', 100, 1, 1)
+						playsound(src, 'sound/effects/khorne.ogg', 100, 1, 1)
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
 				if(H.intrigue >= 2)
 					if(prob(30)) //tzeentch boys are a bit softer than khorne/nurgle lads
@@ -70,7 +70,7 @@
 					to_chat(H, "The Prince of Pleasure protects his sevants from pain. What would be excruciating is turned to pleasure.")
 				if(H.decay >= 2)
 					if(prob(30))
-						playsound(src, 'sound/effects/cults/nurgle//fornurgle.ogg', 100, 1, 1)
+						playsound(src, 'sound/effects/fornurgle.ogg', 100, 1, 1)
 						H.say("FATHER NURGLE PROTECT YOUR ACOLYTE! BLIGHT THESE CORPSE-WORSHIPPPERS!")
 
 				user.doing_something = 0
@@ -81,7 +81,7 @@
 		else
 			to_chat(user, "<span class='notice'>You are already trying to pull out a tooth!</span>")
 		return
-
+		
 /obj/item/halter
 	name = "adrenergic reuptake inhibitor"
 	desc = "The Inquisition's brightest chemists have devised this adrenergic reuptake inhibitor as a suitable tool to reveal followers of Slaanesh. It ceases all feeling causing them more discomfort than one could imagine, it also is very dangerous."
