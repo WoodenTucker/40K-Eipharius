@@ -142,14 +142,15 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 7
 
 // NEW MELEE
 
 /obj/item/melee/classic_baton/daemonhammer
 	name = "Daemonhammer"
 	desc = "A power weapon of incredible legend and stature amongst the Ordos Malleus, this Daemonhammer has been used by countless Inquisitor's in their conflict against the unholy creatures of chaos."
-	icon_state = "trenchaxe"
-	item_state = "thunder_hammer"
+	icon_state = "thunder_hammer"
+	item_state = "trenchaxe"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
@@ -171,7 +172,7 @@
 	wielded_icon = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 13
-	force = 42
+	force = 44
 	block_chance = 30
 	sharp = TRUE
 	edge = TRUE
@@ -180,7 +181,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 11
+	weapon_speed_delay = 9
 
 /obj/item/melee/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -191,7 +192,7 @@
 	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 11
-	force = 39
+	force = 41
 	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
@@ -200,7 +201,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 11
+	weapon_speed_delay = 9
 
 /obj/item/melee/pcsword
 	name = "Mark I Pattern Chainsword"
@@ -211,7 +212,7 @@
 	wielded_icon = "pcsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 16
-	force = 45
+	force = 47
 	block_chance = 55
 	sharp = TRUE
 	edge = TRUE
@@ -220,7 +221,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 9
+	weapon_speed_delay = 7
 
 /obj/item/melee/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -230,8 +231,8 @@
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
 	str_requirement = 13
-	force = 25// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 47
+	force = 27// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 49
 	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
@@ -243,4 +244,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 14
+	weapon_speed_delay = 11
