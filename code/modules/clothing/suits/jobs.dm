@@ -345,9 +345,10 @@
 /obj/item/clothing/suit/servitor/janitor
 	icon_state = "servitor_robe2"
 	item_state = "servitor_robe2"
-	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 70, rad = 100) // it do be like that
+	armor = list(melee = 95, bullet = 95, laser = 95, energy = 0, bomb = 10, bio = 70, rad = 100) // it do be like that
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	canremove = 0
 
 //ministorum priest
 /obj/item/clothing/suit/ministorumrobes
@@ -365,7 +366,7 @@
 	name = "undertaker's coat"
 	desc = "Fitted just for scavs."
 	icon_state = "child_redcoat"
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 0, bomb = 0, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 60, laser = 60, energy = 0, bomb = 0, bio = 0, rad = 0) // too many kids getting shot. NO MOAR.
 	can_be_worn_by_child = TRUE
 	child_exclusive = TRUE
 

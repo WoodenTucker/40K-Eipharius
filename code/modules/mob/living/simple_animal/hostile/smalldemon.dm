@@ -14,8 +14,8 @@
 	response_help  = "gnashes"
 	response_disarm = "shoves"
 	response_harm   = "mauls"
-	melee_damage_lower = 35 // This does nothing - you must use var/damage in the script below.
-	melee_damage_upper = 70
+	melee_damage_lower = 60 // This only effects if controlled by a player.
+	melee_damage_upper = 100
 	attacktext = "claws"
 	maxbodytemp = 1000
 	see_in_dark = 10
@@ -105,7 +105,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
 
-	var/damage = rand(35,75)
+	var/damage = rand(40,75)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -144,7 +144,7 @@
 		return
 	custom_emote(1, pick( list("sloshes at [target_mob]", "pulls [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(40,80) // Damage Value
+	var/damage = rand(50,80) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -182,7 +182,7 @@
 		return
 	custom_emote(1, pick( list("bites at [target_mob]", "crushes [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(60,90) // Damage Value
+	var/damage = rand(70,100) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -220,7 +220,7 @@
 		return
 	custom_emote(1, pick( list("slices at [target_mob]", "tears [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(95,125) // Damage Value
+	var/damage = rand(100,135) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob

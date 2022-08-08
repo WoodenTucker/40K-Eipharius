@@ -265,15 +265,14 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/heavymelee/spawn_choices()
-	return list(/obj/item/melee/trench_axe = 12,
-				/obj/item/melee/inqcs = 2,
-				/obj/item/material/sword/cane = 3,
+	return list(/obj/item/melee/trench_axe = 22,
+				/obj/item/melee/inqcs = 1,
+				/obj/item/material/sword/cane = 6,
 				/obj/item/melee/pcsword/eviscerator = 1,
-				/obj/item/melee/classic_baton/trench_club = 4,
-				/obj/item/melee/telebaton = 3,
-				/obj/item/material/sword/machete = 6,
-				/obj/item/material/sword/sabre = 1,
-				/obj/item/melee/mercycs = 1)
+				/obj/item/melee/classic_baton/trench_club = 8,
+				/obj/item/melee/telebaton = 6,
+				/obj/item/material/sword/machete = 12,
+				/obj/item/material/sword/sabre = 4)
 
 /obj/random/loot/lightstubber
 	name = "Light Stubber"

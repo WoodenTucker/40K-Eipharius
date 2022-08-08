@@ -970,13 +970,13 @@
 	unloaded_icon = "autoshotty-e"
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
-	fire_delay = 2
+	fire_delay = 2.2
 	burst = 1
 	move_delay = 3
 	automatic = 1
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = -3
+	accuracy = -3.7
 
 /obj/item/gun/projectile/lockebolter/update_icon()
 	..()

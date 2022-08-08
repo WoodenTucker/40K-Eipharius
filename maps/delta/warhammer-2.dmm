@@ -3694,6 +3694,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"jE" = (
+/obj/structure/noticeboard,
+/turf/simulated/wall/ancient{
+	color = null
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "jF" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/closet/crate/operations,
@@ -46752,7 +46758,7 @@ HO
 dT
 dT
 HO
-cP
+jE
 dT
 dT
 dT
@@ -47009,7 +47015,7 @@ HO
 dT
 dT
 HO
-cP
+jE
 dT
 Xb
 dT

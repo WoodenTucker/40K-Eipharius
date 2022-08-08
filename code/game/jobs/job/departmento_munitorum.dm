@@ -3,8 +3,9 @@
 /datum/job/qm2
 	title = "House Noble"
 	department_flag = PIL
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
+	open_when_dead = 0
 	supervisors = "the merchant guilds"
 	selection_color = "#337C81"
 	economic_modifier = 5
@@ -27,8 +28,8 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Lord [current_name]")
-		H.add_stats(rand(16,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
-		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(5,8),rand(5,8),rand(5,8),rand(5,8),rand(5,8)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(14,16), rand(14,16), rand(12,18), rand (12,18)) //a lil better fed than others.
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)

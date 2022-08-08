@@ -112,7 +112,7 @@
 	range = 10 	//These disappear after a short distance.
 	var/pellets = 4			//number of pellets
 	var/range_step = 2		//projectile will lose a fragment each time it travels this distance. Can be a non-integer.
-	var/base_spread = 90	//lower means the pellets spread more across body parts. If zero then this is considered a shrapnel explosion instead of a shrapnel cone
+	var/base_spread = 40	//lower means the pellets spread more across body parts. If zero then this is considered a shrapnel explosion instead of a shrapnel cone
 	var/spread_step = 10	//higher means the pellets spread more across body parts with distance
 	light_power = 9 //No tracers.
 	light_range = 0
@@ -174,11 +174,11 @@
 /obj/item/projectile/bullet/pistol
 	damage = 39 //9mm, .38, etc
 	fire_sound = "gunshot"
-	armor_penetration = 10
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/medium
 	damage = 42 //.45
-	armor_penetration = 10
+	armor_penetration = 15
 	fire_sound = "gunshot"
 
 /obj/item/projectile/bullet/pistol/medium/smg
@@ -189,16 +189,16 @@
 /obj/item/projectile/bullet/pistol/medium/revolver
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 45 //.44 magnum or something
-	armor_penetration = 10
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/strong //matebas
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
 	damage = 47 //.50AE
-	armor_penetration = 10
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/strong/revolver //revolvers
 	damage = 47 //Revolvers get snowflake bullets, to keep them relevant
-	armor_penetration = 10
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -333,8 +333,8 @@
 
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 55
-	armor_penetration = 40
+	damage = 50
+	armor_penetration = 30
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -344,8 +344,8 @@
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 65
-	armor_penetration = 50
+	damage = 60
+	armor_penetration = 30
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))
@@ -400,14 +400,12 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 45
-	armor_penetration = 5
+	damage = 50
 
 /obj/item/projectile/bullet/ork/shoota
 	name = "piece of trash"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 45
-	armor_penetration = 5
+	damage = 50
 
 
 
@@ -476,14 +474,14 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 70
 	damage_type = BURN
-	armor_penetration = 45
+	armor_penetration = 20
 	penetration_modifier = 1.2
 
 /obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 40
+	damage = 55
 	damage_type = BURN
-	armor_penetration = 40
+	armor_penetration = 20
 	penetration_modifier = 1.4
 
 

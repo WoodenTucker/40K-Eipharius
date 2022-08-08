@@ -403,6 +403,7 @@
 	icon_state = "servitor_helmet"
 	item_state = "servitor_helmet"
 	canremove = 0
+	armor = list(melee = 55, bullet = 55, laser = 50, energy = 15, bomb = 10, bio = 10, rad = 15)
 
 /obj/item/clothing/head/servitorhead/janitor
 	icon_state = "servitor_helmet2"

@@ -219,15 +219,15 @@ Pilgrim Fate System
 
 
 
-
+/*
 /datum/job/administrator  //so that the inn always has someone working
 	title = "House Noble"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
 	total_positions = 2
 	spawn_positions = 2
-	head_position = 1
-	open_when_dead = 1
+	head_position = 0
+	open_when_dead = 0
 	supervisors = "the merchant guilds"
 	selection_color = "#337C81"
 	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
@@ -254,7 +254,7 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and your merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on them as they are upon you. </font></b></span>")
-
+*/
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
 	name = OUTFIT_JOB_NAME("Pilgrim")

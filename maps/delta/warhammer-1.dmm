@@ -2276,9 +2276,9 @@
 "lp" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/gun/energy/las/lasgun/tinkered/catachan,
 /obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
+/obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "lq" = (
@@ -3036,6 +3036,10 @@
 /obj/structure/bookcase,
 /obj/item/book{
 	desc = "My people shackled the stars, and broke mortality when the species you sprang from had barely left the slime pools it spawned in. Our wars burned reality, and the dominion of our kings is without limit. The ground you tread on is not yours; it is ours.";
+	name = "tome"
+	},
+/obj/item/book{
+	desc = "I have a reputation, Modile, a reputation as a fair, honest man who treats his soldiers well and supports them in the face of darkness. Potentially, that reputation makes me soft. It seems I understand failure and forgive it. Some, like Kowle, believe me to be a weak commissar, not prepared to take the action my rank demands. Not prepared to enforce field discipline where I see it failing. I am an Imperial commissar. I will enflame the weak, support the wavering, guide the lost. I will be all things to all men who need me. But I will also punish without hesitation the incompetent, the cowardly, and the treasonous. Choose, for courtesy's sake, summary execution or a firing squad of your own men.";
 	name = "tome"
 	},
 /turf/simulated/floor/tiled/dark{
@@ -7640,6 +7644,8 @@
 "Jm" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/lightlasgun,
+/obj/random/loot/lightlasgun,
 /obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -41748,7 +41754,7 @@ bf
 PY
 PY
 PY
-PY
+af
 PY
 PY
 PY
@@ -44713,7 +44719,7 @@ PI
 PI
 PI
 PI
-PY
+PI
 PI
 PI
 PI
@@ -49739,7 +49745,7 @@ PI
 bf
 PY
 PY
-PY
+af
 PY
 wx
 PY
@@ -51299,7 +51305,7 @@ PY
 PY
 PY
 PY
-PY
+af
 PY
 by
 bf
@@ -64947,7 +64953,7 @@ PY
 PY
 PY
 PY
-PY
+af
 PY
 eD
 eD

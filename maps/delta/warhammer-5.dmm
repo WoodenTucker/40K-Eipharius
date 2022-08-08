@@ -169,6 +169,11 @@
 /obj/structure/table/rack,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "az" = (
@@ -671,6 +676,8 @@
 /obj/item/clothing/gloves/cyborg,
 /obj/item/clothing/gloves/thick,
 /obj/item/clothing/under/syndicate/tacticool,
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cn" = (
@@ -830,7 +837,14 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
 /obj/item/ammo_magazine/bolt_rifle_magazine,
-/obj/item/ammo_magazine/bolt_rifle_magazine,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"cK" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/spline/plain,
+/obj/item/card/id/inquisition/principal_agent{
+	name = "Pilgrim"
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cL" = (
@@ -4251,6 +4265,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
+"KS" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/card/id/inquisition/principal_agent{
+	name = "Pilgrim"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "KZ" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/rack/dark,
@@ -4625,6 +4646,21 @@
 	color = "grey"
 	},
 /area/centcom)
+"PQ" = (
+/obj/structure/table/rack,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "PR" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/las/lasgun/tinkered,
@@ -7875,7 +7911,7 @@ kE
 kP
 gL
 kk
-ay
+PQ
 gL
 kx
 gL
@@ -11484,7 +11520,7 @@ cp
 cp
 cp
 cp
-cp
+KS
 yG
 lU
 ci
@@ -11586,7 +11622,7 @@ cp
 cp
 cp
 cp
-cp
+KS
 LT
 lU
 ci
@@ -11688,7 +11724,7 @@ cp
 cp
 cp
 cp
-cp
+KS
 LT
 lU
 ch
@@ -12100,7 +12136,7 @@ cp
 cp
 lU
 cl
-cu
+cK
 cJ
 lU
 dh

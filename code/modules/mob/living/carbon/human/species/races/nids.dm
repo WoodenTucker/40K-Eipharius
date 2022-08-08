@@ -36,7 +36,7 @@
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.85 // Hardened carapace.
+	brute_mod = 0.9 // Hardened carapace.
 	base_auras = list(
 		/obj/aura/regenerating/human/nid
 		)

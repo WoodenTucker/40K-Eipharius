@@ -17,7 +17,7 @@
 	var/agonyforce = 30
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/cell/bcell
-	var/hitcost = 7
+	var/hitcost = 0
 	block_chance = 15
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
@@ -109,7 +109,6 @@
 		if(status != newstatus)
 			change_status(newstatus)
 			to_chat(user, "<span class='notice'>[src] is now [status ? "on" : "off"].</span>")
-			playsound(loc, "sparks", 75, 1, -1)
 	else
 		change_status(0)
 		if(!bcell)
@@ -158,15 +157,14 @@
 		//we can't really extract the actual hit zone from ..(), unfortunately. Just act like they attacked the area they intended to.
 	else if(!status)
 		if(affecting)
-			target.visible_message("<span class='warning'>[target] has been prodded in the [affecting.name] with [src] by [user]. Luckily it was off.</span>")
+			target.visible_message("<span class='warning'>[target] has been prodded in the [affecting.name] with [src] by [user].</span>")
 		else
-			target.visible_message("<span class='warning'>[target] has been prodded with [src] by [user]. Luckily it was off.</span>")
+			target.visible_message("<span class='warning'>[target] has been prodded with [src] by [user].</span>")
 	else
 		if(affecting)
 			target.visible_message("<span class='danger'>[target] has been prodded in the [affecting.name] with [src] by [user]!</span>")
 		else
 			target.visible_message("<span class='danger'>[target] has been prodded with [src] by [user]!</span>")
-		playsound(loc, 'sound/weapons/Egloves.ogg', 50, 1, -1)
 
 	//stun effects
 	if(status)
@@ -189,7 +187,7 @@
 // Stunbaton module for Security synthetics
 /obj/item/melee/baton/robot
 	bcell = null
-	hitcost = 20
+	hitcost = 0
 
 // Addition made by Techhead0, thanks for fullfilling the todo!
 /obj/item/melee/baton/robot/examine_cell(mob/user)
@@ -252,3 +250,25 @@
 	hitcost = 25
 	attack_verb = list("poked")
 	slot_flags = null
+
+/obj/item/melee/baton/nidstun
+	name = "Venomous Talon"
+	desc = "The talon is coated in a paralytic agonizing poison, best used on single targets for conversion."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "catachanfang"
+	item_state = "catachanfang"
+	color = "#292929"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	str_requirement = 1
+	force = 1
+	stunforce = 0
+	agonyforce = 45
+	status = 1
+	block_chance = 40
+	weapon_speed_delay = 4
+	sharp = TRUE
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_HUGE
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	attack_verb = list("violated", "penetrated", "infested")
