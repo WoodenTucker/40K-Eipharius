@@ -193,7 +193,7 @@
 	icon_state = "catachanfang"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 25
+	force = 27
 	block_chance = 70
 	weapon_speed_delay = 5
 
