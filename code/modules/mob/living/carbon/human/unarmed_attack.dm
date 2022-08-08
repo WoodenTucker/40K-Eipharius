@@ -227,7 +227,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
 	attack_sound = "swing_hit"
-	damage = 50
+	damage = 45
 
 /datum/unarmed_attack/stomp
 	attack_verb = list("stomped on")
@@ -297,7 +297,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("claw")
 	eye_attack_text = "blades"
 	eye_attack_text_victim = "daggers"
-	damage = 70
+	damage = 60
 	sharp = 1
 	attack_sound = 'sound/effects/nidslash.ogg'
 
