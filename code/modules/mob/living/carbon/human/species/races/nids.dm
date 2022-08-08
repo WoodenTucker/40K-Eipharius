@@ -1,12 +1,12 @@
 /datum/species/xenos/tyranids
 	name = SPECIES_TYRANID
 	name_plural = "Tyranids"
-	secondary_langs = list(LANGUAGE_HIVE)
 	name_language = null // Use the first-name last-name generator rather than a language scrambler
 	icobase = 'icons/mob/human_races/tyranids/r_tyranid.dmi'
 	deform = 'icons/mob/human_races/tyranids/r_def_tyranid.dmi'
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
+	language = LANGUAGE_TYRANID
 	min_age = 50
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
@@ -161,7 +161,7 @@
 
 	to_chat(src, "<span class='notice'>We have converted [T]!</span>")
 	src.visible_message("<span class='danger'>[src] completes overwriting [T]'s DNA!</span>")
-	to_chat(T, "<span class='danger'>You have been converted to the Tyranid Hive Mind!</span>")
+	to_chat(T, "<span class='danger'>You have been converted to the Tyranid Hive Mind! Obey your new masters, communicate with the hive using ,h</span>")
 
 	isconverting = 0
 
@@ -172,7 +172,7 @@
 	src.mind.special_role = "Tyranid"
 	T.AddInfectionImages()
 	src.AddInfectionImages()//likely redundant but sometimes they don't show so better to make it check twice on both parties.
-	T.equip_to_slot_or_del(new /obj/item/device/radio/headset/hivemind, slot_r_ear)
+	T.add_language(LANGUAGE_TYRANID)
 	src.dnastore++
 	T.adjustOxyLoss(-1)
 	T.adjustBruteLoss(-1)
@@ -268,7 +268,8 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near!")
+	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
+	src.AddInfectionImages()
 	src.add_stats(rand(12,16),rand(14,18),rand(6,6),14) //gives stats str, end, int, dex
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
@@ -276,6 +277,7 @@
 	client?.color = null
 	src.health = 450
 	src.maxHealth = 450
+	src.warfare_language_shit(LANGUAGE_TYRANID)
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
 /mob/living/carbon/human/genestealer/proc/gsheal()

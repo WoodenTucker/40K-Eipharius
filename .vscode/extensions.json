@@ -1,7 +1,6 @@
 {
     "recommendations": [
         "eamodio.gitlens",
-        "coenraads.bracket-pair-colorizer-2",
         "platymuus.dm-langclient",
         "gbasood.byond-dm-language-support"
     ]
