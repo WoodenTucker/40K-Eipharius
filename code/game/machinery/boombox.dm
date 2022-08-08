@@ -168,7 +168,7 @@
 
 /obj/item/device/cassette/unknownsoldier/New()
 	..()
-	name = "Titansbane - Cadia Stands"
+	name = "The Unknown Soldier"
 	a_side = pick('sound/newmusic/TAPE-unknownsoldier.ogg')
 	b_side = pick('sound/newmusic/TAPE-unknownsoldier.ogg')
 	sound_inside = a_side
