@@ -216,13 +216,10 @@ default behaviour is:
 	set category = "IC"
 	if(stat == DEAD)
 		return
-	if ((src.health < src.maxHealth/2) || is_asystole()) // Health below half of maxhealth, or asystole.
-		src.adjustBrainLoss(src.health + src.maxHealth * 2) // Deal 2x health in BrainLoss damage, as before but variable.
+	else 
+		src.adjustBrainLoss(src.health + src.maxHealth * 4) // Deal 4x health in BrainLoss damage, as before but variable.
 		updatehealth()
-		to_chat(src, "<span class='notice'>You have given up life and succumbed to death.</span>")
-	else
-		to_chat(src, "<span class='notice'>You are too alive to die.</span>")
-
+		to_chat(src, "<span class='notice'>You have given up on life and succumbed to the warp.</span>")
 
 /mob/living/proc/updatehealth()
 	if(status_flags & GODMODE)
