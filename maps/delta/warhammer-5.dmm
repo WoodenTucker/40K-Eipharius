@@ -1270,6 +1270,10 @@
 	},
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"dW" = (
+/obj/structure/closet/crate/operations,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "dX" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/steel_reinforced,
@@ -1363,6 +1367,11 @@
 /obj/random/loot/sidearmammo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"fe" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "fk" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/suit_storage_unit/engineering,
@@ -1378,10 +1387,6 @@
 "fr" = (
 /turf/simulated/floor/carpet/red,
 /area/centcom)
-"fA" = (
-/obj/structure/largecrate/animal/cat,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "fD" = (
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1672,6 +1677,17 @@
 "hF" = (
 /obj/effect/floor_decal/turf/metal/three,
 /turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"hN" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/rack/dark,
+/obj/random/loot/guardgear,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/random/loot/guardgear,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/medical/full,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "hO" = (
 /obj/effect/wingrille_spawn/reinforced_phoron/full,
@@ -2476,17 +2492,6 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"kZ" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/rack/dark,
-/obj/random/loot/guardgear,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/random/loot/guardgear,
-/obj/item/storage/belt/medical/full,
-/obj/item/storage/belt/medical/full,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "lc" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -2776,10 +2781,6 @@
 /obj/item/clothing/head/helmet/scout,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
-"oV" = (
-/obj/structure/closet/crate/ateopoine,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "pf" = (
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/wall/techno,
@@ -2821,36 +2822,6 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"pB" = (
-/obj/structure/closet/crate/secure/biohazard,
-/obj/item/clothing/glasses/science,
-/obj/random/tech_supply,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
-/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
-/obj/item/reagent_containers/hypospray/autoinjector/detox,
-/obj/item/reagent_containers/glass/bottle/chloralhydrate,
-/obj/item/reagent_containers/glass/bottle/chloralhydrate,
-/obj/item/reagent_containers/glass/bottle/cyanide,
-/obj/item/storage/box/syringes,
-/obj/item/storage/box/syringes,
-/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
-	name = "autoinjector[MB]"
-	},
-/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
-	name = "autoinjector[MB]"
-	},
-/obj/item/reagent_containers/hypospray/autoinjector/detox,
-/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
-/obj/item/reagent_containers/glass/jar/sulphuric_acid,
-/obj/item/toothpuller,
-/obj/item/toothpuller,
-/obj/item/reagent_containers/syringe/inaprovaline,
-/obj/item/reagent_containers/syringe/inaprovaline,
-/obj/item/grenade/chem_grenade/cleaner,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "pD" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light{
@@ -3021,16 +2992,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"sM" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/item/reagent_containers/spray/cleaner,
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"sO" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/item/reagent_containers/spray/cleaner,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "sX" = (
 /obj/machinery/atmospherics/pipe/tank/air,
 /turf/simulated/floor/plating,
@@ -3060,6 +3021,10 @@
 	color = "grey"
 	},
 /area/centcom)
+"tc" = (
+/obj/structure/closet/crate/miner,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "tm" = (
 /obj/structure/table/steel,
 /obj/item/storage/box/cups,
@@ -3824,16 +3789,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"CZ" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/glass/jar/radium,
-/obj/item/reagent_containers/glass/jar/sulphuric_acid,
-/obj/item/reagent_containers/glass/jar/ethanol,
-/obj/item/reagent_containers/glass/jar/hydrochloric,
-/obj/item/toothpuller,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Db" = (
 /obj/structure/bed/chair,
 /obj/effect/landmark{
@@ -4037,6 +3992,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"FW" = (
+/obj/structure/torchwall/service,
+/turf/simulated/wall/techno,
+/area/space)
 "Gc" = (
 /turf/simulated/wall/r_wall,
 /area/centcom)
@@ -4161,6 +4120,16 @@
 /obj/item/shield/energy,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"HY" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/table/steel_reinforced,
+/obj/item/reagent_containers/glass/jar/radium,
+/obj/item/reagent_containers/glass/jar/sulphuric_acid,
+/obj/item/reagent_containers/glass/jar/ethanol,
+/obj/item/reagent_containers/glass/jar/hydrochloric,
+/obj/item/toothpuller,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ia" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -4233,6 +4202,11 @@
 	icon_state = "rwall3"
 	},
 /area/centcom)
+"IT" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ja" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
@@ -4519,7 +4493,7 @@
 /turf/simulated/floor/plating,
 /area/centcom)
 "MR" = (
-/obj/structure/closet/crate/miner,
+/obj/structure/largecrate/animal/cat,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "MS" = (
@@ -5162,10 +5136,6 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"VT" = (
-/obj/structure/closet/crate/operations,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "VV" = (
 /obj/structure/table/rack,
 /obj/machinery/light{
@@ -5220,6 +5190,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Wo" = (
+/obj/structure/closet/crate/ateopoine,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Wp" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -5329,6 +5303,36 @@
 	icon_state = "fakewindows"
 	},
 /area/centcom)
+"Yv" = (
+/obj/structure/closet/crate/secure/biohazard,
+/obj/item/clothing/glasses/science,
+/obj/random/tech_supply,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/detox,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/cyanide,
+/obj/item/storage/box/syringes,
+/obj/item/storage/box/syringes,
+/obj/item/reagent_containers/hypospray/autoinjector/detox,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/glass/jar/sulphuric_acid,
+/obj/item/toothpuller,
+/obj/item/toothpuller,
+/obj/item/reagent_containers/syringe/inaprovaline,
+/obj/item/reagent_containers/syringe/inaprovaline,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
+	name = "autoinjector(MB)"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
+	name = "autoinjector(MB)"
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "YE" = (
 /turf/simulated/wall/voxshuttle,
 /area/centcom)
@@ -5338,10 +5342,6 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Zb" = (
-/obj/structure/torchwall/service,
-/turf/simulated/wall/techno,
-/area/space)
 "Zc" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -9766,10 +9766,10 @@ Gk
 vE
 ax
 ax
-Zb
-Zb
-Zb
-Zb
+FW
+FW
+FW
+FW
 iw
 iw
 iw
@@ -10406,8 +10406,8 @@ ae
 ae
 jj
 iO
-fA
 MR
+tc
 iO
 iH
 iO
@@ -10488,7 +10488,7 @@ aZ
 cp
 cp
 lU
-kZ
+hN
 cp
 cz
 cX
@@ -10508,8 +10508,8 @@ ix
 ix
 jo
 iO
-pB
-oV
+Yv
+Wo
 iO
 mD
 iO
@@ -10611,7 +10611,7 @@ ao
 jj
 iO
 iO
-VT
+dW
 iO
 iH
 iO
@@ -11110,7 +11110,7 @@ cr
 cr
 dC
 gA
-sM
+IT
 gA
 lU
 lU
@@ -12023,7 +12023,7 @@ cu
 eE
 lU
 cn
-sO
+fe
 bP
 bP
 gz
@@ -12230,7 +12230,7 @@ dh
 lU
 dX
 bP
-CZ
+HY
 lU
 dJ
 dN
