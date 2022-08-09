@@ -153,6 +153,7 @@
 	},
 /obj/effect/floor_decal/turf/nf2,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/toothpuller,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
 "aw" = (
@@ -1877,6 +1878,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
+"jv" = (
+/obj/effect/floor_decal/newcorner/blue/solid,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled{
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/service/chapel)
 "jw" = (
 /obj/structure/bed/chair/office/dark,
 /obj/effect/floor_decal/turf/brick/two,
@@ -3010,23 +3018,6 @@
 "oI" = (
 /obj/effect/floor_decal/turf/surgery2,
 /obj/structure/sewers/wallholebigbrk,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
-"oJ" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/structure/cult/talisman{
-	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
-	name = "Ancient Table"
-	},
-/obj/item/melee/trench_axe{
-	block_chance = 35;
-	color = "grey";
-	desc = "A strange alien axe used for unknown purposes, it's construction seems ritualistic in nature.";
-	force = 38;
-	name = "Runic Axe"
-	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -6310,6 +6301,9 @@
 /obj/item/card/id/ring/disgracedmedicae{
 	name = "ordos bracelet"
 	},
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/robot/antitoxin,
+/obj/item/reagent_containers/glass/bottle/toxin,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "DX" = (
@@ -7074,11 +7068,10 @@
 	desc = "A dusty table constructed from stone - handcut and covered in runic scripture.";
 	name = "Ancient Table"
 	},
-/obj/item/toy/katana{
+/obj/item/toy/katana/strong{
+	force = 36;
 	color = "grey";
-	desc = "A fine blade far exceeding the craftsmanship of the mechanicus.";
-	force = 39;
-	name = "Seolite Blade"
+	name = "seolite blade"
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -7419,6 +7412,8 @@
 "Ij" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/rack/dark,
+/obj/item/device/cassette/brokensaint,
+/obj/item/device/cassette/inqlog1,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Ik" = (
@@ -9447,6 +9442,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"RG" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "RI" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -10278,6 +10278,7 @@
 	access = list(333,211);
 	name = "monastary key"
 	},
+/obj/item/device/cassette/inqlog1,
 /turf/simulated/floor/tiled{
 	icon_state = "white1"
 	},
@@ -14353,7 +14354,7 @@ PI
 SI
 Xy
 Xy
-oJ
+GH
 UV
 EO
 Xy
@@ -30715,7 +30716,7 @@ Tn
 uW
 cJ
 Gt
-Gt
+jv
 sn
 Tn
 PI
@@ -34311,7 +34312,7 @@ HK
 HK
 hR
 Tn
-Of
+RG
 Of
 Of
 Of

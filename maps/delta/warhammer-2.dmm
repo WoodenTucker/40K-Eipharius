@@ -203,9 +203,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "aH" = (
-/obj/effect/landmark/animal/bloodletter1,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
+/obj/structure/pit/closed/grave,
+/obj/structure/gravemarker/random,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "aI" = (
 /obj/structure/table/standard{
 	color = "grey"
@@ -883,6 +884,9 @@
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/item/stack/thrones3/ten,
 /obj/item/stack/thrones3/ten,
+/obj/structure/closet/crate{
+	anchored = 1
+	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "ct" = (
@@ -1339,6 +1343,7 @@
 /obj/item/paper/priest,
 /obj/random/loot/sidearms,
 /obj/effect/floor_decal/turf/carpetn00,
+/obj/item/device/boombox,
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/oa/service/chapel)
 "dE" = (
@@ -2673,8 +2678,8 @@
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/table/rack,
 /obj/effect/floor_decal/turf/metal/two,
-/obj/item/clothing/head/helmet/space/void/atmos/alt,
 /obj/item/clothing/head/helmet/space/void/engineering/salvage,
+/obj/item/clothing/head/helmet/space/void/medical,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "hj" = (
@@ -4010,6 +4015,7 @@
 /obj/structure/torchwall{
 	pixel_y = 16
 	},
+/obj/item/device/boombox,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "kJ" = (
@@ -4484,12 +4490,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "lT" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/villageinside)
+/obj/effect/floor_decal/turf/brick,
+/obj/machinery/computer/bountycogitator,
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "lU" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/effect/floor_decal/newcorner/plating{
@@ -4854,6 +4858,15 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"mM" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 6;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/new_wood,
+/area/cadiaoutpost/oa/service/chapel)
 "mO" = (
 /obj/structure/catwalk,
 /obj/structure/warfare/barricade/concrete_barrier,
@@ -6970,7 +6983,6 @@
 /obj/effect/floor_decal/turf/metal/two,
 /obj/structure/table/rack,
 /obj/random/loot/sidearms,
-/obj/random/loot/sidearms,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "xA" = (
@@ -6979,6 +6991,7 @@
 /obj/effect/floor_decal/turf/metal/two,
 /obj/item/device/cassette/titansbane,
 /obj/item/device/cassette/unknownsoldier,
+/obj/item/device/cassette/daboss,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "xC" = (
@@ -8293,12 +8306,18 @@
 /obj/machinery/door/unpowered/inn/room2{
 	name = "locked room";
 	req_access = list(212);
-	maxhealth = 3000
+	maxhealth = 4000
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"HN" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/grenade/chem_grenade/cleaner,
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "HO" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /obj/structure/bookcase,
@@ -8458,6 +8477,10 @@
 /obj/effect/floor_decal/turf/barnew,
 /obj/structure/window_frame,
 /obj/structure/grille,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
+"Jh" = (
+/obj/item/device/cassette/daboss,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "Jr" = (
@@ -8844,6 +8867,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"Mc" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/village)
 "Mf" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -9347,6 +9376,16 @@
 /obj/structure/stairs/west,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"Qs" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/newcorner/plating,
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/metal/three,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/tradefloor)
 "Qy" = (
 /obj/structure/table/standard{
 	color = "grey";
@@ -9368,12 +9407,13 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "QH" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
+/obj/effect/landmark/start/warden{
+	name = "Tempestus Scion"
 	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/village)
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "QI" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/newcorner/plating,
@@ -10385,12 +10425,6 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
-/obj/item/device/cassette/tape6,
-/obj/item/device/cassette/tape5,
-/obj/item/device/cassette/tape4,
-/obj/item/device/cassette/tape3,
-/obj/item/device/cassette/tape2,
-/obj/item/device/cassette/tape1,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "Yk" = (
@@ -17041,7 +17075,7 @@ rO
 ub
 ae
 ae
-PD
+ae
 ae
 hD
 ae
@@ -21428,7 +21462,7 @@ YV
 YV
 rO
 ae
-Bw
+ae
 Nz
 ae
 ae
@@ -26436,7 +26470,7 @@ fM
 iP
 fM
 fM
-dy
+aH
 fM
 Ns
 Ns
@@ -26691,7 +26725,7 @@ fM
 fM
 fM
 fM
-dy
+aH
 fM
 Ns
 lQ
@@ -30532,7 +30566,7 @@ ro
 ro
 ro
 aY
-dJ
+HN
 dJ
 eg
 dD
@@ -30549,7 +30583,7 @@ dO
 bu
 bu
 bu
-bu
+lT
 bu
 bu
 bu
@@ -31820,7 +31854,7 @@ ro
 ro
 ro
 aY
-en
+mM
 en
 en
 aY
@@ -34621,7 +34655,7 @@ MR
 MR
 bz
 MR
-MR
+QH
 MR
 MR
 MR
@@ -34878,7 +34912,7 @@ WG
 Wy
 bI
 AI
-MR
+QH
 MR
 MR
 MR
@@ -35409,7 +35443,7 @@ aX
 aX
 aX
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -35666,7 +35700,7 @@ aX
 aX
 aX
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -35923,7 +35957,7 @@ aX
 aX
 aX
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -36180,7 +36214,7 @@ aX
 aX
 vE
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -36437,7 +36471,7 @@ aX
 aX
 aX
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -36694,7 +36728,7 @@ aX
 aX
 aX
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -36951,7 +36985,7 @@ aX
 aX
 aX
 aX
-kx
+aX
 Ns
 Ns
 Ns
@@ -37207,8 +37241,8 @@ aX
 aX
 aX
 aX
-kx
-kx
+aX
+aX
 Ns
 Ns
 Ns
@@ -37990,7 +38024,7 @@ Ns
 Ns
 Ns
 ha
-jL
+Jh
 lF
 jL
 jL
@@ -43906,17 +43940,17 @@ fM
 cu
 fM
 fM
-kf
-kf
-fM
-kf
 fM
 fM
-kf
-kf
-kf
-Ns
-kf
+fM
+fM
+fM
+fM
+fM
+fM
+fM
+fM
+fM
 fM
 kf
 fM
@@ -44161,18 +44195,18 @@ kJ
 kb
 kb
 fM
-Ns
-QH
-Ns
-WX
-Ns
-ot
-lT
-ot
-ot
-kf
-Ns
-Ns
+fM
+Qo
+fM
+Mc
+fM
+fM
+Qo
+fM
+fM
+fM
+fM
+fM
 fM
 kf
 fM
@@ -44696,7 +44730,7 @@ fM
 kf
 kf
 Qe
-Sy
+Qs
 dT
 dT
 dT
@@ -70027,7 +70061,7 @@ xE
 xE
 xE
 ae
-ae
+be
 ae
 ae
 ae
@@ -71578,7 +71612,7 @@ ae
 ae
 ae
 ae
-aH
+ae
 ae
 ae
 ae

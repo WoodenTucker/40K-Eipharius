@@ -514,7 +514,6 @@
 "bS" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
-/obj/random/loot/heavystubber,
 /obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
@@ -662,22 +661,32 @@
 /obj/machinery/shower,
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
-/obj/item/clothing/glasses/thermal/plain/eyepatch,
 /obj/item/clothing/glasses/night,
+/obj/item/clothing/head/inqhelm/stealth{
+	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
+/obj/item/clothing/head/inqhelm/rare{
+	armor = list("melee" = 40, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cm" = (
 /obj/structure/toilet,
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
-/obj/item/clothing/suit/armor/bulletproof/vest,
-/obj/item/clothing/head/helmet/facecover,
-/obj/item/clothing/head/welding/knight,
-/obj/item/clothing/gloves/cyborg,
+/obj/item/clothing/suit/armor/bulletproof/vest{
+	armor = list("melee" = 50, "bullet" = 65, "laser" = 65, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0)
+	},
 /obj/item/clothing/gloves/thick,
 /obj/item/clothing/under/syndicate/tacticool,
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp,
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cn" = (
@@ -715,10 +724,12 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ct" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Door - Inquisitor's Bedchamber"
-	},
 /obj/effect/floor_decal/turf/plating,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Secure Door";
+	req_access = list(302)
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cu" = (
@@ -737,7 +748,6 @@
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
 /obj/random/loot/lightlasgun,
-/obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cx" = (
@@ -751,10 +761,10 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cy" = (
 /obj/structure/table/rack/dark,
-/obj/item/melee/inqcs,
-/obj/item/melee/inqcs,
-/obj/item/melee/inqcs,
 /obj/effect/floor_decal/turf/brick,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cz" = (
@@ -963,7 +973,6 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/obj/structure/closet/crate/ateopoine,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cZ" = (
@@ -1369,6 +1378,10 @@
 "fr" = (
 /turf/simulated/floor/carpet/red,
 /area/centcom)
+"fA" = (
+/obj/structure/largecrate/animal/cat,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "fD" = (
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -2463,6 +2476,17 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"kZ" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/rack/dark,
+/obj/random/loot/guardgear,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/random/loot/guardgear,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/medical/full,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "lc" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -2752,6 +2776,10 @@
 /obj/item/clothing/head/helmet/scout,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
+"oV" = (
+/obj/structure/closet/crate/ateopoine,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "pf" = (
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/wall/techno,
@@ -2793,6 +2821,36 @@
 /obj/structure/reagent_dispensers/fueltank,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"pB" = (
+/obj/structure/closet/crate/secure/biohazard,
+/obj/item/clothing/glasses/science,
+/obj/random/tech_supply,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/detox,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/cyanide,
+/obj/item/storage/box/syringes,
+/obj/item/storage/box/syringes,
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
+	name = "autoinjector[MB]"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
+	name = "autoinjector[MB]"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/detox,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/glass/jar/sulphuric_acid,
+/obj/item/toothpuller,
+/obj/item/toothpuller,
+/obj/item/reagent_containers/syringe/inaprovaline,
+/obj/item/reagent_containers/syringe/inaprovaline,
+/obj/item/grenade/chem_grenade/cleaner,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "pD" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light{
@@ -2918,7 +2976,9 @@
 /area/centcom)
 "rD" = (
 /obj/structure/closet/emcloset,
-/obj/item/storage/briefcase/crimekit,
+/obj/item/device/cassette/brokensaint,
+/obj/item/device/cassette/inqlog1,
+/obj/item/device/boombox,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rI" = (
@@ -2961,6 +3021,16 @@
 	color = "grey"
 	},
 /area/centcom)
+"sM" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"sO" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "sX" = (
 /obj/machinery/atmospherics/pipe/tank/air,
 /turf/simulated/floor/plating,
@@ -3068,7 +3138,8 @@
 	color = "#36261B"
 	},
 /obj/item/material/sword/commissword{
-	name = "Ornate Sword"
+	name = "Runic Sabre";
+	force = 35
 	},
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -3102,11 +3173,9 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
 /obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
-/obj/random/loot/randomarmor,
+/obj/item/clothing/suit/armor/explorer,
+/obj/item/clothing/suit/armor/bountyhunter,
+/obj/item/clothing/suit/armor/guardsman/mercenary/carapace,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ul" = (
@@ -3755,6 +3824,16 @@
 	color = "grey"
 	},
 /area/centcom)
+"CZ" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/table/steel_reinforced,
+/obj/item/reagent_containers/glass/jar/radium,
+/obj/item/reagent_containers/glass/jar/sulphuric_acid,
+/obj/item/reagent_containers/glass/jar/ethanol,
+/obj/item/reagent_containers/glass/jar/hydrochloric,
+/obj/item/toothpuller,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Db" = (
 /obj/structure/bed/chair,
 /obj/effect/landmark{
@@ -4123,6 +4202,7 @@
 /obj/structure/closet/emcloset,
 /obj/item/crowbar,
 /obj/item/wrench,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "IE" = (
@@ -4439,10 +4519,9 @@
 /turf/simulated/floor/plating,
 /area/centcom)
 "MR" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/largecrate/animal/cat/bones,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/obj/structure/closet/crate/miner,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "MS" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_alc/full,
@@ -5083,6 +5162,10 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"VT" = (
+/obj/structure/closet/crate/operations,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "VV" = (
 /obj/structure/table/rack,
 /obj/machinery/light{
@@ -5255,6 +5338,10 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Zb" = (
+/obj/structure/torchwall/service,
+/turf/simulated/wall/techno,
+/area/space)
 "Zc" = (
 /obj/structure/closet/secure_closet/medical1,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -9679,10 +9766,10 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
+Zb
+Zb
+Zb
+Zb
 iw
 iw
 iw
@@ -10319,8 +10406,8 @@ ae
 ae
 jj
 iO
-iO
-iO
+fA
+MR
 iO
 iH
 iO
@@ -10401,7 +10488,7 @@ aZ
 cp
 cp
 lU
-cd
+kZ
 cp
 cz
 cX
@@ -10421,8 +10508,8 @@ ix
 ix
 jo
 iO
-iO
-iO
+pB
+oV
 iO
 mD
 iO
@@ -10507,7 +10594,7 @@ cp
 cp
 cp
 cp
-MR
+cp
 lU
 dn
 cU
@@ -10524,7 +10611,7 @@ ao
 jj
 iO
 iO
-iO
+VT
 iO
 iH
 iO
@@ -11023,7 +11110,7 @@ cr
 cr
 dC
 gA
-gA
+sM
 gA
 lU
 lU
@@ -11936,7 +12023,7 @@ cu
 eE
 lU
 cn
-bP
+sO
 bP
 bP
 gz
@@ -12143,7 +12230,7 @@ dh
 lU
 dX
 bP
-gW
+CZ
 lU
 dJ
 dN
