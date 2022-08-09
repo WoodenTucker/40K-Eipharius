@@ -6,6 +6,7 @@
 	/datum/job/envoy,
 	/datum/job/inquisitor,
 	/datum/job/acolyte,
+	/datum/job/scion,
 	/datum/job/ig/commissar,
 	/datum/job/ig/sergeant,
 	/datum/job/ig/guardsman,
