@@ -204,7 +204,7 @@
 
 /obj/item/clothing/under/guard/uniform/sisterofbattle
 	name = "Adepta Sororitas Bodysuit"
-	desc = "If you can inspect this, you're a coomer, do not ERP."
+	desc = "The bodysuit worn by Adepta Sororitas underneath their Power Armour."
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	species_restricted = list(SPECIES_HUMAN)

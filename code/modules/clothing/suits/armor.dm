@@ -776,10 +776,10 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/sisterofbattle/training
 	name = "Scholam Power Armor"
-	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Ember Thorn, this particular pattern has been maintained for many terran centuries, with scriptures across all speaking to The Beatie and her crusade across the Sabbat worlds."
+	desc = "The Ancient and Deconsecrated Power Armour adorned by Scholam Progena during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, this suit mainly serves to acclimatize the Progena for Heavy Armour but is still formidable and has legible scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 55, bullet = 60, laser = 55, energy = 50, bomb = 60, bio = 100, rad = 50) // This is power armor forged centuries ago and is for use by the Schola Progena who wish to become sisters of battle.
+	armor = list(melee = 55, bullet = 60, laser = 55, energy = 50, bomb = 60, bio = 100, rad = 50)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
