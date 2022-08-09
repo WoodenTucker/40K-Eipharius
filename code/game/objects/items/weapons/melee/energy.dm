@@ -324,6 +324,7 @@
 /obj/item/melee/energy/powersword/astartes/ingelldina
 	name = "Ingelldina Pattern Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, this one is very long and heavy, clearly having been made for one of the sons of the emperor."
+	item_state = "inqchainsword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
 	active_force = 44 //should be enough to cut off most limbs
 	active_throwforce = 44
