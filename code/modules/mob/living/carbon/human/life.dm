@@ -1391,21 +1391,21 @@
 		var/messageTimer = 0
 		heal_organ_damage(0.2, 0.2)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-1.5)
+			adjustBrainLoss(-0.5)
 
 		if(src.getBruteLoss() > 0)
-			adjustBruteLoss(-1.5)
+			adjustBruteLoss(-1.8)
 
 		if(src.getToxLoss() > 0)
 			adjustToxLoss(-1.5)
 
 		if(src.getFireLoss() > 0)
-			adjustFireLoss(-1.5)
+			adjustFireLoss(-1.8)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-1.5)
+			adjustOxyLoss(-1.8)
 
-		if(messageTimer > 150)
+		if(messageTimer > 300)
 			messageTimer = 0
 			restore_blood()
 			blinded = 0
@@ -1425,28 +1425,27 @@
 		return
 
 	if(species.name == "Tyranids") //Simple way to species check
-		to_chat(src, "[species.name]")
 		shock_stage = 0
 		var/messageTimer = 0
 		heal_organ_damage(0.4, 0.4)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-2.5)
+			adjustBrainLoss(-1.5)
 
 		if(src.getBruteLoss() > 0)
-			adjustBruteLoss(-3.0)
+			adjustBruteLoss(-3.5)
 
 		if(src.getToxLoss() > 0)
 			adjustToxLoss(-3.0)
 
 		if(src.getFireLoss() > 0)
-			adjustFireLoss(-3.0)
+			adjustFireLoss(-3.5)
 
 		if(src.getOxyLoss() > 0)
 			adjustOxyLoss(-3.0)
 
 		if(messageTimer > 150)
 			messageTimer = 0
-			to_chat(src, "Your stored biomass kicks into overdrive, regenerating damage and filling your ateries with fresh blood.")
+			to_chat(src, "Your stored biomass kicks into overdrive, regenerating damage and filling your arteries with fresh blood.")
 			restore_blood()
 			blinded = 0
 			eye_blind = 0
