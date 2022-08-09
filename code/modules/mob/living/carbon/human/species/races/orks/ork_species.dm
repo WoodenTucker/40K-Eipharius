@@ -8,7 +8,7 @@
 	min_age = 1
 	max_age = 65
 	total_health = 200
-	var/pain_power = 80
+	var/pain_power = 120
 	gluttonous = GLUT_ITEM_NORMAL
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
