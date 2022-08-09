@@ -51,8 +51,8 @@
 	head = /obj/item/clothing/head/helmet/scion
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadian
-	id = /obj/item/card/id/inquisition/principal_agent
-	l_ear = /obj/item/device/radio/headset/inquisition
+	id = /obj/item/card/id/dog_tag/guardsman
+	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
