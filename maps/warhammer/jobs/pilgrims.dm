@@ -57,6 +57,8 @@ Pilgrim Fate System
 
 	switch(classchoice)
 		if("Sherpa")
+			U.add_stats(rand(11,14), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/ushanka2, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -67,6 +69,8 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 		if("Penitent")
+			U.add_stats(rand(15,17), rand(13,15), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(2,6),rand(1,1),rand(1,1),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
@@ -75,8 +79,8 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 		if("Bounty Hunter")
-			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //veteran hunter
-			U.add_skills(rand(5,8),rand(5,8),rand(1,3),0,0)
+			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (8,12)) //veteran hunter
+			U.add_skills(rand(6,8),rand(2,7),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/bountyhead, slot_head)
@@ -89,6 +93,8 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a Sergeant in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Merchant")
+			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(2,8),rand(1,4),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/head/smokingcap, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/merchant, slot_wear_suit)
@@ -100,6 +106,8 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 		if("Musician")
+			U.add_stats(rand(8,16), rand(8,16), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(1,8),rand(1,4),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/musician, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/musichat, slot_head)
@@ -110,7 +118,8 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Miner")
-			U.add_stats(rand(10,13),rand(8,12),rand(10,12),8)
+			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(1,5),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
@@ -121,7 +130,8 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Stalker")
-			U.add_skills(rand(1,3),rand(5,8),0,0,0)
+			U.add_stats(rand(12,15), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
@@ -135,6 +145,8 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Scum")
+			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(1,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/scum, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head)
@@ -149,7 +161,8 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme you once again find yourself on a new world. You'll do whatever it takes for a throne or two. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Disgraced Medicae")
-			U.add_skills(0,0,rand(5,9),0,rand(5,9))
+			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(1,6),rand(3,5),rand(1,2),rand(3,5)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
