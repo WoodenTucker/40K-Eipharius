@@ -364,7 +364,7 @@
 	find_type = ARCHAEO_KATANA
 
 /obj/item/archaeological_find/katana/spawn_item()
-	return new /obj/item/material/sword/katana(loc)
+	return new /obj/item/toy/katana(loc)
 
 /obj/item/archaeological_find/parts
 	item_type = "parts"
