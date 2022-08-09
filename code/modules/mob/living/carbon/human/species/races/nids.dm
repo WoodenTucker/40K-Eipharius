@@ -24,7 +24,7 @@
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
 
 	 )
-	slowdown = -0.8
+	slowdown = -0.4
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/rendingclaws,
@@ -36,13 +36,9 @@
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.9 // Hardened carapace.
-	base_auras = list(
-		/obj/aura/regenerating/human/nid
-		)
+	brute_mod = 0.8 // Hardened carapace.
 
-
-	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_PAIN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
+	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
 
 	blood_color = "#05ee05"

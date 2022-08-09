@@ -265,12 +265,34 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/heavymelee/spawn_choices()
-	return list(/obj/item/melee/trench_axe = 22,
+	return list(/obj/item/melee/trench_axe = 16,
 				/obj/item/melee/inqcs = 1,
 				/obj/item/material/sword/cane = 6,
 				/obj/item/melee/pcsword/eviscerator = 1,
 				/obj/item/melee/classic_baton/trench_club = 8,
 				/obj/item/melee/telebaton = 6,
+				/obj/item/toy/katana = 3,
+				/obj/item/toy/katana/strong = 2,
+				/obj/item/material/sword/machete = 12,
+				/obj/item/material/sword/sabre = 4)
+
+/obj/random/loot/meleespawner
+	name = "Random Melee Spawner"
+	desc = "Spawns light and heavy melee.."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
+
+/obj/random/loot/meleespawner/spawn_choices()
+	return list(/obj/item/material/sword/combat_knife = 8,
+				/obj/item/material/sword/combat_knife/rare = 7,
+				/obj/item/melee/trench_axe = 16,
+				/obj/item/melee/inqcs = 1,
+				/obj/item/material/sword/cane = 6,
+				/obj/item/melee/pcsword/eviscerator = 1,
+				/obj/item/melee/classic_baton/trench_club = 8,
+				/obj/item/melee/telebaton = 6,
+				/obj/item/toy/katana = 3,
+				/obj/item/toy/katana/strong = 2,
 				/obj/item/material/sword/machete = 12,
 				/obj/item/material/sword/sabre = 4)
 
@@ -459,37 +481,20 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/energy/las/laspistol/mechanicus = 1,
-				/obj/item/gun/projectile/slugrevolver = 2,
-				/obj/item/gun/projectile/lockebolter = 1,
-				/obj/item/gun/projectile/talon/renegade = 1,
+	return list(/obj/item/gun/energy/las/laspistol/mechanicus = 4,
+				/obj/item/gun/projectile/slugrevolver = 8,
+				/obj/item/gun/projectile/lockebolter = 2,
+				/obj/item/gun/projectile/talon/renegade = 3,
 				/obj/item/gun/projectile/automatic/stubber = 6,
-				/obj/item/gun/projectile/bolter_pistol = 2,
-				/obj/item/gun/energy/las/lasgun/rare = 5,
+				/obj/item/gun/projectile/automatic/autogrim = 6,
+				/obj/item/gun/projectile/bolter_pistol = 4,
+				/obj/item/gun/energy/las/lasgun/rare = 10,
 				/obj/item/gun/projectile/meltagun = 1,
-				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 4,
-				/obj/item/gun/energy/las/lasgun/catachan = 2,
-				/obj/item/gun/energy/las/lasgun/tinkered = 4,
-				/obj/item/gun/energy/las/lasgun/longlas = 2,
-				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 4)
-
-/obj/random/loot/meleespawner
-	name = "Random Melee Spawner"
-	desc = "This is a weapon loot spawner with a high chance of spawning common light melee weapons."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
-
-/obj/random/loot/meleespawner/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 8,
-				/obj/item/material/sword/combat_knife/rare = 7,
-				/obj/item/melee/trench_axe = 12,
-				/obj/item/melee/inqcs = 1,
-				/obj/item/melee/pcsword/eviscerator = 1,
-				/obj/item/melee/classic_baton/trench_club = 5,
-				/obj/item/melee/telebaton = 6,
-				/obj/item/material/sword/machete = 8,
-				/obj/item/material/sword/sabre = 4,
-				/obj/item/melee/mercycs = 1)
+				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 8,
+				/obj/item/gun/energy/las/lasgun/catachan = 4,
+				/obj/item/gun/energy/las/lasgun/tinkered = 7,
+				/obj/item/gun/energy/las/lasgun/longlas = 4,
+				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 7)
 
 /obj/random/loot/randomarmor
 	name = "Random Armor"

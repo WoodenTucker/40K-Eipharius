@@ -2066,6 +2066,7 @@
 	color = "grey";
 	req_access = list(33)
 	},
+/obj/item/reagent_containers/spray/cleaner,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -3732,6 +3733,12 @@
 /obj/structure/sign/art/lordgovenor{
 	pixel_y = 30
 	},
+/turf/simulated/floor/wood{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/offices/seneschal)
+"nm" = (
+/obj/item/reagent_containers/spray/cleaner,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -5551,6 +5558,11 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
+"Hm" = (
+/obj/effect/floor_decal/newcorner/purple/diagonal,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/research)
 "Hp" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -6693,6 +6705,10 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/research)
+"UC" = (
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/hallway/centralhall)
 "UK" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 1
@@ -35274,7 +35290,7 @@ MQ
 MQ
 rv
 bB
-nq
+UC
 nq
 Ng
 aN
@@ -35284,7 +35300,7 @@ aU
 di
 cD
 cD
-cD
+Hm
 uL
 Xn
 Gy
@@ -37068,7 +37084,7 @@ Tf
 EP
 fE
 pY
-rV
+nm
 rV
 rV
 fE

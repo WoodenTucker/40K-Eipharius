@@ -106,7 +106,7 @@
 		if(91)
 			new/obj/item/device/soulstone(src)
 		if(92)
-			new/obj/item/material/sword/katana(src)
+			new/obj/item/toy/katana(src)
 		if(93)
 			new/obj/item/storage/firstaid/combat(src) // Probably the least OP
 		if(94) // Why the hell not
