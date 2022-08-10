@@ -278,14 +278,14 @@
 //Shitty shotgun
 
 /obj/item/gun/projectile/shotgun/pump/shitty
-	name = "\improper WTX Frontier Special"
+	name = "\improper Voxlegis"
 	desc = "A common shotgun used for hunting and law enforcement. It's cheap and reliable nature is the very model of imperial culture."
-	icon_state = "winchester"
-	item_state = "winchester"
+	icon_state = "voxlegisnew"
+	item_state = "voxlegisnew"
 	wielded_item_state = "winchester-wielded"
 	str_requirement = 8
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
-	empty_icon = "winchester-e"
+	empty_icon = "voxlegisnew-e"
 	move_delay = 3
 	one_hand_penalty = 4
 	accuracy = -1.5
@@ -876,7 +876,7 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect. 
+	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect.
 	loaded_icon = "autoshotty"
 	unwielded_loaded_icon = "autoshotty"
 	wielded_loaded_icon = "autoshotty-wielded"
@@ -956,7 +956,7 @@
 	load_method = MAGAZINE
 	one_hand_penalty = 10 //its a bolter not a toy gun
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine	
+	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -988,7 +988,7 @@
 /obj/item/gun/projectile/sisterbolter
 	name = "Godwyn-De'az Pattern Bolter Rifle"
 	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
-	force = 20 //what even is this description? 
+	force = 20 //what even is this description?
 	sharp = 1
 	edge = 1
 	attack_verb = list ("stabbed", "sliced")
@@ -1022,7 +1022,7 @@
 	move_delay = 3
 	automatic = 1
 	firemodes = list()
-	accuracy = -1.5 //only one gun per round so yeah 
+	accuracy = -1.5 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
 
 /obj/item/gun/projectile/sisterbolter/update_icon()
@@ -1102,7 +1102,7 @@
 	force = 30
 	max_shells = 30
 	caliber = ".75"
-	can_jam = TRUE	
+	can_jam = TRUE
 	move_delay = 5
 	one_hand_penalty = 5
 	accuracy = -9
