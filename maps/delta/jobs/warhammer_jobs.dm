@@ -13,7 +13,7 @@
 	/datum/job/ig/guardsman/sharpshooter,
 	/datum/job/ig/whiteshield,
 	/datum/job/cmo,
-	/datum/job/doctor,
+	/* /datum/job/doctor, */
 	/datum/job/progena,
 	/datum/job/ig/medicae,
 	/datum/job/chemist,
@@ -21,12 +21,12 @@
 	/datum/job/magos,
 	/datum/job/engineer,
 	/datum/job/hop,
-	/datum/job/chef,
+	/* /datum/job/chef, */
 	/datum/job/janitor,
 	/datum/job/bartender,
-	/datum/job/mining,
-	/datum/job/cargo_tech,
-	/datum/job/qm,
+	/* /datum/job/mining, */
+	/*/datum/job/cargo_tech, */
+	/* /datum/job/qm, */
 	/datum/job/chaplain,
 	/datum/job/sisterofbattle,
 	/datum/job/qm2,
