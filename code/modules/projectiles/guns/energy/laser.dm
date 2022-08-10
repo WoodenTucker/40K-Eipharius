@@ -365,9 +365,8 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
-	icon_state = "hotshotgun"
-	item_state = "hotshotgun"
-	unloaded_icon = "ultrabolter-e"
+	icon_state = "lascar"
+	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 22
