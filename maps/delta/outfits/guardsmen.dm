@@ -109,7 +109,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
-	suit_store = /obj/item/gun/projectile/automatic/autogrim
+	suit_store = /obj/item/gun/projectile/automatic/machinepistol/a80
 	backpack_contents = list(
 	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -255,7 +255,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/autogrim
+	suit_store = /obj/item/gun/projectile/automatic/machinepistol/a80
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/ammo_magazine/mc9mmt/machinepistol = 4,
