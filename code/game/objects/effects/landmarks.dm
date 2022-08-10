@@ -486,7 +486,7 @@ Template:
 				/obj/item/gun/projectile/lockebolter = 2,
 				/obj/item/gun/projectile/talon/renegade = 3,
 				/obj/item/gun/projectile/automatic/stubber = 6,
-				/obj/item/gun/projectile/automatic/autogrim = 6,
+				/obj/item/gun/projectile/automatic/a80 = 6,
 				/obj/item/gun/projectile/bolter_pistol = 4,
 				/obj/item/gun/energy/las/lasgun/rare = 10,
 				/obj/item/gun/projectile/meltagun = 1,
