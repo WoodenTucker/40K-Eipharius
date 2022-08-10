@@ -768,6 +768,8 @@ obj/item/clothing/suit/armor
 	unacidable = 1
 	species_restricted = list(SPECIES_TYRANID)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle
