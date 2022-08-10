@@ -985,6 +985,19 @@
 	else
 		icon_state = "lockebolter-e"
 
+/obj/item/gun/projectile/lockebolter/infernobolter
+	name = "Inferno Bolter"
+	desc = "Corrupted by the warp, this bolter once was owned by a Heretic Astartes. The chaos infused into it made it capable of being fired by a human. But it's capabilities have suffered. Just as planned."
+	icon_state = "1kbolter"
+	loaded_icon = "1kbolter-30"
+	unloaded_icon = "1kbolter-e"
+/obj/item/gun/projectile/lockebolter/infernobolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "1kbolter-30"
+	else
+		icon_state = "1kbolter-e"
+
 /obj/item/gun/projectile/sisterbolter
 	name = "Godwyn-De'az Pattern Bolter Rifle"
 	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
