@@ -162,8 +162,8 @@
 /obj/item/device/cassette/titansbane/New()
 	..()
 	name = "Titansbane - Cadia Stands"
-	a_side = pick('sound/newmusic/TAPE-TITANSBANE1.ogg')
-	b_side = pick('sound/newmusic/TAPE-TITANSBANE2.ogg')
+	a_side = pick('sound/newmusic/TAPE-TITANSBANE.ogg')
+	b_side = pick('sound/newmusic/TAPE-TITANSBANE.ogg')
 	sound_inside = a_side
 
 /obj/item/device/cassette/unknownsoldier/New()
@@ -172,3 +172,28 @@
 	a_side = pick('sound/newmusic/TAPE-unknownsoldier.ogg')
 	b_side = pick('sound/newmusic/TAPE-unknownsoldier.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/daboss/New()
+	..()
+	name = "Da Boss"
+	a_side = pick('sound/newmusic/TAPE-DABOSS1.ogg')
+	b_side = pick('sound/newmusic/TAPE-DABOSS1.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/inqlog1/New()
+	..()
+	name = "Inquisition Log 1"
+	a_side = pick('sound/newmusic/TAPE-INQLOG1.ogg')
+	b_side = pick('sound/newmusic/TAPE-INQLOG1.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/brokensaint/New()
+	..()
+	name = "Broken Saint"
+	a_side = pick('sound/newmusic/TAPE-BROKENSAINT.ogg')
+	b_side = pick('sound/newmusic/TAPE-BROKENSAINT.ogg')
+	sound_inside = a_side
+
+
+
+

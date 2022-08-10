@@ -109,6 +109,15 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
+	suit_store = /obj/item/gun/projectile/automatic/autogrim
+	backpack_contents = list(
+	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel = 1
+	)
 
 ///Sharpshooter
 
@@ -246,10 +255,10 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/projectile/automatic/autogrim
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/mc9mmt/machinepistol = 4,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

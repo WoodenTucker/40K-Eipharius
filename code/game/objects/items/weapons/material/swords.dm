@@ -19,6 +19,7 @@
 	attack_verb = list("slashed", "sliced")
 	hitsound = "slash_sound"
 	var/atk_mode = SLASH
+	sharpness = TRUE
 	block_chance = 35
 	applies_material_colour = FALSE
 	grab_sound_is_loud = TRUE
@@ -126,21 +127,6 @@
 	force = 15
 	block_chance = 30
 
-/obj/item/material/sword/katana
-	name = "iron sword"
-	desc = "A well crafted iron sword."
-	icon_state = "katana"
-	item_state = "sabre"
-	slot_flags = SLOT_BELT | SLOT_BACK
-	force = 35
-	block_chance = 25
-
-/obj/item/material/sword/katana/replica
-	edge = 1
-	sharp = 1
-	force = 33
-	block_chance = 30
-
 /obj/item/material/sword/sabre
 	name = "sabre"
 	desc = "Like a claymore but for an officer."
@@ -148,6 +134,7 @@
 	item_state = "sabre"
 	force = 33
 	block_chance = 45
+	weapon_speed_delay = 7
 
 
 /obj/item/material/sword/machete
@@ -159,6 +146,7 @@
 	slot_flags = SLOT_BELT
 	force = 25
 	block_chance = 50
+	weapon_speed_delay = 6
 
 
 /obj/item/material/sword/combat_knife

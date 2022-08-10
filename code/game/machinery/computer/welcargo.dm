@@ -865,7 +865,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/ammo_magazine/autogrim(T.loc) //what they spawning
+			new /obj/item/ammo_magazine/mc9mmt/machinepistol(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["stubberammo"])
 		if(GLOB.thrones < 7) //do we got enough shekels?

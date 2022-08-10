@@ -8,8 +8,8 @@ Astartes
 	name = SPECIES_ASTARTES
 	name_plural = "Astartes"
 	primitive_form = SPECIES_HUMAN
-	brute_mod =      0.8                    // Resistance to brute.
-	burn_mod =       0.9                  //  Vunerable to laser.
+	brute_mod =      0.8                    // 
+	burn_mod =       0.8                  //  
 	unarmed_types = list(/datum/unarmed_attack/stomp/astartes, /datum/unarmed_attack/kick/astartes, /datum/unarmed_attack/punch/astartes, /datum/unarmed_attack/bite/astartes)
 	blurb = "The Space Marines or Adeptus Astartes are foremost amongst the defenders of Humanity, the greatest of the Emperor of Mankind's Warriors. They are barely human at all, but superhuman; having been made superior in all respects to a normal man by a harsh regime of genetic modification, psycho-conditioning and rigorous training. Untouched by disease and can take a wound that could kill a normal human instantly. Using ancient power armor that can augment their abilities and wielding the best weapons known to man."
 	min_age = 25
