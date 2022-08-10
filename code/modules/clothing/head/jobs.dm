@@ -203,12 +203,21 @@
 
 //blood pact here for now
 
-/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact
-	name = "Khornate Combat Helmet"
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1
+	name = "Chosen Khornate Combat Helmet"
 	desc = "Armored helmet of the blood god's chosen. KILL, MAIM, BURN!"
-	icon_state = "bloodpacthelm"
-	item_state = "bloodpacthelm"
+	icon_state = "bloodpacthelm1"
+	item_state = "bloodpacthelm1"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
+	name = "Khornate Combat Helmet"
+	desc = "Armored helmet of a khornate cultist."
+	icon_state = "bloodpacthelm2"
+	item_state = "bloodpacthelm2"
+	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+
 
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
