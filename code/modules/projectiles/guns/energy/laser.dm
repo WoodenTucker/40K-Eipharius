@@ -546,3 +546,26 @@ obj/item/gun/energy/retro
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
+
+/* //fix later. plasma icon state no work :( //
+/obj/item/gun/energy/pulse/plasmarifle
+	name = "plasma rifle"
+	desc = "A plasma rifle. Don't roll a 1!"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "ploosma"
+	item_state = "ploosma"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 12 //heavy af fam
+	accuracy = -2
+	move_delay = 6 //dont want speedy bois
+	fire_delay = 13 // something something its recharging
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 375
+	wielded_item_state = "laser-wielded"
+	*/
