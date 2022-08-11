@@ -185,6 +185,15 @@
 
 // Astra Militarum Stuff
 
+/obj/item/clothing/head/helmet/guardhelmet/marshal
+	name = "Marshal's Helmet"
+	desc = "The Marshal's Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary marshall's both to show rank and for intimidation, It is painted in black with red markings."
+	icon_state = "deathsquad"
+	item_state = "deathsquad"
+	armor = list(melee = 44, bullet = 45, laser = 35, energy = 35, bomb = 35, bio = 50, rad = 50)
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	name = "Magistratum Enforcer Helmet"
 	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in a dark blue colour."
