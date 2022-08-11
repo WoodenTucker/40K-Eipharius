@@ -5,4 +5,6 @@
 # Ranks can be anything defined in admin_ranks.txt           ~Carn   #
 ######################################################################
 
-Gorap - Host
+Apple5382 - SeniorAdmin
+Conzie - SeniorAdmin
+Daelso - Host

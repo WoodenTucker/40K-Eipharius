@@ -185,9 +185,9 @@
 
 // Astra Militarum Stuff
 
-/obj/item/clothing/head/helmet/guardhelmet/marshall
-	name = "Marshall's Helmet"
-	desc = "The Marshall's Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary marshall's both to show rank and for intimidation, It is painted in black with red markings."
+/obj/item/clothing/head/helmet/guardhelmet/marshal
+	name = "Marshal's Helmet"
+	desc = "The Marshal's Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary marshall's both to show rank and for intimidation, It is painted in black with red markings."
 	icon_state = "deathsquad"
 	item_state = "deathsquad"
 	armor = list(melee = 44, bullet = 45, laser = 35, energy = 35, bomb = 35, bio = 50, rad = 50)

@@ -26,7 +26,7 @@
 	/datum/job/qm,
 	/datum/job/qm2,
 	/datum/job/enforcer,
-	/datum/job/marshall,
+	/datum/job/marshal,
 	/datum/job/innkeeper,
 	/datum/job/hydro,
 	/datum/job/undertaker,

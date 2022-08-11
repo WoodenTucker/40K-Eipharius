@@ -22,7 +22,7 @@
 	icon_state = "cptrevolver"
 	item_state = "crevolver"
 
-/obj/item/gun/projectile/revolver/cpt/marshall
+/obj/item/gun/projectile/revolver/cpt/marshal
 	name = "Law's Retribution"
 	desc = "A modified revolver with a extended barrel and is chambered in shotgun shells. 'Lex et ordo' is engraved on the side."
 	icon_state = "marshallrevolver"

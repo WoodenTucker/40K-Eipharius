@@ -145,9 +145,9 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/under/rank/marshall
+/obj/item/clothing/under/rank/marshal
 	desc = "A modified dress uniform made for the Planetary Marshall."
-	name = "marshall's uniform"
+	name = "marshal's uniform"
 	icon_state = "warden_corporate"
 	//item_state = "warden_corporate"
 	worn_state = "warden_corporate"
