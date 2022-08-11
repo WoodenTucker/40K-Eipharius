@@ -48,7 +48,7 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
-/datum/job/marshall
+/datum/job/marshal
 	title = "Planetary Marshall"
 	supervisors = "the Rogue Trader"
 	total_positions = 1
