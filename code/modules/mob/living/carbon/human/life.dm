@@ -1386,6 +1386,8 @@
 		update_body()
 
 /mob/living/carbon/human/proc/handle_species_regen()
+	var/obj/item/organ/external/affecting
+	var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
 	if(species.name == "Astartes" || species.name == "Ork") //Simple way to species check
 		shock_stage = 0
 		var/messageTimer = 0
@@ -1413,6 +1415,10 @@
 			eye_blurry = 0
 			ear_deaf = 0
 			ear_damage = 0
+			if(limbs.len)
+				for(var/limb in limbs)
+					affecting.status &= ~ORGAN_BROKEN
+					affecting.stage = 0
 			if(species.name == "Ork")
 				to_chat(src, "I'ZE FEELIN' BETTA' 'DEN 'EVA!")
 			else
@@ -1452,6 +1458,14 @@
 			eye_blurry = 0
 			ear_deaf = 0
 			ear_damage = 0
+
+			if(limbs.len)
+				for(var/limb in limbs)
+					affecting.status &= ~ORGAN_BROKEN
+					affecting.stage = 0
+
+
+
 
 		messageTimer++
 		return
