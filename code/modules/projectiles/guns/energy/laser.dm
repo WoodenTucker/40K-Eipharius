@@ -377,10 +377,10 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
-	charge_meter = FALSE
 	charge_cost = 150
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lascar-wielded"
 
 
 	firemodes = list(
@@ -391,8 +391,14 @@ obj/item/gun/energy/retro
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
 	desc = "The favored ranged weapon of Khorne crazed cultists. Especially the automatic setting."
+	force = 38 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "bloodlasgun"
+
+	firemodes = list(
+		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+		list(mode_name="fuller automatic", burst=5, fire_delay=5.1,    one_hand_penalty=7, burst_accuracy=list(-2,-3,-4), dispersion=list(0.2, 0.3, 0.3), automatic = 0.7),
+		)
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
@@ -573,7 +579,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 900
-	charge_meter = FALSE
 	wielded_item_state = "ionrifle-wielded"
 
 
@@ -622,7 +627,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	charge_meter = FALSE
-
+	wielded_item_state = "pulse_pistol"
 /obj/item/gun/energy/pulse/plasma/pistol/chaos
 	name = "Chaotic plasma pistol"
 	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
@@ -643,3 +648,4 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	charge_meter = FALSE
+	wielded_item_state = "pulse_pistol"
