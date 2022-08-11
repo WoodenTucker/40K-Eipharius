@@ -13,7 +13,7 @@
 	force = 35
 	block_chance = 35
 	// force_divisor = 0.8 // Do not turn this back on.
-	// thrown_force_divisor = 0.2 // 
+	// thrown_force_divisor = 0.2 //
 	sharp = 1
 	edge = 1
 	attack_verb = list("slashed", "sliced")
@@ -148,6 +148,20 @@
 	block_chance = 50
 	weapon_speed_delay = 6
 
+/obj/item/material/sword/demon
+	name = "Demon Sword"
+	desc = "A sword possessed by an entity of the warp. Once used by a great noble of imperium before it was corrupted. How far it has fallen..."
+	icon_state = "Scorpion_CS"
+	item_state = "Scorpion_CS"
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	str_requirement = 14
+	force = 44
+	block_chance = 55
+	sharpness = TRUE
+	grab_sound_is_loud = TRUE
+	edge = TRUE
+	weapon_speed_delay = 7
 
 /obj/item/material/sword/combat_knife
 	name = "combat knife"
