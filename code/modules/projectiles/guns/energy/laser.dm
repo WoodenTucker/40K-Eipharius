@@ -387,6 +387,12 @@ obj/item/gun/energy/retro
 		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 		)
 
+obj/item/gun/energy/las/hotshot/bloodpact
+	name = "Khornate Lasgun"
+	desc = "The favored ranged weapon of Khorne crazed cultists. Especially the automatic setting."
+	icon_state = "lascar"
+	item_state = "lascar"
+	wielded_item_state = "lascar-wielded"
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
@@ -518,6 +524,7 @@ obj/item/gun/energy/retro
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
 	cell_type = /obj/item/cell/pulserifle
 	ammoType = /obj/item/cell/pulserifle
+	charge_meter = FALSE
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
@@ -547,13 +554,13 @@ obj/item/gun/energy/retro
 		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/* //fix later. plasma icon state no work :( //
+
 /obj/item/gun/energy/pulse/plasmarifle
 	name = "plasma rifle"
-	desc = "A plasma rifle. Don't roll a 1!"
+	desc = "A plasma rifle. Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
-	icon_state = "ploosma"
-	item_state = "ploosma"
+	icon_state = "prifle"
+	item_state = "prifle"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
@@ -567,5 +574,5 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 375
+	charge_meter = FALSE
 	wielded_item_state = "laser-wielded"
-	*/
