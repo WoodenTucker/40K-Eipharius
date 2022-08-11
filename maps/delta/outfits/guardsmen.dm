@@ -180,7 +180,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
+	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -227,7 +227,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
-	belt = /obj/item/melee/mercycs
+	belt = /obj/item/melee/chain/mercycs
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/catachan
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -340,7 +340,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/chain/pcsword
 	shoes = /obj/item/clothing/shoes/jackboots/commissar //cadian commissars also go to the schola progenium or whatever its called, they aren't salvages
 	head = /obj/item/clothing/head/commissar/catachan
 	l_ear = /obj/item/device/radio/headset/red_team

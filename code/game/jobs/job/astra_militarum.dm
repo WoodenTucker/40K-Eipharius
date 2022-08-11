@@ -116,7 +116,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE	
+	can_be_in_squad = FALSE
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
 	sniper_skill = 6
@@ -560,7 +560,7 @@
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
+	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -605,7 +605,7 @@
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
-	belt = /obj/item/melee/mercycs
+	belt = /obj/item/melee/chain/mercycs
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
@@ -684,7 +684,7 @@
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/chain/pcsword
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null

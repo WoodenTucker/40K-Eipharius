@@ -163,7 +163,7 @@
 
 // CHAINSWORD
 
-/obj/item/melee/mercycs
+/obj/item/melee/chain/mercycs
 	name = "Locke Pattern Double-Edged Chainsword"
 	desc = "Nicknamed 'Mercy', This Chainsword is designed for a absolute lunatic, it comes with two ripping edges. Designed for maximum rip and tear."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -183,7 +183,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
 
-/obj/item/melee/inqcs
+/obj/item/melee/chain/inqcs
 	name = "Drusian Pattern Chainsword"
 	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, Designed solely to smite the filthy xenos."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -203,7 +203,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
 
-/obj/item/melee/pcsword
+/obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
 	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -223,7 +223,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 7
 
-/obj/item/melee/pcsword/eviscerator
+/obj/item/melee/chain/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
 	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, It's a absurdly large, two-handed chainsword, equipped with a crude disruption field found commonly on power weapon, Though extremely unwieldly, It is a powerful sword, And in the hands of an Astarte, it's truly shines on the Battlefield."
 	icon = 'icons/obj/weapons/melee/misc.dmi'

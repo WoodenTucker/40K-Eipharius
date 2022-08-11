@@ -595,7 +595,7 @@
 "nP" = (/obj/machinery/door/airlock/glass_research{name = "Cybersmithy"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/research)
 "nQ" = (/obj/effect/floor_decal/newcorner/purple/quarter{dir = 8; icon_state = "purple-quarter"},/obj/machinery/organ_printer/robot/mapped,/turf/simulated/floor/tiled/white,/area/cadiaoutpost/oa/research/robotics)
 "nR" = (/turf/simulated/floor/new_wood/eight,/area/cadiaoutpost/oa/service/inn)
-"nS" = (/obj/item/melee/pcsword,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)
+"nS" = (/obj/item/melee/chain/pcsword,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)
 "nT" = (/turf/unsimulated/mineral,/area/cadiaoutpost/oa/caves)
 "nU" = (/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)
 "nV" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)

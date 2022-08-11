@@ -71,7 +71,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -115,7 +115,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -161,7 +161,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -251,7 +251,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -344,7 +344,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,

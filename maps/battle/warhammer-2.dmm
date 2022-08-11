@@ -7973,7 +7973,7 @@
 /area/cadiaoutpost/oa/caves)
 "Gm" = (
 /obj/structure/table/rack,
-/obj/item/melee/inqcs,
+/obj/item/melee/chain/inqcs,
 /obj/effect/floor_decal/newcorner/red/solid,
 /turf/simulated/floor/tiled{
 	color = "grey"

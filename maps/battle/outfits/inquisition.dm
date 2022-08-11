@@ -3,7 +3,7 @@
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent/caraspace
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/inqcs
+	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/inqhelm
@@ -38,7 +38,7 @@
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/ordohereticus
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/inqcs
+	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/hereticusboots
 	head = /obj/item/clothing/head/ordohereticus

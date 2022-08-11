@@ -595,7 +595,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
-	accuracy = -2
+	accuracy = -3
 	move_delay = 6 //dont want speedy bois
 	fire_delay = 13 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -616,7 +616,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2 //change later?
-	accuracy = -2
+	accuracy = -3
 	move_delay = 3 //it a pistol
 	fire_delay = 8 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -636,7 +636,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2 //change later?
-	accuracy = -2
+	accuracy = -3
 	move_delay = 3 //it a pistol
 	fire_delay = 8 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
