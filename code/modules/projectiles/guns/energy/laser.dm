@@ -595,7 +595,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 13 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 375
@@ -617,7 +617,28 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 8 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/pulse/
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 250
+	charge_meter = FALSE
+
+/obj/item/gun/energy/pulse/plasma/pistol/chaos
+	name = "Chaotic plasma pistol"
+	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "chaosppistol"
+	item_state = "chaosppistol"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 2 //change later?
+	accuracy = -2
+	move_delay = 3 //it a pistol
+	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
