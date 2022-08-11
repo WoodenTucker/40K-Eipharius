@@ -162,7 +162,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 62 
+	damage = 62
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
@@ -179,7 +179,7 @@
 	icon_state = "lasbolt"
 	damage = 90
 	armor_penetration = 25
-	
+
 /obj/item/projectile/energy/las/lasgun/hotshot
 	name = "lasbolt"
 	fire_sound='sound/weapons/lasgun.ogg'
@@ -188,13 +188,21 @@
 	damage = 55
 	armor_penetration = 25
 
-/obj/item/projectile/energy/pulse/pulserifle
+/obj/item/projectile/energy/pulse/pulserifle //currently using pulse rifle and pistol for plasma. make a new plasma projectile later otherwise its just tau plasma for guard lol
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 55
 	armor_penetration = 25
+
+	/obj/item/projectile/energy/pulse/pulsepistol
+	name = "pulse round"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1"
+	damage = 40
+	armor_penetration = 15
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"

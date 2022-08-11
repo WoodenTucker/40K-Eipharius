@@ -365,8 +365,8 @@ obj/item/gun/energy/retro
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
-	icon_state = "lascar"
-	item_state = "lascar"
+	icon_state = "hotshotgun"
+	item_state = "hotshotgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 22
@@ -377,10 +377,11 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
+	charge_meter = FALSE
 	charge_cost = 150
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "lascar-wielded"
+
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -390,9 +391,8 @@ obj/item/gun/energy/retro
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
 	desc = "The favored ranged weapon of Khorne crazed cultists. Especially the automatic setting."
-	icon_state = "lascar"
-	item_state = "lascar"
-	wielded_item_state = "lascar-wielded"
+	icon_state = "bloodlasgun"
+	item_state = "bloodlasgun"
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
@@ -521,10 +521,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	projectile_type = /obj/item/projectile/energy/pulse/pulsepistol
 	cell_type = /obj/item/cell/pulserifle
 	ammoType = /obj/item/cell/pulserifle
-	charge_meter = FALSE
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
@@ -555,7 +554,33 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		)
 
 
-/obj/item/gun/energy/pulse/plasmarifle
+/obj/item/gun/energy/pulse/plasma/
+	name = "plasma"
+	desc = "If you see this, please ping Zab on discord. Or complain that staff used the wrong object"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "prifle"
+	item_state = "prifle"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 12 //heavy af fam
+	accuracy = -2
+	move_delay = 6 //dont want speedy bois
+	fire_delay = 13 // something something its recharging
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 900
+	charge_meter = FALSE
+	wielded_item_state = "ionrifle-wielded"
+
+
+
+
+
+/obj/item/gun/energy/pulse/plasma/rifle
 	name = "plasma rifle"
 	desc = "A plasma rifle. Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
@@ -575,4 +600,25 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 375
 	charge_meter = FALSE
-	wielded_item_state = "laser-wielded"
+	wielded_item_state = "ionrifle-wielded"
+
+/obj/item/gun/energy/pulse/plasma/pistol
+	name = "plasma pistol"
+	desc = "A plasma pistol. Fun in a small package. Don't roll a 1! (cannot explode yet)"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "ppistol"
+	item_state = "ppistol"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 10
+	one_hand_penalty = 2 //change later?
+	accuracy = -2
+	move_delay = 3 //it a pistol
+	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 250
+	charge_meter = FALSE
