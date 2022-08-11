@@ -455,6 +455,16 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/marshal
+	name = "Enforcer Patrol Armor - Marshal"
+	desc = "The flak armour worn by a Magistratum Marshal. Light and robust in the colour blue, designed to protect against direct blasts and small arms fire."
+	icon_state = "Judge"
+	item_state = "Judge"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 55, bullet = 55, laser = 55, energy = 35, bomb = 55, bio = 30, rad = 20) //almost as strong as carapace armor, bruhv
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/suit/armor/enforcer/arbitrator
 	name = "Enforcer Patrol Armour - Arbitrator"
 	desc = "The flak armour worn by a Magistratum Arbitrator. Light and robust in the colour blue, designed to protect against blast and small arms fire."
