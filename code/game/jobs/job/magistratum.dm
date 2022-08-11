@@ -49,13 +49,13 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
 /datum/job/marshal
-	title = "Planetary Marshall"
+	title = "Planetary Marshal"
 	supervisors = "the Rogue Trader"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
 	selection_color = "#848484"
-	outfit_type = /decl/hierarchy/outfit/job/ig/marshall
+	outfit_type = /decl/hierarchy/outfit/job/ig/marshal
 	auto_rifle_skill = 9
 	semi_rifle_skill = 9
 	sniper_skill = 9
@@ -152,7 +152,7 @@ Begin Warhammer loadouts
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/ig/marshall
+/decl/hierarchy/outfit/job/ig/marshal
 	name = OUTFIT_JOB_NAME("Planetary Marshal")
 	head = /obj/item/clothing/head/helmet/guardhelmet/marshal
 	uniform = /obj/item/clothing/under/rank/marshal
