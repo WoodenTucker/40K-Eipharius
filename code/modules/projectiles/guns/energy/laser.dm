@@ -626,6 +626,30 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	wielded_item_state = "pulse_pistol"
+
+/obj/item/gun/energy/pulse/plasma/pistol/astarte
+	name = "Astartes plasma pistol"
+	desc = "The plasma pistol wargear of an Astartes, upgraded with increased cooling vents and other upgrades only an Astartes is capable of having access to.(cannot explode yet)"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "ppistol"
+	item_state = "ppistol"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	str_requirement = 18 // astartes moment
+	force = 20
+	one_hand_penalty = 2 //change later?
+	accuracy = -2
+	move_delay = 3 //it a pistol
+	fire_delay = 6 // unsure if decent. dont want fast fire rate
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 250
+	wielded_item_state = "pulse_pistol"
+
+
 /obj/item/gun/energy/pulse/plasma/pistol/chaos
 	name = "Chaotic plasma pistol"
 	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"

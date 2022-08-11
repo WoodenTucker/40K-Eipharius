@@ -237,5 +237,13 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 70
+	damage = 65
 	armor_penetration = 35
+
+	/obj/item/projectile/energy/pulse/plasmapistol/astartes
+	name = "plasma round"
+	fire_sound='sound/weapons/marauder.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1_bl"
+	damage = 75
+	armor_penetration = 45
