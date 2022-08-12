@@ -424,6 +424,19 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=180),
 		)
 
+/obj/item/gun/energy/las/laspistol/lord
+	name = "Rogue Trader's Artificer Pistol"
+	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
+	icon_state = "lordlaspistol"
+	item_state = "lordlaspistol"
+	charge_cost = 40
+	charge_meter = FALSE
+	firemodes = list(
+		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", 	burst=2, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+	)
+
+
 /obj/item/gun/energy/las/laspistol/defender
 	name = "Kantrael MG Defender Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears no markings except standard serial number and the Imperial Aquila, belonging to a civilian modification."
@@ -669,4 +682,5 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
+	charge_meter = FALSE //no ammo icon state currently invisible
 	wielded_item_state = "pulse_pistol"
