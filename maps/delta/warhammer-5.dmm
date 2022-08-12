@@ -425,9 +425,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bI" = (
-/obj/machinery/computer/exterminatus{
-	desc = "This terminal acts as the control center for the Simiel's weapon systems."
-	},
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/sign/double/planet/left{
 	desc = "A screen showing the planet from orbit. It would be a beautiful sight. The screen itself would be decorated in various holy markings.";
@@ -663,10 +660,10 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/item/clothing/glasses/night,
 /obj/item/clothing/head/inqhelm/stealth{
-	armor = list("melee" = 35, "bullet" = 50, "laser" = 45, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	armor = list("melee"=35,"bullet"=50,"laser"=45,"energy"=20,"bomb"=30,"bio"=10,"rad"=10)
 	},
 /obj/item/clothing/head/inqhelm/rare{
-	armor = list("melee" = 40, "bullet" = 45, "laser" = 45, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 10)
+	armor = list("melee"=40,"bullet"=45,"laser"=45,"energy"=20,"bomb"=30,"bio"=10,"rad"=10)
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -675,7 +672,7 @@
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
 /obj/item/clothing/suit/armor/bulletproof/vest{
-	armor = list("melee" = 50, "bullet" = 65, "laser" = 65, "energy" = 10, "bomb" = 25, "bio" = 0, "rad" = 0)
+	armor = list("melee"=50,"bullet"=65,"laser"=65,"energy"=10,"bomb"=25,"bio"=0,"rad"=0)
 	},
 /obj/item/clothing/gloves/thick,
 /obj/item/clothing/under/syndicate/tacticool,
