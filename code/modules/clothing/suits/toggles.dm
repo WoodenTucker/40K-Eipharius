@@ -157,6 +157,13 @@
 	cold_protection = HEAD
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
+/obj/item/clothing/head/inqhood/lphelm
+	name = "light power armor helmet"
+	desc = "A plasteel helmet, part of light power armor"
+	icon_state = "tribhelm"
+	item_state = "tribhelm"
+	armor = list(melee = 55, bullet = 55, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40) //Same as Order of the Sacred Rose Power Helmet but -10 bullet and melee
+
 /obj/item/clothing/head/genehood
 	name = "genetor's hood"
 	desc = "An ancient cowl covering a heavily augmented face."
