@@ -13,7 +13,7 @@
 	/datum/job/ig/guardsman/sharpshooter,
 	/datum/job/ig/whiteshield,
 	/datum/job/cmo,
-	/datum/job/doctor,
+	/* /datum/job/doctor, */
 	/datum/job/progena,
 	/datum/job/ig/medicae,
 	/datum/job/chemist,
