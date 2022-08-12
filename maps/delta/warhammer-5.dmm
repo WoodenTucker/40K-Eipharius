@@ -7,8 +7,8 @@
 /area/cadiaoutpost/oa/krootship)
 "ab" = (
 /obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Warsphere"
+	name = "Kroot Warsphere";
+	req_access = list()
 	},
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -29,9 +29,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "af" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "wall3";
+	color = "grey";
 	dir = 6;
-	color = "grey"
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/krootship)
 "ag" = (
@@ -104,9 +104,9 @@
 "ap" = (
 /turf/space,
 /turf/simulated/shuttle/wall{
-	icon_state = "wall3";
+	color = "grey";
 	dir = 10;
-	color = "grey"
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "aq" = (
@@ -150,9 +150,9 @@
 "av" = (
 /turf/space,
 /turf/simulated/shuttle/wall{
-	icon_state = "wall3";
+	color = "grey";
 	dir = 6;
-	color = "grey"
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "aw" = (
@@ -346,8 +346,8 @@
 /area/cadiaoutpost/oa/krootship)
 "bu" = (
 /obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Bridge"
+	name = "Kroot Bridge";
+	req_access = list()
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
@@ -381,8 +381,8 @@
 /area/cadiaoutpost/oa/krootship)
 "bz" = (
 /obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Warsphere"
+	name = "Kroot Warsphere";
+	req_access = list()
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
@@ -682,10 +682,10 @@
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -2030,8 +2030,8 @@
 	},
 /obj/item/storage/box/cups,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2105,8 +2105,8 @@
 "jL" = (
 /obj/machinery/papershredder,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2212,8 +2212,8 @@
 /obj/item/reagent_containers/food/snacks/warfare/nim,
 /obj/item/reagent_containers/food/snacks/warfare/nim,
 /obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_y = -3;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = -3
 	},
 /obj/item/reagent_containers/food/snacks/warfare/nim{
 	pixel_x = 11
@@ -2410,8 +2410,8 @@
 	pixel_y = -5
 	},
 /obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_y = -2;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = -2
 	},
 /obj/item/reagent_containers/food/snacks/warfare/nim{
 	pixel_x = 8;
@@ -2472,8 +2472,8 @@
 /area/cadiaoutpost/oa/tauship)
 "kR" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -2494,8 +2494,8 @@
 /area/centcom)
 "lc" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2529,8 +2529,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "lE" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -2538,34 +2538,34 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3071,10 +3071,10 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
 /obj/item/card/id/innkey1{
-	req_access = null;
-	name = "inquisitorial key";
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
-	access = list(302)
+	name = "inquisitorial key";
+	req_access = null
 	},
 /obj/item/book/manual{
 	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
@@ -3103,8 +3103,8 @@
 	color = "#36261B"
 	},
 /obj/item/material/sword/commissword{
-	name = "Runic Sabre";
-	force = 35
+	force = 35;
+	name = "Runic Sabre"
 	},
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -3560,8 +3560,8 @@
 /area/centcom)
 "zZ" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -4071,8 +4071,8 @@
 "Hx" = (
 /obj/structure/filingcabinet,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -4213,9 +4213,9 @@
 /obj/item/clothing/head/helmet/guardhelmet,
 /obj/item/clothing/head/helmet/medicae,
 /obj/item/clothing/head/beret/deathsquad{
-	name = "Red Beret";
 	armor = list("melee"=60,"bullet"=35,"laser"=35,"energy"=20,"bomb"=40,"bio"=0,"rad"=0);
-	desc = "The armored beret of the Tempestor."
+	desc = "The armored beret of the Tempestor.";
+	name = "Red Beret"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4504,8 +4504,8 @@
 /area/centcom)
 "MT" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -4837,8 +4837,8 @@
 /area/centcom)
 "QJ" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
