@@ -712,6 +712,13 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1
 
+/obj/item/clothing/suit/storage/hooded/inquisitor/light
+	name = "Light Power Armour"
+	desc = "Not as durable as Adeptus Astartes power armours, this is the best option that a regular human with a lot of money can afford. Like every other power armour variant, this one is made of thick ceramite armour plates and incorporated electro-muscles so the user can even use the power armour in the first place."
+	icon_state = "LParmor"
+	item_state = "LParmor"
+	hoodtype = /obj/item/clothing/head/inqhood/lphelm
+
 /obj/item/clothing/suit/armor/ordohereticus
 	name = "Armored Coat"
 	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
