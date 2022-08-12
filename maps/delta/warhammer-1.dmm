@@ -128,11 +128,13 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "ar" = (
-/obj/effect/decal/cleanable/spiderling_remains,
-/turf/simulated/floor/tiled{
-	color = "grey"
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
 	},
-/area/cadiaoutpost/oa/magistratumpost)
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/chapel)
 "au" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -146,20 +148,6 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/obj/item/beartrap{
-	deployed = 1
-	},
-/obj/effect/floor_decal/turf/nf2,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/toothpuller,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/magistratumpost)
-"aw" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
@@ -168,18 +156,23 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
-"ax" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
+"aw" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/obj/effect/decal/cleanable/cobweb,
-/obj/effect/floor_decal/newcorner/plating,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
+/obj/item/reagent_containers/food/drinks/coffee,
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
+"ax" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/chapel)
 "az" = (
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
 	maxhealth = 3000;
@@ -404,9 +397,9 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/highsecurity/imperiumdoor{
+	maxhealth = 15000;
 	name = "Imperialis Doorway - Locked";
-	req_access = list(333);
-	maxhealth = 15000
+	req_access = list(333)
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
@@ -425,6 +418,12 @@
 /obj/structure/flora/ausbushes/lrock,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"bE" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "bF" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/wrench{
@@ -492,11 +491,15 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "ce" = (
-/obj/item/pyre/self_lit,
-/obj/effect/floor_decal/turf/nf2,
 /obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/magistratumpost)
+/obj/structure/toilet{
+	dir = 4
+	},
+/obj/structure/curtain/open/privacy,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "cg" = (
 /obj/machinery/status_display{
 	color = "grey";
@@ -600,6 +603,21 @@
 /obj/random/loot/guardgear,
 /obj/random/loot/guardgear,
 /obj/random/loot/guardgear,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
+"cE" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/obj/item/campfire/self_lit,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -844,6 +862,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"dZ" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8;
+	icon_state = "plating"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "ea" = (
 /obj/effect/floor_decal/turf/basalt3,
 /obj/effect/floor_decal/turf/basalt1,
@@ -1015,6 +1042,18 @@
 /obj/item/pickaxe,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"eT" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/sign/inkvd{
+	color = "grey";
+	pixel_y = 30
+	},
+/obj/machinery/door_timer{
+	pixel_x = -30
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "eU" = (
 /obj/structure/railing{
 	dir = 4
@@ -1365,11 +1404,13 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "gK" = (
-/obj/effect/decal/cleanable/urine,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/curtain/open/privacy,
+/obj/machinery/shower,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/magistratumpost)
+/area/cadiaoutpost/oa/tradefloor)
 "gN" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/carpetn00,
@@ -1422,6 +1463,10 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4
+	},
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -1844,6 +1889,17 @@
 /obj/random/loot/randomitemcaves,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"jn" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/campfire/self_lit,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "jo" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/crate/miningcar,
@@ -1957,11 +2013,11 @@
 /obj/effect/floor_decal/turf/basalt0,
 /obj/effect/floor_decal/turf/basalt9,
 /mob/living/simple_animal/hostile/smalldemon/bloodletter{
+	attacktext = "rends";
 	color = "grey";
 	health = 1100;
 	mob_size = 25;
-	name = "The Dark One";
-	attacktext = "rends"
+	name = "The Dark One"
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -2340,6 +2396,13 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"lH" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "lJ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2655,7 +2718,14 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/caves/dark)
 "nd" = (
-/turf/unsimulated/miningtime,
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/magistratumpost)
 "ne" = (
 /obj/effect/floor_decal/turf/plating,
@@ -3405,6 +3475,13 @@
 	color = "gray"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"qo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "qp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/rack/dark,
@@ -3553,9 +3630,9 @@
 /obj/item/mortar_shell/flare,
 /obj/structure/table/rack/dark,
 /obj/item/card/id/innkey3{
+	access = list(330);
 	name = "Armory Key";
-	req_access = list(330);
-	access = list(330)
+	req_access = list(330)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -3698,6 +3775,15 @@
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/tradefloor)
+"rM" = (
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "rN" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/landmark/animal/zygote1,
@@ -3742,7 +3828,6 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "sd" = (
-/obj/structure/statue/cage,
 /obj/effect/floor_decal/turf/nf2,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -3997,6 +4082,15 @@
 /obj/effect/floor_decal/newcorner/plating/corner,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/mining/eva)
+"ti" = (
+/obj/structure/grille{
+	color = "grey"
+	},
+/obj/structure/window_frame,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "tk" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4119,6 +4213,14 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"tE" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/machinery/door_timer{
+	pixel_x = -30
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "tF" = (
 /obj/structure/bed/padded,
 /obj/effect/landmark/start/warden,
@@ -4151,7 +4253,9 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "tK" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 4
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -4413,6 +4517,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"uG" = (
+/obj/item/pyre/self_lit,
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "uH" = (
 /turf/simulated/floor/tiled{
 	color = "gray"
@@ -4767,14 +4877,16 @@
 /obj/item/flame/candle/dinner,
 /obj/item/material/sword/commissword,
 /obj/item/card/id/innkey3{
+	access = list(331,330,225);
 	name = "Master Key";
-	req_access = list(331);
-	access = list(331,330,225)
+	req_access = list(331)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "wf" = (
+/obj/structure/statue/cage,
 /obj/effect/floor_decal/turf/nf2,
+/obj/item/remains/human,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
 "wk" = (
@@ -4901,6 +5013,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"wR" = (
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/item/beartrap{
+	deployed = 1
+	},
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/toothpuller,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "wS" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -4934,14 +5060,21 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "wW" = (
+/obj/machinery/shower,
+/obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"wX" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/machinery/door_timer{
+	pixel_x = 30
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "wY" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/marble,
@@ -4976,6 +5109,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"xj" = (
+/obj/effect/decal/cleanable/mucus,
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "xn" = (
 /obj/machinery/door/airlock/arbiter{
 	color = "grey";
@@ -5115,6 +5257,14 @@
 "ye" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"yf" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/bed/chair/wood/wings{
+	dir = 1
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "yk" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/random/loot/randomammo,
@@ -5782,6 +5932,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Bm" = (
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "Bp" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/bed,
@@ -5850,14 +6011,6 @@
 /obj/item/melee/chain/mercycs,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"BE" = (
-/obj/machinery/shower,
-/obj/structure/curtain/open/privacy,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/tradefloor)
 "BJ" = (
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -5866,6 +6019,17 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"BK" = (
+/obj/structure/statue/cage,
+/obj/effect/floor_decal/turf/nf2,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
+"BL" = (
+/obj/effect/decal/cleanable/cobweb,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "BM" = (
 /obj/random/trash,
 /turf/simulated/floor/tiled{
@@ -6273,6 +6437,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"DL" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "DN" = (
 /obj/effect/floor_decal/turf/plate,
 /obj/structure/closet/crate{
@@ -6289,6 +6461,16 @@
 	},
 /turf/simulated/wall/concrete/strong/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"DT" = (
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/obj/structure/sign/magistrate{
+	pixel_y = -30
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "DW" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/power/apc{
@@ -6321,17 +6503,16 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Ec" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/curtain/open/privacy,
+/obj/structure/toilet{
+	dir = 8;
+	icon_state = "toilet00"
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/floor_decal/newcorner/plating,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/magistratumpost)
+/area/cadiaoutpost/oa/tradefloor)
 "Ee" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/power/apc{
@@ -6524,14 +6705,13 @@
 /area/cadiaoutpost/oa/caves/dark)
 "EH" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/bed/chair/wood{
-	dir = 8;
-	icon_state = "wooden_chair_preview"
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
+/obj/structure/window/basic{
+	dir = 1
 	},
+/obj/item/material/sword/combat_knife,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6921,10 +7101,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "FY" = (
-/obj/machinery/gibber,
-/obj/effect/floor_decal/turf/plating,
-/obj/effect/decal/cleanable/blood,
-/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6963,9 +7143,9 @@
 	},
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/item/card/id/innkey3{
+	access = list(330);
 	name = "Armory Key";
-	req_access = list(330);
-	access = list(330)
+	req_access = list(330)
 	},
 /obj/item/clothing/accessory/holster/armpit,
 /obj/item/clothing/accessory/storage/webbing_large,
@@ -6979,9 +7159,9 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Gk" = (
-/obj/machinery/door/unpowered/inn/magistratum{
-	maxhealth = 2500;
-	name = "Magistratum Cell Door"
+/obj/structure/window_frame,
+/obj/structure/grille{
+	color = "grey"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -7031,10 +7211,19 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Gz" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/bed/chair/wood{
-	dir = 8;
-	icon_state = "wooden_chair_preview"
+/obj/structure/window/basic{
+	dir = 1
 	},
+/obj/structure/closet/cabinet{
+	color = "grey"
+	},
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/clothing/under/gentlesuit,
+/obj/item/clothing/under/lawyer/female{
+	name = "gentlewomans suit"
+	},
+/obj/item/clothing/shoes/laceup,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -7069,8 +7258,8 @@
 	name = "Ancient Table"
 	},
 /obj/item/toy/katana/strong{
-	force = 36;
 	color = "grey";
+	force = 36;
 	name = "seolite blade"
 	},
 /turf/simulated/floor/tiled/dark{
@@ -7312,6 +7501,18 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/chapel)
+"HM" = (
+/obj/structure/sign/inkvd{
+	color = "grey";
+	pixel_y = 30
+	},
+/obj/machinery/door_timer{
+	pixel_x = 30
+	},
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/space,
+/area/cadiaoutpost/oa/magistratumpost)
 "HN" = (
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
@@ -7459,10 +7660,19 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Ir" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/toilet{
-	dir = 4
+/obj/structure/closet/cabinet{
+	color = "grey"
 	},
-/obj/structure/curtain/open/privacy,
+/obj/structure/window/basic{
+	dir = 1
+	},
+/obj/item/stack/thrones2,
+/obj/item/stack/thrones2,
+/obj/item/clothing/under/gentlesuit,
+/obj/item/clothing/under/lawyer/female{
+	name = "gentlewomans suit"
+	},
+/obj/item/clothing/shoes/laceup,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -7533,13 +7743,16 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/service/chapel)
 "ID" = (
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/bookcase,
-/obj/item/book{
-	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
-	name = "tome"
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/bed/chair/wood{
+	dir = 4;
+	icon_state = "wooden_chair_preview"
 	},
-/turf/simulated/floor/tiled/dark{
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
@@ -7721,6 +7934,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"JB" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "JC" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/clothing/mask/gas/security,
@@ -7976,6 +8198,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"KH" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/machinery/gibber,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "KI" = (
 /obj/random/loot/lasgunammo,
 /turf/simulated/floor/tiled/dark{
@@ -8487,9 +8715,8 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Nd" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/window/basic{
-	dir = 8;
-	icon_state = "window"
+/obj/structure/sink{
+	pixel_y = 25
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -8517,6 +8744,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Nh" = (
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "No" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/closet/cabinet{
@@ -8551,10 +8787,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Nw" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -8628,6 +8861,14 @@
 	},
 /turf/simulated/floor/carpet/purple,
 /area/cadiaoutpost/oa/caves/dark)
+"NT" = (
+/obj/effect/floor_decal/newcorner/plating{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "NV" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/fitness/weightlifter,
@@ -8943,13 +9184,15 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Pq" = (
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
-	},
-/obj/structure/curtain/open/bed,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/structure/bed/chair/wood{
+	dir = 8;
+	icon_state = "wooden_chair_preview"
+	},
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9151,6 +9394,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Qd" = (
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "Qf" = (
 /obj/structure/table/standard{
 	color = "grey"
@@ -9219,6 +9471,12 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"Qy" = (
+/obj/structure/bed/chair/wood,
+/obj/effect/floor_decal/turf/nf2,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/magistratumpost)
 "Qz" = (
 /obj/machinery/bluespacerelay{
 	color = "grey";
@@ -9356,6 +9614,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"Rn" = (
+/obj/effect/decal/cleanable/urine,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "Ro" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/torchwall/service{
@@ -9683,18 +9947,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "SP" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/sink{
-	dir = 8;
-	icon_state = "sink";
-	layer = 50;
-	pixel_x = -10;
-	pixel_y = 2
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/tradefloor)
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "SQ" = (
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /obj/machinery/door/unpowered/inn{
@@ -9915,6 +10173,16 @@
 /obj/effect/spider/stickyweb,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"TQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "TR" = (
 /obj/machinery/telecomms/server{
 	color = "grey"
@@ -10204,6 +10472,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Vb" = (
+/obj/effect/decal/cleanable/spiderling_remains,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "Vf" = (
 /obj/machinery/light{
 	dir = 4;
@@ -10433,6 +10707,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Wh" = (
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Wj" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -10537,6 +10818,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
+"WA" = (
+/obj/effect/floor_decal/newcorner/shaft/diagonal,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
+	name = "tome"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "WD" = (
 /obj/machinery/shipsensors{
 	color = "grey"
@@ -10564,6 +10856,18 @@
 /obj/item/pen,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"WT" = (
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/structure/curtain/open/bed,
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "WU" = (
 /obj/machinery/door/window/brigdoor/eastleft{
 	health = 1200;
@@ -10628,11 +10932,17 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Xf" = (
-/obj/structure/bed/chair/wood,
-/obj/effect/floor_decal/turf/nf2,
 /obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/magistratumpost)
+/obj/structure/bed{
+	desc = "A mass produced sleeping mat, now with actual cloth!";
+	icon_state = "bed_padding1";
+	name = "sleeping mat"
+	},
+/obj/structure/curtain/open/bed,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "Xh" = (
 /obj/structure/table/rack/shelf{
 	color = "grey"
@@ -10693,6 +11003,25 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"Xs" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/random/loot/sidearmammo,
+/obj/item/clothing/accessory/holster/armpit,
+/obj/item/card/id/innkey2{
+	access = list(225);
+	name = "golden key"
+	},
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/oa/tradefloor)
 "Xu" = (
 /obj/item/remains/robot{
 	color = "grey"
@@ -10758,6 +11087,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"XM" = (
+/obj/effect/decal/cleanable/generic,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/magistratumpost)
 "XO" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/random/loot/goodweapon,
@@ -10800,13 +11135,9 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Yb" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/drinks/coffee,
 /obj/effect/floor_decal/turf/nf2,
 /obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/stone,
+/turf/space,
 /area/cadiaoutpost/oa/magistratumpost)
 "Yc" = (
 /obj/structure/table/reinforced{
@@ -10842,9 +11173,9 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Yo" = (
-/obj/structure/window_frame,
-/obj/structure/grille{
-	color = "grey"
+/obj/machinery/door/unpowered/inn/magistratum{
+	maxhealth = 2500;
+	name = "Magistratum Cell Door"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -10909,6 +11240,17 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
+"YC" = (
+/obj/machinery/door/unpowered/administratum{
+	maxhealth = 2000;
+	name = "Guest Room";
+	req_access = list()
+	},
+/obj/effect/floor_decal/turf/brick/two,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "YD" = (
 /obj/structure/sewers/brokenpipe,
 /turf/simulated/wall/concrete,
@@ -35338,7 +35680,7 @@ Tn
 HK
 HK
 HK
-HK
+ar
 Tn
 Tn
 Tn
@@ -35598,11 +35940,11 @@ HK
 HK
 eb
 HK
-HK
+ax
 HK
 La
 PY
-PY
+SP
 PY
 PY
 PY
@@ -36109,7 +36451,7 @@ Tn
 HK
 HK
 HK
-HK
+ar
 Tn
 Tn
 Tn
@@ -40756,7 +41098,7 @@ aX
 aX
 aX
 aX
-SI
+aX
 SI
 bf
 bf
@@ -41005,15 +41347,15 @@ PI
 PI
 PI
 aX
-Ec
-nO
-gK
 aX
-ax
+Bm
 nO
-nO
+Rn
 aX
-SI
+BL
+nO
+nd
+aX
 PI
 bf
 bf
@@ -41262,15 +41604,15 @@ PI
 PI
 PI
 aX
+aX
 nO
-nO
+DL
 nO
 aX
-tK
-nO
+Nw
+Vb
 nO
 aX
-SI
 PI
 bf
 bf
@@ -41519,15 +41861,15 @@ PI
 PI
 PI
 aX
-Nw
-nO
-nO
 aX
-ar
+Qd
+nO
+tK
+aX
 tK
 Nw
+Qd
 aX
-SI
 SI
 bf
 bf
@@ -41777,12 +42119,12 @@ PI
 PI
 aX
 aX
-Yo
-Gk
 aX
 Gk
 Yo
 aX
+Yo
+Gk
 aX
 aX
 SI
@@ -42029,18 +42371,18 @@ PI
 PI
 PY
 PY
-PI
+PY
 PI
 PI
 aX
 aX
+eT
 HD
 HD
+JB
 HD
 HD
-HD
-HD
-HD
+tE
 aX
 aX
 bf
@@ -42288,11 +42630,11 @@ PY
 PY
 PY
 PY
-PI
+DT
 aX
-aX
+BK
 HD
-HD
+wR
 HD
 HD
 HD
@@ -42545,14 +42887,14 @@ PY
 PY
 PY
 PY
-PI
-aX
+Wh
+Yo
 sd
-HD
+Qy
 av
-HD
-HD
-HD
+uG
+yf
+KH
 HD
 HD
 ha
@@ -42802,12 +43144,12 @@ PY
 PY
 PY
 PY
-PY
-Gk
+DT
+aX
 wf
-Xf
+HD
 aw
-ce
+HD
 HD
 HD
 HD
@@ -43058,17 +43400,17 @@ bf
 bf
 bf
 PI
-PI
+PY
 PI
 aX
-sd
-HD
+aX
+HM
 Yb
+Yb
+Nh
 HD
-HD
-HD
-HD
-HD
+lH
+wX
 aX
 aX
 PI
@@ -43319,13 +43661,13 @@ PI
 PI
 aX
 aX
-HD
-HD
-HD
-HD
-HD
-HD
-HD
+aX
+ti
+Yo
+aX
+Yo
+ti
+aX
 aX
 aX
 PI
@@ -43576,12 +43918,12 @@ PI
 PI
 aX
 aX
-HD
-HD
-HD
-HD
-HD
-HD
+TQ
+nO
+dZ
+aX
+NT
+nO
 FY
 aX
 PI
@@ -43833,13 +44175,13 @@ PI
 PI
 aX
 aX
+nO
+nO
+XM
 aX
-aX
-aX
-aX
-aX
-aX
-aX
+Nw
+xj
+nO
 aX
 PI
 PI
@@ -44088,16 +44430,16 @@ PI
 PI
 PI
 PI
+aX
+aX
 nd
+nO
+nO
+aX
+nO
+qo
 nd
-nd
-nd
-nd
-nd
-nd
-nd
-nd
-PI
+aX
 PI
 PI
 PI
@@ -44345,16 +44687,16 @@ PI
 PI
 PI
 PI
-nd
-nd
-nd
-nd
-nd
-nd
-nd
-nd
-nd
-PI
+aX
+aX
+aX
+aX
+aX
+aX
+aX
+aX
+aX
+aX
 PI
 PI
 PI
@@ -44611,7 +44953,7 @@ nU
 nU
 nU
 nU
-SI
+nU
 SI
 SI
 SI
@@ -45363,17 +45705,17 @@ bf
 bf
 PI
 PI
-PI
-PI
-PI
-PI
-PI
+SI
+SI
+SI
+SI
+SI
 SI
 Pw
 Pw
 Pw
 Pw
-mi
+ln
 mi
 ln
 mi
@@ -45382,7 +45724,7 @@ mi
 mi
 mi
 mi
-mi
+rM
 Pw
 hr
 QA
@@ -45621,11 +45963,11 @@ bf
 SI
 SI
 SI
-SI
-SI
-SI
-SI
-SI
+Pw
+Pw
+Pw
+Pw
+Pw
 Pw
 wm
 ln
@@ -45879,24 +46221,24 @@ SI
 PI
 PI
 Pw
+ce
+EH
+ID
+Xf
 Pw
-Pw
-Pw
-Pw
-Pw
-wm
-mi
-wm
-mi
-mi
-mi
+WA
 mi
 wm
 mi
 mi
 mi
 mi
+wm
 mi
+mi
+mi
+mi
+rM
 Pw
 vr
 QA
@@ -46136,12 +46478,12 @@ SI
 PI
 PI
 Pw
-BE
+Nd
 VW
-SP
-Ir
+VW
+VW
 Pw
-ID
+wm
 mi
 wm
 mi
@@ -46393,12 +46735,12 @@ SI
 SI
 PI
 Pw
-Nd
 VW
 VW
-Nd
-Pw
-wm
+VW
+VW
+YC
+ww
 mi
 wm
 mi
@@ -46414,7 +46756,7 @@ mi
 Pw
 QA
 QA
-rG
+Xs
 kq
 Pw
 xD
@@ -46650,12 +46992,12 @@ PI
 SI
 PI
 Pw
+gK
+Gz
 VW
-VW
-VW
-VW
-xv
-mi
+cE
+Pw
+bE
 mi
 wm
 mi
@@ -46907,10 +47249,10 @@ PI
 SI
 PI
 Pw
-Gz
-wW
-EH
-Pq
+Pw
+Pw
+Pw
+Pw
 Pw
 wm
 ww
@@ -47164,10 +47506,10 @@ PI
 SI
 PI
 Pw
-Pw
-Pw
-Pw
-Pw
+wW
+Ir
+VW
+jn
 Pw
 zp
 ww
@@ -47421,8 +47763,8 @@ PI
 SI
 PI
 Pw
-BE
-SP
+VW
+VW
 VW
 VW
 xv
@@ -47935,10 +48277,10 @@ PI
 SI
 PI
 Pw
-VW
-VW
-VW
-VW
+Ec
+EH
+Pq
+WT
 Pw
 wm
 ww
@@ -47946,7 +48288,7 @@ mi
 mi
 mi
 mi
-mi
+sA
 mi
 mi
 wm
@@ -48192,10 +48534,10 @@ bf
 SI
 bf
 Pw
-Ir
-wW
-EH
-Pq
+Pw
+Pw
+Pw
+Pw
 Pw
 wm
 mi
@@ -48447,12 +48789,12 @@ PY
 bf
 bf
 SI
-bf
-Pw
-Pw
-Pw
-Pw
-Pw
+SI
+SI
+SI
+SI
+SI
+SI
 Pw
 Pw
 Pw
@@ -48703,12 +49045,12 @@ PY
 PY
 bf
 bf
-SI
-SI
-SI
-SI
-SI
-SI
+bf
+bf
+bf
+bf
+bf
+bf
 SI
 SI
 SI
