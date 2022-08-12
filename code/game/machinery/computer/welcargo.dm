@@ -58,6 +58,7 @@
 		dat += "<A href='byond://?src=\ref[src];mercspace=1'>Mercenary Carapace Armor (75)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];explorer=1'>Explorer Armor (40)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];armor=1'>Carapace Vest (50)</A><BR>"
+		dat += "<A href='byond://?src=\ref[src];Parmor=1'>Light Power Armor (160)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];belt=1'>Ammo Belt (5)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];nvg=1'>Visor (45)</A><BR>"
 		dat += "<A href='byond://?src=\ref[src];valheq=1'>Valhallan Equipment Crate (40)</A><BR>"
@@ -498,6 +499,22 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/clothing/accessory/storage/torso/armor(T.loc) //what they spawning
+			src.buying = 0
+	if (href_list["Parmor"])
+		if(GLOB.thrones < 160) //do we got enough shekels?
+			visible_message("You cannot afford that!")
+			return
+		if (src.buying == 1) //stops spam buying
+			visible_message("Please wait for your previous order to finish!")
+			return
+		else
+			visible_message("Your order has been confirmed!") //lil flavor text confirming
+			GLOB.thrones -= 160 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			src.buying = 1
+			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+			sleep(40)
+			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
+			new /obj/item/clothing/suit/storage/hooded/inquisitor/light(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["renegade"])
 		if(GLOB.thrones < 40) //do we got enough shekels?
