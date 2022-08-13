@@ -430,7 +430,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "lordlaspistol"
 	item_state = "lordlaspistol"
 	charge_cost = 40
-	charge_meter = FALSE
+	charge_meter = FALSE //must have, due to having only 1 item state.
 	firemodes = list(
 		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="automatic", 	burst=2, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),

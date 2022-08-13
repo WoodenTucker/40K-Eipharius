@@ -109,7 +109,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
-	suit_store = /obj/item/gun/projectile/automatic/autogrim
+	suit_store = /obj/item/gun/projectile/automatic/machinepistol/a80
 	backpack_contents = list(
 	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -119,10 +119,10 @@ Begin Warhammer loadouts
 	/obj/item/shovel = 1
 	)
 
-///Sharpshooter
+///Sharpshooter // Now Specialists!
 
 /decl/hierarchy/outfit/job/sharpshooter
-	name = OUTFIT_JOB_NAME("Cadian Sharpshooter")
+	name = OUTFIT_JOB_NAME("Cadian Plasma Gunner")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -135,10 +135,10 @@ Begin Warhammer loadouts
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -255,7 +255,7 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/autogrim
+	suit_store = /obj/item/gun/projectile/automatic/machinepistol/a80
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/ammo_magazine/mc9mmt/machinepistol = 4,
