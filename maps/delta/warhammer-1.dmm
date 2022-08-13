@@ -7511,7 +7511,7 @@
 	},
 /obj/effect/floor_decal/turf/nf2,
 /obj/effect/floor_decal/turf/brick/two,
-/turf/space,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/magistratumpost)
 "HN" = (
 /obj/effect/floor_decal/turf/brick/two,
@@ -11134,11 +11134,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"Yb" = (
-/obj/effect/floor_decal/turf/nf2,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/space,
-/area/cadiaoutpost/oa/magistratumpost)
 "Yc" = (
 /obj/structure/table/reinforced{
 	color = "grey"
@@ -43405,8 +43400,8 @@ PI
 aX
 aX
 HM
-Yb
-Yb
+HD
+HD
 Nh
 HD
 lH
