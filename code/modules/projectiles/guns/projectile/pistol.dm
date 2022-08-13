@@ -13,7 +13,7 @@
 	firemodes = list()
 	accuracy = -5
 	automatic = 1
-	fire_delay = 30
+	fire_delay = 15
 	burst=0
 	magazine_type = /obj/item/ammo_magazine/flamer
 	allowed_magazines = /obj/item/ammo_magazine/flamer
@@ -352,7 +352,7 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = TRUE //yes it can jam
-	accuracy = -5 //WHY WAS IT SO FUCKING ACCURATE BEFORE? IT WAS 0.2! 
+	accuracy = -5 //WHY WAS IT SO FUCKING ACCURATE BEFORE? IT WAS 0.2!
 	force = 20
 	move_delay = 1.5
 	load_method = MAGAZINE
@@ -367,7 +367,7 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -4 
+	accuracy = -4
 	fire_delay = 1.8
 	move_delay = 1.5
 	load_method = MAGAZINE
@@ -421,7 +421,7 @@
 	icon_state = "sisterbpistol"
 	loaded_icon = "sisterbpistol"
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
-	sharp = 1 
+	sharp = 1
 	edge = 1
 	accuracy = -1.5 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
 	fire_delay = 1.5 //fastaa!
@@ -435,7 +435,7 @@
 		icon_state = "sisterbpistol"
 	else
 		icon_state = "sisterbpistol-e"
-		
+
 /obj/item/gun/projectile/eldar/spistol
 	name = "Shuriken pistol"
 	desc = "A small shuriken-firing ballistic weapon that is the standard and most common sidearm found amongst Craftworld Aeldari warriors."

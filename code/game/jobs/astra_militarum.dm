@@ -1,5 +1,5 @@
 // IG Datum
-
+//!!!i dont think this guard datum is the one being used on delta maps. Use game/jobs/job/astra_militarum, not this! !!!!//
 /datum/job/ig
 	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
 	supervisors = "The Commissar and your Sergeant."
@@ -147,7 +147,7 @@
 //Sharpshooters
 
 /datum/job/ig/guardsman/sharpshooter
-	title = "Imperial Guard Specialist" // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
+	title = "Imperial Guard Specialist"
 	total_positions = 2
 	spawn_positions = 2
 	open_when_dead = FALSE
@@ -160,7 +160,7 @@
 	smg_skill = 8
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Valhallan Heavy Gunner" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
 	equip(var/mob/living/carbon/human/H)

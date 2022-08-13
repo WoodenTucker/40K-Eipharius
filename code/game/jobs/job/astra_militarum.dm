@@ -48,8 +48,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 8
-	spawn_positions = 8
+	total_positions = 7
+	spawn_positions = 7
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -61,9 +61,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/guardsman
 	alt_titles = list(
 		"Cadian Guardsman" = /decl/hierarchy/outfit/job/guardsman,
-		"Catachan Jungle Hunters" = /decl/hierarchy/outfit/job/guardsman/catachan,
+		"Catachan Jungle Hunter" = /decl/hierarchy/outfit/job/guardsman/catachan,
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -142,25 +142,28 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHTConscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 //Sharpshooters
 
-/datum/job/ig/guardsman/sharpshooter
-	title = "Imperial Guard Sharpshooter"
-	total_positions = 1
-	spawn_positions = 1
+/datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
+	title = "Imperial Guard Specialist"
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 11
+	semi_rifle_skill = 9
+	sniper_skill = 9
 	shotgun_skill = 6
-	lmg_skill = 6
+	lmg_skill = 8
 	smg_skill = 8
 	alt_titles = list(
-		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
+		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
+		"Krieg Sniper" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
+		"Catachan Flamer" = /decl/hierarchy/outfit/job/guardsman/catachan,
+
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -183,15 +186,17 @@
 		H.assign_random_quirk()
 		H.witchblood()
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
 
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. Obey your Sergeant and Commissar. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
 
 		switch(title)
-			if("Cadian Sharpshooter" || "Valhallan Sharpshooter")
-				if(title == "Valhallan Sharpshooter")
-					H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3))
+			if("Cadian Plasma Gunner" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
+				if(title == "Catachan Flamer")
+					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+				if(title == "Valhallan Heavy Autogunner")
+					H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 // Sergeants
@@ -207,7 +212,7 @@
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
-		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
+		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -247,16 +252,17 @@
 			H.fully_replace_character_name("Guardsman [watchnum]")
 		else H.fully_replace_character_name("Sergeant [H.real_name]")
 
-		if(title == "Krieg Quartermaster")
+		if(title == "Krieg Watchmaster")
 			H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Krieg Quartermaster, you are brave just like a normal kriegsman, but, you are also smarter making your lifespan twice as good as that of your fellow kriegsman, you are a beacon of discipline, and remember, if your squad's trenches are horrible, its your fault.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regiment, in service to the Imperium. Ensure the men from your Regiment, and perhaps othe regiments, are in order. Train them, ensure they know the capabilities of their equipment and proper knowledge of tactics in battle. Lead them well. The Emperor Protects. </font></b></span>")
 		switch(title)
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(9,11),rand(9,10),rand(5,7),5,rand(4,6))
+
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
@@ -501,10 +507,10 @@
 	/obj/item/stack/thrones3/five = 1
 	)
 
-///Sharpshooter
+///Specialists
 
 /decl/hierarchy/outfit/job/sharpshooter
-	name = OUTFIT_JOB_NAME("Cadian Sharpshooter")
+	name = OUTFIT_JOB_NAME("Cadian Plasmagunner")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -531,7 +537,7 @@
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/sharpshooter/valhalla
-	name = OUTFIT_JOB_NAME("Valhallan Sharpshooter")
+	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -542,11 +548,55 @@
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/ammo_box/rifle
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08
+	suit_store = /obj/item/gun/projectile/automatic/stubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/brifle_handful = 2,
+	 /obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+/decl/hierarchy/outfit/job/sharpshooter/krieg
+	name = OUTFIT_JOB_NAME("Krieg Sniper")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/krieger
+	back = /obj/item/storage/backpack/satchel/krieger
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/helmet/krieghelmet
+	mask = /obj/item/clothing/mask/gas/krieg
+	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel = 1
+	)
+
+/decl/hierarchy/outfit/job/guardsman/catachan
+	name = OUTFIT_JOB_NAME("Catachan Flamer")
+	uniform = /obj/item/clothing/under/casual_pants/catachan
+	suit = /obj/item/clothing/suit/armor/catachan
+	head = /obj/item/clothing/head/catachan
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/extinguisher
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	mask = null
+	glasses = null
+	suit_store = /obj/item/gun/projectile/automatic/flamer
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/flamer = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -560,7 +610,7 @@
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/mercycs
+	belt = /obj/item/melee/chain/inqcs // replaced mercy and given inq because inq is worse, they get a plasma pistol now after all
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -568,10 +618,10 @@
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -626,15 +676,17 @@
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
+	belt = /obj/item/gun/projectile/automatic/machinepistol/a80
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

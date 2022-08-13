@@ -2,6 +2,8 @@
 Begin Warhammer loadouts
 */
 
+////////////
+
 /decl/hierarchy/outfit/job/whiteshield
 	name = OUTFIT_JOB_NAME("Cadian Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
@@ -122,55 +124,34 @@ Begin Warhammer loadouts
 ///Sharpshooter // Now Specialists!
 
 /decl/hierarchy/outfit/job/sharpshooter
-	name = OUTFIT_JOB_NAME("Cadian Plasma Gunner")
+	name = OUTFIT_JOB_NAME("Cadian Plasmagunner")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	glasses = /obj/item/clothing/glasses/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
-	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 3,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/clothing/glasses/cadian
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-/*
-/decl/hierarchy/outfit/job/sharpshooter/krieg
-	name = OUTFIT_JOB_NAME("Krieg Sniper")
-	uniform = /obj/item/clothing/under/rank/krieg_uniform
-	suit = /obj/item/clothing/suit/armor/kriegsgt
-	back = /obj/item/storage/backpack/satchel/krieger
-	gloves = /obj/item/clothing/gloves/combat/krieg
-	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
-	l_ear = /obj/item/device/radio/headset/red_team
-	mask = /obj/item/clothing/mask/gas/krieg
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones3/five = 1
 	)
-*/
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
 /decl/hierarchy/outfit/job/sharpshooter/valhalla
-	name = OUTFIT_JOB_NAME("Valhallan Heavy Gunner")
+	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -178,20 +159,64 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
-	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
+	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	 /obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+/decl/hierarchy/outfit/job/sharpshooter/krieg
+	name = OUTFIT_JOB_NAME("Krieg Sniper")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/krieger
+	back = /obj/item/storage/backpack/satchel/krieger
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/helmet/krieghelmet
+	mask = /obj/item/clothing/mask/gas/krieg
+	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
-	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/clothing/glasses/cadian
+	/obj/item/shovel = 1
 	)
 
+/decl/hierarchy/outfit/job/guardsman/catachan
+	name = OUTFIT_JOB_NAME("Catachan Flamer")
+	uniform = /obj/item/clothing/under/casual_pants/catachan
+	suit = /obj/item/clothing/suit/armor/catachan
+	head = /obj/item/clothing/head/catachan
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/mercycs
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	mask = null
+	glasses = null
+	suit_store = null
+	l_hand = /obj/item/gun/projectile/automatic/flamer/handflamer
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/flamer = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/extinguisher
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
 
 /// Sergeant
 
@@ -200,19 +225,18 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/mercycs
+	belt = /obj/item/melee/chain/inqcs // replaced mercy and given inq because inq is worse, they get a plasma pistol now after all
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
-	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -231,7 +255,6 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
-	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/krieg
 	suit_store = /obj/item/gun/launcher/rcl_rifle
 	backpack_contents = list(
@@ -248,9 +271,8 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
 	belt = /obj/item/melee/chain/mercycs
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
-	l_ear = /obj/item/device/radio/headset/red_team
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
@@ -269,16 +291,17 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
+	belt = /obj/item/gun/projectile/automatic/machinepistol/a80
 	head = /obj/item/clothing/head/valushanka
-	l_ear = /obj/item/device/radio/headset/red_team
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/machinepistol/a80
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile/automatic/stubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
-	/obj/item/ammo_magazine/mc9mmt/machinepistol = 4,
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
