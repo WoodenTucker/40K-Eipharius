@@ -5,7 +5,7 @@
 	suit = /obj/item/clothing/suit/armor/rtcloak
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/rank/roguetrader
-	belt = /obj/item/gun/projectile/bolter_pistol
+	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team
 	shoes = /obj/item/clothing/shoes/jackboots/noble
@@ -17,7 +17,7 @@
 	/obj/item/stack/thrones/ten = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	/obj/item/stack/thrones3/twenty = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
 /decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)

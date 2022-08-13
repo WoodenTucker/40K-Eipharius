@@ -147,9 +147,9 @@
 //Sharpshooters
 
 /datum/job/ig/guardsman/sharpshooter
-	title = "Imperial Guard Sharpshooter"
-	total_positions = 1
-	spawn_positions = 1
+	title = "Imperial Guard Specialist" // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
@@ -159,8 +159,8 @@
 	lmg_skill = 6
 	smg_skill = 8
 	alt_titles = list(
-		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
+		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -569,10 +569,10 @@
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/projectile/pulse/plasmapistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/cell/lasgun = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

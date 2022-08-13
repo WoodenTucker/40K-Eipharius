@@ -595,7 +595,7 @@
 	automatic = 2
 	firemodes = list()
 	gun_type = GUN_LMG
-	move_delay=5
+	move_delay = 5
 
 /obj/item/gun/projectile/automatic/machinepistol
 	name = "Mk.22 Autogun"

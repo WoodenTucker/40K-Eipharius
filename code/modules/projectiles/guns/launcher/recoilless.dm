@@ -8,7 +8,7 @@
         throw_range = 10
         force = 5.0
         obj_flags =  OBJ_FLAG_CONDUCTIBLE
-        slot_flags = 0
+        slot_flags = SLOT_BELT|SLOT_S_STORE //you couldnt place it anywhere before. don't remove, krieger sgt uses it and its the only way to give it to them
         origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5, TECH_ILLEGAL = 3)
         fire_sound = 'sound/weapons/gunshot/tank.ogg'
         combustion = 1

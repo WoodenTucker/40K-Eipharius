@@ -429,11 +429,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
 	icon_state = "lordlaspistol"
 	item_state = "lordlaspistol"
-	charge_cost = 40
+	accuracy = -4
+	move_delay = 3.5 // do not want the RT's pistol as a frag gamer weapon. its for self defence.
+	charge_cost = 45
 	charge_meter = FALSE //must have, due to having only 1 item state.
 	firemodes = list(
 		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", 	burst=2, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+		list(mode_name="automatic", 	burst=3, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 	)
 
 

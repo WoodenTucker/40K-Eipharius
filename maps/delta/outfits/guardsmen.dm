@@ -149,9 +149,28 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
+/*
+/decl/hierarchy/outfit/job/sharpshooter/krieg
+	name = OUTFIT_JOB_NAME("Krieg Sniper")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/kriegsgt
+	back = /obj/item/storage/backpack/satchel/krieger
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/helmet/krieghelmet
+	l_ear = /obj/item/device/radio/headset/red_team
+	mask = /obj/item/clothing/mask/gas/krieg
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	)
+*/
 /decl/hierarchy/outfit/job/sharpshooter/valhalla
-	name = OUTFIT_JOB_NAME("Valhallan Sharpshooter")
+	name = OUTFIT_JOB_NAME("Valhallan Heavy Gunner")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -172,6 +191,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/glasses/cadian
 	)
+
 
 /// Sergeant
 
