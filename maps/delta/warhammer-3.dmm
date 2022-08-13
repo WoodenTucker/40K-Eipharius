@@ -3532,6 +3532,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/tradefloor)
+"kc" = (
+/obj/effect/floor_decal/turf/metal/three,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/item/modular_computer/console/preset/security,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/tradefloor)
 "ko" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/wood{
@@ -39676,7 +39688,7 @@ sl
 QW
 Cp
 Cp
-sl
+kc
 Ox
 Yt
 Ig
