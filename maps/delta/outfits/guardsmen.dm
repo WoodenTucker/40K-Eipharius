@@ -205,14 +205,14 @@ Begin Warhammer loadouts
 	mask = null
 	glasses = null
 	suit_store = null
-	l_hand = /obj/item/gun/projectile/automatic/flamer/handflamer
+	l_hand = /obj/item/gun/projectile/automatic/flamer
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/extinguisher
+	/obj/item/extinguisher,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
