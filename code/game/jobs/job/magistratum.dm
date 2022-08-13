@@ -64,7 +64,7 @@
 	smg_skill = 9
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
-	department_flag = SEC
+	department_flag = SEC|COM
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_medical, access_medical_equip, access_clinic, access_administratum, access_change_ids, access_keycard_auth)
 	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_medical, access_medical_equip, access_clinic, access_administratum, access_change_ids, access_keycard_auth
