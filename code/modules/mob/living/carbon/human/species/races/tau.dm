@@ -69,7 +69,7 @@
 
 	src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses
 
-	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Kroot Hunter")
+	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Earth Caste Mechanic", "Kroot Hunter")
 	switch(castes)
 		if("Fire Warrior")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/fwarmor, slot_wear_suit)
@@ -130,6 +130,35 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
+		if("Earth Caste Mechanic")
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulsepistol, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/earthcaste, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/welding/superior, slot_glasses)
+
+			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
+			src.add_stats(rand(7,9),rand(11,13),rand(13,16),12) //gives stats str, end, int, dex
+			src.add_skills(rand(3,6),rand(3,6),rand(5,8),6,6) //skills such as melee, ranged, med, eng and surg
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(TAU) //secondary language
+			src.name = "Fio'El [name]"
+			src.real_name = "Fio'El [real_name]"
+			client?.color = null
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
+
+
+
+			var/obj/item/card/id/ring/tau/W = new
+
+			W.icon_state = "tau"
+			W.assignment = "Earth Caste Mechanic"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+
 		if("Kroot Hunter")
 			usr.loc = get_turf(locate("landmark*krootstart")) //where they spawning
 			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob

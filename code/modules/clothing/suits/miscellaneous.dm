@@ -559,3 +559,16 @@
 	siemens_coefficient = 3.0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/earthcaste
+	name = "earth caste armor"
+	desc = "A utilitarian and simple set of undeocrated armor, with built in protection from explosives and exotic particles, but do stay away from bullets."
+	icon_state = "combat"
+	item_state = "combat"
+	blood_overlay_type = "armor"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	allowed = list(/obj/item/gun/energy/pulse/pulsepistol, /obj/item/cell/pulserifle)
+	armor = list(melee = 15, bullet = 15, laser = 10, energy = 20, bomb = 45, bio = 10, rad = 45)
+	siemens_coefficient = 3.0
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
