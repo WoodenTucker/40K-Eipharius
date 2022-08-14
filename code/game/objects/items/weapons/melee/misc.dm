@@ -245,3 +245,26 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 11
+
+/obj/item/melee/chain/pcsword/khorneaxe
+	name = "Khornate Chainaxe"
+	desc = "The Chainaxe of the Blood God's chosen mortal men and Astartes alike. It looks excellent for killing, maiming, and perhaps even burning. It doesn't look very good for blocking, good thing you're only gonna attack with it."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "chainaxe"
+	item_state = "chainaxe"
+	wielded_icon = "chainaxe"
+	str_requirement = 16
+	force = 47 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force_wielded = 55
+	block_chance = 28
+	sharp = TRUE
+	edge = TRUE
+	w_class = ITEM_SIZE_NORMAL
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
+	weapon_speed_delay = 8
