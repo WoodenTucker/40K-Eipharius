@@ -5455,6 +5455,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"yS" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/device/cassette/clockwork1,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "yU" = (
 /obj/structure/fireaxecabinet{
 	pixel_y = 30
@@ -7615,6 +7625,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/device/cassette/brokensaint,
 /obj/item/device/cassette/inqlog1,
+/obj/item/device/cassette/grimdark,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Ik" = (
@@ -8066,6 +8077,8 @@
 "JX" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/blast/id_door/open,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/wood/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "JY" = (
@@ -8923,6 +8936,12 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"Og" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/wood/fifty,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "Ok" = (
 /obj/machinery/light{
 	dir = 8;
@@ -10282,6 +10301,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Um" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/device/boombox,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "Un" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -30471,7 +30500,7 @@ uN
 vV
 vV
 vV
-dj
+Og
 EV
 Ez
 eD
@@ -39645,8 +39674,8 @@ HE
 HE
 HE
 HE
-kH
-kH
+yS
+Um
 HE
 HE
 ii

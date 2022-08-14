@@ -2668,6 +2668,11 @@
 "he" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/metal/five,
+/obj/item/device/cassette/western1,
+/obj/item/device/cassette/sombre2,
+/obj/item/device/cassette/sombre1,
+/obj/item/device/cassette/church1,
+/obj/item/device/cassette/buildin,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "hf" = (
@@ -3441,6 +3446,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"iX" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/device/cassette/church1,
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "iY" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
@@ -3709,6 +3720,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security)
+"jJ" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/newcorner/plating,
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 1
+	},
+/obj/effect/floor_decal/turf/metal/three,
+/obj/item/device/cassette/grimdark,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/tradefloor)
 "jK" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/light/small/red{
@@ -5980,6 +6001,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"pW" = (
+/obj/item/device/boombox,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "pX" = (
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 2000;
@@ -6118,6 +6143,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside/lab/muffled)
+"qU" = (
+/obj/item/device/cassette/orks1,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "qX" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 8
@@ -7256,6 +7285,11 @@
 /mob/living/simple_animal/hostile/bear,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"yY" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/device/cassette/sombre2,
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "yZ" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -8166,6 +8200,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"FE" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/device/cassette/sombre1,
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/service/chapel)
 "FH" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/newcorner/plating,
@@ -8811,6 +8850,15 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
+"KZ" = (
+/obj/effect/floor_decal/spline/fancy/wood{
+	dir = 5;
+	icon_state = "spline_fancy"
+	},
+/obj/effect/floor_decal/turf/carpetn00,
+/obj/item/device/boombox,
+/turf/simulated/floor/new_wood,
+/area/cadiaoutpost/oa/service/chapel)
 "La" = (
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey"
@@ -9105,6 +9153,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/bar)
+"MM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/device/cassette/grimdark,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "MR" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9329,6 +9382,18 @@
 /obj/item/ammo_magazine/ork/shoota,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
+"OU" = (
+/obj/structure/table/rack,
+/obj/effect/floor_decal/newcorner/plating,
+/obj/effect/floor_decal/turf/metal/three,
+/obj/item/device/cassette/sombre1,
+/obj/item/device/cassette/sombre2,
+/obj/item/device/cassette/church1,
+/obj/item/device/cassette/buildin,
+/obj/item/device/cassette/western1,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/inn)
 "OW" = (
 /obj/machinery/light{
 	dir = 4;
@@ -9620,6 +9685,14 @@
 /obj/random/medical/lite,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"Rn" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/device/cassette/church1,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/service/chapel)
 "Ro" = (
 /obj/structure/table/woodentable,
 /obj/random/loot/heavymelee,
@@ -9789,6 +9862,11 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/turf/metal/three,
+/obj/item/device/cassette/sombre1,
+/obj/item/device/cassette/sombre2,
+/obj/item/device/cassette/church1,
+/obj/item/device/cassette/buildin,
+/obj/item/device/cassette/western1,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "Sz" = (
@@ -22935,8 +23013,8 @@ YV
 YV
 YV
 rO
-ae
-ae
+pW
+qU
 dg
 zL
 dg
@@ -23192,8 +23270,8 @@ YV
 YV
 YV
 rO
-ae
-ae
+pW
+qU
 sW
 dg
 dg
@@ -23449,8 +23527,8 @@ rO
 rO
 YV
 rO
-ae
-ae
+pW
+qU
 dg
 dg
 FT
@@ -29990,7 +30068,7 @@ Ij
 jy
 jy
 jo
-ay
+Rn
 ay
 dW
 eb
@@ -30520,7 +30598,7 @@ bu
 aY
 bu
 bu
-bu
+yY
 aY
 bu
 bu
@@ -31277,10 +31355,10 @@ ro
 aY
 dZ
 dJ
-ei
+KZ
 eI
 em
-dJ
+iX
 aY
 dV
 bu
@@ -32055,7 +32133,7 @@ en
 aY
 bu
 bu
-bu
+FE
 bu
 bu
 bu
@@ -37456,7 +37534,7 @@ ha
 xk
 ha
 ha
-iA
+OU
 iA
 iN
 jc
@@ -38477,7 +38555,7 @@ Ns
 Ns
 ha
 kI
-lF
+MM
 aD
 aF
 aI
@@ -45439,7 +45517,7 @@ kf
 kf
 fM
 Qe
-Sy
+jJ
 dT
 dT
 jC
