@@ -143,8 +143,8 @@
 			src.add_skills(rand(3,6),rand(3,6),rand(5,8),6,6) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
-			src.name = "Fio'El [name]"
-			src.real_name = "Fio'El [real_name]"
+			src.name = "Fio'La [name]"
+			src.real_name = "Fio'La [real_name]"
 			client?.color = null
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
