@@ -2957,6 +2957,7 @@
 /obj/item/device/cassette/brokensaint,
 /obj/item/device/cassette/inqlog1,
 /obj/item/device/boombox,
+/obj/item/device/cassette/grimdark,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rI" = (

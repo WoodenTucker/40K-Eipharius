@@ -5455,6 +5455,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"yS" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/device/cassette/clockwork1,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "yU" = (
 /obj/structure/fireaxecabinet{
 	pixel_y = 30
@@ -7615,6 +7625,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/device/cassette/brokensaint,
 /obj/item/device/cassette/inqlog1,
+/obj/item/device/cassette/grimdark,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Ik" = (
@@ -10282,6 +10293,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"Um" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/device/boombox,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "Un" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -39645,8 +39666,8 @@ HE
 HE
 HE
 HE
-kH
-kH
+yS
+Um
 HE
 HE
 ii
