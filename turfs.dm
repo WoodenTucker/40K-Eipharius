@@ -142,7 +142,7 @@
 					return
 			playsound(src, 'sound/effects/dig_shovel.ogg', 50, 0)
 			visible_message("[user] begins to dig some dirt cover!")
-			if(do_after(user, (backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 7)))
+			if(do_after(user, (backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 10)))
 				new /obj/structure/dirt_wall(src)
 				visible_message("[user] finishes digging the dirt cover.")
 				playsound(src, 'sound/effects/empty_shovel.ogg', 50, 0)
@@ -172,7 +172,7 @@
 				return
 		playsound(src, 'sound/effects/dig_shovel.ogg', 50, 0)
 		visible_message("[user] begins to dig a trench!")
-		if(do_after(user, backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 7))
+		if(do_after(user, backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 10))
 			ChangeTurf(/turf/simulated/floor/trench)
 			visible_message("[user] finishes digging the trench.")
 			playsound(src, 'sound/effects/empty_shovel.ogg', 50, 0)
@@ -204,7 +204,7 @@
 				return
 		playsound(src, 'sound/effects/dig_shovel.ogg', 50, 0)
 		visible_message("[user] begins to dig a trench!")
-		if(do_after(user, backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 7))
+		if(do_after(user, backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 10))
 			ChangeTurf(/turf/simulated/floor/trench)
 			visible_message("[user] finishes digging the trench.")
 			playsound(src, 'sound/effects/empty_shovel.ogg', 50, 0)
@@ -230,7 +230,7 @@
 					return
 			playsound(src, 'sound/effects/dig_shovel.ogg', 50, 0)
 			visible_message("[user] begins to dig a grave!")
-			if(do_after(user, (backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 7)))
+			if(do_after(user, (backwards_skill_scale(user.SKILL_LEVEL(engineering)) * 10)))
 				new /obj/structure/closet/pit(src)
 				visible_message("[user] finishes digging the grave!")
 				playsound(src, 'sound/effects/empty_shovel.ogg', 50, 0)
