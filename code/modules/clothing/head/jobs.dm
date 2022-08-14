@@ -363,6 +363,8 @@
 	icon_state = "keeper"
 	item_state = "keeper"
 	armor = list(melee = 5, bullet = 15, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
 
 /obj/item/clothing/head/prac_cap
 	name = "practioner cap"

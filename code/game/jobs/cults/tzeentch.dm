@@ -36,18 +36,19 @@
 			STAT_LEVEL(int) +=1
 			src.intrigue++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
-			to_chat(src, "<font color='#0400ff'>One down, eight to go!</font>")
+			to_chat(src, "<font color='#0400ff'>Correct</font>")
 			src.mind.special_role = "Tzeentch Cultist"
 			src.verbs += list(
-			/mob/living/carbon/human/proc/wehere,
-			/mob/living/carbon/human/proc/forthechanger,
-			/mob/living/carbon/human/proc/beconsumed,
-			/mob/living/carbon/human/proc/weshallsacrifise,
-			/mob/living/carbon/human/proc/theyseetruth,
-			/mob/living/carbon/human/proc/peerminds,
-			/mob/living/carbon/human/proc/charge,
-			/mob/living/carbon/human/proc/changecome,
-			/mob/living/carbon/human/proc/belongtous)
+			/mob/living/carbon/human/proc/tzeewehere,
+			/mob/living/carbon/human/proc/tzeeforthechanger,
+			/mob/living/carbon/human/proc/tzeebeconsumed,
+			/mob/living/carbon/human/proc/tzeeweshallsacrifise,
+			/mob/living/carbon/human/proc/tzeetheyseetruth,
+			/mob/living/carbon/human/proc/tzeepeerminds,
+			/mob/living/carbon/human/proc/tzeecharge,
+			/mob/living/carbon/human/proc/tzeechangecome,
+			/mob/living/carbon/human/proc/tzeebehold,
+			/mob/living/carbon/human/proc/tzeebelongtous)
 			AddInfectionImages()
 			src.faction = "Tzeentch"
 		if(2)
@@ -96,7 +97,7 @@
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 			else
-				to_chat(src, "<font color='#0400ff'>Warden, which soul burns with light. </font>")
+				to_chat(src, "<font color='#0400ff'>Lonely warden, which soul burns with light. </font>")
 		if(8)
 			if(istype(src.l_hand, /obj/item/paper))
 				qdel(src.l_hand)
@@ -126,7 +127,7 @@
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 			else
-				to_chat(src, "<font color='#0400ff'>The one, betrayed own kind to find his brother to unknowns</font>")
+				to_chat(src, "<font color='#0400ff'>The one, betrayed own origin to find his brothers to unknowns</font>")
 		if(10)
 			var/obj/structure/curtain/P = locate() in src.loc
 			if(P)
@@ -148,18 +149,16 @@
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(str) -=1
 			else
-				to_chat(src, "<font color='#0400ff'>Chain of the slave, but for mortal weakness</font>")
+				to_chat(src, "<font color='#0400ff'>Gallows of need</font>")
 		if(12)
 			if(istype(src.l_hand, /obj/item/pyre/self_lit))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
-				playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
 			else if(istype(src.r_hand, /obj/item/pyre/self_lit))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
-				playsound(src, 'sound/items/torch_light.ogg', 100, 0, -1)
 			else
 				to_chat(src, "<font color='#0400ff'>Red maw surrounded by scum</font>")
 		if(13)
@@ -197,27 +196,28 @@
 				to_chat(src, "<font color='#0400ff'>Nest of caution of death.</font>")
 */
 		if(15)
-			if(istype(src.l_hand, /obj/item/torch))
+			if(istype(src.l_hand, /obj/item/torch)||istype(src.l_hand, /obj/item/device/flashlight/lantern))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
-			else if(istype(src.r_hand, /obj/item/torch))
+			else if(istype(src.r_hand, /obj/item/torch)||istype(src.r_hand, /obj/item/device/flashlight/lantern))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				playsound(src, 'sound/items/torch_light.ogg', 100, 0, -1)
 			else
-				to_chat(src, "<font color='#0400ff'>Wandering bright steel waiting for it's turn to be awaken</font>")
+				to_chat(src, "<font color='#0400ff'>Wandering bright steel waiting for it's turn to be awaken or sleep once again</font>")
 		if(16)
 			var/obj/structure/table/steel/P = locate() in src.loc
-			if(P)
+			var/obj/structure/closet/C = locate() in src.loc
+			if(P || C)
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 			else
-				to_chat(src, "<font color='#0400ff'>Carrying abomination burried in steel. </font>")
+				to_chat(src, "<font color='#0400ff'>The steel one, ready to carry anything it will be forced to. </font>")
 
 /*		if(14)
 			var/turf/simulated/floor/trench/D = locate() in src.loc
@@ -246,7 +246,7 @@
 				STAT_LEVEL(int) +=1
 				STAT_LEVEL(str) -=1
 			else
-				to_chat(src, "<font color='#0400ff'>Beautiful cover, blank soul. </font>")
+				to_chat(src, "<font color='#0400ff'>One of advisers with big beautiful story and no sence. </font>")
 		if(18)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
@@ -291,18 +291,18 @@
 			else
 				src.SKILL_LEVEL(engineering)+=2
 
-			if(src.STAT_LEVEL(end)<11)
+			if(src.STAT_LEVEL(end)<12)
 				src.STAT_LEVEL(end)=12
 			else
 				src.STAT_LEVEL(end) -=2
 
-			if(src.STAT_LEVEL(str)<10)
-				src.STAT_LEVEL(str)=10
+			if(src.STAT_LEVEL(str)<12)
+				src.STAT_LEVEL(str)=12
 			else
 				src.STAT_LEVEL(str) -=2
 
-			if(src.STAT_LEVEL(dex)<12)
-				src.STAT_LEVEL(dex)=12
+			if(src.STAT_LEVEL(dex)<13)
+				src.STAT_LEVEL(dex)=13
 			else
 				src.STAT_LEVEL(dex) -=1
 
@@ -329,187 +329,6 @@
 				to_chat(src, "<font color='#0400ff'>Take my grant, use wisely.</font>")
 				new /obj/item/reagent_containers/pill/cyanide(src.loc)
 			else
-				to_chat(src, "<font color='#0400ff'>Let me grant you thing to kill silently or to kill yourself with no word in defeat. Stand upon my rune</font>")
+				to_chat(src, "<font color='#0400ff'>Let me grant you thing to kill silently or to kill yourself with no word in capture. Stand upon my rune</font>")
 		if(22)
 			to_chat(src, "<font color='#0400ff'>To be continued...</font>")
-
-
-/mob/living/carbon/human/proc/wehere()
-	set name = "We are here"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("We are here")
-		playsound(src, 'sound/effects/cults/tzeentch/werehere.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/forthechanger()
-	set name = "For the Changer of Ways!"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("For the Changer of Ways!")
-		playsound(src, 'sound/effects/cults/tzeentch/fortzeentch.ogg', 80, 0, 8)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/beconsumed()
-	set name = "You will be consumed"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("You will be consumed")
-		playsound(src, 'sound/effects/cults/tzeentch/youbeconsumed.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/weshallsacrifise()
-	set name = "We shall sacrifice our lives"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("We shall gladly sacrifice our lives for Tzeentch's designs")
-		playsound(src, 'sound/effects/cults/tzeentch/weshallsacrifice.ogg', 80, 0, 3)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/theyseetruth()
-	set name = "They'll see the truth"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("And then they'll see the truth")
-		playsound(src, 'sound/effects/cults/tzeentch/theyseetruth.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/peerminds()
-	set name = "We'll peer theirs little minds"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("We'll peer theirs little minds")
-		playsound(src, 'sound/effects/cults/tzeentch/peerminds.ogg', 80, 0, 3)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/charge()
-	set name = "Charge!"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Charge!")
-		playsound(src, 'sound/effects/cults/tzeentch/charge.ogg', 80, 0, 8)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/changecome()
-	set name = "Change has come"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Change has come")
-		playsound(src, 'sound/effects/cults/tzeentch/changecome.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/belongtous()
-	set name = "It shall belong to us"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("It shall belong to us")
-		playsound(src, 'sound/effects/cults/tzeentch/belongtous.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/behold()
-	set name = "Behold the light of Tzeentch"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Behold the light of Tzeentch")
-		playsound(src, 'sound/effects/cults/tzeentch/behold.ogg', 80, 0, 8)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
