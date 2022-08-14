@@ -5,7 +5,7 @@
 	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
 
-	var/partydelay = 25000 //in deciseconds (40 min rn or 18000 deciseconds)
+	var/partydelay = 36000 //in deciseconds (60 min rn)
 
 	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
 		to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:40!")
