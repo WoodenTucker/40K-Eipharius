@@ -8077,6 +8077,8 @@
 "JX" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/door/blast/id_door/open,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/wood/fifty,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "JY" = (
@@ -8934,6 +8936,12 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"Og" = (
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/wood/fifty,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "Ok" = (
 /obj/machinery/light{
 	dir = 8;
@@ -30492,7 +30500,7 @@ uN
 vV
 vV
 vV
-dj
+Og
 EV
 Ez
 eD
