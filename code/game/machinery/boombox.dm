@@ -194,6 +194,58 @@
 	b_side = pick('sound/newmusic/TAPE-BROKENSAINT.ogg')
 	sound_inside = a_side
 
+/obj/item/device/cassette/grimdark/New()
+	..()
+	name = "The Grimdark"
+	a_side = pick('sound/newmusic/TAPE-GRIMDARK1.ogg')
+	b_side = pick('sound/newmusic/TAPE-GRIMDARK1.ogg')
+	sound_inside = a_side
 
+/obj/item/device/cassette/buildin/New()
+	..()
+	name = "Serf Music"
+	a_side = pick('sound/newmusic/TUPE-BUILDIN1.ogg')
+	b_side = pick('sound/newmusic/TUPE-BUILDIN1.ogg')
+	sound_inside = a_side
 
+/obj/item/device/cassette/orks1/New()
+	..()
+	name = "Ork Jamma's"
+	a_side = pick('sound/newmusic/TUPE-ORKS1.ogg')
+	b_side = pick('sound/newmusic/TUPE-ORKS1.ogg')
+	sound_inside = a_side
 
+/obj/item/device/cassette/church1/New()
+	..()
+	name = "Monastery Chants"
+	a_side = pick('sound/newmusic/TUPE-CHURCH1.ogg')
+	b_side = pick('sound/newmusic/TUPE-CHURCH1.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/sombre1/New()
+	..()
+	name = "Sombre Song's A"
+	a_side = pick('sound/newmusic/TUPE-SOMBRE1.ogg')
+	b_side = pick('sound/newmusic/TUPE-SOMBRE1.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/sombre2/New()
+	..()
+	name = "Sombre Song's B"
+	a_side = pick('sound/newmusic/TUPE-SOMBRE2.ogg')
+	b_side = pick('sound/newmusic/TUPE-SOMBRE2.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/western1/New()
+	..()
+	name = "Western Stuff"
+	a_side = pick('sound/newmusic/TUPE-WESTERN1.ogg')
+	b_side = pick('sound/newmusic/TUPE-WESTERN1.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/clockwork1/New()
+	..()
+	name = "Clockwork"
+	a_side = pick('sound/newmusic/TUPE-CLOCKWORK1.ogg')
+	b_side = pick('sound/newmusic/TUPE-CLOCKWORK1.ogg')
+	sound_inside = a_side

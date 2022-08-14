@@ -2957,6 +2957,7 @@
 /obj/item/device/cassette/brokensaint,
 /obj/item/device/cassette/inqlog1,
 /obj/item/device/boombox,
+/obj/item/device/cassette/grimdark,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rI" = (
@@ -4900,7 +4901,7 @@
 	name = "sleeping mat"
 	},
 /obj/effect/landmark/start{
-	name = "Inquisition Acolyte"
+	name = "Interrogator"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -11508,7 +11509,7 @@ vE
 ax
 ax
 lU
-RF
+cp
 cp
 OH
 RF
@@ -11916,7 +11917,7 @@ vE
 ax
 jb
 lU
-RF
+cp
 cp
 cp
 RF
