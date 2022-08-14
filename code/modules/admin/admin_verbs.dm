@@ -1056,6 +1056,9 @@ var/list/admin_verbs_mentor = list(
 		if("60")
 			GLOB.partydelay = 36000
 			message_admins("The party will spawn at the 60 minute mark.")
+		if("80")
+			GLOB.partydelay = 48000
+			message_admins("The party will spawn at the 80 minute mark.")
 		if("120")
 			GLOB.partydelay = 72000
 			message_admins("The party will spawn at the 120 minute mark.")
