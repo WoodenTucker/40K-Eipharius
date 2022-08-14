@@ -1386,24 +1386,26 @@
 		update_body()
 
 /mob/living/carbon/human/proc/handle_species_regen()
+	var/obj/item/organ/external/affecting
+	var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
 	if(species.name == "Astartes" || species.name == "Ork") //Simple way to species check
 		shock_stage = 0
 		var/messageTimer = 0
 		heal_organ_damage(0.2, 0.2)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-0.5)
+			adjustBrainLoss(-1.5)
 
 		if(src.getBruteLoss() > 0)
-			adjustBruteLoss(-1.8)
+			adjustBruteLoss(-5.8)
 
 		if(src.getToxLoss() > 0)
-			adjustToxLoss(-1.5)
+			adjustToxLoss(-3.5)
 
 		if(src.getFireLoss() > 0)
-			adjustFireLoss(-1.8)
+			adjustFireLoss(-5.8)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-1.8)
+			adjustOxyLoss(-3.8)
 
 		if(messageTimer > 300)
 			messageTimer = 0
@@ -1413,6 +1415,10 @@
 			eye_blurry = 0
 			ear_deaf = 0
 			ear_damage = 0
+			if(limbs.len)
+				for(var/limb in limbs)
+					affecting.status &= ~ORGAN_BROKEN
+					affecting.stage = 0
 			if(species.name == "Ork")
 				to_chat(src, "I'ZE FEELIN' BETTA' 'DEN 'EVA!")
 			else
@@ -1429,19 +1435,19 @@
 		var/messageTimer = 0
 		heal_organ_damage(0.4, 0.4)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-1.5)
+			adjustBrainLoss(-5.5)
 
 		if(src.getBruteLoss() > 0)
-			adjustBruteLoss(-3.5)
+			adjustBruteLoss(-9.5)
 
 		if(src.getToxLoss() > 0)
-			adjustToxLoss(-3.0)
+			adjustToxLoss(-9.0)
 
 		if(src.getFireLoss() > 0)
-			adjustFireLoss(-3.5)
+			adjustFireLoss(-9.5)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-3.0)
+			adjustOxyLoss(-9.0)
 
 		if(messageTimer > 150)
 			messageTimer = 0
@@ -1452,6 +1458,14 @@
 			eye_blurry = 0
 			ear_deaf = 0
 			ear_damage = 0
+
+			if(limbs.len)
+				for(var/limb in limbs)
+					affecting.status &= ~ORGAN_BROKEN
+					affecting.stage = 0
+
+
+
 
 		messageTimer++
 		return

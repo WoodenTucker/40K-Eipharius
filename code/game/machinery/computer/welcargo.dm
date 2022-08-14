@@ -531,22 +531,6 @@
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/gun/projectile/automatic/machinepistol/a80(T.loc) //what they spawning
 			src.buying = 0
-	if (href_list["autogrim"])
-		if(GLOB.thrones < 40) //do we got enough shekels?
-			visible_message("You cannot afford that!")
-			return
-		if (src.buying == 1) //stops spam buying
-			visible_message("Please wait for your previous order to finish!")
-			return
-		else
-			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 40 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-			src.buying = 1
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			sleep(40)
-			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/gun/projectile/automatic/autogrim(T.loc) //what they spawning
-			src.buying = 0
 	if (href_list["smgmag"])
 		if(GLOB.thrones < 4) //do we got enough shekels?
 			visible_message("You cannot afford that!")
@@ -818,22 +802,6 @@
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
 			new /obj/item/melee/chain/mercycs(T.loc) //what they spawning
-			src.buying = 0
-	if (href_list["grim"])
-		if(GLOB.thrones < 35) //do we got enough shekels?
-			visible_message("You cannot afford that!")
-			return
-		if (src.buying == 1) //stops spam buying
-			visible_message("Please wait for your previous order to finish!")
-			return
-		else
-			visible_message("Your order has been confirmed!") //lil flavor text confirming
-			GLOB.thrones -= 35 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-			src.buying = 1
-			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			sleep(40)
-			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/gun/projectile/automatic/autogrim(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["stubber"])
 		if(GLOB.thrones < 40) //do we got enough shekels?

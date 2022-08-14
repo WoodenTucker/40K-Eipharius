@@ -262,7 +262,7 @@
 	str_requirement = 1
 	force = 1
 	stunforce = 0
-	agonyforce = 45
+	agonyforce = 55
 	status = 1
 	block_chance = 40
 	weapon_speed_delay = 4
