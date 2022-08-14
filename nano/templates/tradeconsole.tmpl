@@ -1,0 +1,27 @@
+
+<!-- 
+Title: Trade Console. Stolen from uplinks.
+Used In File(s): \code\modules\cargo\cargoterminal.dm
+ -->
+
+
+
+{{if data.menu}}
+	<table>
+		<h3>Balance: {{:data.balance}}</h3>
+		{{for data.stock}}
+			<tr><td>{{:value.name}}</td>
+			<td>{{:helper.link("Purchase (" + value.cost + ")" , null, {"purchase": value.ref})}}</td>
+		{{/for}}
+	</table>
+	<td>{{:helper.link('Back', null, {"category": "main"})}}</td>
+{{else}}
+	<h3>Balance: {{:data.balance}}</h3>
+	<td>{{:helper.link('Withdraw Funds', null, {"withdraw": "1"})}}</td>
+	<table>
+		{{for data.categories}}
+			<td>{{:helper.link(value.name, null, {'category' : value.ref})}}</td>
+		{{/for}}
+	</table>
+{{/if}}
+
