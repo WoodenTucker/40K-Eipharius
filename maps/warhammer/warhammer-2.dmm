@@ -1015,7 +1015,7 @@
 "Gf" = (/obj/item/pyre/self_lit,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/groxpen)
 "Gh" = (/obj/structure/barbwire,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/theforest)
 "Gl" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/caves)
-"Gm" = (/obj/structure/table/rack,/obj/item/melee/inqcs,/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/bar)
+"Gm" = (/obj/structure/table/rack,/obj/item/melee/chain/inqcs,/obj/effect/floor_decal/newcorner/red/solid,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/bar)
 "Gn" = (/obj/structure/flora/tree/pine,/obj/structure/anti_tank,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/theforest)
 "Gs" = (/obj/effect/floor_decal/newcorner/shaft/diagonal,/obj/structure/table/rack,/obj/effect/floor_decal/turf/metal/seven,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/supply/cargo/mailroom)
 "Gu" = (/obj/effect/floor_decal/snow,/obj/effect/floor_decal/snow,/obj/effect/floor_decal/snow,/turf/simulated/floor/tiled/dark{icon_state = "steel_dirty"},/area/cadiaoutpost/oa/theforest)

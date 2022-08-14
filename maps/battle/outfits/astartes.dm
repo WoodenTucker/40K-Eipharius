@@ -57,7 +57,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine/sergeant
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/chain/pcsword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
@@ -79,7 +79,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/sergeant/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/chain/pcsword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
@@ -101,7 +101,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/astarte/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/sergeant/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/chain/pcsword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/astarte/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
@@ -134,7 +134,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -158,7 +158,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones2/five = 1,
@@ -182,7 +182,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/melee/pcsword = 1,
+	/obj/item/melee/chain/pcsword = 1,
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/sandwich = 1,
 	/obj/item/stack/thrones2/five = 1,

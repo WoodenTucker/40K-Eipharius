@@ -266,9 +266,9 @@ Template:
 
 /obj/random/loot/heavymelee/spawn_choices()
 	return list(/obj/item/melee/trench_axe = 16,
-				/obj/item/melee/inqcs = 1,
+				/obj/item/melee/chain/inqcs = 1,
 				/obj/item/material/sword/cane = 6,
-				/obj/item/melee/pcsword/eviscerator = 1,
+				/obj/item/melee/chain/pcsword/eviscerator = 1,
 				/obj/item/melee/classic_baton/trench_club = 8,
 				/obj/item/melee/telebaton = 6,
 				/obj/item/toy/katana = 3,
@@ -286,9 +286,9 @@ Template:
 	return list(/obj/item/material/sword/combat_knife = 8,
 				/obj/item/material/sword/combat_knife/rare = 7,
 				/obj/item/melee/trench_axe = 16,
-				/obj/item/melee/inqcs = 1,
+				/obj/item/melee/chain/inqcs = 1,
 				/obj/item/material/sword/cane = 6,
-				/obj/item/melee/pcsword/eviscerator = 1,
+				/obj/item/melee/chain/pcsword/eviscerator = 1,
 				/obj/item/melee/classic_baton/trench_club = 8,
 				/obj/item/melee/telebaton = 6,
 				/obj/item/toy/katana = 3,

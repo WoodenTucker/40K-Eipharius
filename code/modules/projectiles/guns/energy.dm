@@ -11,7 +11,7 @@
 	var/cell_type = null
 	var/projectile_type = /obj/item/projectile/energy/laser // /obj/item/projectile/beam/practice
 	var/modifystate
-	var/charge_meter = 1	//if set, the icon state will be chosen based on the current charge
+	var/charge_meter = 1	//if set, the icon state will be chosen based on the current charge // charge_meter = FALSE if you dont, or sprite no work
 	var/unload_sound 	= 'sound/weapons/guns/interact/pistol_magout.ogg'
 	var/reload_sound 	= 'sound/weapons/guns/interact/pistol_magin.ogg'
 

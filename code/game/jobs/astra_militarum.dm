@@ -1,5 +1,5 @@
 // IG Datum
-
+//!!!i dont think this guard datum is the one being used on delta maps. Use game/jobs/job/astra_militarum, not this! !!!!//
 /datum/job/ig
 	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
 	supervisors = "The Commissar and your Sergeant."
@@ -116,7 +116,7 @@
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
-	can_be_in_squad = FALSE	
+	can_be_in_squad = FALSE
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
 	sniper_skill = 6
@@ -147,9 +147,9 @@
 //Sharpshooters
 
 /datum/job/ig/guardsman/sharpshooter
-	title = "Imperial Guard Sharpshooter"
-	total_positions = 1
-	spawn_positions = 1
+	title = "Imperial Guard Specialist"
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
@@ -159,8 +159,8 @@
 	lmg_skill = 6
 	smg_skill = 8
 	alt_titles = list(
-		"Cadian Sharpshooter" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Valhallan Ice Warriors" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
+		"Valhallan Heavy Gunner" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -184,7 +184,7 @@
 		H.witchblood()
 
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the fine tool of the Astra Militarum, landing precise strikes upon the enemies. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, landing strikes upon the enemies of the Imperium. You can see controls in top right -> OOC tab -> View Controls.  The Emperor Protects. </font></b></span>")
 
 		switch(title)
 			if("Cadian Sharpshooter" || "Valhallan Sharpshooter")
@@ -205,7 +205,7 @@
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/sergeant/catachan,
-		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
+		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/sergeant/krieg,
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
@@ -245,12 +245,12 @@
 			H.fully_replace_character_name("Guardsman [watchnum]")
 		else H.fully_replace_character_name("Sergeant [H.real_name]")
 
-		if(title == "Krieg Quartermaster")
+		if(title == "Krieg Watchmaster")
 			H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Krieg Quartermaster, you are brave just like a normal kriegsman, but, you are also smarter making your lifespan twice as good as that of your fellow kriegsman, you are a beacon of discipline, and remember, if your squad's trenches are horrible, its your fault.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant in the Astra Militarium of the God Emperero's Holy Imperium. Serve her and your regiment well. Ensure your men are in proper order, training and know-how with their equipment.</font></b></span>")
 		switch(title)
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
 				if(title == "Catachan Sergeant")
@@ -569,10 +569,10 @@
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/projectile/pulse/plasmapistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/cell/lasgun = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

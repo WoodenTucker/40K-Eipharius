@@ -6016,9 +6016,9 @@
 "BD" = (
 /obj/structure/table/marble,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/melee/mercycs,
-/obj/item/melee/mercycs,
-/obj/item/melee/mercycs,
+/obj/item/melee/chain/mercycs,
+/obj/item/melee/chain/mercycs,
+/obj/item/melee/chain/mercycs,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "BJ" = (
@@ -7278,7 +7278,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "GK" = (
 /obj/structure/table/rack/dark,
-/obj/item/melee/mercycs,
+/obj/item/melee/chain/mercycs,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/heavymelee,
 /obj/random/loot/heavymelee,

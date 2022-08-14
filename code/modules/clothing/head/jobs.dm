@@ -210,6 +210,24 @@
 	item_state = "Jhelm2"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
+//blood pact here for now
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1
+	name = "Chosen Khornate Combat Helmet"
+	desc = "Armored helmet of the blood god's chosen. KILL, MAIM, BURN!"
+	icon_state = "bloodpacthelm1"
+	item_state = "bloodpacthelm1"
+	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
+	name = "Khornate Combat Helmet"
+	desc = "Armored helmet of a khornate cultist."
+	icon_state = "bloodpacthelm2"
+	item_state = "bloodpacthelm2"
+	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
+
+
+
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it forehead."

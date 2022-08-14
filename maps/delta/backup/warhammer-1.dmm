@@ -1374,7 +1374,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "kO" = (
-/obj/item/melee/pcsword,
+/obj/item/melee/chain/pcsword,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
 "kP" = (
@@ -4362,7 +4362,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "GK" = (
 /obj/structure/table/rack/dark,
-/obj/item/melee/mercycs,
+/obj/item/melee/chain/mercycs,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/heavymelee,
 /obj/random/loot/heavymelee,
@@ -7071,7 +7071,7 @@
 	},
 /obj/random/loot/guardgear,
 /obj/random/loot/guardgear,
-/obj/item/melee/mercycs,
+/obj/item/melee/chain/mercycs,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "Zr" = (

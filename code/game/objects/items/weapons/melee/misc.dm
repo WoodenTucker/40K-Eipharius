@@ -163,7 +163,7 @@
 
 // CHAINSWORD
 
-/obj/item/melee/mercycs
+/obj/item/melee/chain/mercycs
 	name = "Locke Pattern Double-Edged Chainsword"
 	desc = "Nicknamed 'Mercy', This Chainsword is designed for a absolute lunatic, it comes with two ripping edges. Designed for maximum rip and tear."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -183,7 +183,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
 
-/obj/item/melee/inqcs
+/obj/item/melee/chain/inqcs
 	name = "Drusian Pattern Chainsword"
 	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, Designed solely to smite the filthy xenos."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -203,7 +203,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
 
-/obj/item/melee/pcsword
+/obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
 	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -223,7 +223,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 7
 
-/obj/item/melee/pcsword/eviscerator
+/obj/item/melee/chain/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
 	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, It's a absurdly large, two-handed chainsword, equipped with a crude disruption field found commonly on power weapon, Though extremely unwieldly, It is a powerful sword, And in the hands of an Astarte, it's truly shines on the Battlefield."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -245,3 +245,26 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 11
+
+/obj/item/melee/chain/pcsword/khorneaxe
+	name = "Khornate Chainaxe"
+	desc = "The Chainaxe of the Blood God's chosen mortal men and Astartes alike. It looks excellent for killing, maiming, and perhaps even burning. It doesn't look very good for blocking, good thing you're only gonna attack with it."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "chainaxe"
+	item_state = "chainaxe"
+	wielded_icon = "chainaxe"
+	str_requirement = 16
+	force = 47 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force_wielded = 55
+	block_chance = 28
+	sharp = TRUE
+	edge = TRUE
+	w_class = ITEM_SIZE_NORMAL
+	hitsound = 'sound/weapons/chainsword.ogg'
+	drop_sound = 'sound/items/handle/axe_drop.ogg'
+	equipsound = 'sound/items/equip/axe_equip.ogg'
+	grab_sound = 'sound/items/handle/axe_grab.ogg'
+	grab_sound_is_loud = TRUE
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
+	weapon_speed_delay = 8

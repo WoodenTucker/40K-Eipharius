@@ -584,7 +584,7 @@
 "nO" = (/obj/structure/sign/art/blindfolds,/turf/simulated/wall,/area/cadiaoutpost/oa/service/chapel)
 "nP" = (/obj/structure/sign/art/porn,/turf/simulated/wall,/area/cadiaoutpost/oa/security/barracks)
 "nQ" = (/obj/structure/sign/art/porn,/turf/simulated/wall/r_wall,/area/cadiaoutpost/oa/security/prison)
-"nS" = (/obj/item/melee/pcsword,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)
+"nS" = (/obj/item/melee/chain/pcsword,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)
 "nT" = (/turf/unsimulated/mineral,/area/cadiaoutpost/oa/caves)
 "nU" = (/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)
 "nV" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/caves)

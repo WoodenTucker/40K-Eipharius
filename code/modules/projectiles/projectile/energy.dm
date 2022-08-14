@@ -162,7 +162,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 62 
+	damage = 62
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
@@ -179,7 +179,7 @@
 	icon_state = "lasbolt"
 	damage = 90
 	armor_penetration = 25
-	
+
 /obj/item/projectile/energy/las/lasgun/hotshot
 	name = "lasbolt"
 	fire_sound='sound/weapons/lasgun.ogg'
@@ -194,6 +194,14 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 55
+	armor_penetration = 25
+
+	/obj/item/projectile/energy/pulse/pulsepistol
+	name = "pulse round"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1"
+	damage = 40
 	armor_penetration = 25
 
 /obj/item/projectile/energy/pulse/pulserail
@@ -214,3 +222,28 @@
 	armor_penetration = 25
 //	agony = 0 //who did this? dumb fucks
 //	stun = 5
+
+
+/obj/item/projectile/energy/pulse/plasmarifle
+	name = "pplasma round"
+	fire_sound='sound/weapons/marauder.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1_bl"
+	damage = 85
+	armor_penetration = 40
+
+/obj/item/projectile/energy/pulse/plasmapistol
+	name = "plasma round"
+	fire_sound='sound/weapons/marauder.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1_bl"
+	damage = 60
+	armor_penetration = 35
+
+	/obj/item/projectile/energy/pulse/plasmapistol/astartes
+	name = "plasma round"
+	fire_sound='sound/weapons/marauder.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "pulse1_bl"
+	damage = 75
+	armor_penetration = 40

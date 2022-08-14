@@ -801,7 +801,7 @@
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			sleep(40)
 			var/obj/effect/landmark/cargospawn/T = locate() //where dey spawning
-			new /obj/item/melee/mercycs(T.loc) //what they spawning
+			new /obj/item/melee/chain/mercycs(T.loc) //what they spawning
 			src.buying = 0
 	if (href_list["stubber"])
 		if(GLOB.thrones < 40) //do we got enough shekels?
@@ -1308,7 +1308,7 @@
 	name = "commerce cogitator"
 	desc = "An Administratum cogitator used to process taxes and manage the estates treasury."
 	icon = 'icons/obj/modular_console.dmi'
-	icon_state = "console"	
+	icon_state = "console"
 	anchored = 1
 	density = 1
 	atom_flags = ATOM_FLAG_CLIMBABLE

@@ -88,7 +88,7 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/mercycs
+	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -238,7 +238,7 @@ Begin Warhammer loadouts
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
 	uniform =  /obj/item/clothing/under/rank/catachancommissar
 	suit = /obj/item/clothing/suit/armor/commissar/catachan
-	belt = /obj/item/melee/pcsword
+	belt = /obj/item/melee/chain/pcsword
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/commissar/catachan

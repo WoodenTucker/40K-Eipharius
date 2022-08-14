@@ -68,11 +68,11 @@
 				if(src.STAT_LEVEL(str)>12)
 					src.STAT_LEVEL(str)+=3
 				else if(src.STAT_LEVEL(str)<10)
-					src.STAT_LEVEL(str)+=4
+					src.STAT_LEVEL(str)+=3
 				if(src.SKILL_LEVEL(melee)>4)
-					src.SKILL_LEVEL(melee)+=1
+					src.SKILL_LEVEL(melee)+=2
 				else if (src.SKILL_LEVEL(melee)<4)
-					src.SKILL_LEVEL(melee)=4
+					src.SKILL_LEVEL(melee)=5
 			else if(istype(src.l_hand, /obj/item/organ/internal/heart))
 				qdel(usr.l_hand)
 				to_chat(src, "You bring your first heart to the Blood God. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
@@ -110,62 +110,62 @@
 				qdel(src.l_hand)
 				to_chat(src, "<font color='#720202'>You bring one more heart to the throne.</font>")
 				playsound(src, 'sound/effects/cults/khorne/khorne.ogg', 50, 0, -1)
-				if(STAT_LEVEL(end)<20)
+				if(STAT_LEVEL(end)<21)
 					STAT_LEVEL(end) +=1
-				if(STAT_LEVEL(end)==19)
+				if(STAT_LEVEL(end)==21)
 					to_chat(src, "<font color='#720202'>That was your last endurance improvement.</font>")
 				if(STAT_LEVEL(end)>20)
 					to_chat(src, "<font color='#720202'>You cannot improve your endurance more with hearts.</font>")
 				src.update_inv_l_hand()
 				if(src.SKILL_LEVEL(melee)<7)
-					src.SKILL_LEVEL(melee)+=1
-				if(STAT_LEVEL(int)>10)
-					STAT_LEVEL(int)-=1
+					src.SKILL_LEVEL(melee)+=2
+				if(STAT_LEVEL(int)>8)
+					STAT_LEVEL(int)-=2
 			else if(istype(src.r_hand, /obj/item/organ/internal/heart))
 				qdel(src.r_hand)
 				to_chat(src, "<font color='#720202'>You bring one more heart to the throne.</font>")
 				playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 				if(STAT_LEVEL(end)<20)
-					STAT_LEVEL(end) +=1
-				if(STAT_LEVEL(end)==19)
+					STAT_LEVEL(end) +=2
+				if(STAT_LEVEL(end)==21)
 					to_chat(src, "<font color='#720202'>That was your last endurance improvement.</font>")
 				if(STAT_LEVEL(end)>20)
 					to_chat(src, "<font color='#720202'>You cannot improve your endurance more with hearts.</font>")
 				src.update_inv_r_hand()
 				if(src.SKILL_LEVEL(melee)<7)
-					src.SKILL_LEVEL(melee)+=1
-				if(STAT_LEVEL(int)>10)
-					STAT_LEVEL(int)-=1
+					src.SKILL_LEVEL(melee)+=2
+				if(STAT_LEVEL(int)>8)
+					STAT_LEVEL(int)-=2
 			else if(istype(src.l_hand, /obj/item/organ/internal/heart))
 				if(STAT_LEVEL(str)<18)
 					qdel(usr.l_hand)
 					to_chat(src, "<font color='#720202'>You bring more blood for the Blood God.</font>")
 					playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 					src.update_inv_l_hand()
-					STAT_LEVEL(str) +=1
-				if(STAT_LEVEL(str)==17)
+					STAT_LEVEL(str) +=2
+				if(STAT_LEVEL(str)==21)
 					to_chat(src, "<font color='#720202'>That was your last strength improvement.</font>")
-				if(STAT_LEVEL(str)>18)
+				if(STAT_LEVEL(str)>20)
 					to_chat(src, "<font color='#720202'>You're too strong to gain power with mortal's blood.</font>")
-				if(src.SKILL_LEVEL(ranged)<6)
+				if(src.SKILL_LEVEL(ranged)<8)
 					src.SKILL_LEVEL(ranged)+=1
-				if(STAT_LEVEL(dex)<15)
-					STAT_LEVEL(dex)+=1
+				if(STAT_LEVEL(dex)<19)
+					STAT_LEVEL(dex)+=2
 			else if(istype(src.r_hand, /obj/item/organ/internal/heart))
-				if(STAT_LEVEL(str)<18)
+				if(STAT_LEVEL(str)<21)
 					qdel(usr.r_hand)
 					to_chat(src, "<font color='#720202'>You bring more blood for the Blood God.</font>")
 					playsound(src, 'sound/effects/khorne.ogg', 50, 0, -1)
 					src.update_inv_r_hand()
-					STAT_LEVEL(str) +=1
-				if(STAT_LEVEL(str)==17)
+					STAT_LEVEL(str) +=2
+				if(STAT_LEVEL(str)==21)
 					to_chat(src, "<font color='#720202'>That was your last strength improvement.</font>")
-				if(STAT_LEVEL(str)>18)
+				if(STAT_LEVEL(str)>20)
 					to_chat(src, "<font color='#720202'>You're too strong to gain power with mortal's blood.</font>")
-				if(src.SKILL_LEVEL(ranged)<6)
-					src.SKILL_LEVEL(ranged)+=1
-				if(STAT_LEVEL(dex)<15)
-					STAT_LEVEL(dex)+=1
+				if(src.SKILL_LEVEL(ranged)<8)
+					src.SKILL_LEVEL(ranged)+=2
+				if(STAT_LEVEL(dex)<19)
+					STAT_LEVEL(dex)+=2
 			else if(istype(src.l_hand, /obj/item/stack/teeth) && istype(src.r_hand, /obj/item/material/sword/combat_knife) && T)
 				qdel(src.r_hand)
 				src.update_inv_r_hand()
@@ -173,25 +173,25 @@
 				src.update_inv_l_hand()
 				switch(rand(1,10))
 					if(1)
-						new /obj/item/material/sword/choppa(src.loc)
+						new /obj/item/melee/chain/pcsword/eviscerator(src.loc)
 					if(2)
 						new /obj/item/material/sword/cane(src.loc)
 					if(3)
 						new /obj/item/material/sword/combat_knife/catachan(src.loc)
 					if(4)
-						new /obj/item/melee/classic_baton/trench_club(src.loc)
+						new /obj/item/melee/chain/inqcs(src.loc)
 					if(5)
-						new /obj/item/melee/trench_axe(src.loc)
+						new /obj/item/material/sword/choppa(src.loc)
 					if(6)
 						new /obj/item/melee/baton/loaded(src.loc)
 					if(7)
-						new /obj/item/melee/mercycs(src.loc)
+						new /obj/item/melee/chain/mercycs(src.loc)
 					if(8)
-						new /obj/item/gun/projectile/shotgun/pump/shitty/bayonet(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(9)
-						new /obj/item/material/hatchet/machete(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(10)
-						new /obj/item/material/mekmace(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 				to_chat(src, "<font color='#720202'>Take your weapon, warrior.</font>")
 			else if(istype(src.r_hand, /obj/item/stack/teeth) && istype(src.l_hand, /obj/item/material/sword/combat_knife) && T)
 				qdel(src.r_hand)
@@ -200,24 +200,24 @@
 				src.update_inv_l_hand()
 				switch(rand(1,8))
 					if(1)
-						new /obj/item/material/sword/choppa(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(2)
-						new /obj/item/material/sword/cane(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(3)
-						new /obj/item/material/sword/combat_knife/catachan(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(4)
-						new /obj/item/melee/classic_baton/trench_club(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(5)
-						new /obj/item/melee/trench_axe(src.loc)
+						new /obj/item/melee/chain/mercycs(src.loc)
 					if(6)
-						new /obj/item/melee/baton/loaded(src.loc)
+						new /obj/item/melee/chain/pcsword/khorneaxe(src.loc)
 					if(7)
-						new /obj/item/melee/mercycs(src.loc)
+						new /obj/item/melee/chain/inqcs(src.loc)
 					if(8)
-						new /obj/item/gun/projectile/shotgun/pump/shitty/bayonet(src.loc)
+						new /obj/item/melee/chain/pcsword/eviscerator(src.loc)
 				to_chat(src, "<font color='#720202'>Take your weapon, warrior.</font>")
 			else
-				to_chat(src, "Bring me next heart for health or the heart for strength, mortal. Bring me tooth and knife upon my rune to gain weapon")
+				to_chat(src, "Bring me next a heart for health or a heart for strength, if you still need it mortal. Otherwise. Bring me a tooth from a slain, in right hand. Steel combat knife in the left and stand upon my rune to gain a weapon fit for your might")
 				return
 
 /mob/living/carbon/human/proc/bludforbludguy()

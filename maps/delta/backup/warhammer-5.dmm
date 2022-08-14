@@ -753,9 +753,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cy" = (
 /obj/structure/table/rack/dark,
-/obj/item/melee/inqcs,
-/obj/item/melee/inqcs,
-/obj/item/melee/inqcs,
+/obj/item/melee/chain/inqcs,
+/obj/item/melee/chain/inqcs,
+/obj/item/melee/chain/inqcs,
 /obj/item/melee/baton/loaded,
 /obj/item/melee/baton/loaded,
 /obj/effect/floor_decal/turf/brick,
