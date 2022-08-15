@@ -176,7 +176,7 @@ Begin Warhammer loadouts
 /decl/hierarchy/outfit/job/sharpshooter/krieg
 	name = OUTFIT_JOB_NAME("Krieg Sniper")
 	uniform = /obj/item/clothing/under/rank/krieg_uniform
-	suit = /obj/item/clothing/suit/armor/krieger
+	suit = /obj/item/clothing/suit/armor/krieger/grenadier
 	back = /obj/item/storage/backpack/satchel/krieger
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
@@ -301,7 +301,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/box/a556/mg08 = 1,
 	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
