@@ -119,7 +119,7 @@ Begin Warhammer loadouts
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
