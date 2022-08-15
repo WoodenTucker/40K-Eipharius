@@ -35,6 +35,10 @@
 /mob/living/carbon/human
 	var/new_kroot = SPECIES_KROOT
 
+/mob/living/carbon/human/kroot/New(var/new_loc)
+	h_style = "Bald"
+	..(new_loc, new_kroot)
+
 /mob/living/carbon/human/kroot
 	gender = MALE
 	var/isempty = 0
