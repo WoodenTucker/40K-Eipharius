@@ -136,10 +136,10 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -171,6 +171,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
+
 	)
 /decl/hierarchy/outfit/job/sharpshooter/krieg
 	name = OUTFIT_JOB_NAME("Krieg Sniper")
@@ -181,11 +182,11 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
-	glasses = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

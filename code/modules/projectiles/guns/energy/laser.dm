@@ -610,9 +610,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
-	accuracy = -3
+	accuracy = -4
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 13 // something something its recharging
+	fire_delay = 14 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -630,10 +630,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 10
-	one_hand_penalty = 2 //change later?
-	accuracy = -3
-	move_delay = 3 //it a pistol
-	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	one_hand_penalty = 6 //change later?
+	accuracy = -4
+	move_delay = 3 //it a pistol, but giga cool plasma
+	fire_delay = 9 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -652,10 +652,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	str_requirement = 18 // astartes moment
 	force = 20
-	one_hand_penalty = 2 //change later?
+	one_hand_penalty = 4 //change later?
 	accuracy = -2
 	move_delay = 3 //it a pistol
-	fire_delay = 6 // unsure if decent. dont want fast fire rate
+	fire_delay = 8 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
@@ -665,7 +665,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 
 
-/obj/item/gun/energy/pulse/plasma/pistol/chaos
+/obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
 	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
