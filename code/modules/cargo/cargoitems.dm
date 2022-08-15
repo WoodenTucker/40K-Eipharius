@@ -366,17 +366,17 @@
 	cost = 5
 	item_path = /obj/item/ammo_magazine/c44
 
-/datum/cargo_entry/weapon/revolverammo
+/datum/cargo_entry/weapon/luclas
 	name = "Lucius Lasgun"
 	cost = 50
 	item_path = /obj/item/gun/energy/las/lasgun/lucius
 
-/datum/cargo_entry/weapon/revolverammo
+/datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
 	cost = 55
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
 
-/datum/cargo_entry/weapon/revolverammo
+/datum/cargo_entry/weapon/recshell
 	name = "Recoiless Shell Box"
 	cost = 4
 	item_path = /obj/item/ammo_casing/heat_shell
