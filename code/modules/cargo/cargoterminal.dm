@@ -187,6 +187,7 @@
 				return
 			balance += O.amount * sellable_items[O.type]
 			qdel(O)
+			return
 
 	return ..()
 
