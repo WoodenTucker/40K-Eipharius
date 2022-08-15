@@ -319,7 +319,7 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
 	name = "Boltpistol Magazine"
-	icon_state = "ersatz"
+	icon_state = "tinyersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -381,7 +381,7 @@
 //-----SPECIAL BOLTER MAGS-----
 /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 	name = "Metal Storm Boltpistol Magazine"
-	icon_state = "ersatz"
+	icon_state = "tinyersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -409,7 +409,7 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 	name = "Kraken Penetrator Boltpistol Magazine"
-	icon_state = "ersatz"
+	icon_state = "krakenersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -423,7 +423,7 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	name = "Kraken Penetrator Bolter Magazine"
-	icon_state = "ersatz"
+	icon_state = "krakenersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
