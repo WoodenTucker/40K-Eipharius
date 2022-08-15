@@ -353,7 +353,7 @@
 
 /obj/item/ammo_magazine/ork/slugga
 	name = "slugga magazine"
-	icon_state = "slugga"
+	icon_state = "ALL DA LI'L PISTALS USE DIS ONE YA GIT!"
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -366,7 +366,7 @@
 
 /obj/item/ammo_magazine/ork/shoota
 	name = "shoota magazine"
-	icon_state = "shoota"
+	icon_state = "DIS ONE'S FOR DA BIG UN SHOOTAS WITH DA ROIFLE BOOLETS!"
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
