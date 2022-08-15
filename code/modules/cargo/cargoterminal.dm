@@ -151,35 +151,36 @@
 //////////////////////////////////////////////////
 
 
-/obj/machinery/computer/planetarytrade/attackby(var/obj/item/O, /mob/user) //These manage putting coins directly into the console
+/obj/machinery/computer/planetarytrade/attackby(var/obj/item/O, mob/user) //These manage putting coins directly into the console
 	if(istype(O, /obj/item/stack/thrones))
-		if(O.amount < 0)
+		var/obj/item/stack/thrones/M = O
+		if(M.amount < 0)
 			return TRUE
-		else if (istype(O, /obj/item/stack/thrones))
+		else if (istype(M, /obj/item/stack/thrones))
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-			O.amount -= 1 //takes a shekel from the stack
+			M.amount -= 1 //takes a shekel from the stack
 			balance += 10 //adds crowns to da counter
 			visible_message("[usr] deposits a $10 throne coin into the console.")
 			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-			O.update_icon() //so coins in hand update
+			M.update_icon() //so coins in hand update
 			return
-		else if (istype(O, /obj/item/stack/thrones2))
+		else if (istype(M, /obj/item/stack/thrones2))
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-			O.amount -= 1 //takes a shekel from the stack
+			M.amount -= 1 //takes a shekel from the stack
 			balance += 5 //adds crowns to da counter
 			visible_message("[usr] deposits a $5 throne coin into the console.")
 			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-			O.update_icon() //so coins in hand update
+			M.update_icon() //so coins in hand update
 			return
-		else if (istype(O, /obj/item/stack/thrones3))
+		else if (istype(M, /obj/item/stack/thrones3))
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-			O.amount -= 1 //takes a shekel from the stack
+			M.amount -= 1 //takes a shekel from the stack
 			balance += 1 //adds crowns to da counter
 			visible_message("[usr] deposits a $1 throne coin into the console.")
 			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-			O.update_icon() //so coins in hand update
+			M.update_icon() //so coins in hand update
 			return
-		if(istype(O, /obj/item/stack) && O.type in sellable_items)
+		if(istype(M, /obj/item/stack) && O.type in sellable_items)
 			var/obj/item/stack/S = O
 			if(O.amount < 1)
 				qdel(O)

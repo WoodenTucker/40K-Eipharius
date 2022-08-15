@@ -266,11 +266,6 @@
 	cost = 15
 	item_path = /obj/item/gun/energy/las/laspistol
 
-/datum/cargo_entry/weapon/sword
-	name = "Sword"
-	cost = 45
-	item_path = /obj/item/melee/chain/mercycs
-
 /datum/cargo_entry/weapon/grim //???
 	name = "GRIM Autogun"
 	cost = 25
