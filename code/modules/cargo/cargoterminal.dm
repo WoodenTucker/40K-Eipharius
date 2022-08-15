@@ -180,14 +180,15 @@
 			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 			M.update_icon() //so coins in hand update
 			return
-		if(istype(M, /obj/item/stack) && O.type in sellable_items)
-			var/obj/item/stack/S = O
-			if(S.amount < 1)
-				qdel(S)
-				return
-			balance += S.amount * sellable_items[O.type]
+	if(istype(O, /obj/item/stack) && O.type in sellable_items)
+		var/obj/item/stack/S = O
+		if(S.amount < 1)
 			qdel(S)
 			return
+		visible_message("[usr] shoves [O] into the console.")
+		balance += S.amount * sellable_items[O.type]
+		qdel(S)
+		return
 
 	return ..()
 
