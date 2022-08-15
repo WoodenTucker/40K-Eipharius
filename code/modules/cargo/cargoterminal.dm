@@ -21,6 +21,14 @@
 	var/datum/cargo_category/current_category
 	var/current_menu = 0
 
+	//Temporary
+	var/list/sellable_items = list(
+	/obj/item/stack/material/platinum = 200,
+	/obj/item/stack/material/gold = 50,
+	/obj/item/stack/material/diamond = 100,
+	/obj/item/stack/material/silver = 50
+	)
+
 /obj/machinery/computer/planetarytrade/Initialize()
 	purchaseable_items = init_subtypes(/datum/cargo_entry)
 	available_categories = init_subtypes(/datum/cargo_category)
@@ -143,33 +151,41 @@
 //////////////////////////////////////////////////
 
 
-/obj/machinery/computer/planetarytrade/attackby(var/obj/item/stack/thrones/O, var/mob/user) //These manage putting coins directly into the console
-	if(O.amount < 0)
-		return TRUE
-	else if (istype(O, /obj/item/stack/thrones))
-		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-		O.amount -= 1 //takes a shekel from the stack
-		balance += 10 //adds crowns to da counter
-		visible_message("[usr] deposits a $10 throne coin into the console.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-		O.update_icon() //so coins in hand update
-		return
-	else if (istype(O, /obj/item/stack/thrones2))
-		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-		O.amount -= 1 //takes a shekel from the stack
-		balance += 5 //adds crowns to da counter
-		visible_message("[usr] deposits a $5 throne coin into the console.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-		O.update_icon() //so coins in hand update
-		return
-	else if (istype(O, /obj/item/stack/thrones3))
-		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-		O.amount -= 1 //takes a shekel from the stack
-		balance += 1 //adds crowns to da counter
-		visible_message("[usr] deposits a $1 throne coin into the console.")
-		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-		O.update_icon() //so coins in hand update
-		return
+/obj/machinery/computer/planetarytrade/attackby(var/obj/item/O, /mob/user) //These manage putting coins directly into the console
+	if(istype(O, /obj/item/stack/thrones)
+		if(O.amount < 0)
+			return TRUE
+		else if (istype(O, /obj/item/stack/thrones))
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+			O.amount -= 1 //takes a shekel from the stack
+			balance += 10 //adds crowns to da counter
+			visible_message("[usr] deposits a $10 throne coin into the console.")
+			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+			O.update_icon() //so coins in hand update
+			return
+		else if (istype(O, /obj/item/stack/thrones2))
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+			O.amount -= 1 //takes a shekel from the stack
+			balance += 5 //adds crowns to da counter
+			visible_message("[usr] deposits a $5 throne coin into the console.")
+			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+			O.update_icon() //so coins in hand update
+			return
+		else if (istype(O, /obj/item/stack/thrones3))
+			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
+			O.amount -= 1 //takes a shekel from the stack
+			balance += 1 //adds crowns to da counter
+			visible_message("[usr] deposits a $1 throne coin into the console.")
+			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+			O.update_icon() //so coins in hand update
+			return
+		if(istype(O, /obj/item/stack) && O.type in sellable_items)
+			var/obj/item/stack/S = O
+			if(O.amount < 1)
+				qdel(O)
+				return
+			balance += O.amount * sellable_items[O.type]
+			qdel(O)
 
 	return ..()
 
