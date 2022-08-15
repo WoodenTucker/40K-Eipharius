@@ -12,7 +12,7 @@
 
 	if(src.quote_cd == 0)
 		src.say("For the Lord of the flies!")
-		playsound(src, 'sound/effects/cults/nurgle/fornurgle.ogg', 80, 0, 5)
+		playsound(src, 'sound/effects/quotes/cults/nurgle/fornurgle.ogg', 80, 0, 5)
 		src.quote_cd = 1
 		sleep(100)
 		src.quote_cd = 0

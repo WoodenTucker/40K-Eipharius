@@ -7,7 +7,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("Let your aim be true")
+		src.say("Let your aim be true!")
 		playsound(src, 'sound/effects/quotes/commissar/aimtrue.ogg', 80, 0, 8)
 		src.quote_cd = 1
 		sleep(50)
@@ -79,7 +79,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("Flee at your own parole and fight")
+		src.say("Flee at your own parole and fight!")
 		playsound(src, 'sound/effects/quotes/commissar/flee.ogg', 80, 0, 12)
 		src.quote_cd = 1
 		sleep(50)
@@ -97,7 +97,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("Glory to The Emperor")
+		src.say("Glory to The Emperor!")
 		playsound(src, 'sound/effects/quotes/commissar/gloryepmeror.ogg', 80, 0, 5)
 		src.quote_cd = 1
 		sleep(50)
@@ -187,7 +187,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("I vow my soul it shall be done")
+		src.say("I vow my soul it shall be done!")
 		playsound(src, 'sound/effects/quotes/commissar/shallbedone.ogg', 80, 0, 5)
 		src.quote_cd = 1
 		sleep(50)
@@ -197,7 +197,7 @@
 		return
 
 /mob/living/carbon/human/proc/comssomeonehead()
-	set name = "I will have someone's head"
+	set name = "I will have someone's head!"
 	set category = "Commissar"
 	set desc = name
 	if(!ishuman(src))
@@ -205,7 +205,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("I will have someone's head for this")
+		src.say("I will have someone's head for this!")
 		playsound(src, 'sound/effects/quotes/commissar/someonehead.ogg', 80, 0, 12)
 		src.quote_cd = 1
 		sleep(50)
@@ -233,7 +233,7 @@
 		return
 
 /mob/living/carbon/human/proc/comstovictory()
-	set name = "Forward to victory"
+	set name = "Forward to victory!"
 	set category = "Commissar"
 	set desc = name
 	if(!ishuman(src))
@@ -241,7 +241,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("Forward you dogs to victory")
+		src.say("Forward you dogs to victory!")
 		playsound(src, 'sound/effects/quotes/commissar/tovictory.ogg', 80, 0, 15)
 		src.quote_cd = 1
 		sleep(50)
@@ -287,7 +287,7 @@
 		return
 
 /mob/living/carbon/human/proc/comswillwhip()
-	set name = "I will whip retreats"
+	set name = "I will whip retreats!"
 	set category = "Commissar"
 	set desc = name
 	if(!ishuman(src))
@@ -295,7 +295,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("I will whip the first of you who retreats")
+		src.say("I will whip the first of you who retreats!")
 		playsound(src, 'sound/effects/quotes/commissar/willwhip.ogg', 80, 0, 12)
 		src.quote_cd = 1
 		sleep(50)
@@ -305,7 +305,7 @@
 		return
 
 /mob/living/carbon/human/proc/comsyoucannotstand()
-	set name = "You cannot stand me"
+	set name = "You cannot stand me!"
 	set category = "Commissar"
 	set desc = name
 	if(!ishuman(src))
@@ -313,7 +313,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("You cannot stand against me")
+		src.say("You cannot stand against me!")
 		playsound(src, 'sound/effects/quotes/commissar/youcannotstand.ogg', 80, 0, 10)
 		src.quote_cd = 1
 		sleep(50)
@@ -323,7 +323,7 @@
 		return
 
 /mob/living/carbon/human/proc/comsyouwereweak()
-	set name = "We lost because your weakness"
+	set name = "We lost because your weakness!"
 	set category = "Commissar"
 	set desc = name
 	if(!ishuman(src))
@@ -331,8 +331,26 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("We lost because you were a weak")
+		src.say("We lost because you were a weak!")
 		playsound(src, 'sound/effects/quotes/commissar/youwereweak.ogg', 80, 0, 7)
+		src.quote_cd = 1
+		sleep(50)
+		src.quote_cd = 0
+	else
+		to_chat(src, "You cannot yell again so soon")
+		return
+
+/mob/living/carbon/human/proc/comsexecute()
+	set name = "For cowardish you die"
+	set category = "Commissar"
+	set desc = name
+	if(!ishuman(src))
+		return
+	if(src.stat == DEAD)
+		return
+	if(src.quote_cd == 0)
+		src.say("On charges of cowardish you are sentence to death")
+		playsound(src, 'sound/effects/quotes/commissar/execute.ogg', 80, 0, 4)
 		src.quote_cd = 1
 		sleep(50)
 		src.quote_cd = 0

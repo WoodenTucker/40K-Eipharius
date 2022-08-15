@@ -59,7 +59,7 @@
 				GLOB.teeth_lost++
 				if(H.rage >= 2)
 					if(prob(30))
-						playsound(src, 'sound/effects/cults/khorne/khorne.ogg', 100, 1, 1)
+						playsound(src, 'sound/effects/quotes/cults/khorne/khorne.ogg', 100, 1, 1)
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
 				if(H.intrigue >= 2)
 					if(prob(30)) //tzeentch boys are a bit softer than khorne/nurgle lads
@@ -70,7 +70,7 @@
 					to_chat(H, "The Prince of Pleasure protects his sevants from pain. What would be excruciating is turned to pleasure.")
 				if(H.decay >= 2)
 					if(prob(30))
-						playsound(src, 'sound/effects/cults/nurgle//fornurgle.ogg', 100, 1, 1)
+						playsound(src, 'sound/effects/quotes/cults/nurgle/fornurgle.ogg', 100, 1, 1)
 						H.say("FATHER NURGLE PROTECT YOUR ACOLYTE! BLIGHT THESE CORPSE-WORSHIPPPERS!")
 
 				user.doing_something = 0

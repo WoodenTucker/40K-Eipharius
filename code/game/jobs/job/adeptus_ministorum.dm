@@ -242,7 +242,7 @@
 		/mob/living/carbon/human/proc/sobemperorgivesstrenght,
 		/mob/living/carbon/human/proc/sobnotforsakeme,
 		/mob/living/carbon/human/proc/sobpraise,
-		/mob/living/carbon/human/proc/sobsororitas,,
+		/mob/living/carbon/human/proc/sobsororitas,
 		/mob/living/carbon/human/proc/sobfearthesister,
 		/mob/living/carbon/human/proc/sobfeelwrath,
 		/mob/living/carbon/human/proc/sobfoesapproach,
