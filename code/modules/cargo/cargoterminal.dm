@@ -152,7 +152,7 @@
 
 
 /obj/machinery/computer/planetarytrade/attackby(var/obj/item/O, /mob/user) //These manage putting coins directly into the console
-	if(istype(O, /obj/item/stack/thrones)
+	if(istype(O, /obj/item/stack/thrones))
 		if(O.amount < 0)
 			return TRUE
 		else if (istype(O, /obj/item/stack/thrones))
