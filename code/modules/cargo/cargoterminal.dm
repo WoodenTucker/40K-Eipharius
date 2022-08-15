@@ -104,8 +104,11 @@
 
 	if(href_list["withdraw"])
 		var/withdrawamt = round(input(usr, "", "Withdraw thrones") as null|num)
-		if(withdrawamt > balance || withdrawamt < 0)
+		if(withdrawamt > balance)
 			return FALSE
+		if(withdrawamt <= 0)
+			return FALSE
+		balance -= withdrawamt
 		while(withdrawamt > 0)
 			if(withdrawamt >= 10)
 				var/obj/item/stack/thrones/money = new(get_turf(usr))
@@ -119,7 +122,6 @@
 				var/obj/item/stack/thrones3/money = new(get_turf(usr))
 				money.amount = withdrawamt
 				withdrawamt -= money.amount
-		balance -= withdrawamt
 		ui_interact(usr)
 		return TRUE
 

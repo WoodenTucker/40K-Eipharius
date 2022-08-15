@@ -21,7 +21,7 @@
 		terminal.visible_message("<b>[terminal]</b> flashes a <span style='color:red'>warning</span>, \"Your balance is too low..\"")
 		return FALSE
 
-	terminal.visible_message("<b>[terminal]</b> flashes a <span style='color:blue'>notice</span>, \"Your order has been confirmed. ETA: 5 Seconds.\"")
+	terminal.visible_message("<b>[terminal]</b> flashes a <span style='color:blue'>notice</span>, \"Your order has been confirmed. ETA: [DEFAULT_DROP_TIME / 10] Seconds.\"")
 	terminal.balance -= (cost + round(cost * GLOB.tax_rate)) //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 	GLOB.thrones += round(cost * GLOB.tax_rate)
 	terminal.busy = TRUE
@@ -35,12 +35,15 @@
 	if(!special)
 		dropping = new item_path(T.loc) //what they spawning
 		dropping.visible_message("[dropping] falls onto the drop pad.")
-		on_purchase(terminal)
+		on_purchase(terminal, dropping)
 	else
-		on_purchase(terminal)
+		special_purchase(terminal)
 	terminal.busy = FALSE
 
-/datum/cargo_entry/proc/on_purchase(var/obj/machinery/computer/planetarytrade/terminal) // Override for special purchases
+/datum/cargo_entry/proc/on_purchase(var/obj/machinery/computer/planetarytrade/terminal, var/product) // Override for things that need to be done post-spawn. Like adding ammo.
+	return
+
+/datum/cargo_entry/proc/special_purchase(var/obj/machinery/computer/planetarytrade/terminal) // Ovveride for special items
 	return
 
 /datum/cargo_entry/medical
@@ -88,6 +91,25 @@
 	name = "Cheap Amasec"
 	cost = 3
 	item_path = /obj/item/reagent_containers/food/drinks/bottle/amasecpoor
+
+/datum/cargo_entry/food/expenamasec
+	name = "Expensive Amasec"
+	cost = 8
+	item_path = /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive
+
+/datum/cargo_entry/food/ea1
+	name = "Caddis Mourning Collection"
+	cost = 30
+	name = "/obj/item/reagent_containers/food/drinks/bottle/caddis/extra"
+
+/datum/cargo_entry/food/ea2
+	name = "Caddis Golden Tokay"
+	cost = 45
+	item_path = /obj/item/reagent_containers/food/drinks/bottle/caddis/elite
+/datum/cargo_entry/food/ea3
+	name = "Caddis Catalina Malvasia"
+	cost = 60
+	item_path = /obj/item/reagent_containers/food/drinks/bottle/caddis/supreme
 
 /datum/cargo_entry/medical/mbelt
 	name = "Medical Belt"
@@ -200,32 +222,32 @@
 	item_path = /obj/item/clothing/mask/gas/security
 
 /datum/cargo_entry/armor/helmet
-	name = "Guard Helmet"
+	name = "Flak Helmet"
 	cost = 10
 	item_path = /obj/item/clothing/head/helmet/guardhelmet
 
-/datum/cargo_entry/armor/armor
-	name = "Guard Armor"
-	cost = 20
+/datum/cargo_entry/armor/garmor
+	name = "Flak Armor"
+	cost = 30
 	item_path = /obj/item/clothing/suit/armor/guardsman
 
 /datum/cargo_entry/armor/nvg
-	name = "Night Vision Goggles"
+	name = "Night Vision Visor"
 	cost = 35
 	item_path = /obj/item/clothing/glasses/night
 
 /datum/cargo_entry/armor/val
-	name = "Valhallan Crate"
+	name = "Valhallan Equipment Crate"
 	cost = 45
 	item_path = /obj/structure/closet/crate/valhallan
 
 /datum/cargo_entry/armor/krieg
-	name = "Krieg Crate"
+	name = "Krieg Equipment Crate"
 	cost = 45
 	item_path = /obj/structure/closet/crate/krieg
 
 /datum/cargo_entry/armor/excr //???
-	name = "Operations Crate"
+	name = "Extended Operations Crate"
 	cost = 70
 	item_path = /obj/structure/closet/crate/operations
 
@@ -235,7 +257,7 @@
 	item_path = /obj/structure/closet/crate/miner
 
 /datum/cargo_entry/weapon/lasgun
-	name = "Lasgun"
+	name = "Kantrael Lasgun"
 	cost = 25
 	item_path = /obj/item/gun/energy/las/lasgun
 
@@ -250,14 +272,19 @@
 	item_path = /obj/item/melee/mercycs
 
 /datum/cargo_entry/weapon/grim //???
-	name = "Grim"
+	name = "GRIM Autogun"
 	cost = 25
 	item_path = /obj/item/gun/projectile/automatic/autogrim
 
 /datum/cargo_entry/weapon/grimammo
-	name = "Grim Magazine"
+	name = "GRIM Autogun Magazine"
 	cost = 5
 	item_path = /obj/item/ammo_magazine/autogrim
+
+/datum/cargo_entry/weapon/smg
+	name = "Autogun Magazine"
+	cost = 4
+	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol
 
 /datum/cargo_entry/weapon/stubber
 	name = "Stubber"
@@ -265,7 +292,7 @@
 	item_path = /obj/item/gun/projectile/automatic/stubber
 
 /datum/cargo_entry/weapon/stubberammo //???
-	name = "Stubber Ammo"
+	name = "Auto Stubber Magazine"
 	cost = 7
 	item_path = /obj/item/ammo_magazine/box/a556/mg08
 
@@ -275,7 +302,7 @@
 	item_path = /obj/item/grenade/frag/high_yield/krak
 
 /datum/cargo_entry/misc/vatboy
-	name = "Vatgrown Human"
+	name = "Vat-Grown Human"
 	cost = 80
 	item_path = /obj/structure/closet/crate/vatgrownboy
 
@@ -288,5 +315,75 @@
 	name = "Mining Crate"
 	cost = 15
 	item_path = /obj/structure/closet/crate/miningcrate
+
+/datum/cargo_entry/misc/landmine
+	name = "Landmine"
+	cost = 35
+	item_path = /obj/item/landmine
+
+/datum/cargo_entry/armor/cara
+	name = "Guard Carapace Armor"
+	cost = 70
+	item_path = /obj/item/clothing/suit/armor/guardsman/carapace
+
+/datum/cargo_entry/armor/mercspace
+	name = "Mercenary Carapace Armor"
+	cost = 75
+	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace
+
+/datum/cargo_entry/armor/cara
+	name = "Carapace Vest"
+	cost = 50
+	item_path = /obj/item/clothing/accessory/storage/torso/armor
+
+/datum/cargo_entry/armor/belt
+	name = "Ammo Belt"
+	cost = 5
+	item_path = /obj/item/storage/belt/warfare
+
+/datum/cargo_entry/weapon/reng
+	name = "Renegade Pistol"
+	cost = 40
+	item_path = /obj/item/gun/projectile/talon/renegade
+
+/datum/cargo_entry/weapon/a80
+	name = "A80 Autogun"
+	cost = 40
+	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
+
+/datum/cargo_entry/weapon/renpistol
+	name = "Kieji Pistol"
+	cost = 30
+	item_path = /obj/item/gun/projectile/warfare/kieji
+
+/datum/cargo_entry/weapon/necvolver
+	name = "Slug Revolver"
+	cost = 45
+	item_path = /obj/item/gun/projectile/necros
+
+/datum/cargo_entry/weapon/revolverammo
+	name = "Revolver Ammo"
+	cost = 5
+	item_path = /obj/item/ammo_magazine/c44
+
+/datum/cargo_entry/weapon/revolverammo
+	name = "Lucius Lasgun"
+	cost = 50
+	item_path = /obj/item/gun/energy/las/lasgun/lucius
+
+/datum/cargo_entry/weapon/revolverammo
+	name = "Catachan Carbine"
+	cost = 55
+	item_path = /obj/item/gun/energy/las/lasgun/catachan
+
+/datum/cargo_entry/weapon/revolverammo
+	name = "Recoiless Shell Box"
+	cost = 4
+	item_path = /obj/item/ammo_casing/heat_shell
+
+/datum/cargo_entry/weapon/revolverammo
+	name = "Mercy Chainsword"
+	cost = 75
+	item_path = /obj/item/melee/chain/mercycs
 
 #undef DEFAULT_DROP_TIME
