@@ -376,7 +376,7 @@
 	cost = 4
 	item_path = /obj/item/ammo_casing/heat_shell
 
-/datum/cargo_entry/weapon/revolverammo
+/datum/cargo_entry/weapon/msword
 	name = "Mercy Chainsword"
 	cost = 75
 	item_path = /obj/item/melee/chain/mercycs
