@@ -397,7 +397,7 @@
 		/mob/living/carbon/human/verb/emoteemperorprotects,
 		/mob/living/carbon/human/proc/igrunforlifes,
 		/mob/living/carbon/human/proc/igyessir)
-		H.verbs += list(,
+		H.verbs += list(
 		/mob/living/carbon/human/proc/comsaimtrue,
 		/mob/living/carbon/human/proc/comsfaceus,
 		/mob/living/carbon/human/proc/comsfearme,

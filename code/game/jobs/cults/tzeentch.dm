@@ -246,7 +246,7 @@
 				STAT_LEVEL(int) +=1
 				STAT_LEVEL(str) -=1
 			else
-				to_chat(src, "<font color='#0400ff'>One of advisers with big beautiful story and no sence. </font>")
+				to_chat(src, "<font color='#0400ff'>Traitor among sources of knowledge. </font>")
 		if(18)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
@@ -417,7 +417,14 @@
 					if(do_after(usr,45,src))
 						qdel(src.l_hand)
 						qdel(src.r_hand)
-						new /obj/item/gun/energy/las/lasgun/tinkered(src.loc)
+						new /obj/item/grenade/frag/high_yield/krak(src.loc)
+//Krak
+				if(istype(src.l_hand, /obj/item/grenade/frag/high_yield/homemade) && istype(src.r_hand, /obj/item/grenade/frag/high_yield/homemade))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/grenade/frag/high_yield/krak(src.loc)
 //Laspistol
 				else if(istype(src.l_hand, /obj/item/gun/energy/las/lasgun) && istype(src.r_hand, /obj/item/gun/projectile/warfare))
 					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
@@ -585,6 +592,7 @@
 					if(do_after(usr,45,src))
 						qdel(src.r_hand)
 						new /obj/item/newore/coalore(src.loc)
+						/obj/item/newspaper
 //Thrones3
 				else if(istype(src.l_hand, /obj/item/newore/copperore))
 					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
@@ -657,6 +665,18 @@
 						qdel(src.l_hand)
 						qdel(src.r_hand)
 						new /obj/item/clothing/suit/armor/militia(src.loc)
+//IFAK
+				else if(istype(src.l_hand, /obj/item/newspaper))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						new /obj/item/storage/box/ifak(src.loc)
+				else if(istype(src.r_hand, /obj/item/newspaper))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.r_hand)
+						new /obj/item/storage/box/ifak(src.loc)
+
 			else
 				to_chat(src, "<font color='#0400ff'>You successfully proved your worship, now you can create, change, improve different items upon my rune. </font>")
 				to_chat(src, "<font color='#0400ff'>Let me give you examples.</font>")
@@ -677,6 +697,8 @@
 				to_chat(src, "<font color='#0400ff'>Cooper Ore -> 3 copper coins.</font>")
 				to_chat(src, "<font color='#0400ff'>Silver Ore -> 1 silver coin.</font>")
 				to_chat(src, "<font color='#0400ff'>Gold Ore -> 1 gold coin.</font>")
+				to_chat(src, "<font color='#0400ff'>Newspaper -> IFAK.</font>")
+				to_chat(src, "<font color='#0400ff'>Pipe Grenade + Pipe Grenade -> Fragmetation Grenade.</font>")
 				to_chat(src, "<font color='#0400ff'>Penitent Jumpsuit + Small Rock -> Valhallah Uniform.</font>")
 				to_chat(src, "<font color='#0400ff'>Penitent Jumpsuit + Gold Ore -> Noble Uniform.</font>")
 				to_chat(src, "<font color='#0400ff'>Penitent Jumpsuit + Iron Ore -> Militia Uniform.</font>")
