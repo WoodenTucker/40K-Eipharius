@@ -182,11 +182,11 @@
 			return
 		if(istype(M, /obj/item/stack) && O.type in sellable_items)
 			var/obj/item/stack/S = O
-			if(O.amount < 1)
-				qdel(O)
+			if(S.amount < 1)
+				qdel(S)
 				return
-			balance += O.amount * sellable_items[O.type]
-			qdel(O)
+			balance += S.amount * sellable_items[O.type]
+			qdel(S)
 			return
 
 	return ..()
