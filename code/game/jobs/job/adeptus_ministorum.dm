@@ -239,11 +239,18 @@
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
 		H.verbs += list(
-		/mob/living/carbon/human/proc/emperorgivesstrenght,
-		/mob/living/carbon/human/proc/notforsakeme,
-		/mob/living/carbon/human/proc/praise,
-		/mob/living/carbon/human/proc/sororitas,
-		/mob/living/carbon/human/proc/theemperor)
+		/mob/living/carbon/human/proc/sobemperorgivesstrenght,
+		/mob/living/carbon/human/proc/sobnotforsakeme,
+		/mob/living/carbon/human/proc/sobpraise,
+		/mob/living/carbon/human/proc/sobsororitas,
+		/mob/living/carbon/human/proc/sobfearthesister,
+		/mob/living/carbon/human/proc/sobfeelwrath,
+		/mob/living/carbon/human/proc/sobfoesapproach,
+		/mob/living/carbon/human/proc/sobnomercy,
+		/mob/living/carbon/human/proc/sobretreat,
+		/mob/living/carbon/human/proc/sobtakingfire,
+		/mob/living/carbon/human/proc/sobweservants,
+		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
@@ -478,89 +485,3 @@
 			/mob/living/carbon/human/proc/slaanesh,
 			/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
-
-/mob/living/carbon/human/proc/emperorgivesstrenght()
-	set name = "Emperor gives us strenght"
-	set category = "Sororitas"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Emperor gives us strenght")
-		playsound(src, 'sound/effects/sob/emperorgivesstrenght.ogg', 80, 0, 5)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-/mob/living/carbon/human/proc/notforsakeme()
-	set name = "Emperor do not forsake me"
-	set category = "Sororitas"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Emperor do not forsake me!")
-		playsound(src, 'sound/effects/sob/notforsakeme.ogg', 80, 0, 2)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-/mob/living/carbon/human/proc/praise()
-	set name = "Praise the Emperor!"
-	set category = "Sororitas"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Praise the Emperor!")
-		playsound(src, 'sound/effects/sob/praise.ogg', 80, 0, 5)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-/mob/living/carbon/human/proc/sororitas()
-	set name = "Prepared to serve"
-	set category = "Sororitas"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Adepta Sororitas prepared to serve!")
-		playsound(src, 'sound/effects/sob/sororitas.ogg', 80, 0, 4)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-/mob/living/carbon/human/proc/theemperor()
-	set name = "Our father and guardian"
-	set category = "Sororitas"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("The Emperor. Our father and guardian")
-		playsound(src, 'sound/effects/sob/theemperor.ogg', 80, 0, 3)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
