@@ -78,15 +78,17 @@
 
 // Pilgrim Stuff
 
-/obj/item/clothing/shoes/workboots
+/obj/item/clothing/shoes/jackboots/techpriest
 	name = "techno-boots"
 	desc = "Cybernetic legs scurry the Tech-priest where he is needed."
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 40, bullet = 10, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
-	item_flags = ITEM_FLAG_NOSLIP
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
+	canremove = FALSE
 	
 /* //"Duplicate" of noble boots
 /obj/item/clothing/shoes/commandboots
@@ -250,18 +252,19 @@
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 
-/obj/item/clothing/shoes/skitshoes //walking sounds only play with shoes and I was losing my mind not having them
+/obj/item/clothing/shoes/jackboots/skitshoes //walking sounds only play with shoes and I was losing my mind not having them
 	name = "Skitarii feet"
 	desc = "Augmented for speed and power"
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 80)
-	canremove = 0
 	unacidable = 1
-	item_flags = ITEM_FLAG_NOSLIP
+	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
+	canremove = FALSE
 
-/obj/item/clothing/shoes/technoboots
+
+/obj/item/clothing/shoes/jackboots/technoboots
 	name = "Mars Pattern Advanced Boots"
 	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
 	icon_state = "techpriest"
@@ -270,11 +273,12 @@
 	siemens_coefficient = 1
 	can_hold_knife = 1
 	unacidable = 1
-	item_flags = ITEM_FLAG_NOSLIP
+	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
+	canremove = FALSE
 
 // Sororitas
 
-/obj/item/clothing/shoes/sisterofbattle
+/obj/item/clothing/shoes/jackboots/sisterofbattle
 	name = "Order of the Sacred Rose Power Boots"
 	desc = "A pair of Power Boots issued to the Sororitas-Militant of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
 	icon_state = "sister"
@@ -311,38 +315,27 @@
 
 //Inquisition Stuff
 
-/obj/item/clothing/shoes/hereticusboots
-	name = "Ordo Hereticus Shoes"
+/obj/item/clothing/shoes/jackboots/inquisitor
+	name = "Plasteel Reinforced Combat Boots"
 	desc = "Tall plasteel boots with black paint."
 	icon_state = "inqshoes"
 	item_state = "inqshoes"
 	force = 3
 	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.7
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
+	item_flags = ITEM_FLAG_NOSLIP
+	
+/obj/item/clothing/shoes/jackboots/inquisitor/acolyte
+	name = "Reinforced Combat Boots"
+	desc = "Reinforced Mars Pattern Combat Boots."
+	icon_state = "jackboots"
+	item_state = "jackboots"
+	force = 3
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 25, bio = 70, rad = 70)
+	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-	var/obj/item/material/sword/combat_knife/knife = null
 	item_flags = ITEM_FLAG_NOSLIP
-	
-/obj/item/clothing/shoes/hereticusboots/New()
-	..()
-	knife = new
-	update_icon()
-/obj/item/clothing/shoes/hereticusboots/attackby(obj/item/I, mob/user)
-	. = ..()
-	if(istype(I, /obj/item/material/sword/combat_knife))
-		if(knife)//We've already got a knife in there, no need for another.
-			return
-		user.drop_from_inventory(I)
-		I.forceMove(src)
-		knife = I
-		update_icon()
-		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
-/obj/item/clothing/shoes/hereticusboots/attack_hand(mob/living/user)
-	if(knife)
-		user.put_in_active_hand(knife)
-		knife = null
-		update_icon()
-		return
-	..()

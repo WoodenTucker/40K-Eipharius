@@ -259,7 +259,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	gloves = /obj/item/clothing/gloves/sisterofbattle
-	shoes = /obj/item/clothing/shoes/sisterofbattle
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/sisterbolter

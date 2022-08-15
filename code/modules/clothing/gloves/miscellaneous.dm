@@ -96,9 +96,12 @@
 	canremove = 0
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
+	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
 	icon_state = "techpriest"
 	item_state = "techpriest"
 	unacidable = 1
+	item_flags = ITEM_FLAG_NODROP
+		
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."

@@ -70,6 +70,9 @@
 		/obj/item/stack/thrones2 = 1,
 		/obj/item/stack/thrones3/five = 1,)
 
+
+// biologis
+
 /decl/hierarchy/outfit/job/medical/geneticist
 	name = OUTFIT_JOB_NAME("Genetor")
 	uniform = /obj/item/clothing/under/rank/geneticist
@@ -80,9 +83,9 @@
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	gloves = /obj/item/clothing/gloves/thick/techpriest
-	glasses = /obj/item/clothing/glasses/hud/health
-	shoes = /obj/item/clothing/shoes/workboots
+	gloves = /obj/item/clothing/shoes/jackboots/techpriest
+	glasses = /obj/item/clothing/glasses/science/magos
+	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
