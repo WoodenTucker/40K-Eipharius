@@ -182,7 +182,7 @@
 /decl/hierarchy/outfit/job/skitarii
 	uniform = /obj/item/clothing/under/rank/skitarii
 	suit = /obj/item/clothing/suit/storage/hooded/skitarii
-	shoes = /obj/item/clothing/shoes/skitshoes
+	shoes = /obj/item/clothing/shoes/jackboots/skitshoes
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team
