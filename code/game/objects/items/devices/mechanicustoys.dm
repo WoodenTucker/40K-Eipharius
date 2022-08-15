@@ -139,6 +139,10 @@
 	w_class = ITEM_SIZE_HUGE
 	weapon_speed_delay = 7
 
+/obj/item/melee/omnissiah_axe/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+	
 
 //Biologis toys go below here---------------------------------------------------------------------------------
 /obj/item/device/neuraladapter
