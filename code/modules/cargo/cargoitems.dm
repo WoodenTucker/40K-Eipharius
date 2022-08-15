@@ -379,6 +379,6 @@
 /datum/cargo_entry/weapon/msword
 	name = "Mercy Chainsword"
 	cost = 75
-	item_path = /obj/item/ammo_casing/heat_shell ///obj/item/melee/chain/mercycs
+	item_path = /obj/item/melee/chain/mercycs
 
 #undef DEFAULT_DROP_TIME
