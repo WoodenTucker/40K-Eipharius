@@ -89,8 +89,9 @@
 	toggleable = 1
 	electric = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
-	vision_flags = SEE_MOBS
-	vision_flags = SEE_TURFS
+	vision_flags = SEE_MOBS|SEE_TURFS
+	canremove = 0
+	unacidable = 1
 
 /obj/item/clothing/glasses/science/tech
 	name = "priest goggles"
@@ -102,6 +103,8 @@
 	electric = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	vision_flags = SEE_TURFS
+	canremove = 0
+	unacidable = 1
 
 /obj/item/clothing/glasses/meson/New()
 	..()
