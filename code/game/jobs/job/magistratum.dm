@@ -50,6 +50,7 @@
 
 /datum/job/marshal
 	title = "Planetary Marshal"
+	head_position = 1
 	supervisors = "the Rogue Trader"
 	total_positions = 1
 	spawn_positions = 1
