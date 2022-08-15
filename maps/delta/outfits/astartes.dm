@@ -109,7 +109,6 @@ Begin Warhammer loadouts
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
 	suit_store = /obj/item/gun/projectile/bolter/raven
@@ -121,6 +120,7 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/ten = 1
+	/obj/item/clothing/glasses/astartes/visor = 1
 	)
 
 /decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant
@@ -133,7 +133,6 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/raven
@@ -222,7 +221,6 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
-	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/sally
@@ -295,7 +293,6 @@ Begin Warhammer loadouts
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter
-
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
