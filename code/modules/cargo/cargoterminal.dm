@@ -21,6 +21,14 @@
 	var/datum/cargo_category/current_category
 	var/current_menu = 0
 
+	//Temporary
+	var/list/sellable_items = list(
+	/obj/item/stack/material/platinum = 200,
+	/obj/item/stack/material/gold = 50,
+	/obj/item/stack/material/diamond = 100,
+	/obj/item/stack/material/silver = 50
+	)
+
 /obj/machinery/computer/planetarytrade/Initialize()
 	purchaseable_items = init_subtypes(/datum/cargo_entry)
 	available_categories = init_subtypes(/datum/cargo_category)
@@ -443,7 +451,8 @@
 			GLOB.thrones -= 100 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			var/obj/effect/landmark/reqspawn/T = locate() //where dey spawning
-			new /mob/living/carbon/human/kroot(T.loc) //what they spawning
+			var/mob/living/carbon/human/kroot/krplyr = new /mob/living/carbon/human/kroot(T.loc) //what they spawning
+			krplyr.request_player()
 
 //Procs for grabbing players.
 /mob/living/carbon/human/kroot/proc/request_player() //reqs the player

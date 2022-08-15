@@ -40,12 +40,6 @@
 	var/isempty = 0
 	var/iseating = 0
 
-
-/mob/living/carbon/human/kroot/New(var/new_loc)
-	request_player()
-	h_style = "Bald"
-	..(new_loc, new_kroot)
-
 /mob/living/carbon/human/kroot/Initialize()
 	. = ..()
 	fully_replace_character_name(random_kroot_name(src.gender))
