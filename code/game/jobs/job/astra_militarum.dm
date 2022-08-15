@@ -43,6 +43,18 @@
 			if("Krieg Guardsman")
 				H.fully_replace_character_name("Guardsman [troopnum]")
 				H.implant_loyalty(src)
+		H.verbs += list(
+		/mob/living/carbon/human/proc/igattack,
+		/mob/living/carbon/human/proc/igcanthold,
+		/mob/living/carbon/human/proc/igcharge,
+		/mob/living/carbon/human/proc/igemperorprotects,
+		/mob/living/carbon/human/proc/igholdline,
+		/mob/living/carbon/human/proc/iginhisname,
+		/mob/living/carbon/human/proc/igregroup,
+		/mob/living/carbon/human/proc/igretreat,
+		/mob/living/carbon/human/proc/igrunforlifes,
+		/mob/living/carbon/human/proc/igyessir)
+		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 
 // Guardsmen
 
@@ -373,6 +385,39 @@
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be punished if you metagame lateparties, murder allied characters without good reason OR force people to dig trenches round start. Period. You are an officer of the Commesariert, there's more you can do then pretend to be an infantry officer. </font></b></span>")
+		H.verbs -= list(
+		/mob/living/carbon/human/proc/igattack,
+		/mob/living/carbon/human/proc/igcanthold,
+		/mob/living/carbon/human/proc/igcharge,
+		/mob/living/carbon/human/proc/igemperorprotects,
+		/mob/living/carbon/human/proc/igholdline,
+		/mob/living/carbon/human/proc/iginhisname,
+		/mob/living/carbon/human/proc/igregroup,
+		/mob/living/carbon/human/proc/igretreat,
+		/mob/living/carbon/human/verb/emoteemperorprotects,
+		/mob/living/carbon/human/proc/igrunforlifes,
+		/mob/living/carbon/human/proc/igyessir)
+		H.verbs += list(,
+		/mob/living/carbon/human/proc/comsaimtrue,
+		/mob/living/carbon/human/proc/comsfaceus,
+		/mob/living/carbon/human/proc/comsfearme,
+		/mob/living/carbon/human/proc/comsfirsttodie,
+		/mob/living/carbon/human/proc/comsflee,
+		/mob/living/carbon/human/proc/comsgloryepmeror,
+		/mob/living/carbon/human/proc/comsmyscars,
+		/mob/living/carbon/human/proc/comsmywrath,
+		/mob/living/carbon/human/proc/comsretreatnotoption,
+		/mob/living/carbon/human/proc/comsservingme,
+		/mob/living/carbon/human/proc/comsshallbedone,
+		/mob/living/carbon/human/proc/comssomeonehead,
+		/mob/living/carbon/human/proc/comsstrikeem,
+		/mob/living/carbon/human/proc/comstovictory,
+		/mob/living/carbon/human/proc/comswhowithme,
+		/mob/living/carbon/human/proc/comswillnotfail,
+		/mob/living/carbon/human/proc/comswillwhip,
+		/mob/living/carbon/human/proc/comsyoucannotstand,
+		/mob/living/carbon/human/proc/comsexecute,
+		/mob/living/carbon/human/proc/comsyouwereweak)
 
 
 /*

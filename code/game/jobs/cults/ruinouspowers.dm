@@ -20,16 +20,16 @@
 		return
 	isdrawing = 1
 	if(decay >= 2)
-		(do_after(usr,80,src))
-		new /obj/effect/decal/cleanable/nurgle(get_turf(src))
-		src.adjustBruteLoss(2)
-		src.add_fingerprint(src)
-		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
-		isdrawing = 0
-	else
-		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
-		isdrawing = 0
-		return
+		if(do_after(usr,80,src))
+			new /obj/effect/decal/cleanable/nurgle(get_turf(src))
+			src.adjustBruteLoss(2)
+			src.add_fingerprint(src)
+			to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+			isdrawing = 0
+		else
+			to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+			isdrawing = 0
+			return
 
 
 
@@ -52,16 +52,16 @@
 		return
 	isdrawing = 1
 	if(lust >= 2)
-		(do_after(usr,80,src))
-		new /obj/effect/decal/cleanable/slaanesh(get_turf(src))
-		src.adjustBruteLoss(2)
-		src.add_fingerprint(src)
-		isdrawing = 0
-		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
-	else
-		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
-		isdrawing = 0
-		return
+		if(do_after(usr,80,src))
+			new /obj/effect/decal/cleanable/slaanesh(get_turf(src))
+			src.adjustBruteLoss(2)
+			src.add_fingerprint(src)
+			isdrawing = 0
+			to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+		else
+			to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+			isdrawing = 0
+			return
 
 /mob/living/carbon/human/proc/khornerune()
 	set category = "Ruinous Powers"
@@ -82,16 +82,16 @@
 	isdrawing = 1
 
 	if(rage >= 2)
-		(do_after(usr,80,src))
-		new /obj/effect/decal/cleanable/khorne(get_turf(src))
-		src.adjustBruteLoss(2)
-		src.add_fingerprint(src)
-		isdrawing = 0
-		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
-	else
-		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
-		isdrawing = 0
-		return
+		if(do_after(usr,80,src))
+			new /obj/effect/decal/cleanable/khorne(get_turf(src))
+			src.adjustBruteLoss(2)
+			src.add_fingerprint(src)
+			isdrawing = 0
+			to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+		else
+			to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+			isdrawing = 0
+			return
 
 /mob/living/carbon/human/proc/tzeentchrune()
 	set category = "Ruinous Powers"
@@ -111,16 +111,16 @@
 		return
 	isdrawing = 1
 	if(intrigue >= 2)
-		(do_after(usr,80,src))
-		new /obj/effect/decal/cleanable/tzeentch(get_turf(src))
-		src.adjustBruteLoss(2)
-		src.add_fingerprint(src)
-		to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
-		isdrawing = 0
-	else
-		to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
-		isdrawing = 0
-		return
+		if(do_after(usr,80,src))
+			new /obj/effect/decal/cleanable/tzeentch(get_turf(src))
+			src.adjustBruteLoss(2)
+			src.add_fingerprint(src)
+			to_chat(src, "You pick open your hand using your nails, using the blood you draw the symbol of your patron.")
+			isdrawing = 0
+		else
+			to_chat(src, "<span class='notice'>Your attempt to draw a rune fails...</span>")
+			isdrawing = 0
+			return
 
 //////////////////icons above  mob showing cult/////////////
 

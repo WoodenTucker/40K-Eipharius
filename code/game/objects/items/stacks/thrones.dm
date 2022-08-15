@@ -140,6 +140,9 @@
 	. = ..()
 	update_icon()
 
+/obj/item/stack/thrones3/three
+	amount = 3
+
 /obj/item/stack/thrones3/five
 	amount = 5
 
