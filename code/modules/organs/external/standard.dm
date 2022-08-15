@@ -172,11 +172,11 @@
 	if(prob(min(agony_amount*4,70)))
 		to_chat(owner, "<span class='warning'>You lose your footing as your [src] spasms!</span>")
 		owner.Weaken(5)
-
+/* //add this back if you want people to lose shoes if they lose one foot, note: this bypasses NODROP and others
 /obj/item/organ/external/foot/removed()
 	if(owner) owner.drop_from_inventory(owner.shoes)
 	..()
-
+*/
 /obj/item/organ/external/foot/robo_foot/New()
 	..()
 	robotize("Limbs R US")
@@ -226,11 +226,11 @@
 	if(!owner || (agony_amount < 5))
 		return
 	owner.grasp_damage_disarm(src)
-
+/* //add this back if you want people to lose gloves if they lose one hand, note: this bypasses NODROP and others
 /obj/item/organ/external/hand/removed()
 	owner.drop_from_inventory(owner.gloves)
 	..()
-
+*/
 /obj/item/organ/external/hand/right
 	organ_tag = BP_R_HAND
 	name = "right hand"
