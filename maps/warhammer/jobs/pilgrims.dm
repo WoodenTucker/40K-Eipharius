@@ -266,7 +266,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	head = /obj/item/clothing/head/bardhat
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
@@ -290,7 +290,7 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/ring/administrator
-	l_ear = /obj/item/device/radio/headset/red_team/sl_delta
+	l_ear = /obj/item/device/radio/headset/headset_service
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
 	backpack_contents = list(

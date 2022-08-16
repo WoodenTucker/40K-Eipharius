@@ -33,6 +33,7 @@
 	suit = /obj/item/clothing/suit/armor/agent/coat
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit_store = /obj/item/gun/projectile/lockebolter
+	l_ear = /obj/item/device/radio/headset/inquisition
 	backpack_contents = list(
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -52,7 +53,7 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadian
 	id = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
@@ -96,6 +97,7 @@
 	suit = /obj/item/clothing/suit/storage/hooded/inquisitor
 	shoes = /obj/item/clothing/shoes/jackboots/inquisitor
 	head = null
+	l_ear = /obj/item/device/radio/headset/inquisition
 	suit_store = /obj/item/gun/projectile/lockebolter
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 2,

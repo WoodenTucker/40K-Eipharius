@@ -36,7 +36,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
@@ -66,6 +66,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/cell/lasgun
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
@@ -93,6 +94,7 @@ Begin Warhammer loadouts
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -111,6 +113,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	suit_store = /obj/item/gun/projectile/bolter/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -133,6 +136,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/raven
@@ -155,6 +159,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/cell/lasgun
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
@@ -178,6 +183,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter/raven
@@ -200,6 +206,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	suit_store = /obj/item/gun/projectile/bolter/sally
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
@@ -221,6 +228,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
 	suit_store = /obj/item/gun/projectile/bolter/sally
@@ -244,6 +252,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/cell/lasgun
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
@@ -267,6 +276,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter/sally
@@ -289,7 +299,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter
@@ -313,6 +323,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	glasses = /obj/item/clothing/glasses/astartes/visor
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/grenade/frag/shell
@@ -336,6 +347,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/cell/lasgun
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
@@ -359,6 +371,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/projectile/bolter
@@ -382,6 +395,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = null
 	mask = null
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	glasses = /obj/item/clothing/glasses/night
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null

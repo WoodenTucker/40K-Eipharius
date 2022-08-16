@@ -196,7 +196,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
@@ -223,7 +223,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
@@ -241,14 +241,14 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/chain/pcsword
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
-	head = /obj/item/clothing/head/commissar/catachan
+	head = /obj/item/device/radio/headset/headset_com
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
