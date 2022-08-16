@@ -29,7 +29,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -47,7 +47,7 @@
 	id_type = /obj/item/card/id/civilian/botanist
 	pda_type = null
 	pda_slot = null
-	l_ear = l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -79,7 +79,7 @@
 	pda_type = null
 	pda_slot = null
 	head = /obj/item/clothing/head/servitorhead/janitor
-	l_ear = l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	suit = /obj/item/clothing/suit/servitor/janitor
 	back = /obj/item/storage/backpack/satchel/servitor
