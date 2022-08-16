@@ -67,6 +67,38 @@
 	bound_height = 64
 	bound_width = 64
 
+/obj/structure/statue/prayer
+	name = "prayer statue"
+	desc = "A strange prayer statue"
+	icon = 'icons/obj/structures/prayer.dmi'
+	icon_state = "prophet_prayer"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
+/obj/structure/statue/fountain
+	name = "fountain"
+	desc = "A glorious stone fountain"
+	icon = 'icons/obj/structures/fountain.dmi'
+	icon_state = "dark_fountain"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
+/obj/structure/statue/fountainwater
+	name = "fountain water"
+	desc = "A glorious stone fountain"
+	icon = 'icons/obj/structures/fountain.dmi'
+	icon_state = "water"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
 
 /obj/structure/statue/xenotube
 	name = "xeno containment tube"
