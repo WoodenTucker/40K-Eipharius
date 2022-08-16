@@ -308,7 +308,7 @@ var/list/organ_cache = list()
 	if(fingerprintslast)
 		O.fingerprintslast = fingerprintslast
 	user.put_in_active_hand(O)
-	qdel(src)
+	del src // Seemingly 40x faster. Temporary. Fix this: ScottyDoesGaming
 	target.attackby(O, user)
 
 /obj/item/organ/proc/can_feel_pain()
