@@ -67,6 +67,39 @@
 	bound_height = 64
 	bound_width = 64
 
+/obj/structure/statue/bigstatue
+	name = "big statue"
+	desc = "A strange object of stone and malice."
+	icon = 'icons/obj/structures/bigstatues.dmi'
+	icon_state = "statue_b"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
+/obj/structure/statue/bigstatue2
+	name = "big statue"
+	desc = "A strange object of stone and malice."
+	icon = 'icons/obj/structures/bigstatues.dmi'
+	icon_state = "statue_j"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
+/obj/structure/statue/bigstatue3
+	name = "big statue"
+	desc = "A strange object of stone and malice."
+	icon = 'icons/obj/structures/bigstatues.dmi'
+	icon_state = "statue_rahl"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
 /obj/structure/statue/prayer
 	name = "prayer statue"
 	desc = "A strange prayer statue"
