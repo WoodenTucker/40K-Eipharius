@@ -184,9 +184,9 @@
 
 //Pyres
 /obj/item/pyre
-	icon = 'icons/obj/pyre.dmi'
-	icon_state = "forge0"
-	item_state = "forge0"
+	icon = 'icons/obj/structures/fireplace.dmi'
+	icon_state = "fireplacestand"
+	item_state = "fireplacestand"
 	name = "Pyre"
 	desc = "In radiance may we find victory."
 	anchored = 1
@@ -210,12 +210,12 @@
 	..()
 	overlays = overlays.Cut()
 	if(lit)
-		icon_state = "forge1"
-		item_state = "forge1"
+		icon_state = "fireplacestand_f"
+		item_state = "fireplacestand_f"
 		set_light(5, 7, "#E38F46")
 	else
-		icon_state = "forge0"
-		item_state = "forge0"
+		icon_state = "fireplacestand"
+		item_state = "fireplacestand"
 		set_light(0,0)
 		if(self_lighting == 1)
 			overlays += overlay_image(icon, "lighter")
