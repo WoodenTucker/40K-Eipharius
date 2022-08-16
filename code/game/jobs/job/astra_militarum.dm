@@ -452,6 +452,7 @@
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/lasgun
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -477,6 +478,7 @@
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/lasgun
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -498,6 +500,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	l_ear = /obj/item/device/radio/headset/red_team
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/lucius
 	backpack_contents = list(
@@ -524,6 +527,7 @@
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -547,6 +551,7 @@
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/lasgun
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -570,6 +575,7 @@
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -599,6 +605,7 @@
 	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08
 	suit_store = /obj/item/gun/projectile/automatic/stubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	 /obj/item/ammo_magazine/box/a556/mg08 = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -619,6 +626,7 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -643,6 +651,7 @@
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -668,6 +677,7 @@
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -689,6 +699,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/launcher/rcl_rifle
 	backpack_contents = list(
 	/obj/item/ammo_casing/heat_shell = 2,
@@ -712,6 +723,7 @@
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/catachan
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -731,6 +743,7 @@
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/automatic/stubber
+	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08 = 2,
@@ -758,7 +771,7 @@
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
@@ -779,6 +792,7 @@
 	head = /obj/item/clothing/head/commissar/krieg
 	mask = /obj/item/clothing/mask/gas/commissar
 	glasses = null
+	l_ear = /obj/item/device/radio/headset/heads/hos
 
 /decl/hierarchy/outfit/job/ig/commissar/catachan
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
@@ -789,8 +803,9 @@
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null
 	glasses = null
+	l_ear = /obj/item/device/radio/headset/heads/hos
 
-//Squads
+//Squads - If we don't plan to use this code it can probably be commented out
 
 /mob/living/carbon/human/proc/assign_random_squad(var/team, var/rank)
 	switch(team)
@@ -929,7 +944,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 		"We fight to win, and that's all that matters.",
 		"Why we don't get any more reinforcements?",
 		"We have not gotten any orders from segmentum command in months...",
-		"Did something happened while we were holding this outpost?",
+		"Did something happen while we were holding this outpost?",
 		"Is there any reason to keep fighting?",
 		"It's middle of summer... Why it's so cold?",
 		"Greg died last night.",

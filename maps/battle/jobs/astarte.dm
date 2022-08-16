@@ -59,7 +59,7 @@
 /decl/hierarchy/outfit/job/envoy //will eventually code this to randomize to different chapters
 	name = OUTFIT_JOB_NAME("Astartes Envoy")
 	uniform = /obj/item/clothing/under/color/black
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = null

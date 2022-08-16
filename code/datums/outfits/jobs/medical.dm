@@ -10,7 +10,7 @@
 
 /decl/hierarchy/outfit/job/medical/cmo
 	name = OUTFIT_JOB_NAME("Sister Superior")
-	l_ear  = /obj/item/device/radio/headset/red_team/medicae
+	l_ear  = /obj/item/device/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/rank/medical
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
@@ -33,7 +33,7 @@
 /decl/hierarchy/outfit/job/medical/doctor
 	name = OUTFIT_JOB_NAME("Sister Hospitallar")
 	uniform = /obj/item/clothing/under/rank/medical
-	l_ear  = /obj/item/device/radio/headset/red_team/medicae
+	l_ear  = /obj/item/device/radio/headset/headset_sci
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -62,7 +62,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_sci
 	r_ear = null
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -86,7 +86,7 @@
 	gloves = /obj/item/clothing/shoes/jackboots/techpriest
 	glasses = /obj/item/clothing/glasses/science/magos
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_eng
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(

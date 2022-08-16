@@ -127,7 +127,7 @@ var/const/BLUE_BRAVO = 1459
 var/const/BLUE_DELTA = 1460
 
 // department channels
-var/const/PUB_FREQ = 1461//1459
+var/const/PUB_FREQ = 1441//1459
 var/const/SEC_FREQ = 1359
 var/const/ENG_FREQ = 1356
 var/const/MED_FREQ = 1355
@@ -143,27 +143,27 @@ var/const/SEC_I_FREQ = 1475
 
 var/list/radiochannels = list(
 	"Common"		= PUB_FREQ,
-	"Science"		= SCI_FREQ,
+	"Ecclesiarchy"	= SCI_FREQ,
 	"Command"		= COMM_FREQ,
 	"Medical"		= MED_FREQ,
-	"Engineering"	= ENG_FREQ,
-	"Security" 		= SEC_FREQ,
+	"Mechanicus"	= ENG_FREQ,
+	"Security" 	    = SEC_FREQ,
 	"Response Team" = ERT_FREQ,
 	"Special Ops" 	= DTH_FREQ,
 	"Exploration"	= EXP_FREQ,
 	"Supply" 		= SUP_FREQ,
-	"Service" 		= SRV_FREQ,
+	"Guardsmen" 	= SRV_FREQ,
 	"AI Private"	= AI_FREQ,
 	"Entertainment" = ENT_FREQ,
 	"Medical(I)"	= MED_I_FREQ,
 	"Security(I)"	= SEC_I_FREQ,
 	"Inquisition"	= INQ_FREQ,
-	"Red" 			= RED_FREQ,//Base red channel
+	"Red" 	     	= RED_FREQ,//Base red channel
 	"Blue"			= BLUE_FREQ,//Base blue channel
-	"Alpha" 	= RED_ALPHA,//Now begins squad channels
-	"Bravo" 	= RED_BRAVO,
-	"Charlie" 	= RED_CHARLIE,
-	"Delta" 	= RED_DELTA,
+	"Alpha"     	= RED_ALPHA,//Now begins squad channels
+	"Bravo"     	= RED_BRAVO,
+	"Charlie"    	= RED_CHARLIE,
+	"Delta" 	    = RED_DELTA,
 	"Blue Alpha" 	= BLUE_ALPHA,//Blue
 	"Blue Bravo" 	= BLUE_BRAVO,
 	"Blue Charlie" 	= BLUE_CHARLIE,
@@ -191,6 +191,7 @@ var/list/BRAVO_FREQS = list(RED_BRAVO)
 var/list/CHARLIE_FREQS = list(RED_CHARLIE)
 
 var/list/VILL_FREQS = list(RED_DELTA)
+
 
 //Department channels, arranged lexically
 var/list/DEPT_FREQS = list(AI_FREQ, COMM_FREQ, ENG_FREQ, MED_FREQ, INQ_FREQ, SEC_FREQ, SCI_FREQ, SRV_FREQ, SUP_FREQ, EXP_FREQ, ENT_FREQ)
