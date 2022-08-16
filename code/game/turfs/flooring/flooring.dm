@@ -176,7 +176,7 @@ var/list/flooring_types
 	name = "stone floor"
 	desc = "Cobblestone flooring"
 	icon = 'icons/turf/flooring/stonefloor.dmi'
-	icon_base = "main"
+	icon_base = "MAIN"
 	has_damage_range = 6
 	descriptor = "cobble"
 	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL
@@ -195,6 +195,16 @@ var/list/flooring_types
 
 /decl/flooring/stone/five
 	icon_base = "extra4"
+
+/decl/flooring/stone/six
+	icon_base = "extra5"
+
+/decl/flooring/stone/seven
+	icon_base = "extra6"
+
+/decl/flooring/stone/eight
+	icon_base = "extra7"
+
 /decl/flooring/reinforced
 	name = "reinforced floor"
 	desc = "Heavily reinforced with steel plating."
@@ -295,7 +305,7 @@ var/list/flooring_types
 	name = "snow"
 	desc = "Mixed snow"
 	icon = 'icons/turf/flooring/stonefloor.dmi'
-	icon_base = "main"
+	icon_base = "MAIN"
 	has_damage_range = 6
 	descriptor = "snow"
 	flags = TURF_CAN_BREAK | TURF_IS_FRAGILE |TURF_ACID_IMMUNE|TURF_HAS_CORNERS|TURF_REMOVE_SHOVEL

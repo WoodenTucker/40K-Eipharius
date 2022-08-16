@@ -135,11 +135,12 @@
 /obj/item/book
 	name = "book"
 	icon = 'icons/obj/library.dmi'
-	icon_state ="book"
+	icon_state ="book2"
 	throw_speed = 1
 	throw_range = 5
-	w_class = ITEM_SIZE_NORMAL		 //upped to three because books are, y'know, pretty big. (and you could hide them inside eachother recursively forever)
+	w_class = ITEM_SIZE_SMALL		 //upped to three because books are, y'know, pretty big. (and you could hide them inside eachother recursively forever)
 	attack_verb = list("bashed", "whacked", "educated")
+	var/list/random_icon_states = list("book2", "book3", "book4", "book5", "grimoire1")
 	var/dat			 // Actual page content
 	var/author		 // Who wrote the thing, can be changed by pen or PC. It is not automatically assigned
 	var/unique = 0   // 0 - Normal book, 1 - Should not be treated as normal book, unable to be copied, unable to be modified

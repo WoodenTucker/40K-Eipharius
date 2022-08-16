@@ -229,6 +229,16 @@ var/global/list/image/splatter_cache=list()
 			if (step_to(src, get_step(src, direction), 0))
 				break
 
+/obj/effect/decal/cleanable/blood/gibs/vomit
+	name = "gibs"
+	desc = "They look rancid and gruesome."
+	gender = PLURAL
+	density = 0
+	anchored = 1
+	icon = 'icons/effects/blood.dmi'
+	icon_state = "vgib1"
+	random_icon_states = list("vgib1", "vgib2", "vgibup", "vgibdown1", "vgibmid3", "vgibbl4")
+
 /obj/effect/decal/cleanable/mucus
 	name = "mucus"
 	desc = "Disgusting mucus."
