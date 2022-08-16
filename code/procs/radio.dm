@@ -15,6 +15,13 @@
 		freq_text = "Hive Mind"
 	else if(display_freq in IMP_FREQS)
 		freq_text = "Imperial"
+	else if(display_freq in DEPT_FREQS)
+		if(display_freq == COMM_FREQ)
+			freq_text = "Command"
+		if(display_freq == ENG_FREQ)
+			freq_text = "Mechanius"
+		if(display_freq == MED_FREQ)
+			freq_text = "Medical"
 	else if(display_freq in ALPHA_FREQS)
 		freq_text = "Alpha"
 	else if(display_freq in BRAVO_FREQS)

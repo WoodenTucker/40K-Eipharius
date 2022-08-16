@@ -7,7 +7,7 @@
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/command
 	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_type = /obj/item/card/id/gold
 	pda_type = null
@@ -39,7 +39,7 @@
 	suit = /obj/item/clothing/suit/storage/senkhalat
 	head = /obj/item/clothing/head/senturban
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/command
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/gun/projectile/talon
 	shoes = /obj/item/clothing/shoes/jackboots/noble

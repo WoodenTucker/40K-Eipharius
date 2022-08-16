@@ -53,16 +53,28 @@
 
 
 /obj/item/device/radio/headset/red_team/medicae
-	name = "Standard Issue Vox"
-	origin_tech = list(TECH_ILLEGAL = 3)
-	syndie = 1
+	name = "Medicae Headset"
 	ks1type = /obj/item/device/encryptionkey/red/medicae
 
 /obj/item/device/radio/headset/red_team/medicae/Initialize()
 	. = ..()
 	set_frequency(RED_FREQ)
 
+/obj/item/device/radio/headset/red_team/mechani
+	name = "Mechanius Headset"
+	ks1type = /obj/item/device/encryptionkey/headset_mechani
 
+/obj/item/device/radio/headset/red_team/mechani/Initialize()
+	. = ..()
+	set_frequency(RED_FREQ)
+
+/obj/item/device/radio/headset/red_team/command
+	name = "Command Headset"
+	ks1type = /obj/item/device/encryptionkey/headset_com
+
+/obj/item/device/radio/headset/red_team/command/Initialize()
+	. = ..()
+	set_frequency(RED_FREQ)
 
 
 //BLUE TEAM RADIO

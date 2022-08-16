@@ -172,12 +172,12 @@
 	channels = list("Engineering" = 1, "Science" = 1)
 
 /obj/item/device/encryptionkey/headset_med
-	name = "medical radio encryption key"
+	name = "medicae radio encryption key"
 	icon_state = "med_cypherkey"
 	channels = list("Medical" = 1)
 
 /obj/item/device/encryptionkey/headset_sci
-	name = "science radio encryption key"
+	name = "mechanius radio encryption key"
 	icon_state = "sci_cypherkey"
 	channels = list("Science" = 1)
 
@@ -185,11 +185,19 @@
 	name = "medical research radio encryption key"
 	icon_state = "medsci_cypherkey"
 	channels = list("Medical" = 1, "Science" = 1)
+	syndie = 1
 
 /obj/item/device/encryptionkey/headset_com
 	name = "command radio encryption key"
 	icon_state = "com_cypherkey"
-	channels = list("Command" = 1)
+	channels = list("Command" = 1, "Imperial" = 1)
+	syndie = 1
+
+/obj/item/device/encryptionkey/headset_mechani
+	name = "mechanius radio encryption key"
+	icon_state = "com_cypherkey"
+	channels = list("Engineering" = 1, "Imperial" = 1)
+	syndie = 1
 
 /obj/item/device/encryptionkey/heads/captain
 	name = "captain's encryption key"

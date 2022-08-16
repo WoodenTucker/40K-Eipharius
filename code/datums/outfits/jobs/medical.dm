@@ -62,7 +62,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	glasses = /obj/item/clothing/glasses/hud/health
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	r_ear = null
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -86,7 +86,7 @@
 	gloves = /obj/item/clothing/shoes/jackboots/techpriest
 	glasses = /obj/item/clothing/glasses/science/magos
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(
@@ -109,7 +109,7 @@
 	r_pocket = /obj/item/storage/box/ifak
 	l_pocket = /obj/item/cell/lasgun
 	id_type = /obj/item/card/id/medical/paramedic
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/medicae
 	r_ear = null
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,

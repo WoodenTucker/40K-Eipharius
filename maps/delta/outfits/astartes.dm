@@ -36,7 +36,7 @@ Begin Warhammer loadouts
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/red_team/command
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
