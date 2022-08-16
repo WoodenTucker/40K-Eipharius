@@ -88,14 +88,14 @@
 
 //Vomit (sorry)
 /obj/effect/decal/cleanable/vomit
-	name = "vomit"
+	name = "Vomit"
 	desc = "Gosh, how unpleasant."
 	gender = PLURAL
 	density = 0
 	anchored = 1
 	icon = 'icons/effects/blood.dmi'
-	icon_state = "vomit_1"
-	random_icon_states = list("vomit_1", "vomit_2", "vomit_3", "vomit_4")
+	icon_state = "vomittox_1"
+	random_icon_states = list("vomittox_1", "vgibup1", "vgibbl1", "vgibbl4")
 	var/list/viruses = list()
 
 /obj/effect/decal/cleanable/tomato_smudge
