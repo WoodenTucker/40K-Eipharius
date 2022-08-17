@@ -627,11 +627,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "ppistol"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 6 //change later?
-	accuracy = -4
+	accuracy = -5
 	move_delay = 3 //it a pistol, but giga cool plasma
 	fire_delay = 9 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -648,14 +648,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "ppistol"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
 	str_requirement = 18 // astartes moment
 	force = 20
-	one_hand_penalty = 4 //change later?
-	accuracy = -2
+	one_hand_penalty = 5 //change later?
+	accuracy = -4
 	move_delay = 3 //it a pistol
-	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	fire_delay = 9 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
@@ -671,11 +669,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "chaosppistol"
 	item_state = "chaosppistol"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 2 //change later?
-	accuracy = -3
+	accuracy = -6
 	move_delay = 3 //it a pistol
 	fire_delay = 8 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -685,4 +681,24 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	charge_meter = FALSE //no ammo icon state currently invisible
+	wielded_item_state = "pulse_pistol"
+
+
+/obj/item/gun/energy/pulse/plasma/pistol/mechanicus
+	name = "Ryza Pattern Plasma Pistol"
+	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. (cannot explode yet)"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "toasterppistol"
+	item_state = "toasterppistol"
+	force = 10
+	one_hand_penalty = 10 //until plasma is better balanced, wield this fancy one.
+	accuracy = -4
+	move_delay = 3
+	fire_delay = 7 // want better than others. its adamantium
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 200
 	wielded_item_state = "pulse_pistol"

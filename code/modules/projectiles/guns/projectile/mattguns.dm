@@ -102,6 +102,25 @@
 	if(user.zoomed)
 		user.do_zoom()
 
+// adeptus mech galv rifle. no scope yet.
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/galvrifle
+	name = "Galvonic Rifle"
+	desc = "A rifle from the Skitarii legions of the Adeptus Mechanicus. It may look primitive, compared to energy weapons and the like, but the bullets have certainly kept up with modern technological breakthroughs. Uses .338"
+	icon_state = "galvrifle"
+	item_state = "galvrifle"
+	empty_icon = "galvrifle-e"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	caliber = ".338"
+	screen_shake = 0.4
+	max_shells = 6
+	ammo_type = /obj/item/ammo_casing/lp338
+	accuracy = -2.0
+	one_hand_penalty = 20 // big rifle
+	fire_delay = 12
+
+
+
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
 	name = "Mark IV .338 Stub Rifle"
 	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
@@ -170,6 +189,8 @@
 /obj/item/ammo_magazine/lp338/needler/empty
 	ammo_type = /obj/item/ammo_casing/lp338/needler
 	initial_ammo = 0
+
+
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 	name = "\improper Triangong 4-46"
@@ -843,6 +864,30 @@
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
 	accuracy = -3
 	fire_delay = 1.6
+
+
+
+
+// adeptus mechanicus adamantium LMG
+//icon = 'icons/obj/weapons/gun/projectile.dmi'
+
+/obj/item/gun/projectile/automatic/stubber/cognis
+	name = "Cognis Pattern Heavy Stubber"
+	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
+	icon_state = "cognisLMG"
+	item_state = "cognisLMG"
+	str_requirement = 10 //change as SOON as skitarii stats are buffed and working!!!
+	loaded_icon = "cognisLMG"
+	unwielded_loaded_icon = "cognisLMG"
+	wielded_loaded_icon = "hmg-wielded"
+	unloaded_icon = "cognisLMG"
+	unwielded_unloaded_icon = "cognisLMG-e"
+	wielded_unloaded_icon = "hmg-wielded-e"
+	automatic = 1.2
+	burst = 3
+	fire_delay = 3.4
+	one_hand_penalty = 14 //by the omnissiah you MUST hold the machine spirit properly
+
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
