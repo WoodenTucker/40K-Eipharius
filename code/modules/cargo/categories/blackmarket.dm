@@ -46,11 +46,6 @@
 	cost = 290
 	item_path = /obj/item/material/sword/hellblade
 
-/datum/cargo_entry/bmarket/hellblade
-	name = "D**mon Blade"
-	cost = 310
-	item_path = /obj/item/material/sword/demon
-
 /datum/cargo_entry/bmarket/magushelm
 	name = "Magus Helm"
 	cost = 40

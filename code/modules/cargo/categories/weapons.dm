@@ -169,7 +169,7 @@
 /datum/cargo_entry/weapon/slugrevolver
 	name = "Masterwork Revolver"
 	cost = 55
-	item_path = /obj/item/gun/projectile/necros
+	item_path = /obj/item/gun/projectile/slugrevolver
 
 /datum/cargo_entry/weapon/mateba
 	name = "Mateba Revolver"
