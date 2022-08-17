@@ -98,7 +98,7 @@
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
 	user.setClickCooldown(5)
 	var/hit_zone = ran_zone()
-	if(user.lust <=7)
+	if(user.cult_favor <= 7 && user.mind.special_role == "Slaanesh Cultist")
 		to_chat(user, "The mutated arm resists you!")
 		return
 	if(C.stat == DEAD)
@@ -119,7 +119,7 @@
 
 
 /obj/item/melee/whip/lashoftorment/pickup(var/mob/living/carbon/human/user)
-	if(user.lust <= 7 )
+	if(user.cult_favor <= 7 && user.mind.special_role == "Slaanesh Cultist")
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
@@ -160,7 +160,6 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
 	edge = TRUE
-	sales_price = 180
 
 // CHAINSWORD
 
@@ -183,7 +182,6 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
-	sales_price = 50
 
 /obj/item/melee/chain/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -204,7 +202,6 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
-	sales_price = 45
 
 /obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
@@ -225,7 +222,6 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 7
-	sales_price = 65
 
 /obj/item/melee/chain/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -249,7 +245,6 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 11
-	sales_price = 70
 
 /obj/item/melee/chain/pcsword/khorneaxe
 	name = "Khornate Chainaxe"
@@ -273,4 +268,3 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 8
-	sales_price = 85

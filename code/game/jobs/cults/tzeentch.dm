@@ -14,30 +14,23 @@
 	if(!src.canmove || src.stat || src.restrained())
 		to_chat(src, "You cannot call upon Tzeentch while restrained!")	//user is tied up
 		return
-	if(rage > 0)
-		to_chat(src, "You are already sworn to Khorne!")	//src has already selected another path!
+	if(mind.special_role != "Tzeentch Cultist" && cult_favor != 0)
 		return
-	if(lust > 0)
-		to_chat(src, "You are already sworn to Slaanesh!")	//src has already selected another path!
-		return
-	if(decay > 0)
-		to_chat(src, "You are already sworn to Nurgle!")	//src has already selected another path!
-		return
-	switch(src.intrigue)
+	switch(cult_favor)
 		if(0)
 			var/obj/structure/toilet/T = locate() in src.loc
 			if(T)
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
-				src.intrigue++
+				cult_favor++
 				to_chat(src, "<font color='#0400ff'>First done</font>")
+				src.mind.special_role = "Tzeentch Cultist"
 			else
 				to_chat(src, "A wily voice pervades your mind. <font color='#0400ff'>Solve few of my riddles to start down the path of the deceiver. Sit upon the throne of both kings and beggars.</font>")
 		if(1)
 			STAT_LEVEL(int) +=1
-			src.intrigue++
+			cult_favor++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
 			to_chat(src, "<font color='#0400ff'>Correct</font>")
-			src.mind.special_role = "Tzeentch Cultist"
 			src.verbs += list(
 			/mob/living/carbon/human/proc/tzeewehere,
 			/mob/living/carbon/human/proc/tzeeforthechanger,
@@ -54,12 +47,12 @@
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/tzeentchrune
 			to_chat(src, "<font color='#0400ff'>To hear my next riddle memorize this symbol, draw it and stand upon it!</font>")
-			src.intrigue++
+			cult_favor++
 			GLOB.tzeentch_cult++
 		if(3)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
-				src.intrigue++
+				cult_favor++
 				to_chat(src, "<font color='#0400ff'>Good, now listen your next riddle.</font>")
 				STAT_LEVEL(end) +=1
 			else
@@ -67,7 +60,7 @@
 		if(4)
 			var/obj/structure/closet/pit/G = locate() in src.loc
 			if(G)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>One more done.</font>")
 			else
@@ -75,7 +68,7 @@
 		if(5)
 			var/obj/structure/bed/G = locate() in src.loc
 			if(G)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>One more done.</font>")
 			else
@@ -83,7 +76,7 @@
 		if(6)
 			var/obj/structure/flora/tree/pine/P = locate() in src.loc
 			if(P)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
@@ -92,7 +85,7 @@
 		if(7)
 			var/obj/machinery/light/stolb/P = locate() in src.loc
 			if(P)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
@@ -101,14 +94,14 @@
 		if(8)
 			if(istype(src.l_hand, /obj/item/paper))
 				qdel(src.l_hand)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right, use your promotion wisely.</font>")
 				src.add_spell(new /spell/targeted/heal_target/sacrifice)
 				STAT_LEVEL(int) +=1
 			else if(istype(src.r_hand, /obj/item/paper))
 				qdel(src.r_hand)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				src.add_spell(new /spell/targeted/heal_target/sacrifice)
@@ -117,12 +110,12 @@
 				to_chat(src, "<font color='#0400ff'>It can show you images it never saw, tell you stories it never heard. </font>")
 		if(9)
 			if(istype(src.l_hand, /obj/item/pickaxe))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right, use your promotion wisely.</font>")
 				STAT_LEVEL(int) +=1
 			else if(istype(src.r_hand, /obj/item/pickaxe))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
@@ -131,7 +124,7 @@
 		if(10)
 			var/obj/structure/curtain/P = locate() in src.loc
 			if(P)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(str) -=1
@@ -139,12 +132,12 @@
 				to_chat(src, "<font color='#0400ff'>Thin body that will save all your secrets behind itself. </font>")
 		if(11)
 			if(istype(src.l_hand, /obj/item/reagent_containers/food/drinks/canteen))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(str) -=1
 			else if(istype(src.r_hand, /obj/item/reagent_containers/food/drinks/canteen))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(str) -=1
@@ -152,7 +145,7 @@
 				to_chat(src, "<font color='#0400ff'>Gallows of need</font>")
 		if(12)
 			if(istype(src.l_hand, /obj/item/pyre/self_lit))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 			else if(istype(src.r_hand, /obj/item/pyre/self_lit))
@@ -164,18 +157,15 @@
 		if(13)
 			var/obj/structure/barbwire/P = locate() in src.loc
 			if(P)
-				src.intrigue++
-				src.intrigue++
+				cult_favor += 2
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 			else if(istype(src.l_hand, /obj/item/stack/barbwire))
-				src.intrigue++
-				src.intrigue++
+				cult_favor += 2
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 			else if(istype(src.r_hand, /obj/item/stack/barbwire))
-				src.intrigue++
-				src.intrigue++
+				cult_favor += 2
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 			else
@@ -197,12 +187,12 @@
 */
 		if(15)
 			if(istype(src.l_hand, /obj/item/torch)||istype(src.l_hand, /obj/item/device/flashlight/lantern))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
 			else if(istype(src.r_hand, /obj/item/torch)||istype(src.r_hand, /obj/item/device/flashlight/lantern))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				playsound(src, 'sound/items/torch_light.ogg', 100, 0, -1)
@@ -212,7 +202,7 @@
 			var/obj/structure/table/steel/P = locate() in src.loc
 			var/obj/structure/closet/C = locate() in src.loc
 			if(P || C)
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
@@ -234,13 +224,13 @@
 */
 		if(17)
 			if(istype(src.l_hand, /obj/item/book/manual))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 				STAT_LEVEL(str) -=1
 			else if(istype(src.r_hand, /obj/item/book/manual))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
@@ -252,13 +242,13 @@
 			if(T)
 				if(istype(src.l_hand, /obj/item/book/manual))
 					qdel(src.l_hand)
-					src.intrigue++
+					cult_favor++
 					playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 					to_chat(src, "<font color='#0400ff'>Ambitious person needs ambitious powers.</font>")
 					src.add_spell(new /spell/messa_shroud)
 				else if(istype(src.r_hand, /obj/item/book/manual))
 					qdel(src.r_hand)
-					src.intrigue++
+					cult_favor++
 					playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 					to_chat(src, "<font color='#0400ff'>Ambitious person needs ambitious powers.</font>")
 					src.add_spell(new /spell/messa_shroud)
@@ -307,12 +297,12 @@
 				src.STAT_LEVEL(dex) -=1
 			if(prob(40))
 				adjustBrainLoss(20)
-			src.intrigue++
+			cult_favor++
 			to_chat(src, "<font color='#0400ff'>Your initiation is complete. Better skills, better stats, use wisely</font>")
 		if(20)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
-				src.intrigue++
+				cult_favor++
 				to_chat(src, "<font color='#0400ff'>Take my grant.</font>")
 				switch(rand(1,2))
 					if(1)
@@ -325,14 +315,14 @@
 		if(21)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
-				src.intrigue++
+				cult_favor++
 				to_chat(src, "<font color='#0400ff'>Take my grant, use wisely.</font>")
 				new /obj/item/reagent_containers/pill/cyanide(src.loc)
 			else
 				to_chat(src, "<font color='#0400ff'>Let me grant you thing to kill silently or to kill yourself with no word in capture. Stand upon my rune</font>")
 		if(22)
 			if(istype(src.l_hand, /obj/item/stack/thrones3) || istype(src.l_hand, /obj/item/stack/thrones2) || istype(src.l_hand, /obj/item/stack/thrones))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Correct.</font>")
 			else if(istype(src.r_hand, /obj/item/stack/thrones3) || istype(src.r_hand, /obj/item/stack/thrones2) || istype(src.r_hand, /obj/item/stack/thrones))
@@ -343,29 +333,29 @@
 				to_chat(src, "<font color='#0400ff'>Many useless things that human can turn into one useful. </font>")
 		if(23)
 			if(istype(src.l_hand, /obj/item/material/shard))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Correct.</font>")
 			else if(istype(src.r_hand, /obj/item/material/shard))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>And the last riddle...</font>")
 			else
 				to_chat(src, "<font color='#0400ff'>Mutilated dangerous remain of smooth blank soul. </font>")
 		if(24)
 			if(istype(src.l_hand, /obj/item/material/sword/combat_knife))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Correct.</font>")
 			else if(istype(src.r_hand, /obj/item/material/sword/combat_knife))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>And the last riddle...</font>")
 			else
 				to_chat(src, "<font color='#0400ff'>Common tool of art of violence. </font>")
 		if(25)
 			if(istype(src.l_hand, /obj/item/flame/candle))
-				src.intrigue++
+				cult_favor++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Correct.</font>")
 			else if(istype(src.r_hand, /obj/item/flame/candle))
@@ -376,13 +366,13 @@
 				to_chat(src, "<font color='#0400ff'>Trial way to connect to other world for dark or bright urges. </font>")
 		if(26)
 			to_chat(src, "<font color='#0400ff'>Riddles has ended for you, and now you should prove your actual worship. </font>")
-			src.intrigue++
+			cult_favor++
 		if(27)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
 				if(istype(src.l_hand, /obj/item/clothing/head/helmet/krieghelmet)||istype(src.l_hand, /obj/item/clothing/head/helmet/guardhelmet)||istype(src.l_hand, /obj/item/clothing/head/helmet/flak)||istype(src.l_hand, /obj/item/clothing/head/helmet/medicae)||istype(src.l_hand, /obj/item/clothing/head/helmet/whiteshield))
 					qdel(src.l_hand)
-					src.intrigue++
+					cult_favor++
 					src.STAT_LEVEL(end)+=1
 					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
 				else if(istype(src.l_hand, /obj/item/clothing/head/helmet/krieghelmet)||istype(src.r_hand, /obj/item/clothing/head/helmet/guardhelmet)||istype(src.r_hand, /obj/item/clothing/head/helmet/flak)||istype(src.r_hand, /obj/item/clothing/head/helmet/medicae)||istype(src.r_hand, /obj/item/clothing/head/helmet/whiteshield))
@@ -397,12 +387,12 @@
 			if(T)
 				if(istype(src.l_hand, /obj/item/organ/internal/eyes))
 					qdel(src.l_hand)
-					src.intrigue++
+					cult_favor++
 					src.STAT_LEVEL(str)+=1
 					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
 				else if(istype(src.r_hand, /obj/item/organ/internal/eyes))
 					qdel(src.r_hand)
-					src.intrigue++
+					cult_favor++
 					src.STAT_LEVEL(str)+=1
 					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
 			else

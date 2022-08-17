@@ -19,7 +19,7 @@
 		to_chat(src, "<span class='warning'>We are drawing a rune!</span>")
 		return
 	isdrawing = 1
-	if(decay >= 2)
+	if(cult_favor >= 2)
 		if(do_after(usr,80,src))
 			new /obj/effect/decal/cleanable/nurgle(get_turf(src))
 			src.adjustBruteLoss(2)
@@ -51,7 +51,7 @@
 		to_chat(src, "<span class='warning'>We are drawing a rune!</span>")
 		return
 	isdrawing = 1
-	if(lust >= 2)
+	if(cult_favor >= 2)
 		if(do_after(usr,80,src))
 			new /obj/effect/decal/cleanable/slaanesh(get_turf(src))
 			src.adjustBruteLoss(2)
@@ -81,7 +81,7 @@
 		return
 	isdrawing = 1
 
-	if(rage >= 2)
+	if(cult_favor >= 2)
 		if(do_after(usr,80,src))
 			new /obj/effect/decal/cleanable/khorne(get_turf(src))
 			src.adjustBruteLoss(2)
@@ -127,22 +127,22 @@
 /mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
 	if (client)
 		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
-			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist" && rage >= 1) //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist") //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "khorne")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Slaanesh Cultist" && lust >= 1) //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Slaanesh Cultist") //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "slaanesh")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Nurgle Cultist" && decay >= 1) //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Nurgle Cultist") //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "nurgle")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist" && intrigue >= 1) //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist") //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "tzeentch")
 				client.images += I
 			if(cultist.mind && cultist.mind.special_role == "Mercenary") //unrelated to the above, its for merc hiring.
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Tyranid" && gsc >= 1) //genestealer cult/tyranid converts
+			if(cultist.mind && cultist.mind.special_role == "Tyranid" && cult_favor >= 1) //genestealer cult/tyranid converts
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "genestealer")
 				client.images += I
 	return

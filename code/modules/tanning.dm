@@ -78,7 +78,7 @@
 		new /obj/item/clothing/mask/masquerade(user.loc)
 		return
 	else if(istype(O, /obj/item/stack/material/cloth))
-		if(user.lust < 8)
+		if(user.cult_favor < 8 && user.mind.special_role == "Slaanesh Cultist")
 			to_chat(user, "Nothing happens...")
 			return
 		else
@@ -92,7 +92,7 @@
 				qdel(src)
 				return
 	else if(istype(O, /obj/item/organ/external/arm))
-		if(user.lust < 7)
+		if(user.cult_favor < 7 && user.mind.special_role == "Slaanesh Cultist")
 			to_chat(user, "Why would I want to do this?")
 			return
 		else

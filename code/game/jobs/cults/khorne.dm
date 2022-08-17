@@ -14,37 +14,31 @@
 	if(!src.canmove || src.stat || src.restrained())
 		to_chat(src, "You cannot call upon Khorne while restrained!")	//user is tied up
 		return
-	if(decay > 0)
-		to_chat(src, "You are already sworn to Nurgle!")	//usr has already selected another path!
+	if(mind.special_role != "Khorne Cultist" && cult_favor != 0)
 		return
-	if(lust > 0)
-		to_chat(src, "You are already sworn to Slaanesh!")	//usr has already selected another path!
-		return
-	if(intrigue > 0)
-		to_chat(src, "You are already sworn to Tzeentch!")	//usr has already selected another path!
-		return
-	switch(src.rage)
+	switch(cult_favor)
 		if(0)
 			if(istype(src.l_hand, /obj/item/organ/internal/heart))
 				qdel(usr.l_hand)
 				to_chat(src, "You bring your first heart to the Throne <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/quotes/cults/khorne/khorne.ogg', 50, 0, -1)
 				src.update_inv_l_hand()
-				src.rage++
+				cult_favor++
+				mind.special_role = "Khorne Cultist"
 			else if(istype(src.r_hand, /obj/item/organ/internal/heart))
 				qdel(usr.r_hand)
 				to_chat(src, "You bring your first heart to the throne. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/quotes/cults/khorne/khorne.ogg', 50, 0, -1)
 				src.update_inv_r_hand()
-				src.rage++
+				cult_favor++
+				mind.special_role = "Khorne Cultist"
 			else
 				to_chat(src, "Bring me your first heart of your enemy, mortal, and prove your worship to strength and honor of battle.")
 				return
 		if(1)
 			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
-			src.rage++
+			cult_favor++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
-			src.mind.special_role = "Khorne Cultist"
 			src.faction = "Khorne"
 			src.verbs += list(
 			/mob/living/carbon/human/proc/bludforbludguy,
@@ -59,12 +53,13 @@
 			/mob/living/carbon/human/proc/aaaaaa)
 			AddInfectionImages()
 		if(2)
-			if(istype(src.r_hand, /obj/item/organ/internal/heart))
-				qdel(usr.r_hand)
+			var/active_hand = get_active_hand()
+			if(istype(active_hand, /obj/item/organ/internal/heart))
 				to_chat(src, "You bring your first heart to the Blood God. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
 				playsound(src, 'sound/effects/quotes/cults/khorne/khorne.ogg', 50, 0, -1)
-				src.update_inv_r_hand()
-				src.rage++
+				drop_from_inventory(active_hand)
+				qdel(active_hand)
+				cult_favor++
 				if(src.STAT_LEVEL(str)>12)
 					src.STAT_LEVEL(str)+=3
 				else if(src.STAT_LEVEL(str)<10)
@@ -73,32 +68,19 @@
 					src.SKILL_LEVEL(melee)+=2
 				else if (src.SKILL_LEVEL(melee)<4)
 					src.SKILL_LEVEL(melee)=5
-			else if(istype(src.l_hand, /obj/item/organ/internal/heart))
-				qdel(usr.l_hand)
-				to_chat(src, "You bring your first heart to the Blood God. <font color='#720202'>You have taken the first step on the path of the Blood God.</font> You are not yet visibly corrupted but avoid detailed investigation.")
-				playsound(src, 'sound/effects/quotes/cults/khorne/khorne.ogg', 50, 0, -1)
-				src.update_inv_l_hand()
-				src.rage++
-				if(src.STAT_LEVEL(str)>12)
-					src.STAT_LEVEL(str)+=3
-				else if(src.STAT_LEVEL(str)<10)
-					src.STAT_LEVEL(str)+=4
-				if(src.SKILL_LEVEL(melee)>4)
-					src.SKILL_LEVEL(melee)+=1
-				else if (src.SKILL_LEVEL(melee)<4)
-					src.SKILL_LEVEL(melee)=4
+				mind.special_role = "Khorne Cultist"
 			else
 				to_chat(src, "<font color='#720202'>Bring me heart of your enemy, mortal, and prove your worship to strength and honor of battle once again</font>.")
 				return
 		if(3)
 			src.verbs += /mob/living/carbon/human/proc/khornerune
 			to_chat(src, "<font color='#720202'>Hatred, rage and fury like you've never known consume your mind and block out your every thought. Flashes of a symbol appear in your mind. You feel compelled to draw it</font>.")
-			src.rage++
+			cult_favor++
 			GLOB.khorne_cult++
 		if(4)
 			var/obj/effect/decal/cleanable/khorne/T = locate() in src.loc
 			if(T)
-				src.rage++
+				cult_favor++
 				playsound(usr, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "This... is it. That symbol. Just the sight of it quickens your heart and pumps adrenaline through your veins. <font color='#720202'>You can hear his voice more clearly now.</font>")
 			else
