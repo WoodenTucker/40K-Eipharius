@@ -93,12 +93,12 @@
 
 /datum/cargo_entry/armor/val
 	name = "Valhallan Equipment Crate"
-	cost = 45
+	cost = 100
 	item_path = /obj/structure/closet/crate/valhallan
 
 /datum/cargo_entry/armor/krieg
 	name = "Krieg Equipment Crate"
-	cost = 45
+	cost = 100
 	item_path = /obj/structure/closet/crate/krieg
 
 /datum/cargo_entry/armor/excr

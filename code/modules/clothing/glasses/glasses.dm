@@ -77,6 +77,7 @@
 	vision_flags = SEE_TURFS
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	electric = 1
+	sales_price = 5
 
 /obj/item/clothing/glasses/science/magos
 	name = "magos goggles"
@@ -92,6 +93,7 @@
 	vision_flags = SEE_MOBS|SEE_TURFS
 	canremove = 0
 	unacidable = 1
+	sales_price = 35
 
 /obj/item/clothing/glasses/science/tech
 	name = "priest goggles"
@@ -105,6 +107,7 @@
 	vision_flags = SEE_TURFS
 	canremove = 0
 	unacidable = 1
+	sales_price = 20
 
 /obj/item/clothing/glasses/meson/New()
 	..()
@@ -123,6 +126,7 @@
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	electric = 1
+	sales_price = 5
 
 /obj/item/clothing/glasses/science/New()
 	..()
@@ -141,6 +145,7 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	off_state = "denight"
 	electric = 1
+	sales_price = 25
 
 /obj/item/clothing/glasses/blacksun
 	name = "blacksun goggles"
@@ -154,6 +159,7 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	off_state = "blacksun"
 	electric = 1
+	sales_price = 40
 
 /obj/item/clothing/glasses/night/New()
 	..()
@@ -218,6 +224,7 @@
 	toggleable = 1
 	vision_flags = SEE_OBJS
 	electric = 1
+	sales_price = 15
 
 /obj/item/clothing/glasses/regular
 	name = "prescription glasses"
@@ -408,6 +415,7 @@
 	vision_flags = SEE_MOBS
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	electric = 1
+	sales_price = 40
 
 /obj/item/clothing/glasses/thermal/New()
 	..()
@@ -546,6 +554,7 @@
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 	body_parts_covered = EYES
+	sales_price = 4
 
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
@@ -554,6 +563,7 @@
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	sales_price = 25
 
 // XENOS VISION
 
@@ -583,6 +593,7 @@
 	siemens_coefficient = 0.9
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
+	sales_price = 50
 
 /obj/item/clothing/glasses/astartes/visor/apoth
 	name = "Mark VII Apothecary Visor"
@@ -597,6 +608,7 @@
 	siemens_coefficient = 0.9
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
+	sales_price = 60
 
 /obj/item/clothing/glasses/cadian
 	name = "Mark XIIc Visor"
@@ -607,3 +619,4 @@
 	item_state = "glasses"
 	body_parts_covered = EYES
 	unacidable = 1
+	sales_price = 40

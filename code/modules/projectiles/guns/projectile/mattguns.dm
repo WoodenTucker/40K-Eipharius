@@ -20,6 +20,7 @@
 	accuracy = -2
 	fire_delay = 3
 	force = 15
+	sales_price = 13
 	var/gping = TRUE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/pump(mob/M as mob, silent = FALSE)
@@ -83,6 +84,7 @@
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
 	accuracy = -2.5
+	sales_price = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
 		qdel(src)
@@ -120,6 +122,7 @@
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
+	sales_price = 43
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
 	set category = "Object"
@@ -178,6 +181,7 @@
 	one_hand_penalty = 3
 	accuracy = -2
 	fire_delay = 4
+	sales_price = 23
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered/verb/scope()
 	set category = "Object"
@@ -219,6 +223,7 @@
 	fire_delay = 4
 	move_delay = 2.5
 	gping = FALSE
+	sales_price = 15
 
 //Paryying.
 
@@ -290,6 +295,7 @@
 	one_hand_penalty = 4
 	accuracy = -1.5
 	fire_delay= 3
+	sales_price = 15
 
 	ammo_type = list(
 		/obj/item/ammo_casing/shotgun/pellet,
@@ -302,6 +308,7 @@
 	one_hand_penalty = 3.5
 	accuracy = -1
 	fire_delay = 2
+	sales_price = 25
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"
@@ -317,6 +324,7 @@
 	fire_delay = 2
 	accuracy = -2
 	armor_penetration = 0
+	sales_price = 15
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
 	name = "\improper WTX Reckoning"
@@ -327,6 +335,7 @@
 	empty_icon = "smallshotty-e"
 	one_hand_penalty = 2.5
 	armor_penetration = 2
+	sales_price = 25
 
 /obj/item/gun/projectile/shotgun/pump/shitty/bayonet
 	force = 20
@@ -447,6 +456,7 @@
 	one_hand_penalty = 3
 	accuracy = -0.5
 	fire_delay = 3.5
+	sales_price = 30
 
 	magazine_type = /obj/item/ammo_magazine/a762/m14/battlerifle_mag
 	allowed_magazines = list(/obj/item/ammo_magazine/a762/m14/battlerifle_mag, /obj/item/ammo_magazine/c45rifle/akarabiner)
@@ -610,6 +620,7 @@
 	accuracy = -4
 	fire_delay = 1.7
 	automatic = 0.9
+	sales_price = 18
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
@@ -635,6 +646,7 @@
 	accuracy = -3.5
 	fire_delay = 1.6
 	automatic = 0.9
+	sales_price = 28
 
 	wielded_item_state = "autorifle-wielded"
 	loaded_icon = "autorifle"
@@ -660,6 +672,7 @@
 	accuracy = -3
 	fire_delay = 1.5
 	automatic = 0.8
+	sales_price = 35
 
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/machinepistol
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt/machinepistol
@@ -715,6 +728,7 @@
 	unloaded_icon = "flamer-e"
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
+	sales_price = 70
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
@@ -749,6 +763,7 @@
 	firemodes = list()
 
 	gun_type = GUN_SHOTGUN
+	sales_price = 60
 
 /obj/item/ammo_magazine/autoshotty
 	name = "Astartes Shotgun"
@@ -776,6 +791,7 @@
 	accuracy = -3
 	fire_delay = 1.7
 	force = 8
+	sales_price = 10
 
 /obj/item/gun/projectile/warfare/update_icon()//We gotta snowflake this a bit.
 	..()
@@ -796,6 +812,7 @@
 	one_hand_penalty = 0.7
 	accuracy = -2
 	fire_delay = 1.2
+	sales_price = 15
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "Reckoning magazine (.45)"
@@ -843,6 +860,7 @@
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
 	accuracy = -3
 	fire_delay = 1.6
+	sales_price = 35
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
@@ -853,6 +871,7 @@
 	fire_delay = 1.8
 	automatic = 0.8
 	armor_penetration = 5 //this is melee
+	sales_price = 32
 
 // Boltgun
 /obj/item/gun/projectile/bolter //boltus
@@ -891,6 +910,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = -2
+	sales_price = 180
 
 /obj/item/gun/projectile/bolter/update_icon()
 	..()
@@ -977,6 +997,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = -3.7
+	sales_price = 120
 
 /obj/item/gun/projectile/lockebolter/update_icon()
 	..()
@@ -1037,6 +1058,7 @@
 	firemodes = list()
 	accuracy = -1.5 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
+	sales_price = 170
 
 /obj/item/gun/projectile/sisterbolter/update_icon()
 	..()
@@ -1064,6 +1086,7 @@
 	one_hand_penalty = 6
 	accuracy = -2
 	force = 20
+	sales_price = 40
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
 	name = "\improper Kroot Rifle"
@@ -1093,6 +1116,7 @@
 	accuracy = -2
 	force = 20
 	gping = FALSE
+	sales_price = 40
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
 	name = "improper Kroot Rifle"
@@ -1127,6 +1151,7 @@
 	fire_delay = 2
 	automatic = 0.75
 	firemodes = list()
+	sales_price = 10
 
 //Eldar
 

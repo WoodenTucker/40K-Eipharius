@@ -6,6 +6,7 @@
 	body_parts_covered = HEAD
 	armor = list(melee = 80, bullet = 65, laser = 70,energy = 35, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
+	sales_price = 30
 
 
 
@@ -18,6 +19,7 @@
 	armor = list(melee = 80, bullet = 65, laser = 70,energy = 35, bomb = 50, bio = 100, rad = 100)
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
 	siemens_coefficient = 0.6
+	sales_price = 60
 
 /obj/item/clothing/suit/space/void/swat/New()
 	..()

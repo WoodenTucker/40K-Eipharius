@@ -22,6 +22,7 @@
 	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
+	sales_price = 59
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -132,6 +133,7 @@
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
+	sales_price = 110
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=4, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),

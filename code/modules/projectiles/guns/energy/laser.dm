@@ -5,6 +5,7 @@
 	item_state = null	//so the human update icon uses the icon_state instead.
 	max_shots = 10
 	fire_delay = 5
+	sales_price = 30
 
 	projectile_type = /obj/item/projectile/beam/stun
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -221,6 +222,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
+	sales_price = 35
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -236,6 +238,7 @@ obj/item/gun/energy/retro
 	charge_cost = 75
 	fire_delay = 2.2
 	move_delay = 2.5
+	sales_price = 45
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -262,6 +265,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
+	sales_price = 40
 
 	firemodes = list(
 		list(mode_name="semi-automatic", fire_delay = 4, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -286,6 +290,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
+	sales_price = 45
 
 	fire_delay = 1 // 0.2 seconds
 
@@ -313,6 +318,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
+	sales_price = 40
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -329,6 +335,7 @@ obj/item/gun/energy/retro
 	move_delay = 2.5
 	fire_delay = 3.5
 	charge_cost = 90
+	sales_price = 45
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -355,6 +362,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
+	sales_price = 50
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -381,6 +389,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
+	sales_price = 140
 
 
 	firemodes = list(
@@ -417,6 +426,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
+	sales_price = 20
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
@@ -433,6 +443,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	move_delay = 3.5 // do not want the RT's pistol as a frag gamer weapon. its for self defence.
 	charge_cost = 45
 	charge_meter = FALSE //must have, due to having only 1 item state.
+	sales_price = 35
 	firemodes = list(
 		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="automatic", 	burst=3, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
@@ -463,6 +474,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 2.5
 	armor_penetration = 8.75
 	charge_cost = 100
+	sales_price = 25
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -498,6 +510,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = -3.2
 	fire_delay= 3
 	armor_penetration = 12.5
+	sales_price = 25
 
 	firemodes = list(
 		list(mode_name="semi-automatic", fire_delay = 4, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -525,6 +538,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/ion
 	ammoType = /obj/item/cell/ion
 	wielded_item_state = "ionriflet-wielded"
+	sales_price = 100
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=10, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -545,6 +559,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/pulsepistol
 	cell_type = /obj/item/cell/pulserifle
 	ammoType = /obj/item/cell/pulserifle
+	sales_price = 69
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
@@ -568,6 +583,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/pulserifle
 	ammoType = /obj/item/cell/pulserifle
 	wielded_item_state = "pulseb_wielded"
+	sales_price = 129
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -599,7 +615,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 
 
-
 /obj/item/gun/energy/pulse/plasma/rifle
 	name = "plasma rifle"
 	desc = "A plasma rifle. Don't roll a 1! (cannot explode yet)"
@@ -620,6 +635,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 375
 	wielded_item_state = "ionrifle-wielded"
+	sales_price = 119
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
@@ -641,6 +657,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	wielded_item_state = "pulse_pistol"
+	sales_price = 69
 
 /obj/item/gun/energy/pulse/plasma/pistol/astarte
 	name = "Astartes plasma pistol"
@@ -663,6 +680,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	wielded_item_state = "pulse_pistol"
+	sales_price = 99
 
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos
@@ -686,3 +704,4 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 250
 	charge_meter = FALSE //no ammo icon state currently invisible
 	wielded_item_state = "pulse_pistol"
+	sales_price = 79

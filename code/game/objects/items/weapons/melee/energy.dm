@@ -298,6 +298,7 @@
 	throw_speed = 1
 	throw_range = 4
 	block_chance = 45
+	sales_price = 90
 	weapon_speed_delay = 7
 	sharp = TRUE
 	edge = TRUE
@@ -336,6 +337,7 @@
 	edge = TRUE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 50
+	sales_price = 120
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -357,6 +359,7 @@
 	weapon_speed_delay = 6
 	sharp = TRUE
 	block_chance = 35 //not the best block chance, but, you can have two of them!
+	sales_price = 80
 	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE

@@ -21,6 +21,7 @@
 	var/atk_mode = SLASH
 	sharpness = TRUE
 	block_chance = 35
+	sales_price = 10
 	applies_material_colour = FALSE
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_sword02.ogg'
@@ -135,6 +136,7 @@
 	force = 33
 	block_chance = 45
 	weapon_speed_delay = 7
+	sales_price = 20
 
 
 /obj/item/material/sword/machete
@@ -162,6 +164,7 @@
 	grab_sound_is_loud = TRUE
 	edge = TRUE
 	weapon_speed_delay = 7
+	sales_price = 100
 
 /obj/item/material/sword/combat_knife
 	name = "combat knife"
@@ -198,6 +201,7 @@
 	force = 27
 	block_chance = 70
 	weapon_speed_delay = 5
+	sales_price = 70
 
 
 /obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
@@ -226,6 +230,7 @@
 	attack_verb = list("slashed")
 	force = 24
 	block_chance = 30
+	sales_price = 39
 	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
@@ -244,6 +249,7 @@
 	attack_verb = list("slashed")
 	force = 24
 	block_chance = 30
+	sales_price = 39
 	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
@@ -262,6 +268,7 @@
 	attack_verb = list("slashed")
 	force = 24
 	block_chance = 30
+	sales_price = 30
 	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
