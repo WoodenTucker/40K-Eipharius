@@ -98,7 +98,7 @@
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
 	user.setClickCooldown(5)
 	var/hit_zone = ran_zone()
-	if(user.cult_favor <= 7 && user.mind.special_role == "Slaanesh Cultist")
+	if(user.cult_favor <= 7 && user.mind.special_role != "Slaanesh Cultist")
 		to_chat(user, "The mutated arm resists you!")
 		return
 	if(C.stat == DEAD)
