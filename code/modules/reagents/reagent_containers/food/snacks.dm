@@ -673,6 +673,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=10"
+	sales_price = 7
 
 	New()
 		..()
@@ -686,6 +687,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
+	sales_price = 7
 
 	New()
 		..()

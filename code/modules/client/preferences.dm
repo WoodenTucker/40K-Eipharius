@@ -193,6 +193,7 @@ datum/preferences
 
 	character.h_style = h_style
 	character.f_style = f_style
+	character.vice = vice
 
 	// Replace any missing limbs.
 	for(var/name in BP_ALL_LIMBS)

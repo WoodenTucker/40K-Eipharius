@@ -13,6 +13,7 @@
 	max_amount = 20
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
+	sales_price = 10
 
 /obj/item/stack/thrones/New()
 	..()
@@ -63,6 +64,7 @@
 	max_amount = 20
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
+	sales_price = 5
 
 /obj/item/stack/thrones2/New()
 	..()
@@ -116,6 +118,7 @@
 	max_amount = 20
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
+	sales_price = 1
 
 /obj/item/stack/thrones3/New()
 	..()
