@@ -71,7 +71,7 @@
 	cost = 73
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
 
-/datum/cargo_entry/weapon/sniperrifle
+/datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
 	cost = 99
 	item_path = /obj/item/gun/projectile/heavysniper
@@ -211,7 +211,7 @@
 	cost = 8
 	item_path = /obj/item/ammo_magazine/box/shotgun/slug
 
-/datum/cargo_entry/weapon/riflemag
+/datum/cargo_entry/weapon/riflehandful
 	name = "Rifle Handful"
 	cost = 3
 	item_path = /obj/item/ammo_magazine/handful/brifle_handful

@@ -21,12 +21,12 @@
 	cost = 34
 	item_path = /obj/item/clothing/suit/armor/militia
 
-/datum/cargo_entry/armor/armorcoat
+/datum/cargo_entry/armor/armorcloak
 	name = "Armored Cloak"
 	cost = 37
 	item_path = /obj/item/clothing/suit/cloak
 
-/datum/cargo_entry/armor/armorcoat
+/datum/cargo_entry/armor/explorator
 	name = "Explorator Armor"
 	cost = 41
 	item_path = /obj/item/clothing/suit/armor/explorer
@@ -36,17 +36,17 @@
 	cost = 45
 	item_path = /obj/item/clothing/suit/space/void/engineering/salvage
 
-/datum/cargo_entry/armor/voidsuit
+/datum/cargo_entry/armor/voidsuithelm
 	name = "Void Suit Helmet"
 	cost = 15
 	item_path = /obj/item/clothing/head/helmet/space/void/engineering/salvage
 
-/datum/cargo_entry/armor/voidsuit
+/datum/cargo_entry/armor/voidsuitarmor
 	name = "Armored Void Suit"
 	cost = 95
 	item_path = /obj/item/clothing/suit/space/void/engineering/salvage
 
-/datum/cargo_entry/armor/voidsuit
+/datum/cargo_entry/armor/voidsuitarmorhelm
 	name = "Armored Void Suit Helmet"
 	cost = 65
 	item_path = /obj/item/clothing/head/helmet/space/void/engineering/alt

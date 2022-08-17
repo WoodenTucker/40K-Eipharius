@@ -1,7 +1,7 @@
 /datum/cargo_entry/melee
 	category = "Melee"
 
-/datum/cargo_entry/melee/baton
+/datum/cargo_entry/melee/shieldriot
 	name = "Riot Shield"
 	cost = 25
 	item_path = /obj/item/shield/riot
