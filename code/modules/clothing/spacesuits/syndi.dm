@@ -6,6 +6,7 @@
 	desc = "A crimson helmet sporting clean lines and durable plating. Engineered to look menacing."
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 50)
 	siemens_coefficient = 0.3
+	sales_price = 20
 
 /obj/item/clothing/suit/space/syndicate
 	name = "red space suit"
@@ -19,6 +20,7 @@
 	allowed = list(/obj/item/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/melee/baton,/obj/item/melee/energy/sword,/obj/item/handcuffs,/obj/item/tank/emergency)
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 100)
 	siemens_coefficient = 0.3
+	sales_price = 40
 
 /obj/item/clothing/suit/space/syndicate/New()
 	..()

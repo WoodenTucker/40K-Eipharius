@@ -11,7 +11,7 @@
 	relative_size = 15
 	max_damage = 45
 	var/open
-	sales_price = 10
+	sales_price = 30
 
 /obj/item/organ/internal/heart/die()
 	if(dead_icon)

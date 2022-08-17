@@ -67,6 +67,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	siemens_coefficient = 0
+	sales_price = 10
 
 
 /obj/item/clothing/suit/bomb_suit
@@ -81,6 +82,7 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 	max_heat_protection_temperature = ARMOR_MAX_HEAT_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0
+	sales_price = 30
 
 /obj/item/clothing/suit/bomb_suit/New()
 	..()

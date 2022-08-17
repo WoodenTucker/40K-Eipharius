@@ -44,6 +44,7 @@
 	accuracy = -0.5
 	fire_delay= 3
 	armor_penetration = 1 //melee???
+	sales_price = 20
 
 /obj/item/gun/projectile/shotgun/pump/New()
 	..()
@@ -157,6 +158,7 @@
 	accuracy = -1
 	fire_delay= 3
 	armor_penetration = 5
+	sales_price = 22
 
 /obj/item/gun/projectile/shotgun/doublebarrel
 	name = "\improper MS Doom"
@@ -178,6 +180,7 @@
 	one_hand_penalty = 3
 	burst_delay = 0
 	var/broke_open = FALSE
+	sales_price = 23
 
 /obj/item/gun/projectile/shotgun/doublebarrel/update_icon()
 	..()
@@ -271,6 +274,7 @@
 	one_hand_penalty = 3
 	accuracy = -1
 	fire_delay= 4.5
+	sales_price = 15
 
 
 
@@ -295,4 +299,5 @@
 	move_delay = 8
 	accuracy = -1.5
 	fire_delay= 20
+	sales_price = 159
 

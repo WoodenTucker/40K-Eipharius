@@ -12,6 +12,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 10)
+	sales_price = 5
 	flags_inv = BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -59,6 +60,7 @@
 	icon_state = "helmet_tac"
 	armor = list(melee = 30, bullet = 30, laser = 20, energy = 25, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
+	sales_price = 8
 
 /obj/item/clothing/head/helmet/merc
 	name = "combat helmet"
@@ -66,11 +68,13 @@
 	icon_state = "helmet_merc"
 	armor = list(melee = 40, bullet = 45, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
 	siemens_coefficient = 0.5
+	sales_price = 15
 
 /obj/item/clothing/head/helmet/barney_helmet
 	name = "security helmet"
 	icon_state = "helmet_barney"
 	armor = list(melee = 40, bullet = 40, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
+	sales_price = 10
 
 
 /obj/item/clothing/head/helmet/riot
@@ -99,6 +103,7 @@
 	valid_accessory_slots = null
 	armor = list(melee = 5, bullet = 5, laser = 62, energy = 50, bomb = 5, bio = 2, rad = 0)
 	siemens_coefficient = 0
+	sales_price = 25
 
 /obj/item/clothing/head/helmet/ballistic
 	name = "ballistic helmet"
@@ -116,6 +121,7 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
+	sales_price = 25
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
@@ -178,6 +184,7 @@
 	item_state = "helmetNVG"
 	armor = list(melee = 40, bullet = 45, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
+	sales_price = 25
 
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
@@ -207,6 +214,7 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 10
 
 /obj/item/clothing/head/helmet/orkhelmet/two
 	icon_state = "orkhelmet"
@@ -241,6 +249,7 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 30
 
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"
@@ -252,6 +261,7 @@
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 35
 // Eldar
 
 /obj/item/clothing/head/helmet/eldar

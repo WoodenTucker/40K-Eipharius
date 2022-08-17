@@ -196,6 +196,7 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	unacidable = 1
+	sales_price = 50
 
 
 /obj/item/clothing/suit/storage/hazardvest/magos/techpriest
@@ -207,6 +208,7 @@
 	armor = list(melee = 45, bullet = 45, laser = 50, energy = 0, bomb = 40, bio = 100, rad = 100)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 30
 
 //Lawyer
 /obj/item/clothing/suit/storage/toggle/suit
@@ -428,6 +430,7 @@
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun, /obj/item/storage/firstaid/adv) //i'll figure out what can go in here idk
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 40
 
 
 /obj/item/clothing/suit/storage/sistersuit
@@ -438,6 +441,7 @@
 	armor = list(melee = 40, bullet = 40, laser = 30, energy = 25, bomb = 35, bio = 50, rad = 50)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 25
 
 /obj/item/clothing/suit/storage/senkhalat
 	name = "ornate khalat"
@@ -447,6 +451,7 @@
 	armor = list(melee = 42, bullet = 40, laser = 25, energy = 0, bomb = 50, bio = 15, rad = 15)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 40
 
 /obj/item/clothing/suit/storage/traderpirate
 	name = "rugged and regal trader coat"
@@ -457,4 +462,5 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 30
 

@@ -442,6 +442,7 @@
 	icon_state = "fancyhat"
 	item_state = "fancyhat"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
+	sales_price = 10
 
 /obj/item/clothing/head/rtpimp
 	name = "rogue trader's big cap"
@@ -449,6 +450,7 @@
 	icon_state = "rtpimp"
 	item_state = "bighat"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
+	sales_price = 10
 
 /obj/item/clothing/head/caphat/formal
 	name = "parade hat"
@@ -460,6 +462,7 @@
 	desc = "The wonderfully fancy hat of a wealthy Rogue Trader."
 	icon_state = "capcap"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
+	sales_price = 20
 
 /obj/item/clothing/head/tradertricorn
 	name = "fanciful tricorn"
@@ -468,6 +471,7 @@
 	item_state = "tradertricorn"
 	cold_protection = HEAD
 	armor = list(melee = 10, bullet = 15, laser = 15,energy = 15)
+	sales_price = 15
 
 // The Senechal Stuff
 
@@ -477,6 +481,7 @@
 	icon_state = "chaperon"
 	item_state = "chaperon"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
+	sales_price = 10
 
 // Inquisition Stuff
 
@@ -493,6 +498,7 @@
 	item_state = "inq_helm"
 	armor = list(melee = 40, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
+	sales_price = 20
 
 /obj/item/clothing/head/inqhelm/rare
 	name = "Inquisition Shrouded Helmet"
@@ -501,6 +507,7 @@
 	item_state = "ihhelmet"
 	armor = list(melee = 40, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
+	sales_price = 25
 
 /obj/item/clothing/head/inqhelm/stealth
 	name = "Inquisition Stealth Helmet"
@@ -509,6 +516,7 @@
 	item_state = "stealth_rig_sealed"
 	armor = list(melee = 25, bullet = 50, laser = 45, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
+	sales_price = 35
 
 /obj/item/clothing/head/ordohereticus
  	name = "Inquisition Holy Hat"
@@ -517,6 +525,7 @@
  	item_state = "hereticushat"
  	cold_protection = HEAD
  	armor = list (melee = 50, bullet = 50, laser = 40, energy = 30, bomb = 40, bio = 20, rad = 20)
+ 	sales_price = 25
 
 // Adepta Sororitas
 
@@ -526,3 +535,4 @@
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
+	sales_price = 60

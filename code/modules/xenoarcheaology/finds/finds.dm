@@ -20,6 +20,7 @@
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "strange"
 	origin_tech = list(TECH_MATERIAL = 5)
+	sales_price = 40
 
 /obj/item/ore/strangerock/New(loc, var/inside_item_type = 0)
 	..(loc)
