@@ -14,7 +14,6 @@
 	attack_verb = list("attacked", "slapped", "whacked")
 	relative_size = 60
 	max_damage = 120
-	can_sell = FALSE
 	sales_price = 0
 
 	var/can_use_mmi = TRUE

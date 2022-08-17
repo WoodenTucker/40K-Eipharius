@@ -15,7 +15,7 @@
 	name = "small rock"
 	desc = "Just that, a piece of a cave wall."
 	icon_state = "glass_ore"
-	can_sell = FALSE
+	sales_price = 0
 
 /obj/item/newore/ironore
 	name = "iron ore"
@@ -182,7 +182,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	can_sell = FALSE
+	sales_price = 0
 
 /obj/item/newore/gems/sapphire
 	name = "chunk of sapphire"
@@ -212,9 +212,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	can_sell = FALSE
-
-
+	sales_price = 0
 
 /obj/item/newore/gems/ruby
 	name = "chunk of ruby"
@@ -244,7 +242,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	can_sell = FALSE
+	sales_price = 0
 
 
 /obj/item/newore/gems/emerald
@@ -276,7 +274,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	can_sell = FALSE
+	sales_price = 0
 
 /obj/item/newore/gems/topaz
 	name = "chunk of topaz"
@@ -305,7 +303,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	can_sell = FALSE
+	sales_price = 0
 
 /obj/item/newore/gems/diamond
 	name = "chunk of diamond"
@@ -336,7 +334,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	can_sell = FALSE
+	sales_price = 0
 
 /*          .-') _   ('-.  _   .-')      .-')
          (  OO) )  _(  OO)( '.( OO )_   ( OO ).

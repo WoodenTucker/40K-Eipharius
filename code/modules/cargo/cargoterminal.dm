@@ -152,7 +152,7 @@
 
 
 /obj/machinery/computer/planetarytrade/attackby(var/obj/item/O, mob/user) //These manage putting coins directly into the console
-	if (!(istype(O, /obj/item/)) || O.can_sell == FALSE)
+	if (!(istype(O, /obj/item/)) || O.sales_price == 0)
 		to_chat(user, "<span class='warning'>[O] cannot be exported!</span>")
 		return 1
 	if(istype(O, /obj/item/stack)) //TODO, for loop to handle amount to sell. Input for len?
