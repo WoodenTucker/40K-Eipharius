@@ -203,6 +203,21 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
 
+/obj/item/melee/chain/inqcs/Guard // making them inqcs because it has the shittiest stats, dont want these to be strong
+	name = "Imperial Guard chainsword" //add it to guard outfits later down the track
+	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
+	icon_state = 'guardchainsword'
+	item_state = 'guardchainsword'
+	wielded_icon = 'guardchainsword'
+
+/obj/item/melee/chain/inqcs/gold
+	name = "Terra Pattern Chainsword" //add it to RT's vault
+	desc = "A golden chainsword emblazened with over the top shine from it's expensive base metal. Almost as golden as a Custodes, you think."
+	icon_state = 'goldchainsword'
+	item_state = 'goldchainsword'
+	wielded_icon = 'goldchainsword'
+
+
 /obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
 	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
@@ -268,3 +283,4 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 8
+
