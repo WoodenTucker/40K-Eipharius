@@ -138,7 +138,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_service
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
@@ -167,7 +167,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/gun/projectile/revolver/cpt
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
@@ -197,7 +197,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/entertainment
 	backpack_contents = list(
 	/obj/item/handcuffs = 1,
 	/obj/item/gun/projectile/bolter_pistol = 1,

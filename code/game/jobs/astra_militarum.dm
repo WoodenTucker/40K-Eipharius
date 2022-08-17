@@ -659,7 +659,7 @@
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
@@ -680,6 +680,7 @@
 	head = /obj/item/clothing/head/commissar/krieg
 	mask = /obj/item/clothing/mask/gas/commissar
 	glasses = null
+	l_ear = /obj/item/device/radio/headset/heads/hos
 
 /decl/hierarchy/outfit/job/ig/commissar/catachan
 	name = OUTFIT_JOB_NAME("Catachan Commissar")
@@ -690,6 +691,7 @@
 	head = /obj/item/clothing/head/commissar/catachan
 	mask = null
 	glasses = null
+	l_ear = /obj/item/device/radio/headset/heads/hos
 
 //Squads
 

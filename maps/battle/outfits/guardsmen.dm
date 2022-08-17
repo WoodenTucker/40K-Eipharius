@@ -166,7 +166,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_service
 	backpack_contents = list(
 	/obj/item/ammo_box/shotgun = 2,
 	/obj/item/handcuffs = 2,
@@ -196,7 +196,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
@@ -223,7 +223,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,
@@ -248,7 +248,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/grenade/smokebomb = 1,

@@ -260,7 +260,7 @@
 /decl/hierarchy/outfit/job/sisterofbattle
 	name = OUTFIT_JOB_NAME("Sister of Battle")
 	head = /obj/item/clothing/head/helmet/sisterofbattle
-	l_ear = /obj/item/device/radio/headset/red_team/medicae
+	l_ear = /obj/item/device/radio/headset/heads/cmo
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
@@ -283,7 +283,7 @@
 /decl/hierarchy/outfit/job/progena
 	name = OUTFIT_JOB_NAME("Progena")
 	uniform = /obj/item/clothing/under/rank/medical
-	l_ear  = /obj/item/device/radio/headset/red_team/medicae
+	l_ear  = /obj/item/device/radio/headset/headset_sci
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/storage/belt

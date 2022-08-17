@@ -86,20 +86,26 @@
 	origin_tech = list(TECH_ILLEGAL = 3)
 	ks1type = /obj/item/device/encryptionkey/binary
 
+//piggybacked off the existing radios for my overhaul - explaining what each does below :: Rushodan
+//standard Astartes vox - May need tweaking if we decide to give different classes different keys
 /obj/item/device/radio/headset/headset_sec
-	name = "security radio headset"
-	desc = "This is used by your elite security force."
+	name = "Astartes vox"
+	desc = "The vox of an elite space marine."
 	icon_state = "sec_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/headset_sec
 
+//standard Mechanicus vox
 /obj/item/device/radio/headset/headset_eng
-	name = "engineering radio headset"
-	desc = "When the engineers wish to chat like girls."
+	name = "Mechanicus vox"
+	desc = "Keep that toaster-speak to yourselves."
 	icon_state = "eng_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/headset_eng
 
+//not used rn
 /obj/item/device/radio/headset/headset_rob
 	name = "robotics radio headset"
 	desc = "Made specifically for the roboticists who cannot decide between departments."
@@ -107,6 +113,7 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_rob
 
+//not used rn
 /obj/item/device/radio/headset/headset_med
 	name = "medical radio headset"
 	desc = "A headset for the trained staff of the medbay."
@@ -114,13 +121,16 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_med
 
+//standard Ecclesiarchy vox
 /obj/item/device/radio/headset/headset_sci
-	name = "science radio headset"
-	desc = "A sciency headset. Like usual."
+	name = "Ecclesiarchy vox"
+	desc = "A vox headset for the faithful."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/headset_sci
 
+//unused rn
 /obj/item/device/radio/headset/headset_medsci
 	name = "medical research radio headset"
 	desc = "A headset that is a result of the mating between medical and science."
@@ -128,27 +138,24 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_medsci
 
+//basic command vox
 /obj/item/device/radio/headset/headset_com
-	name = "command radio headset"
+	name = "command vox"
 	desc = "A headset with a commanding channel."
 	icon_state = "com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_com
 
+//unused rn
 /obj/item/device/radio/headset/heads/captain
 	name = "captain's headset"
 	desc = "The headset of the boss."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/captain
 
-/obj/item/device/radio/headset/heads/rt
-	name = "rogue trader's vox"
-	desc = "A command-level vox with high tiers of encryption."
-	icon_state = "com_headset"
-	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/heads/captain
-
+//AI is heresy
 /obj/item/device/radio/headset/heads/ai_integrated //No need to care about icons, it should be hidden inside the AI anyway.
 	name = "\improper AI subspace transceiver"
 	desc = "Integrated AI radio transceiver."
@@ -168,6 +175,7 @@
 		return -1 //Transciever Disabled.
 	return ..(freq, level, 1)
 
+//unused rn
 /obj/item/device/radio/headset/heads/rd
 	name = "research director's headset"
 	desc = "Headset of the researching God."
@@ -175,34 +183,43 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/rd
 
+//Guardsmen Comm-linked vox
 /obj/item/device/radio/headset/heads/hos
-	name = "Commissar's headset"
-	desc = "The headset of the man who protects your worthless lives."
+	name = "Command-linked vox"
+	desc = "The headset of the men who protect your worthless lives."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
+//Magos vox
 /obj/item/device/radio/headset/heads/ce
-	name = "Magos's headset"
-	desc = "The headset of the guy who is in charge of morons."
+	name = "Magos vox"
+	desc = "The headset of the guy who is in charge of the beepers and boopers."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/ce
 
+//Command-Ecclesiarchy vox
 /obj/item/device/radio/headset/heads/cmo
-	name = "Sister Hospitaller's headset"
-	desc = "The headset of the highly trained medical chief."
+	name = "Ecclesiarchy Superior vox"
+	desc = "A headset for the supremely faithful"
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/cmo
 
+//Steward vox
 /obj/item/device/radio/headset/heads/hop
-	name = "Seneschal's vox"
-	desc = "The vox of the right hand of the Rogue Trader."
+	name = "Steward vox"
+	desc = "The headset of the right hand of the Rogue Trader."
 	icon_state = "com_headset"
 	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/hop
 
+//unused rn
 /obj/item/device/radio/headset/headset_cargo
 	name = "supply radio headset"
 	desc = "A headset used by the box pushers."
@@ -210,13 +227,30 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_cargo
 
+//basic 'common' vox
 /obj/item/device/radio/headset/headset_service
-	name = "service radio headset"
-	desc = "Headset used by the service staff, tasked with keeping everyone full, happy and clean."
-	icon_state = "srv_headset"
-	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/headset_service
+	icon = 'icons/obj/radio.dmi'
+	name = "vox-caster headset"
+	desc = "A stripped down version of the standard Guard issue vox."
+	ks1type = /obj/item/device/encryptionkey/red
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
 
+//Marshal vox
+/obj/item/device/radio/headset/entertainment
+	icon = 'icons/obj/radio.dmi'
+	name = "Marshal vox"
+	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/headset_com
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+
+//IMPORTANT - NEEDS TWEAKING DEPENDING ON IF ERTS ARE PLANNED TO BE USED
 /obj/item/device/radio/headset/ert
 	name = "emergency response team radio headset"
 	desc = "The headset of the boss's boss."
@@ -224,6 +258,7 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/ert
 
+//I have no idea if this is used rn
 /obj/item/device/radio/headset/ia
 	name = "Acolyte's Headset"
 	desc = "The headset of your worst enemy."
@@ -231,18 +266,14 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
-/obj/item/device/radio/headset/entertainment
-	name = "actor's radio headset"
-	desc = "specially made to make you sound less cheesy."
-	icon_state = "com_headset"
-	item_state = "headset"
-	ks2type = /obj/item/device/encryptionkey/entertainment
-
+//standard inquisitional vox
 /obj/item/device/radio/headset/inquisition
-	name = "vox headset"
+	name = "Inquisition vox"
 	desc = "The headset of religious intolorence."
+	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/headset_inquisition
 
+//IMPORTANT - Possibly needs tweaking if use planned!
 /obj/item/device/radio/headset/specops
 	name = "special operations radio headset"
 	desc = "The headset of the spooks."
@@ -250,6 +281,7 @@
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/specops
 
+//Blue team left untouched - Rusho
 /obj/item/device/radio/headset/tau
 	name = "tau headset"
 	desc = "The headset of the greater good."
@@ -271,16 +303,19 @@
 	item_state = "t_tactical_headset_f"
 	ks2type = null
 
+//standard guardsmen vox
 /obj/item/device/radio/headset/red_team
 	icon = 'icons/obj/radio.dmi'
 	name = "vox-caster headset"
 	desc = "A standard Guard issue vox-caster headset. Allows the wearer to communicate with the brass and pass along info/orders to his squadmates. Attach it to one of your ears."
-	ks1type = /obj/item/device/encryptionkey/red_all
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/red_alpha
 	icon_state = "sec_headset"
 	item_state = "sec_headset"
 	slot_flags = SLOT_EARS
 	w_class = ITEM_SIZE_SMALL
 
+//possibly needs removal if squads aren't planned to be implemented
 /obj/item/device/radio/headset/red_team/voxcaster
 	icon = 'icons/obj/radio.dmi'
 	name = "vox-caster rig"
@@ -438,6 +473,18 @@
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1
 	ks1type = /obj/item/device/encryptionkey/inq
+
+/obj/item/device/radio/headset/heads/rt
+	name = "rogue trader's vox"
+	desc = "A command-level vox with high tiers of encryption."
+	icon_state = "com_headset"
+	item_state = "headset"
+	ks1type = /obj/item/device/encryptionkey/red
+	ks2type = /obj/item/device/encryptionkey/heads/captain
+	slot_flags = SLOT_EARS
+	w_class = ITEM_SIZE_SMALL
+	syndie = 1
+	origin_tech = list(TECH_ILLEGAL = 2)
 
 /obj/item/device/radio/headset/inquisition/Initialize()
 	. = ..()

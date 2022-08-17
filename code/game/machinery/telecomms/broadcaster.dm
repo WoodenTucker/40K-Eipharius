@@ -154,6 +154,14 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 							  signal.data["name"], signal.data["job"],
 							  signal.data["realname"], signal.data["vname"],, signal.data["compression"], list(0), connection.frequency,
 							  signal.data["verb"], signal.data["language"])
+
+		if(connection.frequency in  DEPT_FREQS) // if antag broadcast, just DEPT_FREQS
+			Broadcast_Message(signal.data["connection"], signal.data["mob"],
+							  signal.data["vmask"], signal.data["vmessage"],
+							  signal.data["radio"], signal.data["message"],
+							  signal.data["name"], signal.data["job"],
+							  signal.data["realname"], signal.data["vname"],, signal.data["compression"], list(0), connection.frequency,
+							  signal.data["verb"], signal.data["language"])
 		else
 			if(intercept)
 				Broadcast_Message(signal.data["connection"], signal.data["mob"],
