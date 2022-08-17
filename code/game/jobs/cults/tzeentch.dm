@@ -36,18 +36,19 @@
 			STAT_LEVEL(int) +=1
 			src.intrigue++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/khorne, /mob/living/carbon/human/proc/slaanesh)
-			to_chat(src, "<font color='#0400ff'>One down, eight to go!</font>")
+			to_chat(src, "<font color='#0400ff'>Correct</font>")
 			src.mind.special_role = "Tzeentch Cultist"
 			src.verbs += list(
-			/mob/living/carbon/human/proc/wehere,
-			/mob/living/carbon/human/proc/forthechanger,
-			/mob/living/carbon/human/proc/beconsumed,
-			/mob/living/carbon/human/proc/weshallsacrifise,
-			/mob/living/carbon/human/proc/theyseetruth,
-			/mob/living/carbon/human/proc/peerminds,
-			/mob/living/carbon/human/proc/charge,
-			/mob/living/carbon/human/proc/changecome,
-			/mob/living/carbon/human/proc/belongtous)
+			/mob/living/carbon/human/proc/tzeewehere,
+			/mob/living/carbon/human/proc/tzeeforthechanger,
+			/mob/living/carbon/human/proc/tzeebeconsumed,
+			/mob/living/carbon/human/proc/tzeeweshallsacrifise,
+			/mob/living/carbon/human/proc/tzeetheyseetruth,
+			/mob/living/carbon/human/proc/tzeepeerminds,
+			/mob/living/carbon/human/proc/tzeecharge,
+			/mob/living/carbon/human/proc/tzeechangecome,
+			/mob/living/carbon/human/proc/tzeebehold,
+			/mob/living/carbon/human/proc/tzeebelongtous)
 			AddInfectionImages()
 			src.faction = "Tzeentch"
 		if(2)
@@ -96,7 +97,7 @@
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 			else
-				to_chat(src, "<font color='#0400ff'>Warden, which soul burns with light. </font>")
+				to_chat(src, "<font color='#0400ff'>Lonely warden, which soul burns with light. </font>")
 		if(8)
 			if(istype(src.l_hand, /obj/item/paper))
 				qdel(src.l_hand)
@@ -126,7 +127,7 @@
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 			else
-				to_chat(src, "<font color='#0400ff'>The one, betrayed own kind to find his brother to unknowns</font>")
+				to_chat(src, "<font color='#0400ff'>The one, betrayed own origin to find his brothers to unknowns</font>")
 		if(10)
 			var/obj/structure/curtain/P = locate() in src.loc
 			if(P)
@@ -148,18 +149,16 @@
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(str) -=1
 			else
-				to_chat(src, "<font color='#0400ff'>Chain of the slave, but for mortal weakness</font>")
+				to_chat(src, "<font color='#0400ff'>Gallows of need</font>")
 		if(12)
 			if(istype(src.l_hand, /obj/item/pyre/self_lit))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
-				playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
 			else if(istype(src.r_hand, /obj/item/pyre/self_lit))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
-				playsound(src, 'sound/items/torch_light.ogg', 100, 0, -1)
 			else
 				to_chat(src, "<font color='#0400ff'>Red maw surrounded by scum</font>")
 		if(13)
@@ -197,27 +196,28 @@
 				to_chat(src, "<font color='#0400ff'>Nest of caution of death.</font>")
 */
 		if(15)
-			if(istype(src.l_hand, /obj/item/torch))
+			if(istype(src.l_hand, /obj/item/torch)||istype(src.l_hand, /obj/item/device/flashlight/lantern))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 100, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				playsound(src, 'sound/items/torch_light.ogg', 50, 0, -1)
-			else if(istype(src.r_hand, /obj/item/torch))
+			else if(istype(src.r_hand, /obj/item/torch)||istype(src.r_hand, /obj/item/device/flashlight/lantern))
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				playsound(src, 'sound/items/torch_light.ogg', 100, 0, -1)
 			else
-				to_chat(src, "<font color='#0400ff'>Wandering bright steel waiting for it's turn to be awaken</font>")
+				to_chat(src, "<font color='#0400ff'>Wandering bright steel waiting for it's turn to be awaken or sleep once again</font>")
 		if(16)
 			var/obj/structure/table/steel/P = locate() in src.loc
-			if(P)
+			var/obj/structure/closet/C = locate() in src.loc
+			if(P || C)
 				src.intrigue++
 				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
 				to_chat(src, "<font color='#0400ff'>Right.</font>")
 				STAT_LEVEL(int) +=1
 			else
-				to_chat(src, "<font color='#0400ff'>Carrying abomination burried in steel. </font>")
+				to_chat(src, "<font color='#0400ff'>The steel one, ready to carry anything it will be forced to. </font>")
 
 /*		if(14)
 			var/turf/simulated/floor/trench/D = locate() in src.loc
@@ -246,7 +246,7 @@
 				STAT_LEVEL(int) +=1
 				STAT_LEVEL(str) -=1
 			else
-				to_chat(src, "<font color='#0400ff'>Beautiful cover, blank soul. </font>")
+				to_chat(src, "<font color='#0400ff'>Traitor among sources of knowledge. </font>")
 		if(18)
 			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
 			if(T)
@@ -291,22 +291,22 @@
 			else
 				src.SKILL_LEVEL(engineering)+=2
 
-			if(src.STAT_LEVEL(end)<11)
+			if(src.STAT_LEVEL(end)<12)
 				src.STAT_LEVEL(end)=12
 			else
 				src.STAT_LEVEL(end) -=2
 
-			if(src.STAT_LEVEL(str)<10)
-				src.STAT_LEVEL(str)=10
+			if(src.STAT_LEVEL(str)<12)
+				src.STAT_LEVEL(str)=12
 			else
 				src.STAT_LEVEL(str) -=2
 
-			if(src.STAT_LEVEL(dex)<12)
-				src.STAT_LEVEL(dex)=12
+			if(src.STAT_LEVEL(dex)<13)
+				src.STAT_LEVEL(dex)=13
 			else
 				src.STAT_LEVEL(dex) -=1
-
-			adjustBrainLoss(20)
+			if(prob(40))
+				adjustBrainLoss(20)
 			src.intrigue++
 			to_chat(src, "<font color='#0400ff'>Your initiation is complete. Better skills, better stats, use wisely</font>")
 		if(20)
@@ -329,187 +329,380 @@
 				to_chat(src, "<font color='#0400ff'>Take my grant, use wisely.</font>")
 				new /obj/item/reagent_containers/pill/cyanide(src.loc)
 			else
-				to_chat(src, "<font color='#0400ff'>Let me grant you thing to kill silently or to kill yourself with no word in defeat. Stand upon my rune</font>")
+				to_chat(src, "<font color='#0400ff'>Let me grant you thing to kill silently or to kill yourself with no word in capture. Stand upon my rune</font>")
 		if(22)
+			if(istype(src.l_hand, /obj/item/stack/thrones3) || istype(src.l_hand, /obj/item/stack/thrones2) || istype(src.l_hand, /obj/item/stack/thrones))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>Correct.</font>")
+			else if(istype(src.r_hand, /obj/item/stack/thrones3) || istype(src.r_hand, /obj/item/stack/thrones2) || istype(src.r_hand, /obj/item/stack/thrones))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>Correct.</font>")
+			else
+				to_chat(src, "<font color='#0400ff'>Many useless things that human can turn into one useful. </font>")
+		if(23)
+			if(istype(src.l_hand, /obj/item/material/shard))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>Correct.</font>")
+			else if(istype(src.r_hand, /obj/item/material/shard))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>And the last riddle...</font>")
+			else
+				to_chat(src, "<font color='#0400ff'>Mutilated dangerous remain of smooth blank soul. </font>")
+		if(24)
+			if(istype(src.l_hand, /obj/item/material/sword/combat_knife))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>Correct.</font>")
+			else if(istype(src.r_hand, /obj/item/material/sword/combat_knife))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>And the last riddle...</font>")
+			else
+				to_chat(src, "<font color='#0400ff'>Common tool of art of violence. </font>")
+		if(25)
+			if(istype(src.l_hand, /obj/item/flame/candle))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>Correct.</font>")
+			else if(istype(src.r_hand, /obj/item/flame/candle))
+				src.intrigue++
+				playsound(src, 'sound/effects/updated.ogg', 80, 0, -1)
+				to_chat(src, "<font color='#0400ff'>Correct.</font>")
+			else
+				to_chat(src, "<font color='#0400ff'>Trial way to connect to other world for dark or bright urges. </font>")
+		if(26)
+			to_chat(src, "<font color='#0400ff'>Riddles has ended for you, and now you should prove your actual worship. </font>")
+			src.intrigue++
+		if(27)
+			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
+			if(T)
+				if(istype(src.l_hand, /obj/item/clothing/head/helmet/krieghelmet)||istype(src.l_hand, /obj/item/clothing/head/helmet/guardhelmet)||istype(src.l_hand, /obj/item/clothing/head/helmet/flak)||istype(src.l_hand, /obj/item/clothing/head/helmet/medicae)||istype(src.l_hand, /obj/item/clothing/head/helmet/whiteshield))
+					qdel(src.l_hand)
+					src.intrigue++
+					src.STAT_LEVEL(end)+=1
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
+				else if(istype(src.l_hand, /obj/item/clothing/head/helmet/krieghelmet)||istype(src.r_hand, /obj/item/clothing/head/helmet/guardhelmet)||istype(src.r_hand, /obj/item/clothing/head/helmet/flak)||istype(src.r_hand, /obj/item/clothing/head/helmet/medicae)||istype(src.r_hand, /obj/item/clothing/head/helmet/whiteshield))
+					qdel(src.r_hand)
+					src.intrigue++
+					src.STAT_LEVEL(end)+=1
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
+			else
+				to_chat(src, "<font color='#0400ff'>Bring head protection of one of imperial cannon fodders upon my rune. </font>")
+		if(28)
+			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
+			if(T)
+				if(istype(src.l_hand, /obj/item/organ/internal/eyes))
+					qdel(src.l_hand)
+					src.intrigue++
+					src.STAT_LEVEL(str)+=1
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
+				else if(istype(src.r_hand, /obj/item/organ/internal/eyes))
+					qdel(src.r_hand)
+					src.intrigue++
+					src.STAT_LEVEL(str)+=1
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/breath.ogg', 100, 0, 5)
+			else
+				to_chat(src, "<font color='#0400ff'>Bring eyes of blind corpse slave upon my rune to prove your worship. </font>")
+		if(29)
+			var/obj/effect/decal/cleanable/tzeentch/T = locate() in src.loc
+
+			if(T)
+//Veteran Lasgun
+				if(istype(src.l_hand, /obj/item/gun/energy/las/lasgun) && istype(src.r_hand, /obj/item/gun/energy/las/lasgun))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/grenade/frag/high_yield/krak(src.loc)
+//Krak
+				if(istype(src.l_hand, /obj/item/grenade/frag/high_yield/homemade) && istype(src.r_hand, /obj/item/grenade/frag/high_yield/homemade))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/grenade/frag/high_yield/krak(src.loc)
+//Laspistol
+				else if(istype(src.l_hand, /obj/item/gun/energy/las/lasgun) && istype(src.r_hand, /obj/item/gun/projectile/warfare))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/energy/las/laspistol(src.loc)
+				else if(istype(src.l_hand, /obj/item/gun/projectile/warfare) && istype(src.r_hand, /obj/item/gun/energy/las/lasgun))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/energy/las/laspistol(src.loc)
+//Renegade
+				else if(istype(src.l_hand, /obj/item/ingots/silveringot) && istype(src.r_hand, /obj/item/gun/projectile/warfare))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/projectile/talon/renegade(src.loc)
+				else if(istype(src.l_hand, /obj/item/gun/projectile/warfare) && istype(src.r_hand, /obj/item/ingots/silveringot))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/projectile/talon/renegade(src.loc)
+//Catachan Knife
+				else if(istype(src.l_hand, /obj/item/material/sword/combat_knife) && istype(src.r_hand, /obj/item/material/sword/combat_knife))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/material/sword/combat_knife/catachan(src.loc)
+//Cane
+				else if(istype(src.l_hand, /obj/item/newore/ironore) && istype(src.r_hand, /obj/item/material/sword/combat_knife/catachan))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						if(prob(45))
+							new /obj/item/cane/concealed(src.loc)
+						else
+							new /obj/item/material/sword/cane(src.loc)
+				else if(istype(src.l_hand, /obj/item/material/sword/combat_knife/catachan) && istype(src.r_hand, /obj/item/newore/ironore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						if(prob(45))
+							new /obj/item/cane/concealed(src.loc)
+						else
+							new /obj/item/material/sword/cane(src.loc)
+//Chaosknife
+				else if(istype(src.l_hand, /obj/item/newore/adamantiumore) && istype(src.r_hand, /obj/item/material/sword/combat_knife))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/material/sword/chaosknife(src.loc)
+				else if(istype(src.l_hand, /obj/item/material/sword/combat_knife) && istype(src.r_hand, /obj/item/newore/adamantiumore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/material/sword/chaosknife(src.loc)
+//Lucius
+				else if(istype(src.l_hand, /obj/item/gun/energy/las/lasgun) && istype(src.r_hand, /obj/item/clothing/head/helmet/krieghelmet))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/energy/las/lasgun/lucius(src.loc)
+				else if(istype(src.l_hand, /obj/item/clothing/head/helmet/krieghelmet) && istype(src.r_hand, /obj/item/gun/energy/las/lasgun))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/energy/las/lasgun/lucius(src.loc)
+//Club
+				else if(istype(src.l_hand, /obj/item/stack/logs) && istype(src.r_hand, /obj/item/ingots/ironingot))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/melee/classic_baton/trench_club(src.loc)
+				else if(istype(src.l_hand, /obj/item/ingots/ironingot) && istype(src.r_hand, /obj/item/stack/logs))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/melee/classic_baton/trench_club(src.loc)
+//Knife
+				else if(istype(src.l_hand, /obj/item/material/shard) && istype(src.r_hand, /obj/item/ingots/ironingot))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/material/sword/combat_knife(src.loc)
+				else if(istype(src.l_hand, /obj/item/ingots/ironingot) && istype(src.r_hand, /obj/item/material/shard))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/material/sword/combat_knife(src.loc)
+//Pistol magazine
+				else if(istype(src.l_hand, /obj/item/newore/coalore) && istype(src.r_hand, /obj/item/ingots/copperingot))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/ammo_magazine/c45m/warfare(src.loc)
+				else if(istype(src.l_hand, /obj/item/ingots/copperingot) && istype(src.r_hand, /obj/item/newore/coalore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/ammo_magazine/c45m/warfare(src.loc)
+//Soulburn magazine
+				else if(istype(src.l_hand, /obj/item/newore/coalore) && istype(src.r_hand, /obj/item/ingots/ironingot))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc)
+				else if(istype(src.l_hand, /obj/item/ingots/ironingot) && istype(src.r_hand, /obj/item/newore/coalore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc)
+//Lasgun magazine
+				else if(istype(src.l_hand, /obj/item/newore/coalore) && istype(src.r_hand, /obj/item/ingots/silveringot))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/cell/lasgun(src.loc)
+				else if(istype(src.l_hand, /obj/item/ingots/silveringot) && istype(src.r_hand, /obj/item/newore/coalore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/cell/lasgun(src.loc)
+//Autogun
+				else if(istype(src.l_hand, /obj/item/gun/projectile/talon/renegade) && istype(src.r_hand, /obj/item/gun/projectile/warfare))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/projectile/automatic/machinepistol(src.loc)
+				else if(istype(src.l_hand, /obj/item/gun/projectile/warfare) && istype(src.r_hand, /obj/item/gun/projectile/talon/renegade))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/gun/projectile/automatic/machinepistol(src.loc)
+//Coal
+				else if(istype(src.l_hand, /obj/item/torch))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						new /obj/item/newore/coalore(src.loc)
+				else if(istype(src.r_hand, /obj/item/torch))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.r_hand)
+						new /obj/item/newore/coalore(src.loc)
+						/obj/item/newspaper
+//Thrones3
+				else if(istype(src.l_hand, /obj/item/newore/copperore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						new /obj/item/stack/thrones3/three(src.loc)
+				else if(istype(src.r_hand, /obj/item/newore/copperore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.r_hand)
+						new /obj/item/stack/thrones3/three(src.loc)
+//Thrones2
+				else if(istype(src.l_hand, /obj/item/newore/silverore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						new /obj/item/stack/thrones2(src.loc)
+				else if(istype(src.r_hand, /obj/item/newore/silverore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.r_hand)
+						new /obj/item/stack/thrones2(src.loc)
+//Thrones
+				else if(istype(src.l_hand, /obj/item/newore/goldore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						new /obj/item/stack/thrones2(src.loc)
+				else if(istype(src.r_hand, /obj/item/newore/goldore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.r_hand)
+						new /obj/item/stack/thrones(src.loc)
+//Noble uniform
+				else if(istype(src.l_hand, /obj/item/clothing/under/rank/penitent) && istype(src.r_hand, /obj/item/newore/goldore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/clothing/under/rank/consort/adept(src.loc)
+				else if(istype(src.l_hand, /obj/item/newore/goldore) && istype(src.r_hand, /obj/item/clothing/under/rank/penitent))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/clothing/under/rank/consort/adept(src.loc)
+//Valhallah uniform
+				else if(istype(src.l_hand, /obj/item/clothing/under/rank/penitent) && istype(src.r_hand, /obj/item/newore/smallrock))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/clothing/under/rank/valhallan_uniform(src.loc)
+				else if(istype(src.l_hand, /obj/item/newore/smallrock) && istype(src.r_hand, /obj/item/clothing/under/rank/penitent))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/clothing/under/rank/valhallan_uniform(src.loc)
+//Militia uniform
+				else if(istype(src.l_hand, /obj/item/clothing/under/rank/penitent) && istype(src.r_hand, /obj/item/newore/ironore))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/clothing/suit/armor/militia(src.loc)
+				else if(istype(src.l_hand, /obj/item/newore/ironore) && istype(src.r_hand, /obj/item/clothing/under/rank/penitent))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						qdel(src.r_hand)
+						new /obj/item/clothing/suit/armor/militia(src.loc)
+//IFAK
+				else if(istype(src.l_hand, /obj/item/newspaper))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.l_hand)
+						new /obj/item/storage/box/ifak(src.loc)
+				else if(istype(src.r_hand, /obj/item/newspaper))
+					playsound(src, 'sound/effects/quotes/cults/tzeentch/ritual.ogg', 100, 0, 5)
+					if(do_after(usr,45,src))
+						qdel(src.r_hand)
+						new /obj/item/storage/box/ifak(src.loc)
+
+			else
+				to_chat(src, "<font color='#0400ff'>You successfully proved your worship, now you can create, change, improve different items upon my rune. </font>")
+				to_chat(src, "<font color='#0400ff'>Let me give you examples.</font>")
+				to_chat(src, "<font color='#0400ff'>Lasgun + Lasgun -> Modified Lasgun.</font>")
+				to_chat(src, "<font color='#0400ff'>Lasgun + Villiers Pistol -> Laspistol.</font>")
+				to_chat(src, "<font color='#0400ff'>Silver Ingot + Villiers Pistol -> Renegade Pistol.</font>")
+				to_chat(src, "<font color='#0400ff'>Renegade Pistol + Villiers Pistol -> Mk.22 Autogun.</font>")
+				to_chat(src, "<font color='#0400ff'>Combat Knife + Combat Knife -> Catachan Combat Knife. </font>")
+				to_chat(src, "<font color='#0400ff'>Catachan Combat Knife + Iron Ore -> Cane Sword.</font>")
+				to_chat(src, "<font color='#0400ff'>Combat Knife + Adamantium Ore -> Chaos Knife.</font>")
+				to_chat(src, "<font color='#0400ff'>Lasgun + Krieg Helmet -> Lucius Pattern Lasgun.</font>")
+				to_chat(src, "<font color='#0400ff'>Log + Iron Ingot -> Trench Club.</font>")
+				to_chat(src, "<font color='#0400ff'>Shard + Iron Ingot -> Combat Knife.</font>")
+				to_chat(src, "<font color='#0400ff'>Coal + Copper Ingot -> Pistol Magazine.</font>")
+				to_chat(src, "<font color='#0400ff'>Coal + Iron Ingot -> Soulburn Magazine.</font>")
+				to_chat(src, "<font color='#0400ff'>Coal + Silver Ingot -> Lasgun Magazine.</font>")
+				to_chat(src, "<font color='#0400ff'>Torch -> Coal.</font>")
+				to_chat(src, "<font color='#0400ff'>Cooper Ore -> 3 copper coins.</font>")
+				to_chat(src, "<font color='#0400ff'>Silver Ore -> 1 silver coin.</font>")
+				to_chat(src, "<font color='#0400ff'>Gold Ore -> 1 gold coin.</font>")
+				to_chat(src, "<font color='#0400ff'>Newspaper -> IFAK.</font>")
+				to_chat(src, "<font color='#0400ff'>Pipe Grenade + Pipe Grenade -> Fragmetation Grenade.</font>")
+				to_chat(src, "<font color='#0400ff'>Penitent Jumpsuit + Small Rock -> Valhallah Uniform.</font>")
+				to_chat(src, "<font color='#0400ff'>Penitent Jumpsuit + Gold Ore -> Noble Uniform.</font>")
+				to_chat(src, "<font color='#0400ff'>Penitent Jumpsuit + Iron Ore -> Militia Uniform.</font>")
+/*
+		if(30)
 			to_chat(src, "<font color='#0400ff'>To be continued...</font>")
-
-
-/mob/living/carbon/human/proc/wehere()
-	set name = "We are here"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("We are here")
-		playsound(src, 'sound/effects/cults/tzeentch/werehere.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/forthechanger()
-	set name = "For the Changer of Ways!"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("For the Changer of Ways!")
-		playsound(src, 'sound/effects/cults/tzeentch/fortzeentch.ogg', 80, 0, 8)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/beconsumed()
-	set name = "You will be consumed"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("You will be consumed")
-		playsound(src, 'sound/effects/cults/tzeentch/youbeconsumed.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/weshallsacrifise()
-	set name = "We shall sacrifice our lives"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("We shall gladly sacrifice our lives for Tzeentch's designs")
-		playsound(src, 'sound/effects/cults/tzeentch/weshallsacrifice.ogg', 80, 0, 3)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/theyseetruth()
-	set name = "They'll see the truth"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("And then they'll see the truth")
-		playsound(src, 'sound/effects/cults/tzeentch/theyseetruth.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/peerminds()
-	set name = "We'll peer theirs little minds"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("We'll peer theirs little minds")
-		playsound(src, 'sound/effects/cults/tzeentch/peerminds.ogg', 80, 0, 3)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/charge()
-	set name = "Charge!"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Charge!")
-		playsound(src, 'sound/effects/cults/tzeentch/charge.ogg', 80, 0, 8)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/changecome()
-	set name = "Change has come"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Change has come")
-		playsound(src, 'sound/effects/cults/tzeentch/changecome.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/belongtous()
-	set name = "It shall belong to us"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("It shall belong to us")
-		playsound(src, 'sound/effects/cults/tzeentch/belongtous.ogg', 80, 0, 6)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
-
-/mob/living/carbon/human/proc/behold()
-	set name = "Behold the light of Tzeentch"
-	set category = "Tzeentch"
-	set desc = name
-	if(!ishuman(src))
-		return
-	if(src.stat == DEAD)
-		return
-	if(src.quote_cd == 0)
-		src.say("Behold the light of Tzeentch")
-		playsound(src, 'sound/effects/cults/tzeentch/behold.ogg', 80, 0, 8)
-		src.quote_cd = 1
-		sleep(50)
-		src.quote_cd = 0
-	else
-		to_chat(src, "You cannot yell again so soon")
-		return
+*/

@@ -1,6 +1,6 @@
 /decl/hierarchy/outfit/job/engineering
 	hierarchy_type = /decl/hierarchy/outfit/job/engineering
-	shoes = /obj/item/clothing/shoes/workboots
+	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	//pda_slot = slot_l_store
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
@@ -15,8 +15,9 @@
 	glasses = /obj/item/clothing/glasses/science/magos
 	belt = /obj/item/storage/belt/utility/full
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos
+	shoes = /obj/item/clothing/shoes/jackboots/technoboots
 	uniform = /obj/item/clothing/under/rank/chief_engineer
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/ce
 	l_hand = /obj/item/gun/projectile/meltagun
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	id_type = /obj/item/card/id/engineering/head
@@ -32,7 +33,7 @@
 	head = /obj/item/clothing/head/hardhat/techpriest
 	mask = /obj/item/clothing/mask/gas/techpriest
 	glasses = /obj/item/clothing/glasses/science/tech
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_eng
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	uniform = /obj/item/clothing/under/rank/engineer
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos/techpriest

@@ -13,7 +13,7 @@
 	pda_type = null
 	pda_slot = null
 	head = /obj/item/clothing/head/servitorhead
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	suit = /obj/item/clothing/suit/servitor
 	back = /obj/item/storage/backpack/satchel/servitor
@@ -79,7 +79,7 @@
 	pda_type = null
 	pda_slot = null
 	head = /obj/item/clothing/head/servitorhead/janitor
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	suit = /obj/item/clothing/suit/servitor/janitor
 	back = /obj/item/storage/backpack/satchel/servitor
@@ -98,7 +98,7 @@
 	id_type = /obj/item/card/id/civilian/chaplain
 	pda_type = null
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/cmo
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
 	belt = /obj/item/device/flashlight/lantern

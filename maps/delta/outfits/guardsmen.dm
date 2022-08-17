@@ -327,7 +327,7 @@ Begin Warhammer loadouts
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/headset_service
 	backpack_contents = list(
 	/obj/item/ammo_box/shotgun = 2,
 	/obj/item/handcuffs = 2,
@@ -358,7 +358,7 @@ Begin Warhammer loadouts
 	r_pocket = /obj/item/device/binoculars
 	suit_store = /obj/item/gun/energy/las/laspistol/commissar
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/device/flashlight/lantern = 1,
@@ -376,7 +376,7 @@ Begin Warhammer loadouts
 	uniform =  /obj/item/clothing/under/rank/krieg_uniform/commissar
 	suit = /obj/item/clothing/suit/armor/commissar/krieg
 	head = /obj/item/clothing/head/commissar/krieg
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	mask = /obj/item/clothing/mask/gas/commissar
 	glasses = null
 
@@ -387,7 +387,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/chain/pcsword
 	shoes = /obj/item/clothing/shoes/jackboots/commissar //cadian commissars also go to the schola progenium or whatever its called, they aren't salvages
 	head = /obj/item/clothing/head/commissar/catachan
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	mask = null
 	glasses = null
 
@@ -400,7 +400,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
-	l_ear = /obj/item/device/radio/headset/red_team
+	l_ear = /obj/item/device/radio/headset/heads/hos
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak

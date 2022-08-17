@@ -21,8 +21,8 @@
 		freq_text = "Bravo"
 	else if(display_freq in CHARLIE_FREQS)
 		freq_text = "Charlie"
-	else if(display_freq in VILL_FREQS)
-		freq_text = "Village"
+	else if(display_freq in INQ_FREQS)
+		freq_text = "Inquisition"
 	else if(display_freq in ANTAG_FREQS)
 		freq_text = "#unkn"
 	else

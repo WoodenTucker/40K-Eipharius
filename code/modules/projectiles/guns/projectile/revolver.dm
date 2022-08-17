@@ -21,16 +21,17 @@
 	desc = "The sort of weapon usually found on nobility, such as captains or commandants."
 	icon_state = "cptrevolver"
 	item_state = "crevolver"
-/*
+
 /obj/item/gun/projectile/revolver/cpt/marshal
 	name = "Law's Retribution"
 	desc = "A modified revolver with a extended barrel and is chambered in shotgun shells. 'Lex et ordo' is engraved on the side."
 	icon_state = "marshallrevolver"
 	item_state = "crevolver"
 	caliber = "shotgun"
+	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/shotgun
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
-*/ //removed until new icon is added
+
 /obj/item/gun/projectile/revolver/cpt/magistrate
 	name = "Commandant's Special"
 

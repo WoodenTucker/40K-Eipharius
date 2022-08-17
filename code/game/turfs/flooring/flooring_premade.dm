@@ -118,7 +118,7 @@
 /turf/simulated/floor/stone
 	name = "stone floor"
 	icon = 'icons/turf/flooring/stonefloor.dmi'
-	icon_state = "main"
+	icon_state = "MAIN"
 	initial_flooring = /decl/flooring/stone
 
 /turf/simulated/floor/stone/chapel
