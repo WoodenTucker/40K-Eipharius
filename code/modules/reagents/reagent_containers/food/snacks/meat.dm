@@ -61,6 +61,7 @@
 /obj/item/reagent_containers/food/snacks/meat/grox
 	name = "slab of grox meat"
 	desc = "A delicacy across the Imperium of Man, tastes especially good when roasted over a campfire. Cook first!"
+	sales_price = 10
 
 	New()
 		..()

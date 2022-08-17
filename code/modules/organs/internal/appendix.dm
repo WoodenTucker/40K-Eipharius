@@ -4,6 +4,7 @@
 	parent_organ = BP_GROIN
 	organ_tag = BP_APPENDIX
 	var/inflamed = 0
+	sales_price = 3
 
 /obj/item/organ/internal/appendix/update_icon()
 	..()

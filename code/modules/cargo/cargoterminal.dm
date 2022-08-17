@@ -152,42 +152,34 @@
 
 
 /obj/machinery/computer/planetarytrade/attackby(var/obj/item/O, mob/user) //These manage putting coins directly into the console
-	if(istype(O, /obj/item/stack))
+	if (!(istype(O, /obj/item/)) || O.can_sell == FALSE)
+		to_chat(user, "<span class='warning'>[O] cannot be exported!</span>")
+		return 1
+	if(istype(O, /obj/item/stack)) //TODO, for loop to handle amount to sell. Input for len?
 		var/obj/item/stack/M = O
-		if(M.amount < 1)
-			return TRUE
-		else if (istype(M, /obj/item/stack/thrones))
-			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-			M.amount -= 1 //takes a shekel from the stack
-			balance += 10 //adds crowns to da counter
-			visible_message("[usr] deposits a $10 throne coin into the console.")
+		if(M.amount > 1)
+			M.amount -=1
+			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country. [M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
+			src.balance += M.sales_price - round(M.sales_price * GLOB.tax_rate, 1)
+			GLOB.thrones += round(M.sales_price * GLOB.tax_rate,1) //taxes on all sales through the system
 			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 			M.update_icon() //so coins in hand update
 			return
-		else if (istype(M, /obj/item/stack/thrones2))
-			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-			M.amount -= 1 //takes a shekel from the stack
-			balance += 5 //adds crowns to da counter
-			visible_message("[usr] deposits a $5 throne coin into the console.")
-			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-			M.update_icon() //so coins in hand update
-			return
-		else if (istype(M, /obj/item/stack/thrones3))
-			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
-			M.amount -= 1 //takes a shekel from the stack
-			balance += 1 //adds crowns to da counter
-			visible_message("[usr] deposits a $1 throne coin into the console.")
-			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
-			M.update_icon() //so coins in hand update
-			return
-		if(O.type in sellable_items)
-			if(M.amount < 1)
-				qdel(M)
-				return
-			visible_message("[usr] shoves [M] into the console.")
-			balance += M.amount * sellable_items[M.type]
+		else
+			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country. [M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
+			src.balance += M.sales_price - round(M.sales_price * GLOB.tax_rate, 1)
+			GLOB.thrones += round(M.sales_price * GLOB.tax_rate) //taxes on all sales through the system
 			qdel(M)
 			return
+	else
+		visible_message("[user] places [O] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country. [O.sales_price - round(O.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
+		src.balance += O.sales_price - round(O.sales_price * GLOB.tax_rate, 1)
+		GLOB.thrones += round(O.sales_price * GLOB.tax_rate,1) //taxes on all sales through the system
+		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
+		O.update_icon() //so coins in hand update
+		qdel(O)
+		return
+
 	return ..()
 
 //////////////////////////////////////////////////

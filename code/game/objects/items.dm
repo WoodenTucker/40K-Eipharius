@@ -5,6 +5,9 @@
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER
 	layer = BASE_OBJ_LAYER
 
+	var/can_sell = TRUE
+	var/sales_price = 5
+
 	var/image/blood_overlay = null //this saves our blood splatter overlay, which will be processed not to go over the edges of the sprite
 	var/randpixel = 6
 	var/r_speed = 1.0
@@ -331,7 +334,10 @@
 
 	src.loc = T
 
-/obj/item/examine(mob/user, var/distance = -1)
+/obj/item/examine(var/mob/living/carbon/human/user, var/distance = -1)
+	if(user.job == "House Noble")
+		to_chat(user, "<span class='rose italic'>[src] appears to be worth [src.sales_price] thrones.</span>") //Allows noble to see the price, might play around with making this less exact.
+
 	var/size
 	switch(src.w_class)
 		if(ITEM_SIZE_TINY)
