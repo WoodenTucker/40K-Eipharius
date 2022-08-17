@@ -132,8 +132,8 @@
 	icon_state = "Whistle_InHand_R"
 	item_state = "Whistle_InHand_R"
 	wielded_icon = "Whistle_InHand_R_W"
-	force = 55 //power fucking weapon, you dumb idiots 
-	block_chance = 60
+	force = 45 //power fucking weapon, you dumb idiots 
+	block_chance = 66
 	sharp = TRUE
 	edge = TRUE //(who the fuck removed this)
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
