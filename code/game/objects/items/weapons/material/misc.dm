@@ -49,6 +49,7 @@
 	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
 	icon_state = "machetedx"
 	item_state = "machete"
+	sales_price = 5
 
 /obj/item/material/minihoe // -- Numbers
 	name = "mini hoe"
@@ -90,6 +91,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
+	sales_price = 25
 
 /obj/item/material/sword/slaanesh
 	name = "slaanesh sword"
@@ -105,6 +107,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
+	sales_price = 100
 
 /obj/item/material/sword/hellblade
 	name = "hellblade sword"
@@ -120,6 +123,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
+	sales_price = 240
 
 /obj/item/material/sword/commissword/sabre
 	name = "Sabre"
@@ -128,6 +132,7 @@
 	icon_state = "sabre"
 	item_state = "sabre"
 	block_chance = 65
+	sales_price = 35
 
 /obj/item/material/sword/choppa
 	name = "choppa"
@@ -143,6 +148,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
+	sales_price = 2
 
 /obj/item/material/sword/slanarm
 	name = "mutated arm"
