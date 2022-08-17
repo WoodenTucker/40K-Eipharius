@@ -5,7 +5,7 @@
 	mouse_drag_pointer = MOUSE_ACTIVE_POINTER
 	layer = BASE_OBJ_LAYER
 
-	var/sales_price = 5
+	var/sales_price = 0
 
 	var/image/blood_overlay = null //this saves our blood splatter overlay, which will be processed not to go over the edges of the sprite
 	var/randpixel = 6
