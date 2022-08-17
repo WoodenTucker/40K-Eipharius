@@ -105,6 +105,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/generate_party,
 	/client/proc/choose_party,
 	/client/proc/delay_party,
+	/client/proc/partySize,
 
 )
 var/list/admin_verbs_ban = list(
@@ -1067,3 +1068,37 @@ var/list/admin_verbs_mentor = list(
 			message_admins("The lateparty has been disabled.")
 
 	feedback_add_details("admin_verb","XD") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
+
+/client/proc/partySize() // Runs the pick proc should you need to
+	set category = "Fun"
+	set name = "Choose Party Size"
+	set desc = "Set the size of the party."
+
+	var/options = list("2", "Default(3)", "4", "5", "6", "8", "10") //lists all possible fates
+
+	var/chooseaparty = input("Choose the size of the late party", "Options") as null|anything in options
+
+	switch(chooseaparty)
+		if("2")
+			GLOB.partysize = 2
+			message_admins("The late party will have 2 attendees.")
+		if("Default(3)")
+			GLOB.partysize = 3
+			message_admins("The late party will have 3 attendees.")
+		if("4")
+			GLOB.partysize = 4
+			message_admins("The late party will have 4 attendees.")
+		if("5")
+			GLOB.partysize = 5
+			message_admins("The late party will have 5 attendees.")
+		if("6")
+			GLOB.partysize = 6
+			message_admins("The late party will have 6 attendees.")
+		if("8")
+			GLOB.partysize = 8
+			message_admins("The late party will have 8 attendees.")
+		if("10")
+			GLOB.partysize = 10
+			message_admins("The late party will have 10 attendees.")
+
+	feedback_add_details("admin_verb","YG") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
