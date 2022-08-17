@@ -64,6 +64,7 @@
 						usr.loc = get_turf(locate("landmark*genestart")) //where they spawning
 						var/mob/living/carbon/human/genestealer/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key
+			GLOB.daparty.Cut() //CLears our list after the loop completes
 		else
 			src.say("I'm joining the late party [GLOB.daparty.len]/[GLOB.partysize] are ready!")
 			return
