@@ -167,7 +167,7 @@
 	if(user.mind.special_role != "Nurgle Cultist")
 		return
 	else if (istype(O, /obj/item/organ/external/arm))
-		if(user.cult_favor <= 8) //Keeps people from doing this early
+		if(user.cult_favor < 8) //Keeps people from doing this early
 			to_chat(usr, "Don't skip around! Feed me what I ask for!")
 			return
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
