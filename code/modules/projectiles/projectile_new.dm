@@ -210,19 +210,14 @@
 	if(!istype(target_mob))
 		return
 
-	//roll to-hit
-	//miss_modifier = max(15*(distance-1) - round(25*accuracy) + miss_modifier, 0)
-	miss_modifier = 15*(distance-2) - round(15*accuracy) + miss_modifier
-	if(target_mob == src.original)
-		miss_modifier -= 60
-	var/hit_zone = get_zone_with_miss_chance(def_zone, target_mob, miss_modifier, ranged_attack=(distance > 1 || original != target_mob)) //if the projectile hits a target we weren't originally aiming at then retain the chance to miss
-
+	var/byond_chance = ( (10 * firer.SKILL_LEVEL(ranged)) - ((distance * 10) - accuracy)) // Byond gives errors for some reason if you do this normally.
+	var/strike_chance = byond_chance <= 25 && distance <= 5 ? 25 : byond_chance // Minimum is 25 for normal combat distance
+	var/hit_zone = get_zone_with_miss_chance(def_zone, target_mob, strike_chance, ranged_attack=(distance > 1 || original != target_mob))
 	var/result = PROJECTILE_FORCE_MISS
 	var/do_normal_check = TRUE
 	if(hit_zone)
 		def_zone = hit_zone //set def_zone, so if the projectile ends up hitting someone else later (to be implemented), it is more likely to hit the same part
 		if(def_zone)
-
 			if(firer)
 				if(istype(firer.loc, /turf/simulated/floor/trench))
 					if(firer.lying)
