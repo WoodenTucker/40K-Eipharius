@@ -17,13 +17,13 @@
 		terminal.visible_message("<b>[terminal]</b> flashes an <span style='color:red'>error</span>, \"Drop pads not found.\"")
 		return FALSE
 
-	if(terminal.balance < (cost + round(cost * GLOB.tax_rate)))
+	if(terminal.balance < (cost + round(cost * GLOB.tax_rate, 1)))
 		terminal.visible_message("<b>[terminal]</b> flashes a <span style='color:red'>warning</span>, \"Your balance is too low..\"")
 		return FALSE
 
 	terminal.visible_message("<b>[terminal]</b> flashes a <span style='color:blue'>notice</span>, \"Your order has been confirmed. ETA: [DEFAULT_DROP_TIME / 10] Seconds.\"")
-	terminal.balance -= (cost + round(cost * GLOB.tax_rate)) //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
-	GLOB.thrones += round(cost * GLOB.tax_rate)
+	terminal.balance -= (cost + round(cost * GLOB.tax_rate,1)) //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+	GLOB.thrones += round(cost * GLOB.tax_rate, 1)
 	terminal.busy = TRUE
 	playsound(terminal, 'sound/effects/beam.ogg', 50, 0, -1)
 	addtimer(CALLBACK(src, .proc/drop_purchase, terminal), DEFAULT_DROP_TIME)

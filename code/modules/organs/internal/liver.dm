@@ -9,6 +9,7 @@
 	min_broken_damage = 45
 	max_damage = 70
 	relative_size = 60
+	sales_price = 10
 
 /obj/item/organ/internal/liver/robotize()
 	. = ..()
@@ -75,6 +76,7 @@
 	switch(owner.thirst)
 		if(THIRST_LEVEL_THIRSTY to INFINITY)
 			owner.clear_event("thirst")
+		if(THIRST_LEVEL_THIRSTY to THIRST_LEVEL_MEDIUM)
 			if(prob(1))
 				to_chat(owner, "Your throat feels a bit dry.")
 		if(THIRST_LEVEL_DEHYDRATED to THIRST_LEVEL_THIRSTY)

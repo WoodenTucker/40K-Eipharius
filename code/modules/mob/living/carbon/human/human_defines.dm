@@ -128,3 +128,4 @@
 	var/coldbreath = FALSE //dumb snowflake bullshit for coldbreath don't worry about it g
 	var/last_words = null
 	var/quote_cd = 0 //for yells
+	var/vice //For a characters selected vice

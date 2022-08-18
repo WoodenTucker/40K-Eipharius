@@ -14,6 +14,7 @@
 	attack_verb = list("attacked", "slapped", "whacked")
 	relative_size = 60
 	max_damage = 120
+	sales_price = 20
 
 	var/can_use_mmi = TRUE
 	var/mob/living/carbon/brain/brainmob = null

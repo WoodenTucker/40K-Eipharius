@@ -9,9 +9,10 @@
 	icon_state = "ballistic"
 	gender = PLURAL
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	armor = list(melee = 8, bullet = 10, laser = 10, energy = 1, bomb = 5, bio = 0, rad = 5)
+	armor = list(melee = 12, bullet = 14, laser = 14, energy = 1, bomb = 15, bio = 0, rad = 5)
 	slot = ACCESSORY_SLOT_ARMOR_A
 	species_restricted = list(SPECIES_HUMAN)
+	sales_price = 20
 
 /obj/item/clothing/accessory/storage/torso/armor/New()
 	..()

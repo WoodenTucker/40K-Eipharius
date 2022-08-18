@@ -11,6 +11,7 @@
 	var/list/eye_colour = list(0,0,0)
 	var/innate_flash_protection = FLASH_PROTECTION_NONE
 	max_damage = 45
+	sales_price = 15
 
 /obj/item/organ/internal/eyes/optics
 	robotic = ORGAN_ROBOT

@@ -33,6 +33,16 @@ var/global/list/all_grabobjects[0]
 var/list/obj/item/device/uplink/world_uplinks = list()
 
 //Preferences stuff
+//Vices, make sure random is always last and that you update the rand length in 03_body to the length of your options. This will let us choose a random vice without getting assigned Random on spawn
+GLOBAL_LIST_INIT(vice_list, list(
+"Alcohol",
+"Lho",
+"Drugs",
+"Piety",
+"Neat Freak",
+"Parental Instincts",
+"Random"
+) )
 //Hairstyles
 GLOBAL_LIST_EMPTY(hair_styles_list)        //stores /datum/sprite_accessory/hair indexed by name
 GLOBAL_LIST_EMPTY(facial_hair_styles_list) //stores /datum/sprite_accessory/facial_hair indexed by name

@@ -340,3 +340,4 @@
 	item_state = "medical_rig"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 20

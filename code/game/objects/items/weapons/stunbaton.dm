@@ -265,6 +265,7 @@
 	agonyforce = 55
 	status = 1
 	block_chance = 40
+	sales_price = 20
 	weapon_speed_delay = 4
 	sharp = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE

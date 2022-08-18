@@ -639,6 +639,7 @@ BLIND     // can't see anything
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND,ACCESSORY_SLOT_DECOR,ACCESSORY_SLOT_MEDAL)
 	grab_sound = 'sound/items/handle/clothing_up.ogg'
 	equipsound = 'sound/items/handle/cloth_pickup.ogg'
+	sales_price = 6
 
 
 /obj/item/clothing/suit/update_clothing_icon()
@@ -675,6 +676,7 @@ BLIND     // can't see anything
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	w_class = ITEM_SIZE_NORMAL
 	force = 0
+	sales_price = 4
 	var/has_sensor = SUIT_HAS_SENSORS //For the crew computer 2 = unable to change mode
 	var/sensor_mode = 0
 		/*

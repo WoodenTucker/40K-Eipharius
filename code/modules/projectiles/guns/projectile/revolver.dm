@@ -15,6 +15,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	sales_price = 30
 
 /obj/item/gun/projectile/revolver/cpt
 	name = "Captain's Special"
@@ -72,6 +73,7 @@
 	caliber = ".50"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a50
+	sales_price = 40
 
 /obj/item/gun/projectile/revolver/detective
 	name = "revolver"
@@ -137,6 +139,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	sales_price = 33
 
 /obj/item/gun/projectile/slugrevolver
 	name = "slug revolver"
@@ -156,6 +159,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	sales_price = 37
 
 // Blade Runner pistol.
 /obj/item/gun/projectile/revolver/deckard

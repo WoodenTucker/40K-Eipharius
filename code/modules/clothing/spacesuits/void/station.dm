@@ -11,6 +11,7 @@
 		slot_r_hand_str = "eng_helm",
 		)
 	armor = list(melee = 40, bullet = 30, laser = 45,energy = 5, bomb = 35, bio = 100, rad = 80)
+	sales_price = 15
 
 /obj/item/clothing/suit/space/void/engineering
 	name = "engineering voidsuit"

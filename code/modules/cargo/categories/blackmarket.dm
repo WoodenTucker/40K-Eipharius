@@ -31,11 +31,6 @@
 	cost = 55
 	item_path = /obj/item/material/sword/chaosknife
 
-/datum/cargo_entry/bmarket/slaaneshknife
-	name = "Sla**sh Knife"
-	cost = 56
-	item_path = /obj/item/material/sword/chaosknife
-
 /datum/cargo_entry/bmarket/slaaneshsword
 	name = "Sla**sh Blade"
 	cost = 140
@@ -45,11 +40,6 @@
 	name = "H*ll Blade"
 	cost = 290
 	item_path = /obj/item/material/sword/hellblade
-
-/datum/cargo_entry/bmarket/hellblade
-	name = "D**mon Blade"
-	cost = 310
-	item_path = /obj/item/material/sword/demon
 
 /datum/cargo_entry/bmarket/magushelm
 	name = "Magus Helm"
@@ -66,7 +56,7 @@
 	cost = 31
 	item_path = /obj/item/grenade/chem_grenade/metalfoam
 
-/datum/cargo_entry/bmarket/batterer
+/datum/cargo_entry/bmarket/taser
 	name = "Xenos Taser"
 	cost = 79
 	item_path = /obj/item/gun/energy/taser
@@ -76,12 +66,12 @@
 	cost = 100
 	item_path = /obj/item/storage/box/syndie_kit/imp_freedom
 
-/datum/cargo_entry/bmarket/freedomimplant
+/datum/cargo_entry/bmarket/compressionimplant
 	name = "Compression Implant Box"
 	cost = 100
 	item_path = /obj/item/storage/box/syndie_kit/imp_compress
 
-/datum/cargo_entry/bmarket/freedomimplant
+/datum/cargo_entry/bmarket/explosiveimplant
 	name = "Explosive Implant Box"
 	cost = 200
 	item_path = /obj/item/storage/box/syndie_kit/imp_explosive

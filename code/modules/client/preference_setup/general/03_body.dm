@@ -26,6 +26,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/list/organ_data
 	var/list/rlimb_data
 	var/disabilities = 0
+	var/vice
 
 	var/has_cortical_stack = FALSE
 	var/equip_preview_mob = 0
@@ -61,6 +62,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	from_file(S["rlimb_data"], pref.rlimb_data)
 	from_file(S["has_cortical_stack"], pref.has_cortical_stack)
 	from_file(S["body_markings"], pref.body_markings)
+	from_file(S["vice"], pref.vice)
 	pref.preview_icon = null
 	from_file(S["bgstate"], pref.bgstate)
 
@@ -89,6 +91,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	to_file(S["has_cortical_stack"], pref.has_cortical_stack)
 	to_file(S["body_markings"], pref.body_markings)
 	to_file(S["bgstate"], pref.bgstate)
+	to_file(S["vice"], pref.vice)
 
 /datum/category_item/player_setup_item/general/body/sanitize_character(var/savefile/S)
 	if(!pref.species || !(pref.species in playable_species))
@@ -103,6 +106,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.g_skin			= sanitize_integer(pref.g_skin, 0, 255, initial(pref.g_skin))
 	pref.b_skin			= sanitize_integer(pref.b_skin, 0, 255, initial(pref.b_skin))
 	pref.h_style		= sanitize_inlist(pref.h_style, GLOB.hair_styles_list, initial(pref.h_style))
+	pref.vice		    = sanitize_inlist(pref.vice, GLOB.vice_list, initial(pref.vice))
 	pref.f_style		= sanitize_inlist(pref.f_style, GLOB.facial_hair_styles_list, initial(pref.f_style))
 	pref.r_eyes			= sanitize_integer(pref.r_eyes, 0, 255, initial(pref.r_eyes))
 	pref.g_eyes			= sanitize_integer(pref.g_eyes, 0, 255, initial(pref.g_eyes))
@@ -137,11 +141,13 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	user << browse_rsc(pref.preview_icon, "previewicon.png")
 
 	var/datum/species/mob_species = all_species[pref.species]
-	. += "<table><tr style='vertical-align:top'><td><b>Body</b> "
+	. += "<table style='overflow-y:scroll'><tr style='vertical-align:top'><td><b>Body</b> "
 	. += "(<a href='?src=\ref[src];random=1'>&reg;</A>)"
 	. += "<br>"
 	//. += "Species: <a href='?src=\ref[src];show_species=1'>[pref.species]</a><br>"
 	. += "Blood Type: <a href='?src=\ref[src];blood_type=1'>[pref.b_type]</a><br>"
+	. += "<br>"
+	. += "Vice: <a href='?src=\ref[src];vice_type=1'>[pref.vice]</a><br>"
 
 	//if(has_flag(mob_species, HAS_BASE_SKIN_COLOURS))
 	//	. += "Base Colour: <a href='?src=\ref[src];base_skin=1'>[pref.s_base]</a><br>"
@@ -281,6 +287,17 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		if(new_b_type && CanUseTopic(user))
 			pref.b_type = new_b_type
 			return TOPIC_REFRESH
+
+	else if(href_list["vice_type"])
+		var/new_v_type = input(user, "Choose your character's vice:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in GLOB.vice_list
+		if(new_v_type && CanUseTopic(user))
+			if(new_v_type == "Random")
+				var/choice = rand(0,5) //Array starts at 0, make sure it runs between 0 and the length before Random to avoid setting their vice to the string Random
+				pref.vice = GLOB.vice_list[choice]
+				return TOPIC_REFRESH
+			else
+				pref.vice = new_v_type
+				return TOPIC_REFRESH
 
 	else if(href_list["show_species"])
 		// Actual whitelist checks are handled elsewhere, this is just for accessing the preview window.

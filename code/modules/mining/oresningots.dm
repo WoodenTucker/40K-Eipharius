@@ -15,11 +15,13 @@
 	name = "small rock"
 	desc = "Just that, a piece of a cave wall."
 	icon_state = "glass_ore"
+	sales_price = 1
 
 /obj/item/newore/ironore
 	name = "iron ore"
 	desc = "A chunk of iron ore."
 	icon_state = "iron"
+	sales_price = 4
 
 /obj/item/newore/ironore/New()
 	icon_state = pick("iron","iron2","iron3",)
@@ -29,35 +31,43 @@
 	name = "copper ore"
 	desc = "A chunk of copper ore"
 	icon_state = "copper"
+	sales_price = 6
+
 
 /obj/item/newore/silverore
 	name = "silver ore"
 	desc = "A chunk of silver ore"
 	icon_state = "ore_silver"
+	sales_price = 7
 
 /obj/item/newore/coalore
 	name = "coal"
 	desc = "A chunk of coal"
 	icon_state = "coal"
+	sales_price = 5
 /obj/item/newore/goldore
 	name = "gold ore"
 	desc = "SOLID GOLLLLLLD!"
 	icon_state = "gold"
+	sales_price = 15
 
 /obj/item/newore/adamantiumore
 	name = "adamantium ore"
 	desc = "A chunk of the rarest known mineral in the Imperium."
 	icon_state = "adamantine"
+	sales_price = 25
 
 /obj/item/newore/uraniumore
 	name = "uranium ore"
 	desc = "A rock with smaller chunks of uranium inside."
 	icon_state = "uranium"
+	sales_price = 10
 
 /obj/item/newore/phoronore
 	name = "phoron ore"
 	desc = "A chunk of phoron ore, a highly flammable ore that came from another galaxy.(Forges can still smelt it)"
 	icon_state = "phoron"
+	sales_price = 12
 
  /* _____                   _
  |_   _|                 | |
@@ -83,7 +93,7 @@
 	icon_state = "copper_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-
+	sales_price = 12
 
 /obj/item/ingots/silveringot
 	name = "silver ingot"
@@ -92,6 +102,7 @@
 	icon_state = "silver_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 13
 
 
 /obj/item/ingots/steelingot
@@ -101,7 +112,7 @@
 	icon_state = "steel_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-
+	sales_price = 13
 
 /obj/item/ingots/ironingot
 	name = "iron ingot"
@@ -110,6 +121,7 @@
 	icon_state = "iron_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 10
 
 
 /obj/item/ingots/adamantiumingot
@@ -119,6 +131,7 @@
 	icon_state = "adamantine_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 40
 
 /obj/item/ingots/goldingot
 	name = "gold ingot"
@@ -127,6 +140,7 @@
 	icon_state = "gold_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 30
 
 
 /*
@@ -151,6 +165,7 @@
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
 	gemtype = 1
+	sales_price = 12
 
 /obj/item/newore/gems/quartz/cut
 	name = "cut quartz"
@@ -160,6 +175,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 20
 
 /obj/item/newore/gems/quartz/fail
 	name = "damaged quartz"
@@ -169,6 +185,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 8
 
 /obj/item/newore/gems/sapphire
 	name = "chunk of sapphire"
@@ -179,6 +196,7 @@
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
 	gemtype = 2
+	sales_price = 18
 
 /obj/item/newore/gems/sapphire/cut
 	name = "cut sapphire"
@@ -188,6 +206,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 24
 
 /obj/item/newore/gems/sapphire/fail
 	name = "damaged sapphire"
@@ -197,8 +216,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-
-
+	sales_price = 12
 
 /obj/item/newore/gems/ruby
 	name = "chunk of ruby"
@@ -208,7 +226,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	gemtype = 3
+	gemtype = 18
 
 /obj/item/newore/gems/ruby/cut
 	name = "cut ruby"
@@ -218,6 +236,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 24
 
 /obj/item/newore/gems/ruby/fail
 	name = "damaged ruby"
@@ -227,6 +246,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 12
 
 
 /obj/item/newore/gems/emerald
@@ -238,6 +258,7 @@
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
 	gemtype = 4
+	sales_price = 18
 
 /obj/item/newore/gems/emerald/cut
 	name = "cut emerald"
@@ -247,6 +268,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 24
 
 /obj/item/newore/gems/emerald/fail
 	name = "damaged emerald"
@@ -256,6 +278,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 12
 
 /obj/item/newore/gems/topaz
 	name = "chunk of topaz"
@@ -266,6 +289,8 @@
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
 	gemtype = 5
+	sales_price = 18
+
 /obj/item/newore/gems/topaz/cut
 	name = "cut topaz"
 	desc = "A finely cut topaz"
@@ -274,6 +299,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 24
 
 /obj/item/newore/gems/topaz/fail
 	name = "damaged topaz"
@@ -283,6 +309,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 12
 
 /obj/item/newore/gems/diamond
 	name = "chunk of diamond"
@@ -293,6 +320,7 @@
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
 	gemtype = 6
+	sales_price = 24
 
 /obj/item/newore/gems/diamond/cut
 	name = "cut diamond"
@@ -302,6 +330,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 36
 
 /obj/item/newore/gems/diamond/fail
 	name = "damaged diamond"
@@ -311,6 +340,7 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
+	sales_price = 20
 
 /*          .-') _   ('-.  _   .-')      .-')
          (  OO) )  _(  OO)( '.( OO )_   ( OO ).

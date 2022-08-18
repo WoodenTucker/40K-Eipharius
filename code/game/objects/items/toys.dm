@@ -329,6 +329,7 @@
 	sharp = 1
 	force = 37
 	block_chance = 40
+	sales_price = 20
 
 /obj/item/toy/katana/strong
 	name = "noble iron sword"
@@ -339,6 +340,7 @@
 	force = 35
 	block_chance = 45
 	weapon_speed_delay = 8
+	sales_price = 30
 
 /*
  * Snap pops

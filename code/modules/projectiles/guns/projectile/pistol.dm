@@ -25,6 +25,7 @@
 	unloaded_icon = "flamer-e"
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
+	sales_price = 70
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
@@ -110,6 +111,7 @@
 	fire_delay = 0.5
 	silenced = 1
 	force = 20
+	sales_price = 35
 
 /obj/item/gun/projectile/talon/adept
 	name = "dulled stub pistol"
@@ -374,6 +376,7 @@
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
 	slot_flags = SLOT_BELT|SLOT_S_STORE
+	sales_price = 38
 
 /obj/item/gun/projectile/bolter_pistol/update_icon()
 	..()
@@ -391,6 +394,7 @@
 	accuracy = -3 //VERY well maintained--maintened? eh, you get what i mean!
 	fire_delay = 1.2
 	move_delay = 1.3
+	sales_price = 58
 
 /obj/item/gun/projectile/bolter_pistol/astarte
 	name = "Mark III Pattern Bolt Pistol"
@@ -407,6 +411,7 @@
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
 	slot_flags = SLOT_BELT|SLOT_S_STORE
+	sales_price = 68
 
 /obj/item/gun/projectile/bolter_pistol/update_icon()
 	..()
@@ -428,6 +433,7 @@
 	move_delay = 1.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
+	sales_price = 58
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle/update_icon()
 	..()

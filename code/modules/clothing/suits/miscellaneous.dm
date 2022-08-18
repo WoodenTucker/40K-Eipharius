@@ -546,6 +546,7 @@
 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/nullrod, /obj/item/storage/bible)
 	armor = list(melee = 50, bullet = 50, laser = 40, energy = 70, bomb = 40, bio = 70, rad = 70)
+	sales_price = 40
 
 /obj/item/clothing/suit/watercaste
 	name = "water caste robes"
@@ -555,7 +556,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/gun/energy/pulse/pulsepistol, /obj/item/cell/pulserifle)
-	armor = list(melee = 10, bullet = 10, laser = 5, energy = 5, bomb = 5, bio = 5, rad = 5)
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 5, bomb = 5, bio = 5, rad = 5)
 	siemens_coefficient = 3.0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -568,7 +569,7 @@
 	blood_overlay_type = "armor"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	allowed = list(/obj/item/gun/energy/pulse/pulsepistol, /obj/item/cell/pulserifle)
-	armor = list(melee = 15, bullet = 15, laser = 10, energy = 20, bomb = 45, bio = 10, rad = 45)
+	armor = list(melee = 45, bullet = 35, laser = 30, energy = 20, bomb = 45, bio = 10, rad = 45)
 	siemens_coefficient = 3.0
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
