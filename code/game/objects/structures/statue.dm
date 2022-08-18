@@ -133,6 +133,28 @@
 	bound_height = 64
 	bound_width = 64
 
+/obj/structure/statue/column
+	name = "column"
+	desc = "A strange column"
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "column2"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
+/obj/structure/statue/column3
+	name = "column"
+	desc = "A strange column"
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "column3"
+	anchored = 1
+	density = 1
+	layer = 4
+	bound_height = 64
+	bound_width = 64
+
 /obj/structure/statue/xenotube
 	name = "xeno containment tube"
 	desc = "An Inquisition containment tube housing some sort of horrific xenos for study."
