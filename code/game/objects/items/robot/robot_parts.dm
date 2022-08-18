@@ -289,7 +289,7 @@
 			var/obj/item/organ/internal/brain = H.internal_organs_by_name[BP_BRAIN]
 			H.organs -= brain
 			H.organs_by_name[brain.organ_tag] = null
-			qdel(brain)
+			del(brain)
 
 			// Robotize remaining organs: Eyes, head, and chest.
 			// Respect brand used.
