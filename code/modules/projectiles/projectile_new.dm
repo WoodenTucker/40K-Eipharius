@@ -210,8 +210,7 @@
 	if(!istype(target_mob))
 		return
 
-	var/byond_chance = ( (10 * firer.SKILL_LEVEL(ranged)) - ((distance * 10) - accuracy)) // Byond gives errors for some reason if you do this normally.
-	var/strike_chance = byond_chance <= 25 && distance <= 5 ? 25 : byond_chance // Minimum is 25 for normal combat distance
+	var/strike_chance = ( (10 * firer.SKILL_LEVEL(ranged)) - ((distance * 10) - accuracy)) // Byond gives errors for some reason if you do this normally.
 	var/hit_zone = get_zone_with_miss_chance(def_zone, target_mob, strike_chance, ranged_attack=(distance > 1 || original != target_mob))
 	var/result = PROJECTILE_FORCE_MISS
 	var/do_normal_check = TRUE
