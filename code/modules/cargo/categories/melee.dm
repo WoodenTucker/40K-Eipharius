@@ -1,7 +1,7 @@
 /datum/cargo_entry/melee
 	category = "Melee"
 
-/datum/cargo_entry/melee/baton
+/datum/cargo_entry/melee/shieldriot
 	name = "Riot Shield"
 	cost = 25
 	item_path = /obj/item/shield/riot
@@ -21,20 +21,10 @@
 	cost = 110
 	item_path = /obj/item/material/sword/combat_knife/catachan
 
-/datum/cargo_entry/melee/machete
-	name = "Machete"
-	cost = 15
-	item_path = /obj/item/material/sword/machete
-
 /datum/cargo_entry/melee/ironsword
 	name = "Iron Sword"
 	cost = 49
 	item_path = /obj/item/toy/katana
-
-/datum/cargo_entry/melee/saber
-	name = "Masterwork Saber"
-	cost = 50
-	item_path = /obj/item/material/sword/sabre
 
 /datum/cargo_entry/melee/saber2
 	name = "Officer's Saber"

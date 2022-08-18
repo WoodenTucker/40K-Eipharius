@@ -44,7 +44,7 @@
 /datum/cargo_entry/armor/voidsuitarmor
 	name = "Armored Void Suit"
 	cost = 95
-	item_path = /obj/item/clothing/suit/space/void/engineering/salvage
+	item_path = /obj/item/clothing/suit/space/void/engineering
 
 /datum/cargo_entry/armor/voidsuitarmorhelm
 	name = "Armored Void Suit Helmet"
