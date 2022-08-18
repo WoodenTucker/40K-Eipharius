@@ -334,6 +334,62 @@
 	..()
 	icon_state = "minishroom"
 
+// NEW STUFF
+
+/obj/structure/flora/yes/sadshroom
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "sadshroom"
+
+/obj/structure/flora/yes/rock3
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "rock3"
+
+/obj/structure/flora/yes/rock4
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "rock4"
+
+/obj/structure/flora/yes/veles
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "VELES"
+
+/obj/structure/flora/yes/thoth
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "THOTH"
+
+/obj/structure/flora/yes/baccus
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "BACCUS"
+
+/obj/structure/flora/yes/armok
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "ARMOK"
+
+/obj/structure/flora/yes/erista
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "ERISTA"
+
+/obj/structure/flora/yes/cross
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "cross"
+
+/obj/structure/flora/yes/shroomlog5
+	icon = 'icons/obj/structures/mining.dmi'
+	icon_state = "shroomlog5"
+
+/obj/structure/flora/yes/wooden_tv
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	icon_state = "wooden_tv"
+
+/obj/structure/flora/yes/washer
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	icon_state = "washer0"
+
+/obj/structure/flora/yes/plant
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	icon_state = "plant"
+
+//
+
 /obj/structure/flora/ash
 	name = "ashroom"
 	icon = 'icons/obj/flora/ash_flora.dmi'
