@@ -28,7 +28,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -82,7 +82,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(14,16), rand(14,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -107,7 +107,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 
 		if(title == "Krieg Guardsman")
-			H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(3,6),rand(1,3))
+			H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(3,6),rand(1,3))
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
@@ -144,7 +144,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("[H.real_name]")
-		var/corruption = rand(1,6)
+		var/corruption = rand(1,4)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
