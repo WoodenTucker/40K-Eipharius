@@ -127,16 +127,16 @@
 /mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
 	if (client)
 		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
-			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist") //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist" && cultist.cult_favor > 0) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "khorne")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Slaanesh Cultist") //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Slaanesh Cultist" && cultist.cult_favor > 0) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "slaanesh")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Nurgle Cultist") //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Nurgle Cultist" && cultist.cult_favor > 0) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "nurgle")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist") //rage check very important to not show everyone
+			if(cultist.mind && cultist.mind.special_role == "Tzeentch Cultist" && cultist.cult_favor > 0) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "tzeentch")
 				client.images += I
 			if(cultist.mind && cultist.mind.special_role == "Mercenary") //unrelated to the above, its for merc hiring.
