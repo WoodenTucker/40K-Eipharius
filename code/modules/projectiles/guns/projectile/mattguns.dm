@@ -107,7 +107,7 @@
 // adeptus mech galv rifle. no scope yet.
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/galvrifle
-	name = "Galvonic Rifle"
+	name = "Galvanic Rifle"
 	desc = "A rifle from the Skitarii legions of the Adeptus Mechanicus. It may look primitive, compared to energy weapons and the like, but the bullets have certainly kept up with modern technological breakthroughs. Uses .338 lapua (DO NOT ATTACH SCOPE, BUGGED AF!)"
 	icon_state = "galvrifle"
 	item_state = "galvrifle"

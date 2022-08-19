@@ -231,7 +231,7 @@
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
-	armor = list(melee = 30, bullet = 20, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 25, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/sight
@@ -239,9 +239,8 @@
 	desc = "Da sights of a Flashgitz, or even a Loota. Ya reckon dat bit of glass will deflect dem lasers, givin' added protektion."
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
-
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 15, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/fur
@@ -250,7 +249,7 @@
 	icon_state = "orkhelmetfur"
 	item_state = "orkhelmetfur"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 60, bio = 0, rad = 0)
+	armor = list(melee = 25, bullet = 20, laser = 20, energy = 30, bomb = 60, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 

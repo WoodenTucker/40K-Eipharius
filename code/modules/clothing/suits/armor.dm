@@ -259,12 +259,12 @@ obj/item/clothing/suit/armor
 
 // Ork
 
-/obj/item/clothing/suit/armor/orkarmor // not used rn
-	name = "Metal Ork Armor"
+/obj/item/clothing/suit/armor/orkarmor
+	name = "'Eavy Metal Ork Armor"
 	desc = "Scavenged 'eavy bitz to keep ya' krumpin' longa'!"
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor"
-	armor = list(melee = 25, bullet = 25, laser = 25, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
 	allowed = list(/obj/item/gun/projectile/ork, /obj/item/material/sword/choppa)
 	blood_overlay_type = "armor"
