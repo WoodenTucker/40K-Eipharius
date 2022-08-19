@@ -167,7 +167,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 		break
 
 	if(sql_id != null || sql_id != "")
-		var/DBQuery/timePlayedQueryUpdate = dbcon.NewQuery("UPDATE playtime_history SET DATE = Now(), time_living = time_living + [sqlplayed] WHERE ckey = '[sql_id]'")
+		var/DBQuery/timePlayedQueryUpdate = dbcon.NewQuery("UPDATE playtime_history SET DATE = Now(), time_living = time_living + [sqlplayed] WHERE ckey = '[sql_ckey]'")
 		timePlayedQueryUpdate.Execute()
 	else
 		//New player!! Need to insert all the stuff
