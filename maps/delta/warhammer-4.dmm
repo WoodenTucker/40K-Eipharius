@@ -2077,6 +2077,7 @@
 "FP" = (
 /obj/structure/closet/secure_closet/guncabinet,
 /obj/random/loot/lightlasgun,
+/obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -2304,6 +2305,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"QJ" = (
+/obj/structure/barbwire,
+/mob/living/simple_animal/hostile/syndicate/ranged,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
 "QO" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -2474,20 +2480,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Xc" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "Xr" = (
 /obj/structure/telearray/centreright,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"XB" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/theforest)
 "XS" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -4570,14 +4568,14 @@ cD
 cD
 bg
 cX
-Xc
+cX
 cX
 cX
 cX
 cX
 bg
 bg
-Xc
+cX
 cD
 AZ
 AZ
@@ -5593,7 +5591,7 @@ cD
 cD
 cX
 cX
-XB
+bg
 cX
 bA
 bA
@@ -7139,7 +7137,7 @@ cX
 cE
 cX
 fp
-XB
+bg
 cD
 cD
 cD
@@ -8420,7 +8418,7 @@ cN
 rX
 bc
 bA
-XB
+bg
 bg
 bg
 cD
@@ -40261,7 +40259,7 @@ cJ
 aF
 Cc
 cJ
-cJ
+QJ
 cV
 cV
 cV
@@ -40775,7 +40773,7 @@ cJ
 cJ
 Cc
 cJ
-cJ
+QJ
 cV
 cV
 cV
@@ -46428,9 +46426,9 @@ cK
 ak
 cJ
 Cc
+QJ
 cJ
-cJ
-cK
+QJ
 cJ
 cJ
 cJ
