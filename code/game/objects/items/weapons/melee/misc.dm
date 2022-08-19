@@ -98,7 +98,7 @@
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
 	user.setClickCooldown(5)
 	var/hit_zone = ran_zone()
-	if(user.lust <=7)
+	if(user.cult_favor <= 7 && user.mind.special_role != "Slaanesh Cultist")
 		to_chat(user, "The mutated arm resists you!")
 		return
 	if(C.stat == DEAD)
@@ -119,7 +119,7 @@
 
 
 /obj/item/melee/whip/lashoftorment/pickup(var/mob/living/carbon/human/user)
-	if(user.lust <= 7 )
+	if(user.cult_favor <= 7 && user.mind.special_role != "Slaanesh Cultist")
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
