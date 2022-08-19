@@ -225,7 +225,7 @@
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		H.add_stats(rand(18,22), rand(18,22), rand(18,22), 16)
-		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(8,9),rand(8,9),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM

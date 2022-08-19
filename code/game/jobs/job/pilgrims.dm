@@ -81,7 +81,7 @@ Pilgrim Fate System
 			)
 		if("Bounty Hunter")
 			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (8,12)) //veteran hunter
-			U.add_skills(rand(6,8),rand(2,7),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(5,8),rand(1,3),rand(1,1),rand(1,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/bountyhead, slot_head)
@@ -120,7 +120,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Miner")
 			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,5),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(4,6),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
@@ -132,7 +132,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Stalker")
 			U.add_stats(rand(12,15), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(5,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
@@ -147,7 +147,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Scum")
 			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(2,5),rand(5,8),rand(1,2),rand(1,2),rand(3,5)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/scum, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head)
@@ -163,7 +163,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Disgraced Medicae")
 			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,6),rand(3,5),rand(1,2),rand(3,5)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(1,6),rand(5,8),rand(1,2),rand(5,8)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
