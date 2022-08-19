@@ -163,7 +163,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 	query.Execute()
 	var/sql_id = null
 	while(query.NextRow())
-		sql_id = query.item[0]
+		sql_id = query.item[1]
 		break
 
 	if(sql_id != null || sql_id != "")
