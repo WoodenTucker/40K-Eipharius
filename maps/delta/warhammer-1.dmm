@@ -968,9 +968,6 @@
 "eg" = (
 /obj/structure/table/rack/dark,
 /obj/item/ammo_magazine/box/a556/mg08,
-/obj/item/ammo_magazine/box/a556/mg08,
-/obj/item/ammo_magazine/box/a556/mg08,
-/obj/item/ammo_magazine/box/a556/mg08,
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -1047,7 +1044,6 @@
 "ew" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
 /obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
@@ -2062,6 +2058,18 @@
 /obj/structure/fitness/weightlifter,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"iD" = (
+/obj/structure/table/rack/dark,
+/obj/item/grenade/frag/warfare,
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/item/grenade/frag/warfare,
+/obj/item/grenade/frag/high_yield/krak,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "iG" = (
 /obj/effect/floor_decal/newcorner/shaft,
 /obj/effect/floor_decal/newcorner/plating{
@@ -2569,7 +2577,7 @@
 	color = "#36261B"
 	},
 /obj/item/clothing/mask/gas/cyborg{
-	armor = list("melee" = 15, "bullet" = 15, "laser" = 15, "energy" = 0, "bomb" = 0, "bio" = 75, "rad" = 0)
+	armor = list("melee"=15,"bullet"=15,"laser"=15,"energy"=0,"bomb"=0,"bio"=75,"rad"=0)
 	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -3045,7 +3053,6 @@
 "mE" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
@@ -6781,7 +6788,7 @@
 /obj/structure/table/marble,
 /obj/item/rosarius{
 	body_parts_covered = 1656;
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 40, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0)
+	armor = list("melee"=40,"bullet"=40,"laser"=40,"energy"=0,"bomb"=0,"bio"=0,"rad"=0)
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/torchwall/service{
@@ -8088,7 +8095,6 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/lightlasgun,
 /obj/random/loot/lightlasgun,
-/obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "HO" = (
@@ -8461,10 +8467,6 @@
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/heavystubber,
-/obj/random/loot/heavystubber,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
@@ -8907,7 +8909,6 @@
 "Lm" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/guardarmor,
 /obj/random/loot/guardarmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -10650,7 +10651,7 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/marble,
 /obj/item/staff/ministorumstaff{
-	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0);
+	armor = list("melee"=30,"bullet"=30,"laser"=30,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
 	body_parts_covered = 1656;
 	name = "staff of messina";
 	force = 20
@@ -11183,12 +11184,6 @@
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -11593,7 +11588,6 @@
 "WD" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
 /turf/simulated/floor/tiled/dark,
@@ -37537,7 +37531,7 @@ PI
 PI
 PI
 dm
-my
+iD
 aY
 ye
 dm

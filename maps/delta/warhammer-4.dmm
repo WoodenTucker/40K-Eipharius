@@ -2077,7 +2077,6 @@
 "FP" = (
 /obj/structure/closet/secure_closet/guncabinet,
 /obj/random/loot/lightlasgun,
-/obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
