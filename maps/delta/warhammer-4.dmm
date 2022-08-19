@@ -1319,6 +1319,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"lW" = (
+/obj/item/gun/projectile/ork/automatic/shoota,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
 "md" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -2381,6 +2385,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"TJ" = (
+/obj/item/gun/projectile/ork/automatic/shoota,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/theforest)
 "TR" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -4567,14 +4575,14 @@ cD
 cD
 bg
 cX
-cX
+lW
 cX
 cX
 cX
 cX
 bg
 bg
-cX
+lW
 cD
 AZ
 AZ
@@ -5590,7 +5598,7 @@ cD
 cD
 cX
 cX
-bg
+TJ
 cX
 bA
 bA
@@ -7136,7 +7144,7 @@ cX
 cE
 cX
 fp
-bg
+TJ
 cD
 cD
 cD
@@ -8417,7 +8425,7 @@ cN
 rX
 bc
 bA
-bg
+TJ
 bg
 bg
 cD
