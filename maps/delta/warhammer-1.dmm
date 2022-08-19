@@ -469,6 +469,23 @@
 /obj/effect/floor_decal/turf/carpetn00,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/chapel)
+"ci" = (
+/obj/machinery/door/airlock/arbiter{
+	color = "grey";
+	name = "Groomlake Facility";
+	req_access = list()
+	},
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "cj" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/closet/crate/freezer/rations,
@@ -913,6 +930,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/turf/plating,
+/mob/living/simple_animal/mouse/white,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "ec" = (
@@ -941,6 +959,9 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "eg" = (
 /obj/structure/table/rack/dark,
+/obj/item/ammo_magazine/box/a556/mg08,
+/obj/item/ammo_magazine/box/a556/mg08,
+/obj/item/ammo_magazine/box/a556/mg08,
 /obj/item/ammo_magazine/box/a556/mg08,
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
@@ -1018,6 +1039,7 @@
 "ew" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/goodweapon,
 /obj/random/loot/goodweapon,
 /obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
@@ -1364,6 +1386,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"fL" = (
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
+/turf/simulated/wall/rust,
+/area/cadiaoutpost/oa/security)
 "fM" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4;
@@ -1413,6 +1442,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 30
 	},
+/mob/living/simple_animal/mouse/white,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "fT" = (
@@ -2022,18 +2052,6 @@
 "iA" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/fitness/weightlifter,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/security)
-"iD" = (
-/obj/structure/table/rack/dark,
-/obj/item/grenade/frag/warfare,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/effect/floor_decal/turf/checkers/two,
-/obj/item/grenade/frag/warfare,
-/obj/item/grenade/frag/high_yield/krak,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "iG" = (
@@ -3023,6 +3041,7 @@
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
 /obj/random/loot/sidearms,
+/obj/random/loot/sidearms,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "mG" = (
@@ -3808,6 +3827,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "pO" = (
 /obj/effect/floor_decal/turf/plating,
+/mob/living/simple_animal/mouse/brown,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "pP" = (
@@ -3975,6 +3995,10 @@
 "qK" = (
 /turf/simulated/wall/concrete/strong/chapel,
 /area/cadiaoutpost/oa/service/chapel)
+"qL" = (
+/mob/living/simple_animal/hostile/retaliate/rat,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/undercity)
 "qM" = (
 /obj/machinery/light{
 	dir = 4;
@@ -4157,6 +4181,12 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/caves/undercity)
+"ru" = (
+/mob/living/simple_animal/hostile/mining_borg/thothbot{
+	health = 400
+	},
+/turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/caves/undercity)
 "rv" = (
 /obj/structure/table/steel,
@@ -4615,6 +4645,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "tv" = (
 /obj/effect/floor_decal/turf/plating,
+/mob/living/simple_animal/mouse/gray,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "ty" = (
@@ -5069,6 +5100,7 @@
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
 "vq" = (
+/mob/living/simple_animal/hostile/syndicate/ranged,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -8027,6 +8059,7 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/lightlasgun,
 /obj/random/loot/lightlasgun,
+/obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "HO" = (
@@ -8320,6 +8353,10 @@
 	maxhealth = 1500;
 	name = "Heavy Turret"
 	},
+/obj/item/pyre/self_lit{
+	invisibility = 100;
+	name = "Invisible Light"
+	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
 "Ja" = (
@@ -8395,6 +8432,10 @@
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/heavystubber,
+/obj/random/loot/heavystubber,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
+/obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
@@ -8818,6 +8859,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"Lf" = (
+/mob/living/simple_animal/hostile/mining_borg/thothbot{
+	health = 400
+	},
+/turf/simulated/wall/ancient{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "Lj" = (
 /obj/structure/table/rack/dark,
 /obj/item/storage/box/handcuffs,
@@ -8829,6 +8878,7 @@
 "Lm" = (
 /obj/structure/table/steel_reinforced,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/guardarmor,
 /obj/random/loot/guardarmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -9305,6 +9355,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
+"Nf" = (
+/obj/effect/floor_decal/turf/basalt0,
+/mob/living/simple_animal/hostile/smalldemon/fleshbeast,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/undercity)
 "Ng" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -10097,6 +10152,12 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
+"Qy" = (
+/obj/effect/water/bottom,
+/obj/effect/water/top,
+/mob/living/simple_animal/hostile/retaliate/rat,
+/turf/simulated/floor/dirty/indestructable/lightless,
+/area/cadiaoutpost/oa/caves/undercity)
 "QB" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
 	name = "rng rat"
@@ -10254,6 +10315,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"Rx" = (
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "Rz" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -10904,6 +10971,7 @@
 	color = "grey";
 	name = "ancient door"
 	},
+/mob/living/simple_animal/hostile/syndicate/ranged,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -11042,10 +11110,24 @@
 /obj/item/clothing/head/helmet/hard_had,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
+"UO" = (
+/mob/living/simple_animal/hostile/mining_borg/buff{
+	health = 800
+	},
+/turf/simulated/wall/ancient{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "UP" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
 	},
+/obj/item/cell/lasgun,
+/obj/item/cell/lasgun,
+/obj/item/cell/lasgun,
+/obj/item/cell/lasgun,
+/obj/item/cell/lasgun,
+/obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
@@ -11264,6 +11346,13 @@
 	req_access = list()
 	},
 /obj/effect/landmark/animal/bubblingmass1,
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -11439,6 +11528,7 @@
 "WD" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
 /turf/simulated/floor/tiled/dark,
@@ -11861,6 +11951,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves)
+"Yy" = (
+/mob/living/simple_animal/hostile/retaliate/rat,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/caves/undercity)
 "YB" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -19810,7 +19904,7 @@ cW
 VA
 VA
 VA
-zb
+Rx
 zb
 Qb
 zb
@@ -22114,7 +22208,7 @@ zo
 zo
 zo
 zo
-cQ
+ci
 cQ
 zo
 SI
@@ -27565,7 +27659,7 @@ yA
 yA
 vf
 pW
-vz
+Nf
 vz
 vz
 vz
@@ -29858,7 +29952,7 @@ zo
 zb
 zb
 zb
-zo
+DQ
 zb
 zb
 zb
@@ -37378,7 +37472,7 @@ PI
 PI
 PI
 dm
-iD
+my
 aY
 ye
 dm
@@ -43713,7 +43807,7 @@ yr
 yr
 yr
 yr
-yr
+UO
 yr
 yr
 yr
@@ -43746,7 +43840,7 @@ yA
 yA
 yA
 Iy
-HX
+Yy
 HX
 LG
 Cj
@@ -44775,7 +44869,7 @@ Iy
 oU
 CB
 HX
-HX
+Yy
 CR
 HX
 Iy
@@ -45034,7 +45128,7 @@ Iy
 HX
 HX
 HX
-HX
+Yy
 Iy
 PI
 PI
@@ -45245,13 +45339,13 @@ oU
 Iy
 Iy
 Iy
-Iy
+ru
 Iy
 Iy
 Iy
 fQ
 fQ
-yr
+Lf
 oU
 oU
 yr
@@ -47343,7 +47437,7 @@ PI
 PI
 yA
 yA
-QG
+qL
 vf
 vf
 vf
@@ -49397,7 +49491,7 @@ vf
 bX
 bX
 TY
-bX
+Qy
 bX
 bX
 bX
@@ -55489,7 +55583,7 @@ LZ
 bn
 KB
 gt
-uF
+fL
 YS
 uF
 No
@@ -56522,7 +56616,7 @@ YS
 uF
 uF
 gt
-uF
+fL
 uF
 uF
 uF
@@ -58063,7 +58157,7 @@ AE
 uF
 uF
 uF
-uF
+fL
 uF
 uF
 YS
@@ -59354,7 +59448,7 @@ YS
 YS
 uF
 uF
-uF
+fL
 uF
 uF
 PI

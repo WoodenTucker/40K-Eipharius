@@ -1019,6 +1019,15 @@
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"di" = (
+/mob/living/simple_animal/hostile/shafra{
+	health = 380;
+	melee_damage_upper = 40;
+	mob_size = 25;
+	name = "The Beast"
+	},
+/turf/simulated/floor/asteroid/air,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "dj" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/sink{
@@ -10062,7 +10071,7 @@ bP
 cx
 lU
 cU
-cU
+di
 cU
 cU
 lU
