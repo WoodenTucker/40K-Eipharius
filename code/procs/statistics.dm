@@ -151,14 +151,25 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 	if(!H.key || !H.mind)
 		return
 
-	var/sqlckey = sanitizeSQL(H.ckey)
 	var/sqlplayed = sanitizeSQL(round(H.time_alive/60),1)
 
 	establish_db_connection()
 	if(!dbcon.IsConnected())
-		log_game("SQL ERROR during played time reporting. Failed to connect.")
+		return
+	log_game("SQL ERROR during played time reporting. Failed to connect.")
+	var/sql_ckey = sql_sanitize_text(H.ckey)
+
+	var/DBQuery/query = dbcon.NewQuery("SELECT ckey FROM playtime_history WHERE ckey = '[sql_ckey]'")
+	query.Execute()
+	var/sql_id = 0
+	while(query.NextRow())
+		sql_id = query.item[1]
+		break
+
+	if(sql_id)
+		var/DBQuery/timePlayedQueryUpdate = dbcon.NewQuery("UPDATE playtime_history SET DATE = Now(), time_living = time_living + [sqlplayed] WHERE ckey = '[sql_id]'")
+		timePlayedQueryUpdate.Execute()
 	else
-		var/DBQuery/timePlayedQuery = dbcon.NewQuery("INSERT INTO playtime_history (ckey, date, time_living) VALUES ([sqlckey], Now(), [sqlplayed]) ON DUPLICATE KEY UPDATE time_living=time_living + VALUES(time_living)")
-		if(!timePlayedQuery.Execute())
-			var/err = timePlayedQuery.ErrorMsg()
-			log_game("SQL ERROR during time played reporting. Error : \[[err]\]\n")
+		//New player!! Need to insert all the stuff
+		var/DBQuery/query_insert = dbcon.NewQuery("INSERT INTO playtime_history (ckey, DATE, time_living) VALUES ('[sql_ckey]', Now(), [sqlplayed])")
+		query_insert.Execute()
