@@ -161,12 +161,12 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 
 	var/DBQuery/query = dbcon.NewQuery("SELECT ckey FROM playtime_history WHERE ckey = '[sql_ckey]'")
 	query.Execute()
-	var/sql_id
+	var/sql_id = null
 	while(query.NextRow())
-		sql_id = query.item[1]
+		sql_id = query.item[0]
 		break
 
-	if(sql_id)
+	if(sql_id != null || sql_id != "")
 		var/DBQuery/timePlayedQueryUpdate = dbcon.NewQuery("UPDATE playtime_history SET DATE = Now(), time_living = time_living + [sqlplayed] WHERE ckey = '[sql_id]'")
 		timePlayedQueryUpdate.Execute()
 	else
