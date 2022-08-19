@@ -158,15 +158,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 	if(!dbcon.IsConnected())
 		log_game("SQL ERROR during played time reporting. Failed to connect.")
 	else
-		var/DBQuery/timePlayedQuery = dbcon.NewQuery({"
-			INSERT INTO playtime_history (ckey, date, time_living)
-			VALUES (:ckey, CURDATE(), :addedliving)
-			ON DUPLICATE KEY UPDATE time_living=time_living + VALUES(time_living)"},
-			list(
-			"ckey" = sqlckey,
-			"addedliving" = sqlplayed,
-			)
-		)
+		var/DBQuery/timePlayedQuery = dbcon.NewQuery("INSERT INTO playtime_history (ckey, date, time_living) VALUES ([sqlckey], Now(), [sqlplayed]) ON DUPLICATE KEY UPDATE time_living=time_living + VALUES(time_living)")
 		if(!timePlayedQuery.Execute())
 			var/err = timePlayedQuery.ErrorMsg()
 			log_game("SQL ERROR during time played reporting. Error : \[[err]\]\n")
