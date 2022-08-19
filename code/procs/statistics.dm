@@ -161,7 +161,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 
 	var/DBQuery/query = dbcon.NewQuery("SELECT ckey FROM playtime_history WHERE ckey = '[sql_ckey]'")
 	query.Execute()
-	var/sql_id = 0
+	var/sql_id
 	while(query.NextRow())
 		sql_id = query.item[1]
 		break
