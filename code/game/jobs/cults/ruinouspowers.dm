@@ -126,6 +126,8 @@
 
 /mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
 	if (client)
+		if(mind.special_role != "Khorne Cultist" || mind.special_role != "Tyranid" || mind.special_role != "Slaanesh Cultist" || mind.special_role != "Mercenary" || mind.special_role != "Nurgle Cultist" || mind.special_role != "Tzeentch Cultist")
+			return FALSE
 		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
 			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist" && cultist.cult_favor > 0) //rage check very important to not show everyone
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "khorne")
@@ -142,7 +144,7 @@
 			if(cultist.mind && cultist.mind.special_role == "Mercenary") //unrelated to the above, its for merc hiring.
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "merc")
 				client.images += I
-			if(cultist.mind && cultist.mind.special_role == "Tyranid" && cult_favor >= 1) //genestealer cult/tyranid converts
+			if(cultist.mind && cultist.mind.special_role == "Tyranid") //genestealer cult/tyranid converts
 				var/I = image('icons/mob/chaoshud.dmi', loc = cultist, icon_state = "genestealer")
 				client.images += I
 	return
