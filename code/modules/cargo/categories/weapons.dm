@@ -276,12 +276,12 @@
 	cost = 5
 	item_path = /obj/item/ammo_magazine/a357
 
-/datum/cargo_entry/weapon/revolverammo
+/datum/cargo_entry/weapon/revolverammo2
 	name = ".44 Speedloader"
 	cost = 5
 	item_path = /obj/item/ammo_magazine/c44
 
-/datum/cargo_entry/weapon/revolverammo
+/datum/cargo_entry/weapon/revolverammo3
 	name = ".50 Speedloader"
 	cost = 5
 	item_path = /obj/item/ammo_magazine/c50
