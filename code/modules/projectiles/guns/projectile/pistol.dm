@@ -275,7 +275,7 @@
 		/obj/item/ammo_casing/shotgun/pellet    = "12 gauge",
 		/obj/item/ammo_casing/shotgun/pellet    = "12 gauge",
 		/obj/item/ammo_casing/shotgun/beanbag   = "12 gauge",
-		/obj/item/ammo_casing/shotgun/stunshell = "12 gauge",
+		/obj/item/ammo_casing/shotgun/shell = "12 gauge",
 		/obj/item/ammo_casing/shotgun/flash     = "12 gauge",
 		/obj/item/ammo_casing/a762              = "7.62mm",
 		/obj/item/ammo_casing/a556              = "5.56mm"
@@ -348,7 +348,7 @@
 
 /obj/item/gun/projectile/ork/slugga
 	name = "slugga"
-	desc = "A hard hitting ork pistol made from scrap and trash. It uses .75 scrap bullets."
+	desc = "Da classic 'ard 'itting pistal of da slugga boyz. For boyz who wantz to git in noice and klose with der choppa afta! Load'd wid da .75 caliba boolets innit."
 	magazine_type = /obj/item/ammo_magazine/ork/slugga
 	allowed_magazines = /obj/item/ammo_magazine/ork/slugga
 	icon_state = "slugga"
@@ -384,6 +384,29 @@
 		icon_state = "bpistol-10"
 	else
 		icon_state = "bpistol-10-e"
+
+/obj/item/gun/projectile/bolter_pistol/gold
+	name = "Gold Bolt Pistol"
+	desc = "A Gold Bolt Pistol. Probably meant to be in the Rogue Trader's armory. What's it doing here?"
+	icon_state = "gpistol"
+	item_state = "gpistol"
+	force = 10
+	caliber = ".75"
+	accuracy = -7
+	fire_delay = 3
+	move_delay = 5.0 // make it shit and mostly ornamental
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
+	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	sales_price = 110
+
+/obj/item/gun/projectile/bolter_pistol/gold/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "gpistol-10"
+	else
+		icon_state = "gpistol-e"
 
 /obj/item/gun/projectile/bolter_pistol/inquis
 	name = "Drusian Pattern Service Bolt Pistol"

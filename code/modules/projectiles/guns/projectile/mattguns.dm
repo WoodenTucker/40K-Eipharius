@@ -108,7 +108,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/galvrifle
 	name = "Galvonic Rifle"
-	desc = "A rifle from the Skitarii legions of the Adeptus Mechanicus. It may look primitive, compared to energy weapons and the like, but the bullets have certainly kept up with modern technological breakthroughs. Uses .338"
+	desc = "A rifle from the Skitarii legions of the Adeptus Mechanicus. It may look primitive, compared to energy weapons and the like, but the bullets have certainly kept up with modern technological breakthroughs. Uses .338 lapua (DO NOT ATTACH SCOPE, BUGGED AF!)"
 	icon_state = "galvrifle"
 	item_state = "galvrifle"
 	empty_icon = "galvrifle-e"
@@ -120,7 +120,7 @@
 	accuracy = -2.0
 	one_hand_penalty = 20 // big rifle
 	fire_delay = 12
-
+	sales_price = 55 //adamantium
 
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
@@ -905,7 +905,7 @@
 	burst = 3
 	fire_delay = 3.4
 	one_hand_penalty = 14 //by the omnissiah you MUST hold the machine spirit properly
-
+	sales_price = 40
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
@@ -1057,6 +1057,7 @@
 	icon_state = "1kbolter"
 	loaded_icon = "1kbolter-30"
 	unloaded_icon = "1kbolter-e"
+	accuracy = -2.5
 /obj/item/gun/projectile/lockebolter/infernobolter/update_icon()
 	..()
 	if(ammo_magazine)
@@ -1177,7 +1178,7 @@
 
 /obj/item/gun/projectile/ork/automatic/shoota
 	name = "shoota"
-	desc = "A kinectic, automatic ballistic weapon with low efficiency but does a lot of noise and damage when luck is on your side."
+	desc = "A tree borst shoota. Da mekboyz even added dem coolin holes fer de barrel for ya, be grateful ya git! Load'd wid da .75 caliba boolets innit."
 	icon_state = "shoota"
 	item_state = "shoota"
 	w_class = ITEM_SIZE_LARGE
@@ -1193,7 +1194,8 @@
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
 	gun_type = GUN_AUTOMATIC
-	fire_delay = 2
+	fire_delay = 3
+	burst = 3
 	automatic = 0.75
 	firemodes = list()
 	sales_price = 10

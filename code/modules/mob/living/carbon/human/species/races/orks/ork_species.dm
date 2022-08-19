@@ -13,7 +13,7 @@
 	mob_size = MOB_LARGE
 	strength = STR_HIGH
 	sexybits_location = BP_GROIN
-	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP|SPECIES_FLAG_NO_MINOR_CUT
+	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
 	base_auras = list(
 		/obj/aura/regenerating/human/astartes
 		)
@@ -72,9 +72,10 @@
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/ork)
 	outfit.equip(src)
 
+	/*
 	hand = 0//Make sure one of their hands is active.
 	put_in_hands(new /obj/item/gun/projectile/ork/automatic/shoota)//Give them a weapon.
 	src.isburied = 1
-
+	*/ // don't want free shoota no more.
 /mob/living/carbon/human //the most cursed line in all of this code
 	var/new_orkz = SPECIES_ORK

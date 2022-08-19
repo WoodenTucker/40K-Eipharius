@@ -408,7 +408,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 		list(mode_name="fuller automatic", burst=3, fire_delay=5.1,    one_hand_penalty=7, burst_accuracy=list(-2,-3,-4), dispersion=list(0.2, 0.3, 0.3), automatic = 0.7),
 		)
-
+	sales_price = 120 // make it a bit worse than hotshot
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
@@ -448,6 +448,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="automatic", 	burst=3, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 	)
+	sales_price = 100
 
 
 /obj/item/gun/energy/las/laspistol/defender
@@ -627,7 +628,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 12 //heavy af fam
 	accuracy = -4
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 14 // something something its recharging
+	fire_delay = 15 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -646,10 +647,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 10
-	one_hand_penalty = 6 //change later?
+	one_hand_penalty = 10 //change later?
 	accuracy = -5
 	move_delay = 3 //it a pistol, but giga cool plasma
-	fire_delay = 9 // unsure if decent. dont want fast fire rate
+	fire_delay = 11 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -688,10 +689,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "chaosppistol"
 	item_state = "chaosppistol"
 	force = 10
-	one_hand_penalty = 2 //change later?
+	one_hand_penalty = 10 //change later?
 	accuracy = -6
 	move_delay = 3 //it a pistol
-	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	fire_delay = 10 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -713,7 +714,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 10 //until plasma is better balanced, wield this fancy one.
 	accuracy = -4
 	move_delay = 3
-	fire_delay = 7 // want better than others. its adamantium
+	fire_delay = 10
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -721,3 +722,4 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 200
 	wielded_item_state = "pulse_pistol"
+	sales_price = 79
