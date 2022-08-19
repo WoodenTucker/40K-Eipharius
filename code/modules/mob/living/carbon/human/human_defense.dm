@@ -30,26 +30,27 @@ meteor_act
 
 	var/obj/item/organ/external/organ = get_organ(def_zone)
 	var/armor = getarmor_organ(organ, P.check_armour)
-	var/penetrating_damage = ((P.damage + P.armor_penetration) * P.penetration_modifier) - armor
-
+	//var/penetrating_damage = ((P.damage + P.armor_penetration) * P.penetration_modifier) - armor // Name Damage
+	var/calculated_damage = (P.damage_type == BRUTE || P.damage_type == BURN) ? ((P.damage + P.armor_penetration)) - armor : P.damage - armor
+	if(calculated_damage <= 0 && !prob(25))
+		visible_message("<span class='danger'>[src]'s armor deflects the [P].</span>")
+		return FALSE
 	//Organ damage
-	if(organ.internal_organs.len && prob(35 + max(penetrating_damage, -12.5)))
-		var/damage_amt = min((P.damage * P.penetration_modifier), penetrating_damage) //So we don't factor in armor_penetration as additional damage
-		if(damage_amt > 0)
+	if(organ.internal_organs.len && prob(max((calculated_damage / 5 + 15), 15))) // More damage = higher chance of damaging an organ
+		if(calculated_damage > 0)
 		// Damage an internal organ
 			var/list/victims = list()
 			var/list/possible_victims = shuffle(organ.internal_organs.Copy())
 			for(var/obj/item/organ/internal/I in possible_victims)
-				if(I.damage < I.max_damage && (prob((I.relative_size) * (1 / max(1, victims.len)))))
+				if(I.damage < I.max_damage && (prob((I.relative_size) * (max(1, victims.len)))))
 					victims += I
 			if(victims.len)
 				for(var/obj/item/organ/victim in victims)
-					damage_amt /= 2
-					victim.take_damage(damage_amt)
+					victim.take_damage(max(calculated_damage, victim.max_damage))
 
 
 	//Embed or sever artery
-	if(P.can_embed() && !(species.species_flags & SPECIES_FLAG_NO_EMBED) && prob(22.5 + max(penetrating_damage, -10)) && !(prob(50) && (organ.sever_artery())))
+	if(P.can_embed() && !(species.species_flags & SPECIES_FLAG_NO_EMBED) && prob(22.5 + max(calculated_damage, -10)) && !(prob(50) && (organ.sever_artery())))
 		var/obj/item/material/shard/shrapnel/SP = new()
 		SP.SetName((P.name != "shrapnel")? "[P.name] shrapnel" : "shrapnel")
 		SP.desc = "[SP.desc] It looks like it was fired from [P.shot_from]."
