@@ -171,6 +171,7 @@
 	icon_state = "lasbolt"
 	damage = 60
 	armor_penetration = 25
+	accuracy = 2
 
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
 	name = "lasbolt"

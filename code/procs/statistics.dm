@@ -144,3 +144,29 @@ proc/sql_commit_feedback()
 			if(!query.Execute())
 				var/err = query.ErrorMsg()
 				log_game("SQL ERROR during death reporting. Error : \[[err]\]\n")
+
+proc/sql_report_played_time(var/mob/living/carbon/human/H)
+	if(!H)
+		return
+	if(!H.key || !H.mind)
+		return
+
+	var/sqlckey = sanitizeSQL(H.ckey)
+	var/sqlplayed = sanitizeSQL(round(H.time_alive/60),1)
+
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		log_game("SQL ERROR during played time reporting. Failed to connect.")
+	else
+		var/DBQuery/timePlayedQuery = dbcon.NewQuery({"
+			INSERT INTO playtime_history (ckey, date, time_living)
+			VALUES (:ckey, CURDATE(), :addedliving)
+			ON DUPLICATE KEY UPDATE time_living=time_living + VALUES(time_living)"},
+			list(
+			"ckey" = sqlckey,
+			"addedliving" = sqlplayed,
+			)
+		)
+		if(!timePlayedQuery.Execute())
+			var/err = timePlayedQuery.ErrorMsg()
+			log_game("SQL ERROR during time played reporting. Error : \[[err]\]\n")

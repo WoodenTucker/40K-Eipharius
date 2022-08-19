@@ -267,6 +267,7 @@
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1.25
 	penetrating = 1
+	accuracy = 2
 
 /obj/item/projectile/bullet/rifle/a145/apds
 	damage = 55
@@ -485,13 +486,13 @@
 	penetration_modifier = 1.4
 
 
-	
+
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 160
 	damage_type = BURN
-	penetration_modifier = 3 
+	penetration_modifier = 3
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'

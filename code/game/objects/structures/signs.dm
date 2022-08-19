@@ -309,6 +309,20 @@
 	name = "Stained Glass"
 	icon_state = "stglass5"
 
+// NEW DECALS
+
+/obj/structure/sign/writers
+	name = "An old type writer"
+	icon_state = "writers"
+
+/obj/structure/sign/mirror
+	name = "A mirror"
+	icon_state = "mirror"
+
+/obj/structure/sign/mailbox0
+	name = "Box thing"
+	icon_state = "mailbox0"
+
 /obj/structure/sign/wanted
 	icon_state = "wantedboard"
 

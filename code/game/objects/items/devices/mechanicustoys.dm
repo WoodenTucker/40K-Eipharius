@@ -132,9 +132,10 @@
 	icon_state = "Whistle_InHand_R"
 	item_state = "Whistle_InHand_R"
 	wielded_icon = "Whistle_InHand_R_W"
-	force = 40
-	block_chance = 40
+	force = 45
+	block_chance = 65
 	sharp = TRUE
+	edge = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	weapon_speed_delay = 7

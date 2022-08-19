@@ -19,6 +19,8 @@
 
 // Takes care of organ related updates, such as broken and missing limbs
 /mob/living/carbon/human/proc/handle_organs()
+	if(client && src.key)
+		src.time_alive++ //For sql logging of playtime
 
 	var/force_process = recheck_bad_external_organs()
 

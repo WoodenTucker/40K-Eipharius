@@ -89,17 +89,17 @@ proc/getsensorlevel(A)
 
 //The base miss chance for the different defence zones
 var/list/global/base_miss_chance = list(
-	BP_HEAD = 50,
-	BP_CHEST = 10,
-	BP_GROIN = 20,
-	BP_L_LEG = 50,
-	BP_R_LEG = 50,
-	BP_L_ARM = 50,
-	BP_R_ARM = 50,
-	BP_L_HAND = 50,
-	BP_R_HAND = 50,
-	BP_L_FOOT = 50,
-	BP_R_FOOT = 50,
+	BP_HEAD = 15,
+	BP_CHEST = 5,
+	BP_GROIN = 10,
+	BP_L_LEG = 15,
+	BP_R_LEG = 15,
+	BP_L_ARM = 15,
+	BP_R_ARM = 15,
+	BP_L_HAND = 15,
+	BP_R_HAND = 15,
+	BP_L_FOOT = 15,
+	BP_R_FOOT = 15,
 )
 
 //Used to weight organs when an organ is hit randomly (i.e. not a directed, aimed attack).
@@ -115,7 +115,7 @@ var/list/global/organ_rel_size = list(
 	BP_L_HAND = 50,
 	BP_R_HAND = 50,
 	BP_L_FOOT = 50,
-	BP_R_FOOT = 10,
+	BP_R_FOOT = 50,
 )
 
 /proc/check_zone(zone)
@@ -163,28 +163,24 @@ var/list/global/organ_rel_size = list(
 	zone = check_zone(zone)
 
 	if(!ranged_attack)
-		// you cannot miss if your target is restrained
-		if(target.buckled)
+		// you cannot miss if your target is restrained or resting
+		if(target.buckled || target.lying)
 			return zone
 		// if your target is being grabbed aggressively by someone you cannot miss either
 		for(var/obj/item/grab/G in target.grabbed_by)
 			if(G.stop_move())
 				return zone
 
-	if(target.lying)//If they're lying, much better chance to hit them.
-		miss_chance_mod -= 50
-	var/miss_chance = 10
+	var/miss_chance = 0
 	if (zone in base_miss_chance)
 		miss_chance = base_miss_chance[zone]
-	miss_chance = max(miss_chance + miss_chance_mod, 0)
-	if(prob(miss_chance))
-		if(prob(50))//25% chance you miss entirely.
-			return null
-		else if(prob(25))//Then another throw to see if you hit something else.
-			return ran_zone(zone, 5)
-		else
-			return pick(base_miss_chance)//Then whatever the fuck this does.
-	return zone
+	miss_chance = clamp(miss_chance_mod - miss_chance, 25, 95) // Always a chance of missing
+	if(prob(miss_chance)) // Use distance for below. If very close it should almost always hit, even if not the right thing.
+		return zone
+	else if(prob(25))
+		return ran_zone(zone, 5)
+
+	return null
 
 
 /proc/stars(n, pr)

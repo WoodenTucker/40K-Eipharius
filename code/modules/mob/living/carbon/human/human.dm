@@ -9,9 +9,7 @@
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
 	var/stealth = FALSE
 	var/scooldown = FALSE
-	var/rage = 0 //khorne favor
-	var/lust = 0 //slaanesh favor
-	var/decay = 0 //nurgle favor
+	var/cult_favor = 0
 	var/intrigue = 0 //tzeentch favor
 	var/isdrawing = 0 //used to stop rune spam
 	var/inmenu = 0 //stop menu spammers
@@ -135,7 +133,7 @@
 			if(mind.changeling)
 				stat("Chemical Storage", mind.changeling.chem_charges)
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
-			if(src.lust >=9)
+			if(cult_favor >= 9 && mind.special_role == "Slaanesh Cultist")
 				stat("Suffering:", "[src.slanpain]")
 
 

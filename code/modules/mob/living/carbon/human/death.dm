@@ -66,6 +66,7 @@
 
 	if(ticker && ticker.mode)
 		sql_report_death(src)
+		sql_report_played_time(src)
 		ticker.mode.check_win()
 
 	. = ..(gibbed,"no message")

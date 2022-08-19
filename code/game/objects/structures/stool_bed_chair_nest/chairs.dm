@@ -257,3 +257,17 @@
 	desc = "A strange chair, not from around here."
 	base_icon = "bogchair"
 	icon_state = "bogchair_preview"
+
+/obj/structure/bed/chair/cage
+	name = "cage"
+	desc = "A horrible cramped cage."
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	base_icon = "cage"
+	icon_state = "cage"
+
+/obj/structure/bed/chair/altar
+	name = "altar"
+	desc = "A disgusting stone altar."
+	icon = 'icons/obj/structures/miscobjs.dmi'
+	base_icon = "altar_empty"
+	icon_state = "altar_empty"
