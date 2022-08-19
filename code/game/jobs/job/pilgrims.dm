@@ -204,6 +204,7 @@ Pilgrim Fate System
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(13,15), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
@@ -213,7 +214,7 @@ Pilgrim Fate System
 		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
-/datum/job/gangboy  
+/datum/job/gangboy
 	title = "Ganger"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
@@ -232,6 +233,7 @@ Pilgrim Fate System
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
