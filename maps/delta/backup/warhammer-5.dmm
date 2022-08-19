@@ -6,10 +6,14 @@
 	},
 /area/cadiaoutpost/oa/krootship)
 "ab" = (
-/obj/structure/torchwall{
-	pixel_y = 16
+/obj/machinery/door/airlock/arbiter{
+	req_access = list();
+	name = "Kroot Warsphere"
 	},
-/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
 /area/cadiaoutpost/oa/krootship)
 "ac" = (
 /obj/structure/bed/krootbed,
@@ -21,44 +25,30 @@
 /area/cadiaoutpost/oa/krootship)
 "ae" = (
 /obj/effect/floor_decal/turf/metal,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "af" = (
-/obj/effect/decal/cleanable/cobweb,
-/turf/simulated/floor/plating,
+/turf/simulated/shuttle/wall{
+	icon_state = "wall3";
+	dir = 6;
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/krootship)
 "ag" = (
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
+/obj/item/reagent_containers/food/snacks/meatkabob,
+/obj/item/reagent_containers/food/snacks/meatkabob,
+/obj/item/reagent_containers/food/snacks/meatkabob,
+/obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "ah" = (
-/obj/structure/table/rack/shelf,
-/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,
-/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,
-/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet,
+/obj/structure/statue/tanningrack,
+/obj/item/shovel,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "ai" = (
 /obj/effect/decal/cleanable/liquid_fuel,
 /obj/structure/table/rack/shelf,
-/obj/item/grenade/frag/warfare,
 /obj/item/grenade/frag/warfare,
 /obj/item/grenade/frag/warfare,
 /obj/item/grenade/frag/warfare,
@@ -97,12 +87,9 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "am" = (
-/obj/structure/shuttle/engine/propulsion{
-	color = "grey";
-	dir = 4;
-	icon_state = "propulsion"
+/turf/simulated/shuttle/wall/corner/dark/sw{
+	color = "grey"
 	},
-/turf/space,
 /area/cadiaoutpost/oa/krootship)
 "an" = (
 /obj/effect/landmark{
@@ -112,14 +99,6 @@
 /area/cadiaoutpost/oa/krootship)
 "ao" = (
 /obj/effect/floor_decal/turf/metal/two,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "rwindow"
-	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ap" = (
@@ -131,27 +110,31 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "aq" = (
-/obj/machinery/door/airlock/arbiter{
-	req_access = list()
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
 	},
-/turf/simulated/floor/new_wood,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "ar" = (
-/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/kitchenspike,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/item/reagent_containers/food/snacks/meat,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "as" = (
-/obj/structure/table/rack/dark,
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "at" = (
-/obj/structure/closet/cabinet,
-/obj/random/loot/heavymelee,
-/obj/random/loot/heavymelee,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
+	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "au" = (
@@ -183,12 +166,14 @@
 /turf/space,
 /area/space)
 "ay" = (
-/obj/machinery/mech_recharger,
-/obj/effect/decal/mecha_wreckage/tau{
-	anchored = 1;
-	desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions.";
-	name = "XV8 Crisis battlesuit wreckage"
-	},
+/obj/structure/table/rack,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "az" = (
@@ -200,6 +185,8 @@
 /obj/item/stack/thrones3/ten,
 /obj/item/stack/thrones3/ten,
 /obj/item/stack/thrones3/ten,
+/obj/random/loot/randomitemcaves,
+/obj/random/loot/randomitemcaves,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aA" = (
@@ -230,23 +217,25 @@
 	},
 /area/centcom)
 "aI" = (
-/obj/machinery/door/airlock/arbiter{
-	req_access = list()
-	},
-/turf/simulated/floor/wood,
+/obj/effect/wingrille_spawn/reinforced/crescent,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aJ" = (
-/obj/structure/torchwall{
-	pixel_y = 16
+/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle,
+/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle,
+/obj/structure/table/rack/shelf,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aK" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aN" = (
-/obj/effect/wingrille_spawn/reinforced/crescent,
-/turf/space,
+/turf/simulated/shuttle/wall/corner/blockwhite/nw,
 /area/cadiaoutpost/oa/tauship)
 "aO" = (
 /obj/machinery/light{
@@ -256,21 +245,20 @@
 /turf/simulated/floor/wood,
 /area/centcom)
 "aT" = (
-/obj/structure/statue/tanningrack,
-/obj/item/shovel,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/shuttle/wall/corner/dark/ne{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/krootship)
 "aU" = (
-/obj/structure/kitchenspike,
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/light/small,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aV" = (
-/obj/structure/flora/ausbushes/stalkybush,
 /obj/machinery/cooker/oven,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "aW" = (
-/obj/item/device/radio/beacon,
+/obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aX" = (
@@ -278,13 +266,26 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "aY" = (
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
 	},
-/obj/structure/railing,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
+"aZ" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/melee/telebaton,
+/obj/item/melee/telebaton,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/obj/item/handcuffs/cable/white,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ba" = (
 /obj/machinery/light{
 	dir = 1;
@@ -312,15 +313,13 @@
 	},
 /area/centcom)
 "bh" = (
-/obj/machinery/computer/teleporter,
+/obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "bi" = (
-/obj/structure/railing{
-	dir = 4;
-	icon_state = "railing0"
+/turf/simulated/shuttle/wall/corner/dark/nw{
+	color = "grey"
 	},
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "bj" = (
 /obj/machinery/computer/teleporter,
@@ -346,11 +345,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "bu" = (
-/obj/structure/railing{
-	dir = 4;
-	icon_state = "railing0"
+/obj/machinery/door/airlock/arbiter{
+	req_access = list();
+	name = "Kroot Bridge"
 	},
-/obj/structure/railing,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "bv" = (
@@ -377,17 +375,16 @@
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "bx" = (
-/obj/structure/railing{
-	dir = 4;
-	icon_state = "railing0"
-	},
-/turf/simulated/floor/plating,
+/obj/structure/table/steel,
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "bz" = (
-/obj/structure/bed/chair{
-	dir = 4
+/obj/machinery/door/airlock/arbiter{
+	req_access = list();
+	name = "Kroot Warsphere"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
 "bB" = (
 /obj/structure/bed/chair{
@@ -428,7 +425,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bI" = (
-/obj/machinery/computer/exterminatus,
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/sign/double/planet/left{
 	desc = "A screen showing the planet from orbit. It would be a beautiful sight. The screen itself would be decorated in various holy markings.";
@@ -508,18 +504,15 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bR" = (
-/obj/structure/table/steel,
-/obj/item/gun/projectile/bolter_pistol,
-/obj/effect/floor_decal/turf/brick,
-/obj/random/loot/sidearms,
-/turf/simulated/floor/tiled/dark,
+/obj/effect/floor_decal/turf/plating,
+/obj/item/modular_computer/console/preset/command,
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bS" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
-/obj/random/loot/heavystubber,
-/obj/random/loot/heavystubber,
-/obj/random/loot/heavystubber,
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "bT" = (
@@ -547,11 +540,6 @@
 "bV" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/brick,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
-/obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
 /obj/random/loot/heavystubberammo,
@@ -666,20 +654,36 @@
 /obj/structure/flora/pottedplant/bamboo,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"ck" = (
-/obj/effect/floor_decal/turf/plating,
-/turf/simulated/floor/wood,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "cl" = (
 /obj/machinery/shower,
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
+/obj/item/clothing/glasses/night,
+/obj/item/clothing/head/inqhelm/stealth{
+	armor = list("melee"=35,"bullet"=50,"laser"=45,"energy"=20,"bomb"=30,"bio"=10,"rad"=10)
+	},
+/obj/item/clothing/head/inqhelm/rare{
+	armor = list("melee"=40,"bullet"=45,"laser"=45,"energy"=20,"bomb"=30,"bio"=10,"rad"=10)
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cm" = (
 /obj/structure/toilet,
 /obj/structure/curtain/open/privacy,
 /obj/effect/floor_decal/turf/plating,
+/obj/item/clothing/suit/armor/bulletproof/vest{
+	armor = list("melee"=50,"bullet"=65,"laser"=65,"energy"=10,"bomb"=25,"bio"=0,"rad"=0)
+	},
+/obj/item/clothing/gloves/thick,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
+/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cn" = (
@@ -695,12 +699,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cq" = (
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
-	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/plating,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(213)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cr" = (
@@ -716,10 +721,12 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ct" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	name = "Imperialis Door - Inquisitor's Bedchamber"
-	},
 /obj/effect/floor_decal/turf/plating,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Secure Door";
+	req_access = list(302)
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cu" = (
@@ -732,14 +739,11 @@
 /obj/effect/floor_decal/turf/brick,
 /obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
-/obj/random/loot/lightstubber,
-/obj/random/loot/lightstubber,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cw" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
-/obj/random/loot/lightlasgun,
 /obj/random/loot/lightlasgun,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -749,16 +753,15 @@
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /obj/effect/floor_decal/turf/brick,
+/obj/item/ammo_magazine/melta,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cy" = (
 /obj/structure/table/rack/dark,
-/obj/item/melee/chain/inqcs,
-/obj/item/melee/chain/inqcs,
-/obj/item/melee/chain/inqcs,
-/obj/item/melee/baton/loaded,
-/obj/item/melee/baton/loaded,
 /obj/effect/floor_decal/turf/brick,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cz" = (
@@ -772,13 +775,6 @@
 /obj/random/loot/lightstubberammo,
 /obj/random/loot/lightstubberammo,
 /obj/random/loot/lightstubberammo,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"cA" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/rack/dark,
-/obj/random/loot/sidearms,
-/obj/random/loot/sidearms,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cB" = (
@@ -814,9 +810,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cG" = (
-/obj/structure/railing{
+/obj/machinery/light/small{
 	dir = 1;
-	icon_state = "railing0"
+	icon_state = "bulb1"
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
@@ -831,58 +827,30 @@
 /obj/item/ammo_magazine/a357,
 /obj/item/ammo_magazine/a357,
 /obj/item/clothing/accessory/holster/waist,
-/obj/item/gun/projectile/lockebolter,
-/obj/item/clothing/glasses/chameleon,
-/obj/item/clothing/mask/chameleon,
 /obj/item/card/id/captains_spare{
 	desc = "The spare ID of the Inquisitor";
 	name = "Inquisitor";
 	registered_name = "Inquisitor"
 	},
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
+/obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/holster/waist,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cJ" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
-/obj/item/ammo_magazine/bolt_rifle_magazine/empty,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter,
-/obj/item/ammo_casing/bolter{
-	pixel_x = -4;
-	pixel_y = 5
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = -4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_y = -4
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_x = 3
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_y = 3
-	},
-/obj/item/ammo_casing/bolter{
-	pixel_y = 3
+/obj/item/ammo_magazine/bolt_rifle_magazine,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"cK" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/spline/plain,
+/obj/item/card/id/inquisition/principal_agent{
+	name = "Pilgrim"
 	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -924,7 +892,9 @@
 /obj/structure/table/marble{
 	color = "grey"
 	},
-/obj/item/modular_computer/console/preset/sysadmin,
+/obj/item/modular_computer/console/preset/sysadmin{
+	name = "Administratum Terminal"
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cQ" = (
@@ -1000,7 +970,6 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/obj/structure/closet/crate/ateopoine,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cZ" = (
@@ -1017,6 +986,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/crowbar,
 /obj/item/wrench,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "db" = (
@@ -1131,7 +1101,8 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1178,17 +1149,16 @@
 /turf/simulated/floor/asteroid/air,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dy" = (
-/obj/machinery/door/blast/grates/open{
-	dir = 4;
-	icon_state = "gshutter0";
-	id = "inqexec"
-	},
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
-	},
-/turf/simulated/floor/asteroid/air,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/clothing/glasses/thermal/syndi,
+/obj/item/clothing/glasses/thermal/syndi,
+/obj/item/clothing/glasses/thermal/syndi,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/hud/health,
+/obj/item/clothing/glasses/cadian,
+/obj/item/clothing/glasses/night,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dz" = (
 /obj/machinery/button/remote/blast_door/lever{
@@ -1257,23 +1227,16 @@
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dJ" = (
-/obj/machinery/door/airlock/highsecurity/imperiumdoor{
-	maxhealth = 900
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"dK" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/bed/roller,
+/obj/effect/floor_decal/turf/bloodbar,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dM" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
-/obj/item/defensive_barrier,
 /obj/structure/table/rack/dark,
+/obj/item/clothing/accessory/armguards/ballistic,
+/obj/item/clothing/accessory/armguards/riot,
+/obj/item/clothing/accessory/armguards/ablative,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dN" = (
@@ -1283,12 +1246,17 @@
 "dP" = (
 /obj/effect/floor_decal/turf/metal/five,
 /obj/structure/table/rack/dark,
+/obj/item/clothing/accessory/legguards/ablative,
+/obj/item/clothing/accessory/legguards/ballistic,
+/obj/item/clothing/accessory/legguards/riot,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dQ" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/landmark/start{
-	name = "Principal Agent"
+/obj/effect/floor_decal/turf/brick,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Secure Door";
+	req_access = list(302)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1299,6 +1267,10 @@
 	},
 /turf/simulated/floor/airless/lava,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"dW" = (
+/obj/structure/closet/crate/operations,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "dX" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/steel_reinforced,
@@ -1321,9 +1293,15 @@
 	dir = 5;
 	icon_state = "spline_plain"
 	},
-/obj/item/modular_computer/console/preset/command,
+/obj/item/modular_computer/console/preset/command{
+	name = "Command Terminal"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"en" = (
+/obj/machinery/light,
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "ep" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/button/remote/blast_door/id_scan{
@@ -1347,8 +1325,10 @@
 /obj/item/bedsheet/hos,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/landmark/start{
-	name = "Inquisitor"
+	name = "Imperial Inquisitor"
 	},
+/obj/item/clothing/mask/chameleon/voice,
+/obj/item/clothing/glasses/thermal/syndi,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "eF" = (
@@ -1382,6 +1362,11 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fe" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/item/reagent_containers/spray/cleaner,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "fk" = (
@@ -1432,6 +1417,16 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"fQ" = (
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
+	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "fR" = (
 /obj/machinery/computer/operating,
 /obj/effect/floor_decal/newcorner/teal/diagonal,
@@ -1486,7 +1481,8 @@
 "gs" = (
 /obj/structure/grille,
 /obj/structure/window_frame{
-	color = "grey"
+	color = "grey";
+	maxhealth = 5000
 	},
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1617,10 +1613,6 @@
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"he" = (
-/obj/effect/floor_decal/turf/bloodbar,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "hg" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -1647,11 +1639,9 @@
 /turf/simulated/floor/carpet/red,
 /area/centcom)
 "hy" = (
-/obj/machinery/light/spot{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/shuttle/yellow,
+/obj/machinery/mech_recharger,
+/obj/machinery/mech_recharger,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "hz" = (
 /obj/structure/table/woodentable,
@@ -1672,7 +1662,8 @@
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1683,6 +1674,17 @@
 "hF" = (
 /obj/effect/floor_decal/turf/metal/three,
 /turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"hN" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/rack/dark,
+/obj/random/loot/guardgear,
+/obj/item/handcuffs,
+/obj/item/handcuffs,
+/obj/random/loot/guardgear,
+/obj/item/storage/belt/medical/full,
+/obj/item/storage/belt/medical/full,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "hO" = (
 /obj/effect/wingrille_spawn/reinforced_phoron/full,
@@ -1810,15 +1812,6 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"iQ" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/modular_computer/console/preset/command,
-/obj/machinery/light/spot{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "iW" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -1903,10 +1896,10 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "jk" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/door/blast/id_door{
-	name = "EMERGENCY LOCKDOWN"
-	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/random/loot/randomarmor,
+/obj/random/loot/randomarmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "jl" = (
@@ -1956,7 +1949,7 @@
 	id = "arvusrampdoor";
 	pixel_x = -5;
 	pixel_y = 0;
-	req_access = list(202)
+	req_access = list(302)
 	},
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -1987,15 +1980,6 @@
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"jt" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/light/spot{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/machinery/computer/shuttle_control/ferry/inquisition,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "ju" = (
 /obj/structure/grille,
 /obj/structure/window_frame{
@@ -2010,6 +1994,9 @@
 "jv" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4
+	},
+/obj/machinery/light{
+	dir = 1
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2035,44 +2022,50 @@
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jA" = (
-/obj/effect/wingrille_spawn/reinforced/crescent,
-/turf/simulated/floor/shuttle/darkred,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/storage/box/cups,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jB" = (
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jC" = (
-/obj/structure/table/rack,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
+/obj/structure/table/rack/shelf,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jD" = (
 /obj/structure/table/rack,
 /obj/item/grenade/frag,
-/obj/item/device/personal_shield,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jE" = (
-/obj/structure/table/rack,
-/obj/item/shield/energy,
-/obj/item/ammo_box/flares/blue,
-/obj/item/reagent_containers/food/snacks/warfare/nim,
-/obj/item/reagent_containers/food/snacks/warfare/nim,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/obj/item/clothing/accessory/storage/webbing_large,
-/turf/simulated/floor/shuttle/darkred,
+/obj/machinery/door/airlock/gold/tau{
+	desc = "It closed, do not try to pass thought it.";
+	explosion_resistance = 1000;
+	hackProof = 1;
+	health = 3e+007;
+	heat_proof = 1;
+	locked = 1;
+	maxhealth = 3e+007;
+	name = "Bridge";
+	req_access = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
+	secured_wires = 1
+	},
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jF" = (
-/obj/structure/table/rack,
-/obj/item/storage/firstaid/adv,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
-/turf/simulated/floor/shuttle/darkred,
+/obj/structure/shuttle/engine/propulsion,
+/turf/space,
 /area/cadiaoutpost/oa/tauship)
 "jG" = (
 /obj/structure/railing{
@@ -2108,6 +2101,10 @@
 /area/cadiaoutpost/oa/tauship)
 "jL" = (
 /obj/machinery/papershredder,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jM" = (
@@ -2132,21 +2129,17 @@
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "jR" = (
-/obj/structure/table/rack,
-/obj/item/clothing/glasses/blacksun,
-/obj/item/clothing/glasses/blacksun,
-/obj/item/clothing/glasses/blacksun,
-/obj/item/clothing/glasses/hud/health,
-/turf/simulated/floor/shuttle/darkred,
+/turf/simulated/shuttle/wall/corner/blockwhite/ne,
 /area/cadiaoutpost/oa/tauship)
 "jS" = (
-/obj/structure/table/rack,
-/obj/item/gun/energy/pulse/ionrifle,
-/turf/simulated/floor/shuttle/darkred,
+/turf/simulated/shuttle/wall/corner/blockwhite/se,
 /area/cadiaoutpost/oa/tauship)
 "jT" = (
-/obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/floor/shuttle/white,
+/obj/structure/table/rack,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "jU" = (
 /obj/effect/floor_decal/newcorner/reinforced/corner{
@@ -2199,16 +2192,12 @@
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kb" = (
-/obj/machinery/light/spot,
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/storage/box/cups,
-/turf/simulated/floor/shuttle/white,
+/turf/simulated/shuttle/wall/corner/smoothwhite/nw,
 /area/cadiaoutpost/oa/tauship)
 "kc" = (
-/obj/machinery/light/spot,
-/turf/simulated/floor/shuttle/white,
+/obj/structure/table/rack/shelf,
+/obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kd" = (
 /obj/structure/toilet{
@@ -2217,13 +2206,25 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "ke" = (
-/obj/machinery/light/spot,
-/obj/structure/table/standard{
-	name = "plastic table frame"
+/obj/item/reagent_containers/food/snacks/warfare/nim,
+/obj/item/reagent_containers/food/snacks/warfare/nim,
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_y = -3;
+	pixel_x = 4
 	},
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/shuttle/white,
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 11
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 9;
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 5;
+	pixel_y = 2
+	},
+/obj/structure/table/rack,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kf" = (
 /obj/structure/window/reinforced{
@@ -2235,25 +2236,16 @@
 	},
 /area/centcom)
 "kg" = (
-/obj/machinery/door/airlock/gold/tau{
-	desc = "It closed, do not try to pass thought it.";
-	explosion_resistance = 1000;
-	hackProof = 1;
-	health = 3e+007;
-	heat_proof = 1;
-	locked = 1;
-	maxhealth = 3e+007;
-	name = "Closed Tau Airlock";
-	req_access = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
-	secured_wires = 1
-	},
+/obj/machinery/teleport/station,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kh" = (
-/obj/machinery/light/spot{
-	dir = 8;
-	icon_state = "tube1"
+/obj/effect/decal/mecha_wreckage/tau{
+	anchored = 1;
+	desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions.";
+	name = "XV8 Crisis battlesuit wreckage"
 	},
+/obj/machinery/mech_recharger,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "ki" = (
@@ -2264,15 +2256,18 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "kj" = (
-/obj/machinery/light/spot{
+/obj/structure/bed/chair/office/dark{
 	dir = 4;
-	icon_state = "tube1"
+	icon_state = "officechair_dark_preview"
 	},
-/turf/simulated/floor/shuttle/darkred,
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kk" = (
-/obj/structure/filingcabinet,
-/turf/simulated/floor/shuttle/black,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/adv,
+/obj/item/storage/firstaid/adv,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kl" = (
 /turf/simulated/floor/shuttle/black,
@@ -2288,30 +2283,30 @@
 	},
 /area/centcom)
 "kn" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
-	},
-/obj/machinery/light/spot{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/shuttle/black,
+/obj/structure/table/rack,
+/obj/item/gun/energy/pulse/ionrifle,
+/obj/item/gun/energy/pulse/ionrifle,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "ko" = (
-/obj/structure/filingcabinet/filingcabinet,
-/turf/simulated/floor/shuttle/black,
+/obj/structure/table/rack,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/obj/item/cell/pulserifle,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kp" = (
-/obj/structure/bed/padded,
-/obj/effect/landmark{
-	name = "taustart"
-	},
-/obj/item/bedsheet/hop,
-/turf/simulated/floor/shuttle/black,
+/obj/structure/filingcabinet,
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kq" = (
-/obj/machinery/door/airlock/gold/tau,
-/turf/simulated/floor/shuttle/black,
+/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kr" = (
 /obj/structure/bed/padded,
@@ -2322,14 +2317,13 @@
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "ks" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
+/obj/machinery/door/airlock/gold/tau{
+	name = "Battlesuit Facility"
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kt" = (
-/obj/effect/wingrille_spawn/reinforced/crescent,
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/shuttle/wall/corner/smoothwhite/se,
 /area/cadiaoutpost/oa/tauship)
 "ku" = (
 /obj/structure/bed/chair/comfy/black{
@@ -2346,59 +2340,45 @@
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "kw" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/modular_computer/laptop/preset/custom_loadout/advanced,
-/turf/simulated/floor/shuttle/black,
+/obj/structure/table/rack,
+/obj/item/gun/energy/pulse/pulserifle,
+/obj/item/gun/energy/pulse/pulserifle,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kx" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 8;
-	icon_state = "officechair_dark_preview"
+/obj/machinery/door/airlock/gold/tau{
+	name = "Il'Emaar class airlock"
 	},
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "ky" = (
-/obj/machinery/door/airlock/gold/tau{
-	desc = "It closed, do not try to pass thought it.";
-	explosion_resistance = 1000;
-	hackProof = 1;
-	health = 3e+007;
-	heat_proof = 1;
-	locked = 1;
-	maxhealth = 3e+007;
-	name = "Closed Tau Airlock";
-	req_access = list(209,333,666,777,888,999,5,10,25,67,69,91,121,512,413);
-	secured_wires = 1
-	},
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"kz" = (
-/obj/machinery/light/spot{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"kA" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/storage/box/cups,
-/turf/simulated/floor/shuttle/black,
+/obj/item/device/radio/beacon,
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
+"kz" = (
+/obj/machinery/computer/teleporter,
+/turf/simulated/floor/shuttle/yellow,
+/area/cadiaoutpost/oa/tauship)
+"kA" = (
+/obj/structure/table/rack,
+/obj/item/gun/energy/pulse/pulsepistol,
+/obj/item/gun/energy/pulse/pulsepistol,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kB" = (
-/obj/machinery/light/spot,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
+/turf/simulated/shuttle/wall/corner/dark/nw{
+	color = "grey"
+	},
+/area/space)
 "kC" = (
 /obj/machinery/door/airlock/centcom,
 /turf/simulated/floor/wood,
 /area/centcom)
 "kD" = (
-/obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/floor/shuttle/black,
+/turf/simulated/shuttle/wall/corner/blockwhite/sw,
 /area/cadiaoutpost/oa/tauship)
 "kE" = (
 /obj/effect/landmark{
@@ -2409,65 +2389,71 @@
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "kF" = (
+/obj/machinery/mech_recharger,
+/obj/mecha/combat/tau,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kG" = (
+/turf/simulated/shuttle/wall/corner/smoothwhite/ne,
+/area/cadiaoutpost/oa/tauship)
+"kH" = (
+/turf/simulated/shuttle/wall/corner/smoothwhite/sw,
+/area/cadiaoutpost/oa/tauship)
+"kI" = (
+/obj/item/reagent_containers/food/snacks/warfare/nim,
+/obj/item/reagent_containers/food/snacks/warfare/nim,
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_y = -2;
+	pixel_x = 9
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/food/snacks/warfare/nim{
+	pixel_x = 2;
+	pixel_y = 7
+	},
+/obj/structure/table/rack,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kK" = (
+/obj/item/mecha_parts/mecha_equipment/repair_droid{
+	pixel_x = 12;
+	pixel_y = -8
+	},
+/obj/structure/table/rack/shelf,
+/obj/machinery/light,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kL" = (
+/obj/structure/extinguisher_cabinet,
+/turf/simulated/shuttle/wall,
+/area/cadiaoutpost/oa/tauship)
+"kM" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/storage/box/cups,
 /obj/item/stack/material/wood/fifty,
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
-"kG" = (
-/obj/structure/sign/directions/bridge{
-	dir = 4
-	},
-/obj/structure/sign/directions/infirmary{
-	pixel_y = 6
-	},
-/turf/simulated/shuttle/wall,
-/area/cadiaoutpost/oa/tauship)
-"kH" = (
-/obj/structure/sign/directions/bridge{
-	dir = 4
-	},
-/turf/simulated/shuttle/wall,
-/area/cadiaoutpost/oa/tauship)
-"kI" = (
-/obj/structure/sign/directions/engineering{
-	dir = 8
-	},
-/turf/simulated/shuttle/wall,
-/area/cadiaoutpost/oa/tauship)
-"kK" = (
-/obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/gravcatapult,
-/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
-"kL" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
-	},
-/obj/item/melee/telebaton,
-/turf/simulated/floor/shuttle/black,
-/area/cadiaoutpost/oa/tauship)
-"kM" = (
-/obj/structure/table/rack,
-/obj/item/clothing/head/helmet/scout,
-/turf/simulated/floor/shuttle/darkred,
-/area/cadiaoutpost/oa/tauship)
 "kN" = (
 /obj/structure/table/rack/shelf,
-/obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse,
+/obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "kO" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
-/obj/item/storage/box/handcuffs,
-/obj/machinery/light/spot,
-/turf/simulated/floor/shuttle/black,
+/obj/item/paper_bin,
+/obj/item/pen,
+/turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
 "kP" = (
 /obj/structure/table/standard{
@@ -2477,11 +2463,15 @@
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "kQ" = (
-/obj/structure/table/standard{
-	name = "plastic table frame"
+/obj/structure/table/rack/shelf,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"kR" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
 	},
-/obj/machinery/light/spot,
-/obj/machinery/cell_charger,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "kV" = (
@@ -2499,6 +2489,13 @@
 /obj/structure/curtain/open/shower,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"lc" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "ll" = (
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/toxin,
@@ -2528,16 +2525,45 @@
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "lE" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/drinks/canteen,
-/obj/item/reagent_containers/food/drinks/canteen,
-/obj/item/reagent_containers/food/drinks/canteen,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "lR" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "lU" = (
@@ -2573,10 +2599,15 @@
 	icon_state = "white1"
 	},
 /area/centcom)
+"mh" = (
+/obj/machinery/light,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "mD" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
@@ -2600,6 +2631,7 @@
 /obj/item/forensics/swab,
 /obj/item/forensics/sample_kit/powder,
 /obj/structure/table/steel,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "mV" = (
@@ -2613,7 +2645,8 @@
 /obj/machinery/door/airlock/medical{
 	color = "grey";
 	maxhealth = 600;
-	name = "Laboratorum"
+	name = "Laboratorum";
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -2640,15 +2673,6 @@
 /obj/effect/floor_decal/turf/metal/five,
 /obj/effect/decal/cleanable/blood/gibs/xeno/limb,
 /obj/effect/decal/cleanable/blood/gibs/xeno/down,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"ns" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/item/material/knife/folding/combat/switchblade,
-/obj/structure/bed/chair{
-	dir = 1;
-	icon_state = "chair_preview"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "nt" = (
@@ -2686,6 +2710,16 @@
 	},
 /turf/simulated/floor/wood,
 /area/centcom)
+"nQ" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/brick,
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/computer/exterminatus{
+	desc = "This terminal acts as the control center for the Simiel's weapon systems.";
+	name = "Weapons Terminal - Exteriminatus"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "nT" = (
 /obj/structure/table/rack,
 /obj/item/cell/lasgun,
@@ -2712,8 +2746,13 @@
 	},
 /area/centcom)
 "op" = (
-/obj/item/device/radio/beacon,
-/turf/simulated/floor/shuttle/yellow,
+/obj/structure/table/rack,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/obj/item/ammo_box/flares/blue,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "or" = (
 /obj/structure/bed/chair/comfy/captain{
@@ -2741,6 +2780,14 @@
 /obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"oI" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/table/rack,
+/obj/item/clothing/head/helmet/scout,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "pf" = (
 /obj/effect/floor_decal/turf/brick,
 /turf/simulated/wall/techno,
@@ -2813,9 +2860,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"qa" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/item/modular_computer/console/preset/security,
+"pT" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "qh" = (
@@ -2851,13 +2898,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"qu" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/vending/security{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "qw" = (
 /obj/structure/bed/chair,
 /turf/simulated/floor/shuttle/black,
@@ -2889,16 +2929,22 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "rA" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/suit/armor/guardsman,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/cadian_uniform,
+/obj/item/clothing/under/rank/roboticist,
+/obj/item/clothing/under/syndicate,
+/obj/item/clothing/under/syndicate/combat,
+/obj/item/clothing/under/rank/seneschal,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/gloves/combat/cadian,
+/obj/item/clothing/mask/gas/half/cadianrespirator,
+/obj/item/clothing/mask/gas/half/cadianrespirator,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "rB" = (
@@ -2908,6 +2954,10 @@
 /area/centcom)
 "rD" = (
 /obj/structure/closet/emcloset,
+/obj/item/device/cassette/brokensaint,
+/obj/item/device/cassette/inqlog1,
+/obj/item/device/boombox,
+/obj/item/device/cassette/grimdark,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rI" = (
@@ -2979,11 +3029,23 @@
 	color = "grey"
 	},
 /area/centcom)
+"tc" = (
+/obj/structure/closet/crate/miner,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "tm" = (
 /obj/structure/table/steel,
 /obj/item/storage/box/cups,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"tn" = (
+/obj/structure/bed/chair,
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "ts" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/sink{
@@ -3012,19 +3074,24 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "tv" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/structure/bed{
-	desc = "A mass produced sleeping mat, now with actual cloth!";
-	icon_state = "bed_padding1";
-	name = "sleeping mat"
+/obj/structure/table/steel,
+/obj/item/card/id/innkey1{
+	req_access = null;
+	name = "inquisitorial key";
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	access = list(302)
 	},
-/obj/structure/sign/sancposter{
-	pixel_y = 32
+/obj/item/book/manual{
+	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
+	name = "Inquisitorial Report"
 	},
-/obj/effect/landmark/start{
-	name = "Principal Agent"
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "ordos bracelet"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tC" = (
 /obj/machinery/light{
@@ -3044,7 +3111,8 @@
 	color = "#36261B"
 	},
 /obj/item/material/sword/commissword{
-	name = "Ornate Sword"
+	name = "Runic Sabre";
+	force = 35
 	},
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -3053,12 +3121,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tU" = (
-/obj/machinery/teleport/station,
-/obj/machinery/light/spot{
-	dir = 1;
-	icon_state = "tube1"
+/obj/machinery/door/airlock/gold/tau{
+	name = "Teleporter"
 	},
-/turf/simulated/floor/shuttle/white,
+/turf/simulated/floor/shuttle/yellow,
 /area/cadiaoutpost/oa/tauship)
 "ue" = (
 /obj/structure/table/woodentable,
@@ -3076,6 +3142,15 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"uj" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/suit/armor/explorer,
+/obj/item/clothing/suit/armor/bountyhunter,
+/obj/item/clothing/suit/armor/guardsman/mercenary/carapace,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ul" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /obj/machinery/organ_printer/flesh,
@@ -3107,12 +3182,12 @@
 "uG" = (
 /obj/machinery/light,
 /obj/structure/table/rack,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
-/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
+/obj/item/gun/energy/las/lasgun/tinkered/catachan,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -3206,7 +3281,8 @@
 "vS" = (
 /obj/machinery/door/airlock/imperiumdoor{
 	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
@@ -3275,6 +3351,16 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"wO" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8;
+	icon_state = "officechair_white_preview"
+	},
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "xl" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/metal/five,
@@ -3347,11 +3433,10 @@
 	},
 /area/centcom)
 "xT" = (
-/obj/machinery/light/spot{
-	dir = 8;
-	icon_state = "tube1"
+/obj/machinery/door/airlock/gold/tau{
+	name = "Il'Emaar class airlock"
 	},
-/turf/simulated/floor/shuttle/white,
+/turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
 "yg" = (
 /obj/machinery/light,
@@ -3365,6 +3450,15 @@
 /obj/item/nullrod,
 /obj/item/remains/human{
 	color = "grey"
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "ordos bracelet"
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "ordos bracelet"
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "ordos bracelet"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3404,12 +3498,13 @@
 /obj/structure/closet/cabinet,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/clothing/suit/armor/agent,
-/obj/item/clothing/head/helmet/barney_helmet,
-/obj/item/clothing/mask/chameleon,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
+/obj/item/clothing/mask/chameleon,
+/obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/holster/waist,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -3467,18 +3562,17 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"zU" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "zY" = (
 /obj/machinery/gibber,
 /turf/simulated/floor/tiled/freezer,
 /area/centcom)
+"zZ" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/tauship)
 "Al" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/light/spot{
@@ -3494,6 +3588,12 @@
 /obj/item/archaeological_find/remains/xeno,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"AG" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "AH" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
@@ -3565,6 +3665,10 @@
 	color = "grey"
 	},
 /area/centcom)
+"Bz" = (
+/obj/effect/decal/remains,
+/turf/simulated/floor/asteroid/air,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "BA" = (
 /obj/machinery/teleport/hub,
 /turf/simulated/floor/shuttle/yellow,
@@ -3591,12 +3695,22 @@
 	color = "grey"
 	},
 /area/centcom)
+"BS" = (
+/obj/effect/floor_decal/turf/metal/five,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(63)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "BZ" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/door/airlock/medical{
 	color = "grey";
 	maxhealth = 600;
-	name = "Laboratorum"
+	name = "Laboratorum";
+	req_access = list(63)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3659,13 +3773,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "CL" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/door/window/brigdoor/westleft{
-	color = "grey";
-	health = 900;
-	maxhealth = 900
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/machinery/computer/shuttle_control/ferry/inquisition,
+/turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "CO" = (
 /turf/simulated/floor/tiled/ramp,
@@ -3826,11 +3935,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"EU" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "EX" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -3896,6 +4000,10 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"FW" = (
+/obj/structure/torchwall/service,
+/turf/simulated/wall/techno,
+/area/space)
 "Gc" = (
 /turf/simulated/wall/r_wall,
 /area/centcom)
@@ -3904,6 +4012,10 @@
 	icon_state = "rwall12"
 	},
 /area/centcom)
+"Gl" = (
+/obj/machinery/smartfridge/drying_rack,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/krootship)
 "Gn" = (
 /obj/machinery/door/airlock/arbiter{
 	req_access = list()
@@ -3915,14 +4027,6 @@
 "Go" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/reagent_dispensers/watertank,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"Gp" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/bed/chair{
-	dir = 1;
-	icon_state = "chair_preview"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Gs" = (
@@ -3972,6 +4076,14 @@
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Hx" = (
+/obj/structure/filingcabinet,
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "HF" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/bed/chair/office/dark{
@@ -4010,6 +4122,22 @@
 	color = "grey"
 	},
 /area/centcom)
+"HU" = (
+/obj/structure/table/rack,
+/obj/item/device/personal_shield,
+/obj/item/shield/energy,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
+"HY" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/structure/table/steel_reinforced,
+/obj/item/reagent_containers/glass/jar/radium,
+/obj/item/reagent_containers/glass/jar/sulphuric_acid,
+/obj/item/reagent_containers/glass/jar/ethanol,
+/obj/item/reagent_containers/glass/jar/hydrochloric,
+/obj/item/toothpuller,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ia" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
@@ -4051,6 +4179,7 @@
 /obj/structure/closet/emcloset,
 /obj/item/crowbar,
 /obj/item/wrench,
+/obj/item/storage/briefcase/crimekit,
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "IE" = (
@@ -4081,6 +4210,23 @@
 	icon_state = "rwall3"
 	},
 /area/centcom)
+"IT" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/reagent_containers/spray/cleaner,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ja" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/steel,
+/obj/item/clothing/head/helmet/guardhelmet,
+/obj/item/clothing/head/helmet/medicae,
+/obj/item/clothing/head/beret/deathsquad{
+	name = "Red Beret";
+	armor = list("melee"=60,"bullet"=35,"laser"=35,"energy"=20,"bomb"=40,"bio"=0,"rad"=0);
+	desc = "The armored beret of the Tempestor."
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Jb" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/vending/engivend,
@@ -4111,6 +4257,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"JG" = (
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	name = "Minor Imperialis Doorway - Retinue"
+	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/plating,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "JO" = (
 /obj/structure/torchwall/service,
 /turf/simulated/wall/techno,
@@ -4133,6 +4287,11 @@
 /obj/structure/closet/secure_closet/freezer/fridge,
 /turf/simulated/floor/tiled/freezer,
 /area/centcom)
+"Kj" = (
+/turf/simulated/shuttle/wall/corner/dark/se{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/krootship)
 "Ko" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4160,6 +4319,21 @@
 	color = "grey"
 	},
 /area/centcom)
+"KG" = (
+/obj/machinery/light/small{
+	dir = 8;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
+"KS" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/card/id/inquisition/principal_agent{
+	name = "Pilgrim"
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "KZ" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/rack/dark,
@@ -4184,15 +4358,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"Ll" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Lr" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4204,11 +4369,11 @@
 	},
 /area/centcom)
 "Ls" = (
-/obj/effect/floor_decal/turf/bloodbar,
-/obj/structure/torchwall{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/table/rack/dark,
+/obj/random/loot/sidearms,
+/obj/random/loot/sidearms,
+/obj/random/loot/sidearms,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Lt" = (
@@ -4217,11 +4382,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Lx" = (
-/obj/machinery/light/spot{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/shuttle/white,
+/obj/structure/table/rack,
+/obj/item/storage/firstaid/adv,
+/obj/item/storage/firstaid/adv,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "Ly" = (
 /obj/machinery/vending/boozeomat,
@@ -4258,12 +4424,13 @@
 /obj/structure/closet/cabinet,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/clothing/suit/armor/agent,
-/obj/item/clothing/head/helmet,
 /obj/item/clothing/mask/chameleon,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
+/obj/item/clothing/accessory/storage/black_vest,
+/obj/item/clothing/accessory/holster/waist,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "LW" = (
@@ -4304,20 +4471,8 @@
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
 "MB" = (
+/obj/structure/table/steel,
 /obj/effect/floor_decal/turf/brick,
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 8;
-	maxhealth = 400
-	},
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "MD" = (
@@ -4346,16 +4501,22 @@
 /turf/simulated/floor/plating,
 /area/centcom)
 "MR" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/largecrate/animal/cat/bones,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/obj/structure/largecrate/animal/cat,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "MS" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_alc/full,
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"MT" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 4
+	},
+/turf/simulated/floor/shuttle/white,
+/area/cadiaoutpost/oa/tauship)
 "MX" = (
 /obj/machinery/light{
 	dir = 1;
@@ -4401,8 +4562,8 @@
 /area/centcom)
 "Nz" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
+/obj/machinery/door/airlock/multi_tile/metal/imperium{
+	dir = 2;
 	name = "Minor Imperialis Doorway - Retinue"
 	},
 /turf/simulated/floor/tiled/dark,
@@ -4546,6 +4707,21 @@
 	color = "grey"
 	},
 /area/centcom)
+"PQ" = (
+/obj/structure/table/rack,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/obj/item/clothing/glasses/blacksun,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "PR" = (
 /obj/structure/table/rack,
 /obj/item/gun/energy/las/lasgun/tinkered,
@@ -4561,15 +4737,6 @@
 "PY" = (
 /turf/simulated/floor/tiled/freezer,
 /area/centcom)
-"PZ" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/item/reagent_containers/food/snacks/poo,
-/obj/structure/toilet{
-	color = "grey";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Qc" = (
 /obj/machinery/light{
 	dir = 4;
@@ -4600,6 +4767,13 @@
 	},
 /turf/simulated/floor/plating,
 /area/centcom)
+"Qi" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/obj/structure/railing,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "Qo" = (
 /turf/simulated/floor/plating,
 /area/centcom)
@@ -4669,6 +4843,13 @@
 /obj/machinery/computer/drone_control,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"QJ" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "QN" = (
 /obj/item/modular_computer/console/preset/command,
 /turf/simulated/floor/wood,
@@ -4720,7 +4901,7 @@
 	name = "sleeping mat"
 	},
 /obj/effect/landmark/start{
-	name = "Principal Agent"
+	name = "Interrogator"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4735,12 +4916,14 @@
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"Sk" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/decal/cleanable/blood/gibs,
-/obj/effect/decal/cleanable/blood/gibs/core,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+"Sr" = (
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/item/storage/backpack/satchel/warfare/kroot,
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/krootship)
 "Sv" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/machinery/computer/robotics,
@@ -4794,13 +4977,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"SO" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/closet/secure_closet/brig{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "SZ" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/closet/firecloset/full,
@@ -4839,18 +5015,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"TV" = (
-/obj/structure/closet/cabinet,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/suit/armor/agent,
-/obj/item/clothing/head/helmet/riot,
-/obj/item/clothing/mask/chameleon,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ua" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/floor_decal/newcorner/bar/diagonal,
@@ -4866,6 +5030,12 @@
 	color = "grey"
 	},
 /area/centcom)
+"Ue" = (
+/obj/structure/table/rack/shelf,
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,
+/turf/simulated/floor/plating,
+/area/cadiaoutpost/oa/krootship)
 "Uk" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /turf/simulated/floor/tiled{
@@ -4905,6 +5075,18 @@
 /obj/machinery/door/airlock/centcom,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
+"Va" = (
+/obj/structure/table/rack,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/obj/item/clothing/accessory/storage/webbing_large,
+/turf/simulated/floor/shuttle/darkred,
+/area/cadiaoutpost/oa/tauship)
 "Vb" = (
 /obj/effect/floor_decal/newcorner/bar/diagonal,
 /turf/simulated/floor/tiled/dark,
@@ -4916,6 +5098,15 @@
 /obj/item/stool/bar/padded,
 /turf/simulated/floor/wood,
 /area/centcom)
+"Vm" = (
+/obj/effect/floor_decal/turf/brick,
+/obj/machinery/door/airlock/imperiumdoor{
+	maxhealth = 1200;
+	name = "Minor Imperialis Doorway - Retinue";
+	req_access = list(213)
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Vt" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -4992,6 +5183,13 @@
 	color = "grey"
 	},
 /area/centcom)
+"Wl" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/krootship)
 "Wm" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/turf/metal/five,
@@ -5000,6 +5198,10 @@
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Wo" = (
+/obj/structure/closet/crate/ateopoine,
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "Wp" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -5095,11 +5297,6 @@
 /obj/machinery/light,
 /turf/simulated/floor/wood,
 /area/centcom)
-"Yq" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Yr" = (
 /turf/unsimulated/wall/fakeglass{
 	color = "grey";
@@ -5114,11 +5311,36 @@
 	icon_state = "fakewindows"
 	},
 /area/centcom)
-"YD" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
+"Yv" = (
+/obj/structure/closet/crate/secure/biohazard,
+/obj/item/clothing/glasses/science,
+/obj/random/tech_supply,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/hypospray/autoinjector/tau,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/hypospray/autoinjector/detox,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/chloralhydrate,
+/obj/item/reagent_containers/glass/bottle/cyanide,
+/obj/item/storage/box/syringes,
+/obj/item/storage/box/syringes,
+/obj/item/reagent_containers/hypospray/autoinjector/detox,
+/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
+/obj/item/reagent_containers/glass/jar/sulphuric_acid,
+/obj/item/toothpuller,
+/obj/item/toothpuller,
+/obj/item/reagent_containers/syringe/inaprovaline,
+/obj/item/reagent_containers/syringe/inaprovaline,
+/obj/item/grenade/chem_grenade/cleaner,
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
+	name = "autoinjector(MB)"
+	},
+/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
+	name = "autoinjector(MB)"
+	},
+/turf/simulated/floor/shuttle/black,
+/area/cadiaoutpost/oa/shuttle/inquisition)
 "YE" = (
 /turf/simulated/wall/voxshuttle,
 /area/centcom)
@@ -5126,14 +5348,6 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/machinery/microwave,
 /obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"Za" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/machinery/door/airlock/imperiumdoor{
-	maxhealth = 1200;
-	name = "Minor Imperialis Doorway - Retinue"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Zc" = (
@@ -5209,18 +5423,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/centcom)
-"ZX" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/steel_reinforced,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/random/canned_food,
-/obj/item/handcuffs,
-/obj/item/handcuffs,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "ZZ" = (
 /obj/structure/bed/chair/wood{
 	dir = 4;
@@ -5476,16 +5678,16 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+kB
+aa
+aa
+aa
+aI
+aI
+aa
+aa
+aa
+am
 ax
 ax
 ax
@@ -5577,18 +5779,18 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+bi
+aa
+ad
+aU
+aa
+aK
+aK
+aa
+cG
+ad
+aa
+am
 ax
 ax
 ax
@@ -5664,6 +5866,9 @@ ax
 ax
 ax
 ax
+kb
+gL
+kH
 ax
 ax
 ax
@@ -5676,21 +5881,18 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+ac
+an
+aj
+bz
+aK
+aK
+bz
+aj
+an
+ac
+aa
 ax
 ax
 ax
@@ -5765,24 +5967,11 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-am
-am
-am
-am
-am
-am
-am
-am
-am
-am
+kb
+gL
+gL
+gL
+kH
 ax
 ax
 ax
@@ -5793,6 +5982,19 @@ ax
 ax
 ax
 ax
+ax
+aa
+aa
+aa
+aa
+aa
+aK
+aK
+aa
+aa
+aa
+aa
+aa
 ax
 ax
 ax
@@ -5866,6 +6068,19 @@ ax
 ax
 ax
 ax
+kb
+gL
+gL
+gL
+gL
+gL
+kH
+kb
+gL
+kH
+ax
+ax
+ax
 ax
 ax
 ax
@@ -5875,22 +6090,9 @@ ax
 ax
 ax
 aa
+aK
+aK
 aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -5962,42 +6164,42 @@ ax
 ax
 ax
 ax
+aN
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+kE
+kP
+gL
+gL
+gL
+gL
+kt
 ax
 ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+bi
 aa
 aa
-aj
-ac
 aa
-aJ
+aa
+aa
+aa
 aK
-aK
-aK
-aK
-aj
-aj
+aW
 aa
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+am
 ax
 ax
 ax
@@ -6063,7 +6265,21 @@ ax
 ax
 ax
 ax
-ax
+aN
+gL
+gL
+kE
+kP
+gL
+kE
+kP
+gL
+gL
+kl
+ku
+gL
+gL
+kt
 ax
 ax
 ax
@@ -6078,23 +6294,9 @@ ax
 ax
 ax
 aa
-ab
-aj
-ag
+aK
+aK
 aa
-aK
-aK
-aK
-aK
-aK
-aj
-aj
-ag
-aa
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -6164,6 +6366,21 @@ ax
 ax
 ax
 ax
+aN
+gL
+Uv
+gL
+kl
+ku
+gL
+kl
+ku
+gL
+gL
+xT
+gL
+gL
+gL
 ax
 ax
 ax
@@ -6171,38 +6388,23 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+bi
 aa
-ac
-an
-aj
+aa
+aa
+aa
+aa
+aa
 aa
 aK
 aK
-aK
-aK
-aK
-aj
-aj
-aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+aa
+aa
+am
 ax
 ax
 ax
@@ -6265,47 +6467,47 @@ ax
 ax
 ax
 ax
+aN
+gL
+Uv
+Uv
+gL
+xT
+gL
+gL
+xT
+gL
+gL
+Uv
+kl
+Uv
+lc
+gL
+jF
 ax
 ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+bi
 aa
-ad
-aj
-aj
-aa
+ak
+Sr
+Ue
+al
 aJ
+ai
+ab
 aK
 aK
-aK
-aK
-aj
-aj
-aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+cG
+an
+ac
+aj
+ad
+aa
+am
 ax
 ax
 ax
@@ -6367,47 +6569,47 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+gL
+AG
+Uv
+Uv
+Uv
+kl
+kl
+kl
+kl
+zZ
+kl
+kl
+kl
+Uv
+Uv
+gL
+jF
 ax
 ax
 ax
 ax
 ax
 aa
+au
+aj
+aj
+aj
+aj
+aj
+aj
+bz
+aK
+aK
+bz
+aj
+aj
+aj
 aj
 aj
 aj
 aa
-aK
-aK
-aK
-aK
-aK
-aj
-aj
-aj
-aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -6469,47 +6671,47 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+gL
+kl
+kl
+kl
+kl
+kl
+MT
+Uv
+Uv
+Uv
+Uv
+kl
+Uv
+Uv
+Uv
+gL
+jF
 ax
 ax
 ax
 ax
 ax
 aa
+az
+as
 aj
 aj
+aD
+aj
+aD
+aa
+aK
+aK
+aa
+ad
+aj
+aj
+as
+an
 ac
 aa
-aK
-aK
-aK
-aK
-aK
-aj
-aj
-aj
-aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -6567,51 +6769,51 @@ ax
 ax
 ax
 ax
+aN
+gL
+kD
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+gL
+xT
+gL
+gL
+gL
+xT
+gL
+gL
+Uv
+Uv
+Uv
+kl
+Uv
+Uv
+kM
+gL
+jF
 ax
 ax
 ax
 ax
 ax
 aa
-aj
-an
-aj
 aa
-aK
-aK
-aK
-aK
-aK
-aj
-aj
-ag
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+aa
+aa
+aa
+aY
+aK
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ax
 ax
 ax
@@ -6668,6 +6870,28 @@ ax
 ax
 ax
 ax
+aN
+gL
+gL
+gL
+kD
+gL
+kl
+kv
+gL
+gL
+kl
+kv
+gL
+gL
+gL
+gL
+kl
+MT
+gL
+gL
+gL
+kD
 ax
 ax
 ax
@@ -6678,39 +6902,17 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aT
 aa
-ab
-aj
-aj
 aa
-aJ
-aK
-aK
-aK
-aK
-aj
-aj
-aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+bu
+aa
+aa
+aa
+aa
+Kj
 ax
 ax
 ax
@@ -6769,17 +6971,30 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aN
+gL
+gL
+gL
+gL
+gL
+gL
+kr
+kP
+gL
+gL
+kr
+kP
+gL
+Lx
+ay
+gL
+kx
+gL
+gL
+hy
+kh
+gL
+kD
 ax
 ax
 ax
@@ -6792,25 +7007,12 @@ ax
 ax
 ax
 aa
-ac
-aj
-as
 aa
 aK
 aK
-aK
-aK
-aK
-aj
-aj
-aj
+aX
 aa
-ax
-ax
-ax
-ax
-ax
-ax
+aa
 ax
 ax
 ax
@@ -6870,6 +7072,32 @@ ax
 ax
 ax
 ax
+aN
+gL
+hk
+gn
+jL
+jP
+kO
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+jB
+jB
+QJ
+jB
+ke
+gL
+jM
+jM
+QJ
+gL
+kD
 ax
 ax
 ax
@@ -6879,41 +7107,15 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-aa
+bi
 aa
 aq
-aa
-aa
 aK
 aK
-aK
-aK
-aK
-aj
-aj
-aj
-aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aX
+tn
+bt
+aI
 ax
 ax
 ax
@@ -6972,6 +7174,32 @@ ax
 ax
 ax
 ax
+gL
+gL
+wO
+Uv
+Uv
+id
+Uv
+Uv
+kL
+gL
+kz
+lc
+iu
+gL
+Va
+jB
+jB
+jB
+jB
+jB
+gL
+jB
+jB
+jB
+kN
+gL
 ax
 ax
 ax
@@ -6980,43 +7208,17 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+bi
 aa
-af
-ar
-aj
+aK
+aK
+aK
+aK
+Qi
+aK
+bj
 aa
-aK
-aK
-aK
-aK
-aK
-aj
-aj
-aj
-aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+am
 ax
 ax
 ax
@@ -7074,6 +7276,32 @@ ax
 ax
 ax
 ax
+bM
+gn
+Uv
+jw
+jG
+jG
+jU
+Uv
+Uv
+gL
+kg
+iu
+Uv
+gL
+oI
+jB
+jD
+ka
+jB
+jB
+gL
+jB
+jB
+jB
+kc
+gL
 ax
 ax
 ax
@@ -7082,43 +7310,17 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-aa
-ab
-aj
-aj
-aa
-aa
-aa
-aa
-aa
+aI
+bt
+bt
 aK
-aj
-aj
-aj
+aK
+aK
+aK
+aK
+bn
+aK
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -7176,6 +7378,32 @@ ax
 ax
 ax
 ax
+bM
+gn
+Uv
+jx
+jI
+jN
+jV
+Uv
+en
+gL
+BA
+Uv
+iu
+gL
+jB
+jB
+HU
+op
+jB
+mh
+gL
+jB
+jB
+jB
+jB
+gL
 ax
 ax
 ax
@@ -7184,43 +7412,17 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-aa
-ah
-aj
-aj
 aI
+bt
+bB
 aK
 aK
-aa
-aa
 aK
-aj
-aj
-aj
+aK
+aK
+bo
+aK
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -7278,51 +7480,51 @@ ax
 ax
 ax
 ax
+bM
+gX
+it
+jy
+jJ
+jO
+jW
+Uv
+Uv
+jE
+Uv
+iu
+Uv
+tU
+jB
+jB
+jB
+jB
+jB
+jB
+ks
+jB
+jB
+jB
+kK
+gL
 ax
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-kt
-gL
-gL
-kt
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+aT
 aa
-ah
-aj
-at
-aa
-aJ
 aK
 aK
-aa
 aK
-aj
-aj
-aj
+aK
+Wl
+aK
+bx
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+Kj
 ax
 ax
 ax
@@ -7380,50 +7582,50 @@ ax
 ax
 ax
 ax
-ax
+bM
+jZ
+Uv
+jx
+jJ
+jN
+jX
+Uv
+en
 gL
-ay
+iu
+Uv
+iu
+gL
 jB
-kh
-kK
+jB
+kA
+kw
+jB
+jB
 gL
-kp
-kO
-gL
-kp
-kQ
-gL
-kp
-kP
-gL
-kE
-kP
-gL
-Uv
-Uv
+jB
+jB
+jB
+jB
 gL
 ax
-aa
-ai
-aj
-au
-aa
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 aT
+aa
+aY
 aK
 aK
-aa
-aa
-aa
-aa
-aa
-aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aX
+aY
+bB
+aI
 ax
 ax
 ax
@@ -7482,49 +7684,49 @@ ax
 ax
 ax
 ax
-ax
+bM
+gn
+Uv
+jz
+jK
+jK
+jY
+kj
+gn
 gL
-jM
+ky
+iu
+Uv
+gL
+oI
+jB
+kn
+ko
 jB
 jB
-kN
 gL
-kl
-ku
+jB
+jB
+jB
+jC
 gL
-kl
-ku
-gL
-kl
-ku
-gL
-kl
-ku
-gL
-kg
-kg
-gL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 aa
-ak
-aj
-az
 aa
-aU
 aK
 aK
-aK
-aK
-aj
-aj
-aj
+aX
 aa
-ax
-ax
-ax
-ax
-ax
-ax
+aa
 ax
 ax
 ax
@@ -7580,55 +7782,55 @@ ax
 "}
 (24,1,1) = {"
 ax
+ax
+ax
+ax
+ax
 gL
 gL
+jv
+Uv
+Uv
+Uv
+Uv
+kq
 gL
 gL
+iu
+jA
+bh
 gL
-gL
+jT
+jB
+jB
+jB
+jB
+jB
 gL
 jB
 jB
-gL
-gL
-kq
-gL
-gL
-kq
-gL
-gL
-kq
-gL
-gL
-kq
-gL
-gL
-Uv
-Uv
+jB
+kQ
 gL
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+bi
 aa
-al
-aj
-aD
 aa
-aV
-aK
-aK
-aK
-aK
-aj
-aj
-ag
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+bu
+aa
+aa
+aa
+aa
+am
 ax
 ax
 ax
@@ -7682,58 +7884,58 @@ ax
 "}
 (25,1,1) = {"
 ax
-aN
-hy
-Uv
-iu
-xT
-jA
-jB
-jB
-jB
-jB
-kh
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-kg
-Uv
+ax
+ax
+ax
+ax
+jR
+gL
+hk
+gn
+Hx
+kp
 Uv
 gL
+gL
+gL
+gL
+gL
+gL
+gL
+gL
+jB
+jB
+lE
+jB
+kI
+gL
+jM
+kF
+lE
+gL
+jS
+ax
+ax
 ax
 aa
-ab
-aj
-aj
-aI
-aK
-aK
-aK
-aK
-aK
-aj
-aj
-aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+KG
+aK
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 ax
 ax
 ax
@@ -7784,58 +7986,58 @@ ax
 "}
 (26,1,1) = {"
 ax
+ax
+ax
+ax
+ax
+ax
+jR
 gL
-Uv
-iu
-Uv
-iu
-jB
-jB
-jB
-jB
-jB
-jB
-Uv
-Uv
-Lx
-Uv
-Uv
-Uv
-Uv
-Uv
-Lx
-Uv
-Uv
-bM
-Uv
-Uv
-kI
+gL
+gL
+gL
+gL
+gL
+kE
+kP
+gL
+gL
+kE
+kP
+gL
+kk
+PQ
+gL
+kx
+gL
+gL
+jM
+jM
+gL
+jS
+ax
+ax
+ax
 ax
 aa
-aj
+aa
+Gl
+at
+ar
 aj
 ar
+aj
 aa
 aK
 aK
-bi
-bu
-aX
-bx
-aj
-aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+ad
+aj
+aj
+at
+an
+ac
+aa
 ax
 ax
 ax
@@ -7886,58 +8088,58 @@ ax
 "}
 (27,1,1) = {"
 ax
-aN
-bh
-Uv
-iu
-gL
-gL
-jB
-jB
-jB
-jB
-gL
-kq
+ax
+ax
+ax
+ax
+ax
+ax
+jR
 gL
 gL
 gL
+jS
+gL
+kl
+ku
 gL
 gL
-kq
+kl
+ku
 gL
 gL
 gL
 gL
-kH
-Uv
-Uv
+kl
+lc
 gL
+gL
+gL
+jS
+ax
+ax
+ax
+ax
 ax
 aa
 aa
-aa
-aa
-aa
-aJ
-aX
-bj
+ag
+aj
+aj
+aj
+aj
+aj
+bz
 aK
 aK
 bz
-cG
+aj
+aj
+aj
+aj
+aj
 aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -7988,58 +8190,58 @@ ax
 "}
 (28,1,1) = {"
 ax
-gL
-tU
-iu
-Uv
-gL
-jC
-jB
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 jR
-jB
-jB
 gL
-kl
-kv
+jS
+ax
 gL
-kr
-kP
+xT
 gL
-kl
-kv
 gL
-kr
-kP
+gL
+xT
+gL
 gL
 Uv
 Uv
+Uv
+kl
+Uv
+Uv
+kM
 gL
+jF
 ax
 ax
 ax
 ax
 ax
+aT
 aa
-aK
-aX
-bn
-aK
-aK
-bt
-cG
+aV
 aj
+aj
+ah
+aj
+aU
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aK
+aK
+aa
+cG
+an
+ac
+aj
+ad
+aa
+af
 ax
 ax
 ax
@@ -8090,57 +8292,57 @@ ax
 "}
 (29,1,1) = {"
 ax
-aN
-BA
-Uv
-op
-gL
-jD
-jB
-kM
-jB
-jB
-gL
-kr
-kP
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gL
 kl
-ku
-gL
-kr
-kP
-gL
 kl
-ku
-gL
+kl
+zZ
+kl
 Uv
 Uv
+Uv
+Uv
+Uv
+kl
+Uv
+Uv
+Uv
 gL
+jF
 ax
 ax
 ax
 ax
 ax
+ax
+aT
+aa
+aa
+aa
+aa
+aa
+aa
 aa
 aK
-aX
-bo
 aK
-aK
-bB
-cG
-aj
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+aa
+aa
+af
 ax
 ax
 ax
@@ -8192,51 +8394,51 @@ ax
 "}
 (30,1,1) = {"
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gL
-gL
-gL
-gL
-gL
-jE
-jB
-jS
-jB
-jB
-gL
-gL
-gL
-gL
-kq
-gL
-gL
-gL
-gL
-gL
-kq
-gL
-gL
+AG
+Uv
+Uv
+Uv
+kl
+kl
+kl
+kl
+kR
+kl
+kl
+kl
 Uv
 Uv
 gL
+jF
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
 ax
 ax
 aa
-aW
-aX
-bt
 aK
 aK
-aK
-cG
-ag
 aa
-ax
-ax
-ax
-ax
 ax
 ax
 ax
@@ -8298,52 +8500,52 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+jR
+gL
+Uv
+Uv
+gL
+xT
+gL
+gL
+xT
+gL
+gL
+Uv
+kl
+Uv
+MT
 gL
 jF
-jB
-ka
-jB
-jB
-jB
-Uv
-Uv
-xT
-Uv
-Uv
-Uv
-Uv
-Uv
-xT
-Uv
-kF
-gL
-Uv
-Uv
-gL
 ax
 ax
 ax
 ax
 ax
+ax
+ax
+aT
 aa
 aa
-aY
-bt
+aa
+aa
+aa
+aa
 aK
 aW
-aK
-cG
 aa
 aa
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+af
 ax
 ax
 ax
@@ -8400,27 +8602,28 @@ ax
 ax
 ax
 ax
-gL
-jB
-jB
-jB
-jB
-jB
-kj
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Lx
-Uv
-Uv
-Uv
-jT
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+jR
 gL
 Uv
-Uv
+gL
+kl
+kv
+gL
+kl
+kv
+gL
+gL
+xT
+gL
+gL
 gL
 ax
 ax
@@ -8428,19 +8631,18 @@ ax
 ax
 ax
 ax
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
 ax
 ax
 ax
 ax
 ax
+ax
+ax
+ax
+aa
+aK
+aK
+aa
 ax
 ax
 ax
@@ -8502,30 +8704,30 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+jR
 gL
 gL
-bM
+kr
+kP
 gL
-bM
-gL
-gL
-bM
-bM
-bM
-bM
-bM
-bM
+kr
+kP
 gL
 gL
-kg
-kg
-bM
-gL
-Uv
-Uv
+kl
+kv
 gL
 gL
-gL
+kH
 ax
 ax
 ax
@@ -8535,18 +8737,18 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+aa
+aa
+aa
+aa
+aK
+aK
+aa
+aa
+aa
+aa
+aa
 ax
 ax
 ax
@@ -8602,32 +8804,34 @@ ax
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+jR
 gL
 gL
 gL
-gn
-gn
-jT
-kb
 gL
-kk
-ks
-kw
-ks
-kk
-kL
-kw
-ks
 gL
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-kg
-Uv
 gL
+gL
+gL
+kr
+kP
+gL
+gL
+gL
+gL
+kH
 ax
 ax
 ax
@@ -8635,20 +8839,18 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aa
+ac
+an
+aU
+aa
+aK
+aK
+aa
+cG
+an
+ac
+aa
 ax
 ax
 ax
@@ -8703,33 +8905,35 @@ ax
 (35,1,1) = {"
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+kG
 gL
 gL
-hk
-gn
-Uv
-Uv
-Uv
-Uv
 gL
-kl
-kl
-kx
-ks
-kl
-kl
-kx
-ks
 gL
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-kg
-Uv
 gL
+kt
+kG
+gL
+kt
 ax
 ax
 ax
@@ -8737,20 +8941,18 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aT
+aa
+ad
+aj
+bz
+aK
+aK
+bz
+aj
+ad
+aa
+Kj
 ax
 ax
 ax
@@ -8805,33 +9007,31 @@ ax
 (36,1,1) = {"
 ax
 ax
-bM
-gn
-id
-jw
-jG
-jG
-jU
-Uv
-gL
-kn
-kl
-kl
-kl
-kl
-kl
-kl
-kB
-gL
-kg
-kg
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 kG
 gL
 gL
 gL
-gL
-gL
-gL
+kt
 ax
 ax
 ax
@@ -8844,14 +9044,16 @@ ax
 ax
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+aT
+aa
+aa
+aa
+aI
+aI
+aa
+aa
+aa
+Kj
 ax
 ax
 ax
@@ -8907,30 +9109,30 @@ ax
 (37,1,1) = {"
 ax
 ax
-bM
-gn
-Uv
-jx
-jI
-jN
-jV
-kc
-gL
-ko
-ko
-kl
-kl
-kl
-kz
-kA
-kD
-gL
-Uv
-Uv
-gL
 ax
 ax
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+kG
+gL
+kt
 ax
 ax
 ax
@@ -9009,27 +9211,27 @@ ax
 (38,1,1) = {"
 ax
 ax
-bM
-gX
-it
-jy
-jJ
-jO
-jW
-Uv
-gL
-gL
-gL
-gL
-gL
-ky
-gL
-gL
-gL
-gL
-gL
-gL
-gL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -9111,26 +9313,26 @@ ax
 (39,1,1) = {"
 ax
 ax
-bM
-gn
-Uv
-jx
-jJ
-jN
-jX
-Uv
-kg
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-Uv
-gL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -9213,26 +9415,26 @@ ax
 (40,1,1) = {"
 ax
 ax
-bM
-gn
-jv
-jz
-jK
-jK
-jY
-Uv
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
-gL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -9315,15 +9517,15 @@ ax
 (41,1,1) = {"
 ax
 ax
-gL
-gL
-hk
-gn
-Uv
-Uv
-jv
-gn
-gL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -9418,14 +9620,14 @@ ax
 ax
 ax
 ax
-gL
-gL
-gL
-jL
-jP
-jZ
-ke
-gL
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -9522,12 +9724,12 @@ ax
 ax
 ax
 ax
-gL
-gL
-gL
-gL
-gL
-gL
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -9572,14 +9774,14 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
+FW
+FW
+FW
+FW
+iw
+iw
+iw
+iw
 ax
 ax
 ax
@@ -9674,22 +9876,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+cb
+cp
+ts
+lU
+LK
+vd
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
 lU
 lU
 lU
@@ -9776,22 +9978,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+JO
+ED
+cp
+cp
+JW
+LK
+LK
+lU
+MB
+cn
+cv
+lU
+cT
+Bz
+cU
+dk
 lU
 gA
 cL
@@ -9878,22 +10080,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+XU
+cp
+DR
+lU
+LK
+LK
+lU
+bS
+bP
+cw
+lU
+cU
+cU
+cU
+cU
 lU
 gA
 gA
@@ -9980,23 +10182,23 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
-JO
+lU
+YI
+cp
+Xd
+lU
+nh
+lw
+lU
+bT
+bP
+cx
+lU
+cU
+di
+cU
+cU
+lU
 gA
 gA
 gA
@@ -10082,29 +10284,29 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+lU
+fQ
+lU
+lU
+lU
+lU
+lU
+bV
+bP
+cy
+lU
+cV
+cU
+cU
+cU
 lU
 gA
 gA
 hC
 lU
 lU
-gx
+CL
 gx
 gx
 gx
@@ -10184,22 +10386,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+jd
+cp
+cp
+cp
+cp
+cp
+lU
+lU
+dQ
+lU
+lU
+lU
+lU
+dl
+lU
 lU
 gA
 gA
@@ -10212,8 +10414,8 @@ ae
 ae
 jj
 iO
-iO
-iO
+MR
+tc
 iO
 iH
 iO
@@ -10286,22 +10488,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+je
+cp
+jk
+aZ
+cp
+cp
+lU
+hN
+cp
+cz
+cX
+cX
+lU
+dm
+dx
 lU
 gA
 gA
@@ -10314,8 +10516,8 @@ ix
 ix
 jo
 iO
-iO
-iO
+Yv
+Wo
 iO
 mD
 iO
@@ -10388,23 +10590,23 @@ Gc
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
-gY
+bK
+jg
+cp
+uj
+dy
+cp
+cp
+JG
+cp
+cp
+cp
+cp
+cp
+lU
+dn
+cU
+lU
 gA
 gA
 gA
@@ -10417,7 +10619,7 @@ ao
 jj
 iO
 iO
-iO
+dW
 iO
 iH
 iO
@@ -10490,29 +10692,29 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+xQ
+cp
+Ja
+rA
+cp
+cp
+pT
+cp
+cp
+cp
+cp
+cY
+lU
+do
+do
 lU
 gA
 gA
 gA
 lU
 lU
-gx
+CL
 gx
 gx
 gx
@@ -10592,22 +10794,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+Ci
+NF
+cp
+cp
+NF
+cp
+lU
+cd
+cp
+Ls
+fc
+KZ
+lU
+dp
+dr
 lU
 gA
 gA
@@ -10694,22 +10896,22 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+lU
+cp
+Nz
+lU
+lU
+lU
+lU
+lU
+cq
+lU
+lU
+lU
+lU
+cr
+dz
 lU
 gA
 gA
@@ -10796,23 +10998,23 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
-gY
+JO
+AH
+cp
+cp
+ym
+lU
+bH
+bN
+ce
+cr
+cr
+cr
+cr
+cr
+cr
+Go
+lU
 gA
 gA
 hC
@@ -10898,25 +11100,25 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+bZ
+cp
+cp
+cp
+lR
 lU
+bI
+bP
+cf
+cr
+cC
+cM
+cZ
+gY
+cr
+cr
+dC
 gA
-gA
+IT
 gA
 lU
 lU
@@ -11000,23 +11202,23 @@ Gk
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+bZ
+cp
+cp
+cp
+mV
 lU
+bL
+bP
+cf
+cr
+cD
+cN
+da
+lU
+dq
+cr
+dC
 gA
 gA
 gA
@@ -11102,23 +11304,23 @@ Gc
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
 JO
+Ma
+cp
+cp
+tM
+lU
+ef
+bQ
+cg
+cr
+cr
+cr
+cr
+cr
+cr
+cr
+lU
 gA
 gA
 gA
@@ -11204,22 +11406,22 @@ YE
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+lU
+cp
+Nz
+lU
+lU
+lU
+lU
+lU
+cs
+lU
+lU
+lU
+lU
+cr
+dA
 lU
 gA
 gA
@@ -11306,30 +11508,30 @@ YE
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+cp
+cp
+OH
+RF
+ih
+RF
+lU
+ch
+cr
+cE
+cO
+db
+lU
+dr
+bG
 lU
 ep
 gA
 gR
 lU
 lU
-lU
-lU
+bF
+bF
 bF
 bE
 bE
@@ -11408,30 +11610,30 @@ YE
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+cp
+cp
+cp
+cp
+KS
+yG
+lU
+ci
+cr
+cr
+cP
+dd
+lU
+ds
+dB
 lU
 lU
-dN
+BS
 lU
 lU
-lU
-lU
-lU
+bF
+bF
+bF
 bF
 bE
 bE
@@ -11510,30 +11712,30 @@ YE
 vE
 ax
 ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+JO
+cp
+cp
+cp
+cp
+KS
+LT
+lU
+ci
+cr
+cF
+cR
+de
+lU
+dt
+dB
 lU
 gB
-dN
-dN
-he
-dN
+dJ
 dN
 lU
+bF
+bF
+bF
 bF
 bE
 bE
@@ -11612,30 +11814,30 @@ YE
 vE
 ax
 jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-ax
-ax
-ax
-ax
-ax
-ax
-jb
+lU
+cp
+cp
+cp
+cp
+KS
+LT
+lU
+ch
+cr
+cr
+cS
+df
+lU
+du
+dB
 lU
 gP
-dN
-dN
-Ls
-dN
+dJ
 dN
 lU
+bF
+bF
+bF
 bF
 bE
 bE
@@ -11715,29 +11917,29 @@ vE
 ax
 jb
 lU
+cp
+cp
+cp
+RF
+cp
+RF
+lU
+lU
+ct
 lU
 lU
 lU
 lU
+Vm
 lU
 lU
+dN
+dJ
+dN
 lU
-jb
-jb
-jb
-jb
-ax
-ax
-ax
-jb
-lU
-lU
-lU
-lU
-lU
-he
-he
-lU
+bF
+bF
+bF
 bF
 bE
 bE
@@ -11817,29 +12019,29 @@ vE
 ax
 jb
 lU
-cb
 cp
-ts
-lU
-LK
-vd
+cp
+cp
 lU
 lU
 lU
 lU
+cj
+cu
+eE
 lU
+cn
+fe
+bP
+bP
+gz
 lU
-lU
-ax
-jb
-lU
-lU
-lU
-lU
-lU
-dN
+dJ
 dN
 lU
+bF
+bF
+bF
 bF
 bF
 bF
@@ -11918,29 +12120,29 @@ YE
 vE
 ax
 jb
+lU
+cp
+cp
+cp
 JO
-ED
 cp
-cp
-JW
-LK
-LK
+Cw
 lU
 bR
-cn
-cv
+cu
+cH
 lU
+dg
+dj
+dw
+bP
+gQ
 lU
-lU
-lU
-lU
-lU
-bF
-bF
-lU
-gY
+dJ
 dN
-dN
+lU
+lU
+lU
 lU
 lU
 lU
@@ -12021,36 +12223,36 @@ vE
 ax
 jb
 lU
-XU
+Lt
 cp
-DR
+cp
+vS
+cp
+cp
 lU
-LK
-LK
+cl
+cK
+cJ
 lU
-bS
+dh
+lU
+dX
 bP
-cw
+HY
 lU
-cT
+dJ
+dN
+dN
+dN
+dN
 lU
+QB
+VW
+QB
 lU
+FG
+FG
 lU
-lU
-bF
-bF
-lU
-lU
-he
-he
-lU
-lU
-lU
-dM
-dP
-lU
-lU
-bF
 bW
 bW
 bW
@@ -12123,42 +12325,42 @@ vE
 ax
 jb
 lU
-YI
-cp
-Xd
+Lt
+DA
+Dq
 lU
-nh
-lw
+QP
+AI
 lU
-bT
-bP
-cx
-lU
-cU
-di
-dk
+cm
+cu
+tv
 lU
 lU
-bF
-bF
+lU
+lU
 lU
 lU
 dN
-dN
-he
-dN
-dN
-dN
-dN
-dN
+dJ
+dJ
+dJ
+dJ
+dJ
+BZ
+VW
+VW
+VW
+mY
+VW
+VW
 lU
-bF
-bW
-bW
-bW
-bW
-bW
-bW
+ax
+ax
+ax
+ax
+ax
+ax
 bW
 bW
 bE
@@ -12226,41 +12428,41 @@ ax
 jb
 lU
 lU
-cq
 lU
 lU
 lU
 lU
 lU
-bV
-bP
-cy
-lU
-cV
-cU
-cU
 lU
 lU
-bF
-bF
 lU
 lU
+lU
+ax
+ax
+ax
+ax
+lU
+dM
+dP
+jl
+dN
 dN
 jl
-he
-dN
-dN
-dN
-dN
-dN
 lU
-bF
-bW
-bW
-bW
-bW
-bW
-bW
+SN
+VW
+ql
+lU
+VW
+VW
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 bE
@@ -12325,25 +12527,23 @@ vE
 vE
 vE
 ax
-jb
-lU
-jd
-cp
-cp
-cp
-cp
-cp
-lU
-lU
-Za
-lU
-lU
-lU
-lU
-dl
-lU
-lU
-lU
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 lU
 lU
@@ -12351,18 +12551,20 @@ lU
 lU
 lU
 lU
-dK
-dN
-dN
-dN
 lU
-bF
-bW
-bW
-bW
-bW
-bW
-bW
+lU
+lU
+lU
+lU
+Vx
+VW
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 bE
@@ -12427,25 +12629,24 @@ YE
 vE
 ax
 ax
-jb
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
-je
-cp
-EU
-EU
-cp
-cp
-lU
-cd
-cp
-cz
-cX
-cX
-lU
-dm
-dx
-lU
-dS
 dS
 dS
 dS
@@ -12453,18 +12654,19 @@ dS
 dS
 dS
 lU
-jt
-dN
-dN
-iQ
+GD
+La
+mQ
+VN
+VW
+VW
 lU
-bF
-bW
-bW
-bW
-bW
-bW
-bW
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 bE
@@ -12529,25 +12731,24 @@ YE
 vE
 ax
 ax
-jb
-bK
-jg
-cp
-EU
-EU
-cp
-cp
-cq
-cp
-cp
-cp
-cp
-MR
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
-dn
-cU
-lU
-dS
 dS
 dS
 dS
@@ -12555,18 +12756,19 @@ dS
 dS
 dS
 lU
+xx
+VW
+VW
+VW
+VW
+VW
 lU
-Za
-Za
-lU
-lU
-bF
-bF
-bF
-bF
-bF
-bF
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 bE
@@ -12631,23 +12833,23 @@ YE
 vE
 ax
 ax
-jb
-lU
-xQ
-cp
-EU
-EU
-cp
-cp
-cq
-cp
-cp
-cp
-cp
-cY
-lU
-do
-do
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 dS
 dS
@@ -12655,20 +12857,20 @@ dS
 dS
 dS
 dS
-dS
-dS
-JO
-bP
-bP
 lU
+qO
+VW
+Bh
+VW
+VW
+MD
 lU
-lU
-lU
-lU
-lU
-lU
-lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 bE
@@ -12733,23 +12935,23 @@ YE
 vE
 vE
 ax
-jb
-lU
-Ci
-NF
-cp
-cp
-NF
-cp
-lU
-cd
-cp
-cA
-fc
-KZ
-lU
-dp
-dy
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 fD
 dI
@@ -12757,20 +12959,20 @@ dS
 dS
 dS
 dS
-dS
-dS
 lU
-bP
-bP
-lU
-QB
+At
 VW
-QB
+Us
+VW
+VW
+VW
 lU
-FG
-FG
-lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 ax
@@ -12835,23 +13037,23 @@ YE
 YE
 vE
 ax
-jb
-lU
-lU
-lU
-Nz
-lU
-lU
-lU
-lU
-lU
-cq
-lU
-lU
-lU
-lU
-cr
-dz
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 fD
 fD
@@ -12859,20 +13061,20 @@ dS
 dS
 dS
 dS
-dS
-dS
-bK
-bP
-bP
-BZ
+lU
+Vx
 VW
 VW
 VW
-mY
 VW
 VW
 lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 ax
 ax
@@ -12937,23 +13139,23 @@ sX
 YE
 vE
 ax
-jb
-lU
-AH
-cp
-cp
-ym
-lU
-bH
-bN
-ce
-cr
-cr
-cr
-cr
-cr
-cr
-Go
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 dS
 dS
@@ -12962,19 +13164,19 @@ dS
 lU
 lU
 lU
-lU
-lU
-bP
-bP
-lU
-SN
+rq
 VW
-ql
-lU
+oz
 VW
-VW
+vm
+Wm
 lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 ax
 ax
@@ -13039,44 +13241,44 @@ sX
 YE
 vE
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+lU
+dF
+dF
+dF
+dF
+lU
 jb
-bZ
-cp
-cp
-cp
-lR
 lU
-bI
-bP
-cf
-cr
-cC
-cM
-cZ
-gY
-cr
-cr
-dC
-dF
-dF
-dF
-dF
-dJ
-bP
-bP
-bP
-bP
-bP
-bP
-lU
-lU
-lU
-lU
-lU
-Vx
+Jf
 VW
+Bh
+VW
+uI
+Ks
 lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 ax
 ax
@@ -13141,44 +13343,44 @@ xI
 YE
 vE
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+lU
+dG
+dG
+dG
+dG
+lU
 jb
-JO
-cp
-cp
-cp
-mV
 lU
-bL
-bP
-cf
-cr
-cD
-cN
-da
-lU
-dq
-cr
-dC
-dG
-dG
-dG
-dG
-dJ
-bP
-bP
-bP
-zU
-bP
-bP
-lU
-GD
-La
-mQ
-VN
+nQ
+VW
+Bh
+VW
 VW
 VW
 lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13243,44 +13445,44 @@ ML
 YE
 vE
 ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+lU
+dS
+dS
+dS
+dS
+lU
 jb
 lU
-Ma
-cp
-cp
-tM
-lU
-ef
-bQ
-cg
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-lU
-dS
-dS
-dS
-dS
-lU
-lU
-Za
-lU
-lU
-Sk
-Yq
-lU
-xx
+Bh
 VW
-VW
+Bh
 VW
 VW
 VW
 lU
-bF
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13345,44 +13547,44 @@ dD
 YE
 vE
 ax
-jb
-lU
-lU
-lU
-Nz
-lU
-lU
-lU
-lU
-lU
-cs
-lU
-lU
-lU
-lU
-cr
-dA
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 fD
 dI
 dS
 lU
-qu
-bP
-bP
-qa
-lU
-jk
-jk
-lU
-qO
-VW
-Bh
-VW
-VW
-MD
 lU
 jb
+lU
+xp
+xp
+xp
+qj
+xp
+xp
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13447,44 +13649,44 @@ YE
 YE
 vE
 ax
-jb
-lU
-RF
-cp
-OH
-RF
-ih
-RF
-lU
-ch
-cr
-cE
-cO
-db
-lU
-dr
-bG
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 fD
 fD
 dS
 lU
-SO
-YD
-bP
-lE
-lU
-bP
-bP
-lU
-At
-VW
-Us
-VW
-VW
-VW
-lU
 jb
+jb
+lU
+pS
+pS
+pS
+FF
+pS
+pS
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13549,44 +13751,44 @@ vE
 vE
 vE
 ax
-jb
-lU
-cp
-cp
-cp
-cp
-cp
-yG
-lU
-ci
-cr
-cr
-cP
-dd
-lU
-ds
-dB
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 dS
 dS
 lU
 lU
-SO
-bP
-bP
-ZX
-lU
-bP
-bP
-lU
-Vx
-VW
-VW
-VW
-VW
-VW
-lU
 jb
+jb
+lU
+VW
+VW
+VW
+VW
+VW
+VW
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13651,44 +13853,44 @@ ax
 ax
 ax
 ax
-jb
-JO
-cp
-cp
-cp
-cp
-cp
-LT
-lU
-ci
-cr
-cF
-cR
-de
-lU
-dt
-dB
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 dS
 lU
 lU
 JO
-Ll
-rA
-CL
-MB
-lU
-bP
-bP
-lU
-rq
-VW
-oz
-VW
-vm
-Wm
-lU
 jb
+jb
+lU
+VW
+VW
+VW
+Pw
+nl
+xl
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13753,44 +13955,44 @@ ax
 ax
 ax
 ax
-jb
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
-cp
-cp
-cp
-cp
-cp
-TV
 lU
-ch
-cr
-cr
-cS
-df
-lU
-du
-dB
-lU
-lU
-lU
-jb
-lU
-bP
-bP
-bP
-Gp
-lU
-bP
-bP
-lU
-Jf
-VW
-Bh
-VW
-uI
-Ks
 lU
 jb
+lU
+jb
+jb
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+lU
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13855,44 +14057,44 @@ ax
 ax
 ax
 ax
-jb
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
-tv
-cp
-cp
-RF
-cp
-RF
-lU
-lU
-ct
-lU
-lU
-lU
-lU
-Za
-lU
-lU
-lU
-jb
-jb
-lU
-PZ
-bP
-bP
-ns
-lU
-bP
-bP
-lU
-xx
-VW
-VW
-VW
-VW
-VW
 lU
 jb
+jb
+lU
+jb
+jb
+jb
+jb
+lU
+bP
+bP
+lU
+jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -13957,23 +14159,23 @@ ax
 ax
 ax
 ax
-jb
-lU
-cp
-cp
-cp
-lU
-lU
-lU
-lU
-cj
-cu
-eE
-lU
-cn
-bP
-bP
-bP
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gz
 lU
 jb
@@ -13987,14 +14189,14 @@ lU
 bP
 bP
 lU
-VW
-VW
-VW
-VW
-VW
-VW
-lU
 jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -14059,23 +14261,23 @@ ax
 ax
 ax
 ax
-jb
-lU
-cp
-dQ
-cp
-JO
-cp
-Cw
-lU
-ck
-cu
-cH
-lU
-dg
-dj
-dw
-bP
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gQ
 lU
 jb
@@ -14089,14 +14291,14 @@ lU
 bP
 bP
 lU
-xp
-xp
-xp
-qj
-xp
-xp
-lU
 jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -14161,23 +14363,23 @@ ax
 ax
 ax
 ax
-jb
-lU
-Lt
-cp
-cp
-vS
-cp
-cp
-lU
-cl
-cu
-cJ
-lU
-dh
-lU
-dX
-bP
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 gW
 lU
 jb
@@ -14191,14 +14393,14 @@ lU
 bP
 bP
 lU
-pS
-pS
-pS
-FF
-pS
-pS
-lU
 jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -14263,23 +14465,23 @@ ax
 ax
 ax
 ax
-jb
-lU
-Lt
-DA
-Dq
-lU
-QP
-AI
-lU
-cm
-cu
-cJ
-lU
-lU
-lU
-lU
-lU
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 lU
 lU
 jb
@@ -14293,14 +14495,14 @@ lU
 bP
 bP
 lU
-VW
-VW
-VW
-VW
-VW
-VW
-lU
 jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -14365,23 +14567,23 @@ ax
 ax
 ax
 ax
-jb
-lU
-lU
-lU
-lU
-lU
-lU
-lU
-lU
-lU
-lU
-lU
-lU
-jb
-jb
-jb
-jb
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 jb
 jb
 jb
@@ -14395,14 +14597,14 @@ lU
 Zt
 Zt
 lU
-VW
-VW
-VW
-Pw
-nl
-xl
-lU
 jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -14467,20 +14669,20 @@ ax
 ax
 ax
 ax
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
-jb
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
+ax
 bE
 bE
 bE
@@ -14497,14 +14699,14 @@ lU
 lU
 lU
 lU
-lU
-lU
-lU
-lU
-lU
-lU
-lU
 jb
+jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax
@@ -14601,12 +14803,12 @@ pf
 lU
 jb
 jb
-jb
-jb
-jb
-jb
-jb
-jb
+ax
+ax
+ax
+ax
+ax
+ax
 ax
 ax
 ax

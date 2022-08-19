@@ -48,67 +48,67 @@
 
 /datum/cargo_entry/weapon/stubrifle
 	name = "Stub Rifle"
-	cost = 33
+	cost = 36
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
 
 /datum/cargo_entry/weapon/stubriflescoped
 	name = "Scoped Stub Rifle"
-	cost = 39
+	cost = 42
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
 
 /datum/cargo_entry/weapon/leverrifle
 	name = "Lever Stub Rifle"
-	cost = 36
+	cost = 39
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
 
 /datum/cargo_entry/weapon/triangong
 	name = "Triangong Stub Rifle"
-	cost = 41
+	cost = 44
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
 
 /datum/cargo_entry/weapon/sniperrifle
 	name = "Lp338 Sniper Rifle"
-	cost = 73
+	cost = 76
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
 
 /datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
-	cost = 99
+	cost = 103
 	item_path = /obj/item/gun/projectile/heavysniper
 
 /datum/cargo_entry/weapon/shotgun
 	name = "Voxlegis Shotgun"
-	cost = 37
+	cost = 40
 	item_path = /obj/item/gun/projectile/shotgun/pump/shitty
 
 /datum/cargo_entry/weapon/shotgunsawn
 	name = "Sawn-off Shotgun"
-	cost = 33
+	cost = 36
 	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 
 /datum/cargo_entry/weapon/shotgunmagrave
 	name = "Belle Magrave Shotgun"
-	cost = 43
+	cost = 47
 	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 
 /datum/cargo_entry/weapon/mk22
 	name = "Mk22 Autogun"
-	cost = 41
+	cost = 44
 	item_path = /obj/item/gun/projectile/automatic/machinepistol
 
 /datum/cargo_entry/weapon/a80
 	name = "Nachtwey Autogun"
-	cost = 53
+	cost = 56
 	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
 
 /datum/cargo_entry/weapon/stubbervilliers
 	name = "Villiers Heavy Stubber"
-	cost = 54
+	cost = 57
 	item_path = /obj/item/gun/projectile/automatic/stubber/villiers
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"
-	cost = 60
+	cost = 63
 	item_path = /obj/item/gun/projectile/automatic/stubber
 
 /datum/cargo_entry/weapon/lockebolter
@@ -118,22 +118,22 @@
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"
-	cost = 99
+	cost = 102
 	item_path = /obj/item/gun/energy/pulse/plasma/pistol
 
 /datum/cargo_entry/weapon/plasmarifle
 	name = "Plasma Rifle"
-	cost = 179
+	cost = 182
 	item_path = /obj/item/gun/energy/pulse/plasma/rifle
 
 /datum/cargo_entry/weapon/meltarifle
 	name = "Melta Rifle"
-	cost = 239
+	cost = 248
 	item_path = /obj/item/gun/projectile/meltagun
 
 /datum/cargo_entry/weapon/flamer
 	name = "Hand Flamer"
-	cost = 100
+	cost = 103
 	item_path = /obj/item/gun/projectile/automatic/flamer/handflamer
 
 /datum/cargo_entry/weapon/cadlaspistol

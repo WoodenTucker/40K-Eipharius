@@ -123,6 +123,7 @@
 	icon_state = "sheet-diamond"
 	default_type = "diamond"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 4
 
 /obj/item/stack/material/diamond/ten
 	amount = 10
@@ -135,6 +136,7 @@
 	icon_state = "sheet-uranium"
 	default_type = "uranium"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/uranium/ten
 	amount = 10
@@ -147,6 +149,7 @@
 	icon_state = "sheet-phoron"
 	default_type = "phoron"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 3
 
 /obj/item/stack/material/phoron/ten
 	amount = 10
@@ -171,6 +174,7 @@
 	icon_state = "sheet-gold"
 	default_type = "gold"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 3
 
 /obj/item/stack/material/gold/ten
 	amount = 10
@@ -183,6 +187,7 @@
 	icon_state = "sheet-silver"
 	default_type = "silver"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/silver/ten
 	amount = 10
@@ -196,6 +201,7 @@
 	icon_state = "sheet-adamantine"
 	default_type = "platinum"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/platinum/ten
 	amount = 10
@@ -210,6 +216,7 @@
 	icon_state = "sheet-mythril"
 	default_type = "mhydrogen"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/mhydrogen/ten
 	amount = 10
@@ -221,6 +228,7 @@
 	default_type = "tritium"
 	apply_colour = 1
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/tritium/ten
 	amount = 10
@@ -234,6 +242,7 @@
 	default_type = "osmium"
 	apply_colour = 1
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/osmium/ten
 	amount = 10
@@ -248,6 +257,7 @@
 	default_type = "osmium-carbide plasteel"
 	apply_colour = 1
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/ocp/ten
 	amount = 10
@@ -287,6 +297,7 @@
 	item_state = "sheet-metal"
 	default_type = "plasteel"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 1
 
 /obj/item/stack/material/plasteel/ten
 	amount = 10
@@ -333,6 +344,7 @@
 	icon_state = "sheet-leather"
 	default_type = "leather"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 1
 
 /obj/item/stack/material/glass
 	name = "glass"
@@ -365,6 +377,7 @@
 	icon_state = "sheet-phoronglass"
 	default_type = "phglass"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 2
 
 /obj/item/stack/material/glass/phoronglass/ten
 	amount = 10
@@ -379,6 +392,7 @@
 	icon_state = "sheet-phoronrglass"
 	default_type = "rphglass"
 	icon = 'icons/obj/items.dmi'
+	sales_price = 3
 
 /obj/item/stack/material/glass/phoronrglass/ten
 	amount = 10

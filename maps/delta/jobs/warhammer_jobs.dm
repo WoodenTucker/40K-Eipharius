@@ -26,10 +26,12 @@
 	/datum/job/bartender,
 	/* /datum/job/mining, */
 	/*/datum/job/cargo_tech, */
-	/* /datum/job/qm, */
+	/* /datum/job/qm1, */
 	/datum/job/chaplain,
 	/datum/job/sisterofbattle,
 	/datum/job/qm2,
+	/datum/job/gangboy,
+	/datum/job/janissary,
 	/datum/job/enforcer,
 	/datum/job/marshal,
 	/datum/job/innkeeper,

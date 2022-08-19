@@ -78,7 +78,7 @@
 
 /datum/cargo_entry/armor/heavycombatarmor
 	name = "Heavy Combat Armor"
-	cost = 115
+	cost = 130
 	item_path = /obj/item/clothing/suit/storage/vest/merc
 
 /datum/cargo_entry/armor/belt
@@ -93,12 +93,12 @@
 
 /datum/cargo_entry/armor/val
 	name = "Valhallan Equipment Crate"
-	cost = 100
+	cost = 110
 	item_path = /obj/structure/closet/crate/valhallan
 
 /datum/cargo_entry/armor/krieg
 	name = "Krieg Equipment Crate"
-	cost = 100
+	cost = 110
 	item_path = /obj/structure/closet/crate/krieg
 
 /datum/cargo_entry/armor/excr

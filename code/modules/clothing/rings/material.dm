@@ -22,24 +22,31 @@
 
 /obj/item/clothing/ring/material/wood/New(var/newloc)
 	..(newloc, "wood")
+	sales_price = 2
 
 /obj/item/clothing/ring/material/plastic/New(var/newloc)
 	..(newloc, "plastic")
+	sales_price = 1
 
 /obj/item/clothing/ring/material/steel/New(var/newloc)
 	..(newloc, "steel")
+	sales_price = 2
 
 /obj/item/clothing/ring/material/silver/New(var/newloc)
 	..(newloc, "silver")
+	sales_price = 6
 
 /obj/item/clothing/ring/material/gold/New(var/newloc)
 	..(newloc, "gold")
+	sales_price = 12
 
 /obj/item/clothing/ring/material/platinum/New(var/newloc)
 	..(newloc, "platinum")
+	sales_price = 14
 
 /obj/item/clothing/ring/material/bronze/New(var/newloc)
 	..(newloc, "bronze")
+	sales_price = 6
 
 /obj/item/clothing/ring/material/glass/New(var/newloc)
 	..(newloc, "glass")
