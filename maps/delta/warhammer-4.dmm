@@ -2304,11 +2304,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"QJ" = (
-/obj/structure/barbwire,
-/mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "QO" = (
 /obj/structure/bed{
 	desc = "A mass produced sleeping mat, now with actual cloth!";
@@ -40266,7 +40261,7 @@ cJ
 aF
 Cc
 cJ
-QJ
+cJ
 cV
 cV
 cV
@@ -40780,7 +40775,7 @@ cJ
 cJ
 Cc
 cJ
-QJ
+cJ
 cV
 cV
 cV
@@ -46433,9 +46428,9 @@ cK
 ak
 cJ
 Cc
-QJ
 cJ
-QJ
+cJ
+cK
 cJ
 cJ
 cJ
