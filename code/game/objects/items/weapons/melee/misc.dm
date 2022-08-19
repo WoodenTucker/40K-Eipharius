@@ -209,17 +209,16 @@
 /obj/item/melee/chain/inqcs/Guard // making them inqcs because it has the shittiest stats, dont want these to be strong
 	name = "Imperial Guard chainsword" //add it to guard outfits later down the track
 	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
-	icon_state = 'guardchainsword'
-	item_state = 'guardchainsword'
-	wielded_icon = 'guardchainsword'
+	icon_state = "guardchains"
+	item_state = "inqchainsword"
+	sales_price = 40
 
 /obj/item/melee/chain/inqcs/gold
 	name = "Terra Pattern Chainsword" //add it to RT's vault
 	desc = "A golden chainsword emblazened with over the top shine from it's expensive base metal. Almost as golden as a Custodes, you think."
-	icon_state = 'goldchainsword'
-	item_state = 'goldchainsword'
-	wielded_icon = 'goldchainsword'
-
+	icon_state = "goldchains"
+	item_state = "goldchains"
+	sales_price = 150 //only RT has it. if made craftable, decrease value.
 
 /obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
