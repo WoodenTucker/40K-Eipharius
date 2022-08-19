@@ -129,3 +129,4 @@
 	var/last_words = null
 	var/quote_cd = 0 //for yells
 	var/vice //For a characters selected vice
+	var/time_alive = 0 //for tracking played time
