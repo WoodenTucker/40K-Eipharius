@@ -1319,10 +1319,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"lW" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "md" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -2385,10 +2381,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"TJ" = (
-/obj/item/gun/projectile/ork/automatic/shoota,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/theforest)
 "TR" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -2487,12 +2479,20 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"Xc" = (
+/obj/item/gun/projectile/ork/automatic/shoota,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
 "Xr" = (
 /obj/structure/telearray/centreright,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"XB" = (
+/obj/item/gun/projectile/ork/automatic/shoota,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/theforest)
 "XS" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -4575,14 +4575,14 @@ cD
 cD
 bg
 cX
-lW
+Xc
 cX
 cX
 cX
 cX
 bg
 bg
-lW
+Xc
 cD
 AZ
 AZ
@@ -5598,7 +5598,7 @@ cD
 cD
 cX
 cX
-TJ
+XB
 cX
 bA
 bA
@@ -7144,7 +7144,7 @@ cX
 cE
 cX
 fp
-TJ
+XB
 cD
 cD
 cD
@@ -8425,7 +8425,7 @@ cN
 rX
 bc
 bA
-TJ
+XB
 bg
 bg
 cD

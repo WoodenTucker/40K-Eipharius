@@ -958,7 +958,7 @@
 "nEB" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/magistratumpost)
 "nEE" = (/obj/machinery/door/window/eastright,/turf/simulated/floor/tiled{color = "grey"; dir = 8; icon = 'icons/obj/sstairs.dmi'; icon_state = "above"; name = "stairs"},/area/cadiaoutpost/oa/security)
 "nFn" = (/obj/structure/table/rack/shelf{color = "grey"},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/villageinside)
-"nFw" = (/obj/effect/floor_decal/newcorner/shaft/diagonal,/obj/structure/closet/crate/medical,/obj/effect/floor_decal/turf/metal/five,/obj/machinery/light/small{dir = 8; icon_state = "bulb1"; light_color = "#234F1E"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/habs)
+"nFw" = (/obj/effect/floor_decal/newcorner/shaft/diagonal,/obj/structure/closet/crate/medical,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/habs)
 "nFW" = (/obj/structure/table/standard{color = "grey"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "nGo" = (/obj/structure/table/rack/shelf{color = "grey"},/obj/item/reagent_containers/food/drinks/bottle/small/beer,/obj/item/reagent_containers/food/drinks/bottle/small/beer,/obj/item/reagent_containers/food/drinks/bottle/small/beer,/obj/effect/floor_decal/turf/plating,/obj/item/storage/pill_bottle/happy,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
 "nGY" = (/obj/structure/toilet{dir = 1; icon_state = "toilet00"},/obj/machinery/light/small{dir = 8; icon_state = "bulb1"},/obj/effect/floor_decal/turf/checkers/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
