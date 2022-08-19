@@ -158,4 +158,4 @@
 	recipes += new/datum/stack_recipe("slugga magazine", /obj/item/ammo_magazine/ork/slugga, 5, 1, 1, 0, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap mek-mace", /obj/item/material/mekmace, 5, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Steel Choppa", /obj/item/material/sword/choppa, 15, 1, 1, 10)
-	recipes += new/datum/stack_recipe("Power Claw", , 30, 1, 1, 10)
+

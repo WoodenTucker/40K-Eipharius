@@ -205,37 +205,54 @@
 // Ork
 
 /obj/item/clothing/head/helmet/orkhelmet
-	name = "Ork Helmet"
-	desc = "Literal bucket with horns glued on it, due to orkish belief it is a bit stronger than light flak helmets."
+	name = "Metal Ork Helmet"
+	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 25, bullet = 30, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 10
 
-/obj/item/clothing/head/helmet/orkhelmet/two
+/obj/item/clothing/head/helmet/orkhelmet/leather
+	name = "Boy's Letha Helmet"
+	desc = "Da most cam-. Comma-. Cahm-. A LOT OF BOYS HAVE DIS HERE LEATHA 'ELMET IN DA WAAAAGH!"
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/head/helmet/orkhelmet/three
+/obj/item/clothing/head/helmet/orkhelmet/horns
+	name = "Spiky Leatha helmet"
+	desc = "Da normal leather 'elmet, but a git's gon' and glue'd some spikey horns on it! What a mad lad innit? More melee protektion, it just makez sense!"
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 20, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/head/helmet/orkhelmet/four
+/obj/item/clothing/head/helmet/orkhelmet/sight
+	name = "Flashgitz Sighta"
+	desc = "Da sights of a Flashgitz, or even a Loota. Ya reckon dat bit of glass will deflect dem lasers, givin' added protektion."
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
+
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 10, laser = 10, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 15, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet/fur
+	name = "Grenadir Fur 'Elmet"
+	desc = "Keeps da bombas away from ya noggin. 'Elps against bombs, dunno bout shrapnel, mate."
+	icon_state = "orkhelmetfur"
+	item_state = "orkhelmetfur"
+	cold_protection = HEAD
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 60, bio = 0, rad = 0)
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 // Tau
 

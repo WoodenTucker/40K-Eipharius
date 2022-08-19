@@ -275,7 +275,7 @@
 		/obj/item/ammo_casing/shotgun/pellet    = "12 gauge",
 		/obj/item/ammo_casing/shotgun/pellet    = "12 gauge",
 		/obj/item/ammo_casing/shotgun/beanbag   = "12 gauge",
-		/obj/item/ammo_casing/shotgun/shell = "12 gauge",
+		/obj/item/ammo_casing/shotgun/blank = "12 gauge",
 		/obj/item/ammo_casing/shotgun/flash     = "12 gauge",
 		/obj/item/ammo_casing/a762              = "7.62mm",
 		/obj/item/ammo_casing/a556              = "5.56mm"
