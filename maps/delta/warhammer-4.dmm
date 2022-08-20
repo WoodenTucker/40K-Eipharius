@@ -208,6 +208,7 @@
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aC" = (
 /obj/structure/closet/secure_closet/guncabinet,
+/obj/item/gun/projectile/bolter_pistol/gold,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -457,7 +458,6 @@
 /obj/item/material/hatchet/machete/deluxe{
 	name = "rogue trader's machete"
 	},
-/obj/random/loot/goodweapon,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -1306,11 +1306,11 @@
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "nh" = (
 /obj/structure/closet/secure_closet/guncabinet,
-/obj/item/gun/projectile/bolter_pistol,
 /obj/machinery/light{
 	dir = 1;
 	icon_state = "tube1"
 	},
+/obj/item/melee/chain/inqcs/gold,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -1963,8 +1963,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "FP" = (
 /obj/structure/closet/secure_closet/guncabinet,
-/obj/random/loot/lightlasgun,
-/obj/random/loot/lightlasgun,
+/obj/item/gun/energy/las/lasgun/tinkered,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -2288,6 +2287,14 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"VE" = (
+/obj/structure/closet/secure_closet/guncabinet,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "VF" = (
 /obj/effect/floor_decal/carpet/green{
 	dir = 9
@@ -34047,7 +34054,7 @@ cD
 cD
 AZ
 nG
-aC
+VE
 aG
 aG
 aG
