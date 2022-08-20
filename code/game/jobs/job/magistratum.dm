@@ -164,7 +164,7 @@ Begin Warhammer loadouts
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/revolver/cpt
+	belt = /obj/item/gun/projectile/revolver/cpt/marshal
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
