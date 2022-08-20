@@ -514,7 +514,7 @@
 	desc = "An helmet issued to members of the Vindicare Temple."
 	icon_state = "stealth_rig_sealed"
 	item_state = "stealth_rig_sealed"
-	armor = list(melee = 25, bullet = 50, laser = 45, energy = 20, bomb = 30, bio = 10, rad = 10)
+	armor = list(melee = 40, bullet = 50, laser = 45, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 	sales_price = 35
 
