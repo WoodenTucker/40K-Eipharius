@@ -90,6 +90,7 @@
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(
+		/obj/item/gun/energy/pulse/plasma/pistol/mechanicus = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
 		/obj/item/stack/thrones3/five = 1,

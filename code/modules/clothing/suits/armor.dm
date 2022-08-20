@@ -260,38 +260,41 @@ obj/item/clothing/suit/armor
 // Ork
 
 /obj/item/clothing/suit/armor/orkarmor
-	name = "ork armor"
-	desc = "Scavenged bitz to keep ya' krumpin' longa'!"
+	name = "'Eavy Metal Ork Armor"
+	desc = "Scavenged 'eavy bitz to keep ya' krumpin' longa'!"
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor"
-	armor = list(melee = 15, bullet = 10, laser = 10, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
-	allowed = list(/obj/item/gun/projectile/ork/automatic/shoota, /obj/item/material/sword/choppa)
+	allowed = list(/obj/item/gun/projectile/ork, /obj/item/material/sword/choppa)
 	blood_overlay_type = "armor"
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/orkarmor/two
-	icon_state = "bondagearmor"
-	item_state = "bondagearmor"
+/obj/item/clothing/suit/armor/orkarmor/snazzy
+	name = "Snazzy Shoota Armor"
+	desc = "Snazzy Armor of em ranged shoota boy types. Gud all rounda. Wat eva dat wurd means..."
+	icon_state = "snazzya"
+	item_state = "snazzya"
+	armor = list(melee = 20, bullet = 25, laser = 25, energy = 20, bomb = 25, bio = 0, rad = 0)
 
-/obj/item/clothing/suit/armor/orkarmor/three
-	icon_state = "potarmor"
-	item_state = "potarmor"
+/obj/item/clothing/suit/armor/orkarmor/skullza
+	name = "Orky Boy Skull Armor"
+	desc = "Da armor of a real lova of humie skullz'. Dis Boy 'oves gettin' in klose kombat, it's defeenses help loads in da maylays!"
+	icon_state = "ork_skullza"
+	item_state = "ork_skullza"
+	armor = list(melee = 35, bullet = 20, laser = 20, energy = 20, bomb = 25, bio = 0, rad = 0)
 
-/obj/item/clothing/suit/armor/orkarmor/four
-	icon_state = "snazzarmor"
-	item_state = "snazzarmor"
 
-/obj/item/clothing/suit/armor/orkarmor/five
-	icon_state = "armLskull"
-	item_state = "armLskull"
+/obj/item/clothing/suit/armor/orkarmor/zog
+	name = "Zogging Ork Boy Armor"
+	desc = "Da buttom of de barrel, dis one. Won't protek ya much. Betta dun nuffin, me guesses..."
+	icon_state = "zoga"
+	item_state = "zoga"
+	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 15, bio = 0, rad = 0)
 
-/obj/item/clothing/suit/armor/orkarmor/five
-	icon_state = "armRskull"
-	item_state = "armRskull"
 
 // NOBLES & SERVANTS
 /obj/item/clothing/suit/armor/rtcloak

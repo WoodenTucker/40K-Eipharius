@@ -408,7 +408,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 		list(mode_name="fuller automatic", burst=3, fire_delay=5.1,    one_hand_penalty=7, burst_accuracy=list(-2,-3,-4), dispersion=list(0.2, 0.3, 0.3), automatic = 0.7),
 		)
-
+	sales_price = 120 // make it a bit worse than hotshot
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
@@ -448,6 +448,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="automatic", 	burst=3, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 	)
+	sales_price = 100
 
 
 /obj/item/gun/energy/las/laspistol/defender
@@ -625,9 +626,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
-	accuracy = -3
+	accuracy = -4
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 13 // something something its recharging
+	fire_delay = 15 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -643,13 +644,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "ppistol"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 10
-	one_hand_penalty = 2 //change later?
-	accuracy = -3
-	move_delay = 3 //it a pistol
-	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	one_hand_penalty = 10 //change later?
+	accuracy = -5
+	move_delay = 3 //it a pistol, but giga cool plasma
+	fire_delay = 11 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -665,14 +666,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "ppistol"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
 	str_requirement = 18 // astartes moment
 	force = 20
-	one_hand_penalty = 2 //change later?
-	accuracy = -2
+	one_hand_penalty = 5 //change later?
+	accuracy = -4
 	move_delay = 3 //it a pistol
-	fire_delay = 6 // unsure if decent. dont want fast fire rate
+	fire_delay = 9 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
@@ -683,19 +682,17 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 99
 
 
-/obj/item/gun/energy/pulse/plasma/pistol/chaos
+/obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
 	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "chaosppistol"
 	item_state = "chaosppistol"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
 	force = 10
-	one_hand_penalty = 2 //change later?
-	accuracy = -3
+	one_hand_penalty = 10 //change later?
+	accuracy = -6
 	move_delay = 3 //it a pistol
-	fire_delay = 8 // unsure if decent. dont want fast fire rate
+	fire_delay = 10 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -703,5 +700,26 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
 	charge_meter = FALSE //no ammo icon state currently invisible
+	wielded_item_state = "pulse_pistol"
+	sales_price = 79
+
+
+/obj/item/gun/energy/pulse/plasma/pistol/mechanicus
+	name = "Ryza Pattern Plasma Pistol"
+	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. (cannot explode yet)"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "toasterppistol"
+	item_state = "toasterppistol"
+	force = 10
+	one_hand_penalty = 10 //until plasma is better balanced, wield this fancy one.
+	accuracy = -4
+	move_delay = 3
+	fire_delay = 10
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	charge_cost = 200
 	wielded_item_state = "pulse_pistol"
 	sales_price = 79

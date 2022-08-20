@@ -289,7 +289,7 @@
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/under/rank/ork
+/obj/item/clothing/under/rank/ork // only using this one atm
 	desc = "Tattered and torn from a life of battle and strife."
 	name = "ork rags"
 	icon_state = "ork_clothes"
