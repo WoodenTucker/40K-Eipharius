@@ -59,6 +59,7 @@
 /obj/item/material/mekmace
 	name = "scrap mace"
 	desc = "A mace normally used by the ork meks, made of scrap."
+	str_requirement = 13
 	force = 35
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
