@@ -159,20 +159,23 @@
 		var/obj/item/stack/M = O
 		if(M.amount > 1)
 			M.amount -=1
-			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country. [M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
+			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country.")
+			to_chat(user, "[M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
 			src.balance += M.sales_price - round(M.sales_price * GLOB.tax_rate, 1)
 			GLOB.thrones += round(M.sales_price * GLOB.tax_rate,1) //taxes on all sales through the system
 			playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 			M.update_icon() //so coins in hand update
 			return
 		else
-			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country. [M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
+			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country.")
+			to_chat(user, "[M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
 			src.balance += M.sales_price - round(M.sales_price * GLOB.tax_rate, 1)
 			GLOB.thrones += round(M.sales_price * GLOB.tax_rate) //taxes on all sales through the system
 			qdel(M)
 			return
 	else
-		visible_message("[user] places [O] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country. [O.sales_price - round(O.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
+		visible_message("[user] places [O] onto the [src]. With a flash of light and a crackle the item is transported to the Oktober Country.")
+		to_chat(user, "[O.sales_price - round(O.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
 		src.balance += O.sales_price - round(O.sales_price * GLOB.tax_rate, 1)
 		GLOB.thrones += round(O.sales_price * GLOB.tax_rate,1) //taxes on all sales through the system
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)

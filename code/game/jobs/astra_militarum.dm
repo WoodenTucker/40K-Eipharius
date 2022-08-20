@@ -48,8 +48,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 4
+	spawn_positions = 4
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -69,7 +69,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(14,16), rand(14,16), rand(12,16), rand (8,14))
+		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -111,8 +111,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Conscript"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -127,7 +127,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,14), rand(12,14), rand(12,14), rand (8,14))
+		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
 		H.add_skills(rand(6,9),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -197,8 +197,8 @@
 /datum/job/ig/sergeant
 	title = "Sergeant"
 	supervisors = "The Rogue Trader."
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#33813A"
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
@@ -225,7 +225,7 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,17), rand(14,17), rand(14,18), rand(13,15))
+		H.add_stats(rand(16,17), rand(16,17), rand(16,18), rand(13,15))
 		H.add_skills(rand(8,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
@@ -357,7 +357,7 @@
 				/mob/living/carbon/human/proc/tzeentch)
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,18), rand(13,18), rand(12,16), rand(16,17))
+		H.add_stats(rand(16,18), rand(16,18), rand(12,16), rand(16,17))
 		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are heavily trained
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)

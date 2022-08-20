@@ -19,7 +19,6 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
@@ -204,7 +203,8 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(9,12), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_stats(rand(13,15), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
@@ -214,29 +214,26 @@ Pilgrim Fate System
 		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
-
-
-
-/datum/job/administrator  //so that the inn always has someone working
-	title = "Administratum Adept"
-	department_flag = PIL|COM
-	social_class = SOCIAL_CLASS_HIGH //better off than your average gross pilgrim
+/datum/job/gangboy
+	title = "Ganger"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
 	total_positions = 1
 	spawn_positions = 1
-	head_position = 1
-	open_when_dead = 1
-	supervisors = "the Administratum at large"
-	selection_color = "#515151"
-	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
-	outfit_type = /decl/hierarchy/outfit/job/administrator
+	open_when_dead = 0
+	supervisors = "Yourself"
+	selection_color = "#848484"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(10,12), rand(9,12), rand(10,12), rand (12,15)) //a lil better fed than others.
+		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.verbs += list(
@@ -244,8 +241,7 @@ Pilgrim Fate System
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Imperium's Administratum liason on this world. You act as a go-between for the village and the outpost. Work with your magistratum enforcers to ensure no Imperial laws are violated and to collect taxes to pay off the tithe. Ensure there are pilgrims working the farm and manage the market, the stalls are yours to rent out! </font></b></span>")
-
+		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
 
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
@@ -259,6 +255,18 @@ Pilgrim Fate System
 	gloves = null
 	pda_slot = null
 
+/decl/hierarchy/outfit/job/ganger
+	name = OUTFIT_JOB_NAME("Ganger")
+	uniform = /obj/item/clothing/under/syndicate
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/prac_boots
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	backpack_contents = list(
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
+	/obj/item/storage/box/beanbags = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+)
 
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")

@@ -267,7 +267,6 @@
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1.25
 	penetrating = 1
-	accuracy = 2
 
 /obj/item/projectile/bullet/rifle/a145/apds
 	damage = 55
@@ -401,12 +400,12 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 50
+	damage = 42
 
 /obj/item/projectile/bullet/ork/shoota
 	name = "piece of trash"
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 50
+	damage = 42
 
 
 
@@ -414,13 +413,13 @@
 
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 70
+	damage = 50
 	armor_penetration = 50
 	penetration_modifier = 1.4
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 70
+	damage = 60
 	armor_penetration = 50
 	penetration_modifier = 1.8
 
@@ -475,7 +474,7 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 70
 	damage_type = BURN
-	armor_penetration = 20
+	armor_penetration = 40
 	penetration_modifier = 1.2
 
 /obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
@@ -486,18 +485,18 @@
 	penetration_modifier = 1.4
 
 
-
+	
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 160
+	damage = 140
 	damage_type = BURN
-	penetration_modifier = 3
+	penetration_modifier = 2 
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 240
+	damage = 220
 	damage_type = BURN
 	penetration_modifier = 2
 
@@ -506,7 +505,7 @@
 	icon_state = "shot"
 	damage = 60
 	damage_type = BRUTE
-	armor_penetration = 75
+	armor_penetration = 35
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/shuriken/pistol
@@ -514,5 +513,5 @@
 	icon_state = "shot"
 	damage = 40
 	damage_type = BRUTE
-	armor_penetration = 50
-	penetration_modifier = 1.5
+	armor_penetration = 20
+	penetration_modifier = 2

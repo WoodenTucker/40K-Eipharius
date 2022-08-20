@@ -966,6 +966,13 @@ Area basic template
 	dynamic_lighting = 1
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/service/habs
+	name = "Habs"
+	icon_state = "inn"
+	music = 'sound/newmusic/Hab.ogg'
+	dynamic_lighting = 1
+	requires_power = FALSE
+
 /area/cadiaoutpost/oa/service/chapel
 	name = "Chapel"
 	icon_state = "chapel"
