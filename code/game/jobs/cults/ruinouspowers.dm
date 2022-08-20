@@ -126,7 +126,7 @@
 
 /mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
 	if(client)
-		if(!cult_favor) // Mind transferred. Remove cult icons.
+		if(!cult_favor || (mind.special_role != "Mercenary" || mind.special_role != "Tyranid")) // Mind transferred. Remove cult icons.
 			client.images.Cut()
 			return FALSE
 		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
