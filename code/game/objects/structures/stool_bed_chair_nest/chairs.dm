@@ -261,13 +261,11 @@
 /obj/structure/bed/chair/cage
 	name = "cage"
 	desc = "A horrible cramped cage."
-	icon = 'icons/obj/structures/miscobjs.dmi'
-	base_icon = "cage"
-	icon_state = "cage"
+	base_icon = "cage1"
+	icon_state = "cage1"
 
 /obj/structure/bed/chair/altar
 	name = "altar"
 	desc = "A disgusting stone altar."
-	icon = 'icons/obj/structures/miscobjs.dmi'
 	base_icon = "altar_empty"
 	icon_state = "altar_empty"
