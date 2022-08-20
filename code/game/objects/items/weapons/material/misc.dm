@@ -141,7 +141,8 @@
 	icon_state = "choppa"
 	item_state = "choppa"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 35
+	force = 42
+	block_chance = 25
 	sharp = 1
 	edge = 1
 	hitsound = "slash_sound"

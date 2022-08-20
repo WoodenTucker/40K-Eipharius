@@ -319,7 +319,7 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
 	name = "Boltpistol Magazine"
-	icon_state = "ersatz"
+	icon_state = "tinyersatz"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -353,6 +353,7 @@
 
 /obj/item/ammo_magazine/ork/slugga
 	name = "slugga magazine"
+	desc = "ALL DA LI'L PISTALS USE DIS ONE YA GIT!"
 	icon_state = "slugga"
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -366,6 +367,7 @@
 
 /obj/item/ammo_magazine/ork/shoota
 	name = "shoota magazine"
+	desc = "DIS ONE'S FOR DA BIG UN SHOOTAS WITH DA ROIFLE BOOLETS!"
 	icon_state = "shoota"
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -381,7 +383,7 @@
 //-----SPECIAL BOLTER MAGS-----
 /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 	name = "Metal Storm Boltpistol Magazine"
-	icon_state = "ersatz"
+	icon_state = "tinyersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -409,7 +411,7 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 	name = "Kraken Penetrator Boltpistol Magazine"
-	icon_state = "ersatz"
+	icon_state = "krakenersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"
@@ -423,7 +425,7 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	name = "Kraken Penetrator Bolter Magazine"
-	icon_state = "ersatz"
+	icon_state = "krakenersatz"
 	origin_tech = list(TECH_COMBAT = 4)
 	mag_type = MAGAZINE
 	caliber = ".75"

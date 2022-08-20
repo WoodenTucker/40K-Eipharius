@@ -226,7 +226,7 @@
 
 
 /obj/item/projectile/energy/pulse/plasmarifle
-	name = "pplasma round"
+	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"

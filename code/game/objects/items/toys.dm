@@ -253,7 +253,7 @@
 /*
  * Toy swords
  */
-/obj/item/toy/bear
+/*/obj/item/toy/bear
 	name = "teddy bear"
 	desc = "What the fuck is this thing?"
 	icon = 'icons/obj/bowl.dmi'
@@ -286,7 +286,7 @@
 
 	playsound(src.loc, 'sound/misc/teddynoise.ogg', 50, 1)
 	times_used += 1
-
+*/ //test purposes. remove later
 /obj/item/toy/sword
 	name = "toy sword"
 	desc = "A cheap, plastic replica of an energy sword. Realistic sounds! Ages 8 and up."

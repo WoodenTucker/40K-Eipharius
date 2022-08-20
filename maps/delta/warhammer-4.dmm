@@ -71,10 +71,6 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"am" = (
-/obj/item/melee/classic_baton/trench_club,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "an" = (
 /turf/simulated/shuttle/wall,
 /area/cadiaoutpost/oa/shuttle/aquila)
@@ -306,10 +302,6 @@
 /obj/structure/ladder,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"aQ" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "aR" = (
 /obj/effect/floor_decal/carpet/green{
 	dir = 1
@@ -383,10 +375,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"bc" = (
-/obj/item/device/cassette/orks1,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "bd" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/item/flame/candle/dinner{
@@ -419,16 +407,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bg" = (
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/theforest)
 "bh" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside)
-"bk" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "bm" = (
 /obj/structure/table/steel_reinforced,
 /obj/machinery/recharger,
@@ -458,10 +439,6 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bq" = (
-/obj/item/gun/projectile/automatic/flamer/handflamer,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "bs" = (
 /obj/machinery/door/airlock/highsecurity/guardarmory{
 	name = "Secure Vault";
@@ -485,14 +462,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bv" = (
-/obj/item/material/sword/choppa{
-	weapon_speed_delay = 6;
-	color = "red";
-	name = "fast choppa"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "bw" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -521,9 +490,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bA" = (
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "bB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/snow,
@@ -595,10 +561,6 @@
 /obj/item/clothing/glasses/cadiangoggles/elite,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bM" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "bN" = (
 /obj/machinery/light{
 	dir = 4
@@ -750,10 +712,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"ck" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "cl" = (
 /obj/effect/floor_decal/carpet/green,
 /obj/structure/cable{
@@ -883,10 +841,6 @@
 "cD" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/theforest)
-"cE" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "cH" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/theforest)
@@ -900,20 +854,10 @@
 "cM" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/bridge/hallway)
-"cN" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "cP" = (
 /obj/machinery/teleport/hub,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-"cS" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/theforest)
 "cV" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -1046,10 +990,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"eB" = (
-/obj/item/grenade/frag/high_yield/homemade,
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/theforest)
 "eS" = (
 /obj/machinery/newscaster{
 	pixel_w = 2;
@@ -1098,14 +1038,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"fp" = (
-/obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
-"fy" = (
-/obj/item/ammo_magazine/ork/shoota,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "fB" = (
 /obj/item/card/id/innkey3{
 	name = "Master Key";
@@ -1132,14 +1064,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"gi" = (
-/obj/item/gun/launcher/rcl_rifle,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
-"gp" = (
-/obj/structure/orkbanna,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "gO" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable,
@@ -1231,10 +1155,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"jA" = (
-/obj/item/ammo_magazine/ork/slugga,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "jM" = (
 /obj/machinery/newscaster{
 	pixel_y = 33
@@ -1556,10 +1476,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"rf" = (
-/obj/item/pyre/self_lit,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "rm" = (
 /turf/simulated/wall/ancient{
 	color = null
@@ -1570,10 +1486,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"rX" = (
-/obj/item/device/boombox,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "rY" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -1613,12 +1525,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"tb" = (
-/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
-	name = "humie medicines"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "td" = (
 /turf/simulated/open,
 /turf/simulated/shuttle/wall/corner/smoothwhite{
@@ -1642,10 +1548,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"ue" = (
-/obj/item/ammo_magazine/flamer,
-/turf/simulated/floor/trench,
-/area/cadiaoutpost/oa/theforest)
 "uR" = (
 /obj/effect/floor_decal/turf/cafe2,
 /turf/simulated/floor/tiled/dark,
@@ -1863,12 +1765,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"ym" = (
-/obj/item/reagent_containers/hypospray/autoinjector/pain{
-	name = "humie medicines"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "yx" = (
 /obj/structure/mirror{
 	pixel_y = -32
@@ -2055,15 +1951,6 @@
 /obj/structure/flora/ausbushes,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"FA" = (
-/obj/item/gun/projectile/ork/automatic/shoota{
-	name = "fast shoota";
-	accuracy = -10;
-	automatic = 0.65;
-	color = "red"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "FM" = (
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 4000;
@@ -2082,12 +1969,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"GB" = (
-/obj/effect/landmark{
-	name = "orkstart"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "GO" = (
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -2401,11 +2282,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"UB" = (
-/obj/item/ammo_casing/heat_shell,
-/obj/item/ammo_casing/heat_shell,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "UT" = (
 /obj/structure/railing{
 	dir = 8
@@ -2427,10 +2303,6 @@
 	},
 /turf/simulated/floor/carpet/green,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Wl" = (
-/obj/item/pickaxe,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/theforest)
 "Wq" = (
 /obj/structure/railing{
 	dir = 8
@@ -3016,10 +2888,10 @@ cH
 cH
 cH
 cH
-AZ
-AZ
-AZ
-AZ
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -3273,24 +3145,24 @@ cH
 cH
 cH
 cH
-AZ
-AZ
-AZ
-AZ
-AZ
 cH
 cH
 cH
 cH
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 AZ
@@ -3530,24 +3402,24 @@ cH
 cH
 cH
 cH
-AZ
-AZ
-AZ
-cX
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-cD
-cD
-cD
-AZ
-cD
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 AZ
@@ -3787,25 +3659,25 @@ cH
 cH
 cH
 cH
-AZ
-AZ
-cD
-cX
-cD
-cD
-AZ
-AZ
-cD
-cD
-cD
-bg
-cD
-AZ
-cD
-bg
-bg
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 AZ
 "}
@@ -4045,25 +3917,25 @@ cH
 cH
 cH
 cH
-AZ
-cD
-cX
-cD
-cD
-cD
-cD
-cD
-bg
-bg
-bg
-cD
-cD
-cD
-bg
-cX
-cD
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (7,1,1) = {"
@@ -4301,26 +4173,26 @@ cH
 cH
 cH
 cH
-AZ
-cD
-cD
-cX
-cX
-cD
-cD
-cD
-bg
-cX
-cX
-bg
-bg
-bg
-bg
-cX
-bg
-cX
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (8,1,1) = {"
@@ -4558,26 +4430,26 @@ cH
 cH
 cH
 cH
-AZ
-cD
-cX
-cX
-Wl
-cX
-cD
-cD
-bg
-cX
-cX
-cX
-cX
-cX
-cX
-bg
-bg
-cX
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (9,1,1) = {"
@@ -4815,26 +4687,26 @@ cH
 cH
 cH
 cH
-AZ
-cD
-Wl
-ck
-cX
-cX
-cX
-bA
-bA
-bk
-bg
-cS
-bg
-cX
-cX
-bg
-bg
-bg
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (10,1,1) = {"
@@ -5072,26 +4944,26 @@ cH
 cH
 cH
 cH
-AZ
-cD
-cX
-cX
-cX
-bM
-cX
-bk
-bA
-bA
-bg
-bg
-eB
-cX
-cX
-cX
-bg
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (11,1,1) = {"
@@ -5329,26 +5201,26 @@ cH
 cH
 cH
 cH
-AZ
 cH
-cD
-cD
-cX
-cX
-cX
-bA
-bA
-cN
-bA
-bA
-cE
-cX
-cD
-cD
-cD
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (12,1,1) = {"
@@ -5586,26 +5458,26 @@ cH
 cH
 cH
 cH
-AZ
-cD
-cD
-cX
-cX
-bg
-cX
-bA
-bA
-bA
-bA
-bA
-am
-cX
-cD
-AZ
-AZ
-AZ
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 AZ
 "}
 (13,1,1) = {"
@@ -5834,30 +5706,30 @@ cH
 cH
 cD
 cD
-cD
-cD
-cD
 cH
 cH
-AZ
-AZ
-AZ
-AZ
-AZ
-cD
-UB
-gi
-bg
-cX
-cX
-fy
-bA
-bA
-bA
-bA
-cX
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -6091,30 +5963,30 @@ cH
 cD
 cD
 cD
-cD
-cD
-cD
-cD
-cD
-AZ
-cD
-cD
-cD
-cD
-cD
-cX
-cX
-bg
-cX
-cX
-cX
-bA
-bg
-cX
-cD
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cJ
 cJ
@@ -6348,30 +6220,30 @@ cH
 cD
 cJ
 cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-bA
-cX
-cX
-cX
-bg
-bg
-cX
-cX
-cX
-bg
-cX
-cX
-cD
-cD
-AZ
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cJ
 cJ
@@ -6606,26 +6478,26 @@ cJ
 cJ
 cD
 cD
-cD
-cD
-cD
-cX
-FA
-cX
-cX
-bA
-bA
-bA
-cX
-cX
-cE
-cX
-GB
-bg
-bg
-fp
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -6863,28 +6735,28 @@ cJ
 cJ
 cD
 cD
-cD
-cD
-cD
-cX
-cX
-cX
-bA
-bA
-aQ
-fy
-bA
-cX
-cX
-cX
-rf
-cX
-cX
-cX
-cD
-AZ
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cJ
@@ -7121,27 +6993,27 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cX
-cX
-bv
-bk
-bA
-bA
-bA
-cX
-gp
-cX
-cE
-cX
-fp
-bg
-cD
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cJ
 cJ
@@ -7378,27 +7250,27 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cX
-cX
-ue
-bA
-bA
-bA
-bA
-bA
-cX
-cX
 cH
 cH
-cX
-cX
-cX
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cJ
 cJ
@@ -7635,27 +7507,27 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cX
-cX
-bA
-bA
-bA
-bq
-bA
-bA
-bA
-bM
 cH
-cX
-cX
-bg
-cX
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cJ
 cJ
@@ -7892,27 +7764,27 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cD
-fp
-bA
-bA
-bA
-bA
-bA
-bA
-jA
-bA
-cX
-cX
-cX
-bg
-cX
-cD
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cJ
 cJ
@@ -8149,25 +8021,25 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cD
-cX
-bA
-bA
-bA
-bA
-rX
-bc
-bA
-bA
-cX
-cX
-bg
-bg
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -8406,24 +8278,24 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cD
-cX
-jA
-bA
-bA
-cN
-rX
-bc
-bA
-bg
-bg
-bg
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cJ
@@ -8663,23 +8535,23 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cD
-gp
-bA
-bA
-bA
-bA
-rX
-bc
-bA
-cX
-cD
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cJ
@@ -8920,22 +8792,22 @@ cJ
 cJ
 cD
 cD
-cD
-cD
-cD
-cX
-cX
-bA
-bA
-bA
-bA
-bA
-bA
-bA
-cD
-cD
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cJ
@@ -9178,19 +9050,19 @@ cJ
 cJ
 cD
 cD
-cD
-cD
-cX
-cX
-bA
-bA
-fy
-bA
-bA
-bA
-cX
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -9435,19 +9307,19 @@ cJ
 cJ
 cD
 cD
-cD
-cD
-cD
-gp
-cX
-cX
-cX
-bA
-cX
-cX
-cD
-cD
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -9692,18 +9564,18 @@ cJ
 cJ
 cD
 cD
-cD
-cD
-cD
-cD
-tb
-ym
-tb
-cD
-cD
-cD
-AZ
-AZ
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -9950,17 +9822,17 @@ cJ
 cD
 cD
 cD
-cD
-cD
-cD
-cD
-AZ
-AZ
-AZ
-AZ
-AZ
-cD
-cD
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
@@ -10209,14 +10081,14 @@ cD
 cD
 cD
 cD
-AZ
-AZ
-AZ
-cD
-cD
-cD
-cD
-cD
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cH
 cH
 cH
