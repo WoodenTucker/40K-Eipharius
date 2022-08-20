@@ -156,15 +156,13 @@
 /obj/structure/bed/royal
 	name = "royal bed"
 	desc = "For prime comfort in absolute luxury."
-	icon = 'icons/obj/bigbed2.dmi'
+	icon = 'icons/obj/bigbed.dmi'
 	icon_state = "bed"
-	base_icon = "bed"
 
 /obj/structure/bed/royal/bottom
 	name = "royal bed"
 	desc = "For prime comfort in absolute luxury."
 	icon_state = "bed2"
-	base_icon = "bed2"
 
 /obj/structure/bed/psych
 	name = "psychiatrist's couch"
