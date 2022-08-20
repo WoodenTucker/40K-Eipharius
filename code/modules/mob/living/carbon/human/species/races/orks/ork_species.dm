@@ -60,9 +60,9 @@
 	var/dice = rand(1, 2)
 	switch(dice)
 		if(1)
-			playsound(src, 'sound/voice/ork/dakkashout3.ogg', 50)
+			playsound(src, 'sound/voice/ork/dakkashout3.ogg', 5)
 		if(2)
-			playsound(src, 'sound/voice/ork/workwork.ogg', 50)
+			playsound(src, 'sound/voice/ork/workwork.ogg', 60) // so they cant scavenge twice
 	..(new_loc, new_orkz)
 
 /mob/living/carbon/human/ork/Initialize()

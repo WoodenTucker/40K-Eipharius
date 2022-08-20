@@ -287,6 +287,15 @@ obj/item/clothing/suit/armor
 	item_state = "ork_skullza"
 	armor = list(melee = 35, bullet = 20, laser = 20, energy = 20, bomb = 25, bio = 0, rad = 0)
 
+
+/obj/item/clothing/suit/armor/orkarmor/zog
+	name = "Zogging Ork Boy Armor"
+	desc = "Da buttom of de barrel, dis one. Won't protek ya much. Betta dun nuffin, me guesses..."
+	icon_state = "zoga"
+	item_state = "zoga"
+	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 15, bio = 0, rad = 0)
+
+
 // NOBLES & SERVANTS
 /obj/item/clothing/suit/armor/rtcloak
 	name = "Rogue Trader's Cloak"

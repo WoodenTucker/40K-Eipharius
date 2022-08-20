@@ -209,7 +209,7 @@
 	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
-	armor = list(melee = 25, bullet = 30, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -251,6 +251,16 @@
 	cold_protection = HEAD
 	armor = list(melee = 25, bullet = 20, laser = 20, energy = 30, bomb = 60, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/orkhelmet/knot
+	name = "Orky Hair Knot"
+	desc = "ZOGGING GORK AND MORK. 'ET SOMETIN BETTA ON YA 'EAD, YA CHEAPSKATE!"
+	icon_state = "orkknot"
+	item_state = "orkknot"
+	cold_protection = HEAD
+	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 
 // Tau

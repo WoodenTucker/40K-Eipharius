@@ -1176,13 +1176,15 @@
 
 //ORKA
 
+// NEEDS BALANCING ! //
+
 /obj/item/gun/projectile/ork/automatic/shoota
-	name = "shoota"
+	name = "Shoota"
 	desc = "A tree borst shoota. Da mekboyz even added dem coolin holes fer de barrel for ya, be grateful ya git! Load'd wid da .75 caliba boolets innit."
 	icon_state = "shoota"
 	item_state = "shoota"
 	w_class = ITEM_SIZE_LARGE
-	force = 30
+	force = 25
 	max_shells = 30
 	caliber = ".75"
 	can_jam = TRUE
@@ -1198,7 +1200,76 @@
 	burst = 3
 	automatic = 0.75
 	firemodes = list()
-	sales_price = 10
+	sales_price = 15
+
+
+/obj/item/gun/projectile/ork/automatic/shoota/bladed
+	name = "Bladed Shoota"
+	desc = "A tree borst Shoota. Da mekboyz even added dem coolin holes fer de barrel for ya, be grateful ya git! Dey added a STABBY on the end, too! Load'd wid da .75 caliba boolets innit."
+	icon_state = "shootabayo"
+	item_state = "shootabayo"
+	w_class = ITEM_SIZE_LARGE
+	force = 33
+	max_shells = 30
+	caliber = ".75"
+	can_jam = TRUE
+	one_hand_penalty = 7
+	sales_price = 20
+
+/obj/item/gun/projectile/ork/automatic/shoota/kustom
+	name = "Kustom Shoota"
+	desc = "Da fancy pants kustom shoota for a 'eal smarty boy! Ya move fast and shoot even fasta! CAUSE IT'S RED! Load'd wid da .75 caliba boolets innit."
+	icon_state = "shootakustom"
+	item_state = "shootakustom"
+	force = 20
+	move_delay = 1 // smg
+	one_hand_penalty = 2
+	accuracy = -6
+	fire_delay = 1.5
+	automatic = 0.5
+	burst = 6 // DAKKA DAKKA
+	sales_price = 25
+
+
+/obj/item/gun/projectile/ork/automatic/shoota/big
+	name = "Big Shoota"
+	desc = "Da biggest shoota, a shoota boy can get! Just holdin' dis 'ere gun makez ya wanna neva let go of da trigga, dat wood be very UNORKY! Load'd wid da .75 caliba boolets innit."
+	icon_state = "shootabig"
+	item_state = "shootabig"
+	w_class = ITEM_SIZE_LARGE
+	force = 15 // heffy and slow to hit wid innit
+	max_shells = 50
+	caliber = ".75"
+	can_jam = TRUE
+	move_delay = 10
+	one_hand_penalty = 15
+	accuracy = -9
+	gun_type = GUN_AUTOMATIC
+	fire_delay = 8
+	burst = 5
+	automatic = 0.6
+	firemodes = list(
+		list(mode_name="'ORMAL AUTO'", burst=5, fire_delay=8,    one_hand_penalty=12, burst_accuracy=list(-3,-5,-6), dispersion=list(0.4, 0.5, 0.6), automatic = 0.5),
+		list(mode_name="FULLA AUTO", burst=10, fire_delay=12,    one_hand_penalty=15, burst_accuracy=list(-6,-5,-8), dispersion=list(0.7, 0.6, 0.5), automatic = 0.7),
+
+	)
+	sales_price = 30
+
+/obj/item/gun/projectile/ork/automatic/shoota/furtha
+	name = "Furtha Shoota"
+	desc = "Fur em gitz dat like to shoot from afar! Da scope is busted, blame da gretchin! Load'd wid da .75 caliba boolets innit."
+	icon_state = "shootafurtha"
+	item_state = "shootafurtha"
+	force = 15
+	move_delay = 8
+	one_hand_penalty = 15
+	accuracy = -4
+	gun_type = GUN_SNIPER
+	fire_delay = 15
+	burst = 2
+	automatic = 0.2
+	sales_price = 50
+
 
 //Eldar
 
