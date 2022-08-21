@@ -138,6 +138,7 @@
 	name = "choppa"
 	desc = "Fixed out of a rusted sheet of metal, this choppa looks too big to be a sword. More like a piece of iron."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
+	str_requirement = 13
 	icon_state = "choppa"
 	item_state = "choppa"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
