@@ -4,8 +4,8 @@
 	title = "Interrogator"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Inquisition and Your Lord Inquisitor"
@@ -14,8 +14,8 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/interrogator
 	announced = FALSE
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
 	sniper_skill = 7
 	shotgun_skill = 7
 	lmg_skill = 7
@@ -34,10 +34,11 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
-		var/corruption = rand(1,6)
+		var/corruption = rand(1,4)
 		switch(corruption)
 			if(1)
 				H.verbs += list(
+				/mob/living/carbon/human/proc/slaanesh, // they have unlimited access to things, basically, idk. they can also pretend easier
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. You are capable of independent work without them and their retinue, but should always follow their will above your own. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralising and erasing traces of heresy, chaos, xenos and daemons. It is expected that you give your life to save the Inquisitor's, yet should they fall. You are expected to take on their duties as the new Inquisitor. Remember your actions will always be tested by the Holy Inquisition. Do not falter in your duties, as the Holy Inquisiton is always watching.</font></b></span>")
@@ -60,8 +61,8 @@
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/scion
 	announced = FALSE
-	auto_rifle_skill = 7
-	semi_rifle_skill = 7
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
 	sniper_skill = 7
 	shotgun_skill = 7
 	lmg_skill = 7
@@ -132,6 +133,7 @@
 		switch(corruption)
 			if(1)
 				H.verbs += list(
+				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium and Lords of the Inquisition. A single drop of mercy may result in the spilled bloods of untold millions, steel your heart to their suffering. Every person, asset and object on this planet is a tool or resource to be exploited. Excommunication and the dull thud of a bolt pistol is what awaits you in failure. Your acolytes personally selected to serve only you, whether they survive and rise to the ranks of Interrogator shall be determined in the coming weeks.</font></b></span>")
