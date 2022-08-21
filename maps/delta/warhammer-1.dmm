@@ -1624,7 +1624,6 @@
 /area/cadiaoutpost/oa/caves/dark)
 "gK" = (
 /obj/structure/table/marble,
-/obj/item/clothing/suit/sisterofbattle/sobrelic,
 /obj/structure/window/reinforced/reliquary,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/window/reinforced/reliquary{
@@ -1634,6 +1633,9 @@
 /obj/structure/window/reinforced/reliquary{
 	dir = 1;
 	icon_state = "rwindow"
+	},
+/obj/item/clothing/suit/sisterofbattle/sobrelic{
+	anchored = 1
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
