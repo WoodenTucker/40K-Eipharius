@@ -1,13 +1,13 @@
 /decl/hierarchy/outfit/job/interrogator
 	name = OUTFIT_JOB_NAME("Interrogator")
 	uniform = /obj/item/clothing/under/rank/principalagent
-	suit = /obj/item/clothing/suit/armor/agent/caraspace
+	suit = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = null
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	shoes = /obj/item/clothing/shoes/jackboots/inquisitor/acolyte
 	head = null
-	mask = /obj/item/clothing/mask/gas/security/agent
+	mask = null
 	glasses = null
 	id = /obj/item/card/id/inquisition/principal_agent
 	l_ear = /obj/item/device/radio/headset/inquisition

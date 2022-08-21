@@ -493,7 +493,7 @@
 
 /obj/item/clothing/head/inqhelm
 	name = "Inquisition Acolyte Helmet"
-	desc = "An helmet issued to members of an Inquisitor's Retinue. Likely newly recruited ones, in fact."
+	desc = "An helmet issued to members of an Inquisitor's Retinue. Likely newly recruited ones."
 	icon_state = "inq_helm"
 	item_state = "inq_helm"
 	armor = list(melee = 40, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)

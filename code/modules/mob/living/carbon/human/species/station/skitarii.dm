@@ -92,6 +92,7 @@
 	src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 	src.set_trait(new/datum/trait/death_tolerant())
 	src.update_eyes() //should fix grey vision
+
 	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
 	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
