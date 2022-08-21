@@ -122,6 +122,7 @@
 		switch(corruption)
 			if(1)
 				H.verbs += list(
+				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)

@@ -4,6 +4,7 @@
 	item_icons = list(slot_wear_suit_str = 'icons/mob/32x40/suits.dmi')
 	icon_state = "umpowerarmor"
 	item_state = "umpowerarmor"
+	str_requirement = 24 // they can get gibbed and their armor stays. helmet has it, so why not armor too
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 80, bullet = 70, laser = 90, energy = 90, bomb = 60, bio = 100, rad = 100)
