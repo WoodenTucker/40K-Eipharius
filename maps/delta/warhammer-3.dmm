@@ -340,7 +340,7 @@
 "qq" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/aesculapius/mem,/obj/structure/cable{icon_state = "1-2"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "qu" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/aesculapius/mori,/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "qw" = (/obj/effect/floor_decal/newcorner/shaft/quarter{dir = 1},/obj/effect/floor_decal/newcorner/red/corner,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/shuttle/inquisition)
-"qx" = (/obj/machinery/door/unpowered/inn/room3{maxhealth = 3000},/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/habs)
+"qx" = (/obj/machinery/door/unpowered/inn/room3{maxhealth = 3000},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/habs)
 "qy" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 4; icon_state = "spline_plain"},/obj/structure/bed/roller{color = "grey"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "qB" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/offices/magoserrant)
 "qC" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/bed/roller{color = "grey"},/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
