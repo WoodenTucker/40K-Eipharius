@@ -1,4 +1,4 @@
-/decl/hierarchy/outfit/job/acolyte
+/decl/hierarchy/outfit/job/interrogator
 	name = OUTFIT_JOB_NAME("Interrogator")
 	uniform = /obj/item/clothing/under/rank/principalagent
 	suit = /obj/item/clothing/suit/armor/agent/caraspace

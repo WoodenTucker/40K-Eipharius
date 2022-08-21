@@ -12,7 +12,7 @@
 	selection_color = "#FF3A3A"
 	economic_modifier = 7
 	minimal_player_age = 18
-	outfit_type = /decl/hierarchy/outfit/job/acolyte
+	outfit_type = /decl/hierarchy/outfit/job/interrogator
 	announced = FALSE
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
