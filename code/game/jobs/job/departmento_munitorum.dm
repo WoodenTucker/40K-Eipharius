@@ -46,8 +46,8 @@
 /datum/job/qm
 	title = "House Penitent"
 	department_flag = PIL
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0 // Disabled for now.
+	spawn_positions = 0
 	supervisors = "the Noble household"
 	selection_color = "#337C81"
 	economic_modifier = 5
@@ -122,7 +122,6 @@
 		switch(corruption)
 			if(1)
 				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
 				/mob/living/carbon/human/proc/nurgle,
 				/mob/living/carbon/human/proc/slaanesh,
 				/mob/living/carbon/human/proc/tzeentch)
