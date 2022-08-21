@@ -214,14 +214,6 @@ SUBSYSTEM_DEF(garbage)
 	var/type = D.type
 	var/refID = "\ref[D]"
 
-	var/list/dc = datum_components
-	for(var/I in dc)
-		var/datum/component/C = I
-		C._RemoveNoSignal()
-		qdel(C)
-	if(dc)
-		dc.Cut()
-
 	del(D)
 
 	tick = (TICK_USAGE-tick+((world.time-ticktime)/world.tick_lag*100))
@@ -286,11 +278,13 @@ SUBSYSTEM_DEF(garbage)
 
 
 	if(isnull(D.gc_destroyed))
+		if(SEND_SIGNAL(D, COMSIG_PARENT_PREQDELETED, force)) // Give the components a chance to prevent their parent from being deleted
+			return
 		D.gc_destroyed = GC_CURRENTLY_BEING_QDELETED
 		var/start_time = world.time
 		var/start_tick = world.tick_usage
 		var/hint = D.Destroy(force) // Let our friend know they're about to get fucked up.
-		D.SendSignal(COMSIG_PARENT_QDELETED)
+		SEND_SIGNAL(D, COMSIG_PARENT_QDELETING, force) // Let the (remaining) components know about the result of Destroy
 		if(world.time != start_time)
 			I.slept_destroy++
 		else

@@ -16,9 +16,12 @@
 /mob/living/carbon/brain/Destroy()
 	if(key)				//If there is a mob connected to this thing. Have to check key twice to avoid false death reporting.
 		if(stat!=DEAD)	//If not dead.
-			death(1)	//Brains can die again. AND THEY SHOULD AHA HA HA HA HA HA
+			death(TRUE)	//Brains can die again. AND THEY SHOULD AHA HA HA HA HA HA
+		if(mind)
+			mind.current = null
 		ghostize()		//Ghostize checks for key so nothing else is necessary.
-	. = ..()
+	QDEL_NULL(container)
+	return ..()
 
 /mob/living/carbon/brain/say_understands(var/other)//Goddamn is this hackish, but this say code is so odd
 	if (istype(other, /mob/living/silicon/ai))

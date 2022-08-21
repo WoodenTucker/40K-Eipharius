@@ -22,6 +22,14 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define OBJ_FLAG_ANCHORABLE              0x0001 // This object can be stuck in place with a tool
 #define OBJ_FLAG_CONDUCTIBLE             0x0002 // Conducts electricity. (metal etc.)
 
+#define ALL (~0)
+#define NONE 0
+
+// for /datum/var/datum_flags
+#define DF_USE_TAG (1<<0)
+#define DF_VAR_EDITED (1<<1)
+#define DF_ISPROCESSING (1<<2)
+
 //Flags for items (equipment)
 #define ITEM_FLAG_NO_BLUDGEON            0x0001 // When an item has this it produces no "X has been hit by Y with Z" message with the default handler.
 #define ITEM_FLAG_PHORONGUARD            0x0002 // Does not get contaminated by phoron.
