@@ -125,8 +125,9 @@
 //////////////////icons above  mob showing cult/////////////
 
 /mob/living/carbon/human/proc/AddInfectionImages() //yoinked and reworked for ayylmaos
-	if (client)
-		if(mind.special_role != "Khorne Cultist" || mind.special_role != "Tyranid" || mind.special_role != "Slaanesh Cultist" || mind.special_role != "Mercenary" || mind.special_role != "Nurgle Cultist" || mind.special_role != "Tzeentch Cultist")
+	if(client)
+		if(!cult_favor || (mind.special_role != "Mercenary" || mind.special_role != "Tyranid")) // Mind transferred. Remove cult icons.
+			client.images.Cut()
 			return FALSE
 		for (var/mob/living/carbon/human/cultist in SSmobs.mob_list)
 			if(cultist.mind && cultist.mind.special_role == "Khorne Cultist" && mind.special_role == "Khorne Cultist" ) //rage check very important to not show everyone
