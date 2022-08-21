@@ -962,7 +962,6 @@ Area basic template
 /area/cadiaoutpost/oa/service/inn
 	name = "Village Inn"
 	icon_state = "inn"
-	music = 'sound/newmusic/Inn_Ambient.ogg'
 	dynamic_lighting = 1
 	requires_power = FALSE
 
