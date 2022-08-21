@@ -4,7 +4,7 @@
 	title = "Interrogator"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 2
+	total_positions = 2 // i will make acolyte a seperate job later. can't be bothered atm and this works, however lore breaky for now.
 	spawn_positions = 2
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
