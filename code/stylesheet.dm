@@ -25,6 +25,12 @@ em						{font-style: normal;font-weight: bold;}
 .ooc .developer			{color: #1b521f;}
 .ooc .admin				{color: #ffffff;}
 
+.graytextbold			{color: #909090; font-weight: bold; text-shadow: 0px 0px 2px rgba(255, 0, 0, 0.4);}
+
+.badmood				{color: #fd5b5b; font-weight: bold; font-size: 101%;}
+
+.goodmood 				{color: #635fcf; font-weight: bold; font-size: 101%;}
+
 .staffwarn				{color: #ff0000; font-weight:bold; font-size: 150%;}
 /* Admin: Private Messages */
 .pm  .howto				{color: #ff0000;	font-weight: bold;		font-size: 200%;}

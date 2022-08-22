@@ -185,14 +185,6 @@
 	if(!random_quirks.len)//If there's somewhow nothing there afterwards return.
 		return
 	var/datum/quirk/chosen_quirk = pick(random_quirks)
-	if(chosen_quirk == /datum/quirk/cig_addict || chosen_quirk == /datum/quirk/alcoholic || chosen_quirk == /datum/quirk/obscura)
-		random_quirks -= list(
-			/datum/quirk/cig_addict,
-			/datum/quirk/alcoholic,
-			/datum/quirk/obscura
-			)
-		chosen_quirk = pick(random_quirks)
-		return
 	src.quirk = new chosen_quirk
 	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
 

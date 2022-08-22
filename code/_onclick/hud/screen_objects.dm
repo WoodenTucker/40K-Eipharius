@@ -83,7 +83,7 @@
 	return 1
 
 /obj/screen/happiness_icon/Click()
-	var/mob/living/carbon/C = usr
+	var/mob/living/carbon/human/C = usr
 	C.print_happiness(C)
 
 
@@ -484,7 +484,7 @@
 			usr.face_direction()
 
 		if("mood")
-			var/mob/living/carbon/C = usr
+			var/mob/living/carbon/human/C = usr
 			C.print_happiness(C)
 
 		if("module")

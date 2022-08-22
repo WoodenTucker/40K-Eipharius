@@ -773,6 +773,10 @@
 						location.add_vomit_floor(src, toxvomit)
 					ingested.remove_any(5)
 					nutrition -= 30
+		for(var/mob/living/carbon/human/H in hearers(5, src))
+			if(H.vice == "Neat Freak" && src.faction != "Nurgle")
+				to_chat(src, "<span class='badmood'>+ Unclean... +</span>\n")
+				H.happiness -= 3
 		sleep(350)	//wait 35 seconds before next volley
 		lastpuke = 0
 

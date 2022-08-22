@@ -611,7 +611,7 @@
 	data = 0
 	reagent_addiction_strength = 2
 
-/datum/reagent/nicotine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/nicotine/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
 		return
 	if(prob(volume*20))
@@ -624,6 +624,12 @@
 			data = world.time
 			to_chat(M, "<span class='notice'>You feel invigorated and calm.</span>")
 			M.add_event("relaxed", /datum/happiness_event/relaxed)
+			if(M.vice == "Lho")
+				M.viceneed = 0
+				if(prob(25))
+					to_chat(M, "<span class='goodmood'>+ Your yearning for lho is satiated for now. +</span>")
+
+
 
 /datum/reagent/nicotine/overdose(var/mob/living/carbon/M, var/alien)
 	..()

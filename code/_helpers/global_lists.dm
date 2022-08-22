@@ -37,10 +37,11 @@ var/list/obj/item/device/uplink/world_uplinks = list()
 GLOBAL_LIST_INIT(vice_list, list(
 "Alcohol",
 "Lho",
-"Drugs",
+"Obscura",
 "Piety",
 "Neat Freak",
 "Parental Instincts",
+"Glutton",
 "Random"
 ) )
 //Hairstyles

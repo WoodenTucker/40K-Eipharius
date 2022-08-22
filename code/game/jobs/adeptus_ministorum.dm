@@ -37,7 +37,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Deacon. You are one of the Imperial Cult's priesthood, your oratory skills can stir entire crowds of the faithful and turn a coward into a zealot. You often work on worlds where faith is lacking, and people are rebellious. It is your job to spread the Imperial Cult to this new colony and it's ignorant masses, bringing their backwards beliefs in line with the faith of the God Emperor, as well as guiding the already faithful.</font></b></span>")
-	
+
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
 		if(!.)
@@ -149,8 +149,11 @@
 	w_class = ITEM_SIZE_SMALL
 
 //this blesses humans, pretty straight forward
-/obj/item/melee/whip/censer/attack(mob/living/carbon/M as mob, mob/living/carbon/human/user as mob) //very quick and simple blessing system, using attack incase I ever wanna make the censer need to be filled with stuff
+/obj/item/melee/whip/censer/attack(mob/living/carbon/human/M as mob, mob/living/carbon/human/user as mob) //very quick and simple blessing system, using attack incase I ever wanna make the censer need to be filled with stuff
 	if (istype(M, /mob/living/carbon/human))
+		if(M.vice == "Piety")
+			M.viceneed = 0
+			to_chat(src, "<span class='goodmood'>+ The incense washes away your sins and rids your body of anxiety. +</span>\n")
 		if(M.isblessed == 1) //check this first
 			to_chat(user, "<span class='warning'>[M] has already been blessed!</span>")
 			return 1
@@ -159,6 +162,7 @@
 			M.STAT_LEVEL(str) += 1
 			M.isblessed = 1
 			visible_message("[M] inhales the holy incense and is blessed!")
+
 
 
 //this blesses guns

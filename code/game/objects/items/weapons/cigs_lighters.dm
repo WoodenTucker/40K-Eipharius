@@ -463,8 +463,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	filling = list(/datum/reagent/tobacco/fine = 10)
 
 /obj/item/cigbutt
-	name = "cigarette butt"
-	desc = "A manky old cigarette butt."
+	name = "lho butt"
+	desc = "A manky old lho butt."
 	icon = 'icons/obj/clothing/masks.dmi'
 	icon_state = "cigbutt"
 	randpixel = 10

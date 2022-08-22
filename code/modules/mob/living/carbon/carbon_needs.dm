@@ -1,4 +1,4 @@
-/mob/living/carbon/proc/print_happiness()
+/mob/living/carbon/human/proc/print_happiness()
 	var/msg = "<span class='info'><div class='examinebox'>"
 	if(real_name)
 		msg += "<span class='info'>My name is <span class='danger'>[real_name]</span>.</span>\n"
@@ -16,6 +16,8 @@
 	for(var/i in events)
 		var/datum/happiness_event/event = events[i]
 		msg += event.description
+	if(src.vice == "Neat Freak")
+		msg+= "<span class='badmood'>+ I can't tolerate a mess... +</span>\n"
 
 	if(!events.len)
 		msg += "<span class='info'>I feel indifferent.</span>\n"
