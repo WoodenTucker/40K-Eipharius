@@ -219,10 +219,13 @@
 						src.fire_stacks = 0
 		else
 			var/t_him = "it"
+			var/gendy = "son"
 			if (src.gender == MALE)
 				t_him = "him"
+				gendy = "son"
 			else if (src.gender == FEMALE)
 				t_him = "her"
+				gendy = "daughter"
 			if (istype(src,/mob/living/carbon/human) && src:w_uniform)
 				var/mob/living/carbon/human/H = src
 				H.w_uniform.add_fingerprint(M)
@@ -246,6 +249,11 @@
 				else
 					M.visible_message("<span class='notice'>[M] hugs [src] to make [t_him] feel better!</span>", \
 								"<span class='notice'>You hug [src] to make [t_him] feel better!</span>")
+					if(M.child == 1)
+						var/mob/living/carbon/human/g = src
+						if(g.vice == "Parental Instincts")
+							src.happiness += 0.5
+							to_chat(src, "<span class='goodmood'>+ [M] is like a [gendy] to me. Their love reinvigorates me. +</span>\n")
 				if(M.fire_stacks >= (src.fire_stacks + 3))
 					src.fire_stacks += 1
 					M.fire_stacks -= 1

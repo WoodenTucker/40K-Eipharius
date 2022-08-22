@@ -292,11 +292,27 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		var/new_v_type = input(user, "Choose your character's vice:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in GLOB.vice_list
 		if(new_v_type && CanUseTopic(user))
 			if(new_v_type == "Random")
-				var/choice = rand(0,5) //Array starts at 0, make sure it runs between 0 and the length before Random to avoid setting their vice to the string Random
+				var/choice = rand(0,6) //Array starts at 0, make sure it runs between 0 and the length before Random to avoid setting their vice to the string Random
 				pref.vice = GLOB.vice_list[choice]
+				to_chat(user, "[pref.vice] selected.")
 				return TOPIC_REFRESH
 			else
 				pref.vice = new_v_type
+				switch(pref.vice)
+					if("Lho")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED lho sticks. +</span>")
+					if("Alcohol")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED alcohol regularly. +</span>")
+					if("Piety")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED to receive blessings or be near a holy site regularly. +</span>")
+					if("Obscura")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED obscura. +</span>")
+					if("Neat Freak")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED a clean environment. You are bothered especially by filth and decay. +</span>")
+					if("Glutton")
+						to_chat(user, "<span class='badmood'>⠀+ You can't just eat enough to survive, you must eat until you're stuffed. +</span>")
+					if("Parental Instincts")
+						to_chat(user, "<span class='badmood'>⠀+ Every child in this cursed land is your ward, do not let evil befall them! +</span>")
 				return TOPIC_REFRESH
 
 	else if(href_list["show_species"])

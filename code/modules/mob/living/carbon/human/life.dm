@@ -104,6 +104,9 @@
 
 		handle_species_regen() //Species specific bonus regen
 
+		handle_vice()
+
+
 		if(!client && !mind)
 			species.handle_npc(src)
 
@@ -1334,8 +1337,13 @@
 				continue
 			if(H.has_trait(/datum/trait/death_tolerant))//Hardcore people don't care about bodies.
 				continue
+			if(H.faction == "Nurgle")
+				continue
 			to_chat(H, "<spawn class='warning'>You smell something foul...")
 			H.add_event("disgust", /datum/happiness_event/disgust/verygross)
+			if(H.vice == "Neat Freak")
+				to_chat(src, "<span class='badmood'>+ Unclean... +</span>\n")
+				H.happiness -= 1
 			if(prob(75))
 				H.vomit()
 
@@ -1390,7 +1398,7 @@
 	var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
 	if(species.name == "Astartes" || species.name == "Ork") //Simple way to species check
 		shock_stage = 0
-		var/messageTimer = 0
+
 		heal_organ_damage(0.2, 0.2)
 		if(src.getBrainLoss() > 0)
 			adjustBrainLoss(-1.5)
@@ -1432,7 +1440,7 @@
 
 	if(species.name == "Tyranids") //Simple way to species check
 		shock_stage = 0
-		var/messageTimer = 0
+
 		heal_organ_damage(0.4, 0.4)
 		if(src.getBrainLoss() > 0)
 			adjustBrainLoss(-5.5)

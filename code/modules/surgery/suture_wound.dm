@@ -30,7 +30,13 @@
 
 /datum/surgery_step/suture_wounds/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
+	var/mob/living/carbon/human/U = user
 	for(var/datum/wound/W in affected.wounds)
+		if(target.child == 1)
+			if(U.vice == "Parental Instincts")
+				U.happiness += 0.5
+				if(prob(10))
+					to_chat(U, "<span class='goodmood'>+ It feels good to care for those who cannot care for themselves. +</span>\n")
 		if(W.damage_type == CUT && W.damage)
 			// Close it up to a point that it can be bandaged and heal naturally!
 			W.heal_damage(rand(10,20)+10)

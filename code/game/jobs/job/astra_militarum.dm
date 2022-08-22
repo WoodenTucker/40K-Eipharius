@@ -971,16 +971,6 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	var/datum/quirk/chosen_quirk = pick(random_quirks)
 	src.quirk = new chosen_quirk
 	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
-	switch(chosen_quirk)
-		if(/datum/quirk/cig_addict)
-			var/datum/reagent/new_reagent = new /datum/reagent/nicotine
-			src.reagents.addiction_list.Add(new_reagent)
-		if(/datum/quirk/alcoholic)
-			var/datum/reagent/new_reagent = new /datum/reagent/ethanol
-			src.reagents.addiction_list.Add(new_reagent)
-		if(/datum/quirk/obscura)
-			var/datum/reagent/new_reagent = new /datum/reagent/space_drugs
-			src.reagents.addiction_list.Add(new_reagent)
 
 /mob/living/carbon/human/proc/witchblood()
 	if(prob(99))//99% of not being a psyker

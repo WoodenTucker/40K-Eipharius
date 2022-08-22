@@ -252,6 +252,13 @@ meteor_act
 	if(user.STAT_LEVEL(str))//If they have strength then add it.
 		effective_force *= strToDamageModifier(user.STAT_LEVEL(str))
 
+	//Parental vice
+	if(src.child == 1)
+		for(var/mob/living/carbon/human/H in view(5, src))
+			if(H.vice == "Parental Instincts")
+				to_chat(H, "<span class='badmood'>+ [src] has been injured, how could I allow this to happen? +</span>")
+				H.happiness -=1
+
 	if(special)
 		switch(user.atk_intent)
 			if(I_STRONG)//Offensive attacks do even more damage.

@@ -1,3 +1,4 @@
+
 // DM Environment file for interstation12.dme.
 // All manual changes should be made outside the BEGIN_ and END_ blocks.
  // New source code should be placed in .dm files: choose File/New --> Code File.
@@ -1694,6 +1695,7 @@
 #include "code\modules\mob\living\carbon\human\stripping.dm"
 #include "code\modules\mob\living\carbon\human\unarmed_attack.dm"
 #include "code\modules\mob\living\carbon\human\update_icons.dm"
+#include "code\modules\mob\living\carbon\human\vice.dm"
 #include "code\modules\mob\living\carbon\human\vision_cone.dm"
 #include "code\modules\mob\living\carbon\human\weight.dm"
 #include "code\modules\mob\living\carbon\human\whisper.dm"
