@@ -511,7 +511,7 @@
 	to_chat(src, "<font color='#0400ff'>Cane + Commissar Hat -> Commissar Sword.</font>")
 	to_chat(src, "<font color='#0400ff'>Torch + Commissar Hat -> Flamethrower.</font>")
 	to_chat(src, "<font color='#0400ff'>Lord Trader Hat -> Plasma Pistol + Ammo.</font>")
-.//	to_chat(src, "<font color='#0400ff'>Seneschal Hat -> Full Access.</font>")
+//	to_chat(src, "<font color='#0400ff'>Seneschal Hat -> Full Access.</font>")
 	to_chat(src, "<font color='#0400ff'>Sister of Battle Helmet -> Bolter + Ammo.</font>")
 	to_chat(src, "<font color='#0400ff'>Noble Hat -> Money.</font>")
 	to_chat(src, "<font color='#0400ff'>Enforcer Helmet -> Shotgun.</font>")
