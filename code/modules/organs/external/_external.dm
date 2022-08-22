@@ -221,8 +221,15 @@
 					if(!(user.l_hand && user.r_hand))
 						user.put_in_hands(removing)
 					user.visible_message("<span class='danger'><b>[user]</b> extracts [removing] from [src] with [W]!</span>")
+				else if(type == /obj/item/organ/external/head)
+					user.visible_message("<span class='danger'><b>[user]</b> shredded [src] with [W] into mess of gore and meat while extracting skull.</span>")
+					new /obj/item/reagent_containers/food/snacks/rawcutlet(src.loc)
+					new /obj/item/skull(src.loc)
+					qdel(src)
 				else
-					user.visible_message("<span class='danger'><b>[user]</b> fishes around fruitlessly in [src] with [W].</span>")
+					user.visible_message("<span class='danger'><b>[user]</b> shredded [src] with [W] into mess of gore and meat.</span>")
+					new /obj/item/reagent_containers/food/snacks/rawcutlet(src.loc)
+					qdel(src)
 				return
 	..()
 
