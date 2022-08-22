@@ -55,7 +55,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		src.say("I await for instructions")
+		src.say("I await your instructions")
 		playsound(src, 'sound/effects/quotes/servitor/waitinstructions.ogg', 80, 0, 3)
 		src.quote_cd = 1
 		sleep(50)
