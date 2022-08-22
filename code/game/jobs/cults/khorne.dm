@@ -39,7 +39,7 @@
 				cult_favor++
 				mind.special_role = "Khorne Cultist"
 			else
-				to_chat(src, "Bring me your first heart of your enemy, mortal, and prove your worship to strength and honor of battle.")
+				to_chat(src, "Bring me your first skull of your enemy, mortal, and prove your worship to strength and honor of battle.")
 				return
 		if(1)
 			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
