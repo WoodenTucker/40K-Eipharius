@@ -20,6 +20,7 @@
 	var/staminaloss = 0
 	var/staminaexhaust = 250
 	var/tongueless = 0
+	var/music_on = 1
 
 	var/last_special = 0 //Used by the resist verb, likely used to prevent players from bypassing next_move by logging in/out.
 

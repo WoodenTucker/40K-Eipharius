@@ -290,7 +290,9 @@ var/list/mob/living/forced_ambiance_list = new
 			L.client.played = world.time
 
 /area/proc/change_zone_ambience(var/mob/living/L)
-	if(L && src.music != "" && L.client && (L.current_ambience != src.music) && !L.ambience_override)
+	if(L.music_on == 0)
+		L.change_current_ambience(null)
+	if(L && src.music != "" && L.client && (L.current_ambience != src.music) && !L.ambience_override && L.music_on != 0)
 		L.change_current_ambience(src.music)
 
 
