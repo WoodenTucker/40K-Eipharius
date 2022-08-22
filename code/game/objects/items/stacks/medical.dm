@@ -87,7 +87,12 @@
 				if(!do_mob(user, M, backwards_skill_scale(user.SKILL_LEVEL(medical)) * 5))//W.damage/5))
 					to_chat(user, "<span class='notice'>You must stand still to bandage wounds.</span>")
 					break
-
+				if(M.child == 1)
+					if(user.vice == "Parental Instincts")
+						user.happiness += 1
+						to_chat(user, "healing kiddos works")
+						if(prob(10))
+							to_chat(user, "<span class='goodmood'>+ It feels good to care for those who cannot care for themselves. +</span>\n")
 				if (W.current_stage <= W.max_bleeding_stage)
 					user.visible_message("<span class='notice'>\The [user] bandages \a [W.desc] on [M]'s [affecting.name].</span>", \
 					                              "<span class='notice'>You bandage \a [W.desc] on [M]'s [affecting.name].</span>" )

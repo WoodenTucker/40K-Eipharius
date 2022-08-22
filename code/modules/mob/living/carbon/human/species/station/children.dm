@@ -17,6 +17,7 @@
 /datum/species/human/child/handle_post_spawn(var/mob/living/carbon/human/H)
 	//H.mutations.Add(CLUMSY)//So kids don't go around being commandos.
 	H.age = rand(min_age,max_age)//Random age for kiddos.
+	H.child = 1
 	if(H.f_style)//Children don't get beards.
 		H.f_style = "Shaved"
 	to_chat(H, "<span class='info'><big>You're [H.age] years old! Act like it!</big></span>")

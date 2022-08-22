@@ -87,6 +87,11 @@
 	handle_warfare_death()
 	GLOB.total_deaths++
 	handle_hud_list()
+	if(src.child == 1)
+		for(var/mob/living/carbon/human/H in view(5, src))
+			if(H.vice == "Parental Instincts")
+				to_chat(H, "<span class='phobia'<big>A child has died before my very eyes!</big></span>")
+				H.happiness = -15
 	if(prob(1))
 		sound_to(src, sound('sound/effects/death.ogg', volume = 50))
 

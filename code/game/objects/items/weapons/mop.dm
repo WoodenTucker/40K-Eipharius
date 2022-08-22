@@ -16,7 +16,7 @@
 /obj/item/mop/New()
 	create_reagents(30)
 
-/obj/item/mop/afterattack(atom/A, mob/user, proximity)
+/obj/item/mop/afterattack(atom/A, mob/living/carbon/human/user, proximity)
 	if(!proximity) return
 	if(istype(A, /turf) || istype(A, /obj/effect/decal/cleanable) || istype(A, /obj/effect/overlay) || istype(A, /obj/effect/rune))
 		if(reagents.total_volume < 1)
@@ -32,6 +32,10 @@
 			if(T)
 				T.clean(src, user)
 			to_chat(user, "<span class='notice'>You have finished mopping!</span>")
+			if(user.vice == "Neat Freak" && user.faction != "Nurgle" && istype(A, /obj/effect/decal/cleanable))
+				user.happiness +=1
+				if(prob(10))
+					to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
 
 
 /obj/effect/attackby(obj/item/I, mob/user)

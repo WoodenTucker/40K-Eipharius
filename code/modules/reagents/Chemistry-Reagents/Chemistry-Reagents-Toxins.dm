@@ -432,7 +432,7 @@
 	overdose = REAGENTS_OVERDOSE
 	reagent_addiction_strength = 40
 
-/datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
 		return
 
@@ -441,6 +441,10 @@
 		drug_strength = drug_strength * 0.8
 
 	M.druggy = max(M.druggy, drug_strength)
+	if(M.vice == "Obscura")
+		M.viceneed = 0
+		if(prob(5))
+			to_chat(M, "<span class='goodmood'>⠀+ Your muscles relax as obscura flows through your veins. +</span>")
 	if(prob(10) && isturf(M.loc) && !istype(M.loc, /turf/space) && M.canmove && !M.restrained())
 		step(M, pick(GLOB.cardinal))
 	if(prob(7))

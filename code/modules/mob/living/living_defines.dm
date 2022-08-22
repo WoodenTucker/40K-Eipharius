@@ -7,6 +7,7 @@
 	var/health = 100 	//A mob's health
 
 	var/hud_updateflag = 0
+	var/child = 0
 
 	//Damage related vars, NOTE: THESE SHOULD ONLY BE MODIFIED BY PROCS // what a joke
 	//var/bruteloss = 0 //Brutal damage caused by brute force (punching, being clubbed by a toolbox ect... this also accounts for pressure damage)

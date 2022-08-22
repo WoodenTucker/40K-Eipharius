@@ -99,6 +99,13 @@
 
 /obj/item/reagent_containers/proc/other_feed_message_finish(var/mob/user, var/mob/target)
 	user.visible_message("<span class='warning'>[user] has fed [target] \the [src]!</span>")
+	var/mob/living/carbon/human/U = user
+	var/mob/living/carbon/human/T = target
+	if(T.child == 1)
+		if(U.vice == "Parental Instincts")
+			U.happiness += 1
+			if(prob(10))
+				to_chat(U, "<span class='goodmood'>+ It feels good to care for those who cannot care for themselves. +</span>\n")
 
 /obj/item/reagent_containers/proc/feed_sound(var/mob/user)
 	return
