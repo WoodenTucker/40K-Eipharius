@@ -151,7 +151,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 	if(!H.key || !H.mind)
 		return
 
-	var/sqlplayed = round(H.time_alive/60)
+	var/sqlplayed = round(H.time_alive/60,1)
 
 	establish_db_connection()
 	if(!dbcon.IsConnected())
