@@ -51,6 +51,7 @@
 			/mob/living/carbon/human/proc/bringdeath,
 			/mob/living/carbon/human/proc/advance,
 			/mob/living/carbon/human/proc/aaaaaa)
+			src.faction += "chaos"
 			AddInfectionImages()
 		if(2)
 			var/active_hand = get_active_hand()

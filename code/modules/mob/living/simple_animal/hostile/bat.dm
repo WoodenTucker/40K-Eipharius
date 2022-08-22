@@ -4,8 +4,8 @@
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "swarm"
 	icon_living = "swarm"
-	icon_dead = "lizard_dead"
-	icon_gib = "lizard_dead"
+	icon_dead = "swarm_dead"
+	icon_gib = "swarm_dead"
 	speak_chance = 0
 	turns_per_move = 3
 	meat_type = /obj/item/reagent_containers/food/snacks/meat

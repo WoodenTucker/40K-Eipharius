@@ -38,6 +38,7 @@
 			AddInfectionImages()
 			src.faction = "Nurgle"
 			src.verbs += list(/mob/living/carbon/human/proc/lordofflies)
+			src.faction += "chaos"
 		if(2)
 			cult_favor++
 			GLOB.nurgle_cult++

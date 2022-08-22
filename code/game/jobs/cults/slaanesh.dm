@@ -34,6 +34,7 @@
 			src.mind.special_role = "Slaanesh Cultist"
 			AddInfectionImages()
 			src.faction = "Slaanesh"
+			src.faction += "chaos"
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/slaaneshrune
 			to_chat(src, "His command is clear. I must have that feeling of ecstasy again. I will obey. His symbol fills my mind, I see it when I close my eyes. I must find a place to draw it, I must honor him.")

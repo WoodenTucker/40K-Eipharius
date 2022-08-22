@@ -36,13 +36,44 @@
 
 ///////////////Sword and shield////////////
 
-/mob/living/simple_animal/hostile/syndicate/ranged // 
+/mob/living/simple_animal/hostile/syndicate/ranged //
 	ranged = 1
 	rapid = 1
 	icon_state = "traitorguard"
 	icon_living = "traitorguard"
 	projectilesound = 'sound/weapons/guns/fire/smg_fire.ogg'
 	projectiletype = /obj/item/projectile/bullet/rifle/a556
+
+/mob/living/simple_animal/hostile/syndicate/ranged/New()
+	..()
+	switch(rand(1,3))
+		if(1)
+			icon_state = "traitorguard1"
+			icon_living = "traitorguard1"
+			icon_dead = "traitorguard1_dead"
+			rapid = 0
+			maxHealth = 340
+			health = 340
+			projectilesound = "brifle"
+			projectiletype = /obj/item/projectile/bullet/rifle/a762/brifle
+		if(2)
+			icon_state = "traitorguard2"
+			icon_living = "traitorguard2"
+			icon_dead = "traitorguard2_dead"
+			rapid = 1
+			maxHealth = 290
+			health = 290
+			projectilesound = 'sound/weapons/gunshot/lasgun.ogg'
+			projectiletype = /obj/item/projectile/energy/las/lasgun/overcharge
+		if(3)
+			icon_state = "traitorguard3"
+			icon_living = "traitorguard3"
+			icon_dead = "traitorguard3_dead"
+			rapid = 1
+			maxHealth = 250
+			health = 250
+			projectilesound = 'sound/weapons/guns/fire/smg_fire.ogg'
+			projectiletype = /obj/item/projectile/bullet/pistol
 
 /mob/living/simple_animal/hostile/syndicate/ranged/space // Same as above but more HP.
 	icon_state = "traitorguard"

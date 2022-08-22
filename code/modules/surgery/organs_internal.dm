@@ -191,6 +191,7 @@
 	/obj/item/hemostat = 100,	\
 	/obj/item/wirecutters = 75, \
 	/obj/item/material/knife = 75,	\
+	/obj/item/material/sword/combat_knife = 75,	\
 	/obj/item/material/kitchen/utensil/fork = 20
 	)
 
