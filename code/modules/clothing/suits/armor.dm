@@ -896,3 +896,13 @@ obj/item/clothing/suit/armor
   armor = list(melee = 60, bullet = 60, laser = 60, energy = 70, bomb = 40, bio = 100, rad = 20)
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/heretcoat
+	name = "Scrap Overcoat"
+	desc = "Overcoat made with leather and some cheap forged steel parts"
+	icon_state = "heretmil"
+	item_state = "heretmil"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/gun/projectile)
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 15, bomb = 35, bio = 50, rad = 50)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

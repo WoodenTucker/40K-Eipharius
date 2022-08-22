@@ -71,7 +71,7 @@
 		stance = HOSTILE_STANCE_IDLE
 	if(target_mob in ListTargets(10))
 		if(ranged)
-			if(get_dist(src, target_mob) <= 6)
+			if(get_dist(src, target_mob) <= 7)
 				OpenFire(target_mob)
 			else
 				walk_to(src, target_mob, 1, move_to_delay)

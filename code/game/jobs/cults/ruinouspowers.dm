@@ -110,7 +110,7 @@
 		to_chat(src,"You can't draw a rune while restrained.")	//user is tied up
 		return
 	isdrawing = 1
-	if(intrigue >= 2)
+	if(cult_favor >= 2)
 		if(do_after(usr,80,src))
 			new /obj/effect/decal/cleanable/tzeentch(get_turf(src))
 			src.adjustBruteLoss(2)

@@ -536,3 +536,43 @@
 	item_state = "sister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
 	sales_price = 60
+
+/obj/item/clothing/head/heretichood
+	name = "cultist hood"
+	desc = "A filth hood rag"
+	icon_state = "hood1"
+	item_state = "hood1"
+	armor = list(melee = 5, bullet = 3, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/heretichood/alt
+	icon_state = "hood2"
+	item_state = "hood2"
+
+/obj/item/clothing/head/heretichood/alt2
+	icon_state = "hood3"
+	item_state = "hood3"
+
+/obj/item/clothing/head/helmet/culthelm
+	name = "Scrap helmet"
+	desc = "Helmet made of some metal scrap in cheap forge"
+	icon_state = "pact1"
+	icon_state = "pact1"
+	armor = list(melee = 25, bullet = 15, laser = 13, energy = 10, bomb = 25, bio = 10, rad = 0)
+	flags_inv = HIDEEARS|BLOCKHAIR
+	body_parts_covered = HEAD
+
+/obj/item/clothing/head/helmet/culthelm/alt
+	icon_state = "pact2"
+	icon_state = "pact2"
+	armor = list(melee = 28, bullet = 18, laser = 16, energy = 13, bomb = 28, bio = 13, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|EYES
+
+/obj/item/clothing/head/helmet/culthelm/alt2
+	icon_state = "pact3"
+	icon_state = "pact3"
+	armor = list(melee = 30, bullet = 22, laser = 20, energy = 15, bomb = 32, bio = 15, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES

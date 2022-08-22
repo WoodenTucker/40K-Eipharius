@@ -163,7 +163,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 		if("Disgraced Medicae")
 			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,6),rand(3,5),rand(1,2),rand(3,5)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(1,6),rand(5,8),rand(1,2),rand(5,8)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)

@@ -412,8 +412,8 @@
 	unloaded_icon = "autorifle-e"
 	unwielded_unloaded_icon = "autorifle-e"
 	wielded_unloaded_icon = "autorifle-wielded-e"
-
-	gun_type = GUN_AUTOMATIC
+	gun_type = GUN_SMG
+	//gun_type = GUN_AUTOMATIC
 
 /obj/item/gun/projectile/automatic/m22/warmonger/fully_auto/nemesis
 	name = "Mk.1 Nemesis"
@@ -682,7 +682,7 @@
 	desc = "A rugged autogun of Valhallan design, it has a moderate rate of fire and excellent stopping power."
 	icon_state = "autorifle"
 	item_state = "autorifle"
-	caliber = "a556"
+	caliber = "9mm" //a556
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	unloaded_icon = "auto_grim-e"
