@@ -233,7 +233,7 @@
 			emotesound = 'sound/voice/emotes/girl_laugh1.ogg'
 
 	else if(user.gender == MALE)
-		emotesound = "sound/voice/emotes/male_laugh[rand(1,3)].ogg"
+		emotesound = "sound/voice/emotes/male_laugh1.ogg"
 
 	else
 		emotesound = "sound/voice/emotes/female_laugh[rand(1,3)].ogg"
@@ -305,9 +305,11 @@
 	if(user.isMonkey())
 		return
 
-	else if(user.isChild() && user.gender == FEMALE)
-		emotesound = "sound/voice/emotes/female_giggle[rand(1,2)].ogg"
-
+	else if(user.isChild())
+		if(user.gender == FEMALE)
+			emotesound = "sound/voice/emotes/female_giggle[rand(1,2)].ogg"
+		else if(user.gender == MALE)
+			emotesound = "sound/voice/emotes/male_giggle[rand(1,2)].ogg"
 	else if(user.gender == FEMALE)
 		emotesound = "sound/voice/emotes/female_giggle[rand(1,2)].ogg"
 
