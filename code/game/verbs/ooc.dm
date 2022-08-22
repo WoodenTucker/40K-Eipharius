@@ -92,3 +92,15 @@
 					winset(src, "browseroutput", "is-disabled=true;is-visible=false")
 				log_game("GOONCHAT: [key_name(src)] Failed to fix their goonchat window after manually calling start() and forcing a load()")
 
+/mob/living/verb/toggleMusic()
+	set name = "Toggle Music"
+	set desc = "Allows you to toggle ambient music."
+	set category = "OOC"
+
+	if(src.music_on == 1)
+		src.music_on = 0
+		to_chat(src, "Ambient music disabled.")
+		src.change_current_ambience(null)
+	else
+		src.music_on = 1
+		to_chat(src, "Ambient music enabled.")
