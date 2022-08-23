@@ -23,7 +23,6 @@
 	UnregisterSignal(user, COMSIG_MOB_CARBON_DAMAGED)
 
 /datum/heretic_effect/masochist/proc/on_damaged(var/mob/living/carbon/human/source, var/damage, var/damage_type, var/def_zone)
-	to_chat(source, "Working")
 	source.add_event("morale boost", /datum/happiness_event/masochism)
 	source.apply_damage(-damage / 4, damage_type, def_zone)
 	source.apply_damage(damage  / 4, PAIN, def_zone)
