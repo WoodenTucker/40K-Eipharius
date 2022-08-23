@@ -22,11 +22,6 @@
 	ingredients = list(/obj/item/melee/whip/lashoftorment, /obj/item/clothing/mask/masquerade, /obj/item/clothing/suit/armor/slanclothing)
 	effect_path = /datum/heretic_effect/enchantedarm
 
-/datum/rune_recipe/slaanesh/masochism
-	name = "Masochist Rite"
-	ingredients = list(/obj/item/tape_roll)
-	effect_path = /datum/heretic_effect/masochist
-
 /datum/rune_recipe/slaanesh/escape
 	name = "Escape Artist Rite"
 	ingredients = list(/obj/item/handcuffs)
