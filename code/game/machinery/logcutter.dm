@@ -18,3 +18,15 @@
 			to_chat(user, "<span class='notice'>You turn some logs into planks.</span>")
 			new /obj/item/stack/material/wood/ten(loc)
 			S.update_icon()
+
+/obj/machinery/gannets
+	name = "Transmission Station"
+	icon = 'icons/obj/machines/randomstuff.dmi'
+	desc = "This machine receives and transmits coded data transmissions."
+	icon_state = "gannetsoff"
+	layer = BELOW_OBJ_LAYER
+	density = 1
+	anchored = 1
+	use_power = 1
+	idle_power_usage = 1
+	active_power_usage = 2
