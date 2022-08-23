@@ -151,7 +151,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 	if(!H.key || !H.mind)
 		return
 
-	var/sqlplayed = sanitizeSQL(round(H.time_alive/60),1)
+	var/sqlplayed = round(H.time_alive/60,1)
 
 	establish_db_connection()
 	if(!dbcon.IsConnected())
@@ -169,7 +169,7 @@ proc/sql_report_played_time(var/mob/living/carbon/human/H)
 	if(length(sql_id) >= 2)
 		var/DBQuery/timePlayedQueryUpdate = dbcon.NewQuery("UPDATE playtime_history SET DATE = Now(), time_living = time_living + [sqlplayed] WHERE ckey = '[sql_ckey]'")
 		timePlayedQueryUpdate.Execute()
-	else
+	else if(sql_id != null || length(sql_id) < 2)
 		//New player!! Need to insert all the stuff
 		var/DBQuery/query_insert = dbcon.NewQuery("INSERT INTO playtime_history (ckey, DATE, time_living) VALUES ('[sql_ckey]', Now(), [sqlplayed])")
 		query_insert.Execute()
