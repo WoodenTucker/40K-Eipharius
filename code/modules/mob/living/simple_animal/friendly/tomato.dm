@@ -16,3 +16,23 @@
 	melee_damage_upper = 15
 	melee_damage_lower = 10
 	attacktext = "mauled"
+
+/mob/living/simple_animal/daemonhost
+	name = "Daemon Host"
+	real_name = "Daemon Host" 
+	desc = "It's a horrifyingly enormous daemon host..."
+	icon = 'icons/mob/Demon.dmi'
+	icon_state = "herald"
+	icon_living = "herald"
+	icon_dead = "herald_dead"
+	speak_chance = 0
+	turns_per_move = 5
+	maxHealth = 600
+	health = 600
+	response_help  = "caresses"
+	response_disarm = "slams"
+	response_harm   = "rends"
+	harm_intent_damage = 80
+	melee_damage_upper = 100
+	melee_damage_lower = 70
+	attacktext = "torn"
