@@ -91,7 +91,7 @@
 			var/contained = reagentlist()
 			admin_attack_log(user, M, "Fed the victim with [name] (Reagents: [contained])", "Was fed [src] (Reagents: [contained])", "used [src] (Reagents: [contained]) to feed")
 			user.visible_message("<span class='danger'>[user] feeds [M] [src].</span>")
-			if(C.child == 1)
+			if(C.child == 1 && C.stat != DEAD)
 				if(U.vice == "Parental Instincts")
 					U.happiness += 1
 					if(prob(10))

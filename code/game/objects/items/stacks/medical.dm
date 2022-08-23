@@ -87,7 +87,7 @@
 				if(!do_mob(user, M, backwards_skill_scale(user.SKILL_LEVEL(medical)) * 5))//W.damage/5))
 					to_chat(user, "<span class='notice'>You must stand still to bandage wounds.</span>")
 					break
-				if(M.child == 1)
+				if(M.child == 1 && M.stat != DEAD)
 					if(user.vice == "Parental Instincts")
 						user.happiness += 1
 						to_chat(user, "healing kiddos works")

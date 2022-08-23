@@ -289,7 +289,7 @@
 	playsound(target_mob, pick(mob_hit_sound), 40, 1)
 
 	//Parental vice
-	if(target_mob.child == 1)
+	if(target_mob.child == 1 && target_mob.stat != DEAD)
 		for(var/mob/living/carbon/human/parent in view(5, target_mob))
 			if(parent.vice == "Parental Instincts")
 				to_chat(parent, "<span class='badmood'>+ [target_mob] has been injured, how could I allow this to happen? +</span>")
