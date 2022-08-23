@@ -1,0 +1,1 @@
+#define MAX_CULTISTS 10

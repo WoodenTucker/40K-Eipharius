@@ -203,7 +203,6 @@ datum/preferences
 			if(!islist(organ_data)) continue
 			var/limb_path = organ_data["path"]
 			O = new limb_path(character)
-
 	// Destroy/cyborgize organs and limbs. The order is important for preserving low-level choices for robolimb sprites being overridden.
 	for(var/name in BP_BY_DEPTH)
 		var/status = organ_data[name]

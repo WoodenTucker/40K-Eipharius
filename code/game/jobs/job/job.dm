@@ -64,6 +64,7 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 	var/shotgun_skill = 5
 	var/lmg_skill = 5
 	var/smg_skill = 5
+	var/cultist_chance 		// Don't set for zero, 100 for certain chance like for pilgrims.
 
 
 /datum/job/New()

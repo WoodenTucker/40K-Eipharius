@@ -30,6 +30,7 @@
 		if(reagents.total_volume)
 			reagents.trans_to_mob(M, reagents.total_volume, CHEM_INGEST)
 		playsound(M, 'sound/voice/swallow.ogg', 100, TRUE)
+		SEND_SIGNAL(src, COMSIG_FOOD_EATEN, user)
 		qdel(src)
 		return 1
 
@@ -48,6 +49,7 @@
 		if(reagents.total_volume)
 			reagents.trans_to_mob(M, reagents.total_volume, CHEM_INGEST)
 		playsound(M, 'sound/voice/swallow.ogg', 100, TRUE)
+		SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M)
 		qdel(src)
 		return 1
 
@@ -228,6 +230,7 @@
 	icon_state = "pill4"
 /obj/item/reagent_containers/pill/happy/New()
 	..()
+	AddComponent(/datum/component/heretic_item/favor/eaten, "slaanesh", 2)
 	reagents.add_reagent(/datum/reagent/space_drugs, 15)
 	reagents.add_reagent(/datum/reagent/sugar, 15)
 	color = reagents.get_color()

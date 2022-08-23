@@ -37,26 +37,6 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,8)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
-
-		H.verbs += list(
-		/mob/living/carbon/human/proc/arbattack,
-		/mob/living/carbon/human/proc/arbfallback,
-		/mob/living/carbon/human/proc/arbfindguilty,
-		/mob/living/carbon/human/proc/arbifemperorwish,
-		/mob/living/carbon/human/proc/arbinnocencedeath,
-		/mob/living/carbon/human/proc/arbnoinnocence,
-		/mob/living/carbon/human/proc/arbnopeace,
-		/mob/living/carbon/human/proc/arbwearelaw,
-		/mob/living/carbon/human/proc/arbwearelawl,
-		/mob/living/carbon/human/proc/arbwedielawnever,
-		/mob/living/carbon/human/proc/arbwemustcontrol)
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
@@ -98,13 +78,6 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,8)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")

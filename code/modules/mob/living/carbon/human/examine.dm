@@ -260,7 +260,7 @@
 
 	if(mhealth >= 75)//Or incredibly hurt.
 		msg += "<span class='warning'><b>[T.He] looks incredibly injured.</b>\n</span>"
-
+	SEND_SIGNAL(src, COMSIG_PARENT_EXAMINE, user, msg)
 	var/list/wound_flavor_text = list()
 	var/applying_pressure = ""
 	var/list/shown_objects = list()
@@ -399,7 +399,6 @@
 		if( findtext(pose,".",length(pose)) == 0 && findtext(pose,"!",length(pose)) == 0 && findtext(pose,"?",length(pose)) == 0 )
 			pose = addtext(pose,".") //Makes sure all emotes end with a period.
 		msg += "[T.He] [pose]"
-
 	to_chat(user, jointext(msg, null))
 
 //Helper procedure. Called by /mob/living/carbon/human/examine() and /mob/living/carbon/human/Topic() to determine HUD access to security and medical records.

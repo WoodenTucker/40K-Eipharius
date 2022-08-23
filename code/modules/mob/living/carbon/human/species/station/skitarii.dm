@@ -23,9 +23,6 @@
 		/datum/unarmed_attack/punch
 		)
 
-/mob/living/carbon/human
-	var/new_skitarii = SPECIES_SKITARII
-
 /mob/living/carbon/human/skitarii
 	gender = MALE
 
@@ -47,6 +44,7 @@
 
 /mob/living/carbon/human/skitarii/Initialize()
 	. = ..()
+	set_species("Skitarii")
 	fully_replace_character_name(random_skitarii_name(src.gender))
 	warfare_faction = IMPERIUM
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii)

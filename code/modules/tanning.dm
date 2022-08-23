@@ -77,28 +77,22 @@
 		qdel(src)
 		new /obj/item/clothing/mask/masquerade(user.loc)
 		return
+	var/datum/heretic_deity/deity = GODBYPLAYER(user)
+	if(deity.name != "slaanesh")
+		to_chat(user, "Nothing happens...")
+		return
 	else if(istype(O, /obj/item/stack/material/cloth))
-		if(user.cult_favor < 8 && user.mind.special_role != "Slaanesh Cultist")
-			to_chat(user, "Nothing happens...")
-			return
-		else
-			to_chat(user, "The skin and cloth seem to come to life, wriggling and binding together, slowly the pulsing mass begins to take shape into a pair of lavish clothes!")
-			if(user.gender == MALE)
-				new /obj/item/clothing/suit/armor/slanclothing/maleslan(user.loc)
-				qdel(src)
-				return
-			else if(user.gender == FEMALE)
-				new /obj/item/clothing/suit/armor/slanclothing/femaleslan(user.loc)
-				qdel(src)
-				return
-	else if(istype(O, /obj/item/organ/external/arm))
-		if(user.cult_favor < 7 && user.mind.special_role != "Slaanesh Cultist")
-			to_chat(user, "Why would I want to do this?")
-			return
-		else
-			to_chat(user, "The skin wraps itself around the bloody arm, it slithers up and down, stretching itself to a size one would think impossible. Slowly through some dark magic the pair form a gruesome lash!")
-			new /obj/item/melee/whip/lashoftorment(user.loc)
+		to_chat(user, "The skin and cloth seem to come to life, wriggling and binding together, slowly the pulsing mass begins to take shape into a pair of lavish clothes!")
+		if(user.gender == MALE)
+			new /obj/item/clothing/suit/armor/slanclothing/maleslan(user.loc)
 			qdel(O)
-			qdel(src)
 			return
-
+		else if(user.gender == FEMALE)
+			new /obj/item/clothing/suit/armor/slanclothing/femaleslan(user.loc)
+			qdel(O)
+			return
+	else if(istype(O, /obj/item/organ/external/arm))
+		to_chat(user, "The skin wraps itself around the bloody arm, it slithers up and down, stretching itself to a size one would think impossible. Slowly through some dark magic the pair form a gruesome lash!")
+		new /obj/item/melee/whip/lashoftorment(user.loc)
+		qdel(O)
+		return

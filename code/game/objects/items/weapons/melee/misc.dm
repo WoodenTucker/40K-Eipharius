@@ -99,8 +99,7 @@
 /obj/item/melee/whip/lashoftorment/attack(mob/living/carbon/C as mob, var/mob/living/carbon/human/user as mob) //
 	user.setClickCooldown(5)
 	var/hit_zone = ran_zone()
-	if(user.cult_favor <= 7 && user.mind.special_role != "Slaanesh Cultist")
-		to_chat(user, "The mutated arm resists you!")
+	if(!isheretic(user))
 		return
 	if(C.stat == DEAD)
 		to_chat(user,"<font color='#800080'>There is no pain to be harvested from the dead, a waste...</font>")
@@ -110,7 +109,6 @@
 	else
 		playsound(usr, 'sound/effects/slanattack.ogg', 100, 1, 1)
 		C.apply_damage(rand(30,40), BRUTE, hit_zone, 0,(DAM_SHARP|DAM_EDGE))
-		user.slanpain += rand(1, 10)
 		to_chat(C, "<span class='warning'>[user] mangles your body with the whip. It causes you pain on a level you didn't know existed.</span>")
 		if(C.gender == MALE)
 			playsound(usr, 'sound/voice/Screams_Male_3.ogg', 100, 1, 1)
@@ -120,7 +118,7 @@
 
 
 /obj/item/melee/whip/lashoftorment/pickup(var/mob/living/carbon/human/user)
-	if(user.cult_favor <= 7 && user.mind.special_role != "Slaanesh Cultist")
+	if(!isheretic(user))
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)

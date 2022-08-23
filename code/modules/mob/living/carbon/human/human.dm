@@ -9,11 +9,7 @@
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
 	var/stealth = FALSE
 	var/scooldown = FALSE
-	var/cult_favor = 0
-	var/intrigue = 0 //tzeentch favor
-	var/isdrawing = 0 //used to stop rune spam
 	var/inmenu = 0 //stop menu spammers
-	var/slanpain = 0 //slaaneshi pain harvesting
 	var/can_toggle = 1
 	var/is_toggled = 1 //armblade shit
 	var/gsc = 0 //for cult to hide icon
@@ -21,6 +17,7 @@
 	var/psyker = 0
 	var/focus = 50
 	var/max_focus = 100
+	var/isdrawing = 0
 
 /mob/living/carbon/human/New(var/new_loc, var/new_species = null)
 
@@ -33,7 +30,6 @@
 			set_species(new_species,1)
 		else
 			set_species()
-
 	if(species)
 		real_name = species.get_random_name(gender)
 		SetName(real_name)
@@ -133,8 +129,6 @@
 			if(mind.changeling)
 				stat("Chemical Storage", mind.changeling.chem_charges)
 				stat("Genetic Damage Time", mind.changeling.geneticdamage)
-			if(cult_favor >= 9 && mind.special_role == "Slaanesh Cultist")
-				stat("Suffering:", "[src.slanpain]")
 
 
 
@@ -773,10 +767,6 @@
 						location.add_vomit_floor(src, toxvomit)
 					ingested.remove_any(5)
 					nutrition -= 30
-		for(var/mob/living/carbon/human/H in hearers(5, src))
-			if(H.vice == "Neat Freak" && src.faction != "Nurgle")
-				to_chat(src, "<span class='badmood'>+ Unclean... +</span>\n")
-				H.happiness -= 3
 		sleep(350)	//wait 35 seconds before next volley
 		lastpuke = 0
 

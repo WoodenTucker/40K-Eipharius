@@ -77,6 +77,7 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
+	cultist_chance = 40
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -91,13 +92,6 @@
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
 		else H.fully_replace_character_name("[H.real_name]")
-		var/corruption = rand(1,8)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -135,6 +129,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -144,13 +139,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("[H.real_name]")
-		var/corruption = rand(1,6)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
@@ -188,13 +176,6 @@
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("[H.real_name]")
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh)
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -240,6 +221,7 @@
 	shotgun_skill = 9
 	lmg_skill = 9
 	smg_skill = 9
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -251,13 +233,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh)
 
 		if(title == "Krieg Guardsman")
 			var/watchnum = rand(1,50000)
@@ -313,13 +288,6 @@
 		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
-		var/corruption = rand(1,15)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh)
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(12,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
@@ -367,14 +335,6 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Commissar [current_name]")
-		var/corruption = rand(1,30)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,18), rand(16,18), rand(12,16), rand(16,17))
@@ -971,6 +931,16 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	var/datum/quirk/chosen_quirk = pick(random_quirks)
 	src.quirk = new chosen_quirk
 	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
+	switch(chosen_quirk)
+		if(/datum/quirk/cig_addict)
+			var/datum/reagent/new_reagent = new /datum/reagent/nicotine
+			src.reagents.addiction_list.Add(new_reagent)
+		if(/datum/quirk/alcoholic)
+			var/datum/reagent/new_reagent = new /datum/reagent/ethanol
+			src.reagents.addiction_list.Add(new_reagent)
+		if(/datum/quirk/obscura)
+			var/datum/reagent/new_reagent = new /datum/reagent/space_drugs
+			src.reagents.addiction_list.Add(new_reagent)
 
 /mob/living/carbon/human/proc/witchblood()
 	if(prob(99))//99% of not being a psyker
