@@ -101,7 +101,7 @@
 	user.visible_message("<span class='warning'>[user] has fed [target] \the [src]!</span>")
 	var/mob/living/carbon/human/U = user
 	var/mob/living/carbon/human/T = target
-	if(T.child == 1)
+	if(T.child == 1 && T.stat != DEAD)
 		if(U.vice == "Parental Instincts")
 			U.happiness += 1
 			if(prob(10))

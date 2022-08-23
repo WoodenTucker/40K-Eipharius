@@ -32,7 +32,7 @@
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)
 	var/mob/living/carbon/human/U = user
 	for(var/datum/wound/W in affected.wounds)
-		if(target.child == 1)
+		if(target.child == 1 && target.stat != DEAD)
 			if(U.vice == "Parental Instincts")
 				U.happiness += 0.5
 				if(prob(10))

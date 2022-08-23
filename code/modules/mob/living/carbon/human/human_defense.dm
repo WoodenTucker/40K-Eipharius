@@ -253,7 +253,7 @@ meteor_act
 		effective_force *= strToDamageModifier(user.STAT_LEVEL(str))
 
 	//Parental vice
-	if(src.child == 1)
+	if(src.child == 1 && src.stat != DEAD)
 		for(var/mob/living/carbon/human/H in view(5, src))
 			if(H.vice == "Parental Instincts")
 				to_chat(H, "<span class='badmood'>+ [src] has been injured, how could I allow this to happen? +</span>")
