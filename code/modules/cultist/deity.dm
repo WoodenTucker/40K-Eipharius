@@ -70,9 +70,8 @@ Most blessings and curses should be permanent.
 
 /datum/heretic_deity/proc/progress(var/mob/living/CultMember, var/favor)
 	var/datum/component/cultist/comp = CultMember.GetComponent(/datum/component/cultist)
-	if(comp.deity_favor >= 10)
+	if(comp.deity_favor >= 25)
 		if(comp.add_effect(src, pick(possible_blessings)))
-			comp.last_goal = comp.deity_favor
 			comp.deity_favor = 0
 
 /datum/heretic_deity/proc/join_request(var/mob/living/user)

@@ -29,7 +29,8 @@
 	rune_type = /obj/effect/heretic_rune/nurgle
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
-						/datum/rune_recipe/nurgle/toughen)
+						/datum/rune_recipe/nurgle/toughen,
+						/datum/rune_recipe/nurgle/nganga)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
 			/mob/living/carbon/human/proc/draw_rune)

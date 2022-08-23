@@ -14,19 +14,13 @@
 	if(!isheretic(target) && target.stat != DEAD)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)
-	else if(target.stat == DEAD)
-		infect_mob_random_lesser(target)
-		target.gib()
-		new /obj/structure/nganga(get_turf(target))
-
 
 /datum/rune_recipe/nurgle/toughen
 	name = "Toughen Rite"
 	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat)
 	effect_path = /datum/heretic_effect/tough
 
-/datum/rune_recipe/nurgle/offering
-	name = "Offering Rite"
-	ingredients = list(/mob/living/carbon/human)
-	delete_items = FALSE
-	special 	 = TRUE
+/datum/rune_recipe/nurgle/nganga
+	name = "Nganga Rite"
+	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/internal/brain)
+	product_path = /obj/structure/nganga
