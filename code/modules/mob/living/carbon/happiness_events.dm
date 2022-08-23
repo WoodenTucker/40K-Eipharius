@@ -22,6 +22,10 @@
 	description = "<span class='danger'>I need water!</span>\n"
 	happiness = -12
 
+/datum/happiness_event/masochism
+	description = "<span style='color:#00FF00;'>That felt good.</span>\n"
+	happiness = 6
+	timeout = 10 MINUTES
 
 
 //nutrition
