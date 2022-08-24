@@ -63,7 +63,7 @@
 	return FALSE
 
 /datum/rune_recipe/proc/add_effect(var/mob/living/carbon/user, var/list/items, var/obj/effect/heretic_rune/rune)
-
+	return FALSE
 
 /datum/rune_recipe/proc/do_special(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune, var/list/items)
 	return FALSE
