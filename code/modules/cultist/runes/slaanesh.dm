@@ -5,7 +5,7 @@
 	special 	 = TRUE
 
 /datum/rune_recipe/slaanesh/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate() in items
+	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
 	if(!isheretic(target))
 		var/datum/heretic_deity/slaanesh/N = GOD(GOD_SLAANESH)
 		N.join_request(target)

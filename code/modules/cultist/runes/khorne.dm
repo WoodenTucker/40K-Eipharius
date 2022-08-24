@@ -39,8 +39,8 @@
 	delete_items = FALSE
 	special 	 = TRUE
 
-/datum/rune_recipe/nurgle/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate() in items
+/datum/rune_recipe/khorne/conversion/do_special(mob/living/carbon/human/user, var/list/items)
+	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
 	if(!isheretic(target))
 		var/datum/heretic_deity/khorne/N = GOD(GOD_KHORNE)
 		N.join_request(target)
