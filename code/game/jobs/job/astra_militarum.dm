@@ -501,6 +501,7 @@
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	l_ear = /obj/item/device/radio/headset/red_team
+	l_pocket = /obj/item/storage/box/ifak
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/lucius
 	backpack_contents = list(
