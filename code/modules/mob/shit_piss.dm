@@ -137,6 +137,7 @@
 	..()
 	icon_state = pick("poop1", "poop2", "poop3", "poop4", "poop5", "poop6", "poop7")
 	reagents.add_reagent(/datum/reagent/poo, 10)
+	AddComponent(/datum/component/heretic_item/favor/eaten, "nurgle", 5)
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/poo/throw_impact(atom/hit_atom)

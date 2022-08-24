@@ -1,6 +1,6 @@
 /datum/rune_recipe/nurgle/deathtolerance
 	name = "Death Tolerance Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat)
+	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/reagent_containers/food/snacks/poo)
 	effect_path = /datum/heretic_effect/deathtolerant
 
 /datum/rune_recipe/nurgle/conversion
@@ -10,7 +10,7 @@
 	special = TRUE
 
 /datum/rune_recipe/nurgle/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate() in items
+	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
 	if(!isheretic(target) && target.stat != DEAD)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)

@@ -52,8 +52,6 @@
 				if(finish_message)
 					rune.visible_message(finish_message)
 				post_finish(user, rune)
-			else
-				to_chat(user, "No")
 			return TRUE
 		else
 			new product_path(get_turf(rune))
@@ -65,7 +63,7 @@
 	return FALSE
 
 /datum/rune_recipe/proc/add_effect(var/mob/living/carbon/user, var/list/items, var/obj/effect/heretic_rune/rune)
-
+	return FALSE
 
 /datum/rune_recipe/proc/do_special(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune, var/list/items)
 	return FALSE

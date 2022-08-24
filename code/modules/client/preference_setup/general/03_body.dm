@@ -27,7 +27,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/list/rlimb_data
 	var/disabilities = 0
 	var/vice
-	var/cult = "None"
+	var/cult
 
 	var/has_cortical_stack = FALSE
 	var/equip_preview_mob = 0
@@ -110,6 +110,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.b_skin			= sanitize_integer(pref.b_skin, 0, 255, initial(pref.b_skin))
 	pref.h_style		= sanitize_inlist(pref.h_style, GLOB.hair_styles_list, initial(pref.h_style))
 	pref.vice		    = sanitize_inlist(pref.vice, GLOB.vice_list, initial(pref.vice))
+	pref.cult 			= sanitize_inlist(pref.cult, list("khorne", "nurgle", "slaanesh", "tzeentch"), initial(pref.cult))
 	pref.f_style		= sanitize_inlist(pref.f_style, GLOB.facial_hair_styles_list, initial(pref.f_style))
 	pref.r_eyes			= sanitize_integer(pref.r_eyes, 0, 255, initial(pref.r_eyes))
 	pref.g_eyes			= sanitize_integer(pref.g_eyes, 0, 255, initial(pref.g_eyes))
@@ -303,7 +304,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 				return TOPIC_REFRESH
 
 	else if(href_list["religion"])
-		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch")
+		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch", "None")
 		if(chosen_religion && CanUseTopic(user))
 			if(href_list["religion"] == "Random")
 				pref.cult = pick(list("khorne", "nurgle", "slaanesh", "tzeentch"))

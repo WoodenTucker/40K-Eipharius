@@ -5,7 +5,7 @@
 	special 	 = TRUE
 
 /datum/rune_recipe/tzeentch/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate() in items
+	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
 	if(!isheretic(target))
 		var/datum/heretic_deity/tzeentch/N = GOD(GOD_TZEENTCH)
 		N.join_request(target)
@@ -29,7 +29,7 @@
 	var/orig_overlays = user.overlays
 	var/obj/effect/dummy/illusion/C = new(get_turf(usr))
 	C.activate(user, target.icon, target.icon_state, target.overlays)
-	addtimer(CALLBACK(src, .proc/remove_illusion, user, orig_icon, orig_icon_state, orig_overlays, C), 5 SECONDS)
+	addtimer(CALLBACK(src, .proc/remove_illusion, user, orig_icon, orig_icon_state, orig_overlays, C), 5 MINUTES)
 
 /datum/rune_recipe/tzeentch/illusion/proc/remove_illusion(var/atom/inp, var/original_icon, var/original_icon_state, var/orig_overlays, var/obj/effect/dummy/illusion/C)
 	inp.icon = original_icon
@@ -50,7 +50,7 @@
 /datum/rune_recipe/tzeentch/omniscience/do_special(var/mob/living/carbon/human/user, var/list/items)
 	var/mob/observer/eye/viewer = new(user)
 	viewer.possess(user)
-	addtimer(CALLBACK(src, .proc/return_user, user, viewer), 20 SECONDS)
+	addtimer(CALLBACK(src, .proc/return_user, user, viewer), 30 SECONDS)
 
 /datum/rune_recipe/tzeentch/omniscience/proc/return_user(var/mob/living/carbon/human/user, var/mob/observer/eye/e)
 	user.eyeobj = null
