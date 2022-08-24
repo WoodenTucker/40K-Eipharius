@@ -37,20 +37,13 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
-		if(prob(4))
-			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
-			/mob/living/carbon/human/proc/nurgle,
-			/mob/living/carbon/human/proc/slaanesh,
-			/mob/living/carbon/human/proc/tzeentch)
-		H.verbs += list(
-		/mob/living/carbon/human/proc/astaforemperor,
-		/mob/living/carbon/human/proc/astaforemperorl,
+		H.verbs +=  list(
 		/mob/living/carbon/human/proc/astachaos,
 		/mob/living/carbon/human/proc/astacharge,
 		/mob/living/carbon/human/proc/astacrush,

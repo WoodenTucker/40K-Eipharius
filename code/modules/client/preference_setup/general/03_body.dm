@@ -27,6 +27,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/list/rlimb_data
 	var/disabilities = 0
 	var/vice
+	var/cult = "None"
 
 	var/has_cortical_stack = FALSE
 	var/equip_preview_mob = 0
@@ -63,6 +64,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	from_file(S["has_cortical_stack"], pref.has_cortical_stack)
 	from_file(S["body_markings"], pref.body_markings)
 	from_file(S["vice"], pref.vice)
+	from_file(S["cult"], pref.cult)
 	pref.preview_icon = null
 	from_file(S["bgstate"], pref.bgstate)
 
@@ -92,6 +94,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	to_file(S["body_markings"], pref.body_markings)
 	to_file(S["bgstate"], pref.bgstate)
 	to_file(S["vice"], pref.vice)
+	to_file(S["cult"], pref.cult)
 
 /datum/category_item/player_setup_item/general/body/sanitize_character(var/savefile/S)
 	if(!pref.species || !(pref.species in playable_species))
@@ -148,7 +151,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	. += "Blood Type: <a href='?src=\ref[src];blood_type=1'>[pref.b_type]</a><br>"
 	. += "<br>"
 	. += "Vice: <a href='?src=\ref[src];vice_type=1'>[pref.vice]</a><br>"
-
+	. += "Cult: <a href='?src=\ref[src];religion=1'>[pref.cult]</a><br>"
 	//if(has_flag(mob_species, HAS_BASE_SKIN_COLOURS))
 	//	. += "Base Colour: <a href='?src=\ref[src];base_skin=1'>[pref.s_base]</a><br>"
 
@@ -292,27 +295,21 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 		var/new_v_type = input(user, "Choose your character's vice:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in GLOB.vice_list
 		if(new_v_type && CanUseTopic(user))
 			if(new_v_type == "Random")
-				var/choice = rand(0,6) //Array starts at 0, make sure it runs between 0 and the length before Random to avoid setting their vice to the string Random
+				var/choice = rand(0,5) //Array starts at 0, make sure it runs between 0 and the length before Random to avoid setting their vice to the string Random
 				pref.vice = GLOB.vice_list[choice]
-				to_chat(user, "[pref.vice] selected.")
 				return TOPIC_REFRESH
 			else
 				pref.vice = new_v_type
-				switch(pref.vice)
-					if("Lho")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED lho sticks. +</span>")
-					if("Alcohol")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED alcohol regularly. +</span>")
-					if("Piety")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED to receive blessings or be near a holy site regularly. +</span>")
-					if("Obscura")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED obscura. +</span>")
-					if("Neat Freak")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED a clean environment. You are bothered especially by filth and decay. +</span>")
-					if("Glutton")
-						to_chat(user, "<span class='badmood'>⠀+ You can't just eat enough to survive, you must eat until you're stuffed. +</span>")
-					if("Parental Instincts")
-						to_chat(user, "<span class='badmood'>⠀+ Every child in this cursed land is your ward, do not let evil befall them! +</span>")
+				return TOPIC_REFRESH
+
+	else if(href_list["religion"])
+		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch")
+		if(chosen_religion && CanUseTopic(user))
+			if(href_list["religion"] == "Random")
+				pref.cult = pick(list("khorne", "nurgle", "slaanesh", "tzeentch"))
+				return TOPIC_REFRESH
+			else
+				pref.cult = chosen_religion
 				return TOPIC_REFRESH
 
 	else if(href_list["show_species"])

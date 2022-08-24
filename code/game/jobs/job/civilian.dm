@@ -39,12 +39,6 @@
 		H.bowels = 0 //until someone tells me that servitors eat and shit this shall be it
 		H.thirst = INFINITY
 		H.nutrition = INFINITY
-		H.verbs += list(
-		/mob/living/carbon/human/proc/servaswish,
-		/mob/living/carbon/human/proc/serviexisttoserve,
-		/mob/living/carbon/human/proc/servishallobey,
-		/mob/living/carbon/human/proc/servwaitinstructions,
-		/mob/living/carbon/human/proc/servyeslord)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 // Cook
@@ -69,6 +63,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -79,11 +74,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 
 // Farmer
@@ -108,7 +98,7 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -119,10 +109,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
 
 // Janitor Servitor
@@ -164,12 +150,6 @@
 		H.bowels = 0 //until someone tells me that servitors eat and shit this shall be it
 		H.thirst = INFINITY
 		H.nutrition = INFINITY
-		H.verbs += list(
-		/mob/living/carbon/human/proc/servaswish,
-		/mob/living/carbon/human/proc/serviexisttoserve,
-		/mob/living/carbon/human/proc/servishallobey,
-		/mob/living/carbon/human/proc/servwaitinstructions,
-		/mob/living/carbon/human/proc/servyeslord)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for cleaning and maintaining the outpost. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 // Undertaker
@@ -185,6 +165,14 @@
 	if(!random_quirks.len)//If there's somewhow nothing there afterwards return.
 		return
 	var/datum/quirk/chosen_quirk = pick(random_quirks)
+	if(chosen_quirk == /datum/quirk/cig_addict || chosen_quirk == /datum/quirk/alcoholic || chosen_quirk == /datum/quirk/obscura)
+		random_quirks -= list(
+			/datum/quirk/cig_addict,
+			/datum/quirk/alcoholic,
+			/datum/quirk/obscura
+			)
+		chosen_quirk = pick(random_quirks)
+		return
 	src.quirk = new chosen_quirk
 	to_chat(src, "<span class='bnotice'>I was formed a bit different. I am [quirk.name]. [quirk.description]</span>")
 
@@ -221,7 +209,4 @@
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.verbs += list(
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Deacon you owe him your life. However, you must earn your keep. </font></b></span>")

@@ -474,7 +474,10 @@ SUBSYSTEM_DEF(jobs)
 		if(equipped)
 			var/obj/item/clothing/glasses/G = H.glasses
 			G.prescription = 7
-
+	if(H.client.prefs.cult && SSgods.cultist_count <= MAX_CULTISTS)
+		if(prob(job.cultist_chance) || job.cultist_chance == 100)
+			var/datum/heretic_deity/deity = GOD(H.client.prefs.cult)
+				deity.add_cultist(H)
 	BITSET(H.hud_updateflag, ID_HUD)
 	BITSET(H.hud_updateflag, IMPLOYAL_HUD)
 	BITSET(H.hud_updateflag, SPECIALROLE_HUD)

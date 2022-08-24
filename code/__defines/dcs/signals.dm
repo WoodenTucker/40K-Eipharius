@@ -44,6 +44,10 @@
 /// updates sprites
 #define COMSIG_ITEM_ICON_UPDATE "icon_update"
 
-#define COMSIG_MOB_DEATH "mob_died"
+#define COMSIG_ITEM_ATTACKHAND "item_attackhand"
 
+#define COMSIG_PARENT_EXAMINE     "parent_examine"
+
+// source, user
+#define COMSIG_ITEM_ATTACK_SELF "item_attack_self"
 /*******Component Specific Signals*******/

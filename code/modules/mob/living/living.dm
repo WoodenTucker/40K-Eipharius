@@ -43,6 +43,7 @@
 		addtimer(CALLBACK(src, .proc/remove_filter, A, pointglow), 20)
 
 	usr.visible_message("<b>[src]</b> points to [A]")
+	SEND_SIGNAL(src, COMSIG_MOB_POINTED, A)
 	return 1
 
 /mob/proc/remove_filter(var/atom/A, var/filter_to_remove)

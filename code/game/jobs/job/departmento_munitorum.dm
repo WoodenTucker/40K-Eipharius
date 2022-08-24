@@ -23,6 +23,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
+	cultist_chance = 100
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -34,13 +35,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,2)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a member of an ancient Imperial House on this planet. You act as a go-between for the village and your merchant contacts on the outer systems. Work with your Servant Penitent to ensure the continued survival of your house, it is imperative that the line of succession remains unbroken. Ensure there are pilgrims working the farm and that the clinic is staffed, you are as reliant on them as they are upon you.</font></b></span>")
 
 /datum/job/qm
@@ -65,6 +59,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -76,13 +71,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,5)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>A penitent in service to the Noble Household of this planet, you owe a debt of life to the family that extends generations down your lines to a distant ancestor, though despite the brand upon your neck and your status as a penitent. You fare better then most who come seeking fortune in this accursed world.</font></b></span>")
 
 /datum/job/janissary
@@ -107,6 +95,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -118,13 +107,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		var/corruption = rand(1,4)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>Three concepts hold primacy in Vessorine clan society to the exclusion of nearly all else: property, warcraft, and currency. The scarcity of resources and rocky landscape of Vessor made the ownership of arable land and grazing beasts one of the most important aspects of their primitive society. The populace grouped into clans for increased security and resources, and though the leader of a clan holds the title of Clansire, the term refers neither to patrilineal nor matrilineal descent. From an early age, typically after First Bonding, both male and female children begin training as janissaries. They undergo training to enhance their strength, stamina, and agility, sometimes doing so with only the food and water they can find in the wilderness. They also learn the three primary Vessorine battle arts: open-hand, blade, and gun lore. By the time they participate in their first contract, an ascension ritual called Second Bonding, they are formidable warriors equal to any in the Imperium. In preparation for Second Bonding, janissaries receive their first repatriation tattoo, which declares the bond a clan will pay for the return of their soldier if captured.</font></b></span>")
 
 // Munitorum Menial
@@ -149,7 +131,7 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-
+	cultist_chance = 100
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -160,11 +142,6 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>Keep things moving! Make sure imports and exports get where they need to go! If you're lost, speak to the Munitorum Priest!</font></b></span>")
 // Munitorum Explorator
 
@@ -181,13 +158,7 @@
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
-	equip(var/mob/living/carbon/human/H)
-		..()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+	cultist_chance = 100
 
 // Munitorum Record Keeper
 
@@ -215,10 +186,4 @@
 	medical_skill = 3
 	engineering_skill = 3
 	surgery_skill = 2
-	equip(var/mob/living/carbon/human/H)
-		..()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+	cultist_chance = 100

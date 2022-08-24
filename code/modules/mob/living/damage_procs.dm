@@ -26,7 +26,7 @@
 			adjustHalLoss(damage * blocked_mult(blocked))
 		if(ELECTROCUTE)
 			electrocute_act(damage, used_weapon, 1.0, def_zone)
-
+	SEND_SIGNAL(src, COMSIG_MOB_CARBON_DAMAGED, damage, damagetype, def_zone)
 	updatehealth()
 	return 1
 

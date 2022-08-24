@@ -28,6 +28,7 @@
 	. = ..()
 	icon_state = pick(src.random_icon_states)
 	create_reagents(5)
+	AddComponent(/datum/component/heretic_item/favor/eaten, "nurgle", 3)
 	reagents.add_reagent(/datum/reagent/poo,5)
 	for(var/obj/effect/decal/cleanable/poo/shit in src.loc)
 		if(shit != src)

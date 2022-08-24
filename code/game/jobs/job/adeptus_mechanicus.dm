@@ -33,7 +33,6 @@
 
 
 
-
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
@@ -49,13 +48,6 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,10)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
 
 
 
@@ -97,14 +89,6 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,8)
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/khorne,
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/slaanesh,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer, Obey your Magi and remember, your primary duty is to ensure that all machine spirits are pleased and secure technology.</font></b></span>")
 
 // Biologis
@@ -147,12 +131,6 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		var/corruption = rand(1,10) //biologis almost never become heretics
-		switch(corruption)
-			if(1)
-				H.verbs += list(
-				/mob/living/carbon/human/proc/nurgle,
-				/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, you are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii, you are not forced to listen to the Magos Dominus, but be aware, he holds much more power in the outpost than you.</font></b></span>")
 
 
