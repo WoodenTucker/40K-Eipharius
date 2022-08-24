@@ -6,7 +6,7 @@
 	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 5	
+	force = 5
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -14,16 +14,15 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
 	var/stunforce = 0
-	var/agonyforce = 65
+	var/agonyforce = 30
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/cell/bcell
 	var/hitcost = 0
 	block_chance = 15
 	stunforce = 0
-	agonyforce = 65
-	sales_price = 8
+	agonyforce = 45
+	sales_price = 10
 	weapon_speed_delay = 6
-	status = 1
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -267,9 +266,9 @@
 	str_requirement = 1
 	force = 1
 	stunforce = 0
-	agonyforce = 80
+	agonyforce = 55
 	status = 1
-	block_chance = 60
+	block_chance = 40
 	sales_price = 20
 	weapon_speed_delay = 4
 	sharp = TRUE
