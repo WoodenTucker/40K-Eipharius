@@ -296,7 +296,7 @@ Pilgrim Fate System
 	/obj/item/stack/thrones3/twenty = 1,
 
 	)
-=======
+
 /datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
 	title = "Pilgrim"
 	department_flag = PIL
