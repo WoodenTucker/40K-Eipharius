@@ -44,8 +44,6 @@
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
 		H.verbs +=  list(
-		/mob/living/carbon/human/proc/astafortheemperor,
-		/mob/living/carbon/human/proc/astafortheemperorl,
 		/mob/living/carbon/human/proc/astachaos,
 		/mob/living/carbon/human/proc/astacharge,
 		/mob/living/carbon/human/proc/astacrush,

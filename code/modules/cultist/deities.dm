@@ -44,7 +44,6 @@
 	rune_type = /obj/effect/heretic_rune/slaanesh
 	rune_recipes = list(/datum/rune_recipe/slaanesh/conversion,
 						/datum/rune_recipe/slaanesh/arm,
-						/datum/rune_recipe/slaanesh/masochism,
 						/datum/rune_recipe/slaanesh/escape,
 						/datum/rune_recipe/slaanesh/knife)
 	inherent_verbs = list(
