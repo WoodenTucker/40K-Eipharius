@@ -576,3 +576,19 @@
 	armor = list(melee = 30, bullet = 22, laser = 20, energy = 15, bomb = 32, bio = 15, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/servicesgt
+ 	name = "Cadian Sergeant's Service Cap"
+ 	desc = "A Cadian issue sergeant's service cap."
+ 	icon_state = "sgt_cap"
+ 	item_state = "sgt_cap"
+ 	cold_protection = HEAD
+ 	sales_price = 8
+
+/obj/item/clothing/head/serviceguard
+ 	name = "Cadian Guard Service Cap"
+ 	desc = "An enlisted Cadian service cap"
+ 	icon_state = "guard_cap"
+ 	item_state = "guard_cap"
+ 	cold_protection = HEAD
+ 	sales_price = 5
