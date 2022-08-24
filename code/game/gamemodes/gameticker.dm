@@ -434,6 +434,8 @@ Exterminatus
 	to_world("<br><br><br><H1>A round of [mode.name] has ended!</H1>")
 	print_aspect()
 	for(var/mob/Player in GLOB.player_list)
+		var/mob/living/carbon/human/played = Player
+		sql_report_played_time(played)
 		if(Player.mind && !isnewplayer(Player))
 			if(Player.stat != DEAD)
 				var/turf/playerTurf = get_turf(Player)
