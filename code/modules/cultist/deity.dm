@@ -74,7 +74,7 @@ Most blessings and curses should be permanent.
 		if(comp.add_effect(src, pick(possible_blessings)))
 			comp.deity_favor = 0
 
-/datum/heretic_deity/proc/join_request(var/mob/living/user)
+/datum/heretic_deity/proc/join_request(var/mob/living/carbon/human/user)
 	var/choice = input(user, "Become [name] cultist?", "Choice") in list("Yes", "No")
 	if(choice == "Yes" && !GODBYPLAYER(user))
 		add_cultist(user)

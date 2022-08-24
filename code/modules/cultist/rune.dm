@@ -52,8 +52,6 @@
 				if(finish_message)
 					rune.visible_message(finish_message)
 				post_finish(user, rune)
-			else
-				to_chat(user, "No")
 			return TRUE
 		else
 			new product_path(get_turf(rune))
