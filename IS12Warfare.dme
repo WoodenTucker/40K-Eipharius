@@ -1252,7 +1252,6 @@
 #include "code\modules\cargo\cargocategories.dm"
 #include "code\modules\cargo\cargoitems.dm"
 #include "code\modules\cargo\cargoterminal.dm"
-#include "code\modules\cargo\categories\ammo.dm"
 #include "code\modules\cargo\categories\armor.dm"
 #include "code\modules\cargo\categories\blackmarket.dm"
 #include "code\modules\cargo\categories\food.dm"
