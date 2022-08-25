@@ -133,8 +133,6 @@
 	if(effective_dose >= strength * 2) // Slurring
 		M.add_chemical_effect(CE_PAINKILLER, 150/strength)
 		M.slurring = max(M.slurring, 30)
-		if(M.vice == "Alcohol") //alcoholics need to drink a bit to feel it.
-			M.viceneed = 0
 	if(effective_dose >= strength * 3) // Confusion - walking in random directions
 		M.add_chemical_effect(CE_PAINKILLER, 150/strength)
 		M.confused = max(M.confused, 20)

@@ -103,7 +103,7 @@
 		if(do_after(user,30, progress = 0))
 			user.visible_message("\The [user] finishes wiping off the [A]!")
 			A.clean_blood()
-			if(user.vice == "Neat Freak" && user.faction != "Nurgle" && istype(A, /obj/effect/decal/cleanable))
+			if(user.vice == "Neat Freak" && user.faction != "nurgle" && istype(A, /obj/effect/decal/cleanable))
 				user.happiness +=1
 				if(prob(10))
 					to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")

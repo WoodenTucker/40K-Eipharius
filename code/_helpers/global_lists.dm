@@ -35,8 +35,8 @@ var/list/obj/item/device/uplink/world_uplinks = list()
 //Preferences stuff
 //Vices, make sure random is always last and that you update the rand length in 03_body to the length of your options. This will let us choose a random vice without getting assigned Random on spawn
 GLOBAL_LIST_INIT(vice_list, list(
-"Alcohol",
 "Lho",
+"Alcohol",
 "Obscura",
 "Piety",
 "Neat Freak",
