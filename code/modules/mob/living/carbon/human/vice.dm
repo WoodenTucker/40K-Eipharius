@@ -9,15 +9,15 @@
 					to_chat(src, "<span class='goodmood'>+ I feel at ease here. +</span>\n")
 
 		if(src.vice == "Neat Freak")
-			if(sleeping || src.faction == "Nurgle") return
+			if(sleeping || src.faction == "nurgle") return
 
 			for(var/obj/effect/decal/cleanable/H in view(5, src))
-				if(src.vice == "Neat Freak" && src.faction != "Nurgle")
+				if(src.vice == "Neat Freak" && src.faction != "nurgle")
 					if(prob(2))
 						to_chat(src, "<span class='badmood'>+ Emperor it's filthy here... +</span>\n")
 						src.happiness -= 0.2
 			for(var/obj/item/reagent_containers/food/snacks/poo/H in view(5, src))
-				if(src.vice == "Neat Freak" && src.faction != "Nurgle")
+				if(src.vice == "Neat Freak" && src.faction != "nurgle")
 					if(prob(2))
 						to_chat(src, "<span class='badmood'>+ Emperor it's filthy here... +</span>\n")
 						src.happiness -= 0.2
