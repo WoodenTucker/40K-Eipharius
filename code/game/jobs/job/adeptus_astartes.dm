@@ -100,6 +100,7 @@
 		H.bladder = -INFINITY
 		H.bowels = -INFINITY //integrated shitter
 		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+		H.vice = null //off for now
 
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)
 	. = ..()

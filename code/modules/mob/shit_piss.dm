@@ -248,7 +248,7 @@
 			message = "<span class='danger'><b>[src]</b> shits right on <b>[M]</b>'s face!</span>"
 			M.reagents.add_reagent(/datum/reagent/poo, 10)
 			M.unlock_achievement(new/datum/achievement/shit_on())
-			if(src.vice == "Neat Freak" && src.faction != "Nurgle")
+			if(src.vice == "Neat Freak" && src.faction != "nurgle")
 				happiness = -15
 				to_chat(src, "<span class='phobia'<big>I will never be clean again!</big></span>")
 
@@ -260,7 +260,7 @@
 				reagents.trans_to(V, rand(1,5))
 			GLOB.shit_left++//Add it to the shit on the floor counter.
 			for(var/mob/living/carbon/human/H in view(5, src))
-				if(H.vice == "Neat Freak" && H.faction != "Nurgle")
+				if(H.vice == "Neat Freak" && H.faction != "nurgle")
 					to_chat(src, "<span class='badmood'>+ [src] is a disgusting animal... +</span>\n")
 					H.happiness -= 3
 
@@ -320,7 +320,7 @@
 			message = "<B>[src]</B> pisses on the [TT.name]."
 		GLOB.piss_left++//Add it to the piss on the floor counter.
 		for(var/mob/living/carbon/human/H in view(5, src))
-			if(H.vice == "Neat Freak" && H.faction != "Nurgle")
+			if(H.vice == "Neat Freak" && H.faction != "nurgle")
 				to_chat(src, "<span class='badmood'>+ NOT ON THE FLOOR... +</span>\n")
 				H.happiness -= 3
 

@@ -33,14 +33,14 @@
 	else if(istype(target,/obj/effect/decal/cleanable/blood))
 		to_chat(user, "<span class='notice'>You scrub \the [target.name] out.</span>")
 		target.clean_blood() //Blood is a cleanable decal, therefore needs to be accounted for before all cleanable decals.
-		if(user.vice == "Neat Freak" && user.faction != "Nurgle")
+		if(user.vice == "Neat Freak" && user.faction != "nurgle")
 			user.happiness += 1
 			if(prob(10))
 				to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
 	else if(istype(target,/obj/effect/decal/cleanable))
 		to_chat(user, "<span class='notice'>You scrub \the [target.name] out.</span>")
 		qdel(target)
-		if(user.vice == "Neat Freak" && user.faction != "Nurgle")
+		if(user.vice == "Neat Freak" && user.faction != "nurgle")
 			user.happiness += 1
 			if(prob(10))
 				to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
@@ -54,7 +54,7 @@
 	else
 		to_chat(user, "<span class='notice'>You clean \the [target.name].</span>")
 		target.clean_blood() //Clean bloodied atoms. Blood decals themselves need to be handled above.
-		if(user.vice == "Neat Freak" && user.faction != "Nurgle")
+		if(user.vice == "Neat Freak" && user.faction != "nurgle")
 			user.happiness += 0.2
 			if(prob(10))
 				to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
