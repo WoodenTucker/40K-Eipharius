@@ -48,6 +48,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
 
 
 
@@ -89,6 +90,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer, Obey your Magi and remember, your primary duty is to ensure that all machine spirits are pleased and secure technology.</font></b></span>")
 
 // Biologis
@@ -131,6 +133,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, you are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii, you are not forced to listen to the Magos Dominus, but be aware, he holds much more power in the outpost than you.</font></b></span>")
 
 

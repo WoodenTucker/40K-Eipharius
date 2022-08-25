@@ -110,7 +110,7 @@ var/list/flooring_types
 
 /decl/flooring/tiling
 	name = "floor"
-	desc = "Scuffed from the passage of countless greyshirts."
+	desc = "Scuffed from the passage of countless menials."
 	icon = 'icons/turf/flooring/tiles.dmi'
 	icon_base = "steel"
 	color = null

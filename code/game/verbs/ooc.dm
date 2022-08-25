@@ -104,3 +104,23 @@
 	else
 		src.music_on = 1
 		to_chat(src, "Ambient music enabled.")
+
+
+/mob/living/verb/playedTime()
+	set name = "View Played Time"
+	set desc = "See how long you've played!"
+	set category = "OOC"
+
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		to_chat(src, "DB connection failed! Tell an admeme!")
+		return
+
+	var/DBQuery/query = dbcon.NewQuery("SELECT time_living FROM playtime_history WHERE ckey='[src.ckey]'")
+	query.Execute()
+	while(query.NextRow())
+		var/playedTime = query.item[1]
+		playedTime = text2num(playedTime)
+		playedTime = playedTime/60
+		to_chat(src, "[playedTime] hours played")
+		break
