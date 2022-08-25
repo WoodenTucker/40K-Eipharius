@@ -193,11 +193,11 @@
 
 /obj/item/projectile/bullet/pistol/medium/ap
 	damage = 42
-	armor_penetration = -5
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/ms
 	damage = 48
-	armor_penetration = 30
+	armor_penetration = -5
 
 /obj/item/projectile/bullet/pistol/medium/smg
 	fire_sound = 'sound/weapons/gunshot/gunshot_smg.ogg'
