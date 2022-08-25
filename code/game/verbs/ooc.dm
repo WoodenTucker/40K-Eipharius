@@ -106,7 +106,7 @@
 		to_chat(src, "Ambient music enabled.")
 
 
-/mob/living/verb/playedTime()
+/client/verb/playedTime()
 	set name = "View Played Time"
 	set desc = "See how long you've played!"
 	set category = "OOC"
