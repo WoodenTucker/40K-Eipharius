@@ -101,6 +101,11 @@
 	cost = 56
 	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
 
+/datum/cargo_entry/weapon/grim
+	name = "GRIM Autogun"
+	cost = 64
+	item_path = /obj/item/gun/projectile/automatic/autogrim
+
 /datum/cargo_entry/weapon/stubbervilliers
 	name = "Villiers Heavy Stubber"
 	cost = 57
@@ -190,106 +195,6 @@
 	name = "Upgraded Bolter Pistol"
 	cost = 78
 	item_path = /obj/item/gun/projectile/bolter_pistol/inquis
-
-/datum/cargo_entry/weapon/smg
-	name = "Autogun Magazine"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol
-
-/datum/cargo_entry/weapon/stubberammo //???
-	name = "Auto Stubber Magazine"
-	cost = 9
-	item_path = /obj/item/ammo_magazine/box/a556/mg08
-
-/datum/cargo_entry/weapon/shellbox
-	name = "Shotgun Shell Box"
-	cost = 5
-	item_path = /obj/item/ammo_box/shotgun
-
-/datum/cargo_entry/weapon/slugbox
-	name = "Shotgun Slug Box"
-	cost = 8
-	item_path = /obj/item/ammo_magazine/box/shotgun/slug
-
-/datum/cargo_entry/weapon/riflehandful
-	name = "Rifle Handful"
-	cost = 3
-	item_path = /obj/item/ammo_magazine/handful/brifle_handful
-
-/datum/cargo_entry/weapon/riflemag
-	name = "Rifle Magazine"
-	cost = 4
-	item_path = /obj/item/ammo_magazine/brifle
-
-/datum/cargo_entry/weapon/meltamag
-	name = "Melta Ammo"
-	cost = 12
-	item_path = /obj/item/ammo_magazine/melta
-
-/datum/cargo_entry/weapon/heavysnipammo
-	name = "Heavy Sniper Ammo"
-	cost = 12
-	item_path = /obj/item/storage/box/sniperammo
-
-/datum/cargo_entry/weapon/heavysnipammoap
-	name = "Heavy Sniper Ammo(AP)"
-	cost = 20
-	item_path = /obj/item/storage/box/sniperammo/apds
-
-/datum/cargo_entry/weapon/lp338mag
-	name = "Lp338 Sniper Magazine"
-	cost = 8
-	item_path = /obj/item/ammo_magazine/lp338
-
-/datum/cargo_entry/weapon/lp338needler
-	name = "Lp338 Sniper Needler Magazine"
-	cost = 15
-	item_path = /obj/item/ammo_magazine/lp338/needler
-
-/datum/cargo_entry/weapon/boltpistolmag
-	name = "Bolt Pistol Magazine"
-	cost = 10
-	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine
-
-/datum/cargo_entry/weapon/boltpistolmagkp
-	name = "Penetrator Bolt Pistol Magazine"
-	cost = 20
-	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
-
-/datum/cargo_entry/weapon/boltermag
-	name = "Bolter Magazine"
-	cost = 30
-	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine
-
-/datum/cargo_entry/weapon/boltermagkp
-	name = "Penetrator Bolter Magazine"
-	cost = 50
-	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
-
-/datum/cargo_entry/weapon/lasmag
-	name = "Lasgun Power Pack"
-	cost = 10
-	item_path = /obj/item/cell/lasgun
-
-/datum/cargo_entry/weapon/revolverammo
-	name = ".357 Speedloader"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/a357
-
-/datum/cargo_entry/weapon/revolverammo2
-	name = ".44 Speedloader"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/c44
-
-/datum/cargo_entry/weapon/revolverammo3
-	name = ".50 Speedloader"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/c50
-
-/datum/cargo_entry/weapon/heatshell
-	name = "Vraks Pattern Rocket"
-	cost = 25
-	item_path = /obj/item/ammo_casing/heat_shell
 
 /datum/cargo_entry/weapon/fragg
 	name = "Fragmentation Grenade"

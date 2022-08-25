@@ -124,12 +124,12 @@
 	force = 15
 	one_hand_penalty = 3.4
 	fire_delay = 4
-	accuracy = -3.5
+	accuracy = -3
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
-	charge_cost = 200
+	charge_cost = 250
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
@@ -137,7 +137,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=4, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4.5, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=400),
+		list(mode_name="overcharge", fire_delay = 4.5, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=450),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
