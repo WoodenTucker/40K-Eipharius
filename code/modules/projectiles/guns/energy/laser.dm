@@ -225,9 +225,9 @@ obj/item/gun/energy/retro
 	sales_price = 35
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
+		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
 /obj/item/gun/energy/las/lasgun/rare
@@ -241,9 +241,9 @@ obj/item/gun/energy/retro
 	sales_price = 45
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3, one_hand_penalty=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge",       burst=1, fire_delay = 4, one_hand_penalty=2.125, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=75),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=75),
+		list(mode_name="overcharge",       burst=1, fire_delay = 3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
 		)
 
 /obj/item/gun/energy/las/lasgun/lucius
@@ -261,15 +261,15 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
-	charge_cost = 120
+	charge_cost = 110
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
 	sales_price = 40
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
+		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=110),
+		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
 
 /obj/item/gun/energy/las/lasgun/catachan
@@ -295,9 +295,9 @@ obj/item/gun/energy/retro
 	fire_delay = 1 // 0.2 seconds
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=1.1, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, one_hand_penalty=2.2, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge",       burst=1, fire_delay=3, one_hand_penalty=1.375, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=110),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=60),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=60),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=110),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered
@@ -321,9 +321,9 @@ obj/item/gun/energy/retro
 	sales_price = 40
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge", burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
+		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=70),
+		list(mode_name="overcharge", burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=120),
 		)
 
 /obj/item/gun/energy/las/lasgun/lucius/tinkered
@@ -334,13 +334,13 @@ obj/item/gun/energy/retro
 	one_hand_penalty = 1.8
 	move_delay = 2.5
 	fire_delay = 3.5
-	charge_cost = 90
+	charge_cost = 100
 	sales_price = 45
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge", burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=180),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
+		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=100),
+		list(mode_name="overcharge", burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=180),
 		)
 
 /obj/item/gun/energy/las/lasgun/tinkered/catachan
@@ -365,9 +365,9 @@ obj/item/gun/energy/retro
 	sales_price = 50
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.5,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		list(mode_name="overcharge",       burst=1, fire_delay=3.5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=55),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=55),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=100),
 		)
 
 /obj/item/gun/energy/las/hotshot
@@ -385,7 +385,7 @@ obj/item/gun/energy/retro
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
-	charge_cost = 150
+	charge_cost = 180
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
@@ -393,8 +393,8 @@ obj/item/gun/energy/retro
 
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=180),
+		list(mode_name="burst",       burst=1, fire_delay=5.4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0, charge_cost=180),
 		)
 
 obj/item/gun/energy/las/hotshot/bloodpact
@@ -405,10 +405,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "bloodlasgun"
 
 	firemodes = list(
-		list(mode_name="automatic", burst=1, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
-		list(mode_name="fuller automatic", burst=3, fire_delay=5.1,    one_hand_penalty=7, burst_accuracy=list(-2,-3,-4), dispersion=list(0.2, 0.3, 0.3), automatic = 0.7),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3.4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=180),
+		list(mode_name="burst",       burst=3, fire_delay=5.9, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0, charge_cost=180),
 		)
+
 	sales_price = 120 // make it a bit worse than hotshot
+
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
@@ -430,7 +432,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
 		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=180),
 		)
 
@@ -445,8 +447,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_meter = FALSE //must have, due to having only 1 item state.
 	sales_price = 35
 	firemodes = list(
-		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", 	burst=3, fire_delay=3.1,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=45),
+		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
 	)
 	sales_price = 100
 
@@ -478,7 +480,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 25
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
 		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
 
@@ -514,9 +516,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 25
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 5, one_hand_penalty=2.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
-		list(mode_name="execution", fire_delay = 5, one_hand_penalty=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
+		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
+		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
+		list(mode_name="execution", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
 		)
 
 
@@ -542,7 +544,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 100
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=10, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=10, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/energy/pulse/pulsepistol
@@ -587,8 +589,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 129
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, one_hand_penalty=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3,    one_hand_penalty=3, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=6, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
 

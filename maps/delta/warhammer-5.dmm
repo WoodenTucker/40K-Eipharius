@@ -495,11 +495,12 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Inquisitorial cabinet"
 	},
-/obj/item/gun/projectile/talon/renegade,
-/obj/item/ammo_magazine/c45m/warfare,
-/obj/item/ammo_magazine/c45m/warfare,
-/obj/item/ammo_magazine/c45m/warfare,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/gun/projectile/talon/renegade,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/item/ammo_magazine/c45m/warfare/ap,
+/obj/item/ammo_magazine/c45m/warfare/ap,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ca" = (
@@ -584,11 +585,11 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Inquisitorial cabinet"
 	},
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/gun/energy/pulse/plasma/pistol,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cr" = (
@@ -823,11 +824,11 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Inquisitorial cabinet"
 	},
-/obj/item/gun/energy/las/lasgun,
-/obj/item/gun/energy/las/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/random/loot/goodweapon,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "eu" = (
@@ -3370,9 +3371,12 @@
 	},
 /obj/item/clothing/suit/armor/cuirass,
 /obj/item/clothing/suit/armor/salvage,
-/obj/item/clothing/suit/armor/guardsman/mercenary,
-/obj/item/clothing/suit/armor/guardsman/mercenary/carapace,
-/obj/item/clothing/suit/miner,
+/obj/item/clothing/suit/armor/guardsman/mercenary{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
+/obj/item/clothing/suit/miner{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -3449,14 +3453,12 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Inquisitorial cabinet"
 	},
-/obj/item/gun/projectile/warfare,
-/obj/item/gun/projectile/warfare/kieji,
-/obj/item/ammo_magazine/c45m,
-/obj/item/ammo_magazine/c45m,
-/obj/item/ammo_magazine/c45m,
-/obj/item/ammo_magazine/c45m,
-/obj/item/ammo_magazine/c45m,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/ammo_magazine/c45m/warfare/ap,
+/obj/item/ammo_magazine/c45m/warfare/ap,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/item/gun/projectile/warfare/kieji,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Bd" = (
@@ -3691,6 +3693,23 @@
 	color = "grey"
 	},
 /area/centcom)
+"CU" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/closet/secure_closet/guncabinet{
+	name = "Inquisitorial cabinet"
+	},
+/obj/item/ammo_magazine/c44/ms,
+/obj/item/ammo_magazine/c50/ms,
+/obj/item/ammo_magazine/a357/ms,
+/obj/item/ammo_magazine/autogrim/ms,
+/obj/item/ammo_magazine/mc9mmt/machinepistol/ms,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/item/ammo_magazine/box/shotgun/slug/ms,
+/obj/item/ammo_magazine/handful/brifle_handful/ms,
+/obj/item/ammo_magazine/handful/brifle_handful/ms,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "CX" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -4946,7 +4965,6 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Inquisitorial cabinet"
 	},
-/obj/item/gun/projectile/lockebolter,
 /obj/item/gun/projectile/lockebolter,
 /obj/item/ammo_magazine/bolt_rifle_magazine,
 /obj/item/ammo_magazine/bolt_rifle_magazine,
@@ -11726,7 +11744,7 @@ tj
 Ph
 JO
 pG
-pG
+CU
 tj
 tj
 tj

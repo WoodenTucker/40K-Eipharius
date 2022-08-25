@@ -3,8 +3,8 @@
 /datum/job/qm2
 	title = "House Noble"
 	department_flag = PIL
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "the merchant guilds"
 	selection_color = "#337C81"
@@ -40,8 +40,8 @@
 /datum/job/qm
 	title = "House Penitent"
 	department_flag = PIL
-	total_positions = 0 // Disabled for now.
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "the Noble household"
 	selection_color = "#337C81"
 	economic_modifier = 5
@@ -65,8 +65,8 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Penitent [current_name]")
-		H.add_stats(rand(16,18), rand(12,16), rand(12,16), rand(10,15)) //meant to be a brute keeping the plebs in line
-		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(15,16), rand(12,15), rand(12,15), rand(10,14)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(9,10),rand(7,10),rand(3,6),4,rand(3,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)

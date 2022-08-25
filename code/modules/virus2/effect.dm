@@ -21,7 +21,7 @@
 /datum/disease2/effect
 	var/name = "Blanking effect"
 	var/chance			//probality to fire every tick
-	var/chance_max = 50
+	var/chance_max = 100
 	var/multiplier = 1	//effect magnitude multiplier
 	var/multiplier_max = 1
 	var/stage = 4		//minimal stage
@@ -254,6 +254,56 @@
 	chance_max = 0
 	allow_multiple = 1
 
+/datum/disease2/effect/plague3
+	name = "Nurgle Plague Part 3(DEATH)"
+	stage = 3
+	badness = VIRUS_EXOTIC
+	chance_max = 95
+	allow_multiple = 1
+	delay = 5 SECONDS
+	activate(var/mob/living/carbon/human/mob,var/multiplier)
+		new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
+		mob.gib()
+
+/datum/disease2/effect/plague2
+	name = "Nurgle Plague Part 2"
+	stage = 2
+	badness = VIRUS_EXOTIC
+	chance_max = 95
+	allow_multiple = 1
+	delay = 30 SECONDS
+	activate(var/mob/living/carbon/human/mob,var/multiplier)
+		mob.apply_damage(22, BURN)
+		mob.bowels = rand(450, 750)
+		mob.bladder = rand(450, 750)
+		mob.emote("sneeze")
+		for(var/mob/living/carbon/human/M in get_step(mob,mob.dir))
+			mob.spread_disease_to(M)
+		if (prob(100) && !mob.wear_mask)
+			var/obj/effect/decal/cleanable/mucus/M = new(get_turf(mob))
+			M.virus2 = virus_copylist(mob.virus2)
+
+/datum/disease2/effect/plague1
+	name = "Nurgle Plague Part 1"
+	stage = 1
+	badness = VIRUS_MILD
+	chance_max = 90
+	allow_multiple = 1
+	delay = 15 SECONDS
+	activate(var/mob/living/carbon/human/mob,var/multiplier)
+		mob.custom_pain("Your skin hurts a bit.", 20)
+		mob.apply_damage(2, BRUTE)
+		sleep(30)
+		if (prob(30))
+			to_chat(mob, "<span class='warning'>You feel like you are about to sneeze!</span>")
+		sleep(5)
+		mob.emote("sneeze")
+		for(var/mob/living/carbon/human/M in get_step(mob,mob.dir))
+			mob.spread_disease_to(M)
+		if (prob(100) && !mob.wear_mask)
+			var/obj/effect/decal/cleanable/mucus/M = new(get_turf(mob))
+			M.virus2 = virus_copylist(mob.virus2)
+
 ////////////////////////STAGE 2/////////////////////////////////
 /datum/disease2/effect/drowsness
 	name = "Automated Sleeping Syndrome"
@@ -264,8 +314,8 @@
 /datum/disease2/effect/sleepy
 	name = "Resting Syndrome"
 	stage = 2
-	chance_max = 15
-	delay = 35 SECONDS
+	chance_max = 100
+	delay = 60 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
 		mob.emote("collapse")
 
@@ -328,7 +378,7 @@
 /datum/disease2/effect/sneeze
 	name = "Coldingtons Effect"
 	stage = 1
-	delay = 15 SECONDS
+	delay = 25 SECONDS
 
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
 		if (prob(30))
@@ -337,7 +387,7 @@
 		mob.emote("sneeze")
 		for(var/mob/living/carbon/human/M in get_step(mob,mob.dir))
 			mob.spread_disease_to(M)
-		if (prob(50) && !mob.wear_mask)
+		if (prob(100) && !mob.wear_mask)
 			var/obj/effect/decal/cleanable/mucus/M = new(get_turf(mob))
 			M.virus2 = virus_copylist(mob.virus2)
 
@@ -351,7 +401,6 @@
 /datum/disease2/effect/drool
 	name = "Saliva Effect"
 	stage = 1
-	chance_max = 25
 	delay = 25 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
 		mob.emote("drool")
@@ -359,7 +408,6 @@
 /datum/disease2/effect/twitch
 	name = "Twitcher"
 	stage = 1
-	chance_max = 25
 	delay = 25 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
 		mob.emote("twitch")

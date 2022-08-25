@@ -29,9 +29,32 @@
 	ammo_type = /obj/item/ammo_casing/brifle
 	grab_sound = 'sound/items/handle/bullet_pickup.ogg'
 
+/obj/item/ammo_magazine/handful/brifle_handful
+	name = "\improper handful of bullets"
+	desc = "A handful of rifle bullets for your rifle."
+	icon_state = "brifle"
+	caliber = "763"
+	ammo_type = /obj/item/ammo_casing/brifle
+	grab_sound = 'sound/items/handle/bullet_pickup.ogg'
+
 /obj/item/ammo_magazine/handful/brifle_handful/two
 	initial_ammo = 2
 
+/obj/item/ammo_magazine/handful/brifle_handful/ap
+	name = "\improper handful of AP bullets"
+	desc = "A handful of rifle AP bullets for your rifle."
+	ammo_type = /obj/item/ammo_casing/brifle/ap
+
+/obj/item/ammo_magazine/handful/brifle_handful/ap/two
+	initial_ammo = 2
+
+/obj/item/ammo_magazine/handful/brifle_handful/ms
+	name = "\improper handful of MS bullets"
+	desc = "A handful of MS rifle bullets for your rifle."
+	ammo_type = /obj/item/ammo_casing/brifle/ms
+
+/obj/item/ammo_magazine/handful/brifle_handful/ms/two
+	initial_ammo = 2
 
 /obj/item/ammo_magazine/handful/kroot_handful
 	name = "\improper handful of bullets"
@@ -71,6 +94,11 @@
 	icon_state = "slshell"
 	caliber = "shotgun"
 	ammo_type = /obj/item/ammo_casing/shotgun
+
+/obj/item/ammo_magazine/handful/shotgun/slug_handful/ms
+	name = "\improper handful of MS slug shells"
+	desc = "A handful of MS slugs, like buckshot without the spread."
+	ammo_type = /obj/item/ammo_casing/shotgun/ms
 
 /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
 	name = "\improper handful of shells"
@@ -240,6 +268,11 @@
 	name = "slug box"
 	icon_state = "blbox"
 	ammo_type = /obj/item/ammo_casing/shotgun
+
+/obj/item/ammo_magazine/box/shotgun/slug/ms
+	name = "MS slug box"
+	icon_state = "blbox"
+	ammo_type = /obj/item/ammo_casing/shotgun/ms
 
 /obj/item/ammo_magazine/box/shotgun/stun
 	name = "stunshells box"

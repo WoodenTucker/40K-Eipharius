@@ -205,8 +205,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 600
-	health = 600
+	maxHealth = 650
+	health = 650
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -235,21 +235,18 @@
 		L.adjustBruteLoss(damage)
 		return L
 
-	faction = "Nurgle" 
-	faction = "Slaanesh"
-	faction = "Khorne"
 // For now this is one of the few Daemons that won't just straight up kill cultists as in lore the more veteran of these creatures are considered to be the 'Officers/Lieutenants' of the blood legions. They can't be dragged and are VERY ideal to be posessed by ghosts so they can command cultists.
 	
 /mob/living/simple_animal/hostile/smalldemon/fleshbeast
 	name = "Flesh Beast"
-	real_name = "Flesh Beast" // Average speed. Medium damage and HP.
+	real_name = "Flesh Beast" 
 	desc = "This violent mass of flesh and meat scatters toward you." 
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 480
-	health = 480
+	maxHealth = 520
+	health = 520
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -262,14 +259,14 @@
 
 /mob/living/simple_animal/hostile/smalldemon/plague
 	name = "Plague Beast"
-	real_name = "Plague Beast" // Average speed. Medium damage and HP.
+	real_name = "Plague Beast"
 	desc = "This violent mass of flesh and meat scatters toward you." 
 	icon = 'icons/mob/Demon.dmi'
 	icon_state = "plague"
 	icon_living = "plague"
 	icon_dead = "plague_dead"
-	maxHealth = 330
-	health = 330
+	maxHealth = 470
+	health = 470
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -282,14 +279,14 @@
 
 /mob/living/simple_animal/hostile/smalldemon/chaos
 	name = "Chaos Spawn"
-	real_name = "Chaos Spawn" // Average speed. Medium damage and HP.
+	real_name = "Chaos Spawn"
 	desc = "This violent mass of flesh and meat scatters toward you." 
 	icon = 'icons/mob/Demon.dmi'
 	icon_state = "goliath"
 	icon_living = "goliath"
 	icon_dead = "goliath_dead"
-	maxHealth = 530
-	health = 530
+	maxHealth = 650
+	health = 650
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"

@@ -1961,13 +1961,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"FP" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/item/gun/energy/las/lasgun/tinkered,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "GO" = (
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -2274,9 +2267,8 @@
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "UA" = (
 /obj/structure/closet/secure_closet/guncabinet,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
-/obj/item/cell/lasgun,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -33542,7 +33534,7 @@ AZ
 nG
 Ax
 nh
-FP
+Ax
 UA
 bm
 nG

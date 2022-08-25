@@ -17,8 +17,8 @@
 /datum/cargo_category/misc
 	name = "Misc"
 
-/datum/cargo_category/tool
-	name = "Tools"
+/datum/cargo_category/ammo
+	name = "Ammo"
 
 /datum/cargo_category/armor
 	name = "Armours"

@@ -30,3 +30,13 @@
 	name = "Plastic Explosives"
 	cost = 25
 	item_path = /obj/item/plastique
+
+/datum/cargo_entry/misc/lighter
+	name = "Zippo Lighter"
+	cost = 3
+	item_path = /obj/item/flame/lighter/zippo
+
+/datum/cargo_entry/misc/shovel
+	name = "Shovel"
+	cost = 5
+	item_path = /obj/item/shovel

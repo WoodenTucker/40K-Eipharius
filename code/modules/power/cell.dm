@@ -268,6 +268,14 @@
 	maxcharge = 3000
 	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
+	sales_price = 3
+
+/obj/item/cell/lasgun/hotshot
+	name = "hotshot lasgun power pack"
+	desc = "A small, portable capacitor power pack fit for a lasgun."
+	maxcharge = 5000
+	sales_price = 15
+	color = "#605048"
 
 /obj/item/cell/pulserifle
 	name = "pulse rifle magazine"
