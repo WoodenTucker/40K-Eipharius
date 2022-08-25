@@ -482,6 +482,8 @@ SUBSYSTEM_DEF(jobs)
 				deity.add_cultist(H)
 		else if(job.cultist_chance)
 			to_chat(H, "<span class='warning'>Cultist roll failed. Chance [job.cultist_chance]%.</span>")
+	else if(H.client.prefs.cult != "None" && SSgods.cultist_count >= MAX_CULTISTS)
+		to_chat(H, "<span class='warning'>Cultists have reached capacity.</span>")
 
 	BITSET(H.hud_updateflag, ID_HUD)
 	BITSET(H.hud_updateflag, IMPLOYAL_HUD)
