@@ -15,6 +15,7 @@
 
 /obj/item/reagent_containers/pill/New()
 	..()
+	AddComponent(/datum/component/heretic_item/favor/eaten, "slaanesh", 3)
 	if(!icon_state)
 		icon_state = "pill[rand(1, 5)]" //preset pills only use colour changing or unique icons
 
