@@ -522,8 +522,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/guardsman/bloodpact
 	name = "Khornate Armor"
 	desc = "War torn and suited to savage needs. This is the armor of a khornate warrior. It has certainly seen blood flown upon it."
-	icon_state = "bloodpactarmor"
-	item_state = "bloodpactarmor"
+	icon_state = "heretmil"
+	item_state = "heretmil"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 45, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 20)
 	sales_price = 50

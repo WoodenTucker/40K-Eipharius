@@ -205,7 +205,7 @@
 	weapon_speed_delay = 9
 	sales_price = 45
 
-/obj/item/melee/chain/inqcs/Guard // making them inqcs because it has the shittiest stats, dont want these to be strong
+/obj/item/melee/chain/inqcs/guard // making them inqcs because it has the shittiest stats, dont want these to be strong
 	name = "Imperial Guard chainsword" //add it to guard outfits later down the track
 	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
 	icon_state = "guardchains"
