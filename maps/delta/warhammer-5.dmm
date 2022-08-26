@@ -786,7 +786,7 @@
 /obj/structure/closet/crate,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
-/obj/item/gun/energy/pulse/plasma/pistol,
+/obj/item/gun/energy/pulse/plasma/pistol/chaos,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2882,7 +2882,7 @@
 /obj/structure/closet/crate,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
-/obj/item/gun/energy/las/hotshot,
+/obj/item/gun/energy/las/hotshot/bloodpact,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3886,6 +3886,14 @@
 	icon_state = "corner_white";
 	dir = 9
 	},
+/obj/item/mortar_launcher/chaos,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/incendiary,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
