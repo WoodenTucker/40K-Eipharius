@@ -20,6 +20,18 @@
 	base_area = /area/inqmoon
 	base_turf = /turf/simulated/floor
 
+/obj/effect/shuttle_landmark/ferry/inquisition_start/pact
+	name = "Planet2"
+	landmark_tag = "inquisition_start_pact"
+	base_area = /area/cadiaoutpost/oa/city
+	base_turf = /turf/simulated/floor/snow
+
+/obj/effect/shuttle_landmark/ferry/inquisition_end/pact
+	name = "Bloodpact Ship"
+	landmark_tag = "inquisition_end_pact"
+	base_area = /area/inqmoon
+	base_turf = /turf/simulated/floor
+
 /obj/machinery/computer/shuttle_control/ferry/inquisition
 	name = "Shuttle Control Console"
 	shuttle_tag = "Inquisition"

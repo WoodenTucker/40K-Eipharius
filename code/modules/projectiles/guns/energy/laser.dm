@@ -374,7 +374,7 @@ obj/item/gun/energy/retro
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
 	icon_state = "hotshotgun"
-	item_state = "hotshotgun"
+	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 22
@@ -394,19 +394,19 @@ obj/item/gun/energy/retro
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=180),
-		list(mode_name="burst",       burst=1, fire_delay=5.4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0, charge_cost=180),
+		list(mode_name="burst",       burst=3, fire_delay=5.4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=180),
 		)
 
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
 	desc = "The favored ranged weapon of Khorne crazed cultists. Especially the automatic setting."
-	force = 38 // muh bayonet
+	force = 30 // muh bayonet
 	icon_state = "bloodlasgun"
-	item_state = "bloodlasgun"
+	item_state = "lascar"
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=3.4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=180),
-		list(mode_name="burst",       burst=3, fire_delay=5.9, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0, charge_cost=180),
+		list(mode_name="burst",       burst=3, fire_delay=5.9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=180),
 		)
 
 	sales_price = 120 // make it a bit worse than hotshot
@@ -599,7 +599,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "If you see this, please ping Zab on discord. Or complain that staff used the wrong object"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
-	item_state = "prifle"
+	item_state = "ionrifle"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
@@ -623,7 +623,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma rifle. Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
-	item_state = "prifle"
+	item_state = "ionrifle"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
@@ -645,7 +645,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma pistol. Fun in a small package. Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
-	item_state = "ppistol"
+	item_state = "pulse_pistol"
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 10
@@ -667,7 +667,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "The plasma pistol wargear of an Astartes, upgraded with increased cooling vents and other upgrades only an Astartes is capable of having access to.(cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
-	item_state = "ppistol"
+	item_state = "pulse_pistol"
 	str_requirement = 18 // astartes moment
 	force = 20
 	one_hand_penalty = 5 //change later?
@@ -689,7 +689,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "chaosppistol"
-	item_state = "chaosppistol"
+	item_state = "pulse_pistol"
 	force = 10
 	one_hand_penalty = 10 //change later?
 	accuracy = -6
@@ -711,7 +711,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "toasterppistol"
-	item_state = "toasterppistol"
+	item_state = "pulse_pistol"
 	force = 10
 	one_hand_penalty = 10 //until plasma is better balanced, wield this fancy one.
 	accuracy = -4

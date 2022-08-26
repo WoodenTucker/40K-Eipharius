@@ -282,7 +282,7 @@
 	name = "Melta Rifle"
 	desc = "Melta Guns are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
 	icon_state = "melta"
-	item_state = "meltagun"
+	item_state = "ionrifle"
 	wielded_item_state = "machinepistol-wielded"
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	slot_flags = SLOT_BELT|SLOT_BACK
@@ -300,4 +300,5 @@
 	accuracy = -1.5
 	fire_delay= 20
 	sales_price = 159
+	wielded_item_state = "ionrifle-wielded"
 

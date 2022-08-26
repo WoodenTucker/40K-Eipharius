@@ -381,7 +381,7 @@
 "fcM" = (/obj/structure/noticeboard,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/caves)
 "fdL" = (/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"; name = "freezer floor"},/area/cadiaoutpost/oa/caves)
 "fen" = (/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves)
-"fep" = (/mob/living/simple_animal/hostile/mining_borg/behemoth{health = 1500; name = "Combat Servitor"},/mob/living/simple_animal/hostile/mining_borg/behemoth{health = 1500; name = "Combat Servitor"},/obj/machinery/door/airlock/security{req_access = list(420)},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"fep" = (/obj/machinery/door/airlock/security{req_access = list(420)},/mob/living/simple_animal/hostile/hivebot/rapid{desc = "A terrifying death machine."; health = 700; melee_damage_lower = 30; melee_damage_upper = 40; name = "Security Droid"},/mob/living/simple_animal/hostile/hivebot/rapid{desc = "A terrifying death machine."; health = 700; melee_damage_lower = 30; melee_damage_upper = 40; name = "Security Droid"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "few" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/carpet/green,/area/cadiaoutpost/oa/service/habs)
 "feM" = (/obj/effect/floor_decal/turf/metal/six,/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
 "ffT" = (/obj/effect/floor_decal/turf/splate,/obj/machinery/door/blast/bordergatec/closed{id = "innergate"; maxhealth = 30000},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)

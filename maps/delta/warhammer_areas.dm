@@ -530,6 +530,12 @@ Area basic template
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/hangarpact
+	name = "Pact Hangar"
+	icon_state = "red"
+	music = 'sound/newmusic/Outpost1.ogg'
+	requires_power = FALSE
+
 /////////////////////////////////////////
 ////////////////Engineering/////////////
 ////////////////////////////////////////
@@ -1458,6 +1464,12 @@ Area basic template
 
 /area/cadiaoutpost/oa/shuttle/inquisition
 	name = "Inquisition Ship"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Outpost1.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/inquisitionpact
+	name = "Pact Ship"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Outpost1.ogg'
 	requires_power = 0

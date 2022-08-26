@@ -763,6 +763,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"df" = (
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/security)
 "dg" = (
 /obj/structure/table/rack,
 /obj/item/device/lightreplacer,
@@ -1334,6 +1344,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "fq" = (
 /obj/effect/decal/dead/two,
+/obj/random/loot/goodweapon,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "fr" = (
@@ -2426,13 +2437,8 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "jP" = (
-/obj/machinery/door/airlock/security,
-/mob/living/simple_animal/hostile/mining_borg/behemoth{
-	health = 1500;
-	name = "Combat Servitor"
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/security)
+/turf/simulated/wall/rust,
+/area/cadiaoutpost/oa/hangarpact)
 "jQ" = (
 /obj/machinery/door/airlock/glass_arbiter{
 	color = "grey"
@@ -2998,7 +3004,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "lV" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
-/turf/simulated/floor/fixed/alium/ruin,
+/turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
 "lW" = (
 /obj/structure/table/steel,
@@ -3360,6 +3366,13 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "np" = (
 /obj/machinery/hologram/holopad,
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "nq" = (
@@ -4055,8 +4068,8 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/caves/undercity)
 "pY" = (
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/security)
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/hangarpact)
 "qb" = (
 /turf/simulated/wall/ancient{
 	color = "grey"
@@ -4305,6 +4318,10 @@
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/chapel)
+"ra" = (
+/obj/effect/shuttle_landmark/ferry/bloodpact_end,
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/hangarpact)
 "rb" = (
 /obj/flamer_fire{
 	burnlevel = 33;
@@ -5304,10 +5321,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/chapel)
-"uX" = (
-/obj/machinery/door/airlock/security,
-/turf/simulated/floor/fixed/alium/ruin,
-/area/cadiaoutpost/oa/security)
 "uY" = (
 /obj/structure/coatrack,
 /turf/simulated/floor/tiled/dark,
@@ -6284,9 +6297,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"yU" = (
-/turf/simulated/floor/fixed/alium/ruin,
-/area/cadiaoutpost/oa/security)
 "yV" = (
 /obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,
 /turf/simulated/floor,
@@ -6681,8 +6691,14 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "AE" = (
-/obj/effect/decal/dead/two,
-/turf/simulated/floor,
+/mob/living/simple_animal/hostile/hivebot/rapid{
+	desc = "A terrifying death machine.";
+	health = 700;
+	melee_damage_lower = 30;
+	melee_damage_upper = 40;
+	name = "Security Droid"
+	},
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "AG" = (
 /obj/machinery/door/airlock/phoron{
@@ -7999,10 +8015,6 @@
 "FZ" = (
 /obj/machinery/door/airlock/vault{
 	req_access = list(420)
-	},
-/mob/living/simple_animal/hostile/mining_borg/behemoth{
-	health = 1500;
-	name = "Combat Servitor"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
@@ -9528,7 +9540,7 @@
 /area/cadiaoutpost/oa/service/habs)
 "Mk" = (
 /obj/item/bikehorn,
-/turf/simulated/floor/fixed/alium/ruin,
+/turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
 "Mm" = (
 /obj/effect/floor_decal/turf/brick/two,
@@ -9886,7 +9898,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Nx" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
-/turf/simulated/floor/fixed/alium/ruin,
+/turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
 "NE" = (
 /obj/effect/floor_decal/turf/basalt3,
@@ -11503,6 +11515,7 @@
 "Uj" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/structure/bed/chair/cage,
+/obj/effect/decal/dead/two,
 /turf/simulated/floor/fixed/alium/ruin,
 /area/cadiaoutpost/oa/security)
 "Uk" = (
@@ -11925,11 +11938,9 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "VX" = (
-/obj/machinery/door/airlock/security{
-	req_access = list(420)
-	},
+/obj/machinery/door/airlock/security,
 /turf/simulated/floor,
-/area/cadiaoutpost/oa/security)
+/area/cadiaoutpost/oa/hangarpact)
 "VZ" = (
 /turf/simulated/floor/wood{
 	color = "grey";
@@ -56398,7 +56409,7 @@ uF
 cK
 gt
 gt
-gt
+df
 zK
 uF
 YS
@@ -56919,23 +56930,23 @@ YS
 YS
 YS
 YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
 PI
 PI
 PI
@@ -57176,23 +57187,23 @@ YS
 YS
 YS
 YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+jP
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -57418,7 +57429,7 @@ gt
 uF
 uF
 uF
-VX
+sx
 uF
 uF
 uF
@@ -57433,23 +57444,23 @@ YS
 YS
 YS
 YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+jP
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -57684,29 +57695,29 @@ uF
 gt
 uF
 uF
-YS
-YS
-YS
-YS
-YS
-YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+uF
+uF
+uF
+uF
+uF
+uF
+jP
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -57936,34 +57947,34 @@ gt
 gt
 gt
 uF
-uF
+gt
 gt
 gt
 vn
 uF
-uF
-uF
-uF
-uF
-uF
-YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+gt
+gt
+gt
+gt
+gt
+gt
+VX
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -58192,35 +58203,35 @@ gt
 gt
 gt
 gt
-VX
+sx
+gt
+gt
+gt
+gt
+sx
+gt
+gt
 gt
 gt
 gt
 gt
 jP
-gt
 pY
-gt
-gt
-uF
-YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+pY
+pY
+pY
+pY
+ra
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -58450,34 +58461,34 @@ gt
 gt
 gt
 uF
-uF
+gt
 gt
 ga
 vn
 uF
-uF
-uF
-uF
 gt
-uF
-YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+gt
+gt
+gt
+gt
+gt
+VX
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -58705,36 +58716,36 @@ Ze
 gt
 gt
 gt
-AE
+gt
 uF
 uF
 uF
 fL
 uF
 uF
-YS
-YS
+uF
+uF
 XY
 gt
 XY
-YS
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+uF
+jP
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -58972,26 +58983,26 @@ YS
 YS
 uF
 uF
-uX
+sx
 uF
 uF
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+jP
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -59221,7 +59232,7 @@ ab
 uF
 uF
 uF
-uF
+YS
 YS
 YS
 YS
@@ -59229,26 +59240,26 @@ YS
 YS
 uF
 Mk
-yU
+gt
 lV
 uF
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+jP
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+pY
+jP
 PI
 PI
 PI
@@ -59476,7 +59487,6 @@ ab
 ab
 ab
 ab
-ab
 AQ
 uF
 YS
@@ -59484,28 +59494,29 @@ YS
 YS
 YS
 YS
+YS
 jI
-yU
+gt
 Uj
-yU
+gt
 uF
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
+jP
 PI
 PI
 PI
@@ -59734,8 +59745,8 @@ ab
 ab
 ab
 ab
-ab
 uF
+YS
 YS
 YS
 YS
@@ -59743,7 +59754,7 @@ YS
 YS
 uF
 Nx
-yU
+gt
 lV
 uF
 PI
@@ -59991,8 +60002,8 @@ ab
 np
 bt
 ab
-ab
 uF
+YS
 YS
 YS
 YS
@@ -60248,8 +60259,8 @@ ab
 ab
 ab
 ab
-ab
 uF
+YS
 YS
 YS
 YS
@@ -60505,8 +60516,8 @@ ab
 ab
 bt
 ab
-ab
 uF
+YS
 YS
 YS
 YS
@@ -60755,13 +60766,13 @@ PI
 PI
 YS
 uF
-uF
+ab
+AE
 ab
 ab
 ab
 ab
 ab
-fq
 uF
 uF
 YS
@@ -61011,16 +61022,16 @@ PI
 PI
 PI
 YS
-YS
 uF
+bt
+ab
+bt
+ab
+ab
+bt
+ab
+ab
 uF
-uF
-uF
-uF
-uF
-uF
-uF
-YS
 YS
 YS
 YS
@@ -61267,18 +61278,18 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+YS
+uF
+uF
+ab
+ab
+ab
+ab
+AE
+fq
+uF
+uF
+YS
 PI
 PI
 PI
@@ -61524,18 +61535,18 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+YS
+YS
+uF
+uF
+uF
+uF
+uF
+uF
+uF
+uF
+YS
+YS
 PI
 PI
 PI
