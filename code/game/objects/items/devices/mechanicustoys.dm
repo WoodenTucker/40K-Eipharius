@@ -139,7 +139,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	weapon_speed_delay = 7
-	sales_price = 0
+	sales_price = 40
 
 /obj/item/melee/omnissiah_axe/dropped() //since nodrop is fucked this will deal with it for now.
 	..()

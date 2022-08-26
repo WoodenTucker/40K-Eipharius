@@ -5248,6 +5248,14 @@
 	dir = 4
 	},
 /obj/machinery/door/blast/id_door/open,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
+/obj/item/clothing/head/serviceguard,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "uL" = (
@@ -11256,6 +11264,8 @@
 /obj/item/clothing/accessory/holster/armpit,
 /obj/item/clothing/accessory/storage/webbing_large,
 /obj/item/cell/lasgun/hotshot,
+/obj/item/clothing/head/servicesgt,
+/obj/item/clothing/head/servicesgt,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "SZ" = (
