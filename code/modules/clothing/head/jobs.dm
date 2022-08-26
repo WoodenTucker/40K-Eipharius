@@ -492,8 +492,8 @@
 	item_state = "cerberus"
 
 /obj/item/clothing/head/inqhelm
-	name = "Inquisition Retinue Helmet"
-	desc = "An helmet issued to members of the Inquisition."
+	name = "Inquisition Acolyte Helmet"
+	desc = "An helmet issued to members of an Inquisitor's Retinue. Likely newly recruited ones."
 	icon_state = "inq_helm"
 	item_state = "inq_helm"
 	armor = list(melee = 40, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
@@ -502,29 +502,29 @@
 
 /obj/item/clothing/head/inqhelm/rare
 	name = "Inquisition Shrouded Helmet"
-	desc = "An helmet issued to members of the Inquisition."
+	desc = "An helmet issued to members of the Inquisition. General all rounder in defence."
 	icon_state = "ihhelmet"
 	item_state = "ihhelmet"
-	armor = list(melee = 40, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
+	armor = list(melee = 40, bullet = 45, laser = 40, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 	sales_price = 25
 
 /obj/item/clothing/head/inqhelm/stealth
 	name = "Inquisition Stealth Helmet"
-	desc = "An helmet issued to members of the Vindicare Temple."
+	desc = "An helmet issued to members of the Vindicare Temple. Poor melee defence."
 	icon_state = "stealth_rig_sealed"
 	item_state = "stealth_rig_sealed"
-	armor = list(melee = 25, bullet = 50, laser = 45, energy = 20, bomb = 30, bio = 10, rad = 10)
+	armor = list(melee = 30, bullet = 50, laser = 50, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 	sales_price = 35
 
 /obj/item/clothing/head/ordohereticus
  	name = "Inquisition Holy Hat"
- 	desc = "An hat issued to Ordo Hereticus Inquisitor's."
+ 	desc = "An hat issued to Ordo Hereticus Inquisitor's. Don't expect it to deflect a sword."
  	icon_state = "hereticushat"
  	item_state = "hereticushat"
  	cold_protection = HEAD
- 	armor = list (melee = 50, bullet = 50, laser = 40, energy = 30, bomb = 40, bio = 20, rad = 20)
+ 	armor = list (melee = 35, bullet = 50, laser = 45, energy = 30, bomb = 40, bio = 20, rad = 20)
  	sales_price = 25
 
 // Adepta Sororitas
@@ -536,3 +536,59 @@
 	item_state = "sister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
 	sales_price = 60
+
+/obj/item/clothing/head/heretichood
+	name = "cultist hood"
+	desc = "A filth hood rag"
+	icon_state = "hood1"
+	item_state = "hood1"
+	armor = list(melee = 5, bullet = 3, laser = 5, energy = 0, bomb = 0, bio = 0, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/heretichood/alt
+	icon_state = "hood2"
+	item_state = "hood2"
+
+/obj/item/clothing/head/heretichood/alt2
+	icon_state = "hood3"
+	item_state = "hood3"
+
+/obj/item/clothing/head/helmet/culthelm
+	name = "Scrap helmet"
+	desc = "Helmet made of some metal scrap in cheap forge"
+	icon_state = "pact1"
+	icon_state = "pact1"
+	armor = list(melee = 25, bullet = 15, laser = 13, energy = 10, bomb = 25, bio = 10, rad = 0)
+	flags_inv = HIDEEARS|BLOCKHAIR
+	body_parts_covered = HEAD
+
+/obj/item/clothing/head/helmet/culthelm/alt
+	icon_state = "pact2"
+	icon_state = "pact2"
+	armor = list(melee = 28, bullet = 18, laser = 16, energy = 13, bomb = 28, bio = 13, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|EYES
+
+/obj/item/clothing/head/helmet/culthelm/alt2
+	icon_state = "pact3"
+	icon_state = "pact3"
+	armor = list(melee = 30, bullet = 22, laser = 20, energy = 15, bomb = 32, bio = 15, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/servicesgt
+ 	name = "Cadian Sergeant's Service Cap"
+ 	desc = "A Cadian issue sergeant's service cap."
+ 	icon_state = "sgt_cap"
+ 	item_state = "sgt_cap"
+ 	cold_protection = HEAD
+ 	sales_price = 8
+
+/obj/item/clothing/head/serviceguard
+ 	name = "Cadian Guard Service Cap"
+ 	desc = "An enlisted Cadian service cap"
+ 	icon_state = "guard_cap"
+ 	item_state = "guard_cap"
+ 	cold_protection = HEAD
+ 	sales_price = 5

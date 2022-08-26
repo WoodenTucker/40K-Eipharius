@@ -93,7 +93,7 @@
 			user.visible_message("<span class='danger'>\The [user] wrings out [src] over [target_text].</span>", "<span class='notice'>You finish to wringing out [src].</span>")
 			update_name()
 
-/obj/item/reagent_containers/glass/rag/proc/wipe_down(atom/A, mob/user)
+/obj/item/reagent_containers/glass/rag/proc/wipe_down(atom/A, mob/living/carbon/human/user)
 	if(!reagents.total_volume)
 		to_chat(user, "<span class='warning'>The [initial(name)] is dry!</span>")
 	else
@@ -103,6 +103,10 @@
 		if(do_after(user,30, progress = 0))
 			user.visible_message("\The [user] finishes wiping off the [A]!")
 			A.clean_blood()
+			if(user.vice == "Neat Freak" && user.faction != "nurgle" && istype(A, /obj/effect/decal/cleanable))
+				user.happiness +=1
+				if(prob(10))
+					to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
 
 /obj/item/reagent_containers/glass/rag/attack(atom/target as obj|turf|area, mob/user as mob , flag)
 	if(isliving(target))

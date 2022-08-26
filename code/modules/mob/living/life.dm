@@ -141,11 +141,15 @@
 /mob/living/proc/change_current_ambience(var/ambience)
 	current_ambience = ambience
 	ambience_is_playing = FALSE
+	if(src.music_on == 0)
+		current_ambience = null
 
 /mob/living/proc/change_current_ambience_with_override(var/ambience)
 	current_ambience = ambience
 	ambience_override = TRUE
 	ambience_is_playing = FALSE
+	if(src.music_on == 0)
+		current_ambience = null
 
 /mob/living/proc/handle_disabilities()
 	handle_impaired_vision()

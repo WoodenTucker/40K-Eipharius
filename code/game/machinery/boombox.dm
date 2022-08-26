@@ -249,3 +249,45 @@
 	a_side = pick('sound/newmusic/TUPE-CLOCKWORK1.ogg')
 	b_side = pick('sound/newmusic/TUPE-CLOCKWORK1.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/inn1/New()
+	..()
+	name = "Calm Tavern"
+	a_side = pick('sound/newmusic/Inn_Ambient.ogg')
+	b_side = pick('sound/newmusic/Inn_Ambient.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/inn2/New()
+	..()
+	name = "Strange Music"
+	a_side = pick('sound/newmusic/TAPE-INNMED.ogg')
+	b_side = pick('sound/newmusic/TAPE-INNMED.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/inn3/New()
+	..()
+	name = "Totally Transcendent"
+	a_side = pick('sound/newmusic/TAPE-INNLOUD.ogg')
+	b_side = pick('sound/newmusic/TAPE-INNLOUD.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/inn4/New()
+	..()
+	name = "Whirling In Rags"
+	a_side = pick('sound/newmusic/TAPE-INNCALM.ogg')
+	b_side = pick('sound/newmusic/TAPE-INNCALM.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/duel/New()
+	..()
+	name = "Dueling Music"
+	a_side = pick('sound/newmusic/TAPE-DUEL.ogg')
+	b_side = pick('sound/newmusic/TAPE-DUEL.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/demon/New()
+	..()
+	name = "Rip & Tear"
+	a_side = pick('sound/newmusic/TAPE-DEMON.ogg')
+	b_side = pick('sound/newmusic/TAPE-DEMON.ogg')
+	sound_inside = a_side

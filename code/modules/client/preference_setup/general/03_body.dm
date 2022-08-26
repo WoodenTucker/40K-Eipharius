@@ -27,6 +27,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/list/rlimb_data
 	var/disabilities = 0
 	var/vice
+	var/cult
 
 	var/has_cortical_stack = FALSE
 	var/equip_preview_mob = 0
@@ -63,6 +64,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	from_file(S["has_cortical_stack"], pref.has_cortical_stack)
 	from_file(S["body_markings"], pref.body_markings)
 	from_file(S["vice"], pref.vice)
+	from_file(S["cult"], pref.cult)
 	pref.preview_icon = null
 	from_file(S["bgstate"], pref.bgstate)
 
@@ -92,6 +94,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	to_file(S["body_markings"], pref.body_markings)
 	to_file(S["bgstate"], pref.bgstate)
 	to_file(S["vice"], pref.vice)
+	to_file(S["cult"], pref.cult)
 
 /datum/category_item/player_setup_item/general/body/sanitize_character(var/savefile/S)
 	if(!pref.species || !(pref.species in playable_species))
@@ -107,6 +110,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.b_skin			= sanitize_integer(pref.b_skin, 0, 255, initial(pref.b_skin))
 	pref.h_style		= sanitize_inlist(pref.h_style, GLOB.hair_styles_list, initial(pref.h_style))
 	pref.vice		    = sanitize_inlist(pref.vice, GLOB.vice_list, initial(pref.vice))
+	pref.cult 			= sanitize_inlist(pref.cult, list("None", "khorne", "nurgle", "slaanesh", "tzeentch"), initial(pref.cult))
 	pref.f_style		= sanitize_inlist(pref.f_style, GLOB.facial_hair_styles_list, initial(pref.f_style))
 	pref.r_eyes			= sanitize_integer(pref.r_eyes, 0, 255, initial(pref.r_eyes))
 	pref.g_eyes			= sanitize_integer(pref.g_eyes, 0, 255, initial(pref.g_eyes))
@@ -148,7 +152,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	. += "Blood Type: <a href='?src=\ref[src];blood_type=1'>[pref.b_type]</a><br>"
 	. += "<br>"
 	. += "Vice: <a href='?src=\ref[src];vice_type=1'>[pref.vice]</a><br>"
-
+	. += "Cult: <a href='?src=\ref[src];religion=1'>[pref.cult]</a><br>"
 	//if(has_flag(mob_species, HAS_BASE_SKIN_COLOURS))
 	//	. += "Base Colour: <a href='?src=\ref[src];base_skin=1'>[pref.s_base]</a><br>"
 
@@ -297,6 +301,42 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 				return TOPIC_REFRESH
 			else
 				pref.vice = new_v_type
+				switch(pref.vice)
+					if("Lho")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED lho sticks. +</span>")
+					if("Alcohol")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED alcohol regularly. +</span>")
+					if("Piety")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED to receive blessings or be near a holy site regularly. +</span>")
+					if("Obscura")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED obscura. +</span>")
+					if("Neat Freak")
+						to_chat(user, "<span class='badmood'>⠀+ You NEED a clean environment. You are bothered especially by filth and decay. +</span>")
+					if("Glutton")
+						to_chat(user, "<span class='badmood'>⠀+ You can't just eat enough to survive, you must eat until you're stuffed. +</span>")
+					if("Parental Instincts")
+						to_chat(user, "<span class='badmood'>⠀+ Every child in this cursed land is your ward, do not let evil befall them! +</span>")
+				return TOPIC_REFRESH
+
+	else if(href_list["religion"])
+		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch", "None")
+		if(chosen_religion && CanUseTopic(user))
+			if(href_list["religion"] == "Random")
+				pref.cult = pick(list("khorne", "nurgle", "slaanesh", "tzeentch"))
+				return TOPIC_REFRESH
+			else
+				pref.cult = chosen_religion
+				switch(pref.cult)
+					if("khorne")
+						to_chat(user, "<span class='badmood'>⠀+ BLOOD FOR THE BLOOD GOD! (Cult roles are not guaranteed) +</span>")
+					if("nurgle")
+						to_chat(user, "<span class='badmood'>⠀+ I'm a boil on the face of reality. And I fester! (Cult roles are not guaranteed) +</span>")
+					if("slaanesh")
+						to_chat(user, "<span class='badmood'>⠀+ Hail to the Prince of Delight! (Cult roles are not guaranteed) +</span>")
+					if("tzeentch")
+						to_chat(user, "<span class='badmood'>⠀+ All according to plan! (Cult roles are not guaranteed) +</span>")
+					if("None")
+						to_chat(user, "<span class='badmood'>⠀+ You have opted out of a cult role. +</span>")
 				return TOPIC_REFRESH
 
 	else if(href_list["show_species"])

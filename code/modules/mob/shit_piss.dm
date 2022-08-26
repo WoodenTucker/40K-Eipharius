@@ -28,6 +28,7 @@
 	. = ..()
 	icon_state = pick(src.random_icon_states)
 	create_reagents(5)
+	AddComponent(/datum/component/heretic_item/favor/eaten, "nurgle", 3)
 	reagents.add_reagent(/datum/reagent/poo,5)
 	for(var/obj/effect/decal/cleanable/poo/shit in src.loc)
 		if(shit != src)
@@ -136,6 +137,7 @@
 	..()
 	icon_state = pick("poop1", "poop2", "poop3", "poop4", "poop5", "poop6", "poop7")
 	reagents.add_reagent(/datum/reagent/poo, 10)
+	AddComponent(/datum/component/heretic_item/favor/eaten, "nurgle", 5)
 	bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/poo/throw_impact(atom/hit_atom)
@@ -246,6 +248,9 @@
 			message = "<span class='danger'><b>[src]</b> shits right on <b>[M]</b>'s face!</span>"
 			M.reagents.add_reagent(/datum/reagent/poo, 10)
 			M.unlock_achievement(new/datum/achievement/shit_on())
+			if(src.vice == "Neat Freak" && src.faction != "nurgle")
+				happiness = -15
+				to_chat(src, "<span class='phobia'<big>I will never be clean again!</big></span>")
 
 		//Poo on the floor.
 		else
@@ -254,6 +259,10 @@
 			if(reagents)
 				reagents.trans_to(V, rand(1,5))
 			GLOB.shit_left++//Add it to the shit on the floor counter.
+			for(var/mob/living/carbon/human/H in view(5, src))
+				if(H.vice == "Neat Freak" && H.faction != "nurgle")
+					to_chat(src, "<span class='badmood'>+ [src] is a disgusting animal... +</span>\n")
+					H.happiness -= 3
 
 		playsound(src.loc, 'sound/effects/poo2.ogg', 60, 1)
 		bowels -= rand(60,80)
@@ -310,6 +319,10 @@
 		if(TT)//In case it's somehow not there.
 			message = "<B>[src]</B> pisses on the [TT.name]."
 		GLOB.piss_left++//Add it to the piss on the floor counter.
+		for(var/mob/living/carbon/human/H in view(5, src))
+			if(H.vice == "Neat Freak" && H.faction != "nurgle")
+				to_chat(src, "<span class='badmood'>+ NOT ON THE FLOOR... +</span>\n")
+				H.happiness -= 3
 
 	bladder -= rand(25,50)
 	visible_message("[message]")

@@ -10,14 +10,6 @@
 	name = "hypersensitive"
 	description = "I'm more sensitive to good and bad moods than normal."
 
-/datum/quirk/alcoholic //Starts out addicted to alcohol
-	name = "alcoholic"
-	description = "I need booze to be happy."
-
-/datum/quirk/cig_addict //Starts out addicted to nicotine.
-	name = "a smoker"
-	description = "I need a smoke every now and then."
-
 /datum/quirk/brave //Still gets moods, but is not bothered by them.
 	name = "brave"
 	description = "I'm not stressed by combat."
@@ -37,10 +29,6 @@
 /datum/quirk/strong //Adds two str
 	name = "strong"
 	description = "I'm stronger than should be."
-
-/datum/quirk/obscura //makes the user addicted to obscura drug
-	name = "obscura addict"
-	description = "I'm terribly addicted to obscura."
 
 /datum/quirk/dead_inside //Gets no moods. Isn't bothered by anything.
 	name = "dead inside"

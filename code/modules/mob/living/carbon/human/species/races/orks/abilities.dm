@@ -58,18 +58,18 @@
 
 /mob/living/carbon/human/ork/proc/scavenge()
 	set category = "Ork"
-	set name = "Scavenge (50)"
+	set name = "Scavenge (60)"
 	set desc = "Scavenge for scrap."
-	if(waaagh >= 50)
+	if(waaagh >= 60)
 		to_chat(src, "<span class='notice'> You search the area for scrap metal. </span>")
 		if(do_after(src, 30))
 			new /obj/item/stack/material/scrap/fifty(loc)
 			to_chat(src, "<span class='notice'> You found scrap! </span>")
-			waaagh -= 50 /*
+			waaagh -= 60 /*
 			if(istype(src, /mob/living/carbon/human/ork/mek))
 				playsound(src, 'sound/voice/ork/orknobscav.ogg', 50)
 				return*/
-			playsound(src, 'sound/voice/ork/gretpilo.ogg', 50)
+			playsound(src, 'sound/voice/ork/gretpilo.ogg', 60)
 		else
 			to_chat(src, "<span class='notice'> You stop searching for resources. </span>")
 	else

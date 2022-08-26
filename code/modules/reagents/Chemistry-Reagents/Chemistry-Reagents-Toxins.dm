@@ -432,7 +432,7 @@
 	overdose = REAGENTS_OVERDOSE
 	reagent_addiction_strength = 40
 
-/datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
 	if(alien == IS_DIONA)
 		return
 

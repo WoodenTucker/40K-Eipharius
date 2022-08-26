@@ -30,7 +30,9 @@ meteor_act
 
 	var/obj/item/organ/external/organ = get_organ(def_zone)
 	var/armor = getarmor_organ(organ, P.check_armour)
-	var/penetrating_damage = ((P.damage + P.armor_penetration) * P.penetration_modifier) - armor
+	var/armor_dam = run_armor_check(def_zone, "melee", P.armor_penetration)
+	var/armor_damage_multiplier = armor_dam != 0 ? armor_dam/100 : 0
+	var/penetrating_damage = P.damage - (armor_damage_multiplier = 0 ? 0 : armor - run_armor_check(def_zone, "melee", P.armor_penetration)/100)
 
 	//Organ damage
 	if(organ.internal_organs.len && prob(35 + max(penetrating_damage, -12.5)))
@@ -249,6 +251,13 @@ meteor_act
 
 	if(user.STAT_LEVEL(str))//If they have strength then add it.
 		effective_force *= strToDamageModifier(user.STAT_LEVEL(str))
+
+	//Parental vice
+	if(src.child == 1 && src.stat != DEAD)
+		for(var/mob/living/carbon/human/H in view(5, src))
+			if(H.vice == "Parental Instincts")
+				to_chat(H, "<span class='badmood'>+ [src] has been injured, how could I allow this to happen? +</span>")
+				H.happiness -=1
 
 	if(special)
 		switch(user.atk_intent)

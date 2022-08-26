@@ -17,7 +17,7 @@
 		return
 
 /mob/living/carbon/human/proc/tzeeforthechanger()
-	set name = "For the Changer of Ways!"
+	set name = "For the Changer of Ways! (Say)"
 	set category = "Tzeentch"
 	set desc = name
 	if(!ishuman(src))
@@ -25,7 +25,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		//src.say("For the Changer of Ways!")
+		src.say("For the Changer of Ways!")
 		playsound(src, 'sound/effects/quotes/cults/tzeentch/fortzeentch.ogg', 80, 0, 18)
 		src.quote_cd = 1
 		sleep(50)
@@ -107,7 +107,7 @@
 		return
 
 /mob/living/carbon/human/proc/tzeecharge()
-	set name = "Charge!"
+	set name = "Charge!(Say)"
 	set category = "Tzeentch"
 	set desc = name
 	if(!ishuman(src))
@@ -115,7 +115,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		//src.say("Charge!")
+		src.say("Charge!")
 		playsound(src, 'sound/effects/quotes/cults/tzeentch/charge.ogg', 80, 0, 18)
 		src.quote_cd = 1
 		sleep(50)

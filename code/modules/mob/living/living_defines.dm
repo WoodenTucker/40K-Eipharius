@@ -7,6 +7,7 @@
 	var/health = 100 	//A mob's health
 
 	var/hud_updateflag = 0
+	var/child = 0
 
 	//Damage related vars, NOTE: THESE SHOULD ONLY BE MODIFIED BY PROCS // what a joke
 	//var/bruteloss = 0 //Brutal damage caused by brute force (punching, being clubbed by a toolbox ect... this also accounts for pressure damage)
@@ -19,6 +20,7 @@
 	var/staminaloss = 0
 	var/staminaexhaust = 250
 	var/tongueless = 0
+	var/music_on = 1
 
 	var/last_special = 0 //Used by the resist verb, likely used to prevent players from bypassing next_move by logging in/out.
 

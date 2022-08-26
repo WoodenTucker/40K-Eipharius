@@ -23,6 +23,7 @@
 
 	//Placeholder for effect that trigger on eating that aren't tied to reagents.
 /obj/item/reagent_containers/food/snacks/proc/On_Consume(var/mob/M)
+	SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M)
 	if(!reagents.total_volume)
 		M.visible_message("<span class='notice'>[M] finishes eating \the [src].</span>","<span class='notice'>You finish eating \the [src].</span>")
 
@@ -49,6 +50,7 @@
 	if(istype(M, /mob/living/carbon))
 		//TODO: replace with standard_feed_mob() call.
 		var/mob/living/carbon/C = M
+		var/mob/living/carbon/human/U = user
 		var/fullness = C.nutrition + (C.reagents.get_reagent_amount(/datum/reagent/nutriment) * 10)
 		if(C == user)								//If you're eating it yourself
 			if(istype(C,/mob/living/carbon/human))
@@ -79,6 +81,7 @@
 
 			if (fullness <= 550)
 				user.visible_message("<span class='danger'>[user] attempts to feed [M] [src].</span>")
+
 			else
 				user.visible_message("<span class='danger'>[user] cannot force anymore of [src] down [M]'s throat.</span>")
 				return 0
@@ -89,6 +92,11 @@
 			var/contained = reagentlist()
 			admin_attack_log(user, M, "Fed the victim with [name] (Reagents: [contained])", "Was fed [src] (Reagents: [contained])", "used [src] (Reagents: [contained]) to feed")
 			user.visible_message("<span class='danger'>[user] feeds [M] [src].</span>")
+			if(C.child == 1 && C.stat != DEAD)
+				if(U.vice == "Parental Instincts")
+					U.happiness += 1
+					if(prob(10))
+						to_chat(user, "<span class='goodmood'>+ It feels good to care for those who cannot care for themselves. +</span>\n")
 
 		if(reagents)								//Handle ingestion of the reagent.
 			playsound(M.loc,"eat", 100, FALSE)

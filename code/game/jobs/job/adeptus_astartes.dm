@@ -37,20 +37,29 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
-		if(prob(4))
-			H.verbs += list(
-			/mob/living/carbon/human/proc/khorne,
-			/mob/living/carbon/human/proc/nurgle,
-			/mob/living/carbon/human/proc/slaanesh,
-			/mob/living/carbon/human/proc/tzeentch)
-		H.verbs += list(
-		/mob/living/carbon/human/proc/astafortheemperor,
-		/mob/living/carbon/human/proc/astafortheemperorl)
+		H.verbs +=  list(
+		/mob/living/carbon/human/proc/astachaos,
+		/mob/living/carbon/human/proc/astacharge,
+		/mob/living/carbon/human/proc/astacrush,
+		/mob/living/carbon/human/proc/astadamage,
+		/mob/living/carbon/human/proc/astadiescum,
+		/mob/living/carbon/human/proc/astaeatboltgun,
+		/mob/living/carbon/human/proc/astafaithshield,
+		/mob/living/carbon/human/proc/astafallback,
+		/mob/living/carbon/human/proc/astaforglory,
+		/mob/living/carbon/human/proc/astagrenades,
+		/mob/living/carbon/human/proc/astakill,
+		/mob/living/carbon/human/proc/astanonestopus,
+		/mob/living/carbon/human/proc/astaourwrath,
+		/mob/living/carbon/human/proc/astaready,
+		/mob/living/carbon/human/proc/astatoglory,
+		/mob/living/carbon/human/proc/astaxenos)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
 		H.add_skills(11,11,11,11,11)
@@ -91,6 +100,7 @@
 		H.bladder = -INFINITY
 		H.bowels = -INFINITY //integrated shitter
 		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+		H.vice = null //off for now
 
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)
 	. = ..()

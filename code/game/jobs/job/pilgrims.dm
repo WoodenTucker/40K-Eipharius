@@ -9,6 +9,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
+	cultist_chance = 100
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -18,15 +19,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.witchblood()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
-
-
-
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
 		)
@@ -200,6 +193,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
+	cultist_chance = 100
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -208,11 +202,6 @@ Pilgrim Fate System
 		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
-		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
 /datum/job/gangboy
@@ -229,6 +218,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
+	cultist_chance = 100
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -237,11 +227,150 @@ Pilgrim Fate System
 		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
+		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
+
+//loadouts below here
+/decl/hierarchy/outfit/job/penitent
+	name = OUTFIT_JOB_NAME("Pilgrim")
+	uniform = /obj/item/clothing/under/rank/penitent
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/prac_boots
+	l_ear = null
+	r_ear = null
+	id_type = null
+	gloves = null
+	pda_slot = null
+
+/decl/hierarchy/outfit/job/ganger
+	name = OUTFIT_JOB_NAME("Ganger")
+	uniform = /obj/item/clothing/under/syndicate
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/prac_boots
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	backpack_contents = list(
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
+	/obj/item/storage/box/beanbags = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+)
+
+/decl/hierarchy/outfit/job/innkeeper
+	name = OUTFIT_JOB_NAME("Innkeeper")
+	uniform = /obj/item/clothing/under/syndicate
+	suit = /obj/item/clothing/suit/innapron
+	id_type = /obj/item/card/id/pilgrim/innkeeper
+	pda_type = /obj/item/device/pda/penitent
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	head = /obj/item/clothing/head/bardhat
+	l_ear = /obj/item/device/radio/headset/headset_service
+	r_ear = null
+	pda_slot = null
+	shoes = /obj/item/clothing/shoes/vigilante
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	backpack_contents = list(
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
+	/obj/item/storage/box/beanbags = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+)
+
+
+//Administrator
+/decl/hierarchy/outfit/job/administrator
+	name = OUTFIT_JOB_NAME("Administrator")
+	uniform = /obj/item/clothing/under/rank/consort/adept
+	head = /obj/item/clothing/head/commissar/adept
+	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/ring/administrator
+	l_ear = /obj/item/device/radio/headset/headset_service
+	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	backpack_contents = list(
+	/obj/item/stack/thrones = 2,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/twenty = 1,
+
+	)
+
+/datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
+	title = "Pilgrim"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MIN //these boys are gross
+	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
+	spawn_positions = INFINITY
+	supervisors = "The Holy Inquisition"
+	selection_color = "#848484"
+	outfit_type = /decl/hierarchy/outfit/job/penitent
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.assign_random_quirk()
+		H.witchblood()
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
+
+
+
 		H.verbs += list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch)
+			/mob/living/carbon/human/proc/penitentclass,
+		)
+
+/datum/job/innkeeper  //so that the inn always has someone working
+	title = "Innkeeper"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 1
+	supervisors = "Money"
+	selection_color = "#848484"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/innkeeper
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(13,15), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.assign_random_quirk()
+		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
+
+/datum/job/gangboy
+	title = "Ganger"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
+	total_positions = 2
+	spawn_positions = 2
+	open_when_dead = 0
+	supervisors = "Yourself"
+	selection_color = "#848484"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/ganger
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
+		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
 
 //loadouts below here

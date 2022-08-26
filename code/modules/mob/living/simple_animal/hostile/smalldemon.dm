@@ -21,7 +21,7 @@
 	see_in_dark = 10
 	wander = 1
 
-	speed = 1.5 // Higher number means slower.
+	speed = 1.8 // Higher number means slower.
 
 	min_gas = null
 	max_gas = null
@@ -57,6 +57,7 @@
 
 					if(stance_step in list(1,2,2)) //every 3 ticks
 						var/action = pick( list( "growls at [target_mob]", "stares angrily at [target_mob]", "prepares to attack [target_mob]", "closely watches [target_mob]" ) )
+						playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn_alert.ogg', 50, 0, -1)
 						if(action)
 							custom_emote(1,action)
 			if(!found_mob)
@@ -66,6 +67,7 @@
 				stance = HOSTILE_STANCE_IDLE
 			if(stance_step >= 2)   //If we have been staring at a mob for 7 ticks,
 				stance = HOSTILE_STANCE_ATTACK
+				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 50, 0, -1)
 
 		if(HOSTILE_STANCE_ATTACKING)
 			if(stance_step >= 50)	//attacks for 30 ticks, then it gets tired and needs to rest
@@ -175,7 +177,7 @@
 	attacktext = "crushes"
 	see_in_dark = 6
 
-	speed = 1.7
+	speed = 1.8
 
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -203,8 +205,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 600
-	health = 600
+	maxHealth = 650
+	health = 650
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -213,7 +215,7 @@
 	attacktext = "crushes"
 	see_in_dark = 6
 
-	speed = 1.2
+	speed = 1.5
 
 /mob/living/simple_animal/hostile/smalldemon/bloodletter/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -233,21 +235,18 @@
 		L.adjustBruteLoss(damage)
 		return L
 
-	faction = "Nurgle" 
-	faction = "Slaanesh"
-	faction = "Khorne"
 // For now this is one of the few Daemons that won't just straight up kill cultists as in lore the more veteran of these creatures are considered to be the 'Officers/Lieutenants' of the blood legions. They can't be dragged and are VERY ideal to be posessed by ghosts so they can command cultists.
 	
 /mob/living/simple_animal/hostile/smalldemon/fleshbeast
 	name = "Flesh Beast"
-	real_name = "Flesh Beast" // Average speed. Medium damage and HP.
-	desc = "This violet mass of flesh and meat scatters toward you." 
+	real_name = "Flesh Beast" 
+	desc = "This violent mass of flesh and meat scatters toward you." 
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 480
-	health = 480
+	maxHealth = 520
+	health = 520
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -256,4 +255,44 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.6
+	speed = 1.7
+
+/mob/living/simple_animal/hostile/smalldemon/plague
+	name = "Plague Beast"
+	real_name = "Plague Beast"
+	desc = "This violent mass of flesh and meat scatters toward you." 
+	icon = 'icons/mob/Demon.dmi'
+	icon_state = "plague"
+	icon_living = "plague"
+	icon_dead = "plague_dead"
+	maxHealth = 470
+	health = 470
+	speak_emote = list("harks")
+	emote_hear = list("growls")
+	response_help  = "gnashes"
+	response_disarm = "shoves"
+	response_harm   = "mauls"
+	attacktext = "bites"
+	see_in_dark = 6
+
+	speed = 1.8
+
+/mob/living/simple_animal/hostile/smalldemon/chaos
+	name = "Chaos Spawn"
+	real_name = "Chaos Spawn"
+	desc = "This violent mass of flesh and meat scatters toward you." 
+	icon = 'icons/mob/Demon.dmi'
+	icon_state = "goliath"
+	icon_living = "goliath"
+	icon_dead = "goliath_dead"
+	maxHealth = 650
+	health = 650
+	speak_emote = list("harks")
+	emote_hear = list("growls")
+	response_help  = "gnashes"
+	response_disarm = "shoves"
+	response_harm   = "mauls"
+	attacktext = "bites"
+	see_in_dark = 6
+
+	speed = 1.8

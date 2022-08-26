@@ -23,9 +23,6 @@
 		/datum/unarmed_attack/punch
 		)
 
-/mob/living/carbon/human
-	var/new_skitarii = SPECIES_SKITARII
-
 /mob/living/carbon/human/skitarii
 	gender = MALE
 
@@ -47,6 +44,7 @@
 
 /mob/living/carbon/human/skitarii/Initialize()
 	. = ..()
+	set_species("Skitarii")
 	fully_replace_character_name(random_skitarii_name(src.gender))
 	warfare_faction = IMPERIUM
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii)
@@ -92,6 +90,7 @@
 	src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 	src.set_trait(new/datum/trait/death_tolerant())
 	src.update_eyes() //should fix grey vision
+
 	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
 	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null

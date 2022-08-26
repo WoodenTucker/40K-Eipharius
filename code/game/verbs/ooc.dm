@@ -92,3 +92,35 @@
 					winset(src, "browseroutput", "is-disabled=true;is-visible=false")
 				log_game("GOONCHAT: [key_name(src)] Failed to fix their goonchat window after manually calling start() and forcing a load()")
 
+/mob/living/verb/toggleMusic()
+	set name = "Toggle Music"
+	set desc = "Allows you to toggle ambient music."
+	set category = "OOC"
+
+	if(src.music_on == 1)
+		src.music_on = 0
+		to_chat(src, "Ambient music disabled.")
+		src.change_current_ambience(null)
+	else
+		src.music_on = 1
+		to_chat(src, "Ambient music enabled.")
+
+
+/client/verb/playedTime()
+	set name = "View Played Time"
+	set desc = "See how long you've played!"
+	set category = "OOC"
+
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		to_chat(src, "DB connection failed! Tell an admeme!")
+		return
+
+	var/DBQuery/query = dbcon.NewQuery("SELECT time_living FROM playtime_history WHERE ckey='[src.ckey]'")
+	query.Execute()
+	while(query.NextRow())
+		var/playedTime = query.item[1]
+		playedTime = text2num(playedTime)
+		playedTime = playedTime/60
+		to_chat(src, "[playedTime] hours played")
+		break

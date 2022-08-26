@@ -48,7 +48,7 @@
 /datum/reagent/proc/touch_turf(var/turf/T, var/amount) // Cleaner cleaning, lube lubbing, etc, all go here
 	return
 
-/datum/reagent/proc/on_mob_life(var/mob/living/carbon/M, var/alien, var/location) // Currently, on_mob_life is called on carbons. Any interaction with non-carbon mobs (lube) will need to be done in touch_mob.
+/datum/reagent/proc/on_mob_life(var/mob/living/carbon/human/M, var/alien, var/location) // Currently, on_mob_life is called on carbons. Any interaction with non-carbon mobs (lube) will need to be done in touch_mob.
 	if(!istype(M))
 		return
 	if(!(flags & AFFECTS_DEAD) && M.stat == DEAD && (world.time - M.timeofdeath > 150))
@@ -58,6 +58,8 @@
 		if(volume > overdose_threshold)
 			overdose(M, alien)
 	if(prob(reagent_addiction_strength) && !is_type_in_list(src, M.reagents.addiction_list))
+		if(M.vice == "Lho" || M.vice == "Alcohol")
+			return
 		to_chat(M, "<span class='danger'>You like that feeling. You may want more of that later...</span>")
 		var/datum/reagent/new_reagent = new type()
 		new_reagent.last_addiction_dose = world.timeofday

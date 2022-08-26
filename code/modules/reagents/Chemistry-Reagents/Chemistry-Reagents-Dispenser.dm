@@ -115,7 +115,7 @@
 	M.adjustToxLoss(removed * 2 * toxicity)
 	return
 
-/datum/reagent/ethanol/affect_ingest(var/mob/living/carbon/M, var/alien, var/removed)
+/datum/reagent/ethanol/affect_ingest(var/mob/living/carbon/human/M, var/alien, var/removed)
 	M.nutrition += nutriment_factor * removed
 	var/strength_mod = 1
 	if(alien == IS_SKRELL)
@@ -126,6 +126,7 @@
 	M.add_chemical_effect(CE_ALCOHOL, 1)
 	var/effective_dose = M.chem_doses[type] * strength_mod * (1 + volume/60) //drinking a LOT will make you go down faster
 	M.add_event("booze", /datum/happiness_event/booze)
+
 
 	if(effective_dose >= strength) // Early warning
 		M.make_dizzy(6) // It is decreased at the speed of 3 per tick

@@ -250,10 +250,9 @@
 	density = 0
 
 
-/*
- * Toy swords
- */
-/*/obj/item/toy/bear
+// ARTIFACTS / SWORDS
+
+/obj/item/toy/bear
 	name = "teddy bear"
 	desc = "What the fuck is this thing?"
 	icon = 'icons/obj/bowl.dmi'
@@ -262,7 +261,7 @@
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("booped")
 	var/times_used = 0 //Number of times it's been used.
-	var/max_uses = 10
+	var/max_uses = 3
 
 /obj/item/toy/bear/attack_self(mob/living/carbon/user as mob, flag = 0, emp = 0)
 	if(!user) 	return
@@ -274,19 +273,19 @@
 	for(var/mob/living/carbon/human/M in orange(10, user))
 		stun_victims += M
 		spawn()
-			if(prob(10))
-				M.Weaken(rand(10,20))
-				M.apply_damage(rand(20,30), BRUTE, BP_HEAD)
+			if(prob(60))
+				M.Weaken(rand(20,40))
+				M.apply_damage(rand(20,40), BRUTE, BP_HEAD)
 				if(prob(25))
-					M.Stun(rand(5,10))
+					M.Stun(rand(10,20))
 				to_chat(M, "<span class='danger'>You feel your head swell -- as blood pours from your eyes and you vomit blood!</span>")
 			else
-				M.apply_damage(rand(5,10), BRUTE, BP_HEAD)
+				M.apply_damage(rand(5,20), BRUTE, BP_HEAD)
 				to_chat(M, "<span class='danger'>You resist the psychic torment of the teddy bear managing to remain standing...</span>")
 
-	playsound(src.loc, 'sound/misc/teddynoise.ogg', 50, 1)
+	playsound(src.loc, 'sound/misc/teddynoise.ogg', 90, 1)
 	times_used += 1
-*/ //test purposes. remove later
+
 /obj/item/toy/sword
 	name = "toy sword"
 	desc = "A cheap, plastic replica of an energy sword. Realistic sounds! Ages 8 and up."

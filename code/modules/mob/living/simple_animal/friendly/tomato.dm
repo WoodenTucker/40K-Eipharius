@@ -16,3 +16,52 @@
 	melee_damage_upper = 15
 	melee_damage_lower = 10
 	attacktext = "mauled"
+
+/mob/living/simple_animal/playerdaemonhost
+	name = "Daemon Host"
+	real_name = "Daemon Host" 
+	desc = "It's a horrifyingly enormous daemon host..."
+	icon = 'icons/mob/Demon.dmi'
+	icon_state = "herald"
+	icon_living = "herald"
+	icon_dead = "herald_dead"
+	speak_chance = 0
+	turns_per_move = 5
+	maxHealth = 600
+	health = 600
+	response_help  = "caresses"
+	response_disarm = "slams"
+	response_harm   = "rends"
+	harm_intent_damage = 80
+	melee_damage_upper = 100
+	melee_damage_lower = 70
+	attacktext = "torn"
+	faction = "Chaos"
+
+	speed = 1.7
+
+/mob/living/simple_animal/playerzombie
+	name = "Plague Beast"
+	real_name = "Plague Beast"
+	desc = "This violent mass of flesh and meat scatters toward you." 
+	icon = 'icons/mob/Demon.dmi'
+	icon_state = "plague"
+	icon_living = "plague"
+	icon_dead = "plague_dead"
+	speak_chance = 0
+	maxHealth = 260
+	health = 260
+	turns_per_move = 5
+	speak_emote = list("harks")
+	emote_hear = list("growls")
+	response_help  = "gnashes"
+	response_disarm = "shoves"
+	response_harm   = "mauls"
+	attacktext = "bites"
+	see_in_dark = 6
+	harm_intent_damage = 50
+	melee_damage_upper = 70
+	melee_damage_lower = 50
+	faction = "Chaos"
+
+	speed = 1.8
