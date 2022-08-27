@@ -393,7 +393,7 @@
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	name = "Magos Dominus Servo-Satchel"
-/*
+
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos/verb/toggle_axe()
 	set name =  "Deploy axe"
 	set category = "Tools"
@@ -418,7 +418,7 @@
 		to_chat(usr,"You pull out the axe.")
 		usr.put_in_hands(new /obj/item/melee/omnissiah_axe(usr))
 		src.is_toggled = 2
-*/
+
 /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
