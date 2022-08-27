@@ -294,7 +294,7 @@
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = "brifle"
 	penetrating = TRUE // fuck that shit penetrative rounds
-	damage = 75
+	damage = 70
 	armor_penetration = 20
 
 /obj/item/ammo_magazine/brifle
