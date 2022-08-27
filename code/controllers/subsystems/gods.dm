@@ -19,7 +19,7 @@ SUBSYSTEM_DEF(gods)
 		if(deity.name == god_name)
 			return deity
 
-/datum/controller/subsystem/gods/proc/get_player_god_by_name(var/mob/living/user)
+/datum/controller/subsystem/gods/proc/get_player_god_by_name(var/mob/living/carbon/human/user)
 	for(var/datum/heretic_deity/deity in gods)
 		if(user in deity.members)
 			return deity
