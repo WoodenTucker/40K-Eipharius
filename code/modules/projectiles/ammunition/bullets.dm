@@ -393,3 +393,18 @@
 	caliber = "shuriken"
 	projectile_type = /obj/item/projectile/bullet/rifle/shuriken/pistol
 
+/obj/item/ammo_casing/galvanic
+	name = "galvanic rifle casings"
+	desc = "A galvanic rifle casing"
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic
+
+/obj/item/ammo_casing/galvanic/fire
+	name = "galvanic rifle incendiary casings"
+	desc = "A galvanic rifle incendiary casing"
+	icon_state = "null"
+	spent_icon = "null"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/fire

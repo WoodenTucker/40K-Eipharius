@@ -113,7 +113,7 @@
 	item_state = "galvrifle"
 	empty_icon = "galvrifle-e"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	caliber = ".338"
+	caliber = "galvanic"
 	screen_shake = 0.4
 	max_shells = 6
 	ammo_type = /obj/item/ammo_casing/lp338
@@ -1381,3 +1381,30 @@
 		icon_state = "scatapult"
 	else
 		icon_state = "scatapult-e"
+
+/obj/item/gun/projectile/automatic/galvanic/rifle
+	name = "Mark IV Arkhan Pattern Galvanic Rifle"
+	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
+	icon_state = "autorifle"
+	item_state = "autorifle"
+	wielded_item_state = "autorifle-wielded"
+	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
+	loaded_icon = "autorifle"
+	unwielded_loaded_icon = "autorifle"
+	wielded_loaded_icon = "autorifle-wielded"
+	unloaded_icon = "autorifle-e"
+	unwielded_unloaded_icon = "autorifle-e"
+	wielded_unloaded_icon = "autorifle-wielded-e"
+	caliber = "galvanic"
+	max_shells = 7
+	str_requirement = 14
+	move_delay= 2
+	one_hand_penalty = 3
+	accuracy = 1 //Good gun, well maintained by the Mechanicus
+	fire_delay = 3.5
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/galvanic
+	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
+	firemodes = list()
+	w_class = ITEM_SIZE_HUGE
+	gun_type = GUN_SEMIAUTO
