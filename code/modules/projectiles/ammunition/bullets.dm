@@ -407,3 +407,4 @@
 	icon_state = "null"
 	spent_icon = "null"
 	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/fire
