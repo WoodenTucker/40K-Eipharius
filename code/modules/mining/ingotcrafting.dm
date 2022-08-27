@@ -26,7 +26,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Heavy Stubber Ammo", "Stub Rifle Ammo", "Shells Boxes", "Sniper Rifle Ammo", "Warmonger Magazine", "Mk.3 Autogun Magazine", "Pistol Magazine", ".44 Revolver Speed Loader", "Trench Shovel",) //lists all possible crafting choices
+		var/craftingchoices = list("Heavy Stubber Ammo", "Stub Rifle Ammo", "Shells Boxes", "Sniper Rifle Ammo", "Warmonger Magazine", "Mk.3 Autogun Magazine", "Pistol Magazine", ".44 Revolver Speed Loader", "Trench Shovel", "Galvanic Rifle Ammo") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -82,11 +82,17 @@
 				src.ismarked = 1
 				src.name = "Copper Ingot (Marked Trench Shovel)"
 			if("Mk.3 Autogun Magazine")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future trench shovel.")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Autogun Magazine.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 9
 				src.ismarked = 1
 				src.name = "Copper Ingot (Mk.3 Autogun Magazine)"
+			if("Galvanic Rifle Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future set of galvanic rifle ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 10
+				src.ismarked = 1
+				src.name = "Copper Ingot (Galvanic Rifle Ammo)"
 
 
 
@@ -199,6 +205,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(10)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed galvanic rifle ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Copper Ingot (Galvanic Rifle Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 	if(isHolyoils(W))
 		if(rubtheoils == 0)
 			visible_message("Use your laser cutter first!")
@@ -272,6 +289,14 @@
 				new /obj/item/ammo_magazine/mc9mmt/machinepistol(user.loc)
 				qdel(src)
 				return
+			if(10)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/galvanic(user.loc)
+				new /obj/item/ammo_magazine/galvanic(user.loc)
+				qdel(src)
+				return
+
 
 /*
   _____
@@ -653,7 +678,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Bolt Rifle Magazine","Kantrael M36 Lasgun", "Catachan Mark IV Lascarbine","Lucius No.98 Lasgun", "Kantrael MG Laspistol", ".338 Lapua Magnum Magazine", "Machine Silver",) //lists all possible crafting choices
+		var/craftingchoices = list("Bolt Rifle Magazine","Kantrael M36 Lasgun", "Catachan Mark IV Lascarbine","Lucius No.98 Lasgun", "Kantrael MG Laspistol", ".338 Lapua Magnum Magazine", "Machine Silver", "Galvanic Rifle") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -707,6 +732,13 @@
 				src.whatwemaking = 7
 				src.ismarked = 1
 				src.name = "Silver Ingot (.338 Lapua Magnum Magazine)"
+
+			if("Galvanic Rifle")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Galvanic Rifle.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 8
+				src.ismarked = 1
+				src.name = "Silver Ingot (Galvanic Rifle)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -796,6 +828,18 @@
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
+			if(8)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Galvanic Rifle! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Silver Ingot (Galvanic Rifle)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
 
 	if(isHolyoils(W))
 		if(rubtheoils == 0)
@@ -844,6 +888,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/ammo_magazine/lp338(user.loc,1)
+				qdel(src)
+				return
+			if(8)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/automatic/galvanic/rifle(user.loc,1)
 				qdel(src)
 				return
 
@@ -949,7 +999,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle", "Kraken penetrator bolter magazine", "Mark IV .338 Stub Rifle") //lists all possible crafting choices
+		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle", "Kraken penetrator bolter magazine", "Mark IV .338 Stub Rifle", "Incendiary Galvanic Rifle Ammo") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -999,6 +1049,12 @@
 				src.whatwemaking = 7
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Mark IV .338 Stub Rifle)"
+			if("Incendiary Galvanic Rifle Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Mark IV .338 Stub Rifle.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 8
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Incendiary Galvanic Rifle Ammo)"
 
 
 
@@ -1068,6 +1124,18 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(8)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Incendiary Galvanic Rifle Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Incendiary Galvanic Rifle Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
 
 
 	if(isHolyoils(W))
@@ -1117,5 +1185,14 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338(user.loc)
+				qdel(src)
+				return
+			if(8)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/galvanic/fire(user.loc)
+				new /obj/item/ammo_magazine/galvanic/fire(user.loc)
+				new /obj/item/ammo_magazine/galvanic/fire(user.loc)
+				new /obj/item/ammo_magazine/galvanic/fire(user.loc)
 				qdel(src)
 				return

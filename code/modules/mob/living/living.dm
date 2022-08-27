@@ -218,8 +218,7 @@ default behaviour is:
 	if(stat == DEAD)
 		return
 	else
-		src.adjustBrainLoss(src.health + src.maxHealth * 4) // Deal 4x health in BrainLoss damage, as before but variable.
-		updatehealth()
+		death()
 		to_chat(src, "<span class='notice'>You have given up on life and succumbed to the warp.</span>")
 
 /mob/living/proc/updatehealth()
