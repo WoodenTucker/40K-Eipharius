@@ -1730,7 +1730,7 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "xG" = (
-/obj/item/device/radio/beacon,
+/obj/machinery/light/stolb,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "xM" = (
@@ -30378,7 +30378,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+cJ
 cJ
 cJ
 cJ
@@ -31517,7 +31517,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -38073,7 +38073,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -39595,7 +39595,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -40071,7 +40071,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -40375,7 +40375,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 ak
 cJ
@@ -40547,7 +40547,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -41629,8 +41629,8 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
+xG
+xG
 cJ
 cJ
 cJ
@@ -42105,7 +42105,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 aF
@@ -43100,7 +43100,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 bF
 ak
@@ -44333,7 +44333,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -46151,7 +46151,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -60849,7 +60849,7 @@ cM
 cM
 ch
 pA
-cz
+ch
 ch
 ch
 cM
@@ -62134,7 +62134,7 @@ cM
 cM
 cP
 ch
-ch
+cz
 ch
 ch
 ch
