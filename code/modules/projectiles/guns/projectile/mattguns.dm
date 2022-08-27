@@ -992,13 +992,11 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "ultrabolter-30"
 	unloaded_icon = "ultrabolter-e"
-	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect.
-	loaded_icon = "autoshotty"
-	unwielded_loaded_icon = "autoshotty"
-	wielded_loaded_icon = "autoshotty-wielded"
-	unloaded_icon = "autoshotty-e"
-	unwielded_unloaded_icon = "autoshotty-e"
-	wielded_unloaded_icon = "autoshotty-wielded-e"
+	wielded_item_state = "hbolter" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect.
+	unwielded_loaded_icon = "hbolter"
+	wielded_loaded_icon = "hbolter"
+	unwielded_unloaded_icon = "hbolter-e"
+	wielded_unloaded_icon = "hbolter-e"
 	fire_delay = 2
 	burst = 1
 	move_delay = 3
@@ -1085,7 +1083,6 @@
 	loaded_icon = "lockebolter-30"
 	unloaded_icon = "lockebolter-e"
 	wielded_item_state = "autoshotty"
-	loaded_icon = "autoshotty"
 	unwielded_loaded_icon = "autoshotty"
 	wielded_loaded_icon = "autoshotty-wielded"
 	unloaded_icon = "autoshotty-e"

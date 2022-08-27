@@ -6651,6 +6651,8 @@
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=15,"bomb"=10,"bio"=10,"rad"=15)
 	},
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/accessory/bcloak,
+/obj/item/clothing/accessory/gcloak,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Jt" = (
