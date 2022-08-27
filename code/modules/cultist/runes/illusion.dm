@@ -14,11 +14,10 @@
 	master = M
 
 /obj/effect/dummy/illusion/relaymove(var/mob/user, direction)
-
 	if(world.time >= move_delay)
 		move_delay = world.time + 5
 		step(src, direction)
 
 /obj/effect/dummy/illusion/Destroy()
 	master.forceMove(get_turf(src))
-	..()
+	return ..()

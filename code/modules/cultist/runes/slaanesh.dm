@@ -6,10 +6,9 @@
 
 /datum/rune_recipe/slaanesh/conversion/do_special(mob/living/carbon/human/user, var/list/items)
 	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
-	if(!isheretic(target))
+	if(target.stat != DEAD)
 		var/datum/heretic_deity/slaanesh/N = GOD(GOD_SLAANESH)
 		N.join_request(target)
-		return
 
 /datum/rune_recipe/slaanesh/knife
 	name = "Skinning Knife"
