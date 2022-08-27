@@ -181,7 +181,6 @@
 	name = "scion helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "helmetNVG"
-	item_state = "helmetNVG"
 	armor = list(melee = 40, bullet = 45, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 	sales_price = 25
@@ -312,3 +311,92 @@
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+// NEW HELMETS
+
+/obj/item/clothing/head/helmet/soul
+	name = "Seolite Helmet"
+	desc = "A xenos helmet from the seolite forgemasters, remarkbly resistant to thermal damage."
+	icon_state = "soul"
+	item_state = "soul"
+	armor = list(melee = 30, bullet = 30, laser = 48, energy = 35, bomb = 50, bio = 100, rad = 50)
+	sales_price = 11
+
+/obj/item/clothing/head/helmet/seolhelm
+	name = "Seolite Power Helmet"
+	desc = "A xenos power helmet from the seolite forgemasters, remarkbly resistant to thermal damage."
+	icon_state = "seolhelm"
+	item_state = "seolhelm"
+	armor = list(melee = 40, bullet = 40, laser = 68, energy = 35, bomb = 50, bio = 100, rad = 50)
+	sales_price = 20
+
+/obj/item/clothing/head/helmet/hauberk
+	name = "Chainmail Hood"
+	desc = "A chainmail hood for your noggin."
+	icon_state = "hauberkhood"
+	item_state = "hauberkhood"
+	armor = list(melee = 44, bullet = 10, laser = 25, energy = 35, bomb = 10, bio = 20, rad = 10)
+	sales_price = 4
+
+/obj/item/clothing/head/helmet/hevhelm
+	name = "Heavy Metal Helm"
+	desc = "A heavy metal helmet for your noggin."
+	icon_state = "hevhelm"
+	item_state = "hevhelm"
+	armor = list(melee = 58, bullet = 20, laser = 35, energy = 35, bomb = 30, bio = 50, rad = 30)
+	sales_price = 7
+
+/obj/item/clothing/head/helmet/sheriff
+	name = "Dandy Cowboy Hat"
+	desc = "A rootin tootin cowboy hat for your skootin' shootin!"
+	icon_state = "sheriffhat"
+	item_state = "sheriffhat"
+	armor = list(melee = 10, bullet = 35, laser = 10, energy = 35, bomb = 10, bio = 0, rad = 10)
+	sales_price = 4
+
+/obj/item/clothing/head/helmet/marinehelm
+	name = "Necromunda Helm"
+	desc = "A tough iron helmet used by the Necromundan Gangers."
+	icon_state = "marinehelm"
+	item_state = "marinehelm"
+	armor = list(melee = 38, bullet = 30, laser = 34, energy = 35, bomb = 20, bio = 10, rad = 10)
+	sales_price = 5
+
+/obj/item/clothing/head/helmet/foxhelm
+	name = "Armored Hood"
+	desc = "A sneaky hood with overlaying ceramic plate inserts, entirely impractical but also very cool."
+	icon_state = "foxhelm"
+	item_state = "foxhelm"
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 10, bio = 40, rad = 30)
+	sales_price = 7
+
+/obj/item/clothing/head/helmet/lightpahelm
+	name = "Van Saar Power Helmet"
+	desc = "A power helmet manufactured by the House of Van Saar, the quality despite it's status as technical power armor is quite poor."
+	icon_state = "lightpahelm"
+	item_state = "lightpahelm"
+	armor = list(melee = 48, bullet = 48, laser = 48, energy = 35, bomb = 50, bio = 50, rad = 30)
+	sales_price = 15
+
+/obj/item/clothing/head/helmet/berserkerhelm
+	name = "Berserker Power Helmet"
+	desc = "A power helmet manufactured manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
+	icon_state = "berserkerhelm"
+	item_state = "berserkerhelm"
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 60, bio = 60, rad = 40)
+	sales_price = 20
+
+/obj/item/clothing/head/helmet/metalhelmet
+	name = "Metal Helmet"
+	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
+	icon_state = "metalhelmet"
+	item_state = "metalhelmet"
+	armor = list(melee = 44, bullet = 24, laser = 34, energy = 35, bomb = 10, bio = 30, rad = 20)
+	sales_price = 7
+
+/obj/item/clothing/head/helmet/knighthelm
+	name = "Masterwork Helm"
+	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
+	icon_state = "knighthelm"
+	item_state = "knighthelm"
+	armor = list(melee = 50, bullet = 28, laser = 38, energy = 35, bomb = 20, bio = 30, rad = 20)
+	sales_price = 9
