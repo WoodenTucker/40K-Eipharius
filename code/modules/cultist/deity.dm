@@ -18,16 +18,11 @@
 /mob/living/carbon/human/proc/draw_rune()
 	set category = "IC"
 	set name = "Draw Rune"
+
+	visible_message("[src] starts drawing a strange shape on the floor.")
 	if(do_after(src, 3 SECONDS))
 		var/datum/heretic_deity/deity = GOD(mind.special_role)
-		visible_message("[src] starts drawing a strange shape on the floor.")
 		new deity.rune_type(get_turf(src))
-
-/datum/heretic_deity/New()
-	if(name)
-		var/path = text2path("/datum/heretic_effect/[name]")
-		possible_blessings = init_subtypes(path)
-	return ..()
 
 /*
 Most blessings and curses should be permanent.
@@ -62,19 +57,32 @@ Most blessings and curses should be permanent.
 
 /datum/heretic_deity/proc/remove_cultist(var/mob/living/carbon/human/RemovedMember)
 	members -= RemovedMember
-	var/datum/component/cultist/comp = RemovedMember.GetComponent(/datum/component/cultist)
-	qdel(comp)
+	qdel(RemovedMember.GetComponent(/datum/component/cultist))
 	RemovedMember.verbs -= inherent_verbs
 	RemovedMember.mind.special_role = null
 	RemovedMember.client.images.Cut()
+	RemovedMember.mind.special_role = ""
+	SSgods.cultist_count -= 1
 
-/datum/heretic_deity/proc/progress(var/mob/living/CultMember, var/favor)
-	var/datum/component/cultist/comp = CultMember.GetComponent(/datum/component/cultist)
-	if(comp.deity_favor >= 25)
-		if(comp.add_effect(src, pick(possible_blessings)))
-			comp.deity_favor = 0
+/datum/heretic_deity/proc/progress(var/mob/living/carbon/human/CultMember, var/favor)
+	if(favor >= 25)
+		RegisterSignal(CultMember, COMSIG_CULT_EFFECT_ADDED, .proc/on_progress)
+		RegisterSignal(CultMember, COMSIG_CULT_EFFECT_ADD_FAILED, .proc/progress_failed)
+		SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_EFFECT, pick(possible_blessings))
+
+
+/datum/heretic_deity/proc/on_progress(atom/source, var/mob/living/CultMember, var/favor)
+	SEND_SIGNAL(CultMember, COMSIG_CULT_ADD_FAVOR, -25)
+	UnregisterSignal(CultMember, COMSIG_CULT_EFFECT_ADD_FAILED)
+	UnregisterSignal(CultMember, COMSIG_CULT_EFFECT_ADDED)
+
+/datum/heretic_deity/proc/progress_failed(atom/source, var/mob/living/CultMember, var/favor)
+	UnregisterSignal(CultMember, COMSIG_CULT_EFFECT_ADD_FAILED)
+	UnregisterSignal(CultMember, COMSIG_CULT_EFFECT_ADDED)
 
 /datum/heretic_deity/proc/join_request(var/mob/living/carbon/human/user)
+	if(GODBYPLAYER(user))
+		return
 	var/choice = input(user, "Become [name] cultist?", "Choice") in list("Yes", "No")
-	if(choice == "Yes" && !GODBYPLAYER(user))
+	if(choice == "Yes")
 		add_cultist(user)

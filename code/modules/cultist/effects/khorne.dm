@@ -39,6 +39,7 @@
 /datum/heretic_effect/slow
 	name = "Slow"
 	add_message = "<span class='notice'>You feel slower.</span>"
+	unique = TRUE
 
 /datum/heretic_effect/slow/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
@@ -52,20 +53,22 @@
 	name = "Leather Skin"
 	add_message = "<span class='notice'>You feel your skin toughen.</span>"
 	examine_message = "<span class='warning'><b>Their skin looks like leather.\n</b></span>"
+	unique = TRUE
 
 /datum/heretic_effect/tough_skin/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
 	user.species.brute_mod = 0.8
-	user.STAT_LEVEL(str) += 4
+	user.STAT_LEVEL(end) += 4
 
 /datum/heretic_effect/tough_skin/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
 	user.species.brute_mod = 1
-	user.STAT_LEVEL(str) -= 4
+	user.STAT_LEVEL(end) -= 4
 
 /datum/heretic_effect/healing
 	name = "Healing Aura"
 	add_message = "<span class='notice'>Small nicks and bruises on your body begin to fade.</span>"
+	unique = TRUE
 
 /datum/heretic_effect/healing/add_effect(var/mob/living/carbon/human/user)
 	. = ..()

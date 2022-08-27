@@ -11,7 +11,7 @@
 
 /datum/rune_recipe/nurgle/conversion/do_special(mob/living/carbon/human/user, var/list/items)
 	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
-	if(!isheretic(target) && target.stat != DEAD)
+	if(target.stat != DEAD)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)
 

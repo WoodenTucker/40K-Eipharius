@@ -44,6 +44,13 @@
 			user.happiness += 1
 			if(prob(10))
 				to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
+	else if(istype(target,/obj/effect/cleanable))
+		to_chat(user, "<span class='notice'>You scrub \the [target.name] out.</span>")
+		qdel(target)
+		if(user.vice == "Neat Freak" && user.faction != "nurgle")
+			user.happiness += 1
+			if(prob(10))
+				to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")
 	else if(istype(target,/turf))
 		to_chat(user, "<span class='notice'>You scrub \the [target.name] clean.</span>")
 		var/turf/T = target
