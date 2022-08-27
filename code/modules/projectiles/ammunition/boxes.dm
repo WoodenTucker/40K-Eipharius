@@ -571,3 +571,19 @@
 	caliber = "shuriken"
 	max_ammo = 1000
 	multiple_sprites = 0
+
+/obj/item/ammo_magazine/galvanic
+	name = "galvanic rifle loader"
+	desc = "An ancient design for loading galvanic rifles."
+	icon_state = "T38"
+	caliber = "galvanic"
+	matter = list(DEFAULT_WALL_MATERIAL = 360)
+	ammo_type = /obj/item/ammo_casing/galvanic
+	max_ammo = 7
+	multiple_sprites = 1
+
+
+/obj/item/ammo_magazine/galvanic/fire
+	name = "galvanic rifle incendiary loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have incendiary rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/fire
