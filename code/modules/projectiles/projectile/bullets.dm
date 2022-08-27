@@ -581,30 +581,3 @@
 	damage_type = BRUTE
 	armor_penetration = 20
 	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/galvanic
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "shot"
-	damage = 80
-	damage_type = BRUTE
-	armor_penetration = 60
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/galvanic/fire
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "shot"
-	damage = 40
-	damage_type = BRUTE
-	armor_penetration = 60
-	penetration_modifier = 2
-
-/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
-			H.adjust_fire_stacks(50)
-			H.IgniteMob()
-		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
