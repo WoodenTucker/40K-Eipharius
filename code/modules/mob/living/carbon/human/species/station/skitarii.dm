@@ -83,22 +83,23 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
+	var/skitclass = input("Select a Class","Class Selection") as null|anything in list("Skitarii Ranger")
+	switch(class)
+	if("Skitarii Ranger")
+		visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+		playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+		src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
+		src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+		src.set_trait(new/datum/trait/death_tolerant())
+		src.update_eyes() //should fix grey vision
+		src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+		src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+		client?.color = null
 
-	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
-	playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-	src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
-	src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
-	src.set_trait(new/datum/trait/death_tolerant())
-	src.update_eyes() //should fix grey vision
+		var/obj/item/card/id/dog_tag/skitarii/W = new
 
-	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
-	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
-	client?.color = null
-
-	var/obj/item/card/id/dog_tag/skitarii/W = new
-
-	W.icon_state = "tagred"
-	W.assignment = "Skitarii"
-	W.registered_name = real_name
-	W.update_label()
-	equip_to_slot_or_del(W, slot_wear_id)
+		W.icon_state = "tagred"
+		W.assignment = "Skitarii"
+		W.registered_name = real_name
+		W.update_label()
+		equip_to_slot_or_del(W, slot_wear_id)
