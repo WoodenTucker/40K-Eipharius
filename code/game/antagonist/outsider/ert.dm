@@ -54,11 +54,11 @@ var/datum/antagonist/ert/ert
 	player.equip_to_slot_or_del(new /obj/item/storage/box/ifak(src), slot_l_store)
 	player.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator(src), slot_wear_mask)
 	player.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/scion(src), slot_head)
-	player.equip_to_slot_or_del(new /obj/item/gun/energy/las/hotshot(src), slot_suit_store)
+	player.equip_to_slot_or_del(new /obj/item/gun/energy/las/hotshot(src), slot_s_store)
 	player.equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare(src), slot_back)
 	player.equip_to_slot_or_del(new /obj/item/reagent_containers/food/drinks/canteen(src), slot_in_backpack)
 	player.equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat(src), slot_in_backpack)
-	player.equip_to_slot_or_del(new /obj/item/device/flashlight/lantern(src), slot_in_backpack
+	player.equip_to_slot_or_del(new /obj/item/device/flashlight/lantern(src), slot_in_backpack)
 
 	create_id(role_text, player)
 	return 1
