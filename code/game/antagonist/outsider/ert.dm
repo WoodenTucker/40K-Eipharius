@@ -44,7 +44,7 @@ var/datum/antagonist/ert/ert
 
 	//Special radio setup
 
-	player.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/scion)(src), slot_wear_suit)
+	player.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/scion(src), slot_wear_suit)
 	player.equip_to_slot_or_del(new /obj/item/clothing/under/rank/principalagent(src), slot_w_uniform)
 	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian(src), slot_shoes)
 	player.equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat(src), slot_gloves)
