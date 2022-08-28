@@ -114,6 +114,17 @@
 	required_reagents = list(/datum/reagent/silicon = 1, /datum/reagent/potassium = 1, /datum/reagent/ammonia = 1)
 	result_amount = 3
 
+
+/datum/chemical_reaction/adrenaline
+	name = "Adrenaline"
+	result = /datum/reagent/adrenaline
+	required_reagents = list(atepoine = 1, synaptizine = 1, hyperzine = 1)
+	result_amount = 10
+
+
+
+
+
 /datum/chemical_reaction/tramadol
 	name = "Tramadol"
 	result = /datum/reagent/tramadol
