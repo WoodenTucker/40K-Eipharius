@@ -302,34 +302,34 @@
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 47
+	damage = 45
 	armor_penetration = 10
 
 /obj/item/projectile/bullet/rifle/a556/ap
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 51
+	damage = 49
 	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/a556/ms
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 57
+	damage = 55
 	armor_penetration = -10
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 65
+	damage = 61
 	armor_penetration = 10
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a762/ap
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 68
+	damage = 64
 	armor_penetration = 20
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a762/ms
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 75
+	damage = 71
 	armor_penetration = -10
 	penetrating = TRUE
 
@@ -348,14 +348,14 @@
 
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
-	damage = 110
+	damage = 100
 	armor_penetration = 45
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/lp338/jhp
 	name = "JHP bullet"
 	fire_sound = 'sound/weapons/gunshot/sniper.ogg'
-	damage = 130
+	damage = 120
 	armor_penetration = 5
 
 /obj/item/projectile/bullet/rifle/lp338/needler
@@ -399,7 +399,7 @@
 
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 70
+	damage = 68
 	armor_penetration = 10
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
@@ -410,7 +410,7 @@
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 80
+	damage = 75
 	armor_penetration = 15
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
@@ -510,28 +510,28 @@
 /obj/item/projectile/bullet/rifle/lascannon
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 120
+	damage = 100
 	damage_type = BURN
 	armor_penetration = 10
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/plasma
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 110
+	damage = 100
 	damage_type = BURN
 	armor_penetration = 10
 	penetration_modifier = 1.4
 
 /obj/item/projectile/bullet/rifle/plasma/cannon //D E A T H
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 240
+	damage = 220
 	damage_type = BURN
 	armor_penetration = 10
 	penetration_modifier = 5
 
 /obj/item/projectile/bullet/rifle/plasma/cannon/orkish //three colors of green!
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	damage = 170
+	damage = 160
 	damage_type = BURN
 	armor_penetration = 10
 	penetration_modifier = 3
@@ -540,14 +540,14 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 80
 	damage_type = BURN
-	armor_penetration = 10
+	armor_penetration = 5
 	penetration_modifier = 1.2
 
 /obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 55
 	damage_type = BURN
-	armor_penetration = 20
+	armor_penetration = 10
 	penetration_modifier = 1.4
 
 
@@ -555,14 +555,14 @@
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 170
+	damage = 160
 	damage_type = BURN
 	penetration_modifier = 2 
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 260
+	damage = 240
 	damage_type = BURN
 	penetration_modifier = 2
 
@@ -581,3 +581,29 @@
 	damage_type = BRUTE
 	armor_penetration = 20
 	penetration_modifier = 2
+/obj/item/projectile/bullet/rifle/galvanic
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 80
+	damage_type = BRUTE
+	armor_penetration = 60
+	penetration_modifier = 2
+
+/obj/item/projectile/bullet/rifle/galvanic/fire
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 40
+	damage_type = BRUTE
+	armor_penetration = 60
+	penetration_modifier = 2
+
+/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			H.adjust_fire_stacks(50)
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
+		if(H.isChild())
+			var/mob/living/carbon/human/F = firer
+			F.unlock_achievement(new/datum/achievement/child_fire())

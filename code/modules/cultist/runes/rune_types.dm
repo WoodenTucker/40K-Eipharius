@@ -12,7 +12,7 @@
 /datum/rune_recipe/slaanesh
 	diety = "slaanesh"
 
-/obj/effect/heretic_rune/khorne
+/obj/effect/cleanable/heretic_rune/khorne
 	name = "mark of khorne"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "angry"
@@ -25,7 +25,7 @@
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
 
-/obj/effect/heretic_rune/slaanesh
+/obj/effect/cleanable/heretic_rune/slaanesh
 	name = "mark of slaanesh"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "lewd"
@@ -37,7 +37,7 @@
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
 
-/obj/effect/heretic_rune/tzeentch
+/obj/effect/cleanable/heretic_rune/tzeentch
 	name = "mark of tzeentch"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "smart"
@@ -49,7 +49,7 @@
 	blood_DNA = list()
 	appearance_flags = NO_CLIENT_COLOR
 
-/obj/effect/heretic_rune/nurgle
+/obj/effect/cleanable/heretic_rune/nurgle
 	name = "mark of nurgle"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "nasty"

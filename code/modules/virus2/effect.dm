@@ -256,7 +256,7 @@
 
 /datum/disease2/effect/plague3
 	name = "Nurgle Plague Part 3(DEATH)"
-	stage = 3
+	stage = 1
 	badness = VIRUS_EXOTIC
 	chance_max = 95
 	allow_multiple = 1
@@ -267,7 +267,7 @@
 
 /datum/disease2/effect/plague2
 	name = "Nurgle Plague Part 2"
-	stage = 2
+	stage = 1
 	badness = VIRUS_EXOTIC
 	chance_max = 95
 	allow_multiple = 1

@@ -2,7 +2,7 @@
 	ingredients = list(/obj/item/organ/internal/heart)
 	special = TRUE
 
-/datum/rune_recipe/khorne/offer_heart/do_special(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/khorne/offer_heart/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 10)
 
 /datum/rune_recipe/khorne/knife_teeth
@@ -10,7 +10,7 @@
 	ingredients = list(/obj/item/stack/teeth,  /obj/item/material/sword/combat_knife)
 	special = TRUE
 
-/datum/rune_recipe/khorne/knife_teeth/do_special(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/khorne/knife_teeth/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	switch(rand(1,10))
 		if(1)
 			new /obj/item/melee/chain/pcsword/eviscerator(get_turf(rune))
@@ -41,6 +41,6 @@
 
 /datum/rune_recipe/khorne/conversion/do_special(mob/living/carbon/human/user, var/list/items)
 	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
-	if(!isheretic(target))
+	if(target.stat != DEAD)
 		var/datum/heretic_deity/khorne/N = GOD(GOD_KHORNE)
 		N.join_request(target)

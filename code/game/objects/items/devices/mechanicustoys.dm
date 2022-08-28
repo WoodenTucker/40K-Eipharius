@@ -170,3 +170,104 @@
 /obj/item/device/neuraladapter/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
+
+//Robot stuff
+
+
+/obj/item/melee/mounted_psword
+	name = "Power Blade"
+		desc = "A retractable power weapon affixed to the hands"
+		icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+		icon_state = "powersword"
+		item_state = "powersword"
+		wielded_icon = "powersword"
+		force = 40
+		block_chance = 80
+		sharp = TRUE
+		obj_flags = OBJ_FLAG_CONDUCTIBLE
+		w_class = ITEM_SIZE_HUGE
+		weapon_speed_delay = 7
+
+
+/obj/item/melee/mounted_psword/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+/obj/item/gun/projectile/automatic/flamer/mounted
+	name = "Mounted Heavy Flamer"
+	desc = "An incredibly dangerous flamethrower used often in infiltration or siege operations."
+	icon_state = "flamer"
+	item_state = "flamer"
+	wielded_item_state = "flamer-wielded"
+	caliber = "flamer"
+	one_hand_penalty = 0
+	str_requirement = 0 //Special mounted weapon
+	fire_sound = 'sound/effects/fire01.ogg'
+	casingsound = null//No eject sound for you.
+	firemodes = list()
+	accuracy = 0
+	automatic = 1
+	fire_delay = 8
+	move_delay = 5
+	burst=1
+	magazine_type = /obj/item/ammo_magazine/flamer
+	allowed_magazines = /obj/item/ammo_magazine/flamer
+	can_jam = FALSE
+
+
+/obj/item/gun/projectile/automatic/flamer/mounted/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+
+
+/obj/item/gun/energy/bolter_mounted_heavy
+	str_requirement = 0 //Mounted weapon
+	w_class = ITEM_SIZE_HUGE
+	force = 30
+	one_hand_penalty = 0 //Mounted weapon
+	name = "Mounted Heavy Bolter"
+	desc = "A specialised mounted heavy bolter, designed for use on combat platforms."
+	icon_state = "ultrabolter"
+	w_class = ITEM_SIZE_HUGE
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "ultrabolter-30"
+	unloaded_icon = "ultrabolter-e"
+	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect. 
+	loaded_icon = "autoshotty"
+	unwielded_loaded_icon = "autoshotty"
+	wielded_loaded_icon = "autoshotty-wielded"
+	unloaded_icon = "autoshotty-e"
+	unwielded_unloaded_icon = "autoshotty-e"
+	wielded_unloaded_icon = "autoshotty-wielded-e"
+	fire_delay = 2
+	burst = 1
+	move_delay = 3
+	automatic = 1
+	firemodes = list()
+	gun_type = GUN_AUTOMATIC
+	accuracy = 2
+	max_shots = 60
+	projectile_type = /obj/item/projectile/bullet/bolt/kp
+	origin_tech = null
+	self_recharge = 1
+	charge_meter = 0
+
+
+/obj/item/gun/projectile/bolter/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "ultrabolter-30"
+	else
+		icon_state = "ultrabolter-e"
+
+/obj/item/gun/energy/bolter_mounted_heavy/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)

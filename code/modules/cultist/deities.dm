@@ -2,11 +2,20 @@
 	name = "khorne"
 	join_message = "Blood for the Blood God!"
 	status_icon_state = "khorne"
-	rune_type = /obj/effect/heretic_rune/khorne
+	rune_type = /obj/effect/cleanable/heretic_rune/khorne
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_heart,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
+	possible_blessings = list(
+							/datum/heretic_effect/healing,
+							/datum/heretic_effect/tough_skin,
+							/datum/heretic_effect/slow,
+							/datum/heretic_effect/strength/greater,
+							/datum/heretic_effect/strength/lesser,
+							/datum/heretic_effect/strength,
+							/datum/heretic_effect/painless)
+
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/bludforbludguy,
 			/mob/living/carbon/human/proc/letriverflow,
@@ -26,7 +35,7 @@
 /datum/heretic_deity/nurgle
 	name = "nurgle"
 	status_icon_state = "nurgle"
-	rune_type = /obj/effect/heretic_rune/nurgle
+	rune_type = /obj/effect/cleanable/heretic_rune/nurgle
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
 						/datum/rune_recipe/nurgle/toughen,
@@ -41,7 +50,7 @@
 /datum/heretic_deity/slaanesh
 	name = "slaanesh"
 	status_icon_state = "slaanesh"
-	rune_type = /obj/effect/heretic_rune/slaanesh
+	rune_type = /obj/effect/cleanable/heretic_rune/slaanesh
 	rune_recipes = list(/datum/rune_recipe/slaanesh/conversion,
 						/datum/rune_recipe/slaanesh/arm,
 						/datum/rune_recipe/slaanesh/escape,
@@ -55,7 +64,7 @@
 /datum/heretic_deity/tzeentch
 	name = "tzeentch"
 	status_icon_state = "tzeentch"
-	rune_type = /obj/effect/heretic_rune/tzeentch
+	rune_type = /obj/effect/cleanable/heretic_rune/tzeentch
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience)

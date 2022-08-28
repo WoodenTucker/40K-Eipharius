@@ -10,18 +10,18 @@
 	var/effect_path												// Is an effect added? If so, what type. This is also used as a bool, don't use product_path, it wont work.
 
 // Do an override on this to add extra checks. Call it after you're done. IE: return ..()
-/datum/rune_recipe/proc/pre_craft_check(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/proc/pre_craft_check(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	var/datum/heretic_deity/deity = GOD(user.mind.special_role)
 	if(!(src.type in deity.rune_recipes))
 		return FALSE
 	return TRUE
 
-/datum/rune_recipe/proc/try_craft_recipe(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/proc/try_craft_recipe(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	if(!pre_craft_check(user, rune))
 		return FALSE
 	return check_ingredients(user, rune)
 
-/datum/rune_recipe/proc/check_ingredients(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/proc/check_ingredients(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	var/list/satisfied_requirements = list()
 	var/list/satisfied_types = list()
 	var/count = 0
@@ -35,7 +35,7 @@
 		return finish(user, rune, satisfied_requirements)
 	return FALSE
 
-/datum/rune_recipe/proc/finish(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune, var/list/items)
+/datum/rune_recipe/proc/finish(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune, var/list/items)
 	if(length(items))
 		if(sound)
 			playsound(src, sound, 80, 0, -1)
@@ -62,23 +62,23 @@
 		return TRUE
 	return FALSE
 
-/datum/rune_recipe/proc/add_effect(var/mob/living/carbon/user, var/list/items, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/proc/add_effect(var/mob/living/carbon/user, var/list/items, var/obj/effect/cleanable/heretic_rune/rune)
 	return FALSE
 
-/datum/rune_recipe/proc/do_special(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune, var/list/items)
+/datum/rune_recipe/proc/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune, var/list/items)
 	return FALSE
 
-/datum/rune_recipe/proc/post_finish(var/mob/living/carbon/user, var/obj/effect/heretic_rune/rune)
+/datum/rune_recipe/proc/post_finish(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
 	return FALSE
 
-/obj/effect/heretic_rune
+/obj/effect/cleanable/heretic_rune
 	name = "rune"
 	var/cooldown
 
-/obj/effect/heretic_rune/attack_hand(mob/living/carbon/M)
+/obj/effect/cleanable/heretic_rune/attack_hand(mob/living/carbon/M)
 	if(world.time <= cooldown)
 		return FALSE
 	for(var/datum/rune_recipe/recipe in SSgods.rune_recipes)
 		if(recipe.try_craft_recipe(M, src))
-			cooldown += (world.time + 2 SECONDS)
+			cooldown = (world.time + 2 SECONDS)
 			return

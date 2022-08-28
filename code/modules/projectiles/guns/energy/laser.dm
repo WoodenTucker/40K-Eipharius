@@ -645,7 +645,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma pistol. Fun in a small package. Don't roll a 1! (cannot explode yet)"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
-	item_state = "pulse_pistol"
+	item_state = "pulse_carbine"
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 10
@@ -659,7 +659,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	charge_cost = 250
-	wielded_item_state = "pulse_pistol"
+	wielded_item_state = "pulse_carbine"
 	sales_price = 69
 
 /obj/item/gun/energy/pulse/plasma/pistol/astarte

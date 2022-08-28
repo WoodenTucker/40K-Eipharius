@@ -57,7 +57,7 @@
 
 					if(stance_step in list(1,2,2)) //every 3 ticks
 						var/action = pick( list( "growls at [target_mob]", "stares angrily at [target_mob]", "prepares to attack [target_mob]", "closely watches [target_mob]" ) )
-						playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn_alert.ogg', 50, 0, -1)
+						playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn_alert.ogg', 100, 1)
 						if(action)
 							custom_emote(1,action)
 			if(!found_mob)
@@ -67,7 +67,7 @@
 				stance = HOSTILE_STANCE_IDLE
 			if(stance_step >= 2)   //If we have been staring at a mob for 7 ticks,
 				stance = HOSTILE_STANCE_ATTACK
-				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 50, 0, -1)
+				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 100, 1)
 
 		if(HOSTILE_STANCE_ATTACKING)
 			if(stance_step >= 50)	//attacks for 30 ticks, then it gets tired and needs to rest

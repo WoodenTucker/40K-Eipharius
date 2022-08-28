@@ -1459,22 +1459,14 @@
 	dir = 4;
 	icon_state = "spline_plain"
 	},
-/obj/item/clothing/suit/armor/militia{
-	name = "Frateris Armor"
-	},
-/obj/item/clothing/head/helmet/salvage,
-/obj/item/clothing/head/helmet/salvage,
-/obj/item/clothing/suit/armor/militia{
-	name = "Frateris Armor"
-	},
-/obj/item/clothing/suit/armor/militia{
-	name = "Frateris Armor"
-	},
-/obj/item/clothing/suit/armor/militia{
-	name = "Frateris Armor"
-	},
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/fraterisarmor,
+/obj/item/clothing/suit/armor/fraterisarmor,
+/obj/item/clothing/suit/armor/fraterisarmor,
+/obj/item/clothing/head/helmet/hauberk,
+/obj/item/clothing/head/helmet/hauberk,
+/obj/item/clothing/head/helmet/hauberk,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "fO" = (
@@ -1517,10 +1509,10 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "fT" = (
 /obj/structure/table/steel,
-/obj/item/device/radio/headset/headset_cargo,
-/obj/item/device/radio/headset/headset_cargo,
-/obj/item/device/radio/headset/headset_cargo,
-/obj/item/device/radio/headset/headset_cargo,
+/obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/device/radio/headset/red_team/sl_alpha,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2256,6 +2248,8 @@
 /obj/item/clothing/suit/chaplain_hoodie{
 	armor = list("melee"=20,"bullet"=20,"laser"=20,"energy"=0,"bomb"=0,"bio"=30,"rad"=10)
 	},
+/obj/item/clothing/suit/armor/sniper,
+/obj/item/clothing/head/helmet/foxhelm,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2853,6 +2847,7 @@
 	mob_size = 25;
 	name = "The Dark One"
 	},
+/obj/item/melee/classic_baton/daemonhammer,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "ln" = (
@@ -2924,11 +2919,10 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "ly" = (
-/obj/item/melee/classic_baton/daemonhammer,
+/obj/effect/floor_decal/turf/plating,
 /obj/item/clothing/head/helmet/sisterofbattle{
 	color = "grey"
 	},
-/obj/effect/floor_decal/turf/basalt0,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "lz" = (
@@ -3487,12 +3481,7 @@
 "nP" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
-/obj/item/clothing/suit/armor/riot{
-	armor = list("melee"=50,"bullet"=30,"laser"=20,"energy"=10,"bomb"=55,"bio"=10,"rad"=20);
-	color = "grey";
-	desc = "An armored vest with a strange insignia on the pauldron.";
-	name = "Seolite Cuirass"
-	},
+/obj/item/clothing/suit/armor/seolarmor,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -4785,6 +4774,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"sU" = (
+/obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/seolarmor,
+/obj/item/clothing/head/helmet/seolhelm,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "sV" = (
 /obj/machinery/optable,
 /obj/effect/floor_decal/floordetail/edgedrain,
@@ -5142,6 +5139,10 @@
 	access = list(210);
 	name = "rusty key 1"
 	},
+/obj/item/clothing/suit/armor/goliatharmor,
+/obj/item/clothing/suit/armor/goliatharmor,
+/obj/item/clothing/suit/armor/goliatharmor,
+/obj/item/clothing/suit/armor/goliatharmor,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/habs)
 "up" = (
@@ -5195,6 +5196,8 @@
 /obj/structure/cult/forge,
 /obj/item/material/sword/chaosknife,
 /obj/effect/floor_decal/turf/basalt0,
+/obj/item/clothing/suit/armor/berserker,
+/obj/item/clothing/head/helmet/berserkerhelm,
 /turf/simulated/floor/dirty/indestructable,
 /area/cadiaoutpost/oa/caves/dark)
 "uB" = (
@@ -6039,16 +6042,8 @@
 "xX" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
-/obj/item/clothing/head/helmet/barney_helmet{
-	armor = list("melee"=30,"bullet"=20,"laser"=10,"energy"=35,"bomb"=30,"bio"=0,"rad"=10);
-	color = "grey";
-	name = "Seolite Helm"
-	},
-/obj/item/clothing/head/helmet/barney_helmet{
-	armor = list("melee"=30,"bullet"=20,"laser"=10,"energy"=35,"bomb"=30,"bio"=0,"rad"=10);
-	color = "grey";
-	name = "Seolite Helm"
-	},
+/obj/item/clothing/head/helmet/soul,
+/obj/item/clothing/head/helmet/soul,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -7383,6 +7378,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"DA" = (
+/obj/item/clothing/suit/armor/goliathplate,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/habs)
 "DB" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/floor_decal/turf/necro1,
@@ -7397,7 +7396,13 @@
 	dir = 4
 	},
 /obj/machinery/door/blast/id_door/open,
-/obj/item/minidread,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/tcloak,
+/obj/item/clothing/accessory/hgcloak,
+/obj/item/clothing/accessory/hgcloak,
+/obj/item/clothing/accessory/hgcloak,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "DD" = (
@@ -7759,6 +7764,7 @@
 /obj/item/stack/material/steel/fifty,
 /obj/item/stack/material/wood/fifty,
 /obj/item/stack/material/wood/fifty,
+/obj/item/minidread,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Fb" = (
@@ -8815,9 +8821,6 @@
 /obj/effect/floor_decal/turf/basalt9,
 /obj/effect/decal/cleanable/blood/gibs/body,
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/item/clothing/head/helmet/sisterofbattle{
-	color = "grey"
-	},
 /obj/effect/decal/remains{
 	color = "grey"
 	},
@@ -12361,6 +12364,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"XQ" = (
+/obj/structure/table/rack/dark,
+/obj/item/clothing/suit/armor/seolsuit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "XR" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/power/apc{
@@ -18696,8 +18706,8 @@ zb
 zb
 uV
 ge
-uV
-uV
+XQ
+sU
 zo
 SI
 bf
@@ -23095,7 +23105,7 @@ zm
 zZ
 ma
 mI
-ly
+CP
 mI
 ma
 zZ
@@ -31976,7 +31986,7 @@ PI
 PI
 YD
 un
-Wx
+DA
 Wx
 YD
 Ge
@@ -35939,7 +35949,7 @@ AJ
 ty
 AJ
 AJ
-AJ
+ly
 AJ
 AJ
 AJ

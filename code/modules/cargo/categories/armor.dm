@@ -48,13 +48,53 @@
 
 /datum/cargo_entry/armor/voidsuitarmorhelm
 	name = "Armored Void Suit Helmet"
-	cost = 65
+	cost = 25
 	item_path = /obj/item/clothing/head/helmet/space/void/engineering/alt
 
 /datum/cargo_entry/armor/helmet
 	name = "Guard Flak Helmet"
 	cost = 15
 	item_path = /obj/item/clothing/head/helmet/guardhelmet
+
+/datum/cargo_entry/armor/metalhelm
+	name = "Metal Helmet"
+	cost = 7
+	item_path = /obj/item/clothing/head/helmet/metalhelmet
+
+/datum/cargo_entry/armor/necroflak
+	name = "Necromunda Flak Armort"
+	cost = 45
+	item_path = /obj/item/clothing/suit/armor/flak1
+
+/datum/cargo_entry/armor/necroflakv
+	name = "Necromunda Flak Vest"
+	cost = 35
+	item_path = /obj/item/clothing/suit/armor/flak2
+
+/datum/cargo_entry/armor/necrocara1
+	name = "Necromunda Carapace Armor"
+	cost = 75
+	item_path = /obj/item/clothing/suit/armor/carapace2
+
+/datum/cargo_entry/armor/necrocara2
+	name = "Necromunda Carapace Suit"
+	cost = 75
+	item_path = /obj/item/clothing/suit/armor/carapace3
+
+/datum/cargo_entry/armor/necrohelm
+	name = "Necromunda Helmet"
+	cost = 12
+	item_path = /obj/item/clothing/head/helmet/marinehelm
+
+/datum/cargo_entry/armor/necrophelm
+	name = "Necromunda Power Helmet"
+	cost = 40
+	item_path = /obj/item/clothing/head/helmet/lightpahelm
+
+/datum/cargo_entry/armor/necroparmor
+	name = "Necromunda Power Armor"
+	cost = 170
+	item_path = /obj/item/clothing/suit/armor/vanpa
 
 /datum/cargo_entry/armor/garmor
 	name = "Guard Flak Armor"
@@ -66,19 +106,24 @@
 	cost = 45
 	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary
 
+/datum/cargo_entry/armor/mercflak
+	name = "Heavy Flak Suit"
+	cost = 60
+	item_path = /obj/item/clothing/suit/armor/heavyflaksuit
+
 /datum/cargo_entry/armor/cara
 	name = "Guard Carapace Armor"
-	cost = 110
+	cost = 90
 	item_path = /obj/item/clothing/suit/armor/guardsman/carapace
 
 /datum/cargo_entry/armor/mercspace
 	name = "Mercenary Carapace Armor"
-	cost = 100
+	cost = 80
 	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace
 
 /datum/cargo_entry/armor/heavycombatarmor
 	name = "Heavy Combat Armor"
-	cost = 130
+	cost = 110
 	item_path = /obj/item/clothing/suit/storage/vest/merc
 
 /datum/cargo_entry/armor/belt
