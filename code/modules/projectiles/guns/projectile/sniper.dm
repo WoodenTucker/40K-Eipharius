@@ -151,3 +151,10 @@
 	..()
 	if(user.zoomed)
 		user.do_zoom()
+
+
+/obj/item/gun/energy/las/lasgun/longlas/krieg
+	name = "Krieg Pattern Las Sniper"
+	desc = "The choice Lasgun Sniper Rifle of the suicidal Kriegers. The ones with these are usually less suicidal."
+	icon_state = "kriegsniper"
+	item_state = "lasgun"
