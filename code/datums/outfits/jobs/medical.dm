@@ -83,7 +83,7 @@
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	gloves = /obj/item/clothing/shoes/jackboots/techpriest
+	gloves = /obj/item/clothing/gloves/thick/techpriest
 	glasses = /obj/item/clothing/glasses/science/magos
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	l_ear = /obj/item/device/radio/headset/headset_eng
