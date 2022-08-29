@@ -579,6 +579,7 @@
 	caliber = "galvanic"
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
 	ammo_type = /obj/item/ammo_casing/galvanic
+	mag_type = MAGAZINE
 	max_ammo = 7
 	multiple_sprites = 1
 
