@@ -396,15 +396,15 @@
 /obj/item/ammo_casing/galvanic
 	name = "galvanic rifle casings"
 	desc = "A galvanic rifle casing"
-	icon_state = "null"
-	spent_icon = "null"
+	icon_state = "gshell"
+	spent_icon = "gshell-spent"
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic
 
 /obj/item/ammo_casing/galvanic/fire
 	name = "galvanic rifle incendiary casings"
 	desc = "A galvanic rifle incendiary casing"
-	icon_state = "null"
-	spent_icon = "null"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/fire
