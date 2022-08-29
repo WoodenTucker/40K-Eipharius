@@ -481,7 +481,7 @@ obj/item/clothing/suit/armor
 	icon_state = "Judge"
 	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 30, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -512,7 +512,7 @@ obj/item/clothing/suit/armor
 	icon_state = "farmor"
 	item_state = "farmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 20)
+	armor = list(melee = 42, bullet = 48, laser = 42, energy = 20, bomb = 30, bio = 10, rad = 20)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -535,7 +535,7 @@ obj/item/clothing/suit/armor
 	icon_state = "heretmil"
 	item_state = "heretmil"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 45, bullet = 45, laser = 38, energy = 20, bomb = 30, bio = 10, rad = 20)
+	armor = list(melee = 45, bullet = 45, laser = 48, energy = 20, bomb = 30, bio = 10, rad = 20)
 	sales_price = 50
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -576,13 +576,11 @@ obj/item/clothing/suit/armor
 	icon_state = "wshield"
 	item_state = "wshield"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 35, laser = 30, energy = 20, bomb = 30, bio = 40, rad = 30)
+	armor = list(melee = 38, bullet = 38, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
 	sales_price = 12
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/medicae/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/armor/catachan
 	name = "Catachan Flak Vest"
@@ -590,8 +588,9 @@ obj/item/clothing/suit/armor
 	icon_state = "Catachan_Vest"
 	item_state = "Catachan_Vest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 60, bullet = 30, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 60, bullet = 30, laser = 30, energy = 30, bomb = 20, bio = 0, rad = 0)
 	sales_price = 25
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/CatachanVest/New()
@@ -604,8 +603,9 @@ obj/item/clothing/suit/armor
 	icon_state = "valarmor"
 	item_state = "valarmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 45, laser = 40, energy = 20, bomb = 30, bio = 10, rad = 20)
+	armor = list(melee = 40, bullet = 40, laser = 50, energy = 20, bomb = 30, bio = 10, rad = 20)
 	sales_price = 20
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -616,7 +616,7 @@ obj/item/clothing/suit/armor
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 44, bullet = 44, laser = 38, energy = 20, bomb = 40, bio = 80, rad = 80)
+	armor = list(melee = 44, bullet = 44, laser = 44, energy = 20, bomb = 40, bio = 50, rad = 50)
 	sales_price = 20
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -629,7 +629,7 @@ obj/item/clothing/suit/armor
 	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 54, bullet = 54, laser = 48, energy = 20, bomb = 50, bio = 80, rad = 80)
-	sales_price = 40
+	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -643,7 +643,7 @@ obj/item/clothing/suit/armor
 	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 45, bullet = 55, laser = 45, energy = 25, bomb = 45, bio = 10, rad = 30)
-	sales_price = 40
+	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/cadiansgt/New()
@@ -656,7 +656,7 @@ obj/item/clothing/suit/armor
 	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 28, bomb = 48, bio = 20, rad = 35)
-	sales_price = 45
+	sales_price = 35
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/lieutenant/New()
@@ -670,7 +670,7 @@ obj/item/clothing/suit/armor
 	item_state = "storm"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 52, bullet = 62, laser = 54, energy = 28, bomb = 68, bio = 20, rad = 35)
-	sales_price = 60
+	sales_price = 50
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/scion/New()
@@ -783,11 +783,11 @@ obj/item/clothing/suit/armor
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 72, bullet = 72, laser = 72, energy = 35, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 68, bullet = 70, laser = 70, energy = 35, bomb = 60, bio = 100, rad = 100)
 	sales_price = 90
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/inqhood
 /obj/item/clothing/suit/storage/hooded/inquisitor/New()
@@ -1032,6 +1032,36 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1
 
+/obj/item/clothing/suit/armor/templar
+	name = "Full Plate Armor"
+	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Eipharius."
+	icon_state = "templar"
+	item_state = "templar"
+	armor = list(melee = 68, bullet = 42, laser = 44, energy = 25, bomb = 40, bio = 40, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 18
+/obj/item/clothing/suit/armor/templar/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1
+
+/obj/item/clothing/suit/armor/knighthosp
+	name = "Frateris Plate"
+	desc = "An iron-alloy heavy plate cuirass forged by local hands, it's craftsmanship is remarkable and benefits from the exotic alloy unique to Eipharius."
+	icon_state = "knight_hospitaller"
+	item_state = "knight_hospitaller"
+	armor = list(melee = 68, bullet = 42, laser = 44, energy = 25, bomb = 40, bio = 40, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 18
+/obj/item/clothing/suit/armor/knighthosp/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5
+
 /obj/item/clothing/suit/armor/hauberk
 	name = "Hauberk"
 	desc = "A light chain hauberk worn over padded cloth, it's comfortable and protects against slashes."
@@ -1166,7 +1196,7 @@ obj/item/clothing/suit/armor
 	desc = "Forged by the strange xenos of this barren ice-world, it seeems to have an advanced protective field wrapping around it."
 	icon_state = "spacer"
 	item_state = "spacer"
-	armor = list(melee = 45, bullet = 55, laser = 70, energy = 25, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 50, bullet = 60, laser = 80, energy = 25, bomb = 40, bio = 100, rad = 100)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET|HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1233,3 +1263,205 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/carapace3/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.2
+
+/obj/item/clothing/suit/armor/carapace4
+	name = "Heavy Carapace Armor"
+	desc = "Unmarked carapace armor manufactured by the underhives of Necromunda."
+	icon_state = "carapace4"
+	item_state = "carapace4"
+	armor = list(melee = 54, bullet = 63, laser = 63, energy = 25, bomb = 40, bio = 30, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 35
+/obj/item/clothing/suit/armor/carapace4/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
+/obj/item/clothing/suit/armor/goliath2
+	name = "Goliath Flak Armor"
+	desc = "Shoddy flak armor worn by members of House Goliath, it seems unlikely to protect you from much more then a blade."
+	icon_state = "raider_combat"
+	item_state = "raider_combat"
+	armor = list(melee = 48, bullet = 40, laser = 40, energy = 25, bomb = 40, bio = 30, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 15
+/obj/item/clothing/suit/armor/goliath2/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
+/obj/item/clothing/suit/armor/greypa
+	name = "Mechanicus Power Armour"
+	desc = "Mechanicus holy power armour, forged by the Tech-priest of Mars and blessed with runes of blankness, a potent tool against the great enemy."
+	icon_state = "knight_grey"
+	item_state = "knight_grey"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 80, bullet = 68, laser = 68, energy = 35, bomb = 50, bio = 100, rad = 100)
+	sales_price = 90
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+/obj/item/clothing/suit/armor/greypa/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
+/obj/item/clothing/suit/armor/rpowerarmor
+	name = "Renegade Power Armour"
+	desc = "Masterwork power armor forged and used by the renegade navigator houses."
+	icon_state = "t51bgs"
+	item_state = "t51bgs"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 65, bullet = 72, laser = 72, energy = 35, bomb = 50, bio = 100, rad = 100)
+	sales_price = 85
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+/obj/item/clothing/suit/armor/rpowerarmor/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.6
+
+/obj/item/clothing/suit/armor/scum2
+	name = "Mysterious Garb"
+	desc = "These clothes belong the most mystical of folk."
+	icon_state = "gothcoat"
+	item_state = "gothcoat"
+	armor = list(melee = 38, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 5
+
+/obj/item/clothing/suit/armor/leather
+	name = "Leather Armor"
+	desc = "Shoddy armor sewn from shafra leather, it protects you more from the cold then anything else."
+	icon_state = "leatherarmor"
+	item_state = "leatherarmor"
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 4
+
+/obj/item/clothing/suit/armor/hjacket
+	name = "Heavy Jacket"
+	desc = "A heavy leather jacket."
+	icon_state = "wornmfp"
+	item_state = "wornmfp"
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 4
+
+/obj/item/clothing/suit/armor/hjacket2
+	name = "Cool Jacket"
+	desc = "A a light jacket worn by gangers."
+	icon_state = "biker_jacket"
+	item_state = "biker_jacket"
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 4
+
+/obj/item/clothing/suit/armor/slumcoat
+	name = "Slum Coat"
+	desc = "A heavy leather coat made of a strange leather, it's incredibly durable."
+	icon_state = "ghostechoe"
+	item_state = "ghostechoe"
+	armor = list(melee = 44, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 6
+
+/obj/item/clothing/suit/armor/towntrench
+	name = "Trench Coat"
+	desc = "A trench coat underpiece to wear with your trench coat!"
+	icon_state = "towntrench_special"
+	item_state = "towntrench_special"
+	armor = list(melee = 44, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 6
+
+/obj/item/clothing/suit/armor/vessor
+	name = "Vessorine Carapace"
+	desc = "A light bodysuit with carapace plates overlayn like an exterior scale-mail, the suit appears to be powered."
+	icon_state = "uegarmor"
+	item_state = "uegarmor"
+	armor = list(melee = 58, bullet = 54, laser = 54, energy = 25, bomb = 40, bio = 40, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 40
+/obj/item/clothing/suit/armor/vessor/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.4
+
+/obj/item/clothing/suit/armor/exile
+	name = "Vessorine Armor"
+	desc = "Ritual combat armor worn by the natives of Vessor."
+	icon_state = "exile"
+	item_state = "exile"
+	armor = list(melee = 48, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 6
+
+// admeme only
+
+/obj/item/clothing/suit/armor/ogryn1 // only give this to ogryns. it cannot be removed and has head protection.
+	name = "Ogryn Armor" 
+	desc = "Protects ya stomach from dem flashie stingy things."
+	icon_state = "ogryn1"
+	item_state = "ogryn1"
+	armor = list(melee = 90, bullet = 70, laser = 70, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 0
+	canremove = 0
+
+/obj/item/clothing/suit/armor/ogryn2
+	name = "Ogryn Armor"
+	desc = "Protects ya stomach from dem flashie stingy things."
+	icon_state = "ogryn2"
+	item_state = "ogryn2"
+	armor = list(melee = 90, bullet = 70, laser = 70, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 0
+	canremove = 0
+
+/obj/item/clothing/suit/armor/shadowbeast // ADMIN ONLY DONT FUKKIN GIVE ANYONE THIS.
+	name = "DO YOU SEE."
+	desc = "DO YOU SEE ME."
+	icon_state = "shadow"
+	item_state = "shadow"
+	armor = list(melee = 150, bullet = 150, laser = 150, energy = 25, bomb = 50, bio = 100, rad = 100)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 0
+/obj/item/clothing/suit/armor/shadowbeast/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1

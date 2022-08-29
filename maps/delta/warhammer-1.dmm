@@ -29,7 +29,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel)
 "ah" = (
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves)
 "ai" = (
 /obj/structure/table/standard{
@@ -118,7 +120,9 @@
 	invisibility = 100;
 	name = "Invisible Light"
 	},
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "az" = (
 /obj/effect/floor_decal/turf/plating,
@@ -1463,7 +1467,7 @@
 /obj/structure/table/rack/dark,
 /obj/item/clothing/suit/armor/fraterisarmor,
 /obj/item/clothing/suit/armor/fraterisarmor,
-/obj/item/clothing/suit/armor/fraterisarmor,
+/obj/item/clothing/head/helmet/hauberk,
 /obj/item/clothing/head/helmet/hauberk,
 /obj/item/clothing/head/helmet/hauberk,
 /obj/item/clothing/head/helmet/hauberk,
@@ -1836,7 +1840,6 @@
 /area/cadiaoutpost/oa/crew_quarters/cryopods)
 "hr" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/clothing/head/helmet/space/void/engineering/alt,
 /turf/simulated/floor/carpet/purple,
 /area/cadiaoutpost/oa/caves/undercity)
 "hu" = (
@@ -2694,17 +2697,9 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "kP" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/clothing/mask/gas/cyborg{
-	armor = list("melee"=15,"bullet"=15,"laser"=15,"energy"=0,"bomb"=0,"bio"=75,"rad"=0)
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/item/clothing/head/helmet/metalvisor,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/habs)
 "kQ" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -3100,6 +3095,12 @@
 	name = "penitent clothes"
 	},
 /obj/item/clothing/under/rank/penitent,
+/obj/item/clothing/suit/space/void/security/alt{
+	armor = list("melee"=40,"bullet"=40,"laser"=40,"energy"=5,"bomb"=35,"bio"=100,"rad"=10)
+	},
+/obj/item/clothing/suit/greatcoat,
+/obj/random/accessory,
+/obj/item/stack/thrones3/ten,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/habs)
 "mh" = (
@@ -4043,8 +4044,6 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "pV" = (
 /obj/structure/table/steel,
-/obj/item/stack/thrones3/ten,
-/obj/item/stack/thrones3/ten,
 /obj/structure/torchwall{
 	dir = 8;
 	icon_state = "torchwall0"
@@ -4418,7 +4417,9 @@
 	health = 1500;
 	name = "Combat Servitor"
 	},
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "rv" = (
 /obj/structure/table/steel,
@@ -4899,7 +4900,9 @@
 	invisibility = 100;
 	name = "Invisible Light"
 	},
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "tv" = (
 /obj/effect/floor_decal/turf/plating,
@@ -5005,7 +5008,9 @@
 /area/cadiaoutpost/oa/service/chapel)
 "tR" = (
 /obj/structure/sewers/brokenpipe,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "tT" = (
 /obj/effect/floor_decal/turf/surgery2,
@@ -5039,16 +5044,14 @@
 /area/cadiaoutpost/oa/service/chapel)
 "tW" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/suit/space/void/security/alt{
-	armor = list("melee"=40,"bullet"=40,"laser"=40,"energy"=5,"bomb"=35,"bio"=100,"rad"=10)
-	},
 /obj/structure/closet/cabinet{
 	color = "grey"
 	},
 /obj/random/accessory,
 /obj/random/accessory,
-/obj/random/accessory,
-/obj/item/clothing/suit/greatcoat,
+/obj/item/clothing/suit/armor/exile,
+/obj/item/stack/thrones3/ten,
+/obj/item/clothing/head/helmet/stalkerhelm2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5139,7 +5142,6 @@
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/clothing/suit/armor/goliatharmor,
 /obj/item/clothing/suit/armor/goliatharmor,
 /obj/item/clothing/suit/armor/goliatharmor,
 /obj/item/clothing/suit/armor/goliatharmor,
@@ -7091,11 +7093,13 @@
 	},
 /obj/item/clothing/suit/cultrobes/alt,
 /obj/item/clothing/suit/cultrobes/alt,
-/obj/item/clothing/suit/cultrobes/alt,
 /obj/item/melee/baton,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/clothing/suit/armor/guardsman/bloodpact{
+	name = "strange armor"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/caves/undercity)
 "Cl" = (
@@ -7216,7 +7220,9 @@
 	invisibility = 100;
 	name = "Invisible Light"
 	},
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "CD" = (
 /obj/effect/floor_decal/turf/brick/two,
@@ -7471,7 +7477,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "DS" = (
 /obj/structure/sewers/pipe,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "DW" = (
 /obj/effect/floor_decal/newcorner/plating,
@@ -8134,7 +8142,9 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Gv" = (
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/magistratumpost)
 "Gw" = (
 /obj/effect/floor_decal/turf/cafe{
@@ -8157,6 +8167,17 @@
 /obj/structure/closet/crate/uranium,
 /obj/random/loot/randomsupply,
 /turf/simulated/floor/tiled,
+/area/cadiaoutpost/oa/caves/undercity)
+"GD" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/clothing/head/helmet/stalkerhelm,
+/obj/item/clothing/accessory/goliath,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "GE" = (
 /obj/effect/floor_decal/turf/brick/two,
@@ -8633,7 +8654,9 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "Iy" = (
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Iz" = (
 /obj/item/storage/fancy/cigarettes{
@@ -8983,7 +9006,9 @@
 /obj/structure/sewers/smallpipe{
 	pixel_y = -6
 	},
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "JU" = (
 /obj/machinery/power/apc{
@@ -9298,6 +9323,8 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/guardarmor,
 /obj/random/loot/guardarmor,
+/obj/item/clothing/head/helmet/heavyflak,
+/obj/item/clothing/head/helmet/heavyflak,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Lo" = (
@@ -9404,16 +9431,15 @@
 /obj/item/clothing/head/spookyhood{
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
 	},
-/obj/item/clothing/head/spookyhood{
-	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
-	},
-/obj/item/clothing/head/spookyhood{
-	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
-	},
-/obj/item/clothing/head/spookyhood{
-	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
-	},
 /obj/item/melee/baton,
+/obj/item/clothing/head/helmet/culthelm/alt2,
+/obj/item/clothing/head/helmet/culthelm/alt,
+/obj/item/clothing/head/heretichood/alt2{
+	name = "disgusting hood"
+	},
+/obj/item/clothing/head/heretichood/alt2{
+	name = "disgusting hood"
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/caves/undercity)
 "LI" = (
@@ -9851,7 +9877,9 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Nn" = (
 /obj/structure/sign/sancposter/two,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/service/habs)
 "No" = (
 /obj/machinery/mecha_part_fabricator,
@@ -9991,13 +10019,17 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Oa" = (
 /mob/living/simple_animal/hostile/smalldemon/fleshbeast,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Ob" = (
 /obj/structure/sink{
 	pixel_y = -15
 	},
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/service/habs)
 "Oi" = (
 /turf/simulated/floor/plating,
@@ -10098,7 +10130,8 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/rack/dark,
 /obj/item/clothing/suit/sisterofbattle/training,
-/obj/item/clothing/suit/sisterofbattle/training,
+/obj/item/clothing/suit/armor/templar,
+/obj/item/clothing/suit/armor/knighthosp,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "OE" = (
@@ -11548,7 +11581,9 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Uo" = (
 /obj/structure/sign/sancposter,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/service/habs)
 "Uq" = (
 /obj/machinery/door/airlock/arbiter{
@@ -11660,13 +11695,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "UO" = (
-/mob/living/simple_animal/hostile/mining_borg/buff{
-	health = 800
-	},
-/turf/simulated/wall/ancient{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/item/clothing/head/helmet/gangerhelm,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/service/habs)
 "UP" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -12122,7 +12153,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "WO" = (
 /obj/structure/sewers/wallhole,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "WQ" = (
 /obj/machinery/organ_printer/flesh/mapped,
@@ -12189,7 +12222,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Xe" = (
 /obj/structure/sewers/pipeflowbrk,
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Xg" = (
 /obj/effect/floor_decal/turf/plating,
@@ -12216,6 +12251,15 @@
 /turf/simulated/floor/tiled/freezer{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/caves/undercity)
+"Xk" = (
+/obj/item/archaeological_find/remains/xeno{
+	color = "grey"
+	},
+/obj/item/clothing/mask/gas/cyborg{
+	armor = list("melee"=15,"bullet"=15,"laser"=15,"energy"=0,"bomb"=0,"bio"=75,"rad"=0)
+	},
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
 "Xm" = (
 /obj/structure/sign/art/lordgovenor{
@@ -12550,7 +12594,9 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "YD" = (
-/turf/simulated/wall/concrete,
+/turf/simulated/wall/concrete{
+	integrity = 1500
+	},
 /area/cadiaoutpost/oa/service/habs)
 "YE" = (
 /obj/effect/water/top,
@@ -32243,7 +32289,7 @@ PI
 PI
 YD
 Ed
-Wx
+kP
 Rh
 YD
 ow
@@ -32501,7 +32547,7 @@ PI
 YD
 xr
 Wx
-Wx
+UO
 YD
 ow
 ow
@@ -32757,7 +32803,7 @@ PI
 PI
 YD
 Wx
-Wx
+UO
 Wx
 YD
 ow
@@ -41317,7 +41363,7 @@ vf
 vf
 yr
 AI
-Kh
+Xk
 gU
 gU
 Ul
@@ -42114,8 +42160,8 @@ yr
 Ft
 wZ
 LY
-kP
 Ft
+GD
 fQ
 fQ
 fQ
@@ -44390,7 +44436,7 @@ yr
 yr
 yr
 yr
-UO
+yr
 yr
 yr
 yr

@@ -254,7 +254,7 @@
 	chance_max = 0
 	allow_multiple = 1
 
-/datum/disease2/effect/plague3
+/datum/disease2/effect/plague4
 	name = "Nurgle Plague Part 3(DEATH)"
 	stage = 1
 	badness = VIRUS_EXOTIC
@@ -265,6 +265,25 @@
 		new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
 		mob.gib()
 
+/datum/disease2/effect/plague3
+	name = "Nurgle Plague Part 3"
+	stage = 1
+	badness = VIRUS_EXOTIC
+	chance_max = 95
+	allow_multiple = 1
+	delay = 30 SECONDS
+	activate(var/mob/living/carbon/human/mob,var/multiplier)
+		sleep(30)
+		if (prob(50))
+			mob.apply_damage(50, BURN)
+		sleep(100)
+		if (prob(100) && !mob.wear_mask)
+			sleep(1000)
+		if (prob(10))
+			new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
+			mob.gib()
+
+
 /datum/disease2/effect/plague2
 	name = "Nurgle Plague Part 2"
 	stage = 1
@@ -273,15 +292,17 @@
 	allow_multiple = 1
 	delay = 30 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		mob.apply_damage(22, BURN)
-		mob.bowels = rand(450, 750)
-		mob.bladder = rand(450, 750)
-		mob.emote("sneeze")
-		for(var/mob/living/carbon/human/M in get_step(mob,mob.dir))
-			mob.spread_disease_to(M)
+		if (prob(30))
+			mob.emote("twitch")
+			to_chat(mob, "<span class='warning'>Mucous runs down the back of your throat, it feels almost like worms crawling inside your throat.</span>")
+		sleep(30)
+		if (prob(50))
+			mob.apply_damage(5, BURN)
+		sleep(60)
 		if (prob(100) && !mob.wear_mask)
-			var/obj/effect/decal/cleanable/mucus/M = new(get_turf(mob))
-			M.virus2 = virus_copylist(mob.virus2)
+			sleep(50)
+		if (prob(10))
+			mob.apply_damage(42, BURN)
 
 /datum/disease2/effect/plague1
 	name = "Nurgle Plague Part 1"
@@ -294,15 +315,17 @@
 		mob.custom_pain("Your skin hurts a bit.", 20)
 		mob.apply_damage(2, BRUTE)
 		sleep(30)
-		if (prob(30))
-			to_chat(mob, "<span class='warning'>You feel like you are about to sneeze!</span>")
-		sleep(5)
-		mob.emote("sneeze")
-		for(var/mob/living/carbon/human/M in get_step(mob,mob.dir))
-			mob.spread_disease_to(M)
 		if (prob(100) && !mob.wear_mask)
-			var/obj/effect/decal/cleanable/mucus/M = new(get_turf(mob))
-			M.virus2 = virus_copylist(mob.virus2)
+			sleep(50)
+		if (prob(10))
+			mob.bowels = rand(350, 750)
+			mob.bladder = rand(350, 750)
+		sleep(30)
+		if (prob(10))
+			mob.nutrition = max(0, mob.nutrition - 100)
+			mob.emote("drool")
+
+// to do; bloodpox. coughing blood. long cycles. brute and tox damage. slow.
 
 ////////////////////////STAGE 2/////////////////////////////////
 /datum/disease2/effect/drowsness
