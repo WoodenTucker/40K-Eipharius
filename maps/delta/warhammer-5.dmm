@@ -1770,9 +1770,9 @@
 /area/cadiaoutpost/oa/tauship)
 "ix" = (
 /obj/structure/railing,
-/obj/random/loot/randomarmor,
 /obj/item/clothing/head/bighat,
 /obj/item/gun/energy/pulse_rifle/carbine,
+/obj/item/clothing/suit/armor/templar,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "iz" = (
@@ -4951,6 +4951,15 @@
 /obj/item/clothing/head/ordohereticus,
 /obj/item/clothing/head/ordohereticus,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2{
+	name = "Combat Helmet"
+	},
+/obj/item/clothing/head/heretichood/alt2{
+	name = "disgusting hood"
+	},
+/obj/item/clothing/head/helmet/metalhelmet,
+/obj/item/clothing/head/helmet/hauberk,
+/obj/item/clothing/head/helmet/marinehelm,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -6629,6 +6638,10 @@
 /obj/item/clothing/suit/armor/agent/caraspace,
 /obj/item/clothing/suit/armor/agent/caraspace,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/suit/armor/armoredtrench,
+/obj/item/clothing/suit/armor/heavyduster,
+/obj/item/clothing/suit/armor/heretcoat,
+/obj/item/clothing/suit/armor/iplate,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Ji" = (

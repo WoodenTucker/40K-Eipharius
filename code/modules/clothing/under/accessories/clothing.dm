@@ -66,6 +66,12 @@
 	icon_state = "ragged"
 	item_state = "ragged"
 
+/obj/item/clothing/accessory/goliath
+	name = "ragged cloak"
+	desc = "A heavy red cloak."
+	icon_state = "goliath"
+	item_state = "goliath"
+
 // OLD ACCESSORIES
 
 /obj/item/clothing/accessory/wcoat

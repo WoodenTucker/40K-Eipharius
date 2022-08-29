@@ -385,6 +385,14 @@
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 60, bio = 60, rad = 40)
 	sales_price = 20
 
+/obj/item/clothing/head/helmet/reconhood
+	name = "Mysterious Hood"
+	desc = "Spooky."
+	icon_state = "reconhood"
+	item_state = "reconhood"
+	armor = list(melee = 34, bullet = 24, laser = 24, energy = 35, bomb = 10, bio = 30, rad = 20)
+	sales_price = 4
+
 /obj/item/clothing/head/helmet/metalhelmet
 	name = "Metal Helmet"
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
@@ -393,10 +401,58 @@
 	armor = list(melee = 44, bullet = 24, laser = 34, energy = 35, bomb = 10, bio = 30, rad = 20)
 	sales_price = 7
 
+/obj/item/clothing/head/helmet/gangerhelm
+	name = "Metal Helmet"
+	desc = "A heavy metal ganger helmet that protects you from slashes, stabs and the occassional lasburn."
+	icon_state = "raider_combat_helmet"
+	item_state = "raider_combat_helmet"
+	armor = list(melee = 39, bullet = 29, laser = 33, energy = 35, bomb = 10, bio = 30, rad = 20)
+	sales_price = 8
+
 /obj/item/clothing/head/helmet/knighthelm
 	name = "Masterwork Helm"
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "knighthelm"
 	item_state = "knighthelm"
-	armor = list(melee = 50, bullet = 28, laser = 38, energy = 35, bomb = 20, bio = 30, rad = 20)
+	armor = list(melee = 50, bullet = 31, laser = 38, energy = 35, bomb = 20, bio = 30, rad = 20)
 	sales_price = 9
+
+/obj/item/clothing/head/helmet/dragon
+	name = "Drake Helm"
+	desc = "A heavy bone helmet forged from the carcass of a giant reptilian native to Samara."
+	icon_state = "dragon"
+	item_state = "dragon"
+	armor = list(melee = 45, bullet = 25, laser = 25, energy = 35, bomb = 20, bio = 30, rad = 20)
+	sales_price = 9
+
+/obj/item/clothing/head/helmet/metalvisor
+	name = "Metal Visor"
+	desc = "A heavy metal visor for protecting your face."
+	icon_state = "leglad"
+	item_state = "leglad"
+	armor = list(melee = 40, bullet = 33, laser = 38, energy = 35, bomb = 20, bio = 30, rad = 20)
+	sales_price = 9
+
+/obj/item/clothing/head/helmet/stalkerhelm
+	name = "Stalker Helmet"
+	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
+	icon_state = "ranger_oldup"
+	item_state = "ranger_oldup"
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 11
+
+/obj/item/clothing/head/helmet/stalkerhelm2
+	name = "Stalker Helmet"
+	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
+	icon_state = "ranger1"
+	item_state = "ranger1"
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	sales_price = 11
+
+/obj/item/clothing/head/helmet/heavyflak
+	name = "Heavy Flak Helmet"
+	desc = "An old flak helmet, custom fitted with a filtration mask and armored exterior."
+	icon_state = "doom"
+	item_state = "doom"
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 40, bio = 50, rad = 30)
+	sales_price = 10
