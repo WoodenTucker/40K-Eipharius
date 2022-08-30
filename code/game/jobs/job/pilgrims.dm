@@ -149,6 +149,7 @@ Pilgrim Fate System
 			U.add_stats(rand(8,16), rand(8,16), rand(10,14), rand (12,16)) //
 			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/musician, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/musichat, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
