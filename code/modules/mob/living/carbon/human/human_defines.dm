@@ -131,4 +131,4 @@
 	var/vice //For a characters selected vice
 	var/viceneed = 0 //tracks vice need amount
 	var/time_alive = 0 //for tracking played time
-	var/messageTimer = 0
+	var/messageTimer = 0 //species based regen in life

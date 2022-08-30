@@ -19,6 +19,8 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.witchblood()
+		H.stat = UNCONSCIOUS
+		H.sleeping = 500
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
@@ -62,6 +64,9 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'>Your home world was destroyed in an Ork waaaaaagh, you managed to escape before the planet was destroyed. On your home world, you were a navigator, born with an innate gift for pathfinding.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Penitent")
 			U.add_stats(rand(15,17), rand(13,15), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(2,6),rand(1,1),rand(1,1),rand(1,2)) //melee, ranged, med, eng, surgery
@@ -72,6 +77,9 @@ Pilgrim Fate System
 			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, forced to tour the galaxy and toil until death in hopes of one day redeeming yourself. In your youth, you were an unknowing daemon-worshipper. Years of torment and re-education by the Inquisition allowed you this one chance at redemption. Labour endlessly in His name.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Bounty Hunter")
 			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (8,12)) //veteran hunter
 			U.add_skills(rand(6,8),rand(2,7),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
@@ -86,6 +94,9 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a Sergeant in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Merchant")
 			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(2,8),rand(1,4),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
@@ -99,6 +110,9 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the village and the outpost to organize trade and enrich yourself.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Musician")
 			U.add_stats(rand(8,16), rand(8,16), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(1,8),rand(1,4),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
@@ -111,6 +125,9 @@ Pilgrim Fate System
 
 			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Miner")
 			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(1,5),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
@@ -123,6 +140,9 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Stalker")
 			U.add_stats(rand(12,15), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
@@ -138,6 +158,9 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Scum")
 			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(1,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
@@ -154,6 +177,9 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme you once again find yourself on a new world. You'll do whatever it takes for a throne or two. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Disgraced Medicae")
 			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(1,6),rand(3,5),rand(1,2),rand(3,5)) //melee, ranged, med, eng, surgery
@@ -175,6 +201,9 @@ Pilgrim Fate System
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
 
 
@@ -317,7 +346,7 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
 		H.witchblood()
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
 
 
 
