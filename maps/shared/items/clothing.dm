@@ -50,6 +50,34 @@
 	item_state = "siege_helmet"
 	armor = list(melee = 50, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
 
+/obj/item/clothing/head/helmet/newopen
+	name = "helmet"
+	desc = "Better than a baseball cap. But not by much."
+	icon_state = "newopen"
+	item_state = "newopen"
+	armor = list(melee = 50, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/combat
+	name = "combat helmet"
+	desc = "Better than a baseball cap. But not by much."
+	icon_state = "combat"
+	item_state = "combat"
+	armor = list(melee = 60, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/hero
+	name = "closed helmet"
+	desc = "Better than a baseball cap. But not by much."
+	icon_state = "hero0"
+	item_state = "hero0"
+	armor = list(melee = 70, bullet = 25, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+
+/obj/item/clothing/head/helmet/zealot
+	name = "closed helmet"
+	desc = "Mainly made for melee protection."
+	icon_state = "zealot"
+	item_state = "zealot"
+	armor = list(melee = 70, bullet = 30, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 0)
+
 /obj/item/clothing/under/syndicate/soldier
 	name = "underclothing"
 	desc = "Some old garmets. Fit for a soldier."

@@ -83,7 +83,22 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
-		
+
+	src.verbs += list(
+		/mob/living/carbon/human/proc/skitaloyal,
+		/mob/living/carbon/human/proc/skitadevotees,
+		/mob/living/carbon/human/proc/skitaexterminate,
+		/mob/living/carbon/human/proc/skitaforgeworld,
+		/mob/living/carbon/human/proc/skitahailomnissiah,
+		/mob/living/carbon/human/proc/skitaletminions,
+		/mob/living/carbon/human/proc/skitamachinemercy,
+		/mob/living/carbon/human/proc/skitamachinestrong,
+		/mob/living/carbon/human/proc/skitamanmachine,
+		/mob/living/carbon/human/proc/skitaskitarii,
+		/mob/living/carbon/human/proc/skitayourpurpose,
+		/mob/living/carbon/human/proc/skitataskcompl,
+		/mob/living/carbon/human/proc/skitaorganic)
+
 	var/skitclass = input("Select a Class","Class Selection") as null|anything in list("Skitarii Ranger")
 	switch(skitclass)
 		if("Skitarii Ranger")

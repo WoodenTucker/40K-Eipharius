@@ -18,11 +18,15 @@
 /mob/living/carbon/human/proc/draw_rune()
 	set category = "IC"
 	set name = "Draw Rune"
-
-	visible_message("[src] starts drawing a strange shape on the floor.")
-	if(do_after(src, 3 SECONDS))
-		var/datum/heretic_deity/deity = GOD(mind.special_role)
-		new deity.rune_type(get_turf(src))
+	if(isdrawing == 0)
+		isdrawing = 1
+		visible_message("[src] starts drawing a strange shape on the floor.")
+		if(do_after(src, 3 SECONDS))
+			var/datum/heretic_deity/deity = GOD(mind.special_role)
+			new deity.rune_type(get_turf(src))
+			isdrawing = 0
+		else
+			isdrawing = 0
 
 /*
 Most blessings and curses should be permanent.

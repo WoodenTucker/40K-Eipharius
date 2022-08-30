@@ -177,7 +177,7 @@
 	armor_penetration = 10
 
 /obj/item/projectile/bullet/pistol/ap
-	damage = 38 
+	damage = 38
 	fire_sound = "gunshot"
 	armor_penetration = 20
 
@@ -238,11 +238,11 @@
 	damage = 60 //.50AE
 	armor_penetration = 0
 
-/obj/item/projectile/bullet/pistol/strong/revolver 
-	damage = 44 
+/obj/item/projectile/bullet/pistol/strong/revolver
+	damage = 44
 	armor_penetration = 15
 
-/obj/item/projectile/bullet/pistol/strong/revolver/ap 
+/obj/item/projectile/bullet/pistol/strong/revolver/ap
 	damage = 48
 	armor_penetration = 30
 
@@ -551,13 +551,13 @@
 	penetration_modifier = 1.4
 
 
-	
+
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 180
 	damage_type = BURN
-	penetration_modifier = 2 
+	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -568,7 +568,7 @@
 
 /obj/item/projectile/bullet/rifle/shuriken/catapult
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
-	icon_state = "shot"
+	icon_state = "ion"
 	damage = 65
 	damage_type = BRUTE
 	armor_penetration = 35
@@ -576,14 +576,14 @@
 
 /obj/item/projectile/bullet/rifle/shuriken/pistol
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
-	icon_state = "shot"
+	icon_state = "ion"
 	damage = 45
 	damage_type = BRUTE
 	armor_penetration = 20
 	penetration_modifier = 2
 /obj/item/projectile/bullet/rifle/galvanic
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "shot"
+	icon_state = "ion"
 	damage = 80
 	damage_type = BRUTE
 	armor_penetration = 60
@@ -591,7 +591,7 @@
 
 /obj/item/projectile/bullet/rifle/galvanic/fire
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "shot"
+	icon_state = "ion"
 	damage = 40
 	damage_type = BRUTE
 	armor_penetration = 60
