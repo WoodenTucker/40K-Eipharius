@@ -168,12 +168,12 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	belt = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/galvanic/rifle
+	suit_store = null
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1, /obj/item/ammo_magazine/galvanic = 4,)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 /*
 /datum/job/atmos
