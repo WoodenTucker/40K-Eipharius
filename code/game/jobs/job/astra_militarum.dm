@@ -191,6 +191,7 @@
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 
+// snipings a good job mate
 /datum/job/ig/guardsman/sniper
 	title = "Imperial Guard Sniper"
 	total_positions = 1
@@ -206,7 +207,7 @@
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
-		"Krieg Marksmen" = /decl/hierarchy/outfit/job/sniper/krieg,
+		"Krieg Marksman" = /decl/hierarchy/outfit/job/sniper/krieg,
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -228,8 +229,8 @@
 		to_chat(H, "<span class='notice'><b><font size=3> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
 
 		switch(title)
-			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksmen")
-				if(title == "Krieg Marksmen")
+			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
+				if(title == "Krieg Marksman")
 					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
 				if(title == "Valhallan Scout Sniper")
 					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
