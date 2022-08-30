@@ -475,9 +475,9 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer
-	name = "Enforcer Patrol Armor - Medium"
-	desc = "The flak armour worn by a Magistratum Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
+/obj/item/clothing/suit/armor/enforcer2// Old enforcer armor for reference.
+	name = "Patrol Armor - Enforcer"
+	desc = "The flak armor worn by a Messina Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	icon_state = "Judge"
 	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -487,20 +487,32 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/marshal
-	name = "Enforcer Patrol Armor - Marshal"
-	desc = "The flak armour worn by a Magistratum Marshal. Light and robust in the colour blue, designed to protect against direct blasts and small arms fire."
-	icon_state = "Judge"
-	item_state = "Judge"
+/obj/item/clothing/suit/armor/enforcer 
+	name = "Patrol Jacket"
+	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
+	icon_state = "towntrench_medium"
+	item_state = "towntrench_medium"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 50, bullet = 45, laser = 40, energy = 35, bomb = 55, bio = 30, rad = 20)
-	sales_price = 40
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer/arbitrator
-	name = "Enforcer Patrol Armour - Arbitrator"
+/obj/item/clothing/suit/armor/marshal
+	name = "Carapace Patrol Jacket"
+	desc = "The carapace patrol jacket worn by a Messina Marshal. Light and robust in the colour black, designed to protect against direct blasts and small arms fire."
+	icon_state = "towntrench_heavy"
+	item_state = "towntrench_heavy"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 50, bullet = 45, laser = 40, energy = 35, bomb = 55, bio = 30, rad = 20)
+	sales_price = 35
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/enforcer/arbitrator // Don't use unless for events.
+	name = "Patrol Armour - Arbitrator"
 	desc = "The flak armour worn by a Magistratum Arbitrator. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	armor = list(melee = 48, bullet = 55, laser = 60, energy = 35, bomb = 60, bio = 30, rad = 30)
 	sales_price = 30
@@ -1421,7 +1433,58 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 10 // Artistic value.
+
+/obj/item/clothing/suit/armor/tribalarmor
+	name = "Tribal Armor"
+	desc = "Ritual combat armor worn by the nomadic clansmen predating the colony."
+	icon_state = "tribal_armor"
+	item_state = "tribal_armor"
+	armor = list(melee = 44, bullet = 37, laser = 37, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 5
+
+/obj/item/clothing/suit/armor/bonearmor
+	name = "Boneplate Armor"
+	desc = "Shoddy bone armor constructed from the gigantic bones of a local beast, the materials are surprisingly durable."
+	icon_state = "bonearmor"
+	item_state = "bonearmor"
+	armor = list(melee = 44, bullet = 32, laser = 32, energy = 25, bomb = 40, bio = 30, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 7
+/obj/item/clothing/suit/armor/goliath2/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.6
+
+/obj/item/clothing/suit/armor/tduster
+	name = "Armored Duster"
+	desc = "A duster with a flak plate insert, sewn together with shafra leather."
+	icon_state = "talon_duster"
+	item_state = "talon_duster"
+	armor = list(melee = 44, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 6
+
+/obj/item/clothing/suit/armor/carapaceduster
+	name = "Armored Duster"
+	desc = "A duster with carapace plate inserts, sewn together with shafra leather."
+	icon_state = "ranger"
+	item_state = "ranger"
+	armor = list(melee = 49, bullet = 44, laser = 44, energy = 25, bomb = 38, bio = 30, rad = 30)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 10
 
 // admeme only
 
