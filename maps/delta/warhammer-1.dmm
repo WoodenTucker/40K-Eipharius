@@ -5064,14 +5064,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"tZ" = (
-/obj/effect/floor_decal/turf/carpetn00,
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/chapel)
 "ua" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/window_frame{
@@ -6322,14 +6314,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"yZ" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/chapel)
 "zb" = (
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -6759,15 +6743,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"AL" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "AM" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/item/book/manual{
@@ -7069,13 +7044,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/habs)
-"BY" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "BZ" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -7448,10 +7416,6 @@
 /obj/effect/floor_decal/turf/surgery2,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/service/chapel)
-"DE" = (
-/obj/machinery/light,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/supply/mining/eva)
 "DF" = (
 /obj/item/device/boombox,
 /turf/simulated/floor/tiled/dark,
@@ -8411,7 +8375,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/supply/mining/eva)
+/area/cadiaoutpost/oa/caves)
 "Hm" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/statue/verina{
@@ -9026,10 +8990,6 @@
 /obj/structure/table/standard,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/item/reagent_containers/food/snacks/bloodsoup,
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -43288,7 +43248,7 @@ PI
 PI
 eD
 PY
-DE
+PY
 xG
 RO
 mb
@@ -44828,7 +44788,7 @@ QB
 ZR
 Hx
 ce
-AL
+ce
 EN
 Bp
 Hx
@@ -45141,7 +45101,7 @@ PI
 PI
 SI
 qK
-tZ
+eU
 eU
 eU
 eU
@@ -46692,7 +46652,7 @@ qK
 qK
 ug
 ug
-yZ
+ug
 qK
 qK
 qK
@@ -47397,7 +47357,7 @@ jB
 ce
 ce
 ce
-BY
+ce
 ce
 ce
 ce
