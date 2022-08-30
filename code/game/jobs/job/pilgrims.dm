@@ -25,6 +25,8 @@
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
 		)
+
+
 /*
 Pilgrim Fate System
 */
@@ -53,40 +55,44 @@ Pilgrim Fate System
 
 	switch(classchoice)
 		if("Sherpa")
-			U.add_stats(rand(11,14), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(13,14), rand(12,14), rand(12,14), rand (10,12)) //
+			U.add_skills(rand(6,8),rand(6,8),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/ushanka2, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter, slot_r_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'>Your home world was destroyed in an Ork waaaaaagh, you managed to escape before the planet was destroyed. On your home world, you were a navigator, born with an innate gift for pathfinding.<b><font size=3>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
-			)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Penitent")
-			U.add_stats(rand(15,17), rand(13,15), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(2,6),rand(1,1),rand(1,1),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(15,17), rand(13,15), rand(10,14), rand (10,12)) //
+			U.add_skills(rand(7,9),rand(6,8),rand(2,4),rand(2,3),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/mervex, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/ten, slot_r_store)
 			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, forced to tour the galaxy and toil until death in hopes of one day redeeming yourself. In your youth, you were an unknowing daemon-worshipper. Years of torment and re-education by the Inquisition allowed you this one chance at redemption. Labour endlessly in His name.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
-			)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Bounty Hunter")
-			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (8,12)) //veteran hunter
-			U.add_skills(rand(6,8),rand(2,7),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (10,12)) //veteran hunter
+			U.add_skills(rand(6,8),rand(2,7),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/bountyhead, slot_head)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol/militarum/lucius, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/handcuffs, slot_in_backpack)
@@ -98,8 +104,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Merchant")
-			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(2,8),rand(1,4),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (10,15)) //
+			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/head/smokingcap, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/merchant, slot_wear_suit)
@@ -108,14 +114,13 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the village and the outpost to organize trade and enrich yourself.<b><font size=3>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
-			)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Musician")
-			U.add_stats(rand(8,16), rand(8,16), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,8),rand(1,4),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(8,16), rand(8,16), rand(10,14), rand (12,16)) //
+			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/musician, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/musichat, slot_head)
@@ -130,7 +135,7 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Miner")
 			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,5),rand(1,1),rand(1,1),rand(1,1)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
@@ -145,12 +150,12 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Stalker")
 			U.add_stats(rand(12,15), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(4,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,8),rand(5,8),rand(1,2),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/chokha, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty, slot_r_hand)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
@@ -162,8 +167,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Scum")
-			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,7),rand(1,2),rand(1,2),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (10,12)) //
+			U.add_skills(rand(6,8),rand(5,7),rand(3,5),rand(2,3),rand(3,5)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/scum, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head)
@@ -181,8 +186,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Disgraced Medicae")
-			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(1,6),rand(3,5),rand(1,2),rand(3,5)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (11,15)) //
+			U.add_skills(rand(6,8),rand(1,6),rand(7,9),rand(1,2),rand(6,9)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -204,7 +209,6 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
 
 
 
@@ -237,8 +241,8 @@ Pilgrim Fate System
 	title = "Ganger"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = 0
 	supervisors = "Yourself"
 	selection_color = "#848484"
@@ -247,7 +251,6 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -256,6 +259,7 @@ Pilgrim Fate System
 		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_random_quirk()
+		H.job = "Pilgrim"
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
 
 //loadouts below here
@@ -276,6 +280,10 @@ Pilgrim Fate System
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = /obj/item/clothing/shoes/prac_boots
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	id_type = null
+	gloves = null
+	pda_slot = null
+	l_hand = /obj/item/torch/self_lit
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/storage/box/beanbags = 1,
@@ -349,7 +357,6 @@ Pilgrim Fate System
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
 
 
-
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
 		)
@@ -358,9 +365,9 @@ Pilgrim Fate System
 	title = "Innkeeper"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 1
-	spawn_positions = 1
-	open_when_dead = 1
+	total_positions = 2
+	spawn_positions = 2
+	open_when_dead = 0
 	supervisors = "Money"
 	selection_color = "#848484"
 	access = list(access_bar,)
