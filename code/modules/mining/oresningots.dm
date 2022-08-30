@@ -270,7 +270,8 @@
 	randpixel = 8
 	w_class = ITEM_SIZE_SMALL
 	drop_sound = 'sound/items/bone_drop.ogg'
-	gemtype = 18
+	gemtype = 3
+	sales_price = 12
 
 /obj/item/newore/gems/ruby/cut
 	name = "cut ruby"

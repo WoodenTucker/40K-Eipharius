@@ -139,7 +139,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	weapon_speed_delay = 7
-	sales_price = 40
+	sales_price = 0
 
 /obj/item/melee/omnissiah_axe/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
@@ -177,17 +177,17 @@
 
 /obj/item/melee/mounted_psword
 	name = "Power Blade"
-		desc = "A retractable power weapon affixed to the hands"
-		icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-		icon_state = "powersword"
-		item_state = "powersword"
-		wielded_icon = "powersword"
-		force = 40
-		block_chance = 80
-		sharp = TRUE
-		obj_flags = OBJ_FLAG_CONDUCTIBLE
-		w_class = ITEM_SIZE_HUGE
-		weapon_speed_delay = 7
+	desc = "A retractable power weapon affixed to the hands"
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	icon_state = "powersword"
+	item_state = "powersword"
+	wielded_icon = "powersword"
+	force = 40
+	block_chance = 80
+	sharp = TRUE
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_HUGE
+	weapon_speed_delay = 7
 
 
 /obj/item/melee/mounted_psword/dropped() //since nodrop is fucked this will deal with it for now.
@@ -235,39 +235,22 @@
 	w_class = ITEM_SIZE_HUGE
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
-	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
-	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
-	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
-	loaded_icon = "ultrabolter-30"
-	unloaded_icon = "ultrabolter-e"
 	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect. 
-	loaded_icon = "autoshotty"
-	unwielded_loaded_icon = "autoshotty"
-	wielded_loaded_icon = "autoshotty-wielded"
-	unloaded_icon = "autoshotty-e"
-	unwielded_unloaded_icon = "autoshotty-e"
-	wielded_unloaded_icon = "autoshotty-wielded-e"
 	fire_delay = 2
 	burst = 1
 	move_delay = 3
 	automatic = 1
 	firemodes = list()
-	gun_type = GUN_AUTOMATIC
 	accuracy = 2
 	max_shots = 60
 	projectile_type = /obj/item/projectile/bullet/bolt/kp
 	origin_tech = null
 	self_recharge = 1
 	charge_meter = 0
+	charge_cost = 20
 
-
-/obj/item/gun/projectile/bolter/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "ultrabolter-30"
-	else
-		icon_state = "ultrabolter-e"
 
 /obj/item/gun/energy/bolter_mounted_heavy/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+

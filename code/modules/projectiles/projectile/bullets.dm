@@ -555,14 +555,14 @@
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 160
+	damage = 180
 	damage_type = BURN
 	penetration_modifier = 2 
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 240
+	damage = 260
 	damage_type = BURN
 	penetration_modifier = 2
 

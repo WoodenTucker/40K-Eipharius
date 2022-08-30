@@ -265,8 +265,8 @@
 	icon_state = "plague"
 	icon_living = "plague"
 	icon_dead = "plague_dead"
-	maxHealth = 470
-	health = 470
+	maxHealth = 670
+	health = 670
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -275,7 +275,7 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.8
+	speed = 1.7
 
 /mob/living/simple_animal/hostile/smalldemon/chaos
 	name = "Chaos Spawn"
@@ -295,4 +295,4 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.8
+	speed = 1.6

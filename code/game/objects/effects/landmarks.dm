@@ -256,7 +256,7 @@ Template:
 				/obj/item/material/sword/sabre = 1,
 				/obj/item/melee/telebaton = 1,
 				/obj/item/material/sword/cane = 1,
-				/obj/item/material/sword/machete = 1)
+				/obj/item/material/hatchet/machete = 1)
 
 /obj/random/loot/heavymelee
 	name = "Heavy Melee"
@@ -273,7 +273,7 @@ Template:
 				/obj/item/melee/telebaton = 6,
 				/obj/item/toy/katana = 3,
 				/obj/item/toy/katana/strong = 2,
-				/obj/item/material/sword/machete = 12,
+				/obj/item/material/hatchet/machete = 12,
 				/obj/item/material/sword/sabre = 4)
 
 /obj/random/loot/meleespawner
@@ -293,7 +293,7 @@ Template:
 				/obj/item/melee/telebaton = 6,
 				/obj/item/toy/katana = 3,
 				/obj/item/toy/katana/strong = 2,
-				/obj/item/material/sword/machete = 12,
+				/obj/item/material/hatchet/machete = 12,
 				/obj/item/material/sword/sabre = 4)
 
 /obj/random/loot/lightstubber
