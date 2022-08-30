@@ -202,7 +202,7 @@ Begin Warhammer loadouts
 // Sniper
 
 /decl/hierarchy/outfit/job/sniper
-	name = OUTFIT_JOB_NAME("Cadian Longlas")
+	name = OUTFIT_JOB_NAME("Cadian Sniper")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
