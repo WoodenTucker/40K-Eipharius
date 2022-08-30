@@ -160,10 +160,7 @@
 	smg_skill = 8
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Cadian Sniper" = /decl/hierarchy/outfit/job/sharpshooter2,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
-		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sharpshooter/valhalla2,
-		"Krieg Marksman" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
 		"Catachan Flamer" = /decl/hierarchy/outfit/job/guardsman/catachan,
 
 		)

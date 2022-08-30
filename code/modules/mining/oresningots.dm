@@ -84,7 +84,7 @@
 /obj/item/newore/platniumore
 	name = "platnium ore"
 	desc = "A chunk of platnium ore, strong in conductivity. Useful for advanced ammo"
-	icon_state = "ore_platnium"
+	icon_state = "ore_platinium"
 	sales_price = 12
 
  /* _____                   _
