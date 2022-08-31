@@ -42,7 +42,7 @@
 	..()
 	backpack_overrides.Cut()
 
-/decl/hierarchy/outfit/job/science/explorer
+/decl/hierarchy/outfit/job/science/explorator
 	name = OUTFIT_JOB_NAME("Explorator")
 	head = /obj/item/clothing/head/hardhat/techpriest/magos
 	mask = /obj/item/clothing/mask/gas/techpriest/magos
