@@ -453,6 +453,11 @@
 	desc = "Holds ammo and other goodies. But not a lot of it."
 	icon_state = "chestrig"
 
+/obj/item/storage/backpack/satchel/warfare/ruststalker
+	var/can_toggle = 1
+	var/is_toggled = 1
+	canremove = FALSE
+
 /obj/item/storage/backpack/satchel/warfare/ruststalker/verb/toggleclaw()
 	set name = "Equip Power Claw"
 	set category = "Tools"
