@@ -297,7 +297,7 @@ var/global/list/sparring_attack_cache = list()
 	attack_noun = list("claw")
 	eye_attack_text = "blades"
 	eye_attack_text_victim = "daggers"
-	damage = 60
+	damage = 75
 	sharp = 1
 	attack_sound = 'sound/effects/nidslash.ogg'
 
