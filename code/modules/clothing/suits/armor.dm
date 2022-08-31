@@ -857,6 +857,39 @@ obj/item/clothing/suit/armor
 	action_button_name = "Toggle Hood"
 	hoodtype = /obj/item/clothing/head/skithood
 
+/obj/item/clothing/suit/storage/hooded/ruststalker
+	name = "Ruststalker Armored Robes"
+	desc = "Tailored and reinforced by the Adeptus Mechanicus, this strange armour is issued to Skitarii Ruststalkers. It shimmers oddly in the light, and seems to have storage pouches for skulls."
+	icon_state = "skitsuit"
+	item_state = "skitsuit"
+	canremove = 0
+	unacidable = 1
+	allowed = list(/obj/item/organ/external/head)
+	armor = list(melee = 90, bullet = 60, laser = 80, energy = 30, bomb = 60, bio = 100, rad = 100)
+	sales_price = 30
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
+	action_button_name = "Toggle Hood"
+	hoodtype = /obj/item/clothing/head/rusthood
+
+/obj/item/clothing/suit/storage/vanguard
+	name = "Vanguard Armour Plating"
+	desc = "Tailored and reinforced by the Adeptus Mechanicus, these heavy ceramite plates offer near-complete protection from attack."
+	icon_state = "heavy"
+	item_state = "heavy"
+	canremove = 0
+	unacidable = 1
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 125, bullet = 125, laser = 80, energy =125, bomb = 80, bio = 100, rad = 180) //It's ceramite plates bolted directly to their body. They're essentially a walking siege engine, at the cost of being as slow as one.
+	sales_price = 30
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+/obj/item/clothing/suit/storage/hooded/skitarii/vanguard/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 3
+
 /obj/item/clothing/suit/storage/hooded/genestealer
 	name = "tyranid chitin"
 	desc = "The hide of a Tyranid Genestealer"
