@@ -3,7 +3,7 @@
 
 /datum/cargo_entry/ammo/smg
 	name = "Autogun Magazine"
-	cost = 5
+	cost = 6
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol
 
 /datum/cargo_entry/ammo/smgap
@@ -17,34 +17,44 @@
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol/ms
 
 /datum/cargo_entry/ammo/autogrim
-	name = "GRIM Autogun Magazine"
-	cost = 6
+	name = "GRIM/Krieg Autogun Magazine"
+	cost = 7
 	item_path = /obj/item/ammo_magazine/autogrim
 
 /datum/cargo_entry/ammo/autogrimap
-	name = "AP GRIM Autogun Magazine"
+	name = "AP GRIM/Krieg Autogun Magazine"
 	cost = 13
 	item_path = /obj/item/ammo_magazine/autogrim/ap
 
 /datum/cargo_entry/ammo/autogrimms
-	name = "MS GRIM Autogun Magazine"
+	name = "MS GRIM/Krieg Autogun Magazine"
 	cost = 15
 	item_path = /obj/item/ammo_magazine/autogrim/ms
 
 /datum/cargo_entry/ammo/stubberammo
 	name = "Heavy Stubber Magazine"
-	cost = 9
+	cost = 10
 	item_path = /obj/item/ammo_magazine/box/a556/mg08
 
 /datum/cargo_entry/ammo/stubberammoap
 	name = "AP Heavy Stubber Magazine"
-	cost = 16
+	cost = 18
 	item_path = /obj/item/ammo_magazine/box/a556/mg08/ap
 
 /datum/cargo_entry/ammo/stubberammoms
 	name = "MS Heavy Stubber Magazine"
-	cost = 18
+	cost = 19
 	item_path = /obj/item/ammo_magazine/box/a556/mg08/ms
+
+/datum/cargo_entry/ammo/scipiostub
+	name = "Scipio Stub Magazine"
+	cost = 6
+	item_path = /obj/item/ammo_magazine/c45rifle/combatrifle
+
+/datum/cargo_entry/ammo/aegistub
+	name = "Aegis Stub Magazine"
+	cost = 7
+	item_path = /obj/item/ammo_magazine/a762/m14/battlerifle_mag
 
 /datum/cargo_entry/ammo/shellbox
 	name = "Shotgun Shell Box"
@@ -53,12 +63,12 @@
 
 /datum/cargo_entry/ammo/slugboxms
 	name = "Shotgun MS Box"
-	cost = 15
+	cost = 14
 	item_path = /obj/item/ammo_magazine/box/shotgun/slug/ms
 
 /datum/cargo_entry/ammo/slugbox
 	name = "Shotgun Slug Box"
-	cost = 8
+	cost = 7
 	item_path = /obj/item/ammo_magazine/box/shotgun/slug
 
 /datum/cargo_entry/ammo/riflehandful
@@ -108,22 +118,22 @@
 
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"
-	cost = 10
+	cost = 13
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine
 
 /datum/cargo_entry/ammo/boltpistolmagkp
 	name = "Penetrator Bolt Pistol Magazine"
-	cost = 18
+	cost = 20
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 
 /datum/cargo_entry/ammo/boltermag
 	name = "Bolter Magazine"
-	cost = 30
+	cost = 38
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine
 
 /datum/cargo_entry/ammo/boltermagkp
 	name = "Penetrator Bolter Magazine"
-	cost = 50
+	cost = 58
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 
 /datum/cargo_entry/ammo/lasmag

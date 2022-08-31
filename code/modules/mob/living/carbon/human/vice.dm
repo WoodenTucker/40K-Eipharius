@@ -67,6 +67,17 @@
 	if(viceneed > 1000)
 		viceneed = 1000
 
+	if(viceneed >= 450 && viceneed <= 649)
+		if(prob(1))
+			to_chat(src, "<span class='badmood'>+ The all too familiar itch returns to your mind... +</span>\n")
+	else if(viceneed >= 650 && viceneed <= 849)
+		if(prob(2))
+			to_chat(src, "<span class='badmood'>+ It's getting harder to ignore... +</span>\n")
+	else if(viceneed >= 650 && viceneed <= 999)
+		if(prob(3))
+			to_chat(src, "<span class='badmood'>+ I need to feed my vice... +</span>\n")
+
+
 
 	if(viceneed >= 1000)
 		switch(vice)

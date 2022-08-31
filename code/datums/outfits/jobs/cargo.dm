@@ -19,7 +19,7 @@
 /decl/hierarchy/outfit/job/cargo/janissary
 	name = OUTFIT_JOB_NAME("Vessorine Janissary")
 	uniform = /obj/item/clothing/under/rank/cargotech
-	suit = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace
+	suit = /obj/item/clothing/suit/armor/vessor
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	id_type = /obj/item/card/id/shared/cargo
 	neck = /obj/item/reagent_containers/food/drinks/canteen

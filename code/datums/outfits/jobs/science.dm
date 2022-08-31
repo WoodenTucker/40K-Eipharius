@@ -41,3 +41,23 @@
 /decl/hierarchy/outfit/job/science/roboticist/New()
 	..()
 	backpack_overrides.Cut()
+
+/decl/hierarchy/outfit/job/science/explorator
+	name = OUTFIT_JOB_NAME("Explorator")
+	head = /obj/item/clothing/head/hardhat/techpriest/magos
+	mask = /obj/item/clothing/mask/gas/techpriest/magos
+	glasses = /obj/item/clothing/glasses/science/magos
+	belt = /obj/item/storage/belt/utility/full
+	suit = /obj/item/clothing/suit/storage/hazardvest/magos
+	shoes = /obj/item/clothing/shoes/jackboots/technoboots
+	uniform = /obj/item/clothing/under/rank/chief_engineer
+	l_ear = /obj/item/device/radio/headset/heads/ce
+	l_hand = /obj/item/gun/energy/phosphor
+	gloves = /obj/item/clothing/gloves/thick/techpriest
+	id_type = /obj/item/card/id/engineering/head
+	pda_type = null
+	pda_slot = null
+	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
+	backpack_contents = list(/obj/item/stack/thrones/five = 1,
+		/obj/item/stack/thrones2/five = 8,
+		/obj/item/stack/thrones3/five = 4,) //Money to buy equipment.

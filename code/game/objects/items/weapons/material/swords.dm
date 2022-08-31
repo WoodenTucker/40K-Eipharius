@@ -137,6 +137,7 @@
 	block_chance = 45
 	weapon_speed_delay = 7
 	sales_price = 20
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 
 
 /obj/item/material/sword/machete
@@ -144,6 +145,7 @@
 	desc = "Both a vine removal tool, and a limb removal tool. Use it on vines, and also people who annoy you."
 	icon_state = "machete"
 	item_state = "machete"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	force = 25
@@ -155,6 +157,7 @@
 	desc = "A sword possessed by an entity of the warp. Once used by a great noble of imperium before it was corrupted. How far it has fallen..."
 	icon_state = "Scorpion_CS"
 	item_state = "Scorpion_CS"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14

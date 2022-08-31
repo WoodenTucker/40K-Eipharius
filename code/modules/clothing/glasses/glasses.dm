@@ -165,6 +165,11 @@
 	electric = 1
 	sales_price = 40
 
+/obj/item/clothing/glasses/blacksun/skitarii
+	name = "skitarii augments"
+	desc = "A series of augments used to replace the eyes of Skitarii with superior, mechanical optics."
+	canremove = 0
+
 /obj/item/clothing/glasses/tacgoggles
 	name = "tactical goggles"
 	desc = "Self-polarizing goggles with light amplification for dark environments. Made from durable synthetic."
@@ -565,7 +570,7 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	sales_price = 25
 
-/obj/item/clothing/glasses/cadiangoggles/New()
+/obj/item/clothing/glasses/cadiangoggles/elite/New()
 	..()
 	overlay = GLOB.global_hud.nvg
 

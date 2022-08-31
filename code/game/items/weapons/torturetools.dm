@@ -57,18 +57,18 @@
 
 				playsound(H, 'sound/effects/gore/trauma3.ogg', 40, 1, 1) //And out it goes.
 				GLOB.teeth_lost++
-				if(H.mind.special_role == "Khorne Cultist")
+				if(H.mind.special_role == "khorne")
 					if(prob(30))
 						playsound(src, 'sound/effects/quotes/cults/khorne/khorne.ogg', 100, 1, 1)
 						H.say("KHORNE WILL TEAR YOUR CORPSE EMPEROR LIMB FROM LIMB!")
-				if(H.mind.special_role == "Tzeentch Cultist")
+				if(H.mind.special_role == "tzeentch")
 					if(prob(30)) //tzeentch boys are a bit softer than khorne/nurgle lads
 						H.say("THIS IS ALL ACCORDING TO HIS PLAN!")
-				if(H.mind.special_role == "Slaanesh Cultist")
+				if(H.mind.special_role == "slaanesh")
 					H.happiness += 1 //Slaanesh boys enjoy the torture.
 					H.apply_damage(rand(-1, -3), BRUTE, O)
 					to_chat(H, "The Prince of Pleasure protects his sevants from pain. What would be excruciating is turned to pleasure.")
-				if(H.mind.special_role == "Nurgle Cultist")
+				if(H.mind.special_role == "nurgle")
 					if(prob(30))
 						playsound(src, 'sound/effects/quotes/cults/nurgle/fornurgle.ogg', 100, 1, 1)
 						H.say("FATHER NURGLE PROTECT YOUR ACOLYTE! BLIGHT THESE CORPSE-WORSHIPPPERS!")
@@ -109,7 +109,7 @@
 		playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 		C.apply_damage(rand(10,40), TOX, BP_APPENDIX)
 		to_chat(C, "<span class='warning'>[user] momentarily connects [C] to the [src], causing complete cessation of all feeling and thought.</span>")
-		if(C.mind.special_role == "Slaanesh Cultist")
+		if(C.mind.special_role == "slaanesh")
 			if(prob(90))
 				playsound(src, 'sound/effects/slanlaugh.ogg', 100, 1, 1)
 				C.say("GIVE IT BACK! I CAN'T FEEL IT ANYMORE! GIVE IT BACK!")

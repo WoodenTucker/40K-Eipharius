@@ -1349,6 +1349,7 @@
 	color = "gold";
 	armor = list("melee"=75,"bullet"=75,"laser"=65,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
 	},
+/obj/item/melee/chain/pcsword/khorneaxe,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1770,9 +1771,9 @@
 /area/cadiaoutpost/oa/tauship)
 "ix" = (
 /obj/structure/railing,
-/obj/random/loot/randomarmor,
 /obj/item/clothing/head/bighat,
 /obj/item/gun/energy/pulse_rifle/carbine,
+/obj/item/clothing/suit/armor/templar,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "iz" = (
@@ -4951,6 +4952,15 @@
 /obj/item/clothing/head/ordohereticus,
 /obj/item/clothing/head/ordohereticus,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2{
+	name = "Combat Helmet"
+	},
+/obj/item/clothing/head/heretichood/alt2{
+	name = "disgusting hood"
+	},
+/obj/item/clothing/head/helmet/metalhelmet,
+/obj/item/clothing/head/helmet/hauberk,
+/obj/item/clothing/head/helmet/marinehelm,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "zd" = (
@@ -5027,9 +5037,6 @@
 	},
 /obj/item/clothing/suit/armor/cuirass,
 /obj/item/clothing/suit/armor/salvage,
-/obj/item/clothing/suit/armor/guardsman/mercenary{
-	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
-	},
 /obj/item/clothing/suit/miner{
 	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
 	},
@@ -5575,9 +5582,6 @@
 /obj/item/clothing/suit/space/void/security{
 	armor = list("melee"=48,"bullet"=48,"laser"=45,"energy"=5,"bomb"=45,"bio"=100,"rad"=100)
 	},
-/obj/item/clothing/suit/space/void/security{
-	armor = list("melee"=48,"bullet"=48,"laser"=45,"energy"=5,"bomb"=45,"bio"=100,"rad"=100)
-	},
 /obj/item/clothing/suit/space/void/engineering/alt{
 	armor = list("melee"=38,"bullet"=30,"laser"=40,"energy"=10,"bomb"=20,"bio"=100,"rad"=100)
 	},
@@ -5592,6 +5596,13 @@
 	},
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/head/helmet/hevhelm,
+/obj/item/clothing/head/helmet/seolhelm,
+/obj/item/clothing/suit/armor/seolsuit{
+	armor = list("melee"=40,"bullet"=50,"laser"=60,"energy"=25,"bomb"=40,"bio"=100,"rad"=100);
+	name = "Salvaged Anomaly Suit"
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -6629,6 +6640,10 @@
 /obj/item/clothing/suit/armor/agent/caraspace,
 /obj/item/clothing/suit/armor/agent/caraspace,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/suit/armor/heretcoat,
+/obj/item/clothing/suit/armor/iplate,
+/obj/item/clothing/suit/armor/enforcer,
+/obj/item/clothing/suit/armor/enforcer,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Ji" = (
@@ -6917,6 +6932,7 @@
 /obj/random/loot/randomarmor,
 /obj/item/clothing/head/bighat,
 /obj/item/gun/energy/pulse_rifle/pistol,
+/obj/item/clothing/under/syndicate/tacticool,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "LK" = (
@@ -7727,6 +7743,7 @@
 /obj/random/loot/randomarmor,
 /obj/item/clothing/head/plaguedoctorhat,
 /obj/item/gun/energy/pulse_rifle/pistol,
+/obj/item/clothing/under/syndicate/tacticool,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
 "Qo" = (

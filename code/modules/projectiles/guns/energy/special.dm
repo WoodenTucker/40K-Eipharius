@@ -99,3 +99,20 @@ obj/item/gun/energy/staff/focus
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
 			projectile_type = /obj/item/projectile/forcebolt"
 	*/
+	
+/obj/item/gun/energy/phosphor
+	name = "Phosphor pistol"
+	desc = "A rare and dangerous weapon, favoured by Magos Explorators and Skitarii Alphas."
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "teslar"
+	item_state = "teslar"
+	slot_flags = SLOT_BACK|SLOT_BELT
+	force = 8
+	max_shots = 15
+	w_class = ITEM_SIZE_NORMAL
+	one_hand_penalty= 1
+	burst_delay = 2
+	move_delay = 2
+	charge_cost = 300
+	projectile_type = 	/obj/item/projectile/energy/phosphor
+	self_recharge = 1

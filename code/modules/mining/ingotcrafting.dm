@@ -312,7 +312,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "Enforcer Shotgun", "Mk. III Sniper Rifle", "Warmonger Autogun", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol", "The Chrome Stub Pistol", "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword", "Landmine") //lists all possible crafting choices
+		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "Enforcer Shotgun", "Mk. III Sniper Rifle", "Warmonger Autogun", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol",/* "The Chrome Stub Pistol",*/ "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword", "Landmine") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -999,7 +999,7 @@
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle", "Kraken penetrator bolter magazine", "Mark IV .338 Stub Rifle", "Incendiary Galvanic Rifle Ammo") //lists all possible crafting choices
+		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle", "Kraken penetrator bolter magazine", "Mark IV .338 Stub Rifle", "Incendiary Galvanic Rifle Ammo", "Radium Carbine Ammo", "Radium Pistol Ammo") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -1050,12 +1050,25 @@
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Mark IV .338 Stub Rifle)"
 			if("Incendiary Galvanic Rifle Ammo")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Mark IV .338 Stub Rifle.")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Incendiary Galvanic Rifle Ammo.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 8
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Incendiary Galvanic Rifle Ammo)"
 
+			if("Radium Carbine Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Radium Carbine Ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 9
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Radium Carbine Ammo)"
+
+			if("Radium Pistol Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Radium Pistol Ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 10
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Radium Pistol Ammo)"
 
 
 	if(isLasercutter(W))
@@ -1136,6 +1149,29 @@
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
+			if(9)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Radium Carbine Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Radium Carbine Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
+			if(10)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Radium Pistol Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Radium Pistol Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -1196,3 +1232,20 @@
 				new /obj/item/ammo_magazine/galvanic/fire(user.loc)
 				qdel(src)
 				return
+			if(9)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/radcarbine(user.loc)
+				new /obj/item/ammo_magazine/radcarbine(user.loc)
+				new /obj/item/ammo_magazine/radcarbine(user.loc)
+				qdel(src)
+				return
+			if(10)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
+				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
+				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
+				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
+				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
+				qdel(src)

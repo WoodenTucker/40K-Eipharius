@@ -579,6 +579,7 @@
 	caliber = "galvanic"
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
 	ammo_type = /obj/item/ammo_casing/galvanic
+	mag_type = MAGAZINE
 	max_ammo = 7
 	multiple_sprites = 1
 
@@ -587,3 +588,25 @@
 	name = "galvanic rifle incendiary loader"
 	desc = "An ancient design for loading galvanic rifles. This one seems to have incendiary rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/fire
+
+/obj/item/ammo_magazine/radcarbine
+	name = "Radcarbine Magazine"
+	icon_state = "LMG-mag"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "rad"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/radcarbine
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/radcarbine/radpistol
+	name = "Radpistol Magazine"
+	icon_state = "mg08"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "rad"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/radcarbine/radpistol
+	max_ammo = 10
+	multiple_sprites = 0

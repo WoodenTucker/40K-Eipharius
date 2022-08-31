@@ -1,7 +1,7 @@
 /datum/rune_recipe
 	var/name
 	var/list/ingredients = list()
-	var/product_path											// Item to spawn on completion.
+	var/product_path = list()									// Item to spawn on completion.
 	var/special = FALSE											// Execute proc instead of spawning an item.
 	var/delete_items = TRUE
 	var/finish_message = "<span style='color:#4d004d;'>The rune briefly glows.</span>"  			// Visible message on completion.

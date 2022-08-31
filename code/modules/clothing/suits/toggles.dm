@@ -187,3 +187,25 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
+
+/obj/item/clothing/head/rusthood
+	name = "ruststalker hood"
+	desc = "A shiny hood embroidered with the Adeptus Mechanicus' logo."
+	icon_state = "skithood"
+	item_state = "skithood"
+	body_parts_covered = HEAD|FACE|EYES
+	min_cold_protection_temperature = T0C - 30
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+	armor = list(melee = 80, bullet = 45, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100)
+
+/obj/item/clothing/head/vanhelm
+	name = "vanguard helmet"
+	desc = "A shiny helmet covered in Mechanicus etchings."
+	icon_state = "castellan"
+	item_state = "castellan"
+	body_parts_covered = HEAD|FACE|EYES
+	min_cold_protection_temperature = T0C - 30
+	cold_protection = HEAD
+	flags_inv = HIDEEARS | BLOCKHAIR
+	armor = list(melee = 90, bullet = 85, laser = 85, energy = 80, bomb = 80, bio = 100, rad = 160)

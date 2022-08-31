@@ -195,8 +195,8 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(2,8))
-		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3)
+		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(10,14))
+		H.add_skills(rand(6,9),rand(3,6),5,rand(6,7),6)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.witchblood()
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)

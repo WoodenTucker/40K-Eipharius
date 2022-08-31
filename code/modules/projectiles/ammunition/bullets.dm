@@ -396,15 +396,32 @@
 /obj/item/ammo_casing/galvanic
 	name = "galvanic rifle casings"
 	desc = "A galvanic rifle casing"
-	icon_state = "null"
-	spent_icon = "null"
+	icon_state = "gshell"
+	spent_icon = "gshell-spent"
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic
 
 /obj/item/ammo_casing/galvanic/fire
 	name = "galvanic rifle incendiary casings"
 	desc = "A galvanic rifle incendiary casing"
-	icon_state = "null"
-	spent_icon = "null"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/fire
+
+
+/obj/item/ammo_casing/radcarbine
+	name = "radcarbine casings"
+	desc = "A radcarbine casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "rad"
+	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine
+
+/obj/item/ammo_casing/radcarbine/radpistol
+	name = "radcarbine pistol casings"
+	desc = "A radcarbine pistol casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "rad"
+	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol

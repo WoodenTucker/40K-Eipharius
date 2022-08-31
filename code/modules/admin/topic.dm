@@ -1282,6 +1282,12 @@
 	else if(href_list["adminchecklaws"])
 		output_ai_laws()
 
+	else if(href_list["adminfoig"])
+
+		var/mob/M = locate(href_list["adminfoig"])
+		to_chat(M, "<span class='badmood'>+ Find out in-game! +</span>\n")
+		sound_to(M, 'sound/hallucinations/look_up1.ogg')
+
 	else if(href_list["adminmoreinfo"])
 		var/mob/M = locate(href_list["adminmoreinfo"])
 		if(!ismob(M))

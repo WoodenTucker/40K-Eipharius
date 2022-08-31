@@ -40,7 +40,7 @@
 
 /decl/hierarchy/outfit/job/service/gardener
 	name = OUTFIT_JOB_NAME("Farmer")
-	uniform = /obj/item/clothing/under/rank/hydroponics
+	uniform = /obj/item/clothing/under/rank/victorian
 	suit = /obj/item/clothing/suit/farmer
 	gloves = /obj/item/clothing/gloves/thick/botany
 	r_pocket = /obj/item/device/analyzer/plant_analyzer
