@@ -283,6 +283,27 @@
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
 
+/obj/item/clothing/shoes/jackboots/skitshoes/ruststalker //walking sounds only play with shoes and I was losing my mind not having them
+	name = "Ruststalker feet"
+	desc = "Augmented for speed and power"
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	siemens_coefficient = 1
+	armor = list(melee = 80, bullet = 30, laser = 30, energy = 50, bomb = 20, bio = 0, rad = 100) //Slightly changed defensive values.
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
+	canremove = FALSE
+
+/obj/item/clothing/shoes/jackboots/skitshoes/vanguard //walking sounds only play with shoes and I was losing my mind not having them
+	name = "Vanguard feet"
+	desc = "Augmented for speed and power"
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	siemens_coefficient = 1
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
+	canremove = FALSE
 
 /obj/item/clothing/shoes/jackboots/technoboots
 	name = "Mars Pattern Advanced Boots"
