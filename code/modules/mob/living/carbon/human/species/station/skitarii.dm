@@ -124,7 +124,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/ruststalker, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest/ruststalker, slot_back)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/ruststalker, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/ruststalker, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 
