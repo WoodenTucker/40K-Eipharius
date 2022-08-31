@@ -1466,3 +1466,58 @@
 	firemodes = list()
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
+
+
+/obj/item/gun/projectile/automatic/radcarbine
+	name = "Radium Rifle"
+	desc = "A deadly and highly dangerous personal weapon that are used exclusively by the forces of the Skitarii Legions of the Adeptus Mechanicus. It fires highly radioactive rounds."
+	icon_state = "emitter_carbine"
+	item_state = "emitter_carbine"
+	wielded_item_state = "emitter_carbine"
+	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
+	loaded_icon = "emitter_carbine"
+	unwielded_loaded_icon = "emitter_carbine"
+	wielded_loaded_icon = "emitter_carbine"
+	unloaded_icon = "emitter_carbine_e"
+	unwielded_unloaded_icon = "emitter_carbine_e"
+	wielded_unloaded_icon = "emitter_carbine_e"
+	caliber = "rad"
+	max_shells = 30
+	str_requirement = 18
+	move_delay= 2
+	one_hand_penalty = 4
+	accuracy = 1 //Good gun, well maintained by the Mechanicus
+	fire_delay = 2.5
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/radcarbine
+	allowed_magazines = list(/obj/item/ammo_magazine/radcarbine)
+	firemodes = list()
+	w_class = ITEM_SIZE_HUGE
+	gun_type = GUN_SEMIAUTO
+
+/obj/item/gun/projectile/automatic/radcarbine/radpistol
+	name = "Radium Pistol"
+	desc = "A sidearm favoured by Skitarii Vanguards and Ranger Alphas."
+	icon_state = "dueling_pistol"
+	item_state = "dueling_pistol"
+	wielded_item_state = "dueling_pistol"
+	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
+	loaded_icon = "dueling_pistol"
+	unwielded_loaded_icon = "dueling_pistol"
+	wielded_loaded_icon = "dueling_pistol"
+	unloaded_icon = "dueling_pistol_e"
+	unwielded_unloaded_icon = "dueling_pistol_e"
+	wielded_unloaded_icon = "dueling_pistol_e"
+	caliber = "rad"
+	max_shells = 10
+	str_requirement = 16
+	move_delay= 2
+	one_hand_penalty = 1
+	accuracy = 0 //Good gun, well maintained by the Mechanicus
+	fire_delay = 1.5
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/radcarbine/radpistol
+	allowed_magazines = list(/obj/item/ammo_magazine/radcarbine/radpistol)
+	firemodes = list()
+	w_class = ITEM_SIZE_HUGE
+	gun_type = GUN_SEMIAUTO
