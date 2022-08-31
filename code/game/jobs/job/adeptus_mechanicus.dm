@@ -58,8 +58,8 @@
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "You obey the Magos Dominus and secondarily, the Magos Biologis"
 	selection_color = "#B2A15F"
 	economic_modifier = 5
@@ -157,6 +157,45 @@
 	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
 */
 
+
+/datum/job/explorer
+	title = "Magos Explorator"
+	department = "Science"
+	department_flag = SCI|ENG
+	total_positions = 1
+	spawn_positions = 1
+	minimal_player_age = 7
+	open_when_dead = 0
+	supervisors = "the Adeptus Mechanicus and the Omnissiah."
+	selection_color = "#967096"
+	economic_modifier = 7
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_sec_doors, access_robotics, access_medical, access_morgue,  access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
+	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_RC_announce, access_tcomsat, access_ai_upload, access_robotics, access_research,)
+	outfit_type = /decl/hierarchy/outfit/job/science/explorator
+	auto_rifle_skill = 8 //Explorator for you.
+	semi_rifle_skill = 8
+	sniper_skill = 8 
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Explorator [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
+		H.add_stats(rand(15,18), rand(15,18), rand(18,20), rand(20,30)) //just as modified as the magos, if not more.
+		H.add_skills(rand(8,11),rand(7,9),rand(8,10),rand(9,10),rand(8,10)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
+		H.warfare_faction = IMPERIUM
+		H.bladder = -INFINITY
+		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+		H.thirst = INFINITY
+		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Explorator, your primary duty is to explore the planet and locate relics and research items, you are not forced to listen to the Magos Dominus, but be aware, he holds much more power in the outpost than you.</font></b></span>")
 
 
 //Skitarii
