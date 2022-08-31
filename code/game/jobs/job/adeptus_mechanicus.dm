@@ -175,6 +175,19 @@
 	pda_slot = null
 	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
+/decl/hierarchy/outfit/job/skitarii/basic
+	uniform = /obj/item/clothing/under/rank/skitarii
+	suit = null
+	shoes = null
+	neck = null
+	back = null
+	l_ear = null
+	belt = null
+	suit_store = null
+	l_pocket = null
+	id = null
+	id_slot = null
+
 /*
 /datum/job/atmos
 	title = "Atmospheric Technician"
