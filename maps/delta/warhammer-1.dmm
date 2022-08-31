@@ -9497,6 +9497,13 @@
 /obj/effect/floor_decal/turf/basalt9,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"Mu" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "My" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/item/card/id/silver{
@@ -9764,7 +9771,6 @@
 /obj/machinery/door/airlock/gold{
 	color = "grey"
 	},
-/obj/effect/landmark/animal/zygote1,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -21648,7 +21654,7 @@ zb
 zo
 Eu
 Eu
-Eu
+Mu
 GW
 Eu
 Eu
@@ -23693,9 +23699,9 @@ zb
 zb
 zb
 md
+zo
 zb
-zb
-zb
+zo
 zb
 zb
 md
@@ -23951,7 +23957,7 @@ zb
 zb
 md
 zb
-zb
+zo
 zb
 zb
 zb
