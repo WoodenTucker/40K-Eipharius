@@ -89,7 +89,7 @@
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
-	
+
 /* //"Duplicate" of noble boots
 /obj/item/clothing/shoes/commandboots
 	name = "boots of command"
@@ -97,7 +97,7 @@
 	icon_state = "hopboots"
 	item_state = "hopboots"
 	species_restricted = null
-*/ 
+*/
 
 /obj/item/clothing/shoes/vigilante
 	name = "shining shoes"
@@ -115,6 +115,26 @@
 	icon_state = "prac_boots"
 	item_state = "prac_boots"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 100, rad = 20)
+	can_hold_knife = 1
+	var/obj/item/material/sword/combat_knife/knife = null
+
+/obj/item/clothing/shoes/prac_boots/attackby(obj/item/I, mob/user)
+	. = ..()
+	if(istype(I, /obj/item/material/sword/combat_knife))
+		if(knife)//We've already got a knife in there, no need for another.
+			return
+		user.drop_from_inventory(I)
+		I.forceMove(src)
+		knife = I
+		update_icon()
+		playsound(src, 'sound/items/holster_knife.ogg', 50, 0, -1)
+/obj/item/clothing/shoes/prac_boots/attack_hand(mob/living/user)
+	if(knife)
+		user.put_in_active_hand(knife)
+		knife = null
+		update_icon()
+		return
+	..()
 // Tau
 
 /obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
@@ -326,7 +346,7 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	item_flags = ITEM_FLAG_NOSLIP
-	
+
 /obj/item/clothing/shoes/jackboots/inquisitor/acolyte
 	name = "Reinforced Combat Boots"
 	desc = "Reinforced Mars Pattern Combat Boots."

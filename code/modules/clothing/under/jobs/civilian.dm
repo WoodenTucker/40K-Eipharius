@@ -318,50 +318,45 @@
 
 
 /obj/item/clothing/under/rank/victorian
-	name = "victorian uniform"
-	desc = "Casual."
+	name = "casual uniform"
+	desc = "Casual..."
 //	has_sensor = SUIT_NO_SENSORS
-	icon_state = "victorianvest"
-	item_state = "victorianvest"
-	worn_state = "victorianvest"
+	icon_state = "vest"
+	item_state = "vest"
+	worn_state = "vest"
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/victorian/blred
-	icon_state = "victorianblred"
-	item_state = "victorianblred"
-	worn_state = "victorianblred"
+	icon_state = "vestblred"
+	item_state = "vestblred"
+	worn_state = "vestblred"
 
-/obj/item/clothing/under/rank/victorian/redvest
-	icon_state = "victorianredvest"
-	item_state = "victorianredvest"
-	worn_state = "victorianredvest"
+/obj/item/clothing/under/rank/victorian/redbl
+	icon_state = "vestredbl"
+	item_state = "vestredbl"
+	worn_state = "vestredbl"
 
-/obj/item/clothing/under/rank/victorian/vest
-	icon_state = "victorianvest"
-	item_state = "victorianvest"
-	worn_state = "victorianvest"
+/obj/item/clothing/under/rank/victorian/grey
+	icon_state = "vestg"
+	item_state = "vestg"
+	worn_state = "vestg"
 
-/obj/item/clothing/under/rank/victorian/vest/grey
-	icon_state = "victorianvestg"
-	item_state = "victorianvestg"
-	worn_state = "victorianvestg"
-
-/obj/item/clothing/under/rank/victorian/vest/black
-	icon_state = "victorianvestb"
-	item_state = "victorianvestb"
-	worn_state = "victorianvestb"
+/obj/item/clothing/under/rank/victorian/black
+	icon_state = "vestb"
+	item_state = "vestb"
+	worn_state = "vestb"
 
 /obj/item/clothing/under/rank/victorian/blackdress
-	icon_state = "victorianblackdress"
-	name = "victorian dress"
-	desc = "Casual and expensive."
-	item_state = "victorianblackdress"
-	worn_state = "victorianblackdress"
+	icon_state = "blackdress"
+	name = "fancy dress"
+	desc = "Casual and fancy"
+	item_state = "blackdress"
+	worn_state = "blackdress"
 
 /obj/item/clothing/under/rank/victorian/reddress
-	icon_state = "victorianreddress"
-	name = "victorian dress"
-	desc = "Casual and expensive"
-	item_state = "victorianreddress"
-	worn_state = "victorianreddress"
+	icon_state = "reddress"
+	name = "fancy dress"
+	desc = "Casual and fancy"
+	item_state = "reddress"
+	worn_state = "reddress"
