@@ -1469,7 +1469,7 @@
 
 
 /obj/item/gun/projectile/automatic/radcarbine
-	name = "Radium Rifle"
+	name = "Radium Carbine"
 	desc = "A deadly and highly dangerous personal weapon that are used exclusively by the forces of the Skitarii Legions of the Adeptus Mechanicus. It fires highly radioactive rounds."
 	icon_state = "emitter_carbine"
 	item_state = "emitter_carbine"
