@@ -284,3 +284,22 @@
 	//This has been made a simple loop, for the most part flamer_fire_act() just does return, but for specific items it'll cause other effects.
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
+	
+		/obj/item/projectile/energy/phosphor
+	name = "phosphor bolt"
+	icon_state = "pulse1"
+	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
+	damage = 25
+	agony = 200
+	range =  15
+
+/obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
+			H.adjust_fire_stacks(50)
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
+		if(H.isChild())
+			var/mob/living/carbon/human/F = firer
+			F.unlock_achievement(new/datum/achievement/child_fire())
