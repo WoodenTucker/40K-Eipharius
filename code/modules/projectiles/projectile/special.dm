@@ -285,7 +285,7 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 	
-		/obj/item/projectile/energy/phosphor
+/obj/item/projectile/energy/phosphor
 	name = "phosphor bolt"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
