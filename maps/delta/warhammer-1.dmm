@@ -9998,6 +9998,8 @@
 /obj/item/clothing/suit/sisterofbattle/training,
 /obj/item/clothing/suit/armor/templar,
 /obj/item/clothing/suit/armor/knighthosp,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/item/clothing/accessory/bishopcloak,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "OE" = (
