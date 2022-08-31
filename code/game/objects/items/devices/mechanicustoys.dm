@@ -161,10 +161,17 @@
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 
-/obj/item/device/neuraladapter/attack(mob/living/simple_animal/vatgrown/C, mob/living/carbon/human/user)
-	if(istype(C))
+/obj/item/device/neuraladapter/attack(mob/living/simple_animal/vatgrown/B, mob/living/carbon/human/skitarii/C, mob/living/carbon/human/user)
+	if(istype(B))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		visible_message("<span class='notice'>The base of [C]'s skull is suddenly pierced with the neural adapter by [user], getting their mind programmed and indoctrinated!</span>")
+	if(istype(C))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src, 'sound/effects/adapter.ogg', 100, 1, 1)
+		visible_message("<span class='notice'>The base of [C]'s skull is suddenly pierced with the neural adapter by [user], performing neural stimulation procedure! It will help skitarii to awake faster, but not sure.</span>")
+		C.request_player() // https://www.youtube.com/watch?v=dnHQn_mpDpk
+	else
+		return
 	..()
 
 /obj/item/device/neuraladapter/dropped() //since nodrop is fucked this will deal with it for now.
