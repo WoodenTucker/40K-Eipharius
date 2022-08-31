@@ -1392,6 +1392,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"fy" = (
+/obj/effect/floor_decal/turf/basalt9,
+/mob/living/simple_animal/hostile/smalldemon/chaos,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/dark)
 "fz" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -8969,6 +8974,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
+"Kj" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "Kl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/iv_drip,
@@ -9497,13 +9509,6 @@
 /obj/effect/floor_decal/turf/basalt9,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
-"Mu" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/effect/landmark/animal/zygote1,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
 "My" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/item/card/id/silver{
@@ -9713,6 +9718,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Nf" = (
 /obj/effect/floor_decal/turf/basalt0,
+/obj/effect/floor_decal/turf/basalt9,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
@@ -21654,7 +21660,7 @@ zb
 zo
 Eu
 Eu
-Mu
+Kj
 GW
 Eu
 Eu
@@ -22454,7 +22460,7 @@ zZ
 ma
 rT
 CP
-Ms
+Nf
 ma
 zZ
 VO
@@ -22966,7 +22972,7 @@ zm
 zm
 zZ
 ma
-mI
+fy
 CP
 mI
 ma
@@ -27592,7 +27598,7 @@ VO
 zZ
 CP
 CP
-iU
+CP
 wX
 CP
 CP
@@ -27849,7 +27855,7 @@ VO
 zZ
 CP
 CP
-CP
+iU
 CP
 CP
 CP
@@ -28104,7 +28110,7 @@ zm
 zm
 VO
 zZ
-Nf
+CP
 CP
 CP
 CP
