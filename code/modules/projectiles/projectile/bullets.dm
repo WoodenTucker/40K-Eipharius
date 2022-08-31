@@ -607,3 +607,29 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
+
+/obj/item/projectile/bullet/rifle/radcarbine
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 40
+	damage_type = TOX //Initial poisoning effect
+	armor_penetration = 75 //Dense, fast-moving round.
+	penetration_modifier = 2
+
+/obj/item/projectile/bullet/rifle/radcarbine/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.apply_effect((rand(100,160)),IRRADIATE,0)
+
+/obj/item/projectile/bullet/rifle/radcarbine/radpistol
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "shot"
+	damage = 30
+	damage_type = TOX //Initial poisoning effect
+	armor_penetration = 50 //Dense, fast-moving round.
+	penetration_modifier = 2
+
+/obj/item/projectile/bullet/rifle/radcarbine/radpistol/on_hit(var/atom/target, var/blocked = 0)
+	if(istype(target, /mob/living/carbon/human))
+		var/mob/living/carbon/human/M = target
+		M.apply_effect((rand(80,140)),IRRADIATE,0)
