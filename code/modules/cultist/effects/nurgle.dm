@@ -25,6 +25,7 @@
 /datum/heretic_effect/zombie
 	name = "Resurrection"
 	unique = TRUE
+	add_message = "<span class='notice'>You feel your body begin to rot before your eyes.</span>"
 
 /datum/heretic_effect/zombie/add_effect(var/mob/living/carbon/human/user)
 	for(var/obj/item/organ/org in user.internal_organs)
