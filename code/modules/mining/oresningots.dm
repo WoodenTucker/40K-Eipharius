@@ -81,10 +81,10 @@
 	icon_state = "ore_titanium"
 	sales_price = 10
 
-/obj/item/newore/platniumore
-	name = "platnium ore"
+/obj/item/newore/platinum
+	name = "platinum ore"
 	desc = "A chunk of platnium ore, strong in conductivity. Useful for advanced ammo"
-	icon_state = "ore_platinium"
+	icon_state = "ore_platinum"
 	sales_price = 12
 
  /* _____                   _
@@ -178,8 +178,8 @@
 	drop_sound = 'sound/items/metaldrop.ogg'
 	sales_price = 10
 
-/obj/item/ingots/platniumingot
-	name = "platnium ingot"
+/obj/item/ingots/platinumingot
+	name = "platinum ingot"
 	desc = "A solid bar of platnium. Strong in conductivity. Useful for advanced ammo"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "platnium_ingot"
