@@ -28,6 +28,7 @@
 	add_message = "<span class='notice'>You feel your body begin to rot before your eyes.</span>"
 
 /datum/heretic_effect/zombie/add_effect(var/mob/living/carbon/human/user)
+	. = ..()
 	for(var/obj/item/organ/org in user.internal_organs)
 		org.vital = FALSE
 		org.robotic = ORGAN_ROBOT
@@ -41,6 +42,7 @@
 	unique = TRUE
 
 /datum/heretic_effect/heal/add_effect(var/mob/living/carbon/human/user)
+	. = ..()
 	user.verbs |= /mob/living/carbon/human/proc/nurgle_heal
 
 /datum/heretic_effect/heal/remove_effect(var/mob/living/carbon/human/user)
