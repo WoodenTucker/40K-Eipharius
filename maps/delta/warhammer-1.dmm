@@ -1519,10 +1519,6 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "fT" = (
 /obj/structure/table/steel,
-/obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/device/radio/headset/red_team/sl_alpha,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10002,6 +9998,8 @@
 /obj/item/clothing/suit/sisterofbattle/training,
 /obj/item/clothing/suit/armor/templar,
 /obj/item/clothing/suit/armor/knighthosp,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/item/clothing/accessory/bishopcloak,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "OE" = (

@@ -55,7 +55,7 @@
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["evac"])
 		if (inrange)
-			to_chat(usr, "The Oktober Country is already above the outpost, Lord!")
+			to_chat(usr, "The Spaceport is already above the outpost, Lord!")
 			return
 		else
 			if (!inrange)
@@ -63,13 +63,13 @@
 				return
 	if (href_list["leave"])
 		if (!inrange)
-			to_chat(usr, "The Oktober Country is not in position yet, my Lord!")
+			to_chat(usr, "The Spaceport is not in position yet, my Lord!")
 			return
 		if(leaving)
 			to_chat(usr, "We are already leaving, Lord!")
 			return
 		else
-			to_world("<span class='warning'><font size='4'>The foul taste of psyker magicks fills your mouth. Over a loud speaker you hear the call for evacuation. In ten minutes the Lord-Trader's slaved Navigator will have a slipstream opened to the Oktober Country!</span></font>")
+			to_world("<span class='warning'><font size='4'>The foul taste of psyker magicks fills your mouth. Over a loud speaker you hear the call for evacuation. In ten minutes the ships will depart for the Messina Spaceport!</span></font>")
 			leaving()
 			sleep(3000)
 			to_world("<span class='warning'><font size='4'>Only five minutes remain, the first hints of a crackling portal are beginning to form at the escape platform!</span></font>")
@@ -83,7 +83,7 @@
 			moving = 1
 			playsound(src.loc,'sound/effects/droppod.ogg',75,1)
 			sleep(240)
-			to_world("<span class='warning'><font size='4'>The massive hulk of the Rogue Trader's primary vessel, the Oktober Country, appears above the outpost. Warning sirens blare and static fills the air as large amounts of psyker energy hum around you.</span></font>")
+			to_world("<span class='warning'><font size='4'>The massive hulk of the Space Port appears above the outpost. Warning sirens blare as vessels prepare to disembark from the planet, unlikely to return again for many terran decades.</span></font>")
 			to_chat(usr, "We are in position lord. Give the order and our psykers will begin to open a slipstream for your evacuation.")
 			inrange = 1	//Now in range
 			moving = 0

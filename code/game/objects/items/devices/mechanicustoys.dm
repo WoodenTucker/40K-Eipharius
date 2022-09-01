@@ -189,6 +189,14 @@
 		visible_message("<span class='notice'>The base of [C]'s skull is suddenly pierced with the neural adapter by [user], getting their mind programmed and indoctrinated!</span>")
 	..()
 
+obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/living/carbon/human/user)
+	if(istype(C))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src, 'sound/effects/adapter.ogg', 100, 1, 1)
+		visible_message("<span class='notice'>The base of [C]'s skull is suddenly pierced with the neural adapter by [user], performing neural stimulation procedure! It will help skitarii to awake faster, but not sure.</span>")
+		C.request_player()
+	..()
+
 /obj/item/device/neuraladapter/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
