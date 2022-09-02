@@ -8836,21 +8836,6 @@
 /obj/item/gun/energy/pulse_rifle/pistol,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
-"Wn" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/item/card/id/innkey1{
-	access = list(302,331,330,225,333,211);
-	desc = "This key is required to access the Dropship and Inquisition Base.";
-	name = "inquisitorial key";
-	req_access = null
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Wo" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
@@ -9104,6 +9089,21 @@
 	color = "grey"
 	},
 /area/centcom)
+"XP" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/obj/item/card/id/innkey1{
+	access = list(302,331,330,225,333,211);
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	name = "inquisitorial key";
+	req_access = null
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "XZ" = (
 /turf/unsimulated/wall/fakeglass{
 	color = "grey";
@@ -14855,7 +14855,7 @@ wc
 tj
 NF
 uI
-Wn
+XP
 cd
 tj
 tj
