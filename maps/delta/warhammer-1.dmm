@@ -306,8 +306,14 @@
 /turf/simulated/mineral/random,
 /area/cadiaoutpost/oa/caves)
 "bi" = (
-/obj/effect/floor_decal/turf/aesculapius/mento,
-/turf/unsimulated/miningtime,
+/obj/effect/floor_decal/turf/aesculapius/mento{
+	color = "grey"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/caves)
 "bn" = (
 /obj/item/material/shard,
@@ -913,8 +919,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "dI" = (
 /obj/structure/closet/body_bag/cryobag,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -1067,20 +1074,13 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "ev" = (
-/obj/structure/closet/crate/freezer,
-/obj/item/organ/internal/liver,
-/obj/item/organ/internal/kidneys,
-/obj/item/organ/internal/heart,
-/obj/item/organ/internal/brain,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -2406,8 +2406,9 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -4135,8 +4136,10 @@
 /area/cadiaoutpost/oa/caves)
 "qO" = (
 /obj/effect/decal/remains,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -4193,9 +4196,9 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "qV" = (
-/obj/structure/iv_drip,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -4238,6 +4241,21 @@
 /obj/item/archaeological_find/crystal,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
+"rd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard{
+	color = "grey"
+	},
+/obj/item/circular_saw,
+/obj/item/material/knife/butch{
+	color = "grey"
+	},
+/obj/item/clothing/suit/chef/classic,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "re" = (
 /obj/structure/closet/secure_closet/security{
 	color = "grey"
@@ -4500,8 +4518,14 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "se" = (
-/obj/effect/floor_decal/turf/aesculapius/mori,
-/turf/unsimulated/miningtime,
+/obj/effect/floor_decal/turf/aesculapius/mori{
+	color = "grey"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/caves)
 "sj" = (
 /obj/effect/floor_decal/turf/necro1,
@@ -6592,8 +6616,14 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "AH" = (
-/obj/effect/floor_decal/turf/aesculapius/mem,
-/turf/unsimulated/miningtime,
+/obj/effect/floor_decal/turf/aesculapius/mem{
+	color = "grey"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/caves)
 "AI" = (
 /obj/structure/table/woodentable{
@@ -7185,6 +7215,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"Da" = (
+/obj/structure/closet/crate/freezer,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "Db" = (
 /obj/structure/barbwire{
 	color = "grey"
@@ -7222,9 +7264,13 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Dl" = (
-/obj/structure/bed/roller,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -8004,8 +8050,9 @@
 	dir = 4;
 	icon_state = "torchwall0"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -8968,6 +9015,17 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
+"Ki" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard{
+	color = "grey"
+	},
+/obj/item/defibrillator/loaded,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "Kl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/iv_drip,
@@ -10335,8 +10393,10 @@
 	icon_state = "wheelchair"
 	},
 /obj/effect/decal/remains,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/trash/candy/proteinbar,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -10531,9 +10591,11 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "Qv" = (
-/obj/structure/bed/chair/wheelchair,
+/obj/structure/bed/roller,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	color = "grey";
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/caves)
@@ -10969,6 +11031,14 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"Sw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/iv_drip,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "Sx" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/sink{
@@ -11306,8 +11376,14 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/chapel)
 "TU" = (
-/obj/effect/floor_decal/turf/aesculapius,
-/turf/unsimulated/miningtime,
+/obj/effect/floor_decal/turf/aesculapius{
+	color = "grey"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
 /area/cadiaoutpost/oa/caves)
 "TV" = (
 /obj/effect/floor_decal/turf/brick/two,
@@ -11394,6 +11470,14 @@
 	},
 /turf/simulated/floor/carpet/blue2,
 /area/cadiaoutpost/oa/caves/undercity)
+"Un" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "Uo" = (
 /obj/structure/sign/sancposter,
 /turf/simulated/wall/concrete{
@@ -11434,6 +11518,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"UA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/organ_printer/flesh/mapped,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "UC" = (
 /obj/structure/closet/crate/solar,
 /obj/random/loot/randomsupply,
@@ -11532,6 +11624,14 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"UQ" = (
+/obj/structure/iv_drip,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "UT" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
@@ -36225,12 +36325,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+Sw
+Dl
 qO
-bK
+qV
 Gs
-bK
+qV
 qb
 PI
 PI
@@ -36483,11 +36583,11 @@ PI
 PI
 PI
 qV
-bK
-bK
-bK
-bK
-bK
+qV
+qV
+qV
+qV
+qV
 qb
 PI
 PI
@@ -36739,12 +36839,12 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
-bK
-bK
-bK
+Sw
+qV
+qV
+qV
+qV
+qV
 qb
 PI
 PI
@@ -36996,12 +37096,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+Da
+qV
 dI
-bK
-bK
-bK
+qV
+qV
+Un
 qb
 PI
 PI
@@ -37253,12 +37353,12 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
+qV
+qV
+qV
 AH
-Dl
-bK
+qV
+qV
 qb
 PI
 PI
@@ -37510,12 +37610,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+qV
+qV
 TU
 bi
-bK
-bK
+qV
+qV
 qb
 PI
 PI
@@ -37767,9 +37867,9 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
+qV
+qV
+qV
 se
 qV
 Qv
@@ -38024,12 +38124,12 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
-bK
-bK
-bK
+qV
+qV
+qV
+qV
+qV
+UQ
 qb
 PI
 PI
@@ -38281,12 +38381,12 @@ PI
 PI
 PI
 PI
-bK
-bK
-Dl
-bK
-bK
-bK
+UA
+qV
+qV
+qV
+qV
+qV
 qb
 PI
 PI
@@ -38538,12 +38638,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+Ki
+qV
 PH
-bK
-bK
-bK
+qV
+qV
+qV
 qb
 PI
 PI
@@ -38795,12 +38895,12 @@ PI
 PI
 PI
 PI
-bK
+rd
 ev
-bK
-bK
+qV
+qV
 jU
-bK
+qV
 qb
 PI
 PI
