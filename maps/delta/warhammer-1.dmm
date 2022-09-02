@@ -35,7 +35,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "ah" = (
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves)
 "ai" = (
@@ -127,7 +127,7 @@
 	name = "Invisible Light"
 	},
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "az" = (
@@ -678,6 +678,7 @@
 	},
 /obj/effect/floor_decal/turf/carpetn00,
 /obj/item/clothing/suit/armor/seolarmor,
+/obj/item/archaeological_find,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -832,7 +833,7 @@
 "dm" = (
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 1000
+	integrity = 500
 	},
 /area/cadiaoutpost/oa/security)
 "dp" = (
@@ -1040,7 +1041,9 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "ec" = (
-/turf/simulated/wall/concrete/strong/chapel,
+/turf/simulated/wall/concrete/strong/chapel{
+	integrity = 400
+	},
 /area/cadiaoutpost/oa/caves)
 "ed" = (
 /obj/structure/table/standard{
@@ -1194,7 +1197,9 @@
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/caves)
 "eG" = (
-/turf/simulated/wall/concrete/strong/chapel,
+/turf/simulated/wall/concrete/strong/chapel{
+	integrity = 400
+	},
 /area/cadiaoutpost/oa/caves/undercity)
 "eH" = (
 /obj/machinery/light{
@@ -1216,14 +1221,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "eJ" = (
-/obj/effect/floor_decal/turf/plate,
-/mob/living/simple_animal/hostile/mimic/sleeping{
+/obj/effect/floor_decal/turf/plating,
+/obj/item/archaeological_find/remains/xeno{
 	color = "grey"
 	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/item/archaeological_find,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/dark)
 "eK" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/table/rack/dark,
@@ -1587,6 +1591,7 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "fT" = (
 /obj/structure/table/steel,
+/obj/item/archaeological_find,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2090,6 +2095,7 @@
 	color = "grey"
 	},
 /obj/item/newore/gems/ruby,
+/obj/item/archaeological_find,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2251,7 +2257,7 @@
 "iJ" = (
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 1000
+	integrity = 500
 	},
 /area/cadiaoutpost/oa/crew_quarters/cryopods)
 "iL" = (
@@ -3023,7 +3029,9 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/wall/concrete/strong/chapel,
+/turf/simulated/wall/concrete/strong/chapel{
+	integrity = 400
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "lR" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter,
@@ -4278,7 +4286,9 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "qK" = (
-/turf/simulated/wall/concrete/strong/chapel,
+/turf/simulated/wall/concrete/strong/chapel{
+	integrity = 400
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "qL" = (
 /mob/living/simple_animal/hostile/retaliate/rat,
@@ -4422,8 +4432,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "rc" = (
 /obj/structure/closet/crate/secure/large/cargo,
-/obj/item/archaeological_find/material,
-/obj/item/archaeological_find/crystal,
+/obj/item/archaeological_find,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
 "re" = (
@@ -4504,15 +4513,8 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "ru" = (
-/mob/living/simple_animal/hostile/hivebot/rapid{
-	desc = "A terrifying death machine.";
-	health = 700;
-	melee_damage_lower = 30;
-	melee_damage_upper = 40;
-	name = "Security Droid"
-	},
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "rv" = (
@@ -5012,7 +5014,7 @@
 	name = "Invisible Light"
 	},
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "tv" = (
@@ -5138,7 +5140,7 @@
 "tR" = (
 /obj/structure/sewers/brokenpipe,
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "tT" = (
@@ -6115,7 +6117,7 @@
 "xG" = (
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 1000
+	integrity = 500
 	},
 /area/cadiaoutpost/oa/supply/mining/eva)
 "xH" = (
@@ -7393,7 +7395,7 @@
 	name = "Invisible Light"
 	},
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "CD" = (
@@ -7666,7 +7668,7 @@
 "DS" = (
 /obj/structure/sewers/pipe,
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "DW" = (
@@ -8367,7 +8369,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Gv" = (
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "Gw" = (
@@ -8664,7 +8666,7 @@
 "Hx" = (
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 1000
+	integrity = 500
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Hy" = (
@@ -8902,10 +8904,14 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "Iy" = (
-/turf/simulated/wall/concrete{
-	integrity = 1500
+/obj/structure/table/marble{
+	color = "grey"
 	},
-/area/cadiaoutpost/oa/caves/undercity)
+/obj/item/archaeological_find,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "Iz" = (
 /obj/item/storage/fancy/cigarettes{
 	color = "grey";
@@ -9062,7 +9068,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Jb" = (
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "Jc" = (
@@ -9282,7 +9288,7 @@
 	pixel_y = -6
 	},
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "JU" = (
@@ -9687,7 +9693,9 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Lx" = (
 /obj/structure/sign/art/blindfolds,
-/turf/simulated/wall/concrete/strong/chapel,
+/turf/simulated/wall/concrete/strong/chapel{
+	integrity = 400
+	},
 /area/cadiaoutpost/oa/service/chapel)
 "Ly" = (
 /obj/effect/floor_decal/turf/brick/two,
@@ -9848,6 +9856,7 @@
 	color = "grey"
 	},
 /obj/item/clothing/head/helmet/space/void/medical,
+/obj/item/archaeological_find,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9863,10 +9872,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Mi" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/wrench{
-	desc = "Not to be confused with an allen wrench.";
-	name = "alien wrench"
-	},
+/obj/item/archaeological_find,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -10177,7 +10183,7 @@
 "Nn" = (
 /obj/structure/sign/sancposter/two,
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/service/habs)
 "No" = (
@@ -10187,7 +10193,6 @@
 "Np" = (
 /obj/effect/floor_decal/turf/tunnelchess,
 /obj/structure/table/steel_reinforced,
-/obj/item/archaeological_find/knife,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10196,7 +10201,6 @@
 /obj/machinery/door/airlock/gold{
 	color = "grey"
 	},
-/mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -10314,7 +10318,7 @@
 	pixel_y = -15
 	},
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/service/habs)
 "Oi" = (
@@ -11914,7 +11918,7 @@
 "Uo" = (
 /obj/structure/sign/sancposter,
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/service/habs)
 "Uq" = (
@@ -12517,7 +12521,7 @@
 "WO" = (
 /obj/structure/sewers/wallhole,
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "WQ" = (
@@ -12586,7 +12590,7 @@
 "Xe" = (
 /obj/structure/sewers/pipeflowbrk,
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Xg" = (
@@ -12649,7 +12653,7 @@
 "Xo" = (
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 1000
+	integrity = 500
 	},
 /area/cadiaoutpost/oa/service/habs)
 "Xp" = (
@@ -12682,7 +12686,7 @@
 /obj/structure/railing,
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 1000
+	integrity = 500
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Xu" = (
@@ -12969,7 +12973,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "YD" = (
 /turf/simulated/wall/concrete{
-	integrity = 1500
+	integrity = 400
 	},
 /area/cadiaoutpost/oa/service/habs)
 "YE" = (
@@ -19629,7 +19633,7 @@ zZ
 zo
 fw
 kB
-fw
+Iy
 rq
 zb
 zb
@@ -22460,7 +22464,7 @@ We
 On
 OX
 On
-fw
+Iy
 rj
 Md
 zo
@@ -29462,7 +29466,7 @@ VO
 VO
 VO
 VO
-ct
+op
 op
 VO
 PI
@@ -36117,7 +36121,7 @@ zo
 zo
 zo
 eW
-fl
+eJ
 AJ
 AJ
 AJ
@@ -36374,7 +36378,7 @@ AJ
 AJ
 zo
 AJ
-ty
+AJ
 AJ
 AJ
 ly
@@ -37688,7 +37692,7 @@ VO
 jD
 op
 vA
-ct
+op
 op
 VO
 PI
@@ -38115,7 +38119,7 @@ HF
 YM
 Xo
 pW
-Iy
+ru
 Dg
 Dg
 Dg
@@ -38372,7 +38376,7 @@ oe
 oe
 Xo
 pW
-Iy
+ru
 Dg
 QG
 QG
@@ -38629,7 +38633,7 @@ Cg
 bv
 Xo
 pW
-Iy
+ru
 Dg
 Dg
 QG
@@ -38886,7 +38890,7 @@ oe
 Jo
 Xo
 pW
-Iy
+ru
 oU
 Dg
 Dg
@@ -39143,7 +39147,7 @@ Cl
 oe
 Xo
 pW
-Iy
+ru
 oU
 vf
 Dg
@@ -39155,7 +39159,7 @@ Dg
 vf
 vf
 vf
-Iy
+ru
 fQ
 xA
 jR
@@ -39400,7 +39404,7 @@ Xo
 Xo
 Xo
 pW
-Iy
+ru
 oU
 vf
 Dg
@@ -39410,9 +39414,9 @@ QG
 Dg
 vf
 vf
-Iy
-Iy
-Iy
+ru
+ru
+ru
 oU
 jR
 jR
@@ -39656,18 +39660,18 @@ fZ
 fZ
 fZ
 fZ
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 uS
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 oY
 lX
 oU
@@ -39907,13 +39911,13 @@ SI
 SI
 SI
 SI
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 jR
 oU
 oU
@@ -40163,7 +40167,7 @@ PI
 PI
 PI
 PI
-Iy
+ru
 DS
 Gy
 Gy
@@ -40416,11 +40420,11 @@ PI
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 tR
 Gy
 Gy
@@ -40673,11 +40677,11 @@ PI
 PI
 PI
 PI
-Iy
+ru
 CZ
 Zj
 bd
-Iy
+ru
 DS
 Gy
 Gy
@@ -40929,14 +40933,14 @@ PI
 PI
 PI
 PI
-Iy
-Iy
+ru
+ru
 CZ
 CZ
 TS
-Iy
-Iy
-Iy
+ru
+ru
+ru
 MJ
 FH
 FH
@@ -40946,21 +40950,21 @@ oU
 bX
 jR
 oU
-Iy
-Iy
-Iy
+ru
+ru
+ru
 FT
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 WO
 jR
 jR
 CZ
 jR
-Iy
+ru
 Zz
 xA
 xA
@@ -41186,39 +41190,39 @@ PI
 PI
 PI
 PI
-Iy
+ru
 vq
 CZ
 CZ
 CZ
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
 DB
 DB
-Iy
+ru
 oU
 wq
 jR
 jR
 oU
-Iy
+ru
 dy
 ri
 ri
 ri
-Iy
+ru
 lT
 lT
 wK
-Iy
+ru
 jR
 jR
 jR
 jR
-Iy
-Iy
+ru
+ru
 pp
 pp
 pp
@@ -41440,41 +41444,41 @@ SI
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 CZ
 CZ
 CZ
-Iy
+ru
 Ea
 Np
-Iy
+ru
 CZ
 Hy
-Iy
-Iy
+ru
+ru
 oY
 jR
 jR
 oY
-Iy
+ru
 EV
 ri
 ri
 ri
-Iy
+ru
 oc
 GS
 cx
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 pp
 jR
 pp
@@ -41697,41 +41701,41 @@ SI
 PI
 PI
 PI
-Iy
+ru
 oU
 oU
 xf
-Iy
+ru
 CZ
 CZ
 CZ
-Iy
+ru
 DN
 DN
 FT
 gU
 CZ
-Iy
-Iy
+ru
+ru
 oU
 jR
 jR
 oU
-Iy
+ru
 Xp
 ri
 ri
 Xr
-Iy
+ru
 lT
 GS
 hr
-Iy
+ru
 Aq
 KY
 KS
 Aq
-Iy
+ru
 jR
 jR
 yr
@@ -41954,7 +41958,7 @@ SI
 PI
 PI
 PI
-Iy
+ru
 UC
 oU
 oU
@@ -41962,33 +41966,33 @@ Ug
 CZ
 CZ
 CZ
-Iy
+ru
 Qn
 DN
-Iy
+ru
 gU
 Cy
-Iy
-Iy
+ru
+ru
 oU
 oU
 jR
 oU
-Iy
+ru
 fB
 ri
 ri
 ri
-Iy
+ru
 zz
 Ym
-Iy
-Iy
+ru
+ru
 xd
-Iy
+ru
 ry
 KF
-Iy
+ru
 yA
 yA
 yr
@@ -42211,27 +42215,27 @@ SI
 PI
 PI
 PI
-Iy
+ru
 Wu
 hY
 XZ
-Iy
+ru
 CZ
 CZ
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 Ii
 cX
-Iy
-Iy
-Iy
+ru
+ru
+ru
 oU
 jR
 CZ
-Iy
+ru
 vK
 EC
 ri
@@ -42242,10 +42246,10 @@ KL
 Ex
 DN
 DN
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
 yA
 fQ
 yr
@@ -42468,38 +42472,38 @@ SI
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 CZ
 CZ
-Iy
+ru
 Zb
 gY
 Cy
 rQ
 Cy
 gU
-Iy
+ru
 vf
-Iy
+ru
 CZ
 bX
 CZ
-Iy
+ru
 ri
 XW
 ri
 ri
-Iy
+ru
 wj
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 fQ
 fQ
 fQ
@@ -42729,28 +42733,28 @@ PI
 PI
 PI
 PI
-Iy
+ru
 nm
 Ap
-Iy
+ru
 Cn
 gU
 mY
 WO
 AA
 AA
-Iy
+ru
 vf
-Iy
+ru
 kp
 bX
 oU
-Iy
+ru
 Gw
 Gw
 ri
 ri
-Iy
+ru
 em
 CZ
 CZ
@@ -42986,33 +42990,33 @@ PI
 PI
 PI
 PI
-Iy
+ru
 CZ
 CZ
-Iy
+ru
 RJ
 Ua
 RJ
-Iy
+ru
 CZ
 gU
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 lO
 rZ
 lO
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 fQ
 fQ
 yr
@@ -43246,30 +43250,30 @@ PI
 PI
 CZ
 CZ
-Iy
+ru
 CZ
 mo
 CZ
 xd
 CZ
 CZ
-Iy
+ru
 vf
-Iy
+ru
 oY
 rW
 bX
-Iy
+ru
 oU
 oU
 oU
 oU
-Iy
+ru
 HV
 RC
 HV
 nL
-Iy
+ru
 fQ
 fQ
 yr
@@ -43500,33 +43504,33 @@ PI
 PI
 PI
 PI
-Iy
+ru
 CZ
 CZ
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 xd
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 KI
 oU
 oU
 oU
-Iy
+ru
 Rs
 WR
 oU
 YB
-Iy
+ru
 fQ
 fQ
 yr
@@ -43757,7 +43761,7 @@ PI
 PI
 PI
 PI
-Iy
+ru
 CZ
 CZ
 CZ
@@ -43767,13 +43771,13 @@ AA
 AA
 Cy
 cc
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 oU
 oU
 oU
@@ -43783,7 +43787,7 @@ xI
 WR
 oU
 es
-Iy
+ru
 fQ
 fQ
 yr
@@ -44014,7 +44018,7 @@ PI
 PI
 PI
 PI
-Iy
+ru
 lb
 CZ
 CZ
@@ -44024,23 +44028,23 @@ BN
 bX
 CZ
 CZ
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
-Iy
+ru
+ru
 FV
-Iy
-Iy
-Iy
+ru
+ru
+ru
 SF
 WR
 WR
 WR
-Iy
+ru
 fQ
 fQ
 yr
@@ -44271,33 +44275,33 @@ PI
 PI
 PI
 PI
-Iy
-Iy
+ru
+ru
 PP
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 CZ
 CZ
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 oU
 oU
 oU
 oU
-Iy
+ru
 WR
 UL
 Lv
 rr
-Iy
+ru
 fQ
 oS
 pW
@@ -44528,33 +44532,33 @@ PI
 PI
 PI
 PI
-Iy
+ru
 Lr
 CZ
 CZ
 CZ
 ky
-Iy
+ru
 Rn
 AA
 CZ
-Iy
+ru
 vf
-Iy
+ru
 kp
 bX
 oU
-Iy
+ru
 HC
 Qr
 oU
 oU
-Iy
+ru
 WR
 WR
 WR
 WR
-Iy
+ru
 fQ
 fQ
 yr
@@ -44593,12 +44597,12 @@ pW
 yA
 yA
 yA
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 bf
 bf
 bf
@@ -44785,33 +44789,33 @@ PI
 PI
 PI
 PI
-Iy
+ru
 Lr
 tY
 CZ
 mo
 fI
-Iy
+ru
 Ir
 AA
 CZ
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 TL
 oU
 Qr
 oU
-Iy
+ru
 JF
-eJ
+WR
 RQ
 nL
-Iy
+ru
 fQ
 fQ
 yr
@@ -44850,12 +44854,12 @@ pW
 yA
 yA
 yA
-Iy
+ru
 Yy
 HX
 LG
 Cj
-Iy
+ru
 bf
 bf
 bf
@@ -45042,33 +45046,33 @@ PI
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 qh
 CZ
 CZ
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 Vv
 oa
 Qr
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 fQ
 fQ
 yr
@@ -45105,14 +45109,14 @@ Lq
 yr
 pW
 yA
-Iy
-Iy
-Iy
+ru
+ru
+ru
 sY
 HX
 HX
 DF
-Iy
+ru
 PI
 PI
 PI
@@ -45300,22 +45304,22 @@ PI
 PI
 PI
 PI
-Iy
+ru
 DH
 oU
 oU
 CZ
-Iy
-Iy
-Iy
+ru
+ru
+ru
 gR
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 mD
 Qr
 oU
@@ -45325,7 +45329,7 @@ wW
 wW
 wW
 yw
-Iy
+ru
 fQ
 fQ
 yr
@@ -45362,14 +45366,14 @@ Lq
 yr
 pW
 pW
-Iy
+ru
 oU
 CB
 HX
 HX
 CR
 ch
-Iy
+ru
 PI
 PI
 PI
@@ -45557,32 +45561,32 @@ PI
 PI
 PI
 PI
-Iy
+ru
 pG
 oU
 oU
 CZ
-Iy
+ru
 GB
 Av
 gU
-Iy
+ru
 vf
-Iy
+ru
 oU
 bX
 oU
-Iy
+ru
 Ji
 gb
 bS
 oU
-Iy
+ru
 uB
 uj
 wW
 Jp
-Iy
+ru
 gB
 fQ
 vG
@@ -45619,14 +45623,14 @@ Lq
 yr
 yr
 yr
-Iy
+ru
 oU
 kU
 HX
 CR
 le
 HX
-Iy
+ru
 PI
 PI
 PI
@@ -45814,32 +45818,32 @@ PI
 PI
 PI
 PI
-Iy
+ru
 MH
 oU
 oU
 CZ
-Iy
+ru
 bw
 gU
 Kh
-Iy
+ru
 vf
 JT
 bX
 bX
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 wW
 uj
 wW
 vM
-Iy
+ru
 fQ
 fQ
 yr
@@ -45876,14 +45880,14 @@ Lq
 fQ
 fQ
 yA
-Iy
+ru
 oU
 CB
 HX
 Yy
 CR
 HX
-Iy
+ru
 PI
 PI
 PI
@@ -46071,32 +46075,32 @@ PI
 PI
 PI
 PI
-Iy
+ru
 Bx
 oU
 oU
 ap
-Iy
+ru
 iw
 gU
 gU
-Iy
+ru
 vf
-Iy
+ru
 sp
 bX
 oU
-Iy
+ru
 RN
 pi
 oU
-Iy
-Iy
+ru
+ru
 Xj
 cy
 nf
 Ce
-Iy
+ru
 fQ
 fQ
 yr
@@ -46135,12 +46139,12 @@ fQ
 yA
 yA
 oU
-Iy
+ru
 HX
 HX
 HX
 Yy
-Iy
+ru
 PI
 PI
 PI
@@ -46328,32 +46332,32 @@ PI
 PI
 PI
 PI
-Iy
+ru
 CT
 oU
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 tu
 oU
 bX
 oU
-Iy
-oU
-oU
-oU
-Iy
-Iy
-Iy
 ru
-Iy
-Iy
-Iy
+oU
+oU
+oU
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 fQ
 fQ
 Lf
@@ -46390,14 +46394,14 @@ Xv
 yr
 yr
 yr
-Iy
+ru
 oU
-Iy
+ru
 rh
 HX
 HX
 vI
-Iy
+ru
 PI
 SI
 SI
@@ -46585,32 +46589,32 @@ PI
 PI
 PI
 PI
-Iy
+ru
 oU
 oU
 oU
-Iy
+ru
 Ko
 oU
 TE
 YN
 oU
-Iy
-Iy
+ru
+ru
 oU
 bX
 oU
-Iy
-Iy
-Iy
+ru
+ru
+ru
 KI
-Iy
+ru
 Ka
 JS
 oU
 or
 oU
-Iy
+ru
 fQ
 fQ
 yr
@@ -46647,14 +46651,14 @@ qb
 qb
 SI
 SI
-Iy
+ru
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 pW
 pW
 pW
@@ -46842,32 +46846,32 @@ PI
 PI
 PI
 PI
-Iy
-Iy
+ru
+ru
 FT
-Iy
-Iy
+ru
+ru
 pG
 JS
 oU
 oU
 oU
-Iy
-Iy
+ru
+ru
 oU
 bX
 oU
-Iy
+ru
 oU
 oU
 oU
-Iy
+ru
 KI
 oU
 oU
 oU
 oU
-Iy
+ru
 EG
 fQ
 yr
@@ -46904,7 +46908,7 @@ SI
 SI
 SI
 SI
-Iy
+ru
 oU
 au
 pW
@@ -46913,7 +46917,7 @@ pW
 pW
 pW
 pW
-Iy
+ru
 pW
 SI
 SI
@@ -47099,7 +47103,7 @@ PI
 PI
 PI
 PI
-Iy
+ru
 Uz
 DN
 DN
@@ -47109,16 +47113,16 @@ zk
 oU
 YN
 oU
-Iy
+ru
 WO
 oU
 bX
 oU
-Iy
+ru
 oU
 oU
 oU
-Iy
+ru
 oU
 oU
 oU
@@ -47161,16 +47165,16 @@ bf
 bf
 bf
 SI
-Iy
+ru
 ck
-Iy
+ru
 pW
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
 pW
-Iy
+ru
 pW
 SI
 SI
@@ -47356,37 +47360,37 @@ PI
 PI
 PI
 PI
-Iy
-Iy
+ru
+ru
 FT
-Iy
+ru
 yr
 xe
 oU
 oU
 oU
 oU
-Iy
-Iy
+ru
+ru
 oU
 bX
 oU
-Iy
-Iy
+ru
+ru
 uS
-Iy
-Iy
+ru
+ru
 uL
 De
 FO
 oU
 oU
-Iy
+ru
 GG
 fQ
-Iy
-Iy
-Iy
+ru
+ru
+ru
 yA
 yA
 yA
@@ -47418,16 +47422,16 @@ bf
 bf
 bf
 SI
-Iy
+ru
 oU
-Iy
-Iy
-Iy
+ru
+ru
+ru
 dk
 EX
-Iy
-Iy
-Iy
+ru
+ru
+ru
 pW
 SI
 SI
@@ -47614,17 +47618,17 @@ PI
 PI
 PI
 PI
-Iy
+ru
 uC
 sL
-Iy
+ru
 oU
 oU
 oU
 oU
 oU
-Iy
-Iy
+ru
+ru
 oU
 bX
 oU
@@ -47632,18 +47636,18 @@ oU
 CZ
 CZ
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 vk
-Iy
+ru
 yA
 yA
 yA
@@ -47675,7 +47679,7 @@ PI
 bf
 bf
 SI
-Iy
+ru
 FO
 oU
 oU
@@ -47871,17 +47875,17 @@ PI
 PI
 PI
 PI
-Iy
+ru
 Ds
 sL
-Iy
+ru
 oU
 lT
 lT
 lT
 oU
-Iy
-Iy
+ru
+ru
 oU
 bX
 bX
@@ -47900,13 +47904,13 @@ oU
 fs
 oU
 oY
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 ah
 PI
 PI
@@ -47932,17 +47936,17 @@ PI
 PI
 PI
 SI
-Iy
-Iy
+ru
+ru
 QG
-Iy
-Iy
-Iy
+ru
+ru
+ru
 au
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
 SI
 SI
 PI
@@ -48128,17 +48132,17 @@ PI
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
 FT
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
 oU
 oU
 oU
@@ -48198,7 +48202,7 @@ pW
 pW
 pW
 pW
-Iy
+ru
 pW
 SI
 SI
@@ -48395,18 +48399,18 @@ aP
 Iz
 oU
 wq
-Iy
-Iy
-Iy
+ru
+ru
+ru
 oY
 oU
 bX
 bX
-Iy
+ru
 oU
 wq
-Iy
-Iy
+ru
+ru
 oU
 oY
 oU
@@ -48420,7 +48424,7 @@ bX
 bX
 bX
 bX
-Iy
+ru
 ah
 PI
 PI
@@ -48639,11 +48643,11 @@ PI
 PI
 PI
 ah
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 kT
 oU
 oY
@@ -48651,33 +48655,33 @@ XO
 XO
 pD
 oU
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 oU
 bX
 bX
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 FV
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 bf
 PI
 PI
@@ -48916,16 +48920,16 @@ bX
 bX
 bX
 bX
-Iy
+ru
 PI
 PI
 PI
 PI
-Iy
+ru
 oq
 CZ
 vT
-Iy
+ru
 PI
 PI
 PI
@@ -49173,16 +49177,16 @@ bX
 bX
 bX
 bX
-Iy
+ru
 PI
 PI
 PI
 PI
-Iy
+ru
 xp
 CZ
 vT
-Iy
+ru
 PI
 PI
 PI
@@ -49417,29 +49421,29 @@ PY
 PY
 PY
 PY
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
 bX
 bX
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 PI
 PI
 PI
 PI
-Iy
+ru
 kO
 CZ
 vT
-Iy
+ru
 PI
 PI
 PI
@@ -49677,7 +49681,7 @@ PI
 PI
 PI
 PI
-Iy
+ru
 bX
 bX
 bX
@@ -49685,18 +49689,18 @@ oU
 pp
 pp
 pp
-Iy
-Iy
-Iy
+ru
+ru
+ru
 ah
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
 PI
 PI
 PI
@@ -49934,7 +49938,7 @@ PI
 PI
 PI
 PI
-Iy
+ru
 oU
 bX
 bX
@@ -50191,8 +50195,8 @@ PI
 PI
 PI
 PI
-Iy
-Iy
+ru
+ru
 oU
 bX
 bX
@@ -50449,16 +50453,16 @@ PI
 PI
 PI
 PI
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
-Iy
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 ah
 PI
 PI
