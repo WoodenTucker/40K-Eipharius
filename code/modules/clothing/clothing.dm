@@ -639,7 +639,7 @@ BLIND     // can't see anything
 	valid_accessory_slots = list(ACCESSORY_SLOT_ARMBAND,ACCESSORY_SLOT_DECOR,ACCESSORY_SLOT_MEDAL)
 	grab_sound = 'sound/items/handle/clothing_up.ogg'
 	equipsound = 'sound/items/handle/cloth_pickup.ogg'
-	sales_price = 6
+	sales_price = 0
 
 
 /obj/item/clothing/suit/update_clothing_icon()
