@@ -1219,6 +1219,14 @@
 /obj/structure/table/rack/dark,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
+"eJ" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/item/archaeological_find/remains/xeno{
+	color = "grey"
+	},
+/obj/item/archaeological_find,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/dark)
 "eK" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/table/rack/dark,
@@ -3450,26 +3458,8 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "np" = (
 /obj/machinery/hologram/holopad,
-/mob/living/simple_animal/hostile/hivebot/rapid{
-	desc = "A terrifying death machine.";
-	health = 700;
-	melee_damage_lower = 30;
-	melee_damage_upper = 40;
-	name = "Security Droid"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"nq" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/machinery/door/unpowered/inn{
-	color = "grey";
-	name = "ancient door"
-	},
-/mob/living/simple_animal/hostile/smalldemon/fleshbeast,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/undercity)
 "nt" = (
 /obj/effect/floor_decal/turf/aesculapius{
 	color = "grey"
@@ -8889,14 +8879,6 @@
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
-"Iy" = (
-/obj/effect/floor_decal/turf/plating,
-/obj/item/archaeological_find/remains/xeno{
-	color = "grey"
-	},
-/obj/item/archaeological_find,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/dark)
 "Iz" = (
 /obj/item/storage/fancy/cigarettes{
 	color = "grey";
@@ -36104,7 +36086,7 @@ zo
 zo
 zo
 eW
-Iy
+eJ
 AJ
 AJ
 AJ
@@ -37145,7 +37127,7 @@ AJ
 AJ
 AJ
 AJ
-Do
+AJ
 VO
 PI
 PI
@@ -43765,7 +43747,7 @@ oU
 oU
 oU
 oU
-nq
+FV
 xI
 WR
 oU
