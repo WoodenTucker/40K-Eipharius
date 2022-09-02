@@ -1073,6 +1073,7 @@
 /obj/item/organ/internal/liver,
 /obj/item/organ/internal/kidneys,
 /obj/item/organ/internal/heart,
+/obj/item/organ/internal/brain,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
@@ -1080,10 +1081,6 @@
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/structure/sign/redcross{
-	color = "grey";
-	pixel_x = 32
-	},
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -2412,10 +2409,6 @@
 /obj/structure/torchwall{
 	dir = 8;
 	icon_state = "torchwall0"
-	},
-/obj/structure/sign/redcross{
-	color = "grey";
-	pixel_x = 32
 	},
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
@@ -5096,16 +5089,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"ur" = (
-/obj/structure/table/standard{
-	color = "grey"
-	},
-/obj/item/defibrillator/loaded,
-/turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/caves)
 "us" = (
 /obj/structure/table/woodentable,
 /obj/item/device/cassette/inn1,
@@ -12357,13 +12340,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/habs)
-"Yg" = (
-/obj/machinery/organ_printer/flesh/mapped,
-/turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/caves)
 "Yi" = (
 /obj/structure/table/woodentable,
 /obj/item/reagent_containers/food/snacks/cheesiehonkers,
@@ -38329,7 +38305,7 @@ PI
 PI
 PI
 qb
-Yg
+bK
 bK
 Dl
 bK
@@ -38586,7 +38562,7 @@ PI
 PI
 PI
 qb
-ur
+bK
 bK
 PH
 bK
