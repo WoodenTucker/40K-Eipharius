@@ -403,8 +403,7 @@
 "bJ" = (
 /obj/structure/sewers/pipeflow,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "bK" = (
@@ -807,8 +806,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "dm" = (
 /turf/simulated/wall/ancient{
-	color = null;
-	integrity = 500
+	color = null
 	},
 /area/cadiaoutpost/oa/security)
 "dp" = (
@@ -1254,8 +1252,7 @@
 "eW" = (
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "eZ" = (
@@ -2153,8 +2150,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "iJ" = (
 /turf/simulated/wall/ancient{
-	color = null;
-	integrity = 500
+	color = null
 	},
 /area/cadiaoutpost/oa/crew_quarters/cryopods)
 "iL" = (
@@ -2470,8 +2466,7 @@
 "kk" = (
 /obj/structure/reagent_dispensers/acid,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "kl" = (
@@ -2931,8 +2926,7 @@
 	name = "wall terminal"
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "lV" = (
@@ -3443,8 +3437,7 @@
 "nU" = (
 /obj/structure/sewers/brokenpipe,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "nV" = (
@@ -3761,7 +3754,7 @@
 "oZ" = (
 /turf/simulated/wall/ancient{
 	color = null;
-	integrity = 700
+	integrity = 10000
 	},
 /area/cadiaoutpost/oa/service/habs)
 "pa" = (
@@ -3980,8 +3973,7 @@
 /area/cadiaoutpost/oa/hangarpact)
 "qb" = (
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves)
 "qc" = (
@@ -4470,8 +4462,7 @@
 	color = "grey"
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "rZ" = (
@@ -5010,8 +5001,7 @@
 "uc" = (
 /obj/structure/sign/warning/biohazard,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "ue" = (
@@ -5871,8 +5861,7 @@
 /area/cadiaoutpost/oa/service/habs)
 "xG" = (
 /turf/simulated/wall/ancient{
-	color = null;
-	integrity = 500
+	color = null
 	},
 /area/cadiaoutpost/oa/supply/mining/eva)
 "xH" = (
@@ -6059,15 +6048,13 @@
 /area/cadiaoutpost/oa/caves/dark)
 "yr" = (
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "yt" = (
 /obj/structure/sewers/pipeflowbrk,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "yu" = (
@@ -6113,8 +6100,7 @@
 	color = "grey"
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "yA" = (
@@ -6264,8 +6250,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "zo" = (
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "zp" = (
@@ -7073,8 +7058,7 @@
 	name = "wall terminal"
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Cx" = (
@@ -7360,8 +7344,7 @@
 "DQ" = (
 /obj/effect/landmark/animal/zygote1,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "DR" = (
@@ -8330,8 +8313,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Hx" = (
 /turf/simulated/wall/ancient{
-	color = null;
-	integrity = 500
+	color = null
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Hy" = (
@@ -8735,8 +8717,7 @@
 "Je" = (
 /obj/structure/sewers/pipe,
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Jf" = (
@@ -9210,8 +9191,7 @@
 	health = 400
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Lj" = (
@@ -11144,8 +11124,7 @@
 	icon_state = "torchwall0"
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "SY" = (
@@ -12115,8 +12094,7 @@
 /area/cadiaoutpost/oa/security)
 "Xo" = (
 /turf/simulated/wall/ancient{
-	color = null;
-	integrity = 500
+	color = null
 	},
 /area/cadiaoutpost/oa/service/habs)
 "Xp" = (
@@ -12148,8 +12126,7 @@
 "Xs" = (
 /obj/structure/railing,
 /turf/simulated/wall/ancient{
-	color = null;
-	integrity = 500
+	color = null
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "Xu" = (
@@ -12378,8 +12355,7 @@
 	pixel_y = 30
 	},
 /turf/simulated/wall/ancient{
-	color = "grey";
-	integrity = 600
+	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Ys" = (
@@ -35991,7 +35967,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 qb
 qb
 qb
@@ -36248,7 +36224,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 qO
@@ -36505,7 +36481,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 qV
 bK
 bK
@@ -36762,7 +36738,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 bK
@@ -37019,7 +36995,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 dI
@@ -37276,7 +37252,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 bK
@@ -37533,7 +37509,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 TU
@@ -37790,7 +37766,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 bK
@@ -38047,7 +38023,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 bK
@@ -38304,7 +38280,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 Dl
@@ -38561,7 +38537,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 bK
 PH
@@ -38818,7 +38794,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 bK
 ev
 bK
@@ -39075,7 +39051,7 @@ PI
 PI
 PI
 PI
-qb
+PI
 qb
 qb
 bK
