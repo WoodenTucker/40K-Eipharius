@@ -77,7 +77,7 @@
 	var/datum/feed_message/newMsg = new /datum/feed_message
 	newMsg.author = author
 	newMsg.body = msg
-	newMsg.time_stamp = "[stationtime2text()]"
+	newMsg.time_stamp = "[station_time_timestamp("hh:mm")]"
 	newMsg.is_admin_message = adminMessage
 	if(message_type)
 		newMsg.message_type = message_type
@@ -92,7 +92,7 @@
 /datum/feed_network/proc/insert_message_in_channel(var/datum/feed_channel/FC, var/datum/feed_message/newMsg)
 	FC.messages += newMsg
 	if(newMsg.img)
-		register_asset("newscaster_photo_[sanitize(FC.channel_name)]_[FC.messages.len].png", newMsg.img)
+		//register_asset("newscaster_photo_[sanitize(FC.channel_name)]_[FC.messages.len].png", newMsg.img)
 	newMsg.parent_channel = FC
 	FC.update()
 	alert_readers(FC.announcement)
@@ -339,7 +339,7 @@ var/list/obj/machinery/newscaster/allCasters = list() //Global list that will co
 							dat+="-[MESSAGE.body] <BR>"
 							if(MESSAGE.img)
 								var/resourc_name = "newscaster_photo_[sanitize(viewing_channel.channel_name)]_[i].png"
-								send_asset(usr.client, resourc_name)
+								// TODO send_asset(usr.client, resourc_name)
 								dat+="<img src='[resourc_name]' width = '180'><BR>"
 								if(MESSAGE.caption)
 									dat+="<FONT SIZE=1><B>[MESSAGE.caption]</B></FONT><BR>"
@@ -836,7 +836,7 @@ obj/item/newspaper/attack_self(mob/user as mob)
 							dat+="-[MESSAGE.body] <BR>"
 							if(MESSAGE.img)
 								var/resourc_name = "newscaster_photo_[sanitize(C.channel_name)]_[i].png"
-								send_asset(user.client, resourc_name)
+								// TODO send_asset(user.client, resourc_name)
 								dat+="<img src='[resourc_name]' width = '180'><BR>"
 							dat+="<FONT SIZE=1>\[[MESSAGE.message_type] by <FONT COLOR='maroon'>[MESSAGE.author]</FONT>\]</FONT><BR><BR>"
 						dat+="</ul>"

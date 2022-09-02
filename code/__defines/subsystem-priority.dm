@@ -22,13 +22,15 @@
 
 // SS_BACKGROUND
 #define SS_PRIORITY_OBJECTS       60	// processing_objects processing.
-#define SS_PRIORITY_NANOUI        40   // Updates to nanoui uis.
+#define SS_PRIORITY_NANOUI        50   // Updates to nanoui uis.
+#define SS_PRIORITY_TGUI          40   // Updates TGUI UIs.
 #define SS_PRIORITY_PROCESSING    30	// Generic datum processor. Replaces objects processor.
 #define SS_PRIORITY_GARBAGE       25	// Garbage collection.
 #define SS_PRIORITY_VINES         25	// Spreading vine effects.
 #define SS_PRIORITY_SHUTTLE       20	// Shuttle Priority
 #define SS_PRIORITY_WIRELESS      10	// Wireless connection setup.
 #define SS_PRIORITY_PING          10	// Client ping.
+#define SS_PRIORITY_STATPANEL     15  // Stat panel
 #define SS_PRIORITY_PROJECTILES   10	// Projectile processing!
 
 

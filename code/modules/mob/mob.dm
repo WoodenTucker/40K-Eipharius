@@ -139,6 +139,12 @@
 			return M
 	return 0
 
+/// Adds this list to the output to the stat browser
+/mob/proc/get_status_tab_items()
+	. = list()
+	if(client.is_stealthed())
+		. += "Stealth: Engaged [client.holder.stealthy_ == 2 ? "(Auto)" : "(Manual)"]"
+
 /mob/proc/movement_delay()
 	. = 0
 	if(istype(loc, /turf))
@@ -631,7 +637,7 @@
 		if(ticker && ticker.current_state != GAME_STATE_PREGAME)
 			//stat("Local Time", stationtime2text())
 			//stat("Local Date", stationdate2text())
-			stat("Round Duration", roundduration2text())
+			stat("Round Duration", DisplayTimeText(world.time - SSticker.round_start_time))
 		if(client.holder || isghost(client.mob))
 			stat("Location:", "([x], [y], [z]) [loc]")
 

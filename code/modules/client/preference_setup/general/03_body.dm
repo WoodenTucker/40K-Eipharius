@@ -110,7 +110,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	pref.b_skin			= sanitize_integer(pref.b_skin, 0, 255, initial(pref.b_skin))
 	pref.h_style		= sanitize_inlist(pref.h_style, GLOB.hair_styles_list, initial(pref.h_style))
 	pref.vice		    = sanitize_inlist(pref.vice, GLOB.vice_list, initial(pref.vice))
-	pref.cult 			= sanitize_inlist(pref.cult, list("None", "khorne", "nurgle", "slaanesh", "tzeentch"), initial(pref.cult))
+	pref.cult 			= sanitize_inlist(pref.cult, list("None","khorne", "nurgle", "slaanesh", "tzeentch"), initial(pref.cult))
 	pref.f_style		= sanitize_inlist(pref.f_style, GLOB.facial_hair_styles_list, initial(pref.f_style))
 	pref.r_eyes			= sanitize_integer(pref.r_eyes, 0, 255, initial(pref.r_eyes))
 	pref.g_eyes			= sanitize_integer(pref.g_eyes, 0, 255, initial(pref.g_eyes))
@@ -301,25 +301,10 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 				return TOPIC_REFRESH
 			else
 				pref.vice = new_v_type
-				switch(pref.vice)
-					if("Lho")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED lho sticks. +</span>")
-					if("Alcohol")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED alcohol regularly. +</span>")
-					if("Piety")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED to receive blessings or be near a holy site regularly. +</span>")
-					if("Obscura")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED obscura. +</span>")
-					if("Neat Freak")
-						to_chat(user, "<span class='badmood'>⠀+ You NEED a clean environment. You are bothered especially by filth and decay. +</span>")
-					if("Glutton")
-						to_chat(user, "<span class='badmood'>⠀+ You can't just eat enough to survive, you must eat until you're stuffed. +</span>")
-					if("Parental Instincts")
-						to_chat(user, "<span class='badmood'>⠀+ Every child in this cursed land is your ward, do not let evil befall them! +</span>")
 				return TOPIC_REFRESH
 
 	else if(href_list["religion"])
-		var/chosen_religion = input(user, "Choose your god:", CHARACTER_PREFERENCE_INPUT_TITLE) as null|anything in list("khorne", "nurgle", "slaanesh", "tzeentch", "None")
+		var/chosen_religion = tgui_input_list(user, "Choose your god", CHARACTER_PREFERENCE_INPUT_TITLE, list("khorne", "nurgle", "slaanesh", "tzeentch", "None"))
 		if(chosen_religion && CanUseTopic(user))
 			if(href_list["religion"] == "Random")
 				pref.cult = pick(list("khorne", "nurgle", "slaanesh", "tzeentch"))
@@ -413,6 +398,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	else if(href_list["skin_tone"])
 		if(!has_flag(mob_species, HAS_A_SKIN_TONE))
 			return TOPIC_NOACTION
+		tgui_input_number(user, "Choose a number", "Number Input")
 		var/new_s_tone = input(user, "Choose your character's skin-tone. Lower numbers are lighter, higher are darker. Range: 1 to [mob_species.max_skin_tone()]", CHARACTER_PREFERENCE_INPUT_TITLE, (-pref.s_tone) + 35) as num|null
 		mob_species = all_species[pref.species]
 		if(new_s_tone && has_flag(mob_species, HAS_A_SKIN_TONE) && CanUseTopic(user))

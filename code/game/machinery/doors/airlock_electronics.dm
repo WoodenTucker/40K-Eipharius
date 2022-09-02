@@ -22,19 +22,19 @@
 	if (!ishuman(user) && !istype(user,/mob/living/silicon/robot))
 		return ..(user)
 
-	tg_ui_interact(user)
+	// TODO tg_ui_interact(user)
 
 
 
 //tgui interact code generously lifted from tgstation.
-/obj/item/airlock_electronics/tg_ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, \
-	datum/tgui/master_ui = null, datum/ui_state/state = tg_hands_state)
+/obj/item/airlock_electronics/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0)
+	//datum/tgui/master_ui = null, datum/ui_state/state = tg_hands_state)
 
-	SStgui.try_update_ui(user, src, ui_key, ui, force_open)
-	if(!ui)
-		ui = new(user, src, ui_key, "airlock_electronics", src.name, 1000, 500, master_ui, state)
-		ui.open()
-
+	//SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+	//if(!ui)
+		//ui = new(user, src, ui_key, "airlock_electronics", src.name, 1000, 500, master_ui, state)
+		//ui.open()
+// TODO
 /obj/item/airlock_electronics/ui_data(mob/user)
 	var/list/data = list()
 	var/list/regions = list()
@@ -58,6 +58,7 @@
 
 	return data
 
+/* TODO
 /obj/item/airlock_electronics/ui_act(action, params)
 	if(..())
 		return TRUE
@@ -100,6 +101,7 @@
 				return TRUE
 			locked = 1
 			. = TRUE
+*/ //TODO
 
 /obj/item/airlock_electronics/secure
 	name = "secure airlock electronics"
@@ -113,8 +115,9 @@
 	locked = 0
 	lockable = 0
 
-/obj/item/airlock_electronics/brace/tg_ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = tg_deep_inventory_state)
-	SStgui.try_update_ui(user, src, ui_key, ui, force_open)
-	if(!ui)
-		ui = new(user, src, ui_key, "airlock_electronics", src.name, 1000, 500, master_ui, state)
-		ui.open()
+/obj/item/airlock_electronics/brace/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null)
+	//SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+	//if(!ui)
+		//ui = new(user, src, ui_key, "airlock_electronics", src.name, 1000, 500, master_ui, state)
+		//ui.open()
+// TODO

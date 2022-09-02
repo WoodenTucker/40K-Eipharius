@@ -150,7 +150,7 @@
 	return src.attack_hand(user)
 
 /obj/machinery/door_timer/attack_hand(var/mob/user as mob)
-	tg_ui_interact(user)
+	tgui_interact(user)
 
 /obj/machinery/door_timer/ui_data(mob/user)
 	var/list/data = list()
@@ -173,7 +173,7 @@
 	data["flashes"] = flashes
 	return data
 
-
+/* TODO
 /obj/machinery/door_timer/ui_act(action, params)
 	if(..())
 		return TRUE
@@ -197,14 +197,14 @@
 
 	src.update_icon()
 	return TRUE
+*/ //TODO
 
-
-/obj/machinery/door_timer/tg_ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
+/obj/machinery/door_timer/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = GLOB.default_state)
 	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
-	if(!ui)
-		ui = new(user, src, ui_key, "brig_timer", name , 300, 150, master_ui, state)
-		ui.open()
-
+	//if(!ui)
+		//ui = new(user, src, ui_key, "brig_timer", name , 300, 150, master_ui, state)
+		//ui.open()
+// TODO
 //icon update function
 // if NOPOWER, display blank
 // if BROKEN, display blue screen of death icon AI uses

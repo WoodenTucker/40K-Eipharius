@@ -249,10 +249,6 @@
 			return global.ascii_reset;
 		if("ascii_yellow")
 			return global.ascii_yellow;
-		if("asset_cache")
-			return global.asset_cache;
-		if("asset_datums")
-			return global.asset_datums;
 		if("assigned")
 			return global.assigned;
 		if("assigned_blocks")
@@ -551,8 +547,6 @@
 			return global.last_chew;
 		if("last_message_id")
 			return global.last_message_id;
-		if("last_round_duration")
-			return global.last_round_duration;
 		if("license_to_url")
 			return global.license_to_url;
 		if("light_overlay_cache")
@@ -665,12 +659,6 @@
 			return global.newscaster_standard_feeds;
 		if("next_account_number")
 			return global.next_account_number;
-		if("next_duration_update")
-			return global.next_duration_update;
-		if("next_station_date_change")
-			return global.next_station_date_change;
-		if("not_incapacitated_turf_state")
-			return global.not_incapacitated_turf_state;
 		if("ntnet_card_uid")
 			return global.ntnet_card_uid;
 		if("ntnet_global")
@@ -805,10 +793,6 @@
 			return global.robot_modules;
 		if("round_progressing")
 			return global.round_progressing;
-		if("round_start_time")
-			return global.round_start_time;
-		if("roundstart_hour")
-			return global.roundstart_hour;
 		if("rune_list")
 			return global.rune_list;
 		if("runtime_diary")
@@ -877,8 +861,6 @@
 			return global.sqlport;
 		if("station_account")
 			return global.station_account;
-		if("station_date")
-			return global.station_date;
 		if("stool_cache")
 			return global.stool_cache;
 		if("stored_shock_by_ref")
@@ -931,34 +913,6 @@
 			return global.tertiary_mode;
 		if("text_tag_icons")
 			return global.text_tag_icons;
-		if("tg_admin_state")
-			return global.tg_admin_state;
-		if("tg_always_state")
-			return global.tg_always_state;
-		if("tg_conscious_state")
-			return global.tg_conscious_state;
-		if("tg_contained_state")
-			return global.tg_contained_state;
-		if("tg_deep_inventory_state")
-			return global.tg_deep_inventory_state;
-		if("tg_default_state")
-			return global.tg_default_state;
-		if("tg_hands_state")
-			return global.tg_hands_state;
-		if("tg_human_adjacent_state")
-			return global.tg_human_adjacent_state;
-		if("tg_inventory_state")
-			return global.tg_inventory_state;
-		if("tg_not_contained_state")
-			return global.tg_not_contained_state;
-		if("tg_not_incapacitated_state")
-			return global.tg_not_incapacitated_state;
-		if("tg_physical_state")
-			return global.tg_physical_state;
-		if("tg_self_state")
-			return global.tg_self_state;
-		if("tg_z_state")
-			return global.tg_z_state;
 		if("threat_announcement")
 			return global.threat_announcement;
 		if("ticker")
@@ -1037,7 +991,7 @@
 			return global.z_levels;
 		if("zone_blocked")
 			return global.zone_blocked;
-		
+
 /proc/writeglobal(which, newval)
 	switch(which)
 		if("ALL_ANTIGENS")
@@ -1288,10 +1242,6 @@
 			global.ascii_reset=newval;
 		if("ascii_yellow")
 			global.ascii_yellow=newval;
-		if("asset_cache")
-			global.asset_cache=newval;
-		if("asset_datums")
-			global.asset_datums=newval;
 		if("assigned")
 			global.assigned=newval;
 		if("assigned_blocks")
@@ -1590,8 +1540,6 @@
 			global.last_chew=newval;
 		if("last_message_id")
 			global.last_message_id=newval;
-		if("last_round_duration")
-			global.last_round_duration=newval;
 		if("license_to_url")
 			global.license_to_url=newval;
 		if("light_overlay_cache")
@@ -1704,12 +1652,6 @@
 			global.newscaster_standard_feeds=newval;
 		if("next_account_number")
 			global.next_account_number=newval;
-		if("next_duration_update")
-			global.next_duration_update=newval;
-		if("next_station_date_change")
-			global.next_station_date_change=newval;
-		if("not_incapacitated_turf_state")
-			global.not_incapacitated_turf_state=newval;
 		if("ntnet_card_uid")
 			global.ntnet_card_uid=newval;
 		if("ntnet_global")
@@ -1844,10 +1786,6 @@
 			global.robot_modules=newval;
 		if("round_progressing")
 			global.round_progressing=newval;
-		if("round_start_time")
-			global.round_start_time=newval;
-		if("roundstart_hour")
-			global.roundstart_hour=newval;
 		if("rune_list")
 			global.rune_list=newval;
 		if("runtime_diary")
@@ -1916,8 +1854,6 @@
 			global.sqlport=newval;
 		if("station_account")
 			global.station_account=newval;
-		if("station_date")
-			global.station_date=newval;
 		if("stool_cache")
 			global.stool_cache=newval;
 		if("stored_shock_by_ref")
@@ -1970,34 +1906,6 @@
 			global.tertiary_mode=newval;
 		if("text_tag_icons")
 			global.text_tag_icons=newval;
-		if("tg_admin_state")
-			global.tg_admin_state=newval;
-		if("tg_always_state")
-			global.tg_always_state=newval;
-		if("tg_conscious_state")
-			global.tg_conscious_state=newval;
-		if("tg_contained_state")
-			global.tg_contained_state=newval;
-		if("tg_deep_inventory_state")
-			global.tg_deep_inventory_state=newval;
-		if("tg_default_state")
-			global.tg_default_state=newval;
-		if("tg_hands_state")
-			global.tg_hands_state=newval;
-		if("tg_human_adjacent_state")
-			global.tg_human_adjacent_state=newval;
-		if("tg_inventory_state")
-			global.tg_inventory_state=newval;
-		if("tg_not_contained_state")
-			global.tg_not_contained_state=newval;
-		if("tg_not_incapacitated_state")
-			global.tg_not_incapacitated_state=newval;
-		if("tg_physical_state")
-			global.tg_physical_state=newval;
-		if("tg_self_state")
-			global.tg_self_state=newval;
-		if("tg_z_state")
-			global.tg_z_state=newval;
 		if("threat_announcement")
 			global.threat_announcement=newval;
 		if("ticker")
@@ -2076,7 +1984,7 @@
 			global.z_levels=newval;
 		if("zone_blocked")
 			global.zone_blocked=newval;
-		
+
 /var/list/_all_globals=list(
 	"ALL_ANTIGENS",
 	"ANTAG_FREQS",

@@ -150,7 +150,7 @@
 			message += "I am <b>[skillnumtodesc(S.level)]</b> at [S.name].\n"
 		else
 			message += "<small>I have no knowledge of [S.name].</small>\n"
-	to_chat(src, message)
+	to_chat(src, examine_block(message))
 
 //Use this proc to add stats to the jobs, it will add up on default values, keep that in mind
 /mob/living/carbon/human/proc/add_stats(var/strength, var/dexterity, var/endurance, var/intelligence,)//TODO: Make this more atomic.
