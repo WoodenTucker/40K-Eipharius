@@ -12392,6 +12392,10 @@
 /mob/living/simple_animal/hostile/retaliate/rat,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/caves/undercity)
+"YA" = (
+/obj/effect/floor_decal/turf/brick,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/caves)
 "YB" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -45175,7 +45179,7 @@ ug
 qK
 SI
 PI
-PI
+YA
 PI
 PI
 PI
