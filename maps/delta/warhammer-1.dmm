@@ -1073,7 +1073,6 @@
 /obj/item/organ/internal/liver,
 /obj/item/organ/internal/kidneys,
 /obj/item/organ/internal/heart,
-/obj/item/organ/internal/brain,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
@@ -2205,16 +2204,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/habs)
-"iX" = (
-/obj/structure/table/standard{
-	color = "grey"
-	},
-/obj/item/defibrillator/loaded,
-/turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/caves)
 "iY" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4581,13 +4570,6 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"st" = (
-/obj/machinery/organ_printer/flesh/mapped,
-/turf/simulated/floor/tiled{
-	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/caves)
 "su" = (
 /obj/structure/closet/cabinet{
 	color = "grey"
@@ -5114,6 +5096,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"ur" = (
+/obj/structure/table/standard{
+	color = "grey"
+	},
+/obj/item/defibrillator/loaded,
+/turf/simulated/floor/tiled{
+	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "us" = (
 /obj/structure/table/woodentable,
 /obj/item/device/cassette/inn1,
@@ -12365,6 +12357,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/habs)
+"Yg" = (
+/obj/machinery/organ_printer/flesh/mapped,
+/turf/simulated/floor/tiled{
+	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "Yi" = (
 /obj/structure/table/woodentable,
 /obj/item/reagent_containers/food/snacks/cheesiehonkers,
@@ -38330,7 +38329,7 @@ PI
 PI
 PI
 qb
-st
+Yg
 bK
 Dl
 bK
@@ -38587,7 +38586,7 @@ PI
 PI
 PI
 qb
-iX
+ur
 bK
 PH
 bK
