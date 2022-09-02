@@ -289,7 +289,7 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	damage = 25
 	pellets = 10
-	range_step = 3
+	range_step = 1
 	spread_step = 8
 	range = 8
 

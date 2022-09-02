@@ -430,7 +430,6 @@
 	color = "#60a584"
 	metabolism = REM * 0.5
 	overdose = REAGENTS_OVERDOSE
-	overdose = 30
 	reagent_addiction_strength = 40
 
 /datum/reagent/space_drugs/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
@@ -442,10 +441,11 @@
 		drug_strength = drug_strength * 0.8
 
 	M.druggy = max(M.druggy, drug_strength)
+	if(prob(10) && isturf(M.loc) && !istype(M.loc, /turf/space) && M.canmove && !M.restrained())
+		step(M, pick(GLOB.cardinal))
 	if(prob(7))
 		M.emote(pick("twitch", "drool", "moan", "giggle"))
 	M.add_chemical_effect(CE_PULSE, -1)
-	M.adjustBruteLoss(-0.5)
 	M.add_event("high", /datum/happiness_event/high)
 	//SUGAR CRACK PIE, GET ME HIGH
 

@@ -1,6 +1,6 @@
 /obj/item/projectile/bullet/pellet/fragment
-	damage = 60
-	range_step = 3 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
+	damage = 70
+	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
 	spread_step = 20
@@ -10,16 +10,13 @@
 	no_attack_log = 1
 	muzzle_type = null
 	do_not_pass_trench = TRUE
-	accuracy = -6
 
 /obj/item/projectile/bullet/pellet/fragment/strong
-	damage = 70
-	range_step = 1 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
-	range = 5
+	damage = 90
+	range_step = 4 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 
 /obj/item/projectile/bullet/pellet/fragment/weak
 	damage = 60
-	range_step = 3
 
 /obj/item/grenade/frag
 	name = "fragmentation grenade"
@@ -178,8 +175,8 @@ obj/mortar/flare/blue
 	desc = "A light fragmentation grenade, designed to be fired from a launcher. It can still be activated and thrown by hand if necessary."
 	icon_state = "fragshell"
 
-	explosion_size = 3
-	num_fragments = 8
+	explosion_size = 4
+	num_fragments = 4
 
 /obj/item/grenade/frag/high_yield
 	name = "fragmentation bomb"
@@ -199,8 +196,8 @@ obj/mortar/flare/blue
 	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
 	icon_state = "krak_grenade"
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
-	explosion_size = 4
-	num_fragments = 4
+	explosion_size = 3
+	num_fragments = 2
 
 /obj/item/grenade/frag/high_yield/homemade
 	name = "Pipe Grenade"
