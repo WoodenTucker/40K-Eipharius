@@ -110,26 +110,6 @@
 	..()
 	if(user.zoomed)
 		user.do_zoom()
-
-// adeptus mech galv rifle. no scope yet.
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/galvrifle
-	name = "Galvanic Rifle"
-	desc = "A rifle from the Skitarii legions of the Adeptus Mechanicus. It may look primitive, compared to energy weapons and the like, but the bullets have certainly kept up with modern technological breakthroughs. Uses .338 lapua (DO NOT ATTACH SCOPE, BUGGED AF!)"
-	icon_state = "galvrifle"
-	item_state = "galvrifle"
-	empty_icon = "galvrifle-e"
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	caliber = "galvanic"
-	screen_shake = 0.4
-	max_shells = 6
-	ammo_type = /obj/item/ammo_casing/lp338
-	accuracy = -3.0
-	one_hand_penalty = 20 // big rifle
-	fire_delay = 9
-	sales_price = 55 //adamantium
-
-
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
 	name = "Mark IV .338 Stub Rifle"
 	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
@@ -536,7 +516,7 @@
 
 /obj/item/ammo_magazine/a762/m14/battlerifle_mag
 	name = "Armageddon Pattern magazine"
-
+/*
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
 	name = "Mk.1 Armageddon Pattern Stubber"
 	icon_state = "rsc"
@@ -554,7 +534,7 @@
 	unloaded_icon = "rsc-e"
 	unwielded_unloaded_icon = "rsc-e"
 	wielded_unloaded_icon = "rsc-wielded-e"
-
+*/
 /obj/item/ammo_magazine/a762/rsc
 	icon_state = "rsc"
 	name = "Armageddon Pattern clip"
@@ -592,7 +572,7 @@
 
 	w_class = ITEM_SIZE_HUGE
 
-
+/*
 /obj/item/gun/projectile/automatic/mg08
 	name = "LMG Harbinger"
 	desc = "Named for the death it brings."
@@ -668,7 +648,7 @@
 	firemodes = list()
 	gun_type = GUN_LMG
 	move_delay = 5
-
+*/
 /obj/item/gun/projectile/automatic/machinepistol
 	name = "Mk.22 Autogun"
 	desc = "A mass-produced autogun local to the frontier, often used by pirates and revolutionaries."
@@ -726,7 +706,7 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=3.2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/obj/item/gun/projectile/automatic/autogrim
+/obj/item/gun/projectile/automatic/autogrim // valhallan. keep!
 	name = "Grim Pattern Autogun"
 	desc = "A rugged autogun of Valhallan design, it has a moderate rate of fire and excellent stopping power."
 	icon_state = "autorifle"
@@ -761,7 +741,7 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/obj/item/gun/projectile/automatic/autogrim/krieg
+/obj/item/gun/projectile/automatic/autogrim/krieg //krieg, keep!
 	name = "Krieg Pattern Autogun"
 	desc = "A rugged autogun of Krieg design, it has a slow rate of fire and excellent stopping power."
 	icon_state = "kriegstubber"
@@ -890,7 +870,7 @@
 	loaded_icon = "villiers"
 	unloaded_icon = "villiers-e"
 	fire_sound = "gunshot"//Pistol sounds.
-	desc = "A mass-produced slug pistol common in the frontier."
+	desc = "A rare slug pistol of excellent quality and design."
 	magazine_type = /obj/item/ammo_magazine/c45m/warfare
 	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
 	caliber = ".45"
@@ -908,7 +888,7 @@
 	item_state = "handgun" // Need to get icons for pistols later.
 	loaded_icon = "kieji"
 	unloaded_icon = "kieji-e"
-	desc = "A rare slug pistol of excellent quality and design."
+	desc = "A mass-produced slug pistol common in the frontier."
 	move_delay = 1.5
 	one_hand_penalty = 0.7
 	accuracy = -3
@@ -921,7 +901,7 @@
 	item_state = "handgun" // Need to get icons for pistols later.
 	loaded_icon = "kiejistub"
 	unloaded_icon = "kiejistub-e"
-	desc = "A rare slug pistol of excellent quality and design."
+	desc = "A mass-produced slug pistol common in the frontier. This one has a snub nose."
 	move_delay = 1.5
 	one_hand_penalty = 0.7
 	accuracy = -4
