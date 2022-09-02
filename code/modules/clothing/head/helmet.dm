@@ -12,7 +12,7 @@
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 10)
-	sales_price = 0
+	sales_price = 5
 	flags_inv = BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
