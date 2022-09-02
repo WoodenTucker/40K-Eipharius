@@ -562,7 +562,6 @@ var/const/NO_EMAG_ACT = -50
 	sales_price = 60
 
 /obj/item/card/id/ring/disgracedmedicae
-	name = "access card"
 	icon_state = "medicae_ring"
 	access = list(access_clinic)
 	desc = "An old ring signifying your position as a medicae."

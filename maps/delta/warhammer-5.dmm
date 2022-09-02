@@ -607,6 +607,12 @@
 "ce" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
+/obj/item/card/id/innkey1{
+	access = list(302);
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	name = "inquisitorial key";
+	req_access = null
+	},
 /obj/item/card/id/captains_spare{
 	desc = "The spare ID of the Inquisitor";
 	name = "Inquisitor";
@@ -1841,8 +1847,6 @@
 /obj/structure/table/marble{
 	color = "grey"
 	},
-/obj/item/gun/launcher/syringe/disguised,
-/obj/item/reagent_containers/glass/bottle/stoxin,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "iO" = (
@@ -4708,21 +4712,6 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"xw" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/item/card/id/innkey1{
-	access = list(302,331,330,225,333,211);
-	desc = "This key is required to access the Dropship and Inquisition Base.";
-	name = "inquisitorial key";
-	req_access = null
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "xD" = (
 /obj/structure/closet/crate/miner,
 /turf/simulated/floor/tiled/dark{
@@ -6761,14 +6750,14 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "JP" = (
 /obj/structure/cult/talisman,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/head/inqhelm,
 /obj/item/card/id/innkey1{
-	access = list(302,333,211);
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";
 	req_access = null
 	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/head/inqhelm,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "JR" = (
@@ -9092,7 +9081,7 @@
 "XJ" = (
 /obj/structure/cult/talisman,
 /obj/item/card/id/innkey1{
-	access = list(302,333,211);
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";
 	req_access = null
@@ -14859,7 +14848,7 @@ wc
 tj
 NF
 uI
-xw
+Jz
 cd
 tj
 tj
