@@ -12,8 +12,8 @@
 	response_harm = "hits"
 	speed = 3 // Their speed is low to prevent them from charging into melee range immediately.
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 170
-	health = 170
+	maxHealth = 150
+	health = 150
 	harm_intent_damage = 5
 	melee_damage_lower = 20
 	melee_damage_upper = 30

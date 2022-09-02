@@ -7,7 +7,7 @@
 
 		if(src.vice == "Piety")
 			if(src.loc.loc.name == "Chapel" ) //src loc goes to the tile, need to access the tiles loc
-				src.viceneed -= rand(15,25)
+				src.viceneed -= rand(35,45)
 				if(prob(5))
 					to_chat(src, "<span class='goodmood'>+ I feel at ease here. +</span>\n")
 
@@ -17,7 +17,7 @@
 			if(src.happiness < -17) //stops them from acquiring infinite sad
 				src.happiness = -17
 
-			for(var/obj/effect/decal/cleanable/H in view(3, src))
+			for(var/obj/effect/decal/cleanable/H in view(2, src))
 				if(src.vice == "Neat Freak" && src.faction != "nurgle")
 					if(prob(2))
 						to_chat(src, "<span class='badmood'>+ Emperor it's filthy here... +</span>\n")
@@ -36,13 +36,13 @@
 				if(src.vice == "Alcohol")
 					var/textSlice = copytext("[drug]",1,23) //this is incredibly fucking hacky but drug is an associated array and the key is an obj for some fucking reason
 					if(textSlice == "/datum/reagent/ethanol")
-						src.viceneed -= rand(3,6)
+						src.viceneed -= 1
 						if(prob(2))
 							to_chat(src, "<span class='goodmood'>+ Now I'm buzzing... +</span>\n")
 				if(src.vice == "Obscura")
 					var/textSlice = copytext("[drug]",1,0) //this is incredibly fucking hacky but drug is an associated array and the key is an obj for some fucking reason
 					if(textSlice == "/datum/reagent/space_drugs")
-						src.viceneed -= rand(3,6)
+						src.viceneed -= 1
 						if(prob(2))
 							to_chat(src, "<span class='goodmood'>+ I finally feel human again... +</span>\n")
 
@@ -61,7 +61,7 @@
 
 		else if(viceneed <= 1000 && vice == "Glutton" && nutrition >= 375)
 			spawn(10)
-				viceneed -= rand(3,6)
+				viceneed -= rand(1,2)
 				clear_event("vice")
 
 	if(viceneed > 1000)
