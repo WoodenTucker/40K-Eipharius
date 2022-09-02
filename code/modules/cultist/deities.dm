@@ -36,6 +36,9 @@
 	name = "nurgle"
 	status_icon_state = "nurgle"
 	rune_type = /obj/effect/cleanable/heretic_rune/nurgle
+	possible_blessings = list(
+						/datum/heretic_effect/heal,
+						/datum/heretic_effect/zombie)
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
 						/datum/rune_recipe/nurgle/toughen,
