@@ -307,6 +307,7 @@
 /area/cadiaoutpost/oa/caves)
 "bi" = (
 /obj/effect/floor_decal/turf/aesculapius/mento,
+/obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
 "bn" = (
@@ -913,6 +914,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "dI" = (
 /obj/structure/closet/body_bag/cryobag,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -1079,6 +1081,7 @@
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -2406,6 +2409,7 @@
 	dir = 8;
 	icon_state = "torchwall0"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -4135,6 +4139,7 @@
 /area/cadiaoutpost/oa/caves)
 "qO" = (
 /obj/effect/decal/remains,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -4194,6 +4199,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "qV" = (
 /obj/structure/iv_drip,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -4501,6 +4507,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "se" = (
 /obj/effect/floor_decal/turf/aesculapius/mori,
+/obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
 "sj" = (
@@ -6593,6 +6600,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "AH" = (
 /obj/effect/floor_decal/turf/aesculapius/mem,
+/obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
 "AI" = (
@@ -7223,6 +7231,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Dl" = (
 /obj/structure/bed/roller,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -8004,6 +8013,7 @@
 	dir = 4;
 	icon_state = "torchwall0"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -10335,6 +10345,7 @@
 	icon_state = "wheelchair"
 	},
 /obj/effect/decal/remains,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -10532,6 +10543,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "Qv" = (
 /obj/structure/bed/chair/wheelchair,
+/obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
 	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
 	icon_state = "white1"
@@ -11231,6 +11243,13 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/mining/eva)
+"TB" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled{
+	desc = "Heretics crave the cleansing fire of absolution. They need not fear, for we shall deliver it to them.";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/caves)
 "TE" = (
 /obj/item/clothing/under/rank/medical/scrubs/purple,
 /obj/item/clothing/under/rank/medical/scrubs/green,
@@ -11307,6 +11326,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "TU" = (
 /obj/effect/floor_decal/turf/aesculapius,
+/obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/caves)
 "TV" = (
@@ -36225,12 +36245,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+TB
+TB
 qO
-bK
+TB
 Gs
-bK
+TB
 qb
 PI
 PI
@@ -36483,11 +36503,11 @@ PI
 PI
 PI
 qV
-bK
-bK
-bK
-bK
-bK
+TB
+TB
+TB
+TB
+TB
 qb
 PI
 PI
@@ -36739,12 +36759,12 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
-bK
-bK
-bK
+TB
+TB
+TB
+TB
+TB
+TB
 qb
 PI
 PI
@@ -36996,12 +37016,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+TB
+TB
 dI
-bK
-bK
-bK
+TB
+TB
+TB
 qb
 PI
 PI
@@ -37253,12 +37273,12 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
+TB
+TB
+TB
 AH
 Dl
-bK
+TB
 qb
 PI
 PI
@@ -37510,12 +37530,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+TB
+TB
 TU
 bi
-bK
-bK
+TB
+TB
 qb
 PI
 PI
@@ -37767,9 +37787,9 @@ PI
 PI
 PI
 PI
-bK
-bK
-bK
+TB
+TB
+TB
 se
 qV
 Qv
@@ -38024,12 +38044,12 @@ PI
 PI
 PI
 bK
-bK
-bK
-bK
-bK
-bK
-bK
+TB
+TB
+TB
+TB
+TB
+TB
 qb
 PI
 PI
@@ -38281,12 +38301,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+TB
+TB
 Dl
-bK
-bK
-bK
+TB
+TB
+TB
 qb
 PI
 PI
@@ -38538,12 +38558,12 @@ PI
 PI
 PI
 PI
-bK
-bK
+TB
+TB
 PH
-bK
-bK
-bK
+TB
+TB
+TB
 qb
 PI
 PI
@@ -38795,12 +38815,12 @@ PI
 PI
 PI
 PI
-bK
+TB
 ev
-bK
-bK
+TB
+TB
 jU
-bK
+TB
 qb
 PI
 PI
