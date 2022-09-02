@@ -290,12 +290,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-<<<<<<< HEAD
-=======
-"bW" = (
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
->>>>>>> main
 "bX" = (
 /obj/machinery/light{
 	dir = 1;
@@ -335,12 +329,6 @@
 "ch" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-<<<<<<< HEAD
-=======
-"cl" = (
-/turf/simulated/mineral/snowycave,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
->>>>>>> main
 "cm" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark{
@@ -535,12 +523,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-<<<<<<< HEAD
 "hV" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-=======
->>>>>>> main
 "ii" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/snow,
@@ -1310,12 +1295,9 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-<<<<<<< HEAD
 "Xr" = (
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
-=======
->>>>>>> main
 "XS" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -32154,326 +32136,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-aF
-cJ
-cJ
-=======
-is
-cJ
-cJ
-aF
->>>>>>> main
-cJ
-cJ
-cJ
-cJ
-<<<<<<< HEAD
-cJ
-=======
-ad
-cJ
-ad
-ad
-ad
->>>>>>> main
-cJ
-ak
-ak
-ak
-ak
-ak
-ak
-ak
-ak
-<<<<<<< HEAD
-Cb
-ak
-=======
-cJ
->>>>>>> main
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-AZ
-"}
-<<<<<<< HEAD
-(120,1,1) = {"
-=======
-(121,1,1) = {"
->>>>>>> main
-AZ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-<<<<<<< HEAD
-=======
-ak
->>>>>>> main
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-<<<<<<< HEAD
-cJ
-cJ
-=======
-ak
->>>>>>> main
-cJ
-cJ
-cJ
-cD
-cD
-cD
-rr
-<<<<<<< HEAD
-rr
-rr
-cv
-dx
-ap
-=======
-bP
-Sq
-cv
-dx
-cm
->>>>>>> main
-rr
-dx
-Ck
-dx
-rr
-cD
-cD
-cD
-<<<<<<< HEAD
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
->>>>>>> main
-cD
-cD
-cD
-cD
-cD
-<<<<<<< HEAD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-=======
->>>>>>> main
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-ak
->>>>>>> main
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-ak
-cJ
-cJ
-cJ
-cJ
-ak
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cr
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
 is
 cJ
 cJ
@@ -32549,7 +32211,6 @@ rr
 cD
 cD
 cD
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -32563,21 +32224,6 @@ hV
 hV
 hV
 hV
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
->>>>>>> main
 cD
 cD
 cD
@@ -32600,15 +32246,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
->>>>>>> main
 cJ
 cJ
 cJ
@@ -32831,7 +32468,6 @@ rr
 cD
 cD
 cD
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -32845,21 +32481,6 @@ hV
 hV
 hV
 hV
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
->>>>>>> main
 cD
 cD
 cD
@@ -32877,15 +32498,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-ak
->>>>>>> main
 cJ
 cJ
 cJ
@@ -33112,7 +32724,6 @@ dx
 rr
 cD
 cD
-<<<<<<< HEAD
 cD
 hV
 hV
@@ -33132,31 +32743,6 @@ cD
 cD
 cD
 cD
-=======
-cD
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -33392,7 +32978,6 @@ rr
 dx
 Ck
 dx
-<<<<<<< HEAD
 rr
 cD
 cD
@@ -33415,35 +33000,6 @@ hV
 hV
 hV
 Xr
-=======
-nG
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -33678,7 +33234,6 @@ yx
 rr
 dx
 Ck
-<<<<<<< HEAD
 dx
 nG
 hV
@@ -33702,35 +33257,6 @@ hV
 hV
 hV
 Xr
-=======
-cm
-nG
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -33965,7 +33491,6 @@ rr
 rr
 jM
 Ck
-<<<<<<< HEAD
 cm
 nG
 hV
@@ -33991,31 +33516,6 @@ hV
 Xr
 cJ
 cJ
-=======
-dx
-nG
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
->>>>>>> main
 cJ
 cJ
 cJ
@@ -34250,7 +33750,6 @@ dx
 Ck
 dx
 nG
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -34272,38 +33771,6 @@ hV
 hV
 hV
 Xr
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -34540,7 +34007,6 @@ dx
 Ck
 dx
 nG
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -34563,41 +34029,6 @@ hV
 Xr
 Xr
 Xr
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -34833,7 +34264,6 @@ dx
 Ck
 dx
 nG
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -34856,33 +34286,6 @@ hV
 Xr
 Xr
 Xr
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -35118,7 +34521,6 @@ dx
 Ck
 dx
 nG
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -35141,33 +34543,6 @@ hV
 Xr
 Xr
 Xr
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -35403,7 +34778,6 @@ dx
 Ck
 dx
 nG
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -35426,62 +34800,6 @@ hV
 Xr
 Xr
 Xr
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-ak
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -35716,7 +35034,6 @@ bY
 dx
 Ck
 dx
-<<<<<<< HEAD
 nG
 hV
 hV
@@ -35740,43 +35057,6 @@ hV
 Xr
 Xr
 Xr
-=======
-cp
-cW
-de
-Ox
-nF
-ce
-dx
-nG
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -36012,7 +35292,6 @@ nF
 ce
 dx
 nG
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -36035,35 +35314,6 @@ hV
 Xr
 Xr
 Xr
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -36341,53 +35591,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-=======
-cD
-cD
-cD
-cD
-RT
-RT
-xU
-gO
-bR
-RT
-dx
-Ck
-dx
-nG
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-bW
-bW
-bW
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -36602,7 +35805,6 @@ RT
 dx
 Ck
 dx
-<<<<<<< HEAD
 nG
 hV
 hV
@@ -36626,35 +35828,6 @@ hV
 Xr
 Xr
 Xr
-=======
-rr
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cD
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -36898,7 +36071,6 @@ cD
 cD
 cD
 cD
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -36907,16 +36079,6 @@ hV
 hV
 hV
 hV
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
->>>>>>> main
 cD
 cD
 cJ
@@ -36943,18 +36105,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-ak
->>>>>>> main
 cJ
 cJ
 cJ
@@ -37178,7 +36328,6 @@ cD
 cD
 cD
 cD
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -37187,16 +36336,6 @@ hV
 hV
 hV
 hV
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
->>>>>>> main
 cD
 cD
 cJ
@@ -37235,17 +36374,6 @@ ak
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-is
->>>>>>> main
 cJ
 cJ
 cJ
@@ -37457,7 +36585,6 @@ cD
 cD
 cD
 cD
-<<<<<<< HEAD
 hV
 hV
 hV
@@ -37466,16 +36593,6 @@ hV
 hV
 hV
 hV
-=======
-cl
-cl
-cl
-cl
-cl
-cl
-cl
-cl
->>>>>>> main
 cD
 cD
 cJ
@@ -37488,17 +36605,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-is
->>>>>>> main
 cJ
 cJ
 cJ
@@ -37735,14 +36841,6 @@ cD
 cD
 cD
 cD
-<<<<<<< HEAD
-=======
-cD
-cD
-cD
-cD
-cD
->>>>>>> main
 cD
 hV
 hV
@@ -37754,16 +36852,6 @@ hV
 hV
 cD
 cD
-cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
 cJ
 cJ
 cJ
@@ -38020,17 +37108,6 @@ cD
 cD
 cD
 cD
-<<<<<<< HEAD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -38285,23 +37362,9 @@ cD
 cD
 cD
 cD
-<<<<<<< HEAD
 cD
 cD
 cD
-=======
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
->>>>>>> main
 cJ
 cJ
 cJ
@@ -38564,7 +37627,6 @@ cJ
 cJ
 cJ
 cJ
-<<<<<<< HEAD
 cJ
 cJ
 cJ
@@ -38822,8 +37884,6 @@ cJ
 cJ
 cJ
 cJ
-=======
->>>>>>> main
 cJ
 cJ
 cJ

@@ -8836,24 +8836,6 @@
 /obj/item/gun/energy/pulse_rifle/pistol,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
-<<<<<<< HEAD
-=======
-"Wn" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/item/card/id/innkey1{
-	access = list(302,331,330,225,333,211);
-	desc = "This key is required to access the Dropship and Inquisition Base.";
-	name = "inquisitorial key";
-	req_access = null
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
->>>>>>> main
 "Wo" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
@@ -9107,7 +9089,6 @@
 	color = "grey"
 	},
 /area/centcom)
-<<<<<<< HEAD
 "XP" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/brick/two,
@@ -9123,8 +9104,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-=======
->>>>>>> main
 "XZ" = (
 /turf/unsimulated/wall/fakeglass{
 	color = "grey";
@@ -14876,11 +14855,7 @@ wc
 tj
 NF
 uI
-<<<<<<< HEAD
 XP
-=======
-Wn
->>>>>>> main
 cd
 tj
 tj
@@ -19712,8 +19687,4 @@ ax
 ax
 ax
 ax
-<<<<<<< HEAD
 "}
-=======
-"}
->>>>>>> main
