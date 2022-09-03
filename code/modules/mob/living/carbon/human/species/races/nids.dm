@@ -24,7 +24,7 @@
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
 
 	 )
-	slowdown = -0.5
+	slowdown = -0.4
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/rendingclaws,
@@ -36,8 +36,8 @@
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.82 // Hardened carapace.
-	burn_mod = 0.81 // Hardened carapace.
+	brute_mod = 0.87 // Hardened carapace.
+	burn_mod = 0.85 // Hardened carapace.
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
@@ -267,8 +267,8 @@
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
 	src.AddInfectionImages()
-	src.add_stats(rand(7,12),rand(17,18),rand(13,13),18) //gives stats str, end, int, dex
-	src.add_skills(10,10,rand(9,9),4,4) //skills such as melee, ranged, med, eng and surg
+	src.add_stats(rand(12,16),rand(14,18),rand(6,6),14) //gives stats str, end, int, dex
+	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
 	client?.color = null

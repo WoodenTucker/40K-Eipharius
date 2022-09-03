@@ -51,12 +51,12 @@
 
 		if(viceneed < 1000 && vice != "Glutton")
 			spawn(10)
-				viceneed += 1
+				viceneed += rand(1,3)
 				clear_event("vice")
 
 		else if(viceneed < 1000 && vice == "Glutton" && nutrition < 375)
 			spawn(10)
-				viceneed += 1
+				viceneed += rand(1,3)
 				clear_event("vice")
 
 		else if(viceneed <= 1000 && vice == "Glutton" && nutrition >= 375)
