@@ -261,8 +261,12 @@
 /obj/structure/torchwall{
 	pixel_y = 30
 	},
+/obj/machinery/light{
+	dir = 1;
+	icon_state = "tube1"
+	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
+/area/cadiaoutpost/oa/supply/mining/eva)
 "aV" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /mob/living/simple_animal/cat/fluff/bones,
@@ -1036,9 +1040,7 @@
 "eo" = (
 /obj/effect/floor_decal/turf/bloodbar/off,
 /obj/structure/table/rack/dark,
-/obj/item/grenade/spawnergrenade/manhacks{
-	name = "mysterious grenade"
-	},
+/obj/item/gun/energy/pulse/plasma/pistol/glock,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -1197,6 +1199,18 @@
 	color = "grey"
 	},
 /obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
+"eO" = (
+/obj/structure/table/steel,
+/obj/item/reagent_containers/food/drinks/bottle/pwine{
+	color = "grey";
+	desc = "The taste is indescribably awful.";
+	name = "Seolite Fancy Wine"
+	},
+/obj/item/gun/energy/pulse/plasma/pistol/toaster,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1378,6 +1392,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"fy" = (
+/obj/effect/floor_decal/turf/basalt9,
+/mob/living/simple_animal/hostile/smalldemon/chaos,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/dark)
 "fz" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -1500,10 +1519,6 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "fT" = (
 /obj/structure/table/steel,
-/obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/device/radio/headset/red_team/sl_alpha,
-/obj/item/device/radio/headset/red_team/sl_alpha,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3083,15 +3098,9 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "mq" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/suit/poncho/colored/red{
-	armor = list("melee"=10,"bullet"=40,"laser"=40,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
-	name = "armored poncho"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/habs)
+/obj/machinery/light,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/supply/mining/eva)
 "ms" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/random/loot/randomarmor,
@@ -4993,7 +5002,7 @@
 	color = "#36261B"
 	},
 /obj/effect/floor_decal/newcorner/blue/solid,
-/obj/item/stack/medical/bruise_pack,
+/obj/machinery/photocopier/faxmachine,
 /turf/simulated/floor/tiled{
 	icon_state = "white1"
 	},
@@ -6311,15 +6320,8 @@
 	},
 /area/cadiaoutpost/oa/service/habs)
 "zF" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/suit/poncho/roles/security{
-	armor = list("melee"=10,"bullet"=40,"laser"=40,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
-	name = "armored poncho"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/habs)
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/supply/mining/eva)
 "zG" = (
 /obj/structure/table/steel,
 /obj/item/material/knife/butch{
@@ -8263,7 +8265,7 @@
 	icon_state = "tube1"
 	},
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
+/area/cadiaoutpost/oa/supply/mining/eva)
 "Hm" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/statue/verina{
@@ -8968,6 +8970,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
+"Kj" = (
+/obj/effect/floor_decal/turf/bloodbar/off,
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "Kl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/iv_drip,
@@ -9705,6 +9714,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Nf" = (
 /obj/effect/floor_decal/turf/basalt0,
+/obj/effect/floor_decal/turf/basalt9,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
@@ -9763,7 +9773,6 @@
 /obj/machinery/door/airlock/gold{
 	color = "grey"
 	},
-/obj/effect/landmark/animal/zygote1,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9989,6 +9998,8 @@
 /obj/item/clothing/suit/sisterofbattle/training,
 /obj/item/clothing/suit/armor/templar,
 /obj/item/clothing/suit/armor/knighthosp,
+/obj/item/clothing/accessory/bishopcloak,
+/obj/item/clothing/accessory/bishopcloak,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "OE" = (
@@ -10011,6 +10022,12 @@
 	maxhealth = 700
 	},
 /turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
+"OH" = (
+/mob/living/simple_animal/hostile/smalldemon/chaos,
+/turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
@@ -10782,6 +10799,9 @@
 	color = "grey";
 	name = "forge belt"
 	},
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -11447,10 +11467,6 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "UD" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/random/loot/goodweapon,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -21642,7 +21658,7 @@ zb
 zo
 Eu
 Eu
-Eu
+Kj
 GW
 Eu
 Eu
@@ -22442,7 +22458,7 @@ zZ
 ma
 rT
 CP
-Ms
+Nf
 ma
 zZ
 VO
@@ -22954,7 +22970,7 @@ zm
 zm
 zZ
 ma
-mI
+fy
 CP
 mI
 ma
@@ -23687,9 +23703,9 @@ zb
 zb
 zb
 md
+zo
 zb
-zb
-zb
+zo
 zb
 zb
 md
@@ -23945,7 +23961,7 @@ zb
 zb
 md
 zb
-zb
+zo
 zb
 zb
 zb
@@ -27580,7 +27596,7 @@ VO
 zZ
 CP
 CP
-iU
+CP
 wX
 CP
 CP
@@ -27837,7 +27853,7 @@ VO
 zZ
 CP
 CP
-CP
+iU
 CP
 CP
 CP
@@ -28092,7 +28108,7 @@ zm
 zm
 VO
 zZ
-Nf
+CP
 CP
 CP
 CP
@@ -29534,7 +29550,7 @@ ow
 el
 kA
 Rx
-mq
+Rx
 Rx
 Rx
 Rx
@@ -30049,7 +30065,7 @@ ow
 YD
 Rx
 Rx
-zF
+Rx
 Rx
 Rx
 UE
@@ -36269,7 +36285,7 @@ nP
 BF
 zo
 lW
-IE
+eO
 Nc
 wU
 zb
@@ -36527,7 +36543,7 @@ BF
 zo
 zG
 zb
-zb
+OH
 zb
 zb
 zb
@@ -43309,7 +43325,7 @@ eD
 eD
 eD
 PY
-PY
+mq
 xG
 kS
 mH
@@ -43566,7 +43582,7 @@ Hx
 Hx
 Hx
 PY
-PY
+zF
 ID
 ij
 mH
@@ -43576,7 +43592,7 @@ mH
 mH
 iG
 ID
-PY
+zF
 PY
 PY
 PY
@@ -43823,7 +43839,7 @@ dC
 gg
 Hx
 PY
-PY
+mq
 xG
 Vs
 mH
