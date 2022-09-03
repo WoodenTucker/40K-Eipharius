@@ -149,59 +149,8 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-/decl/hierarchy/outfit/job/sharpshooter/valhalla
-	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
-	uniform = /obj/item/clothing/under/rank/valhallan_uniform
-	suit = /obj/item/clothing/suit/armor/valhallanarmor
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/valushanka
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
-	suit_store = /obj/item/gun/projectile/automatic/stubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08/ms = 1,
-	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1
-	)
 
-/decl/hierarchy/outfit/job/guardsman/catachan
-	name = OUTFIT_JOB_NAME("Catachan Flamer")
-	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/catachan
-	head = /obj/item/clothing/head/catachan
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/mercycs
-	gloves = null
-	shoes = /obj/item/clothing/shoes/jackboots/catachan
-	mask = null
-	glasses = null
-	suit_store = null
-	l_hand = /obj/item/gun/projectile/automatic/flamer
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/flamer = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/extinguisher,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-
-
-
-// Sniper
-
-/decl/hierarchy/outfit/job/sniper
+/decl/hierarchy/outfit/job/sharpshooter2
 	name = OUTFIT_JOB_NAME("Cadian Sniper")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
@@ -227,28 +176,29 @@ Begin Warhammer loadouts
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/sniper/krieg
-	name = OUTFIT_JOB_NAME("Krieg Marksman")
-	uniform = /obj/item/clothing/under/rank/krieg_uniform
-	suit = /obj/item/clothing/suit/armor/krieger/grenadier
-	back = /obj/item/storage/backpack/satchel/krieger
-	gloves = /obj/item/clothing/gloves/combat/krieg
-	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
-	mask = /obj/item/clothing/mask/gas/krieg
-	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+/decl/hierarchy/outfit/job/sharpshooter/valhalla
+	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
+	uniform = /obj/item/clothing/under/rank/valhallan_uniform
+	suit = /obj/item/clothing/suit/armor/valhallanarmor
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/valushanka
+	mask = null
+	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas/krieg
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/ammo_magazine/box/a556/mg08/ms = 1,
+	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
+	/obj/item/stack/thrones2 = 1
 	)
 
-/decl/hierarchy/outfit/job/sniper/valhalla
+/decl/hierarchy/outfit/job/sharpshooter/valhalla2
 	name = OUTFIT_JOB_NAME("Valhallan Scout Sniper")
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
@@ -269,6 +219,53 @@ Begin Warhammer loadouts
 	/obj/item/ammo_magazine/handful/brifle_handful/ap = 2,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1
+	)
+
+
+/decl/hierarchy/outfit/job/sharpshooter/krieg
+	name = OUTFIT_JOB_NAME("Krieg Marksman")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/krieger/grenadier
+	back = /obj/item/storage/backpack/satchel/krieger
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/helmet/krieghelmet
+	mask = /obj/item/clothing/mask/gas/krieg
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel = 1
+	)
+
+/decl/hierarchy/outfit/job/guardsman/catachan
+	name = OUTFIT_JOB_NAME("Catachan Flamer")
+	uniform = /obj/item/clothing/under/casual_pants/catachan
+	suit = /obj/item/clothing/suit/armor/catachan
+	head = /obj/item/clothing/head/catachan
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/mercycs
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	mask = null
+	glasses = null
+	suit_store = null
+	l_hand = /obj/item/gun/projectile/automatic/flamer
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/flamer = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/extinguisher,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
 	)
 
 /// Sergeant

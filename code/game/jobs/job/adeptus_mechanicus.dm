@@ -207,12 +207,12 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	belt = /obj/item/device/flashlight/lantern
-	suit_store = null
+	suit_store = /obj/item/gun/projectile/automatic/galvanic/rifle
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1, /obj/item/ammo_magazine/galvanic = 4,)
 
 /decl/hierarchy/outfit/job/skitarii/basic
 	uniform = /obj/item/clothing/under/rank/skitarii
