@@ -607,6 +607,12 @@
 "ce" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
+/obj/item/card/id/innkey1{
+	access = list(302);
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	name = "inquisitorial key";
+	req_access = null
+	},
 /obj/item/card/id/captains_spare{
 	desc = "The spare ID of the Inquisitor";
 	name = "Inquisitor";
@@ -1343,7 +1349,6 @@
 	color = "gold";
 	armor = list("melee"=75,"bullet"=75,"laser"=65,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
 	},
-/obj/item/melee/chain/pcsword/khorneaxe,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1841,8 +1846,6 @@
 /obj/structure/table/marble{
 	color = "grey"
 	},
-/obj/item/gun/launcher/syringe/disguised,
-/obj/item/reagent_containers/glass/bottle/stoxin,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "iO" = (
@@ -1961,6 +1964,10 @@
 /area/centcom)
 "js" = (
 /obj/structure/table/rack,
+/obj/item/archaeological_find,
+/obj/item/archaeological_find,
+/obj/item/archaeological_find,
+/obj/item/archaeological_find,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "ju" = (
@@ -5029,6 +5036,9 @@
 	},
 /obj/item/clothing/suit/armor/cuirass,
 /obj/item/clothing/suit/armor/salvage,
+/obj/item/clothing/suit/armor/guardsman/mercenary{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
 /obj/item/clothing/suit/miner{
 	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
 	},
@@ -5593,7 +5603,7 @@
 /obj/item/clothing/head/helmet/hevhelm,
 /obj/item/clothing/head/helmet/seolhelm,
 /obj/item/clothing/suit/armor/seolsuit{
-	armor = list("melee"=40,"bullet"=50,"laser"=60,"energy"=25,"bomb"=40,"bio"=100,"rad"=100);
+	armor = list("melee" = 40, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 40, "bio" = 100, "rad" = 100);
 	name = "Salvaged Anomaly Suit"
 	},
 /turf/simulated/floor/shuttle/darkred,
@@ -6632,10 +6642,10 @@
 /obj/item/clothing/suit/armor/agent/caraspace,
 /obj/item/clothing/suit/armor/agent/caraspace,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/suit/armor/armoredtrench,
+/obj/item/clothing/suit/armor/heavyduster,
 /obj/item/clothing/suit/armor/heretcoat,
 /obj/item/clothing/suit/armor/iplate,
-/obj/item/clothing/suit/armor/enforcer,
-/obj/item/clothing/suit/armor/enforcer,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Ji" = (
@@ -6742,14 +6752,14 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "JP" = (
 /obj/structure/cult/talisman,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/head/inqhelm,
 /obj/item/card/id/innkey1{
-	access = list(302,333,211);
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";
 	req_access = null
 	},
+/obj/effect/floor_decal/turf/brick/two,
+/obj/item/clothing/head/inqhelm,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "JR" = (
@@ -8836,21 +8846,6 @@
 /obj/item/gun/energy/pulse_rifle/pistol,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
-"Wn" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/item/card/id/innkey1{
-	access = list(302,331,330,225,333,211);
-	desc = "This key is required to access the Dropship and Inquisition Base.";
-	name = "inquisitorial key";
-	req_access = null
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Wo" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
@@ -9088,7 +9083,7 @@
 "XJ" = (
 /obj/structure/cult/talisman,
 /obj/item/card/id/innkey1{
-	access = list(302,333,211);
+	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";
 	req_access = null
@@ -14855,7 +14850,7 @@ wc
 tj
 NF
 uI
-Wn
+Jz
 cd
 tj
 tj
