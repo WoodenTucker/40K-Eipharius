@@ -1961,10 +1961,6 @@
 /area/centcom)
 "js" = (
 /obj/structure/table/rack,
-/obj/item/archaeological_find,
-/obj/item/archaeological_find,
-/obj/item/archaeological_find,
-/obj/item/archaeological_find,
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
 "ju" = (
@@ -4708,21 +4704,6 @@
 	icon_state = "white1"
 	},
 /area/centcom)
-"xw" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/item/card/id/innkey1{
-	access = list(302,331,330,225,333,211);
-	desc = "This key is required to access the Dropship and Inquisition Base.";
-	name = "inquisitorial key";
-	req_access = null
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "xD" = (
 /obj/structure/closet/crate/miner,
 /turf/simulated/floor/tiled/dark{
@@ -9108,6 +9089,21 @@
 	color = "grey"
 	},
 /area/centcom)
+"XP" = (
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/obj/item/card/id/innkey1{
+	access = list(302,331,330,225,333,211);
+	desc = "This key is required to access the Dropship and Inquisition Base.";
+	name = "inquisitorial key";
+	req_access = null
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "XZ" = (
 /turf/unsimulated/wall/fakeglass{
 	color = "grey";
@@ -14859,7 +14855,7 @@ wc
 tj
 NF
 uI
-xw
+XP
 cd
 tj
 tj
