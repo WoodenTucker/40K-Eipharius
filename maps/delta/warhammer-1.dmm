@@ -1392,11 +1392,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"fy" = (
-/obj/effect/floor_decal/turf/basalt9,
-/mob/living/simple_animal/hostile/smalldemon/chaos,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/dark)
 "fz" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -8974,13 +8969,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
-"Kj" = (
-/obj/effect/floor_decal/turf/bloodbar/off,
-/obj/effect/landmark/animal/zygote1,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
 "Kl" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/iv_drip,
@@ -9718,7 +9706,6 @@
 /area/cadiaoutpost/oa/service/chapel)
 "Nf" = (
 /obj/effect/floor_decal/turf/basalt0,
-/obj/effect/floor_decal/turf/basalt9,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
@@ -9777,6 +9764,7 @@
 /obj/machinery/door/airlock/gold{
 	color = "grey"
 	},
+/obj/effect/landmark/animal/zygote1,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -21660,7 +21648,7 @@ zb
 zo
 Eu
 Eu
-Kj
+Eu
 GW
 Eu
 Eu
@@ -22460,7 +22448,7 @@ zZ
 ma
 rT
 CP
-Nf
+Ms
 ma
 zZ
 VO
@@ -22972,7 +22960,7 @@ zm
 zm
 zZ
 ma
-fy
+mI
 CP
 mI
 ma
@@ -23705,9 +23693,9 @@ zb
 zb
 zb
 md
-zo
 zb
-zo
+zb
+zb
 zb
 zb
 md
@@ -23963,7 +23951,7 @@ zb
 zb
 md
 zb
-zo
+zb
 zb
 zb
 zb
@@ -27598,7 +27586,7 @@ VO
 zZ
 CP
 CP
-CP
+iU
 wX
 CP
 CP
@@ -27855,7 +27843,7 @@ VO
 zZ
 CP
 CP
-iU
+CP
 CP
 CP
 CP
@@ -28110,7 +28098,7 @@ zm
 zm
 VO
 zZ
-CP
+Nf
 CP
 CP
 CP
