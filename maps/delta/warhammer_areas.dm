@@ -913,7 +913,6 @@ Area basic template
 	name = "Caves" // Regular caves - little to no danger. Soft ambience.
 	icon_state = "cave"
 	music = 'sound/newmusic/General_Ambient2.ogg'
-	var/instability = 0
 
 /area/cadiaoutpost/oa/caves/dark
 	name = "Caves Dark" // Powered areas of the city.
