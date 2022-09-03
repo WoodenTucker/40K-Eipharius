@@ -458,8 +458,7 @@
 	gun_type = GUN_SMG
 	//gun_type = GUN_AUTOMATIC
 
-/* // ISN'T USED. KEEPING IT HERE IF YOU WANNA COPY ITS SOUNDS OR SOMETHING //
-/obj/item/gun/projectile/automatic/m22/warmonger/fully_auto/nemesis
+/obj/item/gun/projectile/automatic/m22/warmonger/fully_auto/nemesis // not used
 	name = "Mk.1 Nemesis"
 	desc = "God, it's fucking ugly, but it does at least kill. Takes Warmonger magazines."
 	icon_state = "bar"
@@ -506,7 +505,7 @@
 	desc = "Found either in your stubber, in your satchel, or on the ground empty."
 	max_ammo = 20
 	icon_state = "autorifle"
-*/
+
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Aegis Pattern Rifle"
 	desc = "A very powerful semi-automatic aegis pattern stub-rifle."
@@ -1002,7 +1001,7 @@
 	loaded_icon = "cognisLMG"
 	unwielded_loaded_icon = "cognisLMG"
 	wielded_loaded_icon = "hmg-wielded"
-	unloaded_icon = "cognisLMG-e"
+	unloaded_icon = "cognisLMG"
 	unwielded_unloaded_icon = "cognisLMG-e"
 	wielded_unloaded_icon = "hmg-wielded-e"
 	burst = 1
@@ -1324,7 +1323,7 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="4-round bursts", burst=4, fire_delay=5, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.3), automatic = 0),
 		)
-
+	
 
 
 /obj/item/gun/projectile/ork/automatic/shoota/bladed
@@ -1459,7 +1458,7 @@
 	str_requirement = 14
 	move_delay = 3
 	one_hand_penalty = 7
-	accuracy = -2
+	accuracy = -2 
 	fire_delay = 3.5
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/galvanic
