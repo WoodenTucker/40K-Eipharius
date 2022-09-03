@@ -214,10 +214,10 @@ Begin Warhammer loadouts
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/storage/box/sniperammo/apds
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	suit_store = /obj/item/gun/projectile/heavysniper
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 2,
+	/obj/item/storage/box/sniperammo = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

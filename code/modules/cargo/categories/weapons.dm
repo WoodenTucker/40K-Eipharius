@@ -41,11 +41,6 @@
 	cost = 170
 	item_path = /obj/item/gun/energy/las/lasgun/longlas
 
-/datum/cargo_entry/weapon/longlas
-	name = "Krieg Pattern Longlas"
-	cost = 182
-	item_path = /obj/item/gun/energy/las/lasgun/longlas/krieg
-
 /datum/cargo_entry/weapon/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	cost = 240
@@ -111,29 +106,14 @@
 	cost = 66
 	item_path = /obj/item/gun/projectile/automatic/autogrim
 
-/datum/cargo_entry/weapon/krieg
-	name = "Krieg Pattern Autogun"
-	cost = 75
-	item_path = /obj/item/gun/projectile/automatic/autogrim/krieg
-
-/datum/cargo_entry/weapon/scipio
-	name = "Scipio Pattern Rifle"
-	cost = 53
-	item_path = /obj/item/gun/projectile/automatic/m22/combatrifle
-
-/datum/cargo_entry/weapon/aegis
-	name = "Aegis Pattern Rifle"
-	cost = 63
-	item_path = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
-
 /datum/cargo_entry/weapon/stubbervilliers
 	name = "Villiers Heavy Stubber"
-	cost = 64
+	cost = 61
 	item_path = /obj/item/gun/projectile/automatic/stubber/villiers
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"
-	cost = 65
+	cost = 63
 	item_path = /obj/item/gun/projectile/automatic/stubber
 
 /datum/cargo_entry/weapon/lockebolter
@@ -180,11 +160,6 @@
 	name = "Kieji Pistol"
 	cost = 39
 	item_path = /obj/item/gun/projectile/warfare/kieji
-
-/datum/cargo_entry/weapon/renpistolsnub
-	name = "Kieji Snub Pistol"
-	cost = 42
-	item_path = /obj/item/gun/projectile/warfare/kieji2
 
 /datum/cargo_entry/weapon/mervexrevolver
 	name = "Mervex Revolver"
