@@ -75,15 +75,15 @@
 	icon_state = "cobolt"
 	sales_price = 10
 
-/obj/item/newore/titaniumore
-	name = "titanium ore"
-	desc = "A chunk of ore containing the strong yet lightweight titanium metal inside. Useful for advanced weapons."
+/obj/item/newore/kultriniumore
+	name = "kultrinium ore"
+	desc = "A chunk of ore containing the strong yet lightweight kultrinium metal inside. Useful for advanced weapons."
 	icon_state = "ore_titanium"
 	sales_price = 10
 
-/obj/item/newore/platinumore
-	name = "platinum ore"
-	desc = "A chunk of platnium ore, strong in conductivity. Useful for advanced ammo"
+/obj/item/newore/diamantineore
+	name = "diamantine ore"
+	desc = "A chunk of diamantine ore, strong in conductivity. Useful for advanced ammo"
 	icon_state = "ore_platinum"
 	sales_price = 12
 
@@ -169,18 +169,18 @@
 	drop_sound = 'sound/items/metaldrop.ogg'
 	sales_price = 25
 
-/obj/item/ingots/titaniumingot
-	name = "titanium ingot"
-	desc = "A solid bar of titanium. It's strong yet lightweight. Useful for advanced weapons."
+/obj/item/ingots/kultriniumingot
+	name = "kultrinium ingot"
+	desc = "A solid bar of kultrinium. It's strong yet lightweight. Useful for advanced weapons."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "titanium_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
 	sales_price = 25
 
-/obj/item/ingots/platinumingot
-	name = "platinum ingot"
-	desc = "A solid bar of platnium. Strong in conductivity. Useful for advanced ammo"
+/obj/item/ingots/diamantineingot
+	name = "diamantine ingot"
+	desc = "A solid bar of diamantine. Strong in conductivity. Useful for advanced ammo"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "platnium_ingot"
 	w_class = ITEM_SIZE_NORMAL
@@ -619,24 +619,24 @@
 		new /obj/item/ingots/coboltingot(src.loc)
 		src.coalfed -= 0.5
 		return
-	else if (istype(O,	/obj/item/newore/titaniumore))
+	else if (istype(O,	/obj/item/newore/kultriniumore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
 		qdel(O)
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/ingots/titaniumingot(src.loc)
+		new /obj/item/ingots/kultriniumingot(src.loc)
 		src.coalfed -= 0.5
 		return
-	else if (istype(O,	/obj/item/newore/platinumore))
+	else if (istype(O,	/obj/item/newore/diamantineore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
 		qdel(O)
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/ingots/platinumingot(src.loc)
+		new /obj/item/ingots/diamantineingot(src.loc)
 		src.coalfed -= 0.5
 		return
 
