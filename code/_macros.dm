@@ -86,6 +86,12 @@
 
 #define isHolyoils(A) istype(A, /obj/item/device/holyoils)
 
+#define isChisel(A) istype(A, /obj/item/device/chisel)
+
+#define isHammer(A) istype(A, /obj/item/device/hammer)
+
+#define isLube(A) istype(A, /obj/item/device/lube)
+
 #define isMultitool(A) istype(A, /obj/item/device/multitool)
 
 #define isCrowbar(A) istype(A, /obj/item/crowbar)
