@@ -216,7 +216,7 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-	if(isHolyoils(W))
+	if(isHolyoils(W)||isLube(W))
 		if(rubtheoils == 0)
 			visible_message("Use your laser cutter first!")
 			return
@@ -570,7 +570,7 @@
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
-	if(isHolyoils(W))
+	if(isHolyoils(W)||isLube(W))
 		if(rubtheoils == 0)
 			visible_message("Use your laser cutter first!")
 			return
@@ -841,7 +841,7 @@
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
-	if(isHolyoils(W))
+	if(isHolyoils(W)||isLube(W))
 		if(rubtheoils == 0)
 			visible_message("Use your laser cutter first!")
 			return
@@ -908,7 +908,7 @@
 */
 
 /obj/item/ingots/goldingot/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(isAutochisel(W))
+	if(isAutochisel(W)||isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 		var/craftingchoices = list("Golden Ring", "Machine Gold",) //lists all possible crafting choices
