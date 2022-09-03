@@ -69,14 +69,11 @@
 
 /obj/item/gun/projectile/revolver/mateba
 	name = "mateba"
-	desc = "The mateba revolver is commonly used by law enforcement and gangers, what it lacks in accuracy it makes up for in sheer firepower."
 	icon_state = "mateba"
 	caliber = ".50"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a50
 	sales_price = 40
-	accuracy = -3
-	fire_delay= 3
 
 /obj/item/gun/projectile/revolver/detective
 	name = "revolver"
@@ -115,7 +112,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = -2.5 //not the best craftsmanship
+	accuracy = -0.4 //not the best craftsmanship
 	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -134,7 +131,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 20
-	accuracy = -3
+	accuracy = -0.5
 	fire_delay= 2.8
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -147,14 +144,14 @@
 /obj/item/gun/projectile/slugrevolver
 	name = "slug revolver"
 	desc = "The slug revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .44 ammo."
-	icon_state = "hunting_revolver"
+	icon_state = "slug_revolver"
 	item_state = "crevolver"
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 10
-	accuracy = -2.5
+	accuracy = -0.3
 	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/c44
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round

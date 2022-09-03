@@ -17,17 +17,17 @@
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol/ms
 
 /datum/cargo_entry/ammo/autogrim
-	name = "GRIM/Krieg Autogun Magazine"
+	name = "GRIM Autogun Magazine"
 	cost = 7
 	item_path = /obj/item/ammo_magazine/autogrim
 
 /datum/cargo_entry/ammo/autogrimap
-	name = "AP GRIM/Krieg Autogun Magazine"
+	name = "AP GRIM Autogun Magazine"
 	cost = 13
 	item_path = /obj/item/ammo_magazine/autogrim/ap
 
 /datum/cargo_entry/ammo/autogrimms
-	name = "MS GRIM/Krieg Autogun Magazine"
+	name = "MS GRIM Autogun Magazine"
 	cost = 15
 	item_path = /obj/item/ammo_magazine/autogrim/ms
 
@@ -45,16 +45,6 @@
 	name = "MS Heavy Stubber Magazine"
 	cost = 19
 	item_path = /obj/item/ammo_magazine/box/a556/mg08/ms
-
-/datum/cargo_entry/ammo/scipiostub
-	name = "Scipio Stub Magazine"
-	cost = 6
-	item_path = /obj/item/ammo_magazine/c45rifle/combatrifle
-
-/datum/cargo_entry/ammo/aegistub
-	name = "Aegis Stub Magazine"
-	cost = 7
-	item_path = /obj/item/ammo_magazine/a762/m14/battlerifle_mag
 
 /datum/cargo_entry/ammo/shellbox
 	name = "Shotgun Shell Box"

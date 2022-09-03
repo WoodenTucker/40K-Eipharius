@@ -122,9 +122,9 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
-	one_hand_penalty = 10
-	fire_delay = 8
-	accuracy = -4
+	one_hand_penalty = 9
+	fire_delay = 9
+	accuracy = -3
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -136,8 +136,8 @@
 	sales_price = 110
 
 	firemodes = list(
-		list(mode_name="semi-automatic", move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
-		list(mode_name="overcharge", move_delay=2, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=9, move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="overcharge", fire_delay = 9.5, move_delay=2, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
@@ -154,7 +154,7 @@
 
 
 /obj/item/gun/energy/las/lasgun/longlas/krieg
-	name = "Krieg Pattern Longlas"
-	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
+	name = "Krieg Pattern Las Sniper"
+	desc = "The choice Lasgun Sniper Rifle of the suicidal Kriegers. The ones with these are usually less suicidal."
 	icon_state = "kriegsniper"
 	item_state = "lasgun"
