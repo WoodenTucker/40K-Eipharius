@@ -1519,6 +1519,10 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "fT" = (
 /obj/structure/table/steel,
+/obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/device/radio/headset/red_team/sl_alpha,
+/obj/item/device/radio/headset/red_team/sl_alpha,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
