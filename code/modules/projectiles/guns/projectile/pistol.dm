@@ -155,6 +155,22 @@
 	else
 		icon_state = "makarov-e"
 
+/obj/item/gun/projectile/genmessorp
+	name = "Genmessor stubpistol"
+	icon_state = "sheetp"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "9mm"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+
+/obj/item/gun/projectile/genmessorp/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "sheetp"
+	else
+		icon_state = "sheetp-e"
+
 /obj/item/gun/projectile/magnum_pistol
 	name = ".50 magnum pistol"
 	desc = "The HelTek Magnus, a robust terran handgun that uses .50 AE ammo."
