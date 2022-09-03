@@ -23,7 +23,7 @@
 
 
 /obj/item/ingots/copperingot/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(isAutochisel(W) || isChisel(W))
+	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 		var/craftingchoices = list("Heavy Stubber Ammo", "Stub Rifle Ammo", "Shells Boxes", "Sniper Rifle Ammo", "Warmonger Magazine", "Mk.3 Autogun Magazine", "Pistol Magazine", ".44 Revolver Speed Loader", "Trench Shovel", "Galvanic Rifle Ammo") //lists all possible crafting choices
@@ -96,7 +96,7 @@
 
 
 
-	if(isLasercutter(W)||isHammer(W))
+	if(isLasercutter(W))
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return
@@ -309,7 +309,7 @@
 */
 
 /obj/item/ingots/ironingot/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(isAutochisel(W)||isChisel(W))
+	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 		var/craftingchoices = list("Boscolet Pattern Stub Rifle", "Snapper Pattern Stub Rifle", "Enforcer Shotgun", "Mk. III Sniper Rifle", "Warmonger Autogun", "Mk.22 Autogun", "Vraks Pattern Heavy Stubber", "Villiers Pistol",/* "The Chrome Stub Pistol",*/ "The Slug Revolver", "Skitarii Plating", "Combat Knife", "Cane Sword", "Landmine") //lists all possible crafting choices
@@ -405,7 +405,7 @@
 
 
 
-	if(isLasercutter(W)||isHammer(W))
+	if(isLasercutter(W))
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return
@@ -675,7 +675,7 @@
 */
 
 /obj/item/ingots/silveringot/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(isAutochisel(W)||isChisel(W))
+	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 		var/craftingchoices = list("Bolt Rifle Magazine","Kantrael M36 Lasgun", "Catachan Mark IV Lascarbine","Lucius No.98 Lasgun", "Kantrael MG Laspistol", ".338 Lapua Magnum Magazine", "Machine Silver", "Galvanic Rifle") //lists all possible crafting choices
@@ -740,7 +740,7 @@
 				src.ismarked = 1
 				src.name = "Silver Ingot (Galvanic Rifle)"
 
-	if(isLasercutter(W)||isHammer(W))
+	if(isLasercutter(W))
 		if(ismarked == 0)
 			visible_message("Use your auto-chisel first!")
 			return

@@ -6,7 +6,7 @@
 #define SILVER                  /obj/item/newore/silverore
 #define GOLD                    /obj/item/newore/goldore
 #define COBOLT					/obj/item/newore/coboltore
-#define PLATNIUM				/obj/item/newore/platinumore
+#define PLATNIUM				/obj/item/newore/platniumore
 #define PHORON                  /obj/item/newore/phoronore
 #define TITANIUM				 /obj/item/newore/titaniumore
 #define ADAMANTIUM              /obj/item/newore/adamantiumore

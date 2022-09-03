@@ -81,10 +81,10 @@
 	icon_state = "ore_titanium"
 	sales_price = 10
 
-/obj/item/newore/platinumore
-	name = "platinum ore"
+/obj/item/newore/platniumore
+	name = "platnium ore"
 	desc = "A chunk of platnium ore, strong in conductivity. Useful for advanced ammo"
-	icon_state = "ore_platinum"
+	icon_state = "ore_platinium"
 	sales_price = 12
 
  /* _____                   _
@@ -167,7 +167,7 @@
 	icon_state = "cobolt_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	sales_price = 25
+	sales_price = 10
 
 /obj/item/ingots/titaniumingot
 	name = "titanium ingot"
@@ -176,16 +176,16 @@
 	icon_state = "titanium_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	sales_price = 25
+	sales_price = 10
 
-/obj/item/ingots/platinumingot
-	name = "platinum ingot"
+/obj/item/ingots/platniumingot
+	name = "platnium ingot"
 	desc = "A solid bar of platnium. Strong in conductivity. Useful for advanced ammo"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "platnium_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	sales_price = 25
+	sales_price = 10
 
 /*
    _____
@@ -629,14 +629,14 @@
 		new /obj/item/ingots/titaniumingot(src.loc)
 		src.coalfed -= 0.5
 		return
-	else if (istype(O,	/obj/item/newore/platinumore))
+	else if (istype(O,	/obj/item/newore/platniumore))
 		visible_message("[user] feeds [O] into the fire!")
 		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
 		qdel(O)
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/ingots/platinumingot(src.loc)
+		new /obj/item/ingots/platniumingot(src.loc)
 		src.coalfed -= 0.5
 		return
 
