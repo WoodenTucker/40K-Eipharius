@@ -92,7 +92,7 @@
 	src.update_eyes() //should fix grey vision
 
 	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
-	src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+	remove_verb(src, /mob/living/carbon/human/skitarii/proc/giveskitstats) //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
 
 	var/obj/item/card/id/dog_tag/skitarii/W = new

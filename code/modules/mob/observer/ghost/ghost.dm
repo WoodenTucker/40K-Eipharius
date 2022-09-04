@@ -169,7 +169,7 @@ Works together with spawning an observer, noted above.
 
 		if(ghost.client && !ghost.client.holder)
 			ghost.client.color = NOIRLIST//We don't want admins to have to see things in black and white the whole time.
-			ghost.verbs -= /mob/observer/ghost/verb/toggle_antagHUD	// Poor guys, don't know what they are missing!
+			remove_verb(ghost, /mob/observer/ghost/verb/toggle_antagHUD)	// Poor guys, don't know what they are missing!
 			ghost.set_sight(sight&(~(SEE_TURFS|SEE_MOBS|SEE_OBJS)))//Ghosts can no longer see all.
 		return ghost
 
@@ -236,6 +236,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	mind.current.teleop = null
 	mind.current.reload_fullscreen()
 	mind.current.client.color = null
+	mind.current.client.init_verbs()
 	if(!admin_ghosted)
 		announce_ghost_joinleave(mind, 0, "They now occupy their body again.")
 	return 1

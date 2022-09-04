@@ -58,7 +58,7 @@ Most blessings and curses should be permanent.
 /datum/heretic_deity/proc/remove_cultist(var/mob/living/carbon/human/RemovedMember)
 	members -= RemovedMember
 	qdel(RemovedMember.GetComponent(/datum/component/cultist))
-	RemovedMember.verbs -= inherent_verbs
+	remove_verb(RemovedMember, list(inherent_verbs))
 	RemovedMember.mind.special_role = null
 	RemovedMember.client.images.Cut()
 	RemovedMember.mind.special_role = ""

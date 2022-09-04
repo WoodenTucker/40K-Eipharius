@@ -354,7 +354,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		to_chat(usr, "Your host is already alive.")
 		return
 
-	verbs -= /mob/living/carbon/human/proc/jumpstart
+	remove_verb(src, /mob/living/carbon/human/proc/jumpstart)
 	visible_message("<span class='warning'>With a hideous, rattling moan, [src] shudders back to life!</span>")
 
 	rejuvenate()
