@@ -1,7 +1,5 @@
 GLOBAL_VAR_INIT(TAB, "&nbsp;&nbsp;&nbsp;&nbsp;")
 
-GLOBAL_DATUM_INIT(is_http_protocol, /regex, regex("^https?://"))
-
 GLOBAL_LIST_INIT(symbols_unicode_keys, list(
 	"‚" = "&#x201A;",
 	"„" = "&#x201E;",
@@ -42,61 +40,6 @@ GLOBAL_LIST_INIT(symbols_unicode_keys, list(
 	var/list/partial = splittext(iconData, "{")
 	return replacetext(copytext(partial[2], 3, -5), "\n", "")
 
-/proc/icon2html(thing, target, icon_state, dir, frame = 1, moving = FALSE, realsize = FALSE)
-	if (!thing)
-		return
-
-	var/key
-	var/icon/I = thing
-	if (!target)
-		return
-	if (target == world)
-		target = GLOB.clients
-
-	var/list/targets
-	if (!islist(target))
-		targets = list(target)
-	else
-		targets = target
-		if (!targets.len)
-			return
-	if (!isicon(I))
-		if (isfile(thing)) //special snowflake
-			var/name = "[generate_asset_name(thing)].png"
-			register_asset(name, thing)
-			for (var/thing2 in targets)
-				send_asset(thing2, key, FALSE)
-			return "<img class='icon icon-misc' src=\"[url_encode(name)]\">"
-		var/atom/A = thing
-		if (isnull(dir))
-			dir = A.dir
-		if (isnull(icon_state))
-			icon_state = A.icon_state
-		I = A.icon
-		if (ishuman(thing)) // Shitty workaround for a BYOND issue.
-			var/icon/temp = I
-			I = icon()
-			I.Insert(temp, dir = SOUTH)
-			dir = SOUTH
-	else
-		if (isnull(dir))
-			dir = SOUTH
-		if (isnull(icon_state))
-			icon_state = ""
-
-	I = icon(I, icon_state, dir, frame, moving)
-
-	key = "[generate_asset_name(I)].png"
-	register_asset(key, I)
-	for (var/thing2 in targets)
-		send_asset(thing2, key, FALSE)
-
-	if(realsize)
-		return "<img class='icon icon-[icon_state]' style='width:[I.Width()]px;height:[I.Height()]px;min-height:[I.Height()]px' src=\"[url_encode(key)]\">"
-
-
-	return "<img class='icon icon-[icon_state]' src=\"[url_encode(key)]\">"
-
 /proc/icon2base64html(thing)
 	if (!thing)
 		return
@@ -130,13 +73,3 @@ GLOBAL_LIST_INIT(symbols_unicode_keys, list(
 
 	return "<img class='icon icon-[A.icon_state]' src='data:image/png;base64,[bicon_cache[key]]'>"
 
-//Costlier version of icon2html() that uses getFlatIcon() to account for overlays, underlays, etc. Use with extreme moderation, ESPECIALLY on mobs.
-/proc/costly_icon2html(thing, target)
-	if (!thing)
-		return
-
-	if (isicon(thing))
-		return icon2html(thing, target)
-
-	var/icon/I = getFlatIcon(thing)
-	return icon2html(I, target)

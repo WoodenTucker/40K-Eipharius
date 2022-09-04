@@ -69,7 +69,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 /obj/item/device/pda/examine(mob/user)
 	. = ..(user, 1)
 	if(.)
-		to_chat(user, "The time [stationtime2text()] is displayed in the corner of the screen.")
+		to_chat(user, "The time [station_time_timestamp("hh:mm")] is displayed in the corner of the screen.")
 
 
 /obj/item/device/pda/medical
@@ -445,7 +445,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			cartdata["charges"] = cartridge.charges ? cartridge.charges : 0
 		data["cartridge"] = cartdata
 
-	data["stationTime"] = stationtime2text()
+	data["stationTime"] = station_time_timestamp("hh:mm")
 	data["new_Message"] = new_message
 	data["new_News"] = new_news
 
@@ -546,7 +546,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				for(var/datum/feed_message/FM in FC.messages)
 					++index
 					if(FM.img)
-						send_asset(usr.client, "newscaster_photo_[sanitize(FC.channel_name)]_[index].png")
+						var/resource_name = "newscaster_photo_[sanitize(FC.channel_name)]_[index].png"
+						SSassets.transport.send_assets(usr.client, SSassets.cache[resource_name])
 					// News stories are HTML-stripped but require newline replacement to be properly displayed in NanoUI
 					var/body = replacetext(FM.body, "\n", "<br>")
 					messages[++messages.len] = list("author" = FM.author, "body" = body, "message_type" = FM.message_type, "time_stamp" = FM.time_stamp, "has_image" = (FM.img != null), "caption" = FM.caption, "index" = index)
@@ -575,8 +576,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 
 //NOTE: graphic resources are loaded on client login
 /obj/item/device/pda/attack_self(mob/user as mob)
-	var/datum/asset/assets = get_asset_datum(/datum/asset/simple/pda)
-	assets.send(user)
+	// TODO var/datum/asset/assets = get_asset_datum(/datum/asset/simple/pda)
+	//assets.send(user)
 
 	user.set_machine(src)
 
@@ -1025,8 +1026,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			tempmessage[P] = t
 			return
 		var/utf_convert = rustoutf(html_decode(t))
-		tnote.Add(list(list("sent" = 1, "owner" = "[P.owner]", "job" = "[P.ownjob]", "message" = "[utf_convert]", "timestamp" = stationtime2text(), "target" = "\ref[P]")))
-		P.tnote.Add(list(list("sent" = 0, "owner" = "[owner]", "job" = "[ownjob]", "message" = "[utf_convert]", "timestamp" = stationtime2text(), "target" = "\ref[src]")))
+		tnote.Add(list(list("sent" = 1, "owner" = "[P.owner]", "job" = "[P.ownjob]", "message" = "[utf_convert]", "timestamp" = station_time_timestamp("hh:mm"), "target" = "\ref[P]")))
+		P.tnote.Add(list(list("sent" = 0, "owner" = "[owner]", "job" = "[ownjob]", "message" = "[utf_convert]", "timestamp" = station_time_timestamp("hh:mm"), "target" = "\ref[src]")))
 		for(var/mob/M in GLOB.player_list)
 			if(M.stat == DEAD && M.get_preference_value(/datum/client_preference/ghost_ears) == GLOB.PREF_ALL_SPEECH) // src.client is so that ghosts don't have to listen to mice
 				if(istype(M, /mob/new_player))

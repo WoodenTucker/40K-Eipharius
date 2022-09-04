@@ -44,6 +44,12 @@
 	silicon_subsystems_by_name[SSS.name] = SSS
 	return TRUE
 
+/mob/living/silicon/proc/get_silicon_subsystems()
+	.=list()
+	for(var/stat_silicon_subsystem/sub_stat as anything in silicon_subsystems)
+		sub_stat = silicon_subsystems[sub_stat]
+		. += list(list("[sub_stat.name]", "\ref[sub_stat]"))
+
 /mob/living/silicon/proc/remove_subsystem(var/subsystem_type)
 	var/stat_silicon_subsystem/SSS = silicon_subsystems[subsystem_type]
 	if(!istype(SSS))

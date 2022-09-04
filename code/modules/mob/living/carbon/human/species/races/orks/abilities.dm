@@ -113,7 +113,7 @@
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(ORKZ) //secondary language
 	client?.color = null
-	src.verbs -= /mob/living/carbon/human/ork/proc/giveorkzstats //removes verb at the end so they can't spam it for whatever reason
+	remove_verb(src, /mob/living/carbon/human/ork/proc/giveorkzstats) //removes verb at the end so they can't spam it for whatever reason
 
 	var/obj/item/card/id/dog_tag/ork/W = new
 

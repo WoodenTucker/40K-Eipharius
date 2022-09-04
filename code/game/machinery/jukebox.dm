@@ -87,19 +87,18 @@ datum/track/New(var/title_name, var/audio)
 		to_chat(usr, "\The [src] doesn't appear to function.")
 		return
 
-	tg_ui_interact(user)
+	tgui_interact(user)
 
+/*
 /obj/machinery/media/jukebox/ui_status(mob/user, datum/ui_state/state)
 	if(!anchored || inoperable())
 		return UI_CLOSE
 	return ..()
+*/
 
-/obj/machinery/media/jukebox/tg_ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = tg_default_state)
-	ui = SStgui.try_update_ui(user, src, ui_key, ui, force_open)
-	if(!ui)
-		ui = new(user, src, ui_key, "jukebox", "RetroBox - Space Style", 340, 440, master_ui, state)
-		ui.open()
-
+/obj/machinery/media/jukebox/tgui_interact(mob/user, ui_key = "main")
+	return FALSE
+ // TODO
 /obj/machinery/media/jukebox/ui_data()
 	var/list/juke_tracks = new
 	for(var/datum/track/T in tracks)
@@ -114,6 +113,7 @@ datum/track/New(var/title_name, var/audio)
 
 	return data
 
+/* TODO: Switch to modern TGUI
 /obj/machinery/media/jukebox/ui_act(action, params)
 	if(..())
 		return TRUE
@@ -139,6 +139,7 @@ datum/track/New(var/title_name, var/audio)
 		if("volume")
 			AdjustVolume(text2num(params["level"]))
 			. = TRUE
+*/
 
 /obj/machinery/media/jukebox/proc/emag_play()
 	playsound(loc, 'sound/items/AirHorn.ogg', 100, 1)
