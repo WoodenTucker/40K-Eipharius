@@ -53,6 +53,11 @@
 	hand = 0//Make sure one of their hands is active.
 	isburied = 1
 
+/mob/living/carbon/human/skitarii/proc/request_player() //reqs the player
+	for(var/mob/observer/ghost/O in GLOB.player_list)
+		if(O.client)
+			question(O.client)
+
 /mob/living/carbon/human/skitarii/proc/question(var/client/C) //asks the questions
 	if(!C)
 		return FALSE

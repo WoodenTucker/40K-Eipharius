@@ -7,7 +7,7 @@
 
 		if(src.vice == "Piety")
 			if(src.loc.loc.name == "Chapel" ) //src loc goes to the tile, need to access the tiles loc
-				src.viceneed -= rand(15,25)
+				src.viceneed -= rand(35,45)
 				if(prob(5))
 					to_chat(src, "<span class='goodmood'>+ I feel at ease here. +</span>\n")
 
@@ -51,12 +51,12 @@
 
 		if(viceneed < 1000 && vice != "Glutton")
 			spawn(10)
-				viceneed += rand(1,3)
+				viceneed += 1
 				clear_event("vice")
 
 		else if(viceneed < 1000 && vice == "Glutton" && nutrition < 375)
 			spawn(10)
-				viceneed += rand(1,3)
+				viceneed += 1
 				clear_event("vice")
 
 		else if(viceneed <= 1000 && vice == "Glutton" && nutrition >= 375)
