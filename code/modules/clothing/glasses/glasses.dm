@@ -570,7 +570,7 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	sales_price = 25
 
-/obj/item/clothing/glasses/cadiangoggles/New()
+/obj/item/clothing/glasses/cadiangoggles/elite/New()
 	..()
 	overlay = GLOB.global_hud.nvg
 

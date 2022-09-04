@@ -17,7 +17,7 @@
 			if(src.happiness < -17) //stops them from acquiring infinite sad
 				src.happiness = -17
 
-			for(var/obj/effect/decal/cleanable/H in view(2, src))
+			for(var/obj/effect/decal/cleanable/H in view(3, src))
 				if(src.vice == "Neat Freak" && src.faction != "nurgle")
 					if(prob(2))
 						to_chat(src, "<span class='badmood'>+ Emperor it's filthy here... +</span>\n")
@@ -36,13 +36,13 @@
 				if(src.vice == "Alcohol")
 					var/textSlice = copytext("[drug]",1,23) //this is incredibly fucking hacky but drug is an associated array and the key is an obj for some fucking reason
 					if(textSlice == "/datum/reagent/ethanol")
-						src.viceneed -= 1
+						src.viceneed -= rand(3,6)
 						if(prob(2))
 							to_chat(src, "<span class='goodmood'>+ Now I'm buzzing... +</span>\n")
 				if(src.vice == "Obscura")
 					var/textSlice = copytext("[drug]",1,0) //this is incredibly fucking hacky but drug is an associated array and the key is an obj for some fucking reason
 					if(textSlice == "/datum/reagent/space_drugs")
-						src.viceneed -= 1
+						src.viceneed -= rand(3,6)
 						if(prob(2))
 							to_chat(src, "<span class='goodmood'>+ I finally feel human again... +</span>\n")
 
@@ -51,17 +51,17 @@
 
 		if(viceneed < 1000 && vice != "Glutton")
 			spawn(10)
-				viceneed += rand(1,3)
+				viceneed += 1
 				clear_event("vice")
 
 		else if(viceneed < 1000 && vice == "Glutton" && nutrition < 375)
 			spawn(10)
-				viceneed += rand(1,3)
+				viceneed += 1
 				clear_event("vice")
 
 		else if(viceneed <= 1000 && vice == "Glutton" && nutrition >= 375)
 			spawn(10)
-				viceneed -= rand(1,2)
+				viceneed -= rand(3,6)
 				clear_event("vice")
 
 	if(viceneed > 1000)
