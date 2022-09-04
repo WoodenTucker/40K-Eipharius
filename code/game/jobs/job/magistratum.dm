@@ -113,7 +113,7 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Planetary Enforcer")
-	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
+	head = null
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
@@ -125,7 +125,7 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/headset_service
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
@@ -141,11 +141,12 @@ Begin Warhammer loadouts
 
 /decl/hierarchy/outfit/job/ig/marshal
 	name = OUTFIT_JOB_NAME("Planetary Marshal")
-	head = /obj/item/clothing/head/helmet/guardhelmet/marshal
+	head = null
 	uniform = /obj/item/clothing/under/rank/marshal
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	r_pocket = /obj/item/device/flashlight/lantern
+	l_hand = /obj/item/gun/projectile/revolver/mateba
 	suit = /obj/item/clothing/suit/armor/marshal
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -154,11 +155,11 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
+	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
-	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/ammo_box/rifle = 1,
+	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -176,7 +177,6 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/baton/loaded
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak

@@ -214,14 +214,15 @@
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1
 	name = "Chosen Khornate Combat Helmet"
 	desc = "Armored helmet of the blood god's chosen. KILL, MAIM, BURN!"
-	icon_state = "bloodpacthelm1"
-	item_state = "bloodpacthelm1"
+	icon_state = "vraks2"
+	item_state = "vraks2"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
+
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
 	name = "Khornate Combat Helmet"
 	desc = "Armored helmet of a khornate cultist."
-	icon_state = "bloodpacthelm2"
-	item_state = "bloodpacthelm2"
+	icon_state = "vraks3"
+	item_state = "vraks3"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet
@@ -557,22 +558,22 @@
 /obj/item/clothing/head/helmet/culthelm
 	name = "Scrap helmet"
 	desc = "Helmet made of some metal scrap in cheap forge"
-	icon_state = "pact1"
-	icon_state = "pact1"
+	icon_state = "vraks1"
+	icon_state = "vraks1"
 	armor = list(melee = 25, bullet = 15, laser = 13, energy = 10, bomb = 25, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = HEAD
 
 /obj/item/clothing/head/helmet/culthelm/alt
-	icon_state = "pact2"
-	icon_state = "pact2"
+	icon_state = "vraks2"
+	icon_state = "vraks2"
 	armor = list(melee = 28, bullet = 18, laser = 16, energy = 13, bomb = 28, bio = 13, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|EYES
 
 /obj/item/clothing/head/helmet/culthelm/alt2
-	icon_state = "pact3"
-	icon_state = "pact3"
+	icon_state = "vraks3"
+	icon_state = "vraks3"
 	armor = list(melee = 30, bullet = 22, laser = 20, energy = 15, bomb = 32, bio = 15, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES

@@ -25,6 +25,9 @@
 	if(happiness < MOOD_LEVEL_SAD2)
 		msg += "<span class='warning'>I am stressed out!</span>\n"
 
+	if(vice)
+		msg += "<span class='badmood'>+ Vice Need: [viceneed]/1000 +</span>\n"
+
 
 	msg += "</span></div>"
 	to_chat(src, msg)

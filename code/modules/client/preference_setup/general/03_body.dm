@@ -311,6 +311,17 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 				return TOPIC_REFRESH
 			else
 				pref.cult = chosen_religion
+				switch(pref.cult)
+					if("khorne")
+						to_chat(user, "<span class='badmood'>⠀+ BLOOD FOR THE BLOOD GOD! (Cult roles are not guaranteed) +</span>")
+					if("nurgle")
+						to_chat(user, "<span class='badmood'>⠀+ I'm a boil on the face of reality. And I fester! (Cult roles are not guaranteed) +</span>")
+					if("slaanesh")
+						to_chat(user, "<span class='badmood'>⠀+ Hail to the Prince of Delight! (Cult roles are not guaranteed) +</span>")
+					if("tzeentch")
+						to_chat(user, "<span class='badmood'>⠀+ All according to plan! (Cult roles are not guaranteed) +</span>")
+					if("None")
+						to_chat(user, "<span class='badmood'>⠀+ You have opted out of a cult role. +</span>")
 				return TOPIC_REFRESH
 
 	else if(href_list["show_species"])

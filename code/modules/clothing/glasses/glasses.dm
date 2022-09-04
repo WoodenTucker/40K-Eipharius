@@ -139,13 +139,17 @@
 	icon_state = "night"
 	item_state = "glasses"
 	origin_tech = list(TECH_MAGNET = 2)
-	darkness_view = 20
+	darkness_view = 40
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	off_state = "denight"
 	electric = 1
 	sales_price = 25
+
+/obj/item/clothing/glasses/night/New()
+	..()
+	overlay = GLOB.global_hud.nvg
 
 /obj/item/clothing/glasses/blacksun
 	name = "blacksun goggles"
@@ -161,9 +165,10 @@
 	electric = 1
 	sales_price = 40
 
-/obj/item/clothing/glasses/night/New()
-	..()
-	overlay = GLOB.global_hud.nvg
+/obj/item/clothing/glasses/blacksun/skitarii
+	name = "skitarii augments"
+	desc = "A series of augments used to replace the eyes of Skitarii with superior, mechanical optics."
+	canremove = 0
 
 /obj/item/clothing/glasses/tacgoggles
 	name = "tactical goggles"
@@ -559,11 +564,15 @@
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
-	darkness_view = 20 //if you want to be a sniper without being a astartes/sharpshooter, you may now
+	darkness_view = 40 //if you want to be a sniper without being a astartes/sharpshooter, you may now
 	icon_state = "iggoggles"
 	item_state = "iggoggles"
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	sales_price = 25
+
+/obj/item/clothing/glasses/cadiangoggles/New()
+	..()
+	overlay = GLOB.global_hud.nvg
 
 // XENOS VISION
 
@@ -620,3 +629,7 @@
 	body_parts_covered = EYES
 	unacidable = 1
 	sales_price = 40
+
+/obj/item/clothing/glasses/cadian/New()
+	..()
+	overlay = GLOB.global_hud.nvg

@@ -465,35 +465,33 @@
 	sales_price = 30
 
 /obj/item/clothing/suit/armor/vest/leather/tailcoat
-	name = "tail coat"
+	name = "tailcoat"
 	desc = "A fancy tailcoat to make your suit seem even more lavish."
 	icon_state = "tailcoat"
 	item_state = "tailcoat"
 	armor = list(MELEE = 20, BULLET = 20, LASER = 10, ENERGY = 10, BOMB = 15, BIO = 0, FIRE = 20, ACID = 15)
 //	pocket_storage_component_path = /datum/component/storage/concrete/pockets/tailcoat
 
-/obj/item/clothing/suit/armor/vest/leather/tailcoat/ladiesvictoriancoat
-	name = "victorian coat"
-	desc = "Stylish victorian coat."
-	icon_state = "ladiesvictoriancoat"
-	item_state = "ladiesvictoriancoat"
+/obj/item/clothing/suit/armor/vest/leather/tailcoat/ladycoat
+	name = "lady coat"
+	desc = "Fancy lady coat."
+	icon_state = "ladiescoat"
+	item_state = "ladiescoat"
 	armor = list(MELEE = 15, BULLET = 10, LASER = 5, ENERGY = 5, BOMB = 15, BIO = 0, FIRE = 10, ACID = 5)
 
-/obj/item/clothing/suit/armor/vest/leather/tailcoat/ladiesredvictoriancoat
-	name = "victorian coat"
-	desc = "Stylish victorian coat."
-	icon_state = "ladiesredvictoriancoat"
-	item_state = "ladiesredvictoriancoat"
-	armor = list(MELEE = 15, BULLET = 10, LASER = 5, ENERGY = 5, BOMB = 15, BIO = 0, FIRE = 10, ACID = 5)
+/obj/item/clothing/suit/armor/vest/leather/tailcoat/ladycoat/red
+	icon_state = "ladiesredcoat"
+	item_state = "ladiesredcoat"
 
 /obj/item/clothing/suit/armor/vest/leather/tailcoat/black
 	icon_state = "tailcoatb"
 	item_state = "tailcoatb"
 
-/obj/item/clothing/suit/armor/vest/leather/tailcoat/ladiesvictoriancoat/grey
+/obj/item/clothing/suit/armor/vest/leather/tailcoat/ladycoat/grey
 	icon_state = "ladiesvictoriancoatg"
 	item_state = "ladiesvictoriancoatg"
-
+/*
 /obj/item/clothing/suit/armor/vest/leather/tailcoat/ladiesvictoriancoat/black
 	icon_state = "ladiesvictoriancoatb"
 	item_state = "ladiesvictoriancoatb"
+*/

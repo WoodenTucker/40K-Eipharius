@@ -1,3 +1,79 @@
+// NEW ACCESSORIES
+
+/obj/item/clothing/accessory/tcloak
+	name = "trench cloak"
+	desc = "A dusty trench cloak."
+	icon_state = "trenchcloak"
+	item_state = "trenchcloak"
+
+/obj/item/clothing/accessory/bcloak
+	name = "brown cloak"
+	desc = "A dusty brown cloak."
+	icon_state = "brown"
+	item_state = "brown"
+
+/obj/item/clothing/accessory/gcloak
+	name = "gray cloak"
+	desc = "A dusty gray cloak."
+	icon_state = "gray"
+	item_state = "gray"
+
+/obj/item/clothing/accessory/dcloak
+	name = "dark cloak"
+	desc = "A spooky black and red cloak."
+	icon_state = "hos"
+	item_state = "hos"
+
+/obj/item/clothing/accessory/bishopcloak
+	name = "priest cloak"
+	desc = "A fine priestly cloak."
+	icon_state = "bishop"
+	item_state = "bishop"
+
+/obj/item/clothing/accessory/pcloak
+	name = "fancy cloak"
+	desc = "A gray and blue cloak."
+	icon_state = "paladin"
+	item_state = "paladin"
+
+/obj/item/clothing/accessory/hbcloak
+	name = "heavy black cloak"
+	desc = "A heavy black cloak."
+	icon_state = "commander"
+	item_state = "commander"
+
+/obj/item/clothing/accessory/hgcloak
+	name = "heavy gray cloak"
+	desc = "A heavy gray cloak."
+	icon_state = "treasurer"
+	item_state = "treasurer"
+
+/obj/item/clothing/accessory/pfcloak
+	name = "brown pelt cloak"
+	desc = "A light pelt cloak."
+	icon_state = "peltfur"
+	item_state = "peltfur"
+
+/obj/item/clothing/accessory/mfcloak
+	name = "grey pelt cloak"
+	desc = "A heavy gray pelt cloak."
+	icon_state = "peltmountain"
+	item_state = "peltmountain"
+
+/obj/item/clothing/accessory/rcloak
+	name = "ragged cloak"
+	desc = "A light ragged cloak."
+	icon_state = "ragged"
+	item_state = "ragged"
+
+/obj/item/clothing/accessory/goliath
+	name = "ragged cloak"
+	desc = "A heavy red cloak."
+	icon_state = "goliath"
+	item_state = "goliath"
+
+// OLD ACCESSORIES
+
 /obj/item/clothing/accessory/wcoat
 	name = "waistcoat"
 	desc = "For some classy, murderous fun."

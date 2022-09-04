@@ -133,7 +133,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 52
+	damage = 48
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/overcharge
@@ -141,7 +141,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 75
+	damage = 71
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/execution
@@ -149,7 +149,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 120
+	damage = 115
 	armor_penetration = 30
 
 /obj/item/projectile/energy/las/lasgun/lucius
@@ -157,7 +157,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 60
+	damage = 56
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/lucius/overcharge
@@ -165,7 +165,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 85
+	damage = 80
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/longlas
@@ -173,7 +173,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 93
+	damage = 89
 	armor_penetration = 10
 	accuracy = 2
 
@@ -182,7 +182,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 133
+	damage = 130
 	armor_penetration = 25
 
 /obj/item/projectile/energy/las/lasgun/hotshot
@@ -190,7 +190,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 68
+	damage = 64
 	armor_penetration = 35
 
 /obj/item/projectile/energy/pulse/pulserifle
@@ -198,7 +198,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 55
+	damage = 51
 	armor_penetration = 35
 
 	/obj/item/projectile/energy/pulse/pulsepistol
@@ -206,15 +206,15 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 45
-	armor_penetration = 35
+	damage = 44
+	armor_penetration = 25
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 140
+	damage = 130
 //	agony =  //who did this? this passes through all fucking armor... EVEN IF THEY DIDNT TAKE ANY DAMAGE THEY WOULD HAVE A FUCKLOAD OF PAIN
 	armor_penetration = 30
 
@@ -223,7 +223,7 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 120
+	damage = 115
 	armor_penetration = 25
 //	agony = 0 //who did this? dumb fucks
 //	stun = 5
@@ -234,7 +234,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 120
+	damage = 140
 	armor_penetration = 40
 
 /obj/item/projectile/energy/pulse/plasmapistol
@@ -242,7 +242,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 90
+	damage = 110
 	armor_penetration = 40
 
 	/obj/item/projectile/energy/pulse/plasmapistol/astartes
@@ -250,5 +250,5 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 90
+	damage = 130
 	armor_penetration = 40

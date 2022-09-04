@@ -32,7 +32,7 @@
 			if(T)
 				T.clean(src, user)
 			to_chat(user, "<span class='notice'>You have finished mopping!</span>")
-			if(user.vice == "Neat Freak" && user.faction != "Nurgle" && istype(A, /obj/effect/decal/cleanable))
+			if(user.vice == "Neat Freak" && user.faction != "nurgle" && istype(A, /obj/effect/decal/cleanable))
 				user.happiness +=1
 				if(prob(10))
 					to_chat(user, "<span class='goodmood'>+ That's much better... +</span>\n")

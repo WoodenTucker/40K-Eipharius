@@ -393,7 +393,7 @@
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	name = "Magos Dominus Servo-Satchel"
-
+/*
 /obj/item/storage/backpack/satchel/warfare/techpriest/magos/verb/toggle_axe()
 	set name =  "Deploy axe"
 	set category = "Tools"
@@ -418,7 +418,7 @@
 		to_chat(usr,"You pull out the axe.")
 		usr.put_in_hands(new /obj/item/melee/omnissiah_axe(usr))
 		src.is_toggled = 2
-
+*/
 /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
@@ -452,6 +452,36 @@
 	name = "Chestrig"
 	desc = "Holds ammo and other goodies. But not a lot of it."
 	icon_state = "chestrig"
+
+/obj/item/storage/backpack/satchel/warfare/ruststalker
+	var/can_toggle = 1
+	var/is_toggled = 1
+	canremove = FALSE
+
+/obj/item/storage/backpack/satchel/warfare/ruststalker/verb/toggleclaw()
+	set name = "Equip Power Claw"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/melee/energy/powersword/claw/integrated)) //Not the nicest way to do it, but eh
+			visible_message("<span class='warning'> [usr] retracts the integrated blades.</span>", "<span class='notice'>You retract the integrated blades.</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+		if(istype(usr.r_hand, /obj/item/melee/energy/powersword/claw/integrated)) //Not the nicest way to do it, but eh
+			qdel(usr.r_hand)
+			visible_message("<span class='warning'>  [usr] retracts the integrated blades.</span>", "<span class='notice'>You retract the integrated blades.</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You retract the integrated blades.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You extend the integrated blades.")
+		usr.put_in_hands(new /obj/item/melee/energy/powersword/claw/integrated(usr))
+		src.is_toggled = 2
 
 /obj/item/storage/backpack/warfare
 	desc = "Holds more than a satchel, but can't open it on your back."

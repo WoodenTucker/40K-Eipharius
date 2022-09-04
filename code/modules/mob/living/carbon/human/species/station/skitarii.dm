@@ -11,7 +11,7 @@
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	pixel_offset_y = -4
 	strength = STR_HIGH
-	radiation_mod = 0.2
+	radiation_mod = 0.01
 	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
 	slowdown = -0.30
 	inherent_verbs = list(
@@ -47,11 +47,16 @@
 	set_species("Skitarii")
 	fully_replace_character_name(random_skitarii_name(src.gender))
 	warfare_faction = IMPERIUM
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii)
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/skitarii/basic)
 	outfit.equip(src)
 	offer_mob()
 	hand = 0//Make sure one of their hands is active.
 	isburied = 1
+
+/mob/living/carbon/human/skitarii/proc/request_player() //reqs the player
+	for(var/mob/observer/ghost/O in GLOB.player_list)
+		if(O.client)
+			question(O.client)
 
 /mob/living/carbon/human/skitarii/proc/question(var/client/C) //asks the questions
 	if(!C)
@@ -84,21 +89,109 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
-	playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-	src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
-	src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
-	src.set_trait(new/datum/trait/death_tolerant())
-	src.update_eyes() //should fix grey vision
+	var/skitclass = input("Select a Class","Class Selection") as null|anything in list("Skitarii Ranger", "Ruststalker", "Vanguard")
+	switch(skitclass)
+		if("Skitarii Ranger")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/skitarii, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
+			src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.thirst = INFINITY
+			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+
+			var/obj/item/card/id/dog_tag/skitarii/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Skitarii Ranger"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
+
+	switch(skitclass)
+		if("Ruststalker")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/ruststalker, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/ruststalker, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/ruststalker, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(22,26),rand(22,26),rand(22,26),14) //gives stats str, dext, end, int //Melee focused guys.
+			src.add_skills(rand(17,19),rand(5,6),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused.
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.thirst = INFINITY
+			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.vice = null //off for now
+			src.verbs += /mob/living/carbon/human/proc/active_camo //Gives them a camo ability.
+			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
 
 	src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
 	remove_verb(src, /mob/living/carbon/human/skitarii/proc/giveskitstats) //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
+			var/obj/item/card/id/dog_tag/skitarii/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Skitarii Ruststalker"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)
 
-	var/obj/item/card/id/dog_tag/skitarii/W = new
+	switch(skitclass)
+		if("Vanguard")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vanguard, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/vanguard, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/radcarbine, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/radcarbine/radpistol, slot_belt)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/head/vanhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine/radpistol, slot_in_backpack)
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(22,24),rand(22,24),rand(24,28),14) //gives stats str, dext, end, int //Durable as hell.
+			src.add_skills(rand(11,12),rand(12,14),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.thirst = INFINITY
+			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.vice = null //off for now
+			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
 
-	W.icon_state = "tagred"
-	W.assignment = "Skitarii"
-	W.registered_name = real_name
-	W.update_label()
-	equip_to_slot_or_del(W, slot_wear_id)
+			var/obj/item/card/id/dog_tag/skitarii/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Skitarii Vanguard"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)

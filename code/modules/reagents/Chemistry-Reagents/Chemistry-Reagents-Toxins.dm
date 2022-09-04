@@ -441,12 +441,6 @@
 		drug_strength = drug_strength * 0.8
 
 	M.druggy = max(M.druggy, drug_strength)
-	if(M.vice == "Obscura")
-		M.viceneed = 0
-		if(prob(5))
-			to_chat(M, "<span class='goodmood'>⠀+ Your muscles relax as obscura flows through your veins. +</span>")
-	if(prob(10) && isturf(M.loc) && !istype(M.loc, /turf/space) && M.canmove && !M.restrained())
-		step(M, pick(GLOB.cardinal))
 	if(prob(7))
 		M.emote(pick("twitch", "drool", "moan", "giggle"))
 	M.add_chemical_effect(CE_PULSE, -1)

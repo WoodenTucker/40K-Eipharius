@@ -2,12 +2,31 @@
 	desc = "A .357 bullet casing."
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver
-	ammo_stack = /obj/item/ammo_magazine/handful/revolver/two
+
+/obj/item/ammo_casing/a357/ap
+	desc = "AP .357 bullet casing."
+	caliber = "357"
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver/ap
+
+/obj/item/ammo_casing/a357/ms
+	desc = "MS .357 bullet casing."
+	caliber = "357"
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver/ms
 
 /obj/item/ammo_casing/a50
 	desc = "A .50AE bullet casing."
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong
+
+/obj/item/ammo_casing/a50/ap
+	desc = "AP .50AE bullet casing."
+	caliber = ".50"
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/ap
+
+/obj/item/ammo_casing/a50/ms
+	desc = "MS .50AE bullet casing."
+	caliber = ".50"
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/ms
 
 /obj/item/ammo_casing/a75
 	desc = "A 20mm bullet casing."
@@ -30,6 +49,16 @@
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/pistol
 
+/obj/item/ammo_casing/c9mm/ap
+	desc = "AP 9mm bullet casing."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/pistol/ap
+
+/obj/item/ammo_casing/c9mm/ms
+	desc = "MS 9mm bullet casing."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/pistol/ms
+
 /obj/item/ammo_casing/c9mm/flash
 	desc = "A 9mm flash shell casing."
 	projectile_type = /obj/item/projectile/energy/flash
@@ -49,6 +78,16 @@
 	caliber = ".44"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver
 
+/obj/item/ammo_casing/c44/ap
+	desc = "AP .44 magnum bullet casing."
+	caliber = ".44"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver/ap
+
+/obj/item/ammo_casing/c44/ms
+	desc = "MS .44 magnum bullet casing."
+	caliber = ".44"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver/ms
+
 /obj/item/ammo_casing/c44/rubber
 	desc = "A .44 magnum rubber bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/rubber
@@ -59,6 +98,16 @@
 	desc = "A warmonger bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium
+
+/obj/item/ammo_casing/c45/ap
+	desc = "An AP warmonger bullet casing."
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/ap
+
+/obj/item/ammo_casing/c45/ms
+	desc = "An MS warmonger bullet casing."
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/ms
 
 /obj/item/ammo_casing/c45/practice
 	desc = "A .45 practice bullet casing."
@@ -88,6 +137,11 @@
 	drop_sound = 'sound/weapons/guns/misc/shotgun_fall.ogg'
 	projectile_type = /obj/item/projectile/bullet/shotgun
 	matter = list(DEFAULT_WALL_MATERIAL = 360)
+
+/obj/item/ammo_casing/shotgun/ms
+	name = "MS shotgun slug"
+	projectile_type = /obj/item/projectile/bullet/shotgun/ms
+
 
 /obj/item/ammo_casing/shotgun/pellet
 	name = "shotgun shell"
@@ -154,6 +208,14 @@
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
 
+/obj/item/ammo_casing/a556/ap
+	desc = "An AP 5.56mm bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a556/ap
+
+/obj/item/ammo_casing/a556/ms
+	desc = "An MS 5.56mm bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a556/ms
+
 /obj/item/ammo_casing/a145
 	name = "shell casing"
 	desc = "A 14.5mm shell."
@@ -174,6 +236,14 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/a762
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
+
+/obj/item/ammo_casing/a762/ap
+	desc = "An AP 7.62mm bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/ap
+
+/obj/item/ammo_casing/a762/ms
+	desc = "An MS 7.62mm bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/ms
 
 /obj/item/ammo_casing/lp338
 	desc = "A .338 Lapua Magnum bullet casing."
@@ -323,3 +393,35 @@
 	caliber = "shuriken"
 	projectile_type = /obj/item/projectile/bullet/rifle/shuriken/pistol
 
+/obj/item/ammo_casing/galvanic
+	name = "galvanic rifle casings"
+	desc = "A galvanic rifle casing"
+	icon_state = "gshell"
+	spent_icon = "gshell-spent"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic
+
+/obj/item/ammo_casing/galvanic/fire
+	name = "galvanic rifle incendiary casings"
+	desc = "A galvanic rifle incendiary casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/fire
+
+
+/obj/item/ammo_casing/radcarbine
+	name = "radcarbine casings"
+	desc = "A radcarbine casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "rad"
+	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine
+
+/obj/item/ammo_casing/radcarbine/radpistol
+	name = "radcarbine pistol casings"
+	desc = "A radcarbine pistol casing"
+	icon_state = "fshell"
+	spent_icon = "fshell-spent"
+	caliber = "rad"
+	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol

@@ -23,6 +23,38 @@
 	name = "Shuttle Control Console"
 	shuttle_tag = "Inquisition"
 
+
+
+/datum/shuttle/autodock/ferry/bloodpact
+	name = "Bloodpact"
+	warmup_time = 10
+	waypoint_station = "bloodpact_start"
+	waypoint_offsite = "bloodpact_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/inquisitionpact
+
+/obj/effect/shuttle_landmark/ferry/bloodpact_end
+	name = "PlanetPact"
+	landmark_tag = "bloodpact_end"
+	base_area = /area/cadiaoutpost/oa/hangarpact
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/bloodpact_start
+	name = "MoonPact"
+	landmark_tag = "bloodpact_start"
+	base_area = /area/cadiaoutpost/oa/hangarpact
+	base_turf = /turf/simulated/floor/plating/reinforced
+
+/obj/machinery/computer/shuttle_control/ferry/bloodpact
+	name = "Shuttle Control Console"
+	shuttle_tag = "Bloodpact"
+
+
+
+
+
+
+
+
 /datum/shuttle/autodock/ferry/aquila
 	name = "Rogue Trader's Aquila Lander"
 	warmup_time = 15

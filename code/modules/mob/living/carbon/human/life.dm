@@ -1401,21 +1401,21 @@
 
 		heal_organ_damage(0.2, 0.2)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-1.5)
+			adjustBrainLoss(-0.2)
 
 		if(src.getBruteLoss() > 0)
-			adjustBruteLoss(-5.8)
+			adjustBruteLoss(-3.8)
 
 		if(src.getToxLoss() > 0)
-			adjustToxLoss(-3.5)
+			adjustToxLoss(-0.5)
 
 		if(src.getFireLoss() > 0)
-			adjustFireLoss(-5.8)
+			adjustFireLoss(-3.8)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-3.8)
+			adjustOxyLoss(-0.7)
 
-		if(messageTimer > 300)
+		if(messageTimer > 500)
 			messageTimer = 0
 			restore_blood()
 			blinded = 0
@@ -1443,21 +1443,21 @@
 
 		heal_organ_damage(0.4, 0.4)
 		if(src.getBrainLoss() > 0)
-			adjustBrainLoss(-5.5)
+			adjustBrainLoss(-1.0)
 
 		if(src.getBruteLoss() > 0)
-			adjustBruteLoss(-9.5)
+			adjustBruteLoss(-8.5)
 
 		if(src.getToxLoss() > 0)
-			adjustToxLoss(-9.0)
+			adjustToxLoss(-2.0)
 
 		if(src.getFireLoss() > 0)
-			adjustFireLoss(-9.5)
+			adjustFireLoss(-8.5)
 
 		if(src.getOxyLoss() > 0)
-			adjustOxyLoss(-9.0)
+			adjustOxyLoss(-2.0)
 
-		if(messageTimer > 150)
+		if(messageTimer > 250)
 			messageTimer = 0
 			to_chat(src, "Your stored biomass kicks into overdrive, regenerating damage and filling your arteries with fresh blood.")
 			restore_blood()

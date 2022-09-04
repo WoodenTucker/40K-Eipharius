@@ -1087,11 +1087,14 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose Party Size"
 	set desc = "Set the size of the party."
 
-	var/options = list("2", "Default(3)", "4", "5", "6", "8", "10") //lists all possible fates
+	var/options = list("1", "2", "Default(3)", "4", "5", "6", "8", "10") //lists all possible fates
 
 	var/chooseaparty = input("Choose the size of the late party", "Options") as null|anything in options
 
 	switch(chooseaparty)
+		if("1")
+			GLOB.partysize = 1
+			message_admins("The late party will have 1 attendees.")
 		if("2")
 			GLOB.partysize = 2
 			message_admins("The late party will have 2 attendees.")

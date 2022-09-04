@@ -60,8 +60,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -148,8 +148,8 @@
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
 	title = "Imperial Guard Specialist"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
@@ -160,8 +160,10 @@
 	smg_skill = 8
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
+		"Cadian Sniper" = /decl/hierarchy/outfit/job/sharpshooter2,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
-		"Krieg Sniper" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
+		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sharpshooter/valhalla2,
+		"Krieg Marksman" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
 		"Catachan Flamer" = /decl/hierarchy/outfit/job/guardsman/catachan,
 
 		)

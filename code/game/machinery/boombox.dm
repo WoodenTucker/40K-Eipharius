@@ -277,3 +277,17 @@
 	a_side = pick('sound/newmusic/TAPE-INNCALM.ogg')
 	b_side = pick('sound/newmusic/TAPE-INNCALM.ogg')
 	sound_inside = a_side
+
+/obj/item/device/cassette/duel/New()
+	..()
+	name = "Dueling Music"
+	a_side = pick('sound/newmusic/TAPE-DUEL.ogg')
+	b_side = pick('sound/newmusic/TAPE-DUEL.ogg')
+	sound_inside = a_side
+
+/obj/item/device/cassette/demon/New()
+	..()
+	name = "Rip & Tear"
+	a_side = pick('sound/newmusic/TAPE-DEMON.ogg')
+	b_side = pick('sound/newmusic/TAPE-DEMON.ogg')
+	sound_inside = a_side

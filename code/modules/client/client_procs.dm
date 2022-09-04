@@ -266,6 +266,9 @@
 //DISCONNECT//
 //////////////
 /client/Del()
+	var/mob/living/carbon/human/player = src
+	sql_report_played_time(player)
+	player.time_alive = 0 //When a player closes the client their played time is reported, their time_alive is set to 0 to prevent duping/gaming it in the DB -wel
 	ticket_panels -= src
 	if(holder)
 		holder.owner = null

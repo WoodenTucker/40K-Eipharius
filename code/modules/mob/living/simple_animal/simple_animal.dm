@@ -19,7 +19,7 @@
 	var/list/emote_hear = list()	//Hearable emotes
 	var/list/emote_see = list()		//Unlike speak_emote, the list of things in this variable only show by themselves with no spoken text. IE: Ian barks, Ian yaps
 
-	var/turns_per_move = 1
+	var/turns_per_move = 5
 	var/turns_since_move = 0
 	universal_speak = 0		//No, just no.
 	var/meat_amount = 0
