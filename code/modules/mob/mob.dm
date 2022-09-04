@@ -627,56 +627,6 @@
 	for(var/mob/M in viewers())
 		M.see(message)
 
-/mob/Stat()
-	..()
-	. = (is_client_active(10 MINUTES))
-	if(!.)
-		return
-
-	if(statpanel("Status"))
-		if(ticker && ticker.current_state != GAME_STATE_PREGAME)
-			//stat("Local Time", stationtime2text())
-			//stat("Local Date", stationdate2text())
-			stat("Round Duration", DisplayTimeText(world.time - SSticker.round_start_time))
-		if(client.holder || isghost(client.mob))
-			stat("Location:", "([x], [y], [z]) [loc]")
-
-	if(client.holder)
-		if(statpanel("MC"))
-			stat("CPU:","[world.cpu]")
-			stat("Instances:","[world.contents.len]")
-			stat(null)
-			if(Master)
-				Master.stat_entry()
-			else
-				stat("Master Controller:", "ERROR")
-			if(Failsafe)
-				Failsafe.stat_entry()
-			else if (Master.initializing)
-				stat("Failsafe Controller:", "Waiting for MC")
-			else
-				stat("Failsafe Controller:", "ERROR")
-			if(Master)
-				stat(null)
-				for(var/datum/controller/subsystem/SS in Master.subsystems)
-					SS.stat_entry()
-
-	if(listed_turf && client)
-		if(!TurfAdjacent(listed_turf))
-			listed_turf = null
-		else
-			if(statpanel("Turf"))
-				stat(listed_turf)
-				for(var/atom/A in listed_turf)
-					if(!A.mouse_opacity)
-						continue
-					if(A.invisibility > see_invisible)
-						continue
-					if(is_type_in_list(A, shouldnt_see))
-						continue
-					stat(A)
-
-
 // facing verbs
 /mob/proc/canface()
 	if(!canmove)						return 0
