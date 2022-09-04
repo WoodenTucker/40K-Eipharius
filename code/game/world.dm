@@ -97,6 +97,8 @@
 	if(byond_version < RECOMMENDED_VERSION)
 		world.log << "Your server's byond version does not meet the recommended requirements for this server. Please update BYOND"
 
+	LoadVerbs(/datum/verbs/menu)
+
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
 		// dumb and hardcoded but I don't care~
 		config.server_name += " #[(world.port % 1000) / 100]"
@@ -676,7 +678,8 @@ var/world_topic_spam_protect_time = world.timeofday
 
 	WORLD_SETUP_LOG(runtime)
 	WORLD_SETUP_LOG(qdel)
-
+	GLOB.tgui_log = file("[GLOB.log_directory]/tgui.log")
+	to_file(GLOB.world_qdel_log, "\n\nStarting up round ID [game_id]. [station_time_timestamp()]\n---------------------")
 #undef WORLD_SETUP_LOG
 #undef WORLD_LOG_START
 

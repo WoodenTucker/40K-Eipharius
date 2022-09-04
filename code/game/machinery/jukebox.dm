@@ -89,13 +89,12 @@ datum/track/New(var/title_name, var/audio)
 
 	tgui_interact(user)
 
-/* TODO
+/*
 /obj/machinery/media/jukebox/ui_status(mob/user, datum/ui_state/state)
 	if(!anchored || inoperable())
 		return UI_CLOSE
 	return ..()
-*/ //TODO
-
+*/
 
 /obj/machinery/media/jukebox/tgui_interact(mob/user, ui_key = "main")
 	return FALSE
@@ -114,8 +113,7 @@ datum/track/New(var/title_name, var/audio)
 
 	return data
 
-
-/* TODO
+/* TODO: Switch to modern TGUI
 /obj/machinery/media/jukebox/ui_act(action, params)
 	if(..())
 		return TRUE

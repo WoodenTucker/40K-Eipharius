@@ -353,7 +353,7 @@ var/list/admin_verbs_mentor = list(
 		if(holder.rights & R_MENTOR)		verbs += admin_verbs_mentor
 
 /client/proc/remove_admin_verbs()
-	verbs.Remove(
+	remove_verb(src, list(
 		admin_verbs_default,
 		/client/proc/togglebuildmodeself,
 		admin_verbs_admin,
@@ -368,7 +368,7 @@ var/list/admin_verbs_mentor = list(
 		admin_verbs_sounds,
 		admin_verbs_spawn,
 		debug_verbs
-		)
+		))
 
 /client/proc/hide_most_verbs()//Allows you to keep some functionality while hiding some verbs
 	set name = "Adminverbs - Hide Most"

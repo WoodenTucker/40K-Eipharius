@@ -22,8 +22,8 @@ Thanks to spacemaniac and mcdonald for help with the JS side of this.
 
 /client/proc/force_white_theme() //There's no way round it. We're essentially changing the skin by hand. It's painful but it works, and is the way Lummox suggested.
 	//Main windows
-	winset(src, "rpane", "background-color = [COLOR_DARKMODE_DARKBACKGROUND];background-color = none")
-	winset(src, "rpane", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
+	winset(src, "statwindow", "background-color = [COLOR_DARKMODE_DARKBACKGROUND];background-color = none")
+	winset(src, "statwindow", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
 	winset(src, "rpanewindow", "background-color = [COLOR_DARKMODE_DARKBACKGROUND];background-color = none")
 	winset(src, "rpanewindow", "text-color = [COLOR_DARKMODE_TEXT];text-color = #000000")
 	winset(src, "infowindow", "background-color = [COLOR_DARKMODE_DARKBACKGROUND];background-color = none")
@@ -72,8 +72,8 @@ Thanks to spacemaniac and mcdonald for help with the JS side of this.
 
 /client/proc/force_dark_theme() //Inversely, if theyre using white theme and want to swap to the superior dark theme, let's get WINSET() ing
 	//Main windows
-	winset(src, "rpane", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
-	winset(src, "rpane", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
+	winset(src, "statwindow", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
+	winset(src, "statwindow", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
 	winset(src, "rpanewindow", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")
 	winset(src, "rpanewindow", "text-color = #000000;text-color = [COLOR_DARKMODE_TEXT]")
 	winset(src, "infowindow", "background-color = none;background-color = [COLOR_DARKMODE_BACKGROUND]")

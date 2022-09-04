@@ -546,7 +546,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				for(var/datum/feed_message/FM in FC.messages)
 					++index
 					if(FM.img)
-						// TODO send_asset(usr.client, "newscaster_photo_[sanitize(FC.channel_name)]_[index].png")
+						var/resource_name = "newscaster_photo_[sanitize(FC.channel_name)]_[index].png"
+						SSassets.transport.send_assets(usr.client, SSassets.cache[resource_name])
 					// News stories are HTML-stripped but require newline replacement to be properly displayed in NanoUI
 					var/body = replacetext(FM.body, "\n", "<br>")
 					messages[++messages.len] = list("author" = FM.author, "body" = body, "message_type" = FM.message_type, "time_stamp" = FM.time_stamp, "has_image" = (FM.img != null), "caption" = FM.caption, "index" = index)

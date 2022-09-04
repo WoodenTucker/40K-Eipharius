@@ -58,7 +58,7 @@
 
 	return data
 
-/* TODO
+/* TODO: Port to modern TGUI
 /obj/item/airlock_electronics/ui_act(action, params)
 	if(..())
 		return TRUE
@@ -101,7 +101,7 @@
 				return TRUE
 			locked = 1
 			. = TRUE
-*/ //TODO
+*/
 
 /obj/item/airlock_electronics/secure
 	name = "secure airlock electronics"
