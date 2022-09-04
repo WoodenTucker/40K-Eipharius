@@ -20,9 +20,7 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. Go to your pilgrim tab and select your fate. </font></b></span>")
-		H.verbs += list(
-			/mob/living/carbon/human/proc/penitentclass,
-		)
+		add_verb(H, /mob/living/carbon/human/proc/penitentclass)
 /*
 Pilgrim Fate System
 */
@@ -321,9 +319,7 @@ Pilgrim Fate System
 
 
 
-		H.verbs += list(
-			/mob/living/carbon/human/proc/penitentclass,
-		)
+		add_verb(H, /mob/living/carbon/human/proc/penitentclass)
 
 /datum/job/innkeeper  //so that the inn always has someone working
 	title = "Innkeeper"

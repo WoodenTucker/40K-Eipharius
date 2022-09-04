@@ -228,7 +228,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
-		H.verbs += list(
+		add_verb(H, list(
 		/mob/living/carbon/human/proc/sobemperorgivesstrenght,
 		/mob/living/carbon/human/proc/sobnotforsakeme,
 		/mob/living/carbon/human/proc/sobpraise,
@@ -240,8 +240,8 @@
 		/mob/living/carbon/human/proc/sobretreat,
 		/mob/living/carbon/human/proc/sobtakingfire,
 		/mob/living/carbon/human/proc/sobweservants,
-		/mob/living/carbon/human/proc/sobtheemperor)
-		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
+		/mob/living/carbon/human/proc/sobtheemperor))
+		remove_verb(H, list(/mob/living/carbon/human/verb/emoteemperorprotects))
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
 

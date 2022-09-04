@@ -43,7 +43,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Brother [current_name]")
-		H.verbs +=  list(
+		add_verb(H, list(
 		/mob/living/carbon/human/proc/astachaos,
 		/mob/living/carbon/human/proc/astacharge,
 		/mob/living/carbon/human/proc/astacrush,
@@ -59,8 +59,8 @@
 		/mob/living/carbon/human/proc/astaourwrath,
 		/mob/living/carbon/human/proc/astaready,
 		/mob/living/carbon/human/proc/astatoglory,
-		/mob/living/carbon/human/proc/astaxenos)
-		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
+		/mob/living/carbon/human/proc/astaxenos))
+		remove_verb(H, list(/mob/living/carbon/human/verb/emoteemperorprotects))
 		H.add_stats(30, rand(25,30), rand(25,30), rand(20,30)) //genuinely no idea what to make their stats
 		H.add_skills(11,11,11,11,11)
 /*switch(title) //either you get this to work or you dont change it, ok?

@@ -25,7 +25,7 @@ client
 			sound_to(mob, sound('sound/music/THUNDERDOME.ogg', wait = 0, volume = 40, channel = 1))
 	sleep(50)
 	var/list/_credits = credits
-	verbs += /client/proc/ClearCredits
+	add_verb(src, /client/proc/ClearCredits)
 	for(var/I in GLOB.end_titles)
 		if(!credits)
 			return

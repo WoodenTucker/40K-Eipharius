@@ -41,7 +41,7 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 
 /mob/observer/ghost/New(mob/body)
 	see_in_dark = 100
-	verbs += /mob/proc/toggle_antag_pool
+	add_verb(src, /mob/proc/toggle_antag_pool)
 
 	var/turf/T
 	if(ismob(body))
