@@ -60,8 +60,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -117,8 +117,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Conscript"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -148,24 +148,20 @@
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
 	title = "Imperial Guard Specialist"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
-	semi_rifle_skill = 9
-	sniper_skill = 9
+	semi_rifle_skill = 8
+	sniper_skill = 7
 	shotgun_skill = 6
 	lmg_skill = 8
 	smg_skill = 8
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
-		"Cadian Sniper" = /decl/hierarchy/outfit/job/sharpshooter2,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
-		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sharpshooter/valhalla2,
-		"Krieg Marksman" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
 		"Catachan Flamer" = /decl/hierarchy/outfit/job/guardsman/catachan,
-
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -193,6 +189,53 @@
 				if(title == "Valhallan Heavy Autogunner")
 					H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+
+
+// snipings a good job mate
+/datum/job/ig/guardsman/sniper
+	title = "Imperial Guard Sniper"
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = FALSE
+	outfit_type = /decl/hierarchy/outfit/job/sniper
+	auto_rifle_skill = 7
+	semi_rifle_skill = 9
+	sniper_skill = 9
+	shotgun_skill = 6
+	lmg_skill = 7
+	smg_skill = 8
+	alt_titles = list(
+		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
+		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
+		"Krieg Marksman" = /decl/hierarchy/outfit/job/sniper/krieg,
+		)
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
+		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		SSwarfare.red.team += H
+		if(can_be_in_squad)
+			H.assign_random_squad(IMPERIUM)
+		H.fully_replace_character_name("[H.real_name]")
+		H.assign_random_quirk()
+		H.witchblood()
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
+
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		to_chat(H, "<span class='notice'><b><font size=3> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
+
+		switch(title)
+			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
+				if(title == "Krieg Marksman")
+					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+				if(title == "Valhallan Scout Sniper")
+					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+
 
 // Sergeants
 
@@ -577,28 +620,6 @@
 	/obj/item/stack/thrones3/five = 1
 	)
 
-/decl/hierarchy/outfit/job/sharpshooter/krieg
-	name = OUTFIT_JOB_NAME("Krieg Sniper")
-	uniform = /obj/item/clothing/under/rank/krieg_uniform
-	suit = /obj/item/clothing/suit/armor/krieger
-	back = /obj/item/storage/backpack/satchel/krieger
-	gloves = /obj/item/clothing/gloves/combat/krieg
-	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
-	mask = /obj/item/clothing/mask/gas/krieg
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
-	l_ear = /obj/item/device/radio/headset/red_team
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
-	)
-
 /decl/hierarchy/outfit/job/guardsman/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
@@ -621,6 +642,78 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
+	)
+
+// Sniper
+
+/decl/hierarchy/outfit/job/sniper
+	name = OUTFIT_JOB_NAME("Cadian Sniper")
+	uniform = /obj/item/clothing/under/cadian_uniform
+	suit = /obj/item/clothing/suit/armor/guardsman
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/guardhelmet
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/sniperammo/apds
+	suit_store = /obj/item/gun/projectile/heavysniper
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/storage/box/sniperammo = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/sniper/krieg
+	name = OUTFIT_JOB_NAME("Krieg Marksman")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/krieger/grenadier
+	back = /obj/item/storage/backpack/satchel/krieger
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/helmet/krieghelmet
+	mask = /obj/item/clothing/mask/gas/krieg
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas/krieg
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel = 1
+	)
+
+/decl/hierarchy/outfit/job/sniper/valhalla
+	name = OUTFIT_JOB_NAME("Valhallan Scout Sniper")
+	uniform = /obj/item/clothing/under/rank/valhallan_uniform
+	suit = /obj/item/clothing/suit/armor/valhallanarmor
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/valushanka
+	mask = null
+	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/device/binoculars
+	r_pocket =  /obj/item/ammo_magazine/handful/brifle_handful/ms
+	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/handful/brifle_handful/ms = 2,
+	/obj/item/ammo_magazine/handful/brifle_handful/ap = 2,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1
 	)
 
 // Sergeant

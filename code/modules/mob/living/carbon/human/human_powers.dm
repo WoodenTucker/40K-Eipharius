@@ -226,12 +226,12 @@
 	set category = "Abilities"
 	set name = "Active Camo"
 	set desc = "Camouflage yourself"
+	var/stealth_alpha = 15
 
-	if(is_cloaked_by(species))
-		remove_cloaking_source(species)
+	if(alpha == stealth_alpha)
+		animate(src, alpha = 255, time = 1.5 SECONDS)
 	else
-		add_cloaking_source(species)
-		apply_effect(2, STUN, 0)
+		animate(src, alpha = stealth_alpha, time = 1.5 SECONDS)
 
 /mob/living/carbon/human/proc/switch_stance()
 	set category = "Abilities"

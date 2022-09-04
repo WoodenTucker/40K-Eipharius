@@ -122,22 +122,22 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
-	one_hand_penalty = 3.4
-	fire_delay = 4
-	accuracy = -3
+	one_hand_penalty = 10
+	fire_delay = 8
+	accuracy = -4
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
-	charge_cost = 250
+	charge_cost = 300
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
 	sales_price = 110
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=4, move_delay=1.5, one_hand_penalty=3.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="overcharge", fire_delay = 4.5, move_delay=2, one_hand_penalty=4.25, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=450),
+		list(mode_name="semi-automatic", move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
+		list(mode_name="overcharge", move_delay=2, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
@@ -151,3 +151,10 @@
 	..()
 	if(user.zoomed)
 		user.do_zoom()
+
+
+/obj/item/gun/energy/las/lasgun/longlas/krieg
+	name = "Krieg Pattern Longlas"
+	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
+	icon_state = "kriegsniper"
+	item_state = "lasgun"
