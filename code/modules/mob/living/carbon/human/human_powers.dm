@@ -226,7 +226,7 @@
 	set category = "Abilities"
 	set name = "Active Camo"
 	set desc = "Camouflage yourself"
-	var/stealth_alpha = 20
+	var/stealth_alpha = 15
 
 	if(alpha == stealth_alpha)
 		animate(src, alpha = 255, time = 1.5 SECONDS)
