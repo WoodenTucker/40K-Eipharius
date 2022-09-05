@@ -15,11 +15,11 @@
 	name = "small rock"
 	desc = "Just that, a piece of a cave wall."
 	icon_state = "glass_ore"
-	sales_price = 1
+	sales_price = 2
 
 /obj/item/newore/ironore
 	name = "iron ore"
-	desc = "A chunk of iron ore."
+	desc = "A chunk of iron ore. Sturdy and reliable as ever."
 	icon_state = "iron"
 	sales_price = 4
 
@@ -29,20 +29,20 @@
 
 /obj/item/newore/copperore
 	name = "copper ore"
-	desc = "A chunk of copper ore"
+	desc = "A chunk of copper ore. You could make a load of things from it's ingot"
 	icon_state = "copper"
 	sales_price = 6
 
 
 /obj/item/newore/silverore
 	name = "silver ore"
-	desc = "A chunk of silver ore"
+	desc = "A chunk of silver ore. Good for fancy items and energy ammo"
 	icon_state = "ore_silver"
 	sales_price = 7
 
 /obj/item/newore/coalore
 	name = "coal"
-	desc = "A chunk of coal"
+	desc = "A chunk of coal. Use it to fuel forges."
 	icon_state = "coal"
 	sales_price = 5
 /obj/item/newore/goldore
@@ -53,7 +53,7 @@
 
 /obj/item/newore/adamantiumore
 	name = "adamantium ore"
-	desc = "A chunk of the rarest known mineral in the Imperium."
+	desc = "A chunk of the rarest known mineral in the Imperium. Don't sell it cheap."
 	icon_state = "adamantine"
 	sales_price = 25
 
@@ -67,6 +67,24 @@
 	name = "phoron ore"
 	desc = "A chunk of phoron ore, a highly flammable ore that came from another galaxy.(Forges can still smelt it)"
 	icon_state = "phoron"
+	sales_price = 12
+
+/obj/item/newore/coboltore
+	name = "cobolt ore"
+	desc = "A chunk of gold containing the bright blue cobolt inside. Useful for advanced items."
+	icon_state = "cobolt"
+	sales_price = 10
+
+/obj/item/newore/kultriniumore
+	name = "kultrinium ore"
+	desc = "A chunk of ore containing the strong yet lightweight kultrinium metal inside. Useful for advanced weapons."
+	icon_state = "ore_titanium"
+	sales_price = 10
+
+/obj/item/newore/diamantineore
+	name = "diamantine ore"
+	desc = "A chunk of diamantine ore, strong in conductivity. Useful for advanced ammo"
+	icon_state = "ore_platinum"
 	sales_price = 12
 
  /* _____                   _
@@ -88,7 +106,7 @@
 
 /obj/item/ingots/copperingot
 	name = "copper ingot"
-	desc = "A solid bar of copper."
+	desc = "A solid bar of copper. You can make a lot of things out of this. Quality is another thing, though..."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "copper_ingot"
 	w_class = ITEM_SIZE_NORMAL
@@ -97,7 +115,7 @@
 
 /obj/item/ingots/silveringot
 	name = "silver ingot"
-	desc = "A solid bar of silver."
+	desc = "A solid bar of silver. Good for fancy items and lasgun ammo"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "silver_ingot"
 	w_class = ITEM_SIZE_NORMAL
@@ -116,7 +134,7 @@
 
 /obj/item/ingots/ironingot
 	name = "iron ingot"
-	desc = "A solid bar of iron."
+	desc = "A solid bar of iron. Strong and reliable, useful for a variety of items."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "iron_ingot"
 	w_class = ITEM_SIZE_NORMAL
@@ -126,7 +144,7 @@
 
 /obj/item/ingots/adamantiumingot
 	name = "adamantium ingot"
-	desc = "One of the rarest and strongest metals known to the Imperium."
+	desc = "One of the rarest and strongest metals known to the Imperium. Don't sell it cheap."
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "adamantine_ingot"
 	w_class = ITEM_SIZE_NORMAL
@@ -142,6 +160,32 @@
 	drop_sound = 'sound/items/metaldrop.ogg'
 	sales_price = 30
 
+/obj/item/ingots/coboltingot
+	name = "cobolt ingot"
+	desc = "A solid bar of cobolt. Useful for advanced items"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "cobolt_ingot"
+	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 25
+
+/obj/item/ingots/kultriniumingot
+	name = "kultrinium ingot"
+	desc = "A solid bar of kultrinium. It's strong yet lightweight. Useful for advanced weapons."
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "titanium_ingot"
+	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 25
+
+/obj/item/ingots/diamantineingot
+	name = "diamantine ingot"
+	desc = "A solid bar of diamantine. Strong in conductivity. Useful for advanced ammo"
+	icon = 'icons/obj/mining.dmi'
+	icon_state = "platnium_ingot"
+	w_class = ITEM_SIZE_NORMAL
+	drop_sound = 'sound/items/metaldrop.ogg'
+	sales_price = 25
 
 /*
    _____
@@ -565,6 +609,36 @@
 		src.smelting = 0
 		new /obj/item/stack/material/phoron(src.loc)
 		src.coalfed -= 0.5
+	else if (istype(O,	/obj/item/newore/coboltore))
+		visible_message("[user] feeds [O] into the fire!")
+		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
+		qdel(O)
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/ingots/coboltingot(src.loc)
+		src.coalfed -= 0.5
+		return
+	else if (istype(O,	/obj/item/newore/kultriniumore))
+		visible_message("[user] feeds [O] into the fire!")
+		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
+		qdel(O)
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/ingots/kultriniumingot(src.loc)
+		src.coalfed -= 0.5
+		return
+	else if (istype(O,	/obj/item/newore/diamantineore))
+		visible_message("[user] feeds [O] into the fire!")
+		playsound(src, 'sound/effects/furnace_fire.ogg', 100, 1, 1)
+		qdel(O)
+		src.smelting = 1
+		sleep(60) //10 seconds
+		src.smelting = 0
+		new /obj/item/ingots/diamantineingot(src.loc)
+		src.coalfed -= 0.5
+		return
 
 
 //Gem washer

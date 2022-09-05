@@ -5,8 +5,13 @@
 #define URANIUM                 /obj/item/newore/uraniumore
 #define SILVER                  /obj/item/newore/silverore
 #define GOLD                    /obj/item/newore/goldore
+#define COBOLT					/obj/item/newore/coboltore
+#define DIAMANTINE				/obj/item/newore/diamantineore
 #define PHORON                  /obj/item/newore/phoronore
+#define KULTRINIUM	 			/obj/item/newore/kultriniumore
 #define ADAMANTIUM              /obj/item/newore/adamantiumore
+
+
 
 //Mining is kinda broken and I don't feel like figuring it out so I'm gunna make my own shittier version here
 
@@ -41,31 +46,40 @@
 			rock = TRUE
 		var/ore_prob = rand(1, 100)
 		switch(ore_prob)
-			if(1 to 20)
+			if(1 to 25)
 				crumbling_message = "The wall crumbles under [O], revealing coal!"
 				ore_inside = COAL
-			if(21 to 35)
+			if(26to 46)
 				crumbling_message = "The wall crumbles under [O], revealing copper!"
 				ore_inside = COPPER
-			if(35 to  45)
+			if(47 to  61)
 				crumbling_message = "The wall crumbles under [O], revealing iron!"
 				ore_inside = IRON
-			if(46 to  55)
+			if(62 to  65)
 				crumbling_message = "The wall crumbles under [O], revealing uranium!"
 				ore_inside = URANIUM
-			if(55 to  63)
+			if(66 to 75)
 				crumbling_message = "The wall crumbles under [O], revealing silver!"
 				ore_inside = SILVER
-			if(64 to  68)
+			if(76 to  79)
 				crumbling_message = "The wall crumbles under [O], revealing gold!"
 				ore_inside = GOLD
-			if(69 to  73)
+			if(80 to 81)
 				crumbling_message = "The wall crumbles under [O], revealing promethium!"
 				ore_inside = PHORON
-			if(74 to  75)
+			if(82 to 83)
 				crumbling_message = "The wall crumbles under [O], revealing adamantium!"
 				ore_inside = ADAMANTIUM
-			if(76 to 100)
+			if(84 to 87)
+				crumbling_message = "The wall crumbles under [O], revealing cobolt!"
+				ore_inside = COBOLT
+			if(88 to 93)
+				crumbling_message = "The wall crumbles under [O], revealing kultrinium!"
+				ore_inside = KULTRINIUM
+			if(94 to  98)
+				crumbling_message = "The wall crumbles under [O], revealing diamantine!"
+				ore_inside = DIAMANTINE
+			if(99 to 100)
 				crumbling_message = "The wall crumbles under [O], revealing.....nothing interesting."
 				ore_inside = FALSE
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
