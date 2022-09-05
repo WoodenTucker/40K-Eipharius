@@ -82,9 +82,15 @@
 
 #define isLasercutter(A) istype(A, /obj/item/device/lasercutter)
 
+#define isHammer(A) 	istype(A, /obj/item/device/hammer)
+
 #define isAutochisel(A) istype(A, /obj/item/device/autochisel)
 
+#define isChisel(A) istype(A, /obj/item/device/chisel)
+
 #define isHolyoils(A) istype(A, /obj/item/device/holyoils)
+
+#define isLube(A) istype(A, /obj/item/device/lube)
 
 #define isMultitool(A) istype(A, /obj/item/device/multitool)
 
