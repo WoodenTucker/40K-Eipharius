@@ -6,51 +6,57 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		var/datum/reagent/R = reagent_type
 		.[initial(R.name)] = reagent_type
 
-/mob/living/simple_animal/borer/proc/release_host()
+/mob/living/simple_animal/borer/verb/release_host()
 	set category = "Abilities"
 	set name = "Release Host"
 	set desc = "Slither out of your host."
-
-	if(stat)
-		return
 
 	if(!host)
 		to_chat(src, "You are not inside a host body.")
 		return
 
+	if(stat)
+		to_chat(src, "You cannot leave your host in your current state.")
+
 	if(docile)
-		to_chat(src, SPAN_DANGER("You are feeling far too docile to do that."))
+		to_chat(src, "<span class='notice'>You are feeling far too docile to do that.</span>")
 		return
 
 	if(!host || !src) return
 
-	to_chat(src, SPAN_NOTICE("You begin disconnecting from [host]'s synapses and prodding at their internal ear canal."))
+	to_chat(src, "You begin disconnecting from [host]'s synapses and prodding at their internal ear canal.")
 
 	if(!host.stat)
-		to_chat(host, SPAN_WARNING("An odd, uncomfortable pressure begins to build inside your skull, behind your ear..."))
+		to_chat(host, "An odd, uncomfortable pressure begins to build inside your skull, behind your ear...")
 
 	spawn(100)
-		if(!host || stat) return
 
-		to_chat(src, SPAN_DANGER("You wiggle out of [host]'s ear and plop to the ground."))
-		if(host.mind && !host.stat)
-			if(controlling)
-				to_chat(host, SPAN_DANGER("As though waking from a dream, you shake off the insidious mind control of the brain worm. Your thoughts are your own again."))
-			to_chat(host, SPAN_DANGER("Something slimy wiggles out of your ear and plops to the ground!"))
+		if(!host || !src) return
+
+		if(src.stat)
+			to_chat(src, "You cannot release your host in your current state.")
+			return
+
+		to_chat(src, "You wiggle out of [host]'s ear and plop to the ground.")
+		if(host.mind)
+			if(!host.stat)
+				to_chat(host, "<span class='danger'>Something slimy wiggles out of your ear and plops to the ground!</span>")
+			to_chat(host, "<span class='danger'>As though waking from a dream, you shake off the insidious mind control of the brain worm. Your thoughts are your own again.</span>")
 
 		detatch()
 		leave_host()
 
-/mob/living/simple_animal/borer/proc/infest()
+/mob/living/simple_animal/borer/verb/infest()
 	set category = "Abilities"
 	set name = "Infest"
 	set desc = "Infest a suitable humanoid host."
 
-	if(stat)
+	if(host)
+		to_chat(src, "You are already within a host.")
 		return
 
-	if(host)
-		to_chat(src, SPAN_WARNING("You are already within a host."))
+	if(stat)
+		to_chat(src, "You cannot infest a target in your current state.")
 		return
 
 	var/list/choices = list()
@@ -59,75 +65,63 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 			choices += C
 
 	if(!choices.len)
-		to_chat(src, SPAN_WARNING("There are no viable hosts nearby."))
+		to_chat(src, "There are no viable hosts within range...")
 		return
 
 	var/mob/living/carbon/M = input(src,"Who do you wish to infest?") in null|choices
 
-	if(!M || !Adjacent(M)) return
+	if(!M || !src) return
+
+	if(!(src.Adjacent(M))) return
 
 	if(M.has_brain_worms())
-		to_chat(src, SPAN_WARNING("You cannot infest someone who is already infested!"))
+		to_chat(src, "You cannot infest someone who is already infested!")
 		return
 
-	if(ishuman(M))
+	if(istype(M,/mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
 
 		var/obj/item/organ/external/E = H.organs_by_name[BP_HEAD]
 		if(!E || E.is_stump())
-			to_chat(src, SPAN_WARNING("\The [H] does not have a head!"))
+			to_chat(src, "\The [H] does not have a head!")
 
+		if(!H.should_have_organ(BP_BRAIN))
+			to_chat(src, "\The [H] does not seem to have an ear canal to breach.")
+			return
 
-		if(H.check_head_coverage() && H.head && !(H.head.canremove))
-			to_chat(src, SPAN_WARNING("You cannot get through that host's protective gear."))
+		if(H.check_head_coverage())
+			to_chat(src, "You cannot get through that host's protective gear.")
 			return
 
 	to_chat(M, "Something slimy begins probing at the opening of your ear canal...")
-	to_chat(src, SPAN_DANGER("You slither up [M] and begin probing at their ear canal..."))
+	to_chat(src, "You slither up [M] and begin probing at their ear canal...")
 
-	var/infestation_delay = 2.5 SECONDS
-
-
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if(H.check_head_coverage())
-			to_chat(src, SPAN_DANGER("That host's wearing protective gear. You can work around it, but it will take time."))
-			infestation_delay *= 3
-
-	// Borer gets host abilities before actually getting inside the host
-	// Workaround for a BYOND bug: http://www.byond.com/forum/post/1833666 << We fix this in a better way
-	if(!do_mob(src, M, infestation_delay))
-		to_chat(src, SPAN_DANGER("As [M] moves away, you are dislodged and fall to the ground."))
+	if(!do_after(src,30, progress = 0))
+		to_chat(src, "As [M] moves away, you are dislodged and fall to the ground.")
 		return
 
-	to_chat(src, SPAN_NOTICE("You wiggle into [M]'s ear."))
-	if(!M.stat)
-		to_chat(M, SPAN_DANGER("Something disgusting and slimy wiggles into your ear!"))
+	if(!M || !src) return
 
-	if(invisibility)
-		src.invisibility = 0
-		src.alpha = 255
-
-	if(sight & SEE_MOBS)
-		sight &= ~SEE_MOBS
-		to_chat(src, SPAN_NOTICE("You cannot see living being through walls for now."))
+	if(src.stat)
+		to_chat(src, "You cannot infest a target in your current state.")
 		return
 
-	host = M
-	host.status_flags |= PASSEMOTES
-	update_abilities()
-	spawn(1) /// Wait for abilities to update THEN move them in due to the afore-mentioned bug.
-		forceMove(host)
-	//Update their contractor status.
-	/*if(host.mind && src.mind)
-		var/list/L = get_player_antags(src.mind, ROLE_BORER)
-		var/datum/antagonist/borer/borer
-		if(L.len)
-			borer = L[1]*/
+	if(M in view(1, src))
+		to_chat(src, "You wiggle into [M]'s ear.")
+		if(!M.stat)
+			to_chat(M, "Something disgusting and slimy wiggles into your ear!")
 
-		if(ishuman(M))
+		src.host = M
+		src.host.status_flags |= PASSEMOTES
+		src.loc = M
+
+		//Update their heretic status.
+		if(host.mind)
+			borers.add_antagonist_mind(host.mind, 1, borers.faction_role_text, borers.faction_welcome)
+
+		if(istype(M,/mob/living/carbon/human))
 			var/mob/living/carbon/human/H = M
-			var/obj/item/organ/I = H.get_organ(BP_BRAIN)
+			var/obj/item/organ/I = H.internal_organs_by_name[BP_BRAIN]
 			if(!I) // No brain organ, so the borer moves in and replaces it permanently.
 				replace_brain()
 			else
@@ -135,22 +129,33 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 				var/obj/item/organ/external/head = H.get_organ(BP_HEAD)
 				head.implants += src
 
+		return
+	else
+		to_chat(src, "They are no longer in range!")
+		return
+
 /*
 /mob/living/simple_animal/borer/verb/devour_brain()
 	set category = "Abilities"
 	set name = "Devour Brain"
 	set desc = "Take permanent control of a dead host."
+
 	if(!host)
 		to_chat(src, "You are not inside a host body.")
 		return
+
 	if(host.stat != 2)
 		to_chat(src, "Your host is still alive.")
 		return
+
 	if(stat)
 		to_chat(src, "You cannot do that in your current state.")
+
 	if(docile)
-		to_chat(src, "\blue You are feeling far too docile to do that.")
+		to_chat(src, "<span class='notice'>You are feeling far too docile to do that.</span>")
 		return
+
+
 	to_chat(src, "<span class = 'danger'>It only takes a few moments to render the dead host brain down into a nutrient-rich slurry...</span>")
 	replace_brain()
 */
@@ -164,9 +169,9 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		to_chat(src, "This host does not have a suitable brain.")
 		return
 
-	to_chat(src, SPAN_DANGER("You settle into the empty brainpan and begin to expand, fusing inextricably with the dead flesh of [H]."))
+	to_chat(src, "<span class = 'danger'>You settle into the empty brainpan and begin to expand, fusing inextricably with the dead flesh of [H].</span>")
 
-	H.add_language(LANGUAGE_TYRANID)
+	H.add_language("Cortical Link")
 
 	if(host.stat == 2)
 		add_verb(H, /mob/living/carbon/human/proc/jumpstart)
@@ -182,13 +187,17 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 	add_verb(H, /mob/living/carbon/proc/spawn_larvae)
 	add_verb(H, /mob/living/carbon/proc/talk_host)
 
+	if(H.client)
+		H.ghostize(0)
 
 	if(src.mind)
+		src.mind.special_role = "Borer Husk"
 		src.mind.transfer_to(host)
 
 	H.ChangeToHusk()
 
 	var/obj/item/organ/internal/borer/B = new(H)
+	H.internal_organs_by_name[BP_BRAIN] = B
 	H.internal_organs |= B
 
 	var/obj/item/organ/external/affecting = H.get_organ(BP_HEAD)
@@ -205,141 +214,102 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 	if(!H.lastKnownIP)
 		H.lastKnownIP = s2h_ip
 
-	if(H.stat) // > Take over a body that is always dead , die , !?!??!
-		var/all_damage = H.getBruteLoss() + H.getFireLoss() + H.getCloneLoss() + H.getOxyLoss() + H.getToxLoss()
-		while(all_damage > 90)
-			H.adjustBruteLoss(-10)
-			H.adjustFireLoss(-10)
-			H.adjustCloneLoss(-10)
-			H.adjustOxyLoss(-10)
-			H.adjustToxLoss(-10)
-			all_damage = H.getBruteLoss() + H.getFireLoss() + H.getCloneLoss() + H.getOxyLoss() + H.getToxLoss()
-		H.stat = UNCONSCIOUS
-		H.updatehealth()
-
-/mob/living/simple_animal/borer/proc/secrete_chemicals()
+/mob/living/simple_animal/borer/verb/secrete_chemicals()
 	set category = "Abilities"
 	set name = "Secrete Chemicals"
 	set desc = "Push some chemicals into your host's bloodstream."
 
-	if(stat)
+	if(!host)
+		to_chat(src, "You are not inside a host body.")
 		return
 
-	if(!host)
-		to_chat(src, SPAN_WARNING("You are not inside a host body."))
-		return
+	if(stat)
+		to_chat(src, "You cannot secrete chemicals in your current state.")
 
 	if(docile)
-		to_chat(src, SPAN_DANGER("You are feeling far too docile to do that."))
+		to_chat(src, "<span class='notice'>You are feeling far too docile to do that.</span>")
 		return
 
-	if(chemicals < 25)
-		to_chat(src, SPAN_WARNING("You don't have enough chemicals!"))
+	if(chemicals < 50)
+		to_chat(src, "You don't have enough chemicals!")
+
+	var/chem = input("Select a chemical to secrete.", "Chemicals") as null|anything in GLOB.borer_reagent_types_by_name
+
+	if(!chem || chemicals < 50 || !host || controlling || !src || stat) //Sanity check.
 		return
 
+	to_chat(src, "<span class='danger'>You squirt a measure of [chem] from your reservoirs into \the [host]'s bloodstream.</span>")
+	host.reagents.add_reagent(GLOB.borer_reagent_types_by_name[chem], 10)
+	chemicals -= 50
 
-
-
-	var/list/chem_names = list()
-	var/chem_name = input("Select a chemical to secrete.", "Chemicals") as null|anything in chem_names
-	var/chem = chem_names[chem_name]
-	for(var/id in produced_reagents)
-		var/datum/reagent/D = (GLOB.borer_reagent_types_by_name[chem])
-		chem_names[D.name] = id
-
-
-	if(!chem || chemicals < 25 || !host || controlling || !src || stat)
-		return
-
-	host.reagents.add_reagent(chem, 5)
-	to_chat(src, SPAN_NOTICE("You secrete some chemicals from your reservoirs. There are [host.reagents.get_reagent_amount(chem)] units of [chem_name] in host's bloodstream now."))
-	chemicals -= 25
-
-/mob/living/simple_animal/borer/proc/paralyze_victim()
+/mob/living/simple_animal/borer/verb/dominate_victim()
 	set category = "Abilities"
 	set name = "Paralyze Victim"
 	set desc = "Freeze the limbs of a potential host with supernatural fear."
 
-	if(src.stat)
-		return
-
 	if(world.time - used_dominate < 150)
-		to_chat(src, SPAN_WARNING("You cannot use that ability again so soon."))
+		to_chat(src, "You cannot use that ability again so soon.")
 		return
 
-	if(is_ventcrawling)
-		to_chat(src, SPAN_WARNING("You cannot use that ability while in vent."))
+	if(host)
+		to_chat(src, "You cannot do that from within a host body.")
 		return
 
-	if(chemicals < 10)
-		to_chat(src, SPAN_WARNING("You don't have enough chemicals!"))
+	if(src.stat)
+		to_chat(src, "You cannot do that in your current state.")
 		return
 
 	var/list/choices = list()
-	for(var/mob/living/carbon/C in view(1, get_turf(src)))
-		if(C == host || C.stat == DEAD)
-			continue
+	for(var/mob/living/carbon/C in view(3,src))
+		if(C.stat != 2)
+			choices += C
 
-		choices += C
-
-	if(!choices)
-		to_chat(src, SPAN_WARNING("No available creatures found in your radius."))
+	if(world.time - used_dominate < 150)
+		to_chat(src, "You cannot use that ability again so soon.")
 		return
 
 	var/mob/living/carbon/M = input(src,"Who do you wish to dominate?") in null|choices
 
-	if(world.time - used_dominate < 150)
-		to_chat(src, SPAN_WARNING("You cannot use that ability again so soon."))
-		return
-
-	if(!M || !(M in view(1, get_turf(src)))) return
-
-	if(ishuman(M))
-		var/mob/living/carbon/human/H = M
-		if(istype(H.wear_suit, /obj/item/clothing/suit/space))
-			to_chat(src, SPAN_WARNING("You cannot use that ability on someone, who wear a space suit."))
-			return
+	if(!M || !src) return
 
 	if(M.has_brain_worms())
-		to_chat(src, "You cannot paralyze someone who is already infested!")
+		to_chat(src, "You cannot infest someone who is already infested!")
 		return
 
-	to_chat(src, SPAN_WARNING("You focus your psychic lance on [M] and freeze their limbs with a wave of terrible dread."))
-	to_chat(M, SPAN_DANGER("You feel a creeping, horrible sense of dread come over you, freezing your limbs and setting your heart racing."))
-	var/duration = 20 + (borer_level*5)
-	M.Weaken(duration)
-	M.SetStunned(duration)
-	M.SetParalysis(duration)
-	chemicals -= 10
+	to_chat(src, "<span class='warning'>You focus your psychic lance on [M] and freeze their limbs with a wave of terrible dread.</span>")
+	to_chat(M, "<span class='wanring'>You feel a creeping, horrible sense of dread come over you, freezing your limbs and setting your heart racing.</span>")
+	M.Weaken(10)
+
 	used_dominate = world.time
 
-/mob/living/simple_animal/borer/proc/assume_control()
+/mob/living/simple_animal/borer/verb/bond_brain()
 	set category = "Abilities"
 	set name = "Assume Control"
 	set desc = "Fully connect to the brain of your host."
 
-	if(stat)
+	if(!host)
+		to_chat(src, "You are not inside a host body.")
 		return
 
-	if(!host)
-		to_chat(src, SPAN_WARNING("You are not inside a host body."))
+	if(src.stat)
+		to_chat(src, "You cannot do that in your current state.")
 		return
 
 	if(docile)
-		to_chat(src, SPAN_DANGER("You are feeling far too docile to do that."))
+		to_chat(src, "<span class='notice'>You are feeling far too docile to do that.</span>")
 		return
 
-	to_chat(src, SPAN_NOTICE("You begin delicately adjusting your connection to the host brain..."))
+	to_chat(src, "You begin delicately adjusting your connection to the host brain...")
 
-	spawn(100)
+	spawn(100+(host.getBrainLoss()*5))
 
 		if(!host || !src || controlling)
 			return
 		else
 
-			to_chat(src, SPAN_DANGER("You plunge your probosci deep into the cortex of the host brain, interfacing directly with their nervous system."))
-			to_chat(host, SPAN_DANGER("You feel a strange shifting sensation behind your eyes as another consciousness displaces yours."))
-			host.add_language(LANGUAGE_TYRANID)
+			to_chat(src, "<span class='danger'>You plunge your probosci deep into the cortex of the host brain, interfacing directly with their nervous system.</span>")
+			to_chat(host, "<span class='danger'>You feel a strange shifting sensation behind your eyes as an alien consciousness displaces yours.</span>")
+			host.add_language("Cortical Link")
 
 			// host -> brain
 			var/h2b_id = host.computer_id
@@ -352,7 +322,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 
 			host_brain.ckey = host.ckey
 
-			host_brain.name = host.name
+			host_brain.SetName(host.name)
 
 			if(!host_brain.computer_id)
 				host_brain.computer_id = h2b_id
@@ -381,14 +351,14 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 			add_verb(host, /mob/living/carbon/proc/spawn_larvae)
 			controlling = TRUE
 
-			update_abilities()
+			return
 
-/mob/living/simple_animal/borer/proc/jumpstart()
+/mob/living/carbon/human/proc/jumpstart()
 	set category = "Abilities"
 	set name = "Revive Host"
 	set desc = "Send a jolt of electricity through your host, reviving them."
 
-	if(host.stat != DEAD)
+	if(stat != 2)
 		to_chat(usr, "Your host is already alive.")
 		return
 

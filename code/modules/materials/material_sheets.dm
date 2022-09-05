@@ -137,7 +137,10 @@
 	default_type = "uranium"
 	icon = 'icons/obj/items.dmi'
 	sales_price = 2
-
+	
+/obj/item/stack/material/uranium/one
+	amount = 1
+	
 /obj/item/stack/material/uranium/ten
 	amount = 10
 
@@ -150,6 +153,9 @@
 	default_type = "phoron"
 	icon = 'icons/obj/items.dmi'
 	sales_price = 3
+
+/obj/item/stack/material/phoron/one
+	amount = 1
 
 /obj/item/stack/material/phoron/ten
 	amount = 10

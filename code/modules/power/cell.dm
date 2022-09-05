@@ -270,6 +270,17 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
 	sales_price = 3
 
+/obj/item/cell/lasgun/small
+	name = "Inferior lasgun power pack"
+	desc = "A lasgun cell made from sub-standard materials. Probably copper. Has half the charge of a normal lasgun cell."
+	origin_tech = list(TECH_POWER = 6)
+	icon_state = "lgpp_small"
+	maxcharge = 1500
+	w_class = ITEM_SIZE_SMALL
+	matter = list(DEFAULT_WALL_MATERIAL = 7350, "glass" = 40)
+	sales_price = 3
+
+
 /obj/item/cell/lasgun/hotshot
 	name = "hotshot lasgun power pack"
 	desc = "A small, portable capacitor power pack fit for a lasgun."
