@@ -178,8 +178,6 @@
 	accuracy = -4
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
-	unwielded_loaded_icon = "musket"
-	unwielded_unloaded_icon = "musket"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/musket_fire.ogg'
 	gun_type = GUN_SNIPER
