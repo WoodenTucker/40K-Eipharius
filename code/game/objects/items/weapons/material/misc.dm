@@ -107,7 +107,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	sales_price = 100
+	sales_price = 90
 
 /obj/item/material/sword/hellblade
 	name = "hellblade sword"
@@ -123,7 +123,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	sales_price = 240
+	sales_price = 200
 
 /obj/item/material/sword/commissword/sabre
 	name = "Sabre"

@@ -159,7 +159,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
 	edge = TRUE
-	sales_price = 180
+	sales_price = 0
 
 // CHAINSWORD
 
@@ -217,7 +217,7 @@
 	desc = "A golden chainsword emblazened with over the top shine from it's expensive base metal. Almost as golden as a Custodes, you think."
 	icon_state = "goldchains"
 	item_state = "goldchains"
-	sales_price = 120 //only RT has it. if made craftable, decrease value.
+	sales_price = 0 //only RT has it. if made craftable, decrease value.
 
 /obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
