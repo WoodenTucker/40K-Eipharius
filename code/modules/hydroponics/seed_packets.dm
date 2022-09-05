@@ -53,6 +53,7 @@ var/global/list/plant_seed_sprites = list()
 	if(is_seeds)
 		src.SetName("packet of [seed.seed_name] [seed.seed_noun]")
 		src.desc = "It has a picture of [seed.display_name] on the front."
+		src.sales_price = seed.seed_price
 	else
 		src.SetName("sample of [seed.seed_name] [seed.seed_noun]")
 		src.desc = "It's labelled as coming from [seed.display_name]."
@@ -80,151 +81,114 @@ var/global/list/plant_seed_sprites = list()
 
 /obj/item/seeds/replicapod
 	seed_type = "diona"
-	sales_price = 10
 
 /obj/item/seeds/chiliseed
 	seed_type = "chili"
-	sales_price = 3
 
 /obj/item/seeds/plastiseed
 	seed_type = "plastic"
-	sales_price = 1
 
 /obj/item/seeds/grapeseed
 	seed_type = "grapes"
-	sales_price = 2
 
 /obj/item/seeds/greengrapeseed
 	seed_type = "greengrapes"
-	sales_price = 3
 
 /obj/item/seeds/peanutseed
 	seed_type = "peanut"
-	sales_price = 2
 
 /obj/item/seeds/cabbageseed
 	seed_type = "cabbage"
-	sales_price = 1
 
 /obj/item/seeds/shandseed
 	seed_type = "shand"
-	sales_price = 2
 
 /obj/item/seeds/mtearseed
 	seed_type = "mtear"
-	sales_price = 2
 
 /obj/item/seeds/berryseed
 	seed_type = "berries"
-	sales_price = 2
 
 /obj/item/seeds/blueberryseed
 	seed_type = "blueberries"
-	sales_price = 2
 
 /obj/item/seeds/glowberryseed
 	seed_type = "glowberries"
-	sales_price = 3
 
 /obj/item/seeds/bananaseed
 	seed_type = "banana"
-	sales_price = 2
 
 /obj/item/seeds/eggplantseed
 	seed_type = "eggplant"
-	sales_price = 2
 
 /obj/item/seeds/bloodtomatoseed
 	seed_type = "bloodtomato"
-	sales_price = 3
 
 /obj/item/seeds/tomatoseed
 	seed_type = "tomato"
-	sales_price = 2
 
 /obj/item/seeds/killertomatoseed
 	seed_type = "killertomato"
-	sales_price = 4
 
 /obj/item/seeds/bluetomatoseed
 	seed_type = "bluetomato"
-	sales_price = 3
 
 /obj/item/seeds/bluespacetomatoseed
 	seed_type = "bluespacetomato"
-	sales_price = 6
 
 /obj/item/seeds/cornseed
 	seed_type = "corn"
-	sales_price = 2
 
 /obj/item/seeds/poppyseed
 	seed_type = "poppies"
-	sales_price = 1
 
 /obj/item/seeds/potatoseed
 	seed_type = "potato"
-	sales_price = 1
 
 /obj/item/seeds/icepepperseed
 	seed_type = "icechili"
-	sales_price = 2
 
 /obj/item/seeds/soyaseed
 	seed_type = "soybean"
-	sales_price = 2
 
 /obj/item/seeds/wheatseed
 	seed_type = "wheat"
-	sales_price = 1
 
 /obj/item/seeds/riceseed
 	seed_type = "rice"
-	sales_price = 1
 
 /obj/item/seeds/carrotseed
 	seed_type = "carrot"
-	sales_price = 2
 
 /obj/item/seeds/reishimycelium
 	seed_type = "reishi"
-	sales_price = 3
 
 /obj/item/seeds/amanitamycelium
 	seed_type = "amanita"
-	sales_price = 3
 
 /obj/item/seeds/angelmycelium
 	seed_type = "destroyingangel"
-	sales_price = 2
 
 /obj/item/seeds/libertymycelium
 	seed_type = "libertycap"
-	sales_price = 2
 
 /obj/item/seeds/chantermycelium
 	seed_type = "mushrooms"
-	sales_price = 2
 
 /obj/item/seeds/towermycelium
 	seed_type = "towercap"
-	sales_price = 3
 
 /obj/item/seeds/glowshroom
 	seed_type = "glowshroom"
-	sales_price = 3
 
 /obj/item/seeds/plumpmycelium
 	seed_type = "plumphelmet"
-	sales_price = 2
 
 /obj/item/seeds/walkingmushroommycelium
 	seed_type = "walkingmushroom"
-	sales_price = 4
 
 /obj/item/seeds/nettleseed
 	seed_type = "nettle"
-	sales_price = 1
 
 /obj/item/seeds/deathnettleseed
 	seed_type = "deathnettle"
@@ -232,120 +196,90 @@ var/global/list/plant_seed_sprites = list()
 
 /obj/item/seeds/weeds
 	seed_type = "weeds"
-	sales_price = 1
 
 /obj/item/seeds/harebell
 	seed_type = "harebells"
-	sales_price = 2
 
 /obj/item/seeds/sunflowerseed
 	seed_type = "sunflowers"
-	sales_price = 3
 
 /obj/item/seeds/lavenderseed
 	seed_type = "lavender"
-	sales_price = 3
 
 /obj/item/seeds/brownmold
 	seed_type = "mold"
-	sales_price = 1
 
 /obj/item/seeds/appleseed
 	seed_type = "apple"
-	sales_price = 1
 
 /obj/item/seeds/poisonedappleseed
 	seed_type = "poisonapple"
-	sales_price = 2
 
 /obj/item/seeds/goldappleseed
 	seed_type = "goldapple"
-	sales_price = 4
-
+	
 /obj/item/seeds/ambrosiavulgarisseed
 	seed_type = "ambrosia"
-	sales_price = 4
 
 /obj/item/seeds/ambrosiadeusseed
 	seed_type = "ambrosiadeus"
-	sales_price = 4
 
 /obj/item/seeds/whitebeetseed
 	seed_type = "whitebeet"
-	sales_price = 3
 
 /obj/item/seeds/sugarcaneseed
 	seed_type = "sugarcane"
-	sales_price = 2
 
 /obj/item/seeds/watermelonseed
 	seed_type = "watermelon"
-	sales_price = 3
 
 /obj/item/seeds/pumpkinseed
 	seed_type = "pumpkin"
-	sales_price = 2
 
 /obj/item/seeds/limeseed
 	seed_type = "lime"
-	sales_price = 2
 
 /obj/item/seeds/lemonseed
 	seed_type = "lemon"
-	sales_price = 2
 
 /obj/item/seeds/orangeseed
 	seed_type = "orange"
-	sales_price = 2
 
 /obj/item/seeds/poisonberryseed
 	seed_type = "poisonberries"
-	sales_price = 2
 
 /obj/item/seeds/deathberryseed
 	seed_type = "deathberries"
-	sales_price = 3
 
 /obj/item/seeds/grassseed
 	seed_type = "grass"
-	sales_price = 1
 
 /obj/item/seeds/cocoapodseed
 	seed_type = "cocoa"
-	sales_price = 2
 
 /obj/item/seeds/cherryseed
 	seed_type = "cherry"
-	sales_price = 2
 
 /obj/item/seeds/tobaccoseed
 	seed_type = "lho"
-	sales_price = 3
 
 /obj/item/seeds/finetobaccoseed
 	seed_type = "finetobacco"
-	sales_price = 4
 
 /obj/item/seeds/puretobaccoseed
 	seed_type = "puretobacco"
-	sales_price = 4
 
 /obj/item/seeds/kudzuseed
 	seed_type = "kudzu"
-	sales_price = 2
 
 /obj/item/seeds/peppercornseed
 	seed_type = "peppercorn"
-	sales_price = 2
 
 /obj/item/seeds/garlicseed
 	seed_type = "garlic"
-	sales_price = 2
 
 /obj/item/seeds/onionseed
 	seed_type = "onion"
-	sales_price = 2
 
 /obj/item/seeds/blackbeanseed
 	seed_type = "blackbean"
-	sales_price = 2
