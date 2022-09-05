@@ -164,7 +164,7 @@
 	item_state = "genetor"
 	flags_inv = HIDEEARS | BLOCKHAIR
 	unacidable = 1
-	armor = list(melee = 50, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
+	armor = list(melee = 38, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
 	
