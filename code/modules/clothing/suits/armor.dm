@@ -179,7 +179,7 @@ obj/item/clothing/suit/armor
 	item_state = "reactiveoff"
 	blood_overlay_type = "armor"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
-	sales_price = 400
+	sales_price = 0
 /obj/item/clothing/suit/armor/reactive/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1

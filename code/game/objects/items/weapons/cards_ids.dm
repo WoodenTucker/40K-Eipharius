@@ -540,14 +540,14 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
 	access = list(access_kroot)
-	sales_price = 40
+	sales_price = 20
 
 
 /obj/item/card/id/ring/tau
 	icon_state = "tau"
 	access = list(access_tau)
 	desc = "An ornate ring forged by Tau craftsmen. Functions like an ID."
-	sales_price = 50
+	sales_price = 40
 
 
 /obj/item/card/id/ring/administrator
@@ -559,7 +559,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "golden ring"
 	icon_state = "goldring"
 	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
-	sales_price = 60
+	sales_price = 30
 
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"
