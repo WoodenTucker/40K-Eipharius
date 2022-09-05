@@ -23,6 +23,7 @@
 	var/splat_type = /obj/effect/decal/cleanable/fruit_smudge // Graffiti decal.
 	var/has_mob_product
 	var/force_layer
+	var/seed_price = 1
 
 /datum/seed/New()
 
