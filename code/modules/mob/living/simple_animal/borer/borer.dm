@@ -53,7 +53,6 @@
 	add_language("Cortical Link")
 	add_verb(src, /mob/living/proc/ventcrawl)
 	add_verb(src, /mob/living/proc/hide)
-	truename = "[pick("Primary","Secondary","Tertiary","Quaternary")] [rand(1000,9999)]"
 
 	generation = gen
 	truename = "[borer_names[min(generation, borer_names.len)]] [random_id("borer[generation]", 1000, 9999)]"
@@ -124,7 +123,6 @@
 	remove_verb(host, /mob/living/carbon/proc/release_control)
 	remove_verb(host, /mob/living/carbon/proc/punish_host)
 	remove_verb(host, /mob/living/carbon/proc/spawn_larvae)
-	update_abilities()
 
 	if(host_brain)
 
