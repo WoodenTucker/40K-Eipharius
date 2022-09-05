@@ -553,7 +553,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/stack/material/uranium(src.loc)
+		new /obj/item/stack/material/uranium/one(src.loc)
 		src.coalfed -= 0.5
 		return
 	else if (istype(O,	/obj/item/newore/phoronore))
@@ -563,7 +563,7 @@
 		src.smelting = 1
 		sleep(60) //10 seconds
 		src.smelting = 0
-		new /obj/item/stack/material/phoron(src.loc)
+		new /obj/item/stack/material/phoron/one(src.loc)
 		src.coalfed -= 0.5
 
 
