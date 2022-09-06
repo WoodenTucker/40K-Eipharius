@@ -24,6 +24,11 @@
 
 #define text_starts_with(text, start) (copytext(text, 1, length(start) + 1) == start)
 
+//https://secure.byond.com/docs/ref/info.html#/atom/var/mouse_opacity
+#define MOUSE_OPACITY_TRANSPARENT 	0
+#define MOUSE_OPACITY_ICON 			1
+#define MOUSE_OPACITY_OPAQUE 		2
+
 //Misc text define. Does 4 spaces. Used as a makeshift tabulator.
 #define FOURSPACES "&nbsp;&nbsp;&nbsp;&nbsp;"
 

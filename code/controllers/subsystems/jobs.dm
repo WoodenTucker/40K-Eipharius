@@ -372,7 +372,6 @@ SUBSYSTEM_DEF(jobs)
 		job.setup_account(H)
 		job.equip(H, H.mind ? H.mind.role_alt_title : "", H.char_branch, H.char_rank)
 		job.apply_fingerprints(H)
-		H.staminaexhaust = 250 + endToStaminaModifier(H.my_stats[STAT(end)].level)
 
 	else
 		to_chat(H, "Your job is [rank] and the game just can't handle it! Please report this bug to an administrator.")

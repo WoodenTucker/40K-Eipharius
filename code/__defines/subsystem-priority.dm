@@ -10,7 +10,6 @@
 
 // Normal
 #define SS_PRIORITY_OVERLAY        500	// Applies overlays. May cause overlay pop-in if it gets behind.
-#define SS_PRIORITY_CHAT           400	// Goonchat queue
 #define SS_PRIORITY_MOB            100	// Mob Life().
 #define SS_PRIORITY_MACHINERY      100	// Machinery + powernet ticks.
 #define SS_PRIORITY_AIR             80	// ZAS processing.
@@ -18,11 +17,14 @@
 #define SS_PRIORITY_EVENT           20	// Event processing and queue handling.
 #define SS_PRIORITY_ALARMS          20  // Alarm processing.
 #define SS_PRIORITY_AIRFLOW         15	// Object movement from ZAS airflow.
+#define SS_PRIORITY_STATPANEL       30  // Stat panel
 
 
 // SS_BACKGROUND
 #define SS_PRIORITY_OBJECTS       60	// processing_objects processing.
-#define SS_PRIORITY_NANOUI        40   // Updates to nanoui uis.
+#define SS_PRIORITY_NANOUI        50    // Updates to nanoui uis.
+#define SS_PRIORITY_TGUI          40    // Updates TGUI UIs.
+#define SS_PRIORITY_CHAT          40    // Chat
 #define SS_PRIORITY_PROCESSING    30	// Generic datum processor. Replaces objects processor.
 #define SS_PRIORITY_GARBAGE       25	// Garbage collection.
 #define SS_PRIORITY_VINES         25	// Spreading vine effects.

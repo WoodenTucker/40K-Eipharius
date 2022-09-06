@@ -208,14 +208,14 @@
 	..()
 
 /obj/item/integrated_circuit/logic/unary/access_verifier/attack_self(var/mob/user)
-	tg_ui_interact(user)
+	tgui_interact(user)
 
-/obj/item/integrated_circuit/logic/unary/access_verifier/tg_ui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null, datum/ui_state/state = tg_hands_state)
-	SStgui.try_update_ui(user, src, ui_key, ui, force_open)
-	if(!ui)
-		ui = new(user, src, ui_key, "airlock_electronics", src.name, 1000, 500, master_ui, state)
-		ui.open()
-
+/obj/item/integrated_circuit/logic/unary/access_verifier/tgui_interact(mob/user, ui_key = "main", datum/tgui/ui = null, force_open = 0, datum/tgui/master_ui = null)
+	//SStgui.try_update_ui(user, src, ui_key, ui, force_open)
+	//if(!ui)
+		//ui = new(user, src, ui_key, "airlock_electronics", src.name, 1000, 500, master_ui, state)
+		//ui.open()
+// TODO
 /obj/item/integrated_circuit/logic/unary/access_verifier/ui_data()
 	if(!cached_ui_data)
 		cached_ui_data = list()
@@ -245,7 +245,7 @@
 		cached_ui_data["locked"] = locked
 		cached_ui_data["lockable"] = TRUE
 	return cached_ui_data
-
+/*
 /obj/item/integrated_circuit/logic/unary/access_verifier/ui_act(action, params)
 	if(..())
 		return TRUE
@@ -284,7 +284,7 @@
 
 	if(.)
 		cached_ui_data = null
-
+*/
 /obj/item/integrated_circuit/logic/unary/access_verifier/examine/(var/mob/user)
 	. = ..(user, 1)
 	if(.)

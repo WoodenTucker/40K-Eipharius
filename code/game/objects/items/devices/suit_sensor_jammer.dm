@@ -12,6 +12,7 @@
 	var/suit_sensor_jammer_method/jammer_method
 	var/list/suit_sensor_jammer_methods_by_type
 	var/list/suit_sensor_jammer_methods
+/*
 
 /obj/item/device/suit_sensor_jammer/New()
 	..()
@@ -208,6 +209,7 @@ obj/item/device/suit_sensor_jammer/ui_act(action, params)
 		return FALSE
 	var/turf/T = get_turf(src)
 	return T && T.z == pos.z && get_dist(T, pos) <= range
+*/ //TODO
 
 #undef JAMMER_MAX_RANGE
 #undef JAMMER_POWER_CONSUMPTION

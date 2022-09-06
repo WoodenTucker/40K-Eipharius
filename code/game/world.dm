@@ -97,6 +97,8 @@
 	if(byond_version < RECOMMENDED_VERSION)
 		world.log << "Your server's byond version does not meet the recommended requirements for this server. Please update BYOND"
 
+	LoadVerbs(/datum/verbs/menu)
+
 	if(config && config.server_name != null && config.server_suffix && world.port > 0)
 		// dumb and hardcoded but I don't care~
 		config.server_name += " #[(world.port % 1000) / 100]"
@@ -172,8 +174,8 @@ var/world_topic_spam_protect_time = world.timeofday
 
 		// This is dumb, but spacestation13.com's banners break if player count isn't the 8th field of the reply, so... this has to go here.
 		s["players"] = 0
-		s["stationtime"] = stationtime2text()
-		s["roundduration"] = roundduration2text()
+		s["stationtime"] = station_time_timestamp("hh:mm")
+		s["roundduration"] = DisplayTimeText(world.time - SSticker.round_start_time)
 		s["map"] = GLOB.using_map.full_name
 
 		var/active = 0
@@ -665,18 +667,19 @@ var/world_topic_spam_protect_time = world.timeofday
 	if (src.status != s)
 		src.status = s
 
-#define WORLD_LOG_START(X) WRITE_FILE(GLOB.world_##X##_log, "\n\nStarting up round ID [game_id]. [time_stamp()]\n---------------------")
+#define WORLD_LOG_START(X) WRITE_FILE(GLOB.world_##X##_log, "\n\nStarting up round ID [game_id]. [station_time_timestamp()]\n---------------------")
 #define WORLD_SETUP_LOG(X) GLOB.world_##X##_log = file("[GLOB.log_directory]/[#X].log") ; WORLD_LOG_START(X)
 /world/proc/SetupLogs()
 	GLOB.log_directory = "data/logs/[time2text(world.realtime, "YYYY/MM/DD")]/round-"
 	if(game_id)
 		GLOB.log_directory += "[game_id]"
 	else
-		GLOB.log_directory += "[replacetext(time_stamp(), ":", ".")]"
+		GLOB.log_directory += "[replacetext(station_time_timestamp(), ":", ".")]"
 
 	WORLD_SETUP_LOG(runtime)
 	WORLD_SETUP_LOG(qdel)
-
+	GLOB.tgui_log = file("[GLOB.log_directory]/tgui.log")
+	to_file(GLOB.world_qdel_log, "\n\nStarting up round ID [game_id]. [station_time_timestamp()]\n---------------------")
 #undef WORLD_SETUP_LOG
 #undef WORLD_LOG_START
 

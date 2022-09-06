@@ -114,7 +114,6 @@
 			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 			src.thirst = INFINITY
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
 			var/obj/item/card/id/dog_tag/skitarii/W = new
@@ -146,9 +145,7 @@
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 			src.vice = null //off for now
 			src.verbs += /mob/living/carbon/human/proc/active_camo //Gives them a camo ability.
-			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
-
 			var/obj/item/card/id/dog_tag/skitarii/W = new
 			W.icon_state = "tagred"
 			W.assignment = "Skitarii Ruststalker"
@@ -183,7 +180,6 @@
 			src.thirst = INFINITY
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 			src.vice = null //off for now
-			src.verbs -= /mob/living/carbon/human/skitarii/proc/giveskitstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
 			var/obj/item/card/id/dog_tag/skitarii/W = new
@@ -192,3 +188,4 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+	remove_verb(src, /mob/living/carbon/human/skitarii/proc/giveskitstats) //removes verb at the end so they can't spam it for whatever reason

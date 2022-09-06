@@ -27,7 +27,7 @@
 		T.purpose = reason
 		T.amount = amount
 		T.date = stationdate2text()
-		T.time = stationtime2text()
+		T.time = station_time_timestamp("hh:mm")
 		T.source_terminal = machine_id
 		return T
 
