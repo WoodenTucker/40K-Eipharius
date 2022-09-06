@@ -74,7 +74,7 @@
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(TAU) //secondary language
-	remove_verb(src, /mob/living/carbon/human/kroot/proc/givekrootstats) //removes verb at the end so they can't spam it for whatever reason
+	src.verbs -= /mob/living/carbon/human/kroot/proc/givekrootstats //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
 
 	var/obj/item/card/id/dog_tag/kroot/W = new

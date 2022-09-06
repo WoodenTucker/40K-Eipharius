@@ -67,7 +67,7 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	remove_verb(src, /mob/living/carbon/human/tau/proc/tauclasses)
+	src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses
 
 	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Earth Caste Mechanic", "Kroot Hunter")
 	switch(castes)
@@ -89,7 +89,7 @@
 			src.name = "Shas [name]"
 			src.real_name = "Shas [real_name]"
 			client?.color = null
-			remove_verb(src, /mob/living/carbon/human/tau/proc/tauclasses) //removes verb at the end so they can't spam it for whatever reason
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
 
 
@@ -119,7 +119,7 @@
 			src.name = "Por [name]"
 			src.real_name = "Por [real_name]"
 			client?.color = null
-			remove_verb(src, /mob/living/carbon/human/tau/proc/tauclasses) //removes verb at the end so they can't spam it for whatever reason
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
 
 
@@ -146,7 +146,7 @@
 			src.name = "Fio'La [name]"
 			src.real_name = "Fio'La [real_name]"
 			client?.color = null
-			remove_verb(src, /mob/living/carbon/human/tau/proc/tauclasses) //removes verb at the end so they can't spam it for whatever reason
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 
 
 

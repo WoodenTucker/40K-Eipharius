@@ -76,49 +76,59 @@
 		qdel(organ)
 	return ..()
 
-/mob/living/carbon/human/get_status_tab_items()
-	. =..()
-	if(iswarfare())
-		if(warfare_faction == RED_TEAM)
-			for(var/area/A in GLOB.red_captured_zones)
-				. += "Captured Trench:" + A
-		if(warfare_faction == BLUE_TEAM)
-			for(var/area/A in GLOB.blue_captured_zones)
-				. += "Captured Trench:" + A
+/mob/living/carbon/human/Stat()
+	. = ..()
+	if(statpanel("Status"))
+		if(iswarfare())
+			//stat("[BLUE_TEAM] reinforcements:", SSwarfare.blue.left)
+			//stat("[BLUE_TEAM] capture points:", SSwarfare.blue.points)
+			//stat("[RED_TEAM] reinforcements:", SSwarfare.red.left)
+			//stat("[RED_TEAM] capture points:", SSwarfare.red.points)
 
-	if(crouching)
-		. += "Stance:" + crouching ? "Crouching" : "Lying Down"
-	else
-		. += "Stance:" + "Standing"
 
-	. += "[my_stats[STAT(str)].shorthand]:" + "[STAT_LEVEL(str)]"//Stats!
-	. += "[my_stats[STAT(dex)].shorthand]:" + "[STAT_LEVEL(dex)]"
-	. += "[my_stats[STAT(end)].shorthand]:" + "[STAT_LEVEL(end)]"
-	. += "[my_stats[STAT(int)].shorthand]:" + "[STAT_LEVEL(int)]"
-	if(src.alien_talk_understand == 1)
-		. += "Biomass:" + "[src.biomass]"
+			if(warfare_faction == RED_TEAM)
+				for(var/area/A in GLOB.red_captured_zones)
+					stat("Captured Trench:", A)
+			if(warfare_faction == BLUE_TEAM)
+				for(var/area/A in GLOB.blue_captured_zones)
+					stat("Captured Trench:", A)
+
+		if(crouching)
+			stat("Stance:", "Crouching")
+		else if(lying)
+			stat("Stance:", "Lying Down")
+		else
+			stat("Stance:", "Standing")
+
+		stat("[my_stats[STAT(str)].shorthand]:", "[STAT_LEVEL(str)]")//Stats!
+		stat("[my_stats[STAT(dex)].shorthand]:", "[STAT_LEVEL(dex)]")
+		stat("[my_stats[STAT(end)].shorthand]:", "[STAT_LEVEL(end)]")
+		stat("[my_stats[STAT(int)].shorthand]:", "[STAT_LEVEL(int)]")
+		if(src.alien_talk_understand == 1)
+			stat("Biomass:", "[src.biomass]")
 
 		//if(evacuation_controller)
 		//	var/eta_status = evacuation_controller.get_status_panel_eta()
 		//	if(eta_status)
 		//		stat(null, eta_status)
 
-	if (istype(internal))
-		if (!internal.air_contents)
-			qdel(internal)
-		else
-			. += "Internal Atmosphere Info" + internal.name
-			. += "Tank Pressure" + internal.air_contents.return_pressure()
-			. += "Distribution Pressure" + internal.distribute_pressure
+		if (istype(internal))
+			if (!internal.air_contents)
+				qdel(internal)
+			else
+				stat("Internal Atmosphere Info", internal.name)
+				stat("Tank Pressure", internal.air_contents.return_pressure())
+				stat("Distribution Pressure", internal.distribute_pressure)
 
 
-	var/obj/item/organ/internal/cell/potato = internal_organs_by_name[BP_CELL]
-	if(potato && potato.cell)
-		. += "Battery charge:" + "[potato.get_charge()]/[potato.cell.maxcharge]"
+		var/obj/item/organ/internal/cell/potato = internal_organs_by_name[BP_CELL]
+		if(potato && potato.cell)
+			stat("Battery charge:", "[potato.get_charge()]/[potato.cell.maxcharge]")
 
-	if(mind?.changeling)
-		. += "Chemical Storage" + mind.changeling.chem_charges
-		. += "Genetic Damage Time" + mind.changeling.geneticdamage
+		if(mind)
+			if(mind.changeling)
+				stat("Chemical Storage", mind.changeling.chem_charges)
+				stat("Genetic Damage Time", mind.changeling.geneticdamage)
 
 
 
@@ -770,7 +780,7 @@
 		return
 
 	if(!(mMorph in mutations))
-		remove_verb(src, /mob/living/carbon/human/proc/morph)
+		src.verbs -= /mob/living/carbon/human/proc/morph
 		return
 
 	var/new_facial = input("Please select facial hair color.", "Character Generation",rgb(r_facial,g_facial,b_facial)) as color
@@ -965,7 +975,7 @@
 			blood_DNA[M.dna.unique_enzymes] = M.dna.b_type
 	hand_blood_color = blood_color
 	src.update_inv_gloves()	//handles bloody hands overlays and updating
-	add_verb(src, /mob/living/carbon/human/proc/bloody_doodle)
+	verbs += /mob/living/carbon/human/proc/bloody_doodle
 	return 1 //we applied blood to the item
 
 /mob/living/carbon/human/clean_blood(var/clean_feet)
