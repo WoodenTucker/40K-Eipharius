@@ -114,7 +114,7 @@ proc/get_open_ticket_by_client(var/datum/client_lite/owner)
 	src.msg_from = msg_from
 	src.msg_to = msg_to
 	src.msg = msg
-	src.time_stamp = station_time_timestamp()
+	src.time_stamp = time_stamp()
 
 /datum/ticket_panel
 	var/datum/ticket/open_ticket = null

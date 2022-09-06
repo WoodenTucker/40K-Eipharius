@@ -123,7 +123,7 @@
 			return 1
 		if(STATUS_DISPLAY_TIME)
 			message1 = "TIME"
-			message2 = station_time_timestamp("hh:mm")
+			message2 = stationtime2text()
 			update_display(message1, message2)
 			return 1
 		if(STATUS_DISPLAY_IMAGE)

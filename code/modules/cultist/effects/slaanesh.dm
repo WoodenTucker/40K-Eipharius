@@ -4,11 +4,11 @@
 
 /datum/heretic_effect/enchantedarm/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	add_verb(user, /mob/living/carbon/human/proc/slannyarm)
+	user.verbs |= /mob/living/carbon/human/proc/slannyarm
 
 /datum/heretic_effect/enchantedarm/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	remove_verb(user, /mob/living/carbon/human/proc/slannyarm)
+	user.verbs -= /mob/living/carbon/human/proc/slannyarm
 
 /datum/heretic_effect/escape_artist
 	name = "Escape Artist"
@@ -16,11 +16,11 @@
 
 /datum/heretic_effect/escape_artist/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	add_verb(user, /mob/living/carbon/human/proc/escapecuffs)
+	user.verbs |= /mob/living/carbon/human/proc/escapecuffs
 
 /datum/heretic_effect/escape_artist/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	remove_verb(user, /mob/living/carbon/human/proc/escapecuffs)
+	user.verbs -= /mob/living/carbon/human/proc/escapecuffs
 
 /mob/living/carbon/human/proc/escapecuffs()
 	set category = "Ruinous Powers"

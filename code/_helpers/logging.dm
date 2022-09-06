@@ -34,7 +34,7 @@
 	to_world_log("## TESTING: [msg][log_end]")
 
 /proc/game_log(category, text)
-	diary << "\[[station_time_timestamp()]] [game_id] [category]: [text][log_end]"
+	diary << "\[[time_stamp()]] [game_id] [category]: [text][log_end]"
 
 /proc/log_admin(text)
 	GLOB.admin_log.Add(text)
@@ -99,43 +99,6 @@
 	if (config.log_adminwarn)
 		game_log("ADMINWARN", text)
 
-/**
- * Appends a tgui-related log entry. All arguments are optional.
- */
-/proc/log_tgui(user, message, context,
-		datum/tgui_window/window,
-		datum/src_object)
-	var/entry = ""
-	// Insert user info
-	if(!user)
-		entry += "<nobody>"
-	else if(istype(user, /mob))
-		var/mob/mob = user
-		entry += "[mob.ckey] (as [mob] at [mob.x],[mob.y],[mob.z])"
-	else if(istype(user, /client))
-		var/client/client = user
-		entry += "[client.ckey]"
-	// Insert context
-	if(context)
-		entry += " in [context]"
-	else if(window)
-		entry += " in [window.id]"
-	// Resolve src_object
-	if(!src_object && window?.locked_by)
-		src_object = window.locked_by.src_object
-	// Insert src_object info
-	if(src_object)
-		entry += "\nUsing: [src_object.type] [any2ref(src_object)]"
-	// Insert message
-	if(message)
-		entry += "\n[message]"
-	to_file(GLOB.tgui_log, entry)
-
-/// Logging for loading and caching assets
-/proc/log_asset(text)
-	if(config.log_assets)
-		to_file(GLOB.world_asset_log, "ASSET: [text]")
-
 /proc/log_pda(text)
 	if (config.log_pda)
 		game_log("PDA", text)
@@ -153,7 +116,7 @@
 	log_debug(text)
 
 /proc/log_qdel(text)
-	WRITE_FILE(GLOB.world_qdel_log, "\[[station_time_timestamp()]]QDEL: [text]")
+	WRITE_FILE(GLOB.world_qdel_log, "\[[time_stamp()]]QDEL: [text]")
 
 //This replaces world.log so it displays both in DD and the file
 /proc/log_world(text)
