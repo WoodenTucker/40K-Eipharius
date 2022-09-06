@@ -14,4 +14,4 @@ SUBSYSTEM_DEF(autotransfer)
 		timerbuffer += config.vote_autotransfer_interval
 
 /datum/controller/subsystem/autotransfer/proc/time_till_transfer_vote()
-	return timerbuffer - round_duration_in_ticks - 1 MINUTE
+	return timerbuffer - (world.time - SSticker.round_start_time) - 1 MINUTE

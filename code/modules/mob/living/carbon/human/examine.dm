@@ -53,7 +53,7 @@
 		T = gender_datums[PLURAL]
 	else
 		if(icon)
-			msg += "\icon[icon] " //fucking BYOND: this should stop dreamseeker crashing if we -somehow- examine somebody before their icon is generated
+			msg += "[icon2html(icon, user)] " //fucking BYOND: this should stop dreamseeker crashing if we -somehow- examine somebody before their icon is generated
 
 	if(!T)
 		// Just in case someone VVs the gender to something strange. It'll runtime anyway when it hits usages, better to CRASH() now with a helpful message.
@@ -89,69 +89,69 @@
 
 	//uniform
 	if(w_uniform && !skipjumpsuit)
-		msg += "[T.He] [T.is] wearing [w_uniform.get_examine_line()].\n"
+		msg += "[T.He] [T.is] wearing [w_uniform.get_examine_line(user)].\n"
 
 	//head
 	if(head)
-		msg += "[T.He] [T.is] wearing [head.get_examine_line()] on [T.his] head.\n"
+		msg += "[T.He] [T.is] wearing [head.get_examine_line(user)] on [T.his] head.\n"
 
 	if(tie_slot)
 		msg += "[T.He] [T.is] wearing [tie_slot.get_examine_line()] around [T.his] neck.\n"
 
 	//suit/armour
 	if(wear_suit)
-		msg += "[T.He] [T.is] wearing [wear_suit.get_examine_line()].\n"
+		msg += "[T.He] [T.is] wearing [wear_suit.get_examine_line(user)].\n"
 		//suit/armour storage
 		if(s_store && !skipsuitstorage)
-			msg += "[T.He] [T.is] carrying [s_store.get_examine_line()] on [T.his] [wear_suit.name].\n"
+			msg += "[T.He] [T.is] carrying [s_store.get_examine_line(user)] on [T.his] [wear_suit.name].\n"
 
 	//back
 	if(back)
-		msg += "[T.He] [T.has] [back.get_examine_line()] on [T.his] back.\n"
+		msg += "[T.He] [T.has] [back.get_examine_line(user)] on [T.his] back.\n"
 
 	//left hand
 	if(l_hand && !(l_hand.item_flags & ITEM_FLAG_ABSTRACT))
-		msg += "[T.He] [T.is] holding [l_hand.get_examine_line()] in [T.his] [l_hand.wielded ? "hands" : "left hand"].\n"
+		msg += "[T.He] [T.is] holding [l_hand.get_examine_line(user)] in [T.his] [l_hand.wielded ? "hands" : "left hand"].\n"
 
 	//right hand
 	if(r_hand && !(r_hand.item_flags & ITEM_FLAG_ABSTRACT))
-		msg += "[T.He] [T.is] holding [r_hand.get_examine_line()] in [T.his] [r_hand.wielded ? "hands" : "right hand"].\n"
+		msg += "[T.He] [T.is] holding [r_hand.get_examine_line(user)] in [T.his] [r_hand.wielded ? "hands" : "right hand"].\n"
 
 	//gloves
 	if(gloves && !skipgloves)
-		msg += "[T.He] [T.has] [gloves.get_examine_line()] on [T.his] hands.\n"
+		msg += "[T.He] [T.has] [gloves.get_examine_line(user)] on [T.his] hands.\n"
 	else if(blood_DNA)
 		msg += "<span class='warning'>[T.He] [T.has] [(hand_blood_color != SYNTH_BLOOD_COLOUR) ? "blood" : "oil"]-stained hands!</span>\n"
 
 	//belt
 	if(belt)
-		msg += "[T.He] [T.has] [belt.get_examine_line()] about [T.his] waist.\n"
+		msg += "[T.He] [T.has] [belt.get_examine_line(user)] about [T.his] waist.\n"
 
 	//shoes
 	if(shoes && !skipshoes)
-		msg += "[T.He] [T.is] wearing [shoes.get_examine_line()] on [T.his] feet.\n"
+		msg += "[T.He] [T.is] wearing [shoes.get_examine_line(user)] on [T.his] feet.\n"
 	else if(feet_blood_DNA)
 		msg += "<span class='warning'>[T.He] [T.has] [(feet_blood_color != SYNTH_BLOOD_COLOUR) ? "blood" : "oil"]-stained feet!</span>\n"
 
 	//mask
 	if(wear_mask && !skipmask)
-		msg += "[T.He] [T.has] [wear_mask.get_examine_line()] on [T.his] face.\n"
+		msg += "[T.He] [T.has] [wear_mask.get_examine_line(user)] on [T.his] face.\n"
 
 	//eyes
 	if(glasses && !skipeyes)
-		msg += "[T.He] [T.has] [glasses.get_examine_line()] covering [T.his] eyes.\n"
+		msg += "[T.He] [T.has] [glasses.get_examine_line(user)] covering [T.his] eyes.\n"
 
 	//left ear
 	if(l_ear && !skipears)
-		msg += "[T.He] [T.has] [l_ear.get_examine_line()] on [T.his] left ear.\n"
+		msg += "[T.He] [T.has] [l_ear.get_examine_line(user)] on [T.his] left ear.\n"
 
 	//right ear
 	if(r_ear && !skipears)
-		msg += "[T.He] [T.has] [r_ear.get_examine_line()] on [T.his] right ear.\n"
+		msg += "[T.He] [T.has] [r_ear.get_examine_line(user)] on [T.his] right ear.\n"
 
 	//ID
 	if(wear_id)
-		msg += "[T.He] [T.is] wearing [wear_id.get_examine_line()].\n"
+		msg += "[T.He] [T.is] wearing [wear_id.get_examine_line(user)].\n"
 
 
 	if(crouching)
@@ -399,7 +399,7 @@
 		if( findtext(pose,".",length(pose)) == 0 && findtext(pose,"!",length(pose)) == 0 && findtext(pose,"?",length(pose)) == 0 )
 			pose = addtext(pose,".") //Makes sure all emotes end with a period.
 		msg += "[T.He] [pose]"
-	to_chat(user, jointext(msg, null))
+	to_chat(user, examine_block(msg.Join()))
 
 //Helper procedure. Called by /mob/living/carbon/human/examine() and /mob/living/carbon/human/Topic() to determine HUD access to security and medical records.
 /proc/hasHUD(mob/M as mob, hudtype)

@@ -43,10 +43,10 @@
 
 /datum/heretic_effect/heal/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.verbs |= /mob/living/carbon/human/proc/nurgle_heal
+	add_verb(user, /mob/living/carbon/human/proc/nurgle_heal)
 
 /datum/heretic_effect/heal/remove_effect(var/mob/living/carbon/human/user)
-	user.verbs -= /mob/living/carbon/human/proc/nurgle_heal
+	remove_verb(user, /mob/living/carbon/human/proc/nurgle_heal)
 
 /mob/living/carbon/human/proc/nurgle_heal()
 	set category = "Ruinous Powers"
