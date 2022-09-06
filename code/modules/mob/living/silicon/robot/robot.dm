@@ -982,7 +982,7 @@
 	toggle_sensor_mode()
 
 /mob/living/silicon/robot/proc/add_robot_verbs()
-	add_verb(src, list(robot_verbs_default))
+	src.verbs |= robot_verbs_default
 
 /mob/living/silicon/robot/proc/remove_robot_verbs()
 	src.verbs -= robot_verbs_default

@@ -39,10 +39,10 @@
 	return ..()
 
 
-/mob/living/carbon/human/ork/get_status_tab_items()
-	.=..()
-	. += "Waaagh: [waaagh]/[max_waaagh]"
-
+/mob/living/carbon/human/ork/Stat()
+	..()
+	if(max_waaagh > 0)
+		stat(null, "Waaagh: [waaagh]/[max_waaagh]")
 
 /mob/living/carbon/human/ork
 	name = "ork"

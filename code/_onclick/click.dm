@@ -297,6 +297,7 @@
 
 /*
 	Alt click
+	Unused except for AI
 */
 /mob/proc/AltClickOn(var/atom/A)
 	A.AltClick(src)
@@ -308,7 +309,7 @@
 			user.listed_turf = null
 		else
 			user.listed_turf = T
-			user.client.stat_panel.send_message("create_listedturf", T.name)
+			user.client.statpanel = "Turf"
 	return 1
 
 /mob/proc/AltRightClickOn(var/atom/A)

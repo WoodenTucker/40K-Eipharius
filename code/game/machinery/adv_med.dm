@@ -285,7 +285,7 @@
 	var/mob/living/carbon/human/H = src
 	var/dat = list()
 	dat +="<b>SCAN RESULTS FOR: [H]</b>"
-	dat +="Scan performed at [station_time_timestamp("hh:mm")]<br>"
+	dat +="Scan performed at [stationtime2text()]<br>"
 
 	var/brain_result = "normal"
 	if(H.should_have_organ(BP_BRAIN))

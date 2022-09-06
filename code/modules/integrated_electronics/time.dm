@@ -126,7 +126,7 @@
 	activators = list("update")
 
 /obj/item/integrated_circuit/time/clock/do_work()
-	set_pin_data(IC_OUTPUT, 1, time2text(station_time_timestamp(), "hh:mm:ss"))
-	set_pin_data(IC_OUTPUT, 2, text2num(time2text(station_time_timestamp(), "hh")))
-	set_pin_data(IC_OUTPUT, 3, text2num(time2text(station_time_timestamp(), "mm")))
-	set_pin_data(IC_OUTPUT, 4, text2num(time2text(station_time_timestamp(), "ss")))
+	set_pin_data(IC_OUTPUT, 1, time2text(station_time_in_ticks, "hh:mm:ss"))
+	set_pin_data(IC_OUTPUT, 2, text2num(time2text(station_time_in_ticks, "hh")))
+	set_pin_data(IC_OUTPUT, 3, text2num(time2text(station_time_in_ticks, "mm")))
+	set_pin_data(IC_OUTPUT, 4, text2num(time2text(station_time_in_ticks, "ss")))
