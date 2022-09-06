@@ -102,7 +102,7 @@
 
 	if(active || force_key_move)
 		new_character.key = key		//now transfer the key to link the client to our new body
-
+	new_character.client?.init_verbs()
 /datum/mind/proc/store_memory(new_text)
 	memory += "[new_text]<BR>"
 

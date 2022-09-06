@@ -517,7 +517,7 @@ Exterminatus
 	round_end_stats += "Number of Tzeentch Cultists:<span class='danger'><B>[GLOB.tzeentch_cult]</B></span>\n"
 
 
-	round_end_stats += "Total round Length: <span class='danger'><B>[roundduration2text()]</B></span>\n"
+	round_end_stats += "Total round Length: <span class='danger'><B>[DisplayTimeText(world.time - SSticker.round_start_time)]</B></span>\n"
 
 	round_end_stats += "First victim: <B>[GLOB.first_death]</B>. Their last words were: <b>\"[GLOB.final_words]\"</b>\n "
 

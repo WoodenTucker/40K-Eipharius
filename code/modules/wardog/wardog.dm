@@ -29,7 +29,7 @@ proc/send_to_bot(list/params, useapikey = 1)
 	"minestripped" = GLOB.mines_tripped,
 	"teethlost" = GLOB.teeth_lost,
 	"bloodshed" = GLOB.total_deaths,
-	"time" = roundduration2text()
+	"time" = DisplayTimeText(world.time - SSticker.round_start_time)
 	))
 
 /*

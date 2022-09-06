@@ -34,3 +34,21 @@
 #define RUNLEVEL_POSTGAME 8
 
 #define RUNLEVELS_DEFAULT (RUNLEVEL_SETUP | RUNLEVEL_GAME | RUNLEVEL_POSTGAME)
+
+#define SS_INIT_ASSETS			-2
+#define SS_INIT_MISC_LATE       -3
+#define SS_INIT_MISC_CODEX      -4
+#define SS_INIT_ALARM           -5
+#define SS_INIT_SHUTTLE         -6
+#define SS_INIT_GOALS           -7
+#define SS_INIT_LIGHTING        -8
+#define SS_INIT_ZCOPY           -9
+#define SS_INIT_HOLOMAP         -10
+#define SS_INIT_XENOARCH        -11
+#define SS_INIT_BAY_LEGACY      -12
+#define SS_INIT_TICKER          -20
+#define SS_INIT_AI              -21
+#define SS_INIT_AIFAST          -22
+#define SS_INIT_STATPANELS      -80
+#define SS_INIT_CHAT            -90 // Should be lower to ensure chat remains smooth during init.
+#define SS_INIT_UNIT_TESTS      -100

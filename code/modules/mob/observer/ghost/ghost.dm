@@ -41,7 +41,7 @@ var/list/NOIRLIST = list(0.3,0.3,0.3,0,\
 
 /mob/observer/ghost/New(mob/body)
 	see_in_dark = 100
-	verbs += /mob/proc/toggle_antag_pool
+	add_verb(src, /mob/proc/toggle_antag_pool)
 
 	var/turf/T
 	if(ismob(body))
@@ -169,7 +169,7 @@ Works together with spawning an observer, noted above.
 
 		if(ghost.client && !ghost.client.holder)
 			ghost.client.color = NOIRLIST//We don't want admins to have to see things in black and white the whole time.
-			ghost.verbs -= /mob/observer/ghost/verb/toggle_antagHUD	// Poor guys, don't know what they are missing!
+			remove_verb(ghost, /mob/observer/ghost/verb/toggle_antagHUD)	// Poor guys, don't know what they are missing!
 			ghost.set_sight(sight&(~(SEE_TURFS|SEE_MOBS|SEE_OBJS)))//Ghosts can no longer see all.
 		return ghost
 
@@ -212,13 +212,12 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 /mob/observer/ghost/can_use_hands()	return 0
 /mob/observer/ghost/is_active()		return 0
 
-/mob/observer/ghost/Stat()
-	. = ..()
-	if(statpanel("Status"))
-		if(evacuation_controller)
-			var/eta_status = evacuation_controller.get_status_panel_eta()
-			if(eta_status)
-				stat(null, eta_status)
+/mob/observer/ghost/get_status_tab_items()
+	. =..()
+	if(evacuation_controller)
+		var/eta_status = evacuation_controller.get_status_panel_eta()
+		if(eta_status)
+			. += eta_status
 
 /mob/observer/ghost/verb/reenter_corpse()
 	set category = "Ghost"
@@ -236,6 +235,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	mind.current.teleop = null
 	mind.current.reload_fullscreen()
 	mind.current.client.color = null
+	mind.current.client.init_verbs()
 	if(!admin_ghosted)
 		announce_ghost_joinleave(mind, 0, "They now occupy their body again.")
 	return 1
