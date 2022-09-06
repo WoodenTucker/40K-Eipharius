@@ -26,7 +26,7 @@
 	if(isAutochisel(W) || isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Inferior Lasgun Cell", "Stub Rifle Ammo", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Musket Rounds", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube") //lists all possible crafting choices
+		var/craftingchoices = list("Inferior Lasgun Cell", "Boscelot Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Musket Rounds", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Musket",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -99,6 +99,24 @@
 				src.whatwemaking = 10
 				src.ismarked = 1
 				src.name = "Copper Ingot (Ingot Lube)"
+			if("Kieji Handgun")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Kieji Handgun")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 10
+				src.ismarked = 1
+				src.name = "Copper Ingot (Kieji Handgun)"
+			if("Snub Nose Kieji Handgun")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Snub Nose Kieji Handgun")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 10
+				src.ismarked = 1
+				src.name = "Copper Ingot (Snub Nose Kieji Handgun)"
+			if("Musket")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Musket")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 10
+				src.ismarked = 1
+				src.name = "Copper Ingot (Musket)"
 
 
 
@@ -225,6 +243,27 @@
 					src.rubtheoils = 1
 					src.name = "Copper Ingot (Ingot Lube)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(12)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Kieji Handgun! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Copper Ingot (Kieji Handgun)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(13)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Snub Nose Kieji Handgun! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Copper Ingot (Snub Nose Kieji Handgun)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(14)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed Musket! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Copper Ingot (Musket)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
@@ -252,7 +291,6 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/ammo_magazine/box/shotgun(user.loc)
-				new /obj/item/ammo_magazine/box/shotgun(user.loc)
 				qdel(src)
 				return
 			if(4)
@@ -279,9 +317,7 @@
 			if(7)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/c44(user.loc)
-				new /obj/item/ammo_magazine/c44(user.loc)
-				new /obj/item/ammo_magazine/c44(user.loc)
+				new /obj/item/ammo_magazine/bolt_pistol_magazine(user.loc)
 				qdel(src)
 				return
 			if(8)
@@ -309,6 +345,25 @@
 				new /obj/item/device/lube(user.loc)
 				qdel(src)
 				return
+			if(12)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/warfare/kieji(user.loc)
+				qdel(src)
+				return
+			if(13)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/warfare/kieji2(user.loc)
+				qdel(src)
+				return
+			if(14)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/gun/projectile/thrower(user.loc)
+				qdel(src)
+				return
+
 
 
 /*
