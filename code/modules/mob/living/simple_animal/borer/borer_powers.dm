@@ -174,11 +174,11 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 	H.add_language("Cortical Link")
 
 	if(host.stat == 2)
-		add_verb(H, /mob/living/carbon/human/proc/jumpstart)
+		H.verbs |= /mob/living/carbon/human/proc/jumpstart
 
-	add_verb(H, /mob/living/carbon/human/proc/psychic_whisper)
-	add_verb(H, /mob/living/carbon/human/proc/tackle)
-	add_verb(H, /mob/living/carbon/proc/spawn_larvae)
+	H.verbs |= /mob/living/carbon/human/proc/psychic_whisper
+	H.verbs |= /mob/living/carbon/human/proc/tackle
+	H.verbs |= /mob/living/carbon/proc/spawn_larvae
 
 	if(H.client)
 		H.ghostize(0)
@@ -339,9 +339,9 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 
 			controlling = 1
 
-			add_verb(host, /mob/living/carbon/proc/release_control)
-			add_verb(host, /mob/living/carbon/proc/punish_host)
-			add_verb(host, /mob/living/carbon/proc/spawn_larvae)
+			host.verbs += /mob/living/carbon/proc/release_control
+			host.verbs += /mob/living/carbon/proc/punish_host
+			host.verbs += /mob/living/carbon/proc/spawn_larvae
 
 			return
 
@@ -354,7 +354,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		to_chat(usr, "Your host is already alive.")
 		return
 
-	remove_verb(src, /mob/living/carbon/human/proc/jumpstart)
+	verbs -= /mob/living/carbon/human/proc/jumpstart
 	visible_message("<span class='warning'>With a hideous, rattling moan, [src] shudders back to life!</span>")
 
 	rejuvenate()

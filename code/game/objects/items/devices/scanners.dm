@@ -88,7 +88,7 @@ proc/medical_scan_results(var/mob/living/carbon/human/H, var/verbose)
 	. += "<span class='notice'>Brain activity:</span> [brain_result]."
 
 	if(H.stat == DEAD || (H.status_flags & FAKEDEATH))
-		. += "<span class='notice'><b>Time of Death:</b> [time2text(SSticker.round_start_time + world.time, "hh:mm")]</span>"
+		. += "<span class='notice'><b>Time of Death:</b> [time2text(worldtime2stationtime(H.timeofdeath), "hh:mm")]</span>"
 
 	if (H.internal_organs_by_name[BP_STACK])
 		. += "<span class='notice'>Subject has a neural lace implant.</span>"

@@ -21,7 +21,7 @@
 
 /mob/new_player/New()
 	..()
-	add_verb(src, /mob/proc/toggle_antag_pool)
+	verbs += /mob/proc/toggle_antag_pool
 
 /mob/new_player/verb/new_player_panel()
 	set src = usr
@@ -151,7 +151,7 @@
 			observer.real_name = client.prefs.real_name
 			observer.SetName(observer.real_name)
 			if(!client.holder && !config.antag_hud_allowed)           // For new ghosts we remove the verb from even showing up if it's not allowed.
-				remove_verb(observer, /mob/observer/ghost/verb/toggle_antagHUD)        // Poor guys, don't know what they are missing!
+				observer.verbs -= /mob/observer/ghost/verb/toggle_antagHUD        // Poor guys, don't know what they are missing!
 			observer.key = key
 			qdel(src)
 
@@ -422,7 +422,7 @@
 
 	var/list/dat = list("<html><body><center>")
 	dat += "<b>Welcome, [name].<br></b>"
-	dat += "Round Duration: [DisplayTimeText(world.time - SSticker.round_start_time)]<br>"
+	dat += "Round Duration: [roundduration2text()]<br>"
 
 	if(evacuation_controller.has_evacuated())
 		dat += "<font color='red'><b>The [station_name()] has been evacuated.</b></font><br>"
@@ -651,7 +651,7 @@ Hello! It appears you are new here! Thanks for joining Grimdark 13. We recommend
 <h3>Lexicanum</h3>
 <font size='4'><a href=\"https://wh40k.lexicanum.com/wiki/Portal:Imperium\">Wiki</a></font>
 <h3>Server Summary</h3>
-Grimdark 13 is a Warhammer 40k SS13 server running a modified version of the IS12 codebase.
+Grimdark 13 is a Warhammer 40k SS13 server running a modified version of the IS12 codebase. 
 <h3>Some Notes</h3>
 Controls are ingame under the \"view controls\" button in OOC.
 <h3>Enjoy your stay!</h3>"}

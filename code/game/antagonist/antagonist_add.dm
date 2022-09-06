@@ -30,10 +30,10 @@
 	current_antagonists |= player
 
 	if(faction_verb && player.current)
-		add_verb(player, faction_verb)
+		player.current.verbs |= faction_verb
 
 	if(config.objectives_disabled == CONFIG_OBJECTIVE_VERB)
-		add_verb(player, /mob/proc/add_objectives)
+		player.current.verbs += /mob/proc/add_objectives
 
 
 	spawn(1 SECOND) //Added a delay so that this should pop up at the bottom and not the top of the text flood the new antag gets.

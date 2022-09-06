@@ -35,11 +35,6 @@
 		i--
 	return num
 
-/// Return html to load a url.
-/// for use inside of browse() calls to html assets that might be loaded on a cdn.
-/proc/url2htmlloader(url)
-	return {"<html><head><meta http-equiv="refresh" content="0;URL='[url]'"/></head><body onLoad="parent.location='[url]'"></body></html>"}
-
 // Returns the hex value of a number given a value assumed to be a base-ten value
 /proc/num2hex(num, padlength)
 	var/global/list/hexdigits = list("0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F")

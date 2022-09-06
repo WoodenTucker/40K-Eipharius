@@ -108,24 +108,6 @@ var/list/_client_preferences_by_type
 	key = "CHAT_GHOSTEARS"
 	options = list(GLOB.PREF_ALL_SPEECH, GLOB.PREF_NEARBY)
 
-/datum/client_preference/use_tgui_inputs
-	description = "Use TGUI inputs"
-	key = "USE_TGUI_INPUTS"
-	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
-	default_value = GLOB.PREF_YES
-
-/datum/client_preference/large_tgui_inputs
-	description = "Large TGUI inputs buttons"
-	key = "LARGE_TGUI_INPUTS"
-	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
-	default_value = GLOB.PREF_NO
-
-/datum/client_preference/swap_tgui_inputs
-	description = "Swap Sumbmit/Cancle buttons"
-	key = "SWAP_TGUI_INPUTS"
-	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
-	default_value = GLOB.PREF_YES
-
 /datum/client_preference/ghost_sight
 	description ="Ghost sight"
 	key = "CHAT_GHOSTSIGHT"
@@ -140,18 +122,6 @@ var/list/_client_preferences_by_type
 	description ="Ghost Follow Links"
 	key = "CHAT_GHOSTFOLLOWLINKLENGTH"
 	options = list(GLOB.PREF_SHORT, GLOB.PREF_LONG)
-
-/datum/client_preference/lock_tgui
-	description = "Lock TGUI"
-	key = "LOCK_TGUI"
-	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
-	default_value = GLOB.PREF_NO
-
-/datum/client_preference/fancy_tgui
-	description = "Fancy TGUI"
-	key = "FANCY_TGUI"
-	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
-	default_value = GLOB.PREF_YES
 
 /datum/client_preference/chat_tags
 	description ="Chat tags"

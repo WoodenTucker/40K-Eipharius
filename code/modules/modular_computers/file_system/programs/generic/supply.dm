@@ -267,7 +267,7 @@
 
 /datum/nano_module/supply/proc/print_summary(var/mob/user)
 	var/t = ""
-	//t += "<center><BR><b><large>[GLOB.using_map.station_name]</large></b><BR><i>[station_date]</i><BR><i>Export overview<field></i></center><hr>"
+	t += "<center><BR><b><large>[GLOB.using_map.station_name]</large></b><BR><i>[station_date]</i><BR><i>Export overview<field></i></center><hr>"
 	for(var/source in point_source_descriptions)
 		t += "[point_source_descriptions[source]]: [supply_controller.point_sources[source] || 0]<br>"
 	print_text(t, user)

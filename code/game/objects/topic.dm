@@ -1,30 +1,6 @@
 /obj/Topic(var/href, var/href_list = list(), var/datum/topic_state/state = GLOB.default_state)
 	if((. = ..()))
 		return
-	var/client/usr_client = usr.client
-	var/list/paramslist = list()
-
-	if(href_list["statpanel_item_click"])
-		switch(href_list["statpanel_item_click"])
-			if("left")
-				paramslist[LEFT_CLICK] = "1"
-			if("right")
-				paramslist[RIGHT_CLICK] = "1"
-			if("middle")
-				paramslist[MIDDLE_CLICK] = "1"
-			else
-				return
-
-		if(href_list["statpanel_item_shiftclick"])
-			paramslist[SHIFT_CLICK] = "1"
-		if(href_list["statpanel_item_ctrlclick"])
-			paramslist[CTRL_CLICK] = "1"
-		if(href_list["statpanel_item_altclick"])
-			paramslist[ALT_CLICK] = "1"
-
-		var/mouseparams = list2params(paramslist)
-		usr_client.Click(src, loc, null, mouseparams)
-
 	if(CanUseTopic(usr, state, href_list) == STATUS_INTERACTIVE)
 		CouldUseTopic(usr)
 		return OnTopic(usr, href_list, state)

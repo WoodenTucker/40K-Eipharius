@@ -42,15 +42,6 @@
 		completed_asset_jobs += job
 		return
 
-	if(tgui_Topic(href_list))
-		return
-
-	if(href_list["reload_tguipanel"])
-		nuke_chat()
-
-	if(href_list["reload_statbrowser"])
-		stat_panel.reinitialize()
-
 	//search the href for script injection
 	if( findtext(href,"<script",1,0) )
 		world.log << "Attempted use of scripts within a topic call, by [src]"
@@ -94,14 +85,11 @@
 		to_chat(href_logfile, "<small>[time2text(world.timeofday,"hh:mm")] [src] (usr:[usr])</small> || [hsrc ? "[hsrc] " : ""][href]<br>")
 
 	switch(href_list["_src_"])
-		if("holder")
-			hsrc = holder
-		if("usr")
-			hsrc = mob
-		if("prefs")
-			return prefs.process_link(usr,href_list)
-		if("vars")
-			return view_var_Topic(href,href_list,hsrc)
+		if("holder")	hsrc = holder
+		if("usr")		hsrc = mob
+		if("prefs")		return prefs.process_link(usr,href_list)
+		if("vars")		return view_var_Topic(href,href_list,hsrc)
+		if("chat")		return chatOutput.Topic(href, href_list)
 
 	switch(href_list["action"])
 		if("openLink")
@@ -128,13 +116,7 @@
 	//CONNECT//
 	///////////
 /client/New(TopicData)
-	// Instantiate stat panel
-	stat_panel = new(src, "statbrowser")
-	stat_panel.subscribe(src, .proc/on_stat_panel_message)
-
-	// Instantiate tgui panel
-	tgui_panel = new(src, "browseroutput")
-
+	chatOutput = new /datum/chatOutput(src)
 	TopicData = null							//Prevent calls to client.Topic from connect
 
 	if(!(connection in list("seeker", "web")))					//Invalid connection type.
@@ -181,6 +163,7 @@
 	apply_fps(prefs.clientfps)
 
 	. = ..()	//calls mob.Login()
+	chatOutput.start() // Starts the chat
 	force_dark_theme()
 	prefs.sanitize_preferences()
 
@@ -207,26 +190,10 @@
 
 	log_client_to_db()
 
-	var/datum/asset/simple/asset = get_asset_datum(/datum/asset/simple/on_join)
-	asset.send(src)
-
-	connection_time = world.time
-	connection_realtime = world.realtime
-	connection_timeofday = world.timeofday
+	send_resources()
 
 	if(holder)
 		src.control_freak = 0 //Devs need 0 for profiler access
-
-	// Initialize stat panel
-	stat_panel.initialize(
-		inline_html = file("html/statbrowser.html"),
-		inline_js = file("html/statbrowser.js"),
-		inline_css = file("html/statbrowser.css"),
-	)
-	addtimer(CALLBACK(src, .proc/check_panel_loaded), 30 SECONDS)
-
-	// Initialize tgui panel
-	tgui_panel.initialize()
 
 	check_hellbanned()
 	// Maptext tooltip
@@ -303,68 +270,6 @@
 		return text2num(query.item[1])
 	else
 		return -1
-
-/**
- * Initializes dropdown menus on client
- */
-/client/proc/initialize_menus()
-	var/list/topmenus = GLOB.menulist[/datum/verbs/menu]
-	for (var/thing in topmenus)
-		var/datum/verbs/menu/topmenu = thing
-		var/topmenuname = "[topmenu]"
-		if (topmenuname == "[topmenu.type]")
-			var/list/tree = splittext(topmenuname, "/")
-			topmenuname = tree[tree.len]
-		winset(src, "[topmenu.type]", "parent=menu;name=[url_encode(topmenuname)]")
-		var/list/entries = topmenu.Generate_list(src)
-		for (var/child in entries)
-			winset(src, "[child]", "[entries[child]]")
-			if (!ispath(child, /datum/verbs/menu))
-				var/procpath/verbpath = child
-				if (verbpath.name[1] != "@")
-					new child(src)
-
-/**
- * Handles incoming messages from the stat-panel TGUI.
- */
-/client/proc/on_stat_panel_message(type, payload)
-	switch(type)
-		if("Update-Verbs")
-			init_verbs()
-		if("Remove-Tabs")
-			panel_tabs -= payload["tab"]
-		if("Send-Tabs")
-			panel_tabs |= payload["tab"]
-		if("Reset-Tabs")
-			panel_tabs = list()
-		if("Set-Tab")
-			stat_tab = payload["tab"]
-			SSstatpanels.immediate_send_stat_data(src)
-
-/// compiles a full list of verbs and sends it to the browser
-/client/proc/init_verbs()
-	var/list/verblist = list()
-	var/list/verbstoprocess = verbs.Copy()
-	if(mob)
-		verbstoprocess += mob.verbs
-		for(var/atom/movable/thing as anything in mob.contents)
-			verbstoprocess += thing.verbs
-	panel_tabs.Cut() // panel_tabs get reset in init_verbs on JS side anyway
-	for(var/procpath/verb_to_init as anything in verbstoprocess)
-		if(!verb_to_init)
-			continue
-		if(verb_to_init.hidden)
-			continue
-		if(!istext(verb_to_init.category))
-			continue
-		panel_tabs |= verb_to_init.category
-		verblist[++verblist.len] = list(verb_to_init.category, verb_to_init.name)
-	src.stat_panel.send_message("init_verbs", list(panel_tabs = panel_tabs, verblist = verblist))
-
-/client/proc/check_panel_loaded()
-	if(stat_panel.is_ready())
-		return
-	to_chat(src, SPAN_USERDANGER("Statpanel failed to load, click <a href='?src=[any2ref(src)];reload_statbrowser=1'>here</a> to reload the panel "))
 
 /proc/get_player_class(key)
 	establish_db_connection()
@@ -467,10 +372,42 @@
 	var/seconds = inactivity/10
 	return "[round(seconds / 60)] minute\s, [seconds % 60] second\s"
 
-/mob/proc/MayRespawn()
+// Byond seemingly calls stat, each tick.
+// Calling things each tick can get expensive real quick.
+// So we slow this down a little.
+// See: http://www.byond.com/docs/ref/info.html#/client/proc/Stat
+/client/Stat()
+	if(!usr)
+		return
+	// Add always-visible stat panel calls here, to define a consistent display order.
+	statpanel("Status")
+
+	. = ..()
+	sleep(1)
+
+//send resources to the client. It's here in its own proc so we can move it around easiliy if need be
+/client/proc/send_resources()
+
+	getFiles(
+		'html/search.js',
+		'html/panels.css',
+		'html/spacemag.css',
+		'html/images/loading.gif',
+		'html/images/ntlogo.png',
+		'html/images/bluentlogo.png',
+		'html/images/sollogo.png',
+		'html/images/terralogo.png',
+		'html/images/talisman.png'
+		)
+
+	spawn (10) //removing this spawn causes all clients to not get verbs.
+		//Precache the client with all other assets slowly, so as to not block other browse() calls
+		getFilesSlow(src, asset_cache.cache, register_asset = FALSE)
+
+mob/proc/MayRespawn()
 	return 0
 
-/client/proc/MayRespawn()
+client/proc/MayRespawn()
 	if(mob)
 		return mob.MayRespawn()
 
@@ -567,38 +504,21 @@
 	var/aspect_ratio = view_size[1] / view_size[2]
 
 	// Calculate desired pixel width using window size and aspect ratio
-	var/list/sizes = params2list(winget(src, "mainwindow.split;mapwindow", "size"))
-
-	// Client closed the window? Some other error? This is unexpected behaviour, let's
-	// CRASH with some info.
-	if(!sizes["mapwindow.size"])
-		CRASH("sizes does not contain mapwindow.size key. This means a winget failed to return what we wanted. --- sizes var: [sizes] --- sizes length: [length(sizes)]")
-
-	var/list/map_size = splittext(sizes["mapwindow.size"], "x")
-
-	var/desired_width = 0
-
-	// Looks like we expect mapwindow.size to be "ixj" where i and j are numbers.
-	// If we don't get our expected 2 outputs, let's give some useful error info.
-	if(length(map_size) != 2)
-		CRASH("map_size of incorrect length --- map_size var: [map_size] --- map_size length: [length(map_size)]")
+	var/sizes = params2list(winget(src, "mainwindow.mainvsplit;mapwindow", "size"))
+	var/map_size = splittext(sizes["mapwindow.size"], "x")
 	var/height = text2num(map_size[2])
-	desired_width = round(height * aspect_ratio)
-
+	var/desired_width = round(height * aspect_ratio)
 	if (text2num(map_size[1]) == desired_width)
 		// Nothing to do
 		return
 
-	var/split_size = splittext(sizes["mainwindow.split.size"], "x")
+	var/split_size = splittext(sizes["mainwindow.mainvsplit.size"], "x")
 	var/split_width = text2num(split_size[1])
-
-	// Avoid auto-resizing the statpanel and chat into nothing.
-	desired_width = min(desired_width, split_width - 300)
 
 	// Calculate and apply a best estimate
 	// +4 pixels are for the width of the splitter's handle
 	var/pct = 100 * (desired_width + 4) / split_width
-	winset(src, "mainwindow.split", "splitter=[pct]")
+	winset(src, "mainwindow.mainvsplit", "splitter=[pct]")
 
 	// Apply an ever-lowering offset until we finish or fail
 	var/delta
@@ -618,4 +538,4 @@
 			delta = -delta/2
 
 		pct += delta
-		winset(src, "mainwindow.split", "splitter=[pct]")
+		winset(src, "mainwindow.mainvsplit", "splitter=[pct]")

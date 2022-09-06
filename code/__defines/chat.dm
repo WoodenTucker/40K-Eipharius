@@ -1,1 +1,0 @@
-#define examine_block(str) ("<div class='examine_block'>" + str + "</div>")
