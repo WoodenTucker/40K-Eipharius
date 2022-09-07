@@ -619,12 +619,9 @@
 	registered_name = "Inquisitor"
 	},
 /obj/item/card/id/syndicate,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"cf" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/door/window/brigdoor/northleft{
-	color = "grey"
+/obj/item/card/id/innkey3{
+	access = list(333,211);
+	name = "monastary key"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1025,17 +1022,6 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"dR" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/window/reinforced{
-	color = "grey"
-	},
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "dS" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1192,6 +1178,7 @@
 	color = "#36261B"
 	},
 /obj/effect/floor_decal/turf/brick/two,
+/obj/random/loot/heavymelee,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "eO" = (
@@ -1299,15 +1286,6 @@
 "fr" = (
 /turf/simulated/floor/carpet/red,
 /area/centcom)
-"fu" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 1
-	},
-/obj/item/archaeological_find/remains/xeno,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "fA" = (
 /obj/machinery/light,
 /obj/machinery/newscaster{
@@ -1555,12 +1533,6 @@
 /turf/simulated/wall/r_wall/containment{
 	integrity = 50000
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"gI" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/archaeological_find/remains/xeno,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "gL" = (
 /turf/simulated/shuttle/wall,
@@ -2494,13 +2466,6 @@
 /obj/machinery/door/airlock/cone,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"lr" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/dnaforensics,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "ls" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -2887,13 +2852,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"nq" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/door/window/brigdoor/southright{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "nt" = (
 /obj/effect/floor_decal/carpet{
 	dir = 8
@@ -3166,13 +3124,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"oH" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/archaeological_find/mask,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "oI" = (
 /obj/machinery/light{
@@ -3564,14 +3515,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"ra" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/statue/xenotube,
-/obj/effect/floor_decal/turf/bloodbar,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "rc" = (
 /obj/machinery/chem_master{
 	color = "grey"
@@ -3583,13 +3526,6 @@
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/fancy/wood/cee{
 	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"rm" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/bed/chair/wood/wings{
-	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -4104,17 +4040,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"uu" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/archaeological_find/robes,
-/obj/structure/table/steel,
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "uv" = (
 /obj/machinery/sleeper,
 /obj/structure/sign/warning/nosmoking_2{
@@ -4190,16 +4115,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"uU" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/door/airlock/medical{
-	color = "grey";
-	maxhealth = 600;
-	name = "Laboratorum";
-	req_access = list(302)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "uY" = (
 /obj/machinery/computer/crew,
 /turf/simulated/floor/tiled{
@@ -4654,15 +4569,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"xq" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/steel,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "xr" = (
 /obj/machinery/chemical_dispenser/full{
 	color = "grey"
@@ -4856,15 +4762,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"yB" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/forensics/swab,
-/obj/item/forensics/sample_kit/powder,
-/obj/structure/table/steel,
-/obj/item/storage/briefcase/crimekit,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "yE" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/light,
@@ -4918,14 +4815,6 @@
 /turf/simulated/wall/r_wall/containment{
 	integrity = 50000
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"yR" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/statue/xenotube/r2,
-/obj/effect/floor_decal/turf/bloodbar,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "yU" = (
 /obj/machinery/computer/shuttle_control/ferry/inquisition,
@@ -5376,11 +5265,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"BI" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "BJ" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -5431,30 +5315,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"BT" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/statue/xenotube/l2,
-/obj/effect/floor_decal/turf/bloodbar,
-/obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "BU" = (
 /obj/structure/table/reinforced{
 	color = "grey"
 	},
 /obj/item/defibrillator,
 /obj/item/defibrillator,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"Cd" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/archaeological_find/remains/xeno,
-/obj/structure/table/steel,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Cm" = (
@@ -5603,7 +5469,7 @@
 /obj/item/clothing/head/helmet/hevhelm,
 /obj/item/clothing/head/helmet/seolhelm,
 /obj/item/clothing/suit/armor/seolsuit{
-	armor = list("melee" = 40, "bullet" = 50, "laser" = 60, "energy" = 25, "bomb" = 40, "bio" = 100, "rad" = 100);
+	armor = list("melee"=40,"bullet"=50,"laser"=60,"energy"=25,"bomb"=40,"bio"=100,"rad"=100);
 	name = "Salvaged Anomaly Suit"
 	},
 /turf/simulated/floor/shuttle/darkred,
@@ -5870,16 +5736,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Eq" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/effect/decal/cleanable/blood/gibs/xeno/down,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"Es" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/closet/crate/secure/biohazard,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ew" = (
 /obj/machinery/door/airlock/external{
 	color = "grey"
@@ -5942,14 +5798,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"EQ" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "ET" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -6866,15 +6714,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Le" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/window/reinforced{
-	color = "grey";
-	dir = 1
-	},
-/obj/effect/decal/cleanable/blood/gibs/xeno/down,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Li" = (
 /obj/effect/floor_decal/newcorner/yellow/diagonal,
 /obj/structure/bed/chair/office/dark{
@@ -6904,13 +6743,6 @@
 	color = "grey"
 	},
 /area/centcom)
-"Lw" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/machinery/microscope,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Lx" = (
 /obj/structure/table/rack,
 /obj/item/storage/firstaid/adv,
@@ -7088,15 +6920,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Mv" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/steel,
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Mz" = (
 /obj/structure/table/woodentable,
 /obj/machinery/chemical_dispenser/bar_coffee/full,
@@ -7109,6 +6932,7 @@
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/random/loot/heavymelee,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "MC" = (
@@ -7326,15 +7150,6 @@
 /obj/effect/floor_decal/carpet,
 /turf/simulated/floor/carpet,
 /area/centcom)
-"NP" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/statue/xenotube/l1,
-/obj/effect/floor_decal/turf/bloodbar,
-/obj/effect/decal/cleanable/blood,
-/obj/structure/cult/forge,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "NZ" = (
 /obj/machinery/light{
 	dir = 1;
@@ -7846,13 +7661,6 @@
 /obj/machinery/computer/drone_control,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"QI" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/bed/chair/wood/wings{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "QJ" = (
 /obj/machinery/light{
 	icon_state = "tube1";
@@ -7925,14 +7733,6 @@
 /obj/machinery/vending/engineering,
 /turf/simulated/floor/tiled/dark,
 /area/centcom)
-"Ro" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/item/forensics/sample_kit,
-/obj/item/forensics,
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Rt" = (
 /obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/freezer,
@@ -8400,14 +8200,6 @@
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/simulated/floor/plating,
 /area/centcom)
-"Us" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/bed/chair/wood/wings{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ut" = (
 /obj/item/device/radio/intercom{
 	pixel_y = -32
@@ -8467,13 +8259,6 @@
 /obj/item/ammo_magazine/box/a556/mg08,
 /obj/item/ammo_magazine/box/a556/mg08,
 /obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
-"Uz" = (
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/window/reinforced{
-	color = "grey"
-	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "UF" = (
@@ -8937,13 +8722,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"WZ" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/cult/pylon,
-/obj/effect/cultwall,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "Xe" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -9089,6 +8867,11 @@
 	req_access = null
 	},
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/card/id/innkey3{
+	access = list(330);
+	name = "Armory Key";
+	req_access = list(330)
+	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "XN" = (
@@ -9255,7 +9038,6 @@
 /obj/structure/closet/secure_closet/guncabinet{
 	name = "Inquisitorial cabinet"
 	},
-/obj/item/melee/chain/inqcs,
 /obj/item/melee/chain/inqcs,
 /obj/item/material/sword/combat_knife,
 /obj/effect/floor_decal/turf/brick/two,
@@ -17415,16 +17197,16 @@ VN
 ep
 VN
 tj
-Es
-Cd
-lr
-Lw
-xq
-gI
 Vx
 Vx
-dR
-Le
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
 Vx
 tj
 TX
@@ -17516,17 +17298,17 @@ tj
 ep
 ep
 ep
-uU
-Vx
-Vx
-Vx
-QI
+tj
 Vx
 Vx
 Vx
 Vx
-nq
-cf
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
 Vx
 fD
 fD
@@ -17627,9 +17409,9 @@ Vx
 Vx
 Vx
 Vx
-Uz
-EQ
-Eq
+Vx
+Vx
+Vx
 fD
 iW
 ax
@@ -17721,7 +17503,8 @@ fD
 fD
 fD
 fD
-oH
+fD
+fD
 Vx
 Vx
 Vx
@@ -17729,8 +17512,7 @@ Vx
 Vx
 Vx
 Vx
-Uz
-fu
+Vx
 Vx
 fD
 iW
@@ -17824,16 +17606,16 @@ ax
 ax
 fD
 Rw
-QI
+fD
 Vx
-Us
 Vx
-yR
-ra
-rm
 Vx
-tj
-tj
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
 fD
 iW
 ax
@@ -17926,15 +17708,15 @@ ax
 ax
 fD
 fD
-Mv
-yB
-Ro
-BI
-BT
-NP
-uu
-WZ
-tj
+fD
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
+Vx
 fD
 fD
 iW

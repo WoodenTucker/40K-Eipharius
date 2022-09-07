@@ -62,11 +62,8 @@
 	name = "energy axe"
 	desc = "An energised battle axe."
 	icon_state = "axe0"
-	//active_force = 150 //holy...
-	active_force = 60
+	active_force = 35
 	active_throwforce = 35
-	//force = 40
-	//throwforce = 25
 	force = 20
 	throwforce = 10
 	throw_speed = 1
@@ -94,9 +91,8 @@
 	desc = "A taU blade using high heated plasma to cut through things."
 	icon_state = "tau0"
 	item_state = "EB-knife"
-	//active_force = 150 //holy...
-	active_force = 30
-	active_throwforce = 35
+	active_force = 22
+	active_throwforce = 21
 	//force = 40
 	//throwforce = 25
 	force = 20
@@ -289,7 +285,9 @@
 /obj/item/melee/energy/powersword //basis for other power weapons
 	name = "Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, the void shield will cut through almost anything that it touches when its on, so make sure you don't cut yourself."
+	item_state = "powersword"
 	icon_state = "powersword"
+	wielded_icon = "powersword-w"
 	active_force = 38 //should be enough to cut off most limbs
 	active_throwforce = 38
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
@@ -325,8 +323,9 @@
 /obj/item/melee/energy/powersword/astartes/ingelldina
 	name = "Ingelldina Pattern Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, this one is very long and heavy, clearly having been made for one of the sons of the emperor."
-	item_state = "inqchainsword" // There is no on-mob for powersword we must use this. It looks alright.
+	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
+	wielded_icon = "powersword-w"
 	active_force = 44 //should be enough to cut off most limbs
 	active_throwforce = 44
 	force = 40 //its just a adamantium sword when offline
@@ -350,13 +349,15 @@
 	name = "Power Claws"
 	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
 	icon_state = "powerclaw-alt_mag"
-	active_force = 40 //This should be enough to cut off most limbs in a few hits
+	item_state = "klevec"
+	wielded_icon = "klevec"
+	active_force = 38 //This should be enough to cut off most limbs in a few hits
 	active_throwforce = 0
 	force = 35
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
-	weapon_speed_delay = 6
+	weapon_speed_delay = 7
 	sharp = TRUE
 	block_chance = 35 //not the best block chance, but, you can have two of them!
 	sales_price = 80
