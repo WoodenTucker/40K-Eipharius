@@ -1,8 +1,8 @@
 //The throne has many functions so it gets its own file.
 
 /obj/structure/bed/chair/throne
-	name = "\the rogue throne"
-	desc = "Fit for baron, count, or even duke. Surely fit for your sorry rear end."
+	name = "\the Commandant's throne"
+	desc = "Fit for a king... or a uh... commandant"
 	base_icon = "throne"
 	icon_state = "throne"
 	var/datum/announcement/decree/magistrate_decree = new

@@ -19,7 +19,7 @@
 	var/drops_debris = 1
 	var/broken_icon = null
 	var/applies_material_colour = 1
-	var/applies_material_name = FALSE //if false, does not rename item to 'material item.name'
+	var/applies_material_name = 1 //if false, does not rename item to 'material item.name'
 	var/max_force = 40	 //any damage above this is added to armor penetration value
 	var/force_multiplier = 0.5	// multiplier to material's generic damage value for this specific type of weapon
 	var/thrown_force_multiplier = 0.5
@@ -59,7 +59,7 @@
 	if(!material)
 		qdel(src)
 	else
-		SetName("[initial(name)]")
+		SetName("[material.display_name] [initial(name)]")
 		health = round(material.integrity/10)
 		if(applies_material_colour)
 			color = material.icon_colour

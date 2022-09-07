@@ -34,9 +34,9 @@
 
 /obj/structure/closet/secure_closet/freezer/fridge/WillContain()
 	return list(
-		/obj/item/reagent_containers/food/drinks/milk = 1,
-		/obj/item/reagent_containers/food/drinks/soymilk = 1,
-		/obj/item/storage/fancy/egg_box = 1
+		/obj/item/reagent_containers/food/drinks/milk = 6,
+		/obj/item/reagent_containers/food/drinks/soymilk = 4,
+		/obj/item/storage/fancy/egg_box = 4
 	)
 
 /obj/structure/closet/secure_closet/freezer/money
