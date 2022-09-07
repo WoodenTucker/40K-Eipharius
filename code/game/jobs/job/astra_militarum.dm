@@ -117,8 +117,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Conscript"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -515,7 +515,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
+	/obj/item/shovel/krieg = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
@@ -690,7 +690,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
+	/obj/item/shovel/krieg = 1
 	)
 
 /decl/hierarchy/outfit/job/sniper/valhalla
@@ -763,7 +763,7 @@
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel = 1
+	/obj/item/shovel/krieg = 1
 	)
 
 /decl/hierarchy/outfit/job/sergeant/catachan
