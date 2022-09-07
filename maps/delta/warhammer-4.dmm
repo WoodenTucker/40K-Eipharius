@@ -512,10 +512,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"dy" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/oa/theforest)
 "ep" = (
 /obj/structure/railing{
 	dir = 4
@@ -34560,7 +34556,7 @@ AZ
 AZ
 AZ
 AZ
-dy
+AZ
 cD
 cD
 cD

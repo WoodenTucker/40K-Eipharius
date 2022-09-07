@@ -7,8 +7,8 @@
 /area/cadiaoutpost/oa/krootship)
 "ab" = (
 /obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Warsphere"
+	name = "Kroot Warsphere";
+	req_access = list()
 	},
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -25,9 +25,9 @@
 /area/cadiaoutpost/oa/krootship)
 "af" = (
 /turf/simulated/shuttle/wall{
-	icon_state = "wall3";
+	color = "grey";
 	dir = 6;
-	color = "grey"
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/krootship)
 "ag" = (
@@ -366,8 +366,8 @@
 /area/cadiaoutpost/oa/krootship)
 "bu" = (
 /obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Bridge"
+	name = "Kroot Bridge";
+	req_access = list()
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
@@ -401,8 +401,8 @@
 /area/cadiaoutpost/oa/krootship)
 "bz" = (
 /obj/machinery/door/airlock/arbiter{
-	req_access = list();
-	name = "Kroot Warsphere"
+	name = "Kroot Warsphere";
+	req_access = list()
 	},
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/krootship)
@@ -421,16 +421,16 @@
 /area/centcom)
 "bE" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/structure/toilet,
 /obj/structure/window/reinforced/tinted{
 	dir = 1
 	},
 /obj/structure/window/reinforced/tinted{
-	icon_state = "twindow";
-	dir = 4
+	dir = 4;
+	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted{
 	dir = 8;
@@ -514,8 +514,8 @@
 /area/centcom)
 "bQ" = (
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /obj/structure/table/standard,
 /obj/machinery/recharger,
@@ -649,8 +649,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ck" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 1
+	dir = 1;
+	icon_state = "tube1"
 	},
 /obj/structure/cable{
 	d2 = 8;
@@ -759,8 +759,8 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/portables_connector{
-	icon_state = "map_connector";
-	dir = 4
+	dir = 4;
+	icon_state = "map_connector"
 	},
 /obj/machinery/door/blast/regular{
 	density = 0;
@@ -776,8 +776,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cL" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/item/device/radio/intercom{
 	pixel_y = 32
@@ -859,8 +859,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "di" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 6
+	dir = 6;
+	icon_state = "intact"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -940,8 +940,8 @@
 	tag_interior_door = "dock_port_in"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -962,12 +962,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 8
+	dir = 8;
+	icon_state = "warningcorner"
 	},
 /obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 8
+	dir = 8;
+	icon_state = "warning"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -993,9 +993,9 @@
 "dI" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
+	d2 = 2;
 	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
+	pixel_y = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -1069,8 +1069,8 @@
 "ea" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/structure/sign/warning/fall{
@@ -1156,8 +1156,8 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1209,9 +1209,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "eT" = (
 /obj/structure/sign/imperial{
-	pixel_y = -32;
 	desc = "Undercover outfits. All armor and helmets upgraded with lightweight carapace. They're better than a standard cadian armor!";
-	name = "Undercover Equipment"
+	name = "Undercover Equipment";
+	pixel_y = -32
 	},
 /obj/structure/torchwall/service{
 	dir = 1;
@@ -1243,15 +1243,15 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "fe" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/machinery/light_switch{
 	pixel_x = -25
 	},
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/blood/gibs,
@@ -1340,14 +1340,14 @@
 	icon_state = "1-4"
 	},
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2{
-	name = "Khornate Commander Helmet";
+	armor = list("melee"=48,"bullet"=54,"laser"=44,"energy"=35,"bomb"=20,"bio"=50,"rad"=50);
 	color = "gold";
-	armor = list("melee"=48,"bullet"=54,"laser"=44,"energy"=35,"bomb"=20,"bio"=50,"rad"=50)
+	name = "Khornate Commander Helmet"
 	},
 /obj/item/clothing/suit/armor/guardsman/bloodpact{
-	name = "Khornate Commander Armor";
+	armor = list("melee"=75,"bullet"=75,"laser"=65,"energy"=20,"bomb"=30,"bio"=10,"rad"=20);
 	color = "gold";
-	armor = list("melee"=75,"bullet"=75,"laser"=65,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
+	name = "Khornate Commander Armor"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1380,8 +1380,8 @@
 "fN" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
-	icon_state = "pipe-t";
-	dir = 1
+	dir = 1;
+	icon_state = "pipe-t"
 	},
 /obj/machinery/light_switch{
 	pixel_x = 28
@@ -1491,12 +1491,12 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "gm" = (
 /obj/structure/disposalpipe/segment{
-	icon_state = "conpipe-c";
-	dir = 4
+	dir = 4;
+	icon_state = "conpipe-c"
 	},
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -1505,8 +1505,8 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/effect/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled{
@@ -1914,8 +1914,8 @@
 /area/centcom)
 "jh" = (
 /obj/item/paper/crumpled/bloody{
-	name = "Missive";
-	desc = "We wish to avoid open conflict with The Imperium, but accept that the protection of the castes overrides this necessity. Destroy and kill in defense of your people, but do not seek violence in the systems beyond our reach."
+	desc = "We wish to avoid open conflict with The Imperium, but accept that the protection of the castes overrides this necessity. Destroy and kill in defense of your people, but do not seek violence in the systems beyond our reach.";
+	name = "Missive"
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -1973,8 +1973,8 @@
 "ju" = (
 /obj/structure/railing,
 /obj/item/paper/crumpled/bloody{
-	name = "Imperial Contract";
-	desc = "We wish to avoid open conflict with The Imperium, but accept that the protection of the castes overrides this necessity. Destroy and kill in defense of your people, but do not seek violence in the systems beyond our reach."
+	desc = "We wish to avoid open conflict with The Imperium, but accept that the protection of the castes overrides this necessity. Destroy and kill in defense of your people, but do not seek violence in the systems beyond our reach.";
+	name = "Imperial Contract"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/krootship)
@@ -2014,8 +2014,8 @@
 	},
 /obj/item/storage/box/cups,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2087,8 +2087,8 @@
 "jL" = (
 /obj/machinery/papershredder,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2379,8 +2379,8 @@
 	pixel_y = -5
 	},
 /obj/item/reagent_containers/food/snacks/warfare/nim{
-	pixel_y = -2;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = -2
 	},
 /obj/item/reagent_containers/food/snacks/warfare/nim{
 	pixel_x = 8;
@@ -2441,8 +2441,8 @@
 /area/cadiaoutpost/oa/tauship)
 "kR" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -2463,8 +2463,8 @@
 /area/centcom)
 "lc" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -2545,8 +2545,8 @@
 	icon_state = "torchwall0"
 	},
 /obj/structure/sign/imperial{
-	pixel_y = -32;
-	name = "Inquisitorial Equipment"
+	name = "Inquisitorial Equipment";
+	pixel_y = -32
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /turf/simulated/floor/tiled/dark,
@@ -2568,8 +2568,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "lE" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -2692,8 +2692,8 @@
 /obj/structure/shuttle/engine/propulsion,
 /turf/simulated/open,
 /turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 1
+	dir = 1;
+	icon_state = "corner_white"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "mz" = (
@@ -2840,8 +2840,8 @@
 /area/centcom)
 "nl" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -2871,13 +2871,13 @@
 "np" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /obj/structure/closet/crate,
 /obj/item/cell/lasgun/hotshot,
@@ -2921,8 +2921,8 @@
 	icon_state = "2-8"
 	},
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -3363,8 +3363,8 @@
 	dir = 8
 	},
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /obj/machinery/light_switch{
 	pixel_x = 28
@@ -3396,8 +3396,8 @@
 	icon_state = "1-2"
 	},
 /obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 8
+	dir = 8;
+	icon_state = "warning"
 	},
 /obj/machinery/light/small{
 	dir = 4
@@ -3517,8 +3517,8 @@
 "qQ" = (
 /obj/structure/table/standard,
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/item/storage/box/donkpockets,
 /obj/effect/floor_decal/corner/red/diagonal,
@@ -3557,8 +3557,8 @@
 "qX" = (
 /obj/machinery/vending/coffee,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -3842,8 +3842,8 @@
 /area/centcom)
 "tb" = (
 /obj/structure/cable{
-	icon_state = "0-4";
-	d2 = 4
+	d2 = 4;
+	icon_state = "0-4"
 	},
 /obj/structure/bed/chair,
 /turf/simulated/floor/tiled{
@@ -3872,8 +3872,8 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -3883,8 +3883,8 @@
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /obj/item/mortar_launcher/chaos,
 /obj/item/mortar_shell/frag,
@@ -3985,8 +3985,8 @@
 	pixel_x = 32
 	},
 /obj/structure/bed/chair{
-	icon_state = "chair_preview";
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4045,8 +4045,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ud" = (
 /obj/item/material/sword/commissword{
-	name = "Runic Sabre";
-	force = 35
+	force = 35;
+	name = "Runic Sabre"
 	},
 /obj/structure/table/marble,
 /obj/structure/window/reinforced/reliquary{
@@ -4063,8 +4063,8 @@
 	pixel_x = -5
 	},
 /obj/effect/floor_decal/spline/fancy/wood{
-	pixel_y = -5;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = -5
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/brick/two,
@@ -4323,8 +4323,8 @@
 /obj/structure/shuttle/engine/propulsion,
 /turf/simulated/open,
 /turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "vO" = (
@@ -4494,8 +4494,8 @@
 /obj/structure/closet/walllocker/emerglocker/north,
 /obj/structure/closet/secure_closet/freezer/fridge,
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/random/drinkbottle,
@@ -4591,8 +4591,8 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -4683,8 +4683,8 @@
 	pixel_y = 20
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/machinery/door/airlock/external/bolted/cycling{
 	id_tag = "dock_port_in"
@@ -4760,8 +4760,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "xQ" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -5071,8 +5071,8 @@
 	},
 /obj/structure/disposalpipe/junction,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 10
+	dir = 10;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -5084,8 +5084,8 @@
 /area/centcom)
 "zZ" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/black,
 /area/cadiaoutpost/oa/tauship)
@@ -5133,9 +5133,9 @@
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "At" = (
 /obj/structure/cable{
+	d2 = 2;
 	icon_state = "0-2";
-	pixel_y = 1;
-	d2 = 2
+	pixel_y = 1
 	},
 /obj/effect/floor_decal/corner/red/diagonal,
 /obj/structure/sink{
@@ -5151,12 +5151,12 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Aw" = (
 /obj/structure/window/reinforced/tinted{
-	icon_state = "twindow";
-	dir = 4
+	dir = 4;
+	icon_state = "twindow"
 	},
 /obj/machinery/shower{
-	icon_state = "shower";
-	dir = 4
+	dir = 4;
+	icon_state = "shower"
 	},
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -5170,8 +5170,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "AE" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -5335,8 +5335,8 @@
 "Bx" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -5459,13 +5459,13 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Cm" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
-	icon_state = "conpipe-c";
-	dir = 4
+	dir = 4;
+	icon_state = "conpipe-c"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -5484,8 +5484,8 @@
 /area/centcom)
 "Co" = (
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /obj/machinery/newscaster{
 	pixel_x = -32
@@ -5513,8 +5513,8 @@
 	pixel_x = 28
 	},
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -5810,8 +5810,8 @@
 /obj/structure/window/reinforced,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /turf/simulated/wall/r_wall/containment{
 	integrity = 50000
@@ -5820,8 +5820,8 @@
 "El" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk{
-	icon_state = "pipe-t";
-	dir = 1
+	dir = 1;
+	icon_state = "pipe-t"
 	},
 /obj/machinery/light_switch{
 	pixel_x = 28
@@ -5857,8 +5857,8 @@
 	tag_interior_door = "dock_star_in"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -5914,8 +5914,8 @@
 	pixel_y = 20
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/machinery/door/airlock/external/bolted/cycling{
 	id_tag = "dock_star_in"
@@ -6037,8 +6037,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Ft" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/structure/mirror{
 	pixel_y = 29
@@ -6051,8 +6051,8 @@
 	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted{
-	icon_state = "twindow";
-	dir = 4
+	dir = 4;
+	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -6086,8 +6086,8 @@
 	opacity = 1
 	},
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/item/towel,
 /obj/effect/floor_decal/corner/white/diagonal,
@@ -6225,8 +6225,8 @@
 "Gq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/bed/chair/comfy/brown{
-	icon_state = "comfychair_preview";
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /obj/effect/decal/cleanable/blood/gibs/up,
 /obj/effect/decal/cleanable/blood/gibs/vomit,
@@ -6271,8 +6271,8 @@
 /obj/random/clothing,
 /obj/random/clothing,
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /obj/item/storage/backpack/dufflebag,
 /obj/effect/floor_decal/corner/white/diagonal,
@@ -6309,8 +6309,8 @@
 /obj/structure/table/standard,
 /obj/machinery/microwave,
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/machinery/alarm{
 	dir = 4;
@@ -6367,8 +6367,8 @@
 "Hx" = (
 /obj/structure/filingcabinet,
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -6400,8 +6400,8 @@
 /area/centcom)
 "HL" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/item/device/radio/intercom{
 	pixel_x = -32
@@ -6501,8 +6501,8 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
@@ -6797,12 +6797,12 @@
 /area/centcom)
 "Kb" = (
 /obj/machinery/shower{
-	icon_state = "shower";
-	dir = 4
+	dir = 4;
+	icon_state = "shower"
 	},
 /obj/structure/window/reinforced/tinted{
-	icon_state = "twindow";
-	dir = 4
+	dir = 4;
+	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted,
 /obj/structure/curtain/open/shower,
@@ -6844,12 +6844,12 @@
 /area/cadiaoutpost/oa/krootship)
 "KL" = (
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/structure/closet/emcloset,
 /obj/structure/sign/deck/first{
@@ -6939,8 +6939,8 @@
 /area/cadiaoutpost/oa/krootship)
 "LK" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -7035,8 +7035,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Me" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 1
+	dir = 1;
+	icon_state = "bulb1"
 	},
 /obj/item/device/radio/intercom{
 	pixel_y = 32
@@ -7048,8 +7048,8 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 4
+	dir = 4;
+	icon_state = "intact"
 	},
 /obj/effect/floor_decal/corner/white/diagonal,
 /turf/simulated/floor/tiled{
@@ -7153,8 +7153,8 @@
 /area/centcom)
 "MT" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 4
+	dir = 4;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/white,
 /area/cadiaoutpost/oa/tauship)
@@ -7281,8 +7281,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "NA" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /obj/item/gun/energy/stunrevolver,
 /obj/structure/closet/cabinet,
@@ -7449,8 +7449,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "OD" = (
 /obj/structure/disposalpipe/segment{
-	icon_state = "conpipe-c";
-	dir = 4
+	dir = 4;
+	icon_state = "conpipe-c"
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -7475,13 +7475,13 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "OF" = (
 /obj/structure/toilet{
-	icon_state = "toilet00";
-	dir = 1
+	dir = 1;
+	icon_state = "toilet00"
 	},
 /obj/structure/window/reinforced/tinted,
 /obj/structure/window/reinforced/tinted{
-	icon_state = "twindow";
-	dir = 4
+	dir = 4;
+	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted{
 	dir = 8;
@@ -7553,8 +7553,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "OZ" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
+	dir = 8;
+	icon_state = "bulb1"
 	},
 /obj/item/crowbar,
 /turf/simulated/floor/tiled{
@@ -7583,8 +7583,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Pj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 5
+	dir = 5;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -7625,8 +7625,8 @@
 /area/centcom)
 "Ps" = (
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/machinery/light/small{
@@ -7855,8 +7855,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "QJ" = (
 /obj/machinery/light{
-	icon_state = "tube1";
-	dir = 8
+	dir = 8;
+	icon_state = "tube1"
 	},
 /turf/simulated/floor/shuttle/darkred,
 /area/cadiaoutpost/oa/tauship)
@@ -8008,8 +8008,8 @@
 	icon_state = "tube1"
 	},
 /obj/structure/cable{
-	icon_state = "0-2";
-	d2 = 2
+	d2 = 2;
+	icon_state = "0-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -8030,8 +8030,8 @@
 /obj/structure/cable,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -8064,8 +8064,8 @@
 "SB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden{
-	icon_state = "intact";
-	dir = 9
+	dir = 9;
+	icon_state = "intact"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -8569,16 +8569,16 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "UU" = (
 /obj/structure/toilet{
-	icon_state = "toilet00";
-	dir = 1
+	dir = 1;
+	icon_state = "toilet00"
 	},
 /obj/structure/window/reinforced/tinted{
 	dir = 8;
 	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted{
-	icon_state = "twindow";
-	dir = 4
+	dir = 4;
+	icon_state = "twindow"
 	},
 /obj/structure/window/reinforced/tinted,
 /obj/effect/decal/cleanable/dirt,
@@ -8626,8 +8626,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /obj/structure/closet/crate,
 /obj/item/shield/riot,
@@ -8668,8 +8668,8 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/comfy/brown{
-	icon_state = "comfychair_preview";
-	dir = 1
+	dir = 1;
+	icon_state = "comfychair_preview"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -8715,8 +8715,8 @@
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "VI" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -8878,8 +8878,8 @@
 	},
 /obj/machinery/vending/cigarette,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 9
+	dir = 9;
+	icon_state = "corner_white"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -9033,8 +9033,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Xw" = (
 /obj/structure/bed/chair{
-	icon_state = "chair_preview";
-	dir = 1
+	dir = 1;
+	icon_state = "chair_preview"
 	},
 /obj/structure/cable{
 	d2 = 6;
@@ -9172,8 +9172,8 @@
 	pixel_x = -24
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/fuel{
-	icon_state = "intact";
-	dir = 6
+	dir = 6;
+	icon_state = "intact"
 	},
 /obj/structure/undies_wardrobe,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -9423,8 +9423,8 @@
 "ZP" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/effect/floor_decal/corner/beige{
-	icon_state = "corner_white";
-	dir = 6
+	dir = 6;
+	icon_state = "corner_white"
 	},
 /obj/structure/cable{
 	icon_state = "2-9"
@@ -9436,8 +9436,8 @@
 	dir = 10
 	},
 /obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 8
+	dir = 8;
+	icon_state = "warningcorner"
 	},
 /obj/structure/closet/crate,
 /obj/item/material/sword/combat_knife/rare,
@@ -9451,8 +9451,8 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ZS" = (
 /obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 4
+	dir = 4;
+	icon_state = "bulb1"
 	},
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /turf/simulated/floor/tiled{
