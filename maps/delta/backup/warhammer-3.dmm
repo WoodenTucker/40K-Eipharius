@@ -3483,7 +3483,7 @@
 	pixel_w = 2;
 	pixel_x = 31
 	},
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(331,330,225);
 	name = "Master Key";
 	req_access = list(331)
@@ -4213,7 +4213,7 @@
 /obj/structure/closet/secure_closet/hop{
 	color = "grey"
 	},
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(331,330,225);
 	name = "Master Key";
 	req_access = list(331)
@@ -5688,7 +5688,7 @@
 "DS" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
@@ -7768,7 +7768,7 @@
 /area/cadiaoutpost/oa/research)
 "Yt" = (
 /obj/effect/floor_decal/turf/metal/three,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";

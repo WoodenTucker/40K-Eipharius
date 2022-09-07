@@ -294,9 +294,9 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/item/card/id/innkey3,
-/obj/item/card/id/innkey2,
-/obj/item/card/id/innkey1,
+/obj/item/card/id/bigkey,
+/obj/item/card/id/goldkey,
+/obj/item/card/id/ironkey,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "aS" = (
@@ -506,7 +506,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/western)
 "bt" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(241);
 	name = "farmhouse key"
 	},
@@ -519,9 +519,9 @@
 "bw" = (
 /obj/effect/floor_decal/turf/barnew,
 /obj/item/coin/platinum,
-/obj/item/card/id/innkey1,
-/obj/item/card/id/innkey2,
-/obj/item/card/id/innkey3,
+/obj/item/card/id/ironkey,
+/obj/item/card/id/goldkey,
+/obj/item/card/id/bigkey,
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
@@ -994,11 +994,11 @@
 /obj/item/device/radio/headset/red_team/voxcaster,
 /obj/effect/floor_decal/turf/carpetn00,
 /obj/item/stamp/chameleon,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
@@ -1577,7 +1577,7 @@
 	},
 /obj/effect/floor_decal/turf/carpetn00,
 /obj/item/device/radio/headset/red_team,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
@@ -1661,7 +1661,7 @@
 "ej" = (
 /obj/structure/table/steel,
 /obj/effect/floor_decal/turf/carpetn00,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
@@ -5089,23 +5089,23 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "np" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(214);
 	name = "motel key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(215);
 	name = "motel key 2"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(216);
 	name = "motel key 3"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(217);
 	name = "motel key 4"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(218);
 	name = "motel key 5"
 	},
@@ -5208,23 +5208,23 @@
 /area/cadiaoutpost/oa/tradefloor)
 "nC" = (
 /obj/structure/closet/crate/bin,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(214);
 	name = "motel key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(215);
 	name = "motel key 2"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(216);
 	name = "motel key 3"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(217);
 	name = "motel key 4"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(218);
 	name = "motel key 5"
 	},
@@ -5724,7 +5724,7 @@
 	color = "#36261B"
 	},
 /obj/item/device/flashlight/lamp/green,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(213);
 	name = "shop key 1"
 	},
@@ -5926,7 +5926,7 @@
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/villageinside)
 "pD" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(211);
 	name = "rusty key 2"
 	},
@@ -6127,15 +6127,15 @@
 	},
 /obj/random/drinkbottle,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -6499,7 +6499,7 @@
 	},
 /area/cadiaoutpost/oa/security)
 "tq" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(280);
 	name = "Den key 1"
 	},
@@ -6623,7 +6623,7 @@
 	dir = 4
 	},
 /obj/item/stack/thrones3/five,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(212);
 	name = "rusty key 3"
 	},
@@ -7968,7 +7968,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "DI" = (
 /obj/structure/closet/crate/bin,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(213);
 	name = "shop key 1"
 	},

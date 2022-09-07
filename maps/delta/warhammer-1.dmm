@@ -4,8 +4,8 @@
 /obj/structure/window/reinforced{
 	color = "grey";
 	dir = 8;
-	maxhealth = 4000;
-	health = 4000
+	health = 4000;
+	maxhealth = 4000
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
@@ -1409,7 +1409,7 @@
 	name = "gentlewomans suit"
 	},
 /obj/item/clothing/shoes/laceup,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -1859,10 +1859,10 @@
 /obj/machinery/door/window/westleft{
 	color = "grey";
 	dir = 4;
-	req_one_access = list(333);
 	health = 500;
 	maxhealth = 500;
-	name = "sanctified glass"
+	name = "sanctified glass";
+	req_one_access = list(333)
 	},
 /obj/structure/window/reinforced{
 	color = "grey"
@@ -2766,10 +2766,10 @@
 /obj/machinery/door/window/westleft{
 	color = "grey";
 	dir = 4;
-	req_one_access = list(333);
 	health = 500;
 	maxhealth = 500;
-	name = "sanctified glass"
+	name = "sanctified glass";
+	req_one_access = list(333)
 	},
 /obj/structure/table/rack/dark,
 /obj/structure/closet/crate,
@@ -3737,7 +3737,7 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/wrench,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -4769,7 +4769,7 @@
 /obj/item/mortar_shell/flare,
 /obj/item/mortar_shell/flare,
 /obj/structure/table/rack/dark,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(330);
 	name = "Armory Key";
 	req_access = list(330)
@@ -5039,15 +5039,15 @@
 /area/cadiaoutpost/oa/caves/dark)
 "un" = (
 /obj/structure/closet/cabinet,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -5518,9 +5518,9 @@
 /obj/effect/floor_decal/turf/brick,
 /obj/machinery/door/window/westleft{
 	color = "grey";
-	req_one_access = list(333);
+	health = 5000;
 	maxhealth = 5000;
-	health = 5000
+	req_one_access = list(333)
 	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
@@ -5707,9 +5707,9 @@
 	color = "grey"
 	},
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle{
-	name = "Sabbat's Bolt Pistol";
+	accuracy = 0;
 	fire_delay = 1.3;
-	accuracy = 0
+	name = "Sabbat's Bolt Pistol"
 	},
 /obj/item/ammo_magazine/bolt_pistol_magazine,
 /obj/item/ammo_magazine/bolt_pistol_magazine,
@@ -5796,7 +5796,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "xm" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -6551,7 +6551,7 @@
 	icon_state = "toilet00"
 	},
 /obj/effect/decal/cleanable/poo,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -6979,7 +6979,7 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/item/clothing/accessory/holster/armpit,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -7002,8 +7002,8 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Co" = (
 /obj/item/rosarius{
-	body_parts_covered = 1656;
-	armor = list("melee"=40,"bullet"=40,"laser"=40,"energy"=0,"bomb"=0,"bio"=0,"rad"=0)
+	armor = list("melee"=40,"bullet"=40,"laser"=40,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
+	body_parts_covered = 1656
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/torchwall/service{
@@ -7016,10 +7016,10 @@
 /obj/machinery/door/window/westleft{
 	color = "grey";
 	dir = 4;
-	req_one_access = list(333);
 	health = 500;
 	maxhealth = 500;
-	name = "sanctified glass"
+	name = "sanctified glass";
+	req_one_access = list(333)
 	},
 /obj/structure/closet/crate,
 /turf/simulated/floor/stone/chapel,
@@ -7317,7 +7317,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "DJ" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -7793,9 +7793,9 @@
 	},
 /obj/effect/floor_decal/turf/carpetn00,
 /mob/living/simple_animal/hostile/smalldemon/chaos{
+	health = 630;
 	name = "The Physician";
-	real_name = "The Physician";
-	health = 630
+	real_name = "The Physician"
 	},
 /obj/effect/golemrune,
 /turf/simulated/floor/tiled/dark{
@@ -7824,7 +7824,7 @@
 "FF" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/necrofleshmouth,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -7869,10 +7869,10 @@
 /obj/machinery/door/window/westleft{
 	color = "grey";
 	dir = 4;
-	req_one_access = list(333);
 	health = 500;
 	maxhealth = 500;
-	name = "sanctified glass"
+	name = "sanctified glass";
+	req_one_access = list(333)
 	},
 /obj/structure/closet/crate,
 /turf/simulated/floor/stone/chapel,
@@ -9023,7 +9023,7 @@
 	dir = 8;
 	icon_state = "toilet00"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -9660,13 +9660,13 @@
 	},
 /obj/effect/floor_decal/turf/metal/five,
 /obj/item/circular_saw{
-	name = "vicious saw";
 	force = 15;
+	name = "vicious saw";
 	weapon_speed_delay = 4
 	},
 /obj/item/material/knife/butch{
-	name = "great cleaver";
-	force = 25
+	force = 25;
+	name = "great cleaver"
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -10265,7 +10265,7 @@
 "Px" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/closet/secure_closet/CMO,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
@@ -10552,8 +10552,8 @@
 /area/cadiaoutpost/oa/hallway/centralhall)
 "QD" = (
 /obj/item/pickaxe/diamond{
-	name = "nid digging tool";
-	color = "black"
+	color = "black";
+	name = "nid digging tool"
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
@@ -10768,7 +10768,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/flame/candle/dinner,
 /obj/item/material/sword/commissword,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(331,330,225);
 	name = "Master Key";
 	req_access = list(331)
@@ -11010,8 +11010,8 @@
 /obj/item/staff/ministorumstaff{
 	armor = list("melee"=30,"bullet"=30,"laser"=30,"energy"=0,"bomb"=0,"bio"=0,"rad"=0);
 	body_parts_covered = 1656;
-	name = "staff of messina";
-	force = 20
+	force = 20;
+	name = "staff of messina"
 	},
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -11064,7 +11064,7 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/item/clothing/accessory/holster/armpit,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -11132,7 +11132,7 @@
 	color = "grey"
 	},
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(330);
 	name = "Armory Key";
 	req_access = list(330)
@@ -11337,7 +11337,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Ud" = (
 /obj/effect/floor_decal/turf/necro1,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -12430,7 +12430,7 @@
 	dir = 4
 	},
 /obj/structure/curtain/open/privacy,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},

@@ -678,7 +678,7 @@
 /obj/item/clothing/under/syndicate/tacticool,
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
@@ -2534,31 +2534,31 @@
 "lR" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	access = list(302)
 	},
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	access = list(302)
 	},
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	access = list(302)
 	},
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	access = list(302)
 	},
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";
@@ -3078,7 +3078,7 @@
 /obj/effect/floor_decal/spline/plain,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	req_access = null;
 	name = "inquisitorial key";
 	desc = "This key is required to access the Dropship and Inquisition Base.";

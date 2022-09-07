@@ -2417,7 +2417,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "mh" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -3503,7 +3503,7 @@
 /obj/item/mortar_shell/flare,
 /obj/item/mortar_shell/flare,
 /obj/structure/table/rack/dark,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Armory Key";
 	req_access = list(330);
 	access = list(330)
@@ -4676,7 +4676,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/flame/candle/dinner,
 /obj/item/material/sword/commissword,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Master Key";
 	req_access = list(331);
 	access = list(331,330,225)
@@ -6826,7 +6826,7 @@
 	color = "grey"
 	},
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Armory Key";
 	req_access = list(330);
 	access = list(330)
@@ -8869,7 +8869,7 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/item/clothing/accessory/holster/armpit,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "storage key"
 	},
@@ -9483,7 +9483,7 @@
 "Sx" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/necrofleshmouth,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -10122,7 +10122,7 @@
 "Vs" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/closet/secure_closet/CMO,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
