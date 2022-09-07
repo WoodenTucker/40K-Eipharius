@@ -1,16 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/wood{
+/obj/machinery/computer/shuttle_control/ferry/aquila,
+/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"ab" = (
-/obj/effect/floor_decal/carpet/blue2,
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/aquila)
 "ac" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -24,11 +18,16 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "af" = (
-/obj/effect/wingrille_spawn/reinforced{
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/aquila)
 "ag" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/tree/pine,
@@ -40,26 +39,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"ai" = (
-/turf/simulated/open,
-/area/cadiaoutpost/oa/theforest)
-"aj" = (
-/obj/effect/floor_decal/carpet/blue2,
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 4
-	},
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 6
-	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/photocopier/faxmachine,
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ak" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/snow,
@@ -69,9 +48,6 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"an" = (
-/turf/simulated/shuttle/wall,
-/area/cadiaoutpost/oa/shuttle/aquila)
 "ap" = (
 /obj/structure/mirror{
 	pixel_y = -32
@@ -101,56 +77,31 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/theforest)
 "as" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/table/woodentable{
-	color = "#36261B"
+/obj/structure/bed/chair{
+	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "rwindow"
-	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	icon_state = "rwindow"
-	},
-/obj/item/archaeological_find/gun,
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
-/turf/simulated/floor/wood{
+/turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/aquila)
 "at" = (
-/obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
-	},
-/obj/effect/floor_decal/turf/plate,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"au" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"av" = (
-/obj/item/storage/fancy/cigar,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aw" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
+/obj/structure/bed/chair{
 	dir = 1
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/aquila)
+"au" = (
+/obj/structure/shuttle/engine/propulsion{
+	color = "grey"
+	},
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
 "ax" = (
@@ -175,42 +126,19 @@
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/theforest)
 "aA" = (
-/obj/effect/shuttle_landmark/ferry/aquila_castle,
-/obj/structure/bed/chair/comfy/captain{
-	desc = "Comfy chair for luxury and piloting.";
-	dir = 1;
-	icon_state = "capchair_preview";
-	name = "pilot seat"
-	},
+/obj/machinery/door/airlock/glass,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
 "aB" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/table/woodentable{
-	color = "#36261B"
+/obj/machinery/door/airlock/glass_external{
+	color = null
 	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "rwindow"
-	},
-/obj/item/archaeological_find/laser,
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aC" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/item/gun/projectile/bolter_pistol/gold,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+/area/cadiaoutpost/oa/shuttle/aquila)
 "aD" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -225,59 +153,21 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"aG" = (
-/turf/simulated/floor/tiled/dark{
+"aJ" = (
+/obj/effect/floor_decal/snow,
+/obj/machinery/door/blast/shutters{
+	dir = 2;
+	icon_state = "shutter1";
+	id = "hangarshutters"
+	},
+/turf/simulated/floor/plating{
 	color = "grey"
 	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aH" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = 5;
-	pixel_y = 5
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/item/reagent_containers/food/drinks/bottle/mjod,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aI" = (
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aJ" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/snacks/hotchili,
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+/area/cadiaoutpost/oa/hangar)
 "aK" = (
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"aL" = (
-/obj/machinery/papershredder{
-	color = "grey"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aM" = (
 /obj/effect/wingrille_spawn/reinforced{
 	color = "grey"
@@ -291,8 +181,13 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "aO" = (
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/turf/space,
 /area/cadiaoutpost/oa/shuttle/aquila)
 "aP" = (
 /obj/structure/cable{
@@ -301,21 +196,6 @@
 /obj/structure/ladder,
 /turf/simulated/open,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"aR" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aT" = (
-/obj/structure/dogbed{
-	color = "grey"
-	},
-/mob/living/simple_animal/rtroach,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aU" = (
 /obj/structure/closet/crate/secure/phoron,
 /obj/item/stack/material/phoron/ten,
@@ -325,20 +205,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"aW" = (
-/obj/structure/bed/chair/office/dark{
-	dir = 1;
-	icon_state = "officechair_dark_preview"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"aX" = (
-/obj/item/card/id/innkey2{
-	access = list(212);
-	name = "rusty key 3"
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "aY" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -350,18 +216,6 @@
 /obj/structure/flora/ash,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"ba" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/curtain/open/bed{
-	name = "privacy curtain";
-	pixel_y = 32
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bb" = (
 /obj/machinery/door/airlock/cone{
 	name = "Hangar";
@@ -374,92 +228,19 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"bd" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle"
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/drinks/bottle/wine,
-/obj/item/reagent_containers/food/drinks/glass2/wine,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "be" = (
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"bf" = (
-/obj/machinery/door/airlock/command{
-	color = null;
-	maxhealth = 900;
-	name = "Meeting Room"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bh" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside)
-"bm" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/recharger,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bn" = (
-/obj/structure/sign/art/lordgovenor{
-	pixel_x = -30
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bo" = (
 /obj/structure/flora/ausbushes/palebush,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"bp" = (
-/obj/effect/floor_decal/carpet/blue2,
-/obj/structure/bed/chair/comfy/captain{
-	desc = "It's a very comfy chair. Only for the highest, rich asses.";
-	dir = 1;
-	icon_state = "capchair_preview";
-	name = "luxury chair"
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bs" = (
-/obj/machinery/door/airlock/highsecurity/guardarmory{
-	name = "Secure Vault";
-	req_access = list(331);
-	maxhealth = 5000
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bt" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/torch/self_lit,
-/obj/item/material/hatchet/machete/deluxe{
-	name = "rogue trader's machete"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bw" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -476,18 +257,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"by" = (
-/obj/machinery/computer/tithecogitator{
-	name = "commerce cogitator"
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bz" = (
-/obj/structure/telearray/centreleft,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/snow,
@@ -505,15 +274,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"bD" = (
-/obj/item/flame/candle/dinner,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/candle/dinner,
-/obj/item/flame/candle/dinner,
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bE" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/machinery/light/small/red,
@@ -529,36 +289,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"bJ" = (
-/obj/machinery/computer/shuttle_control/ferry/aquila,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/aquila)
 "bK" = (
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"bL" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/obj/structure/sign/stainedglass1{
-	pixel_y = 30
-	},
-/obj/item/clothing/mask/gas/explorer{
-	desc = "Often worn on Adeptus Astartes Scouts to protect their precious lungs from harmful gasses.";
-	name = "Astartes Respirator"
-	},
-/obj/item/clothing/glasses/cadiangoggles/elite,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bN" = (
 /obj/machinery/light{
 	dir = 4
@@ -568,12 +303,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"bO" = (
-/obj/structure/curtain/open/privacy,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bP" = (
 /obj/structure/toilet,
 /obj/machinery/light/small{
@@ -597,23 +326,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"bU" = (
-/obj/structure/bed,
-/obj/item/bedsheet/captain,
-/obj/structure/curtain/open/bed,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"bW" = (
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	pixel_y = -32
-	},
-/obj/item/clothing/accessory/holster/armpit,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bX" = (
 /obj/machinery/light{
 	dir = 1;
@@ -630,38 +342,6 @@
 /obj/effect/floor_decal/newcorner/black/solid,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
-"bZ" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 8
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"ca" = (
-/obj/machinery/door/airlock/glass_command/rt{
-	color = null;
-	maxhealth = 900
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"cb" = (
-/obj/effect/floor_decal/carpet/green,
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"cc" = (
-/obj/structure/coatrack,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cd" = (
 /obj/item/archaeological_find/remains,
 /turf/simulated/floor/snow,
@@ -682,63 +362,15 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"cg" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/command{
-	color = null;
-	maxhealth = 900;
-	name = "Meeting Room"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ch" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-"ci" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"cl" = (
-/obj/effect/floor_decal/carpet/green,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cm" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"cn" = (
-/obj/structure/railing,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
-"co" = (
-/obj/structure/curtain/open/bed{
-	name = "privacy curtain";
-	pixel_y = 32
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cp" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -756,13 +388,6 @@
 "cr" = (
 /turf/simulated/floor/exoplanet/ice,
 /area/cadiaoutpost/oa/theforest)
-"cs" = (
-/obj/effect/floor_decal/carpet/green,
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ct" = (
 /obj/structure/closet/crate,
 /obj/item/stack/barbwire,
@@ -772,14 +397,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"cu" = (
-/obj/effect/floor_decal/turf/cafe2,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cv" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -819,23 +436,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"cB" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"cC" = (
-/obj/machinery/door/airlock/glass_command/rt{
-	color = null;
-	maxhealth = 900
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "cD" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/theforest)
@@ -881,35 +481,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"cZ" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 10
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 8
-	},
-/obj/effect/floor_decal/carpet/green,
-/obj/effect/floor_decal/carpet/green{
-	dir = 10
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "da" = (
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
-"db" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/bed/chair/office/dark{
-	dir = 8;
-	icon_state = "officechair_dark_preview"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "dc" = (
 /obj/machinery/light{
 	dir = 8;
@@ -931,124 +505,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"dy" = (
-/obj/structure/flora/ausbushes/fullgrass,
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/oa/theforest)
-"dE" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/lighter/zippo,
-/obj/item/flame/candle/dinner,
-/obj/item/flame/candle/dinner,
-/obj/item/flame/candle/dinner,
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"ec" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 8
-	},
-/obj/structure/bed/chair/office/dark{
-	dir = 4;
-	icon_state = "officechair_dark_preview"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ep" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"eq" = (
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 4
-	},
-/area/cadiaoutpost/oa/shuttle/aquila)
-"es" = (
-/obj/machinery/firealarm{
-	pixel_x = -30
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"ew" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"eS" = (
-/obj/machinery/newscaster{
-	pixel_w = 2;
-	pixel_x = 31
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "eV" = (
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"eW" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/reagent_containers/food/drinks/coffeecup/metal,
-/obj/item/reagent_containers/food/drinks/coffeecup/metal,
-/obj/item/reagent_containers/food/drinks/coffeecup/metal,
-/obj/item/reagent_containers/food/drinks/coffeecup/metal,
-/obj/item/reagent_containers/food/drinks/coffeecup/metal,
-/obj/item/reagent_containers/food/drinks/coffeecup/metal,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/fork/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
-/obj/item/material/kitchen/utensil/spoon/plastic,
-/obj/item/material/kitchen/utensil/knife/plastic,
-/obj/item/material/kitchen/utensil/knife/plastic,
-/obj/item/material/kitchen/utensil/knife/plastic,
-/obj/item/material/kitchen/utensil/knife/plastic,
-/obj/item/material/kitchen/utensil/knife/plastic,
-/obj/item/material/kitchen/utensil/knife/plastic,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"fB" = (
-/obj/item/card/id/innkey3{
-	name = "Master Key";
-	req_access = list(331);
-	access = list(331,330,225)
-	},
-/obj/item/card/id/ring/administrator,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"ga" = (
-/obj/machinery/light,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ge" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -1078,27 +546,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"hN" = (
-/obj/machinery/light{
-	name = "the rogue trader's floating light.";
-	desc = "A special anti-gravity light fixture."
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"hV" = (
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ii" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/snow,
@@ -1112,11 +559,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"in" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/landmark/start/envoy,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "is" = (
 /obj/structure/flora/tree/snowy,
 /turf/simulated/floor/snow,
@@ -1161,14 +603,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"kg" = (
-/obj/effect/floor_decal/turf/cafe2,
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "kq" = (
 /obj/machinery/button/remote/blast_door{
 	id = "bridgeflooridlock";
@@ -1178,14 +612,6 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"kC" = (
-/obj/structure/table/steel_reinforced,
-/obj/item/paper_bin,
-/obj/item/pen,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "kD" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -1195,13 +621,6 @@
 /obj/machinery/power/port_gen/pacman,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"kU" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/snacks/milosoup,
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "kV" = (
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -1260,26 +679,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
-"mx" = (
-/obj/structure/curtain/open/bed,
-/obj/effect/floor_decal/carpet/purple{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/item/bedsheet/captain,
-/obj/structure/bed{
-	desc = "This is used to lie in, sleep in or strap on.";
-	icon_state = "bed_padding1";
-	name = "comfy bed"
-	},
-/turf/simulated/floor/carpet/purple,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"my" = (
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "mC" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -1291,28 +690,6 @@
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/theforest)
-"mJ" = (
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 8
-	},
-/obj/effect/floor_decal/carpet/blue2,
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 10
-	},
-/obj/item/modular_computer/console/preset/command,
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"nh" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/item/melee/chain/inqcs/gold,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "nm" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -1320,12 +697,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"nz" = (
-/obj/machinery/computer/evaccogitator,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "nF" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1334,18 +705,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"nG" = (
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"nW" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/snacks/loadedsteak,
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "on" = (
 /obj/structure/railing{
 	dir = 4
@@ -1354,16 +713,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"oy" = (
-/obj/effect/floor_decal/turf/cafe2,
-/obj/structure/toilet{
-	color = "yellow";
-	desc = "Golden... Throne?";
-	dir = 8;
-	icon_state = "toilet00"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "oC" = (
 /obj/structure/closet/crate,
 /obj/item/melee/trench_axe,
@@ -1380,15 +729,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"pk" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ps" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1404,23 +744,6 @@
 /obj/item/pickaxe/diamond,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-"pB" = (
-/obj/structure/closet/secure_closet/captains{
-	color = "grey"
-	},
-/obj/item/clothing/suit/armor/rtdrip,
-/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,
-/obj/item/clothing/glasses/cadiangoggles/elite,
-/obj/item/clothing/glasses/monocle,
-/obj/item/storage/pill_bottle/dexalin_plus,
-/obj/item/storage/pill_bottle/kelotane,
-/obj/item/storage/pill_bottle/bicaridine,
-/obj/item/storage/pill_bottle/antitox,
-/obj/item/clothing/accessory/medal/iron/Administratum,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "pF" = (
 /obj/structure/mirror{
 	pixel_y = -32
@@ -1444,32 +767,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"qm" = (
-/obj/item/modular_computer/console/preset/command,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"qo" = (
-/obj/structure/window/reinforced,
-/obj/structure/torchwall{
-	pixel_y = 30
-	},
-/obj/effect/floor_decal/turf/cafe2,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "qu" = (
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
-"qE" = (
-/obj/structure/sign/stainedglass1{
-	pixel_y = 30
-	},
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "re" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1507,14 +808,6 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-"sC" = (
-/obj/machinery/photocopier{
-	color = "grey"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "sJ" = (
 /obj/machinery/light{
 	dir = 1;
@@ -1528,11 +821,13 @@
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
 "td" = (
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 4
+/obj/machinery/light/small{
+	dir = 8
 	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/turf/space,
 /area/cadiaoutpost/oa/shuttle/aquila)
 "ub" = (
 /obj/machinery/firealarm{
@@ -1543,44 +838,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"uc" = (
-/obj/structure/table/steel_reinforced,
-/obj/machinery/chemical_dispenser/bar_coffee/full,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "uA" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
-"uR" = (
-/obj/effect/floor_decal/turf/cafe2,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"uV" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "uW" = (
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"vn" = (
-/obj/structure/toilet{
-	color = "yellow";
-	desc = "Golden... Throne?";
-	dir = 8;
-	icon_state = "toilet00"
-	},
-/obj/effect/floor_decal/turf/cafe2,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "vo" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -1606,35 +871,6 @@
 /obj/machinery/teleport/station,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-"vD" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"vN" = (
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle"
-	},
-/obj/item/flame/candle{
-	desc = "A small tallow candle. It burn fitfully and give off an acrid stench."
-	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"wg" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "wi" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -1648,15 +884,6 @@
 "wm" = (
 /turf/space,
 /area/cadiaoutpost/oa/theforest)
-"wr" = (
-/obj/machinery/light,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"wv" = (
-/turf/simulated/shuttle/wall/corner/smoothwhite,
-/area/cadiaoutpost/oa/shuttle/aquila)
 "wB" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -1666,30 +893,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"wG" = (
-/obj/effect/floor_decal/turf/cafe2,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/towel/fleece{
-	desc = "The beloved golden towel of Rogue Trader, woven of smoothiest silk, waiting it's time to wipe the noble body of it's owner.";
-	name = "golden silk towel"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"wK" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/computer/requisitioncogitator,
-/obj/machinery/button/remote/blast_door/lever{
-	id = "outergate1";
-	name = "PDF DEPOT LEVER";
-	pixel_x = 30;
-	pixel_y = -10
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "xp" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -1702,12 +905,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "xw" = (
-/obj/structure/shuttle/engine/propulsion,
-/turf/simulated/open,
-/turf/simulated/shuttle/wall/corner/smoothwhite{
-	icon_state = "corner_white";
-	dir = 6
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
 	},
+/turf/space,
 /area/cadiaoutpost/oa/shuttle/aquila)
 "xz" = (
 /obj/effect/floor_decal/newcorner/plating{
@@ -1755,11 +957,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"yd" = (
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "yh" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -1791,23 +988,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"zb" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"zg" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "zS" = (
 /obj/machinery/light{
 	dir = 8;
@@ -1825,13 +1005,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"Ax" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/random/loot/goodweapon,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "AI" = (
 /obj/machinery/door/airlock/cone,
 /obj/item/taperoll/engineering/applied,
@@ -1850,42 +1023,10 @@
 /mob/living/simple_animal/hostile/bear,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"Be" = (
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 8
-	},
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/paper_bin,
-/obj/item/pen/multi,
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "Bq" = (
 /obj/structure/sink/puddle,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"Bu" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/window/reinforced{
-	dir = 4;
-	icon_state = "rwindow"
-	},
-/obj/structure/window/reinforced,
-/obj/structure/showcase{
-	desc = "That is the chassis of an ancient and heretical being known as a Man of Iron. A very pricey artifact of a time long feared. This one is on a stand with the empty carcass. Maybe even a replica? Only Trader and Magos know the truth. While you look at it, a spark of memories fills your mind and you can hear it. This thing, it says ''EXTERMINATE!''";
-	dir = 4;
-	icon = 'icons/mob/animal.dmi';
-	icon_state = "behemoth"
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	icon_state = "rwindow"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "BA" = (
 /obj/item/paper/crumpled/bloody{
 	desc = "It appears this region is not as vacant as the Captain thought - the Emperor’s reach extends beyond even the frontier... we won’t last long once they find out that deserters are camped at their front door. Once the snow clears we should be able to move out from the south back across the mountains.";
@@ -1911,30 +1052,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"Cq" = (
-/obj/effect/landmark/start{
-	name = "Rogue Trader"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "Cw" = (
 /obj/effect/floor_decal/newcorner/step,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
-"Dg" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/machinery/recharger,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "Dp" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -1962,10 +1085,8 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "FM" = (
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 4000;
-	name = "locked room";
-	req_access = list(212)
+/obj/machinery/door/unpowered/inn{
+	name = "door"
 	},
 /turf/simulated/floor/wood{
 	color = "grey"
@@ -1998,18 +1119,6 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
-"IQ" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/card/id/innkey2{
-	access = list(212);
-	name = "rusty key 3"
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/villageinside)
 "Jx" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -2023,101 +1132,12 @@
 /obj/item/crowbar,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
-"KP" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/filingcabinet,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "LB" = (
 /obj/machinery/door/airlock/glass_external{
 	color = null
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
-"LE" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = -5;
-	pixel_y = 5
-	},
-/obj/item/device/flashlight/upgraded,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Mt" = (
-/obj/machinery/light,
-/obj/machinery/firealarm{
-	pixel_y = -30
-	},
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"My" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/glass_command/rt{
-	color = null;
-	maxhealth = 900
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Nd" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 6
-	},
-/obj/effect/floor_decal/carpet/green,
-/obj/effect/floor_decal/carpet/green{
-	dir = 4
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 6
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"NY" = (
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 8
-	},
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 1
-	},
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 9
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Oh" = (
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 1
-	},
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 4
-	},
-/obj/effect/floor_decal/carpet/blue2{
-	dir = 5
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "Ox" = (
 /obj/machinery/light{
 	dir = 4;
@@ -2135,24 +1155,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"Pn" = (
-/obj/structure/bed/chair/throne{
-	desc = "Fit for a king... or a uh... rogue trader";
-	name = "Rogue Trader's Throne"
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 1
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Pq" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 12
-	},
-/obj/effect/floor_decal/turf/cafe2,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "PC" = (
 /obj/structure/undies_wardrobe,
 /obj/item/clothing/suit/armor/guardsman/mercenary{
@@ -2168,24 +1170,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"Qk" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 4
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 5
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 1
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 5
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "Qp" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating{
@@ -2207,16 +1191,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"Rt" = (
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "RA" = (
-/obj/machinery/door/airlock/command{
-	desc = "GET TO DAT SHUTTLE!.";
-	name = "Aquila Lander"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
 "RE" = (
@@ -2272,50 +1250,12 @@
 "TR" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/bridge/hallway)
-"Uj" = (
-/obj/effect/floor_decal/turf/barnew,
-/obj/structure/displaycase,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"UA" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/item/cell/lasgun/hotshot,
-/obj/item/cell/lasgun/hotshot,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "UT" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
-"VE" = (
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"VF" = (
-/obj/effect/floor_decal/carpet/green{
-	dir = 9
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 8
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 1
-	},
-/obj/effect/floor_decal/carpet/green{
-	dir = 9
-	},
-/turf/simulated/floor/carpet/green,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "Wq" = (
 /obj/structure/railing{
 	dir = 8
@@ -2325,7 +1265,13 @@
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
 "Wt" = (
-/obj/structure/shuttle/window,
+/obj/effect/shuttle_landmark/ferry/aquila_castle,
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 1;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -2351,26 +1297,6 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"WX" = (
-/obj/machinery/power/apc{
-	dir = 4;
-	icon_state = "apc0";
-	pixel_x = 32;
-	pixel_y = 0
-	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
-"Xr" = (
-/obj/structure/telearray/centreright,
-/turf/simulated/floor/wood{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "XS" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -2382,23 +1308,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"Yb" = (
-/obj/structure/railing,
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/oa/theforest)
 "Yp" = (
 /obj/item/ammo_box/flares,
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
-"YI" = (
-/obj/machinery/computer/bountycogitator,
-/turf/simulated/floor/carpet/blue2,
-/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ZC" = (
 /obj/item/stack/thrones2,
 /obj/item/stack/thrones2,
@@ -28382,14 +27297,14 @@ cJ
 cJ
 cJ
 cJ
-cJ
-ai
-cJ
-cJ
-cJ
-cD
-cJ
-cJ
+RA
+RA
+RA
+RA
+RA
+RA
+au
+ep
 ep
 cD
 cD
@@ -28636,17 +27551,17 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-eq
-an
-an
-an
-an
-aw
-Yb
+RA
+RA
+RA
+RA
+md
+af
+as
+af
+md
+xw
+aD
 aD
 rr
 rr
@@ -28661,23 +27576,23 @@ dx
 rr
 Qp
 cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
 Qp
 Qp
-GO
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+rm
 cD
 cD
 cD
@@ -28892,15 +27807,15 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
+RA
+RA
 td
-an
-an
-an
 md
+RA
 md
-md
+as
+as
+as
 md
 RA
 aD
@@ -28932,7 +27847,7 @@ bK
 bK
 bK
 bK
-bK
+Qp
 Qp
 GO
 cD
@@ -29149,17 +28064,17 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
+RA
+aa
 Wt
-bJ
+md
 aA
 md
 md
 md
 md
 md
-RA
+aB
 aD
 aD
 LB
@@ -29189,7 +28104,7 @@ bK
 bK
 bK
 bK
-bK
+Qp
 Qp
 GO
 cD
@@ -29406,15 +28321,15 @@ cJ
 cJ
 aF
 cJ
-cJ
-cJ
+RA
+RA
 aO
-an
-an
-an
 md
+RA
 md
-md
+as
+as
+as
 md
 RA
 aD
@@ -29446,7 +28361,7 @@ bK
 bK
 bK
 bK
-bK
+Qp
 Qp
 GO
 cD
@@ -29664,17 +28579,17 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-wv
-an
-an
-an
-an
+RA
+RA
+RA
+RA
+md
+at
+as
+at
+md
 xw
-cn
+aD
 aD
 rr
 rr
@@ -29703,7 +28618,7 @@ bK
 bK
 bK
 bK
-bK
+Qp
 Qp
 GO
 cD
@@ -29924,14 +28839,14 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cD
-cJ
-cD
+RA
+RA
+RA
+RA
+RA
+RA
+au
+UT
 UT
 cD
 cD
@@ -29960,7 +28875,7 @@ bK
 bK
 bK
 bK
-bK
+Qp
 Qp
 GO
 cD
@@ -30217,7 +29132,7 @@ bK
 bK
 bK
 bK
-bK
+Qp
 Qp
 GO
 cD
@@ -30474,9 +29389,9 @@ bK
 bK
 bK
 bK
-bK
 Qp
-GO
+Qp
+aJ
 cD
 cD
 cD
@@ -30532,7 +29447,7 @@ kV
 kV
 bh
 cJ
-aX
+cJ
 cJ
 cJ
 cJ
@@ -30731,9 +29646,9 @@ bK
 bK
 bK
 bK
-bK
 Qp
-GO
+Qp
+aJ
 cD
 cD
 cD
@@ -30988,9 +29903,9 @@ bK
 bK
 bK
 bK
-bK
 Qp
-rm
+Qp
+aJ
 cD
 cD
 cD
@@ -31231,20 +30146,20 @@ dx
 rr
 Qp
 Qp
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
+Qp
 Qp
 Qp
 rm
@@ -31808,7 +30723,7 @@ aF
 cJ
 cJ
 bh
-IQ
+RN
 kV
 kV
 kV
@@ -33288,19 +32203,19 @@ rr
 cD
 cD
 AZ
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -33545,19 +32460,19 @@ rr
 cD
 cD
 AZ
-nG
-Ax
-nh
-Ax
-UA
-bm
-nG
-bd
-as
-aB
-Bu
-vN
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -33802,19 +32717,19 @@ rr
 cD
 cD
 AZ
-nG
-aC
-aG
-aG
-aG
-aG
-nG
-Uj
-yd
-yd
-yd
-ga
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 AZ
 AZ
@@ -34059,24 +32974,24 @@ rr
 cD
 cD
 AZ
-nG
-VE
-aG
-aG
-aG
-aG
-nG
-KP
-yd
-yd
-yd
-yd
-nG
-nG
-nG
-nG
-nG
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -34312,28 +33227,28 @@ rr
 dx
 Ck
 dx
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-bs
-nG
-nG
-nG
-Dg
-yd
-yd
-yd
-yd
-nG
-nG
-at
-uR
-wG
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -34569,28 +33484,28 @@ rr
 jM
 Ck
 cm
-nG
-qm
-es
-bn
-aG
-aG
-aG
-aG
-wr
-nG
-ew
-yd
-yd
-yd
-yd
-yd
-nG
-nG
-cu
-uR
-uR
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -34826,28 +33741,28 @@ zS
 dx
 Ck
 dx
-bf
-aG
-aG
-VF
-bZ
-ec
-bZ
-cZ
-aG
-af
-co
-yd
-NY
-Be
-mJ
-Mt
-nG
-nG
-oy
-uR
-kg
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 AZ
 cD
@@ -35083,29 +33998,29 @@ bY
 dx
 Ck
 dx
-nG
-pk
-aG
-aR
-dE
-kU
-aW
-cb
-aG
-af
-co
-yd
-aI
-by
-ab
-yd
-nG
-nG
-nG
-bO
-nG
-nG
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -35340,29 +34255,29 @@ dx
 dx
 Ck
 dx
-nG
-aG
-aG
-aR
-vD
-vD
-Rt
-cb
-aG
-cC
-yd
-yd
-aI
-YI
-bp
-yd
-nG
-yd
-yd
-yd
-uV
-yd
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -35597,30 +34512,30 @@ dx
 dx
 Ck
 dx
-nG
-aG
-hN
-Pn
-nW
-vD
-aW
-cs
-wg
-My
-aa
-yd
-aI
-wK
-ab
-yd
-nG
-fB
-yd
-yd
-yd
-aT
-nG
-dy
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 cD
 cD
 cD
@@ -35854,29 +34769,29 @@ dx
 dx
 Ck
 dx
-nG
-aG
-aG
-aR
-vD
-av
-Rt
-cl
-aG
-af
-ba
-cB
-Oh
-hV
-aj
-yd
-nG
-pB
-yd
-Cq
-yd
-bz
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -36111,29 +35026,29 @@ bY
 dx
 Ck
 dx
-nG
-pk
-aG
-aR
-bD
-aJ
-aW
-cl
-aG
-af
-co
-yd
-yd
-yd
-zg
-yd
-nG
-nz
-yd
-yd
-yd
-Xr
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -36366,31 +35281,31 @@ cW
 de
 Ox
 nF
-ci
-nF
-cg
-wg
-wg
-Qk
-zb
-db
-zb
-Nd
-aG
-nG
-ew
-yd
-yd
-yd
-zg
-yd
-nG
-cc
-yd
-yd
-yd
-bt
-nG
+ce
+dx
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -36625,29 +35540,29 @@ RT
 rY
 ce
 dx
-nG
-aG
-aG
-aG
-eW
-kC
-uc
-WX
-wr
-nG
-aL
-sC
-yd
-yd
-eS
-cB
-ca
-cB
-cB
-mx
-cB
-bW
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -36882,29 +35797,29 @@ RT
 dx
 Ck
 dx
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-cC
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
-nG
+rr
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -37148,14 +36063,14 @@ AZ
 AZ
 AZ
 AZ
-nG
-aH
-my
-au
-nG
-qo
-at
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 AZ
 AZ
@@ -37405,14 +36320,14 @@ cD
 cD
 cD
 AZ
-nG
-bL
-in
-my
-bO
-uR
-uR
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -37662,14 +36577,14 @@ cD
 cD
 cD
 AZ
-nG
-LE
-my
-bU
-nG
-Pq
-vn
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD
@@ -37919,14 +36834,14 @@ cD
 cD
 cD
 AZ
-nG
-nG
-nG
-qE
-nG
-nG
-nG
-nG
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 AZ
 cD
 cD

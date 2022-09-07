@@ -1868,6 +1868,14 @@
 	color = "grey"
 	},
 /obj/structure/closet/crate,
+/obj/item/card/id/innkey3{
+	access = list(333,211);
+	name = "monastary key"
+	},
+/obj/item/card/id/innkey3{
+	access = list(333,211);
+	name = "monastary key"
+	},
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
 "hB" = (
@@ -19336,11 +19344,11 @@ PI
 PI
 PI
 bf
+PI
 bf
 bf
 bf
-bf
-bf
+PI
 bf
 bf
 PI
