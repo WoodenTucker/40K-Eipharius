@@ -158,6 +158,7 @@
 /obj/item/gun/projectile/genmessorp
 	name = "Genmessor stubpistol"
 	icon_state = "sheetp"
+	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
 	caliber = "9mm"
 	load_method = MAGAZINE

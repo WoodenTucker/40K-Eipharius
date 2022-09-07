@@ -4,7 +4,7 @@
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
-	name = "\improper Boscolet Pattern Stub Rifle"
+	name = "Boscolet Pattern Stub Rifle"
 	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
 	icon_state = "boltaction"
 	item_state = "boltaction"
@@ -78,7 +78,7 @@
 		qdel(src)
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
-	name = "\improper Boscolet Pattern Stub Rifle"
+	name = "Boscolet Pattern Stub Rifle"
 	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"

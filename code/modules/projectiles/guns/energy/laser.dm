@@ -230,6 +230,25 @@ obj/item/gun/energy/retro
 		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
+/obj/item/gun/energy/las/lasgun/shitty
+	name = "Portsmith W. Lasrifle"
+	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their guard's lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
+	icon_state = "semir"
+	item_state = "lasgun"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 12
+	one_hand_penalty = 3.5
+	fire_delay = 8
+	accuracy = -5
+	move_delay = 5
+	charge_cost = 130
+	wielded_item_state = "lasgun-wielded" //use semir when u wanna bug fix
+	charge_meter = FALSE
+	sales_price = null
+	cell_type = /obj/item/cell/lasgun/small
+	ammoType = /obj/item/cell/lasgun/small
+
 /obj/item/gun/energy/las/lasgun/rare
 	name = "Masterwork Kantrael M36 Lasgun"
 	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has modified heatsink and rearranged crystal assembly."
@@ -403,7 +422,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 30 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "lascar"
-	accuracy = -4
+	accuracy = -4.5
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=180),
@@ -465,6 +484,19 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	charge_cost = 80
+
+/obj/item/gun/energy/las/laspistol/shitty
+	name = "Portsmith W. Laspistol"
+	desc = "The Laspistol variant of the Portsmith W. Lasrifle. Cheap, slow but better than nothing. Uses small lascells"
+	icon_state = "semip"
+	item_state = "laspistol"
+	accuracy = -5.5
+	fire_delay = 4
+	charge_cost = 115
+	sales_price = null
+	charge_meter = FALSE
+	cell_Type = /obj/item/cell/lasgun/small
+	ammoType = /obj/item/cell/lasgun/small
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
