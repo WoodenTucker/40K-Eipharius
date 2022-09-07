@@ -49,7 +49,10 @@
 
 
 /obj/item/metal_shiv
-	name = "Metal shiv"
+	name = "metal shiv"
+	force = 15
+	sharp = 1
+	weapon_speed_delay = 4
 	icon = 'icons/obj/crafting.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	desc = "This is a metal shiv. It can be made into many things."

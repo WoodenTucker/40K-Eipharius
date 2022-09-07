@@ -14,4 +14,4 @@
 		M.take_organ_damage(0, strength * 0.1)
 		M.adjustToxLoss(strength)
 
-	M.take_overall_damage(0, rand(1,10))
+	M.take_overall_damage(0, rand(1,2))

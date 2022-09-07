@@ -25,11 +25,20 @@
 	density = 1
 
 /obj/machinery/door/unpowered/inn
-	name = "inn door"
+	name = "wooden door"
 	icon = 'icons/obj/doors/door_cave2.dmi'
 	icon_state = "door1"
 	autoclose = 0
 	normalspeed = 0
+
+/obj/machinery/door/unpowered/inn/berryfarm
+	name = "goodberry farm"
+	maxhealth = 2500
+	req_access = list(241)
+
+/obj/machinery/door/unpowered/inn/deadwood
+	name = "deadwood estate"
+	req_access = list(244)
 
 /obj/machinery/door/unpowered/inn/interior
 	name = "interior inn door"

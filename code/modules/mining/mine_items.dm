@@ -139,8 +139,8 @@
 	icon_state = "shovel"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 8
-	throwforce = 4
+	force = 15
+	throwforce = 10
 	item_state = "shovel"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
@@ -155,8 +155,19 @@
 	desc = "A small tool for digging and moving dirt."
 	icon_state = "spade"
 	item_state = "spade"
-	force = 5.0
-	throwforce = 7.0
+	force = 8
+	throwforce = 7
+	w_class = ITEM_SIZE_SMALL
+
+/obj/item/shovel/krieg
+	name = "krieg shovel"
+	desc = "A small tool for digging and moving dirt."
+	icon_state = "entrenching_tool"
+	item_state = "trench"
+	force = 25
+	throwforce = 25
+	block_chance = 55
+	weapon_speed_delay = 7
 	w_class = ITEM_SIZE_SMALL
 
 
