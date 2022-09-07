@@ -8676,6 +8676,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"HA" = (
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/turf/checkers/two,
+/obj/random/loot/lightlasgun,
+/obj/random/loot/lightlasgun,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "HC" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -11827,7 +11834,7 @@
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/random/loot/heavymelee,
 /obj/random/loot/heavymelee,
-/obj/random/loot/heavymelee,
+/obj/item/melee/chain/inqcs/guard,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "Uj" = (
@@ -12405,7 +12412,6 @@
 "WD" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
 /obj/random/loot/lightstubber,
 /turf/simulated/floor/tiled/dark,
@@ -36128,7 +36134,7 @@ PI
 PI
 eD
 dm
-HN
+HA
 aY
 Lj
 aY
