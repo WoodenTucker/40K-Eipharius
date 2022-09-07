@@ -3,12 +3,12 @@
 
 /decl/hierarchy/supply_pack/supply/food
 	name = "Kitchen supply crate"
-	contains = list(/obj/item/reagent_containers/food/condiment/flour = 4,
+	contains = list(/obj/item/reagent_containers/food/condiment/flour = 6,
 					/obj/item/reagent_containers/food/drinks/milk = 4,
 					/obj/item/reagent_containers/food/drinks/soymilk = 2,
 					/obj/item/storage/fancy/egg_box = 2,
-					/obj/item/reagent_containers/food/snacks/tofu = 2,
-					/obj/item/reagent_containers/food/snacks/meat = 2
+					/obj/item/reagent_containers/food/snacks/tofu = 4,
+					/obj/item/reagent_containers/food/snacks/meat = 4
 					)
 	cost = 10
 	containertype = /obj/structure/closet/crate/freezer

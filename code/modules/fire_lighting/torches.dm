@@ -121,7 +121,7 @@
 	if(lighttorch)
 		if(lighttorch.lit)
 			icon_state = "torchwall1"
-			set_light(7, 5,"#E38F46")
+			set_light(6, 3,"#E38F46")
 
 		else
 			icon_state = "torchwall0"

@@ -21,7 +21,7 @@
 	see_in_dark = 10
 	wander = 1
 
-	speed = 1.6 // Higher number means slower.
+	speed = 1.8 // Higher number means slower.
 
 	min_gas = null
 	max_gas = null
@@ -139,7 +139,7 @@
 	attacktext = "sloshes"
 	see_in_dark = 6
 
-	speed = 1.7
+	speed = 1.9
 
 /mob/living/simple_animal/hostile/smalldemon/zygote/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -177,7 +177,7 @@
 	attacktext = "crushes"
 	see_in_dark = 6
 
-	speed = 1.6
+	speed = 1.8
 
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -215,7 +215,7 @@
 	attacktext = "crushes"
 	see_in_dark = 6
 
-	speed = 1.4
+	speed = 1.5
 
 /mob/living/simple_animal/hostile/smalldemon/bloodletter/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -255,7 +255,7 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.5
+	speed = 1.7
 
 /mob/living/simple_animal/hostile/smalldemon/plague
 	name = "Plague Beast"
@@ -275,7 +275,7 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.5
+	speed = 1.7
 
 /mob/living/simple_animal/hostile/smalldemon/chaos
 	name = "Chaos Spawn"
@@ -295,4 +295,4 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.4
+	speed = 1.6

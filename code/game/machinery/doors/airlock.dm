@@ -636,11 +636,6 @@
 	req_access = list()
 	req_one_access = list(access_hos, access_guard_armory)
 
-/obj/machinery/door/airlock/highsecurity/guardarmory/lord
-	name = "Secure Vault"
-	maxhealth = 5000
-	req_access = list(331)
-
 /obj/machinery/door/airlock/highsecurity/guardarmory/bolted  //Not 100% sure if this is redundant.
 
 	icon_state = "door_locked"

@@ -65,7 +65,7 @@
 	icon_state = "cane_sword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	block_chance = 70
-	force = 32
+	force = 40
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_NORMAL

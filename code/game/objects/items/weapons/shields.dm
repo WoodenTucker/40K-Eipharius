@@ -95,35 +95,15 @@
 	else
 		..()
 
-
-/obj/item/shield/riot/metal
-	name = "metal shield"
-	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "shieldmetal"
-	item_state = "riot"
-	base_block_chance = 65
-	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	slot_flags = SLOT_BACK
-	force = 12
-	throwforce = 5.0
-	throw_speed = 1
-	throw_range = 4
-	w_class = ITEM_SIZE_HUGE
-	origin_tech = list(TECH_MATERIAL = 2)
-	matter = list(DEFAULT_WALL_MATERIAL = 5000)
-	attack_verb = list("shoved", "bashed")
-
-
 /obj/item/shield/buckler
 	name = "buckler"
 	desc = "A wooden buckler used to block sharp things from entering your body back in the day.."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "buckler"
 	slot_flags = SLOT_BACK
-	force = 18
-	throwforce = 10
-	base_block_chance = 40
+	force = 8
+	throwforce = 8
+	base_block_chance = 60
 	throw_speed = 10
 	throw_range = 20
 	w_class = ITEM_SIZE_HUGE
