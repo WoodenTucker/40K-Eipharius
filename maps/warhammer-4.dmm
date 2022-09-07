@@ -342,7 +342,7 @@
 /turf/simulated/floor/carpet/green,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "aX" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(212);
 	name = "rusty key 3"
 	},
@@ -1107,7 +1107,7 @@
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/theforest)
 "fB" = (
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Master Key";
 	req_access = list(331);
 	access = list(331,330,225)
@@ -2114,7 +2114,7 @@
 /obj/structure/table/woodentable{
 	color = "#36261B"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(212);
 	name = "rusty key 3"
 	},

@@ -607,7 +607,7 @@
 "ce" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/cult/talisman,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";
@@ -6752,7 +6752,7 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "JP" = (
 /obj/structure/cult/talisman,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";
@@ -9082,7 +9082,7 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "XJ" = (
 /obj/structure/cult/talisman,
-/obj/item/card/id/innkey1{
+/obj/item/card/id/ironkey{
 	access = list(302);
 	desc = "This key is required to access the Dropship and Inquisition Base.";
 	name = "inquisitorial key";

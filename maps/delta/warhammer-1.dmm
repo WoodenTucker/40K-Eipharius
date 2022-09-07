@@ -1409,7 +1409,7 @@
 	name = "gentlewomans suit"
 	},
 /obj/item/clothing/shoes/laceup,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -3737,7 +3737,7 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/wrench,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -4769,7 +4769,7 @@
 /obj/item/mortar_shell/flare,
 /obj/item/mortar_shell/flare,
 /obj/structure/table/rack/dark,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(330);
 	name = "Armory Key";
 	req_access = list(330)
@@ -5039,15 +5039,15 @@
 /area/cadiaoutpost/oa/caves/dark)
 "un" = (
 /obj/structure/closet/cabinet,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -5796,7 +5796,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "xm" = (
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -6551,7 +6551,7 @@
 	icon_state = "toilet00"
 	},
 /obj/effect/decal/cleanable/poo,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(210);
 	name = "rusty key 1"
 	},
@@ -6979,7 +6979,7 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/item/clothing/accessory/holster/armpit,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -7317,7 +7317,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "DJ" = (
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -7824,7 +7824,7 @@
 "FF" = (
 /obj/effect/floor_decal/turf/necro1,
 /obj/necrofleshmouth,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -9023,7 +9023,7 @@
 	dir = 8;
 	icon_state = "toilet00"
 	},
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -10265,7 +10265,7 @@
 "Px" = (
 /obj/effect/floor_decal/newcorner/blue/solid,
 /obj/structure/closet/secure_closet/CMO,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},
@@ -10768,7 +10768,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/item/flame/candle/dinner,
 /obj/item/material/sword/commissword,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(331,330,225);
 	name = "Master Key";
 	req_access = list(331)
@@ -11064,7 +11064,7 @@
 /obj/random/loot/sidearmammo,
 /obj/random/loot/sidearmammo,
 /obj/item/clothing/accessory/holster/armpit,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},
@@ -11132,7 +11132,7 @@
 	color = "grey"
 	},
 /obj/effect/floor_decal/turf/checkers/two,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(330);
 	name = "Armory Key";
 	req_access = list(330)
@@ -11337,7 +11337,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Ud" = (
 /obj/effect/floor_decal/turf/necro1,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(247);
 	name = "Daemon Key"
 	},
@@ -12430,7 +12430,7 @@
 	dir = 4
 	},
 /obj/structure/curtain/open/privacy,
-/obj/item/card/id/innkey2{
+/obj/item/card/id/goldkey{
 	access = list(225);
 	name = "golden key"
 	},

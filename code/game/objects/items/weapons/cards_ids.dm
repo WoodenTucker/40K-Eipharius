@@ -404,26 +404,48 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "civ"
 	//job_access_type = /datum/job/assistant
 
-/obj/item/card/id/innkey1
+/////Ironkey - Common keys for the poor citizens to use!/////
+
+/obj/item/card/id/ironkey
 	name = "inn room key 1"
 	desc = "A key that opens room 1 of the inn"
 	icon_state = "key2"
 	access = list(access_inn1)
 	grab_sound = 'sound/items/keyring_up.ogg'
 
-/obj/item/card/id/innkey2
+/obj/item/card/id/ironkey/berryfarm
+	name = "old key"
+	desc = "An old weathered key with a pile of berries etched into it."
+	access = list(241)
+
+/obj/item/card/id/ironkey/deadwood
+	name = "old key"
+	desc = "An old weathered key with a dead barren tree etched into it."
+	access = list(244)
+
+/////Goldkey - Rare keys for the rich citizens to use!/////
+
+/obj/item/card/id/goldkey
 	name = "inn room key 2"
 	desc = "A key that opens room 2 of the inn"
 	icon_state = "key3"
 	access = list(access_inn2)
 	grab_sound = 'sound/items/keyring_up.ogg'
 
-/obj/item/card/id/innkey3
+/////Bigkey - Fat keys with very important purpose!/////
+
+/obj/item/card/id/bigkey
 	name = "inn room key 3"
 	desc = "A key that opens room 3 of the inn"
 	icon_state = "key4"
 	access = list(access_inn3)
 	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/bigkey/masterkey
+	name = "master key"
+	desc = "A shiny, fat key that has a shiny, fat purpose for the lord."
+	access = list(225,330,331)
+	req_access = list(331)
 
 /obj/item/card/id/civilian/bartender
 	job_access_type = /datum/job/bartender

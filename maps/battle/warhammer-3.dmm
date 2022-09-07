@@ -3404,7 +3404,7 @@
 	pixel_w = 2;
 	pixel_x = 31
 	},
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Master Key";
 	req_access = list(331);
 	access = list(331,330,225)
@@ -3970,7 +3970,7 @@
 /obj/structure/closet/secure_closet/hop{
 	color = "grey"
 	},
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Master Key";
 	req_access = list(331);
 	access = list(331,330,225)
@@ -5179,7 +5179,7 @@
 "DS" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/structure/table/steel,
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	access = list(333,211);
 	name = "monastary key"
 	},

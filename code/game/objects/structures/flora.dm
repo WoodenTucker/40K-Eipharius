@@ -279,6 +279,8 @@
 	icon_state = "ppflowers_[rand(1, 4)]"
 
 /obj/structure/flora/ausbushes/sparsegrass
+	name = "sparse grass"
+	desc = "Thin hope poking through the stony soil, it will keep the grox fed another night."
 	icon_state = "sparsegrass_1"
 
 /obj/structure/flora/ausbushes/sparsegrass/New()
@@ -293,6 +295,8 @@
 	icon_state = "fullgrass_[rand(1, 3)]"
 
 /obj/structure/flora/ausbushes/meatshroom
+	name = "meatshroom"
+	desc = "The spores for this mushroom spread with hiveworld migrants, maturing into a muscled stalk and heavy, breathing lamella thick with seed."
 	icon_state = "meatshroom1"
 
 /obj/structure/flora/ausbushes/meatshroom/New()
@@ -300,6 +304,8 @@
 	icon_state = "meatshroom[rand(1, 3)]"
 
 /obj/structure/flora/ausbushes/lrock
+	name = "rock"
+	desc = "Watch your head in a hiveworld."
 	icon_state = "lrock1"
 
 /obj/structure/flora/ausbushes/lrock/New()

@@ -1885,7 +1885,7 @@
 	},
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "qo" = (
-/obj/item/card/id/innkey3{
+/obj/item/card/id/bigkey{
 	name = "Master Key";
 	req_access = list(331);
 	access = list(331,330,225)

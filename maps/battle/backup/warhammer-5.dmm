@@ -142,7 +142,7 @@
 "cO" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/turf/simulated/floor/wood,/area/inqmoon)
 "cP" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/marble,/obj/machinery/computer/shuttle_control/ferry/inquisition,/turf/simulated/floor/wood,/area/inqmoon)
 "cQ" = (/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/carpet/red,/area/centcom)
-"cR" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/marble,/obj/item/card/id/innkey1{access = list(999, 998, 997, 996, 995, 994, 993, 992, 991); desc = "A key that opens all doors that have universal access."; name = "Universal key"},/turf/simulated/floor/wood,/area/inqmoon)
+"cR" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/marble,/obj/item/card/id/ironkey{access = list(999, 998, 997, 996, 995, 994, 993, 992, 991); desc = "A key that opens all doors that have universal access."; name = "Universal key"},/turf/simulated/floor/wood,/area/inqmoon)
 "cS" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/marble,/obj/item/paper_bin,/obj/item/pen,/turf/simulated/floor/wood,/area/inqmoon)
 "cT" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/asteroid/air,/area/inqmoon)
 "cU" = (/turf/simulated/floor/asteroid/air,/area/inqmoon)
