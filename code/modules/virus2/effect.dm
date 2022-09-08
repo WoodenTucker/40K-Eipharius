@@ -322,6 +322,7 @@
 			mob.bladder = rand(0, 700)
 		sleep(30)
 		if (prob(10))
+			mob.nutrition = max(0, mob.nutrition - 100)
 			mob.emote("drool")
 
 // to do; bloodpox. coughing blood. long cycles. brute and tox damage. slow.
