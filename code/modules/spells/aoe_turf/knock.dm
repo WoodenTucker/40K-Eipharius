@@ -30,3 +30,18 @@
 	range *= 2
 
 	return "You've doubled the range of [src]."
+
+/spell/aoe_turf/knock/psyker
+	name = "Knock"
+	desc = "This power opens nearby doors."
+	feedback = "KP"
+	school = "transmutation"
+	charge_max = 100
+	spell_flags = 0
+	invocation = "none"
+	invocation_type =  SpI_NONE
+	range = 3
+	level_max = list(Sp_TOTAL = 4, Sp_SPEED = 4, Sp_POWER = 1)
+	cooldown_min = 20 //20 deciseconds reduction per rank
+
+	hud_state = "wiz_knock"
