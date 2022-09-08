@@ -148,7 +148,7 @@
 	amount = 50
 
 /obj/item/stack/material/phoron
-	name = "solid phoron"
+	name = "solid promethium"
 	icon_state = "sheet-phoron"
 	default_type = "phoron"
 	icon = 'icons/obj/items.dmi'
