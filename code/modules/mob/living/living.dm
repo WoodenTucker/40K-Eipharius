@@ -690,7 +690,7 @@ default behaviour is:
 		setStaminaLoss(0)
 
 	if(user.happiness <= -15) //Depression puts you in a malaise
-		setStaminaLoss(130)
+		setStaminaLoss(0)
 
 	if(staminaloss && !combat_mode)//If we're not doing anything, we're not in combat mode, and we've lost stamina we can wait to gain it back. If youre sad no energy regen
 		var/speed = 0
