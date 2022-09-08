@@ -385,6 +385,7 @@
 	anchored = 1
 	density = 1
 	atom_flags = ATOM_FLAG_CLIMBABLE
+	var/merc_crate
 
 //so you can put coins in this bad boy as well.
 /obj/machinery/computer/requisitioncogitator/attackby(var/obj/item/stack/thrones/O, var/mob/user) //These manage putting coins directly into the console
@@ -426,7 +427,24 @@
 	dat += "[GLOB.thrones] throne balance<BR>"
 	dat += "<B>Thank you for your loyalty to the Imperium</B></BR>"
 	dat += "<B>Available units:</B></BR>"
-	dat += "<A href='byond://?src=\ref[src];kroot=1'>Purchase a Kroot mercenary (100)</A><BR>"
+	dat += "<B>Common mercenaries</B><HR>"
+	dat += "Those are well trained soldiers. Not the best, but loyal. They are effective only in groups<HR>"
+	dat += "<A href='byond://?src=\ref[src];conscript=1'>Purchase a Conscript (100)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (200)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (250)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (300)</A><BR>"
+	dat += "<B>Elite mercenaries</B><HR>"
+	dat += "These are the best of the best. They are expensive, but very effective stand-alone units. You will not regret.<HR>"
+	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (400)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (500)</A><BR>"
+	dat += "<B>Xeno scum</B><HR>"
+	dat += "Each xenos comes in a wooden crate and fitted with a sedative implant to prevent unwanted awakening. You can disable the implant using golden writ. You must have exceptional leadership skills to maintain discipline among the xenos mercenaries, otherwise expect a revolt. Expect increased attention from the Ordo Xenos Inquisition as well.<HR>"
+	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freebooter (500)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Kroot Shaper (UNAVAILABLE) (600)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Eldar Corsair (UNAVAILABLE) (850)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a (REDACTED) (UNAVAILABLE) (1000)</A><BR>" // Someone cool and very usefull. Like Jokaero
 	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
 	user << browse(dat, "window=scroll")
 	onclose(user, "scroll")
@@ -437,37 +455,172 @@
 		return
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
-	if (href_list["kroot"])
-		if(GLOB.thrones < 100) //do we got enough shekels?
+	if (href_list["unavailable"])
+		visible_message("This type of mercenary is temporarily unavailable")
+		return
+	if (href_list["conscript"])
+		if(GLOB.thrones < 100)
 			visible_message("You cannot afford that!")
 			return
 		else
-			visible_message("A Kroot hunter is on his way, Lord-Trader.") //lil flavor text confirming
-			GLOB.thrones -= 100 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			for (var/datum/job/job in SSjobs.occupations)
+			var/job = "Imperial Guard Conscript"
+			if (job)
+				var/res = SSjobs.FreeRole(job)
+				if(res == 0)
+					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
+				if(res == 1)
+					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
+					GLOB.thrones -= 100
+					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+				return
+	if (href_list["guardsman"])
+		if(GLOB.thrones < 200)
+			visible_message("You cannot afford that!")
+			return
+		else
+			for (var/datum/job/job in SSjobs.occupations)
+			var/job = "Imperial Guardsman"
+			if (job)
+				var/res = SSjobs.FreeRole(job)
+				if(res == 0)
+					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
+				if(res == 1)
+					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
+					GLOB.thrones -= 200
+					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+				return
+	if (href_list["medicae"])
+		if(GLOB.thrones < 250) 
+			visible_message("You cannot afford that!")
+			return
+		else
+			for (var/datum/job/job in SSjobs.occupations)
+			var/job = "Combat Medicae"
+			if (job)
+				var/res = SSjobs.FreeRole(job)
+				if(res == 0)
+					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
+				if(res == 1)
+					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
+					GLOB.thrones -= 250
+					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+				return
+	if (href_list["specialist"])
+		if(GLOB.thrones < 300) 
+			visible_message("You cannot afford that!")
+			return
+		else
+			for (var/datum/job/job in SSjobs.occupations)
+			var/job = "Imperial Guard Specialist"
+			if (job)
+				var/res = SSjobs.FreeRole(job)
+				if(res == 0)
+					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
+				if(res == 1)
+					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
+					GLOB.thrones -= 300
+					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+				return
+	if (href_list["janissary"])
+		if(GLOB.thrones < 400) 
+			visible_message("You cannot afford that!")
+			return
+		else
+			for (var/datum/job/job in SSjobs.occupations)
+			var/job = "Vessorine Janissary"
+			if (job)
+				var/res = SSjobs.FreeRole(job)
+				if(res == 0)
+					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
+				if(res == 1)
+					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
+					GLOB.thrones -= 400
+					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+				return
+	if (href_list["scion"])
+		if(GLOB.thrones < 500) 
+			visible_message("You cannot afford that!")
+			return
+		else
+			for (var/datum/job/job in SSjobs.occupations)
+			var/job = "Tempestus Scion"
+			if (job)
+				var/res = SSjobs.FreeRole(job)
+				if(res == 0)
+					visible_message("We have sent you enough [job]s. Wait for them to arrive before ordering new ones.")
+				if(res == 1)
+					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
+					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
+					GLOB.thrones -= 500
+					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+				return
+	if (href_list["ork"])
+		if(GLOB.thrones < 500)
+			visible_message("You cannot afford that!")
+			return
+		else
+			visible_message("Ork delivered, Lord-Trader. He is your problem now")
+			GLOB.thrones -= 500 
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
-			var/obj/effect/landmark/reqspawn/T = locate() //where dey spawning
-			var/mob/living/carbon/human/kroot/krplyr = new /mob/living/carbon/human/kroot(T.loc) //what they spawning
-			krplyr.request_player()
+			merc_crate = /obj/structure/largecrate/animal/orkmerc
+			new merc_crate(src.loc)
 
-//Procs for grabbing players.
-/mob/living/carbon/human/kroot/proc/request_player() //reqs the player
+/obj/structure/largecrate/animal/orkmerc
+	name = "Ork Freebooter"
+	held_type = /mob/living/carbon/human/ork/merc
+
+
+
+				//PATH FOR A XENO MERCENARIES
+
+
+
+/mob/living/carbon/human/ork/merc
+
+
+
+				//HOW DO WE AWAKE THEM
+
+
+
+/obj/item/card/id/gold/attack(mob/living/carbon/human/ork/merc/C, mob/living/carbon/human/user)
+	if(istype(C))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		playsound(src, 'sound/effects/adapter.ogg', 100, 1, 1)
+		visible_message("<span class='notice'>[user] brings [src] to [C]'s head in an attempt to disable his sedative implant. This may require several attempts after a while.</span>")
+		C.request_player()
+	..()
+
+
+
+				//PROCS FOR GRABBING PLAYERS
+
+
+
+/mob/living/carbon/human/ork/merc/proc/request_player()
 	for(var/mob/observer/ghost/O in GLOB.player_list)
-		if(jobban_isbanned(O, "Syndicate")) //so I can JB shitters
-			continue
-		if(O.client) //just duh
+		if(O.client)
 			question(O.client)
 
-/mob/living/carbon/human/kroot/proc/question(var/client/C) //asks the questions
-	spawn(0)
-		if(!C)	return
-		var/response = alert(C, "A Kroot Mercenary has been hired by the RT. Are you interested?", "Kroot Hunter", "Yes", "No",)
-		if(!C || ckey)
-			return
-		if(response == "Yes")
-			transfer_personality(C)
-			src.warfare_faction = IMPERIUM
+/mob/living/carbon/human/ork/merc/proc/question(var/client/C)
+	if(!C)
+		return FALSE
+	var/response = alert(C, "A new xenos mercenary has been awoken by Lord Trader. Are you interested?", "Ork Freebooter", "Yes", "No",)
+	if(!C || ckey)
+		return FALSE
+	if(response == "Yes")
+		transfer_personality(C)
+		src.warfare_faction = IMPERIUM
+		return TRUE
+	return FALSE
 
-/mob/living/carbon/human/kroot/proc/transfer_personality(var/client/candidate) //puts the guy in the place
+/mob/living/carbon/human/ork/merc/proc/transfer_personality(var/client/candidate)
 
 	if(!candidate)
 		return
