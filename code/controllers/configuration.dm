@@ -196,6 +196,7 @@ var/list/gamemode_cache = list()
 	var/looc_allowed = 1
 	var/dooc_allowed = 1
 	var/dsay_allowed = 1
+	var/pray_allowed = 1
 
 	var/starlight = 0	// Whether space turfs have ambient light or not
 
