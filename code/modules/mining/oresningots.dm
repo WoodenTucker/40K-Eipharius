@@ -64,8 +64,8 @@
 	sales_price = 10
 
 /obj/item/newore/phoronore
-	name = "phoron ore"
-	desc = "A chunk of phoron ore, a highly flammable ore that came from another galaxy.(Forges can still smelt it)"
+	name = "Promethium ore"
+	desc = "A chunk of promethium ore, a highly flammable ore that should be refined at forge to get usefull promethium crystals. Those have a variety of uses. For flamers, mostly."
 	icon_state = "phoron"
 	sales_price = 12
 
