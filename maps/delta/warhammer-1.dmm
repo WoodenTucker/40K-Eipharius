@@ -993,6 +993,7 @@
 /obj/structure/barricade{
 	color = "grey"
 	},
+/obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1073,13 +1074,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
 "eh" = (
-/obj/effect/floor_decal/turf/necro1,
-/obj/effect/decal/dead,
-/obj/item/clothing/suit/storage/vest/tactical{
-	armor = list("melee"=48,"bullet"=50,"laser"=40,"energy"=10,"bomb"=20,"bio"=0,"rad"=10)
-	},
+/obj/effect/floor_decal/turf/basalt0,
+/mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/undercity)
+/area/cadiaoutpost/oa/caves/dark)
 "ek" = (
 /obj/structure/bed/alien{
 	color = "grey"
@@ -2313,11 +2311,6 @@
 /obj/effect/floor_decal/turf/carpetn00,
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel)
-"je" = (
-/obj/random/loot/heavymelee,
-/obj/effect/floor_decal/turf/basalt3,
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/dark)
 "jf" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
@@ -3200,9 +3193,16 @@
 	},
 /area/cadiaoutpost/oa/service/habs)
 "ms" = (
-/obj/effect/floor_decal/turf/necro1,
+/obj/effect/floor_decal/turf/brick/two,
+/obj/effect/decal/dead,
+/obj/random/loot/goodweapon,
+/obj/random/loot/randomammo,
+/obj/random/loot/randomammo,
+/obj/item/clothing/suit/storage/vest/tactical{
+	armor = list("melee"=48,"bullet"=50,"laser"=40,"energy"=10,"bomb"=20,"bio"=0,"rad"=10)
+	},
 /obj/random/loot/randomarmor,
-/turf/simulated/floor/stone,
+/turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/caves/undercity)
 "mx" = (
 /obj/effect/water/top,
@@ -4706,6 +4706,7 @@
 	color = "#36261B"
 	},
 /obj/item/reagent_containers/food/snacks/dionaroast,
+/obj/item/gun/energy/pulse/plasma/pistol/toaster,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5324,8 +5325,19 @@
 /obj/structure/cult/forge,
 /obj/item/material/sword/chaosknife,
 /obj/effect/floor_decal/turf/basalt0,
-/obj/item/clothing/suit/armor/berserker,
-/obj/item/clothing/head/helmet/berserkerhelm,
+/obj/item/clothing/suit/armor/berserker{
+	name = "Runic Power Armor";
+	color = "gold"
+	},
+/obj/item/clothing/head/helmet/berserkerhelm{
+	name = "Runic Power Helmet";
+	color = "gold"
+	},
+/obj/item/melee/trench_axe/glaive{
+	weapon_speed_delay = 9;
+	name = "blessed saintie";
+	color = "gold"
+	},
 /turf/simulated/floor/dirty/indestructable,
 /area/cadiaoutpost/oa/caves/dark)
 "uB" = (
@@ -11930,10 +11942,6 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "UD" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/obj/random/loot/goodweapon,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
-/obj/random/loot/randomammo,
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -19389,7 +19397,7 @@ XX
 vm
 kt
 Ay
-je
+XX
 zp
 Ok
 XX
@@ -28129,7 +28137,7 @@ CP
 iU
 wX
 CP
-CP
+eh
 CP
 zZ
 zm
@@ -28639,7 +28647,7 @@ zm
 VO
 zZ
 CP
-CP
+eh
 CP
 CP
 CP
@@ -30618,8 +30626,8 @@ eG
 eG
 eG
 pW
-eh
-ms
+fR
+fR
 fR
 pW
 pW
@@ -30872,7 +30880,7 @@ pW
 eG
 ua
 sQ
-sQ
+ms
 eG
 fR
 UD
@@ -33015,7 +33023,7 @@ AJ
 eR
 AJ
 op
-ct
+op
 op
 op
 op
@@ -33280,7 +33288,7 @@ op
 op
 op
 op
-op
+ct
 op
 op
 cU
@@ -33527,7 +33535,7 @@ AJ
 eR
 fl
 AJ
-Do
+AJ
 SH
 op
 op
@@ -36600,7 +36608,7 @@ AJ
 Kg
 AJ
 AJ
-AJ
+Do
 AJ
 AJ
 ju
@@ -37656,7 +37664,7 @@ VO
 jD
 op
 vA
-ct
+op
 op
 VO
 PI

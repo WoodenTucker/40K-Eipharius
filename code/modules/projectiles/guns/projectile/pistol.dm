@@ -107,7 +107,7 @@
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
 	one_hand_penalty = 0.5
-	accuracy = -2
+	accuracy = -1
 	fire_delay = 0.5
 	silenced = 1
 	force = 20
@@ -385,7 +385,7 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -5
+	accuracy = -4
 	fire_delay = 1.8
 	move_delay = 1.5
 	load_method = MAGAZINE
@@ -408,8 +408,8 @@
 	item_state = "gpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -6
-	fire_delay = 3
+	accuracy = -3.5
+	fire_delay = 2
 	move_delay = 5.0 // make it shit and mostly ornamental
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -430,8 +430,8 @@
 	item_state = "bpistol"
 	force = 15
 	caliber = ".75"
-	accuracy = -4 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 1.2
+	accuracy = -3 //VERY well maintained--maintened? eh, you get what i mean!
+	fire_delay = 1.4
 	move_delay = 1.3
 	sales_price = 58
 
@@ -443,8 +443,8 @@
 	str_requirement = 18
 	force = 30
 	caliber = ".75"
-	accuracy = -3.5 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 1
+	accuracy = -3 //VERY well maintained--maintened? eh, you get what i mean!
+	fire_delay = 1.2
 	move_delay = 1.5
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
@@ -466,8 +466,7 @@
 	loaded_icon = "sisterbpistol"
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
 	sharp = 1
-	edge = 1
-	accuracy = -3 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
+	accuracy = -2.5 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
 	fire_delay = 1.5 //fastaa!
 	move_delay = 1.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
