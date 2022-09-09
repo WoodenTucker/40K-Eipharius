@@ -293,6 +293,7 @@
 	icon_state = "fullgrass_[rand(1, 3)]"
 
 /obj/structure/flora/ausbushes/meatshroom
+	name = "meatshroom"
 	icon_state = "meatshroom1"
 
 /obj/structure/flora/ausbushes/meatshroom/New()
@@ -300,6 +301,7 @@
 	icon_state = "meatshroom[rand(1, 3)]"
 
 /obj/structure/flora/ausbushes/lrock
+	name = "rock"
 	icon_state = "lrock1"
 
 /obj/structure/flora/ausbushes/lrock/New()
@@ -307,6 +309,7 @@
 	icon_state = "lrock[rand(1, 9)]"
 
 /obj/structure/flora/ausbushes/rock
+	name = "rock"
 	icon_state = "rock1"
 
 /obj/structure/flora/ausbushes/rock/New()
