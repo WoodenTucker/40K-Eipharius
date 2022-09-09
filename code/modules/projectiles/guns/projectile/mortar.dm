@@ -132,12 +132,13 @@
 	if(I)
 		to_chat(user, "<span class='danger'>I need a free hand for this.</span>")
 		return
-	log_admin("[user] has fired a mortar at [A]!", user)
+	log_and_message_admins("[user] has fired a mortar at [A]!", user)
 	launch_mortar(A, user, loaded_with)
 	QDEL_NULL(loaded)
 
 /obj/item/mortar_launcher/proc/launch_mortar(atom/A, mob/living/user, var/mortar_type)
 	if(prob(rand(1, 5))) //Mortar meme
+		log_and_message_admins("[user] has tried to fire a mortar, but it malfunctioned!", user)
 		if(prob(50))
 			user.visible_message("<span class='danger'>[user] fires the [src], but it malfunctions and falls onto the ground!</span>")
 			playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)

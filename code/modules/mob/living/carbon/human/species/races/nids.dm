@@ -17,23 +17,27 @@
 	sexybits_location = BP_GROIN
 	var/pain_power = 80
 	inherent_verbs = list(
-	/mob/living/carbon/human/tyranid/proc/givetyranidtype,
+	/mob/living/carbon/human/genestealer/verb/convert,
+	/mob/living/carbon/human/genestealer/proc/makepool,
+	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
+	/mob/living/carbon/human/genestealer/proc/gsheal,
+	/mob/living/carbon/human/genestealer/proc/givestealerstats,
 
 	 )
-	slowdown = -0.4
+	slowdown = -0.5
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
 		/datum/unarmed_attack/rendingclaws,
 		)
 
-	has_fine_manipulation = 1
+	has_fine_manipulation = 0
 	siemens_coefficient = 0
 	gluttonous = GLUT_ANYTHING
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
-	brute_mod = 0.87 // Hardened carapace.
-	burn_mod = 0.85 // Hardened carapace.
+	brute_mod = 0.82 // Hardened carapace.
+	burn_mod = 0.81 // Hardened carapace.
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
@@ -67,16 +71,16 @@
 	var/dnastore = 0
 	var/poolparty = 0
 
-/mob/living/carbon/human/tyranid
+/mob/living/carbon/human/genestealer
 	gender = MALE
 	alien_talk_understand = 1
 
 
-/mob/living/carbon/human/tyranid/New(var/new_loc)
+/mob/living/carbon/human/genestealer/New(var/new_loc)
 	h_style = "Bald"
 	..(new_loc, new_nid)
 
-/mob/living/carbon/human/tyranid/Initialize()
+/mob/living/carbon/human/genestealer/Initialize()
 	. = ..()
 	fully_replace_character_name(random_nid_name(src.gender))
 	warfare_faction = TYRANIDS
@@ -98,101 +102,9 @@
 	hand = 0//Make sure one of their hands is active.
 
 
-/mob/living/carbon/human/tyranid/proc/givetyranidtype()
-	set name = "Remember your Species"
-	set category = "Tyranid"
-	set desc = "Gives Tyranid Type."
-
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
-		return
-
-	var/nidclass = input("Select a Class","Class Selection") as null|anything in list("Genestealer", "Zoanthrope")
-	switch(nidclass)
-		if("Genestealer")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/genestealer, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/tyranid, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/melee/baton/nidstun, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/genestealerfeet, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/genestealer, slot_head)
-			visible_message("[name] stretches out, their chitin hardening as they awake from slumber.")
-			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(19,24),rand(19,24),rand(19,24),6) //gives stats str, dext, end, int
-			src.add_skills(rand(14,20),rand(1,4),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
-			src.set_trait(new/datum/trait/death_tolerant())
-			src.update_eyes() //should fix grey vision
-			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC) //secondary language
-			src.verbs += /mob/living/carbon/human/tyranid/verb/convert
-			src.verbs += /mob/living/carbon/human/tyranid/proc/corrosive_acid
-			src.verbs += /mob/living/carbon/human/tyranid/proc/makepool
-			src.verbs += /mob/living/carbon/human/proc/switch_stance
-			src.verbs += /mob/living/carbon/human/proc/threat_display
-			src.verbs -= /mob/living/carbon/human/tyranid/proc/givetyranidtype //removes verb at the end so they can't spam it for whatever reason
-			client?.color = null
-
-			var/obj/item/card/id/dog_tag/W = new
-			W.icon_state = "tagred"
-			W.assignment = "Tyranid Genestealer"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-		if("Zoanthrope")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/genestealer, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/tyranid, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/genestealerfeet, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/genestealer, slot_head)
-			visible_message("[name] stretches out, their chitin hardening as they awake from slumber.")
-			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(10,14),rand(10,14),rand(10,14),24) //gives stats str, dext, end, int
-			src.add_skills(rand(6,8),rand(2,5),rand(5,9),rand(4,6),rand(4,9)) //melee, ranged, med, eng, surgery
-			src.set_trait(new/datum/trait/death_tolerant())
-			src.mutations.Add(TK)
-			src.update_eyes() //should fix grey vision
-			src.add_spell(/spell/aoe_turf/conjure/forcewall)
-			src.add_spell(/spell/aoe_turf/knock/psyker)
-			src.add_spell(/spell/hand/charges/blood_shard)
-			src.add_spell(/spell/radiant_aura/psyker)
-			src.add_spell(/spell/targeted/shatter)
-			src.add_spell(/spell/targeted/subjugation)
-			src.add_spell(/spell/targeted/ethereal_jaunt/shift)
-			src.verbs -= /mob/living/carbon/human/tyranid/proc/givetyranidtype //removes verb at the end so they can't spam it for whatever reason
-			client?.color = null
-
-			var/obj/item/card/id/dog_tag/W = new
-			W.icon_state = "tagred"
-			W.assignment = "Tyranid Zoanthrope"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
-
-//		if("Ravener")
-//			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/genestealer, slot_wear_suit)
-//			equip_to_slot_or_del(new /obj/item/clothing/glasses/tyranid, slot_glasses)
-//			equip_to_slot_or_del(new /obj/item/clothing/shoes/genestealerfeet, slot_shoes)
-//			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/genestealer, slot_head)
-//			visible_message("[name] stretches out, their chitin hardening as they awake from slumber.")
-//			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-//			src.add_stats(rand(19,24),rand(19,24),rand(19,24),6) //gives stats str, dext, end, int
-//			src.add_skills(rand(14,20),rand(1,4),rand(1,8),rand(14,8),rand(1,6)) //melee, ranged, med, eng, surgery
-//			src.set_trait(new/datum/trait/death_tolerant())
-//			src.update_eyes() //should fix grey vision
-//			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC) //secondary language
-//			has_fine_manipulation = 0
-//			src.verbs -= /mob/living/carbon/human/tyranid/proc/givetyranidtype //removes verb at the end so they can't spam it for whatever reason
-//			client?.color = null
-//
-//			var/obj/item/card/id/dog_tag/W = new
-//			W.icon_state = "tagred"
-//			W.assignment = "Tyranid Ravener"
-//			W.registered_name = real_name
-//			W.update_label()
-//			equip_to_slot_or_del(W, slot_wear_id)
-
-
 //Begin abilities
 
-/mob/living/carbon/human/tyranid/verb/convert()
+/mob/living/carbon/human/genestealer/verb/convert()
 	set name = "Convert"
 	set desc = "Depending on your evolution progress, you must either be standing over them or next to the target."
 	set category = "Tyranid"
@@ -236,7 +148,6 @@
 				src.visible_message("<span class='danger'>[src] impales [T] with their tongue.</span>")
 				to_chat(T, "<span class='danger'>You feel a sharp stabbing pain!</span>")
 				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
-				T.AddInfectionImages()
 				src.biomass -=10
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 
@@ -267,7 +178,7 @@
 	T.inject_blood(src, 50)
 	return 1
 
-/mob/living/carbon/human/tyranid/proc/ripperswarm() // ok
+/mob/living/carbon/human/genestealer/proc/ripperswarm() // ok
 	set name = "Call on Ripper Swarm (20)"
 	set desc = "Distract them!"
 	set category = "Tyranid"
@@ -288,7 +199,7 @@
 		src.biomass -= 20
 		visible_message("<span class='warning'>Numerous rippers burst from the ground and immediately begin to swarm!</span>")
 
-/mob/living/carbon/human/tyranid/proc/neurotoxin(mob/target as mob in oview())
+/mob/living/carbon/human/genestealer/proc/neurotoxin(mob/target as mob in oview())
 	set name = "Spit Neurotoxin (10)"
 	set desc = "Spits neurotoxin at someone, paralyzing them for a short time if they are not wearing protective gear."
 	set category = "Tyranid"
@@ -307,7 +218,7 @@
 	A.launch_projectile(target,get_organ_target())
 	src.biomass -=10
 
-/mob/living/carbon/human/tyranid/proc/makepool(mob/target as mob in oview())
+/mob/living/carbon/human/genestealer/proc/makepool(mob/target as mob in oview())
 	set name = "Create Spawning Pool"
 	set desc = "Forms a spawning pool"
 	set category = "Tyranid"
@@ -326,7 +237,7 @@
 	src.gsc = 1
 	src.AddInfectionImages()
 
-/mob/living/carbon/human/tyranid/proc/corrosive_acid(O as obj|turf in oview(1)) //If they right click to corrode, an error will flash if its an invalid target./N
+/mob/living/carbon/human/genestealer/proc/corrosive_acid(O as obj|turf in oview(1)) //If they right click to corrode, an error will flash if its an invalid target./N
 	set name = "Corrosive Acid (5)"
 	set desc = "Drench an object in acid, destroying it over time."
 	set category = "Tyranid"
@@ -356,8 +267,8 @@
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
 	src.AddInfectionImages()
-	src.add_stats(rand(12,16),rand(14,18),rand(6,6),14) //gives stats str, end, int, dex
-	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
+	src.add_stats(rand(7,12),rand(17,18),rand(13,13),18) //gives stats str, end, int, dex
+	src.add_skills(10,10,rand(9,9),4,4) //skills such as melee, ranged, med, eng and surg
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
 	client?.color = null
@@ -422,5 +333,3 @@
 		playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
 		if(do_after(user, 110, src))
 			qdel(src)
-
-
