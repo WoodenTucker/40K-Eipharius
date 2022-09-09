@@ -784,6 +784,7 @@
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/gun/energy/pulse/plasma/pistol/chaos,
+/obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -951,6 +952,14 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dB" = (
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/storage/backpack/satchel/warfare,
+/obj/item/storage/backpack/satchel/warfare,
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
@@ -958,14 +967,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/effect/floor_decal/industrial/warning/corner{
-	icon_state = "warningcorner";
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/warning{
-	icon_state = "warning";
-	dir = 8
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1229,10 +1230,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "fe" = (
-/obj/machinery/light/small{
-	icon_state = "bulb1";
-	dir = 8
-	},
 /obj/machinery/light_switch{
 	pixel_x = -25
 	},
@@ -1246,6 +1243,10 @@
 /obj/item/grenade/smokebomb,
 /obj/item/grenade/smokebomb,
 /obj/item/grenade/smokebomb,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -1327,6 +1328,10 @@
 	color = "gold";
 	armor = list("melee"=75,"bullet"=75,"laser"=65,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
 	},
+/obj/item/melee/chain/mercycs,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/glasses/cadiangoggles/elite,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2848,6 +2853,7 @@
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/gun/energy/las/hotshot/bloodpact,
+/obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3184,7 +3190,14 @@
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/hangarpact)
 "pk" = (
-/obj/item/melee/chain/mercycs,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/storage/backpack/satchel/warfare,
+/obj/item/storage/backpack/satchel/warfare,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3965,9 +3978,6 @@
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ua" = (
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /obj/item/clothing/suit/armor/guardsman/bloodpact,
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,
 /obj/item/clothing/under/rank/principalagent,
@@ -4036,6 +4046,12 @@
 /area/centcom)
 "uq" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6304,6 +6320,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/gun/energy/las/lasgun/longlas,
+/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6358,6 +6380,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/cell/lasgun/hotshot,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -8434,9 +8462,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Vp" = (
-/obj/effect/landmark{
-	name = "bloodstart"
-	},
 /obj/item/clothing/suit/armor/guardsman/bloodpact,
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1,
 /obj/item/clothing/under/rank/principalagent,
@@ -9022,6 +9047,18 @@
 	opacity = 0
 	},
 /obj/machinery/portable_atmospherics/canister/empty/air,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"YL" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9959,7 +9996,7 @@ XG
 Hq
 Hq
 Hq
-Hq
+YL
 zy
 zy
 zy
@@ -10064,7 +10101,7 @@ Mr
 Ih
 fe
 ea
-ih
+pk
 ua
 zy
 pj
@@ -10268,7 +10305,7 @@ pt
 pY
 fH
 vQ
-ih
+pk
 Vp
 zy
 pj

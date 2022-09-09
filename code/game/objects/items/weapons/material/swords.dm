@@ -15,7 +15,7 @@
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 //
 	sharp = 1
-	edge = 1
+	edge = 0
 	attack_verb = list("slashed", "sliced")
 	hitsound = "slash_sound"
 	var/atk_mode = SLASH
@@ -113,7 +113,7 @@
 		if(SLASH)
 			atk_mode = SLASH
 			to_chat(user, "You will now slash.")
-			edge = TRUE
+			edge = FALSE
 			sharp = TRUE
 			attack_verb = list("slashed", "diced")
 			hitsound = "slash_sound"
@@ -208,12 +208,11 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14
-	force = 31
+	force = 35
 	armor_penetration = 10
 	block_chance = 45
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
-	edge = TRUE
 	weapon_speed_delay = 7
 	sales_price = 100
 
@@ -329,12 +328,11 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	str_requirement = 13
-	force = 40
+	force = 44
 	armor_penetration = 20
 	block_chance = 65
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
-	edge = TRUE
 	sales_price = 0
 
 // CHAINSWORDS
@@ -348,11 +346,10 @@
 	wielded_icon = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 13
-	force = 40
+	force = 44
 	armor_penetration = 15
 	block_chance = 37
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
@@ -371,11 +368,10 @@
 	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 11
-	force = 38
+	force = 42
 	armor_penetration = 10
 	block_chance = 44
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
@@ -410,11 +406,10 @@
 	wielded_icon = "pcsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 16
-	force = 41
+	force = 45
 	armor_penetration = 25
 	block_chance = 55
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
@@ -432,12 +427,11 @@
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
 	str_requirement = 13
-	force = 21// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 41
+	force = 25// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 45
 	armor_penetration = 30
 	block_chance = 35
 	sharp = TRUE
-	edge = TRUE
 	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
@@ -457,10 +451,9 @@
 	item_state = "chainaxe"
 	wielded_icon = "chainaxe"
 	str_requirement = 13
-	force = 38 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force = 42 // blood for the blood god. its strong,  but the shit block chance makes it balanced
 	block_chance = 35
 	sharp = TRUE
-	edge = TRUE
 	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
@@ -628,9 +621,8 @@
 	icon_state = "slaanesh_sword"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 30
+	force = 34
 	sharp = 1
-	edge = 1
 	block_chance = 30
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
@@ -644,9 +636,8 @@
 	icon_state = "hellblade"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
-	force = 35
+	force = 39
 	sharp = 1
-	edge = 1
 	block_chance = 65
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)

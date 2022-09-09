@@ -213,7 +213,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 1.7
 	fire_delay = 3
-	accuracy = -4
+	accuracy = -3
 	move_delay = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -256,7 +256,7 @@ obj/item/gun/energy/retro
 	force = 15
 	one_hand_penalty = 2
 	fire_delay = 4
-	accuracy = -4
+	accuracy = -3
 	move_delay = 3.2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -281,7 +281,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 18
 	one_hand_penalty = 0.7
-	accuracy = -4
+	accuracy = -3
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -309,7 +309,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 12
 	one_hand_penalty = 1.5
-	accuracy = -3
+	accuracy = -2
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -353,7 +353,7 @@ obj/item/gun/energy/retro
 	force = 22
 	armor_penetration = 8
 	one_hand_penalty = 1.5
-	accuracy = -3
+	accuracy = -2
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -379,7 +379,7 @@ obj/item/gun/energy/retro
 	w_class = ITEM_SIZE_LARGE
 	force = 22
 	one_hand_penalty = 1.8
-	accuracy = -3.5
+	accuracy = -2.5
 	move_delay = 4
 	self_recharge = 1
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -403,7 +403,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 30 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "lascar"
-	accuracy = -4
+	accuracy = -3
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=180),
@@ -420,7 +420,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = -4.2
+	accuracy = -3.2
 	move_delay = 1.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -442,7 +442,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
 	icon_state = "lordlaspistol"
 	item_state = "lordlaspistol"
-	accuracy = -4
+	accuracy = -2
 	move_delay = 3.5 // do not want the RT's pistol as a frag gamer weapon. its for self defence.
 	charge_cost = 45
 	charge_meter = FALSE //must have, due to having only 1 item state.
@@ -474,7 +474,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 2.55
 	move_delay = 1.5
-	accuracy = -4.2
+	accuracy = -3.2
 	fire_delay = 2.5
 	armor_penetration = 8.75
 	charge_cost = 100
@@ -490,7 +490,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "Pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Astra Militarum, this one seems to be have been modified for the gloves of Adepta Sororitas Power Armor."
 	icon_state = "laspistol"
 	item_state = "laspistol"
-	accuracy = -4
+	accuracy = -3
 	fire_delay = 2
 
 /obj/item/gun/energy/las/laspistol/mechanicus
@@ -511,7 +511,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "laspistol"
 	move_delay = 1.5
 	one_hand_penalty = 1
-	accuracy = -3.2
+	accuracy = -2.2
 	fire_delay= 3
 	armor_penetration = 12.5
 	sales_price = 25
@@ -534,7 +534,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = -3.5
+	accuracy = -2.5
 	move_delay = 5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -556,7 +556,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	w_class = ITEM_SIZE_NORMAL
 	force = 8
-	accuracy = -3.5
+	accuracy = -2.5
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -579,7 +579,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	accuracy = -4
+	accuracy = -3
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -629,7 +629,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
-	accuracy = -5
+	accuracy = -2.8
 	move_delay = 6 //dont want speedy bois
 	fire_delay = 15 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -651,7 +651,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 7 //change later?
-	accuracy = -6
+	accuracy = -3
 	move_delay = 4 //it a pistol, but giga cool plasma
 	fire_delay = 13 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -672,7 +672,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	str_requirement = 18 // astartes moment
 	force = 20
 	one_hand_penalty = 4 //change later?
-	accuracy = -5
+	accuracy = -2
 	move_delay = 3 //it a pistol
 	fire_delay = 12 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -693,7 +693,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "pulse_pistol"
 	force = 10
 	one_hand_penalty = 6 //change later?
-	accuracy = -6
+	accuracy = -3.5
 	move_delay = 3.5 //it a pistol
 	fire_delay = 13 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -715,7 +715,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "pulse_pistol"
 	force = 10
 	one_hand_penalty = 7 //until plasma is better balanced, wield this fancy one.
-	accuracy = -5
+	accuracy = -2
 	move_delay = 3.5
 	fire_delay = 12
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -740,7 +740,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 5 //change later?
-	accuracy = -4
+	accuracy = -2
 	move_delay = 3 //it a pistol, but giga cool plasma
 	fire_delay = 12 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -763,7 +763,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 4 //change later?
-	accuracy = -7
+	accuracy = -3
 	move_delay = 2 //it a pistol, but giga cool plasma
 	fire_delay = 11 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)

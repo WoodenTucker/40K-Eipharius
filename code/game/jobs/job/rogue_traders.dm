@@ -29,7 +29,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 30
+	cultist_chance = 10
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -77,7 +77,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 35
+	cultist_chance = 15
 
 
 	equip(var/mob/living/carbon/human/H)

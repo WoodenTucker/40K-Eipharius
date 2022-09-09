@@ -91,11 +91,9 @@
 	desc = "A taU blade using high heated plasma to cut through things."
 	icon_state = "tau0"
 	item_state = "EB-knife"
-	active_force = 22
+	active_force = 26
 	active_throwforce = 21
-	//force = 40
-	//throwforce = 25
-	force = 20
+	force = 24
 	throwforce = 10
 	throw_speed = 1
 	throw_range = 5
@@ -105,7 +103,6 @@
 	origin_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	sharp = 1
-	edge = 1
 
 /obj/item/melee/energy/tau/activate(mob/living/user)
 	..()
@@ -288,18 +285,17 @@
 	item_state = "powersword"
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 38 //should be enough to cut off most limbs
-	active_throwforce = 38
+	active_force = 42 //should be enough to cut off most limbs
+	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-	force = 33 //its just a adamantium sword when offline
-	throwforce = 33
+	force = 37 //its just a adamantium sword when offline
+	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
 	block_chance = 45
 	sales_price = 90
 	weapon_speed_delay = 7
 	sharp = TRUE
-	edge = TRUE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -326,14 +322,13 @@
 	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 44 //should be enough to cut off most limbs
-	active_throwforce = 44
-	force = 40 //its just a adamantium sword when offline
-	throwforce = 40
+	active_force = 48 //should be enough to cut off most limbs
+	active_throwforce = 20
+	force = 44 //its just a adamantium sword when offline
+	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
 	sharp = TRUE
-	edge = TRUE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 50
 	sales_price = 120
@@ -407,20 +402,18 @@
 	item_state = "hypogauntlet_on"
 	wielded_icon = "trenchaxe-w"
 	str_requirement = 18 //this shouldn't even be here but just in case of someone abusing bugs to get the apothecary's power armor
-	force = 60 //sharp enough to penetrate ceramite and adamantium alike
-	block_chance = 70 //apothecaries are based
+	force = 30 //sharp enough to penetrate ceramite and adamantium alike
+	block_chance = 10 //apothecaries are based
 	armor_penetration = 50 //VERY fucking sharp
 	item_flags = ITEM_FLAG_NODROP
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 10 //should be 5 or 3 seconds
+	weapon_speed_delay = 9 //should be 5 or 3 seconds
 	sharp = 1
-	edge = 1
 	unacidable = 1
 
 /obj/item/reagent_containers/hypospray/vial/narthecium/do_surgery(mob/living/carbon/M, mob/living/user)
