@@ -24,7 +24,7 @@
 	shotgun_skill = 4
 	lmg_skill = 4
 	smg_skill = 4
-	cultist_chance = 40
+	cultist_chance = 30
 
 
 
@@ -364,7 +364,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 20
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -408,7 +408,7 @@
 	shotgun_skill = 5
 	lmg_skill = 5
 	smg_skill = 5
-	cultist_chance = 40
+	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
