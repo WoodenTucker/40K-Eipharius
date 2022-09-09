@@ -39,8 +39,8 @@
 	delete_items = FALSE
 	special 	 = TRUE
 
-/datum/rune_recipe/khorne/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
-	if(target.stat != DEAD)
+/datum/rune_recipe/khorne/conversion/do_special(mob/living/carbon/user, obj/effect/cleanable/heretic_rune/rune, list/items)
+	var/mob/living/carbon/human/target = items[1]
+	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/khorne/N = GOD(GOD_KHORNE)
 		N.join_request(target)
