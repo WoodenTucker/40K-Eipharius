@@ -208,9 +208,9 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14
-	force = 41
+	force = 31
 	armor_penetration = 10
-	block_chance = 55
+	block_chance = 45
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
 	edge = TRUE
@@ -329,7 +329,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	str_requirement = 13
-	force = 45
+	force = 40
 	armor_penetration = 20
 	block_chance = 65
 	grab_sound_is_loud = TRUE
@@ -456,13 +456,12 @@
 	icon_state = "chainaxe"
 	item_state = "chainaxe"
 	wielded_icon = "chainaxe"
-	str_requirement = 16
-	force = 47 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	force_wielded = 55
-	block_chance = 28
+	str_requirement = 13
+	force = 38 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
@@ -645,7 +644,7 @@
 	icon_state = "hellblade"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
-	force = 40
+	force = 35
 	sharp = 1
 	edge = 1
 	block_chance = 65

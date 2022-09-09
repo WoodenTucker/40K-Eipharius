@@ -197,8 +197,6 @@
 				return
 			if(H.warfare_faction)
 				if(H.warfare_faction == src.warfare_faction && src.stat != DEAD)
-					to_chat(H, "<big>[src] is on my side!</big>")
-					log_and_message_admins("[H] has punched his teammate [src]!", H)
 					GLOB.ff_incidents++
 			M.adjustStaminaLoss(rand(5,15))
 

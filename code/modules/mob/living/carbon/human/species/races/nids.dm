@@ -236,6 +236,7 @@
 				src.visible_message("<span class='danger'>[src] impales [T] with their tongue.</span>")
 				to_chat(T, "<span class='danger'>You feel a sharp stabbing pain!</span>")
 				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
+				T.AddInfectionImages()
 				src.biomass -=10
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 

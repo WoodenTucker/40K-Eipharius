@@ -77,7 +77,7 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
-	cultist_chance = 40
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -129,7 +129,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 50
+	cultist_chance = 45
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -158,6 +158,7 @@
 	shotgun_skill = 6
 	lmg_skill = 8
 	smg_skill = 8
+	cultist_chance = 30
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
@@ -204,6 +205,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
+	cultist_chance = 45
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -246,6 +248,7 @@
 	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#33813A"
+	cultist_chance = 15
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
@@ -266,7 +269,6 @@
 	shotgun_skill = 9
 	lmg_skill = 9
 	smg_skill = 9
-	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -325,6 +327,7 @@
 	shotgun_skill = 9
 	lmg_skill = 8
 	smg_skill = 9
+	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -373,6 +376,7 @@
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
+	cultist_chance = 10
 
 	announced = FALSE
 

@@ -63,7 +63,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
-	cultist_chance = 30
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -98,7 +98,7 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	cultist_chance = 50
+	cultist_chance = 80
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -191,6 +191,7 @@
 	lmg_skill = 2
 	smg_skill = 2
 	species_role = "Child"
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM

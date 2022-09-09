@@ -12,8 +12,6 @@
 	for(var/obj/item/W in M)
 		M.drop_from_inventory(W)
 
-	log_admin("[key_name(usr)] made [key_name(M)] drop everything!")
-	message_admins("[key_name_admin(usr)] made [key_name_admin(M)] drop everything!", 1)
 	feedback_add_details("admin_verb","DEVR") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_prison(mob/M as mob in SSmobs.mob_list)
@@ -59,7 +57,6 @@
 		if (usr.client)
 			if(usr.client.holder)
 				to_chat(M, "<b>You hear a voice in your head... <i>[msg]</i></b>")
-	log_and_message_staff(" - SubtleMessage -> [key_name_admin(M)] : [msg]")
 	feedback_add_details("admin_verb","SMS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_mentor_check_new_players()	//Allows mentors / admins to determine who the newer players are.
@@ -136,7 +133,6 @@
 		return
 
 	to_chat(M, msg)
-	log_and_message_admins(" - DirectNarrate to ([M.name]/[M.key]): [msg]")
 	feedback_add_details("admin_verb","DIRN") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 // Local narrate, narrates to everyone who can see where you are regardless of whether they are blind or deaf.
@@ -157,7 +153,6 @@
 
 	for(var/listener in listening_hosts)
 		to_chat(listener, msg)
-	log_and_message_admins(" - LocalNarrate: [msg]")
 
 // Visible narrate, it's as if it's a visible message
 /client/proc/cmd_admin_visible_narrate(var/atom/A)
@@ -180,7 +175,6 @@
 		return
 
 	M.visible_message(msg, narrate = TRUE)
-	log_and_message_admins(" - VisibleNarrate on [A]: [msg]")
 
 // Visible narrate, it's as if it's a audible message
 /client/proc/cmd_admin_audible_narrate(var/atom/A)
@@ -204,7 +198,6 @@
 		return
 
 	M.audible_message(msg, narrate = TRUE)
-	log_and_message_admins(" - AudibleNarrate on [A]: [msg]")
 
 /client/proc/cmd_admin_godmode(mob/M as mob in SSmobs.mob_list)
 	set category = "Special Verbs"
@@ -338,7 +331,7 @@ Ccomp's first proc.
 	G.can_reenter_corpse = CORPSE_CAN_REENTER_AND_RESPAWN
 
 	G.show_message("<span class=notice><b>You may now respawn.  You should roleplay as if you learned nothing about the round during your time with the dead.</b></span>", 1)
-	log_and_message_admins("has allowed [key_name(G)] to bypass the [config.respawn_delay] minute respawn limit.")
+	log_admin("has allowed [key_name(G)] to bypass the [config.respawn_delay] minute respawn limit.")
 
 /client/proc/toggle_antagHUD_use()
 	set category = "Server"
@@ -487,7 +480,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			if(alert(new_character,"Would you like an active AI to announce this character?",,"No","Yes")=="Yes")
 				call(/proc/AnnounceArrival)(new_character, new_character.mind.assigned_role)
 
-	log_and_message_admins("has respawned [player_key] as [new_character.real_name].")
+	log_admin("has respawned [player_key] as [new_character.real_name].")
 
 	to_chat(new_character, "You have been fully respawned. Enjoy the game.")
 	feedback_add_details("admin_verb","RSPCH") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
@@ -535,7 +528,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(config.allow_admin_rev)
 		M.revive()
 
-		log_and_message_admins("healed / revived [key_name_admin(M)]!")
 	else
 		alert("Admin revive disabled")
 	feedback_add_details("admin_verb","REJU") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
@@ -563,7 +555,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			minor_announcement.Announce(message = "New [GLOB.using_map.company_name] Update available at all communication consoles.")
 
 	log_admin("[key_name(src)] has created a command report: [input]")
-	message_admins("[key_name_admin(src)] has created a command report", 1)
+	log_admin("[key_name_admin(src)] has created a command report", 1)
 	feedback_add_details("admin_verb","CCR") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/cmd_admin_delete(atom/O as obj|mob|turf in range(world.view))
@@ -575,8 +567,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		return
 
 	if (alert(src, "Are you sure you want to delete:\n[O]\nat ([O.x], [O.y], [O.z])?", "Confirmation", "Yes", "No") == "Yes")
-		log_admin("[key_name(usr)] deleted [O] at ([O.x],[O.y],[O.z])")
-		message_admins("[key_name_admin(usr)] deleted [O] at ([O.x],[O.y],[O.z])", 1)
 		feedback_add_details("admin_verb","DEL") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 		qdel(O)
 
@@ -658,7 +648,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	if(!M)	return
 
 	log_admin("[key_name(usr)] has gibbed [key_name(M)]")
-	message_admins("[key_name_admin(usr)] has gibbed [key_name_admin(M)]", 1)
 
 	if(isobserver(M))
 		gibs(M.loc)
@@ -678,7 +667,6 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		else
 			mob.gib()
 
-		log_and_message_admins("used gibself.")
 		feedback_add_details("admin_verb","GIBS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/update_world()
