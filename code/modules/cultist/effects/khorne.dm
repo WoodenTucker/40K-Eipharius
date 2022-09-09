@@ -14,7 +14,7 @@
 /datum/heretic_effect/strength
 	name = "Strength"
 	add_message = "<span class='notice'>You feel your body mutate further. Your muscles feel imbued with strength.</span>"
-	var/stat_increase = 5
+	var/stat_increase = 4
 
 /datum/heretic_effect/strength/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
@@ -28,7 +28,7 @@
 	name = "Strength"
 	add_message = "<span class='notice'>You feel your body mutate further. Your muscles feel imbued with strength.</span>"
 	examine_message = "<span class='warning'><b>They look ABSURDLY strong!\n</b></span>"
-	stat_increase = 10
+	stat_increase = 6
 	unique = TRUE
 
 /datum/heretic_effect/strength/lesser
@@ -57,13 +57,13 @@
 
 /datum/heretic_effect/tough_skin/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.species.brute_mod = 0.8
-	user.STAT_LEVEL(end) += 4
+	user.species.brute_mod = 0.85
+	user.STAT_LEVEL(end) += 3
 
 /datum/heretic_effect/tough_skin/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
 	user.species.brute_mod = 1
-	user.STAT_LEVEL(end) -= 4
+	user.STAT_LEVEL(end) -= 3
 
 /datum/heretic_effect/healing
 	name = "Healing Aura"

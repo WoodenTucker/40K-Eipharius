@@ -22,5 +22,5 @@
 
 /datum/rune_recipe/nurgle/nganga
 	name = "Nganga Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/internal/brain)
+	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/external/head)
 	product_path = /obj/structure/nganga

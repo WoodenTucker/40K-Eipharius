@@ -473,7 +473,7 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 100
-					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["guardsman"])
 		if(GLOB.thrones < 200)
@@ -490,7 +490,7 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 200
-					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["medicae"])
 		if(GLOB.thrones < 250) 
@@ -507,7 +507,7 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 250
-					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["specialist"])
 		if(GLOB.thrones < 300) 
@@ -524,7 +524,7 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 300
-					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["janissary"])
 		if(GLOB.thrones < 400) 
@@ -541,7 +541,7 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 400
-					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["scion"])
 		if(GLOB.thrones < 500) 
@@ -558,7 +558,7 @@
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
 					GLOB.thrones -= 500
-					message_admins("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
+					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["ork"])
 		if(GLOB.thrones < 500)

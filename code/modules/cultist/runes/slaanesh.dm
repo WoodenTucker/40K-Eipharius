@@ -16,6 +16,12 @@
 	delete_items = TRUE
 	product_path = /obj/item/material/sword/skinning_knife
 
+/datum/rune_recipe/slaanesh/dagger
+	name = "Slaanesh Dagger"
+	ingredients = list(/obj/item/material/sword/combat_knife)
+	delete_items = TRUE
+	product_path = /obj/item/material/sword/slehdagger
+
 /datum/rune_recipe/slaanesh/arm
 	name = "Enchant Arm Rite"
 	ingredients = list(/obj/item/melee/whip/lashoftorment, /obj/item/clothing/mask/masquerade, /obj/item/clothing/suit/armor/slanclothing)

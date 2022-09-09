@@ -33,7 +33,6 @@
 		if(to_engrave)
 			to_chat(user, "You engrave your helmet with: \"[to_engrave]\"")
 			desc += " Engraved on the helmet is: <b>\"[to_engrave]\"</b>"
-			log_and_message_admins("[user] has engraved [to_engrave] on his helmet", user, user.loc)
 			engraved = TRUE
 			return
 		return

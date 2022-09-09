@@ -604,7 +604,7 @@ var/list/admin_verbs_mentor = list(
 			var/light_impact_range = input("Light impact range (in tiles):") as num
 			var/flash_range = input("Flash range (in tiles):") as num
 			explosion(epicenter, devastation_range, heavy_impact_range, light_impact_range, flash_range)
-	log_and_message_admins("created an admin explosion at [epicenter.loc].")
+	log_admin("created an admin explosion at [epicenter.loc].")
 	feedback_add_details("admin_verb","DB") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
 
 /client/proc/give_disease2(mob/T as mob in SSmobs.mob_list) // -- Giacom
@@ -635,7 +635,6 @@ var/list/admin_verbs_mentor = list(
 	infect_virus2(T,D,1)
 
 	feedback_add_details("admin_verb","GD2") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	log_and_message_admins("gave [key_name(T)] a [greater] disease2 with infection chance [D.infectionchance].")
 
 /client/proc/togglebuildmodeself()
 	set name = "Toggle Build Mode Self"
@@ -946,7 +945,6 @@ var/list/admin_verbs_mentor = list(
 	if(!S) return
 	T.add_spell(new S)
 	feedback_add_details("admin_verb","GS") //If you are copy-pasting this, ensure the 2nd parameter is unique to the new proc!
-	log_and_message_admins("gave [key_name(T)] the spell [S].")
 
 /*
 /client/proc/create_party() // --Wel //Needs more work

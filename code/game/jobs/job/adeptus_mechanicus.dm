@@ -58,8 +58,8 @@
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3 // CHANGE THIS To 2 ONCE WE ADD EXPLORATOR
+	spawn_positions = 3
 	supervisors = "You obey the Magos Dominus and secondarily, the Magos Biologis"
 	selection_color = "#B2A15F"
 	economic_modifier = 5

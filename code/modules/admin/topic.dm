@@ -1162,7 +1162,6 @@
 
 		if(config.allow_admin_rev)
 			L.revive()
-			log_and_message_admins("healed / Rrvived [key_name(L)]")
 		else
 			to_chat(usr, "Admin Rejuvinates have been disabled")
 
@@ -1351,14 +1350,12 @@
 			H.equip_to_slot_or_del( new /obj/item/reagent_containers/food/snacks/cookie(H), slot_r_hand )
 			if(!(istype(H.r_hand,/obj/item/reagent_containers/food/snacks/cookie)))
 				log_admin("[key_name(H)] has their hands full, so they did not receive their cookie, spawned by [key_name(src.owner)].")
-				message_admins("[key_name(H)] has their hands full, so they did not receive their cookie, spawned by [key_name(src.owner)].")
 				return
 			else
 				H.update_inv_r_hand()//To ensure the icon appears in the HUD
 		else
 			H.update_inv_l_hand()
 		log_admin("[key_name(H)] got their cookie, spawned by [key_name(src.owner)]")
-		message_admins("[key_name(H)] got their cookie, spawned by [key_name(src.owner)]")
 		feedback_inc("admin_cookies_spawned",1)
 		to_chat(H, "<span class='notice'>Your prayers have been answered!! You received the <b>best cookie</b>!</span>")
 
@@ -1670,7 +1667,6 @@
 									var/mob/M = O
 									M.real_name = obj_name
 
-		log_and_message_admins("created [number] [english_list(paths)]")
 		return
 
 	else if(href_list["admin_secrets_panel"])

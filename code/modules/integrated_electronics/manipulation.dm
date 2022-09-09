@@ -67,7 +67,7 @@
 				return
 			var/contained = reagents.get_reagents()
 			var/trans = reagents.trans_to_mob(AM, inject_amount(), CHEM_BLOOD)
-			message_admins("\The [assembly] injected \the [AM] with [trans]u of [english_list(contained)].")
+			log_admin("\The [assembly] injected \the [AM] with [trans]u of [english_list(contained)].")
 			to_chat(AM, "<span class='notice'>You feel a tiny prick!</span>")
 			visible_message("<span class='warning'>\The [assembly] injects \the [AM]!</span>")
 		else

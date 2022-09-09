@@ -14,11 +14,11 @@
 
 /datum/heretic_effect/tough/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.STAT_LEVEL(end) += 4
+	user.STAT_LEVEL(end) += 5
 
 /datum/heretic_effect/tough/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.STAT_LEVEL(end) -= 4
+	user.STAT_LEVEL(end) -= 5
 
 
 // Makes nurgle cultists more durable. Visible change so rather powerful. Maybe?
@@ -54,16 +54,16 @@
 	set desc = "Heal injuries in exchange for taking toxin damage, and tiring yourself."
 	if(staminaloss >= staminaexhaust / 2)
 		return FALSE
-	visible_message("[src]'s body covers its wounds with large puss-filled growths.")
-	adjustOxyLoss(-10)
-	adjustBruteLoss(-10)
-	adjustToxLoss(30)
-	adjustBrainLoss(-10)
+	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
+	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
+	adjustOxyLoss(-1)
+	adjustToxLoss(-1)
+	adjustBruteLoss(-4)
+	adjustFireLoss(-4)
 	eye_blurry = 0
 	ear_deaf = 0
 	ear_damage = 0
 	inject_blood(src, 50)
-	adjustStaminaLoss(staminaexhaust / 2)
 	for(var/obj/item/organ/external/temp in organs)
 		temp.wounds.Cut()
 
