@@ -40,8 +40,8 @@
 	desc = "A truncheon for beating other people in the same trench as you."
 	icon_state = "trench_club1"
 	item_state = "WU-club"
-	force = 25 //These things pack a punch.
-	block_chance = 25
+	force = 31 //These things pack a punch.
+	block_chance = 20
 
 /obj/item/melee/classic_baton/trench_club/New()
 	..()

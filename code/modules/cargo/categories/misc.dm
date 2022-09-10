@@ -13,7 +13,7 @@
 
 /datum/cargo_entry/misc/vatboy
 	name = "Vat-Grown Human"
-	cost = 100
+	cost = 250
 	item_path = /obj/structure/closet/crate/vatgrownboy
 
 /datum/cargo_entry/misc/smokes

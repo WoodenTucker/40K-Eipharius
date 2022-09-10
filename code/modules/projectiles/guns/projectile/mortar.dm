@@ -169,7 +169,6 @@
 
 /obj/item/mortar_launcher/basilisk/launch_mortar(atom/A, mob/living/user, mortar_type)
     if(prob(rand(15, 65))) //Mortar meme override for hereteks
-        log_and_message_admins("[user] has tried to fire a mortar, but it malfunctioned!", user)
         if(prob(50))
             user.visible_message("<span class='danger'>[user] fires the [src], but it malfunctions and falls onto the ground!</span>")
             playsound(src, 'sound/weapons/mortar_fire.ogg', 100, FALSE)

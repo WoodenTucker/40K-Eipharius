@@ -1396,7 +1396,7 @@
 /mob/living/carbon/human/proc/handle_species_regen()
 	var/obj/item/organ/external/affecting
 	var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
-	if(species.name == "Astartes" || species.name == "Ork") //Simple way to species check
+	if(species.name == "Astartes" || species.name == "Orkz") //Simple way to species check
 		shock_stage = 0
 
 		heal_organ_damage(0.2, 0.2)

@@ -62,11 +62,8 @@
 	name = "energy axe"
 	desc = "An energised battle axe."
 	icon_state = "axe0"
-	//active_force = 150 //holy...
-	active_force = 60
+	active_force = 35
 	active_throwforce = 35
-	//force = 40
-	//throwforce = 25
 	force = 20
 	throwforce = 10
 	throw_speed = 1
@@ -94,12 +91,9 @@
 	desc = "A taU blade using high heated plasma to cut through things."
 	icon_state = "tau0"
 	item_state = "EB-knife"
-	//active_force = 150 //holy...
-	active_force = 30
-	active_throwforce = 35
-	//force = 40
-	//throwforce = 25
-	force = 20
+	active_force = 26
+	active_throwforce = 21
+	force = 24
 	throwforce = 10
 	throw_speed = 1
 	throw_range = 5
@@ -109,7 +103,6 @@
 	origin_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	sharp = 1
-	edge = 1
 
 /obj/item/melee/energy/tau/activate(mob/living/user)
 	..()
@@ -289,19 +282,21 @@
 /obj/item/melee/energy/powersword //basis for other power weapons
 	name = "Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, the void shield will cut through almost anything that it touches when its on, so make sure you don't cut yourself."
+	item_state = "powersword"
 	icon_state = "powersword"
-	active_force = 38 //should be enough to cut off most limbs
-	active_throwforce = 38
+	wielded_icon = "powersword-w"
+	active_force = 42 //should be enough to cut off most limbs
+	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-	force = 33 //its just a adamantium sword when offline
-	throwforce = 33
+	force = 37 //its just a adamantium sword when offline
+	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
-	block_chance = 45
+	block_chance = 15
 	sales_price = 90
 	weapon_speed_delay = 7
+	edge = 1
 	sharp = TRUE
-	edge = TRUE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -325,18 +320,18 @@
 /obj/item/melee/energy/powersword/astartes/ingelldina
 	name = "Ingelldina Pattern Power Sword"
 	desc = "A adamantium sword with a void shield generator inside of it, this one is very long and heavy, clearly having been made for one of the sons of the emperor."
-	item_state = "inqchainsword" // There is no on-mob for powersword we must use this. It looks alright.
+	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
-	active_force = 44 //should be enough to cut off most limbs
-	active_throwforce = 44
-	force = 40 //its just a adamantium sword when offline
-	throwforce = 40
+	wielded_icon = "powersword-w"
+	active_force = 45 //should be enough to cut off most limbs
+	active_throwforce = 20
+	force = 41 //its just a adamantium sword when offline
+	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
 	sharp = TRUE
-	edge = TRUE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
-	block_chance = 50
+	block_chance = 30
 	sales_price = 120
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
@@ -350,15 +345,18 @@
 	name = "Power Claws"
 	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
 	icon_state = "powerclaw-alt_mag"
-	active_force = 40 //This should be enough to cut off most limbs in a few hits
+	item_state = "klevec"
+	wielded_icon = "klevec"
+	active_force = 38 //This should be enough to cut off most limbs in a few hits
 	active_throwforce = 0
 	force = 35
 	throwforce = 1
 	throw_speed = 1
 	throw_range = 1
-	weapon_speed_delay = 6
+	weapon_speed_delay = 7
+	edge = 1
 	sharp = TRUE
-	block_chance = 35 //not the best block chance, but, you can have two of them!
+	block_chance = 11 //not the best block chance, but, you can have two of them!
 	sales_price = 80
 	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -406,20 +404,18 @@
 	item_state = "hypogauntlet_on"
 	wielded_icon = "trenchaxe-w"
 	str_requirement = 18 //this shouldn't even be here but just in case of someone abusing bugs to get the apothecary's power armor
-	force = 60 //sharp enough to penetrate ceramite and adamantium alike
-	block_chance = 70 //apothecaries are based
+	force = 30 //sharp enough to penetrate ceramite and adamantium alike
+	block_chance = 10 //apothecaries are based
 	armor_penetration = 50 //VERY fucking sharp
 	item_flags = ITEM_FLAG_NODROP
 	sharp = TRUE
-	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 10 //should be 5 or 3 seconds
+	weapon_speed_delay = 9 //should be 5 or 3 seconds
 	sharp = 1
-	edge = 1
 	unacidable = 1
 
 /obj/item/reagent_containers/hypospray/vial/narthecium/do_surgery(mob/living/carbon/M, mob/living/user)

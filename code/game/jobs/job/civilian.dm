@@ -34,6 +34,7 @@
 		H.add_stats(rand(10,11), rand(8), rand(6,16), rand(7,8)) //extremely simple minded and weak
 		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-300)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
 		H.bowels = 0 //until someone tells me that servitors eat and shit this shall be it
@@ -63,7 +64,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
-	cultist_chance = 30
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -73,6 +74,7 @@
 		H.add_skills(rand(6,8),rand(6,7),rand(1,6),rand(1,2),1)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-50)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 
@@ -108,6 +110,7 @@
 		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-50)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
 
@@ -145,6 +148,7 @@
 		H.add_stats(rand(18,18), rand(8,11), rand(10,16), rand(8,12)) //simple minded
 		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-300)
 		H.warfare_faction = IMPERIUM
 		H.bladder = 0
 		H.bowels = 0 //until someone tells me that servitors eat and shit this shall be it
@@ -191,6 +195,7 @@
 	lmg_skill = 2
 	smg_skill = 2
 	species_role = "Child"
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -198,6 +203,7 @@
 		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(10,14))
 		H.add_skills(rand(6,9),rand(3,6),5,rand(6,7),6)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-40)
 		H.witchblood()
 		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
 		H.assign_child_quirk()

@@ -133,7 +133,6 @@ var/global/list/sparring_attack_cache = list()
 	shredding = 1
 	damage = 25
 	sharp = 1
-	edge = 1
 
 /datum/unarmed_attack/punch
 	attack_verb = list("punched")

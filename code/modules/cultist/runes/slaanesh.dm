@@ -4,9 +4,9 @@
 	delete_items = FALSE
 	special 	 = TRUE
 
-/datum/rune_recipe/slaanesh/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
-	if(target.stat != DEAD)
+/datum/rune_recipe/slaanesh/conversion/do_special(mob/living/carbon/user, obj/effect/cleanable/heretic_rune/rune, list/items)
+	var/mob/living/carbon/human/target = items[1]
+	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/slaanesh/N = GOD(GOD_SLAANESH)
 		N.join_request(target)
 
@@ -15,6 +15,12 @@
 	ingredients = list(/obj/item/material/sword/combat_knife)
 	delete_items = TRUE
 	product_path = /obj/item/material/sword/skinning_knife
+
+/datum/rune_recipe/slaanesh/dagger
+	name = "Slaanesh Dagger"
+	ingredients = list(/obj/item/material/sword/combat_knife)
+	delete_items = TRUE
+	product_path = /obj/item/material/sword/slehdagger
 
 /datum/rune_recipe/slaanesh/arm
 	name = "Enchant Arm Rite"

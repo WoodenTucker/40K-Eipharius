@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/captains
-	name = "captain's locker"
+	name = "locker of the lord"
 	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
@@ -9,24 +9,18 @@
 
 /obj/structure/closet/secure_closet/captains/WillContain()
 	return list(
-		new/datum/atom_creator/weighted(list(/obj/item/storage/backpack/captain, /obj/item/storage/backpack/satchel/satchel_cap)),
-		new/datum/atom_creator/simple(/obj/item/storage/backpack/dufflebag/captain, 50),
+		/obj/item/clothing/accessory/holster/armpit,
+		/obj/item/clothing/accessory/medal/iron/Administratum,
+		/obj/item/clothing/glasses/cadiangoggles/elite,
+		/obj/item/clothing/glasses/monocle,
+		/obj/item/clothing/suit/armor/rtdrip,
 		/obj/item/clothing/suit/captunic,
-		/obj/item/clothing/suit/captunic/capjacket,
-		/obj/item/clothing/head/caphat/cap,
-		/obj/item/clothing/under/rank/captain,
-		/obj/item/clothing/suit/armor/vest/opvest,
-		/obj/item/cartridge/captain,
-		/obj/item/clothing/head/helmet,
-		/obj/item/clothing/shoes/brown,
-		/obj/item/device/radio/headset/heads/captain,
-		/obj/item/clothing/gloves/captain,
-		/obj/item/gun/energy/gun,
-		/obj/item/clothing/suit/armor/captain,
-		/obj/item/melee/telebaton,
-		/obj/item/clothing/under/dress/dress_cap,
 		/obj/item/clothing/head/caphat/formal,
 		/obj/item/clothing/under/captainformal,
+		/obj/item/clothing/suit/armor/vest/opvest,
+		/obj/item/clothing/head/helmet,
+		/obj/item/gun/energy/gun,
+		/obj/item/melee/telebaton
 	)
 
 /obj/structure/closet/secure_closet/hop

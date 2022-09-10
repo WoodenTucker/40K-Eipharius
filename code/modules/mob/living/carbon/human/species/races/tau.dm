@@ -86,6 +86,7 @@
 			src.add_skills(rand(4,9),rand(8,13),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
+			src.adjustStaminaLoss(-70)
 			src.name = "Shas [name]"
 			src.real_name = "Shas [real_name]"
 			client?.color = null

@@ -9,9 +9,9 @@
 	delete_items = FALSE
 	special = TRUE
 
-/datum/rune_recipe/nurgle/conversion/do_special(mob/living/carbon/human/user, var/list/items)
-	var/mob/living/carbon/human/target = locate(/mob/living/carbon/human) in items
-	if(target.stat != DEAD)
+/datum/rune_recipe/nurgle/conversion/do_special(mob/living/carbon/user, obj/effect/cleanable/heretic_rune/rune, list/items)
+	var/mob/living/carbon/human/target = items[1]
+	if(target.stat != DEAD && target.mind)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_request(target)
 
@@ -22,5 +22,5 @@
 
 /datum/rune_recipe/nurgle/nganga
 	name = "Nganga Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/internal/brain)
+	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/external/head)
 	product_path = /obj/structure/nganga

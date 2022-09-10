@@ -37,7 +37,7 @@
 	latejoin_at_spawnpoints = 1
 	announced = 0
 	species_role = "Astartes"
-	cultist_chance = 10
+	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -99,7 +99,7 @@
 		H.h_style = "Bald"
 		H.bladder = -INFINITY
 		H.bowels = -INFINITY //integrated shitter
-		H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+		H.adjustStaminaLoss(-250) //astartes have basically infinite fight in them
 		H.vice = null //off for now
 
 /datum/job/envoy/equip(var/mob/living/carbon/human/H)

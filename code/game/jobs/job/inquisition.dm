@@ -4,8 +4,8 @@
 	title = "Interrogator"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 2 // i will make acolyte a seperate job later. can't be bothered atm and this works, however lore breaky for now.
-	spawn_positions = 2
+	total_positions = 1 // Interrogator has one slot. Admins must enable further slots.
+	spawn_positions = 1
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Inquisition and Your Lord Inquisitor"
@@ -20,6 +20,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -34,7 +35,8 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = get_all_accesses()
-		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. You are capable of independent work without them and their retinue, but should always follow their will above your own. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralising and erasing traces of heresy, chaos, xenos and daemons. It is expected that you give your life to save the Inquisitor's, yet should they fall. You are expected to take on their duties as the new Inquisitor. Remember your actions will always be tested by the Holy Inquisition. Do not falter in your duties, as the Holy Inquisiton is always watching.</font></b></span>")
+		H.adjustStaminaLoss(-90)
+		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralizing and erasing traces of heresy, chaos, xenos and daemons. Now more then ever your actions are being weighed by not only your master, but the inquisition - this mission is the last opportunity to clear the names of not only the Lord Inquisitor but that of his entire retinue...</font></b></span>")
 
 /datum/job/acolyte/equip(var/mob/living/carbon/human/H)
 	. = ..()
@@ -74,6 +76,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
+		H.adjustStaminaLoss(-100)
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Tempestus Scion attached to the retinue of the Lord Trader, your services ultimately being in the protection of imperial assets here on Eipharius on behalf of the Astra Militarum. It's barely been a week since leaving your Regiment and you are still adjusting to the new reality of your posting. Loyal to the Emperor above all else, Tempestus Scions provide the Imperial High Command with a core of flexible, nigh-incorruptible soldiers. Deployed sparingly, they can be depended upon to complete any mission, no matter how deadly. Racing into battle aboard armoured transports or plummeting down on Grav-Chutes, the Scions are the sharp edge of the Imperial Guard war machine.</font></b></span>")
 
@@ -101,6 +104,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -116,7 +120,8 @@
 		H.witchblood()
 		H.inquisitor = 1
 		H.get_idcard()?.access = get_all_accesses()
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Throne Agent, Loyal servant of the Imperium and Lords of the Inquisition. A single drop of mercy may result in the spilled bloods of untold millions, steel your heart to their suffering. Every person, asset and object on this planet is a tool or resource to be exploited. Excommunication and the dull thud of a bolt pistol is what awaits you in failure. Your acolytes personally selected to serve only you, whether they survive and rise to the ranks of Interrogator shall be determined in the coming weeks.</font></b></span>")
+		H.adjustStaminaLoss(-110)
+		to_chat(H, "<span class='notice'><b><font size=3>You are extremis diabolus, an inquisitor in service to the Ordos that has been considered for reasons up to you, a liability to the inquisition. Every person, asset and object on this planet is a tool or resource to be exploited. Humiliation, torture and the dull thud of a bolt pistol is what awaits you in failure should you not prove yourself here. Your acolytes personally selected to serve only you, whether they survive the horrid taint associated with your name and rise to the ranks of Inquisitor shall be determined in the coming weeks.</font></b></span>")
 
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()

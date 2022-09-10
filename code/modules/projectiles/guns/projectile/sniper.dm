@@ -124,7 +124,7 @@
 	force = 15
 	one_hand_penalty = 10
 	fire_delay = 8
-	accuracy = -4
+	accuracy = -3
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -175,7 +175,7 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/bolter
 	one_hand_penalty = 25
-	accuracy = -4
+	accuracy = -3
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
