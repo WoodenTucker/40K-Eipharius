@@ -43,7 +43,7 @@
 
 /datum/cargo_entry/melee/drusian
 	name = "Drusian Chainsword"
-	cost = 90
+	cost = 94
 	item_path = /obj/item/melee/chain/inqcs
 
 /datum/cargo_entry/melee/powersword
