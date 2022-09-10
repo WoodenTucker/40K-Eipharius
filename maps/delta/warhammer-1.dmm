@@ -993,7 +993,6 @@
 /obj/structure/barricade{
 	color = "grey"
 	},
-/obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2376,6 +2375,11 @@
 	force = 39;
 	name = "Seolite Blade"
 	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/dark)
+"jv" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/landmark/animal/zygote1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "jw" = (
@@ -7256,13 +7260,17 @@
 	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=5,"bomb"=0,"bio"=100,"rad"=100)
 	},
 /obj/item/clothing/suit/cultrobes/alt,
-/obj/item/clothing/suit/cultrobes/alt,
 /obj/item/melee/baton,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/device/radio/headset/red_team/sl_alpha,
 /obj/item/clothing/suit/armor/guardsman/bloodpact{
-	name = "strange armor"
+	name = "strange armor";
+	armor = list("melee" = 38, "bullet" = 38, "laser" = 38, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 20)
+	},
+/obj/item/clothing/suit/armor/guardsman/bloodpact{
+	name = "strange armor";
+	armor = list("melee" = 38, "bullet" = 38, "laser" = 38, "energy" = 20, "bomb" = 30, "bio" = 10, "rad" = 20)
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -7529,10 +7537,10 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves)
 "Do" = (
-/obj/effect/floor_decal/turf/plating,
-/mob/living/simple_animal/hostile/smalldemon/chaos,
+/obj/effect/water/bottom,
+/obj/effect/water/top,
 /turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/dark)
+/area/cadiaoutpost/oa/caves/undercity)
 "Dp" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -7852,7 +7860,7 @@
 /obj/effect/water/bottom,
 /obj/effect/water/top,
 /obj/effect/decal/cleanable/vomit,
-/turf/simulated/floor/dirty/indestructable/lightless,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "EF" = (
 /obj/effect/floor_decal/turf/brick,
@@ -8999,6 +9007,11 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/caves/undercity)
+"IL" = (
+/obj/effect/floor_decal/turf/plating,
+/obj/effect/landmark/animal/zygote1,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "IM" = (
 /obj/machinery/light{
@@ -10765,7 +10778,7 @@
 	deployed = 1;
 	icon_state = "beartrap1"
 	},
-/turf/simulated/floor/dirty/indestructable/lightless,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "PF" = (
 /obj/structure/table/reinforced{
@@ -10807,7 +10820,7 @@
 /obj/effect/water/bottom,
 /obj/effect/water/top,
 /obj/effect/decal/cleanable/poo,
-/turf/simulated/floor/dirty/indestructable/lightless,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "PL" = (
 /obj/structure/table/steel,
@@ -11005,7 +11018,7 @@
 /obj/effect/water/bottom,
 /obj/effect/water/top,
 /mob/living/simple_animal/hostile/retaliate/rat,
-/turf/simulated/floor/dirty/indestructable/lightless,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "QB" = (
 /obj/effect/landmark/animal/rngretaliatespawner{
@@ -11818,7 +11831,7 @@
 /obj/effect/water/bottom,
 /obj/effect/water/top,
 /obj/item/reagent_containers/food/snacks/poo,
-/turf/simulated/floor/dirty/indestructable/lightless,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "Ua" = (
 /obj/item/material/shard,
@@ -11829,6 +11842,10 @@
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
+/area/cadiaoutpost/oa/caves/undercity)
+"Uc" = (
+/obj/structure/ladder/up,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "Ud" = (
 /obj/effect/floor_decal/turf/necro1,
@@ -12122,6 +12139,18 @@
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"Vn" = (
+/obj/machinery/door/airlock/arbiter{
+	color = "grey";
+	maxhealth = 3000;
+	name = "Groomlake Facility";
+	req_access = list(221,222,223)
+	},
+/mob/living/simple_animal/hostile/smalldemon/chaos,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "Vo" = (
 /turf/simulated/floor/carpet/green{
 	color = "grey"
@@ -12163,7 +12192,6 @@
 	name = "Secure Armory";
 	req_access = list(221,222,223)
 	},
-/mob/living/simple_animal/hostile/smalldemon/chaos,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -18580,7 +18608,7 @@ zo
 zo
 zo
 bI
-bI
+Vn
 zo
 zo
 zo
@@ -31680,7 +31708,7 @@ fR
 fR
 fR
 fR
-Lq
+IL
 VP
 Lq
 Lq
@@ -33018,7 +33046,7 @@ zZ
 zo
 AJ
 AJ
-Do
+AJ
 AJ
 eR
 AJ
@@ -33768,7 +33796,7 @@ ak
 PA
 Lq
 yr
-Lq
+pW
 fR
 fR
 fR
@@ -34025,7 +34053,7 @@ ak
 Lq
 Lq
 yr
-Lq
+pW
 fR
 fR
 fR
@@ -34282,8 +34310,8 @@ Lq
 Lq
 Lq
 yr
-Lq
-Lq
+pW
+yA
 fR
 fR
 fR
@@ -34538,9 +34566,9 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
-Lq
+yA
+yA
+yA
 fR
 fR
 pW
@@ -34796,8 +34824,8 @@ Lq
 Lq
 Lq
 Lq
-Lq
-Lq
+yA
+yA
 pW
 pW
 pW
@@ -35328,7 +35356,7 @@ AJ
 AJ
 AJ
 AJ
-AJ
+jv
 BF
 XK
 AJ
@@ -36608,7 +36636,7 @@ AJ
 Kg
 AJ
 AJ
-Do
+AJ
 AJ
 AJ
 ju
@@ -36854,7 +36882,7 @@ yr
 Lq
 Lq
 Zw
-Lq
+yA
 yA
 yA
 zm
@@ -37111,7 +37139,7 @@ yr
 Lq
 Lq
 Lq
-Lq
+yA
 yA
 yA
 zm
@@ -37134,7 +37162,7 @@ AJ
 AJ
 AJ
 AJ
-Do
+AJ
 VO
 PI
 PI
@@ -37369,7 +37397,7 @@ Lq
 Lq
 Zq
 Lq
-Lq
+yA
 yA
 zm
 AJ
@@ -49705,14 +49733,14 @@ PI
 PI
 vf
 jK
-bX
-bX
-bX
-bX
-bX
-bX
-bX
-bX
+Do
+Do
+Do
+Do
+Do
+Do
+Do
+Do
 vf
 PI
 PI
@@ -49961,15 +49989,15 @@ PI
 PI
 PI
 vf
-bX
-bX
+Do
+Do
 PK
-bX
+Do
 PE
-bX
+Do
 PK
-bX
-bX
+Do
+Do
 vf
 PI
 PI
@@ -50218,14 +50246,14 @@ PI
 PI
 PI
 vf
-bX
+Do
 EE
-bX
-bX
-bX
-bX
-bX
-bX
+Do
+Do
+Uc
+Do
+Do
+Do
 PE
 vf
 PI
@@ -50475,14 +50503,14 @@ PI
 PI
 PI
 vf
-bX
-bX
+Do
+Do
 TY
 Qy
-bX
-bX
-bX
-bX
+Do
+Do
+Do
+Do
 vf
 vf
 PI
@@ -50732,13 +50760,13 @@ PI
 PI
 PI
 vf
-bX
+Do
 PK
-bX
+Do
 PK
 EE
 TY
-bX
+Do
 vf
 vf
 vf
@@ -50990,10 +51018,10 @@ PI
 PI
 vf
 vf
-bX
+Do
 PE
-bX
-bX
+Do
+Do
 jK
 vf
 vf
@@ -51247,7 +51275,7 @@ PI
 PI
 vf
 vf
-bX
+Do
 vf
 vf
 vf
