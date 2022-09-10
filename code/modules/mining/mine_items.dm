@@ -164,9 +164,9 @@
 	desc = "A small tool for digging and moving dirt."
 	icon_state = "entrenching_tool"
 	item_state = "trench"
-	force = 25
+	force = 28
 	throwforce = 25
-	block_chance = 55
+	block_chance = 25
 	weapon_speed_delay = 7
 	w_class = ITEM_SIZE_SMALL
 
