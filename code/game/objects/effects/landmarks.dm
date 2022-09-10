@@ -268,6 +268,8 @@ Template:
 				/obj/item/material/sword/cane = 4,
 				/obj/item/melee/classic_baton/trench_club = 8,
 				/obj/item/melee/telebaton = 12,
+				/obj/item/melee/trench_axe/glaive/adamantine = 1,
+				/obj/item/melee/trench_axe/lance/adamantine = 1,
 				/obj/item/melee/trench_axe/glaive = 6,
 				/obj/item/melee/trench_axe/bardiche = 6,
 				/obj/item/melee/trench_axe/lance = 4,
