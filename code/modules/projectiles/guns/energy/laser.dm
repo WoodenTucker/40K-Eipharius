@@ -495,8 +495,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 115
 	sales_price = null
 	charge_meter = FALSE
-	cell_Type = /obj/item/cell/lasgun/small
-	ammoType = /obj/item/cell/lasgun/small
+	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
