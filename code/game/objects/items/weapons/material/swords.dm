@@ -11,11 +11,11 @@
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_HUGE
 	force = 35
-	block_chance = 35
+	block_chance = 10
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 //
 	sharp = 1
-	edge = 0
+	edge = 1
 	attack_verb = list("slashed", "sliced")
 	hitsound = "slash_sound"
 	var/atk_mode = SLASH
@@ -96,7 +96,7 @@
 		if(STAB)
 			atk_mode = STAB
 			to_chat(user, "You will now stab.")
-			edge = 0
+			edge = 1
 			sharp = 1
 			attack_verb = list("stabbed")
 			hitsound = "stab_sound"
@@ -113,7 +113,7 @@
 		if(SLASH)
 			atk_mode = SLASH
 			to_chat(user, "You will now slash.")
-			edge = FALSE
+			edge = TRUE
 			sharp = TRUE
 			attack_verb = list("slashed", "diced")
 			hitsound = "slash_sound"
@@ -132,7 +132,8 @@
 	icon_state = "sabre"
 	item_state = "sabre"
 	force = 33
-	block_chance = 43
+	force_wielded = 36
+	block_chance = 15
 	weapon_speed_delay = 7
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_LARGE
@@ -142,9 +143,10 @@
 	desc = "A lightweight iron blade with near perfect balance."
 	icon_state = "spatha"
 	item_state = "spatha"
-	force = 27
+	force = 26
+	force_wielded = 30
 	armor_penetration = 15
-	block_chance = 47
+	block_chance = 30
 	weapon_speed_delay = 6
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
@@ -154,9 +156,10 @@
 	desc = "A heavy iron broadsword."
 	icon_state = "claymore"
 	item_state = "claymore"
-	force = 36
+	force = 31
+	force_wielded = 39
 	armor_penetration = 10
-	block_chance = 35
+	block_chance = 18
 	weapon_speed_delay = 9
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_HUGE
@@ -170,7 +173,8 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
 	force = 25
-	block_chance = 50
+	force_wielded = 29
+	block_chance = 10
 	weapon_speed_delay = 6
 
 /obj/item/material/sword/machete/chopper
@@ -181,9 +185,10 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
-	force = 26
+	force = 22
+	force_wielded = 30
 	armor_penetration = 10
-	block_chance = 40
+	block_chance = 14
 	weapon_speed_delay = 7
 
 /obj/item/material/sword/machete/chopper/heavy
@@ -194,9 +199,10 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
-	force = 30
+	force = 27
+	force_wielded = 34
 	armor_penetration = 10
-	block_chance = 40
+	block_chance = 16
 	weapon_speed_delay = 8
 
 /obj/item/material/sword/demon
@@ -208,9 +214,10 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14
-	force = 35
+	force = 31
+	force_wielded = 38
 	armor_penetration = 10
-	block_chance = 45
+	block_chance = 14
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 7
@@ -226,10 +233,11 @@
 	item_state = "trenchaxe"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 31
+	force = 25
+	force_wielded = 35
 	armor_penetration = 10
 	throwforce = 18
-	block_chance = 30
+	block_chance = 12
 	sharp = TRUE
 	hitsound = "slash_sound"
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
@@ -238,6 +246,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
 	w_class = ITEM_SIZE_HUGE
+	edge = 1
 
 /obj/item/melee/trench_axe/glaive // glaive, bone spear, lance, bardiche
 	name = "saintie"
@@ -245,10 +254,11 @@
 	icon_state = "glaive"
 	item_state = "spear"
 	wielded_icon = "spear-w"
-	force = 37
+	force = 25
+	force_wielded = 38
 	armor_penetration = 10
 	throwforce = 18
-	block_chance = 40
+	block_chance = 26
 	weapon_speed_delay = 11
 	w_class = ITEM_SIZE_HUGE
 
@@ -258,10 +268,11 @@
 	icon_state = "bardiche"
 	item_state = "savaxe"
 	wielded_icon = "savaxe"
-	force = 33
+	force = 22
+	force_wielded = 36
 	armor_penetration = 10
 	throwforce = 15
-	block_chance = 40
+	block_chance = 12
 	weapon_speed_delay = 8
 	w_class = ITEM_SIZE_HUGE
 
@@ -271,11 +282,13 @@
 	icon_state = "bone_spear"
 	item_state = "bone_spear"
 	wielded_icon = "bone_spear-w"
-	force = 26
+	force = 25
+	force_wielded = 30
 	armor_penetration = 10
 	throwforce = 22
-	block_chance = 50
+	block_chance = 22
 	weapon_speed_delay = 6
+	edge = 0
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/trench_axe/lance
@@ -284,10 +297,12 @@
 	icon_state = "lance"
 	item_state = "lance"
 	wielded_icon = "lance-w"
-	force = 42
-	armor_penetration = 20
-	block_chance = 30
-	weapon_speed_delay = 14
+	force = 21
+	force_wielded = 41
+	armor_penetration = 10
+	block_chance = 24
+	weapon_speed_delay = 11
+	edge = 0
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/material/sword/commissword/sabre
@@ -296,7 +311,7 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "sabre"
 	item_state = "sabre"
-	block_chance = 65
+	block_chance = 16
 	sales_price = 35
 	armor_penetration = 5
 
@@ -308,9 +323,10 @@
 	icon_state = "choppa"
 	item_state = "choppa"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 33
+	force = 26
+	force_wielded = 36
 	armor_penetration = 20
-	block_chance = 35
+	block_chance = 5
 	sharp = 1
 	hitsound = "slash_sound"
 	w_class = ITEM_SIZE_NORMAL
@@ -328,9 +344,10 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	str_requirement = 13
-	force = 44
-	armor_penetration = 20
-	block_chance = 65
+	force = 32
+	force_wielded = 52
+	armor_penetration = 10
+	block_chance = 20
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
 	sales_price = 0
@@ -346,18 +363,20 @@
 	wielded_icon = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 13
-	force = 44
+	force = 37
+	force_wielded = 44
 	armor_penetration = 15
-	block_chance = 37
+	block_chance = 10
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 9
+	weapon_speed_delay = 10
 	sales_price = 50
 	w_class = ITEM_SIZE_HUGE
+	edge = 1
 
 /obj/item/melee/chain/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -368,18 +387,20 @@
 	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 11
-	force = 42
-	armor_penetration = 10
-	block_chance = 44
+	force_wielded = 41
+	force = 35
+	armor_penetration = 9
+	block_chance = 15
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 9
+	weapon_speed_delay = 10
 	sales_price = 45
 	w_class = ITEM_SIZE_HUGE
+	edge = 1
 
 /obj/item/melee/chain/inqcs/guard // making them inqcs because it has the shittiest stats, dont want these to be strong
 	name = "Imperial Guard chainsword" //add it to guard outfits later down the track
@@ -388,6 +409,9 @@
 	item_state = "inqchainsword"
 	sales_price = 40
 	w_class = ITEM_SIZE_HUGE
+	weapon_speed_delay = 10
+	force_wielded = 39
+	force = 33
 
 /obj/item/melee/chain/inqcs/gold
 	name = "Terra Pattern Chainsword" //add it to RT's vault
@@ -406,18 +430,20 @@
 	wielded_icon = "pcsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 16
-	force = 45
+	force = 38
+	force_wielded = 44
 	armor_penetration = 25
-	block_chance = 55
+	block_chance = 20
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 8
+	weapon_speed_delay = 9
 	sales_price = 65
 	w_class = ITEM_SIZE_HUGE
+	edge = 1
 
 /obj/item/melee/chain/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -427,10 +453,10 @@
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
 	str_requirement = 13
-	force = 25// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 45
+	force = 28// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 44
 	armor_penetration = 30
-	block_chance = 35
+	block_chance = 10
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -440,8 +466,9 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 11
+	weapon_speed_delay = 12
 	sales_price = 70
+	edge = 1
 
 /obj/item/melee/chain/pcsword/khorneaxe
 	name = "Khornate Chainaxe"
@@ -451,8 +478,9 @@
 	item_state = "chainaxe"
 	wielded_icon = "chainaxe"
 	str_requirement = 13
-	force = 42 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	block_chance = 35
+	force = 35 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force_wielded = 42
+	block_chance = 15
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -462,8 +490,9 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 8
-	sales_price = 85
+	weapon_speed_delay = 9
+	sales_price = 75
+	edge = 1
 
 // KNIVES AND SMALL WEAPONS //
 // KNIVES AND SMALL WEAPONS //
@@ -475,8 +504,9 @@
 	icon_state = "combatknife"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 14
-	block_chance = 35
+	force = 17
+	force_wielded = 20
+	block_chance = 20
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
@@ -490,16 +520,18 @@
 	name = "trench knife"
 	desc = "For self defense, and self offense."
 	icon_state = "knife_trench"
-	force = 16
-	block_chance = 50
+	force = 19
+	force_wielded = 22
+	block_chance = 25
 	weapon_speed_delay = 5
 
 /obj/item/material/sword/combat_knife/bowie
 	name = "bowie knife"
 	desc = "For self defense, and self offense."
 	icon_state = "knife_bowie"
-	force = 18
-	block_chance = 60
+	force = 21
+	force_wielded = 24
+	block_chance = 28
 	weapon_speed_delay = 5
 
 /obj/item/material/sword/combat_knife/glaive
@@ -507,9 +539,10 @@
 	desc = "A modified glaive head turned into a metal monstrosity."
 	icon_state = "glaive-dagger"
 	item_state = "salvagedmachete"
-	force = 24
+	force = 25
+	force_wielded = 28
 	armor_penetration = 10
-	block_chance = 30
+	block_chance = 20
 	weapon_speed_delay = 9
 
 /obj/item/material/sword/combat_knife/catachan
@@ -519,9 +552,10 @@
 	icon_state = "catachanfang"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 22
+	force = 25
+	force_wielded = 28
 	armor_penetration = 10
-	block_chance = 45
+	block_chance = 38
 	weapon_speed_delay = 5
 
 
@@ -549,9 +583,10 @@
 	icon_state = "chaos_knife"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 18
+	force = 21
+	force_wielded = 24
 	armor_penetration = 15
-	block_chance = 30
+	block_chance = 20
 	sales_price = 39
 	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
@@ -569,9 +604,10 @@
 	icon_state = "slaanesh_dagger"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 18
+	force = 21
+	force_wielded = 24
 	armor_penetration = 15
-	block_chance = 30
+	block_chance = 20
 	sales_price = 39
 	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL
@@ -589,8 +625,10 @@
 	item_state = "scythe"
 	desc = "A sharp and curved blade on a long fibremetal handle, this tool makes it easy to reap what you sow."
 	force = 22
+	force_wielded = 26
+	block_chance = 25
 	armor_penetration = 0
-	weapon_speed_delay = 8
+	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1
 	throw_range = 3
@@ -606,13 +644,15 @@
 	icon_state = "commissword"
 	item_state = "commissword"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 34
+	force = 33
+	force_wielded = 37
 	sharp = 1
-	block_chance = 50
+	block_chance = 18
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 0
+	weapon_speed_delay = 7
 
 /obj/item/material/sword/slaanesh
 	name = "slaanesh sword"
@@ -621,13 +661,15 @@
 	icon_state = "slaanesh_sword"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 34
+	force = 33
+	force_wielded = 36
 	sharp = 1
-	block_chance = 30
+	block_chance = 15
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 90
+	weapon_speed_delay = 7
 
 /obj/item/material/sword/hellblade
 	name = "hellblade sword"
@@ -636,13 +678,15 @@
 	icon_state = "hellblade"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
-	force = 39
+	force = 33
+	force_wielded = 40
 	sharp = 1
-	block_chance = 65
+	block_chance = 18
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 200
+	weapon_speed_delay = 7
 
 
 /obj/item/material/sword/skinning_knife
@@ -652,8 +696,9 @@
 	icon_state = "artknife"
 	item_state = "artknife"//"knife"
 	attack_verb = list("slashed")
-	force = 21
-	block_chance = 30
+	force = 24
+	force_wielded = 27
+	block_chance = 20
 	sales_price = 30
 	weapon_speed_delay = 5
 	w_class = ITEM_SIZE_SMALL

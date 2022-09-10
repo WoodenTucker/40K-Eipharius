@@ -45,6 +45,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Dominus, you are a specialist in all forms of technology. You are the highest ranking member of the Adeptus Mechanicus on the outpost, your duty is to ensure all machine spirits remain happy and willing to work. Use your talents and the skills of your tech priests to further the goals of the Mechanicus. Praise the Omnissiah!</font></b></span>")
 		H.bladder = -INFINITY
+		H.adjustStaminaLoss(-90)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
@@ -87,6 +88,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.adjustStaminaLoss(-70)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
@@ -130,6 +132,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.adjustStaminaLoss(-80)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
@@ -191,6 +194,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.adjustStaminaLoss(-100)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
