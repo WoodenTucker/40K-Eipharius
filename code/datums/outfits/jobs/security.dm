@@ -26,17 +26,17 @@
 	id_type = /obj/item/card/id/security/warden
 	pda_type = /obj/item/device/pda/warden
 
-/decl/hierarchy/outfit/job/security/detective
-	name = OUTFIT_JOB_NAME("Detective")
+/decl/hierarchy/outfit/job/Investigator
+	name = OUTFIT_JOB_NAME("Investigator")
 	head = /obj/item/clothing/head/det/grey
 	uniform = /obj/item/clothing/under/det/black
 	suit = /obj/item/clothing/suit/storage/det_trench/grey
 	l_pocket = /obj/item/flame/lighter/zippo
 	shoes = /obj/item/clothing/shoes/laceup
-	r_hand = /obj/item/storage/briefcase/crimekit
+	r_hand = /decl/hierarchy/supply_pack/security/sforensic
 	id_type = /obj/item/card/id/security/detective
 	pda_type = /obj/item/device/pda/detective
-	backpack_contents = list(/obj/item/storage/box/evidence = 1)
+	backpack_contents = list(/obj/item/storage/box/evidence = 1, /datum/cargo_entry/weapon/necrevolver = 1)
 
 /decl/hierarchy/outfit/job/security/detective/New()
 	..()

@@ -3,8 +3,8 @@
 /datum/job/enforcer
 	title = "Planetary Enforcer"
 	supervisors = "the Planetary Marshal and the Rogue Trader"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
@@ -42,6 +42,49 @@
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
+
+/datum/job/investigator
+	title = "Planetary Investigator"
+	supervisors = "the Planetary Marshal and the Rogue Trader"
+	total_positions = 1
+	spawn_positions = 1
+	social_class = SOCIAL_CLASS_MED
+	selection_color = "#848484"
+	outfit_type = /decl/hierarchy/outfit/job/Investigator
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	cultist_chance = 15
+	can_be_in_squad = FALSE
+	open_when_dead = TRUE
+	department_flag = SEC
+	latejoin_at_spawnpoints = TRUE
+	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_all_personal_lockers, access_maint_tunnels,)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
+			            )
+
+
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Investigator [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+//		H.witchblood() //Psyker Enforcers don't exist
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.adjustStaminaLoss(-70)
+		H.warfare_faction = IMPERIUM
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are the hardboiled investigator of the Magistratum. Your duty is to investigate the crimes and report back to the Marshal when breakthroughs are made. You are given forensic gear to accomplish your task, use it wisely.</font></b></span>")
 
 /datum/job/marshal
 	title = "Planetary Marshal"

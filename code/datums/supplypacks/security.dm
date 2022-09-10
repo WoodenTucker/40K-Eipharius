@@ -279,7 +279,7 @@
 	containername = "\improper 7.62 practice ammunition crate"
 	access = access_security
 
-/decl/hierarchy/supply_pack/security/forensics //Not access-restricted so PIs can use it.
+/decl/hierarchy/supply_pack/security/sforensic //Not access-restricted so PIs can use it.
 	name = "Forensics - Auxiliary tools"
 	contains = list(/obj/item/forensics/sample_kit,
 					/obj/item/forensics/sample_kit/powder,
