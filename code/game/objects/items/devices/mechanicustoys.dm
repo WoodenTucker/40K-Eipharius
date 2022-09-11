@@ -150,10 +150,10 @@
 /obj/item/melee/omnissiah_axe
 	name = "Omnissiah`s axe"
 	desc = "Blessed axe of Magos Dominus, decorated with holy symbols of the Adeptus Mechanicus"
-	icon = 'icons/obj/items/OmmisianAxe.dmi'
+	icon = 'icons/obj/items/oma.dmi'
 	icon_state = "Whistle_InHand_R"
-	item_state = "Whistle_InHand_R"
-	wielded_icon = "Whistle_InHand_R_W"
+	item_state = "Whistle_InHand"
+	wielded_icon = "Whistle_InHand_W"
 	force = 45
 	block_chance = 65
 	sharp = TRUE

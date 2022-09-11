@@ -133,7 +133,7 @@
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"
-	cost = 65
+	cost = 71
 	item_path = /obj/item/gun/projectile/automatic/stubber
 
 /datum/cargo_entry/weapon/lockebolter

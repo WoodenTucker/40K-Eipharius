@@ -20,7 +20,7 @@
 	accuracy = -2
 	fire_delay = 3
 	force = 15
-	sales_price = 13
+	sales_price = 0
 	var/gping = TRUE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/pump(mob/M as mob, silent = FALSE)
@@ -91,7 +91,7 @@
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
 	accuracy = -2.5
-	sales_price = 20
+	sales_price = 0
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
 		qdel(src)
@@ -234,7 +234,7 @@
 	fire_delay = 3.5
 	move_delay = 2.5
 	gping = FALSE
-	sales_price = 15
+	sales_price = 0
 	accuracy = -2.5
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
@@ -339,7 +339,7 @@
 	one_hand_penalty = 4
 	accuracy = -2.5
 	fire_delay= 3
-	sales_price = 15
+	sales_price = 0
 
 	ammo_type = list(
 		/obj/item/ammo_casing/shotgun/pellet,
@@ -368,7 +368,7 @@
 	fire_delay = 2
 	accuracy = -3.5
 	armor_penetration = 0
-	sales_price = 15
+	sales_price = 0
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
 	name = "\improper WTX Reckoning"
@@ -559,7 +559,7 @@
 	move_delay = 4.2
 	one_hand_penalty = 7
 	accuracy = -2
-	sales_price = 20
+	sales_price = 0
 
 	loaded_icon = "commando"
 	unloaded_icon = "commando"
@@ -661,7 +661,7 @@
 	one_hand_penalty = 5
 	accuracy = -3.5
 	fire_delay = 1.7
-	sales_price = 18
+	sales_price = 0
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
@@ -880,7 +880,7 @@
 	accuracy = -2
 	fire_delay = 1.7
 	force = 8
-	sales_price = 10
+	sales_price = 0
 
 /obj/item/gun/projectile/warfare/kieji
 	name = "Kieji Pistol"
@@ -906,7 +906,7 @@
 	one_hand_penalty = 0.7
 	accuracy = -3.5
 	fire_delay = 1
-	sales_price = 16
+	sales_price = 0
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "slug magazine (.45)"
@@ -932,7 +932,7 @@
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
-	str_requirement = 16
+	str_requirement = 13
 	w_class = ITEM_SIZE_HUGE
 	force = 17
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -978,7 +978,7 @@
 	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
 	icon_state = "cognisLMG"
 	item_state = "cognisLMG"
-	str_requirement = 10 //change as SOON as skitarii stats are buffed and working!!!
+	str_requirement = 13 //change as SOON as skitarii stats are buffed and working!!!
 	loaded_icon = "cognisLMG"
 	unwielded_loaded_icon = "cognisLMG"
 	wielded_loaded_icon = "hmg-wielded"
@@ -988,7 +988,7 @@
 	burst = 1
 	fire_delay = 1.4
 	one_hand_penalty = 9 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 40
+	sales_price = 0
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1002,7 +1002,7 @@
 	one_hand_penalty = 7
 	accuracy = -2.2
 	fire_delay = 1.7
-	sales_price = 32
+	sales_price = 39
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
