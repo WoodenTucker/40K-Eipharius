@@ -629,7 +629,7 @@
 	if(isAutochisel(W)||isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Lasgun Cell","Kantrael M36 Lasgun", "Catachan Mark IV Lascarbine","Lucius No.98 Lasgun", "Kantrael MG Laspistol", ".338 Lapua Magnum Magazine", "Machine Silver", "Galvanic Rifle") //lists all possible crafting choices
+		var/craftingchoices = list("Lasgun Cell","Villiers Pistol", "Catachan Mark IV Lascarbine","Lucius No.98 Lasgun", "Kantrael MG Laspistol", ".338 Lapua Magnum Magazine", "Machine Silver", "Galvanic Rifle") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -642,12 +642,12 @@
 				src.ismarked = 1
 				src.name = "Silver Ingot (Lasgun Cell)"
 
-			if("Kantrael M36 Lasgun")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Lasgun.")
+			if("Villiers Pistol")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Villiers Pistol.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 2
 				src.ismarked = 1
-				src.name = "Silver Ingot (Kantrael M36 Lasgun)"
+				src.name = "Silver Ingot (Villiers Pistol)"
 
 			if("Catachan Mark IV Lascarbine")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Las-Carbine.")
@@ -715,9 +715,9 @@
 			if(2)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed lasgun! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Villiers Pistol! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Silver Ingot (Carved lasgun)"
+					src.name = "Silver Ingot (Carved Villiers Pistol)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -808,7 +808,7 @@
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/energy/las/lasgun(user.loc)
+				new /obj/item/gun/projectile/warfare(user.loc)
 				qdel(src)
 				return
 			if(3)

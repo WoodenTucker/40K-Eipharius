@@ -234,19 +234,19 @@ obj/item/gun/energy/retro
 	name = "Portsmith W. Lasrifle"
 	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their guard's lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
 	icon_state = "semir"
-	item_state = "lasgun"
+	item_state = "semir"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 12
 	one_hand_penalty = 3.5
 	fire_delay = 8
-	accuracy = -5
+	accuracy = -4.5
 	move_delay = 5
 	charge_cost = 130
-	wielded_item_state = "lasgun-wielded" //use semir when u wanna bug fix
+	wielded_item_state = "semir"
 	charge_meter = FALSE
 	sales_price = null
-	cell_type = /obj/item/cell/lasgun/small
+	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun // starts with /small but can also use any /lasgun as well. do not change
 	ammoType = /obj/item/cell/lasgun/small
 
 /obj/item/gun/energy/las/lasgun/rare
@@ -473,9 +473,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 100
 
 
-/obj/item/gun/energy/las/laspistol/defender
-	name = "Kantrael MG Defender Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears no markings except standard serial number and the Imperial Aquila, belonging to a civilian modification."
+/obj/item/gun/energy/las/laspistol/civitas
+	name = "Civitas Pattern Laspistol"
+	desc = "The Civitas is both somewhat bulky and inefficient (owing to lower quality components than a military-grade laspistol), but remains popular due to its ease of manufacture, longevity and simplicity of maintenance. They are made on almost every hive world and often in the hands of civilians."
 	icon_state = "laspistolciv"
 
 /obj/item/gun/energy/las/laspistol/militarum
@@ -490,7 +490,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "The Laspistol variant of the Portsmith W. Lasrifle. Cheap, slow but better than nothing. Uses small lascells"
 	icon_state = "semip"
 	item_state = "laspistol"
-	accuracy = -5.5
+	accuracy = -5
 	fire_delay = 4
 	charge_cost = 115
 	sales_price = null
@@ -499,7 +499,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType =  /obj/item/cell/lasgun
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
-	name = "Astra Militarum Lucius-pattern Laspistol"
+	name = "Lucius-pattern Laspistol"
 	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
 	icon_state = "laspistol"
 	item_state = "laspistol"
@@ -516,7 +516,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
 		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
-
+/* //we dont need a bunch of snowflake las pistols
 /obj/item/gun/energy/las/laspistol/militarum/lucius/sister
 	name = "Astra Militarum Laspistol"
 	desc = "Pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Astra Militarum, this one seems to be have been modified for the gloves of Adepta Sororitas Power Armor."
@@ -535,7 +535,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = -3.2
 	fire_delay= 3
 	armor_penetration = 12.5
-
+*/
 /obj/item/gun/energy/las/laspistol/commissar
 	name = "Officio Prefectus Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified to amplify the overcharge mode, issued to the Officio Prefectus for their purposes."
@@ -667,7 +667,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
-	charge_cost = 1100
+	charge_cost = 1000
 	wielded_item_state = "ionrifle-wielded"
 	sales_price = 119
 
@@ -706,6 +706,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
+	charge_cost = 650
 	wielded_item_state = "pulse_pistol"
 	sales_price = 99
 

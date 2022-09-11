@@ -118,7 +118,7 @@
 	name = "M35 'M-Galaxy' Longlas"
 	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
 	icon_state = "longlas"
-	item_state = "lasgun"
+	item_state = "sniper_rifle"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
@@ -130,9 +130,9 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
 	charge_cost = 300
-	cell_type = /obj/item/cell/lasgun
+	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "lasgun-wielded"
+	wielded_item_state = "sniper_rifle"
 	sales_price = 110
 
 	firemodes = list(
@@ -157,7 +157,7 @@
 	name = "Krieg Pattern Longlas"
 	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
 	icon_state = "kriegsniper"
-	item_state = "lasgun"
+	item_state = "sniper_rifle"
 
 /obj/item/gun/projectile/thrower
 	name = "Lead Thrower"
