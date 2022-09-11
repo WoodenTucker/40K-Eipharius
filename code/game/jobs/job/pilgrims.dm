@@ -114,7 +114,7 @@ Pilgrim Fate System
 				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/newopen, slot_head)
 			else
 				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hero, slot_head)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol/militarum/lucius, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol/lucius, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/cell/lasgun, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/handcuffs, slot_in_backpack)

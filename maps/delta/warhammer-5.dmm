@@ -4040,7 +4040,7 @@
 "uq" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/gun/energy/las/lasgun/rare,
-/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/gun/energy/las/laspistol/lucius,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/gun/energy/las/lasgun/rare,
@@ -6327,7 +6327,7 @@
 	dir = 4
 	},
 /obj/item/gun/energy/las/lasgun/longlas,
-/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/gun/energy/las/laspistol/lucius,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/gun/energy/las/lasgun/rare,
@@ -6387,7 +6387,7 @@
 	dir = 4
 	},
 /obj/item/gun/energy/las/lasgun/rare,
-/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/gun/energy/las/laspistol/lucius,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/cell/lasgun/hotshot,
 /obj/item/gun/energy/las/lasgun/rare,

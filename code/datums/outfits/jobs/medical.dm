@@ -48,7 +48,7 @@
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
-		/obj/item/gun/energy/las/laspistol/militarum/lucius/sister = 1,
+		/obj/item/gun/energy/las/laspistol/civitas = 1,
 		/obj/item/cell/lasgun = 2,
 		/obj/item/stack/thrones3/five = 1,)
 

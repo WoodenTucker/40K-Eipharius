@@ -878,9 +878,9 @@
 	move_delay = 1.5
 	one_hand_penalty = 1
 	accuracy = -2
-	fire_delay = 1.7
+	fire_delay = 1.5
 	force = 8
-	sales_price = 10
+	sales_price = 25
 
 /obj/item/gun/projectile/warfare/kieji
 	name = "Kieji Pistol"
@@ -889,11 +889,11 @@
 	loaded_icon = "kieji"
 	unloaded_icon = "kieji-e"
 	desc = "A mass-produced slug pistol common in the frontier."
-	move_delay = 1.5
-	one_hand_penalty = 0.7
+	move_delay = 2.5
+	one_hand_penalty = 2
 	accuracy = -3
-	fire_delay = 1.2
-	sales_price = 15
+	fire_delay = 2.5
+	sales_price = null
 
 /obj/item/gun/projectile/warfare/kieji2
 	name = "Snub Kieji Pistol"
@@ -903,10 +903,10 @@
 	unloaded_icon = "kiejistub-e"
 	desc = "A mass-produced slug pistol common in the frontier. This one has a snub nose."
 	move_delay = 1.5
-	one_hand_penalty = 0.7
+	one_hand_penalty = 0.5
 	accuracy = -3.5
-	fire_delay = 1
-	sales_price = 16
+	fire_delay = 1.5
+	sales_price = null
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "slug magazine (.45)"
@@ -929,7 +929,7 @@
 
 /obj/item/gun/projectile/automatic/stubber
 	name = "Vraks Pattern Heavy Stubber"
-	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
+	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years. "
 	icon_state = "hmg"
 	item_state = "hmg"
 	str_requirement = 16
@@ -978,7 +978,7 @@
 	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
 	icon_state = "cognisLMG"
 	item_state = "cognisLMG"
-	str_requirement = 10 //change as SOON as skitarii stats are buffed and working!!!
+	str_requirement = 16
 	loaded_icon = "cognisLMG"
 	unwielded_loaded_icon = "cognisLMG"
 	wielded_loaded_icon = "hmg-wielded"
@@ -988,7 +988,7 @@
 	burst = 1
 	fire_delay = 1.4
 	one_hand_penalty = 9 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 40
+	sales_price = 55
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -997,16 +997,16 @@
 
 /obj/item/gun/projectile/automatic/stubber/villiers
 	name = "Villiers Heavy Stubber"
-	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
+	desc = "A heavy stubber of Villiers Make. Similar to it's renown brother, the Villiers pistol in quality. Specialised in highly accurate dual bursts. "
 	move_delay= 4.5
 	one_hand_penalty = 7
 	accuracy = -2.2
 	fire_delay = 1.7
-	sales_price = 32
+	sales_price = 44
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 // Boltgun

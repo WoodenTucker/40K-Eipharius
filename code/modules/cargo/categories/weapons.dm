@@ -6,35 +6,15 @@
 	cost = 70
 	item_path = /obj/item/gun/energy/las/lasgun
 
-/datum/cargo_entry/weapon/mlasgun
-	name = "Masterwork Kantrael Lasgun"
-	cost = 85
-	item_path = /obj/item/gun/energy/las/lasgun/rare
-
-/datum/cargo_entry/weapon/lasguntinker
-	name = "Tinkered Kantrael Lasgun"
-	cost = 80
-	item_path = /obj/item/gun/energy/las/lasgun/tinkered
-
 /datum/cargo_entry/weapon/luclas
 	name = "Lucius Lasgun"
 	cost = 80
 	item_path = /obj/item/gun/energy/las/lasgun/lucius
 
-/datum/cargo_entry/weapon/luclastinker
-	name = "Tinkered Lucius Lasgun"
-	cost = 90
-	item_path = /obj/item/gun/energy/las/lasgun/lucius/tinkered
-
 /datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
 	cost = 90
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
-
-/datum/cargo_entry/weapon/catbinetinker
-	name = "Tinkered Catachan Carbine"
-	cost = 100
-	item_path = /obj/item/gun/energy/las/lasgun/tinkered/catachan
 
 /datum/cargo_entry/weapon/longlas
 	name = "M35 Longlas"
@@ -86,11 +66,6 @@
 	cost = 42
 	item_path = /obj/item/gun/projectile/shotgun/pump/shitty
 
-/datum/cargo_entry/weapon/shotgunsawn
-	name = "Sawn-off Shotgun"
-	cost = 38
-	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/sawn
-
 /datum/cargo_entry/weapon/shotgunmagrave
 	name = "Belle Magrave Shotgun"
 	cost = 49
@@ -128,7 +103,7 @@
 
 /datum/cargo_entry/weapon/stubbervilliers
 	name = "Villiers Heavy Stubber"
-	cost = 64
+	cost = 80
 	item_path = /obj/item/gun/projectile/automatic/stubber/villiers
 
 /datum/cargo_entry/weapon/stubbervraks
@@ -164,26 +139,26 @@
 /datum/cargo_entry/weapon/cadlaspistol
 	name = "Cadian Laspistol"
 	cost = 55
-	item_path = /obj/item/gun/energy/las/laspistol/militarum
+	item_path = /obj/item/gun/energy/las/laspistol
 
 /datum/cargo_entry/weapon/luclaspistol
 	name = "Lucius Laspistol"
 	cost = 61
-	item_path = /obj/item/gun/energy/las/laspistol/militarum/lucius
+	item_path = /obj/item/gun/energy/las/laspistol/lucius
 
 /datum/cargo_entry/weapon/vilpistol
 	name = "Villiers Pistol"
-	cost = 33
+	cost = 42
 	item_path = /obj/item/gun/projectile/warfare
 
 /datum/cargo_entry/weapon/renpistol
 	name = "Kieji Pistol"
-	cost = 39
+	cost = 28
 	item_path = /obj/item/gun/projectile/warfare/kieji
 
 /datum/cargo_entry/weapon/renpistolsnub
 	name = "Kieji Snub Pistol"
-	cost = 42
+	cost = 35
 	item_path = /obj/item/gun/projectile/warfare/kieji2
 
 /datum/cargo_entry/weapon/mervexrevolver

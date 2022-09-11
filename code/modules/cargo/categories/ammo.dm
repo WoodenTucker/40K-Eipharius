@@ -8,12 +8,12 @@
 
 /datum/cargo_entry/ammo/smgap
 	name = "AP Autogun Magazine"
-	cost = 12
+	cost = 14
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol/ap
 
 /datum/cargo_entry/ammo/smgms
 	name = "MS Autogun Magazine"
-	cost = 14
+	cost = 12
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol/ms
 
 /datum/cargo_entry/ammo/autogrim
@@ -33,17 +33,17 @@
 
 /datum/cargo_entry/ammo/stubberammo
 	name = "Heavy Stubber Magazine"
-	cost = 10
+	cost = 18
 	item_path = /obj/item/ammo_magazine/box/a556/mg08
 
 /datum/cargo_entry/ammo/stubberammoap
 	name = "AP Heavy Stubber Magazine"
-	cost = 18
+	cost = 29
 	item_path = /obj/item/ammo_magazine/box/a556/mg08/ap
 
 /datum/cargo_entry/ammo/stubberammoms
 	name = "MS Heavy Stubber Magazine"
-	cost = 19
+	cost = 27
 	item_path = /obj/item/ammo_magazine/box/a556/mg08/ms
 
 /datum/cargo_entry/ammo/scipiostub
@@ -93,7 +93,7 @@
 
 /datum/cargo_entry/ammo/meltamag
 	name = "Melta Ammo"
-	cost = 15
+	cost = 30
 	item_path = /obj/item/ammo_magazine/melta
 
 /datum/cargo_entry/ammo/heavysnipammo
@@ -118,33 +118,38 @@
 
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"
-	cost = 13
+	cost = 11
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine
 
 /datum/cargo_entry/ammo/boltpistolmagkp
 	name = "Penetrator Bolt Pistol Magazine"
-	cost = 20
+	cost = 28
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 
 /datum/cargo_entry/ammo/boltermag
 	name = "Bolter Magazine"
-	cost = 38
+	cost = 34
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine
 
 /datum/cargo_entry/ammo/boltermagkp
 	name = "Penetrator Bolter Magazine"
-	cost = 58
+	cost = 48
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 
 /datum/cargo_entry/ammo/lasmag
 	name = "Lasgun Power Pack"
-	cost = 10
+	cost = 12
 	item_path = /obj/item/cell/lasgun
 
 /datum/cargo_entry/ammo/lasmaghot
 	name = "Hotshot Lasgun Power Pack"
 	cost = 18
 	item_path = /obj/item/cell/lasgun/hotshot
+
+/datum/cargo_entry/ammo/plasmaflask
+	name = "Plasma Gun Hydrogen Flask"
+	cost = 23
+	item_path = /obj/item/cell/plasma
 
 /datum/cargo_entry/ammo/c45
 	name = ".45 Magazine"
@@ -153,22 +158,22 @@
 
 /datum/cargo_entry/ammo/c45ap
 	name = ".45 Magazine"
-	cost = 5
+	cost = 9
 	item_path = /obj/item/ammo_magazine/c45m/warfare/ap
 
 /datum/cargo_entry/ammo/c45ms
 	name = ".45 Magazine"
-	cost = 5
+	cost = 7
 	item_path = /obj/item/ammo_magazine/c45m/warfare/ms
 
 /datum/cargo_entry/ammo/revolverammo
 	name = ".357 Speedloader"
-	cost = 5
+	cost = 7
 	item_path = /obj/item/ammo_magazine/a357
 
 /datum/cargo_entry/ammo/revolverammoap
 	name = "AP .357 Speedloader"
-	cost = 8
+	cost = 12
 	item_path = /obj/item/ammo_magazine/a357/ap
 
 /datum/cargo_entry/ammo/revolverammoms
@@ -178,32 +183,32 @@
 
 /datum/cargo_entry/ammo/revolverammo2
 	name = ".44 Speedloader"
-	cost = 5
+	cost = 8
 	item_path = /obj/item/ammo_magazine/c44
 
 /datum/cargo_entry/ammo/revolverammo2ap
 	name = "AP .44 Speedloader"
-	cost = 8
+	cost = 14
 	item_path = /obj/item/ammo_magazine/c44/ap
 
 /datum/cargo_entry/ammo/revolverammo2ms
 	name = "MS .44 Speedloader"
-	cost = 10
+	cost = 11
 	item_path = /obj/item/ammo_magazine/c44/ms
 
 /datum/cargo_entry/ammo/revolverammo3
 	name = ".50 Speedloader"
-	cost = 6
+	cost = 9
 	item_path = /obj/item/ammo_magazine/c50
 
 /datum/cargo_entry/ammo/revolverammo3ap
 	name = "AP .50 Speedloader"
-	cost = 9
+	cost = 15
 	item_path = /obj/item/ammo_magazine/c50/ap
 
 /datum/cargo_entry/ammo/revolverammo3ms
 	name = "MS .50 Speedloader"
-	cost = 11
+	cost = 13
 	item_path = /obj/item/ammo_magazine/c50/ms
 
 /datum/cargo_entry/ammo/heatshell

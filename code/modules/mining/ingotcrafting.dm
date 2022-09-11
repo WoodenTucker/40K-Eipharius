@@ -26,7 +26,7 @@
 	if(isAutochisel(W) || isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Inferior Lasgun Cell", "Boscelot Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Musket Rounds", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Musket", "Sawn-Off Shotgun", "Combat Knife") //lists all possible crafting choices
+		var/craftingchoices = list("Inferior Lasgun Cell", "Boscelot Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Bolt Pistol Magazine", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Musket", "Sawn-Off Shotgun", "Combat Knife") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -68,12 +68,12 @@
 				src.whatwemaking = 6
 				src.ismarked = 1
 				src.name = "Copper Ingot (.45 Pistol Magazines)"
-			if("Musket Rounds")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Musket Rounds.")
+			if("Bolt Pistol Magazine")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Bolt Pistol Magazine.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 7
 				src.ismarked = 1
-				src.name = "Copper Ingot (Musket Rounds)"
+				src.name = "Copper Ingot (Bolt Pistol Magazine)"
 
 			if("Trench Shovel")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future trench shovel.")
@@ -214,9 +214,9 @@
 			if(7)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into blessed Musket Rounds! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Bolt Pistol Magazine! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Copper Ingot (Musket Rounds)"
+					src.name = "Copper Ingot (Bolt Pistol Magazine)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)

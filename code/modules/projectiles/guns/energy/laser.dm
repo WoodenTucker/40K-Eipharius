@@ -433,7 +433,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been smuggled from the factory before completion, and thus bears no markings."
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers"
 	icon_state = "laspistol"
 	item_state = "laspistol"
 	slot_flags = SLOT_BELT|SLOT_S_STORE
@@ -477,13 +477,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Civitas Pattern Laspistol"
 	desc = "The Civitas is both somewhat bulky and inefficient (owing to lower quality components than a military-grade laspistol), but remains popular due to its ease of manufacture, longevity and simplicity of maintenance. They are made on almost every hive world and often in the hands of civilians."
 	icon_state = "laspistolciv"
-
-/obj/item/gun/energy/las/laspistol/militarum
-	name = "Astra Militarum Kantrael MG Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers"
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	charge_cost = 80
+	charge_cost = 110
+	accuracy = -4
+	one_hand_penalty = 1
 
 /obj/item/gun/energy/las/laspistol/shitty
 	name = "Portsmith W. Laspistol"
@@ -498,15 +494,15 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 
-/obj/item/gun/energy/las/laspistol/militarum/lucius
+/obj/item/gun/energy/las/laspistol/lucius
 	name = "Lucius-pattern Laspistol"
 	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
-	icon_state = "laspistol"
+	icon_state = "luciuspistol"
 	item_state = "laspistol"
 	force = 10
-	one_hand_penalty = 2.55
+	one_hand_penalty = 2.5
 	move_delay = 1.5
-	accuracy = -3.2
+	accuracy = -2.5
 	fire_delay = 2.5
 	armor_penetration = 8.75
 	charge_cost = 100
@@ -516,26 +512,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
 		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
 		)
-/* //we dont need a bunch of snowflake las pistols
-/obj/item/gun/energy/las/laspistol/militarum/lucius/sister
-	name = "Astra Militarum Laspistol"
-	desc = "Pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Astra Militarum, this one seems to be have been modified for the gloves of Adepta Sororitas Power Armor."
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	accuracy = -3
-	fire_delay = 2
-
-/obj/item/gun/energy/las/laspistol/mechanicus
-	name = "Adeptus Mechanicus Kantrael MG Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified by Adeptus Mechanicus to concentrate the beam, resulting in more powerful shot for their self-defense purposes."
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	move_delay = 1.5
-	one_hand_penalty = 1
-	accuracy = -3.2
-	fire_delay= 3
-	armor_penetration = 12.5
-*/
 /obj/item/gun/energy/las/laspistol/commissar
 	name = "Officio Prefectus Kantrael MG Laspistol"
 	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified to amplify the overcharge mode, issued to the Officio Prefectus for their purposes."
