@@ -70,16 +70,16 @@
 			if(75 to 76)
 				crumbling_message = "The wall crumbles under [O], revealing adamantium!"
 				ore_inside = ADAMANTIUM
-			if(77 to 79)
+			if(77 to 80)
 				crumbling_message = "The wall crumbles under [O], revealing cobolt!"
 				ore_inside = COBOLT
-			if(80 to 84)
+			if(81 to 85)
 				crumbling_message = "The wall crumbles under [O], revealing kultrinium!"
 				ore_inside = KULTRINIUM
-			if(85 to  88)
+			if(86 to  89)
 				crumbling_message = "The wall crumbles under [O], revealing diamantine!"
 				ore_inside = DIAMANTINE
-			if(89 to 100)
+			if(90 to 100)
 				crumbling_message = "The wall crumbles under [O], revealing.....nothing interesting."
 				ore_inside = FALSE
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
