@@ -1138,7 +1138,7 @@ kultrinium
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Plasma Flask", "Kantrael M36 Lasgun", "Lucius No.98 Lasgun", "Catachan Mark IV Lascarbine", "Grim Pattern Autogun", "Krieg Pattern Autogun","Vraks Pattern Heavy Stubber","Imperial Guard Chainsword",) //lists all possible crafting choices
+		var/craftingchoices = list("Plasma Flask", "Kantrael M36 Lasgun", "Lucius No.98 Lasgun", "Catachan Mark IV Lascarbine", "Grim Pattern Autogun", /*"Krieg Pattern Autogun"*/,"Vraks Pattern Heavy Stubber","Imperial Guard Chainsword",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -1179,12 +1179,12 @@ kultrinium
 				src.ismarked = 1
 				src.name = "Gold Ingot (Grim Pattern Autogun)"
 
-			if("Krieg Pattern Autogun")
+			/*if("Krieg Pattern Autogun")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Krieg Pattern Autogun.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 6
 				src.ismarked = 1
-				src.name = "Gold Ingot (Krieg Pattern Autogun)"
+				src.name = "Gold Ingot (Krieg Pattern Autogun)" */  // it doesnt like this one for some reason, bug fix later
 
 			if("Vraks Pattern Heavy Stubber")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Vraks Pattern Heavy Stubber.")
@@ -1265,7 +1265,7 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-			if(6)
+			/*if(6)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] carefully carves the ingot into a blessed Krieg Pattern Autogun! Now take the ingot and dip it into the holy oil!")
@@ -1275,7 +1275,7 @@ kultrinium
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
-					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1) */  // it doesnt like this one for some reason, bug fix later
 			if(7)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1336,12 +1336,12 @@ kultrinium
 				new /obj/item/gun/projectile/automatic/autogrim(user.loc,1)
 				qdel(src)
 				return
-		 	if(6)
+		 	/*if(6)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/automatic/autogrim/krieg(user.loc,1)
 				qdel(src)
-				return
+				return*/ // it doesnt like this one for some reason, bug fix later
 			if(7)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
