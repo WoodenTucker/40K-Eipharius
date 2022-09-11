@@ -4804,10 +4804,9 @@
 "sD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/chemical{
-	color = "grey"
+	color = "grey";
+	req_access = list()
 	},
-/obj/item/storage/box/beakers,
-/obj/item/storage/box/beakers,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -7214,7 +7213,9 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "BW" = (
-/obj/structure/closet/secure_closet/chemical,
+/obj/structure/closet/secure_closet/chemical{
+	req_access = list()
+	},
 /obj/item/storage/box/beakers,
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain,
@@ -7992,6 +7993,18 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"EW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/standard{
+	color = "grey"
+	},
+/obj/item/storage/box/beakers,
+/obj/item/storage/box/beakers,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "white1"
+	},
+/area/cadiaoutpost/oa/medicae)
 "EX" = (
 /obj/structure/table/rack/dark,
 /obj/item/paper/crumpled/bloody{
@@ -8918,9 +8931,9 @@
 "Iv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/chemical{
-	color = "grey"
+	color = "grey";
+	req_access = list()
 	},
-/obj/item/storage/box/beakers,
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -47619,7 +47632,7 @@ PI
 PI
 PI
 qV
-KE
+EW
 Iv
 sD
 qV

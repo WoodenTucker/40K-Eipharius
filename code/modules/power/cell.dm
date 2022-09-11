@@ -288,9 +288,17 @@
 	sales_price = 15
 	color = "#605048"
 
+/obj/item/cell/plasma
+	name = "Plasma Gun Hydrogen Flask"
+	desc = "A Hydrogen Flask for various types of Plasma weaponry. "
+	icon_state = "plasmaflask"
+	w_class = ITEM_SIZE_NORMAL
+	maxcharge = 10000
+	sales_price = 25
+
 /obj/item/cell/pulserifle
-	name = "pulse rifle magazine"
-	desc = "A small, portable magazine for a Tau pulse rifle."
+	name = "Tau pulse weapon magazine"
+	desc = "A small, portable magazine for various Tau weaponry."
 	origin_tech = list(TECH_POWER = 6)
 	icon_state = "hdevice"
 	maxcharge = 3000

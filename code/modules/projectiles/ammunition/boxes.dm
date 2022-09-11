@@ -153,7 +153,7 @@
 
 
 /obj/item/ammo_magazine/c45rifle/combatrifle
-	name = "Nightfall magazine (.45)"
+	name = "Scipio magazine (.45)"
 	icon_state = "akarabiner"
 
 
