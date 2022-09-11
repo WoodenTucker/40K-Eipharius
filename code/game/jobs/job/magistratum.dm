@@ -37,7 +37,7 @@
 		H.assign_random_quirk()
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.adjustStaminaLoss(-70)
+		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 
@@ -79,7 +79,7 @@
 		H.assign_random_quirk()
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
-		H.adjustStaminaLoss(-80)
+		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 

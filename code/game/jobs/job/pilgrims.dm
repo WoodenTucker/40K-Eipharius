@@ -17,7 +17,7 @@
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-60)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
 		H.stat = UNCONSCIOUS
@@ -283,7 +283,7 @@ Pilgrim Fate System
 		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
 		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-55)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
@@ -374,7 +374,7 @@ Pilgrim Fate System
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-60)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
@@ -405,7 +405,7 @@ Pilgrim Fate System
 		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
 		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-65)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.gangeq()
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")

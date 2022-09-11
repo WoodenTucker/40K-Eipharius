@@ -151,6 +151,16 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 
+/obj/item/material/sword/cutro/adamantine
+	name = "cutro blade"
+	desc = "A lightweight adamantine blade with near perfect balance."
+	color = "#848484"
+	force = 28
+	force_wielded = 32
+	armor_penetration = 18
+	block_chance = 34
+	weapon_speed_delay = 5
+
 /obj/item/material/sword/broadsword
 	name = "heavy broadsword"
 	desc = "A heavy iron broadsword."
@@ -163,6 +173,16 @@
 	weapon_speed_delay = 9
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_HUGE
+
+/obj/item/material/sword/broadsword/adamantine
+	name = "heavy broadsword"
+	desc = "A heavy adamantine broadsword."
+	color = "#848484"
+	force = 33
+	force_wielded = 41
+	armor_penetration = 14
+	block_chance = 22
+	weapon_speed_delay = 8
 
 /obj/item/material/sword/machete
 	name = "iron machete"
@@ -185,10 +205,10 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
-	force = 22
-	force_wielded = 30
+	force = 25
+	force_wielded = 32
 	armor_penetration = 10
-	block_chance = 14
+	block_chance = 15
 	weapon_speed_delay = 7
 
 /obj/item/material/sword/machete/chopper/heavy
@@ -248,7 +268,7 @@
 	w_class = ITEM_SIZE_HUGE
 	edge = 1
 
-/obj/item/melee/trench_axe/glaive // glaive, bone spear, lance, bardiche
+/obj/item/melee/trench_axe/glaive 
 	name = "saintie"
 	desc = "A powerful warglave used for singular felling blows against armored opponents(pronounced san-tee)."
 	icon_state = "glaive"
@@ -261,6 +281,16 @@
 	block_chance = 26
 	weapon_speed_delay = 11
 	w_class = ITEM_SIZE_HUGE
+
+/obj/item/melee/trench_axe/glaive/adamantine
+	name = "saintie"
+	desc = "A powerful adamantine warglave used for singular felling blows against armored opponents(pronounced san-tee)."
+	color = "#848484"
+	force = 27
+	force_wielded = 40
+	armor_penetration = 14
+	block_chance = 29
+	weapon_speed_delay = 10
 
 /obj/item/melee/trench_axe/bardiche
 	name = "bardiche"
@@ -292,8 +322,8 @@
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/trench_axe/lance
-	name = "fuscina lance"
-	desc = "A heavy lance used to attack at a distance with maximum power."
+	name = "fuscina war spear"
+	desc = "A heavy war spear used to strike from a distance."
 	icon_state = "lance"
 	item_state = "lance"
 	wielded_icon = "lance-w"
@@ -304,6 +334,16 @@
 	weapon_speed_delay = 11
 	edge = 0
 	w_class = ITEM_SIZE_HUGE
+
+/obj/item/melee/trench_axe/lance/adamantine
+	name = "fuscina war spear"
+	desc = "A heavy adamantine war spear forged by a master smith of unknown origin."
+	color = "#848484"
+	force = 23
+	force_wielded = 43
+	armor_penetration = 14
+	block_chance = 28
+	weapon_speed_delay = 10
 
 /obj/item/material/sword/commissword/sabre
 	name = "Sabre"
