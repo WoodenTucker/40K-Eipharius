@@ -83,6 +83,7 @@
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	glasses = /obj/item/clothing/glasses/science/tech
 	shoes = /obj/item/clothing/shoes/workboots
+	l_hand = /decl/hierarchy/supply_pack/security/forensics
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
