@@ -222,7 +222,9 @@
 						user.put_in_hands(removing)
 					user.visible_message("<span class='danger'><b>[user]</b> extracts [removing] from [src] with [W]!</span>")
 				else
-					user.visible_message("<span class='danger'><b>[user]</b> fishes around fruitlessly in [src] with [W].</span>")
+					user.visible_message("<span class='danger'><b>[user]</b> shredded [src] with [W] into mess of gore and meat.</span>")
+					new /obj/item/reagent_containers/food/snacks/rawcutlet(src.loc)
+					qdel(src)
 				return
 	..()
 
