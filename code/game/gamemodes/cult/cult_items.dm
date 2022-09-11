@@ -47,7 +47,7 @@
 
 
 /obj/item/clothing/head/culthood
-	name = "cult hood"
+	name = "Tech-Guard's Hood"
 	icon_state = "culthood"
 	desc = "A hood worn by the Tech-Guard of the Machine-God."
 	flags_inv = HIDEFACE
@@ -71,7 +71,7 @@
 	icon_state = "cult_hoodalt"
 
 /obj/item/clothing/suit/cultrobes
-	name = "cult robes"
+	name = "Tech-Guard's Garb"
 	desc = "A set of durable robes worn by the Tech-Guard of the Machine-God."
 	icon_state = "cultrobes"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
