@@ -52,7 +52,7 @@
 //Chaplain
 /obj/item/clothing/suit/chaplain_hoodie
 	name = "chaplain hoodie"
-	desc = "This suit says to you 'hush'!"
+	desc = "Worn by menials in service of the Mechanicus; or aspirant priests."
 	icon_state = "chaplain_hoodie"
 	item_state = "chaplain_hoodie"
 	body_parts_covered = UPPER_TORSO|ARMS
