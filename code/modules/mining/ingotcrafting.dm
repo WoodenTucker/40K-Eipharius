@@ -1232,7 +1232,6 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-
 			if(3)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1244,7 +1243,6 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-
 			if(4)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1256,7 +1254,6 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-
 			if(5)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1268,7 +1265,6 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-
 			if(6)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1280,7 +1276,6 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-
 			if(7)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1292,7 +1287,6 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-
 			if(8)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1324,42 +1318,36 @@ kultrinium
 				new /obj/item/gun/energy/las/lasgun(user.loc,1)
 				qdel(src)
 				return
-
 			if(3)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/energy/las/lasgun/lucius(user.loc,1)
 				qdel(src)
 				return
-
 			if(4)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/energy/las/lasgun/catachan(user.loc,1)
 				qdel(src)
 				return
-
 			if(5)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/automatic/autogrim(user.loc,1)
 				qdel(src)
 				return
-
 		 	if(6)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/automatic/autogrim/krieg(user.loc,1)
 				qdel(src)
 				return
-
 			if(7)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/gun/projectile/automatic/stubber(user.loc,1)
 				qdel(src)
 				return
-
 			if(8)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
@@ -1377,25 +1365,39 @@ kultrinium
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Golden Ring", "Machine Gold",) //lists all possible crafting choices
+		var/craftingchoices = list("Bolter Rifle Mag", "Bolt Pistol Mags", "Heavy Stubber Ammo Box", "Galvanic Rifle Ammo",) //going to add AP and manstopper later. probably all of them!
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
 
 		switch(craftchoice)
-			if("Golden Ring")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Golden Ring.")
+			if("Bolter Rifle Mag")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Bolter Rifle Mag.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 1
 				src.ismarked = 1
-				src.name = "Gold Ingot (Golden Ring)"
+				src.name = "Gold Ingot (Bolter Rifle Mag)"
 
-			if("Machine Gold")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Gold.")
+			if("Bolt Pistol Mags")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Bolt Pistol Mags.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 2
 				src.ismarked = 1
-				src.name = "Gold Ingot (Machine Gold)"
+				src.name = "Gold Ingot (Bolt Pistol Mags)"
+
+			if("Heavy Stubber Ammo Box")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Heavy Stubber Ammo Box.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 3
+				src.ismarked = 1
+				src.name = "Gold Ingot (Heavy Stubber Ammo Box)"
+
+			if("Galvanic Rifle Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Galvanic Rifle Ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 4
+				src.ismarked = 1
+				src.name = "Gold Ingot (Galvanic Rifle Ammo)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -1410,9 +1412,9 @@ kultrinium
 			if(1)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Golden Ring! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Bolter Rifle Mag! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Gold Ingot (Carved Golden Ring)"
+					src.name = "Gold Ingot (Carved Bolter Rifle Mag)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1421,9 +1423,33 @@ kultrinium
 			if(2)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed unit of Gold! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into blessed Bolt Pistol Mags! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Gold Ingot (Carved Machine Gold)"
+					src.name = "Gold Ingot (Carved Bolt Pistol Mags)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
+			if(3)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Heavy Stubber Ammo Box! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Gold Ingot (Carved Heavy Stubber Ammo Box)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
+			if(4)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Galvanic Rifle Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Gold Ingot (Carved Galvanic Rifle Ammo)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -1441,13 +1467,30 @@ kultrinium
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/card/id/ring/goldring(user.loc)
+				new /obj/item/ammo_magazine/bolt_rifle_magazine(user.loc)
 				qdel(src)
 				return
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/stack/material/gold(user.loc,1)
+				new /obj/item/ammo_magazine/bolt_pistol_magazine(user.loc,1)
+				new /obj/item/ammo_magazine/bolt_pistol_magazine(user.loc,1)
+				qdel(src)
+				return
+
+			if(3)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/box/a556/mg08(user.loc,1)
+				qdel(src)
+				return
+
+			if(4)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/galvanic(user.loc,1)
+				new /obj/item/ammo_magazine/galvanic(user.loc,1)
+				new /obj/item/ammo_magazine/galvanic(user.loc,1)
 				qdel(src)
 				return
 
@@ -1465,42 +1508,42 @@ kultrinium
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Locke Pattern Bolt-Rifle", "Blood Angels Baal Mark Vb Pattern Bolt-Rifle", "Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle", "Salamanders Godwyn Mark Vb Pattern Bolt-Rifle", "Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle", "Kraken penetrator bolter magazine", "Mark IV .338 Stub Rifle", "Incendiary Galvanic Rifle Ammo", "Radium Carbine Ammo", "Radium Pistol Ammo") //lists all possible crafting choices
+		var/craftingchoices = list("Cognis Pattern Heavy Stubber", "Galvanic Rifle", "Plasma Pistol", "Ryza Pattern Hot-Shot Lasgun", "Plasma Flasks", "Kraken penetrator bolter magazine", "Mark IV .338 Stub Rifle", "Incendiary Galvanic Rifle Ammo", "Radium Carbine Ammo", "Radium Pistol Ammo") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
 
 		switch(craftchoice)
-			if("Locke Pattern Bolt-Rifle")
+			if("Cognis Pattern Heavy Stubber")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Locke Pattern Bolt Rifle.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 1
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Locke Pattern Bolter)"
-			if("Blood Angels Baal Mark Vb Pattern Bolt-Rifle")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Blood Angels Baal Mark Vb Pattern Bolt Rifle.")
+			if("Galvanic Rifle")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Galvanic Rifle.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Blood Angels Baal Mark Vb Pattern Bolter)"
-			if("Raven Guard Godwyn Mark Vb Pattern Bolt-Rifle")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Raven Guard Godwyn Mark Vb Pattern Bolt Rifle.")
+			if("Plasma Pistol")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Plasma Pistol.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 3
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Raven Guard Godwyn Mark Vb Pattern Bolter)"
-			if("Salamanders Godwyn Mark Vb Pattern Bolt-Rifle")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Salamanders Godwyn Mark Vb Pattern Bolt Rifle.")
+			if("Ryza Pattern Hot-Shot Lasgun")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Ryza Pattern Hot-Shot Lasgun.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 4
 				src.ismarked = 1
-				src.name = "Adamantium Ingot (Ultramarines Godwyn Mark Vb Pattern Bolter)"
-			if("Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Ultramarines Godwyn Mark Vb Pattern Bolt Rifle.")
+				src.name = "Adamantium Ingot (Ryza Pattern Hot-Shot Lasgun)"
+			if("Plasma Flasks")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Plasma Flasks.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 5
 				src.ismarked = 1
-				src.name = "Adamantium Ingot (Ultramarines Godwyn Mark Vb Pattern Bolter)"
+				src.name = "Adamantium Ingot (Plasma Flasks)"
 
 			if("Kraken penetrator bolter magazine")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Kraken penetrator bolter magazine.")
@@ -1549,37 +1592,37 @@ kultrinium
 			if(1)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Locke Pattern Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Cognis Pattern Heavy Stubber! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Locke Pattern Bolt-Rifle)"
+					src.name = "Adamantium Ingot (Carved Cognis Pattern Heavy Stubber)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 			if(2)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Blood Angels Baal Mark Vb Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Galvanic Rifle! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Baal Mark Vb Bolt-Rifle)"
+					src.name = "Adamantium Ingot (Carved Galvanic Rifle)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 			if(3)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Raven Guard Godwyn Mark Vb Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Plasma Pistol! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Raven Guard Godwyn Mark Vb Bolt-Rifle)"
+					src.name = "Adamantium Ingot (Carved Plasma Pistol)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 			if(4)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Salamanders Godwyn Mark Vb Pattern Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Ryza Pattern Hot-Shot Lasgun! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Salamanders Godwyn Mark Vb Pattern Bolt-Rifle)"
+					src.name = "Adamantium Ingot (Carved Ryza Pattern Hot-Shot Lasgun)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 			if(5)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into blessed Plasma Flasks! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Adamantium Ingot (Carved Ultramarines Godwyn Mark Vb Pattern Bolt-Rifle)"
+					src.name = "Adamantium Ingot (Carved Plasma Flasks)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 			if(6)
 				if(prob(25))
@@ -1650,31 +1693,32 @@ kultrinium
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/lockebolter(user.loc)
+				new /obj/item/gun/projectile/automatic/stubber/cognis(user.loc)
 				qdel(src)
 				return
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter/bang(user.loc)
+				new /obj/item/gun/projectile/automatic/galvanic/rifle(user.loc)
 				qdel(src)
 				return
 			if(3)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter/raven(user.loc)
+				new /obj/item/gun/energy/pulse/plasma/pistol(user.loc)
 				qdel(src)
 				return
 			if(4)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter/sally(user.loc)
+				new /obj/item/gun/energy/las/hotshot(user.loc)
 				qdel(src)
 				return
 			if(5)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/bolter(user.loc)
+				new /obj/item/cell/plasma(user.loc)
+				new /obj/item/cell/plasma(user.loc)
 				qdel(src)
 				return
 			if(6)
@@ -1709,7 +1753,6 @@ kultrinium
 			if(10)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
 				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
 				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
 				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
