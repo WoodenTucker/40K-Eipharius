@@ -643,9 +643,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 900
+	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
+	ammoType =/obj/item/cell // plasma is capable of tau ammo, lasgun, ect
+	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 
 
@@ -658,7 +658,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "prifle"
 	item_state = "ionrifle"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
 	accuracy = -2.8
@@ -667,9 +667,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 550
+	charge_cost = 1100
 	wielded_item_state = "ionrifle-wielded"
 	sales_price = 119
 
@@ -689,10 +687,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 350
-	wielded_item_state = "pulse_carbine"
+	charge_cost = 700
+	wielded_item_state = "pulse_pistol"
 	sales_price = 73
 
 /obj/item/gun/energy/pulse/plasma/pistol/astarte
@@ -710,9 +706,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 350
 	wielded_item_state = "pulse_pistol"
 	sales_price = 99
 
@@ -731,11 +724,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 350
+	charge_cost = 700
 	charge_meter = FALSE //no ammo icon state currently invisible
-	wielded_item_state = "pulse_pistol"
 	sales_price = 79
 
 
@@ -753,10 +743,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 300
-	wielded_item_state = "pulse_pistol"
+	charge_cost = 600
 	sales_price = 89
 
 // NEW GUNS
@@ -778,9 +765,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 310
+	charge_cost = 610
 	wielded_item_state = "pulse_carbine"
 	sales_price = 99
 	charge_meter = 0
@@ -801,9 +786,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	charge_cost = 360
+	charge_cost = 720
 	wielded_item_state = "pulse_pistol"
 	sales_price = 99
 	charge_meter = 0
