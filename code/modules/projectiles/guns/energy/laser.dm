@@ -657,14 +657,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
-	accuracy = -2.8
+	accuracy = -2.4
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 15 // something something its recharging
+	fire_delay = 16 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 1000
 	wielded_item_state = "ionrifle-wielded"
 	sales_price = 119
@@ -681,12 +679,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 7 //change later?
 	accuracy = -3
 	move_delay = 4 //it a pistol, but giga cool plasma
-	fire_delay = 13 // unsure if decent. dont want fast fire rate
+	fire_delay = 14 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 700
 	wielded_item_state = "pulse_carbine"
 	sales_price = 73
@@ -702,12 +698,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 4 //change later?
 	accuracy = -2
 	move_delay = 3 //it a pistol
-	fire_delay = 12 // unsure if decent. dont want fast fire rate
+	fire_delay = 13 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 700
 	wielded_item_state = "pulse_carbine"
 	sales_price = 99
@@ -727,8 +721,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 600
 	charge_meter = FALSE //no ammo icon state currently invisible
 	wielded_item_state = "pulse_pistol"
@@ -745,12 +737,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 7 //until plasma is better balanced, wield this fancy one.
 	accuracy = -2
 	move_delay = 3.5
-	fire_delay = 12
+	fire_delay = 13
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 600
 	wielded_item_state = "pulse_pistol"
 	sales_price = 89
@@ -770,12 +760,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 5 //change later?
 	accuracy = -2
 	move_delay = 3 //it a pistol, but giga cool plasma
-	fire_delay = 12 // unsure if decent. dont want fast fire rate
+	fire_delay = 13 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 500
 	wielded_item_state = "pulse_carbine"
 	sales_price = 99
@@ -793,12 +781,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 4 //change later?
 	accuracy = -3
 	move_delay = 2 //it a pistol, but giga cool plasma
-	fire_delay = 11 // unsure if decent. dont want fast fire rate
+	fire_delay = 12 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
 	charge_cost = 550
 	wielded_item_state = "pulse_pistol"
 	sales_price = 99
