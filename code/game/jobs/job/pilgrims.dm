@@ -48,7 +48,7 @@ Pilgrim Fate System
 	src.verbs -= list(/mob/living/carbon/human/proc/penitentclass)
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","Bounty Hunter","Penitent","Sherpa","Musician","Disgraced Medicae","Stalker","Scum","Miner")
+	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Musician","Disgraced Medicae","Stalker","Scum","Miner", "Private Investigator", "Cleric")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -91,7 +91,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-		if("Bounty Hunter")
+		if("Mercenary")
 			U.add_stats(rand(13,16), rand(11,15), rand(10,14), rand (10,12)) //veteran hunter
 			U.add_skills(rand(6,8),rand(2,7),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -123,6 +123,28 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a Sergeant in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("Private Investigator")
+			U.add_stats(rand(13,14), rand(12,14), rand(12,14), rand (10,12)) //
+			U.add_skills(rand(6,8),rand(6,8),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/det/black, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/tduster, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/head/det, slot_head )
+			equip_to_slot_or_del(new /obj/item/gun/projectile/necros, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/forensics/sample_kit/powder, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/c44, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/forensics/sample_kit, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/flame/lighter, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			to_chat(U,"<span class='notice'><b><font size=3>Sick of the quiet life on your Agri-World, you took a ticket to colonize a new planet. In your youth, you trained to be an Arbite Investigator before dropping out of the Schola..</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -160,6 +182,21 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 
 			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("Cleric")
+			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
+			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/chaplain, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/leathercoat, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/book/manual, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+
+			to_chat(U,"<span class='notice'><b><font size=3>You are an extremely low-ranking member of the Adeptus Ministorum. You do not reside within the Monasterium, and you must preach to the citizens of Messina. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
