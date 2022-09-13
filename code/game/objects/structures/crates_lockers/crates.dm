@@ -377,6 +377,18 @@ obj/structure/closet/crate
 	new /obj/item/clothing/under/rank/krieg_uniform(src)
 	new /obj/item/clothing/under/rank/krieg_uniform(src)
 
+/obj/structure/closet/crate/ingotshaping
+	name = "ingot shaping tools crate"
+	desc = "A crate with primitive tools for ingots shaping"
+	icon_state = "cargo1"
+	icon_opened = "cargo0"
+	icon_closed = "cargo1"
+
+/obj/structure/closet/crate/ingotshaping/New()
+	new /obj/item/device/hammer(src)
+	new /obj/item/device/chisel(src)
+	new /obj/item/device/lube(src)
+
 /obj/structure/closet/crate/valhallan
 	name = "valhallan equipment"
 	desc = "A hefty, reinforced metal crate with an electronic locking system."
