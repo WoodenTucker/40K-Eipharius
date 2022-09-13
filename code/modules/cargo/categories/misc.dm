@@ -40,3 +40,8 @@
 	name = "Shovel"
 	cost = 5
 	item_path = /obj/item/shovel
+
+/datum/cargo_entry/misc/ingotshaping
+	name = "Ingot shaping tools"
+	cost = 20
+	item_path = /obj/structure/closet/crate/ingotshaping
