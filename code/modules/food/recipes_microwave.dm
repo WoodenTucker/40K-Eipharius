@@ -347,14 +347,6 @@ I said no!
 	)
 	result = /obj/item/reagent_containers/food/snacks/meatkabob
 
-/datum/recipe/corpsestarch
-	items = list(
-		/obj/item/stack/rods,
-		/obj/item/reagent_containers/food/snacks/cutlet,
-		/obj/item/reagent_containers/food/snacks/cutlet,
-	)
-	result = /obj/item/reagent_containers/food/snacks/warfare/rat
-
 /datum/recipe/tofukabob
 	items = list(
 		/obj/item/stack/rods,
