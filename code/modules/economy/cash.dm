@@ -1,6 +1,6 @@
 /obj/item/spacecash
-	name = "0 credits"
-	desc = "It's worth 0 credits."
+	name = "0 scrip"
+	desc = "Paper currency issued by the local Lord. Not suitable for interplanetary trade."
 	gender = PLURAL
 	icon = 'icons/obj/items.dmi'
 	icon_state = "spacecash1"
@@ -37,7 +37,7 @@
 			h_user.drop_from_inventory(src)
 			h_user.drop_from_inventory(bundle)
 			h_user.put_in_hands(bundle)
-		to_chat(user, "<span class='notice'>You add [src.worth] credits worth of money to the bundles.<br>It holds [bundle.worth] credits now.</span>")
+		to_chat(user, "<span class='notice'>You add [src.worth] scrip worth of money to the bundles.<br>It holds [bundle.worth] scrip now.</span>")
 		qdel(src)
 
 
@@ -46,9 +46,8 @@
 		return list(icon_state)
 
 /obj/item/spacecash/bundle
-	name = "pile of credits"
+	name = "pile of scrip"
 	icon_state = ""
-	desc = "They are worth 0 credits."
 	worth = 0
 
 /obj/item/spacecash/bundle/getMoneyImages()
@@ -77,7 +76,6 @@
 		banknote.transform = M
 		src.overlays += banknote
 
-	src.desc = "They are worth [worth] credits."
 	if(worth in denominations)
 		src.SetName("[worth] credit")
 	else
@@ -89,7 +87,7 @@
 		w_class = ITEM_SIZE_SMALL
 
 /obj/item/spacecash/bundle/attack_self()
-	var/amount = input(usr, "How many credits do you want to take? (0 to [src.worth])", "Take Money", 20) as num
+	var/amount = input(usr, "How many scrip do you want to take? (0 to [src.worth])", "Take Money", 20) as num
 	amount = round(Clamp(amount, 0, src.worth))
 	if(amount==0) return 0
 
@@ -110,51 +108,43 @@
 		qdel(src)
 
 /obj/item/spacecash/bundle/c1
-	name = "1 credit"
+	name = "1 scrip"
 	icon_state = "spacecash1"
-	desc = "It's worth 1 credit."
 	worth = 1
 
 /obj/item/spacecash/bundle/c10
-	name = "10 credits"
+	name = "10 scrip"
 	icon_state = "spacecash10"
-	desc = "It's worth 10 credits."
 	worth = 10
 
 /obj/item/spacecash/bundle/c20
-	name = "20 credits"
+	name = "20 scrip"
 	icon_state = "spacecash20"
-	desc = "It's worth 20 credits."
 	worth = 20
 
 /obj/item/spacecash/bundle/c50
-	name = "50 credits"
+	name = "50 scrip"
 	icon_state = "spacecash50"
-	desc = "It's worth 50 credits."
 	worth = 50
 
 /obj/item/spacecash/bundle/c100
-	name = "100 credits"
+	name = "100 scrip"
 	icon_state = "spacecash100"
-	desc = "It's worth 100 credits."
 	worth = 100
 
 /obj/item/spacecash/bundle/c200
-	name = "200 credits"
+	name = "200 scrip"
 	icon_state = "spacecash200"
-	desc = "It's worth 200 credits."
 	worth = 200
 
 /obj/item/spacecash/bundle/c500
-	name = "500 credits"
+	name = "500 scrip"
 	icon_state = "spacecash500"
-	desc = "It's worth 500 credits."
 	worth = 500
 
 /obj/item/spacecash/bundle/c1000
-	name = "1000 credits"
+	name = "1000 scrip"
 	icon_state = "spacecash1000"
-	desc = "It's worth 1000 credits."
 	worth = 1000
 
 proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
