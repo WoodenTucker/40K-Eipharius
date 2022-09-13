@@ -48,6 +48,18 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"am" = (
+/obj/item/stool/padded,
+/obj/structure/sink{
+	dir = 8;
+	icon_state = "sink";
+	pixel_x = -13;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ap" = (
 /obj/structure/mirror{
 	pixel_y = -32
@@ -139,6 +151,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
+"aC" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "aD" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
@@ -237,6 +257,26 @@
 "bh" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/villageinside)
+"bi" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/industrial/warning{
+	icon_state = "warning";
+	dir = 8
+	},
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/structure/closet/crate/freezer/rations,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "bo" = (
 /obj/structure/flora/ausbushes/palebush,
 /turf/simulated/floor/snow,
@@ -326,6 +366,25 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"bV" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "bX" = (
 /obj/machinery/light{
 	dir = 1;
@@ -439,6 +498,18 @@
 "cD" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/theforest)
+"cF" = (
+/obj/effect/wingrille_spawn/reinforced,
+/obj/machinery/door/blast/shutters/open{
+	dir = 2;
+	icon_state = "shutter0";
+	id = "outpostgateslockdown"
+	},
+/obj/effect/wingrille_spawn/reinforced,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "cH" = (
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/theforest)
@@ -456,6 +527,34 @@
 /obj/machinery/teleport/hub,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
+"cR" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2{
+	name = "Khornate Commander Helmet";
+	color = "gold";
+	armor = list("melee"=48,"bullet"=54,"laser"=44,"energy"=35,"bomb"=20,"bio"=50,"rad"=50)
+	},
+/obj/item/clothing/suit/armor/guardsman/bloodpact{
+	name = "Khornate Commander Armor";
+	color = "gold";
+	armor = list("melee"=75,"bullet"=75,"laser"=65,"energy"=20,"bomb"=30,"bio"=10,"rad"=20)
+	},
+/obj/item/melee/chain/mercycs,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "cV" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -500,23 +599,247 @@
 /obj/effect/floor_decal/newcorner/black/solid,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"do" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	icon_state = "pipe-t";
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"dr" = (
+/obj/item/device/radio/intercom{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 2;
+	layer = 2.4;
+	level = 2
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/machinery/vending/dinnerware,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "dx" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"dz" = (
+/obj/machinery/door/blast/bordergatel/closed{
+	id = "pactgate2";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"dL" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ea" = (
+/obj/structure/closet/walllocker/emerglocker/north,
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/random/drinkbottle,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ed" = (
+/obj/structure/cable{
+	icon_state = "0-2";
+	pixel_y = 1;
+	d2 = 2
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/sink{
+	dir = 4;
+	icon_state = "sink";
+	pixel_x = 11;
+	pixel_y = 0
+	},
+/obj/effect/decal/cleanable/blood/gibs/vomit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ep" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"eI" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"eK" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/obj/item/reagent_containers/ivbag/blood/OMinus,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"eN" = (
+/obj/structure/lattice,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"eR" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "eV" = (
 /obj/structure/curtain/open/privacy,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"eY" = (
+/obj/structure/sign/redcross,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fj" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fk" = (
+/obj/structure/lattice,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fy" = (
+/obj/machinery/requests_console{
+	announcementConsole = 1;
+	department = "Captain";
+	pixel_x = 32
+	},
+/obj/structure/bed/chair{
+	icon_state = "chair_preview";
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/vending/cigarette,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fJ" = (
+/obj/machinery/computer/cryopod,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"fW" = (
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/structure/table/woodentable,
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/light_switch{
+	pixel_y = 25
+	},
+/obj/random/action_figure,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ga" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/open,
+/turf/simulated/shuttle/wall/corner/smoothwhite{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "ge" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -526,6 +849,37 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"gm" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/bed/chair/comfy/brown{
+	icon_state = "comfychair_preview";
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"gL" = (
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/structure/undies_wardrobe,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "gO" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable,
@@ -535,6 +889,23 @@
 /obj/machinery/power/smes/buildable/outpost_substation,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"gY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "hw" = (
 /obj/machinery/firealarm{
 	pixel_y = 30
@@ -546,6 +917,70 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"hD" = (
+/obj/structure/shuttle/window{
+	color = "grey"
+	},
+/obj/effect/wingrille_spawn/reinforced/polarized/full/inquisitor,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"hS" = (
+/obj/machinery/door/blast/bordergatel/closed{
+	id = "pactgate";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ie" = (
+/obj/structure/table/standard,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/obj/item/book/manual/chef_recipes,
+/obj/item/reagent_containers/food/condiment/small/peppermill{
+	pixel_x = 3
+	},
+/obj/item/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
+/obj/item/reagent_containers/glass/rag,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ih" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/structure/cult/clockworkobelisk,
+/obj/effect/golemrune,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ii" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/snow,
@@ -559,6 +994,24 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"il" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_x = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "is" = (
 /obj/structure/flora/tree/snowy,
 /turf/simulated/floor/snow,
@@ -567,10 +1020,32 @@
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"iD" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	icon_state = "pipe-t";
+	dir = 1
+	},
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "iK" = (
 /obj/structure/flora/tree/snowy,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
+"jg" = (
+/obj/machinery/cryopod/lifepod,
+/obj/machinery/door/window/southright,
+/obj/machinery/computer/cryopod{
+	pixel_x = 32
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "jo" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -595,6 +1070,43 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"jE" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"jH" = (
+/obj/structure/closet,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/random/clothing,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 9
+	},
+/obj/item/storage/backpack/dufflebag,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "jM" = (
 /obj/machinery/newscaster{
 	pixel_y = 33
@@ -603,6 +1115,82 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"jS" = (
+/obj/machinery/door/blast/shutters,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/hangarpact)
+"jX" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"jY" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/structure/cult/talisman,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"kh" = (
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/structure/bed/chair,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"km" = (
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/access_button/airlock_interior{
+	master_tag = "bearcat_dock_port";
+	pixel_x = 12;
+	pixel_y = 20
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/machinery/door/airlock/external/bolted/cycling{
+	id_tag = "dock_port_in"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "kq" = (
 /obj/machinery/button/remote/blast_door{
 	id = "bridgeflooridlock";
@@ -612,6 +1200,43 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"kr" = (
+/obj/structure/closet/walllocker/emerglocker/south,
+/obj/item/device/radio/intercom{
+	pixel_x = -32
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	layer = 2.4;
+	level = 2
+	},
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"kt" = (
+/obj/structure/closet/crate/operations,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"ku" = (
+/obj/structure/closet/crate/freezer/rations,
+/obj/item/storage/backpack/dufflebag,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"kw" = (
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "kD" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -621,11 +1246,109 @@
 /obj/machinery/power/port_gen/pacman,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"kE" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"kN" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"kR" = (
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "kV" = (
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"lb" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"lf" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 1
+	},
+/obj/item/device/radio/intercom{
+	pixel_y = 32
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ll" = (
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/card/id{
+	assignment = "Bloodpact";
+	name = "Bloodpact"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "lm" = (
 /obj/machinery/firealarm{
 	pixel_x = -30
@@ -634,6 +1357,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"lz" = (
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "lA" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/barbwire,
@@ -656,11 +1390,72 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"lM" = (
+/obj/machinery/atm{
+	pixel_y = 25
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"lP" = (
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/oa/hangarpact)
+"lS" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/obj/item/clothing/head/heretichood/alt2,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/card/id{
+	assignment = "Bloodpact";
+	name = "Bloodpact"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "md" = (
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
+"mi" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "mm" = (
 /obj/machinery/firealarm{
 	pixel_y = -30
@@ -679,6 +1474,27 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"mz" = (
+/obj/structure/grille,
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "mC" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -690,6 +1506,79 @@
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/theforest)
+"mK" = (
+/obj/item/bedsheet/captain,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/bed/padded,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"mL" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/item/stool/padded,
+/obj/structure/closet/crate,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"mV" = (
+/obj/machinery/door/blast/shutters,
+/turf/simulated/wall/concrete/strong/chapel,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"mX" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/machinery/computer/message_monitor,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"mZ" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"nf" = (
+/obj/structure/table/standard,
+/obj/item/toy/figure/captain,
+/obj/machinery/button/remote/blast_door{
+	id = "sensor";
+	name = "Sensor Shroud"
+	},
+/obj/item/device/radio,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "nm" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -705,6 +1594,64 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"nN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/structure/closet/crate,
+/obj/item/shield/riot,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"nS" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	layer = 2.4;
+	level = 2
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"nW" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "on" = (
 /obj/structure/railing{
 	dir = 4
@@ -713,6 +1660,21 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"oo" = (
+/obj/machinery/vending/coffee,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ox" = (
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "oC" = (
 /obj/structure/closet/crate,
 /obj/item/melee/trench_axe,
@@ -720,6 +1682,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"oF" = (
+/obj/machinery/shipsensors,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "oH" = (
 /obj/machinery/door/airlock/cone,
 /turf/simulated/floor/tiled/dark,
@@ -729,6 +1697,58 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"oV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"pa" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cult/maniamotor,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"pi" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ps" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -759,6 +1779,26 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"pL" = (
+/obj/random/loot/lightstubber,
+/obj/random/loot/lightstubber,
+/obj/random/loot/lightstubber,
+/obj/random/loot/lightstubber,
+/obj/item/gun/projectile/automatic/stubber/villiers,
+/obj/structure/closet/crate/large,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"qa" = (
+/obj/machinery/light,
+/obj/machinery/newscaster{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "qi" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -771,6 +1811,103 @@
 /obj/structure/flora/tree/pine,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
+"qv" = (
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/storage/backpack/satchel/warfare,
+/obj/item/storage/backpack/satchel/warfare,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"qD" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/closet/walllocker/emerglocker/east,
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"qI" = (
+/obj/machinery/power/port_gen/pacman,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"qV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	layer = 2.4;
+	level = 2
+	},
+/obj/structure/closet/crate,
+/obj/item/grenade/frag,
+/obj/item/grenade/frag,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"qW" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/hangarpact)
+"ra" = (
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"rd" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/junction,
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "re" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -789,6 +1926,12 @@
 	color = null
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"rE" = (
+/obj/item/crowbar,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "rY" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -801,6 +1944,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"sd" = (
+/obj/structure/lattice,
+/turf/simulated/floor,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"se" = (
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/structure/table/standard,
+/obj/machinery/recharger,
+/obj/item/trash/tray,
+/obj/item/circular_saw,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "sz" = (
 /obj/structure/torchwall{
 	dir = 1;
@@ -808,6 +1968,25 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
+"sA" = (
+/turf/simulated/wall/r_wall,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"sE" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "sJ" = (
 /obj/machinery/light{
 	dir = 1;
@@ -820,6 +1999,57 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"sQ" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"sR" = (
+/obj/structure/disposalpipe/junction,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"sX" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "td" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -829,6 +2059,76 @@
 	},
 /turf/space,
 /area/cadiaoutpost/oa/shuttle/aquila)
+"tp" = (
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/structure/closet/crate,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/item/grenade/smokebomb,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"tx" = (
+/obj/machinery/alarm{
+	dir = 1;
+	icon_state = "alarm0";
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/obj/machinery/light,
+/obj/item/modular_computer/console/preset/engineering,
+/obj/item/device/radio/intercom{
+	pixel_x = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"tL" = (
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/structure/table/rack/dark,
+/obj/item/stack/barbwire,
+/obj/item/stack/barbwire,
+/obj/item/stack/barbwire,
+/obj/item/stack/barbwire,
+/obj/item/shovel,
+/obj/item/shovel,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/defensive_barrier,
+/obj/item/landmine,
+/obj/item/shovel,
+/obj/item/stack/barbwire,
+/obj/item/landmine,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"tV" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ub" = (
 /obj/machinery/firealarm{
 	pixel_y = 30
@@ -838,14 +2138,163 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"um" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"uo" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ux" = (
+/obj/item/remains,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"uz" = (
+/obj/item/remains,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "uA" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
+"uD" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"uE" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"uM" = (
+/obj/structure/table/standard,
+/obj/structure/cable,
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
+/obj/structure/closet/medical_wall/filled{
+	pixel_y = -32
+	},
+/obj/item/tape_roll,
+/obj/item/retractor,
+/obj/item/scalpel,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"uS" = (
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 4
+	},
+/obj/structure/closet/emcloset,
+/obj/structure/sign/deck/first{
+	pixel_x = 32
+	},
+/obj/random/voidhelmet,
+/obj/random/voidhelmet,
+/obj/random/voidhelmet,
+/obj/random/voidsuit,
+/obj/random/voidsuit,
+/obj/random/voidsuit,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "uW" = (
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"vj" = (
+/obj/structure/sign/spooky,
+/turf/simulated/wall/concrete/strong,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"vk" = (
+/obj/structure/toilet{
+	icon_state = "toilet00";
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted,
+/obj/structure/window/reinforced/tinted{
+	icon_state = "twindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	icon_state = "twindow"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"vl" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"vn" = (
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "vo" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -871,6 +2320,53 @@
 /obj/machinery/teleport/station,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
+"vE" = (
+/obj/effect/gibspawner/human,
+/turf/simulated/floor,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"vF" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"vR" = (
+/obj/machinery/door/blast/regular{
+	id = "sensor"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"wh" = (
+/obj/machinery/door/window/westleft{
+	base_state = "right";
+	dir = 4;
+	icon_state = "right";
+	name = "Reception Window";
+	opacity = 1
+	},
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 8
+	},
+/obj/item/towel,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "wi" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -884,6 +2380,30 @@
 "wm" = (
 /turf/space,
 /area/cadiaoutpost/oa/theforest)
+"wt" = (
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"wx" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "wB" = (
 /obj/structure/bed/chair/wood{
 	dir = 8;
@@ -893,6 +2413,69 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"wF" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"wL" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"wZ" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"xe" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 8;
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "xp" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -904,6 +2487,12 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"xs" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "xw" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
@@ -931,15 +2520,57 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"xE" = (
+/obj/machinery/shower{
+	icon_state = "shower";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted{
+	icon_state = "twindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted,
+/obj/structure/curtain/open/shower,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "xG" = (
 /obj/machinery/light/stolb,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"xH" = (
+/turf/simulated/shuttle/wall/corner/dark/ne,
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"xJ" = (
+/obj/item/device/radio/intercom{
+	pixel_x = -32
+	},
+/obj/structure/closet/wardrobe/pjs,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "xM" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/tree/snowy,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"xT" = (
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/item/clothing/suit/armor/whiteshield,
+/obj/structure/closet/crate/large,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "xU" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -957,6 +2588,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"ye" = (
+/turf/simulated/wall,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "yh" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -972,6 +2606,25 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"yu" = (
+/obj/structure/closet/crate,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/item/mortar_launcher/chaos,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/incendiary,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/obj/item/mortar_shell/frag,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "yx" = (
 /obj/structure/mirror{
 	pixel_y = -32
@@ -988,6 +2641,152 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"yy" = (
+/obj/structure/closet/crate/large,
+/obj/item/clothing/gloves/duty,
+/obj/item/clothing/gloves/duty,
+/obj/item/clothing/gloves/duty,
+/obj/item/clothing/gloves/duty,
+/obj/item/clothing/gloves/duty,
+/obj/item/clothing/gloves/duty,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"yM" = (
+/obj/machinery/door/blast/bordergater/closed{
+	id = "pactgate2";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"yN" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"yT" = (
+/obj/structure/closet/crate/ateopoine,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"yU" = (
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/hangarpact)
+"zn" = (
+/obj/structure/table/standard,
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 8
+	},
+/obj/item/storage/box/donkpockets,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/item/material/kitchen/rollingpin,
+/obj/item/reagent_containers/food/condiment/small/saltshaker{
+	pixel_x = -3;
+	pixel_y = 0
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zv" = (
+/obj/random/maintenance,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zB" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zI" = (
+/obj/structure/table/standard,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/structure/sign/warning/nosmoking_1{
+	pixel_y = -32
+	},
+/obj/structure/sign/goldenplaque/medical{
+	pixel_x = 32
+	},
+/obj/item/storage/firstaid/adv,
+/obj/random/medical,
+/obj/item/stack/medical/advanced/bruise_pack,
+/obj/item/reagent_containers/syringe/antiviral,
+/obj/item/device/healthanalyzer,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zK" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/sign/directions/engineering{
+	pixel_x = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zN" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/bed/chair/comfy/brown{
+	icon_state = "comfychair_preview";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/gibs/up,
+/obj/effect/decal/cleanable/blood/gibs/vomit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/obj/structure/table/standard,
+/obj/item/glass_extra/straw,
+/obj/item/toy/therapy_blue,
+/obj/item/reagent_containers/spray/cleaner,
+/obj/effect/decal/cleanable/blood/gibs/vomit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"zQ" = (
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "zS" = (
 /obj/machinery/light{
 	dir = 8;
@@ -1005,6 +2804,62 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"Ad" = (
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ak" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/sign/warning/fall{
+	pixel_x = -32
+	},
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/obj/item/clothing/head/heretichood/alt2,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/card/id{
+	assignment = "Bloodpact";
+	name = "Bloodpact"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"As" = (
+/obj/structure/closet/walllocker/emerglocker/north,
+/obj/structure/bed/chair/wood,
+/obj/item/deck/tarot,
+/obj/effect/decal/cleanable/blood/gibs/body,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"AA" = (
+/obj/effect/floor_decal/turf/splate,
+/obj/machinery/door/airlock/security_hatch{
+	color = "grey";
+	maxhealth = 3000
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "AI" = (
 /obj/machinery/door/airlock/cone,
 /obj/item/taperoll/engineering/applied,
@@ -1020,9 +2875,51 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/theforest)
 "Bd" = (
-/mob/living/simple_animal/hostile/bear,
+/mob/living/simple_animal/hostile/syndicate/ranged{
+	name = "Insane Guardsman"
+	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"Bg" = (
+/obj/structure/cable{
+	d2 = 8;
+	icon_state = "0-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Bo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/obj/item/clothing/head/heretichood/alt2,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/card/id{
+	assignment = "Bloodpact";
+	name = "Bloodpact"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Bp" = (
+/obj/machinery/door/blast/bordergater/closed{
+	id = "armorypact";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
 "Bq" = (
 /obj/structure/sink/puddle,
 /turf/simulated/floor/snow,
@@ -1034,6 +2931,37 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"BC" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/simulated/wall,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"BQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/obj/structure/sign/warning/vacuum{
+	pixel_x = 35
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"BW" = (
+/obj/machinery/door/blast/bordergatec/closed{
+	id = "armorypact";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
+"BZ" = (
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Cb" = (
 /obj/machinery/light/stolb{
 	on = 1
@@ -1044,6 +2972,37 @@
 /obj/structure/girder,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"Cj" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/effect/floor_decal/industrial/warning/corner{
+	icon_state = "warningcorner";
+	dir = 8
+	},
+/obj/structure/closet/crate,
+/obj/item/material/sword/combat_knife/rare,
+/obj/item/material/sword/combat_knife/rare,
+/obj/item/material/sword/combat_knife/rare,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
+/obj/random/loot/heavymelee,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ck" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1052,12 +3011,110 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"Cq" = (
+/obj/structure/closet/crate/operations,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Cr" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ct" = (
+/obj/machinery/door/blast/bordergatec/closed{
+	id = "pactgate";
+	maxhealth = 10000
+	},
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Cv" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Cw" = (
 /obj/effect/floor_decal/newcorner/step,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"CC" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/airlock_sensor{
+	id_tag = "dock_star_sensor";
+	pixel_y = 37
+	},
+/obj/machinery/embedded_controller/radio/airlock/docking_port{
+	id_tag = "bearcat_starboard_dock";
+	pixel_y = 25;
+	tag_airpump = "dock_star_pump";
+	tag_chamber_sensor = "dock_star_sensor";
+	tag_exterior_door = "dock_star_out";
+	tag_interior_door = "dock_star_in"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"CZ" = (
+/obj/item/device/radio/intercom{
+	pixel_y = -32
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Dp" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
@@ -1069,6 +3126,87 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"Dq" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Cryo Storage";
+	normalspeed = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Dr" = (
+/obj/machinery/door/blast/shutters,
+/turf/simulated/floor/plating{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"DE" = (
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	layer = 2.4;
+	level = 2
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"DG" = (
+/obj/item/remains/human,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/theforest)
+"DH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"DM" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/sign/directions/engineering{
+	pixel_x = -32
+	},
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "DR" = (
 /obj/effect/floor_decal/turf/splate,
 /obj/structure/cable{
@@ -1080,10 +3218,221 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"Ei" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ek" = (
 /obj/structure/flora/ausbushes,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"Eu" = (
+/obj/structure/closet/crate/medical,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"Ew" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/cable{
+	icon_state = "2-9"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ey" = (
+/obj/structure/table/standard,
+/obj/machinery/button/remote/blast_door{
+	id = "scraplock";
+	name = "External Lockdown"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ED" = (
+/obj/item/ammo_magazine/c45m/warfare/ap,
+/obj/item/ammo_magazine/c45m/warfare/ap,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/item/ammo_magazine/c45m/warfare/ms,
+/obj/structure/closet/cabinet,
+/obj/item/gun/projectile/talon/renegade,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"EH" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "conpipe-c";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"EP" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 4
+	},
+/obj/structure/sign/warning/vacuum{
+	pixel_x = -35
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ES" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"EU" = (
+/obj/machinery/computer/shuttle_control/ferry/bloodpact,
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/hangarpact)
+"Fa" = (
+/obj/machinery/button/remote/blast_door/lever{
+	id = "armorypact";
+	name = "EXTERIOR ARMORY";
+	pixel_x = 30;
+	pixel_y = -10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Fh" = (
+/obj/machinery/door/window/westleft{
+	base_state = "right";
+	dir = 4;
+	icon_state = "right";
+	name = "Reception Window";
+	opacity = 1
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Fk" = (
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Fq" = (
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/structure/reagent_dispensers/water_cooler,
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Fu" = (
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/card/id{
+	assignment = "Bloodpact";
+	name = "Bloodpact"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Fy" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"FA" = (
+/obj/machinery/door/blast/bordergatel/closed{
+	id = "armorypact";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/oa/security)
+"FF" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/structure/cult/interdictionlensinactive,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"FH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/structure/closet/crate,
+/obj/item/grenade/frag/high_yield/krak,
+/obj/item/grenade/frag/high_yield/krak,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "FM" = (
 /obj/machinery/door/unpowered/inn{
 	name = "door"
@@ -1092,6 +3441,53 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"Gb" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Gi" = (
+/obj/machinery/door/blast/bordergater/closed{
+	id = "pactgate";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Gq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	dir = 10;
+	icon_state = "intact"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Gu" = (
+/obj/structure/cable,
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
+/obj/structure/closet/wardrobe/mixed,
+/obj/item/storage/backpack/dufflebag/med,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"GG" = (
+/obj/item/modular_computer/console/preset/security,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "GO" = (
 /obj/machinery/door/blast/shutters{
 	dir = 2;
@@ -1103,6 +3499,83 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"Hi" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/floor_decal/plaque,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
+/obj/structure/cult/interdictionlensinactive,
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Hs" = (
+/obj/machinery/vending/snack,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Hv" = (
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/item/clothing/head/helmet/whiteshield,
+/obj/structure/closet/crate/large,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"HD" = (
+/obj/structure/closet/crate/large,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/shoes/jackboots,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"HE" = (
+/obj/item/device/radio/intercom{
+	pixel_y = 32
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/closet/crate,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/pulse/plasma/pistol/chaos,
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"HH" = (
+/obj/machinery/door/blast/regular,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "HJ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1115,10 +3588,180 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"HM" = (
+/obj/machinery/light{
+	icon_state = "tube1";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"HR" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "HW" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
+"HY" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4;
+	layer = 2.4;
+	level = 2
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"HZ" = (
+/obj/item/remains,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ia" = (
+/obj/structure/grille,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ie" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/effect/decal/cleanable/blood/gibs/vomit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ir" = (
+/turf/simulated/shuttle/wall/corner/dark/nw,
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"It" = (
+/turf/simulated/floor/stone/chapel,
+/area/cadiaoutpost/oa/theforest)
+"Iy" = (
+/obj/structure/closet/crate/large,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"IN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/space,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"IW" = (
+/obj/machinery/light_switch{
+	pixel_x = -25
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/sign/deck/first{
+	pixel_x = 32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Jd" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	dir = 4;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Jf" = (
+/obj/item/gun/energy/stunrevolver,
+/obj/structure/closet/cabinet,
+/obj/item/storage/secure/briefcase,
+/obj/item/device/camera,
+/obj/item/storage/backpack/dufflebag/syndie,
+/obj/item/handcuffs,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Jh" = (
+/obj/structure/sign/warning/docking_area,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Jw" = (
+/obj/item/remains/human,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
 "Jx" = (
 /obj/structure/catwalk,
 /obj/structure/cable{
@@ -1128,16 +3771,346 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"JC" = (
+/obj/effect/decal/cleanable/blood/gibs/limb,
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"JK" = (
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "JL" = (
 /obj/item/crowbar,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
+"JY" = (
+/obj/structure/closet/crate/secure/large/cargo,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"Ki" = (
+/obj/machinery/computer/shuttle_control/ferry/bloodpact,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"KE" = (
+/obj/machinery/computer/helm,
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"KH" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/portables_connector{
+	dir = 8
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/portable_atmospherics/canister/empty/air,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"KK" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"KY" = (
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Lo" = (
+/obj/item/device/radio/intercom{
+	pixel_y = 32
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/item/bedsheet/medical,
+/obj/structure/curtain/open/privacy,
+/obj/structure/bed/padded,
+/obj/item/clothing/accessory/stethoscope,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "LB" = (
 /obj/machinery/door/airlock/glass_external{
 	color = null
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"LD" = (
+/obj/structure/closet/crate/large,
+/obj/machinery/light{
+	dir = 8;
+	icon_state = "tube1"
+	},
+/obj/item/clothing/suit/bomb_suit/security{
+	armor = list("melee"=30,"bullet"=30,"laser"=30,"energy"=50,"bomb"=90,"bio"=90,"rad"=40)
+	},
+/obj/item/clothing/head/bomb_hood/security,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"LO" = (
+/obj/structure/closet/crate,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/structure/cable{
+	icon_state = "6-8"
+	},
+/obj/random/storage,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/random/bomb_supply,
+/obj/item/storage/box/syringes,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"LP" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Bathrooms";
+	normalspeed = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"LQ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"LV" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ma" = (
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/access_button/airlock_interior{
+	master_tag = "bearcat_starboard_dock";
+	pixel_x = -12;
+	pixel_y = 20
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Mk" = (
+/obj/item/device/cassette/orks1,
+/obj/item/device/boombox,
+/obj/item/device/cassette/demon,
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Mo" = (
+/obj/structure/table/steel,
+/obj/machinery/button/remote/blast_door/lever{
+	id = "pactgate";
+	name = "Pact Gate";
+	pixel_x = 30;
+	pixel_y = -10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"MO" = (
+/obj/machinery/door/blast/bordergatec/closed{
+	id = "pactgate2";
+	maxhealth = 10000
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"MV" = (
+/obj/item/modular_computer/console/preset/medical,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Nq" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 8
+	},
+/obj/structure/toilet,
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted{
+	icon_state = "twindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	icon_state = "twindow"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/corner/white/diagonal,
+/obj/effect/decal/cleanable/blood/gibs/vomit,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Nv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ND" = (
+/obj/structure/table/steel,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"NG" = (
+/turf/simulated/wall/ancient{
+	color = null
+	},
+/area/cadiaoutpost/oa/security)
+"Oc" = (
+/obj/structure/table/standard,
+/obj/machinery/microwave,
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 8
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Om" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/obj/structure/closet/crate,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/hotshot/bloodpact,
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Os" = (
+/obj/machinery/atmospherics/unary/vent_pump/high_volume{
+	dir = 8;
+	frequency = 1379;
+	id_tag = "dock_star_pump"
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ox" = (
 /obj/machinery/light{
 	dir = 4;
@@ -1149,12 +4122,121 @@
 /obj/effect/floor_decal/newcorner/black/solid,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"OC" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"OJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"OM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/floor_decal/industrial/warning,
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/obj/item/clothing/head/heretichood/alt2,
+/obj/item/clothing/under/rank/principalagent,
+/obj/item/card/id{
+	assignment = "Bloodpact";
+	name = "Bloodpact"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ON" = (
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 5
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"OQ" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Medical Bay";
+	normalspeed = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/clothing/suit/armor/guardsman/bloodpact,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "OV" = (
 /obj/item/campfire/self_lit,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"Pn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/disposalpipe/segment{
+	icon_state = "conpipe-c";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Pv" = (
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 9
+	},
+/obj/machinery/newscaster{
+	pixel_x = -32
+	},
+/obj/machinery/media/jukebox,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "PC" = (
 /obj/structure/undies_wardrobe,
 /obj/item/clothing/suit/armor/guardsman/mercenary{
@@ -1165,11 +4247,63 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"PO" = (
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/random/loot/lightstubberammo,
+/obj/structure/closet/crate/large,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"PZ" = (
+/turf/simulated/shuttle/wall{
+	color = "grey";
+	icon_state = "wall3"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "Qa" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"Qf" = (
+/obj/structure/cable{
+	icon_state = "0-2";
+	d2 = 2
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/sign/warning/server_room{
+	pixel_x = -32
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Qk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Qp" = (
 /obj/structure/catwalk,
 /turf/simulated/floor/plating{
@@ -1191,12 +4325,84 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"QU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Re" = (
+/obj/structure/bed/chair/comfy/captain{
+	desc = "Comfy chair for luxury and piloting.";
+	dir = 1;
+	icon_state = "capchair_preview";
+	name = "pilot seat"
+	},
+/obj/effect/shuttle_landmark/ferry/bloodpact_start,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Rf" = (
+/obj/item/device/radio/intercom{
+	pixel_y = -32
+	},
+/obj/machinery/alarm{
+	dir = 4;
+	icon_state = "alarm0";
+	pixel_x = -24
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ri" = (
+/obj/structure/table/steel,
+/obj/machinery/button/remote/blast_door/lever{
+	id = "pactgate";
+	name = "Pact Gate";
+	pixel_x = 30;
+	pixel_y = -10
+	},
+/obj/item/handcuffs/cable/red,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/obj/item/device/radio/headset/red_team,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Rt" = (
+/obj/item/stool/padded,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner/red/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "RA" = (
 /turf/simulated/shuttle/wall{
 	color = "grey";
 	icon_state = "wall3"
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
+"RB" = (
+/obj/structure/shuttle/engine/propulsion,
+/turf/simulated/open,
+/turf/simulated/shuttle/wall/corner/smoothwhite{
+	icon_state = "corner_white";
+	dir = 1
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "RE" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1215,11 +4421,35 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"RS" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor,
+/area/cadiaoutpost/oa/hangarpact)
 "RT" = (
 /turf/simulated/wall/ancient{
 	color = null
 	},
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"RU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/structure/closet/crate,
+/obj/item/gun/projectile/bolter_pistol/inquis,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/ammo_magazine/bolt_pistol_magazine,
+/obj/item/gun/projectile/necros,
+/obj/item/ammo_magazine/c44/ap,
+/obj/item/ammo_magazine/c44/ap,
+/obj/item/ammo_magazine/c44/ap,
+/obj/item/ammo_magazine/c44/ap,
+/obj/item/gun/projectile/slugrevolver,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Sb" = (
 /obj/effect/floor_decal/newcorner/black/solid,
 /obj/machinery/door/blast/shutters/open{
@@ -1230,6 +4460,23 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
+"Se" = (
+/obj/machinery/door/window/westleft,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 4;
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Sj" = (
 /obj/structure/closet/crate,
 /obj/item/beartrap,
@@ -1247,15 +4494,365 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"St" = (
+/obj/machinery/light,
+/obj/machinery/optable,
+/obj/item/reagent_containers/food/drinks/coffeecup/britcup,
+/obj/item/reagent_containers/glass/rag,
+/obj/machinery/oxygen_pump/anesthetic{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"SC" = (
+/obj/structure/window/reinforced/tinted{
+	icon_state = "twindow";
+	dir = 4
+	},
+/obj/machinery/shower{
+	icon_state = "shower";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/item/soap,
+/obj/structure/curtain/open/shower,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"SX" = (
+/obj/machinery/sleeper,
+/obj/structure/sign/warning/nosmoking_2{
+	pixel_y = 28
+	},
+/obj/structure/closet/walllocker/emerglocker/west,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ta" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/obj/structure/cable{
+	icon_state = "4-10"
+	},
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Tb" = (
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/atmospherics/portables_connector{
+	icon_state = "map_connector";
+	dir = 4
+	},
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/machinery/portable_atmospherics/canister/empty/air,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ti" = (
+/obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Tn" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 8
+	},
+/obj/structure/mirror{
+	pixel_y = 29
+	},
+/obj/structure/sink{
+	pixel_y = 18
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	icon_state = "twindow"
+	},
+/obj/structure/window/reinforced/tinted{
+	icon_state = "twindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	icon_state = "twindow"
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 2;
+	layer = 2.4;
+	level = 2
+	},
+/obj/item/hemostat,
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Tr" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"TA" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/item/device/radio/intercom{
+	pixel_y = -32
+	},
+/obj/machinery/alarm{
+	dir = 8;
+	icon_state = "alarm0";
+	pixel_x = 24
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"TF" = (
+/obj/structure/bed/chair/comfy/brown,
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "TR" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/bridge/hallway)
+"TT" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ud" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Uf" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "conpipe-c";
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "0-4";
+	d2 = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ut" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Laundry";
+	normalspeed = 0
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel{
+	icon_state = "intact";
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Uu" = (
+/obj/structure/table/rack/dark,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/wood/fifty,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"Uw" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Uz" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"UE" = (
+/obj/machinery/door/airlock/autoname,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"UM" = (
+/obj/structure/closet/crate/miner,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "UT" = (
 /obj/structure/railing{
 	dir = 8
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
+"VH" = (
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 1;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/wood,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"VJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
+/obj/structure/bed/chair/office/light,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"VN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Wm" = (
+/obj/effect/gibspawner/human,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
 "Wq" = (
 /obj/structure/railing{
 	dir = 8
@@ -1297,6 +4894,159 @@
 /obj/effect/floor_decal/turf/splate,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"Xc" = (
+/obj/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_x = 28
+	},
+/obj/effect/floor_decal/corner/beige{
+	icon_state = "corner_white";
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Xj" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Xn" = (
+/obj/item/roller,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Xz" = (
+/obj/structure/bed/chair{
+	icon_state = "chair_preview";
+	dir = 1
+	},
+/obj/structure/cable{
+	d2 = 6;
+	icon_state = "0-6"
+	},
+/obj/structure/torchwall/service{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"XF" = (
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/obj/item/device/radio/headset/blue_team,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"XH" = (
+/obj/machinery/light/small{
+	icon_state = "bulb1";
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/structure/sign/directions/medical{
+	dir = 4;
+	icon_state = "direction_med";
+	pixel_x = 32;
+	pixel_z = -4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/fuel,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"XJ" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"XN" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/decal/cleanable/blood/gibs/up,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"XP" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "XS" = (
 /obj/machinery/power/terminal{
 	dir = 8;
@@ -1308,12 +5058,220 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
+"XT" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Yf" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	icon_state = "chair_preview"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"Yg" = (
+/obj/structure/iv_drip,
+/obj/structure/closet/medical_wall{
+	name = "pill cabinet";
+	pixel_x = 26
+	},
+/obj/item/storage/pill_bottle/antidexafen,
+/obj/item/storage/pill_bottle/tramadol,
+/obj/item/storage/pill_bottle/antitox,
+/obj/item/storage/pill_bottle/kelotane,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Yo" = (
+/obj/structure/toilet{
+	icon_state = "toilet00";
+	dir = 1
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	icon_state = "twindow"
+	},
+/obj/structure/window/reinforced/tinted{
+	icon_state = "twindow";
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable,
+/obj/machinery/light_switch{
+	pixel_y = -25
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/white/diagonal,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "Yp" = (
 /obj/item/ammo_box/flares,
 /turf/simulated/floor/plating{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangar)
+"Yu" = (
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Yy" = (
+/obj/machinery/door/airlock/command{
+	desc = "GET TO DAT SHUTTLE!.";
+	name = "Bloodpact Lander";
+	req_access = list()
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/shuttle/inquisitionpact)
+"YS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/item/gun/energy/las/lasgun/longlas,
+/obj/item/gun/energy/las/laspistol/militarum/lucius,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/cell/lasgun/hotshot,
+/obj/item/gun/energy/las/lasgun/rare,
+/obj/item/cell/lasgun/hotshot,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"YY" = (
+/obj/structure/grille,
+/obj/machinery/door/blast/regular{
+	density = 0;
+	icon_state = "pdoor0";
+	id = "scraplock";
+	name = "External Blast Doors";
+	opacity = 0
+	},
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/wall/r_wall/containment{
+	integrity = 50000
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ze" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	dir = 8
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Zl" = (
+/obj/structure/cable{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8";
+	pixel_y = 0
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Zm" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Zo" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/security)
+"Zr" = (
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	dir = 4
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Zu" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 2;
+	layer = 2.4;
+	level = 2
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"Zy" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/item/device/radio/intercom{
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ZC" = (
 /obj/item/stack/thrones2,
 /obj/item/stack/thrones2,
@@ -1323,6 +5281,63 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
+"ZE" = (
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/under/guard/uniform,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/shoes/jackboots/cadian,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/clothing/glasses/cadiangoggles/elite,
+/obj/item/storage/backpack/satchel/warfare,
+/obj/item/storage/backpack/satchel/warfare,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ZM" = (
+/obj/structure/table/standard,
+/obj/machinery/reagentgrinder,
+/obj/effect/floor_decal/corner/red/diagonal,
+/obj/structure/sign/monkey_painting{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ZP" = (
+/turf/simulated/floor,
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ZR" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/structure/cable{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
+"ZW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden{
+	icon_state = "intact";
+	dir = 9
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 
 (1,1,1) = {"
 AZ
@@ -4022,45 +8037,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
 cH
 cH
 cH
@@ -4279,45 +8294,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
 cH
 cH
 cH
@@ -4536,45 +8551,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+HM
+ZP
+ZP
+ZP
+ZP
+ZP
+HM
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+HM
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+HM
+ZP
+ZP
+ZP
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -4793,45 +8808,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+xs
+ZP
+xs
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -5050,45 +9065,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Ma
+Fk
+sd
+ZP
+ZP
+ZP
+Fk
+Fk
+XP
+Fk
+Fk
+Fk
+sX
+Ta
+Fk
+Fk
+Fk
+mZ
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -5307,45 +9322,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+CC
+XP
+sd
+sd
+ZP
+ZP
+Fk
+SC
+wh
+xE
+Fk
+ZM
+ie
+zn
+Oc
+Fk
+gL
+jH
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -5564,45 +9579,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Os
+Fk
+sd
+sd
+ZP
+ZP
+Jd
+Nq
+Fh
+vk
+Fk
+dr
+Rt
+OJ
+eK
+Fk
+lf
+QU
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -5821,45 +9836,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Tr
+Fk
+sd
+sd
+sd
+sd
+Fk
+Tn
+wt
+Yo
+Fk
+ea
+ed
+EH
+do
+Fk
+Uf
+iD
+Fk
+ZP
+mV
+mV
 cH
 cH
 cH
@@ -6078,45 +10093,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Fk
+XP
+Fk
+Fk
+sd
+Fk
+Fk
+km
+Tb
+Fk
+vn
+vn
+vn
+Fk
+Fk
+LP
+Fk
+Fk
+Fk
+Fk
+fj
+Fk
+Fk
+Ut
+Fk
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -6335,45 +10350,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Fk
+Fk
+JK
+Yu
+mX
+Fk
+sd
+Fk
+EP
+Gq
+ZW
+wx
+yN
+Yu
+Yu
+JC
+wx
+Xj
+Pn
+qD
+dL
+DM
+sR
+Ti
+KK
+rd
+XH
+Fk
+ZP
+mV
+mV
 cH
 cH
 cH
@@ -6592,45 +10607,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+vR
+oF
+vl
+Yu
+Yu
+Yu
+Jd
+sd
+Fk
+Ud
+DE
+CZ
+sA
+Yu
+sA
+ye
+ye
+ye
+ye
+BC
+ye
+ye
+ye
+zB
+Fk
+Fk
+Fk
+Fk
+Fk
+ZP
+Dr
+mV
 cH
 cH
 cH
@@ -6849,45 +10864,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+XJ
+eI
+eI
+YY
+Fk
+Fk
+Fk
+Cv
+Se
+TA
+Fk
+Fk
+Fk
+bV
+sA
+sA
+sA
+Yu
+sA
+Hs
+Pv
+Fq
+Fy
+fI
+ye
+yu
+FH
+kE
+tp
+Ak
+ZE
+ll
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -7106,45 +11121,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+wZ
+MV
+nf
+wF
+Xz
+tx
+Fk
+Fk
+il
+Fk
+Fk
+Fk
+lM
+gY
+kr
+sA
+eN
+Yu
+sA
+kh
+XF
+Yu
+HY
+gm
+ye
+HE
+uD
+HR
+qV
+OM
+ZE
+ll
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -7363,45 +11378,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+Ia
+KE
+zN
+um
+tV
+Ew
+Ad
+Qf
+ZR
+XN
+Uz
+Uz
+OC
+Hi
+Zr
+TT
+Uz
+Uz
+IN
+vF
+VN
+pa
+nW
+lb
+Zm
+Uz
+Ze
+ih
+cR
+lS
+ZE
+Fu
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -7620,45 +11635,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+wZ
+GG
+Ey
+Yu
+fy
+qa
+Fk
+Fk
+LV
+Fk
+Fk
+Fk
+Bg
+gY
+lz
+Fk
+fk
+Yu
+sA
+As
+XT
+Yu
+LQ
+Zy
+ye
+RU
+mL
+YS
+LO
+Bo
+ZE
+Fu
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -7877,45 +11892,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+mz
+eI
+eI
+YY
+Fk
+Fk
+Fk
+Jf
+ra
+ED
+Fk
+Fk
+Fk
+bV
+Fk
+Fk
+Fk
+Yu
+sA
+oo
+se
+uS
+ES
+Xc
+ye
+nN
+Om
+mi
+DH
+Cj
+qv
+bi
+Fk
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -8134,45 +12149,45 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+HH
+jg
+mK
+Qk
+VH
+Jd
+sd
+Cr
+xe
+nS
+Rf
+Fk
+Yu
+sA
+ye
+ye
+ye
+Ei
+ye
+ye
+ye
+ye
+wL
+Fk
+Fk
+Fk
+Fk
+Fk
+ZP
+mV
+mV
 cH
 cH
 cH
@@ -8391,6 +12406,45 @@ cH
 cH
 cH
 cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Fk
+fW
+TF
+jY
+Fk
+sd
+jX
+BQ
+Ie
+ON
+wx
+Yu
+zv
+JK
+rE
+wx
+Zl
+Nv
+IW
+oV
+zK
+sE
+Fk
+sd
+sd
+sd
+sd
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -8415,51 +12469,12 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cH
 cH
 cH
@@ -8648,6 +12663,45 @@ cH
 cH
 cH
 cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Fk
+Fk
+XP
+Fk
+Fk
+sd
+Fk
+Fk
+Ma
+KH
+Fk
+vn
+vn
+vn
+Fk
+Fk
+Dq
+Fk
+Fk
+Fk
+eY
+OQ
+Fk
+Fk
+sd
+ZP
+ZP
+ZP
+mV
+mV
 cH
 cH
 cH
@@ -8672,51 +12726,12 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cH
 cH
 cH
@@ -8905,6 +12920,45 @@ cH
 cH
 cH
 cH
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+sd
+sd
+sd
+sd
+Fk
+CC
+XP
+Jh
+sd
+sd
+sd
+Fk
+xJ
+kN
+Gu
+ye
+SX
+am
+jE
+uM
+Fk
+sd
+ZP
+ZP
+ZP
+mV
+mV
 cH
 cH
 cH
@@ -8929,56 +12983,17 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cH
 cH
 cH
@@ -9162,80 +13177,80 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+sd
+sd
+sd
+Fk
+Os
+Fk
+sd
+sd
+sd
+sd
+Jd
+Zu
+FF
+uE
+UE
+Xn
+Zu
+VJ
+St
+Fk
+sd
+ZP
+ZP
+ZP
+mV
+mV
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+cJ
+cJ
+cJ
+ak
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cH
 cD
 cD
@@ -9425,74 +13440,74 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+sd
+sd
+Fk
+Tr
+Fk
+sd
+sd
+sd
+sd
+fJ
+zQ
+Yu
+Yu
+Fk
+Lo
+Yg
+zO
+zI
+Fk
+sd
+ZP
+ZP
+ZP
+mV
+mV
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+AZ
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cD
 cD
 cJ
@@ -9682,74 +13697,74 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+sd
+Fk
+Ma
+Fk
+sd
+ZP
+ZP
+sd
+Fk
+Fk
+Fk
+Fk
+Fk
+Fk
+Fk
+pi
+Fk
+Fk
+ZP
+ZP
+ZP
+ZP
+mV
+mV
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+AZ
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+ak
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -9939,72 +13954,72 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+HM
+ZP
+HM
+ZP
+ZP
+vE
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Dr
+Dr
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+AZ
+NG
+NG
+kR
+kR
+Uu
+tL
+qI
+NG
+NG
+NG
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -10196,6 +14211,39 @@ cH
 cH
 cH
 cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -10210,57 +14258,17 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+AZ
+NG
+LD
+Eu
+kR
+kR
+kR
+kR
+sQ
+NG
+NG
 cJ
 cJ
 cJ
@@ -10282,7 +14290,14 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
+cJ
+cJ
+is
+cJ
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -10453,6 +14468,39 @@ cH
 cH
 cH
 cH
+kw
+kw
+ZP
+ZP
+ZP
+ZP
+ZP
+xs
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+ZP
+xs
+ZP
+ZP
+ZP
+ZP
+xs
+ZP
+ZP
+xs
+ZP
+ZP
+ZP
+ZP
+xs
+ZP
+ZP
+Dr
+Dr
 cH
 cH
 cH
@@ -10467,55 +14515,22 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+AZ
+NG
+Hv
+yy
+kR
+kR
+Wm
+kR
+kR
+FA
+FA
+cJ
+cJ
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -10710,6 +14725,39 @@ cH
 cH
 cH
 cH
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+AA
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+AA
+AA
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
 cH
 cH
 cH
@@ -10724,54 +14772,21 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+AZ
+NG
+xT
+Iy
+kR
+kR
+kR
+kR
+kR
+BW
+BW
+cJ
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -10972,6 +14987,34 @@ cH
 cH
 cH
 cH
+lP
+EU
+yU
+yU
+qW
+yU
+yU
+yU
+yU
+qW
+yU
+yU
+yU
+jS
+cH
+kw
+Yu
+Yu
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
 cH
 cH
 cH
@@ -10986,48 +15029,20 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+AZ
+NG
+pL
+HD
+kR
+kR
+kR
+kR
+kR
+BW
+BW
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -11229,6 +15244,26 @@ cH
 cH
 cH
 cH
+lP
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+jS
+cH
+kw
+Yu
+Yu
+kw
+kw
 cH
 cH
 cH
@@ -11251,39 +15286,17 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
-cD
-cD
-cD
+AZ
+NG
+PO
+ku
+kR
+Wm
+kR
+kR
+kR
+Bp
+Bp
 cJ
 cJ
 cJ
@@ -11291,6 +15304,8 @@ cJ
 cJ
 cJ
 cJ
+cJ
+is
 cJ
 cJ
 cJ
@@ -11486,6 +15501,30 @@ cH
 cH
 cH
 cH
+lP
+yU
+yU
+yU
+yU
+Ir
+PZ
+PZ
+PZ
+PZ
+RB
+yU
+yU
+jS
+cH
+kw
+uo
+Yu
+kw
+kw
+AZ
+AZ
+AZ
+AZ
 cH
 cH
 cH
@@ -11504,42 +15543,18 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
-cD
-cJ
-cJ
-cJ
+AZ
+NG
+kt
+JY
+kR
+kR
+kR
+kR
+Zo
+NG
+NG
+Jw
 cJ
 cJ
 cJ
@@ -11743,6 +15758,31 @@ cH
 cH
 cH
 cH
+lP
+yU
+Ir
+PZ
+PZ
+PZ
+Yf
+Yf
+Yf
+ox
+Yy
+yU
+yU
+jS
+cH
+kw
+Yu
+Yu
+kw
+kw
+AZ
+AZ
+AZ
+AZ
+AZ
 cH
 cH
 cH
@@ -11760,42 +15800,17 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
+AZ
+NG
+NG
+kR
+kR
+kR
+Zo
+kR
+NG
+NG
+NG
 cJ
 cJ
 cJ
@@ -12000,58 +16015,58 @@ cH
 cH
 cH
 cH
+lP
+yU
+hD
+Ki
+Re
+ox
+yT
+Cq
+UM
+ox
+Yy
+yU
+yU
+jS
+cH
+kw
+Yu
+Yu
+kw
+kw
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+cH
+cH
+cH
+AZ
+AZ
+AZ
+AZ
 cH
 cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
+AZ
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+NG
 cJ
 cJ
 cJ
@@ -12257,63 +16272,63 @@ cH
 cH
 cH
 cH
+lP
+yU
+xH
+PZ
+PZ
+PZ
+Uw
+Uw
+Uw
+ox
+Yy
+yU
+yU
+jS
+cH
+kw
+AA
+AA
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+vj
+KY
+KY
+KY
+AZ
+AZ
+cH
+AZ
+AZ
+KY
+KY
+AZ
+AZ
 cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+AZ
+NG
+NG
+NG
+NG
+NG
+NG
+NG
+NG
 cJ
 cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+is
 cJ
 cJ
 cJ
@@ -12514,51 +16529,51 @@ cH
 cH
 cH
 cH
+lP
+yU
+yU
+yU
+yU
+xH
+PZ
+PZ
+PZ
+PZ
+ga
+yU
+yU
+jS
+cH
+kw
+Yu
+Yu
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+Gb
+KY
+KY
+KY
+AZ
+AZ
+AZ
+KY
+KY
+KY
+cX
+AZ
+AZ
+AZ
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+AZ
+It
+It
 cJ
 cJ
 cJ
@@ -12771,49 +16786,51 @@ cH
 cH
 cH
 cH
+lP
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+yU
+jS
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
+kw
+Yu
+Yu
+dz
+eR
+Yu
+Yu
+eR
+Yu
+Yu
+hS
+KY
+KY
+KY
+KY
+KY
+KY
+HZ
+KY
+KY
+KY
+cX
+cX
+cX
+AZ
+AZ
+AZ
+AZ
+AZ
+ux
 cJ
 cJ
 cJ
@@ -12836,8 +16853,6 @@ cJ
 cJ
 cJ
 cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -13028,51 +17043,51 @@ cH
 cH
 cH
 cH
+lP
+yU
+yU
+RS
+yU
+yU
+yU
+yU
+yU
+RS
+yU
+yU
+yU
+jS
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cJ
-cJ
-cJ
+kw
+Yu
+Yu
+MO
+Yu
+Yu
+Yu
+Yu
+Yu
+Yu
+Ct
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
 cJ
 cJ
 cJ
@@ -13108,7 +17123,7 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
 cJ
 cJ
 cJ
@@ -13285,48 +17300,51 @@ cH
 cH
 cH
 cH
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
+lP
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
+kw
+Yu
+Yu
+yM
+aC
+Yu
+Yu
+aC
+Yu
+Yu
+Gi
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+KY
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
 cJ
 cJ
 cJ
@@ -13355,9 +17373,6 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -13557,36 +17572,36 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cJ
-cJ
-cJ
-cJ
+kw
+AA
+kw
+kw
+kw
+cF
+cF
+kw
+kw
+kw
+kw
+uz
+KY
+KY
+KY
+AZ
+AZ
+AZ
+KY
+KY
+KY
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
 cJ
 cJ
 cJ
@@ -13814,36 +17829,36 @@ cH
 cH
 cH
 cH
+kw
+Yu
+Yu
+Yu
+Yu
+Yu
+Yu
+Yu
+Ri
+kw
+vj
+KY
+KY
+KY
+AZ
+AZ
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
-cJ
-cJ
-cJ
-cJ
+AZ
+KY
+KY
+KY
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
+cX
 cJ
 cJ
 cJ
@@ -13853,7 +17868,7 @@ ak
 cJ
 cJ
 cJ
-cJ
+Jw
 cJ
 cJ
 cJ
@@ -14071,36 +18086,36 @@ cH
 cH
 cH
 cH
+kw
+Yu
+aC
+Yu
+Yu
+BZ
+Yu
+Fa
+Mo
+kw
+AZ
+AZ
+AZ
+AZ
+AZ
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
+AZ
+AZ
+AZ
+cX
+cX
+cX
+AZ
+AZ
+AZ
+AZ
+cX
+cX
+cX
 cJ
 cJ
 ak
@@ -14328,6 +18343,17 @@ cH
 cH
 cH
 cH
+kw
+kw
+kw
+kw
+Yu
+Yu
+Mk
+ND
+ND
+kw
+AZ
 cH
 cH
 cH
@@ -14336,28 +18362,17 @@ cH
 cH
 cH
 cH
+AZ
+AZ
+AZ
+AZ
+AZ
 cH
 cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cH
-cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
+AZ
+AZ
+AZ
+cX
 cJ
 cJ
 cJ
@@ -14585,10 +18600,17 @@ cH
 cH
 cH
 cH
-cH
-cH
-cH
-cH
+AZ
+AZ
+AZ
+kw
+kw
+kw
+kw
+kw
+kw
+kw
+AZ
 cH
 cH
 cH
@@ -14607,8 +18629,7 @@ cH
 cH
 cH
 cD
-cD
-cD
+cX
 cJ
 cJ
 cJ
@@ -14621,13 +18642,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
+is
 cJ
 cJ
 cJ
@@ -14844,6 +18859,15 @@ cH
 cH
 cH
 cH
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
 cH
 cH
 cH
@@ -14862,13 +18886,7 @@ cH
 cH
 cH
 cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
+cX
 cJ
 cJ
 cJ
@@ -14901,9 +18919,6 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -15115,9 +19130,20 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
 cD
-cD
+DG
 cJ
 cJ
 cJ
@@ -15141,17 +19167,6 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -15371,21 +19386,21 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
-cD
-cJ
-cJ
-cJ
-cJ
-aF
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+cX
+cX
 cJ
 cJ
 cJ
@@ -15626,23 +19641,23 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
-cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
+cX
+cX
 cJ
 cJ
 cJ
@@ -15880,10 +19895,26 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
 cD
 cD
 cD
+cD
+cD
+cX
+cX
 cJ
 cJ
 cJ
@@ -15894,23 +19925,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-is
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -16137,6 +20152,18 @@ cD
 cD
 cD
 cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cH
+cH
+cD
+cD
+cD
 cJ
 cJ
 cJ
@@ -16159,18 +20186,6 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -16389,8 +20404,8 @@ cH
 cH
 cH
 cH
+cH
 cD
-cD
 cJ
 cJ
 cJ
@@ -16419,7 +20434,7 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
 cJ
 cJ
 cJ
@@ -16645,7 +20660,7 @@ cH
 cH
 cH
 cH
-cD
+cH
 cD
 cJ
 cJ
@@ -16902,8 +20917,8 @@ cH
 cH
 cH
 cH
+cH
 cD
-cJ
 cJ
 cJ
 cJ
@@ -17158,8 +21173,9 @@ cH
 cH
 cH
 cH
+cH
+cH
 cD
-cD
 cJ
 cJ
 cJ
@@ -17173,14 +21189,13 @@ cJ
 cJ
 cJ
 cJ
-aF
 cJ
 cJ
 cJ
 cJ
 cJ
 cJ
-aF
+cJ
 cJ
 cJ
 cJ
@@ -17412,9 +21427,11 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
 cD
-cD
-cD
 cJ
 cJ
 cJ
@@ -17426,8 +21443,6 @@ cJ
 cJ
 cJ
 cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -17667,13 +21682,13 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
-cD
-cD
-cJ
-cJ
-cJ
-cJ
 cJ
 cJ
 aF
@@ -17693,6 +21708,7 @@ cJ
 cJ
 cJ
 cJ
+xG
 cJ
 cJ
 cJ
@@ -17715,7 +21731,6 @@ cJ
 cJ
 cJ
 cJ
-aF
 cJ
 cJ
 cJ
@@ -17923,14 +21938,14 @@ cH
 cH
 cH
 cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
-cD
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
 cJ
 cJ
 cJ
@@ -18177,9 +22192,17 @@ cH
 cH
 cH
 cD
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
+cH
 cD
 cD
-cD
 cJ
 cJ
 cJ
@@ -18201,20 +22224,12 @@ cJ
 cJ
 cJ
 cJ
-aF
 cJ
 cJ
 cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-aF
 cJ
 cJ
 cJ
@@ -18434,15 +22449,15 @@ cH
 cD
 cD
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cJ
 cJ
 cJ
@@ -18980,7 +22995,7 @@ cJ
 cJ
 cJ
 cJ
-aF
+is
 cJ
 cJ
 cJ
@@ -19753,7 +23768,6 @@ cJ
 cJ
 cJ
 cJ
-aF
 cJ
 cJ
 cJ
@@ -19764,7 +23778,8 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -20007,22 +24022,6 @@ cJ
 cJ
 cJ
 cJ
-aF
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-is
 cJ
 cJ
 cJ
@@ -20038,7 +24037,23 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -20781,7 +24796,7 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
 cJ
 cJ
 cJ
@@ -21033,7 +25048,7 @@ cJ
 cJ
 cJ
 cJ
-aF
+cJ
 cJ
 cJ
 is
@@ -23354,7 +27369,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
@@ -32087,7 +36102,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+xG
 cJ
 cJ
 cJ
