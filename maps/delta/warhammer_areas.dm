@@ -1006,7 +1006,7 @@ Area basic template
 /area/cadiaoutpost/oa/theforest
 	name = "The Forest"
 	icon_state = "forest"
-	requires_power = FALSE
+	requires_power = TRUE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/General_Ambient2.ogg'
 
