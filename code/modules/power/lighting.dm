@@ -541,8 +541,8 @@
 	var/rigged = 0		// true if rigged to explode
 	var/broken_chance = 2
 
-	var/brightness_range = 2 //how much light it gives off
-	var/brightness_power = 2
+	var/brightness_range = 3 //how much light it gives off
+	var/brightness_power = 3
 	var/brightness_color = "#ffffff"
 	var/list/lighting_modes = list()
 	var/sound_on
@@ -555,7 +555,7 @@
 	item_state = "c_tube"
 	matter = list("glass" = 100)
 
-	brightness_range = 4	// luminosity when on, also used in power calculation
+	brightness_range = 5	// luminosity when on, also used in power calculation
 	brightness_power = 3
 	brightness_color = "#B2B2B2"//"#FAE1AF"//"#C5D8B3"//#CDFEE0
 	lighting_modes = list(
@@ -578,7 +578,7 @@
 	broken_chance = 5
 	matter = list("glass" = 100)
 
-	brightness_range = 4
+	brightness_range = 6
 	brightness_power = 3
 	brightness_color = "#F9C763"//"#a0a080"
 	lighting_modes = list(
@@ -609,7 +609,7 @@
 	broken_chance = 1
 	matter = list("glass" = 100)
 
-	brightness_range = 6
+	brightness_range = 10
 	brightness_power = 4
 	brightness_color = "#F9C763"//"#a0a080"
 	lighting_modes = list(
