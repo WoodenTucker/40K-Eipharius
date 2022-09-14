@@ -1504,7 +1504,7 @@ obj/item/gun/projectile/automatic/autogun
 	move_delay = 4
 	one_hand_penalty = 7
 	accuracy = -2
-	fire_delay = 3.5
+	fire_delay = 4.5
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/galvanic
 	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
@@ -1533,7 +1533,7 @@ obj/item/gun/projectile/automatic/autogun
 	move_delay= 4
 	one_hand_penalty = 4
 	accuracy = 1 //Good gun, well maintained by the Mechanicus
-	fire_delay = 2.5
+	fire_delay = 3.5
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/radcarbine
 	allowed_magazines = list(/obj/item/ammo_magazine/radcarbine)
@@ -1561,7 +1561,7 @@ obj/item/gun/projectile/automatic/autogun
 	move_delay= 2
 	one_hand_penalty = 1
 	accuracy = 0 //Good gun, well maintained by the Mechanicus
-	fire_delay = 1.5
+	fire_delay = 2.5
 	slot_flags = SLOT_BELT|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/radcarbine/radpistol
 	allowed_magazines = list(/obj/item/ammo_magazine/radcarbine/radpistol)
