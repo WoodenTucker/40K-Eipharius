@@ -43,5 +43,5 @@
 
 /datum/cargo_entry/misc/ingotshaping
 	name = "Ingot shaping tools"
-	cost = 20
+	cost = 30
 	item_path = /obj/structure/closet/crate/ingotshaping
