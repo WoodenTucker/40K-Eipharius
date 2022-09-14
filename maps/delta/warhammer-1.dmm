@@ -10779,6 +10779,10 @@
 	name = "monastary key"
 	},
 /obj/item/device/cassette/inqlog1,
+/obj/item/card/id/innkey3{
+	access = list(333,211);
+	name = "monastary key"
+	},
 /turf/simulated/floor/tiled{
 	icon_state = "white1"
 	},

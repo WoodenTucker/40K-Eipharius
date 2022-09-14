@@ -17,7 +17,7 @@
 	/datum/job/doctor,
 	/datum/job/progena,
 	/datum/job/ig/medicae,
-	/datum/job/chemist,
+	/*/datum/job/chemist,*/
 	/datum/job/geneticist,
 	/datum/job/magos,
 	/datum/job/engineer,

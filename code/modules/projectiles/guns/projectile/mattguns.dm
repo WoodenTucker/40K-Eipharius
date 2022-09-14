@@ -650,17 +650,18 @@
 	move_delay = 5
 */
 /obj/item/gun/projectile/automatic/machinepistol
-	name = "Mk.22 Autogun"
+	name = "Scrap Autogun"
 	desc = "A mass-produced autogun local to the frontier, often used by pirates and revolutionaries."
-	icon_state = "machinepistol"
-	item_state = "machinepistol"
-	wielded_item_state = "machinepistol-wielded"
+	icon_state = "machinepistol" // Object Icon
+	item_state = "machinepistol" // On-Mob
+	loaded_icon = "machinepistol" // Object Icon
+	unloaded_icon = "machinepistol-e" // Object Icon
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	move_delay = 2.2
 	one_hand_penalty = 5
 	accuracy = -3.5
-	fire_delay = 1.7
+	fire_delay = 1.5
 	sales_price = 0
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
@@ -668,57 +669,56 @@
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/machinepistol
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt/machinepistol
 
-	loaded_icon = "machinepistol"
+	wielded_item_state = "machinepistol-wielded"
 	unwielded_loaded_icon = "machinepistol"
 	wielded_loaded_icon = "machinepistol-wielded"
-	unloaded_icon = "machinepistol-e"
 	unwielded_unloaded_icon = "machinepistol-e"
 	wielded_unloaded_icon = "machinepistol-e"
 
 	gun_type = GUN_SMG
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/machinepistol/a80
 	name = "Nachtwey A80 Autogun"
 	desc = "A specialty autogun made by frontier gunsmiths - an improved version of the Mk.22 Autogun with a more stable firing platform."
-	icon_state = "autorifle"
-	item_state = "autorifle"
+	icon_state = "autorifle" // Object Icon
+	item_state = "autorifle" // On-Mob
+	loaded_icon = "autorifle" // Object Icon
+	unloaded_icon = "autorifle-e" // Object Icon
 	move_delay = 2
 	one_hand_penalty = 4
 	accuracy = -3.2
-	fire_delay = 1.6
+	fire_delay = 1.4
 	sales_price = 28
 
-	wielded_item_state = "autorifle-wielded"
-	loaded_icon = "autorifle"
+	wielded_item_state = "autorifle-wielded" // On-Mob
 	unwielded_loaded_icon = "autorifle"
 	wielded_loaded_icon = "autorifle-wielded"
-	unloaded_icon = "autorifle-e"
 	unwielded_unloaded_icon = "autorifle-e"
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3.2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=2.9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/autogrim // valhallan. keep!
 	name = "Grim Pattern Autogun"
 	desc = "A rugged autogun of Valhallan design, it has a moderate rate of fire and excellent stopping power."
-	icon_state = "autorifle"
-	item_state = "autorifle"
+	icon_state = "auto_grim" // Object Icon
+	item_state = "autorifle" // On-Mob
+	loaded_icon = "auto_grim" // Object Icon
+	unloaded_icon = "auto_grim-e" // Object Icon
 	caliber = "a556"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	unloaded_icon = "auto_grim-e"
-	loaded_icon = "auto_grim"
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	move_delay = 2.5
-	one_hand_penalty = 5
+	one_hand_penalty = 4.5
 	accuracy = -2.7
 	fire_delay = 1.5
 	sales_price = 35
@@ -728,11 +728,9 @@
 
 	gun_type = GUN_SMG
 
-	wielded_item_state = "autorifle-wielded"
-	loaded_icon = "autorifle"
+	wielded_item_state = "autorifle-wielded" // On-Mob
 	unwielded_loaded_icon = "autorifle"
 	wielded_loaded_icon = "autorifle-wielded"
-	unloaded_icon = "autorifle-e"
 	unwielded_unloaded_icon = "autorifle-e"
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
@@ -741,20 +739,86 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/obj/item/gun/projectile/automatic/autogrim/krieg //krieg, keep!
-	name = "Krieg Pattern Autogun"
-	desc = "A rugged autogun of Krieg design, it has a slow rate of fire and excellent stopping power."
-	icon_state = "kriegstubber"
-	item_state = "autorifle"
+obj/item/gun/projectile/automatic/messina
+	name = "Messina Pattern Autogun"
+	desc = "A rugged autogun of forged within the walls of Messina, it is an accurate two burst weapon based on the Krieg Design with minor alterations."
+	icon_state = "chinese" // Object Icon
+	item_state = "autorifle" // On-Mob
+	unloaded_icon = "chinese-e" // Object Icon
+	loaded_icon = "chinese" // Object Icon
 	caliber = "a556"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	unloaded_icon = "kriegstubber-e"
-	loaded_icon = "kriegstubber"
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	move_delay = 2.5
+	one_hand_penalty = 4
+	accuracy = -2.8
+	fire_delay = 1.4
+	sales_price = 34
+
+	magazine_type = /obj/item/ammo_magazine/autogrim
+	allowed_magazines = /obj/item/ammo_magazine/autogrim
+
+	gun_type = GUN_SMG
+
+	wielded_item_state = "autorifle-wielded"
+	unwielded_loaded_icon = "autorifle"
+	wielded_loaded_icon = "autorifle-wielded"
+	unwielded_unloaded_icon = "autorifle-e"
+	wielded_unloaded_icon = "autorifle-wielded-e"
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=2.4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		)
+
+obj/item/gun/projectile/automatic/autogun
+	name = "Agripinaa Pattern Autogun"
+	desc = "A rugged autogun of Agripinaa design, it has a very high rate of fire and is designed for close quarters fighting."
+	icon_state = "autogun" // Object Icon
+	item_state = "autorifle" // On-Mob
+	unloaded_icon = "autogun-e" // Object Icon
+	loaded_icon = "autogun" // Object Icon
+	caliber = "a556"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
+	move_delay = 2.3
 	one_hand_penalty = 5
-	accuracy = -2.3
+	accuracy = -2.7
+	fire_delay = 1.5
+	sales_price = 30
+
+	magazine_type = /obj/item/ammo_magazine/autogrim
+	allowed_magazines = /obj/item/ammo_magazine/autogrim
+
+	gun_type = GUN_SMG
+
+	wielded_item_state = "autorifle-wielded"
+	unwielded_loaded_icon = "autorifle"
+	wielded_loaded_icon = "autorifle-wielded"
+	unwielded_unloaded_icon = "autorifle-e"
+	wielded_unloaded_icon = "autorifle-wielded-e"
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=3.5, burst_accuracy=list(-0,-1,-1), dispersion=list(0.1, 0.2, 0.2), automatic = 0),
+		)
+
+/obj/item/gun/projectile/automatic/autogrim/krieg //krieg, keep!
+	name = "Krieg Pattern Autogun"
+	desc = "A rugged autogun of Krieg design, it has a slow rate of fire and excellent stopping power."
+	icon_state = "kriegstubber" // Object Icon
+	item_state = "autorifle" // On-Mob
+	caliber = "a556"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	unloaded_icon = "kriegstubber-e" // Object Icon
+	loaded_icon = "kriegstubber" // Object Icon
+	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
+	move_delay = 2.6
+	one_hand_penalty = 5
+	accuracy = -2.2
 	fire_delay = 1.5
 	sales_price = 37
 
@@ -763,7 +827,7 @@
 
 	gun_type = GUN_SMG
 
-	wielded_item_state = "autorifle-wielded"
+	wielded_item_state = "autorifle-wielded" // On-Mob
 	unwielded_loaded_icon = "autorifle"
 	wielded_loaded_icon = "autorifle-wielded"
 	unwielded_unloaded_icon = "autorifle-e"
@@ -1423,20 +1487,21 @@
 /obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
-	icon_state = "autorifle"
-	item_state = "autorifle"
-	wielded_item_state = "autorifle-wielded"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "snipermusket" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)
+	item_state = "musket" // ON MOB (This uses a different on-mob to wielded due to sniper musket not having a one handed icon)
+	loaded_icon = "snipermusket" // OBJ
+	unloaded_icon = "snipermusket" // OBJ
 	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
-	loaded_icon = "autorifle"
-	unwielded_loaded_icon = "autorifle"
-	wielded_loaded_icon = "autorifle-wielded"
-	unloaded_icon = "autorifle-e"
-	unwielded_unloaded_icon = "autorifle-e"
-	wielded_unloaded_icon = "autorifle-wielded-e"
+	wielded_item_state = "las_musket"
+	unwielded_loaded_icon = "musket"
+	wielded_loaded_icon = "las_musket"
+	unwielded_unloaded_icon = "musket"
+	wielded_unloaded_icon = "las_musket"
 	caliber = "galvanic"
 	max_shells = 7
-	str_requirement = 14
-	move_delay = 3
+	str_requirement = 13
+	move_delay = 4
 	one_hand_penalty = 7
 	accuracy = -2
 	fire_delay = 3.5
@@ -1451,20 +1516,21 @@
 /obj/item/gun/projectile/automatic/radcarbine
 	name = "Radium Carbine"
 	desc = "A deadly and highly dangerous personal weapon that are used exclusively by the forces of the Skitarii Legions of the Adeptus Mechanicus. It fires highly radioactive rounds."
+	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "emitter_carbine"
+	loaded_icon = "laer"
+	unloaded_icon = "laer"
 	item_state = "emitter_carbine"
 	wielded_item_state = "emitter_carbine"
 	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
-	loaded_icon = "emitter_carbine"
 	unwielded_loaded_icon = "emitter_carbine"
 	wielded_loaded_icon = "emitter_carbine"
-	unloaded_icon = "emitter_carbine_e"
 	unwielded_unloaded_icon = "emitter_carbine_e"
 	wielded_unloaded_icon = "emitter_carbine_e"
 	caliber = "rad"
 	max_shells = 30
-	str_requirement = 18
-	move_delay= 2
+	str_requirement = 11
+	move_delay= 4
 	one_hand_penalty = 4
 	accuracy = 1 //Good gun, well maintained by the Mechanicus
 	fire_delay = 2.5
@@ -1478,19 +1544,20 @@
 /obj/item/gun/projectile/automatic/radcarbine/radpistol
 	name = "Radium Pistol"
 	desc = "A sidearm favoured by Skitarii Vanguards and Ranger Alphas."
-	icon_state = "dueling_pistol"
-	item_state = "dueling_pistol"
-	wielded_item_state = "dueling_pistol"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "teslar"
+	item_state = "pulse_pistol"
+	wielded_item_state = "pulse_pistol"
 	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
-	loaded_icon = "dueling_pistol"
-	unwielded_loaded_icon = "dueling_pistol"
-	wielded_loaded_icon = "dueling_pistol"
-	unloaded_icon = "dueling_pistol_e"
-	unwielded_unloaded_icon = "dueling_pistol_e"
-	wielded_unloaded_icon = "dueling_pistol_e"
+	loaded_icon = "teslar"
+	unwielded_loaded_icon = "pulse_pistol"
+	wielded_loaded_icon = "pulse_pistol"
+	unloaded_icon = "teslar0"
+	unwielded_unloaded_icon = "pulse_pistol0"
+	wielded_unloaded_icon = "pulse_pistol0"
 	caliber = "rad"
 	max_shells = 10
-	str_requirement = 16
+	str_requirement = 11
 	move_delay= 2
 	one_hand_penalty = 1
 	accuracy = 0 //Good gun, well maintained by the Mechanicus

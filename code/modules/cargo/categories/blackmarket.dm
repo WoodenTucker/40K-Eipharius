@@ -66,6 +66,36 @@
 	cost = 100
 	item_path = /obj/item/storage/box/syndie_kit/imp_freedom
 
+/datum/cargo_entry/bmarket/admin
+	name = "Administratum Forging Kit"
+	cost = 65
+	item_path = /obj/item/storage/backpack/satchel/syndie_kit/clerical
+
+/datum/cargo_entry/bmarket/vox
+	name = "Stolen Command Vox"
+	cost = 100
+	item_path = /obj/item/device/radio/headset/heads/rt
+
+/datum/cargo_entry/bmarket/voxtau
+	name = "Stolen Xenos Vox"
+	cost = 200
+	item_path = /obj/item/device/radio/headset/tau
+
+/datum/cargo_entry/bmarket/spy
+	name = "Spy Kit"
+	cost = 70
+	item_path = /obj/item/storage/box/syndie_kit/spy
+
+/datum/cargo_entry/bmarket/syringekit
+	name = "Syringe Gun Kit"
+	cost = 60
+	item_path = /obj/item/storage/box/syndie_kit/syringegun
+
+/datum/cargo_entry/bmarket/smokes
+	name = "Tricky Smokes Kit"
+	cost = 100
+	item_path = /obj/item/storage/box/syndie_kit/cigarette
+
 /datum/cargo_entry/bmarket/explosiveimplant
 	name = "Explosive Implant Box"
 	cost = 200

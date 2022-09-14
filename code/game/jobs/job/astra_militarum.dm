@@ -126,9 +126,9 @@
 	can_be_in_squad = FALSE
 	auto_rifle_skill = 8
 	semi_rifle_skill = 7
-	sniper_skill = 6
+	sniper_skill = 7
 	shotgun_skill = 6
-	lmg_skill = 6
+	lmg_skill = 7
 	smg_skill = 7
 	cultist_chance = 25
 
@@ -349,6 +349,8 @@
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+
+		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
 
