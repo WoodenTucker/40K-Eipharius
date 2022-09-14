@@ -587,7 +587,7 @@
 /obj/item/ammo_magazine/galvanic/fire
 	name = "galvanic rifle incendiary loader"
 	desc = "An ancient design for loading galvanic rifles. This one seems to have incendiary rounds loaded."
-	ammo_type = /obj/item/ammo_casing/galvanic/fire
+	ammo_type = /obj/item/ammo_casing/galvanic // Removed fire until they're fixed up properly and balanced. Incredibly broken right now.
 
 /obj/item/ammo_magazine/radcarbine
 	name = "Radcarbine Magazine"

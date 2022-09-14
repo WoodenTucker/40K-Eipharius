@@ -1899,6 +1899,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"pu" = (
+/turf/simulated/wall/grim,
+/area/cadiaoutpost/oa/theforest)
 "pA" = (
 /obj/item/pickaxe/diamond,
 /turf/simulated/floor/stone,
@@ -2837,7 +2840,7 @@
 "yX" = (
 /obj/structure/table/steel,
 /obj/machinery/button/remote/blast_door/lever{
-	id = "pactgate";
+	id = "pactgate2";
 	name = "Pact Gate";
 	pixel_x = 30;
 	pixel_y = -10
@@ -3263,6 +3266,10 @@
 /obj/item/remains,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"Ei" = (
+/obj/item/pyre/self_lit,
+/turf/simulated/floor/snow,
+/area/cadiaoutpost/oa/theforest)
 "Ek" = (
 /obj/structure/flora/ausbushes,
 /turf/simulated/floor/snow,
@@ -15355,7 +15362,7 @@ is
 cJ
 cJ
 cJ
-cJ
+Ei
 cJ
 cJ
 cJ
@@ -19971,7 +19978,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+cJ
 cJ
 cJ
 cJ
@@ -20213,9 +20220,9 @@ ML
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -20471,9 +20478,9 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -20729,9 +20736,9 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -20987,6 +20994,9 @@ cJ
 cJ
 cJ
 cJ
+pu
+cJ
+pu
 cJ
 cJ
 cJ
@@ -20998,11 +21008,8 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+pu
+Ei
 cJ
 cJ
 cJ
@@ -21245,6 +21252,9 @@ cJ
 cJ
 cJ
 cJ
+pu
+cJ
+pu
 cJ
 cJ
 cJ
@@ -21254,12 +21264,9 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -21503,6 +21510,9 @@ cJ
 cJ
 cJ
 cJ
+pu
+cJ
+pu
 cJ
 cJ
 cJ
@@ -21510,12 +21520,9 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -21754,7 +21761,24 @@ cJ
 cJ
 cJ
 cJ
-xG
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+cJ
+pu
+cJ
+pu
+cJ
+cJ
+cJ
+cJ
+cJ
+pu
+cJ
+pu
 cJ
 cJ
 cJ
@@ -21764,24 +21788,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+Ei
 cJ
 cJ
 cJ
@@ -22019,15 +22026,15 @@ cJ
 cJ
 cJ
 cJ
+pu
+cJ
+pu
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
-cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -22277,13 +22284,13 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
+pu
 cJ
+pu
 cJ
-cJ
-cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -22535,11 +22542,11 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
+pu
 cJ
-cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -22793,9 +22800,9 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
-cJ
-cJ
+pu
 cJ
 cJ
 cJ
@@ -23051,8 +23058,8 @@ cJ
 cJ
 cJ
 cJ
+pu
 cJ
-is
 cJ
 cJ
 cJ
@@ -23307,9 +23314,9 @@ cJ
 cJ
 cJ
 cJ
+Ei
 cJ
-cJ
-cJ
+Ei
 cJ
 cJ
 cJ
@@ -27415,7 +27422,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 cJ
 cJ
@@ -28922,7 +28929,7 @@ ak
 cJ
 cJ
 cJ
-Cb
+Ei
 cJ
 ak
 cJ
@@ -33254,7 +33261,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+Ei
 cJ
 cJ
 cr
@@ -36147,8 +36154,8 @@ cJ
 cJ
 cJ
 cJ
+Ei
 cJ
-xG
 cJ
 cJ
 cJ
@@ -42571,7 +42578,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+cJ
 cJ
 cJ
 cJ
@@ -42828,7 +42835,7 @@ ak
 cJ
 cJ
 cJ
-cJ
+Ei
 cJ
 cJ
 cJ
@@ -42976,7 +42983,7 @@ cJ
 cJ
 cJ
 cJ
-Cb
+Ei
 cJ
 cJ
 cJ
@@ -43047,7 +43054,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 cJ
 cJ
@@ -43351,7 +43358,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+cJ
 cJ
 ak
 cJ
@@ -43523,7 +43530,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 cJ
 cJ
@@ -44124,7 +44131,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+Ei
 cJ
 cJ
 cJ
@@ -44605,8 +44612,8 @@ cJ
 cJ
 cJ
 cJ
-xG
-xG
+Ei
+cJ
 cJ
 cJ
 cJ
@@ -45081,7 +45088,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 cJ
 aF
@@ -46076,7 +46083,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 bF
 ak
@@ -47309,7 +47316,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 cJ
 cJ
@@ -49127,7 +49134,7 @@ cJ
 cJ
 cJ
 cJ
-xG
+Ei
 cJ
 cJ
 cJ
