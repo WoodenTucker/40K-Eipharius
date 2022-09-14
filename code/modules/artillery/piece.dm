@@ -206,14 +206,14 @@
 	if (user)
 		if (get_dist(src, user) > 1)
 			user = null
-	restart
-/*	var/found_gunner = FALSE
+/*	restart
+	var/found_gunner = FALSE
 	for (var/obj/structure/bed/chair/gunner/G in m.loc)
 		found_gunner = TRUE
 	if (found_gunner == FALSE && istype(src, /obj/structure/cannon/modern/tank) && !istype(src, /obj/structure/cannon/modern/tank/voyage))
 		m << "<span class = 'warning'>You need to be at the gunner's position to fire.</span>"
 		user = null
-	*/	return
+		return*/
 	if (!anchored)
 		m << "<span class = 'danger'>You need to fix it to the floor before firing.</span>"
 		user = null
@@ -239,7 +239,7 @@
 
 	user.face_atom(src)
 	var/istank = istype(src, /obj/structure/cannon/modern/tank)
-	var/mob/living/carbon/human/H = user
+	//var/mob/living/carbon/human/H = user
 	/*if (istype(H) && H.faction_text == "Insert Group we're blocking here")
 		user << "<span class = 'danger'>You have no idea how this thing works.</span>"
 		return FALSE*/
@@ -260,7 +260,7 @@
 		return FALSE
 
 	//if (istype(src, /obj/structure/cannon/modern/tank) && !istype(src, /obj/structure/cannon/modern/tank/voyage))
-		var/found_gunner = FALSE
+	//	var/found_gunner = FALSE
 	//	for (var/obj/structure/bed/chair/gunner/G in user.loc)
 	//		found_gunner = TRUE
 	//	if (found_gunner == FALSE)
@@ -375,7 +375,7 @@
 						ty = world.maxy
 					target = locate(tx, ty, z)
 					var/highcheck = high
-					var/area/target_area = get_area(target)
+		//			var/area/target_area = get_area(target)
 		//			if (target_area.location == AREA_INSIDE)
 		//				highcheck = FALSE
 
@@ -388,7 +388,7 @@
 							for (var/atom/movable/AM in target)
 								// go over sandbags
 								if (AM.density)
-									var/obj/structure/S = AM
+		//							var/obj/structure/S = AM
 									// go over some structures
 									if (istype(S) && S.low)
 										continue
@@ -420,9 +420,9 @@
 									radiation_pulse(target, 12, 80, 1400, TRUE)
 								else
 									radiation_pulse(target, 4, 50, 700, TRUE)
-*/
+
 								var/target_area_original_integrity = target_area.artillery_integrity
-					/*			if (target_area.location == AREA_INSIDE && !target_area.arty_act(25))
+								if (target_area.location == AREA_INSIDE && !target_area.arty_act(25))
 									for (var/mob/living/L in view(20, target))
 										shake_camera(L, 5, 5)
 										L << "<span class = 'danger'>You hear something violently smash into the ceiling!</span>"
