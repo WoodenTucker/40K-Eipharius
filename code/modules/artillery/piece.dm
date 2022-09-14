@@ -390,8 +390,8 @@
 								if (AM.density)
 		//							var/obj/structure/S = AM
 									// go over some structures
-									if (istype(S) && S.low)
-										continue
+		//							if (istype(S) && S.low)
+		//								continue
 									hit = TRUE
 									break
 
