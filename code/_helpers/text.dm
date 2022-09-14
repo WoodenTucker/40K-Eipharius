@@ -235,6 +235,13 @@
 		text = "<b>[text]</b>"
 	return text
 
+/proc/apply_ogryn_blur(text)
+	text = "<span class='ogrynconfused'>[text]</span>"
+	return text
+
+/proc/apply_ogryn_speech(text)
+	text = "<span class='ogrynspeak'>[text]</span>"
+	return text
 //This proc strips html properly, remove < > and all text between
 //for complete text sanitizing should be used sanitize()
 /proc/strip_html_properly(var/input)
