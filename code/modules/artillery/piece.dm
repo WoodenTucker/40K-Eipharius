@@ -593,8 +593,8 @@
 			else
 				dirs += direction
 
-		for (var/refdir in dirs)
-			var/turf/ref = get_step(mob, refdir)
+	//	for (var/refdir in dirs)
+	//		var/turf/ref = get_step(mob, refdir)
 
 
 	// bug abusers btfo
