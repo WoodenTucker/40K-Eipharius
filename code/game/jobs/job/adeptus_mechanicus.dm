@@ -128,7 +128,7 @@
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
 		H.add_stats(rand(15,18), rand(15,18), rand(18,20), rand(20,30)) //just as modified as the magos, if not more.
-		H.add_skills(rand(7,10),rand(4,7),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(7,10),rand(7,10),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
