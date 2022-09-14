@@ -12,6 +12,7 @@ var/global/list/sparring_attack_cache = list()
 	var/edge = 0
 	var/delay = 10 //Used to be 0. Slightly faster than hitting with a weapon.
 
+	var/damtype = BRUTE
 	var/deal_halloss
 	var/sparring_variant_type = /datum/unarmed_attack/light_strike
 
