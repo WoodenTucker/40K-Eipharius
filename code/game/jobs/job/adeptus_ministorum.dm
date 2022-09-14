@@ -340,6 +340,7 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
+		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
 
 // Hospitaller Advance
@@ -386,6 +387,7 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
+		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a senior sister of the Ordos Hospitaller, serving under The Deacon/Abbess to maintain the health and divinity of the township.</font></b></span>")
 
 
@@ -406,12 +408,12 @@
 	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, 211)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/progena
-	auto_rifle_skill = 5
-	semi_rifle_skill = 5
-	sniper_skill = 5
-	shotgun_skill = 5
-	lmg_skill = 5
-	smg_skill = 5
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
 	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
@@ -428,6 +430,7 @@
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 
+		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
 
 //Hospitaller

@@ -219,7 +219,7 @@ Template:
 				/obj/item/clothing/accessory/legguards/riot = 6)
 
 /obj/random/loot/guardarmor
-	name = "Special Guard Armor"
+	name = "Special Guard Armor" // After manor update we delete this.
 	desc = "This is a loot spawner that spawns special imperial guardsmen armor and no more then 2-3 should be on the map."
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
@@ -230,7 +230,7 @@ Template:
 				/obj/item/clothing/suit/armor/krieger/grenadier = 1)
 
 /obj/random/loot/guardhelmet
-	name = "Guard Helmet"
+	name = "Guard Helmet" // After manor update we delete this.
 	desc = "This is a loot spawner that spawns imperial guardsmen armor."
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
@@ -318,7 +318,7 @@ Template:
 				/obj/item/material/sword/sabre = 4)
 
 /obj/random/loot/lightstubber
-	name = "Light Stubber"
+	name = "Light Stubber" // After manor update we delete this.
 	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
@@ -338,7 +338,7 @@ Template:
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightstubberammo
-	name = "Light Stubber Ammo"
+	name = "Light Stubber Ammo" // After manor update we delete this.
 	desc = "This is an ammo spawner that spawns ammo for light stubbers."
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
@@ -387,7 +387,7 @@ Template:
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
-	name = "Light Lasgun"
+	name = "Light Lasgun" // After manor update we delete this.
 	desc = "This is a weapon loot spawner with a high chance of spawning common light lasguns."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
@@ -400,48 +400,37 @@ Template:
 				/obj/item/gun/energy/las/laspistol/militarum = 3,
 				/obj/item/gun/energy/las/lasgun/tinkered = 2,
 				/obj/item/gun/energy/las/lasgun/catachan = 4,
-				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 2,
-				/obj/item/gun/energy/las/lasgun/longlas = 1)
+				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 2)
 
 /obj/random/loot/lasgunammo
-	name = "Lasgun Ammo"
+	name = "Lasgun Ammo" 
 	desc = "This is an ammo spawner that spawns ammo for lasguns."
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
 /obj/random/loot/lasgunammo/spawn_choices()
-	return list(/obj/item/cell/lasgun = 20,
-				/obj/item/cell/hyper = 1)
+	return list(/obj/item/cell/lasgun = 12,
+				/obj/item/cell/lasgun/hotshot = 1)
 
 /obj/random/loot/heavystubberammo
-	name = "Heavy Stubber Ammo"
+	name = "Heavy Stubber Ammo" // After manor update we delete this.
 	desc = "This is an ammo spawner that spawns ammo for heavy stubbers."
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
 /obj/random/loot/heavystubberammo/spawn_choices()
-	return list(/obj/item/ammo_magazine/mc9mmt/machinepistol = 10,
-	            /obj/item/ammo_magazine/bolt_rifle_magazine = 1,
-				/obj/item/ammo_box/rifle = 5,
-				/obj/item/ammo_box/shotgun = 4,
-				/obj/item/ammo_magazine/box/shotgun/slug = 2,
-				/obj/item/ammo_magazine/box/a556/mg08 = 10,
+	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10,
 				/obj/item/ammo_magazine/box/a556/mg08 = 5)
 
 /obj/random/loot/heavystubber
-	name = "Heavy Stubber"
+	name = "Heavy Stubber" // After manor update we delete this.
 	desc = "This is a weapon loot spawner with a high chance of spawning common heavy stubbers."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 
 /obj/random/loot/heavystubber/spawn_choices()
-	return list(/obj/item/gun/projectile/lockebolter = 1,
-				/obj/item/gun/projectile/shotgun/pump = 6,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 8,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 9,
-				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 8,
-				/obj/item/gun/projectile/automatic/stubber = 10,
-				/obj/item/gun/projectile/automatic/stubber/villiers = 5)
+	return list(/obj/item/gun/projectile/automatic/stubber = 25,
+				/obj/item/gun/projectile/automatic/stubber/villiers = 15)
 
 // DUNGEON & PILGRIM LOOT. These spawners are generally low quality and have wide selection making them ideal as generic loot.
 
@@ -498,6 +487,8 @@ Template:
 				/obj/item/gun/projectile/automatic/m22/combatrifle = 1,
 				/obj/item/gun/projectile/automatic/machinepistol = 4,
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 3,
+				/obj/item/gun/projectile/automatic/messina = 3,
+				/obj/item/gun/projectile/automatic/autogun = 1,
 				/obj/item/gun/projectile/automatic/autogrim = 2,
 				/obj/item/gun/projectile/automatic/autogrim/krieg = 1,
 				/obj/item/gun/projectile/revolver/mateba = 1,
@@ -514,9 +505,9 @@ Template:
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(/obj/item/gun/energy/las/lasgun/lucius/tinkered = 4,
-				/obj/item/gun/energy/las/lasgun/rare = 4,
+				/obj/item/gun/energy/las/lasgun/rare = 3,
 				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 4,
-				/obj/item/gun/energy/las/lasgun/tinkered = 4,
+				/obj/item/gun/energy/las/lasgun/tinkered = 2,
 				/obj/item/gun/energy/las/lasgun/longlas = 2,
 				/obj/item/gun/energy/las/lasgun/longlas/krieg = 1,
 				/obj/item/gun/projectile/slugrevolver = 1,

@@ -148,7 +148,7 @@
 
 
 /obj/item/ammo_magazine/c45rifle/akarabiner
-	name = "Warmonger magazine (.45)"
+	name = "autogun magazine (.45)"
 	icon_state = "autorifle"
 
 
@@ -158,7 +158,7 @@
 
 
 /obj/item/ammo_magazine/autogrim
-	name = "auto GRIM magazine (5.56mm)"
+	name = "autogun magazine (5.56mm)"
 	icon_state = "auto_grim"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/a556
@@ -168,11 +168,11 @@
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/autogrim/ap
-	name = "auto AP GRIM magazine (5.56mm)"
+	name = "autogun AP magazine (5.56mm)"
 	ammo_type = /obj/item/ammo_casing/a556/ap
 
 /obj/item/ammo_magazine/autogrim/ms
-	name = "auto GRIM MS magazine (5.56mm)"
+	name = "autogun MS magazine (5.56mm)"
 	ammo_type = /obj/item/ammo_casing/a556/ms
 
 /obj/item/ammo_magazine/autogrim/empty
