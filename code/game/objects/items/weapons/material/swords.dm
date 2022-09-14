@@ -147,7 +147,7 @@
 	force_wielded = 30
 	armor_penetration = 15
 	block_chance = 30
-	weapon_speed_delay = 6
+	weapon_speed_delay = 7
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_NORMAL
 
@@ -159,7 +159,7 @@
 	force_wielded = 32
 	armor_penetration = 18
 	block_chance = 34
-	weapon_speed_delay = 5
+	weapon_speed_delay = 6
 
 /obj/item/material/sword/broadsword
 	name = "heavy broadsword"

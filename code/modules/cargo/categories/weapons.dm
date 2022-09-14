@@ -103,17 +103,27 @@
 
 /datum/cargo_entry/weapon/a80
 	name = "Nachtwey Autogun"
-	cost = 62
+	cost = 68
 	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
+
+/datum/cargo_entry/weapon/agripinaa
+	name = "Agripinaa Autogun"
+	cost = 71
+	item_path = /obj/item/gun/projectile/automatic/autogun
+
+/datum/cargo_entry/weapon/messina
+	name = "Messina Pattern Autogun"
+	cost = 73
+	item_path = /obj/item/gun/projectile/automatic/messina
 
 /datum/cargo_entry/weapon/grim
 	name = "GRIM Autogun"
-	cost = 70
+	cost = 74
 	item_path = /obj/item/gun/projectile/automatic/autogrim
 
 /datum/cargo_entry/weapon/krieg
 	name = "Krieg Pattern Autogun"
-	cost = 79
+	cost = 81
 	item_path = /obj/item/gun/projectile/automatic/autogrim/krieg
 
 /datum/cargo_entry/weapon/scipio
@@ -123,18 +133,18 @@
 
 /datum/cargo_entry/weapon/aegis
 	name = "Aegis Pattern Rifle"
-	cost = 67
+	cost = 69
 	item_path = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
-
-/datum/cargo_entry/weapon/stubbervilliers
-	name = "Villiers Heavy Stubber"
-	cost = 68
-	item_path = /obj/item/gun/projectile/automatic/stubber/villiers
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"
-	cost = 75
+	cost = 71
 	item_path = /obj/item/gun/projectile/automatic/stubber
+
+/datum/cargo_entry/weapon/stubbervilliers
+	name = "Villiers Heavy Stubber"
+	cost = 78
+	item_path = /obj/item/gun/projectile/automatic/stubber/villiers
 
 /datum/cargo_entry/weapon/lockebolter
 	name = "Locke Bolter"
@@ -143,12 +153,12 @@
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"
-	cost = 112
+	cost = 152
 	item_path = /obj/item/gun/energy/pulse/plasma/pistol
 
 /datum/cargo_entry/weapon/plasmarifle
 	name = "Plasma Rifle"
-	cost = 198
+	cost = 238
 	item_path = /obj/item/gun/energy/pulse/plasma/rifle
 
 /datum/cargo_entry/weapon/meltarifle

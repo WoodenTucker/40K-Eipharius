@@ -2,32 +2,32 @@
 	category = "Ammo"
 
 /datum/cargo_entry/ammo/smg
-	name = "Autogun Magazine"
+	name = "Autogun Magazine(9mm)"
 	cost = 6
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol
 
 /datum/cargo_entry/ammo/smgap
-	name = "AP Autogun Magazine"
+	name = "AP Autogun Magazine(9mm)"
 	cost = 12
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol/ap
 
 /datum/cargo_entry/ammo/smgms
-	name = "MS Autogun Magazine"
+	name = "MS Autogun Magazine(9mm)"
 	cost = 14
 	item_path = /obj/item/ammo_magazine/mc9mmt/machinepistol/ms
 
 /datum/cargo_entry/ammo/autogrim
-	name = "GRIM/Krieg Autogun Magazine"
+	name = "Autogun Magazine(5.56mm)"
 	cost = 7
 	item_path = /obj/item/ammo_magazine/autogrim
 
 /datum/cargo_entry/ammo/autogrimap
-	name = "AP GRIM/Krieg Autogun Magazine"
+	name = "AP Autogun Magazine(5.56mm)"
 	cost = 13
 	item_path = /obj/item/ammo_magazine/autogrim/ap
 
 /datum/cargo_entry/ammo/autogrimms
-	name = "MS GRIM/Krieg Autogun Magazine"
+	name = "Autogun Magazine(5.56mm)"
 	cost = 15
 	item_path = /obj/item/ammo_magazine/autogrim/ms
 
@@ -148,7 +148,7 @@
 
 /datum/cargo_entry/ammo/plasmaflask
 	name = "Plasma Gun Hydrogen Flask"
-	cost = 23
+	cost = 20
 	item_path = /obj/item/cell/plasma
 
 /datum/cargo_entry/ammo/c45
