@@ -269,6 +269,7 @@
 	src.AddInfectionImages()
 	src.add_stats(rand(7,12),rand(17,18),rand(13,13),18) //gives stats str, end, int, dex
 	src.add_skills(10,10,rand(9,9),4,4) //skills such as melee, ranged, med, eng and surg
+	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
 	client?.color = null

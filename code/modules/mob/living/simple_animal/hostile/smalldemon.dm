@@ -107,7 +107,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
 
-	var/damage = rand(40,75)
+	var/damage = rand(40,65)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -129,8 +129,8 @@
 	icon_state = "floater"
 	icon_living = "floater"
 	icon_dead = "floater2"
-	maxHealth = 390
-	health = 390
+	maxHealth = 420
+	health = 420
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -167,8 +167,8 @@
 	icon_state = "oormat"
 	icon_living = "oormat"
 	icon_dead = "oormat2"
-	maxHealth = 850
-	health = 850
+	maxHealth = 750
+	health = 750
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -205,8 +205,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 650
-	health = 650
+	maxHealth = 600
+	health = 600
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -245,8 +245,8 @@
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 520
-	health = 520
+	maxHealth = 500
+	health = 500
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -265,8 +265,8 @@
 	icon_state = "plague"
 	icon_living = "plague"
 	icon_dead = "plague_dead"
-	maxHealth = 670
-	health = 670
+	maxHealth = 400
+	health = 400
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -275,7 +275,7 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.5
+	speed = 1.6
 
 /mob/living/simple_animal/hostile/smalldemon/chaos
 	name = "Chaos Spawn"
@@ -285,8 +285,8 @@
 	icon_state = "goliath"
 	icon_living = "goliath"
 	icon_dead = "goliath_dead"
-	maxHealth = 650
-	health = 650
+	maxHealth = 550
+	health = 550
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -295,4 +295,4 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
-	speed = 1.4
+	speed = 1.5

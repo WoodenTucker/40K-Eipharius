@@ -4,7 +4,7 @@
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
 	spawn_positions = INFINITY
-	supervisors = "The Holy Inquisition"
+	supervisors = "The God Emperor."
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
@@ -17,6 +17,7 @@
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
 		H.stat = UNCONSCIOUS
@@ -74,7 +75,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Penitent")
-			U.add_stats(rand(15,17), rand(13,15), rand(10,14), rand (10,12)) //
+			U.add_stats(rand(15,16), rand(13,15), rand(10,14), rand (10,12)) //
 			U.add_skills(rand(7,9),rand(6,8),rand(2,4),rand(2,3),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
@@ -91,7 +92,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Bounty Hunter")
-			U.add_stats(rand(13,17), rand(11,15), rand(10,14), rand (10,12)) //veteran hunter
+			U.add_stats(rand(13,16), rand(11,15), rand(10,14), rand (10,12)) //veteran hunter
 			U.add_skills(rand(6,8),rand(2,7),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -147,7 +148,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Musician")
-			U.add_stats(rand(8,16), rand(8,16), rand(10,14), rand (12,16)) //
+			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
 			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -164,7 +165,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Miner")
-			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_stats(rand(13,16), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
@@ -274,41 +275,17 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
+		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
 		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
-
-/datum/job/gangboy
-	title = "Ganger"
-	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 2
-	spawn_positions = 2
-	open_when_dead = 0
-	supervisors = "Yourself"
-	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
-	outfit_type = /decl/hierarchy/outfit/job/ganger
-	latejoin_at_spawnpoints = TRUE
-	announced = FALSE
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
-		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.assign_random_quirk()
-		H.job = "Pilgrim"
-		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
 
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
@@ -397,6 +374,7 @@ Pilgrim Fate System
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
@@ -405,30 +383,6 @@ Pilgrim Fate System
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
 		)
-
-/datum/job/innkeeper  //so that the inn always has someone working
-	title = "Innkeeper"
-	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 2
-	spawn_positions = 2
-	open_when_dead = 0
-	supervisors = "Money"
-	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
-	outfit_type = /decl/hierarchy/outfit/job/innkeeper
-	latejoin_at_spawnpoints = TRUE
-	announced = FALSE
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(13,15), rand(13,15), rand(9,12), rand (8,11)) //they suck and are supposed to suck
-		H.add_skills(rand(5,7),rand(6,9),rand(1,3),1,1) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
 /datum/job/gangboy
 	title = "Ganger"
@@ -451,6 +405,7 @@ Pilgrim Fate System
 		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
 		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.gangeq()
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")

@@ -335,7 +335,7 @@ EVENT_CUSTOM_START_MAJOR 80;100
 #DISABLE_AOOC
 
 ## Uncomment to disable the PRAY channel by default.
-#DISABLE_MUTE
+#DISABLE_MUTE_PRAY
 
 ## Uncomment to disable ghost chat by default.
 #DISABLE_DSAY

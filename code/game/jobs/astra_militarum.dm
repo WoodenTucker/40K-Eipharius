@@ -71,6 +71,7 @@
 		..()
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.adjustStaminaLoss(-90)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -129,6 +130,7 @@
 		..()
 		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
 		H.add_skills(rand(6,9),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
+		H.adjustStaminaLoss(-70)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.fully_replace_character_name("[H.real_name]")
@@ -168,6 +170,7 @@
 		..()
 		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
 		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.adjustStaminaLoss(-80)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -229,6 +232,7 @@
 		H.add_skills(rand(8,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
+		H.adjustStaminaLoss(-110)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
@@ -304,6 +308,7 @@
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(12,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
+		H.adjustStaminaLoss(-80)
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -359,6 +364,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,18), rand(16,18), rand(12,16), rand(16,17))
 		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are heavily trained
+		H.adjustStaminaLoss(-75)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.get_idcard()?.access = get_all_accesses()

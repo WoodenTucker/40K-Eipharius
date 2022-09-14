@@ -17,10 +17,10 @@
 	far_fire_sound = "sniper_fire"
 	move_delay = 3
 	one_hand_penalty = 3
-	accuracy = -4
+	accuracy = -2
 	fire_delay = 3
 	force = 15
-	sales_price = 13
+	sales_price = 0
 	var/gping = TRUE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/pump(mob/M as mob, silent = FALSE)
@@ -90,8 +90,8 @@
 	unloaded_icon = "boltactionsharp-e"
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
-	accuracy = -3.5
-	sales_price = 20
+	accuracy = -2.5
+	sales_price = 0
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter/verb/scope_detach(mob/user)
 		qdel(src)
@@ -124,7 +124,7 @@
 	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/lp338
 	one_hand_penalty = 50
-	accuracy = -2.5
+	accuracy = -1.5
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
@@ -187,7 +187,7 @@
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one is made of quality materials and has been laboured over extensively by expert hands."
 	move_delay = 2.5
 	one_hand_penalty = 3
-	accuracy = -3
+	accuracy = -1
 	fire_delay = 4
 	sales_price = 23
 	icon_state = "boltactionsharp"
@@ -234,8 +234,8 @@
 	fire_delay = 3.5
 	move_delay = 2.5
 	gping = FALSE
-	sales_price = 15
-	accuracy = -5
+	sales_price = 0
+	accuracy = -2.5
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
 	name = "\improper Crucible Pattern Stub Rifle"
@@ -243,7 +243,7 @@
 	icon_state = "oldglory"
 	item_state = "boltactionsharp"
 	empty_icon = "oldglory-e"
-	accuracy = -2
+	accuracy = -1
 	sales_price = 20
 
 
@@ -337,9 +337,9 @@
 	empty_icon = "voxlegisnew-e"
 	move_delay = 3
 	one_hand_penalty = 4
-	accuracy = -3.5
+	accuracy = -2.5
 	fire_delay= 3
-	sales_price = 15
+	sales_price = 0
 
 	ammo_type = list(
 		/obj/item/ammo_casing/shotgun/pellet,
@@ -350,7 +350,7 @@
 	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
 	move_delay= 2.5
 	one_hand_penalty = 3.5
-	accuracy = -3
+	accuracy = -2
 	fire_delay = 2
 	sales_price = 25
 
@@ -366,9 +366,9 @@
 	empty_icon = "hunting-sawn"
 	one_hand_penalty = 1
 	fire_delay = 2
-	accuracy = -4.5
+	accuracy = -3.5
 	armor_penetration = 0
-	sales_price = 15
+	sales_price = 0
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
 	name = "\improper WTX Reckoning"
@@ -501,7 +501,7 @@
 	automatic = 0
 	move_delay = 4.2
 	one_hand_penalty = 7
-	accuracy = -3.7
+	accuracy = -2.7
 	sales_price = 26
 
 	magazine_type = /obj/item/ammo_magazine/a762/m14/battlerifle_mag
@@ -558,8 +558,8 @@
 	automatic = 0
 	move_delay = 4.2
 	one_hand_penalty = 7
-	accuracy = -3
-	sales_price = 20
+	accuracy = -2
+	sales_price = 0
 
 	loaded_icon = "commando"
 	unloaded_icon = "commando"
@@ -659,9 +659,9 @@
 	w_class = ITEM_SIZE_HUGE
 	move_delay = 2.2
 	one_hand_penalty = 5
-	accuracy = -4.7
+	accuracy = -3.5
 	fire_delay = 1.7
-	sales_price = 18
+	sales_price = 0
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
@@ -689,7 +689,7 @@
 	item_state = "autorifle"
 	move_delay = 2
 	one_hand_penalty = 4
-	accuracy = -4.2
+	accuracy = -3.2
 	fire_delay = 1.6
 	sales_price = 28
 
@@ -719,7 +719,7 @@
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	move_delay = 2.5
 	one_hand_penalty = 5
-	accuracy = -3.7
+	accuracy = -2.7
 	fire_delay = 1.5
 	sales_price = 35
 
@@ -754,7 +754,7 @@
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	move_delay = 2.5
 	one_hand_penalty = 5
-	accuracy = -3.3
+	accuracy = -2.3
 	fire_delay = 1.5
 	sales_price = 37
 
@@ -877,10 +877,10 @@
 	load_method = MAGAZINE
 	move_delay = 1.5
 	one_hand_penalty = 1
-	accuracy = -4
+	accuracy = -2
 	fire_delay = 1.7
 	force = 8
-	sales_price = 10
+	sales_price = 0
 
 /obj/item/gun/projectile/warfare/kieji
 	name = "Kieji Pistol"
@@ -904,9 +904,9 @@
 	desc = "A mass-produced slug pistol common in the frontier. This one has a snub nose."
 	move_delay = 1.5
 	one_hand_penalty = 0.7
-	accuracy = -4
+	accuracy = -3.5
 	fire_delay = 1
-	sales_price = 16
+	sales_price = 0
 
 /obj/item/ammo_magazine/c45m/warfare
 	name = "slug magazine (.45)"
@@ -932,7 +932,7 @@
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
-	str_requirement = 16
+	str_requirement = 13
 	w_class = ITEM_SIZE_HUGE
 	force = 17
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -959,7 +959,7 @@
 	gun_type = GUN_LMG
 	move_delay= 5
 	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
-	accuracy = -4
+	accuracy = -3
 	fire_delay = 1.6
 	sales_price = 35
 
@@ -978,7 +978,7 @@
 	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
 	icon_state = "cognisLMG"
 	item_state = "cognisLMG"
-	str_requirement = 10 //change as SOON as skitarii stats are buffed and working!!!
+	str_requirement = 13 //change as SOON as skitarii stats are buffed and working!!!
 	loaded_icon = "cognisLMG"
 	unwielded_loaded_icon = "cognisLMG"
 	wielded_loaded_icon = "hmg-wielded"
@@ -988,7 +988,7 @@
 	burst = 1
 	fire_delay = 1.4
 	one_hand_penalty = 9 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 40
+	sales_price = 0
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1000,9 +1000,9 @@
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
 	one_hand_penalty = 7
-	accuracy = -3
+	accuracy = -2.2
 	fire_delay = 1.7
-	sales_price = 32
+	sales_price = 39
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1042,7 +1042,7 @@
 	one_hand_penalty = 10
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = -2.5
+	accuracy = -2
 	sales_price = 180
 
 	firemodes = list(
@@ -1132,7 +1132,7 @@
 	move_delay = 3
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
-	accuracy = -4.3
+	accuracy = -3.3
 	sales_price = 120
 
 	firemodes = list(
@@ -1166,7 +1166,6 @@
 	desc = "A modified bolter rifle, developed specifically for the Adepta Sororitas. This rifle is almost more scripture than weapon, and is clearly wielded by a devout woman. A large Sarissa is attached to the end of it, useful for carving the Emperor's Mercy from the flesh of those who defy him. <i>She was an angel, pure as righteous destruction. She laid low the twisted and lifted the hearts of the righteous. At her passing, a million voices cried out her name. Shall we ever again see her like? No, not now, nor ever again...</i>"
 	force = 20 //what even is this description?
 	sharp = 1
-	edge = 1
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
 	str_requirement = 14
@@ -1197,7 +1196,7 @@
 	burst = 1
 	move_delay = 3
 	firemodes = list()
-	accuracy = -2.5 //only one gun per round so yeah
+	accuracy = -2 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
 	sales_price = 170
 
@@ -1230,7 +1229,7 @@
 	fire_delay = 6
 	move_delay= 2.5
 	one_hand_penalty = 6
-	accuracy = -3
+	accuracy = -1
 	force = 20
 	sales_price = 40
 
@@ -1259,7 +1258,7 @@
 	fire_delay = 5
 	move_delay= 2.5
 	one_hand_penalty = 7
-	accuracy = -3
+	accuracy = -1
 	force = 20
 	gping = FALSE
 	sales_price = 40
@@ -1290,7 +1289,7 @@
 	can_jam = TRUE
 	move_delay = 5
 	one_hand_penalty = 5
-	accuracy = -10
+	accuracy = -8
 	ammo_type = /obj/item/ammo_casing/ork/shoota
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
@@ -1302,7 +1301,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="4-round bursts", burst=4, fire_delay=5, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.3), automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=6, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.3), automatic = 0),
 		)
 
 
@@ -1332,7 +1331,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="6-round bursts", burst=6, fire_delay=6, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.5), automatic = 0),
+		list(mode_name="6-round bursts", burst=6, fire_delay=7, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.5), automatic = 0),
 		)
 
 /obj/item/gun/projectile/ork/automatic/shoota/big
@@ -1347,14 +1346,14 @@
 	can_jam = TRUE
 	move_delay = 10
 	one_hand_penalty = 15
-	accuracy = -10
+	accuracy = -9
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 8
 	burst = 5
 	automatic = 0.6
 	firemodes = list(
-		list(mode_name="'ORMAL AUTO'", burst=4, fire_delay=3.5, burst_accuracy=list(-3,-5,-6), dispersion=list(0.4, 0.5, 0.6), automatic = 0.5),
-		list(mode_name="FULLA AUTO", burst=6, fire_delay=5, burst_accuracy=list(-6,-5,-8), dispersion=list(0.7, 0.6, 0.5), automatic = 0.7),
+		list(mode_name="'ORMAL AUTO'", burst=4, fire_delay=4, burst_accuracy=list(-3,-5,-6), dispersion=list(0.4, 0.5, 0.6), automatic = 0.5),
+		list(mode_name="FULLA AUTO", burst=6, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=list(0.7, 0.6, 0.5), automatic = 0.7),
 
 	)
 	sales_price = 30
@@ -1372,8 +1371,8 @@
 	sales_price = 50
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
 

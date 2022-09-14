@@ -265,13 +265,13 @@
 	color = "#292929"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
-	force = 1
+	force = 2
 	stunforce = 0
-	agonyforce = 80
+	agonyforce = 85
 	status = 1
 	block_chance = 60
 	sales_price = 20
-	weapon_speed_delay = 4
+	weapon_speed_delay = 5
 	sharp = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE

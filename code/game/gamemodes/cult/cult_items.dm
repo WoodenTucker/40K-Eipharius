@@ -47,9 +47,9 @@
 
 
 /obj/item/clothing/head/culthood
-	name = "cult hood"
+	name = "Tech-Guard's Hood"
 	icon_state = "culthood"
-	desc = "A hood worn by the followers of Nar-Sie."
+	desc = "A hood worn by the Tech-Guard of the Machine-God."
 	flags_inv = HIDEFACE
 	body_parts_covered = HEAD
 	armor = list(melee = 30, bullet = 10, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
@@ -71,8 +71,8 @@
 	icon_state = "cult_hoodalt"
 
 /obj/item/clothing/suit/cultrobes
-	name = "cult robes"
-	desc = "A set of durable robes worn by the followers of Nar-Sie."
+	name = "Tech-Guard's Garb"
+	desc = "A set of durable robes worn by the Tech-Guard of the Machine-God."
 	icon_state = "cultrobes"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	allowed = list(/obj/item/book/tome,/obj/item/melee/cultblade)

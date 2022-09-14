@@ -326,18 +326,20 @@
 	item_state = "katana"
 	slot_flags = SLOT_BELT | SLOT_BACK
 	sharp = 1
-	force = 37
-	block_chance = 40
+	edge = 1
+	force = 25
+	force_wielded = 32
+	block_chance = 14
+	weapon_speed_delay = 8
 	sales_price = 20
 
 /obj/item/toy/katana/strong
 	name = "noble iron sword"
 	desc = "A mastercrafted iron sword with an incredible edge, a well aimed strike would pierce ceramite with ease."
 	slot_flags = SLOT_BELT | SLOT_BACK
-	sharp = 1
-	edge = 1
-	force = 35
-	block_chance = 45
+	force = 27
+	force_wielded = 35
+	block_chance = 18
 	weapon_speed_delay = 8
 	sales_price = 30
 

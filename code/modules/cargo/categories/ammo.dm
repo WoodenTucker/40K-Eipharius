@@ -93,7 +93,7 @@
 
 /datum/cargo_entry/ammo/meltamag
 	name = "Melta Ammo"
-	cost = 15
+	cost = 30
 	item_path = /obj/item/ammo_magazine/melta
 
 /datum/cargo_entry/ammo/heavysnipammo
@@ -123,7 +123,7 @@
 
 /datum/cargo_entry/ammo/boltpistolmagkp
 	name = "Penetrator Bolt Pistol Magazine"
-	cost = 20
+	cost = 23
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 
 /datum/cargo_entry/ammo/boltermag
@@ -133,7 +133,7 @@
 
 /datum/cargo_entry/ammo/boltermagkp
 	name = "Penetrator Bolter Magazine"
-	cost = 58
+	cost = 60
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 
 /datum/cargo_entry/ammo/lasmag
@@ -145,6 +145,11 @@
 	name = "Hotshot Lasgun Power Pack"
 	cost = 18
 	item_path = /obj/item/cell/lasgun/hotshot
+
+/datum/cargo_entry/ammo/plasmaflask
+	name = "Plasma Gun Hydrogen Flask"
+	cost = 23
+	item_path = /obj/item/cell/plasma
 
 /datum/cargo_entry/ammo/c45
 	name = ".45 Magazine"

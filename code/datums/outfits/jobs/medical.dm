@@ -87,6 +87,7 @@
 	glasses = /obj/item/clothing/glasses/science/magos
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	l_ear = /obj/item/device/radio/headset/headset_eng
+	l_hand = /decl/hierarchy/supply_pack/security/forensics
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(

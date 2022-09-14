@@ -297,7 +297,7 @@
 	block_chance = 40 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = -1.5
+	accuracy = -2
 	fire_delay= 20
 	sales_price = 159
 
