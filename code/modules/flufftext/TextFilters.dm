@@ -170,3 +170,27 @@ proc/RadioChat(mob/living/user, message, distortion_chance = 60, distortion_spee
 		lentext += 1
 	return new_message
 
+//Below is ogryn speech modification, WIP - wel ard
+proc/ogrynSpeech(original_msg)
+	var/finishedSentence = ""
+	var/list/words = splittext(original_msg, " ") //we split the string
+	for(var/word in words) //loop through our split string
+		var/currentWord = lowertext(word) //force to lowercase so we can run checks more easily on the word
+		if(currentWord in OGRYN_HEAR_EXCEPTIONS) //if this word exists in hearing exceptions we move on to the next
+			finishedSentence = addtext(finishedSentence, " ", word)
+			continue
+		if(length(word) > 5 ) //Ogryns don't speak properly.
+			var/list/splitWord = splittext(word, "") //splits our word up
+			if("&" in splitWord) //Handles annoying ascii code exceptiosn for words like I've
+				word = jointext(splitWord, "") //rejoins it
+				finishedSentence = addtext(finishedSentence, " ", word)
+				continue
+			splitWord.Insert(4,"\'") //inserts a ' at the 4th index
+			if(length(word) > 8 )
+				splitWord.Insert(8,"\'") //inserts a ' at the 8th index
+
+
+			word = jointext(splitWord, "") //rejoins it
+		finishedSentence = addtext(finishedSentence, " ", word) //Puts it all back together again
+
+	return finishedSentence
