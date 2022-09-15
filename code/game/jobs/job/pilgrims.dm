@@ -356,31 +356,6 @@ Pilgrim Fate System
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-
-//Ogryn Bouncer
-/decl/hierarchy/outfit/job/bouncer
-	name = OUTFIT_JOB_NAME("Bouncer")
-	uniform = /obj/item/clothing/under/ogryn/jumpsuit
-	head = null
-	shoes = /obj/item/clothing/shoes/jackboots/ogryn
-	gloves = null
-	back = /obj/item/storage/backpack/satchel/warfare
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/ogryn
-	id_type = /obj/item/card/id/pilgrim/innkeeper
-	pda_type = /obj/item/device/pda/penitent
-	l_ear = null
-	r_ear = null
-	belt = /obj/item/device/flashlight/lantern
-	pda_slot = null
-	l_hand = /obj/item/melee/classic_baton/trench_club
-	backpack_contents = list(
-	/obj/item/stack/thrones = 2,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/twenty = 1,
-
-	)
-
 /datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
 	title = "Pilgrim"
 	department_flag = PIL
@@ -461,34 +436,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c44, slot_l_store)
 		if(4)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_s_store)
-
-/datum/job/bouncer
-	title = "Bouncer"
-	department_flag = PIL
-	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "The God Emperor and the Innkeeper"
-	selection_color = "#848484"
-	outfit_type = /decl/hierarchy/outfit/job/bouncer
-	latejoin_at_spawnpoints = TRUE
-	announced = FALSE
-	cultist_chance = 50 //same as his father, the innkeeper
-	species_role = "Ogryn"
-
-
-	equip(var/mob/living/carbon/human/H)
-	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(17,20), rand(7,12), rand(15,18), rand (2,5)) //swole but retarded
-		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.fully_replace_character_name(random_ogryn_name())
-		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")
-
-
-
 /*
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent

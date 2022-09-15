@@ -108,17 +108,11 @@ proc/get_radio_key_from_channel(var/channel)
 /mob/living/proc/handle_speech_problems(var/list/message_data)
 	var/message = html_decode(message_data[1])
 	var/verb = message_data[2]
-	var/mob/living/carbon/human/ogryn = src
 
 	. = 0
 
 	if((HULK in mutations) && health >= 25 && length(message))
 		message = "[uppertext(message)]!!!"
-		verb = pick("yells","roars","hollers")
-		message_data[3] = 0
-		. = 1
-	if(ogryn.species.name == "Ogryn" && length(message))
-		message = ogrynSpeech(uppertext(message))
 		verb = pick("yells","roars","hollers")
 		message_data[3] = 0
 		. = 1

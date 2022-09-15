@@ -81,11 +81,6 @@ proc/random_kroot_name(gender)
 	else
 		return capitalize(pick(krootnames)) + " " + "the Loyal"
 
-proc/random_ogryn_name()
-//try and keep it to 4 letters
-	var/ogryn_names = list("Stev", "Orvy", "Lugg", "Bert", "Bran", "Gert", "Oggy", "Mono", "Nork", "Rogg", "Brog", "Prol", "Brok" )
-	return capitalize(pick(ogryn_names))
-
 proc/random_skitarii_name(gender)
 	var/skitariinames = list("Sy-gex","Tyr","Tyba","Dorox","Xixos","Delpha","Zyto-Neumann","Chu","Dak",)
 	var/skitarrinum = rand(1,1000)

@@ -276,18 +276,6 @@ em						{font-style: normal;font-weight: bold;}
 
 .goodmood 				{color: #635fcf; font-weight: bold; font-size: 101%;}
 
-.ogrynconfused			{color: #635fcf; font-weight: bold; font-size: 111%; animation: confused 4500ms infinite; filter: blur(4px); }
-@keyframes confused {
-	0% { color: #635fcf; }
-	25% { color: #746d6d; }
-	50% { color: #d6cdcd; }
-	75% { color: #746d6d; }
-	100% { color: #635fcf; }
-}
-
-.ogrynspeak		{color: #572525; font-weight: bold; font-size: 111%;}
-
-
 .staffwarn				{color: #c51e1e; font-weight:bold; font-size: 150%;}
 /* Admin: Private Messages */
 .pm  .howto				{color: #c51e1e;	font-weight: bold;		font-size: 200%;}
