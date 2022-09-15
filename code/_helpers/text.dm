@@ -267,6 +267,7 @@
 				word = jointext(shuffledWord, "") //rejoins it
 				word = apply_ogryn_blur(word)
 			text = addtext(text, " ", word) //Puts it all back together again
+			trim(text) //slays the eternal enemy whitespace
 		return text
 
 

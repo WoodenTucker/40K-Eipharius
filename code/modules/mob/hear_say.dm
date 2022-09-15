@@ -23,9 +23,10 @@
 	message = replacetext(message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
 	message = replacetext(message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
 	message = add_shout_append(capitalize(message))//So that if they end in an ! it gets bolded
-	message = apply_ogryn_scramble(message, src) // for ogryn
+	if(speaker != src && ogrynFriend.species.name != SPECIES_OGRYN) //ogryns can understand themselves and other ogryn
+		message = apply_ogryn_scramble(message, src) // for ogryn, I honestly hate abstracting this so much but it only fucking works like this I hate BYOND, any conditionals here break ghost chat
 
-	if(ogrynFriend.species.name == "Ogryn") //applies span class without interfereing with say
+	if(ogrynFriend.species.name == SPECIES_OGRYN) //applies span class without interfereing with say
 		message = apply_ogryn_speech(message)
 
 	//make sure the air can transmit speech - hearer's side
@@ -234,7 +235,8 @@
 	message = replacetext(message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
 	message = replacetext(message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
 	message = add_shout_append(capitalize(message))//So that if they end in an ! it gets bolded
-	message = apply_ogryn_scramble(message, src) // for ogryn
+	if(speaker != src && ogrynFriend.species.name != SPECIES_OGRYN) //ogryns can understand themselves and other ogryn
+		message = apply_ogryn_scramble(message, src) // for ogryn, I honestly hate abstracting this so much but it only fucking works like this I hate BYOND, any conditionals here break ghost chat
 
 	if(ogrynFriend.species.name == "Ogryn") //applies span class without interfereing with say
 		message = apply_ogryn_speech(message)
