@@ -1,7 +1,7 @@
 /var/obj/effect/lobby_image = new/obj/effect/lobby_image()
 
 /obj/effect/lobby_image
-	name = "Interstation12"
+	name = "Forge-World Eipharius"
 	desc = "This shouldn't be read."
 	screen_loc = "WEST,SOUTH"
 
