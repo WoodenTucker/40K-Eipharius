@@ -120,7 +120,6 @@ proc/get_radio_key_from_channel(var/channel)
 	if(ogryn.species.name == "Ogryn" && length(message))
 		message = ogrynSpeech(uppertext(message))
 		verb = pick("yells","roars","hollers")
-		message_data[3] = 0
 		. = 1
 	if(slurring)
 		message = slur(message)

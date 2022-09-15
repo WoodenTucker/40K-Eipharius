@@ -242,6 +242,35 @@
 /proc/apply_ogryn_speech(text)
 	text = "<span class='ogrynspeak'>[text]</span>"
 	return text
+
+/proc/apply_ogryn_scramble(text, user)
+	if(isghost(user)) //Without this ghosts just can't see messages from anyone, I don't fucking know why -wel
+		return text
+	var/mob/living/carbon/human/H = user
+	if(H.species.name != SPECIES_OGRYN) //more unfucking ghost chat, I hate the anti-christ
+		return text
+	else
+		var/list/words = splittext(text, " ") //we split the string
+		text = ""
+		for(var/word in words) //loop through our split string
+			var/currentWord = lowertext(word) //force to lowercase so we can run checks more easily on the word
+			if(currentWord in OGRYN_HEAR_EXCEPTIONS) //if this word exists in hearing exceptions we move on to the next
+				text = addtext(text, " ", word)
+				continue
+			if(length(word) > 5 ) //Ogryns can't understand long words
+				var/list/splitWord = splittext(word, "") //splits our word up
+				if("&" in splitWord) //Handles annoying ascii code exceptiosn for words like I've
+					word = jointext(splitWord, "") //rejoins it
+					text = addtext(text, " ", word)
+					continue
+				var/shuffledWord = shuffle(splitWord) //scrambles the list
+				word = jointext(shuffledWord, "") //rejoins it
+				word = apply_ogryn_blur(word)
+			text = addtext(text, " ", word) //Puts it all back together again
+			trim(text) //slays the eternal enemy whitespace
+		return text
+
+
 //This proc strips html properly, remove < > and all text between
 //for complete text sanitizing should be used sanitize()
 /proc/strip_html_properly(var/input)
