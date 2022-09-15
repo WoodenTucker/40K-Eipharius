@@ -109,7 +109,3 @@
 /datum/achievement/astartes
 	name = "Know no fear!"
 	description = "The point of his spear!"
-
-/datum/achievement/ogryn
-	name = "HEY YOU GUUUUUUUUYS!"
-	description = "ME LIKE EMPEROR"

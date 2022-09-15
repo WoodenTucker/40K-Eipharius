@@ -121,9 +121,6 @@ GLOBAL_LIST_EMPTY(family_blacklist)
 		if("Astartes")
 			H.set_species(species_role)
 			H.unlock_achievement(new/datum/achievement/astartes())
-		if("Ogryn")
-			H.set_species(species_role)
-			H.unlock_achievement(new/datum/achievement/ogryn())
 
 	do_skill_setup(H)//Give them all their skills.
 

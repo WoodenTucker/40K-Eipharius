@@ -312,7 +312,4 @@
 
 #define PUNCTUATION list("!", ".", "\"", ")", "'", ",", "?", ":", ";")
 
-//All words should be lowercase, the conditional automatically converts to lowercase, generally add punctuation as well due to weird auto speech fixes
-#define OGRYN_HEAR_EXCEPTIONS list("emperor", "emperor.", "emperor!", "emperor?", "omnissiah", "omnissiah.", "omnissiah?","omnissiah!", "<b>Emperor!</b>", "<b>emperor!</b>")
-
 #define CLIENT_FROM_VAR(I) (ismob(I) ? I:client : (istype(I, /client) ? I : (istype(I, /datum/mind) ? I:current?:client : null)))
