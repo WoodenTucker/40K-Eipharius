@@ -3,6 +3,7 @@
 /mob/proc/hear_say(var/message, var/verb = "says", var/datum/language/language = null, var/alt_name = "",var/italics = 0, var/mob/speaker = null, var/sound/speech_sound, var/sound_vol)
 	if(!client)
 		return
+	var/mob/living/carbon/human/ogrynFriend = speaker
 
 	if(speaker && !speaker.client && isghost(src) && get_preference_value(/datum/client_preference/ghost_ears) == GLOB.PREF_ALL_SPEECH && !(speaker in view(src)))
 			//Does the speaker have a client?  It's either random stuff that observers won't care about (Experiment 97B says, 'EHEHEHEHEHEHEHE')
@@ -21,38 +22,11 @@
 	message = replacetext(message, " ive ", " I've ")//I'M SO FUCKING SICK OF SEEING IVE YOU FUCKS
 	message = replacetext(message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
 	message = replacetext(message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
-
 	message = add_shout_append(capitalize(message))//So that if they end in an ! it gets bolded
-
-	//Ogryn related activities  - TBD if this is worth the cost
-	var/mob/living/carbon/human/ogryn = src //reassigns our lil fella to get access to species obj
-	var/mob/living/carbon/human/ogrynFriend = speaker
+	message = apply_ogryn_scramble(message, src) // for ogryn
 
 	if(ogrynFriend.species.name == "Ogryn") //applies span class without interfereing with say
 		message = apply_ogryn_speech(message)
-
-	if(ogryn.species.name == "Ogryn" && (speaker != src && ogrynFriend.species.name != "Ogryn")) //species check and they probably understand themselves?
-		var/finishedSentence = ""
-		var/list/words = splittext(message, " ") //we split the string
-		for(var/word in words) //loop through our split string
-			var/currentWord = lowertext(word) //force to lowercase so we can run checks more easily on the word
-			if(currentWord in OGRYN_HEAR_EXCEPTIONS) //if this word exists in hearing exceptions we move on to the next
-				finishedSentence = addtext(finishedSentence, " ", word)
-				continue
-			if(length(word) > 5 ) //Ogryns can't understand long words
-				var/list/splitWord = splittext(word, "") //splits our word up
-				if("&" in splitWord) //Handles annoying ascii code exceptiosn for words like I've
-					word = jointext(splitWord, "") //rejoins it
-					finishedSentence = addtext(finishedSentence, " ", word)
-					continue
-				var/shuffledWord = shuffle(splitWord) //scrambles the list
-				word = jointext(shuffledWord, "") //rejoins it
-				word = apply_ogryn_blur(word)
-			finishedSentence = addtext(finishedSentence, " ", word) //Puts it all back together again
-
-		message = finishedSentence
-
-
 
 	//make sure the air can transmit speech - hearer's side
 	var/turf/T = get_turf(src)
@@ -133,6 +107,7 @@
 /mob/proc/hear_radio(var/message, var/verb="says", var/datum/language/language=null, var/part_a, var/part_b, var/part_c, var/mob/speaker = null, var/hard_to_hear = 0, var/vname ="")
 
 	var/radio_sound = list('sound/effects/radio1.ogg', 'sound/effects/radio2.ogg', 'sound/effects/radio3.ogg', 'sound/effects/radio4.ogg')
+	var/mob/living/carbon/human/ogrynFriend = speaker
 
 	if(!isobserver(src))
 		//playsound(loc, 'sound/effects/radio_chatter.ogg', 25, 0, -1)//They won't always be able to read the message, but the sound will play regardless.
@@ -259,34 +234,11 @@
 	message = replacetext(message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
 	message = replacetext(message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
 	message = add_shout_append(capitalize(message))//So that if they end in an ! it gets bolded
-
-		//Ogryn related activities  - TBD if this is worth the cost
-	var/mob/living/carbon/human/ogryn = src //reassigns our lil fella to get access to species obj
-	var/mob/living/carbon/human/ogrynFriend = speaker
+	message = apply_ogryn_scramble(message, src) // for ogryn
 
 	if(ogrynFriend.species.name == "Ogryn") //applies span class without interfereing with say
 		message = apply_ogryn_speech(message)
 
-	if(ogryn.species.name == "Ogryn" && (speaker != src && ogrynFriend.species.name != "Ogryn")) //species check and they probably understand themselves and their funny friends
-		var/finishedSentence = ""
-		var/list/words = splittext(message, " ") //we split the string
-		for(var/word in words) //loop through our split string
-			var/currentWord = lowertext(word) //force to lowercase so we can run checks more easily on the word
-			if(currentWord in OGRYN_HEAR_EXCEPTIONS) //if this word exists in hearing exceptions we move on to the next
-				finishedSentence = addtext(finishedSentence, " ", word)
-				continue
-			if(length(word) > 5 ) //Ogryns can't understand long words
-				var/list/splitWord = splittext(word, "") //splits our word up
-				if("&" in splitWord) //Handles annoying ascii code exceptiosn for words like I've
-					word = jointext(splitWord, "") //rejoins it
-					finishedSentence = addtext(finishedSentence, " ", word)
-					continue
-				var/shuffledWord = shuffle(splitWord) //scrambles the list
-				word = jointext(shuffledWord, "") //rejoins it
-				word = apply_ogryn_blur(word)
-			finishedSentence = addtext(finishedSentence, " ", word) //Puts it all back together again
-
-		message = finishedSentence
 
 	if(language)
 		formatted = language.format_message_radio(message, verb)
