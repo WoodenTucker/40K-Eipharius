@@ -251,7 +251,7 @@
 	str_requirement = 18 //Needs peak human strength to even think about using.
 	ammo_type = /obj/item/ammo_casing/exitus
 	magazine_type = /obj/item/ammo_magazine/exitus
-	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/ /obj/item/ammo_magazine/exitus/explosive)
+	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
 	one_hand_penalty = 50
 	accuracy = -5 //Don't shoot it one-handed.
 	scoped_accuracy = 50 //Hit or miss. I guess they never miss, huh?
@@ -263,7 +263,7 @@
 	far_fire_sound = "sniper_fire"
 	sales_price = 250 //Try selling it and you'll get a killteam though.
 
-	/obj/item/gun/projectile/exitus/update_icon()
+/obj/item/gun/projectile/exitus/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "slayersniper"
