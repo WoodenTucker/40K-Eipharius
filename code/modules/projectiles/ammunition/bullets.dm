@@ -425,39 +425,3 @@
 	spent_icon = "fshell-spent"
 	caliber = "rad"
 	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol
-
-/obj/item/ammo_casing/exitus
-	name = "exitus shell casing"
-	desc = "An exitus rifle shell."
-	icon_state = "lcasing"
-	spent_icon = "lcasing-spent"
-	caliber = "exitus"
-	projectile_type = /obj/item/projectile/bullet/rifle/exitus
-	matter = list(DEFAULT_WALL_MATERIAL = 1250)
-
-/obj/item/ammo_casing/exitus/toxin
-	name = "exitus toxin shell casing"
-	desc = "An exitus rifle toxin shell."
-	icon_state = "bshell"
-	spent_icon = "bshell-spent"
-	caliber = "exitus"
-	projectile_type = /obj/item/projectile/bullet/rifle/exitus/toxin
-	matter = list(DEFAULT_WALL_MATERIAL = 1250)
-
-/obj/item/ammo_casing/exitus/explosive
-	name = "exitus explosive shell casing"
-	desc = "An exitus rifle explosive shell."
-	icon_state = "empshell"
-	spent_icon = "empshell-spent"
-	caliber = "exitus"
-	projectile_type = /obj/item/projectile/bullet/rifle/exitus/explosive
-	matter = list(DEFAULT_WALL_MATERIAL = 1250)
-
-/obj/item/ammo_casing/exitus/fire
-	name = "exitus incendiary shell casing"
-	desc = "An exitus rifle incendiary shell."
-	icon_state = "blshell"
-	spent_icon = "blshell-spent"
-	caliber = "exitus"
-	projectile_type = /obj/item/projectile/bullet/rifle/exitus/fire
-	matter = list(DEFAULT_WALL_MATERIAL = 1250)

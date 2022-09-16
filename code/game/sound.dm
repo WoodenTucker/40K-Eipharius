@@ -109,12 +109,6 @@ GLOBAL_LIST_INIT(eat_food, list('sound/effects/eating/eat1.ogg', 'sound/effects/
 GLOBAL_LIST_INIT(drink_sound, list('sound/effects/eating/drink1.ogg','sound/effects/eating/drink2.ogg','sound/effects/eating/drink3.ogg','sound/effects/eating/drink4.ogg','sound/effects/eating/drink5.ogg'))
 
 
-//var/list/artillery_out = list( 'sound/weapons/WW2/new_exp_high_1.ogg', 'sound/weapons/WW2/new_exp_high_2.ogg', 'sound/weapons/WW2/new_exp_high_3.ogg')
-var/list/artillery_in = list( 'sound/weapons/new_artillery_incoming01.ogg', 'sound/weapons/new_artillery_incoming02.ogg', 'sound/weapons/new_artillery_incoming03.ogg', 'sound/weapons/new_artillery_incoming04.ogg', 'sound/weapons/new_artillery_incoming05.ogg', 'sound/weapons/new_artillery_incoming06.ogg')
-//var/list/artillery_out_distance = list( 'sound/weapons/WW2/explo_distant01.ogg', 'sound/weapons/WW2/explo_distant02.ogg', 'sound/weapons/WW2/explo_distant03.ogg', 'sound/weapons/WW2/explo_distant04.ogg', 'sound/weapons/WW2/explo_distant05.ogg', 'sound/weapons/WW2/explo_distant06.ogg', 'sound/weapons/WW2/explo_distant07.ogg', 'sound/weapons/WW2/explo_distant08.ogg')
-//var/list/artillery_in_distance = list( 'sound/weapons/WW2/explo_distant01.ogg', 'sound/weapons/WW2/explo_distant02.ogg', 'sound/weapons/WW2/explo_distant03.ogg', 'sound/weapons/WW2/explo_distant04.ogg', 'sound/weapons/WW2/explo_distant05.ogg', 'sound/weapons/WW2/explo_distant06.ogg', 'sound/weapons/WW2/explo_distant07.ogg', 'sound/weapons/WW2/explo_distant08.ogg')
-
-
 
 /proc/playsound(atom/source, soundin, vol as num, vary, extrarange as num, falloff, is_global, frequency, is_ambiance = 0,  ignore_walls = TRUE, zrange = 2, override_env, envdry, envwet)
 	if(isarea(source))
@@ -287,5 +281,4 @@ var/const/FALLOFF_SOUNDS = 0.5
 			if ("rifle_fire") soundin = pick(GLOB.far_rifle)
 			if ("eat") soundin = pick(GLOB.eat_food)
 			if ("drink") soundin = pick(GLOB.drink_sound)
-			if ("artillery_in") soundin = pick(artillery_in)
 	return soundin
