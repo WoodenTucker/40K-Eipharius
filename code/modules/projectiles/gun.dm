@@ -9,9 +9,9 @@
 /*
 	Defines a firing mode for a gun.
 
-	A firemode is created from a list of fire mode settings. Each setting modifies the sales_price of the gun var with the same name.
-	If the fire mode sales_price for a setting is null, it will be replaced with the initial sales_price of that gun's variable when the firemode is created.
-	Obviously not compatible with variables that take a null sales_price. If a setting is not present, then the corresponding var will not be modified.
+	A firemode is created from a list of fire mode settings. Each setting modifies the value of the gun var with the same name.
+	If the fire mode value for a setting is null, it will be replaced with the initial value of that gun's variable when the firemode is created.
+	Obviously not compatible with variables that take a null value. If a setting is not present, then the corresponding var will not be modified.
 */
 /datum/firemode
 	var/name = "default"
@@ -22,14 +22,14 @@
 	if(!properties) return
 
 	for(var/propname in properties)
-		var/propsales_price = properties[propname]
+		var/propvalue = properties[propname]
 
 		if(propname == "mode_name")
-			name = propsales_price
-		else if(isnull(propsales_price))
+			name = propvalue
+		else if(isnull(propvalue))
 			settings[propname] = gun.vars[propname] //better than initial() as it handles list vars like burst_accuracy
 		else
-			settings[propname] = propsales_price
+			settings[propname] = propvalue
 
 /datum/firemode/proc/apply_to(obj/item/gun/gun)
 	for(var/propname in settings)
@@ -103,7 +103,6 @@
 	var/tmp/told_cant_shoot = 0 //So that it doesn't spam them with the fact they cannot hit them.
 	var/tmp/lock_time = -100
 	var/can_jam = TRUE
-
 
 	//attachment shit
 	var/damage_modifier = 0
