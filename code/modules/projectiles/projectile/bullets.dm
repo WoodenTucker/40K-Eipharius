@@ -652,3 +652,31 @@
 	penetration_modifier = 5
 	muzzle_type = NULL
 	penetrating = 200
+
+/obj/item/projectile/bullet/rifle/exitus/explosive
+	name = "bullet"
+	icon_state = "bullet"
+	damage = 25 //Admin only spawn for now.
+	damage_type = BRUTE
+
+/obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
+	if(istype(target, /mob/living/carbon/human))
+	var/mob/living/carbon/human/M = target
+	M.gib()
+	qdel(M)
+
+/obj/item/projectile/bullet/rifle/exitus/toxin
+	damage_type = TOX
+
+/obj/item/projectile/bullet/rifle/exitus/fire
+	damage = 50 //Admin only spawn for now.
+	damage_type = BURN
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/seolsuit))
+			H.adjust_fire_stacks(80)
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 15, 14, "red", 1)
+		if(H.isChild())
+			var/mob/living/carbon/human/F = firer
+			F.unlock_achievement(new/datum/achievement/child_fire())
