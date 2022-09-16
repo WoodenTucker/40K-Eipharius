@@ -24,7 +24,10 @@
 	var/bumped
 	var/current = null
 
+
 	var/shot_from = "" // name of the object which shot us
+	var/firer_original_dir = null
+	var/turf/firer_loc = null
 
 	var/accuracy = 0
 	var/dispersion = 0.0
@@ -52,7 +55,11 @@
 
 	var/incinerate = 0
 	var/embed = 0 // whether or not the projectile can embed itself in the mob
+	var/is_shrapnel = FALSE
 	var/shrapnel_type //type of shrapnel the projectile leaves in its target.
+
+	var/btype = "normal" //normal, AP (armor piercing) and HP (hollow point)
+	var/atype = "normal"
 
 	var/p_x = 16
 	var/p_y = 16 // the pixel location of the tile that the player clicked. Default is the center
@@ -151,6 +158,9 @@
 //called when the projectile stops flying because it collided with something
 /obj/item/projectile/proc/on_impact(var/atom/A)
 	return
+
+//called to launch a projectile from a cannon
+/obj/item/projectile/proc/launch(atom/target, mob/user, obj/item/weapon/gun/launcher, var/target_zone, var/x_offset=0, var/y_offset=0)
 
 //Checks if the projectile is eligible for embedding. Not that it necessarily will.
 /obj/item/projectile/proc/can_embed()
