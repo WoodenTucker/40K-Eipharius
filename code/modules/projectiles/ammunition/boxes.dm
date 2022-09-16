@@ -610,3 +610,14 @@
 	ammo_type = /obj/item/ammo_casing/radcarbine/radpistol
 	max_ammo = 10
 	multiple_sprites = 0
+
+/obj/item/ammo_magazine/exitus
+	name = "Exitus Rifle Magazine"
+	icon_state = "ersatz"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = "exitus"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/exitus
+	max_ammo = 5
+	multiple_sprites = 1
