@@ -108,6 +108,7 @@ proc/get_radio_key_from_channel(var/channel)
 /mob/living/proc/handle_speech_problems(var/list/message_data)
 	var/message = html_decode(message_data[1])
 	var/verb = message_data[2]
+	var/mob/living/carbon/human/ogryn = src
 
 	. = 0
 
@@ -115,6 +116,10 @@ proc/get_radio_key_from_channel(var/channel)
 		message = "[uppertext(message)]!!!"
 		verb = pick("yells","roars","hollers")
 		message_data[3] = 0
+		. = 1
+	if(ogryn.species.name == "Ogryn" && length(message))
+		message = ogrynSpeech(uppertext(message))
+		verb = pick("yells","roars","hollers")
 		. = 1
 	if(slurring)
 		message = slur(message)

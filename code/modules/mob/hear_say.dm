@@ -3,6 +3,7 @@
 /mob/proc/hear_say(var/message, var/verb = "says", var/datum/language/language = null, var/alt_name = "",var/italics = 0, var/mob/speaker = null, var/sound/speech_sound, var/sound_vol)
 	if(!client)
 		return
+	var/mob/living/carbon/human/ogrynFriend = speaker
 
 	if(speaker && !speaker.client && isghost(src) && get_preference_value(/datum/client_preference/ghost_ears) == GLOB.PREF_ALL_SPEECH && !(speaker in view(src)))
 			//Does the speaker have a client?  It's either random stuff that observers won't care about (Experiment 97B says, 'EHEHEHEHEHEHEHE')
@@ -21,8 +22,12 @@
 	message = replacetext(message, " ive ", " I've ")//I'M SO FUCKING SICK OF SEEING IVE YOU FUCKS
 	message = replacetext(message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
 	message = replacetext(message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
-
 	message = add_shout_append(capitalize(message))//So that if they end in an ! it gets bolded
+	if(speaker != src && ogrynFriend.species.name != SPECIES_OGRYN) //ogryns can understand themselves and other ogryn
+		message = apply_ogryn_scramble(message, src) // for ogryn, I honestly hate abstracting this so much but it only fucking works like this I hate BYOND, any conditionals here break ghost chat
+
+	if(ogrynFriend.species.name == SPECIES_OGRYN) //applies span class without interfereing with say
+		message = apply_ogryn_speech(message)
 
 	//make sure the air can transmit speech - hearer's side
 	var/turf/T = get_turf(src)
@@ -103,6 +108,7 @@
 /mob/proc/hear_radio(var/message, var/verb="says", var/datum/language/language=null, var/part_a, var/part_b, var/part_c, var/mob/speaker = null, var/hard_to_hear = 0, var/vname ="")
 
 	var/radio_sound = list('sound/effects/radio1.ogg', 'sound/effects/radio2.ogg', 'sound/effects/radio3.ogg', 'sound/effects/radio4.ogg')
+	var/mob/living/carbon/human/ogrynFriend = speaker
 
 	if(!isobserver(src))
 		//playsound(loc, 'sound/effects/radio_chatter.ogg', 25, 0, -1)//They won't always be able to read the message, but the sound will play regardless.
@@ -229,6 +235,13 @@
 	message = replacetext(message, " im ", " I'm ")//AND IM TOO! STOP THAT YOU FUCKS!
 	message = replacetext(message, " u ", " you ")//STOP USING FUCKING U YOU SICK FUCKS!
 	message = add_shout_append(capitalize(message))//So that if they end in an ! it gets bolded
+	if(speaker != src && ogrynFriend.species.name != SPECIES_OGRYN) //ogryns can understand themselves and other ogryn
+		message = apply_ogryn_scramble(message, src) // for ogryn, I honestly hate abstracting this so much but it only fucking works like this I hate BYOND, any conditionals here break ghost chat
+
+	if(ogrynFriend.species.name == "Ogryn") //applies span class without interfereing with say
+		message = apply_ogryn_speech(message)
+
+
 	if(language)
 		formatted = language.format_message_radio(message, verb)
 	else

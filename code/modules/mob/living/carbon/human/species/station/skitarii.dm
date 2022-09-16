@@ -12,7 +12,7 @@
 	pixel_offset_y = -4
 	strength = STR_HIGH
 	radiation_mod = 0.01
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED
 	slowdown = -0.30
 	inherent_verbs = list(
 	/mob/living/carbon/human/skitarii/proc/giveskitstats,
@@ -105,7 +105,7 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(18,22),rand(18,22),rand(18,22),14) //gives stats str, dext, end, int
+			src.add_stats(rand(19,22),rand(15,17),rand(15,17),14) //gives stats str, dext, end, int
 			src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
@@ -135,8 +135,8 @@
 
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(22,26),rand(22,26),rand(22,26),14) //gives stats str, dext, end, int //Melee focused guys.
-			src.add_skills(rand(17,19),rand(5,6),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused.
+			src.add_stats(rand(17,20),rand(16,18),rand(14,16),14) //gives stats str, dext, end, int //Melee focused guys.
+			src.add_skills(rand(10,11),rand(8,9),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
@@ -173,7 +173,7 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine/radpistol, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(22,24),rand(22,24),rand(24,28),14) //gives stats str, dext, end, int //Durable as hell.
+			src.add_stats(rand(20,22),rand(16,17),rand(16,18),14) //gives stats str, dext, end, int //Durable as hell.
 			src.add_skills(rand(11,12),rand(12,14),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
