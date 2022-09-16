@@ -522,3 +522,32 @@
 		icon_state = "shuriken_pistol"
 	else
 		icon_state = "shuriken_pistol-e"
+
+
+
+/obj/item/gun/projectile/exituspistol
+	name = "Exitus pistol"
+	desc = "The Exitus Pistol is an Imperial pistol and a signature weapon of the Vindicare Temple of the Officio Assassinorum. Like its cousin the Exitus Rifle, it is a masterpiece of Adeptus Mechanicus engineering and is custom-built for the requirements of the individual assassin. The Pistol is largely a backup weapon for the Exitus Rifle and is used in the rare circumstances the assassin is discovered, cornered, or in need of rapid-fire weaponry. With a built-in silencer and capable of penetrating most armor with ease, it is has saved the lives of many Vindicare Assassins."
+	icon_state = "tacpistol"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "exitus"
+	silenced = 1
+	accuracy = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
+	fire_delay = 1.3
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	handle_casings = EJECT_CASINGS
+	load_method = MAGAZINE
+	max_shells = 5
+	str_requirement = 18 //Needs peak human strength to even think about using.
+	ammo_type = /obj/item/ammo_casing/exitus
+	magazine_type = /obj/item/ammo_magazine/exitus
+	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/ /obj/item/ammo_magazine/exitus/explosive)
+	gun_type = GUN_SEMIAUTOMATIC
+
+/obj/item/gun/projectile/exituspistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "tacpistol"
+	else
+		icon_state = "tacpistol-e"
