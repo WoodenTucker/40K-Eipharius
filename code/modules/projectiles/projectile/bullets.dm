@@ -637,7 +637,6 @@
 /obj/item/projectile/bullet/rifle/exitus
 	name = "bullet"
 	icon_state = "bullet"
-	fire_sound = NULL //Silenced
 	damage = 260 //Admin only spawn for now.
 	damage_type = BRUTE
 	check_armour = "bullet"
@@ -645,12 +644,10 @@
 	embed = 1
 	sharp = 1
 	light_power = 0 
-	silenced = TRUE
 	can_miss = 0
 	speed = 0.001
 	light_range = 0
 	penetration_modifier = 5
-	muzzle_type = NULL
 	penetrating = 200
 
 /obj/item/projectile/bullet/rifle/exitus/explosive
