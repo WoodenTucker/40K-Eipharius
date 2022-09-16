@@ -669,11 +669,13 @@
 	damage_type = TOX
 
 /obj/item/projectile/bullet/rifle/exitus/fire
+
+/obj/item/projectile/bullet/rifle/exitus/fire/on_hit(var/atom/target)
 	damage = 50 //Admin only spawn for now.
 	damage_type = BURN
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/seolsuit))
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
 			H.adjust_fire_stacks(80)
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 15, 14, "red", 1)
