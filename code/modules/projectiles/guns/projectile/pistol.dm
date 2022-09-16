@@ -542,8 +542,8 @@
 	str_requirement = 18 //Needs peak human strength to even think about using.
 	ammo_type = /obj/item/ammo_casing/exitus
 	magazine_type = /obj/item/ammo_magazine/exitus
-	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/ /obj/item/ammo_magazine/exitus/explosive)
-	gun_type = GUN_SEMIAUTOMATIC
+	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
+	gun_type = GUN_SEMIAUTO
 
 /obj/item/gun/projectile/exituspistol/update_icon()
 	..()
