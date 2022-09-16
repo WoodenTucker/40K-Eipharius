@@ -638,7 +638,7 @@
 	name = "bullet"
 	icon_state = "bullet"
 	fire_sound = NULL //Silenced
-	damage = 300 //Admin only spawn for now.
+	damage = 240 //Admin only spawn for now.
 	damage_type = BRUTE
 	check_armour = "bullet"
 	armor_penetration = 100
