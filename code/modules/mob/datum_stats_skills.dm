@@ -249,27 +249,47 @@
 proc/skillnumtodesc(var/skill)
 	switch(skill)
 		if(1)
-			return "<small>completely worthless</small>"
+			return "<small>utter beginner</small>"
 		if(2)
-			return "<small>incompetent</small>"
+			return "<small>beginner</small>"
 		if(3)
-			return "<small>a novice</small>"
+			return "<small>basic familiarity</small>"
 		if(4)
-			return "<small>unskilled</small>"
+			return "<small>some familiarity</small>"
 		if(5)
-			return "good enough"
+			return "significant familiarity"
 		if(6)
-			return "adept"
+			return "capable amateur"
 		if(7)
-			return "versed"
+			return "weak professional"
 		if(8)
-			return FONT_LARGE("an expert")
+			return FONT_LARGE("employable professional")
 		if(9)
-			return FONT_LARGE("a master")
+			return FONT_LARGE("solid professional") 
 		if(10)
-			return FONT_LARGE("legendary")
-	if(skill > 10)
-		return "inhuman"
+			return FONT_LARGE("skilled professional")
+		if(11)
+			return FONT_LARGE("very skilled professional") // 9-11 is guard maximal level. Everything beyond is mostly Astartes, heavily augmented humans, xenos and event character. 
+		if(12)
+			return FONT_LARGE("expert")
+		if(13)
+			return FONT_LARGE("strong expert")
+		if(14)
+			return FONT_LARGE("master") // From now and below is event only characters. Astartes captain, ork warboss, eldar farseer etc. 
+		if(15)
+			return FONT_LARGE("strong master")
+		if(16)
+			return FONT_LARGE("region-known Master")
+		if(17)
+			return FONT_LARGE("region-leading master")
+		if(18)
+			return FONT_LARGE("planet-known master")
+		if(19)
+			return FONT_LARGE("planet-leading Master")
+		if(20)
+			return FONT_LARGE("legendary master") //Primarch level
+	if(skill > 20)
+		return "god?!"
 
 proc/backwards_skill_scale(var/skill)
 	if(0)
