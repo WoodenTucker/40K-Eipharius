@@ -247,6 +247,7 @@
 	handle_casings = EJECT_CASINGS
 	load_method = MAGAZINE
 	max_shells = 5
+	silenced = 1
 	str_requirement = 18 //Needs peak human strength to even think about using.
 	ammo_type = /obj/item/ammo_casing/exitus
 	magazine_type = /obj/item/ammo_magazine/exitus
