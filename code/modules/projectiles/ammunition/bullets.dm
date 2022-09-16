@@ -425,3 +425,12 @@
 	spent_icon = "fshell-spent"
 	caliber = "rad"
 	projectile_type = /obj/item/projectile/bullet/rifle/radcarbine/radpistol
+
+/obj/item/ammo_casing/exitus
+	name = "exitus shell casing"
+	desc = "An exitus rifle shell."
+	icon_state = "lcasing"
+	spent_icon = "lcasing-spent"
+	caliber = "exitus"
+	projectile_type = /obj/item/projectile/bullet/rifle/exitus
+	matter = list(DEFAULT_WALL_MATERIAL = 1250)
