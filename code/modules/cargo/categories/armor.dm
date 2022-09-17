@@ -87,23 +87,28 @@
 	item_path = /obj/item/clothing/head/helmet/marinehelm
 
 /datum/cargo_entry/armor/necrophelm
+	name = "Runic Helmet"
+	cost = 39
+	item_path = /obj/item/clothing/head/helmet/knighthelm
+
+/datum/cargo_entry/armor/necrophelm
 	name = "Necromunda Power Helmet"
 	cost = 42
 	item_path = /obj/item/clothing/head/helmet/lightpahelm
 
 /datum/cargo_entry/armor/necroparmor
 	name = "Necromunda Power Armor"
-	cost = 220
+	cost = 270
 	item_path = /obj/item/clothing/suit/armor/vanpa
 
 /datum/cargo_entry/armor/renpa
 	name = "Renegade Power Armor"
-	cost = 260
+	cost = 295
 	item_path = /obj/item/clothing/suit/armor/rpowerarmor
 
 /datum/cargo_entry/armor/mechpa
 	name = "Runic Power Armor"
-	cost = 280
+	cost = 315
 	item_path = /obj/item/clothing/suit/armor/greypa
 
 /datum/cargo_entry/armor/helmet
@@ -118,32 +123,32 @@
 
 /datum/cargo_entry/armor/garmor
 	name = "Guard Flak Armor"
-	cost = 52
+	cost = 62
 	item_path = /obj/item/clothing/suit/armor/guardsman
 
 /datum/cargo_entry/armor/mercflak
 	name = "Mercenary Flak Armor"
-	cost = 47
+	cost = 57
 	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary
 
 /datum/cargo_entry/armor/mercflak
 	name = "Heavy Flak Suit"
-	cost = 62
+	cost = 72
 	item_path = /obj/item/clothing/suit/armor/heavyflaksuit
 
 /datum/cargo_entry/armor/cara
 	name = "Guard Carapace Armor"
-	cost = 92
+	cost = 102
 	item_path = /obj/item/clothing/suit/armor/guardsman/carapace
 
 /datum/cargo_entry/armor/mercspace
 	name = "Mercenary Carapace Armor"
-	cost = 82
+	cost = 92
 	item_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace
 
 /datum/cargo_entry/armor/heavycombatarmor
 	name = "Heavy Combat Armor"
-	cost = 110
+	cost = 130
 	item_path = /obj/item/clothing/suit/storage/vest/merc
 
 /datum/cargo_entry/armor/belt

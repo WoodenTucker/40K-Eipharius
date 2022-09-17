@@ -944,7 +944,7 @@ Area basic template
 /area/cadiaoutpost/oa/villageinside
 	name = "Inside Village"
 	icon_state = "village"
-	music = 'sound/newmusic/VillageInside.ogg'
+	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = FALSE
 	dynamic_lighting = 1
 

@@ -19,7 +19,7 @@
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/sniper_load.ogg'
-	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	sales_price = 59
@@ -61,9 +61,6 @@
 /obj/item/gun/projectile/heavysniper/special_check(mob/user)
 	if(bolt_open)
 		to_chat(user, "<span class='warning'>You can't fire [src] while the bolt is open!</span>")
-		return 0
-	if(!user.zoomed)
-		to_chat(user, "<span class='warning'>You can't get a clear shot to fire without looking down the scope!</span>")
 		return 0
 	return ..()
 
@@ -258,7 +255,7 @@
 	wielded_item_state = "heavysniper-wielded"
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
-	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	sales_price = 250 //Try selling it and you'll get a killteam though.

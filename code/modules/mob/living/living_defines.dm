@@ -17,8 +17,8 @@
 	//var/halloss = 0   //Hallucination damage. 'Fake' damage obtained through hallucinating or the holodeck. Sleeping should cause it to wear off.
 
 	var/lisp = 0
-	var/staminaloss = 0
-	var/staminaexhaust = 250
+	var/staminaloss = -10 // old value 0
+	var/staminaexhaust = 350 // old value 250
 	var/tongueless = 0
 	var/music_on = 1
 

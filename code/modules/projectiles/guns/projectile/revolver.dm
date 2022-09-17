@@ -14,7 +14,7 @@
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
-	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	sales_price = 30
 
 /obj/item/gun/projectile/revolver/cpt
@@ -31,7 +31,7 @@
 	caliber = "shotgun"
 	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/shotgun
-	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 
 /obj/item/gun/projectile/revolver/cpt/magistrate
 	name = "Commandant's Special"
@@ -77,6 +77,7 @@
 	sales_price = 40
 	accuracy = -2.5
 	fire_delay= 3
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 
 /obj/item/gun/projectile/revolver/detective
 	name = "revolver"
@@ -132,7 +133,7 @@
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
-	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 
 /obj/item/gun/projectile/necros
 	name = "Necros Revolver"
@@ -151,7 +152,7 @@
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
-	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	sales_price = 33
 
 /obj/item/gun/projectile/slugrevolver
@@ -171,7 +172,7 @@
 	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
-	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	sales_price = 37
 
 // Blade Runner pistol.

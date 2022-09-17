@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/shotgun
 	bulletinsert_sound 	= "shotgun_insert"// sound/weapons/guns/interact/shellinsert1.ogg and 2
-	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	parry_sounds = list('sound/weapons/blunt_parry1.ogg', 'sound/weapons/blunt_parry2.ogg', 'sound/weapons/blunt_parry3.ogg')
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	slot_flags = SLOT_BACK|SLOT_S_STORE
