@@ -196,7 +196,7 @@
 // Battle Sister
 
 /datum/job/sisterofbattle
-	title = "Order of the Sacred Rose Sister"
+	title = "Sister of Battle"
 	department = "Ministorum"
 	department_flag = CIV
 	total_positions = 1
