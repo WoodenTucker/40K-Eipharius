@@ -928,7 +928,7 @@ obj/item/clothing/suit/armor
 	desc = "The tattered garb of a penitent sister of battle. The lack of armor is a symbol of their faith on the Repentia's deathmarch towards a glorious end."
 	icon_state = "repentia_chest"
 	item_state = "repentia_chest"
-	armor = list(melee = 85, bullet = 85, laser = 80, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
+	armor = list(melee = 75, bullet = 65, laser = 60, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
 	sales_price = 120
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS

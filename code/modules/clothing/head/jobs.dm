@@ -543,7 +543,7 @@
 	desc = "The gloomy cowl of a penitent sister of battle. It is covered in faded bloodstains and worn at the edges. This one has a purity seal and the mark of the Holy Inquisition."
 	icon_state = "repentia_hood"
 	item_state = "repentia_hood"
-	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
+	armor = list(melee = 45, bullet = 35, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
 	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
 	sales_price = 60
 

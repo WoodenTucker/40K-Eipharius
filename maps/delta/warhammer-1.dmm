@@ -1104,6 +1104,13 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"ep" = (
+/obj/effect/floor_decal/turf/basalt0,
+/mob/living/simple_animal/hostile/smalldemon/chaos{
+	health = 780
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves/dark)
 "es" = (
 /obj/structure/closet/crate{
 	color = "grey"
@@ -2244,7 +2251,9 @@
 /area/cadiaoutpost/oa/caves/dark)
 "iU" = (
 /obj/effect/floor_decal/turf/basalt0,
-/mob/living/simple_animal/hostile/smalldemon/bubblingmass,
+/mob/living/simple_animal/hostile/smalldemon/bubblingmass{
+	health = 990
+	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "iV" = (
@@ -9678,10 +9687,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/habs)
 "Lp" = (
-/obj/effect/floor_decal/turf/basalt0,
-/obj/effect/floor_decal/turf/basalt9,
+/obj/effect/floor_decal/turf/plating,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
-/turf/simulated/floor/dirty/indestructable/mud,
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/caves/dark)
 "Lq" = (
 /obj/effect/floor_decal/turf/plating,
@@ -10195,8 +10205,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "Nf" = (
-/obj/effect/floor_decal/turf/basalt0,
-/obj/effect/floor_decal/turf/basalt9,
+/obj/effect/floor_decal/turf/plating,
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
@@ -12479,6 +12488,10 @@
 /obj/item/clothing/under/rank/principalagent,
 /obj/item/clothing/under/suit_jacket,
 /obj/item/clothing/under/suit_jacket/really_black,
+/obj/item/towel/fleece{
+	desc = "The beloved golden towel of Rogue Trader, woven of smoothiest silk, waiting it's time to wipe the noble body of it's owner.";
+	name = "golden silk towel"
+	},
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/oa/service/habs)
 "Wx" = (
@@ -23577,7 +23590,7 @@ zm
 zZ
 ma
 mI
-CP
+eh
 mI
 ma
 zZ
@@ -24090,9 +24103,9 @@ Ok
 Ok
 zZ
 ma
-Lp
+aM
 CP
-Nf
+Ms
 ma
 zZ
 Ok
@@ -28205,7 +28218,7 @@ CP
 iU
 wX
 CP
-eh
+ep
 CP
 zZ
 zm
@@ -28715,7 +28728,7 @@ zm
 VO
 zZ
 CP
-eh
+CP
 CP
 CP
 CP
@@ -32838,7 +32851,7 @@ zo
 zo
 zo
 op
-op
+ct
 zo
 VO
 VO
@@ -33599,7 +33612,7 @@ zZ
 zZ
 zo
 AJ
-AJ
+Nf
 eR
 fl
 AJ
@@ -33874,7 +33887,7 @@ zo
 VO
 VO
 zo
-op
+ct
 op
 zo
 VO
@@ -34629,7 +34642,7 @@ AJ
 zo
 zo
 AJ
-BF
+Lp
 OJ
 VE
 zo
