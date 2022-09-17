@@ -267,7 +267,7 @@
 	str_requirement = 1
 	force = 2
 	stunforce = 0
-	agonyforce = 85
+	agonyforce = 165
 	status = 1
 	block_chance = 60
 	sales_price = 20
