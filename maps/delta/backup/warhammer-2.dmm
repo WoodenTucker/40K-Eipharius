@@ -10760,7 +10760,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "YN" = (
-/obj/item/gun/projectile/automatic/flamer/handflamer,
+/obj/item/gun/projectile/automatic/flamer,
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/theforest)
 "YP" = (

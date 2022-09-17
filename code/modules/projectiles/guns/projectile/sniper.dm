@@ -11,10 +11,10 @@
 	screen_shake = 2 //extra kickback
 	handle_casings = HOLD_CASINGS
 	load_method = SINGLE_CASING|SINGLE_LOAD
-	max_shells = 1
+	max_shells = 3
 	ammo_type = /obj/item/ammo_casing/a145
 	one_hand_penalty = 50
-	accuracy = -2
+	accuracy = -1
 	scoped_accuracy = 5 //increased accuracy over the LWAP because only one shot //Walker here, i doubt that this does anything, but imma just leave it in.
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded"
@@ -121,7 +121,7 @@
 	force = 15
 	one_hand_penalty = 10
 	fire_delay = 8
-	accuracy = -3
+	accuracy = -2
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -172,7 +172,7 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/bolter
 	one_hand_penalty = 25
-	accuracy = -3
+	accuracy = -1
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
@@ -250,8 +250,8 @@
 	magazine_type = /obj/item/ammo_magazine/exitus
 	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
 	one_hand_penalty = 50
-	accuracy = -5 //Don't shoot it one-handed.
-	scoped_accuracy = 50 //Hit or miss. I guess they never miss, huh?
+	accuracy = -1 //Don't shoot it one-handed.
+	scoped_accuracy = 1 //Hit or miss. I guess they never miss, huh?
 	wielded_item_state = "heavysniper-wielded"
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'

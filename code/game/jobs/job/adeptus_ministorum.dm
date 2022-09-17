@@ -196,7 +196,7 @@
 // Battle Sister
 
 /datum/job/sisterofbattle
-	title = "Sister of Battle"
+	title = "Sister Of Battle"
 	department = "Ministorum"
 	department_flag = CIV
 	total_positions = 1
@@ -210,8 +210,8 @@
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
 	alt_titles = list(
 	"Sister Repentia" = /decl/hierarchy/outfit/job/sisterofbattle/repentia,
-	"Order of the Bloody Rose Sister" = /decl/hierarchy/outfit/job/sisterofbattle/brsister,
-	"Order of Our Martyred Lady Sister" = /decl/hierarchy/outfit/job/sisterofbattle/mlsister,
+	"Order of the Bloody Rose" = /decl/hierarchy/outfit/job/sisterofbattle/brsister,
+	"Order of Our Martyred Lady" = /decl/hierarchy/outfit/job/sisterofbattle/mlsister,
 		)
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
@@ -226,7 +226,7 @@
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(rand(18,22), rand(18,22), rand(18,22), 16)
+		H.add_stats(rand(18,22), rand(18,20), rand(18,20), 13)
 		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.get_equipped_item(slot_s_store)
@@ -250,8 +250,7 @@
 		/mob/living/carbon/human/proc/sobweservants,
 		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastarium. You serve both the Inquisition and Ministorum directly, but whom you truly serve above all other is the God Emperor of man who stands above all. Before you came to this planet you were disgraced, but given the opportunity to redeem yourself through your hatred and zeal.Suffer not the heretic, the alien, or the mutant. Your path to redemption will be soaked with their blood.</font></b></span>")
-
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all. Once you were a Sister Repentia, who through incredible miracles and valor achieved rank once again within the Order, revered as a tale for years among your peers as a war hero made pure by the Emperor's embrace.</font></b></span>")
 
 //SOB outfits
 
@@ -289,7 +288,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/melee/chain/pcsword/eviscerator
+	l_hand = /obj/item/melee/chain/mercycs
 	r_hand = /obj/item/gun/projectile/automatic/flamer
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
@@ -300,7 +299,7 @@
 
 
 /decl/hierarchy/outfit/job/sisterofbattle/mlsister
-	name = OUTFIT_JOB_NAME("Order of Our Martyred Lady Sister")
+	name = OUTFIT_JOB_NAME("Order of Our Martyred Lady")
 	head = /obj/item/clothing/head/helmet/sisterofbattle/mlsister
 	l_ear = /obj/item/device/radio/headset/heads/cmo
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -312,10 +311,10 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/gun/projectile/automatic/flamer
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
-	/obj/item/ammo_magazine/flamer = 1,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
@@ -323,7 +322,7 @@
 	)
 
 /decl/hierarchy/outfit/job/sisterofbattle/brsister
-	name = OUTFIT_JOB_NAME("Order of the Bloody Rose Sister")
+	name = OUTFIT_JOB_NAME("Order of the Bloody Rose")
 	head = /obj/item/clothing/head/helmet/sisterofbattle/brsister
 	l_ear = /obj/item/device/radio/headset/heads/cmo
 	neck = /obj/item/reagent_containers/food/drinks/canteen

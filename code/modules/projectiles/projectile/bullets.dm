@@ -555,14 +555,14 @@
 /obj/item/projectile/bullet/rifle/lascannon/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 180
+	damage = 220
 	damage_type = BURN
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 260
+	damage = 290
 	damage_type = BURN
 	penetration_modifier = 2
 
@@ -586,7 +586,7 @@
 	icon_state = "ion"
 	damage = 80
 	damage_type = BRUTE
-	armor_penetration = 60
+	armor_penetration = 30
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/galvanic/fire
@@ -594,14 +594,14 @@
 	icon_state = "ion"
 	damage = 40
 	damage_type = BRUTE
-	armor_penetration = 60
+	armor_penetration = 30
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
-			H.adjust_fire_stacks(50)
+			H.adjust_fire_stacks(20)
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
 		if(H.isChild())
@@ -640,14 +640,12 @@
 	damage = 260 //Admin only spawn for now.
 	damage_type = BRUTE
 	check_armour = "bullet"
-	armor_penetration = 100
+	armor_penetration = 40
 	embed = 1
 	sharp = 1
 	light_power = 0 
-	can_miss = 0
-	speed = 0.001
 	light_range = 0
-	penetration_modifier = 5
+	penetration_modifier = 1
 	penetrating = 200
 
 /obj/item/projectile/bullet/rifle/exitus/explosive
@@ -668,12 +666,12 @@
 /obj/item/projectile/bullet/rifle/exitus/fire
 
 /obj/item/projectile/bullet/rifle/exitus/fire/on_hit(var/atom/target)
-	damage = 50 //Admin only spawn for now.
+	damage = 40 //Admin only spawn for now.
 	damage_type = BURN
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
-			H.adjust_fire_stacks(80)
+			H.adjust_fire_stacks(60)
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 15, 14, "red", 1)
 		if(H.isChild())
