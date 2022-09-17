@@ -1,5 +1,5 @@
-
-/obj/item/gun/projectile/automatic/flamer/handflamer
+/*
+/obj/item/gun/projectile/automatic/flamer/hand // USE /obj/item/gun/projectile/automatic/flamer INSTEAD!
 	name = "Mk.1 hand flamer"
 	desc = "An incredibly small hand-held flamethrower often used by the inquisition and the sisters."
 	icon_state = "flamer"
@@ -29,7 +29,7 @@
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
-
+*/
 
 /obj/item/gun/projectile/colt
 	name = "vintage .45 pistol"

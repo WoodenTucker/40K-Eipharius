@@ -167,9 +167,9 @@
 	item_path = /obj/item/gun/projectile/meltagun
 
 /datum/cargo_entry/weapon/flamer
-	name = "Hand Flamer"
+	name = "Flamer"
 	cost = 103
-	item_path = /obj/item/gun/projectile/automatic/flamer/handflamer
+	item_path = /obj/item/gun/projectile/automatic/flamer
 
 /datum/cargo_entry/weapon/cadlaspistol
 	name = "Cadian Laspistol"
