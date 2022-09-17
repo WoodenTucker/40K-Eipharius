@@ -9,11 +9,11 @@
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
-	fire_sound = "brifle"
 	caliber = "763"
 	ammo_type = /obj/item/ammo_casing/brifle
 	one_hand_penalty = 10
 	empty_icon = "boltaction-e"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	far_fire_sound = "sniper_fire"
 	move_delay = 3
 	one_hand_penalty = 3
@@ -126,6 +126,7 @@
 	one_hand_penalty = 50
 	accuracy = -1.5
 	gun_type = GUN_SNIPER
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
 	sales_price = 43
@@ -225,7 +226,7 @@
 	icon_state = "brushgun"
 	item_state = "leverchester"
 	wielded_item_state = "leverchester-wielded"
-	fire_sound = 'sound/weapons/guns/fire/la_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	bulletinsert_sound = 'sound/weapons/guns/interact/la_insert.ogg'
 	pumpsound = 'sound/weapons/guns/interact/la_cock.ogg'
 	backsound = 'sound/weapons/guns/interact/la_back.ogg'
@@ -275,25 +276,25 @@
 	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/ms/two/
 
 /obj/item/projectile/bullet/rifle/a762/brifle
-	fire_sound = "brifle"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE
 	damage = 65
 	armor_penetration = 10
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ap
-	fire_sound = "brifle"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 68
 	armor_penetration = 20
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ms
-	fire_sound = "brifle"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 75
 	armor_penetration = -10
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/kroot
-	fire_sound = "brifle"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE // fuck that shit penetrative rounds
 	damage = 70
 	armor_penetration = 20
@@ -493,7 +494,7 @@
 	icon_state = "battlerifle"
 	item_state = "rsc"
 	wielded_item_state = "rsc-wielded"
-	fire_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	unload_sound = 'sound/weapons/guns/interact/arm_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/arm_magin.ogg'
 	cock_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
@@ -550,7 +551,7 @@
 	magazine_type = /obj/item/ammo_magazine/c45rifle/combatrifle
 	allowed_magazines = /obj/item/ammo_magazine/c45rifle/combatrifle
 	wielded_item_state = "combatrifle-wielded"
-	fire_sound = 'sound/weapons/guns/fire/combatrifle_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	unload_sound = 'sound/weapons/guns/interact/combatrifle_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/combatrifle_magin.ogg'
 	cock_sound = 'sound/weapons/guns/interact/combatrifle_cock.ogg'
@@ -664,7 +665,7 @@
 	fire_delay = 1.5
 	sales_price = 0
 
-	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
 	magazine_type = /obj/item/ammo_magazine/mc9mmt/machinepistol
 	allowed_magazines = /obj/item/ammo_magazine/mc9mmt/machinepistol
@@ -716,7 +717,7 @@
 	caliber = "a556"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	move_delay = 2.5
 	one_hand_penalty = 4.5
 	accuracy = -2.7
@@ -749,7 +750,7 @@ obj/item/gun/projectile/automatic/messina
 	caliber = "a556"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	move_delay = 2.5
 	one_hand_penalty = 4
 	accuracy = -2.8
@@ -782,7 +783,7 @@ obj/item/gun/projectile/automatic/autogun
 	caliber = "a556"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
-	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	move_delay = 2.3
 	one_hand_penalty = 5
 	accuracy = -2.7
@@ -815,7 +816,7 @@ obj/item/gun/projectile/automatic/autogun
 	w_class = ITEM_SIZE_HUGE
 	unloaded_icon = "kriegstubber-e" // Object Icon
 	loaded_icon = "kriegstubber" // Object Icon
-	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	move_delay = 2.6
 	one_hand_penalty = 5
 	accuracy = -2.2
@@ -892,7 +893,7 @@ obj/item/gun/projectile/automatic/autogun
 	magazine_type = /obj/item/ammo_magazine/autoshotty
 	allowed_magazines = /obj/item/ammo_magazine/autoshotty
 	caliber = "shotgun"
-	fire_sound = 'sound/weapons/guns/fire/autoshotty_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
 	reload_sound = 'sound/weapons/guns/interact/autoshotty_magin.ogg'
 	unload_sound = 'sound/weapons/guns/interact/autoshotty_magout.ogg'
@@ -933,7 +934,7 @@ obj/item/gun/projectile/automatic/autogun
 	item_state = "handgun"
 	loaded_icon = "villiers"
 	unloaded_icon = "villiers-e"
-	fire_sound = "gunshot"//Pistol sounds.
+	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 	desc = "A rare slug pistol of excellent quality and design."
 	magazine_type = /obj/item/ammo_magazine/c45m/warfare
 	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
@@ -1008,7 +1009,7 @@ obj/item/gun/projectile/automatic/autogun
 	magazine_type = /obj/item/ammo_magazine/box/a556/mg08
 	allowed_magazines = /obj/item/ammo_magazine/box/a556/mg08
 	wielded_item_state = "hmg-wielded"
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
@@ -1089,7 +1090,7 @@ obj/item/gun/projectile/automatic/autogun
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/kp, /obj/item/ammo_magazine/bolt_rifle_magazine/ms)
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
@@ -1179,7 +1180,7 @@ obj/item/gun/projectile/automatic/autogun
 	one_hand_penalty = 10 //its a bolter not a toy gun
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
@@ -1243,7 +1244,7 @@ obj/item/gun/projectile/automatic/autogun
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
 	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	one_hand_penalty = 10 //its still a bolter bro...
-	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
@@ -1284,7 +1285,7 @@ obj/item/gun/projectile/automatic/autogun
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
 	wielded_item_state = "krootrifle-wielded"
-	fire_sound = "brifle"
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	caliber = "640" //its basically a musket ball
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	one_hand_penalty = 7
@@ -1311,7 +1312,7 @@ obj/item/gun/projectile/automatic/autogun
 	icon_state = "krootrifle"
 	item_state = "krootrifle"
 	wielded_item_state = "krootrifle-wielded"
-	fire_sound = 'sound/weapons/guns/fire/la_fire.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	bulletinsert_sound = 'sound/weapons/guns/interact/la_insert.ogg'
 	pumpsound = 'sound/weapons/guns/interact/la_cock.ogg'
 	backsound = 'sound/weapons/guns/interact/la_back.ogg'
@@ -1358,6 +1359,7 @@ obj/item/gun/projectile/automatic/autogun
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/ork/shoota
 	allowed_magazines = list(/obj/item/ammo_magazine/ork/shoota)
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 3
 	burst = 3
@@ -1487,12 +1489,11 @@ obj/item/gun/projectile/automatic/autogun
 /obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
-	icon = 'icons/obj/weapons/gun/energy.dmi'
-	icon_state = "snipermusket" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)
+	icon_state = "galvrifle" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)
 	item_state = "musket" // ON MOB (This uses a different on-mob to wielded due to sniper musket not having a one handed icon)
-	loaded_icon = "snipermusket" // OBJ
-	unloaded_icon = "snipermusket" // OBJ
-	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
+	loaded_icon = "galvrifle" // OBJ
+	unloaded_icon = "galvrifle" // OBJ
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	wielded_item_state = "las_musket"
 	unwielded_loaded_icon = "musket"
 	wielded_loaded_icon = "las_musket"
@@ -1522,7 +1523,7 @@ obj/item/gun/projectile/automatic/autogun
 	unloaded_icon = "laer"
 	item_state = "emitter_carbine"
 	wielded_item_state = "emitter_carbine"
-	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	unwielded_loaded_icon = "emitter_carbine"
 	wielded_loaded_icon = "emitter_carbine"
 	unwielded_unloaded_icon = "emitter_carbine_e"
@@ -1548,7 +1549,7 @@ obj/item/gun/projectile/automatic/autogun
 	icon_state = "teslar"
 	item_state = "pulse_pistol"
 	wielded_item_state = "pulse_pistol"
-	fire_sound = 'sound/weapons/gunshot/gunshot_arifle.ogg'
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	loaded_icon = "teslar"
 	unwielded_loaded_icon = "pulse_pistol"
 	wielded_loaded_icon = "pulse_pistol"

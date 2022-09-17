@@ -37,7 +37,7 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		visible_message("[user] hits the rock wall with [O]!")
 		integrity -= rand(20,60)
-		user.adjustStaminaLoss(5)
+		//user.adjustStaminaLoss(5)
 		playsound(src, 'sound/items/pickaxe3.ogg', 100, 1, 1)
 		return
 	else if(istype(O,/obj/item/pickaxe))
@@ -85,7 +85,7 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 		playsound(src,'sound/items/pickaxe3.ogg', 100, 1, 1)
 		visible_message(crumbling_message)
-		user.adjustStaminaLoss(5)
+		//user.adjustStaminaLoss(5)
 		if(ore_inside)
 			new ore_inside(src)
 		if(rock)
