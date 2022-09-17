@@ -1276,7 +1276,7 @@
 "rKE" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/effect/floor_decal/newcorner/white{dir = 4},/obj/structure/table/rack,/obj/item/storage/box/bodybags,/obj/item/storage/box/bodybags,/obj/item/storage/box/bodybags,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/oa/engineering)
 "rKO" = (/obj/structure/table/rack/dark,/obj/item/stack/material/steel/fifty,/obj/item/stack/material/wood/fifty,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/security)
 "rNP" = (/obj/machinery/power/debug_items/infinite_generator,/obj/structure/cable/orange{icon_state = "0-8"},/turf/simulated/floor,/area/cadiaoutpost/oa/engineering)
-"rPb" = (/obj/structure/table/steel,/obj/item/paper_bin,/obj/item/pen,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"rPb" = (/obj/structure/table/steel,/obj/item/paper_bin,/obj/item/pen,/obj/effect/floor_decal/turf/metal/five,/obj/item/stamp/granted,/obj/item/stamp/denied,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "rPe" = (/obj/item/metal_shiv{force = 15; sharp = 1; weapon_speed_delay = 4},/turf/simulated/floor/stone,/area/cadiaoutpost/oa/villageinside)
 "rPH" = (/obj/effect/floor_decal/newcorner/blue/solid,/obj/structure/closet/wardrobe/virology_white,/obj/effect/floor_decal/turf/metal/six,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/medicae)
 "rQi" = (/obj/structure/warfare/barricade/concrete_barrier{dir = 4},/obj/structure/warfare/barricade/concrete_barrier,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)

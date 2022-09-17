@@ -43,6 +43,10 @@
 	name = "\improper DENIED rubber stamp"
 	icon_state = "stamp-deny"
 
+/obj/item/stamp/granted
+	name = "\improper GRANTED rubber stamp"
+	icon_state = "stamp-ok"
+
 /obj/item/stamp/clown
 	name = "clown's rubber stamp"
 	icon_state = "stamp-clown"
