@@ -230,6 +230,7 @@
 	name = "Order of the Sacred Rose Powerpack"
 	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
 	icon_state = "sister"
+	item_state = "sister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 0
 
@@ -237,6 +238,7 @@
 	name = "Order of Our Martyred Lady Powerpack"
 	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of Our Martyred Lady.</i>"
 	icon_state = "mlsister"
+	item_state = "mlsister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 0
 
@@ -245,6 +247,7 @@
 	name = "Order of the Bloody Rose Powerback"
 	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of the Bloody Rose.</i>"
 	icon_state = "brsister"
+	item_state = "brsister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 0
 

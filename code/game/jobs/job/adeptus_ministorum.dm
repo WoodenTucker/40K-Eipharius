@@ -290,7 +290,7 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/melee/chain/pcsword/eviscerator
-	r_hand = /obj/item/gun/projectile/automatic/flamer/handflamer
+	r_hand = /obj/item/gun/projectile/automatic/flamer
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
@@ -312,9 +312,10 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/melee/chain/inqcs
+	r_hand = /obj/item/gun/projectile/automatic/flamer
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
+	/obj/item/ammo_magazine/flamer = 1,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
