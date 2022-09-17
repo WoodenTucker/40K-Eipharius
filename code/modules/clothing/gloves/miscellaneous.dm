@@ -101,7 +101,7 @@
 	item_state = "techpriest"
 	unacidable = 1
 	item_flags = ITEM_FLAG_NODROP
-		
+
 /obj/item/clothing/gloves/latex
 	name = "latex gloves"
 	desc = "Sterile latex gloves."
@@ -198,6 +198,32 @@
 	desc = "Gauntlets of the Adepta Sororitas's Order Of Sacred Rose Battle Sisters, Part of their Power Armour System."
 	icon_state = "sister"
 	item_state = "sister"
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	canremove = 1
+	species_restricted = list(SPECIES_HUMAN)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/sisterofbattle/mlsister
+	name = "Order of Our Martyred Lady Power Gauntlets"
+	desc = "Gauntlets of a sister belonging to The Order of Our Martyred Lady. Part of their Power Armour System."
+	icon_state = "mlsister"
+	item_state = "mlsister"
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	canremove = 1
+	species_restricted = list(SPECIES_HUMAN)
+	cold_protection = HANDS
+	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
+	heat_protection = HANDS
+	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/sisterofbattle/brsister
+	name = "Order of the Bloody Rose Power Gauntlets"
+	desc = "Gauntlets of a sister belonging to The Order of the Sacred Rose. Part of their power armor system."
+	icon_state = "brsister"
+	item_state = "brsister"
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
