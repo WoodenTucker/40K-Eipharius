@@ -208,3 +208,13 @@
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
 	species_restricted = list(SPECIES_HUMAN)
+
+
+/obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
+	name = "Faith of the Repentia"
+	desc = "When there is no armor to defend from heretics, the Emperor protects."
+	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
+	icon_state = "repentia_nude"
+	worn_state = "repentia_nude"
+	siemens_coefficient = 0.9
+	species_restricted = list(SPECIES_HUMAN)

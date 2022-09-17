@@ -233,6 +233,21 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 0
 
+/obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
+	name = "Order of Our Martyred Lady Powerpack"
+	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of Our Martyred Lady.</i>"
+	icon_state = "mlsister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	canremove = 0
+
+
+/obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
+	name = "Order of the Bloody Rose Powerback"
+	desc = "A Powerpack for the consecrated power armor of the Adeptas Sororitas. It has the colors of the Order of the Bloody Rose.</i>"
+	icon_state = "brsister"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	canremove = 0
+
 /obj/item/storage/backpack/satchel/astartes
 	name = "Astartes Mark VII Powerpack"
 	desc = "Standard powerpack, issued to Adeptus Astartes to store their belongings."

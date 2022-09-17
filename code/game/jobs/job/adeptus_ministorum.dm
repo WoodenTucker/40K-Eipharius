@@ -196,7 +196,7 @@
 // Battle Sister
 
 /datum/job/sisterofbattle
-	title = "Sister Of Battle"
+	title = "Order of the Sacred Rose Sister"
 	department = "Ministorum"
 	department_flag = CIV
 	total_positions = 1
@@ -208,6 +208,11 @@
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
+	alt_titles = list(
+	"Sister Repentia" = /decl/hierarchy/outfit/job/sisterofbattle/repentia,
+	"Order of the Bloody Rose Sister" = /decl/hierarchy/outfit/job/sisterofbattle/brsister,
+	"Order of Our Martyred Lady Sister" = /decl/hierarchy/outfit/job/sisterofbattle/mlsister,
+		)
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
 	sniper_skill = 10
@@ -245,10 +250,10 @@
 		/mob/living/carbon/human/proc/sobweservants,
 		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all. Once you were a Sister Repentia, who through incredible miracles and valor achieved rank once again within the Order, revered as a tale for years among your peers as a war hero made pure by the Emperor's embrace.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastarium. You serve both the Inquisition and Ministorum directly, but whom you truly serve above all other is the God Emperor of man who stands above all. Before you came to this planet you were disgraced, but given the opportunity to redeem yourself through your hatred and zeal.Suffer not the heretic, the alien, or the mutant. Your path to redemption will be soaked with their blood.</font></b></span>")
 
 
-//outfit
+//SOB outfits
 
 /decl/hierarchy/outfit/job/sisterofbattle
 	name = OUTFIT_JOB_NAME("Sister of Battle")
@@ -272,6 +277,74 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 2
 	)
+
+/decl/hierarchy/outfit/job/sisterofbattle/repentia
+	name = OUTFIT_JOB_NAME("Sister Repentia")
+	head = /obj/item/clothing/head/helmet/sisterofbattle/repentia
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/repentia
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/melee/chain/pcsword/eviscerator
+	r_hand = /obj/item/gun/projectile/automatic/flamer/handflamer
+	backpack_contents = list(
+	/obj/item/ammo_magazine/flamer = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	)
+
+
+/decl/hierarchy/outfit/job/sisterofbattle/mlsister
+	name = OUTFIT_JOB_NAME("Order of Our Martyred Lady Sister")
+	head = /obj/item/clothing/head/helmet/sisterofbattle/mlsister
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/mlsister
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
+	gloves = /obj/item/clothing/gloves/sisterofbattle/mlsister
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/melee/chain/inqcs
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones3/ten = 2
+	)
+
+/decl/hierarchy/outfit/job/sisterofbattle/brsister
+	name = OUTFIT_JOB_NAME("Order of the Bloody Rose Sister")
+	head = /obj/item/clothing/head/helmet/sisterofbattle/brsister
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/brsister
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
+	gloves = /obj/item/clothing/gloves/sisterofbattle/brsister
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/melee/chain/inqcs
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones3/ten = 2
+	)
+
+//
+
 
 /decl/hierarchy/outfit/job/progena
 	name = OUTFIT_JOB_NAME("Progena")

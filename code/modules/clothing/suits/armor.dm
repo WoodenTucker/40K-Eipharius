@@ -481,19 +481,19 @@ obj/item/clothing/suit/armor
 	icon_state = "Judge"
 	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer 
+/obj/item/clothing/suit/armor/enforcer
 	name = "Patrol Jacket"
 	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
 	icon_state = "towntrench_medium"
 	item_state = "towntrench_medium"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -907,9 +907,60 @@ obj/item/clothing/suit/armor
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle
 	name = "Order of the Sacred Rose Power Armor"
-	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It illuminates the field with it glorious light, Being near it make you feels safer and secured."
 	icon_state = "sister"
 	item_state = "sister"
+	armor = list(melee = 85, bullet = 85, laser = 80, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
+	sales_price = 120
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 1
+	species_restricted = list(SPECIES_HUMAN)
+/obj/item/clothing/suit/sisterofbattle/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.5
+
+/obj/item/clothing/suit/sisterofbattle/repentia
+	name = "Garb of the Repentia"
+	desc = "The tattered garb of a penitent sister of battle. The lack of armor is a symbol of their faith on the Repentia's deathmarch towards a glorious end."
+	icon_state = "repentia_chest"
+	item_state = "repentia_chest"
+	armor = list(melee = 85, bullet = 85, laser = 80, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
+	sales_price = 120
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 1
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/suit/sisterofbattle/mlsister
+	name = "Order of Our Martyred Lady Power Armor"
+	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of Our Martyred Lady. Being near it make you feels safer and secured."
+	icon_state = "mlsister"
+	item_state = "mlsister"
+	armor = list(melee = 85, bullet = 85, laser = 80, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
+	sales_price = 120
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
+	flags_inv = HIDEJUMPSUIT
+	canremove = 1
+	species_restricted = list(SPECIES_HUMAN)
+/obj/item/clothing/suit/sisterofbattle/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -0.5
+
+/obj/item/clothing/suit/sisterofbattle/brsister
+	name = "Order of the Bloody Rose Power Armor"
+	desc = "The blood red power armor of The Order of the Bloody Rose."
+	icon_state = "brsister"
+	item_state = "brsister"
 	armor = list(melee = 85, bullet = 85, laser = 80, energy = 90, bomb = 60, bio = 100, rad = 100) //its essentially light powerarmor, a bit weaker than assfartez.
 	sales_price = 120
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
@@ -1225,7 +1276,7 @@ obj/item/clothing/suit/armor
 	sales_price = 10
 
 /obj/item/clothing/suit/armor/seolsuit
-	name = "Seolite Anomaly Suit" 
+	name = "Seolite Anomaly Suit"
 	desc = "Forged by the strange xenos of this barren ice-world, it seeems to have an advanced protective field wrapping around it."
 	icon_state = "spacer"
 	item_state = "spacer"
@@ -1499,7 +1550,7 @@ obj/item/clothing/suit/armor
 // admeme only
 
 /obj/item/clothing/suit/armor/ogryn1 // only give this to ogryns. it cannot be removed and has head protection.
-	name = "Ogryn Armor" 
+	name = "Ogryn Armor"
 	desc = "Protects ya stomach from dem flashie stingy things."
 	icon_state = "ogryn1"
 	item_state = "ogryn1"

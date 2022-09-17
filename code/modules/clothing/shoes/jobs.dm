@@ -332,6 +332,45 @@
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
 
+/obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
+	name = "Sandals of the Repentia"
+	desc = "Worn sandals given Sisters Repentia</i>"
+	icon_state = "roman"
+	item_state = "roman"
+	siemens_coefficient = 1
+	can_hold_knife = 1
+	canremove = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
+	name = "Order of Our Martyred Lady Power Boots"
+	desc = "A pair of Power Boots issued to the sisters of the Order Of Our Martyred Lady of the Adepta Sororitas.</i>"
+	icon_state = "mlsister"
+	item_state = "mlsister"
+	siemens_coefficient = 1
+	can_hold_knife = 1
+	canremove = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	species_restricted = list(SPECIES_HUMAN)
+
+/obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
+	name = "Order of the Bloody Rose Power Boots"
+	desc = "A pair of Power Boots issued to the sisters of the Order Of Our Martyred Lady of the Adepta Sororitas.</i>"
+	icon_state = "brsister"
+	item_state = "brsister"
+	siemens_coefficient = 1
+	can_hold_knife = 1
+	canremove = 1
+	unacidable = 1
+	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	species_restricted = list(SPECIES_HUMAN)
+
 //Eldar Stuff
 
 /obj/item/clothing/shoes/eldar
