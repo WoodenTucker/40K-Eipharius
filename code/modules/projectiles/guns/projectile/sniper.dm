@@ -121,7 +121,7 @@
 	force = 15
 	one_hand_penalty = 10
 	fire_delay = 8
-	accuracy = -2
+	accuracy = 0
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -172,7 +172,7 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/bolter
 	one_hand_penalty = 25
-	accuracy = -1
+	accuracy = 1
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
@@ -250,7 +250,7 @@
 	magazine_type = /obj/item/ammo_magazine/exitus
 	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
 	one_hand_penalty = 50
-	accuracy = -1 //Don't shoot it one-handed.
+	accuracy = 0 //Don't shoot it one-handed.
 	scoped_accuracy = 50 //Hit or miss. I guess they never miss, huh? //Due to the way accuracy works, I know this seems incredibly high, but it's actually needed for long range shots to have any reasonable chance of a hit.
 	wielded_item_state = "heavysniper-wielded"
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
