@@ -455,3 +455,13 @@
 	item_state = "doom"
 	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 40, bio = 50, rad = 30)
 	sales_price = 10
+	
+/obj/item/clothing/head/helmet/vindicare
+	name = "Vindicare helmet"
+	desc = "The menacing helm of a Vindicare."
+	icon_state = "s-ninja"
+	armor = list(melee = 15, bullet = 80, laser = 80, energy = 80, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
+	siemens_coefficient = 0
+	can_remove = 0
+	flags_inv = HIDEEARS|BLOCKHAIR
+	sales_price = 8
