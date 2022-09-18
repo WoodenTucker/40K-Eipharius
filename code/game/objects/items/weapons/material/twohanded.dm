@@ -73,6 +73,7 @@
  * Fireaxe
  */
 /obj/item/material/twohanded/fireaxe  // DEM AXES MAN, marker -Agouri
+	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "fireaxe0"
 	base_icon = "fireaxe"
 	name = "fire axe"
