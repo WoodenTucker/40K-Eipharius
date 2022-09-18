@@ -251,7 +251,7 @@
 	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
 	one_hand_penalty = 50
 	accuracy = -1 //Don't shoot it one-handed.
-	scoped_accuracy = 1 //Hit or miss. I guess they never miss, huh?
+	scoped_accuracy = 50 //Hit or miss. I guess they never miss, huh? //Due to the way accuracy works, I know this seems incredibly high, but it's actually needed for long range shots to have any reasonable chance of a hit.
 	wielded_item_state = "heavysniper-wielded"
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
 	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
@@ -272,5 +272,5 @@
 	set name = "Use Scope"
 	set popup_menu = 1
 
-	toggle_scope(usr, 3)
+	toggle_scope(usr, 4)
 	

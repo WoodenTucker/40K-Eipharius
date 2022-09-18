@@ -633,3 +633,22 @@
 /obj/item/clothing/glasses/cadian/New()
 	..()
 	overlay = GLOB.global_hud.nvg
+
+/obj/item/clothing/glasses/vindicare
+	name = "Vindicare Visor"
+	desc = "The peak of vision augmentation techology, these goggles are permanently bonded to the user's eyes."
+	icon_state = "thermal"
+	canremove = 0
+	darkness_view = 100
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	item_state = "thermal"
+	body_parts_covered = EYES
+	siemens_coefficient = 0
+	flash_protection = FLASH_PROTECTION_MAJOR
+	unacidable = 1
+	sales_price = 40
+	var/view_range = 10 //They can see further normally
+	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
+
+/obj/item/clothing/glasses/vindicare/process_hud(var/mob/M)
+	process_med_hud(M, 1)
