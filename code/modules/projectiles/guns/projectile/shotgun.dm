@@ -41,7 +41,7 @@
 	gun_type = GUN_SHOTGUN
 	move_delay= 2.6 
 	one_hand_penalty = 4
-	accuracy = -0.5
+	accuracy = 0
 	fire_delay= 3
 	armor_penetration = 1 //melee???
 	sales_price = 20
@@ -155,7 +155,7 @@
 	wielded_item_state = "cshotgun2"
 	move_delay= 2 //slowdown removed because... its literally supposed to be for fast combat and trench taking
 	one_hand_penalty = 5
-	accuracy = -1
+	accuracy = 0
 	fire_delay= 3
 	armor_penetration = 5
 	sales_price = 22
@@ -297,7 +297,7 @@
 	block_chance = 40 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = -1
+	accuracy = 2
 	fire_delay= 20
 	sales_price = 159
 
