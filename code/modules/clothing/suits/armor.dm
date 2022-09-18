@@ -1589,3 +1589,16 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/shadowbeast/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = -1
+
+/obj/item/clothing/suit/armor/vindicare
+	name = "Vindicare armour"
+	desc = "The armoured bodysuit of a Vindicare assassin."
+	armor = list(melee = 20, bullet = 95, laser = 95, energy = 95, bomb = 20, bio = 100, rad = 100)//Beefy boys.
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	str_requirement = 18
+	sales_price = 250
+/obj/item/clothing/suit/armor/vindicare/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = -1.5
