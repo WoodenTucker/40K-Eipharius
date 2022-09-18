@@ -647,15 +647,8 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	unacidable = 1
 	sales_price = 40
-	view_range = 10 //They can see further normally
+	var/view_range = 10 //They can see further normally
+	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
 
 /obj/item/clothing/glasses/vindicare/process_hud(var/mob/M)
 	process_med_hud(M, 1)
-
-/obj/item/clothing/glasses/vindicare/New()
-	..()
-	overlay = GLOB.global_hud.meson
-
-/obj/item/clothing/glasses/vindicare/New()
-	..()
-	overlay = GLOB.global_hud.thermal
