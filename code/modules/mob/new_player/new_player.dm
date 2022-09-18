@@ -642,16 +642,16 @@ mob/new_player/MayRespawn()
 	show_new_information()
 
 /mob/new_player/proc/show_new_information()
-	var/dat = {"<h2>Grimdark 13</h2>
-Hello! It appears you are new here! Thanks for joining Grimdark 13. We recommend that if you are new to the Grimdark of 40k to do a deep dive into the lore of 40k.
+	var/dat = {"<h2>Forge-World Eipharius</h2>
+Hello! It appears you are new here! Thanks for joining Forge-World Eipharius. We recommend that if you are new to the Grimdark setting of 40k to read on the Lexicanum (lore wiki) or find some lore video on Youtube.
 <h3>Discord Link</h3>
 <font size='4'><a href=\"https://discord.gg/xthVK85W3M\">Discord</a></font>
 <h3>Wiki Link</h3>
-<font size='4'><a href=\"http://is12wiki.xyz/index.php/Main_Page\">Wiki</a></font>
+<font size='4'><a href=\"https://wiki-40k.herokuapp.com/index.php?title=Main_Page\">Wiki</a></font>
 <h3>Lexicanum</h3>
 <font size='4'><a href=\"https://wh40k.lexicanum.com/wiki/Portal:Imperium\">Wiki</a></font>
 <h3>Server Summary</h3>
-Grimdark 13 is a Warhammer 40k SS13 server running a modified version of the IS12 codebase. 
+Forge-World Eipharius is a Warhammer 40k SS13 server running a modified version of the IS12 codebase. IS12 is a modified version of old Baystation. Things from their wikis may or may not apply here.
 <h3>Some Notes</h3>
 Controls are ingame under the \"view controls\" button in OOC.
 <h3>Enjoy your stay!</h3>"}
