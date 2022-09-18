@@ -1519,8 +1519,8 @@ obj/item/gun/projectile/automatic/autogun
 	desc = "A deadly and highly dangerous personal weapon that are used exclusively by the forces of the Skitarii Legions of the Adeptus Mechanicus. It fires highly radioactive rounds."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "emitter_carbine"
-	loaded_icon = "laer"
-	unloaded_icon = "laer"
+	loaded_icon = "emitter_carbine"
+	unloaded_icon = "emitter_carbine_e"
 	item_state = "emitter_carbine"
 	wielded_item_state = "emitter_carbine"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
