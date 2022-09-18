@@ -462,6 +462,6 @@
 	icon_state = "s-ninja"
 	armor = list(melee = 15, bullet = 80, laser = 80, energy = 80, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
 	siemens_coefficient = 0
-	can_remove = 0
+	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
 	sales_price = 8
