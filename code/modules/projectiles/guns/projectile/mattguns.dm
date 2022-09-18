@@ -1522,12 +1522,12 @@ obj/item/gun/projectile/automatic/autogun
 	loaded_icon = "emitter_carbine"
 	unloaded_icon = "emitter_carbine_e"
 	item_state = "emitter_carbine"
-	wielded_item_state = "emitter_carbine"
+	wielded_item_state = "laer"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	unwielded_loaded_icon = "emitter_carbine"
-	wielded_loaded_icon = "emitter_carbine"
+	wielded_loaded_icon = "laer"
 	unwielded_unloaded_icon = "emitter_carbine_e"
-	wielded_unloaded_icon = "emitter_carbine_e"
+	wielded_unloaded_icon = "laer"
 	caliber = "rad"
 	max_shells = 30
 	str_requirement = 11
