@@ -1598,6 +1598,8 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	str_requirement = 18
+	canremove = 0
+	siemens_coefficient = 0
 	sales_price = 250
 /obj/item/clothing/suit/armor/vindicare/New()
 	..()
