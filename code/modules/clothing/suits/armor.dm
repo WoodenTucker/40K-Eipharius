@@ -1593,7 +1593,9 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/vindicare
 	name = "Vindicare armour"
 	desc = "The armoured bodysuit of a Vindicare assassin."
-	armor = list(melee = 20, bullet = 95, laser = 95, energy = 95, bomb = 20, bio = 100, rad = 100)//Beefy boys.
+	armor = list(melee = 20, bullet = 95, laser = 95, energy = 95, bomb = 20, bio = 100, rad = 100)
+	icon_state = "s-ninja"
+	item_state = "s-ninja"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
