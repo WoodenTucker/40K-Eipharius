@@ -51,6 +51,30 @@
 
 
 
+/datum/shuttle/autodock/ferry/cargo
+	name = "Cargo1"
+	warmup_time = 10
+	waypoint_station = "cargo_start"
+	waypoint_offsite = "cargo_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/cargo1
+
+/obj/effect/shuttle_landmark/ferry/cargo_end
+	name = "PlanetCargo"
+	landmark_tag = "cargo_end"
+	base_area = /area/cadiaoutpost/oa/shuttle/cargo2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/cargo_start
+	name = "MoonCargo"
+	landmark_tag = "cargo_start"
+	base_area = /area/cadiaoutpost/oa/shuttle/cargo2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/cargo
+	name = "Cargo Elevator Console"
+	shuttle_tag = "Cargo1"
+
+
 
 
 

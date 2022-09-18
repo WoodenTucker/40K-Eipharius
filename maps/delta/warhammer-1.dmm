@@ -5340,7 +5340,8 @@
 /obj/effect/floor_decal/turf/basalt0,
 /obj/item/clothing/suit/armor/berserker{
 	name = "Runic Power Armor";
-	color = "gold"
+	color = "gold";
+	armor = list("melee" = 60, "bullet" = 74, "laser" = 64, "energy" = 25, "bomb" = 60, "bio" = 80, "rad" = 80)
 	},
 /obj/item/clothing/head/helmet/berserkerhelm{
 	name = "Runic Power Helmet";
@@ -5349,7 +5350,9 @@
 /obj/item/melee/trench_axe/glaive{
 	weapon_speed_delay = 9;
 	name = "blessed saintie";
-	color = "gold"
+	color = "gold";
+	force_wielded = 42;
+	force = 28
 	},
 /turf/simulated/floor/dirty/indestructable,
 /area/cadiaoutpost/oa/caves/dark)
@@ -11895,6 +11898,11 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "Uc" = (
 /obj/structure/ladder/up,
+/obj/item/beartrap{
+	color = "grey";
+	deployed = 1;
+	icon_state = "beartrap1"
+	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "Ud" = (
@@ -50046,7 +50054,7 @@ Do
 Do
 PK
 Do
-PE
+TY
 Do
 PK
 Do
@@ -50558,7 +50566,7 @@ PI
 vf
 Do
 Do
-TY
+PE
 Qy
 Do
 Do
