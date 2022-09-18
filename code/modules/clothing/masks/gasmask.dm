@@ -224,3 +224,15 @@
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	unacidable = 1 //acid proof
+
+/obj/item/clothing/mask/gas/vindicare
+	name = "Vindicare Mask"
+	desc = "A menacing face-covering mask that can be connected to an air supply. Filters harmful gases from the air."
+	icon_state = "s-ninja"
+	item_state = "s-ninja"
+	gas_transfer_coefficient = 0.001
+	permeability_coefficient = 0.001
+	siemens_coefficient = 0
+	unacidable = 1
+	canremove = 0
+	armor = list(melee = 10, bullet = 75, laser = 75, energy = 75, bomb = 0, bio = 100, rad = 100) //Bullet resistant, because, well, sniper. Not designed for melee however.
