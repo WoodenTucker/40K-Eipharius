@@ -92,15 +92,15 @@ avoid code duplication. This includes items that may sometimes act as a standard
 	if(special)//We did a special attack, let's apply it's special properties.
 		if(user.atk_intent == I_QUICK)//Faster attack but takes much more stamina.
 			user.visible_message("<span class='combat_success'>[user] performs a quick attack!</span>")
-			user.adjustStaminaLoss(w_class + 6)
+			user.adjustStaminaLoss(w_class + 3)
 			user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
-			apply_speed_delay(-5)
+			apply_speed_delay(-2)
 
 		else if(user.atk_intent == I_AIMED)//More accurate attack
 			user.visible_message("<span class='combat_success'>[user] performs an aimed attack!</span>")
-			user.adjustStaminaLoss(w_class + 5)
+			user.adjustStaminaLoss(w_class + 8)
 			user.setClickCooldown(DEFAULT_SLOW_COOLDOWN)
-			apply_speed_delay(5)
+			apply_speed_delay(8)
 
 		else if(user.atk_intent == I_FEINT)//Feint attack that leaves them unable to attack for a few seconds
 			if(!prob(user.SKILL_LEVEL(melee) * 10))//Add skill check here.

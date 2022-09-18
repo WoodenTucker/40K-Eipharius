@@ -536,6 +536,12 @@ Area basic template
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/shuttle/cargo2
+	name = "Cargo Elevator"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/General_Ambient2.ogg'
+	requires_power = 0
+
 /////////////////////////////////////////
 ////////////////Engineering/////////////
 ////////////////////////////////////////
@@ -1472,6 +1478,12 @@ Area basic template
 	name = "Pact Ship"
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/cargo1
+	name = "Cargo Elevator"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = 0
 
 /area/cadiaoutpost/oa/shuttle/aquila
