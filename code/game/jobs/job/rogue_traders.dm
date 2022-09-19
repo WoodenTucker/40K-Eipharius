@@ -54,6 +54,60 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 /datum/job/captain/get_access()
 	return get_all_station_access()
 
+/datum/job/heir
+	title = "Heir"
+	head_position = 1
+	department_flag = COM|CIV
+	social_class = SOCIAL_CLASS_HIGH
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 0
+	supervisors = "Your Lord. If you so desire..."
+	selection_color = "#00494e"
+	req_admin_notify = 1
+	minimal_player_age = 25
+	economic_modifier = 10
+	ideal_character_age = 50
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
+	cultist_chance = 15
+
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Lord [current_name]")
+		H.add_stats(rand(13,16), rand(13,16), rand(13,15), rand(13,17)) //
+		H.add_skills(rand(6,10),rand(6,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
+		H.adjustStaminaLoss(-INFINITY)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are the heir to the Lord Trader, born within the City of Messina this world is all you know and you been prepared over your young life to succeed your Lord and one day rule this planet. Despite all they have given you, an entire planet to lead -- there are pressures from benefactors close to the Trader that encourage his death so that you may take the mantle from them.</font></b></span>")
+
+
+	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
+
+	outfit_type = /decl/hierarchy/outfit/job/heir
+
+
 // Seneschal
 
 /datum/job/hop
@@ -82,7 +136,9 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 
 	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
 		..()
+		H.fully_replace_character_name("Steward [current_name]")
 		H.add_stats(rand(12,14), rand(16,18), rand(10,13), rand(13,18)) //they are like rogues but smarter and faster
 		H.add_skills(rand(7,10),rand(7,10),rand(5,6),rand(4,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -106,6 +162,53 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
+
+/datum/job/servant
+	title = "Servant"
+	department_flag = PIL
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Lord Trader"
+	selection_color = "#337C81"
+	economic_modifier = 5
+	social_class = SOCIAL_CLASS_MED
+	announced = 0
+	access = list(access_security, access_sec_doors, access_forensics_lockers,
+			            access_medical, access_engine, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
+	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers,
+			            access_medical, access_engine, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
+	minimal_player_age = 3
+	ideal_character_age = 40
+	outfit_type = /decl/hierarchy/outfit/job/cargo/servant
+	latejoin_at_spawnpoints = 1
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+	cultist_chance = 38
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Servant [current_name]")
+		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(13,16)) //meant to be a brute keeping the plebs in line
+		H.add_skills(rand(6,8),rand(6,8),rand(3,6),4,rand(3,6)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Lord Trader to whom you owe your life, having been in service to their family for generations of your line you are the last surviving member of your family, you may of served them for many decades or have been recently been inducted into the house out of your own  free will. Regardless you are their property now.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))
@@ -139,7 +242,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 			W.access = list(access_security, access_sec_doors, access_brig, access_maint_tunnels, access_morgue)
-			W.assignment = "Hired Mercenary"
+			W.assignment = "Mercenary"
 			W.registered_name = M.real_name
 			W.update_label()
 			M.equip_to_slot_or_del(W, slot_wear_id)

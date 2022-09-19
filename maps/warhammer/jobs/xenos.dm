@@ -35,7 +35,7 @@
 	glasses = /obj/item/clothing/glasses/tyranid
 	neck = null
 	back = null
-	l_ear = null
+	l_ear = /obj/item/device/radio/headset/hivemind
 	l_hand = /obj/item/melee/baton/nidstun
 	belt = null
 	l_pocket = null

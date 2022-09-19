@@ -443,13 +443,13 @@
 	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (300)</A><BR>"
 	dat += "<B>Elite mercenaries</B><HR>"
 	dat += "These are the best of the best. They are expensive, but very effective stand-alone units. You will not regret.<HR>"
-	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (400)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (350)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (500)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (420)</A><BR>"
 	dat += "<B>Xeno scum</B><HR>"
 	dat += "Each xenos comes in a wooden crate and fitted with a sedative implant to prevent unwanted awakening. You can disable the implant using golden writ. You must have exceptional leadership skills to maintain discipline among the xenos mercenaries, otherwise expect a revolt. Expect increased attention from the Ordo Xenos Inquisition as well.<HR>"
-	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freebooter (500)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freebooter (400)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Kroot Shaper (UNAVAILABLE) (600)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Eldar Corsair (UNAVAILABLE) (850)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a (REDACTED) (UNAVAILABLE) (1000)</A><BR>" // Someone cool and very usefull. Like Jokaero
@@ -535,7 +535,7 @@
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["janissary"])
-		if(GLOB.thrones < 400) 
+		if(GLOB.thrones < 350) 
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -548,11 +548,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 400
+					GLOB.thrones -= 350
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["scion"])
-		if(GLOB.thrones < 500) 
+		if(GLOB.thrones < 420) 
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -565,16 +565,16 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 500
+					GLOB.thrones -= 420
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["ork"])
-		if(GLOB.thrones < 500)
+		if(GLOB.thrones < 400)
 			visible_message("You cannot afford that!")
 			return
 		else
 			visible_message("Ork delivered, Lord-Trader. He is your problem now")
-			GLOB.thrones -= 500 
+			GLOB.thrones -= 400 
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			merc_crate = /obj/structure/largecrate/animal/orkmerc
 			new merc_crate(src.loc)
