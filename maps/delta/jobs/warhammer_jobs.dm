@@ -6,13 +6,13 @@
 	/datum/job/envoy,
 	/datum/job/inquisitor,
 	/datum/job/acolyte,
-	/datum/job/scion,
+	/*/datum/job/scion,*/
 	/datum/job/ig/commissar,
 	/datum/job/ig/sergeant,
 	/datum/job/ig/guardsman,
 	/datum/job/ig/guardsman/sharpshooter,
 	/datum/job/ig/guardsman/sniper,
-	/* /datum/job/ig/whiteshield, */
+	/datum/job/ig/whiteshield,
 	/datum/job/cmo,
 	/datum/job/doctor,
 	/datum/job/progena,
@@ -22,9 +22,11 @@
 	/datum/job/magos,
 	/datum/job/engineer,
 	/datum/job/hop,
+	/datum/job/heir,
+	/datum/job/servant,
 	/* /datum/job/chef, */
-	/datum/job/janitor,
-	/datum/job/bartender,
+	/*/datum/job/janitor,*/
+	/*/datum/job/bartender,*/
 	/* /datum/job/mining, */
 	/*/datum/job/cargo_tech, */
 	/* /datum/job/qm1, */

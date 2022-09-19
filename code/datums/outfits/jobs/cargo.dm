@@ -16,6 +16,21 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 1)
 
+/decl/hierarchy/outfit/job/cargo/servant
+	name = OUTFIT_JOB_NAME("Servant")
+	uniform = /obj/item/clothing/under/rank/cargotech
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	id_type = /obj/item/card/id/shared/cargo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/heads/hop
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/clothing/under/suit_jacket = 1,
+	/obj/item/clothing/under/suit_jacket/female = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones3/ten = 1)
+
 /decl/hierarchy/outfit/job/cargo/janissary
 	name = OUTFIT_JOB_NAME("Vessorine Janissary")
 	uniform = /obj/item/clothing/under/rank/cargotech

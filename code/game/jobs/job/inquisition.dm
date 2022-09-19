@@ -20,7 +20,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 20
+	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -67,7 +67,7 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Scion [current_name]")
-		H.add_stats(rand(16,19), rand(15,18), rand(14,17), rand(14,17)) //highly trained and skilled
+		H.add_stats(rand(16,18), rand(15,18), rand(14,17), rand(14,17)) //highly trained and skilled
 		H.add_skills(rand(10,10),rand(9,10),rand(5,7),rand(5,6),rand(6,7)) //SUFFER NOT THE ALIEN, SUFFER NOT THE HERETIC
 		H.assign_random_quirk()
 		H.witchblood()
@@ -104,13 +104,13 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 50
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(17,20), rand(17,20), rand(17,20), rand(17,20)) //PRAISE THE EMPEROR
+		H.add_stats(rand(17,18), rand(17,18), rand(17,18), rand(17,19)) //PRAISE THE EMPEROR
 		H.add_skills(10,10,rand(7,10),rand(5,7),rand(7,8)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
