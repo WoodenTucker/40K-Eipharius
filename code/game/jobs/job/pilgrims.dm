@@ -518,7 +518,7 @@ Pilgrim Fate System
 	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(17,20), rand(7,12), rand(15,18), rand (2,5)) //swole but retarded
+		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5)) //swole but retarded
 		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.fully_replace_character_name(random_ogryn_name())
