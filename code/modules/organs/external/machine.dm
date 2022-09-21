@@ -174,3 +174,47 @@
 			if(response == "Yes")
 				persistantMind.transfer_to(stored_mmi.brainmob)
 	qdel(src)
+
+
+/obj/item/organ/external/robotic
+	organ_tag = null
+	name = "Robotic"
+	brute_mod = 0.9                  // Multiplier for incoming brute damage.
+	burn_mod = 0.7                   // As above for burn.
+	tox_mod = 0
+	icon_name = null
+	max_damage = 60
+	min_broken_damage = 45
+	w_class = ITEM_SIZE_HUGE
+	body_part = null
+	parent_organ = null
+	joint = null
+	amputation_point = null
+	can_grasp = 0
+	pain = 0
+	has_tendon = FALSE
+	tendon_name = null
+	artery_name = null
+	arterial_bleed_severity = null
+	gibbable = FALSE
+	
+/obj/item/organ/external/robotic/arm
+	organ_tag = BP_L_ARM
+	name = "Augmetic left arm"
+	icon_name = "l_arm"
+	max_damage = 60
+	min_broken_damage = 50
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/right
+	organ_tag = BP_R_ARM
+	name = "Augmetic right arm"
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"
