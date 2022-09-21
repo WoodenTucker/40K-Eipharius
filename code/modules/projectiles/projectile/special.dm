@@ -87,7 +87,7 @@
 	Bump(atom/A as mob|obj|turf|area)
 		if(ishuman(A))
 			var/mob/living/carbon/human/H = A
-			H.adjust_fire_stacks(50)
+			H.adjust_fire_stacks(10)
 			H.IgniteMob()
 
 /obj/item/projectile/flamer
@@ -103,7 +103,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
-			H.adjust_fire_stacks(50)
+			H.adjust_fire_stacks(10) //note left by walker, any more than 10 is impossibly OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
 		if(H.isChild())
@@ -273,8 +273,8 @@
 	for(var/mob/living/I in loc)
 		if(istype(I,/mob/living/carbon/human))
 			var/mob/living/carbon/human/M = I
-			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit, /obj/item/clothing/suit/armor/ordohereticus))
-				M.show_message(text("Your suit protects you from the flames."),1)
+			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) , /obj/item/clothing/suit/armor/ordohereticus), /obj/item/clothing/suit/storage/hooded/ruststalker) )
+				M.show_message(text("Your suit protects you from the flames."), 1)
 				M.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
 				continue
 		I.adjust_fire_stacks(burnlevel) //If i stand in the fire i deserve all of this. Also Napalm stacks quickly.
@@ -285,19 +285,21 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 	
+	
+//this is the PHOSPHOR energy gun, its not currently being used by anything other than explorator, which isn't really done yet.
 /obj/item/projectile/energy/phosphor
 	name = "phosphor bolt"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
 	damage = 25
-	agony = 200
+	agony = 200 //this is pain that passes through armor???
 	range =  15
 
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
-			H.adjust_fire_stacks(50)
+			H.adjust_fire_stacks(25) //i know that this is incredibly fucking OP, just nerf it if you want to, and be aware, this is really fucking OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
 		if(H.isChild())
