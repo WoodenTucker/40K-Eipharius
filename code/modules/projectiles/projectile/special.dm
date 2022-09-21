@@ -179,6 +179,8 @@
 
 /// FLAMER FIRE
 
+/// FLAMER FIRE
+
 /obj/flamer_fire
 	name = "fire"
 	desc = "Ouch!"
@@ -273,7 +275,7 @@
 	for(var/mob/living/I in loc)
 		if(istype(I,/mob/living/carbon/human))
 			var/mob/living/carbon/human/M = I
-			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) , /obj/item/clothing/suit/armor/ordohereticus), /obj/item/clothing/suit/storage/hooded/ruststalker) )
+			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) , /obj/item/clothing/suit/armor/ordohereticus)  || istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/ruststalker))
 				M.show_message(text("Your suit protects you from the flames."), 1)
 				M.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
 				continue
@@ -284,8 +286,7 @@
 	//This has been made a simple loop, for the most part flamer_fire_act() just does return, but for specific items it'll cause other effects.
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
-	
-	
+
 //this is the PHOSPHOR energy gun, its not currently being used by anything other than explorator, which isn't really done yet.
 /obj/item/projectile/energy/phosphor
 	name = "phosphor bolt"
