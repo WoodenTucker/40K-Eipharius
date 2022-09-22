@@ -37,7 +37,7 @@
 
 /mob/living/carbon/human/ork/proc/warscream()
 	set category = "Ork"
-	set name = "WAAAAGH! (100)"
+	set name = "WAAAAGH! (1)"
 	set desc = "WE AIN'T DONE FIGHTIN' YET!"
 	var/cooldown = FALSE
 	if(src.stat == DEAD)
