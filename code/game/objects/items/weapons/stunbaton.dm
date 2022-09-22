@@ -6,7 +6,7 @@
 	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 5	
+	force = 5
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -278,3 +278,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("violated", "penetrated", "infested")
+
+/obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)

@@ -83,7 +83,7 @@ proc/random_kroot_name(gender)
 
 proc/random_ogryn_name()
 //try and keep it to 4 letters
-	var/ogryn_names = list("Stev", "Orvy", "Lugg", "Bert", "Bran", "Gert", "Oggy", "Mono", "Nork", "Rogg", "Brog", "Prol", "Brok" )
+	var/ogryn_names = list("Stev", "Orvy", "Lugg", "Bert", "Bran", "Gert", "Oggy", "Mono", "Nork", "Rogg", "Brog", "Prol", "Brok", "Kaz", "Hurk", "Barg", "Tag", "Purg", "Worg", "Gerb", "Prel" )
 	return capitalize(pick(ogryn_names))
 
 proc/random_skitarii_name(gender)
@@ -95,7 +95,7 @@ proc/random_skitarii_name(gender)
 		return capitalize(pick(skitariinames)) + " "  + "[skitarrinum]"
 
 proc/random_ork_name(gender)
-	var/orknames = list("Bruzgrod", "Drugzag", "Klawgasha", "Warshredda", "Domechoppah", "Gravesmashah", "Krookacka", "Ugtazak", "Wildgasha", "Killgashah", "Bigrippa", "Domesplittah", "Orkamongus", "Barbcooka", "Krookkrushah", "Madwakkah", "Gatgroz" )
+	var/orknames = list("Bruzgrod", "Drugzag", "Klawgasha", "Warshredda", "Domechoppah", "Gravesmashah", "Krookacka", "Ugtazak", "Wildgasha", "Killgashah", "Bigrippa", "Domesplittah", "Orkamongus", "Barbcooka", "Krookkrushah", "Madwakkah", "Gatgroz", "Grimtoof", "Buzzgob", "Manchewa", "Wurldwrecka", "Wugzark", "Urgak", "Mawsnatcha", "Zogcrusha", "Gollik", "Bloodbrakka", "Crookcooka", "Umieslashah", "Eadhacka", "Zutmuk", "Gloomgoz", "Squigchompa", "Snurkkruk", "Doomkrakkah", "Bigackah", "Wirgox", "Zhagux", "Ghoskrugas", "Wriktug", "Skullstumpah", "Rageskorcha", "Zrakkud", "Trukzorgga", "Kharkux", "Kurgax", "UgeDakka", "Klawaface", "Zogzurk", "Zigkurg" ) // yeah i used a name generator. Gonna zogging krump me?
 	if(gender==FEMALE)
 		return capitalize(pick(orknames)) + " " + "The Lost"
 	else
