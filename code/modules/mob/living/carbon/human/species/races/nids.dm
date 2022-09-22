@@ -18,6 +18,7 @@
 	var/pain_power = 80
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
+	/mob/living/carbon/human/genestealer/proc/talon,
 	/mob/living/carbon/human/genestealer/proc/makepool,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/gsheal,
@@ -302,6 +303,14 @@
 		src.inject_blood(src, 50)
 		src.biomass -=10
 
+/mob/living/carbon/human/genestealer/proc/talon()
+	set name = "Unsheathe Venomous Talon (0)"
+	set category = "Tyranid"
+	set desc = "Gives their stun talon"
+
+	put_in_hands(new /obj/item/melee/baton/nidstun)
+	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	return
 
 //Begin nid items
 
@@ -334,3 +343,4 @@
 		playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
 		if(do_after(user, 110, src))
 			qdel(src)
+
