@@ -309,7 +309,7 @@
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "locked room";
-	req_access = list(211)
+	req_access = list(253)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1869,7 +1869,8 @@
 	heat_protection = 0;
 	max_heat_protection_temperature = 0;
 	min_cold_protection_temperature = 0;
-	armor = list("melee"=40,"bullet"=48,"laser"=48,"energy"=30,"bomb"=40,"bio"=100,"rad"=20)
+	armor = list("melee"=40,"bullet"=48,"laser"=48,"energy"=30,"bomb"=40,"bio"=100,"rad"=20);
+	name = "Salvaged Guardian Armor"
 	},
 /obj/item/clothing/shoes/eldar{
 	armor = list("melee"=5,"bullet"=5,"laser"=5,"energy"=5,"bomb"=5,"bio"=5,"rad"=0)
@@ -2357,6 +2358,12 @@
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"iT" = (
+/obj/machinery/door/unpowered/inn{
+	name = "door"
+	},
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/oa/caves)
 "iU" = (
 /obj/effect/floor_decal/turf/basalt0,
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass{
@@ -7646,13 +7653,13 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/service/chapel)
 "Cs" = (
+/obj/structure/torchwall/service{
+	pixel_y = 32
+	},
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "locked room";
-	req_access = list(211)
-	},
-/obj/structure/torchwall/service{
-	pixel_y = 32
+	req_access = list(253)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13095,7 +13102,7 @@
 /obj/machinery/door/unpowered/inn/room2{
 	maxhealth = 1500;
 	name = "locked room";
-	req_access = list(211)
+	req_access = list(253)
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/habs)
@@ -56755,7 +56762,7 @@ PI
 PI
 PI
 PI
-PI
+iT
 PI
 PI
 PI
