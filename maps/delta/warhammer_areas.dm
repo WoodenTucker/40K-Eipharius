@@ -357,37 +357,37 @@ Area basic template
 /area/cadiaoutpost/oa/hallway
 	name = "Hallway"
 	icon_state = "yellow"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/oa/hallway/northern
 	name = "Northern Hallway"
 	icon_state = "halln"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/oa/hallway/eastern
 	name = "Eastern Hallway"
 	icon_state = "halle"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/oa/hallway/southern
 	name = "Southern Hallway"
 	icon_state = "halls"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/oa/hallway/western
 	name = "Western Hallway"
 	icon_state = "hallw"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
 /area/cadiaoutpost/oa/hallway/centralhall
 	name = "Inner Hallway"
 	icon_state = "hallC1"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
 //////////////////////////////////////
@@ -967,7 +967,7 @@ Area basic template
 /area/cadiaoutpost/oa/gatehouse
 	name = "Gatehouse"
 	icon_state = "gatehouse"
-	requires_power = TRUE
+	requires_power = FALSE
 	dynamic_lighting = 1
 	music = 'sound/newmusic/General_Ambient2.ogg'
 
