@@ -92,13 +92,13 @@ avoid code duplication. This includes items that may sometimes act as a standard
 	if(special)//We did a special attack, let's apply it's special properties.
 		if(user.atk_intent == I_QUICK)//Faster attack but takes much more stamina.
 			user.visible_message("<span class='combat_success'>[user] performs a quick attack!</span>")
-			user.adjustStaminaLoss(w_class + 3)
+			user.adjustStaminaLoss(w_class + 2)
 			user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
 			apply_speed_delay(-2)
 
 		else if(user.atk_intent == I_AIMED)//More accurate attack
 			user.visible_message("<span class='combat_success'>[user] performs an aimed attack!</span>")
-			user.adjustStaminaLoss(w_class + 8)
+			user.adjustStaminaLoss(w_class + 6)
 			user.setClickCooldown(DEFAULT_SLOW_COOLDOWN)
 			apply_speed_delay(8)
 
@@ -106,7 +106,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 			if(!prob(user.SKILL_LEVEL(melee) * 10))//Add skill check here.
 				user.visible_message("<span class='combat_success'>[user] botches a feint attack!</span>")
 				return 0
-			user.adjustStaminaLoss(w_class + 5)
+			user.adjustStaminaLoss(w_class + 3)
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 			M.setClickCooldown(DEFAULT_SLOW_COOLDOWN)
 			apply_speed_delay(0)
@@ -118,7 +118,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 
 		else if(user.atk_intent == I_STRONG)//Attack with stronger damage at the cost slightly longer cooldown
 			user.visible_message("<span class='combat_success'>[user] performs a heavy attack!</span>")
-			user.adjustStaminaLoss(w_class + 5)
+			user.adjustStaminaLoss(w_class + 4)
 			user.setClickCooldown(DEFAULT_SLOW_COOLDOWN)
 			apply_speed_delay(6)
 

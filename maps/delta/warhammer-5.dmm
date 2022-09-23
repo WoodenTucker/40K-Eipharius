@@ -615,6 +615,7 @@
 /obj/item/flame/candle,
 /obj/item/flame/candle,
 /obj/effect/floor_decal/spline/fancy/wood/corner,
+/obj/item/flame/lighter/zippo,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cz" = (
@@ -2137,6 +2138,9 @@
 	},
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/turf/brick/two,
+/obj/item/plastique,
+/obj/item/plastique,
+/obj/item/landmine,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ng" = (
@@ -3961,7 +3965,6 @@
 /area/centcom)
 "Fo" = (
 /obj/structure/table/steel,
-/obj/item/flame/lighter/zippo,
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/effect/floor_decal/turf/brick/two,
@@ -3969,6 +3972,7 @@
 	dir = 10;
 	icon_state = "spline_fancy"
 	},
+/obj/item/material/sword/broadsword/adamantine,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Fp" = (
