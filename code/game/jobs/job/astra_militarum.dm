@@ -60,8 +60,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -83,7 +83,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
-		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -109,9 +109,9 @@
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
-					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(9,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
 				if(title == "Valhallan Ice Warrior")
-					H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 //Whiteshield
@@ -136,7 +136,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(6,9),rand(3,7),rand(1,2),rand(1,3),rand(1,2)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,9),rand(3,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -171,7 +171,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
-		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -189,9 +189,9 @@
 		switch(title)
 			if("Cadian Plasma Gunner" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
 				if(title == "Catachan Flamer")
-					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
 				if(title == "Valhallan Heavy Autogunner")
-					H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(7,10),rand(8,10),rand(3,4),rand(3,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 
@@ -237,9 +237,9 @@
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
 				if(title == "Krieg Marksman")
-					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
 				if(title == "Valhallan Scout Sniper")
-					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 
@@ -314,8 +314,8 @@
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	supervisors = "The Rogue Trader"
 	selection_color = "#967096"

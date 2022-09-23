@@ -18,6 +18,7 @@
 	var/pain_power = 80
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
+	/mob/living/carbon/human/genestealer/proc/talon,
 	/mob/living/carbon/human/genestealer/proc/makepool,
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/gsheal,
@@ -26,7 +27,7 @@
 	 )
 	slowdown = -0.5
 	unarmed_types = list(
-		/datum/unarmed_attack/stomp,
+		/datum/unarmed_attack/rendingclaws,
 		/datum/unarmed_attack/rendingclaws,
 		)
 
@@ -267,8 +268,8 @@
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
 	src.AddInfectionImages()
-	src.add_stats(rand(7,12),rand(17,18),rand(13,13),18) //gives stats str, end, int, dex
-	src.add_skills(10,10,rand(9,9),4,4) //skills such as melee, ranged, med, eng and surg
+	src.add_stats(rand(10,15),rand(17,18),rand(13,13),18) //gives stats str, end, int, dex
+	src.add_skills(rand(10,15),rand(7,7),rand(1,4),rand(1,4),rand(1,4)) //skills such as melee, ranged, med, eng and surg)
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
@@ -302,6 +303,14 @@
 		src.inject_blood(src, 50)
 		src.biomass -=10
 
+/mob/living/carbon/human/genestealer/proc/talon()
+	set name = "Unsheathe Venomous Talon (0)"
+	set category = "Tyranid"
+	set desc = "Gives their stun talon"
+
+	put_in_hands(new /obj/item/melee/baton/nidstun)
+	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	return
 
 //Begin nid items
 
@@ -334,3 +343,4 @@
 		playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
 		if(do_after(user, 110, src))
 			qdel(src)
+

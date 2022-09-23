@@ -28,11 +28,15 @@
 "ad" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ae" = (
 /obj/structure/monolith,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "af" = (
 /obj/structure/bed/chair{
@@ -48,7 +52,9 @@
 "ag" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/structure/flora/tree/pine,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ah" = (
 /obj/machinery/shower,
@@ -58,12 +64,16 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "ak" = (
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "al" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/tree/pine,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ap" = (
 /obj/structure/mirror{
@@ -160,11 +170,15 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "aF" = (
 /obj/structure/flora/tree/pine,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "aG" = (
 /obj/structure/cable{
@@ -195,7 +209,9 @@
 /area/cadiaoutpost/oa/hangar)
 "aK" = (
 /obj/structure/flora/ausbushes/sunnybush,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "aM" = (
 /obj/effect/wingrille_spawn/reinforced{
@@ -207,7 +223,9 @@
 /area/cadiaoutpost/oa/hangar)
 "aN" = (
 /obj/structure/flora/ausbushes/pointybush,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "aO" = (
 /obj/machinery/light/small{
@@ -275,11 +293,15 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "aZ" = (
 /obj/structure/flora/ash,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "bb" = (
 /obj/machinery/door/airlock/cone{
@@ -304,7 +326,9 @@
 /area/cadiaoutpost/oa/villageinside)
 "bo" = (
 /obj/structure/flora/ausbushes/palebush,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "bp" = (
 /obj/structure/cable{
@@ -334,7 +358,9 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "bx" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "by" = (
 /obj/item/material/sword/choppa{
@@ -346,7 +372,9 @@
 /area/cadiaoutpost/oa/caves)
 "bB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "bC" = (
 /obj/item/pickaxe,
@@ -368,7 +396,9 @@
 /area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "bF" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "bH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -458,7 +488,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cd" = (
 /obj/item/archaeological_find/remains,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ce" = (
 /obj/structure/cable{
@@ -474,7 +506,9 @@
 "cf" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/tree/pine,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ck" = (
 /obj/item/ammo_casing/heat_shell,
@@ -506,10 +540,14 @@
 "cq" = (
 /obj/structure/flora/tree/snowy,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "cr" = (
-/turf/simulated/floor/exoplanet/ice,
+/turf/simulated/floor/exoplanet/ice{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ct" = (
 /obj/structure/closet/crate,
@@ -587,11 +625,15 @@
 /turf/unsimulated/miningtime,
 /area/cadiaoutpost/oa/theforest)
 "cJ" = (
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "cK" = (
 /obj/structure/barbwire,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "cU" = (
 /obj/machinery/computer/shuttle_control/ferry/cargo,
@@ -750,7 +792,9 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "eG" = (
 /obj/item/gun/launcher/rcl_rifle,
@@ -1086,7 +1130,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ii" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "ij" = (
 /obj/structure/table/woodentable{
@@ -1099,7 +1145,9 @@
 /area/cadiaoutpost/oa/villageinside)
 "is" = (
 /obj/structure/flora/tree/snowy,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "it" = (
 /obj/structure/cable{
@@ -1120,7 +1168,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "iv" = (
 /obj/structure/flora/tree/dead,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "iD" = (
 /turf/unsimulated/miningtime,
@@ -1325,8 +1375,7 @@
 /area/cadiaoutpost/oa/caves)
 "ko" = (
 /obj/item/gun/projectile/ork/automatic/shoota{
-	accuracy = -10;
-	automatic = 0.65;
+	accuracy = -4;
 	color = "red";
 	name = "fast shoota"
 	},
@@ -1504,7 +1553,9 @@
 "lA" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/barbwire,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "lG" = (
 /obj/structure/cable{
@@ -1755,7 +1806,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "nR" = (
 /obj/item/remains/human,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "oa" = (
 /obj/structure/shuttle/window{
@@ -1887,7 +1940,9 @@
 "oP" = (
 /obj/structure/flora/tree/snowy,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "pg" = (
 /obj/structure/table/standard,
@@ -2502,12 +2557,16 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "uW" = (
 /obj/effect/floor_decal/snow,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "vo" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "vp" = (
 /obj/structure/closet/cabinet{
@@ -2721,7 +2780,9 @@
 /area/cadiaoutpost/oa/caves)
 "xG" = (
 /obj/machinery/light/stolb,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "xK" = (
 /obj/item/device/radio/intercom{
@@ -2740,7 +2801,9 @@
 "xM" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/tree/snowy,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "xN" = (
 /obj/structure/cable{
@@ -2912,6 +2975,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
+"zH" = (
+/obj/item/material/sword/choppa,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "zJ" = (
 /obj/item/crowbar,
 /turf/simulated/floor/tiled{
@@ -2997,7 +3064,9 @@
 /area/cadiaoutpost/oa/hangar)
 "AK" = (
 /obj/structure/flora/tree/pine/xmas,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "AT" = (
 /obj/machinery/light/small{
@@ -3066,7 +3135,9 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "Bq" = (
 /obj/structure/sink/puddle,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "Bx" = (
 /obj/machinery/light{
@@ -3097,7 +3168,9 @@
 	desc = "It appears this region is not as vacant as the Captain thought - the Emperor’s reach extends beyond even the frontier... we won’t last long once they find out that deserters are camped at their front door. Once the snow clears we should be able to move out from the south back across the mountains.";
 	name = "scouts report"
 	},
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "BG" = (
 /obj/structure/cable{
@@ -3174,11 +3247,15 @@
 /obj/machinery/light/stolb{
 	on = 1
 	},
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "Cc" = (
 /obj/structure/girder,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "Ck" = (
 /obj/structure/cable{
@@ -3297,11 +3374,15 @@
 /area/cadiaoutpost/oa/hangarpact)
 "Ei" = (
 /obj/item/pyre/self_lit,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "Ek" = (
 /obj/structure/flora/ausbushes,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "En" = (
 /obj/structure/torchwall{
@@ -3526,7 +3607,9 @@
 	dir = 1;
 	icon_state = "torchwall0"
 	},
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "GK" = (
 /obj/machinery/light{
@@ -4309,7 +4392,9 @@
 "Qa" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "Qe" = (
 /obj/structure/torchwall/service{
@@ -4381,7 +4466,9 @@
 "QJ" = (
 /obj/structure/barbwire,
 /mob/living/simple_animal/hostile/syndicate/ranged,
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "QL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4891,7 +4978,9 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/simulated/floor/snow,
+/turf/simulated/floor/snow{
+	color = "grey"
+	},
 /area/cadiaoutpost/oa/theforest)
 "Vh" = (
 /obj/machinery/alarm{
@@ -46790,7 +46879,7 @@ xC
 xC
 kd
 xC
-ar
+zH
 ar
 YW
 iD
@@ -48840,7 +48929,7 @@ iD
 iD
 YW
 YW
-ar
+zH
 mN
 ar
 ar

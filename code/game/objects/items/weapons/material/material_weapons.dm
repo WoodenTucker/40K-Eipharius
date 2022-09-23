@@ -20,7 +20,7 @@
 	var/broken_icon = null
 	var/applies_material_colour = 1
 	var/applies_material_name = FALSE //if false, does not rename item to 'material item.name'
-	var/max_force = 40	 //any damage above this is added to armor penetration value
+	var/max_force = 60	 //any damage above this is added to armor penetration value
 	var/force_multiplier = 0.5	// multiplier to material's generic damage value for this specific type of weapon
 	var/thrown_force_multiplier = 0.5
 	var/attack_cooldown_modifier = 0

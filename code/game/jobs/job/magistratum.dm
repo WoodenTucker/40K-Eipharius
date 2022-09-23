@@ -41,7 +41,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum. For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
 /datum/job/marshal
 	title = "Planetary Marshal"
@@ -127,7 +127,7 @@ Begin Warhammer loadouts
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/headset_service
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
