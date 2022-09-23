@@ -93,6 +93,7 @@
 	var/innate_flash_protection = FLASH_PROTECTION_MINOR
 	max_damage = 45
 	sales_price = 20
+	robotic = ORGAN_ROBOT
 
 /obj/item/organ/internal/eyes/augmetic/advanced
 	name = "Advanced augmetic eyeballs"
