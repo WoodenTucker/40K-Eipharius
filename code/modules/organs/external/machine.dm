@@ -265,3 +265,25 @@
 	parent_organ = BP_R_LEG
 	joint = "right ankle"
 	amputation_point = "right ankle"
+
+/obj/item/organ/external/robotic/hand
+	organ_tag = BP_L_HAND
+	name = "Augmetic left hand"
+	icon_name = "l_hand"
+	max_damage = 80
+	min_broken_damage = 70
+	w_class = ITEM_SIZE_SMALL
+	body_part = HAND_LEFT
+	parent_organ = BP_L_ARM
+	joint = "left wrist"
+	amputation_point = "left wrist"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/hand/right
+	organ_tag = BP_R_HAND
+	name = "Augmetic right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
