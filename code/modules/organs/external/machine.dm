@@ -318,3 +318,59 @@
 		to_chat(usr,"You pull out the las-striker.")
 		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/light(usr))
 		src.is_toggled = 2
+
+/obj/item/organ/external/robotic/hand/advanced/right
+	organ_tag = BP_R_HAND
+	name = "Advanced augmetic right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+	
+/obj/item/organ/external/robotic/arm/advanced
+	organ_tag = BP_L_ARM
+	name = "Advanced augmetic left arm"
+	icon_name = "l_arm"
+	max_damage = 200
+	min_broken_damage = 150
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/advanced/verb/toggle_las_medium()
+	set name =  "Deploy Heavy Las-Striker"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/las/medium))
+			visible_message("<span class='warning'> [usr] quickly retracts the heavy las-striker.</span>", "<span class='notice'>You put away the heavy las-striker!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/light))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the heavy las-striker.</span>", "<span class='notice'>You put away the heavy las-striker!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the axe.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the heavy las-striker.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/medium(usr))
+		src.is_toggled = 2
+	
+/obj/item/organ/external/robotic/arm/advanced/right
+	organ_tag = BP_R_ARM
+	name = "Advanced augmetic right arm"
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"
+
