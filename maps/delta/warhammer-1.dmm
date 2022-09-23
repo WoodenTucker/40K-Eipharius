@@ -2025,7 +2025,7 @@
 /obj/random/loot/randomitemtown,
 /obj/item/device/radio/headset/red_team,
 /turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/caves)
+/area/cadiaoutpost/oa/service/chapel)
 "hr" = (
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/carpet/purple,
@@ -6636,12 +6636,6 @@
 	icon_state = "wood_broken3"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"yI" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/table/rack/dark,
-/obj/random/loot/randomitemtown,
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/caves)
 "yK" = (
 /obj/item/modular_computer/console/preset/security,
 /obj/effect/floor_decal/turf/plating,
@@ -8879,7 +8873,7 @@
 /obj/item/crowbar,
 /obj/item/wrench,
 /turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/caves)
+/area/cadiaoutpost/oa/service/chapel)
 "Hc" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/structure/torchwall/service{
@@ -10067,7 +10061,7 @@
 /obj/item/clothing/head/helmet/hauberk,
 /obj/item/clothing/head/helmet/hauberk,
 /turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/caves)
+/area/cadiaoutpost/oa/service/chapel)
 "Lo" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -11495,13 +11489,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/habs)
-"QN" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/landmark/start{
-	name = "Sister Hospitaller"
-	},
-/turf/simulated/floor/stone/chapel,
-/area/cadiaoutpost/oa/caves)
 "QP" = (
 /obj/structure/bed/chair/stool2,
 /turf/simulated/floor/wood{
@@ -13231,8 +13218,9 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "XL" = (
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/stone/chapel,
+/turf/simulated/wall/ancient{
+	color = null
+	},
 /area/cadiaoutpost/oa/caves)
 "XM" = (
 /obj/effect/floor_decal/turf/nf2,
@@ -36746,8 +36734,8 @@ hx
 qK
 Ez
 zX
-QN
-XL
+BU
+Ez
 BU
 zX
 BU
@@ -37003,7 +36991,7 @@ Hc
 qK
 Ez
 dq
-yI
+rk
 GX
 yl
 aS
@@ -37260,8 +37248,8 @@ hx
 qK
 Ez
 Ez
-XL
-XL
+Ez
+Ez
 Ez
 Ez
 Ez
@@ -44719,8 +44707,8 @@ Hx
 Hx
 Hx
 Hx
-qb
-qb
+XL
+XL
 qb
 qb
 qb
@@ -44974,10 +44962,10 @@ RW
 pH
 RW
 RW
+RW
 Cz
-Hx
-Zk
-Zk
+XL
+XL
 Zk
 Zk
 Zk
@@ -45231,10 +45219,10 @@ RW
 RW
 RW
 RW
+RW
 Cz
-Hx
-Zk
-Zk
+XL
+XL
 Zk
 Zk
 Zk
@@ -45488,10 +45476,10 @@ RW
 am
 RW
 RW
+RW
 Cz
-Hx
-Zk
-Zk
+XL
+XL
 Zk
 Zk
 Zk
@@ -45747,8 +45735,8 @@ Hx
 Hx
 Hx
 Hx
-qb
-qb
+XL
+XL
 qb
 Zk
 Zk
@@ -47039,7 +47027,7 @@ Zk
 Zk
 Zk
 Zk
-Zk
+qb
 Zk
 Zk
 Zk
@@ -47296,7 +47284,7 @@ Zk
 Zk
 Zk
 Zk
-Zk
+qb
 Zk
 Zk
 Zk
