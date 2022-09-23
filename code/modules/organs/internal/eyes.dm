@@ -75,3 +75,107 @@
 
 /obj/item/organ/internal/eyes/proc/additional_flash_effects(var/intensity)
 	return -1
+
+
+
+
+
+/obj/item/organ/internal/eyes/augmetic
+	name = "Augmetic eyeballs"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	var/phoron_guard = 0
+	var/list/eye_colour = list(0,0,0)
+	var/innate_flash_protection = FLASH_PROTECTION_MINOR
+	max_damage = 45
+	sales_price = 20
+
+/obj/item/organ/internal/eyes/augmetic/advanced
+	name = "Advanced augmetic eyeballs"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	var/phoron_guard = 0
+	var/list/eye_colour = list(0,0,0)
+	var/innate_flash_protection = FLASH_PROTECTION_NONE
+	max_damage = 80
+	sales_price = 45
+	vision_flags = SEE_MOBS
+	
+/obj/item/organ/internal/eyes/augmetic/advanced/New()
+	..()
+	overlay = GLOB.global_hud.thermal
+
+
+
+
+/obj/item/organ/internal/eyes/augmetic/advanced/upgraded
+	name = "Upgraded advanced augmetic eyeballs"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	var/phoron_guard = 0
+	var/list/eye_colour = list(0,0,0)
+	var/innate_flash_protection = FLASH_PROTECTION_MAJOR
+	max_damage = 80
+	sales_price = 90
+	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
+	darkness_view = 20
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+
+/obj/item/organ/internal/eyes/augmetic/advanced/upgraded/process_hud(var/mob/M)
+	process_med_hud(M, 1)
+
+/obj/item/organ/internal/eyes/augmetic/experimental
+	name = "Experimental augmetic eyeballs"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	var/phoron_guard = 0
+	var/list/eye_colour = list(0,0,0)
+	var/innate_flash_protection = FLASH_PROTECTION_MAJOR
+	max_damage = 80
+	sales_price = 90
+	vision_flags = SEE_MOBS
+	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
+	darkness_view = 20
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+
+/obj/item/organ/internal/eyes/augmetic/experimental/verb/toggle_las_heavy()
+	set name =  "Activate Augmetic Laser Eye"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/las/heavy))
+			visible_message("<span class='warning'> [usr]'s eyes return to normal.</span>", "<span class='notice'>You power down your laser eye!</span>", "<span class='warning>What's that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/heavy))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr]'s eyes return to normal.</span>", "<span class='notice'>You power down your laser eye!</span>", "<span class='warning>What's that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You power down your laser eye.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You charge your laser eye.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/heavy(usr))
+
+
