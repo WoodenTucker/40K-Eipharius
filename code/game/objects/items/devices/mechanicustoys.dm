@@ -284,3 +284,86 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	..()
 	spawn(1) if(src) qdel(src)
 
+
+//AUGMETIC WEAPONS
+
+/obj/item/gun/energy/augmetic/las/light
+	name = "Augmetic Las-striker"
+	desc = "This self-recharging easily concealed augmetic weapon can provide a handy advantage in a firefight, but pays for convenience in terms of efficiency."
+	icon_state = "laspistol"
+	item_state = "laspistol"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = 0
+	move_delay = 0
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 600
+	self_recharge = 1
+	armor_penetration = 5
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	sales_price = 20
+	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/las/medium
+	name = "Heavy Augmetic Las-striker"
+	desc = "This high quality self-recharging easily concealed augmetic weapon can provide a handy advantage in a firefight, but pays for convenience in terms of efficiency. Reserved for the wealthy and important, this variant packs more of a punch, and is more efficient to boot."
+	icon_state = "laspistol"
+	item_state = "laspistol"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = 0
+	move_delay = 0
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/overcharge
+	charge_cost = 300
+	self_recharge = 1
+	armor_penetration = 5
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	sales_price = 20
+	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/las/heavy
+	name = "Augmetic Las-cannon"
+	desc = "This incredibly advanced augmetic weapon is reserved only for the highest ranking in Imperial society."
+	icon_state = "laspistol"
+	item_state = "laspistol"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = 0
+	move_delay = 0
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/plasmabeam
+	charge_cost = 3000
+	self_recharge = 1
+	armor_penetration = 5
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	sales_price = 20
+	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/plasma/medium
+	name = "Augmetic Plasma Rifle"
+	desc = "Who but a maniac would use such a thing? Stand back!"
+	icon_state = "laspistol"
+	item_state = "laspistol"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = 0
+	move_delay = 0
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/beam/plasmabeam
+	charge_cost = 3000
+	self_recharge = 1
+	armor_penetration = 5
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	sales_price = 20
+	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
