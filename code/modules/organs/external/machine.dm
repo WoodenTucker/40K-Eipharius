@@ -287,3 +287,34 @@
 	parent_organ = BP_R_ARM
 	joint = "right wrist"
 	amputation_point = "right wrist"
+
+/obj/item/organ/external/robotic/hand/advanced
+	name = "Advanced augmetic left hand"
+	icon_name = "l_hand"
+	max_damage = 120
+	min_broken_damage = 110
+
+/obj/item/organ/external/robotic/hand/advanced/verb/toggle_las_light()
+	set name =  "Deploy Las-Striker"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/las/light))
+			visible_message("<span class='warning'> [usr] quickly retracts the las-striker.</span>", "<span class='notice'>You put away the las-striker!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/light))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the las-striker.</span>", "<span class='notice'>You put away the las-striker!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the axe.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the las-striker.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/light(usr))
+		src.is_toggled = 2
