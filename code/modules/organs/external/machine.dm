@@ -312,7 +312,7 @@
 		qdel(usr.r_hand)
 		visible_message("<span class='warning'>  [usr] quickly retracts the las-striker.</span>", "<span class='notice'>You put away the las-striker!</span>", "<span class='warning>What was that sound?</span>")
 		src.icon_state = initial(icon_state)
-		to_chat(usr,"You put away the axe.")
+		to_chat(usr,"You put away the las-striker.")
 		src.is_toggled = 1
 	else
 		to_chat(usr,"You pull out the las-striker.")
@@ -355,11 +355,11 @@
 			visible_message("<span class='warning'> [usr] quickly retracts the heavy las-striker.</span>", "<span class='notice'>You put away the heavy las-striker!</span>", "<span class='warning>What was that sound?</span>")
 			qdel(usr.l_hand)
 			update_icon()
-	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/light))
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/medium))
 		qdel(usr.r_hand)
 		visible_message("<span class='warning'>  [usr] quickly retracts the heavy las-striker.</span>", "<span class='notice'>You put away the heavy las-striker!</span>", "<span class='warning>What was that sound?</span>")
 		src.icon_state = initial(icon_state)
-		to_chat(usr,"You put away the axe.")
+		to_chat(usr,"You put away the heavy las-striker.")
 		src.is_toggled = 1
 	else
 		to_chat(usr,"You pull out the heavy las-striker.")
@@ -374,3 +374,54 @@
 	joint = "right elbow"
 	amputation_point = "right shoulder"
 
+/obj/item/organ/external/robotic/hand/experimental
+	name = "Experimental augmetic left hand"
+	icon_name = "l_hand"
+	max_damage = 180
+	min_broken_damage = 160
+
+/obj/item/organ/external/robotic/hand/experimental/verb/toggle_plasma_light()
+	set name =  "Deploy Augmetic Plasma Pistol"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/plasma/light))
+			visible_message("<span class='warning'> [usr] quickly retracts the plasma pistol.</span>", "<span class='notice'>You put away the plasma pistol!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/plasma/light))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the plasma pistol.</span>", "<span class='notice'>You put away the plasma pistol!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the plasma pistol.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the plasma pistol.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/plasma/light(usr))
+
+obj/item/organ/external/robotic/hand/experimental/right
+	organ_tag = BP_R_HAND
+	name = "Experimental augmetic right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+
+/obj/item/organ/external/robotic/arm/experimental
+	organ_tag = BP_L_ARM
+	name = "Experimental augmetic left arm"
+	icon_name = "l_arm"
+	max_damage = 220
+	min_broken_damage = 160
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
