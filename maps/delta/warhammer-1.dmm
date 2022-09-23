@@ -713,13 +713,13 @@
 "cJ" = (
 /obj/effect/floor_decal/turf/nf2,
 /obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/innkey2{
-	access = list(211);
-	name = "rusty key 2"
-	},
 /obj/structure/table/woodentable,
 /obj/item/card/id/innkey2{
-	access = list(211);
+	access = list(253);
+	name = "rusty key 2"
+	},
+/obj/item/card/id/innkey2{
+	access = list(253);
 	name = "rusty key 2"
 	},
 /turf/simulated/floor/stone,
@@ -52385,7 +52385,7 @@ SI
 Cj
 JP
 QD
-cJ
+XM
 QD
 XM
 QD
@@ -52899,7 +52899,7 @@ SI
 Cj
 JP
 QD
-XM
+cJ
 QD
 XM
 QD
