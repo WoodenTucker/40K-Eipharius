@@ -197,6 +197,7 @@
 	artery_name = null
 	arterial_bleed_severity = null
 	gibbable = FALSE
+	robotic = ORGAN_ROBOT
 	
 /obj/item/organ/external/robotic/arm
 	organ_tag = BP_L_ARM
