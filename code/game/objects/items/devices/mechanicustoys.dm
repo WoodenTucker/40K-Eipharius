@@ -304,8 +304,11 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	sales_price = 20
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/las/light/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
 
 /obj/item/gun/energy/augmetic/las/medium
 	name = "Heavy Augmetic Las-striker"
@@ -324,8 +327,11 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	sales_price = 20
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/las/medium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
 
 /obj/item/gun/energy/augmetic/las/heavy
 	name = "Augmetic Las-cannon"
@@ -341,29 +347,78 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	projectile_type = /obj/item/projectile/beam/plasmabeam
 	charge_cost = 3000
 	self_recharge = 1
-	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	sales_price = 20
 	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/las/heavy/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/gun/energy/augmetic/plasma/light
+	name = "Augmetic Plasma Pistol"
+	desc = "For when you need to kill something, and have a spare arm."
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "ppistol"
+	item_state = "pulse_carbine"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = -2
+	move_delay = 2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/energy/pulse/plasmapistol
+	charge_cost = 600
+	self_recharge = 1
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "pulse_carbine" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/plasma/light/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
 
 /obj/item/gun/energy/augmetic/plasma/medium
 	name = "Augmetic Plasma Rifle"
 	desc = "Who but a maniac would use such a thing? Stand back!"
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	w_class = ITEM_SIZE_NORMAL
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "prifle"
+	item_state = "ionrifle"
+	w_class = ITEM_SIZE_HUGE
 	force = 8
-	accuracy = 0
-	move_delay = 0
+	accuracy = -2
+	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/beam/plasmabeam
-	charge_cost = 3000
+	projectile_type = /obj/item/energy/pulse/plasmarifle
+	charge_cost = 1500
 	self_recharge = 1
-	armor_penetration = 5
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	sales_price = 20
-	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+	wielded_item_state = "pulse_carbine" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
 
+/obj/item/gun/energy/augmetic/plasma/medium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/gun/energy/augmetic/seolite/neurotoxin
+	name = "Seolite Toxin Beamer"
+	desc = "This mysterious device fires an incapacitating neurotoxin encased in an armour piercing energy field."
+	icon_state = "retro"
+	item_state = "retro"
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = 2
+	move_delay = 2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/neurotoxin
+	charge_cost = 600
+	self_recharge = 1
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "pulse_carbine" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/augmetic/seolite/neurotoxin/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
