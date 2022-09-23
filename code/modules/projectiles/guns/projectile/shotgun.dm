@@ -41,7 +41,7 @@
 	gun_type = GUN_SHOTGUN
 	move_delay= 2.6 
 	one_hand_penalty = 4
-	accuracy = 0
+	accuracy = 0.5
 	fire_delay= 3
 	armor_penetration = 1 //melee???
 	sales_price = 20
@@ -138,7 +138,7 @@
 	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
 	ammo_type = /obj/item/ammo_casing/shotgun
 	one_hand_penalty = 5
-	accuracy = -1
+	accuracy = 0
 	fire_delay= 3
 	armor_penetration = 5
 	wielded_item_state = "shotgun-wielded"
@@ -155,7 +155,7 @@
 	wielded_item_state = "cshotgun2"
 	move_delay= 2 //slowdown removed because... its literally supposed to be for fast combat and trench taking
 	one_hand_penalty = 5
-	accuracy = 0
+	accuracy = 0.5
 	fire_delay= 3
 	armor_penetration = 5
 	sales_price = 22
@@ -272,7 +272,7 @@
 	gun_type = GUN_PISTOL
 	move_delay= 2.5
 	one_hand_penalty = 3
-	accuracy = -1
+	accuracy = 1
 	fire_delay= 4.5
 	sales_price = 15
 
@@ -297,7 +297,7 @@
 	block_chance = 40 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = 2
+	accuracy = 3
 	fire_delay= 20
-	sales_price = 159
+	sales_price = 0
 

@@ -53,7 +53,7 @@
 		user.visible_message("<span class='combat_success'>\The [user] parries [attack_text] with \the [src]!</span>")
 		if(parry_sounds.len)
 			playsound(user.loc, pick(parry_sounds), 50, 1)
-		user.adjustStaminaLoss(10)
+		user.adjustStaminaLoss(4)
 		health -= 0.5
 		if(!prob((user.SKILL_LEVEL(melee) * 10) + 15) || user.staminaloss >= user.staminaexhaust)//If you're out of stamina you will immediately be disarmed.
 			disarm(user)//Moved the disarm affect to it's own proc in case we want to call it elsewhere.
@@ -62,11 +62,11 @@
 				if(user.a_intent != I_HURT)
 					visible_message("<span class='combat_success'>[user] ripostes!</span>")
 					src.attack(attacker, user, def_zone)
-					user.adjustStaminaLoss(5)
+					user.adjustStaminaLoss(2)
 			else
 				visible_message("<span class='combat_success'>[user] ripostes!</span>")
 				src.attack(attacker, user, def_zone)
-				user.adjustStaminaLoss(5)
+				user.adjustStaminaLoss(2)
 		return 1
 
 /obj/item/proc/disarm(mob/living/user)

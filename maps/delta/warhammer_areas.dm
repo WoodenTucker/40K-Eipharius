@@ -924,18 +924,18 @@ Area basic template
 /area/cadiaoutpost/oa/caves/dark
 	name = "Caves Dark" // Powered areas of the city.
 	icon_state = "cave"
-	music = 'sound/newmusic/Caves_City.ogg'
+	music = 'sound/newmusic/Caves_Dark.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/caves/undercity
 	name = "Caves Undercity" // Undercity ambience.
 	icon_state = "cave"
-	music = 'sound/newmusic/Caves_City.ogg'
+	music = 'sound/newmusic/Caves_Dark.ogg'
 
 /area/cadiaoutpost/oa/caves/terror
 	name = "Caves Terror" // Do not use this area unless you know what it's for.
 	icon_state = "cave"
-	music = 'sound/newmusic/Caves_City.ogg'
+	music = 'sound/newmusic/Caves_Dark.ogg'
 
 ////////////////////////////////////////
 //////////VILLAGE//////////////////

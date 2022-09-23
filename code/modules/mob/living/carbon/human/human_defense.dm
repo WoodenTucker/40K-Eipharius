@@ -657,7 +657,7 @@ meteor_act
 
 	var/kickdam = rand(2,7)
 	kickdam *= strToDamageModifier(user.my_stats[STAT(str)].level)
-	user.adjustStaminaLoss(rand(10,15))//Kicking someone is a big deal.
+	user.adjustStaminaLoss(rand(1,5))//Kicking someone is a big deal.
 	if(kickdam)
 		playsound(user.loc, 'sound/weapons/kick.ogg', 50, 0)
 		apply_damage(kickdam, BRUTE, hit_zone, armour)

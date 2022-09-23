@@ -14,7 +14,7 @@
 	max_shells = 3
 	ammo_type = /obj/item/ammo_casing/a145
 	one_hand_penalty = 50
-	accuracy = -1
+	accuracy = 0
 	scoped_accuracy = 5 //increased accuracy over the LWAP because only one shot //Walker here, i doubt that this does anything, but imma just leave it in.
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded"
@@ -22,7 +22,7 @@
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	sales_price = 59
+	sales_price = 0
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -95,8 +95,8 @@
 	fire_delay = 10
 	force = 10
 	w_class = ITEM_SIZE_HUGE
-	accuracy = -2 //shooting at the hip
-	scoped_accuracy = 0
+	accuracy = 0 //shooting at the hip
+	scoped_accuracy = 2
 	wielded_item_state = "gun_wielded"
 
 /obj/item/gun/energy/sniperrifle/update_icon()
@@ -121,7 +121,8 @@
 	force = 15
 	one_hand_penalty = 10
 	fire_delay = 8
-	accuracy = 0
+	accuracy = 1
+	self_recharge = 1
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -130,7 +131,7 @@
 	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "las_musket"
-	sales_price = 110
+	sales_price = 0
 
 	firemodes = list(
 		list(mode_name="semi-automatic", move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
@@ -172,13 +173,13 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/bolter
 	one_hand_penalty = 25
-	accuracy = 1
+	accuracy = 2
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
 	fire_sound = 'sound/weapons/guns/fire/musket_fire.ogg'
 	gun_type = GUN_SNIPER
-	sales_price = 2
+	sales_price = 0
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -250,7 +251,7 @@
 	magazine_type = /obj/item/ammo_magazine/exitus
 	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
 	one_hand_penalty = 50
-	accuracy = 0 //Don't shoot it one-handed.
+	accuracy = 1 //Don't shoot it one-handed.
 	scoped_accuracy = 50 //Hit or miss. I guess they never miss, huh? //Due to the way accuracy works, I know this seems incredibly high, but it's actually needed for long range shots to have any reasonable chance of a hit.
 	wielded_item_state = "heavysniper-wielded"
 	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
@@ -258,7 +259,7 @@
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	sales_price = 250 //Try selling it and you'll get a killteam though.
+	sales_price = 0 //Try selling it and you'll get a killteam though.
 
 /obj/item/gun/projectile/exitus/update_icon()
 	..()

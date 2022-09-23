@@ -243,7 +243,7 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "Marshal vox"
 	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
-	ks1type = /obj/item/device/encryptionkey/red
+	ks1type = /obj/item/device/encryptionkey/headset_sec
 	ks2type = /obj/item/device/encryptionkey/headset_com
 	icon_state = "sec_headset"
 	item_state = "sec_headset"
