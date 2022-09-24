@@ -56,12 +56,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"ah" = (
-/obj/machinery/shower,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "ak" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/snow{
@@ -75,27 +69,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"ap" = (
-/obj/structure/mirror{
-	pixel_y = -32
-	},
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -15
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"aq" = (
-/obj/effect/floor_decal/newcorner/black/solid,
-/obj/machinery/door/blast/shutters/open{
-	dir = 2;
-	icon_state = "shutter0";
-	id = "bridgeflooridlock"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "ar" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
@@ -122,28 +95,10 @@
 /obj/structure/shuttle/engine/propulsion{
 	color = "grey"
 	},
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/turf/simulated/wall/ancient{
+	color = null
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
-"ax" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"ay" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "az" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/mineral/snowycave,
@@ -165,7 +120,7 @@
 "aD" = (
 /obj/structure/catwalk,
 /turf/simulated/open,
-/area/cadiaoutpost/oa/bridge/hallway)
+/area/cadiaoutpost/oa/theforest)
 "aE" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -196,31 +151,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"aJ" = (
-/obj/effect/floor_decal/snow,
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	icon_state = "shutter1";
-	id = "hangarshutters"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "aK" = (
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/simulated/floor/snow{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"aM" = (
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "aN" = (
 /obj/structure/flora/ausbushes/pointybush,
 /turf/simulated/floor/snow{
@@ -236,22 +172,6 @@
 	},
 /turf/space,
 /area/cadiaoutpost/oa/shuttle/aquila)
-"aP" = (
-/obj/structure/cable{
-	icon_state = "32-4"
-	},
-/obj/structure/ladder,
-/turf/simulated/open,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"aU" = (
-/obj/structure/closet/crate/secure/phoron,
-/obj/item/stack/material/phoron/ten,
-/obj/item/stack/material/phoron/ten,
-/obj/item/stack/material/phoron/ten,
-/obj/item/stack/material/phoron/ten,
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "aV" = (
 /obj/machinery/light_switch{
 	pixel_x = 28
@@ -303,18 +223,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"bb" = (
-/obj/machinery/door/airlock/cone{
-	name = "Hangar";
-	req_access = list(19)
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "be" = (
 /obj/effect/floor_decal/snow,
 /turf/simulated/floor/plating{
@@ -344,18 +252,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hangarpact)
-"bw" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/plaza{
-	dir = 8;
-	icon_state = "plaza"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "bx" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/snow{
@@ -389,11 +285,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"bE" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/machinery/light/small/red,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "bF" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/snow{
@@ -418,65 +309,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"bI" = (
-/obj/structure/railing,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"bK" = (
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
-"bN" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
-"bP" = (
-/obj/structure/toilet,
-/obj/machinery/light/small{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"bR" = (
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
-"bS" = (
-/obj/structure/catwalk,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
-"bX" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"bY" = (
-/obj/effect/floor_decal/newcorner/black/solid,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "cb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
@@ -492,17 +324,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"ce" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "cf" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/tree/pine,
@@ -514,12 +335,6 @@
 /obj/item/ammo_casing/heat_shell,
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
-"cm" = (
-/obj/machinery/light,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "co" = (
 /obj/machinery/light{
 	dir = 1
@@ -528,15 +343,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"cp" = (
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/effect/floor_decal/newcorner/step,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "cq" = (
 /obj/structure/flora/tree/snowy,
 /obj/structure/flora/ausbushes/fullgrass,
@@ -576,23 +382,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"cv" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"cw" = (
-/obj/structure/catwalk,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "cx" = (
 /obj/structure/curtain/black,
 /turf/simulated/floor/wood{
@@ -606,18 +395,6 @@
 	},
 /turf/simulated/wall/techno,
 /area/cadiaoutpost/oa/villageinside)
-"cA" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "cD" = (
 /turf/simulated/mineral/snowycave,
 /area/cadiaoutpost/oa/theforest)
@@ -643,47 +420,12 @@
 /obj/effect/shuttle_landmark/ferry/tau_end,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/shuttle/tau2)
-"cW" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/newcorner/black/solid,
-/obj/machinery/door/blast/shutters/open{
-	dir = 2;
-	icon_state = "shutter0";
-	id = "bridgeflooridlock"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "cX" = (
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/theforest)
-"cY" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "da" = (
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/shuttle/tau2)
-"dc" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"de" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/newcorner/black/solid,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "dg" = (
 /obj/machinery/light_switch{
 	pixel_x = -25
@@ -718,11 +460,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"dx" = (
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "dM" = (
 /obj/item/ammo_magazine/ork/shoota,
 /turf/simulated/floor/trench,
@@ -844,12 +581,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"eV" = (
-/obj/structure/curtain/open/privacy,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "fb" = (
 /obj/structure/flora/ausbushes/meatshroom,
 /turf/simulated/floor/stone,
@@ -1035,15 +766,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"gO" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/power/smes/buildable/outpost_substation,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "gS" = (
 /turf/simulated/wall/r_wall,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -1102,17 +824,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"hw" = (
-/obj/machinery/firealarm{
-	pixel_y = 30
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "hU" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 32
@@ -1264,36 +975,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"jo" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "jr" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"jt" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "ju" = (
 /obj/effect/wingrille_spawn/reinforced,
 /obj/machinery/door/blast/shutters/open{
@@ -1327,14 +1014,6 @@
 /obj/item/ammo_magazine/flamer,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"jM" = (
-/obj/machinery/newscaster{
-	pixel_y = 33
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "jQ" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular{
@@ -1388,15 +1067,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"kq" = (
-/obj/machinery/button/remote/blast_door{
-	id = "bridgeflooridlock";
-	req_access = list(19)
-	},
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "kr" = (
 /obj/machinery/light{
 	dir = 1
@@ -1454,15 +1124,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"kD" = (
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/effect/floor_decal/industrial/outline/orange,
-/obj/effect/floor_decal/turf/splate,
-/obj/machinery/power/port_gen/pacman,
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "kN" = (
 /obj/structure/closet/crate/operations,
 /turf/simulated/floor/tiled/dark{
@@ -1501,14 +1162,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"lm" = (
-/obj/machinery/firealarm{
-	pixel_x = -30
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "lt" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -1557,23 +1210,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"lG" = (
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
-"lL" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "lP" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -1599,12 +1235,6 @@
 /obj/item/device/cassette/orks1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
-"ms" = (
-/obj/effect/wingrille_spawn/reinforced{
-	color = "grey"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "my" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/item/gun/energy/las/lasgun/rare,
@@ -1641,13 +1271,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"mC" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "mE" = (
 /obj/structure/cable{
 	d1 = 1;
@@ -1729,13 +1352,6 @@
 	integrity = 50000
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"nm" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "ns" = (
 /obj/machinery/light/small{
 	icon_state = "bulb1";
@@ -1760,14 +1376,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"nF" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "nG" = (
 /obj/machinery/door/blast/bordergatec/closed{
 	id = "armorypact";
@@ -1825,14 +1433,6 @@
 	integrity = 50000
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"on" = (
-/obj/structure/railing{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "os" = (
 /obj/machinery/light_switch{
 	pixel_x = -25
@@ -1921,10 +1521,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/hangarpact)
-"oH" = (
-/obj/machinery/door/airlock/cone,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "oI" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/closet/walllocker/emerglocker/east,
@@ -1978,35 +1574,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"ps" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "pu" = (
 /turf/simulated/wall/grim,
 /area/cadiaoutpost/oa/theforest)
-"pF" = (
-/obj/structure/mirror{
-	pixel_y = -32
-	},
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -15
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "pG" = (
 /obj/structure/cable{
 	icon_state = "6-8"
@@ -2166,16 +1736,6 @@
 	},
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
-"rm" = (
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/hangar)
-"rr" = (
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "rK" = (
 /obj/structure/torchwall{
 	dir = 8;
@@ -2183,18 +1743,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"rY" = (
-/obj/machinery/power/apc{
-	dir = 1;
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "sf" = (
 /obj/machinery/door/window/westleft{
 	base_state = "right";
@@ -2266,18 +1814,6 @@
 	integrity = 50000
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"sJ" = (
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/obj/structure/sign/deck4{
-	pixel_y = 30
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "sO" = (
 /obj/random/loot/lightstubberammo,
 /obj/random/loot/lightstubberammo,
@@ -2424,15 +1960,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"ub" = (
-/obj/machinery/firealarm{
-	pixel_y = 30
-	},
-/obj/structure/railing,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "um" = (
 /obj/machinery/atm{
 	pixel_y = 25
@@ -2621,16 +2148,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"wi" = (
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "wm" = (
 /turf/space,
 /area/cadiaoutpost/oa/theforest)
@@ -2738,21 +2255,9 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"xp" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	name = "Substation"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "xw" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/turf/simulated/wall/ancient{
+	color = null
 	},
 /turf/space,
 /area/cadiaoutpost/oa/shuttle/aquila)
@@ -2762,19 +2267,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"xz" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/obj/effect/floor_decal/industrial/plaza{
-	dir = 4;
-	icon_state = "plaza"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "xC" = (
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/caves)
@@ -2822,23 +2314,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"xU" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "2-8"
-	},
-/obj/machinery/power/apc{
-	dir = 1;
-	pixel_y = 32
-	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "xX" = (
 /obj/effect/shuttle_landmark/ferry/cargo_end,
 /turf/simulated/floor/plating,
@@ -2865,37 +2340,6 @@
 	integrity = 50000
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"yh" = (
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	dir = 8;
-	icon_state = "apc0";
-	pixel_x = -32;
-	pixel_y = 0
-	},
-/obj/structure/catwalk,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
-"yx" = (
-/obj/structure/mirror{
-	pixel_y = -32
-	},
-/obj/structure/sink{
-	dir = 1;
-	pixel_y = -15
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "yC" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
@@ -2988,29 +2432,12 @@
 "zP" = (
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)
-"zS" = (
-/obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
-	},
-/obj/effect/floor_decal/newcorner/black/solid,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "zW" = (
 /obj/machinery/light{
 	dir = 1
 	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/theforest)
-"zZ" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "Ae" = (
 /obj/item/remains,
 /turf/simulated/floor/stone,
@@ -3055,13 +2482,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"AI" = (
-/obj/machinery/door/airlock/cone,
-/obj/item/taperoll/engineering/applied,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "AK" = (
 /obj/structure/flora/tree/pine/xmas,
 /turf/simulated/floor/snow{
@@ -3257,14 +2677,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/theforest)
-"Ck" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "Co" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -3284,12 +2696,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Cw" = (
-/obj/effect/floor_decal/newcorner/step,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "CA" = (
 /obj/structure/closet/crate,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -3336,17 +2742,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Dp" = (
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 8
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "Dw" = (
 /obj/machinery/door/airlock/security,
 /turf/simulated/floor/tiled/dark,
@@ -3357,17 +2752,6 @@
 	},
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/hangarpact)
-"DR" = (
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/door/airlock/engineering{
-	color = null;
-	name = "Substation"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "DV" = (
 /obj/machinery/computer/shuttle_control/ferry/bloodpact,
 /turf/simulated/floor,
@@ -3620,17 +3004,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"GO" = (
-/obj/machinery/door/blast/shutters{
-	dir = 2;
-	icon_state = "shutter1";
-	id = "hangarshutters"
-	},
-/obj/effect/floor_decal/snow,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "Hf" = (
 /obj/structure/grille,
 /obj/machinery/door/blast/regular{
@@ -3684,18 +3057,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"HJ" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/light{
-	dir = 1;
-	icon_state = "tube1"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "HW" = (
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/villageinside)
@@ -3866,15 +3227,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Jx" = (
-/obj/structure/catwalk,
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "JJ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/bed/chair/comfy/brown{
@@ -4078,12 +3430,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"LB" = (
-/obj/machinery/door/airlock/glass_external{
-	color = null
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "Md" = (
 /turf/simulated/shuttle/wall/corner/dark/ne,
 /area/cadiaoutpost/oa/shuttle/inquisitionpact)
@@ -4239,17 +3585,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Ox" = (
-/obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/newcorner/black/solid,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "OI" = (
 /obj/structure/closet/crate/ateopoine,
 /turf/simulated/floor/tiled/dark{
@@ -4405,12 +3740,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Qp" = (
-/obj/structure/catwalk,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "Qq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment{
@@ -4610,9 +3939,8 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "RA" = (
-/turf/simulated/shuttle/wall{
-	color = "grey";
-	icon_state = "wall3"
+/turf/simulated/wall/ancient{
+	color = null
 	},
 /area/cadiaoutpost/oa/shuttle/aquila)
 "RC" = (
@@ -4675,11 +4003,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"RT" = (
-/turf/simulated/wall/ancient{
-	color = null
-	},
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "RX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -4695,16 +4018,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Sb" = (
-/obj/effect/floor_decal/newcorner/black/solid,
-/obj/machinery/door/blast/shutters/open{
-	dir = 2;
-	icon_state = "shutter0";
-	id = "bridgeflooridlock";
-	req_access = newlist()
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
 "Se" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/structure/torchwall/service{
@@ -4732,12 +4045,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Sq" = (
-/obj/machinery/door/airlock/cone,
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "Sv" = (
 /obj/machinery/light{
 	dir = 4
@@ -4887,9 +4194,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"TR" = (
-/turf/simulated/open,
-/area/cadiaoutpost/oa/bridge/hallway)
 "TW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -5174,14 +4478,6 @@
 /obj/structure/sign/spooky,
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Wq" = (
-/obj/structure/railing{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/bridge/hallway)
 "Wt" = (
 /obj/effect/shuttle_landmark/ferry/aquila_castle,
 /obj/structure/bed/chair/comfy/captain{
@@ -5201,15 +4497,6 @@
 /obj/structure/bed/chair/comfy/brown,
 /turf/simulated/floor/wood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"WO" = (
-/obj/machinery/power/port_gen/pacman/super,
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/effect/floor_decal/industrial/outline/orange,
-/obj/effect/floor_decal/turf/splate,
-/turf/simulated/floor,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "WV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -5297,17 +4584,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"XS" = (
-/obj/machinery/power/terminal{
-	dir = 8;
-	icon_state = "term"
-	},
-/obj/effect/floor_decal/turf/splate,
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/maintenance/department/engineering/electrical)
 "XX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5317,12 +4593,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"Yp" = (
-/obj/item/ammo_box/flares,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/hangar)
 "Yt" = (
 /obj/machinery/light{
 	dir = 4
@@ -30210,7 +29480,7 @@ cJ
 cJ
 cJ
 cJ
-cJ
+aF
 cJ
 cJ
 cJ
@@ -30467,21 +29737,21 @@ cJ
 cJ
 cJ
 cJ
-cD
+cJ
+cJ
+cJ
+aF
+aF
 cJ
 cD
-cJ
-cD
-cJ
 cD
 cD
 cD
 cD
-rr
-rr
-rr
-rr
-rr
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -30725,20 +29995,20 @@ cJ
 cJ
 cJ
 cJ
-cD
+cJ
 cJ
 cD
 cJ
+cJ
 cD
 cD
 cD
 cD
 cD
-rr
-dx
-dx
-dx
-rr
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -30991,11 +30261,11 @@ cD
 cD
 cD
 cD
-rr
-dx
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -31248,30 +30518,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-dx
-cm
-rr
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -31505,30 +30775,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-dx
-dx
-rr
-Qp
-yh
-Qp
-ay
-Qp
-Qp
-Qp
-Qp
-ay
-Qp
-Qp
-Qp
-ay
-Qp
-Qp
-ay
-Qp
-Qp
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -31756,36 +31026,36 @@ md
 xw
 aD
 aD
-rr
-rr
-rr
-rr
-ms
-rr
-rr
-dx
-dx
-dx
-rr
-Qp
-cw
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -32013,36 +31283,36 @@ md
 RA
 aD
 aD
-ms
-dx
-dx
-dc
-dx
-dx
-lm
-dx
-dx
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-GO
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -32270,36 +31540,36 @@ md
 aB
 aD
 aD
-LB
-dx
-dx
-dx
-dx
-dx
-dx
-dx
-dx
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-GO
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -32527,36 +31797,36 @@ md
 RA
 aD
 aD
-ms
-dx
-dx
-zZ
-dx
-dx
-dx
-dx
-dx
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-GO
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -32784,36 +32054,36 @@ md
 xw
 aD
 aD
-rr
-rr
-rr
-rr
-rr
-rr
-rr
-dx
-dx
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-GO
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -33047,30 +32317,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-dx
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-GO
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -33296,7 +32566,7 @@ cJ
 cJ
 ak
 cD
-cJ
+ak
 cD
 cD
 cD
@@ -33304,30 +32574,30 @@ cD
 cD
 cD
 cD
-rr
-nF
-ce
-cm
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-GO
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -33551,7 +32821,7 @@ cJ
 cJ
 cJ
 cJ
-cD
+cJ
 cJ
 cD
 cJ
@@ -33561,30 +32831,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-Ck
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-aJ
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -33809,39 +33079,39 @@ cJ
 cJ
 cJ
 cJ
-cD
+cJ
+cJ
+cJ
 cJ
 cD
-cJ
 cD
 cD
 cD
 cD
 cD
-rr
-dx
-Ck
-dx
-rr
-Qp
-cw
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-aJ
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -34065,40 +33335,40 @@ cJ
 cJ
 cJ
 cJ
-cD
+cJ
+cJ
+cJ
+cJ
 cJ
 cD
-cJ
 cD
 cD
 cD
 cD
 cD
 cD
-rr
-lL
-jo
-nF
-bb
-bS
-Jx
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-bK
-Qp
-Qp
-aJ
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -34332,30 +33602,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-Ck
-dx
-rr
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-Qp
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -34589,30 +33859,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-Ck
-dx
-rr
-Qp
-bN
-Qp
-Qp
-bN
-Qp
-Qp
-Qp
-bN
-Qp
-Qp
-Qp
-bN
-Qp
-Qp
-bN
-Qp
-Qp
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -34846,30 +34116,30 @@ cD
 cD
 cD
 cD
-rr
-dx
-Ck
-cm
-rr
-AI
-rm
-aM
-aM
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -35103,16 +34373,16 @@ cD
 cD
 cD
 cD
-rr
-dx
-Ck
-dx
-rr
-bK
-bK
-bK
-bK
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -35360,16 +34630,16 @@ cD
 cD
 cD
 cD
-rr
-dx
-Ck
-dx
-rr
-bK
-bK
-Yp
-bK
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -35611,22 +34881,22 @@ cJ
 cJ
 cD
 cD
-rr
-rr
-rr
-rr
-rr
-rr
-rr
-lL
-Ck
-dx
-rr
-rm
-rm
-rm
-rm
-rm
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -35868,17 +35138,17 @@ cJ
 cJ
 cD
 cD
-rr
-bP
-Sq
-Dp
-bw
-pF
-rr
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -36125,17 +35395,17 @@ cJ
 cD
 cD
 cD
-rr
-rr
-rr
-cv
-dx
-ap
-rr
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 AZ
@@ -36382,17 +35652,17 @@ cJ
 cD
 cD
 cD
-rr
-bP
-Sq
-cv
-dx
-cm
-rr
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 AZ
@@ -36638,18 +35908,18 @@ aF
 cJ
 cD
 cD
-rr
-rr
-rr
-rr
-bX
-dx
-dx
-oH
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 AZ
@@ -36895,18 +36165,18 @@ cJ
 cJ
 cD
 cD
-rr
-ah
-cm
-rr
-hw
-dx
-cm
-rr
-lL
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 AZ
@@ -37152,18 +36422,18 @@ cJ
 cJ
 az
 cD
-rr
-ah
-dx
-eV
-cv
-dx
-ap
-rr
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 AZ
@@ -37409,18 +36679,18 @@ cJ
 cJ
 cD
 cD
-rr
-ah
-dx
-rr
-cA
-xz
-yx
-rr
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -37666,18 +36936,18 @@ aF
 cJ
 cD
 cD
-rr
-rr
-rr
-rr
-rr
-rr
-rr
-rr
-jM
-Ck
-cm
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -37923,18 +37193,18 @@ cJ
 cJ
 cD
 cD
-rr
-dc
-dx
-dx
-Cw
-aq
-bY
-zS
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -38180,18 +37450,18 @@ cJ
 cJ
 cD
 cD
-rr
-dx
-on
-dx
-Cw
-Sb
-bY
-bY
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -38437,18 +37707,18 @@ cJ
 cJ
 cD
 cD
-rr
-bI
-TR
-dx
-dx
-kq
-dx
-dx
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -38694,18 +37964,18 @@ cJ
 cJ
 az
 cD
-rr
-ub
-TR
-dx
-cm
-rr
-sJ
-dx
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -38951,18 +38221,18 @@ cJ
 cJ
 cD
 cD
-rr
-bI
-TR
-dx
-dx
-rr
-dx
-dx
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -39208,18 +38478,18 @@ cJ
 cJ
 cD
 cD
-rr
-dx
-Wq
-dx
-Cw
-aq
-bY
-bY
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -39465,18 +38735,18 @@ cJ
 cJ
 cD
 cD
-rr
-zZ
-dx
-dx
-cp
-cW
-de
-Ox
-nF
-ce
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -39722,18 +38992,18 @@ ak
 cJ
 cD
 cD
-rr
-rr
-RT
-RT
-xp
-RT
-RT
-RT
-rY
-ce
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -39981,16 +39251,16 @@ cD
 cD
 cD
 cD
-RT
-RT
-xU
-gO
-bR
-RT
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 AZ
 AZ
 AZ
@@ -40238,16 +39508,16 @@ cD
 cD
 cD
 cD
-RT
-aP
-cY
-XS
-bE
-RT
-lL
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 AZ
 AZ
@@ -40495,16 +39765,16 @@ cJ
 cJ
 cD
 cD
-RT
-wi
-nm
-cY
-aU
-RT
-dx
-Ck
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -40752,16 +40022,16 @@ cJ
 cJ
 cD
 cD
-RT
-RT
-WO
-jt
-mC
-DR
-ps
-lG
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -41010,15 +40280,15 @@ cJ
 cD
 cD
 cD
-RT
-kD
-ax
-bE
-RT
-Ck
-dx
-cm
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -41267,15 +40537,15 @@ cJ
 cJ
 cD
 cD
-RT
-RT
-RT
-RT
-RT
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -41528,11 +40798,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -41785,11 +41055,11 @@ cD
 cD
 cD
 cD
-rr
-HJ
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -42042,11 +41312,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -42299,11 +41569,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -42556,11 +41826,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-cm
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -42813,11 +42083,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -43070,11 +42340,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -43327,11 +42597,11 @@ cD
 cD
 cD
 cD
-rr
-HJ
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -43584,11 +42854,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -43841,11 +43111,11 @@ cD
 cD
 cD
 cD
-rr
-Ck
-dx
-dx
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -44098,11 +43368,11 @@ cD
 cD
 cD
 cD
-rr
-dx
-dx
-cm
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cD
@@ -44355,11 +43625,11 @@ cD
 cD
 cD
 cD
-rr
-rr
-rr
-rr
-rr
+cD
+cD
+cD
+cD
+cD
 cD
 cD
 cJ
@@ -45898,10 +45168,10 @@ cJ
 cJ
 cJ
 cJ
-cD
-cD
-cD
-cD
+cJ
+cJ
+cJ
+cJ
 cJ
 cJ
 cJ
@@ -46156,7 +45426,7 @@ cJ
 cJ
 cJ
 cJ
-cD
+cJ
 cJ
 cJ
 cJ
@@ -47441,7 +46711,7 @@ cJ
 cJ
 cJ
 cJ
-Ei
+xG
 cJ
 cJ
 cJ

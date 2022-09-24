@@ -40,6 +40,7 @@
 	/datum/job/innkeeper,
 	/datum/job/hydro,
 	/datum/job/undertaker,
+	/datum/job/pathfinder,
 	/datum/job/penitent,
 	/datum/job/bouncer,
 	)
