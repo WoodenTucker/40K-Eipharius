@@ -170,7 +170,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
+		H.add_stats(rand(17,19), rand(15,17), rand(16,17), rand (10,16)) //if you are a FUCKING SPECIALIST you must be atleast a BIT more special than your fellow guardsmen.
 		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -189,7 +189,7 @@
 		switch(title)
 			if("Cadian Plasma Gunner" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
 				if(title == "Catachan Flamer")
-					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
+					H.add_skills(rand(9,10),rand(7,10),rand(3,6),rand(1,4),rand(1,3))
 				if(title == "Valhallan Heavy Autogunner")
 					H.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(1,4),rand(1,3))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
