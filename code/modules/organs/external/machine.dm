@@ -199,6 +199,8 @@
 	arterial_bleed_severity = null
 	gibbable = FALSE
 	robotic = ORGAN_ROBOT
+	var/can_toggle = 1
+	var/is_toggled = 1
 	
 /obj/item/organ/external/robotic/arm
 	organ_tag = BP_L_ARM
