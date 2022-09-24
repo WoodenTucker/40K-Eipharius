@@ -181,8 +181,9 @@
 	name = "Robotic"
 	brute_mod = 0.7                  // Multiplier for incoming brute damage. //Made of metal, they're harder to damage.
 	burn_mod = 0.2                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant.
-	toxins_mod = 0
+	var/toxins_mod = 0
 	icon_name = null
+	icon = 'icons/mob/human_races/cyberlimbs/nanotrasen/nanotrasen_main.dmi'
 	max_damage = 60
 	min_broken_damage = 45
 	w_class = ITEM_SIZE_HUGE
