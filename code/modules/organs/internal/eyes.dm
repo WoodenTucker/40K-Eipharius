@@ -82,30 +82,25 @@
 
 /obj/item/organ/internal/eyes/augmetic
 	name = "Augmetic eyeballs"
-	icon_state = "eyes"
+	icon_state = "eyes-prosthetic"
 	gender = PLURAL
 	organ_tag = BP_EYES
 	parent_organ = BP_HEAD
 	surface_accessible = TRUE
 	relative_size = 10
-	var/phoron_guard = 0
-	var/list/eye_colour = list(0,0,0)
-	var/innate_flash_protection = FLASH_PROTECTION_MINOR
+	phoron_guard = 0
+	list/eye_colour = list(0,0,0)
+	innate_flash_protection = FLASH_PROTECTION_MINOR
 	max_damage = 45
 	sales_price = 20
 	robotic = ORGAN_ROBOT
+	var/can_toggle = 1
+	var/is_toggled = 1
 
 /obj/item/organ/internal/eyes/augmetic/advanced
 	name = "Advanced augmetic eyeballs"
 	icon_state = "eyes"
-	gender = PLURAL
-	organ_tag = BP_EYES
-	parent_organ = BP_HEAD
-	surface_accessible = TRUE
-	relative_size = 10
-	var/phoron_guard = 0
-	var/list/eye_colour = list(0,0,0)
-	var/innate_flash_protection = FLASH_PROTECTION_NONE
+	innate_flash_protection = FLASH_PROTECTION_NONE
 	max_damage = 80
 	sales_price = 45
 	vision_flags = SEE_MOBS
@@ -120,14 +115,7 @@
 /obj/item/organ/internal/eyes/augmetic/advanced/upgraded
 	name = "Upgraded advanced augmetic eyeballs"
 	icon_state = "eyes"
-	gender = PLURAL
-	organ_tag = BP_EYES
-	parent_organ = BP_HEAD
-	surface_accessible = TRUE
-	relative_size = 10
-	var/phoron_guard = 0
-	var/list/eye_colour = list(0,0,0)
-	var/innate_flash_protection = FLASH_PROTECTION_MAJOR
+	innate_flash_protection = FLASH_PROTECTION_MAJOR
 	max_damage = 80
 	sales_price = 90
 	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
@@ -140,17 +128,9 @@
 /obj/item/organ/internal/eyes/augmetic/experimental
 	name = "Experimental augmetic eyeballs"
 	icon_state = "eyes"
-	gender = PLURAL
-	organ_tag = BP_EYES
-	parent_organ = BP_HEAD
-	surface_accessible = TRUE
-	relative_size = 10
-	var/phoron_guard = 0
-	var/list/eye_colour = list(0,0,0)
-	var/innate_flash_protection = FLASH_PROTECTION_MAJOR
+	innate_flash_protection = FLASH_PROTECTION_MAJOR
 	max_damage = 80
 	sales_price = 90
-	vision_flags = SEE_MOBS
 	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
 	darkness_view = 20
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
