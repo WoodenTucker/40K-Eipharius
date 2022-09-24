@@ -177,7 +177,7 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("[H.real_name]")
+		H.fully_replace_character_name("Specialist [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 
