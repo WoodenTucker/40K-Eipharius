@@ -154,12 +154,12 @@
 	spawn_positions = 2
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 7
-	shotgun_skill = 6
-	lmg_skill = 8
-	smg_skill = 8
+	auto_rifle_skill = 9 //fuckin hell man
+	semi_rifle_skill = 9
+	sniper_skill = 10
+	shotgun_skill = 9 
+	lmg_skill = 10
+	smg_skill = 9
 	cultist_chance = 10
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
@@ -170,7 +170,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(17,19), rand(15,17), rand(16,17), rand (10,16)) //if you are a FUCKING SPECIALIST you must be atleast a BIT more special than your fellow guardsmen.
+		H.add_stats(rand(17,19), rand(15,17), rand(16,17), rand (14,16)) //if you are a FUCKING SPECIALIST you must be atleast a BIT more special than your fellow guardsmen.
 		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
