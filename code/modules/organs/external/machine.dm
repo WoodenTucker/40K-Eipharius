@@ -179,9 +179,9 @@
 /obj/item/organ/external/robotic
 	organ_tag = null
 	name = "Robotic"
-	brute_mod = 0.9                  // Multiplier for incoming brute damage.
-	burn_mod = 0.7                   // As above for burn.
-	tox_mod = 0
+	brute_mod = 0.7                  // Multiplier for incoming brute damage. //Made of metal, they're harder to damage.
+	burn_mod = 0.2                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant.
+	toxins_mod = 0
 	icon_name = null
 	max_damage = 60
 	min_broken_damage = 45
