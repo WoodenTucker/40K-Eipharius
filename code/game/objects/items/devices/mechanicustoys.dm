@@ -367,7 +367,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/energy/pulse/plasmapistol
+	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 600
 	self_recharge = 1
 	cell_type = /obj/item/cell/lasgun
@@ -390,7 +390,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	move_delay = 2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/energy/pulse/plasmarifle
+	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
 	charge_cost = 1500
 	self_recharge = 1
 	cell_type = /obj/item/cell/lasgun
