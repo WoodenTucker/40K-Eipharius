@@ -174,3 +174,338 @@
 			if(response == "Yes")
 				persistantMind.transfer_to(stored_mmi.brainmob)
 	qdel(src)
+
+
+/obj/item/organ/external/robotic
+	organ_tag = null
+	name = "Robotic"
+	brute_mod = 0.7                  // Multiplier for incoming brute damage. //Made of metal, they're harder to damage.
+	burn_mod = 0.2                   // As above for burn. //Mechanical limbs* can* be burned, but they're far more resistant.
+	var/toxins_mod = 0
+	icon_name = null
+	icon = 'icons/mob/human_races/cyberlimbs/nanotrasen/nanotrasen_main.dmi'
+	max_damage = 60
+	min_broken_damage = 45
+	w_class = ITEM_SIZE_HUGE
+	body_part = null
+	parent_organ = null
+	joint = null
+	amputation_point = null
+	can_grasp = 0
+	pain = 0
+	has_tendon = FALSE
+	tendon_name = null
+	artery_name = null
+	arterial_bleed_severity = null
+	gibbable = FALSE
+	robotic = ORGAN_ROBOT
+	var/can_toggle = 1
+	var/is_toggled = 1
+	
+/obj/item/organ/external/robotic/arm
+	organ_tag = BP_L_ARM
+	name = "Augmetic left arm"
+	icon_name = "l_arm"
+	max_damage = 60
+	min_broken_damage = 50
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/right
+	organ_tag = BP_R_ARM
+	name = "Augmetic right arm"
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"
+
+/obj/item/organ/external/robotic/leg
+	organ_tag = BP_L_LEG
+	name = "Augmetic left leg"
+	icon_name = "l_leg"
+	max_damage = 80
+	min_broken_damage = 70
+	w_class = ITEM_SIZE_NORMAL
+	body_part = LEG_LEFT
+	icon_position = LEFT
+	parent_organ = BP_GROIN
+	joint = "left knee"
+	amputation_point = "left hip"
+	can_stand = 1
+
+/obj/item/organ/external/robotic/leg/right
+	organ_tag = BP_R_LEG
+	name = "Augmetic right leg"
+	icon_name = "r_leg"
+	body_part = LEG_RIGHT
+	icon_position = RIGHT
+	joint = "right knee"
+	amputation_point = "right hip"
+
+/obj/item/organ/external/robotic/foot
+	organ_tag = BP_L_FOOT
+	name = "Augmetic left foot"
+	icon_name = "l_foot"
+	max_damage = 70
+	min_broken_damage = 60
+	w_class = ITEM_SIZE_SMALL
+	body_part = FOOT_LEFT
+	icon_position = LEFT
+	parent_organ = BP_L_LEG
+	joint = "left ankle"
+	amputation_point = "left ankle"
+	can_stand = 1
+
+/obj/item/organ/external/robotic/foot/right
+	organ_tag = BP_R_FOOT
+	name = "Augmetic right foot"
+	icon_name = "r_foot"
+	body_part = FOOT_RIGHT
+	icon_position = RIGHT
+	parent_organ = BP_R_LEG
+	joint = "right ankle"
+	amputation_point = "right ankle"
+
+/obj/item/organ/external/robotic/hand
+	organ_tag = BP_L_HAND
+	name = "Augmetic left hand"
+	icon_name = "l_hand"
+	max_damage = 80
+	min_broken_damage = 70
+	w_class = ITEM_SIZE_SMALL
+	body_part = HAND_LEFT
+	parent_organ = BP_L_ARM
+	joint = "left wrist"
+	amputation_point = "left wrist"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/hand/right
+	organ_tag = BP_R_HAND
+	name = "Augmetic right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+
+/obj/item/organ/external/robotic/hand/advanced
+	name = "Advanced augmetic left hand"
+	icon_name = "l_hand"
+	max_damage = 120
+	min_broken_damage = 110
+
+/obj/item/organ/external/robotic/hand/advanced/verb/toggle_las_light()
+	set name =  "Deploy Las-Striker"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/las/light))
+			visible_message("<span class='warning'> [usr] quickly retracts the las-striker.</span>", "<span class='notice'>You put away the las-striker!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/light))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the las-striker.</span>", "<span class='notice'>You put away the las-striker!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the las-striker.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the las-striker.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/light(usr))
+		src.is_toggled = 2
+
+/obj/item/organ/external/robotic/hand/advanced/right
+	organ_tag = BP_R_HAND
+	name = "Advanced augmetic right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+	
+/obj/item/organ/external/robotic/arm/advanced
+	organ_tag = BP_L_ARM
+	name = "Advanced augmetic left arm"
+	icon_name = "l_arm"
+	max_damage = 200
+	min_broken_damage = 150
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/advanced/verb/toggle_las_medium()
+	set name =  "Deploy Heavy Las-Striker"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/las/medium))
+			visible_message("<span class='warning'> [usr] quickly retracts the heavy las-striker.</span>", "<span class='notice'>You put away the heavy las-striker!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/las/medium))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the heavy las-striker.</span>", "<span class='notice'>You put away the heavy las-striker!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the heavy las-striker.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the heavy las-striker.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/medium(usr))
+		src.is_toggled = 2
+	
+/obj/item/organ/external/robotic/arm/advanced/right
+	organ_tag = BP_R_ARM
+	name = "Advanced augmetic right arm"
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"
+
+/obj/item/organ/external/robotic/hand/experimental
+	name = "Experimental augmetic left hand"
+	icon_name = "l_hand"
+	max_damage = 180
+	min_broken_damage = 160
+
+/obj/item/organ/external/robotic/hand/experimental/verb/toggle_plasma_light()
+	set name =  "Deploy Augmetic Plasma Pistol"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/plasma/light))
+			visible_message("<span class='warning'> [usr] quickly retracts the plasma pistol.</span>", "<span class='notice'>You put away the plasma pistol!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/plasma/light))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the plasma pistol.</span>", "<span class='notice'>You put away the plasma pistol!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the plasma pistol.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the plasma pistol.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/plasma/light(usr))
+		src.is_toggled = 2
+
+obj/item/organ/external/robotic/hand/experimental/right
+	organ_tag = BP_R_HAND
+	name = "Experimental augmetic right hand"
+	icon_name = "r_hand"
+	body_part = HAND_RIGHT
+	parent_organ = BP_R_ARM
+	joint = "right wrist"
+	amputation_point = "right wrist"
+
+/obj/item/organ/external/robotic/arm/experimental
+	organ_tag = BP_L_ARM
+	name = "Experimental augmetic left arm"
+	icon_name = "l_arm"
+	max_damage = 220
+	min_broken_damage = 160
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/experimental/verb/toggle_plasma_medium()
+	set name =  "Deploy Augmetic Plasma Rifle"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/plasma/medium))
+			visible_message("<span class='warning'> [usr] quickly retracts the plasma rifle.</span>", "<span class='notice'>You put away the plasma rifle!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/plasma/medium))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the plasma rifle.</span>", "<span class='notice'>You put away the plasma rifle!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the plasma rifle.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the plasma rifle.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/plasma/medium(usr))
+		src.is_toggled = 2
+
+/obj/item/organ/external/robotic/arm/experimental/right
+	organ_tag = BP_R_ARM
+	name = "Experimental right arm"
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"
+
+/obj/item/organ/external/robotic/arm/seolite
+	organ_tag = BP_L_ARM
+	name = "A strangely formed left arm"
+	icon_name = "l_arm"
+	max_damage = 220
+	min_broken_damage = 160
+	w_class = ITEM_SIZE_NORMAL
+	body_part = ARM_LEFT
+	parent_organ = BP_CHEST
+	joint = "left elbow"
+	amputation_point = "left shoulder"
+	can_grasp = 1
+
+/obj/item/organ/external/robotic/arm/seolite/verb/toggle_seolite_toxin()
+	set name =  "Deploy Seolite Toxin Beamer"
+	set category = "Augmetics"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+		return
+	if(src.is_toggled == 2)
+		if(istype(usr.l_hand, /obj/item/gun/energy/augmetic/seolite/neurotoxin))
+			visible_message("<span class='warning'> [usr] quickly retracts the strange weapon.</span>", "<span class='notice'>You put away the strange weapon!</span>", "<span class='warning>What was that sound?</span>")
+			qdel(usr.l_hand)
+			update_icon()
+	if(istype(usr.r_hand, /obj/item/gun/energy/augmetic/seolite/neurotoxin))
+		qdel(usr.r_hand)
+		visible_message("<span class='warning'>  [usr] quickly retracts the strange weapon.</span>", "<span class='notice'>You put away the strange weapon!</span>", "<span class='warning>What was that sound?</span>")
+		src.icon_state = initial(icon_state)
+		to_chat(usr,"You put away the seolite toxin beamer.")
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out the strange weapon.")
+		usr.put_in_hands(new /obj/item/gun/energy/augmetic/seolite/neurotoxin(usr))
+		src.is_toggled = 2
+	
+/obj/item/organ/external/robotic/arm/seolite/right
+	organ_tag = BP_R_ARM
+	name = "A strangely formed right arm"
+	icon_name = "r_arm"
+	body_part = ARM_RIGHT
+	joint = "right elbow"
+	amputation_point = "right shoulder"
