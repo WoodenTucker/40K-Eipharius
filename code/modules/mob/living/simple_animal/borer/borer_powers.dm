@@ -123,7 +123,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		var/list/L = get_player_antags(src.mind, ROLE_BORER)
 		var/datum/antagonist/borer/borer
 		if(L.len)
-			borer = L[1]*/
+			borer = L[1]
 
 		if(ishuman(M))
 			var/mob/living/carbon/human/H = M
@@ -135,7 +135,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 				var/obj/item/organ/external/head = H.get_organ(BP_HEAD)
 				head.implants += src
 
-/*
+
 /mob/living/simple_animal/borer/verb/devour_brain()
 	set category = "Abilities"
 	set name = "Devour Brain"
@@ -153,7 +153,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 		return
 	to_chat(src, "<span class = 'danger'>It only takes a few moments to render the dead host brain down into a nutrient-rich slurry...</span>")
 	replace_brain()
-*/
+
 
 // BRAIN WORM ZOMBIES AAAAH.
 /mob/living/simple_animal/borer/proc/replace_brain()
@@ -209,7 +209,7 @@ GLOBAL_LIST_INIT(borer_reagent_types_by_name, setup_borer_reagents())
 			H.adjustToxLoss(-10)
 			all_damage = H.getBruteLoss() + H.getFireLoss() + H.getCloneLoss() + H.getOxyLoss() + H.getToxLoss()
 		H.stat = UNCONSCIOUS
-		H.updatehealth()
+		H.updatehealth()*/
 
 /mob/living/simple_animal/borer/proc/secrete_chemicals()
 	set category = "Abilities"
