@@ -362,8 +362,9 @@ Begin Warhammer loadouts
 	uniform = /obj/item/clothing/under/color/brown
 	suit = /obj/item/clothing/suit/armor/enforcer
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/baton/loaded
+	belt = /obj/item/gun/projectile/slugrevolver
 	gloves = /obj/item/clothing/gloves/combat/cadian
+	r_hand = /obj/item/melee/baton/loaded
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	mask = null
@@ -375,12 +376,13 @@ Begin Warhammer loadouts
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/headset_service
 	backpack_contents = list(
-	/obj/item/ammo_box/shotgun = 2,
-	/obj/item/handcuffs = 2,
+	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/ammo_magazine/box/shotgun/stun = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones2 = 2,
+	/obj/item/stack/thrones3/five = 1,
 	)
 
 	pda_slot = null

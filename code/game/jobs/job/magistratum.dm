@@ -16,7 +16,7 @@
 	smg_skill = 7
 	cultist_chance = 15
 	can_be_in_squad = FALSE
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	department_flag = SEC
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
@@ -122,22 +122,21 @@ Begin Warhammer loadouts
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	suit = /obj/item/clothing/suit/armor/enforcer
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	r_hand = /obj/item/melee/baton/loaded
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/melee/baton/loaded
+	belt = /obj/item/gun/projectile/slugrevolver
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
-	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
 	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/handcuffs = 2,
+	/obj/item/ammo_magazine/box/shotgun/stun = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones2/five = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -160,9 +159,7 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c50/ms = 1,
-	/obj/item/ammo_magazine/c50/ms = 1,
-	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_magazine/c50/ms = 3,
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -171,7 +168,7 @@ Begin Warhammer loadouts
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
+/* // this isn't used rn.
 /decl/hierarchy/outfit/job/ig/arbitrator
 	name = OUTFIT_JOB_NAME("Magistratum Arbitrator")
 	uniform = /obj/item/clothing/under/color/brown
@@ -194,3 +191,4 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
+	*/
