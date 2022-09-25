@@ -156,9 +156,9 @@
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
-	sniper_skill = 7
-	shotgun_skill = 6
-	lmg_skill = 8
+	sniper_skill = 10
+	shotgun_skill = 8
+	lmg_skill = 10
 	smg_skill = 8
 	cultist_chance = 10
 	alt_titles = list(
@@ -170,29 +170,27 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
-		H.add_skills(rand(6,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(17,18), rand(14,16), rand(17,18), rand (14,16)) //Specialists are special, they arent every single random ass soldier
+		H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("[H.real_name]")
+		H.fully_replace_character_name("Specialist [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
-
+		to_chat(H, "<span class='notice'><b><font size=2>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=2> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
 
 		switch(title)
 			if("Cadian Plasma Gunner" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
 				if(title == "Catachan Flamer")
-					H.add_skills(rand(8,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
+					H.add_skills(rand(9,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
 				if(title == "Valhallan Heavy Autogunner")
-					H.add_skills(rand(7,10),rand(8,10),rand(3,4),rand(3,5),rand(1,5))
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
 
 
 // snipings a good job mate
@@ -204,7 +202,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/sniper
 	auto_rifle_skill = 7
 	semi_rifle_skill = 9
-	sniper_skill = 9
+	sniper_skill = 11
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
@@ -219,7 +217,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
-		H.add_skills(rand(6,10),rand(9,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(7,10),rand(10,11),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -237,9 +235,9 @@
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
 				if(title == "Krieg Marksman")
-					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
 				if(title == "Valhallan Scout Sniper")
-					H.add_skills(rand(8,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
 
 
