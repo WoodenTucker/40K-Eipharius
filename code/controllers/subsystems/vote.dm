@@ -270,8 +270,6 @@ SUBSYSTEM_DEF(vote)
 /datum/controller/subsystem/vote/proc/submit_vote(var/ckey, var/vote, var/weight)
 	if(!mode)
 		return 0
-	if(config.vote_no_dead && usr.stat == DEAD && !usr.client.holder)
-		return 0
 	if(vote && vote >= 1 && vote <= choices.len)
 		if(current_high_votes[ckey] && (current_high_votes[ckey] == vote || weight == 3))
 			choices[choices[current_high_votes[ckey]]] -= 3
