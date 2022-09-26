@@ -661,7 +661,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 0.4
 	self_recharge = 1
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 16 // something something its recharging
+	fire_delay = 19 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -682,7 +682,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 0
 	self_recharge = 1
 	move_delay = 4 //it a pistol, but giga cool plasma
-	fire_delay = 14 // unsure if decent. dont want fast fire rate
+	fire_delay = 17 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -702,7 +702,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 1
 	self_recharge = 1
 	move_delay = 3 //it a pistol
-	fire_delay = 13 // unsure if decent. dont want fast fire rate
+	fire_delay = 16 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
@@ -721,7 +721,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 6 //change later?
 	accuracy = 0
 	move_delay = 3.5 //it a pistol
-	fire_delay = 13 // unsure if decent. dont want fast fire rate
+	fire_delay = 16 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -741,7 +741,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 7 //until plasma is better balanced, wield this fancy one.
 	accuracy = 1
 	move_delay = 3.5
-	fire_delay = 13
+	fire_delay = 16
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -764,7 +764,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 5 //change later?
 	accuracy = 1
 	move_delay = 3 //it a pistol, but giga cool plasma
-	fire_delay = 13 // unsure if decent. dont want fast fire rate
+	fire_delay = 15 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -785,7 +785,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 4 //change later?
 	accuracy = 0
 	move_delay = 2 //it a pistol, but giga cool plasma
-	fire_delay = 12 // unsure if decent. dont want fast fire rate
+	fire_delay = 14 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol

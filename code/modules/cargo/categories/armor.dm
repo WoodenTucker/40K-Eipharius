@@ -51,20 +51,30 @@
 	cost = 27
 	item_path = /obj/item/clothing/head/helmet/space/void/engineering/alt
 
-/datum/cargo_entry/armor/metalhelm
-	name = "Metal Helmet"
-	cost = 9
-	item_path = /obj/item/clothing/head/helmet/metalhelmet
+/datum/cargo_entry/armor/heavyduster2
+	name = "Ganger Duster"
+	cost = 38
+	item_path = /obj/item/clothing/suit/armor/ranger3
+
+/datum/cargo_entry/armor/heavyduster1
+	name = "Colonial Duster"
+	cost = 41
+	item_path = /obj/item/clothing/suit/armor/ranger2
+
+/datum/cargo_entry/armor/necroflakv
+	name = "Necromunda Flak Vest"
+	cost = 42
+	item_path = /obj/item/clothing/suit/armor/flak2
 
 /datum/cargo_entry/armor/necroflak
 	name = "Necromunda Flak Armor"
 	cost = 47
 	item_path = /obj/item/clothing/suit/armor/flak1
 
-/datum/cargo_entry/armor/necroflakv
-	name = "Necromunda Flak Vest"
-	cost = 37
-	item_path = /obj/item/clothing/suit/armor/flak2
+/datum/cargo_entry/armor/necroflakheavy
+	name = "Heavy Flak Armor"
+	cost = 57
+	item_path = /obj/item/clothing/suit/armor/necromundaflak1
 
 /datum/cargo_entry/armor/necrocara1
 	name = "Necromunda Carapace Armor"
@@ -76,10 +86,20 @@
 	cost = 77
 	item_path = /obj/item/clothing/suit/armor/carapace3
 
+/datum/cargo_entry/armor/necrocaraheavy
+	name = "Heavy Carapace Armor"
+	cost = 86
+	item_path = /obj/item/clothing/suit/armor/necromundacarapace1
+
 /datum/cargo_entry/armor/necrocara3
 	name = "Heavy Carapace Suit"
 	cost = 87
 	item_path = /obj/item/clothing/suit/armor/carapace4
+
+/datum/cargo_entry/armor/metalhelm
+	name = "Metal Helmet"
+	cost = 9
+	item_path = /obj/item/clothing/head/helmet/metalhelmet
 
 /datum/cargo_entry/armor/necrohelm
 	name = "Necromunda Helmet"

@@ -260,7 +260,7 @@
 	var/dat = "<B>Imperial Tithe:</B><BR>"
 	dat += "[GLOB.thrones] throne balance<BR>"
 	dat += "<B>Tithe owed to the Imperium</B></BR>"
-	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (750)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (200)</A><BR>"
 	dat += "<B>Set the tax rate:</B></BR>"
 	dat += "<A href='byond://?src=\ref[src];tax=1'>Set tax rate (default is 15%)</A><BR>"
 	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
@@ -274,44 +274,39 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["tithe"])
-		if(GLOB.thrones < 750) //do we got enough shekels?
+		if(GLOB.thrones < 200) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		else
 			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
-			GLOB.thrones -= 750 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 200 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			GLOB.tithe_paid = 1 //yay we paid the tithe
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
 	if (href_list["tax"])
-		var/taxrates = list("fifteen", "twenty", "twenty-five", "thirty", "thirty-five", "fourty", "fourty-five", "fifty",) //lists tax rates, we'll do set ones for now
+		var/taxrates = list("5", "10", "15", "20", "25", "30",) //lists tax rates, we'll do set ones for now
 		var/taxchoice = input("Choose the tax rate", "Available rates") as null|anything in taxrates
 
 		switch(taxchoice)
-			if("fifteen")
+			if("5")
+				GLOB.tax_rate = 0.5
+				to_world("<span class='warning'>[usr] has set the tax rate to 5%!</span>")
+			if("10")
+				GLOB.tax_rate = 0.10
+				to_world("<span class='warning'>[usr] has set the tax rate to 10%!</span>")
+			if("15")
 				GLOB.tax_rate = 0.15
 				to_world("<span class='warning'>[usr] has set the tax rate to 15%!</span>")
-			if("twenty")
+			if("20")
 				GLOB.tax_rate = 0.20
 				to_world("<span class='warning'>[usr] has set the tax rate to 20%!</span>")
-			if("twenty-five")
+			if("25")
 				GLOB.tax_rate = 0.25
 				to_world("<span class='warning'>[usr] has set the tax rate to 25%!</span>")
-			if("thirty")
+			if("30")
 				GLOB.tax_rate = 0.30
 				to_world("<span class='warning'>[usr] has set the tax rate to 30%!</span>")
-			if("thirty-five")
-				GLOB.tax_rate = 0.35
-				to_world("<span class='warning'>[usr] has set the tax rate to 35%!</span>")
-			if("fourty")
-				GLOB.tax_rate = 0.40
-				to_world("<span class='warning'>[usr] has set the tax rate to 40%!</span>")
-			if("fourty-five")
-				GLOB.tax_rate = 0.45
-				to_world("<span class='warning'>[usr] has set the tax rate to 45%!</span>")
-			if("fifty")
-				GLOB.tax_rate = 0.50
-				to_world("<span class='warning'>[usr] has set the tax rate to 50%!</span>")
+
 
 
 /obj/machinery/computer/tithecogitator/attack_paw(mob/user as mob)
