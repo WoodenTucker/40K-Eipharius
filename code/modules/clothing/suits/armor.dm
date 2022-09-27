@@ -1056,7 +1056,7 @@ obj/item/clothing/suit/armor
 	sales_price = 30
 /obj/item/clothing/suit/armor/heavyflaksuit/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1.2
+	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/fraterisarmor
 	name = "Frateris Robes"
@@ -1081,7 +1081,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/trinet/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.6
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/breastplate
 	name = "Iron Breastplate"
@@ -1095,7 +1095,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/breastplate/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.2
 
 /obj/item/clothing/suit/armor/heavyduster
 	name = "Mysterious Duster"
@@ -1121,7 +1121,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/iplate/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/armor/templar
 	name = "Full Plate Armor"
@@ -1135,7 +1135,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/templar/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/armor/knighthosp
 	name = "Frateris Plate"
@@ -1149,7 +1149,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/knighthosp/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.5
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/hauberk
 	name = "Hauberk"
@@ -1163,7 +1163,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/hauberk/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.2
 
 /obj/item/clothing/suit/armor/slaverobe
 	name = "Serf Robes"
@@ -1191,7 +1191,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/armoredtrench/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.5
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/armor/vanpa
 	name = "Van Saar Power Armor"
@@ -1206,7 +1206,7 @@ obj/item/clothing/suit/armor
 	sales_price = 80
 /obj/item/clothing/suit/armor/vanpa/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1.2
+	slowdown_per_slot[slot_wear_suit] = 0.6
 
 /obj/item/clothing/suit/armor/berserker
 	name = "Berserker Power Armor"
@@ -1236,7 +1236,7 @@ obj/item/clothing/suit/armor
 	sales_price = 20
 /obj/item/clothing/suit/armor/goliathplate/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1.1
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/armor/goliatharmor
 	name = "Raider Cuirass"
@@ -1250,7 +1250,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/goliatharmor/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/sniper
 	name = "Ghillie Suit"
@@ -1289,7 +1289,7 @@ obj/item/clothing/suit/armor
 	sales_price = 60
 /obj/item/clothing/suit/armor/seolsuit/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1.4
+	slowdown_per_slot[slot_wear_suit] = 0.8
 
 /obj/item/clothing/suit/armor/flak1
 	name = "Necromundan Flak Armor"
@@ -1361,7 +1361,7 @@ obj/item/clothing/suit/armor
 	sales_price = 35
 /obj/item/clothing/suit/armor/carapace4/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/goliath2
 	name = "Goliath Flak Armor"
@@ -1376,7 +1376,7 @@ obj/item/clothing/suit/armor
 	sales_price = 15
 /obj/item/clothing/suit/armor/goliath2/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/greypa
 	name = "Mechanicus Power Armour"
@@ -1406,7 +1406,7 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 /obj/item/clothing/suit/armor/rpowerarmor/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.6
+	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/scum2
 	name = "Mysterious Garb"
@@ -1523,7 +1523,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/goliath2/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.6
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/armor/tduster
 	name = "Armored Duster"
@@ -1542,6 +1542,60 @@ obj/item/clothing/suit/armor
 	icon_state = "ranger"
 	item_state = "ranger"
 	armor = list(melee = 49, bullet = 44, laser = 44, energy = 25, bomb = 38, bio = 30, rad = 30)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+// ARMORS PHASE TWO
+
+/obj/item/clothing/suit/armor/necromundaflak1
+	name = "Heavy Flak Armor"
+	desc = "Unmarked heavy flak armor manufactured by the underhives of Necromunda."
+	icon_state = "necromundaflak"
+	item_state = "necromundaflak"
+	armor = list(melee = 40, bullet = 48, laser = 48, energy = 25, bomb = 40, bio = 30, rad = 30)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 15
+/obj/item/clothing/suit/armor/necromundaflak1/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.3
+
+/obj/item/clothing/suit/armor/necromundacarapace1
+	name = "Heavy Carapace Armor"
+	desc = "Unmarked heavy flak armor manufactured by the underhives of Necromunda."
+	icon_state = "necromundacarapace"
+	item_state = "necromundacarapace"
+	armor = list(melee = 48, bullet = 58, laser = 58, energy = 25, bomb = 48, bio = 30, rad = 30)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 31
+/obj/item/clothing/suit/armor/necromundacarapace1/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
+/obj/item/clothing/suit/armor/ranger2
+	name = "Colonial Duster"
+	desc = "A duster with a flak plate insert, sewn together with grox leather."
+	icon_state = "ranger2"
+	item_state = "ranger2"
+	armor = list(melee = 41, bullet = 46, laser = 43, energy = 25, bomb = 25, bio = 30, rad = 31)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/ranger3
+	name = "Ganger Duster"
+	desc = "A duster with a flak plate insert, sewn together with grox leather."
+	icon_state = "ranger3"
+	item_state = "ranger3"
+	armor = list(melee = 51, bullet = 41, laser = 35, energy = 25, bomb = 25, bio = 40, rad = 39)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
