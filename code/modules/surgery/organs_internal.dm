@@ -186,7 +186,7 @@
 //	 Organ removal surgery step
 //////////////////////////////////////////////////////////////////
 /datum/surgery_step/internal/remove_organ
-	priority = 2
+	priority = 3
 	allowed_tools = list(
 	/obj/item/hemostat = 100,	\
 	/obj/item/wirecutters = 75, \

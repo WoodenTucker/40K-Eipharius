@@ -643,7 +643,7 @@
 	armor_penetration = 40
 	embed = 1
 	sharp = 1
-	light_power = 0 
+	light_power = 0
 	light_range = 0
 	penetration_modifier = 1
 	penetrating = 200
@@ -656,9 +656,9 @@
 
 /obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
 	if(istype(target, /mob/living/carbon/human))
-	var/mob/living/carbon/human/M = target
-	M.gib()
-	qdel(M)
+		var/mob/living/carbon/human/M = target
+		M.gib()
+		qdel(M)
 
 /obj/item/projectile/bullet/rifle/exitus/toxin
 	damage_type = TOX

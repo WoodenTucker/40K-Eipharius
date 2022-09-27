@@ -40,7 +40,7 @@
 
 /obj/item/pickaxe
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	name = "pickaxe"
+	name = "ospickaxe"
 	desc = "It's a pickaxe. You hit rocks with it. And people with it too if you feel like."
 	icon = 'icons/obj/mining.dmi'
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_ICLOTHING

@@ -3398,7 +3398,7 @@
 	return ..()
 
 /obj/item/reagent_containers/food/snacks/warfare/attackby(obj/item/W, mob/user)
-	if(istype(W,/obj/item/material/sword/combat_knife))
+	if(W.sharp)
 		open(user)
 		update_icon()
 
