@@ -33,7 +33,7 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("[H.real_name]")
+		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
@@ -92,7 +92,7 @@
 		if(title == "Krieg Guardsman")
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
-		else H.fully_replace_character_name("[H.real_name]")
+		else H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 
@@ -140,7 +140,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		H.fully_replace_character_name("[H.real_name]")
+		H.fully_replace_character_name("Conscript [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
@@ -223,7 +223,7 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("[H.real_name]")
+		H.fully_replace_character_name("SharpShooter [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 
