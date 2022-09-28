@@ -160,7 +160,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 8
-	cultist_chance = 10
+	cultist_chance = 8 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
@@ -206,7 +206,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 35
+	cultist_chance = 8 //snipers have even less chance to be heretics than guardsmen.
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -275,30 +275,36 @@
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(16,17), rand(16,17), rand(16,18), rand(13,15))
-		H.add_skills(rand(8,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
+		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
+		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
+to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regiment, in service to the Imperium. Ensure the men from your Regiment, and perhaps othe regiments, are in order. Train them, ensure they know the capabilities of their equipment and proper knowledge of tactics in battle. Lead them well. The Emperor Protects. </font></b></span>")
 
 		if(title == "Krieg Guardsman")
 			var/watchnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [watchnum]")
 		else H.fully_replace_character_name("Sergeant [H.real_name]")
-
+		
 		if(title == "Krieg Watchmaster")
-			H.add_skills(rand(8,10),rand(9,10),rand(7,10),6,rand(4,6))
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
-			H.implant_loyalty(src)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regiment, in service to the Imperium. Ensure the men from your Regiment, and perhaps othe regiments, are in order. Train them, ensure they know the capabilities of their equipment and proper knowledge of tactics in battle. Lead them well. The Emperor Protects. </font></b></span>")
-		switch(title)
+		
+		if(title == "Cadian Sergeant")
+			H.set_quirk(/datum/quirk/tough()) //these fuckers went through a lot, but i dont exactly feel like giving them brave.
+			H.set_trait(new/datum/trait/death_tolerant())
+			
+				switch(title)
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
 				if(title == "Catachan Sergeant")
-					H.add_skills(rand(9,11),rand(9,10),rand(5,7),5,rand(4,6))
+					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))
+					
+				if(title == "Cadian Sergeant")
+			H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6)) //cadians and kriegers have more balanced skills than catachans or valhallans due to them being, well, pretty normal when compared with the other two
 
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
@@ -330,7 +336,7 @@
 	shotgun_skill = 9
 	lmg_skill = 8
 	smg_skill = 9
-	cultist_chance = 5
+	cultist_chance = 20 //this man has seen his comrades die from fucking nurgle rot and revive
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -356,7 +362,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the Rogue Trader and his Astartes Bodyguard."
+	supervisors = "the Rogue Trader and the Commissariat."
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
@@ -382,7 +388,7 @@
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 4
+	cultist_chance = 4 
 
 	announced = FALSE
 
@@ -399,8 +405,8 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be punished if you metagame lateparties, murder allied characters without good reason OR force people to dig trenches round start. Period. You are an officer of the Commesariert, there's more you can do then pretend to be an infantry officer. </font></b></span>")
+		to_chat(H, "<span class='notice'><b>Congrats! You are a fully trained member of the Commissariat, you were sent on this planet a few years ago, since then you were a happy little fool who was happy that your first mission was helping to teach the local PDF what their job was, and to help recruit more PDF and Guardsmen, that was, until the trader bought the colony, now you work for the Rogue Trader! And you have a mixxed guardsman regiment at your fingertips! Oh also, be aware, the Rogue Trader can and will override any decision he deems foolish from you.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role is a command role, in this position you have essentially control over the guardsmen, and be aware, you will be held at a higher RP standard and you will be punished if you metagame lateparties, execute friendly or imperial characters without good reason OR force everyone to dig trenches round start, this is a moderately peaceful town, besides all the heretic worshipping, that is... </font></b></span>")
 		H.verbs -= list(
 		/mob/living/carbon/human/proc/igattack,
 		/mob/living/carbon/human/proc/igcanthold,
