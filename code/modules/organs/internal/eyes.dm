@@ -200,4 +200,4 @@
 		to_chat(usr,"You charge your laser eye.")
 		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/heavy(usr))
 
-
+/obj/item/organ/internal/eyes/bioprinted
