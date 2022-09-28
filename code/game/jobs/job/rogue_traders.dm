@@ -189,12 +189,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/servant
 	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
+	auto_rifle_skill = 7 // guard are 7-8.
+	semi_rifle_skill = 7
+	sniper_skill = 6
+	shotgun_skill = 7
+	lmg_skill = 6
+	smg_skill = 7
 	cultist_chance = 38
 
 	equip(var/mob/living/carbon/human/H)

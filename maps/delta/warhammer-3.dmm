@@ -901,7 +901,7 @@
 "Nq" = (/obj/effect/floor_decal/turf/plate,/obj/machinery/door/airlock/cone{name = "Substation"; req_access = newlist()},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hallway/centralhall)
 "Nr" = (/obj/structure/table/rack,/obj/effect/floor_decal/turf/plating,/obj/item/newore/gems/topaz,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/oa/engineering)
 "Ns" = (/obj/structure/largecrate/animal/cat/bones,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/service/habs)
-"Nv" = (/obj/machinery/door/airlock/highsecurity/guardarmory/lord,/obj/effect/floor_decal/turf/plate,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/bridge/offices/seneschal)
+"Nv" = (/obj/effect/floor_decal/turf/plate,/obj/machinery/door/airlock/highsecurity/lord,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/bridge/offices/seneschal)
 "Nw" = (/obj/effect/landmark/animal/rngretaliatespawner{name = "rng rat"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/habs)
 "Ny" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/reagent_containers/food/drinks/coffee,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/habs)
 "NA" = (/obj/effect/floor_decal/turf/plating,/obj/effect/water/top{color = "blue"},/obj/effect/water/bottom{color = "blue"},/obj/item/reagent_containers/food/drinks/canteen,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hallway/centralhall)

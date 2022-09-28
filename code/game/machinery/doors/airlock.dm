@@ -124,7 +124,7 @@
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorviro.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
-	req_access = list(access_clinic)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/maintenance
 	name = "Maintenance Access"
@@ -631,15 +631,15 @@
 	icon_state = "door_locked"
 	locked = 1
 
+/obj/machinery/door/airlock/highsecurity/lord
+	name = "Thy Lord's Secure Vault"
+	maxhealth = 5000
+	req_access = list(331)
+
 /obj/machinery/door/airlock/highsecurity/guardarmory
 	name = "Armory"
 	req_access = list()
 	req_one_access = list(access_hos, access_guard_armory)
-
-/obj/machinery/door/airlock/highsecurity/guardarmory/lord
-	name = "Secure Vault"
-	maxhealth = 5000
-	req_access = list(331)
 
 /obj/machinery/door/airlock/highsecurity/guardarmory/bolted  //Not 100% sure if this is redundant.
 

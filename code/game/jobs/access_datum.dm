@@ -526,10 +526,21 @@
 	id = access_admeme
 	desc = "Administrator"
 
-/var/const/access_clinic = 211
+/var/const/access_clinic = 211 // village/pilgrim common access. Basically anyone with any amount of ID should have this!!!
 /datum/access/clinic
-	id = access_clinic
-	desc = "Village Clinic"
+	id = access_village
+	desc = "Village Common"
+
+/var/const/access_cmedicae = 230 //common medicae. for disgraced and normal village medicae. maybe give to guard medicae as well?
+/datum/access/cmedicae
+	id = access_cmedicae
+	desc = "Village Medicae"
+
+/var/const/access_cminer = 231 //for village miners. dont need it to gain access, but for 'fancy' mining equipment.
+/datum/access/cminer
+	id = access_cmedicae
+	desc = "Village Miner"
+
 
 /var/const/access_administratum = 212
 /datum/access/administratum

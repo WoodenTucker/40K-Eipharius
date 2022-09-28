@@ -552,7 +552,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/ring/administrator
 	icon_state = "admin_ring"
-	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
+	access = list(access_admeme, access_village, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
 /obj/item/card/id/ring/goldring
@@ -564,5 +564,47 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"
 	icon_state = "medicae_ring"
-	access = list(access_clinic)
-	desc = "An old ring signifying your position as a medicae."
+	access = list(access_cmedicae)
+	desc = "An old ring signifying your position as a medicae. Still works."
+
+/obj/item/card/id/ring/miner
+	name = "access card"
+	icon_state = "cargo"
+	access = list(access_cminer)
+	desc = "A ring entrusted to members of the mining guild. Additional access to the mines."
+
+/*
+
+/obj/item/card/id/low
+	name = "Lowly Key"
+	desc = "A lowly key befitting the common man upon this world. Probably opens a pilgrim's home, or something equally unimportant."
+	icon_state = "key1"
+	access = list(access_211)
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/middle
+	name = "Middling Key"
+	desc = "A key of mid-ground importance, maybe the thing it opens is actually valuable. Maybe not."
+	icon_state = "key2"
+	access = list(access_211)
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/super
+	name = "Superior Key"
+	desc = "A key of notable quality. The door it guards surely has some sort of treasure locked away."
+	icon_state = "key3"
+	access = list(access_211)
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/grand
+	name = "Grand Key"
+	desc = "An exquisite piece of art, to open equally excellent doors and provide fortune to the owner of this key. Likely belonging to a high ranking officer or noble."
+	icon_state = "key4"
+	access = list(access_211)
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+
+
+
+
+*/

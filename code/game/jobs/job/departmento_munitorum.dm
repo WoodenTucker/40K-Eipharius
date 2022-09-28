@@ -12,7 +12,7 @@
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
 	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/administrator
@@ -48,8 +48,8 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
@@ -85,8 +85,8 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_clinic, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
