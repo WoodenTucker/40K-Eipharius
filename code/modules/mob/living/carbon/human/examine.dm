@@ -332,10 +332,6 @@
 			if(happiness <= MOOD_LEVEL_SAD2)
 				msg += "<span class='warning'>[T.He] looks stressed.</span>\n"
 
-	if(decaylevel == 1)
-		msg += "[T.He] [T.is] starting to smell.\n"
-	if(decaylevel == 2)
-		msg += "[T.He] [T.is] bloated and smells disgusting.\n"
 	if(decaylevel == 3)
 		msg += "[T.He] [T.is] rotting and blackened, the skin sloughing off. The smell is indescribably foul.\n"
 	if(decaylevel == 4)
