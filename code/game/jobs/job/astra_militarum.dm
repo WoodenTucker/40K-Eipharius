@@ -47,14 +47,12 @@
 		/mob/living/carbon/human/proc/igattack,
 		/mob/living/carbon/human/proc/igcanthold,
 		/mob/living/carbon/human/proc/igcharge,
-		/mob/living/carbon/human/proc/igemperorprotects,
 		/mob/living/carbon/human/proc/igholdline,
 		/mob/living/carbon/human/proc/iginhisname,
 		/mob/living/carbon/human/proc/igregroup,
 		/mob/living/carbon/human/proc/igretreat,
 		/mob/living/carbon/human/proc/igrunforlifes,
 		/mob/living/carbon/human/proc/igyessir)
-		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 
 // Guardsmen
 
@@ -411,12 +409,10 @@ to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regi
 		/mob/living/carbon/human/proc/igattack,
 		/mob/living/carbon/human/proc/igcanthold,
 		/mob/living/carbon/human/proc/igcharge,
-		/mob/living/carbon/human/proc/igemperorprotects,
 		/mob/living/carbon/human/proc/igholdline,
 		/mob/living/carbon/human/proc/iginhisname,
 		/mob/living/carbon/human/proc/igregroup,
 		/mob/living/carbon/human/proc/igretreat,
-		/mob/living/carbon/human/verb/emoteemperorprotects,
 		/mob/living/carbon/human/proc/igrunforlifes,
 		/mob/living/carbon/human/proc/igyessir)
 		H.verbs += list(
