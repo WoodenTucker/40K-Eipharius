@@ -274,6 +274,7 @@
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
+		to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regiment, in service to the Imperium. Ensure the men from your Regiment, and perhaps othe regiments, are in order. Train them, ensure they know the capabilities of their equipment and proper knowledge of tactics in battle. Lead them well. The Emperor Protects. </font></b></span>")
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
@@ -281,33 +282,27 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regiment, in service to the Imperium. Ensure the men from your Regiment, and perhaps othe regiments, are in order. Train them, ensure they know the capabilities of their equipment and proper knowledge of tactics in battle. Lead them well. The Emperor Protects. </font></b></span>")
 
-		if(title == "Krieg Guardsman")
-			var/watchnum = rand(1,50000)
-			H.fully_replace_character_name("Guardsman [watchnum]")
-		else H.fully_replace_character_name("Sergeant [H.real_name]")
-		
+
 		if(title == "Krieg Watchmaster")
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
-		
+
 		if(title == "Cadian Sergeant")
 			H.set_quirk(/datum/quirk/tough()) //these fuckers went through a lot, but i dont exactly feel like giving them brave.
 			H.set_trait(new/datum/trait/death_tolerant())
-			
-				switch(title)
+
+			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS.
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))
-					
+
 				if(title == "Cadian Sergeant")
-			H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6)) //cadians and kriegers have more balanced skills than catachans or valhallans due to them being, well, pretty normal when compared with the other two
+					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6)) //cadians and kriegers have more balanced skills than catachans or valhallans due to them being, well, pretty normal when compared with the other two
 
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-
 // Combat Medicae
 
 /datum/job/ig/medicae
@@ -386,7 +381,7 @@ to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regi
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 4 
+	cultist_chance = 4
 
 	announced = FALSE
 
