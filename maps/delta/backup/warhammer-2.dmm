@@ -506,10 +506,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/hallway/western)
 "bt" = (
-/obj/item/card/id/innkey2{
-	access = list(241);
-	name = "farmhouse key"
-	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/village)
 "bu" = (
@@ -6972,11 +6968,6 @@
 /area/cadiaoutpost/oa/service/inn)
 "xl" = (
 /obj/effect/floor_decal/turf/plate,
-/obj/machinery/door/unpowered/inn/room2{
-	maxhealth = 600;
-	name = "locked room";
-	req_access = list(241)
-	},
 /turf/simulated/floor/wood{
 	color = "grey"
 	},

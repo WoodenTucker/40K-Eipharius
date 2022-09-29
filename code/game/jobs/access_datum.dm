@@ -526,8 +526,8 @@
 	id = access_admeme
 	desc = "Administrator"
 
-/var/const/access_clinic = 211 // village/pilgrim common access. Basically anyone with any amount of ID should have this!!!
-/datum/access/clinic
+/var/const/access_village = 211 // village/pilgrim common access. Basically anyone with any amount of ID should have this!!!
+/datum/access/village
 	id = access_village
 	desc = "Village Common"
 

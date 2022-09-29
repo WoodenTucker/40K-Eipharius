@@ -34,7 +34,7 @@
 /obj/machinery/door/unpowered/inn/berryfarm
 	name = "goodberry farm"
 	maxhealth = 2500
-	req_access = list(241)
+	req_access = list(211)
 
 /obj/machinery/door/unpowered/inn/deadwood
 	name = "deadwood estate"
