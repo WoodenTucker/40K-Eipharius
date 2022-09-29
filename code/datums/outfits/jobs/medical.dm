@@ -73,13 +73,13 @@
 
 // biologis
 
-/decl/hierarchy/outfit/job/medical/geneticist
-	name = OUTFIT_JOB_NAME("Genetor")
+/decl/hierarchy/outfit/job/medical/biologis
+	name = OUTFIT_JOB_NAME("Biologis")
 	uniform = /obj/item/clothing/under/rank/geneticist
 	suit = /obj/item/clothing/suit/storage/hooded/genetor
 	mask = /obj/item/clothing/mask/gas/techpriest
 	r_pocket = /obj/item/device/flashlight/pen
-	id_type = /obj/item/card/id/medical/geneticist
+	id_type = /obj/item/card/id/medical/biologis
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen

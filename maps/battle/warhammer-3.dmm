@@ -3615,7 +3615,7 @@
 	},
 /obj/item/bedsheet,
 /obj/effect/landmark/start{
-	name = "Genetor"
+	name = "Biologis"
 	},
 /turf/simulated/floor/tiled/white{
 	icon_state = "tiled"

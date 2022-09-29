@@ -279,7 +279,7 @@
 "FH" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "FJ" = (/obj/effect/decal/cleanable/dirt,/obj/structure/disposalpipe/segment{icon_state = "conpipe-c"; dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "FK" = (/obj/effect/decal/cleanable/dirt,/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
-"FM" = (/obj/machinery/door/unpowered/inn{name = "door"},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/villageinside)
+"FM" = (/obj/machinery/door/unpowered/inn,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/villageinside)
 "FP" = (/obj/structure/disposalpipe/segment,/obj/machinery/alarm{dir = 4; icon_state = "alarm0"; pixel_x = -24},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "FW" = (/obj/machinery/light,/obj/machinery/optable,/obj/item/reagent_containers/food/drinks/coffeecup/britcup,/obj/item/reagent_containers/glass/rag,/obj/machinery/oxygen_pump/anesthetic{pixel_y = -32},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "FY" = (/obj/structure/cable,/obj/machinery/light_switch{pixel_x = -25},/obj/structure/closet/wardrobe/mixed,/obj/item/storage/backpack/dufflebag/med,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)

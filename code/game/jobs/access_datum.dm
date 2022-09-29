@@ -551,3 +551,15 @@
 /datum/access/sob
 	id = access_sob
 	desc = "Adepta Sororitas Access" // used for certain places in the chapel so only the abbot and sobs can get in.
+
+// REWORKED ID AREA, NEW ACCESS
+
+/var/const/access_deadwood = 244
+/datum/access/deadwood
+	id = access_deadwood
+	desc = "Deadwood Estate Access"
+
+/var/const/access_pathfinder = 253
+/datum/access/deadwood
+	id = access_pathfinder
+	desc = "Pathfinder Estate Access"

@@ -99,7 +99,7 @@
 
 // Magos
 
-/datum/job/geneticist
+/datum/job/biologis
 	title = "Magos Biologis"
 	department = "Medical"
 	department_flag = SCI|ENG
@@ -114,7 +114,7 @@
 	announced = FALSE
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_sec_doors, access_robotics, access_medical, access_morgue,  access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
 	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels, access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_RC_announce, access_tcomsat, access_ai_upload, access_robotics, access_research,)
-	outfit_type = /decl/hierarchy/outfit/job/medical/geneticist
+	outfit_type = /decl/hierarchy/outfit/job/medical/biologis
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
 	sniper_skill = 8 //sometimes this motherfucker has to get his research material by himself
@@ -179,7 +179,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/science/explorator
 	auto_rifle_skill = 8 //Explorator for you.
 	semi_rifle_skill = 8
-	sniper_skill = 8 
+	sniper_skill = 8
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8

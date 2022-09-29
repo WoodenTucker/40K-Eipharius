@@ -317,8 +317,8 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/medical/chemist
 	job_access_type = /datum/job/chemist
 
-/obj/item/card/id/medical/geneticist
-	job_access_type = /datum/job/geneticist
+/obj/item/card/id/medical/biologis
+	job_access_type = /datum/job/biologis
 
 /obj/item/card/id/medical/psychiatrist
 	job_access_type = /datum/job/psychiatrist
@@ -573,38 +573,45 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_cminer)
 	desc = "A ring entrusted to members of the mining guild. Additional access to the mines."
 
-/*
 
-/obj/item/card/id/low
+
+/obj/item/card/id/key/low
 	name = "Lowly Key"
 	desc = "A lowly key befitting the common man upon this world. Probably opens a pilgrim's home, or something equally unimportant."
 	icon_state = "key1"
-	access = list(access_211)
 	grab_sound = 'sound/items/keyring_up.ogg'
 
-/obj/item/card/id/middle
+
+
+/obj/item/card/id/key/middle
 	name = "Middling Key"
 	desc = "A key of mid-ground importance, maybe the thing it opens is actually valuable. Maybe not."
 	icon_state = "key2"
-	access = list(access_211)
 	grab_sound = 'sound/items/keyring_up.ogg'
 
-/obj/item/card/id/super
+/obj/item/card/id/key/middle/deadwood
+	name = "Deadwood Estate Key"
+	desc = "A key that unlocks doors belonging to the Deadwood Estate. "
+	access = list(access_deadwood)
+
+/obj/item/card/id/key/super
 	name = "Superior Key"
 	desc = "A key of notable quality. The door it guards surely has some sort of treasure locked away."
 	icon_state = "key3"
-	access = list(access_211)
 	grab_sound = 'sound/items/keyring_up.ogg'
 
-/obj/item/card/id/grand
+/obj/item/card/id/key/super/pathfinder
+	name = "Pathfinder Estate"
+	desc = "A key belonging to the Pathfinder's Estate."
+	access = list(access_pathfinder)
+
+/obj/item/card/id/key/grand
 	name = "Grand Key"
 	desc = "An exquisite piece of art, to open equally excellent doors and provide fortune to the owner of this key. Likely belonging to a high ranking officer or noble."
 	icon_state = "key4"
-	access = list(access_211)
 	grab_sound = 'sound/items/keyring_up.ogg'
 
 
 
 
 
-*/
