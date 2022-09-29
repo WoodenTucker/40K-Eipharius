@@ -156,9 +156,9 @@
 		//whacking someone causes a much poorer electrical contact than deliberately prodding them.
 		stun *= 0.5
 		if(status)		//Checks to see if the stunbaton is on.
-			agony *= 0.5	//whacking someone causes a much poorer contact than prodding them.
+			agony *= 1	//fuck it.
 		else
-			agony = 0	//Shouldn't really stun if it's off, should it?
+			agony = 1	//fuck it.
 		//we can't really extract the actual hit zone from ..(), unfortunately. Just act like they attacked the area they intended to.
 	else if(!status)
 		if(affecting)
