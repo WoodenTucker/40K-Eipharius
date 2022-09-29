@@ -344,7 +344,7 @@
 
 /obj/item/clothing/head/chaossack
 	name = "cultist sack"
-	desc = "Dark and speckled with blood, its sight unnerves you"
+	desc = "A hood made of cloth, made to chant the hymns of the dark gods."
 	icon_state = "cult_chanter_item"
 	item_state = "cult_chanter"
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
