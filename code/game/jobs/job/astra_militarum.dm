@@ -355,7 +355,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the Rogue Trader and the Commissariat."
+	supervisors = "the Rogue Trader and the Astartes." //mercenary apparently?
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
