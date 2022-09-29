@@ -56,7 +56,7 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force = 17
-	agonyforce = 70 //stronger than a nighstick, but not blatantly OP of fucking course.
+	agonyforce = 80 //stronger than a nighstick, but not blatantly OP of fucking course.
 	force_wielded = 20
 	block_chance = 20
 	w_class = ITEM_SIZE_SMALL
