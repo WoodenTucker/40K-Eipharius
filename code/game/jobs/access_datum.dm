@@ -64,18 +64,18 @@
 	desc = "Genetics Lab"
 	region = ACCESS_REGION_MEDBAY
 
-/var/const/access_engine = 10
-/datum/access/engine
-	id = access_engine
-	desc = "Engineering"
+/var/const/access_mechanicus = 10
+/datum/access/mechanicus
+	id = access_mechanicus
+	desc = "Mechanicus Access"
 	region = ACCESS_REGION_ENGINEERING
-
+/*
 /var/const/access_engine_equip = 11
 /datum/access/engine_equip
 	id = access_engine_equip
 	desc = "Engine Room"
 	region = ACCESS_REGION_ENGINEERING
-
+*/
 /var/const/access_maint_tunnels = 12
 /datum/access/maint_tunnels
 	id = access_maint_tunnels

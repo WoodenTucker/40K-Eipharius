@@ -113,7 +113,7 @@
 	name = "Mechanicus Airlock"
 	icon = 'icons/obj/doors/Dooreng.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_eng
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 
 /obj/machinery/door/airlock/medical
 	name = "Airlock"

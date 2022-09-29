@@ -414,7 +414,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		var/cartdata[0]
 		cartdata["access"] = list(\
 					"access_security" = cartridge.access_security,\
-					"access_engine" = cartridge.access_engine,\
+					"access_mechanicus" = cartridge.access_mechanicus,\
 					"access_atmos" = cartridge.access_atmos,\
 					"access_medical" = cartridge.access_medical,\
 					"access_clown" = cartridge.access_clown,\
@@ -681,7 +681,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 		if("Halogen Counter")
 			if(scanmode == 4)
 				scanmode = 0
-			else if((!isnull(cartridge)) && (cartridge.access_engine))
+			else if((!isnull(cartridge)) && (cartridge.access_mechanicus))
 				scanmode = 4
 		if("Honk")
 			if ( !(last_honk && world.time < last_honk + 20) )
@@ -832,7 +832,7 @@ var/global/list/obj/item/device/pda/PDAs = list()
 						if(P.cartridge)
 							difficulty += P.cartridge.access_medical
 							difficulty += P.cartridge.access_security
-							difficulty += P.cartridge.access_engine
+							difficulty += P.cartridge.access_mechanicus
 							difficulty += P.cartridge.access_clown
 							difficulty += P.cartridge.access_janitor
 							if(P.hidden_uplink)

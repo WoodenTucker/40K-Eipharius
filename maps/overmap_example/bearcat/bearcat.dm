@@ -102,7 +102,7 @@
 	req_access = list(access_heads)
 
 /obj/machinery/door/airlock/autoname/engineering
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 
 //wild capitalism
 /datum/computer_file/program/merchant

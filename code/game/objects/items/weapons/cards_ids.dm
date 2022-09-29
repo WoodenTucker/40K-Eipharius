@@ -512,7 +512,7 @@ var/const/NO_EMAG_ACT = -50
 	item_state = "tagred"
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
-			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
+			            access_research, access_mechanicus, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks)
 
 /obj/item/card/id/commissar/update_name()
@@ -535,7 +535,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/skitarii
 	icon_state = "tagred"
-	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical, access_robotics,)
+	access = list(access_mechanicus, access_construction, access_maint_tunnels, access_brig, access_medical, access_robotics,)
 
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
@@ -601,10 +601,14 @@ var/const/NO_EMAG_ACT = -50
 	grab_sound = 'sound/items/keyring_up.ogg'
 
 /obj/item/card/id/key/super/pathfinder
-	name = "Pathfinder Estate"
+	name = "Pathfinder Estate Key"
 	desc = "A key belonging to the Pathfinder's Estate."
 	access = list(access_pathfinder)
 
+/obj/item/card/id/key/super/mechanicus
+	name = "Adeptus Mechanicus Key"
+	desc = "A key bearing the necessary binary scribings required to gain entry to the Mechanicus' domain."
+	access = list(access_mechanicus)
 /obj/item/card/id/key/grand
 	name = "Grand Key"
 	desc = "An exquisite piece of art, to open equally excellent doors and provide fortune to the owner of this key. Likely belonging to a high ranking officer or noble."

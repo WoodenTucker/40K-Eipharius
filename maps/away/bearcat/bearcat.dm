@@ -69,7 +69,7 @@
 	req_access = list(access_heads)
 
 /obj/machinery/door/airlock/autoname/engineering
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 
 /turf/simulated/floor/usedup
 	initial_gas = list("carbon_dioxide" = MOLES_O2STANDARD, "nitrogen" = MOLES_N2STANDARD)
