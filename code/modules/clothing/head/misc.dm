@@ -341,3 +341,11 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 20
+
+/obj/item/clothing/head/chaossack
+	name = "cultist sack"
+	desc = "A hood made of cloth, made to chant the hymns of the dark gods."
+	icon_state = "cult_chanter_item"
+	item_state = "cult_chanter"
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
