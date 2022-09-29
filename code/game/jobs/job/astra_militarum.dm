@@ -289,7 +289,7 @@
 			H.set_trait(new/datum/trait/death_tolerant())
 
 		if(title == "Cadian Sergeant")
-			H.set_quirk(/datum/quirk/tough()) //these fuckers went through a lot, but i dont exactly feel like giving them brave.
+			H.set_quirk(new/datum/quirk/tough()) //these fuckers went through a lot, but i dont exactly feel like giving them brave.
 			H.set_trait(new/datum/trait/death_tolerant())
 
 			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS.
