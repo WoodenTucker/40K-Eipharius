@@ -141,13 +141,13 @@
 	id = access_chapel_office
 	desc = "Chapel Office"
 	region = ACCESS_REGION_GENERAL
-
+/*
 /var/const/access_tech_storage = 23
 /datum/access/tech_storage
 	id = access_tech_storage
 	desc = "Technical Storage"
 	region = ACCESS_REGION_ENGINEERING
-
+*/
 /var/const/access_atmospherics = 24
 /datum/access/atmospherics
 	id = access_atmospherics

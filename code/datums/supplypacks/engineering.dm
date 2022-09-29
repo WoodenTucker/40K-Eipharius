@@ -126,7 +126,7 @@
 	cost = 45
 	containername = "\improper P.A.C.M.A.N. Portable Generator Construction Kit"
 	containertype = /obj/structure/closet/crate/secure
-	access = access_tech_storage
+	access = access_mechanicus
 
 /decl/hierarchy/supply_pack/engineering/super_pacman_parts
 	name = "Super P.A.C.M.A.N. portable generator parts"
@@ -137,7 +137,7 @@
 	cost = 55
 	containername = "\improper Super P.A.C.M.A.N. portable generator construction kit"
 	containertype = /obj/structure/closet/crate/secure
-	access = access_tech_storage
+	access = access_mechanicus
 
 /decl/hierarchy/supply_pack/engineering/teg
 	name = "Mark I Thermoelectric Generator"
