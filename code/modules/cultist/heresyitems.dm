@@ -11,6 +11,20 @@
 	name = "Suspiscious Laser Cutter"
 	desc = "Am laser cutter created with technoheretical methods, this one seems to be more advanced than normal."
 
+/obj/item/device/holyoils/goop
+	name = "Weird Oils"
+	desc = "An bottle of oil, it appears to be moving on it's own."
+	icon = 'icons/cadia-sprites/migrated2/items.dmi'
+	icon_state = "ointment"
+	item_state = "ointment"
+	var/constructionsystem = 0
+	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
+
+/obj/item/device/holyoils/goop/attack(mob/living/carbon/C, mob/living/carbon/human/user)
+	if(istype(C))
+		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		visible_message("<span class='notice'>[C] is gently lathered in the disgusting oils of tzeentch by [user]. It looks incredibly awkward!</span>")
+	..()
 
 /obj/item/device/tome/tzeentch
 	name = "Recipe Book"
@@ -21,7 +35,7 @@
 
 /obj/item/clothing/gloves/thick/tzeentch
 	name = "work gloves"
-	desc = "A pair of black gloves, upon closer inspection you notice small modifications to the gloves and some kind of modified lasercutter attached to the gloves."
+	desc = "A pair of black gloves, upon closer inspection you notice small modifications to the gloves and some kind of modified lasercutter attached to the gloves, theres also a weird bottle inside of the glove."
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
@@ -45,7 +59,21 @@
 		to_chat(usr,"You activate and extend out the laser cutter.")
 		usr.put_in_hands(new /obj/item/device/lasercutter(usr))
 		src.is_toggled = 2
-
+		
+/obj/item/clothing/gloves/thick/tzeentch/verb/toggleoil()
+	set name = "Eject Oil Bottle" 
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You flap around with your glove until you remove a small bottle from a hidden compartment.")
+		usr.put_in_hands(new /obj/item/device/holyoils/goop(usr))
+		src.is_toggled = 2
 
 
 /obj/item/melee/baton/heresy
