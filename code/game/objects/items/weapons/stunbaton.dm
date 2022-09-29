@@ -248,11 +248,12 @@
 	desc = "An improvised stun baton."
 	icon_state = "stunprod_nocell"
 	item_state = "prod"
-	force = 3
+	force = 20 //ITS LITERALLY A POINTY STICK
 	throwforce = 5
-	stunforce = 0
-	agonyforce = 60	//same force as a stunbaton, but uses way more charge.
+	stunforce = 1 //shocks override your nervous system n' shit.
+	agonyforce = 80	//stronger than a stunbaton.
 	hitcost = 25
+	block_chance = 60
 	attack_verb = list("poked")
 	slot_flags = null
 
