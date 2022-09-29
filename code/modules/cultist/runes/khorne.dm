@@ -1,3 +1,10 @@
+/datum/rune_recipe/khorne/offer_heart/bioprinted
+	ingredients = list(/obj/item/organ/internal/heart/bioprinted)
+	special = TRUE
+
+/datum/rune_recipe/khorne/offer_heart/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
+	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 0)
+	
 /datum/rune_recipe/khorne/offer_heart
 	ingredients = list(/obj/item/organ/internal/heart)
 	special = TRUE
