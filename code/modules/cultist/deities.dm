@@ -4,6 +4,7 @@
 	status_icon_state = "khorne"
 	rune_type = /obj/effect/cleanable/heretic_rune/khorne
 	rune_recipes = list(
+						/datum/rune_recipe/khorne/offer_bioprinted,
 						/datum/rune_recipe/khorne/offer_heart,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
