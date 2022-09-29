@@ -17,13 +17,11 @@
 	icon = 'icons/cadia-sprites/migrated2/items.dmi'
 	icon_state = "ointment"
 	item_state = "ointment"
-	var/constructionsystem = 0
-	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
 /obj/item/device/holyoils/goop/attack(mob/living/carbon/C, mob/living/carbon/human/user)
 	if(istype(C))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-		visible_message("<span class='notice'>[C] is gently lathered in the disgusting oils of tzeentch by [user]. It looks incredibly awkward!</span>")
+		visible_message("<span class='notice'>[C] is lathered in the disgusting oils of tzeentch by [user]. It looks incredibly awkward!</span>")
 	..()
 
 /obj/item/device/tome/tzeentch
