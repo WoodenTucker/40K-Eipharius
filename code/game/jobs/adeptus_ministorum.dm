@@ -296,10 +296,10 @@
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_sob)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_sob)
 
 	minimal_player_age = 20
 	ideal_character_age = 50
@@ -323,7 +323,7 @@
 		H.gender = FEMALE
 		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks, access_sob)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_sob)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-60)
@@ -365,7 +365,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,9),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-70)
@@ -409,7 +409,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,9),rand(6,8),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels, access_external_airlocks)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-60)

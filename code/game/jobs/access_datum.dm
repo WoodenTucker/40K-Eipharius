@@ -81,13 +81,13 @@
 	id = access_maint_tunnels
 	desc = "Maintenance"
 	region = ACCESS_REGION_ENGINEERING
-
+/*
 /var/const/access_external_airlocks = 13
 /datum/access/external_airlocks
 	id = access_external_airlocks
 	desc = "External Airlocks"
 	region = ACCESS_REGION_ENGINEERING
-
+*/
 /var/const/access_emergency_storage = 14
 /datum/access/emergency_storage
 	id = access_emergency_storage

@@ -249,7 +249,7 @@ var/const/NO_EMAG_ACT = -50
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"
 	assignment = "Syndicate Overlord"
-	access = list(access_syndicate, access_external_airlocks)
+	access = list(access_syndicate,)
 
 /obj/item/card/id/captains_spare
 	name = "captain's spare ID"
@@ -513,7 +513,7 @@ var/const/NO_EMAG_ACT = -50
 	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
 			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
 			            access_research, access_mechanicus, access_mining, access_medical, access_construction, access_mailsorting,
-			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks)
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
 
 /obj/item/card/id/commissar/update_name()
 	var/final_name = "[registered_name]"

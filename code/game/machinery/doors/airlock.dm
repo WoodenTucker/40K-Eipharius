@@ -400,6 +400,13 @@
 	assembly_type = /obj/structure/door_assembly/door_assembly_eng
 	glass = 1
 
+/obj/machinery/door/airlock/glass_engineering/mechanicus
+	name = "Mechanicus Airlock"
+	maxhealth = 2000
+	explosion_resistance = 80
+	req_one_access = list(10)
+
+
 /obj/machinery/door/airlock/glass_security
 	name = "Glass Airlock"
 	icon = 'icons/obj/doors/Doorsecglass.dmi'

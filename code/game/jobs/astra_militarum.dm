@@ -280,8 +280,8 @@
 	minimal_player_age = 18
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_external_airlocks, access_psychiatrist, access_sec_doors, access_security)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_external_airlocks,access_sec_doors,access_security)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_psychiatrist, access_sec_doors, access_security)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels,access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
