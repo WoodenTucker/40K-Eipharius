@@ -16,7 +16,7 @@
 	var/rune_type
 
 /mob/living/carbon/human/proc/draw_rune()
-	set category = "IC"
+	set category = "Ruinous Powers"
 	set name = "Draw Rune"
 	if(isdrawing == 0)
 		isdrawing = 1
