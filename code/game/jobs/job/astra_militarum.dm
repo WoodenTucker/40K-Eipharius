@@ -189,7 +189,50 @@
 					H.add_skills(rand(9,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
 				if(title == "Valhallan Heavy Autogunner")
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
+/* //DO NOT FORGET TO READD IT IN THE MAP CONFIGS ONCE ITS DONE!!!
+//el penitente
+/datum/job/prisoner/penitent
+	title = "Penitent Auxilia"
+	total_positions = 0
+	spawn_positions = 0
+	open_when_dead = FALSE
+	outfit_type = /decl/hierarchy/outfit/job/sniper
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 5
+	shotgun_skill = 6
+	lmg_skill = 5
+	smg_skill = 6
+	cultist_chance = 50 //penitents be penitentin 
+	//these alt titles are wrong, create /outfits/ for penitents and put them down here 
+	alt_titles = list(
+		"Deserter" = /decl/hierarchy/outfit/job/sniper,
+		"Drug-Dealer" = /decl/hierarchy/outfit/job/sniper/valhalla,
+		"Mad-Surgeon" = /decl/hierarchy/outfit/job/sniper/krieg,
+		)
 
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(11,14), rand(11,16), rand(14,16), rand (10,16)) //prisoners aren't well fed
+		H.add_skills(rand(5,8),rand(5,8),rand(3,7),rand(3,7),rand(3,7)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		SSwarfare.red.team += H
+		H.fully_replace_character_name("Penitent [H.real_name]")
+		H.assign_random_quirk()
+		H.witchblood()
+
+		to_chat(H, "<span class='notice'><b><font size=3>You are a penitent, a criminal, you chose to be turned into a penal legionairee instead of facing the commissar's boltpistol, and here you are, whatever you may have been, you are now just a number. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> You answer to essentially any imperial force. The Emperor Protects </font></b></span>")
+
+		switch(title)
+			if("Deserter" || "Drug-Dealer || "Mad-Surgeon")
+				if(title == "Drug-Dealer")
+					H.add_skills(rand(3,6),rand(3,6),rand(3,6),rand(2,5),rand(1,5))
+				if(title == "Mad-Surgeon")
+					H.add_skills(rand(4,7),rand(4,7),rand(8,10),rand(2,5),rand(8,10))
+*/
 
 // snipings a good job mate
 /datum/job/ig/guardsman/sniper
