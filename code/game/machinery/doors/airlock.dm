@@ -355,7 +355,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_cone
 	glass = 1
-	req_access = list(access_maint_tunnels)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"

@@ -14,6 +14,6 @@
 
 /datum/job/assistant/get_access()
 	if(config.assistant_maint)
-		return list(access_maint_tunnels)
+		return list(access_village)
 	else
 		return list()

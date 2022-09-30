@@ -8,8 +8,8 @@
 	supervisors = "the Commissar"
 	selection_color = "#601c1c"
 	economic_modifier = 5
-	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue)
-	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels)
+	access = list(access_security, access_eva, access_sec_doors, access_magi, access_armory, access_village, access_morgue)
+	minimal_access = list(access_security, access_eva, access_sec_doors, access_magi, access_armory, access_village)
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/security/warden
 
@@ -24,8 +24,8 @@
 	selection_color = "#601c1c"
 //	alt_titles = list("Forensic Technician" = /decl/hierarchy/outfit/job/security/detective/forensic)
 	economic_modifier = 5
-	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
-	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
+	access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_village)
+	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_village)
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/security/detective
 
@@ -40,7 +40,7 @@
 	selection_color = "#601c1c"
 //	alt_titles = list("Junior Officer")
 	economic_modifier = 4
-	access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels, access_morgue)
-	minimal_access = list(access_security, access_eva, access_sec_doors, access_brig, access_maint_tunnels)
+	access = list(access_security, access_eva, access_sec_doors, access_magi, access_village, access_morgue)
+	minimal_access = list(access_security, access_eva, access_sec_doors, access_magi, access_village)
 	minimal_player_age = 7
 	outfit_type = /decl/hierarchy/outfit/job/security/officer

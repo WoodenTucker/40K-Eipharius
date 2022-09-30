@@ -11,8 +11,8 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(access_bar, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_village, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/administrator
@@ -28,7 +28,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord [current_name]")
+		H.fully_replace_character_name("Noble [current_name]")
 		H.add_skills(rand(5,8),rand(5,8),rand(5,8),rand(5,8),rand(5,8)) //melee, ranged, med, eng, surgery
 		H.add_stats(rand(12,15), rand(14,16), rand(12,18), rand (12,12)) //a lil better fed than others.
 		H.assign_random_quirk()
@@ -48,8 +48,8 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/qm
@@ -85,8 +85,8 @@
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_maint_tunnels, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
+	minimal_access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
@@ -125,8 +125,8 @@
 	announced = 0
 	supervisors = "the Munitorum Tribunus, the Administrator and the Seneschal"
 	selection_color = "#337C81"
-	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
-	minimal_access = list(access_maint_tunnels, access_cargo, access_cargo_bot, access_mailsorting)
+	access = list(access_village, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
+	minimal_access = list(access_village, access_cargo, access_cargo_bot, access_mailsorting)
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 	auto_rifle_skill = 3
 	semi_rifle_skill = 3
@@ -158,7 +158,7 @@
 	supervisors = "the Munitorum Tribunus and the Seneschal"
 	selection_color = "#337C81"
 	economic_modifier = 5
-	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
+	access = list(access_village, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
 	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
@@ -175,7 +175,7 @@
 	open_when_dead = 1
 	supervisors = "the Munitorum Tribunus and the Seneschal"
 	selection_color = "#515151"
-	access = list(access_library, access_maint_tunnels)
+	access = list(access_library, access_village)
 	minimal_access = list(access_library)
 	alt_titles = list("Journalist")
 	outfit_type = /decl/hierarchy/outfit/job/librarian

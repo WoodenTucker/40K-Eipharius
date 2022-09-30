@@ -126,7 +126,7 @@
 	cost = 120
 	containername = "\improper Security voidsuit crate"
 	containertype = /obj/structure/closet/crate/secure/large
-	access = access_brig
+	access = access_magi
 */
 /decl/hierarchy/supply_pack/security/weapons
 	name = "Weapons - Security basic"
@@ -325,7 +325,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper wall shield generators crate"
-	access = access_brig
+	access = access_magi
 
 /decl/hierarchy/supply_pack/security/securitybiosuit
 	name = "Misc - Security biohazard gear"

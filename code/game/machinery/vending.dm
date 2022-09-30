@@ -1052,7 +1052,7 @@
 	icon_deny = "tool-deny"
 	icon_vend = "tool-vend"
 	vend_delay = 11
-	//req_access = list(access_maint_tunnels) //Maintenance access
+	//req_access = list(access_village) //Maintenance access
 	products = list(/obj/item/stack/cable_coil/random = 10,
 					/obj/item/crowbar = 5,
 					/obj/item/weldingtool = 3,

@@ -54,7 +54,7 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_brig)
+	req_access = list(access_magi)
 
 /obj/machinery/door/unpowered/inn/vault
 	name = "Interior Vault"

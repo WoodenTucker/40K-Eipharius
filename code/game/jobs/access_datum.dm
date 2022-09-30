@@ -16,9 +16,9 @@
 	desc = "Security Equipment"
 	region = ACCESS_REGION_SECURITY
 
-/var/const/access_brig = 2 // Brig timers and permabrig
+/var/const/access_magi = 2 // Brig timers and permabrig
 /datum/access/holding
-	id = access_brig
+	id = access_magi
 	desc = "Holding Cells"
 	region = ACCESS_REGION_SECURITY
 
@@ -75,13 +75,13 @@
 	id = access_engine_equip
 	desc = "Engine Room"
 	region = ACCESS_REGION_ENGINEERING
-*/
+
 /var/const/access_maint_tunnels = 12
 /datum/access/maint_tunnels
 	id = access_maint_tunnels
 	desc = "Maintenance"
 	region = ACCESS_REGION_ENGINEERING
-/*
+
 /var/const/access_external_airlocks = 13
 /datum/access/external_airlocks
 	id = access_external_airlocks
@@ -526,7 +526,7 @@
 	id = access_admeme
 	desc = "Administrator"
 
-/var/const/access_village = 211 // village/pilgrim common access. Basically anyone with any amount of ID should have this!!!
+/var/const/access_village = 211 // VILLAGE/PILGRIM COMMON ACCESS! BASICALLY ANYONE WITH ANY TYPE OF ID SHOULD HAVE THIS!!!
 /datum/access/village
 	id = access_village
 	desc = "Village Common"

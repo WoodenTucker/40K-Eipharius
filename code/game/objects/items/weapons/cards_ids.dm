@@ -494,7 +494,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
-	access = list(access_maint_tunnels, access_security)
+	access = list(access_village, access_security)
 
 /obj/item/card/id/dog_tag/guardsman/update_name()
 	var/final_name = "[registered_name]"
@@ -510,8 +510,8 @@ var/const/NO_EMAG_ACT = -50
 	assignment = "Commissar"
 	icon_state = "tagred"
 	item_state = "tagred"
-	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
-			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
+	access = list(access_security, access_eva, access_sec_doors, access_magi, access_armory,
+			            access_forensics_lockers, access_morgue, access_village, access_all_personal_lockers,
 			            access_research, access_mechanicus, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
 
@@ -535,7 +535,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/skitarii
 	icon_state = "tagred"
-	access = list(access_mechanicus, access_construction, access_maint_tunnels, access_brig, access_medical, access_robotics,)
+	access = list(access_mechanicus, access_construction, access_village, access_medical, access_robotics,)
 
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
@@ -552,7 +552,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/ring/administrator
 	icon_state = "admin_ring"
-	access = list(access_admeme, access_village, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
+	access = list(access_admeme, access_village, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_magi,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
 /obj/item/card/id/ring/goldring

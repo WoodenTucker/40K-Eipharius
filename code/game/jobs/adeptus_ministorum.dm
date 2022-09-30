@@ -13,7 +13,7 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
 	selection_color = "#FCFBFA"
-	access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_sob)
+	access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_village, access_sob)
 	minimal_access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_sob)
 	announced = FALSE
 //	alt_titles = list("Counselor")
@@ -33,7 +33,7 @@
 		H.fully_replace_character_name("Deacon [current_name]")
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(14,18)) //frail and holy
 		H.add_skills(rand(8,10),rand(5,6),rand(5,7),3,rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-50)
 		H.warfare_faction = IMPERIUM
@@ -221,12 +221,12 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister [current_name]")
+		H.fully_replace_character_name("Battle Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		H.add_stats(rand(18,22), rand(18,22), rand(18,22), 16)
 		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village, access_sob,)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -296,10 +296,10 @@
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_sob)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_village, access_sob)
 	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_sob)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_village, access_sob)
 
 	minimal_player_age = 20
 	ideal_character_age = 50
@@ -323,7 +323,7 @@
 		H.gender = FEMALE
 		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_genetics, access_heads,
 			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
-			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_maint_tunnels, access_sob)
+			access_keycard_auth, access_sec_doors, access_psychiatrist, access_eva, access_village, access_sob)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-60)
@@ -348,8 +348,8 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, 211)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_village, 211)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -365,7 +365,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,9),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-70)
@@ -392,8 +392,8 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_maint_tunnels, 211)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_maint_tunnels)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics, access_village, 211)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_virology, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/progena
 	auto_rifle_skill = 5
 	semi_rifle_skill = 5
@@ -409,7 +409,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,9),rand(6,8),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_morgue, access_chemistry, access_virology, access_surgery, access_psychiatrist, access_eva, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-60)
@@ -433,8 +433,8 @@
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_maint_tunnels)
-	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_maint_tunnels,)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics,access_village)
+	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_village)
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 	auto_rifle_skill = 3
 	semi_rifle_skill = 3

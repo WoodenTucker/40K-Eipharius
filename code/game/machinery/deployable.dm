@@ -7,7 +7,7 @@ Barricades
 for reference:
 
 	access_security = 1
-	access_brig = 2
+	access_magi = 2
 	access_armory = 3
 	access_forensics_lockers= 4
 	access_medical = 5
@@ -17,7 +17,7 @@ for reference:
 	access_genetics = 9
 	access_mechanicus = 10
 	access_engine_equip= 11
-	access_maint_tunnels = 12
+	access_village = 12
 	access_external_airlocks = 13
 	access_emergency_storage = 14
 	access_change_ids = 15
@@ -157,7 +157,7 @@ for reference:
 	var/health = 100.0
 	var/maxhealth = 100.0
 	var/locked = 0.0
-//	req_access = list(access_maint_tunnels)
+//	req_access = list(access_village)
 
 	New()
 		..()

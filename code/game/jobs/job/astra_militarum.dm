@@ -19,9 +19,9 @@
 	announced = FALSE
 	can_be_in_squad = TRUE
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels, access_armory)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_armory
+	access = list(access_security, access_sec_doors, access_forensics_lockers,
+			            access_all_personal_lockers, access_village, access_armory)
+	minimal_access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village, access_armory
 			            )
 
 	equip(var/mob/living/carbon/human/H)
@@ -36,7 +36,7 @@
 		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. The Emperor Protects. </font></b></span>")
 		var/troopnum = rand(1,50000)
 		switch(title)
@@ -94,7 +94,7 @@
 		H.assign_random_quirk()
 		H.witchblood()
 
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
@@ -110,7 +110,7 @@
 					H.add_skills(rand(9,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
 				if(title == "Valhallan Ice Warrior")
 					H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 
 //Whiteshield
 
@@ -141,7 +141,7 @@
 		H.fully_replace_character_name("Conscript [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHTConscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 //Sharpshooters
@@ -180,7 +180,7 @@
 		H.witchblood()
 
 		to_chat(H, "<span class='notice'><b><font size=2>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=2> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
 
 		switch(title)
@@ -203,8 +203,8 @@
 	shotgun_skill = 6
 	lmg_skill = 5
 	smg_skill = 6
-	cultist_chance = 50 //penitents be penitentin 
-	//these alt titles are wrong, create /outfits/ for penitents and put them down here 
+	cultist_chance = 50 //penitents be penitentin
+	//these alt titles are wrong, create /outfits/ for penitents and put them down here
 	alt_titles = list(
 		"Deserter" = /decl/hierarchy/outfit/job/sniper,
 		"Drug-Dealer" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -270,7 +270,7 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
 
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
 
 		switch(title)
@@ -279,7 +279,7 @@
 					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
 				if(title == "Valhallan Scout Sniper")
 					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_forensics_lockers, access_all_personal_lockers, access_village)
 
 
 // Sergeants
@@ -301,9 +301,9 @@
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
 	department_flag = SEC|COM
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory
+	access = list(access_security, access_sec_doors, access_forensics_lockers,
+			            access_all_personal_lockers, access_village, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_sec_doors,access_forensics_lockers, access_all_personal_lockers, access_village, access_guard_armory, access_armory
 			            )
 
 	auto_rifle_skill = 9
@@ -345,7 +345,7 @@
 
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
+		H.get_idcard()?.access = list(access_security, access_sec_doors, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 // Combat Medicae
 
 /datum/job/ig/medicae
@@ -363,8 +363,8 @@
 	minimal_player_age = 18
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_maint_tunnels, access_psychiatrist, access_sec_doors, access_security)
-	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_maint_tunnels, access_sec_doors,access_security)
+	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_eva, access_village, access_psychiatrist, access_sec_doors, access_security)
+	minimal_access = list(access_medical, access_medical_equip, access_morgue, access_eva, access_village, access_sec_doors,access_security)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
