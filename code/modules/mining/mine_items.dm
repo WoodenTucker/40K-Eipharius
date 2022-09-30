@@ -46,7 +46,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_ICLOTHING
 	force = 15
 	throwforce = 4
-	icon_state = "pickaxe"
+	icon_state = "ospickaxe"
 	item_state = "spickaxe"
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 3750)
