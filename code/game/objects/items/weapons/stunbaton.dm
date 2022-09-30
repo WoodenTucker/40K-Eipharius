@@ -156,9 +156,9 @@
 		//whacking someone causes a much poorer electrical contact than deliberately prodding them.
 		stun *= 0.5
 		if(status)		//Checks to see if the stunbaton is on.
-			agony *= 0.5	//whacking someone causes a much poorer contact than prodding them.
+			agony *= 1	//fuck it.
 		else
-			agony = 0	//Shouldn't really stun if it's off, should it?
+			agony = 1	//fuck it.
 		//we can't really extract the actual hit zone from ..(), unfortunately. Just act like they attacked the area they intended to.
 	else if(!status)
 		if(affecting)
@@ -248,11 +248,12 @@
 	desc = "An improvised stun baton."
 	icon_state = "stunprod_nocell"
 	item_state = "prod"
-	force = 3
+	force = 20 //ITS LITERALLY A POINTY STICK
 	throwforce = 5
-	stunforce = 0
-	agonyforce = 60	//same force as a stunbaton, but uses way more charge.
+	stunforce = 1 //shocks override your nervous system n' shit.
+	agonyforce = 80	//stronger than a stunbaton.
 	hitcost = 25
+	block_chance = 60
 	attack_verb = list("poked")
 	slot_flags = null
 

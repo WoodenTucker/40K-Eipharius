@@ -16,6 +16,13 @@
 	delete_items = FALSE
 	special 	 = TRUE
 
+
+/datum/rune_recipe/tzeentch/fool
+	name = "Illusion Rite"
+	ingredients = list(/obj/item/organ/internal/eyes/bioprinted, /obj/item/clothing)
+	special = TRUE
+	
+	
 //Stolen from chamelon projectors
 /datum/rune_recipe/tzeentch/illusion
 	name = "Illusion Rite"

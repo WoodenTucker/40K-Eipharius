@@ -510,29 +510,7 @@
 	sales_price = 70
 	edge = 1
 
-/obj/item/melee/chain/pcsword/khorneaxe
-	name = "Khornate Chainaxe"
-	desc = "The Chainaxe of the Blood God's chosen mortal men and Astartes alike. It looks excellent for killing, maiming, and perhaps even burning. It doesn't look very good for blocking, good thing you're only gonna attack with it."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "chainaxe"
-	item_state = "chainaxe"
-	wielded_icon = "chainaxe"
-	str_requirement = 13
-	force = 35 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	force_wielded = 42
-	block_chance = 15
-	sharp = TRUE
-	w_class = ITEM_SIZE_HUGE
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 9
-	sales_price = 75
-	edge = 1
+
 
 // KNIVES AND SMALL WEAPONS //
 // KNIVES AND SMALL WEAPONS //
@@ -616,47 +594,7 @@
 		..()
 
 
-/obj/item/material/sword/chaosknife
-	name = "chaos knife"
-	desc = "A knife made of bones and corruption."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "chaos_knife"
-	item_state = "EB-knife"//"knife"
-	attack_verb = list("slashed")
-	force = 21
-	force_wielded = 24
-	armor_penetration = 15
-	block_chance = 20
-	sales_price = 39
-	weapon_speed_delay = 5
-	w_class = ITEM_SIZE_SMALL
-	grab_sound_is_loud = TRUE
-	grab_sound = 'sound/items/unholster_knife.ogg'
-	equipsound = 'sound/items/holster_knife.ogg'
-	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	drop_sound = 'sound/items/knife_drop.ogg'
-	swing_sound = "blunt_swing"
 
-/obj/item/material/sword/slehdagger
-	name = "slaanesh dagger"
-	desc = "A exotic dagger used for pleasure."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "slaanesh_dagger"
-	item_state = "EB-knife"//"knife"
-	attack_verb = list("slashed")
-	force = 21
-	force_wielded = 24
-	armor_penetration = 15
-	block_chance = 20
-	sales_price = 39
-	weapon_speed_delay = 5
-	w_class = ITEM_SIZE_SMALL
-	grab_sound_is_loud = TRUE
-	grab_sound = 'sound/items/unholster_knife.ogg'
-	equipsound = 'sound/items/holster_knife.ogg'
-	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	drop_sound = 'sound/items/knife_drop.ogg'
-	swing_sound = "blunt_swing"
 
 /obj/item/material/scythe
 	name = "scythe"
@@ -694,92 +632,3 @@
 	sales_price = 0
 	weapon_speed_delay = 7
 
-/obj/item/material/sword/slaanesh
-	name = "slaanesh sword"
-	desc = "A sword made of corruption."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "slaanesh_sword"
-	item_state = "sabre"
-	attack_verb = list("stabbed", "chopped", "cut", "sliced")
-	force = 33
-	force_wielded = 36
-	sharp = 1
-	block_chance = 15
-	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
-	slot_flags = SLOT_BELT
-	sales_price = 90
-	weapon_speed_delay = 7
-
-/obj/item/material/sword/hellblade
-	name = "hellblade sword"
-	desc = "A sword forged with corruption and souls of the raged."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "hellblade"
-	item_state = "sabre"
-	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
-	force = 33
-	force_wielded = 40
-	sharp = 1
-	block_chance = 18
-	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
-	slot_flags = SLOT_BELT
-	sales_price = 200
-	weapon_speed_delay = 7
-
-
-/obj/item/material/sword/skinning_knife
-	name = "ritual knife"
-	desc = "A visitor from the warp..."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "artknife"
-	item_state = "artknife"//"knife"
-	attack_verb = list("slashed")
-	force = 24
-	force_wielded = 27
-	block_chance = 20
-	sales_price = 30
-	weapon_speed_delay = 5
-	w_class = ITEM_SIZE_SMALL
-	grab_sound_is_loud = TRUE
-	grab_sound = 'sound/items/unholster_knife.ogg'
-	equipsound = 'sound/items/holster_knife.ogg'
-	sharpness = TRUE//No cutting peoples heads off with a knife please.
-	drop_sound = 'sound/items/knife_drop.ogg'
-	swing_sound = "blunt_swing"
-	var/skinning = 0
-
-/obj/item/material/sword/skinning_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
-	if(C.skinned == 1)
-		to_chat(usr, "The flesh has already been stripped away from this one...")
-		return
-	if(src.skinning == 1)
-		to_chat(usr, "You are already skinning this one.")
-		return
-	if(C.stat != DEAD)
-		to_chat(usr, "No... I can't... [C] is still alive...")
-		return
-	if(user.a_intent == I_HELP)
-		to_chat(usr, "I'm not helping him... I need to harm him!")
-		return
-	if(user.a_intent == I_HURT && (C.stat = DEAD))
-		usr.visible_message("\The [usr] gingerly slides the blade beneath the skin of [C]. Hungrily chasing the next rush of pleasure [usr] sloppily rends a chunk of flesh from the corpse.",\
-			"You cut away [C]'s flesh with \the [src]!",\
-			"<font color='#800080'>You hear a cackle, first a deep, masculine voice followed by a much softer, feminine tone.</font>")
-		playsound(usr, 'sound/effects/SkinningA.ogg', 80, 0, -1)
-		src.skinning = 1
-		(do_after(user,40,src))
-		C.skinned = 1
-		src.skinning = 0
-		new /obj/item/humanskin(C.loc)
-		return
-	else
-		..()
-/*
-/obj/item/material/sword/skinning_knife/pickup(var/mob/living/carbon/human/user)
-	if(user.lust < 3 )
-		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
-		user.make_dizzy(220)
-		user.vomit()
-		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)*/

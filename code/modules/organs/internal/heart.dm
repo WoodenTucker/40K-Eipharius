@@ -18,14 +18,6 @@
 		icon_state = dead_icon
 	..()
 
-/obj/item/organ/internal/heart/chaos
-	name = "Le pecho de Chaos"
-
-/obj/item/organ/internal/heart/chaos/attack_self(mob/user)
-	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
-	k.join_request(user)
-
-
 /obj/item/organ/internal/heart/robotize()
 	. = ..()
 	icon_state = "heart-prosthetic"
@@ -201,3 +193,19 @@
 			pulsesound = "extremely fast and faint"
 
 	. = "[pulsesound] pulse"
+	
+	
+	
+	
+	
+	
+/obj/item/organ/internal/heart/bioprinted
+	
+	
+	
+/obj/item/organ/internal/heart/chaos
+	name = "Le pecho de Chaos"
+
+/obj/item/organ/internal/heart/chaos/attack_self(mob/user)
+	var/datum/heretic_deity/k = GOD(input(user, "Choose God") in list(GOD_KHORNE, GOD_NURGLE, GOD_SLAANESH))
+	k.join_request(user)
