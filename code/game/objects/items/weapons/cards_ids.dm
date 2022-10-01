@@ -504,8 +504,8 @@ var/const/NO_EMAG_ACT = -50
 	assignment = "Commissar"
 	icon_state = "tagred"
 	item_state = "tagred"
-	access = list(access_security, access_eva, access_sec_doors, access_magi, access_armory,
-			            access_forensics_lockers, access_morgue, access_village, access_all_personal_lockers,
+	access = list(access_security, access_guard_common, access_magi, access_armory,
+			            access_forensics_lockers, access_village, access_all_personal_lockers,
 			            access_research, access_mechanicus, access_mining, access_medical, access_construction, access_mailsorting,
 			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
 

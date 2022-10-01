@@ -631,7 +631,7 @@
 	explosion_resistance = 20
 	secured_wires = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_highsecurity
-	req_access = list(access_hos, access_sec_doors)
+	req_access = list(access_hos, access_guard_common)
 
 /obj/machinery/door/airlock/highsecurity/bolted
 

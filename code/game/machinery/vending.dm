@@ -1073,7 +1073,7 @@
 	icon_deny = "engivend-deny"
 	icon_vend = "engivend-vend"
 	vend_delay = 21
-	req_one_access = list(access_atmospherics,access_mechanicus)
+	req_one_access = list(access_mechanicus)
 	products = list(/obj/item/clothing/glasses/meson = 1,
 					/obj/item/device/multitool = 4,
 					/obj/item/device/geiger = 4,
@@ -1091,7 +1091,7 @@
 	desc = "Everything you need for do-it-yourself repair."
 	icon_state = "engi"
 	icon_deny = "engi-deny"
-	req_one_access = list(access_atmospherics,access_mechanicus)
+	req_one_access = list(access_mechanicus)
 	products = list(/obj/item/storage/belt/utility = 4,
 					/obj/item/clothing/glasses/meson = 4,
 					/obj/item/clothing/gloves/insulated = 4,

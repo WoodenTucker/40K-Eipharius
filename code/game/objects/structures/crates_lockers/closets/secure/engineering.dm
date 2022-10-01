@@ -89,7 +89,7 @@
 
 /obj/structure/closet/secure_closet/atmos_personal
 	name = "technician's locker"
-	req_access = list(access_atmospherics)
+	req_access = list(access_mechanicus)
 	icon_state = "secureatm1"
 	icon_closed = "secureatm"
 	icon_locked = "secureatm1"

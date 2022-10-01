@@ -32,7 +32,7 @@
 /datum/job/fortress/red/practitioner
 	title = "Red Practitioner"
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor/red
-	access = list(access_medical, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_genetics)
+	access = list(access_medical, access_medical_equip, access_surgery, access_chemistry, access_virology, access_genetics)
 	total_positions = -1
 	social_class = SOCIAL_CLASS_MED
 	medical_skill = 10

@@ -39,13 +39,13 @@
 	id = access_medical
 	desc = "Medical"
 	region = ACCESS_REGION_MEDBAY
-
+/*
 /var/const/access_morgue = 6
 /datum/access/morgue
 	id = access_morgue
 	desc = "Morgue"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_tox = 7
 /datum/access/tox
 	id = access_tox
@@ -111,13 +111,13 @@
 	id = access_teleporter
 	desc = "Teleporter"
 	region = ACCESS_REGION_COMMAND
-
+/*
 /var/const/access_eva = 18
 /datum/access/eva
 	id = access_eva
 	desc = "EVA"
 	region = ACCESS_REGION_COMMAND
-
+*/
 /var/const/access_heads = 19
 /datum/access/heads
 	id = access_heads
@@ -147,13 +147,13 @@
 	id = access_tech_storage
 	desc = "Technical Storage"
 	region = ACCESS_REGION_ENGINEERING
-*/
+
 /var/const/access_atmospherics = 24
 /datum/access/atmospherics
 	id = access_atmospherics
 	desc = "Atmospherics"
 	region = ACCESS_REGION_ENGINEERING
-
+*/
 /var/const/access_bar = 25
 /datum/access/bar
 	id = access_bar
@@ -360,18 +360,18 @@
 	desc = "Gateway"
 	region = ACCESS_REGION_COMMAND
 
-/var/const/access_sec_doors = 63 // Guardsman common
+/var/const/access_guard_common = 63 // Guardsman common
 /datum/access/sec_doors
-	id = access_sec_doors
-	desc = "Security"
+	id = access_guard_common
+	desc = "Guard Outpost common areas"
 	region = ACCESS_REGION_SECURITY
-
+/*
 /var/const/access_psychiatrist = 64 // Psychiatrist's office
 /datum/access/psychiatrist
 	id = access_psychiatrist
 	desc = "Psychiatrist's Office"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_xenoarch = 65
 /datum/access/xenoarch
 	id = access_xenoarch

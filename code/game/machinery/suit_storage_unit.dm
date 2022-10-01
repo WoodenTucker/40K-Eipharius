@@ -45,7 +45,7 @@
 	helmet_type = /obj/item/clothing/head/helmet/space
 	tank_type = /obj/item/tank/oxygen
 	mask_type = /obj/item/clothing/mask/breath
-	req_access = list(access_eva)
+	req_access = list(access_village)
 
 /obj/machinery/suit_storage_unit/atmos
 	name = "Atmospherics Voidsuit Storage Unit"
@@ -54,7 +54,7 @@
 	boots_type = /obj/item/clothing/shoes/magboots
 	tank_type = /obj/item/tank/oxygen
 	mask_type = /obj/item/clothing/mask/breath
-	req_access = list(access_atmospherics)
+	req_access = list(access_mechanicus)
 	islocked = 1
 
 /obj/machinery/suit_storage_unit/atmos/alt

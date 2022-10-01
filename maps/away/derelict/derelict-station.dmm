@@ -421,7 +421,7 @@
 "ig" = (/obj/random/snack,/turf/simulated/floor/airless,/area/constructionsite/medical)
 "ih" = (/obj/structure/lattice,/obj/random/junk,/turf/space,/area/constructionsite/medical)
 "ii" = (/obj/machinery/door/airlock/glass_medical{name = "Medbay Storage"; req_one_access = list(65,5)},/turf/simulated/wall,/area/constructionsite/hallway/aft)
-"ij" = (/obj/machinery/door/airlock/glass_atmos{name = "Atmospherics"; req_access = list(24)},/turf/simulated/floor/airless,/area/constructionsite/hallway/aft)
+"ij" = (/obj/machinery/door/airlock/glass_atmos{name = "Atmospherics"; req_access = list(10)},/turf/simulated/floor/airless,/area/constructionsite/hallway/aft)
 "ik" = (/obj/random/firstaid,/turf/simulated/floor/airless,/area/constructionsite/medical)
 "il" = (/obj/item/storage/box/freezer,/turf/simulated/floor/airless,/area/constructionsite/medical)
 "im" = (/obj/random/closet,/obj/random/masks,/obj/random/loot,/turf/simulated/floor/airless,/area/constructionsite/atmospherics)

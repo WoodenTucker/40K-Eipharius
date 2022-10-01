@@ -156,7 +156,7 @@
 	cost = 15
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Psychiatrist equipment"
-	access = access_psychiatrist
+	access = access_village
 
 /decl/hierarchy/supply_pack/medical/medicalscrubs
 	name = "Medical scrubs"
@@ -189,7 +189,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Autopsy equipment crate"
-	access = access_morgue
+	access = access_village
 /*
 /decl/hierarchy/supply_pack/medical/medicaluniforms
 	name = "Medical uniforms"

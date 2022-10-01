@@ -184,7 +184,7 @@
 
 /obj/structure/closet/secure_closet/counselor
 	name = "counselor's locker"
-	req_access = list(access_psychiatrist,access_chapel_office)
+	req_access = list(access_village,access_chapel_office)
 	icon_state = "chaplainsecure1"
 	icon_closed = "chaplainsecure"
 	icon_locked = "chaplainsecure1"
@@ -252,7 +252,7 @@
 	icon_locked = "securemed1"
 	icon_opened = "securemedopen"
 	icon_off = "securemedoff"
-	req_access = list(access_psychiatrist)
+	req_access = list(access_village)
 
 /obj/structure/closet/secure_closet/psychiatry/WillContain()
 	return list(

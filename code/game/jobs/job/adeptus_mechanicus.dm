@@ -21,8 +21,8 @@
 	smg_skill = 8
 	ideal_character_age = 70 // most magi are old as fuck, just imagine what it takes to be a robotics nerdexpert in the cult mechanicus
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
-	access = list(access_mechanicus, access_magosd, access_sec_doors)
-	minimal_access = list(access_mechanicus, access_magosd, access_sec_doors)
+	access = list(access_mechanicus, access_magosd, access_guard_common)
+	minimal_access = list(access_mechanicus, access_magosd, access_guard_common)
 
 
 
@@ -61,8 +61,8 @@
 	open_when_dead = 0
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_eva, access_mechanicus, access_village, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
-	minimal_access = list(access_eva, access_mechanicus, access_village, access_construction, access_atmospherics, access_emergency_storage, access_robotics, access_research)
+	access = list(access_mechanicus, access_village, access_construction, access_emergency_storage, access_robotics, access_research)
+	minimal_access = list(access_mechanicus, access_village, access_construction, access_emergency_storage, access_robotics, access_research)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -105,7 +105,7 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_mechanicus, access_village, access_teleporter, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_sec_doors, access_robotics, access_medical, access_morgue,  access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
+	access = list(access_mechanicus, access_village, access_emergency_storage, access_construction, access_guard_common, access_robotics, access_medical,  access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
 	minimal_access = list(access_mechanicus, )
 	outfit_type = /decl/hierarchy/outfit/job/medical/biologis
 	auto_rifle_skill = 6
@@ -167,8 +167,8 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_mechanicus, access_village, access_teleporter, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_sec_doors, access_robotics, access_medical, access_morgue,  access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
-	minimal_access = list(access_mechanicus, access_village, access_teleporter, access_atmospherics, access_emergency_storage, access_eva, access_construction, access_RC_announce, access_tcomsat, access_ai_upload, access_robotics, access_research,)
+	access = list(access_mechanicus, access_village, access_emergency_storage, access_construction, access_guard_common, access_robotics, access_medical, access_surgery, access_chemistry, access_virology, access_genetics, access_RC_announce, access_tcomsat, access_ai_upload, access_research,)
+	minimal_access = list(access_mechanicus, access_village, access_emergency_storage, access_construction, access_RC_announce, access_tcomsat, access_ai_upload, access_robotics, access_research,)
 	outfit_type = /decl/hierarchy/outfit/job/science/explorator
 	auto_rifle_skill = 8 //Explorator for you.
 	semi_rifle_skill = 8
@@ -236,7 +236,7 @@
 	selection_color = "#5b4d20"
 	economic_modifier = 5
 	minimal_player_age = 7
-	access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
-	minimal_access = list(access_eva, access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks, access_construction, access_atmospherics, access_emergency_storage)
+	access = list(access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks, access_construction, access_emergency_storage)
+	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks, access_construction, access_emergency_storage)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/atmos
 */ //we dont use atmos here

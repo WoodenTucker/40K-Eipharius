@@ -153,7 +153,7 @@
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper Atmospheric circulator crate"
-	access = access_atmospherics
+	access = access_mechanicus
 
 /decl/hierarchy/supply_pack/engineering/air_dispenser
 	name = "Pipe Dispenser"
@@ -161,7 +161,7 @@
 	cost = 35
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper Pipe Dispenser Crate"
-	access = access_atmospherics
+	access = access_mechanicus
 
 /decl/hierarchy/supply_pack/engineering/disposals_dispenser
 	name = "Disposals Pipe Dispenser"
@@ -169,7 +169,7 @@
 	cost = 35
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper Disposal Dispenser Crate"
-	access = access_atmospherics
+	access = access_mechanicus
 
 /decl/hierarchy/supply_pack/engineering/shield_generator
 	name = "Shield Generator Construction Kit"
