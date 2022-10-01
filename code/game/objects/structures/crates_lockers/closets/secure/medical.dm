@@ -123,8 +123,8 @@
 	)
 
 /obj/structure/closet/secure_closet/CMO
-	name = "Sister Hospitaller's locker"
-	req_access = list(access_cmo)
+	name = "Sister Abbess' locker"
+	req_access = list(access_abbess)
 	icon_state = "cmosecure1"
 	icon_closed = "cmosecure"
 	icon_locked = "cmosecure1"

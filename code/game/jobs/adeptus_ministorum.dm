@@ -33,7 +33,7 @@
 		H.fully_replace_character_name("Deacon [current_name]")
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(14,18)) //frail and holy
 		H.add_skills(rand(8,10),rand(5,6),rand(5,7),3,rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_forensics_lockers, access_all_personal_lockers, access_village, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-50)
 		H.warfare_faction = IMPERIUM
@@ -226,7 +226,7 @@
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		H.add_stats(rand(18,22), rand(18,22), rand(18,22), 16)
 		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_sob,)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -295,10 +295,10 @@
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	access = list(access_medical, access_medical_equip, access_genetics, access_heads,
-			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+			access_chemistry, access_virology, access_abbess, access_surgery, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_sob)
 	minimal_access = list(access_medical, access_medical_equip, access_genetics, access_heads,
-			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+			access_chemistry, access_virology, access_abbess, access_surgery, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_sob)
 
 	minimal_player_age = 20
@@ -322,7 +322,7 @@
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_genetics, access_heads,
-			access_chemistry, access_virology, access_cmo, access_surgery, access_RC_announce,
+			access_chemistry, access_virology, access_abbess, access_surgery, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_sob)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)

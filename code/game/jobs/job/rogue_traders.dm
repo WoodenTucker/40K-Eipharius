@@ -92,13 +92,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the heir to the Lord Trader, born within the City of Messina this world is all you know and you been prepared over your young life to succeed your Lord and one day rule this planet. Despite all they have given you, an entire planet to lead -- there are pressures from benefactors close to the Trader that encourage his death so that you may take the mantle from them.</font></b></span>")
 
 
-	access = list(access_security, access_guard_common, access_magi, access_forensics_lockers,
+	access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
 			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_forensics_lockers,
+	minimal_access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
@@ -148,13 +148,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Steward and personal aid to the Lord Trader acting as their Major-Domo, you interact with the Administratum and Munitorium on behalf of your Lord while wielding some semblence of the golden writ of authority in their absence.</font></b></span>")
 
 
-	access = list(access_security, access_guard_common, access_magi, access_forensics_lockers,
+	access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
 			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_forensics_lockers,
+	minimal_access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
@@ -173,13 +173,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
-	access = list(access_security, access_guard_common, access_forensics_lockers,
+	access = list(access_security, access_guard_common,
 			            access_medical, access_mechanicus, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
 			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
-	minimal_access = list(access_security, access_guard_common, access_forensics_lockers,
+	minimal_access = list(access_security, access_guard_common,
 			            access_medical, access_mechanicus, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,

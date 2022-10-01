@@ -275,8 +275,8 @@
 	glass = 1
 	req_access = list(access_hos)
 
-/obj/machinery/door/airlock/glass_command/hospitaller
-	name = "Hospitaller's Haven"
+/obj/machinery/door/airlock/glass_command/hospitaller //cant be fucked renaming it to abbess
+	name = "Abbess' Haven"
 	icon = 'icons/obj/doors/Doorcomglass.dmi'
 	hitsound = 'sound/effects/Glasshit.ogg'
 	maxhealth = 300
@@ -284,7 +284,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_cmo)
+	req_access = list(access_abbess)
 
 /obj/machinery/door/airlock/glass_command/seneschal
 	name = "Seneschal's Study"

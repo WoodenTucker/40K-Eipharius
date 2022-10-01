@@ -19,9 +19,9 @@
 	open_when_dead = FALSE
 	department_flag = SEC
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi, access_forensics_lockers,
+	access = list(access_security, access_guard_common, access_magi,
 			            access_all_personal_lockers, access_village,)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village,
+	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,
 			            )
 
 
@@ -39,7 +39,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village,)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum. For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
@@ -62,8 +62,8 @@
 	open_when_dead = FALSE
 	department_flag = SEC|COM
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village, access_medical, access_medical_equip, access_village, access_administratum, access_change_ids, access_keycard_auth)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village, access_medical, access_medical_equip, access_village, access_administratum, access_change_ids, access_keycard_auth
+	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_medical_equip, access_village, access_administratum, access_change_ids, access_keycard_auth)
+	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_medical_equip, access_village, access_administratum, access_change_ids, access_keycard_auth
 			            )
 
 
@@ -81,7 +81,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_forensics_lockers, access_all_personal_lockers, access_village,)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 

@@ -27,13 +27,13 @@
 	id = access_armory
 	desc = "Armory"
 	region = ACCESS_REGION_SECURITY
-
+/*
 /var/const/access_forensics_lockers = 4
 /datum/access/forensics_lockers
 	id = access_forensics_lockers
 	desc = "Forensics"
 	region = ACCESS_REGION_SECURITY
-
+*/
 /var/const/access_medical = 5
 /datum/access/medical
 	id = access_medical
@@ -244,9 +244,9 @@
 	desc = "Virology"
 	region = ACCESS_REGION_MEDBAY
 
-/var/const/access_cmo = 40
-/datum/access/cmo
-	id = access_cmo
+/var/const/access_abbess = 40
+/datum/access/abbess
+	id = access_abbess
 	desc = "Sister Hospitaller"
 	region = ACCESS_REGION_COMMAND
 
