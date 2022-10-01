@@ -21,8 +21,8 @@
 	smg_skill = 8
 	ideal_character_age = 70 // most magi are old as fuck, just imagine what it takes to be a robotics nerdexpert in the cult mechanicus
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
-	access = list(access_mechanicus, access_ce, access_sec_doors)
-	minimal_access = list(access_mechanicus, access_ce, access_sec_doors)
+	access = list(access_mechanicus, access_magosd, access_sec_doors)
+	minimal_access = list(access_mechanicus, access_magosd, access_sec_doors)
 
 
 

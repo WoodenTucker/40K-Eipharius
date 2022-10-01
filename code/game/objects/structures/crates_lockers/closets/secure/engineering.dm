@@ -1,6 +1,6 @@
 /obj/structure/closet/secure_closet/engineering_chief
 	name = "Magos's locker"
-	req_access = list(access_ce)
+	req_access = list(access_magosd)
 	icon_state = "securece1"
 	icon_closed = "securece"
 	icon_locked = "securece1"

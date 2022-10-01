@@ -320,9 +320,6 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/medical/biologis
 	job_access_type = /datum/job/biologis
 
-/obj/item/card/id/medical/psychiatrist
-	job_access_type = /datum/job/psychiatrist
-
 /obj/item/card/id/medical/paramedic
 	job_access_type = /datum/job/ig/medicae
 
@@ -336,13 +333,10 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card issued to security staff."
 	icon_state = "sec"
-	job_access_type = /datum/job/officer
-
-/obj/item/card/id/security/warden
-	job_access_type = /datum/job/warden
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/security/detective
-	job_access_type = /datum/job/detective
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/security/head
 	name = "identification card"
@@ -369,25 +363,25 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card issued to science staff."
 	icon_state = "sci"
-	job_access_type = /datum/job/scientist
+	job_access_type = /datum/job/penitent
 /*
 /obj/item/card/id/science/xenobiologist
 	job_access_type = /datum/job/xenobiologist
 */
 /obj/item/card/id/science/roboticist
-	job_access_type = /datum/job/roboticist
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/science/head
 	name = "identification card"
 	desc = "A card which represents knowledge and reasoning."
 	icon_state = "sciGold"
-	job_access_type = /datum/job/rd
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo
 	name = "identification card"
 	desc = "A card issued to cargo staff."
 	icon_state = "cargo"
-	job_access_type = /datum/job/cargo_tech
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo/mining
 	job_access_type = /datum/job/mining

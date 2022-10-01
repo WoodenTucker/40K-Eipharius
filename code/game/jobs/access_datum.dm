@@ -318,9 +318,9 @@
 	desc = "Xenobiology Lab"
 	region = ACCESS_REGION_RESEARCH
 
-/var/const/access_ce = 56
+/var/const/access_magosd = 56
 /datum/access/ce
-	id = access_ce
+	id = access_magosd
 	desc = "Magos"
 	region = ACCESS_REGION_ENGINEERING
 
@@ -360,7 +360,7 @@
 	desc = "Gateway"
 	region = ACCESS_REGION_COMMAND
 
-/var/const/access_sec_doors = 63 // Security front doors
+/var/const/access_sec_doors = 63 // Guardsman common
 /datum/access/sec_doors
 	id = access_sec_doors
 	desc = "Security"
@@ -384,7 +384,7 @@
 	desc = "Medical Equipment"
 	region = ACCESS_REGION_MEDBAY
 
-/var/const/access_guard_armory = 67
+/var/const/access_guard_armory = 67 // guardsman officer and armory
 /datum/access/guard_armory
 	id = access_guard_armory
 	desc = "Guard Armory"

@@ -330,12 +330,14 @@
 		if(title == "Krieg Watchmaster")
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
+			var/troopnum = rand(1,50000)
+			H.fully_replace_character_name("Watchmaster [troopnum]")
 
 		if(title == "Cadian Sergeant")
 			H.set_quirk(new/datum/quirk/tough()) //these fuckers went through a lot, but i dont exactly feel like giving them brave.
 			H.set_trait(new/datum/trait/death_tolerant())
 
-			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS.
+			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))

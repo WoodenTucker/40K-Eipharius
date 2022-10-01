@@ -262,7 +262,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_ce)
+	req_access = list(access_magosd)
 
 /obj/machinery/door/airlock/glass_command/commissar
 	name = "Commisarr's Den"

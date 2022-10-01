@@ -331,21 +331,21 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11)) 
+		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11))
 		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
-/datum/job/pathfinder  
+/datum/job/pathfinder
 	title = "Pathfinder"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED 
+	social_class = SOCIAL_CLASS_MED
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Yourself"
+	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
 	access = list(access_bar,)
 	minimal_access = list(access_bar)
@@ -357,12 +357,12 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12)) 
+		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12))
 		H.add_skills(rand(7,9),rand(7,10),rand(4,6),4,6) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda you a former courtier sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You,  a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
 
 //loadouts below here

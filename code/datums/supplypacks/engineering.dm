@@ -85,7 +85,7 @@
 	containertype = /obj/structure/closet/crate/large
 	cost = 10
 	containername = "\improper Field Generator crate"
-	access = access_ce
+	access = access_magosd
 
 /decl/hierarchy/supply_pack/engineering/sing_gen
 	name = "Singularity Generator crate"
@@ -93,7 +93,7 @@
 	cost = 10
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper Singularity Generator crate"
-	access = access_ce
+	access = access_magosd
 
 /decl/hierarchy/supply_pack/engineering/collector
 	name = "Collector crate"
@@ -115,7 +115,7 @@
 	cost = 40
 	containertype = /obj/structure/largecrate
 	containername = "\improper Particle Accelerator crate"
-	access = access_ce
+	access = access_magosd
 
 /decl/hierarchy/supply_pack/engineering/pacman_parts
 	name = "P.A.C.M.A.N. portable generator parts"
@@ -185,7 +185,7 @@
 	cost = 150
 	containertype = /obj/structure/closet/crate/secure/large/phoron
 	containername = "\improper Supermatter crate (CAUTION)"
-	access = access_ce
+	access = access_magosd
 
 /decl/hierarchy/supply_pack/engineering/fueltank
 	name = "Fuel tank crate"

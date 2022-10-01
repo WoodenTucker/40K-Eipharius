@@ -6,7 +6,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "the merchant guilds"
+	supervisors = "The merchant guilds"
 	selection_color = "#337C81"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
