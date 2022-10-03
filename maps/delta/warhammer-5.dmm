@@ -716,7 +716,7 @@
 "Xx" = (/obj/machinery/button/remote/blast_door/id_scan{id = "taudrop"; pixel_x = 5; pixel_y = 0; req_access = list(209)},/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/tau1)
 "Xz" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "XA" = (/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"XJ" = (/obj/structure/cult/talisman,/obj/item/card/id/innkey1{access = list(302); desc = "This key is required to access the Dropship and Inquisition Base."; name = "inquisitorial key"; req_access = null},/obj/effect/floor_decal/turf/brick/two,/obj/item/card/id/innkey3{access = list(330); name = "Armory Key"; req_access = list(330)},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"XJ" = (/obj/structure/cult/talisman,/obj/item/card/id/innkey1{access = list(302); desc = "This key is required to access the Dropship and Inquisition Base."; name = "inquisitorial key"; req_access = null},/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "XN" = (/obj/machinery/door/airlock/glass_security{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "XZ" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows"},/area/centcom)
 "Ye" = (/obj/machinery/light,/turf/simulated/floor/wood,/area/centcom)

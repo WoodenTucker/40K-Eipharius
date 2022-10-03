@@ -250,114 +250,8 @@
 		/mob/living/carbon/human/proc/sobweservants,
 		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all. Once you were a Sister Repentia, who through incredible miracles and valor achieved rank once again within the Order, revered as a tale for years among your peers as a war hero made pure by the Emperor's embrace.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all. Once you were a Sister Repentia, who through incredible miracles and valor achieved rank once again within the Order, revered as a tale for years among your peers as a war hero made pure by the Emperor's embrace.</font></b></span>")
 
-//SOB outfits
-
-/decl/hierarchy/outfit/job/sisterofbattle
-	name = OUTFIT_JOB_NAME("Sister of Battle")
-	head = /obj/item/clothing/head/helmet/sisterofbattle
-	l_ear = /obj/item/device/radio/headset/heads/cmo
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle
-	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
-	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
-	gloves = /obj/item/clothing/gloves/sisterofbattle
-	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
-	id_type = /obj/item/card/id/dog_tag
-	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
-	/obj/item/reagent_containers/food/snacks/warfare = 1,
-	/obj/item/clothing/mask/gas/explorer = 1,
-	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
-	)
-
-/decl/hierarchy/outfit/job/sisterofbattle/repentia
-	name = OUTFIT_JOB_NAME("Sister Repentia")
-	head = /obj/item/clothing/head/helmet/sisterofbattle/repentia
-	l_ear = /obj/item/device/radio/headset/heads/cmo
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle/repentia
-	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
-	back = /obj/item/storage/backpack/satchel/warfare
-	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
-	id_type = /obj/item/card/id/dog_tag
-	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/melee/chain/mercycs
-	r_hand = /obj/item/gun/projectile/automatic/flamer
-	backpack_contents = list(
-	/obj/item/ammo_magazine/flamer = 3,
-	/obj/item/reagent_containers/food/snacks/warfare = 1,
-	/obj/item/clothing/mask/gas/explorer = 1,
-	/obj/item/device/flashlight/lantern = 1,
-	)
-
-
-/decl/hierarchy/outfit/job/sisterofbattle/mlsister
-	name = OUTFIT_JOB_NAME("Order of Our Martyred Lady")
-	head = /obj/item/clothing/head/helmet/sisterofbattle/mlsister
-	l_ear = /obj/item/device/radio/headset/heads/cmo
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle/mlsister
-	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
-	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
-	gloves = /obj/item/clothing/gloves/sisterofbattle/mlsister
-	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
-	id_type = /obj/item/card/id/dog_tag
-	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
-	/obj/item/reagent_containers/food/snacks/warfare = 1,
-	/obj/item/clothing/mask/gas/explorer = 1,
-	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
-	)
-
-/decl/hierarchy/outfit/job/sisterofbattle/brsister
-	name = OUTFIT_JOB_NAME("Order of the Bloody Rose")
-	head = /obj/item/clothing/head/helmet/sisterofbattle/brsister
-	l_ear = /obj/item/device/radio/headset/heads/cmo
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle/brsister
-	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
-	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
-	gloves = /obj/item/clothing/gloves/sisterofbattle/brsister
-	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
-	id_type = /obj/item/card/id/dog_tag
-	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/melee/chain/inqcs
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
-	/obj/item/reagent_containers/food/snacks/warfare = 1,
-	/obj/item/clothing/mask/gas/explorer = 1,
-	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 2
-	)
-
-//
-
-
-/decl/hierarchy/outfit/job/progena
-	name = OUTFIT_JOB_NAME("Progena")
-	uniform = /obj/item/clothing/under/rank/medical
-	l_ear  = /obj/item/device/radio/headset/headset_sci
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/storage/belt
-	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/medical
-	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones3/five = 1,)
 
 // Orders Hospitaller
 
@@ -539,3 +433,115 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
+
+
+// sob outfits
+/decl/hierarchy/outfit/job/sisterofbattle
+	name = OUTFIT_JOB_NAME("Sister of Battle")
+	head = /obj/item/clothing/head/helmet/sisterofbattle
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle
+	belt = /obj/item/melee/chain/mercycs
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
+	gloves = /obj/item/clothing/gloves/sisterofbattle
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones3/ten = 2
+	)
+
+/decl/hierarchy/outfit/job/sisterofbattle/repentia
+	name = OUTFIT_JOB_NAME("Sister Repentia")
+	head = /obj/item/clothing/head/helmet/sisterofbattle/repentia
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/repentia
+	belt = /obj/item/melee/chain/mercycs
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/melee/chain/mercycs
+	r_hand = /obj/item/gun/projectile/automatic/flamer
+	backpack_contents = list(
+	/obj/item/ammo_magazine/flamer = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	)
+
+
+/decl/hierarchy/outfit/job/sisterofbattle/mlsister
+	name = OUTFIT_JOB_NAME("Order of Our Martyred Lady")
+	head = /obj/item/clothing/head/helmet/sisterofbattle/mlsister
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/mlsister
+	belt = /obj/item/melee/chain/mercycs
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
+	gloves = /obj/item/clothing/gloves/sisterofbattle/mlsister
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones3/ten = 2
+	)
+
+/decl/hierarchy/outfit/job/sisterofbattle/brsister
+	name = OUTFIT_JOB_NAME("Order of the Bloody Rose")
+	head = /obj/item/clothing/head/helmet/sisterofbattle/brsister
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/sisterofbattle/brsister
+	belt = /obj/item/melee/chain/mercycs
+	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
+	gloves = /obj/item/clothing/gloves/sisterofbattle/brsister
+	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
+	id_type = /obj/item/card/id/dog_tag
+	l_pocket = /obj/item/storage/box/ifak
+	l_hand = /obj/item/gun/projectile/sisterbolter
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 1,
+	/obj/item/clothing/mask/gas/explorer = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones3/ten = 2
+	)
+
+//
+
+
+/decl/hierarchy/outfit/job/progena
+	name = OUTFIT_JOB_NAME("Progena")
+	uniform = /obj/item/clothing/under/rank/medical
+	l_ear  = /obj/item/device/radio/headset/headset_sci
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/storage/belt
+	r_pocket = /obj/item/device/flashlight/lantern
+	id_type = /obj/item/card/id/medical
+	backpack_contents = list(
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+		/obj/item/stack/thrones3/five = 1,)

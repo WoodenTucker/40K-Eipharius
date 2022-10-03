@@ -75,7 +75,7 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
-	cultist_chance = 12
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -128,7 +128,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 25
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -158,7 +158,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 8
-	cultist_chance = 8 //same chance as sniper now.
+	cultist_chance = 15 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
@@ -247,7 +247,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 8 //snipers have even less chance to be heretics than guardsmen.
+	cultist_chance = 15 //snipers have even less chance to be heretics than guardsmen.
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -291,7 +291,7 @@
 	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#33813A"
-	cultist_chance = 6
+	cultist_chance = 9
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
@@ -426,7 +426,7 @@
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 4
+	cultist_chance = 0
 
 	announced = FALSE
 
@@ -512,7 +512,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -607,13 +607,12 @@
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
+	r_pocket = /obj/item/ammo_magazine/autogrim
+	suit_store = /obj/item/gun/projectile/automatic/autogrim
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/ammo_magazine/autogrim/ap = 1,
+	/obj/item/ammo_magazine/autogrim/ms = 1,
+	/obj/item/ammo_magazine/autogrim = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
@@ -635,10 +634,10 @@
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	l_ear = /obj/item/device/radio/headset/red_team
-	suit_store = /obj/item/gun/energy/las/lasgun/longlas
+	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/plasma = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -654,7 +653,7 @@
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
+	belt = /obj/item/gun/projectile/automatic/machinepistol/a80
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
@@ -666,7 +665,9 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	 /obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
+	/obj/item/ammo_magazine/box/a556/mg08/ms = 1,
+	/obj/item/ammo_magazine/mc9mmt/machinepistol = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -690,7 +691,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/ammo_magazine/flamer = 2,
+	/obj/item/ammo_magazine/flamer = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -711,14 +712,15 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/storage/box/sniperammo/apds
-	suit_store = /obj/item/gun/projectile/heavysniper
+	r_pocket = null
+	suit_store = /obj/item/gun/energy/las/lasgun/longlas
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/storage/box/sniperammo = 3,
+	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -776,7 +778,7 @@
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/inqcs // replaced mercy and given inq because inq is worse, they get a plasma pistol now after all
+	belt = /obj/item/melee/chain/inqcs/guard
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -788,7 +790,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/plasma = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -804,13 +806,16 @@
 	uniform = /obj/item/clothing/under/rank/krieg_uniform
 	suit = /obj/item/clothing/suit/armor/kriegsgt
 	back = /obj/item/storage/backpack/satchel/krieger
+	belt = /obj/item/melee/chain/inqcs/guard
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/launcher/rcl_rifle
+	r_hand = /obj/item/gun/energy/las/laspistol/militarum/lucius
 	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/ammo_casing/heat_shell = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
@@ -830,11 +835,11 @@
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/lasgun/tinkered/catachan
+	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -855,7 +860,7 @@
 	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/box/a556/mg08 = 1,
 	/obj/item/ammo_magazine/mc9mmt/machinepistol = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
@@ -882,7 +887,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
 	/obj/item/grenade/smokebomb = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
