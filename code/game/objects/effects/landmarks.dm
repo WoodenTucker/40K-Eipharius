@@ -136,6 +136,8 @@ Template:
 	name = "Magos Xenologist"
 /obj/effect/landmark/start/roboticist
 	name = "Cybernetica Acolyte"
+/obj/effect/landmark/start/explorer
+	name = "Magos Explorator"
 
 //Medical//
 /obj/effect/landmark/start/medical_doctor
