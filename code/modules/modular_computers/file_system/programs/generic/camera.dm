@@ -14,9 +14,9 @@
 		if(NETWORK_MEDICAL)
 			return access_medical
 		if(NETWORK_MINE)
-			return access_mailsorting // Cargo office - all cargo staff should have access here.
+			return access_mechanicus // this is meant for cargo in ss13 but we dont have that, so just using mechanicus access for now!
 		if(NETWORK_RESEARCH)
-			return access_research
+			return access_mechanicus
 		if(NETWORK_THUNDER)
 			return 0
 

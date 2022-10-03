@@ -128,8 +128,8 @@
 	social_class = SOCIAL_CLASS_MIN
 	supervisors = "Every Imperial Citizen"
 	selection_color = "#337C81"
-	access = list(access_janitor, access_village, access_mechanicus, access_research, access_medical)
-	minimal_access = list(access_janitor, access_village, access_mechanicus, access_research, access_medical)
+	access = list(access_janitor, access_village, access_mechanicus, access_medical)
+	minimal_access = list(access_janitor, access_village, access_mechanicus, access_medical)
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 	announced = FALSE

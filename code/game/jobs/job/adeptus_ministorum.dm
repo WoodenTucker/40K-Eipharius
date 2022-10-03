@@ -13,17 +13,17 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
 	selection_color = "#FCFBFA"
-	access = list(access_heads, access_chapel_office, access_crematorium, access_village, access_sob)
-	minimal_access = list(access_heads, access_chapel_office, access_crematorium, access_sob)
+	access = list(access_heads, access_village, access_sob)
+	minimal_access = list(access_heads, access_sob)
 	announced = FALSE
 //	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
 	cultist_chance = 30
 
 
@@ -271,11 +271,11 @@
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_genetics, access_heads,
-			access_chemistry, access_virology, access_abbess, access_surgery, access_RC_announce,
+	access = list(access_medical, access_heads,
+			access_abbess, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_sob)
-	minimal_access = list(access_medical, access_medical_equip, access_genetics, access_heads,
-			access_chemistry, access_virology, access_abbess, access_surgery, access_RC_announce,
+	minimal_access = list(access_medical, access_heads,
+			access_abbess, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_sob)
 
 	minimal_player_age = 20
@@ -298,8 +298,8 @@
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_genetics, access_heads,
-			access_chemistry, access_virology, access_abbess, access_surgery, access_RC_announce,
+		H.get_idcard()?.access = list(access_medical, access_heads,
+			access_abbess, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_sob)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -326,8 +326,8 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_surgery, access_chemistry, access_virology, access_genetics, access_village, 211)
-	minimal_access = list(access_medical, access_medical_equip, access_surgery, access_virology, access_village)
+	access = list(access_medical, access_village)
+	minimal_access = list(access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -344,7 +344,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_chemistry, access_virology, access_surgery, access_village)
+		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -372,8 +372,8 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_surgery, access_chemistry, access_virology, access_genetics, access_village, 211)
-	minimal_access = list(access_medical, access_medical_equip, access_surgery, access_virology, access_village)
+	access = list(access_medical, access_village)
+	minimal_access = list(access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/progena
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -390,7 +390,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,9),rand(5,9),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_medical_equip, access_chemistry, access_virology, access_surgery, access_village)
+		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -415,8 +415,8 @@
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_surgery, access_chemistry, access_virology, access_genetics,access_village)
-	minimal_access = list(access_medical, access_medical_equip, access_chemistry,access_village,)
+	access = list(access_medical, access_village)
+	minimal_access = list(access_medical, access_village,)
 	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
 	auto_rifle_skill = 3
 	semi_rifle_skill = 3

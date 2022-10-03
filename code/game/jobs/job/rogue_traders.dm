@@ -76,7 +76,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 25
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -94,15 +94,15 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
-			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
 	minimal_access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
-			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/heir
@@ -132,7 +132,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 25
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -150,15 +150,15 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
-			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
 	minimal_access = list(access_security, access_guard_common, access_magi,
 			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
-			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library,access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
@@ -175,15 +175,15 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	announced = 0
 	access = list(access_security, access_guard_common,
 			            access_medical, access_mechanicus, access_ai_upload, access_heads,
-			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
 	minimal_access = list(access_security, access_guard_common,
 			            access_medical, access_mechanicus, access_ai_upload, access_heads,
-			            access_all_personal_lockers, access_village, access_bar, access_janitor, access_construction,
-			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
-			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 	minimal_player_age = 3
 	ideal_character_age = 40

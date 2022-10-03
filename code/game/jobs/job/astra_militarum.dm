@@ -363,9 +363,9 @@
 	minimal_player_age = 18
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_medical_equip, access_surgery, access_chemistry, access_virology, access_village, access_guard_common, access_security
+	access = list(access_medical, access_village, access_guard_common, access_security
 		)
-	minimal_access = list(access_medical, access_medical_equip, access_village, access_security
+	minimal_access = list(access_medical, access_village, access_security
 		)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	auto_rifle_skill = 8

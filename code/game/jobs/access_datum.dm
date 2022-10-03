@@ -57,13 +57,13 @@
 	id = access_tox_storage
 	desc = "Toxins Lab"
 	region = ACCESS_REGION_RESEARCH
-
+/*
 /var/const/access_genetics = 9
 /datum/access/genetics
 	id = access_genetics
 	desc = "Genetics Lab"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_mechanicus = 10
 /datum/access/mechanicus
 	id = access_mechanicus
@@ -87,13 +87,13 @@
 	id = access_external_airlocks
 	desc = "External Airlocks"
 	region = ACCESS_REGION_ENGINEERING
-*/
+
 /var/const/access_emergency_storage = 14
 /datum/access/emergency_storage
 	id = access_emergency_storage
 	desc = "Emergency Storage"
 	region = ACCESS_REGION_ENGINEERING
-
+*/
 /var/const/access_change_ids = 15
 /datum/access/change_ids
 	id = access_change_ids
@@ -135,13 +135,13 @@
 	id = access_all_personal_lockers
 	desc = "Personal Lockers"
 	region = ACCESS_REGION_COMMAND
-
+/*
 /var/const/access_chapel_office = 22
 /datum/access/chapel_office
 	id = access_chapel_office
 	desc = "Chapel Office"
 	region = ACCESS_REGION_GENERAL
-/*
+
 /var/const/access_tech_storage = 23
 /datum/access/tech_storage
 	id = access_tech_storage
@@ -177,13 +177,13 @@
 	id = access_kitchen
 	desc = "Kitchen"
 	region = ACCESS_REGION_GENERAL
-
+/*
 /var/const/access_robotics = 29
 /datum/access/robotics
 	id = access_robotics
 	desc = "Robotics"
 	region = ACCESS_REGION_RESEARCH
-
+*/
 /var/const/access_rd = 30
 /datum/access/rd
 	id = access_rd
@@ -195,7 +195,7 @@
 	id = access_cargo
 	desc = "Cargo Bay"
 	region = ACCESS_REGION_SUPPLY
-
+/*
 /var/const/access_construction = 32
 /datum/access/construction
 	id = access_construction
@@ -213,7 +213,7 @@
 	id = access_cargo_bot
 	desc = "Cargo Bot Delivery"
 	region = ACCESS_REGION_SUPPLY
-
+*/
 /var/const/access_hydroponics = 35
 /datum/access/hydroponics
 	id = access_hydroponics
@@ -237,13 +237,13 @@
 	id = access_lawyer
 	desc = "Internal Affairs"
 	region = ACCESS_REGION_COMMAND
-
+/*
 /var/const/access_virology = 39
 /datum/access/virology
 	id = access_virology
 	desc = "Virology"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_abbess = 40
 /datum/access/abbess
 	id = access_abbess
@@ -290,13 +290,13 @@
 	id = access_mining_office
 	desc = "Mining Office"
 	access_type = ACCESS_TYPE_NONE
-
+/*
 /var/const/access_mailsorting = 50
 /datum/access/mailsorting
 	id = access_mailsorting
 	desc = "Cargo Office"
 	region = ACCESS_REGION_SUPPLY
-
+*/
 // /var/const/free_access_id = 51
 // /var/const/free_access_id = 52
 
@@ -377,13 +377,13 @@
 	id = access_xenoarch
 	desc = "Xenoarchaeology"
 	region = ACCESS_REGION_RESEARCH
-
+/*
 /var/const/access_medical_equip = 66
 /datum/access/medical_equip
 	id = access_medical_equip
 	desc = "Medical Equipment"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_guard_armory = 67 // guardsman officer and armory
 /datum/access/guard_armory
 	id = access_guard_armory

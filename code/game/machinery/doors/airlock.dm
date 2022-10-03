@@ -102,7 +102,7 @@
 	name = "Arbiter"
 	icon = 'icons/obj/doors/Doorcomalt.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_arbiter
-	req_access = list(access_chapel_office)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/security
 	name = "Airlock"
@@ -214,7 +214,7 @@
 
 /obj/machinery/door/airlock/hatch/chapel
 	name = "Chapel Office"
-	req_access = access_chapel_office
+	req_access = access_village
 
 /obj/machinery/door/airlock/hatch/simiel
 	icon = 'icons/obj/doors/Doorhatchele.dmi'

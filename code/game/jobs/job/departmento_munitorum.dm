@@ -125,8 +125,8 @@
 	announced = 0
 	supervisors = "the Munitorum Tribunus, the Administrator and the Seneschal"
 	selection_color = "#337C81"
-	access = list(access_village, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
-	minimal_access = list(access_village, access_cargo, access_cargo_bot, access_mailsorting)
+	access = list(access_village, access_cargo, access_qm, access_mining, access_mining_station)
+	minimal_access = list(access_village, access_cargo)
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 	auto_rifle_skill = 3
 	semi_rifle_skill = 3
@@ -158,8 +158,8 @@
 	supervisors = "the Munitorum Tribunus and the Seneschal"
 	selection_color = "#337C81"
 	economic_modifier = 5
-	access = list(access_village, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mining, access_mining_station)
-	minimal_access = list(access_mining, access_mining_station, access_mailsorting)
+	access = list(access_village, access_cargo, access_qm, access_mining, access_mining_station)
+	minimal_access = list(access_mining, access_mining_station)
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
 	cultist_chance = 100

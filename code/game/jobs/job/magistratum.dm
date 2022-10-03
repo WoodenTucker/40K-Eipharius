@@ -62,8 +62,8 @@
 	open_when_dead = FALSE
 	department_flag = SEC|COM
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_medical_equip, access_village, access_administratum, access_change_ids, access_keycard_auth)
-	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_medical_equip, access_village, access_administratum, access_change_ids, access_keycard_auth
+	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
+	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
 			            )
 
 
