@@ -568,15 +568,29 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A ring entrusted to members of the mining guild. Additional access to the mines."
 
 
-
+// low tier key for peasants. easy for anyone to get
 /obj/item/card/id/key/low
 	name = "Lowly Key"
 	desc = "A lowly key befitting the common man upon this world. Probably opens a pilgrim's home, or something equally unimportant."
-	icon_state = "key1"
+	icon_state = "key2" // key 1 is currently bugged, just use key2 for now
 	grab_sound = 'sound/items/keyring_up.ogg'
 
+/obj/item/card/id/key/low/mineone
+	name = "Mining Hamlet Key 1"
+	desc = "Opens door 1"
+	access = list(access_mining1)
 
+/obj/item/card/id/key/low/mine/two
+	name = "Mining Hamlet Key 2"
+	desc = "Opens door 2"
+	access = list(access_mining2)
 
+/obj/item/card/id/key/low/mine/three
+	name = "Mining Hamlet Key 3"
+	desc = "Opens door 3"
+	access = list(access_mining3)
+
+// middling key, for high tier peasant or cultist level
 /obj/item/card/id/key/middle
 	name = "Middling Key"
 	desc = "A key of mid-ground importance, maybe the thing it opens is actually valuable. Maybe not."
@@ -588,6 +602,8 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A key that unlocks doors belonging to the Deadwood Estate. "
 	access = list(access_deadwood)
 
+
+// high tier super key, for nobles, mechanicus and other fancy things
 /obj/item/card/id/key/super
 	name = "Superior Key"
 	desc = "A key of notable quality. The door it guards surely has some sort of treasure locked away."
@@ -603,6 +619,9 @@ var/const/NO_EMAG_ACT = -50
 	name = "Adeptus Mechanicus Key"
 	desc = "A key bearing the necessary binary scribings required to gain entry to the Mechanicus' domain."
 	access = list(access_mechanicus)
+
+
+// grand key. rogue trader, inquisitor, stuff like that
 /obj/item/card/id/key/grand
 	name = "Grand Key"
 	desc = "An exquisite piece of art, to open equally excellent doors and provide fortune to the owner of this key. Likely belonging to a high ranking officer or noble."

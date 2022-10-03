@@ -563,3 +563,19 @@
 /datum/access/deadwood
 	id = access_pathfinder
 	desc = "Pathfinder Estate Access"
+
+/var/const/access_mining1 = 260
+/datum/access/mining1
+	id = access_mining1
+	desc = "Mining 1 Access"
+
+/var/const/access_mining2 = 261
+/datum/access/mining2
+	id = access_mining2
+	desc = "Mining 2 Access"
+
+/var/const/access_mining3 = 262
+/datum/access/mining3
+	id = access_mining3
+	desc = "Mining 3 Access"
+

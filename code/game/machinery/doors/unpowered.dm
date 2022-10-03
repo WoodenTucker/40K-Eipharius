@@ -36,6 +36,11 @@
 	maxhealth = 2500
 	req_access = list(211)
 
+/obj/machinery/door/unpowered/inn/mine
+	name = "Mining Hamlet"
+	maxhealth = 2500
+	req_access = list(211)
+
 /obj/machinery/door/unpowered/inn/deadwood
 	name = "deadwood estate"
 	req_access = list(244)

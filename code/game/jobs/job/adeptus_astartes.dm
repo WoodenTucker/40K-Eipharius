@@ -150,7 +150,7 @@
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/cell/lasgun
+	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -243,7 +243,7 @@
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/cell/lasgun
+	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -336,7 +336,7 @@
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/cell/lasgun
+	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -431,7 +431,7 @@
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/cell/lasgun
+	r_pocket = null
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol/astarte
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
