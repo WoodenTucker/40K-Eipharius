@@ -9,7 +9,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 10
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -326,7 +326,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 50
+	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -352,7 +352,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -551,7 +551,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/bouncer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 50 //same as his father, the innkeeper
+	cultist_chance = 10 
 	species_role = "Ogryn"
 
 
@@ -559,8 +559,8 @@ Pilgrim Fate System
 	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5)) //swole but retarded
-		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5)) 
+		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery 
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.fully_replace_character_name(random_ogryn_name())
 		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")

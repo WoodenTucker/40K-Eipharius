@@ -20,6 +20,7 @@
 	/*/datum/job/chemist,*/
 	/datum/job/geneticist,
 	/datum/job/magos,
+	/datum/job/explorer,
 	/datum/job/engineer,
 	/datum/job/hop,
 	/datum/job/heir,
@@ -43,8 +44,8 @@
 	/datum/job/pathfinder,
 	/datum/job/penitent,
 	/datum/job/bouncer,
-	/* /datum/job/prisoner/penitent, //NOT READY */
-	/* /datum/job/prisoner/penitent/sarge, //WIP */
+	/* /datum/job/prisoner/penitent,*/ //NOT READY 
+	/* /datum/job/prisoner/penitent/sarge,*/ //WIP 
 	)
 
 /mob/living/carbon/human/proc/warfare_language_shit(var/language_name) //reworked from matts original intention, the default language is gothic, this will allow you to now add a faction specific language.

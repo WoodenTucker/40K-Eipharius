@@ -306,3 +306,18 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
+
+/obj/item/projectile/gauss
+	name = "Gauss "
+	icon_state = "emitter"
+	fire_sound = 'sound/effects/meteorimpact.ogg' //Bass-y sound of firing
+	damage = 250
+	damage_type = BURN
+	agony = 200
+	check_armour = "energy"
+	speed = 0.1
+	incinerate = 1
+	dispersion = 0.0
+	animate_movement = 1
+	penetrating = 10
+	armor_penetration = 200
