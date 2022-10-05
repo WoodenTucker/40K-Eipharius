@@ -126,3 +126,4 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_cargo) //so innkeeper always can get in if needed
+

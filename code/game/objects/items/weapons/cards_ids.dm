@@ -546,7 +546,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/ring/administrator
 	icon_state = "admin_ring"
-	access = list(access_admeme, access_village, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_magi,)
+	access = list(access_village, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_magi,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
 /obj/item/card/id/ring/goldring
@@ -602,6 +602,12 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A key that unlocks doors belonging to the Deadwood Estate. "
 	access = list(access_deadwood)
 
+/obj/item/card/id/key/middle/ganger
+	name = "Ganger Key"
+	desc = "A key that unlocks doors belonging to Ganger dens."
+	access = list(access_ganger)
+
+
 
 // high tier super key, for nobles, mechanicus and other fancy things
 /obj/item/card/id/key/super
@@ -620,6 +626,57 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A key bearing the necessary binary scribings required to gain entry to the Mechanicus' domain."
 	access = list(access_mechanicus)
 
+/obj/item/card/id/key/super/inn
+	name = "Inn Key 1"
+	desc = "A Key belonging to the doors of the local Inn."
+	access = list(access_inn1)
+
+/obj/item/card/id/key/super/inn/two
+	name = "Inn Key 2"
+	desc = "A Key belonging to the doors of the local Inn."
+	access = list(access_inn2)
+
+/obj/item/card/id/key/super/inn/three
+	name = "Inn Key 3"
+	desc = "A Key belonging to the doors of the local Inn."
+	access = list(access_inn3)
+/obj/item/card/id/key/super/inn/meeting
+	name = "Meeting Room"
+	desc = "A Key to the Inn's Meeting Room"
+	access = list(access_meeting) //changed from 209 to 219, as tau is now 209
+
+/obj/item/card/id/key/super/daemon
+	name = "Daemon Key"
+	desc = "You're unsettled at just thinking about what this may open. Maybe ask your local inquisitor for help? They're nice with this kind of stuff."
+	access = list(access_daemon)
+
+/obj/item/card/id/key/super/hab
+	name = "Hab Key 1"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habone)
+
+/obj/item/card/id/key/super/hab/two
+	name = "Hab Key 2"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habtwo)
+
+/obj/item/card/id/key/super/hab/three
+	name = "Hab Key 3"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habthree)
+
+/obj/item/card/id/key/super/hab/four
+	name = "Hab Key 4"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habfour)
+
+/obj/item/card/id/key/super/hab/five
+	name = "Hab Key 5"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habfive)
+
+
+
 
 // grand key. rogue trader, inquisitor, stuff like that
 /obj/item/card/id/key/grand
@@ -628,7 +685,37 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "key4"
 	grab_sound = 'sound/items/keyring_up.ogg'
 
+/obj/item/card/id/key/grand/tau
+	name = "Tau Ship Key"
+	desc = "Key belonging to the T'au Ship."
+	access = list(access_tau)
 
+/obj/item/card/id/key/grand/inq
+	name = "Inquisition Key"
+	desc = "A key to the Inquisitorial Black Ship, Simiel"
+	access = list(access_inquisition)
 
+/obj/item/card/id/key/grand/noble
+	name = "Noble Key"
+	desc = "Opens the doors to the Grand Market Exchange of the planet's noble elite. Worth a lot, for sure."
+	access = list(access_noble)
 
+/obj/item/card/id/key/grand/monastary
+	name = "Monastary Key"
+	desc = "Key to the Inner Sactum of His Holyness' Church"
+	access = list(access_monastary)
 
+/obj/item/card/id/key/grand/barentry
+	name = "Inn Key"
+	desc = "Key to where all the booze is"
+	access = list(access_barentry)
+
+/obj/item/card/id/key/grand/barmaster
+	name = "Master Inn Key"
+	desc = "Master key for the Inn"
+	access = list(access_barentry, access_inn1, access_inn2, access_inn3, access_meeting)
+
+/obj/item/card/id/key/grand/master
+	name = "Royal Master Key"
+	desc = "The Royal Key for the Rogue Trader Themselves, or for people belonging to their retinue. It ONLY has access to the most expensive rooms and treasure this entire planet has. Except for the toaster people's building."
+	access = list(access_monastary, access_noble, 331) //331 is rt vault

@@ -154,7 +154,7 @@
 	desc = "Atmospherics"
 	region = ACCESS_REGION_ENGINEERING
 */
-/var/const/access_bar = 25
+/var/const/access_bar = 25 // i dont think this does anything but idc
 /datum/access/bar
 	id = access_bar
 	desc = "Bar"
@@ -521,15 +521,50 @@
 	id = access_tau
 	desc = "Tau Ship"
 
-/var/const/access_admeme = 210
-/datum/access/admeme
-	id = access_admeme
-	desc = "Administrator"
+/var/const/access_ganger = 210
+/datum/access/ganger
+	id = access_ganger
+	desc = "ganger Access"
 
-/var/const/access_village = 211 // VILLAGE/PILGRIM COMMON ACCESS! BASICALLY ANYONE WITH ANY TYPE OF ID SHOULD HAVE THIS!!!
+/var/const/access_village = 211 // VILLAGE/PILGRIM COMMON ACCESS! BASICALLY ANYONE WITH ANY TYPE OF ID SHOULD HAVE THIS!!! Don't give to high level guys like rt or inq. they are too fancy to have peasant access
 /datum/access/village
 	id = access_village
 	desc = "Village Common"
+
+/var/const/access_habone = 214
+/datum/access/habone
+	id = access_habone
+	desc = "Hab 1 access"
+
+/var/const/access_habtwo = 215
+/datum/access/habtwo
+	id = access_habtwo
+	desc = "Hab 2 Access"
+
+/var/const/access_habthree = 216
+/datum/access/hab3
+	id = access_habthree
+	desc = "Hab 3 Access"
+
+/var/const/access_habfour = 217
+/datum/access/hab4
+	id = access_habfour
+	desc = "Hab 4 Access"
+
+/var/const/access_habfive = 218
+/datum/access/habfive
+	id = access_habfive
+	desc = "Hab 5 Access"
+
+/var/const/access_meeting = 219
+/datum/access/meeting
+	id = access_meeting
+	desc = "meeting room Access"
+
+/var/const/access_noble = 225
+/datum/access/noble
+	id = access_noble
+	desc = "Noble House"
 
 /var/const/access_cmedicae = 230 //common medicae. for disgraced and normal village medicae. maybe give to guard medicae as well?
 /datum/access/cmedicae
@@ -559,10 +594,21 @@
 	id = access_deadwood
 	desc = "Deadwood Estate Access"
 
+/var/const/access_daemon = 247
+/datum/access/daemon
+	id = access_daemon
+	desc = "Daemon Access" // i dont think it has any doors attached yet. just inq bait
+
 /var/const/access_pathfinder = 253
-/datum/access/deadwood
+/datum/access/pathfinder
 	id = access_pathfinder
 	desc = "Pathfinder Estate Access"
+
+/var/const/access_barentry = 255
+/datum/access/barentry
+	id = access_barentry
+	desc = "bar entry Estate Access"
+
 
 /var/const/access_mining1 = 260
 /datum/access/mining1
@@ -578,4 +624,10 @@
 /datum/access/mining3
 	id = access_mining3
 	desc = "Mining 3 Access"
+
+/var/const/access_monastary = 333
+/datum/access/monastary
+	id = access_monastary
+	desc = "monastary access"
+
 

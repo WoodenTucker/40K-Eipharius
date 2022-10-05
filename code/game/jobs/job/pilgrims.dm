@@ -496,7 +496,7 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "Yourself"
 	selection_color = "#848484"
-	access = list(access_bar,)
+	access = list(access_village, access_ganger, access_bar)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
