@@ -32,7 +32,7 @@
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
 		H.add_stats(rand(10,11), rand(8), rand(6,16), rand(7,8)) //extremely simple minded and weak
-		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
+		H.add_skills(rand(6,7),rand(3,6),1,rand(3,5),3) 
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.adjustStaminaLoss(-INFINITY)
@@ -58,12 +58,12 @@
 	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
 	announced = FALSE
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
 	cultist_chance = 10
 
@@ -71,13 +71,13 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(11,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
-		H.add_skills(rand(6,8),rand(6,7),rand(1,6),rand(1,2),1)
+		H.add_stats(rand(15,16), rand(15,16), rand(10,12), rand(8,11)) //highly trained and skilled, this guy has fought off some rats and shit
+		H.add_skills(rand(7,8),rand(6,7),rand(1,6),rand(1,2),1)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost and keep the hungry masses away from stealing all the food.</font></b></span>")
 
 // Farmer
 
@@ -107,8 +107,8 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(14,16), rand(13,15), rand(14,16), rand(8,14)) //well fed and robust
-		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
+		H.add_stats(rand(15,16), rand(15,16), rand(14,16), rand(8,14)) //well fed and robust
+		H.add_skills(rand(7,9),rand(6,9),rand(3,5),rand(2,4),3) //farmers are handy
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -146,8 +146,8 @@
 		var/servitor_name = "daan"
 		..()
 		H.fully_replace_character_name("[servitor_name] [servitor_number]")
-		H.add_stats(rand(18,18), rand(8,11), rand(10,16), rand(8,12)) //simple minded
-		H.add_skills(rand(6,9),rand(3,6),1,rand(5,7),3) //servitors know how to make basic self repairs
+		H.add_stats(rand(8,18), rand(8,11), rand(10,16), rand(8,12)) //simple minded
+		H.add_skills(rand(6,9),rand(3,6),1,rand(4,6),3)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.adjustStaminaLoss(-INFINITY)
@@ -202,7 +202,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(10,14))
+		H.add_stats(rand(11,14), rand(15,18), rand(6,12), rand(10,14)) //kids are QUICK
 		H.add_skills(rand(6,9),rand(3,6),5,rand(6,7),6)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
