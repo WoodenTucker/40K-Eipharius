@@ -56,8 +56,8 @@ Pilgrim Fate System
 
 	switch(classchoice)
 		if("Sherpa")
-			U.add_stats(rand(13,14), rand(12,14), rand(12,14), rand (10,12)) //
-			U.add_skills(rand(6,8),rand(6,8),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (12,16)) //essentially random stats
+			U.add_skills(rand(4,8),rand(4,8),rand(4,7),rand(4,7),rand(4,7)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
@@ -76,8 +76,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Penitent")
-			U.add_stats(rand(15,16), rand(13,15), rand(10,14), rand (10,12)) //
-			U.add_skills(rand(7,9),rand(6,8),rand(2,4),rand(2,3),rand(1,2)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(11,13), rand(13,14), rand(10,13), rand (10,12)) //shit stats
+			U.add_skills(rand(3,7),rand(3,7),rand(2,3),rand(2,3),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
@@ -94,8 +94,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Mercenary")
-			U.add_stats(rand(13,16), rand(11,15), rand(10,14), rand (10,12)) //veteran hunter
-			U.add_skills(rand(6,8),rand(2,7),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(15,16), rand(15,16), rand(10,18), rand (10,12)) //veteran hunter turned merc
+			U.add_skills(rand(7,9,rand(8,9),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			if(prob(25))
@@ -131,8 +131,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Private Investigator")
-			U.add_stats(rand(13,14), rand(12,14), rand(12,14), rand (10,12)) //
-			U.add_skills(rand(6,8),rand(6,8),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(15,16), rand(15,17), rand(15,17), rand (16,18)) //private investigators get paid well enough to be well fed and are smarter than normal enforcers
+			U.add_skills(rand(7,10),rand(7,9),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/det/black, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/tduster, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
@@ -154,8 +154,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Merchant")
-			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (10,15)) //
-			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(10,14), rand(10,14), rand(15,18), rand (18,20)) //insanely smart and able to carry a lot of shit, but weak.
+			U.add_skills(rand(4,7),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/head/that, slot_head)
 			if(prob(60))
 				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian/blred, slot_w_uniform)
@@ -176,8 +176,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Musician")
-			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
-			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(12,14), rand(12,16), rand(10,14), rand (12,16)) //
+			U.add_skills(rand(4,6),rand(4,6),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/musician, slot_wear_suit)
@@ -195,7 +195,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Cleric")
-			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
+			U.add_stats(rand(14,16), rand(14,16), rand(14,16), rand (12,16)) //well fed and also a member of the ecclesiarchy, although a small one
 			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/chaplain, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/leathercoat, slot_wear_suit)
@@ -212,8 +212,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Miner")
-			U.add_stats(rand(13,16), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(16,17), rand(10,14), rand(15,16), rand (8,12)) //miners are insanely strong due to their mining, and incredibly enduring due to how much stuff they carry each day
+			U.add_skills(rand(7,9),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -233,8 +233,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Stalker")
-			U.add_stats(rand(12,15), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(5,8),rand(1,2),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(15,16), rand(15,16), rand(13,16), rand (8,12)) //im pretty sure this is supposed to be a hunter with a weird name
+			U.add_skills(rand(7,8),rand(7,10),rand(1,2),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
@@ -255,8 +255,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Scum")
-			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (10,12)) //
-			U.add_skills(rand(6,8),rand(5,7),rand(3,5),rand(2,3),rand(3,5)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(13,14), rand(13,15), rand(10,14), rand (16,20)) //drug dealers are scummy and weak, but quite smart
+			U.add_skills(rand(6,8),rand(5,7),rand(5,8),rand(2,3),rand(7,8)) //melee, ranged, med, eng, surgery //oi oi mate thats a nice heart you got there!
 			if(prob(50))
 				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			else if(prob(50))
@@ -283,8 +283,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Disgraced Medicae")
-			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (11,15)) //
-			U.add_skills(rand(6,8),rand(1,6),rand(7,9),rand(1,2),rand(6,9)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (16,20)) // 
+			U.add_skills(rand(6,8),rand(1,6),rand(7,10),rand(1,2),rand(7,10)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
@@ -298,7 +298,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
+			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice, travelling from town to town doing experiments on people that wouldn't be missed and healing the sick, you eventually set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
 			var/obj/item/card/id/ring/disgracedmedicae/W = new
 			W.icon_state = "medicae_ring"
 			W.assignment = "Medicae"
@@ -331,8 +331,8 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11)) 
-		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(15,16), rand(15,16), rand(9,12), rand (16,18)) //meant to be the one thing keeping this community together
+		H.add_skills(rand(7,10),rand(7,10),rand(2,3),2,2) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
@@ -505,7 +505,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
+		H.add_stats(rand(15,17), rand(15,16), rand(13,15), rand (8,11)) //they suck and are supposed to suck
 		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -559,8 +559,8 @@ Pilgrim Fate System
 	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5)) 
-		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery 
+		H.add_stats(rand(22,26), rand(16,18), rand(15,18), rand (2,5)) 
+		H.add_skills(rand(9,11),rand(9,10),1,1,1) //melee, ranged, med, eng, surgery 
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.fully_replace_character_name(random_ogryn_name())
 		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")
