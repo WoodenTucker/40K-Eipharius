@@ -7815,23 +7815,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
-"CW" = (
-/obj/effect/floor_decal/turf/tunneldirty,
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/machinery/light/small{
-	dir = 4;
-	icon_state = "bulb1";
-	light_color = "#234F1E"
-	},
-/obj/effect/landmark/start{
-	name = "Scavenger"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves)
 "CY" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/phoron{
@@ -10755,9 +10738,6 @@
 "NG" = (
 /obj/effect/floor_decal/turf/tunneldirty,
 /obj/structure/closet/crate,
-/obj/item/stack/material/ratscrap/ten,
-/obj/item/stack/material/ratscrap/ten,
-/obj/item/stack/material/ratscrap/ten,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "NI" = (
@@ -13362,7 +13342,19 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "XP" = (
 /obj/effect/floor_decal/turf/tunneldirty,
-/obj/machinery/door/unpowered/inn/interior,
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/effect/landmark/start{
+	name = "Scavenger"
+	},
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "XQ" = (
@@ -36953,7 +36945,7 @@ oZ
 SI
 qU
 qU
-CW
+XP
 pK
 pK
 Ij
@@ -37468,7 +37460,7 @@ SI
 PI
 PI
 qU
-XP
+pK
 qU
 PI
 PI
