@@ -207,7 +207,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 		if("Rat Catcher")
 			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
-			U.add_skills(rand(2,9),rand(1,2),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(6,9),rand(1,2),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
