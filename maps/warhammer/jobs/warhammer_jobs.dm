@@ -15,6 +15,7 @@
 	/datum/job/chemist,
 	/datum/job/biologis,
 	/datum/job/magos,
+	/datum/job/explorer,
 	/datum/job/engineer,
 	/datum/job/hop,
 	/datum/job/chef,

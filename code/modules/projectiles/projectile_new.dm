@@ -220,7 +220,7 @@
 	if(!istype(target_mob))
 		return
 
-	var/strike_chance = ( (10 * 5) - ((distance * 10) - accuracy)) // Byond gives errors for some reason if you do this normally.
+	var/strike_chance = ( (20 * 5) - ((distance * 2) - accuracy)) // Byond gives errors for some reason if you do this normally.
 	var/hit_zone = get_zone_with_miss_chance(def_zone, target_mob, strike_chance, ranged_attack=(distance > 1 || original != target_mob))
 	var/result = PROJECTILE_FORCE_MISS
 	var/do_normal_check = TRUE
