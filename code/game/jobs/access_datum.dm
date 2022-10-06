@@ -573,8 +573,8 @@
 
 /var/const/access_cminer = 231 //for village miners. dont need it to gain access, but for 'fancy' mining equipment.
 /datum/access/cminer
-	id = access_cmedicae
-	desc = "Village Miner"
+	id = access_cminer
+	desc = "Village Miner" // unused for time being
 
 
 /var/const/access_administratum = 212

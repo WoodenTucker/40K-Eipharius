@@ -241,7 +241,7 @@
 /obj/machinery/computer/tithecogitator/RightClick(mob/living/user)
 	if(!CanPhysicallyInteract(user))
 		return
-	var/obj/item/card/id/ring/administrator/S = user.get_active_hand()
+	var/obj/item/card/id/gold/S = user.get_active_hand()
 	if(!istype(S))
 		return
 	if(locked == 1)
@@ -254,13 +254,13 @@
 
 /obj/machinery/computer/tithecogitator/attack_hand(mob/user as mob)	//Starting menu
 	if(locked == 1)
-		visible_message("The console is locked, present your Administratum ring!")
+		visible_message("The console is locked, present your Golden Writ!")
 		return
 	user.set_machine(src)
 	var/dat = "<B>Imperial Tithe:</B><BR>"
 	dat += "[GLOB.thrones] throne balance<BR>"
 	dat += "<B>Tithe owed to the Imperium</B></BR>"
-	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (200)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (350)</A><BR>"
 	dat += "<B>Set the tax rate:</B></BR>"
 	dat += "<A href='byond://?src=\ref[src];tax=1'>Set tax rate (default is 15%)</A><BR>"
 	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
@@ -274,12 +274,12 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["tithe"])
-		if(GLOB.thrones < 200) //do we got enough shekels?
+		if(GLOB.thrones < 350) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		else
 			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
-			GLOB.thrones -= 200 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 350 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			GLOB.tithe_paid = 1 //yay we paid the tithe
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
@@ -432,19 +432,19 @@
 	dat += "<B>Available units:</B></BR>"
 	dat += "<B>Common mercenaries</B><HR>"
 	dat += "Those are well trained soldiers. Not the best, but loyal. They are effective only in groups<HR>"
-	dat += "<A href='byond://?src=\ref[src];conscript=1'>Purchase a Conscript (100)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (200)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (250)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (300)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];conscript=1'>Purchase a Conscript (80)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (150)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (225)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (250)</A><BR>"
 	dat += "<B>Elite mercenaries</B><HR>"
 	dat += "These are the best of the best. They are expensive, but very effective stand-alone units. You will not regret.<HR>"
-	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (350)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (300)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (420)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (350)</A><BR>"
 	dat += "<B>Xeno scum</B><HR>"
 	dat += "Each xenos comes in a wooden crate and fitted with a sedative implant to prevent unwanted awakening. You can disable the implant using golden writ. You must have exceptional leadership skills to maintain discipline among the xenos mercenaries, otherwise expect a revolt. Expect increased attention from the Ordo Xenos Inquisition as well.<HR>"
-	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freebooter (400)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freeboota (400)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Kroot Shaper (UNAVAILABLE) (600)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Eldar Corsair (UNAVAILABLE) (850)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a (REDACTED) (UNAVAILABLE) (1000)</A><BR>" // Someone cool and very usefull. Like Jokaero
@@ -462,7 +462,7 @@
 		visible_message("This type of mercenary is temporarily unavailable")
 		return
 	if (href_list["conscript"])
-		if(GLOB.thrones < 100)
+		if(GLOB.thrones < 80)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -475,11 +475,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 100
+					GLOB.thrones -= 80
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["guardsman"])
-		if(GLOB.thrones < 200)
+		if(GLOB.thrones < 150)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -492,11 +492,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 200
+					GLOB.thrones -= 150
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["medicae"])
-		if(GLOB.thrones < 250) 
+		if(GLOB.thrones < 225)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -509,11 +509,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 250
+					GLOB.thrones -= 225
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["specialist"])
-		if(GLOB.thrones < 300) 
+		if(GLOB.thrones < 250)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -526,11 +526,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 300
+					GLOB.thrones -= 250
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["janissary"])
-		if(GLOB.thrones < 350) 
+		if(GLOB.thrones < 300)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -543,11 +543,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 350
+					GLOB.thrones -= 300
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["scion"])
-		if(GLOB.thrones < 420) 
+		if(GLOB.thrones < 350)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -560,7 +560,7 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 420
+					GLOB.thrones -= 350
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["ork"])
@@ -569,7 +569,7 @@
 			return
 		else
 			visible_message("Ork delivered, Lord-Trader. He is your problem now")
-			GLOB.thrones -= 400 
+			GLOB.thrones -= 400
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			merc_crate = /obj/structure/largecrate/animal/orkmerc
 			new merc_crate(src.loc)

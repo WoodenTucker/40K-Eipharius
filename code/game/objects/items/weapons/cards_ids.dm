@@ -536,13 +536,13 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"
 	icon_state = "medicae_ring"
-	access = list(access_cmedicae)
-	desc = "An old ring signifying your position as a medicae. Still works."
+	access = list(access_cmedicae, access_village)
+	desc = "An old ring signifying your position as a medicae. Still works to gain access to medical facilities and lockers."
 
 /obj/item/card/id/ring/miner
 	name = "access card"
 	icon_state = "cargo"
-	access = list(access_cminer)
+	access = list(access_cminer, access_village)
 	desc = "A ring entrusted to members of the mining guild. Additional access to the mines."
 
 

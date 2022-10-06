@@ -29,7 +29,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 10
+	cultist_chance = 30 // we want funny inq vs rt nonsense
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -76,7 +76,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 25
+	cultist_chance = 30 // lots of delicacies growing up
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -132,7 +132,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 25
+	cultist_chance = 30 // command going culty is good in round wildness
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -195,7 +195,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 38
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

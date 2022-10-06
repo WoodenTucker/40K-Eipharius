@@ -14,7 +14,7 @@
 	shotgun_skill = 9
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 20
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = SEC

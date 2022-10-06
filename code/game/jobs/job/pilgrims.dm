@@ -20,6 +20,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
+		H.get_idcard()?.access = list(access_village) // so they open all 211
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
@@ -291,6 +292,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
+			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
@@ -299,12 +301,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
-			var/obj/item/card/id/ring/disgracedmedicae/W = new
-			W.icon_state = "medicae_ring"
-			W.assignment = "Medicae"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -326,7 +322,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 50
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -352,7 +348,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 100 // THE cult leader
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -373,7 +369,7 @@ Pilgrim Fate System
 	shoes = null//obj/item/clothing/shoes/prac_boots
 	l_ear = null
 	r_ear = null
-	id_type = null
+	id_type = /obj/item/card/id/pilgrim/penitent
 	gloves = null
 	pda_slot = null
 
@@ -551,7 +547,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/bouncer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 50 //same as his father, the innkeeper
+	cultist_chance = 1 // grog like emperorah :) // bouncer should only be cultist if the innkeeper is. as they would get easily indoctrinated by their dad/boss
 	species_role = "Ogryn"
 
 

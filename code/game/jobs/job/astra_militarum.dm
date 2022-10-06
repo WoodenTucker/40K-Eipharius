@@ -75,7 +75,7 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
-	cultist_chance = 12
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -158,7 +158,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 8
-	cultist_chance = 9 //same chance as sniper now.
+	cultist_chance = 20 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
@@ -247,7 +247,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 9 //snipers have even less chance to be heretics than guardsmen.
+	cultist_chance = 20 //snipers have even less chance to be heretics than guardsmen.
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -291,7 +291,7 @@
 	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#33813A"
-	cultist_chance = 9
+	cultist_chance = 10
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
@@ -365,7 +365,7 @@
 	announced = FALSE
 	access = list(access_medical, access_village, access_guard_common, access_security
 		)
-	minimal_access = list(access_medical, access_village, access_security
+	minimal_access = list(access_medical, access_village, access_security, access_guard_common,
 		)
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	auto_rifle_skill = 8
@@ -426,7 +426,7 @@
 	open_when_dead = FALSE
 	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
-	cultist_chance = 0
+	cultist_chance = 1 // 0 fucks stuff allegedly
 
 	announced = FALSE
 

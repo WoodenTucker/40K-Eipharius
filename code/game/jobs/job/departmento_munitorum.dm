@@ -23,7 +23,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 100
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -60,7 +60,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 10
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -134,7 +134,7 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	cultist_chance = 100
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -162,7 +162,7 @@
 	minimal_access = list(access_mining, access_mining_station)
 	alt_titles = list("Drill Technician","Prospector")
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining
-	cultist_chance = 100
+	cultist_chance = 20
 
 // Munitorum Record Keeper
 
@@ -190,4 +190,4 @@
 	medical_skill = 3
 	engineering_skill = 3
 	surgery_skill = 2
-	cultist_chance = 100
+	cultist_chance = 20
