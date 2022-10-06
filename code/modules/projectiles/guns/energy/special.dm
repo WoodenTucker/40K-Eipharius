@@ -99,7 +99,7 @@ obj/item/gun/energy/staff/focus
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
 			projectile_type = /obj/item/projectile/forcebolt"
 	*/
-	
+
 /obj/item/gun/energy/phosphor
 	name = "Phosphor pistol"
 	desc = "A rare and dangerous weapon, favoured by Magos Explorators and Skitarii Alphas."
@@ -114,5 +114,7 @@ obj/item/gun/energy/staff/focus
 	burst_delay = 2
 	move_delay = 2
 	charge_cost = 300
+	cell_type = /obj/item/cell // wip, can use anything.
+	ammoType = /obj/item/cell
 	projectile_type = 	/obj/item/projectile/energy/phosphor
 	self_recharge = 1
