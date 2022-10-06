@@ -63,6 +63,10 @@
 	name = "You're A Kid Now!"
 	description = "Not a squid, but just as slippery."
 
+/datum/achievement/skaven
+	name = "You're A Rat Now!"
+	description = "Yes-yes, the man-things will rue-regret the day you arrived-came."
+
 /datum/achievement/miss
 	name = "Hit Or Miss"
 	description = "I guess they never miss. Huh."

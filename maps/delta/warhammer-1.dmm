@@ -100,6 +100,12 @@
 	},
 /turf/simulated/floor/trench,
 /area/cadiaoutpost/oa/hallway/centralhall)
+"as" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/unsimulated/mineral,
+/area/cadiaoutpost/oa/caves)
 "at" = (
 /obj/effect/floor_decal/turf/bar2,
 /obj/effect/floor_decal/turf/bar3,
@@ -117,6 +123,11 @@
 /turf/simulated/wall/concrete{
 	integrity = 1500
 	},
+/area/cadiaoutpost/oa/caves)
+"ax" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/structure/bed/padded,
+/turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves)
 "az" = (
 /obj/effect/floor_decal/turf/plating,
@@ -1163,6 +1174,11 @@
 /mob/living/simple_animal/hostile/smalldemon/chaos,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"ej" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/effect/decal/cleanable/blood/gibs/body,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "ek" = (
 /obj/structure/bed/alien{
 	color = "grey"
@@ -1750,6 +1766,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"gn" = (
+/obj/effect/floor_decal/turf/cafe{
+	color = "grey"
+	},
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "go" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/railing{
@@ -1783,6 +1810,14 @@
 	color = "grey"
 	},
 /turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
+"gw" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/wall/rust{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
@@ -2675,6 +2710,10 @@
 /obj/structure/sign/commissar,
 /turf/simulated/wall/rust,
 /area/cadiaoutpost/oa/security)
+"jJ" = (
+/obj/effect/decal/cleanable/blood/gibs/body,
+/turf/simulated/wall/rust,
+/area/cadiaoutpost/oa/caves)
 "jK" = (
 /obj/item/pyre/self_lit{
 	invisibility = 100;
@@ -4329,6 +4368,16 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"pI" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/unsimulated/miningtime,
+/area/cadiaoutpost/oa/caves)
+"pK" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "pL" = (
 /obj/effect/floor_decal/turf/brick/two,
 /mob/living/simple_animal/hostile/smalldemon/plague,
@@ -4607,12 +4656,8 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "qU" = (
-/obj/structure/bed/chair/wood{
-	dir = 1;
-	icon_state = "wooden_chair_preview"
-	},
-/turf/simulated/floor/stone,
-/area/cadiaoutpost/oa/caves/undercity)
+/turf/simulated/wall/rust,
+/area/cadiaoutpost/oa/caves)
 "qV" = (
 /turf/simulated/wall/ancient{
 	color = "grey";
@@ -6669,6 +6714,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"yO" = (
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "yP" = (
 /obj/effect/floor_decal/newcorner/teal/diagonal,
 /obj/machinery/optable,
@@ -7764,6 +7815,23 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"CW" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/machinery/light/small{
+	dir = 4;
+	icon_state = "bulb1";
+	light_color = "#234F1E"
+	},
+/obj/effect/landmark/start{
+	name = "Scavenger"
+	},
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "CY" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/door/airlock/phoron{
@@ -8291,6 +8359,9 @@
 	},
 /obj/structure/table/steel_reinforced,
 /obj/random/coin,
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9239,6 +9310,11 @@
 /obj/effect/floor_decal/turf/lfloorscorched1,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/undercity)
+"Ij" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/item/melee/trench_axe/bspear,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Im" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -9273,6 +9349,10 @@
 /obj/effect/floor_decal/turf/basalt10,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"Iu" = (
+/obj/structure/barbwire,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "Iv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/chemical{
@@ -10471,6 +10551,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/habs)
+"MM" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/effect/decal/remains,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "MN" = (
 /obj/structure/table/marble{
 	color = "grey"
@@ -10653,11 +10738,28 @@
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/simulated/floor,
 /area/cadiaoutpost/oa/security)
+"Nz" = (
+/obj/structure/curtain/black,
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/undercity)
 "NE" = (
 /obj/effect/floor_decal/turf/basalt3,
 /obj/effect/floor_decal/turf/basalt1,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"NG" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/structure/closet/crate,
+/obj/item/stack/material/ratscrap/ten,
+/obj/item/stack/material/ratscrap/ten,
+/obj/item/stack/material/ratscrap/ten,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "NI" = (
 /obj/effect/floor_decal/turf/bar2,
 /turf/simulated/floor/tiled/dark{
@@ -11533,6 +11635,14 @@
 /obj/effect/floor_decal/turf/basalt0,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
+"QU" = (
+/obj/effect/water/top,
+/obj/effect/water/bottom,
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty/indestructable/lightless,
+/area/cadiaoutpost/oa/caves/undercity)
 "Ra" = (
 /obj/effect/water/top,
 /obj/effect/water/bottom,
@@ -12172,6 +12282,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/mining/eva)
+"TB" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/item/remains/mouse,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "TE" = (
 /obj/item/clothing/under/rank/medical/scrubs/purple,
 /obj/item/clothing/under/rank/medical/scrubs/green,
@@ -13185,6 +13300,15 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"XH" = (
+/obj/effect/floor_decal/turf/necro1,
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/tiled/dark{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/caves/dark)
 "XI" = (
 /obj/structure/table/rack/dark,
 /obj/effect/floor_decal/turf/brick/two,
@@ -13236,6 +13360,11 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/undercity)
+"XP" = (
+/obj/effect/floor_decal/turf/tunneldirty,
+/obj/machinery/door/unpowered/inn/interior,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/oa/caves)
 "XQ" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/suit/armor/seolsuit,
@@ -13661,6 +13790,17 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"ZD" = (
+/obj/effect/water/top,
+/obj/effect/water/bottom,
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/obj/effect/landmark/animal/rngretaliatespawner{
+	name = "rng rat"
+	},
+/turf/simulated/floor/dirty/indestructable/lightless,
+/area/cadiaoutpost/oa/caves/undercity)
 "ZF" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/structure/table/rack/dark,
@@ -17263,9 +17403,9 @@ PI
 PI
 PI
 PI
+pI
 PI
-PI
-PI
+pI
 SI
 SI
 ac
@@ -17513,7 +17653,7 @@ PI
 PI
 PI
 PI
-PI
+pI
 PI
 PI
 PI
@@ -17525,7 +17665,7 @@ PI
 PI
 PI
 SI
-SI
+as
 ac
 sj
 OG
@@ -17783,7 +17923,7 @@ PI
 PI
 PI
 SI
-ac
+gw
 sj
 sj
 sj
@@ -18040,7 +18180,7 @@ PI
 PI
 SI
 SI
-sj
+XH
 sj
 sj
 sj
@@ -18297,7 +18437,7 @@ SI
 SI
 SI
 oQ
-sj
+XH
 sj
 sj
 sj
@@ -36041,12 +36181,12 @@ PI
 PI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
-PI
+qU
+qU
+qU
+qU
+qU
+qU
 PI
 pW
 zo
@@ -36297,13 +36437,13 @@ SI
 SI
 SI
 SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+qU
+qU
+ax
+pK
+ej
+MM
+qU
 PI
 pW
 zo
@@ -36554,13 +36694,13 @@ oZ
 oZ
 oZ
 SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+qU
+NG
+pK
+TB
+pK
+pK
+qU
 PI
 pW
 zo
@@ -36811,13 +36951,13 @@ Fr
 fF
 oZ
 SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+qU
+qU
+CW
+pK
+pK
+Ij
+qU
 PI
 pW
 zo
@@ -37070,11 +37210,11 @@ oZ
 SI
 PI
 PI
-PI
-PI
-PI
-PI
-PI
+qU
+pK
+jJ
+qU
+qU
 PI
 pW
 zo
@@ -37327,9 +37467,9 @@ oZ
 SI
 PI
 PI
-PI
-PI
-PI
+qU
+XP
+qU
 PI
 PI
 PI
@@ -37581,15 +37721,15 @@ zC
 zC
 Sc
 oZ
-SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+PY
+PY
+PY
+Iu
+PY
+Iu
+PY
+PY
+PY
 pW
 lU
 BF
@@ -37838,15 +37978,15 @@ zC
 zC
 Ye
 oZ
-SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+yO
+PY
+Iu
+PY
+PY
+PY
+Iu
+yO
+yO
 pW
 zo
 Pt
@@ -38095,15 +38235,15 @@ pV
 PL
 fT
 oZ
-SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
+PY
 pW
 zo
 Ct
@@ -38352,15 +38492,15 @@ oZ
 oZ
 oZ
 oZ
-SI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
-PI
+PY
+PY
+PY
+PY
+yO
+PY
+PY
+PY
+PY
 pW
 zo
 zo
@@ -38613,7 +38753,7 @@ Iy
 Dg
 Dg
 Dg
-Dg
+QG
 Dg
 Dg
 Dg
@@ -39127,7 +39267,7 @@ Iy
 Dg
 Dg
 QG
-qU
+QG
 LR
 QG
 Dg
@@ -40156,7 +40296,7 @@ Iy
 Iy
 Iy
 Iy
-uS
+Nz
 Iy
 Iy
 Iy
@@ -40669,8 +40809,8 @@ jR
 jR
 jR
 jR
-jR
-jR
+QU
+ZD
 jR
 jR
 jR
@@ -41699,7 +41839,7 @@ jR
 oU
 Iy
 dy
-ri
+gn
 ri
 ri
 Iy
@@ -41956,7 +42096,7 @@ jR
 oY
 Iy
 EV
-ri
+gn
 ri
 ri
 Iy

@@ -48,7 +48,7 @@ Pilgrim Fate System
 	src.verbs -= list(/mob/living/carbon/human/proc/penitentclass)
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Musician","Disgraced Medicae","Stalker","Scum","Miner", "Private Investigator", "Cleric")
+	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Musician","Disgraced Medicae","Stalker","Scum","Miner", "Private Investigator", "Cleric", "Rat Catcher")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -205,8 +205,18 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/book/manual, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-
-			to_chat(U,"<span class='notice'><b><font size=3>You are an extremely low-ranking member of the Adeptus Ministorum. You do not reside within the Monasterium, and you must preach to the citizens of Messina. </font></b></span>")
+		if("Rat Catcher")
+			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
+			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club, slot_l_hand)
+			to_chat(U,"<span class='notice'><b><font size=3>Your father was a rat catcher, he hunted rats. Your grandfather was a rat catcher, he hunted rats. And by the Emperor, you're going to hunt some rats. Remember, human-sized rats simply don't exist </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -331,17 +341,17 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11)) 
+		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11))
 		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
-/datum/job/pathfinder  
+/datum/job/pathfinder
 	title = "Pathfinder"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED 
+	social_class = SOCIAL_CLASS_MED
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
@@ -357,7 +367,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12)) 
+		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12))
 		H.add_skills(rand(7,9),rand(7,10),rand(4,6),4,6) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -540,6 +550,29 @@ Pilgrim Fate System
 		if(4)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_s_store)
 
+/datum/job/scavenger
+	title = "Scavenger"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MIN //these boys are gross
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "You-yourself, don't listen-hear to man-things!"
+	selection_color = "#848484"
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	cultist_chance = 0
+	species_role = "Skaven"
+
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12))
+		H.add_skills(rand(7,9),rand(9,16),rand(4,6),4,6) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.assign_random_quirk()
+		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda you a former courtier sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 /datum/job/bouncer
 	title = "Bouncer"
 	department_flag = PIL
@@ -551,7 +584,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/bouncer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 10 
+	cultist_chance = 10
 	species_role = "Ogryn"
 
 
@@ -559,8 +592,8 @@ Pilgrim Fate System
 	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5)) 
-		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery 
+		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5))
+		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.fully_replace_character_name(random_ogryn_name())
 		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")
