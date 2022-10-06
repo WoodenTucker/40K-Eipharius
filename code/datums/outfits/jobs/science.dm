@@ -58,6 +58,6 @@
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
-	backpack_contents = list(/obj/item/stack/thrones/five = 1,
-		/obj/item/stack/thrones2/five = 8,
-		/obj/item/stack/thrones3/five = 4,) //Money to buy equipment.
+	backpack_contents = list(
+		/obj/item/stack/thrones/ten = 2,
+							) //Money to buy equipment.
