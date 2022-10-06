@@ -207,7 +207,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 		if("Rat Catcher")
 			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
-			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(2,9),rand(1,2),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
@@ -572,7 +572,7 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda you a former courtier sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You-you are smarter than rest of pack-herd. You-you sneak on ship-transport to go on new world-planet.</font></b></span>")
 /datum/job/bouncer
 	title = "Bouncer"
 	department_flag = PIL
