@@ -567,7 +567,7 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12))
+		H.add_stats(rand(14,15), rand(13,16), rand(13,16), rand (13,16))
 		H.add_skills(rand(7,9),rand(9,16),rand(4,6),4,6) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
