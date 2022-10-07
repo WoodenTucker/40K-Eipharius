@@ -1733,7 +1733,7 @@
 #include "code\modules\mob\living\carbon\human\species\species_random.dm"
 #include "code\modules\mob\living\carbon\human\species\races\astartes.dm"
 #include "code\modules\mob\living\carbon\human\species\races\eldar.dm"
-#include "code\modules\mob\living\carbon\human\species\races\rat.dm"
+#include "code\modules\mob\living\carbon\human\species\races\kroot.dm"
 #include "code\modules\mob\living\carbon\human\species\races\krootboys.dm"
 #include "code\modules\mob\living\carbon\human\species\races\nids.dm"
 #include "code\modules\mob\living\carbon\human\species\races\ogryn.dm"
