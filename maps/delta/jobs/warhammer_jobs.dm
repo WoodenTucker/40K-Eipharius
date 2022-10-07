@@ -44,6 +44,7 @@
 	/datum/job/pathfinder,
 	/datum/job/penitent,
 	/datum/job/bouncer,
+	/datum/job/scavenger
 	/* /datum/job/prisoner/penitent, */
 	/* /datum/job/prisoner/penitent/sarge, */
 	)
