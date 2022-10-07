@@ -49,7 +49,7 @@ Pilgrim Fate System
 	src.verbs -= list(/mob/living/carbon/human/proc/penitentclass)
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Rat Catcher", "Musician","Disgraced Medicae","Stalker","Scum","Miner", "Private Investigator", "Cleric")
+	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Musician","Disgraced Medicae","Stalker","Scum","Miner", "Private Investigator", "Cleric")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -454,29 +454,6 @@ Pilgrim Fate System
 	/obj/item/stack/thrones3/twenty = 1,
 
 	)
-/datum/job/scavenger
-    title = "Scavenger"
-    department_flag = PIL
-    social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 2
-    spawn_positions = 2
-    supervisors = "You-yourself, don't listen-hear to man-things!"
-    selection_color = "#848484"
-    latejoin_at_spawnpoints = TRUE
-    announced = FALSE
-    cultist_chance = 0
-    species_role = "Skaven"
-
-
-    equip(var/mob/living/carbon/human/H)
-        H.warfare_faction = IMPERIUM
-        ..()
-        H.add_stats(rand(14,15), rand(13,16), rand(13,16), rand (13,16))
-        H.add_skills(rand(7,9),rand(9,16),rand(4,6),4,6) //melee, ranged, med, eng, surgery
-        H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-        H.adjustStaminaLoss(-INFINITY)
-        H.assign_random_quirk()
-        to_chat(H, "<span class='notice'><b><font size=3>You-you are smarter than rest of pack-herd. You-you sneak on ship-transport to go on new world-planet.</font></b></span>")
 
 /datum/job/penitent //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
 	title = "Pilgrim"
@@ -578,8 +555,8 @@ Pilgrim Fate System
 	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5))
-		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5)) 
+		H.add_skills(rand(16,19),rand(10,12),1,1,1) //melee, ranged, med, eng, surgery 
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.fully_replace_character_name(random_ogryn_name())
 		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")
