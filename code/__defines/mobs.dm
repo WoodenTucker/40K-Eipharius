@@ -292,6 +292,7 @@
 #define SPECIES_ASTARTES "Astartes"
 #define SPECIES_TYRANID "Tyranids"
 #define SPECIES_OGRYN "Ogryn"
+#define SPECIES_RAT "Skaven"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
