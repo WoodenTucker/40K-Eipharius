@@ -30,7 +30,7 @@ var/datum/antagonist/revolutionary/revs
 
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg)
 	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/ig/commissar, /datum/job/magos, /datum/job/cmo, /datum/job/inquisitor, /datum/job/acolyte)
-	protected_jobs = list(/datum/job/officer, /datum/job/warden, /datum/job/detective)
+	protected_jobs = list(null)
 
 
 /datum/antagonist/revolutionary/New()

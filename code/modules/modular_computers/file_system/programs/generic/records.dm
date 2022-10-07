@@ -47,7 +47,7 @@
 			)))
 		data["all_records"] = all_records
 		data["creation"] = check_access(user, access_heads)
-		data["dnasearch"] = check_access(user, access_medical) || check_access(user, access_forensics_lockers)
+		data["dnasearch"] = check_access(user, access_medical) || check_access(user, access_magi)
 		data["fingersearch"] = check_access(user, access_security)
 
 	ui = SSnanoui.try_update_ui(user, src, ui_key, ui, data, force_open)

@@ -352,7 +352,7 @@
 "hh" = (/obj/structure/window/basic,/obj/effect/decal/cleanable/dirt,/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "hi" = (/obj/structure/table/standard,/obj/structure/window/basic{dir = 8; icon_state = "window"},/obj/structure/window/basic,/obj/item/storage/box/pillbottles,/obj/effect/decal/cleanable/dirt,/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "hj" = (/obj/structure/table/standard,/obj/structure/window/basic,/obj/item/storage/box/beakers,/obj/item/storage/box/beakers,/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
-"hk" = (/obj/effect/decal/cleanable/dirt,/obj/effect/landmark/start{name = "Genetor"},/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
+"hk" = (/obj/effect/decal/cleanable/dirt,/obj/effect/landmark/start{name = "Biologis"},/obj/effect/floor_decal/newcorner/teal/solid,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "hn" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "ho" = (/obj/machinery/light{dir = 8; icon_state = "tube1"},/obj/machinery/organ_printer/flesh/mapped,/turf/simulated/floor/tiled/white{icon_state = "tiled"},/area/cadiaoutpost/oa/medicae)
 "hp" = (/obj/structure/bed,/obj/item/bedsheet/medical,/obj/structure/iv_drip,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled{icon_state = "white1"},/area/cadiaoutpost/oa/medicae)

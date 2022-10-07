@@ -19,7 +19,7 @@
 
 /obj/item/card/id/shared/chaplain
 	icon_state = "id_chaplain"
-	job_access_type = /datum/job/chaplain
+	job_access_type = /datum/job/penitent
 
 
 /obj/item/card/id/shared/hos
@@ -29,12 +29,12 @@
 
 /obj/item/card/id/shared/sec
 	icon_state = "id_sec"
-	job_access_type = /datum/job/officer
+	job_access_type = /datum/job/penitent
 
 
 /obj/item/card/id/shared/rd
 	icon_state = "id_rd"
-	job_access_type = /datum/job/rd
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/shared/cargo
-	job_access_type = /datum/job/cargo_tech
+	job_access_type = /datum/job/penitent

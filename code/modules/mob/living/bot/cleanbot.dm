@@ -2,8 +2,8 @@
 	name = "Cleanbot"
 	desc = "A little cleaning robot, he looks so excited!"
 	icon_state = "cleanbot0"
-	req_one_access = list(access_janitor, access_robotics)
-	botcard_access = list(access_janitor, access_maint_tunnels)
+	req_one_access = list(access_janitor, access_mechanicus)
+	botcard_access = list(access_janitor, access_village)
 
 	wait_if_pulled = 1
 	min_target_dist = 0

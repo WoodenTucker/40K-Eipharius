@@ -10,7 +10,7 @@
 	icon_state = "emitter"
 	anchored = 0
 	density = 1
-	req_access = list(access_engine_equip)
+	req_access = list(access_mechanicus)
 	var/id = null
 
 	use_power = 1	//uses powernet power, not APC power

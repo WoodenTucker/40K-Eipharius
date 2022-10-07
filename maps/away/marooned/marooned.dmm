@@ -17,7 +17,7 @@
 "aq" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/marooned/snow,/area/marooned/marooned_snow)
 "ar" = (/obj/item/material/shard/shrapnel,/turf/simulated/floor/marooned/snow,/area/marooned/marooned_snow)
 "as" = (/obj/structure/shuttle/engine/propulsion{dir = 2},/turf/simulated/shuttle/wall{icon_state = "wall3"},/area/marooned/marooned_snow)
-"at" = (/obj/machinery/door/airlock/external{frequency = 1380; icon_state = "door_closed"; id_tag = "escape_pod_marooned_hatch"; locked = 0; name = "Escape Pod Hatch"; req_access = list(13)},/turf/simulated/floor/plating,/area/marooned/marooned_snow)
+"at" = (/obj/machinery/door/airlock/external{frequency = 1380; icon_state = "door_closed"; id_tag = "escape_pod_marooned_hatch"; locked = 0; name = "Escape Pod Hatch"; req_access = list(null)},/turf/simulated/floor/plating,/area/marooned/marooned_snow)
 "au" = (/obj/effect/decal/cleanable/liquid_fuel,/turf/simulated/floor/marooned/snow,/area/marooned/marooned_snow)
 "av" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/marooned/snow,/area/marooned/marooned_snow)
 "aw" = (/turf/simulated/wall/wood,/area/marooned/marooned_hut)

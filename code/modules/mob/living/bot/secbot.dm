@@ -9,8 +9,8 @@
 	var/attack_state = "secbot-c"
 	maxHealth = 50
 	health = 50
-	req_one_access = list(access_security, access_forensics_lockers)
-	botcard_access = list(access_security, access_sec_doors, access_forensics_lockers, access_morgue, access_maint_tunnels)
+	req_one_access = list(access_security, access_magi)
+	botcard_access = list(access_security, access_guard_common, access_village)
 
 	patrol_speed = 2
 	target_speed = 3

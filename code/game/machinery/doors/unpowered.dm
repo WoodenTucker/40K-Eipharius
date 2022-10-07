@@ -34,7 +34,12 @@
 /obj/machinery/door/unpowered/inn/berryfarm
 	name = "goodberry farm"
 	maxhealth = 2500
-	req_access = list(241)
+	req_access = list(211)
+
+/obj/machinery/door/unpowered/inn/mine
+	name = "Mining Hamlet"
+	maxhealth = 2500
+	req_access = list(211)
 
 /obj/machinery/door/unpowered/inn/deadwood
 	name = "deadwood estate"
@@ -54,7 +59,7 @@
 	icon_state = "door1"
 	autoclose = 1
 	normalspeed = 0
-	req_access = list(access_brig)
+	req_access = list(access_magi)
 
 /obj/machinery/door/unpowered/inn/vault
 	name = "Interior Vault"
@@ -121,3 +126,4 @@
 	autoclose = 1
 	normalspeed = 0
 	req_access = list(access_cargo) //so innkeeper always can get in if needed
+

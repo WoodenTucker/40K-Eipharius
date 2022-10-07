@@ -300,7 +300,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
-			H.adjust_fire_stacks(25) //i know that this is incredibly fucking OP, just nerf it if you want to, and be aware, this is really fucking OP
+			H.adjust_fire_stacks(5) //i know that this is incredibly fucking OP, just nerf it if you want to, and be aware, this is really fucking OP
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
 		if(H.isChild())

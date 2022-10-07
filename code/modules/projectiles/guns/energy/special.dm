@@ -99,10 +99,10 @@ obj/item/gun/energy/staff/focus
 			to_chat(user, "<span class='warning'>The [src.name] will now strike only a single person.</span>")
 			projectile_type = /obj/item/projectile/forcebolt"
 	*/
-	
+
 /obj/item/gun/energy/phosphor
 	name = "Phosphor pistol"
-	desc = "A rare and dangerous weapon, favoured by Magos Explorators and Skitarii Alphas."
+	desc = "A rare and dangerous weapon, favoured by Magos Explorators and Skitarii Alphas. It has low physical damage, but incredible stun potential. Exactly what they need when exploring new enemies against their will. The flames are a side effect to the process."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "teslar"
 	item_state = "teslar"
@@ -113,6 +113,9 @@ obj/item/gun/energy/staff/focus
 	one_hand_penalty= 1
 	burst_delay = 2
 	move_delay = 2
+	fire_delay = 8 // it stun 1 shots and then kills them with the fire, it needs at least a minor delay.
 	charge_cost = 300
+	cell_type = /obj/item/cell // wip, can use anything.
+	ammoType = /obj/item/cell
 	projectile_type = 	/obj/item/projectile/energy/phosphor
 	self_recharge = 1

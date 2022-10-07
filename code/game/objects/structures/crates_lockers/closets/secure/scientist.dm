@@ -69,7 +69,7 @@
 
 /obj/structure/closet/secure_closet/animal
 	name = "animal control closet"
-	req_access = list(access_research)
+	req_access = list(access_mechanicus)
 
 /obj/structure/closet/secure_closet/animal/WillContain()
 	return list(

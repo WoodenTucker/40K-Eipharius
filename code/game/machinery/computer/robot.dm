@@ -5,7 +5,7 @@
 	icon_keyboard = "mining_key"
 	icon_screen = "robot"
 	light_color = "#a97faa"
-	req_access = list(access_robotics)
+	req_access = list(access_mechanicus)
 	circuit = /obj/item/circuitboard/robotics
 
 /obj/machinery/computer/robotics/attack_ai(var/mob/user as mob)

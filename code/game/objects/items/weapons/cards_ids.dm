@@ -249,7 +249,7 @@ var/const/NO_EMAG_ACT = -50
 	desc = "An ID straight from the Syndicate."
 	registered_name = "Syndicate"
 	assignment = "Syndicate Overlord"
-	access = list(access_syndicate, access_external_airlocks)
+	access = list(access_syndicate,)
 
 /obj/item/card/id/captains_spare
 	name = "captain's spare ID"
@@ -317,11 +317,8 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/medical/chemist
 	job_access_type = /datum/job/chemist
 
-/obj/item/card/id/medical/geneticist
-	job_access_type = /datum/job/geneticist
-
-/obj/item/card/id/medical/psychiatrist
-	job_access_type = /datum/job/psychiatrist
+/obj/item/card/id/medical/biologis
+	job_access_type = /datum/job/biologis
 
 /obj/item/card/id/medical/paramedic
 	job_access_type = /datum/job/ig/medicae
@@ -336,13 +333,10 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card issued to security staff."
 	icon_state = "sec"
-	job_access_type = /datum/job/officer
-
-/obj/item/card/id/security/warden
-	job_access_type = /datum/job/warden
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/security/detective
-	job_access_type = /datum/job/detective
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/security/head
 	name = "identification card"
@@ -369,25 +363,25 @@ var/const/NO_EMAG_ACT = -50
 	name = "identification card"
 	desc = "A card issued to science staff."
 	icon_state = "sci"
-	job_access_type = /datum/job/scientist
+	job_access_type = /datum/job/penitent
 /*
 /obj/item/card/id/science/xenobiologist
 	job_access_type = /datum/job/xenobiologist
 */
 /obj/item/card/id/science/roboticist
-	job_access_type = /datum/job/roboticist
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/science/head
 	name = "identification card"
 	desc = "A card which represents knowledge and reasoning."
 	icon_state = "sciGold"
-	job_access_type = /datum/job/rd
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo
 	name = "identification card"
 	desc = "A card issued to cargo staff."
 	icon_state = "cargo"
-	job_access_type = /datum/job/cargo_tech
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo/mining
 	job_access_type = /datum/job/mining
@@ -403,28 +397,6 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A card issued to civilian staff."
 	icon_state = "civ"
 	//job_access_type = /datum/job/assistant
-
-/obj/item/card/id/innkey1
-	name = "inn room key 1"
-	desc = "A key that opens room 1 of the inn"
-	icon_state = "key2"
-	access = list(access_inn1)
-	grab_sound = 'sound/items/keyring_up.ogg'
-
-/obj/item/card/id/innkey2
-	name = "inn room key 2"
-	desc = "A key that opens room 2 of the inn"
-	icon_state = "key3"
-	access = list(access_inn2)
-	grab_sound = 'sound/items/keyring_up.ogg'
-
-/obj/item/card/id/innkey3
-	name = "inn room key 3"
-	desc = "A key that opens room 3 of the inn"
-	icon_state = "key4"
-	access = list(access_inn3)
-	grab_sound = 'sound/items/keyring_up.ogg'
-
 /obj/item/card/id/civilian/bartender
 	job_access_type = /datum/job/bartender
 
@@ -494,7 +466,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/guardsman
 	icon_state = "tagred"
-	access = list(access_maint_tunnels, access_security)
+	access = list(access_village, access_security)
 
 /obj/item/card/id/dog_tag/guardsman/update_name()
 	var/final_name = "[registered_name]"
@@ -510,10 +482,10 @@ var/const/NO_EMAG_ACT = -50
 	assignment = "Commissar"
 	icon_state = "tagred"
 	item_state = "tagred"
-	access = list(access_security, access_eva, access_sec_doors, access_brig, access_armory,
-			            access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
-			            access_research, access_engine, access_mining, access_medical, access_construction, access_mailsorting,
-			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway, access_external_airlocks)
+	access = list(access_security, access_guard_common, access_magi, access_armory,
+			            access_village, access_all_personal_lockers,
+			            access_mechanicus, access_mining, access_medical,
+			            access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway)
 
 /obj/item/card/id/commissar/update_name()
 	var/final_name = "[registered_name]"
@@ -535,7 +507,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/dog_tag/skitarii
 	icon_state = "tagred"
-	access = list(access_engine, access_construction, access_maint_tunnels, access_engine_equip, access_brig, access_medical, access_robotics,)
+	access = list(access_mechanicus, access_village, access_medical)
 
 /obj/item/card/id/dog_tag/ork
 	icon_state = "tagred"
@@ -552,7 +524,7 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/ring/administrator
 	icon_state = "admin_ring"
-	access = list(access_admeme, access_clinic, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_brig,)
+	access = list(access_village, access_administratum, access_bar, access_change_ids, access_keycard_auth, access_magi,)
 	desc = "An ornate ring forged by Imperial jewelers. Functions like an ID."
 
 /obj/item/card/id/ring/goldring
@@ -564,5 +536,164 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"
 	icon_state = "medicae_ring"
-	access = list(access_clinic)
-	desc = "An old ring signifying your position as a medicae."
+	access = list(access_cmedicae, access_village)
+	desc = "An old ring signifying your position as a medicae. Still works to gain access to medical facilities and lockers."
+
+/obj/item/card/id/ring/miner
+	name = "access card"
+	icon_state = "cargo"
+	access = list(access_cminer, access_village)
+	desc = "A ring entrusted to members of the mining guild. Additional access to the mines."
+
+
+// low tier key for peasants. easy for anyone to get
+/obj/item/card/id/key/low
+	name = "Lowly Key"
+	desc = "A lowly key befitting the common man upon this world. Probably opens a pilgrim's home, or something equally unimportant."
+	icon_state = "key2" // key 1 is currently bugged, just use key2 for now
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/key/low/mineone
+	name = "Mining Hamlet Key 1"
+	desc = "Opens door 1"
+	access = list(access_mining1)
+
+/obj/item/card/id/key/low/mine/two
+	name = "Mining Hamlet Key 2"
+	desc = "Opens door 2"
+	access = list(access_mining2)
+
+/obj/item/card/id/key/low/mine/three
+	name = "Mining Hamlet Key 3"
+	desc = "Opens door 3"
+	access = list(access_mining3)
+
+// middling key, for high tier peasant or cultist level
+/obj/item/card/id/key/middle
+	name = "Middling Key"
+	desc = "A key of mid-ground importance, maybe the thing it opens is actually valuable. Maybe not."
+	icon_state = "key2"
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/key/middle/deadwood
+	name = "Deadwood Estate Key"
+	desc = "A key that unlocks doors belonging to the Deadwood Estate. "
+	access = list(access_deadwood)
+
+/obj/item/card/id/key/middle/ganger
+	name = "Ganger Key"
+	desc = "A key that unlocks doors belonging to Ganger dens."
+	access = list(access_ganger)
+
+
+
+// high tier super key, for nobles, mechanicus and other fancy things
+/obj/item/card/id/key/super
+	name = "Superior Key"
+	desc = "A key of notable quality. The door it guards surely has some sort of treasure locked away."
+	icon_state = "key3"
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/key/super/pathfinder
+	name = "Pathfinder Estate Key"
+	desc = "A key belonging to the Pathfinder's Estate."
+	access = list(access_pathfinder)
+
+/obj/item/card/id/key/super/mechanicus
+	name = "Adeptus Mechanicus Key"
+	desc = "A key bearing the necessary binary scribings required to gain entry to the Mechanicus' domain."
+	access = list(access_mechanicus)
+
+/obj/item/card/id/key/super/inn
+	name = "Inn Key 1"
+	desc = "A Key belonging to the doors of the local Inn."
+	access = list(access_inn1)
+
+/obj/item/card/id/key/super/inn/two
+	name = "Inn Key 2"
+	desc = "A Key belonging to the doors of the local Inn."
+	access = list(access_inn2)
+
+/obj/item/card/id/key/super/inn/three
+	name = "Inn Key 3"
+	desc = "A Key belonging to the doors of the local Inn."
+	access = list(access_inn3)
+/obj/item/card/id/key/super/inn/meeting
+	name = "Meeting Room"
+	desc = "A Key to the Inn's Meeting Room"
+	access = list(access_meeting) //changed from 209 to 219, as tau is now 209
+
+/obj/item/card/id/key/super/daemon
+	name = "Daemon Key"
+	desc = "You're unsettled at just thinking about what this may open. Maybe ask your local inquisitor for help? They're nice with this kind of stuff."
+	access = list(access_daemon)
+
+/obj/item/card/id/key/super/hab
+	name = "Hab Key 1"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habone)
+
+/obj/item/card/id/key/super/hab/two
+	name = "Hab Key 2"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habtwo)
+
+/obj/item/card/id/key/super/hab/three
+	name = "Hab Key 3"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habthree)
+
+/obj/item/card/id/key/super/hab/four
+	name = "Hab Key 4"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habfour)
+
+/obj/item/card/id/key/super/hab/five
+	name = "Hab Key 5"
+	desc = "A key belonging to the upper class hab blocks. Upper class is relative, on this shit hole."
+	access = list(access_habfive)
+
+
+
+
+// grand key. rogue trader, inquisitor, stuff like that
+/obj/item/card/id/key/grand
+	name = "Grand Key"
+	desc = "An exquisite piece of art, to open equally excellent doors and provide fortune to the owner of this key. Likely belonging to a high ranking officer or noble."
+	icon_state = "key4"
+	grab_sound = 'sound/items/keyring_up.ogg'
+
+/obj/item/card/id/key/grand/tau
+	name = "Tau Ship Key"
+	desc = "Key belonging to the T'au Ship."
+	access = list(access_tau)
+
+/obj/item/card/id/key/grand/inq
+	name = "Inquisition Key"
+	desc = "A key to the Inquisitorial Black Ship, Simiel"
+	access = list(access_inquisition)
+
+/obj/item/card/id/key/grand/noble
+	name = "Noble Key"
+	desc = "Opens the doors to the Grand Market Exchange of the planet's noble elite. Worth a lot, for sure."
+	access = list(access_noble)
+
+/obj/item/card/id/key/grand/monastary
+	name = "Monastary Key"
+	desc = "Key to the Inner Sactum of His Holyness' Church"
+	access = list(access_monastary)
+
+/obj/item/card/id/key/grand/barentry
+	name = "Inn Key"
+	desc = "Key to where all the booze is"
+	access = list(access_barentry)
+
+/obj/item/card/id/key/grand/barmaster
+	name = "Master Inn Key"
+	desc = "Master key for the Inn"
+	access = list(access_barentry, access_inn1, access_inn2, access_inn3, access_meeting)
+
+/obj/item/card/id/key/grand/master
+	name = "Royal Master Key"
+	desc = "The Royal Key for the Rogue Trader Themselves, or for people belonging to their retinue. It ONLY has access to the most expensive rooms and treasure this entire planet has. Except for the toaster people's building."
+	access = list(access_monastary, access_noble, 331) //331 is rt vault

@@ -102,7 +102,7 @@
 	name = "Arbiter"
 	icon = 'icons/obj/doors/Doorcomalt.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_arbiter
-	req_access = list(access_chapel_office)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/security
 	name = "Airlock"
@@ -113,7 +113,7 @@
 	name = "Mechanicus Airlock"
 	icon = 'icons/obj/doors/Dooreng.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_eng
-	req_access = list(access_engine)
+	req_access = list(access_mechanicus)
 
 /obj/machinery/door/airlock/medical
 	name = "Airlock"
@@ -124,7 +124,7 @@
 	name = "Airlock"
 	icon = 'icons/obj/doors/Doorviro.dmi'
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
-	req_access = list(access_clinic)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/maintenance
 	name = "Maintenance Access"
@@ -214,7 +214,7 @@
 
 /obj/machinery/door/airlock/hatch/chapel
 	name = "Chapel Office"
-	req_access = access_chapel_office
+	req_access = access_village
 
 /obj/machinery/door/airlock/hatch/simiel
 	icon = 'icons/obj/doors/Doorhatchele.dmi'
@@ -262,7 +262,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_ce)
+	req_access = list(access_magosd)
 
 /obj/machinery/door/airlock/glass_command/commissar
 	name = "Commisarr's Den"
@@ -275,8 +275,8 @@
 	glass = 1
 	req_access = list(access_hos)
 
-/obj/machinery/door/airlock/glass_command/hospitaller
-	name = "Hospitaller's Haven"
+/obj/machinery/door/airlock/glass_command/hospitaller //cant be fucked renaming it to abbess
+	name = "Abbess' Haven"
 	icon = 'icons/obj/doors/Doorcomglass.dmi'
 	hitsound = 'sound/effects/Glasshit.ogg'
 	maxhealth = 300
@@ -284,7 +284,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_com
 	glass = 1
-	req_access = list(access_cmo)
+	req_access = list(access_abbess)
 
 /obj/machinery/door/airlock/glass_command/seneschal
 	name = "Seneschal's Study"
@@ -355,7 +355,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_cone
 	glass = 1
-	req_access = list(access_maint_tunnels)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"
@@ -400,6 +400,13 @@
 	assembly_type = /obj/structure/door_assembly/door_assembly_eng
 	glass = 1
 
+/obj/machinery/door/airlock/glass_engineering/mechanicus
+	name = "Mechanicus Airlock"
+	maxhealth = 2000
+	explosion_resistance = 80
+	req_one_access = list(10)
+
+
 /obj/machinery/door/airlock/glass_security
 	name = "Glass Airlock"
 	icon = 'icons/obj/doors/Doorsecglass.dmi'
@@ -429,7 +436,7 @@
 	opacity = 0
 	assembly_type = /obj/structure/door_assembly/door_assembly_viro
 	glass = 1
-	req_access = list(access_clinic)
+	req_access = list(access_village)
 
 /obj/machinery/door/airlock/glass_weap
 	name = "Glass Airlock"
@@ -624,22 +631,22 @@
 	explosion_resistance = 20
 	secured_wires = 1
 	assembly_type = /obj/structure/door_assembly/door_assembly_highsecurity
-	req_access = list(access_hos, access_sec_doors)
+	req_access = list(access_hos, access_guard_common)
 
 /obj/machinery/door/airlock/highsecurity/bolted
 
 	icon_state = "door_locked"
 	locked = 1
 
+/obj/machinery/door/airlock/highsecurity/lord
+	name = "Thy Lord's Secure Vault"
+	maxhealth = 5000
+	req_access = list(331)
+
 /obj/machinery/door/airlock/highsecurity/guardarmory
 	name = "Armory"
 	req_access = list()
 	req_one_access = list(access_hos, access_guard_armory)
-
-/obj/machinery/door/airlock/highsecurity/guardarmory/lord
-	name = "Secure Vault"
-	maxhealth = 5000
-	req_access = list(331)
 
 /obj/machinery/door/airlock/highsecurity/guardarmory/bolted  //Not 100% sure if this is redundant.
 
