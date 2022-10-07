@@ -158,7 +158,7 @@
 	flags_inv = HIDEMASK|HIDEEYES|HIDEFACE|HIDEEARS
 
 /obj/item/clothing/head/genehood
-	name = "genetor's hood"
+	name = "Biologis' hood"
 	desc = "An ancient cowl covering a heavily augmented face."
 	icon_state = "genetor"
 	item_state = "genetor"
@@ -167,7 +167,7 @@
 	armor = list(melee = 38, bullet = 30, laser = 40,energy = 40, bomb = 70, bio = 100, rad = 20)
 	flags_inv = BLOCKHAIR|BLOCKHEADHAIR|HIDEEARS|HIDEEYES
 	flash_protection = FLASH_PROTECTION_MAJOR
-	
+
 /obj/item/clothing/head/mininghood
 	name = "mining hood"
 	desc = "A black mining hood"

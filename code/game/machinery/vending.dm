@@ -680,13 +680,13 @@
 /obj/machinery/vending/assist/antag
 	name = "AntagCorpVend"
 	contraband = list()
-	products = list(/obj/item/device/assembly/prox_sensor = 5, 
+	products = list(/obj/item/device/assembly/prox_sensor = 5,
 					/obj/item/device/assembly/signaler = 4,
-					/obj/item/device/assembly/infra = 4, 
+					/obj/item/device/assembly/infra = 4,
 					/obj/item/device/assembly/prox_sensor = 4,
-					/obj/item/handcuffs = 8, 
+					/obj/item/handcuffs = 8,
 					/obj/item/device/flash = 4,
-					/obj/item/cartridge/signal = 4, 
+					/obj/item/cartridge/signal = 4,
 					/obj/item/clothing/glasses/sunglasses = 4)
 
 /obj/machinery/vending/coffee
@@ -721,7 +721,7 @@
 					/obj/item/reagent_containers/food/snacks/sosjerky = 1,
 					/obj/item/reagent_containers/food/snacks/no_raisin = 1,
 					/obj/item/reagent_containers/food/snacks/spacetwinkie = 1,
-					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 1, 
+					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 1,
 					/obj/item/reagent_containers/food/snacks/tastybread = 1)
 	contraband = list(/obj/item/reagent_containers/food/snacks/syndicake = 6, /obj/item/reagent_containers/food/snacks/skrellsnacks = 3)
 
@@ -818,7 +818,7 @@
 	icon_vend = "med-vend"
 	vend_delay = 18
 	product_ads = "Go save some lives!;The best stuff for your medbay.;Only the finest tools.;Natural chemicals!;This stuff saves lives.;Don't you want some?;Ping!"
-	req_access = list(access_medical_equip)
+	req_access = list(access_medical, access_cmedicae)
 	products = list(/obj/item/reagent_containers/glass/bottle/antitoxin = 4,
 					/obj/item/reagent_containers/glass/bottle/inaprovaline = 4,
 					/obj/item/reagent_containers/glass/bottle/stoxin = 4,
@@ -922,7 +922,7 @@
 					/obj/item/seeds/chiliseed = 3,
 					/obj/item/seeds/cornseed = 3,
 					/obj/item/seeds/eggplantseed = 3,
-					/obj/item/seeds/potatoseed = 3, 
+					/obj/item/seeds/potatoseed = 3,
 					/obj/item/seeds/replicapod = 3,
 					/obj/item/seeds/soyaseed = 3,
 					/obj/item/seeds/sunflowerseed = 3,
@@ -1052,7 +1052,7 @@
 	icon_deny = "tool-deny"
 	icon_vend = "tool-vend"
 	vend_delay = 11
-	//req_access = list(access_maint_tunnels) //Maintenance access
+	//req_access = list(access_village) //Maintenance access
 	products = list(/obj/item/stack/cable_coil/random = 10,
 					/obj/item/crowbar = 5,
 					/obj/item/weldingtool = 3,
@@ -1073,7 +1073,7 @@
 	icon_deny = "engivend-deny"
 	icon_vend = "engivend-vend"
 	vend_delay = 21
-	req_one_access = list(access_atmospherics,access_engine_equip)
+	req_one_access = list(access_mechanicus)
 	products = list(/obj/item/clothing/glasses/meson = 1,
 					/obj/item/device/multitool = 4,
 					/obj/item/device/geiger = 4,
@@ -1091,17 +1091,17 @@
 	desc = "Everything you need for do-it-yourself repair."
 	icon_state = "engi"
 	icon_deny = "engi-deny"
-	req_one_access = list(access_atmospherics,access_engine_equip)
+	req_one_access = list(access_mechanicus)
 	products = list(/obj/item/storage/belt/utility = 4,
 					/obj/item/clothing/glasses/meson = 4,
-					/obj/item/clothing/gloves/insulated = 4, 
+					/obj/item/clothing/gloves/insulated = 4,
 					/obj/item/screwdriver = 12,
 					/obj/item/crowbar = 12,
 					/obj/item/wirecutters = 12,
 					/obj/item/device/multitool = 12,
 					/obj/item/wrench = 12,
 					/obj/item/device/t_scanner = 12,
-					/obj/item/cell = 8, 
+					/obj/item/cell = 8,
 					/obj/item/weldingtool = 8,
 					/obj/item/clothing/head/welding = 8,
 					/obj/item/light/tube = 10,
@@ -1122,7 +1122,7 @@
 	desc = "All the tools you need to create your own robot army."
 	icon_state = "robotics"
 	icon_deny = "robotics-deny"
-	req_access = list(access_robotics)
+	req_access = list(access_mechanicus)
 	products = list(/obj/item/stack/cable_coil = 4,
 					/obj/item/device/flash/synthetic = 4,
 					/obj/item/cell = 4,
@@ -1139,11 +1139,11 @@
 	name = "prop dispenser"
 	desc = "All the props an actor could need. Probably."
 	icon_state = "Theater"
-	products = list(/obj/structure/flora/pottedplant = 2, 
-					/obj/item/device/flashlight/lamp = 2, 
-					/obj/item/device/flashlight/lamp/green = 2, 
+	products = list(/obj/structure/flora/pottedplant = 2,
+					/obj/item/device/flashlight/lamp = 2,
+					/obj/item/device/flashlight/lamp/green = 2,
 					/obj/item/reagent_containers/food/drinks/jar = 1,
-					/obj/item/nullrod = 1, 
+					/obj/item/nullrod = 1,
 					/obj/item/toy/cultsword = 1)
 
 //FOR ACTORS GUILD - Containers
@@ -1180,15 +1180,15 @@
 	product_slogans = "Escape to a fantasy world!;Fuel your gambling addiction!;Ruin your friendships!"
 	product_ads = "Elves and dwarves!;Totally not satanic!;Fun times forever!"
 	icon_state = "games"
-	products = list(/obj/item/toy/blink = 1, 
-					/obj/item/toy/spinningtoy = 1, 
-					/obj/item/deck/cards = 3, 
-					/obj/item/deck/tarot = 3, 
-					/obj/item/pack/cardemon = 1, 
-					/obj/item/storage/pill_bottle/dice_nerd = 5, 
-					/obj/item/storage/pill_bottle/dice = 5, 
-					/obj/item/storage/box/checkers = 2, 
-					/obj/item/storage/box/checkers/chess/red = 2, 
+	products = list(/obj/item/toy/blink = 1,
+					/obj/item/toy/spinningtoy = 1,
+					/obj/item/deck/cards = 3,
+					/obj/item/deck/tarot = 3,
+					/obj/item/pack/cardemon = 1,
+					/obj/item/storage/pill_bottle/dice_nerd = 5,
+					/obj/item/storage/pill_bottle/dice = 5,
+					/obj/item/storage/box/checkers = 2,
+					/obj/item/storage/box/checkers/chess/red = 2,
 					/obj/item/storage/box/checkers/chess = 2)
 	premium = list(/obj/item/gun/projectile/revolver/capgun = 1, /obj/item/ammo_magazine/caps = 4)
 	contraband = list(/obj/item/reagent_containers/spray/waterflower = 2, /obj/item/storage/box/snappops = 3)

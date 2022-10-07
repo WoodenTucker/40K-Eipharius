@@ -55,7 +55,7 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Seneschal, the Commissar"
 	selection_color = "#337C81"
-	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
+	access = list(access_hydroponics, access_bar, access_kitchen, access_village)
 	minimal_access = list(access_kitchen)
 	announced = FALSE
 	auto_rifle_skill = 3
@@ -65,7 +65,7 @@
 	lmg_skill = 3
 	smg_skill = 3
 	outfit_type = /decl/hierarchy/outfit/job/service/chef
-	cultist_chance = 10
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -90,8 +90,8 @@
 	supervisors = "the Town"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels, access_grox)
-	minimal_access = list(access_hydroponics, access_maint_tunnels, access_kitchen, access_grox)
+	access = list(access_hydroponics, access_bar, access_kitchen,access_village, access_grox)
+	minimal_access = list(access_hydroponics, access_village, access_kitchen, access_grox)
 //	alt_titles = list("Hydroponicist")
 	outfit_type = /decl/hierarchy/outfit/job/service/gardener
 	announced = FALSE
@@ -101,7 +101,7 @@
 	shotgun_skill = 3
 	lmg_skill = 3
 	smg_skill = 3
-	cultist_chance = 10
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -128,8 +128,8 @@
 	social_class = SOCIAL_CLASS_MIN
 	supervisors = "Every Imperial Citizen"
 	selection_color = "#337C81"
-	access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
-	minimal_access = list(access_janitor, access_maint_tunnels, access_engine, access_research, access_medical)
+	access = list(access_janitor, access_village, access_mechanicus, access_medical)
+	minimal_access = list(access_janitor, access_village, access_mechanicus, access_medical)
 	//alt_titles = list("Custodian","Sanitation Technician")
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 	announced = FALSE
@@ -186,8 +186,8 @@
 	open_when_dead = 0
 	supervisors = "the Ecclesiarchy."
 	selection_color = "#848484"
-	access = list(access_janitor, access_maint_tunnels, access_medical)
-	minimal_access = list(access_janitor, access_maint_tunnels, access_medical)
+	access = list(access_janitor, access_village, access_medical)
+	minimal_access = list(access_janitor, access_village, access_medical)
 	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
 	announced = FALSE
 	auto_rifle_skill = 2
@@ -197,7 +197,7 @@
 	lmg_skill = 2
 	smg_skill = 2
 	species_role = "Child"
-	cultist_chance = 10
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -207,7 +207,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.witchblood()
-		H.get_idcard()?.access = list(access_janitor, access_maint_tunnels, access_medical)
+		H.get_idcard()?.access = list(access_janitor, access_village, access_medical)
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
 		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Deacon you owe him your life. However, you must earn your keep. </font></b></span>")

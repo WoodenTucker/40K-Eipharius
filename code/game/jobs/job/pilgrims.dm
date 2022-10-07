@@ -20,6 +20,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		H.witchblood()
+		H.get_idcard()?.access = list(access_village) // so they open all 211
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
@@ -291,6 +292,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
+			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
@@ -299,12 +301,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
-			var/obj/item/card/id/ring/disgracedmedicae/W = new
-			W.icon_state = "medicae_ring"
-			W.assignment = "Medicae"
-			W.registered_name = real_name
-			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -326,43 +322,43 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 15
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11)) 
+		H.add_stats(rand(13,14), rand(13,15), rand(9,12), rand (8,11))
 		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need. </font></b></span>")
 
-/datum/job/pathfinder  
+/datum/job/pathfinder
 	title = "Pathfinder"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED 
+	social_class = SOCIAL_CLASS_MED
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Yourself"
+	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
 	access = list(access_bar,)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 10
+	cultist_chance = 100 // THE cult leader
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12)) 
+		H.add_stats(rand(14,15), rand(13,16), rand(10,13), rand (9,12))
 		H.add_skills(rand(7,9),rand(7,10),rand(4,6),4,6) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda you a former courtier sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You,  a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
 
 //loadouts below here
@@ -373,7 +369,7 @@ Pilgrim Fate System
 	shoes = null//obj/item/clothing/shoes/prac_boots
 	l_ear = null
 	r_ear = null
-	id_type = null
+	id_type = /obj/item/card/id/pilgrim/penitent
 	gloves = null
 	pda_slot = null
 
@@ -496,7 +492,7 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "Yourself"
 	selection_color = "#848484"
-	access = list(access_bar,)
+	access = list(access_village, access_ganger, access_bar)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
@@ -551,7 +547,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/bouncer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 10 
+	cultist_chance = 1 // grog like emperorah :) // bouncer should only be cultist if the innkeeper is. as they would get easily indoctrinated by their dad/boss
 	species_role = "Ogryn"
 
 

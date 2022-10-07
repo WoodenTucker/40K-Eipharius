@@ -14,14 +14,14 @@
 	shotgun_skill = 9
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 20
 	can_be_in_squad = FALSE
-	open_when_dead = TRUE
+	open_when_dead = FALSE
 	department_flag = SEC
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
-			            access_all_personal_lockers, access_maint_tunnels,)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,
+	access = list(access_security, access_guard_common, access_magi,
+			            access_all_personal_lockers, access_village,)
+	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,
 			            )
 
 
@@ -39,7 +39,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum. For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
@@ -62,8 +62,8 @@
 	open_when_dead = FALSE
 	department_flag = SEC|COM
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_medical, access_medical_equip, access_clinic, access_administratum, access_change_ids, access_keycard_auth)
-	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_medical, access_medical_equip, access_clinic, access_administratum, access_change_ids, access_keycard_auth
+	access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth)
+	minimal_access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_medical, access_village, access_administratum, access_change_ids, access_keycard_auth
 			            )
 
 
@@ -81,7 +81,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
@@ -122,22 +122,21 @@ Begin Warhammer loadouts
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	suit = /obj/item/clothing/suit/armor/enforcer
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
+	r_hand = /obj/item/melee/baton/loaded
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/melee/baton/loaded
+	belt = /obj/item/gun/projectile/slugrevolver
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
-	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
 	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/handcuffs = 2,
+	/obj/item/ammo_magazine/box/shotgun/stun = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones2/five = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -160,9 +159,7 @@ Begin Warhammer loadouts
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c50/ms = 1,
-	/obj/item/ammo_magazine/c50/ms = 1,
-	/obj/item/ammo_magazine/c50/ms = 1,
+	/obj/item/ammo_magazine/c50/ms = 3,
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
@@ -171,7 +168,7 @@ Begin Warhammer loadouts
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
+/* // this isn't used rn.
 /decl/hierarchy/outfit/job/ig/arbitrator
 	name = OUTFIT_JOB_NAME("Magistratum Arbitrator")
 	uniform = /obj/item/clothing/under/color/brown
@@ -194,3 +191,4 @@ Begin Warhammer loadouts
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
+	*/

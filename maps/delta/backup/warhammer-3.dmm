@@ -2069,11 +2069,11 @@
 /obj/structure/table/steel,
 /obj/machinery/door/window/northright{
 	color = "grey";
-	req_access = list(33)
+	req_access = list(211)
 	},
 /obj/machinery/door/window/southright{
 	color = "grey";
-	req_access = list(33)
+	req_access = list(211)
 	},
 /obj/item/reagent_containers/spray/cleaner,
 /turf/simulated/floor/tiled{
@@ -3753,7 +3753,7 @@
 	},
 /obj/item/bedsheet,
 /obj/effect/landmark/start{
-	name = "Genetor"
+	name = "Biologis"
 	},
 /turf/simulated/floor/tiled/white{
 	icon_state = "tiled"

@@ -13,7 +13,7 @@
 	/datum/job/doctor,
 	/datum/job/Paramedic,
 	/datum/job/chemist,
-	/datum/job/geneticist,
+	/datum/job/biologis,
 	/datum/job/magos,
 	/datum/job/explorer,
 	/datum/job/engineer,

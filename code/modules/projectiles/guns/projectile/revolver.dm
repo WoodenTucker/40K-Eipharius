@@ -156,15 +156,15 @@
 	sales_price = 25
 
 /obj/item/gun/projectile/slugrevolver
-	name = "slug revolver"
-	desc = "The slug revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .44 ammo."
+	name = "Slug Revolver"
+	desc = "The Slug Revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .44 ammo."
 	icon_state = "hunting_revolver"
 	item_state = "crevolver"
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
-	force = 10
+	force = 20
 	accuracy = 0.8
 	fire_delay= 2.6
 	ammo_type = /obj/item/ammo_casing/c44

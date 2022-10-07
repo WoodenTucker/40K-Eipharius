@@ -2059,11 +2059,11 @@
 /obj/structure/table/steel,
 /obj/machinery/door/window/northright{
 	color = "grey";
-	req_access = list(33)
+	req_access = list(211)
 	},
 /obj/machinery/door/window/southright{
 	color = "grey";
-	req_access = list(33)
+	req_access = list(211)
 	},
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -2588,7 +2588,7 @@
 /obj/machinery/door/airlock/virology{
 	color = null;
 	name = "Bedroom";
-	req_access = list(39)
+	req_access = list(211)
 	},
 /turf/simulated/floor/tiled/white{
 	icon_state = "tiled"
@@ -3615,7 +3615,7 @@
 	},
 /obj/item/bedsheet,
 /obj/effect/landmark/start{
-	name = "Genetor"
+	name = "Biologis"
 	},
 /turf/simulated/floor/tiled/white{
 	icon_state = "tiled"

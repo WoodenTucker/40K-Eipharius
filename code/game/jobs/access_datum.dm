@@ -16,9 +16,9 @@
 	desc = "Security Equipment"
 	region = ACCESS_REGION_SECURITY
 
-/var/const/access_brig = 2 // Brig timers and permabrig
+/var/const/access_magi = 2 // Brig timers and permabrig
 /datum/access/holding
-	id = access_brig
+	id = access_magi
 	desc = "Holding Cells"
 	region = ACCESS_REGION_SECURITY
 
@@ -27,25 +27,25 @@
 	id = access_armory
 	desc = "Armory"
 	region = ACCESS_REGION_SECURITY
-
+/*
 /var/const/access_forensics_lockers = 4
 /datum/access/forensics_lockers
 	id = access_forensics_lockers
 	desc = "Forensics"
 	region = ACCESS_REGION_SECURITY
-
+*/
 /var/const/access_medical = 5
 /datum/access/medical
 	id = access_medical
 	desc = "Medical"
 	region = ACCESS_REGION_MEDBAY
-
+/*
 /var/const/access_morgue = 6
 /datum/access/morgue
 	id = access_morgue
 	desc = "Morgue"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_tox = 7
 /datum/access/tox
 	id = access_tox
@@ -57,19 +57,19 @@
 	id = access_tox_storage
 	desc = "Toxins Lab"
 	region = ACCESS_REGION_RESEARCH
-
+/*
 /var/const/access_genetics = 9
 /datum/access/genetics
 	id = access_genetics
 	desc = "Genetics Lab"
 	region = ACCESS_REGION_MEDBAY
-
-/var/const/access_engine = 10
-/datum/access/engine
-	id = access_engine
-	desc = "Engineering"
+*/
+/var/const/access_mechanicus = 10
+/datum/access/mechanicus
+	id = access_mechanicus
+	desc = "Mechanicus Access"
 	region = ACCESS_REGION_ENGINEERING
-
+/*
 /var/const/access_engine_equip = 11
 /datum/access/engine_equip
 	id = access_engine_equip
@@ -93,7 +93,7 @@
 	id = access_emergency_storage
 	desc = "Emergency Storage"
 	region = ACCESS_REGION_ENGINEERING
-
+*/
 /var/const/access_change_ids = 15
 /datum/access/change_ids
 	id = access_change_ids
@@ -111,13 +111,13 @@
 	id = access_teleporter
 	desc = "Teleporter"
 	region = ACCESS_REGION_COMMAND
-
+/*
 /var/const/access_eva = 18
 /datum/access/eva
 	id = access_eva
 	desc = "EVA"
 	region = ACCESS_REGION_COMMAND
-
+*/
 /var/const/access_heads = 19
 /datum/access/heads
 	id = access_heads
@@ -135,7 +135,7 @@
 	id = access_all_personal_lockers
 	desc = "Personal Lockers"
 	region = ACCESS_REGION_COMMAND
-
+/*
 /var/const/access_chapel_office = 22
 /datum/access/chapel_office
 	id = access_chapel_office
@@ -153,8 +153,8 @@
 	id = access_atmospherics
 	desc = "Atmospherics"
 	region = ACCESS_REGION_ENGINEERING
-
-/var/const/access_bar = 25
+*/
+/var/const/access_bar = 25 // i dont think this does anything but idc
 /datum/access/bar
 	id = access_bar
 	desc = "Bar"
@@ -177,13 +177,13 @@
 	id = access_kitchen
 	desc = "Kitchen"
 	region = ACCESS_REGION_GENERAL
-
+/*
 /var/const/access_robotics = 29
 /datum/access/robotics
 	id = access_robotics
 	desc = "Robotics"
 	region = ACCESS_REGION_RESEARCH
-
+*/
 /var/const/access_rd = 30
 /datum/access/rd
 	id = access_rd
@@ -195,7 +195,7 @@
 	id = access_cargo
 	desc = "Cargo Bay"
 	region = ACCESS_REGION_SUPPLY
-
+/*
 /var/const/access_construction = 32
 /datum/access/construction
 	id = access_construction
@@ -213,7 +213,7 @@
 	id = access_cargo_bot
 	desc = "Cargo Bot Delivery"
 	region = ACCESS_REGION_SUPPLY
-
+*/
 /var/const/access_hydroponics = 35
 /datum/access/hydroponics
 	id = access_hydroponics
@@ -237,16 +237,16 @@
 	id = access_lawyer
 	desc = "Internal Affairs"
 	region = ACCESS_REGION_COMMAND
-
+/*
 /var/const/access_virology = 39
 /datum/access/virology
 	id = access_virology
 	desc = "Virology"
 	region = ACCESS_REGION_MEDBAY
-
-/var/const/access_cmo = 40
-/datum/access/cmo
-	id = access_cmo
+*/
+/var/const/access_abbess = 40
+/datum/access/abbess
+	id = access_abbess
 	desc = "Sister Hospitaller"
 	region = ACCESS_REGION_COMMAND
 
@@ -290,13 +290,13 @@
 	id = access_mining_office
 	desc = "Mining Office"
 	access_type = ACCESS_TYPE_NONE
-
+/*
 /var/const/access_mailsorting = 50
 /datum/access/mailsorting
 	id = access_mailsorting
 	desc = "Cargo Office"
 	region = ACCESS_REGION_SUPPLY
-
+*/
 // /var/const/free_access_id = 51
 // /var/const/free_access_id = 52
 
@@ -318,9 +318,9 @@
 	desc = "Xenobiology Lab"
 	region = ACCESS_REGION_RESEARCH
 
-/var/const/access_ce = 56
+/var/const/access_magosd = 56
 /datum/access/ce
-	id = access_ce
+	id = access_magosd
 	desc = "Magos"
 	region = ACCESS_REGION_ENGINEERING
 
@@ -360,31 +360,31 @@
 	desc = "Gateway"
 	region = ACCESS_REGION_COMMAND
 
-/var/const/access_sec_doors = 63 // Security front doors
+/var/const/access_guard_common = 63 // Guardsman common
 /datum/access/sec_doors
-	id = access_sec_doors
-	desc = "Security"
+	id = access_guard_common
+	desc = "Guard Outpost common areas"
 	region = ACCESS_REGION_SECURITY
-
+/*
 /var/const/access_psychiatrist = 64 // Psychiatrist's office
 /datum/access/psychiatrist
 	id = access_psychiatrist
 	desc = "Psychiatrist's Office"
 	region = ACCESS_REGION_MEDBAY
-
+*/
 /var/const/access_xenoarch = 65
 /datum/access/xenoarch
 	id = access_xenoarch
 	desc = "Xenoarchaeology"
 	region = ACCESS_REGION_RESEARCH
-
+/*
 /var/const/access_medical_equip = 66
 /datum/access/medical_equip
 	id = access_medical_equip
 	desc = "Medical Equipment"
 	region = ACCESS_REGION_MEDBAY
-
-/var/const/access_guard_armory = 67
+*/
+/var/const/access_guard_armory = 67 // guardsman officer and armory
 /datum/access/guard_armory
 	id = access_guard_armory
 	desc = "Guard Armory"
@@ -521,15 +521,61 @@
 	id = access_tau
 	desc = "Tau Ship"
 
-/var/const/access_admeme = 210
-/datum/access/admeme
-	id = access_admeme
-	desc = "Administrator"
+/var/const/access_ganger = 210
+/datum/access/ganger
+	id = access_ganger
+	desc = "ganger Access"
 
-/var/const/access_clinic = 211
-/datum/access/clinic
-	id = access_clinic
-	desc = "Village Clinic"
+/var/const/access_village = 211 // VILLAGE/PILGRIM COMMON ACCESS! BASICALLY ANYONE WITH ANY TYPE OF ID SHOULD HAVE THIS!!! Don't give to high level guys like rt or inq. they are too fancy to have peasant access
+/datum/access/village
+	id = access_village
+	desc = "Village Common"
+
+/var/const/access_habone = 214
+/datum/access/habone
+	id = access_habone
+	desc = "Hab 1 access"
+
+/var/const/access_habtwo = 215
+/datum/access/habtwo
+	id = access_habtwo
+	desc = "Hab 2 Access"
+
+/var/const/access_habthree = 216
+/datum/access/hab3
+	id = access_habthree
+	desc = "Hab 3 Access"
+
+/var/const/access_habfour = 217
+/datum/access/hab4
+	id = access_habfour
+	desc = "Hab 4 Access"
+
+/var/const/access_habfive = 218
+/datum/access/habfive
+	id = access_habfive
+	desc = "Hab 5 Access"
+
+/var/const/access_meeting = 219
+/datum/access/meeting
+	id = access_meeting
+	desc = "meeting room Access"
+
+/var/const/access_noble = 225
+/datum/access/noble
+	id = access_noble
+	desc = "Noble House"
+
+/var/const/access_cmedicae = 230 //common medicae. for disgraced and normal village medicae. maybe give to guard medicae as well?
+/datum/access/cmedicae
+	id = access_cmedicae
+	desc = "Village Medicae"
+
+/var/const/access_cminer = 231 //for village miners. dont need it to gain access, but for 'fancy' mining equipment.
+/datum/access/cminer
+	id = access_cminer
+	desc = "Village Miner" // unused for time being
+
 
 /var/const/access_administratum = 212
 /datum/access/administratum
@@ -540,3 +586,48 @@
 /datum/access/sob
 	id = access_sob
 	desc = "Adepta Sororitas Access" // used for certain places in the chapel so only the abbot and sobs can get in.
+
+// REWORKED ID AREA, NEW ACCESS
+
+/var/const/access_deadwood = 244
+/datum/access/deadwood
+	id = access_deadwood
+	desc = "Deadwood Estate Access"
+
+/var/const/access_daemon = 247
+/datum/access/daemon
+	id = access_daemon
+	desc = "Daemon Access" // i dont think it has any doors attached yet. just inq bait
+
+/var/const/access_pathfinder = 253
+/datum/access/pathfinder
+	id = access_pathfinder
+	desc = "Pathfinder Estate Access"
+
+/var/const/access_barentry = 255
+/datum/access/barentry
+	id = access_barentry
+	desc = "bar entry Estate Access"
+
+
+/var/const/access_mining1 = 260
+/datum/access/mining1
+	id = access_mining1
+	desc = "Mining 1 Access"
+
+/var/const/access_mining2 = 261
+/datum/access/mining2
+	id = access_mining2
+	desc = "Mining 2 Access"
+
+/var/const/access_mining3 = 262
+/datum/access/mining3
+	id = access_mining3
+	desc = "Mining 3 Access"
+
+/var/const/access_monastary = 333
+/datum/access/monastary
+	id = access_monastary
+	desc = "monastary access"
+
+

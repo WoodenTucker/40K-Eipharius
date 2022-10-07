@@ -126,7 +126,7 @@
 	cost = 120
 	containername = "\improper Security voidsuit crate"
 	containertype = /obj/structure/closet/crate/secure/large
-	access = access_brig
+	access = access_magi
 */
 /decl/hierarchy/supply_pack/security/weapons
 	name = "Weapons - Security basic"
@@ -287,29 +287,6 @@
 					/obj/item/reagent_containers/spray/luminol)
 	cost = 30
 	containername = "\improper Auxiliary forensic tools crate"
-/*
-/decl/hierarchy/supply_pack/security/detectivegear
-	name = "Forensics - investigation equipment"
-	contains = list(/obj/item/storage/box/evidence = 2,
-					/obj/item/cartridge/detective,
-					/obj/item/device/radio/headset/headset_sec,
-					/obj/item/taperoll/police,
-					/obj/item/clothing/glasses/sunglasses,
-					/obj/item/device/camera,
-					/obj/item/folder/red,
-					/obj/item/folder/blue,
-					/obj/item/clothing/gloves/forensic,
-					/obj/item/device/taperecorder,
-					/obj/item/device/mass_spectrometer,
-					/obj/item/device/camera_film = 2,
-					/obj/item/storage/photo_album,
-					/obj/item/device/reagent_scanner,
-					/obj/item/storage/briefcase/crimekit = 2)
-	cost = 50
-	containertype = /obj/structure/closet/crate/secure
-	containername = "\improper Forensic equipment crate"
-	access = access_forensics_lockers
-*/
 
 /decl/hierarchy/supply_pack/security/securitybarriers
 	name = "Misc - Barrier crate"
@@ -325,7 +302,7 @@
 	cost = 20
 	containertype = /obj/structure/closet/crate/secure/large
 	containername = "\improper wall shield generators crate"
-	access = access_brig
+	access = access_magi
 
 /decl/hierarchy/supply_pack/security/securitybiosuit
 	name = "Misc - Security biohazard gear"
