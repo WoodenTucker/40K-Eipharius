@@ -91,6 +91,7 @@
 	electric = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	vision_flags = SEE_MOBS|SEE_TURFS
+	flash_protection = FLASH_PROTECTION_MAJOR
 	canremove = 0
 	unacidable = 1
 	sales_price = 35
@@ -107,6 +108,7 @@
 	vision_flags = SEE_TURFS
 	canremove = 0
 	unacidable = 1
+	flash_protection = FLASH_PROTECTION_MAJOR
 	sales_price = 20
 
 /obj/item/clothing/glasses/meson/New()
@@ -164,12 +166,14 @@
 	off_state = "blacksun"
 	electric = 1
 	sales_price = 40
-
+	flash_protection = FLASH_PROTECTION_MAJOR
+	
 /obj/item/clothing/glasses/blacksun/skitarii
 	name = "skitarii augments"
 	desc = "A series of augments used to replace the eyes of Skitarii with superior, mechanical optics."
 	canremove = 0
-
+	flash_protection = FLASH_PROTECTION_MAJOR
+	
 /obj/item/clothing/glasses/tacgoggles
 	name = "tactical goggles"
 	desc = "Self-polarizing goggles with light amplification for dark environments. Made from durable synthetic."
@@ -560,7 +564,8 @@
 	item_state = "iggoggles"
 	body_parts_covered = EYES
 	sales_price = 4
-
+	flash_protection = FLASH_PROTECTION_MODERATE
+	
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
@@ -569,6 +574,7 @@
 	item_state = "iggoggles"
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	sales_price = 25
+	flash_protection = FLASH_PROTECTION_MODERATE
 
 /obj/item/clothing/glasses/cadiangoggles/elite/New()
 	..()
@@ -587,6 +593,7 @@
 	unacidable = 1
 	species_restricted = list(SPECIES_TYRANID)
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
+//	flash_protection = FLASH_PROTECTION_MODERATE //add this if you want this to be unable to be flashed
 
 // SPESS MUHREEN STUFF
 
@@ -603,6 +610,7 @@
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
 	sales_price = 50
+	flash_protection = FLASH_PROTECTION_MODERATE
 
 /obj/item/clothing/glasses/astartes/visor/apoth
 	name = "Mark VII Apothecary Visor"
@@ -629,7 +637,8 @@
 	body_parts_covered = EYES
 	unacidable = 1
 	sales_price = 40
-
+	flash_protection = FLASH_PROTECTION_MODERATE
+	
 /obj/item/clothing/glasses/cadian/New()
 	..()
 	overlay = GLOB.global_hud.nvg
