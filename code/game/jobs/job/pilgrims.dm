@@ -68,9 +68,8 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/material/kitchen/utensil/knife/boot, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club)
 
-			to_chat(U,"<span class='notice'><b><font size=3>You are an extremely low-ranking member of the Adeptus Ministorum. You do not reside within the Monasterium, and you must preach to the citizens of Messina. </font></b></span>")
+			to_chat(U,"<span class='notice'><b><font size=3>Your father hunter rats. Your grandfather hunted rats. By the emperor, you're going to hunt some rats. Remember, ratmen don't exist. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
