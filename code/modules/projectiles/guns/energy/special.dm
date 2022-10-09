@@ -135,3 +135,4 @@ obj/item/gun/energy/staff/focus
 	max_shots = 6
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
+	charge_meter = FALSE
