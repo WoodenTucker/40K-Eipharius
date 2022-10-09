@@ -56,6 +56,24 @@ Pilgrim Fate System
 
 
 	switch(classchoice)
+		if("Rat Catcher")
+			U.add_stats(rand(8,15), rand(8,16), rand(10,14), rand (12,16)) //
+			U.add_skills(rand(6,8),rand(1,1),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/material/kitchen/utensil/knife/boot, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+
+			to_chat(U,"<span class='notice'><b><font size=3>Your father hunter rats. Your grandfather hunted rats. By the emperor, you're going to hunt some rats. Remember, ratmen don't exist. </font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Sherpa")
 			U.add_stats(rand(13,14), rand(12,14), rand(12,14), rand (10,12)) //
 			U.add_skills(rand(6,8),rand(6,8),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
@@ -212,7 +230,6 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-		if("Miner")
 			U.add_stats(rand(13,16), rand(10,14), rand(10,14), rand (8,12)) //
 			U.add_skills(rand(6,8),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
@@ -458,8 +475,8 @@ Pilgrim Fate System
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 2
-    spawn_positions = 2
+    total_positions = 3
+    spawn_positions = 3
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     latejoin_at_spawnpoints = TRUE
