@@ -610,7 +610,7 @@
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
 	sales_price = 50
-	flash_protection = FLASH_PROTECTION_MODERATE
+	flash_protection =  FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/glasses/astartes/visor/apoth
 	name = "Mark VII Apothecary Visor"
