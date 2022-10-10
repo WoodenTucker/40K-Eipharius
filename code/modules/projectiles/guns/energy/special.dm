@@ -119,3 +119,20 @@ obj/item/gun/energy/staff/focus
 	ammoType = /obj/item/cell
 	projectile_type = 	/obj/item/projectile/energy/phosphor
 	self_recharge = 1
+
+
+/obj/item/gun/energy/gauss
+	name = "Gauss Rifle"
+	desc = "A deadly weapon wielded by Necron Warriors"
+	icon_state = "ns"
+	item_state = "ns"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
+	w_class = ITEM_SIZE_NORMAL
+	force = 5
+	slot_flags = SLOT_BELT|SLOT_BACK
+	one_hand_penalty = 0
+	charge_cost = 20
+	max_shots = 6
+	projectile_type = /obj/item/projectile/gauss
+	self_recharge = 1
+	charge_meter = FALSE
