@@ -430,7 +430,7 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/chaplain
 
 /obj/item/card/id/pilgrim/penitent
-	job_access_type = /datum/job/penitent
+	access = list(access_village)
 
 /obj/item/card/id/pilgrim/innkeeper
 	job_access_type = /datum/job/bartender //TODO tweak to village bar

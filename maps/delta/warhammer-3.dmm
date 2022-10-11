@@ -193,7 +193,7 @@
 "il" = (/obj/effect/floor_decal/newcorner/purple/diagonal,/obj/effect/floor_decal/industrial/warning/corner{dir = 1},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/research/robotics)
 "io" = (/obj/structure/banner/red,/turf/simulated/wall/ancient{color = null},/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "ip" = (/obj/structure/railing{dir = 4; health = 700; maxhealth = 700},/turf/unsimulated/miningtime,/area/cadiaoutpost/oa/caves)
-"iq" = (/obj/machinery/door/airlock/imperiumdoor{name = "Minor Imperialis Door - Astra Militarum"; req_access = list(10,63,211)},/turf/simulated/floor/plating{color = "grey"},/area/cadiaoutpost/oa/hangar)
+"iq" = (/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Black Ship Simiel"; req_access = list(202)},/turf/simulated/floor/plating{color = "grey"},/area/cadiaoutpost/oa/hangar)
 "is" = (/turf/simulated/wall/ancient{color = null},/area/cadiaoutpost/oa/bridge/offices/seneschal)
 "iu" = (/obj/structure/table/steel,/obj/item/flame/lighter,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/habs)
 "iw" = (/obj/effect/decal/remains,/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/habs)

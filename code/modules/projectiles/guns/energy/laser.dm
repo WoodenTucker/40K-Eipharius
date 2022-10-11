@@ -640,8 +640,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType =/obj/item/cell // plasma is capable of tau ammo, lasgun, ect
+	cell_type = /obj/item/cell/plasma
+	ammoType =/obj/item/cell/plasma
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 

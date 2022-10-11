@@ -63,10 +63,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/material/kitchen/utensil/knife/boot, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 
 			to_chat(U,"<span class='notice'><b><font size=3>Your father hunter rats. Your grandfather hunted rats. By the emperor, you're going to hunt some rats. Remember, ratmen don't exist. </font></b></span>")
@@ -87,7 +88,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'>Your home world was destroyed in an Ork waaaaaagh, you managed to escape before the planet was destroyed. On your home world, you were a navigator, born with an innate gift for pathfinding.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
@@ -105,6 +106,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, forced to tour the galaxy and toil until death in hopes of one day redeeming yourself. In your youth, you were an unknowing daemon-worshipper. Years of torment and re-education by the Inquisition allowed you this one chance at redemption. Labour endlessly in His name.</font></b></span>")
@@ -143,6 +145,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a Sergeant in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
@@ -165,6 +168,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/flame/lighter, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Sick of the quiet life on your Agri-World, you took a ticket to colonize a new planet. In your youth, you trained to be an Arbite Investigator before dropping out of the Schola..</font></b></span>")
@@ -188,6 +192,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			to_chat(U,"<span class='notice'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the village and the outpost to organize trade and enrich yourself.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
@@ -206,6 +211,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 
 			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
@@ -222,6 +228,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/book/manual, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 
@@ -242,6 +249,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
@@ -265,6 +273,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/head/pillbox, slot_head)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat.</font></b></span>")
@@ -293,6 +302,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/flame/lighter/zippo, slot_l_store)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme you once again find yourself on a new world. You'll do whatever it takes for a throne or two. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
@@ -309,12 +319,12 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			to_chat(U,"<span class='notice'><b><font size=3>A few too many slips and you found yourself stripped of your medical license but not the knowledge you gained for years of schooling and practice. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
@@ -475,8 +485,8 @@ Pilgrim Fate System
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 3
-    spawn_positions = 3
+    total_positions = 2
+    spawn_positions = 2
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     latejoin_at_spawnpoints = TRUE
