@@ -122,7 +122,6 @@
 	one_hand_penalty = 10
 	fire_delay = 8
 	accuracy = 1
-	self_recharge = 1
 	move_delay = 4
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
@@ -267,11 +266,11 @@
 		icon_state = "slayersniper"
 	else
 		icon_state = "slayersniper-e"
-	
+
 /obj/item/gun/projectile/exitus/verb/scope()
 	set category = "Object"
 	set name = "Use Scope"
 	set popup_menu = 1
 
 	toggle_scope(usr, 4)
-	
+
