@@ -275,3 +275,39 @@
 	targetTurfs = complete
 
 	return
+
+/obj/effect/effect/smoke/chem/payload
+	smoke_duration = 500
+	random_destination = TRUE
+
+	New(var/newloc, var/_spread = 7, var/_destination = null)
+		..(spread = _spread, dest_turf = _destination)
+
+		for (var/datum/reagent/r in reagents.reagent_list)
+			color = r.color
+			alpha = r.alpha
+
+/obj/effect/effect/smoke/chem/payload/chlorine_gas
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 500)
+
+/obj/effect/effect/smoke/chem/payload/mustard_gas
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 500)
+
+/obj/effect/effect/smoke/chem/payload/white_phosphorus_gas
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/mustard_gas/white_phosphorus, 500)
+
+/obj/effect/effect/smoke/chem/payload/xylyl_bromide
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/xylyl_bromide, 500)
+
+/obj/effect/effect/smoke/chem/payload/phosgene
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/toxin/phosgene_gas, 500)
