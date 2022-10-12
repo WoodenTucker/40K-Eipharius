@@ -60,7 +60,7 @@
 
 //GAS GRENADES
 
-/obj/item/weapon/grenade/smokebomb/chemical
+/obj/item/grenade/smokebomb/chemical
 	desc = "It is set to detonate in 5 seconds."
 	name = "chemical grenade"
 	icon = 'icons/obj/grenade.dmi'
@@ -71,22 +71,22 @@
 	var/obj/effect/effect/smoke/chem/payload/chlorine_gas
 	var/stype = /obj/effect/effect/smoke/chem/payload/chlorine_gas
 
-/obj/item/weapon/grenade/smokebomb/chemical//chlorine
+/obj/item/grenade/smokebomb/chemical//chlorine
 	name = "chlorine gas grenade"
 	stype = /obj/effect/effect/smoke/chem/payload/chlorine_gas
 
-/obj/item/weapon/grenade/smokebomb/chemical/mustard
+/obj/item/grenade/smokebomb/chemical/mustard
 	name = "mustard gas grenade"
 	stype = /obj/effect/effect/smoke/chem/payload/mustard_gas
 
-/obj/item/weapon/grenade/smokebomb/chemical/phosgene
+/obj/item/grenade/smokebomb/chemical/phosgene
 	name = "phosgene gas grenade"
 	stype = /obj/effect/effect/smoke/chem/payload/phosgene
 
-/obj/item/weapon/grenade/smokebomb/chemical/white_phosphorus
+/obj/item/grenade/smokebomb/chemical/white_phosphorus
 	name = "white phosphorus gas grenade"
 	stype = /obj/effect/effect/smoke/chem/payload/white_phosphorus_gas
 
-/obj/item/weapon/grenade/smokebomb/chemical/xylyl_bromide
+/obj/item/grenade/smokebomb/chemical/xylyl_bromide
 	name = "xylyl bromide gas grenade"
 	stype = /obj/effect/effect/smoke/chem/payload/xylyl_bromide
