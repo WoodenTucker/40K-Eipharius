@@ -287,27 +287,28 @@
 			color = r.color
 			alpha = r.alpha*/
 
-/obj/effect/effect/system/smoke_spread/smoke/chem/payload/chlorine_gas
+/obj/effect/effect/smoke/chem/payload/chlorine_gas
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 500)
 
-/obj/effect/effect/system/smoke_spread/smoke/chem/payload/mustard_gas
+/obj/effect/effect/smoke/chem/payload/mustard_gas
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 500)
 
-/obj/effect/effect/system/smoke_spread/smoke/chem/payload/white_phosphorus_gas
+/obj/effect/effect/smoke/chem/payload/white_phosphorus_gas
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/mustard_gas/white_phosphorus, 500)
 
-/obj/effect/effect/system/smoke_spread/smoke/chem/payload /xylyl_bromide
+/obj/effect/effect/smoke/chem/payload/xylyl_bromide
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/xylyl_bromide, 500)
 
-/obj/effect/effect/system/smoke_spread/smoke/chem/payload/phosgene
+/obj/effect/effect/smoke/chem/payload/phosgene
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/toxin/phosgene_gas, 500)
+
