@@ -57,3 +57,23 @@
 	name = "artillery marker"
 	mortar_type = "arty"
 	det_time = 75
+
+/obj/item/weapon/grenade/smokebomb/chlorine
+	name = "chlorine gas grenade"
+	stype = /datum/effect/effect/system/smoke_spread/chem/payload/chlorine_gas
+
+/obj/item/weapon/grenade/smokebomb/mustard
+	name = "mustard gas grenade"
+	stype = /datum/effect/effect/system/smoke_spread/chem/payload/mustard_gas
+
+/obj/item/weapon/grenade/smokebomb/phosgene
+	name = "phosgene gas grenade"
+	stype = /datum/effect/effect/system/smoke_spread/chem/payload/phosgene
+
+/obj/item/weapon/grenade/smokebomb/white_phosphorus
+	name = "white phosphorus gas grenade"
+	stype = /datum/effect/effect/system/smoke_spread/chem/payload/white_phosphorus_gas
+
+/obj/item/weapon/grenade/smokebomb/xylyl_bromide
+	name = "xylyl bromide gas grenade"
+	stype = /datum/effect/effect/system/smoke_spread/chem/payload/xylyl_bromide
