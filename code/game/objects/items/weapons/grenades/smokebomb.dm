@@ -57,6 +57,45 @@
 	name = "artillery marker"
 	mortar_type = "arty"
 	det_time = 75
+//GAS GRENADES
+
+/obj/item/weapon/grenade/chemical
+	desc = "It is set to detonate in 5 seconds."
+	name = "chemical grenade"
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "csmoke"
+	det_time = 50
+	item_state = "csmoke"
+	slot_flags = SLOT_BELT
+	var/datum/effect/effect/system/smoke_spread/chem/payload/chlorine_gas
+	var/stype = /datum/effect/effect/system/smoke_spread/chem/payload
+
+/obj/item/weapon/grenade/chemical/New()
+	..()
+	smoke = PoolOrNew(stype)
+	smoke.attach(src)
+
+/obj/item/weapon/grenade/chemical/Destroy()
+	qdel(smoke)
+	smoke = null
+	return ..()
+
+/obj/item/weapon/grenade/chemical/prime()
+	if (active)
+		playsound(loc, 'sound/effects/smoke.ogg', 50, TRUE, -3)
+		smoke.set_up(10, FALSE, usr ? usr.loc : loc)
+		spawn(0)
+			smoke.start()
+			sleep(10)
+			smoke.start()
+			sleep(10)
+			smoke.start()
+			sleep(10)
+			smoke.start()
+
+		sleep(80)
+		qdel(src)
+		return
 
 /obj/item/weapon/grenade/smokebomb/chlorine
 	name = "chlorine gas grenade"
