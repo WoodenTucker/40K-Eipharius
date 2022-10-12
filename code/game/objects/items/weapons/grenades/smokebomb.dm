@@ -57,6 +57,7 @@
 	name = "artillery marker"
 	mortar_type = "arty"
 	det_time = 75
+
 //GAS GRENADES
 
 /obj/item/weapon/grenade/smokebomb/chemical
