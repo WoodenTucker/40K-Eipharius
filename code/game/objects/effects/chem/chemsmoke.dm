@@ -275,3 +275,60 @@
 	targetTurfs = complete
 
 	return
+
+/obj/effect/effect/smoke/chem/payload
+	var/smoke_duration = 1000
+	//random_destination = TRUE
+	splash_amount = 10
+
+	New(var/newloc, var/_spread = 7, var/_destination = null)
+		..(spread = _spread, dest_turf = _destination)
+
+		/*for (var/datum/reagent/r in reagents.reagent_list)
+			color = r.color
+			alpha = r.alpha*/
+
+/datum/effect/effect/system/smoke_spread/chem/payload/Move()
+	var/list/oldlocs = view(1, src)
+	. = ..()
+	if(.)
+		for(var/turf/T in view(1, src) - oldlocs)
+			for(var/atom/movable/AM in T)
+				if(!istype(AM, /datum/effect/effect/system/smoke_spread/chem/payload))
+					reagents.splash(AM, splash_amount, copy = 1)
+		if(loc == destination)
+			bound_width = 96
+			bound_height = 96
+
+/datum/effect/effect/system/smoke_spread/chem/payload/Crossed(atom/movable/AM)
+	..()
+	if(!istype(AM, /datum/effect/effect/system/smoke_spread/chem/payload))
+		reagents.splash(AM, splash_amount, copy = 1)
+
+/datum/effect/effect/system/smoke_spread/chem/payload/proc/initial_splash()
+	for(var/turf/T in view(1, src))
+		for(var/atom/movable/AM in T)
+			if(!istype(AM, /datum/effect/effect/system/smoke_spread/chem/payload))
+				reagents.splash(AM, splash_amount, copy = 1)
+
+
+
+/datum/effect/effect/system/smoke_spread/chem/payload/chlorine_gas
+	chemholder = new/datum/reagent/toxin/chlorine_gas()
+	chemholder.create_reagents(500)
+
+/datum/effect/effect/system/smoke_spread/chem/payload/mustard_gas
+	chemholder = new/datum/reagent/toxin/mustard_gas()
+	chemholder.create_reagents(500)
+
+/datum/effect/effect/system/smoke_spread/chem/payload/white_phosphorus_gas
+	chemholder = new/datum/reagent/toxin/mustard_gas/white_phosphorus()
+	chemholder.create_reagents(500)
+
+/datum/effect/effect/system/smoke_spread/chem/payload/xylyl_bromide
+	chemholder = new/datum/reagent/toxin/xylyl_bromide()
+	chemholder.create_reagents(500)
+
+/datum/effect/effect/system/smoke_spread/chem/payload/phosgene
+	chemholder = new/datum/reagent/toxin/phosgene_gas()
+	chemholder.create_reagents(500)

@@ -57,3 +57,56 @@
 	name = "artillery marker"
 	mortar_type = "arty"
 	det_time = 75
+
+//GAS GRENADES
+
+/obj/item/grenade/smokebomb/chemical
+	desc = "It is set to detonate in 5 seconds."
+	name = "chemical grenade"
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "csmoke"
+	//det_time = 50
+	item_state = "csmoke"
+	slot_flags = SLOT_BELT
+	var/datum/effect/effect/system/smoke_spread/chem/payload/chlorine_gas
+	var/stype = /datum/effect/effect/system/smoke_spread/chem/payload/chlorine_gas
+
+/obj/item/grenade/smokebomb/chemical/chlorine
+	name = "chlorine gas grenade"
+
+/obj/item/grenade/smokebomb/chemical/chlorine/New()
+	..()
+	src.smoke = new /datum/effect/effect/system/smoke_spread/chem/payload/chlorine_gas()
+	src.smoke.attach(src)
+
+/obj/item/grenade/smokebomb/chemical/mustard
+	name = "mustard gas grenade"
+
+/obj/item/grenade/smokebomb/chemical/mustard/New()
+	..()
+	src.smoke = new /datum/effect/effect/system/smoke_spread/chem/payload/mustard_gas()
+	src.smoke.attach(src)
+
+/obj/item/grenade/smokebomb/chemical/phosgene
+	name = "phosgene gas grenade"
+
+/obj/item/grenade/smokebomb/chemical/phosgene/New()
+	..()
+	src.smoke = new /datum/effect/effect/system/smoke_spread/chem/payload/phosgene()
+	src.smoke.attach(src)
+
+/obj/item/grenade/smokebomb/chemical/white_phosphorus
+	name = "white phosphorus gas grenade"
+
+/obj/item/grenade/smokebomb/chemical/white_phosphorus/New()
+	..()
+	src.smoke = new /datum/effect/effect/system/smoke_spread/chem/payload/white_phosphorus_gas()
+	src.smoke.attach(src)
+
+/obj/item/grenade/smokebomb/chemical/xylyl_bromide
+	name = "xylyl bromide gas grenade"
+
+/obj/item/grenade/smokebomb/chemical/xylyl_bromide/New()
+	..()
+	src.smoke = new /datum/effect/effect/system/smoke_spread/chem/payload/xylyl_bromide()
+	src.smoke.attach(src)
