@@ -234,7 +234,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 160
+	damage = 125
 	armor_penetration = 30
 
 /obj/item/projectile/energy/pulse/plasmapistol
@@ -242,7 +242,7 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 140
+	damage = 95
 	armor_penetration = 30
 
 	/obj/item/projectile/energy/pulse/plasmapistol/astartes
@@ -250,5 +250,5 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 150
+	damage = 105
 	armor_penetration = 30

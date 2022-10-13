@@ -214,7 +214,6 @@ obj/item/gun/energy/retro
 	one_hand_penalty = 1.7
 	fire_delay = 3
 	accuracy = 0
-	self_recharge = 1
 	move_delay = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -402,6 +401,7 @@ obj/item/gun/energy/retro
 	accuracy = 0
 	move_delay = 4
 	self_recharge = 1
+	recharge_time = 9
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
@@ -507,7 +507,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 2.5
 	armor_penetration = 8.75
 	charge_cost = 100
+	cell_type = /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
 	sales_price = 25
+
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
@@ -521,6 +524,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "laspistol"
 	accuracy = 0.5
 	fire_delay = 2
+	cell_type = /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
 
 /obj/item/gun/energy/las/laspistol/mechanicus
 	name = "Adeptus Mechanicus Kantrael MG Laspistol"
@@ -532,6 +537,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = -0.5
 	fire_delay= 3
 	armor_penetration = 12.5
+	cell_type = /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
 
 /obj/item/gun/energy/las/laspistol/commissar
 	name = "Officio Prefectus Kantrael MG Laspistol"
@@ -544,6 +551,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay= 3
 	armor_penetration = 12.5
 	sales_price = 25
+	cell_type = /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
 
 	firemodes = list(
 		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
@@ -635,13 +644,15 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
 	accuracy = 0
+	self_recharge = 1
+	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat.
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 13 // something something its recharging
+	fire_delay = 19 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
-	cell_type = /obj/item/cell/plasma || /obj/item/cell/lasgun
-	ammoType =/obj/item/cell // plasma is capable of tau ammo, lasgun, ect
+	cell_type = /obj/item/cell/plasma
+	ammoType =/obj/item/cell/plasma
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
 
@@ -659,7 +670,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 15
 	one_hand_penalty = 12 //heavy af fam
 	accuracy = 0.4
-	self_recharge = 1
 	move_delay = 6 //dont want speedy bois
 	fire_delay = 19 // something something its recharging
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -680,7 +690,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 7 //change later?
 	accuracy = 0
-	self_recharge = 1
 	move_delay = 4 //it a pistol, but giga cool plasma
 	fire_delay = 17 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -700,7 +709,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 20
 	one_hand_penalty = 4 //change later?
 	accuracy = 1
-	self_recharge = 1
 	move_delay = 3 //it a pistol
 	fire_delay = 16 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
@@ -742,6 +750,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 1
 	move_delay = 3.5
 	fire_delay = 16
+	recharge_time = 10
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -771,7 +780,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 600
 	wielded_item_state = "pulse_carbine"
 	sales_price = 119
-	charge_meter = 0
+	charge_meter = FALSE
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
 	name = "archeotech plasma pistol"
@@ -783,13 +792,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_NORMAL
 	force = 10
 	one_hand_penalty = 4 //change later?
-	accuracy = 0
+	accuracy = 1
 	move_delay = 2 //it a pistol, but giga cool plasma
-	fire_delay = 14 // unsure if decent. dont want fast fire rate
+	fire_delay = 14 // very good
+	self_recharge = 9 // very good
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 650
 	wielded_item_state = "pulse_pistol"
 	sales_price = 109
-	charge_meter = 0
+	charge_meter = FALSE

@@ -31,18 +31,10 @@
 		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
-		if(can_be_in_squad)
-			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. The Emperor Protects. </font></b></span>")
-		var/troopnum = rand(1,50000)
-		switch(title)
-			if("Krieg Guardsman")
-				H.fully_replace_character_name("Guardsman [troopnum]")
-				H.implant_loyalty(src)
 		H.verbs += list(
 		/mob/living/carbon/human/proc/igattack,
 		/mob/living/carbon/human/proc/igcanthold,
@@ -90,6 +82,7 @@
 		if(title == "Krieg Guardsman")
 			var/troopnum = rand(1,50000)
 			H.fully_replace_character_name("Guardsman [troopnum]")
+			H.implant_loyalty(src)
 		else H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
@@ -115,7 +108,7 @@
 //Whiteshield
 
 /datum/job/ig/whiteshield
-	title = "Imperial Guard Conscript"
+	title = "Imperial Guard Whiteshield"
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = FALSE
@@ -138,11 +131,11 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		H.fully_replace_character_name("Conscript [H.real_name]")
+		H.fully_replace_character_name("Whiteshield [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHTConscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHT Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 //Sharpshooters
 
@@ -496,7 +489,7 @@
 // Guardsman
 
 /decl/hierarchy/outfit/job/whiteshield
-	name = OUTFIT_JOB_NAME("Imperial Guard Conscript")
+	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -577,14 +570,14 @@
 	suit = /obj/item/clothing/suit/armor/catachan
 	head = /obj/item/clothing/head/catachan
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
+	belt = null
 	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	mask = null
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/catachan
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
@@ -632,7 +625,7 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -670,7 +663,8 @@
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/device/flashlight/lantern = 1
 	)
 
 /decl/hierarchy/outfit/job/guardsman/catachan
@@ -711,7 +705,7 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -736,6 +730,7 @@
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	r_pocket = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas/krieg
 	backpack_contents = list(
@@ -752,7 +747,7 @@
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
+	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
@@ -784,7 +779,7 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -812,6 +807,8 @@
 	mask = /obj/item/clothing/mask/gas/krieg
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/launcher/rcl_rifle
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
 	r_hand = /obj/item/gun/energy/las/laspistol/militarum/lucius
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
@@ -833,7 +830,7 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team

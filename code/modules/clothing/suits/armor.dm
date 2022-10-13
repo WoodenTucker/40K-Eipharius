@@ -583,7 +583,7 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/armor/whiteshield
-	name = "Cadian Pattern Conscript Flak Armour - Light"
+	name = "Cadian Pattern Whiteshield Flak Armour - Light"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
 	icon_state = "wshield"
 	item_state = "wshield"

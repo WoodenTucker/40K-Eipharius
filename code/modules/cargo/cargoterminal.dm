@@ -432,7 +432,7 @@
 	dat += "<B>Available units:</B></BR>"
 	dat += "<B>Common mercenaries</B><HR>"
 	dat += "Those are well trained soldiers. Not the best, but loyal. They are effective only in groups<HR>"
-	dat += "<A href='byond://?src=\ref[src];conscript=1'>Purchase a Conscript (80)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];Whiteshield=1'>Purchase a Whiteshield (80)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (150)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (225)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (250)</A><BR>"
@@ -461,13 +461,13 @@
 	if (href_list["unavailable"])
 		visible_message("This type of mercenary is temporarily unavailable")
 		return
-	if (href_list["conscript"])
+	if (href_list["Whiteshield"])
 		if(GLOB.thrones < 80)
 			visible_message("You cannot afford that!")
 			return
 		else
 			for (var/datum/job/job in SSjobs.occupations)
-			var/job = "Imperial Guard Conscript"
+			var/job = "Imperial Guard Whiteshield"
 			if (job)
 				var/res = SSjobs.FreeRole(job)
 				if(res == 0)
