@@ -275,3 +275,59 @@
 	targetTurfs = complete
 
 	return
+
+/obj/effect/effect/smoke/chem/payload
+	var/smoke_duration = 500
+	//random_destination = TRUE
+	splash_amount = 10
+
+	New(var/newloc, var/_spread = 7, var/_destination = null)
+		..(spread = _spread, dest_turf = _destination)
+
+		/*for (var/datum/reagent/r in reagents.reagent_list)
+			color = r.color
+			alpha = r.alpha*/
+
+/obj/effect/effect/smoke/chem/payload/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 500)
+
+/obj/effect/effect/smoke/chem/payload/chlorine_gas
+
+/obj/effect/effect/smoke/chem/payload/chlorine_gas/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 500)
+	//chemholder = new/datum/reagent/toxin/chlorine_gas
+	//chemholder.create_reagents(500)
+
+/obj/effect/effect/smoke/chem/payload/mustard_gas
+	//chemholder = new/datum/reagent/toxin/mustard_gas
+	//chemholder.create_reagents(500)
+
+/obj/effect/effect/smoke/chem/payload/mustard_gas/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/mustard_gas, 500)
+
+/obj/effect/effect/smoke/chem/payload/white_phosphorus_gas
+	//chemholder = new/datum/reagent/toxin/mustard_gas/white_phosphorus
+	//chemholder.create_reagents(500)
+
+/obj/effect/effect/smoke/chem/payload/white_phosphorus_gas/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/mustard_gas/white_phosphorus, 500)
+
+/obj/effect/effect/smoke/chem/payload/xylyl_bromide
+	//chemholder = new/datum/reagent/toxin/xylyl_bromide
+	//chemholder.create_reagents(500)
+
+/obj/effect/effect/smoke/chem/payload/xylyl_bromide/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/xylyl_bromide, 500)
+
+/obj/effect/effect/smoke/chem/payload/phosgene
+	//chemholder = new/datum/reagent/toxin/phosgene_gas
+	//chemholder.create_reagents(500)
+
+/obj/effect/effect/smoke/chem/payload/phosgene/New()
+	..()
+	reagents.add_reagent(/datum/reagent/toxin/phosgene_gas, 500)
