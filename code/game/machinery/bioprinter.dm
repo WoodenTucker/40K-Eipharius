@@ -207,6 +207,7 @@
 		if(H.species && H.species.has_organ[choice])
 			var/new_organ = H.species.has_organ[choice]
 			O = new new_organ(get_turf(src))
+			O.sales_price = 0
 			O.status |= ORGAN_CUT_AWAY
 		else
 			O = ..()
