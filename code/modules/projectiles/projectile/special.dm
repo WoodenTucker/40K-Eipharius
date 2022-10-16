@@ -287,20 +287,21 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 
-//this is the PHOSPHOR energy gun, its not currently being used by anything other than explorator, which isn't really done yet.
+//this is the PHOSPHOR energy gun, its not currently being used by anything other than explorator.
 /obj/item/projectile/energy/phosphor
 	name = "phosphor bolt"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	damage = 25
-	agony = 200 //this is pain that passes through armor???
-	range =  15
+	damage = 45 // kinda weak.
+	armor_penetration = 15 //the shot itself isn't very armor penetrating, its the fire that eats through the armor and flesh of the subject
+	agony = 10 //causes a very small amount of pain
+	range =  16 //EVEN tho it is a weapon for moderate-high range, i'd be cringe to give it too much of a range 
 
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
-			H.adjust_fire_stacks(5) //i know that this is incredibly fucking OP, just nerf it if you want to, and be aware, this is really fucking OP
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit)) // can melt through motherfucking terminator armor!
+			H.adjust_fire_stacks(60) //EXTREMELY hard to put out
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
 		if(H.isChild())
