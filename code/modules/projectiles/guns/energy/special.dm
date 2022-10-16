@@ -101,8 +101,8 @@ obj/item/gun/energy/staff/focus
 	*/
 
 /obj/item/gun/energy/phosphor
-	name = "Phosphor pistol"
-	desc = "A rare and dangerous weapon, favoured by Magos Explorators and Skitarii Alphas. It has low physical damage, but incredible stun potential. Exactly what they need when exploring new enemies against their will. The flames are a side effect to the process."
+	name = "Phosphor blast pistol"
+	desc = "A dangerous weapon normally used by Tech-Priests and Skitarii Alphas to highlight high value targets by burning them alive. It has extremely high physical damage, with the fire and heat slowly eating through the target's armor until they are dead."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "teslar"
 	item_state = "teslar"
@@ -110,12 +110,12 @@ obj/item/gun/energy/staff/focus
 	force = 8
 	max_shots = 15
 	w_class = ITEM_SIZE_NORMAL
-	one_hand_penalty= 1
+	one_hand_penalty = 0 //no, bad, techpriests are known to use these on mechadendrites
 	burst_delay = 2
 	move_delay = 2
-	fire_delay = 8 // it stun 1 shots and then kills them with the fire, it needs at least a minor delay.
+	fire_delay = 11 // slow firing, this equates roughly to 2.6 seconds or so
 	charge_cost = 300
-	cell_type = /obj/item/cell // wip, can use anything.
+	cell_type = /obj/item/cell // fuck it, can use anything.
 	ammoType = /obj/item/cell
 	projectile_type = 	/obj/item/projectile/energy/phosphor
 	self_recharge = 1
@@ -130,7 +130,9 @@ obj/item/gun/energy/staff/focus
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
 	slot_flags = SLOT_BELT|SLOT_BACK
-	one_hand_penalty = 0
+	one_hand_penalty = 0	
+	cell_type = /obj/item/cell // wip, can use anything.
+	ammoType = /obj/item/cell
 	charge_cost = 20
 	max_shots = 6
 	projectile_type = /obj/item/projectile/gauss
