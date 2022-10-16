@@ -36,6 +36,7 @@
 	/datum/job/qm2,
 	/datum/job/gangboy,
 	/datum/job/janissary,
+	/datum/job/cadet,
 	/datum/job/enforcer,
 	/datum/job/marshal,
 	/datum/job/innkeeper,
