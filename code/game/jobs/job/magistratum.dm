@@ -2,7 +2,7 @@
 
 /datum/job/enforcer
 	title = "Planetary Enforcer"
-	supervisors = "The Arbitrator"
+	supervisors = "The Arbitrator and the Trader"
 	total_positions = 2
 	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
@@ -41,7 +41,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum. For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a proud officer of the Magistratum, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum. Remember, you answer to the Rogue Trader normally, but their word can be overruled by a member of the Adeptus Arbites. For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
 /datum/job/cadet
 	title = "Enforcer Cadet"
