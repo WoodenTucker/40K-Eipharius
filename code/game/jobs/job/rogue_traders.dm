@@ -260,8 +260,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	title = "Xeno Mercenary"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
-	spawn_positions = INFINITY
+	total_positions = 1 
+	spawn_positions = 1
 	supervisors = "The Noble Estate."
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE
