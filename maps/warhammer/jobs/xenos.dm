@@ -12,7 +12,17 @@
 	pda_slot = null
 	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
 
-
+/decl/hierarchy/outfit/job/kroot2
+	uniform = /obj/item/clothing/under/rank/kroot
+	shoes = /obj/item/clothing/shoes/krootfeet
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/storage/box/ifak
+	id = null
+	id_slot = null
+	pda_slot = null
+	backpack_contents = list(/obj/item/ammo_magazine/kroot = 2,)
 //Tau
 /decl/hierarchy/outfit/job/tau
 	uniform = /obj/item/clothing/under/color/black
@@ -57,3 +67,19 @@
 	id_slot = null
 	pda_slot = null
 
+//Eldar
+/decl/hierarchy/outfit/job/corsair
+	uniform = /obj/item/clothing/under/color/black
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/armor/corsair
+	head = /obj/item/clothing/head/helmet/corsair
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	belt = /obj/item/gun/projectile/eldar/spistol
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket =/obj/item/device/flashlight/lantern
+	backpack_contents = list(/obj/item/ammo_magazine/catapult_magazine = 1,/obj/item/ammo_magazine/spistol_magazine = 1)
+	id = null
+	id_slot = null
+	pda_slot = null

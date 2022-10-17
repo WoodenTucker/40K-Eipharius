@@ -1018,7 +1018,15 @@ obj/item/clothing/suit/armor
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-
+/obj/item/clothing/suit/armor/corsair
+  name = "Eldar Corsair Armor"
+  desc = "The dark and shadowy armor of a voidscarred Corsair.."
+  icon_state = "aeldar_armor"
+  item_state = "aeldar_armor"
+  armor = list(melee = 50, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 20)
+  cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+  body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 // Dark Eldar
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"
