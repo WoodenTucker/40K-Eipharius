@@ -99,6 +99,12 @@
 /obj/item/trash/warfare_can/rat
 	icon_state = "ratmeat_empty"
 
+/obj/item/trash/warfare_can/rat/attackby(obj/item/W, mob/user)
+	if(istype(W, /obj/item/reagent_containers/food/snacks/cutlet))
+		new /obj/item/reagent_containers/food/snacks/warfare/rat(src.loc)
+		qdel(W)
+		qdel(src)
+
 /obj/item/trash/warfare_can/nim
 	icon_state = "nim_empty"
 

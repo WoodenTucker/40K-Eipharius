@@ -3418,6 +3418,7 @@
 	icon_state = "ratmeat"
 	open_can_icon = "ratmeat_open"
 	desc = "The closest thing to a casket any hive-scum will see in the Imperium!"
+	sales_price = 5
 	trash = /obj/item/trash/warfare_can/rat
 
 /obj/item/reagent_containers/food/snacks/warfare/nim
