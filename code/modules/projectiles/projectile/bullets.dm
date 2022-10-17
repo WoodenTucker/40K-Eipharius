@@ -569,17 +569,17 @@
 /obj/item/projectile/bullet/rifle/shuriken/catapult
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	icon_state = "ion"
-	damage = 65
+	damage = 25
 	damage_type = BRUTE
-	armor_penetration = 35
+	armor_penetration = 25
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/shuriken/pistol
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	icon_state = "ion"
-	damage = 45
+	damage = 20
 	damage_type = BRUTE
-	armor_penetration = 20
+	armor_penetration = 50
 	penetration_modifier = 2
 /obj/item/projectile/bullet/rifle/galvanic
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -643,7 +643,7 @@
 	armor_penetration = 40
 	embed = 1
 	sharp = 1
-	light_power = 0 
+	light_power = 0
 	light_range = 0
 	penetration_modifier = 1
 	penetrating = 200

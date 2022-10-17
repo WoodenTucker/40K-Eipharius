@@ -298,6 +298,15 @@
   cold_protection = HEAD
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/corsair
+  name = "Eldar Corsair Helmet"
+  desc = "The dark and shadowy helmet of a voidscarred Corsair."
+  icon_state = "aeldar_mask"
+  item_state = "aeldar_mask"
+  armor = list(melee = 45, bullet = 45, laser = 70, energy = 70, bomb = 15, bio = 50, rad = 0) //thermoplas and etc
+  body_parts_covered = HEAD
+  cold_protection = HEAD
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
  // Dark Eldar
 
 /obj/item/clothing/head/helmet/darkeldar
@@ -455,7 +464,7 @@
 	item_state = "doom"
 	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 40, bio = 50, rad = 30)
 	sales_price = 10
-	
+
 /obj/item/clothing/head/helmet/vindicare
 	name = "Vindicare helmet"
 	desc = "The menacing helm of a Vindicare."

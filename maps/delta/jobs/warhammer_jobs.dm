@@ -7,6 +7,7 @@
 	/datum/job/inquisitor,
 	/datum/job/acolyte,
 	/*/datum/job/scion,*/
+	/datum/job/mercenary,
 	/datum/job/ig/commissar,
 	/datum/job/ig/sergeant,
 	/datum/job/ig/guardsman,
@@ -36,6 +37,7 @@
 	/datum/job/qm2,
 	/datum/job/gangboy,
 	/datum/job/janissary,
+	/datum/job/cadet,
 	/datum/job/enforcer,
 	/datum/job/marshal,
 	/datum/job/innkeeper,

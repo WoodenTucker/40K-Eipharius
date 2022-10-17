@@ -257,6 +257,29 @@
 	attack_verb = list("poked")
 	slot_flags = null
 
+/obj/item/melee/baton/powermaul
+	name = "Power Maul"
+	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "thunder_hammer"
+	item_state = "thunder_hammer"
+	color = "#292929"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	str_requirement = 1
+	force = 2
+	stunforce = 0
+	agonyforce = 165
+	status = 1
+	block_chance = 60
+	sales_price = 20
+	weapon_speed_delay = 5
+	sharp = FALSE
+	obj_flags = OBJ_FLAG_CONDUCTIBLE
+	w_class = ITEM_SIZE_HUGE
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	attack_verb = list("beaten", "smashed")
+
 /obj/item/melee/baton/nidstun
 	name = "Venomous Talon"
 	desc = "The talon is coated in a paralytic agonizing poison, best used on single targets for conversion."
