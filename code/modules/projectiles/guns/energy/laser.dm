@@ -126,7 +126,7 @@ obj/item/gun/energy/retro
 	max_shots = 5 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
-
+//NOT READY!
 /obj/item/gun/energy/lasercannon
 	name = "laser cannon"
 	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
@@ -150,7 +150,7 @@ obj/item/gun/energy/retro
 	recharge_time = 10
 	accuracy = 0 //mounted laser cannons don't need any help, thanks
 	one_hand_penalty = 0
-
+//ALSO NOT READY 
 /obj/item/gun/energy/plasmacannon
 	name = "Plasma cannon"
 	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
@@ -311,7 +311,7 @@ obj/item/gun/energy/retro
 	wielded_item_state = "lasgun-wielded"
 	sales_price = 35
 
-	fire_delay = 1 // 0.2 seconds
+	fire_delay = 1 // 0.25 seconds
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
@@ -671,13 +671,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 12 //heavy af fam
 	accuracy = 0.4
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 19 // something something its recharging
+	fire_delay = 19 // something something its cooling itself again
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
 	charge_cost = 1100
 	wielded_item_state = "ionrifle-wielded"
-	sales_price = 109
+	sales_price = 115 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
@@ -697,7 +697,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 800
 	wielded_item_state = "pulse_carbine"
-	sales_price = 63
+	sales_price = 120 //made with adamantium
 
 /obj/item/gun/energy/pulse/plasma/pistol/astarte
 	name = "Astartes plasma pistol"
@@ -716,7 +716,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol/astartes
 	charge_cost = 800
 	wielded_item_state = "pulse_carbine"
-	sales_price = 99
+	sales_price = 140 //made with adamantium+
 
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
@@ -756,7 +756,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 700
 	wielded_item_state = "pulse_pistol"
-	sales_price = 89
+	sales_price = 140 //blessed by the omnissiah and made with adamantium
 
 // NEW GUNS
 
@@ -779,7 +779,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 600
 	wielded_item_state = "pulse_carbine"
-	sales_price = 119
+	sales_price = 300
 	charge_meter = FALSE
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
@@ -800,5 +800,5 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 650
 	wielded_item_state = "pulse_pistol"
-	sales_price = 109
+	sales_price = 300
 	charge_meter = FALSE
