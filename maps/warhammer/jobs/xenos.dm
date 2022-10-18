@@ -79,7 +79,7 @@
 	belt = /obj/item/gun/projectile/eldar/spistol
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =/obj/item/device/flashlight/lantern
-	backpack_contents = list(/obj/item/ammo_magazine/catapult_magazine = 1,/obj/item/ammo_magazine/spistol_magazine = 1)
+	backpack_contents = list(/obj/item/ammo_magazine/catapult_magazine = 1,/obj/item/ammo_magazine/spistol_magazine = 1, /obj/item/device/soulstone = 1)
 	id = null
 	id_slot = null
 	pda_slot = null
