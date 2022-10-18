@@ -552,7 +552,7 @@
 
 
 
-/obj/item/projectile/bullet/rifle/lascannon/melta
+/obj/item/projectile/bullet/pellet/shotgun/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage_type = BURN
