@@ -113,6 +113,18 @@
 	canremove = 0
 	unacidable = 1
 
+/obj/item/clothing/mask/gas/techpriest/skitarius
+	name = "mechanized visage"
+	desc = "Staring into the metallic visage its hard to believe this being is human..."
+	icon_state = "skitshoes"
+	item_state = "skitshoes"
+	flash_protection = FLASH_PROTECTION_MAJOR
+	siemens_coefficient = 0.7 
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
+	flags_inv = HIDEEARS|HIDEEYES
+	canremove = 0
+	unacidable = 1
+
 /obj/item/clothing/mask/gas/techpriest/magos
 	icon_state = "magos"
 	item_state = "magos"
