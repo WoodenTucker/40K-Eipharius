@@ -149,7 +149,7 @@
 
 /obj/item/melee/omnissiah_axe
 	name = "Omnissiah`s axe"
-	desc = "Blessed axe of Magos Dominus, decorated with holy symbols of the Adeptus Mechanicus"
+	desc = "The Blessed Power Axe of any respectable techpriest, these arent very common here... Its decorated with holy symbols of the Adeptus Mechanicus"
 	icon = 'icons/obj/items/oma.dmi'
 	icon_state = "Whistle_InHand_R"
 	item_state = "Whistle_InHand"
