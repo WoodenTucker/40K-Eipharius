@@ -26,6 +26,10 @@
 	max_gas = null
 	minbodytemp = 0
 	var/datum/reagents/udder = null
+	var/food_type = /obj/item/reagent_containers/food/snacks/grown
+	var/is_calf = 0
+	var/has_calf = 0
+	var/young_type = null
 
 /mob/living/simple_animal/hostile/retaliate/goat/New()
 	udder = new(50, src)
@@ -48,19 +52,35 @@
 			src.visible_message("<span class='notice'>[src] calms down.</span>")
 
 		if(stat == CONSCIOUS)
-			if(udder && prob(5))
+			if((prob(3) && has_calf))
+				has_calf++
+			if(has_calf > 10)
+				has_calf = 0
+				visible_message("<span class='notice'>[src] gives birth to a calf.</span>")
+				new young_type(get_turf(src))
+
+			if(is_calf)
+				if((prob(3)))
+					is_calf = 0
+					udder = new()
+					if (name == "grox calf")
+						name = "grox"
+					else
+						name = "goat"
+					visible_message("<span class='notice'>[src] has fully grown.</span>")
+			else
 				udder.add_reagent(/datum/reagent/drink/milk, rand(5, 10))
 
 		if(locate(/obj/effect/vine) in loc)
 			var/obj/effect/vine/SV = locate() in loc
 			if(prob(60))
-				src.visible_message("<span class='notice'>\The [src] eats the plants.</span>")
+				src.visible_message("<span class='notice'>[src] eats the plants.</span>")
 				SV.die_off(1)
 				if(locate(/obj/machinery/portable_atmospherics/hydroponics/soil/invisible) in loc)
 					var/obj/machinery/portable_atmospherics/hydroponics/soil/invisible/SP = locate() in loc
 					qdel(SP)
 			else if(prob(20))
-				src.visible_message("<span class='notice'>\The [src] chews on the plants.</span>")
+				src.visible_message("<span class='notice'>[src] chews on the plants.</span>")
 			return
 
 		if(!pulledby)
@@ -84,9 +104,19 @@
 			to_chat(user, "<span class='warning'>\The [O] is full.</span>")
 		if(!transfered)
 			to_chat(user, "<span class='warning'>The udder is dry. Wait a bit longer...</span>")
+	else if(stat == CONSCIOUS && istype(O, food_type))
+		if(is_calf)
+			visible_message("<span class='notice'>[src] adorably chews the [O].</span>")
+			qdel(O)
+		if(!has_calf && !is_calf)
+			has_calf = 1
+			visible_message("<span class='notice'>[src] hungrily consumes the [O].</span>")
+			qdel(O)
+		else
+			visible_message("<span class='notice'>[src] absently munches the [O].</span>")
+			qdel(O)
 	else
 		..()
-
 
 /mob/living/simple_animal/hostile/retaliate/goat/grox
 	name = "grox"
@@ -115,7 +145,16 @@
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
+	young_type = /mob/living/simple_animal/hostile/retaliate/goat/grox/calf
 
+/mob/living/simple_animal/hostile/retaliate/goat/grox/calf
+	name = "grox calf"
+	is_calf = 1
+
+/mob/living/simple_animal/hostile/retaliate/goat/grox/calf/Initialize()
+	. = ..()
+	mob_size = 15
+	update_icon()
 
 /mob/living/simple_animal/hostile/retaliate/goat/grox/feral
 	name = "feral grox"
@@ -487,6 +526,3 @@ var/global/chicken_count = 0
 		else
 			visible_message("The servant must be clothed first!")
 			return
-
-
-
