@@ -285,20 +285,20 @@
 	item_state = "powersword"
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 42 //should be enough to cut off most limbs
+	active_force = 50 //should be enough to cut off most limbs
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
-	force = 37 //its just a adamantium sword when offline
+	force = 40 //its just a adamantium sword when offline
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
 	block_chance = 15
 	sales_price = 90
-	weapon_speed_delay = 7
+	weapon_speed_delay = 14 //2 seconds
 	edge = 1
-	sharp = TRUE
+	sharp = 1
 	w_class = ITEM_SIZE_HUGE
-	atom_flags = ATOM_FLAG_NO_BLOOD
+	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut", "slashed", "sliced")
@@ -323,9 +323,9 @@
 	item_state = "powersword" // There is no on-mob for powersword we must use this. It looks alright.
 	icon_state = "powersword"
 	wielded_icon = "powersword-w"
-	active_force = 45 //should be enough to cut off most limbs
+	active_force = 55 //should be enough to cut off most limbs
 	active_throwforce = 20
-	force = 41 //its just a adamantium sword when offline
+	force = 45 //its just a adamantium sword when offline
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
@@ -334,7 +334,7 @@
 	block_chance = 30
 	sales_price = 120
 	w_class = ITEM_SIZE_HUGE
-	atom_flags = ATOM_FLAG_NO_BLOOD
+	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
@@ -347,7 +347,7 @@
 	icon_state = "powerclaw-alt_mag"
 	item_state = "klevec"
 	wielded_icon = "klevec"
-	active_force = 38 //This should be enough to cut off most limbs in a few hits
+	active_force = 45 //This should be enough to cut off most limbs in a few hits
 	active_throwforce = 0
 	force = 35
 	throwforce = 1
@@ -355,13 +355,13 @@
 	throw_range = 1
 	weapon_speed_delay = 7
 	edge = 1
-	sharp = TRUE
-	block_chance = 11 //not the best block chance, but, you can have two of them!
+	sharp = 1
+	block_chance = 40 //not the best block chance, but, you can have two of them!
 	sales_price = 80
 	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	w_class = ITEM_SIZE_HUGE
-	atom_flags = ATOM_FLAG_NO_BLOOD
+	w_class = ITEM_SIZE_SMALL //quick attacks
+	atom_flags = 0
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
 
