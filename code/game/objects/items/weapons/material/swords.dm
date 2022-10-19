@@ -432,7 +432,7 @@
 	item_state = "inqchainsword"
 	wielded_icon = "inqchainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 16 /bigga is betta!
+	str_requirement = 16 //bigga is betta!
 	force_wielded = 55 //bit stronger.
 	force = 45
 	armor_penetration = 9
