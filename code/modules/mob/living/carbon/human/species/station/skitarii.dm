@@ -106,8 +106,8 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(19,22),rand(15,17),rand(15,17),14) //gives stats str, dext, end, int
-			src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.add_stats(rand(17,20),rand(15,17),rand(18,19),14) //gives stats str, dext, end, int
+			src.add_skills(rand(9,10),rand(11,12),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
@@ -136,8 +136,8 @@
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(17,20),rand(16,18),rand(14,16),14) //gives stats str, dext, end, int //Melee focused guys.
-			src.add_skills(rand(10,11),rand(8,9),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused.
+			src.add_stats(rand(19,20),rand(18,19),rand(18,19),14) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
+			src.add_skills(rand(11,12),rand(8,10),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused, but ruststalkers are still trained in using galvanic rifles.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
@@ -175,8 +175,8 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine/radpistol, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(20,22),rand(16,17),rand(16,18),14) //gives stats str, dext, end, int //Durable as hell.
-			src.add_skills(rand(11,12),rand(12,14),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.add_stats(rand(14,20),rand(14,16),rand(20,30),14) //gives stats str, dext, end, int //incredibly mutated and weakened, yet, he endures.
+			src.add_skills(rand(6,10),rand(10,11),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
