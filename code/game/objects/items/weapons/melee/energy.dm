@@ -345,8 +345,8 @@
 	name = "Power Claws"
 	desc = "A gauntlet with 4 clawed fingers with a void shield generator inside of it, the voidshield makes a concentrated power field around each of the 4 claws, making them able to cut through almost anything, this one was integrated to the user's armor and would need a series of ajustments to be safely removed."
 	icon_state = "powerclaw-alt_mag"
-	item_state = "klevec"
-	wielded_icon = "klevec"
+	item_state = "none"
+	wielded_icon = "none"
 	active_force = 45 //This should be enough to cut off most limbs in a few hits
 	active_throwforce = 0
 	force = 35
