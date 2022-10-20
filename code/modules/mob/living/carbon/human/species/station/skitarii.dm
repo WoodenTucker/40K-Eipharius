@@ -3,7 +3,7 @@
 	name_plural = "Skitarii"
 	blurb = "The Mechanicus' loyal soldiers."
 	total_health = 400 //made to be recovered even if they get severely injured
-	min_age = 18
+	min_age = 1 //vatgrowns, heh?
 	max_age = 80
 	icobase = 'icons/mob/human_races/r_human.dmi'
 	deform = 'icons/mob/human_races/r_def_human.dmi'
@@ -32,7 +32,7 @@
 		H.f_style = "Shaved"
 	if(H.h_style)//SHAVED
 		H.h_style = "Bald"
-	to_chat(H, "<big><span class='warning'>You are a servant of the Adeptus Mechanicus! Don't forget it!</span></big>")
+	to_chat(H, "<big><span class='warning'>You answer mainly to the Omnissiah, secondly to the Tech priests and the Powerful Magi, thirdly to your own sense of morality, do your best to follow them in that order! </span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 
@@ -136,8 +136,8 @@
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(19,20),rand(18,19),rand(18,19),14) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
-			src.add_skills(rand(11,12),rand(8,10),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused, but ruststalkers are still trained in using galvanic rifles.
+			src.add_stats(rand(19,21),rand(18,19),rand(18,19),14) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
+			src.add_skills(rand(11,12),rand(6,10),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused, but ruststalkers are still trained in using galvanic rifles.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
@@ -176,7 +176,7 @@
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 			src.add_stats(rand(14,20),rand(14,16),rand(20,30),14) //gives stats str, dext, end, int //incredibly mutated and weakened, yet, he endures.
-			src.add_skills(rand(6,10),rand(10,11),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.add_skills(rand(6,10),rand(10,11),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //weak in most shit cause he gets the OP gun.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
