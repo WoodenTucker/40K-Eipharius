@@ -122,19 +122,16 @@ obj/item/gun/energy/staff/focus
 	self_recharge = 1
 
 //MODIFIED gauss rifle cause of the sprite, that way no one gets confused.
-
 /obj/item/gun/energy/gauss
-	name = "Modified Necron Gauss Rifle"
+	name = "Gauss Rifle"
 	desc = "A deadly weapon wielded by Necron Warriors"
 	icon_state = "ns"
 	item_state = "ns"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
 	w_class = ITEM_SIZE_NORMAL
-	cell_type = /obj/item/cell // any cell works! oh also, DO NOT REMOVE THESE TWO LINES OR ELSE THE GUN WILL REFUSE TO ACCEPT ANY POWERCELLS!
-	ammoType = /obj/item/cell
 	force = 5
 	slot_flags = SLOT_BELT|SLOT_BACK
-	one_hand_penalty = 90 
+	one_hand_penalty = 0
 	charge_cost = 20
 	max_shots = 6
 	projectile_type = /obj/item/projectile/gauss
