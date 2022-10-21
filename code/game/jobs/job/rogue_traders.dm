@@ -289,8 +289,6 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 Mercenary System
 */
 
-//yeah this might be the most retarded way of doing it but it works - plz no bully Matt
-
 /mob/living/carbon/human/proc/mercenaryclass()
 	set name = "Select your class"
 	set category = "Mercenary"
@@ -301,7 +299,6 @@ Mercenary System
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
-	src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 
 	var/mob/living/carbon/human/U = src
 	var/fates = list("Kroot Shaper", "Ork Freeboota", "Eldar Corsair")
@@ -315,14 +312,17 @@ Mercenary System
 			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.")
+			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
 		if("Ork Freeboota")
 			var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
+			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
 		if("Eldar Corsair")
-			var/mob/living/carbon/human/eldar/new_character = new(usr.loc) // da mob
+			var/mob/living/carbon/human/eldar/corsair/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
+			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
