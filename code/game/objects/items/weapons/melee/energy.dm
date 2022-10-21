@@ -97,12 +97,13 @@
 	throwforce = 10
 	throw_speed = 1
 	throw_range = 5
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL //ITS A KNIFE
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 4)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut")
 	sharp = 1
+	edge = 1 //its a fucking powerknife essentially
 
 /obj/item/melee/energy/tau/activate(mob/living/user)
 	..()
