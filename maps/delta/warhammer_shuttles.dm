@@ -75,6 +75,30 @@
 	name = "Tau Ship Console"
 	shuttle_tag = "tau1"
 
+// toaster shuttle
+/datum/shuttle/autodock/ferry/mech
+	name = "mech1"
+	warmup_time = 10
+	waypoint_station = "mech_start"
+	waypoint_offsite = "mech_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/mech1
+
+/obj/effect/shuttle_landmark/ferry/mech_end
+	name = "Mechanicus Landing Pad"
+	landmark_tag = "tau_end"
+	base_area = /area/cadiaoutpost/oa/shuttle/mech2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/tau_start
+	name = "Soul of Reason hanger"
+	landmark_tag = "mech_start"
+	base_area = /area/cadiaoutpost/oa/shuttle/mech2
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/mech
+	name = "Mechanicus Ship Console"
+	shuttle_tag = "mech1"
+
 
 
 
