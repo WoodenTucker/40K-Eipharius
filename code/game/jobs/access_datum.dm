@@ -625,6 +625,11 @@
 	id = access_mining3
 	desc = "Mining 3 Access"
 
+/var/const/access_inquisition_fancy = 302
+/datum/access/access_inquisition_fancy
+	id = access_inquisition_fancy
+	desc = "inquisition shuttle/fancy parts of ship access"
+
 /var/const/access_monastary = 333
 /datum/access/monastary
 	id = access_monastary

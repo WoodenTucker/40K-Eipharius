@@ -670,8 +670,8 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/key/grand/inq
 	name = "Inquisition Key"
-	desc = "A key to the Inquisitorial Black Ship, Simiel"
-	access = list(access_inquisition)
+	desc = "A key to the Inquisitorial Black Ship, Simiel. This one also has access to the inquisitorial shuttle and other exotic parts of the ship"
+	access = list(access_inquisition, access_inquisition_fancy)
 
 /obj/item/card/id/key/grand/noble
 	name = "Noble Key"
