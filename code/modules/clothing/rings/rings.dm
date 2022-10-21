@@ -158,7 +158,43 @@
 /obj/item/gun/energy/las/laspistol/digit/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+	
+/obj/item/clothing/ring/PowerBlade
+	name = "Ring"
+	desc = "A silver ring with a cutten emerald on it."
+	icon_state = "seal-secgen"
+	var/can_toggle = 1
 
+/obj/item/clothing/ring/PowerBlade/verb/toggleblade()
+	set name = "Prepare Digital Blade"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"Your ring suddenly extends a small pointed iron stick, which suddenly begins glowing in blazing green energy!")
+		usr.put_in_hands(new /obj/item/material/sword/PowerBlade(usr))
+		
+/obj/item/material/sword/PowerBlade
+	name = "Power Blade"
+	desc = "A weird glowing stick of green energy!"
+	icon = 'icons/obj/weapons/melee/energy.dmi'
+	icon_state = "blade"
+	force = 40 //bit weaker than normal power sword
+	weapon_speed_delay = 8 //2 secs or so
+//	armor_penetration = 10 //add this if you want it to penetrate armor, ya nerds!
+	block_chance = 35 //good at blocking
+	edge = 0 //i don't want this to end badly
+	w_class = ITEM_SIZE_HUGE slow attacking
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
+// omnissiah, delete this mfer!
+/obj/item/material/sword/PowerBlade/dropped() 
+	..()
+	spawn(1) if(src) qdel(src)
 
 
 
