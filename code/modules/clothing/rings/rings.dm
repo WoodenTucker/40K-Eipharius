@@ -187,7 +187,7 @@
 //	armor_penetration = 10 //add this if you want it to penetrate armor, ya nerds!
 	block_chance = 35 //good at blocking
 	edge = 0 //i don't want this to end badly
-	w_class = ITEM_SIZE_HUGE slow attacking
+	w_class = ITEM_SIZE_HUGE //slow attacking
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 
