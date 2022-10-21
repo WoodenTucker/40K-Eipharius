@@ -80,6 +80,7 @@
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =/obj/item/device/flashlight/lantern
 	backpack_contents = list(/obj/item/ammo_magazine/catapult_magazine = 1,/obj/item/ammo_magazine/spistol_magazine = 1, /obj/item/device/soulstone = 1)
+	suit_store = /obj/item/gun/projectile/eldar/scatapult
 	id = null
 	id_slot = null
 	pda_slot = null
