@@ -552,34 +552,42 @@
 
 
 
-/obj/item/projectile/bullet/rifle/lascannon/melta
+/obj/item/projectile/bullet/pellet/shotgun/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 220
 	damage_type = BURN
 	penetration_modifier = 2
+	armor_penetration = 35//high penetration
+	damage = 60 //believe me, this is kinda of balanced.
+	pellets = 12
+	range_step = 2 //not sure what these two mean, but lets go with it!
+	spread_step = 4 
+	range = 6 //short range
+
+
+
+
 
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 290
-	damage_type = BURN
-	penetration_modifier = 2
+	damage = 20 //weaker than melta caus its a pistol
+
 
 /obj/item/projectile/bullet/rifle/shuriken/catapult
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	icon_state = "ion"
-	damage = 65
+	damage = 25
 	damage_type = BRUTE
-	armor_penetration = 35
+	armor_penetration = 25
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/shuriken/pistol
 	fire_sound = 'sound/weapons/gunshot/needler.ogg'
 	icon_state = "ion"
-	damage = 45
+	damage = 20
 	damage_type = BRUTE
-	armor_penetration = 20
+	armor_penetration = 50
 	penetration_modifier = 2
 /obj/item/projectile/bullet/rifle/galvanic
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -643,7 +651,7 @@
 	armor_penetration = 40
 	embed = 1
 	sharp = 1
-	light_power = 0 
+	light_power = 0
 	light_range = 0
 	penetration_modifier = 1
 	penetrating = 200

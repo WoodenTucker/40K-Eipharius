@@ -511,7 +511,7 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer/arbitrator // Don't use unless for events.
+/obj/item/clothing/suit/armor/enforcer2/arbitrator // Don't use unless for events.
 	name = "Patrol Armour - Arbitrator"
 	desc = "The flak armour worn by a Magistratum Arbitrator. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	armor = list(melee = 48, bullet = 55, laser = 60, energy = 35, bomb = 60, bio = 30, rad = 30)
@@ -1018,7 +1018,15 @@ obj/item/clothing/suit/armor
   cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
   min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
   body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-
+/obj/item/clothing/suit/armor/corsair
+  name = "Eldar Corsair Armor"
+  desc = "The dark and shadowy armor of a voidscarred Corsair.."
+  icon_state = "aeldar_armor"
+  item_state = "aeldar_armor"
+  armor = list(melee = 50, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 100, rad = 20)
+  cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET| ARMS | HANDS
+  min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+  body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 // Dark Eldar
 /obj/item/clothing/suit/armor/deldar
   name = "Ghost Plate Armor"

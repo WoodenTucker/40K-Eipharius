@@ -187,6 +187,7 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
+	armor = list(melee = 80, bullet = 45, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
 
 /obj/item/clothing/head/rusthood
 	name = "ruststalker hood"

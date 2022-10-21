@@ -287,7 +287,7 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 
-//this is the PHOSPHOR energy gun, its not currently being used by anything other than explorator, which isn't really done yet.
+//this is the PHOSPHOR energy gun, its really fucking OP in lore because it burns through almost anything until they are dead, im not sure why the pain is so huge tho.
 /obj/item/projectile/energy/phosphor
 	name = "phosphor bolt"
 	icon_state = "pulse1"
@@ -300,7 +300,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
 		if(!istype(H.wear_suit, /obj/item/clothing/suit/armor/seolsuit))
-			H.adjust_fire_stacks(5) //i know that this is incredibly fucking OP, just nerf it if you want to, and be aware, this is really fucking OP
+			H.adjust_fire_stacks(5) //i know this aint lore accurate, but if you want to buff this, nerf pain.
 			H.IgniteMob()
 		new /obj/flamer_fire(H.loc, 120, 500, "red", 1)
 		if(H.isChild())

@@ -1,5 +1,5 @@
 
-/*/obj/item/gun/projectile/automatic/flamer/handflamer 
+/*/obj/item/gun/projectile/automatic/flamer/handflamer
 	name = "Mk.1 hand flamer"
 	desc = "An incredibly small hand-held flamethrower often used by the inquisition and the sisters."
 	icon_state = "flamer"
@@ -427,6 +427,17 @@
 
 /obj/item/gun/projectile/bolter_pistol/inquis
 	name = "Drusian Pattern Service Bolt Pistol"
+	icon_state = "bpistol"
+	item_state = "bpistol"
+	force = 15
+	caliber = ".75"
+	accuracy = -0.5 //VERY well maintained--maintened? eh, you get what i mean!
+	fire_delay = 1.4
+	move_delay = 1.3
+	sales_price = 58
+
+/obj/item/gun/projectile/bolter_pistol/arbite
+	name = "Ceres Pattern Service Bolt Pistol"
 	icon_state = "bpistol"
 	item_state = "bpistol"
 	force = 15

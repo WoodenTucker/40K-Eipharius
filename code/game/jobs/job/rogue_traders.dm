@@ -256,3 +256,73 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			src.say("Welcome to my service.")
 		else
 			return
+/datum/job/mercenary
+	title = "Xeno Mercenary"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MIN //these boys are gross
+	total_positions = 1 
+	spawn_positions = 1
+	supervisors = "The Noble Estate."
+	selection_color = "#848484"
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	cultist_chance = 0
+
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.assign_random_quirk()
+		H.witchblood()
+		H.stat = UNCONSCIOUS
+		H.sleeping = 500
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Xeno Mercenary hired by the Noble. Listen to their every command. In the absence of a Noble, the Janissary is to rule in their abscense.  <br> <span class = 'badmood'> + Go to your Mercenary tab and select your fate. + </span> </font></b></span>")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/mercenaryclass,
+		)
+
+
+/*
+Mercenary System
+*/
+
+/mob/living/carbon/human/proc/mercenaryclass()
+	set name = "Select your class"
+	set category = "Mercenary"
+	set desc = "Choose your species and job."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	var/fates = list("Kroot Shaper", "Ork Freeboota", "Eldar Corsair")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+		if("Kroot Shaper")
+			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
+			new_character.key = usr.key //puts ghost in body with new key
+			visible_message("You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.")
+			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
+			qdel(src)
+		if("Ork Freeboota")
+			var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
+			new_character.key = usr.key //puts ghost in body with new key
+			visible_message("You wake up after a long flight to find yourself in Imperial space.")
+			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
+			qdel(src)
+		if("Eldar Corsair")
+			var/mob/living/carbon/human/eldar/corsair/new_character = new(usr.loc) // da mob
+			new_character.key = usr.key //puts ghost in body with new key
+			visible_message("You wake up after a long flight to find yourself in Imperial space.")
+			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
+			qdel(src)

@@ -174,7 +174,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 89
-	armor_penetration = 10
+	armor_penetration = 25 //more penetration than krieger
 	accuracy = 2
 
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
@@ -183,14 +183,14 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 130
-	armor_penetration = 25
+	armor_penetration = 50 //more penetration than hotshot
 
-/obj/item/projectile/energy/las/lasgun/hotshot
+/obj/item/projectile/energy/las/lasgun/hotshot //RYZA PATTERN HOTSHOT LASGUN
 	name = "lasbolt"
 	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 64
+	damage = 80 //same damage as krieger but with penetration
 	armor_penetration = 35
 
 /obj/item/projectile/energy/pulse/pulserifle
@@ -199,7 +199,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 51
-	armor_penetration = 35
+	armor_penetration = 25 //this is automatic and almost infinite, so, yeah, weak penetration even tho its plasma weaponry
 
 	/obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
@@ -207,7 +207,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 44
-	armor_penetration = 25
+	armor_penetration = 25 //this is automatic and almost infinite, so, yeah, weak penetration even tho its plasma weaponry
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
@@ -235,7 +235,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 125
-	armor_penetration = 30
+	armor_penetration = 35 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
 
 /obj/item/projectile/energy/pulse/plasmapistol
 	name = "plasma round"
@@ -243,7 +243,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 95
-	armor_penetration = 30
+	armor_penetration = 35
 
 	/obj/item/projectile/energy/pulse/plasmapistol/astartes
 	name = "plasma round"
@@ -251,4 +251,4 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 105
-	armor_penetration = 30
+	armor_penetration = 35 

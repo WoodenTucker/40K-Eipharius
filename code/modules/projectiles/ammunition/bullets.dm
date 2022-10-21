@@ -374,7 +374,7 @@
 	icon_state = "null"
 	spent_icon = "null"
 	caliber = "melta"
-	projectile_type = /obj/item/projectile/bullet/rifle/lascannon/melta
+	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/melta
 
 /obj/item/ammo_casing/shuriken
 	name = "shuriken casings"
