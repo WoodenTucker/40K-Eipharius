@@ -3,7 +3,7 @@
 	name_plural = "Skitarii"
 	blurb = "The Mechanicus' loyal soldiers."
 	total_health = 400 //made to be recovered even if they get severely injured
-	min_age = 18
+	min_age = 1 //vatgrowns, heh?
 	max_age = 80
 	icobase = 'icons/mob/human_races/r_human.dmi'
 	deform = 'icons/mob/human_races/r_def_human.dmi'
@@ -32,7 +32,7 @@
 		H.f_style = "Shaved"
 	if(H.h_style)//SHAVED
 		H.h_style = "Bald"
-	to_chat(H, "<big><span class='warning'>You are a servant of the Adeptus Mechanicus! Don't forget it!</span></big>")
+	to_chat(H, "<big><span class='warning'>You answer mainly to the Omnissiah, secondly to the Tech priests and the Powerful Magi, thirdly to your own sense of morality, do your best to follow them in that order! </span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 
@@ -95,7 +95,8 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/skitarii, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
@@ -105,8 +106,8 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(19,22),rand(15,17),rand(15,17),14) //gives stats str, dext, end, int
-			src.add_skills(rand(9,11),rand(9,11),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.add_stats(rand(17,20),rand(15,17),rand(18,19),14) //gives stats str, dext, end, int
+			src.add_skills(rand(9,10),rand(11,12),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
@@ -132,11 +133,11 @@
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/ruststalker, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/ruststalker, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(17,20),rand(16,18),rand(14,16),14) //gives stats str, dext, end, int //Melee focused guys.
-			src.add_skills(rand(10,11),rand(8,9),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused.
+			src.add_stats(rand(19,21),rand(18,19),rand(18,19),14) //gives stats str, dext, end, int //stronger and faster than most skitarii, also more endurant than normal humans.
+			src.add_skills(rand(11,12),rand(6,10),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //Melee focused, but ruststalkers are still trained in using galvanic rifles.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
@@ -161,9 +162,10 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vanguard, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/techpriest, slot_back)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes/vanguard, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/radcarbine, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/radcarbine/radpistol, slot_belt)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/clothing/head/vanhelm, slot_head)
@@ -173,8 +175,8 @@
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/radcarbine/radpistol, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
-			src.add_stats(rand(20,22),rand(16,17),rand(16,18),14) //gives stats str, dext, end, int //Durable as hell.
-			src.add_skills(rand(11,12),rand(12,14),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.add_stats(rand(14,20),rand(14,16),rand(20,30),14) //gives stats str, dext, end, int //incredibly mutated and weakened, yet, he endures.
+			src.add_skills(rand(6,10),rand(10,11),rand(5,6),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery //weak in most shit cause he gets the OP gun.
 			src.set_trait(new/datum/trait/death_tolerant())
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language

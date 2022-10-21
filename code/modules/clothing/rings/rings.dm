@@ -102,3 +102,116 @@
 	to_chat(user, "<span class='notice'>You claim the [src] as your own!</span>")
 	name = "[user]'s signet ring"
 	desc = "A signet ring belonging to [user], for when you're too sophisticated to sign letters."
+
+
+
+//digital weaponry!
+
+
+
+/obj/item/clothing/ring/HotshotDigital
+	name = "Ring"
+	desc = "A golden ring with a cutten ruby on it!."
+	icon_state = "mariner-grad"
+	var/can_toggle = 1
+
+/obj/item/clothing/ring/HotshotDigital/verb/togglehotshot()
+	set name = "Prepare Digital Weapon"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"Your ring suddenly gets open and prepares to open fire on the enemy!")
+		usr.put_in_hands(new /obj/item/gun/energy/las/laspistol/digit(usr))
+
+
+
+
+
+/obj/item/gun/energy/las/laspistol/digit
+	name = "Digital Weapon"
+	desc = "Huh, interesting, a very small laspistol appears from the ring, ready to fire at your orders, commander."
+	icon_state = "laspistol"
+	item_state = "laspistol"
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	w_class = ITEM_SIZE_NORMAL
+	force = 0
+	accuracy = -0.5
+	move_delay = 0
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
+	charge_cost = 0
+	armor_penetration = 0
+	cell_type = /obj/item/cell/device
+	ammoType = /obj/item/cell/device
+	fire_delay = 60 //about 15 seconds
+	sales_price = 0
+	wielded_item_state = "none" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+	item_flags = ITEM_FLAG_NODROP
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=60, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
+		)
+/obj/item/gun/energy/las/laspistol/digit/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+	
+/obj/item/clothing/ring/PowerBlade
+	name = "Ring"
+	desc = "A silver ring with a cutten emerald on it."
+	icon_state = "seal-secgen"
+	var/can_toggle = 1
+
+/obj/item/clothing/ring/PowerBlade/verb/toggleblade()
+	set name = "Prepare Digital Blade"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"Your ring suddenly extends a small pointed iron stick, which suddenly begins glowing in blazing green energy!")
+		usr.put_in_hands(new /obj/item/material/sword/PowerBlade(usr))
+		
+/obj/item/material/sword/PowerBlade
+	name = "Power Blade"
+	desc = "A weird glowing stick of green energy!"
+	icon = 'icons/obj/weapons/melee/energy.dmi'
+	icon_state = "blade"
+	force = 40 //bit weaker than normal power sword
+	weapon_speed_delay = 8 //2 secs or so
+//	armor_penetration = 10 //add this if you want it to penetrate armor, ya nerds!
+	block_chance = 35 //good at blocking
+	edge = 0 //i don't want this to end badly
+	w_class = ITEM_SIZE_HUGE //slow attacking
+	atom_flags = ATOM_FLAG_NO_BLOOD
+	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+
+// omnissiah, delete this mfer!
+/obj/item/material/sword/PowerBlade/dropped() 
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+
+/obj/item/clothing/ring/Lollipop
+	name = "Ring"
+	desc = "A golden ring with a cutten ruby on it!."
+	icon_state = "mariner-grad"
+	var/can_toggle = 1
+
+/obj/item/clothing/ring/Lollipop/verb/togglelollipop()
+	set name = "Prepare Digital Lollipop"
+	set category = "Tools"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"Your ring suddenly gets open and prepares to open fire on the enemy-- then, suddenly, a british lollipop jumps out of the ring")
+		usr.put_in_hands(new /obj/item/reagent_containers/food/snacks/variable/sucker(usr))

@@ -155,11 +155,18 @@ Template:
 	name = "Enforcer"
 /obj/effect/landmark/start/ig
 	name = "Imperial Guardsman"
+/obj/effect/landmark/start/sharpshooter
+	name = "Imperial Guard Specialist"
+
 
 //Engineering//
 
 /obj/effect/landmark/start/engineer
 	name = "Tech Priest Enginseer"
+
+/obj/effect/landmark/start/explorer
+	name = "Magos Explorator"
+
 
 //Supply//
 
@@ -403,7 +410,7 @@ Template:
 				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 2)
 
 /obj/random/loot/lasgunammo
-	name = "Lasgun Ammo" 
+	name = "Lasgun Ammo"
 	desc = "This is an ammo spawner that spawns ammo for lasguns."
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
@@ -480,7 +487,7 @@ Template:
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 4,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory = 1,
 				/obj/item/gun/projectile/shotgun/pump/shitty = 4,
-				/obj/item/gun/projectile/automatic/stubber = 3, 
+				/obj/item/gun/projectile/automatic/stubber = 3,
 				/obj/item/gun/projectile/automatic/stubber/villiers = 2,
 				/obj/item/gun/projectile/automatic/stubber/cognis = 1,
 				/obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle = 1,

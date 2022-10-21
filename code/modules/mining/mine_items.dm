@@ -149,6 +149,8 @@
 	swing_sound = "shovel_swing"
 	hitsound = "shovel_hit"
 	drop_sound = 'sound/items/shovel_drop.ogg'
+	sharp = TRUE
+	edge = FALSE
 
 /obj/item/shovel/spade
 	name = "spade"

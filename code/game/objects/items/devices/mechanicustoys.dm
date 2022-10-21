@@ -39,7 +39,7 @@
 	else if (!(istype(O, /obj/item/gun/energy/las/lasgun)))
 		to_chat(user, "<span class='warning'>[O] cannot be upgraded!</span>")
 		return 1
-	else if(prob(15))
+	else if(prob(25))
 		qdel(O)
 		new /obj/item/gun/energy/las/lasgun/tinkered (get_turf(src))
 		playsound(loc, 'sound/items/Ratchet.ogg', 70, 1)
@@ -74,6 +74,13 @@
 		visible_message("<span class='notice'>[C] is gently lathered in the holy oils of the Adeptus Mechanicus by [user]. The Machine Spirits will surely smile upon them now!</span>")
 	..()
 
+/obj/item/device/holyoils/attack_self(usr)
+	to_chat(usr,"<span class='warning'>You feel more nubile as you breathe the holy incenses in! Praise the Omnissiah!</span>")
+
+/obj/item/device/holyoils/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
 /obj/item/device/lube
 	name = "Ingot Lube"
 	desc = "Lubricant to properly deal with ingot crafting as a finisher."
@@ -81,12 +88,6 @@
 	icon_state = "lube"
 	item_state = "lube"
 
-/obj/item/device/holyoils/attack_self(usr)
-	to_chat(usr,"<span class='warning'>You feel more nubile as you breathe the holy incenses in! Praise the Omnissiah!</span>")
-
-/obj/item/device/holyoils/dropped() //since nodrop is fucked this will deal with it for now.
-	..()
-	spawn(1) if(src) qdel(src)
 
 /obj/item/device/autochisel
 	name = "Auto-Chisel"
@@ -133,7 +134,11 @@
 		visible_message("<span class='notice'>[C] is gingerly warmed with the laser cutter by [user]. Tingly!</span>")
 	..()
 
-/obj/item/device/hammer
+/obj/item/device/lasercutter/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/device/hammer //lasercutter
 	name = "Hammer"
 	desc = "For any loyal citizen of the Imperium's ingot shaping."
 	icon = 'icons/obj/items/hammer.dmi'
@@ -143,13 +148,11 @@
 	w_class = ITEM_SIZE_HUGE
 	var/constructionsystem = 0
 
-/obj/item/device/lasercutter/dropped() //since nodrop is fucked this will deal with it for now.
-	..()
-	spawn(1) if(src) qdel(src)
+
 
 /obj/item/melee/omnissiah_axe
 	name = "Omnissiah`s axe"
-	desc = "Blessed axe of Magos Dominus, decorated with holy symbols of the Adeptus Mechanicus"
+	desc = "The Blessed Power Axe of any respectable techpriest, these arent very common here... Its decorated with holy symbols of the Adeptus Mechanicus"
 	icon = 'icons/obj/items/oma.dmi'
 	icon_state = "Whistle_InHand_R"
 	item_state = "Whistle_InHand"
@@ -159,7 +162,7 @@
 	sharp = TRUE
 	edge = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_SMALL //makes it actually fast and pretty usable, magi ALWAYS carry it around, no reason for it to weight anything.
 	weapon_speed_delay = 7
 	sales_price = 0
 

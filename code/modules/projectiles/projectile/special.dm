@@ -311,13 +311,13 @@
 	name = "Gauss "
 	icon_state = "emitter"
 	fire_sound = 'sound/effects/meteorimpact.ogg' //Bass-y sound of firing
-	damage = 80 //no, just no.
+	damage = 250
 	damage_type = BURN
-	agony = 15 //no, bad
+	agony = 200
 	check_armour = "energy"
 	speed = 0.1
 	incinerate = 1
 	dispersion = 0.0
 	animate_movement = 1
 	penetrating = 10
-	armor_penetration = 100
+	armor_penetration = 200
