@@ -29,7 +29,7 @@ var/datum/antagonist/revolutionary/revs
 	faction = "revolutionary"
 
 	blacklisted_jobs = list(/datum/job/ai, /datum/job/cyborg)
-	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/ig/commissar, /datum/job/magos, /datum/job/cmo, /datum/job/inquisitor, /datum/job/acolyte)
+	restricted_jobs = list(/datum/job/captain, /datum/job/hop, /datum/job/inquisitor, /datum/job/acolyte)
 	protected_jobs = list(null)
 
 

@@ -322,13 +322,13 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/medical/paramedic
 	job_access_type = /datum/job/ig/medicae
-
+/*
 /obj/item/card/id/medical/head
 	name = "identification card"
 	desc = "A card which represents care and compassion."
 	icon_state = "medGold"
 	job_access_type = /datum/job/cmo
-
+*/
 /obj/item/card/id/security
 	name = "identification card"
 	desc = "A card issued to security staff."
@@ -402,10 +402,10 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/civilian/chef
 	job_access_type = /datum/job/chef
-
+/*
 /obj/item/card/id/civilian/botanist
 	job_access_type = /datum/job/hydro
-
+*/
 /obj/item/card/id/civilian/janitor
 	job_access_type = /datum/job/janitor
 
@@ -670,8 +670,8 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/key/grand/inq
 	name = "Inquisition Key"
-	desc = "A key to the Inquisitorial Black Ship, Simiel"
-	access = list(access_inquisition)
+	desc = "A key to the Inquisitorial Black Ship, Simiel. This one also has access to the inquisitorial shuttle and other exotic parts of the ship"
+	access = list(access_inquisition, access_inquisition_fancy)
 
 /obj/item/card/id/key/grand/noble
 	name = "Noble Key"

@@ -536,6 +536,11 @@ Area basic template
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = FALSE
 
+/area/cadiaoutpost/oa/hangarmech
+	name = "Mechanicus Hangar"
+	icon_state = "red"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = FALSE
 /area/cadiaoutpost/oa/shuttle/cargo2
 	name = "Cargo Elevator"
 	icon_state = "shuttle"
@@ -1479,6 +1484,14 @@ Area basic template
 	icon_state = "shuttle"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
 	requires_power = 0
+
+/area/cadiaoutpost/oa/shuttle/mechanicus
+	name = "Mechanicus Ship"
+	icon_state = "shuttle"
+	music = 'sound/newmusic/Lab_Experiment.ogg'
+	requires_power = 0
+
+
 
 /area/cadiaoutpost/oa/shuttle/tau1
 	name = "Tau Ship"

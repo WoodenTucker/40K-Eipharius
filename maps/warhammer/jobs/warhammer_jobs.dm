@@ -6,17 +6,18 @@
 	/datum/job/envoy,
 	/datum/job/acolyte,
 	/datum/job/inquisitor,
-	/datum/job/ig/commissar,
+	/*/datum/job/ig/commissar,*/
 	/datum/job/ig/sergeant,
 	/datum/job/ig/guardsman,
-	/datum/job/cmo,
+	/*/datum/job/cmo,*/
 	/datum/job/doctor,
 	/datum/job/Paramedic,
 	/datum/job/chemist,
 	/datum/job/biologis,
-	/datum/job/magos,
+	/*/datum/job/magos,*/
 	/datum/job/explorer,
 	/datum/job/engineer,
+	/datum/job/techmenial,
 	/datum/job/hop,
 	/datum/job/chef,
 	/datum/job/chaplain,
@@ -29,7 +30,7 @@
 	/datum/job/enforcer,
 	/datum/job/marshal,
 	/datum/job/innkeeper,
-	/datum/job/hydro,
+	/*/datum/job/hydro,*/
 	/datum/job/undertaker,
 	/datum/job/penitent,
 	)

@@ -12,7 +12,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "The Golden Throne and the High Lords of Terra"
-	selection_color = "#011c77"
+	selection_color = "#3e0177"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
@@ -63,7 +63,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "Your Lord. If you so desire..."
-	selection_color = "#00494e"
+	selection_color = "#3e0177"
 	req_admin_notify = 1
 	minimal_player_age = 25
 	economic_modifier = 10
@@ -119,7 +119,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "the Rogue Trader"
-	selection_color = "#00494e"
+	selection_color = "#3e0177"
 	req_admin_notify = 1
 	minimal_player_age = 25
 	economic_modifier = 10
@@ -169,7 +169,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Lord Trader"
-	selection_color = "#337C81"
+	selection_color = "#3e0177"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
@@ -260,10 +260,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	title = "Xeno Mercenary"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 1 
+	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Noble Estate."
-	selection_color = "#848484"
+	selection_color = "#3e0177"
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 0

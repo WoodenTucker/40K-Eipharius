@@ -257,14 +257,14 @@
 // Orders Hospitaller
 
 // Almoness Advance
-
+/*
 /datum/job/cmo
 	title = "Abbess"
 	head_position = 1
 	department = list("Ministorum", "Medical")
 	department_flag = COM|MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Deacon and Inquisition"
 	selection_color = "#633d63"
 	economic_modifier = 10
@@ -311,7 +311,7 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
-
+*/ // enable when more serber pop
 // Hospitaller Advance
 
 /datum/job/doctor
@@ -321,15 +321,19 @@
 	minimal_player_age = 22
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Abbess or The Deacon"
-	selection_color = "#967096"
+	supervisors = "The Deacon"
+	selection_color = "#FCFBFA"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_village)
-	minimal_access = list(access_medical, access_village)
+	access = list(access_medical, access_heads,
+			access_abbess, access_RC_announce,
+			access_keycard_auth, access_guard_common, access_village, access_sob)
+	minimal_access = list(access_medical, access_heads,
+			access_abbess, access_RC_announce,
+			access_keycard_auth, access_guard_common, access_village, access_sob)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -357,9 +361,9 @@
 		H.h_style = "Bob"
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a senior sister of the Ordos Hospitaller, serving under The Deacon/Abbess to maintain the health and divinity of the township.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a sister of the Ordos Hospitaller, serving under The Deacon to maintain the health and divinity of the township. Ensure the others of your Chapel are properly trained.</font></b></span>")
 
-
+/* // we only need progena or scholam, we choose scholam to keep. as it's unique child role that is greytider friendly
 /datum/job/progena
 	title = "Progena"
 	department = list("Ministorum", "Medical")
@@ -368,7 +372,7 @@
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the Abbess or The Deacon"
-	selection_color = "#967096"
+	selection_color = "#FCFBFA"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = FALSE
@@ -401,7 +405,7 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
-
+*/
 //Hospitaller
 
 /datum/job/chemist
@@ -532,18 +536,3 @@
 	/obj/item/stack/thrones3/ten = 2
 	)
 
-//
-
-
-/decl/hierarchy/outfit/job/progena
-	name = OUTFIT_JOB_NAME("Progena")
-	uniform = /obj/item/clothing/under/rank/medical
-	l_ear  = /obj/item/device/radio/headset/headset_sci
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/storage/belt
-	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/medical
-	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones3/five = 1,)

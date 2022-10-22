@@ -44,7 +44,7 @@
 	suit = /obj/item/clothing/suit/farmer
 	gloves = /obj/item/clothing/gloves/thick/botany
 	r_pocket = /obj/item/device/analyzer/plant_analyzer
-	id_type = /obj/item/card/id/civilian/botanist
+	id_type = null
 	pda_type = null
 	pda_slot = null
 	l_ear = null

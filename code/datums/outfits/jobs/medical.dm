@@ -21,7 +21,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/apothecary
 	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/medical/head
+	id_type = null
 	head = /obj/item/clothing/head/hospitallerhelm
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,

@@ -9,7 +9,7 @@
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Inquisition and Your Lord Inquisitor"
-	selection_color = "#FF3A3A"
+	selection_color = "#011c77"
 	economic_modifier = 7
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/interrogator
@@ -90,7 +90,7 @@
 	spawn_positions = 1
 	head_position = 1
 	supervisors = "The Golden Throne, the Inquisition, Lord Inquisitor Rorkan and the masters of the Ordos Helican."
-	selection_color = "#fd0707"
+	selection_color = "#011c77"
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
 	economic_modifier = 7
@@ -118,7 +118,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_sob, access_inquisition, 302, 301) // 302 is inq quarters 301 is inq shuttle
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_sob, access_inquisition, access_inquisition_fancy)
 		H.inquisitor = 1
 		H.adjustStaminaLoss(-INFINITY)
 		to_chat(H, "<span class='notice'><b><font size=3>You are extremis diabolus, an inquisitor in service to the Ordos that has been considered for reasons up to you, a liability to the inquisition. Every person, asset and object on this planet is a tool or resource to be exploited. Humiliation, torture and the dull thud of a bolt pistol is what awaits you in failure should you not prove yourself here. Your acolytes personally selected to serve only you, whether they survive the horrid taint associated with your name and rise to the ranks of Inquisitor shall be determined in the coming weeks.</font></b></span>")

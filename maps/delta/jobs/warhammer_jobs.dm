@@ -1,52 +1,54 @@
-
+// THIS IS FOR JOB ORDER IN OCCUPATION !
 
 /datum/map/warhammer
 	allowed_jobs = list(
 	/datum/job/captain,
 	/datum/job/envoy,
-	/datum/job/inquisitor,
-	/datum/job/acolyte,
-	/*/datum/job/scion,*/
+	/datum/job/qm2,
+	/datum/job/janissary,
 	/datum/job/mercenary,
-	/datum/job/ig/commissar,
-	/datum/job/ig/sergeant,
-	/datum/job/ig/guardsman,
-	/datum/job/ig/guardsman/sharpshooter,
-	/datum/job/ig/guardsman/sniper,
-	/datum/job/ig/whiteshield,
-	/datum/job/cmo,
-	/datum/job/doctor,
-	/datum/job/progena,
-	/datum/job/ig/medicae,
-	/*/datum/job/chemist,*/
-	/datum/job/biologis,
-	/datum/job/magos,
-	/datum/job/explorer,
-	/datum/job/engineer,
 	/datum/job/hop,
 	/datum/job/heir,
 	/datum/job/servant,
+	/datum/job/inquisitor,
+	/datum/job/acolyte,
+	/*/datum/job/scion,*/
+	/*/datum/job/ig/commissar,*/
+	/datum/job/explorer,
+	/datum/job/biologis,
+	/datum/job/engineer,
+	/datum/job/techmenial,
+	/datum/job/ig/sergeant,
+	/datum/job/ig/medicae,
+	/datum/job/ig/guardsman/sharpshooter,
+	/datum/job/ig/guardsman/sniper,
+	/datum/job/ig/guardsman,
+	/datum/job/ig/whiteshield,
+	/*/datum/job/cmo,*/
+	/datum/job/chaplain,
+	/datum/job/sisterofbattle,
+	/datum/job/doctor,
+	/*/datum/job/progena,*/
+	/datum/job/undertaker,
+	/datum/job/marshal,
+	/datum/job/enforcer,
+	/datum/job/cadet,
+	/datum/job/innkeeper,
+	/datum/job/bouncer,
+	/datum/job/pathfinder,
+	/datum/job/gangboy,
+	/datum/job/penitent,
+	/datum/job/scavenger
+
+	/*/datum/job/chemist,*/
+	/*/datum/job/magos,*/
 	/* /datum/job/chef, */
 	/*/datum/job/janitor,*/
 	/*/datum/job/bartender,*/
 	/* /datum/job/mining, */
 	/*/datum/job/cargo_tech, */
 	/* /datum/job/qm1, */
-	/datum/job/chaplain,
-	/datum/job/sisterofbattle,
-	/datum/job/qm2,
-	/datum/job/gangboy,
-	/datum/job/janissary,
-	/datum/job/cadet,
-	/datum/job/enforcer,
-	/datum/job/marshal,
-	/datum/job/innkeeper,
-	/datum/job/hydro,
-	/datum/job/undertaker,
-	/datum/job/pathfinder,
-	/datum/job/penitent,
-	/datum/job/bouncer,
-	/datum/job/scavenger
+	/*/datum/job/hydro,*/
 	/* /datum/job/prisoner/penitent, */
 	/* /datum/job/prisoner/penitent/sarge, */
 	)

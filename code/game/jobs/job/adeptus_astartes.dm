@@ -22,7 +22,7 @@
 		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultrapoth,
 		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultratech
 		)
-	selection_color = "#344FAA"
+	selection_color = "#3e0177"
 	department_flag = SEC|COM
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
