@@ -7,6 +7,7 @@
 	step_in = 4
 	health = 1250
 	deflect_chance = 75
+	internal_damage_threshold = 500
 	damage_absorption = list("brute"=0.1,"fire"=1,"bullet"=0.2,"laser"=0.4,"energy"=0.1,"bomb"=0.1)
 	max_temperature = 30000
 	infra_luminosity = 8
