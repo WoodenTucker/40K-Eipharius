@@ -269,7 +269,7 @@
 	..()
 
 /obj/item/missile
-	name = "krak missile"
+	name = "frag missile"
 	icon = 'icons/obj/grenade.dmi'
 	icon_state = "missile"
 	var/primed = null
@@ -282,6 +282,52 @@
 		else
 			..()
 		return
+
+/obj/item/missile/krak
+	name = "krak missile"
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "missile"
+	primed = null
+	throwforce = 20
+
+	throw_impact(atom/hit_atom)
+		if(primed)
+			explosion(hit_atom, -1, 1, 3, 3, 0)
+			qdel(src)
+		else
+			..()
+		return
+
+/obj/item/missile/hk
+	name = "hunter-killer missile"
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "missile"
+	primed = null
+	throwforce = 25
+
+	throw_impact(atom/hit_atom)
+		if(primed)
+			explosion(hit_atom, 1, 2, 4, 4, 0)
+			qdel(src)
+		else
+			..()
+		return
+
+/obj/item/missile/plasma
+	name = "plasma cannon projectile"
+	icon = 'icons/effects/projectiles/impact.dmi'
+	icon_state = "impact_pulse"
+	primed = null
+	throwforce = 15
+
+	throw_impact(atom/hit_atom)
+		if(primed)
+			explosion(hit_atom, 2, 3, 5, 5, 6)
+			qdel(src)
+		else
+			..()
+		return
+
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/tank_cannon
     name = "\improper Predator cannon"
@@ -301,7 +347,7 @@
 
 	throw_impact(atom/hit_atom)
 		if(primed)
-			explosion(hit_atom, -1, -1, 3, 3, 0)
+			explosion(hit_atom, 1, 2, 3, 3, 0)
 			qdel(src)
 		else
 			..()
@@ -352,3 +398,56 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang/clusterbang/limited/rearm()
 	return//Extra bit of security
 */
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/twinheavybolter
+    name = "A twin linked heavy bolter
+    icon_state = "mecha_uac2"
+    equip_cooldown = 30
+    projectile = /obj/item/projectile/bullet/gyro
+    fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+    fire_volume = 100
+    projectiles = 6000
+    projectiles_per_shot = 3
+    deviation = 0.15
+    projectile_energy_cost = 8 KILOWATTS
+    fire_cooldown = 1
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/assaultcannon
+	name = "Mark VIII Absolo pattern assault cannon"
+	equip_cooldown = 20
+	fire_cooldown = 3
+	projectile = /obj/item/projectile/bullet/rifle/a145
+	projectiles_per_shot = 8
+	projectiles = 9000
+	projectile_energy_cost = 12 KILOWATTS
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/krak
+    name = "Krak Missile Launcher"
+    icon_state = "mecha_grenadelnchr"
+    projectile = /obj/item/missile/krak
+    fire_sound = 'sound/effects/bang.ogg'
+    fire_volume = 100 //Loud
+    projectiles = 6
+    projectile_energy_cost = 100 KILOWATTS
+    equip_cooldown = 60
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/hk
+    name = "Hunter-Killer Missile Launcher"
+    icon_state = "mecha_grenadelnchr"
+    projectile = /obj/item/missile/hk
+    fire_sound = 'sound/effects/bang.ogg'
+    fire_volume = 100 //Loud
+    projectiles = 6
+    projectile_energy_cost = 100 KILOWATTS
+    equip_cooldown = 60
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/plasma_cannon
+    name = "Plasma Cannon"
+    icon_state = "mecha_grenadelnchr"
+    projectile = /obj/item/missile/plasma
+    fire_sound = 'sound/weapons/gunshot/tank.ogg'
+    fire_volume = 100 //Loud
+    projectiles = 100
+    projectile_energy_cost = 100 KILOWATTS
+    equip_cooldown = 40
+    fire_cooldown = 20
