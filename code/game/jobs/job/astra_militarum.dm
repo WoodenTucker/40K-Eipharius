@@ -351,7 +351,7 @@
 	spawn_positions = 1
 	open_when_dead = FALSE
 	supervisors = "The Rogue Trader"
-	selection_color = "#967096"
+	selection_color = "#33813A"
 	economic_modifier = 4
 	minimal_player_age = 18
 	latejoin_at_spawnpoints = TRUE

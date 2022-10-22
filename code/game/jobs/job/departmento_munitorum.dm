@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "The merchant guilds"
-	selection_color = "#337C81"
+	selection_color = "#3e0177"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
@@ -81,7 +81,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Noble household"
-	selection_color = "#337C81"
+	selection_color = "#3e0177"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0

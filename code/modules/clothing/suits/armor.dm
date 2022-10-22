@@ -979,7 +979,7 @@ obj/item/clothing/suit/armor
 	desc = "The Ancient and Deconsecrated Power Armour adorned by Scholam Progena during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, this suit mainly serves to acclimatize the Progena for Heavy Armour but is still formidable and has legible scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 44, bullet = 60, laser = 60, energy = 50, bomb = 60, bio = 80, rad = 70)
+	armor = list(melee = 44, bullet = 40, laser = 40, energy = 50, bomb = 60, bio = 80, rad = 70)
 	sales_price = 40
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS

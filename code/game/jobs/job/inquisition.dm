@@ -9,7 +9,7 @@
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Inquisition and Your Lord Inquisitor"
-	selection_color = "#FF3A3A"
+	selection_color = "#011c77"
 	economic_modifier = 7
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/interrogator
@@ -90,7 +90,7 @@
 	spawn_positions = 1
 	head_position = 1
 	supervisors = "The Golden Throne, the Inquisition, Lord Inquisitor Rorkan and the masters of the Ordos Helican."
-	selection_color = "#fd0707"
+	selection_color = "#011c77"
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
 	economic_modifier = 7

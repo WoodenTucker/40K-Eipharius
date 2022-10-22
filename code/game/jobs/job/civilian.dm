@@ -80,7 +80,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 
 // Farmer
-
+/*
 /datum/job/hydro
 	title = "Farmer"
 	department = "Service"
@@ -114,7 +114,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
-
+*/
 // Janitor Servitor
 
 /datum/job/janitor
@@ -180,12 +180,12 @@
 	department = "Service"
 	department_flag = CIV
 	social_class = SOCIAL_CLASS_MIN
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 6 // noob greytider role.
+	spawn_positions = 6
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "the Ecclesiarchy."
-	selection_color = "#848484"
+	selection_color = "#FCFBFA"
 	access = list(access_janitor, access_village, access_medical)
 	minimal_access = list(access_janitor, access_village, access_medical)
 	outfit_type = /decl/hierarchy/outfit/job/service/undertaker
