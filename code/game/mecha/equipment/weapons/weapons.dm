@@ -400,7 +400,7 @@
 */
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/twinheavybolter
-    name = "A twin linked heavy bolter
+    name = "A twin linked heavy bolter"
     icon_state = "mecha_uac2"
     equip_cooldown = 30
     projectile = /obj/item/projectile/bullet/gyro
