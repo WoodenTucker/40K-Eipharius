@@ -33,13 +33,13 @@
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/inquisitionpact
 
 /obj/effect/shuttle_landmark/ferry/bloodpact_end
-	name = "PlanetPact"
+	name = "Messina Blood Pact Hanger"
 	landmark_tag = "bloodpact_end"
 	base_area = /area/cadiaoutpost/oa/hangarpact
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/ferry/bloodpact_start
-	name = "MoonPact"
+	name = "Derelict Blood Pact Station"
 	landmark_tag = "bloodpact_start"
 	base_area = /area/cadiaoutpost/oa/hangarpact
 	base_turf = /turf/simulated/floor/plating
@@ -47,6 +47,31 @@
 /obj/machinery/computer/shuttle_control/ferry/bloodpact
 	name = "Shuttle Control Console"
 	shuttle_tag = "Bloodpact"
+
+// toasters
+/datum/shuttle/autodock/ferry/mechanicus
+	name = "mechanicus"
+	warmup_time = 10
+	waypoint_station = "mechanicus_start"
+	waypoint_offsite = "mechanicus_end"
+	shuttle_area = /area/cadiaoutpost/oa/shuttle/mechanicus
+
+/obj/effect/shuttle_landmark/ferry/mechanicus_end
+	name = "Messina Mechanicus Hanger"
+	landmark_tag = "mechanicus_end"
+	base_area = /area/cadiaoutpost/oa/hangarmech
+	base_turf = /turf/simulated/floor/plating
+
+/obj/effect/shuttle_landmark/ferry/mechanicus_start
+	name = "The Soul of Reason Hanger"
+	landmark_tag = "mechanicus_start"
+	base_area = /area/cadiaoutpost/oa/hangarmech
+	base_turf = /turf/simulated/floor/plating
+
+/obj/machinery/computer/shuttle_control/ferry/mechanicus
+	name = "Shuttle Control Console"
+	shuttle_tag = "mechanicus"
+
 
 
 
@@ -60,13 +85,13 @@
 	shuttle_area = /area/cadiaoutpost/oa/shuttle/tau1
 
 /obj/effect/shuttle_landmark/ferry/tau_end
-	name = "PlanetTau"
+	name = "Tau Messina Landing Pad"
 	landmark_tag = "tau_end"
 	base_area = /area/cadiaoutpost/oa/shuttle/tau2
 	base_turf = /turf/simulated/floor/plating
 
 /obj/effect/shuttle_landmark/ferry/tau_start
-	name = "MoonTau"
+	name = "Tau Cruiser Hanger"
 	landmark_tag = "tau_start"
 	base_area = /area/cadiaoutpost/oa/shuttle/tau2
 	base_turf = /turf/simulated/floor/plating

@@ -144,9 +144,9 @@
 	item_state = "chainaxe"
 	wielded_icon = "chainaxe"
 	str_requirement = 13
-	force = 35 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	force_wielded = 42
-	block_chance = 15
+	force = 42 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force_wielded = 60
+	block_chance = 5
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -157,7 +157,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 9
-	sales_price = 75
+	sales_price = 35
 	edge = 1
 
 /obj/item/material/sword/demon
@@ -172,7 +172,7 @@
 	force = 31
 	force_wielded = 38
 	armor_penetration = 10
-	block_chance = 14
+	block_chance = 50
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 7
