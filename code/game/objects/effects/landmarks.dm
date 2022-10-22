@@ -167,6 +167,11 @@ Template:
 /obj/effect/landmark/start/explorer
 	name = "Magos Explorator"
 
+/obj/effect/landmark/start/techmenial
+	name = "Tech Menial"
+
+
+
 
 //Supply//
 

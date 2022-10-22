@@ -23,6 +23,7 @@
 	/datum/job/magos,
 	/datum/job/explorer,
 	/datum/job/engineer,
+	/datum/job/techmenial,
 	/datum/job/hop,
 	/datum/job/heir,
 	/datum/job/servant,

@@ -4,8 +4,8 @@
 	head_position = 1
 	department_flag = ENG|COM|SCI
 	social_class = SOCIAL_CLASS_HIGH
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus and the Omnissiah."
 	selection_color = "#7f6e2c"
@@ -53,9 +53,9 @@
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 3 // CHANGE THIS To 2 ONCE WE ADD EXPLORATOR
-	spawn_positions = 3
-	supervisors = "You obey the Magos Dominus and secondarily, the Magos Biologis"
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "You obey the Biologis and Explorator"
 	selection_color = "#B2A15F"
 	economic_modifier = 5
 	minimal_player_age = 7
@@ -88,7 +88,45 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer, Obey your Magi and remember, your primary duty is to ensure that all machine spirits are pleased and secure technology.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus. Obey your Explorator and Biologis and remember, your primary duty is to ensure that all machine spirits are pleased and secure technology.</font></b></span>")
+
+/datum/job/techmenial
+	title = "Tech-Menial"
+	department = "Engineering"
+	department_flag = ENG
+	social_class = SOCIAL_CLASS_MED
+	total_positions = 2
+	spawn_positions = 2
+	supervisors = "You obey the Biologis and Explorator, as well as the Tech Priests."
+	selection_color = "#B2A15F"
+	economic_modifier = 5
+	minimal_player_age = 7
+	open_when_dead = 0
+	announced = FALSE
+	latejoin_at_spawnpoints = TRUE
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical)
+	minimal_access = list(access_mechanicus, access_village, access_medical)
+	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
+	cultist_chance = 20
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Tech-Menial [current_name]")
+		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
+		H.add_stats(rand(14,16), rand(13,16), rand(11,17), rand(12,16)) //worse than tech priest
+		H.add_skills(rand(4,6),rand(3,6),rand(4,5),rand(6,8),rand(4,6)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_MECHANICUS)
+		H.warfare_faction = IMPERIUM
+		H.bladder = -INFINITY
+		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Tech-Menial, a ever grateful servant of the Omnissiah, you have been blessed with the privilege of serving upon the Soul of Reason and the Tech-Priests aboard. You are inexperienced and learning. Ensure to learn much. Perhaps you will be promoted, if your efforts are high.</font></b></span>")
 
 // Biologis
 
@@ -133,7 +171,7 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, you are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii, you are not forced to listen to the Magos Dominus, but be aware, he holds much more power in the outpost than you.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. You are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 //Walker here, why the fuck does this even exist? all Genetors research aliens, thats like, their speciality, who added this in? im not going to remove it for now but, idk why its here.
@@ -196,7 +234,7 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Explorator, your primary duty is to explore the planet and locate relics and research items, you are not forced to listen to the Magos Dominus, but be aware, he holds much more power in the outpost than you.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Explorator, your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 //Skitarii

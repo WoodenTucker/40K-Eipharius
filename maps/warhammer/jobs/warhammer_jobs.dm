@@ -17,6 +17,7 @@
 	/datum/job/magos,
 	/datum/job/explorer,
 	/datum/job/engineer,
+	/datum/job/techmenial,
 	/datum/job/hop,
 	/datum/job/chef,
 	/datum/job/chaplain,
