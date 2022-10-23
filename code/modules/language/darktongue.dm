@@ -1,11 +1,11 @@
-datum/language/aeldari
-    name = "Aeldari"
-    desc = "The ancient and complex language spoken by the elusive Eldar"
+datum/language/darktongue
+    name = "Chaotic Dark Tongue"
+    desc = "The heretical daemonic warp speak of the Ruinous Powers."
     speech_verb = "says"
     whisper_verb = "whispers"
-    key = "e"
+    key = "z"
     flags = RESTRICTED
-    syllables = list("ac","ad","ag","ái","ai","an","ar","be","bh","ch","dh","ea","ei","gu","ha","he","id","il","in","ir","is","it","le","ma","mh","na","nh","oi","ra","ta","th","us","ach","adh","agu","aib","aid","aig","ain","áin","air","ais","ait","amh","ana","an","aoi","bhe","bhf","bhí","cha","cht","chc","eac","ead","ean","ear","eis","gus","hái","hai","héa","hea","ibh","idh","igh","ile","ine","puh","tuh","inn","ou","ith","lea","mar","mha","nac","rai","rea","sh","sha","sin","tai","te","th","the","uai","uil")
+    syllables = list("Aa,","Ar","Ak","Bh","Ch","Ck","Dh","ii","Gh","Gu","Gz","ee","Kw","qu","Ph","Rh","Sh","tz","tch","Sl","uu","Ul","zh","W","Slaa","Nurgh","Khar","Tzeen","Leth","neth","Aqsh","Azyr","Agh","kam","ghr","ngi","Bahk","rahn","Chi","ami","Ghyr","Khak","Q'th","Qhay","tlah","Rhan","anra","Va'ga","Vakr","Va'Kh","r'oth",'r eh")
 
 
 

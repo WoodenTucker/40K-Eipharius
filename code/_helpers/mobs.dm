@@ -85,6 +85,10 @@ proc/random_eldar_name()
 	var/eldar_names = list("Elthorn", "Caernaer", "Arrokyn", "Tenseith", "Yrarith", "Machtelar", "Olatelar", "Taebas", "Farbaer", "Oranel", "Amhith", "Olaseith", "Benedrad", "Benedrad", "Calnyl", "Dunbas", "Irillim", "Farkon" )
 	return capitalize(pick(eldar_names))
 
+proc/random_chaos_name()
+	var/chaos_names = list()
+	return capitalize(pick(chaos_names))
+
 proc/random_ogryn_name()
 //try and keep it to 4 letters
 	var/ogryn_names = list("Stev", "Orvy", "Lugg", "Bert", "Bran", "Gert", "Oggy", "Mono", "Nork", "Rogg", "Brog", "Prol", "Brok", "Kaz", "Hurk", "Barg", "Tag", "Purg", "Worg", "Gerb", "Prel" )
