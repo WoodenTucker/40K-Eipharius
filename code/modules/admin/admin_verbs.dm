@@ -1004,7 +1004,7 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose Party"
 	set desc = "Picks the party for the round!"
 
-	var/parties = list("Kroot", "Tau", "Orkz", "Genestealers",) //lists all possible fates
+	var/parties = list("Kroot", "Tau", "Bloodpact", "Orkz", "Genestealers",) //lists all possible fates
 
 	var/chooseaparty = input("Choose a party", "Available parties") as null|anything in parties
 
