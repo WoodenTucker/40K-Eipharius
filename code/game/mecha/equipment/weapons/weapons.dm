@@ -456,7 +456,7 @@
 	equip_cooldown = 15
 	name = "Mounted Lascannon"
 	icon_state = "mecha_laser"
-	energy_drain = 30 KILOWATTS
+	energy_drain = 60 KILOWATTS
 	projectile = /obj/item/projectile/beam/lascannon
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
 	fire_cooldown = 60
@@ -469,7 +469,7 @@
 	energy_drain = 6 KILOWATTS
 	projectile = /obj/item/projectile/beam/multilas
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	fire_cooldown = 3
+	fire_cooldown = 1
 	fire_volume = 50
 	projectiles_per_shot = 8
 
@@ -480,7 +480,7 @@
     projectile = /obj/item/projectile/flamer
     fire_sound = 'sound/weapons/gun_flamethrower2.ogg'
     fire_volume = 100
-    projectiles = 80
+    projectiles = 60
     projectiles_per_shot = 20
     deviation = 0.8
     projectile_energy_cost = 8 KILOWATTS
