@@ -462,6 +462,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "bloodlaspistol"
 	item_state = "laspistol"
 	charge_cost = 110
+	
 /obj/item/gun/energy/las/laspistol/lord
 	name = "Rogue Trader's Artificer Pistol"
 	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."

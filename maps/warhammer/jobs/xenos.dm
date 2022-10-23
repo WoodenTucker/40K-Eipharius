@@ -96,7 +96,7 @@
 	head = null
 	mask = /obj/item/clothing/mask/bandana/red
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
-	id = /obj/item/card/id/inquisition/principal_agent
+	id = null
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
 	l_pocket = /obj/item/storage/box/ifak
@@ -104,5 +104,4 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-
 	)

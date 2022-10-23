@@ -12,8 +12,23 @@
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 200
 	mob_size = MOB_MEDIUM
-	strength = STR_MEDIUM
+	strength = STR_HIGH
 	sexybits_location = BP_GROIN
+
+	inherent_verbs = list(
+	/mob/living/carbon/human/Bloodpact/proc/givebloodstats,
+	/mob/living/carbon/human/proc/bludforbludguy, // KILL, MAIM, BURN!
+	/mob/living/carbon/human/proc/letriverflow,
+	/mob/living/carbon/human/proc/moving,
+	/mob/living/carbon/human/proc/overthere,
+	/mob/living/carbon/human/proc/praynslay,
+	/mob/living/carbon/human/proc/chaaaaaarge,
+	/mob/living/carbon/human/proc/chopdem,
+	/mob/living/carbon/human/proc/bringdeath,
+	/mob/living/carbon/human/proc/advance,
+	/mob/living/carbon/human/proc/aaaaaa,
+	/*/mob/living/carbon/human/proc/draw_rune */ // doesnt work rn because only khorne cultists can draw runes and they technically are not khorne. and if they were, it would use pilgrim khorne slots
+		)
 
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
@@ -21,6 +36,7 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
+
 
 /datum/species/bloodpact/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(20,180)//Random age for kiddos.
@@ -35,14 +51,35 @@
 /mob/living/carbon/human/Bloodpact
 	gender = MALE
 
+/mob/living/carbon/human/Bloodpact/proc/givebloodstats()
+	set name = "Embrace your Chaotic Blessings"
+	set category = "Ruinous Powers"
+	set desc = "Gives bloodpact stats since I can't seem to do it any other way in this clown world."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] Embraces their blessings from The God of Blood, the Skull taker, the soul eater: Khorne. Skulls for his throne shall come.")
+	src.add_stats(rand(14,19),rand(14,18),rand(9,12),rand(11,16)) //gives stats str, end, int, dex
+	src.add_skills(rand(11,18),rand(9,13),rand(1,5),0,0) //skills such as melee, ranged, med, eng and surg
+	src.adjustStaminaLoss(-INFINITY)
+	src.update_eyes() //should fix grey vision
+	src.warfare_language_shit(LANGUAGE_DARKTONGUE) //secondary language
+	src.verbs -= /mob/living/carbon/human/Bloodpact/proc/givebloodstats //removes verb at the end so they can't spam it for whatever reason
+	client?.color = null
+
 
 /mob/living/carbon/human/Bloodpact/New(var/new_loc)
 	h_style = "Bald"
-	..(new_loc, new_tau)
+	..(new_loc, new_bloodpact)
 /mob/living/carbon/human/Bloodpact/Initialize()
 	. = ..()
-	fully_replace_character_name(random_eldar_name(src.gender))
+	fully_replace_character_name(random_chaos_name(src.gender))
 	faction = "Bloodpact"
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/corsair)
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/bloodpact)
 	outfit.equip(src)
 
+	hand = 0//Make sure one of their hands is active.
+	put_in_hands(new /obj/item/gun/energy/las/laspistol/bloodpact)//Give them a weapon.
+	isburied = 1

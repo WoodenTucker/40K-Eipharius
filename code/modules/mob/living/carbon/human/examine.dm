@@ -6,7 +6,7 @@
 			if(ishuman(user))
 				var/mob/living/carbon/human/H = user
 				if(H.warfare_faction != src.warfare_faction)
-					to_chat(user, "<span class='warning'><big><b>They are not familiar to me.</b></big></span>")
+					to_chat(user, "<span class='warning'><big><b>They don't seem to be apart of the Imperium</b></big></span>")
 
 			if(crouching)
 				to_chat(user, "<span class='warning'>They are crouching!</span>")
@@ -71,7 +71,7 @@
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 		if(H.warfare_faction != src.warfare_faction)
-			msg += "<span class='warning'><big><b>They are not familiar to you.</b></big></span>\n"
+			msg += "<span class='warning'><big><b>They don't seem to be apart of the Imperium</b></big></span>\n"
 
 		if(H != src)
 			if(H.warfare_faction == src.warfare_faction)
