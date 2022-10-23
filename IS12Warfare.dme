@@ -1738,6 +1738,7 @@
 #include "code\modules\mob\living\carbon\human\species\races\ogryn.dm"
 #include "code\modules\mob\living\carbon\human\species\races\rat.dm"
 #include "code\modules\mob\living\carbon\human\species\races\tau.dm"
+#include "code\modules\mob\living\carbon\human\species\races\bloodpact.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\abilities.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\ork_species.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\orks.dm"

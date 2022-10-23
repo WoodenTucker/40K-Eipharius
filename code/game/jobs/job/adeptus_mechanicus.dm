@@ -22,8 +22,8 @@
 	cultist_chance = 20
 	ideal_character_age = 70 // most magi are old as fuck, just imagine what it takes to be a robotics nerdexpert in the cult mechanicus
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
-	access = list(access_mechanicus, access_magosd, access_guard_common, access_medical)
-	minimal_access = list(access_mechanicus, access_magosd, access_guard_common, access_medical)
+	access = list(access_mechanicus, access_magosd, access_guard_common, access_medical, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_magosd, access_guard_common, access_medical, access_all_personal_lockers)
 
 
 
@@ -62,8 +62,8 @@
 	open_when_dead = 0
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_mechanicus, access_village, access_guard_common, access_medical)
-	minimal_access = list(access_mechanicus, access_village, access_medical)
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_village, access_medical, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -104,8 +104,8 @@
 	open_when_dead = 0
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
-	access = list(access_mechanicus, access_village, access_guard_common, access_medical)
-	minimal_access = list(access_mechanicus, access_village, access_medical)
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_village, access_medical, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
@@ -146,8 +146,8 @@
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload)
-	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload)
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/medical/biologis
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
@@ -171,7 +171,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		H.get_idcard()?.access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload) // this may be unneeded or bloat for mechanicus, needs testing
+		H.get_idcard()?.access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
 		H.vice = null //off for now
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. You are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
@@ -211,8 +211,8 @@
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload)
-	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload)
+	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_all_personal_lockers)
+	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/science/explorator
 	auto_rifle_skill = 8 //Explorator for you.
 	semi_rifle_skill = 8
@@ -237,7 +237,7 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		H.get_idcard()?.access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload) // this may be unneeded or bloat for mechanicus, needs testing
+		H.get_idcard()?.access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Explorator, your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
