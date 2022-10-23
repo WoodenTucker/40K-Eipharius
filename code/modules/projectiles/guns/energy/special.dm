@@ -137,3 +137,16 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 	charge_meter = FALSE
+	
+/obj/item/gun/energy/WarpLens
+	name = "Warp Lens"
+	desc = "A lens used to direct bolts of warp energy"
+	icon_state = "warplens"
+	item_state = "focus"
+	fire_sound = 'sound/weapons/emitter.ogg'
+	w_class = ITEM_SIZE_TINY
+	force = 1
+	one_hand_penalty = 0 //its tiny you can hold it in one hand
+	projectile_type = /obj/item/projectile/warpboltcrappy
+	max_shots = 15
+	self_recharge = 1
