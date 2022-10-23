@@ -482,6 +482,6 @@
     fire_volume = 100
     projectiles = 80
     projectiles_per_shot = 20
-    deviation = 0.5
+    deviation = 0.8
     projectile_energy_cost = 8 KILOWATTS
-    fire_cooldown = 3
+    fire_cooldown = 0
