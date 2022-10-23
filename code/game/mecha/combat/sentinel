@@ -1,0 +1,16 @@
+/obj/mecha/combat/sentinel
+	desc = "A two legged walked common used by the Imperial Guard for fire support and combat duties."
+	name = "Sentinel"
+	icon_state = "null" //Add once files are moved
+	initial_icon = "null"
+	step_in = 8
+	dir_in = 1 //Facing North.
+	health = 400
+	deflect_chance = 15
+	damage_absorption = list("brute"=0.3,"fire"=0.6,"bullet"=0.3,"laser"=0.65,"energy"=0.45,"bomb"=0.6)
+	max_temperature = 25000
+	infra_luminosity = 6
+	wreckage = /obj/effect/decal/mecha_wreckage
+	internal_damage_threshold = 350 //Heavy armour outside
+	max_equip = 1
+  cell = new /obj/item/cell/super
