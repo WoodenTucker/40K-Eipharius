@@ -150,7 +150,7 @@ obj/item/gun/energy/retro
 	recharge_time = 10
 	accuracy = 0 //mounted laser cannons don't need any help, thanks
 	one_hand_penalty = 0
-//ALSO NOT READY 
+//ALSO NOT READY
 /obj/item/gun/energy/plasmacannon
 	name = "Plasma cannon"
 	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
@@ -409,7 +409,7 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
-	sales_price = 110
+	sales_price = 90
 
 
 	firemodes = list(
@@ -419,7 +419,7 @@ obj/item/gun/energy/retro
 
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
-	desc = "The favored ranged weapon of Khorne crazed cultists. Especially the automatic setting."
+	desc = "The favored ranged weapon of Blood Pact Warriors."
 	force = 30 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "lascar"
@@ -427,10 +427,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=200),
-		list(mode_name="burst",       burst=4, fire_delay=5.9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=200),
 		)
 
-	sales_price = 100 // make it a bit worse than hotshot
+	sales_price = 50 // make it a bit worse than hotshot
 
 /obj/item/gun/energy/las/laspistol
 	name = "Kantrael MG Laspistol"
@@ -457,6 +456,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=180),
 		)
 
+/obj/item/gun/energy/las/laspistol/bloodpact
+	name = "Bloodpact Laspistol"
+	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design, it is less efficient with it's lasgun cells than more modern varients."
+	icon_state = "bloodlaspistol"
+	item_state = "laspistol"
+	charge_cost = 110
 /obj/item/gun/energy/las/laspistol/lord
 	name = "Rogue Trader's Artificer Pistol"
 	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."

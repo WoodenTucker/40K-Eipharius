@@ -86,7 +86,7 @@ proc/random_eldar_name()
 	return capitalize(pick(eldar_names))
 
 proc/random_chaos_name()
-	var/chaos_names = list()
+	var/chaos_names = list("Galneus","Asdire","Kesou","Lidresh","Guravax","Zyxus","Quixos","Mortelash","Lorus","Horus","Lupercal","Jirath","Dyroz","Heznath","Kurnagor","Athkox","Qezravas","Xeraris","Xianiz","Abdankio","Vur","Kalarill","Zenendag","Voram","Reradax","Vylvaso","Blomich","Alutch","Thrarizi","Sindri","Myr","Firraveus","Amphion","Alpharius","Eliphar","Abaddon","Curze","Zethus","Crull")
 	return capitalize(pick(chaos_names))
 
 proc/random_ogryn_name()

@@ -35,14 +35,14 @@
 /mob/living/carbon/human/Bloodpact
 	gender = MALE
 
+
 /mob/living/carbon/human/Bloodpact/New(var/new_loc)
 	h_style = "Bald"
 	..(new_loc, new_tau)
-
 /mob/living/carbon/human/Bloodpact/Initialize()
 	. = ..()
 	fully_replace_character_name(random_eldar_name(src.gender))
-	warfare_faction = TAU
+	faction = "Bloodpact"
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/corsair)
 	outfit.equip(src)
 

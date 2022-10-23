@@ -144,8 +144,8 @@
 	item_state = "chainaxe"
 	wielded_icon = "chainaxe"
 	str_requirement = 13
-	force = 42 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	force_wielded = 60
+	force = 50 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force_wielded = 65
 	block_chance = 5
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
@@ -154,7 +154,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	slot_flags = SLOT_BACK|SLOT_S_STORE
+	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 9
 	sales_price = 35
