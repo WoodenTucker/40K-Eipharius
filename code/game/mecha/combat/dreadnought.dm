@@ -4,7 +4,7 @@
 	icon = 'icons/obj/alienqueen.dmi'
 	icon_state = "dread2old"
 	initial_icon = "dread2old"
-	step_in = 4
+	step_in = 2
 	health = 1250
 	deflect_chance = 75
 	internal_damage_threshold = 500
