@@ -478,7 +478,7 @@
     icon_state = "mecha_uac2"
     equip_cooldown = 30
     projectile = /obj/item/projectile/flamer
-    fire_sound = 'sound/weapons/gun_flamethrower2.ogg'
+    fire_sound = 'sound/effects/fire01.ogg'
     fire_volume = 100
     projectiles = 60
     projectiles_per_shot = 20
