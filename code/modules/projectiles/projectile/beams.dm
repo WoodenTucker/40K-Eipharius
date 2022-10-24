@@ -180,6 +180,7 @@
 	fire_sound='sound/weapons/lasercannonfire.ogg'
 	damage = 400
 	armor_penetration = 100
+	penetrating = 100
 	muzzle_type = /obj/effect/projectile/laser/heavy/muzzle
 	tracer_type = /obj/effect/projectile/laser/heavy/tracer
 	impact_type = /obj/effect/projectile/laser/heavy/impact
