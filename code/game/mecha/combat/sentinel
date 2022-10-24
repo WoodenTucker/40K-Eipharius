@@ -1,8 +1,9 @@
 /obj/mecha/combat/sentinel
 	desc = "A two legged walked common used by the Imperial Guard for fire support and combat duties."
 	name = "Sentinel"
-	icon_state = "null" //Add once files are moved
-	initial_icon = "null"
+	icon = 'icons/obj/alienqueen.dmi'
+	icon_state = "sentinel2" 
+	initial_icon = "sentinel2"
 	step_in = 8
 	dir_in = 1 //Facing North.
 	health = 400
