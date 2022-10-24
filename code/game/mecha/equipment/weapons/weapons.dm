@@ -472,6 +472,7 @@
 	fire_cooldown = 1
 	fire_volume = 50
 	projectiles_per_shot = 8
+    deviation = 0.3
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamer
     name = "Heavy Flamer"
