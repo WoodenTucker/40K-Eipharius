@@ -1,7 +1,7 @@
 /obj/mecha/combat/dreadnought
 	desc = "A Dreadnought is a massive war-machine piloted by an honoured Space Marine whose body has been ravaged in battle."
 	name = "Dreadnought"
-	//icon = 'icons/cadia-sprites/migrated/alienqueen.dmi'//Glitched for some reason, just set it manually
+	icon = 'icons/obj/alienqueen.dmi'
 	icon_state = "dread2old"
 	initial_icon = "dread2old"
 	step_in = 4
