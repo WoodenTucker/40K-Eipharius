@@ -251,4 +251,16 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 105
-	armor_penetration = 35 
+	armor_penetration = 35
+
+/obj/item/projectile/warpboltcrappy
+	name = "Warp Bolt"
+	icon_state = "warpboltcrappy"
+	damage = 20 // DO NOT LEAEVE THIS AT 1500!
+	agony = 15 //Its warp magic it hurts more than it really is damaging.
+	eyeblur = 10 //the warp magic disrupts your eyes for a moment.
+	light_power = 4 //It glows because warp idk.
+	damage_type = BURN
+	check_armour = "energy"
+	light_range = 4
+	light_color = "#4A069E"
