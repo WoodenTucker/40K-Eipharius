@@ -14,4 +14,4 @@
 	wreckage = /obj/effect/decal/mecha_wreckage
 	internal_damage_threshold = 350 //Heavy armour outside
 	max_equip = 1
-  cell = new /obj/item/cell/super
+	cell = new /obj/item/cell/super
