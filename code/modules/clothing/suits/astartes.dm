@@ -7,7 +7,7 @@
 	str_requirement = 24 // they can get gibbed and their armor stays. helmet has it, so why not armor too
 	canremove = 0
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 80, bullet = 70, laser = 90, energy = 90, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 140, bullet = 120, laser = 120, energy = 120, bomb = 80, bio = 100, rad = 100)
 	sales_price = 120
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
