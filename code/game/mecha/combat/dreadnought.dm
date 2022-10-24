@@ -15,6 +15,7 @@
 	var/defence = 60
 	var/def_boost = 15
 	wreckage = /obj/effect/decal/mecha_wreckage
+	cell = new /obj/item/cell/infinite
 
 /*
 /obj/mecha/combat/dreadnought/New()
