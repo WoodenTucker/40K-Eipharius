@@ -276,7 +276,7 @@
 	req_access = list(access_hos)
 
 /obj/machinery/door/airlock/glass_command/hospitaller //cant be fucked renaming it to abbess
-	name = "Abbess' Haven"
+	name = "Hospitaller' Haven"
 	icon = 'icons/obj/doors/Doorcomglass.dmi'
 	hitsound = 'sound/effects/Glasshit.ogg'
 	maxhealth = 300

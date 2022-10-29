@@ -204,7 +204,7 @@
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Adepta Sororitas and the Ministorum Confessor"
+	supervisors = "the Adepta Sororitas and the Deacon"
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
@@ -350,7 +350,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village)
+		H.get_idcard()?.access = list(access_medical, access_village, access_abbess)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
