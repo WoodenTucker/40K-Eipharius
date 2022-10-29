@@ -75,6 +75,7 @@
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.say(":v [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
@@ -134,6 +135,7 @@
 		H.fully_replace_character_name("Whiteshield [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
+		H.say(":v [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHT Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
@@ -170,6 +172,7 @@
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("Specialist [H.real_name]")
 		H.assign_random_quirk()
+		H.say(":v [title] reporting for duty!")
 		H.witchblood()
 
 		to_chat(H, "<span class='notice'><b><font size=2>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
@@ -259,6 +262,7 @@
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("SharpShooter [H.real_name]")
 		H.assign_random_quirk()
+		H.say(":v [title] reporting for duty!")
 		H.witchblood()
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
@@ -314,6 +318,7 @@
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.say(":v Sgt reporting for duty!")
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 
@@ -382,6 +387,7 @@
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
+		H.say(":v [title] reporting for duty!")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 
