@@ -3,7 +3,7 @@
 	name = "Eipharius"
 	full_name = "Eipharius"
 	path = "warhammer"
-	station_name  = "The Spirit of Cadia"
+	station_name  = "Capital City Messina"
 	station_short = "Eipharius"
 	dock_name     = "Eipharius"
 	boss_name     = "Segmentum Command"

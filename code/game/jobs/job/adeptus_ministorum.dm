@@ -38,6 +38,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
+		H.say(":n [title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Deacon. You are one of the Imperial Cult's priesthood, your oratory skills can stir entire crowds of the faithful and turn a coward into a zealot. You often work on worlds where faith is lacking, and people are rebellious. It is your job to spread the Imperial Cult to this new colony and it's ignorant masses, bringing their backwards beliefs in line with the faith of the God Emperor, as well as guiding the already faithful.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
@@ -204,7 +205,7 @@
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Adepta Sororitas and the Ministorum Confessor"
+	supervisors = "the Adepta Sororitas and the Deacon"
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
@@ -251,6 +252,7 @@
 		/mob/living/carbon/human/proc/sobweservants,
 		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
+		H.say(":n [title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all. Once you were a Sister Repentia, who through incredible miracles and valor achieved rank once again within the Order, revered as a tale for years among your peers as a war hero made pure by the Emperor's embrace.</font></b></span>")
 
 
@@ -350,10 +352,11 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
 		H.add_skills(rand(6,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village)
+		H.get_idcard()?.access = list(access_medical, access_village, access_abbess)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.say(":n [title] reporting for duty!")
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE
 		H.warfare_faction = IMPERIUM
@@ -438,6 +441,7 @@
 		H.add_skills(rand(6,9),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
+		H.say(":n [title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
 
 

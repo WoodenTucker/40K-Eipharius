@@ -84,3 +84,24 @@
 	id = null
 	id_slot = null
 	pda_slot = null
+
+
+/decl/hierarchy/outfit/job/bloodpact
+	uniform = /obj/item/clothing/under/rank/principalagent
+	suit = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/pcsword/khorneaxe
+	gloves = /obj/item/clothing/gloves/thick/swat/combat
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = null
+	mask = /obj/item/clothing/mask/bandana/red
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	id = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/grenade/frag
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	)

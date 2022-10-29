@@ -27,6 +27,7 @@
 #define LANGUAGE_LOW_GOTHIC "Low Gothic"
 #define LANGUAGE_ORKY "Proppa Orky"
 #define LANGUAGE_ELDAR "Aeldari"
+#define LANGUAGE_DARKTONGUE "Dark Tongue"
 #define LANGUAGE_MECHANICUS "Lingua-technis"
 #define LANGUAGE_NECRON "Necrontyr"
 #define LANGUAGE_TAU "T'au"

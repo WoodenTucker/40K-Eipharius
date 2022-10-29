@@ -4,4 +4,4 @@
     speech_verb = "whistles"
     key = "m"
     flags = RESTRICTED | NO_STUTTER
-    syllables = list("zzzzt","krchhhhhh","crrcrr","gggnnn","eeee","aaauuu","oooooo","buzz","beep","ping")
+    syllables = list("zzzzt","krchhhhhh","crrcrr","gggnnn","eeee","aaauuu","oooooo","buzz","beep","ping", "toaster")
