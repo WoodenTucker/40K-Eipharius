@@ -72,7 +72,8 @@
 	rune_type = /obj/effect/cleanable/heretic_rune/tzeentch
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/illusion,
-						/datum/rune_recipe/tzeentch/omniscience)
+						/datum/rune_recipe/tzeentch/omniscience,
+						/datum/rune_recipe/tzeentch/lens)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/tzeewehere,
 			/mob/living/carbon/human/proc/tzeeforthechanger,

@@ -451,3 +451,38 @@
     projectile_energy_cost = 100 KILOWATTS
     equip_cooldown = 40
     fire_cooldown = 20
+
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/lascannon
+	equip_cooldown = 15
+	name = "Mounted Lascannon"
+	icon_state = "mecha_laser"
+	energy_drain = 60 KILOWATTS
+	projectile = /obj/item/projectile/beam/lascannon
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	fire_cooldown = 60
+	fire_volume = 200 //Loud
+
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/multilas
+	equip_cooldown = 15
+	name = "Mounted Multilas"
+	icon_state = "mecha_laser"
+	energy_drain = 6 KILOWATTS
+	projectile = /obj/item/projectile/beam/multilas
+	fire_sound = 'sound/weapons/lasercannonfire.ogg'
+	fire_cooldown = 1
+	fire_volume = 50
+	projectiles_per_shot = 8
+	deviation = 0.3
+
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamer
+    name = "Heavy Flamer"
+    icon_state = "mecha_uac2"
+    equip_cooldown = 30
+    projectile = /obj/item/projectile/flamer
+    fire_sound = 'sound/effects/fire01.ogg'
+    fire_volume = 100
+    projectiles = 60
+    projectiles_per_shot = 20
+    deviation = 0.8
+    projectile_energy_cost = 8 KILOWATTS
+    fire_cooldown = 0

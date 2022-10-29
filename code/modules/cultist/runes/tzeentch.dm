@@ -90,3 +90,9 @@
 	name = "Copper to Coin"
 	ingredients = list(/obj/item/newore/copperore)
 	product_path = /obj/item/stack/thrones3/three
+	
+/datum/rune_recipe/tzeentch/lens
+	name = "Lensmaker's Rite"
+	ingredients = list(/obj/item/cell/lasgun)
+	product_path =  (/obj/item/gun/energy/WarpLens)
+
