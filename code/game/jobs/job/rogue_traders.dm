@@ -29,7 +29,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 30 // we want funny inq vs rt nonsense
+	cultist_chance = 50 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
 
 
 	equip(var/mob/living/carbon/human/H)

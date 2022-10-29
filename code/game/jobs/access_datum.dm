@@ -118,7 +118,7 @@
 	desc = "EVA"
 	region = ACCESS_REGION_COMMAND
 */
-/var/const/access_heads = 19
+/var/const/access_heads = 19 // announcement access on consoles. give to leaders in factions eg biologis/explorator, planetary governor ect
 /datum/access/heads
 	id = access_heads
 	desc = "Bridge"
