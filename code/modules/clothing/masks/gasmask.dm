@@ -107,7 +107,7 @@
 	icon_state = "techpriest"
 	item_state = "techpriest"
 	flash_protection = FLASH_PROTECTION_MAJOR
-	siemens_coefficient = 0.7 
+	siemens_coefficient = 0.7
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
 	flags_inv = HIDEEARS|HIDEEYES
 	canremove = 0
@@ -119,7 +119,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	flash_protection = FLASH_PROTECTION_MAJOR
-	siemens_coefficient = 0.7 
+	siemens_coefficient = 0.7
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
 	flags_inv = HIDEEARS|HIDEEYES
 	canremove = 0
@@ -248,3 +248,14 @@
 	unacidable = 1
 	canremove = 0
 	armor = list(melee = 10, bullet = 75, laser = 75, energy = 75, bomb = 0, bio = 100, rad = 100) //Bullet resistant, because, well, sniper. Not designed for melee however.
+
+/obj/item/clothing/mask/gas/renegademask
+	name = "renegade militia mask"
+	desc = "Protects the head somewhat and filters out toxins, don't storm the trenches without it!"
+	icon_state = "renegade_militia_mask"
+	item_state = "renegade_militia_mask"
+	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = FACE|EYES|HEAD
+	w_class = ITEM_SIZE_NORMAL
+	gas_filter_strength = 1
