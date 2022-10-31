@@ -27,7 +27,7 @@ Astartes
 	total_health = 350 // a normal human has 200 brain health, Astartes have 350 //P.S this is brain health
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	mob_size = MOB_LARGE
-	strength = STR_VHIGH
+	//strength = STR_VHIGH //Duplicate definition here.
 	var/pain_power = 20
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
