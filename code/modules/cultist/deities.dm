@@ -85,7 +85,8 @@
 			/mob/living/carbon/human/proc/tzeechangecome,
 			/mob/living/carbon/human/proc/tzeebehold,
 			/mob/living/carbon/human/proc/tzeebelongtous,
-			/mob/living/carbon/human/proc/draw_rune)
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/tzeentchcraftrecipe)
 
 /datum/heretic_deity/tzeentch/post_add(mob/living/carbon/human/NewMember)
 	GLOB.tzeentch_cult++
