@@ -11,7 +11,7 @@
 	name = "police baton"
 	desc = "A truncheon for beating criminal scum."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "baton"
+	icon_state = "telebaton_1"//"baton"
 	item_state = "EB-shaft"
 	slot_flags = SLOT_BELT
 	force = 22
