@@ -384,7 +384,7 @@ Area basic template
 	requires_power = FALSE
 	music = 'sound/newmusic/Outpost1.ogg'
 
-/area/cadiaoutpost/oa/hallway/centralhall
+/area/cadiaoutpost/oa/hallway/centralhall // guard
 	name = "Inner Hallway"
 	icon_state = "hallC1"
 	requires_power = FALSE
