@@ -89,7 +89,7 @@
 		return
 
 /mob/living/carbon/human/proc/tzeepeerminds()
-	set name = "We'll peer theirs little minds"
+	set name = "We'll pierce theirs little minds"
 	set category = "Tzeentch"
 	set desc = name
 	if(!ishuman(src))
