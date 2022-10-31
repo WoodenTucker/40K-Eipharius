@@ -1408,6 +1408,7 @@
 #include "code\modules\cultist\runes\rune_types.dm"
 #include "code\modules\cultist\runes\slaanesh.dm"
 #include "code\modules\cultist\runes\tzeentch.dm"
+#include "code\modules\cultist\specialties\tzeentch.dm"
 #include "code\modules\customitems\item_spawning.dm"
 #include "code\modules\detectivework\footprints.dm"
 #include "code\modules\detectivework\forensics.dm"

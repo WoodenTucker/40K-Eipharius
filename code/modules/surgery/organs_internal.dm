@@ -121,7 +121,7 @@
 //	 Organ detatchment surgery step
 //////////////////////////////////////////////////////////////////
 /datum/surgery_step/internal/detatch_organ
-
+	priority = 2
 	allowed_tools = list(
 	/obj/item/scalpel = 100, \
 	/obj/item/material/knife = 75, \
@@ -186,7 +186,7 @@
 //	 Organ removal surgery step
 //////////////////////////////////////////////////////////////////
 /datum/surgery_step/internal/remove_organ
-	priority = 2
+	priority = 3
 	allowed_tools = list(
 	/obj/item/hemostat = 100,	\
 	/obj/item/wirecutters = 75, \
