@@ -97,7 +97,7 @@
 	if(src.stat == DEAD)
 		return
 	if(src.quote_cd == 0)
-		//src.say("We'll peer theirs little minds")
+		//src.say("We'll pierce theirs little minds")
 		playsound(src, 'sound/effects/quotes/cults/tzeentch/peerminds.ogg', 80, 0, 5)
 		src.quote_cd = 1
 		sleep(50)
