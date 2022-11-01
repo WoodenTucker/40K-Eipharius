@@ -201,3 +201,20 @@
 		usr.put_in_hands(new /obj/item/gun/energy/augmetic/las/heavy(usr))
 
 /obj/item/organ/internal/eyes/bioprinted
+
+/obj/item/organ/internal/eyes/astartes
+	name = "occulobes"
+	icon_state = "eyes"
+	gender = PLURAL
+	organ_tag = BP_EYES
+	parent_organ = BP_HEAD
+	surface_accessible = TRUE
+	relative_size = 10
+	var/phoron_guard = 0
+	var/list/eye_colour = list(0,0,0)
+	var/innate_flash_protection = FLASH_PROTECTION_MAJOR
+	max_damage = 65
+	sales_price = 15
+	darkness_view = 20
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	
