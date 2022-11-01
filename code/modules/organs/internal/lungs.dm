@@ -351,3 +351,17 @@
 	. += "[english_list(breathtype)] breathing"
 
 	return english_list(.)
+
+
+/obj/item/organ/internal/lungs/astartes
+	name = "multilungs"
+	icon_state = "lungs"
+	gender = PLURAL
+	organ_tag = BP_LUNGS
+	parent_organ = BP_CHEST
+	w_class = ITEM_SIZE_NORMAL
+	min_bruised_damage = 45
+	min_broken_damage = 75
+	max_damage = 90
+	relative_size = 75
+

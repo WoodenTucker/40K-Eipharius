@@ -58,25 +58,33 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	name = "regenerating aura"
 	var/brute_mult = 1    //brute damage healed per tick
 	var/fire_mult = 1    //burn damage healed per tick
-//	var/toxin_mult = 1 //organ damage healed, its not working and i have no idea how to fix it
+	var/tox_mult = 1 //organ damage healed, its not working and i have no idea how to fix it
+	var/innate_heal = TRUE // Whether the aura is on, basically.
 	
 /obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
 	user.adjustBruteLoss(-brute_mult)
 	user.adjustFireLoss(-fire_mult)
-//	user.adjustToxLoss(-tox_mult)
+	user.adjustToxLoss(-tox_mult)
 
 /obj/aura/regenerating/human/astartes
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
-	var/innate_heal = TRUE // Whether the aura is on, basically.
+	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	brute_mult = 5
 	fire_mult = 5
+	tox_mult = 5
 
 /obj/aura/regenerating/human/nid
 	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
-	var/innate_heal = TRUE // Whether the aura is on, basically.
+	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	brute_mult = 10
 	fire_mult = 10
 
+/obj/aura/regenerating/human/ultimate
+	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
+	//var/innate_heal = TRUE // Whether the aura is on, basically.
+	brute_mult = 50
+	fire_mult = 50
+	tox_mult = 50
 
 /obj/aura/regenerating/human/astartes/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	return //im not sure how this works, it just does
@@ -93,15 +101,14 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 	if(fire_mult && H.getFireLoss())
 		H.adjustFireLoss(-fire_mult * config.organ_regeneration_multiplier)
-/*		
+		
 	if(tox_mult && H.getToxLoss())
 		H.adjustToxLoss(-tox_mult * config.organ_regeneration_multiplier)
-		H.adjust_nutrition(-nutrition_damage_mult)
+//		H.adjust_nutrition(-nutrition_damage_mult)
 
 	if(!can_regenerate_organs())
 		return 1
-*/
-/*
+
 /obj/aura/regenerating/human/proc/toggle()
 	innate_heal = !innate_heal
 
@@ -110,4 +117,4 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 /obj/aura/regenerating/human/proc/can_regenerate_organs()
 	return TRUE
-*/
+
