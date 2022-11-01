@@ -5,6 +5,8 @@
 	#include "../shared/items/cards_ids.dm"
 
 	#include "watchman-1.dmm"
+	#include "watchman-2.dmm"
+	#include "watchman-3.dmm"
 
 	#include "../../code/modules/lobby_music/generic_songs.dm"
 
