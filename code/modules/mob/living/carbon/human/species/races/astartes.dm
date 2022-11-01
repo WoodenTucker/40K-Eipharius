@@ -104,6 +104,7 @@ Astartes
 	dislocated = -1
 	arterial_bleed_severity = 0
 	cannot_break = 1
+	encased = "lower ribcage"
 
 /obj/item/organ/external/arm/unbreakable/astartes
 	dislocated = -1
