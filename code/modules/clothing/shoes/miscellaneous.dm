@@ -108,6 +108,8 @@
 	force = 0
 	var/footstep = 1	//used for squeeks whilst walking
 	species_restricted = null
+	canremove = 0
+	unacidable = 1
 
 /obj/item/clothing/shoes/clown_shoes/New()
 	..()
