@@ -159,6 +159,9 @@ Template:
 	name = "Enforcer"
 /obj/effect/landmark/start/ig
 	name = "Imperial Guardsman"
+
+/obj/effect/landmark/start/ig/watchman
+	name = "Cultist Guardsman"
 /obj/effect/landmark/start/sharpshooter
 	name = "Imperial Guard Specialist"
 

@@ -6,6 +6,7 @@
 	/datum/job/engineer/watchman,
 	/datum/job/ig/guardsman/sharpshooter/watchman,
 	/datum/job/mercenary/watchman,
+	/datum/job/ig/guardsman/watchman,
 	/datum/job/captain,
 	/datum/job/envoy/imperial,
 	/datum/job/engineer/imperial,

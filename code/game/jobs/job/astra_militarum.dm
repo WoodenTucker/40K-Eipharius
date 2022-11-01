@@ -111,6 +111,11 @@
 	spawn_positions = 30
 	cultist_chance = 0
 
+/datum/job/ig/guardsman/watchman
+	title = "Cultist Guardsman"
+	total_positions = 25 // they have xeno combatants to help
+	spawn_positions = 25
+
 //Whiteshield
 
 /datum/job/ig/whiteshield
@@ -192,13 +197,13 @@
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
 
 /datum/job/ig/guardsman/sharpshooter/imperial
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 5
+	spawn_positions = 5
 	cultist_chance = 0
 /datum/job/ig/guardsman/sharpshooter/watchman
 	title = "Cultist Specialist"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
 
 
 

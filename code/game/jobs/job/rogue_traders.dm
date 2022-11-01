@@ -336,8 +336,8 @@ Mercenary System
 	title = "Xeno Combatant"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 50 // admins should end round after this tbh
-	spawn_positions = 50
+	total_positions = 30
+	spawn_positions = 30
 	supervisors = "War. Your fellow xenos/cultists"
 	selection_color = "#6082B6"
 	latejoin_at_spawnpoints = TRUE
