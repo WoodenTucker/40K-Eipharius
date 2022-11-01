@@ -134,7 +134,7 @@
 	desc = "A true prankster's facial attire. A clown is incomplete without their wig and mask."
 	icon_state = "clown"	
 	item_state = "clown_hat"
-	lash_protection = FLASH_PROTECTION_MAJOR //THE CLOWN CANNOT BE STOPPED
+	flash_protection = FLASH_PROTECTION_MAJOR //THE CLOWN CANNOT BE STOPPED
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	canremove = 0
 	unacidable = 1
