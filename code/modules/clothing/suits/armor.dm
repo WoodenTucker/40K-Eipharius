@@ -1670,14 +1670,8 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -1.5
 
 
-/obj/item/clothing/suit/armor/renegadearmor
+/obj/item/clothing/suit/armor/flak1/renegadearmor
 	name = "renegade militia armor"
 	desc = "Makeshift steel armor, while not refined, it will protect you vital organs. It has strange marks carved into it"
 	icon_state = "renegade_militia_armor"
 	item_state = "renegade_militia_armor"
-	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 45, bullet = 50, laser = 45, energy = 30, bomb = 30, bio = 30, rad = 20)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS
-	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS
-	sales_price = 20
