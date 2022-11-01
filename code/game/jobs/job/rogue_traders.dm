@@ -330,3 +330,76 @@ Mercenary System
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
+
+
+
+
+
+
+//EL CLOWN
+/datum/job/servant/Clown
+	title = "Clown"
+	department_flag = PIL
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Lord Trader"
+	selection_color = "#3e0177"
+	economic_modifier = 5
+	social_class = SOCIAL_CLASS_MED
+	announced = 0
+	access = list(access_security, access_guard_common,
+			            access_medical, access_mechanicus, access_ai_upload, access_heads,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
+	minimal_access = list(access_security, access_guard_common,
+			            access_medical, access_mechanicus, access_ai_upload, access_heads,
+			            access_all_personal_lockers, access_village, access_bar, access_janitor,
+			            access_kitchen, access_cargo, access_qm, access_hydroponics,
+			            access_library, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
+	minimal_player_age = 3
+	ideal_character_age = 40
+	outfit_type = /decl/hierarchy/outfit/job/cargo/clown
+	latejoin_at_spawnpoints = 1
+	auto_rifle_skill = 9 // guard are 7-8.
+	semi_rifle_skill = 9
+	sniper_skill = 9
+	shotgun_skill = 9
+	lmg_skill = 9
+	smg_skill = 9
+	cultist_chance = 65
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Clown [current_name]")
+		H.add_stats(rand(6,26), rand(6,26), rand(6,26), rand(6,26)) //meant to be random stats and skills, ranging from the strongest to the worse stats and skills
+		H.add_skills(,rand(1,11),rand(1,11),rand(1,11),rand(1,11),rand(1,11)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are the RT's glorious clown, you have served and known this RT for a few months, but, you managed to gain his trust completly, becoming his own court jester.</font></b></span>")
+
+/decl/hierarchy/outfit/job/cargo/clown
+	name = OUTFIT_JOB_NAME("Clown")
+	id_type = /obj/item/card/id/shared/cargo
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/heads/hop
+	shoes = /obj/item/clothing/shoes/clown_shoes
+	mask = /obj/item/clothing/mask/gas/clown_hat
+	uniform = /obj/item/clothing/under/rank/clown
+	back = /obj/item/storage/backpack/clown
+	l_pocket = /obj/item/bikehorn
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stamp/clown = 1,
+	/obj/item/cane/concealed = 1,
+	/obj/item/reagent_containers/food/snacks/clownburger = 2,
+	/obj/item/stack/thrones3/ten = 1)
+
