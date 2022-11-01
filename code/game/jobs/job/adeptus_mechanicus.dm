@@ -91,6 +91,15 @@
 		H.say(":e [title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus. Obey your Explorator and Biologis and remember, your primary duty is to ensure that all machine spirits are pleased and secure technology.</font></b></span>")
 
+/datum/job/engineer/imperial
+
+	supervisors = "You obey the Rogue Trader and House Noble."
+	cultist_chance = 0
+
+/datum/job/engineer/watchman
+	title = "Dark Mechanicum Heretek"
+	supervisors = "You obey the Ruinous powers and the Chaos Astartes"
+
 /datum/job/techmenial
 	title = "Tech-Menial"
 	department = "Engineering"

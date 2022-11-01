@@ -106,6 +106,11 @@
 					H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
+/datum/job/ig/guardsman/imperial
+	total_positions = 30 // we want it lower than watchman, guard get medics and better equipment, watchmen dont, really...
+	spawn_positions = 30
+	cultist_chance = 0
+
 //Whiteshield
 
 /datum/job/ig/whiteshield
@@ -185,6 +190,18 @@
 					H.add_skills(rand(9,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
 				if(title == "Valhallan Heavy Autogunner")
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
+
+/datum/job/ig/guardsman/sharpshooter/imperial
+	total_positions = 4
+	spawn_positions = 4
+	cultist_chance = 0
+/datum/job/ig/guardsman/sharpshooter/watchman
+	title = "Cultist Specialist"
+	total_positions = 4
+	spawn_positions = 4
+
+
+
 /* //DO NOT FORGET TO READD IT IN THE MAP CONFIGS ONCE ITS DONE!!!
 //el penitente
 /datum/job/prisoner/penitent
@@ -279,6 +296,12 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
 
+
+/datum/job/ig/guardsman/sniper/imperial
+	total_positions = 2
+	spawn_positions = 2
+	cultist_chance = 0
+
 // Sergeants
 
 /datum/job/ig/sergeant
@@ -344,6 +367,11 @@
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
+
+/datum/job/ig/sergeant/imperial
+	cultist_chance = 0
+
+
 // Combat Medicae
 
 /datum/job/ig/medicae
@@ -394,6 +422,10 @@
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
+/datum/job/ig/medicae/imperial
+	cultist_chance = 0
+	total_positions = 2
+	spawn_positions = 2
 
 // Commissar
 

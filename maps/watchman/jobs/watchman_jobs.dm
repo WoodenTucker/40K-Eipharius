@@ -2,26 +2,20 @@
 
 /datum/map/watchman
 	allowed_jobs = list(
+	/datum/job/envoy/watchman,
+	/datum/job/engineer/watchman,
+	/datum/job/ig/guardsman/sharpshooter/watchman,
+	/datum/job/mercenary/watchman,
 	/datum/job/captain,
-	/datum/job/envoy,
-	/datum/job/qm2,
-	/datum/job/janissary,
-	/datum/job/mercenary,
-	/datum/job/ig/commissar,
-	/datum/job/explorer,
-	/datum/job/biologis,
-	/datum/job/engineer,
-	/datum/job/techmenial,
-	/datum/job/ig/sergeant,
-	/datum/job/ig/medicae,
-	/datum/job/ig/guardsman/sharpshooter,
-	/datum/job/ig/guardsman/sniper,
-	/datum/job/ig/guardsman,
-	/datum/job/ig/whiteshield,
-	/datum/job/chaplain,
-	/datum/job/sisterofbattle,
-	/datum/job/doctor,
-	/datum/job/undertaker,
+	/datum/job/envoy/imperial,
+	/datum/job/engineer/imperial,
+	/datum/job/ig/sergeant/imperial,
+	/datum/job/ig/guardsman/sharpshooter/imperial,
+	/datum/job/ig/guardsman/sniper/imperial,
+	/datum/job/ig/medicae/imperial,
+	/datum/job/ig/guardsman/imperial,
+
+
 	)
 
 /mob/living/carbon/human/proc/warfare_language_shit(var/language_name) //reworked from matts original intention, the default language is gothic, this will allow you to now add a faction specific language.

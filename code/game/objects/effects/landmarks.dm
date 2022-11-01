@@ -126,6 +126,10 @@ Template:
 	name = "Inquisitor"
 /obj/effect/landmark/start/envoy
 	name = "Astartes Envoy"
+/obj/effect/landmark/start/envoy/imperial // imperial is used for the watchman tdm map!
+	name = "Astartes Envoy"
+/obj/effect/landmark/start/envoy/watchman
+	name = "Chaos Astartes"
 
 //Science//
 /obj/effect/landmark/start/geneticist
@@ -158,11 +162,17 @@ Template:
 /obj/effect/landmark/start/sharpshooter
 	name = "Imperial Guard Specialist"
 
+/obj/effect/landmark/start/sharpshooter/watchman
+	name = "Cultist Specialist"
+
 
 //Engineering//
 
 /obj/effect/landmark/start/engineer
 	name = "Tech Priest Enginseer"
+
+/obj/effect/landmark/start/engineer/watchman
+	name = "Dark Mechanicum Heretek"
 
 /obj/effect/landmark/start/explorer
 	name = "Magos Explorator"

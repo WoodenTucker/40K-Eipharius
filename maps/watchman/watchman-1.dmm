@@ -1,224 +1,195 @@
-"aa" = (/obj/structure/stairs/north,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"ac" = (/turf/simulated/wall/concrete,/area/warfare/homebase/red)
-"ad" = (/turf/simulated/wall/concrete,/area/warfare/homebase/blue)
-"ae" = (/turf/simulated/mineral,/area/warfare/homebase/blue)
-"af" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"ai" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aj" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"ak" = (/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"al" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"am" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"an" = (/obj/structure/banner/red/small{pixel_y = 32},/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"ao" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"ap" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aq" = (/turf/simulated/mineral,/area/warfare/homebase/red)
-"ar" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"as" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"at" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"av" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aw" = (/turf/simulated/mineral,/area/space)
-"ax" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"ay" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"az" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/luckystars,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aA" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aB" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aC" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aD" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aE" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aF" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aG" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aH" = (/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aI" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aJ" = (/obj/structure/stairs/north,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"aK" = (/obj/structure/closet/crate,/obj/item/ammo_box/rifle,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aL" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/warfare/homebase/red)
-"aM" = (/obj/machinery/kaos/cargo_machine/blue,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aN" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"aP" = (/obj/structure/table/woodentable,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"aQ" = (/turf/simulated/mineral,/area/warfare/battlefield/capture_point/red/one)
-"aR" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"aS" = (/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"aT" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"aU" = (/obj/structure/closet/crate,/obj/structure/closet/crate,/obj/item/material/sword/combat_knife,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"aV" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"aZ" = (/obj/structure/bed,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"ba" = (/obj/structure/banner/red/small{pixel_y = 32},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"bb" = (/obj/structure/closet/cabinet,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bh" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bi" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"bj" = (/obj/structure/closet/crate,/obj/item/material/sword/combat_knife,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bk" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/grenade/frag/warfare,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bl" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bm" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bn" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bo" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bp" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bq" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"br" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/luckystars,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bs" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bt" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bu" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bv" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bw" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bx" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"by" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bz" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bB" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bC" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bD" = (/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bE" = (/obj/structure/closet/crate,/obj/item/ammo_box/rifle,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bF" = (/obj/structure/poster/blue,/turf/simulated/wall/concrete,/area/warfare/homebase/blue)
-"bG" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bH" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"bI" = (/turf/simulated/mineral,/area/warfare/battlefield/capture_point/red/two)
-"bJ" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bK" = (/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bL" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bM" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bN" = (/obj/structure/bed,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bO" = (/obj/structure/table/woodentable,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bP" = (/obj/structure/closet/cabinet,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bQ" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/grenade/frag/warfare,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bR" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bS" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"bT" = (/turf/simulated/wall/concrete,/area/warfare/battlefield/capture_point/red/two)
-"bU" = (/obj/structure/destruction_computer/blue,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"bV" = (/obj/machinery/telecomms/allinone{intercept = 1},/turf/simulated/floor/dirty,/area/warfare/homebase/red)
-"bW" = (/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"bX" = (/obj/structure/stairs/south,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"bY" = (/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"bZ" = (/turf/simulated/wall/concrete,/area/warfare/battlefield/trench_section/underground)
-"ca" = (/obj/structure/table/steel,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cb" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cc" = (/turf/simulated/mineral,/area/warfare/battlefield/capture_point/blue/two)
-"cd" = (/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"ce" = (/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"cf" = (/turf/simulated/mineral,/area/warfare/battlefield/capture_point/blue/one)
-"cg" = (/obj/structure/stairs/south,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"ch" = (/obj/structure/destruction_computer/red,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"ci" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cj" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/random,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"ck" = (/obj/structure/stairs/north,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"cl" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cm" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cn" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"co" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cp" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cq" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_left,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"cr" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"cs" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"ct" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"cu" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"cv" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cw" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cx" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cy" = (/obj/structure/stairs/north,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cz" = (/obj/structure/cargo_pad/bottom_middle,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"cA" = (/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cB" = (/obj/machinery/optable,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cC" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cD" = (/obj/structure/stairs/south,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"cE" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"cF" = (/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cG" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cH" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"cI" = (/turf/simulated/wall/concrete,/area/warfare/battlefield/capture_point/blue/two)
-"cJ" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cK" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/random,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cL" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cM" = (/obj/machinery/kaos/cargo_machine/red,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"cN" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cO" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cP" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cQ" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"cR" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"cS" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cT" = (/obj/structure/sign/redcross,/turf/simulated/mineral,/area/warfare/battlefield/capture_point/red/one)
-"cU" = (/obj/structure/sign/redcross,/turf/simulated/mineral,/area/warfare/battlefield/capture_point/red/two)
-"cV" = (/obj/structure/stairs/south,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"cW" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"cX" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_right,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/blue)
-"cY" = (/turf/simulated/mineral,/area/warfare/battlefield/trench_section/underground)
-"cZ" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"da" = (/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"db" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_left,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"dc" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dd" = (/obj/structure/torchwall{pixel_y = 30},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"de" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"df" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/two)
-"dg" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dh" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"di" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dj" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dk" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"dl" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
-"dm" = (/turf/simulated/wall/concrete,/area/warfare/battlefield/capture_point/red/one)
-"dn" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"do" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dp" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dq" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dr" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"ds" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dt" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"du" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dv" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dw" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dx" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/random,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dy" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dz" = (/turf/simulated/wall/concrete,/area/warfare/battlefield/capture_point/blue/one)
-"dA" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dB" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dC" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dD" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dE" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/random,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dF" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dG" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dH" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dI" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dJ" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/one)
-"dK" = (/obj/structure/sign/neon/cargo,/turf/simulated/wall/concrete,/area/warfare/homebase/red)
-"dL" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dM" = (/obj/structure/torchwall{pixel_y = 30},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dN" = (/obj/structure/banner/blue/small{pixel_y = 32},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/blue/one)
-"dO" = (/obj/structure/banner/blue/small{pixel_y = 32},/turf/simulated/floor/tiled,/area/warfare/homebase/blue)
-"dP" = (/obj/machinery/computer/operating,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dQ" = (/obj/structure/curtain,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dR" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dS" = (/obj/machinery/sleeper,/turf/simulated/floor/trenches,/area/warfare/battlefield/trench_section/underground)
-"dT" = (/obj/structure/cargo_pad/bottom_middle,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"dU" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_right,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"dV" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"dW" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"dX" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"dY" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"ea" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"eb" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"en" = (/obj/structure/sign/neon/cargo,/turf/simulated/wall/concrete,/area/warfare/homebase/blue)
-"ep" = (/obj/structure/sign/redcross,/turf/simulated/wall/concrete,/area/warfare/battlefield/trench_section/underground)
-"eq" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
-"er" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/warfare/battlefield/capture_point/red/two)
+"aa" = (/obj/structure/stairs/north,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"ad" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
+"ae" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
+"af" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"ai" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"aj" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"al" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"am" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"an" = (/obj/structure/banner/red/small{pixel_y = 32},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"ao" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aw" = (/turf/simulated/mineral,/area/cadiaoutpost/oa/caves)
+"az" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/luckystars,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"aA" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aB" = (/obj/structure/sign/neon/cargo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
+"aF" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aG" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"aH" = (/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"aI" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aK" = (/obj/structure/closet/crate,/obj/item/ammo_box/rifle,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aL" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
+"aM" = (/obj/machinery/kaos/cargo_machine/blue,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aN" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aP" = (/obj/structure/table/woodentable,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"aR" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"aS" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"aT" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"aU" = (/obj/structure/closet/crate,/obj/structure/closet/crate,/obj/item/material/sword/combat_knife,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"aV" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"ba" = (/obj/structure/banner/red/small{pixel_y = 32},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"bh" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bj" = (/obj/structure/closet/crate,/obj/item/material/sword/combat_knife,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bk" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/grenade/frag/warfare,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bm" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"bp" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bq" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bt" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bu" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bv" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bw" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bz" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bB" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bD" = (/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"bF" = (/obj/structure/poster/blue,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
+"bG" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bN" = (/obj/structure/bed,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"bP" = (/obj/structure/closet/cabinet,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"bR" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"bU" = (/obj/structure/destruction_computer/blue,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"bV" = (/obj/machinery/telecomms/allinone{intercept = 1},/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/caves)
+"ca" = (/obj/structure/table/steel,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"cb" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"cd" = (/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"ch" = (/obj/structure/destruction_computer/red,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"ci" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cl" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cn" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cp" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"ct" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"cu" = (/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"cv" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"cx" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cA" = (/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cB" = (/obj/machinery/optable,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cK" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/random,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"cM" = (/obj/machinery/kaos/cargo_machine/red,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"cU" = (/obj/structure/sign/redcross,/turf/simulated/mineral,/area/cadiaoutpost/oa/service/chapel)
+"cV" = (/obj/structure/stairs/south,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"cW" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"cX" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_right,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"db" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_left,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"dd" = (/obj/structure/torchwall{pixel_y = 30},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"de" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"di" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dj" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dn" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dq" = (/obj/structure/curtain,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dr" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"ds" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dt" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dF" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dG" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dH" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dJ" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dN" = (/obj/structure/banner/blue/small{pixel_y = 32},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dO" = (/obj/structure/banner/blue/small{pixel_y = 32},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"dP" = (/obj/machinery/computer/operating,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"dQ" = (/obj/structure/curtain,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dR" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dS" = (/obj/machinery/sleeper,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dT" = (/obj/structure/cargo_pad/bottom_middle,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"dV" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"en" = (/obj/structure/sign/neon/cargo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
+"eo" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"ep" = (/obj/structure/sign/redcross,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
+"eq" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"er" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"fO" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"gm" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"gw" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"hD" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"hQ" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"id" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/luckystars,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"iq" = (/obj/structure/bed,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"ix" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"ke" = (/obj/structure/cargo_pad/bottom_middle,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"kz" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"mx" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"mI" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"nP" = (/obj/effect/landmark/start{name = "House Noble"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"nU" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/cargo_pad,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"oq" = (/obj/structure/closet/cabinet,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"ou" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"ox" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"pg" = (/obj/structure/stairs/north,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"qy" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"rl" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"sy" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"sz" = (/obj/structure/bed/chair,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"sE" = (/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"tn" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"uw" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"vb" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"vg" = (/obj/structure/window/reinforced{icon_state = "rwindow"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_left,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"vD" = (/obj/structure/sign/redcross,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
+"wc" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"wl" = (/obj/machinery/sleeper,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"yO" = (/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"zO" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Ag" = (/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"AF" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"Bd" = (/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"BF" = (/obj/structure/closet/crate,/obj/item/ammo_box/rifle,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"BL" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Cb" = (/obj/structure/table/woodentable,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"Co" = (/obj/machinery/optable,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Cz" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/caves)
+"CF" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"CU" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/mob/living/simple_animal/hostile/retaliate/rat,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"ED" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"EK" = (/obj/effect/landmark{name = "krootstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"Fe" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"Gx" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"Ii" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Jb" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"JY" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"Kw" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Lb" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Le" = (/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"LK" = (/obj/machinery/computer/operating,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Nf" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"No" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"Nz" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"OS" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"PJ" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"Qj" = (/obj/effect/landmark/start/engineer,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Qy" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"Rw" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Rx" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Sh" = (/obj/structure/torchwall{pixel_y = 30},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"So" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"SV" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"TZ" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/random,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"VV" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"Wx" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"WD" = (/obj/structure/stairs/south,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"WS" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"XN" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/grenade/frag/warfare,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/security)
+"YM" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/window/reinforced,/obj/structure/cargo_pad/bottom_right,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"ZI" = (/obj/effect/landmark/start/envoy,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"ZJ" = (/obj/structure/table/steel,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 
 (1,1,1) = {"
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadenadbFadadawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadaMaTbDbDadawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadadadcrcqczcXadadadadadadadadadadadadadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadafdOaHaHaHaHdOaUadadafaHaHbKbKaHaHbhadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadafaHaHaHaHaHaHbjadadafaHaHaHaHaHaHbkadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadblbnaHaHaHaHbnboadadblbnaHaHaHaHbnboadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadbpbqaHaHaHaHazbsadbFbsaBaHaHaHaHbsbuadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadbvbsaHdeaHaHaEaFadadbuaBaHaHaHaHbybzadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadcrbBaHaHaHaHbBbCadadcrbBaHaHaHaHbBbCadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadbhaHaHaHaHaHaHaKadadaKaHaHaHaHaHaHaladaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadbHaHaHaHaHaHaHaKadadaKaHaHaHaHaHaHaladaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawadadadadbKbKbKbKbKbUbKbKbKbKbKbKbKbKbKadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeadbLbKbKbKbKbKbKbKbKbKbKbKbKbKbKbKadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeadbLbKbKbKbKctbKbKbKctbKbKbKctbKbKadaeaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeadadadadbMadadadbMadadadbMadadadbMadadaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeadbKbKamadbKbKamadbKbKamadbKbKamadaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeadbKbKbKadbKbKbKadbKbKbKadbKbKbKadaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeadbNaPbPadbNaPbPadbNaPbPadbNaPbPadaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeadadadadadadadadadadadadadadadadadaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaBaebFaeaeawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaMnUbDbDaeawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaebGdbdTcXaeCzCzCzCzCzCzCzCzCzCzCzCzawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeafdOyOyOyOyOdOaUaeaeafyOyOaSaSyOyOqyaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeafyOyOyOyOyOyObjaeaeafyOyOyOyOyOyOXNaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaerlajAgyOyOAgajaoaeaerlajyOyOyOyOajaoaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaebpmIyOyOyOyOidaAaebFaAbtAgyOyOAgaAtnaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaebvaAyOsEyOyOSoaFaeaetnbtyOyOyOyObRAFaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaebGbByOyOyOyObBaIaeaebGbByOyOyOyObBaIaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeqyyOAgyOyOAgyOaKaeaeaKyOAgyOyOAgyOPJaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaNyOyOyOyOyOyOaKaeaeaKyOyOyOyOyOyOPJaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeaSaSaSaSaSbUaSaSaSaSaSaSaSaSaSaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeJbaSaSaSaSaSaSaSaSaSaSaSaSaSaSaSaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeJbaSaSaSaSFeaSaSaSFeaSaSaSFeaSaSaeawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeaVaeaeaeaVaeaeaeaVaeaeaeaVaeaeaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaSEKamaeaSEKamaeaSEKamaeaSEKamaeaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaSaSaSaeaSaSaSaeaSaSaSaeaSaSaSaeaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeiqCboqaeiqCboqaeiqCboqaeiqCboqaeaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
@@ -240,25 +211,140 @@ awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawaaaaaaaaaaaaaaaaaaaaawawawawawawaaaaaaaaaaaaaaaaaaaaawawawawawawawawawawawaw
-awawawawawawawawawawawawcdcdcWcdcdcdcdcWcdcdawawawawawawcdcdcWcdcdcdcdcWcdcdawawawawawawawawawawawaw
-awawawawawawawawawawawawdfcdcIcIcJcdcIcIcdcdawawawawawawcdcdcIcIcJcdcIcIcddfawawawawawawawawawawawaw
-awawawawawawawawawawawawcdcdcIcmcdcdcncIcdcdcdcdcdcdcdcdcdcdcIcPcdcdcScIcdcdawawawawawawawawawawawaw
-awawawawawawawawawawawawcgcgcIasclcGcGcIcgcgcgcgcdcdcgcgcgcgcIcPcdcdcScIcgcgawawawawawawawawawawawaw
-awawawawawawawawawawawawcccccIcOcGcGcNcIcccccccccdcdcccccccccccccKcLccccccccawawawawawawawawawawawaw
-awawawawawawawawawawawawcccccIcIcIcIcIcIcccccccccdcdccccccccccccccccccccccccawawawawawawawawawawawaw
-awawawawawawawawawawawawcccccccccccccccccccccccccmcnccccccccccccccccccccccccawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZbZbZbZbZbZcFcFcFcFcFdgbZbZbZbZbZbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZcacbcicvepcHcFcYcYcFdcepcAcbcicabZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZcHcFcFcFdQcFcFcYcYcFcFdQcFcFcFdcbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZcBdPdRdSepdjcFcYcYcFdcepdSdRdPcBbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZbZbZbZbZbZcFcFcFcFcFcFbZbZbZbZbZbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawcfcfcfcfcfcfcfcfcfcfcfcfcQcRcfcfcfcfcfcfcfcfcfcfcfcfawawawawawawawawawawawaw
-awawawawawawawawawawawawcfcfdzdAdBdqdrdzcfcfcfcfcececfcfcfcfcfcfdEdFcfcfcfcfawawawawawawawawawawawaw
-awawawawawawawawawawawawcfcfdzdGdtdudCdzcfcfcfcfcececfcfcfcfdzdHcecedIdzcfcfawawawawawawawawawawawaw
-awawawawawawawawawawawawckckdzcQcececRdzckckckckcececkckckckdzdHcecedIdzckckawawawawawawawawawawawaw
-awawawawawawawawawawawawcecedzdzdLcedzdzcecececececececececedzdzdLcedzdzceceawawawawawawawawawawawaw
-awawawawawawawawawawawawcecedMdNcecedNdMceceawawawawawawcecedMdNcecedNdMceceawawawawawawawawawawawaw
-awawawawawawawawawawawawdhcececececececececeawawawawawawcececececececececedhawawawawawawawawawawawaw
+awawawawawawawawawawawawBdBdcWBdBdBdBdcWBdBdawawawawawawBdBdcWBdBdBdBdcWBdBdawawawawawawawawawawawaw
+awawawawawawawawawawawawixBdaeaegmBdaeaeBdBdawawawawawawBdBdaeaegmBdaeaeBdixawawawawawawawawawawawaw
+awawawawawawawawawawawawBdBdaeVVBdBdcnaeBdBdBdBdBdBdBdBdBdBdaedHBdBdcxaeBdBdawawawawawawawawawawawaw
+awawawawawawawawawawawawWDWDaedGclNoNoaeWDWDWDWDBdBdWDWDWDWDaedHBdBdcxaeWDWDawawawawawawawawawawawaw
+awawawawawawawawawawawawawawaefONoNoWSaeawawawawBdBdawawawawawawTZNfawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawaeaeaeaeaeaeawawawawBdBdawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawVVcnawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawaeaeaeaeaeaeBdBdBdBdBdixaeaeaeaeaeaeawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawaeZJOSciSVvDVVBdawawBdcnvDcAOSciZJaeawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawaeVVBdBdBddqBdBdawawBdBddqBdBdBdcnaeawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawaecBdPGxwlvDdjBdawawBdcnvDwlGxdPcBaeawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawaeaeaeaeaeaeBdBdBdBdBdBdaeaeaeaeaeaeawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawVVcnawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawaefOcleodraeawawawawBdBdawawawawawawTZNfawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawaedGdtNoJYaeawawawawBdBdawawawawaedHBdBdcxaeawawawawawawawawawawawawawaw
+awawawawawawawawawawawawaaaaaeVVBdBdcnaeaaaaaaaaBdBdaaaaaaaaaedHBdBdcxaeaaaaawawawawawawawawawawawaw
+awawawawawawawawawawawawBdBdaeaegmBdaeaeBdBdBdBdBdBdBdBdBdBdaeaegmBdaeaeBdBdawawawawawawawawawawawaw
+awawawawawawawawawawawawBdBdShdNBdBddNShBdBdawawawawawawBdBdShdNBdBddNShBdBdawawawawawawawawawawawaw
+awawawawawawawawawawawawixBdBdBdBdBdBdBdBdBdawawawawawawBdBdBdBdBdBdBdBdBdixawawawawawawawawawawawaw
+awawawawawawawawawawawawWDWDWDWDWDWDWDWDWDWDawawawawawawWDWDWDWDWDWDWDWDWDWDawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawpgpgpgpgpgpgpgpgpgpgawawawawawawpgpgpgpgpgpgpgpgpgpgawawawawawawawawawawawaw
+awawawawawawawawawawawawcdcdcdcdcdcdcdcdcdcdawawawawawawcdcdcdcdcdcdcdcdcdcdawawawawawawawawawawawaw
+awawawawawawawawawawawawdicdadaddncdadadcdcdawawawawawawcdcdadaddncdadadcddiawawawawawawawawawawawaw
+awawawawawawawawawawawawcdcdadcpcdcdWxadcdcdcdcdcdcdcdcdcdcdadLbcdcdBLadcdcdawawawawawawawawawawawaw
+awawawawawawawawawawawawcVcVadwcKweqeqadcVcVcVcVcdcdcVcVcVcVadLbcdcdBLadcVcVawawawawawawawawawawawaw
+awawawawawawawawawawawawawawaddseqeqdJadawawawcUcdcdcUawawawawawcKdFawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawadadadadadadawawawawcdcdawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawcpWxawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawadadadadadadcdcdcdcdcddiadadadadadadawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawadcacbhDcvepcpcdawawcdWxepLecbhDcaadawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawadcpcdcdcddQcdcdawawcdcddQcdcdcdWxadawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawadCoLKdRdSepCUcdawawcdWxepdSdRLKCoadawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawadadadadadadcdcdcdcdcdcdadadadadadadawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawcpWxawawawawawawawawawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawaddsKwdVhQCzawawawawcdcdawawawawawawcKdFawawawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawadwcNzeqerCzawawawcUcdcdcUawawawadLbcdcdBLadawawawawawawawawawawawawawaw
+awawawawawawawawawawawawpgpgadcpcdcdWxadpgpgpgpgcdcdpgpgpgpgadLbcdcdBLadpgpgawawawawawawawawawawawaw
+awawawawawawawawawawawawcdcdadaddncdadadcdcdcdcdcdcdcdcdcdcdadaddncdadadcdcdawawawawawawawawawawawaw
+awawawawawawawawawawawawdicdddbacdcdbaddcdcdawawawawawawcdcdddbacdcdbaddcddiawawawawawawawawawawawaw
+awawawawawawawawawawawawcdcdcdcdcdcdcdcdcdcdawawawawawawcdcdcdcdcdcdcdcdcdcdawawawawawawawawawawawaw
 awawawawawawawawawawawawcVcVcVcVcVcVcVcVcVcVawawawawawawcVcVcVcVcVcVcVcVcVcVawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
@@ -273,140 +359,25 @@ awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawaJaJaJaJaJaJaJaJaJaJaQaQaQaQaQaQaJaJaJaJaJaJaJaJaJaJawawawawawawawawawawawaw
-awawawawawawawawawawawawbWbWbWbWbWbWbWbWbWbWaQaQaQaQaQaQbWbWbWbWbWbWbWbWbWbWawawawawawawawawawawawaw
-awawawawawawawawawawawawdibWdmdmdnbWdmdmbWbWaQaQaQaQaQaQbWbWdmdmdnbWdmdmbWdiawawawawawawawawawawawaw
-awawawawawawawawawawawawbWbWdmcubWbWcEdmbWbWbWbWbWbWbWbWbWbWdmdvbWbWdwdmbWbWawawawawawawawawawawawaw
-awawawawawawawawawawawawbXbXdmdodpdDdDdmbXbXbXbXbWbWbXbXbXbXdmdvbWbWdwdmbXbXawawawawawawawawawawawaw
-awawawawawawawawawawawawaQaQdmdsdDdDdJdmaQaQaQcTbWbWcTaQaQaQaQaQdxdyaQaQaQaQawawawawawawawawawawawaw
-awawawawawawawawawawawawaQaQdmdmdmdmdmdmaQaQaQaQbWbWaQaQaQaQaQaQaQaQaQaQaQaQawawawawawawawawawawawaw
-awawawawawawawawawawawawaQaQaQaQaQaQaQaQaQaQaQaQcucEaQaQaQaQaQaQaQaQaQaQaQaQawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZbZbZbZbZbZcFcFcFcFcFdgbZbZbZbZbZbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZcacbcicvepcHcFcYcYcFdcepcAcbcicabZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZcHcFcFcFdQcFcFcYcYcFcFdQcFcFcFdcbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZcBdPdRdSepdjcFcYcYcFdcepdSdRdPcBbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawbZbZbZbZbZbZcFcFcFcFcFcFbZbZbZbZbZbZawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawbIbIbIbIbIbIbIbIbIbIbIbIcpbibIbIbIbIbIbIbIbIbIbIbIbIawawawawawawawawawawawaw
-awawawawawawawawawawawawbIbIbTeadXdVdYbTbIbIbIbIbYbYbIbIbIbIbIbIcjcobIbIbIbIawawawawawawawawawawawaw
-awawawawawawawawawawawawbIbIbTdWebeqerbTbIbIbIcUbYbYcUbIbIbIbTcwbYbYcxbTbIbIawawawawawawawawawawawaw
-awawawawawawawawawawawawcycybTcpbYbYbibTcycycycybYbYcycycycybTcwbYbYcxbTcycyawawawawawawawawawawawaw
-awawawawawawawawawawawawbYbYbTbTcCbYbTbTbYbYbYbYbYbYbYbYbYbYbTbTcCbYbTbTbYbYawawawawawawawawawawawaw
-awawawawawawawawawawawawdkbYddbabYbYbaddbYbYawawawawawawbYbYddbabYbYbaddbYdkawawawawawawawawawawawaw
-awawawawawawawawawawawawbYbYbYbYbYbYbYbYbYbYawawawawawawbYbYbYbYbYbYbYbYbYbYawawawawawawawawawawawaw
-awawawawawawawawawawawawcDcDcDcDcDcDcDcDcDcDawawawawawawcDcDcDcDcDcDcDcDcDcDawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawacdKacaLacacawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaccMcZdadaacawawawawawawawawawawawawawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacacacbGdbdTdUacacacacacacacacacacacacacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacatanakakakakanaracacataGaSakakaSakapacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacatakakakakakakaracacataGakakakakakbQacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacaiajakakakakajaoacacaiajakakakakajaoacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacaxayakakakakbraAacacaAbtakakakakaAaCacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacaDaAakdlakakbwbxacacaCbtakakakakbRbSacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacbGavakakakakavaIacacbGavakakakakavaIacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqacapakakakakakarbEacacbEakakakakakakaracawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawacacaNakakakakakarbEacacbEakakakakakakaracawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacaSaSaSaSaSaSchaSaSaSaSaSaSaSaSaSacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawacaRaSaSaSaSaSaSaSaSaSaSaSaSaSaSaSaSaSaSacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawacaRaSaScsaSaSaScsaSaSaScsaSaSaScsaSaSaSacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawacacacacacacaVacacacaVacacacaVacacacaVacacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqaqaqaqacbmaSbJacbmaSbJacbmaSbJacbmaSbJacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqaqaqaqacaSaSaSacaSaSaSacaSaSaSacaSaSaSacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqaqaqaqacaZbObbacaZbObbacaZbObbacaZbObbacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqaqaqaqacaLacacacacacacacacacacacacacacacawaw
-awawawawawawawawawawawawawawawawawawawawawawawawawawawaqaqaqaqaqaqaqaqaqaqaqaqaqaqbVaqaqaqaqaqaqawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadenadaLadadawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadcMaTcucuadawawawawawawawawawawawawawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadadadvbvgkeYMadadadadadadadadadadadadadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadIianaHaHaHaHanaladadIiaGoxaHaHoxaHbhadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadIiaHaHnPaHaHQjaladadIiaGaHaHaHaHaHbkadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadaikzaHaHaHaHkzszadadaikzaHaHaHaHkzszadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadgwbqaHaHaHQjazuwadaduwCFaHaHaHaHuwbuadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadEDuwaHdeaHaHbwzOadadbuCFaHaHZIaHsybzadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadvbRwaHaHaHaHRwmxadadvbRwZIaHaHaHRwmxadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawadbhaHaHaHaHaHalBFadadBFaHaHaHaHaHaHaladawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawadadRxaHaHaHaHaHalBFadadBFaHaHaHaHaHaHaladawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawadadadadoxoxoxoxoxoxchoxoxoxoxoxoxoxoxoxadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawadaRoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawadaRoxoxctoxoxoxctoxoxoxctoxoxoxctoxoxoxadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawadadadadadadQyadadadQyadadadQyadadadQyadadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadbmoxouadbmoxouadbmoxouadbmoxouadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadoxoxoxadoxoxoxadoxoxoxadoxoxoxadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadbNaPbPadbNaPbPadbNaPbPadbNaPbPadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawadaLadadadadadadadadadadadadadadadawaw
+awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawbVawawawawawawawaw
 awawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawawaw
 "}

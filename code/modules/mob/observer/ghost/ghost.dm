@@ -510,7 +510,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			to_chat(src, "<span class='warning'>antagHUD restrictions prevent you from respawning.</span>")
 		return FALSE
 	*/
-
+/* WATCHMAN ADD LATER
 	var/timedifference = world.time - timeofdeath
 	if(iswarfare())//If it's warfare then respawn is cut down to the config time, which is usually 2 minutes.
 		respawn_time = config.warfare_respawn_time
@@ -529,7 +529,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		return FALSE
 
 	return TRUE
-
+*/
 
 /proc/isghostmind(var/datum/mind/player)
 	return player && !isnewplayer(player.current) && (!player.current || isghost(player.current) || (isliving(player.current) && player.current.stat == DEAD) || !player.current.client)

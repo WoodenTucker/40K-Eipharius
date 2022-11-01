@@ -330,3 +330,33 @@ Mercenary System
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
+
+// TDM OPFOR bad guy
+/datum/job/mercenary/watchman
+	title = "Xeno Combatant"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MIN //these boys are gross
+	total_positions = 50 // admins should end round after this tbh
+	spawn_positions = 50
+	supervisors = "War. Your fellow xenos/cultists"
+	selection_color = "#6082B6"
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	cultist_chance = 0
+
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(11,16), rand(11,17), rand(11,17), rand (8,14))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.assign_random_quirk()
+		H.witchblood()
+		H.stat = UNCONSCIOUS
+		H.sleeping = 500
+		to_chat(H, "<span class='notice'><b><font size=3> You and your odd gang of allies have found themselves banded together to destroy the local Imperium forces. Do not kill fellow xeno or cultists. <br> <span class = 'badmood'> + Go to your INVASION tab and select your fate. + </span> </font></b></span>")
+		H.verbs += list(
+			/mob/living/carbon/human/proc/mercenaryclass,
+		)
+

@@ -413,7 +413,7 @@
 	if(!iswarfare())
 		return TRUE
 
-
+/*
 	if(istype(get_area(src), /area/warfare/battlefield/no_mans_land))//We're trying to go into no man's land?
 		if(locate(/obj/item/device/boombox) in user)//Locate the boombox.
 			to_chat(user, "I can't bring this with me onto the battlefield. Wouldn't want to lose it.")//No you fucking don't.
@@ -423,7 +423,7 @@
 			if(locate(/obj/item/device/boombox) in S)
 				to_chat(user, "I can't bring this with me onto the battlefield. Wouldn't want to lose it.")
 				return
-
+*/
 	if(!SSwarfare.battle_time)
 		return FALSE
 	return TRUE

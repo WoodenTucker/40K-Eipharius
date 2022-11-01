@@ -1,8 +1,11 @@
 #if !defined(using_map_DATUM)
 	#include "watchman_areas.dm"
 	#include "jobs/watchman_jobs.dm"
+	#include "watchman_unit_testing.dm"
+	#include "watchman_shuttles.dm"
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
+
 
 	#include "watchman-1.dmm"
 	#include "watchman-2.dmm"

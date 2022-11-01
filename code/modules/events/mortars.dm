@@ -4,7 +4,7 @@
 
 /datum/event/gravity/mortar
 	endWhen = 50
-
+/*
 /datum/event/mortar/start()
 
 	area_hit = pick(GLOB.mortar_areas)
@@ -43,3 +43,5 @@
 
 				drop_mortar(T, mortar_type)
 				sleep(10)
+
+				*/

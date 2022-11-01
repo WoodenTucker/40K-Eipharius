@@ -65,7 +65,7 @@
 	src.add_skills(rand(11,18),rand(9,13),rand(1,5),0,0) //skills such as melee, ranged, med, eng and surg
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
-	src.warfare_language_shit(LANGUAGE_DARKTONGUE) //secondary language
+	src.warfare_language_shit(LANGUAGE_DARKTONGUE) //secondary language // doesnt work currently
 	src.verbs -= /mob/living/carbon/human/Bloodpact/proc/givebloodstats //removes verb at the end so they can't spam it for whatever reason
 	client?.color = null
 
