@@ -5,7 +5,7 @@
 "ah" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
 "al" = (/turf/simulated/floor/trench/fake,/area/cadiaoutpost/oa/security)
 "an" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"ap" = (/obj/machinery/computer/planetarytrade,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"ap" = (/obj/structure/closet/crate,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "aq" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "ar" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "as" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
@@ -96,7 +96,7 @@
 "dD" = (/obj/structure/closet/crate,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "dE" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "dH" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
-"dK" = (/obj/structure/closet/crate,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"dK" = (/obj/structure/closet/crate,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dM" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
 "dN" = (/obj/structure/sign/medholo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
 "dO" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
@@ -184,7 +184,6 @@
 "nK" = (/turf/simulated/floor/dirty/tough/fake,/area/cadiaoutpost/oa/security)
 "nL" = (/obj/machinery/computer/operating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "ol" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"oW" = (/obj/structure/closet/crate,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "oX" = (/obj/structure/table/rack/shelf,/obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,/obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster,/obj/item/mecha_parts/mecha_equipment/repair_droid{pixel_x = 12; pixel_y = -8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "pl" = (/obj/structure/table/woodentable,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "pq" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
@@ -202,7 +201,7 @@
 "rx" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/device/boombox,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "sO" = (/obj/machinery/sleeper,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "sT" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"tU" = (/obj/structure/closet/crate,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"tU" = (/obj/structure/closet/crate,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/clothing/under/guard/renegadeuniform,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "tV" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "un" = (/obj/item/ammo_magazine/ork/slugga,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "uG" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance{dir = 1; icon_state = "door_closed"; name = "Emergency Medical"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
@@ -334,7 +333,7 @@ cycycycycycycycycycycycycycycycycycycwcDcDcwcDcDcwcDcDcwCncDcDcDcDcDcDcDcDcwcycy
 cycycycycycycycycycycycycycycycycycycwaQcDcwdvcDcwcDaQcwAccDcIcDcDcDcIcDUPcwcycycycycycycycycycycycy
 cycycycycycycycycycycycycycwcwcwcwcwcwcwvpcwcwvpcwvpcwcwAccDcDbgewzbpXcDbOcwcycycycycycycycycycycycy
 cycycycycycycycycycycycycycwcwxycDxycwcDcDcDcDcDcDcDcDcDcDcDcDcwcwcwffffffffffffffffffffffcycycycycy
-cycycycycybRbRbRbRbRbRbRbRbRcweSdYcDvpcDcDcDcDcDcDcDcDcDcDcDcDoWapcDffeCnLbhbhffmamamamaffcycycycycy
+cycycycycybRbRbRbRbRbRbRbRbRcweSdYcDvpcDcDcDcDcDcDcDcDcDcDcDcDapapapffeCnLbhbhffmamamamaffcycycycycy
 cycycycycybREwltdfhnltltafbRcwcwcwcwcweScDcDeIfScDcDcDfSlhcDcDcDcDcDffbhbhbhbhbpbhbhbhbhffffffffffcy
 cycycycycybRgdltltltltafUHbRcweSxycDcDcDcDsTfkNLjJcDsTfkNLQscDcDYqdDffBibNWOAhahbhcovwpqffpsbhMpffcy
 cycycycyeabRcvltltltltafltbRcwxycDdYvpcDcDsTNLfknvcDCyfkfkjJcDcDcDcDffffffffffffClbhbhbhbpbhbhpqffcy
