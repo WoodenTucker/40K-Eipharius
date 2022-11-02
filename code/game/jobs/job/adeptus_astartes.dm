@@ -128,6 +128,7 @@
 	title = "Chaos Astartes"
 	total_positions = 2
 	spawn_positions = 2
+	selection_color = "#373ab6"
 
 //assfartes outfits
 

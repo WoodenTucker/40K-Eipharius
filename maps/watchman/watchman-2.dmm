@@ -1,356 +1,375 @@
 "ab" = (/obj/structure/table/steel,/obj/machinery/cooker/candy,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "ad" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "ae" = (/obj/machinery/optable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"af" = (/obj/machinery/door/airlock/arbiter{req_access = list(); name = "Kroot Warsphere"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
-"ah" = (/obj/structure/table/rack/shelf,/obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,/obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster,/obj/item/mecha_parts/mecha_equipment/repair_droid{pixel_x = 12; pixel_y = -8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"al" = (/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
+"af" = (/obj/effect/landmark{name = "taustart"},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"ah" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
+"al" = (/turf/simulated/floor/trench/fake,/area/cadiaoutpost/oa/security)
 "an" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"ap" = (/obj/machinery/body_scanconsole{dir = 4; icon_state = "body_scannerconsole"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"ap" = (/obj/machinery/computer/planetarytrade,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "aq" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "ar" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "as" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"au" = (/obj/machinery/light{dir = 4; icon_state = "tube1"; tag = ""},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"au" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
 "av" = (/obj/structure/closet/secure_closet/medical2{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"ay" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"aA" = (/obj/effect/landmark/start/sharpshooter,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"ay" = (/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/structure/closet/crate,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"aA" = (/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "aC" = (/obj/structure/closet/secure_closet/medical1/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "aD" = (/obj/structure/landmine,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
 "aE" = (/turf/simulated/floor/tiled/ramp{dir = 4; icon_state = "ramptop"},/area/cadiaoutpost/oa/service/chapel)
-"aG" = (/obj/structure/closet/secure_closet/medical2{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"aG" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/security)
 "aH" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "aI" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "aJ" = (/obj/structure/table/steel,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "aL" = (/obj/structure/table/steel,/obj/machinery/microwave,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "aO" = (/obj/structure/table/woodentable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"aQ" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/security)
-"aV" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"aQ" = (/obj/structure/bed,/obj/effect/landmark/start/ig/watchman,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"aV" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "aW" = (/obj/structure/closet/crate,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"ba" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"ba" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/closet/crate,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "be" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "bf" = (/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
-"bg" = (/obj/item/ammo_magazine/ork/shoota,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"bh" = (/obj/structure/closet/crate,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"bi" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bg" = (/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bh" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"bi" = (/obj/structure/closet/crate,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/obj/item/clothing/mask/gas/renegademask,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "bj" = (/obj/machinery/cooker/fryer,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"bl" = (/obj/machinery/optable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"bn" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"bo" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"bp" = (/obj/structure/closet/crate,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bl" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"bn" = (/obj/effect/landmark/start{name = "Bouncer"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"bo" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bp" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "bs" = (/obj/structure/closet/crate/trashcart,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
-"bt" = (/obj/machinery/sleeper,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"bu" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"bx" = (/obj/structure/table/woodentable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"by" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
+"bt" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"bu" = (/obj/item/pyre/self_lit{invisibility = 100; name = "Invisible Light"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"bx" = (/obj/item/wirecutters,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"by" = (/obj/item/material/sword/choppa{color = "red"; name = "fast choppa"; weapon_speed_delay = 6},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "bz" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "bC" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "bK" = (/obj/structure/bed/chair/wheelchair,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"bN" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
-"bQ" = (/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bN" = (/obj/structure/closet/crate/freezer,/obj/item/organ/external/arm/robo_arm,/obj/item/organ/external/arm/robo_arm,/obj/item/organ/external/arm/right/robo_arm,/obj/item/organ/external/arm/right/robo_arm,/obj/item/organ/external/hand/robo_hand,/obj/item/organ/external/hand/robo_hand,/obj/item/organ/external/hand/right/robo_hand,/obj/item/organ/external/hand/right/robo_hand,/obj/item/organ/external/leg/robo_leg,/obj/item/organ/external/leg/right/robo_leg,/obj/item/organ/external/leg/right/robo_leg,/obj/item/organ/external/foot/robo_foot,/obj/item/organ/external/foot/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"bO" = (/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bQ" = (/obj/effect/landmark/start/envoy/imperial,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "bR" = (/turf/simulated/shuttle/wall,/area/cadiaoutpost/oa/tauship)
-"bT" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"bW" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
+"bT" = (/obj/item/clothing/suit/armor/berserker,/obj/item/clothing/head/helmet/berserkerhelm,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"bW" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 16},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "bZ" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"ca" = (/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/obj/structure/table/rack/shelf,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
-"cb" = (/obj/structure/table/rack/shelf,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
+"ca" = (/obj/item/gun/projectile/ork/automatic/shoota/kustom,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"cb" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "cd" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "cg" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
-"ch" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"co" = (/obj/structure/table/rack,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"ch" = (/obj/structure/torchwall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/hangarpact)
+"co" = (/obj/machinery/body_scanconsole{dir = 4; icon_state = "body_scannerconsole"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "cq" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"cr" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
-"cv" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"cw" = (/obj/machinery/bodyscanner{dir = 4; icon_state = "body_scanner_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"cx" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"cr" = (/obj/structure/closet/crate,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"cv" = (/obj/structure/table/rack,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"cw" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/hangarpact)
+"cx" = (/obj/structure/closet/crate,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "cy" = (/turf/simulated/mineral,/area/cadiaoutpost/oa/caves)
-"cz" = (/obj/item/gun/projectile/ork/automatic/shoota{accuracy = -4; color = "red"; name = "fast shoota"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"cz" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/structure/table/steel,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "cC" = (/obj/structure/banner/red{pixel_y = -32; pixel_z = 0},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
-"cD" = (/obj/item/ammo_magazine/ork/slugga,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"cD" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "cF" = (/obj/structure/table/steel,/obj/machinery/cooker/cereal,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"cI" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"cI" = (/obj/effect/landmark/start/envoy/watchman,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "cJ" = (/obj/structure/bed/chair,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"cK" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"cM" = (/obj/machinery/door/airlock/gold/tau{name = "Battlesuit Facility"; req_access = list()},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"cQ" = (/obj/machinery/door/airlock/gold/tau,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"cT" = (/obj/structure/table/rack,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"cK" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
+"cM" = (/obj/item/pyre/self_lit,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"cQ" = (/obj/structure/table/rack/shelf,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
+"cT" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
 "cU" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
 "cW" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"cX" = (/obj/structure/table/steel,/obj/item/crutches,/obj/item/crutches,/obj/item/crutches,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"cX" = (/obj/effect/decal/mecha_wreckage/tau{anchored = 1; desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions."; name = "XV8 Crisis battlesuit wreckage"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "cY" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "cZ" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"da" = (/obj/item/gun/projectile/ork/slugga,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"da" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "de" = (/obj/structure/closet/chefcloset,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"df" = (/obj/structure/closet/crate,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"df" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "dg" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"di" = (/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "dj" = (/obj/machinery/button/remote/blast_door/lever{id = "red"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dl" = (/obj/structure/banner/red{pixel_y = -32},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "dm" = (/obj/structure/closet/crate,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"dn" = (/obj/structure/closet/crate,/obj/item/melee/classic_baton/trench_club,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"dp" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/hangarpact)
+"dn" = (/obj/structure/iv_drip,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"dp" = (/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{name = "humie medicines"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "dq" = (/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/service/chapel)
 "ds" = (/obj/structure/closet/crate,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dt" = (/obj/structure/closet/crate,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"dv" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/obj/item/device/cassette/tape1,/obj/item/device/cassette/tape2,/obj/item/device/cassette/tape4,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
+"dv" = (/obj/effect/landmark/start/sharpshooter/watchman,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "dx" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/obj/item/device/cassette/tape1,/obj/item/device/cassette/tape2,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dC" = (/obj/structure/bed,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"dD" = (/obj/structure/table/woodentable,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"dD" = (/obj/structure/closet/crate,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "dE" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "dH" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
-"dK" = (/obj/effect/landmark{name = "orkstart"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"dK" = (/obj/structure/closet/crate,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dM" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
 "dN" = (/obj/structure/sign/medholo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
-"dO" = (/obj/structure/table/rack,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"dQ" = (/obj/item/pyre/self_lit,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"dO" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"dQ" = (/obj/item/pyre/self_lit{invisibility = 100; name = "Invisible Light"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "dV" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
 "dW" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
-"ea" = (/obj/item/material/sword/choppa{color = "red"; name = "fast choppa"; weapon_speed_delay = 6},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"dY" = (/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"ea" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/caves)
 "eb" = (/obj/effect/landmark/map_data{height = 2},/turf/simulated/mineral,/area/cadiaoutpost/oa/caves)
-"ef" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"ef" = (/obj/effect/landmark{name = "krootstart"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "el" = (/turf/simulated/mineral,/turf/simulated/open,/area/cadiaoutpost/oa/caves)
 "es" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "ev" = (/turf/simulated/open,/area/cadiaoutpost/oa/security)
-"ew" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"eC" = (/obj/item/gun/launcher/rcl_rifle,/obj/item/ammo_casing/heat_shell,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"eE" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"ew" = (/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"eC" = (/obj/machinery/optable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"eE" = (/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/structure/closet/crate,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "eF" = (/obj/structure/table/woodentable,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"eG" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"eG" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/closet/crate,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "eH" = (/obj/structure/closet/crate{name = "gasmask crate"},/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
-"eI" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"eJ" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"eI" = (/obj/structure/bed/chair,/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"eJ" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "eK" = (/obj/structure/closet/crate,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OPlus,/obj/item/reagent_containers/ivbag/blood/OPlus,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "eP" = (/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
-"eS" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
-"eT" = (/obj/effect/decal/mecha_wreckage/tau{anchored = 1; desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions."; name = "XV8 Crisis battlesuit wreckage"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
-"eU" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"eS" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"eT" = (/obj/item/gun/projectile/ork/automatic/shoota/big,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"eU" = (/obj/item/ammo_magazine/ork/shoota,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "eW" = (/obj/structure/dirt_wall,/obj/machinery/door/blast/shutters/open{id = "red"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "eX" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/obj/machinery/door/blast/shutters/open{id = "red"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "eY" = (/obj/machinery/door/blast/shutters/open{id = "red"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "fa" = (/obj/machinery/button/remote/blast_door/lever{id = "red"; pixel_x = -32},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "fb" = (/obj/machinery/button/remote/blast_door/lever{id = "red"; pixel_y = 32},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"fe" = (/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"ff" = (/obj/structure/bed/chair,/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"fh" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/krootship)
-"fi" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
-"fk" = (/obj/structure/table/rack,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/head/helmet/scout,/obj/item/clothing/head/helmet/scout,/obj/item/clothing/head/helmet/scout,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"fn" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/closet/crate,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/spistol_magazine,/obj/item/ammo_magazine/spistol_magazine,/obj/item/ammo_magazine/spistol_magazine,/obj/item/ammo_magazine/spistol_magazine,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"fe" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"ff" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
+"fh" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"fi" = (/obj/item/pyre/self_lit{invisibility = 100; name = "Invisible Light"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
+"fk" = (/obj/structure/table/woodentable,/obj/item/wirecutters,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"fn" = (/obj/effect/landmark/JoinLate,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "fo" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance{dir = 1; icon_state = "door_closed"; name = "Emergency Medical"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "fr" = (/obj/structure/toilet{dir = 4; icon_state = "toilet00"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "fs" = (/obj/machinery/shower{dir = 8; icon_state = "shower"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "ft" = (/obj/structure/toilet{dir = 8; icon_state = "toilet00"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "fu" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"fy" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
-"fB" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"fy" = (/obj/structure/closet/crate,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"fB" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "fC" = (/obj/structure/closet/crate/freezer,/obj/item/organ/external/arm/robo_arm,/obj/item/organ/external/arm/robo_arm,/obj/item/organ/external/arm/right/robo_arm,/obj/item/organ/external/arm/right/robo_arm,/obj/item/organ/external/hand/robo_hand,/obj/item/organ/external/hand/robo_hand,/obj/item/organ/external/hand/right/robo_hand,/obj/item/organ/external/hand/right/robo_hand,/obj/item/organ/external/leg/robo_leg,/obj/item/organ/external/leg/right/robo_leg,/obj/item/organ/external/leg/right/robo_leg,/obj/item/organ/external/foot/robo_foot,/obj/item/organ/external/foot/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "fE" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "fN" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"fO" = (/obj/structure/closet/crate,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"fO" = (/obj/structure/table/rack/shelf,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "fP" = (/obj/structure/crematorium{dir = 4; icon_state = "crema1"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "fQ" = (/obj/machinery/button/crematorium{pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"fR" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"fS" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/closet/crate,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/plasma,/obj/item/cell/plasma,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
-"fZ" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/caves)
-"gd" = (/obj/structure/sign/medholo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
+"fR" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/closet/crate,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/catapult_magazine,/obj/item/ammo_magazine/spistol_magazine,/obj/item/ammo_magazine/spistol_magazine,/obj/item/ammo_magazine/spistol_magazine,/obj/item/ammo_magazine/spistol_magazine,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"fS" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"fZ" = (/obj/structure/closet/crate,/obj/effect/floor_decal/industrial/outline/yellow,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"gd" = (/obj/structure/table/rack,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "ge" = (/turf/simulated/floor/dirty/tough/fake,/area/cadiaoutpost/oa/service/chapel)
 "gf" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security)
-"gg" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/device/cassette/tape3,/obj/item/device/cassette/tape5,/obj/item/device/cassette/tape6,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
+"gg" = (/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "go" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/service/chapel)
 "gp" = (/obj/structure/landmine,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
-"gq" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "gr" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
-"gs" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/effect/landmark/start/medical_doctor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"gt" = (/obj/structure/closet/crate,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OPlus,/obj/item/reagent_containers/ivbag/blood/OPlus,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"gw" = (/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"gH" = (/obj/effect/landmark/start{name = "Sister Of Battle"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"hn" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"hw" = (/obj/item/gun/projectile/ork/automatic/shoota/kustom,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"hC" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/structure/table/steel,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"hF" = (/obj/structure/closet/crate,/obj/item/ammo_box/rifle,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"gs" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"gt" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security/detective)
+"gH" = (/obj/effect/landmark/start{name = "Sister Of Battle"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"hn" = (/obj/structure/table/rack,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/obj/item/cell/ion,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"hF" = (/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/structure/closet/crate,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "hU" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"hZ" = (/obj/structure/iv_drip,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"io" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance{dir = 1; icon_state = "door_closed"; name = "Emergency Medical"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"hY" = (/obj/machinery/computer/planetarytrade,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "iY" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/device/cassette/tape3,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"jJ" = (/obj/structure/table/rack/shelf,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
-"kt" = (/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"ja" = (/obj/structure/closet/crate,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/obj/item/clothing/suit/armor/guardsman/bloodpact,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"jJ" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"kd" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/device/boombox,/obj/item/device/boombox,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
+"kN" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "ld" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"lh" = (/obj/structure/bed/chair,/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "lq" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
-"lt" = (/obj/structure/table/rack/shelf,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/obj/item/reagent_containers/food/snacks/meatkabob,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
+"lt" = (/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"lF" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/structure/table/rack,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"lV" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/obj/item/device/cassette/tape3,/obj/item/device/cassette/tape5,/obj/item/device/cassette/tape6,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "lY" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 16},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"ma" = (/obj/item/gun/energy/pulse/plasma/pistol/chaos,/obj/item/gun/energy/pulse/plasma/pistol/chaos,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"mk" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"mm" = (/obj/machinery/vending/medical{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"mo" = (/obj/machinery/mech_recharger,/obj/machinery/mech_recharger,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"mr" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"na" = (/obj/machinery/computer/planetarytrade,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"nw" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"ma" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"mr" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"nv" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"nw" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"nI" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "nK" = (/turf/simulated/floor/dirty/tough/fake,/area/cadiaoutpost/oa/security)
-"nL" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"nL" = (/obj/machinery/computer/operating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "ol" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"oR" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"oX" = (/obj/item/wirecutters,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
-"pl" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/closet/crate,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
-"pq" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/device/boombox,/obj/item/device/boombox,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"ps" = (/obj/structure/closet/crate/freezer,/obj/item/organ/external/arm/robo_arm,/obj/item/organ/external/arm/robo_arm,/obj/item/organ/external/arm/right/robo_arm,/obj/item/organ/external/arm/right/robo_arm,/obj/item/organ/external/hand/robo_hand,/obj/item/organ/external/hand/robo_hand,/obj/item/organ/external/hand/right/robo_hand,/obj/item/organ/external/hand/right/robo_hand,/obj/item/organ/external/leg/robo_leg,/obj/item/organ/external/leg/right/robo_leg,/obj/item/organ/external/leg/right/robo_leg,/obj/item/organ/external/foot/robo_foot,/obj/item/organ/external/foot/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/obj/item/organ/external/foot/right/robo_foot,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"oW" = (/obj/structure/closet/crate,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"oX" = (/obj/structure/table/rack/shelf,/obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,/obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster,/obj/item/mecha_parts/mecha_equipment/repair_droid{pixel_x = 12; pixel_y = -8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"pl" = (/obj/structure/table/woodentable,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"pq" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"ps" = (/obj/structure/crematorium{dir = 4; icon_state = "crema1"; id = 2},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "pz" = (/obj/structure/table/steel,/obj/structure/sink{pixel_y = 20},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"pH" = (/obj/structure/crematorium{dir = 4; icon_state = "crema1"; id = 2},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"pH" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/krootship)
 "pK" = (/obj/effect/landmark/start/captain,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"pX" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"pX" = (/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "qz" = (/turf/simulated/floor/trench/fake,/area/cadiaoutpost/oa/service/chapel)
 "qO" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/structure/table/steel,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"qW" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"rm" = (/obj/effect/landmark{name = "krootstart"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
-"rs" = (/obj/machinery/mech_recharger,/obj/mecha/combat/tau,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"qW" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"ri" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"rm" = (/obj/machinery/mech_recharger,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"rs" = (/obj/item/gun/launcher/rcl_rifle,/obj/item/ammo_casing/heat_shell,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "rx" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/device/boombox,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "sO" = (/obj/machinery/sleeper,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"sP" = (/obj/machinery/button/crematorium{id = 2; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"sQ" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/structure/table/rack,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"sT" = (/obj/machinery/sleeper{dir = 1; icon_state = "sleeper_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"un" = (/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/structure/closet/crate,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"uu" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"uG" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"uH" = (/obj/effect/landmark/start/medical_doctor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"sT" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"tU" = (/obj/structure/closet/crate,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"tV" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/obj/item/gun/energy/pulse/pulsepistol,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"un" = (/obj/item/ammo_magazine/ork/slugga,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"uG" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance{dir = 1; icon_state = "door_closed"; name = "Emergency Medical"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"uH" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/effect/floor_decal/industrial/outline/yellow,/obj/machinery/button/remote/blast_door/lever{id = "red"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "vd" = (/obj/structure/table/steel,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "vi" = (/obj/machinery/computer/operating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"vo" = (/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"vp" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"vw" = (/obj/structure/table/rack,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/obj/item/clothing/accessory/holster,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"vp" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"vw" = (/obj/machinery/bodyscanner{dir = 4; icon_state = "body_scanner_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"vy" = (/obj/item/gun/energy/pulse/plasma/pistol/chaos,/obj/item/gun/energy/pulse/plasma/pistol/chaos,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "vJ" = (/obj/machinery/vending/medical{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"vR" = (/obj/effect/landmark/start{name = "Sister Hospitaller"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"vR" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "vW" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
 "xb" = (/obj/structure/barbwire,/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "xe" = (/obj/machinery/sleeper{dir = 1; icon_state = "sleeper_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "xi" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "xj" = (/obj/structure/table/steel,/obj/item/crutches,/obj/item/crutches,/obj/item/crutches,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"xo" = (/obj/effect/landmark/start{name = "Bouncer"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
-"xy" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security/detective)
+"xy" = (/obj/structure/bed,/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "xR" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
 "xU" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"yf" = (/obj/structure/table/rack/shelf,/obj/item/mecha_parts/mecha_equipment/tool/drill/diamonddrill,/obj/item/mecha_parts/mecha_equipment/tool/drill/diamonddrill,/obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse,/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/lascannon,/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/lascannon,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"yH" = (/obj/effect/landmark/JoinLate,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"yY" = (/obj/structure/table/steel,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"ym" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security/detective)
+"yH" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
+"zb" = (/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/obj/random/loot/heavymelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "zJ" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
-"zR" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"zR" = (/obj/structure/closet/crate,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"zU" = (/obj/structure/table/rack,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"Ac" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Ah" = (/obj/structure/closet/secure_closet/medical2{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "As" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"Bd" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Bi" = (/obj/structure/table/steel,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"Bu" = (/obj/machinery/mech_recharger,/obj/mecha/combat/tau,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "BB" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/effect/landmark/start/ig,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"BJ" = (/turf/simulated/floor/trench/fake,/area/cadiaoutpost/oa/security)
-"Cl" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"Cn" = (/obj/effect/landmark/start/sharpshooter,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"CE" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"BJ" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Cl" = (/obj/effect/landmark{name = "genestart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"Cn" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Cy" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "CT" = (/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "CW" = (/obj/machinery/cooker/oven,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "Do" = (/obj/machinery/body_scanconsole{dir = 4; icon_state = "body_scannerconsole"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "Dt" = (/turf/simulated/open,/area/cadiaoutpost/oa/service/chapel)
-"DG" = (/obj/effect/landmark{name = "genestart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"DG" = (/obj/effect/landmark/start/medical_doctor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "Er" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/luckystars,/obj/item/flame/candle,/obj/item/flame/lighter/random,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"EZ" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security/detective)
-"Ff" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Ew" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"Ff" = (/obj/structure/table/rack/shelf,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/obj/item/ammo_magazine/kroot,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "Fl" = (/obj/structure/bed/chair,/obj/effect/landmark/start/ig,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "Fp" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/service/chapel)
-"FF" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
+"FF" = (/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/obj/structure/table/rack/shelf,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "FX" = (/obj/structure/bed/chair,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Gg" = (/obj/machinery/mech_recharger,/obj/machinery/mech_recharger,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "GG" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"GH" = (/obj/structure/table/woodentable,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"GH" = (/obj/machinery/vending/medical{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "Hj" = (/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/security)
 "Hr" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"Hv" = (/obj/structure/bed,/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Hv" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "HO" = (/obj/structure/table/steel,/obj/item/reagent_containers/food/condiment/small/saltshaker,/obj/item/reagent_containers/food/condiment/small/peppermill,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"HR" = (/obj/machinery/computer/operating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"HR" = (/obj/item/pyre/self_lit,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "Ie" = (/obj/structure/table/rack,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/obj/item/storage/firstaid/fire,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "Io" = (/obj/structure/landmine,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "Jj" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/obj/item/device/compass,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "Jm" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"Ju" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Ju" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/lightstubberammo,/obj/random/loot/lightstubberammo,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "Km" = (/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"Kn" = (/obj/machinery/sleeper{dir = 1; icon_state = "sleeper_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "Kz" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"Lc" = (/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"Lu" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Lc" = (/obj/structure/table/steel,/obj/item/crutches,/obj/item/crutches,/obj/item/crutches,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"Ld" = (/obj/structure/closet/crate,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
+"Lr" = (/obj/structure/closet/crate,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Lu" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "LX" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"Mh" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/closet/crate,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
-"NL" = (/obj/structure/bed,/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Mh" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"Mp" = (/obj/machinery/button/crematorium{id = 2; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"NL" = (/obj/structure/table/woodentable,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "Ob" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "Of" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "Oq" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/village)
-"Oy" = (/obj/machinery/mech_recharger,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"Oy" = (/obj/effect/landmark{name = "orkstart"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "OA" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "OC" = (/turf/simulated/mineral,/area/cadiaoutpost/oa/security)
-"OG" = (/obj/effect/landmark{name = "taustart"},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"OG" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/obj/item/device/cassette/tape1,/obj/item/device/cassette/tape2,/obj/item/device/cassette/tape4,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "OJ" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "OL" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/effect/landmark/start/ig,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "Pe" = (/obj/structure/sign/medholo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
 "Pw" = (/obj/structure/closet/cabinet,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"Qh" = (/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"Qk" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 16},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"PM" = (/obj/structure/closet/crate,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"PX" = (/obj/structure/closet/crate,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OPlus,/obj/item/reagent_containers/ivbag/blood/OPlus,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"Qh" = (/obj/machinery/door/airlock/gold/tau,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"Qk" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
+"Qs" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/effect/landmark{name = "bloodstart"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "QS" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "Rj" = (/obj/structure/table/steel,/obj/item/storage/firstaid/surgery,/obj/item/FixOVein,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"Rn" = (/obj/structure/bed/chair,/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Rn" = (/obj/structure/table/rack/shelf,/obj/item/mecha_parts/mecha_equipment/tool/drill/diamonddrill,/obj/item/mecha_parts/mecha_equipment/tool/drill/diamonddrill,/obj/item/mecha_parts/mecha_equipment/weapon/energy/pulse,/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/lascannon,/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/lascannon,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "Ro" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
+"RR" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "RS" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"RZ" = (/obj/structure/table/rack,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/head/helmet/scout,/obj/item/clothing/head/helmet/scout,/obj/item/clothing/head/helmet/scout,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "Sd" = (/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "Sj" = (/obj/structure/table/steel,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "Sn" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "SM" = (/obj/machinery/bodyscanner{dir = 4; icon_state = "body_scanner_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "SR" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
 "SX" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"Tb" = (/obj/structure/closet/crate,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/item/grenade/frag/warfare,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"Tb" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "Tq" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"TG" = (/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"Uo" = (/obj/item/gun/projectile/ork/automatic/shoota/big,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"UC" = (/obj/effect/landmark/start{name = "Innkeeper"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"UH" = (/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"UP" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"Vo" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"TG" = (/obj/item/gun/projectile/ork/slugga,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"Ut" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/closet/crate,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/lasgun,/obj/item/cell/plasma,/obj/item/cell/plasma,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"UC" = (/obj/item/gun/projectile/ork/automatic/shoota{accuracy = -4; color = "red"; name = "fast shoota"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"UH" = (/obj/machinery/light{dir = 4; icon_state = "tube1"; tag = ""},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"UP" = (/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/effect/floor_decal/industrial/outline/yellow,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"Vo" = (/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
 "VH" = (/obj/effect/landmark/start/warden,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "VU" = (/obj/structure/closet/crate{name = "gasmask crate"},/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
-"Wl" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/shoota,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/obj/item/ammo_magazine/ork/slugga,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
+"Wl" = (/obj/machinery/door/airlock/arbiter{req_access = list(); name = "Kroot Warsphere"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
+"Wm" = (/obj/structure/closet/crate,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"WO" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "WS" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/obj/effect/landmark/start/ig,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
+"Xh" = (/obj/structure/sign/medholo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
 "XH" = (/obj/machinery/cooker/grill,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"YZ" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
-"ZG" = (/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{name = "humie medicines"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
+"Yp" = (/obj/machinery/door/airlock/gold/tau{name = "Battlesuit Facility"; req_access = list()},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
+"Yq" = (/obj/effect/landmark/start/hop/cult,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
+"YZ" = (/obj/machinery/sleeper,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
+"ZG" = (/obj/structure/closet/crate,/obj/effect/floor_decal/industrial/outline/yellow,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "ZQ" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/obj/structure/iv_drip,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 
 (1,1,1) = {"
 cycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycycy
-cycycycycycycycycycycycycycycycycycydpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpdpcycycycycycycycycycycycy
-cycycycycycycycycycycycycycycycycycydpeJNLdpNLNLdpNLeJdpeGeJeJfOfOLceJmabhdpcycycycycycycycycycycycy
-cycycycycycycycycycycycycycycycycycydpeJeJdpeJeJdpeJeJdpeGeJeJeJeJeJeJeJeJdpcycycycycycycycycycycycy
-cycycycycycycycycycycycycycycycycycydpNLeJdpeJeJdpeJNLdpfReJeJeJeJeJeJeJUHdpcycycycycycycycycycycycy
-cycycycycycycycycycycycycydpdpdpdpdpdpdpcKdpdpcKdpcKdpdpfReJeJktgwdibQeJfedpcycycycycycycycycycycycy
-cycycycycycycycycycycycycydpdpHveJHvdpeJeJeJeJeJeJeJeJeJeJeJeJdpdpdpYZYZYZYZYZYZYZYZYZYZYZcycycycycy
-cycycycycybRbRbRbRbRbRbRbRbRdpeJTGeJcKeJeJeJeJeJeJeJeJeJeJeJeJbpnaeJYZblHRhnhnYZayayayayYZcycycycycy
-cycycycycybRnLQhuGcTQhQhOGbRdpdpdpdpdpeJeJeJRnbneJeJeJbnffeJeJeJeJeJYZhnhnhnhneEhnhnhnhnYZYZYZYZYZcy
-cycycycycybRcoQhQhQhQhOGaubRdpeJHveJeJeJeJLubxdDboeJLubxdDCEeJeJeJdfYZyYpsmraGFFhnapcwcvYZpHhnsPYZcy
-cycycycyfZbRvwQhQhQhQhOGQhbRdpHveJTGcKeJeJLudDbxpXeJbidDbxboeJeJeJeJYZYZYZYZYZYZDGhnhnhneEhnhncvYZcy
-cycycycyfZbRfkQhQhQhQhOGQhbRdpdpdpdpdpeJeJgqdDGHboeJLudDGHboeJeJdfdfYZYZbthnbthnhnhnhnhnYZhnhnhnYZcy
-cycycycyfZbRsQQhefeIQhQhOGbRdpeJTGeJcKeJeJeJaVVoeJeJeJaVmkeJdfdfdpdpYZYZoRDGhnhnhnhnDGcvYZpHhnhnYZcy
-cycycycyfZbRbRbRbRbRQhQhQhbRdpHveJHvdpeJeJeJeJeJeJeJeJeJeJeJdpdpdpololeEhnhnhnDGhnapcwQkYZYZYZYZYZcy
-cycycycyfZbRmoOyQhbRbRQhQhbRdpdpdpdpdpdpuneJeJeJeJeJeJeJeJeJdpololololeEhnsThnsThnhnhncvYZcycycycycy
-cycycycyfZbRrsOyQhQhbRQhaubRolololololdpuneJeJeJeJeJeJeJeJeJdpololololYZgdYZYZYZeEYZYZYZYZcycycycycy
-cycycycyfZbRQhQhQhQhcMQhQhcQolololololdpuneJeJeJeJeJeJeJeJeJdpolololololololYZdOhnhnhnhCYZYZcycycycy
-cycycycycybRahyfQhQhbRQhQhbRbuololololdpdpdpdpeJeJeJdpdpdpdpdpolololololololYZhZhnhnhnhnmmYZcycycycy
-cycycycycybRzRQhQhQhbRQhbRbRololololololololololadololololololololololololollqhnhnhnhnhncXYZcycycycy
-cycycycycybROyOyQhQhbRbRbRolololololololololololadadololololololololololololdNhZqWCleUgtmmYZcycycycy
-cycycycycybRrsOyQhbRbRpqdvololololololololololadoladololololololololololololcgYZYZYZYZYZYZYZcycycycy
-cycycycycybRbRbRbRbRggololololololololololololololadolololololololololololololololololololololcycycy
-cycycycycyfhfhfhfhfhfholololololololololololololadololololololololololololololololololololololcycycy
-cycycycycyfhrmcacbrmfhuuololololololololololololololadololololololololololololololololololololcycycy
-cycycycycyfhbyeSeSeSafololololololololololololololololololololololololololololololololololololcycycy
-cycycycycyfhrmjJltrmfholololololololcgcgcgcgcgoladololcgcgcgcgcgololololololololololololololololcycy
-cycycycycyfhfhfhfhfhfhOCfEfEfEfEololfEfEfEfEfEololadolfEfEfEfEfEololfEfEfEfEolxycIxycIcIEZcIcIxycycy
-cycycycycycycycycycycycyololololololololololololololololololololololololololcycIEZcIcIxycIcDdacDcycy
-cycycycycycycycycycycycyololololololololololololadolololololololololololololcycIxyZGcIZGcDdacDcDcDcy
-cycycycycycycycycycycycyolololololololololololVUololVUolololololololololololcyxyZGcIcIxyeCcDxydacDcy
-cycycycycycycycycycycycyfEfEfEfEfEfEfEfEfEfEfEfEololfEfEfEfEfEfEfEfEfEfEfEfEcycIcIxyeCcIcIcIdacDdKcy
-cycycycycycycycycycycycyfNfNfNfNfNfNfNfNfNfNfNfNololfNfNfNfNfNfNfNfNfNfNfNfNcycIxycIZGcIdKbgdKeCcIcy
-cycycycycycycycycycycycyHjHjHjHjHjHjHjHjHjHjHjaQHjHjaQHjHjHjHjHjHjHjHjHjHjHjcycIZGeacIxybgbgbgbgdKcy
-cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKcycycydKvoeCbgxyhwczbgcy
-cycycycycycycycycycycycyHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjcycycycycIxyczdKbgcIcycy
-cycycycycycycycycycycycyfEfEfEfEfEfEfEfEfEfEfEfEgfgffEfEfEfEfEfEfEfEfEfEfEfEcycycycyeadKbgUobgcycycy
+cycycycycycycycycycycycycycycycycycycwchcwcwchcwcwcwchcwcwcwchcwcwcwchcwcwcwcycycycycycycycycycycycy
+cycycycycycycycycycycycycycycycycycycwdvaQcwaQaQcwaQdvcwCnbTfZWmWmaAbTvyPMcwcycycycycycycycycycycycy
+cycycycycycycycycycycycycycycycycycycwcDcDcwcDcDcwcDcDcwCncDcDcDcDcDcDcDcDcwcycycycycycycycycycycycy
+cycycycycycycycycycycycycycycycycycycwaQcDcwdvcDcwcDaQcwAccDcIcDcDcDcIcDUPcwcycycycycycycycycycycycy
+cycycycycycycycycycycycycycwcwcwcwcwcwcwvpcwcwvpcwvpcwcwAccDcDbgewzbpXcDbOcwcycycycycycycycycycycycy
+cycycycycycycycycycycycycycwcwxycDxycwcDcDcDcDcDcDcDcDcDcDcDcDcwcwcwffffffffffffffffffffffcycycycycy
+cycycycycybRbRbRbRbRbRbRbRbRcweSdYcDvpcDcDcDcDcDcDcDcDcDcDcDcDoWapcDffeCnLbhbhffmamamamaffcycycycycy
+cycycycycybREwltdfhnltltafbRcwcwcwcwcweScDcDeIfScDcDcDfSlhcDcDcDcDcDffbhbhbhbhbpbhbhbhbhffffffffffcy
+cycycycycybRgdltltltltafUHbRcweSxycDcDcDcDsTfkNLjJcDsTfkNLQscDcDYqdDffBibNWOAhahbhcovwpqffpsbhMpffcy
+cycycycyeabRcvltltltltafltbRcwxycDdYvpcDcDsTNLfknvcDCyfkfkjJcDcDcDcDffffffffffffClbhbhbhbpbhbhpqffcy
+cycycycyeabRRZltltltltafltbRcwcwcwcwcweScDriNLpljJcDsTfkpljJcDcDbiLrffffYZbhYZbhbhbhbhbhffbhbhbhffcy
+cycycycyeabRlFltnItVltltafbRcweSdYcDvpcDcDcDBdkNcDcDcDBdBJcDjatUcwcwffffaVClbhbhbhbhClpqffpsbhbhffcy
+cycycycyeabRbRbRbRbRltltltbRcwxycDxycwcDcDcDcDcDcDcDcDcDcDcDcwcwcwololbpbhbhbhClbhcovwbWffffffffffcy
+cycycycyeabRGgrmltbRbRltltbRcwcwcwcwcwcwaycDcDcDcDcDbocwcwcwcwololololbpbhKnbhKnbhbhbhpqffcycycycycy
+cycycycyeabRBurmltltbRltUHbRolololololcweEcDcDcDcDcDcwcwolololololololffXhffffffbpffffffffcycycycycy
+cycycycyeabRltltltltYpltltQholololololcwaycDcDcDcDcDcwQkololololololololololffzUbhbhbhczffffcycycycy
+cycycycycybRoXRnltltbRltltbRRRololololcwcwchcwcDcDcDcwolololololololololololffdnbhbhbhbhGHffcycycycy
+cycycycycybRMhltltltbRltbRbRololololololololololadololololololololololololollqbhbhbhbhbhLcffcycycycy
+cycycycycybRrmrmltltbRbRbRolololololololololololadadololololololololololololdNdnbleJdaPXGHffcycycycy
+cycycycycybRBurmltbRbRkdOGololololololololololadoladolololololololHRololololcgffffffffffffffcycycycy
+cycycycycybRbRbRbRbRlVololololololHRolololololololadolololololololololololololololololololololcycycy
+cycycycycypHpHpHpHpHpHolololololololololololololadololololololololololololololololololololololcycycy
+cycycycycypHefFFFfefpHQkololololololololololololololadololololololololololololololololfiolololcycycy
+cycycycycypHHvcKcKcKWlololololololololololololololololololololololololololololololololololololcycycy
+cycycycycypHefcQfOefpHolololololololcgcgcgcgcgoladololcgcgcgcgcgololololololololololololololololcycy
+cycycycycypHpHpHpHpHpHOCfEfEfEfEololfEfEfEfEfEololadolfEfEfEfEfEololfEfEfEfEolgtdOgtdOdOymdOdOgtcycy
+cycycycycycycycycycycycyololololololololololololololololololololololololololcydOymdOdOgtdOunTGuncycy
+cycycycycycycycycycycycyololololololololololololadolololololololololololololcydOgtdpdOdpunTGunununcy
+cycycycycycycycycycycycyolololololololololololVUololVUolololololololololololcygtdpdOdOgtrsungtTGuncy
+cycycycycycycycycycycycyfEfEfEfEfEfEfEfEfEfEfEfEololfEfEfEfEfEfEfEfEfEfEfEfEcydObugtrsdOdObuTGunOycy
+cycycycycycycycycycycycyfNfNfNfNfNfNfNfNfNfNfNfNololfNfNfNfNfNfNfNfNfNfNfNfNcydOgtdOdpdOOyeUOyrsdOcy
+cycycycycycycycycycycycyHjHjHjHjHjHjHjHjHjHjHjaGHjHjaGHjHjHjHjHjHjHjHjHjHjHjcydOdpbydOgteUeUeUeUOycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKcycycyOyggrseUgtcaUCeUcy
+cycycycycycycycycycycycyHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjcycycycydOgtUCOyeUdOcycy
+cycycycycycycycycycycycyfEfEfEfEfEfEfEfEfEfEfEfEgfgffEfEfEfEfEfEfEfEfEfEfEfEcycycycybyOyeUeTeUcycycy
 cycycycycycycycycycycycygfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevcgcgcgcgcgcgevevfEfEfEfEfEfEevevcgcgcgcgcgcgevevcycycycycycycycycycycycy
-cycycycycycycycycycycycyevevcgplCTCTMhcgevevevevevevevevevevcgplCTCTMhcgevevcycycycycycycycycycycycy
-cycycycycycycycycycycycyevevcgbaCTCTWlcgevevevevevevevevevevcgbaCTCTWlcgevevcycycycycycycycycycycycy
-cycycycycycycycycycycycyfEfEcgfnCTCTfScgfEfEfEfEevevfEfEfEfEcgfnCTCTfScgfEfEcycycycycycycycycycycycy
+cycycycycycycycycycycycyevevcgbaCTCTeGcgevevevevevevevevevevcgbaCTCTeGcgevevcycycycycycycycycycycycy
+cycycycycycycycycycycycyevevcgmrCTCTLucgevevevevevevevevevevcgmrCTCTLucgevevcycycycycycycycycycycycy
+cycycycycycycycycycycycyfEfEcgfRCTCTUtcgfEfEfEfEevevfEfEfEfEcgfRCTCTUtcgfEfEcycycycycycycycycycycycy
 cycycycycycycycycycycycyololcgcgzJCTcgcgolololfEevevfEolololcgcgzJCTcgcgololcycycycycycycycycycycycy
 cycycycycycycycycycycycyolololololololololololfEevevfEolololololololololololcycycycycycycycycycycycy
 cycycycycycycycycycycycyolololololololololololfEevevfEolololololololololololcycycycycycycycycycycycy
@@ -366,10 +385,10 @@ cycycycycycycycycycycycyevevfEololololfEevevevevevevevevevevfEololololfEevevcycy
 cycycycycycycycycycycycyevevfEfEfEfEfEfEevevfEfEfEfEfEfEevevfEfEfEfEfEfEevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
-cycycycycycycycycycycycyBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJBJcycycycycycycycycycycycy
-cycycycycycycycycycycycyfifififififififififififialalfififififififififififificycycycycycycycycycycycy
-cycycycycycycycycycycycydVdVdVdVdVdVdVdVdVdVdVdValaldVdVdVdVdVdVdVdVdVdVdVdVcycycycycycycycycycycycy
-cycycycycycycycycycycycyaDaDaDaDaDaDaDaDaDaDaDaDalalaDaDaDaDaDaDaDaDaDaDaDaDcycycycycycycycycycycycy
+cycycycycycycycycycycycyalalalalalalalalalalalalalalalalalalalalalalalalalalcycycycycycycycycycycycy
+cycycycycycycycycycycycyauauauauauauauauauauauauVoVoauauauauauauauauauauauaucycycycycycycycycycycycy
+cycycycycycycycycycycycydVdVdVdVdVdVdVdVdVdVdVdVVoVodVdVdVdVdVdVdVdVdVdVdVdVcycycycycycycycycycycycy
+cycycycycycycycycycycycyaDaDaDaDaDaDaDaDaDaDaDaDVoVoaDaDaDaDaDaDaDaDaDaDaDaDcycycycycycycycycycycycy
 cycycycycycycycycycycycyesSRSResesesesQSesesesesesesesesesesesesesesSRSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesSRSResQSesesesesesesSResQSQSQSesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSResesesesesesSRSResesesesesesIoesesescycycycycycycycycycycycy
@@ -378,11 +397,11 @@ cycycycycycycycycycycycyesesesesesesesesesesesesesesesSRSResesesesesesesesescycy
 cycycycycycycycycycycycyesesesSResOqOqesesesesesOqesOqesesesesesesSRSRSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesSRSResesesIoesesesesesOqesesesesSResesesSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesSRSResSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesQSQSesesesesSResesesesSRSRSResesesesesesesesdQescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesQSQSesesesesSResesesesSRSRSResesesesesesesescMescycycycycycycycycycycycy
 cycycycycycycycycycycycyesQSQSesesesesesSROqesesesesesesesesesesOqesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesQSesesOqesesesesSResesesesesesesesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesIoesesesSRSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesdQesesesesesesesesesesesesSResesesQSQSesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesescMesesesesesesesesesesesesSResesesQSQSesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesSRSResesesesSResOqesesesesesesesQSesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesxbesesesesSResesesesesesesesesesQSQSescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesIoesesSRSResesesesesesesesesesesIoesesesQSescycycycycycycycycycycycy
@@ -392,7 +411,7 @@ cycycycycycycycycycycycyesSResSResesesesesesesesesesesesesesesesesesesesesescycy
 cycycycycycycycycycycycyesesesSRSResesesesesesesesesesesesesesesSResesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesIoesSResSResOqescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSResesIoesesQSQSQSesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResesesesesesesesesOqesesdQesSResesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesSResesesesesesesesesOqesescMesSResesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesOqesesesesesesesesesesesesesesesesesSResesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesSResesSRSRSResSRSResesesesesesIoIoescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesSRSRSResesesesesSResOqOqesesesesesescycycycycycycycycycycycy
@@ -404,7 +423,7 @@ cycycycycycycycycycycycyesesesesesQSQSQSesesesSROqesesesSResesesesesesesesescycy
 cycycycycycycycycycycycyesesesesesesesesOqesesSResesesesesesesesesOqesSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesIoesesesesesesesesesesesesesesesSResesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSRSResesesesesesesdQesesSResesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesSRSResesesesesesescMesesSResesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSResesesQSesesesesesesesesIoesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesIoIoIoesesesesQSesesesesesesesesIoIoesIoesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesIoesOqOqesesesesesQSesesesesesesesescycycycycycycycycycycycy
@@ -414,7 +433,7 @@ cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesOqOqesesesSRescycy
 cycycycycycycycycycycycyesesesesesesOqesesesesesesesesesSResesesOqesQSesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesOqOqesQSQSesesesesesxbesesesOqQSIoesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesIoesesOqesesesesesesesesSResesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSRSRSResesesesesesIoesesesesesesesesesesdQesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesSRSRSResesesesesesIoesesesesesesesesesescMesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRSResesesesesesesesesIoesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesSRSRSRSRSRSResesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesOqesesesesesesesesesesesesSResesesSRSResesescycycycycycycycycycycycy
@@ -422,40 +441,40 @@ cycycycycycycycycycycycyesesIoesesesesesesesesesesesesSRSResesesesesSRSRSRescycy
 cycycycycycycycycycycycyesesesesesesesesesSResesesesesesesesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesSResesesesesesSResesOqesesesesesIoesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesSResesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesOqesesesIoeseseseseseseTesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesesOqesesesIoesesesesesescXesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesesesxbesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesdQesesesesesesesesesesesesesesesesesesesesesSRSRescycycycycycycycycycycycy
+cycycycycycycycycycycycyescMesesesesesesesesesesesesesesesesesesesesesSRSRescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesIoesesesSResesesOqOqesesesesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesOqOqesesesesesesesesesIoSResesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesOqesesesesesesesesesesesesSResesesOqesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesOqesesesesesesesesesesesesSRSResesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesOqesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesOqesSResesesesesSRSRSRSRSRSResesesesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesSResesesesesQSQSQSQSQSQSesesoXesesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesSResesesesesQSQSQSQSQSQSesesbxesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesIoIoesesesesesIoesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesIoesesoXesSRQSIoOqOqOqOqOqOqIoQSSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesIoIoQSSResesesesoXesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesIoesesbxesSRQSIoOqOqOqOqOqOqIoQSSResesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesIoIoQSSResesesesbxesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesesesQSSResesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyIoIoIoIoIoIoIoSRQSesOqesesesesOqesQSSRIoIoIoIoIoIoIocycycycycycycycycycycycy
 cycycycycycycycycycycycySRQSSRQSSRQSSRQSSResOqesesIoesOqesQSSRQSSRQSSRQSSRQScycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesIoOqIoesesesOqIoesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycySRQSSRQSSRQSSRQSSResOqesoXxoesOqesQSSRQSSRQSSRQSSRQScycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesesesIoOqIofnesesOqIoesesesesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycySRQSSRQSSRQSSRQSSResOqesbxbnesOqesQSSRQSSRQSSRQSSRQScycycycycycycycycycycycy
 cycycycycycycycycycycycyIoIoIoIoIoIoIoSRQSesOqesesesesOqesQSSRIoIoIoIoIoIoIocycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRQSesOqesesIoesOqesQSSResesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesesesQSSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesIoesesesSRQSesIoesesesIoesesQSSResesesesesoXescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesIoesesesSRQSesIoesesesIoesesQSSResesesesesbxescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesOqOqOqesesSRQSIoOqOqOqOqOqOqIoQSSResIoIoesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesIoesesesesIoesesesesesIoesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesoXesesQSQSQSQSQSQSesesesesesesesesdQescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesbxesesQSQSQSQSQSQSesesesesesesesescMescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesSRSRSRSRSRSResesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesQSQSesesOqesesesesesesesesesesesesesesesesOqesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesoXeTesesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesbxcXesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesIoesesesesesesesIoesesesesesesesesxbesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesSResesesesesesesesesesesesesesesesesesesSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesxbSResesesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesSResesesesesSRSResesIoesesSRSResesesesesesOqesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesOqesesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesdQesesesesesesesesesesesesesQSesesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesescMesesesesesesesesesesesesesQSesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesSRSResesesesesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesQSesesesesOqOqesesesesesSRSResesesIoesesSRSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesSResesesesesesesesesescycycycycycycycycycycycy
@@ -466,7 +485,7 @@ cycycycycycycycycycycycyesesesesesesesSResesesesSRSResesesesesSResSResesesescycy
 cycycycycycycycycycycycyesesesSResesSResesesesesesesesesesesesesesSResesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSResIoesesesesesesesesesSResSRSResQSescycycycycycycycycycycycy
 cycycycycycycycycycycycyesSRSResesesesesesesesesesesesIoesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyeseseseseTesesesesesesesesesesesesesesdQesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesescXesesesesesesesesesesesesesescMesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesesesSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesesesOqOqOqesesIoSResesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesIoesesesesesQSQSQSOqOqOqOqesesesesesesesesescycycycycycycycycycycycy
@@ -474,8 +493,8 @@ cycycycycycycycycycycycyesesesesesesesOqOqOqesesesesesesesesesesesesesesesescycy
 cycycycycycycycycycycycyesesesSResesesOqesesesesesesesesQSesesesesSResesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesSResesesOqesesesesesesesesQSesesesesesesesQSescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesOqesesesesesesesesQSesQSesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesdQesesesesesesQSQSesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesIoesdQesesesesesesOqOqOqOqesesesesesesesesesSResescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesesesesesesescMesesesesesesQSQSesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesIoescMesesesesesesOqOqOqOqesesesesesesesesesSResescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesIoesesesesesesesesesesesesesesesSRSResesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesesesesesSRSRSResIoesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesSResesesesesesesIoesesesesesesesesesesesesesescycycycycycycycycycycycy
@@ -486,7 +505,7 @@ cycycycycycycycycycycycyesesesesOqesesesesesesSRSResesesesesSRSResesesesesescycy
 cycycycycycycycycycycycyesesesesesesesesesesesesSRSResesOqSRSResesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesQSQSQSesOqesesesSResesesSResesesesIoesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesIoesesesesesesesesesesSResesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSResesesesesesesesSRSResesesesSResesesesesdQesesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesSResesesesesesesesSRSResesesesSResesesesescMesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesSResesesesesesesesSResesesesesSResesesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesSResesesesesSResesesOqesesesesesesesesIoesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesSResesesesesesesesesesesSResesOqesesesesescycycycycycycycycycycycy
@@ -494,7 +513,7 @@ cycycycycycycycycycycycyesesOqesesSResesesesesesIoesesesesSResesesesesesesescycy
 cycycycycycycycycycycycyesesesesesesesesesesesSResesesesesSResesIoesSResesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesOqesesesSResesesIoesesesesesesSResesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesesesesSResesesesesesesQSQSQSQSesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesdQesesesesesesesesesOqesesesesesQSQSesescycycycycycycycycycycycy
+cycycycycycycycycycycycyesesesesesescMesesesesesesesesesOqesesesesesQSQSesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesIoesesesesesesesesesesesesesSRSResesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRSResesesesesesesSRSResesesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesSRSResesesesIoesesesesesesesesesOqesesescycycycycycycycycycycycy
@@ -529,8 +548,8 @@ cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcddEDtDtdEcdcdcdcdcdcdcdcdcdcdcdcycy
 cycycyelcycyelcyelcycycycdcdcdcdcdcdcdcdcdcdcddEDtDtdEcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
 cycyelcycycycycycycycycycdcdvWvWdHePvWvWcdcdcddEDtDtdEcdcdcdvWvWdHePvWvWcdcdcycycycycycycycycycycycy
 cycycycycycycycycycycycydEdEvWnwePePJuvWdEdEdEdEDtDtdEdEdEdEvWnwePePJuvWdEdEcycycycycycycycycycycycy
-cycycycycycycycycycycycyDtDtvWcrFffyfyvWDtDtDtDtDtDtDtDtDtDtvWcrFffyfyvWDtDtcycycycycycycycycycycycy
-cycycycycycycycycycycycyDtDtvWTbfyfyfBvWDtDtDtDtDtDtDtDtDtDtvWTbfyfyfBvWDtDtcycycycycycycycycycycycy
+cycycycycycycycycycycycyDtDtvWcrePePfyvWDtDtDtDtDtDtDtDtDtDtvWcrePePfyvWDtDtcycycycycycycycycycycycy
+cycycycycycycycycycycycyDtDtvWTbePePfBvWDtDtDtDtDtDtDtDtDtDtvWTbePePfBvWDtDtcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtvWvWvWvWvWvWDtDtdEdEdEdEdEdEDtDtvWvWvWvWvWvWDtDtcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpdEDtDtDtDtDtDtDtDtDtDtelcycycyelcycycycycycycy
 cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpdEDtDtDtDtDtDtDtDtDtDtcycycycycycycycycycycycy
@@ -541,31 +560,31 @@ cycycycycycycycycycycycygegegegegegegegegegegegegegegegegegegegegegegegegegecycy
 cycycycycycycycycycycycydqdqdqdqdqdqdqdqdqdqdqgodqdqgodqdqdqdqdqdqdqdqdqdqdqcycycycycycycycycycycycy
 cycycycycycycycycycycycyxRxRxRxRxRxRxRxRxRxRxRxRcdcdxRxRxRxRxRxRxRxRxRxRxRxRcycycycycycycycycycycycy
 cycycycycycycycycycycycydEdEdEdEdEdEdEdEdEdEdEdEcdcddEdEdEdEdEdEdEdEdEdEdEdEcycycycycycycycycycycycy
-cycycycycycycycycycycybscdcdcdcdcdcdcdcdcdcdcdeHcdcdeHcdcdcdcdcdcdcdcdcdcdcdePePePePcycycycycycycycy
+cycycycycycycycycycycybscdcdcdcdcddQcdcdcdcdcdeHcdcdeHcdcdcdcdcddQcdcdcdcdcdePePePePcycycycycycycycy
 cycycycycycycycycycycybscdcdcdcdcdcdcdcdcdcdcdcCcdcddlcdcdcdcdcdcdcdcdcdcdcdePePePePcycycycycycycycy
 cycycycycycycycycyvWvWvWvWeWvWvWvWvWvWvWvWvWvWvWeXeYvWvWvWvWeWeWdWvWvWvWvWvWvWvWeWeWvWvWvWvWcycycycy
-cycycycycycycycycyvWdmKmaWRSdjldvWaJpzvdHOvdaLvWfacqvWLXxifbSdSdSdSdxUvWvWLXxifbSdSdSdSdcxvWcycycycy
-cycycycycycycycycyvWRSRSRSRSRSRSvWabRSRSRSRSSjvWSdSdvWLXxiSdSdSdSdSdxUvWvWLXxiSdSdSdSdSddnvWcycycycy
-cycycycycycycycycyvWRSRSFlOJRSRSdWcFRSRSRSRSbevWSdSdvWFXKzSdSdSdSdKzcJvWvWFXKzSdSdSdSdKzcJvWcycycycy
-cycycycycycycycycyvWaIHraOaOSnldvWbeRSRSUCRSJmvWSdcqvWGGbzSdSdSdSdErbCdWvWbCJjSdSdSdSdbChUvWcycycycy
-cycycycycycycycycydWRSWSeFaOBBRSvWvdRSRSRSRSRSvWSdSdvWcWbCSdSdSdSdfucYvWvWhUJjSdSdSdSdcZTqvWcycycycy
-cycycycycycycycycyvWRSHraOaOSnRSvWJmRSdeCWXHbjvWSdSdvWOfdgSdVHSdSddgSXvWvWOfdgSdSdVHSddgSXvWcycycycy
-cycycycycycycycycyvWaIRSOLObRSldvWvWRSvWvWvWvWvWSdcqvWcxSdSdSdSdSdashFvWvWhFSdSdSdSdSdSdasvWcycycycy
-cycycycycycycycycyvWRSRSRSRSRSRSRSRSRSRSRSRSRSRSpKSdvWdnSdSdCnSdSdashFvWvWhFSdSdSdCnSdSdasvWcycycycy
-cycycycycycycycycyvWRSRSOJFlRSRSRSFlOJRSRSRSRSfoSdyHRSRSRSRSaARSRSRSRSRSRSRSRSRSRSaARSRSRSvWcycycycy
-cycycycycycycycycyvWaIHraOaOSnRSHraOaOSnRSRSldvWSdSdfoRSRSRSRSRSRSRSdsdsRSRSdsdtRSRSRSRSRSvWcycycycy
-cycycycycycycycycyvWRSWSaOeFBBRSWSaOaOBBRSRSRSvWOASdvWaIRSldvWvWarvWvWvWarvWvWvWarvWvWvWarvWvWcycycy
-cycycycycycycycycyvWRSHraOaOSnRSHraOeFSnRSRSiYvWSdSdvWvWarvWvWaIRSRSvWaIRSRSvWaIRSRSvWaIRSRSvWcycycy
-cycycycycycycycycyvWaIRSObOLRSRSRSObOLRSRSRSdxvWSdcqvWfrRSfsvWfrRSRSvWfrRSRSvWfrRSRSvWfrRSRSvWcycycy
+cycycycycycycycycyvWdmKmaWRSdjldvWaJpzvdHOvdaLvWfacqvWdKhYRSSdSdSduHfevWvWLXxifbSdSdSdSdxUvWcycycycy
+cycycycycycycycycyvWRSRSRSRSRSRSvWabRSRSRSRSSjvWSdSdvWSdSdSdSdSdSdfefevWvWLXxiSdSdSdSdSdxUvWcycycycy
+cycycycycycycycycyvWRSRSFlOJRSRSdWcFRSRSRSRSbevWSdSdvWFXKzpKSdSdSdKzcJvWvWFXKzSdSdSdSdKzcJvWcycycycy
+cycycycycycycycycyvWaIHraOaOBBldvWbeRSRSRSRSJmvWSdcqvWGGbzSdSdVHSdErbCdWvWbCJjSdSdSdSdbChUvWcycycycy
+cycycycycycycycycydWRSWSeFaOSnRSvWvdRSRSRSRSRSvWSdSdvWcWbCSdSdSdSdfucYvWvWhUJjSdSdSdSdcZTqvWcycycycy
+cycycycycycycycycyvWRSHraOaOBBRSvWJmRSdeCWXHbjvWSdSdvWOfdgSdSdbQSddgSXvWvWOfdgSdSdSdSddgSXvWcycycycy
+cycycycycycycycycyvWaIRSOLObRSldvWvWRSvWvWvWvWvWSdcqvWcxSdSdSdSdSdzRZGvWvWhFhFSdSdSdSdSdasvWcycycycy
+cycycycycycycycycyvWRSRSRSRSRSRSRSRSRSRSRSRSRSRSSdSdvWcxSdSdSdbQSdbtZGvWvWLdhFSdSdSdSdSdasvWcycycycy
+cycycycycycycycycyvWRSRSFlOJRSRSRSFlOJRSRSRSRSfoSdSdRSRSRSRSRSRSRSRSRSRSRSRSRSRSRSRSRSRSRSvWcycycycy
+cycycycycycycycycyvWaIHraOaOBBRSHraOaOBBRSRSldvWSdSdfoRSRSRSRSgHRSRSdsdsRSRSdsdtRSRSRSRSRSvWcycycycy
+cycycycycycycycycyvWRSWSaOeFSnRSWSaOaOSnRSRSRSvWOASdvWaIRSldvWvWarvWvWvWarvWvWvWarvWvWvWarvWvWcycycy
+cycycycycycycycycyvWRSHraOaOBBRSHraOeFBBRSRSiYvWSdSdvWvWarvWvWaIRSRSvWaIRSRSvWaIRSRSvWaIRSRSvWcycycy
+cycycycycycycycycyvWaIRSOLObRSRSRSOLObRSRSRSdxvWSdcqvWfrRSfsvWfrRSRSvWfrRSRSvWfrRSRSvWfrRSRSvWcycycy
 cycycycycycycycycyvWRSAsRSRSAsRSAsRSRSAsRSRSrxvWSdSdvWfrAsftvWdCeFPwvWdCeFPwvWdCeFPwvWdCeFPwvWcycycy
-cycycycycycycycycybWbWbWbWbWbWbWbWbWbWbWbWbNbWbWSdSdvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWcycycy
-cycycycycycycycycybWfPewfQbWaeviewewbWbKbKewewewSdSdSdaEDtDtvWcycycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWewewewbWbTewewewUPewewewewioSdaHSdaEDtDtvWcycycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWfPewewbWRjfCewavdMbTgHewvpPebWbWbWbWbWbWbWbWcycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWewewvpbWbWbWbWbWbWeweweweweweKIeanRoaqqObWbWcycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWfPewewbWbTsOewsOewDoSMewgHewewewewuHewewvJbWcycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWewewewbNewewvRewewvRewewlYbWbTvRewewvRewxjbWcycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWfPewvpbWewewewewuHDoSMewgsbWaCaCewZQewewvJbWcycycycycycycycycycycycycycycycycycy
-cycycycycycycycycybWewewewUPewxechxeewbZbZbZbZbWbWbWbWbWbWbWbWbWcycycycycycycycycycycycycycycycycycy
-cyebcycycycycycycybWbWbWbWbWbWbWbWbWbWbWbWbWbWbWcycycycycycycycycycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHyHyHyHyHyHyHyHyHyHyHyHcTyHyHSdSdvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWvWcycycy
+cycycycycycycycycyyHfPvRfQyHaevivRvRyHbKbKvRvRvRSdSdSdaEDtDtvWcycycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHvRvRvRyHqWvRvRvRfhvRvRvRvRuGSdaHSdaEDtDtvWcycycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHfPvRvRyHRjfCvRavdMqWvRvRgsPeyHyHyHyHyHyHyHyHcycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHvRvRgsyHyHyHyHyHyHvRvRvRvRvReKIeanRoaqqOyHyHcycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHfPvRvRyHqWsOvRsOvRDoSMvRvRvRvRvRvRvRvRvRvJyHcycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHvRvRvRcTvRDGvRDGvRvRDGvRlYyHqWvRvRvRvRvRxjyHcycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHfPvRgsyHvRvRvRvRvRDoSMvRgsyHaCaCvRZQvRvRvJyHcycycycycycycycycycycycycycycycycycy
+cycycycycycycycycyyHvRvRvRfhvRxecbxevRbZbZbZbZyHyHyHyHyHyHyHyHyHcycycycycycycycycycycycycycycycycycy
+cyebcycycycycycycyyHyHyHyHyHyHyHyHyHyHyHyHyHyHyHcycycycycycycycycycycycycycycycycycycycycycycycycycy
 "}

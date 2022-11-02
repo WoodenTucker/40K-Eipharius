@@ -387,6 +387,9 @@ Pilgrim Fate System
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You,  a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
+/datum/job/pathfinder/watchman
+	title = "Cult Leader"
+	selection_color = "#2b2ed1"
 
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent

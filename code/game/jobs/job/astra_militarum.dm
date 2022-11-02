@@ -115,6 +115,7 @@
 	title = "Cultist Guardsman"
 	total_positions = 25 // they have xeno combatants to help
 	spawn_positions = 25
+	selection_color = "#414397"
 
 //Whiteshield
 
@@ -429,8 +430,8 @@
 
 /datum/job/ig/medicae/imperial
 	cultist_chance = 0
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 
 // Commissar
 

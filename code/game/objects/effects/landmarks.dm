@@ -114,6 +114,9 @@ Template:
 	name = "Rouge Trader"
 /obj/effect/landmark/start/hop
 	name = "Seneschal"
+
+/obj/effect/landmark/start/hop/cult
+	name = "Cult Leader"
 /obj/effect/landmark/start/hos
 	name = "Commissar"
 /obj/effect/landmark/start/rd
@@ -162,6 +165,7 @@ Template:
 
 /obj/effect/landmark/start/ig/watchman
 	name = "Cultist Guardsman"
+
 /obj/effect/landmark/start/sharpshooter
 	name = "Imperial Guard Specialist"
 

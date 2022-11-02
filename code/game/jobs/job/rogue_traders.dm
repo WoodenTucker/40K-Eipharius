@@ -339,7 +339,7 @@ Mercenary System
 	total_positions = 30
 	spawn_positions = 30
 	supervisors = "War. Your fellow xenos/cultists"
-	selection_color = "#6082B6"
+	selection_color = "#414397"
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 0
