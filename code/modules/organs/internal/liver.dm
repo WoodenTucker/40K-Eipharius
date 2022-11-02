@@ -108,32 +108,11 @@
 	max_damage = 100
 	relative_size = 85
 
-/obj/item/organ/internal/liver/astartes/Process()
+/*/obj/item/organ/internal/liver/astartes/Process()
 
 	..()
 	if(!owner)
 		return
 
-	handle_thirst()
 	filter_effect = 8
-	owner.regenerate_blood(1 + owner.chem_effects[CE_BLOODRESTORE])
-
-/obj/item/organ/internal/liver/astartes/proc/handle_thirst()
-	owner.adjust_thirst(-THIRST_FACTOR/4) //They don't need as much to drink
-	switch(owner.thirst)
-		if(THIRST_LEVEL_THIRSTY to INFINITY)
-			owner.clear_event("thirst")
-		if(THIRST_LEVEL_THIRSTY to THIRST_LEVEL_MEDIUM)
-			if(prob(1))
-				to_chat(owner, "Your throat feels a bit dry.")
-		if(THIRST_LEVEL_DEHYDRATED to THIRST_LEVEL_THIRSTY)
-			owner.add_event("thirst", /datum/happiness_event/thirst/thirsty)
-			if(prob(2))
-				to_chat(owner, "<span class='warning'>Your throat is dry and your lips feel cracked.</span>")
-		if(0 to THIRST_LEVEL_DEHYDRATED)
-			owner.add_event("thirst", /datum/happiness_event/thirst/dehydrated)
-			if(prob(1))
-				to_chat(owner, "<span class='warning'>A weaker being would faint from dehydration now.</span>")
-			if(prob(5))
-				to_chat(owner, "<span class='warning'>You lick around your mouth as a craving for water sets in.</span>")
-				take_damage(1)
+	owner.regenerate_blood(1 + owner.chem_effects[CE_BLOODRESTORE])*/
