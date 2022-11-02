@@ -264,14 +264,14 @@
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-	damage = 55 //this is insanely OP but i will allow it
+	damage = 75
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/shotgun/ms
 	name = "MS slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-	damage = 90 //stronger than bolter but shit armor pen
-	armor_penetration = -50
+	damage = 90
+	armor_penetration = -5
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
@@ -557,7 +557,7 @@
 	icon_state = "lasbolt"
 	damage_type = BURN
 	penetration_modifier = 2
-	armor_penetration = 50//high penetration 
+	armor_penetration = 35//high penetration
 	damage = 60 //believe me, this is kinda of balanced.
 	pellets = 12
 	range_step = 2 //not sure what these two mean, but lets go with it!
@@ -589,13 +589,12 @@
 	damage_type = BRUTE
 	armor_penetration = 50
 	penetration_modifier = 2
-	
 /obj/item/projectile/bullet/rifle/galvanic
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "ion"
 	damage = 80
 	damage_type = BRUTE
-	armor_penetration = 40
+	armor_penetration = 30
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/galvanic/fire
@@ -603,7 +602,7 @@
 	icon_state = "ion"
 	damage = 40
 	damage_type = BRUTE
-	armor_penetration = 10
+	armor_penetration = 30
 	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
@@ -620,10 +619,11 @@
 /obj/item/projectile/bullet/rifle/radcarbine
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "shot"
-	damage_type = BRUTE
-	damage = 48 //same damage as .45 MS, bullet breaks upon impact splashing the enemy a deadly dust of radium
-	armor_penetration = -5
-	
+	damage = 40
+	damage_type = TOX //Initial poisoning effect
+	armor_penetration = 75 //Dense, fast-moving round.
+	penetration_modifier = 2
+
 /obj/item/projectile/bullet/rifle/radcarbine/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
@@ -632,9 +632,10 @@
 /obj/item/projectile/bullet/rifle/radcarbine/radpistol
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "shot"
-	damage_type = BRUTE
-	damage = 45 //same damage as 9mm MS, bullet breaks upon impact splashing the enemy a deadly dust of radium
-	armor_penetration = -5
+	damage = 30
+	damage_type = TOX //Initial poisoning effect
+	armor_penetration = 50 //Dense, fast-moving round.
+	penetration_modifier = 2
 
 /obj/item/projectile/bullet/rifle/radcarbine/radpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(istype(target, /mob/living/carbon/human))
