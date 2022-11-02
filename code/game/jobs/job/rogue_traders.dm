@@ -101,7 +101,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
 	minimal_access = list(access_security, access_guard_common, access_magi,
-			            access_medical access_change_ids, access_heads,
+			            access_medical, access_change_ids, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
 			            access_library, access_mining, access_heads_vault, access_mining_station,
