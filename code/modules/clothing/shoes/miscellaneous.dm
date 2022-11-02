@@ -108,6 +108,8 @@
 	force = 0
 	var/footstep = 1	//used for squeeks whilst walking
 	species_restricted = null
+	canremove = 0
+	unacidable = 1
 
 /obj/item/clothing/shoes/clown_shoes/New()
 	..()
@@ -192,10 +194,10 @@
 	desc = "A pair of high quality black leather boots for kicking the filthy peasants and participating in questionable hedonistic activities at the chambers."
 	icon_state = "noble-boots"
 	item_state = "noble-boots"
-/*
+
 /obj/item/clothing/shoes/timbs
 	name = "Trench Timbs"
 	desc = "DAMN! IS THAT SOLDIER ROCKING THE FUCKING TIMBS???!! no word of lie he do be looking fine dough"
 	icon_state = "timbs"
 	item_state = "timbs"
-*/
+
