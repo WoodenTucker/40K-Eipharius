@@ -108,7 +108,30 @@
 	if(.)
 		H.implant_loyalty(src)
 
+/datum/job/envoy/imperial
+	title = "Astartes Battle Brother"
+	total_positions = 2
+	spawn_positions = 2
+	alt_titles = list(
+		"Blood Angels Tactical Marine" = /decl/hierarchy/outfit/job/astartes,
+		"Blood Angels Sanguinary Priest" = /decl/hierarchy/outfit/job/astartes/bangapoth,
+		"Blood Angels Techmarine" = /decl/hierarchy/outfit/job/astartes/bangtech,
+		"Salamander Tactical Marine" = /decl/hierarchy/outfit/job/astartes/salamander,
+		"Salamander Apothecary" = /decl/hierarchy/outfit/job/astartes/salapoth,
+		"Salamander Techmarine" = /decl/hierarchy/outfit/job/astartes/saltech,
+		"Ultramarine Tactical Marine" = /decl/hierarchy/outfit/job/astartes/ultramarine,
+		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultrapoth,
+		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultratech
+		)
+
+/datum/job/envoy/watchman
+	title = "Chaos Astartes"
+	total_positions = 2
+	spawn_positions = 2
+	selection_color = "#373ab6"
+
 //assfartes outfits
+
 
 /decl/hierarchy/outfit/job/astartes
 	name = OUTFIT_JOB_NAME("Blood Angels Tactical Marine")

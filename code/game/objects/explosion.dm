@@ -126,9 +126,10 @@ proc/drop_mortar(turf/dropped, mortar)
 
 /*==============
 ARTILLERY BARAGE
-==============*/
+==============*/ // WATCHMAN ADD LATER
 //only works on no man land z level (2)
 //checks for valid spot within range.
+/*
 proc/artillery_barage(var/x, var/y)
 
 	var/x_random = x
@@ -152,3 +153,4 @@ proc/artillery_barage(var/x, var/y)
 
 
 		sleep(sleep_randomizer)
+*/

@@ -167,13 +167,13 @@
 	electric = 1
 	sales_price = 40
 	flash_protection = FLASH_PROTECTION_MAJOR
-	
+
 /obj/item/clothing/glasses/blacksun/skitarii
 	name = "skitarii augments"
 	desc = "A series of augments used to replace the eyes of Skitarii with superior, mechanical optics."
 	canremove = 0
 	flash_protection = FLASH_PROTECTION_MAJOR
-	
+
 /obj/item/clothing/glasses/tacgoggles
 	name = "tactical goggles"
 	desc = "Self-polarizing goggles with light amplification for dark environments. Made from durable synthetic."
@@ -565,7 +565,7 @@
 	body_parts_covered = EYES
 	sales_price = 4
 	flash_protection = FLASH_PROTECTION_MODERATE
-	
+
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
 	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
@@ -585,7 +585,7 @@
 /obj/item/clothing/glasses/tyranid
 	name = "eyeballs"
 	desc = "Gross!"
-	darkness_view = 20 
+	darkness_view = 20
 	body_parts_covered = EYES
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
@@ -638,7 +638,7 @@
 	unacidable = 1
 	sales_price = 40
 	flash_protection = FLASH_PROTECTION_MODERATE
-	
+
 /obj/item/clothing/glasses/cadian/New()
 	..()
 	overlay = GLOB.global_hud.nvg

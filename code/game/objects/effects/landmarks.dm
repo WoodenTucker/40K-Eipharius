@@ -114,6 +114,9 @@ Template:
 	name = "Rouge Trader"
 /obj/effect/landmark/start/hop
 	name = "Seneschal"
+
+/obj/effect/landmark/start/hop/cult
+	name = "Cult Leader"
 /obj/effect/landmark/start/hos
 	name = "Commissar"
 /obj/effect/landmark/start/rd
@@ -126,6 +129,10 @@ Template:
 	name = "Inquisitor"
 /obj/effect/landmark/start/envoy
 	name = "Astartes Envoy"
+/obj/effect/landmark/start/envoy/imperial // imperial is used for the watchman tdm map!
+	name = "Astartes Envoy"
+/obj/effect/landmark/start/envoy/watchman
+	name = "Chaos Astartes"
 
 //Science//
 /obj/effect/landmark/start/geneticist
@@ -139,7 +146,7 @@ Template:
 
 //Medical//
 /obj/effect/landmark/start/medical_doctor
-	name = "Medicae"
+	name = "Combat Medicae"
 /obj/effect/landmark/start/chemist
 	name = "Chemist"
 /obj/effect/landmark/start/paramedic
@@ -151,18 +158,35 @@ Template:
 	name = "Inspector"
 /obj/effect/landmark/start/warden
 	name = "Sergeant"
+
+/obj/effect/landmark/start/warden/watchman
+	name = "Cultist Sergeant"
 /obj/effect/landmark/start/enforcer
 	name = "Enforcer"
 /obj/effect/landmark/start/ig
 	name = "Imperial Guardsman"
+
+/obj/effect/landmark/start/ig/watchman
+	name = "Cultist Guardsman"
+
 /obj/effect/landmark/start/sharpshooter
 	name = "Imperial Guard Specialist"
+
+/obj/effect/landmark/start/ig/sniper
+	name = "Imperial Guard Sniper"
+
+/obj/effect/landmark/start/ig/sharpshooter/watchman
+	name = "Cultist Specialist"
+
 
 
 //Engineering//
 
 /obj/effect/landmark/start/engineer
 	name = "Tech Priest Enginseer"
+
+/obj/effect/landmark/start/engineer/watchman
+	name = "Dark Mechanicum Heretek"
 
 /obj/effect/landmark/start/explorer
 	name = "Magos Explorator"

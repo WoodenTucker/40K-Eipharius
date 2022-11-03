@@ -255,6 +255,9 @@
 		H.say(":n [title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all. Once you were a Sister Repentia, who through incredible miracles and valor achieved rank once again within the Order, revered as a tale for years among your peers as a war hero made pure by the Emperor's embrace.</font></b></span>")
 
+/datum/job/sisterofbattle/imperial
+	total_positions = 3
+	spawn_positions = 3
 
 // Orders Hospitaller
 

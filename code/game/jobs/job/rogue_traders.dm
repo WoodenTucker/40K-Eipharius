@@ -101,7 +101,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
 	minimal_access = list(access_security, access_guard_common, access_magi,
-			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
+			            access_medical, access_change_ids, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
 			            access_library, access_mining, access_heads_vault, access_mining_station,
@@ -330,3 +330,36 @@ Mercenary System
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
+
+// TDM OPFOR bad guy
+/datum/job/mercenary/watchman
+	title = "Xeno Combatant"
+	department_flag = SRV
+	social_class = SOCIAL_CLASS_MIN //these boys are gross
+	total_positions = 30
+	spawn_positions = 30
+	supervisors = "Cult Leader and Sgt."
+	selection_color = "#414397"
+	latejoin_at_spawnpoints = TRUE
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.say("; [title] reporting for duty!")
+
+
+
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(11,16), rand(11,17), rand(11,17), rand (8,14))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.assign_random_quirk()
+		H.witchblood()
+		H.stat = UNCONSCIOUS
+		H.sleeping = 500
+		H.verbs += list(
+			/mob/living/carbon/human/proc/mercenaryclass,
+		)
+

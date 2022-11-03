@@ -213,6 +213,6 @@
 	innate_flash_protection = FLASH_PROTECTION_MAJOR
 	max_damage = 65
 	sales_price = 15
-	darkness_view = 20
-	see_invisible = SEE_INVISIBLE_NOLIGHTING
-	
+	//darkness_view = 20
+	//see_invisible = SEE_INVISIBLE_NOLIGHTING
+

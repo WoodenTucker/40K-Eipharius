@@ -56,7 +56,7 @@
 /turf/simulated/floor/dirty/do_climb(var/mob/living/user)
 	if(!can_climb(user))
 		return
-
+/*
 	if(istype(get_area(src), /area/warfare/battlefield/no_mans_land))//We're trying to go into no man's land?
 		if(locate(/obj/item/device/boombox) in user)//Locate the boombox.
 			to_chat(user, "I can't bring this with me onto the battlefield. Wouldn't want to lose it.")//No you fucking don't.
@@ -66,7 +66,7 @@
 			if(locate(/obj/item/device/boombox) in S)
 				to_chat(user, "I can't bring this with me onto the battlefield. Wouldn't want to lose it.")
 				return
-
+*/
 	user.visible_message("<span class='warning'>[user] starts climbing onto \the [src]!</span>")
 	climbers |= user
 
@@ -107,8 +107,7 @@
 		new /obj/effect/lighting_dummy/daylight(src)
 	spawn(1)
 		overlays.Cut()
-	if(loc.type != /area/warfare/battlefield/no_mans_land) // no base puddles
-		return
+
 	if(!can_generate_water)//This type can't generate water so don't bother.
 		return
 	if(prob(1)) // puddle generation,  every turf has a probability to become a water tile, then it spreads itself out
@@ -320,7 +319,7 @@
 	user.forceMove(get_turf(src))
 	user.visible_message("<span class='warning'>[user] climbed onto \the [src]!</span>")
 	climbers -= user
-
+/*
 /turf/simulated/floor/exoplanet/water/shallow/MouseDrop_T(mob/target, mob/user)
 	var/mob/living/H = user
 	if(istype(H) && can_climb(H) && target == user)
@@ -336,7 +335,7 @@
 		do_climb(target)
 	else
 		return ..()
-
+*/
 /turf/simulated/floor/exoplanet/water/shallow/Cross(var/atom/A)//People who are on fire go out.
 	if(isliving(A))
 		var/mob/living/L = A
