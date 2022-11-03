@@ -84,8 +84,7 @@
 	icon_state = "clown"
 	item_state = "clown"
 	worn_state = "clown"
-	canremove = 0
-	unacidable = 1
+
 
 /obj/item/clothing/under/rank/head_of_personnel
 	desc = "A fancy jumpsuit worn by someone who works in the position of Seneschal, the right-hand of the Rogue Trader."

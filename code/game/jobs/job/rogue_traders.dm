@@ -36,7 +36,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Lord Trader [current_name]")
-		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18)) //hes fat
+		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
@@ -84,7 +84,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Lord [current_name]")
-		H.add_stats(rand(13,16), rand(13,16), rand(13,15), rand(13,17)) //HEIR
+		H.add_stats(rand(13,16), rand(13,16), rand(13,15), rand(13,17)) //
 		H.add_skills(rand(6,10),rand(6,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
@@ -95,7 +95,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 
 	access = list(access_security, access_guard_common, access_magi,
-			            access_medical, access_change_ids, access_heads,
+			            access_medical, access_mechanicus, access_change_ids, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
 			            access_library, access_mining, access_heads_vault, access_mining_station,
@@ -141,7 +141,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Steward [current_name]")
-		H.add_stats(rand(12,14), rand(16,18), rand(10,13), rand(13,18)) //they do da stewardin
+		H.add_stats(rand(12,14), rand(16,18), rand(10,13), rand(13,18)) //they are like rogues but smarter and faster
 		H.add_skills(rand(7,10),rand(7,10),rand(5,6),rand(4,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
@@ -177,13 +177,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
 	access = list(access_security, access_guard_common,
-			            access_medical, access_heads,
+			            access_medical, access_mechanicus, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
 			            access_library, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
 	minimal_access = list(access_security, access_guard_common,
-			            access_medical, access_heads,
+			            access_medical, access_mechanicus, access_ai_upload, access_heads,
 			            access_all_personal_lockers, access_village, access_bar, access_janitor,
 			            access_kitchen, access_cargo, access_qm, access_hydroponics,
 			            access_library, access_mining, access_heads_vault, access_mining_station,
@@ -204,7 +204,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Servant [current_name]")
-		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(13,16)) //meant to be a servant
+		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(13,16)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),4,rand(3,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)

@@ -132,12 +132,9 @@
 /obj/item/clothing/mask/gas/clown_hat
 	name = "clown wig and mask"
 	desc = "A true prankster's facial attire. A clown is incomplete without their wig and mask."
-	icon_state = "clown"	
+	icon_state = "clown"
 	item_state = "clown_hat"
-	flash_protection = FLASH_PROTECTION_MAJOR //THE CLOWN CANNOT BE STOPPED
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
-	canremove = 0
-	unacidable = 1
 
 /obj/item/clothing/mask/gas/sexyclown
 	name = "sexy-clown wig and mask"
