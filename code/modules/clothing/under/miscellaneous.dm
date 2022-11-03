@@ -707,5 +707,4 @@
 	name = "renegade militia uniform"
 	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
 	icon_state = "rm_uniform"
-	item_state = "rm_uniform"
-	worn_state = "rm_uniform"
+	item_state = "rm_uniform_s"
