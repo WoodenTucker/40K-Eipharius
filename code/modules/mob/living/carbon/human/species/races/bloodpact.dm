@@ -80,6 +80,3 @@
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/bloodpact)
 	outfit.equip(src)
 
-	hand = 0//Make sure one of their hands is active.
-	put_in_hands(new /obj/item/gun/energy/las/laspistol/bloodpact)//Give them a weapon.
-	isburied = 1

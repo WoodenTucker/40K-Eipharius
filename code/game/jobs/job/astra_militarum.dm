@@ -81,7 +81,7 @@
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
 		if(title == "Krieg Guardsman")
-			var/troopnum = rand(1,50000)
+			var/troopnum = rand(17,238459)
 			H.fully_replace_character_name("Guardsman [troopnum]")
 			H.implant_loyalty(src)
 		else H.fully_replace_character_name("Guardsman [H.real_name]")
@@ -115,7 +115,31 @@
 	title = "Cultist Guardsman"
 	total_positions = 25 // they have xeno combatants to help
 	spawn_positions = 25
+	supervisors = "Cult Leader and Sgt."
 	selection_color = "#414397"
+	department_flag = SRV
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+
+		H.say("; [title] reporting for duty!")
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(16,17), rand(15,17), rand(15,17), rand (8,11))
+		H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.say("; [title] reporting for duty!")
+
+	outfit_type = /decl/hierarchy/outfit/job/vraks
+	alt_titles = list(
+		"Bloodpact Warrior" = /decl/hierarchy/outfit/job/bloodpact,
+		"Vraks Militia Cultist" = /decl/hierarchy/outfit/job/vraks,
+		)
+
+
+
 
 //Whiteshield
 
@@ -201,10 +225,19 @@
 	total_positions = 5
 	spawn_positions = 5
 	cultist_chance = 0
+
 /datum/job/ig/guardsman/sharpshooter/watchman
 	title = "Cultist Specialist"
+	supervisors = "Cult Leader and Sgt."
 	total_positions = 3
 	spawn_positions = 3
+	selection_color = "#414397"
+	department_flag = SRV
+	alt_titles = list(
+		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/watchman/sharpshooter,
+		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/watchman/sharpshooter/valhalla,
+		"Catachan Flamer" = /decl/hierarchy/outfit/job/watchman/guardsman/catachan,
+		)
 
 
 
@@ -377,6 +410,29 @@
 /datum/job/ig/sergeant/imperial
 	cultist_chance = 0
 
+/datum/job/ig/sergeant/watchman
+	title = "Cultist Sergeant"
+	supervisors = "Cult Leader"
+	department_flag = SRV
+	selection_color = "#3032a7"
+	alt_titles = list(
+		"Cadian Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant,
+		"Catachan Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant/catachan,
+		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/watchman/sergeant/krieg,
+		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant/valhallan,
+		)
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
+		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+		H.witchblood()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.say(";Sgt reporting for duty!")
+
 
 // Combat Medicae
 
@@ -437,7 +493,7 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the Rogue Trader and the Astartes." //mercenary apparently?
+	supervisors = "the Rogue Trader and the Astartes."
 	total_positions = 0
 	spawn_positions = 0
 	head_position = 0
@@ -514,17 +570,14 @@
 		/mob/living/carbon/human/proc/comsexecute,
 		/mob/living/carbon/human/proc/comsyouwereweak)
 
-
-/*
-		H.verbs -= list(
-		/mob/living/carbon/human/proc/khorne,
-		/mob/living/carbon/human/proc/nurgle,
-		/mob/living/carbon/human/proc/slaanesh,
-		/mob/living/carbon/human/proc/tzeentch,)*/
-
 		var/obj/O = H.get_equipped_item(slot_s_store)
 		if(O)
 			qdel(O)
+
+
+/datum/job/ig/commissar/imperial
+	total_positions = 1
+	spawn_positions = 1
 
 // Outfits
 
@@ -735,6 +788,138 @@
 	/obj/item/stack/thrones3/five = 1
 	)
 
+//chaos bad boy guard
+
+/decl/hierarchy/outfit/job/bloodpact
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/pcsword/khorneaxe
+	gloves = /obj/item/clothing/gloves/thick/swat/combat
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
+	mask = /obj/item/clothing/mask/bandana/red
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	id = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/laspistol/bloodpact
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/grenade/frag = 1,
+	/obj/item/grenade/frag/high_yield/krak = 1,
+	)
+
+/decl/hierarchy/outfit/job/vraks // generic culty boy
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/material/sword/combat_knife/rare
+	gloves = /obj/item/clothing/gloves/thick/swat/combat
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/heretichood
+	mask = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	id = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile/automatic/autogun
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/ammo_magazine/autogrim = 3,
+	/obj/item/grenade/frag = 1,
+	)
+
+// chaos spec
+
+/decl/hierarchy/outfit/job/watchman/sharpshooter
+	name = OUTFIT_JOB_NAME("Cadian Plasmagunner")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/heretichood/alt
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/cell/plasma = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/watchman/sharpshooter/valhalla
+	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/gun/projectile/warfare/kieji
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/heretichood/alt
+	mask = null
+	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
+	/obj/item/ammo_magazine/c45m/warfare = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/device/flashlight/lantern = 1
+	)
+
+/decl/hierarchy/outfit/job/watchman/guardsman/catachan
+	name = OUTFIT_JOB_NAME("Catachan Flamer")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	head = /obj/item/clothing/head/heretichood/alt
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/extinguisher
+	gloves = null
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	mask = null
+	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile/automatic/flamer
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	backpack_contents = list(
+	/obj/item/ammo_magazine/flamer = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+
+
+
+
+
 // Sniper
 
 /decl/hierarchy/outfit/job/sniper
@@ -907,6 +1092,107 @@
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
+
+// chaos sgt
+
+/decl/hierarchy/outfit/job/watchman/sergeant
+	name = OUTFIT_JOB_NAME("Cadian Sergeant")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/inqcs/guard
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/heretichood
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	backpack_contents = list(
+	/obj/item/cell/plasma = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+/decl/hierarchy/outfit/job/watchman/sergeant/krieg
+	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/krieger
+	belt = /obj/item/melee/chain/inqcs/guard
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/heretichood
+	mask = /obj/item/clothing/mask/gas/krieg
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	suit_store = /obj/item/gun/launcher/rcl_rifle
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/gun/energy/las/laspistol/militarum/lucius
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/ammo_casing/heat_shell = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel/krieg = 1
+	)
+
+/decl/hierarchy/outfit/job/watchman/sergeant/catachan
+	name = OUTFIT_JOB_NAME("Catachan Sergeant")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	belt = /obj/item/melee/chain/mercycs
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	head = /obj/item/clothing/head/heretichood
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+/decl/hierarchy/outfit/job/watchman/sergeant/valhallan
+	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
+	uniform =  /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	belt = /obj/item/gun/projectile/warfare/kieji2
+	head = /obj/item/clothing/head/heretichood
+	mask = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile/automatic/stubber
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
+	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08 = 1,
+	/obj/item/ammo_magazine/c45m/warfare = 3,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+
 
 // Commissar
 

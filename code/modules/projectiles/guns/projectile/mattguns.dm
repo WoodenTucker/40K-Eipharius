@@ -863,6 +863,7 @@ obj/item/gun/projectile/automatic/autogun
 	one_hand_penalty = 0
 	str_requirement = 10
 	fire_sound = 'sound/effects/fire01.ogg'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
 	casingsound = null//No eject sound for you.
 	firemodes = list()
 	accuracy = 0

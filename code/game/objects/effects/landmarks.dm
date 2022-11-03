@@ -146,7 +146,7 @@ Template:
 
 //Medical//
 /obj/effect/landmark/start/medical_doctor
-	name = "Medicae"
+	name = "Combat Medicae"
 /obj/effect/landmark/start/chemist
 	name = "Chemist"
 /obj/effect/landmark/start/paramedic
@@ -158,6 +158,9 @@ Template:
 	name = "Inspector"
 /obj/effect/landmark/start/warden
 	name = "Sergeant"
+
+/obj/effect/landmark/start/warden/watchman
+	name = "Cultist Sergeant"
 /obj/effect/landmark/start/enforcer
 	name = "Enforcer"
 /obj/effect/landmark/start/ig
@@ -169,8 +172,12 @@ Template:
 /obj/effect/landmark/start/sharpshooter
 	name = "Imperial Guard Specialist"
 
-/obj/effect/landmark/start/sharpshooter/watchman
+/obj/effect/landmark/start/ig/sniper
+	name = "Imperial Guard Sniper"
+
+/obj/effect/landmark/start/ig/sharpshooter/watchman
 	name = "Cultist Specialist"
+
 
 
 //Engineering//

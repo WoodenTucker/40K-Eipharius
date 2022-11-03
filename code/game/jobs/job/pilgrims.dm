@@ -389,6 +389,7 @@ Pilgrim Fate System
 
 /datum/job/pathfinder/watchman
 	title = "Cult Leader"
+	department_flag = COM | SRV
 	selection_color = "#2b2ed1"
 
 //loadouts below here

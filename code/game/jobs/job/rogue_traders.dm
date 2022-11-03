@@ -334,15 +334,19 @@ Mercenary System
 // TDM OPFOR bad guy
 /datum/job/mercenary/watchman
 	title = "Xeno Combatant"
-	department_flag = PIL
+	department_flag = SRV
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 30
 	spawn_positions = 30
-	supervisors = "War. Your fellow xenos/cultists"
+	supervisors = "Cult Leader and Sgt."
 	selection_color = "#414397"
 	latejoin_at_spawnpoints = TRUE
-	announced = FALSE
-	cultist_chance = 0
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.say("; [title] reporting for duty!")
+
+
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -355,7 +359,6 @@ Mercenary System
 		H.witchblood()
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
-		to_chat(H, "<span class='notice'><b><font size=3> You and your odd gang of allies have found themselves banded together to destroy the local Imperium forces. Do not kill fellow xeno or cultists. <br> <span class = 'badmood'> + Go to your INVASION tab and select your fate. + </span> </font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/mercenaryclass,
 		)

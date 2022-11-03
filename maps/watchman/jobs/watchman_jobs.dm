@@ -3,19 +3,19 @@
 /datum/map/watchman
 	allowed_jobs = list(
 	/datum/job/pathfinder/watchman, // leader
-	/datum/job/envoy/watchman, // chaos asfartes.
-	///datum/job/engineer/watchman, need dark mech sprite
-	///datum/job/ig/guardsman/sharpshooter/watchman, need cultist switch case outfits
-	/datum/job/mercenary/watchman,
-	/datum/job/ig/guardsman/watchman, // need cultist switch case outfits
+	/datum/job/ig/sergeant/watchman, // 2nd in command
+	/datum/job/ig/guardsman/sharpshooter/watchman, // 3 slots, always have decent less than imperial
+	/datum/job/mercenary/watchman, // xeno
+	/datum/job/ig/guardsman/watchman, // chaos cultist
 	/datum/job/captain, // RT, which is leader
-	/datum/job/envoy/imperial,
-	///datum/job/engineer/imperial, // add when dark mech is also added for balance
-	/datum/job/ig/sergeant, // 2nd in command
-	/datum/job/ig/guardsman/sharpshooter/imperial, // increased slots spec
+	/datum/job/ig/commissar/imperial, // 2nd in command
+	/datum/job/ig/sergeant/imperial, // 3rd in command
+	/datum/job/ig/guardsman/sharpshooter/imperial, // 5 slots
+	/datum/job/ig/guardsman/sniper/imperial, // 2 slots
 	/datum/job/ig/guardsman/imperial,
 	///datum/job/ig/guardsman/sniper/imperial, landmark no work yet
-	/datum/job/sisterofbattle, // just one so far
+	/datum/job/sisterofbattle/imperial, // 3 for now, as there are no assfartes
+	/datum/job/doctor, // hospitaller
 	/datum/job/ig/medicae/imperial,
 
 	)
