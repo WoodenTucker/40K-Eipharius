@@ -97,61 +97,68 @@ Astartes
 
 /obj/item/organ/external/chest/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 
 /obj/item/organ/external/groin/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
-	cannot_break = 1
+	arterial_bleed_severity = 0.1
+	cannot_break = 0
 	encased = "lower ribcage"
 
 /obj/item/organ/external/arm/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/arm/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/leg/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/leg/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/foot/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	can_stand = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/foot/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 	can_stand = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/hand/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 	can_grasp = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/hand/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 	can_grasp = 1
-
+	gibbable = TRUE
 
 /obj/item/organ/external/head/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
-
+	gibbable = TRUE
