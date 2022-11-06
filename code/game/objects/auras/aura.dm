@@ -65,6 +65,8 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	var/grow_threshold = 0
 	var/ignore_tag //organ tag to ignore
 	var/last_nutrition_warning = 0
+	var/nutrition_damage_mult = 1 //How much nutrition it takes to heal regular damage
+	var/external_nutrition_mult = 50 // How much nutrition it takes to regrow a limb
 
 	
 /obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
@@ -84,7 +86,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	if(!can_regenerate_organs())
 		return 1
 	if(tox_mult)
-		if(prob(10) && H.nutrition >= 150 && !H.BruteLoss() && !H.FireLoss())
+		if(prob(10) && H.nutrition >= 150)
 			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
 			if (h.disfigured)
 				if (H.nutrition >= 20)
@@ -191,6 +193,8 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 /obj/aura/regenerating/human/proc/can_regenerate_organs()
 	return FALSE
 
+/obj/aura/regenerating/human/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
+	return
 
 /obj/aura/regenerating/human/perpetual
 	name = "regenerating aura"
@@ -198,8 +202,14 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	fire_mult = 100    //burn damage healed per tick
 	tox_mult = 100 //organ damage healed per tick
 	innate_heal = TRUE // Whether the aura is on, basically.
+	nutrition_damage_mult = 0 //How much nutrition it takes to heal regular damage
+	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
 	
 /obj/aura/regenerating/human/perpetual/life_tick() //this causes the two former lines to work
+	var/mob/living/carbon/human/H = user
+	if(!istype(H))
+		CRASH("Someone gave [user.type] a [src.type] aura. This is invalid.")
+
 	user.adjustBruteLoss(-brute_mult)
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
@@ -207,7 +217,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	if(!can_regenerate_organs())
 		return 1
 	if(tox_mult)
-		if(prob(50) && !H.getBruteLoss() && !H.getFireLoss()) 
+		if(prob(50)) 
 			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
 			if (h.disfigured)
 				h.disfigured = 0
@@ -224,7 +234,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
 			var/obj/item/organ/external/E = H.organs_by_name[limb_type]
-			if(E?.organ_tag != BP_HEAD && !E.vital && (E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
+			if((E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
 				E.removed()			//...because no one wants their head to explode to make way for a new one.
 				qdel(E)
 				E= null
