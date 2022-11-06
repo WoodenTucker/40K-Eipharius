@@ -66,7 +66,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
 
-/*if(!can_regenerate_organs())
+if(!can_regenerate_organs())
 		return 1
 	if(organ_mult)
 		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss()) //Might need to edit these values if nutrition cost is too high, or breaks it.
@@ -114,7 +114,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 				for(var/datum/wound/W in E.wounds)
 					if(W.wound_damage() == 0 && prob(50))
 						qdel(W)
-	return 1*/
+	return 1
 
 /obj/aura/regenerating/human/proc/low_nut_warning(var/wound_type)
 	if (last_nutrition_warning + 1 MINUTE < world.time)
@@ -180,7 +180,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	return FALSE
 
 
-/*/obj/aura/regenerating/human/perpetual
+/obj/aura/regenerating/human/perpetual
 	name = "regenerating aura"
 	brute_mult = 100    //brute damage healed per tick
 	fire_mult = 100    //burn damage healed per tick
@@ -229,4 +229,4 @@ if(!can_regenerate_organs())
 				for(var/datum/wound/W in E.wounds)
 					if(W.wound_damage() == 0 && prob(50))
 						qdel(W)
-	return 1*/
+	return 1
