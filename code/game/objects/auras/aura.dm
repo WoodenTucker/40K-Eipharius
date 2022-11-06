@@ -66,7 +66,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
 
-if(!can_regenerate_organs())
+	if(!can_regenerate_organs())
 		return 1
 	if(organ_mult)
 		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss())
@@ -192,7 +192,7 @@ if(!can_regenerate_organs())
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
 
-if(!can_regenerate_organs())
+	if(!can_regenerate_organs())
 		return 1
 	if(organ_mult)
 		if(prob(50) && !H.getBruteLoss() && !H.getFireLoss()) 
