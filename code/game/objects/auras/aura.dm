@@ -68,6 +68,15 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 	
 /obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
+	var/mob/living/carbon/human/H = user
+	if(!istype(H))
+		CRASH("Someone gave [user.type] a [src.type] aura. This is invalid.")
+	if(!innate_heal || H.InStasis() || H.stat == DEAD)
+		return 0
+	if(H.nutrition < nutrition_damage_mult)
+		low_nut_warning()
+		return 0
+
 	user.adjustBruteLoss(-brute_mult)
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
@@ -75,12 +84,12 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	if(!can_regenerate_organs())
 		return 1
 	if(tox_mult)
-		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss())
+		if(prob(10) && H.nutrition >= 150 && !H.BruteLoss() && !H.FireLoss())
 			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
 			if (h.disfigured)
 				if (H.nutrition >= 20)
 					h.disfigured = 0
-					H.adjust_nutrition(-20)
+					H.nutrition -= 20
 				else
 					low_nut_warning("head")
 
@@ -176,9 +185,6 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	if(!can_regenerate_organs())
 		return 1*/
 
-/obj/aura/regenerating/human/proc/toggle()
-	innate_heal = !innate_heal
-
 /obj/aura/regenerating/human/proc/can_toggle()
 	return TRUE
 
@@ -200,7 +206,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 	if(!can_regenerate_organs())
 		return 1
-	if(organ_mult)
+	if(tox_mult)
 		if(prob(50) && !H.getBruteLoss() && !H.getFireLoss()) 
 			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
 			if (h.disfigured)
@@ -212,7 +218,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 				continue
 			if(istype(regen_tox))
 				if(regen_tox.damage > 0 && !(regen_tox.status & ORGAN_DEAD))
-					regen_tox.damage = max(regen_organ.damage - organ_mult, 0)
+					regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
 					to_chat(H, replacetext(regen_message,"ORGAN", regen_tox.name))
 
 	if(prob(grow_chance))
