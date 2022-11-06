@@ -59,7 +59,13 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	var/brute_mult = 1    //brute damage healed per tick
 	var/fire_mult = 1    //burn damage healed per tick
 	var/tox_mult = 1 //organ damage healed, its not working and i have no idea how to fix it //Fixed it -Magi
-	var/innate_heal = TRUE // Whether the aura is on, basically.
+	var/innate_heal = TRUE // Whether the aura is on, basically.	
+	var/regen_message = "<span class='warning'>Your body throbs as you feel your ORGAN regenerate.</span>"
+	var/grow_chance = 0
+	var/grow_threshold = 0
+	var/ignore_tag //organ tag to ignore
+	var/last_nutrition_warning = 0
+
 	
 /obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
 	user.adjustBruteLoss(-brute_mult)
@@ -70,25 +76,25 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 		return 1
 	if(organ_mult)
 		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss())
-			var/obj/item/organ/external/head/D = H.organs_by_name["head"]
-			if (D.status & ORGAN_DISFIGURED)
+			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
+			if (h.disfigured)
 				if (H.nutrition >= 20)
-					D.status &= ~ORGAN_DISFIGURED
+					h.disfigured = 0
 					H.adjust_nutrition(-20)
 				else
 					low_nut_warning("head")
 
 		for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
 			var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
-			if(BP_IS_ROBOTIC(regen_organ))
+			if(ORGAN_ROBOT(regen_organ))
 				continue
 			if(istype(regen_organ))
 				if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
-					if (H.nutrition >= organ_mult)
-						regen_organ.damage = max(regen_organ.damage - organ_mult, 0)
-						H.adjust_nutrition(-organ_mult)
-						if(prob(5))
-							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
+					if (H.nutrition >= tox_mult)
+						regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
+						H.adjust_nutrition(-tox_mult)
+//						if(prob(5))
+//							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
 					else
 						low_nut_warning(regen_organ.name)
 
