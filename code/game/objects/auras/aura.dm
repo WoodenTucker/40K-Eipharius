@@ -68,8 +68,8 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 if(!can_regenerate_organs())
 		return 1
-if(organ_mult)
-		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss()) //Might need to edit these values if nutrition cost is too high, or breaks it.
+	if(organ_mult)
+		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss())
 			var/obj/item/organ/external/head/D = H.organs_by_name["head"]
 			if (D.status & ORGAN_DISFIGURED)
 				if (H.nutrition >= 20)
