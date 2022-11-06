@@ -103,7 +103,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 				if(regen_tox.damage > 0 && !(regen_tox.status & ORGAN_DEAD))
 					if (H.nutrition >= tox_mult)
 						regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
-						H.adjust_nutrition(-tox_mult)
+						H.nutrition -= tox_mult
 //						if(prob(5))
 //							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
 					else
@@ -164,8 +164,6 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	fire_mult = 50
 	tox_mult = 50
 
-/obj/aura/regenerating/human/astartes/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
-	return //im not sure how this works, it just does
 
 /*/obj/aura/regenerating/human/astartes/life_tick()
 	var/mob/living/carbon/human/H = user
