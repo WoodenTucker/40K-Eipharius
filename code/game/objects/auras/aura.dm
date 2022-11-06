@@ -250,3 +250,6 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 					if(W.wound_damage() == 0 && prob(50))
 						qdel(W)
 	return 1
+
+/obj/aura/regenerating/human/perpetual/proc/can_regenerate_organs()
+	return TRUE
