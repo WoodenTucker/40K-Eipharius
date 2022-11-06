@@ -87,7 +87,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 		return 1
 	if(tox_mult)
 		if(prob(10) && H.nutrition >= 150)
-			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
+			var/obj/item/organ/external/h = H.get_organ(BP_HEAD)
 			if (h.disfigured)
 				if (H.nutrition >= 20)
 					h.disfigured = 0
@@ -218,7 +218,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 		return 1
 	if(tox_mult)
 		if(prob(50)) 
-			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
+			var/obj/item/organ/external/h = H.get_organ(BP_HEAD)
 			if (h.disfigured)
 				h.disfigured = 0
 
