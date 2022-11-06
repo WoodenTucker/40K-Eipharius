@@ -187,7 +187,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	vtox_mult = 100 //organ damage healed per tick
 	innate_heal = TRUE // Whether the aura is on, basically.
 	
-/obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
+/obj/aura/regenerating/human/perpetual/life_tick() //this causes the two former lines to work
 	user.adjustBruteLoss(-brute_mult)
 	user.adjustFireLoss(-fire_mult)
 	user.adjustToxLoss(-tox_mult)
