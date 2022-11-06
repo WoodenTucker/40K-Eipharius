@@ -74,7 +74,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 	if(!can_regenerate_organs())
 		return 1
-	if(organ_mult)
+	if(tox_mult)
 		if(prob(10) && H.nutrition >= 150 && !H.getBruteLoss() && !H.getFireLoss())
 			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
 			if (h.disfigured)
@@ -85,18 +85,18 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 					low_nut_warning("head")
 
 		for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
-			var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
-			if(ORGAN_ROBOT(regen_organ))
+			var/obj/item/organ/internal/regen_tox = H.internal_organs_by_name[bpart]
+			if(ORGAN_ROBOT(regen_tox))
 				continue
-			if(istype(regen_organ))
-				if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
+			if(istype(regen_tox))
+				if(regen_tox.damage > 0 && !(regen_tox.status & ORGAN_DEAD))
 					if (H.nutrition >= tox_mult)
 						regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
 						H.adjust_nutrition(-tox_mult)
 //						if(prob(5))
 //							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
 					else
-						low_nut_warning(regen_organ.name)
+						low_nut_warning(regen_tox.name)
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
