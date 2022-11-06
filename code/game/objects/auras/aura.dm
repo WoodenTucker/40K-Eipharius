@@ -134,20 +134,20 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 
 /obj/aura/regenerating/human/astartes
-	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
+	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	brute_mult = 5
 	fire_mult = 5
 	tox_mult = 5
 
 /obj/aura/regenerating/human/nid
-	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
+	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	brute_mult = 10
 	fire_mult = 10
 
 /obj/aura/regenerating/human/ultimate
-	var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
+	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	brute_mult = 50
 	fire_mult = 50
@@ -190,7 +190,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	name = "regenerating aura"
 	brute_mult = 100    //brute damage healed per tick
 	fire_mult = 100    //burn damage healed per tick
-	vtox_mult = 100 //organ damage healed per tick
+	tox_mult = 100 //organ damage healed per tick
 	innate_heal = TRUE // Whether the aura is on, basically.
 	
 /obj/aura/regenerating/human/perpetual/life_tick() //this causes the two former lines to work
@@ -202,18 +202,18 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 		return 1
 	if(organ_mult)
 		if(prob(50) && !H.getBruteLoss() && !H.getFireLoss()) 
-			var/obj/item/organ/external/head/D = H.organs_by_name["head"]
-			if (D.status & ORGAN_DISFIGURED)
-				D.status &= ~ORGAN_DISFIGURED
+			var/obj/item/organ/external/h = h.get_organ(BP_HEAD)
+			if (h.disfigured)
+				h.disfigured = 0
 
 		for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
-			var/obj/item/organ/internal/regen_organ = H.internal_organs_by_name[bpart]
-			if(BP_IS_ROBOTIC(regen_organ))
+			var/obj/item/organ/internal/regen_tox = H.internal_organs_by_name[bpart]
+			if(ORGAN_ROBOT(regen_tox))
 				continue
-			if(istype(regen_organ))
-				if(regen_organ.damage > 0 && !(regen_organ.status & ORGAN_DEAD))
-					regen_organ.damage = max(regen_organ.damage - organ_mult, 0)
-					to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
+			if(istype(regen_tox))
+				if(regen_tox.damage > 0 && !(regen_tox.status & ORGAN_DEAD))
+					regen_tox.damage = max(regen_organ.damage - organ_mult, 0)
+					to_chat(H, replacetext(regen_message,"ORGAN", regen_tox.name))
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
