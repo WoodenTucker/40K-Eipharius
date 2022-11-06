@@ -168,7 +168,7 @@
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
-	belt = /obj/item/storage/belt/medical/full
+	belt = /obj/item/storage/belt/medical/apothecary
 	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
@@ -261,7 +261,7 @@
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
-	belt = /obj/item/storage/belt/medical/full
+	belt = /obj/item/storage/belt/medical/apothecary
 	shoes = /obj/item/clothing/shoes/astartes/boots/raven
 	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	mask = null
@@ -354,7 +354,7 @@
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
-	belt = /obj/item/storage/belt/medical/full
+	belt = /obj/item/storage/belt/medical/apothecary
 	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
@@ -449,7 +449,7 @@
 	uniform = /obj/item/clothing/under/astartes/bodysuit
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
-	belt = /obj/item/storage/belt/medical/full
+	belt = /obj/item/storage/belt/medical/apothecary
 	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
