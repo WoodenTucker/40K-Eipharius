@@ -413,7 +413,7 @@
 /datum/job/ig/sergeant/watchman
 	title = "Cultist Sergeant"
 	supervisors = "Cult Leader"
-	department_flag = SRV
+	department_flag = SRV || COM
 	selection_color = "#3032a7"
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant,

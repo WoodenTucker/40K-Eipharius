@@ -141,16 +141,16 @@
 	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 71
-	armor_penetration = 10
+	damage = 58
+	armor_penetration = 20
 
-/obj/item/projectile/energy/las/lasgun/execution
+/obj/item/projectile/energy/las/lasgun/pistol // just use rifle lasgun for over charges for pistol
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
+	fire_sound='sound/weapons/gunshot/lasgun1.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 115
-	armor_penetration = 30
+	damage = 35
+	armor_penetration = 5
 
 /obj/item/projectile/energy/las/lasgun/lucius
 	name = "lasbolt"
@@ -165,8 +165,8 @@
 	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 80
-	armor_penetration = 10
+	damage = 65
+	armor_penetration = 20
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
@@ -182,8 +182,8 @@
 	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 130
-	armor_penetration = 50 //more penetration than hotshot
+	damage = 110
+	armor_penetration = 40 //more penetration than hotshot
 
 /obj/item/projectile/energy/las/lasgun/hotshot //RYZA PATTERN HOTSHOT LASGUN
 	name = "lasbolt"
@@ -234,29 +234,36 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 125
-	armor_penetration = 35 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
+	damage = 95
+	armor_penetration = 50 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
+	light_power = 4
+	light_color = "#2132cf"
+
 
 /obj/item/projectile/energy/pulse/plasmapistol
 	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 95
-	armor_penetration = 35
+	damage = 70
+	armor_penetration = 40
+	light_power = 4
+	light_color = "#2132cf"
 
 	/obj/item/projectile/energy/pulse/plasmapistol/astartes
 	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 105
-	armor_penetration = 35
+	damage = 95
+	armor_penetration = 40
+	light_power = 4
+	light_color = "#2132cf"
 
 /obj/item/projectile/warpboltcrappy
 	name = "Warp Bolt"
 	icon_state = "warpboltcrappy"
-	damage = 20 // DO NOT LEAEVE THIS AT 1500!
+	damage = 20
 	agony = 15 //Its warp magic it hurts more than it really is damaging.
 	eyeblur = 10 //the warp magic disrupts your eyes for a moment.
 	light_power = 4 //It glows because warp idk.

@@ -141,8 +141,8 @@
 	desc = "The Chainaxe of the Blood God's chosen mortal men and Astartes alike. It looks excellent for killing, maiming, and perhaps even burning. It doesn't look very good for blocking, good thing you're only gonna attack with it."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "chainaxe"
-	item_state = "pcsword"
-	wielded_icon ="eviscerator"
+	item_state = "kchainaxe"
+	wielded_icon ="kchainaxe"
 	str_requirement = 13
 	force = 50 // blood for the blood god. its strong,  but the shit block chance makes it balanced
 	force_wielded = 65
@@ -191,7 +191,7 @@
 	force = 33
 	force_wielded = 36
 	sharp = 1
-	block_chance = 15
+	block_chance = 40
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
