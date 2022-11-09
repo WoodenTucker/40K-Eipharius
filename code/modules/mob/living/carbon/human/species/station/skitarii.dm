@@ -194,3 +194,29 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+
+
+/*/datum/species/human/skitarii/thallax
+	name = "Thallax"
+	name_plural = "Thallaxi"
+	blurb = "The Mechanicus' loyal soldiers."
+	total_health = 500 //made to be recovered even if they get severely injured
+	min_age = 40
+	max_age = 800
+	icobase = 'icons/mob/human_races/r_human.dmi'
+	deform = 'icons/mob/human_races/r_def_human.dmi'
+	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
+	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
+	pixel_offset_y = -4
+	strength = STR_HIGH
+	radiation_mod = 0
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED
+	slowdown = -0.60
+	inherent_verbs = list(
+	/mob/living/carbon/human/skitarii/thallax/proc/givethallaxstats,
+		)
+	unarmed_types = list(
+		/datum/unarmed_attack/stomp/astartes,
+		/datum/unarmed_attack/kick/astartes,
+		/datum/unarmed_attack/punch/astartes
+		)*/
