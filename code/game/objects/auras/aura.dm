@@ -202,6 +202,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	innate_heal = TRUE // Whether the aura is on, basically.
 	nutrition_damage_mult = 0 //How much nutrition it takes to heal regular damage
 	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
+	can_regenrate_organs = TRUE
 	
 /obj/aura/regenerating/human/perpetual/life_tick() //this causes the two former lines to work
 	var/mob/living/carbon/human/H = user
@@ -251,5 +252,3 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 						qdel(W)
 	return 1
 
-/obj/aura/regenerating/human/perpetual/proc/can_regenerate_organs()
-	return TRUE
