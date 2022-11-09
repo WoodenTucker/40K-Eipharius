@@ -219,4 +219,49 @@
 		/datum/unarmed_attack/stomp/astartes,
 		/datum/unarmed_attack/kick/astartes,
 		/datum/unarmed_attack/punch/astartes
-		)*/
+		)
+
+/mob/living/carbon/human/skitarii/thallax/proc/givethallaxstats()
+	set name = "Run startup diagnostics"
+	set category = "Thallax"
+	set desc = "Gives Thallax stats."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/skitclass = input("Select a Class","Class Selection") as null|anything in list("Standard")
+	switch(thallaxclass)
+		if("Standard")
+			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/skitarii, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
+			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
+			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
+			src.add_stats(rand(22,26),rand(12,14),rand(22,26), rand(20,22)) //gives stats str, dext, end, int
+			src.add_skills(rand(9,10),rand(11,12),rand(5,7),rand(6,8),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.update_eyes() //should fix grey vision
+			src.warfare_language_shit(LANGUAGE_MECHANICUS) //secondary language
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+			src.thirst = INFINITY
+			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+			src.verbs -= /mob/living/carbon/human/skitarii/proc/givethallaxstats //removes verb at the end so they can't spam it for whatever reason
+			client?.color = null
+
+			var/obj/item/card/id/dog_tag/skitarii/W = new
+			W.icon_state = "tagred"
+			W.assignment = "Thallax Warrior"
+			W.registered_name = real_name
+			W.update_label()
+			equip_to_slot_or_del(W, slot_wear_id)*/
