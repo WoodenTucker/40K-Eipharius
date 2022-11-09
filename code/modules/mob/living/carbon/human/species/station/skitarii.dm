@@ -230,7 +230,7 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	var/skitclass = input("Select a Class","Class Selection") as null|anything in list("Standard")
+	var/thallaxclass = input("Select a Class","Class Selection") as null|anything in list("Standard")
 	switch(thallaxclass)
 		if("Standard")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/skitarii, slot_wear_suit)
@@ -239,12 +239,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
 			playsound(src, 'sound/effects/startup.ogg', 80, 1, 1)
 			src.add_stats(rand(22,26),rand(12,14),rand(22,26), rand(20,22)) //gives stats str, dext, end, int
@@ -265,3 +260,104 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)*/
+
+/obj/item/organ/external/chest/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	robotic = ORGAN_ROBOT
+	max_damage = 400
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/groin/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 0
+	robotic = ORGAN_ROBOT
+	max_damage = 350
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/arm/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	robotic = ORGAN_ROBOT
+	max_damage = 250
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/arm/right/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0.1
+	cannot_break = 1
+	gibbable = TRUE
+	robotic = ORGAN_ROBOT
+	max_damage = 250
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/leg/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0.1
+	cannot_break = 1
+	gibbable = TRUE
+	robotic = ORGAN_ROBOT
+	max_damage = 250
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/leg/right/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	robotic = ORGAN_ROBOT
+	pain = 0
+
+/obj/item/organ/external/foot/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	can_stand = 1
+	robotic = ORGAN_ROBOT
+	max_damage = 250
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/foot/right/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	can_stand = 1
+	robotic = ORGAN_ROBOT
+	max_damage = 200
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/hand/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	can_grasp = 1
+	robotic = ORGAN_ROBOT
+	max_damage = 200
+	has_tendon = FALSE
+	pain = 0
+
+/obj/item/organ/external/hand/right/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	can_grasp = 1
+	gibbable = TRUE
+	robotic = ORGAN_ROBOT
+	max_damage = 200
+	has_tendon = FALSE
+
+/obj/item/organ/external/head/unbreakable/thallax
+	dislocated = -1
+	arterial_bleed_severity = 0
+	cannot_break = 1
+	robotic = ORGAN_ROBOT
+	max_damage = 250
+	has_tendon = FALSE
