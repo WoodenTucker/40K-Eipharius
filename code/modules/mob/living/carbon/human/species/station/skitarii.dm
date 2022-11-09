@@ -233,11 +233,12 @@
 	var/thallaxclass = input("Select a Class","Class Selection") as null|anything in list("Standard")
 	switch(thallaxclass)
 		if("Standard")
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/hooded/skitarii, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/thallax, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/helmet/thallax, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare/thallax, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 			visible_message("[name] whizzes and beeps as they run startup diagnostics. All systems green.")
@@ -259,7 +260,7 @@
 			W.assignment = "Thallax Warrior"
 			W.registered_name = real_name
 			W.update_label()
-			equip_to_slot_or_del(W, slot_wear_id)*/
+			equip_to_slot_or_del(W, slot_wear_id)
 
 /obj/item/organ/external/chest/unbreakable/thallax
 	dislocated = -1
