@@ -642,3 +642,23 @@
 	name = "security messenger bag"
 	desc = "A tactical backpack worn over one shoulder. This one is in Security colors."
 	icon_state = "courierbagsec"
+
+/obj/item/storage/backpack/satchel/warfare/thallax
+	name = "Thallax Warrior Power Generator"
+	desc = "An intricate and powerful generator attached to the back of a Thallax Warrior."
+	canremove = 0
+
+/obj/item/storage/backpack/satchel/warfare/thallax/verb/toggle_weapon()
+	set name = "Activate Integrated Weapon"
+	set category = "Weaponry"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This weapon cannot be toggled!")
+	else
+		to_chat(usr,"You power up your integrated weapon and activate it! For the omnissiah!.")
+		usr.put_in_hands(new /obj/item/gun/energy/thallax/lightning(usr))
+
+
+
