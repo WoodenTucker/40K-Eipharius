@@ -234,7 +234,7 @@
 	switch(thallaxclass)
 		if("Standard")
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/thallax, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/helmet/thallax, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/thallax, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/blacksun/skitarii, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_eng, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
@@ -252,7 +252,7 @@
 			src.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 			src.thirst = INFINITY
 			src.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-			src.verbs -= /mob/living/carbon/human/skitarii/proc/givethallaxstats //removes verb at the end so they can't spam it for whatever reason
+			src.verbs -= /mob/living/carbon/human/skitarii/thallax/proc/givethallaxstats //removes verb at the end so they can't spam it for whatever reason
 			client?.color = null
 
 			var/obj/item/card/id/dog_tag/skitarii/W = new
