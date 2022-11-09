@@ -647,6 +647,7 @@
 	name = "Thallax Warrior Power Generator"
 	desc = "An intricate and powerful generator attached to the back of a Thallax Warrior."
 	canremove = 0
+	var/can_toggle = 1
 
 /obj/item/storage/backpack/satchel/warfare/thallax/verb/toggle_weapon()
 	set name = "Activate Integrated Weapon"
