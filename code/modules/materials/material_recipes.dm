@@ -160,6 +160,7 @@
 	recipes += new/datum/stack_recipe("Slugga Boy Armor", /obj/item/clothing/suit/armor/orkarmor/skullza, 8, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Zoggin' Boy Armor", /obj/item/clothing/suit/armor/orkarmor/zog, 4, 1, 1, 10)
 
+	recipes += new/datum/stack_recipe("Power Klaw", /obj/item/storage/backpack/satchel/warfare/kroot/mek, 16, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("Shoota", /obj/item/gun/projectile/ork/automatic/shoota, 8, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("Bladed Shoota", /obj/item/gun/projectile/ork/automatic/shoota/bladed, 10, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("Kustom Shoota", /obj/item/gun/projectile/ork/automatic/shoota/kustom, 12, 1, 1, 20, on_floor = 1)

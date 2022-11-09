@@ -423,7 +423,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 30 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "lascar"
-	accuracy = -0.5
+	accuracy = -1
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.7, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=200),
@@ -432,140 +432,95 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 50 // make it a bit worse than hotshot
 
 /obj/item/gun/energy/las/laspistol
-	name = "Kantrael MG Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers"
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	slot_flags = SLOT_BELT|SLOT_S_STORE
-	w_class = ITEM_SIZE_NORMAL
-	force = 8
-	accuracy = -0.2
-	move_delay = 1.5
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
-	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/las/lasgun
-	charge_cost = 90
-	armor_penetration = 5
-	cell_type = /obj/item/cell/lasgun
-	ammoType = /obj/item/cell/lasgun
-	sales_price = 20
-	wielded_item_state = "machinepistol-wielded" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
-
-	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
-		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=180),
-		)
-
-/obj/item/gun/energy/las/laspistol/bloodpact
-	name = "Bloodpact Laspistol"
-	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design, it is less efficient with it's lasgun cells than more modern varients."
-	icon_state = "bloodlaspistol"
-	item_state = "laspistol"
-	charge_cost = 110
-	
-/obj/item/gun/energy/las/laspistol/lord
-	name = "Rogue Trader's Artificer Pistol"
-	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
-	icon_state = "lordlaspistol"
-	item_state = "lordlaspistol"
-	accuracy = 1
-	move_delay = 3.5 // do not want the RT's pistol as a frag gamer weapon. its for self defence.
-	charge_cost = 45
-	charge_meter = FALSE //must have, due to having only 1 item state.
-	sales_price = 35
-	firemodes = list(
-		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=45),
-		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
-	)
-	sales_price = 50
-
-
-/obj/item/gun/energy/las/laspistol/defender
 	name = "Civitas Pattern Laspistol"
 	desc = "The Civitas is both somewhat bulky and inefficient (owing to lower quality components than a military-grade laspistol), but remains popular due to its ease of manufacture, longevity and simplicity of maintenance. They are made on almost every hive world and often in the hands of civilians."
 	icon_state = "laspistolciv"
+	item_state = "chaosppistol" // just a red generic las on mob. replace asap
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = -1.5
+	move_delay = 2.5
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
 	charge_cost = 110
-	accuracy = -0.7
-	one_hand_penalty = 1
+	armor_penetration = 0
+	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
+	sales_price = 20
+	wielded_item_state = "chaosppistol"
 
-/obj/item/gun/energy/las/laspistol/militarum
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=110),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun, charge_cost=180),
+		)
+
+/obj/item/gun/energy/las/laspistol/shitty
 	name = "Portsmith W. Laspistol"
 	desc = "The Laspistol variant of the Portsmith W. Lasrifle. Cheap, slow but better than nothing. Uses small lascells"
 	icon_state = "semip"
-	item_state = "laspistol"
-	accuracy = 0
-	fire_delay = 3.6
-	charge_cost = 115
+	fire_delay = 3.5
+	charge_cost = 140
 	sales_price = null
 	charge_meter = FALSE
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
+	sales_price = 10
 
+/obj/item/gun/energy/las/laspistol/militarum
+	name = "Kantrael MG Laspistol"
+	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant bears the Astra Militarum markings, issued to the enlisted personnel and non-commissioned officers."
+	icon_state = "laspistol"
+	accuracy = 0.5
+	charge_cost = 90
+	cell_type = /obj/item/cell/lasgun
+	ammoType =  /obj/item/cell/lasgun
+	sales_price = 35
+
+/obj/item/gun/energy/las/laspistol/militarum/bloodpact
+	name = "Bloodpact Laspistol"
+	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design, it is less efficient with it's lasgun cells than more modern variants."
+	icon_state = "bloodlaspistol"
+	accuracy = -1 // bloodpact should always be more innaccurate than their imperial counterparts
+	charge_cost = 110
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic",       burst=3, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0.5),
+		)
+
+/obj/item/gun/energy/las/laspistol/militarum/lord
+	name = "Rogue Trader's Artificer Pistol"
+	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
+	icon_state = "lordlaspistol"
+	charge_meter = FALSE //must have, due to having only 1 item state.
+	accuracy = 1
+	charge_cost = 45
+	firemodes = list(
+		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+	)
+	sales_price = 80
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Astra Militarum Lucius-pattern Laspistol"
 	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
-	icon_state = "laspistol"
-	item_state = "laspistol"
+	icon_state = "luciuspistol"
 	force = 10
 	one_hand_penalty = 2.5
 	move_delay = 1.5
 	accuracy = 0.7
 	fire_delay = 2.5
 	armor_penetration = 8.75
-	charge_cost = 100
+	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 25
 
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
 		)
-
-/obj/item/gun/energy/las/laspistol/militarum/lucius/sister
-	name = "Astra Militarum Laspistol"
-	desc = "Pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Astra Militarum, this one seems to be have been modified for the gloves of Adepta Sororitas Power Armor."
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	accuracy = 0.5
-	fire_delay = 2
-	cell_type = /obj/item/cell/lasgun
-	ammoType =  /obj/item/cell/lasgun
-
-/obj/item/gun/energy/las/laspistol/mechanicus
-	name = "Adeptus Mechanicus Kantrael MG Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified by Adeptus Mechanicus to concentrate the beam, resulting in more powerful shot for their self-defense purposes."
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	move_delay = 1.5
-	one_hand_penalty = 1
-	accuracy = -0.5
-	fire_delay= 3
-	armor_penetration = 12.5
-	cell_type = /obj/item/cell/lasgun
-	ammoType =  /obj/item/cell/lasgun
-
-/obj/item/gun/energy/las/laspistol/commissar
-	name = "Officio Prefectus Kantrael MG Laspistol"
-	desc = "Kantrael MG is a Cadian laspistol, frequently seen as a cheap and reliable sidearm. This variant has been modified to amplify the overcharge mode, issued to the Officio Prefectus for their purposes."
-	icon_state = "laspistol"
-	item_state = "laspistol"
-	move_delay = 1.5
-	one_hand_penalty = 1
-	accuracy = 0.5
-	fire_delay= 3
-	armor_penetration = 12.5
-	sales_price = 25
-	cell_type = /obj/item/cell/lasgun
-	ammoType =  /obj/item/cell/lasgun
-
-	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=200),
-		list(mode_name="execution", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/execution, charge_cost=3000),
-		)
-
 
 //Tau weapons
 

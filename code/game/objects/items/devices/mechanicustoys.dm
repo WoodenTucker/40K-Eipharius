@@ -158,7 +158,7 @@
 	item_state = "Whistle_InHand"
 	wielded_icon = "Whistle_InHand_W"
 	force = 45
-	block_chance = 65
+	block_chance = 50
 	sharp = TRUE
 	edge = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -216,7 +216,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	item_state = "powersword"
 	wielded_icon = "powersword"
 	force = 40
-	block_chance = 80
+	block_chance = 50
 	sharp = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE

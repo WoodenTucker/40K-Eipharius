@@ -778,7 +778,7 @@ obj/item/gun/projectile/automatic/autogun
 	desc = "A rugged autogun of Agripinaa design, it has a very high rate of fire and is designed for close quarters fighting."
 	icon_state = "agripinaa" // Object Icon
 	item_state = "agripinaa" // On-Mob
-	unloaded_icon = "agripinaa_empty" // Object Icon
+	unloaded_icon = "agripinaa_e" // Object Icon
 	loaded_icon = "agripinaa" // Object Icon
 	caliber = "a556"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -799,7 +799,7 @@ obj/item/gun/projectile/automatic/autogun
 	unwielded_loaded_icon = "autorifle"
 	wielded_loaded_icon = "agripinaa"
 	unwielded_unloaded_icon = "autorifle-e"
-	wielded_unloaded_icon = "agripinaa_empty"
+	wielded_unloaded_icon = "agripinaa_e"
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),

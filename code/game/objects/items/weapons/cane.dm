@@ -64,7 +64,7 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "cane_sword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	block_chance = 70
+	block_chance = 55
 	force = 32
 	sharp = 1
 	edge = 1

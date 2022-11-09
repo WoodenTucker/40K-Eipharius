@@ -19,7 +19,7 @@
 
 /obj/item/gun/projectile/revolver/cpt
 	name = "Captain's Special"
-	desc = "The sort of weapon usually found on nobility, such as captains or commandants."
+	desc = "The sort of weapon usually found on nobility, or powerful individuals, such as Inquisition Retinue or Arbites."
 	icon_state = "cptrevolver"
 	item_state = "crevolver"
 
@@ -32,13 +32,6 @@
 	fire_delay= 2.7
 	ammo_type = /obj/item/ammo_casing/shotgun
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-
-/obj/item/gun/projectile/revolver/cpt/magistrate
-	name = "Commandant's Special"
-
-/obj/item/gun/projectile/revolver/cpt/inq
-	name = "Lacquered Stub Revolver"
-	desc = "A lacquered stub revolver with various intricate patterns and designs dotting the surface. It looks as though someone from nobility would possess this."
 
 /obj/item/gun/projectile/revolver/attack_self(mob/user)
 	. = ..()
@@ -106,9 +99,9 @@
 		to_chat(M, "You name the gun [input]. Say hello to your new friend.")
 		return 1
 
-/obj/item/gun/projectile/revolver/detective/boscelot
-	name = "Boscelot Revolver"
-	desc = "A cheap revolver, copying the designs from Boscelot. Chambered in .38 and constantly asking the user why they didn't get a more powerful caliber."
+/obj/item/gun/projectile/revolver/detective/boscolet
+	name = "Boscolet Revolver"
+	desc = "A cheap revolver, copying the designs from Boscolet. Chambered in .38 and constantly asking the user why they didn't get a more powerful caliber."
 	icon_state = "snubby"
 	max_shells = 6
 	caliber = "38"

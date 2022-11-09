@@ -39,7 +39,7 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg' //Same here.
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
-	move_delay= 2.6 
+	move_delay= 2.6
 	one_hand_penalty = 4
 	accuracy = 0.5
 	fire_delay= 3
@@ -268,7 +268,7 @@
 	forwardsound = 'sound/weapons/guns/interact/rifle_boltforward.ogg'
 	ammo_type = /obj/item/ammo_casing/a762
 	wielded_item_state = "rifle-wielded"
-	block_chance = 45
+	block_chance = 25
 	gun_type = GUN_PISTOL
 	move_delay= 2.5
 	one_hand_penalty = 3
@@ -294,7 +294,7 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 15 //ITS HEAVY
 	one_hand_penalty = 80 //who the fuck would try to use a meltagun with one hand?
-	block_chance = 40 //pretty big, could be used as a shield in theory considering how armored it is
+	block_chance = 30 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
 	accuracy = 3

@@ -413,7 +413,7 @@
 /datum/job/ig/sergeant/watchman
 	title = "Cultist Sergeant"
 	supervisors = "Cult Leader"
-	department_flag = SRV
+	department_flag = SRV || COM
 	selection_color = "#3032a7"
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant,
@@ -791,7 +791,7 @@
 //chaos bad boy guard
 
 /decl/hierarchy/outfit/job/bloodpact
-	uniform = /obj/item/clothing/under/guard/uniform
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/chain/pcsword/khorneaxe
@@ -805,22 +805,23 @@
 	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/laspistol/bloodpact
+	suit_store = /obj/item/gun/energy/las/laspistol/militarum/bloodpact
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/grenade/frag = 1,
 	/obj/item/grenade/frag/high_yield/krak = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
 
 /decl/hierarchy/outfit/job/vraks // generic culty boy
-	uniform = /obj/item/clothing/under/guard/uniform
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/material/sword/combat_knife/rare
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/heretichood
+	head = /obj/item/clothing/head/helmet/culthelm/gas
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	id = null
@@ -833,13 +834,14 @@
 	backpack_contents = list(
 	/obj/item/ammo_magazine/autogrim = 3,
 	/obj/item/grenade/frag = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
 
 // chaos spec
 
 /decl/hierarchy/outfit/job/watchman/sharpshooter
 	name = OUTFIT_JOB_NAME("Cadian Plasmagunner")
-	uniform = /obj/item/clothing/under/guard/uniform
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = null
@@ -856,9 +858,6 @@
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -867,8 +866,8 @@
 
 /decl/hierarchy/outfit/job/watchman/sharpshooter/valhalla
 	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
-	uniform = /obj/item/clothing/under/guard/uniform
-	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/gun/projectile/warfare/kieji
 	gloves = /obj/item/clothing/gloves/combat/cadian
@@ -885,16 +884,13 @@
 	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
 	/obj/item/ammo_magazine/c45m/warfare = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
 	/obj/item/device/flashlight/lantern = 1
 	)
 
 /decl/hierarchy/outfit/job/watchman/guardsman/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
-	uniform = /obj/item/clothing/under/guard/uniform
-	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	head = /obj/item/clothing/head/heretichood/alt
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/extinguisher
@@ -910,9 +906,6 @@
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
 	)
 
 
@@ -1001,7 +994,7 @@
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/guard
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -1029,7 +1022,7 @@
 	uniform = /obj/item/clothing/under/rank/krieg_uniform
 	suit = /obj/item/clothing/suit/armor/kriegsgt
 	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
@@ -1053,7 +1046,7 @@
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
-	belt = /obj/item/melee/chain/mercycs
+	belt = /obj/item/melee/chain/guard
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
@@ -1100,7 +1093,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/guard
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/heretichood
@@ -1128,7 +1121,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/guard
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/heretichood
