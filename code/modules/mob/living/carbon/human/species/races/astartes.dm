@@ -32,7 +32,7 @@ Astartes
 	genders = list(MALE)
 	teeth_type = /obj/item/stack/teeth/human //Teeth
 	//sexybits_location = BP_GROIN //dude, they have no balls - they actually do, it's old myth since they have libido being put down to the rock bottom
-	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SLIP
 	inherent_verbs = list()
 	radiation_mod = 0.7
 	var/auto_rifle_skill = 10 //Saves time when Aspawning them
@@ -97,61 +97,68 @@ Astartes
 
 /obj/item/organ/external/chest/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 
 /obj/item/organ/external/groin/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
-	cannot_break = 1
+	arterial_bleed_severity = 0.1
+	cannot_break = 0
 	encased = "lower ribcage"
 
 /obj/item/organ/external/arm/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/arm/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/leg/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/leg/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/foot/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	can_stand = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/foot/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 	can_stand = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/hand/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 	can_grasp = 1
+	gibbable = TRUE
 
 /obj/item/organ/external/hand/right/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
 	can_grasp = 1
-
+	gibbable = TRUE
 
 /obj/item/organ/external/head/unbreakable/astartes
 	dislocated = -1
-	arterial_bleed_severity = 0
+	arterial_bleed_severity = 0.1
 	cannot_break = 1
-
+	gibbable = TRUE
