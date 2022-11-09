@@ -189,7 +189,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	return TRUE
 
 /obj/aura/regenerating/human/proc/can_regenerate_organs()
-	return FALSE
+	return TRUE
 
 /obj/aura/regenerating/human/proc/external_regeneration_effect(var/obj/item/organ/external/O, var/mob/living/carbon/human/H)
 	return
@@ -202,7 +202,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	innate_heal = TRUE // Whether the aura is on, basically.
 	nutrition_damage_mult = 0 //How much nutrition it takes to heal regular damage
 	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
-	can_regenrate_organs = TRUE
+	var/can_regenrate_organs = TRUE
 	
 /obj/aura/regenerating/human/perpetual/life_tick() //this causes the two former lines to work
 	var/mob/living/carbon/human/H = user
