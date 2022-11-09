@@ -196,7 +196,7 @@
 			equip_to_slot_or_del(W, slot_wear_id)
 
 
-/*/datum/species/human/skitarii/thallax
+/datum/species/human/skitarii/thallax
 	name = "Thallax"
 	name_plural = "Thallaxi"
 	blurb = "The Mechanicus' loyal soldiers."
