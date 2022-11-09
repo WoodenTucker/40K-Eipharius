@@ -271,3 +271,32 @@
 	check_armour = "energy"
 	light_range = 4
 	light_color = "#4A069E"
+
+/obj/item/projectile/energy/thallax/lightning
+	name = "lightning"
+	icon_state = "stun"
+	damage = 75
+	armor_penetration = 40
+	agony = 35
+	damage_type = BURN
+	check_armour = "energy"
+	mob_hit_sound = list('sound/effects/gore/sear.ogg')
+	range =  15
+	flash_range = 1
+	brightness = 7
+	light_colour = "#ffffff"
+
+/obj/item/projectile/energy/thallax/lightning/on_impact(var/atom/A)
+	var/turf/T = flash_range? src.loc : get_turf(A)
+	if(!istype(T)) return
+
+	//blind and confuse adjacent people
+	for (var/mob/living/carbon/M in viewers(T, flash_range))
+		if(M.eyecheck() < FLASH_PROTECTION_MODERATE)
+			M.flash_eyes()
+			M.eye_blurry += (brightness / 2)
+			M.confused += (brightness / 2)
+
+	//snap pop
+	playsound(src, 'sound/effects/snap.ogg', 50, 1)
+	src.visible_message("<span class='warning'>\The [src] explodes in a bright flash!</span>")
