@@ -281,10 +281,10 @@
 	damage_type = BURN
 	check_armour = "energy"
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
-	range =  15
-	flash_range = 1
-	brightness = 7
-	light_colour = "#ffffff"
+	var/range =  15
+	var/flash_range = 1
+	var/brightness = 7
+	var/light_colour = "#ffffff"
 
 /obj/item/projectile/energy/thallax/lightning/on_impact(var/atom/A)
 	var/turf/T = flash_range? src.loc : get_turf(A)
