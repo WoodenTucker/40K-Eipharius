@@ -26,7 +26,7 @@
 	if(isAutochisel(W) || isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Inferior Lasgun Cell", "Boscelot Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Bolt Pistol Magazine", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Musket", "Sawn-Off Shotgun", "Combat Knife") //lists all possible crafting choices
+		var/craftingchoices = list("Inferior Lasgun Cell", "Boscolet Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Bolt Pistol Magazine", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Musket", "Sawn-Off Shotgun", "Combat Knife") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -38,12 +38,12 @@
 				src.whatwemaking = 1
 				src.ismarked = 1
 				src.name = "Copper Ingot (Marked Inferior Lasgun Cell)"
-			if("Boscelot Revolver")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Boscelot Revolver")
+			if("Boscolet Revolver")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Boscolet Revolver")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 2
 				src.ismarked = 1
-				src.name = "Copper Ingot (Marked Boscelot Revolver)"
+				src.name = "Copper Ingot (Marked Boscolet Revolver)"
 			if("Shells Boxes")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Shells Boxes.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
@@ -159,9 +159,9 @@
 			if(2)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed Boscelot Revolver! Now take the ingot and dip it into the holy oil!")
+					visible_message("[user] carefully carves the ingot into a blessed Boscolet Revolver! Now take the ingot and dip it into the holy oil!")
 					src.rubtheoils = 1
-					src.name = "Copper Ingot (Carved Boscelot Revolver)"
+					src.name = "Copper Ingot (Carved Boscolet Revolver)"
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				else
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -314,7 +314,7 @@
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/revolver/detective/boscelot(user.loc)
+				new /obj/item/gun/projectile/revolver/detective/boscolet(user.loc)
 				qdel(src)
 				return
 			if(3)
@@ -815,7 +815,7 @@
 			if(3)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/energy/las/laspistol/defender(user.loc)
+				new /obj/item/gun/energy/las/laspistol(user.loc)
 				qdel(src)
 				return
 			if(4)
@@ -1351,7 +1351,7 @@ kultrinium
 			if(8)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/melee/chain/inqcs/guard(user.loc,1)
+				new /obj/item/melee/chain/guard(user.loc,1)
 				qdel(src)
 				return
 

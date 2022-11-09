@@ -302,6 +302,26 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "krootbag"
 
+/obj/item/storage/backpack/satchel/warfare/kroot/mek
+	name = "Power Klaw Mekboy Bag"
+	desc = "Da mekboy attached a Power Klaw to dis 'ere backpack. Put on da backpack! (ork tab for klaw)"
+	icon_state = "krootbag"
+	color = COLOR_RED
+	canremove = FALSE
+	var/can_toggle = 1
+
+/obj/item/storage/backpack/satchel/warfare/kroot/mek/verb/toggleklaw() // only way to get it is the backpack currently. And power sword augment. This should be replaced.
+	set name = "Deploy Power Klaw!"
+	set category = "Ork"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+	else
+		to_chat(usr,"Ya reattach yer Power Klaw!!")
+		usr.put_in_hands(new /obj/item/melee/chain/pcsword/klaw(usr))
+
 /obj/item/storage/backpack/satchel/warfare/techpriest
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"

@@ -805,7 +805,7 @@
 	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/laspistol/bloodpact
+	suit_store = /obj/item/gun/energy/las/laspistol/militarum/bloodpact
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
@@ -994,7 +994,7 @@
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/guard
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -1022,7 +1022,7 @@
 	uniform = /obj/item/clothing/under/rank/krieg_uniform
 	suit = /obj/item/clothing/suit/armor/kriegsgt
 	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
@@ -1046,7 +1046,7 @@
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
-	belt = /obj/item/melee/chain/mercycs
+	belt = /obj/item/melee/chain/guard
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
@@ -1093,7 +1093,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/guard
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/heretichood
@@ -1121,7 +1121,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/chain/inqcs/guard
+	belt = /obj/item/melee/chain/guard
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/heretichood

@@ -512,15 +512,14 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 0.7
 	fire_delay = 2.5
 	armor_penetration = 8.75
-	charge_cost = 100
+	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 25
 
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=100),
-		list(mode_name="overcharge",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
 		)
 
 //Tau weapons
