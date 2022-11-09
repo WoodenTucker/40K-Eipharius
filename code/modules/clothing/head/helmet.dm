@@ -473,4 +473,14 @@
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
-	sales_price = 8
+	body_parts_covered = HEAD|FACE|EYES
+
+/obj/item/clothing/head/helmet/thallax
+	name = "Vindicare helmet"
+	desc = "The armoured helmet of a Thallax Warrior."
+	icon_state = "vox-stealth"
+	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100)
+	siemens_coefficient = 0
+	canremove = 0
+	flags_inv = HIDEEARS|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EYES
