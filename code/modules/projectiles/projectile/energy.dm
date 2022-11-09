@@ -281,7 +281,7 @@
 	damage_type = BURN
 	check_armour = "energy"
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
-	var/range =  15
+	range =  15
 	var/flash_range = 1
 	var/brightness = 7
 	var/light_colour = "#ffffff"
