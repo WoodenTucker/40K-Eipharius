@@ -404,8 +404,8 @@
 /obj/item/melee/chain
 	name = "Messina Pattern Chainsword"
 	desc = "A basic chainsword constructed in the small scale forges of Eipharius itself. Cheaped out on quality, at least its still a chainsword!"
-	icon_state = "chainsword"
-	item_state = "inqchainsword"
+	icon_state = "mercychainsword"
+	item_state = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 15
 	force = 35
@@ -434,8 +434,8 @@
 /obj/item/melee/chain/gold
 	name = "Terra Pattern Chainsword" // this is mostly an ornamental chainsword. Make it low tier. its mostly drip.
 	desc = "A golden ornamental chainsword, overburdened with it's expensive metal. It is cumbersome and ornamental. At least it's almost as shiny as a Custodes."
-	icon_state = "goldchains"
-	item_state = "goldchains"
+	icon_state = "goldchain"
+	item_state = "inqchainsword"
 	weapon_speed_delay = 16 // gold heavy
 	sales_price = 90 //only RT has it. if made craftable, decrease value.
 
@@ -443,7 +443,7 @@
 	name = "Locke Pattern Double-Edged Chainsword"
 	desc = "Nicknamed 'Mercy', This Chainsword is designed for an absolute lunatic. With two ripping edges for maximum carnage. Intended for two handed use. "
 	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "mercychainsword"
+	icon_state = "mercychainswordold"
 	item_state = "mercychainsword"
 	wielded_icon = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
@@ -557,7 +557,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	slot_flags = null // change when no longer using backpack to spawn it
+	slot_flags = null // change when no longer using backpack to spawn i
 	attack_verb = list("klaw'd", "sawed", "cleaved", "zog'd", "cut")
 	weapon_speed_delay = 16 // its zogging huge
 	sales_price = 70
