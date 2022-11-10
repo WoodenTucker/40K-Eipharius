@@ -1675,3 +1675,15 @@ obj/item/clothing/suit/armor
 	desc = "Makeshift steel armor, while not refined, it will protect you vital organs. It has strange marks carved into it"
 	icon_state = "renegade_militia_armor"
 	item_state = "renegade_militia_armor"
+
+/obj/item/clothing/suit/armor/thallax
+	name = "Thallax Armour"
+	desc = "Heavy armour which makes up the main body of a Thallax Warrior"
+	icon_state = "lightpa2"
+	item_state = "lightpa2"
+	armor = list(melee = 120, bullet = 120, laser = 120, energy = 120, bomb = 120, bio = 120, rad = 120)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	canremove = 0

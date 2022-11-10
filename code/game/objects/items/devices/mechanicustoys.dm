@@ -425,3 +425,29 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/gun/energy/augmetic/seolite/neurotoxin/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
+
+/obj/item/gun/energy/thallax/lightning
+	name = "Thallax Warrior Lightning Gun"
+	desc = "A powerful weapon which fires beams of lightning at your foes!"
+	icon = 'icons/obj/weapons/gun/energy.dmi'
+	icon_state = "hyperf"
+	item_state = "hyperf"
+	w_class = ITEM_SIZE_HUGE
+	force = 45 //It's a big gun with a sword on it.
+	sharp = 1
+	edge = 1
+	accuracy = 1
+	move_delay = 2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/thallax/lightning
+	charge_cost = 1500
+	self_recharge = 1
+	cell_type = /obj/item/cell/mecha
+	ammoType = /obj/item/cell/mecha
+	wielded_item_state = "pulse_carbine" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
+
+/obj/item/gun/energy/thallax/lightning/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
