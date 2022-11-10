@@ -3,19 +3,19 @@
 "ae" = (/obj/machinery/optable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "af" = (/obj/effect/landmark{name = "taustart"},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "ah" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae/genetics)
-"al" = (/turf/simulated/floor/trench/fake,/area/cadiaoutpost/oa/security)
+"al" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "an" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "ap" = (/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/item/clothing/head/heretichood/alt2,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "aq" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "ar" = (/obj/structure/curtain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "as" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"au" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
+"au" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/security)
 "av" = (/obj/structure/closet/secure_closet/medical2{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "ay" = (/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/structure/table/woodentable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "aA" = (/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/effect/floor_decal/industrial/outline/yellow,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/obj/item/gun/energy/las/hotshot/bloodpact,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "aC" = (/obj/structure/closet/secure_closet/medical1/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
-"aD" = (/obj/structure/landmine,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
-"aG" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/security)
+"aD" = (/obj/structure/landmine,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/security)
+"aG" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/security)
 "aH" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "aI" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "aJ" = (/obj/structure/table/steel,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
@@ -26,7 +26,7 @@
 "aW" = (/obj/structure/closet/crate,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "ba" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/closet/crate,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/handful/kroot_handful/two,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/obj/item/ammo_magazine/autogrim,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "be" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"bf" = (/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
+"bf" = (/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
 "bg" = (/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/random/loot/lightmelee,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "bh" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "bi" = (/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/item/clothing/suit/armor/flak1/renegadearmor,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
@@ -62,18 +62,18 @@
 "cx" = (/obj/structure/closet/crate,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "cy" = (/turf/simulated/mineral,/area/cadiaoutpost/oa/caves)
 "cz" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/structure/table/steel,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"cC" = (/obj/structure/banner/red{pixel_y = -32; pixel_z = 0},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
+"cC" = (/obj/structure/banner/red{pixel_y = -32; pixel_z = 0},/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
 "cD" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "cF" = (/obj/structure/table/steel,/obj/machinery/cooker/cereal,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "cI" = (/obj/effect/landmark/start{name = "Sister Hospitaller"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "cJ" = (/obj/structure/bed/chair,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "cK" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
-"cM" = (/obj/item/pyre/self_lit,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"cM" = (/obj/item/pyre/self_lit,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "cQ" = (/obj/structure/table/rack/shelf,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "cT" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
-"cU" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
+"cU" = (/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "cW" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/firstaid/surgery,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"cX" = (/obj/effect/decal/mecha_wreckage/tau{anchored = 1; desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions."; name = "XV8 Crisis battlesuit wreckage"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"cX" = (/obj/effect/decal/mecha_wreckage/tau{anchored = 1; desc = "Remains of some unfortunate battlesuit. Completely unrepairable in ship conditions."; name = "XV8 Crisis battlesuit wreckage"},/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "cY" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/ammo_box/shotgun,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "cZ" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/fancy/cigarettes/carcinomas,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "da" = (/obj/structure/table/rack,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
@@ -81,11 +81,11 @@
 "df" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "dg" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "dj" = (/obj/machinery/button/remote/blast_door/lever{id = "red"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
-"dl" = (/obj/structure/banner/red{pixel_y = -32},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
+"dl" = (/obj/structure/banner/red{pixel_y = -32},/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
 "dm" = (/obj/structure/closet/crate,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dn" = (/obj/structure/iv_drip,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "dp" = (/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{name = "humie medicines"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"dq" = (/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/service/chapel)
+"dq" = (/obj/structure/barbwire,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "ds" = (/obj/structure/closet/crate,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dt" = (/obj/structure/closet/crate,/obj/item/wirecutters,/obj/item/storage/firstaid/regular,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "dx" = (/obj/structure/table/woodentable,/obj/item/flame/candle,/obj/item/storage/box/matches,/obj/item/device/cassette/tape1,/obj/item/device/cassette/tape2,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
@@ -97,8 +97,8 @@
 "dM" = (/obj/structure/closet/medical_wall,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
 "dN" = (/obj/structure/sign/medholo,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/security)
 "dO" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"dQ" = (/obj/item/pyre/self_lit{invisibility = 100; name = "Invisible Light"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
-"dV" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
+"dQ" = (/obj/item/pyre/self_lit{invisibility = 100; name = "Invisible Light"},/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
+"dV" = (/obj/structure/barbwire,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/security)
 "dW" = (/obj/structure/poster/red,/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
 "dY" = (/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "ea" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/caves)
@@ -112,7 +112,7 @@
 "eE" = (/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/obj/structure/table/woodentable,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "eF" = (/obj/structure/table/woodentable,/obj/item/device/compass,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "eG" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/structure/closet/crate,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
-"eH" = (/obj/structure/closet/crate{name = "gasmask crate"},/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
+"eH" = (/obj/structure/closet/crate{name = "gasmask crate"},/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
 "eI" = (/obj/effect/landmark/JoinLate,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "eJ" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "eK" = (/obj/structure/closet/crate,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/AMinus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/APlus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BMinus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/BPlus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OMinus,/obj/item/reagent_containers/ivbag/blood/OPlus,/obj/item/reagent_containers/ivbag/blood/OPlus,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
@@ -148,12 +148,12 @@
 "fS" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "fZ" = (/obj/effect/floor_decal/industrial/outline/yellow,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_rifle_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "gd" = (/obj/structure/table/rack,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/obj/item/clothing/accessory/storage/webbing_large,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"ge" = (/turf/simulated/floor/dirty/tough/fake,/area/cadiaoutpost/oa/service/chapel)
+"ge" = (/obj/structure/landmine,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "gf" = (/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security)
 "gg" = (/obj/item/material/sword/choppa,/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
-"go" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/service/chapel)
-"gp" = (/obj/structure/landmine,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
-"gr" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/service/chapel)
+"go" = (/obj/structure/closet/crate,/obj/item/plastique,/obj/item/plastique,/obj/item/plastique,/obj/item/crowbar,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wirecutters,/obj/item/wirecutters,/obj/item/wirecutters,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
+"gp" = (/obj/structure/landmine,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
+"gr" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
 "gs" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "gt" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security/detective)
 "gH" = (/obj/effect/landmark/start{name = "Sister Of Battle"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
@@ -180,7 +180,7 @@
 "nv" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/effect/landmark/start/ig/sharpshooter/watchman,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "nw" = (/obj/structure/closet/crate,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag/high_yield/homemade,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/frag,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/obj/item/grenade/smokebomb,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "nI" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/obj/item/gun/energy/pulse/pulserifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"nK" = (/turf/simulated/floor/dirty/tough/fake,/area/cadiaoutpost/oa/security)
+"nK" = (/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/security)
 "nL" = (/obj/machinery/computer/operating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
 "ol" = (/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "oq" = (/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
@@ -193,7 +193,6 @@
 "pK" = (/obj/effect/landmark/start{name = "Rogue Trader"},/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "pX" = (/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
 "qb" = (/obj/effect/landmark/cargospawn,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
-"qz" = (/turf/simulated/floor/trench/fake,/area/cadiaoutpost/oa/service/chapel)
 "qO" = (/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/obj/structure/table/steel,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/obj/item/reagent_containers/spray/cleaner/warfare,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "qW" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "ri" = (/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/obj/effect/floor_decal/industrial/outline/yellow,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
@@ -216,12 +215,12 @@
 "vJ" = (/obj/machinery/vending/medical{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "vR" = (/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "vW" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/service/chapel)
-"xb" = (/obj/structure/barbwire,/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/village)
+"xb" = (/obj/structure/barbwire,/obj/structure/barbwire,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "xe" = (/obj/machinery/sleeper{dir = 1; icon_state = "sleeper_0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "xi" = (/obj/structure/closet/crate,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "xj" = (/obj/structure/table/steel,/obj/item/crutches,/obj/item/crutches,/obj/item/crutches,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae)
 "xy" = (/obj/structure/bed,/obj/effect/landmark/start{name = "Xeno Combatant"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"xR" = (/obj/structure/barbwire,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/service/chapel)
+"xR" = (/obj/structure/barbwire,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/service/chapel)
 "xU" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "ym" = (/obj/structure/dirt_wall,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security/detective)
 "yH" = (/turf/simulated/wall/concrete,/area/cadiaoutpost/oa/medicae)
@@ -257,7 +256,7 @@
 "Gg" = (/obj/machinery/mech_recharger,/obj/machinery/mech_recharger,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "GG" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "GH" = (/obj/machinery/vending/medical{req_access = newlist()},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/medicae/genetics)
-"Hj" = (/turf/simulated/floor/dirty/tough,/area/cadiaoutpost/oa/security)
+"Hj" = (/obj/item/wirecutters,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/village)
 "Hr" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
 "Hv" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 4},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
 "HO" = (/obj/structure/table/steel,/obj/item/reagent_containers/food/condiment/small/saltshaker,/obj/item/reagent_containers/food/condiment/small/peppermill,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/chapel)
@@ -316,7 +315,7 @@
 "UC" = (/obj/item/gun/projectile/ork/automatic/shoota{accuracy = -4; color = "red"; name = "fast shoota"},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/security/detective)
 "UH" = (/obj/machinery/light{dir = 4; icon_state = "tube1"; tag = ""},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "UP" = (/obj/item/clothing/under/guard/renegadeuniform,/obj/effect/floor_decal/industrial/outline/yellow,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/obj/item/clothing/under/guard/renegadeuniform,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hangarpact)
-"Vo" = (/turf/simulated/floor/dirty/fake,/area/cadiaoutpost/oa/security)
+"Vo" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance,/turf/simulated/floor/dirty,/area/cadiaoutpost/oa/security)
 "VH" = (/obj/effect/landmark/start/warden,/turf/simulated/floor/tiled,/area/cadiaoutpost/oa/service/chapel)
 "VU" = (/obj/structure/closet/crate{name = "gasmask crate"},/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/obj/item/clothing/mask/gas,/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/security)
 "Wl" = (/obj/machinery/door/airlock/arbiter{req_access = list(); name = "Kroot Warsphere"},/turf/simulated/floor/dirty/indestructable,/area/cadiaoutpost/oa/krootship)
@@ -364,99 +363,99 @@ cycycycycycycycycycycycyololololololololololololadolololololololololololololcydO
 cycycycycycycycycycycycyolololololololololololVUololVUolololololololololololcygtdpdOdOgtrsungtTGuncy
 cycycycycycycycycycycycyfEfEfEfEfEfEfEfEfEfEfEfEololfEfEfEfEfEfEfEfEfEfEfEfEcydObugtrsdOdObuTGunOycy
 cycycycycycycycycycycycyfNfNfNfNfNfNfNfNfNfNfNfNololfNfNfNfNfNfNfNfNfNfNfNfNcydOgtdOdpdOOyeUOyrsdOcy
-cycycycycycycycycycycycyHjHjHjHjHjHjHjHjHjHjHjaGHjHjaGHjHjHjHjHjHjHjHjHjHjHjcydOdpbydOgteUeUeUeUOycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKaGnKnKaGnKnKnKnKnKnKnKnKnKnKnKcydOdpbydOgteUeUeUeUOycy
 cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKcycycyOyggrseUgtcaUCeUcy
-cycycycycycycycycycycycyHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjHjcycycycydOgtUCOyeUdOcycy
-cycycycycycycycycycycycyfEfEfEfEfEfEfEfEfEfEfEfEgfgffEfEfEfEfEfEfEfEfEfEfEfEcycycycybyOyeUeTeUcycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKnKcycycycydOgtUCOyeUdOcycy
+cycycycycycycycycycycycyauauauauauauauauauauauaugfgfauauauauauauauauauauauaucycycycybyOyeUeTeUcycycy
 cycycycycycycycycycycycygfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevcgcgcgcgcgcgevevfEfEfEfEfEfEevevcgcgcgcgcgcgevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevcgbaCTCTeGcgevevevevevevevevevevcgbaCTCTeGcgevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevcgmrCTCTLucgevevevevevevevevevevcgmrCTCTLucgevevcycycycycycycycycycycycy
-cycycycycycycycycycycycyfEfEcgfRCTCTUtcgfEfEfEfEevevfEfEfEfEcgfRCTCTUtcgfEfEcycycycycycycycycycycycy
-cycycycycycycycycycycycyololcgcgzJCTcgcgolololfEevevfEolololcgcgzJCTcgcgololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfEevevfEolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfEevevfEolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfNfEfEfNolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfEololfEolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfNfEfEfNolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfEevevfEolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyolololololololololololfEevevfEolololololololololololcycycycycycycycycycycycy
-cycycycycycycycycycycycyololcgcgzJCTcgcgolololfEevevfEolololcgcgzJCTcgcgololcycycycycycycycycycycycy
-cycycycycycycycycycycycyfEfEcgololololcgfEfEfEfEevevfEfEfEfEcgololololcgfEfEcycycycycycycycycycycycy
+cycycycycycycycycycycycyfEfEcgfRCTCTUtcgfEfEfEfEevevfEfEfEfEcgfRCTCTUtcgauaucycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKcgcgzJCTcgcgnKnKnKfEevevfEnKnKnKnKnKVonKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKfEevevfEnKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKfEevevfEnKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKfNfEfEfNnKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKaunKnKaunKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKfNfEfEfNnKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKfEevevfEnKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKnKnKnKnKnKnKnKnKnKfEevevfEnKnKnKnKnKnKnKnKnKnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycynKnKcgcgzJCTcgcgnKnKnKfEevevfEnKnKnKcgcgzJCTcgcgnKnKcycycycycycycycycycycycy
+cycycycycycycycycycycycyfEfEcgololololcgfEfEfEfEevevfEfEfEfEcgololololcgauaucycycycycycycycycycycycy
 cycycycycycycycycycycycyevevcgolcgcgolcgevevevevevevevevevevcgolcgcgolcgevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevfEololololfEevevevevevevevevevevfEololololfEevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevfEfEfEfEfEfEevevfEfEfEfEfEfEevevfEfEfEfEfEfEevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
 cycycycycycycycycycycycyevevevevevevevevevevfEgfgfgfgffEevevevevevevevevevevcycycycycycycycycycycycy
-cycycycycycycycycycycycyalalalalalalalalalalalalalalalalalalalalalalalalalalcycycycycycycycycycycycy
-cycycycycycycycycycycycyauauauauauauauauauauauauVoVoauauauauauauauauauauauaucycycycycycycycycycycycy
-cycycycycycycycycycycycydVdVdVdVdVdVdVdVdVdVdVdVVoVodVdVdVdVdVdVdVdVdVdVdVdVcycycycycycycycycycycycy
-cycycycycycycycycycycycyaDaDaDaDaDaDaDaDaDaDaDaDVoVoaDaDaDaDaDaDaDaDaDaDaDaDcycycycycycycycycycycycy
-cycycycycycycycycycycycyesSRSResesesesQSesesesesesesesesesesesesesesSRSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesSRSResQSesesesesesesSResQSQSQSesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResesesesesesSRSResesesesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesIoIoesesSRSResesesxbSResesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesSRSResesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResOqOqesesesesesOqesOqesesesesesesSRSRSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSRSResesesIoesesesesesOqesesesesSResesesSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesSRSResSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesQSQSesesesesSResesesesSRSRSResesesesesesesescMescycycycycycycycycycycycy
-cycycycycycycycycycycycyesQSQSesesesesesSROqesesesesesesesesesesOqesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesQSesesOqesesesesSResesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesIoesesesSRSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesescMesesesesesesesesesesesesSResesesQSQSesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesSRSResesesesSResOqesesesesesesesQSesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesxbesesesesSResesesesesesesesesesQSQSescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesIoesesSRSResesesesesesesesesesesIoesesesQSescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesSRSResesOqesesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSResesesesesOqesesesesesesSResesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSResSResesesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSRSResesesesesesesesesesesesesesesSResesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesIoesSResSResOqescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResesIoesesQSQSQSesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResesesesesesesesesOqesescMesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesOqesesesesesesesesesesesesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesSResesSRSRSResSRSResesesesesesIoIoescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesSRSRSResesesesesSResOqOqesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesIoesesesesesesesesesesesesesesxbSResesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesIoesesesesesesesesesSResesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesSResesesSResesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesQSQSQSesesesSROqesesesSResesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesOqesesSResesesesesesesesesOqesSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesIoesesesesesesesesesesesesesesesSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSRSResesesesesesescMesesSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResesesQSesesesesesesesesIoesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesIoIoIoesesesesQSesesesesesesesesIoIoesIoesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesIoesOqOqesesesesesQSesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesOqQSQSQSOqOqOqesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesSRSRSRSResesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesOqOqesesesSRescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesOqesesesesesesesesesSResesesOqesQSesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesOqOqesQSQSesesesesesxbesesesOqQSIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesIoesesOqesesesesesesesesSResesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSRSRSResesesesesesIoesesesesesesesesesescMesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSRSResesesesesesesesesIoesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesSRSRSRSRSRSResesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesOqesesesesesesesesesesesesSResesesSRSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesIoesesesesesesesesesesesesSRSResesesesesSRSRSRescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesSResesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesSResesesesesesSResesOqesesesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesSResesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesOqesesesIoesesesesesescXesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesesesxbesescycycycycycycycycycycycy
-cycycycycycycycycycycycyescMesesesesesesesesesesesesesesesesesesesesesSRSRescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesIoesesesSResesesOqOqesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesOqOqesesesesesesesesesIoSResesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesOqesesesesesesesesesesesesSResesesOqesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesOqesesesesesesesesesesesesSRSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesOqesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesOqesSResesesesesSRSRSRSRSRSResesesesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesSResesesesesQSQSQSQSQSQSesesbxesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesIoIoesesesesesIoesesesesesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycygfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfcycycycycycycycycycycycy
+cycycycycycycycycycycycyauauauauauauauauauauauaugfgfauauauauauauauauauauauaucycycycycycycycycycycycy
+cycycycycycycycycycycycydVdVdVdVdVdVdVdVdVdVdVdVnKnKdVdVdVdVdVdVdVdVdVdVdVdVcycycycycycycycycycycycy
+cycycycycycycycycycycycyaDaDaDaDaDaDaDaDaDaDaDaDnKnKaDaDaDaDaDaDaDaDaDaDaDaDcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqdqcUcUcUcUalcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUdqdqcUalcUcUcUcUcUcUdqcUalalalcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqcUcUcUcUcUcUdqdqcUcUcUcUcUcUgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUgegecUcUdqdqcUcUcUxbdqcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqdqcUcUcUgecUcUcUcUcUcUcUcUcUcUdqcUcUcUdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUdqcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUalalcUcUcUcUdqcUcUcUcUdqdqdqcUcUcUcUcUcUcUcUcMcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUalalcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUalcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUgecUcUcUdqdqcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcMcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUalalcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUdqdqcUcUcUcUdqcUcUcUcUcUcUcUcUcUalcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUxbcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUalalcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUgecUcUdqdqcUcUcUcUcUcUcUcUcUcUcUgecUcUcUalcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUgecUdqcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqcUcUgecUcUalalalcUcUcUcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcMcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUdqcUcUdqdqdqcUdqdqcUcUcUcUcUcUgegecUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUdqdqdqcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUcUxbdqcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUgecUcUcUcUcUcUcUcUcUdqcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUdqcUcUcUdqcUcUcUcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUalalalcUcUcUdqcUcUcUcUdqcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcMcUcUdqcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqcUcUcUalcUcUcUcUcUcUcUcUgecUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUgegegecUcUcUcUalcUcUcUcUcUcUcUcUgegecUgecUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUgecUcUcUcUcUcUcUcUalcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUalalalcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUdqdqdqdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUalcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUalalcUcUcUcUcUxbcUcUcUcUalgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUgecUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqdqdqcUcUcUcUcUcUgecUcUcUcUcUcUcUcUcUcUcMcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcUcUgecUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUdqdqdqdqdqdqcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUdqdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUgecUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUdqdqdqcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUdqcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUgecUcUcUcUcUcUcXcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUxbcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcMcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUgecUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUgedqcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqcUcUcUcUcUdqdqdqdqdqdqcUcUcUcUcUcUgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqcUcUcUcUcUalalalalalalcUcUHjcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUgegecUcUcUcUcUgecUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
 cycycycycycycycycycycycyesesIoesesbxesSRQSIoOqOqOqOqOqOqIoQSSResesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesIoIoQSSResesesesbxesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesesesQSSResesesesesesescycycycycycycycycycycycy
@@ -469,104 +468,104 @@ cycycycycycycycycycycycyesesesesesesesSRQSesOqesesIoesOqesQSSResesesesesesescycy
 cycycycycycycycycycycycyesesesesesesesSRQSesesesesesesesesQSSResesesesesesescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesesIoesesesSRQSesIoesesesIoesesQSSResesesesesbxescycycycycycycycycycycycy
 cycycycycycycycycycycycyesesOqOqOqesesSRQSIoOqOqOqOqOqOqIoQSSResIoIoesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesIoesesesesIoesesesesesIoesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesbxesesQSQSQSQSQSQSesesesesesesesescMescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesSRSRSRSRSRSResesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesQSQSesesOqesesesesesesesesesesesesesesesesOqesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesbxcXesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesIoesesesesesesesIoesesesesesesesesxbesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResesesesesesesesesesesesesesesesesesesSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesxbSResesesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSResesesesesSRSResesIoesesSRSResesesesesesOqesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesOqesesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesescMesesesesesesesesesesesesesQSesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesSRSResesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesQSesesesesOqOqesesesesesSRSResesesIoesesSRSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesSResesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResesIoesesesesesesesOqesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesOqesesesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesSRSResesesesesesesesesSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResesSRSRSRSResesesesesSResSResesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResesSResesesesesesesesesesesesesesSResesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSResIoesesesesesesesesesSResSRSResQSescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSRSResesesesesesesesesesesesIoesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesescXesesesesesesesesesesesesesescMesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesesesSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesOqOqOqesesIoSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesIoesesesesesQSQSQSOqOqOqOqesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesOqOqOqesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResesesOqesesesesesesesesQSesesesesSResesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResesesOqesesesesesesesesQSesesesesesesesQSescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesOqesesesesesesesesQSesQSesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesescMesesesesesesQSQSesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesIoescMesesesesesesOqOqOqOqesesesesesesesesesSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesIoesesesesesesesesesesesesesesesSRSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesSRSRSResIoesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSResesesesesesesIoesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesSResesesesesesesesesesesQSesQSesesesSRSResescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesSResesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesSResesesesesesesesesesSResesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesOqesesesesesesSRSResesesesesSRSResesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesSRSResesOqSRSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesQSQSQSesOqesesesSResesesSResesesesIoesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesIoesesesesesesesesesesSResesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSResesesesesesesesSRSResesSResSResesesesescMesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesSResesesesesesesesSResesesesSRSResesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesSResesesesesSResesesOqesesesesesesesesIoesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesSResesesesesesesesesesesSResesOqesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesOqesesSResesesesesesIoesesesesSResesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesSResesesesesSResesIoesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesOqesesesSResesesIoesesesesesesSResesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesSResesesesesesesQSQSQSQSesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesescMesesesesesesesesesOqesesesesesQSQSesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesIoesesesesesesesesesesesesesSRSResesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesSRSResesesesesesesSRSResesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesSRSResesesesIoesesesesesesesesesOqesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesSResesesesesesesesesesesesOqesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesOqesSRSResesQSQSQSesesesesesesOqesesesesesIoesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesSResesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesIoSResesesesesesesesesesesesesesesesesesSResesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesOqesesesIoesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesQSQSesOqesesesesSResesesesesesesesesesesQSQSesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesSRSResesesesSRSResesesQSesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesSRSResesesQSesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesSRSResesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesSResesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
-cycycycycycycycycycycycyesesesesesesesesesesesesesesesesesesesesesesesesesescycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUgecUcUcUcUgecUcUcUcUcUgecUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUHjcUcUalalalalalalcUcUcUcUcUcUcUcUcMcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUdqdqdqdqdqdqcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUalalcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUHjcXcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUgecUcUcUcUcUcUcUgecUcUcUcUcUcUcUcUxbcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUxbdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqcUcUcUcUcUdqdqcUcUgecUcUdqdqcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcMcUcUcUcUcUcUcUcUcUcUcUcUcUalcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUalcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUgecUcUdqdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqcUcUdqdqdqdqcUcUcUcUcUdqcUdqcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqcUgecUcUcUcUcUcUcUcUcUdqcUdqdqcUalcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqdqcUcUcUcUcUcUcUcUcUcUcUcUgecUcUcUcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcXcUcUcUcUcUcUcUcUcUcUcUcUcUcUcMcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUgedqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUgecUcUcUcUcUalalalcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUalcUcUcUcUdqcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUalcUcUcUcUcUcUcUalcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUalcUalcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcMcUcUcUcUcUcUalalcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUgecUcMcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqdqcUgecUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqcUcUcUcUcUcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUalcUalcUcUcUdqdqcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUdqdqcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUdqdqcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUalalalcUcUcUcUcUdqcUcUcUdqcUcUcUcUgecUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUgecUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqcUcUcUcUcUcUcUcUdqdqcUcUdqcUdqcUcUcUcUcUcMcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUdqcUcUcUcUcUcUcUcUdqcUcUcUcUdqdqcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUgecUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUdqcUcUcUcUcUcUgecUcUcUcUdqcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUdqcUcUgecUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUdqcUcUcUgecUcUcUcUcUcUdqcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcUcUcUalalalalcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcMcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUalalcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUdqdqcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUdqdqcUcUcUcUgecUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqdqcUcUalalalcUcUcUcUcUcUcUcUcUcUcUcUgecUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUgedqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUgecUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUalalcUcUcUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUalalcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUdqdqcUcUcUcUdqdqcUcUcUalcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUdqdqcUcUcUalcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUdqdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUdqcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
+cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
 cycycycycycycycycycycycygpgpgpgpgpgpgpgpgpgpgpgpbfbfgpgpgpgpgpgpgpgpgpgpgpgpcycycycycycycycycycycycy
-cycycycycycycycycycycycycUcUcUcUcUcUcUcUcUcUcUcUbfbfcUcUcUcUcUcUcUcUcUcUcUcUcycycycycycycycycycycycy
-cycycycycycycycycycycycygrgrgrgrgrgrgrgrgrgrgrgrbfbfgrgrgrgrgrgrgrgrgrgrgrgrcycycycycycycycycycycycy
-cycycycycycycycycycycycyqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzqzcycycycycycycycycycycycy
+cycycycycycycycycycycycyxRxRxRxRxRxRxRxRxRxRxRxRbfbfxRxRxRxRxRxRxRxRxRxRxRxRcycycycycycycycycycycycy
+cycycycycycycycycycycycygrgrgrgrgrgrgrgrgrgrgrgrFpFpgrgrgrgrgrgrgrgrgrgrgrgrcycycycycycycycycycycycy
+cycycycycycycycycycycycyFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpdEDtDtDtDtDtDtDtDtDtDtcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpdEDtDtDtDtDtDtDtDtDtDtcycycycycycycycycycycycy
-cycycycycycycycycycycycyDtDtdEdEdEdEdEdEDtDtdEdEdEdEdEdEDtDtdEdEdEdEdEdEDtDtcycycycycycycycycycycycy
-cycycycycycycycycycycycyDtDtdEcdcdcdcddEDtDtDtDtDtDtDtDtDtDtdEcdcdcdcddEDtDtcycycycycycycycycycycycy
+cycycycycycycycycycycycyDtDtgrgrgrgrgrgrDtDtdEdEdEdEdEdEDtDtdEdEdEdEdEdEDtDtcycycycycycycycycycycycy
+cycycycycycycycycycycycyDtDtgrbfbfbfbfgrDtDtDtDtDtDtDtDtDtDtdEcdcdcdcddEDtDtcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtvWcdvWvWcdvWDtDtDtDtDtDtDtDtDtDtvWcdvWvWcdvWDtDtcycycycycycycycycycycycy
-cycycycycycycycycycycycydEdEvWcdcdcdcdvWdEdEdEdEDtDtdEdEdEdEvWcdcdcdcdvWdEdEcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdvWvWdHePvWvWcdcdcddEDtDtdEcdcdcdvWvWdHePvWvWcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcddEDtDtdEcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcddEDtDtdEcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcdxRdEdExRcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcddEcdcddEcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcdxRdEdExRcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycycdcdcdcdcdcdcdcdcdcdcddEDtDtdEcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycycyelcycyelcyelcycycycdcdcdcdcdcdcdcdcdcdcddEDtDtdEcdcdcdcdcdcdcdcdcdcdcdcycycycycycycycycycycycy
-cycyelcycycycycycycycycycdcdvWvWdHePvWvWcdcdcddEDtDtdEcdcdcdvWvWdHePvWvWcdcdcycycycycycycycycycycycy
-cycycycycycycycycycycycydEdEvWnwePePJuvWdEdEdEdEDtDtdEdEdEdEvWnwePePJuvWdEdEcycycycycycycycycycycycy
+cycycycycycycycycycycycygrgrvWcdcdcdcdvWgrgrgrgrDtDtgrgrgrgrvWcdcdcdcdvWgrgrcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfvWvWdHePvWvWbfbfbfgrDtDtgrbfbfbfvWvWdHePvWvWbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfgrDtDtgrbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfgrDtDtgrbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfxRgrgrxRbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfgrbfbfgrbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfxRgrgrxRbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfgrDtDtgrbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycyelcycyelcyelcycycybfbfbfbfbfbfbfbfbfbfbfgrDtDtgrbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycyelcycycycycycycycycybfbfvWvWdHePvWvWbfbfbfgrDtDtgrbfbfbfvWvWdHePvWvWbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycygrgrvWnwePePJuvWgrgrgrgrDtDtgrgrgrgrvWnwePePJuvWgrgrcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtvWcrePePfyvWDtDtDtDtDtDtDtDtDtDtvWcrePePfyvWDtDtcycycycycycycycycycycycy
 cycycycycycycycycycycycyDtDtvWTbePePfBvWDtDtDtDtDtDtDtDtDtDtvWTbePePfBvWDtDtcycycycycycycycycycycycy
-cycycycycycycycycycycycyDtDtvWvWvWvWvWvWDtDtdEdEdEdEdEdEDtDtvWvWvWvWvWvWDtDtcycycycycycycycycycycycy
-cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpdEDtDtDtDtDtDtDtDtDtDtelcycycyelcycycycycycycy
-cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpdEDtDtDtDtDtDtDtDtDtDtcycycycycycycycycycycycy
+cycycycycycycycycycycycyDtDtvWvWvWvWvWvWDtDtgrgrgrgrgrgrDtDtvWvWvWvWvWvWDtDtcycycycycycycycycycycycy
+cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpgrDtDtDtDtDtDtDtDtDtDtelcycycyelcycycycycycycy
+cycycycycycycycycycycycyDtDtDtDtDtDtDtDtDtDtdEFpFpFpFpgrDtDtDtDtDtDtDtDtDtDtcycycycycycycycycycycycy
 cycycycycycycycycycycycyFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpFpcycycycycycycycycycycycy
-cycycycycycycycycycycycydEdEdEdEdEdEdEdEdEdEdEdEFpFpdEdEdEdEdEdEdEdEdEdEdEdEcycycycycycycycycycycycy
-cycycycycycycycycycycycydqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqdqcycycycycycycycycycycycy
-cycycycycycycycycycycycygegegegegegegegegegegegegegegegegegegegegegegegegegecycycycycycycycycycycycy
-cycycycycycycycycycycycydqdqdqdqdqdqdqdqdqdqdqgodqdqgodqdqdqdqdqdqdqdqdqdqdqcycycycycycycycycycycycy
-cycycycycycycycycycycycyxRxRxRxRxRxRxRxRxRxRxRxRcdcdxRxRxRxRxRxRxRxRxRxRxRxRcycycycycycycycycycycycy
-cycycycycycycycycycycycydEdEdEdEdEdEdEdEdEdEdEdEcdcddEdEdEdEdEdEdEdEdEdEdEdEcycycycycycycycycycycycy
-cycycycycycycycycycycybscdcdcdcdcddQcdcdcdcdcdeHcdcdeHcdcdcdcdcddQcdcdcdcdcdePePePePcycycycycycycycy
-cycycycycycycycycycycybscdcdcdcdcdcdcdcdcdcdcdcCcdcddlcdcdcdcdcdcdcdcdcdcdcdePePePePcycycycycycycycy
+cycycycycycycycycycycycygrgrgrgrgrgrgrgrgrgrgrgrFpFpgrgrgrgrgrgrgrgrgrgrgrgrcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycybfbfbfbfbfbfbfbfbfbfbfgobfbfgobfbfbfbfbfbfbfbfbfbfbfcycycycycycycycycycycycy
+cycycycycycycycycycycycyxRxRxRxRxRxRxRxRxRxRxRxRbfbfxRxRxRxRxRxRxRxRxRxRxRxRcycycycycycycycycycycycy
+cycycycycycycycycycycycygrgrgrgrgrgrgrgrgrgrgrgrbfbfgrgrgrgrgrgrgrgrgrgrgrgrcycycycycycycycycycycycy
+cycycycycycycycycycycybsbfbfbfbfbfdQbfbfbfbfbfeHbfbfeHbfbfbfbfbfdQbfbfbfbfbfePePePePcycycycycycycycy
+cycycycycycycycycycycybsbfbfbfbfbfbfbfbfbfbfbfcCbfbfdlbfbfbfbfbfbfbfbfbfbfbfePePePePcycycycycycycycy
 cycycycycycycycycyvWvWvWvWeWvWvWvWvWvWvWvWvWvWvWeXeYvWvWvWvWeWeWdWvWvWvWvWvWvWvWeWeWvWvWvWvWcycycycy
 cycycycycycycycycyvWdmKmaWRSdjldvWaJpzvdHOvdaLvWfacqvWdKhYRSSdSdSduHfevWvWLXxifbSdSdSdSdxUvWcycycycy
 cycycycycycycycycyvWRSRSRSRSRSRSvWabRSRSRSRSSjvWSdSdvWqbSdSdSdSdSdfefevWvWLXxiSdSdSdSdSdxUvWcycycycy

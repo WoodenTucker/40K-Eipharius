@@ -174,6 +174,11 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHT Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
+/datum/job/ig/whiteshield/Imperial
+	total_positions = 20
+	spawn_positions = 20
+	cultist_chance = 0
+
 //Sharpshooters
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
@@ -231,6 +236,7 @@
 	supervisors = "Cult Leader and Sgt."
 	total_positions = 3
 	spawn_positions = 3
+	outfit_type = /decl/hierarchy/outfit/job/watchman/sharpshooter
 	selection_color = "#414397"
 	department_flag = SRV
 	alt_titles = list(
