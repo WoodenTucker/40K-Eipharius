@@ -175,8 +175,8 @@
 		to_chat(H, "<span class='notice'><b><font size=3> Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 /datum/job/ig/whiteshield/Imperial
-	total_positions = 20
-	spawn_positions = 20
+	total_positions = 30
+	spawn_positions = 30
 	cultist_chance = 0
 
 //Sharpshooters
