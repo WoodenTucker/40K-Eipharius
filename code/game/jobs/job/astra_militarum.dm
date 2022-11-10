@@ -172,7 +172,7 @@
 		H.witchblood()
 		H.say(":v [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3>STRAIGHT Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 /datum/job/ig/whiteshield/Imperial
 	total_positions = 20
@@ -227,8 +227,8 @@
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
 
 /datum/job/ig/guardsman/sharpshooter/imperial
-	total_positions = 5
-	spawn_positions = 5
+	total_positions = 8
+	spawn_positions = 8
 	cultist_chance = 0
 
 /datum/job/ig/guardsman/sharpshooter/watchman
@@ -343,8 +343,8 @@
 
 
 /datum/job/ig/guardsman/sniper/imperial
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	cultist_chance = 0
 
 // Sergeants
