@@ -10,10 +10,10 @@
 	/datum/job/captain, // RT, which is leader
 	/datum/job/ig/commissar/imperial, // 2nd in command
 	/datum/job/ig/sergeant/imperial, // 3rd in command
-	/datum/job/ig/guardsman/sharpshooter/imperial, // 5 slots
-	/datum/job/ig/guardsman/sniper/imperial, // 2 slots
+	/datum/job/ig/guardsman/sharpshooter/imperial, // 8 slots
+	/datum/job/ig/guardsman/sniper/imperial, // 4 slots
 	/datum/job/ig/guardsman/imperial,
-	///datum/job/ig/guardsman/sniper/imperial, landmark no work yet
+	/datum/job/ig/whiteshield/Imperial,
 	/datum/job/sisterofbattle/imperial, // 3 for now, as there are no assfartes
 	/datum/job/doctor, // hospitaller
 	/datum/job/ig/medicae/imperial,

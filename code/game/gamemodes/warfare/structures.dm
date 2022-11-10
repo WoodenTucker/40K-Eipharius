@@ -489,8 +489,8 @@
 		if(!can_be_armed)
 			return
 		H.visible_message("<span class='danger'>[H] begins to disarm the landmine...</span>")
-		if(do_after(user,50))
-			if(H.statscheck(skills = H.SKILL_LEVEL(engineering)) >= SUCCESS)
+		if(do_after(user,75))
+			if(H.statscheck(skills = H.SKILL_LEVEL(engineering)) >= FAILURE) // failure is 0. this is shit but it works, as we want anyone to be able to disable
 				armed = FALSE
 				can_be_armed = FALSE
 				to_chat(H, "You successfully disarm the [src]")

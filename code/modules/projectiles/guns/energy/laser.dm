@@ -517,7 +517,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 25
 
-
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
 		)
