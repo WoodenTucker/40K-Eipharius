@@ -1,1 +1,1 @@
-#define MAX_CULTISTS 8
+#define MAX_CULTISTS 24

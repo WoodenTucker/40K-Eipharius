@@ -1,6 +1,6 @@
 /obj/mecha/combat/tau
-	desc = "A highly advanced TaU battlesuit."
-	name = "TaU battlesuit"
+	desc = "A highly advanced Tau battlesuit."
+	name = "Tau battlesuit"
 	icon_state = "tau"
 	initial_icon = "tau"
 	step_in = 4

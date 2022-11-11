@@ -1,32 +1,30 @@
-/obj/mecha/combat/dreadnought
-	desc = "A Dreadnought is a massive war-machine piloted by an honoured soul whose body has been ravaged in battle."
-	name = "Dreadnought"
-	icon = 'icons/mob/alienqueen.dmi'
-	icon_state = "dread2old"
-	initial_icon = "dread2old"
-	step_in = 2
-	health = 1250
-	deflect_chance = 75
-	internal_damage_threshold = 250
-	damage_absorption = list("brute"=0.5,"fire"=0.7,"bullet"=0.4,"laser"=0.4,"energy"=0.1,"bomb"=0.1)
+/obj/mecha/combat/deffdread
+	desc = "Da beeg, shooty an stompy Deff Dread. Mork (or Gork) wuld be proud!"
+	name = "Deff Dread"
+	icon_state = "deffdreadba"
+	initial_icon = "deffdreadba"
+	step_in = 4
+	health = 1000
+	deflect_chance = 55
+	internal_damage_threshold = 150
+	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.1,"bomb"=0.1) // no idea what to make these, make this shittier than dreadnought though
 	max_temperature = 30000
 	infra_luminosity = 8
-	force = 60
-	var/defence = 60
+	force = 50
+	var/defence = 25
 	var/def_boost = 15
-	wreckage = /obj/effect/decal/mecha_wreckage
-	cell = new /obj/item/cell/infinite
+	wreckage = /obj/effect/decal/mecha_wreckage/deffdread
 
 /*
-/obj/mecha/combat/dreadnought/New()
+/obj/mecha/combat/durand/New()
 	..()
-	weapons += new /datum/mecha_weapon/ballistic/autocannon(src)
-	weapons += new /datum/mecha_equipment/tool/hydraulic_clamp(src)
+	weapons += new /datum/mecha_weapon/ballistic/lmg(src)
+	weapons += new /datum/mecha_weapon/ballistic/scattershot(src)
 	selected_weapon = weapons[1]
 	return
 */
 
-/obj/mecha/combat/dreadnought/relaymove(mob/user,direction)
+/obj/mecha/combat/deffdread/relaymove(mob/user,direction)
 	if(defence)
 		if(world.time - last_message > 20)
 			src.occupant_message("<font color='red'>Unable to move while in defence mode</font>")
@@ -35,7 +33,8 @@
 	. = ..()
 	return
 
-/obj/mecha/combat/dreadnought/verb/defence_mode()
+
+/obj/mecha/combat/deffdread/verb/defence_mode()
 	set category = "Exosuit Interface"
 	set name = "Toggle defence mode"
 	set src = usr.loc
@@ -53,12 +52,12 @@
 	return
 
 
-/obj/mecha/combat/dreadnought/get_stats_part()
+/obj/mecha/combat/deffdread/get_stats_part()
 	var/output = ..()
 	output += "<b>Defence mode: [defence?"on":"off"]</b>"
 	return output
 
-/obj/mecha/combat/durand/get_commands()
+/obj/mecha/combat/deffdread/get_commands()
 	var/output = {"<div class='wr'>
 						<div class='header'>Special</div>
 						<div class='links'>
@@ -69,12 +68,8 @@
 	output += ..()
 	return output
 
-/obj/mecha/combat/dreadnought/Topic(href, href_list)
+/obj/mecha/combat/deffdread/Topic(href, href_list)
 	..()
 	if (href_list["toggle_defence_mode"])
 		src.defence_mode()
 	return
-
-/obj/mecha/combat/dreadnought/Destroy()
-	occupant.gib()
-	. = ..()
