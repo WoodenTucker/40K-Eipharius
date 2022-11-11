@@ -1,20 +1,21 @@
-/obj/mecha/combat/tau
-	desc = "A highly advanced Tau battlesuit."
-	name = "Tau battlesuit"
-	icon_state = "tau"
-	initial_icon = "tau"
-	step_in = 4
+/obj/mecha/combat/deffdread
+	desc = "Da beeg, shooty an stompy Deff Dread. Mork (or Gork) wuld be proud!"
+	name = "Deff Dread"
+	icon_state = "deffdreadba"
+	initial_icon = "deffdreadba"
+	step_in = 6 // slower than dreadnought by a bit
 	health = 1000
-	deflect_chance = 40
-	damage_absorption = list("brute"=1.4,"fire"=1,"bullet"=1.4,"laser"=0.7,"energy"=0.9,"bomb"=0.75)
+	deflect_chance = 55
+	internal_damage_threshold = 150
+	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.6,"laser"=0.6,"energy"=0.1,"bomb"=0.1) // no idea what to make these, make this shittier than dreadnought though
 	max_temperature = 30000
 	infra_luminosity = 8
-	force = 40
-	var/defence = 0
+	force = 50
+	var/defence = 25
 	var/def_boost = 15
-	wreckage = /obj/effect/decal/mecha_wreckage/tau
+	wreckage = /obj/effect/decal/mecha_wreckage/deffdread
 
-/*
+/* not sure what loadout yet
 /obj/mecha/combat/durand/New()
 	..()
 	weapons += new /datum/mecha_weapon/ballistic/lmg(src)
@@ -23,7 +24,7 @@
 	return
 */
 
-/obj/mecha/combat/tau/relaymove(mob/user,direction)
+/obj/mecha/combat/deffdread/relaymove(mob/user,direction)
 	if(defence)
 		if(world.time - last_message > 20)
 			src.occupant_message("<font color='red'>Unable to move while in defence mode</font>")
@@ -33,7 +34,7 @@
 	return
 
 
-/obj/mecha/combat/tau/verb/defence_mode()
+/obj/mecha/combat/deffdread/verb/defence_mode()
 	set category = "Exosuit Interface"
 	set name = "Toggle defence mode"
 	set src = usr.loc
@@ -51,12 +52,12 @@
 	return
 
 
-/obj/mecha/combat/tau/get_stats_part()
+/obj/mecha/combat/deffdread/get_stats_part()
 	var/output = ..()
 	output += "<b>Defence mode: [defence?"on":"off"]</b>"
 	return output
 
-/obj/mecha/combat/tau/get_commands()
+/obj/mecha/combat/deffdread/get_commands()
 	var/output = {"<div class='wr'>
 						<div class='header'>Special</div>
 						<div class='links'>
@@ -67,7 +68,7 @@
 	output += ..()
 	return output
 
-/obj/mecha/combat/tau/Topic(href, href_list)
+/obj/mecha/combat/deffdread/Topic(href, href_list)
 	..()
 	if (href_list["toggle_defence_mode"])
 		src.defence_mode()

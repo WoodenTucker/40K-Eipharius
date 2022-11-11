@@ -182,8 +182,22 @@
 
 
 /obj/effect/decal/mecha_wreckage/tau
-	name = "TaU battlesuit"
+	name = "Tau battlesuit wreckage"
 	icon_state = "tau-broken"
+
+/obj/effect/decal/mecha_wreckage/deffdread
+	name = "Deff Dread wreckage"
+	icon_state = "deffdreadba-destroyed"
+
+/obj/effect/decal/mecha_wreckage/killakanba
+	name = "Blood Axe Killa Kan Wreckage"
+	icon_state = "killakanba-destroyed"
+
+/obj/effect/decal/mecha_wreckage/killakan
+	name = "Killa Kan Wreckage"
+	icon_state = "killakan-destroyed"
+
+
 
 /obj/effect/decal/mecha_wreckage/odysseus
 	name = "Odysseus wreckage"

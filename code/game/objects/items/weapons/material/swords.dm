@@ -426,7 +426,7 @@
 /obj/item/melee/chain/guard
 	name = "Imperial Guard chainsword"
 	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
-	icon_state = "guardchains"
+	icon_state = "guardchain" // broken for some reason currently. use inq as stand in
 	item_state = "inqchainsword"
 	w_class = ITEM_SIZE_NORMAL
 	weapon_speed_delay = 10
