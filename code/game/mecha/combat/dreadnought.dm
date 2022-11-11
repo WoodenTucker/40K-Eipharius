@@ -1,9 +1,9 @@
 /obj/mecha/combat/dreadnought
 	desc = "A Dreadnought is a massive war-machine piloted by an honoured soul whose body has been ravaged in battle."
 	name = "Dreadnought"
-	icon = 'icons/mob/alienqueen.dmi'
-	icon_state = "dread2old"
-	initial_icon = "dread2old"
+	icon = 'icons/mecha/mecha.dmi'
+	icon_state = "ultradread"
+	initial_icon = "ultradread"
 	step_in = 5.5 // lower the number, faster they go!
 	health = 1250
 	deflect_chance = 55

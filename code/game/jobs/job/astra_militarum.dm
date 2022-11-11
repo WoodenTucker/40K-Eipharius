@@ -421,6 +421,7 @@
 	supervisors = "Cult Leader"
 	department_flag = SRV || COM
 	selection_color = "#3032a7"
+	outfit_type = /decl/hierarchy/outfit/job/watchman/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant,
 		"Catachan Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant/catachan,
@@ -1000,7 +1001,7 @@
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/cadiansgt
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/guard
+	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
@@ -1052,7 +1053,7 @@
 	name = OUTFIT_JOB_NAME("Catachan Sergeant")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachansgt
-	belt = /obj/item/melee/chain/guard
+	belt = /obj/item/melee/chain/inqcs
 	shoes = /obj/item/clothing/shoes/jackboots/catachan
 	head = /obj/item/clothing/head/catachan
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
@@ -1099,7 +1100,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/guard
+	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/heretichood
@@ -1127,7 +1128,7 @@
 	uniform = /obj/item/clothing/under/guard/uniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/chain/guard
+	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/heretichood
