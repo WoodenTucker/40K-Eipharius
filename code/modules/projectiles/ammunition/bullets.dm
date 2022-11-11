@@ -284,7 +284,7 @@
 /obj/item/ammo_casing/heat_shell/orkhe
 	name = "\improper Boomy Rokkit"
 	desc = "Boom boom boom boom, I want you in my DAKKA!"
-	icon_state = "heat_shell"
+	icon_state = "orkhe" // bugged
 	projectile_type = /obj/item/recoilless_shell/orkhe
 	caliber = "84mm"
 /*

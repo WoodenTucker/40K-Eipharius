@@ -3,22 +3,22 @@
 	name = "Blood Axe Killa Kan"
 	icon_state = "killakan"
 	initial_icon = "killakan"
-	step_in = 4
+	step_in = 3
 	health = 600 // smol mech
 	deflect_chance = 25
 	damage_absorption = list("brute"=1.4,"fire"=1,"bullet"=1.4,"laser"=1.4,"energy"=0.9,"bomb"=0.75)
 	max_temperature = 30000
 	infra_luminosity = 8
-	force = 15 // big gun small melee
+	force = 30
 	var/defence = 0
 	var/def_boost = 15
 	wreckage = /obj/effect/decal/mecha_wreckage/killakan
 
-/*
-/obj/mecha/combat/durand/New()
+/* intended loadout
+/obj/mecha/combat/killakan/New()
 	..()
-	weapons += new /datum/mecha_weapon/ballistic/lmg(src)
-	weapons += new /datum/mecha_weapon/ballistic/scattershot(src)
+	weapons += new /datum/design/item/mecha/weapon/laser(src)
+	weapons += new /datum/design/item/mecha/drill(src)
 	selected_weapon = weapons[1]
 	return
 */

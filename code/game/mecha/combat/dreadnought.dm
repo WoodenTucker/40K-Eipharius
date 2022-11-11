@@ -4,15 +4,15 @@
 	icon = 'icons/mob/alienqueen.dmi'
 	icon_state = "dread2old"
 	initial_icon = "dread2old"
-	step_in = 2
+	step_in = 5.5 // lower the number, faster they go!
 	health = 1250
-	deflect_chance = 75
+	deflect_chance = 55
 	internal_damage_threshold = 250
-	damage_absorption = list("brute"=0.5,"fire"=0.7,"bullet"=0.4,"laser"=0.4,"energy"=0.1,"bomb"=0.1)
+	damage_absorption = list("brute"=0.6,"fire"=0.7,"bullet"=0.4,"laser"=0.4,"energy"=0.1,"bomb"=0.1)
 	max_temperature = 30000
 	infra_luminosity = 8
 	force = 60
-	var/defence = 60
+	var/defence = 45
 	var/def_boost = 15
 	wreckage = /obj/effect/decal/mecha_wreckage
 	cell = new /obj/item/cell/infinite

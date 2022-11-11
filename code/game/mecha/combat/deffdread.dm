@@ -3,7 +3,7 @@
 	name = "Deff Dread"
 	icon_state = "deffdreadba"
 	initial_icon = "deffdreadba"
-	step_in = 4
+	step_in = 6 // slower than dreadnought by a bit
 	health = 1000
 	deflect_chance = 55
 	internal_damage_threshold = 150
@@ -15,7 +15,7 @@
 	var/def_boost = 15
 	wreckage = /obj/effect/decal/mecha_wreckage/deffdread
 
-/*
+/* not sure what loadout yet
 /obj/mecha/combat/durand/New()
 	..()
 	weapons += new /datum/mecha_weapon/ballistic/lmg(src)

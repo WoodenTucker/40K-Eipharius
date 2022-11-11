@@ -278,13 +278,13 @@
 	req_tech = list(TECH_COMBAT = 3)
 
 // *** Weapon modules
-/*
+
 /datum/design/item/mecha/weapon/scattershot
 	name = "LBX AC 10 \"Scattershot\""
 	id = "mech_scattershot"
 	req_tech = list(TECH_COMBAT = 4)
 	build_path = /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
-*/
+
 /datum/design/item/mecha/weapon/laser
 	name = "Heavy mounted lascannon"
 	id = "mech_laser"

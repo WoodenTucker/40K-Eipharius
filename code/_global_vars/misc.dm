@@ -24,7 +24,7 @@ GLOBAL_VAR_INIT(partydelay, 18000)
 GLOBAL_VAR_INIT(thrones, 0) //used for cargo and reinforcement system, so it carries across computers
 GLOBAL_VAR_INIT(tax_rate, 0.15) //used for taxation
 GLOBAL_VAR_INIT(tithe_paid, 0) //did they pay their tithe or not yet?
-GLOBAL_VAR_INIT(partysize, 3)
+GLOBAL_VAR_INIT(partysize, 5)
 
 var/common_browser_style = {"
 <meta charset="UTF-8">

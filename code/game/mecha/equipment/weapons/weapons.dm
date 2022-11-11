@@ -195,19 +195,19 @@
 		src.rearm()
 	return
 
-/*
+
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/scattershot
 	name = "\improper LBX AC 10 \"Scattershot\""
 	icon_state = "mecha_scatter"
 	equip_cooldown = 20
-	projectile = /obj/item/projectile/bullet/pistol/medium
+	projectile = /obj/item/projectile/bullet/pellet/shotgun // mechwarrior enjoyer
 	fire_sound = 'sound/weapons/gunshot/shotgun.ogg'
 	fire_volume = 80
 	projectiles = 40
 	projectiles_per_shot = 4
 	deviation = 0.7
 	projectile_energy_cost = 50 KILOWATTS
-*/
+
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg
 	name = "\improper Reaper pattern autocannon"
 	icon_state = "mecha_uac2"
@@ -355,6 +355,16 @@
 
 /obj/item/recoilless_shell/orkhe
 	icon_state = "orkhe"
+	icon = 'icons/obj/projectiles.dmi'
+	throwforce = 30
+
+	throw_impact(atom/hit_atom)
+		if(primed)
+			explosion(hit_atom, 1, 2, 3, 3, 0)
+			qdel(src)
+		else
+			..()
+		return
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavybolter
     name = "\improper Astartes Mk IVa heavy bolter"
