@@ -280,6 +280,20 @@
 	icon_state = "heat_shell"
 	projectile_type = /obj/item/recoilless_shell
 	caliber = "84mm"
+
+/obj/item/ammo_casing/heat_shell/orkhe
+	name = "\improper Boomy Rokkit"
+	desc = "Boom boom boom boom, I want you in my DAKKA!"
+	icon_state = "heat_shell"
+	projectile_type = /obj/item/recoilless_shell/orkhe
+	caliber = "84mm"
+/*
+/obj/item/ammo_casing/heat_shell/orkincend
+	name = "\improper Flama Rokkit"
+	desc = "Da gretchin packed dis one wid lotsa flamey floouids."
+	icon_state = "heat_shell"
+	projectile_type = /obj/item/recoilless_shell
+	caliber = "84mm"*/ // need to implement fire rokkit
 /obj/item/ammo_casing/cap
 	name = "cap"
 	desc = "A cap for children toys."
@@ -383,7 +397,7 @@
 	spent_icon = "null"
 	caliber = "shuriken"
 	projectile_type = /obj/item/projectile/bullet/rifle/shuriken/catapult
-	
+
 
 /obj/item/ammo_casing/shuriken/pistol
 	name = "shuriken casings"

@@ -56,3 +56,10 @@
 /obj/item/gun/launcher/rcl_rifle/handle_post_fire(mob/user, atom/target)
         log_and_message_admins("fired a shell from a recoilless rifle ([src.name]) at [target].")
         ..()
+
+
+/obj/item/gun/launcher/rcl_rifle/ork
+        name = "Rokkit Launcha"
+        desc = "De rockity bit iz to be pointed at da umies. Charge in wid ya choppa when ya shoot it, innit."
+        icon_state = "rcl_rifle-e"
+        item_state = "rcl_rifle"
