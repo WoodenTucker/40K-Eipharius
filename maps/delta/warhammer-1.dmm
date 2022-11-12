@@ -1528,7 +1528,7 @@
 "ZA" = (/obj/effect/decal/cleanable/dirt,/obj/structure/table/standard{color = "grey"},/obj/item/trash/candy,/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
 "ZB" = (/turf/simulated/floor/carpet/blue,/area/cadiaoutpost/oa/service/chapel)
 "ZC" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/floodlight,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hallway/centralhall)
-"ZF" = (/obj/effect/floor_decal/turf/plating,/obj/structure/table/rack/dark,/obj/item/melee/chain/inqcs/guard,/obj/machinery/light,/obj/random/loot/heavymelee,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hallway/centralhall)
+"ZF" = (/obj/effect/floor_decal/turf/plating,/obj/structure/table/rack/dark,/obj/item/melee/chain/inqcs,/obj/machinery/light,/obj/random/loot/heavymelee,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hallway/centralhall)
 "ZI" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/plate,/obj/machinery/door/airlock/glass_medical{color = null; dir = 2; maxhealth = 900; name = "Medicae Secure"; req_access = list(211)},/turf/simulated/floor/stone/chapel,/area/cadiaoutpost/oa/service/chapel)
 "ZJ" = (/obj/item/archaeological_find/remains/xeno{color = "grey"},/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
 "ZL" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled{color = "grey"; icon_state = "white1"},/area/cadiaoutpost/oa/medicae)
