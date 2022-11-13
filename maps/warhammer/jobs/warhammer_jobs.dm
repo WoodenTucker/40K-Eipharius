@@ -20,7 +20,7 @@
 	/datum/job/techmenial,
 	/datum/job/hop,
 	/datum/job/chef,
-	/datum/job/chaplain,
+	/datum/job/confessor,
 	/datum/job/janitor,
 	/datum/job/bartender,
 	/datum/job/mining,

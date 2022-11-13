@@ -86,14 +86,14 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3> You are a cadet in the Planetary Magistratum. Your job is to assist the other enforcers and learn the ins and outs of the trade.  For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
-/datum/job/marshal
+/datum/job/arbites
 	title = "Arbitrator"
 	head_position = 1
 	supervisors = "The Law and the Emperor"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
-	selection_color = "#38e4ea"
+	selection_color = "#c9952f"
 	outfit_type = /decl/hierarchy/outfit/job/ig/arbitrator
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10

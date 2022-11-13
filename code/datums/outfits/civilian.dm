@@ -93,7 +93,7 @@
 
 /decl/hierarchy/outfit/job/abbess
 
-/decl/hierarchy/outfit/job/chaplain
+/decl/hierarchy/outfit/job/confessor
 	name = OUTFIT_JOB_NAME("Deacon")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen

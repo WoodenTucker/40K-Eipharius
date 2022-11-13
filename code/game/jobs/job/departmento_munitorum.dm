@@ -81,7 +81,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Noble household"
-	selection_color = "#3e0177"
+	selection_color = "#315dd4"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0

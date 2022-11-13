@@ -23,8 +23,8 @@
 	/datum/job/bartender,
 	/datum/job/mining,
 	/datum/job/cargo_tech,
-	/datum/job/qm,
-	/datum/job/chaplain,
+	/datum/job/qm,/*
+	/datum/job/chaplain,*/
 	/datum/job/sisterofbattle,
 	/datum/job/qm2,
 	/datum/job/ig/enforcer,

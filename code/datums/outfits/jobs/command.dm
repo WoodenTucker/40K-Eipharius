@@ -43,7 +43,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/toy/katana/strong
 	shoes = /obj/item/clothing/shoes/jackboots/noble
-	id_type = /obj/item/card/id/silver
+	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
@@ -63,13 +63,13 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/gun/projectile/talon
 	shoes = /obj/item/clothing/shoes/jackboots/noble
-	id_type = /obj/item/card/id/silver
+	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/storage/box/ids = 1,
+	backpack_contents = list(
 	/obj/item/ammo_magazine/c45m = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
-	 )
+	 )*/

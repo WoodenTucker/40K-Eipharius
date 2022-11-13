@@ -2,7 +2,7 @@
 
 //Confessor
 
-/datum/job/chaplain
+/datum/job/confessor
 	title = "Deacon"
 	department = "Ministorum"
 	department_flag = CIV|COM
@@ -17,7 +17,7 @@
 	minimal_access = list(access_heads, access_sob)
 	announced = FALSE
 //	alt_titles = list("Counselor")
-	outfit_type = /decl/hierarchy/outfit/job/chaplain
+	outfit_type = /decl/hierarchy/outfit/job/confessor
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
 	sniper_skill = 6
@@ -386,7 +386,7 @@
 	announced = FALSE
 	access = list(access_medical, access_village)
 	minimal_access = list(access_medical, access_village)
-	outfit_type = /decl/hierarchy/outfit/job/progena
+	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle/brsister
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
 	sniper_skill = 7
@@ -411,41 +411,48 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
-*/
-//Hospitaller
 
-/datum/job/chemist
-	title = "Hospitaller Advance" // Do not enable this ever. They spawn as an alchemist if you do.
-	department = "Medical"
+/datum/job/preacher
+	title = "Preacher"
+	department = list("Ministorum", "Medical")
 	department_flag = MED
-	social_class = SOCIAL_CLASS_MED
-	minimal_player_age = 7
-	total_positions = 0 // Leave this off. This is borked role.
-	spawn_positions = 0
-	supervisors = "the Sister Hospitaller"
-	selection_color = "#967096"
-	economic_modifier = 5
+	minimal_player_age = 14
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the Abbess or The Deacon"
+	selection_color = "#FCFBFA"
+	economic_modifier = 7
+	social_class = SOCIAL_CLASS_HIGH
+	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	access = list(access_medical, access_village)
-	minimal_access = list(access_medical, access_village,)
-	outfit_type = /decl/hierarchy/outfit/job/medical/chemist
-	auto_rifle_skill = 3
-	semi_rifle_skill = 3
-	sniper_skill = 3
-	shotgun_skill = 3
-	lmg_skill = 3
-	smg_skill = 3
-
+	minimal_access = list(access_medical, access_village)
+	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle/repentia
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
 		..()
-		H.add_stats(rand(10,16), rand(10,16), rand(10,13), rand(10,16))
-		H.add_skills(rand(6,9),rand(3,5),rand(6,7),rand(2,4),rand(6,7)) //melee, ranged, med, eng, surgery
+		H.fully_replace_character_name("[current_name]")
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
+		H.add_skills(rand(6,9),rand(5,9),rand(6,8),rand(2,4),rand(4,8)) //melee, ranged, med, eng, surgery
+		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		H.say(":n [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
+
+		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
 
 
 // sob outfits

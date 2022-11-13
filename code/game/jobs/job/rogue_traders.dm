@@ -12,7 +12,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "The Golden Throne and the High Lords of Terra"
-	selection_color = "#3e0177"
+	selection_color = "#315dd4"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()
@@ -55,6 +55,52 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 /datum/job/captain/get_access()
 	return get_all_station_access()
 
+/datum/job/governor
+	title = "Planetary Governor"
+	department = "Planetary Governor"
+	head_position = 1
+	department_flag = COM|CIV
+	social_class = SOCIAL_CLASS_MAX
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 0
+	supervisors = "The Golden Throne and the High Lords of Terra"
+	selection_color = "#6220a0"
+	req_admin_notify = 1
+	access = list() 			//See get_access()
+	minimal_access = list() 	//See get_access()
+	minimal_player_age = 25
+	economic_modifier = 20
+	announced = FALSE
+	latejoin_at_spawnpoints = TRUE
+
+	ideal_character_age = 40
+	outfit_type = /decl/hierarchy/outfit/job/captain
+	auto_rifle_skill = 8
+	semi_rifle_skill = 8
+	sniper_skill = 8
+	shotgun_skill = 8
+	lmg_skill = 8
+	smg_skill = 8
+	cultist_chance = 50 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
+
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Lord Trader [current_name]")
+		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
+		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
+		H.adjustStaminaLoss(-INFINITY)
+		H.warfare_faction = IMPERIUM
+		H.say(":v [title] reporting for duty!")
+		H.verbs += list(/mob/living/carbon/human/proc/hire)
+		to_chat(H, "<span class='notice'><b><font size=3>You are the ruling lord of the old city of Messina and by proxy the ice-world of Eipharius -- having arrived in M41 923 exactly fifty years ago. By the golden writ signed by the High Lords of Terra, you have authorization to explore, colonize, and trade with near impunity. Your goals are far into the future, achievable with rejuvenate treatment that shall keep you alive long enough to see the tithe fleets arrive in a few decades time.  You anticipate the coming border wars with the navigator guilds, the uprisings of cults on this forsaken world and the dissent among your retinue as you ask for greater and greater sacrifice each passing year.</font></b></span>")
+
+/datum/job/governor/get_access()
+	return get_all_station_access()
 /datum/job/heir
 	title = "Heir"
 	head_position = 1
@@ -64,7 +110,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "Your Lord. If you so desire..."
-	selection_color = "#3e0177"
+	selection_color = "#6220a0"
 	req_admin_notify = 1
 	minimal_player_age = 25
 	economic_modifier = 10
@@ -110,8 +156,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	outfit_type = /decl/hierarchy/outfit/job/heir
 
 
-// Seneschal
-
+// Seneschal/steward removed until we need it due to pop
+/*
 /datum/job/hop
 	title = "Steward"
 	head_position = 1
@@ -165,14 +211,14 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
-
+*/
 /datum/job/servant
 	title = "Servant"
 	department_flag = PIL
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Lord Trader"
-	selection_color = "#3e0177"
+	selection_color = "#6220a0"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
@@ -267,7 +313,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Noble Estate."
-	selection_color = "#3e0177"
+	selection_color = "#315dd4"
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 0

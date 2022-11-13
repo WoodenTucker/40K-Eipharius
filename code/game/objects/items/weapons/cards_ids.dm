@@ -229,14 +229,14 @@ var/const/NO_EMAG_ACT = -50
 	to_chat(usr, "The DNA hash on the card is [dna_hash].")
 	to_chat(usr, "The fingerprint hash on the card is [fingerprint_hash].")
 	return
-
+/* steward
 /obj/item/card/id/silver
 	name = "identification card"
 	desc = "A silver card which shows honour and dedication."
 	icon_state = "silver"
 	item_state = "silver_id"
 	job_access_type = /datum/job/hop
-
+*/
 /obj/item/card/id/gold
 	name = "golden writ"
 	desc = "A golden writ from the High Lords of Terra naming the owner a Rogue Trader."
@@ -308,15 +308,15 @@ var/const/NO_EMAG_ACT = -50
 	..()
 
 // Department-flavor IDs
-/obj/item/card/id/medical
+/obj/item/card/id/medical // hospitaller
 	name = "identification card"
 	desc = "A card issued to medical staff."
 	icon_state = "med"
-	job_access_type = /datum/job/doctor
-
+	job_access_type = /datum/job/hospitaller
+/*
 /obj/item/card/id/medical/chemist
 	job_access_type = /datum/job/chemist
-
+*/
 /obj/item/card/id/medical/biologis
 	job_access_type = /datum/job/biologis
 
@@ -426,8 +426,8 @@ var/const/NO_EMAG_ACT = -50
 		final_name = final_name + " ([assignment])"
 	SetName(final_name)
 
-/obj/item/card/id/civilian/chaplain
-	job_access_type = /datum/job/chaplain
+/obj/item/card/id/civilian/confessor
+	job_access_type = /datum/job/confessor
 
 /obj/item/card/id/pilgrim/penitent
 	access = list(access_village)
