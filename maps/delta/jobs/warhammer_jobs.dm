@@ -2,55 +2,36 @@
 
 /datum/map/warhammer
 	allowed_jobs = list(
-	/datum/job/captain,
-	/datum/job/envoy,
-	/datum/job/qm2,
-	/datum/job/janissary,
-	/datum/job/mercenary,
-	/datum/job/hop,
-	/datum/job/heir,
-	/datum/job/servant,
-	/datum/job/inquisitor,
-	/datum/job/acolyte,
-	/*/datum/job/scion,*/
-	/*/datum/job/ig/commissar,*/
-	/datum/job/explorer,
-	/datum/job/biologis,
-	/datum/job/engineer,
-	/datum/job/techmenial,
-	/datum/job/ig/sergeant,
-	/datum/job/ig/medicae,
-	/datum/job/ig/guardsman/sharpshooter,
-	/datum/job/ig/guardsman/sniper,
-	/datum/job/ig/guardsman,
-	/datum/job/ig/whiteshield,
-	/*/datum/job/cmo,*/
-	/datum/job/chaplain,
-	/datum/job/sisterofbattle,
-	/datum/job/doctor,
-	/*/datum/job/progena,*/
-	/datum/job/undertaker,
-	/datum/job/marshal,
-	/datum/job/enforcer,
-	/datum/job/cadet,
-	/datum/job/innkeeper,
-	/datum/job/bouncer,
-	/datum/job/pathfinder,
-	/datum/job/gangboy,
-	/datum/job/penitent,
-	/datum/job/scavenger
-
-	/*/datum/job/chemist,*/
-	/*/datum/job/magos,*/
-	/* /datum/job/chef, */
-	/*/datum/job/janitor,*/
-	/*/datum/job/bartender,*/
-	/* /datum/job/mining, */
-	/*/datum/job/cargo_tech, */
-	/* /datum/job/qm1, */
-	/*/datum/job/hydro,*/
-	/* /datum/job/prisoner/penitent, */
-	/* /datum/job/prisoner/penitent/sarge, */
+	/datum/job/governor
+	/datum/job/heir
+	/datum/job/servant
+	/datum/job/acolyte
+	/datum/job/marshal
+	/datum/job/enforcer
+	/datum/job/cadet
+	/datum/job/ig/sergeant
+	/datum/job/ig/sniper
+	/datum/job/ig/guardsman/sharpshooter
+	/datum/job/ig/medicae
+	/datum/job/ig/guardsman
+	/datum/job/ig/whiteshield
+	/datum/job/captain
+	/datum/job/janissary
+	/datum/job/mercenary
+	/datum/job/explorer
+	/datum/job/biologis
+	/datum/job/engineer
+	/datum/job/techmenial
+	/datum/job/chaplain
+	/datum/job/sistersuperior
+	/datum/job/hospitaller
+	/datum/job/novice
+	/datum/job/preacher
+	/datum/job/innkeeper
+	/datum/job/bouncer
+	/datum/job/pathfinder
+	/datum/job/gangboy
+	/datum/job/penitent
 	)
 
 /mob/living/carbon/human/proc/warfare_language_shit(var/language_name) //reworked from matts original intention, the default language is gothic, this will allow you to now add a faction specific language.

@@ -196,8 +196,8 @@
 
 // Battle Sister
 
-/datum/job/sisterofbattle
-	title = "Sister Of Battle"
+/datum/job/sistersuperior
+	title = "Sister Of Battle" // titles and landmarks need change
 	department = "Ministorum"
 	department_flag = CIV
 	total_positions = 1
@@ -319,7 +319,7 @@
 */ // enable when more serber pop
 // Hospitaller Advance
 
-/datum/job/doctor
+/datum/job/hospitaller // fix landmark
 	title = "Sister Hospitaller"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
@@ -369,8 +369,8 @@
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a sister of the Ordos Hospitaller, serving under The Deacon to maintain the health and divinity of the township. Ensure the others of your Chapel are properly trained.</font></b></span>")
 
-/* // we only need progena or scholam, we choose scholam to keep. as it's unique child role that is greytider friendly
-/datum/job/progena
+
+/datum/job/novice
 	title = "Progena"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
