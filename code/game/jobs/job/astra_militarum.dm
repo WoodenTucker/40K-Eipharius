@@ -144,7 +144,7 @@
 //Whiteshield
 
 /datum/job/ig/whiteshield
-	title = "Imperial Guard Whiteshield"
+	title = "Imperial Guard Recruit"
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = FALSE
@@ -355,7 +355,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = FALSE
-	selection_color = "#33813A"
+	selection_color = "#23742a"
 	cultist_chance = 10
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(

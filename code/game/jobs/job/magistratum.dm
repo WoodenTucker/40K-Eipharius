@@ -1,12 +1,12 @@
 // Enforcers
 
 /datum/job/enforcer
-	title = "Planetary Enforcer"
+	title = "Enforcer"
 	supervisors = "The Arbitrator and the Trader"
 	total_positions = 2
 	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
-	selection_color = "#38e4ea"
+	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -49,7 +49,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_MED
-	selection_color = "#38e4ea"
+	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/cadet
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
@@ -87,7 +87,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3> You are a cadet in the Planetary Magistratum. Your job is to assist the other enforcers and learn the ins and outs of the trade.  For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
 /datum/job/arbites
-	title = "Arbitrator"
+	title = "Arbites"
 	head_position = 1
 	supervisors = "The Law and the Emperor"
 	total_positions = 1

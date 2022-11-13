@@ -65,7 +65,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "The Golden Throne and the High Lords of Terra"
-	selection_color = "#6220a0"
+	selection_color = "#540c97"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
 	minimal_access = list() 	//See get_access()

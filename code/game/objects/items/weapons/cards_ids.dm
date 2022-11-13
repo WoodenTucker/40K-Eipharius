@@ -229,14 +229,14 @@ var/const/NO_EMAG_ACT = -50
 	to_chat(usr, "The DNA hash on the card is [dna_hash].")
 	to_chat(usr, "The fingerprint hash on the card is [fingerprint_hash].")
 	return
-/* steward
+
 /obj/item/card/id/silver
 	name = "identification card"
 	desc = "A silver card which shows honour and dedication."
 	icon_state = "silver"
 	item_state = "silver_id"
-	job_access_type = /datum/job/hop
-*/
+	job_access_type = /datum/job/penitent
+
 /obj/item/card/id/gold
 	name = "golden writ"
 	desc = "A golden writ from the High Lords of Terra naming the owner a Rogue Trader."

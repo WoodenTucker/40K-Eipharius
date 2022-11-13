@@ -52,7 +52,7 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	 )
-
+/*
 /decl/hierarchy/outfit/job/hop
 	name = OUTFIT_JOB_NAME("Seneschal")
 	uniform = /obj/item/clothing/under/rank/seneschal

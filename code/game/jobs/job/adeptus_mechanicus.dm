@@ -152,7 +152,7 @@
 	minimal_player_age = 7
 	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus and the Omnissiah."
-	selection_color = "#FF3A3A"
+	selection_color = "#d82424"
 	economic_modifier = 7
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
@@ -218,7 +218,7 @@
 	minimal_player_age = 7
 	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus and the Omnissiah."
-	selection_color = "#FF3A3A"
+	selection_color = "#d82424"
 	req_admin_notify = 1
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE

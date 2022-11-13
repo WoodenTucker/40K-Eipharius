@@ -3,7 +3,7 @@
 //Confessor
 
 /datum/job/confessor
-	title = "Deacon"
+	title = "Confessor"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
@@ -197,7 +197,7 @@
 // Battle Sister
 
 /datum/job/sistersuperior
-	title = "Sister Of Battle" // titles and landmarks need change
+	title = "Sister Superior" // titles and landmarks need change
 	department = "Ministorum"
 	department_flag = CIV
 	total_positions = 1
@@ -371,7 +371,7 @@
 
 
 /datum/job/novice
-	title = "Progena"
+	title = "Sister Novice"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
 	minimal_player_age = 14
@@ -387,6 +387,10 @@
 	access = list(access_medical, access_village)
 	minimal_access = list(access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle/brsister
+	alt_titles = list(
+		"Sister Novice Hospitaller" = /decl/hierarchy/outfit/job/sergeant,
+		"Sister Novice Militant" = /decl/hierarchy/outfit/job/sergeant/catachan,
+	)
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
 	sniper_skill = 7

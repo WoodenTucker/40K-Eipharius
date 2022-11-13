@@ -76,7 +76,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>A penitent in service to the Noble Household of this planet, you owe a debt of life to the family that extends generations down your lines to a distant ancestor, though despite the brand upon your neck and your status as a penitent. You fare better then most who come seeking fortune in this accursed world.</font></b></span>")
 
 /datum/job/janissary
-	title = "Vessorine Janissary"
+	title = "Veteran Mercenary"
 	department_flag = PIL
 	total_positions = 1
 	spawn_positions = 1
@@ -90,6 +90,11 @@
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/cargo/janissary
+	alt_titles = list(
+		"Veteran Kasrkin" = /decl/hierarchy/outfit/job/guardsman,
+		"Tempestus Scion" = /decl/hierarchy/outfit/job/guardsman/catachan,
+
+		)
 	latejoin_at_spawnpoints = 1
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8

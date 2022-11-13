@@ -9,7 +9,7 @@
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "The Golden Throne, the Inquisition and Your Lord Inquisitor"
-	selection_color = "#c9952f"
+	selection_color = "#b4821c"
 	economic_modifier = 7
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/interrogator
