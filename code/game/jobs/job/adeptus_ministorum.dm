@@ -16,7 +16,6 @@
 	access = list(access_heads, access_village, access_sob)
 	minimal_access = list(access_heads, access_sob)
 	announced = FALSE
-//	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/confessor
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
@@ -432,7 +431,7 @@
 	announced = FALSE
 	access = list(access_medical, access_village)
 	minimal_access = list(access_medical, access_village)
-	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle/repentia
+	outfit_type = /decl/hierarchy/outfit/job/preacher
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
 	sniper_skill = 7
@@ -554,3 +553,26 @@
 	/obj/item/stack/thrones3/ten = 2
 	)
 
+/decl/hierarchy/outfit/job/preacher
+	name = OUTFIT_JOB_NAME("Preacher")
+	head = /obj/item/clothing/head/preacher
+	uniform = /obj/item/clothing/under/rank/chaplain
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/civilian/confessor
+	pda_type = null
+	pda_slot = null
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	r_ear = null
+	l_pocket = /obj/item/storage/box/ifak
+	belt = /obj/item/device/flashlight/lantern
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/armor/preacher
+	l_hand = /obj/item/staff/ministorumstaff
+	r_hand = null
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+		)

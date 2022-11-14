@@ -329,6 +329,17 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/preacher
+	name = "Preacher's Gambeson"
+	desc = "The gambeson chosen by the fanatical Frateris, Preachers and Fanatics of the ecclesiarchy"
+	icon_state = "preacherarmor"
+	item_state = "preacherarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 35, bullet = 25, laser = 20, energy = 30, bomb = 10, bio = 10, rad = 10)
+	sales_price = 30
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 //// PILGRIMS
 
 /obj/item/clothing/suit/storage/hooded/miner
@@ -564,7 +575,6 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/flak/heavy/New()
-	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/medicae
@@ -1481,6 +1491,18 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/kasrkin
+	name = "Kasrkin Carapace"
+	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
+	icon_state = "kasrkinarmor"
+	item_state = "kasrkinarmor"
+	armor = list(melee = 58, bullet = 54, laser = 54, energy = 25, bomb = 40, bio = 40, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 40
 
 /obj/item/clothing/suit/armor/vessor
 	name = "Vessorine Carapace"

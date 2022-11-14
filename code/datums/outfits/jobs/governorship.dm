@@ -1,5 +1,5 @@
-/decl/hierarchy/outfit/job/captain
-	name = OUTFIT_JOB_NAME("Rogue Trader")
+/decl/hierarchy/outfit/job/governor
+	name = OUTFIT_JOB_NAME("Planetary Governor")
 	head = /obj/item/clothing/head/rt
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/rtcloak
@@ -20,7 +20,7 @@
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
-/decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
+/decl/hierarchy/outfit/job/governor/post_equip(var/mob/living/carbon/human/H)
 	..()
 	if(H.age>49)
 		// Since we can have something other than the default uniform at this

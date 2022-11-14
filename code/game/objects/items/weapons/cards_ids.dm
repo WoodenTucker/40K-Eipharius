@@ -384,13 +384,13 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo/mining
-	job_access_type = /datum/job/mining
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo/head
 	name = "identification card"
 	desc = "A card which represents service and planning."
 	icon_state = "cargoGold"
-	job_access_type = /datum/job/qm
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian
 	name = "identification card"
@@ -410,7 +410,7 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/janitor
 
 /obj/item/card/id/civilian/librarian
-	job_access_type = /datum/job/librarian
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian/internal_affairs_agent
 	job_access_type = /datum/job/inquisitor

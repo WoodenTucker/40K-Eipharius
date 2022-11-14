@@ -525,7 +525,7 @@
  	armor = list (melee = 35, bullet = 50, laser = 45, energy = 30, bomb = 40, bio = 20, rad = 20)
  	sales_price = 25
 
-// Adepta Sororitas
+// Ministorum and soroitas
 
 /obj/item/clothing/head/helmet/sisterofbattle
 	name = "Order of the Sacred Rose Power Helmet"
@@ -559,6 +559,16 @@
 	item_state = "brsister"
 	armor = list(melee = 65, bullet = 65, laser = 55, energy = 40, bomb = 40, bio = 0, rad = 40)
 	sales_price = 60
+
+/obj/item/clothing/head/preacher
+	name = "Preacher's Crown"
+	desc = "The loud and proud crown of a Preacher of the ecclesiarchy. Try not to get lynched by the person wearing this by holy fervour!"
+	icon_state = "preacherhat"
+	item_state = "preacherhat"
+	armor = list(melee = 30, bullet = 20, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
+	sales_price = 5
+
+// cultists, pilgrims ect
 
 /obj/item/clothing/head/heretichood
 	name = "cultist hood"
