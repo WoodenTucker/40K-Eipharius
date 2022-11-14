@@ -6,7 +6,7 @@
 	/datum/job/heir,
 	/datum/job/servant,
 	/datum/job/acolyte,
-	/datum/job/arbites,
+	/datum/job/arbitrator,
 	/datum/job/enforcer,
 	/datum/job/cadet,
 	/datum/job/ig/sergeant,

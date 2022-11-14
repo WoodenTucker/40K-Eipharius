@@ -15,6 +15,10 @@
 	lmg_skill = 7
 	smg_skill = 7
 	cultist_chance = 20
+	alt_titles = list(
+		"Senior Enforcer" = /decl/hierarchy/outfit/job/ig/enforcer,
+		"Enforcer" = /decl/hierarchy/outfit/job/ig/enforcer,
+		)
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = SEC
@@ -46,8 +50,8 @@
 /datum/job/cadet
 	title = "Enforcer Cadet"
 	supervisors = "The Arbitrator and the Enforcers"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/cadet
@@ -86,8 +90,8 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3> You are a cadet in the Planetary Magistratum. Your job is to assist the other enforcers and learn the ins and outs of the trade.  For a list of laws, read here : https://wiki-40k.herokuapp.com/index.php?title=Messina_Law</font></b></span>")
 
-/datum/job/arbites
-	title = "Arbites"
+/datum/job/arbitrator
+	title = "Arbitrator"
 	head_position = 1
 	supervisors = "The Law and the Emperor"
 	total_positions = 1

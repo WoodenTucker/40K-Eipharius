@@ -910,7 +910,6 @@
 /area/cadiaoutpost/oa/hangar)
 "bU" = (
 /obj/effect/floor_decal/turf/brick,
-/obj/effect/landmark/start/envoy,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bV" = (

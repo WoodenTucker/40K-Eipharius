@@ -371,7 +371,7 @@
 
 
 /datum/job/novice
-	title = "Sister Novice"
+	title = "Novice"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
 	minimal_player_age = 14

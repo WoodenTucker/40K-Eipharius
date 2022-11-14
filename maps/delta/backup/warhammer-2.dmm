@@ -3839,7 +3839,6 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "ke" = (
-/obj/effect/landmark/start/ig,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9608,9 +9607,6 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "QH" = (
-/obj/effect/landmark/start/warden{
-	name = "Tempestus Scion"
-	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9861,7 +9857,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/tradefloor)
 "Sz" = (
-/obj/effect/landmark/start/warden,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
