@@ -319,3 +319,233 @@
 /datum/component/heretic_item/favor/used/proc/on_used(atom/source, var/mob/living/carbon/human/user)
 	if(pre_check(user))
 		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, favor_amt)
+
+
+
+
+
+
+
+
+
+
+
+/obj/item/clothing/gloves/thick/narthecium
+	name = "Sister Hospitaller's Narthecium"
+	desc = "A pair of white, augmented gloves, these have several modifications on them."
+	siemens_coefficient = 0
+	permeability_coefficient = 0.05
+	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
+	icon_state = "black"
+	item_state = "bgloves"
+	unacidable = 1
+	var/can_toggle = 1
+	var/is_toggled = 1
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglesaw()
+	set name = "Pull out integrated saw"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You grab a small perfurating device from your gloves.")
+		usr.put_in_hands(new /obj/item/circular_saw/narthecium(usr))
+		src.is_toggled = 2
+
+/obj/item/circular_saw/narthecium
+	name = "Intergrated bone saw"
+	desc = "A small yet incredibly sharp saw made for heavy duty cutting."
+/obj/item/circular_saw/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglemusclefixer()
+	set name = "Activate FixOvein"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You call upon the machine spirit of the narthecium to give you it's integrated fixovein supply.")
+		usr.put_in_hands(new /obj/item/FixOVein/narthecium(usr))
+		src.is_toggled = 2
+		
+		
+/obj/item/FixOVein/narthecium
+	name = "Intergrated FixOVein"
+	desc = "A small yet incredibly powerful regenerative device, able to regenerate small fragile tissue, however, its pretty slow at it, so most people still prefer the suture."
+/obj/item/FixOVein/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglebonefixer()
+	set name = "Activate Bone Gel"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pressing the bonegel dispenser button on your narthecium, before noticing it doesn't work, instead, it opens a small hole with a bone gel thingy.")
+		usr.put_in_hands(new /obj/item/bonegel/narthecium(usr))
+		src.is_toggled = 2
+		
+		
+/obj/item/bonegel/narthecium
+	name = "Bone Gel Dispenser"
+	desc = "A dispenser linked to a small tube in the gloves, you don't know how, but it seems to have infinite juice, also, the bone dispenser is duct taped to the tube."
+/obj/item/circular_saw/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglebonesetter()
+	set name = "Activate Bone Setter"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You activate the integrated bone setting features of the narthecium, its painful and dizzying for a moment, but you feel more concentrated as a bone setter is seemingly materialized in your hands.")
+		usr.put_in_hands(new /obj/item/bonesetter/narthecium(usr))
+		src.is_toggled = 2
+		
+		
+/obj/item/bonesetter/narthecium
+	name = "Intergrated Bone Setter"
+	desc = "A integrated bone setter with the stability and precision of a servo skull, works well for setting bones and stuff!"
+/obj/item/bonesetter/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglescalpelly()
+	set name = "Activate Scalpel"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You grab the duct taped scalpel on the narthecium.")
+		usr.put_in_hands(new /obj/item/scalpel/narthecium(usr))
+		src.is_toggled = 2
+	
+/obj/item/scalpel/narthecium
+	name = "Duct Taped Scalpel"
+	desc = "You aren't sure who, but someone ductaped a scalpel to these gloves, its worse for proper medicine than the IMS, although more accurate."
+/obj/item/scalpel/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+	
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglescalpelly()
+	set name = "Activate Cautery"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You activate and pull out a servo cautery from the holy narthecium.")
+		usr.put_in_hands(new /obj/item/cautery/narthecium(usr))
+		src.is_toggled = 2
+		
+/obj/item/cautery/narthecium
+	name = "Servo-Cautery"
+	desc = "A red cautery which seems to be faster at closing wounds than normal cauteries, but maybe you just feel that way because its red?"
+/obj/item/suture/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglebloodstopper()
+	set name = "Activate Servo Hemostat"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out servo hemostats from your narthecium and prepare to activate them.")
+		usr.put_in_hands(new /obj/item/hemostat/narthecium(usr))
+		src.is_toggled = 2
+		
+/obj/item/hemostat/narthecium
+	name = "Servo-Hemostat"
+	desc = "Hm, this hemostat holds some bleeding closed just like a normal hemostat, But! it holds the bleeding FOR you! sparing some of your energy of your oh so delicate surgeon hands."
+/obj/item/hemostat/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglebloodstopper()
+	set name = "Activate Duct Tape Retractor"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You SEIZE the retractor on your narthecium from it's duct tape restraints.")
+		usr.put_in_hands(new /obj/item/retractor/narthecium(usr))
+		src.is_toggled = 2
+		
+/obj/item/retractor/narthecium
+	name = "Duct Taped Retractor"
+	desc = "Again, why is this duct taped to such a wonderous piece of tech if the IMS already exists?"
+/obj/item/hemostat/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+
+
+/obj/item/clothing/gloves/thick/narthecium/verb/togglebloodstopper()
+	set name = "Activate Blessed IMS"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You activate the integrated incision management systems from your gloves, preparing them to start a incision.")
+		usr.put_in_hands(new /obj/item/scalpel/manager/narthecium(usr))
+		src.is_toggled = 2
+		
+/obj/item/scalpel/manager/narthecium
+	name = "Integrated Incision Management System"
+	desc = "A beatiful piece of tech made with the strongest holy oils of mars and some of the most holy incenses of the ecclesiarchy! Or so they have told you."
+/obj/item/scalpel/manager/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
