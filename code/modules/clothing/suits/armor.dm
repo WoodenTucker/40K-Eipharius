@@ -547,10 +547,10 @@ obj/item/clothing/suit/armor
 	icon_state = "farmor"
 	item_state = "farmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 30, bio = 10, rad = 20)
+	armor = list(melee = 42, bullet = 48, laser = 42, energy = 20, bomb = 30, bio = 10, rad = 20)
 	sales_price = 20
-	body_parts_covered = UPPER_TORSO
-	cold_protection = UPPER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/guardsman/carapace
@@ -558,7 +558,7 @@ obj/item/clothing/suit/armor
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Flak Armour."
 	icon_state = "fharmor"
 	item_state = "fharmor"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 40, bio = 10, rad = 20)
+	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)
 	sales_price = 35
 /obj/item/clothing/suit/armor/guardsman/carapace/New()
 	..()
@@ -583,9 +583,9 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 10, rad = 20)
 	sales_price = 30
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	cold_protection = UPPER_TORSO|LOWER_TORSO
-	heat_protection = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/flak/heavy/New()
 	slowdown_per_slot[slot_wear_suit] = 0.5
 
@@ -597,8 +597,8 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 30, bio = 40, rad = 30)
 	sales_price = 20
-	body_parts_covered = UPPER_TORSO
-	cold_protection = UPPER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/medicae/New()
 	..()
@@ -612,8 +612,8 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 40, rad = 30)
 	sales_price = 12
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	cold_protection = UPPER_TORSO | LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/catachan
@@ -624,8 +624,8 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 20, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
 	sales_price = 25
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	cold_protection = UPPER_TORSO | LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/CatachanVest/New()
 	..()
@@ -678,7 +678,7 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 10, rad = 30)
 	sales_price = 30
-	cold_protection = UPPER_TORSO | LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/cadiansgt/New()
 	..()
@@ -719,7 +719,7 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 35, bullet = 25, laser = 25, energy = 25, bomb = 30, bio = 0, rad = 0)
 	sales_price = 40
-	cold_protection = UPPER_TORSO | LOWER_TORSO
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/catachansgt/New()
 	..()
@@ -763,7 +763,7 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/gun/projectile/bolter_pistol)
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 35, bomb = 45, bio = 10, rad = 30)
 	sales_price = 60
-	cold_protection = UPPER_TORSO | LOWER_TORSO | FEET | HANDS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/commissar/New()
@@ -794,7 +794,7 @@ obj/item/clothing/suit/armor
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 45, bullet = 45, laser = 45, energy = 45, bomb = 45, bio = 100, rad = 90)
 	sales_price = 50
-	cold_protection = UPPER_TORSO | LOWER_TORSO | FEET | HANDS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 /obj/item/clothing/suit/armor/agent/caraspace/New()
