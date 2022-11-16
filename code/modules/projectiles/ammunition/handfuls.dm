@@ -223,6 +223,23 @@
 	desc = "You get shells out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
 
+/obj/item/ammo_box/shotgun/slug
+	name = "\improper slugs box"
+	icon_state = "shotgunammo"
+	desc = "You get slugs out of this."
+	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful
+
+/obj/item/ammo_box/shotgun/slug/ms
+	name = "\improper MS slugs box"
+	icon_state = "shotgunammo"
+	desc = "You get MS slugs out of this."
+	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful/ms
+
+/obj/item/ammo_box/shotgun/beanbag
+	name = "\improper beanbags box"
+	icon_state = "shotgunammo"
+	desc = "You get beanbags out of this."
+	handful_type = /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
 
 /obj/item/ammo_box/ptsd
 	name = "\improper shells box"
