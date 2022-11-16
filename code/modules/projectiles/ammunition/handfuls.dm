@@ -225,19 +225,19 @@
 
 /obj/item/ammo_box/shotgun/slug
 	name = "\improper slugs box"
-	icon_state = "shotgunammo"
+	icon_state = "slugammo"
 	desc = "You get slugs out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful
 
-/obj/item/ammo_box/shotgun/slug/ms
+/obj/item/ammo_box/shotgun/slug
 	name = "\improper MS slugs box"
-	icon_state = "shotgunammo"
-	desc = "You get MS slugs out of this."
+	icon_state = "msslugammo"
+	desc = "You get extra heavy slugs out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful/ms
 
 /obj/item/ammo_box/shotgun/beanbag
 	name = "\improper beanbags box"
-	icon_state = "shotgunammo"
+	icon_state = "beanbagammo"
 	desc = "You get beanbags out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
 
