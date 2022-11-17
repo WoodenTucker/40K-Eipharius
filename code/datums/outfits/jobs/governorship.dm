@@ -2,7 +2,7 @@
 	name = OUTFIT_JOB_NAME("Planetary Governor")
 	head = /obj/item/clothing/head/rt
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/rtcloak
+	suit = /obj/item/clothing/suit/armor/governor
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/militarum/lord
