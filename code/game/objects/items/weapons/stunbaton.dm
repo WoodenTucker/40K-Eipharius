@@ -24,6 +24,7 @@
 	sales_price = 8
 	weapon_speed_delay = 6
 	status = 1
+	armor_penetration = 30 //Blunt force transfers through a lot of equipment.
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -279,6 +280,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("beaten", "smashed")
+	armor_penetration = 65 //Power maul
 
 /obj/item/melee/baton/nidstun
 	name = "Venomous Talon"
@@ -302,6 +304,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("violated", "penetrated", "infested")
+	armor_penetration = 90 //Genestealer magic.
 
 /obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
 	..()

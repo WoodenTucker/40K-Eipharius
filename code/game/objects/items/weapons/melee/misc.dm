@@ -6,6 +6,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
 	force = 10
+	armor_penetration = 6
 	throwforce = 7
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 4)
@@ -60,6 +61,7 @@
 	name = "scrap mace"
 	desc = "A mace normally used by the ork meks, made of scrap."
 	str_requirement = 13
+	armor_penetration = 35 //Crushing damage
 	force = 35
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
@@ -87,6 +89,7 @@
 	hitsound = 'sound/weapons/whip.ogg'
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
+	armor_penetration = 25
 	force = 5
 	block_chance = 35
 	throwforce = 7
