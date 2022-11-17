@@ -54,6 +54,7 @@ Astartes
 	)
 	radiation_mod = 0.7
 
+
 	has_limbs = list(
 		BP_CHEST =  list("path" = /obj/item/organ/external/chest/unbreakable/astartes),
 		BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/astartes),
@@ -101,14 +102,14 @@ Astartes
 
 /mob/living/carbon/human/astartes/proc/chapterselect()
 	set name = "Remember your Chapter!"
-	set category = "Astartes"
+	set category = "Setup"
 	set desc = "Gives Astartes Chapter."
 
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	var/astarteschapter = input("Select a Class","Class Selection") as null|anything in list("Ultramarine", "Salamander", "Blood Angel", "Raven Guard")
+	var/astarteschapter = input("Select a Chapter","Chapter Selection") as null|anything in list("Ultramarine", "Salamander", "Blood Angel", "Raven Guard")
 	switch(astarteschapter)
 		if("Ultramarine")
 			src.verbs -= /mob/living/carbon/human/astartes/proc/chapterselect
@@ -133,505 +134,398 @@ Astartes
 			src.verbs += /mob/living/carbon/human/astartes/proc/astartesequiprg
 			client?.color = null
 
+//Ultramarines
+
 /mob/living/carbon/human/astartes/proc/astartesequipu()
 	set name = "Retrieve your Equipment!"
-	set category = "Astartes"
+	set category = "Setup"
 	set desc = "Gives Astartes Equipment."
 
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
-//Ultramarines
 
-var/astartesu = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
+	var/astartesu = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
 	switch(astartesu)
 		if("Tactical Marine")
-			equip(var/mob/living/carbon/human/astartes/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 14
-				H.semi_rifle_skill = 14
-				H.sniper_skill = 14
-				H.shotgun_skill = 14
-				H.lmg_skill = 14
-				H.smg_skill = 14
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
+			fully_replace_character_name("Brother [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
 
 	switch(astartesu)
 		if("Apothecary")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Apothecary [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultrapoth)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
+			fully_replace_character_name("Apothecary [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultrapoth)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
 
 	switch(astartesu)
 		if("Techmarine")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Techmarine [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultratech)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
+			fully_replace_character_name("Techmarine [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultratech)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
 
 	switch(astartesu)
 		if("Sergeant")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother-Sergeant [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine/sergeant)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 24
-				H.semi_rifle_skill = 24
-				H.sniper_skill = 24
-				H.shotgun_skill = 24
-				H.lmg_skill = 24
-				H.smg_skill = 24
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
+			fully_replace_character_name("Brother-Sergeant [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ultramarine/sergeant)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Ultramarines, sons of Guilliman, creator of the Codex Astartes.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipu
 
 //Salamanders
 
-var/astartess = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
+/mob/living/carbon/human/astartes/proc/astartesequips()
+	set name = "Retrieve your Equipment!"
+	set category = "Setup"
+	set desc = "Gives Astartes Equipment."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/astartess = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
 	switch(astartess)
 		if("Tactical Marine")
-			equip(var/mob/living/carbon/human/astartes/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salamander)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 14
-				H.semi_rifle_skill = 14
-				H.sniper_skill = 14
-				H.shotgun_skill = 14
-				H.lmg_skill = 14
-				H.smg_skill = 14
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
+			fully_replace_character_name("Brother [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salamander)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
 
 	switch(astartess)
 		if("Apothecary")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Apothecary [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salapoth)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
+			fully_replace_character_name("Apothecary [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salapoth)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
 
 	switch(astartess)
 		if("Techmarine")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Techmarine [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/saltech)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
+			fully_replace_character_name("Techmarine [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/saltech)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
 
 	switch(astartess)
 		if("Sergeant")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother-Sergeant [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salamander/sergeant)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 24
-				H.semi_rifle_skill = 24
-				H.sniper_skill = 24
-				H.shotgun_skill = 24
-				H.lmg_skill = 24
-				H.smg_skill = 24
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
+			fully_replace_character_name("Brother-Sergeant [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/salamander/sergeant)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Salamanders, sons of Vulkan, the Perpetual Primarch.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequips
 
 //Blood Angels
 
-var/astartesba = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Sanguinary Priest", "Techmarine")
+/mob/living/carbon/human/astartes/proc/astartesequipba()
+	set name = "Retrieve your Equipment!"
+	set category = "Setup"
+	set desc = "Gives Astartes Equipment."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/astartesba = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Sanguinary Priest", "Techmarine")
 	switch(astartesba)
 		if("Tactical Marine")
-			equip(var/mob/living/carbon/human/astartes/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Blood Angels, sons of Sanguinius, betrayed by Horus during the Heresy.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 14
-				H.semi_rifle_skill = 14
-				H.sniper_skill = 14
-				H.shotgun_skill = 14
-				H.lmg_skill = 14
-				H.smg_skill = 14
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipba
+			fully_replace_character_name("Brother [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Blood Angels, sons of Sanguinius, betrayed by Horus during the Heresy.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipba
 
 	switch(astartesba)
 		if("Sanguinary Priest")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Apothecary [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/bangapoth)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Blood Angels, sons of Sanguinius, betrayed by Horus during the Heresy.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipba
+			fully_replace_character_name("Apothecary [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/bangapoth)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Blood Angels, sons of Sanguinius, betrayed by Horus during the Heresy.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipba
 
 	switch(astartesba)
 		if("Techmarine")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Techmarine [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/bangtech)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Blood Angels, sons of Sanguinius, betrayed by Horus during the Heresy.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipba
+			fully_replace_character_name("Techmarine [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/bangtech)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your chapter is The Blood Angels, sons of Sanguinius, betrayed by Horus during the Heresy.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequipba
 
 //Raven Guard
 
-var/astartesrg = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
+/mob/living/carbon/human/astartes/proc/astartesequiprg()
+	set name = "Retrieve your Equipment!"
+	set category = "Setup"
+	set desc = "Gives Astartes Equipment."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	var/astartesrg = input("Select a Class","Class Selection") as null|anything in list("Tactical Marine", "Apothecary", "Techmarine", "Sergeant")
 	switch(astartesrg)
 		if("Tactical Marine")
-			equip(var/mob/living/carbon/human/astartes/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravenguard)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. c</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 14
-				H.semi_rifle_skill = 14
-				H.sniper_skill = 14
-				H.shotgun_skill = 14
-				H.lmg_skill = 14
-				H.smg_skill = 14
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
+			fully_replace_character_name("Brother [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravenguard)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. c</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(12,14),rand(12,14),rand(5,7),rand(5,6),rand(3,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
 
 	switch(astartesrg)
 		if("Apothecary")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Apothecary [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravapoth)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your Chapter is the Raven Guard, sons of Corvus Corax, and one of the victims of the Istvaan V Dropsite massacre.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
+			fully_replace_character_name("Apothecary [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravapoth)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your Chapter is the Raven Guard, sons of Corvus Corax, and one of the victims of the Istvaan V Dropsite massacre.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(12,18),rand(5,6),rand(12,16)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
 
 	switch(astartesrg)
 		if("Techmarine")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Techmarine [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravtech)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your Chapter is the Raven Guard, sons of Corvus Corax, and one of the victims of the Istvaan V Dropsite massacre.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 10
-				H.semi_rifle_skill = 10
-				H.sniper_skill = 10
-				H.shotgun_skill = 10
-				H.lmg_skill = 10
-				H.smg_skill = 10
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
+			fully_replace_character_name("Techmarine [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/raventech)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your Chapter is the Raven Guard, sons of Corvus Corax, and one of the victims of the Istvaan V Dropsite massacre.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(10,12),rand(10,12),rand(5,7),rand(12,16),rand(4,6)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
 
 	switch(astartesrg)
 		if("Sergeant")
-			equip(var/mob/living/carbon/human/H)
-				var/current_name = H.real_name
-				..()
-				fully_replace_character_name("Brother-Sergeant [real_name]")
-				warfare_faction = IMPERIUM
-				var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant)
-				outfit.equip(src)
-				H.set_trait(new/datum/trait/death_tolerant())
-				H.get_idcard()?.access = get_all_accesses()
-				H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-				H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-				H.warfare_faction = IMPERIUM
-				to_chat(H, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your Chapter is the Raven Guard, sons of Corvus Corax, and one of the victims of the Istvaan V Dropsite massacre.</font></b></span>")
-				H.gender = MALE
-				H.f_style = "shaved"
-				H.h_style = "Bald"
-				H.bladder = -INFINITY
-				H.bowels = -INFINITY //integrated shitter
-				H.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
-				H.vice = null //off for now
-				H.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
-				H.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
-				H.auto_rifle_skill = 24
-				H.semi_rifle_skill = 24
-				H.sniper_skill = 24
-				H.shotgun_skill = 24
-				H.lmg_skill = 24
-				H.smg_skill = 24
-				H.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
+			fully_replace_character_name("Brother-Sergeant [real_name]")
+			warfare_faction = IMPERIUM
+			var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/astartes/ravenguard/Sergeant)
+			outfit.equip(src)
+			src.set_trait(new/datum/trait/death_tolerant())
+			src.get_idcard()?.access = get_all_accesses()
+			src.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+			src.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+			src.warfare_faction = IMPERIUM
+			to_chat(src, "<span class='notice'><b><font size=3>Forged by the God Emperor for grim purpose, you are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none. Even in the face of death, you shall not submit. Your Chapter is the Raven Guard, sons of Corvus Corax, and one of the victims of the Istvaan V Dropsite massacre.</font></b></span>")
+			src.gender = MALE
+			src.f_style = "shaved"
+			src.h_style = "Bald"
+			src.bladder = -INFINITY
+			src.bowels = -INFINITY //integrated shitter
+			src.adjustStaminaLoss(-INFINITY) //astartes have basically infinite fight in them
+			src.vice = null //off for now
+			src.add_stats(32, 28, 24, 22) //gives stats str, dext, end, int
+			src.add_skills(rand(16,18),rand(16,18),rand(8,10),rand(6,8),rand(6,8)) //melee, ranged, med, eng, surgery
+			src.verbs -= /mob/living/carbon/human/astartes/proc/astartesequiprg
 
 
 
