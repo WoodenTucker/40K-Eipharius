@@ -38,12 +38,12 @@
 		cult.offer_uncult(M)
 		return
 
-	if istype(M, /mob/living/simple_animal/hostile/smalldemon)
+	if (istype(M, /mob/living/simple_animal/hostile/smalldemon))
 		M.gib
 		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
 		return
 
-	if istype(M, /mob/living/simple_animal/playerdaemonhost)
+	if (istype(M, /mob/living/simple_animal/playerdaemonhost))
 		M.gib
 		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
 		return
