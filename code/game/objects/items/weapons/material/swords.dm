@@ -431,7 +431,7 @@
 	item_state = "inqchainsword"
 	w_class = ITEM_SIZE_NORMAL
 	weapon_speed_delay = 10
-	armor_penetration = 45
+	armor_penetration = 35
 
 /obj/item/melee/chain/gold
 	name = "Terra Pattern Chainsword" // this is mostly an ornamental chainsword. Make it low tier. its mostly drip.
@@ -524,7 +524,7 @@
 	str_requirement = 18
 	force = 25 // it's unwieldy when you don't use two hands, baby sword.
 	force_wielded = 80
-	armor_penetration = 75
+	armor_penetration = 70
 	block_chance = 10
 	sharp = 1
 	edge = 1
