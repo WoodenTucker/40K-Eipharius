@@ -309,11 +309,12 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/governor
 	name = "Planetary Governor's Mantle"
-	desc = "The extra, extra, extra large exotic mantle of the Governor of Eipharius. Custom tailor made for his superb frame."
+	desc = "The extra, extra, extra large exotic mantle of the Governor of Eipharius. Custom tailor made for his superb frame. It is interwoven into his flesh and unremovable"
 	icon_state = "taxstomach"
 	item_state = "taxstomach"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 35, bullet = 40, laser = 30, energy = 30, bomb = 10, bio = 10, rad = 10)
+	armor = list(melee = 35, bullet = 45, laser = 45, energy = 30, bomb = 10, bio = 10, rad = 10)
+	canremove = 0
 	sales_price = 60
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE

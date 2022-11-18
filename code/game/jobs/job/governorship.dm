@@ -1,4 +1,4 @@
-// Rogue Trader
+// Governor
 
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
@@ -15,13 +15,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	selection_color = "#540c97"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
-	minimal_player_age = 25
+	minimal_access = list() 	//See get_acce ss()
+	minimal_player_age = 65
 	economic_modifier = 20
-	announced = FALSE
+	announced = TRUE
 	latejoin_at_spawnpoints = TRUE
 
-	ideal_character_age = 40
+	ideal_character_age = 120
 	outfit_type = /decl/hierarchy/outfit/job/governor
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -35,7 +35,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord Trader [current_name]")
+		H.fully_replace_character_name("Governor [current_name]")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -48,6 +48,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/governor/get_access()
 	return get_all_station_access()
+
 /datum/job/heir
 	title = "Heir"
 	head_position = 1
