@@ -13,10 +13,11 @@
 	force = 45
 	force_wielded = 60
 	block_chance = 35
+	armor_penetration = 15
 	// force_divisor = 0.8 // Do not turn this back on.
 	// thrown_force_divisor = 0.2 //
 	sharp = 1 //sharp or blunt, blunt causes broken bones, sharp causes organ damage and extra bleeding.
-	edge = 1 //edge or not edged, edged has a higher chance of cutting limbs off, no edge has more chance of breaking limbs
+	edge = 1 //edge or not edged, edged has a higher chance of cutting limbs off, no edge has more chance of breaking limb
 	attack_verb = list("slashed", "sliced")
 	hitsound = "slash_sound"
 	var/atk_mode = SLASH
@@ -145,7 +146,7 @@
 	item_state = "spatha"
 	force = 35
 	force_wielded = 35
-	armor_penetration = 5
+	armor_penetration = 10
 	block_chance = 25
 	weapon_speed_delay = 7
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -157,7 +158,7 @@
 	color = "#848484"
 	force = 25
 	force_wielded = 45
-	armor_penetration = 30
+	armor_penetration = 25
 	block_chance = 40 //weight is important for blocking
 	weapon_speed_delay = 6
 
@@ -179,7 +180,7 @@
 	desc = "A heavy steel broadsword, the edges of this specific broadsword have been augmented with an edge made out of adamantium."
 	color = "#848484"
 	force = 20 //HEAVY
-	force_wielded = 60
+	force_wielded = 35
 	armor_penetration = 45
 	block_chance = 40 //not as quick as a machete, but still big enough to block attacks
 	weapon_speed_delay = 12
@@ -236,7 +237,7 @@
 	str_requirement = 17
 	force = 50
 	force_wielded = 70 //warpsword
-	armor_penetration = 10
+	armor_penetration = 90
 	block_chance = 30
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
@@ -255,7 +256,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	force = 25
 	force_wielded = 50
-	armor_penetration = 10
+	armor_penetration = 18
 	throwforce = 18
 	block_chance = 12
 	sharp = 1
@@ -303,7 +304,7 @@
 	wielded_icon = "savaxe"
 	force = 25 //really bad when one handed
 	force_wielded = 60 //known to cut through armor and flesh
-	armor_penetration = 30
+	armor_penetration = 25
 	throwforce = 15
 	block_chance = 30 //trades block for damage
 	weapon_speed_delay = 15
@@ -356,7 +357,7 @@
 	item_state = "sabre"
 	block_chance = 16
 	sales_price = 35
-	armor_penetration = 5
+	armor_penetration = 10
 
 /obj/item/material/sword/choppa
 	name = "choppa"
@@ -368,7 +369,7 @@
 	attack_verb = list("stabbed", "chopped", "cut", "sliced")
 	force = 35
 	force_wielded = 50
-	armor_penetration = 20
+	armor_penetration = 25
 	block_chance = 5
 	sharp = 1
 	hitsound = "slash_sound"
@@ -393,7 +394,7 @@
 	sharp = 1
 	edge = 1
 	force_wielded = 60
-	armor_penetration = 10
+	armor_penetration = 100
 	block_chance = 30
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
@@ -410,7 +411,7 @@
 	str_requirement = 15
 	force = 35
 	force_wielded = 40
-	armor_penetration = 10 // chainswords should have high AP. this is generic however and should be lowish
+	armor_penetration = 28 // chainswords should have high AP. this is generic however and should be lowish
 	block_chance = 15 // chainswords should have relatively low block chance. Swords/spears are for parrying. chains are for rip n tear, sharp n edge
 	sharp = 1
 	edge = 1
@@ -430,6 +431,7 @@
 	item_state = "inqchainsword"
 	w_class = ITEM_SIZE_NORMAL
 	weapon_speed_delay = 10
+	armor_penetration = 35
 
 /obj/item/melee/chain/gold
 	name = "Terra Pattern Chainsword" // this is mostly an ornamental chainsword. Make it low tier. its mostly drip.
@@ -450,7 +452,7 @@
 	str_requirement = 16
 	force = 40
 	force_wielded = 65
-	armor_penetration = 15
+	armor_penetration = 45
 	block_chance = 10
 	sharp = 1
 	edge = 1
@@ -474,7 +476,7 @@
 	str_requirement = 16
 	force_wielded = 55
 	force = 45
-	armor_penetration = 15
+	armor_penetration = 75
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -498,7 +500,7 @@
 	str_requirement = 17
 	force = 50
 	force_wielded = 60
-	armor_penetration = 25
+	armor_penetration = 85
 	block_chance = 20 //while that is weaker than the other chainswords, its balanced if you consider astartes stats
 	sharp = 1
 	edge = 1
@@ -522,7 +524,7 @@
 	str_requirement = 18
 	force = 25 // it's unwieldy when you don't use two hands, baby sword.
 	force_wielded = 80
-	armor_penetration = 30
+	armor_penetration = 70
 	block_chance = 10
 	sharp = 1
 	edge = 1
@@ -547,7 +549,7 @@
 	str_requirement = 16
 	force = 45
 	force_wielded = 70
-	armor_penetration = 30
+	armor_penetration = 85
 	block_chance = 5
 	sharp = 1
 	edge = 1
@@ -587,6 +589,7 @@
 	weapon_speed_delay = 6
 	drop_sound = 'sound/items/knife_drop.ogg'
 	swing_sound = "blunt_swing"
+	armor_penetration = 8
 
 /obj/item/material/sword/combat_knife/rare
 	name = "trench knife"
@@ -626,7 +629,7 @@
 	attack_verb = list("slashed")
 	force = 25
 	force_wielded = 28
-	armor_penetration = 10
+	armor_penetration = 25 //Really more of a sword.
 	block_chance = 38
 	weapon_speed_delay = 5
 
@@ -659,7 +662,7 @@
 	force = 22
 	force_wielded = 26
 	block_chance = 25
-	armor_penetration = 0
+	armor_penetration = 10
 	weapon_speed_delay = 7
 	sharp = 1
 	throw_speed = 1
@@ -685,4 +688,5 @@
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 7
+	armor_penetration = 45
 

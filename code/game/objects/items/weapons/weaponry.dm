@@ -10,6 +10,7 @@
 	throw_range = 4
 	throwforce = 10
 	w_class = ITEM_SIZE_SMALL
+	armor_penetration = 100 //Magic
 
 /obj/item/nullrod/attack(mob/M as mob, mob/living/user as mob) //Paste from old-code to decult with a null rod.
 	admin_attack_log(user, M, "Attacked using \a [src]", "Was attacked with \a [src]", "used \a [src] to attack")
@@ -18,7 +19,7 @@
 	user.do_attack_animation(M)
 	//if(user != M)
 	if(M.mind && M.mind.learned_spells)
-		M.silence_spells(300) //30 seconds
+		M.silence_spells(600) //60 seconds
 		to_chat(M, "<span class='danger'>You've been silenced!</span>")
 		return
 
@@ -37,6 +38,15 @@
 		cult.offer_uncult(M)
 		return
 
+	if (istype(M, /mob/living/simple_animal/hostile/smalldemon))
+		M.gib
+		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
+		return
+
+	if (istype(M, /mob/living/simple_animal/playerdaemonhost))
+		M.gib
+		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
+		return
 	..()
 
 /obj/item/nullrod/afterattack(var/atom/A, var/mob/user, var/proximity)
@@ -46,6 +56,7 @@
 		var/turf/simulated/wall/cult/W = A
 		user.visible_message("<span class='notice'>\The [user] touches \the [A] with \the [src] and it starts fizzling and shifting.</span>", "<span class='notice'>You touch \the [A] with \the [src] and it starts fizzling and shifting.</span>")
 		W.ChangeTurf(/turf/simulated/wall)
+
 
 /obj/item/energy_net
 	name = "energy net"

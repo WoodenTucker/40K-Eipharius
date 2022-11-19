@@ -170,7 +170,7 @@
 	desc = "A helmet with optical and cranial augments coupled to it."
 	icon_state = "v62"
 	valid_accessory_slots = null
-	armor = list(melee = 50, bullet = 40, laser = 30,energy = 25, bomb = 50, bio = 10, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20,energy = 20, bomb = 20, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	body_parts_covered = HEAD|EYES|BLOCKHEADHAIR
 	cold_protection = HEAD
@@ -181,14 +181,14 @@
 	name = "flak helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "guard"
-	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/head/helmet/scion
 	name = "scion helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "helmetNVG"
-	armor = list(melee = 40, bullet = 45, laser = 35, energy = 35, bomb = 50, bio = 0, rad = 10)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 	sales_price = 25
 
@@ -203,7 +203,7 @@
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
 	desc = "The hide of a Tyranid Genestealer"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 100, rad = 100)
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
@@ -223,7 +223,7 @@
 	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -236,7 +236,7 @@
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/horns
@@ -245,7 +245,7 @@
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
-	armor = list(melee = 30, bullet = 25, laser = 20, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 15, laser = 20, energy = 10, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/sight
@@ -254,7 +254,7 @@
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 20, laser = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 15, energy = 20, bomb = 20, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/fur
@@ -284,7 +284,7 @@
 	desc = "A advanced helmet produced for Tau Fire Caste Warriors, made out of...acceptable quality ceramite."
 	icon_state = "fwhelm"
 	item_state = "fwhelm"
-	armor = list(melee = 45, bullet = 50, laser = 40, energy = 45, bomb = 30, bio = 100, rad = 100)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 35, bomb = 35, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -296,7 +296,7 @@
 	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
 	icon_state = "scout"
 	item_state = "scout"
-	armor = list(melee = 50, bullet = 60, laser = 57, energy = 45, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 40, bio = 100, rad = 100)
 	siemens_coefficient = 0.6
 	body_parts_covered = HEAD
 	cold_protection = HEAD
@@ -406,7 +406,7 @@
 	desc = "A power helmet manufactured manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
 	icon_state = "berserkerhelm"
 	item_state = "berserkerhelm"
-	armor = list(melee = 50, bullet = 50, laser = 50, energy = 35, bomb = 60, bio = 60, rad = 40)
+	armor = list(melee = 60, bullet = 40, laser = 50, energy = 45, bomb = 60, bio = 60, rad = 40)
 	sales_price = 20
 
 /obj/item/clothing/head/helmet/reconhood
@@ -422,7 +422,7 @@
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "metalhelmet"
 	item_state = "metalhelmet"
-	armor = list(melee = 44, bullet = 24, laser = 34, energy = 35, bomb = 10, bio = 30, rad = 20)
+	armor = list(melee = 14, bullet = 14, laser = 14, energy = 10, bomb = 10, bio = 30, rad = 20)
 	sales_price = 7
 
 /obj/item/clothing/head/helmet/gangerhelm
@@ -430,7 +430,7 @@
 	desc = "A heavy metal ganger helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
-	armor = list(melee = 39, bullet = 29, laser = 33, energy = 35, bomb = 10, bio = 30, rad = 20)
+	armor = list(melee = 12, bullet = 12, laser = 12, energy = 12, bomb = 12, bio = 30, rad = 20)
 	sales_price = 8
 
 /obj/item/clothing/head/helmet/knighthelm
@@ -438,7 +438,7 @@
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "knighthelm"
 	item_state = "knighthelm"
-	armor = list(melee = 50, bullet = 31, laser = 38, energy = 35, bomb = 20, bio = 30, rad = 20)
+	armor = list(melee = 20, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 30, rad = 20)
 	sales_price = 9
 
 /obj/item/clothing/head/helmet/dragon
@@ -454,7 +454,7 @@
 	desc = "A heavy metal visor for protecting your face."
 	icon_state = "leglad"
 	item_state = "leglad"
-	armor = list(melee = 40, bullet = 33, laser = 38, energy = 35, bomb = 20, bio = 30, rad = 20)
+	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 30, rad = 20)
 	sales_price = 9
 
 /obj/item/clothing/head/helmet/stalkerhelm
@@ -462,7 +462,7 @@
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger_oldup"
 	item_state = "ranger_oldup"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	armor = list(melee = 18, bullet = 18, laser = 18, energy = 20, bomb = 20, bio = 70, rad = 50)
 	sales_price = 11
 
 /obj/item/clothing/head/helmet/stalkerhelm2
@@ -470,7 +470,7 @@
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger1"
 	item_state = "ranger1"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	armor = list(melee = 18, bullet = 18, laser = 18, energy = 20, bomb = 20, bio = 70, rad = 50)
 	sales_price = 11
 
 /obj/item/clothing/head/helmet/heavyflak
@@ -478,7 +478,7 @@
 	desc = "An old flak helmet, custom fitted with a filtration mask and armored exterior."
 	icon_state = "doom"
 	item_state = "doom"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 40, bio = 50, rad = 30)
+	armor = list(melee = 18, bullet = 18, laser = 18, energy = 15, bomb = 40, bio = 50, rad = 30)
 	sales_price = 10
 
 /obj/item/clothing/head/helmet/vindicare
@@ -495,7 +495,7 @@
 	name = "Vindicare helmet"
 	desc = "The armoured helmet of a Thallax Warrior."
 	icon_state = "vox-stealth"
-	armor = list(melee = 100, bullet = 100, laser = 100, energy = 100, bomb = 100, bio = 100, rad = 100)
+	armor = list(melee = 70, bullet = 70, laser = 70, energy = 70, bomb = 70, bio = 100, rad = 100)
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR

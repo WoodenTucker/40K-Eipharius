@@ -134,7 +134,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 48
-	armor_penetration = 10
+	armor_penetration = 15
 
 /obj/item/projectile/energy/las/lasgun/overcharge
 	name = "lasbolt"
@@ -142,7 +142,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 58
-	armor_penetration = 20
+	armor_penetration = 25
 
 /obj/item/projectile/energy/las/lasgun/pistol // just use rifle lasgun for over charges for pistol
 	name = "lasbolt"
@@ -150,7 +150,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 35
-	armor_penetration = 5
+	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/lucius
 	name = "lasbolt"
@@ -158,7 +158,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 56
-	armor_penetration = 10
+	armor_penetration = 15
 
 /obj/item/projectile/energy/las/lasgun/lucius/overcharge
 	name = "lasbolt"
@@ -166,7 +166,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 65
-	armor_penetration = 20
+	armor_penetration = 25
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
@@ -174,7 +174,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 89
-	armor_penetration = 25 //more penetration than krieger
+	armor_penetration = 35 //more penetration than krieger
 	accuracy = 2
 
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
@@ -183,7 +183,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 110
-	armor_penetration = 40 //more penetration than hotshot
+	armor_penetration = 45 //more penetration than hotshot
 
 /obj/item/projectile/energy/las/lasgun/hotshot //RYZA PATTERN HOTSHOT LASGUN
 	name = "lasbolt"
@@ -191,7 +191,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 80 //same damage as krieger but with penetration
-	armor_penetration = 35
+	armor_penetration = 45
 
 /obj/item/projectile/energy/pulse/pulserifle
 	name = "pulse round"
@@ -199,7 +199,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 51
-	armor_penetration = 25 //this is automatic and almost infinite, so, yeah, weak penetration even tho its plasma weaponry
+	armor_penetration = 45 //this is automatic and almost infinite, so, yeah, weak penetration even tho its plasma weaponry
 
 	/obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
@@ -216,7 +216,7 @@
 	icon_state = "pulse1"
 	damage = 130
 //	agony =  //who did this? this passes through all fucking armor... EVEN IF THEY DIDNT TAKE ANY DAMAGE THEY WOULD HAVE A FUCKLOAD OF PAIN
-	armor_penetration = 30
+	armor_penetration = 60
 
 /obj/item/projectile/energy/pulse/ion
 	name = "ION round"
@@ -224,8 +224,8 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 115
-	armor_penetration = 25
-//	agony = 0 //who did this? dumb fucks
+	armor_penetration = 65
+//	agony = 0 
 //	stun = 5
 
 
@@ -235,7 +235,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 95
-	armor_penetration = 50 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
+	armor_penetration = 85 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -246,7 +246,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 70
-	armor_penetration = 40
+	armor_penetration = 65
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -256,7 +256,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 95
-	armor_penetration = 40
+	armor_penetration = 65
 	light_power = 4
 	light_color = "#2132cf"
 

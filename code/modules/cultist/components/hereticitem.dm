@@ -319,3 +319,4 @@
 /datum/component/heretic_item/favor/used/proc/on_used(atom/source, var/mob/living/carbon/human/user)
 	if(pre_check(user))
 		SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, favor_amt)
+

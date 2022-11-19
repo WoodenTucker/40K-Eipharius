@@ -290,6 +290,7 @@
 	active_throwforce = 18
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	force = 40 //its just a adamantium sword when offline
+	armor_penetration = 100
 	throwforce = 15
 	throw_speed = 1
 	throw_range = 4
@@ -299,6 +300,7 @@
 	edge = 1
 	sharp = 1
 	w_class = ITEM_SIZE_HUGE
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
