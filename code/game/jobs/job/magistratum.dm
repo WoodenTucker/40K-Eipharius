@@ -2,7 +2,6 @@
 
 /datum/job/enforcer
 	title = "Enforcer"
-	department_flag = INQ
 	supervisors = "The Inquisition firstly, the Governorship secondly"
 	total_positions = 2
 	spawn_positions = 2
@@ -50,7 +49,6 @@
 
 /datum/job/cadet
 	title = "Enforcer Cadet"
-	department_flag = INQ
 	supervisors = "The Inquisition firstly, Governorship secondly"
 	total_positions = 2
 	spawn_positions = 2
@@ -90,12 +88,11 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
-		to_chat(H, "<span class='notice'><b><font size=3> A cadet in the Magisterium. The Governership order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Governership order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
 
 /datum/job/arbitrator
 	title = "Arbitrator"
 	head_position = 1
-	department_flag = INQ
 	supervisors = "The Law and the Interrogator"
 	total_positions = 1
 	spawn_positions = 1

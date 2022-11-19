@@ -5,7 +5,7 @@
 /datum/job/confessor
 	title = "Confessor"
 	department = "Ministorum"
-	department_flag = MED | COM
+	department_flag = MED
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
@@ -351,7 +351,7 @@
 		H.h_style = "Bob"
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3> Soon you will begin your training with the sisters of the Ordos. The Sister Superior teaches militants, while the Sister Hospitaller teaches the medical arts. Learn well and obey. Stick to your starting armor.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) Soon you will begin your training with the sisters of the Ordos. The Sister Superior teaches militants, while the Sister Hospitaller teaches the medical arts. Learn well and obey. Stick to your starting armor.</font></b></span>")
 
 /datum/job/preacher
 	title = "Preacher"
@@ -360,7 +360,7 @@
 	minimal_player_age = 20
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Abbess or The Deacon"
+	supervisors = "The Confessor"
 	selection_color = "#FCFBFA"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH

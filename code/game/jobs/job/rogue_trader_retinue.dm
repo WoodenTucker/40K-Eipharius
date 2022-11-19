@@ -4,7 +4,7 @@
 	title = "Rogue Trader"
 	department = "Rogue Trader"
 	head_position = 1
-	department_flag = COM|CIV
+	department_flag = CIV
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
@@ -54,7 +54,7 @@
 
 /datum/job/vetmerc
 	title = "Veteran Mercenary"
-	department_flag = PIL
+	department_flag = CIV
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Rogue Trader"
@@ -96,7 +96,7 @@
 
 /datum/job/xenomerc
 	title = "Xeno Mercenary"
-	department_flag = PIL
+	department_flag = CIV
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 1
 	spawn_positions = 1

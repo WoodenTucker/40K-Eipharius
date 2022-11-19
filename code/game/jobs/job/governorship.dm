@@ -162,7 +162,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 */
 /datum/job/servant
 	title = "Servant"
-	department_flag = PIL
+	department_flag = COM
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "The Governor and Heir"

@@ -160,7 +160,7 @@
 		H.witchblood()
 		H.say(":v [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3> You are a Whiteshield, an Imperial Guard recruit with little training. Follow the orders of anyone giving you orders. Try not to get executed. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Whiteshield, an Imperial Guard recruit with little training. Follow the orders of anyone giving you orders. Try not to get executed. </font></b></span>")
 
 /datum/job/ig/whiteshield/Imperial
 	total_positions = 30

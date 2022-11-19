@@ -7,7 +7,7 @@
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/militarum/lord
 	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/heads/rt
+	l_ear = /obj/item/device/radio/headset/headset_cargo
 	shoes = /obj/item/clothing/shoes/jackboots/noble
 	id_type = /obj/item/card/id/gold
 	pda_type = null
@@ -31,14 +31,15 @@
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadian
 	id = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/heads/hos
-	r_ear = /obj/item/device/flashlight/lantern
+	l_ear = /obj/item/device/radio/headset/headset_cargo
+	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/hotshot
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/cell/lasgun/hotshot = 2,
 	)
 
 /decl/hierarchy/outfit/job/scion

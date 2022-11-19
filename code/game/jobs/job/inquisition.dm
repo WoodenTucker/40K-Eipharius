@@ -4,7 +4,7 @@
 	title = "Interrogator"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 1 // Interrogator has one slot. Admins must enable further slots.
+	total_positions = 1
 	spawn_positions = 1
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
