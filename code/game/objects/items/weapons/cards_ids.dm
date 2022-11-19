@@ -680,8 +680,8 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/key/grand/monastary
 	name = "Monastary Key"
-	desc = "Key to the Inner Sactum of His Holyness' Church"
-	access = list(access_monastary)
+	desc = "Key to the Inner Sactum of His Holyness' Church and general areas."
+	access = list(access_monastary, access_advchapel)
 
 /obj/item/card/id/key/grand/barentry
 	name = "Inn Key"

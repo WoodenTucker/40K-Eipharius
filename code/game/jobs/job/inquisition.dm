@@ -34,7 +34,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_sob, access_inquisition)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition)
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":i [title] reporting for duty!")
 		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralizing and erasing traces of heresy, chaos, xenos and daemons. Now more then ever your actions are being weighed by not only your master, but the inquisition - this mission is the last opportunity to clear the names of not only the Lord Inquisitor but that of his entire retinue...</font></b></span>")
@@ -50,7 +50,7 @@
 	title = "Imperial Inquisitor"
 	department_flag = INQ|COM
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 1
+	total_positions = 0
 	spawn_positions = 1
 	head_position = 1
 	supervisors = "The Golden Throne, the Inquisition, Lord Inquisitor Rorkan and the masters of the Ordos Helican."
@@ -82,7 +82,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_sob, access_inquisition, access_inquisition_fancy)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition, access_inquisition_fancy)
 		H.inquisitor = 1
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":i [title] reporting for duty!")

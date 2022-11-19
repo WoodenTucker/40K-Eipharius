@@ -13,8 +13,8 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
 	selection_color = "#FCFBFA"
-	access = list(access_heads, access_village, access_sob)
-	minimal_access = list(access_heads, access_sob)
+	access = list(access_heads, access_advchapel)
+	minimal_access = list(access_heads, access_advchapel)
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/confessor
 	auto_rifle_skill = 6
@@ -33,7 +33,7 @@
 		H.fully_replace_character_name("Deacon [current_name]")
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(14,18)) //frail and holy
 		H.add_skills(rand(8,10),rand(5,6),rand(5,7),3,rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
@@ -224,12 +224,12 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Battle Sister [current_name]")
+		H.fully_replace_character_name("Sister Superior [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		H.add_stats(rand(18,22), rand(18,20), rand(18,20), 13)
 		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_sob,)
+		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -258,65 +258,7 @@
 	total_positions = 3
 	spawn_positions = 3
 
-// Orders Hospitaller
 
-// Almoness Advance
-/*
-/datum/job/cmo
-	title = "Abbess"
-	head_position = 1
-	department = list("Ministorum", "Medical")
-	department_flag = COM|MED
-	total_positions = 0
-	spawn_positions = 0
-	supervisors = "The Deacon and Inquisition"
-	selection_color = "#633d63"
-	economic_modifier = 10
-	open_when_dead = FALSE
-	social_class = SOCIAL_CLASS_HIGH
-	latejoin_at_spawnpoints = TRUE
-	announced = FALSE
-	access = list(access_medical, access_heads,
-			access_abbess, access_RC_announce,
-			access_keycard_auth, access_guard_common, access_village, access_sob)
-	minimal_access = list(access_medical, access_heads,
-			access_abbess, access_RC_announce,
-			access_keycard_auth, access_guard_common, access_village, access_sob)
-
-	minimal_player_age = 20
-	ideal_character_age = 50
-	outfit_type = /decl/hierarchy/outfit/job/medical/cmo
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
-	cultist_chance = 1
-
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
-		..()
-		H.fully_replace_character_name("Abbess [current_name]")
-		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand(15,17))
-		H.add_skills(rand(5,8),rand(5,7),rand(10,11),rand(3,5),rand(10,11)) //melee, ranged, med, eng, surgery
-		H.get_equipped_item(slot_s_store)
-		H.warfare_faction = IMPERIUM
-		H.gender = FEMALE
-		H.get_idcard()?.access = list(access_medical, access_heads,
-			access_abbess, access_RC_announce,
-			access_keycard_auth, access_guard_common, access_village, access_sob)
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
-		H.f_style = "shaved"
-		H.h_style = "Bob"
-
-		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
-*/ // enable when more serber pop
-// Hospitaller Advance
 
 /datum/job/hospitaller // fix landmark
 	title = "Sister Hospitaller"
@@ -334,10 +276,10 @@
 	announced = FALSE
 	access = list(access_medical, access_heads,
 			access_abbess, access_RC_announce,
-			access_keycard_auth, access_guard_common, access_village, access_sob)
+			access_keycard_auth, access_guard_common, access_village, access_advchapel)
 	minimal_access = list(access_medical, access_heads,
 			access_abbess, access_RC_announce,
-			access_keycard_auth, access_guard_common, access_village, access_sob)
+			access_keycard_auth, access_guard_common, access_village, access_advchapel)
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -383,12 +325,12 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_village)
-	minimal_access = list(access_medical, access_village)
+	access = list(access_medical, access_village, access_advchapel)
+	minimal_access = list(access_medical, access_village, access_advchapel)
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle/brsister
 	alt_titles = list(
-		"Sister Novice Hospitaller" = /decl/hierarchy/outfit/job/sergeant,
-		"Sister Novice Militant" = /decl/hierarchy/outfit/job/sergeant/catachan,
+		"Sister Novice Hospitaller" = /decl/hierarchy/outfit/job/doctor,
+		"Sister Novice Militant" = /decl/hierarchy/outfit/job/,
 	)
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -438,7 +380,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 10
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
