@@ -11,7 +11,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "The Golden Throne and the High Lords of Terra"
+	supervisors = "The Golden Throne and the High Lords of Terra."
 	selection_color = "#540c97"
 	req_admin_notify = 1
 	access = list(20) 			//See get_access()
@@ -23,13 +23,13 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	ideal_character_age = 120
 	outfit_type = /decl/hierarchy/outfit/job/governor
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
-	cultist_chance = 50 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
+	cultist_chance = 75 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -44,7 +44,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_faction = IMPERIUM
 		H.say(":v [title] reporting for duty!")
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the ruling lord of the old city of Messina and by proxy the ice-world of Eipharius -- having arrived in M41 923 exactly fifty years ago. By the golden writ signed by the High Lords of Terra, you have authorization to explore, colonize, and trade with near impunity. Your goals are far into the future, achievable with rejuvenate treatment that shall keep you alive long enough to see the tithe fleets arrive in a few decades time.  You anticipate the coming border wars with the navigator guilds, the uprisings of cults on this forsaken world and the dissent among your retinue as you ask for greater and greater sacrifice each passing year.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> The head honcho of Eipharius, ensure the tithe goes to Holy Terra. You own the Imperial Guard Squad stationed on the planet, as well as the Enforcers of the Magisterium. Hopefully they do the noble family’s bidding. Bathe in the riches of your privilege. Make sure that the inquisition doesn’t find out about any less than legal dealings you do. </font></b></span>")
 
 /datum/job/governor/get_access()
 	return get_all_station_access()
@@ -57,7 +57,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Your Lord. If you so desire..."
+	supervisors = "Yourself. Make sure you get that inheritance..."
 	selection_color = "#6220a0"
 	req_admin_notify = 1
 	minimal_player_age = 25
@@ -71,21 +71,21 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 30 // lots of delicacies growing up
+	cultist_chance = 50 // lots of delicacies growing up
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Lord [current_name]")
-		H.add_stats(rand(13,16), rand(13,16), rand(13,15), rand(13,17)) //
-		H.add_skills(rand(6,10),rand(6,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(10,16), rand(10,16), rand(13,15), rand(13,17)) //
+		H.add_skills(rand(5,10),rand(5,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the heir to the Lord Trader, born within the City of Messina this world is all you know and you been prepared over your young life to succeed your Lord and one day rule this planet. Despite all they have given you, an entire planet to lead -- there are pressures from benefactors close to the Trader that encourage his death so that you may take the mantle from them.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are still young. Orders probably won’t be taken seriously. The next in line to the throne of Eipharius. Waiting simply takes too long. Why not have the Governor simply… fall down some stairs? Make sure the Enforcers and Inquisition don’t get suspicious and have a stable rise to the throne.</font></b></span>")
 
 
 	access = list(access_security, access_guard_common, access_magi,
@@ -165,7 +165,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	department_flag = PIL
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Lord Trader"
+	supervisors = "The Governor and Heir"
 	selection_color = "#6220a0"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
@@ -206,7 +206,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Lord Trader to whom you owe your life, having been in service to their family for generations of your line you are the last surviving member of your family, you may of served them for many decades or have been recently been inducted into the house out of your own  free will. Regardless you are their property now.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Governorship, having been in service to their family for generations. They own you. Change that. If you want.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))

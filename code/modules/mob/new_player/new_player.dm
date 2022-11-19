@@ -439,15 +439,15 @@
 		"Team Red"=list("color"="#b27676", "jobs"=list()),
 		"Team Blue"=list("color"="#76abb2", "jobs"=list()),
 		"Command"=list("color"="#76abb2", "jobs"=list()),
-		"Imperial Guard"=list("color"="#b27676", "jobs"=list()),
+		"Imperial Guard"=list("color"= "#23742a", "jobs"=list()),
 		"Village"=list("color"="#ff0bebea", "jobs"=list()),
 		"Adeptus Mechanicus"=list("color"="#f03e08", "jobs"=list()),
 		"Outpost Medical Staff"=list("color"="#76abb2", "jobs"=list()),
 		"Supply"=list("color"="#76abb2", "jobs"=list()),
-		"Outpost Support Staff"=list("color"="#76abb2", "jobs"=list()),
-		"Inquisition"=list("color"="#fd0707", "jobs"=list()),
-		"Village"=list("color"="#ff0bebea", "jobs"=list()),
-		"Misc"=list("color"="Grey", "jobs"=list()),
+		"Ministorum"=list("color"="#76abb2", "jobs"=list()),
+		"Inquisition"=list("color"= "#b4821c", "jobs"=list()),
+		"Village"=list("color"=""#848484", "jobs"=list()),
+		"Misc"=list("color"=""#848484", "jobs"=list()),
 		)
 
 	for(var/datum/job/job in SSjobs.occupations)

@@ -2,7 +2,7 @@
 
 /datum/job/ig
 	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
-	supervisors = "The Commissar and your Sergeant."
+	supervisors = "The Planetary Governor and your Sergeant."
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
@@ -27,14 +27,14 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
+		to_chat(H, "<span class='notice'><b><font size=3>   You are apart of the Imperial Guard Squad stationed onto the planet Eipharius in the employ of the Planetary Governor. Your tasks may vary, to collecting taxes, building trenches or defending the outpost. Ensure the Governorship and Imperial Guard Squad survives. </font></b></span>")
 		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,8),rand(6,8),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. The Emperor Protects. </font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/igattack,
 		/mob/living/carbon/human/proc/igcanthold,
@@ -67,43 +67,31 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
-	cultist_chance = 20
+	cultist_chance = 25
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
-		H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(13,17), rand(13,17), rand(13,17), rand (8,14))
+		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.say(":v [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		if(can_be_in_squad)
-			H.assign_random_squad(IMPERIUM)
-		if(title == "Krieg Guardsman")
-			var/troopnum = rand(17,238459)
-			H.fully_replace_character_name("Guardsman [troopnum]")
-			H.implant_loyalty(src)
-		else H.fully_replace_character_name("Guardsman [H.real_name]")
+		H.fully_replace_character_name("Guardsman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-
 		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
-
 		if(title == "Krieg Guardsman")
-			H.add_skills(rand(7,10),rand(6,10),rand(3,6),rand(3,6),rand(1,3))
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
-					H.add_skills(rand(9,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(2,5),rand(1,5))
 				if(title == "Valhallan Ice Warrior")
-					H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
 /datum/job/ig/guardsman/imperial
@@ -145,8 +133,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Recruit"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -157,13 +145,13 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 30
+	cultist_chance = 35 // sir what is a heretic
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
-		H.add_skills(rand(6,9),rand(3,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,14))
+		H.add_skills(rand(5,7),rand(5,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -172,7 +160,7 @@
 		H.witchblood()
 		H.say(":v [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3> Whiteshields are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> You are a Whiteshield, an Imperial Guard recruit with little training. Follow the orders of anyone giving you orders. Try not to get executed. </font></b></span>")
 
 /datum/job/ig/whiteshield/Imperial
 	total_positions = 30
@@ -193,7 +181,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 8
-	cultist_chance = 20 //same chance as sniper now.
+	cultist_chance = 25 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
@@ -214,17 +202,18 @@
 		H.assign_random_quirk()
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()
-
-		to_chat(H, "<span class='notice'><b><font size=2>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=2> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
 
 		switch(title)
 			if("Cadian Plasma Gunner" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
+				if(title == "Cadian Plasma Gunner")
+					to_chat(H, "<span class='notice'><b><font size=2> You are from the tough planet Cadia. Trained in plasma weaponry, it will devastate any armored person it touches. It's ammo recharges in the gun, too!</font></b></span>")
 				if(title == "Catachan Flamer")
 					H.add_skills(rand(9,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
+					to_chat(H, "<span class='notice'><b><font size=2> You've trained on the jungle planet on Catachan with your trusty flamer. Burning any enemy to a crisp. Use your fire extinguisher if needed.</font></b></span>")
 				if(title == "Valhallan Heavy Autogunner")
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
+					to_chat(H, "<span class='notice'><b><font size=2> You are a Valhallan Specialist. Equipped with a heavy autogun and plenty of ammo. Suppress the enemy to keep their heads down! </font></b></span>")
 
 /datum/job/ig/guardsman/sharpshooter/imperial
 	total_positions = 8
@@ -322,15 +311,12 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("SharpShooter [H.real_name]")
+		H.fully_replace_character_name("Sniper [H.real_name]")
 		H.assign_random_quirk()
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()
-
-		to_chat(H, "<span class='notice'><b><font size=3>You are the specialised tool of your Regiment's Doctrine and of the Astra Militarum, using their preferred specialist weapon and unleashing havoc by landing decisive strikes upon the enemies of the Imperium with your extended training. Bring glory to your Regiment. The Emperor Protects. </font></b></span>")
-
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3> Obey your Sergeant and Commissar. The Emperor Protects </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a sharpshooter, the elite of the Imperial guard in long ranged warfare. Scout ahead with your superior range and warn your comrades of hostiles. </font></b></span>")
 
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
@@ -351,7 +337,7 @@
 
 /datum/job/ig/sergeant
 	title = "Sergeant"
-	supervisors = "The Rogue Trader."
+	supervisors = "The Planetary Governor"
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = FALSE
@@ -380,10 +366,12 @@
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
-		to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant of your Regiment, in service to the Imperium. Ensure the men from your Regiment, and perhaps othe regiments, are in order. Train them, ensure they know the capabilities of their equipment and proper knowledge of tactics in battle. Lead them well. The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant upon the planet of Eipharius, in service to the Imperium. Ensure the men are in order. Train them. Lead them well. The Emperor Protects. </font></b></span>")
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
+		H.set_quirk(new/datum/quirk/tough())
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":v Sgt reporting for duty!")
@@ -393,13 +381,8 @@
 
 		if(title == "Krieg Watchmaster")
 			H.set_quirk(new/datum/quirk/brave())
-			H.set_trait(new/datum/trait/death_tolerant())
-			var/troopnum = rand(1,50000)
-			H.fully_replace_character_name("Watchmaster [troopnum]")
 
 		if(title == "Cadian Sergeant")
-			H.set_quirk(new/datum/quirk/tough()) //these fuckers went through a lot, but i dont exactly feel like giving them brave.
-			H.set_trait(new/datum/trait/death_tolerant())
 
 			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
@@ -407,7 +390,7 @@
 					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))
 
 				if(title == "Cadian Sergeant")
-					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6)) //cadians and kriegers have more balanced skills than catachans or valhallans due to them being, well, pretty normal when compared with the other two
+					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
 
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
@@ -452,7 +435,6 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = FALSE
-	supervisors = "The Rogue Trader"
 	selection_color = "#33813A"
 	economic_modifier = 4
 	minimal_player_age = 18
@@ -480,7 +462,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
-		H.add_stats(rand(12,16), rand(12,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
+		H.add_stats(rand(11,16), rand(11,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
@@ -489,18 +471,12 @@
 		H.adjustStaminaLoss(-INFINITY)
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a combat medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
-
-/datum/job/ig/medicae/imperial
-	cultist_chance = 0
-	total_positions = 3
-	spawn_positions = 3
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
 // Commissar
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	supervisors = "the Rogue Trader and the Astartes."
 	total_positions = 0
 	spawn_positions = 0
 	head_position = 0
@@ -543,8 +519,6 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b>Congrats! You are a fully trained member of the Commissariat, you were sent on this planet a few years ago, since then you were a happy little fool who was happy that your first mission was helping to teach the local PDF what their job was, and to help recruit more PDF and Guardsmen, that was, until the trader bought the colony, now you work for the Rogue Trader! And you have a mixxed guardsman regiment at your fingertips! Oh also, be aware, the Rogue Trader can and will override any decision he deems foolish from you.</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role is a command role, in this position you have essentially control over the guardsmen, and be aware, you will be held at a higher RP standard and you will be punished if you metagame lateparties, execute friendly or imperial characters without good reason OR force everyone to dig trenches round start, this is a moderately peaceful town, besides all the heretic worshipping, that is... </font></b></span>")
 		H.verbs -= list(
 		/mob/living/carbon/human/proc/igattack,
 		/mob/living/carbon/human/proc/igcanthold,

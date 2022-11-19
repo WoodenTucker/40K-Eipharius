@@ -398,16 +398,16 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "civ"
 	//job_access_type = /datum/job/assistant
 /obj/item/card/id/civilian/bartender
-	job_access_type = /datum/job/bartender
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian/chef
-	job_access_type = /datum/job/chef
+	job_access_type = /datum/job/penitent
 /*
 /obj/item/card/id/civilian/botanist
 	job_access_type = /datum/job/hydro
 */
 /obj/item/card/id/civilian/janitor
-	job_access_type = /datum/job/janitor
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian/librarian
 	job_access_type = /datum/job/penitent
@@ -680,8 +680,13 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/key/grand/monastary
 	name = "Monastary Key"
-	desc = "Key to the Inner Sactum of His Holyness' Church and general areas."
-	access = list(access_monastary, access_advchapel)
+	desc = "Key to general areas of His Monastary"
+	access = list(access_advchapel)
+
+/obj/item/card/id/key/grand/monastary/inner
+	name = "Inner Sanctum Key"
+	desc = "Key to the Inner Sactum of His Holyness' Church."
+	access = list(access_monastary)
 
 /obj/item/card/id/key/grand/barentry
 	name = "Inn Key"

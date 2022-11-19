@@ -4,7 +4,7 @@
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
 	spawn_positions = INFINITY
-	supervisors = "The God Emperor."
+	supervisors = "Yourself"
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
@@ -23,7 +23,7 @@
 		H.get_idcard()?.access = list(access_village) // so they open all 211
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Pilgrim. You left your home with little in search of more. Rumors of a holy site drew you to this planet, Eipharius. and now life is in your hands. <br> <span class = 'badmood'> + Go to your pilgrim tab and select your fate. + </span> </font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/penitentclass,
 		)
@@ -49,7 +49,7 @@ Pilgrim Fate System
 	src.verbs -= list(/mob/living/carbon/human/proc/penitentclass)
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Rat Catcher", "Musician","Disgraced Medicae","Stalker","Scum","Miner", "Private Investigator", "Cleric")
+	var/fates = list("Merchant","Mercenary","Penitent","Sherpa","Rat Catcher", "Musician","Disgraced Medicae","Stalker","Scum")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -544,7 +544,7 @@ Pilgrim Fate System
 	total_positions = 3
 	spawn_positions = 3
 	open_when_dead = 0
-	supervisors = "Yourself"
+	supervisors = "Yourself and your fellow gangers"
 	selection_color = "#848484"
 	access = list(access_village, access_ganger, access_bar)
 	minimal_access = list(access_bar)
@@ -555,8 +555,8 @@ Pilgrim Fate System
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(15,17), rand(9,14), rand(13,15), rand (8,11)) //they suck and are supposed to suck
-		H.add_skills(rand(7,9),rand(6,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(15,17), rand(12,16), rand(13,15), rand (8,11))
+		H.add_skills(rand(7,9),rand(8,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()

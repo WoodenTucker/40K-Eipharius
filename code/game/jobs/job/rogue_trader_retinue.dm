@@ -9,7 +9,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "The Golden Throne and the High Lords of Terra"
+	supervisors = "Yourself."
 	selection_color = "#315dd4"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
@@ -32,7 +32,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord Trader [current_name]")
+		H.fully_replace_character_name("Rogue Trader [current_name]")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -41,7 +41,7 @@
 		H.warfare_faction = IMPERIUM
 		H.say(":v [title] reporting for duty!")
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the ruling lord of the old city of Messina and by proxy the ice-world of Eipharius -- having arrived in M41 923 exactly fifty years ago. By the golden writ signed by the High Lords of Terra, you have authorization to explore, colonize, and trade with near impunity. Your goals are far into the future, achievable with rejuvenate treatment that shall keep you alive long enough to see the tithe fleets arrive in a few decades time.  You anticipate the coming border wars with the navigator guilds, the uprisings of cults on this forsaken world and the dissent among your retinue as you ask for greater and greater sacrifice each passing year.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Rogue Trader, taking residence upon this world to gain power and prestige. You have your mercenaries. Your Veteran and your Xeno. Buy and sell well in your Bazaar. Overthrow the Governorship with or without the heir if the opportunity presents itself.</font></b></span>")
 
 
 /datum/job/captain/equip(var/mob/living/carbon/human/H)
@@ -68,31 +68,31 @@
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/kasrkin
 	alt_titles = list(
-		"Veteran Kasrkin" = /decl/hierarchy/outfit/job/kasrkin,
-		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion,
+		"Veteran Kasrkin" = /decl/hierarchy/outfit/job/kasrkin,/*
+		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion,*/
 
 		)
 	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
+	auto_rifle_skill = 10 // veteran
+	semi_rifle_skill = 10
+	sniper_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	smg_skill = 10
 	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(15,17), rand(16,18), rand(18,19), rand(10,15)) // Vessorine are the strongest, most formidable warriors in The Imperium. On the same level as Cadian Kasrkin.
+		H.add_stats(rand(15,17), rand(16,18), rand(18,19), rand(10,15))
 		H.add_skills(rand(13,14),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>Three concepts hold primacy in Vessorine clan society to the exclusion of nearly all else: property, warcraft, and currency. The scarcity of resources and rocky landscape of Vessor made the ownership of arable land and grazing beasts one of the most important aspects of their primitive society. The populace grouped into clans for increased security and resources, and though the leader of a clan holds the title of Clansire, the term refers neither to patrilineal nor matrilineal descent. From an early age, typically after First Bonding, both male and female children begin training as janissaries. They undergo training to enhance their strength, stamina, and agility, sometimes doing so with only the food and water they can find in the wilderness. They also learn the three primary Vessorine battle arts: open-hand, blade, and gun lore. By the time they participate in their first contract, an ascension ritual called Second Bonding, they are formidable warriors equal to any in the Imperium. In preparation for Second Bonding, janissaries receive their first repatriation tattoo, which declares the bond a clan will pay for the return of their soldier if captured.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary.</font></b></span>")
 
 /datum/job/xenomerc
 	title = "Xeno Mercenary"
@@ -117,7 +117,7 @@
 		H.witchblood()
 		H.stat = UNCONSCIOUS
 		H.sleeping = 500
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Xeno Mercenary hired by the Noble. Listen to their every command. In the absence of a Noble, the Janissary is to rule in their abscense.  <br> <span class = 'badmood'> + Go to your Mercenary tab and select your fate. + </span> </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Xeno Mercenary hired by the Rogue Trader. Listen to their every command.  <br> <span class = 'badmood'> + Go to your Mercenary tab and select your fate. + </span> </font></b></span>")
 		H.verbs += list(
 			/mob/living/carbon/human/proc/mercenaryclass,
 		)
