@@ -70,7 +70,7 @@
 	cost = 60
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Sister Hospitaller equipment"
-	access = access_sob
+	access = access_advchapel
 /*
 /decl/hierarchy/supply_pack/medical/doctorgear
 	name = "Medical Doctor equipment"

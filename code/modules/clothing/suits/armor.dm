@@ -307,6 +307,18 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS |ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/governor
+	name = "Planetary Governor's Mantle"
+	desc = "The extra, extra, extra large exotic mantle of the Governor of Eipharius. Custom tailor made for his superb frame. It is interwoven into his flesh and unremovable"
+	icon_state = "taxstomach"
+	item_state = "taxstomach"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 35, bullet = 45, laser = 45, energy = 30, bomb = 10, bio = 10, rad = 10)
+	canremove = 0
+	sales_price = 60
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/suit/armor/rtdrip
 	name = "Rogue Trader's Fancy Robes"
 	desc = "The stylish robes of a Rogue Trader"
@@ -327,6 +339,17 @@ obj/item/clothing/suit/armor
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 10, bio = 10, rad = 10)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | ARMS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/preacher
+	name = "Preacher's Gambeson"
+	desc = "The gambeson chosen by the fanatical Frateris, Preachers and Fanatics of the ecclesiarchy"
+	icon_state = "preacherarmor"
+	item_state = "preacherarmor"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 35, bullet = 25, laser = 20, energy = 30, bomb = 10, bio = 10, rad = 10)
+	sales_price = 30
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 //// PILGRIMS
@@ -564,7 +587,6 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	heat_protection = UPPER_TORSO|LOWER_TORSO
 /obj/item/clothing/suit/armor/flak/heavy/New()
-	..()
 	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/medicae
@@ -941,7 +963,6 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/sisterofbattle/mlsister
@@ -956,7 +977,6 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/New()
 	..()
@@ -974,25 +994,23 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/sisterofbattle/training
-	name = "Scholam Power Armor"
-	desc = "The Ancient and Deconsecrated Power Armour adorned by Scholam Progena during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, this suit mainly serves to acclimatize the Progena for Heavy Armour but is still formidable and has legible scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
+	name = "Novice Power Armor"
+	desc = "The Ancient and Deconsecrated Power Armour adorned by Novice Militants during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, and has scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 35, bullet = 40, laser = 30, energy = 30, bomb = 60, bio = 80, rad = 70)
+	armor = list(melee = 44, bullet = 40, laser = 40, energy = 30, bomb = 30, bio = 50, rad = 50)
 	sales_price = 40
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/training/New()
 	..()
@@ -1004,13 +1022,12 @@ obj/item/clothing/suit/armor
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 100, rad = 100) //people were getting it and just being a second SOB. so shit stats
+	armor = list(melee = 100, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 100, rad = 100) //people were getting it and just being a second SOB. so shit stats
 	sales_price = 140
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	canremove = 1
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
 	species_restricted = list(SPECIES_HUMAN)
 
@@ -1487,6 +1504,18 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/kasrkin
+	name = "Kasrkin Carapace"
+	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
+	icon_state = "kasrkinarmor"
+	item_state = "kasrkinarmor"
+	armor = list(melee = 58, bullet = 54, laser = 54, energy = 25, bomb = 40, bio = 40, rad = 40)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	sales_price = 40
 
 /obj/item/clothing/suit/armor/vessor
 	name = "Vessorine Carapace"

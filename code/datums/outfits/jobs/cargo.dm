@@ -31,23 +31,6 @@
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 1)
 
-/decl/hierarchy/outfit/job/cargo/janissary
-	name = OUTFIT_JOB_NAME("Vessorine Janissary")
-	uniform = /obj/item/clothing/under/rank/cargotech
-	suit = /obj/item/clothing/suit/armor/vessor
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	id_type = /obj/item/card/id/shared/cargo
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	back = /obj/item/storage/backpack/satchel/warfare
-	l_ear = /obj/item/device/radio/headset/red_team
-	l_hand = /obj/item/toy/katana/strong
-	suit_store = /obj/item/gun/energy/las/lasgun/rare
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/device/flashlight/lantern = 1,
-	/obj/item/stack/thrones3/ten = 1)
-
 /decl/hierarchy/outfit/job/cargo/cargo_tech
 	name = OUTFIT_JOB_NAME("Cargo technician")
 	uniform = /obj/item/clothing/under/rank/cargotech

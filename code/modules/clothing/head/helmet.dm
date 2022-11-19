@@ -61,6 +61,14 @@
 	siemens_coefficient = 0.6
 	sales_price = 8
 
+/obj/item/clothing/head/helmet/preacher
+	name = "tactical helmet"
+	desc = "A tan helmet made from advanced ceramic. Comfortable and robust."
+	icon_state = "helmet_tac"
+	armor = list(melee = 30, bullet = 30, laser = 20, energy = 25, bomb = 30, bio = 0, rad = 10)
+	siemens_coefficient = 0.6
+	sales_price = 8
+
 /obj/item/clothing/head/helmet/merc
 	name = "combat helmet"
 	desc = "A heavily reinforced helmet painted with red markings. Feels like it could take a lot of punishment."
@@ -181,6 +189,14 @@
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "helmetNVG"
 	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 0, rad = 10)
+	siemens_coefficient = 0.6
+	sales_price = 25
+
+/obj/item/clothing/head/helmet/kasrkin
+	name = "kasrkin helmet"
+	desc = "A carapace helmet belonging to the elite stormtroopers of the Kasrkin. Cadia may not be intact, but your brain will when in combat with this on."
+	icon_state = "kasrkinhelmet"
+	armor = list(melee = 40, bullet = 45, laser = 45, energy = 35, bomb = 50, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 	sales_price = 25
 

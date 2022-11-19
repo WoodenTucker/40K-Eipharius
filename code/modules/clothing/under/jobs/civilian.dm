@@ -35,8 +35,8 @@
 	worn_state = "captain"
 
 /obj/item/clothing/under/rank/roguetrader
-	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rank of \"Rogue Trader\"."
-	name = "Rogue Trader's jumpsuit"
+	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rankings of \"The Imperium's Chosen Few\"."
+	name = "Noble's jumpsuit"
 	icon_state = "magistrate"
 	item_state = "magistrate"
 	worn_state = "magistrate"

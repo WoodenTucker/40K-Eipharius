@@ -93,7 +93,7 @@
 
 /decl/hierarchy/outfit/job/abbess
 
-/decl/hierarchy/outfit/job/chaplain
+/decl/hierarchy/outfit/job/confessor
 	name = OUTFIT_JOB_NAME("Deacon")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -109,6 +109,30 @@
 	suit = /obj/item/clothing/suit/ministorumrobes
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = /obj/item/melee/whip/censer
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+		)
+
+/decl/hierarchy/outfit/job/preacher
+	name = OUTFIT_JOB_NAME("Preacher")
+	head = /obj/item/clothing/head/preacher
+	uniform = /obj/item/clothing/under/rank/chaplain
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/civilian/confessor
+	pda_type = null
+	pda_slot = null
+	l_ear = /obj/item/device/radio/headset/heads/cmo
+	r_ear = null
+	l_pocket = /obj/item/storage/box/ifak
+	belt = /obj/item/device/flashlight/lantern
+	back = /obj/item/storage/backpack/satchel/warfare
+	shoes = /obj/item/clothing/shoes/jackboots
+	suit = /obj/item/clothing/suit/armor/preacher
+	l_hand = /obj/item/staff/ministorumstaff
+	r_hand = null
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,

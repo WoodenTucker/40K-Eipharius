@@ -169,9 +169,9 @@
 	item_state = "claymore"
 	force = 25 //kinda heavy
 	force_wielded = 45
-	armor_penetration = 15
-	block_chance = 50
-	weapon_speed_delay = 9
+	armor_penetration = 35
+	block_chance = 25
+	weapon_speed_delay = 16
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_LARGE
 
@@ -183,7 +183,7 @@
 	force_wielded = 35
 	armor_penetration = 45
 	block_chance = 40 //not as quick as a machete, but still big enough to block attacks
-	weapon_speed_delay = 8
+	weapon_speed_delay = 12
 
 /obj/item/material/sword/machete
 	name = "iron machete"

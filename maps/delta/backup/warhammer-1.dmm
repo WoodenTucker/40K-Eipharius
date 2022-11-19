@@ -4223,7 +4223,6 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "tF" = (
 /obj/structure/bed/padded,
-/obj/effect/landmark/start/warden,
 /obj/effect/floor_decal/turf/checkers/two,
 /obj/structure/bed/padded,
 /obj/item/bedsheet/brown,

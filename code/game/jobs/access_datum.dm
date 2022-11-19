@@ -582,10 +582,11 @@
 	id = access_administratum
 	desc = "Administratum Doors"
 
-/var/const/access_sob = 213
+/var/const/access_advchapel = 213
 /datum/access/sob
-	id = access_sob
-	desc = "Adepta Sororitas Access" // used for certain places in the chapel so only the abbot and sobs can get in.
+	id = access_advchapel
+	desc = "Sanctified chapel Access" // used for certain places in the chapel so only the abbot and sobs can get in.
+
 
 // REWORKED ID AREA, NEW ACCESS
 

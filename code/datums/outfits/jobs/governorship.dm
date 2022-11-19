@@ -1,8 +1,8 @@
-/decl/hierarchy/outfit/job/captain
-	name = OUTFIT_JOB_NAME("Rogue Trader")
+/decl/hierarchy/outfit/job/governor
+	name = OUTFIT_JOB_NAME("Planetary Governor")
 	head = /obj/item/clothing/head/rt
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/rtcloak
+	suit = /obj/item/clothing/suit/armor/governor
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/rank/roguetrader
 	belt = /obj/item/gun/energy/las/laspistol/militarum/lord
@@ -20,7 +20,7 @@
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
-/decl/hierarchy/outfit/job/captain/post_equip(var/mob/living/carbon/human/H)
+/decl/hierarchy/outfit/job/governor/post_equip(var/mob/living/carbon/human/H)
 	..()
 	if(H.age>49)
 		// Since we can have something other than the default uniform at this
@@ -43,7 +43,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/toy/katana/strong
 	shoes = /obj/item/clothing/shoes/jackboots/noble
-	id_type = /obj/item/card/id/silver
+	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
@@ -52,7 +52,7 @@
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	 )
-
+/*
 /decl/hierarchy/outfit/job/hop
 	name = OUTFIT_JOB_NAME("Seneschal")
 	uniform = /obj/item/clothing/under/rank/seneschal
@@ -63,13 +63,13 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/gun/projectile/talon
 	shoes = /obj/item/clothing/shoes/jackboots/noble
-	id_type = /obj/item/card/id/silver
+	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/storage/box/ids = 1,
+	backpack_contents = list(
 	/obj/item/ammo_magazine/c45m = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,
-	 )
+	 )*/

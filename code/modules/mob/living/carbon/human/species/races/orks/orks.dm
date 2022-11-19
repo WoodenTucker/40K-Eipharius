@@ -7,8 +7,6 @@
 /datum/species/ork/nob
 	name = SPECIES_ORK_NOB
 	name_plural = "Ork Nobz"
-	icobase = 'icons/mob/human_races/r_ork.dmi'
-	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_VHIGH
 	mob_size = MOB_LARGE
 	brute_mod = 1.0
@@ -22,8 +20,6 @@
 /datum/species/ork/mek
 	name = SPECIES_ORK_MEK
 	name_plural = "Mekboyz"
-	icobase = 'icons/mob/human_races/r_ork.dmi'
-	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = STR_HIGH
 	total_health = 200
 	mob_size = MOB_MEDIUM
@@ -36,8 +32,6 @@
 
 /datum/species/ork/boss
 	name = SPECIES_ORK_BOSS
-	icobase = 'icons/mob/human_races/r_ork.dmi'
-	deform = 'icons/mob/human_races/r_def_ork.dmi'
 	strength = 30
 	mob_size = MOB_LARGE
 	brute_mod = 0.9

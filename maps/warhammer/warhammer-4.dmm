@@ -78,7 +78,7 @@
 "bR" = (/obj/effect/floor_decal/carpet/green{dir = 6},/obj/effect/floor_decal/carpet/green,/obj/effect/floor_decal/carpet/green{dir = 4},/obj/effect/floor_decal/carpet/green{dir = 6},/obj/structure/cable{icon_state = "1-8"},/obj/structure/cable{icon_state = "1-4"},/turf/simulated/floor/carpet/green,/area/cadiaoutpost/oa/bridge/meetingroom)
 "bS" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/structure/cable{icon_state = "1-2"},/obj/effect/floor_decal/newcorner/black/solid,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/bridge/hallway)
 "bT" = (/obj/structure/catwalk,/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating{color = "grey"},/area/cadiaoutpost/oa/hangar)
-"bU" = (/obj/effect/floor_decal/turf/brick,/obj/effect/landmark/start/envoy,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/bridge/offices/roguetrader)
+"bU" = (/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/bridge/offices/roguetrader)
 "bW" = (/obj/machinery/power/apc{dir = 4; icon_state = "apc0"; pixel_x = 32; pixel_y = 0},/obj/structure/cable{icon_state = "0-8"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/bridge/meetingroom)
 "bX" = (/obj/machinery/light,/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/bridge/meetingroom)
 "bY" = (/obj/effect/floor_decal/carpet/green,/obj/structure/cable{icon_state = "2-4"},/turf/simulated/floor/carpet/green,/area/cadiaoutpost/oa/bridge/meetingroom)

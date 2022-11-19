@@ -81,8 +81,8 @@
 
 /obj/effect/landmark/start
 	name = "start"
-	icon = 'icons/mob/screen1.dmi'
-	icon_state = "x"
+	icon = 'icons/obj/clothing/hats.dmi' // test. works. replace when got full body sprites for job landmarks
+	icon_state = "ricehat"
 	anchored = 1.0
 	invisibility = 101
 
@@ -108,121 +108,138 @@ Template:
 	name = ""
 */
 
+// Governorship //
 
-//Command//
-/obj/effect/landmark/start/captain
-	name = "Rouge Trader"
-/obj/effect/landmark/start/hop
-	name = "Seneschal"
+/obj/effect/landmark/start/governor
+	name = "Planetary Governor"
+	icon_state = "obard"
+/obj/effect/landmark/start/governor/heir
+	name = "Heir"
+/obj/effect/landmark/start/governor/servant
+	name = "Servant"
 
-/obj/effect/landmark/start/hop/cult
-	name = "Cult Leader"
-/obj/effect/landmark/start/hos
-	name = "Commissar"
-/obj/effect/landmark/start/rd
-	name = "Research Director"
-/obj/effect/landmark/start/chief_engineer
-	name = "Magos Dominus"
-/obj/effect/landmark/start/cmo
-	name = "Almoness Advance"
-/obj/effect/landmark/start/inquisitor
-	name = "Inquisitor"
-/obj/effect/landmark/start/envoy
-	name = "Astartes Envoy"
-/obj/effect/landmark/start/envoy/imperial // imperial is used for the watchman tdm map!
-	name = "Astartes Envoy"
-/obj/effect/landmark/start/envoy/watchman
-	name = "Chaos Astartes"
+// Inquisition and Enforcers
 
-//Science//
-/obj/effect/landmark/start/geneticist
-	name = "Magos Biologis"
-/obj/effect/landmark/start/scientist
-	name = "Tenchotrainee"
-/obj/effect/landmark/start/xenobiologist
-	name = "Magos Xenologist"
-/obj/effect/landmark/start/roboticist
-	name = "Cybernetica Acolyte"
+/obj/effect/landmark/start/inqmagi
+	name = "Interrogator"
+	icon_state = "Jhelm2"
 
-//Medical//
-/obj/effect/landmark/start/medical_doctor
-	name = "Combat Medicae"
-/obj/effect/landmark/start/chemist
-	name = "Chemist"
-/obj/effect/landmark/start/paramedic
-	name = "Paramedic"
+/obj/effect/landmark/start/inqmagi/arbitrator
+	name = "Arbitrator"
 
-//Security//
-
-/obj/effect/landmark/start/detective
-	name = "Inspector"
-/obj/effect/landmark/start/warden
-	name = "Sergeant"
-
-/obj/effect/landmark/start/warden/watchman
-	name = "Cultist Sergeant"
-/obj/effect/landmark/start/enforcer
+/obj/effect/landmark/start/inqmagi/enforcer
 	name = "Enforcer"
-/obj/effect/landmark/start/ig
-	name = "Imperial Guardsman"
 
-/obj/effect/landmark/start/ig/watchman
-	name = "Cultist Guardsman"
+/obj/effect/landmark/start/inqmagi/enforcercadet
+	name = "Enforcer Cadet"
 
-/obj/effect/landmark/start/sharpshooter
-	name = "Imperial Guard Specialist"
 
-/obj/effect/landmark/start/ig/sniper
+// Imperial Guard/ Astra Militarum//
+
+/obj/effect/landmark/start/imperialguard
+	name = "Sergeant"
+	icon_state = "guardold"
+
+/obj/effect/landmark/start/imperialguard/sniper
 	name = "Imperial Guard Sniper"
 
-/obj/effect/landmark/start/ig/sharpshooter/watchman
-	name = "Cultist Specialist"
+/obj/effect/landmark/start/imperialguard/specialist
+	name = "Imperial Guard Specialist"
+
+/obj/effect/landmark/start/imperialguard/medicae
+	name = "Imperial Guard Combat Medicae"
+
+/obj/effect/landmark/start/imperialguard/guard
+	name = "Imperial Guardsman"
+
+/obj/effect/landmark/start/imperialguard/recruit
+	name = "Imperial Recruit"
 
 
+//Trader Retinue //
+/obj/effect/landmark/start/roguetrader
+	name = "Rogue Trader"
+	icon_state = "fancyhat"
 
-//Engineering//
+/obj/effect/landmark/start/roguetrader/vetmerc
+	name = "Veteran Merc"
+/obj/effect/landmark/start/roguetrader/xenomerc
+	name = "Xeno Merc"
 
-/obj/effect/landmark/start/engineer
+
+// Adeptus Mechanicus //
+
+/obj/effect/landmark/start/mechanicus
+	name = "Magos Explorator"
+	icon_state = "void"
+
+/obj/effect/landmark/start/mechanicus/biologis
+	name = "Magos Biologis"
+
+/obj/effect/landmark/start/mechanicus/techpriest
 	name = "Tech Priest Enginseer"
 
-/obj/effect/landmark/start/engineer/watchman
-	name = "Dark Mechanicum Heretek"
-
-/obj/effect/landmark/start/explorer
-	name = "Magos Explorator"
-
-/obj/effect/landmark/start/techmenial
+/obj/effect/landmark/start/mechanicus/techmenial
 	name = "Tech Menial"
 
+// Ministorum //
+
+/obj/effect/landmark/start/ministorum
+	name = "Confessor"
+	icon_state = "hereticushat"
+
+/obj/effect/landmark/start/ministorum/sistersuperior
+	name = "Sister Superior"
+
+/obj/effect/landmark/start/ministorum/hospitaller
+	name = "Sister Hospitaller"
+
+/obj/effect/landmark/start/ministorum/novice
+	name = "Novice"
+
+/obj/effect/landmark/start/ministorum/preacher
+	name = "Preacher"
+
+// Village scum //
+
+/obj/effect/landmark/start/village
+	name = "Pilgrim"
+	icon_state = "skullopen"
+
+/obj/effect/landmark/start/village/innkeeper
+	name = "Innkeeper"
+
+/obj/effect/landmark/start/village/bouncer
+	name = "Bouncer"
+
+/obj/effect/landmark/start/village/ganger
+	name = "Ganger"
+
+/obj/effect/landmark/start/village/pathfinder
+	name = "Pathfinder"
+
+// Removed Content due to low pop. Just admin spawn them yeeeeeesh.//
+/obj/effect/landmark/start/admin
+	name = "Inquisitor"
+	icon_state = "crownOLD"
+
+/obj/effect/landmark/start/admin/dominus
+	name = "Magos Dominus"
+/obj/effect/landmark/start/admin/astartes
+	name = "Astartes Envoy"
 
 
 
-//Supply//
+// watchman tdm culties //
+/obj/effect/landmark/start/watchman
+	name = "Cultist Sergeant"
+	icon_state = "hood2"
 
-/obj/effect/landmark/start/cargo
-	name = "Munitorum Menial"
-/obj/effect/landmark/start/qm
-	name = "Munitorum Tribunus"
-/obj/effect/landmark/start/shaft_miner
-	name = "Munitorum Explorator"
+/obj/effect/landmark/start/watchman/guardsman
+	name = "Cultist Guardsman"
 
-//Service//
-/obj/effect/landmark/start/botanic
-	name = "Farmer"
-/obj/effect/landmark/start/bartender
-	name = "Bar Servitor"
-/obj/effect/landmark/start/chef
-	name = "Cook"
-/obj/effect/landmark/start/chaplain
-	name = "Chaplain"
-/obj/effect/landmark/start/janitor
-	name = "Janitor Servitor"
-/obj/effect/landmark/start/librarian
-	name = "Record Keeper"
-
-//Pilgrims//
-/obj/effect/landmark/start/assistant
-	name = "Assistant"
+/obj/effect/landmark/start/watchman/specialist
+	name = "Cultist Specialist"
 
 
 
