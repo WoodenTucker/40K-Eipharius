@@ -14,8 +14,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	supervisors = "The Golden Throne and the High Lords of Terra"
 	selection_color = "#540c97"
 	req_admin_notify = 1
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_acce ss()
+	access = list(20) 			//See get_access()
+	minimal_access = list(20) 	//See get_acce ss()
 	minimal_player_age = 65
 	economic_modifier = 20
 	announced = TRUE

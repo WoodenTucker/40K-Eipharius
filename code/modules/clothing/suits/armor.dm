@@ -957,7 +957,6 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 
 /obj/item/clothing/suit/sisterofbattle/mlsister
@@ -972,7 +971,6 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/New()
 	..()
@@ -990,25 +988,23 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/sisterofbattle/training
-	name = "Scholam Power Armor"
-	desc = "The Ancient and Deconsecrated Power Armour adorned by Scholam Progena during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, this suit mainly serves to acclimatize the Progena for Heavy Armour but is still formidable and has legible scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
+	name = "Novice Power Armor"
+	desc = "The Ancient and Deconsecrated Power Armour adorned by Novice Militants during their training in Eipharius' Monastarium. Stripped of almost all iconography and with damaged plating, and has scriptures across it's surface speaking of The Beatie and her crusade across the Sabbat worlds."
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 44, bullet = 40, laser = 40, energy = 50, bomb = 60, bio = 80, rad = 70)
+	armor = list(melee = 44, bullet = 40, laser = 40, energy = 30, bomb = 30, bio = 50, rad = 50)
 	sales_price = 40
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
-	canremove = 1
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/training/New()
 	..()
@@ -1020,13 +1016,12 @@ obj/item/clothing/suit/armor
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "ooml"
 	item_state = "ooml"
-	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 100, rad = 100) //people were getting it and just being a second SOB. so shit stats
+	armor = list(melee = 100, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 100, rad = 100) //people were getting it and just being a second SOB. so shit stats
 	sales_price = 140
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
-	canremove = 1
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
 	species_restricted = list(SPECIES_HUMAN)
 
