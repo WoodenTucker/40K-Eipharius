@@ -89,7 +89,7 @@
 	compliment_increase = 0
 	insult_drop = 0
 
-	possible_trading_items = list(/obj/item/gun/projectile/pirate                = TRADER_THIS_TYPE,
+	possible_trading_items = list(
 								/obj/item/gun/projectile/sec/MK                  = TRADER_THIS_TYPE,
 								/obj/item/gun/projectile/silenced/cheap          = TRADER_THIS_TYPE,
 								/obj/item/gun/projectile/heavysniper/ant         = TRADER_THIS_TYPE,

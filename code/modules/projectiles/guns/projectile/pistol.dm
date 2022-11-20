@@ -274,7 +274,7 @@
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "silencer"
 	w_class = ITEM_SIZE_SMALL
-
+/*
 /obj/item/gun/projectile/pirate
 	name = "zip gun"
 	desc = "Little more than a barrel, handle, and firing mechanism, cheap makeshift firearms like this one are not uncommon in frontier systems."
@@ -362,7 +362,7 @@
 		return
 	else
 		..()
-
+*/
 /obj/item/gun/projectile/ork/slugga
 	name = "slugga"
 	desc = "Da classic 'ard 'itting pistal of da slugga boyz. For boyz who wantz to git in noice and klose with der choppa afta! Load'd wid da .75 caliba boolets innit."
