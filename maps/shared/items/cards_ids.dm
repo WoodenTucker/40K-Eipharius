@@ -6,11 +6,11 @@
 	icon_state = "gold"
 	job_access_type = /datum/job/captain
 
-
+/* steward
 /obj/item/card/id/shared/hop
 	icon_state = "id_hop"
 	job_access_type = /datum/job/hop
-
+*/
 
 /obj/item/card/id/shared/engineer
 	icon_state = "id_engie"

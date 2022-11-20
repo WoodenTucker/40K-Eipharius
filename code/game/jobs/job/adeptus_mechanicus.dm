@@ -7,7 +7,7 @@
 	total_positions = 0
 	spawn_positions = 0
 	open_when_dead = 0
-	supervisors = "the Adeptus Mechanicus and the Omnissiah."
+	supervisors = "The Adeptus Mechanicus and the Omnissiah."
 	selection_color = "#FF3A3A"
 	req_admin_notify = 1
 	economic_modifier = 20
@@ -78,7 +78,7 @@
 		..()
 		H.fully_replace_character_name("Tech-Priest [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
-		H.add_stats(rand(15,18), rand(15,18), rand(12,20), rand(14,20)) //idk what to do with Magos xd
+		H.add_stats(rand(12,15), rand(11,14), rand(11,15), rand(14,20))
 		H.add_skills(rand(6,8),rand(4,8),rand(5,6),rand(7,10),rand(5,7)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
@@ -89,16 +89,7 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
 		H.say(":e [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus. Obey your Explorator and Biologis and remember, your primary duty is to ensure that all machine spirits are pleased and secure technology.</font></b></span>")
-
-/datum/job/engineer/imperial
-
-	supervisors = "You obey the Rogue Trader and House Noble."
-	cultist_chance = 0
-
-/datum/job/engineer/watchman
-	title = "Dark Mechanicum Heretek"
-	supervisors = "You obey the Ruinous powers and the Chaos Astartes"
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus.  Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. Lead Skitarii if needed.</font></b></span>")
 
 /datum/job/techmenial
 	title = "Tech-Menial"
@@ -130,14 +121,14 @@
 		..()
 		H.fully_replace_character_name("Tech-Menial [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //no nose + psycho
-		H.add_stats(rand(14,16), rand(13,16), rand(11,17), rand(12,16)) //worse than tech priest
+		H.add_stats(rand(11,14), rand(11,13), rand(11,14), rand(12,17)) // worse than tech priest
 		H.add_skills(rand(4,6),rand(3,6),rand(4,5),rand(6,8),rand(4,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
 		H.say(":e [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Tech-Menial, a ever grateful servant of the Omnissiah, you have been blessed with the privilege of serving upon the Soul of Reason and the Tech-Priests aboard. You are inexperienced and learning. Ensure to learn much. Perhaps you will be promoted, if your efforts are high.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving upon the Ark Cruiser, The Soul of Reason and the Tech-Priests aboard. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
 
 // Biologis
 
@@ -152,7 +143,7 @@
 	minimal_player_age = 7
 	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus and the Omnissiah."
-	selection_color = "#FF3A3A"
+	selection_color = "#d82424"
 	economic_modifier = 7
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
@@ -173,7 +164,7 @@
 		..()
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
-		H.add_stats(rand(15,18), rand(15,18), rand(18,20), rand(20,30)) //just as modified as the magos, if not more.
+		H.add_stats(rand(13,18), rand(13,18), rand(14,17), rand(20,30)) //just as modified as the magos, if not more.
 		H.add_skills(rand(7,10),rand(7,10),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
@@ -185,7 +176,7 @@
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
 		H.vice = null //off for now
 		H.say(":e [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Biologis, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. You are a expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. You are an expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 //Walker here, why the fuck does this even exist? all Genetors research aliens, thats like, their speciality, who added this in? im not going to remove it for now but, idk why its here.
@@ -218,7 +209,7 @@
 	minimal_player_age = 7
 	open_when_dead = 0
 	supervisors = "the Adeptus Mechanicus and the Omnissiah."
-	selection_color = "#FF3A3A"
+	selection_color = "#d82424"
 	req_admin_notify = 1
 	economic_modifier = 7
 	latejoin_at_spawnpoints = TRUE
@@ -251,7 +242,7 @@
 		H.vice = null //off for now
 		H.say(":e [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Magos Explorator, your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Explorator, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. Your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 //Skitarii

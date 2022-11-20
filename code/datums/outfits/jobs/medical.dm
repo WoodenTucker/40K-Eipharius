@@ -51,7 +51,7 @@
 		/obj/item/gun/energy/las/laspistol = 1,
 		/obj/item/cell/lasgun = 2,
 		/obj/item/stack/thrones3/five = 1,)
-
+/* // sisterhood chemist
 /decl/hierarchy/outfit/job/medical/chemist
 	name = OUTFIT_JOB_NAME("Alchemist")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
@@ -69,8 +69,7 @@
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
 		/obj/item/stack/thrones3/five = 1,)
-
-
+*/
 // biologis
 
 /decl/hierarchy/outfit/job/medical/biologis

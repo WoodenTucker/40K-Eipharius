@@ -438,16 +438,16 @@
 	var/list/jobcats = list(  // This is designed for warfare, in a warfare-less environment, this will need to be changed ~ nah a lil fiddling makes it work fine for others :)
 		"Team Red"=list("color"="#b27676", "jobs"=list()),
 		"Team Blue"=list("color"="#76abb2", "jobs"=list()),
-		"Command"=list("color"="#76abb2", "jobs"=list()),
-		"Imperial Guard"=list("color"="#b27676", "jobs"=list()),
-		"Village"=list("color"="#ff0bebea", "jobs"=list()),
-		"Adeptus Mechanicus"=list("color"="#f03e08", "jobs"=list()),
-		"Outpost Medical Staff"=list("color"="#76abb2", "jobs"=list()),
-		"Supply"=list("color"="#76abb2", "jobs"=list()),
+		"Governorship"=list("color"="#6220a0", "jobs"=list()),
+		"Imperial Guard"=list("color"="#33813A", "jobs"=list()),
+		"Village"=list("color"="#848484", "jobs"=list()),
+		"Adeptus Mechanicus"=list("color"="#d82424", "jobs"=list()),
+		"Ministorum"=list("color"="#FCFBFA", "jobs"=list()),
+		"Rogue Trader Retinue"=list("color"="#315dd4", "jobs"=list()),
 		"Outpost Support Staff"=list("color"="#76abb2", "jobs"=list()),
-		"Inquisition"=list("color"="#fd0707", "jobs"=list()),
-		"Village"=list("color"="#ff0bebea", "jobs"=list()),
-		"Misc"=list("color"="Grey", "jobs"=list()),
+		"Inquisition/Magisterium"=list("color"="#b4821c", "jobs"=list()),
+		"Village"=list("color"="#848484", "jobs"=list()),
+		"Misc"=list("color"="#76abb2", "jobs"=list()),
 		)
 
 	for(var/datum/job/job in SSjobs.occupations)
@@ -459,19 +459,19 @@
 		else if(job.is_red_team)
 			jobcats["Team Red"]["jobs"] += job
 		else if(job.department_flag & COM)
-			jobcats["Command"]["jobs"] += job
+			jobcats["Governorship"]["jobs"] += job
 		else if(job.department_flag & SEC)
 			jobcats["Imperial Guard"]["jobs"] += job
 		else if(job.department_flag & ENG)
 			jobcats["Adeptus Mechanicus"]["jobs"] += job
 		else if(job.department_flag & MED)
-			jobcats["Outpost Medical Staff"]["jobs"] += job
+			jobcats["Ministorum"]["jobs"] += job
 		else if(job.department_flag & SUP)
 			jobcats["Adeptus Mechanicus"]["jobs"] += job
 		else if(job.department_flag & CIV)
-			jobcats["Outpost Support Staff"]["jobs"] += job
+			jobcats["Rogue Trader Retinue"]["jobs"] += job
 		else if(job.department_flag & INQ)
-			jobcats["Inquisition"]["jobs"] += job
+			jobcats["Inquisition/Magisterium"]["jobs"] += job
 		else if(job.department_flag & PIL)
 			jobcats["Village"]["jobs"] += job
 		else

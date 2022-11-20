@@ -39,12 +39,12 @@
 		return
 
 	if (istype(M, /mob/living/simple_animal/hostile/smalldemon))
-		M.gib
+		M.gib()
 		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
 		return
 
 	if (istype(M, /mob/living/simple_animal/playerdaemonhost))
-		M.gib
+		M.gib()
 		to_chat(user, "<span class='danger'>You banish the Daemon!</span>")
 		return
 	..()

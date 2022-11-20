@@ -274,7 +274,7 @@
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "silencer"
 	w_class = ITEM_SIZE_SMALL
-
+/*
 /obj/item/gun/projectile/pirate
 	name = "zip gun"
 	desc = "Little more than a barrel, handle, and firing mechanism, cheap makeshift firearms like this one are not uncommon in frontier systems."
@@ -362,7 +362,7 @@
 		return
 	else
 		..()
-
+*/
 /obj/item/gun/projectile/ork/slugga
 	name = "slugga"
 	desc = "Da classic 'ard 'itting pistal of da slugga boyz. For boyz who wantz to git in noice and klose with der choppa afta! Load'd wid da .75 caliba boolets innit."
@@ -535,7 +535,7 @@
 		icon_state = "shuriken_pistol-e"
 
 
-
+/*
 /obj/item/gun/projectile/exituspistol
 	name = "Exitus pistol"
 	desc = "The Exitus Pistol is an Imperial pistol and a signature weapon of the Vindicare Temple of the Officio Assassinorum. Like its cousin the Exitus Rifle, it is a masterpiece of Adeptus Mechanicus engineering and is custom-built for the requirements of the individual assassin. The Pistol is largely a backup weapon for the Exitus Rifle and is used in the rare circumstances the assassin is discovered, cornered, or in need of rapid-fire weaponry. With a built-in silencer and capable of penetrating most armor with ease, it is has saved the lives of many Vindicare Assassins."
@@ -562,3 +562,4 @@
 		icon_state = "tacpistol"
 	else
 		icon_state = "tacpistol-e"
+*/

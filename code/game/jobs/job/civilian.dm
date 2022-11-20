@@ -44,7 +44,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
 // Cook
-
+/*
 /datum/job/chef
 	title = "Cook"
 	department = "Service"
@@ -211,3 +211,4 @@
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
 		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Deacon you owe him your life. However, you must earn your keep. </font></b></span>")
+*/

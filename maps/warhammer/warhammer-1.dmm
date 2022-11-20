@@ -314,7 +314,7 @@
 "tB" = (/obj/structure/table/steel,/obj/machinery/microwave{color = "grey"; name = "futuristic cooking device"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
 "tC" = (/obj/machinery/atmospherics/unary/heater,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
 "tD" = (/obj/structure/barricade{color = "grey"},/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves)
-"tF" = (/obj/structure/bed/padded,/obj/effect/landmark/start/warden,/obj/effect/floor_decal/turf/checkers/two,/obj/structure/bed/padded,/obj/item/bedsheet/brown,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"tF" = (/obj/structure/bed/padded,/obj/effect/floor_decal/turf/checkers/two,/obj/structure/bed/padded,/obj/item/bedsheet/brown,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "tH" = (/obj/effect/floor_decal/turf/surgery2,/obj/structure/bed/roller{color = "grey"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
 "tJ" = (/obj/structure/girder,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/plating,/area/cadiaoutpost/oa/hallway/centralhall)
 "tK" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/magistratumpost)

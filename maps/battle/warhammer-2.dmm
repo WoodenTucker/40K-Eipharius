@@ -2349,7 +2349,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "gm" = (
-/obj/effect/landmark/start/warden,
 /obj/structure/defensive_barrier/fixed{
 	dir = 1
 	},
@@ -3839,7 +3838,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "ke" = (
-/obj/effect/landmark/start/ig,
+
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},

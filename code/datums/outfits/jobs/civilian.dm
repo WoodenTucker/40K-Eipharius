@@ -91,11 +91,11 @@
 	pda_type = null
 	pda_slot = null
 
-/decl/hierarchy/outfit/job/chaplain
+/decl/hierarchy/outfit/job/confessor // move to ministorum dm
 	name = OUTFIT_JOB_NAME("Ministorum Confessor")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/civilian/chaplain
+	id_type = /obj/item/card/id/civilian/confessor
 	pda_type = null
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/heads/cmo

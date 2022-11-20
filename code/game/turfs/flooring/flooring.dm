@@ -120,6 +120,10 @@ var/list/flooring_types
 	build_type = /obj/item/stack/tile/floor
 	can_paint = 1
 
+/decl/flooring/tiling/stone
+	icon_base = "stone"
+
+
 /decl/flooring/tiling/mono
 	icon_base = "monotile"
 

@@ -300,7 +300,6 @@
 				/obj/item/gun/projectile/sec = 4,
 				/obj/item/gun/projectile/sec/wood = 3,
 				/obj/item/gun/projectile/pistol = 4,
-				/obj/item/gun/projectile/pirate = 5,
 				/obj/item/gun/projectile/revolver = 2,
 				/obj/item/gun/projectile/automatic/wt550 = 3,
 				/obj/item/gun/projectile/revolver/detective = 4,

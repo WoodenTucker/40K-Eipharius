@@ -1,41 +1,41 @@
-// Rogue Trader
+// Governor
 
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
-/datum/job/captain
-	title = "Rogue Trader"
-	department = "Rogue Trader"
+/datum/job/governor
+	title = "Planetary Governor"
+	department = "Planetary Governor"
 	head_position = 1
 	department_flag = COM|CIV
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "The Golden Throne and the High Lords of Terra"
-	selection_color = "#3e0177"
+	supervisors = "The Golden Throne and the High Lords of Terra."
+	selection_color = "#540c97"
 	req_admin_notify = 1
-	access = list() 			//See get_access()
-	minimal_access = list() 	//See get_access()
-	minimal_player_age = 25
+	access = list(20) 			//See get_access()
+	minimal_access = list(20) 	//See get_acce ss()
+	minimal_player_age = 65
 	economic_modifier = 20
-	announced = FALSE
+	announced = TRUE
 	latejoin_at_spawnpoints = TRUE
 
-	ideal_character_age = 40
-	outfit_type = /decl/hierarchy/outfit/job/captain
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
-	cultist_chance = 50 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
+	ideal_character_age = 120
+	outfit_type = /decl/hierarchy/outfit/job/governor
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
+	sniper_skill = 7
+	shotgun_skill = 7
+	lmg_skill = 7
+	smg_skill = 7
+	cultist_chance = 75 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord Trader [current_name]")
+		H.fully_replace_character_name("Governor [current_name]")
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -44,15 +44,9 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_faction = IMPERIUM
 		H.say(":v [title] reporting for duty!")
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the ruling lord of the old city of Messina and by proxy the ice-world of Eipharius -- having arrived in M41 923 exactly fifty years ago. By the golden writ signed by the High Lords of Terra, you have authorization to explore, colonize, and trade with near impunity. Your goals are far into the future, achievable with rejuvenate treatment that shall keep you alive long enough to see the tithe fleets arrive in a few decades time.  You anticipate the coming border wars with the navigator guilds, the uprisings of cults on this forsaken world and the dissent among your retinue as you ask for greater and greater sacrifice each passing year.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> The head honcho of Eipharius, ensure the tithe goes to Holy Terra. You own the Imperial Guard Squad stationed on the planet, as well as the Enforcers of the Magisterium. Hopefully they do the noble family’s bidding. Bathe in the riches of your privilege. Make sure that the inquisition doesn’t find out about any less than legal dealings you do. </font></b></span>")
 
-
-/datum/job/captain/equip(var/mob/living/carbon/human/H)
-	. = ..()
-	if(.)
-		H.implant_loyalty(src)
-
-/datum/job/captain/get_access()
+/datum/job/governor/get_access()
 	return get_all_station_access()
 
 /datum/job/heir
@@ -63,8 +57,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Your Lord. If you so desire..."
-	selection_color = "#3e0177"
+	supervisors = "Yourself. Make sure you get that inheritance..."
+	selection_color = "#6220a0"
 	req_admin_notify = 1
 	minimal_player_age = 25
 	economic_modifier = 10
@@ -77,21 +71,21 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 30 // lots of delicacies growing up
+	cultist_chance = 50 // lots of delicacies growing up
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Lord [current_name]")
-		H.add_stats(rand(13,16), rand(13,16), rand(13,15), rand(13,17)) //
-		H.add_skills(rand(6,10),rand(6,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(10,16), rand(10,16), rand(13,15), rand(13,17)) //
+		H.add_skills(rand(5,10),rand(5,10),rand(1,8),rand(1,8),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the heir to the Lord Trader, born within the City of Messina this world is all you know and you been prepared over your young life to succeed your Lord and one day rule this planet. Despite all they have given you, an entire planet to lead -- there are pressures from benefactors close to the Trader that encourage his death so that you may take the mantle from them.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are still young. Orders probably won’t be taken seriously. The next in line to the throne of Eipharius. Waiting simply takes too long. Why not have the Governor simply… fall down some stairs? Make sure the Enforcers and Inquisition don’t get suspicious and have a stable rise to the throne.</font></b></span>")
 
 
 	access = list(access_security, access_guard_common, access_magi,
@@ -110,8 +104,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	outfit_type = /decl/hierarchy/outfit/job/heir
 
 
-// Seneschal
-
+// Seneschal/steward removed until we need it due to pop
+/*
 /datum/job/hop
 	title = "Steward"
 	head_position = 1
@@ -165,14 +159,14 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
-
+*/
 /datum/job/servant
 	title = "Servant"
-	department_flag = PIL
+	department_flag = COM
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Lord Trader"
-	selection_color = "#3e0177"
+	supervisors = "The Governor and Heir"
+	selection_color = "#6220a0"
 	economic_modifier = 5
 	social_class = SOCIAL_CLASS_MED
 	announced = 0
@@ -212,11 +206,11 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":v [title] reporting for duty!")
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Lord Trader to whom you owe your life, having been in service to their family for generations of your line you are the last surviving member of your family, you may of served them for many decades or have been recently been inducted into the house out of your own  free will. Regardless you are their property now.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a servant in direct service to the Governorship, having been in service to their family for generations. They own you. Change that. If you want.</font></b></span>")
 
 
 /mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))
-	set category = "Rogue Trader"
+	set category = "Planetary Governor"
 	set name = "Hire Mercenary"
 	set desc = "Finally! Some recognition!"
 	if(!client)
@@ -260,78 +254,9 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			src.say("Welcome to my service.")
 		else
 			return
-/datum/job/mercenary
-	title = "Xeno Mercenary"
-	department_flag = PIL
-	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "The Noble Estate."
-	selection_color = "#3e0177"
-	latejoin_at_spawnpoints = TRUE
-	announced = FALSE
-	cultist_chance = 0
 
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11))
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
-		H.assign_random_quirk()
-		H.witchblood()
-		H.stat = UNCONSCIOUS
-		H.sleeping = 500
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Xeno Mercenary hired by the Noble. Listen to their every command. In the absence of a Noble, the Janissary is to rule in their abscense.  <br> <span class = 'badmood'> + Go to your Mercenary tab and select your fate. + </span> </font></b></span>")
-		H.verbs += list(
-			/mob/living/carbon/human/proc/mercenaryclass,
-		)
-
-
+// TDM OPFOR bad xeno, removed for now
 /*
-Mercenary System
-*/
-
-/mob/living/carbon/human/proc/mercenaryclass()
-	set name = "Select your class"
-	set category = "Mercenary"
-	set desc = "Choose your species and job."
-	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
-		return
-	if(src.stat == DEAD)
-		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
-		return
-
-	var/mob/living/carbon/human/U = src
-	var/fates = list("Kroot Shaper", "Ork Freeboota", "Eldar Corsair")
-
-
-	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
-
-
-	switch(classchoice)
-		if("Kroot Shaper")
-			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
-			new_character.key = usr.key //puts ghost in body with new key
-			visible_message("You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.")
-			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
-			qdel(src)
-		if("Ork Freeboota")
-			var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
-			new_character.key = usr.key //puts ghost in body with new key
-			visible_message("You wake up after a long flight to find yourself in Imperial space.")
-			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
-			qdel(src)
-		if("Eldar Corsair")
-			var/mob/living/carbon/human/eldar/corsair/new_character = new(usr.loc) // da mob
-			new_character.key = usr.key //puts ghost in body with new key
-			visible_message("You wake up after a long flight to find yourself in Imperial space.")
-			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
-			qdel(src)
-
-// TDM OPFOR bad guy
 /datum/job/mercenary/watchman
 	title = "Xeno Combatant"
 	department_flag = SRV
@@ -363,3 +288,4 @@ Mercenary System
 			/mob/living/carbon/human/proc/mercenaryclass,
 		)
 
+*/

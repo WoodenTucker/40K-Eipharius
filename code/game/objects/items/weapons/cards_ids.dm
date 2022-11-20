@@ -235,7 +235,7 @@ var/const/NO_EMAG_ACT = -50
 	desc = "A silver card which shows honour and dedication."
 	icon_state = "silver"
 	item_state = "silver_id"
-	job_access_type = /datum/job/hop
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/gold
 	name = "golden writ"
@@ -308,15 +308,15 @@ var/const/NO_EMAG_ACT = -50
 	..()
 
 // Department-flavor IDs
-/obj/item/card/id/medical
+/obj/item/card/id/medical // hospitaller
 	name = "identification card"
 	desc = "A card issued to medical staff."
 	icon_state = "med"
-	job_access_type = /datum/job/doctor
-
+	job_access_type = /datum/job/hospitaller
+/*
 /obj/item/card/id/medical/chemist
 	job_access_type = /datum/job/chemist
-
+*/
 /obj/item/card/id/medical/biologis
 	job_access_type = /datum/job/biologis
 
@@ -384,13 +384,13 @@ var/const/NO_EMAG_ACT = -50
 	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo/mining
-	job_access_type = /datum/job/mining
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/cargo/head
 	name = "identification card"
 	desc = "A card which represents service and planning."
 	icon_state = "cargoGold"
-	job_access_type = /datum/job/qm
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian
 	name = "identification card"
@@ -398,19 +398,19 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "civ"
 	//job_access_type = /datum/job/assistant
 /obj/item/card/id/civilian/bartender
-	job_access_type = /datum/job/bartender
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian/chef
-	job_access_type = /datum/job/chef
+	job_access_type = /datum/job/penitent
 /*
 /obj/item/card/id/civilian/botanist
 	job_access_type = /datum/job/hydro
 */
 /obj/item/card/id/civilian/janitor
-	job_access_type = /datum/job/janitor
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian/librarian
-	job_access_type = /datum/job/librarian
+	job_access_type = /datum/job/penitent
 
 /obj/item/card/id/civilian/internal_affairs_agent
 	job_access_type = /datum/job/inquisitor
@@ -426,8 +426,8 @@ var/const/NO_EMAG_ACT = -50
 		final_name = final_name + " ([assignment])"
 	SetName(final_name)
 
-/obj/item/card/id/civilian/chaplain
-	job_access_type = /datum/job/chaplain
+/obj/item/card/id/civilian/confessor
+	job_access_type = /datum/job/confessor
 
 /obj/item/card/id/pilgrim/penitent
 	access = list(access_village)
@@ -680,7 +680,12 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/key/grand/monastary
 	name = "Monastary Key"
-	desc = "Key to the Inner Sactum of His Holyness' Church"
+	desc = "Key to general areas of His Monastary"
+	access = list(access_advchapel)
+
+/obj/item/card/id/key/grand/monastary/inner
+	name = "Inner Sanctum Key"
+	desc = "Key to the Inner Sactum of His Holyness' Church."
 	access = list(access_monastary)
 
 /obj/item/card/id/key/grand/barentry

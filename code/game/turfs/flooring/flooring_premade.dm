@@ -146,6 +146,13 @@
 	icon_state = "steel"
 	initial_flooring = /decl/flooring/tiling
 
+/turf/simulated/floor/tiled/stone
+	name = "stone tiled floor"
+	icon = 'icons/turf/flooring/tiles.dmi'
+	icon_state = "stone"
+	color = "#808080"
+	initial_flooring = /decl/flooring/tiling/stone
+
 /turf/simulated/floor/carpet
 	name = "brown carpet"
 	icon = 'icons/turf/flooring/carpet.dmi'

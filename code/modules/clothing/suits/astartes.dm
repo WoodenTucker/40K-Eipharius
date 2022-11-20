@@ -21,6 +21,8 @@
 
 // SPESS MUUHREEN TACTICOOL
 
+
+
 /obj/item/clothing/suit/armor/astartes/bloodangel
 	name = "Astartes Mark VII Power Armour"
 	desc = "The Holy armour of the sons of the Sanguinius, This one bears the symbol of his position, Tactical Marine of the IXth Chapter, Blood Angels."
@@ -40,10 +42,16 @@
 	item_state = "salsuit"
 
 /obj/item/clothing/suit/armor/astartes/ultramarine
-	name = "Astartes Mark VII Power Armour"
+	name = "Indomitus Pattern Terminator Power Armor"
 	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
 	icon_state = "ultrasuit"
 	item_state = "ultrasuit"
+
+/obj/item/clothing/suit/armor/astartes/ultramarine/terminator
+	name = "Astartes Mark VII Power Armour"
+	desc = "The Holy armour of the Emperor's chosen, This one bears the symbol of his position, Tactical Marine of the XIIIth Chapter, Ultramarines."
+	icon_state = "ultraterm"
+	item_state = "ultraterm"
 
 // SPESS MUUHREEN SIRGENT
 
