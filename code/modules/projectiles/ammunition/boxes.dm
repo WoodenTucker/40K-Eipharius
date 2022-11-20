@@ -610,7 +610,7 @@
 	ammo_type = /obj/item/ammo_casing/radcarbine/radpistol
 	max_ammo = 10
 	multiple_sprites = 0
-
+/*
 /obj/item/ammo_magazine/exitus
 	name = "Exitus Rifle Magazine"
 	icon_state = "tinyersatz"
@@ -655,3 +655,4 @@
 	max_ammo = 5
 	multiple_sprites = 1
 
+*/

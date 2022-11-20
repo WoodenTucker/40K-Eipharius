@@ -79,11 +79,11 @@
 /mob/living/carbon/human/Stat()
 	. = ..()
 	if(statpanel("Status"))
-		if(iswarfare())
+	//if(iswarfare())
 			//stat("[BLUE_TEAM] reinforcements:", SSwarfare.blue.left)
 			//stat("[BLUE_TEAM] capture points:", SSwarfare.blue.points)
 			//stat("[RED_TEAM] reinforcements:", SSwarfare.red.left)
-			//stat("[RED_TEAM] capture points:", SSwarfare.red.points)
+			//stat("[RED_TEAM] capture points:", SSwarfare.red.points)*/
 
 /*
 			if(warfare_faction == RED_TEAM)

@@ -378,20 +378,17 @@
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 
-
-		if(title == "Krieg Watchmaster")
-			H.set_quirk(new/datum/quirk/brave())
-
-		if(title == "Cadian Sergeant")
-
-			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
-			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
+		switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
+			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))
 
 				if(title == "Cadian Sergeant")
 					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
 
+				if(title == "Cadian Sergeant")
+					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
+					H.set_quirk(new/datum/quirk/brave())
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
