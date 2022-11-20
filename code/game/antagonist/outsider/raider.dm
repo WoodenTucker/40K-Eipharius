@@ -89,7 +89,6 @@ var/datum/antagonist/raider/raiders
 		/obj/item/gun/projectile/sec,
 		/obj/item/gun/projectile/pistol,
 		/obj/item/gun/projectile/revolver,
-		/obj/item/gun/projectile/pirate
 		)
 
 	var/list/raider_holster = list(
@@ -240,7 +239,7 @@ var/datum/antagonist/raider/raiders
 
 	//Give some of the raiders a pirate gun as a secondary
 	if(prob(60))
-		var/obj/item/secondary = new /obj/item/gun/projectile/pirate(T)
+		var/obj/item/secondary = new /obj/item/gun/projectile/bolter_pistol(T)
 		if(!(primary.slot_flags & SLOT_HOLSTER))
 			holster = new new_holster(T)
 			holster.holstered = secondary
