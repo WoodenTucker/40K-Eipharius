@@ -129,7 +129,7 @@ Mercenary System
 
 /mob/living/carbon/human/proc/mercenaryclass()
 	set name = "Select your class"
-	set category = "Mercenary"
+	set category = "Xeno Mercenary"
 	set desc = "Choose your species and job."
 	if(!ishuman(src))
 		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
@@ -138,7 +138,6 @@ Mercenary System
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 
-	var/mob/living/carbon/human/U = src
 	var/fates = list("Kroot Shaper", "Ork Freeboota", "Eldar Corsair")
 
 

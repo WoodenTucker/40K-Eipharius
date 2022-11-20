@@ -561,7 +561,7 @@
 	damage = 60 //believe me, this is kinda of balanced.
 	pellets = 12
 	range_step = 2 //not sure what these two mean, but lets go with it!
-	spread_step = 4 
+	spread_step = 4
 	range = 6 //short range
 
 
@@ -661,7 +661,7 @@
 	icon_state = "bullet"
 	damage = 25 //Admin only spawn for now.
 	damage_type = BRUTE
-
+/* // commented until no more errors
 /obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
 	if(istype(target, /mob/living/carbon/human))
 	var/mob/living/carbon/human/M = target
@@ -685,3 +685,4 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
+*/
