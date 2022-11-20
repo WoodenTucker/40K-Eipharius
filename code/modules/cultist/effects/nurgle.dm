@@ -55,7 +55,6 @@
 	if(staminaloss >= staminaexhaust / 2)
 		return FALSE
 	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
-	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
 	adjustOxyLoss(-1)
 	adjustToxLoss(-1)
 	adjustBruteLoss(-4)

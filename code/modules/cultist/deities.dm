@@ -43,7 +43,10 @@
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
 						/datum/rune_recipe/nurgle/toughen,
-						/datum/rune_recipe/nurgle/nganga)
+						/datum/rune_recipe/nurgle/nganga,
+						/datum/rune_recipe/nurgle/uniform,
+						/datum/rune_recipe/nurgle/plate,
+						/datum/rune_recipe/nurgle/mask)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
 			/mob/living/carbon/human/proc/draw_rune)

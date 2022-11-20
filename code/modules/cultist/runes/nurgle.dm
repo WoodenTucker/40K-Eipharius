@@ -1,6 +1,6 @@
 /datum/rune_recipe/nurgle/deathtolerance
 	name = "Death Tolerance Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/reagent_containers/food/snacks/poo)
+	ingredients = list(/obj/item/reagent_containers/food/snacks/poo)
 	effect_path = /datum/heretic_effect/deathtolerant
 
 /datum/rune_recipe/nurgle/conversion
@@ -22,5 +22,20 @@
 
 /datum/rune_recipe/nurgle/nganga
 	name = "Nganga Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/external/head)
+	ingredients = list(/obj/item/reagent_containers/food/snacks/meat/rat_meat, /obj/item/organ/external/head)
 	product_path = /obj/structure/nganga
+
+/datum/rune_recipe/nurgle/uniform
+	name = "Uniform Rite"
+	ingredients = list(/obj/item/clothing/under/guard/uniform)
+	product_path = /obj/item/clothing/under/guard/renegadeuniform
+
+/datum/rune_recipe/nurgle/plate
+	name = "Plate Rite"
+	ingredients = list(/obj/item/stack/material/cloth/ten)
+	product_path = /obj/item/clothing/suit/armor/flak1/renegadearmor
+
+/datum/rune_recipe/nurgle/mask
+	name = "Mask Rite"
+	ingredients = list(/obj/item/clothing/mask/gas)
+	product_path = /obj/item/clothing/head/helmet/culthelm/gas
