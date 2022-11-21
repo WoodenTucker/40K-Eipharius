@@ -225,7 +225,7 @@
 	icon_state = "pulse1"
 	damage = 115
 	armor_penetration = 65
-//	agony = 0 
+//	agony = 0
 //	stun = 5
 
 
@@ -246,16 +246,6 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 70
-	armor_penetration = 65
-	light_power = 4
-	light_color = "#2132cf"
-
-	/obj/item/projectile/energy/pulse/plasmapistol/astartes
-	name = "plasma round"
-	fire_sound='sound/weapons/marauder.ogg'
-	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "pulse1_bl"
-	damage = 95
 	armor_penetration = 65
 	light_power = 4
 	light_color = "#2132cf"

@@ -596,7 +596,7 @@
 "Lj" = (/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/effect/decal/cleanable/dirt,/obj/effect/floor_decal/newcorner/plating,/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/surgery2,/turf/simulated/floor/plating,/area/cadiaoutpost/oa/service/chapel)
 "Lm" = (/obj/structure/grille{color = "grey"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves/undercity)
 "Lo" = (/obj/structure/table/rack,/obj/item/storage/toolbox/emergency,/obj/item/storage/toolbox/emergency,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/plating,/area/cadiaoutpost/oa/hallway/centralhall)
-"Lr" = (/obj/structure/table/rack/dark,/obj/item/wrench,/obj/effect/floor_decal/turf/checkers/two,/obj/item/gun/energy/las/boarding,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wrench,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
+"Lr" = (/obj/structure/table/rack/dark,/obj/item/wrench,/obj/effect/floor_decal/turf/checkers/two,/obj/item/crowbar,/obj/item/crowbar,/obj/item/wrench,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "Lu" = (/obj/effect/floor_decal/turf/plating,/obj/structure/table/rack/dark,/obj/item/target/alien,/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
 "Lw" = (/obj/structure/sign/art/blindfolds{pixel_y = 30},/obj/effect/floor_decal/turf/splate,/turf/simulated/floor/tiled/dark{icon_state = "steel"},/area/cadiaoutpost/oa/security)
 "Lx" = (/obj/machinery/door/airlock/gold{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/caves/dark)

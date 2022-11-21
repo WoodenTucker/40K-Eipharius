@@ -6,30 +6,16 @@
 	cost = 78
 	item_path = /obj/item/gun/energy/las/lasgun
 
-/datum/cargo_entry/weapon/lasguntinker
-	name = "Tinkered Kantrael Lasgun"
-	cost = 88
-	item_path = /obj/item/gun/energy/las/lasgun/tinkered
 
 /datum/cargo_entry/weapon/luclas
 	name = "Lucius Lasgun"
 	cost = 88
 	item_path = /obj/item/gun/energy/las/lasgun/lucius
 
-/datum/cargo_entry/weapon/luclastinker
-	name = "Tinkered Lucius Lasgun"
-	cost = 98
-	item_path = /obj/item/gun/energy/las/lasgun/lucius/tinkered
-
 /datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
 	cost = 98
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
-
-/datum/cargo_entry/weapon/catbinetinker
-	name = "Tinkered Catachan Carbine"
-	cost = 108
-	item_path = /obj/item/gun/energy/las/lasgun/tinkered/catachan
 
 /datum/cargo_entry/weapon/longlas
 	name = "M35 Longlas"

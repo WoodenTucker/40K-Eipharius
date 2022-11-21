@@ -1,3 +1,4 @@
+/*
 /obj/item/gun/energy/gun/nuclear
 	name = "advanced energy gun"
 	desc = "An energy gun with an experimental miniaturized reactor."
@@ -67,3 +68,4 @@
 	name = "mounted energy gun"
 	self_recharge = 1
 	use_external_power = 1
+*/
