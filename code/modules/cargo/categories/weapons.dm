@@ -6,11 +6,6 @@
 	cost = 78
 	item_path = /obj/item/gun/energy/las/lasgun
 
-/datum/cargo_entry/weapon/mlasgun
-	name = "Masterwork Kantrael Lasgun"
-	cost = 92
-	item_path = /obj/item/gun/energy/las/lasgun/rare
-
 /datum/cargo_entry/weapon/lasguntinker
 	name = "Tinkered Kantrael Lasgun"
 	cost = 88
