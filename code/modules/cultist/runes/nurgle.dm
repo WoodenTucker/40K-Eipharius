@@ -22,7 +22,7 @@
 
 /datum/rune_recipe/nurgle/nganga
 	name = "Nganga Rite"
-	ingredients = list(/obj/item/reagent_containers/food/snacks/meat/rat_meat, /obj/item/organ/external/head)
+	ingredients = list(/obj/item/reagent_containers/food/snacks/meat/rat_meat)
 	product_path = /obj/structure/nganga
 
 /datum/rune_recipe/nurgle/uniform
@@ -32,7 +32,7 @@
 
 /datum/rune_recipe/nurgle/plate
 	name = "Plate Rite"
-	ingredients = list(/obj/item/stack/material/cloth/ten)
+	ingredients = list(/obj/item/stack/material/cloth)
 	product_path = /obj/item/clothing/suit/armor/flak1/renegadearmor
 
 /datum/rune_recipe/nurgle/mask
