@@ -23,6 +23,7 @@ Astartes
 	blood_volume = 700 // how much blood an Astartes has
 	slowdown = -0.8 //Increased move speed
 	eye_icon = "eyes_s"
+	staminaexhaust = 35000
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 350 // a normal human has 200 brain health, Astartes have 350 //P.S this is brain health
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
