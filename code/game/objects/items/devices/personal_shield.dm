@@ -37,9 +37,59 @@
 	QDEL_NULL(shield)
 	return ..()
 
-/obj/item/rosarius // time for some mapper code. i have made 4 iterations of this, it has taken me all day today and at this point i have entered fuck it mode. this is the shield. can be made better later. we're in alpha. die. -plinypotter | 1 hour later and i can't make it work for fuck all, so it's just an item now, attribute it to its old age
+/obj/item/rosarius/broken 
 	name = "ecclesiarchal rosarius"
 	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology and an icon of the Imperial Creed, being near such an ancient and powerful thing brings great joy to those who are faithful. This one looks particularly old and non-functional."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "rosarius"
 	w_class = ITEM_SIZE_SMALL
+
+/obj/item/clothing/rosarius
+	name = "ecclesiarchal rosarius"
+	desc = "A handheld amulet which incorporates a powerful force field generator. A rare and highly prized piece of technology and an icon of the Imperial Creed, being near such an ancient and powerful thing brings great joy to those who are faithful."
+	icon = 'icons/obj/device.dmi'
+	icon_state = "rosarius"
+	w_class = ITEM_SIZE_SMALL
+	slot_flags = SLOT_TIE
+
+var/shield_count = 0
+
+/obj/item/clothing/rosarius/Initialize()
+	. = ..()
+
+
+/obj/item/clothing/rosarius/handle_shield(mob/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
+	if(istype(damage_source, /obj/item/projectile))
+		if(shield_count >= 0)
+			var/obj/item/projectile/P = damage_source
+			//var/reflectchance = 100 //Defined here, for if you want to make it have X percent chance of blocking the shot,
+			var/datum/effect/effect/system/spark_spread/spark_system = new /datum/effect/effect/system/spark_spread()
+			spark_system.set_up(5, 0, user.loc)
+			spark_system.start()
+			playsound(user.loc, "sparks", 50, 1)
+			user.visible_message("<span class='danger'>[user]'s Rosarius deflecst [attack_text] in a shower of sparks!</span>")
+			shield_count -= 1
+			START_PROCESSING(SSobj, src)
+			del(P)
+		else
+			user.visible_message("<span class='warning'>[user]'s Rosarius overloads!</span>")
+			user.update_inv_wear_suit()
+		return 1
+	return 0
+
+
+/obj/item/clothing/rosarius/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/clothing/rosarius/Process()
+	if(shield_count < 3) //Set this to whatever you want the max number of charges to be.
+		sleep(60) //Timer in between recharge.
+		shield_count += 1
+		playsound(loc, 'sound/effects/compbeep1.ogg', 50, TRUE)
+	if(shield_count  == 3) //Whatever the max charge is, this plays the sound.
+		playsound(loc, 'sound/machines/ding.ogg', 50, TRUE)
+		STOP_PROCESSING(SSobj, src)
+		if(ishuman(loc))
+			var/mob/living/carbon/human/C = loc
+			C.update_inv_wear_suit()
