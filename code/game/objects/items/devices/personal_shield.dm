@@ -52,8 +52,6 @@
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_TIE
 
-var/shield_count = 0
-
 /obj/item/clothing/rosarius/Initialize()
 	. = ..()
 
@@ -138,7 +136,7 @@ var/shield_count = 0
 		src.add_fingerprint(user)
 	return
 
-/obj/item/clothing/accessory/displacer/emp_act(severity)
+/obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
 	active = 0
 	to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
 	spark_system.set_up(5, 0, user.loc)
