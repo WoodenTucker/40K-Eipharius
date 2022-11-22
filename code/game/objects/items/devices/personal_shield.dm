@@ -139,8 +139,8 @@ var/shield_count = 0
 /obj/item/clothing/accessory/displacer/emp_act(severity)
 	active = 0
 	to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
-		var/list/turfs = new/list()
-		for(var/turf/T in orange(30, user))
+		list/turfs = new/list()
+		for(turf/T in orange(30, user))
 			if(istype(T,/turf/space)) continue
 			if(T.density) continue
 			if(T.x>world.maxx-30 || T.x<30)	continue
