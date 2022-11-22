@@ -128,6 +128,7 @@ var/shield_count = 0
 		user.loc = picked
 		return PROJECTILE_FORCE_MISS
 	return 0
+
 /obj/item/clothing/accessory/displacer/attack_self(mob/user as mob)
 	src.active = !( src.active )
 	if (src.active)
@@ -136,25 +137,25 @@ var/shield_count = 0
 		to_chat(user, "<span class='notice'>The displacer field is now inactive.</span>")
 		src.add_fingerprint(user)
 	return
+
 /obj/item/clothing/accessory/displacer/emp_act(severity)
 	active = 0
-	if(prob(95))
-		to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
-			list/turfs = new/list()
-			for(turf/T in orange(30, user))
-				if(istype(T,/turf/space)) continue
-				if(T.density) continue
-				if(T.x>world.maxx-30 || T.x<30)	continue
-				if(T.y>world.maxy-30 || T.y<30)	continue
-				turfs += T
-			if(!turfs.len) turfs += pick(/turf in orange(30))
-			var/turf/picked = pick(turfs)
-			if(!isturf(picked)) return
-			spark_system.set_up(5, 0, user.loc)
-			spark_system.start()
-			playsound(user.loc, "sparks", 50, 1)
-			user.loc = picked
-			user.apply_effect(20, EYE_BLUR)
-			user.apply_effect(20, WEAKEN)
-			user.apply_damage(60, PAIN, def_zone, blocked)
-	return 1
+	to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
+		list/turfs = new/list()
+		for(T in orange(30, user))
+			if(istype(T,/turf/space)) continue
+			if(T.density) continue
+			if(T.x>world.maxx-30 || T.x<30)	continue
+			if(T.y>world.maxy-30 || T.y<30)	continue
+			turfs += T
+		if(!turfs.len) turfs += pick(/turf in orange(30))
+		turf/picked = pick(turfs)
+		if(!isturf(picked)) return
+		spark_system.set_up(5, 0, user.loc)
+		spark_system.start()
+		playsound(user.loc, "sparks", 50, 1)
+		user.loc = picked
+		user.apply_effect(20, EYE_BLUR)
+		user.apply_effect(20, WEAKEN)
+		user.apply_damage(60, PAIN, def_zone, blocked)
+	..()
