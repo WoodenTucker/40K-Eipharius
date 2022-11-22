@@ -5,11 +5,11 @@
 
 /datum/heretic_effect/painless/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.species.species_flags |= SPECIES_FLAG_NO_PAIN
+	user.species.species_flags += SPECIES_FLAG_NO_PAIN
 
 /datum/heretic_effect/painless/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.species.species_flags &= SPECIES_FLAG_NO_PAIN
+	user.species.species_flags -= SPECIES_FLAG_NO_PAIN
 
 /datum/heretic_effect/deathtolerant
 	name = "Death Tolerance"
