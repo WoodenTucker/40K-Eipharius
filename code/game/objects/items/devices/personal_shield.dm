@@ -136,7 +136,7 @@
 		src.add_fingerprint(user)
 	return
 
-/obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
+/*/obj/item/clothing/accessory/displacer/emp_act(mob/user, severity)
 	active = 0
 	to_chat(user, "<span class='danger'>The displacer field malfunctions, throwing you carelessly through the Warp!.</span>")
 	spark_system.set_up(5, 0, user.loc)
@@ -146,4 +146,4 @@
 	user.apply_effect(20, EYE_BLUR)
 	user.apply_effect(20, WEAKEN)
 	user.apply_damage(60, PAIN, def_zone, blocked)
-	..()
+	..()*/ //WIP
