@@ -73,7 +73,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_hand = /obj/item/toy/katana/strong
-	suit_store = /obj/item/gun/energy/las/lasgun/rare
+	suit_store = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2/five = 1,

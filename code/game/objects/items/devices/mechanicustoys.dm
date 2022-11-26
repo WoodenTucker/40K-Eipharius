@@ -33,7 +33,7 @@
 
 
 /obj/item/device/allenwrench/attackby(var/obj/item/gun/energy/las/lasgun/O, var/mob/user) //lets tech goys modify lasguns to full auto
-	if(istype(O,/obj/item/gun/energy/las/lasgun/tinkered))
+	if(istype(O,/obj/item/gun/energy/las/lasgun)) // tinker soon
 		to_chat(user, "<span class='warning'>[O] has already been upgraded!</span>")
 		return 1
 	else if (!(istype(O, /obj/item/gun/energy/las/lasgun)))
@@ -41,7 +41,7 @@
 		return 1
 	else if(prob(25))
 		qdel(O)
-		new /obj/item/gun/energy/las/lasgun/tinkered (get_turf(src))
+		new /obj/item/gun/energy/las/lasgun (get_turf(src)) // tinker soon
 		playsound(loc, 'sound/items/Ratchet.ogg', 70, 1)
 		visible_message("[O] is nimbly upgraded by skilled servant of the Omnissiah.")
 	else
@@ -257,8 +257,8 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You call upon the machine spirit of the narthecium to give you it's integrated fixovein supply.")
 		usr.put_in_hands(new /obj/item/FixOVein/narthecium(usr))
 		src.is_toggled = 2
-		
-		
+
+
 /obj/item/FixOVein/narthecium
 	name = "Intergrated FixOVein"
 	desc = "A small yet incredibly powerful regenerative device, able to regenerate small fragile tissue, however, its pretty slow at it, so most people still prefer the suture."
@@ -280,8 +280,8 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You pressing the bonegel dispenser button on your narthecium, before noticing it doesn't work, instead, it opens a small hole with a bone gel thingy.")
 		usr.put_in_hands(new /obj/item/bonegel/narthecium(usr))
 		src.is_toggled = 2
-		
-		
+
+
 /obj/item/bonegel/narthecium
 	name = "Bone Gel Dispenser"
 	desc = "A dispenser linked to a small tube in the gloves, you don't know how, but it seems to have infinite juice, also, the bone dispenser is duct taped to the tube."
@@ -304,8 +304,8 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You activate the integrated bone setting features of the narthecium, its painful and dizzying for a moment, but you feel more concentrated as a bone setter is seemingly materialized in your hands.")
 		usr.put_in_hands(new /obj/item/bonesetter/narthecium(usr))
 		src.is_toggled = 2
-		
-		
+
+
 /obj/item/bonesetter/narthecium
 	name = "Intergrated Bone Setter"
 	desc = "A integrated bone setter with the stability and precision of a servo skull, works well for setting bones and stuff!"
@@ -327,14 +327,14 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You grab the duct taped scalpel on the narthecium.")
 		usr.put_in_hands(new /obj/item/scalpel/narthecium(usr))
 		src.is_toggled = 2
-	
+
 /obj/item/scalpel/narthecium
 	name = "Duct Taped Scalpel"
 	desc = "You aren't sure who, but someone ductaped a scalpel to these gloves, its worse for proper medicine than the IMS, although more accurate."
 /obj/item/scalpel/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
-	
+
 
 /obj/item/clothing/gloves/thick/narthecium/verb/togglecauterey()
 	set name = "Activate Cautery"
@@ -350,7 +350,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You activate and pull out a servo cautery from the holy narthecium.")
 		usr.put_in_hands(new /obj/item/cautery/narthecium(usr))
 		src.is_toggled = 2
-		
+
 /obj/item/cautery/narthecium
 	name = "Servo-Cautery"
 	desc = "A red cautery which seems to be faster at closing wounds than normal cauteries, but maybe you just feel that way because its red?"
@@ -372,7 +372,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You pull out servo hemostats from your narthecium and prepare to activate them.")
 		usr.put_in_hands(new /obj/item/hemostat/narthecium(usr))
 		src.is_toggled = 2
-		
+
 /obj/item/hemostat/narthecium
 	name = "Servo-Hemostat"
 	desc = "Hm, this hemostat holds some bleeding closed just like a normal hemostat, But! it holds the bleeding FOR you! sparing some of your energy of your oh so delicate surgeon hands."
@@ -395,7 +395,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You SEIZE the retractor on your narthecium from it's duct tape restraints.")
 		usr.put_in_hands(new /obj/item/retractor/narthecium(usr))
 		src.is_toggled = 2
-		
+
 /obj/item/retractor/narthecium
 	name = "Duct Taped Retractor"
 	desc = "Again, why is this duct taped to such a wonderous piece of tech if the IMS already exists?"
@@ -419,7 +419,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You activate the integrated incision management systems from your gloves, preparing them to start a incision.")
 		usr.put_in_hands(new /obj/item/scalpel/manager/narthecium(usr))
 		src.is_toggled = 2
-		
+
 /obj/item/scalpel/manager/narthecium
 	name = "Integrated Incision Management System"
 	desc = "A beatiful piece of tech made with the strongest holy oils of mars and some of the most holy incenses of the ecclesiarchy! Or so they have told you."
@@ -474,6 +474,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/gun/projectile/automatic/flamer/mounted/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
 
 
 

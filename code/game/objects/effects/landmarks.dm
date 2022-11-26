@@ -447,13 +447,9 @@ Template:
 
 /obj/random/loot/lightlasgun/spawn_choices()
 	return list(/obj/item/gun/energy/las/lasgun = 12,
-				/obj/item/gun/energy/las/lasgun/rare = 6,
 				/obj/item/gun/energy/las/lasgun/lucius = 9,
-				/obj/item/gun/energy/las/lasgun/lucius/tinkered = 4,
 				/obj/item/gun/energy/las/laspistol/militarum = 3,
-				/obj/item/gun/energy/las/lasgun/tinkered = 2,
-				/obj/item/gun/energy/las/lasgun/catachan = 4,
-				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 2)
+				/obj/item/gun/energy/las/lasgun/catachan = 4,)
 
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
@@ -557,11 +553,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun/lucius/tinkered = 4,
-				/obj/item/gun/energy/las/lasgun/rare = 3,
-				/obj/item/gun/energy/las/lasgun/tinkered/catachan = 4,
-				/obj/item/gun/energy/las/lasgun/tinkered = 2,
-				/obj/item/gun/energy/las/lasgun/longlas = 2,
+	return list(/obj/item/gun/energy/las/lasgun/longlas = 2,
 				/obj/item/gun/energy/las/lasgun/longlas/krieg = 1,
 				/obj/item/gun/projectile/slugrevolver = 1,
 				/obj/item/gun/projectile/revolver/mateba = 2,
