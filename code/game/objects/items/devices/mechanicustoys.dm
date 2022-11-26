@@ -478,6 +478,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 
 
 
+
 /obj/item/gun/energy/bolter_mounted_heavy
 	str_requirement = 0 //Mounted weapon
 	w_class = ITEM_SIZE_HUGE
