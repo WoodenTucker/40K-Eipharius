@@ -221,22 +221,6 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun // starts with /small but can also use any /lasgun as well. do not change
 	ammoType = /obj/item/cell/lasgun/small
 
-/obj/item/gun/energy/las/lasgun/rare
-	name = "Masterwork Kantrael M36 Lasgun"
-	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has modified heatsink and rearranged crystal assembly."
-	force = 15
-	one_hand_penalty = 1.2
-	charge_cost = 80
-	fire_delay = 2.3
-	move_delay = 2.5
-	sales_price = 35
-
-	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
-		list(mode_name="overcharge",       burst=1, fire_delay = 3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=150),
-		)
-
 /obj/item/gun/energy/las/lasgun/lucius
 	name = "Lucius No.98 Lasgun"
 	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat."
@@ -708,4 +692,21 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=60),
 		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=115),
 		)
+
+/obj/item/gun/energy/las/lasgun/rare
+	name = "Masterwork Kantrael M36 Lasgun"
+	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its low cost and reliability. This variant has modified heatsink and rearranged crystal assembly."
+	force = 15
+	one_hand_penalty = 1.2
+	charge_cost = 80
+	fire_delay = 2.3
+	move_delay = 2.5
+	sales_price = 35
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=80),
+		list(mode_name="overcharge",       burst=1, fire_delay = 3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=150),
+		)
+
 */
