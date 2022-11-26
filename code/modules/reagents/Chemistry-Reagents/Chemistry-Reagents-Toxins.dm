@@ -751,8 +751,8 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 				burnlist = replacetext(burnlist,"arms,","")
 			if (C.body_parts_covered & HANDS)
 				burnlist = replacetext(burnlist,"hands,","")
-		var/list/burnparts = splittext(burnlist, ",")
-//		world.log << "[burnparts]"
+		/*var/list/burnparts = splittext(burnlist, ",")
+	world.log << "[burnparts]"*/
 
 /datum/reagent/proc/internal_damage(var/mob/living/carbon/human/m, var/severity = TRUE) // damage things like lungs
 	if (mask_check(m)) return

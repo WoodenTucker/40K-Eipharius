@@ -2551,7 +2551,6 @@
 #include "maps\delta\warhammer_areas.dm"
 #include "maps\delta\warhammer_define.dm"
 #include "maps\delta\warhammer_shuttles.dm"
-#include "maps\delta\warhammer_unit_testing.dm"
 #include "maps\delta\warhammer-1.dmm"
 #include "maps\delta\warhammer-2.dmm"
 #include "maps\delta\warhammer-3.dmm"

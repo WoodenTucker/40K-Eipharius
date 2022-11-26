@@ -86,6 +86,7 @@
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
+			H.fully_replace_character_name("Guardsman [rand(1,100000)]")
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
@@ -322,6 +323,7 @@
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
 				if(title == "Krieg Marksman")
 					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
+					H.fully_replace_character_name("Marksman [rand(1,100000)]")
 				if(title == "Valhallan Scout Sniper")
 					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
@@ -378,20 +380,18 @@
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 
-
-		if(title == "Krieg Watchmaster")
-			H.set_quirk(new/datum/quirk/brave())
-
-		if(title == "Cadian Sergeant")
-
-			switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
-			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant")
+		switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
+			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))
 
 				if(title == "Cadian Sergeant")
 					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
 
+				if(title == "Krieg Watchmaster")
+					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
+					H.set_quirk(new/datum/quirk/brave())
+					H.fully_replace_character_name("Watchmaster [rand(1,100000)]")
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
