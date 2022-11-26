@@ -153,3 +153,46 @@
 		chambered = null
 	else
 		to_chat(user, "<span class='warning'>\The [src] is empty.</span>")
+
+/obj/item/gun/launcher/grenade/mezoa
+	name = "Mezoa pattern grenade launcher"
+	desc = "A bulky break-action single-shot grenade launcher, manufactured on the forge world of Mezoa. Famed for its accuracy and reliability, it possesses a high recoil. "
+	icon_state = "boomer"
+	item_state = "boomer"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3)
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+
+	fire_sound = 'sound/weapons/empty.ogg'
+	fire_sound_text = "a metallic thunk"
+	screen_shake = 4
+	throw_distance = 9
+	release_force = 6
+	combustion = 1
+	max_grenades = 0
+
+/obj/item/gun/launcher/grenade/mezoa/attack_self()
+	return
+
+/obj/item/gun/launcher/grenade/mezoa/load(obj/item/grenade/G, mob/user)
+	if(!can_load_grenade_type(G, user))
+		return
+
+	if(chambered)
+		to_chat(user, "<span class='warning'>\The [src] is already loaded.</span>")
+		return
+	user.drop_from_inventory(G, src)
+	chambered = G
+	user.visible_message("\The [user] load \a [G] into \the [src].", "<span class='notice'>You load \a [G] into \the [src].</span>")
+	src.icon_state = "boomer"
+	src.item_state = "boomer"
+
+/obj/item/gun/launcher/grenade/mezoa/unload(mob/user)
+	if(chambered)
+		user.put_in_hands(chambered)
+		user.visible_message("\The [user] removes \a [chambered] from \the[src].", "<span class='notice'>You remove \a [chambered] from \the [src].</span>")
+		chambered = null
+		src.icon_state = "boomer-e"
+		src.item_state = "boomer-e"
+	else
+		to_chat(user, "<span class='warning'>\The [src] is empty.</span>")

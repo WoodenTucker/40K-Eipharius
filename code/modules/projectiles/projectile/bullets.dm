@@ -400,7 +400,7 @@
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 68
-	armor_penetration = 60
+	armor_penetration = 75
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -411,7 +411,7 @@
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 75
-	armor_penetration = 65
+	armor_penetration = 85
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))
@@ -480,19 +480,19 @@
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 75
-	armor_penetration = 75
+	armor_penetration = 85
 	penetration_modifier = 1.4
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 85
-	armor_penetration = 85
+	damage = 80
+	armor_penetration = 98
 	penetration_modifier = 1.8
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 60
-	armor_penetration = 20
+	armor_penetration = 50
 /obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
@@ -501,7 +501,7 @@
 /obj/item/projectile/bullet/bolt/ms
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 70
-	armor_penetration = 20
+	armor_penetration = 60
 /obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
@@ -519,21 +519,21 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 100
 	damage_type = BURN
-	armor_penetration = 10
+	armor_penetration = 90
 	penetration_modifier = 1.4
 
 /obj/item/projectile/bullet/rifle/plasma/cannon //D E A T H
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 220
 	damage_type = BURN
-	armor_penetration = 10
+	armor_penetration = 100
 	penetration_modifier = 5
 
 /obj/item/projectile/bullet/rifle/plasma/cannon/orkish //three colors of green!
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 160
 	damage_type = BURN
-	armor_penetration = 10
+	armor_penetration = 100
 	penetration_modifier = 3
 
 /obj/item/projectile/bullet/rifle/plasma/pistol
