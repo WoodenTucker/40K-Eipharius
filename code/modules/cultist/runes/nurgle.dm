@@ -22,6 +22,3 @@
 
 /datum/rune_recipe/nurgle/nganga
 	name = "Nganga Rite"
-	ingredients = list(/obj/item/organ/external/head)
-	delete_items = TRUE
-	product_path = /obj/structure/nganga
