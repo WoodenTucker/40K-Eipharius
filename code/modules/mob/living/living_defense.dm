@@ -11,12 +11,18 @@
 	a blocked amount between 0 - 100, representing the success of the armor check.
 */
 /mob/living/proc/run_armor_check(var/def_zone = null, var/attack_flag = "melee", var/armour_pen = 0, var/absorb_text = null, var/soften_text = null)
+	if(armour_pen >= 100)
+		return 0 //might as well just skip the processing
 
 	var/armor = getarmor(def_zone, attack_flag)
 
-	var/effective_armor = armor - armour_pen
+	if(armour_pen >= armor)
+		return 0 //effective_armor is going to be 0, fullblock is going to be 0, blocked is going to 0, let's save ourselves the trouble
 
-	if(effective_armor >= 0)
+	var/effective_armor = (armor - armour_pen)/100
+	var/fullblock = (effective_armor*effective_armor) * ARMOR_BLOCK_CHANCE_MULT
+
+	if(fullblock >= 1 || prob(fullblock*100))
 		if(absorb_text)
 			show_message("<span class='warning'>[absorb_text]</span>")
 		else
@@ -25,10 +31,14 @@
 		playsound(src, "sound/weapons/armorblockheavy[rand(1,3)].ogg", 50, 1, 1)
 		return 100
 
-//Reworked the system. It subtracts the AP value of the projectile from the Armour value for the Armour to determine if it's blocked. If it penetrates, there's still a chance of softening the blow.
-	var/blocked = (effective_armor *-1) //This gives the inverse of the penetration. That is to say, if a projectile goes through with 20 points of AP to spare, it'll be 20. 
+	//this makes it so that X armour blocks X% damage, when including the chance of hard block.
+	//I double checked and this formula will also ensure that a higher effective_armor
+	//will always result in higher (non-fullblock) damage absorption too, which is also a nice property
+	//In particular, blocked will increase from 0 to 50 as effective_armor increases from 0 to 0.999 (if it is 1 then we never get here because ofc)
+	//and the average damage absorption = (blocked/100)*(1-fullblock) + 1.0*(fullblock) = effective_armor
+	var/blocked = (effective_armor - fullblock)/(1 - fullblock)*100
 
-	if(blocked < 10) //If it's only just penetrated, then it'll soften the blow.
+	if(blocked > 20)
 		//Should we show this every single time?
 		if(soften_text)
 			show_message("<span class='warning'>[soften_text]</span>")
