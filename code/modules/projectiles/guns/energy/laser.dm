@@ -185,7 +185,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 1.7
 	fire_delay = 3
-	accuracy = 0
+	accuracy = 1
 	move_delay = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -194,17 +194,16 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
-	sales_price = 25
+	sales_price = 35
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=90),
-		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=170),
 		)
 
 /obj/item/gun/energy/las/lasgun/shitty
 	name = "Portsmith W. Lasrifle"
-	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their guard's lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
+	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
 	icon_state = "semir"
 	item_state = "semir"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -212,7 +211,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 3.5
 	fire_delay = 5
-	accuracy = 0
+	accuracy = 1
 	move_delay = 5
 	charge_cost = 130
 	wielded_item_state = "semir"
@@ -223,15 +222,15 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun/lucius
 	name = "Lucius No.98 Lasgun"
-	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat."
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than other pattern lasguns."
 	icon_state = "lucius"
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	fire_delay = 4
-	accuracy = 0
+	fire_delay = 9
+	accuracy = 3
 	move_delay = 3.2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -243,20 +242,21 @@ obj/item/gun/energy/retro
 	sales_price = 30
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
-		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
+		list(mode_name="semi-automatic", fire_delay = 9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
+		list(mode_name="overcharge", fire_delay = 12, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
 		)
 
 /obj/item/gun/energy/las/lasgun/catachan
-	name = "Catachan Mark IV Lascarbine"
-	desc = "The Mark IV lascarbine is a special lascarbine used by Catachan Jungle Fighters for CQC purposes."
-	icon_state = "lascar"
-	item_state = "lasgun"
+	name = "Mark IV Lascarbine"
+	desc = "The Mark IV lascarbine is a special lascarbine used by the Catachan Jungle Fighters. Excellent for warfare in jungle environments due to it's bayonet and light frame"
+	icon_state = "lascarbine"
+	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 18
-	one_hand_penalty = 0.7
-	accuracy = 0
+	one_hand_penalty = 5
+	fire_delay = 3.5
+	accuracy = 2
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -264,44 +264,39 @@ obj/item/gun/energy/retro
 	charge_cost = 70
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "lasgun-wielded"
+	wielded_item_state = "lascar-wielded"
 	sales_price = 35
 
-	fire_delay = 1 // 0.25 seconds
-
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=70),
-		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=135),
+		list(mode_name="semi-automatic",   burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
+		list(mode_name="overcharge", burst=1, fire_delay = 7.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=160),
 		)
 
 /obj/item/gun/energy/las/lasgun/accatran
 	name = "Accatran Mark II Pattern Lasgun"
 	desc = "The Accatran Patterns are bullpup in design, affording them similar damage to that of a laspistol but with the capacity of a typical lasrifle and with a very high rate of fire for a lasgun. The choice pattern of the Elite Elysian Droptroopers."
 	icon_state = "accatran"
-	item_state = "laer"
+	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	fire_delay = -5
-	accuracy = -4
+	fire_delay = 0
+	accuracy = -3
+	burst = 1
 	automatic = 1
 	move_delay = 3.2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
-	charge_cost = 70
+	charge_cost = 60
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "luscius-wielded"
-	sales_price = 30
+	wielded_item_state = "lascar-wielded"
+	sales_price = 50
 
-	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
-		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
-		)
 
+	firemodes = list( null )
 
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
