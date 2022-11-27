@@ -253,7 +253,7 @@ obj/item/gun/energy/retro
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 18
+	force = 30
 	one_hand_penalty = 5
 	fire_delay = 3.5
 	accuracy = 2
@@ -323,7 +323,7 @@ obj/item/gun/energy/retro
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
 	desc = "The favored ranged weapon of Blood Pact Warriors."
-	force = 30 // muh bayonet
+	force = 35 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "lascar"
 	accuracy = -1
