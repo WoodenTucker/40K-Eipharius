@@ -275,6 +275,34 @@ obj/item/gun/energy/retro
 		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=135),
 		)
 
+/obj/item/gun/energy/las/lasgun/accatran
+	name = "Accatran Mark II Pattern Lasgun"
+	desc = "The Accatran Patterns are bullpup in design, affording them similar damage to that of a laspistol but with the capacity of a typical lasrifle and with a very high rate of fire for a lasgun. The choice pattern of the Elite Elysian Droptroopers."
+	icon_state = "accatran"
+	item_state = "laer"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 2
+	fire_delay = -5
+	accuracy = -4
+	automatic = 1
+	move_delay = 3.2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
+	charge_cost = 70
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "luscius-wielded"
+	sales_price = 30
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
+		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
+		)
+
+
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
@@ -372,8 +400,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		)
 
 /obj/item/gun/energy/las/laspistol/militarum/lord
-	name = "Rogue Trader's Artificer Pistol"
-	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
+	name = "Artificer Laspistol"
+	desc = "It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight and extremely efficient in energy usage. All the luxurious makings of a weapon from Terra itself."
 	icon_state = "lordlaspistol"
 	charge_meter = FALSE //must have, due to having only 1 item state.
 	accuracy = 1
