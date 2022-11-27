@@ -21,13 +21,13 @@
 	name = "Energy Sword"
 	item_cost = 32
 	path = /obj/item/melee/energy/sword
-*/
+
 
 /datum/uplink_item/item/visible_weapons/g9mm
 	name = "Silenced Holdout Pistol"
 	item_cost = 32
 	path = /obj/item/storage/box/syndie_kit/g9mm
-
+*/
 
 /* no exoshit!
 /datum/uplink_item/item/visible_weapons/riggedlaser
