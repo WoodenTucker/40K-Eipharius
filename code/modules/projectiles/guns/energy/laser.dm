@@ -384,7 +384,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/las/laspistol/militarum/bloodpact
 	name = "Bloodpact Laspistol"
-	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design, it is less efficient with it's lasgun cells than more modern variants."
+	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design and smaller, it is less efficient with it's lasgun cells than more modern variants."
 	icon_state = "bloodlaspistol"
 	accuracy = -1 // bloodpact should always be more innaccurate than their imperial counterparts
 	charge_cost = 110

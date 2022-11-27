@@ -299,7 +299,7 @@
 			to_chat(user, "<span class='notice'>The welder can now be attached and modified.</span>")
 		src.add_fingerprint(user)
 		return
-
+/*
 	if((!status) && (istype(W,/obj/item/stack/rods)))
 		var/obj/item/stack/rods/R = W
 		R.use(1)
@@ -338,7 +338,7 @@
 
 	..()
 
-
+*/
 /obj/item/weldingtool/attack_hand(mob/user as mob)
 	if(tank && user.get_inactive_hand() == src)
 		if(!welding)

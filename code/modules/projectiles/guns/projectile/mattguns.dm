@@ -854,13 +854,13 @@ obj/item/gun/projectile/automatic/autogun
 	wielded_unloaded_icon = "schmeiser-e"
 
 /obj/item/gun/projectile/automatic/flamer
-	name = "Mk.1 Scorcher"
+	name = "Scorcher"
 	desc = "An incredibly dangerous hand-held flamethrower used often in infiltration or siege operations."
 	icon_state = "flamer"
 	item_state = "flamer"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
-	one_hand_penalty = 0
+	one_hand_penalty = 10
 	str_requirement = 10
 	fire_sound = 'sound/effects/fire01.ogg'
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -884,6 +884,40 @@ obj/item/gun/projectile/automatic/autogun
 	sales_price = 60
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+/obj/item/gun/projectile/automatic/flamer/pistol
+	name = "Handheld Scorcher"
+	desc = "The handheld, pistol varient of the flamer. It shoots slower than it's larger brother and is more difficult to hold in your single hand."
+	icon_state = "flamerp"
+	item_state = "flamer"
+	wielded_item_state = "flamer-wielded"
+	caliber = "flamer"
+	one_hand_penalty = 5
+	str_requirement = 16
+	fire_sound = 'sound/effects/fire01.ogg'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	casingsound = null//No eject sound for you.
+	firemodes = list()
+	accuracy = 0
+	automatic = 1
+	fire_delay = 22
+	move_delay = 6
+	burst=1
+	magazine_type = /obj/item/ammo_magazine/flamer
+	allowed_magazines = /obj/item/ammo_magazine/flamer
+	can_jam = FALSE
+
+	loaded_icon = "flamer"
+	unwielded_loaded_icon = "flamer"
+	wielded_loaded_icon = "flamer-wielded"
+	unloaded_icon = "flamer-e"
+	unwielded_unloaded_icon = "flamer-e"
+	wielded_unloaded_icon = "flamer-wielded-e"
+	sales_price = 60
+
+	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+
 
 /obj/item/gun/projectile/automatic/autoshotty
 	name = "Astartes Shotgun"
