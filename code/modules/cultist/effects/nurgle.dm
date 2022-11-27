@@ -1,3 +1,16 @@
+/datum/heretic_effect/painless
+	name = "Pain Immunity"
+	add_message = "<span class='notice'>You feel your body mutate further. The pain that comes with the Grandfather's blessings has faded. Replaced only with the desire to share this peace.</span>"
+	unique = TRUE
+
+/datum/heretic_effect/painless/add_effect(var/mob/living/carbon/human/user)
+	. = ..()
+	user.species.species_flags += SPECIES_FLAG_NO_PAIN
+
+/datum/heretic_effect/painless/remove_effect(var/mob/living/carbon/human/user)
+	. = ..()
+	user.species.species_flags -= SPECIES_FLAG_NO_PAIN
+
 /datum/heretic_effect/deathtolerant
 	name = "Death Tolerance"
 	add_message = "<span class='notice'>Stenches and death are a sign of a functional cycle of rebirth. They no longer affect me.</span>"
@@ -55,7 +68,6 @@
 	if(staminaloss >= staminaexhaust / 2)
 		return FALSE
 	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
-	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
 	adjustOxyLoss(-1)
 	adjustToxLoss(-1)
 	adjustBruteLoss(-4)
@@ -67,5 +79,16 @@
 	for(var/obj/item/organ/external/temp in organs)
 		temp.wounds.Cut()
 
+/datum/heretic_effect/slow
+	name = "Slow"
+	add_message = "<span class='notice'>You feel slower.</span>"
+	unique = TRUE
 
+/datum/heretic_effect/slow/add_effect(var/mob/living/carbon/human/user)
+	. = ..()
+	user.species.slowdown += 0.2
+
+/datum/heretic_effect/slow/remove_effect(var/mob/living/carbon/human/user)
+	. = ..()
+	user.species.slowdown -= 0.2
 

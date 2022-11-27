@@ -1,16 +1,3 @@
-/datum/heretic_effect/painless
-	name = "Pain Immunity"
-	add_message = "<span class='notice'>You feel your body mutate further. The pain that comes with battle feels as if it has faded. Replaced only with the desire to spill blood.</span>"
-	unique = TRUE
-
-/datum/heretic_effect/painless/add_effect(var/mob/living/carbon/human/user)
-	. = ..()
-	user.species.species_flags |= SPECIES_FLAG_NO_PAIN
-
-/datum/heretic_effect/painless/remove_effect(var/mob/living/carbon/human/user)
-	. = ..()
-	user.species.species_flags &= SPECIES_FLAG_NO_PAIN
-
 /datum/heretic_effect/strength
 	name = "Strength"
 	add_message = "<span class='notice'>You feel your body mutate further. Your muscles feel imbued with strength.</span>"
@@ -35,19 +22,6 @@
 	name = "Strength"
 	add_message = "<span class='notice'>You feel your body mutate further. Your muscles feel imbued with strength.</span>"
 	stat_increase = 2
-
-/datum/heretic_effect/slow
-	name = "Slow"
-	add_message = "<span class='notice'>You feel slower.</span>"
-	unique = TRUE
-
-/datum/heretic_effect/slow/add_effect(var/mob/living/carbon/human/user)
-	. = ..()
-	user.species.slowdown += 0.2
-
-/datum/heretic_effect/slow/remove_effect(var/mob/living/carbon/human/user)
-	. = ..()
-	user.species.slowdown -= 0.2
 
 /datum/heretic_effect/tough_skin
 	name = "Leather Skin"

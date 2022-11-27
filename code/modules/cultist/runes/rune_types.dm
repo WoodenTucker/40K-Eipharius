@@ -29,7 +29,7 @@
 	name = "mark of slaanesh"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "lewd"
-	desc = "A horrifying rune drawn in blood."
+	desc = "A horrifying rune drawn in spice."
 	gender = PLURAL
 	density = 0
 	anchored = 1
@@ -41,7 +41,7 @@
 	name = "mark of tzeentch"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "smart"
-	desc = "A horrifying rune drawn in blood."
+	desc = "A horrifying rune drawn in ash."
 	gender = PLURAL
 	density = 0
 	anchored = 1
@@ -53,7 +53,7 @@
 	name = "mark of nurgle"
 	icon = 'icons/obj/decals.dmi'
 	icon_state = "nasty"
-	desc = "A horrifying rune drawn in blood."
+	desc = "A horrifying rune drawn in filth."
 	gender = PLURAL
 	density = 0
 	anchored = 1
