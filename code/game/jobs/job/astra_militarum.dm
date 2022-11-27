@@ -186,7 +186,7 @@
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
-		"Catachan Flamer" = /decl/hierarchy/outfit/job/guardsman/catachan,
+		"Catachan Flamer" = /decl/hierarchy/outfit/job/sharpshooter/catachan,
 		)
 
 	equip(var/mob/living/carbon/human/H)
@@ -745,7 +745,7 @@
 	/obj/item/device/flashlight/lantern = 1
 	)
 
-/decl/hierarchy/outfit/job/guardsman/catachan
+/decl/hierarchy/outfit/job/sharpshooter/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
 	suit = /obj/item/clothing/suit/armor/catachan

@@ -177,7 +177,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun
 	name = "Kantrael M36 Lasgun"
-	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability."
+	desc = " Of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. The Planet broke before the guard did."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -407,8 +407,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	)
 	sales_price = 80
 /obj/item/gun/energy/las/laspistol/militarum/lucius
-	name = "Astra Militarum Lucius-pattern Laspistol"
-	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
+	name = "Lucius-pattern Laspistol"
+	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
 	icon_state = "luciuspistol"
 	force = 10
 	one_hand_penalty = 2.5
