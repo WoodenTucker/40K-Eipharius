@@ -345,11 +345,13 @@
 	damage = 100
 	armor_penetration = 45
 	penetration_modifier = 1.5
-
+	penetrating = 1
+	
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130
 	armor_penetration = 45
+	penetration_modifier = 1.5
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/lp338/jhp
@@ -482,13 +484,15 @@
 	damage = 75
 	armor_penetration = 30
 	penetration_modifier = 1.4
-
+	penetrating = TRUE
+	
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 85
 	armor_penetration = 40
 	penetration_modifier = 1.8
-
+	penetrating = TRUE
+	
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 60
@@ -514,14 +518,16 @@
 	damage_type = BURN
 	armor_penetration = 10
 	penetration_modifier = 2
-
+	penetrating = TRUE
+	
 /obj/item/projectile/bullet/rifle/plasma
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 100
 	damage_type = BURN
 	armor_penetration = 90
 	penetration_modifier = 1.4
-
+	penetrating = TRUE
+	
 /obj/item/projectile/bullet/rifle/plasma/cannon //D E A T H
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 220
@@ -540,7 +546,7 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 80
 	damage_type = BURN
-	armor_penetration = 5
+	armor_penetration = 85
 	penetration_modifier = 1.2
 
 /obj/item/projectile/bullet/rifle/plasma/tau //TAU pulse weapons are plasma weapons bro
