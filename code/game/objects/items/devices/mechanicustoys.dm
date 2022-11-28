@@ -285,7 +285,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/bonegel/narthecium
 	name = "Bone Gel Dispenser"
 	desc = "A dispenser linked to a small tube in the gloves, you don't know how, but it seems to have infinite juice, also, the bone dispenser is duct taped to the tube."
-/obj/item/circular_saw/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+/obj/item/bonegel/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
 
@@ -354,7 +354,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/cautery/narthecium
 	name = "Servo-Cautery"
 	desc = "A red cautery which seems to be faster at closing wounds than normal cauteries, but maybe you just feel that way because its red?"
-/obj/item/suture/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+/obj/item/cautery/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
 
@@ -399,7 +399,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/retractor/narthecium
 	name = "Duct Taped Retractor"
 	desc = "Again, why is this duct taped to such a wonderous piece of tech if the IMS already exists?"
-/obj/item/hemostat/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+/obj/item/retractor/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
 
