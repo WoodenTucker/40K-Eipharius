@@ -102,10 +102,17 @@
 
 /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
 	name = "\improper handful of shells"
-	desc = "A handful of shotgun shells for your shotgun."
+	desc = "A handful of beanbag shells for your shotgun."
 	icon_state = "bshell"
 	caliber = "shotgun"
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+
+/obj/item/ammo_magazine/handful/shotgun/stunshell_handful
+	name = "\improper handful of stunshells"
+	desc = "A handful of stunshells for your shotgun."
+	icon_state = "stushell"
+	caliber = "shotgun"
+	ammo_type = /obj/item/ammo_casing/shotgun/stunshell
 
 
 //Revolver
@@ -219,27 +226,33 @@
 //Box of handfuls of shotgun ammo.
 /obj/item/ammo_box/shotgun
 	name = "\improper shells box"
-	icon_state = "shotgunammo"
+	icon_state = "shotbox"
 	desc = "You get shells out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
 
 /obj/item/ammo_box/shotgun/slug
 	name = "\improper slugs box"
-	icon_state = "slugammo"
+	icon_state = "slugbox"
 	desc = "You get slugs out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful
 
 /obj/item/ammo_box/shotgun/slug
 	name = "\improper MS slugs box"
-	icon_state = "msslugammo"
+	icon_state = "heavyslugbox"
 	desc = "You get extra heavy slugs out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful/ms
 
 /obj/item/ammo_box/shotgun/beanbag
 	name = "\improper beanbags box"
-	icon_state = "beanbagammo"
+	icon_state = "beanbox"
 	desc = "You get beanbags out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
+
+/obj/item/ammo_box/shotgun/stunshell
+	name = "\improper stunshell box"
+	icon_state = "stunbox1"
+	desc = "You get stunshells out of this."
+	handful_type = /obj/item/ammo_magazine/handful/shotgun/stunshell_handful
 
 /obj/item/ammo_box/ptsd
 	name = "\improper shells box"
