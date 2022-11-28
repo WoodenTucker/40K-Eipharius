@@ -250,7 +250,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	chargecost = 0
 	combat = 1
 	safety = 0 //if you can zap people with the paddles on harm mode
-	var/chargetime = (0 SECONDS)
+	chargetime = (0 SECONDS)
 	icon_state = "defibpaddles0"
 	item_state = "defibpaddles0"
 	cooldowntime = (4 SECONDS)
