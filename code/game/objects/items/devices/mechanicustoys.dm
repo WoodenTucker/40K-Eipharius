@@ -177,7 +177,6 @@
 	desc = "\"This holy tool aids a biologis in bending the neurons to his will. Sometimes.\" - Biologis Malar Viten "
 	icon = 'icons/obj/items/neural.dmi'
 	icon_state = "neural"
-	item_state = "neural"
 	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
@@ -205,8 +204,80 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	spawn(1) if(src) qdel(src)
 
 
-//Robot stuff
+//Robot stuff and narthecium shit
 
+/obj/item/clothing/gloves/thick/narthecium/apot
+	name = "Apothecary's Narthecium"
+	desc = "A giant surgical combi-tool with multiple different tools, it clearly wasnt made for a normal human."
+	armor = list(melee = 80, bullet = 40, laser = 20, energy = 30, bomb = 70, bio = 100, rad = 100)
+	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
+	icon_state = "hypogauntlet" //gloves.dmi
+	item_state = "sister" //hands.dmi
+	
+/obj/item/clothing/gloves/thick/narthecium/apot/verb/togglenarthecium()
+	set name = "Activate Narthecium"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You activate the chainsaw on your narthecium, getting ready to cut through armor and bone.")
+		usr.put_in_hands(new /obj/item/melee/chain/pcsword/narthecium/apot(usr))
+		src.is_toggled = 2
+
+/obj/item/clothing/gloves/thick/narthecium/apot/verb/toggledefib()
+	set name = "Pull out Electro-Paddles"
+	set category = "Narthecium"
+	set src in usr
+	if(!usr.canmove || usr.stat || usr.restrained())
+		return
+	if(!can_toggle)
+		to_chat(usr,"This tool cannot be toggled!")
+		return
+		src.is_toggled = 1
+	else
+		to_chat(usr,"You pull out your electro paddles and get ready to shock!")
+		usr.put_in_hands(new /obj/item/shockpaddles/narthecium(usr))
+		src.is_toggled = 2
+	
+/obj/item/shockpaddles/narthecium
+	name = "narthecium electro-paddles"
+	desc = "A pair of advanced electro-paddles powered by a promethium generator, it's shocks are so strong that they could probably pierce a astartes ribcage without causing too much damage"
+	chargecost = 0
+	combat = 1
+	safety = 0 //if you can zap people with the paddles on harm mode
+	var/chargetime = (0 SECONDS)
+	icon_state = "defibpaddles0"
+	item_state = "defibpaddles0"
+	cooldowntime = (4 SECONDS)
+	
+/obj/item/shockpaddles/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/melee/chain/pcsword/narthecium/apot
+	name = "Apothecary's Narthecium"
+	desc = "The standard issued narthecium of the apothecaries, powered by a internal promethium generator."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "pcsword"
+	item_state = "pcsword"
+	wielded_icon = "pcsword"
+	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
+	str_requirement = 20
+	force = 50
+	force_wielded = 60
+	armor_penetration = 60
+	block_chance = 45 //apothecary nartheciums can be used for blocking better, due to being essentially a extension of the apothecaries body and being insanely armored.
+
+/obj/item/melee/chain/pcsword/narthecium/apot/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+	
+	
 /obj/item/clothing/gloves/thick/narthecium
 	name = "Sister Hospitaller's Narthecium"
 	desc = "A pair of white, augmented gloves, these have several modifications on them."
@@ -215,7 +286,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
 	icon_state = "sister" //gloves.dmi
 	item_state = "sister" //hands.dmi
-	unacidable = 1
 	var/can_toggle = 1
 	var/is_toggled = 1
 
