@@ -179,7 +179,7 @@
 /obj/item/projectile/bullet/pistol/ap
 	damage = 38
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
-	armor_penetration = 22
+	armor_penetration = 20
 
 /obj/item/projectile/bullet/pistol/ms
 	damage = 45
@@ -193,7 +193,7 @@
 
 /obj/item/projectile/bullet/pistol/medium/ap
 	damage = 42
-	armor_penetration = 20
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/ms
 	damage = 48
@@ -206,7 +206,7 @@
 
 /obj/item/projectile/bullet/pistol/medium/smg/ap
 	damage = 39
-	armor_penetration = 25
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/smg/ms
 	damage = 45
@@ -219,7 +219,7 @@
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ap
 	damage = 48
-	armor_penetration = 20
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ms
 	damage = 58
@@ -232,7 +232,7 @@
 
 /obj/item/projectile/bullet/pistol/strong/ap
 	damage = 54 //.50AE
-	armor_penetration = 25
+	armor_penetration = 40
 
 /obj/item/projectile/bullet/pistol/strong/ms
 	damage = 60 //.50AE
@@ -240,11 +240,11 @@
 
 /obj/item/projectile/bullet/pistol/strong/revolver
 	damage = 44
-	armor_penetration = 5
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ap
 	damage = 48
-	armor_penetration = 10
+	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ms
 	damage = 58
@@ -336,27 +336,27 @@
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 95
-	armor_penetration = 70
+	armor_penetration = 20
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
 	penetration_modifier = 1.25
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a145/apds
 	damage = 100
-	armor_penetration = 85
+	armor_penetration = 45
 	penetration_modifier = 1.5
 
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130
-	armor_penetration = 75
+	armor_penetration = 45
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/lp338/jhp
 	name = "JHP bullet"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 160
-	armor_penetration = 35
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/rifle/lp338/needler
 	name = "needler bullet"
@@ -400,7 +400,7 @@
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 68
-	armor_penetration = 75
+	armor_penetration = 10
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
@@ -411,7 +411,7 @@
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 75
-	armor_penetration = 85
+	armor_penetration = 15
 /* Explosive aspect of bullets doesn't work so triaging the code for now.
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))
@@ -480,13 +480,13 @@
 /obj/item/projectile/bullet/bpistol/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 75
-	armor_penetration = 85
+	armor_penetration = 30
 	penetration_modifier = 1.4
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
-	damage = 80
-	armor_penetration = 98
+	damage = 85
+	armor_penetration = 40
 	penetration_modifier = 1.8
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
@@ -557,7 +557,7 @@
 	icon_state = "lasbolt"
 	damage_type = BURN
 	penetration_modifier = 2
-	armor_penetration = 85//high penetration
+	armor_penetration = 35//high penetration
 	damage = 60 //believe me, this is kinda of balanced.
 	pellets = 12
 	range_step = 2 //not sure what these two mean, but lets go with it!
@@ -648,7 +648,7 @@
 	damage = 260 //Admin only spawn for now.
 	damage_type = BRUTE
 	check_armour = "bullet"
-	armor_penetration = 100
+	armor_penetration = 40
 	embed = 1
 	sharp = 1
 	light_power = 0

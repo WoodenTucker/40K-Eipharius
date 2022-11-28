@@ -11,11 +11,9 @@
 	possible_blessings = list(
 							/datum/heretic_effect/healing,
 							/datum/heretic_effect/tough_skin,
-							/datum/heretic_effect/slow,
 							/datum/heretic_effect/strength/greater,
 							/datum/heretic_effect/strength/lesser,
-							/datum/heretic_effect/strength,
-							/datum/heretic_effect/painless)
+							/datum/heretic_effect/strength)
 
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/bludforbludguy,
@@ -39,11 +37,16 @@
 	rune_type = /obj/effect/cleanable/heretic_rune/nurgle
 	possible_blessings = list(
 						/datum/heretic_effect/heal,
+						/datum/heretic_effect/painless,
+						/datum/heretic_effect/slow,
 						/datum/heretic_effect/zombie)
 	rune_recipes = list(/datum/rune_recipe/nurgle/deathtolerance,
 						/datum/rune_recipe/nurgle/conversion,
 						/datum/rune_recipe/nurgle/toughen,
-						/datum/rune_recipe/nurgle/nganga)
+						/datum/rune_recipe/nurgle/nganga,
+						/datum/rune_recipe/nurgle/uniform,
+						/datum/rune_recipe/nurgle/plate,
+						/datum/rune_recipe/nurgle/mask)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
 			/mob/living/carbon/human/proc/draw_rune)
