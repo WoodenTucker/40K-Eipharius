@@ -889,7 +889,7 @@ obj/item/gun/projectile/automatic/autogun
 	name = "Handheld Scorcher"
 	desc = "The handheld, pistol varient of the flamer. It shoots slower than it's larger brother and is more difficult to hold in your single hand."
 	icon_state = "flamerp"
-	item_state = "flamer"
+	item_state = "flamerp"
 	wielded_item_state = "flamer-wielded"
 	caliber = "flamer"
 	one_hand_penalty = 5
@@ -907,11 +907,11 @@ obj/item/gun/projectile/automatic/autogun
 	allowed_magazines = /obj/item/ammo_magazine/flamer
 	can_jam = FALSE
 
-	loaded_icon = "flamer"
-	unwielded_loaded_icon = "flamer"
+	loaded_icon = "flamerp"
+	unwielded_loaded_icon = "flamerp"
 	wielded_loaded_icon = "flamer-wielded"
-	unloaded_icon = "flamer-e"
-	unwielded_unloaded_icon = "flamer-e"
+	unloaded_icon = "flamerp-e"
+	unwielded_unloaded_icon = "flamerp-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
 	sales_price = 60
 

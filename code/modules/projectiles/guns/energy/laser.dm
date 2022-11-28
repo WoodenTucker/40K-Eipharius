@@ -74,7 +74,7 @@
 			to_chat(user, "<span class='danger'>\The [src] sizzles in your hands, acrid smoke rising from the firing end!</span>")
 			desc += " The optical pathway is melted and useless."
 			projectile_type = null
-
+/*
 obj/item/gun/energy/retro
 	name = "retro laser"
 	icon_state = "retro"
@@ -98,7 +98,9 @@ obj/item/gun/energy/retro
 	max_shots = 5 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
+*/
 //NOT READY!
+
 /obj/item/gun/energy/lasercannon
 	name = "laser cannon"
 	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
@@ -319,7 +321,7 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
 	sales_price = 90
-
+/*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
 	desc = "The favored ranged weapon of Blood Pact Warriors."
@@ -333,7 +335,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		)
 
 	sales_price = 50 // make it a bit worse than hotshot
-
+*/
 /obj/item/gun/energy/las/laspistol
 	name = "Civitas Pattern Laspistol"
 	desc = "The Civitas is both somewhat bulky and inefficient (owing to lower quality components than a military-grade laspistol), but remains popular due to its ease of manufacture, longevity and simplicity of maintenance. They are made on almost every hive world and often in the hands of civilians."
