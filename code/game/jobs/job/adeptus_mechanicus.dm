@@ -37,6 +37,7 @@
 		H.set_trait(new/datum/trait/death_tolerant()) //although Noble, he has no nose and is a psychopath, no reason he should be vomiting around
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.witchblood()
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Dominus, you are a specialist in all forms of technology. You are the highest ranking member of the Adeptus Mechanicus on the outpost, your duty is to ensure all machine spirits remain happy and willing to work. Use your talents and the skills of your tech priests to further the goals of the Mechanicus. Praise the Omnissiah!</font></b></span>")
 		H.bladder = -INFINITY
 		H.adjustStaminaLoss(-INFINITY)
@@ -83,6 +84,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.witchblood()
 		H.adjustStaminaLoss(-INFINITY)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
@@ -126,6 +128,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.witchblood()
 		H.say(":e [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
 		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving upon the Ark Cruiser, The Soul of Reason and the Tech-Priests aboard. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
@@ -169,6 +172,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.witchblood()
 		H.adjustStaminaLoss(-INFINITY)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
@@ -235,6 +239,7 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.witchblood()
 		H.adjustStaminaLoss(-INFINITY)
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
