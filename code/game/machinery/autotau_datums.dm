@@ -442,12 +442,6 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	path = /obj/item/hand_labeler
 	category = "General"
 
-/datum/autolathe/recipe/flamethrower
-	name = "flamethrower"
-	path = /obj/item/flamethrower/full
-	hidden = 1
-	category = "Arms and Ammunition"
-
 /datum/autolathe/recipe/magazine_revolver_1
 	name = "ammunition (.357)"
 	path = /obj/item/ammo_magazine/a357

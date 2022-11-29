@@ -92,7 +92,7 @@
 		/obj/item/device/spy_bug = 6,
 		/obj/item/device/spy_monitor
 	)
-
+/*
 /obj/item/storage/box/syndie_kit/g9mm
 	name = "\improper Smooth operator"
 	desc = "9mm with silencer kit and ammunition."
@@ -101,7 +101,7 @@
 		/obj/item/silencer,
 		/obj/item/ammo_magazine/mc9mm
 	)
-
+*/
 /obj/item/storage/backpack/satchel/syndie_kit/revolver
 	name = "\improper Tough operator"
 	desc = ".357 revolver, with ammunition."

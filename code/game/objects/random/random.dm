@@ -276,7 +276,6 @@
 /obj/random/energy/spawn_choices()
 	return list(/obj/item/gun/energy/laser = 4,
 				/obj/item/gun/energy/gun = 3,
-				/obj/item/gun/energy/retro = 2,
 				/obj/item/gun/energy/lasercannon = 2,
 				/obj/item/gun/energy/sniperrifle = 1,
 				/obj/item/gun/energy/gun/nuclear = 1,
@@ -299,7 +298,6 @@
 				/obj/item/gun/projectile/colt = 4,
 				/obj/item/gun/projectile/sec = 4,
 				/obj/item/gun/projectile/sec/wood = 3,
-				/obj/item/gun/projectile/pistol = 4,
 				/obj/item/gun/projectile/revolver = 2,
 				/obj/item/gun/projectile/automatic/wt550 = 3,
 				/obj/item/gun/projectile/revolver/detective = 4,
@@ -319,8 +317,6 @@
 	return list(/obj/item/gun/projectile/sec = 3,
 				/obj/item/gun/energy/gun = 2,
 				/obj/item/gun/projectile/colt = 2,
-				/obj/item/gun/projectile/pistol = 2,
-				/obj/item/gun/energy/retro = 1,
 				/obj/item/gun/projectile/sec/wood = 1)
 
 /obj/random/ammo

@@ -66,7 +66,6 @@ var/datum/antagonist/raider/raiders
 
 	var/list/raider_guns = list(
 		/obj/item/gun/energy/laser,
-		/obj/item/gun/energy/retro,
 		/obj/item/gun/energy/mindflayer,
 		/obj/item/gun/energy/stunrevolver,
 		/obj/item/gun/energy/ionrifle,
@@ -87,7 +86,6 @@ var/datum/antagonist/raider/raiders
 		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
 		/obj/item/gun/projectile/colt,
 		/obj/item/gun/projectile/sec,
-		/obj/item/gun/projectile/pistol,
 		/obj/item/gun/projectile/revolver,
 		)
 

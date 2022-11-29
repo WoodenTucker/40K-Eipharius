@@ -36,7 +36,6 @@ var/datum/antagonist/renegade/renegades
 		/obj/item/gun/projectile/colt/detective,
 		/obj/item/gun/projectile/sec/wood,
 		/obj/item/gun/projectile/silenced,
-		/obj/item/gun/projectile/pistol,
 		/obj/item/gun/projectile/revolver,
 		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
 		/obj/item/gun/projectile/magnum_pistol,

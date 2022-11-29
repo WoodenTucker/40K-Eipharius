@@ -18,7 +18,7 @@
 				"insult_bad"        = "If I had my gun I'd shoot you!"
 				)
 
-	possible_trading_items = list(/obj/item/gun/projectile/pistol    = TRADER_ALL,
+	possible_trading_items = list(
 								/obj/item/gun/projectile/colt        = TRADER_ALL,
 								/obj/item/gun/projectile/magnum_pistol= TRADER_ALL,
 								/obj/item/gun/projectile/sec         = TRADER_ALL,
@@ -92,7 +92,6 @@
 	possible_trading_items = list(
 								/obj/item/gun/projectile/sec/MK                  = TRADER_THIS_TYPE,
 								/obj/item/gun/projectile/silenced/cheap          = TRADER_THIS_TYPE,
-								/obj/item/gun/projectile/heavysniper/ant         = TRADER_THIS_TYPE,
 								/obj/item/gun/energy/laser/dogan                 = TRADER_THIS_TYPE,
 								/obj/item/gun/projectile/automatic/mini_uzi/usi  = TRADER_THIS_TYPE,
 								/obj/item/clothing/accessory/holster                    = TRADER_ALL)

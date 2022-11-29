@@ -74,7 +74,7 @@
 			to_chat(user, "<span class='danger'>\The [src] sizzles in your hands, acrid smoke rising from the firing end!</span>")
 			desc += " The optical pathway is melted and useless."
 			projectile_type = null
-
+/*
 obj/item/gun/energy/retro
 	name = "retro laser"
 	icon_state = "retro"
@@ -98,7 +98,9 @@ obj/item/gun/energy/retro
 	max_shots = 5 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
+*/
 //NOT READY!
+
 /obj/item/gun/energy/lasercannon
 	name = "laser cannon"
 	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
@@ -177,7 +179,7 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun
 	name = "Kantrael M36 Lasgun"
-	desc = "The M36 Lasgun is of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability."
+	desc = " Of Cadian design, it is one of the most common and less unique Lasguns that can be found throughout the Imperial Arsenal due to its cheap price and reliability. The Planet broke before the guard did."
 	icon_state = "lasgun"
 	item_state = "lasgun"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -185,7 +187,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 1.7
 	fire_delay = 3
-	accuracy = 0
+	accuracy = 1
 	move_delay = 3
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -194,17 +196,16 @@ obj/item/gun/energy/retro
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lasgun-wielded"
-	sales_price = 25
+	sales_price = 35
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=90),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=90),
-		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=170),
 		)
 
 /obj/item/gun/energy/las/lasgun/shitty
 	name = "Portsmith W. Lasrifle"
-	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their guard's lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
+	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
 	icon_state = "semir"
 	item_state = "semir"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
@@ -212,7 +213,7 @@ obj/item/gun/energy/retro
 	force = 12
 	one_hand_penalty = 3.5
 	fire_delay = 5
-	accuracy = 0
+	accuracy = 1
 	move_delay = 5
 	charge_cost = 130
 	wielded_item_state = "semir"
@@ -223,15 +224,15 @@ obj/item/gun/energy/retro
 
 /obj/item/gun/energy/las/lasgun/lucius
 	name = "Lucius No.98 Lasgun"
-	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than Kantrael and many other lasgun patterns but causing it to be more likely to overheat."
+	desc = "A Lucius-made Lasgun, unlike STC-based Lasgun, the No.98 operates in a higher than average 21 megathoule while using a standard Power cell, resulting in a more powerful shot than other pattern lasguns."
 	icon_state = "lucius"
 	item_state = "luscius"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 2
-	fire_delay = 4
-	accuracy = 0
+	fire_delay = 9
+	accuracy = 3
 	move_delay = 3.2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -243,20 +244,21 @@ obj/item/gun/energy/retro
 	sales_price = 30
 
 	firemodes = list(
-		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
-		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
+		list(mode_name="semi-automatic", fire_delay = 9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
+		list(mode_name="overcharge", fire_delay = 12, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
 		)
 
 /obj/item/gun/energy/las/lasgun/catachan
-	name = "Catachan Mark IV Lascarbine"
-	desc = "The Mark IV lascarbine is a special lascarbine used by Catachan Jungle Fighters for CQC purposes."
-	icon_state = "lascar"
-	item_state = "lasgun"
+	name = "Mark IV Lascarbine"
+	desc = "The Mark IV lascarbine is a special lascarbine used by the Catachan Jungle Fighters. Excellent for warfare in jungle environments due to it's bayonet and light frame"
+	icon_state = "lascarbine"
+	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
-	force = 18
-	one_hand_penalty = 0.7
-	accuracy = 0
+	force = 30
+	one_hand_penalty = 5
+	fire_delay = 3.5
+	accuracy = 2
 	move_delay = 2.5
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -264,16 +266,39 @@ obj/item/gun/energy/retro
 	charge_cost = 70
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
-	wielded_item_state = "lasgun-wielded"
+	wielded_item_state = "lascar-wielded"
 	sales_price = 35
 
-	fire_delay = 1 // 0.25 seconds
-
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=70),
-		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=135),
+		list(mode_name="semi-automatic",   burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
+		list(mode_name="overcharge", burst=1, fire_delay = 7.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=160),
 		)
+
+/obj/item/gun/energy/las/lasgun/accatran
+	name = "Accatran Mark VI Pattern Lasgun"
+	desc = "The Accatran Patterns are bullpup in design, affording them similar damage to that of a laspistol but with the capacity of a typical lasrifle and with a very high rate of fire for a lasgun. The choice pattern of the Elite Elysian Droptroopers."
+	icon_state = "accatran"
+	item_state = "lascar"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 15
+	one_hand_penalty = 2
+	fire_delay = 0
+	accuracy = -3
+	burst = 1
+	automatic = 1
+	move_delay = 3.2
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
+	charge_cost = 60
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lascar-wielded"
+	sales_price = 50
+
+
+	firemodes = list( null )
 
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
@@ -296,11 +321,11 @@ obj/item/gun/energy/retro
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
 	sales_price = 90
-
+/*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
 	desc = "The favored ranged weapon of Blood Pact Warriors."
-	force = 30 // muh bayonet
+	force = 35 // muh bayonet
 	icon_state = "bloodlasgun"
 	item_state = "lascar"
 	accuracy = -1
@@ -310,7 +335,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		)
 
 	sales_price = 50 // make it a bit worse than hotshot
-
+*/
 /obj/item/gun/energy/las/laspistol
 	name = "Civitas Pattern Laspistol"
 	desc = "The Civitas is both somewhat bulky and inefficient (owing to lower quality components than a military-grade laspistol), but remains popular due to its ease of manufacture, longevity and simplicity of maintenance. They are made on almost every hive world and often in the hands of civilians."
@@ -331,6 +356,36 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 20
 	wielded_item_state = "chaosppistol"
 
+/obj/item/gun/energy/las/laspistol/accatran
+	name = "Accatran MK II Pattern Laspistol"
+	desc = "An older pattern of the Accatran Laspistols. Fully auto but extremely power inefficient and somewhat inaccurate."
+	icon_state = "accatranp"
+	item_state = "chaosppistol" // just a red generic las on mob. replace asap
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = -3.5 // a lot worse than others
+	fire_delay = -1
+	automatic = 1
+	move_delay = 2.5
+	charge_cost = 170
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	sales_price = 35
+	wielded_item_state = "chaosppistol"
+
+/obj/item/gun/energy/las/laspistol/lord
+	name = "Artificer Laspistol"
+	desc = "It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight and extremely efficient in energy usage. All the luxurious makings of a weapon from Terra itself."
+	icon_state = "lordlaspistol"
+	charge_meter = FALSE //must have, due to having only 1 item state.
+	accuracy = 1
+	charge_cost = 45
+	firemodes = list(
+		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+	)
+	sales_price = 80
 
 /obj/item/gun/energy/las/laspistol/shitty
 	name = "Portsmith W. Laspistol"
@@ -361,7 +416,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/las/laspistol/militarum/bloodpact
 	name = "Bloodpact Laspistol"
-	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design, it is less efficient with it's lasgun cells than more modern variants."
+	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design and smaller, it is less efficient with it's lasgun cells than more modern variants."
 	icon_state = "bloodlaspistol"
 	accuracy = -1 // bloodpact should always be more innaccurate than their imperial counterparts
 	charge_cost = 110
@@ -371,21 +426,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="automatic",       burst=3, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0.5),
 		)
 
-/obj/item/gun/energy/las/laspistol/militarum/lord
-	name = "Rogue Trader's Artificer Pistol"
-	desc = "This Artificer pistol has the Rogue Trader's initials stamped. Well. More like engraved into pure gold, in the handle. It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight. All the luxurious makings of a weapon from Terra itself."
-	icon_state = "lordlaspistol"
-	charge_meter = FALSE //must have, due to having only 1 item state.
-	accuracy = 1
-	charge_cost = 45
-	firemodes = list(
-		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
-	)
-	sales_price = 80
 /obj/item/gun/energy/las/laspistol/militarum/lucius
-	name = "Astra Militarum Lucius-pattern Laspistol"
-	desc = "Lucius-pattern laspistol is a standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
+	name = "Lucius-pattern Laspistol"
+	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge."
 	icon_state = "luciuspistol"
 	force = 10
 	one_hand_penalty = 2.5
@@ -396,7 +439,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 25
+	sales_price = 45
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),

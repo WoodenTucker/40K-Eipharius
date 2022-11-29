@@ -129,7 +129,7 @@
 //				iconholder = 1
 //				eprojectile = /obj/item/projectile/beam
 
-		if(/obj/item/gun/energy/retro)
+		if(/obj/item/gun/energy/las)
 			iconholder = 1
 
 //			if(/obj/item/gun/energy/retro/sc_retro)

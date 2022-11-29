@@ -1,3 +1,4 @@
+/*
 /obj/item/flamethrower
 	name = "flamethrower"
 	desc = "You are a firestarter!"
@@ -208,3 +209,4 @@
 	status = 1
 	update_icon()
 	return
+*/

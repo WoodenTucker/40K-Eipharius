@@ -71,7 +71,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	starting_pressure = list("hydrogen" = 3*ONE_ATMOSPHERE)
-
+/*
 /obj/item/tank/hydrogen/attackby(obj/item/W as obj, mob/user as mob)
 	..()
 	if (istype(W, /obj/item/flamethrower))
@@ -81,7 +81,7 @@
 		F.ptank = src
 		user.remove_from_mob(src)
 		forceMove(F)
-
+*/
 /*
  * Emergency Oxygen
  */

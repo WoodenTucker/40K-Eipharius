@@ -106,7 +106,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/c45m
 	allowed_magazines = /obj/item/ammo_magazine/c45m
-
+/*
 /obj/item/gun/projectile/makarov
 	name = "New-o-Russia handgun"
 	icon_state = "makarov"
@@ -122,7 +122,7 @@
 		icon_state = "makarov"
 	else
 		icon_state = "makarov-e"
-
+*/
 /obj/item/gun/projectile/genmessorp
 	name = "Genmessor stubpistol"
 	icon_state = "sheetp"
@@ -179,7 +179,7 @@
 		icon_state = "gyropistolloaded"
 	else
 		icon_state = "gyropistol"
-
+/*
 /obj/item/gun/projectile/pistol
 	name = "holdout pistol"
 	desc = "The Lumoco Arms P3 Whisper. A small, easily concealable gun. Uses 9mm rounds."
@@ -265,7 +265,7 @@
 		/obj/item/ammo_casing/a762              = "7.62mm",
 		/obj/item/ammo_casing/a556              = "5.56mm"
 		)
-
+*/
 /obj/item/gun/projectile/pirate/New()
 	ammo_type = pick(ammo_types)
 	desc += " Uses [ammo_types[ammo_type]] rounds."

@@ -71,7 +71,7 @@
 	var/fire_sound_text = "gunshot"
 	var/far_fire_sound = null
 	var/fire_anim = null
-	var/screen_shake = 0 //shouldn't be greater than 2 unless zoomed
+	var/screen_shake = 0.05 //shouldn't be greater than 2 unless zoomed
 	var/silenced = 0
 	var/accuracy = 0   //accuracy is measured in tiles. +1 accuracy means that everything is effectively one tile closer for the purpose of miss chance, -1 means the opposite. launchers are not supported, at the moment.
 	var/scoped_accuracy = null
@@ -435,7 +435,7 @@
 		P.accuracy -= 3
 
 	if(user.combat_mode)
-		P.accuracy += 2
+		return		//P.accuracy += 2
 
 	if(!user.combat_mode)
 		P.dispersion += mod
