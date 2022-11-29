@@ -5,7 +5,7 @@
 	suit = /obj/item/clothing/suit/armor/governor
 	glasses = /obj/item/clothing/glasses/sunglasses
 	uniform = /obj/item/clothing/under/rank/roguetrader
-	belt = /obj/item/gun/energy/las/laspistol/militarum/lord
+	belt = /obj/item/gun/energy/las/laspistol/lord
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/heads/rt
 	shoes = /obj/item/clothing/shoes/jackboots/noble

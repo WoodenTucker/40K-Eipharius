@@ -275,7 +275,7 @@ obj/item/gun/energy/retro
 		)
 
 /obj/item/gun/energy/las/lasgun/accatran
-	name = "Accatran Mark II Pattern Lasgun"
+	name = "Accatran Mark VI Pattern Lasgun"
 	desc = "The Accatran Patterns are bullpup in design, affording them similar damage to that of a laspistol but with the capacity of a typical lasrifle and with a very high rate of fire for a lasgun. The choice pattern of the Elite Elysian Droptroopers."
 	icon_state = "accatran"
 	item_state = "lascar"
@@ -356,6 +356,36 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 20
 	wielded_item_state = "chaosppistol"
 
+/obj/item/gun/energy/las/laspistol/accatran
+	name = "Accatran MK II Pattern Laspistol"
+	desc = "An older pattern of the Accatran Laspistols. Fully auto but extremely power inefficient and somewhat inaccurate."
+	icon_state = "accatranp"
+	item_state = "chaosppistol" // just a red generic las on mob. replace asap
+	slot_flags = SLOT_BELT|SLOT_S_STORE
+	w_class = ITEM_SIZE_NORMAL
+	force = 8
+	accuracy = -3.5 // a lot worse than others
+	fire_delay = -1
+	automatic = 1
+	move_delay = 2.5
+	charge_cost = 170
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	sales_price = 35
+	wielded_item_state = "chaosppistol"
+
+/obj/item/gun/energy/las/laspistol/lord
+	name = "Artificer Laspistol"
+	desc = "It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight and extremely efficient in energy usage. All the luxurious makings of a weapon from Terra itself."
+	icon_state = "lordlaspistol"
+	charge_meter = FALSE //must have, due to having only 1 item state.
+	accuracy = 1
+	charge_cost = 45
+	firemodes = list(
+		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
+	)
+	sales_price = 80
 
 /obj/item/gun/energy/las/laspistol/shitty
 	name = "Portsmith W. Laspistol"
@@ -396,21 +426,9 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="automatic",       burst=3, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0.5),
 		)
 
-/obj/item/gun/energy/las/laspistol/militarum/lord
-	name = "Artificer Laspistol"
-	desc = "It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight and extremely efficient in energy usage. All the luxurious makings of a weapon from Terra itself."
-	icon_state = "lordlaspistol"
-	charge_meter = FALSE //must have, due to having only 1 item state.
-	accuracy = 1
-	charge_cost = 45
-	firemodes = list(
-		list(mode_name="semi-automatic",   burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic", 	burst=3, fire_delay=3.1, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0.7),
-	)
-	sales_price = 80
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Lucius-pattern Laspistol"
-	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg."
+	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge."
 	icon_state = "luciuspistol"
 	force = 10
 	one_hand_penalty = 2.5
@@ -421,7 +439,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 25
+	sales_price = 45
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
