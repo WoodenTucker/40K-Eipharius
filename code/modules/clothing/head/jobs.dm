@@ -258,6 +258,11 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/krieghelmet/medicae
+	name = "Krieg Mark IX/M Helmet"
+	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production. This one has the red markings of a Combat Medicae."
+	icon_state = "mkrieghelm"
+
 /obj/item/clothing/head/valushanka
 	name = "Valhallan Ushanka"
 	desc = "The Ushanka worn by Valhallan Regiment, smells of piss, amasec and sweat. You shouldn't touches it if you're not Valhallan."
@@ -276,6 +281,20 @@
 		icon_state = initial(icon_state)
 		to_chat(user, "You lower the ear flaps on the ushanka.")
 
+/obj/item/clothing/head/valushanka/medicae
+	name = "Valhallan Medicae Ushanka"
+	desc = "The Ushanka worn by Valhallan Regiment, smells of piss, amasec and sweat. You shouldn't touches it if you're not Valhallan. This one bears the red markings of a Combat Medicae."
+	icon_state = "mvalshanka2"
+	icon_state_up = "mvalshanka"
+
+/obj/item/clothing/head/valushanka/medicae/attack_self(mob/user as mob)
+	if(icon_state == initial(icon_state))
+		icon_state = icon_state_up
+		to_chat(user, "You raise the ear flaps on the ushanka.")
+	else
+		icon_state = initial(icon_state)
+		to_chat(user, "You lower the ear flaps on the ushanka.")
+
 /obj/item/clothing/head/catachan
 	name = "Catachan Headband"
 	desc = "Catachan Regiment refuses to acknowledge any sort of protection in favour of their mentality and physical capabilties, Thus. The iconic red headband go with them anywhere they go.. But does it protects them from Bolters or lasguns? No."
@@ -283,6 +302,11 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(melee = 50, bullet = 10, laser = 5, energy = 35, bomb = 10, bio = 0, rad = 0)
+
+/obj/item/clothing/head/catachan/medicae
+	name = "Catachan Medicae Headband"
+	desc = "Catachan Regiment refuses to acknowledge any sort of protection in favour of their mentality and physical capabilties, Thus. The iconic red headband go with them anywhere they go.. But does it protects them from Bolters or lasguns? No. This headband is worn by a Catachan Medicae."
+	icon_state = "mCatachan_Headband"
 
 /obj/item/clothing/head/commissar
 	name = "Commissar's Peaked Cap"

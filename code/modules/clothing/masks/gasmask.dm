@@ -228,6 +228,12 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	unacidable = 1 //acid proof bitch
+
+/obj/item/clothing/mask/gas/krieg/medicae
+	name = "Mark IXb/M Gas Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Combat Medicae."
+	icon_state = "mkriegmask"
+
 /obj/item/clothing/mask/gas/commissar
 	name = "Mark IXb/C Gas Mask"
 	desc = "Krieg Regiment Commissar are issued with the same pattern of Gas mask like the others, However this one have slight different hue."
