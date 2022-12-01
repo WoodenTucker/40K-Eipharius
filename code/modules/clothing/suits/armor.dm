@@ -649,7 +649,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
-/obj/item/clothing/suit/armor/valhallanarmor
+/obj/item/clothing/suit/armor/valhallanarmor/medicae
 	name = "Valhallan Medicae Overcoat"
 	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions. Bears the red markings of a Combat Medicae."
 	icon_state = "mvalarmor"
