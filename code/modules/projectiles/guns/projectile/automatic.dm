@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/automatic //Hopefully someone will find a way to make these fire in bursts or something. --Superxpdude
 	name = "prototype SMG"
-	desc = "A protoype lightweight, fast firing gun. Uses 9mm rounds."
+	desc = "This shouldnt exist and is bugged or not working. Ahelp immediately."
 	icon_state = "saber"	//ugly
 	w_class = ITEM_SIZE_NORMAL
 	load_method = MAGAZINE
@@ -67,7 +67,7 @@
 		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 2)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
-
+/*
 /obj/item/gun/projectile/automatic/mini_uzi/update_icon()
 	..()
 	if(ammo_magazine)
@@ -109,7 +109,7 @@
 	else
 		icon_state = "c20r"
 	return
-
+*/
 /obj/item/gun/projectile/automatic/m22
 	name = "M-22 Assault Rifle"
 	desc = "Well-loved by grunts everywhere"
@@ -135,7 +135,7 @@
 		list(mode_name="automatic",   	 burst=2, fire_delay=3, one_hand_penalty=4, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		)
 
-
+/*
 /obj/item/gun/projectile/automatic/sts35
 	name = "assault rifle"
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. The serial number has been scratched off. Uses 5.56mm rounds."
@@ -229,7 +229,8 @@
 		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1),
 		list(mode_name="fire grenades",  burst=null, fire_delay=3, use_launcher=1,    one_hand_penalty=5, burst_accuracy=null, dispersion=null, automatic = 0)
 		)
-
+*/ // combi bolter underbarrel stuff to use later
+/*
 	var/use_launcher = 0
 	var/obj/item/gun/launcher/grenade/underslung/launcher
 
@@ -274,7 +275,7 @@
 		to_chat(user, "\The [launcher] has \a [launcher.chambered] loaded.")
 	else
 		to_chat(user, "\The [launcher] is empty.")
-
+*//*
 /obj/item/gun/projectile/automatic/l6_saw
 	name = "light machine gun"
 	desc = "A rather traditionally made L6 SAW with a pleasantly lacquered wooden pistol grip. Has 'Aussec Armoury- 2531' engraved on the reciever." //probably should refluff this
@@ -304,7 +305,7 @@
 		list(mode_name="automatic",   	 burst=1, one_hand_penalty=2, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		//list(mode_name="long bursts",	burst=8, one_hand_penalty=9, burst_accuracy = list(0,-1,-1,-2,-2,-2,-3,-3), dispersion = list(1.0, 1.0, 1.0, 1.0, 1.2)),
 		)
-
+// take later for heavy bolter and deploy able weapons ?
 	var/cover_open = 0
 
 /obj/item/gun/projectile/automatic/l6_saw/mag
@@ -358,3 +359,4 @@
 		to_chat(user, "<span class='warning'>You need to open the cover to unload [src].</span>")
 		return
 	..()
+*/

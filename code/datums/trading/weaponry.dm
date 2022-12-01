@@ -93,5 +93,4 @@
 								/obj/item/gun/projectile/sec/MK                  = TRADER_THIS_TYPE,
 								/obj/item/gun/projectile/silenced/cheap          = TRADER_THIS_TYPE,
 								/obj/item/gun/energy/laser/dogan                 = TRADER_THIS_TYPE,
-								/obj/item/gun/projectile/automatic/mini_uzi/usi  = TRADER_THIS_TYPE,
 								/obj/item/clothing/accessory/holster                    = TRADER_ALL)

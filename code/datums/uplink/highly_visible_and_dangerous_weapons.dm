@@ -70,14 +70,7 @@
 	item_cost = 52
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 20)
-	path = /obj/item/gun/projectile/automatic/c20r
-
-/datum/uplink_item/item/visible_weapons/assaultrifle
-	name = "Assault Rifle"
-	item_cost = 60
-	antag_roles = list(MODE_MERCENARY)
-	antag_costs = list(MODE_MERCENARY = 9)
-	path = /obj/item/gun/projectile/automatic/sts35
+	path = /obj/item/gun/projectile/automatic
 
 /* NO!
 /datum/uplink_item/item/visible_weapons/advanced_energy_gun

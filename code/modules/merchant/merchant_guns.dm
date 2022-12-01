@@ -21,7 +21,3 @@
 /obj/item/gun/energy/laser/dogan/consume_next_projectile()
 	projectile_type = pick(/obj/item/projectile/beam/midlaser, /obj/item/projectile/beam/lastertag/red, /obj/item/projectile/beam)
 	return ..()
-
-/obj/item/gun/projectile/automatic/mini_uzi/usi
-	desc = "An uncommon machine pistol, sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. This one looks especially run-down. Uses .45 rounds."
-	condition = 45

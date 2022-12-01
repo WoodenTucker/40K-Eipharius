@@ -918,7 +918,7 @@ obj/item/gun/projectile/automatic/autogun
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 
-
+/*
 /obj/item/gun/projectile/automatic/autoshotty
 	name = "Astartes Shotgun"
 	desc = "A shotgun made for the Adeptus Astartes."
@@ -962,7 +962,7 @@ obj/item/gun/projectile/automatic/autogun
 	max_ammo = 6
 	multiple_sprites = 1
 	force = 8
-
+*/
 /obj/item/gun/projectile/warfare
 	name = "Villiers Pistol"
 	icon_state = "villiers"
@@ -1207,7 +1207,7 @@ obj/item/gun/projectile/automatic/autogun
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	max_shells = 30
+	max_shells = 15
 	caliber = ".75"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	ammo_type = /obj/item/ammo_casing/bolter

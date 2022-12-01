@@ -292,14 +292,10 @@
 
 /obj/random/projectile/spawn_choices()
 	return list(/obj/item/gun/projectile/shotgun/pump = 3,
-				/obj/item/gun/projectile/automatic/c20r = 2,
-				/obj/item/gun/projectile/automatic/sts35 = 2,
-				/obj/item/gun/projectile/automatic/z8 = 2,
 				/obj/item/gun/projectile/colt = 4,
 				/obj/item/gun/projectile/sec = 4,
 				/obj/item/gun/projectile/sec/wood = 3,
 				/obj/item/gun/projectile/revolver = 2,
-				/obj/item/gun/projectile/automatic/wt550 = 3,
 				/obj/item/gun/projectile/revolver/detective = 4,
 				/obj/item/gun/projectile/revolver/mateba = 2,
 				/obj/item/gun/projectile/shotgun/doublebarrel = 4,
