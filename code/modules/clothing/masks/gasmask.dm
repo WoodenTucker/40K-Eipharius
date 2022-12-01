@@ -233,6 +233,7 @@
 	name = "Mark IXb/M Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Combat Medicae."
 	icon_state = "mkriegmask"
+	item_state = "mkriegmask"
 
 /obj/item/clothing/mask/gas/commissar
 	name = "Mark IXb/C Gas Mask"

@@ -631,7 +631,7 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = -1
 
-/obj/item/clothing/suit/armor/catachan
+/obj/item/clothing/suit/armor/catachan/medicae
 	name = "Catachan Medicae Flak Vest"
 	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. This one is worn by Catachan Combat Medicae." // Why are you gei?
 	icon_state = "mCatachan_Vest"

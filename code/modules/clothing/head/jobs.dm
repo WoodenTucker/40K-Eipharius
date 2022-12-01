@@ -262,6 +262,7 @@
 	name = "Krieg Mark IX/M Helmet"
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production. This one has the red markings of a Combat Medicae."
 	icon_state = "mkrieghelm"
+	item_state = "mkrieghelm"
 
 /obj/item/clothing/head/valushanka
 	name = "Valhallan Ushanka"
