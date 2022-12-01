@@ -109,7 +109,7 @@
 		/obj/item/gun/projectile/revolver,
 		/obj/item/ammo_magazine/a357
 	)
-
+/*
 /obj/item/storage/backpack/satchel/syndie_kit/revolver2
 	name = "\improper Dandy tough operator"
 	desc = ".44 magnum revolver, with ammunition."
@@ -117,7 +117,7 @@
 		/obj/item/gun/projectile/revolver/webley,
 		/obj/item/ammo_magazine/c44
 	)
-
+*/
 /obj/item/storage/box/syndie_kit/toxin
 	name = "toxin kit"
 	desc = "An apple will not be enough to keep the doctor away after this."

@@ -35,8 +35,7 @@ var/datum/antagonist/renegade/renegades
 		/obj/item/gun/projectile/silenced,
 		/obj/item/gun/projectile/revolver,
 		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
-		/obj/item/gun/projectile/magnum_pistol,
-		list(/obj/item/gun/projectile/revolver/detective, /obj/item/gun/projectile/revolver/deckard)
+		list(/obj/item/gun/projectile/revolver/detective,)
 		)
 
 /datum/antagonist/renegade/New()

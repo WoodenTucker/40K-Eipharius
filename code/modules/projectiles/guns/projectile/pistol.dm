@@ -139,7 +139,7 @@
 		icon_state = "sheetp"
 	else
 		icon_state = "sheetp-e"
-
+/*
 /obj/item/gun/projectile/magnum_pistol
 	name = ".50 magnum pistol"
 	desc = "The HelTek Magnus, a robust terran handgun that uses .50 AE ammo."
@@ -157,7 +157,7 @@
 		icon_state = "magnum"
 	else
 		icon_state = "magnum-e"
-
+*/
 /obj/item/gun/projectile/gyropistol
 	name = "gyrojet pistol"
 	desc = "A bulky pistol designed to fire self propelled rounds."

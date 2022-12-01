@@ -98,7 +98,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/techpriest/skitarius, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/skitshoes, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanic/rifle, slot_s_store)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/galvanicrifle, slot_s_store)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat/combat/warfare, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/galvanic, slot_in_backpack)

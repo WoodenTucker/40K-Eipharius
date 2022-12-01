@@ -46,7 +46,7 @@
 	else
 		icon_state = "smg-e"
 
-
+/*
 /obj/item/gun/projectile/automatic/machine_pistol
 	name = ".45 machine pistol"
 	desc = "The Lumoco Arms MP6 Vesper, A fairly common machine pistol. Sometimes refered to as an 'uzi' by the backwater spacers it is often associated with. Uses .45 rounds."
@@ -67,6 +67,7 @@
 		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 2)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
+*/
 /*
 /obj/item/gun/projectile/automatic/mini_uzi/update_icon()
 	..()

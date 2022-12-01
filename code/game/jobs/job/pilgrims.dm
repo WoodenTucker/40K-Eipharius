@@ -84,7 +84,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/ushanka2, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)

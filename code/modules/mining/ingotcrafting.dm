@@ -839,7 +839,7 @@
 			if(7)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/lp338(user.loc,1)
+				new /obj/item/ammo_magazine/bolt_pistol_magazine(user.loc,1)
 				qdel(src)
 				return
 			if(8)
@@ -1699,7 +1699,7 @@ kultrinium
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/automatic/galvanic/rifle(user.loc)
+				new /obj/item/gun/projectile/automatic/galvanicrifle(user.loc)
 				qdel(src)
 				return
 			if(3)
@@ -1730,7 +1730,7 @@ kultrinium
 			if(7)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338(user.loc)
+				new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty(user.loc)
 				qdel(src)
 				return
 			if(8)

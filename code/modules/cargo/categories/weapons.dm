@@ -41,21 +41,10 @@
 	name = "Scoped Stub Rifle"
 	cost = 48
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
-
-/datum/cargo_entry/weapon/leverrifle
-	name = "Lever Stub Rifle"
-	cost = 45
-	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
-
 /datum/cargo_entry/weapon/triangong
 	name = "Triangong Stub Rifle"
 	cost = 50
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
-
-/datum/cargo_entry/weapon/sniperrifle
-	name = "Lp338 Sniper Rifle"
-	cost = 82
-	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
 
 /datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
@@ -111,11 +100,6 @@
 	name = "Scipio Pattern Rifle"
 	cost = 57
 	item_path = /obj/item/gun/projectile/automatic/m22/combatrifle
-
-/datum/cargo_entry/weapon/aegis
-	name = "Aegis Pattern Rifle"
-	cost = 69
-	item_path = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"

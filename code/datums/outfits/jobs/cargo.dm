@@ -59,16 +59,3 @@
 	head = /obj/item/clothing/head/helmet/space/void/mining
 	mask = /obj/item/clothing/mask/breath
 	suit = /obj/item/clothing/suit/space/void/mining
-
-
-/decl/hierarchy/outfit/job/cargo/mining/explorer
-	name = OUTFIT_JOB_NAME("Salvage Miner")
-	head = /obj/item/clothing/head/helmet/hard_had
-	mask = /obj/item/clothing/mask/gas/explorer
-	uniform = /obj/item/clothing/under/rank/explorer
-	back = /obj/item/storage/backpack/industrial
-	gloves = /obj/item/clothing/gloves/thick/swat/combat
-	shoes = /obj/item/clothing/shoes/jackboots
-	r_pocket = /obj/item/ammo_box/rifle
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
-	backpack_contents = list(/obj/item/crowbar = 1, /obj/item/storage/ore = 1)

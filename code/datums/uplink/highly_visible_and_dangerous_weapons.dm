@@ -49,14 +49,14 @@
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 14)
 	path = /obj/item/storage/backpack/satchel/syndie_kit/revolver
-
+/*
 /datum/uplink_item/item/visible_weapons/revolver2
 	name = "Revolver, .44"
 	item_cost = 48
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 5)
 	path = /obj/item/storage/backpack/satchel/syndie_kit/revolver2
-
+*/
 /datum/uplink_item/item/visible_weapons/grenade_launcher
 	name = "Grenade Launcher"
 	item_cost = 60
@@ -91,7 +91,7 @@
 	item_cost = 45
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 10)
-	path = /obj/item/gun/projectile/automatic/machine_pistol
+	path = /obj/item/gun/projectile/automatic
 
 /datum/uplink_item/item/visible_weapons/combat_shotgun
 	name = "Combat Shotgun"
@@ -106,13 +106,13 @@
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 10)
 	path = /obj/item/gun/projectile/shotgun/doublebarrel/sawn
-
+/*
 /datum/uplink_item/item/visible_weapons/deagle
 	name = "Magnum Pistol"
 	antag_roles = list(MODE_MERCENARY)
 	item_cost = 52
 	path = /obj/item/gun/projectile/magnum_pistol
-
+*/
 /datum/uplink_item/item/visible_weapons/detective_revolver
 	name = "Holdout Revolver"
 	item_cost = 38

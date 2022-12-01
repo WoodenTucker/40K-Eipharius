@@ -110,6 +110,7 @@
 	..()
 	if(user.zoomed)
 		user.do_zoom()
+/*
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
 	name = "Mark IV .338 Stub Rifle"
 	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
@@ -180,7 +181,7 @@
 /obj/item/ammo_magazine/lp338/needler/empty
 	ammo_type = /obj/item/ammo_casing/lp338/needler
 	initial_ammo = 0
-
+*/
 
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
@@ -220,6 +221,7 @@
 	add_bayonet()
 	desc += " This one has a bayonet."
 
+/*
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester
 	name = "\improper Boscolet Lever Rifle"
 	desc = "The lever action version of the Stub Rifle. Has all the same benefits and issues."
@@ -237,7 +239,8 @@
 	gping = FALSE
 	sales_price = 0
 	accuracy = 0
-
+*/
+/*
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
 	name = "\improper Crucible Pattern Stub Rifle"
 	desc = "The crucible is an incredibly accurate yet out of date hunting rifle used for hunting large game."
@@ -246,7 +249,7 @@
 	empty_icon = "oldglory-e"
 	accuracy = 3
 	sales_price = 20
-
+*/
 
 //Paryying.
 
@@ -487,7 +490,7 @@
 	desc = "Found either in your stubber, in your satchel, or on the ground empty."
 	max_ammo = 20
 	icon_state = "autorifle"
-*/
+
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 	name = "Aegis Pattern Rifle"
 	desc = "A very powerful semi-automatic aegis pattern stub-rifle."
@@ -517,7 +520,7 @@
 
 /obj/item/ammo_magazine/a762/m14/battlerifle_mag
 	name = "Armageddon Pattern magazine"
-/*
+
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
 	name = "Mk.1 Armageddon Pattern Stubber"
 	icon_state = "rsc"
@@ -1521,7 +1524,7 @@ obj/item/gun/projectile/automatic/autogun
 	else
 		icon_state = "scatapult-e"
 
-/obj/item/gun/projectile/automatic/galvanic/rifle
+/obj/item/gun/projectile/automatic/galvanicrifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
 	icon_state = "galvrifle" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)

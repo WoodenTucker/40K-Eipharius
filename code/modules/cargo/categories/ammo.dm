@@ -51,11 +51,6 @@
 	cost = 6
 	item_path = /obj/item/ammo_magazine/c45rifle/combatrifle
 
-/datum/cargo_entry/ammo/aegistub
-	name = "Aegis Stub Magazine"
-	cost = 7
-	item_path = /obj/item/ammo_magazine/a762/m14/battlerifle_mag
-
 /datum/cargo_entry/ammo/shellbox
 	name = "Shotgun Shell Box"
 	cost = 7
@@ -105,17 +100,6 @@
 	name = "AP Heavy Sniper Ammo"
 	cost = 18
 	item_path = /obj/item/storage/box/sniperammo/apds
-
-/datum/cargo_entry/ammo/lp338mag
-	name = "Lp338 Sniper Magazine"
-	cost = 8
-	item_path = /obj/item/ammo_magazine/lp338
-
-/datum/cargo_entry/ammo/lp338needler
-	name = "Lp338 Sniper Needler Magazine"
-	cost = 15
-	item_path = /obj/item/ammo_magazine/lp338/needler
-
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"
 	cost = 13

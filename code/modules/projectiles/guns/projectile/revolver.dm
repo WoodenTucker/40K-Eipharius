@@ -149,8 +149,8 @@
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	sales_price = 30
-
-// Blade Runner pistol.
+/*
+// Blade Runner pistol. // sprite no work
 /obj/item/gun/projectile/revolver/deckard
 	name = "Deckard .44"
 	desc = "A custom-built revolver, based off the semi-popular Detective Special model."
@@ -191,7 +191,9 @@
 	icon_state = "revolver"
 	desc += " Someone snipped off the barrel's toy mark. How dastardly."
 	return 1
-
+*/
+// webley sprite no work
+/*
 /obj/item/gun/projectile/revolver/webley
 	name = "service revolver"
 	desc = "A rugged top break revolver based on the Webley Mk. VI model, with modern improvements. Uses .44 magnum rounds."
@@ -201,3 +203,4 @@
 	caliber = ".44"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/c44
+*/

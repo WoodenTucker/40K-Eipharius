@@ -387,7 +387,6 @@ Template:
 				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 3,
 				/obj/item/gun/projectile/shotgun/pump = 3,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 4,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 5,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightstubberammo
@@ -526,13 +525,10 @@ Template:
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 6,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter = 4,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 3,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 4,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory = 1,
 				/obj/item/gun/projectile/shotgun/pump/shitty = 4,
 				/obj/item/gun/projectile/automatic/stubber = 3,
 				/obj/item/gun/projectile/automatic/stubber/villiers = 2,
 				/obj/item/gun/projectile/automatic/stubber/cognis = 1,
-				/obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle = 1,
 				/obj/item/gun/projectile/automatic/m22/combatrifle = 1,
 				/obj/item/gun/projectile/automatic/machinepistol = 4,
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 3,

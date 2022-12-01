@@ -52,7 +52,6 @@ var/list/worths = list(
 					/obj/item/gun/projectile/colt = 1700,
 					/obj/item/gun/projectile/sec/MK = 1200,
 					/obj/item/gun/projectile/sec = 1650,
-					/obj/item/gun/projectile/magnum_pistol = 2000,
 					/obj/item/gun/projectile/gyropistol = 5500,
 					/obj/item/gun/projectile/heavysniper = 12000,
 					/obj/item/gun/projectile/silenced/cheap = 1500,

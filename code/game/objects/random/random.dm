@@ -264,8 +264,7 @@
 	desc = "random bolties"
 
 /obj/random/bolt_action/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/boltaction/shitty,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester)
+	return list(/obj/item/gun/projectile/shotgun/pump/boltaction/shitty,)
 
 /obj/random/energy
 	name = "Random Energy Weapon"
