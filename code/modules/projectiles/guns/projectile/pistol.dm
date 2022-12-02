@@ -404,17 +404,6 @@
 	move_delay = 1.3
 	sales_price = 58
 
-/obj/item/gun/projectile/bolter_pistol/arbite
-	name = "Ceres Pattern Service Bolt Pistol"
-	icon_state = "bpistol"
-	item_state = "bpistol"
-	force = 15
-	caliber = ".75"
-	accuracy = -0.5 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 1.4
-	move_delay = 1.3
-	sales_price = 58
-
 /obj/item/gun/projectile/bolter_pistol/astarte
 	name = "Mark III Pattern Bolt Pistol"
 	desc = "The standard Astarte-issued bolt pistol unlike many other sidearms is often used as a Primary weapon by the Adeptus Astartes and has proven itself just as capable as it's heavier cousins."
@@ -468,7 +457,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
-	max_shells = 1000 //Lots of ammo
+	max_shells = 60
 	caliber = "shuriken"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5, TECH_ILLEGAL = 3)
 	ammo_type = /obj/item/ammo_casing/shuriken/pistol

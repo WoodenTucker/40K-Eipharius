@@ -532,7 +532,6 @@ Template:
 				/obj/item/gun/projectile/automatic/m22/combatrifle = 1,
 				/obj/item/gun/projectile/automatic/machinepistol = 4,
 				/obj/item/gun/projectile/automatic/machinepistol/a80 = 3,
-				/obj/item/gun/projectile/automatic/messina = 3,
 				/obj/item/gun/projectile/automatic/autogun = 1,
 				/obj/item/gun/projectile/automatic/autogrim = 2,
 				/obj/item/gun/projectile/automatic/autogrim/krieg = 1,

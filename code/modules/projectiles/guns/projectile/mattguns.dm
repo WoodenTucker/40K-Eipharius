@@ -396,7 +396,7 @@
 	add_bayonet()
 	desc += " This one has a bayonet."
 
-
+/*
 /obj/item/gun/projectile/automatic/m22/warmonger
 	name = "Mk.3 Warmonger"
 	desc = "A semi automatic battle rifle. Fires faster, and more reliably than most of the shitty bolt action rifles the grunts get."
@@ -441,7 +441,7 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 	gun_type = GUN_SMG
 	//gun_type = GUN_AUTOMATIC
-
+*/
 /* // ISN'T USED. KEEPING IT HERE IF YOU WANNA COPY ITS SOUNDS OR SOMETHING //
 /obj/item/gun/projectile/automatic/m22/warmonger/fully_auto/nemesis
 	name = "Mk.1 Nemesis"
@@ -742,7 +742,7 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
-
+/* // sprite poor quality
 obj/item/gun/projectile/automatic/messina
 	name = "Messina Pattern Autogun"
 	desc = "A rugged autogun of forged within the walls of Messina, it is an accurate two burst weapon based on the Krieg Design with minor alterations."
@@ -775,7 +775,7 @@ obj/item/gun/projectile/automatic/messina
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="2-round bursts", burst=2, fire_delay=2.4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
-
+*/
 obj/item/gun/projectile/automatic/autogun
 	name = "Agripinaa Pattern Autogun"
 	desc = "A rugged autogun of Agripinaa design, it has a very high rate of fire and is designed for close quarters fighting."
@@ -799,9 +799,9 @@ obj/item/gun/projectile/automatic/autogun
 	gun_type = GUN_SMG
 
 	wielded_item_state = "agripinaa"
-	unwielded_loaded_icon = "autorifle"
+	unwielded_loaded_icon = "agripinaa"
 	wielded_loaded_icon = "agripinaa"
-	unwielded_unloaded_icon = "autorifle-e"
+	unwielded_unloaded_icon = "agripinaa_e"
 	wielded_unloaded_icon = "agripinaa_e"
 
 	firemodes = list(
@@ -841,21 +841,6 @@ obj/item/gun/projectile/automatic/autogun
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="2-round bursts", burst=2, fire_delay=2.5, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
-
-/obj/item/gun/projectile/automatic/machinepistol/wooden
-	name = "Mk.23 Soulburn Pattern Autogun"
-	desc = "A mass-produced autogun local to the frontier, often used by pirates and revolutionaries."
-	icon_state = "schmeiser"
-	item_state = "schmeiser"
-	wielded_item_state = "schmeiser-wielded"
-
-	loaded_icon = "schmeiser"
-	unwielded_loaded_icon = "schmeiser"
-	wielded_loaded_icon = "schmeiser-wielded"
-	unloaded_icon = "schmeiser-e"
-	unwielded_unloaded_icon = "schmeiser-e"
-	wielded_unloaded_icon = "schmeiser-e"
-
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
 	desc = "An incredibly dangerous hand-held flamethrower used often in infiltration or siege operations."

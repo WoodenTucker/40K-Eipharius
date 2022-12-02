@@ -81,11 +81,6 @@
 	cost = 71
 	item_path = /obj/item/gun/projectile/automatic/autogun
 
-/datum/cargo_entry/weapon/messina
-	name = "Messina Pattern Autogun"
-	cost = 73
-	item_path = /obj/item/gun/projectile/automatic/messina
-
 /datum/cargo_entry/weapon/grim
 	name = "GRIM Autogun"
 	cost = 74

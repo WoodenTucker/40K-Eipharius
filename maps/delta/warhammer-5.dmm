@@ -596,7 +596,7 @@
 "wf" = (/obj/effect/wingrille_spawn/reinforced/polarized,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "wh" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hangarpact)
 "wk" = (/obj/structure/railing,/obj/random/loot/randomarmor,/obj/item/clothing/head/bardhat,/obj/item/gun/energy/pulse_rifle/pistol,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/krootship)
-"wo" = (/obj/item/gun/projectile/bolter_pistol/arbite,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
+"wo" = (/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "wr" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/turf/bloodbar,/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Black Ship Simiel"; req_access = list(202)},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ws" = (/obj/machinery/computer/station_alert/all,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "wx" = (/obj/structure/lattice,/obj/structure/window/reinforced{color = "grey"; dir = 1},/obj/effect/floor_decal/newcorner/red/solid,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "gray"},/area/cadiaoutpost/oa/engineering)
