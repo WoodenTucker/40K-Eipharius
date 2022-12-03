@@ -176,7 +176,6 @@
 		/obj/item/reagent_containers/food/snacks/donut/,
 		/obj/item/melee/baton,
 		/obj/item/gun/energy/taser,
-		/obj/item/gun/energy/stunrevolver,
 		/obj/item/flame/lighter,
 		/obj/item/clothing/glasses/hud/security,
 		/obj/item/device/flashlight,

@@ -1,4 +1,4 @@
-
+/*
 /obj/item/gun/projectile/colt
 	name = "vintage .45 pistol"
 	desc = "A cheap Martian knock-off of a Colt M1911. Uses .45 rounds."
@@ -20,7 +20,7 @@
 		icon_state = "usp"
 	else
 		icon_state = "usp-e"
-
+*/
 /obj/item/gun/projectile/sec
 	name = ".45 pistol"
 	desc = "The NT Mk58 is a cheap, ubiquitous sidearm, produced by a NanoTrasen subsidiary. Found pretty much everywhere humans are. Uses .45 rounds."

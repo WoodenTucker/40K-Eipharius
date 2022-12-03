@@ -280,8 +280,7 @@
 				/obj/item/gun/energy/gun/nuclear = 1,
 				/obj/item/gun/energy/ionrifle = 2,
 				/obj/item/gun/energy/taser = 4,
-				/obj/item/gun/energy/crossbow/largecrossbow = 2,
-				/obj/item/gun/energy/stunrevolver = 4)
+				/obj/item/gun/energy/crossbow/largecrossbow = 2,)
 
 /obj/random/projectile
 	name = "Random Projectile Weapon"

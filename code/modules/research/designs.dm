@@ -594,21 +594,14 @@ other types of metals and chemistry for reagents).
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "silver" = 500)
 	build_path = /obj/item/device/flash/advanced
 	sort_string = "TADAA"
-
-/datum/design/item/stunrevolver
-	id = "stunrevolver"
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_POWER = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000)
-	build_path = /obj/item/gun/energy/stunrevolver
-	sort_string = "TADAB"
-
+/*
 /datum/design/item/stunrifle
 	id = "stun_rifle"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 1000, "silver" = 500)
 	build_path = /obj/item/gun/energy/stunrevolver/rifle
 	sort_string = "TADAC"
-
+*/
 /datum/design/item/nuclear_gun
 	id = "nuclear_gun"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)

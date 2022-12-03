@@ -81,7 +81,7 @@
 	var/obj/item/gun/projectile/colt/detective/d = /obj/item/gun/projectile/colt/detective
 	name = initial(d.name)
 	icon_state = initial(d.icon_state)
-
+/*
 /datum/detective_gun_skin/colt
 	name = "\improper Colt M1911"
 	icon_state = "colt"
@@ -109,3 +109,4 @@
 /datum/detective_gun_skin/vp
 	name = "\improper H&K VP"
 	icon_state = "VP78"
+*/
