@@ -1,5 +1,5 @@
 /obj/item/gun/projectile/automatic //Hopefully someone will find a way to make these fire in bursts or something. --Superxpdude
-	name = "prototype SMG"
+	name = "template SMG"
 	desc = "This shouldnt exist and is bugged or not working. Ahelp immediately."
 	icon_state = "saber"	//ugly
 	w_class = ITEM_SIZE_NORMAL
@@ -26,26 +26,6 @@
 		list(mode_name="automatic",   	 burst=1, fire_delay=3, one_hand_penalty=2, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 1)
 		//list(mode_name="short bursts",   burst=5, fire_delay=null,    one_hand_penalty=2, burst_accuracy=list(0,-1,-1,-1,-2), dispersion=list(0.6, 0.6, 1.0, 1.0, 1.2)),
 		)
-
-/obj/item/gun/projectile/automatic/c20r/oldsmg
-	name = "\improper 9MM Harbinger"
-	desc = "A 9MM SMG, popular among prison gaurds and soldiers alike."
-	icon_state = "smg"
-	item_state = "wt550"
-	wielded_item_state = "smg-wielded"
-	one_hand_penalty = 1
-	auto_eject = 0
-	unload_sound = 'sound/weapons/guns/interact/smg_magout.ogg'
-	reload_sound = 'sound/weapons/guns/interact/smg_magin.ogg'
-	cock_sound 	 = 'sound/weapons/guns/interact/smg_cock.ogg'
-
-/obj/item/gun/projectile/automatic/c20r/oldsmg/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "smg"
-	else
-		icon_state = "smg-e"
-
 /*
 /obj/item/gun/projectile/automatic/machine_pistol
 	name = ".45 machine pistol"

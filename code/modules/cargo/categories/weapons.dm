@@ -71,11 +71,6 @@
 	cost = 50
 	item_path = /obj/item/gun/projectile/automatic/machinepistol
 
-/datum/cargo_entry/weapon/a80
-	name = "Nachtwey Autogun"
-	cost = 68
-	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
-
 /datum/cargo_entry/weapon/agripinaa
 	name = "Agripinaa Autogun"
 	cost = 71
@@ -175,12 +170,6 @@
 	name = "Mateba Revolver"
 	cost = 67
 	item_path = /obj/item/gun/projectile/revolver/mateba
-
-/datum/cargo_entry/weapon/reng
-	name = "Renegade Pistol"
-	cost = 54
-	item_path = /obj/item/gun/projectile/talon/renegade
-
 /datum/cargo_entry/weapon/bolterpistol
 	name = "Bolter Pistol"
 	cost = 65

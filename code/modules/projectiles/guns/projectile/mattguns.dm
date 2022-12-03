@@ -373,29 +373,6 @@
 	accuracy = -0.5
 	armor_penetration = 0
 	sales_price = 0
-
-/obj/item/gun/projectile/shotgun/pump/shitty/sawn/smallshotty
-	name = "\improper WTX Reckoning"
-	desc = "Small looking shotgun that fires a powerful shot."
-	icon_state = "smallshotty"
-	item_state = "smallshotty"
-	wielded_item_state = "smallshotty-wielded"
-	empty_icon = "smallshotty-e"
-	one_hand_penalty = 2.5
-	armor_penetration = 2
-	sales_price = 25
-
-/obj/item/gun/projectile/shotgun/pump/shitty/bayonet
-	force = 20
-	sharp = 1
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-
-/obj/item/gun/projectile/shotgun/pump/shitty/bayonet/New()
-	..()
-	add_bayonet()
-	desc += " This one has a bayonet."
-
 /*
 /obj/item/gun/projectile/automatic/m22/warmonger
 	name = "Mk.3 Warmonger"
@@ -684,30 +661,6 @@
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
-		)
-
-/obj/item/gun/projectile/automatic/machinepistol/a80
-	name = "Nachtwey A80 Autogun"
-	desc = "A specialty autogun made by frontier gunsmiths - an improved version of the Mk.22 Autogun with a more stable firing platform."
-	icon_state = "autorifle" // Object Icon
-	item_state = "autorifle" // On-Mob
-	loaded_icon = "autorifle" // Object Icon
-	unloaded_icon = "autorifle-e" // Object Icon
-	move_delay = 2
-	one_hand_penalty = 4
-	accuracy = -0.2
-	fire_delay = 1.4
-	sales_price = 21
-
-	wielded_item_state = "autorifle-wielded" // On-Mob
-	unwielded_loaded_icon = "autorifle"
-	wielded_loaded_icon = "autorifle-wielded"
-	unwielded_unloaded_icon = "autorifle-e"
-	wielded_unloaded_icon = "autorifle-wielded-e"
-
-	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=2.9, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/autogrim // valhallan. keep!

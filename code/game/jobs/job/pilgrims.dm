@@ -581,7 +581,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/gun/projectile/warfare, slot_belt)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c45m/warfare, slot_l_store)
 		if(2)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/talon/renegade, slot_belt)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/talon, slot_belt)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c45m/warfare, slot_l_store)
 		if(3)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/slugrevolver, slot_belt)

@@ -70,21 +70,6 @@
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
 
-/obj/item/gun/projectile/talon/renegade
-	name = "Renegade Pistol"
-	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
-	move_delay= 1.3
-	one_hand_penalty = 0.5
-	accuracy = 2.5
-	fire_delay = 0.5
-	silenced = 1
-	force = 20
-	sales_price = 35
-
-/obj/item/gun/projectile/talon/adept
-	name = "dulled stub pistol"
-	desc = "A slightly dulled, worn out, stub-pistol. Beaten down from the days spent sitting in a desk drawer. It has the sigil of the Adeptus Administratum on it."
-
 /obj/item/gun/projectile/talon/update_icon()
 	..()
 	if(!is_jammed)
@@ -403,30 +388,6 @@
 	fire_delay = 1.4
 	move_delay = 1.3
 	sales_price = 58
-
-/obj/item/gun/projectile/bolter_pistol/astarte
-	name = "Mark III Pattern Bolt Pistol"
-	desc = "The standard Astarte-issued bolt pistol unlike many other sidearms is often used as a Primary weapon by the Adeptus Astartes and has proven itself just as capable as it's heavier cousins."
-	icon_state = "bpistol"
-	item_state = "bpistol"
-	str_requirement = 18
-	force = 30
-	caliber = ".75"
-	accuracy = 2 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 1.2
-	move_delay = 1.5
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_pistol_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_pistol_magazine
-	slot_flags = SLOT_BELT|SLOT_S_STORE
-	sales_price = 68
-
-/obj/item/gun/projectile/bolter_pistol/update_icon()
-	..()
-	if(ammo_magazine)
-		icon_state = "bpistol-10"
-	else
-		icon_state = "bpistol-10-e"
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"

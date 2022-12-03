@@ -379,9 +379,7 @@ Template:
 /obj/random/loot/lightstubber/spawn_choices()
 	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 3,
 				/obj/item/gun/projectile/automatic/machinepistol = 9,
-				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
 				/obj/item/gun/projectile/warfare/kieji = 3,
-				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 8,
 				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
 				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 3,
@@ -435,7 +433,6 @@ Template:
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
 				/obj/item/gun/projectile/slugrevolver = 2,
-				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
@@ -531,14 +528,12 @@ Template:
 				/obj/item/gun/projectile/automatic/stubber/cognis = 1,
 				/obj/item/gun/projectile/automatic/m22/combatrifle = 1,
 				/obj/item/gun/projectile/automatic/machinepistol = 4,
-				/obj/item/gun/projectile/automatic/machinepistol/a80 = 3,
 				/obj/item/gun/projectile/automatic/autogun = 1,
 				/obj/item/gun/projectile/automatic/autogrim = 2,
 				/obj/item/gun/projectile/automatic/autogrim/krieg = 1,
 				/obj/item/gun/projectile/revolver/mateba = 1,
 				/obj/item/gun/projectile/mervex = 4,
 				/obj/item/gun/projectile/necros = 3,
-				/obj/item/gun/projectile/talon/renegade = 1,
 				/obj/item/gun/projectile/slugrevolver = 2)
 
 /obj/random/loot/goodweapon

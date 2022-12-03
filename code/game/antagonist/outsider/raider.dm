@@ -69,7 +69,6 @@ var/datum/antagonist/raider/raiders
 		/obj/item/gun/energy/mindflayer,
 		/obj/item/gun/energy/ionrifle,
 		/obj/item/gun/energy/taser,
-		/obj/item/gun/energy/crossbow/largecrossbow,
 		/obj/item/gun/launcher/crossbow,
 		/obj/item/gun/launcher/grenade/loaded,
 		/obj/item/gun/launcher/pneumatic,
@@ -79,7 +78,6 @@ var/datum/antagonist/raider/raiders
 		/obj/item/gun/projectile/shotgun/doublebarrel,
 		/obj/item/gun/projectile/shotgun/doublebarrel/pellet,
 		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
-		/obj/item/gun/projectile/colt,
 		/obj/item/gun/projectile/sec,
 		/obj/item/gun/projectile/revolver,
 		)

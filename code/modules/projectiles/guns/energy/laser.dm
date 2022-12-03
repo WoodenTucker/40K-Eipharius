@@ -88,7 +88,7 @@
 	max_shots = 5 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
-*/
+
 //NOT READY!
 
 /obj/item/gun/energy/lasercannon
