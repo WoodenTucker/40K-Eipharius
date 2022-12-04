@@ -2,7 +2,7 @@
 
 // Accuracy Guide. Accuracy of -4 = Miss 1/3 shots on average. Accuracy of 0 = You never miss. Make sure weapon accuracy is never higher then -1 unless you want perfect accuracy.
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
-
+/*
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
 	name = "\improper Boscolet Pattern Stub Rifle"
 	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
@@ -939,7 +939,7 @@ obj/item/gun/projectile/automatic/autogun
 	accuracy = -0.5
 	fire_delay = 1
 	sales_price = 14
-
+*/
 /obj/item/ammo_magazine/c45m/warfare
 	name = "slug magazine (.45)"
 	icon_state = "handgunmag"
@@ -1536,3 +1536,4 @@ obj/item/gun/projectile/automatic/autogun
 	firemodes = list()
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
+*/
