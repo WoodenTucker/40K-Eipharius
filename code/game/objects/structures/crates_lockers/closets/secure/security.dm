@@ -40,7 +40,6 @@
 		/obj/item/cartridge/hop,
 		/obj/item/device/radio/headset/heads/hop,
 		/obj/item/storage/box/ids = 2,
-		/obj/item/gun/projectile/sec/flash,
 		/obj/item/device/flash
 	)
 

@@ -258,7 +258,7 @@
 	can_hold = list(
 		/obj/item/ammo_magazine,
 		)
-/
+
 /obj/item/storage/belt/armageddon
 	name = "ammo belt"
 	desc = "Great for holding ammo! This one starts with Armageddon ammo."

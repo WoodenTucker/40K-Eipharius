@@ -390,9 +390,6 @@ Template:
 				/obj/item/ammo_magazine/box/shotgun/slug = 3,
 				/obj/item/ammo_magazine/box/shotgun/bean = 1,
 				/obj/item/ammo_box/rifle = 8,
-				/obj/item/ammo_magazine/c45m/warfare = 3,
-				/obj/item/ammo_magazine/mc9mmt/machinepistol = 9,
-				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
 /obj/random/loot/sidearmammo
@@ -404,8 +401,6 @@ Template:
 /obj/random/loot/sidearmammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/a357 = 4,
 				/obj/item/ammo_magazine/a357 = 4,
-				/obj/item/ammo_magazine/c45m/warfare = 8,
-				/obj/item/ammo_magazine/c45m/warfare = 6,
 				/obj/item/cell/lasgun = 8,
 				/obj/item/ammo_magazine/c44 = 5,
 				/obj/item/ammo_box/shotgun = 3,
@@ -460,8 +455,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/heavystubber/spawn_choices()
-	return list(/obj/item/gun/projectile/automatic/stubber = 25,
-				/obj/item/gun/projectile/automatic/stubber/villiers = 15)
+	return list(/obj/item/gun/projectile/automatic)
 
 // DUNGEON & PILGRIM LOOT. These spawners are generally low quality and have wide selection making them ideal as generic loot.
 
@@ -491,9 +485,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun/longlas = 2,
-				/obj/item/gun/energy/las/lasgun/longlas/krieg = 1,
-				/obj/item/gun/projectile/lockebolter = 2,
+	return list(/obj/item/gun/projectile/lockebolter = 2,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 2,)
 

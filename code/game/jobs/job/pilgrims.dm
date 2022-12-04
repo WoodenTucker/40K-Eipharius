@@ -265,8 +265,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/chokha, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
@@ -411,7 +409,7 @@ Pilgrim Fate System
 	backpack_contents = list(
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/ammo_magazine/c45m/warfare = 1)
+	)
 
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")
@@ -426,10 +424,8 @@ Pilgrim Fate System
 	r_ear = null
 	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
-	/obj/item/storage/box/beanbags = 1,
+	suit_store = /obj/item/gun/projectile // shotty
+	backpack_contents = list( // handful of buck and stun box
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
@@ -556,8 +552,8 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		H.gangeq()
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
+
 
 /datum/job/bouncer
 	title = "Bouncer"

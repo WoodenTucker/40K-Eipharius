@@ -72,7 +72,6 @@ var/datum/antagonist/raider/raiders
 		/obj/item/gun/launcher/crossbow,
 		/obj/item/gun/launcher/grenade/loaded,
 		/obj/item/gun/launcher/pneumatic,
-		/obj/item/gun/projectile/silenced,
 		/obj/item/gun/projectile/shotgun/pump,
 		)
 

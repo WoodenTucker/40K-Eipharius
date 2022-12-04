@@ -196,12 +196,12 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/warfare
+	belt = /obj/item/gun/projectile // big revolva
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
-	backpack_contents = list( // 1 stun 1 buck
+	backpack_contents = list( // 1 stun 1 buck box
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones3/twenty = 1,

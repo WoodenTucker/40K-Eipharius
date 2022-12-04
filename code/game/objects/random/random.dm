@@ -297,9 +297,8 @@
 	icon_state = "secgundark"
 
 /obj/random/handgun/spawn_choices()
-	return list(/obj/item/gun/projectile/sec = 3,
-				/obj/item/gun/energy/gun = 2,
-				/obj/item/gun/projectile/sec/wood = 1)
+	return list(/obj/item/gun/projectile = 3,
+				/obj/item/gun/energy/gun = 2,)
 
 /obj/random/ammo
 	name = "Random Ammunition"
