@@ -84,9 +84,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/ushanka2, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
@@ -102,7 +99,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/mervex, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/projectile, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
@@ -159,7 +156,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/tduster, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/head/det, slot_head )
-			equip_to_slot_or_del(new /obj/item/gun/projectile/necros, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/gun/projectile, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/forensics/sample_kit/powder, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c44, slot_in_backpack)
@@ -268,9 +265,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/chokha, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
@@ -415,7 +409,7 @@ Pilgrim Fate System
 	backpack_contents = list(
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/ammo_magazine/c45m/warfare = 1)
+	)
 
 /decl/hierarchy/outfit/job/innkeeper
 	name = OUTFIT_JOB_NAME("Innkeeper")
@@ -430,10 +424,8 @@ Pilgrim Fate System
 	r_ear = null
 	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
-	/obj/item/storage/box/beanbags = 1,
+	suit_store = /obj/item/gun/projectile // shotty
+	backpack_contents = list( // handful of buck and stun box
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
@@ -560,35 +552,8 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		H.gangeq()
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
 
-/mob/living/carbon/human/proc/gangeq()
-	if(prob(70))
-		if(prob(50))
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/gangerhelm, slot_head)
-		else
-			switch(rand(1,4))
-				if(1)
-					equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sentryhelm, slot_head)
-				if(2)
-					equip_to_slot_or_del(new /obj/item/clothing/head/helmet/siege, slot_head)
-				if(3)
-					equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hero, slot_head)
-				if(4)
-					equip_to_slot_or_del(new /obj/item/clothing/head/helmet/zealot, slot_head)
-	switch(rand(1,4))
-		if(1)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/warfare, slot_belt)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/c45m/warfare, slot_l_store)
-		if(2)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/talon/renegade, slot_belt)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/c45m/warfare, slot_l_store)
-		if(3)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/slugrevolver, slot_belt)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/c44, slot_l_store)
-		if(4)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_s_store)
 
 /datum/job/bouncer
 	title = "Bouncer"

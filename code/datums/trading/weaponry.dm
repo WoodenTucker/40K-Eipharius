@@ -19,8 +19,6 @@
 				)
 
 	possible_trading_items = list(
-								/obj/item/gun/projectile/colt        = TRADER_ALL,
-								/obj/item/gun/projectile/magnum_pistol= TRADER_ALL,
 								/obj/item/gun/projectile/sec         = TRADER_ALL,
 								/obj/item/gun/projectile/sec/MK      = TRADER_BLACKLIST,
 								/obj/item/gun/projectile/shotgun/pump= TRADER_SUBTYPES_ONLY,
@@ -59,7 +57,6 @@
 				)
 
 	possible_trading_items = list(/obj/item/gun/energy/taser                      = TRADER_THIS_TYPE,
-								/obj/item/gun/energy/stunrevolver                 = TRADER_THIS_TYPE,
 								/obj/item/gun/energy/laser                        = TRADER_THIS_TYPE,
 								/obj/item/gun/energy/gun                          = TRADER_THIS_TYPE,
 								/obj/item/cell                                    = TRADER_THIS_TYPE,
@@ -91,7 +88,5 @@
 
 	possible_trading_items = list(
 								/obj/item/gun/projectile/sec/MK                  = TRADER_THIS_TYPE,
-								/obj/item/gun/projectile/silenced/cheap          = TRADER_THIS_TYPE,
 								/obj/item/gun/energy/laser/dogan                 = TRADER_THIS_TYPE,
-								/obj/item/gun/projectile/automatic/mini_uzi/usi  = TRADER_THIS_TYPE,
 								/obj/item/clothing/accessory/holster                    = TRADER_ALL)

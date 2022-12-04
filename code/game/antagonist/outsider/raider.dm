@@ -67,26 +67,12 @@ var/datum/antagonist/raider/raiders
 	var/list/raider_guns = list(
 		/obj/item/gun/energy/laser,
 		/obj/item/gun/energy/mindflayer,
-		/obj/item/gun/energy/stunrevolver,
 		/obj/item/gun/energy/ionrifle,
 		/obj/item/gun/energy/taser,
-		/obj/item/gun/energy/crossbow/largecrossbow,
 		/obj/item/gun/launcher/crossbow,
 		/obj/item/gun/launcher/grenade/loaded,
 		/obj/item/gun/launcher/pneumatic,
-		/obj/item/gun/projectile/automatic/mini_uzi,
-		/obj/item/gun/projectile/automatic/c20r,
-		/obj/item/gun/projectile/automatic/wt550,
-		/obj/item/gun/projectile/automatic/sts35,
-		/obj/item/gun/projectile/silenced,
 		/obj/item/gun/projectile/shotgun/pump,
-		/obj/item/gun/projectile/shotgun/pump/combat,
-		/obj/item/gun/projectile/shotgun/doublebarrel,
-		/obj/item/gun/projectile/shotgun/doublebarrel/pellet,
-		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
-		/obj/item/gun/projectile/colt,
-		/obj/item/gun/projectile/sec,
-		/obj/item/gun/projectile/revolver,
 		)
 
 	var/list/raider_holster = list(

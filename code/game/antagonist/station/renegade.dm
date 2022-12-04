@@ -28,18 +28,7 @@ var/datum/antagonist/renegade/renegades
 		/obj/item/gun/energy/laser,
 		/obj/item/gun/energy/gun,
 		/obj/item/gun/energy/crossbow,
-		/obj/item/gun/energy/crossbow/largecrossbow,
 		/obj/item/gun/projectile/automatic,
-		/obj/item/gun/projectile/automatic/mini_uzi,
-		/obj/item/gun/projectile/automatic/c20r,
-		/obj/item/gun/projectile/automatic/wt550,
-		/obj/item/gun/projectile/colt/detective,
-		/obj/item/gun/projectile/sec/wood,
-		/obj/item/gun/projectile/silenced,
-		/obj/item/gun/projectile/revolver,
-		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
-		/obj/item/gun/projectile/magnum_pistol,
-		list(/obj/item/gun/projectile/revolver/detective, /obj/item/gun/projectile/revolver/deckard)
 		)
 
 /datum/antagonist/renegade/New()
