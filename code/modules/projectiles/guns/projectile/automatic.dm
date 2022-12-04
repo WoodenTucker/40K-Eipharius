@@ -90,7 +90,7 @@
 	else
 		icon_state = "c20r"
 	return
-*/
+
 /obj/item/gun/projectile/automatic/m22
 	name = "M-22 Assault Rifle"
 	desc = "Well-loved by grunts everywhere"
@@ -116,7 +116,7 @@
 		list(mode_name="automatic",   	 burst=2, fire_delay=3, one_hand_penalty=4, burst_accuracy=null, dispersion=list(0.1), automatic = 0.1)
 		)
 
-/*
+
 /obj/item/gun/projectile/automatic/sts35
 	name = "assault rifle"
 	desc = "The rugged STS-35 is a durable automatic weapon of a make popular on the frontier worlds. The serial number has been scratched off. Uses 5.56mm rounds."
