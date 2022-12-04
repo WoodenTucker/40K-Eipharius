@@ -74,12 +74,6 @@ var/datum/antagonist/raider/raiders
 		/obj/item/gun/launcher/pneumatic,
 		/obj/item/gun/projectile/silenced,
 		/obj/item/gun/projectile/shotgun/pump,
-		/obj/item/gun/projectile/shotgun/pump/combat,
-		/obj/item/gun/projectile/shotgun/doublebarrel,
-		/obj/item/gun/projectile/shotgun/doublebarrel/pellet,
-		/obj/item/gun/projectile/shotgun/doublebarrel/sawn,
-		/obj/item/gun/projectile/sec,
-		/obj/item/gun/projectile/revolver,
 		)
 
 	var/list/raider_holster = list(

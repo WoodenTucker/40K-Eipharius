@@ -377,15 +377,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/lightstubber/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 3,
-				/obj/item/gun/projectile/automatic/machinepistol = 9,
-				/obj/item/gun/projectile/warfare/kieji = 3,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 8,
-				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
-				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 3,
-				/obj/item/gun/projectile/shotgun/pump = 3,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 4,
-				/obj/item/gun/projectile/bolter_pistol = 1)
+	return list(/obj/item/gun/projectile = 1)
 
 /obj/random/loot/lightstubberammo
 	name = "Light Stubber Ammo" // After manor update we delete this.
@@ -426,13 +418,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/sidearms/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 5,
-				/obj/item/gun/projectile/warfare = 9,
-				/obj/item/gun/projectile/warfare/kieji = 7,
-				/obj/item/gun/energy/las/laspistol = 7,
-				/obj/item/gun/projectile/mervex = 4,
-				/obj/item/gun/projectile/necros = 3,
-				/obj/item/gun/projectile/slugrevolver = 2,
+	return list(/obj/item/gun/projectile = 2,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun

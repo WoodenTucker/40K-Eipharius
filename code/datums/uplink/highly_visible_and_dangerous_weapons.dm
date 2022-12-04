@@ -98,14 +98,14 @@
 	item_cost = 52
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 12)
-	path = /obj/item/gun/projectile/shotgun/pump/combat
+	path = /obj/item/gun/projectile
 
 /datum/uplink_item/item/visible_weapons/sawnoff
 	name = "Sawnoff Shotgun"
 	item_cost = 45
 	antag_roles = list(MODE_MERCENARY)
 	antag_costs = list(MODE_MERCENARY = 10)
-	path = /obj/item/gun/projectile/shotgun/doublebarrel/sawn
+	path = /obj/item/gun/projectile
 /*
 /datum/uplink_item/item/visible_weapons/deagle
 	name = "Magnum Pistol"
@@ -116,7 +116,7 @@
 /datum/uplink_item/item/visible_weapons/detective_revolver
 	name = "Holdout Revolver"
 	item_cost = 38
-	path = /obj/item/gun/projectile/revolver/detective
+	path = /obj/item/gun/projectile
 
 /* goodbye
 /datum/uplink_item/item/visible_weapons/pulserifle

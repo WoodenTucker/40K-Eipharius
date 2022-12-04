@@ -145,7 +145,7 @@
 			eprojectile = /obj/item/projectile/beam
 			eshot_sound = 'sound/weapons/Laser.ogg'
 
-		if(/obj/item/gun/projectile/automatic/machinepistol)
+		if(/obj/item/gun/projectile/automatic)
 			projectile = /obj/item/projectile/bullet/pistol
 			shot_sound = 'sound/weapons/gunshot.ogg'
 
