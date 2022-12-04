@@ -348,16 +348,7 @@
 	ammo_type = list(
 		/obj/item/ammo_casing/shotgun/pellet,
 		/obj/item/ammo_casing/shotgun/beanbag)
-
-/obj/item/gun/projectile/shotgun/pump/shitty/magrave
-	name = "\improper WTX Belle Magrave"
-	desc = "A rare specialty Magrave shotgun long out of production - this retired veteran has been well maintained over the years by it's previous owners."
-	move_delay= 2.5
-	one_hand_penalty = 3.5
-	accuracy = 0.9
-	fire_delay = 2
-	sales_price = 25
-
+/*
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"
 	desc = "A sawn off version of a common shotgun used in the trenches. It's not the best made and is prone to jamming."
