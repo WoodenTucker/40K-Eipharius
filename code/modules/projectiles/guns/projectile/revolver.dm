@@ -17,22 +17,6 @@
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	sales_price = 22
 
-/obj/item/gun/projectile/revolver/cpt
-	name = "Captain's Special"
-	desc = "The sort of weapon usually found on nobility, or powerful individuals, such as Inquisition Retinue or Arbites."
-	icon_state = "cptrevolver"
-	item_state = "crevolver"
-
-/obj/item/gun/projectile/revolver/cpt/marshal
-	name = "Law's Retribution"
-	desc = "A modified revolver with a extended barrel and is chambered in shotgun shells. 'Lex et ordo' is engraved on the side."
-	icon_state = "marshallrevolver"
-	item_state = "crevolver"
-	caliber = "shotgun"
-	fire_delay= 2.7
-	ammo_type = /obj/item/ammo_casing/shotgun
-	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-
 /obj/item/gun/projectile/revolver/attack_self(mob/user)
 	. = ..()
 	unload_ammo(user, allow_dump=TRUE)
@@ -60,6 +44,8 @@
 	chamber_offset = 0
 	return ..()
 
+
+/*
 /obj/item/gun/projectile/revolver/mateba
 	name = "mateba"
 	desc = "The mateba revolver is commonly used by law enforcement and gangers, what it lacks in accuracy it makes up for in sheer firepower."
@@ -149,29 +135,9 @@
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	sales_price = 30
+	*/
+
 /*
-// Blade Runner pistol. // sprite no work
-/obj/item/gun/projectile/revolver/deckard
-	name = "Deckard .44"
-	desc = "A custom-built revolver, based off the semi-popular Detective Special model."
-	icon_state = "deckard-empty"
-	ammo_type = /obj/item/ammo_magazine/c38/rubber
-
-/obj/item/gun/projectile/revolver/deckard/emp
-	ammo_type = /obj/item/ammo_casing/c38/emp
-
-/obj/item/gun/projectile/revolver/deckard/update_icon()
-	..()
-	if(loaded.len)
-		icon_state = "deckard-loaded"
-	else
-		icon_state = "deckard-empty"
-
-/obj/item/gun/projectile/revolver/deckard/load_ammo(var/obj/item/A, mob/user)
-	if(istype(A, /obj/item/ammo_magazine))
-		flick("deckard-reload",src)
-	..()
-
 /obj/item/gun/projectile/revolver/capgun
 	name = "cap gun"
 	desc = "Looks almost like the real thing! Ages 8 and up."
@@ -192,15 +158,11 @@
 	desc += " Someone snipped off the barrel's toy mark. How dastardly."
 	return 1
 */
-// webley sprite no work
+
+
 /*
-/obj/item/gun/projectile/revolver/webley
-	name = "service revolver"
-	desc = "A rugged top break revolver based on the Webley Mk. VI model, with modern improvements. Uses .44 magnum rounds."
-	icon_state = "webley"
-	item_state = "webley"
-	max_shells = 6
-	caliber = ".44"
-	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	ammo_type = /obj/item/ammo_casing/c44
+/obj/item/gun/projectile/revolver/deckard/load_ammo(var/obj/item/A, mob/user)
+	if(istype(A, /obj/item/ammo_magazine))
+		flick("deckard-reload",src)
+	..()
 */
