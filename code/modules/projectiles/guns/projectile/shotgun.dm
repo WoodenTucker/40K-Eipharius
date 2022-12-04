@@ -1,3 +1,4 @@
+/*
 /obj/item/gun/projectile/shotgun
 	bulletinsert_sound 	= "shotgun_insert"// sound/weapons/guns/interact/shellinsert1.ogg and 2
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
@@ -301,3 +302,4 @@
 	fire_delay= 20
 	sales_price = 400 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
 
+*/

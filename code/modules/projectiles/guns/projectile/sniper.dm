@@ -44,6 +44,8 @@
 	icon_state = "kriegsniper"
 	item_state = "las_musket"
 
+
+
 /*
 /obj/item/gun/projectile/exitus
 	name = "Exitus Sniper Rifle"

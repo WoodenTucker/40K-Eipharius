@@ -2,7 +2,94 @@
 // Accuracy Guide. Accuracy of -4 = Miss 1/3 shots on average. Accuracy of 0 = You never miss. Make sure weapon accuracy is never higher then -1 unless you want perfect accuracy.
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
+/obj/item/gun/projectile/shotgun/pump
+	name = "Boscelot Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
+	icon_state = "boltaction"
+	item_state = "boltaction"
+	wielded_item_state = "boltaction-wielded"
+	caliber = "763"
+	ammo_type = /obj/item/ammo_casing
+	load_method = SINGLE_CASING|SINGLE_LOAD
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	bulletinsert_sound 	= "shotgun_insert"
+	var/empty_icon = null
+	var/recentpump = 0
+	var/gping = TRUE
+	empty_icon = "boltaction-e"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	far_fire_sound = "sniper_fire"
+	move_delay = 3
+	one_hand_penalty = 15 // big heavy rifle
+	accuracy = 0
+	fire_delay = 3
+	force = 15
+	sales_price = 10
 
+
+
+/obj/item/gun/projectile/shotgun/pump/update_icon()
+	. = ..()
+	if(empty_icon)
+		if(!chambered && !loaded.len)//If there's an empty icon then use it.
+			icon_state = empty_icon
+		else if(!chambered && loaded.len)
+			icon_state = empty_icon
+		else
+			icon_state = initial(icon_state)
+
+/obj/item/gun/projectile/shotgun/pump/New()
+	..()
+	pump(null, TRUE)//Chamber it when it's created.
+
+
+/obj/item/gun/projectile/shotgun/pump/consume_next_projectile()
+	if(check_for_jam())
+		return 0
+	if(is_jammed)
+		return null
+	if(chambered)
+		return chambered.BB
+	return null
+
+
+/obj/item/gun/projectile/shotgun/pump/examine(mob/user, distance)
+	. = ..()
+	if(chambered)
+		if(chambered.BB)
+			to_chat(user, "There is a <span class='bnotice'>LIVE</span> one in the chamber.")
+		else
+			to_chat(user, "There is a <span class='danger'><b>SPENT</b></span> one in the chamber.")
+	else
+		to_chat(user, "<span class='danger'>The chamber is <b>EMPTY</b>.")
+
+/obj/item/gun/projectile/boltaction/scoped
+	name = " Boscelot Pattern Scoped Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
+	icon_state = "boltactionsharp"
+	item_state = "boltactionsharp"/*
+	empty_icon = "boltactionsharp-e"*/
+	wielded_item_state = "boltaction-wielded"
+	loaded_icon = "boltactionsharp"
+	unwielded_loaded_icon = "boltactionsharp"
+	wielded_loaded_icon = "boltaction-wielded"
+	unloaded_icon = "boltactionsharp-e"
+	unwielded_unloaded_icon = "boltactionsharp"
+	wielded_unloaded_icon = "boltaction-wielded"
+	accuracy = 2
+	sales_price = 20
+
+/obj/item/gun/projectile/boltaction/scoped/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/boltaction/scoped/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
 
 
 // Bolt Rifles
@@ -60,7 +147,7 @@
 	loaded_icon = "ravenbolter-30"
 	unloaded_icon = "ravenbolter-e"
 
-/obj/item/gun/projectile/boltrifle/ravenbolter/update_icon()
+/obj/item/gun/projectile/boltrifle/raven/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "ravenbolter-30"
