@@ -34,7 +34,7 @@
 	var/victim = get_mannequin(H.ckey)
 	for(var/obj/item/carried_item in H.get_equipped_items(TRUE))
 		carried_item.add_blood(victim) //Oh yes, there will be blood.. just not blood from the killer because that's odd
-
+/*
 /decl/hierarchy/outfit/reaper
 	name = "Reaper"
 	uniform = /obj/item/clothing/under/suit_jacket{ starting_accessories=list(/obj/item/clothing/accessory/wcoat) }
@@ -61,3 +61,4 @@
 	sec_briefcase.contents += new /obj/item/ammo_magazine/c50
 	sec_briefcase.contents += new /obj/item/plastique
 	H.equip_to_slot_or_del(sec_briefcase, slot_l_hand)
+*/

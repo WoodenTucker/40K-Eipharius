@@ -146,7 +146,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter/bang
+	suit_store = /obj/item/gun/projectile/boltrifle/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
@@ -198,7 +198,7 @@
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	backpack_contents = list(
@@ -220,7 +220,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	suit_store = /obj/item/gun/projectile/bolter/raven
+	suit_store = /obj/item/gun/projectile/boltrifle/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
@@ -292,7 +292,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
@@ -313,7 +313,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	suit_store = /obj/item/gun/projectile/bolter/sally
+	suit_store = /obj/item/gun/projectile/boltrifle/sally
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -385,7 +385,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
@@ -408,7 +408,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter
+	suit_store = /obj/item/gun/projectile/boltrifle
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
@@ -480,7 +480,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter_pistol/astarte
+	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
@@ -490,25 +490,3 @@
 	/obj/item/stack/thrones3/ten = 1,
 	/obj/item/clothing/glasses/astartes/visor = 1
 	)
-
-/* ADMEME OUTFIT FOR SCOUT - This one is for human-sized ones, don't try to put it onto big astartes */
-/decl/hierarchy/outfit/job/astartes/scout
-	name = OUTFIT_JOB_NAME("Adeptus Astartes Scout")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/aascout
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = null
-	mask = null
-	l_ear = /obj/item/device/radio/headset/headset_sec
-	glasses = /obj/item/clothing/glasses/night
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/ammo_magazine/lp338/needler = 4,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1
-	)
-

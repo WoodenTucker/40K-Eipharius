@@ -679,7 +679,7 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/ammo_magazine/autogrim
-	suit_store = /obj/item/gun/projectile/automatic/autogrim
+	suit_store = /obj/item/gun/projectile // autogrim smg
 	backpack_contents = list(
 	/obj/item/ammo_magazine/autogrim/ap = 1,
 	/obj/item/ammo_magazine/autogrim/ms = 1,
@@ -724,7 +724,7 @@
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/gun/projectile/warfare/kieji
+	belt = /obj/item/gun/projectile // pistol
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
@@ -732,12 +732,10 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/projectile // big stubba
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
-	/obj/item/ammo_magazine/c45m/warfare = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -810,10 +808,9 @@
 	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/autogun
+	suit_store = /obj/item/gun/projectile
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/autogrim = 3,
 	/obj/item/grenade/frag = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
@@ -850,7 +847,7 @@
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/gun/projectile/warfare/kieji
+	belt = /obj/item/gun/projectile // pistol
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/heretichood/alt
@@ -858,12 +855,10 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = /obj/item/gun/projectile // hmg
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08/ap = 1,
-	/obj/item/ammo_magazine/c45m/warfare = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/device/flashlight/lantern = 1
 	)
@@ -958,12 +953,10 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/device/binoculars
-	r_pocket =  /obj/item/ammo_magazine/handful/brifle_handful/ms
-	suit_store = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
+	r_pocket =  null // remember to give them ammo
+	suit_store = null // good bolt action
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/brifle_handful/ms = 2,
-	/obj/item/ammo_magazine/handful/brifle_handful/ap = 2,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1
 	)
@@ -1049,18 +1042,16 @@
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
 	uniform =  /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallasgt
-	belt = /obj/item/gun/projectile/warfare/kieji2
+	belt = null // pistol
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = null // rifle maybe? not sure
 	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 1,
-	/obj/item/ammo_magazine/c45m/warfare = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -1148,18 +1139,16 @@
 	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
 	uniform =  /obj/item/clothing/under/guard/uniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	belt = /obj/item/gun/projectile/warfare/kieji2
+	belt = null
 	head = /obj/item/clothing/head/heretichood
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/stubber
+	suit_store = null
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 1,
-	/obj/item/ammo_magazine/c45m/warfare = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

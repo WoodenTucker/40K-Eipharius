@@ -569,7 +569,7 @@
 	ammo_type = /obj/item/ammo_casing/shuriken/pistol
 	matter = list(DEFAULT_WALL_MATERIAL = 1500)
 	caliber = "shuriken"
-	max_ammo = 1000
+	max_ammo = 60
 	multiple_sprites = 0
 
 /obj/item/ammo_magazine/galvanic

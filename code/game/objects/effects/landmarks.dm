@@ -377,18 +377,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/lightstubber/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 3,
-				/obj/item/gun/projectile/automatic/machinepistol = 9,
-				/obj/item/gun/projectile/automatic/machinepistol/a80 = 8,
-				/obj/item/gun/projectile/warfare/kieji = 3,
-				/obj/item/gun/projectile/talon/renegade = 1,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 8,
-				/obj/item/gun/projectile/shotgun/pump/shitty = 9,
-				/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 3,
-				/obj/item/gun/projectile/shotgun/pump = 3,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 4,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 5,
-				/obj/item/gun/projectile/bolter_pistol = 1)
+	return list(/obj/item/gun/projectile = 1)
 
 /obj/random/loot/lightstubberammo
 	name = "Light Stubber Ammo" // After manor update we delete this.
@@ -401,9 +390,6 @@ Template:
 				/obj/item/ammo_magazine/box/shotgun/slug = 3,
 				/obj/item/ammo_magazine/box/shotgun/bean = 1,
 				/obj/item/ammo_box/rifle = 8,
-				/obj/item/ammo_magazine/c45m/warfare = 3,
-				/obj/item/ammo_magazine/mc9mmt/machinepistol = 9,
-				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
 /obj/random/loot/sidearmammo
@@ -415,8 +401,6 @@ Template:
 /obj/random/loot/sidearmammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/a357 = 4,
 				/obj/item/ammo_magazine/a357 = 4,
-				/obj/item/ammo_magazine/c45m/warfare = 8,
-				/obj/item/ammo_magazine/c45m/warfare = 6,
 				/obj/item/cell/lasgun = 8,
 				/obj/item/ammo_magazine/c44 = 5,
 				/obj/item/ammo_box/shotgun = 3,
@@ -429,14 +413,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/sidearms/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 5,
-				/obj/item/gun/projectile/warfare = 9,
-				/obj/item/gun/projectile/warfare/kieji = 7,
-				/obj/item/gun/energy/las/laspistol = 7,
-				/obj/item/gun/projectile/mervex = 4,
-				/obj/item/gun/projectile/necros = 3,
-				/obj/item/gun/projectile/slugrevolver = 2,
-				/obj/item/gun/projectile/talon/renegade = 1,
+	return list(/obj/item/gun/projectile = 2,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
@@ -478,8 +455,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/heavystubber/spawn_choices()
-	return list(/obj/item/gun/projectile/automatic/stubber = 25,
-				/obj/item/gun/projectile/automatic/stubber/villiers = 15)
+	return list(/obj/item/gun/projectile/automatic)
 
 // DUNGEON & PILGRIM LOOT. These spawners are generally low quality and have wide selection making them ideal as generic loot.
 
@@ -490,20 +466,7 @@ Template:
 	icon_state = "45-10"
 
 /obj/random/loot/randomammo/spawn_choices()
-	return list(/obj/item/ammo_magazine/mc9mmt/machinepistol = 10,
-	            /obj/item/ammo_magazine/bolt_rifle_magazine = 1,
-				/obj/item/ammo_box/rifle = 9,
-				/obj/item/ammo_magazine/box/a556/mg08 = 10,
-				/obj/item/ammo_box/shotgun = 13,
-				/obj/item/ammo_magazine/box/shotgun/slug = 3,
-				/obj/item/cell/lasgun = 8,
-				/obj/item/ammo_magazine/c44 = 5,
-				/obj/item/ammo_magazine/box/shotgun/bean = 1,
-				/obj/item/ammo_magazine/c45m/warfare = 8,
-				/obj/item/ammo_magazine/c45m/warfare = 6,
-				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
-				/obj/item/ammo_magazine/a357 = 2,
-				/obj/item/ammo_magazine/bolt_pistol_magazine = 2)
+	return list(/obj/item/ammo_magazine)
 
 
 /obj/random/loot/badweapon
@@ -513,38 +476,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/badweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 1,
-				/obj/item/gun/projectile/warfare = 4,
-				/obj/item/gun/projectile/warfare/kieji = 3,
-				/obj/item/gun/projectile/warfare/kieji2 = 2,
-				/obj/item/gun/energy/las/lasgun = 3,
-				/obj/item/gun/energy/las/lasgun/lucius = 2,
-				/obj/item/gun/energy/las/lasgun/catachan = 2,
-				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
-				/obj/item/gun/energy/las/laspistol/militarum = 6,
-				/obj/item/gun/energy/las/laspistol = 5,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 6,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter = 4,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 3,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 4,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory = 1,
-				/obj/item/gun/projectile/shotgun/pump/shitty = 4,
-				/obj/item/gun/projectile/automatic/stubber = 3,
-				/obj/item/gun/projectile/automatic/stubber/villiers = 2,
-				/obj/item/gun/projectile/automatic/stubber/cognis = 1,
-				/obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle = 1,
-				/obj/item/gun/projectile/automatic/m22/combatrifle = 1,
-				/obj/item/gun/projectile/automatic/machinepistol = 4,
-				/obj/item/gun/projectile/automatic/machinepistol/a80 = 3,
-				/obj/item/gun/projectile/automatic/messina = 3,
-				/obj/item/gun/projectile/automatic/autogun = 1,
-				/obj/item/gun/projectile/automatic/autogrim = 2,
-				/obj/item/gun/projectile/automatic/autogrim/krieg = 1,
-				/obj/item/gun/projectile/revolver/mateba = 1,
-				/obj/item/gun/projectile/mervex = 4,
-				/obj/item/gun/projectile/necros = 3,
-				/obj/item/gun/projectile/talon/renegade = 1,
-				/obj/item/gun/projectile/slugrevolver = 2)
+	return list(/obj/item/gun/projectile = 1)
 
 /obj/random/loot/goodweapon
 	name = "Good Weapon Spawner" // This spawner is similar to the above but has better quality spawns.
@@ -553,15 +485,9 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun/longlas = 2,
-				/obj/item/gun/energy/las/lasgun/longlas/krieg = 1,
-				/obj/item/gun/projectile/slugrevolver = 1,
-				/obj/item/gun/projectile/revolver/mateba = 2,
-				/obj/item/gun/projectile/lockebolter = 2,
+	return list(/obj/item/gun/projectile/lockebolter = 2,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
-				/obj/item/gun/energy/pulse/plasma/pistol = 2,
-				/obj/item/gun/projectile/automatic/stubber = 8,
-				/obj/item/gun/projectile/bolter_pistol = 6)
+				/obj/item/gun/energy/pulse/plasma/pistol = 2,)
 
 /obj/random/loot/randomarmor
 	name = "Random Armor"

@@ -1,3 +1,4 @@
+/*
 /datum/crafting_recipe/revolver_one
 	name = "Station made revolver one slot"
 	tools = list(/obj/item/screwdriver)
@@ -29,3 +30,4 @@
 	result = list(/obj/item/gun/projectile/revolver/crafted/four_chamber = 1)
 	time = 60
 	base_chance = 100
+	*/

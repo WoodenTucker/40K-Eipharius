@@ -264,8 +264,7 @@
 	desc = "random bolties"
 
 /obj/random/bolt_action/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump/boltaction/shitty,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester)
+	return list(/obj/item/gun/projectile)
 
 /obj/random/energy
 	name = "Random Energy Weapon"
@@ -280,9 +279,7 @@
 				/obj/item/gun/energy/sniperrifle = 1,
 				/obj/item/gun/energy/gun/nuclear = 1,
 				/obj/item/gun/energy/ionrifle = 2,
-				/obj/item/gun/energy/taser = 4,
-				/obj/item/gun/energy/crossbow/largecrossbow = 2,
-				/obj/item/gun/energy/stunrevolver = 4)
+				/obj/item/gun/energy/taser = 4,)
 
 /obj/random/projectile
 	name = "Random Projectile Weapon"
@@ -291,21 +288,7 @@
 	icon_state = "revolver"
 
 /obj/random/projectile/spawn_choices()
-	return list(/obj/item/gun/projectile/shotgun/pump = 3,
-				/obj/item/gun/projectile/automatic/c20r = 2,
-				/obj/item/gun/projectile/automatic/sts35 = 2,
-				/obj/item/gun/projectile/automatic/z8 = 2,
-				/obj/item/gun/projectile/colt = 4,
-				/obj/item/gun/projectile/sec = 4,
-				/obj/item/gun/projectile/sec/wood = 3,
-				/obj/item/gun/projectile/revolver = 2,
-				/obj/item/gun/projectile/automatic/wt550 = 3,
-				/obj/item/gun/projectile/revolver/detective = 4,
-				/obj/item/gun/projectile/revolver/mateba = 2,
-				/obj/item/gun/projectile/shotgun/doublebarrel = 4,
-				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 3,
-				/obj/item/gun/projectile/heavysniper = 1,
-				/obj/item/gun/projectile/shotgun/pump/combat = 2)
+	return list(/obj/item/gun/projectile)
 
 /obj/random/handgun
 	name = "Random Handgun"
@@ -314,10 +297,8 @@
 	icon_state = "secgundark"
 
 /obj/random/handgun/spawn_choices()
-	return list(/obj/item/gun/projectile/sec = 3,
-				/obj/item/gun/energy/gun = 2,
-				/obj/item/gun/projectile/colt = 2,
-				/obj/item/gun/projectile/sec/wood = 1)
+	return list(/obj/item/gun/projectile = 3,
+				/obj/item/gun/energy/gun = 2,)
 
 /obj/random/ammo
 	name = "Random Ammunition"

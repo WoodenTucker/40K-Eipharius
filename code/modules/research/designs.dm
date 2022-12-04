@@ -594,21 +594,14 @@ other types of metals and chemistry for reagents).
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "silver" = 500)
 	build_path = /obj/item/device/flash/advanced
 	sort_string = "TADAA"
-
-/datum/design/item/stunrevolver
-	id = "stunrevolver"
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_POWER = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 4000)
-	build_path = /obj/item/gun/energy/stunrevolver
-	sort_string = "TADAB"
-
+/*
 /datum/design/item/stunrifle
 	id = "stun_rifle"
 	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "glass" = 1000, "silver" = 500)
 	build_path = /obj/item/gun/energy/stunrevolver/rifle
 	sort_string = "TADAC"
-
+*/
 /datum/design/item/nuclear_gun
 	id = "nuclear_gun"
 	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 5, TECH_POWER = 3)
@@ -646,14 +639,7 @@ other types of metals and chemistry for reagents).
 	materials = list(DEFAULT_WALL_MATERIAL = 8000, "silver" = 2000, "diamond" = 1000)
 	build_path = /obj/item/gun/projectile/automatic
 	sort_string = "TAPAA"
-
-/datum/design/item/wt550
-	id = "wt550"
-	req_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 8000, "silver" = 3000, "diamond" = 1500)
-	build_path = /obj/item/gun/projectile/automatic/wt550
-	sort_string = "TAPAB"
-
+/*
 /datum/design/item/bullpup
 	id = "bullpup"
 	req_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 3)
@@ -665,13 +651,7 @@ other types of metals and chemistry for reagents).
 	..()
 	name = "Ammunition prototype ([item_name])"
 
-/datum/design/item/ammunition/ammo_9mm
-	id = "ammo_9mm"
-	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 3750, "silver" = 100)
-	build_path = /obj/item/ammo_magazine/box/c9mm
-	sort_string = "TBAAA"
-
+	*/
 /datum/design/item/ammunition/stunshell
 	desc = "A stunning shell for a shotgun."
 	id = "stunshell"

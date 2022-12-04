@@ -1,26 +1,6 @@
 /datum/cargo_entry/bmarket
 	category = "Black Market"
 
-/datum/cargo_entry/bmarket/taupistol
-	name = "T*u Pulse Pistol"
-	cost = 89
-	item_path = /obj/item/gun/energy/pulse/pulsepistol
-
-/datum/cargo_entry/bmarket/taurifle
-	name = "T*u Pulse Rifle"
-	cost = 189
-	item_path = /obj/item/gun/energy/pulse/pulserifle
-
-/datum/cargo_entry/bmarket/krootrifle
-	name = "Kr**t Rifle"
-	cost = 99
-	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
-
-/datum/cargo_entry/bmarket/shoota
-	name = "Ork Shoota"
-	cost = 45
-	item_path = /obj/item/gun/projectile/ork/automatic/shoota
-
 /datum/cargo_entry/bmarket/ritualknife
 	name = "Ritual Knife"
 	cost = 69

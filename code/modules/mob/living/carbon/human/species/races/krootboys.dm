@@ -52,7 +52,7 @@
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.
-	put_in_hands(new /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet)//Give them a weapon.
+	put_in_hands(new /obj/item/gun/projectile)//Give them a weapon. // kroot rifle to do
 	isburied = 1
 
 

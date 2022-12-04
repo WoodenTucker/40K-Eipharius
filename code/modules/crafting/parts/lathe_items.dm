@@ -141,7 +141,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	desc = "This is reciever."
 	icon_state = "stock"
-
+/*
 /obj/item/gun/projectile/revolver/crafted
 	max_shells = 0
 	starts_loaded = 0
@@ -162,3 +162,4 @@
 
 /obj/item/gun/projectile/revolver/crafted/four_chamber
 	max_shells = 4
+*/

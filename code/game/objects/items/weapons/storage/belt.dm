@@ -176,7 +176,6 @@
 		/obj/item/reagent_containers/food/snacks/donut/,
 		/obj/item/melee/baton,
 		/obj/item/gun/energy/taser,
-		/obj/item/gun/energy/stunrevolver,
 		/obj/item/flame/lighter,
 		/obj/item/clothing/glasses/hud/security,
 		/obj/item/device/flashlight,
@@ -268,19 +267,19 @@
 	can_hold = list(
 		/obj/item/ammo_magazine,
 		)
-
+/*
 	New()
 		..()
 		new /obj/item/ammo_magazine/a762/rsc(src)
 		new /obj/item/ammo_magazine/a762/rsc(src)
 		new /obj/item/ammo_magazine/a762/rsc(src)
 		new /obj/item/ammo_magazine/a762/rsc(src)
-
+*/
 /obj/item/storage/belt/warfare/chestrig
 	name = "Chestrig"
 	desc = "Holds ammo. But not much else."
 	icon_state = "chestrig"
-
+/*
 /obj/item/storage/belt/autoshotty
 	name = "ammo belt"
 	desc = "Great for holding ammo! This one starts with Warcrime ammo."
@@ -296,7 +295,7 @@
 		new /obj/item/ammo_magazine/autoshotty(src)
 		new /obj/item/ammo_magazine/autoshotty(src)
 		new /obj/item/ammo_magazine/autoshotty(src)
-
+*/
 
 /obj/item/storage/belt/autoshotty/chestrig
 	name = "Chestrig"
@@ -310,7 +309,7 @@
 	item_state = "medical"
 	canremove = 1
 	storage_slots = 30
-	max_storage_space = 30 
+	max_storage_space = 30
 	can_hold = list(
 		/obj/item/device/healthanalyzer,
 		/obj/item/reagent_containers/dropper,

@@ -10,7 +10,7 @@
 "aA" = (/obj/structure/grille,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/machinery/door/firedoor,/turf/simulated/floor/plating)
 "aD" = (/obj/machinery/ntnet_relay,/turf/simulated/floor/bluegrid)
 "aE" = (/turf/simulated/floor/bluegrid)
-"aH" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/item/gun/energy/stunrevolver,/obj/structure/closet/cabinet,/obj/item/storage/secure/briefcase,/obj/item/device/taperecorder,/obj/item/device/camera,/obj/item/storage/backpack/dufflebag/syndie,/obj/item/storage/box/shotgunshells,/obj/item/handcuffs,/turf/simulated/floor/wood)
+"aH" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/structure/closet/cabinet,/obj/item/storage/secure/briefcase,/obj/item/device/taperecorder,/obj/item/device/camera,/obj/item/storage/backpack/dufflebag/syndie,/obj/item/storage/box/shotgunshells,/obj/item/handcuffs,/turf/simulated/floor/wood)
 "aI" = (/obj/item/bedsheet/captain,/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/item/gun/projectile/pistol,/obj/structure/bed/padded,/turf/simulated/floor/wood)
 "aJ" = (/obj/item/paper_bin,/obj/item/pen,/obj/structure/table/woodentable,/obj/machinery/alarm{dir = 8; icon_state = "alarm0"; pixel_x = 24},/obj/machinery/light_switch{pixel_y = 25},/obj/random_multi/single_item/captains_spare_id,/obj/random/action_figure,/obj/random_multi/single_item/captains_spare_id,/turf/simulated/floor/wood)
 "aL" = (/turf/simulated/wall/titanium)

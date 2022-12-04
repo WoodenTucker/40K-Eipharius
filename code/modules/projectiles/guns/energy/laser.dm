@@ -74,16 +74,6 @@
 			to_chat(user, "<span class='danger'>\The [src] sizzles in your hands, acrid smoke rising from the firing end!</span>")
 			desc += " The optical pathway is melted and useless."
 			projectile_type = null
-/*
-obj/item/gun/energy/retro
-	name = "retro laser"
-	icon_state = "retro"
-	item_state = "retro"
-	desc = "An older model of the basic lasergun. Nevertheless, it is still quite deadly and easy to maintain, making it a favorite amongst pirates and other outlaws."
-	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	w_class = ITEM_SIZE_NORMAL
-	projectile_type = /obj/item/projectile/beam
-	fire_delay = 15 //old technology, and a pistol
 
 /obj/item/gun/energy/captain
 	name = "antique las-pistol"
@@ -98,7 +88,7 @@ obj/item/gun/energy/retro
 	max_shots = 5 //to compensate a bit for self-recharging
 	one_hand_penalty = 1 //a little bulky
 	self_recharge = 1
-*/
+
 //NOT READY!
 
 /obj/item/gun/energy/lasercannon

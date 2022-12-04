@@ -1,3 +1,4 @@
+/*
 /obj/item/gun/projectile/colt/detective
 	var/unique_name
 	var/datum/detective_gun_skin/unique_reskin
@@ -89,23 +90,4 @@
 /datum/detective_gun_skin/luger
 	name = "\improper P08 Luger"
 	icon_state = "p08"
-
-/datum/detective_gun_skin/luger_brown
-	name = "\improper P08 Luger, brown"
-	icon_state = "p08b"
-
-/datum/detective_gun_skin/mk_standard
-	name = "\improper NT Mk. 58"
-	icon_state = "secguncomp"
-
-/datum/detective_gun_skin/mk_custom
-	name = "\improper NT Mk. 58 Custom"
-	icon_state = "secgundark"
-
-/datum/detective_gun_skin/usp
-	name = "\improper USP"
-	icon_state = "usp"
-
-/datum/detective_gun_skin/vp
-	name = "\improper H&K VP"
-	icon_state = "VP78"
+*/

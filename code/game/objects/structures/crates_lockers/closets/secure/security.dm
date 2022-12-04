@@ -40,7 +40,6 @@
 		/obj/item/cartridge/hop,
 		/obj/item/device/radio/headset/heads/hop,
 		/obj/item/storage/box/ids = 2,
-		/obj/item/gun/projectile/sec/flash,
 		/obj/item/device/flash
 	)
 
@@ -177,7 +176,6 @@
 		/obj/item/device/radio/headset/headset_sec,
 		/obj/item/ammo_magazine/c45m/flash,
 		/obj/item/taperoll/police,
-		/obj/item/gun/projectile/colt/detective,
 		/obj/item/clothing/accessory/holster/armpit,
 		/obj/item/reagent_containers/food/drinks/flask/detflask,
 		/obj/item/storage/briefcase/crimekit,
