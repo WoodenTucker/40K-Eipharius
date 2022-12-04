@@ -146,7 +146,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter/bang
+	suit_store = /obj/item/gun/projectile/boltrifle/bang
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
@@ -220,7 +220,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	suit_store = /obj/item/gun/projectile/bolter/raven
+	suit_store = /obj/item/gun/projectile/boltrifle/raven
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/melee/chain/pcsword = 1,
@@ -313,7 +313,7 @@
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
-	suit_store = /obj/item/gun/projectile/bolter/sally
+	suit_store = /obj/item/gun/projectile/boltrifle/sally
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -408,7 +408,7 @@
 	l_ear = /obj/item/device/radio/headset/headset_sec
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
-	suit_store = /obj/item/gun/projectile/bolter
+	suit_store = /obj/item/gun/projectile/boltrifle
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine = 3,

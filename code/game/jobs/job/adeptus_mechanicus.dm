@@ -259,7 +259,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	belt = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/galvanicrifle
+	suit_store = /obj/item/gun/projectile // give them galv back soon
 	l_pocket = /obj/item/storage/box/ifak
 	id = null
 	id_slot = null

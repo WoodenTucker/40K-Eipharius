@@ -35,7 +35,7 @@
 	projectiletype = /obj/item/projectile/beam
 
 ///////////////Sword and shield////////////
-
+/*
 /mob/living/simple_animal/hostile/syndicate/ranged //
 	ranged = 1
 	rapid = 1
@@ -74,7 +74,7 @@
 			health = 250
 			projectilesound = 'sound/weapons/guns/fire/smg_fire.ogg'
 			projectiletype = /obj/item/projectile/bullet/pistol
-
+*/
 /mob/living/simple_animal/hostile/syndicate/ranged/space // Same as above but more HP.
 	icon_state = "traitorguard"
 	icon_living = "traitorguard"

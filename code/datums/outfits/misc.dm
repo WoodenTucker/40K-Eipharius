@@ -7,7 +7,7 @@
 	back = /obj/item/tank/jetpack/oxygen
 	mask = /obj/item/clothing/mask/breath
 	flags = OUTFIT_HAS_JETPACK|OUTFIT_RESET_EQUIPMENT
-
+/*
 /decl/hierarchy/outfit/soviet_soldier
 	name = "Soviet soldier"
 	uniform = /obj/item/clothing/under/soviet
@@ -16,7 +16,7 @@
 	gloves = /obj/item/clothing/gloves/thick/combat
 	back = /obj/item/storage/backpack/satchel
 	belt = /obj/item/gun/projectile/revolver/mateba
-
+*/
 /decl/hierarchy/outfit/soviet_soldier/admiral
 	name = "Soviet admiral"
 	head = /obj/item/clothing/head/hgpiratecap

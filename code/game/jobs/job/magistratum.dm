@@ -145,14 +145,12 @@
 	r_hand = /obj/item/melee/baton/loaded
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/slugrevolver
+	belt = /obj/item/gun/projectile // revolva
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
-	backpack_contents = list(
-	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/ammo_magazine/box/shotgun/stun = 1,
+	suit_store = /obj/item/gun/projectile // voxlegis
+	backpack_contents = list( // 1 stun 1 buck
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
@@ -191,7 +189,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	r_pocket = /obj/item/device/flashlight/lantern
-	l_hand = /obj/item/gun/projectile/shotgun/pump/shitty
+	l_hand = /obj/item/gun/projectile // voxlegis
 	r_hand = /obj/item/melee/baton/powermaul
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
 	suit = /obj/item/clothing/suit/armor/enforcer2/arbitrator
@@ -203,13 +201,9 @@
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
-	backpack_contents = list(
-    /obj/item/ammo_magazine/c45m/warfare = 1,
-	/obj/item/ammo_casing/c45/ap = 1,
+	backpack_contents = list( // 1 stun 1 buck
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/ammo_magazine/box/shotgun/stun = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	)
 

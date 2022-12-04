@@ -1,11 +1,6 @@
 /datum/cargo_entry/bmarket
 	category = "Black Market"
 
-/datum/cargo_entry/bmarket/shoota
-	name = "Ork Shoota"
-	cost = 45
-	item_path = /obj/item/gun/projectile/ork/automatic/shoota
-
 /datum/cargo_entry/bmarket/ritualknife
 	name = "Ritual Knife"
 	cost = 69

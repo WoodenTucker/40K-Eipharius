@@ -258,7 +258,7 @@
 	can_hold = list(
 		/obj/item/ammo_magazine,
 		)
-
+/
 /obj/item/storage/belt/armageddon
 	name = "ammo belt"
 	desc = "Great for holding ammo! This one starts with Armageddon ammo."
@@ -267,14 +267,14 @@
 	can_hold = list(
 		/obj/item/ammo_magazine,
 		)
-
+/*
 	New()
 		..()
 		new /obj/item/ammo_magazine/a762/rsc(src)
 		new /obj/item/ammo_magazine/a762/rsc(src)
 		new /obj/item/ammo_magazine/a762/rsc(src)
 		new /obj/item/ammo_magazine/a762/rsc(src)
-
+*/
 /obj/item/storage/belt/warfare/chestrig
 	name = "Chestrig"
 	desc = "Holds ammo. But not much else."

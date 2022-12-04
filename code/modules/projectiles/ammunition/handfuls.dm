@@ -19,7 +19,7 @@
 
 /obj/item/ammo_magazine/handful/attack_self(mob/user)//We want to override the normal attack self with makes us "empty" our "clip".
 	return
-
+/*
 //Rifle
 /obj/item/ammo_magazine/handful/brifle_handful
 	name = "\improper handful of bullets"
@@ -66,7 +66,7 @@
 
 /obj/item/ammo_magazine/handful/kroot_handful/two
 	initial_ammo = 2
-
+*/
 
 
 
@@ -220,7 +220,7 @@
 /obj/item/ammo_box/rifle
 	name = "\improper rifle bullets box"
 	desc = "You get rifle bullets out of this one."
-	handful_type = /obj/item/ammo_magazine/handful/brifle_handful
+	handful_type = /obj/item/ammo_magazine // handful
 
 
 //Box of handfuls of shotgun ammo.
