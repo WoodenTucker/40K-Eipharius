@@ -63,6 +63,11 @@
 	description_info = "This is a ballistic weapon.  To fire the weapon, ensure you have your gun safety off, \
 	then click where you want to fire.  After firing, you will need to pump/bolt the gun, by clicking on the gun in your hand."
 
+/obj/item/gun/projectile/heavysniper
+	description_info = "This is a ballistic weapon.  To fire the weapon, ensure your intent is *not* set to 'help', have your gun mode set to 'fire', \
+	then click where you want to fire.  The gun's chamber can be opened or closed by using it in your hand.  To reload, open the chamber, add a new bullet \
+	then close it.  To use the scope, use the appropriate verb in the object tab."
+
 //*******
 //*Melee*
 //*******
