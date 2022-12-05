@@ -1,3 +1,52 @@
+// 9 mm
+/obj/item/gun/projectile/pistol
+	name = "Messina Pattern 'Broomhandle' stub pistol."
+	desc = "e"
+	icon_state = "sheetp"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "9mm"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+
+/obj/item/gun/projectile/pistol/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "sheetp"
+	else
+		icon_state = "sheetp-e"
+
+
+/obj/item/gun/projectile/pistol/kieji
+	name = "Kieji stub pistol."
+	desc = "e"
+	icon_state = "kieji"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "9mm"
+
+/obj/item/gun/projectile/kieji/snub
+	name = "Snub nosed Kieji stub pistol."
+	desc = "e"
+	icon_state = "kiejistub"
+	item_state = "pistol"
+
+// 45 acp
+
+/obj/item/gun/projectile/pistol/messina
+	name = "Messina Pattern 'Broomhandle' stub pistol."
+	icon_state = "handgun7"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = ".45"
+
+/obj/item/gun/projectile/pistol/villiers
+	name = "Villiers Pattern stub pistol."
+	icon_state = "stub2"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = ".45"
 
 /obj/item/gun/projectile/ork/slugga
 	name = "slugga"
@@ -7,7 +56,7 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = TRUE //yes it can jam
-	accuracy = -4 //WHY WAS IT SO FUCKING ACCURATE BEFORE? IT WAS 0.2!
+	accuracy = -4
 	force = 20
 	move_delay = 1.5
 	load_method = MAGAZINE

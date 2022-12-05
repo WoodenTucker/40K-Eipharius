@@ -57,7 +57,7 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 6
 	multiple_sprites = 1
-
+/*
 /obj/item/ammo_magazine/c38
 	name = "speed loader (.38)"
 	desc = "A speed loader for revolvers."
@@ -72,7 +72,7 @@
 	name = "speed loader (.38, rubber)"
 	icon_state = "R38"
 	ammo_type = /obj/item/ammo_casing/c38/rubber
-
+*/
 /obj/item/ammo_magazine/c44
 	name = "speed loader (.44 magnum)"
 	desc = "A speed loader for revolvers."
@@ -189,21 +189,13 @@
 	max_ammo = 10
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/mc9mm/ap
-	name = "AP magazine (9mm)"
-	ammo_type = /obj/item/ammo_casing/c9mm/ap
-
-/obj/item/ammo_magazine/mc9mm/ms
-	name = "MS magazine (9mm)"
-	ammo_type = /obj/item/ammo_casing/c9mm/ms
-
 /obj/item/ammo_magazine/mc9mm/empty
 	initial_ammo = 0
-
+/*
 /obj/item/ammo_magazine/mc9mm/flash
 	name = "magazine (9mm, flash)"
 	ammo_type = /obj/item/ammo_casing/c9mm/flash
-
+*/
 /obj/item/ammo_magazine/box/c9mm
 	name = "ammunition box (9mm)"
 	icon_state = "9mm"
@@ -215,7 +207,7 @@
 
 /obj/item/ammo_magazine/box/c9mm/empty
 	initial_ammo = 0
-
+/*
 /obj/item/ammo_magazine/box/emp
 	name = "ammunition box (.38, haywire)"
 	icon_state = "empbox"
@@ -223,7 +215,7 @@
 	max_ammo = 10
 	ammo_type = /obj/item/ammo_casing/c38/emp
 	caliber = ".38"
-
+*/
 /obj/item/ammo_magazine/box/emp/c45
 	name = "ammunition box (.45, haywire)"
 	ammo_type = /obj/item/ammo_casing/c45/emp

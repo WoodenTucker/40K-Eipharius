@@ -66,11 +66,6 @@
 	item_cost = 8
 	path = /obj/item/ammo_magazine/c50
 
-/datum/uplink_item/item/ammo/c38
-	name = ".38 speedloader"
-	item_cost = 8
-	path = /obj/item/ammo_magazine/c38
-
 /datum/uplink_item/item/ammo/flechette
 	name = "Flechette Magazine"
 	item_cost = 8
