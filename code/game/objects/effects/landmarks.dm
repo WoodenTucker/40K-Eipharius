@@ -485,7 +485,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/lockebolter = 2,
+	return list(/obj/item/gun/projectile/boltrifle/lockebolter = 2,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 2,)
 
