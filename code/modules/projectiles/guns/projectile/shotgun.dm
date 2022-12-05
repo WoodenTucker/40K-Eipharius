@@ -1,4 +1,3 @@
-/*
 /obj/item/gun/projectile/shotgun
 	bulletinsert_sound 	= "shotgun_insert"// sound/weapons/guns/interact/shellinsert1.ogg and 2
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
@@ -129,7 +128,7 @@
 
 	if(M)
 		M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-/*
+
 /obj/item/gun/projectile/shotgun/pump/combat
 	name = "combat shotgun"
 	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
@@ -160,7 +159,7 @@
 	fire_delay= 3
 	armor_penetration = 5
 	sales_price = 22
-*//*
+
 /obj/item/gun/projectile/shotgun/doublebarrel
 	name = "\improper MS Doom"
 	desc = "Two shots. That's all you'll ever need."
@@ -255,7 +254,7 @@
 	name = "signal shotgun"
 	desc = "A double-barreled shotgun meant to fire signal flash shells."
 	ammo_type = /obj/item/ammo_casing/shotgun/flash
-*//*
+
 /obj/item/gun/projectile/shotgun/pump/boltaction
 	name = "\improper Stub Rifle" //I used a random rifle generator to come up with that.
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."
@@ -276,7 +275,7 @@
 	accuracy = 1
 	fire_delay= 4.5
 	sales_price = 15
-*/
+
 
 
 /obj/item/gun/projectile/meltagun
@@ -302,4 +301,3 @@
 	fire_delay= 20
 	sales_price = 400 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
 
-*/

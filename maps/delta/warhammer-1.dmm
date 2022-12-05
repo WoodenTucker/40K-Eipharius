@@ -1199,7 +1199,7 @@
 "PY" = (/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves)
 "PZ" = (/obj/structure/forge,/obj/effect/floor_decal/turf/clockwork,/obj/flamer_fire{burnlevel = 22; firelevel = 1.#INF},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
 "Qb" = (/obj/machinery/telecomms/broadcaster{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/caves/dark)
-"Qd" = (/obj/effect/floor_decal/turf/basalt9,/obj/item/gun/projectile/lockebolter,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves/dark)
+"Qd" = (/obj/effect/floor_decal/turf/basalt9,/obj/item/gun/projectile/boltrifle/lockebolter,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves/dark)
 "Qf" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/caves/undercity)
 "Qg" = (/obj/machinery/computer/station_alert/security,/obj/effect/floor_decal/turf/plating,/obj/machinery/light/small{dir = 4},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/hallway/centralhall)
 "Qi" = (/obj/structure/table/rack/holorack,/obj/item/reagent_containers/food/snacks/bloodsoup,/obj/item/reagent_containers/food/snacks/bloodsoup,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/habs)
