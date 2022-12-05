@@ -346,7 +346,7 @@
 	armor_penetration = 45
 	penetration_modifier = 1.5
 	penetrating = 1
-	
+
 /obj/item/projectile/bullet/rifle/lp338
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130
@@ -385,10 +385,10 @@
 	embed = 0
 	edge = 1
 
-/obj/item/projectile/bullet/gyro
+/obj/item/projectile/bullet/bpistol
 	fire_sound = 'sound/effects/explosion1.ogg'
 
-/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
+/obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
 	..()
@@ -398,23 +398,23 @@
 	damage = 0
 	embed = 0
 
-
+/*
 /obj/item/projectile/bullet/bpistol // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 68
 	armor_penetration = 10
-/* Explosive aspect of bullets doesn't work so triaging the code for now.
+ Explosive aspect of bullets doesn't work so triaging the code for now.
 /obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
 	..()
-*/
+
 
 /obj/item/projectile/bullet/bolt
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 75
 	armor_penetration = 15
-/* Explosive aspect of bullets doesn't work so triaging the code for now.
+ Explosive aspect of bullets doesn't work so triaging the code for now.
  /obj/item/projectile/bullet/bolt/on_hit(var/atom/target, var/blocked = 0) // This shit is broken.
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
@@ -474,7 +474,7 @@
 	name = "piece of trash"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 49
-
+/*
 
 
 //-----SPECIAL BOLT ROUNDS-----
@@ -485,14 +485,14 @@
 	armor_penetration = 30
 	penetration_modifier = 1.4
 	penetrating = TRUE
-	
+
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 85
 	armor_penetration = 40
 	penetration_modifier = 1.8
 	penetrating = TRUE
-	
+
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 60
@@ -510,7 +510,7 @@
 	if(isturf(target))
 		explosion(target, -1, 0, 2)
 	..()
-
+*/
 /obj/item/projectile/bullet/rifle/lascannon
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
@@ -519,7 +519,7 @@
 	armor_penetration = 10
 	penetration_modifier = 2
 	penetrating = TRUE
-	
+
 /obj/item/projectile/bullet/rifle/plasma
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 100
@@ -527,7 +527,7 @@
 	armor_penetration = 90
 	penetration_modifier = 1.4
 	penetrating = TRUE
-	
+
 /obj/item/projectile/bullet/rifle/plasma/cannon //D E A T H
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 220
@@ -647,7 +647,7 @@
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
 		M.apply_effect((rand(80,140)),IRRADIATE,0)
-
+/*
 /obj/item/projectile/bullet/rifle/exitus
 	name = "bullet"
 	icon_state = "bullet"
@@ -667,7 +667,7 @@
 	icon_state = "bullet"
 	damage = 25 //Admin only spawn for now.
 	damage_type = BRUTE
-/* // commented until no more errors
+ // commented until no more errors
 /obj/item/projectile/bullet/rifle/exitus/explosive/on_hit(var/atom/target)
 	if(istype(target, /mob/living/carbon/human))
 	var/mob/living/carbon/human/M = target

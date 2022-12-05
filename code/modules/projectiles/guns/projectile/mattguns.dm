@@ -477,7 +477,7 @@
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/kp, /obj/item/ammo_magazine/bolt_rifle_magazine/ms)
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -561,13 +561,9 @@
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	caliber = ".75"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	one_hand_penalty = 10 //its a bolter not a toy gun
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -625,12 +621,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	caliber = ".75"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	one_hand_penalty = 10 //its still a bolter bro...
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'

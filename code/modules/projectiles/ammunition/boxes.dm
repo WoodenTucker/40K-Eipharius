@@ -336,7 +336,7 @@
 
 /obj/item/ammo_magazine/a50/empty
 	initial_ammo = 0
-
+/*
 /obj/item/ammo_magazine/a75
 	name = "ammo magazine (20mm)"
 	icon_state = "75"
@@ -345,7 +345,7 @@
 	ammo_type = /obj/item/ammo_casing/a75
 	multiple_sprites = 1
 	max_ammo = 4
-
+*/
 /obj/item/ammo_magazine/a75/empty
 	initial_ammo = 0
 
@@ -479,7 +479,7 @@
 /obj/item/ammo_magazine/ork/shoota/empty
 	initial_ammo = 0
 
-
+/*
 //-----SPECIAL BOLTER MAGS-----
 /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 	name = "Metal Storm Boltpistol Magazine"
@@ -536,7 +536,7 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp/empty
 	initial_ammo = 0
-
+*/
 
 /obj/item/ammo_magazine/melta
 	name = "Melta Canister"

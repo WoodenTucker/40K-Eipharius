@@ -18,7 +18,7 @@
 	heavy_effect_range = 0
 	light_effect_range = 1
 
-/obj/item/projectile/bullet/gyro
+/obj/item/projectile/bullet/bolterrifle
 	name ="explosive bolt"
 	icon_state= "bolter"
 	damage = 50

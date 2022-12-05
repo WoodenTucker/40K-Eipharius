@@ -27,12 +27,12 @@
 	desc = "MS .50AE bullet casing."
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/ms
-
+/*
 /obj/item/ammo_casing/a75
 	desc = "A 20mm bullet casing."
 	caliber = "75"
 	projectile_type = /obj/item/projectile/bullet/gyro
-
+*/
 /obj/item/ammo_casing/c38
 	desc = "A .38 bullet casing."
 	caliber = "38"
@@ -342,12 +342,12 @@
 /obj/item/ammo_casing/boltpistol
 	desc = "A .75 bolt pistol casing."
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/bpistol
+	projectile_type = /obj/item/projectile/bullet/bolterrifle // make seperate one for pistols later. also maybe for hoomans as well.
 
 /obj/item/ammo_casing/bolter
 	desc = "A .75 bolt rifle casing."
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/bolt
+	projectile_type = /obj/item/projectile/bullet/bolterrifle
 
 
 /obj/item/ammo_casing/ork
@@ -359,7 +359,7 @@
 	desc = "A small and crude bullet that was made with scrap. Looks poorly-made."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/ork/shoota
-
+/*
 //-----SPECIAL BULLETS:-----
 /obj/item/ammo_casing/boltpistol/kp
 	desc = "A kraken penetrator .75 bolt pistol casing."
@@ -380,7 +380,7 @@
 	desc = "A metal storm .75 bolt rifle casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt/ms
-
+*/
 
 /obj/item/ammo_casing/melta
 	name = "melted melta"
