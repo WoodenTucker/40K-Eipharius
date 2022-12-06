@@ -186,7 +186,7 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 600)
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
-	max_ammo = 10
+	max_ammo = 12
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/mc9mm/empty
