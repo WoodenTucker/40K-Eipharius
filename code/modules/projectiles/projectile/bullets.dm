@@ -172,37 +172,37 @@
 /* short-casing projectiles, like the kind used in pistols or SMGs */
 
 /obj/item/projectile/bullet/pistol
-	damage = 35 //9mm, .38, etc
+	damage = 30 //9mm
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
-	armor_penetration = 10
+	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/medium
-	damage = 38 //.45
-	armor_penetration = 15
+	damage = 35 //.45
+	armor_penetration = 10
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
-/obj/item/projectile/bullet/pistol/medium/smg
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
-	damage = 35 //10mm
-	armor_penetration = 15
-
-/obj/item/projectile/bullet/pistol/medium/revolver
-	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	damage = 44 //.44 magnum or something
-	armor_penetration = 15
-
-/obj/item/projectile/bullet/pistol/medium/revolver/ap
-	damage = 48
-	armor_penetration = 30
-
-/obj/item/projectile/bullet/pistol/medium/revolver/ms
-	damage = 68
-	armor_penetration = -20
-
-/obj/item/projectile/bullet/pistol/strong //matebas
-	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	damage = 50 //.50AE
+/obj/item/projectile/bullet/pistol/medium/ap
+	damage = 40 //.45
 	armor_penetration = 20
+	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+
+/obj/item/projectile/bullet/pistol/medium/ms
+	damage = 55 //.45
+	armor_penetration = -20
+	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+
+/obj/item/projectile/bullet/pistol/revolver
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	damage = 45 // .357
+	armor_penetration = 25
+
+/obj/item/projectile/bullet/pistol/revolver/ap
+	damage = 50
+	armor_penetration = 40
+
+/obj/item/projectile/bullet/pistol/revolver/ms
+	damage = 70
+	armor_penetration = -20
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -290,26 +290,6 @@
 	armor_penetration = 45
 	penetration_modifier = 1.5
 	penetrating = 1
-
-/obj/item/projectile/bullet/rifle/lp338
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 130
-	armor_penetration = 45
-	penetration_modifier = 1.5
-	penetrating = TRUE
-
-/obj/item/projectile/bullet/rifle/lp338/jhp
-	name = "JHP bullet"
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 160
-	armor_penetration = 5
-
-/obj/item/projectile/bullet/rifle/lp338/needler
-	name = "needler bullet"
-	fire_sound = 'sound/weapons/gunshot/needler.ogg'
-	damage = 90
-	damage_type = TOX
-	penetration_modifier = 2
 
 /* Miscellaneous */
 
@@ -412,12 +392,8 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 49
+	damage = 42
 
-/obj/item/projectile/bullet/ork/shoota
-	name = "piece of trash"
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 49
 /*
 
 

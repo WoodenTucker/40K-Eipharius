@@ -660,30 +660,6 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/ammo_casing/shotgun/stunshell
 	sort_string = "TBAAB"
 
-/datum/design/item/ammunition/ammo_emp_38
-	id = "ammo_emp_38"
-	desc = "A .38 round with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 2500, "uranium" = 750)
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	build_path = /obj/item/ammo_magazine/box/emp
-	sort_string = "TBAAC"
-
-/datum/design/item/ammunition/ammo_emp_45
-	id = "ammo_emp_45"
-	desc = "A .45 round with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 2500, "uranium" = 750)
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	build_path = /obj/item/ammo_magazine/box/emp/c45
-	sort_string = "TBAAD"
-
-/datum/design/item/ammunition/ammo_emp_10
-	id = "ammo_emp_10"
-	desc = "A .10mm round with an integrated EMP charge."
-	materials = list(DEFAULT_WALL_MATERIAL = 2500, "uranium" = 750)
-	req_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	build_path = /obj/item/ammo_magazine/box/emp/a10mm
-	sort_string = "TBAAE"
-
 /datum/design/item/ammunition/ammo_emp_slug
 	id = "ammo_emp_slug"
 	desc = "A shotgun slug with an integrated EMP charge."

@@ -322,23 +322,12 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	hidden = 1
 	category = "Arms and Ammunition"
 
-/datum/autolathe/recipe/magazine_rubber
-	name = "ammunition (.45, rubber)"
-	path = /obj/item/ammo_magazine/c45m/rubber
-	hidden = 1
-	category = "Arms and Ammunition"
-
 /datum/autolathe/recipe/speedloader_44_rubber
 	name = "speed loader (.44 magnum, rubber)"
 	path = /obj/item/ammo_magazine/c44/rubber
 	hidden = 1
 	category = "Arms and Ammunition"
 
-/datum/autolathe/recipe/magazine_flash
-	name = "ammunition (.45, flash)"
-	path = /obj/item/ammo_magazine/c45m/flash
-	hidden = 1
-	category = "Arms and Ammunition"
 
 /datum/autolathe/recipe/magazine_smg_rubber
 	name = "ammunition (9mm rubber top mounted)"
@@ -448,21 +437,9 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	hidden = 1
 	category = "Arms and Ammunition"
 
-/datum/autolathe/recipe/magazine_revolver_2
-	name = "ammunition (.45)"
-	path = /obj/item/ammo_magazine/c45m
-	hidden = 1
-	category = "Arms and Ammunition"
-
 /datum/autolathe/recipe/speedloader_44
 	name = "speed loader (.44 magnum)"
 	path = /obj/item/ammo_magazine/c44
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_revolver_4
-	name = "ammunition (.50AE)"
-	path = /obj/item/ammo_magazine/c50
 	hidden = 1
 	category = "Arms and Ammunition"
 
@@ -513,19 +490,6 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	path = /obj/item/ammo_casing/shotgun/stunshell
 	hidden = 1
 	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_uzi
-	name = "ammunition (machine.45)"
-	path = /obj/item/ammo_magazine/c45uzi
-	hidden = 1
-	category = "Arms and Ammunition"
-
-/datum/autolathe/recipe/magazine_deagle
-	name = "ammunition (.50 AE)"
-	path = /obj/item/ammo_magazine/a50
-	hidden = 1
-	category = "Arms and Ammunition"
-
 /datum/autolathe/recipe/rcd
 	name = "rapid construction device"
 	path = /obj/item/rcd

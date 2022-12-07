@@ -311,9 +311,6 @@
 				/obj/item/storage/box/shotgunammo = 2,
 				/obj/item/storage/box/shotgunshells = 4,
 				/obj/item/storage/box/stunshells = 1,
-				/obj/item/ammo_magazine/c45m = 2,
-				/obj/item/ammo_magazine/c45m/rubber = 4,
-				/obj/item/ammo_magazine/c45m/flash = 4,
 				/obj/item/ammo_magazine/mc9mmt = 2,
 				/obj/item/ammo_magazine/mc9mmt/rubber = 6)
 

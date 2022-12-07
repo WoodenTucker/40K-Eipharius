@@ -29,7 +29,7 @@
 "ds" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/obj/item/cell/plasma,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "dF" = (/obj/structure/table/steel,/obj/item/storage/fancy/cigarettes,/obj/item/flame/lighter/zippo,/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "dH" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 4},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
-"dJ" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
+"dJ" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)
 "dN" = (/obj/structure/banner/blue/small{pixel_y = 32},/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "dP" = (/obj/machinery/computer/operating,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/security)
 "dQ" = (/obj/structure/curtain,/turf/simulated/floor/trenches,/area/cadiaoutpost/oa/service/chapel)

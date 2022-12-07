@@ -696,7 +696,7 @@
 "XB" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/gun/energy/taser,/obj/item/gun/energy/taser,/obj/item/gun/energy/taser,/obj/item/gun/energy/taser,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "XM" = (/obj/structure/sign/stainedglass1,/turf/simulated/wall/concrete/strong,/area/cadiaoutpost/oa/service/chapel)
 "YH" = (/obj/structure/closet/crate/freezer/rations,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/magistratumpost)
-"YY" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_magazine/c45m,/obj/item/ammo_magazine/c45m,/obj/item/gun/projectile/warfare,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
+"YY" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/gun/projectile/warfare,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "Zk" = (/obj/structure/sink{dir = 8; pixel_x = -11},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/inn)
 "Zr" = (/obj/structure/urinal{pixel_y = 6},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/inn)
 "Zx" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_magazine/box/shotgun,/obj/item/ammo_magazine/box/shotgun,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)

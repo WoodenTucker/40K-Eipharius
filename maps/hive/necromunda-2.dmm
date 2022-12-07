@@ -81,7 +81,7 @@
 "bC" = (/obj/effect/floor_decal/newcorner/white/diagonal,/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/turf/simulated/floor/tiled/white,/area/space)
 "bD" = (/obj/effect/floor_decal/newcorner/plating{icon_state = "plating"; dir = 8},/obj/structure/iv_drip,/turf/simulated/floor/tiled{color = "grey"},/area/space)
 "bE" = (/obj/effect/decal/cleanable/dirt,/obj/random/firstaid,/obj/random/firstaid,/obj/random/firstaid,/obj/structure/table/rack/shelf,/turf/simulated/floor/tiled{color = "grey"},/area/space)
-"bF" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/ammo_magazine/c45m/warfare,/obj/structure/table/rack/shelf,/obj/item/storage/firstaid/surgery,/obj/random/medical/lite,/obj/random/maintenance,/turf/simulated/floor/tiled{color = "grey"},/area/space)
+"bF" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/structure/table/rack/shelf,/obj/item/storage/firstaid/surgery,/obj/random/medical/lite,/obj/random/maintenance,/turf/simulated/floor/tiled{color = "grey"},/area/space)
 "bG" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/obj/effect/decal/cleanable/blood/drip,/turf/simulated/floor/tiled{color = "grey"},/area/space)
 "bH" = (/obj/item/clothing/mask/bandana/blue,/obj/structure/table/reinforced,/obj/item/clothing/suit/apron,/obj/random/soap,/obj/item/reagent_containers/spray/sterilizine,/obj/item/FixOVein,/obj/item/FixOVein,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/plating,/area/space)
 "bI" = (/obj/structure/bed/chair/wood,/turf/simulated/floor/carpet/green,/area/space)

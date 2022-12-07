@@ -193,7 +193,7 @@
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper Tear gas grenades crate"
 	access = access_security
-
+/*
 /decl/hierarchy/supply_pack/security/pistolammo
 	name = "Ammunition - .45 magazines"
 	contains = list(/obj/item/ammo_magazine/c45m = 4)
@@ -210,7 +210,7 @@
 	containertype = /obj/structure/closet/crate/secure/weapon
 	containername = "\improper .45 rubber ammunition crate"
 	access = access_security
-/*
+
 /decl/hierarchy/supply_pack/security/pistolammopractice
 	name = "Ammunition - .45 practice"
 	contains = list(/obj/item/ammo_magazine/c45m/practice = 8)

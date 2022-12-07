@@ -8865,7 +8865,6 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/gun/projectile/warfare,
-/obj/item/ammo_magazine/c45m/warfare,
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
