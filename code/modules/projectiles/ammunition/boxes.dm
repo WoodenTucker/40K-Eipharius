@@ -216,15 +216,6 @@
 	ammo_type = /obj/item/ammo_casing/c38/emp
 	caliber = ".38"
 */
-/obj/item/ammo_magazine/box/emp/c45
-	name = "ammunition box (.45, haywire)"
-	ammo_type = /obj/item/ammo_casing/c45/emp
-	caliber = ".45"
-
-/obj/item/ammo_magazine/box/emp/a10mm
-	name = "ammunition box (10mm, haywire)"
-	ammo_type = /obj/item/ammo_casing/a10mm/emp
-	caliber = "10mm"
 
 /obj/item/ammo_magazine/mc9mmt
 	name = "top mounted magazine (9mm)"
@@ -240,20 +231,10 @@
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/mc9mmt/machinepistol
-	name = "Soulburn magazine"
+	name = "9mm SMG magazine"
 	desc = "Holds 30 bullets. That should be enough for all of ya."
 	icon_state = "machinepistol"
 	max_ammo = 30
-
-/obj/item/ammo_magazine/mc9mmt/machinepistol/ap
-	name = "Soulburn AP magazine"
-	desc = "Holds 30 AP bullets. That should be enough for all of ya."
-	ammo_type = /obj/item/ammo_casing/c9mm/ap
-
-/obj/item/ammo_magazine/mc9mmt/machinepistol/ms
-	name = "Soulburn MS magazine"
-	desc = "Holds 30 MS bullets. That should be enough for all of ya."
-	ammo_type = /obj/item/ammo_casing/c9mm/ms
 
 /obj/item/ammo_magazine/mc9mmt/rubber
 	name = "top mounted magazine (9mm, rubber)"

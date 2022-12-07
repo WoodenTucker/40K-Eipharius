@@ -176,41 +176,15 @@
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 	armor_penetration = 10
 
-/obj/item/projectile/bullet/pistol/ap
-	damage = 38
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
-	armor_penetration = 20
-
-/obj/item/projectile/bullet/pistol/ms
-	damage = 45
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
-	armor_penetration = -10
-
 /obj/item/projectile/bullet/pistol/medium
 	damage = 38 //.45
 	armor_penetration = 15
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
-/obj/item/projectile/bullet/pistol/medium/ap
-	damage = 42
-	armor_penetration = 30
-
-/obj/item/projectile/bullet/pistol/medium/ms
-	damage = 48
-	armor_penetration = -5
-
 /obj/item/projectile/bullet/pistol/medium/smg
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 	damage = 35 //10mm
 	armor_penetration = 15
-
-/obj/item/projectile/bullet/pistol/medium/smg/ap
-	damage = 39
-	armor_penetration = 30
-
-/obj/item/projectile/bullet/pistol/medium/smg/ms
-	damage = 45
-	armor_penetration = -5
 
 /obj/item/projectile/bullet/pistol/medium/revolver
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
@@ -222,33 +196,13 @@
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ms
-	damage = 58
-	armor_penetration = -10
+	damage = 68
+	armor_penetration = -20
 
 /obj/item/projectile/bullet/pistol/strong //matebas
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 50 //.50AE
 	armor_penetration = 20
-
-/obj/item/projectile/bullet/pistol/strong/ap
-	damage = 54 //.50AE
-	armor_penetration = 40
-
-/obj/item/projectile/bullet/pistol/strong/ms
-	damage = 60 //.50AE
-	armor_penetration = 0
-
-/obj/item/projectile/bullet/pistol/strong/revolver
-	damage = 44
-	armor_penetration = 15
-
-/obj/item/projectile/bullet/pistol/strong/revolver/ap
-	damage = 48
-	armor_penetration = 30
-
-/obj/item/projectile/bullet/pistol/strong/revolver/ms
-	damage = 58
-	armor_penetration = -10
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -271,7 +225,7 @@
 	name = "MS slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	damage = 90
-	armor_penetration = -5
+	armor_penetration = -20
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
@@ -304,16 +258,6 @@
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
 	damage = 45
 	armor_penetration = 10
-
-/obj/item/projectile/bullet/rifle/a556/ap
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 49
-	armor_penetration = 20
-
-/obj/item/projectile/bullet/rifle/a556/ms
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 55
-	armor_penetration = -10
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
