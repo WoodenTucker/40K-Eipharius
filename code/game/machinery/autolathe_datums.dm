@@ -328,13 +328,6 @@ var/const/EXTRA_COST_FACTOR = 1.25
 	hidden = 1
 	category = "Arms and Ammunition"
 
-
-/datum/autolathe/recipe/magazine_smg_rubber
-	name = "ammunition (9mm rubber top mounted)"
-	path = /obj/item/ammo_magazine/mc9mmt/rubber
-	hidden = 1
-	category = "Arms and Ammunition"
-
 /datum/autolathe/recipe/consolescreen
 	name = "console screen"
 	path = /obj/item/stock_parts/console_screen

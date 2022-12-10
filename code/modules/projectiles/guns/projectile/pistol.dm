@@ -5,6 +5,7 @@
 	icon_state = "nurglebpistol"
 	item_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	force = 10
 
 /obj/item/gun/projectile/pistol/pewter
 	name = "Messina Pattern 'Pewter' stub pistol"
@@ -12,8 +13,8 @@
 	icon_state = "sheetp"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
-	ammo_type = /obj/item/ammo_casing/c9mm
 	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
@@ -61,14 +62,15 @@
 
 /obj/item/gun/projectile/pistol/broomhandle
 	name = "Messina Pattern 'Broomhandle' stub pistol"
-	desc = "An ancient common STC from who knows where. Chambered in .45 and known locally as the 'Broomhandle' The STC locally adapted seems to have some degradation and suffers from a poor fire rate."
+	desc = "An ancient common STC from who knows where. Chambered in .45 and known locally as the 'Broomhandle'. It suffers from a poor fire rate, but it is able to load extended .45 mags, usually intended for SMGs."
 	icon_state = "handgun7"
 	item_state = "pistol"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+	screen_shake = 0.1
 
 /obj/item/gun/projectile/pistol/broomhandle/update_icon()
 	..()
@@ -82,11 +84,14 @@
 	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
 	icon_state = "stub2"
 	item_state = "pistol"
-	ammo_type = /obj/item/ammo_casing/c9mm
-	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+
+	burst = 2
+
 
 /obj/item/gun/projectile/pistol/villiers/update_icon()
 	..()

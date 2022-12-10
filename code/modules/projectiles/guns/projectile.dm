@@ -12,7 +12,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 1000)
-	screen_shake = 0
+	screen_shake = 0.05
 	combustion = 1
 	gun_type = GUN_PISTOL
 	var/image/rust_overlay = null //for condition shit

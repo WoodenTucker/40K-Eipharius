@@ -325,7 +325,7 @@
 	desc = "A rare slug pistol of excellent quality and design."
 	magazine_type = /obj/item/ammo_magazine/c45m/warfare
 	allowed_magazines = /obj/item/ammo_magazine/c45m/warfare
-	caliber = ".45"
+	caliber = ""
 	load_method = MAGAZINE
 	move_delay = 1.5
 	one_hand_penalty = 1
@@ -365,7 +365,7 @@
 	icon_state = "handgunmag"
 	mag_type = MAGAZINE
 	ammo_type = /obj/item/ammo_casing/c45
-	caliber = ".45"
+	caliber = ""
 	max_ammo = 7
 	multiple_sprites = 1
 

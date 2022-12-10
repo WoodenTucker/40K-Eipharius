@@ -9,10 +9,6 @@
 	name = "9mm"
 	path = /obj/item/ammo_magazine/mc9mm
 
-/datum/uplink_item/item/ammo/a10mm
-	name = "10mm"
-	path = /obj/item/ammo_magazine/a10mm
-
 /datum/uplink_item/item/ammo/darts
 	name = "Darts"
 	path = /obj/item/ammo_magazine/chemdart

@@ -33,18 +33,6 @@
 	icon_state = "R38"
 	ammo_type = /obj/item/ammo_casing/c44/rubber
 
-/obj/item/ammo_magazine/c45uzi
-	name = "stick magazine (.45)"
-	icon_state = "uzi45"
-	mag_type = MAGAZINE
-	ammo_type = /obj/item/ammo_casing/c45
-	matter = list(DEFAULT_WALL_MATERIAL = 1200)
-	caliber = ".45"
-	max_ammo = 16
-	multiple_sprites = 1
-
-/obj/item/ammo_magazine/c45uzi/empty
-	initial_ammo = 0
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
 	icon_state = "9x19p"
@@ -58,11 +46,7 @@
 
 /obj/item/ammo_magazine/mc9mm/empty
 	initial_ammo = 0
-/*
-/obj/item/ammo_magazine/mc9mm/flash
-	name = "magazine (9mm, flash)"
-	ammo_type = /obj/item/ammo_casing/c9mm/flash
-*/
+
 /obj/item/ammo_magazine/box/c9mm
 	name = "ammunition box (9mm)"
 	icon_state = "9mm"
@@ -74,28 +58,6 @@
 
 /obj/item/ammo_magazine/box/c9mm/empty
 	initial_ammo = 0
-/*
-/obj/item/ammo_magazine/box/emp
-	name = "ammunition box (.38, haywire)"
-	icon_state = "empbox"
-	origin_tech = list(TECH_COMBAT = 2)
-	max_ammo = 10
-	ammo_type = /obj/item/ammo_casing/c38/emp
-	caliber = ".38"
-*/
-
-/obj/item/ammo_magazine/mc9mmt
-	name = "top mounted magazine (9mm)"
-	icon_state = "9mmt"
-	mag_type = MAGAZINE
-	ammo_type = /obj/item/ammo_casing/c9mm
-	matter = list(DEFAULT_WALL_MATERIAL = 1200)
-	caliber = "9mm"
-	max_ammo = 20
-	multiple_sprites = 1
-
-/obj/item/ammo_magazine/mc9mmt/empty
-	initial_ammo = 0
 
 /obj/item/ammo_magazine/mc9mmt/machinepistol
 	name = "9mm SMG magazine"
@@ -103,29 +65,22 @@
 	icon_state = "machinepistol"
 	max_ammo = 30
 
-/obj/item/ammo_magazine/mc9mmt/rubber
-	name = "top mounted magazine (9mm, rubber)"
-	ammo_type = /obj/item/ammo_casing/c9mm/rubber
-
-/obj/item/ammo_magazine/mc9mmt/practice
-	name = "top mounted magazine (9mm, practice)"
-	ammo_type = /obj/item/ammo_casing/c9mm/practice
-
-/obj/item/ammo_magazine/box/c45/empty
-	initial_ammo = 0
-
-/obj/item/ammo_magazine/a10mm
-	name = "magazine (10mm)"
-	icon_state = "10mm"
+/obj/item/ammo_magazine/mc45mm
+	name = "magazine (.45)"
+	icon_state = "45-10"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	caliber = "10mm"
-	matter = list(DEFAULT_WALL_MATERIAL = 1500)
-	ammo_type = /obj/item/ammo_casing/a10mm
-	max_ammo = 20
+	matter = list(DEFAULT_WALL_MATERIAL = 600)
+	caliber = ".45"
+	ammo_type = /obj/item/ammo_casing/c45
+	max_ammo = 8
 	multiple_sprites = 1
 
-/obj/item/ammo_magazine/a10mm/empty
+/obj/item/ammo_magazine/mc45mm/empty
+	initial_ammo = 0
+	icon_state = "45-0"
+
+/obj/item/ammo_magazine/mc9mm/empty
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/a762
@@ -149,10 +104,6 @@
 
 /obj/item/ammo_magazine/a762/empty
 	initial_ammo = 0
-
-/obj/item/ammo_magazine/a762/practice
-	name = "magazine (7.62mm, practice)"
-	ammo_type = /obj/item/ammo_casing/a762/practice
 
 /obj/item/ammo_magazine/box/a556
 	name = "magazine box (5.56mm)"

@@ -27,7 +27,6 @@
 								/obj/item/ammo_magazine/mc9mm/empty         = TRADER_BLACKLIST,
 								/obj/item/ammo_magazine/box/c9mm/empty      = TRADER_BLACKLIST,
 								/obj/item/ammo_magazine/box/a556/empty      = TRADER_BLACKLIST,
-								/obj/item/ammo_magazine/mc9mmt/empty        = TRADER_BLACKLIST,
 								/obj/item/clothing/accessory/holster        = TRADER_ALL)
 
 /datum/trader/ship/egunshop

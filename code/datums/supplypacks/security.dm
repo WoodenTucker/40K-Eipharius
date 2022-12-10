@@ -246,22 +246,6 @@
 	access = access_security
 	security_level = SUPPLY_SECURITY_HIGH
 
-/decl/hierarchy/supply_pack/security/pdwammorubber
-	name = "Ammunition - 9mm top mounted rubber"
-	contains = list(/obj/item/ammo_magazine/mc9mmt/rubber = 4)
-	cost = 30
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper 9mm rubber ammunition crate"
-	access = access_security
-
-/decl/hierarchy/supply_pack/security/pdwammopractice
-	name = "Ammunition - 9mm top mounted practice"
-	contains = list(/obj/item/ammo_magazine/mc9mmt/practice = 8)
-	cost = 30
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper 9mm practice ammunition crate"
-	access = access_security
-
 /decl/hierarchy/supply_pack/security/bullpupammo
 	name = "Ammunition - 7.62"
 	contains = list(/obj/item/ammo_magazine/a762 = 4)
@@ -270,14 +254,6 @@
 	containername = "\improper 7.62 ammunition crate"
 	access = access_security
 	security_level = SUPPLY_SECURITY_HIGH
-
-/decl/hierarchy/supply_pack/security/bullpupammopractice
-	name = "Ammunition - 7.62 practice"
-	contains = list(/obj/item/ammo_magazine/a762/practice = 8)
-	cost = 30
-	containertype = /obj/structure/closet/crate/secure/weapon
-	containername = "\improper 7.62 practice ammunition crate"
-	access = access_security
 
 /decl/hierarchy/supply_pack/security/forensics //Not access-restricted so PIs can use it.
 	name = "Forensics - Auxiliary tools"
