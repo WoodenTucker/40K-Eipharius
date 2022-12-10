@@ -6,11 +6,15 @@
 	item_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	force = 10
+	accuracy = -2.5
+	one_hand_penalty = 5
+	move_delay = 5
+	fire_delay = 6
 
 /obj/item/gun/projectile/pistol/pewter
 	name = "Messina Pattern 'Pewter' stub pistol"
 	desc = "The locally made 'Pewter' pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
-	icon_state = "sheetp"
+	icon_state = "handgun7"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
 	caliber = "9mm"
@@ -19,12 +23,14 @@
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
 
+	accuracy = -1.5
+
 /obj/item/gun/projectile/pistol/pewter/update_icon()
 	..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
-		icon_state = "sheetp"
+		icon_state = "handgun7"
 	else
-		icon_state = "sheetp-e"
+		icon_state = "handgun-e"
 
 
 /obj/item/gun/projectile/pistol/kieji
@@ -37,6 +43,8 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+
+	accuracy = -3.5
 
 /obj/item/gun/projectile/pistol/kieji/update_icon()
 	..()
@@ -51,6 +59,9 @@
 	icon_state = "kiejistub"
 	item_state = "pistol"
 
+	accuracy = -5
+	fire_delay = 2
+
 /obj/item/gun/projectile/pistol/kieji/snub/update_icon()
 	..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
@@ -62,22 +73,24 @@
 
 /obj/item/gun/projectile/pistol/broomhandle
 	name = "Messina Pattern 'Broomhandle' stub pistol"
-	desc = "An ancient common STC from who knows where. Chambered in .45 and known locally as the 'Broomhandle'. It suffers from a poor fire rate, but it is able to load extended .45 mags, usually intended for SMGs."
-	icon_state = "handgun7"
+	desc = "An ancient common STC from who knows where. Chambered in .45 and known locally as the 'Broomhandle'. It suffers from a poor fire rate, but is capable of loading SMG standard .45 mags."
+	icon_state = "sheetp"
 	item_state = "pistol"
 	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
-	screen_shake = 0.1
+
+	fire_delay = 7
+	screen_shake = 0.2
 
 /obj/item/gun/projectile/pistol/broomhandle/update_icon()
 	..()
 	if(ammo_magazine && ammo_magazine.stored_ammo.len)
-		icon_state = "handgun7"
+		icon_state = "sheetp"
 	else
-		icon_state = "handgun-e"
+		icon_state = "sheetp-e"
 
 /obj/item/gun/projectile/pistol/villiers
 	name = "Villiers Pattern stub pistol."
@@ -90,7 +103,9 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
+	fire_delay = 3
 	burst = 2
+	accuracy = 1
 
 
 /obj/item/gun/projectile/pistol/villiers/update_icon()

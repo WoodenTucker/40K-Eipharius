@@ -550,7 +550,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/key/low
 	name = "Lowly Key"
 	desc = "A lowly key befitting the common man upon this world. Probably opens a pilgrim's home, or something equally unimportant."
-	icon_state = "key2" // key 1 is currently bugged, just use key2 for now
+	icon_state = "jail2"
 	grab_sound = 'sound/items/keyring_up.ogg'
 
 /obj/item/card/id/key/low/mineone

@@ -1,13 +1,13 @@
 /obj/item/gun/projectile/revolver
-	name = "revolver"
-	desc = "The Lumoco Arms HE Colt is a choice revolver for when you need to put a hole in the other guy. Uses .357 ammo."
+	name = "test revolver"
+	desc = "test revolver that shouldnt be in game. ahelp and put in a bug report on discord if you see this!"
 	icon_state = "cptrevolver"
 	item_state = "crevolver"
 	caliber = "357"
-	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
-	accuracy = 1
+	accuracy = -1
 	fire_delay= 3
 	ammo_type = /obj/item/ammo_casing/a357
 	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
@@ -43,4 +43,22 @@
 /obj/item/gun/projectile/revolver/load_ammo(var/obj/item/A, mob/user)
 	chamber_offset = 0
 	return ..()
+
+
+// .44 revolvers
+
+
+/obj/item/gun/projectile/revolver/agripinaa
+	name = "Agripinaa Pattern 'Necros' Revolver"
+	desc = "The Necros is a heavy revolver chambered in .44 made by the heavy duty Agripinaa forge world. Speedloaders won't fit in, but at least it ejects casings by itself."
+	icon_state = "necros"
+	item_state = "crevolver"
+	caliber = ".44"
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	handle_casings = EJECT_CASINGS
+	max_shells = 6
+	force = 20
+	accuracy = 1
+	fire_delay= 9
+	ammo_type = /obj/item/ammo_casing/c44
 

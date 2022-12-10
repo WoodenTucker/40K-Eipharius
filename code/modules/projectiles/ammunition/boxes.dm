@@ -35,7 +35,7 @@
 
 /obj/item/ammo_magazine/mc9mm
 	name = "magazine (9mm)"
-	icon_state = "9x19p"
+	icon_state = "mag9mm"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	matter = list(DEFAULT_WALL_MATERIAL = 600)
