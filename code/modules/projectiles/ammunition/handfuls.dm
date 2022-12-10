@@ -55,6 +55,9 @@
 
 /obj/item/ammo_magazine/handful/brifle_handful/ms/two
 	initial_ammo = 2
+*/
+
+// kroot rooifle
 
 /obj/item/ammo_magazine/handful/kroot_handful
 	name = "\improper handful of bullets"
@@ -64,9 +67,8 @@
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	grab_sound = 'sound/items/handle/bullet_pickup.ogg'
 
-/obj/item/ammo_magazine/handful/kroot_handful/two
-	initial_ammo = 2
-*/
+
+
 
 
 

@@ -11,16 +11,16 @@
 	wielded_item_state = "boltaction-wielded"
 	caliber = "763"
 	ammo_type = /obj/item/ammo_casing
-	one_hand_penalty = 10
+	one_hand_penalty = 15
 	empty_icon = "boltaction-e"
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	far_fire_sound = "sniper_fire"
-	move_delay = 3
-	one_hand_penalty = 3
+	move_delay = 8
+	one_hand_penalty = 10
 	accuracy = 2
 	fire_delay = 3
 	force = 15
-	sales_price = 0
+	sales_price = 10
 	var/gping = TRUE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/pump(mob/M as mob, silent = FALSE)
@@ -70,13 +70,13 @@
 
 	if(M)
 		M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-
+/*
 /obj/item/gun/projectile/shotgun/pump/boltaction/verb/scope_attach(mob/user)
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter (get_turf(src))
 		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
 		visible_message("[user] quickly attaches a scope to the [src] and adjusts it's firing mechanism.")
 		qdel(src)
-
+*/
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
 	name = "\improper Boscolet Pattern Stub Rifle"
 	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
@@ -91,14 +91,15 @@
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
 	accuracy = 1
-	sales_price = 0
+	sales_price = 30
 
+/*
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope_detach(mob/user)
 		qdel(src)
 		new /obj/item/gun/projectile/shotgun/pump/boltaction/ (get_turf(src))
 		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
 		visible_message("[user] quickly detaches a scope from the [src] and adjusts it's firing mechanism.")
-
+*/
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope()
 	set category = "Object"
 	set name = "Use Scope"
@@ -117,6 +118,31 @@
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
 		return 1
 	return 0
+
+// kroot
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
+	name = "\improper Kroot Rifle"
+	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	icon_state = "krootrifle"
+	item_state = "krootrifle"
+	wielded_item_state = "krootrifle-wielded"
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	caliber = "640" //its basically a musket ball
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	one_hand_penalty = 7
+	empty_icon = "krootrifle"
+	far_fire_sound = "sniper_fire"
+	fire_delay = 6
+	move_delay= 2.5
+	one_hand_penalty = 10
+	accuracy = 3
+	force = 30
+	sharp = 1
+	screen_shake = 0.5
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+	sales_price = 40
 
 //AMMO
 /*
@@ -179,14 +205,6 @@
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 20
-/obj/item/ammo_casing/krootbullet
-	name = "kroot slug"
-	desc = "An old worn out looking bullet casing."
-	caliber = "640"
-	projectile_type = /obj/item/projectile/bullet/rifle/kroot
-	icon_state = "kroot"
-	spent_icon = "krootcasing"
-	ammo_stack = /obj/item/ammo_magazine/handful/kroot_handful/two
 */
 //Shitty shotgun
 
@@ -656,30 +674,6 @@
 	else
 		icon_state = "sisterbolter-30-e"
 
-//various kroot rifles, bolt action and lever
-
-/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
-	name = "\improper Kroot Rifle"
-	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
-	icon_state = "krootrifle"
-	item_state = "krootrifle"
-	wielded_item_state = "krootrifle-wielded"
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	caliber = "640" //its basically a musket ball
-	ammo_type = /obj/item/ammo_casing
-	one_hand_penalty = 7
-	empty_icon = "krootrifle"
-	far_fire_sound = "sniper_fire"
-	fire_delay = 6
-	move_delay= 2.5
-	one_hand_penalty = 6
-	accuracy = 1
-	force = 30
-	sharp = 1
-	attack_verb = list ("stabbed", "sliced")
-	hitsound = "stab_sound"
-	sales_price = 40
-
 //ORKA
 
 // NEEDS BALANCING ! //
@@ -785,7 +779,7 @@
 
 
 //Eldar
-
+*/
 /obj/item/gun/projectile/eldar/scatapult
 	name = "Shuriken Catapult"
 	desc = "A large shuriken-firing ballistic weapon that is the standard and most common armament found amongst Craftworld Aeldari warriors."
@@ -810,13 +804,13 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "scatapult"
 	unloaded_icon = "scatapult-e"
-	fire_delay = 0.5
+	fire_delay = 3
 	burst = 1
 	move_delay = 0
 	automatic = 1
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0.5, one_hand_penalty=1, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic",   	 burst=10, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
+		list(mode_name="automatic",   	 burst=5, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
 		)
 	gun_type = GUN_AUTOMATIC
 	accuracy = 1
@@ -855,7 +849,7 @@
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
 
-*/
+
 /obj/item/gun/projectile/automatic/radcarbine
 	name = "Radium Carbine"
 	desc = "A deadly and highly dangerous personal weapon that are used exclusively by the forces of the Skitarii Legions of the Adeptus Mechanicus. It fires highly radioactive rounds."

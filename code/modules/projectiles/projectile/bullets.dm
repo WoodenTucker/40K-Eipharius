@@ -249,8 +249,14 @@
 
 /* "Rifle" rounds */
 
+/obj/item/projectile/bullet/rifle/kroot
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	penetrating = TRUE // fuck that shit penetrative rounds
+	damage = 70
+	armor_penetration = 20
+
 /obj/item/projectile/bullet/rifle
-	damage = 65
+	damage = 55
 	armor_penetration = 10
 	penetrating = TRUE
 

@@ -182,6 +182,14 @@
 	desc = "A 7.62mm practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/practice
 
+/obj/item/ammo_casing/krootbullet
+	name = "kroot slug"
+	desc = "An old worn out looking bullet casing."
+	caliber = "640"
+	projectile_type = /obj/item/projectile/bullet/rifle/kroot
+	icon_state = "kroot"
+	spent_icon = "krootcasing"
+
 /obj/item/ammo_casing/rocket
 	name = "\improper rocket shell"
 	desc = "A high explosive shell designed to be fired from a personal launcher."
