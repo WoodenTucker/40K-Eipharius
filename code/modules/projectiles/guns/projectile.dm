@@ -5,7 +5,7 @@
 
 /obj/item/gun/projectile
 	name = "gun"
-	desc = "A gun that fires bullets."
+	desc = "This is a bugged item. Please ahelp and submit a bug report on discord!"
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 	item_state = "handgun"

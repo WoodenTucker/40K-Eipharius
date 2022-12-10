@@ -82,7 +82,7 @@
 "bL" = (/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/magistratumpost)
 "bN" = (/obj/structure/table/rack,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/shield/riot,/obj/item/clothing/mask/gas/half,/obj/item/clothing/mask/gas/half,/obj/item/clothing/mask/gas/half,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/magistratumpost)
 "bO" = (/obj/structure/table/rack,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/stack/material/steel/fifty,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/magistratumpost)
-"bP" = (/obj/structure/table/rack,/obj/item/ammo_magazine/box/shotgun/stun,/obj/item/ammo_magazine/box/shotgun/stun,/obj/structure/railing{dir = 4},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/magistratumpost)
+"bP" = (/obj/structure/table/rack,/obj/item/ammo_box/shotgun/stunshell,/obj/item/ammo_box/shotgun/stunshell,/obj/structure/railing{dir = 4},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/magistratumpost)
 "bQ" = (/turf/simulated/open,/area/cadiaoutpost/oa/magistratumpost)
 "bS" = (/obj/effect/floor_decal/turf/checkers,/obj/machinery/door/airlock/imperiumdoor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)
 "bT" = (/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/groxpen)

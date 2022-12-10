@@ -670,7 +670,7 @@
 "EL" = (/obj/effect/floor_decal/turf/checkers,/obj/structure/table/rack,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "ET" = (/turf/simulated/wall/concrete/strong,/area/cadiaoutpost/oa/service/chapel)
 "FL" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/effect/floor_decal/newcorner/grey/solid,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/hallway/centralhall)
-"Ga" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_magazine/box/shotgun/slug,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
+"Ga" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_box/shotgun/slug,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "Gy" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/obj/effect/floor_decal/newcorner/grey/solid,/obj/effect/floor_decal/turf/rectangles/two,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/oa/service/chapel)
 "GH" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/gun/projectile/shotgun/pump/border,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "Hv" = (/obj/effect/floor_decal/turf/checkers,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
@@ -689,7 +689,7 @@
 "TG" = (/obj/structure/bed,/obj/item/bedsheet/rd,/turf/simulated/floor/lino,/area/cadiaoutpost/oa/service/inn)
 "Ux" = (/obj/item/flame/candle,/obj/effect/floor_decal/newcorner/grey/solid,/obj/effect/floor_decal/turf/rectangles/two,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/oa/service/chapel)
 "UA" = (/obj/effect/decal/cleanable/blood/writing{dir = 5},/turf/simulated/floor/wood,/area/cadiaoutpost/oa/magistratumpost)
-"VE" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_magazine/box/shotgun/bean,/obj/item/ammo_magazine/box/shotgun/bean,/obj/item/ammo_magazine/box/shotgun/bean,/obj/item/ammo_magazine/box/shotgun/bean,/obj/item/ammo_magazine/box/shotgun/bean,/obj/item/ammo_magazine/box/shotgun/bean,/obj/item/ammo_magazine/box/shotgun/bean,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
+"VE" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_box/shotgun/beanbag,/obj/item/ammo_box/shotgun/beanbag,/obj/item/ammo_box/shotgun/beanbag,/obj/item/ammo_box/shotgun/beanbag,/obj/item/ammo_box/shotgun/beanbag,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "Wi" = (/obj/effect/floor_decal/newcorner/grey/solid,/obj/effect/floor_decal/newcorner/grey/solid,/obj/effect/floor_decal/turf/rectangles,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/oa/service/chapel)
 "WV" = (/obj/structure/reagent_dispensers/waterbarrel,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/magistratumpost)
 "Xj" = (/obj/structure/bed,/obj/item/bedsheet/brown,/turf/simulated/floor/lino,/area/cadiaoutpost/oa/service/inn)
@@ -699,7 +699,7 @@
 "YY" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/gun/projectile/warfare,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "Zk" = (/obj/structure/sink{dir = 8; pixel_x = -11},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/inn)
 "Zr" = (/obj/structure/urinal{pixel_y = 6},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/inn)
-"Zx" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_magazine/box/shotgun,/obj/item/ammo_magazine/box/shotgun,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
+"Zx" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/checkers,/obj/item/ammo_box/shotgun,/obj/item/ammo_box/shotgun,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/magistratumpost)
 "ZV" = (/obj/structure/toilet{dir = 4; pixel_x = -1},/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/service/inn)
 
 (1,1,1) = {"

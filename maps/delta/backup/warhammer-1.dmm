@@ -6801,12 +6801,9 @@
 /obj/structure/closet/cabinet{
 	color = "grey"
 	},
-/obj/item/ammo_magazine/box/shotgun,
-/obj/item/ammo_magazine/box/shotgun,
-/obj/item/ammo_magazine/box/shotgun,
-/obj/item/ammo_magazine/box/shotgun/bean,
-/obj/item/ammo_magazine/box/shotgun/bean,
-/obj/item/ammo_magazine/box/shotgun/bean,
+/obj/item/ammo_box/shotgun,
+/obj/item/ammo_box/shotgun,
+/obj/item/ammo_box/shotgun,
 /obj/effect/floor_decal/turf/checkers/two,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/security)

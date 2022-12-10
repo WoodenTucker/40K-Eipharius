@@ -8912,8 +8912,6 @@
 /area/cadiaoutpost/oa/villageinside)
 "Or" = (
 /obj/structure/table/rack,
-/obj/item/ammo_magazine/box/shotgun/stun,
-/obj/item/ammo_magazine/box/shotgun/stun,
 /obj/structure/railing{
 	dir = 4
 	},

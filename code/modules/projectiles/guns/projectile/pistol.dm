@@ -10,6 +10,7 @@
 	one_hand_penalty = 5
 	move_delay = 5
 	fire_delay = 6
+	sales_price = 10
 
 /obj/item/gun/projectile/pistol/pewter
 	name = "Messina Pattern 'Pewter' stub pistol"
@@ -61,6 +62,7 @@
 
 	accuracy = -5
 	fire_delay = 2
+	sales_price = 15
 
 /obj/item/gun/projectile/pistol/kieji/snub/update_icon()
 	..()
@@ -84,6 +86,7 @@
 
 	fire_delay = 7
 	screen_shake = 0.2
+	sales_price = 20
 
 /obj/item/gun/projectile/pistol/broomhandle/update_icon()
 	..()
@@ -91,6 +94,7 @@
 		icon_state = "sheetp"
 	else
 		icon_state = "sheetp-e"
+
 
 /obj/item/gun/projectile/pistol/villiers
 	name = "Villiers Pattern stub pistol."
@@ -106,6 +110,7 @@
 	fire_delay = 3
 	burst = 2
 	accuracy = 1
+	sales_price = 30
 
 
 /obj/item/gun/projectile/pistol/villiers/update_icon()

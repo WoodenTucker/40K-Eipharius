@@ -70,14 +70,14 @@
 			to_chat(user, "There is a <span class='danger'><b>SPENT</b></span> one in the chamber.")
 	else
 		to_chat(user, "<span class='danger'>The chamber is <b>EMPTY</b>.")
-
+/*
 /obj/item/gun/projectile/shotgun/pump/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/ammo_magazine/box/shotgun))
 		var/obj/item/ammo_magazine/box/shotgun/S = W
 		if(!S.open)
 			return
 	..()
-
+*/
 
 /obj/item/gun/projectile/shotgun/pump/attack_self(mob/living/user as mob)
 	if(world.time >= recentpump + 10)
