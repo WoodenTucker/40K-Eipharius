@@ -12,9 +12,7 @@
 	id_slot = null
 	pda_slot = null
 	backpack_contents = list(
-		/obj/item/ammo_magazine/handful/kroot_handful,
-		/obj/item/ammo_magazine/handful/kroot_handful,
-		/obj/item/ammo_magazine/handful/kroot_handful,
+		/obj/item/ammo_magazine/handful/kroot_handful = 3
 	)
 
 //Tau
