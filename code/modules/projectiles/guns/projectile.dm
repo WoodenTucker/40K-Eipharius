@@ -5,14 +5,14 @@
 
 /obj/item/gun/projectile
 	name = "gun"
-	desc = "A gun that fires bullets."
+	desc = "This is a bugged item. Please ahelp and submit a bug report on discord!"
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 	item_state = "handgun"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 1000)
-	screen_shake = 0
+	screen_shake = 0.05
 	combustion = 1
 	gun_type = GUN_PISTOL
 	var/image/rust_overlay = null //for condition shit

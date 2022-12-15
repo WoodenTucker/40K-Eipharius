@@ -1,3 +1,125 @@
+// 9 mm
+/obj/item/gun/projectile/pistol
+	name = "template pistol"
+	desc = "This should not exist. Please ahelp for staff assistance. Also submit a bug report on discord."
+	icon_state = "nurglebpistol"
+	item_state = "pistol"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	force = 10
+	accuracy = -2.5
+	one_hand_penalty = 5
+	move_delay = 5
+	fire_delay = 6
+	sales_price = 10
+
+/obj/item/gun/projectile/pistol/pewter
+	name = "Messina Pattern 'Pewter' stub pistol"
+	desc = "The locally made 'Pewter' pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
+	icon_state = "handgun7"
+	item_state = "pistol"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+
+	accuracy = -1.5
+
+/obj/item/gun/projectile/pistol/pewter/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "handgun7"
+	else
+		icon_state = "handgun-e"
+
+
+/obj/item/gun/projectile/pistol/kieji
+	name = "Kieji stub pistol"
+	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
+	icon_state = "kieji"
+	item_state = "pistol"
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+
+	accuracy = -3.5
+
+/obj/item/gun/projectile/pistol/kieji/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "kieji"
+	else
+		icon_state = "kieji-e"
+
+/obj/item/gun/projectile/pistol/kieji/snub
+	name = "Snub nosed Kieji stub pistol"
+	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
+	icon_state = "kiejistub"
+	item_state = "pistol"
+
+	accuracy = -5
+	fire_delay = 2
+	sales_price = 15
+
+/obj/item/gun/projectile/pistol/kieji/snub/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "kiejistub"
+	else
+		icon_state = "kiejistub-e"
+
+// 45 acp
+
+/obj/item/gun/projectile/pistol/broomhandle
+	name = "Messina Pattern 'Broomhandle' stub pistol"
+	desc = "An ancient common STC from who knows where. Chambered in .45 and known locally as the 'Broomhandle'. It suffers from a poor fire rate, but is capable of loading SMG standard .45 mags."
+	icon_state = "sheetp"
+	item_state = "pistol"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+
+	fire_delay = 7
+	screen_shake = 0.2
+	sales_price = 20
+
+/obj/item/gun/projectile/pistol/broomhandle/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "sheetp"
+	else
+		icon_state = "sheetp-e"
+
+
+/obj/item/gun/projectile/pistol/villiers
+	name = "Villiers Pattern stub pistol."
+	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
+	icon_state = "stub2"
+	item_state = "pistol"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+
+	fire_delay = 3
+	burst = 2
+	accuracy = 1
+	sales_price = 30
+
+
+/obj/item/gun/projectile/pistol/villiers/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "stub2"
+	else
+		icon_state = "stub2-e"
+
 
 /obj/item/gun/projectile/ork/slugga
 	name = "slugga"
@@ -7,7 +129,7 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = TRUE //yes it can jam
-	accuracy = -4 //WHY WAS IT SO FUCKING ACCURATE BEFORE? IT WAS 0.2!
+	accuracy = -4
 	force = 20
 	move_delay = 1.5
 	load_method = MAGAZINE

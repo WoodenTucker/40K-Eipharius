@@ -1,11 +1,378 @@
+//Shitty variant of the normal bolt action rifle.
 
 // Accuracy Guide. Accuracy of -4 = Miss 1/3 shots on average. Accuracy of 0 = You never miss. Make sure weapon accuracy is never higher then -1 unless you want perfect accuracy.
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
+/obj/item/gun/projectile/shotgun/pump/boltaction
+	name = "\improper Boscolet Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
+	icon_state = "boltaction"
+	item_state = "boltaction"
+	wielded_item_state = "boltaction-wielded"
+	caliber = "763"
+	ammo_type = /obj/item/ammo_casing
+	one_hand_penalty = 15
+	empty_icon = "boltaction-e"
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	far_fire_sound = "sniper_fire"
+	move_delay = 8
+	one_hand_penalty = 10
+	accuracy = 2
+	fire_delay = 3
+	force = 15
+	sales_price = 10
+	var/gping = TRUE
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/pump(mob/M as mob, silent = FALSE)
+	if(is_jammed)
+		if(M)
+			M.visible_message("\The [M] begins to unjam [src].", "You begin to clear the jam of [src]")
+		if(!do_after(M, 40, src))
+			return
+		is_jammed = 0
+		playsound(src.loc, 'sound/effects/unjam.ogg', 50, 1)
+		if(M)
+			M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		return
+
+	if(!chambered && !loaded.len)//If there's an empty icon then use it.
+		pumpsound = null
+		if (gping && !loaded.len)
+			playsound(src, 'sound/effects/gping.ogg', 100, 1)
+			to_chat(M, "<span class='warning'>Ping!</span>")
+		if(M)
+			to_chat(M, "<span class='warning'>It's empty.</span>")
+		return
+
+	if(chambered && loaded.len)
+		pumpsound = initial(pumpsound)
+
+	else if(!chambered && loaded.len)
+		pumpsound = forwardsound
+
+	if(chambered)//We have a shell in the chamber
+		chambered.loc = get_turf(src)//Eject casing
+		playsound(src, casingsound, 100, 1)
+		chambered = null
+
+	if(loaded.len)
+		var/obj/item/ammo_casing/AC = loaded[1] //load next casing.
+		loaded -= AC //Remove casing from loaded list.
+		chambered = AC
+
+	if(!chambered && !loaded.len)
+		pumpsound = backsound
+
+	update_icon()
+
+	if(!silent)
+		playsound(src, pumpsound, 45, 1)
+
+	if(M)
+		M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+/*
+/obj/item/gun/projectile/shotgun/pump/boltaction/verb/scope_attach(mob/user)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly attaches a scope to the [src] and adjusts it's firing mechanism.")
+		qdel(src)
+*/
+/obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
+	name = "\improper Boscolet Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
+	icon_state = "boltactionsharp"
+	item_state = "boltactionsharp"
+	empty_icon = "boltactionsharp-e"
+	wielded_item_state = "boltaction-wielded"
+	loaded_icon = "boltactionsharp"
+	unwielded_loaded_icon = "boltactionsharp"
+	wielded_loaded_icon = "boltaction-wielded"
+	unloaded_icon = "boltactionsharp-e"
+	unwielded_unloaded_icon = "boltactionsharp"
+	wielded_unloaded_icon = "boltaction-wielded"
+	accuracy = 1
+	sales_price = 30
+
+/*
+/obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope_detach(mob/user)
+		qdel(src)
+		new /obj/item/gun/projectile/shotgun/pump/boltaction/ (get_turf(src))
+		playsound(loc, 'sound/items/Screwdriver.ogg', 70, 1)
+		visible_message("[user] quickly detaches a scope from the [src] and adjusts it's firing mechanism.")
+*/
+/obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+//Paryying.
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
+	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
+		return 1
+	return 0
+
+// kroot
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
+	name = "\improper Kroot Rifle"
+	desc = "A Kroot-issue rifle. Quite exotic looking. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	icon_state = "krootrifle"
+	item_state = "krootrifle"
+	wielded_item_state = "krootrifle-wielded"
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	caliber = "640" //its basically a musket ball
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	one_hand_penalty = 7
+	empty_icon = "krootrifle"
+	far_fire_sound = "sniper_fire"
+	fire_delay = 6
+	move_delay= 2.5
+	one_hand_penalty = 10
+	accuracy = 3
+	force = 30
+	sharp = 1
+	screen_shake = 0.5
+	attack_verb = list ("stabbed", "sliced")
+	hitsound = "stab_sound"
+	sales_price = 40
+
+//AMMO
+/*
+/obj/item/ammo_casing/brifle
+	desc = "An old worn out looking bullet casing."
+	caliber = "763"
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle
+	icon_state = "brifle"
+	spent_icon = "brifle-casing"
+	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/two
+
+/obj/item/ammo_casing/brifle/ap
+	desc = "An old worn out looking AP bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ap
+	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/ap/two
+
+/obj/item/ammo_casing/brifle/ms
+	desc = "An old worn out looking MS bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ms
+	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/ms/two/
+
+/obj/item/projectile/bullet/rifle/a762/brifle
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	penetrating = TRUE
+	damage = 65
+	armor_penetration = 10
+
+/obj/item/projectile/bullet/rifle/a762/brifle/ap
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	damage = 68
+	armor_penetration = 20
+	penetrating = TRUE
+
+/obj/item/projectile/bullet/rifle/a762/brifle/ms
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	damage = 75
+	armor_penetration = -10
+	penetrating = TRUE
+
+/obj/item/projectile/bullet/rifle/kroot
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	penetrating = TRUE // fuck that shit penetrative rounds
+	damage = 70
+	armor_penetration = 20
+
+/obj/item/ammo_magazine/brifle
+	name = "Rifle Box"
+	desc = "A box of rifle ammo"
+	icon_state = "rbox"
+	caliber = "763"
+	ammo_type = /obj/item/ammo_casing/brifle
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 20
+
+/obj/item/ammo_magazine/kroot
+	name = "Kroot Rifle Box"
+	desc = "A box of Kroot rifle ammo"
+	icon_state = "rbox"
+	caliber = "640"
+	ammo_type = /obj/item/ammo_casing/krootbullet
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 20
+*/
+//Shitty shotgun
+
+/obj/item/gun/projectile/shotgun/pump/voxlegis
+	name = "Voxlegis"
+	desc = "A shotgun favoured by the enforcers of the sector. Due to the possibility of quickly loading lethal or non-lethal shells."
+	icon_state = "voxlegisnew"
+	item_state = "voxlegisnew"
+	wielded_item_state = "winchester-wielded"
+	str_requirement = 8
+	ammo_type = /obj/item/ammo_casing/shotgun
+	empty_icon = "voxlegisnew-e"
+	move_delay = 3
+	one_hand_penalty = 4
+	accuracy = 0.5
+	fire_delay= 3
+	sales_price = 25
+
+/obj/item/gun/projectile/automatic/flamer
+	name = "Scorcher"
+	desc = "An incredibly dangerous hand-held flamethrower used often in infiltration or siege operations."
+	icon_state = "flamer"
+	item_state = "flamer"
+	wielded_item_state = "flamer-wielded"
+	caliber = "flamer"
+	one_hand_penalty = 10
+	str_requirement = 10
+	fire_sound = 'sound/effects/fire01.ogg'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	casingsound = null//No eject sound for you.
+	firemodes = list()
+	accuracy = 0
+	automatic = 1
+	fire_delay = 16
+	move_delay = 6
+	burst=1
+	magazine_type = /obj/item/ammo_magazine/flamer
+	allowed_magazines = /obj/item/ammo_magazine/flamer
+	can_jam = FALSE
+
+	loaded_icon = "flamer"
+	unwielded_loaded_icon = "flamer"
+	wielded_loaded_icon = "flamer-wielded"
+	unloaded_icon = "flamer-e"
+	unwielded_unloaded_icon = "flamer-e"
+	wielded_unloaded_icon = "flamer-wielded-e"
+	sales_price = 60
+
+	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+/obj/item/gun/projectile/automatic/flamer/pistol
+	name = "Handheld Scorcher"
+	desc = "The handheld, pistol varient of the flamer. It shoots slower than it's larger brother and is more difficult to hold in your single hand."
+	icon_state = "flamerp"
+	item_state = "flamerp"
+	wielded_item_state = "flamer-wielded"
+	caliber = "flamer"
+	one_hand_penalty = 5
+	str_requirement = 16
+	fire_sound = 'sound/effects/fire01.ogg'
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	casingsound = null//No eject sound for you.
+	firemodes = list()
+	accuracy = 0
+	automatic = 1
+	fire_delay = 22
+	move_delay = 6
+	burst=1
+	magazine_type = /obj/item/ammo_magazine/flamer
+	allowed_magazines = /obj/item/ammo_magazine/flamer
+	can_jam = FALSE
+
+	loaded_icon = "flamerp"
+	unwielded_loaded_icon = "flamerp"
+	wielded_loaded_icon = "flamer-wielded"
+	unloaded_icon = "flamerp-e"
+	unwielded_unloaded_icon = "flamerp-e"
+	wielded_unloaded_icon = "flamer-wielded-e"
+	sales_price = 60
+
+	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+// Stubber //
+/*
+/obj/item/gun/projectile/automatic/stubber
+	name = "Vraks Pattern Heavy Stubber"
+	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
+	icon_state = "hmg"
+	item_state = "hmg"
+	str_requirement = 13
+	w_class = ITEM_SIZE_HUGE
+	force = 17
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	max_shells = 50
+	caliber = "a556"
+	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	ammo_type = /obj/item/ammo_casing/a556
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/box/a556/mg08
+	allowed_magazines = /obj/item/ammo_magazine/box/a556/mg08
+	wielded_item_state = "hmg-wielded"
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
+	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
+	loaded_icon = "hmg"
+	unwielded_loaded_icon = "hmg"
+	wielded_loaded_icon = "hmg-wielded"
+	unloaded_icon = "hmg-e"
+	unwielded_unloaded_icon = "hmg-e"
+	wielded_unloaded_icon = "hmg-wielded-e"
+	burst = 1
+	firemodes = list()
+	gun_type = GUN_LMG
+	move_delay= 5
+	one_hand_penalty = 8 //it is a HMG, but its also not a bolter, this is probably enough penalty
+	accuracy = 0
+	fire_delay = 1.6
+	sales_price = 31
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4.3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		)
 
 
 
-// Bolt Rifles
+// adeptus mechanicus adamantium LMG
+//icon = 'icons/obj/weapons/gun/projectile.dmi'
+
+/obj/item/gun/projectile/automatic/stubber/cognis
+	name = "Cognis Pattern Heavy Stubber"
+	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
+	icon_state = "cognisLMG"
+	item_state = "cognisLMG"
+	str_requirement = 13 //change as SOON as skitarii stats are buffed and working!!!
+	loaded_icon = "cognisLMG"
+	unwielded_loaded_icon = "cognisLMG"
+	wielded_loaded_icon = "hmg-wielded"
+	unloaded_icon = "cognisLMG-e"
+	unwielded_unloaded_icon = "cognisLMG-e"
+	wielded_unloaded_icon = "hmg-wielded-e"
+	burst = 1
+	fire_delay = 1.4
+	one_hand_penalty = 9 //by the omnissiah you MUST hold the machine spirit properly
+	sales_price = 0
+
+	firemodes = list(
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		)
+
+/obj/item/gun/projectile/automatic/stubber/villiers
+	name = "Villiers Heavy Stubber"
+	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
+	move_delay= 4.5
+	one_hand_penalty = 7
+	accuracy = 0.5
+	fire_delay = 1.7
+	sales_price = 32
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		)
+		*/
+
+// Boltgun
 /obj/item/gun/projectile/boltrifle //boltus
 	name = "Godwyn Mark Vb Pattern Bolter"
 	desc = "The Adeptus Astartes's legendary and destructive Bolter Rifle, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
@@ -20,7 +387,7 @@
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine, /obj/item/ammo_magazine/bolt_rifle_magazine/kp, /obj/item/ammo_magazine/bolt_rifle_magazine/ms)
+	allowed_magazines = list(/obj/item/ammo_magazine/bolt_rifle_magazine)
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -97,20 +464,16 @@
 
 /obj/item/gun/projectile/boltrifle/lockebolter //needs lots of work and love, ok standin for now
 	name = "Locke Pattern bolter"
-	desc = " Often found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
+	desc = "The Locke Pattern Bolter, designed for Adeptus Arbites personnel when heavier firepower are required. Can also be found in hands of Astra Militarum officers, veterans and Commissar, Though relatively uncommon. It is a human-sized Bolter, Thus it's very popular among the troops and the lucky ones who get their hands on one of these bad boy."
 	icon_state = "lockebolter"
 	str_requirement = 10
 	w_class = ITEM_SIZE_HUGE
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	max_shells = 15
-	caliber = ".75"
+	max_shells = 30
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	one_hand_penalty = 10 //its a bolter not a toy gun
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/ltrifle_magin.ogg'
@@ -136,7 +499,7 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=4.6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/obj/item/gun/projectile/lockebolter/update_icon()
+/obj/item/gun/projectile/boltrifle/lockebolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "lockebolter-30"
@@ -150,7 +513,7 @@
 	loaded_icon = "1kbolter-30"
 	unloaded_icon = "1kbolter-e"
 	accuracy = 1
-/obj/item/gun/projectile/lockebolter/infernobolter/update_icon()
+/obj/item/gun/projectile/boltrifle/lockebolter/infernobolter/update_icon()
 	..()
 	if(ammo_magazine)
 		icon_state = "1kbolter-30"
@@ -168,12 +531,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	caliber = ".75"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
-	ammo_type = /obj/item/ammo_casing/bolter
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
-	allowed_magazines = /obj/item/ammo_magazine/bolt_rifle_magazine
 	one_hand_penalty = 10 //its still a bolter bro...
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -313,7 +671,7 @@
 
 
 //Eldar
-
+*/
 /obj/item/gun/projectile/eldar/scatapult
 	name = "Shuriken Catapult"
 	desc = "A large shuriken-firing ballistic weapon that is the standard and most common armament found amongst Craftworld Aeldari warriors."
@@ -338,13 +696,13 @@
 	cock_sound 		= 'sound/weapons/guns/interact/ltrifle_cock.ogg'
 	loaded_icon = "scatapult"
 	unloaded_icon = "scatapult-e"
-	fire_delay = 0.5
+	fire_delay = 3
 	burst = 1
 	move_delay = 0
 	automatic = 1
 	firemodes = list(
 		list(mode_name="semiauto",       burst=1, fire_delay=0.5, one_hand_penalty=1, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="automatic",   	 burst=10, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
+		list(mode_name="automatic",   	 burst=5, fire_delay=1.5, one_hand_penalty=2, burst_accuracy=list(0,1,1), dispersion=list(0.0, 0.1, 0.2), automatic = 2)
 		)
 	gun_type = GUN_AUTOMATIC
 	accuracy = 1
@@ -356,7 +714,7 @@
 	else
 		icon_state = "scatapult-e"
 
-/obj/item/gun/projectile/automatic/galvanicrifle
+/obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
 	icon_state = "galvrifle" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)
@@ -383,7 +741,6 @@
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
 
-*/
 
 /obj/item/gun/projectile/automatic/radcarbine
 	name = "Radium Carbine"

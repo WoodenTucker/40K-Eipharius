@@ -27,7 +27,7 @@ var/datum/antagonist/deathsquad/mercenary/commandos
 	player.equip_to_slot_or_del(new /obj/item/clothing/glasses/thermal(player), slot_glasses)
 	player.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/syndicate(player), slot_wear_mask)
 	player.equip_to_slot_or_del(new /obj/item/storage/box(player), slot_in_backpack)
-	player.equip_to_slot_or_del(new /obj/item/ammo_magazine/box/c45(player), slot_in_backpack)
+	player.equip_to_slot_or_del(new /obj/item/ammo_magazine(player), slot_in_backpack)
 	//player.equip_to_slot_or_del(new /obj/item/rig/merc(player), slot_back) FIXME
 	player.equip_to_slot_or_del(new /obj/item/gun/energy/pulse_rifle(player), slot_r_hand)
 	player.equip_to_slot_or_del(new /obj/item/melee/energy/sword(player), slot_l_hand)

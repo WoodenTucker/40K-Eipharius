@@ -55,6 +55,9 @@
 
 /obj/item/ammo_magazine/handful/brifle_handful/ms/two
 	initial_ammo = 2
+*/
+
+// kroot rooifle
 
 /obj/item/ammo_magazine/handful/kroot_handful
 	name = "\improper handful of bullets"
@@ -64,9 +67,8 @@
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	grab_sound = 'sound/items/handle/bullet_pickup.ogg'
 
-/obj/item/ammo_magazine/handful/kroot_handful/two
-	initial_ammo = 2
-*/
+
+
 
 
 
@@ -116,15 +118,21 @@
 
 
 //Revolver
-/obj/item/ammo_magazine/handful/revolver
-	name = "\improper handful of revolver ammo"
+/obj/item/ammo_magazine/handful/revolver357
+	name = "Handful of .357 bullets"
 	desc = "Why use a quickloader, when you can be a quicker loader?"
 	icon_state = "revolver-handful"
+	caliber = "357"
 	ammo_type = /obj/item/ammo_casing/a357
 	max_ammo = 6
 
-/obj/item/ammo_magazine/handful/revolver/two
-	initial_ammo = 2
+/obj/item/ammo_magazine/handful/revolver44
+	name = "Handful of .44 bullets"
+	desc = "Why use a quickloader, when you can be a quicker loader?"
+	icon_state = "revolver-handful"
+	caliber = ".44"
+	ammo_type = /obj/item/ammo_casing/c44
+	max_ammo = 6
 
 /obj/item/ammo_magazine/handful/ptsd
 	name = "PTSD round"
@@ -225,37 +233,37 @@
 
 //Box of handfuls of shotgun ammo.
 /obj/item/ammo_box/shotgun
-	name = "\improper shells box"
+	name = "buckshot shells box"
 	icon_state = "shotbox"
-	desc = "You get shells out of this."
+	desc = "You get buckshot shell handfuls out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/shotgun_handful
 
 /obj/item/ammo_box/shotgun/slug
-	name = "\improper slugs box"
+	name = "slugs box"
 	icon_state = "slugbox"
-	desc = "You get slugs out of this."
+	desc = "You get slug handfuls out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful
 
-/obj/item/ammo_box/shotgun/slug
-	name = "\improper MS slugs box"
+/obj/item/ammo_box/shotgun/msslug
+	name = "MS slugs box"
 	icon_state = "heavyslugbox"
-	desc = "You get extra heavy slugs out of this."
+	desc = "You get extra heavy slug handfuls out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful/ms
 
 /obj/item/ammo_box/shotgun/beanbag
-	name = "\improper beanbags box"
+	name = "beanbags box"
 	icon_state = "beanbox"
-	desc = "You get beanbags out of this."
+	desc = "You get beanbag handfuls out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
 
 /obj/item/ammo_box/shotgun/stunshell
-	name = "\improper stunshell box"
+	name = "stunshell box"
 	icon_state = "stunbox1"
-	desc = "You get stunshells out of this."
+	desc = "You get stunshell handfulls out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/stunshell_handful
 
 /obj/item/ammo_box/ptsd
-	name = "\improper shells box"
+	name = "Sniper shells box"
 	icon_state = "ptsdbox"
 	desc = "You get shells out of this."
 	handful_type = /obj/item/ammo_magazine/handful/ptsd
@@ -264,6 +272,8 @@
 
 
 //Dumb shotgun stuff from another time.
+// DO NOT USE THESE, THESE ARE OLD ONES AAAA, USE HANDFUL BOXES INSTEAD
+/*
 /obj/item/ammo_magazine/box/shotgun
 	name = "shells box"
 	icon_state = "gbox"
@@ -293,7 +303,9 @@
 	if(!open)
 		return
 	..()
+*/
 
+/*
 /obj/item/ammo_magazine/box/shotgun/slug
 	name = "slug box"
 	icon_state = "blbox"
@@ -313,3 +325,4 @@
 	name = "beanbag box"
 	icon_state = "bbox"
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
+	*/

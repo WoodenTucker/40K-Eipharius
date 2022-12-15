@@ -12,21 +12,6 @@
 	cost = 13
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine
 
-/datum/cargo_entry/ammo/boltpistolmagkp
-	name = "Penetrator Bolt Pistol Magazine"
-	cost = 23
-	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
-
-/datum/cargo_entry/ammo/boltermag
-	name = "Bolter Magazine"
-	cost = 38
-	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine
-
-/datum/cargo_entry/ammo/boltermagkp
-	name = "Penetrator Bolter Magazine"
-	cost = 60
-	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp
-
 /datum/cargo_entry/ammo/lasmag
 	name = "Lasgun Power Pack"
 	cost = 10

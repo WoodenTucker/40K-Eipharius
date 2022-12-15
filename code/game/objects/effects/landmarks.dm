@@ -380,15 +380,15 @@ Template:
 	return list(/obj/item/gun/projectile = 1)
 
 /obj/random/loot/lightstubberammo
-	name = "Light Stubber Ammo" // After manor update we delete this.
+	name = "Random shotgun shells" // After manor update we delete this.
 	desc = "This is an ammo spawner that spawns ammo for light stubbers."
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
 	return list(/obj/item/ammo_box/shotgun = 7,
-				/obj/item/ammo_magazine/box/shotgun/slug = 3,
-				/obj/item/ammo_magazine/box/shotgun/bean = 1,
+				/obj/item/ammo_box/shotgun/slug = 3,
+				/obj/item/ammo_box/shotgun/beanbag = 1,
 				/obj/item/ammo_box/rifle = 8,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
@@ -485,7 +485,7 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/lockebolter = 2,
+	return list(/obj/item/gun/projectile/boltrifle/lockebolter = 2,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 2,)
 

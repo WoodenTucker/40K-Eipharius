@@ -7,22 +7,14 @@
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/ammo_magazine/handful/kroot_handful
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/ammo_magazine)
+	backpack_contents = list(
+		/obj/item/ammo_magazine/handful/kroot_handful = 3
+	)
 
-/decl/hierarchy/outfit/job/kroot2
-	uniform = /obj/item/clothing/under/rank/kroot
-	shoes = /obj/item/clothing/shoes/krootfeet
-	back = /obj/item/storage/backpack/satchel/warfare/kroot
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	belt = /obj/item/device/flashlight/lantern
-	l_pocket = /obj/item/storage/box/ifak
-	id = null
-	id_slot = null
-	pda_slot = null
-	backpack_contents = list(/obj/item/ammo_magazine)
 //Tau
 /decl/hierarchy/outfit/job/tau
 	uniform = /obj/item/clothing/under/color/black

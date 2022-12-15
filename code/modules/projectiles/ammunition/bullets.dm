@@ -1,67 +1,8 @@
-/obj/item/ammo_casing/a357
-	desc = "A .357 bullet casing."
-	caliber = "357"
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver
-
-/obj/item/ammo_casing/a357/ap
-	desc = "AP .357 bullet casing."
-	caliber = "357"
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver/ap
-
-/obj/item/ammo_casing/a357/ms
-	desc = "MS .357 bullet casing."
-	caliber = "357"
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver/ms
-
-/obj/item/ammo_casing/a50
-	desc = "A .50AE bullet casing."
-	caliber = ".50"
-	projectile_type = /obj/item/projectile/bullet/pistol/strong
-
-/obj/item/ammo_casing/a50/ap
-	desc = "AP .50AE bullet casing."
-	caliber = ".50"
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/ap
-
-/obj/item/ammo_casing/a50/ms
-	desc = "MS .50AE bullet casing."
-	caliber = ".50"
-	projectile_type = /obj/item/projectile/bullet/pistol/strong/ms
-
-/obj/item/ammo_casing/a75
-	desc = "A 20mm bullet casing."
-	caliber = "75"
-	projectile_type = /obj/item/projectile/bullet/gyro
-
-/obj/item/ammo_casing/c38
-	desc = "A .38 bullet casing."
-	caliber = "38"
-	projectile_type = /obj/item/projectile/bullet/pistol
-
-/obj/item/ammo_casing/c38/rubber
-	desc = "A .38 rubber bullet casing."
-	projectile_type = /obj/item/projectile/bullet/pistol/rubber
-	icon_state = "r-casing"
-	spent_icon = "r-casing-spent"
 
 /obj/item/ammo_casing/c9mm
 	desc = "A 9mm bullet casing."
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/pistol
-
-/obj/item/ammo_casing/c9mm/ap
-	desc = "AP 9mm bullet casing."
-	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/pistol/ap
-
-/obj/item/ammo_casing/c9mm/ms
-	desc = "MS 9mm bullet casing."
-	caliber = "9mm"
-	projectile_type = /obj/item/projectile/bullet/pistol/ms
-
-/obj/item/ammo_casing/c9mm/flash
-	desc = "A 9mm flash shell casing."
-	projectile_type = /obj/item/projectile/energy/flash
 
 /obj/item/ammo_casing/c9mm/rubber
 	desc = "A 9mm rubber bullet casing."
@@ -73,20 +14,25 @@
 	desc = "A 9mm practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/pistol/practice
 
+/obj/item/ammo_casing/a357
+	desc = "A .357 bullet casing."
+	caliber = "357"
+	projectile_type = /obj/item/projectile/bullet/pistol/revolver
+
 /obj/item/ammo_casing/c44
 	desc = "A .44 magnum bullet casing."
 	caliber = ".44"
-	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver
+	projectile_type = /obj/item/projectile/bullet/pistol/revolver
 
 /obj/item/ammo_casing/c44/ap
 	desc = "AP .44 magnum bullet casing."
 	caliber = ".44"
-	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver/ap
+	projectile_type = /obj/item/projectile/bullet/pistol/revolver/ap
 
 /obj/item/ammo_casing/c44/ms
 	desc = "MS .44 magnum bullet casing."
 	caliber = ".44"
-	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver/ms
+	projectile_type = /obj/item/projectile/bullet/pistol/revolver/ms
 
 /obj/item/ammo_casing/c44/rubber
 	desc = "A .44 magnum rubber bullet casing."
@@ -95,17 +41,17 @@
 	spent_icon = "r-casing-spent"
 
 /obj/item/ammo_casing/c45
-	desc = "A warmonger bullet casing."
+	desc = "A .45 bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium
 
 /obj/item/ammo_casing/c45/ap
-	desc = "An AP warmonger bullet casing."
+	desc = "A .45 bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/ap
 
 /obj/item/ammo_casing/c45/ms
-	desc = "An MS warmonger bullet casing."
+	desc = "A .45 bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/ms
 
@@ -122,11 +68,6 @@
 /obj/item/ammo_casing/c45/flash
 	desc = "A .45 flash shell casing."
 	projectile_type = /obj/item/projectile/energy/flash
-
-/obj/item/ammo_casing/a10mm
-	desc = "A 10mm bullet casing."
-	caliber = "10mm"
-	projectile_type = /obj/item/projectile/bullet/pistol/medium/smg
 
 /obj/item/ammo_casing/shotgun
 	name = "shotgun slug"
@@ -208,14 +149,6 @@
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
 
-/obj/item/ammo_casing/a556/ap
-	desc = "An AP 5.56mm bullet casing."
-	projectile_type = /obj/item/projectile/bullet/rifle/a556/ap
-
-/obj/item/ammo_casing/a556/ms
-	desc = "An MS 5.56mm bullet casing."
-	projectile_type = /obj/item/projectile/bullet/rifle/a556/ms
-
 /obj/item/ammo_casing/a145
 	name = "shell casing"
 	desc = "A 14.5mm shell."
@@ -245,27 +178,17 @@
 	desc = "An MS 7.62mm bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/ms
 
-/obj/item/ammo_casing/lp338
-	desc = "A .338 Lapua Magnum bullet casing."
-	caliber = ".338"
-	projectile_type = /obj/item/projectile/bullet/rifle/lp338
-	icon_state = "rifle-casing"
-	spent_icon = "rifle-casing-spent"
-
-/obj/item/ammo_casing/lp338/jhp
-	desc = "A .338 Lapua Magnum bullet casing."
-	caliber = ".338"
-	projectile_type = /obj/item/projectile/bullet/rifle/lp338/jhp
-	icon_state = "rifle-casing"
-	spent_icon = "rifle-casing-spent"
-
-/obj/item/ammo_casing/lp338/needler
-	desc =   "A spent .338 needler casing."
-	projectile_type = /obj/item/projectile/bullet/rifle/lp338/needler
-
 /obj/item/ammo_casing/a762/practice
 	desc = "A 7.62mm practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/practice
+
+/obj/item/ammo_casing/krootbullet
+	name = "kroot slug"
+	desc = "An old worn out looking bullet casing."
+	caliber = "640"
+	projectile_type = /obj/item/projectile/bullet/rifle/kroot
+	icon_state = "kroot"
+	spent_icon = "krootcasing"
 
 /obj/item/ammo_casing/rocket
 	name = "\improper rocket shell"
@@ -301,14 +224,6 @@
 	color = "#ff0000"
 	projectile_type = /obj/item/projectile/bullet/pistol/cap
 
-// EMP ammo.
-/obj/item/ammo_casing/c38/emp
-	name = ".38 haywire round"
-	desc = "A .38 bullet casing fitted with a single-use ion pulse generator."
-	icon_state = "empcasing"
-	projectile_type = /obj/item/projectile/ion/small
-	matter = list(DEFAULT_WALL_MATERIAL = 130, "uranium" = 100)
-
 /obj/item/ammo_casing/c45/emp
 	name = ".45 haywire round"
 	desc = "A .45 bullet casing fitted with a single-use ion pulse generator."
@@ -342,12 +257,12 @@
 /obj/item/ammo_casing/boltpistol
 	desc = "A .75 bolt pistol casing."
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/bpistol
+	projectile_type = /obj/item/projectile/bullet/bolterrifle // make seperate one for pistols later. also maybe for hoomans as well.
 
 /obj/item/ammo_casing/bolter
 	desc = "A .75 bolt rifle casing."
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/bolt
+	projectile_type = /obj/item/projectile/bullet/bolterrifle
 
 
 /obj/item/ammo_casing/ork
@@ -358,8 +273,8 @@
 /obj/item/ammo_casing/ork/shoota
 	desc = "A small and crude bullet that was made with scrap. Looks poorly-made."
 	caliber = ".75"
-	projectile_type = /obj/item/projectile/bullet/ork/shoota
-
+	projectile_type = /obj/item/projectile/bullet/ork
+/*
 //-----SPECIAL BULLETS:-----
 /obj/item/ammo_casing/boltpistol/kp
 	desc = "A kraken penetrator .75 bolt pistol casing."
@@ -380,7 +295,7 @@
 	desc = "A metal storm .75 bolt rifle casing."
 	caliber = ".75"
 	projectile_type = /obj/item/projectile/bullet/bolt/ms
-
+*/
 
 /obj/item/ammo_casing/melta
 	name = "melted melta"

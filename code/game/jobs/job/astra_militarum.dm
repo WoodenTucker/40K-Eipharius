@@ -678,12 +678,9 @@
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/ammo_magazine/autogrim
+	r_pocket = null
 	suit_store = /obj/item/gun/projectile // autogrim smg
 	backpack_contents = list(
-	/obj/item/ammo_magazine/autogrim/ap = 1,
-	/obj/item/ammo_magazine/autogrim/ms = 1,
-	/obj/item/ammo_magazine/autogrim = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
@@ -731,7 +728,7 @@
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
+	r_pocket =  null
 	suit_store = /obj/item/gun/projectile // big stubba
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -854,7 +851,7 @@
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
+	r_pocket =  null
 	suit_store = /obj/item/gun/projectile // hmg
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/blue_team/all
