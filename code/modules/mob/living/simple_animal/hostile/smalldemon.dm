@@ -7,7 +7,7 @@
 	icon_living = "demon"
 	icon_dead = "demon_dead"
 	maxHealth = 300
-	health = 300 
+	health = 300
 	universal_speak = 1
 	speak_emote = list("harks")
 	emote_hear = list("growls")
@@ -152,7 +152,7 @@
 		var/mob/living/carbon/human/H = target_mob
 		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
 		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
-		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type 
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type
 		return H
 	else if(isliving(target_mob))
 		var/mob/living/L = target_mob
@@ -162,7 +162,7 @@
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass
 	name = "Grotesque Horror" // Slow speed. High damage and HP.
 	real_name = "Grotesque Horror"
-	desc = "This violet bubbling mass of flesh and meat crawls toward you." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons. 
+	desc = "This violet bubbling mass of flesh and meat crawls toward you." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "oormat"
 	icon_living = "oormat"
@@ -190,7 +190,7 @@
 		var/mob/living/carbon/human/H = target_mob
 		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
 		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
-		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type 
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type
 		return H
 	else if(isliving(target_mob))
 		var/mob/living/L = target_mob
@@ -200,7 +200,7 @@
 /mob/living/simple_animal/hostile/smalldemon/bloodletter
 	name = "Bloodletter"
 	real_name = "Bloodletter"
-	desc = "This terrifying behemoth of rippling muscle and sinew eminates an aura of pure malice. It gazes at you with starving eyes and an intimate desire to rend the flesh from bone." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons. 
+	desc = "This terrifying behemoth of rippling muscle and sinew eminates an aura of pure malice. It gazes at you with starving eyes and an intimate desire to rend the flesh from bone." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
@@ -228,7 +228,7 @@
 		var/mob/living/carbon/human/H = target_mob
 		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
 		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
-		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type 
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type
 		return H
 	else if(isliving(target_mob))
 		var/mob/living/L = target_mob
@@ -236,11 +236,11 @@
 		return L
 
 // For now this is one of the few Daemons that won't just straight up kill cultists as in lore the more veteran of these creatures are considered to be the 'Officers/Lieutenants' of the blood legions. They can't be dragged and are VERY ideal to be posessed by ghosts so they can command cultists.
-	
+
 /mob/living/simple_animal/hostile/smalldemon/fleshbeast
 	name = "Flesh Beast"
-	real_name = "Flesh Beast" 
-	desc = "This violent mass of flesh and meat scatters toward you." 
+	real_name = "Flesh Beast"
+	desc = "This violent mass of flesh and meat scatters toward you."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "loge"
 	icon_living = "loge"
@@ -258,9 +258,10 @@
 	speed = 1.5
 
 /mob/living/simple_animal/hostile/smalldemon/plague
-	name = "Plague Beast"
-	real_name = "Plague Beast"
-	desc = "This violent mass of flesh and meat scatters toward you." 
+	name = "Plague Zombie"
+	real_name = "Plague Zombie"
+	desc = "This shambling cadaver scatters toward you."
+	faction = "Chaos"
 	icon = 'icons/mob/Demon.dmi'
 	icon_state = "plague"
 	icon_living = "plague"
@@ -280,7 +281,7 @@
 /mob/living/simple_animal/hostile/smalldemon/chaos
 	name = "Chaos Spawn"
 	real_name = "Chaos Spawn"
-	desc = "This violent mass of flesh and meat scatters toward you." 
+	desc = "This violent mass of flesh and meat scatters toward you."
 	icon = 'icons/mob/Demon.dmi'
 	icon_state = "goliath"
 	icon_living = "goliath"
@@ -296,3 +297,53 @@
 	see_in_dark = 6
 
 	speed = 1.5
+
+/mob/living/simple_animal/hostile/nurgling
+	name = "nurgling"
+	desc = "A small, flabby, impish lesser daemon of Nurgle. It stares at you with a wide grin."
+	icon = 'icons/mob/animal.dmi'
+	throw_range = 600
+	icon_state = "stinky"
+	icon_living = "stinky"
+	icon_dead = "stinky_dead"
+	pass_flags = PASS_FLAG_TABLE
+	speak = list("Hihihihihi", "Hreee!", "Teehee!")
+	speak_emote = list("giggles", "laughs","sneers")
+	emote_hear = list("giggles", "smirks", "yaps","squeals")
+	emote_see = list("jumps around!", "claps")
+	speak_chance = 75
+	turns_per_move = 50
+	speed = 5
+	maxHealth = 100
+	health = 100
+	response_help  = "pats"
+	response_disarm = "kicks aside"
+	response_harm   = "stomps"
+	see_in_dark = 5
+	possession_candidate = 1
+	holder_type = /obj/item/holder
+	mob_size = 1
+	density = 0
+
+	var/death_msg = "lets out a waning screech, bursting into a mess of entrails."
+
+	harm_intent_damage = 30
+	melee_damage_lower = 30
+	melee_damage_upper = 30
+	attacktext = "slashed"
+	attack_sound = 'sound/weapons/bite.ogg'
+
+	faction = "Chaos"
+
+/mob/living/simple_animal/hostile/retaliate/nurgling/FindTarget()
+	. = ..()
+	if(.)
+		visible_emote("hisses angrily at [.]!")
+
+/mob/living/simple_animal/hostile/retaliate/nurgling/AttackingTarget()
+	. =..()
+	var/mob/living/L = .
+	if(istype(L))
+		if(prob(1))
+			L.Weaken(1)
+			L.visible_message("<span class='danger'>\the [src] knocks down \the [L]!</span>")

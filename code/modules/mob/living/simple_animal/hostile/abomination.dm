@@ -1,17 +1,17 @@
 //For the nurgle path
 /mob/living/simple_animal/hostile/abomination
-	name = "Hulking Daemon" // Path of Nurgle Daemon Summon
-	desc = "A hulking, grotesque behemoth of CHAOS!"
+	name = "Abomination" // Path of Nurgle Daemon Summon
+	desc = "A hulking, grotesque behemoth of Nurgle!"
 	icon = 'icons/mob/critter.dmi'
 	icon_state = "vargo"
 	icon_living = "vargo"
 	icon_dead = "vargo2"
 	icon_gib = "vargo2"
-	// speak = list("COME INTO MY EMBRACE!","THE LORD OF THE FLIES WELCOMES YOU!","THE MIGHT OF THE PLAGUEFATHER!",)
+	speak = list("COME INTO MY EMBRACE!!","THE LORD OF THE FLIES WELCOMES YOU!!","THE MIGHT OF THE PLAGUEFATHER!!",)
 	speak_emote = list("chortles", "roars")
 	emote_hear = list("belches","grumbles","vomits")
 	emote_see = list("shoots ichor from his syringe", "stomps")
-	speak_chance = 1
+	speak_chance = 5
 	turns_per_move = 5
 	see_in_dark = 6
 	wander = 1
@@ -26,7 +26,7 @@
 	melee_damage_lower = 60 // This value does nothing
 	melee_damage_upper = 80 // This value does nothing
 	harm_intent_damage = 60
-	attacktext = "impaled"
+	attacktext = "cleaved"
 	speed = 0 //ZOOM
 
 
@@ -37,7 +37,6 @@
 	var/stance_step = 0
 
 	faction = "Chaos"
-	faction = "Nurgle" //keeps the cultist homies safe
 
 /mob/living/simple_animal/hostile/abomination/Life()
 	. =..()
@@ -67,7 +66,7 @@
 					src.set_dir(get_dir(src,target_mob))	//Keep staring at the mob
 
 					if(stance_step in list(1,4,7)) //every 3 ticks
-						var/action = pick( list( "growls at [target_mob]", "stares angrily at [target_mob]", "prepares to attack [target_mob]", "closely watches [target_mob]" ) )
+						var/action = pick( list( "turns it fat head towards [target_mob]", "stares happily at [target_mob]", "stumbles towards [target_mob]", "closely watches [target_mob]" ) )
 						if(action)
 							custom_emote(1,action)
 			if(!found_mob)
@@ -105,7 +104,7 @@
 /mob/living/simple_animal/hostile/abomination/FindTarget()
 	. = ..()
 	if(.)
-		custom_emote(1,"stares alertly at [.]")
+		custom_emote(1,"starts stumbling towards [.]")
 		stance = HOSTILE_STANCE_ALERT
 
 /mob/living/simple_animal/hostile/abomination/LoseTarget()
@@ -114,7 +113,7 @@
 /mob/living/simple_animal/hostile/abomination/AttackingTarget()
 	if(!Adjacent(target_mob))
 		return
-	custom_emote(1, pick( list("impales [target_mob]") ) )
+	custom_emote(1, pick( list("cleaves [target_mob]") ) )
 
 	var/damage = rand(60,80)
 
