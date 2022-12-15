@@ -58,8 +58,6 @@
 "bf" = (/obj/structure/bed/chair{icon_state = "chair_preview"; dir = 1},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bg" = (/turf/template_noop,/area/template_noop)
 "bh" = (/turf/simulated/floor/dirty/indestructable,/area/warfare/homebase/red)
-"bi" = (/obj/structure/table/steel,/obj/item/gun/projectile/talon,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bj" = (/obj/structure/closet/crate,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/mc9mmt/machinepistol,/obj/item/ammo_magazine/c45rifle/akarabiner,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
 "bk" = (/obj/structure/closet/crate,/obj/item/ammo_box/rifle,/obj/item/ammo_box/rifle,/turf/simulated/floor/tiled,/area/warfare/homebase/red)
 "bl" = (/obj/machinery/door/airlock/multi_tile/metal/maintenance{dir = 1; icon_state = "door_closed"; name = "Emergency Medical"},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bm" = (/obj/effect/landmark/corpse/chef,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
@@ -77,12 +75,11 @@
 "by" = (/obj/machinery/shower{icon_state = "shower"; dir = 8},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bz" = (/obj/effect/landmark/corpse/miner,/obj/effect/decal/cleanable/blood/gibs/up,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bA" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 8},/obj/effect/decal/cleanable/blood/gibs/up,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bB" = (/obj/effect/landmark/corpse/marooned_officer,/obj/effect/decal/cleanable/blood/gibs/down,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
+"bB" = (/obj/effect/decal/cleanable/blood/gibs/down,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bC" = (/obj/structure/torchwall{icon_state = "torchwall0"; dir = 1},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bD" = (/obj/structure/table/woodentable,/obj/item/storage/fancy/cigarettes/jerichos,/obj/item/flame/candle,/obj/item/flame/lighter/random,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bE" = (/obj/structure/toilet{icon_state = "toilet00"; dir = 8},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bF" = (/obj/structure/bed,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
-"bG" = (/obj/structure/closet/cabinet,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bH" = (/obj/structure/crematorium{icon_state = "crema1"; dir = 4},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bI" = (/obj/machinery/button/crematorium{pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
 "bJ" = (/obj/machinery/optable,/turf/simulated/floor/tiled/dark,/area/warfare/homebase/red)
@@ -117,20 +114,20 @@
 (1,1,1) = {"
 bhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbhbh
 aaaaaaaaabaaaaaaaaaaaaaaaaaaaaacadaaaaaaaaababaeaaaaaaaaaaaaaaababaaaaaaaa
-aaafagahaiajakaaalambiaoanapaaaqaraaasatauaxaxaxaxayaaaaasatauaxaxaxaxazaa
+aaafagahaiajakaaalamanaoanapaaaqaraaasatauaxaxaxaxayaaaaasatauaxaxaxaxazaa
 aaaiaiaiaiaiaiaaaAaibmbraiaCaaaxaxaaasataxaxaxaxaxayaaaaasataxaxaxaxaxaDaa
 aaaiaiavavaiaiaeaFbrbraiaiaGaaaxaxaaawaBaxaxaxaxaBaEaaaaawaBaxaxaxaxaBaEaa
 aaaKaHaMaMaNakaaaGaiaiaiaiaOaaaxaraaaPaQaxaxaxaxaRaSaeaaaSaTaxaxbLaxaSaUaa
 aeaiaHaMaMaNaiaaaVaiaiaiaiaiaaaxaxaaaWaSaxaxaxaxaXaYaaaaaUaTaxaxaxaxaZbaaa
 aaaiaHaMaMaNaiaaaOaibbbcbdbeaaaxaxaaaIaJbLaxaxaxaJaLaaaaaIaJaxaxaxaxaJaLaa
-aaaKaibfbfaibAaaaaaiaaaaaaaaaaaxaraaazaxaxaxaxaxbjbkaaaabkaxaxaxaxaxaxbjaa
-aaaibOaiaibrbzaiaiaiaiaiaiaiaiaxaxaaaDaxaxaxaxaxbjbkaaaabkaxaxaxaxaxaxbjaa
+aaaKaibfbfaibAaaaaaiaaaaaaaaaaaxaraaazaxaxaxaxaxaybkaaaabkaxaxaxaxaxaxayaa
+aaaibOaiaibrbzaiaiaiaiaiaiaiaiaxaxaaaDaxaxaxaxaxaybkaaaabkaxaxaxaxaxaxayaa
 aaaiaiavavaiaiaiavavaiaiaiaiblaxaxaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaiaa
 aaaKaHaMaMaNaiaHaMaMaNaiaiakaaaxaxblaiaiaiaiaiaiaibnbnaiaibnboaiaiaiaiaiaa
 aaaiaHaMaMaNaiaHaMaMaNaiaiaiaabpaxaaaKaiakaaaabsaaaaaabsaaaaaabsaaaaaabsaa
 aaaiaHaMaMaNaiaHaMbtaNaiaibuaaaxaxaaaabsaaaaaKaiaiaaaKaiaiaaaKaiaiaaaKaiai
 aaaKaibfbfaiaiaibfbfaiaiaibwaaaxaraabxaibyaabxaiaiaabxaiaiaabxaiaiaabxaiai
-aaaibCaiaibCaibCaiaibCaiaibDaaaxaxaabxbCbEaabFbtbqaabFbtbGaabFbtbGaabFbtbG
+aaaibCaiaibCaibCaiaibCaiaibDaaaxaxaabxbCbEaabFbtbqaabFbtbqaabFbtbqaabFbtbq
 aaaaaaaaaaaaaaaaaaaaaaaaaeaaaaaxaxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aabHaibIaabJbKaiaiaabMbMaiaiaiaxaxaxbNbPbPbPbPbgbgbgbgbgbgbgbgbgbgbgbgbgbg
 aaaiaiaiaaaKaiaiaibsaiaiaiaiblaxbRaxbNbPbPbPbPbgbgbgbgbgbgbgbgbgbgbgbgbgbg

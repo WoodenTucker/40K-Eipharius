@@ -59,7 +59,6 @@
 	fire_delay= 10
 	ammo_type = /obj/item/ammo_casing/a357
 
-
 /obj/item/gun/projectile/revolver/boscelot
 	name = "Boscelot Pattern Stub Revolver"
 	desc = "A common type of stub revolver on the frontier worlds. Chambered in .357."
@@ -69,7 +68,7 @@
 	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 15
-	accuracy = -0.5 //not the best craftsmanship
+	accuracy = -0.5
 	fire_delay= 8
 	ammo_type = /obj/item/ammo_casing/a357
 
@@ -106,4 +105,6 @@
 	fire_delay = 12
 	ammo_type = /obj/item/ammo_casing/c44
 	sales_price = 25
+
+
 
