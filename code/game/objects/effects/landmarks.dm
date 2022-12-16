@@ -274,8 +274,8 @@ Template:
 /obj/random/loot/guardarmor
 	name = "Special Guard Armor" // After manor update we delete this.
 	desc = "This is a loot spawner that spawns special imperial guardsmen armor and no more then 2-3 should be on the map."
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon = 'icons/obj/clothing/suits.dmi'
+	icon_state = "servitor_robe2"
 
 /obj/random/loot/guardarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/flak/heavy = 2,
@@ -285,8 +285,8 @@ Template:
 /obj/random/loot/guardhelmet
 	name = "Guard Helmet" // After manor update we delete this.
 	desc = "This is a loot spawner that spawns imperial guardsmen armor."
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon = 'icons/obj/clothing/hats.dmi'
+	icon_state = "nmhelmet"
 
 /obj/random/loot/guardhelmet/spawn_choices()
 	return list(/obj/item/clothing/head/helmet/guardhelmet = 3,
@@ -299,8 +299,8 @@ Template:
 /obj/random/loot/lightmelee
 	name = "Light Melee"
 	desc = "This is a weapon loot spawner with a high chance of spawning common light melee weapons."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "crozius"
 
 /obj/random/loot/lightmelee/spawn_choices()
 	return list(/obj/item/material/sword/combat_knife = 2,
@@ -371,7 +371,7 @@ Template:
 				/obj/item/material/sword/sabre = 4)
 
 /obj/random/loot/lightstubber
-	name = "Light Stubber" // After manor update we delete this.
+	name = "Light Stubber"
 	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
@@ -380,8 +380,8 @@ Template:
 	return list(/obj/item/gun/projectile = 1)
 
 /obj/random/loot/lightstubberammo
-	name = "Random shotgun shells" // After manor update we delete this.
-	desc = "This is an ammo spawner that spawns ammo for light stubbers."
+	name = "Random shotgun shells"
+	desc = "This is an ammo spawner for shotgun ammo"
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
@@ -417,7 +417,7 @@ Template:
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
-	name = "Light Lasgun" // After manor update we delete this.
+	name = "Light Lasgun"
 	desc = "This is a weapon loot spawner with a high chance of spawning common light lasguns."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
@@ -461,7 +461,7 @@ Template:
 
 /obj/random/loot/randomammo
 	name = "Random Ammo"
-	desc = "This is a true RNG spawner that spawns any kind of ammo."
+	desc = "This is a random ammo spawner of pilgrim and pilgrim+ ammo"
 	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
@@ -473,7 +473,7 @@ Template:
 	name = "Bad Weapon Spawner" // This spawner has no chance of spawning powerful weapons.
 	desc = "This is a weapon loot spawner with a high chance of spawning mostly low quality weapon."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	icon_state = "deagle"
 
 /obj/random/loot/badweapon/spawn_choices()
 	return list(/obj/item/gun/projectile = 1)
@@ -482,7 +482,7 @@ Template:
 	name = "Good Weapon Spawner" // This spawner is similar to the above but has better quality spawns.
 	desc = "This is a weapon loot spawner with a small chance of spawning mostly high quality weapons."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	icon_state = "deagleg"
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(/obj/item/gun/projectile/boltrifle/lockebolter = 2,
@@ -491,7 +491,7 @@ Template:
 
 /obj/random/loot/randomarmor
 	name = "Random Armor"
-	desc = "This is a loot spawner that spawns clothing, armor and gear."
+	desc = "This is a loot spawner that spawns pilgrim and pilgrim+ level armor"
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
 
@@ -563,8 +563,8 @@ Template:
 				/obj/item/grenade/frag/high_yield/krak = 1)
 
 /obj/random/loot/randomitemtown
-	name = "Random Item Town"
-	desc = "This is a loot spawner that spawns random items in town."
+	name = "Random Item Pilgrim"
+	desc = "This is a loot spawner that spawns random items that will be useful for any pilgrim."
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
 
