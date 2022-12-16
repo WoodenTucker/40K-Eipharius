@@ -81,7 +81,7 @@
 
 /obj/effect/landmark/start
 	name = "start"
-	icon = 'icons/obj/clothing/hats.dmi' // test. works. replace when got full body sprites for job landmarks
+	icon = 'icons/effects/random_spawners.dmi'
 	icon_state = "ricehat"
 	anchored = 1.0
 	invisibility = 101
@@ -112,7 +112,7 @@ Template:
 
 /obj/effect/landmark/start/governor
 	name = "Planetary Governor"
-	icon_state = "obard"
+	icon_state = "governors"
 /obj/effect/landmark/start/governor/heir
 	name = "Heir"
 /obj/effect/landmark/start/governor/servant
@@ -122,7 +122,7 @@ Template:
 
 /obj/effect/landmark/start/inqmagi
 	name = "Interrogator"
-	icon_state = "Jhelm2"
+	icon_state = "Magis"
 
 /obj/effect/landmark/start/inqmagi/arbitrator
 	name = "Arbitrator"
@@ -138,7 +138,7 @@ Template:
 
 /obj/effect/landmark/start/imperialguard
 	name = "Sergeant"
-	icon_state = "guardold"
+	icon_state = "guards"
 
 /obj/effect/landmark/start/imperialguard/sniper
 	name = "Imperial Guard Sniper"
@@ -159,7 +159,7 @@ Template:
 //Trader Retinue //
 /obj/effect/landmark/start/roguetrader
 	name = "Rogue Trader"
-	icon_state = "fancyhat"
+	icon_state = "rts"
 
 /obj/effect/landmark/start/roguetrader/vetmerc
 	name = "Veteran Merc"
@@ -171,7 +171,7 @@ Template:
 
 /obj/effect/landmark/start/mechanicus
 	name = "Magos Explorator"
-	icon_state = "void"
+	icon_state = "mechs"
 
 /obj/effect/landmark/start/mechanicus/biologis
 	name = "Magos Biologis"
@@ -186,7 +186,7 @@ Template:
 
 /obj/effect/landmark/start/ministorum
 	name = "Confessor"
-	icon_state = "hereticushat"
+	icon_state = "churchs"
 
 /obj/effect/landmark/start/ministorum/sistersuperior
 	name = "Sister Superior"
@@ -204,7 +204,7 @@ Template:
 
 /obj/effect/landmark/start/village
 	name = "Pilgrim"
-	icon_state = "skullopen"
+	icon_state = "pilgrims"
 
 /obj/effect/landmark/start/village/innkeeper
 	name = "Innkeeper"
@@ -221,7 +221,7 @@ Template:
 // Removed Content due to low pop. Just admin spawn them yeeeeeesh.//
 /obj/effect/landmark/start/admin
 	name = "Inquisitor"
-	icon_state = "crownOLD"
+	icon_state = "adminroles"
 
 /obj/effect/landmark/start/admin/dominus
 	name = "Magos Dominus"
@@ -233,7 +233,7 @@ Template:
 // watchman tdm culties //
 /obj/effect/landmark/start/watchman
 	name = "Cultist Sergeant"
-	icon_state = "hood2"
+	icon_state = "watchmens"
 
 /obj/effect/landmark/start/watchman/guardsman
 	name = "Cultist Guardsman"
@@ -246,6 +246,7 @@ Template:
 //Warhammer stuff
 /obj/effect/landmark/JoinLate
 	name = "JoinLate"
+	icon_state = "latejoins"
 
 /// LOOT SPAWNERS HERE
 /// BEGINNING OF LOOT SPAWNERS
@@ -254,8 +255,7 @@ Template:
 /obj/random/loot/guardgear
 	name = "Armor accessories"
 	desc = "This is a loot spawner that spawns combat accessories."
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon_state = "armoraccessory"
 
 /obj/random/loot/guardgear/spawn_choices()
 	return list(/obj/item/clothing/accessory/holster/waist = 2,
@@ -274,8 +274,7 @@ Template:
 /obj/random/loot/guardarmor
 	name = "Special Guard Armor" // After manor update we delete this.
 	desc = "This is a loot spawner that spawns special imperial guardsmen armor and no more then 2-3 should be on the map."
-	icon = 'icons/obj/clothing/suits.dmi'
-	icon_state = "servitor_robe2"
+	icon_state = "guardarmor"
 
 /obj/random/loot/guardarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/flak/heavy = 2,
@@ -285,8 +284,7 @@ Template:
 /obj/random/loot/guardhelmet
 	name = "Guard Helmet" // After manor update we delete this.
 	desc = "This is a loot spawner that spawns imperial guardsmen armor."
-	icon = 'icons/obj/clothing/hats.dmi'
-	icon_state = "nmhelmet"
+	icon_state = "guardhelmet"
 
 /obj/random/loot/guardhelmet/spawn_choices()
 	return list(/obj/item/clothing/head/helmet/guardhelmet = 3,
@@ -299,8 +297,7 @@ Template:
 /obj/random/loot/lightmelee
 	name = "Light Melee"
 	desc = "This is a weapon loot spawner with a high chance of spawning common light melee weapons."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "crozius"
+	icon_state = "lightmelee"
 
 /obj/random/loot/lightmelee/spawn_choices()
 	return list(/obj/item/material/sword/combat_knife = 2,
@@ -313,8 +310,7 @@ Template:
 /obj/random/loot/heavymelee
 	name = "Heavy Melee"
 	desc = "This is a weapon loot spawner with a high chance of spawning common heavy melee weapons."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	icon_state = "heavymelee"
 
 /obj/random/loot/heavymelee/spawn_choices()
 	return list(/obj/item/melee/trench_axe = 13,
@@ -339,11 +335,10 @@ Template:
 				/obj/item/shield/riot = 2,
 				/obj/item/shield/riot/metal = 1,
 				/obj/item/material/sword/sabre = 4)
-
+/* // we dont really need all the melee
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
 	desc = "Spawns light and heavy melee.."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 
 /obj/random/loot/meleespawner/spawn_choices()
@@ -369,20 +364,18 @@ Template:
 				/obj/item/melee/chain/inqcs = 1,
 				/obj/item/melee/chain/pcsword/eviscerator = 1,
 				/obj/item/material/sword/sabre = 4)
-
-/obj/random/loot/lightstubber
+*/
+/obj/random/loot/lightstubber // TODO
 	name = "Light Stubber"
 	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 
 /obj/random/loot/lightstubber/spawn_choices()
 	return list(/obj/item/gun/projectile = 1)
 
-/obj/random/loot/lightstubberammo
+/obj/random/loot/lightstubberammo // TODO
 	name = "Random shotgun shells"
 	desc = "This is an ammo spawner for shotgun ammo"
-	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
@@ -394,9 +387,8 @@ Template:
 
 /obj/random/loot/sidearmammo
 	name = "Sidearm Ammo"
-	desc = "This is an ammo spawner that spawns ammo for light stubbers."
-	icon = 'icons/obj/ammo.dmi'
-	icon_state = "45-10"
+	desc = "This is an ammo spawner that spawns ammo for sidearms" // sidearms are pistols and pdws (smgs)
+	icon_state = "sidearmammo"
 
 /obj/random/loot/sidearmammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/a357 = 4,
@@ -408,19 +400,17 @@ Template:
 
 /obj/random/loot/sidearms
 	name = "Sidearms"
-	desc = "This is a weapon loot spawner with a high chance of spawning common sidearms and accessories."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	desc = "This is a weapon loot spawner with a high chance of spawning common sidearms"
+	icon_state = "sidearm"
 
 /obj/random/loot/sidearms/spawn_choices()
 	return list(/obj/item/gun/projectile = 2,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
-	name = "Light Lasgun"
-	desc = "This is a weapon loot spawner with a high chance of spawning common light lasguns."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	name = "Lasguns"
+	desc = "This is a weapon loot spawner which spawns las rifles and a low chance of high quality laspistols"
+	icon_state = "lasgun"
 
 /obj/random/loot/lightlasgun/spawn_choices()
 	return list(/obj/item/gun/energy/las/lasgun = 12,
@@ -431,28 +421,26 @@ Template:
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
 	desc = "This is an ammo spawner that spawns ammo for lasguns."
-	icon = 'icons/obj/ammo.dmi'
-	icon_state = "45-10"
+	icon_state = "lasgunammo"
 
 /obj/random/loot/lasgunammo/spawn_choices()
-	return list(/obj/item/cell/lasgun = 12,
+	return list(/obj/item/cell/lasgun = 2,
+				/obj/item/cell/lasgun/small = 3,
 				/obj/item/cell/lasgun/hotshot = 1)
 
 /obj/random/loot/heavystubberammo
-	name = "Heavy Stubber Ammo" // After manor update we delete this.
+	name = "Heavy Stubber Ammo"
 	desc = "This is an ammo spawner that spawns ammo for heavy stubbers."
-	icon = 'icons/obj/ammo.dmi'
-	icon_state = "45-10"
+	icon_state = "heavystubberammo"
 
 /obj/random/loot/heavystubberammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10,
 				/obj/item/ammo_magazine/box/a556/mg08 = 5)
 
 /obj/random/loot/heavystubber
-	name = "Heavy Stubber" // After manor update we delete this.
+	name = "Heavy Stubber"
 	desc = "This is a weapon loot spawner with a high chance of spawning common heavy stubbers."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "revolver"
+	icon_state = "heavystubber"
 
 /obj/random/loot/heavystubber/spawn_choices()
 	return list(/obj/item/gun/projectile/automatic)
@@ -462,7 +450,6 @@ Template:
 /obj/random/loot/randomammo
 	name = "Random Ammo"
 	desc = "This is a random ammo spawner of pilgrim and pilgrim+ ammo"
-	icon = 'icons/obj/ammo.dmi'
 	icon_state = "45-10"
 
 /obj/random/loot/randomammo/spawn_choices()
@@ -471,18 +458,16 @@ Template:
 
 /obj/random/loot/badweapon
 	name = "Bad Weapon Spawner" // This spawner has no chance of spawning powerful weapons.
-	desc = "This is a weapon loot spawner with a high chance of spawning mostly low quality weapon."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "deagle"
+	desc = "This is a weapon loot spawner that spawns mostly low quality weapons."
+	icon_state = "badranged"
 
 /obj/random/loot/badweapon/spawn_choices()
 	return list(/obj/item/gun/projectile = 1)
 
 /obj/random/loot/goodweapon
-	name = "Good Weapon Spawner" // This spawner is similar to the above but has better quality spawns.
-	desc = "This is a weapon loot spawner with a small chance of spawning mostly high quality weapons."
-	icon = 'icons/obj/weapons/gun/projectile.dmi'
-	icon_state = "deagleg"
+	name = "Good Weapon Spawner" // plasma, bolter, fancy lasguns
+	desc = "This is a weapon loot spawner that spawns mostly high quality weapons."
+	icon_state = "goodranged"
 
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(/obj/item/gun/projectile/boltrifle/lockebolter = 2,
@@ -492,8 +477,7 @@ Template:
 /obj/random/loot/randomarmor
 	name = "Random Armor"
 	desc = "This is a loot spawner that spawns pilgrim and pilgrim+ level armor"
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon_state = "randomarmor"
 
 /obj/random/loot/randomarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/militia = 1,
@@ -524,8 +508,7 @@ Template:
 /obj/random/loot/randomsupply
 	name = "Random Supply"
 	desc = "This is a loot spawner that spawns supplies like medicine, food and materials."
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon_state = "randomsupply"
 
 /obj/random/loot/randomsupply/spawn_choices()
 	return list(/obj/item/storage/box/ifak = 4,
@@ -542,11 +525,10 @@ Template:
 				/obj/item/stack/material/glass/fifty = 1,
 				/obj/item/stack/material/steel/fifty = 2)
 
-/obj/random/loot/randomitemcaves
+/obj/random/loot/randomitemcaves // make this a grenade spawn?
 	name = "Random Item Caves"
 	desc = "This is a loot spawner that spawns random items."
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon_state = "randompilgrim"
 
 /obj/random/loot/randomitemcaves/spawn_choices()
 	return list(/obj/item/shovel = 2,
@@ -565,8 +547,7 @@ Template:
 /obj/random/loot/randomitemtown
 	name = "Random Item Pilgrim"
 	desc = "This is a loot spawner that spawns random items that will be useful for any pilgrim."
-	icon = 'icons/obj/clothing/ties.dmi'
-	icon_state = "horribletie"
+	icon_state = "randompilgrim"
 
 /obj/random/loot/randomitemtown/spawn_choices()
 	return list(/obj/item/device/binoculars = 2,

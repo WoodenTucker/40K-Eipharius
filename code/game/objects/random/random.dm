@@ -915,7 +915,7 @@ something, make sure it's not in one of the other lists.*/
 /obj/random/loot /*Better loot for away missions and salvage */
 	name = "random loot"
 	desc = "This is some random loot."
-	icon = 'icons/obj/items.dmi'
+	icon = 'icons/effects/random_spawners.dmi'
 	icon_state = "gift3"
 
 /obj/random/loot/spawn_choices()
