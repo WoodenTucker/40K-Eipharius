@@ -252,7 +252,7 @@ Template:
 /// Be careful. Make sure to search up all items related to what you are spawning and make it possible for it's ammo to spawn as well.
 
 /obj/random/loot/guardgear
-	name = "Guard Gear"
+	name = "Armor accessories"
 	desc = "This is a loot spawner that spawns combat accessories."
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
