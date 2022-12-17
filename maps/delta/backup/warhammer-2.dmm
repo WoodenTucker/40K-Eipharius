@@ -729,7 +729,7 @@
 "rH" = (/obj/structure/flora/tree/snowy,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/village)
 "rL" = (/obj/effect/floor_decal/newcorner/shaft{dir = 4},/obj/effect/floor_decal/spline/plain{dir = 4},/obj/machinery/light/spot{dir = 4; icon_state = "tube1"},/obj/machinery/power/apc{dir = 4; icon_state = "apc0"; pixel_x = 32; pixel_y = 0},/obj/structure/cable{icon_state = "0-2"},/obj/structure/closet/firecloset/full,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/bar)
 "rO" = (/turf/simulated/mineral/snowycave,/area/cadiaoutpost/oa/caves)
-"rP" = (/obj/structure/closet/crate/trashcart,/obj/item/crowbar,/obj/item/wrench,/obj/random/loot/meleespawner,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
+"rP" = (/obj/structure/closet/crate/trashcart,/obj/item/crowbar,/obj/item/wrench,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/villageinside)
 "rR" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/snow,/area/cadiaoutpost/oa/gatehouse)
 "rS" = (/obj/structure/closet/firecloset/full{color = "grey"},/obj/effect/floor_decal/turf/splate,/obj/random/loot/lightmelee,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/maintenance/west)
 "rX" = (/obj/effect/floor_decal/newcorner/red{dir = 1},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/service/bar)

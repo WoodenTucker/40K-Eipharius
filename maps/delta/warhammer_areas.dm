@@ -927,14 +927,14 @@ Area basic template
 	var/instability = 0
 
 /area/cadiaoutpost/oa/caves/dark
-	name = "Caves Dark" // Powered areas of the city.
-	icon_state = "cave"
+	name = "Evil dungeon" // Powered areas of the city. // used for dungeons. basically non caves
+	icon_state = "dungeon"
 	music = 'sound/newmusic/Caves_Dark.ogg'
 	requires_power = FALSE
 
 /area/cadiaoutpost/oa/caves/undercity
-	name = "Caves Undercity" // Undercity ambience.
-	icon_state = "cave"
+	name = "Sewer Undercity" // Undercity ambience.
+	icon_state = "sewer"
 	music = 'sound/newmusic/Caves_Dark.ogg'
 
 /area/cadiaoutpost/oa/caves/terror
@@ -954,7 +954,7 @@ Area basic template
 
 /area/cadiaoutpost/oa/villageinside
 	name = "Inside Village"
-	icon_state = "village"
+	icon_state = "villageinside"
 	music = 'sound/newmusic/General_Ambient2.ogg'
 	requires_power = FALSE
 	dynamic_lighting = 1
