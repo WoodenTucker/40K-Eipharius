@@ -916,7 +916,7 @@ something, make sure it's not in one of the other lists.*/
 	name = "random loot"
 	desc = "This is some random loot."
 	icon = 'icons/effects/random_spawners.dmi'
-	icon_state = "gift3"
+	icon_state = "loot"
 
 /obj/random/loot/spawn_choices()
 	return list(/obj/random/energy = 10,

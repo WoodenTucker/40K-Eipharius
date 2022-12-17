@@ -1,7 +1,7 @@
 /obj/effect/landmark
 	name = "landmark"
-	icon = 'icons/mob/screen1.dmi'
-	icon_state = "x2"
+	icon = 'icons/effects/random_spawners.dmi'
+	icon_state = "mobspawn"
 	anchored = 1.0
 	unacidable = 1
 	simulated = 0
@@ -122,7 +122,7 @@ Template:
 
 /obj/effect/landmark/start/inqmagi
 	name = "Interrogator"
-	icon_state = "Magis"
+	icon_state = "magis"
 
 /obj/effect/landmark/start/inqmagi/arbitrator
 	name = "Arbitrator"
@@ -366,17 +366,17 @@ Template:
 				/obj/item/material/sword/sabre = 4)
 */
 /obj/random/loot/lightstubber // TODO
-	name = "Light Stubber"
-	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers."
-	icon_state = "revolver"
+	name = "Light Stubber and shotguns"
+	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers and shotguns"
+	icon_state = "lightstub"
 
 /obj/random/loot/lightstubber/spawn_choices()
 	return list(/obj/item/gun/projectile = 1)
 
-/obj/random/loot/lightstubberammo // TODO
-	name = "Random shotgun shells"
-	desc = "This is an ammo spawner for shotgun ammo"
-	icon_state = "45-10"
+/obj/random/loot/lightstubberammo
+	name = "Random stubber ammo"
+	desc = "This is an ammo spawner for stubber and shotgun ammo"
+	icon_state = "lightstubammo"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
 	return list(/obj/item/ammo_box/shotgun = 7,
@@ -450,7 +450,7 @@ Template:
 /obj/random/loot/randomammo
 	name = "Random Ammo"
 	desc = "This is a random ammo spawner of pilgrim and pilgrim+ ammo"
-	icon_state = "45-10"
+	icon_state = "randomammo"
 
 /obj/random/loot/randomammo/spawn_choices()
 	return list(/obj/item/ammo_magazine)
@@ -633,6 +633,10 @@ Template:
 		new /obj/effect/decal/cleanable/blood/gibs/up(src.loc)
 	delete_me = 1
 
+
+/obj/effect/landmark/animal/rnghostilespawner
+	icon_state = "ratspawn"
+
 /obj/effect/landmark/animal/rnghostilespawner/New()
 	if (prob(10))
 		new /mob/living/simple_animal/hostile/bear(src.loc)
@@ -644,6 +648,10 @@ Template:
 	if (prob(15))
 		new /mob/living/simple_animal/hostile/smalldemon(src.loc)
 	delete_me = 1
+
+/obj/effect/landmark/animal/rngretaliatespawner
+	icon_state = "ratspawn"
+
 
 /obj/effect/landmark/animal/rngretaliatespawner/New()
 	if (prob(20))
