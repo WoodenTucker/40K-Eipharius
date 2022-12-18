@@ -94,7 +94,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus.  Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. Lead Skitarii if needed.</font></b></span>")
 
 /datum/job/techmenial
-	title = "Tech-Menial"
+	title = "Tech Menial"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
@@ -106,7 +106,7 @@
 	minimal_player_age = 7
 	open_when_dead = 0
 	announced = FALSE
-	latejoin_at_spawnpoints = TRUE
+	latejoin_at_spawnpoints = FALSE
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_medical, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
@@ -139,7 +139,7 @@
 
 /datum/job/biologis
 	title = "Magos Biologis"
-	department = "Medical"
+	department = "Engineering"
 	department_flag = SCI|ENG
 	total_positions = 1
 	spawn_positions = 1
@@ -149,7 +149,7 @@
 	selection_color = "#d82424"
 	economic_modifier = 7
 	req_admin_notify = 1
-	latejoin_at_spawnpoints = TRUE
+	latejoin_at_spawnpoints = FALSE
 	announced = FALSE
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)

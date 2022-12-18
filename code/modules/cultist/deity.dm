@@ -9,7 +9,7 @@
 	var/list/possible_blessings 	// Contains both blessings and curses for simplicity sake.
 	var/list/rune_recipes			// Runes that this cultist type can use
 	var/list/members = list()
-	var/join_message = "Debug Message."
+	var/join_message = "<span class = 'badmood'> * You have successfully started as a Chaos Cultist. Rebel with your fellow cultists in a civil war! * </span> "
 	var/status_icon_state			// Displayed for fellow cultists.
 	var/inherent_verbs				// List of verbs to be added when a cultist joins.
 	var/faction						// Used for mobs

@@ -87,6 +87,7 @@
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
 			H.fully_replace_character_name("Guardsman [rand(1,100000)]")
+			cultist_chance = 1
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")

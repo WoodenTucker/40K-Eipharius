@@ -147,13 +147,13 @@ Template:
 	name = "Imperial Guard Specialist"
 
 /obj/effect/landmark/start/imperialguard/medicae
-	name = "Imperial Guard Combat Medicae"
+	name = "Combat Medicae"
 
 /obj/effect/landmark/start/imperialguard/guard
 	name = "Imperial Guardsman"
 
 /obj/effect/landmark/start/imperialguard/recruit
-	name = "Imperial Recruit"
+	name = "Imperial Guard Recruit"
 
 
 //Trader Retinue //
@@ -162,9 +162,9 @@ Template:
 	icon_state = "rts"
 
 /obj/effect/landmark/start/roguetrader/vetmerc
-	name = "Veteran Merc"
+	name = "Veteran Mercenary"
 /obj/effect/landmark/start/roguetrader/xenomerc
-	name = "Xeno Merc"
+	name = "Xeno Mercenary"
 
 
 // Adeptus Mechanicus //
