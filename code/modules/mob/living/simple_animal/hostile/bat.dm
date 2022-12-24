@@ -17,7 +17,11 @@
 	maxHealth = 50
 	health = 50
 
+<<<<<<< Updated upstream
 	harm_intent_damage = 15
+=======
+	harm_intent_damage = 20
+>>>>>>> Stashed changes
 	melee_damage_lower = 2
 	melee_damage_upper = 8
 	attacktext = "bites"

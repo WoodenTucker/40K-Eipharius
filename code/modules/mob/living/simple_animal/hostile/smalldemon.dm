@@ -295,4 +295,58 @@
 	attacktext = "bites"
 	see_in_dark = 6
 
+<<<<<<< Updated upstream
 	speed = 1.5
+=======
+	speed = 1.5
+
+/mob/living/simple_animal/hostile/nurgling
+	name = "nurgling"
+	desc = "A small, flabby, impish lesser daemon of Nurgle. It stares at you with a wide grin."
+	icon = 'icons/mob/animal.dmi'
+	throw_range = 600
+	icon_state = "stinky"
+	icon_living = "stinky"
+	icon_dead = "stinky_dead"
+	pass_flags = PASS_FLAG_TABLE
+	speak = list("Hihihihihi", "Hreee!", "Teehee!")
+	speak_emote = list("giggles", "laughs", "sneers")
+	emote_hear = list("giggles", "smirks", "yaps", "squeals")
+	emote_see = list("jumps around!", "picks its nose", "claps")
+	speak_chance = 75
+	turns_per_move = 50
+	speed = 5
+	maxHealth = 100
+	health = 100
+	response_help  = "pats"
+	response_disarm = "kicks aside"
+	response_harm   = "stomps"
+	see_in_dark = 5
+	possession_candidate = 1
+	holder_type = /obj/item/holder
+	mob_size = 1
+	density = 0
+
+	var/death_msg = "lets out a waning screech, bursting into a mess of entrails."
+
+	harm_intent_damage = 30
+	melee_damage_lower = 30
+	melee_damage_upper = 30
+	attacktext = "slashed"
+	attack_sound = 'sound/weapons/bite.ogg'
+
+	faction = "Chaos"
+
+/mob/living/simple_animal/hostile/retaliate/nurgling/FindTarget()
+	. = ..()
+	if(.)
+		visible_emote("hisses angrily at [.]!")
+
+/mob/living/simple_animal/hostile/retaliate/nurgling/AttackingTarget()
+	. =..()
+	var/mob/living/L = .
+	if(istype(L))
+		if(prob(1))
+			L.Weaken(1)
+			L.visible_message("<span class='danger'>\the [src] knocks down \the [L]!</span>")
+>>>>>>> Stashed changes
