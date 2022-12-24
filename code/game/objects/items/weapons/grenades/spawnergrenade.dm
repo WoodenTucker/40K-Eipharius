@@ -15,10 +15,7 @@
 		if(spawner_type && deliveryamt)
 			// Make a quick flash
 			var/turf/T = get_turf(src)
-			playsound(T, 'sound/effects/phasein.ogg', 100, 1)
-			for(var/mob/living/carbon/human/M in viewers(T, null))
-				if(M.eyecheck() < FLASH_PROTECTION_MODERATE)
-					M.flash_eyes()
+			playsound(T, 'sound/effects/gore/blast4.ogg', 100, 1)
 
 			for(var/i=1, i<=deliveryamt, i++)
 				var/atom/movable/x = new spawner_type
@@ -46,3 +43,14 @@
 	spawner_type = /mob/living/simple_animal/hostile/carp
 	deliveryamt = 5
 	origin_tech = list(TECH_MATERIAL = 3, TECH_MAGNET = 4, TECH_ILLEGAL = 4)
+
+/obj/item/grenade/spawnergrenade/bugs
+	name = "infested morsel"
+	desc = "The smell is an exquisite blend of rotting meat and some kind of cheese. There's something moving inside."
+	icon_state = "bugnade"
+	item_state = "burger"
+	spawner_type = /mob/living/simple_animal/hostile/scarybat
+	deliveryamt = 5
+	origin_tech = list(TECH_MATERIAL = 3, TECH_MAGNET = 4, TECH_ILLEGAL = 4)
+
+

@@ -272,7 +272,7 @@
 	description = "Polytrinic acid is a an extremely corrosive chemical substance."
 	taste_description = "acid"
 	reagent_state = REAGENT_LIQUID
-	color = "#8e18a9"
+	color = "#669900"
 	power = 10
 	meltdose = 4
 
@@ -672,9 +672,9 @@
 	name = "Corruption"
 	description = "a loyalty changing liquid."
 	taste_description = "blood"
-	color = "#ffffff"
+	color = "#669900"
 	taste_mult = 5
-	strength = 10
+	strength = 30
 	metabolism = REM * 2
 	overdose = 30
 
@@ -683,16 +683,17 @@
 
 /datum/reagent/toxin/corrupting/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
-	if(prob(5))
-		if(M.chem_doses[type] < 15)
+	if(prob(100))
+		if(M.chem_doses[type] < 1)
 			to_chat(M, "<span class='warning'>You feel funny...</span>")
 		else
 			to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")
-
-/datum/reagent/toxin/corrupting/overdose(var/mob/living/carbon/M, var/alien)
 	if(istype(M, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = M
 		H.zombieze()
+	M.adjustOxyLoss(3 * removed)
+	M.Weaken(10)
+	M.silent = max(M.silent, 10)
 	remove_self(volume)
 
 

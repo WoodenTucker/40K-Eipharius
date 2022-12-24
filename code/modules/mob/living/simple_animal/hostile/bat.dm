@@ -6,17 +6,18 @@
 	icon_living = "swarm"
 	icon_dead = "swarm_dead"
 	icon_gib = "swarm_dead"
+	faction = "Chaos"
 	speak_chance = 0
 	turns_per_move = 3
 	meat_type = /obj/item/reagent_containers/food/snacks/meat
 	response_help = "pets the"
-	response_disarm = "gently pushes aside the"
-	response_harm = "hits the"
+	response_disarm = "swats aside the"
+	response_harm = "swats the"
 	speed = 0
 	maxHealth = 50
 	health = 50
 
-	harm_intent_damage = 8
+	harm_intent_damage = 15
 	melee_damage_lower = 2
 	melee_damage_upper = 8
 	attacktext = "bites"
@@ -28,7 +29,6 @@
 
 	environment_smash = 1
 
-	faction = "scarybat"
 	var/mob/living/owner
 
 /mob/living/simple_animal/hostile/scarybat/New(loc, mob/living/L as mob)
@@ -55,7 +55,7 @@
 			L.visible_message("<span class='danger'>\the [src] scares \the [L]!</span>")
 
 /mob/living/simple_animal/hostile/scarybat/cult
-	faction = "cult"
+	faction = "Chaos"
 	supernatural = 1
 
 /mob/living/simple_animal/hostile/scarybat/cult/cultify()

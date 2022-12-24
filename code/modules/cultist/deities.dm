@@ -46,7 +46,9 @@
 						/datum/rune_recipe/nurgle/nganga,
 						/datum/rune_recipe/nurgle/uniform,
 						/datum/rune_recipe/nurgle/plate,
-						/datum/rune_recipe/nurgle/mask)
+						/datum/rune_recipe/nurgle/mask,
+						/datum/rune_recipe/nurgle/nade,
+						/datum/rune_recipe/nurgle/blight)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
 			/mob/living/carbon/human/proc/draw_rune)

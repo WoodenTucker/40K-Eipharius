@@ -283,10 +283,15 @@
 /mob/living/carbon/human/proc/zombieze()
 	ChangeToHusk()
 	mutations |= CLUMSY //cause zombie
-	src.visible_message("<span class='danger'>\The [src]'s flesh decays before your very eyes!</span>", "<span class='danger'>Your entire body is ripe with pain as it is consumed down to flesh and bones. You... hunger. Not only for flesh, but to spread your disease.</span>")
+	add_flies()
+	src.apply_effects(stun = 1, stutter = 5)
+	src.visible_message("<span class='danger'>\The </big>[src]'s flesh decays before your very eyes, THEY'VE TURNED INTO A PLAGUE ZOMBIE!</big></span>", "<span class='phobia'<big>You... hunger. Not only for flesh, but to spread your disease..FOR GRANDFATHER NURGLE!.</big></span>")
 	if(src.mind)
 		src.mind.special_role = "Zombie"
-	log_admin("[key_name(src)] has transformed into a zombie!")
+	if(src.stat != DEAD && src.mind)
+		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
+		N.join_forced(src)
+	log_admin("[key_name(src)] has transformed into a Pox Walker!")
 	Weaken(5)
 	if(should_have_organ(BP_HEART))
 		vessel.add_reagent(/datum/reagent/blood,species.blood_volume-vessel.total_volume)
