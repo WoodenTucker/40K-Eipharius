@@ -485,7 +485,7 @@ obj/item/clothing/suit/armor
 	icon_state = "cadianarmor"
 	item_state = "cadianarmor"
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 10, rad = 10)
-	cold_protection = UPPER_TORSO | LOWER_TORSO 
+	cold_protection = UPPER_TORSO | LOWER_TORSO
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -494,7 +494,7 @@ obj/item/clothing/suit/armor
 	icon_state = "valhalla"
 	item_state = "valhalla"
 	armor = list(melee = 10, bullet = 10, laser = 10, energy = 10, bomb = 20, bio = 10, rad = 10)
-	cold_protection = UPPER_TORSO | LOWER_TORSO 
+	cold_protection = UPPER_TORSO | LOWER_TORSO
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -631,6 +631,11 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = -1
 
+/obj/item/clothing/suit/armor/catachan/medicae
+	name = "Catachan Medicae Flak Vest"
+	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. This one is worn by Catachan Combat Medicae." // Why are you gei?
+	icon_state = "mCatachan_Vest"
+
 /obj/item/clothing/suit/armor/valhallanarmor
 	name = "Valhallan Overcoat"
 	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions."
@@ -644,6 +649,11 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
+/obj/item/clothing/suit/armor/valhallanarmor/medicae
+	name = "Valhallan Medicae Overcoat"
+	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions. Bears the red markings of a Combat Medicae."
+	icon_state = "mvalarmor"
+
 /obj/item/clothing/suit/armor/krieger
 	name = "Krieg Overcoat"
 	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
@@ -655,6 +665,11 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/armor/krieger/medicae
+	name = "Krieg Medicae Overcoat"
+	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. It has red markings, denoting the wearer as a Combat Medicae."
+	icon_state = "mkriegcoat"
 
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Overcoat"

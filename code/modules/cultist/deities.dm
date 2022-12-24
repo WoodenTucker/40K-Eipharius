@@ -3,6 +3,7 @@
 	join_message = "Blood for the Blood God!"
 	status_icon_state = "khorne"
 	rune_type = /obj/effect/cleanable/heretic_rune/khorne
+	faction = "Chaos"
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_bioprinted,
 						/datum/rune_recipe/khorne/offer_heart,
@@ -35,6 +36,7 @@
 	name = "nurgle"
 	status_icon_state = "nurgle"
 	rune_type = /obj/effect/cleanable/heretic_rune/nurgle
+	faction = "Chaos"
 	possible_blessings = list(
 						/datum/heretic_effect/heal,
 						/datum/heretic_effect/painless,
@@ -51,7 +53,8 @@
 						/datum/rune_recipe/nurgle/blight)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
-			/mob/living/carbon/human/proc/draw_rune)
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualnurgle)
 
 /datum/heretic_deity/nurgle/post_add(mob/living/carbon/human/NewMember)
 	GLOB.nurgle_cult++
@@ -60,6 +63,7 @@
 	name = "slaanesh"
 	status_icon_state = "slaanesh"
 	rune_type = /obj/effect/cleanable/heretic_rune/slaanesh
+	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/slaanesh/conversion,
 						/datum/rune_recipe/slaanesh/arm,
 						/datum/rune_recipe/slaanesh/escape,
@@ -75,6 +79,7 @@
 	name = "tzeentch"
 	status_icon_state = "tzeentch"
 	rune_type = /obj/effect/cleanable/heretic_rune/tzeentch
+	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,

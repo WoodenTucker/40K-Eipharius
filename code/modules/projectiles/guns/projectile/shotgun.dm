@@ -70,14 +70,14 @@
 			to_chat(user, "There is a <span class='danger'><b>SPENT</b></span> one in the chamber.")
 	else
 		to_chat(user, "<span class='danger'>The chamber is <b>EMPTY</b>.")
-
+/*
 /obj/item/gun/projectile/shotgun/pump/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/ammo_magazine/box/shotgun))
 		var/obj/item/ammo_magazine/box/shotgun/S = W
 		if(!S.open)
 			return
 	..()
-
+*/
 
 /obj/item/gun/projectile/shotgun/pump/attack_self(mob/living/user as mob)
 	if(world.time >= recentpump + 10)
@@ -128,38 +128,9 @@
 
 	if(M)
 		M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-/*
-/obj/item/gun/projectile/shotgun/pump/combat
-	name = "combat shotgun"
-	desc = "Built for close quarters combat, the Hephaestus Industries KS-40 is widely regarded as a weapon of choice for repelling boarders."
-	icon_state = "cshotgun"
-	item_state = "cshotgun"
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	max_shells = 7 //match the ammo box capacity, also it can hold a round in the chamber anyways, for a total of 8.
-	ammo_type = /obj/item/ammo_casing/shotgun
-	one_hand_penalty = 5
-	accuracy = 0
-	fire_delay= 3
-	armor_penetration = 5
-	wielded_item_state = "shotgun-wielded"
 
-/obj/item/gun/projectile/shotgun/pump/border
-	name = "border shotgun"
-	desc = "A shotgun commonly used by kriegs, its not very accurate, but it sure fires quickly and is light. Very effective against trench meat."
-	icon_state = "border"
-	item_state = "cshotgun"
-	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	force = 25
-	max_shells = 5 //6 bullets in exchange for no slowdown
-	ammo_type = /obj/item/ammo_casing/shotgun
-	wielded_item_state = "cshotgun2"
-	move_delay= 2 //slowdown removed because... its literally supposed to be for fast combat and trench taking
-	one_hand_penalty = 5
-	accuracy = 0.5
-	fire_delay= 3
-	armor_penetration = 5
-	sales_price = 22
-*//*
+
+/*
 /obj/item/gun/projectile/shotgun/doublebarrel
 	name = "\improper MS Doom"
 	desc = "Two shots. That's all you'll ever need."
@@ -254,7 +225,7 @@
 	name = "signal shotgun"
 	desc = "A double-barreled shotgun meant to fire signal flash shells."
 	ammo_type = /obj/item/ammo_casing/shotgun/flash
-*//*
+
 /obj/item/gun/projectile/shotgun/pump/boltaction
 	name = "\improper Stub Rifle" //I used a random rifle generator to come up with that.
 	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."

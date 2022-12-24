@@ -52,7 +52,8 @@
 						item_slowdown = item_slowdown - species.strength - size_mod
 				if(I.str_requirement)
 					if(STAT_LEVEL(str) < I.str_requirement)
-						item_slowdown += 2
+						item_slowdown += 12
+						to_chat(src, "<span class='danger'>You are too weak to use this item, it is slowing you down!</span>")
 				total_item_slowdown += max(item_slowdown, 0)
 		tally += round(total_item_slowdown)
 

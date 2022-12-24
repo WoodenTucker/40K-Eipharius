@@ -205,3 +205,84 @@
 				</body>
 			</html>
 			"}
+
+/obj/item/book/manual/nurgle_recipes
+	name = "Liber Morbus"
+	icon_state ="nurglebook"
+	item_icons = list(
+		icon_l_hand = 'icons/mob/onmob/items/lefthand.dmi',
+		icon_r_hand = 'icons/mob/onmob/items/righthand.dmi',
+		)
+	author = "Morbidex Rotheart"
+	title = "Liber Morbus"
+
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Rites of The Grandfather</h1>
+				The sacred rites and practices of pestilence.
+
+				<h2>Pestilent Favour:</h2>
+				<h3>Imbue yourself with the power of the Grandfather.</h3>
+				Consume feces
+
+				<h2>Entropy's Dogma:</h2>
+				<h3>Accept the truth of disease, rejoice at the sight of death and pestilence!.</h3>
+				Feces offered on a rune of Nurgle
+
+				<h2>Corpulent Epidermis:</h2>
+				<h3>Purulent cysts toughen your hide somewhat.</h3>
+				Live rodent offered on a rune of Nurgle
+
+				<h2>Regenerating Boils:</h2>
+				<h3>Pus-infused growths cover your burns and open wounds at the cost of some toxic damage.</h3>
+				Raise your Favour to at least 40
+
+				<h2>Bless Uniform:</h2>
+				<h3>Transform the clothing of the False Emperor's puppets.</h3>
+				Imperial Guard uniform offered on a rune of Nurgle
+
+				<h2>Ferrous Growths Armor:</h2>
+				<h3>Create light and versatile armor.</h3>
+				Cloth roll offered on a rune of Nurgle
+
+				<h2>Putrid Helmet:</h2>
+				<h3>Offers protection and a constant supply of pestilent gases to breathe.</h3>
+				Civilian gas mask offered on a rune of Nurgle.
+
+				<h2>Foetid Nganga:</h2>
+				<h3>A cauldron to concoct a powerful summoning.</h3>
+				Rodent meat offered on a rune of Nurgle.
+
+				<h2>Abominable Spawn:</h2>
+				<h3>Assemble and summon a blessed child of the Grandfather to fight your enemies.</h3>
+				Raise your favour to at least 30.
+				<ul>
+				<li>Add a Left Arm to the stew to create the LEFT ARM</li>
+				<li>Add a right Hand and a couple syringes to the stew to create the RIGHT ARM</li>
+				<li>Add a left Leg to the stew to create the LEFT LEG</li>
+				<li>Add a turd, a right foot and a slab rat meat to crate the RIGHT LEG</li>
+				<li>Add a heart and freshly cut logs to create the TORSO</li>
+				<li>Add a set of eyes and a head to create the HEAD</li>
+
+				<li>Drop the beast's legs into the stew</li>
+				<li>Drop the beast's arms into the stew</li>
+				<li>Drop the beast's torso into the stew</li>
+				<li>Drop the beast's head into the stew</li>
+                <ul>
+				They are temperamental creatures....
+
+				</body>
+			</html>
+			"}

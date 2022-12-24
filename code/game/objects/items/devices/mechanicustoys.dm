@@ -213,7 +213,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	icon = 'icons/obj/guardpower_gear_32xOBJ.dmi'
 	icon_state = "hypogauntlet" //gloves.dmi
 	item_state = "sister" //hands.dmi
-	
+
 /obj/item/clothing/gloves/thick/narthecium/apot/verb/togglenarthecium()
 	set name = "Activate Narthecium"
 	set category = "Narthecium"
@@ -243,7 +243,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 		to_chat(usr,"You pull out your electro paddles and get ready to shock!")
 		usr.put_in_hands(new /obj/item/shockpaddles/narthecium(usr))
 		src.is_toggled = 2
-	
+
 /obj/item/shockpaddles/narthecium
 	name = "narthecium electro-paddles"
 	desc = "A pair of advanced electro-paddles powered by a promethium generator, it's shocks are so strong that they could probably pierce a astartes ribcage without causing too much damage"
@@ -254,7 +254,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	icon_state = "defibpaddles0"
 	item_state = "defibpaddles0"
 	cooldowntime = (4 SECONDS)
-	
+
 /obj/item/shockpaddles/narthecium/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
@@ -276,8 +276,8 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 /obj/item/melee/chain/pcsword/narthecium/apot/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
-	
-	
+
+
 /obj/item/clothing/gloves/thick/narthecium
 	name = "Sister Hospitaller's Narthecium"
 	desc = "A pair of white, augmented gloves, these have several modifications on them."
@@ -568,7 +568,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	firemodes = list()
 	accuracy = 2
 	max_shots = 60
-	projectile_type = /obj/item/projectile/bullet/bolt/kp
+	projectile_type = /obj/item/projectile/bullet/bolterrifle
 	origin_tech = null
 	self_recharge = 1
 	charge_meter = 0

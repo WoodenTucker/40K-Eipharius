@@ -28,6 +28,19 @@
 		else
 			isdrawing = 0
 
+/mob/living/carbon/human/proc/getmanualnurgle()
+	set name = "Produce Chaos Tome"
+	set category = "Ruinous Powers"
+	set desc = "Gives Nurgle manual."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] takes out a foul smelling tome from inside their clothes.")
+	src.verbs -= /mob/living/carbon/human/proc/getmanualnurgle
+	equip_to_slot(new /obj/item/book/manual/nurgle_recipes, slot_r_hand)
+
 /*
 Most blessings and curses should be permanent.
 */

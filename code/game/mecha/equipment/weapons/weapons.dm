@@ -370,7 +370,7 @@
     name = "\improper Astartes Mk IVa heavy bolter"
     icon_state = "mecha_uac2"
     equip_cooldown = 30
-    projectile = /obj/item/projectile/bullet/bolt
+    projectile = /obj/item/projectile/bullet/bolterrifle
     fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
     fire_volume = 100
     projectiles = 60
@@ -416,7 +416,7 @@
     name = "A twin linked heavy bolter"
     icon_state = "mecha_uac2"
     equip_cooldown = 30
-    projectile = /obj/item/projectile/bullet/gyro
+    projectile = /obj/item/projectile/bullet
     fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
     fire_volume = 100
     projectiles = 6000

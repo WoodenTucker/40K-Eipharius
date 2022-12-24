@@ -67,7 +67,7 @@
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c45m = 2,
+
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
