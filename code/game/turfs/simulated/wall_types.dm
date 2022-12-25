@@ -23,6 +23,13 @@
 	walltype = "rrwall"
 	integrity = 1500
 
+/turf/simulated/wall/seolite
+	name = "ancient wall"
+	desc = "An ancient wall of unknown origin."
+	icon_state = "rrwall0"
+	walltype = "rrwall"
+	integrity = 1500
+
 /turf/simulated/wall/concrete/strong
 	desc = "Looks much stronger than a paper sheet."
 	integrity = 1000

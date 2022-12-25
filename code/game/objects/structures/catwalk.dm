@@ -68,3 +68,19 @@
 			if(istype(src.loc, /turf/space) || istype(src.loc, /turf/simulated/open))
 				new /obj/structure/lattice/(src.loc)
 			qdel(src)
+
+/obj/structure/catwalkrust
+	name = "Rusty Cat walk"
+	desc = "Old and rusty, this is truely the finest metal craft Eipharius uses to build with. And that says a lot. Often used in the sewer system."
+	icon = 'icons/obj/catwalks.dmi'
+	icon_state = "catwalknew"
+	density = 0
+	anchored = 1.0
+	plane = HIDING_MOB_PLANE
+	layer = CATWALK_LAYER
+
+/obj/structure/catwalkrust/blocked
+	icon_state = "catwalknewblock"
+
+	/obj/structure/catwalkrust/water
+	icon_state = "catwalknewwater"
