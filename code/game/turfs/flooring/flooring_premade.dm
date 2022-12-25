@@ -146,6 +146,12 @@
 	icon_state = "steel"
 	initial_flooring = /decl/flooring/tiling
 
+/turf/simulated/floor/seolite
+	name = "Seolite floor"
+	icon = 'icons/turf/soulwall2.dmi'
+	icon_state = "cluster"
+	initial_flooring = /decl/flooring/tiling
+
 /turf/simulated/floor/tiled/stone
 	name = "stone tiled floor"
 	icon = 'icons/turf/flooring/tiles.dmi'

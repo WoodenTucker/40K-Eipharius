@@ -24,8 +24,9 @@
 	integrity = 1500
 
 /turf/simulated/wall/seolite
-	name = "ancient wall"
-	desc = "An ancient wall of unknown origin."
+	name = "Seolite Wall"
+	desc = "An ancient wall of xeno Seolite origin. Danger lingers surely around the corner."
+	icon = 'icons/turf/seolitewall.dmi'
 	icon_state = "rrwall0"
 	walltype = "rrwall"
 	integrity = 1500
