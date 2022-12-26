@@ -436,16 +436,6 @@
 	anchored = TRUE
 	mouse_opacity = FALSE//Don't want this being clicked.
 
-/obj/effect/water/full//This one appears over objects but under mobs.
-	name = "water"
-	icon = 'icons/obj/warfare.dmi'
-	icon_state = "trench_full"
-	plane = ABOVE_OBJ_PLANE
-	layer = ABOVE_OBJ_LAYER
-	density = FALSE
-	anchored = TRUE
-	mouse_opacity = FALSE
-
 /turf/simulated/floor/exoplanet/water/update_dirt()
 	return	// Water doesn't become dirty
 

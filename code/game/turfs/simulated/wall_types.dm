@@ -5,8 +5,6 @@
 	//mineral = "reinforced_m"
 /turf/simulated/wall/r_wall/New(var/newloc)
 	..(newloc) //3strong
-/turf/simulated/wall/ocp_wall
-	icon_state = "rgeneric"
 
 /turf/simulated/wall/concrete
 	name = "concrete wall"
@@ -69,28 +67,19 @@
 	integrity = 1000
 
 /turf/simulated/wall/stone
-	icon_state = "stone0"
+	icon = 'icons/turf/stonewalls.dmi'
+	icon_state = "wall15"
 	walltype = "stone"
 	integrity = 800
-
-/turf/simulated/wall/wood
-	icon_state = "wood0"
-	walltype = "wood"
-	integrity = 250
-
-/turf/simulated/wall/scrap
-	icon_state = "scrap0"
-	walltype = "scrap"
-	integrity = 400
 
 /turf/simulated/wall/wooden
 	name = "wood wall"
 	desc = "An old wooden wall. For when metal is just too much work."
-	icon = 'icons/turf/wooden3.dmi'
-	icon_state = "wall"
+	icon = 'icons/turf/woodenwall.dmi'
+	icon_state = "wood1"
 	walltype = "wood"
 	mineral = "wood"
-	integrity = 300 //Tough bois
+	integrity = 450
 
 /turf/simulated/wall/snowcave
 	name = "snowy cave wall"
@@ -98,10 +87,7 @@
 	icon_state = "snow0"
 	walltype = "snow"
 	mineral = "stone"
-	integrity = 600 //Tough bois
-
-/turf/simulated/wall/ocp_wall/New(var/newloc)
-	..(newloc)
+	integrity = 600
 
 /turf/simulated/wall/cult
 	icon_state = "cult"
@@ -158,7 +144,7 @@
 	return
 /turf/simulated/wall/titanium/New(var/newloc)
 	..(newloc)
-
+/*
 /turf/simulated/wall/alium
 	icon_state = "jaggy"
 	floor_type = /turf/simulated/floor/fixed/alium
@@ -170,3 +156,4 @@
 	if(prob(explosion_resistance))
 		return
 	..()
+*/
