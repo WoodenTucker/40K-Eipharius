@@ -352,13 +352,13 @@
 /turf/simulated/floor/snow
 	name = "snow"
 	icon = 'icons/turf/snow.dmi'
-	icon_state = "snow"
+	icon_state = "gravsnow"
 	movement_delay = 0.1
 	var/diggable = 1
 	var/can_be_dug = TRUE
 
 /turf/simulated/floor/snow/New()
-	icon_state = pick("snow[rand(1,12)]","snow0","snow","snow_3","snow_4",)
+	icon_state = pick("snow[rand(1,24)]","snow1","snow4","snow6","snow7","snow8","snow9",)
 	..()
 
 
