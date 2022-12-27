@@ -301,3 +301,26 @@
 		beakers += B2
 		icon_state = initial(icon_state) +"_locked"
 
+/obj/item/grenade/chem_grenade/blightnade
+	name = "Blight grenade"
+	desc = "Take a deep breath!"
+	icon_state = "blight"
+	stage = 2
+	path = 1
+
+	New()
+		..()
+		var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
+		var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
+
+		B1.reagents.add_reagent(/datum/reagent/phosphorus, 40)
+		B1.reagents.add_reagent(/datum/reagent/potassium, 40)
+		B1.reagents.add_reagent(/datum/reagent/toxin/corrupting, 40)
+		B2.reagents.add_reagent(/datum/reagent/sugar, 40)
+		B2.reagents.add_reagent(/datum/reagent/acid/polyacid, 80)
+
+		detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
+
+		beakers += B1
+		beakers += B2
+		icon_state = initial(icon_state) +"_locked"

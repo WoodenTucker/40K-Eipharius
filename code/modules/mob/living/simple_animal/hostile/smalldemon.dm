@@ -295,7 +295,6 @@
 	response_harm   = "mauls"
 	attacktext = "bites"
 	see_in_dark = 6
-
 	speed = 1.5
 
 /mob/living/simple_animal/hostile/nurgling
@@ -308,9 +307,9 @@
 	icon_dead = "stinky_dead"
 	pass_flags = PASS_FLAG_TABLE
 	speak = list("Hihihihihi", "Hreee!", "Teehee!")
-	speak_emote = list("giggles", "laughs","sneers")
-	emote_hear = list("giggles", "smirks", "yaps","squeals")
-	emote_see = list("jumps around!", "claps")
+	speak_emote = list("giggles", "laughs", "sneers")
+	emote_hear = list("giggles", "smirks", "yaps", "squeals")
+	emote_see = list("jumps around!", "picks its nose", "claps")
 	speak_chance = 75
 	turns_per_move = 50
 	speed = 5
@@ -347,3 +346,4 @@
 		if(prob(1))
 			L.Weaken(1)
 			L.visible_message("<span class='danger'>\the [src] knocks down \the [L]!</span>")
+

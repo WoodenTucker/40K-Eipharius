@@ -103,3 +103,10 @@ Most blessings and curses should be permanent.
 	var/choice = input(user, "Become [name] cultist?", "Choice") in list("Yes", "No")
 	if(choice == "Yes")
 		add_cultist(user)
+
+/datum/heretic_deity/proc/join_forced(var/mob/living/carbon/human/user)
+	if(GODBYPLAYER(user))
+		return
+	var/choice = input(user, "You now serve [name]!", "Choice") in list("Praise the God!")
+	if(choice == "Praise the God!")
+		add_cultist(user)
