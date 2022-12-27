@@ -2,18 +2,17 @@
 //Dirt!
 /turf/simulated/floor/dirty
 	name = "dirt" //"snowy dirt"
-	//icon = 'icons/turf/snow.dmi'
-	//icon_state = "snow_3"
 	icon = 'icons/turf/dirt.dmi'
 	icon_state = "dirt1"
 	movement_delay = 0.1
 	atom_flags = ATOM_FLAG_CLIMBABLE
 	has_coldbreath = FALSE // No more freezing to death indoors.
-	var/has_light = TRUE
+	var/has_light = FALSE
 	var/can_generate_water = TRUE
 	var/can_be_dug = TRUE
 
 /turf/simulated/floor/dirty/fake
+	desc = "This dirt isn't climbable"
 	atom_flags = null
 	can_generate_water = FALSE
 	can_be_dug = FALSE
@@ -23,10 +22,11 @@
 	desc = "This dirt doesn't look diggable."
 	can_be_dug = FALSE
 
-/turf/simulated/floor/dirty/tough/lightless/
+/turf/simulated/floor/dirty/tough/lightless
 	has_light = FALSE
 
 /turf/simulated/floor/dirty/tough/fake //Can't be click dragged on.
+	desc = "This dirt isn't climbable"
 	atom_flags = null
 
 /turf/simulated/floor/dirty/tough/lightless/fake

@@ -435,7 +435,7 @@
 		P.accuracy -= 3
 
 	if(user.combat_mode)
-		return		//P.accuracy += 2
+		P.accuracy += 2
 
 	if(!user.combat_mode)
 		P.dispersion += mod
