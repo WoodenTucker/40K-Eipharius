@@ -195,7 +195,7 @@
 /obj/item/clothing/head/helmet/kasrkin
 	name = "kasrkin helmet"
 	desc = "A carapace helmet belonging to the elite stormtroopers of the Kasrkin. Cadia may not be intact, but your brain will when in combat with this on."
-	icon_state = "kasrkinhelmet"
+	icon_state = "kasrkinhelmetb"
 	armor = list(melee = 40, bullet = 45, laser = 45, energy = 35, bomb = 50, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 	sales_price = 25
