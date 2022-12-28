@@ -105,7 +105,7 @@
 				to_chat(src, "<span class='notice'>[T] is torn terribly by [src]!</span>")
 				src.visible_message("<span class='danger'>[src] tears chunks out of [T]!</span>")
 				to_chat(T, "<span class='danger'>You feel enormous pain!</span>")
-				affecting.take_damage(9, 0, DAM_SHARP, "Jagged teeth)
+				affecting.take_damage(9, 0, DAM_SHARP, "Jagged teeth")
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 			
 	isconverting = 0
