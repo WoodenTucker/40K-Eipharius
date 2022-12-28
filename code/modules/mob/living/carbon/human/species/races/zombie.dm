@@ -55,7 +55,6 @@
 	vision_flags = SEE_SELF|SEE_MOBS
 
 /datum/species/human/zombie/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.age = rand(min_age,max_age)//Random age for nidders
 	if(H.f_style)//They're a walking corpse
 		H.f_style = "Shaved"
 	to_chat(H, "<big><span class='warning'>I have seen Grandfather's light! I must serve the cultists of Nurgle, and convert corpses. (Check your Zombie tab.)</span></big>")
