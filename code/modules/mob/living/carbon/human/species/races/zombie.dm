@@ -8,7 +8,7 @@
 	language = LANGUAGE_GALCOM
 	min_age = 1 //Irrelevant, but might be used later
 	max_age = 8000
-	total_health = 300 //Tough plague zombies
+	total_health = 50 //Aim for the head
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
 	teeth_type = /obj/item/stack/teeth/human
