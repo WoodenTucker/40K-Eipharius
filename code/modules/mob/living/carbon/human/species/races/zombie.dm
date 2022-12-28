@@ -27,9 +27,11 @@
 	gluttonous = GLUT_ANYTHING
 	stomach_capacity = MOB_MEDIUM
 	darksight = 20
+	innate_heal = TRUE
 
 	brute_mod = 1.1// Pretty fragile.
 	burn_mod = 1.8 // FIRE BURNS
+	tox_mod = 0
 
 	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
