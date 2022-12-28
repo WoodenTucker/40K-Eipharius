@@ -1523,8 +1523,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/kasrkin
 	name = "Kasrkin Carapace"
 	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
-	icon_state = "kasrkinarmor"
-	item_state = "kasrkinarmor"
+	icon_state = "kasrkinarmorb"
+	item_state = "kasrkinarmorb"
 	armor = list(melee = 58, bullet = 54, laser = 54, energy = 25, bomb = 40, bio = 40, rad = 40)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
