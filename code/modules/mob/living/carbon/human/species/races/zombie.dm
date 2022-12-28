@@ -61,7 +61,7 @@
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 
-/mob/living/carbon/human/zombieproc/convert()
+/mob/living/carbon/human/zombie/proc/convert()
 	set category = "Zombie"
 	set name = "Convert"
 	set desc = "Convert a corpse to Nurgle"
