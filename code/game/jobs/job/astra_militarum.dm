@@ -853,7 +853,7 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =  null
-	suit_store = /obj/item/gun/projectile // hmg
+	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	backpack_contents = list(
@@ -951,12 +951,13 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/device/binoculars
-	r_pocket =  null // remember to give them ammo
-	suit_store = null // good bolt action
+	r_pocket =  /obj/item/ammo_casing/a145/apds
+	suit_store = /obj/item/gun/projectile/heavysniper
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1
+	/obj/item/storage/box/sniperammo = 2,
+	/obj/item/ammo_casing/a145/apds = 2,
+	/obj/item/stack/thrones2/five = 1
 	)
 
 // Sergeant

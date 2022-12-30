@@ -413,10 +413,16 @@ Template:
 	icon_state = "lasgun"
 
 /obj/random/loot/lightlasgun/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun = 12,
-				/obj/item/gun/energy/las/lasgun/lucius = 9,
+	return list(/obj/item/gun/energy/las/lasgun = 5,
+				/obj/item/gun/energy/las/lasgun/lucius = 4,
 				/obj/item/gun/energy/las/laspistol/militarum = 3,
-				/obj/item/gun/energy/las/lasgun/catachan = 4,)
+				/obj/item/gun/energy/las/lasgun/catachan = 4,
+				/obj/item/gun/energy/las/lasgun/accatran = 2,
+				/obj/item/gun/energy/las/hotshot = 1,
+				/obj/item/gun/energy/las/laspistol = 2,
+				/obj/item/gun/energy/las/laspistol/accatran = 1,
+				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
+				)
 
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
@@ -434,8 +440,7 @@ Template:
 	icon_state = "heavystubberammo"
 
 /obj/random/loot/heavystubberammo/spawn_choices()
-	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10,
-				/obj/item/ammo_magazine/box/a556/mg08 = 5)
+	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10)
 
 /obj/random/loot/heavystubber
 	name = "Heavy Stubber"
@@ -443,7 +448,12 @@ Template:
 	icon_state = "heavystubber"
 
 /obj/random/loot/heavystubber/spawn_choices()
-	return list(/obj/item/gun/projectile/automatic)
+	return list(
+		/obj/item/gun/projectile/automatic/heavystubber/cognis = 2,
+		/obj/item/gun/projectile/automatic/heavystubber = 10,
+
+
+	)
 
 // DUNGEON & PILGRIM LOOT. These spawners are generally low quality and have wide selection making them ideal as generic loot.
 
@@ -453,7 +463,10 @@ Template:
 	icon_state = "randomammo"
 
 /obj/random/loot/randomammo/spawn_choices()
-	return list(/obj/item/ammo_magazine)
+	return list(
+		/obj/item/ammo_magazine/a357 = 1,
+
+		)
 
 
 /obj/random/loot/badweapon
@@ -462,7 +475,13 @@ Template:
 	icon_state = "badranged"
 
 /obj/random/loot/badweapon/spawn_choices()
-	return list(/obj/item/gun/projectile = 1)
+	return list(
+		/obj/item/gun/projectile/shotgun/pump/boltaction = 1,
+		/obj/item/gun/projectile/pistol/kieji = 1,
+		/obj/item/gun/energy/las/laspistol/shitty = 1,
+		/obj/item/gun/projectile/revolver/messina = 1,
+		/obj/item/gun/energy/las/lasgun/shitty = 1,
+	)
 
 /obj/random/loot/goodweapon
 	name = "Good Weapon Spawner" // plasma, bolter, fancy lasguns
@@ -470,9 +489,15 @@ Template:
 	icon_state = "goodranged"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/boltrifle/lockebolter = 2,
-				/obj/item/gun/energy/pulse/plasma/rifle = 1,
-				/obj/item/gun/energy/pulse/plasma/pistol = 2,)
+	return list(
+				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
+				/obj/item/gun/energy/pulse/plasma/rifle = 2,
+				/obj/item/gun/energy/pulse/plasma/pistol = 3,
+				/obj/item/gun/energy/las/hotshot = 3,
+				/obj/item/gun/energy/las/lasgun/accatran = 4,
+				/obj/item/gun/projectile/meltagun = 1,
+				/obj/item/gun/energy/las/lasgun/longlas = 1,
+				)
 
 /obj/random/loot/randomarmor
 	name = "Random Armor"

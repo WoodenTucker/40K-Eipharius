@@ -982,9 +982,23 @@ Area basic template
 	dynamic_lighting = 1
 	requires_power = FALSE
 
-/area/cadiaoutpost/oa/service/habs
-	name = "Habs"
-	icon_state = "inn"
+/area/cadiaoutpost/oa/service/hab
+	name = "Hab"
+	icon_state = "hab"
+	music = 'sound/newmusic/Hab.ogg'
+	dynamic_lighting = 1
+	requires_power = FALSE
+
+/area/cadiaoutpost/oa/service/hab/inside
+	name = "Hab Inside"
+	icon_state = "habinside"
+	music = 'sound/newmusic/Hab.ogg'
+	dynamic_lighting = 1
+	requires_power = FALSE
+
+/area/cadiaoutpost/oa/service/enforcer
+	name = "Enforcer"
+	icon_state = "enforce"
 	music = 'sound/newmusic/Hab.ogg'
 	dynamic_lighting = 1
 	requires_power = FALSE
