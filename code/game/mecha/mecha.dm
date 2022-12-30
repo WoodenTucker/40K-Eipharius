@@ -37,6 +37,7 @@
 	var/m_damage_coeff = 1
 	var/rhit_power_use = 0
 	var/mhit_power_use = 0
+	var/exitable = 1 // 1 for yes, 0 for no
 
 	//the values in this list show how much damage will pass through, not how much will be absorbed.
 	var/list/damage_absorption = list("brute"=0.7,"fire"=1.2,"bullet"=0.9,"laser"=0.8,"energy"=1,"bomb"=0.9)
@@ -1078,24 +1079,41 @@
 	src.occupant << browse(src.get_stats_html(), "window=exosuit")
 	return
 
-/*
+
 /obj/mecha/verb/force_eject()
-	set category = "Object"
-	set name = "Force Eject"
-	set src in view(5)
-	src.go_out()
-	return
-*/
+	if(exitable == 1)
+		set category = "Object"
+		set name = "Force Eject"
+		set src in view(5)
+		to_chat(usr, "You are jumping out of the exosuit.")
+		src.go_out()
+		return
+	else
+		to_chat(usr, "You can't exit the exosuit.")
+
+
+
 
 /obj/mecha/verb/eject()
-	set name = "Eject"
-	set category = "Exosuit Interface"
-	set src = usr.loc
-	set popup_menu = 0
-	if(usr!=src.occupant)
+	if(exitable == 1)
+		set name = "Eject"
+		set category = "Exosuit Interface"
+		set src = usr.loc
+		set popup_menu = 1
+		if(usr!=src.occupant)
+			return
+		to_chat(usr, "You are climbing your way out of the exosuit.")
+		src.go_out()
 		return
-	to_chat(usr, "You can`t exit exosuit")
-	return
+	else
+		set name = "Eject"
+		set category = "Exosuit Interface"
+		set src = usr.loc
+		set popup_menu = 1
+		if(usr!=src.occupant)
+			return
+		to_chat(usr, "You can`t exit the exosuit")
+		return
 
 
 /obj/mecha/proc/go_out()
