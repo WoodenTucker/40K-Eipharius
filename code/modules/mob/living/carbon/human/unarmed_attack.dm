@@ -185,7 +185,7 @@ var/global/list/sparring_attack_cache = list()
 	eye_attack_text = "fingers"
 	eye_attack_text_victim = "digits"
 	damage = 55
-	
+
 /datum/unarmed_attack/kick
 	attack_verb = list("kicked", "kicked", "kicked", "kneed")
 	attack_noun = list("kick", "kick", "kick", "knee strike")
@@ -295,8 +295,8 @@ var/global/list/sparring_attack_cache = list()
 /datum/unarmed_attack/rendingclaws
 	attack_verb = list("rends")
 	attack_noun = list("claw")
-	eye_attack_text = "blades"
-	eye_attack_text_victim = "daggers"
+	eye_attack_text = "claws"
+	eye_attack_text_victim = "slashes"
 	damage = 95
 	sharp = 1
 	edge = 1
