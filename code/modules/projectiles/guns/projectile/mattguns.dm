@@ -288,9 +288,9 @@
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 // Stubber //
-/*
-/obj/item/gun/projectile/automatic/stubber
-	name = "Vraks Pattern Heavy Stubber"
+
+/obj/item/gun/projectile/automatic/heavystubber
+	name = "Agripinaa Pattern Heavy Stubber"
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
 	icon_state = "hmg"
 	item_state = "hmg"
@@ -335,7 +335,7 @@
 // adeptus mechanicus adamantium LMG
 //icon = 'icons/obj/weapons/gun/projectile.dmi'
 
-/obj/item/gun/projectile/automatic/stubber/cognis
+/obj/item/gun/projectile/automatic/heavystubber/cognis
 	name = "Cognis Pattern Heavy Stubber"
 	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
 	icon_state = "cognisLMG"
@@ -370,7 +370,7 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="2-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
-		*/
+
 
 // Boltgun
 /obj/item/gun/projectile/boltrifle //boltus

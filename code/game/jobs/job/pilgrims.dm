@@ -405,8 +405,9 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = /obj/item/clothing/mask/bandana
-//	belt = /obj/item/gun/projectile/warfare
+	belt = /obj/item/gun/projectile/revolver/villiers
 	backpack_contents = list(
+	/obj/item/ammo_magazine/a357 = 2,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	)
@@ -424,11 +425,13 @@ Pilgrim Fate System
 	r_ear = null
 	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
-	suit_store = /obj/item/gun/projectile // shotty
-	backpack_contents = list( // handful of buck and stun box
+	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
+	backpack_contents = list(
+	/obj/item/ammo_box/shotgun/stunshell = 1,
+	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/stack/thrones3/twenty = 1,
 )
 
 
@@ -543,9 +546,11 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
+/mob/living/carbon/human/proc/gangeq
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
+
 		..()
 		H.add_stats(rand(15,17), rand(12,16), rand(13,15), rand (8,11))
 		H.add_skills(rand(7,9),rand(8,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
@@ -553,6 +558,21 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You were once a ganger from an off-world hive, after obtaining a sizable bounty on your head you used your savings to book passage off world and have arrived here to Eipharius. Despite how hard it was in the underhive, you get the feeling starting over on this shithole will be even worse.</font></b></span>")
+
+/mob/living/carbon/human/proc/gangeq()
+    if(prob(70))
+        if(prob(50))
+            equip_to_slot_or_del(new /obj/item/clothing/head/helmet/gangerhelm, slot_head)
+        else
+            switch(rand(1,4))
+                if(1)
+                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sentryhelm, slot_head)
+                if(2)
+                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/siege, slot_head)
+                if(3)
+                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hero, slot_head)
+                if(4)
+                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/zealot, slot_head)
 
 
 /datum/job/bouncer

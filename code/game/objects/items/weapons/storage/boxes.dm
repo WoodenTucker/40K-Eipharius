@@ -169,7 +169,7 @@
 /obj/item/storage/box/sniperammo
 	name = "box of 14.5mm shells"
 	desc = "It has a picture of a gun and several warning symbols on the front.<br>WARNING: Live ammunition. Misuse may result in serious injury or death."
-	startswith = list(/obj/item/ammo_casing/a145 = 7)
+	startswith = list(/obj/item/ammo_casing/a145 = 15)
 
 /obj/item/storage/box/sniperammo/apds
 	name = "box of 14.5mm APDS shells"
