@@ -236,6 +236,31 @@
 		"Catachan Flamer" = /decl/hierarchy/outfit/job/watchman/guardsman/catachan,
 		)
 
+datum/job/ig/bullgryn
+	title = "Bullgryn"
+	social_class = SOCIAL_CLASS_MIN //these boys are gross
+	selection_color = "#33813A"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Da Emprah. Da SGT, Da imperiool gerds!"
+	outfit_type = /decl/hierarchy/outfit/job/bullgryn
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	cultist_chance = 1 // grog like emperorah :)
+	species_role = "Ogryn"
+
+
+	equip(var/mob/living/carbon/human/H)
+	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(19,22), rand(15,18), rand(15,18), rand (2,5))
+		H.add_skills(rand(16,19),rand(1,4),1,1,1) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.fully_replace_character_name(random_ogryn_name())
+		to_chat(H, "<span class='notice'><b><font size=3>LOVE DA EMPRAH. LOVE DA SGT. LOVE DA IMPERIOOL GERDS. PROTECT DA LITTL UN GERDS!</font></b></span>")
+
+
 
 
 /* //DO NOT FORGET TO READD IT IN THE MAP CONFIGS ONCE ITS DONE!!!
@@ -811,6 +836,28 @@
 	backpack_contents = list(
 	/obj/item/grenade/frag = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	)
+
+// bullgryn
+/decl/hierarchy/outfit/job/bullgryn
+	name = OUTFIT_JOB_NAME("Bullgryn")
+	uniform = /obj/item/clothing/under/ogryn/jumpsuit
+	head = null
+	shoes = /obj/item/clothing/shoes/jackboots/ogryn
+	gloves = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/armor/ogryn/two
+	id_type = /obj/item/card/id/pilgrim/innkeeper
+	pda_type = /obj/item/device/pda/penitent
+	l_ear = null
+	r_ear = /obj/item/device/radio/headset/red_team
+	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	r_hand = /obj/item/shield/riot
+	l_hand = /obj/item/melee/classic_baton/trench_club
+	backpack_contents = list(
+	/obj/item/grenade/frag = 1,
 	)
 
 // chaos spec

@@ -152,6 +152,9 @@ Template:
 /obj/effect/landmark/start/imperialguard/guard
 	name = "Imperial Guardsman"
 
+/obj/effect/landmark/start/imperialguard/bullgryn
+	name = "Bullgryn"
+
 /obj/effect/landmark/start/imperialguard/recruit
 	name = "Imperial Guard Recruit"
 
