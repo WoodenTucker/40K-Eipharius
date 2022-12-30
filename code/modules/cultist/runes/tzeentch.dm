@@ -21,8 +21,8 @@
 	name = "Illusion Rite"
 	ingredients = list(/obj/item/organ/internal/eyes/bioprinted, /obj/item/clothing)
 	special = TRUE
-	
-	
+
+
 //Stolen from chamelon projectors
 /datum/rune_recipe/tzeentch/illusion
 	name = "Illusion Rite"
@@ -36,7 +36,7 @@
 	var/orig_overlays = user.overlays
 	var/obj/effect/dummy/illusion/C = new(get_turf(usr))
 	C.activate(user, target.icon, target.icon_state, target.overlays)
-	addtimer(CALLBACK(src, .proc/remove_illusion, user, orig_icon, orig_icon_state, orig_overlays, C), 5 MINUTES)
+	addtimer(CALLBACK(src, .proc/remove_illusion, user, orig_icon, orig_icon_state, orig_overlays, C), 1 MINUTES)
 
 /datum/rune_recipe/tzeentch/illusion/proc/remove_illusion(var/atom/inp, var/original_icon, var/original_icon_state, var/orig_overlays, var/obj/effect/dummy/illusion/C)
 	inp.icon = original_icon
@@ -88,9 +88,9 @@
 
 /datum/rune_recipe/tzeentch/coppercoin
 	name = "Copper to Coin"
-	ingredients = list(/obj/item/newore/copperore)
-	product_path = /obj/item/stack/thrones3/three
-	
+	ingredients = list(/obj/item/stack/thrones)
+	product_path = list(/obj/item/stack/thrones, /obj/item/stack/thrones)
+
 /datum/rune_recipe/tzeentch/lens
 	name = "Lensmaker's Rite"
 	ingredients = list(/obj/item/cell/lasgun)

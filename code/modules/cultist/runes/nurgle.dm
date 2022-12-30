@@ -49,3 +49,8 @@
 	name = "Blightnade Rite"
 	ingredients = list(/obj/item/organ/external/head, /obj/item/grenade/frag/high_yield/homemade)
 	product_path = /obj/item/grenade/chem_grenade/blightnade
+
+	/datum/rune_recipe/nurgle/nurgling
+	name = "Nurgling Rite"
+	ingredients = list(/obj/item/organ/internal/liver)
+	product_path = /mob/living/simple_animal/hostile/nurgling
