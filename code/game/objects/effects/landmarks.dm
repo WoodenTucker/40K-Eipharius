@@ -413,10 +413,16 @@ Template:
 	icon_state = "lasgun"
 
 /obj/random/loot/lightlasgun/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun = 12,
-				/obj/item/gun/energy/las/lasgun/lucius = 9,
+	return list(/obj/item/gun/energy/las/lasgun = 5,
+				/obj/item/gun/energy/las/lasgun/lucius = 4,
 				/obj/item/gun/energy/las/laspistol/militarum = 3,
-				/obj/item/gun/energy/las/lasgun/catachan = 4,)
+				/obj/item/gun/energy/las/lasgun/catachan = 4,
+				/obj/item/gun/energy/las/lasgun/accatran = 2,
+				/obj/item/gun/energy/las/hotshot = 1,
+				/obj/item/gun/energy/las/laspistol = 2,
+				/obj/item/gun/energy/las/laspistol/accatran = 1,
+				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
+				)
 
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
@@ -470,10 +476,11 @@ Template:
 
 /obj/random/loot/badweapon/spawn_choices()
 	return list(
-		/obj/item/gun/projectile/shotgun/pump/boltaction
-
-
-
+		/obj/item/gun/projectile/shotgun/pump/boltaction = 1,
+		/obj/item/gun/projectile/pistol/kieji = 1,
+		/obj/item/gun/energy/las/laspistol/shitty = 1,
+		/obj/item/gun/projectile/revolver/messina = 1,
+		/obj/item/gun/energy/las/lasgun/shitty = 1,
 	)
 
 /obj/random/loot/goodweapon

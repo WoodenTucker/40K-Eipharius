@@ -418,7 +418,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Lucius-pattern Laspistol"
-	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge."
+	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge to have the same output as a rifle"
 	icon_state = "luciuspistol"
 	force = 10
 	one_hand_penalty = 2.5
@@ -433,6 +433,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
+		list(mode_name="Overcharged", 	fire_delay = 8, charge_cost = 240, projectile_type = /obj/item/projectile/energy/las/lasgun),
 		)
 
 //Tau weapons
