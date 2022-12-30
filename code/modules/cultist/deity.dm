@@ -39,8 +39,46 @@
 
 	visible_message("[name] takes out a foul smelling tome from inside their clothes.")
 	src.verbs -= /mob/living/carbon/human/proc/getmanualnurgle
-	equip_to_slot(new /obj/item/book/manual/nurgle_recipes, slot_r_hand)
+	src.put_in_hands(new /obj/item/book/manual/nurgle_recipes, slot_r_hand)
 
+/mob/living/carbon/human/proc/getmanualkhorne()
+	set name = "Produce Chaos Tome"
+	set category = "Ruinous Powers"
+	set desc = "Gives Khorne manual."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] takes out a bloody tome from inside their clothes.")
+	src.verbs -= /mob/living/carbon/human/proc/getmanualkhorne
+	src.put_in_hands(new /obj/item/book/manual/khorne_recipes, slot_r_hand)
+
+/mob/living/carbon/human/proc/getmanualtzeentch()
+	set name = "Produce Chaos Tome"
+	set category = "Ruinous Powers"
+	set desc = "Gives Tzeentch manual."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] takes out a shifting tome from inside their clothes.")
+	src.verbs -= /mob/living/carbon/human/proc/getmanualtzeentch
+	src.put_in_hands(new /obj/item/book/manual/tzeentch_recipes, slot_r_hand)
+
+/mob/living/carbon/human/proc/getmanualslaanesh()
+	set name = "Produce Chaos Tome"
+	set category = "Ruinous Powers"
+	set desc = "Gives Slaanesh manual."
+
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
+		return
+
+	visible_message("[name] takes out a sensual tome from inside their clothes.")
+	src.verbs -= /mob/living/carbon/human/proc/getmanualslaanesh
+	src.put_in_hands(new /obj/item/book/manual/slaanesh_recipes, slot_r_hand)
 /*
 Most blessings and curses should be permanent.
 */
@@ -63,7 +101,7 @@ Most blessings and curses should be permanent.
 	to_chat(NewMember, join_message)
 	NewMember.verbs += inherent_verbs
 	NewMember.AddInfectionImages()
-	NewMember.faction = faction
+	NewMember.faction = "Chaos"
 	NewMember.mind.special_role = "[name]"
 	SSgods.cultist_count += 1
 	post_add(NewMember)

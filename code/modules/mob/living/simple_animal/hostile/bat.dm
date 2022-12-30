@@ -6,7 +6,6 @@
 	icon_living = "swarm"
 	icon_dead = "swarm_dead"
 	icon_gib = "swarm_dead"
-	faction = "Chaos"
 	speak_chance = 0
 	turns_per_move = 3
 	meat_type = /obj/item/reagent_containers/food/snacks/meat
@@ -17,11 +16,7 @@
 	maxHealth = 50
 	health = 50
 
-<<<<<<< Updated upstream
 	harm_intent_damage = 15
-=======
-	harm_intent_damage = 20
->>>>>>> Stashed changes
 	melee_damage_lower = 2
 	melee_damage_upper = 8
 	attacktext = "bites"
