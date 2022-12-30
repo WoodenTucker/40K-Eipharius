@@ -356,7 +356,7 @@
 		list(mode_name="4-round bursts", burst=4, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/obj/item/gun/projectile/automatic/stubber/villiers
+/obj/item/gun/projectile/automatic/heavystubber/villiers
 	name = "Villiers Heavy Stubber"
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
@@ -367,9 +367,44 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
+obj/item/gun/projectile/automatic/agripinaaii
+	name = "Agripinaa Pattern Stub rifle MK II"
+	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 7.62 rounds. "
+	icon_state = "agripinaa" // Object Icon
+	item_state = "agripinaa" // On-Mob
+	unloaded_icon = "agripinaa_e" // Object Icon
+	loaded_icon = "agripinaa" // Object Icon
+	caliber = "763"
+	ammo_type = /obj/item/ammo_casing/brifle
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	move_delay = 2.3
+	one_hand_penalty = 20
+	accuracy = 0
+	automatic = 0
+	fire_delay = 4
+	sales_price = 35
+
+
+	magazine_type = /obj/item/ammo_magazine/a762
+	allowed_magazines = /obj/item/ammo_magazine/a762
+
+	gun_type = GUN_SEMIAUTO
+
+	wielded_item_state = "agripinaa"
+	unwielded_loaded_icon = "agripinaa"
+	wielded_loaded_icon = "agripinaa"
+	unwielded_unloaded_icon = "agripinaa_e"
+	wielded_unloaded_icon = "agripinaa_e"
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=4, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=14, burst_accuracy=list(-0,-1,-1), dispersion=list(0.1, 0.2, 0.2), automatic = 0),
+		)
 
 // Boltgun
 /obj/item/gun/projectile/boltrifle //boltus

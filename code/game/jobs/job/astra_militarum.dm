@@ -704,9 +704,10 @@ datum/job/ig/bullgryn
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile // autogrim smg
+	r_pocket = /obj/item/ammo_magazine/a762
+	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
 	backpack_contents = list(
+	/obj/item/ammo_magazine/a762 = 2,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
@@ -747,23 +748,23 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/gun/projectile // pistol
+	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  null
-	suit_store = /obj/item/gun/projectile // big stubba
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08
+	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/device/flashlight/lantern = 1
 	)
 
 /decl/hierarchy/outfit/job/sharpshooter/catachan

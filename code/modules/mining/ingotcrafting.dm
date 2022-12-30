@@ -26,7 +26,7 @@
 	if(isAutochisel(W) || isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Inferior Lasgun Cell", "Boscolet Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Bolt Pistol Magazine", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Musket", "Sawn-Off Shotgun", "Combat Knife") //lists all possible crafting choices
+		var/craftingchoices = list("Inferior Lasgun Cell", "Boscolet Revolver", "Shells Boxes", ".38 Speedloaders", "9mm Pistol Mags", ".45 Pistol Magazines", "Bolt Pistol Magazine", "Trench Shovel", "Chisel", "Hammer", "Ingot Lube", "Kieji Handgun", "Snub Nose Kieji Handgun", "Sawn-Off Shotgun", "Combat Knife") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
