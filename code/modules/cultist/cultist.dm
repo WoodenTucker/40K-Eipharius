@@ -56,4 +56,4 @@
 		if(effect.examine_message)
 			examine_list += effect.examine_message
 	if(isheretic(user))
-		examine_list += "<span class='warning'><b>They are familar to you, they are a fellow follower of chaos. But not your god.\n</b></span>"
+		examine_list += "<span class='warning'><b>They are familar to you, they are a fellow follower of chaos. You are unsure of which god, however...\n</b></span>"

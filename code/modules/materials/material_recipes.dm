@@ -176,6 +176,6 @@
 	recipes += new/datum/stack_recipe("ork banner structure", /obj/structure/orkbanna, 5, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap window", /obj/structure/window/orkwindow, 15, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap door", /obj/machinery/door/orkdoor, 10, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("scrap wall", /turf/simulated/wall/orkwall, 5, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("scrap wall", /turf/simulated/wall/stone, 5, 1, 1, 20, on_floor = 1)
 
 

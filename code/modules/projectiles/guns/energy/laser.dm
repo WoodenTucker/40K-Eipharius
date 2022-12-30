@@ -292,7 +292,7 @@
 
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
-	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration."
+	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration. It slowly recharges any lasgun cells loaded."
 	icon_state = "hotshotgun"
 	item_state = "lascar"
 	slot_flags = SLOT_BACK|SLOT_S_STORE

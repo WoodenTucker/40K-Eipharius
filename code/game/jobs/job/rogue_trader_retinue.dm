@@ -26,7 +26,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 50 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
+	cultist_chance = 100
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -94,7 +94,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary. </font></b></span>")
 
 /datum/job/xenomerc
 	title = "Xeno Mercenary"

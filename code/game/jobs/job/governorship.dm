@@ -210,7 +210,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 
 /mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))
-	set category = "Planetary Governor"
+	set category = "Mercenary"
 	set name = "Hire Mercenary"
 	set desc = "Finally! Some recognition!"
 	if(!client)

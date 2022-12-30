@@ -15,8 +15,7 @@
 	speed = 0
 	maxHealth = 50
 	health = 50
-
-	harm_intent_damage = 15
+	harm_intent_damage = 20
 	melee_damage_lower = 2
 	melee_damage_upper = 8
 	attacktext = "bites"
