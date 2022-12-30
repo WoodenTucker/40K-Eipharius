@@ -853,7 +853,7 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =  null
-	suit_store = /obj/item/gun/projectile // hmg
+	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	backpack_contents = list(

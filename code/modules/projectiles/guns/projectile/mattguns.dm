@@ -10,14 +10,13 @@
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
 	caliber = "763"
-	ammo_type = /obj/item/ammo_casing
-	one_hand_penalty = 15
+	ammo_type = /obj/item/ammo_casing/brifle
 	empty_icon = "boltaction-e"
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	far_fire_sound = "sniper_fire"
 	move_delay = 8
-	one_hand_penalty = 10
-	accuracy = 2
+	one_hand_penalty = 25
+	accuracy = 0
 	fire_delay = 3
 	force = 15
 	sales_price = 10
@@ -90,7 +89,7 @@
 	unloaded_icon = "boltactionsharp-e"
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
-	accuracy = 1
+	accuracy = 1.5
 	sales_price = 30
 
 /*
@@ -145,7 +144,7 @@
 	sales_price = 40
 
 //AMMO
-/*
+
 /obj/item/ammo_casing/brifle
 	desc = "An old worn out looking bullet casing."
 	caliber = "763"
@@ -153,7 +152,7 @@
 	icon_state = "brifle"
 	spent_icon = "brifle-casing"
 	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/two
-
+/*
 /obj/item/ammo_casing/brifle/ap
 	desc = "An old worn out looking AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ap
@@ -163,7 +162,7 @@
 	desc = "An old worn out looking MS bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ms
 	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/ms/two/
-
+*/
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE
@@ -205,7 +204,7 @@
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 20
-*/
+
 //Shitty shotgun
 
 /obj/item/gun/projectile/shotgun/pump/voxlegis
@@ -569,7 +568,7 @@
 //ORKA
 
 // NEEDS BALANCING ! //
-/*
+
 /obj/item/gun/projectile/ork/automatic/shoota
 	name = "Shoota"
 	desc = "A tree borst shoota. Da mekboyz even added dem coolin holes fer de barrel for ya, be grateful ya git! Load'd wid da .75 caliba boolets innit."
@@ -671,7 +670,7 @@
 
 
 //Eldar
-*/
+
 /obj/item/gun/projectile/eldar/scatapult
 	name = "Shuriken Catapult"
 	desc = "A large shuriken-firing ballistic weapon that is the standard and most common armament found amongst Craftworld Aeldari warriors."

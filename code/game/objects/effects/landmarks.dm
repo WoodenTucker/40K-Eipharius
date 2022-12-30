@@ -469,7 +469,12 @@ Template:
 	icon_state = "badranged"
 
 /obj/random/loot/badweapon/spawn_choices()
-	return list(/obj/item/gun/projectile = 1)
+	return list(
+		/obj/item/gun/projectile/shotgun/pump/boltaction
+
+
+
+	)
 
 /obj/random/loot/goodweapon
 	name = "Good Weapon Spawner" // plasma, bolter, fancy lasguns
