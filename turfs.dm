@@ -19,7 +19,7 @@
 
 /turf/simulated/floor/dirty/tough //this is meant to be the default undiggiable. You can dig it for now though
 	name = "tough dirt"
-	desc = "This dirt doesn't look diggable."
+	desc = "This dirt may or may not be diggable"
 	can_be_dug = TRUE
 
 /turf/simulated/floor/dirty/tough/lightless
