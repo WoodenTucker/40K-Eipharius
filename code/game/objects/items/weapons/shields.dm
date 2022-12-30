@@ -62,6 +62,7 @@
 	desc = "A shield adept at blocking blunt objects from connecting with the torso of the shield wielder."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "riot"
+	base_block_chance = 70
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	force = 5.0
@@ -102,7 +103,7 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "shieldmetal"
 	item_state = "riot"
-	base_block_chance = 65
+	base_block_chance = 40
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
 	force = 12
