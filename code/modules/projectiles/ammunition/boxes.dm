@@ -173,13 +173,13 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
 	name = "Boltpistol Magazine"
-	icon_state = "tinyersatz"
+	icon_state = "boltyp"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol
-	max_ammo = 10
+	max_ammo = 7
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/empty
@@ -187,7 +187,7 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine
 	name = "Bolter Magazine"
-	icon_state = "ersatz"
+	icon_state = "bolty"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"

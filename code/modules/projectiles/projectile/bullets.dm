@@ -262,12 +262,12 @@
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 45
-	armor_penetration = 10
+	damage = 50
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 61
+	damage = 65
 	armor_penetration = 20
 	penetrating = TRUE
 /*

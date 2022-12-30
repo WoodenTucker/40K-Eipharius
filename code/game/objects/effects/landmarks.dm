@@ -374,7 +374,15 @@ Template:
 	icon_state = "lightstub"
 
 /obj/random/loot/lightstubber/spawn_choices()
-	return list(/obj/item/gun/projectile = 1)
+	return list(
+				/obj/item/gun/projectile/automatic/smg/boscelot = 3,
+				/obj/item/gun/projectile/automatic/agripinaaii = 2,
+				/obj/item/gun/projectile/shotgun/pump/voxlegis = 1,
+				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 2,
+				/obj/item/gun/projectile/revolver/agripinaa = 1,
+				/obj/item/gun/projectile/pistol/villiers = 1,
+				/obj/item/gun/projectile/bolter_pistol = 1,
+	)
 
 /obj/random/loot/lightstubberammo
 	name = "Random stubber ammo"
