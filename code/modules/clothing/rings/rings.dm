@@ -151,7 +151,6 @@
 	fire_delay = 60 //about 15 seconds
 	sales_price = 0
 	wielded_item_state = "none" //this needs to be replaced ASAP with actual inhands/wielded for a laspistol
-	item_flags = ITEM_FLAG_NODROP
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=60, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=0),
 		)
