@@ -375,8 +375,8 @@ Template:
 
 /obj/random/loot/lightstubber/spawn_choices()
 	return list(
-				obj/item/gun/projectile/automatic/messina = 2,
-				obj/item/gun/projectile/automatic/agripinaaii = 2,
+				/obj/item/gun/projectile/automatic/messina = 2,
+				/obj/item/gun/projectile/automatic/agripinaaii = 2,
 				/obj/item/gun/projectile/automatic/smg/boscelot = 3,
 				/obj/item/gun/projectile/automatic/agripinaaii = 2,
 				/obj/item/gun/projectile/shotgun/pump/voxlegis = 1,
@@ -478,7 +478,7 @@ Template:
 		/obj/item/gun/projectile/automatic/heavystubber/cognis = 1,
 		/obj/item/gun/projectile/automatic/heavystubber = 7,
 		/obj/item/gun/projectile/automatic/agripinaaii = 2,
-		obj/item/gun/projectile/automatic/messina = 2,
+		/obj/item/gun/projectile/automatic/messina = 2,
 
 
 

@@ -42,12 +42,12 @@
 /datum/cargo_entry/weapon/stubrifle
 	name = "Stub Rifle"
 	cost = 25
-	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty
+	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction
 
 /datum/cargo_entry/weapon/stubriflescoped
 	name = "Scoped Stub Rifle"
 	cost = 35
-	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/sharpshooter
+	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
 
 /datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
@@ -80,7 +80,7 @@
 /datum/cargo_entry/weapon/agripinaa
 	name = "Agripinaa Stub Rifle"
 	cost = 60
-	item_path = obj/item/gun/projectile/automatic/agripinaaii
+	item_path = /obj/item/gun/projectile/automatic/agripinaaii
 
 /datum/cargo_entry/weapon/stubbervraks
 	name = "Vraks Heavy Stubber"
