@@ -44,6 +44,7 @@
 	accuracy = -1
 	force = 8
 	fire_delay = 1
+	sales_price = 10
 
 	magazine_type = /obj/item/ammo_magazine/smgmc9mm
 	allowed_magazines = /obj/item/ammo_magazine/smgmc9mm

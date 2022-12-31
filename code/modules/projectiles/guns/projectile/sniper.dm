@@ -22,7 +22,7 @@
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	sales_price = 130
+	sales_price = 90
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -99,7 +99,7 @@
 	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "las_musket"
-	sales_price = 0
+	sales_price = 70
 
 	firemodes = list(
 		list(mode_name="semi-automatic", move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),

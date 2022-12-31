@@ -90,7 +90,7 @@
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
 	accuracy = 1.5
-	sales_price = 30
+	sales_price = 20
 
 /*
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope_detach(mob/user)
@@ -220,7 +220,7 @@
 	one_hand_penalty = 4
 	accuracy = 0.5
 	fire_delay= 3
-	sales_price = 25
+	sales_price = 30
 
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
@@ -372,7 +372,7 @@
 
 // stub rifles, mag fed
 
-obj/item/gun/projectile/automatic/agripinaaii
+/obj/item/gun/projectile/automatic/agripinaaii
 	name = "Agripinaa Pattern Stub rifle MK II"
 	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 7.62 rounds. "
 	icon_state = "agripinaa" // Object Icon
@@ -389,7 +389,7 @@ obj/item/gun/projectile/automatic/agripinaaii
 	accuracy = 0
 	automatic = 0
 	fire_delay = 4
-	sales_price = 35
+	sales_price = 30
 
 
 	magazine_type = /obj/item/ammo_magazine/a762
@@ -405,7 +405,7 @@ obj/item/gun/projectile/automatic/agripinaaii
 
 	firemodes = null
 
-obj/item/gun/projectile/automatic/messina
+/obj/item/gun/projectile/automatic/messina
 	name = "Messina Pattern Autogun"
 	desc = "A locally produced pattern, chambered in 5.56 and not the highest quality material, to say the least..."
 	icon_state = "autogun_agrip" // Object Icon
@@ -421,7 +421,7 @@ obj/item/gun/projectile/automatic/messina
 	accuracy = -2
 	automatic = 1
 	fire_delay = 3
-	sales_price = 30
+	sales_price = 25
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556

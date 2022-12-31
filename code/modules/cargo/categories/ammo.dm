@@ -9,7 +9,7 @@
 	item_path = /obj/item/ammo_magazine/melta
 /datum/cargo_entry/ammo/boltpistolmag
 	name = "Bolt Pistol Magazine"
-	cost = 13
+	cost = 20
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine
 
 /datum/cargo_entry/ammo/lasmag
@@ -19,12 +19,12 @@
 
 /datum/cargo_entry/ammo/lasmaghot
 	name = "Hotshot Lasgun Power Pack"
-	cost = 18
+	cost = 20
 	item_path = /obj/item/cell/lasgun/hotshot
 
 /datum/cargo_entry/ammo/plasmaflask
 	name = "Plasma Gun Hydrogen Flask"
-	cost = 20
+	cost = 25
 	item_path = /obj/item/cell/plasma
 
 /datum/cargo_entry/ammo/heatshell
