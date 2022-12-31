@@ -290,7 +290,7 @@
 
 /obj/item/gun/projectile/automatic/heavystubber
 	name = "Agripinaa Pattern Heavy Stubber"
-	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
+	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling. Chambered in 5.56"
 	icon_state = "hmg"
 	item_state = "hmg"
 	str_requirement = 13
