@@ -90,6 +90,7 @@
 	force = 15
 	accuracy = -0.5
 	fire_delay= 10
+	sales_price = 15
 	ammo_type = /obj/item/ammo_casing/c44
 
 /obj/item/gun/projectile/revolver/agripinaa

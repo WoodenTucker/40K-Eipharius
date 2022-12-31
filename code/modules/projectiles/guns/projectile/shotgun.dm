@@ -151,7 +151,7 @@
 	one_hand_penalty = 3
 	burst_delay = 0
 	var/broke_open = FALSE
-	sales_price = 23
+	sales_price = 5
 
 /obj/item/gun/projectile/shotgun/doublebarrel/update_icon()
 	..()

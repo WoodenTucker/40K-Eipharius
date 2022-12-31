@@ -374,7 +374,17 @@ Template:
 	icon_state = "lightstub"
 
 /obj/random/loot/lightstubber/spawn_choices()
-	return list(/obj/item/gun/projectile = 1)
+	return list(
+				/obj/item/gun/projectile/automatic/messina = 2,
+				/obj/item/gun/projectile/automatic/agripinaaii = 2,
+				/obj/item/gun/projectile/automatic/smg/boscelot = 3,
+				/obj/item/gun/projectile/automatic/agripinaaii = 2,
+				/obj/item/gun/projectile/shotgun/pump/voxlegis = 1,
+				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 2,
+				/obj/item/gun/projectile/revolver/agripinaa = 1,
+				/obj/item/gun/projectile/pistol/villiers = 1,
+				/obj/item/gun/projectile/bolter_pistol = 1,
+	)
 
 /obj/random/loot/lightstubberammo
 	name = "Random stubber ammo"
@@ -382,10 +392,12 @@ Template:
 	icon_state = "lightstubammo"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
-	return list(/obj/item/ammo_box/shotgun = 7,
+	return list(/obj/item/ammo_box/shotgun = 3,
 				/obj/item/ammo_box/shotgun/slug = 3,
 				/obj/item/ammo_box/shotgun/beanbag = 1,
-				/obj/item/ammo_box/rifle = 8,
+				/obj/item/ammo_box/rifle = 3,
+				/obj/item/ammo_magazine/a762 = 3,
+				/obj/item/ammo_magazine/c556 = 3,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
 /obj/random/loot/sidearmammo
@@ -396,8 +408,11 @@ Template:
 /obj/random/loot/sidearmammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/a357 = 4,
 				/obj/item/ammo_magazine/a357 = 4,
-				/obj/item/cell/lasgun = 8,
-				/obj/item/ammo_magazine/c44 = 5,
+				/obj/item/cell/lasgun = 5,
+				/obj/item/cell/lasgun/small = 3,
+				/obj/item/ammo_magazine/mc9mm = 6,
+				/obj/item/ammo_magazine/mc45mm = 6,
+				/obj/item/ammo_magazine/c44 = 3,
 				/obj/item/ammo_box/shotgun = 3,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
@@ -407,7 +422,15 @@ Template:
 	icon_state = "sidearm"
 
 /obj/random/loot/sidearms/spawn_choices()
-	return list(/obj/item/gun/projectile = 2,
+	return list(
+				/obj/item/gun/energy/las/laspistol = 4,
+				/obj/item/gun/energy/las/laspistol/shitty = 5,
+				/obj/item/gun/energy/las/laspistol/accatran = 1,
+				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
+				/obj/item/gun/energy/las/laspistol/militarum = 2,
+				/obj/item/gun/projectile/pistol/pewter = 3,
+				/obj/item/gun/projectile/pistol/kieji = 3,
+				/obj/item/gun/projectile/pistol/kieji/snub = 3,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
@@ -452,8 +475,11 @@ Template:
 
 /obj/random/loot/heavystubber/spawn_choices()
 	return list(
-		/obj/item/gun/projectile/automatic/heavystubber/cognis = 2,
-		/obj/item/gun/projectile/automatic/heavystubber = 10,
+		/obj/item/gun/projectile/automatic/heavystubber/cognis = 1,
+		/obj/item/gun/projectile/automatic/heavystubber = 7,
+		/obj/item/gun/projectile/automatic/agripinaaii = 2,
+		/obj/item/gun/projectile/automatic/messina = 2,
+
 
 
 	)
@@ -481,6 +507,7 @@ Template:
 	return list(
 		/obj/item/gun/projectile/shotgun/pump/boltaction = 1,
 		/obj/item/gun/projectile/pistol/kieji = 1,
+		/obj/item/gun/projectile/pistol/kieji/snub = 1,
 		/obj/item/gun/energy/las/laspistol/shitty = 1,
 		/obj/item/gun/projectile/revolver/messina = 1,
 		/obj/item/gun/energy/las/lasgun/shitty = 1,
@@ -497,6 +524,7 @@ Template:
 				/obj/item/gun/energy/pulse/plasma/rifle = 2,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
 				/obj/item/gun/energy/las/hotshot = 3,
+				/obj/item/gun/projectile/automatic/flamer = 1,
 				/obj/item/gun/energy/las/lasgun/accatran = 4,
 				/obj/item/gun/projectile/meltagun = 1,
 				/obj/item/gun/energy/las/lasgun/longlas = 1,
@@ -560,7 +588,7 @@ Template:
 
 /obj/random/loot/randomitemcaves/spawn_choices()
 	return list(/obj/item/shovel = 2,
-				/obj/item/clothing/glasses/night = 1,
+				/obj/item/clothing/glasses/night = 3,
 				/obj/item/pickaxe = 2,
 				/obj/item/storage/firstaid/combat = 1,
 				/obj/item/storage/firstaid/surgery = 1,
@@ -570,7 +598,7 @@ Template:
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/grenade/frag/high_yield/homemade = 5,
 				/obj/item/grenade/frag = 3,
-				/obj/item/grenade/frag/high_yield/krak = 1)
+				/obj/item/grenade/frag/high_yield/krak = 3)
 
 /obj/random/loot/randomitemtown
 	name = "Random Item Pilgrim"

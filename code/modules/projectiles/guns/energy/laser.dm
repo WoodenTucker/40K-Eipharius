@@ -310,7 +310,7 @@
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
-	sales_price = 90
+	sales_price = 65
 /*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
@@ -343,7 +343,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	armor_penetration = 0
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 20
+	sales_price = 10
 	wielded_item_state = "chaosppistol"
 
 /obj/item/gun/energy/las/laspistol/accatran
@@ -387,7 +387,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_meter = FALSE
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 10
+	sales_price = 2
 
 /obj/item/gun/energy/las/laspistol/militarum
 	name = "Kantrael MG Laspistol"
@@ -397,7 +397,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 90
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 35
+	sales_price = 20
 
 	firemodes = list(
 		list(mode_name="semi-automatic",   burst=1, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=110),
@@ -429,7 +429,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 45
+	sales_price = 25
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),

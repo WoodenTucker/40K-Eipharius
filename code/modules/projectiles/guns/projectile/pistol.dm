@@ -44,7 +44,7 @@
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
-
+	sales_price = 5
 	accuracy = -3.5
 
 /obj/item/gun/projectile/pistol/kieji/update_icon()
@@ -62,7 +62,7 @@
 
 	accuracy = -5
 	fire_delay = 2
-	sales_price = 15
+	sales_price = 5
 
 /obj/item/gun/projectile/pistol/kieji/snub/update_icon()
 	..()
@@ -110,7 +110,7 @@
 	fire_delay = 3
 	burst = 2
 	accuracy = 1
-	sales_price = 30
+	sales_price = 25
 
 
 /obj/item/gun/projectile/pistol/villiers/update_icon()

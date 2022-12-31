@@ -47,6 +47,20 @@
 /obj/item/ammo_magazine/mc9mm/empty
 	initial_ammo = 0
 
+/obj/item/ammo_magazine/smgmc9mm
+	name = "SMG magazine (9mm)"
+	icon_state = "9mmSMG"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	matter = list(DEFAULT_WALL_MATERIAL = 600)
+	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c9mm
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/mc9mm/empty
+	initial_ammo = 0
+
 /obj/item/ammo_magazine/box/c9mm
 	name = "ammunition box (9mm)"
 	icon_state = "9mm"
@@ -85,15 +99,15 @@
 
 /obj/item/ammo_magazine/a762
 	name = "magazine (7.62mm)"
-	icon_state = "5.56"
+	icon_state = "auto_grim"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
-	caliber = "a762"
+	caliber = "763"
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
-	ammo_type = /obj/item/ammo_casing/a762
-	max_ammo = 15 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
+	ammo_type = /obj/item/ammo_casing/brifle
+	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
-
+/*
 /obj/item/ammo_magazine/a762/ap
 	name = "AP magazine (7.62mm)"
 	ammo_type = /obj/item/ammo_casing/a762/ap
@@ -101,7 +115,7 @@
 /obj/item/ammo_magazine/a762/ms
 	name = "MS magazine (7.62mm)"
 	ammo_type = /obj/item/ammo_casing/a762/ms
-
+*/
 /obj/item/ammo_magazine/a762/empty
 	initial_ammo = 0
 
@@ -125,7 +139,7 @@
 
 /obj/item/ammo_magazine/c556
 	name = "magazine (5.56mm)"
-	icon_state = "c762"
+	icon_state = "5556"
 	mag_type = MAGAZINE
 	caliber = "a556"
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
@@ -159,13 +173,13 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine
 	name = "Boltpistol Magazine"
-	icon_state = "tinyersatz"
+	icon_state = "boltyp"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/boltpistol
-	max_ammo = 10
+	max_ammo = 7
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/empty
@@ -173,7 +187,7 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine
 	name = "Bolter Magazine"
-	icon_state = "ersatz"
+	icon_state = "bolty"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
