@@ -370,6 +370,8 @@
 		list(mode_name="2-round bursts", burst=2, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
+// stub rifles, mag fed
+
 obj/item/gun/projectile/automatic/agripinaaii
 	name = "Agripinaa Pattern Stub rifle MK II"
 	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 7.62 rounds. "
@@ -401,10 +403,38 @@ obj/item/gun/projectile/automatic/agripinaaii
 	unwielded_unloaded_icon = "agripinaa_e"
 	wielded_unloaded_icon = "agripinaa_e"
 
-	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=14, burst_accuracy=list(-0,-1,-1), dispersion=list(0.1, 0.2, 0.2), automatic = 0),
-		)
+	firemodes = null
+
+obj/item/gun/projectile/automatic/messina
+	name = "Messina Pattern Autogun"
+	desc = "A locally produced pattern, chambered in 5.56 and not the highest quality material, to say the least..."
+	icon_state = "autogun_agrip" // Object Icon
+	item_state = "autorifle" // On-Mob
+	unloaded_icon = "autogun_agrip-e" // Object Icon
+	loaded_icon = "autogun_agrip" // Object Icon
+	caliber = "a556"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	move_delay = 7
+	one_hand_penalty = 15
+	accuracy = -2
+	automatic = 1
+	fire_delay = 3
+	sales_price = 30
+
+	magazine_type = /obj/item/ammo_magazine/c556
+	allowed_magazines = /obj/item/ammo_magazine/c556
+
+	gun_type = GUN_SEMIAUTO
+
+	wielded_item_state = "autorifle-wielded"
+	unwielded_loaded_icon = "autorifle"
+	wielded_loaded_icon = "autorifle-wielded"
+	unwielded_unloaded_icon = "autorifle-e"
+	wielded_unloaded_icon = "autorifle-wielded-e"
+
+	firemodes = null
 
 // Boltgun
 /obj/item/gun/projectile/boltrifle //boltus

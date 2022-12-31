@@ -375,6 +375,8 @@ Template:
 
 /obj/random/loot/lightstubber/spawn_choices()
 	return list(
+				obj/item/gun/projectile/automatic/messina = 2,
+				obj/item/gun/projectile/automatic/agripinaaii = 2,
 				/obj/item/gun/projectile/automatic/smg/boscelot = 3,
 				/obj/item/gun/projectile/automatic/agripinaaii = 2,
 				/obj/item/gun/projectile/shotgun/pump/voxlegis = 1,
@@ -390,10 +392,12 @@ Template:
 	icon_state = "lightstubammo"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
-	return list(/obj/item/ammo_box/shotgun = 7,
+	return list(/obj/item/ammo_box/shotgun = 3,
 				/obj/item/ammo_box/shotgun/slug = 3,
 				/obj/item/ammo_box/shotgun/beanbag = 1,
-				/obj/item/ammo_box/rifle = 5,
+				/obj/item/ammo_box/rifle = 3,
+				/obj/item/ammo_magazine/a762 = 3,
+				/obj/item/ammo_magazine/c556 = 3,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
 /obj/random/loot/sidearmammo
@@ -471,8 +475,11 @@ Template:
 
 /obj/random/loot/heavystubber/spawn_choices()
 	return list(
-		/obj/item/gun/projectile/automatic/heavystubber/cognis = 2,
-		/obj/item/gun/projectile/automatic/heavystubber = 10,
+		/obj/item/gun/projectile/automatic/heavystubber/cognis = 1,
+		/obj/item/gun/projectile/automatic/heavystubber = 7,
+		/obj/item/gun/projectile/automatic/agripinaaii = 2,
+		obj/item/gun/projectile/automatic/messina = 2,
+
 
 
 	)
