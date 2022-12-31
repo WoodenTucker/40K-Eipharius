@@ -361,7 +361,6 @@
 	sharp = 1
 	block_chance = 40 //not the best block chance, but, you can have two of them!
 	sales_price = 80
-	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_SMALL //quick attacks
 	atom_flags = 0
@@ -410,7 +409,6 @@
 	force = 30 //sharp enough to penetrate ceramite and adamantium alike
 	block_chance = 10 //apothecaries are based
 	armor_penetration = 50 //VERY fucking sharp
-	item_flags = ITEM_FLAG_NODROP
 	sharp = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
 	drop_sound = 'sound/items/handle/axe_drop.ogg'
