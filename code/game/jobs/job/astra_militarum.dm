@@ -28,7 +28,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		to_chat(H, "<span class='notice'><b><font size=3>   You are apart of the Imperial Guard Squad stationed onto the planet Eipharius in the employ of the Planetary Governor. Your tasks may vary, to collecting taxes, building trenches or defending the outpost. Ensure the Governorship and Imperial Guard Squad survives. </font></b></span>")
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
+		H.add_stats(rand(15,16), rand(15,16), rand(15,16), rand (8,14))
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -72,7 +72,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,17), rand(13,17), rand(13,17), rand (8,14))
+		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.say(":v [title] reporting for duty!")
