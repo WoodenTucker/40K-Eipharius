@@ -14,7 +14,6 @@
 	icon = 'icons/obj/items/allenwrench.dmi'
 	icon_state = "awrench"
 	item_state = "awrench"
-	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
@@ -60,7 +59,6 @@
 	icon = 'icons/obj/items/incense.dmi'
 	icon_state = "holyoils"
 	item_state = "holyoils"
-	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
@@ -95,7 +93,6 @@
 	icon = 'icons/obj/items/auto_chisel.dmi'
 	icon_state = "auto_chisel"
 	item_state = "auto_chisel"
-	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
@@ -120,7 +117,6 @@
 	icon = 'icons/obj/items/laser_cutter.dmi'
 	icon_state = "laser_cutter"
 	item_state = "laser_cutter"
-	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
@@ -177,7 +173,6 @@
 	desc = "\"This holy tool aids a biologis in bending the neurons to his will. Sometimes.\" - Biologis Malar Viten "
 	icon = 'icons/obj/items/neural.dmi'
 	icon_state = "neural"
-	item_flags = ITEM_FLAG_NODROP
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
