@@ -181,6 +181,11 @@ var/list/_client_preferences_by_type
 	key = "SMOOTH_ZOOM"
 	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
 
+/datum/client_preference/epilepsy
+	description ="Epilepsy Mode"
+	key = "EPILEPSY"
+	options = list(GLOB.PREF_NO, GLOB.PREF_YES)
+
 /********************
 * General Staff Preferences *
 ********************/
