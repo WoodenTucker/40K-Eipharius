@@ -10,13 +10,6 @@
 		var/datum/heretic_deity/tzeentch/N = GOD(GOD_TZEENTCH)
 		N.join_request(target)
 
-/datum/rune_recipe/nurgle/offering
-	name = "Offering Rite"
-	ingredients = list(/mob/living/carbon/human)
-	delete_items = FALSE
-	special 	 = TRUE
-
-
 /datum/rune_recipe/tzeentch/fool
 	name = "Illusion Rite"
 	ingredients = list(/obj/item/organ/internal/eyes/bioprinted, /obj/item/clothing)
