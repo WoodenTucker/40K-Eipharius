@@ -152,6 +152,11 @@
 	screen_loc = "WEST,SOUTH to EAST,NORTH"
 	icon_state = "extreme"
 
+/obj/screen/fullscreen/freakout_noflash
+	icon = 'icons/mob/screen1.dmi'
+	screen_loc = "WEST,SOUTH to EAST,NORTH"
+	icon_state = "extreme_noflash"
+
 /obj/screen/fullscreen/damagenoise
 	icon = 'icons/mob/damagenoise.dmi'
 	icon_state = "noise"
