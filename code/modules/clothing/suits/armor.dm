@@ -636,6 +636,12 @@ obj/item/clothing/suit/armor
 	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. This one is worn by Catachan Combat Medicae." // Why are you gei?
 	icon_state = "mCatachan_Vest"
 
+/obj/item/clothing/suit/armor/catachan/flamerspecialist
+	name = "Catachan Flak Vest"
+	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels." // uh... yes, I know how it sounds
+
+
+
 /obj/item/clothing/suit/armor/valhallanarmor
 	name = "Valhallan Overcoat"
 	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions."
