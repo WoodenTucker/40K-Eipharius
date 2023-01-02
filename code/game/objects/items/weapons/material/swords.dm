@@ -654,7 +654,7 @@
 
 //knife for astartes/ogryn
 /obj/item/material/sword/combat_knife/catachan/giant
-	name = "Giant Knife"
+	name = "Bull Butcher Mk III Cleaver"
 	desc = "This knife is really big, its so big that its probably meant for a ogryn."
 	force = 30
 	force_wielded = 35
