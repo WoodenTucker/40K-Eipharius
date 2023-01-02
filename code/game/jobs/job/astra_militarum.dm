@@ -770,7 +770,7 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/sharpshooter/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/catachan
+	suit = /obj/item/clothing/suit/armor/catachan/flamerspecialist
 	head = /obj/item/clothing/head/catachan
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/extinguisher
