@@ -299,9 +299,9 @@ Pilgrim Fate System
 			U.add_stats(rand(14,15), rand(15,16), rand(16,18), rand (18,22)) // really good in surgery and high endurance
 			U.add_skills(rand(6,8),rand(1,6),rand(8,10),rand(1,2),rand(8,10)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/toggle/labcoat/coat, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/head/plaguedoctorhat/medicae, slot_head) 
 			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
