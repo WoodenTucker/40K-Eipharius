@@ -106,6 +106,9 @@ var/list/admin_verbs_admin = list(
 	/client/proc/choose_party,
 	/client/proc/delay_party,
 	/client/proc/partySize,
+	/client/proc/vice_edit,
+	/client/proc/vicetype_edit,
+	/client/proc/happiness_edit,
 
 )
 var/list/admin_verbs_ban = list(
@@ -936,6 +939,51 @@ var/list/admin_verbs_mentor = list(
 		sound_to(T, 'sound/voice/ManUp1.ogg')
 
 	log_and_message_admins("told everyone to man up and deal with it.")
+
+/client/proc/vice_edit()
+	set category = "Fun"
+	set name = "Vice - Set Need"
+	set desc = "Edits the vice need of a player."
+
+	if(!check_rights(R_FUN))	return
+
+	var/mob/living/carbon/human/M = input("Select mob.", "Set Vice Need") as null|anything in GLOB.human_mob_list
+
+	var/new_viceneed = input("Please set vice need level from 0-1000. Current level: [M.viceneed].", "Set Vice Need")  as text
+	if (new_viceneed)
+		M.viceneed = max(min(round(text2num(new_viceneed)), 1000), 0)
+
+	log_and_message_admins("set [key_name(M)] vice level to [M.viceneed].")
+
+/client/proc/vicetype_edit()
+	set category = "Fun"
+	set name = "Vice - Set Type"
+	set desc = "Edits the vice type of a player."
+
+	if(!check_rights(R_FUN))	return
+
+	var/mob/living/carbon/human/M = input("Select mob.", "Set Vice Type") as null|anything in GLOB.human_mob_list
+
+	var/new_vicetype = input(usr, "Select a vice type. Current type: [M.vice]. Don't choose random.", "Set Vice Type")  as null|anything in GLOB.vice_list //random doesn't seem to play well with changing a vice that's already set, and does nothing. Oh well.
+	if(new_vicetype)
+		M.vice = new_vicetype
+
+	log_and_message_admins("set [key_name(M)] vice type to [M.vice].")
+
+/client/proc/happiness_edit()
+	set category = "Fun"
+	set name = "Happiness - Set Level"
+	set desc = "Edits the happiness level of a player."
+
+	if(!check_rights(R_FUN))	return
+
+	var/mob/living/carbon/human/M = input("Select mob.", "Set Happiness Level") as null|anything in GLOB.human_mob_list
+
+	var/new_happiness = input("Please set happiness level from -21-20. Current level: [M.happiness]. -21 activates freakout.", "Set Happiness Level")  as text
+	if (new_happiness)
+		M.happiness = max(min(round(text2num(new_happiness)), 20), -21)
+
+	log_and_message_admins("set [key_name(M)] happiness level to [M.happiness].")
 
 /client/proc/give_spell(mob/T as mob in SSmobs.mob_list) // -- Urist
 	set category = "Fun"

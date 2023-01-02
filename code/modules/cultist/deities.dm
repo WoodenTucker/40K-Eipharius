@@ -52,7 +52,8 @@
 						/datum/rune_recipe/nurgle/mask,
 						/datum/rune_recipe/nurgle/nade,
 						/datum/rune_recipe/nurgle/blight,
-						/datum/rune_recipe/nurgle/nurgling)
+						/datum/rune_recipe/nurgle/nurgling,
+						/datum/rune_recipe/nurgle/offering)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
 			/mob/living/carbon/human/proc/draw_rune,
@@ -84,8 +85,13 @@
 	rune_type = /obj/effect/cleanable/heretic_rune/tzeentch
 	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
+						/datum/rune_recipe/tzeentch/fool,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,
+						/datum/rune_recipe/tzeentch/skinless,
+						/datum/rune_recipe/tzeentch/transmutation,
+						/datum/rune_recipe/tzeentch/goldcoin,
+						/datum/rune_recipe/tzeentch/coppercoin,
 						/datum/rune_recipe/tzeentch/lens)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/tzeewehere,

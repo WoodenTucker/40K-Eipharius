@@ -40,17 +40,23 @@
 	ingredients = list(/obj/item/clothing/mask/gas)
 	product_path = /obj/item/clothing/head/helmet/culthelm/gas
 
-	/datum/rune_recipe/nurgle/nade
+/datum/rune_recipe/nurgle/nade
 	name = "Nade Rite"
 	ingredients = list(/obj/item/reagent_containers/food/snacks/meat, /obj/item/reagent_containers/food/snacks/egg,)
 	product_path = /obj/item/grenade/spawnergrenade/bugs
 
-	/datum/rune_recipe/nurgle/blight
+/datum/rune_recipe/nurgle/blight
 	name = "Blightnade Rite"
 	ingredients = list(/obj/item/organ/external/head, /obj/item/grenade/frag/high_yield/homemade)
 	product_path = /obj/item/grenade/chem_grenade/blightnade
 
-	/datum/rune_recipe/nurgle/nurgling
+/datum/rune_recipe/nurgle/nurgling
 	name = "Nurgling Rite"
 	ingredients = list(/obj/item/organ/internal/liver)
 	product_path = /mob/living/simple_animal/hostile/nurgling
+
+/datum/rune_recipe/nurgle/offering
+	name = "Offering Rite"
+	ingredients = list(/mob/living/carbon/human)
+	delete_items = FALSE
+	special 	 = TRUE
