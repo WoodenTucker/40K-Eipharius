@@ -259,9 +259,9 @@ proc/skillnumtodesc(var/skill)
 		if(5)
 			return "good enough" //above this is stuff that is acceptably smart
 		if(6)
-			return "adept" // above this is actually competent people
+			return "trained" // above this is actually competent people
 		if(7)
-			return "versed"
+			return "adept"
 		if(8)
 			return FONT_LARGE("an expert")
 		if(9)
