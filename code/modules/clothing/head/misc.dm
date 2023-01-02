@@ -65,6 +65,12 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	body_parts_covered = 0
+	
+
+/obj/item/clothing/head/plaguedoctorhat/medicae
+	name = "Medicae's hat"
+	desc = "These were once used by terran doctors a long time ago when some kind of plague appeared."
+
 
 /obj/item/clothing/head/hasturhood
 	name = "hastur's hood"
