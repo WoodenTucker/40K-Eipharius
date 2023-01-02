@@ -151,7 +151,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a Sergeant in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with. You lost your shoes on the way here, though...</font></b></span>")
+			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a guardsman in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
