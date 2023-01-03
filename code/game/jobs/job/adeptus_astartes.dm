@@ -139,7 +139,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/bloodangel
 	belt = /obj/item/melee/chain/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/bloodangel
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -169,7 +169,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/bloodangel
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/apothecary
-	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -193,7 +193,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/bloodangel
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/astartes/boots/bloodangel
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/bloodangel
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_pocket = /obj/item/storage/box/ifak
@@ -216,7 +216,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/chain/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
 	head = /obj/item/clothing/head/helmet/astartes/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -239,7 +239,7 @@
 	back = /obj/item/storage/backpack/satchel/astartes/ravenguard
 	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -262,7 +262,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ravenguard
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/apothecary
-	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
 	head = /obj/item/clothing/head/helmet/astartes/apothecary/ravenguard
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -286,7 +286,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ravenguard
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/astartes/boots/raven
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/raven
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -309,7 +309,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/chain/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/sallys
 	head = /obj/item/clothing/head/helmet/astartes/salamander
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -331,7 +331,7 @@
 	back = /obj/item/storage/backpack/satchel/astartes/salamander
 	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/sallys
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/salamander
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -355,7 +355,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/salamander
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/apothecary
-	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/sallys
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -379,7 +379,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/salamander
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/astartes/boots/sallys
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/sallys
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -402,7 +402,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/chain/pcsword
-	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/ultramarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -426,7 +426,7 @@
 	back = /obj/item/storage/backpack/satchel/astartes/ultramarine
 	belt = /obj/item/melee/energy/powersword/astartes/ingelldina
 	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/sergeant/ultramarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -450,7 +450,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/apothecary/ultramarine
 	back = /obj/item/storage/backpack/satchel/astartes/apothecary
 	belt = /obj/item/storage/belt/medical/apothecary
-	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/apothecary
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec
@@ -474,7 +474,7 @@
 	suit = /obj/item/clothing/suit/armor/astartes/techmarine/ultramarine
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos/techpack
 	belt = /obj/item/storage/belt/utility/full
-	shoes = /obj/item/clothing/shoes/astartes/boots/smurfs
+	shoes = /obj/item/clothing/shoes/jackboots/astartes/smurfs
 	head = /obj/item/clothing/head/helmet/astartes/techmarine
 	mask = null
 	l_ear = /obj/item/device/radio/headset/headset_sec

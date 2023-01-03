@@ -60,11 +60,12 @@
 
 /obj/item/clothing/head/plaguedoctorhat
 	name = "plague doctor's hat"
-	desc = "These were once used by Plague doctors. They're pretty much useless."
+	desc = "These were once used by terran doctors a long time ago when some kind of plague appeared."
 	icon_state = "plaguedoctor"
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	body_parts_covered = 0
+
 
 /obj/item/clothing/head/hasturhood
 	name = "hastur's hood"
