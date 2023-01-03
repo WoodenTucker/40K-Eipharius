@@ -109,6 +109,7 @@ var/list/admin_verbs_admin = list(
 	/client/proc/vice_edit,
 	/client/proc/vicetype_edit,
 	/client/proc/happiness_edit,
+	/client/proc/chaos_edit,
 
 )
 var/list/admin_verbs_ban = list(
@@ -333,6 +334,72 @@ var/list/admin_verbs_mentor = list(
 //	/client/proc/dsay,
 	/client/proc/cmd_admin_subtle_message
 )
+
+var/inherent_verbs_debug = list(                          //every possible verb a chaos cultist could have, so deconvert will blanket remove them all.
+			/mob/living/carbon/human/proc/bludforbludguy,
+			/mob/living/carbon/human/proc/letriverflow,
+			/mob/living/carbon/human/proc/moving,
+			/mob/living/carbon/human/proc/overthere,
+			/mob/living/carbon/human/proc/praynslay,
+			/mob/living/carbon/human/proc/chaaaaaarge,
+			/mob/living/carbon/human/proc/chopdem,
+			/mob/living/carbon/human/proc/bringdeath,
+			/mob/living/carbon/human/proc/advance,
+			/mob/living/carbon/human/proc/aaaaaa,
+			/mob/living/carbon/human/proc/getmanualkhorne,
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/lordofflies,
+			/mob/living/carbon/human/proc/getmanualnurgle,
+			/mob/living/carbon/human/proc/tzeewehere,
+			/mob/living/carbon/human/proc/tzeeforthechanger,
+			/mob/living/carbon/human/proc/tzeebeconsumed,
+			/mob/living/carbon/human/proc/tzeeweshallsacrifise,
+			/mob/living/carbon/human/proc/tzeetheyseetruth,
+			/mob/living/carbon/human/proc/tzeepeerminds,
+			/mob/living/carbon/human/proc/tzeecharge,
+			/mob/living/carbon/human/proc/tzeechangecome,
+			/mob/living/carbon/human/proc/tzeebehold,
+			/mob/living/carbon/human/proc/tzeebelongtous,
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualtzeentch,
+			/mob/living/carbon/human/proc/getmanualslaanesh)
+
+var/inherent_verbs_khorne = list(
+			/mob/living/carbon/human/proc/bludforbludguy,
+			/mob/living/carbon/human/proc/letriverflow,
+			/mob/living/carbon/human/proc/moving,
+			/mob/living/carbon/human/proc/overthere,
+			/mob/living/carbon/human/proc/praynslay,
+			/mob/living/carbon/human/proc/chaaaaaarge,
+			/mob/living/carbon/human/proc/chopdem,
+			/mob/living/carbon/human/proc/bringdeath,
+			/mob/living/carbon/human/proc/advance,
+			/mob/living/carbon/human/proc/aaaaaa,
+			/mob/living/carbon/human/proc/getmanualkhorne,
+			/mob/living/carbon/human/proc/draw_rune)
+
+var/inherent_verbs_nurgle = list(
+			/mob/living/carbon/human/proc/lordofflies,
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualnurgle)
+
+var/inherent_verbs_slaanesh = list(
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualslaanesh)
+
+var/inherent_verbs_tzeentch = list(
+			/mob/living/carbon/human/proc/tzeewehere,
+			/mob/living/carbon/human/proc/tzeeforthechanger,
+			/mob/living/carbon/human/proc/tzeebeconsumed,
+			/mob/living/carbon/human/proc/tzeeweshallsacrifise,
+			/mob/living/carbon/human/proc/tzeetheyseetruth,
+			/mob/living/carbon/human/proc/tzeepeerminds,
+			/mob/living/carbon/human/proc/tzeecharge,
+			/mob/living/carbon/human/proc/tzeechangecome,
+			/mob/living/carbon/human/proc/tzeebehold,
+			/mob/living/carbon/human/proc/tzeebelongtous,
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualtzeentch)
 
 /client/proc/add_admin_verbs()
 	if(holder)
@@ -942,7 +1009,7 @@ var/list/admin_verbs_mentor = list(
 
 /client/proc/vice_edit()
 	set category = "Fun"
-	set name = "Vice - Set Need"
+	set name = "Vice - Set Level"
 	set desc = "Edits the vice need of a player."
 
 	if(!check_rights(R_FUN))	return
@@ -984,6 +1051,76 @@ var/list/admin_verbs_mentor = list(
 		M.happiness = max(min(round(text2num(new_happiness)), 20), -21)
 
 	log_and_message_admins("set [key_name(M)] happiness level to [M.happiness].")
+
+/client/proc/chaos_edit()
+	set category = "Fun"
+	set name = "Chaos - Set Alignment"
+	set desc = "Edits the chaos alignment of a player."
+
+	if(!check_rights(R_FUN))	return
+
+	var/mob/living/carbon/human/M = input("Select mob.", "Set Chaos Alignment") as null|anything in GLOB.human_mob_list
+
+	var/join_message = "<span class = 'badmood'> * You have successfully started as a Chaos Cultist. Rebel with your fellow cultists in a civil war! * </span> "
+
+	var/new_god = input("Set a Chaos God to worship. If you are switching from another God, it's best to deconvert first.", "Set Chaos Alignment") in list("Khorne", "Nurgle", "Slaanesh", "Tzeentch", "Chaos Undivided - All Powers!", "None (Deconvert)")
+	if(new_god == "Khorne")
+		M.AddComponent(/datum/component/cultist, M.name)
+		to_chat(M, join_message)
+		M.verbs -= inherent_verbs_debug
+		M.verbs += inherent_verbs_khorne
+		M.AddInfectionImages()
+		M.faction = "Chaos"
+		M.mind.special_role = "Khorne Cultist"
+		SSgods.cultist_count += 1
+		log_and_message_admins("converted [key_name(M)] to Khorne. ")
+	else if(new_god == "Nurgle")
+		M.AddComponent(/datum/component/cultist, M.name)
+		to_chat(M, join_message)
+		M.verbs -= inherent_verbs_debug
+		M.verbs += inherent_verbs_nurgle
+		M.AddInfectionImages()
+		M.faction = "Chaos"
+		M.mind.special_role = "Nurgle Cultist"
+		SSgods.cultist_count += 1
+		log_and_message_admins("converted [key_name(M)] to Nurgle. ")
+	else if(new_god == "Slaanesh")
+		M.AddComponent(/datum/component/cultist, M.name)
+		to_chat(M, join_message)
+		M.verbs -= inherent_verbs_debug
+		M.verbs += inherent_verbs_slaanesh
+		M.AddInfectionImages()
+		M.faction = "Chaos"
+		M.mind.special_role = "Slaanesh Cultist"
+		SSgods.cultist_count += 1
+		log_and_message_admins("converted [key_name(M)] to Slaanesh. ")
+	else if(new_god == "Tzeentch")
+		M.AddComponent(/datum/component/cultist, M.name)
+		to_chat(M, join_message)
+		M.verbs -= inherent_verbs_debug
+		M.verbs += inherent_verbs_tzeentch
+		M.AddInfectionImages()
+		M.faction = "Chaos"
+		M.mind.special_role = "Tzeentch Cultist"
+		SSgods.cultist_count += 1
+		log_and_message_admins("converted [key_name(M)] to Tzeentch. ")
+	else if(new_god == "Chaos Undivided - All Powers!")
+		M.AddComponent(/datum/component/cultist, M.name)
+		to_chat(M, join_message)
+		M.verbs += inherent_verbs_debug
+		M.AddInfectionImages()
+		M.faction = "Chaos"
+		M.mind.special_role = "Chaos Cultist"
+		SSgods.cultist_count += 1
+		log_and_message_admins("converted [key_name(M)] to Chaos Undivided. ")
+	else if(new_god == "None (Deconvert)")
+		qdel(M.GetComponent(/datum/component/cultist))
+		M.verbs -= inherent_verbs_debug                   //these are stored near the top of this .dm
+		M.client.images.Cut()
+		M.mind.special_role = ""
+		SSgods.cultist_count -= 1
+		log_and_message_admins("deconverted [key_name(M)]. Chaos lurks no more in this one.")
+
 
 /client/proc/give_spell(mob/T as mob in SSmobs.mob_list) // -- Urist
 	set category = "Fun"
