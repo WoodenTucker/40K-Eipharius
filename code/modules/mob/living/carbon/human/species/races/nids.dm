@@ -268,7 +268,7 @@
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
 	src.AddInfectionImages()
-	src.add_stats(rand(10,15),rand(17,18),rand(13,13),18) //gives stats str, end, int, dex
+	src.add_stats(rand(10,15),rand(17,18),rand(13,13),18)
 	src.add_skills(rand(10,15),rand(7,7),rand(1,4),rand(1,4),rand(1,4)) //skills such as melee, ranged, med, eng and surg)
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
