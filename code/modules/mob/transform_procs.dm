@@ -303,7 +303,7 @@
 		organ.min_broken_damage *= 5
 	verbs += /mob/living/proc/breath_death
 	verbs += /mob/living/proc/zombie_eat
-	verbs += /mob/living/proc/claws
+/*	verbs += /mob/living/proc/claws */
 	src.species.species_flags += SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SLIP
 	src.species.slowdown += 1.5
 
