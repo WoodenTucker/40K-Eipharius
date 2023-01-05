@@ -78,7 +78,7 @@
 	suit = /obj/item/clothing/suit/storage/hooded/genetor
 	mask = /obj/item/clothing/mask/gas/techpriest
 	r_pocket = /obj/item/device/flashlight/pen
-	id_type = /obj/item/card/id/medical/biologis
+	id_type = /obj/item/card/id/engineering/head
 	pda_type = /obj/item/device/pda/geneticist
 	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen
