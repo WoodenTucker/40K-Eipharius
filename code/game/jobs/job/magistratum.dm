@@ -93,7 +93,7 @@
 /datum/job/arbitrator
 	title = "Arbitrator"
 	head_position = 1
-	supervisors = "The Law and the Interrogator"
+	supervisors = "The Law, Inquisitor and Interrogator"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
