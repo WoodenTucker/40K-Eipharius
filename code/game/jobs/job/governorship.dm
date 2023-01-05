@@ -14,13 +14,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	supervisors = "The Golden Throne and the High Lords of Terra."
 	selection_color = "#540c97"
 	req_admin_notify = 1
-	access = list(20) 			//See get_access()
-	minimal_access = list(20) 	//See get_acce ss()
+	access = list(20,331) 			//See get_access()
+	minimal_access = list(20,331) 	//See get_acce ss()
 	minimal_player_age = 65
 	economic_modifier = 20
 	announced = TRUE
 	latejoin_at_spawnpoints = TRUE
-
 	ideal_character_age = 120
 	outfit_type = /decl/hierarchy/outfit/job/governor
 	auto_rifle_skill = 7
@@ -29,7 +28,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 75 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
+	cultist_chance = 100 // we want funny inq vs nonsense
 
 
 	equip(var/mob/living/carbon/human/H)
