@@ -305,7 +305,8 @@
 	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
 	attack_verb = list("violated", "penetrated", "infested")
 	armor_penetration = 90 //Genestealer magic.
-
+no
 /obj/item/melee/baton/nidstun/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
+
