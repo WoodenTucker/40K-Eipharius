@@ -248,22 +248,28 @@
 //helpers
 proc/skillnumtodesc(var/skill)
 	switch(skill)
-		if(1 to 3)
-			return "<small>beginner</small>"
-		if(4 to 5)
-			return "<small>novice</small>"
-		if(6 to 7)
-			return "professional"
-		if(8)
+		if(1)
+			return "<small>completely worthless</small>" //no knowledge at all, leave this for children or REALLY fucking incompetent people
+		if(2)
+			return "<small>incompetent</small>" //really bad at it, children or incompetent people
+		if(3)
+			return "<small>a novice</small>" //children or dumb people
+		if(4)
+			return "<small>unskilled</small>" //dumb people
+		if(5)
+			return "good enough" //above this is stuff that is acceptably smart
+		if(6)
+			return "trained" // above this is actually competent people
+		if(7)
 			return "adept"
-		if(9 to 11)
-			return "expert" // 9-11 is guard maximal level. Everything beyond is mostly Astartes, heavily augmented humans, xenos and event character. 
-		if(12 to 15)
-			return FONT_LARGE("master") // Everything beyond 13 is event only character. Such as astartes captain, ork warboss, eldar farseer etc.
-		if(16 to 20)
-			return FONT_LARGE("legendary") // 20 is Primarch level
-	if(skill > 20)
-		return "god?!"
+		if(8)
+			return FONT_LARGE("an expert")
+		if(9)
+			return FONT_LARGE("a master")
+		if(10)
+			return FONT_LARGE("legendary") //maximum human level, Everything beyond is special in some way. 
+	if(skill > 10)
+		return "inhuman"
 
 proc/backwards_skill_scale(var/skill)
 	if(0)

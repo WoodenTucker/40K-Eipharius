@@ -125,6 +125,3 @@
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
-
-// KRIEG MELEE
-

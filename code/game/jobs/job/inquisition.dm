@@ -8,7 +8,7 @@
 	spawn_positions = 1
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
-	supervisors = "The Golden Throne, the Inquisition and Your Lord Inquisitor"
+	supervisors = "The Golden Throne, and Your Lord Inquisitor"
 	selection_color = "#b4821c"
 	economic_modifier = 7
 	minimal_player_age = 18
@@ -20,7 +20,7 @@
 	shotgun_skill = 9
 	lmg_skill = 9
 	smg_skill = 9
-	cultist_chance = 30
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -47,28 +47,27 @@
 // Inquisitor
 
 /datum/job/inquisitor
-	title = "Imperial Inquisitor"
+	title = "Inquisitor"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 0
+	total_positions = 1
 	spawn_positions = 1
 	head_position = 1
-	supervisors = "The Golden Throne, the Inquisition, Lord Inquisitor Rorkan and the masters of the Ordos Helican."
-	selection_color = "#c9952f"
+	supervisors = "The Golden Throne and the Inquisition"
+	selection_color = "#b4821c"
 	req_admin_notify = 1
 	latejoin_at_spawnpoints = TRUE
 	economic_modifier = 7
 	minimal_player_age = 21
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
-	announced = TRUE
 	auto_rifle_skill = 10
 	semi_rifle_skill = 10
 	sniper_skill = 10
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 30
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

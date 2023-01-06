@@ -2,7 +2,7 @@
 
 /datum/job/ig
 	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
-	supervisors = "The Planetary Governor and your Sergeant."
+	supervisors = "The Planetary Governor, Commissar and your Sergeant."
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
@@ -28,7 +28,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		to_chat(H, "<span class='notice'><b><font size=3>   You are apart of the Imperial Guard Squad stationed onto the planet Eipharius in the employ of the Planetary Governor. Your tasks may vary, to collecting taxes, building trenches or defending the outpost. Ensure the Governorship and Imperial Guard Squad survives. </font></b></span>")
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
+		H.add_stats(rand(15,16), rand(15,16), rand(15,16), rand (8,14))
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -72,7 +72,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,17), rand(13,17), rand(13,17), rand (8,14))
+		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.say(":v [title] reporting for duty!")
@@ -370,6 +370,7 @@ datum/job/ig/bullgryn
 	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#23742a"
+	department_flag = SEC|COM
 	cultist_chance = 10
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
@@ -379,7 +380,6 @@ datum/job/ig/bullgryn
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
-	department_flag = SEC|COM
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
@@ -503,22 +503,20 @@ datum/job/ig/bullgryn
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	total_positions = 0
-	spawn_positions = 0
-	head_position = 0
-	selection_color = "#004e07"
+	total_positions = 1
+	spawn_positions = 1
+	head_position = 1
+	selection_color = "#23742a"
+	department_flag = SEC|COM
 	req_admin_notify = TRUE
-	social_class = SOCIAL_CLASS_HIGH
+	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
-	/*alt_titles = list(
-		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/lieutenant
-	)
-	*/
 	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
 	can_be_in_squad = FALSE
+	economic_modifier = 9
 	auto_rifle_skill = 9 //commissars are more trained than almost any guardsman
 	semi_rifle_skill = 9
 	sniper_skill = 9
@@ -526,9 +524,10 @@ datum/job/ig/bullgryn
 	lmg_skill = 9
 	smg_skill = 9
 	open_when_dead = FALSE
-	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
 	cultist_chance = 1 // 0 fucks stuff allegedly
+	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
 	announced = FALSE
 
@@ -543,18 +542,8 @@ datum/job/ig/bullgryn
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
-		H.get_idcard()?.access = get_all_accesses()
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
-		H.verbs -= list(
-		/mob/living/carbon/human/proc/igattack,
-		/mob/living/carbon/human/proc/igcanthold,
-		/mob/living/carbon/human/proc/igcharge,
-		/mob/living/carbon/human/proc/igholdline,
-		/mob/living/carbon/human/proc/iginhisname,
-		/mob/living/carbon/human/proc/igregroup,
-		/mob/living/carbon/human/proc/igretreat,
-		/mob/living/carbon/human/proc/igrunforlifes,
-		/mob/living/carbon/human/proc/igyessir)
 		H.verbs += list(
 		/mob/living/carbon/human/proc/comsaimtrue,
 		/mob/living/carbon/human/proc/comsfaceus,
@@ -577,10 +566,7 @@ datum/job/ig/bullgryn
 		/mob/living/carbon/human/proc/comsexecute,
 		/mob/living/carbon/human/proc/comsyouwereweak)
 
-		var/obj/O = H.get_equipped_item(slot_s_store)
-		if(O)
-			qdel(O)
-
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Commissar. Absolutely do not kill people for minor infractions. You only have your *one* guard squad. Lead them, ensure they are properly trained. You are in the employ of the Governor's family, but if treasonous, your loyalties to Terra are higher.</font></b></span>")
 
 /datum/job/ig/commissar/imperial
 	total_positions = 1
@@ -770,7 +756,7 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/sharpshooter/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/catachan
+	suit = /obj/item/clothing/suit/armor/catachan/flamerspecialist
 	head = /obj/item/clothing/head/catachan
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/extinguisher

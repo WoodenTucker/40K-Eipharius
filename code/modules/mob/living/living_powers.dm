@@ -16,24 +16,15 @@
 		to_chat(src, "<span class='notice'>You have stopped hiding.</span>")
 	reset_layer()
 
-/mob/living/proc/claws()
-	set name = "Zombie Talons"
-	set category = "Abilities"
-	set desc = "Gives their stun talon"
-
-	put_in_hands(new /obj/item/melee/baton/nidstun)
-	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-	return
-
 /mob/living/proc/breath_death()
 	set name = "Breath Death"
 	set desc = "Infect others with your very breathe."
-	set category = "Abilities"
+	set category = "Plague Zombie"
 
 	if(last_special > world.time)
 		return
 
-	last_special = world.time + 7 SECOND
+	last_special = world.time + 40 SECONDS
 
 	var/turf/T = get_turf(src)
 	var/obj/effect/effect/water/chempuff/chem = new(T)
@@ -45,7 +36,7 @@
 /mob/living/proc/zombie_eat()
 	set name = "Consume Corpse"
 	set desc = "Regain life by consuming it from others."
-	set category = "Abilities"
+	set category = "Plague Zombie"
 
 
 	var/obj/item/grab/G = src.get_active_hand()

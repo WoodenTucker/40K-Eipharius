@@ -134,6 +134,35 @@
 	sales_price = 200
 	weapon_speed_delay = 7
 
+/obj/item/material/sword/zombie_claw
+	name = "Zombie Claw"
+	desc = "The fingernails are gone and the bone is protruding from the tip of the finger, a sickly bile coats the hand."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "zombo_clawl"
+	item_state = "fuckingnothing"
+	item_flags = ITEM_FLAG_NODROP
+	attack_verb = list("slashed")
+	force = 21
+	force_wielded = 24
+	armor_penetration = 15
+	block_chance = 20
+	sales_price = 39
+	weapon_speed_delay = 5
+
+/obj/item/material/sword/zombie_clawl/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
+/obj/item/material/sword/zombie_claw/zombie_clawr
+	name = "Zombie Clawr"
+	desc = "The fingernails are gone and the bone is protruding from the tip of the finger, a sickly bile coats the hand."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "zombo_clawr"
+
+/obj/item/material/sword/zombie_claw/zombie_clawr/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
 
 //Cornite
 /obj/item/melee/chain/pcsword/khorneaxe

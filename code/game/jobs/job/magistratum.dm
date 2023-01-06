@@ -93,7 +93,7 @@
 /datum/job/arbitrator
 	title = "Arbitrator"
 	head_position = 1
-	supervisors = "The Law and the Interrogator"
+	supervisors = "The Law, Inquisitor and Interrogator"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -121,7 +121,7 @@
 		..()
 		H.fully_replace_character_name("Arbitrator [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(16,19), rand(13,17), rand(15,19), rand(12,16)) //meant to be a brute keeping the plebs in line
+		H.add_stats(rand(18,20), rand(18,20), rand(15,19), rand(15,16)) //intelligence only buffs surgery shit, don't buff it
 		H.add_skills(rand(10,11),rand(8,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 //		H.witchblood() //Psyker Enforcers don't exist

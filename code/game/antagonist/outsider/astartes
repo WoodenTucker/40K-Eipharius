@@ -119,7 +119,7 @@ var/datum/antagonist/ert/astartes
 
 	player.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/astartes/ultramarine(src), slot_wear_suit)
 	player.equip_to_slot_or_del(new /obj/item/clothing/under/astartes/bodysuit(src), slot_w_uniform)
-	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/astartes/boots/smurfs(src), slot_shoes)
+	player.equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/astartes/smurfs(src), slot_shoes)
 	player.equip_to_slot_or_del(new /obj/item/clothing/gloves/thick/swat(src), slot_gloves)
 	player.equip_to_slot_or_del(new /obj/item/clothing/glasses/cadian(src), slot_glasses)
 	player.equip_to_slot_or_del(new /obj/item/device/radio/headset/heads/hos(src), slot_l_ear)
