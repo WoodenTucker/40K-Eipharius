@@ -591,6 +591,23 @@
 	swing_sound = "blunt_swing"
 	armor_penetration = 8
 
+/obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
+	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
+		usr.visible_message("\The [usr] cuts \the [C]'s restraints with \the [src]!",\
+		"You cut \the [C]'s restraints with \the [src]!",\
+		"You hear cable being cut.")
+		C.handcuffed = null
+		if(C.buckled && C.buckled.buckle_require_restraints)
+			C.buckled.unbuckle_mob()
+		C.update_inv_handcuffed()
+		return
+
+	if(user.a_intent == I_HELP)
+		remove_shrapnel(C, user)
+	else
+		..()
+		
+
 /obj/item/material/sword/combat_knife/rare
 	name = "trench knife"
 	desc = "For self defense, and self offense."
@@ -631,28 +648,20 @@
 	force_wielded = 28
 	armor_penetration = 25 //Really more of a sword.
 	block_chance = 38
+	str_requirement = 12 //i don't want to hear it, anyone below 12 str is supposed to be a child or a old man.
 	weapon_speed_delay = 5
 
 
-/obj/item/material/sword/combat_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
-	if(user.a_intent == I_HELP && (C.handcuffed) && (istype(C.handcuffed, /obj/item/handcuffs/cable)))
-		usr.visible_message("\The [usr] cuts \the [C]'s restraints with \the [src]!",\
-		"You cut \the [C]'s restraints with \the [src]!",\
-		"You hear cable being cut.")
-		C.handcuffed = null
-		if(C.buckled && C.buckled.buckle_require_restraints)
-			C.buckled.unbuckle_mob()
-		C.update_inv_handcuffed()
-		return
-
-	if(user.a_intent == I_HELP)
-		remove_shrapnel(C, user)
-	else
-		..()
-
-
-
-
+//knife for astartes/ogryn
+/obj/item/material/sword/combat_knife/catachan/giant
+	name = "Bull Butcher Mk III Cleaver"
+	desc = "This knife is really big, its so big that its probably meant for a ogryn."
+	force = 30
+	force_wielded = 35
+	edge = 1
+	str_requirement = 18 //you really shouldn't be using it if you are below 18
+	
+	
 /obj/item/material/scythe
 	name = "scythe"
 	icon = 'icons/obj/weapons/melee/misc.dmi'

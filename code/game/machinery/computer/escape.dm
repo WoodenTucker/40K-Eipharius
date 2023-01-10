@@ -36,7 +36,7 @@
 
 /obj/machinery/computer/evaccogitator/attack_hand(mob/user as mob)	//Starting menu
 	if(locked == 1)
-		visible_message("The console is locked, present your Golden Writ!")
+		visible_message("The console is locked, present your Governor ID!")
 		return
 	user.set_machine(src)
 	var/dat = "<B>Slipstream Escape:</B><BR>"

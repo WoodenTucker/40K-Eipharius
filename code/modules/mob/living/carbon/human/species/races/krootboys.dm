@@ -70,7 +70,7 @@
 		return
 
 	visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
-	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+	src.add_stats(rand(14,16),rand(14,18),rand(12,15),10)
 	src.add_skills(10,10,rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
