@@ -29,11 +29,11 @@
 
 	if(usr.incapacitated())
 		return 0
-	
+
 	if(anchored)
 		usr << "It is fastened to the floor therefore you can't rotate it!"
 		return 0
-	
+
 	set_dir(turn(dir, -90))
 	update_icon()
 	return
@@ -58,7 +58,7 @@
 
 /obj/structure/statue/aquilla
 	name = "aquila altar"
-	desc = "A glorious Nuln wood altar displaying a golden Aquila"
+	desc = "A glorious Nuln wood altar displaying a golden Aquila."
 	icon = 'icons/obj/structures/aquilla.dmi'
 	icon_state = "aquilla"
 	anchored = 1
@@ -102,7 +102,7 @@
 
 /obj/structure/statue/prayer
 	name = "prayer statue"
-	desc = "A strange prayer statue"
+	desc = "A strange prayer statue."
 	icon = 'icons/obj/structures/prayer.dmi'
 	icon_state = "prophet_prayer"
 	anchored = 1
@@ -113,7 +113,7 @@
 
 /obj/structure/statue/fountain
 	name = "fountain"
-	desc = "A glorious stone fountain"
+	desc = "A glorious stone fountain."
 	icon = 'icons/obj/structures/fountain.dmi'
 	icon_state = "dark_fountain"
 	anchored = 1
@@ -124,7 +124,7 @@
 
 /obj/structure/statue/fountainwater
 	name = "fountain water"
-	desc = "A glorious stone fountain"
+	desc = "A glorious stone fountain."
 	icon = 'icons/obj/structures/fountain.dmi'
 	icon_state = "water"
 	anchored = 1
@@ -135,25 +135,21 @@
 
 /obj/structure/statue/column
 	name = "column"
-	desc = "A strange column"
+	desc = "A column carved from stone."
 	icon = 'icons/obj/structures/mining.dmi'
 	icon_state = "column2"
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
 
 /obj/structure/statue/column3
 	name = "column"
-	desc = "A strange column"
+	desc = "A column carved from stone."
 	icon = 'icons/obj/structures/mining.dmi'
 	icon_state = "column3"
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
 
 /obj/structure/statue/xenotube
 	name = "xeno containment tube"
@@ -201,7 +197,7 @@
 
 /obj/structure/statue/guardshrine
 	name = "\improper shrine of the unknown guardsmen"
-	desc = "A shrine commemorating the untold millions who everyday lay down their lives for the imperium"
+	desc = "A shrine commemorating the untold millions who lay down their lives everyday for the Imperium."
 	icon = 'icons/obj/64x64.dmi'
 	icon_state = "statue_guardsmen"
 	anchored = 1
@@ -215,11 +211,11 @@
 /obj/structure/statue/guardshrine/attackby(obj/item/W as obj, mob/user as mob)
 
 	if(istype(W, /obj/item/wrench))
-		user.visible_message(anchored ? "<span class='notice'>\The [user] loosens bolts on \the [src].</span" : 
+		user.visible_message(anchored ? "<span class='notice'>\The [user] loosens bolts on \the [src].</span" :
 		"<span class='notice'>\the [user] tightens bolts on \the [src].<span>")
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
 		if(do_after(user, 10, src))
-			user << (anchored ? "<span class='notice'>You have unfastened \the [src] from the floor.</span" : 
+			user << (anchored ? "<span class='notice'>You have unfastened \the [src] from the floor.</span" :
 			"<span class='notice'>You have fastened \the [src] to the floor.<span>")
 			anchored = !anchored
 			update_icon()
