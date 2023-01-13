@@ -35,3 +35,7 @@
 /obj/item/clothing/suit/armor/ogryn/four
 	icon_state = "ogryn_4"
 	item_state = "ogryn_4"
+
+/obj/item/clothing/suit/armor/ogryn/bouncer
+	name = "Ogryn Bouncer Armor"
+	armor = list(melee = 60, bullet = 50, laser = 70, energy = 70, bomb = 50, bio = 100, rad = 100) //I just took 20% off of the main armor types and 10% off bomb. It ended up being pretty similar to skitarii vanguard armor, so it should still be pretty durable.

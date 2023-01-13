@@ -54,7 +54,7 @@ Pilgrim Fate System
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
 
  //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
- //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline, 
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
 	switch(classchoice)
 		if("Rat Catcher")
 			U.add_stats(rand(13,15), rand(15,16), rand(12,18), rand (12,14)) //ratcatcher has high endurance+dext due to his role in the rat catching, disease chasing society
@@ -266,7 +266,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Drug Dealer")
-			U.add_stats(rand(13,14), rand(16,18), rand(10,14), rand (17,18)) //good at dodgin them cops! 
+			U.add_stats(rand(13,14), rand(16,18), rand(10,14), rand (17,18)) //good at dodgin them cops!
 			U.add_skills(rand(7,9),rand(5,6),rand(3,5),rand(2,3),rand(3,5)) //melee, ranged, med, eng, surgery
 			if(prob(50))
 				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -276,7 +276,7 @@ Pilgrim Fate System
 				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/scum, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head) 
+			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
@@ -458,7 +458,7 @@ Pilgrim Fate System
 	gloves = null
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/armor/ogryn
+	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
 	id_type = /obj/item/card/id/pilgrim/innkeeper
 	pda_type = /obj/item/device/pda/penitent
 	l_ear = null
