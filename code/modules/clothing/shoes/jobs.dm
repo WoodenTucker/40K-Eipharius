@@ -25,7 +25,7 @@
 	can_hold_knife = 1
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-	var/obj/item/material/sword/combat_knife/knife = null
+	var/obj/item/melee/sword/combat_knife/knife = null
 	var/spawn_done = null //trying to do the thing for animation
 /obj/item/clothing/shoes/jackboots/New()
 	..()
@@ -33,7 +33,7 @@
 	update_icon()
 /obj/item/clothing/shoes/jackboots/attackby(obj/item/I, mob/user)
 	. = ..()
-	if(istype(I, /obj/item/material/sword/combat_knife))
+	if(istype(I, /obj/item/melee/sword/combat_knife))
 		if(knife)//We've already got a knife in there, no need for another.
 			return
 		user.drop_from_inventory(I)
@@ -148,7 +148,7 @@
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	item_flags = ITEM_FLAG_NOSLIP
-	
+
 /obj/item/clothing/shoes/prac_boots
 	name = "practioner boots"
 	desc = "Squish."
@@ -162,8 +162,8 @@
 	icon_state = "prac_boots"
 	item_state = "prac_boots"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 100, rad = 20)
-	
-	
+
+
 //GUARDSMAN SHIT
 
 /obj/item/clothing/shoes/jackboots/cadian
@@ -186,7 +186,7 @@
 
 /obj/item/clothing/shoes/jackboots/catachan/New()
 	..()
-	knife = new /obj/item/material/sword/combat_knife/catachan
+	knife = new /obj/item/melee/sword/combat_knife/catachan
 	update_icon()
 
 /obj/item/clothing/shoes/jackboots/krieg
@@ -210,7 +210,7 @@
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	armor = list(melee = 40, bullet = 40, laser = 40, energy = 30, bomb = 40, bio = 100, rad = 100)
 	item_flags = ITEM_FLAG_NOSLIP
-	
+
 // Astartes Stuff
 
 /obj/item/clothing/shoes/jackboots/astartes
@@ -229,7 +229,7 @@
 
 /obj/item/clothing/shoes/jackboots/astartes/New()
 	..()
-	knife = new /obj/item/material/sword/combat_knife/catachan/giant
+	knife = new /obj/item/melee/sword/combat_knife/catachan/giant
 	update_icon()
 
 
@@ -311,7 +311,7 @@
 	item_flags = ITEM_FLAG_NOSLIP
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
 	species_restricted = list(SPECIES_HUMAN)
-	
+
 //Inquisition Stuff
 
 /obj/item/clothing/shoes/jackboots/inquisitor
@@ -339,10 +339,10 @@
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	item_flags = ITEM_FLAG_NOSLIP
 
-	
-	
-	
-	
+
+
+
+
 
 // YOU WILL ONLY FIND XENO MONSTERS FROM THIS POINT ONWARD! CODEBROTHER, DON'T DO IT!
 

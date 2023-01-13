@@ -125,7 +125,7 @@
 	allowed_tools = list(
 	/obj/item/scalpel = 100, \
 	/obj/item/material/knife = 75, \
-	/obj/item/material/sword/combat_knife = 80, \
+	/obj/item/melee/sword/combat_knife = 80, \
 	/obj/item/material/kitchen/utensil/knife = 75, \
 	/obj/item/material/shard = 50 \
 	)
@@ -191,7 +191,7 @@
 	/obj/item/hemostat = 100,	\
 	/obj/item/wirecutters = 75, \
 	/obj/item/material/knife = 75,	\
-	/obj/item/material/sword/combat_knife = 75,	\
+	/obj/item/melee/sword/combat_knife = 75,	\
 	/obj/item/material/kitchen/utensil/fork = 20
 	)
 

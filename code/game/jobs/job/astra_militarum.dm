@@ -807,7 +807,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/material/sword/combat_knife/rare
+	belt = /obj/item/melee/sword/combat_knife
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/culthelm/gas
@@ -1197,7 +1197,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/commissar
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/material/sword/commissword
+	belt = /obj/item/melee/sword/commissword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/commissar
 	head = /obj/item/clothing/head/commissar

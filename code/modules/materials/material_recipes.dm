@@ -171,7 +171,7 @@
 	recipes += new/datum/stack_recipe("Pipe Grenade", /obj/item/grenade/frag/high_yield/homemade, 3, 1, 1, 0, on_floor = 1)
 	recipes += new/datum/stack_recipe("Krak Grenade", /obj/item/grenade/frag/high_yield/krak, 8, 1, 1, 0, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap mek-mace", /obj/item/material/mekmace, 4, 1, 1, 10)
-	recipes += new/datum/stack_recipe("Steel Choppa", /obj/item/material/sword/choppa, 8, 1, 1, 10)
+	recipes += new/datum/stack_recipe("Steel Choppa", /obj/item/melee/sword/choppa, 8, 1, 1, 10)
 
 	recipes += new/datum/stack_recipe("ork banner structure", /obj/structure/orkbanna, 5, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap window", /obj/structure/window/orkwindow, 15, 1, 1, 20, on_floor = 1)
