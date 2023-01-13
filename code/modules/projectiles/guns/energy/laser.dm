@@ -530,10 +530,35 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType =/obj/item/cell/plasma
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
+	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
+	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
+	var/plasma_overheat_max = 100 // When the gun exploads
+	Fire(atom/target, mob/living/user)
+		if(plasma_overheat >= 50)
+			to_chat(user, "The barrel starts to glow! You can feel heat comming from it.")
+		if(plasma_overheat >= 60)
+			to_chat(user, "You can feel the skin on your hands starting to burn.")
+		if(plasma_overheat >= 90)
+			to_chat(user, "You see a bright light comming from your weapon!")
+		..()
+		plasma_overheat += 15 // adding 15 heat for every pulling of the trigger (learn not to spam the fucking gun)
+	Process()
+		..()
+		if(plasma_overheat >= 0)
+			plasma_overheat -= plasma_overheat_decay // so the gun actually cools down
+		else
+			plasma_overheat = 0 // keepin the gun overheat above -1
+			return
+		if(plasma_overheat > plasma_overheat_max)
+			explosion(src.loc, 0, 1, 2, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+	//firemodes = list(
+		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
+		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
+	//) firemodes will be added when someone can figure out how to make more overheat build up on the overcharge mode
 
 /obj/item/gun/energy/pulse/plasma/rifle
 	name = "plasma rifle"
-	desc = "A plasma rifle. Don't roll a 1! (cannot explode yet)"
+	desc = "A plasma rifle. If you like having your arms attached - don't overheat the gun!"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
 	item_state = "ionrifle"
