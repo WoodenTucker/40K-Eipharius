@@ -81,7 +81,7 @@
 	icon_state = "slaanesh_dagger"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 17
+	force = 15
 	agonyforce = 80 //stronger than a nighstick, but not blatantly OP of fucking course.
 	force_wielded = 20
 	block_chance = 20
@@ -95,15 +95,15 @@
 	swing_sound = "blunt_swing"
 
 
-/obj/item/material/sword/chaosknife
+/obj/item/melee/sword/chaosknife
 	name = "chaos knife"
 	desc = "A knife made of bones and corruption."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "chaos_knife"
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
-	force = 21
-	force_wielded = 24
+	force = 20
+	force_wielded = 25
 	armor_penetration = 15
 	block_chance = 20
 	sales_price = 39
@@ -117,24 +117,24 @@
 	swing_sound = "blunt_swing"
 
 
-/obj/item/material/sword/hellblade
+/obj/item/melee/sword/hellblade
 	name = "hellblade sword"
 	desc = "A sword forged with corruption and souls of the raged."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "hellblade"
 	item_state = "sabre"
 	attack_verb = list("stabbed", "chopped", "cut", "sliced", "burned")
-	force = 33
+	force = 35
 	force_wielded = 40
 	sharp = 1
-	block_chance = 18
+	block_chance = 45
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 200
 	weapon_speed_delay = 7
 
-/obj/item/material/sword/zombie_claw
+/obj/item/melee/sword/zombie_claw
 	name = "Zombie Claw"
 	desc = "The fingernails are gone and the bone is protruding from the tip of the finger, a sickly bile coats the hand."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -149,17 +149,17 @@
 	sales_price = 39
 	weapon_speed_delay = 5
 
-/obj/item/material/sword/zombie_clawl/dropped() //since nodrop is fucked this will deal with it for now.
+/obj/item/melee/sword/zombie_clawl/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
 
-/obj/item/material/sword/zombie_claw/zombie_clawr
+/obj/item/melee/sword/zombie_claw/zombie_clawr
 	name = "Zombie Clawr"
 	desc = "The fingernails are gone and the bone is protruding from the tip of the finger, a sickly bile coats the hand."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "zombo_clawr"
 
-/obj/item/material/sword/zombie_claw/zombie_clawr/dropped() //since nodrop is fucked this will deal with it for now.
+/obj/item/melee/sword/zombie_claw/zombie_clawr/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
 	spawn(1) if(src) qdel(src)
 
@@ -174,7 +174,8 @@
 	wielded_icon ="kchainaxe"
 	str_requirement = 13
 	force = 50 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	force_wielded = 65
+	force_wielded = 70
+	armor_penetration = 60
 	block_chance = 5
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
@@ -189,7 +190,7 @@
 	sales_price = 35
 	edge = 1
 
-/obj/item/material/sword/demon
+/obj/item/melee/sword/demon
 	name = "demon sword"
 	desc = "A sword possessed by an entity of the warp. Once used by a great noble of imperium before it was corrupted. How far it has fallen..."
 	icon_state = "Scorpion_CS"
@@ -197,20 +198,20 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 14
-	force = 31
-	force_wielded = 38
-	armor_penetration = 10
-	block_chance = 50
+	str_requirement = 17
+	force = 50
+	force_wielded = 70 //warpsword
+	armor_penetration = 90
+	block_chance = 50 //may the warp guide your hand
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 7
-	sales_price = 100
+	weapon_speed_delay = 10
+	sales_price = 300
 
 
 //Slaneshy
 
-/obj/item/material/sword/slaanesh
+/obj/item/melee/sword/slaanesh
 	name = "slaanesh sword"
 	desc = "A sword made of corruption."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -232,7 +233,7 @@
 
 
 
-/obj/item/material/sword/skinning_knife
+/obj/item/melee/sword/skinning_knife
 	name = "ritual knife"
 	desc = "A visitor from the warp..."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -253,7 +254,7 @@
 	swing_sound = "blunt_swing"
 	var/skinning = 0
 
-/obj/item/material/sword/skinning_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
+/obj/item/melee/sword/skinning_knife/attack(mob/living/carbon/C as mob, mob/living/user as mob)
 	if(C.skinned == 1)
 		to_chat(usr, "The flesh has already been stripped away from this one...")
 		return
@@ -280,7 +281,7 @@
 	else
 		..()
 /*
-/obj/item/material/sword/skinning_knife/pickup(var/mob/living/carbon/human/user)
+/obj/item/melee/sword/skinning_knife/pickup(var/mob/living/carbon/human/user)
 	if(user.lust < 3 )
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(220)
@@ -289,7 +290,7 @@
 
 
 
-/obj/item/material/sword/slehdagger
+/obj/item/melee/sword/slehdagger
 	name = "slaanesh dagger"
 	desc = "A exotic dagger used for pleasure."
 	icon = 'icons/obj/weapons/melee/misc.dmi'

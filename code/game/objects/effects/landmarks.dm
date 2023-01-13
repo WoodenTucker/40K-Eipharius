@@ -310,12 +310,10 @@ Template:
 	icon_state = "lightmelee"
 
 /obj/random/loot/lightmelee/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 2,
-				/obj/item/material/sword/combat_knife/rare = 3,
-				/obj/item/material/sword/combat_knife/glaive = 1,
-				/obj/item/material/sword/combat_knife/bowie = 1,
+	return list(/obj/item/melee/sword/combat_knife = 2,
 				/obj/item/melee/telebaton = 1,
-				/obj/item/material/sword/machete = 1)
+				/obj/item/melee/sword/machete = 1,
+				/obj/item/melee/sword/shortsword = 1)
 
 /obj/random/loot/heavymelee
 	name = "Heavy Melee"
@@ -324,27 +322,14 @@ Template:
 
 /obj/random/loot/heavymelee/spawn_choices()
 	return list(/obj/item/melee/trench_axe = 13,
-				/obj/item/material/sword/cane = 4,
+				/obj/item/melee/sword/cane = 4,
 				/obj/item/melee/classic_baton/trench_club = 8,
-				/obj/item/melee/telebaton = 12,
-				/obj/item/melee/trench_axe/glaive/adamantine = 1,
-				/obj/item/melee/trench_axe/lance/adamantine = 1,
-				/obj/item/material/sword/cutro/adamantine = 1,
-				/obj/item/material/sword/broadsword/adamantine = 1,
-				/obj/item/melee/trench_axe/glaive = 6,
 				/obj/item/melee/trench_axe/bardiche = 6,
-				/obj/item/melee/trench_axe/lance = 4,
-				/obj/item/melee/trench_axe/bspear = 12,
-				/obj/item/material/sword/cutro = 10,
-				/obj/item/material/sword/broadsword = 6,
-				/obj/item/material/sword/machete = 16,
-				/obj/item/material/sword/machete/chopper = 10,
-				/obj/item/material/sword/machete/chopper/heavy = 6,
-				/obj/item/toy/katana = 6,
-				/obj/item/toy/katana/strong = 2,
+				/obj/item/melee/sword/broadsword = 6,
 				/obj/item/shield/riot = 2,
 				/obj/item/shield/riot/metal = 1,
-				/obj/item/material/sword/sabre = 4)
+				/obj/item/melee/sword/sabre = 4)
+
 /* // we dont really need all the melee
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
@@ -352,10 +337,10 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/meleespawner/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 1,
-				/obj/item/material/sword/combat_knife/rare = 2,
-				/obj/item/material/sword/combat_knife/bowie = 3,
-				/obj/item/material/sword/combat_knife/glaive = 1,
+	return list(/obj/item/melee/sword/combat_knife = 1,
+				/obj/item/melee/sword/combat_knife/rare = 2,
+				/obj/item/melee/sword/combat_knife/bowie = 3,
+				/obj/item/melee/sword/combat_knife/glaive = 1,
 				/obj/item/melee/trench_axe = 13,
 				/obj/item/material/sword/cane = 4,
 				/obj/item/melee/classic_baton/trench_club = 8,
@@ -364,16 +349,16 @@ Template:
 				/obj/item/melee/trench_axe/bardiche = 6,
 				/obj/item/melee/trench_axe/lance = 4,
 				/obj/item/melee/trench_axe/bspear = 12,
-				/obj/item/material/sword/cutro = 10,
-				/obj/item/material/sword/broadsword = 6,
-				/obj/item/material/sword/machete = 16,
-				/obj/item/material/sword/machete/chopper = 10,
+				/obj/item/melee/sword/cutro = 10,
+				/obj/item/melee/sword/broadsword = 6,
+				/obj/item/melee/sword/machete = 16,
+				/obj/item/melee/sword/machete/chopper = 10,
 				/obj/item/toy/katana = 6,
 				/obj/item/toy/katana/strong = 2,
 				/obj/item/shield/riot = 2,
 				/obj/item/melee/chain/inqcs = 1,
 				/obj/item/melee/chain/pcsword/eviscerator = 1,
-				/obj/item/material/sword/sabre = 4)
+				/obj/item/melee/sword/sabre = 4)
 */
 /obj/random/loot/lightstubber // TODO
 	name = "Light Stubber and shotguns"
@@ -617,7 +602,7 @@ Template:
 				/obj/item/storage/box/ifak = 3,
 				/obj/item/storage/firstaid/adv = 1,
 				/obj/item/clothing/suit/armor/militia = 2,
-				/obj/item/material/sword/combat_knife/rare = 4,
+				/obj/item/melee/sword/combat_knife = 4,
 				/obj/item/melee/trench_axe = 1,
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/clothing/accessory/holster/waist = 3,

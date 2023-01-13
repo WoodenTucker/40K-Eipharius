@@ -12,9 +12,9 @@
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
-	
+
 //giant knife
 /obj/item/clothing/shoes/jackboots/ogryn/New()
 	..()
-	knife = new /obj/item/material/sword/combat_knife/catachan/giant
+	knife = new /obj/item/melee/sword/combat_knife/catachan/giant
 	update_icon()

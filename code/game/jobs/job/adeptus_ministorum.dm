@@ -177,7 +177,7 @@
 		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
-/obj/item/melee/whip/censer/attackby(var/obj/item/material/sword/O, var/mob/user)
+/obj/item/melee/whip/censer/attackby(var/obj/item/melee/sword/O, var/mob/user)
 	if(O.isblessed == 1)
 		to_chat(user, "<span class='warning'>[O] has already been blessed!</span>")
 		return 1
@@ -521,7 +521,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/cmo
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle/training
-	belt = /obj/item/material/sword/broadsword
+	belt = /obj/item/melee/sword/broadsword
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	gloves = /obj/item/clothing/gloves/sisterofbattle

@@ -112,7 +112,7 @@
 /datum/surgery_step/generic/cut_open
 	allowed_tools = list(
 	/obj/item/scalpel = 100, \
-	/obj/item/material/sword/combat_knife = 75, \
+	/obj/item/melee/sword/combat_knife = 75, \
 	/obj/item/material/knife = 75, \
 	/obj/item/material/kitchen/utensil/knife = 75, \
 	/obj/item/broken_bottle = 50, \
@@ -200,7 +200,7 @@
 	/obj/item/retractor = 100, 	\
 	/obj/item/crowbar = 75,
 	/obj/item/material/knife = 50,	\
-	/obj/item/material/sword/combat_knife = 50, \
+	/obj/item/melee/sword/combat_knife = 50, \
 	/obj/item/material/kitchen/utensil/fork = 50 \
 	)
 
