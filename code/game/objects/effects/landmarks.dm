@@ -124,6 +124,9 @@ Template:
 	name = "Interrogator"
 	icon_state = "magis"
 
+/obj/effect/landmark/start/inqmagi/inquisitor
+	name = "Inquisitor"
+
 /obj/effect/landmark/start/inqmagi/arbitrator
 	name = "Arbitrator"
 
@@ -138,6 +141,10 @@ Template:
 
 /obj/effect/landmark/start/imperialguard
 	name = "Sergeant"
+	icon_state = "guards"
+
+/obj/effect/landmark/start/imperialguard/commissar
+	name = "Commissar"
 	icon_state = "guards"
 
 /obj/effect/landmark/start/imperialguard/sniper

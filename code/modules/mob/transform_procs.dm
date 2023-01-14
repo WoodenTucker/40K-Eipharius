@@ -287,11 +287,11 @@
 	src.apply_effects(stun = 5, stutter = 5)
 	src.visible_message("<span class='danger'>\The </big>[src]'s flesh decays before your very eyes, THEY'VE TURNED INTO A PLAGUE ZOMBIE!</big></span>", "<span class='phobia'<big>You... hunger. Not only for flesh, but to spread your disease..FOR GRANDFATHER NURGLE!</big></span>")
 	if(src.mind)
-		src.mind.special_role = "Zombie"
+		src.mind.special_role = "Poxwalker"
 	if(src.stat != DEAD && src.mind)
 		var/datum/heretic_deity/nurgle/N = GOD(GOD_NURGLE)
 		N.join_forced(src)
-	log_admin("[key_name(src)] has transformed into a Plague Zombie!")
+	log_admin("[key_name(src)] has transformed into a Poxwalker!")
 	Weaken(5)
 	if(should_have_organ(BP_HEART))
 		vessel.add_reagent(/datum/reagent/blood,species.blood_volume-vessel.total_volume)
@@ -303,7 +303,9 @@
 		organ.min_broken_damage *= 5
 	verbs += /mob/living/proc/breath_death
 	verbs += /mob/living/proc/zombie_eat
-	verbs += /mob/living/proc/claws
+/*	verbs += /mob/living/proc/claws */
+	src.species.species_flags += SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_SLIP
+	src.species.slowdown += 1.5
 
 	if (r_hand)
 		drop_from_inventory(r_hand)
@@ -317,8 +319,10 @@
 		drop_from_inventory(wear_mask)
 	if (head)
 		drop_from_inventory(head)
+	if (glasses)
+		drop_from_inventory(glasses)
 
-	equip_to_slot(new /obj/item/melee/baton/nidstun, slot_r_hand)
-	equip_to_slot(new /obj/item/melee/baton/nidstun, slot_l_hand)
+	equip_to_slot(new /obj/item/material/sword/zombie_claw/zombie_clawr, slot_l_hand)
+	equip_to_slot(new /obj/item/material/sword/zombie_claw, slot_r_hand)
 	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	return

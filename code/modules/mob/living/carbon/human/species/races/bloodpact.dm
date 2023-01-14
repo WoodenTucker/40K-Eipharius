@@ -61,7 +61,7 @@
 		return
 
 	visible_message("[name] Embraces their blessings from The God of Blood, the Skull taker, the soul eater: Khorne. Skulls for his throne shall come.")
-	src.add_stats(rand(14,19),rand(14,18),rand(9,12),rand(11,16)) //gives stats str, end, int, dex
+	src.add_stats(rand(14,19),rand(14,18),rand(9,12),rand(11,16))
 	src.add_skills(rand(11,18),rand(9,13),rand(1,5),0,0) //skills such as melee, ranged, med, eng and surg
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision

@@ -82,7 +82,7 @@
 			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulsepistol, slot_in_backpack)
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
-			src.add_stats(rand(10,12),rand(14,18),rand(12,15),10) //gives stats str, end, int, dex
+			src.add_stats(rand(10,12),rand(14,18),rand(12,15),10)
 			src.add_skills(rand(4,9),rand(8,13),rand(0,3),0,0) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
@@ -113,7 +113,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/watercaste, slot_wear_suit)
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
-			src.add_stats(rand(6,8),rand(10,12),rand(12,13),15) //gives stats str, end, int, dex
+			src.add_stats(rand(6,8),rand(10,12),rand(12,13),15)
 			src.add_skills(rand(3,6),rand(3,6),rand(0,3),3,3) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language
@@ -140,7 +140,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/welding/superior, slot_glasses)
 
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
-			src.add_stats(rand(7,9),rand(11,13),rand(13,16),12) //gives stats str, end, int, dex
+			src.add_stats(rand(7,9),rand(11,13),rand(13,16),12)
 			src.add_skills(rand(3,6),rand(3,6),rand(5,8),6,6) //skills such as melee, ranged, med, eng and surg
 			src.update_eyes() //should fix grey vision
 			src.warfare_language_shit(TAU) //secondary language

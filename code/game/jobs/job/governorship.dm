@@ -14,13 +14,12 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	supervisors = "The Golden Throne and the High Lords of Terra."
 	selection_color = "#540c97"
 	req_admin_notify = 1
-	access = list(20) 			//See get_access()
-	minimal_access = list(20) 	//See get_acce ss()
+	access = list(20, 331, access_RC_announce, access_ai_upload, access_heads) 			//See get_access()
+	minimal_access = list(20, 331, access_RC_announce, access_ai_upload, access_heads)
 	minimal_player_age = 65
 	economic_modifier = 20
 	announced = TRUE
 	latejoin_at_spawnpoints = TRUE
-
 	ideal_character_age = 120
 	outfit_type = /decl/hierarchy/outfit/job/governor
 	auto_rifle_skill = 7
@@ -29,7 +28,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 75 // we want funny inq vs rt nonsense. highest in game besides pathfinder/pilgrim
+	cultist_chance = 100 // we want funny inq vs nonsense
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -46,8 +45,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
 		to_chat(H, "<span class='notice'><b><font size=3> The head honcho of Eipharius, ensure the tithe goes to Holy Terra. You own the Imperial Guard Squad stationed on the planet, as well as the Enforcers of the Magisterium. Hopefully they do the noble family’s bidding. Bathe in the riches of your privilege. Make sure that the inquisition doesn’t find out about any less than legal dealings you do. </font></b></span>")
 
-/datum/job/governor/get_access()
-	return get_all_station_access()
+		H.get_idcard()?.access = list(20, 331, access_RC_announce, access_ai_upload, access_heads)
 
 /datum/job/heir
 	title = "Heir"
