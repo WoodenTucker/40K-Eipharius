@@ -196,7 +196,7 @@
 	l_hand = null
 	r_hand = /obj/item/melee/baton/powermaul
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
-	suit = /obj/item/clothing/suit/armor/enforcer2/arbitrator
+	suit = /obj/item/clothing/suit/armor/arbitrator
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen

@@ -68,11 +68,7 @@
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/kasrkin
-	alt_titles = list(
-		"Veteran Kasrkin" = /decl/hierarchy/outfit/job/kasrkin,/*
-		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion,*/
-
-		)
+	alt_titles = null
 	latejoin_at_spawnpoints = 1
 	auto_rifle_skill = 10 // veteran
 	semi_rifle_skill = 10

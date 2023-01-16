@@ -291,6 +291,12 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 30
 
+/obj/item/clothing/head/helmet/fw/breacher
+	name = "fire warrior Helmet"
+	desc = "The white and bright helmet of a Tau Breacher."
+	icon_state = "tbrea"
+	item_state = "tbrea"
+
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"
 	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
@@ -302,6 +308,8 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 35
+
+
 // Eldar
 
 /obj/item/clothing/head/helmet/eldar
