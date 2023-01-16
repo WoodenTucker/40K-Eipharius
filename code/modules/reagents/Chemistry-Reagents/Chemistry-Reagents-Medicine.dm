@@ -751,6 +751,7 @@
 	color = "#c8a5dc"
 	scannable = 1
 	overdose = 20
+	flags = AFFECTS_DEAD //i only noticed this was bugged until now
 	metabolism = 0.1
 
 /datum/reagent/adrenaline/affect_blood(var/mob/living/carbon/human/M, var/alien, var/removed)
@@ -816,6 +817,7 @@
 	reagent_state = REAGENT_LIQUID
 	color = "#ff3300"
 	metabolism = REM * 0.5
+	flags = AFFECTS_DEAD
 	overdose = REAGENTS_OVERDOSE * 0.2 //6 OD
  //High risks High reward
 /datum/reagent/satrophine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
@@ -836,16 +838,13 @@
 	
 	if(M.chem_doses[type] > 3) //if the dose is higher than 3, cause the following effects:
 		M.add_chemical_effect(CE_PAINKILLER, 200) //oxycodone level bonus, nerfs weapon accuracy by a FUCKLOAD
-		
-	if(volume >= 5 && M.is_asystole()) //if the volume is higher than 5 and subject can breathe, try to restart the heart
-		remove_self(0.2) //remove 0.2 per attempt to restart heart, better not to get severe heart damage, else your satrophine will be gone in seconds.
-		M.resuscitate()
+
 
 /datum/reagent/aurilium 
 	name = "aurilium"
 	description = "A medication which heals ear damage incredibly quickly, 15u OD"
 	taste_description = "beans and lemons"
-	reagent_state = LIQUID
+	reagent_state = REAGENT_LIQUID
 	color = "#EEDC82"
 	metabolism = REM * 0.15
 	overdose = REAGENTS_OVERDOSE * 0.5 //i think this should be 15?
