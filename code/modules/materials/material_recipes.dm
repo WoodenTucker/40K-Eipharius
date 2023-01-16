@@ -160,22 +160,22 @@
 	recipes += new/datum/stack_recipe("Zoggin' Boy Armor", /obj/item/clothing/suit/armor/orkarmor/zog, 4, 1, 1, 10)
 
 	recipes += new/datum/stack_recipe("Power Klaw", /obj/item/storage/backpack/satchel/warfare/kroot/mek, 16, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("Shoota", /obj/item/gun/projectile/ork, 8, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("Bladed Shoota", /obj/item/gun/projectile, 10, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("Kustom Shoota", /obj/item/gun/projectile, 12, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("Big Shoota", /obj/item/gun/projectile, 14, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("Furtha Shoota", /obj/item/gun/projectile, 16, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("Shoota", /obj/item/gun/projectile/ork/automatic/shoota, 6, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("Bladed Shoota",/obj/item/gun/projectile/ork/automatic/shoota/bladed, 8, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("Kustom Shoota",/obj/item/gun/projectile/ork/automatic/shoota/kustom, 10, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("Big Shoota",/obj/item/gun/projectile/ork/automatic/shoota/big, 12, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("Furtha Shoota",/obj/item/gun/projectile/ork/automatic/shoota/furtha, 14, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("Shoota magazine", /obj/item/ammo_magazine/ork/shoota, 4, 1, 1, 0, on_floor = 1)
-	recipes += new/datum/stack_recipe("Slugga", /obj/item/gun/projectile/ork/slugga, 5, 1, 1, 20, on_floor = 1)
-	recipes += new/datum/stack_recipe("Slugga magazine", /obj/item/ammo_magazine/ork/slugga, 3, 1, 1, 0, on_floor = 1)
+	recipes += new/datum/stack_recipe("Slugga", /obj/item/gun/projectile/ork/slugga, 4, 1, 1, 20, on_floor = 1)
+	recipes += new/datum/stack_recipe("Slugga magazine", /obj/item/ammo_magazine/ork/slugga, 1, 1, 1, 0, on_floor = 1)
 	recipes += new/datum/stack_recipe("Pipe Grenade", /obj/item/grenade/frag/high_yield/homemade, 3, 1, 1, 0, on_floor = 1)
-	recipes += new/datum/stack_recipe("Krak Grenade", /obj/item/grenade/frag/high_yield/krak, 8, 1, 1, 0, on_floor = 1)
+	recipes += new/datum/stack_recipe("Krak Grenade", /obj/item/grenade/frag/high_yield/krak, 6, 1, 1, 0, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap mek-mace", /obj/item/material/mekmace, 4, 1, 1, 10)
 	recipes += new/datum/stack_recipe("Steel Choppa", /obj/item/melee/sword/choppa, 8, 1, 1, 10)
-
+/*
 	recipes += new/datum/stack_recipe("ork banner structure", /obj/structure/orkbanna, 5, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap window", /obj/structure/window/orkwindow, 15, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap door", /obj/machinery/door/orkdoor, 10, 1, 1, 20, on_floor = 1)
 	recipes += new/datum/stack_recipe("scrap wall", /turf/simulated/wall/stone, 5, 1, 1, 20, on_floor = 1)
-
+*/
 

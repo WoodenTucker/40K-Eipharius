@@ -716,7 +716,7 @@ default behaviour is:
 	set category = "IC"
 
 	if(!incapacitated(INCAPACITATION_KNOCKOUT) && canClick())
-		setClickCooldown(20)
+		setClickCooldown(10)
 		resist_grab()
 		if(!weakened)
 			process_resist()
