@@ -315,14 +315,6 @@
 	embed = 0
 	edge = 1
 
-/obj/item/projectile/bullet/bpistol
-	fire_sound = 'sound/effects/explosion1.ogg'
-
-/obj/item/projectile/bullet/bpistol/on_hit(var/atom/target, var/blocked = 0)
-	if(isturf(target))
-		explosion(target, -1, 0, 2)
-	..()
-
 /obj/item/projectile/bullet/blank
 	invisibility = 101
 	damage = 0
