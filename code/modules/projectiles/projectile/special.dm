@@ -21,7 +21,8 @@
 /obj/item/projectile/bullet/bolterrifle 
 	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
-	damage = 60
+	damage = 65
+	armor_penetration = 75 //this is totally not cause its a .75
 	check_armour = "bullet"
 	weaken = -5 //removes stun from explosion
 	sharp = 1
@@ -37,6 +38,7 @@
 	icon_state= "bolter"
 	damage = 45
 	check_armour = "bullet"
+	armor_penetration = 65
 	weaken = -5 //also removes stun from explosion
 	sharp = 1
 	edge = 1
