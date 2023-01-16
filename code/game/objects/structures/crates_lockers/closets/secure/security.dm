@@ -83,7 +83,7 @@
 		/obj/item/clothing/glasses/sunglasses,
 		/obj/item/shield/riot,
 		/obj/item/device/flash,
-		/obj/item/material/sword,
+		/obj/item/melee/sword,
 		/obj/item/melee/telebaton,
 	)
 
