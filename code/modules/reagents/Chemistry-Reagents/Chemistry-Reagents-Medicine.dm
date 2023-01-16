@@ -399,8 +399,8 @@
 		H.update_mutations()
 
 /datum/reagent/hyperzine
-	name = "Hyperzine"
-	description = "Hyperzine is a highly effective, long lasting, muscle stimulant."
+	name = "hyperzine"
+	description = "hyperzine is a highly effective, long lasting, muscle stimulant."
 	taste_description = "acid"
 	reagent_state = REAGENT_LIQUID
 	color = "#ff3300"
@@ -460,7 +460,7 @@
 
 /datum/reagent/arithrazine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	M.radiation = max(M.radiation - 70 * removed, 0)
-	M.adjustToxLoss(-10 * removed)
+	M.adjustToxLoss(-10 * removed) //this heals 10 organ damage, i won't fix it or remove it cause its funny
 	if(prob(60))
 		M.take_organ_damage(4 * removed, 0)
 
@@ -684,7 +684,7 @@
 
 /datum/reagent/rezadone
 	name = "Rezadone"
-	description = "A powder with almost magical properties, this substance can effectively treat genetic damage in humanoids, though excessive consumption has side effects."
+	description = "A powder with almost magical properties, this substance can effectively treat almost every form of damage and injury, although slowly."
 	taste_description = "sickness"
 	reagent_state = REAGENT_SOLID
 	color = "#669900"
@@ -787,6 +787,8 @@
 		if(M.chem_doses[type] > M.species.blood_volume/8) //half of blood was replaced with us, rip white bodies
 			M.immunity = max(M.immunity - 0.5, 0)
 
+
+//W40k shit
 /datum/reagent/tr
 	name = "tissue rebuilder"
 	description = "helps to seal the wounds and rejuvenate the blood supply of the user."
@@ -801,3 +803,54 @@
 /datum/reagent/tr/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	if(alien != IS_DIONA)
 		M.heal_organ_damage(300 * removed, 300 * removed)
+
+
+
+
+
+//WIP
+/datum/reagent/satrophine
+	name = "satrophine"
+	description = "Satrophine is a highly addictive and power stimulant, capable of hiding pain and injury while also highly empowering the user's senses."
+	taste_description = "acid"
+	reagent_state = REAGENT_LIQUID
+	color = "#ff3300"
+	metabolism = REM * 0.5
+	overdose = REAGENTS_OVERDOSE * 0.2 //6 OD
+ //High risks High reward
+/datum/reagent/satrophine/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(alien == IS_DIONA)
+		return
+	M.add_chemical_effect(CE_PAINKILLER, 50) //good painkiller, not the best
+	M.add_chemical_effect(CE_SPEEDBOOST, 3)
+	M.add_chemical_effect(CE_PULSE, 3) //50% chance their entire chest cavity fucking explodes due to their heart
+	if(prob(5))
+		M.emote(pick("twitch", "blink_r", "shiver"))
+
+	if(M.chem_doses[type] > 1) //if the dose is higher than 1, cause the following effects:
+		M.AdjustParalysis(-1) //wake the fuck up marine! we got a fight to win!... atleast until the drugs wear off...
+		M.AdjustStunned(-1)
+		M.AdjustWeakened(-5) //NO MATTER HOW MANY BOMBS! IM NOT GOING DOWN UNLESS ITS FROM MY INJURIES!
+		M.make_dizzy(5)
+		M.make_jittery(5)
+	
+	if(M.chem_doses[type] > 3) //if the dose is higher than 3, cause the following effects:
+		M.add_chemical_effect(CE_PAINKILLER, 200) //oxycodone level bonus, nerfs weapon accuracy by a FUCKLOAD
+		
+	if(volume >= 5 && M.is_asystole()) //if the volume is higher than 5 and subject can breathe, try to restart the heart
+		remove_self(0.2) //remove 0.2 per attempt to restart heart, better not to get severe heart damage, else your satrophine will be gone in seconds.
+		M.resuscitate()
+
+/datum/reagent/aurilium 
+	name = "aurilium"
+	description = "A medication which heals ear damage incredibly quickly, 15u OD"
+	taste_description = "beans and lemons"
+	reagent_state = LIQUID
+	color = "#EEDC82"
+	metabolism = REM * 0.15
+	overdose = REAGENTS_OVERDOSE * 0.5 //i think this should be 15?
+	scannable = 1
+	flags = IGNORE_MOB_SIZE
+
+/datum/reagent/aurilium/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+		M.adjustEarDamage(-10, -10) //easy as
