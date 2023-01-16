@@ -558,7 +558,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/rifle
 	name = "plasma rifle"
-	desc = "A plasma rifle. If you like having your arms attached - don't overheat the gun!"
+	desc = "A plasma rifle. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
 	item_state = "ionrifle"
@@ -577,7 +577,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
-	desc = "A plasma pistol. Fun in a small package. Don't roll a 1! (cannot explode yet)"
+	desc = "A plasma pistol. Great for dealing with threats swiftly.It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "pulse_carbine"
@@ -596,7 +596,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
-	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
+	desc = "A plasma pistol blessed by the ruinous powers. You can feel the warp energy going trough it. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "chaosppistol"
 	item_state = "pulse_pistol"
@@ -615,7 +615,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	name = "Ryza Pattern Plasma Pistol"
-	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. (cannot explode yet)"
+	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "toasterppistol"
 	item_state = "pulse_pistol"
@@ -631,10 +631,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 	sales_price = 140 //blessed by the omnissiah and made with adamantium
 
- /*// rare plasma pistols removed until proper plasma balance
+/*// rare plasma pistols removed until proper plasma balance
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	name = "seolite plasma pistol"
-	desc = "An ancient plasma pistol forged by seolite gun smiths, despite it's incredible age it shows no signs of decay.(cannot explode yet)"
+	desc = "An ancient plasma pistol forged by seolite gun smiths, despite it's incredible age it shows no signs of decay. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "xenolpistol"
 	item_state = "pulse_carbine"
@@ -654,7 +654,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
 	name = "archeotech plasma pistol"
-	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay.(cannot explode yet)"
+	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "glockl100"
 	item_state = "pulse_pistol"
