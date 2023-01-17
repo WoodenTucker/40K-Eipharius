@@ -28,8 +28,8 @@
 	/datum/job/confessor,
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
-	/datum/job/novice,
-	/datum/job/preacher,
+	/datum/job/novice,/*
+	/datum/job/preacher, turn preacher into pilgrim fate */
 	/datum/job/innkeeper,
 	/datum/job/bouncer,
 	/datum/job/pathfinder,

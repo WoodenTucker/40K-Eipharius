@@ -301,8 +301,7 @@ Template:
 				/obj/item/clothing/head/helmet = 2,
 				/obj/item/clothing/head/valushanka = 2,
 				/obj/item/clothing/head/helmet/krieghelmet = 1,
-				/obj/item/clothing/mask/gas/krieg = 1,
-				/obj/item/clothing/head/helmet/riot = 1)
+				/obj/item/clothing/mask/gas/krieg = 1,)
 
 /obj/random/loot/lightmelee
 	name = "Light Melee"
