@@ -97,7 +97,7 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Riot armor crate"
 	access = access_armory
-
+/*
 /decl/hierarchy/supply_pack/security/ballisticarmor
 	name = "Armor - Ballistic"
 	contains = list(/obj/item/clothing/head/helmet/ballistic = 4,
@@ -106,7 +106,7 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Ballistic suit crate"
 	access = access_armory
-/*
+
 /decl/hierarchy/supply_pack/security/ablativearmor
 	name = "Armor - Ablative"
 	contains = list(/obj/item/clothing/head/helmet/ablative = 4,

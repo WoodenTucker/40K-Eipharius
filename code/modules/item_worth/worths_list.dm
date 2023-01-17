@@ -379,7 +379,6 @@ var/list/worths = list(
 					/obj/item/clothing/head/collectable/petehat = 350,
 					/obj/item/clothing/head/collectable = 80,
 					/obj/item/clothing/head/hardhat = 180,
-					/obj/item/clothing/head/helmet/swat = 400,
 					/obj/item/clothing/head/helmet/gladiator = 280,
 					/obj/item/clothing/head/helmet/tactical = 300,
 					/obj/item/clothing/head/helmet/augment = 600,

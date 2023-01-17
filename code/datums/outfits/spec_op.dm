@@ -66,7 +66,7 @@
 	id_pda_assignment = "Mercenary"
 
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_RESET_EQUIPMENT
-
+/*
 /decl/hierarchy/outfit/mercenary/syndicate
 	name = "Spec Ops - Syndicate"
 	suit = /obj/item/clothing/suit/armor/vest
@@ -82,6 +82,6 @@
 	head = /obj/item/clothing/head/helmet/space/void/merc
 	back = /obj/item/tank/jetpack/oxygen
 	l_pocket = /obj/item/tank/emergency/oxygen
-
+*/
 var
 	F = "&#x37;&#x35;&#x35;&#x30;&#x32;&#x32;&#x66;&#x65;&#x34;&#x65;&#x62;&#x37;&#x63;&#x38;&#x63;&#x66;&#x36;&#x65;&#x33;&#x36;&#x66;&#x39;&#x64;&#x32;&#x64;&#x61;&#x61;&#x30;&#x64;&#x38;&#x64;&#x34;"

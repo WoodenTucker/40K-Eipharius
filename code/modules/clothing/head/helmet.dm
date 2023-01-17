@@ -91,24 +91,6 @@
 	update_clothing_icon()
 	*/
 
-/obj/item/clothing/head/helmet/ballistic
-	name = "ballistic helmet"
-	desc = "A helmet with reinforced flak plating to protect against ballistic projectiles."
-	icon_state = "helmet_bulletproof"
-	valid_accessory_slots = null
-	armor = list(melee = 35, bullet = 40, laser = 30, energy = 5, bomb = 30, bio = 5, rad = 5)
-	siemens_coefficient = 0.7
-
-/obj/item/clothing/head/helmet/swat
-	name = "\improper SWAT helmet"
-	desc = "They're often used by highly trained Swat Members."
-	icon_state = "helmet_merc"
-	armor = list(melee = 50, bullet = 58, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 10)
-	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0.5
-	sales_price = 25
-
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
 	desc = "<i>'Let the battle commence!'</i>"
