@@ -150,5 +150,5 @@
 								/obj/item/clothing/under/redcoat       = TRADER_THIS_TYPE,
 								/obj/item/clothing/under/soviet        = TRADER_THIS_TYPE,
 								/obj/item/material/harpoon      = TRADER_THIS_TYPE,
-								/obj/item/material/sword        = TRADER_ALL,
+								/obj/item/melee/sword        = TRADER_ALL,
 								/obj/item/material/scythe       = TRADER_THIS_TYPE)
