@@ -91,8 +91,6 @@
 /decl/hierarchy/supply_pack/security/riotarmor
 	name = "Armor - Riot gear"
 	contains = list(/obj/item/shield/riot = 4,
-					/obj/item/clothing/head/helmet/riot = 4,
-					/obj/item/clothing/suit/armor/riot = 4,
 					/obj/item/storage/box/flashbangs,
 					/obj/item/storage/box/teargas)
 	cost = 80
