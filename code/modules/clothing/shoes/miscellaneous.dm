@@ -23,7 +23,7 @@
 //	item_flags = ITEM_FLAG_NOSLIP
 	siemens_coefficient = 0.6
 	can_hold_knife = 1
-	var/obj/item/material/sword/combat_knife/knife = null
+	var/obj/item/melee/sword/combat_knife/knife = null
 
 /obj/item/clothing/shoes/combat //Basically SWAT shoes combined with galoshes.
 	name = "combat boots"

@@ -63,7 +63,7 @@
 		src.update_icon()
 		src.tanning = 0
 		return
-	else if((O.sharp) || istype(O, /obj/item/material/knife/butch) || istype(O, /obj/item/material/sword))//what items can cut down trees
+	else if((O.sharp) || istype(O, /obj/item/material/knife/butch) || istype(O, /obj/item/melee/sword))//what items can cut down trees
 		visible_message("<span='bnotice'[user] begins to cut apart \the [src]!</span>" )
 		playsound(src, 'sound/weapons/pierce.ogg', 100, FALSE)
 		if(do_after(user, 110, src))
