@@ -304,15 +304,20 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 
+
+
+
 //this is the PHOSPHOR energy gun, its really fucking OP in lore because it burns through almost anything until they are dead, im not sure why the pain is so huge tho.
 /obj/item/projectile/energy/phosphor
-	name = "phosphor bolt"
+	name = "phosphor splash"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	damage = 25
-	agony = 200 //this is pain that passes through armor???
-	range =  15
-
+	damage = 65 //phosphor blasters are incredibly powerful weapons, almost never used
+	check_armour = "energy"
+	armor_penetration = 100 //phosphor blasters are incredibly good at penetrating heavy armor
+	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
+	
+/*
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
@@ -323,6 +328,7 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
+*/
 
 /obj/item/projectile/gauss
 	name = "Gauss "
