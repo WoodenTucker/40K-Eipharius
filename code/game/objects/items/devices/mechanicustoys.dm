@@ -153,8 +153,9 @@
 	icon_state = "Whistle_InHand_R"
 	item_state = "Whistle_InHand"
 	wielded_icon = "Whistle_InHand_W"
-	force = 45
+	force = 45 //SLIGHTLY weaker than powersword due to it being primarily used in rituals and canticles
 	block_chance = 50
+	armor_penetration = 75 //same armor penetration as a drusian chainsword despite it technically being a power axe because i don't want it to be OP
 	sharp = TRUE
 	edge = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
