@@ -372,13 +372,13 @@
 	access = list(access_advchapel, access_medical, access_village)
 	minimal_access = list(access_advchapel, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/preacher
-	auto_rifle_skill = 4
-	semi_rifle_skill = 4
-	sniper_skill = 4
-	shotgun_skill = 4
-	lmg_skill = 4
-	smg_skill = 4
-	cultist_chance = 22 //1 in 5 even tho hes not from this world 
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
+	cultist_chance = 75 preaching the word of.... lorgar
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
