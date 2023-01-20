@@ -156,12 +156,12 @@
 	block_chance = 20 //20 block chance, same block chance, force and pen as brutal chainsword but harder to get
 	force = 50
 	force_wielded = 60
-	armor_penetration = 85 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
+	armor_penetration = 65 //high penetration due to it being a power axe, weaker than power sword due to moderate block chance.
 	sharp = TRUE
 	edge = TRUE
 //	obj_flags = OBJ_FLAG_CONDUCTIBLE //me on my way to get shocked after flinging a power axe at a power wire cause it somehow is conductible
 	w_class = ITEM_SIZE_SMALL //makes it actually fast and pretty usable, magi ALWAYS carry it around, no reason for it to weight anything.
-	weapon_speed_delay = 7 //only one can exist without admin intervention, essentially just a quicker astartes/brutal chainsword.
+	weapon_speed_delay = 12
 	sales_price = 0
 
 /obj/item/melee/omnissiah_axe/dropped() //since nodrop is fucked this will deal with it for now.
