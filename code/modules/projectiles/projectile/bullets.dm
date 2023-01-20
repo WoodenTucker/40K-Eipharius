@@ -460,12 +460,6 @@
 	on_impact(var/atom/A)
 		empulse(A, heavy_effect_range, light_effect_range)
 		return 1
-	
-/obj/item/projectile/bullet/rifle/galvanic/on_impact(var/atom/A)
-	src.visible_message("<span class='warning'>\The [src] explodes in a bright eletric flash!</span>")
-	var/datum/effect/effect/system/spark_spread/sparks = new /datum/effect/effect/system/spark_spread()
-	sparks.set_up(2, 1, T)
-	sparks.start()
 
 /obj/item/projectile/bullet/pellet/shotgun/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
