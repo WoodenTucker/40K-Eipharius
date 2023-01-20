@@ -80,6 +80,7 @@
 	set popup_menu = 1
 
 	toggle_scope(usr, 2)
+
 /obj/item/gun/energy/las/lasgun/longlas
 	name = "M35 'M-Galaxy' Longlas"
 	desc = "The M35 'M-Galaxy' Lasgun outfitted with advanced barrel and scope is one of the most common and less unique sniper weapons that can be found throughout the Imperial Arsenal, used by Astra Militarum Sharpshooters and Ratling Snipers."
@@ -124,6 +125,51 @@
 	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
 	icon_state = "kriegsniper"
 	item_state = "las_musket"
+
+
+
+
+/obj/item/gun/projectile/automatic/galvanic/rifle
+	name = "Mark IV Arkhan Pattern Galvanic Rifle"
+	desc = "A semi automatic rifle, modelled after the martian flintlock weapons of the past, it uses servo-eletric rounds which send a powerful eletric current through the targets body while also tracking them."
+	icon_state = "galvrifle" 
+	item_state = "musket" 
+	loaded_icon = "galvrifle" 
+	unloaded_icon = "galvrifle" 
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	wielded_item_state = "las_musket"
+	unwielded_loaded_icon = "musket"
+	wielded_loaded_icon = "las_musket"
+	unwielded_unloaded_icon = "musket"
+	wielded_unloaded_icon = "las_musket"
+	caliber = "galvanic"
+	max_shells = 8 //+1 so technically 9.
+	str_requirement = 17
+	move_delay = 3
+	one_hand_penalty = 7
+	accuracy = 1.5 //extremely accurate
+	fire_delay = 4.9
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/galvanic
+	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
+	firemodes = list()
+	w_class = ITEM_SIZE_LARGE
+
+/obj/item/gun/projectile/automatic/galvanic/rifle/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/automatic/galvanic/rifle/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+
+
+
 
 
 
