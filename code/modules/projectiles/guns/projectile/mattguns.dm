@@ -778,33 +778,7 @@
 	else
 		icon_state = "scatapult-e"
 
-/obj/item/gun/projectile/automatic/galvanic/rifle
-	name = "Mark IV Arkhan Pattern Galvanic Rifle"
-	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
-	icon_state = "galvrifle" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)
-	item_state = "musket" // ON MOB (This uses a different on-mob to wielded due to sniper musket not having a one handed icon)
-	loaded_icon = "galvrifle" // OBJ
-	unloaded_icon = "galvrifle" // OBJ
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	wielded_item_state = "las_musket"
-	unwielded_loaded_icon = "musket"
-	wielded_loaded_icon = "las_musket"
-	unwielded_unloaded_icon = "musket"
-	wielded_unloaded_icon = "las_musket"
-	caliber = "galvanic"
-	max_shells = 7
-	str_requirement = 13
-	move_delay = 4
-	one_hand_penalty = 7
-	accuracy = 0
-	fire_delay = 4.9
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	magazine_type = /obj/item/ammo_magazine/galvanic
-	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
-	firemodes = list()
-	w_class = ITEM_SIZE_HUGE
-	gun_type = GUN_SEMIAUTO
-
+//Vanguard
 
 /obj/item/gun/projectile/automatic/radcarbine
 	name = "Radium Carbine"
