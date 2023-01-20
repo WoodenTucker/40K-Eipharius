@@ -277,7 +277,6 @@
 
 
 //WARHAMMER 40 THOUSAND IMPERIAL BITCHES WITH BOLTERS!
-//Last time modified by: Walker9
 
 
 /obj/item/melee/energy/powersword //basis for other power weapons
@@ -359,8 +358,8 @@
 	weapon_speed_delay = 7
 	edge = 1
 	sharp = 1
-	block_chance = 40 //not the best block chance, but, you can have two of them!
-	sales_price = 80
+	block_chance = 20 //shitty block chance i know, but people want it to not be good at blocking so uh yea.
+	sales_price = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_SMALL //quick attacks
 	atom_flags = 0

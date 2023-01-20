@@ -588,9 +588,8 @@ Pilgrim Fate System
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
-		H.add_skills(rand(10,14),rand(1,7),1,1,1) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.fully_replace_character_name(random_ogryn_name())
 		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")
 
 

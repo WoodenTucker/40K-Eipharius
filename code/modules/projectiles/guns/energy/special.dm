@@ -100,28 +100,28 @@ obj/item/gun/energy/staff/focus
 			projectile_type = /obj/item/projectile/forcebolt"
 	*/
 
-//OP SHIT, DO NOT MAKE CRAFTABLE
+
 /obj/item/gun/energy/phosphor
 	name = "Phosphor Blast Pistol"
-	desc = "A rare and dangerous weapon, favoured by Tech Priests and Skitarii Alphas, this weapon is supposed to deliver the killing blow by putting the target on fire until they melt to death, it is also known to cause fires and be incredibly toxic to any biological matter."
+	desc = "A rare and dangerous weapon, used by powerful Magi and Old Skitarii Alphas, this weapon is supposed to deliver the killing blow by burning it's target to death, however, despite it's ability to pass through heavy armor easily, it has a short range."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "teslar"
 	item_state = "teslar"
 	slot_flags = SLOT_BACK|SLOT_BELT
 	force = 8
+	str_requirement = 15 //kinda heavy due to it's giant cell.
 	max_shots = 5 //not lore accurate, but this is better.
 	w_class = ITEM_SIZE_NORMAL
-	one_hand_penalty= 1
 	burst_delay = 2
-	move_delay = 2
-	fire_delay = 8 // it kills in 2 shots due to pain, it needs atleast a minor delay
+	move_delay = 1 //its a small as fuck pistol, it may be poisonous but its small.
+	fire_delay = 8 
 	charge_cost = 300
-	cell_type = /obj/item/cell/lasgun // lasgun cell makes more sense
-	ammoType = /obj/item/cell/lasgun
+	cell_type = /obj/item/cell/plasma
+	ammoType = /obj/item/cell/plasma
 	projectile_type = 	/obj/item/projectile/energy/phosphor
 	self_recharge = 1
 
-//MODIFIED gauss rifle cause of the sprite, that way no one gets confused.
+
 /obj/item/gun/energy/gauss
 	name = "Gauss Rifle"
 	desc = "A deadly weapon wielded by Necron Warriors"

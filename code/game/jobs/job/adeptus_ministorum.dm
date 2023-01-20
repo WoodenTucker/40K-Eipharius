@@ -31,14 +31,14 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Confessor [current_name]")
-		H.add_stats(rand(9,12), rand(9,12), rand(9,12), rand(14,18)) //frail and holy
-		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,7)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(11,14), rand(11,14), rand(9,12), rand(14,18)) //frail and holy
+		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,8))
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
 		H.say(":n [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Confessor and the leader of Eipharius' Monastary. In charge of the Sisters and any other fanatical members. Lead sermons in the Emperor’s name. Ensure the proper rites are being observed. Your rites. Feel free to get a little heretical. You’re just interpreting the Truth in a different way. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Confessor and the leader of Eipharius' Monastary. In charge of the Sisters and any other fanatical members. Lead sermons in the Emperor’s name. Ensure the proper rites are being observed. Your rites. Feel free to get practical, you were highly trained in torture and leading, however, your combat skills are rusty. </font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -196,7 +196,7 @@
 // Battle Sister
 
 /datum/job/sistersuperior
-	title = "Sister Superior" // titles and landmarks need change
+	title = "Sister Superior" 
 	department = "Ministorum"
 	department_flag = MED
 	total_positions = 1
@@ -218,7 +218,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 1
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -226,8 +226,9 @@
 		H.fully_replace_character_name("Sister Superior [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(rand(18,22), rand(18,20), rand(18,20), 13)
-		H.add_skills(rand(9,13),rand(9,13),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
+		//"BUT THEY ARE DIVINE!!!" don't care, Sister superior is human, stop simping, im still giving them very GOOD stats.
+		H.add_stats(rand(17,20), rand(17,20), rand(18,20), 13) 
+		H.add_skills(rand(9,11),rand(9,11),rand(6,8),rand(3,7),rand(4,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
@@ -260,7 +261,7 @@
 	minimal_player_age = 22
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Deacon and the Adeptas Sororitas"
+	supervisors = "The Confessor and the Adeptas Sororitas"
 	selection_color = "#FCFBFA"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
@@ -287,8 +288,8 @@
 		..()
 		H.fully_replace_character_name("Hospitaller [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(12,15), rand(12,15), rand(10,14), rand(16,18))
-		H.add_skills(rand(6,8),rand(3,7),rand(8,10),rand(3,5),rand(8,10)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(14,18), rand(14,18), rand(10,14), rand(17,18)) //nice stats
+		H.add_skills(rand(6,8),rand(6,8),rand(8,10),rand(3,5),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_village, access_abbess)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -304,6 +305,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a sister of the Ordos Hospitaller, serving under The Confessor to maintain the health and divinity of the township. Ensure the Novice Hospitallers of your Chapel are properly trained in the medical field.</font></b></span>")
 
 
+//NOVICE - has not begun their training yet
 /datum/job/novice
 	title = "Novice"
 	department = list("Ministorum", "Medical")
@@ -338,8 +340,8 @@
 		..()
 		H.fully_replace_character_name("Novice [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(16,18))
-		H.add_skills(rand(6,9),rand(5,9),rand(6,8),rand(2,4),rand(6,8)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
+		H.add_skills(rand(5,7),rand(5,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery //same skills as cadet
 		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -370,21 +372,21 @@
 	access = list(access_advchapel, access_medical, access_village)
 	minimal_access = list(access_advchapel, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/preacher
-	auto_rifle_skill = 8
-	semi_rifle_skill = 8
-	sniper_skill = 8
-	shotgun_skill = 8
-	lmg_skill = 8
-	smg_skill = 8
-	cultist_chance = 50 // preaching the word of... lorgar
+	auto_rifle_skill = 6
+	semi_rifle_skill = 6
+	sniper_skill = 6
+	shotgun_skill = 6
+	lmg_skill = 6
+	smg_skill = 6
+	cultist_chance = 75 preaching the word of.... lorgar
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Preacher [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,17), rand(14,17), rand(10,14), rand(11,14))
-		H.add_skills(rand(8,11),rand(5,9),rand(6,8),rand(2,4),rand(1,4)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(14,16), rand(14,16), rand(10,14), rand(11,14))
+		H.add_skills(rand(5,9),rand(5,9),rand(6,8),rand(2,4),rand(1,4)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -393,7 +395,7 @@
 		H.warfare_faction = IMPERIUM
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Preacher. You are apart of the Imperial Cult, yet still not apart of the proper priesthood like the Confessor is. It is your job to spread the Truth to this new colony and it's ignorant masses, as well as guiding the already faithful.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Preacher. You are apart of the Imperial Cult, yet still not apart of the proper priesthood like the Confessor is. It is your job to spread the Truth to this new colony and it's original colonizers, as well as guiding the already faithful.</font></b></span>")
 
 
 // sob outfits
