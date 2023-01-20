@@ -23,7 +23,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 35 // wrong kind of imperial truth
+	cultist_chance = 50 // wrong kind of imperial truth
 
 
 
@@ -31,8 +31,8 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Confessor [current_name]")
-		H.add_stats(rand(16,18), rand(15,18), rand(16,18), rand(14,18)) //power and angry, would beat up thousands of heretics if he didnt have sisters for it.
-		H.add_skills(rand(6,10),rand(5,6),rand(5,7),3,rand(6,10)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(11,14), rand(11,14), rand(9,12), rand(14,18)) //frail and holy
+		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,8))
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
