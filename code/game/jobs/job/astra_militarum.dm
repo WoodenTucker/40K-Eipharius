@@ -255,7 +255,7 @@ datum/job/ig/bullgryn
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(20,30), rand(17,19), rand(15,18), rand (2,5)) //bullgryn are stronger and quicker than normal ogryn due to their advanced training
-		H.add_skills(rand(10,15),rand(5,8),1,1,1) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(10,15),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>MA BEST FREND'S DA EMPRAH. FREND OF GOBERNOR. FREND OF DA COMESSAR. PROTECT DA LITTL UN'S!</font></b></span>")
 
