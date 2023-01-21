@@ -29,7 +29,7 @@
 		L.forceMove(src)
 		contains = 2
 		update_icon()
-		return
+		return/* // spiderling removed so no need for this for now
 	else if(istype(A, /obj/effect/spider/spiderling))
 		var/obj/effect/spider/spiderling/S = A
 		user.visible_message("<span class='notice'>[user] scoops [S] into \the [src].</span>", "<span class='notice'>You scoop [S] into \the [src].</span>")
@@ -38,7 +38,7 @@
 		contains = 3
 		update_icon()
 		return
-
+*/
 /obj/item/glass_jar/attack_self(var/mob/user)
 	switch(contains)
 		if(1)
@@ -55,7 +55,7 @@
 			contains = 0
 			update_icon()
 			return
-		if(3)
+/*		if(3)
 			for(var/obj/effect/spider/spiderling/S in src)
 				S.dropInto(user.loc)
 				user.visible_message("<span class='notice'>[user] releases [S] from \the [src].</span>", "<span class='notice'>You release [S] from \the [src].</span>")
@@ -63,7 +63,7 @@
 			contains = 0
 			update_icon()
 			return
-
+*/
 /obj/item/glass_jar/attackby(var/obj/item/W, var/mob/user)
 	if(istype(W, /obj/item/spacecash))
 		if(contains == 0)
@@ -100,11 +100,11 @@
 				victim.pixel_y = 6
 				underlays += victim
 				SetName("glass jar with [M]")
-				desc = "A small jar with [M] inside."
+				desc = "A small jar with [M] inside."/*
 		if(3)
 			for(var/obj/effect/spider/spiderling/S in src)
 				var/image/victim = image(S.icon, S.icon_state)
 				underlays += victim
 				SetName("glass jar with [S]")
-				desc = "A small jar with [S] inside."
+				desc = "A small jar with [S] inside."*/
 	return
