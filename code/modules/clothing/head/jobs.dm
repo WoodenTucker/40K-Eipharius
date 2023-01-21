@@ -657,3 +657,11 @@
  	item_state = "guard_cap"
  	cold_protection = HEAD
  	sales_price = 5
+/obj/item/clothing/head/helmet/prince
+	name = "Prince's Helm"
+	desc = "The Exquisite Helm of the Border Prince"
+	icon_state = "prince"
+	item_state = "prince"
+	armor = list(melee = 65, bullet = 65, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
+	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
+	sales_price = 60

@@ -6,6 +6,13 @@
 	icon_state = "trenchcloak"
 	item_state = "trenchcloak"
 
+/obj/item/clothing/accessory/prince
+	name = "Prince's Royal Cloak"
+	desc = "The Prince's Royal Cloak."
+	armor = list(melee = 60, bullet = 65, laser = 35, energy = 35, bomb = 30, bio = 0, rad = 10)
+	icon_state = "prince"
+	item_state = "prince"
+
 /obj/item/clothing/accessory/bcloak
 	name = "brown cloak"
 	desc = "A dusty brown cloak."

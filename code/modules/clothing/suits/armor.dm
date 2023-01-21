@@ -241,6 +241,14 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	sales_price = 15
 
+// OLD WORLD
+
+/obj/item/clothing/suit/armor/prince
+	name = "Prince's Plate"
+	desc = "The Border Prince's personal Plate Armor"
+	icon_state = "prince"
+	item_state = "prince"
+
 // Tau
 
 /obj/item/clothing/suit/armor/fwarmor
@@ -574,7 +582,6 @@ obj/item/clothing/suit/armor
 	desc = "TODO"
 	icon_state = "newguard"
 	item_state = "newguard"
-
 
 /obj/item/clothing/suit/armor/guardsman/carapace
 	name = "Cadian Pattern Flak Armour - Carapace"
