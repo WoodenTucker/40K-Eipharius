@@ -338,6 +338,29 @@
 	caliber = "galvanic"
 	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/fire
 
+/obj/item/ammo_casing/galvanic/emp
+	name = "galvanic rifle emp casings"
+	desc = "A galvanic rifle emp casing"
+	icon_state = "bshell"
+	spent_icon = "bshell-spent"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/emp
+
+/obj/item/ammo_casing/galvanic/airburst
+	name = "galvanic rifle airburst casings"
+	desc = "A galvanic rifle airburst casing"
+	icon_state = "blshell"
+	spent_icon = "blshell-spent"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/airburst
+
+/obj/item/ammo_casing/galvanic/pain
+	name = "galvanic rifle stun casings"
+	desc = "A galvanic rifle stun casing"
+	icon_state = "stunshell"
+	spent_icon = "stunshell-spent"
+	caliber = "galvanic"
+	projectile_type = /obj/item/projectile/bullet/rifle/galvanic/pain
 
 /obj/item/ammo_casing/radcarbine
 	name = "radcarbine casings"
