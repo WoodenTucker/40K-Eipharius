@@ -1459,7 +1459,7 @@ kultrinium
 	if(isAutochisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Cognis Pattern Heavy Stubber", "Galvanic Rifle", "Plasma Pistol", "Ryza Pattern Hot-Shot Lasgun", "Plasma Flasks", "Mark IV .338 Stub Rifle", "Bolt Pistol", "Incendiary Galvanic Rifle Ammo", "Radium Carbine Ammo", "Radium Pistol Ammo") //lists all possible crafting choices
+		var/craftingchoices = list("Cognis Pattern Heavy Stubber", "Galvanic Rifle", "Plasma Pistol", "Ryza Pattern Hot-Shot Lasgun", "Plasma Flasks", "Mark IV .338 Stub Rifle", "Bolt Pistol", "Incendiary Galvanic Rifle Ammo", "Radium Carbine Ammo", "Radium Pistol Ammo", "Galvanic Rifle EMP Ammo", "Galvanic Rifle Airburst Ammo", "Galvanic Rifle Stun Ammo") //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -1531,6 +1531,26 @@ kultrinium
 				src.ismarked = 1
 				src.name = "Adamantium Ingot (Radium Pistol Ammo)"
 
+			if("Galvanic Rifle EMP Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Galvanic Rifle EMP Ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 11
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Galvanic Rifle EMP Ammo)"
+
+			if("Galvanic Rifle Airburst Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Galvanic Rifle Airburst Ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 12
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Galvanic Rifle Airburst Ammo)"
+
+			if("Galvanic Rifle Stun Ammo")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Galvanic Rifle Stun Ammo.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 13
+				src.ismarked = 1
+				src.name = "Adamantium Ingot (Galvanic Rifle Stun Ammo)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -1631,6 +1651,39 @@ kultrinium
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(11)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Galvanic Rifle EMP Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Galvanic Rifle EMP Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(12)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Galvanic Rifle Airburst Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Galvanic Rifle Airburst Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(13)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into blessed Galvanic Rifle Stun Ammo! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Adamantium Ingot (Galvanic Rifle Stun Ammo)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -1706,3 +1759,20 @@ kultrinium
 				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
 				new /obj/item/ammo_magazine/radcarbine/radpistol(user.loc)
 				qdel(src)
+				return
+			if(11)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/galvanic/emp(user.loc)
+				new /obj/item/ammo_magazine/galvanic/emp(user.loc)
+				new /obj/item/ammo_magazine/galvanic/emp(user.loc)
+				qdel(src)
+				return
+			if(13)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/ammo_magazine/galvanic/pain(user.loc)
+				new /obj/item/ammo_magazine/galvanic/pain(user.loc)
+				new /obj/item/ammo_magazine/galvanic/pain(user.loc)
+				qdel(src)
+				return
