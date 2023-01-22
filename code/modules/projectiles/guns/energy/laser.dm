@@ -381,7 +381,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Portsmith W. Laspistol"
 	desc = "The Laspistol variant of the Portsmith W. Lasrifle. Cheap, slow but better than nothing. Uses small lascells"
 	icon_state = "semip"
-	fire_delay = 3.5
+	fire_delay = 5.5
 	charge_cost = 140
 	sales_price = null
 	charge_meter = FALSE

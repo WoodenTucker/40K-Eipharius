@@ -4,8 +4,8 @@
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
 /obj/item/gun/projectile/shotgun/pump/boltaction
-	name = "\improper Boscolet Pattern Stub Rifle"
-	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
+	name = "\improper Boscelot Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscelot is a standard rifle pattern, firing large-bore rounds."
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
@@ -77,8 +77,8 @@
 		qdel(src)
 */
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
-	name = "\improper Boscolet Pattern Stub Rifle"
-	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
+	name = "\improper Boscelot Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscelot Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
@@ -407,7 +407,7 @@
 
 /obj/item/gun/projectile/automatic/messina
 	name = "Messina Pattern Autogun"
-	desc = "A locally produced pattern, chambered in 5.56 and not the highest quality material, to say the least..."
+	desc = "A locally produced pattern, chambered in 5.56 and not the highest quality material, to say the least...At least it's automatic"
 	icon_state = "autogun_agrip" // Object Icon
 	item_state = "autorifle" // On-Mob
 	unloaded_icon = "autogun_agrip-e" // Object Icon

@@ -313,8 +313,8 @@
 	speak_chance = 75
 	turns_per_move = 50
 	speed = 5
-	maxHealth = 100
-	health = 100
+	maxHealth = 350
+	health = 350
 	response_help  = "pats"
 	response_disarm = "kicks aside"
 	response_harm   = "stomps"
