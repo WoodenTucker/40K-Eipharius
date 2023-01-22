@@ -132,7 +132,7 @@
 
 
 /obj/item/gun/projectile/shotgun/doublebarrel
-	name = "\improper MS Doom"
+	name = "\improper Double Barrel Shotgun"
 	desc = "Two shots. That's all you'll ever need."
 	icon_state = "dshotgun"
 	item_state = "dshotgun"

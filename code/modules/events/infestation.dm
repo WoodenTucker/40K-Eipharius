@@ -19,7 +19,7 @@
 	var/area/location
 	var/vermin
 	var/vermstring
-
+/*
 /datum/event/infestation/start()
 	var/list/vermin_turfs
 	var/attempts = 3
@@ -60,11 +60,6 @@
 			vermin_turfs.Remove(T)
 			num--
 
-			var/spawn_type = pick(spawn_types)
-			var/obj/effect/spider/spiderling/S = new spawn_type(T)
-			if(istype(S))
-				S.amount_grown = -1
-
 /datum/event/infestation/announce()
 	command_announcement.Announce("Bioscans indicate that [vermstring] have been breeding in \the [location]. Clear them out, before this starts to affect productivity.", "Major Bill's Shipping Critter Sensor")
 
@@ -80,7 +75,7 @@
 		log_debug("Vermin infestation failed to find viable turfs in \the [location].")
 		return
 	return vermin_turfs
-
+*/
 #undef LOC_KITCHEN
 #undef LOC_ATMOS
 #undef LOC_INCIN

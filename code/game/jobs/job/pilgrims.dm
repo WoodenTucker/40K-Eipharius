@@ -395,7 +395,7 @@ Pilgrim Fate System
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
-	mask = /obj/item/clothing/mask/bandana
+	mask = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = /obj/item/gun/projectile/revolver/villiers
 	backpack_contents = list(

@@ -379,8 +379,6 @@
 	sales_price = 15
 	weapon_speed_delay = 9
 
-
-
 /obj/item/melee/classic_baton/daemonhammer
 	name = "Daemonhammer"
 	desc = "A power weapon of incredible legend and stature amongst the Ordos Malleus, this Daemonhammer has been used by countless Inquisitor's in their conflict against the unholy creatures of chaos."
@@ -399,174 +397,6 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
 	sales_price = 0
-
-// CHAINSWORDS
-
-/obj/item/melee/chain
-	name = "Messina Pattern Chainsword"
-	desc = "A basic chainsword constructed in the small scale forges of Eipharius itself. Cheaped out on quality, at least its still a chainsword!"
-	icon_state = "mercychainsword"
-	item_state = "mercychainsword"
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 15
-	force = 35
-	force_wielded = 40
-	armor_penetration = 28 // chainswords should have high AP. this is generic however and should be lowish
-	block_chance = 15 // chainswords should have relatively low block chance. Swords/spears are for parrying. chains are for rip n tear, sharp n edge
-	sharp = 1
-	edge = 1
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 10
-	sales_price = 40
-	w_class = ITEM_SIZE_NORMAL
-
-/obj/item/melee/chain/guard
-	name = "Imperial Guard chainsword"
-	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
-	icon_state = "guardchain" // broken for some reason currently. use inq as stand in
-	item_state = "inqchainsword"
-	w_class = ITEM_SIZE_NORMAL
-	weapon_speed_delay = 10
-	armor_penetration = 35
-
-/obj/item/melee/chain/gold
-	name = "Terra Pattern Chainsword" // this is mostly an ornamental chainsword. Make it low tier. its mostly drip.
-	desc = "A golden ornamental chainsword, overburdened with it's expensive metal. It is cumbersome and ornamental. At least it's almost as shiny as a Custodes."
-	icon_state = "goldchain"
-	item_state = "inqchainsword"
-	weapon_speed_delay = 16 // gold heavy
-	sales_price = 90 //only RT has it. if made craftable, decrease value.
-
-/obj/item/melee/chain/mercycs
-	name = "Locke Pattern Double-Edged Chainsword"
-	desc = "Nicknamed 'Mercy', This Chainsword is designed for an absolute lunatic. With two ripping edges for maximum carnage. Intended for two handed use. "
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "mercychainswordold"
-	item_state = "mercychainsword"
-	wielded_icon = "mercychainsword"
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 16
-	force = 40
-	force_wielded = 65
-	armor_penetration = 45
-	block_chance = 10
-	sharp = 1
-	edge = 1
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 10
-	sales_price = 55
-	w_class = ITEM_SIZE_NORMAL
-
-/obj/item/melee/chain/inqcs
-	name = "Drusian Pattern Chainsword"
-	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, Designed solely to smite the filthy xenos."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "inqchainsword"
-	item_state = "inqchainsword"
-	wielded_icon = "inqchainsword"
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 16
-	force_wielded = 55
-	force = 45
-	armor_penetration = 75
-	block_chance = 25
-	sharp = 1
-	edge = 1
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 10
-	sales_price = 60
-	w_class = ITEM_SIZE_NORMAL
-
-/obj/item/melee/chain/pcsword
-	name = "Mark I Pattern Chainsword"
-	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "pcsword"
-	item_state = "pcsword"
-	wielded_icon = "pcsword"
-	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	str_requirement = 17
-	force = 50
-	force_wielded = 60
-	armor_penetration = 85
-	block_chance = 20 //while that is weaker than the other chainswords, its balanced if you consider astartes stats
-	sharp = 1
-	edge = 1
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	weapon_speed_delay = 9
-	sales_price = 110 //not common at all
-	w_class = ITEM_SIZE_LARGE //slow
-
-
-/obj/item/melee/chain/pcsword/eviscerator
-	name = "Eviscerator Pattern Chainsword"
-	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, It's a absurdly large, two-handed chainsword. Almost useless one handed."
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "eviscerator"
-	item_state = "eviscerator"
-	wielded_icon ="eviscerator"
-	str_requirement = 18
-	force = 25 // it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 80
-	armor_penetration = 70
-	block_chance = 10
-	sharp = 1
-	edge = 1
-	w_class = ITEM_SIZE_HUGE //slow
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
-	weapon_speed_delay = 12
-	sales_price = 70
-
-/obj/item/melee/chain/pcsword/klaw
-	name = "Power Klaw"
-	desc = "Da bestest maylay weapon for any self respektin Nob boy. Da Mekboys made sure it pakz a big punch! Uz yer other hand to lift et, its supa big!"
-	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "pklaw"
-	item_state = "pklaw"
-	wielded_icon = "pklaw"
-	str_requirement = 16
-	force = 45
-	force_wielded = 70
-	armor_penetration = 85
-	block_chance = 5
-	sharp = 1
-	edge = 1
-	w_class = ITEM_SIZE_HUGE //slow
-	hitsound = 'sound/weapons/chainsword.ogg'
-	drop_sound = 'sound/items/handle/axe_drop.ogg'
-	equipsound = 'sound/items/equip/axe_equip.ogg'
-	grab_sound = 'sound/items/handle/axe_grab.ogg'
-	grab_sound_is_loud = TRUE
-	slot_flags = null // change when no longer using backpack to spawn i
-	attack_verb = list("klaw'd", "sawed", "cleaved", "zog'd", "cut")
-	weapon_speed_delay = 16 // its zogging huge
-	sales_price = 70
-
-/obj/item/melee/chain/pcsword/klaw/dropped() // only way to get it is the backpack currently. And power sword augment. This should be replaced.
-	..()
-	spawn(1) if(src) qdel(src)
 
 // KNIVES AND SMALL WEAPONS //
 // KNIVES AND SMALL WEAPONS //
@@ -606,7 +436,7 @@
 		remove_shrapnel(C, user)
 	else
 		..()
-		
+
 
 /obj/item/material/sword/combat_knife/rare
 	name = "trench knife"
@@ -660,8 +490,8 @@
 	force_wielded = 35
 	edge = 1
 	str_requirement = 18 //you really shouldn't be using it if you are below 18
-	
-	
+
+
 /obj/item/material/scythe
 	name = "scythe"
 	icon = 'icons/obj/weapons/melee/misc.dmi'
