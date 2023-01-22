@@ -496,18 +496,16 @@
 
 /obj/item/projectile/bullet/rifle/galvanic/airburst/on_hit(var/atom/target)
 	if(ishuman(target))
-		var/mob/living/carbon/human/H = target_mob
+		var/mob/living/carbon/human/H = target
 		var/obj/item/organ/external/affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
 		affecting.droplimb(0, DROPLIMB_BLUNT)
 		if(prob(25))
-			var/mob/living/carbon/human/H = target_mob
-			var/obj/item/organ/external/affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+			affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
 			affecting.droplimb(0, DROPLIMB_BLUNT)
 			if(prob(25))
-				var/mob/living/carbon/human/H = target_mob
-				var/obj/item/organ/external/affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+				affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
 				affecting.droplimb(0, DROPLIMB_BLUNT)
-				return 
+				return
 			else
 				return
 		else
