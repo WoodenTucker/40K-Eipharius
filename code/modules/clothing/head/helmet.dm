@@ -1,3 +1,5 @@
+// Commented out means the sprite could be usable at a later date or has valuable code. Something deleted is no longer needed due to updating of sprites. //
+
 /obj/item/clothing/head/helmet
 	name = "helmet"
 	desc = "Reinforced headgear. Protects the head from impacts."
@@ -11,8 +13,8 @@
 	//restricted_accessory_slots = list(ACCESSORY_SLOT_HELM_C)
 	item_flags = ITEM_FLAG_THICKMATERIAL
 	body_parts_covered = HEAD
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 25, bomb = 30, bio = 0, rad = 10)
-	sales_price = 0
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 10)
+	sales_price = 5
 	flags_inv = BLOCKHEADHAIR
 	cold_protection = HEAD
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -25,7 +27,7 @@
 
 /obj/item/clothing/head/helmet/attackby(obj/item/I, mob/user)
 	..()
-	if(istype(I, /obj/item/material/sword/combat_knife))
+	if(istype(I, /obj/item/melee/sword/combat_knife))
 		if(engraved)
 			return
 		to_chat(user, "You begin to engrave something on your helmet.")
@@ -37,21 +39,6 @@
 			return
 		return
 
-
-
-
-/obj/item/clothing/head/helmet/nt
-	name = "\improper corporate security helmet"
-	desc = "A helmet with 'CORPORATE SECURITY' printed on the back in red lettering."
-	icon_state = "helmet_nt"
-
-/obj/item/clothing/head/helmet/pcrc
-	name = "\improper PCRC helmet"
-	desc = "A helmet with 'PRIVATE SECURITY' printed on the back in cyan lettering."
-	icon_state = "helmet_pcrc"
-
-/obj/item/clothing/head/helmet/nt/guard
-	starting_accessories = list(/obj/item/clothing/accessory/armor/helmcover/nt)
 
 /obj/item/clothing/head/helmet/tactical
 	name = "tactical helmet"
@@ -83,7 +70,7 @@
 	armor = list(melee = 40, bullet = 40, laser = 10, energy = 35, bomb = 30, bio =0, rad = 10)
 	sales_price = 10
 
-
+/*
 /obj/item/clothing/head/helmet/riot
 	name = "riot helmet"
 	desc = "It's a helmet specifically designed to protect against close range attacks."
@@ -94,7 +81,7 @@
 	siemens_coefficient = 0.7
 	action_button_name = "Toggle Visor"
 
-/obj/item/clothing/head/helmet/riot/attack_self(mob/user as mob)
+/obj/item/clothing/head/helmet/riot/attack_self(mob/user as mob) // knight visor code steal
 	if(src.icon_state == initial(icon_state))
 		src.icon_state = "[icon_state]_up"
 		to_chat(user, "You raise the visor on the [src].")
@@ -102,33 +89,7 @@
 		src.icon_state = initial(icon_state)
 		to_chat(user, "You lower the visor on the [src].")
 	update_clothing_icon()
-
-/obj/item/clothing/head/helmet/ablative
-	name = "ablative helmet"
-	desc = "A helmet made from advanced materials which protects against concentrated energy weapons."
-	icon_state = "helmet_reflect"
-	valid_accessory_slots = null
-	armor = list(melee = 5, bullet = 5, laser = 62, energy = 50, bomb = 5, bio = 2, rad = 0)
-	siemens_coefficient = 0
-	sales_price = 25
-
-/obj/item/clothing/head/helmet/ballistic
-	name = "ballistic helmet"
-	desc = "A helmet with reinforced flak plating to protect against ballistic projectiles."
-	icon_state = "helmet_bulletproof"
-	valid_accessory_slots = null
-	armor = list(melee = 35, bullet = 40, laser = 30, energy = 5, bomb = 30, bio = 5, rad = 5)
-	siemens_coefficient = 0.7
-
-/obj/item/clothing/head/helmet/swat
-	name = "\improper SWAT helmet"
-	desc = "They're often used by highly trained Swat Members."
-	icon_state = "helmet_merc"
-	armor = list(melee = 50, bullet = 58, laser = 10,energy = 25, bomb = 50, bio = 10, rad = 10)
-	cold_protection = HEAD
-	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-	siemens_coefficient = 0.5
-	sales_price = 25
+	*/
 
 /obj/item/clothing/head/helmet/thunderdome
 	name = "\improper Thunderdome helmet"
@@ -291,6 +252,12 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 30
 
+/obj/item/clothing/head/helmet/fw/breacher
+	name = "fire warrior Helmet"
+	desc = "The white and bright helmet of a Tau Breacher."
+	icon_state = "tbrea"
+	item_state = "tbrea"
+
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"
 	desc = "A advanced helmet produced for Tau Fire Caste Sharpshooters, its made out of some pretty lightweight ceramite and some bits of steel, its probably able to take a few shots before becoming useless."
@@ -302,6 +269,8 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 35
+
+
 // Eldar
 
 /obj/item/clothing/head/helmet/eldar

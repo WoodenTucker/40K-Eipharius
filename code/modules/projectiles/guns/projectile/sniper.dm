@@ -1,3 +1,85 @@
+/obj/item/gun/projectile/heavysniper
+	name = "Agrinpinaa Pattern Heavy Sniper Rifle"
+	desc = "The Agrinpinaa Pattern Heavy Sniper Rifle is used by the Imperial Guard for long-range anti-personnel and anti-materiel work."
+	icon_state = "heavysniper"
+	item_state = "heavysniper"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	caliber = "14.5mm"
+	screen_shake = 2 //extra kickback
+	handle_casings = HOLD_CASINGS
+	load_method = SINGLE_CASING|SINGLE_LOAD
+	max_shells = 3
+	ammo_type = /obj/item/ammo_casing/a145
+	one_hand_penalty = 50
+	accuracy = 0
+	scoped_accuracy = 5 //increased accuracy over the LWAP because only one shot //Walker here, i doubt that this does anything, but imma just leave it in.
+	var/bolt_open = 0
+	wielded_item_state = "heavysniper-wielded"
+	bulletinsert_sound = 'sound/weapons/guns/interact/sniper_load.ogg'
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	gun_type = GUN_SNIPER
+	far_fire_sound = "sniper_fire"
+	sales_price = 90
+
+/obj/item/gun/projectile/heavysniper/update_icon()
+	..()
+	if(bolt_open)
+		icon_state = "heavysniper-open"
+	else
+		icon_state = "heavysniper"
+
+/obj/item/gun/projectile/heavysniper/examine(mob/user, distance)
+	. = ..()
+	if(bolt_open)//These guns do not chamber until their fired.
+		if(loaded.len)//However, fired rounds will eject automatically when the bolt is open, so there's a good chance the round is live.
+			to_chat(user, "There is a <span class='bnotice'>ROUND</span> in the chamber.")//But someone could still place a fired round into this gun, so best to just be generic.
+		else
+			to_chat(user, "<span class='danger'>The chamber is <b>EMPTY</b>.")
+
+/obj/item/gun/projectile/heavysniper/attack_self(mob/user as mob)
+	bolt_open = !bolt_open
+	if(bolt_open)
+		playsound(src, 'sound/weapons/guns/interact/bolt_open.ogg', 50)
+		if(chambered)
+			to_chat(user, "<span class='notice'>You work the bolt open, ejecting [chambered]!</span>")
+			playsound(src, casingsound, 100)
+			chambered.loc = get_turf(src)
+			loaded -= chambered
+			chambered = null
+		else
+			to_chat(user, "<span class='notice'>You work the bolt open.</span>")
+	else
+		to_chat(user, "<span class='notice'>You work the bolt closed.</span>")
+		bolt_open = 0
+		playsound(src, 'sound/weapons/guns/interact/bolt_close.ogg', 50)
+	add_fingerprint(user)
+	update_icon()
+
+/obj/item/gun/projectile/heavysniper/special_check(mob/user)
+	if(bolt_open)
+		to_chat(user, "<span class='warning'>You can't fire [src] while the bolt is open!</span>")
+		return 0
+	return ..()
+
+/obj/item/gun/projectile/heavysniper/load_ammo(var/obj/item/A, mob/user)
+	if(!bolt_open)
+		return
+	..()
+
+/obj/item/gun/projectile/heavysniper/unload_ammo(mob/user, var/allow_dump=1)
+	if(!bolt_open)
+		return
+	..()
+
+/obj/item/gun/projectile/heavysniper/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
 
 /obj/item/gun/energy/las/lasgun/longlas
 	name = "M35 'M-Galaxy' Longlas"
@@ -18,7 +100,7 @@
 	cell_type = /obj/item/cell/lasgun/hotshot || /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "las_musket"
-	sales_price = 0
+	sales_price = 70
 
 	firemodes = list(
 		list(mode_name="semi-automatic", move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
@@ -43,6 +125,51 @@
 	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
 	icon_state = "kriegsniper"
 	item_state = "las_musket"
+
+
+
+
+/obj/item/gun/projectile/automatic/galvanic/rifle
+	name = "Mark IV Arkhan Pattern Galvanic Rifle"
+	desc = "A semi automatic rifle, modelled after the martian flintlock weapons of the past, it uses servo-eletric rounds which send a powerful eletric current through the targets body while also tracking them."
+	icon_state = "galvrifle" 
+	item_state = "musket" 
+	loaded_icon = "galvrifle" 
+	unloaded_icon = "galvrifle" 
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	wielded_item_state = "las_musket"
+	unwielded_loaded_icon = "musket"
+	wielded_loaded_icon = "las_musket"
+	unwielded_unloaded_icon = "musket"
+	wielded_unloaded_icon = "las_musket"
+	caliber = "galvanic"
+	max_shells = 8 //+1 so technically 9.
+	str_requirement = 17
+	move_delay = 3
+	one_hand_penalty = 7
+	accuracy = 1.5 //extremely accurate
+	fire_delay = 4.9
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	magazine_type = /obj/item/ammo_magazine/galvanic
+	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
+	firemodes = list()
+	w_class = ITEM_SIZE_LARGE
+
+/obj/item/gun/projectile/automatic/galvanic/rifle/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+
+	toggle_scope(usr, 2)
+
+/obj/item/gun/projectile/automatic/galvanic/rifle/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+
+
+
+
 
 
 

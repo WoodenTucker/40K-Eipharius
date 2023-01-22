@@ -130,9 +130,9 @@
 		M.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 
-/*
+
 /obj/item/gun/projectile/shotgun/doublebarrel
-	name = "\improper MS Doom"
+	name = "\improper Double Barrel Shotgun"
 	desc = "Two shots. That's all you'll ever need."
 	icon_state = "dshotgun"
 	item_state = "dshotgun"
@@ -144,14 +144,14 @@
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
-	ammo_type = /obj/item/ammo_casing/shotgun/pellet
+	ammo_type = /obj/item/ammo_casing/shotgun
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg'
 	wielded_item_state = "dshotgun1"
 	gun_type = GUN_SHOTGUN //ITS A SHOTGUN
 	one_hand_penalty = 3
 	burst_delay = 0
 	var/broke_open = FALSE
-	sales_price = 23
+	sales_price = 5
 
 /obj/item/gun/projectile/shotgun/doublebarrel/update_icon()
 	..()
@@ -221,34 +221,6 @@
 	force = 5
 	one_hand_penalty = 0
 
-/obj/item/gun/projectile/shotgun/doublebarrel/flare
-	name = "signal shotgun"
-	desc = "A double-barreled shotgun meant to fire signal flash shells."
-	ammo_type = /obj/item/ammo_casing/shotgun/flash
-
-/obj/item/gun/projectile/shotgun/pump/boltaction
-	name = "\improper Stub Rifle" //I used a random rifle generator to come up with that.
-	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds."
-	icon_state = "mosin"
-	item_state = "mosin"
-	caliber = "a762"
-	bulletinsert_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
-	casingsound = 'sound/weapons/guns/misc/casingfall1.ogg'
-	pumpsound = 'sound/weapons/boltpump.ogg'
-	backsound = 'sound/weapons/guns/interact/rifle_boltback.ogg'
-	forwardsound = 'sound/weapons/guns/interact/rifle_boltforward.ogg'
-	ammo_type = /obj/item/ammo_casing/a762
-	wielded_item_state = "rifle-wielded"
-	block_chance = 25
-	gun_type = GUN_PISTOL
-	move_delay= 2.5
-	one_hand_penalty = 3
-	accuracy = 1
-	fire_delay= 4.5
-	sales_price = 15
-*/
-
-
 /obj/item/gun/projectile/meltagun
 	name = "Melta Rifle"
 	desc = "Melta Guns are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
@@ -265,10 +237,10 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 15 //ITS HEAVY
 	one_hand_penalty = 80 //who the fuck would try to use a meltagun with one hand?
-	block_chance = 30 //pretty big, could be used as a shield in theory considering how armored it is
+	block_chance = 2 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
 	accuracy = 3
 	fire_delay= 20
-	sales_price = 400 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
+	sales_price = 200 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
 

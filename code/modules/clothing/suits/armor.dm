@@ -241,6 +241,14 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	sales_price = 15
 
+// OLD WORLD
+
+/obj/item/clothing/suit/armor/prince
+	name = "Prince's Plate"
+	desc = "The Border Prince's personal Plate Armor"
+	icon_state = "prince"
+	item_state = "prince"
+
 // Tau
 
 /obj/item/clothing/suit/armor/fwarmor
@@ -256,6 +264,11 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 40
 
+/obj/item/clothing/suit/armor/fwarmor/breacher
+	name = "Breacher Armor"
+	desc = "The white and bright armor of a Tau Breacher."
+	icon_state = "tbrea"
+	item_state = "tbrea"
 
 // Ork
 
@@ -266,7 +279,7 @@ obj/item/clothing/suit/armor
 	item_state = "ork_m_armor"
 	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 25, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
-	allowed = list(/obj/item/gun/projectile/ork, /obj/item/material/sword/choppa)
+	allowed = list(/obj/item/gun/projectile/ork, /obj/item/melee/sword/choppa)
 	blood_overlay_type = "armor"
 	canremove = 0
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -522,6 +535,12 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/enforcer/newenforcer
+	name = "knightly jacket"
+	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
+	icon_state = "enforcer"
+	item_state = "enforcer"
+
 /obj/item/clothing/suit/armor/marshal
 	name = "Carapace Patrol Jacket"
 	desc = "The carapace patrol jacket worn by a Messina Marshal. Light and robust in the colour black, designed to protect against direct blasts and small arms fire."
@@ -534,10 +553,15 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer2/arbitrator // Don't use unless for events.
+/obj/item/clothing/suit/armor/arbitrator // arbites
 	name = "Patrol Armour - Arbitrator"
 	desc = "The flak armour worn by a Magistratum Arbitrator. Light and robust in the colour blue, designed to protect against blast and small arms fire."
-	armor = list(melee = 30, bullet = 25, laser = 20, energy = 30, bomb = 60, bio = 30, rad = 30)
+	icon_state = "Judge"
+	item_state = "Judge"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 20, bomb = 30, bio = 20, rad = 20)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 30
 
 //// ASTRA MILITARUM
@@ -553,6 +577,12 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/guardsman/newguard
+	name = "Terran Pattern Flak"
+	desc = "TODO"
+	icon_state = "newguard"
+	item_state = "newguard"
+
 /obj/item/clothing/suit/armor/guardsman/carapace
 	name = "Cadian Pattern Flak Armour - Carapace"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Flak Armour."
@@ -560,10 +590,11 @@ obj/item/clothing/suit/armor
 	item_state = "fharmor"
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)
 	sales_price = 35
+/*
 /obj/item/clothing/suit/armor/guardsman/carapace/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.4
-
+*/
 /obj/item/clothing/suit/armor/guardsman/bloodpact
 	name = "Khornate Armor"
 	desc = "War torn and suited to savage needs. This is the armor of a khornate warrior. It has certainly seen blood flown upon it."
@@ -635,6 +666,12 @@ obj/item/clothing/suit/armor
 	name = "Catachan Medicae Flak Vest"
 	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels. This one is worn by Catachan Combat Medicae." // Why are you gei?
 	icon_state = "mCatachan_Vest"
+
+/obj/item/clothing/suit/armor/catachan/flamerspecialist
+	name = "Catachan Flak Vest"
+	desc = "Unlike the common Cadian folks or famous Krieg guardsmen, the Catachans only wear their lightly protected Flak vest to protect their hairy masculine chests against bruises and sharpnels." // uh... yes, I know how it sounds
+
+
 
 /obj/item/clothing/suit/armor/valhallanarmor
 	name = "Valhallan Overcoat"

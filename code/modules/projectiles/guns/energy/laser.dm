@@ -310,7 +310,7 @@
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
-	sales_price = 90
+	sales_price = 65
 /*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
@@ -343,7 +343,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	armor_penetration = 0
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 20
+	sales_price = 10
 	wielded_item_state = "chaosppistol"
 
 /obj/item/gun/energy/las/laspistol/accatran
@@ -381,13 +381,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Portsmith W. Laspistol"
 	desc = "The Laspistol variant of the Portsmith W. Lasrifle. Cheap, slow but better than nothing. Uses small lascells"
 	icon_state = "semip"
-	fire_delay = 3.5
+	fire_delay = 5.5
 	charge_cost = 140
 	sales_price = null
 	charge_meter = FALSE
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 10
+	sales_price = 2
 
 /obj/item/gun/energy/las/laspistol/militarum
 	name = "Kantrael MG Laspistol"
@@ -397,7 +397,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 90
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 35
+	sales_price = 20
 
 	firemodes = list(
 		list(mode_name="semi-automatic",   burst=1, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=110),
@@ -418,7 +418,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Lucius-pattern Laspistol"
-	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge."
+	desc = "A standard-issue sidearm for the enlisted personnel, non-commissioned officers and commanding officers of the Death Korps of Krieg. Can overcharge to have the same output as a rifle"
 	icon_state = "luciuspistol"
 	force = 10
 	one_hand_penalty = 2.5
@@ -429,10 +429,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 120
 	cell_type = /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 45
+	sales_price = 25
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
+		list(mode_name="Overcharged", 	fire_delay = 8, charge_cost = 240, projectile_type = /obj/item/projectile/energy/las/lasgun),
 		)
 
 //Tau weapons
@@ -521,7 +522,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	self_recharge = 1
 	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat.
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 19 // something something its recharging
+	fire_delay = 0
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -529,10 +530,35 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType =/obj/item/cell/plasma
 	charge_cost = 1800
 	wielded_item_state = "ionrifle-wielded"
+	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
+	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
+	var/plasma_overheat_max = 100 // When the gun exploads
+	Fire(atom/target, mob/living/user)
+		if(plasma_overheat >= 50)
+			to_chat(user, "The barrel starts to glow! You can feel heat comming from it.")
+		if(plasma_overheat >= 60)
+			to_chat(user, "You can feel the skin on your hands starting to burn.")
+		if(plasma_overheat >= 90)
+			to_chat(user, "You see a bright light comming from your weapon!")
+		..()
+		plasma_overheat += 15 // adding 15 heat for every pulling of the trigger (learn not to spam the fucking gun)
+	Process()
+		..()
+		if(plasma_overheat >= 0)
+			plasma_overheat -= plasma_overheat_decay // so the gun actually cools down
+		else
+			plasma_overheat = 0 // keepin the gun overheat above -1
+			return
+		if(plasma_overheat > plasma_overheat_max)
+			explosion(src.loc, 0, 1, 2, 3) // explodes u, dealing a lot of damage, still (a little) chance to survive
+	//firemodes = list(
+		//list(mode_name="semi-charge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0),
+		//list(mode_name="overcharge", burst=1, fire_delay=19, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/pulse/pulserifle, charge_cost=150),
+	//) firemodes will be added when someone can figure out how to make more overheat build up on the overcharge mode
 
 /obj/item/gun/energy/pulse/plasma/rifle
 	name = "plasma rifle"
-	desc = "A plasma rifle. Don't roll a 1! (cannot explode yet)"
+	desc = "A plasma rifle. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
 	item_state = "ionrifle"
@@ -542,7 +568,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 12 //heavy af fam
 	accuracy = 0.4
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 19 // something something its cooling itself again
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
@@ -552,7 +577,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
-	desc = "A plasma pistol. Fun in a small package. Don't roll a 1! (cannot explode yet)"
+	desc = "A plasma pistol. Great for dealing with threats swiftly.It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
 	item_state = "pulse_carbine"
@@ -562,7 +587,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 7 //change later?
 	accuracy = 0
 	move_delay = 4 //it a pistol, but giga cool plasma
-	fire_delay = 17 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -572,7 +596,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
-	desc = "A plasma pistol blessed by the ruinous powers.  Don't roll a 1! (cannot explode yet)"
+	desc = "A plasma pistol blessed by the ruinous powers. You can feel the warp energy going trough it. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "chaosppistol"
 	item_state = "pulse_pistol"
@@ -580,7 +604,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 6 //change later?
 	accuracy = 0
 	move_delay = 3.5 //it a pistol
-	fire_delay = 16 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -592,7 +615,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	name = "Ryza Pattern Plasma Pistol"
-	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. (cannot explode yet)"
+	desc = "A plasma pistol from the forge world of Ryza. It's adamantium receiver is detailed with the inscriptions of Ryza Secundus' factorium. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "toasterppistol"
 	item_state = "pulse_pistol"
@@ -600,7 +623,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 7 //until plasma is better balanced, wield this fancy one.
 	accuracy = 1
 	move_delay = 3.5
-	fire_delay = 16
 	recharge_time = 10
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -609,10 +631,10 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 	sales_price = 140 //blessed by the omnissiah and made with adamantium
 
- /*// rare plasma pistols removed until proper plasma balance
+/*// rare plasma pistols removed until proper plasma balance
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	name = "seolite plasma pistol"
-	desc = "An ancient plasma pistol forged by seolite gun smiths, despite it's incredible age it shows no signs of decay.(cannot explode yet)"
+	desc = "An ancient plasma pistol forged by seolite gun smiths, despite it's incredible age it shows no signs of decay. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "xenolpistol"
 	item_state = "pulse_carbine"
@@ -622,7 +644,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 5 //change later?
 	accuracy = 1
 	move_delay = 3 //it a pistol, but giga cool plasma
-	fire_delay = 15 // unsure if decent. dont want fast fire rate
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
@@ -633,7 +654,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma/pistol/glock
 	name = "archeotech plasma pistol"
-	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay.(cannot explode yet)"
+	desc = "An archeotech plasma pistol, despite it's incredible age it shows no signs of decay. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "glockl100"
 	item_state = "pulse_pistol"
@@ -643,7 +664,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 4 //change later?
 	accuracy = 1
 	move_delay = 2 //it a pistol, but giga cool plasma
-	fire_delay = 14 // very good
 	self_recharge = 9 // very good
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol

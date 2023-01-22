@@ -69,6 +69,7 @@
 /turf/simulated/wall/stone
 	icon = 'icons/turf/stonewalls.dmi'
 	icon_state = "wall15"
+	desc = "A wall made from stone."
 	walltype = "stone"
 	integrity = 800
 

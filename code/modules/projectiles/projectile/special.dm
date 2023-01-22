@@ -18,16 +18,33 @@
 	heavy_effect_range = 0
 	light_effect_range = 1
 
-/obj/item/projectile/bullet/bolterrifle
-	name ="explosive bolt"
+/obj/item/projectile/bullet/bolterrifle 
+	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
-	damage = 50
+	damage = 65
+	armor_penetration = 75 //this is totally not cause its a .75
 	check_armour = "bullet"
+	weaken = -5 //removes stun from explosion
 	sharp = 1
 	edge = 1
 
 	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 2)
+		explosion(target, -1, 0, 1) // explosion is small, bullets will no longer be able to kill multiple people or nuke walls instantly
+		return 1
+		
+		
+/obj/item/projectile/bullet/bpistol 
+	name =".50 bolt" //.50, human sized bolters and bolt pistols
+	icon_state= "bolter"
+	damage = 45
+	check_armour = "bullet"
+	armor_penetration = 65
+	weaken = -5 //also removes stun from explosion
+	sharp = 1
+	edge = 1
+
+	on_hit(var/atom/target, var/blocked = 0)
+		explosion(target, -1, 0, 1) //explosion is weak as to not instantly destroy walls and kill people who werent shot at
 		return 1
 
 /obj/item/projectile/meteor
@@ -275,7 +292,7 @@
 	for(var/mob/living/I in loc)
 		if(istype(I,/mob/living/carbon/human))
 			var/mob/living/carbon/human/M = I
-			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) , /obj/item/clothing/suit/armor/ordohereticus)  || istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/ruststalker))
+			if(istype(M.wear_suit, /obj/item/clothing/suit/fire) || istype(M.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(M.wear_suit || istype(M.wear_suit, /obj/item/clothing/suit/sisterofbattle) , /obj/item/clothing/suit/armor/ordohereticus)  || istype(M.wear_suit, /obj/item/clothing/suit/storage/hooded/ruststalker) || istype(M.wear_suit, /obj/item/clothing/suit/armor/catachan/flamerspecialist))
 				M.show_message(text("Your suit protects you from the flames."), 1)
 				M.adjustFireLoss(rand(0 ,burnlevel*0.25)) //Does small burn damage to a person wearing one of the suits.
 				continue
@@ -287,15 +304,20 @@
 	firelevel -= 2 //reduce the intensity by 2 per tick
 	return
 
+
+
+
 //this is the PHOSPHOR energy gun, its really fucking OP in lore because it burns through almost anything until they are dead, im not sure why the pain is so huge tho.
 /obj/item/projectile/energy/phosphor
-	name = "phosphor bolt"
+	name = "phosphor splash"
 	icon_state = "pulse1"
 	fire_sound = 'sound/weapons/gunshot/gunshot_pistol.ogg'
-	damage = 25
-	agony = 200 //this is pain that passes through armor???
-	range =  15
-
+	damage = 65 //phosphor blasters are incredibly powerful weapons, almost never used
+	check_armour = "energy"
+	armor_penetration = 100 //phosphor blasters are incredibly good at penetrating heavy armor
+	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
+	
+/*
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
@@ -306,6 +328,7 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
+*/
 
 /obj/item/projectile/gauss
 	name = "Gauss "

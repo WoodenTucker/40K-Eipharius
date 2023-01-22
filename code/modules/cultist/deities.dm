@@ -6,7 +6,7 @@
 	faction = "Chaos"
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_bioprinted,
-						/datum/rune_recipe/khorne/offer_heart,
+						/datum/rune_recipe/khorne/offer_skull,
 						/datum/rune_recipe/khorne/knife_teeth,
 						/datum/rune_recipe/khorne/conversion)
 	possible_blessings = list(
@@ -27,6 +27,7 @@
 			/mob/living/carbon/human/proc/bringdeath,
 			/mob/living/carbon/human/proc/advance,
 			/mob/living/carbon/human/proc/aaaaaa,
+			/mob/living/carbon/human/proc/getmanualkhorne,
 			/mob/living/carbon/human/proc/draw_rune)
 
 /datum/heretic_deity/khorne/post_add(mob/living/carbon/human/NewMember)
@@ -50,7 +51,9 @@
 						/datum/rune_recipe/nurgle/plate,
 						/datum/rune_recipe/nurgle/mask,
 						/datum/rune_recipe/nurgle/nade,
-						/datum/rune_recipe/nurgle/blight)
+						/datum/rune_recipe/nurgle/blight,
+						/datum/rune_recipe/nurgle/nurgling,
+						/datum/rune_recipe/nurgle/offering)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/lordofflies,
 			/mob/living/carbon/human/proc/draw_rune,
@@ -70,7 +73,8 @@
 						/datum/rune_recipe/slaanesh/dagger,
 						/datum/rune_recipe/slaanesh/knife)
 	inherent_verbs = list(
-			/mob/living/carbon/human/proc/draw_rune)
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualslaanesh)
 
 /datum/heretic_deity/slaanesh/post_add(mob/living/carbon/human/NewMember)
 	GLOB.slaanesh_cult++
@@ -81,8 +85,13 @@
 	rune_type = /obj/effect/cleanable/heretic_rune/tzeentch
 	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
+						/datum/rune_recipe/tzeentch/fool,
 						/datum/rune_recipe/tzeentch/illusion,
 						/datum/rune_recipe/tzeentch/omniscience,
+						/datum/rune_recipe/tzeentch/skinless,
+						/datum/rune_recipe/tzeentch/transmutation,
+						/datum/rune_recipe/tzeentch/goldcoin,
+						/datum/rune_recipe/tzeentch/coppercoin,
 						/datum/rune_recipe/tzeentch/lens)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/tzeewehere,
@@ -95,7 +104,8 @@
 			/mob/living/carbon/human/proc/tzeechangecome,
 			/mob/living/carbon/human/proc/tzeebehold,
 			/mob/living/carbon/human/proc/tzeebelongtous,
-			/mob/living/carbon/human/proc/draw_rune)
+			/mob/living/carbon/human/proc/draw_rune,
+			/mob/living/carbon/human/proc/getmanualtzeentch)
 
 /datum/heretic_deity/tzeentch/post_add(mob/living/carbon/human/NewMember)
 	GLOB.tzeentch_cult++

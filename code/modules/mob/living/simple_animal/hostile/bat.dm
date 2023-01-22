@@ -6,7 +6,6 @@
 	icon_living = "swarm"
 	icon_dead = "swarm_dead"
 	icon_gib = "swarm_dead"
-	faction = "Chaos"
 	speak_chance = 0
 	turns_per_move = 3
 	meat_type = /obj/item/reagent_containers/food/snacks/meat

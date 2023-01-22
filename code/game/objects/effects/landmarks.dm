@@ -124,6 +124,9 @@ Template:
 	name = "Interrogator"
 	icon_state = "magis"
 
+/obj/effect/landmark/start/inqmagi/inquisitor
+	name = "Inquisitor"
+
 /obj/effect/landmark/start/inqmagi/arbitrator
 	name = "Arbitrator"
 
@@ -140,6 +143,10 @@ Template:
 	name = "Sergeant"
 	icon_state = "guards"
 
+/obj/effect/landmark/start/imperialguard/commissar
+	name = "Commissar"
+	icon_state = "guards"
+
 /obj/effect/landmark/start/imperialguard/sniper
 	name = "Imperial Guard Sniper"
 
@@ -151,6 +158,9 @@ Template:
 
 /obj/effect/landmark/start/imperialguard/guard
 	name = "Imperial Guardsman"
+
+/obj/effect/landmark/start/imperialguard/bullgryn
+	name = "Bullgryn"
 
 /obj/effect/landmark/start/imperialguard/recruit
 	name = "Imperial Guard Recruit"
@@ -291,8 +301,7 @@ Template:
 				/obj/item/clothing/head/helmet = 2,
 				/obj/item/clothing/head/valushanka = 2,
 				/obj/item/clothing/head/helmet/krieghelmet = 1,
-				/obj/item/clothing/mask/gas/krieg = 1,
-				/obj/item/clothing/head/helmet/riot = 1)
+				/obj/item/clothing/mask/gas/krieg = 1,)
 
 /obj/random/loot/lightmelee
 	name = "Light Melee"
@@ -300,12 +309,10 @@ Template:
 	icon_state = "lightmelee"
 
 /obj/random/loot/lightmelee/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 2,
-				/obj/item/material/sword/combat_knife/rare = 3,
-				/obj/item/material/sword/combat_knife/glaive = 1,
-				/obj/item/material/sword/combat_knife/bowie = 1,
+	return list(/obj/item/melee/sword/combat_knife = 2,
 				/obj/item/melee/telebaton = 1,
-				/obj/item/material/sword/machete = 1)
+				/obj/item/melee/sword/machete = 1,
+				/obj/item/melee/sword/shortsword = 1)
 
 /obj/random/loot/heavymelee
 	name = "Heavy Melee"
@@ -314,27 +321,14 @@ Template:
 
 /obj/random/loot/heavymelee/spawn_choices()
 	return list(/obj/item/melee/trench_axe = 13,
-				/obj/item/material/sword/cane = 4,
+				/obj/item/melee/sword/cane = 4,
 				/obj/item/melee/classic_baton/trench_club = 8,
-				/obj/item/melee/telebaton = 12,
-				/obj/item/melee/trench_axe/glaive/adamantine = 1,
-				/obj/item/melee/trench_axe/lance/adamantine = 1,
-				/obj/item/material/sword/cutro/adamantine = 1,
-				/obj/item/material/sword/broadsword/adamantine = 1,
-				/obj/item/melee/trench_axe/glaive = 6,
 				/obj/item/melee/trench_axe/bardiche = 6,
-				/obj/item/melee/trench_axe/lance = 4,
-				/obj/item/melee/trench_axe/bspear = 12,
-				/obj/item/material/sword/cutro = 10,
-				/obj/item/material/sword/broadsword = 6,
-				/obj/item/material/sword/machete = 16,
-				/obj/item/material/sword/machete/chopper = 10,
-				/obj/item/material/sword/machete/chopper/heavy = 6,
-				/obj/item/toy/katana = 6,
-				/obj/item/toy/katana/strong = 2,
+				/obj/item/melee/sword/broadsword = 6,
 				/obj/item/shield/riot = 2,
 				/obj/item/shield/riot/metal = 1,
-				/obj/item/material/sword/sabre = 4)
+				/obj/item/melee/sword/sabre = 4)
+
 /* // we dont really need all the melee
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
@@ -342,10 +336,10 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/meleespawner/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 1,
-				/obj/item/material/sword/combat_knife/rare = 2,
-				/obj/item/material/sword/combat_knife/bowie = 3,
-				/obj/item/material/sword/combat_knife/glaive = 1,
+	return list(/obj/item/melee/sword/combat_knife = 1,
+				/obj/item/melee/sword/combat_knife/rare = 2,
+				/obj/item/melee/sword/combat_knife/bowie = 3,
+				/obj/item/melee/sword/combat_knife/glaive = 1,
 				/obj/item/melee/trench_axe = 13,
 				/obj/item/material/sword/cane = 4,
 				/obj/item/melee/classic_baton/trench_club = 8,
@@ -354,16 +348,16 @@ Template:
 				/obj/item/melee/trench_axe/bardiche = 6,
 				/obj/item/melee/trench_axe/lance = 4,
 				/obj/item/melee/trench_axe/bspear = 12,
-				/obj/item/material/sword/cutro = 10,
-				/obj/item/material/sword/broadsword = 6,
-				/obj/item/material/sword/machete = 16,
-				/obj/item/material/sword/machete/chopper = 10,
+				/obj/item/melee/sword/cutro = 10,
+				/obj/item/melee/sword/broadsword = 6,
+				/obj/item/melee/sword/machete = 16,
+				/obj/item/melee/sword/machete/chopper = 10,
 				/obj/item/toy/katana = 6,
 				/obj/item/toy/katana/strong = 2,
 				/obj/item/shield/riot = 2,
 				/obj/item/melee/chain/inqcs = 1,
 				/obj/item/melee/chain/pcsword/eviscerator = 1,
-				/obj/item/material/sword/sabre = 4)
+				/obj/item/melee/sword/sabre = 4)
 */
 /obj/random/loot/lightstubber // TODO
 	name = "Light Stubber and shotguns"
@@ -371,7 +365,17 @@ Template:
 	icon_state = "lightstub"
 
 /obj/random/loot/lightstubber/spawn_choices()
-	return list(/obj/item/gun/projectile = 1)
+	return list(
+				/obj/item/gun/projectile/automatic/messina = 2,
+				/obj/item/gun/projectile/automatic/agripinaaii = 2,
+				/obj/item/gun/projectile/automatic/smg/boscelot = 3,
+				/obj/item/gun/projectile/automatic/agripinaaii = 2,
+				/obj/item/gun/projectile/shotgun/pump/voxlegis = 1,
+				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 2,
+				/obj/item/gun/projectile/revolver/agripinaa = 1,
+				/obj/item/gun/projectile/pistol/villiers = 1,
+				/obj/item/gun/projectile/bolter_pistol = 1,
+	)
 
 /obj/random/loot/lightstubberammo
 	name = "Random stubber ammo"
@@ -379,10 +383,12 @@ Template:
 	icon_state = "lightstubammo"
 
 /obj/random/loot/lightstubberammo/spawn_choices()
-	return list(/obj/item/ammo_box/shotgun = 7,
+	return list(/obj/item/ammo_box/shotgun = 3,
 				/obj/item/ammo_box/shotgun/slug = 3,
 				/obj/item/ammo_box/shotgun/beanbag = 1,
-				/obj/item/ammo_box/rifle = 8,
+				/obj/item/ammo_box/rifle = 3,
+				/obj/item/ammo_magazine/a762 = 3,
+				/obj/item/ammo_magazine/c556 = 3,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
 /obj/random/loot/sidearmammo
@@ -393,8 +399,11 @@ Template:
 /obj/random/loot/sidearmammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/a357 = 4,
 				/obj/item/ammo_magazine/a357 = 4,
-				/obj/item/cell/lasgun = 8,
-				/obj/item/ammo_magazine/c44 = 5,
+				/obj/item/cell/lasgun = 5,
+				/obj/item/cell/lasgun/small = 3,
+				/obj/item/ammo_magazine/mc9mm = 6,
+				/obj/item/ammo_magazine/mc45mm = 6,
+				/obj/item/ammo_magazine/c44 = 3,
 				/obj/item/ammo_box/shotgun = 3,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
@@ -404,7 +413,15 @@ Template:
 	icon_state = "sidearm"
 
 /obj/random/loot/sidearms/spawn_choices()
-	return list(/obj/item/gun/projectile = 2,
+	return list(
+				/obj/item/gun/energy/las/laspistol = 4,
+				/obj/item/gun/energy/las/laspistol/shitty = 5,
+				/obj/item/gun/energy/las/laspistol/accatran = 1,
+				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
+				/obj/item/gun/energy/las/laspistol/militarum = 2,
+				/obj/item/gun/projectile/pistol/pewter = 3,
+				/obj/item/gun/projectile/pistol/kieji = 3,
+				/obj/item/gun/projectile/pistol/kieji/snub = 3,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
 /obj/random/loot/lightlasgun
@@ -413,10 +430,16 @@ Template:
 	icon_state = "lasgun"
 
 /obj/random/loot/lightlasgun/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun = 12,
-				/obj/item/gun/energy/las/lasgun/lucius = 9,
+	return list(/obj/item/gun/energy/las/lasgun = 5,
+				/obj/item/gun/energy/las/lasgun/lucius = 4,
 				/obj/item/gun/energy/las/laspistol/militarum = 3,
-				/obj/item/gun/energy/las/lasgun/catachan = 4,)
+				/obj/item/gun/energy/las/lasgun/catachan = 4,
+				/obj/item/gun/energy/las/lasgun/accatran = 2,
+				/obj/item/gun/energy/las/hotshot = 1,
+				/obj/item/gun/energy/las/laspistol = 2,
+				/obj/item/gun/energy/las/laspistol/accatran = 1,
+				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
+				)
 
 /obj/random/loot/lasgunammo
 	name = "Lasgun Ammo"
@@ -434,8 +457,7 @@ Template:
 	icon_state = "heavystubberammo"
 
 /obj/random/loot/heavystubberammo/spawn_choices()
-	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10,
-				/obj/item/ammo_magazine/box/a556/mg08 = 5)
+	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10)
 
 /obj/random/loot/heavystubber
 	name = "Heavy Stubber"
@@ -443,7 +465,15 @@ Template:
 	icon_state = "heavystubber"
 
 /obj/random/loot/heavystubber/spawn_choices()
-	return list(/obj/item/gun/projectile/automatic)
+	return list(
+		/obj/item/gun/projectile/automatic/heavystubber/cognis = 1,
+		/obj/item/gun/projectile/automatic/heavystubber = 7,
+		/obj/item/gun/projectile/automatic/agripinaaii = 2,
+		/obj/item/gun/projectile/automatic/messina = 2,
+
+
+
+	)
 
 // DUNGEON & PILGRIM LOOT. These spawners are generally low quality and have wide selection making them ideal as generic loot.
 
@@ -453,7 +483,10 @@ Template:
 	icon_state = "randomammo"
 
 /obj/random/loot/randomammo/spawn_choices()
-	return list(/obj/item/ammo_magazine)
+	return list(
+		/obj/item/ammo_magazine/a357 = 1,
+
+		)
 
 
 /obj/random/loot/badweapon
@@ -462,7 +495,14 @@ Template:
 	icon_state = "badranged"
 
 /obj/random/loot/badweapon/spawn_choices()
-	return list(/obj/item/gun/projectile = 1)
+	return list(
+		/obj/item/gun/projectile/shotgun/pump/boltaction = 1,
+		/obj/item/gun/projectile/pistol/kieji = 1,
+		/obj/item/gun/projectile/pistol/kieji/snub = 1,
+		/obj/item/gun/energy/las/laspistol/shitty = 1,
+		/obj/item/gun/projectile/revolver/messina = 1,
+		/obj/item/gun/energy/las/lasgun/shitty = 1,
+	)
 
 /obj/random/loot/goodweapon
 	name = "Good Weapon Spawner" // plasma, bolter, fancy lasguns
@@ -470,9 +510,16 @@ Template:
 	icon_state = "goodranged"
 
 /obj/random/loot/goodweapon/spawn_choices()
-	return list(/obj/item/gun/projectile/boltrifle/lockebolter = 2,
-				/obj/item/gun/energy/pulse/plasma/rifle = 1,
-				/obj/item/gun/energy/pulse/plasma/pistol = 2,)
+	return list(
+				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
+				/obj/item/gun/energy/pulse/plasma/rifle = 2,
+				/obj/item/gun/energy/pulse/plasma/pistol = 3,
+				/obj/item/gun/energy/las/hotshot = 3,
+				/obj/item/gun/projectile/automatic/flamer = 1,
+				/obj/item/gun/energy/las/lasgun/accatran = 4,
+				/obj/item/gun/projectile/meltagun = 1,
+				/obj/item/gun/energy/las/lasgun/longlas = 1,
+				)
 
 /obj/random/loot/randomarmor
 	name = "Random Armor"
@@ -532,7 +579,7 @@ Template:
 
 /obj/random/loot/randomitemcaves/spawn_choices()
 	return list(/obj/item/shovel = 2,
-				/obj/item/clothing/glasses/night = 1,
+				/obj/item/clothing/glasses/night = 3,
 				/obj/item/pickaxe = 2,
 				/obj/item/storage/firstaid/combat = 1,
 				/obj/item/storage/firstaid/surgery = 1,
@@ -542,7 +589,7 @@ Template:
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/grenade/frag/high_yield/homemade = 5,
 				/obj/item/grenade/frag = 3,
-				/obj/item/grenade/frag/high_yield/krak = 1)
+				/obj/item/grenade/frag/high_yield/krak = 3)
 
 /obj/random/loot/randomitemtown
 	name = "Random Item Pilgrim"
@@ -554,7 +601,7 @@ Template:
 				/obj/item/storage/box/ifak = 3,
 				/obj/item/storage/firstaid/adv = 1,
 				/obj/item/clothing/suit/armor/militia = 2,
-				/obj/item/material/sword/combat_knife/rare = 4,
+				/obj/item/melee/sword/combat_knife = 4,
 				/obj/item/melee/trench_axe = 1,
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/clothing/accessory/holster/waist = 3,
@@ -766,7 +813,7 @@ Template:
 /obj/effect/landmark/costume/pirate/New()
 	new /obj/item/clothing/under/pirate(src.loc)
 	new /obj/item/clothing/suit/pirate(src.loc)
-	var/CHOICE = pick( /obj/item/clothing/head/pirate , /obj/item/clothing/mask/bandana/red)
+	var/CHOICE = pick( /obj/item/clothing/head/pirate)
 	new CHOICE(src.loc)
 	new /obj/item/clothing/glasses/eyepatch(src.loc)
 	delete_me = 1

@@ -169,7 +169,7 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/a762
 	icon_state = "rifle-casing"
 	spent_icon = "rifle-casing-spent"
-
+/*
 /obj/item/ammo_casing/a762/ap
 	desc = "An AP 7.62mm bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/ap
@@ -177,7 +177,7 @@
 /obj/item/ammo_casing/a762/ms
 	desc = "An MS 7.62mm bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/ms
-
+*/
 /obj/item/ammo_casing/a762/practice
 	desc = "A 7.62mm practice bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/practice

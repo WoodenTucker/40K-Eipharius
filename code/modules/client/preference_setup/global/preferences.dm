@@ -94,15 +94,6 @@ var/list/_client_preferences_by_type
 	else
 		sound_to(preference_mob, sound(null, repeat = 0, wait = 0, volume = 85, channel = 1))
 
-/datum/client_preference/play_ambiance
-	description ="Play ambience"
-	key = "SOUND_AMBIENCE"
-
-/datum/client_preference/play_ambiance/changed(var/mob/preference_mob, var/new_value)
-	if(new_value == GLOB.PREF_NO)
-		sound_to(preference_mob, sound(null, repeat = 0, wait = 0, volume = 0, channel = 1))
-		sound_to(preference_mob, sound(null, repeat = 0, wait = 0, volume = 0, channel = 2))
-
 /datum/client_preference/ghost_ears
 	description ="Ghost ears"
 	key = "CHAT_GHOSTEARS"
@@ -180,6 +171,11 @@ var/list/_client_preferences_by_type
 	description = "Smooth Zooming"
 	key = "SMOOTH_ZOOM"
 	options = list(GLOB.PREF_YES, GLOB.PREF_NO)
+
+/datum/client_preference/epilepsy
+	description ="Epilepsy Mode"
+	key = "EPILEPSY"
+	options = list(GLOB.PREF_NO, GLOB.PREF_YES)
 
 /********************
 * General Staff Preferences *

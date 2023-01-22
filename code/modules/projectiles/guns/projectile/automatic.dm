@@ -34,18 +34,21 @@
 
 /obj/item/gun/projectile/automatic/smg/boscelot
 	name = "Boscelot Pattern Stub SMG"
-	desc = "Chambered in 9mm and capable of using pistol or smg 9mm mags, as well as being full auto. It is a robust stub SMG for any frontiersmen."
+	desc = "Chambered in 9mm, as well as being full auto. It is a robust stub SMG for any frontiersmen."
 	icon_state = "sten"
 	max_shells = 30
 	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
-	burst_delay = 2
+	burst_delay = 1
+	automatic = 1
+	accuracy = -1
 	force = 8
-	fire_delay = 2.2
+	fire_delay = 1
+	sales_price = 10
+
+	magazine_type = /obj/item/ammo_magazine/smgmc9mm
+	allowed_magazines = /obj/item/ammo_magazine/smgmc9mm
 /*
-	magazine_type =
-	allowed_magazines =
-*/
 /obj/item/gun/projectile/automatic/smg/villiers // valhallan
 	name = "Villiers Pattern Stub SMG"
 	desc = "Chambered in .45 and loved by the Valhallan regiments, this Stub SMG is locked into a burst fire mode, with a high rate of fire. "
@@ -61,7 +64,7 @@
 	accuracy = 0
 	fire_delay = 3
 	sales_price = 40
-/*
+
 	magazine_type = /obj/item/ammo_magazine/autogrim
 	allowed_magazines = /obj/item/ammo_magazine/autogrim
 */

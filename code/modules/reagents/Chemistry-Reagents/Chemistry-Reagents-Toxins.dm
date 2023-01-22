@@ -674,7 +674,7 @@
 	taste_description = "blood"
 	color = "#669900"
 	taste_mult = 5
-	strength = 30
+	strength = 10
 	metabolism = REM * 2
 	overdose = 30
 
@@ -684,7 +684,7 @@
 /datum/reagent/toxin/corrupting/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
 	..()
 	if(prob(100))
-		if(M.chem_doses[type] < 1)
+		if(M.chem_doses[type] < 5)
 			to_chat(M, "<span class='warning'>You feel funny...</span>")
 		else
 			to_chat(M, "<span class='danger'>You feel like you could die at any moment!</span>")

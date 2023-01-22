@@ -261,6 +261,18 @@
 				<h3>Offers protection and a constant supply of pestilent gases to breathe.</h3>
 				Civilian gas mask offered on a rune of Nurgle.
 
+				<h2>Infested Morsel:</h2>
+				<h3>Releases a swarm upon your enemies.</h3>
+				Slab of meat and Egg offered on a rune of Nurgle.
+
+				<h2>Blight Grenade:</h2>
+				<h3>Grenade with a powerful payload of armor-melting blight strain. Turn the servants of the Corpse Emperor against him! .</h3>
+				Human head and pipe grenade offered on a rune of Nurgle.
+
+				<h2>Child of the Grandfather:</h2>
+				<h3>Bring forth a little one to bless your cause.</h3>
+				Human Liver offered on a rune of Nurgle.
+
 				<h2>Foetid Nganga:</h2>
 				<h3>A cauldron to concoct a powerful summoning.</h3>
 				Rodent meat offered on a rune of Nurgle.
@@ -282,6 +294,135 @@
 				<li>Drop the beast's head into the stew</li>
                 <ul>
 				They are temperamental creatures....
+
+				</body>
+			</html>
+			"}
+
+/obj/item/book/manual/khorne_recipes
+	name = "Cruenta Disciplinam"
+	icon_state ="khornebook"
+	author = "Jargan Goreseeker"
+	title = "Cruenta Disciplinam"
+
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Rites of Blood God</h1>
+				The sacred rites and practices of slaughter.
+
+				<h2>Bloody Favour:</h2>
+				<h3>Imbue yourself with the power of the Blood God.</h3>
+				Hearts offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
+
+				<h2>Tools Of Carnage:</h2>
+				<h3>Bless a weapon of slaughter via offerings.</h3>
+				Human teeth and a combat knife offered on a rune of Khorne. The more teeth the better the resulting weapon!.
+
+				</body>
+			</html>
+			"}
+
+/obj/item/book/manual/tzeentch_recipes
+	name = "NzxcDsFk PksWEaPfd"
+	icon_state ="tzeentchbook"
+	author = "???"
+	title = "NzxcDsFk PksWEaPfd"
+
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Rites of The Changer Of Ways</h1>
+				The sacred rites and practices of Change.
+
+				<h2>Illusion:</h2>
+				<h3>Change appearance into an object of your surrounding for 1 minute.</h3>
+				Human eyes and clothing offered on a rune of Tzeentch.
+
+				<h2>Omniscience:</h2>
+				<h3>See further with your mind for a few seconds.</h3>
+				Human eyes offered on a rune of Tzeentch.
+
+				<h2>Warp Lens:</h2>
+				<h3>A discreet yet powerful magic weapon, perfect for self defense.</h3>
+				Lasgun powercell offered on a rune of Tzeentch.
+
+				</body>
+			</html>
+			"}
+
+/obj/item/book/manual/slaanesh_recipes
+	name = "Diabolica Delectatio"
+	icon_state ="slaaneshbook"
+	author = "Elephantis Sarcina"
+	title = "Diabolica Delectatio"
+
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
+
+				<h1>Rites of The Dark Prince</h1>
+				The sacred rites and practices of excess.
+
+				<h2>Escape Artist:</h2>
+				<h3>You slip out of handcuffs easily.</h3>
+				Hancuffs offered on a rune of Slaanes.
+
+				<h2>Ritual Knife:</h2>
+				<h3>The tool of an artisan. Use it on dead bodies to obtain skin.</h3>
+				Combat knife offered on a rune of Slaanesh.
+
+				<h2>Tanning Rack:</h2>
+				<h3>Dries parchments of skin for use. Will take some minutes for the skin to be ready.</h3>
+				Ritual Knife used on logs cut from trees.
+
+				<h2>Masquerade Of Madness:</h2>
+				<h3>Instill fear into the servants of the Corpse Emperor who dare look into your eyes.</h3>
+				Ritual Knife used on a parchment of tanned skin.
+
+				<h2>Garment Of Excess:</h2>
+				<h3>Drape yourself in the attire worthy of the followers of the prince of excess.</h3>
+				Cloth stack used on a parchment of tanned skin.
+
+				<h2>Lash Of Torment:</h2>
+				<h3>Nothing like a massive dose of pain to keep those beneath you in their place.Use on help intent for pleasure and harm intent for pain</h3>
+				Severed human arm used on a parchment of tanned skin.
+
+				<h2>Forelimb Of Desire:</h2>
+				<h3>Slaanesh blesses your unworthy body with a new powerful arm.</h3>
+				Masquerade Of Madness, Garment Of Excess and Lash Of Torment offered on a rune of Slaanesh.
 
 				</body>
 			</html>

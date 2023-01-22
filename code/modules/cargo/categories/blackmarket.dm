@@ -4,22 +4,22 @@
 /datum/cargo_entry/bmarket/ritualknife
 	name = "Ritual Knife"
 	cost = 69
-	item_path = /obj/item/material/sword/skinning_knife
+	item_path = /obj/item/melee/sword/skinning_knife
 
 /datum/cargo_entry/bmarket/chaosknife
 	name = "Ch**s Knife"
 	cost = 65
-	item_path = /obj/item/material/sword/chaosknife
+	item_path = /obj/item/melee/sword/chaosknife
 
 /datum/cargo_entry/bmarket/slaaneshsword
 	name = "Sla**sh Blade"
 	cost = 140
-	item_path = /obj/item/material/sword/slaanesh
+	item_path = /obj/item/melee/sword/slaanesh
 
 /datum/cargo_entry/bmarket/hellblade
 	name = "H*ll Blade"
 	cost = 280
-	item_path = /obj/item/material/sword/hellblade
+	item_path = /obj/item/melee/sword/hellblade
 
 /datum/cargo_entry/bmarket/magushelm
 	name = "Magus Helm"

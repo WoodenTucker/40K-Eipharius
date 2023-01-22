@@ -68,11 +68,7 @@
 	minimal_player_age = 3
 	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/kasrkin
-	alt_titles = list(
-		"Veteran Kasrkin" = /decl/hierarchy/outfit/job/kasrkin,/*
-		"Tempestus Scion" = /decl/hierarchy/outfit/job/scion,*/
-
-		)
+	alt_titles = null
 	latejoin_at_spawnpoints = 1
 	auto_rifle_skill = 10 // veteran
 	semi_rifle_skill = 10
@@ -94,7 +90,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary. (OOC: Abandoning the Rogue Trader's Bazaar and commanding the Guardsmen is against server rules. The RT pays your paycheck. Only listen to them)</font></b></span>")
 
 /datum/job/xenomerc
 	title = "Xeno Mercenary"
@@ -141,7 +137,7 @@ Mercenary System
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 
-	var/fates = list("Kroot Shaper", "Ork Freeboota", "Eldar Corsair")
+	var/fates = list("Kroot Shaper", "Ork Freeboota", /*"Eldar Corsair"*/)
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -160,13 +156,13 @@ Mercenary System
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
-		if("Eldar Corsair")
+		/*if("Eldar Corsair")
 			var/mob/living/carbon/human/eldar/corsair/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
-
+*/
 // OLD UNDER HERE!//
 
 /*

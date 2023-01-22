@@ -821,8 +821,6 @@
 			return global.secret_force_mode;
 		if("send_emergency_team")
 			return global.send_emergency_team;
-		if("sent_spiders_to_station")
-			return global.sent_spiders_to_station;
 		if("server_name")
 			return global.server_name;
 		if("severity_to_string")
@@ -1037,7 +1035,7 @@
 			return global.z_levels;
 		if("zone_blocked")
 			return global.zone_blocked;
-		
+
 /proc/writeglobal(which, newval)
 	switch(which)
 		if("ALL_ANTIGENS")
@@ -1860,8 +1858,6 @@
 			global.secret_force_mode=newval;
 		if("send_emergency_team")
 			global.send_emergency_team=newval;
-		if("sent_spiders_to_station")
-			global.sent_spiders_to_station=newval;
 		if("server_name")
 			global.server_name=newval;
 		if("severity_to_string")
@@ -2076,7 +2072,7 @@
 			global.z_levels=newval;
 		if("zone_blocked")
 			global.zone_blocked=newval;
-		
+
 /var/list/_all_globals=list(
 	"ALL_ANTIGENS",
 	"ANTAG_FREQS",

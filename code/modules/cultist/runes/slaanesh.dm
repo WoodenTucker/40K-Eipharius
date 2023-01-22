@@ -12,15 +12,15 @@
 
 /datum/rune_recipe/slaanesh/knife
 	name = "Skinning Knife"
-	ingredients = list(/obj/item/material/sword/combat_knife)
+	ingredients = list(/obj/item/melee/sword/combat_knife)
 	delete_items = TRUE
-	product_path = /obj/item/material/sword/skinning_knife
+	product_path = /obj/item/melee/sword/skinning_knife
 
 /datum/rune_recipe/slaanesh/dagger
 	name = "Slaanesh Dagger"
-	ingredients = list(/obj/item/material/sword/combat_knife)
+	ingredients = list(/obj/item/melee/sword/combat_knife)
 	delete_items = TRUE
-	product_path = /obj/item/material/sword/slehdagger
+	product_path = /obj/item/melee/sword/slehdagger
 
 /datum/rune_recipe/slaanesh/arm
 	name = "Enchant Arm Rite"

@@ -45,6 +45,7 @@
 	desc = "A chunk of coal. Use it to fuel forges."
 	icon_state = "coal"
 	sales_price = 0
+
 /obj/item/newore/goldore
 	name = "gold ore"
 	desc = "SOLID GOLLLLLLD!"

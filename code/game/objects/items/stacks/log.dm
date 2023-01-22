@@ -17,12 +17,12 @@
 
 
 /obj/item/stack/logs/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/material/sword/combat_knife|| istype(W.sharp)|| istype(W.edge)))
+	if(istype(W,/obj/item/melee/sword/combat_knife|| istype(W.sharp)|| istype(W.edge)))
 		(do_after(user,30,src))
 		new /obj/item/torch/self_lit(get_turf(src))
 		to_chat(user, "You carve the log into a usable torch.")
 		qdel(src)
-	else if(istype(W, /obj/item/material/sword/skinning_knife))
+	else if(istype(W, /obj/item/melee/sword/skinning_knife))
 		playsound(src, 'sound/effects/ash_chop.ogg', 80, TRUE)
 		(do_after(user,40,src))
 		new /obj/structure/statue/tanningrack(get_turf(src))

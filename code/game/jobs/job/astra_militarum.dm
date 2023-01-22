@@ -2,7 +2,7 @@
 
 /datum/job/ig
 	title = "IGDATUM" // IMPERIAL GUARDSMAN ROLE
-	supervisors = "The Planetary Governor and your Sergeant."
+	supervisors = "The Planetary Governor, Commissar and your Sergeant."
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
@@ -28,7 +28,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		to_chat(H, "<span class='notice'><b><font size=3>   You are apart of the Imperial Guard Squad stationed onto the planet Eipharius in the employ of the Planetary Governor. Your tasks may vary, to collecting taxes, building trenches or defending the outpost. Ensure the Governorship and Imperial Guard Squad survives. </font></b></span>")
-		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand (8,14))
+		H.add_stats(rand(15,16), rand(15,16), rand(15,16), rand (8,14))
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
@@ -72,7 +72,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,17), rand(13,17), rand(13,17), rand (8,14))
+		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.say(":v [title] reporting for duty!")
@@ -236,6 +236,30 @@
 		"Catachan Flamer" = /decl/hierarchy/outfit/job/watchman/guardsman/catachan,
 		)
 
+datum/job/ig/bullgryn
+	title = "Bullgryn"
+	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
+	selection_color = "#33813A"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "Da Emprah. Da Commesar, and da little on's!"
+	outfit_type = /decl/hierarchy/outfit/job/bullgryn
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	cultist_chance = 1 // grog like emperorah :)
+	species_role = "Ogryn"
+
+
+	equip(var/mob/living/carbon/human/H)
+	//theres gunna be some redundencies here but I do not careeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(20,30), rand(17,19), rand(15,18), rand (2,5)) //bullgryn are stronger and quicker than normal ogryn due to their advanced training
+		H.add_skills(rand(10,15),1,1,1,1) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		to_chat(H, "<span class='notice'><b><font size=3>MA BEST FREND'S DA EMPRAH. FREND OF GOBERNOR. FREND OF DA COMESSAR. PROTECT DA LITTL UN'S!</font></b></span>")
+
+
 
 
 /* //DO NOT FORGET TO READD IT IN THE MAP CONFIGS ONCE ITS DONE!!!
@@ -345,6 +369,7 @@
 	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#23742a"
+	department_flag = SEC|COM
 	cultist_chance = 10
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
@@ -354,7 +379,6 @@
 		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/sergeant/valhallan
 		)
 	can_be_in_squad = FALSE //They have snowflake shit for squads.
-	department_flag = SEC|COM
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
@@ -478,22 +502,20 @@
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	total_positions = 0
-	spawn_positions = 0
-	head_position = 0
-	selection_color = "#004e07"
+	total_positions = 1
+	spawn_positions = 1
+	head_position = 1
+	selection_color = "#23742a"
+	department_flag = SEC|COM
 	req_admin_notify = TRUE
-	social_class = SOCIAL_CLASS_HIGH
+	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
-	/*alt_titles = list(
-		"Cadian Lieutenant" = /decl/hierarchy/outfit/job/ig/lieutenant
-	)
-	*/
 	alt_titles = list(
 		"Krieg Commissar" = /decl/hierarchy/outfit/job/ig/commissar/krieg,
 		"Catachan Commissar" = /decl/hierarchy/outfit/job/ig/commissar/catachan
 		)
 	can_be_in_squad = FALSE
+	economic_modifier = 9
 	auto_rifle_skill = 9 //commissars are more trained than almost any guardsman
 	semi_rifle_skill = 9
 	sniper_skill = 9
@@ -501,9 +523,10 @@
 	lmg_skill = 9
 	smg_skill = 9
 	open_when_dead = FALSE
-	department_flag = COM|SEC
 	latejoin_at_spawnpoints = TRUE
 	cultist_chance = 1 // 0 fucks stuff allegedly
+	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
 	announced = FALSE
 
@@ -518,18 +541,8 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
-		H.get_idcard()?.access = get_all_accesses()
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
-		H.verbs -= list(
-		/mob/living/carbon/human/proc/igattack,
-		/mob/living/carbon/human/proc/igcanthold,
-		/mob/living/carbon/human/proc/igcharge,
-		/mob/living/carbon/human/proc/igholdline,
-		/mob/living/carbon/human/proc/iginhisname,
-		/mob/living/carbon/human/proc/igregroup,
-		/mob/living/carbon/human/proc/igretreat,
-		/mob/living/carbon/human/proc/igrunforlifes,
-		/mob/living/carbon/human/proc/igyessir)
 		H.verbs += list(
 		/mob/living/carbon/human/proc/comsaimtrue,
 		/mob/living/carbon/human/proc/comsfaceus,
@@ -552,10 +565,7 @@
 		/mob/living/carbon/human/proc/comsexecute,
 		/mob/living/carbon/human/proc/comsyouwereweak)
 
-		var/obj/O = H.get_equipped_item(slot_s_store)
-		if(O)
-			qdel(O)
-
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Commissar. Absolutely do not kill people for minor infractions. You only have your *one* guard squad. Lead them, ensure they are properly trained. You are in the employ of the Governor's family, but if treasonous, your loyalties to Terra are higher.</font></b></span>")
 
 /datum/job/ig/commissar/imperial
 	total_positions = 1
@@ -679,9 +689,10 @@
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/projectile // autogrim smg
+	r_pocket = /obj/item/ammo_magazine/a762
+	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
 	backpack_contents = list(
+	/obj/item/ammo_magazine/a762 = 2,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
@@ -722,29 +733,29 @@
 	uniform = /obj/item/clothing/under/rank/valhallan_uniform
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/gun/projectile // pistol
+	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/valushanka
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  null
-	suit_store = /obj/item/gun/projectile // big stubba
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08
+	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
+	/obj/item/ammo_magazine/box/a556/mg08 = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
-	/obj/item/device/flashlight/lantern = 1
 	)
 
 /decl/hierarchy/outfit/job/sharpshooter/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
-	suit = /obj/item/clothing/suit/armor/catachan
+	suit = /obj/item/clothing/suit/armor/catachan/flamerspecialist
 	head = /obj/item/clothing/head/catachan
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/extinguisher
@@ -775,7 +786,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
-	mask = /obj/item/clothing/mask/bandana/red
+	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	id = null
 	l_ear = /obj/item/device/radio/headset/blue_team/all
@@ -795,7 +806,7 @@
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/material/sword/combat_knife/rare
+	belt = /obj/item/melee/sword/combat_knife
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/culthelm/gas
@@ -811,6 +822,28 @@
 	backpack_contents = list(
 	/obj/item/grenade/frag = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	)
+
+// bullgryn
+/decl/hierarchy/outfit/job/bullgryn
+	name = OUTFIT_JOB_NAME("Bullgryn")
+	uniform = /obj/item/clothing/under/ogryn/jumpsuit
+	head = null
+	shoes = /obj/item/clothing/shoes/jackboots/ogryn
+	gloves = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/armor/ogryn/two
+	id_type = /obj/item/card/id/pilgrim/innkeeper
+	pda_type = /obj/item/device/pda/penitent
+	l_ear = null
+	r_ear = /obj/item/device/radio/headset/red_team
+	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	r_hand = /obj/item/shield/riot
+	l_hand = /obj/item/melee/classic_baton/trench_club
+	backpack_contents = list(
+	/obj/item/grenade/frag = 1,
 	)
 
 // chaos spec
@@ -853,7 +886,7 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket =  null
-	suit_store = /obj/item/gun/projectile // hmg
+	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	backpack_contents = list(
@@ -951,12 +984,13 @@
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/device/binoculars
-	r_pocket =  null // remember to give them ammo
-	suit_store = null // good bolt action
+	r_pocket =  /obj/item/ammo_casing/a145/apds
+	suit_store = /obj/item/gun/projectile/heavysniper
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1
+	/obj/item/storage/box/sniperammo = 2,
+	/obj/item/ammo_casing/a145/apds = 2,
+	/obj/item/stack/thrones2/five = 1
 	)
 
 // Sergeant
@@ -1162,7 +1196,7 @@
 	uniform = /obj/item/clothing/under/color/black
 	suit = /obj/item/clothing/suit/armor/commissar
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/material/sword/commissword
+	belt = /obj/item/melee/sword/commissword
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/commissar
 	head = /obj/item/clothing/head/commissar

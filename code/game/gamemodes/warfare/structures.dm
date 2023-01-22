@@ -359,7 +359,7 @@
 			qdel(src)
 			return
 
-	else if (istype(W, /obj/item/material/sword))
+	else if (istype(W, /obj/item/melee/sword))
 		if (anchored)
 			user.visible_message("<span class = 'notice'>\The [user] starts to cut through \the [src] with [W].</span>")
 			if (!do_after(user,60))

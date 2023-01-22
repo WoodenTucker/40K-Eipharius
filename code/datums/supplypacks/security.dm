@@ -91,15 +91,13 @@
 /decl/hierarchy/supply_pack/security/riotarmor
 	name = "Armor - Riot gear"
 	contains = list(/obj/item/shield/riot = 4,
-					/obj/item/clothing/head/helmet/riot = 4,
-					/obj/item/clothing/suit/armor/riot = 4,
 					/obj/item/storage/box/flashbangs,
 					/obj/item/storage/box/teargas)
 	cost = 80
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Riot armor crate"
 	access = access_armory
-
+/*
 /decl/hierarchy/supply_pack/security/ballisticarmor
 	name = "Armor - Ballistic"
 	contains = list(/obj/item/clothing/head/helmet/ballistic = 4,
@@ -108,7 +106,7 @@
 	containertype = /obj/structure/closet/crate/secure
 	containername = "\improper Ballistic suit crate"
 	access = access_armory
-/*
+
 /decl/hierarchy/supply_pack/security/ablativearmor
 	name = "Armor - Ablative"
 	contains = list(/obj/item/clothing/head/helmet/ablative = 4,

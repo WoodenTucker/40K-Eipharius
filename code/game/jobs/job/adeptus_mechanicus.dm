@@ -72,7 +72,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 20
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -106,7 +106,7 @@
 	minimal_player_age = 7
 	open_when_dead = 0
 	announced = FALSE
-	latejoin_at_spawnpoints = FALSE
+	latejoin_at_spawnpoints = TRUE
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_medical, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/engineer
@@ -116,7 +116,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 20
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -128,6 +128,10 @@
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
+		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
+		H.thirst = INFINITY
+		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		H.vice = null //off for now
 		H.witchblood()
 		H.say(":e [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
@@ -149,7 +153,7 @@
 	selection_color = "#d82424"
 	economic_modifier = 7
 	req_admin_notify = 1
-	latejoin_at_spawnpoints = FALSE
+	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
@@ -160,7 +164,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 20
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -227,7 +231,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 20
+	cultist_chance = 30
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -238,9 +242,10 @@
 		H.add_skills(rand(8,11),rand(7,9),rand(8,10),rand(9,10),rand(8,10)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
-		H.bladder = -INFINITY
+
 		H.witchblood()
 		H.adjustStaminaLoss(-INFINITY)
+		H.bladder = -INFINITY
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink

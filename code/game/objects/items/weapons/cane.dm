@@ -18,7 +18,7 @@
 
 /obj/item/cane/concealed/New()
 	..()
-	var/obj/item/material/sword/cane/temp_blade = new(src)
+	var/obj/item/melee/sword/cane/temp_blade = new(src)
 	concealed_blade = temp_blade
 	temp_blade.attack_self()
 
@@ -37,7 +37,7 @@
 	else
 		..()
 
-/obj/item/cane/concealed/attackby(var/obj/item/material/sword/cane/W, var/mob/user)
+/obj/item/cane/concealed/attackby(var/obj/item/melee/sword/cane/W, var/mob/user)
 	if(!src.concealed_blade && istype(W))
 		user.visible_message("<span class='warning'>[user] has sheathed \a [W] into [src]!</span>", "You sheathe \the [W] into [src].")
 		playsound(user.loc, 'sound/items/holster_sword1.ogg', 50, 1)
@@ -60,12 +60,13 @@
 		icon_state = "canesword_sheath"
 		item_state = "foldcane"
 
-/obj/item/material/sword/cane
+/obj/item/melee/sword/cane
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "cane_sword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	block_chance = 55
-	force = 32
+	block_chance = 50
+	force = 30
+	armor_penetration = 10
 	sharp = 1
 	edge = 1
 	w_class = ITEM_SIZE_NORMAL

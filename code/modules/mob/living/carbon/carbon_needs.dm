@@ -145,7 +145,10 @@
 		freakout_emote()
 		sound_to(src, sound('sound/effects/losing_my_mind.ogg', repeat = 1, wait = 0, volume = 25, channel = 6))
 		horror_loop = TRUE
-		overlay_fullscreen("freakout", /obj/screen/fullscreen/freakout)
+		if(get_preference_value(/datum/client_preference/epilepsy) ==  GLOB.PREF_NO)
+			overlay_fullscreen("freakout", /obj/screen/fullscreen/freakout)
+		else
+			overlay_fullscreen("freakout", /obj/screen/fullscreen/freakout_noflash)
 		to_chat(src, "<span class='phobia'<big>I AM FREAKING THE FUCK OUT!</big></span>")
 	stuttering = 5
 	shake_camera(src, 5, 0.1)

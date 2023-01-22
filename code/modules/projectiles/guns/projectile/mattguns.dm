@@ -4,20 +4,19 @@
 // Skills ONLY effect weapon spread. If the skill of a character is below 6 they'll have a hard time hitting anything.
 
 /obj/item/gun/projectile/shotgun/pump/boltaction
-	name = "\improper Boscolet Pattern Stub Rifle"
-	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet is a standard rifle pattern, firing large-bore rounds."
+	name = "\improper Boscelot Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscelot is a standard rifle pattern, firing large-bore rounds."
 	icon_state = "boltaction"
 	item_state = "boltaction"
 	wielded_item_state = "boltaction-wielded"
 	caliber = "763"
-	ammo_type = /obj/item/ammo_casing
-	one_hand_penalty = 15
+	ammo_type = /obj/item/ammo_casing/brifle
 	empty_icon = "boltaction-e"
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	far_fire_sound = "sniper_fire"
 	move_delay = 8
-	one_hand_penalty = 10
-	accuracy = 2
+	one_hand_penalty = 25
+	accuracy = 0
 	fire_delay = 3
 	force = 15
 	sales_price = 10
@@ -78,8 +77,8 @@
 		qdel(src)
 */
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
-	name = "\improper Boscolet Pattern Stub Rifle"
-	desc = "The stub rifle is a common weapon seen across the galaxy. Boscolet Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
+	name = "\improper Boscelot Pattern Stub Rifle"
+	desc = "The stub rifle is a common weapon seen across the galaxy. Boscelot Frontiersman is a standard rifle firing large-bore rounds. This modification includes scope for sharpshooting and improved firing mechanism."
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
@@ -90,8 +89,8 @@
 	unloaded_icon = "boltactionsharp-e"
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
-	accuracy = 1
-	sales_price = 30
+	accuracy = 1.5
+	sales_price = 20
 
 /*
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope_detach(mob/user)
@@ -145,7 +144,7 @@
 	sales_price = 40
 
 //AMMO
-/*
+
 /obj/item/ammo_casing/brifle
 	desc = "An old worn out looking bullet casing."
 	caliber = "763"
@@ -153,7 +152,7 @@
 	icon_state = "brifle"
 	spent_icon = "brifle-casing"
 	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/two
-
+/*
 /obj/item/ammo_casing/brifle/ap
 	desc = "An old worn out looking AP bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ap
@@ -163,7 +162,7 @@
 	desc = "An old worn out looking MS bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ms
 	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/ms/two/
-
+*/
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	penetrating = TRUE
@@ -205,7 +204,7 @@
 	ammo_type = /obj/item/ammo_casing/krootbullet
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 20
-*/
+
 //Shitty shotgun
 
 /obj/item/gun/projectile/shotgun/pump/voxlegis
@@ -221,7 +220,7 @@
 	one_hand_penalty = 4
 	accuracy = 0.5
 	fire_delay= 3
-	sales_price = 25
+	sales_price = 30
 
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
@@ -288,10 +287,10 @@
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
 // Stubber //
-/*
-/obj/item/gun/projectile/automatic/stubber
-	name = "Vraks Pattern Heavy Stubber"
-	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
+
+/obj/item/gun/projectile/automatic/heavystubber
+	name = "Agripinaa Pattern Heavy Stubber"
+	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling. Chambered in 5.56"
 	icon_state = "hmg"
 	item_state = "hmg"
 	str_requirement = 13
@@ -335,7 +334,7 @@
 // adeptus mechanicus adamantium LMG
 //icon = 'icons/obj/weapons/gun/projectile.dmi'
 
-/obj/item/gun/projectile/automatic/stubber/cognis
+/obj/item/gun/projectile/automatic/heavystubber/cognis
 	name = "Cognis Pattern Heavy Stubber"
 	desc = "A heavy stubber forged by the worlds of the Omnissiah's will. Particular in maintenance and appearance, it is the proud work of any tech priest. Uses standard stubber ammo"
 	icon_state = "cognisLMG"
@@ -357,7 +356,7 @@
 		list(mode_name="4-round bursts", burst=4, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-/obj/item/gun/projectile/automatic/stubber/villiers
+/obj/item/gun/projectile/automatic/heavystubber/villiers
 	name = "Villiers Heavy Stubber"
 	desc = "A rugged belt-fed stubber that is long out of service. This one seems to have been diligently maintained over the years."
 	move_delay= 4.5
@@ -368,9 +367,74 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
-		*/
+
+// stub rifles, mag fed
+
+/obj/item/gun/projectile/automatic/agripinaaii
+	name = "Agripinaa Pattern Stub rifle MK II"
+	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 7.62 rounds. "
+	icon_state = "agripinaa" // Object Icon
+	item_state = "agripinaa" // On-Mob
+	unloaded_icon = "agripinaa_e" // Object Icon
+	loaded_icon = "agripinaa" // Object Icon
+	caliber = "763"
+	ammo_type = /obj/item/ammo_casing/brifle
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	move_delay = 2.3
+	one_hand_penalty = 20
+	accuracy = 0
+	automatic = 0
+	fire_delay = 4
+	sales_price = 30
+
+
+	magazine_type = /obj/item/ammo_magazine/a762
+	allowed_magazines = /obj/item/ammo_magazine/a762
+
+	gun_type = GUN_SEMIAUTO
+
+	wielded_item_state = "agripinaa"
+	unwielded_loaded_icon = "agripinaa"
+	wielded_loaded_icon = "agripinaa"
+	unwielded_unloaded_icon = "agripinaa_e"
+	wielded_unloaded_icon = "agripinaa_e"
+
+	firemodes = null
+
+/obj/item/gun/projectile/automatic/messina
+	name = "Messina Pattern Autogun"
+	desc = "A locally produced pattern, chambered in 5.56 and not the highest quality material, to say the least...At least it's automatic"
+	icon_state = "autogun_agrip" // Object Icon
+	item_state = "autorifle" // On-Mob
+	unloaded_icon = "autogun_agrip-e" // Object Icon
+	loaded_icon = "autogun_agrip" // Object Icon
+	caliber = "a556"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	move_delay = 7
+	one_hand_penalty = 15
+	accuracy = -2
+	automatic = 1
+	fire_delay = 3
+	sales_price = 25
+
+	magazine_type = /obj/item/ammo_magazine/c556
+	allowed_magazines = /obj/item/ammo_magazine/c556
+
+	gun_type = GUN_SEMIAUTO
+
+	wielded_item_state = "autorifle-wielded"
+	unwielded_loaded_icon = "autorifle"
+	wielded_loaded_icon = "autorifle-wielded"
+	unwielded_unloaded_icon = "autorifle-e"
+	wielded_unloaded_icon = "autorifle-wielded-e"
+
+	firemodes = null
 
 // Boltgun
 /obj/item/gun/projectile/boltrifle //boltus
@@ -569,7 +633,7 @@
 //ORKA
 
 // NEEDS BALANCING ! //
-/*
+
 /obj/item/gun/projectile/ork/automatic/shoota
 	name = "Shoota"
 	desc = "A tree borst shoota. Da mekboyz even added dem coolin holes fer de barrel for ya, be grateful ya git! Load'd wid da .75 caliba boolets innit."
@@ -671,7 +735,7 @@
 
 
 //Eldar
-*/
+
 /obj/item/gun/projectile/eldar/scatapult
 	name = "Shuriken Catapult"
 	desc = "A large shuriken-firing ballistic weapon that is the standard and most common armament found amongst Craftworld Aeldari warriors."
@@ -714,33 +778,7 @@
 	else
 		icon_state = "scatapult-e"
 
-/obj/item/gun/projectile/automatic/galvanic/rifle
-	name = "Mark IV Arkhan Pattern Galvanic Rifle"
-	desc = "A semi automatic rifle, modelled after the flintlock weapons of the past. Favoured by Skitarii rangers, this weapon is incredibly dangerous."
-	icon_state = "galvrifle" // OBJ (Make sure when adding any projectile gun to include an icon version with -0 at the end. e.g. snipermusket-0 or it will break)
-	item_state = "musket" // ON MOB (This uses a different on-mob to wielded due to sniper musket not having a one handed icon)
-	loaded_icon = "galvrifle" // OBJ
-	unloaded_icon = "galvrifle" // OBJ
-	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	wielded_item_state = "las_musket"
-	unwielded_loaded_icon = "musket"
-	wielded_loaded_icon = "las_musket"
-	unwielded_unloaded_icon = "musket"
-	wielded_unloaded_icon = "las_musket"
-	caliber = "galvanic"
-	max_shells = 7
-	str_requirement = 13
-	move_delay = 4
-	one_hand_penalty = 7
-	accuracy = 0
-	fire_delay = 4.9
-	slot_flags = SLOT_BACK|SLOT_S_STORE
-	magazine_type = /obj/item/ammo_magazine/galvanic
-	allowed_magazines = list(/obj/item/ammo_magazine/galvanic, /obj/item/ammo_magazine/galvanic/fire)
-	firemodes = list()
-	w_class = ITEM_SIZE_HUGE
-	gun_type = GUN_SEMIAUTO
-
+//Vanguard
 
 /obj/item/gun/projectile/automatic/radcarbine
 	name = "Radium Carbine"

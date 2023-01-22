@@ -93,7 +93,7 @@
 /datum/job/arbitrator
 	title = "Arbitrator"
 	head_position = 1
-	supervisors = "The Law and the Interrogator"
+	supervisors = "The Law, Inquisitor and Interrogator"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -121,7 +121,7 @@
 		..()
 		H.fully_replace_character_name("Arbitrator [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(16,19), rand(13,17), rand(15,19), rand(12,16)) //meant to be a brute keeping the plebs in line
+		H.add_stats(rand(18,20), rand(18,20), rand(15,19), rand(15,16)) //intelligence only buffs surgery shit, don't buff it
 		H.add_skills(rand(10,11),rand(8,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 //		H.witchblood() //Psyker Enforcers don't exist
@@ -130,7 +130,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_inquisition)
 
-		to_chat(H, "<span class='notice'><b><font size=3>]You are an Arbitrator, in the Retinue of the Interrogator. Your task is to train the local enforcers and ensure order. You overrule anyone, with authority from Holy Terra Itself.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are an Arbitrator, in the Retinue of the Interrogator. Your task is to train the local enforcers and ensure order. You overrule anyone, with authority from Holy Terra Itself.</font></b></span>")
 
 //Outfits
 
@@ -139,21 +139,22 @@
 	head = null
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	l_pocket = /obj/item/storage/box/ifak
 	suit = /obj/item/clothing/suit/armor/enforcer
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	r_hand = /obj/item/melee/baton/loaded
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile // revolva
+	belt = /obj/item/gun/projectile/revolver/boscelot
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
-	suit_store = /obj/item/gun/projectile // voxlegis
-	backpack_contents = list( // 1 stun 1 buck
+	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
+	backpack_contents = list(
+	/obj/item/ammo_magazine/c44 = 2,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
+	/obj/item/ammo_box/shotgun/stunshell = 1,
+	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/stack/thrones2/five = 1,
 	)
 
@@ -169,13 +170,16 @@
 	r_hand = /obj/item/melee/baton/loaded
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/energy/las/laspistol/militarum
+	belt = /obj/item/gun/energy/las/laspistol/shitty
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
+	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
 	/obj/item/handcuffs = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/ammo_box/shotgun/stunshell = 1,
 	/obj/item/stack/thrones2/five = 1,
 	)
 
@@ -189,22 +193,24 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	r_pocket = /obj/item/device/flashlight/lantern
-	l_hand = /obj/item/gun/projectile // voxlegis
+	l_hand = null
 	r_hand = /obj/item/melee/baton/powermaul
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
-	suit = /obj/item/clothing/suit/armor/enforcer2/arbitrator
+	suit = /obj/item/clothing/suit/armor/arbitrator
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile // big revolva
+	belt = /obj/item/gun/projectile/revolver/agripinaa
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
-	suit_store = null
+	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list( // 1 stun 1 buck box
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/ammo_magazine/c44 = 2,
+	/obj/item/ammo_box/shotgun/stunshell = 1,
+	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/stack/thrones2/twenty = 1,
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR

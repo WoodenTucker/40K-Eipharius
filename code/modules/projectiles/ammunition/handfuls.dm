@@ -19,16 +19,8 @@
 
 /obj/item/ammo_magazine/handful/attack_self(mob/user)//We want to override the normal attack self with makes us "empty" our "clip".
 	return
-/*
-//Rifle
-/obj/item/ammo_magazine/handful/brifle_handful
-	name = "\improper handful of bullets"
-	desc = "A handful of rifle bullets for your rifle."
-	icon_state = "brifle"
-	caliber = "763"
-	ammo_type = /obj/item/ammo_casing/brifle
-	grab_sound = 'sound/items/handle/bullet_pickup.ogg'
 
+//Rifle
 /obj/item/ammo_magazine/handful/brifle_handful
 	name = "\improper handful of bullets"
 	desc = "A handful of rifle bullets for your rifle."
@@ -39,7 +31,7 @@
 
 /obj/item/ammo_magazine/handful/brifle_handful/two
 	initial_ammo = 2
-
+/*
 /obj/item/ammo_magazine/handful/brifle_handful/ap
 	name = "\improper handful of AP bullets"
 	desc = "A handful of rifle AP bullets for your rifle."
