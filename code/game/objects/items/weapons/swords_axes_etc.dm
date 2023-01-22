@@ -279,7 +279,7 @@
 /obj/item/melee/chain/guard
 	name = "Imperial Guard chainsword"
 	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
-	icon_state = "guardchain" // broken for some reason currently. use inq as stand in
+	icon_state = "gchain" // doesnt work
 	item_state = "inqchainsword"
 	w_class = ITEM_SIZE_NORMAL
 	weapon_speed_delay = 10
@@ -288,10 +288,10 @@
 /obj/item/melee/chain/gold
 	name = "Terra Pattern Chainsword" // this is mostly an ornamental chainsword. Make it low tier. its mostly drip.
 	desc = "A golden ornamental chainsword, overburdened with it's expensive metal. It is cumbersome and ornamental. At least it's almost as shiny as a Custodes."
-	icon_state = "goldchain"
+	icon_state = "ggchain" // doesnt work
 	item_state = "inqchainsword"
 	weapon_speed_delay = 16 // gold heavy
-	sales_price = 90 //only RT has it. if made craftable, decrease value.
+	sales_price = 60 //only RT has it. if made craftable, decrease value.
 
 /obj/item/melee/chain/mercycs
 	name = "Locke Pattern Double-Edged Chainsword"

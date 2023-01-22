@@ -786,7 +786,7 @@ datum/job/ig/bullgryn
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
-	mask = /obj/item/clothing/mask/bandana/red
+	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	id = null
 	l_ear = /obj/item/device/radio/headset/blue_team/all

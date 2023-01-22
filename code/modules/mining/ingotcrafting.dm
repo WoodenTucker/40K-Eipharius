@@ -1303,7 +1303,7 @@ kultrinium
 			if(7)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/melee/chain/guard(user.loc,1)
+				new /obj/item/melee/chain/inqcs(user.loc,1)
 				qdel(src)
 				return
 
