@@ -193,7 +193,7 @@
 /obj/machinery/door/attack_hand(mob/user as mob)
 	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	if (usr.a_intent == I_HURT)
-		playsound(src.loc, "doorknockhard", 100, 0)
+		playsound(src.loc, "doorknockhard", 80, 0)
 		usr.visible_message("<span class='danger'>\The [usr] bangs against \the [src]!</span>",
 							"<span class='danger'>You bang against \the [src]!</span>",
 							"You hear a banging sound.")
