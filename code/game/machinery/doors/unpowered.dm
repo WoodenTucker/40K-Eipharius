@@ -127,3 +127,9 @@
 	normalspeed = 0
 	req_access = list(access_cargo) //so innkeeper always can get in if needed
 
+/obj/machinery/door/unpowered/wattle
+	name = "wattle door"
+	icon = 'icons/obj/doors/door_wattle.dmi'
+	icon_state = "door1"
+	autoclose = 0
+	normalspeed = 0

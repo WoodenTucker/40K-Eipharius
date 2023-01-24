@@ -158,3 +158,32 @@
 		return
 	..()
 */
+
+// fantasy specific stuff //
+
+/turf/simulated/wall/village
+	name = "Village Wall"
+	desc = "A timber and plastered wall, "
+	icon = 'icons/turf/village.dmi'
+	icon_state = "village0"
+	walltype = "village"
+	mineral = "wood"
+	integrity = 700
+
+/turf/simulated/wall/wattle
+	name = "Wattle and daub Wall"
+	desc = "A wall built using intertwining twigs, plastered with mud. Not as strong as other forms of construction."
+	icon = 'icons/turf/wattle.dmi'
+	icon_state = "wattle1"
+	walltype = "wattle"
+	mineral = "wood"
+	integrity = 450
+
+/turf/simulated/wall/castle
+	name = "Stone brick wall"
+	desc = "A formidable wall made entirely of stone bricks. Capable of being the battlements of a castle."
+	icon = 'icons/turf/brickstone.dmi'
+	icon_state = "brickstone0"
+	walltype = "brickstone"
+	mineral = "metal"
+	integrity = 1500

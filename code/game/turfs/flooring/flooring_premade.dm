@@ -132,9 +132,21 @@
 /turf/simulated/floor/grass
 	name = "grass patch"
 	icon = 'icons/turf/flooring/grass.dmi'
-	icon_state = "grass0"
 	initial_flooring = /decl/flooring/grass
 
+/turf/simulated/floor/grass/New()
+	icon_state = pick("grass[rand(0,3)]")
+	..()
+
+
+/turf/simulated/floor/sand
+	name = "Sandy dirt"
+	icon = 'icons/turf/flooring/sand.dmi'
+	initial_flooring = /decl/flooring/sand
+
+/turf/simulated/floor/sand/New()
+	icon_state = pick("sand[rand(0,4)]")
+	..()
 /turf/simulated/floor/diona
 	name = "biomass"
 	icon = 'icons/turf/floors.dmi'
