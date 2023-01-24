@@ -46,7 +46,17 @@ var/list/flooring_types
 	name = "grass"
 	desc = "Do they smoke grass out in space, Bowie? Or do they smoke AstroTurf?"
 	icon = 'icons/turf/flooring/grass.dmi'
-	icon_base = "grass"
+	icon_base = "grass0"
+	has_base_range = 3
+	damage_temperature = T0C+80
+	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
+	build_type = /obj/item/stack/tile/grass
+
+/decl/flooring/sand
+	name = "sand"
+	desc = "Very grainular"
+	icon = 'icons/turf/flooring/sand.dmi'
+	icon_base = "sand0"
 	has_base_range = 3
 	damage_temperature = T0C+80
 	flags = TURF_HAS_EDGES | TURF_REMOVE_SHOVEL
