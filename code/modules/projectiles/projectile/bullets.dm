@@ -457,9 +457,68 @@
 	var/heavy_effect_range = 1
 	var/light_effect_range = 1
 
+/obj/item/projectile/bullet/rifle/galvanic/fire
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 40
+	damage_type = BRUTE
+	armor_penetration = 30
+	penetration_modifier = 2
+	
+/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
+			H.adjust_fire_stacks(20)
+			H.IgniteMob()
+		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
+		if(H.isChild())
+			var/mob/living/carbon/human/F = firer
+			F.unlock_achievement(new/datum/achievement/child_fire())
+
+/obj/item/projectile/bullet/rifle/galvanic/emp
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 15
+	damage_type = BURN
+	armor_penetration = 5
+	penetration_modifier = 1
 	on_impact(var/atom/A)
-		empulse(A, heavy_effect_range, light_effect_range)
+		empulse(A, 1, 2)
 		return 1
+
+/obj/item/projectile/bullet/rifle/galvanic/airburst
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 50
+	damage_type = BRUTE
+	armor_penetration = 10
+
+/obj/item/projectile/bullet/rifle/galvanic/airburst/on_hit(var/atom/target)
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		var/obj/item/organ/external/affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+		affecting.droplimb(0, DROPLIMB_BLUNT)
+		if(prob(25))
+			affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+			affecting.droplimb(0, DROPLIMB_BLUNT)
+			if(prob(25))
+				affecting = H.get_organ(pick("l_leg","l_arm","r_leg","r_arm", "head", "l_hand", "r_hand", "l_foot", "r_foot"))
+				affecting.droplimb(0, DROPLIMB_BLUNT)
+				return
+			else
+				return
+		else
+			return
+
+/obj/item/projectile/bullet/rifle/galvanic/pain
+	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "ion"
+	damage = 5
+	damage_type = BURN
+	armor_penetration = 10
+	agony = 150 //Might need reworking
+	taser_effect = 1
 
 /obj/item/projectile/bullet/pellet/shotgun/melta
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -520,25 +579,6 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 20 //weaker than melta caus its a pistol
-
-/obj/item/projectile/bullet/rifle/galvanic/fire
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "ion"
-	damage = 40
-	damage_type = BRUTE
-	armor_penetration = 30
-	penetration_modifier = 2
-	
-/obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(!istype(H.wear_suit, /obj/item/clothing/suit/fire))
-			H.adjust_fire_stacks(20)
-			H.IgniteMob()
-		new /obj/flamer_fire(H.loc, 12, 10, "red", 1)
-		if(H.isChild())
-			var/mob/living/carbon/human/F = firer
-			F.unlock_achievement(new/datum/achievement/child_fire())
 
 
 /* ORKY BULLETS */

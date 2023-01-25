@@ -343,6 +343,21 @@
 	desc = "An ancient design for loading galvanic rifles. This one seems to have incendiary rounds loaded."
 	ammo_type = /obj/item/ammo_casing/galvanic/fire
 
+/obj/item/ammo_magazine/galvanic/emp
+	name = "galvanic rifle EMP loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have emp rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/emp
+
+/obj/item/ammo_magazine/galvanic/airburst
+	name = "galvanic rifle airburst loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have airburst rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/airburst
+
+/obj/item/ammo_magazine/galvanic/pain
+	name = "galvanic rifle stun loader"
+	desc = "An ancient design for loading galvanic rifles. This one seems to have stun rounds loaded."
+	ammo_type = /obj/item/ammo_casing/galvanic/pain
+
 /obj/item/ammo_magazine/radcarbine
 	name = "Radcarbine Magazine"
 	icon_state = "LMG-mag"
