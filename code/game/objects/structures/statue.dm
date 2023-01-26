@@ -47,7 +47,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 32
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/verina/broken
@@ -64,7 +64,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/bigstatue
@@ -75,7 +75,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/bigstatue2
@@ -86,7 +86,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/bigstatue3
@@ -97,7 +97,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/prayer
@@ -108,8 +108,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/fountain
 	name = "fountain"
@@ -119,8 +118,8 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 96
 
 /obj/structure/statue/fountainwater
 	name = "fountain water"
@@ -130,8 +129,8 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 96
 
 /obj/structure/statue/column
 	name = "column"
@@ -159,6 +158,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/xenotube/l1
 	icon = 'icons/obj/structures/xenotube.dmi'
