@@ -267,7 +267,7 @@
 "eeJ" = (/obj/effect/floor_decal/turf/brick,/obj/structure/window/reinforced/tinted/frosted,/turf/simulated/floor/wood,/area/cadiaoutpost/oa/villageinside)
 "egz" = (/obj/effect/decal/dead/four,/turf/simulated/mineral/snowycave,/area/cadiaoutpost/oa/caves)
 "ehF" = (/obj/item/remains/human,/obj/item/metal_shiv{force = 15; sharp = 1; weapon_speed_delay = 4},/turf/simulated/floor/trench,/area/cadiaoutpost/oa/village)
-"ehT" = (/obj/structure/statue/fountain,/obj/structure/statue/fountainwater,/turf/simulated/floor/tiled/stone,/area/cadiaoutpost/oa/village)
+"ehT" = (/obj/structure/statue/fountain,/obj/structure/sink/fountain,/turf/simulated/floor/tiled/stone,/area/cadiaoutpost/oa/village)
 "eiF" = (/obj/structure/flora/ausbushes/meatshroom,/turf/simulated/floor/stone,/area/cadiaoutpost/oa/caves)
 "eiL" = (/turf/simulated/wall/ancient{color = null; integrity = 1000},/area/cadiaoutpost/oa/service/hab/inside)
 "ejC" = (/obj/effect/wingrille_spawn/reinforced/full,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/security)

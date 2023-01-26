@@ -121,17 +121,6 @@
 	plane = ABOVE_HUMAN_PLANE
 	bound_width = 96
 
-/obj/structure/statue/fountainwater
-	name = "fountain water"
-	desc = "A glorious stone fountain."
-	icon = 'icons/obj/structures/fountain.dmi'
-	icon_state = "water"
-	anchored = 1
-	density = 1
-	layer = 4
-	plane = ABOVE_HUMAN_PLANE
-	bound_width = 96
-
 /obj/structure/statue/column
 	name = "column"
 	desc = "A column carved from stone."
