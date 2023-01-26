@@ -143,24 +143,15 @@
 	name = "xeno containment tube"
 	desc = "An Inquisition containment tube housing some sort of horrific xenos for study."
 	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBER1"
+	icon_state = "xenotube"
 	anchored = 1
 	density = 1
 	layer = 4
 	plane = ABOVE_HUMAN_PLANE
+	bound_width = 64
 
-/obj/structure/statue/xenotube/l1
-	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBEL1"
-
-/obj/structure/statue/xenotube/r2
-	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBER2"
-
-/obj/structure/statue/xenotube/l2
-	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBEL2"
-
+/obj/structure/statue/xenotube/off
+	icon_state = "xenotube-off"
 
 /obj/structure/statue/cage
 	name = "hanging cage"
