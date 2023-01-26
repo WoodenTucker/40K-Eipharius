@@ -161,8 +161,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 32
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/gallows
 	name = "gallows"
@@ -172,8 +171,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 32
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/guardshrine
 	name = "\improper shrine of the unknown guardsmen"
@@ -183,7 +181,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 
