@@ -308,7 +308,7 @@
 	set category = "Tyranid"
 	set desc = "Gives their stun talon"
 
-	put_in_hands(new /obj/item/melee/baton/nidstun)
+	put_in_hands(new /obj/item/melee/powermaul/nidstun)
 	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	return
 

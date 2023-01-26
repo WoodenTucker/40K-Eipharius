@@ -258,7 +258,7 @@
 	attack_verb = list("poked")
 	slot_flags = null
 
-/obj/item/melee/baton/powermaul
+/obj/item/melee/powermaul
 	name = "Power Maul"
 	desc = "The Power Maul commonly used by members of the Adeptus Arbites. It is good for stunning victims."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -268,9 +268,8 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
 	force = 25
-	stunforce = 0
-	agonyforce = 25
-	status = 1
+	var/stunforce = 0
+	var/agonyforce = 25
 	block_chance = 60
 	sales_price = 20
 	weapon_speed_delay = 5
@@ -282,7 +281,43 @@
 	attack_verb = list("beaten", "smashed")
 	armor_penetration = 65 //Power maul
 
-/obj/item/melee/baton/nidstun
+/obj/item/melee/powermaul/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
+	if(isrobot(target))
+		return ..()
+
+	var/agony = agonyforce
+	var/stun = stunforce
+	var/obj/item/organ/external/affecting = null
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		affecting = H.get_organ(hit_zone)
+
+	if(user.a_intent == I_HURT)
+		. = ..()
+		if (!.)	//item/attack() does it's own messaging and logs
+			return 0	// item/attack() will return 1 if they hit, 0 if they missed.
+
+		//whacking someone causes a much poorer electrical contact than deliberately prodding them.
+		stun *= 0.5
+		agony = 1	//fuck it.
+		//we can't really extract the actual hit zone from ..(), unfortunately. Just act like they attacked the area they intended to.
+	else
+		if(affecting)
+			target.visible_message("<span class='danger'>[target] has been prodded in the [affecting.name] with [src] by [user]!</span>")
+		else
+			target.visible_message("<span class='danger'>[target] has been prodded with [src] by [user]!</span>")
+
+	//stun effects
+	target.stun_effect_act(stun, agony, hit_zone, src)
+	msg_admin_attack("[key_name(user)] stunned [key_name(target)] with the [src].")
+
+	if(ishuman(target))
+		var/mob/living/carbon/human/H = target
+		H.forcesay(GLOB.hit_appends)
+
+	return 0
+
+/obj/item/melee/powermaul/nidstun
 	name = "Venomous Talon"
 	desc = "The talon is coated in a paralytic agonizing poison, best used on single targets for conversion."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -294,7 +329,6 @@
 	force = 2
 	stunforce = 0
 	agonyforce = 165
-	status = 1
 	block_chance = 60
 	sales_price = 20
 	weapon_speed_delay = 5

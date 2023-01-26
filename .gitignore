@@ -48,3 +48,6 @@ tools/dmitool/bin/main/dmitool/RGBA.class
 config/admins.txt
 config/example/admins.txt
 config/example/admins.txt
+config/moderators.txt
+config/moderators.txt
+config/example/admins.txt
