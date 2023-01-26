@@ -193,6 +193,14 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=90),
 		)
 
+/obj/item/gun/gun/energy/las/lasgun/update_icon()
+    ..()
+    if(cell)
+        icon_state = "lasgun"
+    else
+        icon_state = "lasgun-e"
+
+
 /obj/item/gun/energy/las/lasgun/shitty
 	name = "Portsmith W. Lasrifle"
 	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
@@ -211,6 +219,13 @@
 	sales_price = null
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun // starts with /small but can also use any /lasgun as well. do not change
 	ammoType = /obj/item/cell/lasgun/small
+
+/obj/item/gun/gun/energy/las/lasgun/shitty/update_icon()
+    ..()
+    if(cell)
+        icon_state = "semir"
+    else
+        icon_state = "semir-e"
 
 /obj/item/gun/energy/las/lasgun/lucius
 	name = "Lucius No.98 Lasgun"
@@ -238,6 +253,14 @@
 		list(mode_name="overcharge", fire_delay = 12, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
 		)
 
+/obj/item/gun/gun/energy/las/lasgun/lucius/update_icon()
+    ..()
+    if(cell)
+        icon_state = "lucius"
+    else
+        icon_state = "lucius-e"
+
+
 /obj/item/gun/energy/las/lasgun/catachan
 	name = "Mark IV Lascarbine"
 	desc = "The Mark IV lascarbine is a special lascarbine used by the Catachan Jungle Fighters. Excellent for warfare in jungle environments due to it's bayonet and light frame"
@@ -263,6 +286,14 @@
 		list(mode_name="semi-automatic",   burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=70),
 		list(mode_name="overcharge", burst=1, fire_delay = 7.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=160),
 		)
+
+/obj/item/gun/gun/energy/las/lasgun/catachan/update_icon()
+    ..()
+    if(cell)
+        icon_state = "lascarbine"
+    else
+        icon_state = "lascarbine-e"
+
 
 /obj/item/gun/energy/las/lasgun/accatran
 	name = "Accatran Mark VI Pattern Lasgun"
@@ -290,6 +321,14 @@
 
 	firemodes = list( null )
 
+/obj/item/gun/gun/energy/las/lasgun/accatran/update_icon()
+    ..()
+    if(cell)
+        icon_state = "accatran"
+    else
+        icon_state = "accatran-e"
+
+
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration. It slowly recharges any lasgun cells loaded."
@@ -310,7 +349,17 @@
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
+
 	sales_price = 65
+
+/obj/item/gun/gun/energy/las/lasgun/hotshot/update_icon()
+    ..()
+    if(cell)
+        icon_state = "hotshot"
+    else
+        icon_state = "hotshot-e"
+
+
 /*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
@@ -346,6 +395,14 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 10
 	wielded_item_state = "chaosppistol"
 
+/obj/item/gun/gun/energy/las/laspistol/update_icon()
+    ..()
+    if(cell)
+        icon_state = "laspistolciv"
+    else
+        icon_state = "laspistolciv-e"
+
+
 /obj/item/gun/energy/las/laspistol/accatran
 	name = "Accatran MK II Pattern Laspistol"
 	desc = "An older pattern of the Accatran Laspistols. Fully auto but extremely power inefficient and somewhat inaccurate."
@@ -364,6 +421,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	sales_price = 35
 	wielded_item_state = "chaosppistol"
 
+/obj/item/gun/gun/energy/las/laspistol/accatranp/update_icon()
+    ..()
+    if(cell)
+        icon_state = "accatranp"
+    else
+        icon_state = "accatranp-e"
+
 /obj/item/gun/energy/las/laspistol/lord
 	name = "Artificer Laspistol"
 	desc = "It is magnificant in handling and detail. Larger in size than most las pistols, yet more lightweight and extremely efficient in energy usage. All the luxurious makings of a weapon from Terra itself."
@@ -377,6 +441,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	)
 	sales_price = 80
 
+/obj/item/gun/gun/energy/las/laspistol/lord/update_icon()
+    ..()
+    if(cell)
+        icon_state = "lord"
+    else
+        icon_state = "lord-e"
+
 /obj/item/gun/energy/las/laspistol/shitty
 	name = "Portsmith W. Laspistol"
 	desc = "The Laspistol variant of the Portsmith W. Lasrifle. Cheap, slow but better than nothing. Uses small lascells"
@@ -388,6 +459,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 2
+
+/obj/item/gun/gun/energy/las/laspistol/shitty/update_icon()
+    ..()
+    if(cell)
+        icon_state = "semip"
+    else
+        icon_state = "semip-e"
 
 /obj/item/gun/energy/las/laspistol/militarum
 	name = "Kantrael MG Laspistol"
@@ -404,6 +482,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun, charge_cost=180),
 		)
 
+/obj/item/gun/gun/energy/las/laspistol/militarum/update_icon()
+    ..()
+    if(cell)
+        icon_state = "laspistol"
+    else
+        icon_state = "laspistol-e"
+
 /obj/item/gun/energy/las/laspistol/militarum/bloodpact
 	name = "Bloodpact Laspistol"
 	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design and smaller, it is less efficient with it's lasgun cells than more modern variants."
@@ -415,6 +500,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="automatic",       burst=3, fire_delay=1, burst_accuracy=null, dispersion=null, automatic = 0.5),
 		)
+
+/obj/item/gun/gun/energy/las/laspistol/militarum/bloodpact/update_icon()
+    ..()
+    if(cell)
+        icon_state = "bloodlaspistol"
+    else
+        icon_state = "bloodlaspistol-e"
 
 /obj/item/gun/energy/las/laspistol/militarum/lucius
 	name = "Lucius-pattern Laspistol"
@@ -435,6 +527,14 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=120),
 		list(mode_name="Overcharged", 	fire_delay = 8, charge_cost = 240, projectile_type = /obj/item/projectile/energy/las/lasgun),
 		)
+
+/obj/item/gun/gun/energy/las/laspistol/militarum/lucius/update_icon()
+    ..()
+    if(cell)
+        icon_state = "luciuspistol"
+    else
+        icon_state = "luciuspistol-e"
+
 
 //Tau weapons
 
@@ -461,6 +561,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-automatic",       burst=1, fire_delay=10, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
+/obj/item/gun/gun/energy/pulse/ionrifle/update_icon()
+    ..()
+    if(cell)
+        icon_state = "ionriflet"
+    else
+        icon_state = "ionriflet-e"
+
 /obj/item/gun/energy/pulse/pulsepistol
 	name = "pulse pistol"
 	desc = "The trusty sidearm of the T'au Empire."
@@ -482,6 +589,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	firemodes = list(
 		list(mode_name="semi-auto",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
+
+/obj/item/gun/gun/energy/pulse/pulsepistol/update_icon()
+    ..()
+    if(cell)
+        icon_state = "pulsep"
+    else
+        icon_state = "pulsep-e"
 
 /obj/item/gun/energy/pulse/pulserifle
 	name = "pulse rifle"
@@ -507,6 +621,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="3-round bursts", burst=3, fire_delay=6.5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
+/obj/item/gun/gun/energy/pulse/pulserifle/update_icon()
+    ..()
+    if(cell)
+        icon_state = "pulseb"
+    else
+        icon_state = "pulseb-e"
 
 /obj/item/gun/energy/pulse/plasma
 	name = "plasma"
@@ -575,6 +695,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "ionrifle-wielded"
 	sales_price = 115 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
 
+/obj/item/gun/gun/energy/pulse/plasma/rifle/update_icon()
+    ..()
+    if(cell)
+        icon_state = "prifle"
+    else
+        icon_state = "prifle-e"
+
 /obj/item/gun/energy/pulse/plasma/pistol
 	name = "plasma pistol"
 	desc = "A plasma pistol. Great for dealing with threats swiftly.It has an overheat scale and on the end of it is written 'Boom!'."
@@ -594,6 +721,14 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_carbine"
 	sales_price = 120 //made with adamantium
 
+/obj/item/gun/gun/energy/pulse/plasma/pistol/update_icon()
+    ..()
+    if(cell)
+        icon_state = "ppistol"
+    else
+        icon_state = "ppistol-e"
+
+
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
 	name = "Chaotic plasma pistol"
 	desc = "A plasma pistol blessed by the ruinous powers. You can feel the warp energy going trough it. It has an overheat scale and on the end of it is written 'Boom!'."
@@ -612,6 +747,12 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 	sales_price = 79
 
+/obj/item/gun/gun/energy/pulse/plasma/pistol/chaos/update_icon()
+    ..()
+    if(cell)
+        icon_state = "chaosppistol"
+    else
+        icon_state = "chaosppistol-e"
 
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	name = "Ryza Pattern Plasma Pistol"
@@ -630,6 +771,13 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_cost = 700
 	wielded_item_state = "pulse_pistol"
 	sales_price = 140 //blessed by the omnissiah and made with adamantium
+
+/obj/item/gun/gun/energy/pulse/plasma/pistol/mechanicus/update_icon()
+    ..()
+    if(cell)
+        icon_state = "toasterppistol"
+    else
+        icon_state = "toasterppistol-e"
 
 /*// rare plasma pistols removed until proper plasma balance
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
