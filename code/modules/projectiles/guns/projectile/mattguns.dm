@@ -438,7 +438,7 @@
     if(ammo_magazine)
         icon_state = "agripinaa"
     else
-        icon_state = "agripinaa"
+        icon_state = "agripinaa-e"
 
 
 /obj/item/gun/projectile/automatic/messina
@@ -919,9 +919,9 @@
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
 
-/obj/item/gun/projectile/automatic/radcarbine/radpistolu/pdate_icon()
+/obj/item/gun/projectile/automatic/radcarbine/radpistol/update_icon()
 	..()
 	if(ammo_magazine)
-		icon_state = "pulse_pistol"
+		icon_state = "teslar"
 	else
-		icon_state = "pulse_pistol0"
+		icon_state = "teslar0"

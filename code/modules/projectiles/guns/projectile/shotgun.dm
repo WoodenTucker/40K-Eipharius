@@ -243,11 +243,3 @@
 	accuracy = 3
 	fire_delay= 20
 	sales_price = 200 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
-
-/obj/item/gun/gun/projectile/meltagun/update_icon()
-    ..()
-    if(ammo_magazine)
-        icon_state = "melta"
-    else
-        icon_state = "melta-e"
-

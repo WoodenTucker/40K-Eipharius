@@ -204,9 +204,9 @@
 /obj/item/gun/projectile/bolter_pistol/inquis/update_icon()
 	..()
 	if(ammo_magazine)
-		icon_state = "pulse_pistol"
+		icon_state = "bpistol"
 	else
-		icon_state = "pulse_pistol0"
+		icon_state = "bpistol-e"
 
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle
