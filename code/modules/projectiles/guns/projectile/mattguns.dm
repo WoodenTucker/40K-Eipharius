@@ -438,7 +438,7 @@
     if(ammo_magazine)
         icon_state = "agripinaa"
     else
-        icon_state = "agripinaa-e"
+        icon_state = "agripinaa_e"
 
 
 /obj/item/gun/projectile/automatic/messina
