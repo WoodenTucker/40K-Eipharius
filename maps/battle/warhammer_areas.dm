@@ -572,9 +572,20 @@ Area basic template
 	dynamic_lighting = 1
 	requires_power = TRUE
 
+/area/cadiaoutpost/oa/mansionmedicae
+	name = "Mansion Medicae"
+	icon_state = "mansionmed"
+	dynamic_lighting = 1
+	requires_power = 1
+
 /area/cadiaoutpost/oa/medicae/storage
 	name = "Medicae Storage"
 	icon_state = "medbay2"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/medicae/mansionstorage
+	name = "Mansion Medicae Storage"
+	icon_state = "mansionmedstorage"
 	requires_power = TRUE
 
 /area/cadiaoutpost/oa/medicae/virology
@@ -587,9 +598,19 @@ Area basic template
 	icon_state = "chem"
 	requires_power = TRUE
 
+/area/cadiaoutpost/oa/medicae/chem
+	name = "Mansion Chemistry"
+	icon_state = "mansionchem"
+	requires_power = TRUE
+
 /area/cadiaoutpost/oa/medicae/surgery
 	name = "Surgery"
 	icon_state = "surgery"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/medicae/mansionsurgery
+	name = "Mansion Surgery"
+	icon_state = "mansionsurgery"
 	requires_power = TRUE
 
 /area/cadiaoutpost/oa/medicae/morgue
@@ -712,6 +733,36 @@ Area basic template
 	icon_state = "chapeloffice"
 	requires_power = TRUE
 
+/area/cadiaoutpost/oa/service/chapel/chapeldorm
+	name = " Chapel Dorms"
+	icon_state = "chapeldorm"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/service/chapel/chapelsurgery
+	name = "Chapel Surgery"
+	icon_state = "chapelsurgery"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/service/chapel/chapelchemistry
+	name = "Chapel Chemistry"
+	icon_state = "chapelchem"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/service/chapel/recovery
+	name = "Chapel Recovery"
+	icon_state = "chapelrecovery"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/service/chapel/armory
+	name = "Chapel Armory"
+	icon_state = "chapelarmory"
+	requires_power = TRUE
+
+/area/cadiaoutpost/oa/service/chapel/vault
+	name = "Chapel Vault"
+	icon_state = "chapelvault"
+	requires_power = TRUE
+
 /area/cadiaoutpost/oa/service/janitor
 	name = "Janitor"
 	icon_state = "janitor"
@@ -747,6 +798,11 @@ Area basic template
 	icon_state = "inn"
 	music = 'sound/music/inn.ogg'
 	dynamic_lighting = 1
+	requires_power = FALSE
+
+/area/cadiaoutpost/oa/service/graveyard
+	name = "Graveyard"
+	icon_state = "graveyard"
 	requires_power = FALSE
 
 /////////////////////////////////////////
