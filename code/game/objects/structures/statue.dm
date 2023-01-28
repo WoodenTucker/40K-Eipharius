@@ -47,7 +47,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 32
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/verina/broken
@@ -64,7 +64,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/bigstatue
@@ -75,7 +75,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/bigstatue2
@@ -86,7 +86,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/bigstatue3
@@ -97,7 +97,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 /obj/structure/statue/prayer
@@ -108,8 +108,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/fountain
 	name = "fountain"
@@ -119,19 +118,8 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 64
-
-/obj/structure/statue/fountainwater
-	name = "fountain water"
-	desc = "A glorious stone fountain."
-	icon = 'icons/obj/structures/fountain.dmi'
-	icon_state = "water"
-	anchored = 1
-	density = 1
-	layer = 4
-	bound_height = 64
-	bound_width = 64
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 96
 
 /obj/structure/statue/column
 	name = "column"
@@ -155,23 +143,15 @@
 	name = "xeno containment tube"
 	desc = "An Inquisition containment tube housing some sort of horrific xenos for study."
 	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBER1"
+	icon_state = "xenotube"
 	anchored = 1
 	density = 1
 	layer = 4
+	plane = ABOVE_HUMAN_PLANE
+	bound_width = 64
 
-/obj/structure/statue/xenotube/l1
-	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBEL1"
-
-/obj/structure/statue/xenotube/r2
-	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBER2"
-
-/obj/structure/statue/xenotube/l2
-	icon = 'icons/obj/structures/xenotube.dmi'
-	icon_state = "THEYTUBEL2"
-
+/obj/structure/statue/xenotube/off
+	icon_state = "xenotube-off"
 
 /obj/structure/statue/cage
 	name = "hanging cage"
@@ -181,8 +161,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 32
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/gallows
 	name = "gallows"
@@ -192,8 +171,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
-	bound_width = 32
+	plane = ABOVE_HUMAN_PLANE
 
 /obj/structure/statue/guardshrine
 	name = "\improper shrine of the unknown guardsmen"
@@ -203,7 +181,7 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 64
+	plane = ABOVE_HUMAN_PLANE
 	bound_width = 64
 
 

@@ -437,3 +437,11 @@
 	icon_state = "puddle-splash"
 	..()
 	icon_state = "puddle"
+
+/obj/structure/sink/fountain
+	name = "fountain water"
+	icon = 'icons/obj/structures/fountain.dmi'
+	icon_state = "water"
+	desc = "Fresh water streams from the fountain. Fresh is debatable."
+	layer = 4
+	plane = ABOVE_HUMAN_PLANE

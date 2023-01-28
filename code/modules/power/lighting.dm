@@ -715,5 +715,5 @@
 	construct_type = /obj/machinery/light_construct/small
 	idle_power_usage = 0
 	active_power_usage = 0
-	bound_height = 64
 	bound_width = 32
+	density = 1
