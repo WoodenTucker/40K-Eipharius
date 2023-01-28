@@ -134,6 +134,13 @@
 	move_delay = 1.5
 	load_method = MAGAZINE
 
+/obj/item/gun/projectile/ork/slugga/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "slugga"
+	else
+		icon_state = "slugga-e"
+
 
 // BOLT PISTOL
 
@@ -193,6 +200,14 @@
 	fire_delay = 1.4
 	move_delay = 1.3
 	sales_price = 58
+
+/obj/item/gun/projectile/bolter_pistol/inquis/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "bpistol"
+	else
+		icon_state = "bpistol-e"
+
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	name = "Godwyn-De'az Pattern Bolter Pistol"

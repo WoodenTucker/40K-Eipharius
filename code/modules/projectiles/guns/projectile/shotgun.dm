@@ -243,4 +243,3 @@
 	accuracy = 3
 	fire_delay= 20
 	sales_price = 200 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
-

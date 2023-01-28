@@ -132,10 +132,10 @@
 /obj/item/gun/projectile/automatic/galvanic/rifle
 	name = "Mark IV Arkhan Pattern Galvanic Rifle"
 	desc = "A semi automatic rifle, modelled after the martian flintlock weapons of the past, it uses servo-eletric rounds which send a powerful eletric current through the targets body while also tracking them."
-	icon_state = "galvrifle" 
-	item_state = "musket" 
-	loaded_icon = "galvrifle" 
-	unloaded_icon = "galvrifle" 
+	icon_state = "galvrifle"
+	item_state = "musket"
+	loaded_icon = "galvrifle"
+	unloaded_icon = "galvrifle-e"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	wielded_item_state = "las_musket"
 	unwielded_loaded_icon = "musket"

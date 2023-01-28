@@ -114,7 +114,7 @@ obj/item/gun/energy/staff/focus
 	w_class = ITEM_SIZE_NORMAL
 	burst_delay = 2
 	move_delay = 1 //its a small as fuck pistol, it may be poisonous but its small.
-	fire_delay = 8 
+	fire_delay = 8
 	charge_cost = 300
 	cell_type = /obj/item/cell/plasma
 	ammoType = /obj/item/cell/plasma
@@ -137,7 +137,7 @@ obj/item/gun/energy/staff/focus
 	projectile_type = /obj/item/projectile/gauss
 	self_recharge = 1
 	charge_meter = FALSE
-	
+
 /obj/item/gun/energy/WarpLens
 	name = "Warp Lens"
 	desc = "A lens used to direct bolts of warp energy"

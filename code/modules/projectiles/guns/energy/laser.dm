@@ -193,6 +193,7 @@
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,-1,-1),       dispersion=list(0.0, 0.1, 0.1), automatic = 0, charge_cost=90),
 		)
 
+
 /obj/item/gun/energy/las/lasgun/shitty
 	name = "Portsmith W. Lasrifle"
 	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."
@@ -237,6 +238,7 @@
 		list(mode_name="semi-automatic", fire_delay = 9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=125),
 		list(mode_name="overcharge", fire_delay = 12, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=230),
 		)
+
 
 /obj/item/gun/energy/las/lasgun/catachan
 	name = "Mark IV Lascarbine"
@@ -290,6 +292,7 @@
 
 	firemodes = list( null )
 
+
 /obj/item/gun/energy/las/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
 	desc = "The favored standard weapon of Tempestus Scions, reknowned for its damage and penetration. It slowly recharges any lasgun cells loaded."
@@ -310,7 +313,10 @@
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "lascar-wielded"
+
 	sales_price = 65
+
+
 /*
 obj/item/gun/energy/las/hotshot/bloodpact
 	name = "Khornate Lasgun"
@@ -345,6 +351,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	ammoType =  /obj/item/cell/lasgun
 	sales_price = 10
 	wielded_item_state = "chaosppistol"
+
 
 /obj/item/gun/energy/las/laspistol/accatran
 	name = "Accatran MK II Pattern Laspistol"
@@ -483,6 +490,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		list(mode_name="semi-auto",       burst=1, fire_delay=3.5, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
+
 /obj/item/gun/energy/pulse/pulserifle
 	name = "pulse rifle"
 	desc = "The standard-issue pulse rifle of the Fire Warrior Caste"
@@ -611,7 +619,6 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	charge_meter = FALSE //no ammo icon state currently invisible
 	wielded_item_state = "pulse_pistol"
 	sales_price = 79
-
 
 /obj/item/gun/energy/pulse/plasma/pistol/mechanicus
 	name = "Ryza Pattern Plasma Pistol"

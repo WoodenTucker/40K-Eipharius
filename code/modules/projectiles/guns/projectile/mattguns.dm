@@ -254,6 +254,13 @@
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
+/obj/item/gun/projectile/automatic/flamer/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "flamer"
+    else
+        icon_state = "flamer-e"
+
 /obj/item/gun/projectile/automatic/flamer/pistol
 	name = "Handheld Scorcher"
 	desc = "The handheld, pistol varient of the flamer. It shoots slower than it's larger brother and is more difficult to hold in your single hand."
@@ -285,6 +292,14 @@
 	sales_price = 60
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
+
+
+/obj/item/gun/projectile/automatic/flamer/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "flamerp"
+    else
+        icon_state = "flamerp-e"
 
 // Stubber //
 
@@ -329,7 +344,12 @@
 		list(mode_name="4-round bursts", burst=4, fire_delay=4.3, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
 
-
+/obj/item/gun/projectile/automatic/heavystubber/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "hmg"
+    else
+        icon_state = "hmg-e"
 
 // adeptus mechanicus adamantium LMG
 //icon = 'icons/obj/weapons/gun/projectile.dmi'
@@ -355,6 +375,14 @@
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="4-round bursts", burst=4, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
 		)
+
+/obj/item/gun/projectile/automatic/heavystubber/cognis/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "cognisLMG"
+    else
+        icon_state = "cognisLMG-e"
+
 
 /obj/item/gun/projectile/automatic/heavystubber/villiers
 	name = "Villiers Heavy Stubber"
@@ -405,6 +433,14 @@
 
 	firemodes = null
 
+/obj/item/gun/projectile/automatic/agripinaaii/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "agripinaa"
+    else
+        icon_state = "agripinaa_e"
+
+
 /obj/item/gun/projectile/automatic/messina
 	name = "Messina Pattern Autogun"
 	desc = "A locally produced pattern, chambered in 5.56 and not the highest quality material, to say the least...At least it's automatic"
@@ -435,6 +471,13 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
 	firemodes = null
+
+/obj/item/gun/projectile/automatic/messina/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "autorifle"
+    else
+        icon_state = "autorifle-e"
 
 // Boltgun
 /obj/item/gun/projectile/boltrifle //boltus
@@ -662,7 +705,12 @@
 		list(mode_name="4-round bursts", burst=4, fire_delay=6, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.3), automatic = 0),
 		)
 
-
+/obj/item/gun/projectile/ork/automatic/shoota/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "shoota"
+	else
+		icon_state = "shoota-e"
 
 /obj/item/gun/projectile/ork/automatic/shoota/bladed
 	name = "Bladed Shoota"
@@ -675,6 +723,13 @@
 	caliber = ".75"
 	one_hand_penalty = 7
 	sales_price = 20
+
+/obj/item/gun/projectile/ork/automatic/shoota/bladed/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "shootabayo"
+	else
+		icon_state = "shootabayo-e"
 
 /obj/item/gun/projectile/ork/automatic/shoota/kustom
 	name = "Kustom Shoota"
@@ -691,6 +746,13 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
 		list(mode_name="6-round bursts", burst=6, fire_delay=7, burst_accuracy=list(-1,-1,-1), dispersion=list(0.2, 0.4, 0.5), automatic = 0),
 		)
+
+/obj/item/gun/projectile/ork/automatic/shoota/kustom/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "shootakustom"
+	else
+		icon_state = "shootakustom-e"
 
 /obj/item/gun/projectile/ork/automatic/shoota/big
 	name = "Big Shoota"
@@ -716,6 +778,14 @@
 	)
 	sales_price = 30
 
+/obj/item/gun/projectile/ork/automatic/shoota/big/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "shootabig"
+	else
+		icon_state = "shootabig-e"
+
+
 /obj/item/gun/projectile/ork/automatic/shoota/furtha
 	name = "Furtha Shoota"
 	desc = "Fur em gitz dat like to shoot from afar! Da scope is busted, blame da gretchin! Load'd wid da .75 caliba boolets innit."
@@ -733,6 +803,12 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
 		)
 
+/obj/item/gun/projectile/ork/automatic/shoota/furtha/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "shootafurtha"
+	else
+		icon_state = "shootafurtha-e"
 
 //Eldar
 
@@ -808,6 +884,13 @@
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
 
+/obj/item/gun/projectile/automatic/radcarbine/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "emitter_carbine"
+	else
+		icon_state = "emitter_carbine-e"
+
 /obj/item/gun/projectile/automatic/radcarbine/radpistol
 	name = "Radium Pistol"
 	desc = "A sidearm favoured by Skitarii Vanguards and Ranger Alphas."
@@ -835,3 +918,10 @@
 	firemodes = list()
 	w_class = ITEM_SIZE_HUGE
 	gun_type = GUN_SEMIAUTO
+
+/obj/item/gun/projectile/automatic/radcarbine/radpistol/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "teslar"
+	else
+		icon_state = "teslar0"
