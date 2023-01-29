@@ -38,7 +38,7 @@
 	neck = null
 	back = null
 	l_ear = /obj/item/device/radio/headset/hivemind
-	l_hand = /obj/item/melee/baton/nidstun
+	l_hand = /obj/item/melee/powermaul/nidstun
 	belt = null
 	l_pocket = null
 	id = null
