@@ -410,6 +410,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	gloves = /obj/item/clothing/gloves/sisterofbattle
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
+	glasses = /obj/item/clothing/glasses/hud/health
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
@@ -456,6 +457,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/mlsister
 	gloves = /obj/item/clothing/gloves/sisterofbattle/mlsister
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
+	glasses = /obj/item/clothing/glasses/hud/health
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
@@ -480,6 +482,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle/brsister
 	gloves = /obj/item/clothing/gloves/sisterofbattle/brsister
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
+	glasses = /obj/item/clothing/glasses/hud/health
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
@@ -507,6 +510,7 @@
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
+	glasses = /obj/item/clothing/glasses/hud/health
 	suit = /obj/item/clothing/suit/armor/preacher
 	l_hand = /obj/item/staff/ministorumstaff
 	r_hand = null
@@ -520,21 +524,23 @@
 /decl/hierarchy/outfit/job/militant
 	name = OUTFIT_JOB_NAME("Novice Militant")
 	head = /obj/item/clothing/head/hospitallerhelm
-	l_ear = /obj/item/device/radio/headset/heads/cmo
+	l_ear = /obj/item/device/radio/headset/headset_sci
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle/training
-	belt = /obj/item/melee/sword/broadsword
+	belt = /obj/item/storage/belt/medical/full
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	gloves = /obj/item/clothing/gloves/sisterofbattle
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
-	l_hand = null
+	l_hand = /obj/item/melee/sword/broadsword
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
-	/obj/item/device/flashlight/lantern = 1,
+		/obj/item/stack/thrones = 1,
+		/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+		/obj/item/device/flashlight/lantern = 1,
+		/obj/item/reagent_containers/food/snacks/warfare/rat = 1
 	)
 
 /decl/hierarchy/outfit/job/novice
