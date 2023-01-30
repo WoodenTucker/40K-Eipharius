@@ -72,7 +72,7 @@
 	name = "plague doctor mask"
 	desc = "A modernised version of the classic design, this mask will not only filter out phoron but it can also be connected to an air supply."
 	icon_state = "plaguedoctor"
-	item_state = "gas_mask"
+	item_state = "plaguedoctor"
 	armor = list(melee = 0, bullet = 0, laser = 2,energy = 2, bomb = 0, bio = 90, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	body_parts_covered = HEAD|FACE|EYES
@@ -81,6 +81,7 @@
 	name = "\improper SWAT mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "swat"
+	item_state = "swat"
 	siemens_coefficient = 0.7
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	body_parts_covered = FACE|EYES
@@ -97,19 +98,21 @@
 	name = "tactical mask"
 	desc = "A close-fitting tactical mask that can be connected to an air supply."
 	icon_state = "swat"
+	item_state = "swat"
 	siemens_coefficient = 0.7
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 
 /obj/item/clothing/mask/gas/techpriest
 	name = "mechanized visage"
-	desc = "Staring into the metallic visage its hard to believe this being is human..."
+	desc = "A half augmented mechanical visage, doesn't make wonders for your charisma, but does help you survive and thrive."
 	icon_state = "techpriest"
 	item_state = "techpriest"
 	flash_protection = FLASH_PROTECTION_MAJOR
 	siemens_coefficient = 0.7
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
-	flags_inv = HIDEEARS|HIDEEYES
+	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
+	body_parts_covered = FACE|EYES|HEAD
 	canremove = 0
 	unacidable = 1
 
@@ -121,7 +124,6 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 	siemens_coefficient = 0.7
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 95, rad = 40)
-	flags_inv = HIDEEARS|HIDEEYES
 	canremove = 0
 	unacidable = 1
 
@@ -255,4 +257,3 @@
 	unacidable = 1
 	canremove = 0
 	armor = list(melee = 10, bullet = 75, laser = 75, energy = 75, bomb = 0, bio = 100, rad = 100) //Bullet resistant, because, well, sniper. Not designed for melee however.
-
