@@ -537,7 +537,7 @@
 	l_hand = /obj/item/melee/sword/broadsword
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-		/obj/item/stack/thrones = 1
+		/obj/item/stack/thrones = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
 		/obj/item/device/flashlight/lantern = 1,
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1
