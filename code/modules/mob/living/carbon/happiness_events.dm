@@ -239,3 +239,19 @@
 /datum/happiness_event/vice/glutton
 	description = "<span class='badmood'>• I need to eat more, my stomach demands food!</span>\n"
 	happiness = -15
+
+//Mood Debuffs for the Tome Of The Mindbreaker
+/datum/happiness_event/Tzbook/Light
+	description = "<span class='warning'> I could have sworn that incantation was insulting my mother.</span>\n"
+	happiness = -5
+	timeout = 1 MINUTE
+
+/datum/happiness_event/Tzbook/Med
+	description = "<span class='warning'> Those words echo in my mind, etching away at my sanity.</span>\n"
+	happiness = -15
+	timeout = 3 MINUTES
+
+/datum/happiness_event/Tzbook/Ext
+	description = "<span class='danger'> MY MIND IS MUSH! MY BRAIN AFLAME! SANITY IS AN ILLUSION, PEACE A MYTH!</span>\n"
+	happiness = -150
+	timeout = 10 MINUTES

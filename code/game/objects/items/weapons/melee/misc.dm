@@ -125,3 +125,48 @@
 		to_chat(user, "<span class='warning'>An overwhelming feeling of dread comes over you as you pick up the [src]. It would be wise to be rid of this quickly.</span>")
 		user.make_dizzy(120)
 		playsound(usr, 'sound/effects/whispers1.ogg', 100, 0, -1)
+
+// Tzeentch Mindbreaker Book
+/obj/item/melee/Tzbook
+	name = "Tome Of The Mindshatter"
+	desc = "A sorcerous tome of Tzeentch used for shattering the minds and sometimes skulls of the enemy."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "tzbook"
+	item_state = "tzbook"
+	slot_flags = SLOT_BELT
+	force = 30
+	armor_penetration = 20
+	throwforce = 100 //In warp books hit you
+	w_class = ITEM_SIZE_NORMAL
+	attack_verb = list("bashed", "bonked", "smashed")
+
+		//In theory this is the part that does the mind shattering, but we'll see if I can code it
+/obj/item/melee/Tzbook/afterattack(mob/living/carbon/human/C as mob|obj|turf|area, mob/living/user as mob|obj, proximity)
+	var/mob/living/carbon/human/H = user
+	user.setClickCooldown(50)
+	if(H.mind.special_role == "tzeentch")
+		if(C.happiness <= -14)
+			H.say("CHAR BELOK TEZANIUM!")
+			C.add_event("Tzbook", /datum/happiness_event/Tzbook/Ext)
+			C.happiness -= 1
+			C.hallucination(100, 999)
+			C.confused = 50
+			C.apply_effects( stun = 30, agony = 100,)
+		else
+			if(C.happiness <= -1)
+				H.say("KAILOS ARCTHETH!")
+				C.add_event("Tzbook", /datum/happiness_event/Tzbook/Med)
+				C.hallucination(50,50)
+				C.confused = 10
+				C.apply_effects(agony = 10)
+				C.happiness -= 1
+			else
+				H.say("Yahear Maham. Isophat")
+				C.add_event("Tzbook", /datum/happiness_event/Tzbook/Light)
+				C.apply_effects(agony = 1)
+	else
+		H.apply_effects(stun = 120, agony = 220)
+		to_chat(user, "<span class='phobia'>The words jump off of the page and burrow into your skull!</span>")
+		H.add_event("Tzbook", /datum/happiness_event/Tzbook/Ext)
+		H.hallucination(1000, 999)
+		H.confused = 240

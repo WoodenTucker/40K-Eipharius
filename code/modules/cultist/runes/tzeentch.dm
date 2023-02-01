@@ -89,3 +89,8 @@
 	ingredients = list(/obj/item/cell/lasgun)
 	product_path =  (/obj/item/gun/energy/WarpLens)
 
+/datum/rune_recipe/tzeentch/tzbook
+	name = "Rite of the Mindshatterer"
+	ingredients = list(/obj/item/book/manual)
+	product_path = (/obj/item/melee/Tzbook)
+
