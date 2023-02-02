@@ -593,7 +593,7 @@
 	unloaded_icon = "autoshotty-e"
 	unwielded_unloaded_icon = "autoshotty-e"
 	wielded_unloaded_icon = "autoshotty-wielded-e"
-	fire_delay = 2.4
+	fire_delay = 2.45
 	burst = 1
 	move_delay = 3
 	firemodes = list()
@@ -603,7 +603,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=4.6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.1, 0.1), automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=4.6, burst_accuracy=list(0,-1,-1), dispersion=list(0.0, 0.2, 0.2), automatic = 0),
 		)
 
 /obj/item/gun/projectile/boltrifle/lockebolter/update_icon()

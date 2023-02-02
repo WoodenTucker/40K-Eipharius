@@ -92,7 +92,8 @@
 						/datum/rune_recipe/tzeentch/transmutation,
 						/datum/rune_recipe/tzeentch/goldcoin,
 						/datum/rune_recipe/tzeentch/coppercoin,
-						/datum/rune_recipe/tzeentch/lens)
+						/datum/rune_recipe/tzeentch/lens,
+						/datum/rune_recipe/tzeentch/tzbook)
 	inherent_verbs = list(
 			/mob/living/carbon/human/proc/tzeewehere,
 			/mob/living/carbon/human/proc/tzeeforthechanger,
