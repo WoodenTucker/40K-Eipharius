@@ -512,13 +512,13 @@ Template:
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(
 				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
-				/obj/item/gun/energy/pulse/plasma/rifle = 2,
+				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
 				/obj/item/gun/energy/las/hotshot = 3,
 				/obj/item/gun/projectile/automatic/flamer = 1,
 				/obj/item/gun/energy/las/lasgun/accatran = 4,
 				/obj/item/gun/projectile/meltagun = 1,
-				/obj/item/gun/energy/las/lasgun/longlas = 1,
+				/obj/item/gun/energy/las/lasgun/longlas = 5,
 				)
 
 /obj/random/loot/randomarmor
