@@ -32,12 +32,12 @@
 	item_path = /obj/item/ammo_magazine/c556
 
 /datum/cargo_entry/ammo/rifle5/ap
-	name = "Rifle Magazine(5.56mm)"
+	name = "AP Rifle Magazine(5.56mm)"
 	cost = 11
 	item_path = /obj/item/ammo_magazine/c556/ap
 
 /datum/cargo_entry/ammo/rifle5/ms
-	name = "Rifle Magazine(5.56mm)"
+	name = "MS Rifle Magazine(5.56mm)"
 	cost = 9
 	item_path = /obj/item/ammo_magazine/c556/ms
 
