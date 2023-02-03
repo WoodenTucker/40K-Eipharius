@@ -126,7 +126,79 @@
 	icon_state = "kriegsniper"
 	item_state = "las_musket"
 
+/obj/item/gun/projectile/thrower
+	name = "Lead Thrower"
+	desc = "The Lead Thrower is a primitive effort in capable calibers on a small scale. It will take forever to reload, but if it hits, it will be devastating. Chambered in Bolter .75"
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "musket"
+	item_state = "musket"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK
+	caliber = ".75"
+	screen_shake = 2.5
+	handle_casings = HOLD_CASINGS
+	load_method = SINGLE_CASING|SINGLE_LOAD
+	max_shells = 1
+	ammo_type = /obj/item/ammo_casing/bolter
+	one_hand_penalty = 25
+	accuracy = -4
+	var/bolt_open = 0
+	wielded_item_state = "musket-wielded"
+	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
+	fire_sound = 'sound/weapons/guns/fire/musket_fire.ogg'
+	gun_type = GUN_SNIPER
+	sales_price = 2
 
+/obj/item/gun/projectile/heavysniper/update_icon()
+	..()
+	if(bolt_open)
+		icon_state = "musket-e"
+	else
+		icon_state = "musket"
+
+/obj/item/gun/projectile/thrower/examine(mob/user, distance)
+	. = ..()
+	if(bolt_open)//These guns do not chamber until their fired.
+		if(loaded.len)//However, fired rounds will eject automatically when the bolt is open, so there's a good chance the round is live.
+			to_chat(user, "There is a <span class='bnotice'>ROUND</span> in the chamber.")//But someone could still place a fired round into this gun, so best to just be generic.
+		else
+			to_chat(user, "<span class='danger'>The chamber is <b>EMPTY</b>.")
+
+/obj/item/gun/projectile/thrower/attack_self(mob/user as mob)
+	bolt_open = !bolt_open
+	if(bolt_open)
+		playsound(src, 'sound/weapons/guns/interact/bolt_open.ogg', 50)
+		if(chambered)
+			to_chat(user, "<span class='notice'>You work the bolt open, ejecting [chambered]!</span>")
+			playsound(src, casingsound, 100)
+			chambered.loc = get_turf(src)
+			loaded -= chambered
+			chambered = null
+		else
+			to_chat(user, "<span class='notice'>You work the bolt open.</span>")
+	else
+		to_chat(user, "<span class='notice'>You work the bolt closed.</span>")
+		bolt_open = 0
+		playsound(src, 'sound/weapons/guns/interact/bolt_close.ogg', 50)
+	add_fingerprint(user)
+	update_icon()
+
+/obj/item/gun/projectile/thrower/special_check(mob/user)
+	if(bolt_open)
+		to_chat(user, "<span class='warning'>You can't fire [src] while the bolt is open!</span>")
+		return 0
+	return ..()
+
+/obj/item/gun/projectile/thrower/load_ammo(var/obj/item/A, mob/user)
+	if(!bolt_open)
+		return
+	..()
+
+/obj/item/gun/projectile/thrower/unload_ammo(mob/user, var/allow_dump=1)
+	if(!bolt_open)
+		return
+	..()
 
 
 /obj/item/gun/projectile/automatic/galvanic/rifle

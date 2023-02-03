@@ -31,7 +31,7 @@
 
 /obj/item/ammo_magazine/handful/brifle_handful/two
 	initial_ammo = 2
-/*
+
 /obj/item/ammo_magazine/handful/brifle_handful/ap
 	name = "\improper handful of AP bullets"
 	desc = "A handful of rifle AP bullets for your rifle."
@@ -47,7 +47,7 @@
 
 /obj/item/ammo_magazine/handful/brifle_handful/ms/two
 	initial_ammo = 2
-*/
+
 
 // kroot rooifle
 
@@ -125,6 +125,31 @@
 	caliber = ".44"
 	ammo_type = /obj/item/ammo_casing/c44
 	max_ammo = 6
+
+/obj/item/ammo_magazine/handful/a50
+	name = "Handful of .50 bullets"
+	desc = "Why use a quickloader, when you can be a quicker loader?"
+	icon_state = "revolver-handful"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50
+	max_ammo = 6
+
+/obj/item/ammo_magazine/handful/a50/ap
+	name = "Handful of AP .50 bullets"
+	desc = "Why use a quickloader, when you can be a quicker loader?"
+	icon_state = "revolver-handful"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50/ap
+	max_ammo = 6
+
+/obj/item/ammo_magazine/handful/a50/ms
+	name = "Handful of MS .50 bullets"
+	desc = "Why use a quickloader, when you can be a quicker loader?"
+	icon_state = "revolver-handful"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50/ms
+	max_ammo = 6
+
 
 /obj/item/ammo_magazine/handful/ptsd
 	name = "PTSD round"

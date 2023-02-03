@@ -46,6 +46,35 @@
 
 // 357 revolva
 
+/obj/item/gun/projectile/revolver/detective/boscelot
+	name = "Boscelot Revolver"
+	desc = "A cheap revolver, copying the designs from Boscelot. Chambered in .38 and constantly asking the user why they didn't get a more powerful caliber."
+	icon_state = "snubby"
+	max_shells = 6
+	caliber = "38"
+	accuracy = -3.5
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	ammo_type = /obj/item/ammo_casing/c38
+
+/obj/item/gun/projectile/mervex
+	name = "Mervex Revolver"
+	desc = "The Mervex revolver is commonly used by pilgrims that like classy. Commonly found on many hive worlds. Uses .357 ammo."
+	icon_state = "mervex"
+	item_state = "crevolver"
+	caliber = "357"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
+	max_shells = 6
+	force = 15
+	accuracy = -2.5 //not the best craftsmanship
+	fire_delay= 3
+	ammo_type = /obj/item/ammo_casing/a357
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+
 /obj/item/gun/projectile/revolver/messina
 	name = "Messina Pattern Stub Revolver"
 	desc = "A simple stub revolver made locally on the planet from sheet metal, it isn't exactly accurate... Chambered in .357."
@@ -58,6 +87,17 @@
 	accuracy = -2.5 //not the best craftsmanship
 	fire_delay= 10
 	ammo_type = /obj/item/ammo_casing/a357
+
+/obj/item/gun/projectile/revolver/mateba
+	name = "mateba"
+	desc = "The mateba revolver is commonly used by law enforcement and gangers, what it lacks in accuracy it makes up for in sheer firepower."
+	icon_state = "mateba"
+	caliber = ".50"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	ammo_type = /obj/item/ammo_casing/a50
+	sales_price = 40
+	accuracy = -3
+	fire_delay= 3
 
 /obj/item/gun/projectile/revolver/villiers
 	name = "Villiers Pattern Stub Revolver"
@@ -75,38 +115,44 @@
 	ammo_type = /obj/item/ammo_casing/a357
 	sales_price = 25
 
-// .44 revolvers
-
-
-
-/obj/item/gun/projectile/revolver/boscelot
-	name = "Boscelot Pattern Stub Revolver"
-	desc = "A common type of stub revolver on the frontier worlds. Chambered in .44"
-	icon_state = "cptrevolver"
-	item_state = "crevolver"
-	caliber = ".44"
-	handle_casings = CYCLE_CASINGS
-	max_shells = 6
-	force = 15
-	accuracy = -0.5
-	fire_delay= 10
-	sales_price = 15
-	ammo_type = /obj/item/ammo_casing/c44
-
-/obj/item/gun/projectile/revolver/agripinaa
-	name = "Agripinaa Pattern 'Necros' Revolver"
-	desc = "The Necros is a heavy revolver chambered in .44 made by the heavy duty Agripinaa forge world. It is highly accurate but slow firing, at least it ejects casings by itself."
+/obj/item/gun/projectile/necros
+	name = "Necros Revolver"
+	desc = "The Necros is a heavy revolver used commonly by merchants. Uses .44 magnum ammo."
 	icon_state = "necros"
 	item_state = "crevolver"
 	caliber = ".44"
-	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
-	handle_casings = EJECT_CASINGS
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
 	max_shells = 6
 	force = 20
-	accuracy = 2
-	fire_delay = 12
+	accuracy = -3
+	fire_delay= 2.8
 	ammo_type = /obj/item/ammo_casing/c44
-	sales_price = 25
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	sales_price = 33
 
+/obj/item/gun/projectile/slugrevolver
+	name = "slug revolver"
+	desc = "The slug revolver is a fine piece of masterwork made on many forge worlds. This one seems to be a older model. Uses .44 ammo."
+	icon_state = "hunting_revolver"
+	item_state = "crevolver"
+	caliber = ".44"
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
+	handle_casings = CYCLE_CASINGS
+	max_shells = 6
+	force = 10
+	accuracy = -2.5
+	fire_delay= 2.7
+	ammo_type = /obj/item/ammo_casing/c44
+	var/chamber_offset = 0 //how many empty chambers in the cylinder until you hit a round
+	unload_sound 	= 'sound/weapons/guns/interact/rev_magout.ogg'
+	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
+	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
+	sales_price = 37
 
 
