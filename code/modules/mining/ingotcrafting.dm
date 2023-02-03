@@ -301,7 +301,7 @@
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/revolver/boscelot(user.loc)
+				new /obj/item/gun/projectile/revolver/detective/boscelot(user.loc)
 				qdel(src)
 				return
 			if(3)
@@ -1088,7 +1088,7 @@
 			if(5)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/gun/projectile/revolver/agripinaa(user.loc,1)
+				new /obj/item/gun/projectile/necros(user.loc,1)
 				qdel(src)
 				return
 			if(6)

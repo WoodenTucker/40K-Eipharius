@@ -191,6 +191,19 @@
 	armor_penetration = -20
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
+/obj/item/projectile/bullet/pistol/strong //matebas
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	damage = 50 //.50AE
+	armor_penetration = 20
+
+/obj/item/projectile/bullet/pistol/strong/ap
+	damage = 54 //.50AE
+	armor_penetration = 40
+
+/obj/item/projectile/bullet/pistol/strong/ms
+	damage = 60 //.50AE
+	armor_penetration = 0
+
 /obj/item/projectile/bullet/pistol/revolver
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 45 // .357
@@ -203,6 +216,31 @@
 /obj/item/projectile/bullet/pistol/revolver/ms
 	damage = 70
 	armor_penetration = -20
+
+/obj/item/projectile/bullet/pistol/medium/revolver
+	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
+	damage = 44 //.44 magnum or something
+	armor_penetration = 15
+
+/obj/item/projectile/bullet/pistol/medium/revolver/ap
+	damage = 48
+	armor_penetration = 30
+
+/obj/item/projectile/bullet/pistol/medium/revolver/ms
+	damage = 58
+	armor_penetration = -10
+
+/obj/item/projectile/bullet/pistol/strong/revolver
+	damage = 44
+	armor_penetration = 15
+
+/obj/item/projectile/bullet/pistol/strong/revolver/ap
+	damage = 48
+	armor_penetration = 30
+
+/obj/item/projectile/bullet/pistol/strong/revolver/ms
+	damage = 58
+	armor_penetration = -10
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -261,28 +299,38 @@
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a556
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 50
-	armor_penetration = 5
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 45
+	armor_penetration = 10
+
+/obj/item/projectile/bullet/rifle/a556/ap
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 49
+	armor_penetration = 20
+
+/obj/item/projectile/bullet/rifle/a556/ms
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 55
+	armor_penetration = -10
 
 /obj/item/projectile/bullet/rifle/a762
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
-	damage = 65
-	armor_penetration = 20
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 61
+	armor_penetration = 10
 	penetrating = TRUE
-/*
+
 /obj/item/projectile/bullet/rifle/a762/ap
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 64
 	armor_penetration = 20
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a762/ms
-	fire_sound = 'sound/weapons/gunshot/auto2.ogg'
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 71
 	armor_penetration = -10
 	penetrating = TRUE
-*/
+
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130

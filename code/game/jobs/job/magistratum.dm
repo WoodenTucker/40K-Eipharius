@@ -145,7 +145,7 @@
 	r_hand = /obj/item/melee/baton/loaded
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/revolver/boscelot
+	belt = /obj/item/gun/projectile/revolver/detective/boscelot
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -200,7 +200,7 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/revolver/agripinaa
+	belt = /obj/item/gun/projectile/necros
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
