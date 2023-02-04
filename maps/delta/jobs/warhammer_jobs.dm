@@ -19,16 +19,18 @@
 	/datum/job/ig/bullgryn,
 	/datum/job/ig/whiteshield,
 	/datum/job/roguetrader,
-	/datum/job/vetmerc,
+	/datum/job/janissary,
 	/datum/job/xenomerc,
 	/datum/job/explorer,
 	/datum/job/biologis,
 	/datum/job/engineer,
 	/datum/job/techmenial,
-	/datum/job/confessor,
+	/datum/job/deacon,
+	/datum/job/cmo,
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
-	/datum/job/novice,/*
+	/datum/job/marshal,
+	/datum/job/progena,/*
 	/datum/job/preacher, turn preacher into pilgrim fate */
 	/datum/job/innkeeper,
 	/datum/job/bouncer,

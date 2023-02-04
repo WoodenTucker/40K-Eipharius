@@ -3,7 +3,7 @@
 /datum/job/acolyte
 	title = "Interrogator"
 	department_flag = INQ
-	social_class = SOCIAL_CLASS_MED
+	social_class = SOCIAL_CLASS_MIN
 	total_positions = 1
 	spawn_positions = 1
 	latejoin_at_spawnpoints = TRUE
@@ -37,7 +37,7 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition)
 		H.adjustStaminaLoss(-INFINITY)
 		H.say(":i [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to investigate, neutralizing and erasing traces of heresy, chaos, xenos and daemons. Now more then ever your actions are being weighed by not only your master, but the inquisition - this mission is the last opportunity to prove yourself.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralizing and erasing traces of heresy, chaos, xenos and daemons. Now more then ever your actions are being weighed by not only your master, but the inquisition - this mission is the last opportunity to clear the names of not only the Lord Inquisitor but that of his entire retinue...</font></b></span>")
 
 /datum/job/acolyte/equip(var/mob/living/carbon/human/H)
 	. = ..()
@@ -49,7 +49,7 @@
 /datum/job/inquisitor
 	title = "Inquisitor"
 	department_flag = INQ
-	social_class = SOCIAL_CLASS_MED
+	social_class = SOCIAL_CLASS_MIN
 	total_positions = 1
 	spawn_positions = 1
 	head_position = 1

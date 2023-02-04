@@ -62,7 +62,7 @@
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
-/*
+
 /decl/hierarchy/outfit/job/cargo/janissary
 	name = OUTFIT_JOB_NAME("Vessorine Janissary")
 	uniform = /obj/item/clothing/under/rank/cargotech
@@ -79,4 +79,3 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 1)
-*/
