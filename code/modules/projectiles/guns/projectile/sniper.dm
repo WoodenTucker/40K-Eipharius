@@ -142,7 +142,7 @@
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/bolter
 	one_hand_penalty = 25
-	accuracy = -4
+	accuracy = 1
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
