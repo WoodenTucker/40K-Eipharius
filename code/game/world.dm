@@ -1,4 +1,4 @@
-/var/server_name = "Grimdark 13 - Warhammer 40,000"
+/var/server_name = "Grimdark 13 - Warhammer 40k"
 /var/game_id = null
 /var/list/warfare_taglines = list( "Eisenhorn","Ravenor")// list("It's Getting Cold Out There", "New Guns", "New Classes", "Cold", "Winter", "Frozen Solid", "Frozen Trench Pizza", "Warcrime Simulator", "Your Heart Has Stopped", )
 /var/warfare_tagline = null
