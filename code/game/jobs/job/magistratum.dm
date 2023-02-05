@@ -15,6 +15,7 @@
 	shotgun_skill = 10
 	lmg_skill = 9
 	smg_skill = 9
+	cultist_chance = 5
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -56,7 +57,7 @@
 	shotgun_skill = 9
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 20
+	cultist_chance = 15
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -99,7 +100,7 @@
 	shotgun_skill = 7
 	lmg_skill = 5
 	smg_skill = 5
-	cultist_chance = 0
+	cultist_chance = 20
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -115,7 +116,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Cadet [current_name]")
+		H.fully_replace_character_name("[current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(6,8),rand(6,8),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery

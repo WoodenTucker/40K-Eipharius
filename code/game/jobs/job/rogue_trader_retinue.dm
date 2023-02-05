@@ -26,7 +26,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 100
+	cultist_chance = 40
 
 
 	equip(var/mob/living/carbon/human/H)
