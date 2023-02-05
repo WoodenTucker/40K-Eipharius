@@ -5,6 +5,7 @@
 	/datum/job/governor,
 	/datum/job/heir,
 	/datum/job/servant,
+	/datum/job/hydro,
 	/datum/job/inquisitor,
 	/datum/job/acolyte,
 	/datum/job/arbitrator,
