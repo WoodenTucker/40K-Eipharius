@@ -967,7 +967,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = -0.5
-	sales_price = 100
+	sales_price = 80
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.4, burst_accuracy=null, dispersion=null, automatic = 0),

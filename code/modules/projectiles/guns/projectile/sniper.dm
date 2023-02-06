@@ -22,7 +22,7 @@
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	sales_price = 90
+	sales_price = 50
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()

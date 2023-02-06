@@ -573,12 +573,12 @@
 	icon_state = "lasbolt"
 	damage_type = BURN
 	penetration_modifier = 2
-	armor_penetration = 35//high penetration
-	damage = 60 //believe me, this is kinda of balanced.
+	armor_penetration = 15
+	damage = 55 //believe me, this is kinda of balanced.
 	pellets = 12
 	range_step = 2 //not sure what these two mean, but lets go with it!
 	spread_step = 4
-	range = 6 //short range
+	range = 12
 
 /obj/item/projectile/bullet/rifle/radcarbine
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
