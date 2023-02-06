@@ -186,6 +186,7 @@
 	cultist_chance = 25 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
+		"Krieg Grenadier" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
 		"Catachan Flamer" = /decl/hierarchy/outfit/job/sharpshooter/catachan,
 		)
@@ -791,7 +792,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/rank/krieg_uniform
 	suit = /obj/item/clothing/suit/armor/krieger/grenadier
 	back = /obj/item/storage/backpack/satchel/krieger/grenadier
-	belt = /obj/item/device/flashlight/lantern
+	belt = 	/obj/item/pickaxe
 	gloves = /obj/item/clothing/gloves/combat/krieg/grenadier
 	shoes = /obj/item/clothing/shoes/jackboots/krieg/grenadier
 	head = /obj/item/clothing/head/helmet/krieghelmet/grenadier
@@ -804,7 +805,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/pickaxe = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
