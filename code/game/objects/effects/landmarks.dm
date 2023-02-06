@@ -324,11 +324,15 @@ Template:
 				/obj/item/melee/classic_baton/trench_club = 5,
 				/obj/item/melee/telebaton = 3,
 				/obj/item/melee/trench_axe/glaive = 3,
+				/obj/item/melee/trench_axe/glaive/adamantine = 1,
 				/obj/item/melee/trench_axe/bardiche = 3,
 				/obj/item/melee/trench_axe/lance = 2,
+				/obj/item/melee/trench_axe/lance/adamantine = 1,
 				/obj/item/melee/trench_axe/bspear = 6,
 				/obj/item/melee/sword/cutro = 10,
+				/obj/item/melee/sword/cutro/adamantine = 1,
 				/obj/item/melee/sword/broadsword = 6,
+				/obj/item/melee/sword/broadsword/adamantine = 1,
 				/obj/item/melee/sword/machete = 6,
 				/obj/item/melee/sword/machete/chopper = 5,
 				/obj/item/toy/katana = 6,
@@ -387,6 +391,7 @@ Template:
 	return list(
 		/obj/item/ammo_magazine/c556 = 6,
 		/obj/item/ammo_box/shotgun = 4,
+		/obj/item/ammo_magazine/smgmc9mm = 2,
 		/obj/item/ammo_box/shotgun/slug = 3,
 		/obj/item/storage/box/sniperammo = 1,
 		/obj/item/ammo_magazine/handful/brifle_handful = 3,
@@ -481,6 +486,7 @@ Template:
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(
 				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
+				/obj/item/gun/projectile/bolter_pistol/inquis = 1,
 				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
 				/obj/item/gun/energy/las/hotshot = 2,

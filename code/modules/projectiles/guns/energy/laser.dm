@@ -638,7 +638,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 	sales_price = 140 //blessed by the omnissiah and made with adamantium
 
-/*// rare plasma pistols removed until proper plasma balance
+
 /obj/item/gun/energy/pulse/plasma/pistol/toaster
 	name = "seolite plasma pistol"
 	desc = "An ancient plasma pistol forged by seolite gun smiths, despite it's incredible age it shows no signs of decay. It has an overheat scale and on the end of it is written 'Boom!'."
@@ -678,7 +678,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "pulse_pistol"
 	sales_price = 300
 	charge_meter = FALSE
-*/
+
 
 // tinkered lasguns
 

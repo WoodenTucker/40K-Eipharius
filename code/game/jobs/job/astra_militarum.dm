@@ -67,7 +67,7 @@
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
 		)
-	cultist_chance = 25
+	cultist_chance = 20
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -78,7 +78,7 @@
 		H.say(":v [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		H.fully_replace_character_name("Guardsman [H.real_name]")
+		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
@@ -135,8 +135,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Recruit"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -157,7 +157,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		H.fully_replace_character_name("Whiteshield [H.real_name]")
+		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.say(":v [title] reporting for duty!")
@@ -183,7 +183,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 8
-	cultist_chance = 25 //same chance as sniper now.
+	cultist_chance = 20 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/sharpshooter/valhalla,
@@ -200,7 +200,7 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Specialist [H.real_name]")
+		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()
@@ -320,7 +320,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 20 //snipers have even less chance to be heretics than guardsmen.
+	cultist_chance = 25 //snipers have even less chance to be heretics than guardsmen.
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -337,7 +337,7 @@ datum/job/ig/bullgryn
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Sniper [H.real_name]")
+		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()

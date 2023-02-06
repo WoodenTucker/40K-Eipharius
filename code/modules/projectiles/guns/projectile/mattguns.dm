@@ -195,6 +195,7 @@
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
+	sales_price = 30
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered/verb/scope()
 	set category = "Object"
@@ -246,7 +247,7 @@
 	item_state = "boltactionsharp"
 	empty_icon = "oldglory-e"
 	accuracy = 4
-	sales_price = 20
+	sales_price = 26
 
 //Paryying.
 
@@ -278,7 +279,7 @@
 	screen_shake = 0.5
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	sales_price = 40
+	sales_price = 30
 
 //AMMO
 
@@ -412,7 +413,7 @@
 	unloaded_icon = "flamer-e"
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
-	sales_price = 60
+	sales_price = 40
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
@@ -451,7 +452,7 @@
 	unloaded_icon = "flamerp-e"
 	unwielded_unloaded_icon = "flamerp-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
-	sales_price = 60
+	sales_price = 50
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
@@ -880,7 +881,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 2
-	sales_price = 100
+	sales_price = 150
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -966,7 +967,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = -0.5
-	sales_price = 0
+	sales_price = 100
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.4, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1026,7 +1027,7 @@
 	firemodes = list()
 	accuracy = 2.2 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
-	sales_price = 130
+	sales_price = 160
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.9, burst_accuracy=null, dispersion=null, automatic = 0),
