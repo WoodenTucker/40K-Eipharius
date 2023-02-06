@@ -227,7 +227,7 @@
 
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
-	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it forehead."
+	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it's forehead."
 	icon_state = "guard"
 	item_state = "guard"
 	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
@@ -248,6 +248,12 @@
 	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/guardhelmet/sargecap
+	name = "Cadian Pattern Sergeant's Cap"
+	desc = "Often mistaken for a soft cap, this variation features armor that comes down to protect the face, as well as a vox piece to slide over your ear. Perfect for Senior Enlisted."
+	icon_state = "sarge_cap"
+	item_state = "sarge_cap"
 
 /obj/item/clothing/head/helmet/krieghelmet
 	name = "Krieg Mark IX Helmet"
