@@ -231,6 +231,14 @@
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	unacidable = 1 //acid proof bitch
 
+/obj/item/clothing/mask/gas/krieg/grenadier
+	name = "Mark IXc Gas Mask"
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Grenadier, with additional slight armor protection."
+	icon_state = "grenmask"
+	item_state = "grenmask"
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 95, rad = 0)
+
+
 /obj/item/clothing/mask/gas/krieg/medicae
 	name = "Mark IXb/M Gas Mask"
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Combat Medicae."

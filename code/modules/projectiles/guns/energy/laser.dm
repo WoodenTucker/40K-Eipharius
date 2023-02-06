@@ -316,6 +316,28 @@
 
 	sales_price = 65
 
+/obj/item/gun/energy/las/hotshot/krieg
+	name = "Type XIV Lasgun Heavy"
+	desc = "The standard Hellgun issued to Grenadiers of the Death Korps of Krieg, . It slowly recharges any lasgun cells loaded."
+	icon_state = "hotshot_krieg"
+	item_state = "hevluscius"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 25
+	one_hand_penalty = 1.8
+	accuracy = 0
+	move_delay = 4
+	self_recharge = 3
+	recharge_time = 9
+	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
+	charge_cost = 200
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "hevluscius-wielded"
+
+	sales_price = 65
 
 /*
 obj/item/gun/energy/las/hotshot/bloodpact

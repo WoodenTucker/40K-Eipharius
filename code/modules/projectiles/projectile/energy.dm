@@ -234,6 +234,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 95
+	agony = 90
 	armor_penetration = 60 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
 	light_power = 4
 	light_color = "#2132cf"
