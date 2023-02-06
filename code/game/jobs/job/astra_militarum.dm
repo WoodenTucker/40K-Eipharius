@@ -78,16 +78,19 @@
 		H.say(":v [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		H.fully_replace_character_name("[H.real_name]")
-		H.assign_random_quirk()
-		H.witchblood()
-		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
 		if(title == "Krieg Guardsman")
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
 			H.fully_replace_character_name("Guardsman [rand(1,100000)]")
 			cultist_chance = 1
+		if(title == "Cadian Guardsman" || "Catachan Jungle Hunter" || "Valhallan Ice Warrior")
+			H.assign_random_quirk()
+			H.fully_replace_character_name("Guardsman [H.real_name]")
+			cultist_chance = 20
+		H.assign_random_quirk()
+		H.witchblood()
+		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
