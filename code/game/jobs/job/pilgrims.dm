@@ -48,7 +48,7 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","Mercenary","Penitent","Nomad","Rat Catcher", "Musician","Village Medicae","Hunter","Drug Dealer")
+	var/fates = list("Merchant","Mercenary","Penitent","Nomad","Miner","Rat Catcher","Musician","Village Medicae","Hunter","Drug Dealer")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -70,6 +70,26 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			to_chat(U,"<span class='notice'><b><font size=3>Your father hunter rats. Your grandfather hunted rats. By the emperor, you're going to hunt some rats. Remember, ratmen don't exist. </font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("Miner")
+			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
+			U.add_skills(rand(6,8),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
+			equip_to_slot_or_del(new /obj/item/pickaxe/newpick, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/miner, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
+			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
@@ -312,7 +332,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-			to_chat(U,"<span class='notice'><b><font size=3>After completing medicae school you were sent here, you probably have been here for some while.</font></b></span>")
+			to_chat(U,"<span class='notice'><b><font size=3>Barred from practiciing medicine on your world of origin you are one of the many massed pilgrims who have traveled here in search of a new life.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
