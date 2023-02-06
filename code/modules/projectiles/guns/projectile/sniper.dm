@@ -124,7 +124,8 @@
 	name = "Krieg Pattern Longlas"
 	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
 	icon_state = "kriegsniper"
-	item_state = "las_musket"
+	item_state = "snipelucius"
+	wielded_item_state = "snipelucius_wielded"
 
 /obj/item/gun/projectile/thrower
 	name = "Lead Thrower"

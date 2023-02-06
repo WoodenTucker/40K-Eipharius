@@ -205,9 +205,15 @@
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
+		if(title == "Krieg Grenadier")
+			H.set_quirk(new/datum/quirk/brave())
+			H.set_trait(new/datum/trait/death_tolerant())
+			H.implant_loyalty(src)
+			H.fully_replace_character_name("Grenadier [rand(1,100000)]")
+			cultist_chance = 1
 
 		switch(title)
-			if("Cadian Plasma Gunner" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
+			if("Cadian Plasma Gunner" || "Krieg Grenadier" || "Valhallan Heavy Autogunner" || "Catachan Flamer")
 				if(title == "Cadian Plasma Gunner")
 					to_chat(H, "<span class='notice'><b><font size=2> You are from the tough planet Cadia. Trained in plasma weaponry, it will devastate any armored person it touches. It's ammo recharges in the gun, too!</font></b></span>")
 				if(title == "Catachan Flamer")
@@ -216,6 +222,9 @@
 				if(title == "Valhallan Heavy Autogunner")
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=2> You are a Valhallan Specialist. Equipped with a heavy autogun and plenty of ammo. Suppress the enemy to keep their heads down! </font></b></span>")
+				if(title == "Krieg Grenadier")
+					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
+					to_chat(H, "<span class='notice'><b><font size=2> You are a Krieg Grenadier, born and bred on the deadworld. Equipped with a hellgun, your mobile firepower is unmatched! Support your brethren and storm the enemy, wherever they dig in. </font></b></span>")
 
 /datum/job/ig/guardsman/sharpshooter/imperial
 	total_positions = 8
@@ -343,6 +352,12 @@ datum/job/ig/bullgryn
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a sharpshooter, the elite of the Imperial guard in long ranged warfare. Scout ahead with your superior range and warn your comrades of hostiles. </font></b></span>")
+		if(title == "Krieg Marksman")
+			H.set_quirk(new/datum/quirk/brave())
+			H.set_trait(new/datum/trait/death_tolerant())
+			H.implant_loyalty(src)
+			H.fully_replace_character_name("Marksman [rand(1,100000)]")
+			cultist_chance = 1
 
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
@@ -469,7 +484,11 @@ datum/job/ig/bullgryn
 		)
 	minimal_access = list(access_medical, access_village, access_security, access_guard_common,
 		)
-	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
+	alt_titles = list(
+		"Cadian Medicae" = /decl/hierarchy/outfit/job/medical/paramedic,
+		"Krieg Quartermaster" = /decl/hierarchy/outfit/job/medical/paramedic/krieg,
+		"Valhallan Medicae" = /decl/hierarchy/outfit/job/medical/paramedic/valhallan
+		)
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
 	sniper_skill = 7
@@ -491,12 +510,27 @@ datum/job/ig/bullgryn
 		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
+		if(title == "Krieg Quartermaster")
+			H.implant_loyalty(src)
+			H.fully_replace_character_name("Quartermaster [rand(1,100000)]")
+			cultist_chance = 1
+		switch(title)
+			if("Cadian Medicae" || "Valhallan Medicae" || "Krieg Quartermaster")
+				if(title == "Cadian Medicae")
+					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
+					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
+				if(title == "Krieg Quartermaster")
+					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(2,5),rand(1,5))
+					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
+					to_chat(H, "<span class='notice'><b><font size=3>You are a Quartermaster. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller, as well as keep track of the gear of the dead. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
+				if(title == "Valhallan Medicae")
+					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
+					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 		H.say(":v [title] reporting for duty!")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
-
-		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 
 // Commissar
 
@@ -752,6 +786,31 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1,
 	)
 
+/decl/hierarchy/outfit/job/sharpshooter/krieg
+	name = OUTFIT_JOB_NAME("Krieg Grenadier")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/krieger/grenadier
+	back = /obj/item/storage/backpack/satchel/krieger/grenadier
+	belt = /obj/item/device/flashlight/lantern
+	gloves = /obj/item/clothing/gloves/combat/krieg/grenadier
+	shoes = /obj/item/clothing/shoes/jackboots/krieg/grenadier
+	head = /obj/item/clothing/head/helmet/krieghelmet/grenadier
+	mask = /obj/item/clothing/mask/gas/krieg/grenadier
+	glasses = null
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/hotshot/krieg
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/pickaxe = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	)
+
 /decl/hierarchy/outfit/job/sharpshooter/catachan
 	name = OUTFIT_JOB_NAME("Catachan Flamer")
 	uniform = /obj/item/clothing/under/casual_pants/catachan
@@ -915,7 +974,63 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
 
+// Medicae
 
+/decl/hierarchy/outfit/job/medical/paramedic/krieg
+	name = OUTFIT_JOB_NAME("Krieg Quartermaster")
+	uniform = /obj/item/clothing/under/rank/krieg_uniform
+	suit = /obj/item/clothing/suit/armor/krieger
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	back = /obj/item/storage/backpack/satchel/krieger
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	glasses = /obj/item/clothing/glasses/hud/health
+	suit_store = /obj/item/gun/energy/las/lasgun/lucius
+	belt = /obj/item/storage/belt/medical/full
+	head = /obj/item/clothing/head/helmet/krieghelmet/medicae
+	mask = /obj/item/clothing/mask/gas/krieg/medicae
+	r_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/cell/lasgun
+	id_type = /obj/item/card/id/medical/paramedic
+	l_ear = /obj/item/device/radio/headset/red_team
+	r_ear = null
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel/krieg = 1
+	)
+	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
+
+/decl/hierarchy/outfit/job/medical/paramedic/valhallan
+	name = OUTFIT_JOB_NAME("Valhallan Medicae")
+	uniform = /obj/item/clothing/under/rank/valhallan_uniform
+	suit = /obj/item/clothing/suit/armor/valhallanarmor/medicae
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	glasses = /obj/item/clothing/glasses/hud/health
+	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
+	belt = /obj/item/storage/belt/medical/full
+	head = /obj/item/clothing/head/valushanka/medicae
+	r_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/ammo_magazine/a762
+	id_type = /obj/item/card/id/medical/paramedic
+	l_ear = /obj/item/device/radio/headset/red_team
+	r_ear = null
+	backpack_contents = list(
+	/obj/item/ammo_magazine/a762 = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
+	/obj/item/clothing/glasses/cadiangoggles = 1,
+	)
+	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
 
 
