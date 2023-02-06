@@ -267,6 +267,21 @@
 	if(alien == IS_DIONA)
 		M.adjustToxLoss(50 * removed)
 
+/datum/reagent/spidervenom
+	name = "spidervenom"
+	description = "If you see this I messed up"//shouldn't be used
+	taste_description = "Bad code" //I don't think this should ever be used
+	taste_mult = 1.2
+	reagent_state = REAGENT_LIQUID
+	color = "#cf3600"
+	metabolism = REM * 1 //should lose .2 of the chemical per round tick thinggy
+
+/datum/reagent/spidervenom/affect_blood(var/mob/living/carbon/human/m)
+	m.adjustFireLoss(3)
+
+
+
+
 /datum/reagent/acid/polyacid
 	name = "Polytrinic acid"
 	description = "Polytrinic acid is a an extremely corrosive chemical substance."
