@@ -246,6 +246,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 140
+	agony = 90
 	armor_penetration = 40
 	light_power = 4
 	light_color = "#2132cf"
@@ -257,6 +258,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
 	damage = 110
+	agony = 70
 	armor_penetration = 40
 	light_power = 4
 	light_color = "#2132cf"
