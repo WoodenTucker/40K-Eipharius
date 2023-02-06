@@ -13,22 +13,27 @@
 
 /datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
-	cost = 70
+	cost = 80
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
 
 /datum/cargo_entry/weapon/acca
 	name = "Accatran Carbine"
-	cost = 90
+	cost = 85
 	item_path = /obj/item/gun/energy/las/lasgun/accatran
 
 /datum/cargo_entry/weapon/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
-	cost = 120
+	cost = 220
 	item_path = /obj/item/gun/energy/las/hotshot
+
+/datum/cargo_entry/weapon/hotshot/krieg
+	name = "Type XIV Lasgun Heavy"
+	cost = 240
+	item_path = /obj/item/gun/energy/las/hotshot/krieg
 
 /datum/cargo_entry/weapon/longlas
 	name = "M35 Longlas"
-	cost = 160
+	cost = 170
 	item_path = /obj/item/gun/energy/las/lasgun/longlas
 
 /datum/cargo_entry/weapon/longlas
@@ -58,8 +63,13 @@
 
 /datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
-	cost = 190
+	cost = 110
 	item_path = /obj/item/gun/projectile/heavysniper
+
+/datum/cargo_entry/weapon/needlerrifle
+	name = "Needler Marksman Rifle"
+	cost = 130
+	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
 
 /datum/cargo_entry/weapon/shotgunsawn
 	name = "Sawn-off Shotgun"
@@ -123,7 +133,7 @@
 
 /datum/cargo_entry/weapon/lockebolter
 	name = "Locke Bolter"
-	cost = 230
+	cost = 190
 	item_path = /obj/item/gun/projectile/boltrifle/lockebolter
 
 /datum/cargo_entry/weapon/plasmapistol

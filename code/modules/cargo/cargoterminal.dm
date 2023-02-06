@@ -284,10 +284,13 @@
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
 	if (href_list["tax"])
-		var/taxrates = list("5", "10", "15", "20", "25", "30",) //lists tax rates, we'll do set ones for now
+		var/taxrates = list("1", "5", "10", "15",) //lists tax rates, we'll do set ones for now
 		var/taxchoice = input("Choose the tax rate", "Available rates") as null|anything in taxrates
 
 		switch(taxchoice)
+			if("1")
+				GLOB.tax_rate = 0.1
+				to_world("<span class='warning'>[usr] has set the tax rate to 1%!</span>")
 			if("5")
 				GLOB.tax_rate = 0.5
 				to_world("<span class='warning'>[usr] has set the tax rate to 5%!</span>")
@@ -297,15 +300,6 @@
 			if("15")
 				GLOB.tax_rate = 0.15
 				to_world("<span class='warning'>[usr] has set the tax rate to 15%!</span>")
-			if("20")
-				GLOB.tax_rate = 0.20
-				to_world("<span class='warning'>[usr] has set the tax rate to 20%!</span>")
-			if("25")
-				GLOB.tax_rate = 0.25
-				to_world("<span class='warning'>[usr] has set the tax rate to 25%!</span>")
-			if("30")
-				GLOB.tax_rate = 0.30
-				to_world("<span class='warning'>[usr] has set the tax rate to 30%!</span>")
 
 
 

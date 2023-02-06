@@ -290,7 +290,7 @@
 	name = "Locke Pattern Double-Edged Chainsword"
 	desc = "Nicknamed 'Mercy', This Chainsword is designed for an absolute lunatic. With two ripping edges for maximum carnage. Intended for two handed use. "
 	icon = 'icons/obj/weapons/melee/misc.dmi'
-	icon_state = "mercychainswordold"
+	icon_state = "mercychainsword"
 	item_state = "mercychainsword"
 	wielded_icon = "mercychainsword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
@@ -417,23 +417,23 @@
 
 /obj/item/melee/sword/sabre
 	name = "iron sabre"
-	desc = "Like a claymore but for an officer."
+	desc = "A fine imperial sabre."
 	icon_state = "sabre"
 	item_state = "sabre"
-	force = 31 //claymore but smaller and lighter
+	force = 31
 	force_wielded = 35
-	block_chance = 30 //acceptable blocking
+	block_chance = 33
 	weapon_speed_delay = 7
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/sword/cutro
-	name = "steel cutro" //literally a lightweight sword, no lore corelations if you get what i mean.
-	desc = "A small steel blade with near perfect balance, useful for assasinations or hunting, but pretty shitty against armor, not very good blocking too..."
+	name = "cutro blade"
+	desc = "A lightweight iron blade with near perfect balance."
 	icon_state = "spatha"
 	item_state = "spatha"
 	force = 27
-	force_wielded = 28
+	force_wielded = 29
 	armor_penetration = 15
 	block_chance = 35
 	weapon_speed_delay = 6
@@ -442,21 +442,21 @@
 
 /obj/item/melee/sword/cutro/adamantine
 	name = "adamantium cutro"
-	desc = "A small steel blade with near perfect balance, this one had it's edges upgraded with adamantium."
+	desc = "A lightweight adamantium blade with near perfect balance."
 	color = "#848484"
 	force = 29
-	force_wielded = 30
+	force_wielded = 31
 	armor_penetration = 20
-	block_chance = 37 //weight is important for blocking
+	block_chance = 37
 	weapon_speed_delay = 6
 	sales_price = 19
 
 /obj/item/melee/sword/broadsword
 	name = "heavy broadsword"
-	desc = "A heavy steel broadsword, two handed, although it looks like a claymore, its not a claymore."
+	desc = "A heavy iron broadsword."
 	icon_state = "claymore"
 	item_state = "claymore"
-	force = 28 //kinda heavy
+	force = 28
 	force_wielded = 38
 	armor_penetration = 10
 	block_chance = 20
@@ -466,7 +466,7 @@
 
 /obj/item/melee/sword/broadsword/adamantine
 	name = "adamantium heavy broadsword"
-	desc = "A heavy steel broadsword, the edges of this specific broadsword have been augmented with an edge made out of adamantium."
+	desc = "A heavy adamantium broadsword."
 	color = "#848484"
 	force = 30
 	force_wielded = 41
@@ -490,7 +490,7 @@
 
 /obj/item/melee/sword/machete/chopper
 	name = "iron chopper"
-	desc = "Both a vine removal tool, and a limb removal tool. Use it on vines, and also people who annoy you."
+	desc = "A light primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."
 	icon_state = "machete_imp"
 	item_state = "salvagedmachete"
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -504,7 +504,7 @@
 
 /obj/item/melee/sword/machete/chopper/heavy
 	name = "heavy iron chopper"
-	desc = "Both a vine removal tool, and a limb removal tool. Use it on vines, and also people who annoy you."
+	desc = "A heavy primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."
 	icon_state = "scrapsabre"
 	item_state = "salvagedmachete"
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -518,7 +518,7 @@
 
 /obj/item/melee/sword/demon
 	name = "demon sword"
-	desc = "A sword possessed by an entity of the warp. Once used by a great noble of imperium before it was corrupted. How far it has fallen..."
+	desc = "The very sight of this blade makes you sick to your stomach."
 	icon_state = "Scorpion_CS"
 	item_state = "Scorpion_CS"
 	icon = 'icons/obj/weapons/melee/misc.dmi'
@@ -538,7 +538,7 @@
 
 /obj/item/melee/trench_axe
 	name = "trench axe"
-	desc = "Used mainly for murdering those on the enemy side."
+	desc = "A lightweight fighting axe that doubles as a tool for the cunning guardsman."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "trenchaxe"
 	item_state = "trenchaxe"
@@ -562,7 +562,7 @@
 
 /obj/item/melee/trench_axe/glaive
 	name = "steel saintie"
-	desc = "A powerful glaive used for singular felling blows against armored opponents(pronounced san-tee), its two handed, but even when one handed, its incredibly good at blocking."
+	desc = "A powerful glaive used for singular felling blows against armored opponents(pronounced san-tee)."
 	icon_state = "glaive"
 	item_state = "spear"
 	wielded_icon = "spear-w"
@@ -576,7 +576,7 @@
 
 /obj/item/melee/trench_axe/glaive/adamantine
 	name = "adamantium saintie"
-	desc = "A heavy adamantine glaive used for singular felling blows against armored opponents(pronounced san-tee), this thing is so heavy its useless when one handed."
+	desc = "A heavy adamantine glaive used for singular felling blows against armored opponents(pronounced san-tee)."
 	color = "#848484"
 	force = 27
 	force_wielded = 41
@@ -585,7 +585,7 @@
 
 /obj/item/melee/trench_axe/bardiche
 	name = "bardiche"
-	desc = "A gigantic, powerful, two handed, sharp polearm used for singular felling blows against armored opponents, it may be slow, but it sure is going to cut people in half."
+	desc = "A gigantic, powerful, two handed, sharp polearm used for singular felling blows against armored opponents."
 	icon_state = "bardiche"
 	item_state = "savaxe"
 	wielded_icon = "savaxe"
