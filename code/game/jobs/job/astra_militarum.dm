@@ -86,7 +86,7 @@
 			cultist_chance = 1
 		if(title == "Cadian Guardsman" || "Catachan Jungle Hunter" || "Valhallan Ice Warrior")
 			H.assign_random_quirk()
-			H.fully_replace_character_name("Guardsman [H.real_name]")
+			H.fully_replace_character_name("[H.real_name]")
 			cultist_chance = 20
 		H.assign_random_quirk()
 		H.witchblood()
