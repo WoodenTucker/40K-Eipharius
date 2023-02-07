@@ -794,9 +794,9 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/kriegsgt
 	name = "Krieg Watchmaster's Overcoat"
-	desc = "A ornated uniform with silver-trimming and red waffenfarbe by it collar. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster... It smells of saddeness and blood."
-	icon_state = "kriegcoat"
-	item_state = "kriegcoat"
+	desc = "An antiquated uniform only seen by the more experienced of Krieg. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster... It smells of saddeness and blood."
+	icon_state = "watchcoat"
+	item_state = "watchcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 45, bio = 100, rad = 100)
 	sales_price = 45

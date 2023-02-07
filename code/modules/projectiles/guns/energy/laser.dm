@@ -601,7 +601,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma rifle. It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
-	item_state = "ionrifle"
+	item_state = "plasmarifle"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	force = 12
@@ -613,7 +613,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmarifle
 	charge_cost = 700
-	wielded_item_state = "ionrifle-wielded"
+	wielded_item_state = "plasmarifle-wielded"
 	sales_price = 115 //funilly enough, plasma rifles are considered more common than plasma pistols in the imperial market, even then, they arent very common
 
 /obj/item/gun/energy/pulse/plasma/pistol
@@ -621,7 +621,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	desc = "A plasma pistol. Great for dealing with threats swiftly.It has an overheat scale and on the end of it is written 'Boom!'."
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "ppistol"
-	item_state = "pulse_carbine"
+	item_state = "plasmapistol"
 	slot_flags = SLOT_BACK|SLOT_S_STORE|SLOT_BELT
 	w_class = ITEM_SIZE_LARGE
 	force = 10
@@ -633,7 +633,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 550
-	wielded_item_state = "pulse_carbine"
+	wielded_item_state = "plasmapistol"
 	sales_price = 120 //made with adamantium
 
 /obj/item/gun/energy/pulse/plasma/pistol/chaos // want chaos pistol better than normal. as chaos will be worsely equipped, they need their shining weapons to push up the average
