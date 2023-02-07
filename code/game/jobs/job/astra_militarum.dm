@@ -1121,7 +1121,7 @@ datum/job/ig/bullgryn
 	belt = /obj/item/melee/chain/inqcs
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet
+	head = /obj/item/clothing/head/helmet/guardhelmet/sargecap
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
