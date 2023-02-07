@@ -86,7 +86,7 @@
 			cultist_chance = 1
 		if(title == "Cadian Guardsman" || "Catachan Jungle Hunter" || "Valhallan Ice Warrior")
 			H.assign_random_quirk()
-			H.fully_replace_character_name("Guardsman [H.real_name]")
+			H.fully_replace_character_name("[H.real_name]")
 			cultist_chance = 20
 		H.assign_random_quirk()
 		H.witchblood()
@@ -730,7 +730,8 @@ datum/job/ig/bullgryn
 	r_pocket = /obj/item/ammo_magazine/a762
 	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
 	backpack_contents = list(
-	/obj/item/ammo_magazine/a762 = 2,
+	/obj/item/ammo_magazine/c556/ap = 1,
+	/obj/item/ammo_magazine/c556/ms = 2,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
@@ -778,12 +779,12 @@ datum/job/ig/bullgryn
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08
+	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
 	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/ammo_magazine/box/a556/mg08 = 2,
+	/obj/item/ammo_magazine/box/a556/mg08/ms = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,

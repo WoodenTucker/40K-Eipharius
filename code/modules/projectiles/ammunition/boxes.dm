@@ -220,6 +220,11 @@
 	name = "LMG mag"
 	icon_state = "hmg"
 
+/obj/item/ammo_magazine/box/a556/mg08/ms
+	name = "MS LMG mag"
+	icon_state = "hmg"
+	ammo_type = /obj/item/ammo_casing/a556/ms
+
 /obj/item/ammo_magazine/c556
 	name = "magazine (5.56mm)"
 	icon_state = "5556"
