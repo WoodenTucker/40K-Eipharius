@@ -427,7 +427,7 @@ var/const/NO_EMAG_ACT = -50
 	SetName(final_name)
 
 /obj/item/card/id/civilian/confessor
-	job_access_type = /datum/job/confessor
+	job_access_type = /datum/job/deacon
 
 /obj/item/card/id/pilgrim/penitent
 	access = list(access_village)

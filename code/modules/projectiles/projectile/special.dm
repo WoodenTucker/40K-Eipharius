@@ -21,31 +21,47 @@
 /obj/item/projectile/bullet/bolterrifle 
 	name =".75 bolt" //.75, astartes sized bolters or boltpistols
 	icon_state= "bolter"
-	damage = 65
-	armor_penetration = 75 //this is totally not cause its a .75
+	damage = 70
+	armor_penetration = 30 //this is totally not cause its a .75
 	check_armour = "bullet"
-	weaken = -5 //removes stun from explosion
-	sharp = 1
-	edge = 1
 
-	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 1) // explosion is small, bullets will no longer be able to kill multiple people or nuke walls instantly
-		return 1
-		
-		
 /obj/item/projectile/bullet/bpistol 
 	name =".50 bolt" //.50, human sized bolters and bolt pistols
 	icon_state= "bolter"
-	damage = 45
+	damage = 60
 	check_armour = "bullet"
-	armor_penetration = 65
-	weaken = -5 //also removes stun from explosion
-	sharp = 1
-	edge = 1
+	armor_penetration = 25
 
-	on_hit(var/atom/target, var/blocked = 0)
-		explosion(target, -1, 0, 1) //explosion is weak as to not instantly destroy walls and kill people who werent shot at
-		return 1
+// SPECIAL BOLT ROUNDS
+
+/obj/item/projectile/bullet/bpistol/kp
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 65
+	armor_penetration = 35
+	penetration_modifier = 1.4
+
+/obj/item/projectile/bullet/bolt/kp
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 78
+	armor_penetration = 45
+	penetration_modifier = 1.8
+
+/obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 40
+	armor_penetration = 25
+/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
+	if(isturf(target))
+		explosion(target, -1, 0, 2)
+	..()
+
+/obj/item/projectile/bullet/bolt/ms
+	fire_sound = 'sound/effects/explosion1.ogg'
+	damage = 50
+	armor_penetration = 30
+/obj/item/projectile/bullet/gyro/on_hit(var/atom/target, var/blocked = 0)
+	if(isturf(target))
+		explosion(target, -1, 0, 2)
 
 /obj/item/projectile/meteor
 	name = "meteor"

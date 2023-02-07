@@ -272,36 +272,14 @@ Template:
 				/obj/item/clothing/accessory/holster/hip = 2,
 				/obj/item/storage/belt/warfare = 1,
 				/obj/item/clothing/accessory/storage/torso/armor = 2,
-				/obj/item/clothing/accessory/storage/webbing = 8,
-				/obj/item/clothing/accessory/legguards/ballistic = 6,
-				/obj/item/clothing/accessory/legguards/ablative = 4,
-				/obj/item/clothing/accessory/armguards/ablative = 4,
-				/obj/item/clothing/accessory/armguards/ballistic = 6,
-				/obj/item/clothing/accessory/armguards/riot = 6,
+				/obj/item/clothing/accessory/storage/webbing = 6,
+				/obj/item/clothing/accessory/legguards/ballistic = 3,
+				/obj/item/clothing/accessory/legguards/ablative = 2,
+				/obj/item/clothing/accessory/armguards/ablative = 2,
+				/obj/item/clothing/accessory/armguards/ballistic = 3,
+				/obj/item/clothing/accessory/armguards/riot = 3,
 				/obj/item/clothing/glasses/cadiangoggles/elite = 1,
-				/obj/item/clothing/accessory/legguards/riot = 6)
-
-/obj/random/loot/guardarmor
-	name = "Special Guard Armor" // After manor update we delete this.
-	desc = "This is a loot spawner that spawns special imperial guardsmen armor and no more then 2-3 should be on the map."
-	icon_state = "guardarmor"
-
-/obj/random/loot/guardarmor/spawn_choices()
-	return list(/obj/item/clothing/suit/armor/flak/heavy = 2,
-				/obj/item/clothing/suit/armor/guardsman/carapace =1,
-				/obj/item/clothing/suit/armor/krieger/grenadier = 1)
-
-/obj/random/loot/guardhelmet
-	name = "Guard Helmet" // After manor update we delete this.
-	desc = "This is a loot spawner that spawns imperial guardsmen armor."
-	icon_state = "guardhelmet"
-
-/obj/random/loot/guardhelmet/spawn_choices()
-	return list(/obj/item/clothing/head/helmet/guardhelmet = 3,
-				/obj/item/clothing/head/helmet = 2,
-				/obj/item/clothing/head/valushanka = 2,
-				/obj/item/clothing/head/helmet/krieghelmet = 1,
-				/obj/item/clothing/mask/gas/krieg = 1,)
+				/obj/item/clothing/accessory/legguards/riot = 3)
 
 /obj/random/loot/lightmelee
 	name = "Light Melee"
@@ -321,15 +299,17 @@ Template:
 
 /obj/random/loot/heavymelee/spawn_choices()
 	return list(/obj/item/melee/trench_axe = 13,
-				/obj/item/melee/sword/cane = 4,
 				/obj/item/melee/classic_baton/trench_club = 8,
 				/obj/item/melee/trench_axe/bardiche = 6,
 				/obj/item/melee/sword/broadsword = 6,
+				/obj/item/melee/trench_axe/glaive = 6,
+				/obj/item/melee/trench_axe/bardiche = 6,
+				/obj/item/melee/trench_axe/lance = 4,
+				/obj/item/melee/trench_axe/bspear = 6,
 				/obj/item/shield/riot = 2,
 				/obj/item/shield/riot/metal = 1,
 				/obj/item/melee/sword/sabre = 4)
 
-/* // we dont really need all the melee
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
 	desc = "Spawns light and heavy melee.."
@@ -341,70 +321,42 @@ Template:
 				/obj/item/melee/sword/combat_knife/bowie = 3,
 				/obj/item/melee/sword/combat_knife/glaive = 1,
 				/obj/item/melee/trench_axe = 13,
-				/obj/item/material/sword/cane = 4,
-				/obj/item/melee/classic_baton/trench_club = 8,
-				/obj/item/melee/telebaton = 12,
-				/obj/item/melee/trench_axe/glaive = 6,
-				/obj/item/melee/trench_axe/bardiche = 6,
-				/obj/item/melee/trench_axe/lance = 4,
-				/obj/item/melee/trench_axe/bspear = 12,
+				/obj/item/melee/classic_baton/trench_club = 5,
+				/obj/item/melee/telebaton = 3,
+				/obj/item/melee/trench_axe/glaive = 3,
+				/obj/item/melee/trench_axe/glaive/adamantine = 1,
+				/obj/item/melee/trench_axe/bardiche = 3,
+				/obj/item/melee/trench_axe/lance = 2,
+				/obj/item/melee/trench_axe/lance/adamantine = 1,
+				/obj/item/melee/trench_axe/bspear = 6,
 				/obj/item/melee/sword/cutro = 10,
+				/obj/item/melee/sword/cutro/adamantine = 1,
 				/obj/item/melee/sword/broadsword = 6,
-				/obj/item/melee/sword/machete = 16,
-				/obj/item/melee/sword/machete/chopper = 10,
+				/obj/item/melee/sword/broadsword/adamantine = 1,
+				/obj/item/melee/sword/machete = 6,
+				/obj/item/melee/sword/machete/chopper = 5,
 				/obj/item/toy/katana = 6,
 				/obj/item/toy/katana/strong = 2,
 				/obj/item/shield/riot = 2,
 				/obj/item/melee/chain/inqcs = 1,
 				/obj/item/melee/chain/pcsword/eviscerator = 1,
 				/obj/item/melee/sword/sabre = 4)
-*/
-/obj/random/loot/lightstubber // TODO
-	name = "Light Stubber and shotguns"
-	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers and shotguns"
-	icon_state = "lightstub"
 
-/obj/random/loot/lightstubber/spawn_choices()
-	return list(
-				/obj/item/gun/projectile/automatic/messina = 2,
-				/obj/item/gun/projectile/automatic/agripinaaii = 2,
-				/obj/item/gun/projectile/automatic/smg/boscelot = 3,
-				/obj/item/gun/projectile/automatic/agripinaaii = 2,
-				/obj/item/gun/projectile/shotgun/pump/voxlegis = 1,
-				/obj/item/gun/projectile/shotgun/doublebarrel/sawn = 2,
-				/obj/item/gun/projectile/revolver/agripinaa = 1,
-				/obj/item/gun/projectile/pistol/villiers = 1,
-				/obj/item/gun/projectile/bolter_pistol = 1,
-	)
-
-/obj/random/loot/lightstubberammo
-	name = "Random stubber ammo"
-	desc = "This is an ammo spawner for stubber and shotgun ammo"
-	icon_state = "lightstubammo"
-
-/obj/random/loot/lightstubberammo/spawn_choices()
-	return list(/obj/item/ammo_box/shotgun = 3,
-				/obj/item/ammo_box/shotgun/slug = 3,
-				/obj/item/ammo_box/shotgun/beanbag = 1,
-				/obj/item/ammo_box/rifle = 3,
-				/obj/item/ammo_magazine/a762 = 3,
-				/obj/item/ammo_magazine/c556 = 3,
-				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
-
-/obj/random/loot/sidearmammo
+/obj/random/loot/sidearmammo // old no use
 	name = "Sidearm Ammo"
 	desc = "This is an ammo spawner that spawns ammo for sidearms" // sidearms are pistols and pdws (smgs)
 	icon_state = "sidearmammo"
 
 /obj/random/loot/sidearmammo/spawn_choices()
-	return list(/obj/item/ammo_magazine/a357 = 4,
+	return list(/obj/item/ammo_magazine/c50 = 2,
 				/obj/item/ammo_magazine/a357 = 4,
-				/obj/item/cell/lasgun = 5,
-				/obj/item/cell/lasgun/small = 3,
+				/obj/item/ammo_magazine/c38 = 1,
+				/obj/item/ammo_magazine/c44 = 3,
+				/obj/item/cell/lasgun = 4,
+				/obj/item/cell/lasgun/small = 2,
 				/obj/item/ammo_magazine/mc9mm = 6,
 				/obj/item/ammo_magazine/mc45mm = 6,
-				/obj/item/ammo_magazine/c44 = 3,
-				/obj/item/ammo_box/shotgun = 3,
+				/obj/item/ammo_box/shotgun = 1,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
 /obj/random/loot/sidearms
@@ -419,89 +371,111 @@ Template:
 				/obj/item/gun/energy/las/laspistol/accatran = 1,
 				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
 				/obj/item/gun/energy/las/laspistol/militarum = 2,
+				/obj/item/gun/projectile/talon/renegade = 1,
+				/obj/item/gun/projectile/revolver/mateba = 1,
+				/obj/item/gun/projectile/revolver/villiers = 1,
+				/obj/item/gun/projectile/necros = 1,
+				/obj/item/gun/projectile/slugrevolver = 1,
 				/obj/item/gun/projectile/pistol/pewter = 3,
 				/obj/item/gun/projectile/pistol/kieji = 3,
 				/obj/item/gun/projectile/pistol/kieji/snub = 3,
+				/obj/item/gun/projectile/pistol/villiers = 3,
 				/obj/item/gun/projectile/bolter_pistol = 1)
 
-/obj/random/loot/lightlasgun
-	name = "Lasguns"
-	desc = "This is a weapon loot spawner which spawns las rifles and a low chance of high quality laspistols"
-	icon_state = "lasgun"
-
-/obj/random/loot/lightlasgun/spawn_choices()
-	return list(/obj/item/gun/energy/las/lasgun = 5,
-				/obj/item/gun/energy/las/lasgun/lucius = 4,
-				/obj/item/gun/energy/las/laspistol/militarum = 3,
-				/obj/item/gun/energy/las/lasgun/catachan = 4,
-				/obj/item/gun/energy/las/lasgun/accatran = 2,
-				/obj/item/gun/energy/las/hotshot = 1,
-				/obj/item/gun/energy/las/laspistol = 2,
-				/obj/item/gun/energy/las/laspistol/accatran = 1,
-				/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
-				)
-
-/obj/random/loot/lasgunammo
-	name = "Lasgun Ammo"
-	desc = "This is an ammo spawner that spawns ammo for lasguns."
-	icon_state = "lasgunammo"
-
-/obj/random/loot/lasgunammo/spawn_choices()
-	return list(/obj/item/cell/lasgun = 2,
-				/obj/item/cell/lasgun/small = 3,
-				/obj/item/cell/lasgun/hotshot = 1)
-
-/obj/random/loot/heavystubberammo
-	name = "Heavy Stubber Ammo"
-	desc = "This is an ammo spawner that spawns ammo for heavy stubbers."
-	icon_state = "heavystubberammo"
-
-/obj/random/loot/heavystubberammo/spawn_choices()
-	return list(/obj/item/ammo_magazine/box/a556/mg08 = 10)
-
-/obj/random/loot/heavystubber
-	name = "Heavy Stubber"
-	desc = "This is a weapon loot spawner with a high chance of spawning common heavy stubbers."
-	icon_state = "heavystubber"
-
-/obj/random/loot/heavystubber/spawn_choices()
-	return list(
-		/obj/item/gun/projectile/automatic/heavystubber/cognis = 1,
-		/obj/item/gun/projectile/automatic/heavystubber = 7,
-		/obj/item/gun/projectile/automatic/agripinaaii = 2,
-		/obj/item/gun/projectile/automatic/messina = 2,
-
-
-
-	)
-
-// DUNGEON & PILGRIM LOOT. These spawners are generally low quality and have wide selection making them ideal as generic loot.
-
-/obj/random/loot/randomammo
+/obj/random/loot/randomammo1
 	name = "Random Ammo"
-	desc = "This is a random ammo spawner of pilgrim and pilgrim+ ammo"
+	desc = "This is a random ammo spawner of projectile weaponry."
 	icon_state = "randomammo"
 
-/obj/random/loot/randomammo/spawn_choices()
+/obj/random/loot/randomammo1/spawn_choices()
 	return list(
-		/obj/item/ammo_magazine/a357 = 1,
-
+		/obj/item/ammo_magazine/c556 = 6,
+		/obj/item/ammo_box/shotgun = 4,
+		/obj/item/ammo_magazine/smgmc9mm = 2,
+		/obj/item/ammo_box/shotgun/slug = 3,
+		/obj/item/storage/box/sniperammo = 1,
+		/obj/item/ammo_magazine/handful/brifle_handful = 3,
+		/obj/item/ammo_magazine/handful/brifle_handful/ms = 2,
+		/obj/item/ammo_magazine/handful/brifle_handful/ap = 1,
+		/obj/item/ammo_magazine/a762 = 3,
+		/obj/item/ammo_magazine/box/a556/mg08 = 3
 		)
 
+/obj/random/loot/randomammosidearm
+	name = "Random Sidearm Ammo"
+	desc = "This is a random ammo spawner of projectile weaponry."
+	icon_state = "randomammo"
+
+/obj/random/loot/randomammosidearm/spawn_choices()
+	return list(
+		/obj/item/ammo_magazine/mc9mm = 18,
+		/obj/item/ammo_magazine/mc45mm = 9,
+		/obj/item/ammo_magazine/a357 = 6,
+		/obj/item/ammo_magazine/handful/a50 = 3,
+		/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
+		/obj/item/cell/lasgun/hotshot = 1,
+		/obj/item/cell/lasgun = 3,
+		/obj/item/ammo_magazine/c44 = 5
+		)
+
+/obj/random/loot/randomlasammo
+	name = "Random Lasgun Ammo"
+	desc = "This is a random ammo spawner for energy weapons."
+	icon_state = "randomammo"
+
+/obj/random/loot/randomlasammo/spawn_choices()
+	return list(
+		/obj/item/cell/lasgun/small = 10,
+		/obj/item/cell/lasgun/hotshot = 3,
+		/obj/item/cell/plasma = 1,
+		/obj/item/cell/lasgun = 20
+		)
 
 /obj/random/loot/badweapon
-	name = "Bad Weapon Spawner" // This spawner has no chance of spawning powerful weapons.
+	name = "Bad Weapon Spawner 1" // This spawner creates projectile weapons
 	desc = "This is a weapon loot spawner that spawns mostly low quality weapons."
 	icon_state = "badranged"
 
 /obj/random/loot/badweapon/spawn_choices()
 	return list(
-		/obj/item/gun/projectile/shotgun/pump/boltaction = 1,
-		/obj/item/gun/projectile/pistol/kieji = 1,
-		/obj/item/gun/projectile/pistol/kieji/snub = 1,
-		/obj/item/gun/energy/las/laspistol/shitty = 1,
-		/obj/item/gun/projectile/revolver/messina = 1,
-		/obj/item/gun/energy/las/lasgun/shitty = 1,
+		/obj/item/gun/projectile/shotgun/pump/boltaction = 4,
+		/obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter = 2,
+		/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 2,
+		/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 2,
+		/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory = 1,
+		/obj/item/gun/projectile/shotgun/pump/voxlegis = 4,
+		/obj/item/gun/projectile/shotgun/pump/shitty/sawn = 2,
+		/obj/item/gun/projectile/shotgun/pump/shitty/magrave = 2,
+		/obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle = 1,
+		/obj/item/gun/projectile/automatic/m22/combatrifle = 2,
+		/obj/item/gun/projectile/automatic/heavystubber = 1,
+		/obj/item/gun/projectile/automatic/heavystubber/villiers = 1,
+		/obj/item/gun/projectile/automatic/machinepistol = 4,
+		/obj/item/gun/projectile/automatic/machinepistol/a80 = 3,
+		/obj/item/gun/projectile/automatic/autogrim = 2,
+		/obj/item/gun/projectile/automatic/autogrim/krieg = 1,
+		/obj/item/gun/projectile/automatic/agripinaaii = 1,
+		/obj/item/gun/projectile/automatic/messina = 1,
+		/obj/item/gun/projectile/thrower = 4
+	)
+
+
+/obj/random/loot/badweaponlas
+	name = "Bad Weapon Spawner Las" // This spawner creates las weapons
+	desc = "This is a weapon loot spawner that spawns mostly low quality weapons."
+	icon_state = "badranged"
+
+/obj/random/loot/badweaponlas/spawn_choices()
+	return list(
+		/obj/item/gun/energy/las/laspistol/shitty = 9,
+		/obj/item/gun/energy/las/lasgun/shitty = 7,
+		/obj/item/gun/energy/las/laspistol = 5,
+		/obj/item/gun/energy/las/laspistol/militarum = 3,
+		/obj/item/gun/energy/las/laspistol/militarum/lucius = 2,
+		/obj/item/gun/energy/las/lasgun/lucius = 3,
+		/obj/item/gun/energy/las/lasgun/catachan = 1,
+		/obj/item/gun/energy/las/lasgun/accatran = 1,
+		/obj/item/gun/energy/las/lasgun = 4
 	)
 
 /obj/random/loot/goodweapon
@@ -512,13 +486,14 @@ Template:
 /obj/random/loot/goodweapon/spawn_choices()
 	return list(
 				/obj/item/gun/projectile/boltrifle/lockebolter = 1,
-				/obj/item/gun/energy/pulse/plasma/rifle = 2,
+				/obj/item/gun/projectile/bolter_pistol/inquis = 1,
+				/obj/item/gun/energy/pulse/plasma/rifle = 1,
 				/obj/item/gun/energy/pulse/plasma/pistol = 3,
-				/obj/item/gun/energy/las/hotshot = 3,
-				/obj/item/gun/projectile/automatic/flamer = 1,
-				/obj/item/gun/energy/las/lasgun/accatran = 4,
+				/obj/item/gun/energy/las/hotshot = 2,
 				/obj/item/gun/projectile/meltagun = 1,
-				/obj/item/gun/energy/las/lasgun/longlas = 1,
+				/obj/item/gun/energy/las/lasgun/longlas = 2,
+				/obj/item/gun/energy/las/lasgun/longlas/krieg = 2,
+				/obj/item/gun/projectile/heavysniper = 2
 				)
 
 /obj/random/loot/randomarmor

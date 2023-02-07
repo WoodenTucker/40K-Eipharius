@@ -6,15 +6,15 @@
 	item_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	force = 10
-	accuracy = -2.5
+	accuracy = 0
 	one_hand_penalty = 5
 	move_delay = 5
 	fire_delay = 6
 	sales_price = 10
 
 /obj/item/gun/projectile/pistol/pewter
-	name = "Messina Pattern 'Pewter' stub pistol"
-	desc = "The locally made 'Pewter' pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
+	name = "Messina Pattern stub pistol"
+	desc = "The locally made pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
 	icon_state = "handgun7"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
@@ -24,7 +24,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
 
-	accuracy = -1.5
+	accuracy = 1
 
 /obj/item/gun/projectile/pistol/pewter/update_icon()
 	..()
@@ -45,7 +45,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
 	sales_price = 5
-	accuracy = -3.5
+	accuracy = 0
 
 /obj/item/gun/projectile/pistol/kieji/update_icon()
 	..()
@@ -55,12 +55,12 @@
 		icon_state = "kieji-e"
 
 /obj/item/gun/projectile/pistol/kieji/snub
-	name = "Snub nosed Kieji stub pistol"
+	name = "Snub nosed Kieji"
 	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
 	icon_state = "kiejistub"
 	item_state = "pistol"
 
-	accuracy = -5
+	accuracy = -0.5
 	fire_delay = 2
 	sales_price = 5
 
@@ -95,7 +95,6 @@
 	else
 		icon_state = "sheetp-e"
 
-
 /obj/item/gun/projectile/pistol/villiers
 	name = "Villiers Pattern stub pistol."
 	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
@@ -119,6 +118,49 @@
 		icon_state = "stub2"
 	else
 		icon_state = "stub2-e"
+
+/obj/item/gun/projectile/talon
+	name = "chrome stub pistol"
+	desc = "A magnificent chrome stub-pistol."
+	icon_state = "talon"
+	w_class = ITEM_SIZE_SMALL
+	fire_delay = 5
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	caliber = ".45"
+	auto_eject = 1
+	accuracy = -0.5 //not the best stub pistol but still pretty good
+	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	jammed_icon = "talon-j"
+
+/obj/item/gun/projectile/talon/renegade
+	name = "Renegade Pistol"
+	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
+	move_delay= 1.3
+	one_hand_penalty = 0.5
+	accuracy = 2
+	fire_delay = 0.5
+	silenced = 1
+	force = 20
+	sales_price = 35
+
+/obj/item/gun/projectile/genmessorp
+	name = "Genmessor stubpistol"
+	icon_state = "sheetp"
+	w_class = ITEM_SIZE_NORMAL
+	caliber = "9mm"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+
+/obj/item/gun/projectile/genmessorp/update_icon()
+	..()
+	if(ammo_magazine && ammo_magazine.stored_ammo.len)
+		icon_state = "sheetp"
+	else
+		icon_state = "sheetp-e"
 
 
 /obj/item/gun/projectile/ork/slugga
@@ -151,7 +193,7 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -1
+	accuracy = -0.8
 	fire_delay = 1.8
 	move_delay = 1.5
 	load_method = MAGAZINE
@@ -174,7 +216,7 @@
 	item_state = "gpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -1.2
+	accuracy = -1
 	fire_delay = 2
 	move_delay = 5.0 // make it shit and mostly ornamental
 	load_method = MAGAZINE
@@ -196,7 +238,7 @@
 	item_state = "bpistol"
 	force = 15
 	caliber = ".75"
-	accuracy = -0.5 //VERY well maintained--maintened? eh, you get what i mean!
+	accuracy = -0.3 //VERY well maintained--maintened? eh, you get what i mean!
 	fire_delay = 1.4
 	move_delay = 1.3
 	sales_price = 58

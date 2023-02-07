@@ -198,6 +198,14 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/shoes/jackboots/krieg/grenadier
+	name = "Krieg Grenadier Pattern Combat Boots"
+	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium. Though, in this particular case they have lamented to armoring their own."
+	icon_state = "grenboots"
+	item_state = "grenboots"
+	armor = list(melee = 40, bullet = 40, laser = 50, energy = 40, bomb = 40, bio = 100, rad = 100)
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 //Commissar shoes, not being currently used.
 /obj/item/clothing/shoes/jackboots/commissar

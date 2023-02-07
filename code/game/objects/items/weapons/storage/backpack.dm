@@ -450,6 +450,11 @@
 	icon_state = "kriegpack"
 	item_state = "kriegpack"
 
+/obj/item/storage/backpack/satchel/krieger/grenadier
+	desc = "An assembled kit for air filtration, weapon power supply, and basic storage. Perfect to bring with you into no man's land."
+	icon_state = "grenpack"
+	item_state = "grenpack"
+
 /obj/item/storage/backpack/satchel/grey
 	name = "grey satchel"
 
