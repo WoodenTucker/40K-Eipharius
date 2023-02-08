@@ -818,7 +818,7 @@
 			if(6)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/lp338/needler(user.loc,1)
+				new /obj/item/ammo_magazine/lp338(user.loc,1)
 				qdel(src)
 				return
 			if(7)
