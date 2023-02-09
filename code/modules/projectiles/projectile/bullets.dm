@@ -584,7 +584,7 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "shot"
 	damage = 45
-	damage_type = brute //Initial poisoning effect
+	damage_type = BRUTE //Initial poisoning effect
 	armor_penetration = 60 //Dense, fast-moving round.
 	penetration_modifier = 2
 
@@ -597,7 +597,7 @@
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "shot"
 	damage = 35
-	damage_type = brute //Initial poisoning effect
+	damage_type = BRUTE //Initial poisoning effect
 	armor_penetration = 50 //Dense, fast-moving round.
 	penetration_modifier = 2
 
