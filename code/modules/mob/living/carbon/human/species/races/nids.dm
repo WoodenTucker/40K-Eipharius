@@ -274,8 +274,8 @@
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
 	client?.color = null
-	src.health = 450
-	src.maxHealth = 450
+	src.health = 250
+	src.maxHealth = 250
 	src.warfare_language_shit(LANGUAGE_TYRANID)
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
@@ -298,7 +298,7 @@
 		src.eye_blurry = 0
 		src.ear_deaf = 0
 		src.ear_damage = 0
-		src.inject_blood(src, 50)
+		src.inject_blood(src, 560)
 		src.biomass -=10
 
 /mob/living/carbon/human/genestealer/proc/talon()
