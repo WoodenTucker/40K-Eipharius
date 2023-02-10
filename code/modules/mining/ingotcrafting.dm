@@ -654,19 +654,20 @@
 				src.ismarked = 1
 				src.name = "Silver Ingot (Messina Pattern Stub Revolver)"
 
-			if("Machine Silver")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Silver.")
-				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 6
-				src.ismarked = 1
-				src.name = "Silver Ingot (Machine Silver)"
-
 			if(".338 Lapua Magnum Magazine")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future .338 Lapua Magnum Magazine.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 7
+				src.whatwemaking = 6
 				src.ismarked = 1
 				src.name = "Silver Ingot (.338 Lapua Magnum Magazine)"
+
+
+			if("Machine Silver")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Silver.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 7
+				src.ismarked = 1
+				src.name = "Silver Ingot (Machine Silver)"
 
 			if("Cane Sword")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Cane Sword.")
@@ -817,7 +818,7 @@
 			if(6)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/ammo_magazine/lp338/needler(user.loc,1)
+				new /obj/item/ammo_magazine/lp338(user.loc,1)
 				qdel(src)
 				return
 			if(7)
