@@ -101,9 +101,9 @@
 		handle_warfare_life()
 
 		handle_gas_mask_sound()//Was in breathing, but people don't breathe anymore.
-
+/*
 		handle_species_regen() //Species specific bonus regen
-
+*/
 		handle_vice()
 
 
@@ -1392,7 +1392,7 @@
 	// runs an update to check if we've become jaundiced, pale or low on oxygen resulting in icon changes
 	if(stat != DEAD && !(life_tick % 15)) // don't want to do this too often. update_body() also won't do anything if nothing has changed
 		update_body()
-
+/* IF YOU RE ENABLE THIS MAKE SURE TO UNDISABLE Line-105 called handle_species_regen
 /mob/living/carbon/human/proc/handle_species_regen()
 	var/obj/item/organ/external/affecting
 	var/list/limbs = BP_ALL_LIMBS //sanity check, can otherwise be shortened to affecting = pick(BP_ALL_LIMBS)
@@ -1519,3 +1519,4 @@
 
 		messageTimer++
 		return
+*/
