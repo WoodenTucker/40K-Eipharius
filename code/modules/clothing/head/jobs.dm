@@ -678,6 +678,6 @@
 	desc = "The Exquisite Helm of the Border Prince"
 	icon_state = "prince"
 	item_state = "prince"
-	armor = list(melee = 65, bullet = 65, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
+	armor = list(melee = 55, bullet = 55, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
 	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
-	sales_price = 60
+	sales_price = 50
