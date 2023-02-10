@@ -13,7 +13,7 @@
 	permeability_coefficient = 0.01
 	siemens_coefficient = 0.9
 	var/gas_filter_strength = 1			//For gas mask filters
-	var/list/filtered_gases = list("phoron", "sleeping_agent")
+	var/list/filtered_gases = list("phoron", "sleeping_agent", "corrupting", "polyacid")
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/filter_air(datum/gas_mixture/air)
@@ -228,6 +228,7 @@
 	icon_state = "kriegmask"
 	item_state = "kriegmask"
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 95, rad = 0)
+	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE
 	unacidable = 1 //acid proof bitch
 
@@ -237,6 +238,7 @@
 	icon_state = "grenmask"
 	item_state = "grenmask"
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 95, rad = 0)
+	body_parts_covered = FACE|EYES|HEAD
 
 
 /obj/item/clothing/mask/gas/krieg/medicae
@@ -244,6 +246,7 @@
 	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Combat Medicae."
 	icon_state = "mkriegmask"
 	item_state = "mkriegmask"
+	body_parts_covered = FACE|EYES|HEAD
 
 /obj/item/clothing/mask/gas/commissar
 	name = "Mark IXb/C Gas Mask"
@@ -251,6 +254,7 @@
 	icon_state = "commask"
 	item_state = "commask"
 	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 15, bio = 95, rad = 0)
+	body_parts_covered = FACE|EYES|HEAD
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	unacidable = 1 //acid proof
 
