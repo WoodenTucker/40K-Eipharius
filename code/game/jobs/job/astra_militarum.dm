@@ -99,11 +99,6 @@
 					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
-/datum/job/ig/guardsman/imperial
-	total_positions = 30 // we want it lower than watchman, guard get medics and better equipment, watchmen dont, really...
-	spawn_positions = 30
-	cultist_chance = 0
-
 /datum/job/ig/guardsman/watchman
 	title = "Cultist Guardsman"
 	total_positions = 25 // they have xeno combatants to help
@@ -167,17 +162,12 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Whiteshield, an Imperial Guard recruit with little training. Follow the orders of anyone giving you orders. Try not to get executed. </font></b></span>")
 
-/datum/job/ig/whiteshield/Imperial
-	total_positions = 30
-	spawn_positions = 30
-	cultist_chance = 0
-
 //Sharpshooters
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
 	title = "Imperial Guard Specialist"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 8
@@ -230,11 +220,6 @@
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=2> You are a Krieg Grenadier, born and bred on the deadworld. Equipped with a hellgun, your mobile firepower is unmatched! Support your brethren and storm the enemy, wherever they dig in. </font></b></span>")
 
-/datum/job/ig/guardsman/sharpshooter/imperial
-	total_positions = 8
-	spawn_positions = 8
-	cultist_chance = 0
-
 /datum/job/ig/guardsman/sharpshooter/watchman
 	title = "Cultist Specialist"
 	supervisors = "Cult Leader and Sgt."
@@ -253,8 +238,8 @@ datum/job/ig/bullgryn
 	title = "Bullgryn"
 	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
 	selection_color = "#33813A"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "Da Emprah. Da Commesar, and da little on's!"
 	outfit_type = /decl/hierarchy/outfit/job/bullgryn
 	latejoin_at_spawnpoints = TRUE
@@ -372,13 +357,6 @@ datum/job/ig/bullgryn
 					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
-
-
-/datum/job/ig/guardsman/sniper/imperial
-	total_positions = 4
-	spawn_positions = 4
-	cultist_chance = 0
-
 // Sergeants
 
 /datum/job/ig/sergeant
@@ -439,9 +417,6 @@ datum/job/ig/bullgryn
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
-
-/datum/job/ig/sergeant/imperial
-	cultist_chance = 0
 
 /datum/job/ig/sergeant/watchman
 	title = "Cultist Sergeant"
@@ -604,10 +579,6 @@ datum/job/ig/bullgryn
 		/mob/living/carbon/human/proc/comsyouwereweak)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Commissar. Absolutely do not kill people for minor infractions. You only have your *one* guard squad. Lead them, ensure they are properly trained. You are in the employ of the Governor's family, but if treasonous, your loyalties to Terra are higher.</font></b></span>")
-
-/datum/job/ig/commissar/imperial
-	total_positions = 1
-	spawn_positions = 1
 
 // Outfits
 

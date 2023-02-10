@@ -96,8 +96,8 @@
 /datum/job/janissary
 	title = "Vessorine Janissary"
 	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0 // Disabled for now.
+	spawn_positions = 0
 	supervisors = "the Rogue Trader"
 	selection_color = "#315dd4"
 	economic_modifier = 5

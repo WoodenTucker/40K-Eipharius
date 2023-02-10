@@ -30,7 +30,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Confessor [current_name]")
+		H.fully_replace_character_name("Deacon [current_name]")
 		H.add_stats(rand(12,14), rand(12,14), rand(9,12), rand(14,18)) //frail and holy
 		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,8))
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)

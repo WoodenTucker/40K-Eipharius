@@ -289,8 +289,10 @@ Template:
 /obj/random/loot/lightmelee/spawn_choices()
 	return list(/obj/item/melee/sword/combat_knife = 2,
 				/obj/item/melee/telebaton = 1,
-				/obj/item/melee/sword/machete = 1,
-				/obj/item/melee/sword/shortsword = 1)
+				/obj/item/melee/sword/combat_knife/rare = 1,
+				/obj/item/melee/sword/combat_knife/glaive = 1,
+				/obj/item/melee/sword/combat_knife/bowie = 1,
+				/obj/item/melee/sword/machete = 1)
 
 /obj/random/loot/heavymelee
 	name = "Heavy Melee"

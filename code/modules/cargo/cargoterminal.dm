@@ -428,11 +428,11 @@
 	dat += "Those are well trained soldiers. Not the best, but loyal. They are effective only in groups<HR>"
 	dat += "<A href='byond://?src=\ref[src];Whiteshield=1'>Purchase a Whiteshield (80)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (150)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (225)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (250)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (205)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (200)</A><BR>"
 	dat += "<B>Elite mercenaries</B><HR>"
 	dat += "These are the best of the best. They are expensive, but very effective stand-alone units. You will not regret.<HR>"
-	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (300)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (200)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (350)</A><BR>"
@@ -490,7 +490,7 @@
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["medicae"])
-		if(GLOB.thrones < 225)
+		if(GLOB.thrones < 205)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -503,11 +503,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 225
+					GLOB.thrones -= 205
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["specialist"])
-		if(GLOB.thrones < 250)
+		if(GLOB.thrones < 200)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -520,11 +520,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 250
+					GLOB.thrones -= 200
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["janissary"])
-		if(GLOB.thrones < 300)
+		if(GLOB.thrones < 200)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -537,7 +537,7 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 300
+					GLOB.thrones -= 200
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["scion"])

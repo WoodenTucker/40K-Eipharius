@@ -50,8 +50,8 @@
 	title = "Inquisitor"
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MIN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 1
 	supervisors = "The Golden Throne and the Inquisition"
 	selection_color = "#b4821c"
