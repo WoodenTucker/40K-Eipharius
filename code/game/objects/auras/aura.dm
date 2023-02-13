@@ -67,17 +67,14 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	var/last_nutrition_warning = 0
 	var/nutrition_damage_mult = 1 //How much nutrition it takes to heal regular damage
 	var/external_nutrition_mult = 50 // How much nutrition it takes to regrow a limb
+	var/organheal = 1 //The number of points of damage per organ the regen heals per tick, if organ healing is enabled.
+	var/can_regenerate_organs = FALSE
 
 	
 /obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
 	var/mob/living/carbon/human/H = user
 	if(!istype(H))
 		CRASH("Someone gave [user.type] a [src.type] aura. This is invalid.")
-	if(!innate_heal || H.InStasis() || H.stat == DEAD)
-		return 0
-	if(H.nutrition < nutrition_damage_mult)
-		low_nut_warning()
-		return 0
 
 	user.adjustBruteLoss(-brute_mult)
 	user.adjustFireLoss(-fire_mult)
@@ -86,14 +83,10 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	if(!can_regenerate_organs())
 		return 1
 	if(tox_mult)
-		if(prob(10) && H.nutrition >= 150)
+		if(prob(50)) 
 			var/obj/item/organ/external/h = H.get_organ(BP_HEAD)
 			if (h.disfigured)
-				if (H.nutrition >= 20)
-					h.disfigured = 0
-					H.nutrition -= 20
-				else
-					low_nut_warning("head")
+				h.disfigured = 0
 
 		for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
 			var/obj/item/organ/internal/regen_tox = H.internal_organs_by_name[bpart]
@@ -101,24 +94,27 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 				continue
 			if(istype(regen_tox))
 				if(regen_tox.damage > 0 && !(regen_tox.status & ORGAN_DEAD))
-					if (H.nutrition >= tox_mult)
-						regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
-						H.nutrition -= tox_mult
-//						if(prob(5))
-//							to_chat(H, replacetext(regen_message,"ORGAN", regen_organ.name))
-					else
-						low_nut_warning(regen_tox.name)
+					regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
+					to_chat(H, replacetext(regen_message,"ORGAN", regen_tox.name))
+					
+		for(var/obj/item/organ/internal/I in H.internal_organs)
+			if(I.robotic >= ORGAN_ROBOT)
+				continue
+			if(I.organ_tag == BP_BRAIN)
+				H.confused++
+				H.drowsyness++
+				if(I.damage >= I.min_bruised_damage)
+					continue
+			I.damage - organheal
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
 			var/obj/item/organ/external/E = H.organs_by_name[limb_type]
-			if(E?.organ_tag != BP_HEAD && !E.vital && (E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
-				if (H.nutrition > grow_threshold)
-					E.removed()			//...because no one wants their head to explode to make way for a new one.
-					qdel(E)
-					E= null
-				else
-					low_nut_warning(E.name)
+			if((E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
+				E.removed()			//...because no one wants their head to explode to make way for a new one.
+				qdel(E)
+				E= null
+
 			if(!E)
 				var/list/organ_data = H.species.has_limbs[limb_type]
 				var/limb_path = organ_data["path"]
@@ -127,11 +123,12 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 				organ_data["descriptor"] = O.name
 				H.update_body()
 				return
-			else if (H.nutrition > grow_threshold) //We don't subtract any nut here, but let's still only heal wounds when we have nut.
+			else
 				for(var/datum/wound/W in E.wounds)
 					if(W.wound_damage() == 0 && prob(50))
 						qdel(W)
 	return 1
+
 
 /obj/aura/regenerating/human/proc/low_nut_warning(var/wound_type)
 	if (last_nutrition_warning + 1 MINUTE < world.time)
@@ -147,9 +144,11 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 /obj/aura/regenerating/human/astartes
 	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
+	can_regenerate_organs = TRUE
 	brute_mult = 5
 	fire_mult = 5
 	tox_mult = 5
+	organheal = 10
 
 /obj/aura/regenerating/human/ork
 	brute_mult = 3
@@ -158,16 +157,20 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 
 
 /obj/aura/regenerating/human/nid
+	can_regenerate_organs = TRUE
 	brute_mult = 10
 	fire_mult = 4
 	tox_mult = 2 //confirms your kills or they will get back up eventually.
+	organheal = 5
 
 /obj/aura/regenerating/human/ultimate
 	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
+	can_regenerate_organs = TRUE
 	brute_mult = 50
 	fire_mult = 50
 	tox_mult = 50
+	organheal = 25
 
 
 /*/obj/aura/regenerating/human/astartes/life_tick()
@@ -207,53 +210,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	innate_heal = TRUE // Whether the aura is on, basically.
 	nutrition_damage_mult = 0 //How much nutrition it takes to heal regular damage
 	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
-	var/can_regenrate_organs = TRUE
+	can_regenerate_organs = TRUE
+	organheal = 50
 	
-/obj/aura/regenerating/human/perpetual/life_tick() //this causes the two former lines to work
-	var/mob/living/carbon/human/H = user
-	if(!istype(H))
-		CRASH("Someone gave [user.type] a [src.type] aura. This is invalid.")
-
-	user.adjustBruteLoss(-brute_mult)
-	user.adjustFireLoss(-fire_mult)
-	user.adjustToxLoss(-tox_mult)
-
-	if(!can_regenerate_organs())
-		return 1
-	if(tox_mult)
-		if(prob(50)) 
-			var/obj/item/organ/external/h = H.get_organ(BP_HEAD)
-			if (h.disfigured)
-				h.disfigured = 0
-
-		for(var/bpart in shuffle(H.internal_organs_by_name - BP_BRAIN))
-			var/obj/item/organ/internal/regen_tox = H.internal_organs_by_name[bpart]
-			if(ORGAN_ROBOT(regen_tox))
-				continue
-			if(istype(regen_tox))
-				if(regen_tox.damage > 0 && !(regen_tox.status & ORGAN_DEAD))
-					regen_tox.damage = max(regen_tox.damage - tox_mult, 0)
-					to_chat(H, replacetext(regen_message,"ORGAN", regen_tox.name))
-
-	if(prob(grow_chance))
-		for(var/limb_type in H.species.has_limbs)
-			var/obj/item/organ/external/E = H.organs_by_name[limb_type]
-			if((E.is_stump() || E.status & ORGAN_DEAD))	//Skips heads and vital bits...
-				E.removed()			//...because no one wants their head to explode to make way for a new one.
-				qdel(E)
-				E= null
-
-			if(!E)
-				var/list/organ_data = H.species.has_limbs[limb_type]
-				var/limb_path = organ_data["path"]
-				var/obj/item/organ/external/O = new limb_path(H)
-				external_regeneration_effect(O,H)
-				organ_data["descriptor"] = O.name
-				H.update_body()
-				return
-			else
-				for(var/datum/wound/W in E.wounds)
-					if(W.wound_damage() == 0 && prob(50))
-						qdel(W)
-	return 1
 
