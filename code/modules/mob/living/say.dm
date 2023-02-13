@@ -12,7 +12,7 @@ var/list/department_radio_keys = list(
 	  ":w" = "whisper",		".w" = "whisper",
 	  ":t" = "Mercenary",	".t" = "Mercenary",
 	  ":x" = "Tyranids",		".x" = "Tyranids",
-	  ":u" = "Supply",		".u" = "Supply",
+	  ":u" = "Magistratum",		".u" = "Magistratum",
 	  ":v" = "Guardsmen",		".v" = "Guardsmen",
 	  ":d" = "Delta",	".d" = "Delta",
 	  ":p" = "AI Private",	".p" = "AI Private",
@@ -41,7 +41,7 @@ var/list/department_radio_keys = list(
 	  ":W" = "whisper",		".W" = "whisper",
 	  ":T" = "Mercenary",	".T" = "Mercenary",
 	  ":X" = "Tyranids",		".X" = "Tyranids",
-	  ":U" = "Supply",		".U" = "Supply",
+	  ":U" = "Magistratum",		".U" = "Magistratum",
 	  ":V" = "Guardsmen",		".V" = "Guardsmen",
 	  ":D" = "Delta",	".D" = "Delta",
 	  ":P" = "AI Private",	".P" = "AI Private",
@@ -61,7 +61,7 @@ var/list/department_radio_keys = list(
 	  ":û" = "Security",	".û" = "Security",
 	  ":ö" = "whisper",		".ö" = "whisper",
 	  ":å" = "Mercenary",	".å" = "Mercenary",
-	  ":é" = "Supply",		".é" = "Supply",
+	  ":é" = "Magistratum",		".é" = "Magistratum",
 )
 
 

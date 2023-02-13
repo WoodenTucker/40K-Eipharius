@@ -289,8 +289,10 @@ Template:
 /obj/random/loot/lightmelee/spawn_choices()
 	return list(/obj/item/melee/sword/combat_knife = 2,
 				/obj/item/melee/telebaton = 1,
-				/obj/item/melee/sword/machete = 1,
-				/obj/item/melee/sword/shortsword = 1)
+				/obj/item/melee/sword/combat_knife/rare = 1,
+				/obj/item/melee/sword/combat_knife/glaive = 1,
+				/obj/item/melee/sword/combat_knife/bowie = 1,
+				/obj/item/melee/sword/machete = 1)
 
 /obj/random/loot/heavymelee
 	name = "Heavy Melee"
@@ -504,18 +506,26 @@ Template:
 /obj/random/loot/randomarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/militia = 1,
 				/obj/item/clothing/suit/cloak = 1,
+				/obj/item/clothing/suit/armor/slaverobe = 1,
+				/obj/item/clothing/suit/armor/templar = 1,
+				/obj/item/clothing/suit/armor/hauberk = 1,
+				/obj/item/clothing/suit/armor/trinet = 1,
+				/obj/item/clothing/suit/armor/heavyflaksuit = 1,
+				/obj/item/clothing/suit/armor/breastplate = 1,
+				/obj/item/clothing/suit/armor/sniper = 1,
 				/obj/item/clothing/suit/armor/cuirass = 1,
 				/obj/item/clothing/suit/armor/salvage = 1,
-				/obj/item/clothing/suit/armor/guardsman/mercenary = 2,
+				/obj/item/clothing/suit/armor/guardsman/mercenary = 1,
 				/obj/item/clothing/suit/armor/slanclothing/maleslan = 1,
 				/obj/item/clothing/suit/armor/necromundaflak1 = 1,
 				/obj/item/clothing/suit/armor/necromundacarapace1 = 1,
-				/obj/item/clothing/suit/armor/ranger3 = 2,
-				/obj/item/clothing/suit/armor/ranger2 = 2,
+				/obj/item/clothing/suit/armor/ranger3 = 1,
+				/obj/item/clothing/suit/armor/ranger2 = 1,
 				/obj/item/clothing/head/helmet/salvage = 1,
 				/obj/item/clothing/head/helmet/mining = 1,
 				/obj/item/clothing/suit/armor/heavyflaksuit = 1,
 				/obj/item/clothing/suit/armor/heavyduster = 1,
+				/obj/item/clothing/suit/armor/goliath2 = 1,
 				/obj/item/clothing/suit/armor/flak1 = 1,
 				/obj/item/clothing/suit/armor/flak2 = 1,
 				/obj/item/clothing/suit/armor/scum2 = 1,
@@ -525,6 +535,8 @@ Template:
 				/obj/item/clothing/suit/armor/slumcoat = 1,
 				/obj/item/clothing/suit/armor/towntrench = 1,
 				/obj/item/clothing/suit/armor/tduster = 1,
+				/obj/item/clothing/suit/armor/bonearmor = 1,
+				/obj/item/clothing/suit/armor/carapaceduster = 1,
 				/obj/item/clothing/suit/armor/armoredtrench = 1)
 
 /obj/random/loot/randomsupply

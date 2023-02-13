@@ -399,7 +399,7 @@
 	desc = "A heavy metal ganger helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
-	armor = list(melee = 12, bullet = 12, laser = 12, energy = 12, bomb = 12, bio = 30, rad = 20)
+	armor = list(melee = 38, bullet = 28, laser = 28, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 8
 
 /obj/item/clothing/head/helmet/knighthelm
@@ -407,7 +407,7 @@
 	desc = "A heavy metal helmet that protects you from slashes, stabs and the occassional lasburn."
 	icon_state = "knighthelm"
 	item_state = "knighthelm"
-	armor = list(melee = 20, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 30, rad = 20)
+	armor = list(melee = 60, bullet = 15, laser = 15, energy = 15, bomb = 15, bio = 30, rad = 20)
 	sales_price = 9
 
 /obj/item/clothing/head/helmet/dragon
@@ -423,7 +423,7 @@
 	desc = "A heavy metal visor for protecting your face."
 	icon_state = "leglad"
 	item_state = "leglad"
-	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 30, rad = 20)
+	armor = list(melee = 35, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 30, rad = 20)
 	sales_price = 9
 
 /obj/item/clothing/head/helmet/stalkerhelm
@@ -431,7 +431,7 @@
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger_oldup"
 	item_state = "ranger_oldup"
-	armor = list(melee = 18, bullet = 18, laser = 18, energy = 20, bomb = 20, bio = 70, rad = 50)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 11
 
 /obj/item/clothing/head/helmet/stalkerhelm2
@@ -439,7 +439,7 @@
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger1"
 	item_state = "ranger1"
-	armor = list(melee = 18, bullet = 18, laser = 18, energy = 20, bomb = 20, bio = 70, rad = 50)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 11
 
 /obj/item/clothing/head/helmet/heavyflak
@@ -447,7 +447,7 @@
 	desc = "An old flak helmet, custom fitted with a filtration mask and armored exterior."
 	icon_state = "doom"
 	item_state = "doom"
-	armor = list(melee = 18, bullet = 18, laser = 18, energy = 15, bomb = 40, bio = 50, rad = 30)
+	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 10
 
 /obj/item/clothing/head/helmet/vindicare

@@ -151,11 +151,16 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	fire_mult = 5
 	tox_mult = 5
 
+/obj/aura/regenerating/human/ork
+	brute_mult = 3
+	fire_mult = 5
+	tox_mult = 2
+
+
 /obj/aura/regenerating/human/nid
-	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
-	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	brute_mult = 10
-	fire_mult = 10
+	fire_mult = 4
+	tox_mult = 2 //confirms your kills or they will get back up eventually.
 
 /obj/aura/regenerating/human/ultimate
 	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
