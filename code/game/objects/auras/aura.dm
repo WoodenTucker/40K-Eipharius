@@ -69,6 +69,8 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	var/external_nutrition_mult = 50 // How much nutrition it takes to regrow a limb
 	var/organheal = 1 //The number of points of damage per organ the regen heals per tick, if organ healing is enabled.
 	var/can_regenerate_organs = FALSE
+	var/max_brain_damage_heal = 25 //The maximum amount of brain damage that the regen can heal. Anything above this will result in no healing occuring.Bruised is 25% of the species Total Health value, or 30 for a basic human, broken is 75%, or 90 for a basic human.
+	var/needsres = 0 //A check to see if the heart's stopped, and thus a ressurection is needed.
 
 	
 /obj/aura/regenerating/human/life_tick() //this causes the two former lines to work
@@ -101,11 +103,25 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 			if(I.robotic >= ORGAN_ROBOT)
 				continue
 			if(I.organ_tag == BP_BRAIN)
-				H.confused++
-				H.drowsyness++
-				if(I.damage >= I.min_bruised_damage)
-					continue
-			I.damage - organheal
+				if(I.damage > 0)
+					H.confused++
+					H.drowsyness++
+					if(I.damage >= max_brain_damage_heal)
+						continue			
+			if(I.organ_tag == BP_HEART)
+				if(H.is_asystole()) //Check for heart issues.
+					if(I.damage == 0)
+						sleep(100)
+						I.status -= ORGAN_DEAD
+						H.resuscitate()
+			if(I.damage > 0) 
+				I.damage -= organheal
+				I.status -= ORGAN_DEAD
+			if(I.damage < 0)
+				I.damage = 0
+				I.status -= ORGAN_DEAD
+
+
 
 	if(prob(grow_chance))
 		for(var/limb_type in H.species.has_limbs)
@@ -161,7 +177,7 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	brute_mult = 10
 	fire_mult = 4
 	tox_mult = 2 //confirms your kills or they will get back up eventually.
-	organheal = 5
+	organheal = 3
 
 /obj/aura/regenerating/human/ultimate
 	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
@@ -212,5 +228,23 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	external_nutrition_mult = 0 // How much nutrition it takes to regrow a limb
 	can_regenerate_organs = TRUE
 	organheal = 50
-	
 
+/mob/living/carbon/human/proc/altresuscitate() //For resuscitating without heart damage or shock.
+	var/obj/item/organ/internal/heart/heart = internal_organs_by_name[BP_HEART]
+	if(istype(heart) && heart.robotic <= ORGAN_ROBOT && !(heart.status & ORGAN_DEAD))
+		var/species_organ = species.breathing_organ
+		var/active_breaths = 0
+		if(species_organ)
+			var/obj/item/organ/internal/lungs/L = internal_organs_by_name[species_organ]
+			if(L)
+				active_breaths = L.active_breathing
+		if(!nervous_system_failure() && active_breaths)
+			visible_message("\The [src] jerks and gasps for breath!")
+		else
+			visible_message("\The [src] twitches a bit as \his heart restarts!")
+		shock_stage = 0 // 120 is the point at which the heart stops.
+		if(getOxyLoss() >= 75)
+			setOxyLoss(75)
+		heart.pulse = PULSE_NORM
+		heart.handle_pulse()
+	unlock_achievement(new/datum/achievement/revived())
