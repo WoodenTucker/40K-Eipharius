@@ -457,6 +457,7 @@ datum/job/ig/bullgryn
 	selection_color = "#33813A"
 	economic_modifier = 4
 	minimal_player_age = 18
+	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	access = list(access_medical, access_village, access_guard_common, access_security
