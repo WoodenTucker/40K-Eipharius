@@ -12,7 +12,6 @@
 	5;/obj/machinery/syndicate_beacon,
 	25;/obj/machinery/power/supermatter/shard,
 	50;/obj/structure/cult/pylon,
-	100;/obj/machinery/auto_cloner,
 	100;/obj/machinery/giga_drill,
 	100;/obj/machinery/replicator,
 	150;/obj/structure/crystal,

@@ -1486,8 +1486,6 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 /mob/living/proc/assign_random_quirk()
 	if(prob(75))//75% of not choosing a quirk at all.
 		return
-	if(is_hellbanned())//Hellbanned people will never get quirks.
-		return
 	var/list/random_quirks = list()
 	for(var/thing in subtypesof(/datum/quirk))//Populate possible quirks list.
 		var/datum/quirk/Q = thing

@@ -694,8 +694,6 @@ default behaviour is:
 
 	if(staminaloss && !combat_mode)//If we're not doing anything, we're not in combat mode, and we've lost stamina we can wait to gain it back. If youre sad no energy regen
 		var/speed = 0
-		if(is_hellbanned())//SLower recovery if you're hellbanned.
-			speed = 8
 		if(lying)
 			speed += -10
 		else
