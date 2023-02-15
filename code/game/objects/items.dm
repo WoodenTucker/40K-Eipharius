@@ -334,7 +334,7 @@
 	src.loc = T
 
 /obj/item/examine(var/mob/living/carbon/human/user, var/distance = -1)
-	if(user.job == "House Noble")
+	if(user.job == "Rogue Trader")
 		var/priceString = "<span class='rose italic'>[src] appears to be worth [src.sales_price] thrones."
 		if(src.sales_price == 0)
 			priceString += " I don't believe I could sell this on the market.</span>"
