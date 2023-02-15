@@ -254,7 +254,7 @@
 /obj/item/device/encryptionkey/headset_cargo
 	name = "Magistratum radio encryption key"
 	icon_state = "cargo_cypherkey"
-	channels = list("Magistratum" = 1)
+	channels = list("Imperial" = 1, "Magistratum" = 1)
 
 //not used rn
 /obj/item/device/encryptionkey/headset_service

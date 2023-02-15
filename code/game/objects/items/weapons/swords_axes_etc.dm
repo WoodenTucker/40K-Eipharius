@@ -192,6 +192,7 @@
 	throwforce = 22
 	block_chance = 50
 	weapon_speed_delay = 6
+	throw_speed = 4
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/trench_axe/lance
@@ -266,7 +267,7 @@
 	desc = "A chainsword, likely belonging to an NCO or higher rank in the Astra Militarium. Under the golden eagle it reads 'For the Throne'"
 	icon_state = "gchain" // doesnt work
 	item_state = "inqchainsword"
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
 	weapon_speed_delay = 9
 	force = 33
 	force_wielded = 38
@@ -308,7 +309,7 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	sales_price = 55
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/chain/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -332,7 +333,7 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	sales_price = 60
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/chain/pcsword
 	name = "Mark I Pattern Chainsword"
@@ -355,7 +356,7 @@
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
 	sales_price = 110 //not common at all
-	w_class = ITEM_SIZE_LARGE //slow
+	w_class = ITEM_SIZE_HUGE //slow
 
 
 /obj/item/melee/chain/pcsword/eviscerator
@@ -557,7 +558,7 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 9
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_LARGE
 
 
 /obj/item/melee/trench_axe/glaive
@@ -572,7 +573,7 @@
 	throwforce = 40
 	block_chance = 35
 	weapon_speed_delay = 10
-	w_class = ITEM_SIZE_LARGE
+	w_class = ITEM_SIZE_HUGE
 
 /obj/item/melee/trench_axe/glaive/adamantine
 	name = "adamantium saintie"
@@ -696,6 +697,7 @@
 	force = 15
 	force_wielded = 16
 	block_chance = 25
+	throw_speed = 5
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
 	grab_sound = 'sound/items/unholster_knife.ogg'
