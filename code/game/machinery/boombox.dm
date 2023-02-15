@@ -257,6 +257,13 @@
 	b_side = pick('sound/newmusic/TAPE-INNMED.ogg')
 	sound_inside = a_side
 
+/obj/item/device/cassette/heresy1/New()
+	..()
+	name = "Heretical Tape"
+	a_side = pick('sound/newmusic/TAPE-forbidden.ogg')
+	b_side = pick('sound/newmusic/TAPE-forbidden.ogg')
+	sound_inside = a_side
+
 /obj/item/device/cassette/inn3/New()
 	..()
 	name = "Totally Transcendent"

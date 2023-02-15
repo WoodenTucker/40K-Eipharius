@@ -437,7 +437,7 @@ Area basic template
 	name = "Warden"
 	icon_state = "warden"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/customs
 	name = "customs"
@@ -448,12 +448,12 @@ Area basic template
 	name = "Firing Range"
 	icon_state = "firingrange"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/execution
 	name = "Execution Room"
 	icon_state = "execution_room"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/security/execution/education
 	name = "Prisoner Education"
@@ -490,7 +490,7 @@ Area basic template
 	name = "Magos Explorator's Office"
 	icon_state = "ce"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/bridge/offices/sisterhospitaller
 	name = "Sister Hospitaller's Office"
@@ -545,7 +545,7 @@ Area basic template
 	name = "Mechanicus Hangar"
 	icon_state = "red"
 	music = 'sound/newmusic/Lab_Experiment.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 /area/cadiaoutpost/oa/shuttle/cargo2
 	name = "Cargo Elevator"
 	icon_state = "shuttle"
@@ -559,7 +559,7 @@ Area basic template
 	name = "Machinamentum"
 	icon_state = "engineering"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/engineering/engine
 	name = "Sacrarium Machina"
@@ -729,39 +729,39 @@ Area basic template
 	name = "Biocogitatum"
 	icon_state = "research"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/research/robotics
 	name = "Cybersmithy"
 	icon_state = "robotics"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/research/xenobiology
 	name = "Sanctum Biologis"
 	icon_state = "green"
 	music = 'sound/newmusic/Outpost1.ogg'
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/research/toxins
 	name = "Toxins"
 	icon_state = "toxins"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/research/toxins/toxinlab
 	name = "toxin lab"
 	icon_state = "toxlab"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/research/toxins/toxintest
 	name = "Toxin Test"
 	icon_state = "toxtest"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/research/toxins/toxinstorage
 	name = "Toxin Storage"
 	icon_state = "toxstorage"
-	requires_power = TRUE
+	requires_power = FALSE
 
 /////////////////////////////////////
 /////////////Service/////////////////

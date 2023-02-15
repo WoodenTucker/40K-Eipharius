@@ -185,7 +185,7 @@ obj/mortar/flare/blue
 	desc = "Larger and heavier than a standard fragmentation grenade, this device is extremely dangerous. It cannot be thrown as far because of its weight."
 	icon_state = "frag"
 
-	w_class = ITEM_SIZE_NORMAL
+	w_class = ITEM_SIZE_SMALL
 	throw_speed = 2
 	throw_range = 6 //heavy, can't be thrown as far
 
@@ -200,6 +200,7 @@ obj/mortar/flare/blue
 	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
 	explosion_size = 4
 	num_fragments = 4
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/grenade/frag/high_yield/homemade
 	name = "Pipe Grenade"
@@ -210,6 +211,7 @@ obj/mortar/flare/blue
 	num_fragments = 3
 	throw_speed = 1.5
 	throw_range = 8
+	w_class = ITEM_SIZE_SMALL
 
 /obj/item/grenade/frag/high_yield/krak/prime()
 	update_mob()

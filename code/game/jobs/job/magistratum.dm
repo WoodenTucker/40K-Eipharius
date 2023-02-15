@@ -267,16 +267,15 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/necros
+	belt = /obj/item/gun/projectile/bolter_pistol
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
-	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	backpack_contents = list( // 1 stun 1 buck box
 	/obj/item/handcuffs = 1,
-	/obj/item/ammo_magazine/c44 = 2,
-	/obj/item/ammo_box/shotgun/stunshell = 1,
-	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/ammo_box/shotgun/msslug = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	)
 
