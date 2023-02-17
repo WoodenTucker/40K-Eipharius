@@ -27,7 +27,9 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		to_chat(H, "<span class='notice'><b><font size=3>   You are apart of the Imperial Guard Squad stationed onto the planet Eipharius in the employ of the Planetary Governor. Your tasks may vary, to collecting taxes, building trenches or defending the outpost. Ensure the Governorship and Imperial Guard Squad survives. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		H.add_stats(rand(15,16), rand(15,16), rand(15,16), rand (8,14))
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -91,6 +93,9 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
+		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
@@ -99,42 +104,12 @@
 					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
-/datum/job/ig/guardsman/watchman
-	title = "Cultist Guardsman"
-	total_positions = 25 // they have xeno combatants to help
-	spawn_positions = 25
-	supervisors = "Cult Leader and Sgt."
-	selection_color = "#414397"
-	department_flag = SRV
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-
-		H.say("; [title] reporting for duty!")
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(16,17), rand(15,17), rand(15,17), rand (8,11))
-		H.add_skills(rand(8,10),rand(8,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.say("; [title] reporting for duty!")
-
-	outfit_type = /decl/hierarchy/outfit/job/vraks
-	alt_titles = list(
-		"Bloodpact Warrior" = /decl/hierarchy/outfit/job/bloodpact,
-		"Vraks Militia Cultist" = /decl/hierarchy/outfit/job/vraks,
-		)
-
-
-
-
 //Whiteshield
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Recruit"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -160,7 +135,7 @@
 		H.witchblood()
 		H.say(":v [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Whiteshield, an Imperial Guard recruit with little training. Follow the orders of anyone giving you orders. Try not to get executed. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 //Sharpshooters
 
@@ -198,6 +173,9 @@
 		H.assign_random_quirk()
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()
+		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		if(title == "Krieg Grenadier")
 			H.set_quirk(new/datum/quirk/brave())
@@ -219,20 +197,6 @@
 				if(title == "Krieg Grenadier")
 					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=2> You are a Krieg Grenadier, born and bred on the deadworld. Equipped with a hellgun, your mobile firepower is unmatched! Support your brethren and storm the enemy, wherever they dig in. </font></b></span>")
-
-/datum/job/ig/guardsman/sharpshooter/watchman
-	title = "Cultist Specialist"
-	supervisors = "Cult Leader and Sgt."
-	total_positions = 3
-	spawn_positions = 3
-	outfit_type = /decl/hierarchy/outfit/job/watchman/sharpshooter
-	selection_color = "#414397"
-	department_flag = SRV
-	alt_titles = list(
-		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/watchman/sharpshooter,
-		"Valhallan Heavy Autogunner" = /decl/hierarchy/outfit/job/watchman/sharpshooter/valhalla,
-		"Catachan Flamer" = /decl/hierarchy/outfit/job/watchman/guardsman/catachan,
-		)
 
 datum/job/ig/bullgryn
 	title = "Bullgryn"
@@ -258,54 +222,6 @@ datum/job/ig/bullgryn
 		to_chat(H, "<span class='notice'><b><font size=3>MA BEST FREND'S DA EMPRAH. FREND OF GOBERNOR. FREND OF DA COMESSAR. PROTECT DA LITTL UN'S!</font></b></span>")
 
 
-
-
-/* //DO NOT FORGET TO READD IT IN THE MAP CONFIGS ONCE ITS DONE!!!
-//el penitente
-/datum/job/prisoner/penitent
-	title = "Penitent Auxilia"
-	total_positions = 0
-	spawn_positions = 0
-	open_when_dead = FALSE
-	outfit_type = /decl/hierarchy/outfit/job/sniper
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
-	sniper_skill = 5
-	shotgun_skill = 6
-	lmg_skill = 5
-	smg_skill = 6
-	cultist_chance = 50 //penitents be penitentin
-	//these alt titles are wrong, create /outfits/ for penitents and put them down here
-	alt_titles = list(
-		"Deserter" = /decl/hierarchy/outfit/job/sniper,
-		"Drug-Dealer" = /decl/hierarchy/outfit/job/sniper/valhalla,
-		"Mad-Surgeon" = /decl/hierarchy/outfit/job/sniper/krieg,
-		)
-
-	equip(var/mob/living/carbon/human/H)
-		H.warfare_faction = IMPERIUM
-		..()
-		H.add_stats(rand(11,14), rand(11,16), rand(14,16), rand (10,16)) //prisoners aren't well fed
-		H.add_skills(rand(5,8),rand(5,8),rand(3,7),rand(3,7),rand(3,7)) //melee, ranged, med, eng, surgery
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
-		SSwarfare.red.team += H
-		H.fully_replace_character_name("Penitent [H.real_name]")
-		H.assign_random_quirk()
-		H.witchblood()
-
-		to_chat(H, "<span class='notice'><b><font size=3>You are a penitent, a criminal, you chose to be turned into a penal legionairee instead of facing the commissar's boltpistol, and here you are, whatever you may have been, you are now just a number. </font></b></span>")
-		to_chat(H, "<span class='notice'><b><font size=3> You answer to essentially any imperial force. The Emperor Protects </font></b></span>")
-
-		switch(title)
-			if("Deserter" || "Drug-Dealer || "Mad-Surgeon")
-				if(title == "Drug-Dealer")
-					H.add_skills(rand(3,6),rand(3,6),rand(3,6),rand(2,5),rand(1,5))
-				if(title == "Mad-Surgeon")
-					H.add_skills(rand(4,7),rand(4,7),rand(8,10),rand(2,5),rand(8,10))
-*/
-
-// snipings a good job mate
 /datum/job/ig/guardsman/sniper
 	title = "Imperial Guard Sniper"
 	total_positions = 1
@@ -340,7 +256,9 @@ datum/job/ig/bullgryn
 		H.say(":v [title] reporting for duty!")
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a sharpshooter, the elite of the Imperial guard in long ranged warfare. Scout ahead with your superior range and warn your comrades of hostiles. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		if(title == "Krieg Marksman")
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
@@ -390,7 +308,9 @@ datum/job/ig/bullgryn
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
-		to_chat(H, "<span class='notice'><b><font size=3>You are a sergeant upon the planet of Eipharius, in service to the Imperium. Ensure the men are in order. Train them. Lead them well. The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
@@ -417,31 +337,6 @@ datum/job/ig/bullgryn
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
-
-/datum/job/ig/sergeant/watchman
-	title = "Cultist Sergeant"
-	supervisors = "Cult Leader"
-	department_flag = SRV || COM
-	selection_color = "#3032a7"
-	outfit_type = /decl/hierarchy/outfit/job/watchman/sergeant
-	alt_titles = list(
-		"Cadian Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant,
-		"Catachan Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant/catachan,
-		"Krieg Watchmaster" = /decl/hierarchy/outfit/job/watchman/sergeant/krieg,
-		"Valhallan Sergeant" = /decl/hierarchy/outfit/job/watchman/sergeant/valhallan,
-		)
-
-	equip(var/mob/living/carbon/human/H)
-		..()
-		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
-		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
-		H.assign_random_quirk()
-		H.witchblood()
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
-		H.say(";Sgt reporting for duty!")
-
 
 // Combat Medicae
 
@@ -579,7 +474,8 @@ datum/job/ig/bullgryn
 		/mob/living/carbon/human/proc/comsexecute,
 		/mob/living/carbon/human/proc/comsyouwereweak)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Commissar. Absolutely do not kill people for minor infractions. You only have your *one* guard squad. Lead them, ensure they are properly trained. You are in the employ of the Governor's family, but if treasonous, your loyalties to Terra are higher.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be punished if you metagame lateparties, murder allied characters without good reason OR force people to stay in trenches all game. </font></b></span>")
 
 // Outfits
 
@@ -630,7 +526,7 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -780,7 +676,7 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
+	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
