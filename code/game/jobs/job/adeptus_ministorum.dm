@@ -394,7 +394,6 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		H.gender = FEMALE
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
@@ -569,12 +568,11 @@
 
 /decl/hierarchy/outfit/job/militant
 	name = OUTFIT_JOB_NAME("Progena Militant")
-	head = /obj/item/clothing/head/hospitallerhelm
 	l_ear = /obj/item/device/radio/headset/headset_sci
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/sisterofbattle/training
 	belt = /obj/item/storage/belt/medical/full
-	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
+	uniform = /obj/item/clothing/under/rank/medical
 	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	gloves = /obj/item/clothing/gloves/sisterofbattle
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
@@ -602,7 +600,6 @@
 	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical
-	head = /obj/item/clothing/head/hospitallerhelm
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones2 = 1,
