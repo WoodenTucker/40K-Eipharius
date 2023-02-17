@@ -299,7 +299,7 @@
 		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 		H.say(":n [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Sister Superior assigned to the Monastary, responsible for the military matters of the Monastary. Yet most importantly, training the Novices Militant in the art of war.  </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
 /datum/job/hospitaller
 	title = "Sister Hospitaller"
@@ -401,13 +401,13 @@
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a recent arrival to the Monastery Scholam... soon you will begin your training with the sisters of the Ordos and the monks of the Ecclesiarchy, you stand at a crossroads where in which your failures and triumphs shall decide who you will become for the rest of your days. Do as you are instructed, learn from your masters and serve the God Emperor of Mankind.</font></b></span>")
 
-/datum/job/preacher
+/datum/job/preacher // DISABLED
 	title = "Preacher"
 	department = list("Ministorum", "Medical")
 	department_flag = MED
 	minimal_player_age = 20
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "The Confessor"
 	selection_color = "#FCFBFA"
 	economic_modifier = 7
