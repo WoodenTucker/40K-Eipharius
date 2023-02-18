@@ -136,6 +136,11 @@
 	cost = 190
 	item_path = /obj/item/gun/projectile/boltrifle/lockebolter
 
+/datum/cargo_entry/weapon/drusianbolter
+	name = "Drusian Bolter"
+	cost = 230
+	item_path = /obj/item/gun/projectile/boltrifle/lockebolter/drusian
+
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"
 	cost = 152
