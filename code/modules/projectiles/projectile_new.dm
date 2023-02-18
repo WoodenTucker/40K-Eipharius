@@ -30,7 +30,7 @@
 	var/turf/firer_loc = null
 
 	var/accuracy = 0
-	var/dispersion = 0.0
+	var/dispersion = 0
 
 	//used for shooting at blank range, you shouldn't be able to miss
 	var/can_miss = 0

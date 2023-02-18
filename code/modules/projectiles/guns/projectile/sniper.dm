@@ -13,9 +13,9 @@
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	max_shells = 3
 	ammo_type = /obj/item/ammo_casing/a145
-	one_hand_penalty = 50
+	one_hand_penalty = 2
 	accuracy = 0
-	scoped_accuracy = 5 //increased accuracy over the LWAP because only one shot //Walker here, i doubt that this does anything, but imma just leave it in.
+	scoped_accuracy = 1 //increased accuracy over the LWAP because only one shot //Walker here, i doubt that this does anything, but imma just leave it in.
 	var/bolt_open = 0
 	wielded_item_state = "heavysniper-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/sniper_load.ogg'
@@ -89,7 +89,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_LARGE
 	force = 15
-	one_hand_penalty = 10
+	one_hand_penalty = 2.1
 	fire_delay = 8
 	accuracy = 1
 	move_delay = 4
@@ -103,8 +103,8 @@
 	sales_price = 70
 
 	firemodes = list(
-		list(mode_name="semi-automatic", move_delay=1.5, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
-		list(mode_name="overcharge", move_delay=2, one_hand_penalty=9, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
+		list(mode_name="semi-automatic", move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
+		list(mode_name="overcharge", move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
 		)
 
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
@@ -142,8 +142,8 @@
 	load_method = SINGLE_CASING|SINGLE_LOAD
 	max_shells = 1
 	ammo_type = /obj/item/ammo_casing/bolter
-	one_hand_penalty = 25
-	accuracy = 1
+	one_hand_penalty = 1.5
+	accuracy = 1.5
 	var/bolt_open = 0
 	wielded_item_state = "musket-wielded"
 	bulletinsert_sound = 'sound/weapons/guns/interact/arm_cock.ogg'
@@ -219,8 +219,8 @@
 	max_shells = 7 //Fits seven rounds in the mag, with a revolving cylinder. No room for extra rounds.
 	str_requirement = 17
 	move_delay = 3
-	one_hand_penalty = 7
-	accuracy = 1.5 //extremely accurate
+	one_hand_penalty = 2.2
+	accuracy = 1 //extremely accurate
 	fire_delay = 4.9
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	magazine_type = /obj/item/ammo_magazine/galvanic
@@ -255,8 +255,8 @@
 	screen_shake = 1.2 //extra kickback
 	max_shells = 10
 	ammo_type = /obj/item/ammo_casing/lp338
-	one_hand_penalty = 50
-	accuracy = 2
+	one_hand_penalty = 2.3
+	accuracy = 1.4
 	gun_type = GUN_SNIPER
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	far_fire_sound = "sniper_fire"
@@ -361,7 +361,7 @@
 	ammo_type = /obj/item/ammo_casing/exitus
 	magazine_type = /obj/item/ammo_magazine/exitus
 	allowed_magazines = list(/obj/item/ammo_magazine/exitus, /obj/item/ammo_magazine/exitus/toxin, /obj/item/ammo_magazine/exitus/fire/, /obj/item/ammo_magazine/exitus/explosive)
-	one_hand_penalty = 50
+	one_hand_penalty = 2.5
 	accuracy = 1 //Don't shoot it one-handed.
 	scoped_accuracy = 50 //Hit or miss. I guess they never miss, huh? //Due to the way accuracy works, I know this seems incredibly high, but it's actually needed for long range shots to have any reasonable chance of a hit.
 	wielded_item_state = "heavysniper-wielded"

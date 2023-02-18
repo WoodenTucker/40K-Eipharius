@@ -8,7 +8,7 @@
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BACK
-	one_hand_penalty = 4
+	one_hand_penalty = 2
 	charge_cost = 30
 	max_shots = 10
 	projectile_type = /obj/item/projectile/ion

@@ -221,15 +221,15 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 44
-	armor_penetration = 25
+	damage = 51
+	armor_penetration = 15
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 130
+	damage = 90
 	armor_penetration = 60
 
 /obj/item/projectile/energy/pulse/ion
@@ -237,15 +237,15 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 115
-	armor_penetration = 70
+	damage = 80
+	armor_penetration = 100
 
 /obj/item/projectile/energy/pulse/plasmarifle
 	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 140
+	damage = 100
 	weaken = 1
 	armor_penetration = 40
 	light_power = 4
@@ -257,9 +257,9 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 110
+	damage = 90
 	weaken = 1
-	armor_penetration = 40
+	armor_penetration = 35
 	light_power = 4
 	light_color = "#2132cf"
 

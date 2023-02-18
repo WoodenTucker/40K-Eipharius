@@ -9,7 +9,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 60
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -558,7 +558,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 75
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
