@@ -369,10 +369,6 @@
 	access = list(access_advchapel, access_medical, access_village)
 	minimal_access = list(access_advchapel, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/novice
-	alt_titles = list(
-		"Progena Hospitaller" = /decl/hierarchy/outfit/job/novice,
-		"Progena Militant" = /decl/hierarchy/outfit/job/militant,
-	)
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
 	sniper_skill = 7
@@ -387,14 +383,13 @@
 		H.fully_replace_character_name("Progena [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
-		H.add_skills(rand(5,7),rand(5,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery //same skills as cadet
+		H.add_skills(rand(5,7),rand(5,7),rand(5,7),rand(1,3),rand(5,7)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		H.gender = FEMALE
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 
@@ -567,45 +562,18 @@
 	/obj/item/stack/thrones3/ten = 1
 		)
 
-/decl/hierarchy/outfit/job/militant
-	name = OUTFIT_JOB_NAME("Progena Militant")
-	head = /obj/item/clothing/head/hospitallerhelm
-	l_ear = /obj/item/device/radio/headset/headset_sci
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle/training
-	belt = /obj/item/storage/belt/medical/full
-	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
-	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
-	gloves = /obj/item/clothing/gloves/sisterofbattle
-	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
-	id_type = /obj/item/card/id/dog_tag
-	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/melee/sword/broadsword
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
-	backpack_contents = list(
-		/obj/item/stack/thrones = 1,
-		/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
-		/obj/item/device/flashlight/lantern = 1,
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1
-	)
 
 /decl/hierarchy/outfit/job/novice
-	name = OUTFIT_JOB_NAME("Progena Hospitaller")
+	name = OUTFIT_JOB_NAME("Progena")
 	uniform = /obj/item/clothing/under/rank/medical
 	l_ear  = /obj/item/device/radio/headset/headset_sci
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/storage/sistersuit
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health
-	l_hand = /obj/item/storage/firstaid/adv
-	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical
-	head = /obj/item/clothing/head/hospitallerhelm
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones2 = 1,
-		/obj/item/gun/energy/las/laspistol = 1,
-		/obj/item/cell/lasgun = 1,
 		/obj/item/stack/thrones3/five = 1,)
