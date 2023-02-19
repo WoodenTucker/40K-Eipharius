@@ -187,7 +187,7 @@
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/headset_cargo
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
@@ -240,7 +240,7 @@
 	belt = /obj/item/gun/energy/las/laspistol/shitty
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/headset_cargo
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
 	/obj/item/handcuffs = 1,

@@ -692,7 +692,7 @@
 		var/mob/living/carbon/human/H = M
 		H.zombieze()
 	M.adjustOxyLoss(3 * removed)
-	M.Weaken(10)
+	M.Weaken(5)
 	M.silent = max(M.silent, 10)
 	remove_self(volume)
 

@@ -17,7 +17,7 @@
 
 /datum/rune_recipe/nurgle/toughen
 	name = "Toughen Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat)
+	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/external/head,)
 	effect_path = /datum/heretic_effect/tough
 
 /datum/rune_recipe/nurgle/nganga
@@ -47,12 +47,12 @@
 
 /datum/rune_recipe/nurgle/blight
 	name = "Blightnade Rite"
-	ingredients = list(/obj/item/organ/external/head, /obj/item/grenade/frag/high_yield/homemade)
+	ingredients = list(/obj/item/organ/external/head, /mob/living/simple_animal/hostile/retaliate/rat, /obj/item/grenade/frag/high_yield/homemade)
 	product_path = /obj/item/grenade/chem_grenade/blightnade
 
 /datum/rune_recipe/nurgle/nurgling
 	name = "Nurgling Rite"
-	ingredients = list(/obj/item/organ/internal/liver)
+	ingredients = list(/mob/living/carbon/human)
 	product_path = /mob/living/simple_animal/hostile/nurgling
 
 /datum/rune_recipe/nurgle/offering
