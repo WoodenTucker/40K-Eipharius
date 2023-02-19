@@ -627,12 +627,13 @@ Area basic template
 /area/cadiaoutpost/oa/medicae/mansion
 	name = "Mansion Medical"
 	icon_state = "medbay"
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/medicae/mansion/medicae
 	name = "Mansion Medicae"
 	icon_state = "mansionmed"
 	dynamic_lighting = 1
-	requires_power = 1
+	requires_power = FALSE
 
 /area/cadiaoutpost/oa/medicae/storage
 	name = "Medicae Storage"
@@ -923,7 +924,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/mining/miningproduction
 	name = "Mining Production"
 	icon_state = "mining_production"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/General_Ambient2.ogg'
 
 /area/cadiaoutpost/oa/supply/mining/office
@@ -934,7 +935,7 @@ Area basic template
 /area/cadiaoutpost/oa/supply/mining/miningbreak
 	name = "Mining Breakroom"
 	icon_state = "mining_break"
-	requires_power = TRUE
+	requires_power = FALSE
 	music = 'sound/newmusic/General_Ambient2.ogg'
 
 /area/cadiaoutpost/oa/supply/mining/explored
