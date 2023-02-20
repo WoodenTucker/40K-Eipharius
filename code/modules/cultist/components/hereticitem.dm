@@ -142,12 +142,12 @@
 	item_state = "fuckingnothing"
 	item_flags = ITEM_FLAG_NODROP
 	attack_verb = list("slashed")
-	force = 21
-	force_wielded = 24
-	armor_penetration = 15
-	block_chance = 20
+	force = 20
+	force_wielded = 23
+	armor_penetration = 20
+	block_chance = 10
 	sales_price = 39
-	weapon_speed_delay = 5
+	weapon_speed_delay = 8
 
 /obj/item/melee/sword/zombie_clawl/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
