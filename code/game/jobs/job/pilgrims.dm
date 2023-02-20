@@ -155,9 +155,20 @@ Pilgrim Fate System
 				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/newopen, slot_head)
 			else
 				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hero, slot_head)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/revolver/messina, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357, slot_in_backpack)
+				//Weapon Rolls
+			if(prob(25))
+				equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club, slot_l_hand) //Trench Club
+			else if(prob(10))
+				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/doublebarrel/sawn, slot_l_hand) //Sawn Off Shotgun
+			else if(prob(15))
+				equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol, slot_l_hand) //Civitas Pattern Laspistol
+			else if(prob(20))
+				equip_to_slot_or_del(new /obj/item/gun/projectile/pistol/kieji/snub, slot_l_hand) //Snub Nosed Kieji Pistol
+			else if(prob(25))
+				equip_to_slot_or_del(new /obj/item/gun/projectile/pistol/kieji, slot_l_hand)  // Kieji pistol
+			else
+				equip_to_slot_or_del(new /obj/item/gun/projectile/revolver/messina, slot_l_hand) //Messina Pattern Revolver
+				//Back to Hardset Loadout
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
