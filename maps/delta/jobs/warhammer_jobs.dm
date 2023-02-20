@@ -33,10 +33,10 @@
 	/datum/job/marshal,
 	/datum/job/progena,/*
 	/datum/job/preacher, turn preacher into pilgrim fate */
-	/datum/job/innkeeper,
+	/datum/job/underboss,
 	/datum/job/bouncer,
-	/datum/job/pathfinder,
 	/datum/job/gangboy,
+	/datum/job/pathfinder,
 	/datum/job/penitent,
 	)
 
