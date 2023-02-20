@@ -363,8 +363,8 @@
 /obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
 	name = "kroot feet"
 	desc = "The spindly webbed feet of a Kroot"
-	icon_state =
-	item_state =
+	icon_state = "krootboot"
+	item_state = "krootboot"
 	canremove = 0
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
@@ -388,7 +388,7 @@
 	item_state = "ork_boots"
 	species_restricted = list(SPECIES_ORK)
 	canremove = 0
-	item_flags = ITEM_FLAG_NOSLIP
+//	item_flags = ITEM_FLAG_NOSLIP //walker here, add this if you don't like orks being goofy or funny or if you are a nerd
 
 
 //Eldar Stuff
