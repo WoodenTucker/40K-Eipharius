@@ -363,8 +363,8 @@
 /obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
 	name = "kroot feet"
 	desc = "The spindly webbed feet of a Kroot"
-	icon_state =
-	item_state =
+	icon_state = "None"
+	item_state = "None"
 	canremove = 0
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
