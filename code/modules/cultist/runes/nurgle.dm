@@ -47,16 +47,16 @@
 
 /datum/rune_recipe/nurgle/blight
 	name = "Blightnade Rite"
-	ingredients = list(/obj/item/organ/external/head, /mob/living/simple_animal/hostile/retaliate/rat, /obj/item/grenade/frag/high_yield/homemade)
+	ingredients = list(/obj/item/grenade/frag/high_yield/krak, /obj/item/newore/gems/ruby)
 	product_path = /obj/item/grenade/chem_grenade/blightnade
 
 /datum/rune_recipe/nurgle/nurgling
 	name = "Nurgling Rite"
-	ingredients = list(/mob/living/carbon/human)
+	ingredients = list(/obj/item/newore/gems/sapphire)
 	product_path = /mob/living/simple_animal/hostile/nurgling
 
 /datum/rune_recipe/nurgle/offering
 	name = "Offering Rite"
-	ingredients = list(/mob/living/carbon/human)
+	ingredients = list(/obj/item/newore/gems/emerald)
 	delete_items = FALSE
 	special 	 = TRUE
