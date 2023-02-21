@@ -5,6 +5,7 @@
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/enforcer, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/under/color/brown, slot_uniform)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sec, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet/marshal, slot_head)
 			equip_to_slot_or_del(new /obj/item/melee/powermaul, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
