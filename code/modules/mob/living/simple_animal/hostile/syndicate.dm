@@ -26,7 +26,7 @@
 	// var/weapon2
 	unsuitable_atoms_damage = 15
 	environment_smash = 1
-	faction = "chaos"
+	faction = "Chaos"
 	status_flags = CANPUSH
 
 	ranged = 1
