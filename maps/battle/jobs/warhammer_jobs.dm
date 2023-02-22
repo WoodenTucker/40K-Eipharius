@@ -28,7 +28,7 @@
 	/datum/job/sisterofbattle,
 	/datum/job/qm2,
 	/datum/job/ig/enforcer,
-	/datum/job/innkeeper,
+	/datum/job/underboss,
 	/datum/job/hydro,
 	/datum/job/undertaker,
 	/datum/job/penitent,

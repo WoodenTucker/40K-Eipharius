@@ -348,31 +348,31 @@ Pilgrim Fate System
 
 
 
-/datum/job/innkeeper  //so that the inn always has someone working
-	title = "Innkeeper"
+/datum/job/underboss  //the head honcho
+	title = "Underboss"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
+	social_class = SOCIAL_CLASS_MED //he's important to the pilgrims, but not to anyone else
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 1
 	supervisors = "Money"
-	selection_color = "#848484"
-	access = list(access_bar,)
+	selection_color = "#530606"
+	access = list(access_bar, access_ganger)
 	minimal_access = list(access_bar)
-	outfit_type = /decl/hierarchy/outfit/job/innkeeper
+	outfit_type = /decl/hierarchy/outfit/job/underboss
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 30
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,16), rand(13,16), rand(9,12), rand (8,11))//bartender doesnt have to be that strong, hes literally got the equivalent of a dumb and giant astartes protecting him at any cost
+		H.add_stats(rand(13,16), rand(13,16), rand(9,12), rand (8,11))
 		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>You landed on this outpost some time ago, with the savings you had, you opened an inn hoping to grow your wealth serving the various pilgrims and travelers. Trade with gatherers and the outpost to always stay stocked so that no paying customer will be without food and drink. You have a full kitchen, alcohol and small farm to grow what you need, and also a giant bodyguard honorbound to protect you. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're the head of a small gang on the town of Eipharius. You own the inn, and got a pretty loyal Ogryn to boot. The world is your oyster.. </font></b></span>")
 
 /datum/job/pathfinder
 	title = "Pathfinder"
@@ -432,22 +432,19 @@ Pilgrim Fate System
 	/obj/item/stack/thrones2 = 1,
 	)
 
-/decl/hierarchy/outfit/job/innkeeper
-	name = OUTFIT_JOB_NAME("Innkeeper")
-	uniform = /obj/item/clothing/under/rank/victorian/redbl
-	suit = /obj/item/clothing/suit/innapron
+/decl/hierarchy/outfit/job/underboss
+	name = OUTFIT_JOB_NAME("Underboss")
+	uniform = /obj/item/clothing/under/suit_jacket/really_black
 	id_type = /obj/item/card/id/pilgrim/innkeeper
 	pda_type = /obj/item/device/pda/penitent
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	head = /obj/item/clothing/head/bardhat
 	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
 	pda_slot = null
 	shoes = /obj/item/clothing/shoes/vigilante
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
-	/obj/item/ammo_box/shotgun/stunshell = 1,
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
@@ -560,50 +557,108 @@ Pilgrim Fate System
 	spawn_positions = 4
 	open_when_dead = 0
 	supervisors = "Yourself and your fellow gangers"
-	selection_color = "#848484"
-	access = list(access_village, access_ganger, access_bar)
+	selection_color = "#530606"
+	access = list(access_village, access_ganger,)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 75
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 
 		..()
-		H.add_stats(rand(15,17), rand(12,16), rand(13,15), rand (8,11))
-		H.add_skills(rand(7,9),rand(8,10),rand(2,4),1,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.stat = UNCONSCIOUS
 		H.assign_random_quirk()
-		H.gangeq()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/gangerclass,
+		)
 		to_chat(H, "<span class='notice'><b><font size=3>You left your previous world with a bounty on your head, and now you're in this shit hole. At least there's a few others you've met and teamed up with. Mug people, stab people. Get some wealth, and maybe even praise the Ruinous Powers? You probably should if your fellows are as well.</font></b></span>")
 
-/mob/living/carbon/human/proc/gangeq()
-    if(prob(70))
-        if(prob(50))
-            equip_to_slot_or_del(new /obj/item/clothing/head/helmet/gangerhelm, slot_head)
-        else
-            switch(rand(1,4))
-                if(1)
-                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sentryhelm, slot_head)
-                if(2)
-                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/siege, slot_head)
-                if(3)
-                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hero, slot_head)
-                if(4)
-                    equip_to_slot_or_del(new /obj/item/clothing/head/helmet/zealot, slot_head)
 
 
+/mob/living/carbon/human/proc/gangerclass()
+	set name = "Select your class"
+	set category = "Ganger"
+	set desc = "Choose your ganger archtype."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	var/fates = list("Bruiser","Hitman", "Rogue Doc",)
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+		if("Bruiser")
+			U.add_stats(rand(17,20), rand(17,20), rand(17,19), rand (12,16))
+			U.add_skills(rand(8,10),rand(5,6),rand(5,7),rand(1,3),rand(1,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/goliathplate, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/gangerhelm, slot_head)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club, slot_belt)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			to_chat(U,"<span class='notice'>You're the muscle of the gang. Extract protection and listen to the boss.<b><font size=3>")
+			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("Hitman")
+			U.add_stats(rand(14,16), rand(14,16), rand(18,20), rand (14,16)) //ex criminal, not fed very well, but random stats
+			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vest/tactical, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/messina, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
+			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Carry out the wishes of the Underboss and survive.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("Rogue Doc")
+			U.add_stats(rand(15,17), rand(12,15), rand(12,15), rand (15,15))
+			U.add_skills(rand(4,6),rand(4,6),rand(10,10),rand(9,10),rand(10,10)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch/hud/medical, slot_glasses)
+			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
+			to_chat(U,"<span class='notice'><b><font size=3>You're a step above the rest of the dealers when it comes to chemistry. Due to this, you were hired to a local gang after you caught their interest.</font></b></span>")
+			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 /datum/job/bouncer
 	title = "Bouncer"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The God Emperor and the Innkeeper"
-	selection_color = "#848484"
+	supervisors = "The Underboss"
+	selection_color = "#530606"
 	outfit_type = /decl/hierarchy/outfit/job/bouncer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
@@ -618,7 +673,7 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You followed your best friend the innkeeper to this new world. Together, the two of you run the inn. He's the brains, you're the brawn.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest, muscle of the gang. Listen to the Underboss.</font></b></span>")
 
 
 
