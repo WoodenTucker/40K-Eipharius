@@ -254,6 +254,7 @@
 	fired.turn_on()
 	..()
 */
+
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive
 	name = "\improper Soundstrike missile launcher"
 	icon_state = "mecha_missilerack"
@@ -369,15 +370,15 @@
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavybolter
     name = "\improper Astartes Mk IVa heavy bolter"
     icon_state = "mecha_uac2"
-    equip_cooldown = 30
+    equip_cooldown = 25
     projectile = /obj/item/projectile/bullet/bolterrifle
-    fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+    fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
     fire_volume = 100
-    projectiles = 60
-    projectiles_per_shot = 3
-    deviation = 0.15
-    projectile_energy_cost = 80 KILOWATTS
-    fire_cooldown = 5
+    projectiles = 300
+    projectiles_per_shot = 1
+    deviation = 0.45
+    projectile_energy_cost = 8 KILOWATTS
+    fire_cooldown = 8
 
 /*
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/flashbang
@@ -416,23 +417,25 @@
     name = "A twin linked heavy bolter"
     icon_state = "mecha_uac2"
     equip_cooldown = 30
-    projectile = /obj/item/projectile/bullet
-    fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
+    projectile = /obj/item/projectile/bullet/bolterrifle
+    fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
     fire_volume = 100
-    projectiles = 6000
-    projectiles_per_shot = 3
-    deviation = 0.15
+    projectiles = 200
+    projectiles_per_shot = 2
+    deviation = 0.6
     projectile_energy_cost = 8 KILOWATTS
-    fire_cooldown = 1
+    fire_cooldown = 15
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/assaultcannon
 	name = "Mark VIII Absolo pattern assault cannon"
 	equip_cooldown = 20
-	fire_cooldown = 3
 	projectile = /obj/item/projectile/bullet/rifle/a145
-	projectiles_per_shot = 8
-	projectiles = 9000
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	projectiles = 40
 	projectile_energy_cost = 12 KILOWATTS
+	projectiles_per_shot = 2
+	deviation = 0.3
+	fire_cooldown = 30
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/krak
     name = "Krak Missile Launcher"
@@ -441,7 +444,7 @@
     fire_sound = 'sound/effects/bang.ogg'
     fire_volume = 100 //Loud
     projectiles = 6
-    projectile_energy_cost = 100 KILOWATTS
+    projectile_energy_cost = 50 KILOWATTS
     equip_cooldown = 60
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/hk
@@ -451,7 +454,7 @@
     fire_sound = 'sound/effects/bang.ogg'
     fire_volume = 100 //Loud
     projectiles = 6
-    projectile_energy_cost = 100 KILOWATTS
+    projectile_energy_cost = 150 KILOWATTS
     equip_cooldown = 60
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/missile_rack/explosive/plasma_cannon
@@ -461,7 +464,7 @@
     fire_sound = 'sound/weapons/gunshot/tank.ogg'
     fire_volume = 100 //Loud
     projectiles = 100
-    projectile_energy_cost = 100 KILOWATTS
+    projectile_energy_cost = 200 KILOWATTS
     equip_cooldown = 40
     fire_cooldown = 20
 
@@ -472,7 +475,7 @@
 	energy_drain = 60 KILOWATTS
 	projectile = /obj/item/projectile/beam/lascannon
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	fire_cooldown = 60
+	fire_cooldown = 30
 	fire_volume = 200 //Loud
 
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/multilas
@@ -482,20 +485,20 @@
 	energy_drain = 6 KILOWATTS
 	projectile = /obj/item/projectile/beam/multilas
 	fire_sound = 'sound/weapons/lasercannonfire.ogg'
-	fire_cooldown = 1
+	fire_cooldown = 10
 	fire_volume = 50
-	projectiles_per_shot = 8
-	deviation = 0.3
+	projectiles_per_shot = 4
+	deviation = 0.5
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/flamer
     name = "Heavy Flamer"
     icon_state = "mecha_uac2"
-    equip_cooldown = 30
+    equip_cooldown = 20
     projectile = /obj/item/projectile/flamer
     fire_sound = 'sound/effects/fire01.ogg'
-    fire_volume = 100
+    fire_volume = 80
     projectiles = 60
-    projectiles_per_shot = 20
+    projectiles_per_shot = 8
     deviation = 0.8
     projectile_energy_cost = 8 KILOWATTS
     fire_cooldown = 0
