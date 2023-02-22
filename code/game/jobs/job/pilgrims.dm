@@ -618,8 +618,8 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Hitman")
-			U.add_stats(rand(13,14), rand(13,13), rand(18,20), rand (10,12)) //ex criminal, not fed very well, but random stats
-			U.add_skills(rand(5,6),rand(9,11),rand(5,10),rand(5,10),rand(5,10)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(14,16), rand(14,16), rand(18,20), rand (14,16)) //ex criminal, not fed very well, but random stats
+			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vest/tactical, slot_wear_suit)
@@ -636,7 +636,7 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Rogue Doc")
 			U.add_stats(rand(15,17), rand(12,15), rand(12,15), rand (15,15))
-			U.add_skills(rand(7,10),rand(8,10),rand(10,10),rand(9,10),rand(10,10)) //melee, ranged, med, eng, surgery
+			U.add_skills(rand(4,6),rand(4,6),rand(10,10),rand(9,10),rand(10,10)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)

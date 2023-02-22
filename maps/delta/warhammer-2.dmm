@@ -270,7 +270,7 @@
 "dCv" = (/obj/structure/bed/chair/comfy/beige{dir = 1},/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/service/enforcer)
 "dDQ" = (/obj/structure/extinguisher_cabinet{pixel_y = 30},/obj/structure/table/steel_reinforced,/turf/simulated/floor/tiled{color = "grey"; icon_state = "dark1"},/area/cadiaoutpost/oa/engineering)
 "dDR" = (/turf/simulated/floor/carpet/green,/area/cadiaoutpost/oa/villageinside)
-"dFO" = (/obj/structure/table/reinforced{color = "grey"},/obj/effect/floor_decal/turf/rectangles,/obj/item/clothing/accessory/holster,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
+"dFO" = (/obj/structure/table/reinforced{color = "grey"},/obj/effect/floor_decal/turf/rectangles,/obj/item/clothing/accessory/holster,/obj/item/clothing/suit/innapron,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
 "dGn" = (/obj/effect/floor_decal/newcorner/plating,/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/medicae)
 "dHc" = (/obj/effect/floor_decal/turf/barnew,/obj/structure/grille,/obj/structure/window_frame{maxhealth = 2000},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/service/inn)
 "dHu" = (/obj/structure/torchwall{dir = 1; icon_state = "torchwall0"},/obj/structure/closet/crate/miner,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/oa/supply/mining/office)
