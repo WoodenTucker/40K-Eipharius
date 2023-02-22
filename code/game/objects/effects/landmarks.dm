@@ -170,9 +170,6 @@ Template:
 /obj/effect/landmark/start/roguetrader
 	name = "Rogue Trader"
 	icon_state = "rts"
-
-/obj/effect/landmark/start/roguetrader/vetmerc
-	name = "Veteran Mercenary"
 /obj/effect/landmark/start/roguetrader/xenomerc
 	name = "Xeno Mercenary"
 

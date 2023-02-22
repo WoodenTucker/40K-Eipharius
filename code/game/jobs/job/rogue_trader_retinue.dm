@@ -52,46 +52,6 @@
 
 /datum/job/captain/get_access()
 	return get_all_station_access()
-/*
-/datum/job/vetmerc
-	title = "Veteran Mercenary"
-	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "The Rogue Trader"
-	selection_color = "#315dd4"
-	economic_modifier = 5
-	social_class = SOCIAL_CLASS_MED
-	announced = 0
-	access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_access = list(access_bar, access_village, access_village, access_administratum, access_change_ids, access_keycard_auth,)
-	minimal_player_age = 3
-	ideal_character_age = 40
-	outfit_type = /decl/hierarchy/outfit/job/kasrkin
-	alt_titles = null
-	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 10 // veteran
-	semi_rifle_skill = 10
-	sniper_skill = 10
-	shotgun_skill = 10
-	lmg_skill = 10
-	smg_skill = 10
-	cultist_chance = 10
-
-	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
-		..()
-		H.fully_replace_character_name("[current_name]")
-		H.add_stats(rand(18,20), rand(16,18), rand(18,19), rand(10,15))
-		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
-		H.assign_random_quirk()
-		H.witchblood()
-		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
-		H.adjustStaminaLoss(-INFINITY)
-		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Veteran Kasrkin. In service as a Mercenary to the Rogue Trader. Follow their word, and try not to be too racist against their Xeno Mercenary. (OOC: Abandoning the Rogue Trader's Bazaar and commanding the Guardsmen is against server rules. The RT pays your paycheck. Only listen to them)</font></b></span>")
-*/
 
 /datum/job/janissary
 	title = "Vessorine Janissary"

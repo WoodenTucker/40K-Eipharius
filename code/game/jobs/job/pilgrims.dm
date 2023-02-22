@@ -400,11 +400,6 @@ Pilgrim Fate System
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You,  a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
-/datum/job/pathfinder/watchman
-	title = "Cult Leader"
-	department_flag = COM | SRV
-	selection_color = "#2b2ed1"
-
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
 	name = OUTFIT_JOB_NAME("Pilgrim")
@@ -553,8 +548,8 @@ Pilgrim Fate System
 	title = "Ganger"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 3
+	spawn_positions = 3
 	open_when_dead = 0
 	supervisors = "Yourself and your fellow gangers"
 	selection_color = "#530606"

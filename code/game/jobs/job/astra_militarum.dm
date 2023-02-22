@@ -297,6 +297,7 @@ datum/job/ig/bullgryn
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
+	
 	auto_rifle_skill = 9
 	semi_rifle_skill = 9
 	sniper_skill = 9
@@ -307,6 +308,7 @@ datum/job/ig/bullgryn
 	equip(var/mob/living/carbon/human/H)
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.fully_replace_character_name("Sergeant [H.real_name]")
 		H.add_stats(18, rand(17,18), rand(16,18), rand(13,15)) //meant to not only be a Sergeant, but a veteran
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
@@ -330,8 +332,11 @@ datum/job/ig/bullgryn
 				if(title == "Cadian Sergeant")
 					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
 
-				if(title == "Krieg Watchmaster")
+				if(title == "Sergeant")
 					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
+
+				if(title == "Krieg Watchmaster")
+					H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(5,6))
 					H.set_quirk(new/datum/quirk/brave())
 					H.fully_replace_character_name("Watchmaster [rand(1,100000)]")
 				if(title == "Valhallan Sergeant")
@@ -406,6 +411,49 @@ datum/job/ig/bullgryn
 		H.say(":v [title] reporting for duty!")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+
+/datum/job/kasrkin
+	title = "Kasrkin"
+	supervisors = "Your Sergeant, The Commissar and The Inquisition."
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	head_position = 1
+	selection_color = "#23742a"
+	department_flag = SEC|COM
+	req_admin_notify = TRUE
+	social_class = SOCIAL_CLASS_MAX
+	announced = 0
+	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
+	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
+	minimal_player_age = 19
+	ideal_character_age = 40
+	outfit_type = /decl/hierarchy/outfit/job/kasrkin
+	alt_titles = null
+	latejoin_at_spawnpoints = 1
+	auto_rifle_skill = 13
+	semi_rifle_skill = 13
+	sniper_skill = 13
+	shotgun_skill = 13
+	lmg_skill = 13
+	smg_skill = 13
+	cultist_chance = 7
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Corporal [current_name]")
+		H.add_stats(rand(18,20), rand(16,18), rand(18,19), rand(10,15))
+		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.assign_random_quirk()
+		H.witchblood()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Kasrkin serving as an agent to the Imperial Guard Sergeant on behalf of your regiment, while expected to follow orders you ultimately serve the Astra Militarum and the memory of Cadia to whom you are loyal above all else. You unlike most veterans of the Astra Militarum are likely experienced and knowledgeable enough about Chaos to not be drinking the kool aid the Imperium gives to it's soldiers and instead serve because of your true understanding of what The God Emperor and all humanity stand against...</font></b></span>")
+
 
 // Commissar
 
@@ -509,6 +557,29 @@ datum/job/ig/bullgryn
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
+/decl/hierarchy/outfit/job/kasrkin
+	name = OUTFIT_JOB_NAME("Kasrkin")
+	uniform = /obj/item/clothing/under/cadian_uniform
+	suit = /obj/item/clothing/suit/armor/kasrkin
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/device/flashlight/lantern
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/kasrkin
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadian
+	id = /obj/item/card/id/dog_tag/guardsman
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/energy/las/hotshot/krieg //Hotshots are annoyingly common, makes them standout more.
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/cell/lasgun/hotshot = 3,
+	)
+
 /decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Cadian Guardsman")
 	uniform = /obj/item/clothing/under/cadian_uniform
@@ -528,7 +599,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -553,7 +623,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel/krieg = 1
@@ -578,7 +647,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -600,7 +668,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c556/ap = 1,
 	/obj/item/ammo_magazine/c556/ms = 2,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -626,7 +693,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -654,7 +720,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08/ms = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
@@ -678,7 +743,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
@@ -702,7 +766,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -728,7 +791,6 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/grenade/frag = 1,
 	/obj/item/grenade/frag/high_yield/krak = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
@@ -775,75 +837,6 @@ datum/job/ig/bullgryn
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
 	/obj/item/grenade/frag = 1,
-	)
-
-// chaos spec
-
-/decl/hierarchy/outfit/job/watchman/sharpshooter
-	name = OUTFIT_JOB_NAME("Cadian Plasmagunner")
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = null
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/heretichood/alt
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/plasma = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-
-/decl/hierarchy/outfit/job/watchman/sharpshooter/valhalla
-	name = OUTFIT_JOB_NAME("Valhallan Heavy Autogunner")
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/gun/projectile // pistol
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/heretichood/alt
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket =  null
-	suit_store = /obj/item/gun/projectile/automatic/heavystubber
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/device/flashlight/lantern = 1
-	)
-
-/decl/hierarchy/outfit/job/watchman/guardsman/catachan
-	name = OUTFIT_JOB_NAME("Catachan Flamer")
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	head = /obj/item/clothing/head/heretichood/alt
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/extinguisher
-	gloves = null
-	shoes = /obj/item/clothing/shoes/jackboots/catachan
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/flamer
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	backpack_contents = list(
-	/obj/item/ammo_magazine/flamer = 3,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
 
 // Medicae
@@ -903,9 +896,6 @@ datum/job/ig/bullgryn
 	/obj/item/clothing/glasses/cadiangoggles = 1,
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
-
-
-
 
 // Sniper
 
@@ -975,8 +965,7 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/projectile/heavysniper
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
-	/obj/item/storage/box/sniperammo = 2,
-	/obj/item/ammo_casing/a145/apds = 2,
+	/obj/item/storage/box/sniperammo/apds = 4,
 	/obj/item/stack/thrones2/five = 1
 	)
 
@@ -1164,14 +1153,13 @@ datum/job/ig/bullgryn
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = null
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
+	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
 	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/ammo_magazine/c556/ap = 3,
 	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones2/five = 1
 	)
 
 
