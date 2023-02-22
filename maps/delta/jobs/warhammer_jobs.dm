@@ -31,6 +31,7 @@
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
 	/datum/job/marshal,
+	/datum/job/kasrkin,
 	/datum/job/progena,/*
 	/datum/job/preacher, turn preacher into pilgrim fate */
 	/datum/job/underboss,
