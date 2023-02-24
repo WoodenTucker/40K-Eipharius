@@ -203,6 +203,16 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/guardhelmet/patrol
+	name = "Enforcer Cap"
+	desc = "A patrol cap worn by Messina Enforcers."
+	icon_state = "enforcerhat"
+	item_state = "enforcerhat"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 25, bio = 25, rad = 10) // Lucky Hat.
+	siemens_coefficient = 0.6
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
 	name = "Magistratum Arbitrator Helmet"
 	desc = "The Arbitrator Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Arbitrator's both to show rank and for intimidation, It is painted in a dark blue colour."

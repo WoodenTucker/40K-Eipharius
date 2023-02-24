@@ -142,14 +142,14 @@
 	name = "flak helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "guard"
-	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 0, rad = 10)
+	armor = list(melee = 25, bullet = 30, laser = 30, energy = 25, bomb = 25, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/head/helmet/scion
 	name = "scion helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "helmetNVG"
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 0, rad = 10)
+	armor = list(melee = 35, bullet = 40, laser = 40, energy = 35, bomb = 35, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 	sales_price = 25
 
