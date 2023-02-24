@@ -20,28 +20,6 @@
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
-/decl/hierarchy/outfit/job/kasrkin
-	name = OUTFIT_JOB_NAME("Veteran Kasrkin")
-	uniform = /obj/item/clothing/under/rank/principalagent
-	suit = /obj/item/clothing/suit/armor/kasrkin
-	back = /obj/item/storage/backpack/satchel/warfare
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/kasrkin
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadian
-	id = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/headset_service
-	r_ear = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/hotshot
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/cell/lasgun/hotshot = 2,
-	)
-
 /decl/hierarchy/outfit/job/scion
 	name = OUTFIT_JOB_NAME("Tempestus Scion")
 	uniform = /obj/item/clothing/under/rank/principalagent

@@ -81,6 +81,11 @@
 	cost = 55
 	item_path = /obj/item/gun/projectile/shotgun/pump/voxlegis
 
+/datum/cargo_entry/weapon/shotgun2
+	name = "Belle Magrave Shotgun"
+	cost = 65
+	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
+
 /datum/cargo_entry/weapon/mk22
 	name = "Mk22 Autogun"
 	cost = 46
@@ -135,6 +140,11 @@
 	name = "Locke Bolter"
 	cost = 190
 	item_path = /obj/item/gun/projectile/boltrifle/lockebolter
+
+/datum/cargo_entry/weapon/drusianbolter
+	name = "Drusian Bolter"
+	cost = 230
+	item_path = /obj/item/gun/projectile/boltrifle/lockebolter/drusian
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"

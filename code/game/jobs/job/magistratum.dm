@@ -176,7 +176,7 @@
 
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Planetary Enforcer")
-	head = null
+	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
@@ -187,7 +187,7 @@
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/headset_cargo
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
@@ -204,7 +204,7 @@
 
 /decl/hierarchy/outfit/job/ig/marshal
 	name = OUTFIT_JOB_NAME("Planetary Marshal")
-	head = null
+	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
 	uniform = /obj/item/clothing/under/rank/marshal
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
@@ -240,7 +240,7 @@
 	belt = /obj/item/gun/energy/las/laspistol/shitty
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
-	l_ear = /obj/item/device/radio/headset/headset_cargo
+	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
 	/obj/item/handcuffs = 1,
@@ -267,16 +267,15 @@
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	belt = /obj/item/gun/projectile/necros
+	belt = /obj/item/gun/projectile/bolter_pistol
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
-	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
+	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	backpack_contents = list( // 1 stun 1 buck box
 	/obj/item/handcuffs = 1,
-	/obj/item/ammo_magazine/c44 = 2,
-	/obj/item/ammo_box/shotgun/stunshell = 1,
-	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/ammo_box/shotgun/msslug = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
 	/obj/item/stack/thrones2/twenty = 1,
 	)
 

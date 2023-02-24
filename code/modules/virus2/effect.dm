@@ -254,56 +254,28 @@
 	chance_max = 0
 	allow_multiple = 1
 
-/datum/disease2/effect/plague4
-	name = "Nurgle Plague(INSTANT DEATH)"
-	stage = 1
-	badness = VIRUS_EXOTIC
-	chance_max = 99
-	allow_multiple = 1
-	delay = 5 SECONDS
-	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		if (prob(20))
-			new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
-			mob.gib()
-
-/datum/disease2/effect/plague3
-	name = "Nurgle Plague Part 3"
-	stage = 1
-	badness = VIRUS_EXOTIC
-	chance_max = 99
-	allow_multiple = 1
-	delay = 30 SECONDS
-	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		sleep(30)
-		if (prob(50))
-			mob.apply_damage(30, BURN)
-		sleep(50)
-		if (prob(100) && !mob.wear_mask)
-			sleep(100)
-		if (prob(20))
-			new /mob/living/simple_animal/hostile/smalldemon/plague(mob.loc)
-			mob.gib()
-
-
 /datum/disease2/effect/plague2
 	name = "Nurgle Plague Part 2"
-	stage = 1
+	stage = 2
 	badness = VIRUS_EXOTIC
 	chance_max = 99
 	allow_multiple = 1
 	delay = 30 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		if (prob(70))
+		if (prob(5))
 			mob.emote("cry")
 			to_chat(mob, "<span class='warning'>Mucous runs down the back of your throat, it feels almost like worms crawling inside your throat.</span>")
-		sleep(30)
-		if (prob(50))
+		sleep(15)
+		if (prob(20))
 			mob.apply_damage(5, BURN)
-		sleep(60)
-		if (prob(100) && !mob.wear_mask)
-			sleep(80)
-		if (prob(10))
-			mob.apply_damage(22, BURN)
+		if (prob(7))
+			mob.bowels = rand(0, 840)
+			mob.bladder = rand(0, 840)
+			mob.custom_pain("Your skin hurts a bit.", 20)
+			mob.apply_damage(5, BRUTE)
+		sleep(15)
+		if (prob(3))
+			mob.apply_damage(5, BURN)
 
 /datum/disease2/effect/plague1
 	name = "Nurgle Plague Part 1"
@@ -313,17 +285,15 @@
 	allow_multiple = 1
 	delay = 15 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		sleep(30)
-		if (prob(100) && !mob.wear_mask)
-			sleep(80)
-		if (prob(10))
-			mob.bowels = rand(0, 900)
-			mob.bladder = rand(0, 900)
+		sleep(15)
+		if (prob(5))
+			mob.bowels = rand(0, 600)
+			mob.bladder = rand(0, 600)
 			mob.custom_pain("Your skin hurts a bit.", 20)
-			mob.apply_damage(6, BRUTE)
-		sleep(30)
-		if (prob(20))
-			mob.emote("yawn")
+			mob.apply_damage(5, BRUTE)
+		sleep(15)
+		if (prob(5))
+			mob.emote("cough")
 
 // to do; bloodpox(coughing blood). long cycles. brute and tox damage. slow. laughing plague.
 

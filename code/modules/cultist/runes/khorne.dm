@@ -24,7 +24,7 @@
 		if(2)
 			new /obj/item/melee/trench_axe(get_turf(rune))
 		if(3)
-			new /obj/item/melee/sword/demon(get_turf(rune))
+			new /obj/item/melee/sword/chaosknife(get_turf(rune))
 		if(4)
 			new /obj/item/melee/sword/choppa(get_turf(rune))
 		if(5)

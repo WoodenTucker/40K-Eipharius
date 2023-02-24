@@ -427,15 +427,16 @@
 					P.dispersion += wrong_gun_class_mod
 
 	if(user.chem_effects[CE_PAINKILLER] > 100)
-		P.dispersion += 10
+		P.dispersion += 5
 		P.accuracy -= 3
 
 	if(user.horror_loop)//They're freaking the fuck out, make it hard to aim.
-		P.dispersion += 5
+		P.dispersion += 2
 		P.accuracy -= 3
 
 	if(user.combat_mode)
 		P.accuracy += 1
+		P.dispersion -= 2
 
 	if(!user.combat_mode)
 		P.dispersion += mod

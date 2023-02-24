@@ -358,7 +358,7 @@
 	weapon_speed_delay = 8
 	edge = 1
 	sharp = 1
-	block_chance = 20 
+	block_chance = 15
 	sales_price = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_LARGE

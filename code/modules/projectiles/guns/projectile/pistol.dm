@@ -6,8 +6,8 @@
 	item_state = "pistol"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	force = 10
-	accuracy = 0
-	one_hand_penalty = 5
+	accuracy = 0.5
+	one_hand_penalty = 0
 	move_delay = 5
 	fire_delay = 6
 	sales_price = 10
@@ -24,7 +24,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
 
-	accuracy = 1
+	accuracy = 0.5
 
 /obj/item/gun/projectile/pistol/pewter/update_icon()
 	..()
@@ -45,7 +45,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc9mm
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
 	sales_price = 5
-	accuracy = 0
+	accuracy = 0.4
 
 /obj/item/gun/projectile/pistol/kieji/update_icon()
 	..()
@@ -60,7 +60,7 @@
 	icon_state = "kiejistub"
 	item_state = "pistol"
 
-	accuracy = -0.5
+	accuracy = 0
 	fire_delay = 2
 	sales_price = 5
 
@@ -108,7 +108,7 @@
 
 	fire_delay = 3
 	burst = 2
-	accuracy = 1
+	accuracy = 0.7
 	sales_price = 25
 
 
@@ -131,7 +131,7 @@
 	allowed_magazines = /obj/item/ammo_magazine/mc9mm
 	caliber = ".45"
 	auto_eject = 1
-	accuracy = -0.5 //not the best stub pistol but still pretty good
+	accuracy = 0.2 //not the best stub pistol but still pretty good
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	jammed_icon = "talon-j"
 
@@ -139,8 +139,8 @@
 	name = "Renegade Pistol"
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
-	one_hand_penalty = 0.5
-	accuracy = 2
+	one_hand_penalty = 0
+	accuracy = 1
 	fire_delay = 0.5
 	silenced = 1
 	force = 20
@@ -171,7 +171,7 @@
 	icon_state = "slugga"
 	caliber = ".75"
 	can_jam = TRUE //yes it can jam
-	accuracy = -4
+	accuracy = -0.5
 	force = 20
 	move_delay = 1.5
 	load_method = MAGAZINE
@@ -193,7 +193,7 @@
 	item_state = "bpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -0.8
+	accuracy = 0
 	fire_delay = 1.8
 	move_delay = 1.5
 	load_method = MAGAZINE
@@ -216,7 +216,7 @@
 	item_state = "gpistol"
 	force = 10
 	caliber = ".75"
-	accuracy = -1
+	accuracy = -0.4
 	fire_delay = 2
 	move_delay = 5.0 // make it shit and mostly ornamental
 	load_method = MAGAZINE
@@ -238,8 +238,8 @@
 	item_state = "bpistol"
 	force = 15
 	caliber = ".75"
-	accuracy = -0.3 //VERY well maintained--maintened? eh, you get what i mean!
-	fire_delay = 1.4
+	accuracy = 0.3 //VERY well maintained--maintened? eh, you get what i mean!
+	fire_delay = 1.5
 	move_delay = 1.3
 	sales_price = 58
 
@@ -258,7 +258,7 @@
 	loaded_icon = "sisterbpistol"
 	force = 20 //i don't think that De'az bolt pistols can have bayonets attached to them, but, imma leave this in, oh also, the Mars Pattern Mark II Scourge is the one with a bayonet.
 	sharp = 1
-	accuracy = 2.2 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
+	accuracy = 0.6 //normally only 2 of those spawn on the map, one with the sisters, and one on a room in the caves, and they can't even be fabricated
 	fire_delay = 1.5 //fastaa!
 	move_delay = 1.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
