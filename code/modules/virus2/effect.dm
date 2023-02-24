@@ -262,19 +262,19 @@
 	allow_multiple = 1
 	delay = 30 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
-		if (prob(70))
+		if (prob(5))
 			mob.emote("cry")
 			to_chat(mob, "<span class='warning'>Mucous runs down the back of your throat, it feels almost like worms crawling inside your throat.</span>")
 		sleep(15)
-		if (prob(50))
+		if (prob(20))
 			mob.apply_damage(5, BURN)
 		if (prob(7))
-			mob.bowels = rand(530, 940)
-			mob.bladder = rand(530, 940)
+			mob.bowels = rand(0, 840)
+			mob.bladder = rand(0, 840)
 			mob.custom_pain("Your skin hurts a bit.", 20)
 			mob.apply_damage(5, BRUTE)
 		sleep(15)
-		if (prob(10))
+		if (prob(3))
 			mob.apply_damage(5, BURN)
 
 /datum/disease2/effect/plague1
@@ -286,13 +286,13 @@
 	delay = 15 SECONDS
 	activate(var/mob/living/carbon/human/mob,var/multiplier)
 		sleep(15)
-		if (prob(10))
-			mob.bowels = rand(530, 940)
-			mob.bladder = rand(530, 940)
+		if (prob(5))
+			mob.bowels = rand(0, 600)
+			mob.bladder = rand(0, 600)
 			mob.custom_pain("Your skin hurts a bit.", 20)
 			mob.apply_damage(5, BRUTE)
 		sleep(15)
-		if (prob(20))
+		if (prob(5))
 			mob.emote("cough")
 
 // to do; bloodpox(coughing blood). long cycles. brute and tox damage. slow. laughing plague.

@@ -358,7 +358,7 @@
 	one_hand_penalty = 1.4
 	accuracy = 0.5
 	fire_delay= 3
-	sales_price = 30
+	sales_price = 20
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"

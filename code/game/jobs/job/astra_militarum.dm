@@ -416,8 +416,8 @@ datum/job/ig/bullgryn
 	title = "Kasrkin"
 	supervisors = "Your Sergeant, The Commissar and The Inquisition."
 	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0 // Disabled. Kasrkin roundstart presence often result in KOS fights with friendly lateparties.
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#23742a"
 	department_flag = SEC|COM
@@ -534,7 +534,7 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/whiteshield
 	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/guardsman
+	suit = /obj/item/clothing/suit/armor/whiteshield
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
