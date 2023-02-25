@@ -858,6 +858,9 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 		eye_damage(L, get_severity(amount)*3)
 		external_damage(L, get_severity(amount)*3)
 		open_wound_damage(L, get_severity(amount)*3)
+		L.adjust_fire_stacks(3)
+		L.IgniteMob()
+
 //green cross
 /datum/reagent/toxin/chlorine_gas
 	name = "Chlorine Gas"
