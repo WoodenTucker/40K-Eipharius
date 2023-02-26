@@ -176,7 +176,7 @@
 
 /decl/hierarchy/outfit/job/ig/enforcer
 	name = OUTFIT_JOB_NAME("Planetary Enforcer")
-	head = null
+	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
@@ -204,7 +204,7 @@
 
 /decl/hierarchy/outfit/job/ig/marshal
 	name = OUTFIT_JOB_NAME("Planetary Marshal")
-	head = null
+	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
 	uniform = /obj/item/clothing/under/rank/marshal
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
