@@ -6,13 +6,13 @@
 	opacity = 0
 	plane = EFFECTS_BELOW_LIGHTING_PLANE
 	layer = ABOVE_PROJECTILE_LAYER
-	time_to_live = 300 //Overrode the time_to_live code, since it was buggy
+	time_to_live = 300
 	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GRILLE | PASS_FLAG_GLASS //PASS_FLAG_GLASS is fine here, it's just so the visual effect can "flow" around glass
 	var/splash_amount = 10 //atoms moving through a smoke cloud get splashed with up to 10 units of reagent
 	var/turf/destination
 
 /obj/effect/effect/smoke/chem/New(var/newloc, smoke_duration, turf/dest_turf = null, icon/cached_icon = null)
-	//time_to_live = smoke_duration
+	time_to_live = smoke_duration
 
 	..()
 
@@ -212,7 +212,7 @@
 				continue
 			if(T in targetTurfs)
 				addtimer(CALLBACK(src, .proc/spawnSmoke,T, I, range), 0)
-
+					
 
 //------------------------------------------
 // Randomizes and spawns the smoke effect.
@@ -276,18 +276,23 @@
 
 	return
 
-
-/datum/effect/effect/system/smoke_spread/chem/payload
-	smoke_type = /obj/effect/effect/smoke/chem/payload
-
 /obj/effect/effect/smoke/chem/payload
-	time_to_live = 5000
+	var/smoke_duration = 500
+	//random_destination = TRUE
+	splash_amount = 10
+
+	New(var/newloc, var/_spread = 7, var/_destination = null)
+		..(spread = _spread, dest_turf = _destination)
+
+		/*for (var/datum/reagent/r in reagents.reagent_list)
+			color = r.color
+			alpha = r.alpha*/
 
 /obj/effect/effect/smoke/chem/payload/New()
 	..()
+	reagents.add_reagent(/datum/reagent/toxin/chlorine_gas, 500)
 
 /obj/effect/effect/smoke/chem/payload/chlorine_gas
-
 
 /obj/effect/effect/smoke/chem/payload/chlorine_gas/New()
 	..()
