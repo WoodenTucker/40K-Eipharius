@@ -741,18 +741,8 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+
 			if(6)
-				if(prob(25))
-					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] carefully carves the ingot into a blessed unit of Silver! Now take the ingot and dip it into the holy oil!")
-					src.rubtheoils = 1
-					src.name = "Silver Ingot (Carved Machine Silver)"
-					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-				else
-					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
-					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
-			if(7)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] carefully carves the ingot into a blessed .338 Lapua Magnum Magazine! Now take the ingot and dip it into the holy oil!")
@@ -764,6 +754,18 @@
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
+			if(7)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed unit of Silver! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Silver Ingot (Carved Machine Silver)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+					
 			if(8)
 				if(prob(25))
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
@@ -968,21 +970,21 @@
 			if("Necros Revolver")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Necros Revolver.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 5
+				src.whatwemaking = 4
 				src.ismarked = 1
 				src.name = "Cobolt Ingot (Necros Revolver)"
 
 			if("Landmine")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Landmine.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 6
+				src.whatwemaking = 5
 				src.ismarked = 1
 				src.name = "Cobolt Ingot (Landmine)"
 
 			if("Mercy Chainsword")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Mercy Chainsword")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 7
+				src.whatwemaking = 6
 				src.ismarked = 1
 				src.name = "Cobolt Ingot (Mercy Chainsword)"
 
