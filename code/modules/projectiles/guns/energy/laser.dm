@@ -427,11 +427,11 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	icon_state = "semip"
 	fire_delay = 3
 	charge_cost = 110
-	sales_price = null
+	sales_price = 8
 	charge_meter = FALSE
 	cell_type = /obj/item/cell/lasgun/small || /obj/item/cell/lasgun
 	ammoType =  /obj/item/cell/lasgun
-	sales_price = 2
+	sales_price = 8
 
 /obj/item/gun/energy/las/laspistol/militarum
 	name = "Kantrael MG Laspistol"

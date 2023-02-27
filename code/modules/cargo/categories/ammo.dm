@@ -121,21 +121,6 @@
 	cost = 40
 	item_path = /obj/item/ammo_magazine/lp338/needler
 
-/datum/cargo_entry/ammo/c99
-	name = "9mm Pistol Magazine"
-	cost = 3
-	item_path = /obj/item/ammo_magazine/mc9mm
-
-/datum/cargo_entry/ammo/c99/ap
-	name = "AP 9mm Pistol Magazine"
-	cost = 5
-	item_path = /obj/item/ammo_magazine/mc9mm/ap
-
-/datum/cargo_entry/ammo/c99/ms
-	name = "MS 9mm Pistol Magazine"
-	cost = 6
-	item_path = /obj/item/ammo_magazine/mc9mm/ms
-
 /datum/cargo_entry/ammo/c45
 	name = ".45 Pistol Magazine"
 	cost = 4
@@ -211,7 +196,17 @@
 	cost = 20
 	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine
 
-/datum/cargo_entry/ammo/boltpistolmag
+/datum/cargo_entry/ammo/boltriflemag
 	name = "Bolt Rifle Magazine"
 	cost = 30
 	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine
+
+/datum/cargo_entry/ammo/boltpistolmagkp
+	name = "KP Bolt Pistol Magazine"
+	cost = 40
+	item_path = /obj/item/ammo_magazine/bolt_pistol_magazine/kp
+
+/datum/cargo_entry/ammo/boltriflemagkp
+	name = "KP Bolt Rifle Magazine"
+	cost = 60
+	item_path = /obj/item/ammo_magazine/bolt_rifle_magazine/kp

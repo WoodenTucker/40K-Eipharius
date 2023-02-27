@@ -773,6 +773,21 @@ datum/job/ig/bullgryn
 //chaos bad boy guard
 
 /decl/hierarchy/outfit/job/bloodpact
+	uniform = /obj/item/clothing/under/rank/victorian/black
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
+	mask = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/device/flashlight/lantern
+	backpack_contents = list(
+	/obj/item/gun/energy/las/laspistol = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	)
+
+/decl/hierarchy/outfit/job/bloodpact2 // Old
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare

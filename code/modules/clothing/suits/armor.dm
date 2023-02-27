@@ -922,7 +922,7 @@ obj/item/clothing/suit/armor
 	item_state = "genetor"
 	unacidable = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun) //TODO make this more applicable to genetor
-	armor = list(melee = 45, bullet = 45, laser = 70, energy = 40, bomb = 60, bio = 100, rad = 100) //while it is magos armor, it should be a bit weaker than the dominus armor
+	armor = list(melee = 45, bullet = 45, laser = 60, energy = 40, bomb = 40, bio = 100, rad = 100) //while it is magos armor, it should be a bit weaker than the dominus armor
 	sales_price = 40
 	canremove = 0
 	action_button_name = "Toggle Hood"
@@ -944,7 +944,7 @@ obj/item/clothing/suit/armor
 	canremove = 0
 	unacidable = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 60, laser = 80, energy = 30, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 50, laser = 60, energy = 30, bomb = 40, bio = 100, rad = 100)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -960,7 +960,7 @@ obj/item/clothing/suit/armor
 	canremove = 0
 	unacidable = 1
 	allowed = list(/obj/item/organ/external/head)
-	armor = list(melee = 60, bullet = 50, laser = 70, energy = 30, bomb = 60, bio = 100, rad = 100)
+	armor = list(melee = 50, bullet = 50, laser = 50, energy = 30, bomb = 30, bio = 100, rad = 100)
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -976,7 +976,7 @@ obj/item/clothing/suit/armor
 	canremove = 0
 	unacidable = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 70, bullet = 78, laser = 78, energy = 60, bomb = 60, bio = 100, rad = 180) //It's ceramite plates bolted directly to their body. They're essentially a walking siege engine, at the cost of being as slow as one.
+	armor = list(melee = 65, bullet = 65, laser = 65, energy = 60, bomb = 45, bio = 100, rad = 180) //It's ceramite plates bolted directly to their body. They're essentially a walking siege engine, at the cost of being as slow as one.
 	sales_price = 30
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -988,7 +988,7 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/storage/hooded/genestealer
 	name = "tyranid chitin"
 	desc = "The hide of a Tyranid Genestealer"
-	armor = list(melee = 30, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 50, bullet = 40, laser = 40, energy = 20, bomb = 30, bio = 100, rad = 100)
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0

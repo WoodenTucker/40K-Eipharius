@@ -242,7 +242,7 @@
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 7
-	sales_price = 300
+	sales_price = 200
 
 // NON MATERIAL WEAPONS //
 
@@ -376,7 +376,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	sales_price = 15
+	sales_price = 0
 	weapon_speed_delay = 9
 
 /obj/item/melee/classic_baton/daemonhammer

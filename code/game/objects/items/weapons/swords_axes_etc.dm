@@ -214,7 +214,7 @@
 	icon_state = "sabre"
 	item_state = "sabre"
 	block_chance = 65
-	sales_price = 35
+	sales_price = 0
 	armor_penetration = 5
 
 /obj/item/melee/sword/choppa
@@ -233,7 +233,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	sales_price = 2
+	sales_price = 0
 	weapon_speed_delay = 9
 
 ///////////////

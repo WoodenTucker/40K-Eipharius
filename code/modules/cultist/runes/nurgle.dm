@@ -17,7 +17,7 @@
 
 /datum/rune_recipe/nurgle/toughen
 	name = "Toughen Rite"
-	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/external/head,)
+	ingredients = list(/mob/living/simple_animal/hostile/retaliate/rat, /obj/item/organ/external/head)
 	effect_path = /datum/heretic_effect/tough
 
 /datum/rune_recipe/nurgle/nganga

@@ -483,6 +483,8 @@
 	accuracy = 1
 	sales_price = 26
 
+	caliber = "a763"
+	ammo_type = /obj/item/ammo_casing/a762
 	magazine_type = /obj/item/ammo_magazine/a762
 	allowed_magazines = /obj/item/ammo_magazine/a762
 
@@ -508,6 +510,8 @@
 	desc = "An advanced Scipio Pattern Rifle, this one has different fire modes and relative accuracy!"
 	icon_state = "commando"
 	item_state = "battlerifle"
+	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
 	wielded_item_state = "combatrifle-wielded"
@@ -599,7 +603,7 @@
 	burst = 1
 	fire_delay = 1.4
 	one_hand_penalty = 2.6 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 0
+	sales_price = 25
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
