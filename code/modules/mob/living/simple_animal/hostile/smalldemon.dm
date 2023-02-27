@@ -274,6 +274,7 @@
 	response_disarm = "shoves"
 	response_harm   = "mauls"
 	attacktext = "bites"
+	faction = "Nurgle"
 	see_in_dark = 6
 
 	speed = 1.6

@@ -36,7 +36,7 @@
 	melee_damage_upper = 120
 	melee_damage_lower = 90
 	attacktext = "torn"
-	faction = "Chaos"
+	faction = "Nurgle"
 
 	speed = 1.5
 
@@ -62,6 +62,6 @@
 	harm_intent_damage = 60
 	melee_damage_upper = 70
 	melee_damage_lower = 50
-	faction = "Chaos"
+	faction = "Nurgle"
 
 	speed = 1.5

@@ -164,7 +164,7 @@
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
 	desc = "The hide of a Tyranid Genestealer"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 15, bomb = 30, bio = 100, rad = 100)
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0

@@ -473,7 +473,7 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You,  a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
 //loadouts below here
 /decl/hierarchy/outfit/job/penitent
@@ -671,8 +671,8 @@ Pilgrim Fate System
  //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
 	switch(classchoice)
 		if("Bruiser")
-			U.add_stats(rand(17,20), rand(17,20), rand(17,19), rand (12,16))
-			U.add_skills(rand(8,10),rand(5,6),rand(5,7),rand(1,3),rand(1,6)) //melee, ranged, med, eng, surgery
+			U.add_stats(rand(17,20), rand(14,17), rand(17,19), rand (12,16))
+			U.add_skills(rand(8,10),rand(5,6),rand(1,3),rand(2,6),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/goliathplate, slot_wear_suit)
@@ -688,7 +688,7 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Hitman")
-			U.add_stats(rand(14,16), rand(14,16), rand(18,20), rand (14,16)) //ex criminal, not fed very well, but random stats
+			U.add_stats(rand(14,17), rand(15,17), rand(18,20), rand (14,16)) //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)

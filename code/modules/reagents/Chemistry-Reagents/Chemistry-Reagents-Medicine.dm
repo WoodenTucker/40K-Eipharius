@@ -802,12 +802,7 @@
 	flags = IGNORE_MOB_SIZE
 
 /datum/reagent/tr/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
-	if(alien != IS_DIONA)
-		M.heal_organ_damage(300 * removed, 300 * removed)
-
-
-
-
+	M.heal_organ_damage(10 * removed, 10 * removed)
 
 //WIP
 /datum/reagent/satrophine

@@ -18,11 +18,11 @@
 	icon_state = "handgun7"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
-	caliber = "9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
 	accuracy = 0.5
 
@@ -39,12 +39,12 @@
 	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
 	icon_state = "kieji"
 	item_state = "pistol"
-	caliber = "9mm"
-	ammo_type = /obj/item/ammo_casing/c9mm
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
-	sales_price = 5
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
+	sales_price = 10
 	accuracy = 0.4
 
 /obj/item/gun/projectile/pistol/kieji/update_icon()
@@ -62,7 +62,7 @@
 
 	accuracy = 0
 	fire_delay = 2
-	sales_price = 5
+	sales_price = 12
 
 /obj/item/gun/projectile/pistol/kieji/snub/update_icon()
 	..()
@@ -126,10 +126,11 @@
 	w_class = ITEM_SIZE_SMALL
 	fire_delay = 5
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
-	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	ammo_type = /obj/item/ammo_casing/c45
 	caliber = ".45"
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 	auto_eject = 1
 	accuracy = 0.2 //not the best stub pistol but still pretty good
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
@@ -150,10 +151,11 @@
 	name = "Genmessor stubpistol"
 	icon_state = "sheetp"
 	w_class = ITEM_SIZE_NORMAL
-	caliber = "9mm"
+	ammo_type = /obj/item/ammo_casing/c45
+	caliber = ".45"
 	load_method = MAGAZINE
-	magazine_type = /obj/item/ammo_magazine/mc9mm
-	allowed_magazines = /obj/item/ammo_magazine/mc9mm
+	magazine_type = /obj/item/ammo_magazine/mc45mm
+	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
 /obj/item/gun/projectile/genmessorp/update_icon()
 	..()
@@ -263,7 +265,7 @@
 	move_delay = 1.5 //honestly this is kinda of useless
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	sales_price = 58
+	sales_price = 70
 
 /obj/item/gun/projectile/bolter_pistol/sisterofbattle/update_icon()
 	..()

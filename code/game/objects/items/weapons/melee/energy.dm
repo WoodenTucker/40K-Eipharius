@@ -334,7 +334,7 @@
 	sharp = TRUE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE //we have a power sword belt sprite, but im not going to code it in just yet, alright? enough codin' today
 	block_chance = 33
-	sales_price = 120
+	sales_price = 0
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
