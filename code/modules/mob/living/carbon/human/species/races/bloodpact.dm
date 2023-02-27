@@ -40,7 +40,7 @@
 
 /datum/species/bloodpact/handle_post_spawn(var/mob/living/carbon/human/H)
 	H.age = rand(20,180)//Random age for kiddos.
-	to_chat(H, "<big><span class='warning'>You are veterans of the Bloodpact sent to Eipharius to enact the Anarch's will, find and co-ordinate with the local </span></big>")
+	to_chat(H, "<big><span class='warning'>You are veterans of the Bloodpact sent to Eipharius to enact the Anarch's will, find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet.</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 /mob/living/carbon/human
