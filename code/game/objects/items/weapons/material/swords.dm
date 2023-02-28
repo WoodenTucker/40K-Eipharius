@@ -10,8 +10,8 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE //Weight class, Normal is that of a box. Anyway, this makes swords weaker and slower at attacking, if you set it too high, it will become useless, scale damage with WEIGHT CLASS
-	force = 45
-	force_wielded = 60
+	force = 30
+	force_wielded = 40
 	block_chance = 35
 	armor_penetration = 15
 	// force_divisor = 0.8 // Do not turn this back on.
@@ -387,11 +387,11 @@
 	wielded_icon = "thunder_hammer-w"
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE //fat fuck is slow AF
-	str_requirement = 18
-	force = 40 //item size makes this weapon slow AF and clunky, it needs damage to be good
+	str_requirement = 15
+	force = 35 //item size makes this weapon slow AF and clunky, it needs damage to be good
 	sharp = 1
 	edge = 1
-	force_wielded = 60
+	force_wielded = 45
 	armor_penetration = 100
 	block_chance = 30
 	grab_sound_is_loud = TRUE

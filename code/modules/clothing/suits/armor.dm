@@ -610,8 +610,8 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/armor/guardsman/bloodpact
-	name = "Khornate Armor"
-	desc = "War torn and suited to savage needs. This is the armor of a khornate warrior. It has certainly seen blood flown upon it."
+	name = "Sekite Armor"
+	desc = "War torn and suited to savage needs. This is the armor of a Sekite warrior. It has certainly seen blood flown upon it."
 	icon_state = "heretmil"
 	item_state = "heretmil"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)

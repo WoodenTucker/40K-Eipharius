@@ -14,8 +14,8 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_LARGE //Weight class, Normal is that of a box. Anyway, this makes swords weaker and slower at attacking, if you set it too high, it will become useless, scale damage with WEIGHT CLASS
-	force = 45
-	force_wielded = 60
+	force = 30
+	force_wielded = 40
 	block_chance = 35
 	armor_penetration = 15
 	sharp = 1 //sharp or blunt, blunt causes broken bones, sharp causes organ damage and extra bleeding.

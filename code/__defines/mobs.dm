@@ -288,7 +288,7 @@
 #define SPECIES_ORK_BOSS "Warboss"
 #define SPECIES_KROOT "Kroot"
 #define SPECIES_TAU "Tau"
-#define SPECIES_BLOODPACT "Bloodpact"
+#define SPECIES_BLOODPACT "Sekites"
 #define SPECIES_SKITARII "Skitarii"
 #define SPECIES_ASTARTES "Astartes"
 #define SPECIES_TYRANID "Tyranids"

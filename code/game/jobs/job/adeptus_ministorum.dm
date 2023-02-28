@@ -457,8 +457,8 @@
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
@@ -478,9 +478,9 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/melee/chain/mercycs
-	r_hand = /obj/item/gun/projectile/automatic/flamer
+	r_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	backpack_contents = list(
-	/obj/item/ammo_magazine/flamer = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
@@ -504,8 +504,8 @@
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
@@ -529,8 +529,8 @@
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 4,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 2,
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare = 1,
 	/obj/item/clothing/mask/gas/explorer = 1,
 	/obj/item/device/flashlight/lantern = 1,
