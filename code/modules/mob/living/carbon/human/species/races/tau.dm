@@ -27,6 +27,7 @@
 	blood_color = "#4c0377"
 
 /datum/species/tau/handle_post_spawn(var/mob/living/carbon/human/H)
+	H.real_name = H.alternate_names[6]
 	H.age = rand(20,35)//Random age for kiddos.
 	if(H.f_style)//tau don't get beards.
 		H.f_style = "Shaved"

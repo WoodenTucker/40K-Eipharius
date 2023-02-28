@@ -221,9 +221,8 @@
 	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister Superior [current_name]")
+		H.fully_replace_character_name("Sister Superior [H.alternate_names[2]]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
 		//"BUT THEY ARE DIVINE!!!" don't care, Sister superior is human, stop simping, im still giving them very GOOD stats.
@@ -284,9 +283,8 @@
 	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Hospitaller [current_name]")
+		H.fully_replace_character_name("Hospitaller [H.alternate_names[2]]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(14,18), rand(10,14), rand(17,18)) //nice stats
 		H.add_skills(rand(6,8),rand(6,8),rand(8,10),rand(3,5),rand(9,11)) //melee, ranged, med, eng, surgery
@@ -336,9 +334,8 @@
 	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Novice [current_name]")
+		H.fully_replace_character_name("Novice [H.alternate_names[2]]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
 		H.add_skills(rand(5,7),rand(5,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery //same skills as cadet
