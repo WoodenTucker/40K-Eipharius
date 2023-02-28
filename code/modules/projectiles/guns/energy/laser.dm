@@ -450,8 +450,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 		)
 
 /obj/item/gun/energy/las/laspistol/militarum/bloodpact
-	name = "Bloodpact Laspistol"
-	desc = "A laspistol bearing the markings and colours of the Blood pact. Older in design and smaller, it is less efficient with it's lasgun cells than more modern variants."
+	name = "Strange Laspistol"
+	desc = "A laspistol bearing the markings and colours of the Sekites. Older in design and smaller, it is less efficient with it's lasgun cells than more modern variants."
 	icon_state = "bloodlaspistol"
 	accuracy = 0.2
 	charge_cost = 80

@@ -222,15 +222,15 @@
 
 //blood pact here for now
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1
-	name = "Chosen Khornate Combat Helmet"
-	desc = "Armored helmet of the blood god's chosen. KILL, MAIM, BURN!"
+	name = "Chosen Combat Helmet"
+	desc = "Armored helmet of the ruinous powers."
 	icon_state = "vraks2"
 	item_state = "vraks2"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
-	name = "Khornate Combat Helmet"
-	desc = "Armored helmet of a khornate cultist."
+	name = "Chosen Combat Helmet"
+	desc = "Armored helmet of a chaos cultist."
 	icon_state = "vraks3"
 	item_state = "vraks3"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
