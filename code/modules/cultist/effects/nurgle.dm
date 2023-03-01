@@ -27,11 +27,11 @@
 
 /datum/heretic_effect/tough/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.STAT_LEVEL(end) += 5
+	user.STAT_LEVEL(end) += 4
 
 /datum/heretic_effect/tough/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.STAT_LEVEL(end) -= 5
+	user.STAT_LEVEL(end) -= 4
 
 
 // Makes nurgle cultists more durable. Visible change so rather powerful. Maybe?
@@ -69,9 +69,9 @@
 		return FALSE
 	visible_message("[src]'s body covers their wounds with large puss-filled growths!")
 	adjustOxyLoss(-1)
-	adjustToxLoss(-1)
-	adjustBruteLoss(-4)
-	adjustFireLoss(-4)
+	adjustToxLoss(1)
+	adjustBruteLoss(-2)
+	adjustFireLoss(-1)
 	eye_blurry = 0
 	ear_deaf = 0
 	ear_damage = 0

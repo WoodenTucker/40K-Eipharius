@@ -563,7 +563,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	move_delay = 3
 	automatic = 1
 	firemodes = list()
-	accuracy = 2
+	accuracy = 1
 	max_shots = 60
 	projectile_type = /obj/item/projectile/bullet/bolterrifle
 	origin_tech = null

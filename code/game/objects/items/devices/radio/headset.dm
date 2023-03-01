@@ -219,14 +219,13 @@
 	ks1type = /obj/item/device/encryptionkey/red
 	ks2type = /obj/item/device/encryptionkey/heads/hop
 
-//unused rn
+//MAGISTRATUM
 /obj/item/device/radio/headset/headset_cargo
-	name = "supply radio headset"
+	name = "enforcer radio headset"
 	desc = "A headset used by the box pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/red
-	ks2type = /obj/item/device/encryptionkey/headset_cargo
+	ks1type = /obj/item/device/encryptionkey/headset_cargo
 
 //basic 'common' vox
 /obj/item/device/radio/headset/headset_service
@@ -244,8 +243,8 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "Marshal vox"
 	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
-	ks1type = /obj/item/device/encryptionkey/headset_sec
-	ks2type = /obj/item/device/encryptionkey/headset_com
+	ks1type = /obj/item/device/encryptionkey/headset_cargo
+	ks2type = /obj/item/device/encryptionkey/headset_sec
 	icon_state = "sec_headset"
 	item_state = "sec_headset"
 	slot_flags = SLOT_EARS

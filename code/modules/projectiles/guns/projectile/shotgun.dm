@@ -40,7 +40,7 @@
 	wielded_item_state = "wshotgun"
 	gun_type = GUN_SHOTGUN
 	move_delay= 2.6
-	one_hand_penalty = 4
+	one_hand_penalty = 1.5
 	accuracy = 0.5
 	fire_delay= 3
 	armor_penetration = 1 //melee???
@@ -148,7 +148,7 @@
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg'
 	wielded_item_state = "dshotgun1"
 	gun_type = GUN_SHOTGUN //ITS A SHOTGUN
-	one_hand_penalty = 3
+	one_hand_penalty = 1
 	burst_delay = 0
 	var/broke_open = FALSE
 	sales_price = 5
@@ -235,12 +235,11 @@
 	magazine_type = /obj/item/ammo_magazine/melta
 	allowed_magazines = /obj/item/ammo_magazine/melta
 	w_class = ITEM_SIZE_HUGE
-	force = 15 //ITS HEAVY
-	one_hand_penalty = 80 //who the fuck would try to use a meltagun with one hand?
+	force = 14
+	one_hand_penalty = 4
 	block_chance = 2 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = 3
+	accuracy = 2
 	fire_delay= 20
-	sales_price = 200 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
-
+	sales_price = 150

@@ -82,8 +82,8 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force = 15
-	agonyforce = 80 //stronger than a nighstick, but not blatantly OP of fucking course.
-	force_wielded = 20
+	agonyforce = 20 //stronger than a nighstick, but not blatantly OP of fucking course.
+	force_wielded = 16
 	block_chance = 20
 	w_class = ITEM_SIZE_SMALL
 	grab_sound_is_loud = TRUE
@@ -103,7 +103,7 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force = 20
-	force_wielded = 25
+	force_wielded = 21
 	armor_penetration = 15
 	block_chance = 20
 	sales_price = 39
@@ -142,12 +142,12 @@
 	item_state = "fuckingnothing"
 	item_flags = ITEM_FLAG_NODROP
 	attack_verb = list("slashed")
-	force = 21
-	force_wielded = 24
-	armor_penetration = 15
-	block_chance = 20
+	force = 20
+	force_wielded = 23
+	armor_penetration = 20
+	block_chance = 10
 	sales_price = 39
-	weapon_speed_delay = 5
+	weapon_speed_delay = 8
 
 /obj/item/melee/sword/zombie_clawl/dropped() //since nodrop is fucked this will deal with it for now.
 	..()
@@ -173,10 +173,10 @@
 	item_state = "kchainaxe"
 	wielded_icon ="kchainaxe"
 	str_requirement = 13
-	force = 50 // blood for the blood god. its strong,  but the shit block chance makes it balanced
-	force_wielded = 70
-	armor_penetration = 60
-	block_chance = 5
+	force = 32 // blood for the blood god. its strong,  but the shit block chance makes it balanced
+	force_wielded = 40
+	armor_penetration = 20
+	block_chance = 10
 	sharp = TRUE
 	w_class = ITEM_SIZE_HUGE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -199,8 +199,8 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 17
-	force = 50
-	force_wielded = 70 //warpsword
+	force = 30
+	force_wielded = 40 //warpsword
 	armor_penetration = 90
 	block_chance = 50 //may the warp guide your hand
 	sharpness = TRUE
@@ -240,8 +240,8 @@
 	icon_state = "artknife"
 	item_state = "artknife"//"knife"
 	attack_verb = list("slashed")
-	force = 24
-	force_wielded = 27
+	force = 22
+	force_wielded = 23
 	block_chance = 20
 	sales_price = 30
 	weapon_speed_delay = 5
@@ -298,7 +298,7 @@
 	item_state = "EB-knife"//"knife"
 	attack_verb = list("slashed")
 	force = 21
-	force_wielded = 24
+	force_wielded = 22
 	armor_penetration = 15
 	block_chance = 20
 	sales_price = 39

@@ -57,7 +57,7 @@
 /obj/item/device/encryptionkey/red_alpha
 	name = "guardsmen encryption key"
 	icon_state = "cypherkey"
-	channels = list("Guardsmen" = 1)
+	channels = list("Guardsmen" = 1, "Imperial" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
@@ -121,7 +121,7 @@
 
 /obj/item/device/encryptionkey/blue_all
 	icon_state = "cypherkey"
-	channels = list("Blue" = 1, "Blue Alpha" = 1, "Blue Bravo" = 1, "Blue Charlie" = 1, "Blue Delta" = 1)
+	channels = list("Imperial" = 1, "Blue" = 1, "Blue Alpha" = 1, "Blue Bravo" = 1, "Blue Charlie" = 1, "Blue Delta" = 1)
 	origin_tech = list(TECH_ILLEGAL = 3)
 	syndie = 1
 
@@ -159,20 +159,20 @@
 /obj/item/device/encryptionkey/headset_sec
 	name = "guardsmen com-linked encryption key"
 	icon_state = "sec_cypherkey"
-	channels = list("Command" = 1, "Guardsmen" =1)
+	channels = list("Command" = 1, "Guardsmen" =1, "Imperial" = 1)
 	syndie = 1
 
 //unused
 /obj/item/device/encryptionkey/headset_red
 	name = "red radio encryption key"
 	icon_state = "sec_cypherkey"
-	channels = list("Security" = 1)
+	channels = list("Security" = 1, "Imperial" = 1)
 
 //mechanicus key
 /obj/item/device/encryptionkey/headset_eng
 	name = "mechanicus radio encryption key"
 	icon_state = "eng_cypherkey"
-	channels = list("Mechanicus" = 1, "Guardsmen" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
 
 //not used
 /obj/item/device/encryptionkey/headset_rob
@@ -216,7 +216,7 @@
 	name = "ai integrated encryption key"
 	desc = "Integrated encryption key."
 	icon_state = "cap_cypherkey"
-	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Supply" = 1, "Service" = 1, "AI Private" = 1)
+	channels = list("Command" = 1, "Security" = 1, "Engineering" = 1, "Science" = 1, "Medical" = 1, "Magistratum" = 1, "Service" = 1, "AI Private" = 1)
 
 //not used
 /obj/item/device/encryptionkey/heads/rd
@@ -252,9 +252,9 @@
 
 //not used rn
 /obj/item/device/encryptionkey/headset_cargo
-	name = "supply radio encryption key"
+	name = "Magistratum radio encryption key"
 	icon_state = "cargo_cypherkey"
-	channels = list("Supply" = 1)
+	channels = list("Imperial" = 1, "Magistratum" = 1)
 
 //not used rn
 /obj/item/device/encryptionkey/headset_service
@@ -271,7 +271,7 @@
 //needs fix if usage planned
 /obj/item/device/encryptionkey/ert
 	name = "\improper ERT radio encryption key"
-	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Supply" = 1, "Service" = 1)
+	channels = list("Response Team" = 1, "Science" = 1, "Command" = 1, "Medical" = 1, "Engineering" = 1, "Security" = 1, "Magistratum" = 1, "Service" = 1)
 
 //spec ops isn't a working channel - can fix if wanted - Rushodan
 /obj/item/device/encryptionkey/specops //for events

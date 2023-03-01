@@ -184,7 +184,7 @@
 		return
 	custom_emote(1, pick( list("bites at [target_mob]", "crushes [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(70,100) // Damage Value
+	var/damage = rand(75,90) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -222,7 +222,7 @@
 		return
 	custom_emote(1, pick( list("slices at [target_mob]", "tears [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(65,135) // Damage Value
+	var/damage = rand(65,125) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -274,6 +274,7 @@
 	response_disarm = "shoves"
 	response_harm   = "mauls"
 	attacktext = "bites"
+	faction = "Nurgle"
 	see_in_dark = 6
 
 	speed = 1.6
@@ -332,7 +333,7 @@
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/bite.ogg'
 
-	faction = "Chaos"
+	faction = "Nurgle"
 
 /mob/living/simple_animal/hostile/retaliate/nurgling/FindTarget()
 	. = ..()

@@ -243,7 +243,7 @@
 
 				<h2>Corpulent Epidermis:</h2>
 				<h3>Purulent cysts toughen your hide somewhat.</h3>
-				Live rodent offered on a rune of Nurgle
+				Live rodent and a human head offered on a rune of Nurgle
 
 				<h2>Regenerating Boils:</h2>
 				<h3>Pus-infused growths cover your burns and open wounds at the cost of some toxic damage.</h3>
@@ -267,11 +267,11 @@
 
 				<h2>Blight Grenade:</h2>
 				<h3>Grenade with a powerful payload of armor-melting blight strain. Turn the servants of the Corpse Emperor against him! .</h3>
-				Human head and pipe grenade offered on a rune of Nurgle.
+				A krak grenade and an uncut ruby offered on a rune of Nurgle.
 
 				<h2>Child of the Grandfather:</h2>
 				<h3>Bring forth a little one to bless your cause.</h3>
-				Human Liver offered on a rune of Nurgle.
+				An uncut sapphire gem offered on a rune of Nurgle.
 
 				<h2>Foetid Nganga:</h2>
 				<h3>A cauldron to concoct a powerful summoning.</h3>

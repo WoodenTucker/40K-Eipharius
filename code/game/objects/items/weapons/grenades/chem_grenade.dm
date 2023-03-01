@@ -305,6 +305,7 @@
 	name = "Blight grenade"
 	desc = "Take a deep breath!"
 	icon_state = "blight"
+	arm_sound = 'sound/weapons/grenade_arm.ogg'
 	stage = 2
 	path = 1
 

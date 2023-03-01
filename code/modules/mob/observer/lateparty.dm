@@ -14,8 +14,8 @@
 			if(27000)
 				to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:45!")
 				return
-			if(36000)
-				to_chat(src, "It is too early for a late party! This will open when round duration reaches 1:00!")
+			if(48000)
+				to_chat(src, "It is too early for a late party! This will open when round duration reaches 1:20!")
 				return
 			if(72000)
 				to_chat(src, "It is too early for a late party! This will open when round duration reaches 2:00!")
@@ -58,9 +58,9 @@
 						usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
 						var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key
-					if("Bloodpact")
-						message_admins("[attendee] has joined the late party: Bloodpact.", 0) //msgs jannies
-						to_chat(usr, "<span class='warning'><b><font size=3>Death to the Corpse Emperor. Ensure the Commander and Berzerker Chosen armor are donned. Follow their wearers in glorious battle upon the nearby planet of Eipharius. Work alongside your fellow Blood Pact warriors using the Dark Tongue. You may be Khornate, but you are extremely well disciplined. Harvest souls and sacrifice for the Blood God!</b></font size=3>") //tells mob to do thing
+					if("Sekites")
+						message_admins("[attendee] has joined the late party: Sekites.", 0) //msgs jannies
+						to_chat(usr, "<span class='warning'>You are veterans of the chaos warband known commonly referred to as the Sekites or Sons of Sek who serve the Immortal Anarch... Anakwanar Sek. Sent to Eipharius you have been tasked with undermining imperial rule and spreading fear throughout the planet. Find and co-ordinate with the local followers of the ruinous powers and plot an uprising to rival old Horus himself. Do not waste your lives, instead spend the lives of your followers whom you recruit from the planet.</b></font size=3>")
 						usr.loc = get_turf(locate("landmark*bloodstart")) //where they spawning
 						var/mob/living/carbon/human/Bloodpact/new_character = new(usr.loc)// da mob
 						new_character.key = attendee //puts ghost in body with new key

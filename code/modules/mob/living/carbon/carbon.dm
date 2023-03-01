@@ -420,10 +420,6 @@
 	return 1
 
 /mob/living/carbon/proc/add_chemical_effect(var/effect, var/magnitude = 1)
-	if(is_hellbanned())
-		if(effect == CE_PAINKILLER)
-			magnitude += min(magnitude, 1)//You only get 1 painkiller effect fucker.
-
 	if(effect in chem_effects)
 		chem_effects[effect] += magnitude
 	else

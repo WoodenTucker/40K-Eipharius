@@ -31,6 +31,11 @@
 	cost = 120
 	item_path = /obj/item/clothing/suit/cultrobes/magusred
 
+/datum/cargo_entry/bmarket/injectortau
+	name = "Tissue Rebuilder Syrette"
+	cost = 40
+	item_path = /obj/item/reagent_containers/hypospray/autoinjector/tau
+
 /datum/cargo_entry/bmarket/batterer
 	name = "Xenos Metal Foam Grenade"
 	cost = 31

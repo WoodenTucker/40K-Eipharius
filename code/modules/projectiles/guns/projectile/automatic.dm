@@ -41,13 +41,20 @@
 	ammo_type = /obj/item/ammo_casing/c9mm
 	burst_delay = 1
 	automatic = 1
-	accuracy = -1
+	accuracy = 0
 	force = 8
 	fire_delay = 1
 	sales_price = 10
 
 	magazine_type = /obj/item/ammo_magazine/smgmc9mm
 	allowed_magazines = /obj/item/ammo_magazine/smgmc9mm
+
+/obj/item/gun/projectile/automatic/smg/boscelot/update_icon()
+    ..()
+    if(ammo_magazine)
+        icon_state = "sten"
+    else
+        icon_state = "sten-e"
 /*
 /obj/item/gun/projectile/automatic/smg/villiers // valhallan
 	name = "Villiers Pattern Stub SMG"

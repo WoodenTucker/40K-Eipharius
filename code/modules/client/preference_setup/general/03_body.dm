@@ -314,8 +314,8 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 						to_chat(user, "<span class='badmood'>⠀+ You NEED a clean environment. You are bothered especially by filth and decay. +</span>")
 					if("Glutton")
 						to_chat(user, "<span class='badmood'>⠀+ You can't just eat enough to survive, you must eat until you're stuffed. +</span>")
-					if("Parental Instincts")
-						to_chat(user, "<span class='badmood'>⠀+ Every child in this cursed land is your ward, do not let evil befall them! +</span>")
+					/*if("Parental Instincts")
+						to_chat(user, "<span class='badmood'>⠀+ Every child in this cursed land is your ward, do not let evil befall them! +</span>") */
 				return TOPIC_REFRESH
 
 	else if(href_list["religion"])

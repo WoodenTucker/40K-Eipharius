@@ -13,24 +13,23 @@
 	SEND_SIGNAL(user, COMSIG_CULT_ADD_FAVOR, 30)
 
 /datum/rune_recipe/khorne/knife_teeth
-	name = "Enchant Knife Rite"
-	ingredients = list(/obj/item/stack/teeth,  /obj/item/melee/sword/combat_knife)
+	name = "Enchant Knife Rite(Ruby)"
+	ingredients = list(/obj/item/newore/gems/ruby,  /obj/item/melee/sword/combat_knife)
 	special = TRUE
 
 /datum/rune_recipe/khorne/knife_teeth/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
-	switch(rand(1,6))
+	switch(rand(1,5))
 		if(1)
 			new /obj/item/melee/sword/chaosknife(get_turf(rune))
 		if(2)
 			new /obj/item/melee/trench_axe(get_turf(rune))
 		if(3)
-			new /obj/item/melee/sword/demon(get_turf(rune))
+			new /obj/item/melee/chain/pcsword/khorneaxe(get_turf(rune))
 		if(4)
 			new /obj/item/melee/sword/choppa(get_turf(rune))
 		if(5)
 			new /obj/item/melee/trench_axe/bardiche(get_turf(rune))
-		if(6)
-			new /obj/item/melee/chain/pcsword/khorneaxe(get_turf(rune))
+			
 
 /datum/rune_recipe/khorne/conversion
 	name = "Conversion Rite"

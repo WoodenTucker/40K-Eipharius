@@ -28,15 +28,15 @@
 
 /datum/cargo_entry/melee/mercy
 	name = "Mercy Chainsword"
-	cost = 84
+	cost = 94
 	item_path = /obj/item/melee/chain/mercycs
 
 /datum/cargo_entry/melee/drusian
 	name = "Drusian Chainsword"
-	cost = 94
+	cost = 114
 	item_path = /obj/item/melee/chain/inqcs
 
 /datum/cargo_entry/melee/powersword
 	name = "Power Blade"
-	cost = 120
+	cost = 150
 	item_path = /obj/item/melee/energy/powersword

@@ -6,7 +6,6 @@
 	cost = 50
 	item_path = /obj/item/gun/energy/las/lasgun
 
-
 /datum/cargo_entry/weapon/luclas
 	name = "Lucius Lasgun"
 	cost = 70
@@ -14,30 +13,33 @@
 
 /datum/cargo_entry/weapon/catbine
 	name = "Catachan Carbine"
-	cost = 70
+	cost = 80
 	item_path = /obj/item/gun/energy/las/lasgun/catachan
 
 /datum/cargo_entry/weapon/acca
 	name = "Accatran Carbine"
-	cost = 90
+	cost = 85
 	item_path = /obj/item/gun/energy/las/lasgun/accatran
 
 /datum/cargo_entry/weapon/hotshot
 	name = "Ryza Pattern Hot-Shot Lasgun"
-	cost = 120
+	cost = 220
 	item_path = /obj/item/gun/energy/las/hotshot
+
+/datum/cargo_entry/weapon/hotshot/krieg
+	name = "Type XIV Lasgun Heavy"
+	cost = 240
+	item_path = /obj/item/gun/energy/las/hotshot/krieg
 
 /datum/cargo_entry/weapon/longlas
 	name = "M35 Longlas"
-	cost = 160
+	cost = 170
 	item_path = /obj/item/gun/energy/las/lasgun/longlas
 
 /datum/cargo_entry/weapon/longlas
 	name = "Krieg Pattern Longlas"
 	cost = 180
 	item_path = /obj/item/gun/energy/las/lasgun/longlas/krieg
-
-
 
 /datum/cargo_entry/weapon/stubrifle
 	name = "Stub Rifle"
@@ -49,28 +51,70 @@
 	cost = 35
 	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter
 
+/datum/cargo_entry/weapon/triangong
+	name = "Triangong 4-46"
+	cost = 40
+	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered
+
+/datum/cargo_entry/weapon/crucible
+	name = "Crucible Hunting Rifle"
+	cost = 45
+	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
+
 /datum/cargo_entry/weapon/sniperrifleheavy
 	name = "Heavy Sniper Rifle"
-	cost = 190
+	cost = 110
 	item_path = /obj/item/gun/projectile/heavysniper
 
+/datum/cargo_entry/weapon/needlerrifle
+	name = "Needler Marksman Rifle"
+	cost = 130
+	item_path = /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
 
 /datum/cargo_entry/weapon/shotgunsawn
 	name = "Sawn-off Shotgun"
 	cost = 20
-	item_path = /obj/item/gun/projectile/shotgun/doublebarrel
-
+	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 
 /datum/cargo_entry/weapon/shotgun
 	name = "Voxlegis Shotgun"
 	cost = 55
 	item_path = /obj/item/gun/projectile/shotgun/pump/voxlegis
 
-/datum/cargo_entry/weapon/smg
-	name = "Boscelot Stub SMG"
-	cost = 20
-	item_path = /obj/item/gun/projectile/automatic/smg/boscelot
+/datum/cargo_entry/weapon/shotgun2
+	name = "Belle Magrave Shotgun"
+	cost = 65
+	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 
+/datum/cargo_entry/weapon/mk22
+	name = "Mk22 Autogun"
+	cost = 46
+	item_path = /obj/item/gun/projectile/automatic/machinepistol
+
+/datum/cargo_entry/weapon/a80
+	name = "Nachtwey Autogun"
+	cost = 58
+	item_path = /obj/item/gun/projectile/automatic/machinepistol/a80
+
+/datum/cargo_entry/weapon/grim
+	name = "GRIM Autogun"
+	cost = 66
+	item_path = /obj/item/gun/projectile/automatic/autogrim
+
+/datum/cargo_entry/weapon/krieg
+	name = "Krieg Pattern Autogun"
+	cost = 75
+	item_path = /obj/item/gun/projectile/automatic/autogrim/krieg
+
+/datum/cargo_entry/weapon/scipio
+	name = "Scipio Pattern Rifle"
+	cost = 53
+	item_path = /obj/item/gun/projectile/automatic/m22/combatrifle
+
+/datum/cargo_entry/weapon/aegis
+	name = "Aegis Pattern Rifle"
+	cost = 63
+	item_path = /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle
 
 /datum/cargo_entry/weapon/messina
 	name = "Messina Pattern Autogun"
@@ -86,6 +130,21 @@
 	name = "Vraks Heavy Stubber"
 	cost = 80
 	item_path = /obj/item/gun/projectile/automatic/heavystubber
+
+/datum/cargo_entry/weapon/stubbervilliers
+	name = "Villiers Heavy Stubber"
+	cost = 64
+	item_path = /obj/item/gun/projectile/automatic/heavystubber/villiers
+
+/datum/cargo_entry/weapon/lockebolter
+	name = "Locke Bolter"
+	cost = 190
+	item_path = /obj/item/gun/projectile/boltrifle/lockebolter
+
+/datum/cargo_entry/weapon/drusianbolter
+	name = "Drusian Bolter"
+	cost = 230
+	item_path = /obj/item/gun/projectile/boltrifle/lockebolter/drusian
 
 /datum/cargo_entry/weapon/plasmapistol
 	name = "Plasma Pistol"
@@ -152,8 +211,40 @@ datum/cargo_entry/weapon/accapistol
 	cost = 35
 	item_path = /obj/item/gun/projectile/pistol/broomhandle
 
+/datum/cargo_entry/weapon/mervexrevolver
+	name = "Mervex Revolver"
+	cost = 49
+	item_path = /obj/item/gun/projectile/mervex
 
+/datum/cargo_entry/weapon/necrevolver
+	name = "Necros Revolver"
+	cost = 51
+	item_path = /obj/item/gun/projectile/necros
 
+/datum/cargo_entry/weapon/slugrevolver
+	name = "Masterwork Revolver"
+	cost = 57
+	item_path = /obj/item/gun/projectile/slugrevolver
+
+/datum/cargo_entry/weapon/mateba
+	name = "Mateba Revolver"
+	cost = 67
+	item_path = /obj/item/gun/projectile/revolver/mateba
+
+/datum/cargo_entry/weapon/reng
+	name = "Renegade Pistol"
+	cost = 54
+	item_path = /obj/item/gun/projectile/talon/renegade
+
+/datum/cargo_entry/weapon/bolterpistol
+	name = "Bolter Pistol"
+	cost = 65
+	item_path = /obj/item/gun/projectile/bolter_pistol
+
+/datum/cargo_entry/weapon/bolterpistoldrusian
+	name = "Upgraded Bolter Pistol"
+	cost = 78
+	item_path = /obj/item/gun/projectile/bolter_pistol/inquis
 
 /datum/cargo_entry/weapon/villerrevolver
 	name = "Villier Revolver"
@@ -168,19 +259,12 @@ datum/cargo_entry/weapon/accapistol
 /datum/cargo_entry/weapon/boscrevolver
 	name = "Boscelot Revolver"
 	cost = 30
-	item_path = /obj/item/gun/projectile/revolver/boscelot
+	item_path = /obj/item/gun/projectile/revolver/detective/boscelot
 
 /datum/cargo_entry/weapon/agrirevolver
 	name = "Agripinaa Revolver"
 	cost = 50
-	item_path = /obj/item/gun/projectile/revolver/agripinaa
-
-
-/datum/cargo_entry/weapon/bolterpistol
-	name = "Bolter Pistol"
-	cost = 100
-	item_path = /obj/item/gun/projectile/bolter_pistol
-
+	item_path = /obj/item/gun/projectile/necros
 
 /datum/cargo_entry/weapon/fragg
 	name = "Fragmentation Grenade"

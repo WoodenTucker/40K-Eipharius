@@ -284,10 +284,13 @@
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
 	if (href_list["tax"])
-		var/taxrates = list("5", "10", "15", "20", "25", "30",) //lists tax rates, we'll do set ones for now
+		var/taxrates = list("1", "5", "10", "15",) //lists tax rates, we'll do set ones for now
 		var/taxchoice = input("Choose the tax rate", "Available rates") as null|anything in taxrates
 
 		switch(taxchoice)
+			if("1")
+				GLOB.tax_rate = 0.1
+				to_world("<span class='warning'>[usr] has set the tax rate to 1%!</span>")
 			if("5")
 				GLOB.tax_rate = 0.5
 				to_world("<span class='warning'>[usr] has set the tax rate to 5%!</span>")
@@ -297,15 +300,6 @@
 			if("15")
 				GLOB.tax_rate = 0.15
 				to_world("<span class='warning'>[usr] has set the tax rate to 15%!</span>")
-			if("20")
-				GLOB.tax_rate = 0.20
-				to_world("<span class='warning'>[usr] has set the tax rate to 20%!</span>")
-			if("25")
-				GLOB.tax_rate = 0.25
-				to_world("<span class='warning'>[usr] has set the tax rate to 25%!</span>")
-			if("30")
-				GLOB.tax_rate = 0.30
-				to_world("<span class='warning'>[usr] has set the tax rate to 30%!</span>")
 
 
 
@@ -434,11 +428,11 @@
 	dat += "Those are well trained soldiers. Not the best, but loyal. They are effective only in groups<HR>"
 	dat += "<A href='byond://?src=\ref[src];Whiteshield=1'>Purchase a Whiteshield (80)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (150)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (225)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (250)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (205)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (200)</A><BR>"
 	dat += "<B>Elite mercenaries</B><HR>"
 	dat += "These are the best of the best. They are expensive, but very effective stand-alone units. You will not regret.<HR>"
-	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (300)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (200)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (350)</A><BR>"
@@ -496,7 +490,7 @@
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["medicae"])
-		if(GLOB.thrones < 225)
+		if(GLOB.thrones < 205)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -509,11 +503,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 225
+					GLOB.thrones -= 205
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["specialist"])
-		if(GLOB.thrones < 250)
+		if(GLOB.thrones < 200)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -526,11 +520,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 250
+					GLOB.thrones -= 200
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["janissary"])
-		if(GLOB.thrones < 300)
+		if(GLOB.thrones < 200)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -543,7 +537,7 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 300
+					GLOB.thrones -= 200
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["scion"])

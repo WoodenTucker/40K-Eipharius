@@ -203,6 +203,16 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/guardhelmet/patrol
+	name = "Enforcer Cap"
+	desc = "A patrol cap worn by Messina Enforcers."
+	icon_state = "enforcerhat"
+	item_state = "enforcerhat"
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 25, bio = 25, rad = 10) // Lucky Hat.
+	siemens_coefficient = 0.6
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
 	name = "Magistratum Arbitrator Helmet"
 	desc = "The Arbitrator Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Arbitrator's both to show rank and for intimidation, It is painted in a dark blue colour."
@@ -212,22 +222,22 @@
 
 //blood pact here for now
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact1
-	name = "Chosen Khornate Combat Helmet"
-	desc = "Armored helmet of the blood god's chosen. KILL, MAIM, BURN!"
+	name = "Chosen Combat Helmet"
+	desc = "Armored helmet of the ruinous powers."
 	icon_state = "vraks2"
 	item_state = "vraks2"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
-	name = "Khornate Combat Helmet"
-	desc = "Armored helmet of a khornate cultist."
+	name = "Chosen Combat Helmet"
+	desc = "Armored helmet of a chaos cultist."
 	icon_state = "vraks3"
 	item_state = "vraks3"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
-	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it forehead."
+	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it's forehead."
 	icon_state = "guard"
 	item_state = "guard"
 	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
@@ -249,6 +259,12 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/guardhelmet/sargecap
+	name = "Cadian Pattern Sergeant's Cap"
+	desc = "Often mistaken for a soft cap, this variation features armor that comes down to protect the face, as well as a vox piece to slide over your ear. Perfect for Senior Enlisted."
+	icon_state = "sarge_cap"
+	item_state = "sarge_cap"
+
 /obj/item/clothing/head/helmet/krieghelmet
 	name = "Krieg Mark IX Helmet"
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
@@ -257,6 +273,16 @@
 	armor = list(melee = 32, bullet = 32, laser = 27, energy = 35, bomb = 32, bio = 80, rad = 80)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/krieghelmet/grenadier
+	name = "Krieg Mark IX/G Helmet"
+	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production. This one has a decorated ceramite plate layered on top."
+	icon_state = "grenhelm"
+	item_state = "grenhelm"
+	armor = list(melee = 40, bullet = 45, laser = 33, energy = 35, bomb = 32, bio = 80, rad = 80)
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 
 /obj/item/clothing/head/helmet/krieghelmet/medicae
 	name = "Krieg Mark IX/M Helmet"
@@ -662,6 +688,6 @@
 	desc = "The Exquisite Helm of the Border Prince"
 	icon_state = "prince"
 	item_state = "prince"
-	armor = list(melee = 65, bullet = 65, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
+	armor = list(melee = 55, bullet = 55, laser = 35, energy = 40, bomb = 40, bio = 0, rad = 40)
 	flags_inv = HIDEMASK|HIDEEARS|BLOCKHAIR
-	sales_price = 60
+	sales_price = 50

@@ -198,6 +198,14 @@
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/shoes/jackboots/krieg/grenadier
+	name = "Krieg Grenadier Pattern Combat Boots"
+	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium. Though, in this particular case they have lamented to armoring their own."
+	icon_state = "grenboots"
+	item_state = "grenboots"
+	armor = list(melee = 40, bullet = 40, laser = 50, energy = 40, bomb = 40, bio = 100, rad = 100)
+	cold_protection = FEET
+	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
 //Commissar shoes, not being currently used.
 /obj/item/clothing/shoes/jackboots/commissar
@@ -355,11 +363,12 @@
 /obj/item/clothing/shoes/krootfeet //walking sounds only play with shoes and I was losing my mind not having them
 	name = "kroot feet"
 	desc = "The spindly webbed feet of a Kroot"
-	icon_state = "krootboot"
-	item_state = "krootboot"
+	icon_state = "None"
+	item_state = "None"
 	canremove = 0
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
+
 // Genestealer
 
 /obj/item/clothing/shoes/genestealerfeet //walking sounds only play with shoes and I was losing my mind not having them
@@ -371,6 +380,7 @@
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
 	species_restricted = list(SPECIES_TYRANID)
+
 // Ork
 
 /obj/item/clothing/shoes/orkboots //walking sounds only play with shoes and I was losing my mind not having them
@@ -380,8 +390,7 @@
 	item_state = "ork_boots"
 	species_restricted = list(SPECIES_ORK)
 	canremove = 0
-//	item_flags = ITEM_FLAG_NOSLIP //walker here, add this if you don't like orks being goofy or funny or if you are a nerd
-
+	item_flags = ITEM_FLAG_NOSLIP
 
 //Eldar Stuff
 
@@ -393,7 +402,8 @@
   armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
   cold_protection = FEET|LEGS
   min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-  //Dark Eldar Stuff
+
+//Dark Eldar Stuff
 
 /obj/item/clothing/shoes/darkeldar
   name = "Ghostplate Boots"

@@ -5,7 +5,7 @@
 	set name = "Late Party"
 	set desc= "Join a randomized late party picked from a list!"
 
-	var/partydelay = 36000 //in deciseconds (60 min rn)
+	var/partydelay = 48000 //in deciseconds (80 minutes)
 
 	if(world.time < partydelay) //all this does is cause a delay so people can't suicide or observer and rush the base
 		to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:40!")
@@ -77,8 +77,8 @@
 			usr.loc = get_turf(locate("landmark*taustart")) //where they spawning
 			var/mob/living/carbon/human/tau/new_character = new(usr.loc)// da mob
 			new_character.key = usr.key //puts ghost in body with new key
-		if("Bloodpact")
-			message_admins("[attendee] has joined the late party: Bloodpact.", 0) //msgs jannies
+		if("Sekites")
+			message_admins("[attendee] has joined the late party: Sekites.", 0) //msgs jannies
 			to_chat(usr, "<span class='warning'><b><font size=3>You are expected to demand people to join your cult before you kill them, if able. Embrace your Blessings in your Ruinous Powers Tab! Ensure the Commander and Berzerker Chosen armor are donned. Follow their wearers in glorious battle upon the nearby planet of Eipharius. Work alongside your fellow Blood Pact warriors using the Dark Tongue. You may be Khornate, but you are extremely well disciplined. Harvest souls and sacrifice for the Blood God!</b></font size=3>") //tells mob to do thing
 			usr.loc = get_turf(locate("landmark*bloodstart")) //where they spawning
 			var/mob/living/carbon/human/Bloodpact/new_character = new(usr.loc)// da mob

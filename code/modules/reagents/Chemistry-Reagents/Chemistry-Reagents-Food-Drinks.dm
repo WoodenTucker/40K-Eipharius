@@ -2030,13 +2030,13 @@
 	glass_desc = "A froofy, fruity, and sweet mixed drink. Understanding the name only brings shame."
 
 /datum/reagent/ethanol/syndicatebomb
-	name = "Bloodpact Bomb"
+	name = "Strange Bomb"
 	description = "Tastes like terrorism!"
 	taste_description = "purified treason"
 	color = "#2e6671"
 	strength = 10
 
-	glass_name = "Bloodpact Bomb"
+	glass_name = "Strange Bomb"
 	glass_desc = "Tastes like terrorism!"
 
 /datum/reagent/ethanol/tequilla_sunrise

@@ -11,10 +11,13 @@
 	max_age = 800
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 250
-	mob_size = MOB_MEDIUM
+	mob_size = MOB_LARGE
 	strength = STR_VHIGH
+	base_auras = list(
+		/obj/aura/regenerating/human/nid
+		)
 	teeth_type = /obj/item/stack/teeth/human //til I get cool nid teeth
-	sexybits_location = BP_GROIN
+//	sexybits_location = BP_GROIN
 	var/pain_power = 80
 	inherent_verbs = list(
 	/mob/living/carbon/human/genestealer/verb/convert,
@@ -23,18 +26,16 @@
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/gsheal,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
-
 	 )
 	slowdown = -0.5
 	unarmed_types = list(
-		/datum/unarmed_attack/rendingclaws,
 		/datum/unarmed_attack/rendingclaws,
 		)
 
 	has_fine_manipulation = 0
 	siemens_coefficient = 0
-	gluttonous = GLUT_ANYTHING
-	stomach_capacity = MOB_MEDIUM
+	gluttonous = GLUT_ITEM_NORMAL
+//	stomach_capacity = MOB_MEDIUM
 	darksight = 20
 
 	brute_mod = 0.82 // Hardened carapace.
@@ -61,7 +62,7 @@
 	H.age = rand(min_age,max_age)//Random age for nidders
 	if(H.f_style)//nids dont get beards
 		H.f_style = "Shaved"
-	to_chat(H, "<big><span class='warning'>I must feed... I must sync with the hive mind (Do so in Tyranid tab)</span></big>")
+	to_chat(H, "<big><span class='warning'>It is the time to rise up against our opressors! I must sync with the hive mind (Do so in Tyranid tab)</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
 
@@ -131,9 +132,9 @@
 		to_chat(src, "<span class='warning'>[T] is already a member of the Hive Mind!</span>")
 		return
 
-	var/obj/item/organ/external/affecting = T.get_organ(src.zone_sel.selecting)
+	var/obj/item/organ/external/affecting = T.get_organ(src.zone_sel.selecting) //yes, these are 3 useless codelines, won't remove them cause if it works it works
 	if(!affecting)
-		to_chat(src, "<span class='warning'>They are missing that body part!</span>") //Dont try and eat a limb that doesn't exist.
+		to_chat(src, "<span class='warning'>They are missing that body part!</span>") 
 
 	isconverting = 1
 
@@ -149,7 +150,6 @@
 				src.visible_message("<span class='danger'>[src] impales [T] with their tongue.</span>")
 				to_chat(T, "<span class='danger'>You feel a sharp stabbing pain!</span>")
 				affecting.take_damage(9, 0, DAM_SHARP, "large organic needle")
-				src.biomass -=10
 				playsound(src, 'sound/effects/lecrunch.ogg', 50, 0, -1)
 
 		if(!do_mob(src, T, 50))
@@ -176,7 +176,7 @@
 	T.adjustBruteLoss(-1)
 	T.adjustToxLoss(-1)
 	T.adjustBrainLoss(-1)
-	T.inject_blood(src, 50)
+	T.inject_blood(src, 500)
 	return 1
 
 /mob/living/carbon/human/genestealer/proc/ripperswarm() // ok
@@ -202,10 +202,10 @@
 
 /mob/living/carbon/human/genestealer/proc/neurotoxin(mob/target as mob in oview())
 	set name = "Spit Neurotoxin (10)"
-	set desc = "Spits neurotoxin at someone, paralyzing them for a short time if they are not wearing protective gear."
+	set desc = "Spits neurotoxin at someone, paralyzing them for a short time."
 	set category = "Tyranid"
 
-	if(src.biomass < 20)
+	if(src.biomass < 10)
 		to_chat(src, "<font color='#800080'>You don't have enough biomass!</font>")
 		return
 
@@ -268,14 +268,14 @@
 
 	visible_message("[name] listens intently to the will of the hive mind. Now is the time! The fleet is near! Communicate with your hive using ,h")
 	src.AddInfectionImages()
-	src.add_stats(rand(10,15),rand(17,18),rand(13,13),18)
-	src.add_skills(rand(10,15),rand(7,7),rand(1,4),rand(1,4),rand(1,4)) //skills such as melee, ranged, med, eng and surg)
+	src.add_stats(rand(17,18),rand(17,18),rand(13,13),18)
+	src.add_skills(rand(10,11),rand(1,1),rand(1,4),rand(1,4),rand(1,4)) //skills such as melee, ranged, med, eng and surg)
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
 	src.set_trait(new/datum/trait/death_tolerant())
 	client?.color = null
-	src.health = 450
-	src.maxHealth = 450
+	src.health = 250
+	src.maxHealth = 250
 	src.warfare_language_shit(LANGUAGE_TYRANID)
 	src.verbs -= /mob/living/carbon/human/genestealer/proc/givestealerstats //removes verb at the end so they can't spam it for whatever reason
 
@@ -287,20 +287,18 @@
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
-	if(src.biomass < 5)
+	if(src.biomass < 10) //less than 10? no biomass nerdd
 		to_chat(src, "<span class='alium'>We don't have enough biomass!</span>")
 		return
 	else
 		visible_message("[src] expends some of his stored biomass correting wounds and damage to their organs.")
 		adjustOxyLoss(-1)
-		adjustToxLoss(-1)
-		adjustBrainLoss(-1)
 		src.radiation = 0
 		src.bodytemperature = T20C
 		src.eye_blurry = 0
 		src.ear_deaf = 0
 		src.ear_damage = 0
-		src.inject_blood(src, 50)
+		src.inject_blood(src, 560)
 		src.biomass -=10
 
 /mob/living/carbon/human/genestealer/proc/talon()
@@ -308,7 +306,7 @@
 	set category = "Tyranid"
 	set desc = "Gives their stun talon"
 
-	put_in_hands(new /obj/item/melee/baton/nidstun)
+	put_in_hands(new /obj/item/melee/powermaul/nidstun)
 	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	return
 
