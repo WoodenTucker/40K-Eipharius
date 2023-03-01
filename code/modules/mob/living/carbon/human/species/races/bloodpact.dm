@@ -56,6 +56,7 @@
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(LANGUAGE_DARKTONGUE) //secondary language // doesnt work currently
 	src.verbs -= /mob/living/carbon/human/Bloodpact/proc/givebloodstats //removes verb at the end so they can't spam it for whatever reason
+	src.vice = null
 	client?.color = null
 
 

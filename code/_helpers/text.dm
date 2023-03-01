@@ -257,7 +257,7 @@
 			if(currentWord in OGRYN_HEAR_EXCEPTIONS) //if this word exists in hearing exceptions we move on to the next
 				text = addtext(text, " ", word)
 				continue
-			if(length(word) > 5 ) //Ogryns can't understand long words
+			if(length(word) > 6 ) //Ogryns can't understand long words
 				var/list/splitWord = splittext(word, "") //splits our word up
 				if("&" in splitWord) //Handles annoying ascii code exceptiosn for words like I've
 					word = jointext(splitWord, "") //rejoins it
