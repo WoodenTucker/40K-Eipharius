@@ -576,8 +576,4 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones2 = 1,
-<<<<<<< HEAD
 		/obj/item/stack/thrones3/five = 1,)
-=======
-		/obj/item/stack/thrones3/five = 1,)
->>>>>>> 97ae6704487e351f2d31875e1239fdc1d6bf9ff2
