@@ -26,7 +26,6 @@
 		/datum/unarmed_attack/bite
 		)
 /datum/species/kroot/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.real_name = H.alternate_names[5]
 	H.age = rand(min_age,max_age)//Random age for kiddos.
 	if(H.f_style)//kroot don't get beards.
 		H.f_style = "Shaved"
