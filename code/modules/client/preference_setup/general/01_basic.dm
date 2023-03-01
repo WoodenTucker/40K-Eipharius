@@ -118,8 +118,8 @@ datum/preferences
 		alternate_name_menu_list[3] = "Astartes Name: [pref.alternate_names[3]]"
 		alternate_name_menu_list[4] = "Ork Name: [pref.alternate_names[4]]"
 		alternate_name_menu_list[5] = "Kroot Name: [pref.alternate_names[5]]"
-		alternate_name_menu_list[6] = "T'au Name: [pref.alternate_names[6]]"
-		var/choice = input(user, "Choose a name to edit.") as null|anything in alternate_name_menu_list
+		//alternate_name_menu_list[6] = "T'au Name: [pref.alternate_names[6]]"
+		var/choice = input(user, "Choose a name to edit. (Currently only for roundstart roles.)") as null|anything in alternate_name_menu_list
 		if(choice)
 			var/randomize = input(user, "Randomize name, or manually edit?") in list("Edit", "Randomize")
 			if(randomize == "Edit")
