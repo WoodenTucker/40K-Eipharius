@@ -139,7 +139,7 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
 		if("Mercenary")
-			U.add_stats(rand(13,17), rand(13,17), rand(14,17), rand (10,12)) //veteran mercenary
+			U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -154,28 +154,19 @@ Pilgrim Fate System
 				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
 			else
 				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
-				//Helmet Rolls
-			if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/sentryhelm, slot_head)
-			else if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/siege, slot_head)
-			else if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/newopen, slot_head)
-			else
-				equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hero, slot_head)
 				//Weapon Rolls
-			if(prob(25))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_l_hand) //Trench Club
-			else if(prob(20))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand) //Sawn Off Shotgun
+			if(prob(40))
+				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) //Civitas Pattern Laspistol
-			else if(prob(15))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered, slot_l_hand) //Snub Nosed Kieji Pistol
-			else if(prob(25))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)  // Kieji pistol
+				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand) 
+			else if(prob(10))
+				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) 
+			else if(prob(10))
+				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered, slot_l_hand)
+			else if(prob(10))
+				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)  
 			else
-				equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol, slot_l_hand) //Messina Pattern Revolver
+				equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol, slot_l_hand)
 				//Back to Hardset Loadout
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
@@ -338,15 +329,16 @@ Pilgrim Fate System
 			U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/whiteshield, slot_head)
+			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun/shitty, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/whiteshield, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) 
 			to_chat(U,"<span class='notice'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS

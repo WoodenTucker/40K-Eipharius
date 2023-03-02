@@ -277,7 +277,7 @@ obj/item/clothing/suit/armor
 	desc = "Scavenged 'eavy bitz to keep ya' krumpin' longa'!"
 	icon_state = "ork_m_armor"
 	item_state = "ork_m_armor"
-	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 60, bullet = 50, laser = 50, energy = 25, bomb = 50, bio = 0, rad = 0)
 	valid_accessory_slots = list(ACCESSORY_SLOT_INSIGNIA, ACCESSORY_SLOT_HOLSTER)
 	allowed = list(/obj/item/gun/projectile/ork, /obj/item/melee/sword/choppa)
 	blood_overlay_type = "armor"
@@ -286,28 +286,53 @@ obj/item/clothing/suit/armor
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/suit/armor/orkarmor/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
 /obj/item/clothing/suit/armor/orkarmor/snazzy
 	name = "Snazzy Shoota Armor"
 	desc = "Snazzy Armor of em ranged shoota boy types. Gud all rounda. Wat eva dat wurd means..."
 	icon_state = "snazzya"
 	item_state = "snazzya"
-	armor = list(melee = 20, bullet = 25, laser = 25, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 40, laser = 40, energy = 20, bomb = 40, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/orkarmor/snazzy/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
 
 /obj/item/clothing/suit/armor/orkarmor/skullza
 	name = "Orky Boy Skull Armor"
 	desc = "Da armor of a real lova of humie skullz'. Dis Boy 'oves gettin' in klose kombat, it's defeenses help loads in da maylays!"
 	icon_state = "ork_skullza"
 	item_state = "ork_skullza"
-	armor = list(melee = 35, bullet = 20, laser = 20, energy = 20, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 55, bullet = 35, laser = 35, energy = 20, bomb = 35, bio = 0, rad = 0)
 
+/obj/item/clothing/suit/armor/orkarmor/skullza/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
 
 /obj/item/clothing/suit/armor/orkarmor/zog
 	name = "Zogging Ork Boy Armor"
 	desc = "Da buttom of de barrel, dis one. Won't protek ya much. Betta dun nuffin, me guesses..."
 	icon_state = "zoga"
 	item_state = "zoga"
-	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 15, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 10, bomb = 25, bio = 0, rad = 0)
 
+/obj/item/clothing/suit/armor/orkarmor/zog/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.1
+
+/obj/item/clothing/suit/armor/orkarmor/warboss
+	name = "War Boss Arma'"
+	desc = "DA BOSS WEARS THIS!"
+	icon_state = "ork_m_armor"
+	item_state = "ork_m_armor"
+	armor = list(melee = 95, bullet = 95, laser = 95, energy = 10, bomb = 70, bio = 0, rad = 0)
+
+/obj/item/clothing/suit/armor/orkarmor/warboss/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.5
 
 // NOBLES & SERVANTS
 /obj/item/clothing/suit/armor/rtcloak
@@ -525,13 +550,25 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/enforcer 
-	name = "Patrol Jacket"
+	name = "Enforcer Patrol Jacket"
 	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
 	sales_price = 20
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/enforcer/marshal 
+	name = "Marshal's Patrol Jacket"
+	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
+	icon_state = "enforcercoat"
+	item_state = "enforcercoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 45, bullet = 47, laser = 44, energy = 25, bomb = 40, bio = 30, rad = 30) 
+	sales_price = 30
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -999,6 +1036,20 @@ obj/item/clothing/suit/armor
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 
+/obj/item/clothing/suit/storage/hooded/genestealer/tough
+	name = "tyranid chitin"
+	desc = "The hide of a Tyranid..."
+	armor = list(melee = 65, bullet = 55, laser = 55, energy = 20, bomb = 40, bio = 100, rad = 100)
+
+/obj/item/clothing/suit/storage/hooded/genestealer/epic
+	name = "tyranid chitin"
+	desc = "The hide of a Tyranid..."
+	armor = list(melee = 85, bullet = 75, laser = 75, energy = 20, bomb = 50, bio = 100, rad = 100)
+
+/obj/item/clothing/suit/storage/hooded/genestealer/epic/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle
 	name = "Order of the Sacred Rose Power Armor"
@@ -1016,7 +1067,7 @@ obj/item/clothing/suit/armor
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = -0.5
+	slowdown_per_slot[slot_wear_suit] = -0.4
 
 /obj/item/clothing/suit/sisterofbattle/repentia
 	name = "Garb of the Repentia"
@@ -1045,9 +1096,6 @@ obj/item/clothing/suit/armor
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
 	species_restricted = list(SPECIES_HUMAN)
-/obj/item/clothing/suit/sisterofbattle/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/sisterofbattle/brsister
 	name = "Order of the Bloody Rose Power Armor"
@@ -1062,9 +1110,6 @@ obj/item/clothing/suit/armor
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT
 	species_restricted = list(SPECIES_HUMAN)
-/obj/item/clothing/suit/sisterofbattle/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = -0.5
 
 /obj/item/clothing/suit/sisterofbattle/training
 	name = "Novice Power Armor"
@@ -1081,7 +1126,7 @@ obj/item/clothing/suit/armor
 	species_restricted = list(SPECIES_HUMAN)
 /obj/item/clothing/suit/sisterofbattle/training/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.8
+	slowdown_per_slot[slot_wear_suit] = 0.4
 
 /obj/item/clothing/suit/sisterofbattle/sobrelic
 	name = "Order of Our Martyred Lady's Primeval Chespiece"
@@ -1275,7 +1320,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/slaverobe/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = -0.5
+	slowdown_per_slot[slot_wear_suit] = -0.3
 
 /obj/item/clothing/suit/armor/armoredtrench
 	name = "Armored Trenchcoat"
@@ -1289,7 +1334,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/armoredtrench/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/vanpa
 	name = "Van Saar Power Armor"
@@ -1334,7 +1379,7 @@ obj/item/clothing/suit/armor
 	sales_price = 20
 /obj/item/clothing/suit/armor/goliathplate/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.4
+	slowdown_per_slot[slot_wear_suit] = 0.3
 
 /obj/item/clothing/suit/armor/goliatharmor
 	name = "Raider Cuirass"
@@ -1348,7 +1393,7 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 /obj/item/clothing/suit/armor/goliatharmor/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.3
+	slowdown_per_slot[slot_wear_suit] = 0.2
 
 /obj/item/clothing/suit/armor/sniper
 	name = "Ghillie Suit"
@@ -1482,7 +1527,7 @@ obj/item/clothing/suit/armor
 	icon_state = "knight_grey"
 	item_state = "knight_grey"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 80, bullet = 68, laser = 68, energy = 35, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 84, bullet = 76, laser = 76, energy = 35, bomb = 70, bio = 100, rad = 100)
 	sales_price = 90
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -1497,21 +1542,21 @@ obj/item/clothing/suit/armor
 	icon_state = "t51bgs"
 	item_state = "t51bgs"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 65, bullet = 72, laser = 72, energy = 35, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 72, bullet = 82, laser = 82, energy = 35, bomb = 60, bio = 100, rad = 100)
 	sales_price = 85
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 /obj/item/clothing/suit/armor/rpowerarmor/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 0.6
+	slowdown_per_slot[slot_wear_suit] = 0.5
 
 /obj/item/clothing/suit/armor/scum2
 	name = "Mysterious Garb"
 	desc = "These clothes belong the most mystical of folk."
 	icon_state = "gothcoat"
 	item_state = "gothcoat"
-	armor = list(melee = 38, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1522,7 +1567,7 @@ obj/item/clothing/suit/armor
 	desc = "Shoddy armor sewn from shafra leather, it protects you more from the cold then anything else."
 	icon_state = "leatherarmor"
 	item_state = "leatherarmor"
-	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1533,7 +1578,7 @@ obj/item/clothing/suit/armor
 	desc = "A heavy leather jacket."
 	icon_state = "wornmfp"
 	item_state = "wornmfp"
-	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1544,7 +1589,7 @@ obj/item/clothing/suit/armor
 	desc = "A a light jacket worn by gangers."
 	icon_state = "biker_jacket"
 	item_state = "biker_jacket"
-	armor = list(melee = 40, bullet = 35, laser = 35, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1566,7 +1611,7 @@ obj/item/clothing/suit/armor
 	desc = "A trench coat underpiece to wear with your trench coat!"
 	icon_state = "towntrench_special"
 	item_state = "towntrench_special"
-	armor = list(melee = 44, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
+	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
