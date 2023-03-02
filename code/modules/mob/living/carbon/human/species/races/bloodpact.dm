@@ -55,6 +55,7 @@
 	src.adjustStaminaLoss(-INFINITY)
 	src.update_eyes() //should fix grey vision
 	src.warfare_language_shit(LANGUAGE_DARKTONGUE) //secondary language // doesnt work currently
+	src.faction = "Nurgle"
 	src.verbs -= /mob/living/carbon/human/Bloodpact/proc/givebloodstats //removes verb at the end so they can't spam it for whatever reason
 	src.vice = null
 	client?.color = null
@@ -65,7 +66,6 @@
 /mob/living/carbon/human/Bloodpact/Initialize()
 	. = ..()
 	fully_replace_character_name(random_name(src.gender))
-	faction = "Nurgle"
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/bloodpact)
 	outfit.equip(src)
 

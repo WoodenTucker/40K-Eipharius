@@ -209,7 +209,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit = /obj/item/clothing/suit/armor/marshal
+	suit = /obj/item/clothing/suit/armor/enforcer/marshal 
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen

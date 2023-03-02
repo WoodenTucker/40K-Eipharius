@@ -1136,7 +1136,7 @@ var/list/admin_verbs_mentor = list(
 		if("2")
 			GLOB.partysize = 2
 			message_admins("The late party will have 2 attendees.")
-		if("(3)")
+		if("3")
 			GLOB.partysize = 3
 			message_admins("The late party will have 3 attendees.")
 		if("4")
