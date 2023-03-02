@@ -223,7 +223,7 @@
 	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
+		var/current_name = H.alternate_names[2]
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
@@ -268,7 +268,7 @@
 	cultist_chance = 7
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
+		var/current_name = H.alternate_names[2]
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
@@ -331,7 +331,7 @@
 	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
+		var/current_name = H.alternate_names[2]
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())

@@ -551,6 +551,7 @@
 		mind.transfer_to(new_character)					//won't transfer key since the mind is not active
 
 	new_character.SetName(real_name)
+	new_character.alternate_names = client.prefs.alternate_names
 	new_character.dna.ready_dna(new_character)
 	new_character.dna.b_type = client.prefs.b_type
 	new_character.sync_organ_dna()

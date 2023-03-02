@@ -77,6 +77,7 @@ Astartes
 
 /datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/astartes/H)
 	. = ..()
+	H.real_name = "Brother [H.alternate_names[3]]"
 	H.age = rand(min_age,max_age)//Astartes ages are all over.
 	to_chat(H, "<big><span class='warning'>You are one of His angels! Act like it!</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
