@@ -23,7 +23,6 @@
 		/datum/unarmed_attack/bite
 		)
 /datum/species/ogryn/handle_post_spawn(var/mob/living/carbon/human/H)
-	H.real_name = H.alternate_names[1]
 	H.age = rand(min_age,max_age)
 	if(H.f_style)
 		H.f_style = "Shaved"
