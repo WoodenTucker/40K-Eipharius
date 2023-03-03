@@ -145,13 +145,11 @@ Mercenary System
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.")
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
-			new_character.fully_replace_character_name(src.alternate_names[5])
 			qdel(src)
 		if("Ork Freeboota")
 			var/mob/living/carbon/human/ork/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space.")
-			new_character.fully_replace_character_name(src.alternate_names[4])
 			src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 			qdel(src)
 		/*if("Eldar Corsair")
