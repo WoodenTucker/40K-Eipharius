@@ -56,7 +56,7 @@ var/global/list/ores_by_type = list()
 		"million" = 704
 		)
 	xarch_source_mineral = "potassium"
-	origin_tech = list(TECH_MATERIAL = 5)
+	origin_tech = list(TECH_MATERIAL = 2)
 
 /ore/hematite
 	name = "iron"
@@ -114,7 +114,7 @@ var/global/list/ores_by_type = list()
 	spread_chance = 10
 	ore = /obj/item/ore/silver
 	scan_icon = "mineral_uncommon"
-	origin_tech = list(TECH_MATERIAL = 3)
+	origin_tech = list(TECH_MATERIAL = 2)
 
 /ore/gold
 	smelts_to = "gold"
@@ -130,18 +130,18 @@ var/global/list/ores_by_type = list()
 		"billion" = 4,
 		"billion_lower" = 3
 		)
-	origin_tech = list(TECH_MATERIAL = 4)
+	origin_tech = list(TECH_MATERIAL = 2)
 
 /ore/diamond
 	name = "diamond"
-	display_name = "diamond"
+	display_name = "strange ore"
 	compresses_to = "diamond"
 	result_amount = 5
 	spread_chance = 10
 	ore = /obj/item/ore/diamond
 	scan_icon = "mineral_rare"
 	xarch_source_mineral = "nitrogen"
-	origin_tech = list(TECH_MATERIAL = 6)
+	origin_tech = list(TECH_MATERIAL = 2)
 
 /ore/platinum
 	name = "platinum"

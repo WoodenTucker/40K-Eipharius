@@ -202,6 +202,15 @@ obj/mortar/flare/blue
 	num_fragments = 4
 	w_class = ITEM_SIZE_SMALL
 
+/obj/item/grenade/frag/high_yield/krak2
+	name = "Mechanicus Krak Grenade"
+	desc = "A potent anti armor grenade used by the Imperium of Man, mind the blast radius."
+	icon_state = "krak_grenade"
+	fragment_types = list(/obj/item/projectile/bullet/pellet/fragment/strong=1)
+	explosion_size = 5
+	num_fragments = 6
+	w_class = ITEM_SIZE_SMALL
+
 /obj/item/grenade/frag/high_yield/homemade
 	name = "Pipe Grenade"
 	desc = "A low yield explosive used by miners to clear out caves and demolish stone."

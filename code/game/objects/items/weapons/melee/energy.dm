@@ -302,7 +302,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	atom_flags = 0
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 6, TECH_COMBAT = 6)
 	attack_verb = list("attacked", "chopped", "cleaved", "torn", "cut", "slashed", "sliced")
 	hitsound = "slash_sound"
 	parry_sounds = list('sound/weapons/bladeparry1.ogg', 'sound/weapons/bladeparry2.ogg', 'sound/weapons/bladeparry3.ogg', 'sound/weapons/bladeparry4.ogg')
@@ -363,7 +363,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_LARGE
 	atom_flags = 0
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 1, TECH_COMBAT = 1)
 	attack_verb = list("mauled", "clawed", "cleaved", "torn", "cut")
 
 /obj/item/melee/energy/powersword/claw/integrated/activate(mob/living/user)

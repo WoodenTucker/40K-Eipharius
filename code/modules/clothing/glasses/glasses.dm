@@ -228,7 +228,7 @@
 	gender = NEUTER
 	icon_state = "material"
 	item_state = "glasses"
-	origin_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 3)
+	origin_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	vision_flags = SEE_OBJS
@@ -419,7 +419,7 @@
 	icon_state = "thermal"
 	item_state = "glasses"
 	action_button_name = "Toggle Goggles"
-	origin_tech = list(TECH_MAGNET = 3)
+	origin_tech = list(TECH_MAGNET = 2)
 	toggleable = 1
 	vision_flags = SEE_MOBS
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
@@ -434,7 +434,7 @@
 	name = "optical meson scanner"
 	desc = "Used for seeing walls, floors, and stuff through anything."
 	icon_state = "meson"
-	origin_tech = list(TECH_MAGNET = 3, TECH_ILLEGAL = 4)
+	origin_tech = list(TECH_MAGNET = 2, TECH_ILLEGAL = 2)
 
 /obj/item/clothing/glasses/thermal/plain
 	toggleable = 0

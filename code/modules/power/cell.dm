@@ -214,7 +214,7 @@
 /obj/item/cell/super
 	name = "enhanced power cell"
 	desc = "A very advanced power cell with increased energy density, for use in critical applications."
-	origin_tech = list(TECH_POWER = 5)
+	origin_tech = list(TECH_POWER = 3)
 	icon_state = "scell"
 	maxcharge = 2000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 70)
@@ -227,7 +227,7 @@
 /obj/item/cell/hyper
 	name = "superior power cell"
 	desc = "Pinnacle of power storage technology, this very expensive power cell provides the best energy density reachable with conventional electrochemical cells."
-	origin_tech = list(TECH_POWER = 6)
+	origin_tech = list(TECH_POWER = 3)
 	icon_state = "hpcell"
 	maxcharge = 3000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
@@ -263,7 +263,7 @@
 /obj/item/cell/lasgun
 	name = "lasgun power pack"
 	desc = "A small, portable capacitor power pack fit for a lasgun."
-	origin_tech = list(TECH_POWER = 6)
+	origin_tech = list(TECH_POWER = 2)
 	icon_state = "lgpp"
 	maxcharge = 3000
 	w_class = ITEM_SIZE_SMALL
@@ -273,7 +273,7 @@
 /obj/item/cell/lasgun/small
 	name = "Inferior lasgun power pack"
 	desc = "A lasgun cell made from sub-standard materials. Probably copper. Has half the charge of a normal lasgun cell."
-	origin_tech = list(TECH_POWER = 6)
+	origin_tech = list(TECH_POWER = 1)
 	icon_state = "lgpp_small"
 	maxcharge = 1500
 	w_class = ITEM_SIZE_SMALL
@@ -299,7 +299,7 @@
 /obj/item/cell/pulserifle
 	name = "Tau pulse weapon magazine"
 	desc = "A small, portable magazine for various Tau weaponry."
-	origin_tech = list(TECH_POWER = 6)
+	origin_tech = list(TECH_POWER = 4)
 	icon_state = "hdevice"
 	maxcharge = 3000
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
@@ -307,7 +307,7 @@
 /obj/item/cell/ion
 	name = "ION rifle crystal"
 	desc = "A small, portable magazine crystal for a Tau ION rifle."
-	origin_tech = list(TECH_POWER = 6)
+	origin_tech = list(TECH_POWER = 4)
 	icon_state = "ion"
 	maxcharge = 200
 	matter = list(DEFAULT_WALL_MATERIAL = 700, "glass" = 80)
@@ -315,7 +315,7 @@
 /obj/item/cell/pulserail
 	name = "rail pulse rifle magazine"
 	desc = "A small, portable magazine for a Tau rail pulse rifle."
-	origin_tech = list(TECH_POWER = 6)
+	origin_tech = list(TECH_POWER = 4)
 	icon_state = "rail"
 	maxcharge = 1000
 	matter = list(DEFAULT_WALL_MATERIAL = 750, "glass" = 150)

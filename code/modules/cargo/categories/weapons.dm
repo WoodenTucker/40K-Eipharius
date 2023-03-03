@@ -122,7 +122,7 @@
 	item_path = /obj/item/gun/projectile/automatic/messina
 
 /datum/cargo_entry/weapon/agripinaa
-	name = "Agripinaa Stub Rifle"
+	name = "Messina Stub Rifle"
 	cost = 60
 	item_path = /obj/item/gun/projectile/automatic/agripinaaii
 
@@ -262,7 +262,7 @@ datum/cargo_entry/weapon/accapistol
 	item_path = /obj/item/gun/projectile/revolver/detective/boscelot
 
 /datum/cargo_entry/weapon/agrirevolver
-	name = "Agripinaa Revolver"
+	name = "Messina Revolver"
 	cost = 50
 	item_path = /obj/item/gun/projectile/necros
 

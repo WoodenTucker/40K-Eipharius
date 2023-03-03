@@ -96,7 +96,7 @@
 	desc = "With the laser cannon, the lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. This incredible technology may help YOU achieve high excitation rates with small laser volumes!"
 	icon_state = "lasercannon"
 	item_state = null
-	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_POWER = 2)
 	slot_flags = SLOT_BELT|SLOT_BACK
 	one_hand_penalty = 2 //large and heavy
 	w_class = ITEM_SIZE_HUGE
@@ -120,7 +120,7 @@
 	desc = "A very rare plasma rifle, used by the finest people in the galaxy. It has a label on the backside which states (DANGER! Highly unstable liquid)."
 	icon_state = "chaosplaspistol"
 	item_state = null
-	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_POWER = 3)
 	slot_flags = SLOT_BELT|SLOT_BACK
 	one_hand_penalty = 2 //large and heavy
 	w_class = ITEM_SIZE_HUGE
@@ -179,7 +179,7 @@
 	fire_delay = 3
 	accuracy = 0.5
 	move_delay = 3
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun
 	charge_cost = 80
@@ -308,7 +308,7 @@
 	accuracy = 0.6
 	move_delay = 4
 	self_recharge = 1
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot
 	charge_cost = 240
@@ -337,7 +337,7 @@
 	move_delay = 4
 	self_recharge = 3
 	recharge_time = 9
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/hotshot/krieg
 	charge_cost = 290
@@ -379,7 +379,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 0
 	move_delay = 2.5
 	fire_delay = 1.85
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/pistol
 	charge_cost = 100
@@ -488,7 +488,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 2.2
 	accuracy = 1
 	move_delay = 5
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 7, TECH_MAGNET = 7)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/ion
 	cell_type = /obj/item/cell/ion
@@ -510,7 +510,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 8
 	accuracy = 0.5
 	move_delay = 2.5
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulsepistol
 	cell_type = /obj/item/cell/pulserifle
@@ -534,7 +534,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	one_hand_penalty = 1.8
 	accuracy = 0.5
 	move_delay = 4
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
 	cell_type = /obj/item/cell/pulserifle
@@ -550,7 +550,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 
 /obj/item/gun/energy/pulse/plasma
 	name = "plasma"
-	desc = "If you see this, please ping Zab on discord. Or complain that staff used the wrong object"
+	desc = "If you see this complain that staff used the wrong object"
 	icon = 'icons/obj/weapons/gun/energy.dmi'
 	icon_state = "prifle"
 	item_state = "ionrifle"
@@ -647,7 +647,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 13
 	accuracy = 0.8
 	move_delay = 3.5 //it a pistol
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 600
@@ -667,7 +667,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 13
 	move_delay = 3.5
 	recharge_time = 10
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 500
@@ -688,7 +688,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	accuracy = 1.2
 	fire_delay = 12
 	move_delay = 3 //it a pistol, but giga cool plasma
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 450
@@ -710,7 +710,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	fire_delay = 13
 	move_delay = 2 //it a pistol, but giga cool plasma
 	self_recharge = 9 // very good
-	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
+	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	projectile_type = /obj/item/projectile/energy/pulse/plasmapistol
 	charge_cost = 600
 	wielded_item_state = "pulse_pistol"

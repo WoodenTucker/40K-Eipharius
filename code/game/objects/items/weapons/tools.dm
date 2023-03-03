@@ -609,7 +609,7 @@
 	item_state = "welder"
 	desc = "This welding tool feels heavier in your possession than is normal. There appears to be no external fuel port."
 	w_class = ITEM_SIZE_LARGE
-	origin_tech = list(TECH_ENGINEERING = 4, TECH_PHORON = 3)
+	origin_tech = list(TECH_ENGINEERING = 2, TECH_PHORON = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 120)
 	tank = /obj/item/welder_tank/experimental
 

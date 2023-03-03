@@ -358,7 +358,7 @@
 	sales_price = 10
 
 /obj/item/newore/gems/diamond
-	name = "chunk of diamond"
+	name = "chunk of strange gem"
 	desc = "A chunk of diamond"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "diamond"
@@ -369,7 +369,7 @@
 	sales_price = 18
 
 /obj/item/newore/gems/diamond/cut
-	name = "cut diamond"
+	name = "cut strange gem"
 	desc = "A finely cut diamond"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "diamond_cut"
@@ -379,7 +379,7 @@
 	sales_price = 24
 
 /obj/item/newore/gems/diamond/fail
-	name = "damaged diamond"
+	name = "damaged strange gem"
 	desc = "The carver of this diamond messed up!"
 	icon = 'icons/obj/mining.dmi'
 	icon_state = "diamond_fail"
