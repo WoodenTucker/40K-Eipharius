@@ -766,7 +766,7 @@
 			if("Strange Alloy")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Strange Alloy.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 2
+				src.whatwemaking = 3
 				src.ismarked = 1
 				src.name = "Cobolt Ingot (Strange Alloy)"
 
@@ -861,7 +861,7 @@ kultrinium
 			if("Strange Alloy")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Strange Alloy.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 1
+				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Kultrinium Ingot (Plasma Flask)"
 
@@ -967,7 +967,7 @@ kultrinium
 			if("Strange Alloy")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Strange Alloy.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 4
+				src.whatwemaking = 5
 				src.ismarked = 1
 				src.name = "Diamantine Ingot (Strange Alloy)"
 
