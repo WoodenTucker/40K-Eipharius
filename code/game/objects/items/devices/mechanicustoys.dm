@@ -555,7 +555,7 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	desc = "A specialised mounted heavy bolter, designed for use on combat platforms."
 	icon_state = "ultrabolter"
 	w_class = ITEM_SIZE_HUGE
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	fire_sound = 'sound/weapons/gunshot/harbinger.ogg'
 	wielded_item_state = "autoshotty" // Do not remove this. We do not have any sprites for Bolters on-mob beyond this, it is perfect.
 	fire_delay = 2
@@ -566,7 +566,6 @@ obj/item/device/neuraladapter/attack(mob/living/carbon/human/skitarii/C, mob/liv
 	accuracy = 1
 	max_shots = 60
 	projectile_type = /obj/item/projectile/bullet/bolterrifle
-	origin_tech = null
 	self_recharge = 1
 	charge_meter = 0
 	charge_cost = 20

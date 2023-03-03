@@ -134,7 +134,7 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
 		H.witchblood()
-		H.say(":e I aspire to the unity of the blessed machine. I crave the strength and certainty of steel. I aspire to the purity of the blessed machine...")
+		H.say(":e I aspire to the unity of the blessed machine. I crave the strength and certainty of steel...")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
 		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving within a Forge Temple of the Admech. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
 

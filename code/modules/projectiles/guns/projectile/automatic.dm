@@ -6,7 +6,7 @@
 	load_method = MAGAZINE
 	max_shells = 20
 	caliber = "9mm"
-	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
 	slot_flags = SLOT_BELT | SLOT_BACK
 	ammo_type = /obj/item/ammo_casing/c9mm
 	automatic = 1

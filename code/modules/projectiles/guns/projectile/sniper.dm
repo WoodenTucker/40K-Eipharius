@@ -6,7 +6,7 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 	caliber = "14.5mm"
 	screen_shake = 2 //extra kickback
 	handle_casings = HOLD_CASINGS
@@ -93,7 +93,7 @@
 	fire_delay = 8
 	accuracy = 1
 	move_delay = 4
-	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 4000)
 	projectile_type = /obj/item/projectile/energy/las/lasgun/longlas
 	charge_cost = 300
@@ -250,7 +250,7 @@
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	slot_flags = SLOT_BACK|SLOT_S_STORE
-	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 	caliber = ".338"
 	screen_shake = 1.2 //extra kickback
 	max_shells = 10

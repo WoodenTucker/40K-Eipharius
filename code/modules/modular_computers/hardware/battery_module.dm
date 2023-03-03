@@ -30,7 +30,7 @@
 	name = "ultra battery"
 	desc = "A very advanced large power cell. It's often used as uninterruptable power supply for critical consoles or servers. It's rating is 200 Wh."
 	icon_state = "battery_ultra"
-	origin_tech = list(TECH_POWER = 5, TECH_ENGINEERING = 4)
+	origin_tech = list(TECH_POWER = 3, TECH_ENGINEERING = 3)
 	hardware_size = 3
 	battery_rating = 200
 

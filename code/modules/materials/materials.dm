@@ -254,10 +254,11 @@ var/list/name_to_material
 	icon_reinf = "reinf_stone"
 	icon_colour = "#007a00"
 	weight = 22
-	stack_origin_tech = list(TECH_MATERIAL = 5)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 
 /material/diamond
 	name = "diamond"
+	display_name = "strange alloy"
 	stack_type = /obj/item/stack/material/diamond
 	flags = MATERIAL_UNMELTABLE
 	cut_delay = 60
@@ -268,7 +269,7 @@ var/list/name_to_material
 	hardness = 100
 	brute_armor = 10
 	burn_armor = 50		// Diamond walls are immune to fire, therefore it makes sense for them to be almost undamageable by burn damage type.
-	stack_origin_tech = list(TECH_MATERIAL = 6)
+	stack_origin_tech = list(TECH_MATERIAL = 3)
 	conductive = 0
 
 /material/gold
@@ -278,7 +279,7 @@ var/list/name_to_material
 	weight = 25
 	hardness = 25
 	integrity = 100
-	stack_origin_tech = list(TECH_MATERIAL = 4)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
@@ -292,7 +293,7 @@ var/list/name_to_material
 	icon_colour = "#d1e6e3"
 	weight = 22
 	hardness = 50
-	stack_origin_tech = list(TECH_MATERIAL = 3)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
@@ -315,7 +316,7 @@ var/list/name_to_material
 	name = "supermatter"
 	icon_colour = "#ffff00"
 	radioactivity = 20
-	stack_origin_tech = list(TECH_BLUESPACE = 2, TECH_MATERIAL = 6, TECH_PHORON = 4)
+	stack_origin_tech = list(TECH_BLUESPACE = 3, TECH_MATERIAL = 3, TECH_PHORON = 4)
 	stack_type = null
 	luminescence = 3
 
@@ -570,7 +571,7 @@ var/list/name_to_material
 	burn_armor = 5
 	melting_point = T0C + 2000
 	icon_colour = "#fc2bc5"
-	stack_origin_tech = list(TECH_MATERIAL = 4)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 	created_window = /obj/structure/window/phoronbasic
 	wire_product = null
 	rod_product = /obj/item/stack/material/glass/phoronrglass
@@ -582,7 +583,7 @@ var/list/name_to_material
 	melting_point = T0C + 4000
 	display_name = "reinforced borosilicate glass"
 	stack_type = /obj/item/stack/material/glass/phoronrglass
-	stack_origin_tech = list(TECH_MATERIAL = 5)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 	composite_material = list() //todo
 	created_window = /obj/structure/window/phoronreinforced
 	stack_origin_tech = list(TECH_MATERIAL = 2)
@@ -614,7 +615,7 @@ var/list/name_to_material
 	name = "osmium"
 	stack_type = /obj/item/stack/material/osmium
 	icon_colour = "#9999ff"
-	stack_origin_tech = list(TECH_MATERIAL = 5)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
@@ -622,7 +623,7 @@ var/list/name_to_material
 	name = "tritium"
 	stack_type = /obj/item/stack/material/tritium
 	icon_colour = "#777777"
-	stack_origin_tech = list(TECH_MATERIAL = 5)
+	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 	is_fusion_fuel = 1
@@ -640,7 +641,7 @@ var/list/name_to_material
 	name = "mhydrogen"
 	stack_type = /obj/item/stack/material/mhydrogen
 	icon_colour = "#e6c5de"
-	stack_origin_tech = list(TECH_MATERIAL = 6, TECH_POWER = 6, TECH_MAGNET = 5)
+	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_MAGNET = 2)
 	is_fusion_fuel = 1
 
 /material/platinum

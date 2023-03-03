@@ -374,7 +374,6 @@
 	sharp = 1
 	hitsound = "slash_sound"
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 9
@@ -508,7 +507,6 @@
 	throw_range = 3
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
-	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	attack_verb = list("chopped", "sliced", "cut", "reaped")
 
 /obj/item/material/sword/commissword
@@ -523,7 +521,6 @@
 	sharp = 1
 	block_chance = 18
 	w_class = ITEM_SIZE_NORMAL
-	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
 	sales_price = 0
 	weapon_speed_delay = 7

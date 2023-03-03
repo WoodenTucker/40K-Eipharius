@@ -552,7 +552,7 @@
 	mineral = "silver"
 
 /obj/machinery/door/airlock/diamond
-	name = "Diamond Airlock"
+	name = "Strange Airlock"
 	icon = 'icons/obj/doors/Doordiamond.dmi'
 	mineral = "diamond"
 

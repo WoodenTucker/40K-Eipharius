@@ -1580,7 +1580,7 @@ obj/item/clothing/suit/armor
 	item_state = "wornmfp"
 	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1591,7 +1591,7 @@ obj/item/clothing/suit/armor
 	item_state = "biker_jacket"
 	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1602,7 +1602,7 @@ obj/item/clothing/suit/armor
 	item_state = "ghostechoe"
 	armor = list(melee = 44, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1613,7 +1613,7 @@ obj/item/clothing/suit/armor
 	item_state = "towntrench_special"
 	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1639,7 +1639,7 @@ obj/item/clothing/suit/armor
 	item_state = "exile"
 	armor = list(melee = 48, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1650,7 +1650,7 @@ obj/item/clothing/suit/armor
 	item_state = "tribal_armor"
 	armor = list(melee = 44, bullet = 37, laser = 37, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1659,7 +1659,7 @@ obj/item/clothing/suit/armor
 	desc = "Shoddy bone armor constructed from the gigantic bones of a local beast, the materials are surprisingly durable."
 	icon_state = "bonearmor"
 	item_state = "bonearmor"
-	armor = list(melee = 44, bullet = 32, laser = 32, energy = 25, bomb = 40, bio = 30, rad = 40)
+	armor = list(melee = 54, bullet = 39, laser = 39, energy = 25, bomb = 40, bio = 30, rad = 40)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -1701,7 +1701,7 @@ obj/item/clothing/suit/armor
 	item_state = "talon_duster"
 	armor = list(melee = 44, bullet = 39, laser = 39, energy = 25, bomb = 30, bio = 30, rad = 20)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1712,7 +1712,7 @@ obj/item/clothing/suit/armor
 	item_state = "ranger"
 	armor = list(melee = 49, bullet = 44, laser = 44, energy = 25, bomb = 38, bio = 30, rad = 30)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1755,7 +1755,7 @@ obj/item/clothing/suit/armor
 	item_state = "ranger2"
 	armor = list(melee = 41, bullet = 46, laser = 43, energy = 25, bomb = 25, bio = 30, rad = 31)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -1766,7 +1766,7 @@ obj/item/clothing/suit/armor
 	item_state = "ranger3"
 	armor = list(melee = 51, bullet = 41, laser = 35, energy = 25, bomb = 25, bio = 40, rad = 39)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 

@@ -8,7 +8,7 @@
 	icon = 'icons/obj/syringe.dmi'
 	item_state = "hypo"
 	icon_state = "hypo"
-	origin_tech = list(TECH_MATERIAL = 4, TECH_BIO = 5)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3)
 	amount_per_transfer_from_this = 5
 	unacidable = 1
 	volume = 30

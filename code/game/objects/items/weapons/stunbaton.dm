@@ -277,7 +277,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("beaten", "smashed")
 	armor_penetration = 65 //Power maul
 
@@ -336,7 +336,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("violated", "penetrated", "infested")
 	armor_penetration = 90 //Genestealer magic.
 no

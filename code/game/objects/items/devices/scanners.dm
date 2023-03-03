@@ -405,7 +405,7 @@ proc/get_wound_severity(var/damage_ratio, var/vital = 0)
 	name = "advanced mass spectrometer"
 	icon_state = "adv_spectrometer"
 	details = 1
-	origin_tech = list(TECH_MAGNET = 4, TECH_BIO = 2)
+	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 2)
 
 /obj/item/device/reagent_scanner
 	name = "reagent scanner"
@@ -453,13 +453,13 @@ proc/get_wound_severity(var/damage_ratio, var/vital = 0)
 	name = "advanced reagent scanner"
 	icon_state = "adv_spectrometer"
 	details = 1
-	origin_tech = list(TECH_MAGNET = 4, TECH_BIO = 2)
+	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 2)
 
 /obj/item/device/price_scanner
 	name = "price scanner"
 	desc = "Using an up-to-date database of various costs and prices, this device estimates the market price of an item up to 0.001% accuracy."
 	icon_state = "price_scanner"
-	origin_tech = list(TECH_MATERIAL = 6, TECH_MAGNET = 4)
+	origin_tech = list(TECH_MATERIAL = 2, TECH_MAGNET = 2)
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
 	throwforce = 0

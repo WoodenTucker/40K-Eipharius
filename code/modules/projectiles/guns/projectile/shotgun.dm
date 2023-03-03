@@ -29,7 +29,7 @@
 	force = 20
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
-	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	handle_casings = HOLD_CASINGS
 	var/recentpump = 0 // to prevent spammage
@@ -143,7 +143,7 @@
 	force = 20
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
 	caliber = "shotgun"
-	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1)
+	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1)
 	ammo_type = /obj/item/ammo_casing/shotgun
 	casingsound = 'sound/weapons/guns/misc/shotgun_fall.ogg'
 	wielded_item_state = "dshotgun1"

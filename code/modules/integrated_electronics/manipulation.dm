@@ -323,7 +323,7 @@
 	cooldown_per_use = 1 SECOND
 	var/obj/item/aicard
 	activators = list("Upwards", "Downwards", "Left", "Right")
-	origin_tech = list(TECH_DATA = 4)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/integrated_circuit/manipulation/ai/verb/open_menu()
 	set name = "Control Inputs"

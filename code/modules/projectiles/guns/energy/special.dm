@@ -3,7 +3,7 @@
 	desc = "The NT Mk60 EW Halicon is a man portable anti-armor weapon designed to disable mechanical threats, produced by NT. Not the best of its type."
 	icon_state = "ionrifle"
 	item_state = "ionrifle"
-	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	w_class = ITEM_SIZE_HUGE
 	force = 10
 	obj_flags =  OBJ_FLAG_CONDUCTIBLE
@@ -23,7 +23,7 @@
 	desc = "The NT Mk72 EW Preston is a personal defense weapon designed to disable mechanical threats."
 	icon_state = "ionpistol"
 	item_state = "ionpistol"
-	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
@@ -36,7 +36,7 @@
 	name = "mind flayer"
 	desc = "A custom-built weapon of some kind."
 	icon_state = "xray"
-	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	projectile_type = /obj/item/projectile/beam/mindflayer
 
 
@@ -127,7 +127,7 @@ obj/item/gun/energy/staff/focus
 	desc = "A deadly weapon wielded by Necron Warriors"
 	icon_state = "ns"
 	item_state = "ns"
-	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 4)
+	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 6)
 	w_class = ITEM_SIZE_NORMAL
 	force = 5
 	slot_flags = SLOT_BELT|SLOT_BACK
