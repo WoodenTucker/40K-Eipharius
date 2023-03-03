@@ -1152,8 +1152,8 @@ kultrinium
 				src.ismarked = 1
 				src.name = "Kultrinium Ingot (Vraks Pattern Heavy Stubber)"
 
-			if("Drusian Chainsword")
-				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Imperial Guard Chainsword.")
+			if("Drusian Pattern Chainsword")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Drusian Chainsword.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
 				src.whatwemaking = 7
 				src.ismarked = 1
