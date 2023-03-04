@@ -1020,7 +1020,7 @@ datum/job/ig/bullgryn
 	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
+	head = /obj/item/clothing/head/helmet/krieghelmet/sgt
 	mask = /obj/item/clothing/mask/gas/krieg
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/launcher/rcl_rifle

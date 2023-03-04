@@ -274,12 +274,21 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
+/obj/item/clothing/head/helmet/krieghelmet/sgt
+	name = "Krieg Watchmaster Helmet"
+	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production."
+	icon_state = "WatchHelm"
+	item_state = "WatchHelm"
+	armor = list(melee = 37, bullet = 37, laser = 34, energy = 35, bomb = 32, bio = 80, rad = 80)
+	cold_protection = HEAD
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
 /obj/item/clothing/head/helmet/krieghelmet/grenadier
 	name = "Krieg Mark IX/G Helmet"
 	desc = "Unlike the more common Cadian-pattern, the Mark IX is made out of durable plasteel, giving it higher defensive capabilities though at the cost of weight and production. This one has a decorated ceramite plate layered on top."
 	icon_state = "grenhelm"
 	item_state = "grenhelm"
-	armor = list(melee = 40, bullet = 45, laser = 33, energy = 35, bomb = 32, bio = 80, rad = 80)
+	armor = list(melee = 40, bullet = 45, laser = 33, energy = 35, bomb = 42, bio = 80, rad = 80)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
