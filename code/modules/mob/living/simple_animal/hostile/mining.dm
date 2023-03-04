@@ -15,8 +15,8 @@
 	response_disarm = "shoves aside"
 	response_harm   = "smacks"
 	stop_automated_movement_when_pulled = FALSE
-	maxHealth = 200
-	health = 200
+	maxHealth = 700
+	health = 700
 	melee_damage_lower = 10
 	melee_damage_upper = 25
 	attack_sound = 'sound/weapons/circsawhit.ogg'
@@ -81,13 +81,13 @@
 	rapid = TRUE
 
 /mob/living/simple_animal/hostile/mining_borg/behemoth
-	name = "Rogue Securitron"
+	name = "Man Of Iron"
 	desc = "Once employed by... some sort of corporation, these securitrons have been left to rot here for "
 	icon_state = "behemoth"
 	icon_living = "behemoth"
 	icon_dead = "behemoth_DEAD"
-	maxHealth = 300
-	health = 300
+	maxHealth = 1000
+	health = 1000
 	projectiletype = /obj/item/projectile/energy/laser/powerful //He shoots a big fuck you laser.
 	projectilesound = 'sound/weapons/Laser.ogg'
 	ranged = TRUE
