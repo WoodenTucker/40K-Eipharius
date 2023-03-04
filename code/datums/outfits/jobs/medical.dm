@@ -9,11 +9,11 @@
 	BACKPACK_OVERRIDE_MEDICAL
 
 /decl/hierarchy/outfit/job/medical/cmo
-	name = OUTFIT_JOB_NAME("Sister Superior")
+	name = OUTFIT_JOB_NAME("Abbess")
 	l_ear  = /obj/item/device/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/rank/medical
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/storage/sistersuperiorsuit
+	suit = /obj/item/clothing/suit/sisterofbattle
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_hand = /obj/item/storage/firstaid/adv
@@ -40,16 +40,15 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health
 	l_hand = /obj/item/storage/firstaid/adv
+	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical
 	head = /obj/item/clothing/head/hospitallerhelm
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/gun/energy/las/laspistol = 1,
-		/obj/item/cell/lasgun = 2,
+		/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
+		/obj/item/stack/thrones2/five = 1,
 		/obj/item/stack/thrones3/five = 1,)
 /* // sisterhood chemist
 /decl/hierarchy/outfit/job/medical/chemist

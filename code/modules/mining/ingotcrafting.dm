@@ -831,7 +831,6 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/stack/material/diamond(user.loc)
-				new /obj/item/stack/material/diamond(user.loc)
 				qdel(src)
 				return
 
@@ -914,7 +913,6 @@ kultrinium
 			if(2)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/stack/material/diamond(user.loc)
 				new /obj/item/stack/material/diamond(user.loc)
 				qdel(src)
 				return
@@ -1081,7 +1079,6 @@ kultrinium
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/stack/material/diamond(user.loc,1)
 				new /obj/item/stack/material/diamond(user.loc,1)
-				new /obj/item/stack/material/diamond(user.loc,1)
 				qdel(src)
 				return
 
@@ -1143,7 +1140,6 @@ kultrinium
 			if(1)
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
-				new /obj/item/stack/material/diamond(user.loc)
 				new /obj/item/stack/material/diamond(user.loc)
 				new /obj/item/stack/material/diamond(user.loc)
 				new /obj/item/stack/material/diamond(user.loc)
