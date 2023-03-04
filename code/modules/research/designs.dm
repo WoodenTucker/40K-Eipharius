@@ -550,6 +550,13 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/implantcase/explosive
 	sort_string = "MFAAG"
 
+/datum/design/item/implant/pad
+	name = "implant pad"
+	id = "implant_pad"
+	req_tech = list(TECH_MATERIAL = 2, TECH_BIO = 3, TECH_DATA = 4, TECH_BLUESPACE = 3, TECH_ILLEGAL = 4)
+	build_path = /obj/item/implantpad
+	sort_string = "MFAAH"
+
 /datum/design/item/AssembleDesignName()
 	..()
 	name = "[item_name]"
