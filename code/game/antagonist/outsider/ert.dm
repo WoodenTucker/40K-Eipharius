@@ -28,12 +28,12 @@ var/datum/antagonist/ert/ert
 /datum/antagonist/ert/create_default(var/mob/source)
 	var/mob/living/carbon/human/M = ..()
 	if(istype(M)) M.age = rand(25,45)
-	M.add_stats(rand(17,20), rand(15,18), rand(17,20), rand (14,16)) //strength, dexterity, endurance, intelligence
+	M.add_stats(rand(18,20), rand(16,18), rand(17,20), rand (14,16)) //strength, dexterity, endurance, intelligence
 	M.add_skills(rand(15,19),rand(15,18),rand(8,10),rand(8,10),rand(7,9)) //melee, ranged, med, eng, surgery
 
 /datum/antagonist/ert/New()
 	..()
-	leader_welcome_text = "As leader of the Emergency Response Team, you answer only to [GLOB.using_map.boss_name], and have authority to override the Rogue Trader where it is necessary to achieve your mission goals. It is recommended that you attempt to cooperate with the Rogue Trader where possible, however."
+	leader_welcome_text = "As leader of the Emergency Response Team, you answer only to [GLOB.using_map.boss_name], and have authority to override the Planetary Governor where it is necessary to achieve your mission goals. It is recommended that you attempt to cooperate with the Planetary Governor where possible, however."
 	ert = src
 
 /datum/antagonist/ert/greet(var/datum/mind/player)
