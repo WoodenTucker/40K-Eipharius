@@ -121,7 +121,7 @@
 "dO" = (/turf/simulated/shuttle/wall/corner/dark/nw{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "dP" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dX" = (/obj/machinery/light,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/tauship)
-"dZ" = (/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"dZ" = (/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/obj/effect/landmark/start/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "ed" = (/obj/structure/railing{dir = 4},/obj/effect/floor_decal/newcorner/reinforced{dir = 4},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/tauship)
 "ef" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 6; icon_state = "spline_plain"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "en" = (/obj/machinery/light,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
@@ -131,7 +131,7 @@
 "eu" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/reagent_containers/food/snacks/meatsteak,/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "eB" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/tauship)
 "eF" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
-"eJ" = (/obj/structure/table/rack,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/obj/item/gun/projectile/bolter_pistol,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"eJ" = (/obj/structure/table/rack,/obj/item/gun/projectile/boltrifle/sisterbolter,/obj/item/gun/projectile/boltrifle/sisterbolter,/obj/item/gun/projectile/boltrifle/sisterbolter,/obj/item/gun/projectile/boltrifle/sisterbolter,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "eN" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/effect/floor_decal/turf/brick/two,/obj/random/loot/meleespawner,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "eO" = (/turf/simulated/shuttle/wall/corner/dark/nw,/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "eT" = (/obj/structure/sign/imperial{pixel_y = -32; desc = "Undercover outfits. All armor and helmets upgraded with lightweight carapace. They're better than a standard cadian armor!"; name = "Undercover Equipment"},/obj/structure/torchwall/service{dir = 1; icon_state = "torchwall0"},/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -197,6 +197,7 @@
 "hN" = (/mob/living/simple_animal/hostile/smalldemon/chaos,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hO" = (/obj/effect/wingrille_spawn/reinforced_phoron/full,/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "hP" = (/obj/effect/floor_decal/carpet/red,/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet/red,/area/centcom)
+"hV" = (/obj/machinery/door/airlock/vault{name = "ERT Armory"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "hW" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/brick,/obj/structure/bed/chair/wood/wings{dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "id" = (/obj/structure/bed/chair/office/light{dir = 8; icon_state = "officechair_white_preview"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "ie" = (/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red,/obj/effect/floor_decal/carpet/red{dir = 6},/turf/simulated/floor/carpet/red,/area/centcom)
@@ -219,7 +220,7 @@
 "jc" = (/obj/machinery/computer/operating,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "jf" = (/obj/machinery/cooker/oven,/obj/effect/floor_decal/newcorner/plazaf/diagonal,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "jh" = (/obj/item/paper/crumpled/bloody{name = "Missive"; desc = "We wish to avoid open conflict with The Imperium, but accept that the protection of the castes overrides this necessity. Destroy and kill in defense of your people, but do not seek violence in the systems beyond our reach."},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"ji" = (/obj/machinery/door/blast/id_door,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"ji" = (/obj/machinery/door/airlock/vault{name = "Teleportarium"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "jn" = (/obj/structure/bed/chair/comfy/black{dir = 1; icon_state = "comfychair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "jo" = (/obj/structure/table/rack,/obj/item/archaeological_find/trap,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "jp" = (/obj/structure/table/standard,/obj/item/storage/firstaid/surgery,/obj/item/reagent_containers/spray/hair_remover,/obj/item/FixOVein,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
@@ -268,7 +269,7 @@
 "kj" = (/obj/structure/bed/chair/office/dark{dir = 4; icon_state = "officechair_dark_preview"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "kk" = (/obj/structure/table/rack,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/reagent_containers/hypospray/autoinjector/tau,/obj/item/storage/firstaid/combat,/obj/item/storage/firstaid/combat,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "kl" = (/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/tauship)
-"km" = (/obj/structure/table/rack,/obj/item/storage/backpack/ert,/obj/item/clothing/under/ert,/obj/item/clothing/head/helmet/space/deathsquad,/obj/item/clothing/suit/space/void/swat,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"km" = (/obj/structure/table/rack,/obj/item/clothing/suit/space/void/swat,/obj/item/clothing/suit/space/void/swat,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/head/helmet/space/deathsquad,/obj/item/clothing/head/helmet/space/deathsquad,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "kn" = (/obj/structure/table/rack,/obj/item/gun/energy/pulse/ionrifle,/obj/item/gun/energy/pulse/ionrifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "ko" = (/obj/structure/table/rack,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/obj/item/cell/pulserifle,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "kp" = (/obj/structure/filingcabinet,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
@@ -459,7 +460,7 @@
 "uz" = (/obj/structure/bed/chair/office/dark{dir = 1; icon_state = "officechair_dark_preview"},/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "uD" = (/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/plating/reinforced,/area/centcom)
 "uF" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/hangar)
-"uG" = (/obj/machinery/light,/obj/structure/table/rack,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"uG" = (/obj/machinery/light,/obj/structure/table/rack,/obj/item/gun/energy/las/lasgun/longlas,/obj/item/gun/energy/las/lasgun/longlas,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "uI" = (/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "uK" = (/obj/machinery/atmospherics/pipe/tank/oxygen,/turf/simulated/floor/plating,/area/centcom)
 "uN" = (/obj/item/modular_computer/console/preset/civilian,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
@@ -583,7 +584,7 @@
 "BC" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
 "BD" = (/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "BJ" = (/obj/structure/table/marble{color = "grey"},/obj/item/clothing/mask/chameleon,/obj/item/clothing/mask/chameleon,/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/mask/gas/security/agent,/obj/item/clothing/mask/gas/security/agent,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"BK" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"BK" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "BM" = (/turf/space,/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/groxpen)
 "BU" = (/obj/structure/table/reinforced{color = "grey"},/obj/item/defibrillator,/obj/item/defibrillator,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "BX" = (/turf/simulated/shuttle/wall/corner/dark/sw{color = "grey"},/turf/simulated/shuttle/wall/corner/dark/sw{color = "yellow"},/area/space)
@@ -737,7 +738,7 @@
 "LI" = (/obj/structure/railing,/obj/random/loot/randomarmor,/obj/item/clothing/head/bighat,/obj/item/gun/energy/pulse_rifle/pistol,/obj/item/clothing/under/syndicate/tacticool,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/krootship)
 "LJ" = (/turf/simulated/floor/tiled/dark{color = "grey"},/area/cadiaoutpost/oa/shuttle/inquisitionpact)
 "LN" = (/obj/machinery/vending/boozeomat,/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
-"LP" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/storage/backpack/ert,/obj/item/clothing/under/ert,/obj/item/clothing/head/helmet/space/deathsquad,/obj/item/clothing/suit/space/void/swat,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"LP" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/clothing/suit/space/void/swat,/obj/item/clothing/suit/space/void/swat,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/head/helmet/space/deathsquad,/obj/item/clothing/head/helmet/space/deathsquad,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "LT" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "LU" = (/obj/effect/decal/dead/two,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "LW" = (/obj/structure/table/woodentable,/obj/machinery/chemical_dispenser/bar_soft/full,/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -797,7 +798,7 @@
 "PJ" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/turf/plating,/obj/structure/table/rack/dark,/obj/item/grenade/fire,/obj/item/grenade/fire,/obj/item/grenade/fire,/obj/item/grenade/fire,/turf/space,/area/cadiaoutpost/oa/groxpen)
 "PM" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/arbiter{color = "grey"; maxhealth = 5000; name = "Frigate Bunks"; req_access = list()},/obj/effect/floor_decal/turf/plating,/turf/space,/area/cadiaoutpost/oa/groxpen)
 "PQ" = (/obj/structure/table/rack,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/obj/item/clothing/glasses/blacksun,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
-"PR" = (/obj/structure/table/rack,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"PR" = (/obj/structure/table/rack,/obj/item/gun/projectile/automatic/heavystubber,/obj/item/gun/projectile/automatic/heavystubber,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "PY" = (/turf/simulated/floor/tiled/freezer,/area/centcom)
 "PZ" = (/obj/machinery/mech_recharger,/obj/mecha/combat/tau{color = "red"},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "Qb" = (/obj/structure/table/standard{name = "plastic table frame"},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
@@ -811,7 +812,7 @@
 "Qt" = (/turf/simulated/shuttle/wall/corner/dark/ne{color = "grey"},/area/cadiaoutpost/oa/groxpen)
 "Qy" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 5},/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
 "Qz" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/item/modular_computer/console/preset/engineering,/turf/simulated/floor/tiled/dark,/area/centcom)
-"QC" = (/obj/structure/table/rack,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"QC" = (/obj/structure/table/rack,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/obj/item/ammo_magazine/bolt_rifle_magazine/sister,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "QG" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/computer/drone_control,/turf/simulated/floor/tiled/dark,/area/centcom)
 "QJ" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "QN" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/wood,/area/centcom)
@@ -840,7 +841,7 @@
 "Sx" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/rack/holorack,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/obj/item/reagent_containers/food/snacks/tastybread,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "SA" = (/turf/simulated/shuttle/wall/corner/blockwhite/nw,/turf/simulated/shuttle/wall/corner/dark/nw{color = "red"},/area/cadiaoutpost/oa/tauship)
 "SC" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/bodyscanner{dir = 4; icon_state = "body_scanner_0"},/turf/space,/area/cadiaoutpost/oa/groxpen)
-"SE" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"SE" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "SF" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/steel,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/material/knife/butch,/obj/item/pizzabox/meat,/obj/structure/torchwall/service{dir = 8; icon_state = "torchwall0"},/turf/simulated/wall/techno,/area/cadiaoutpost/gma/inquisitoracolyte)
 "SI" = (/obj/structure/table/standard,/obj/item/storage/firstaid/surgery,/obj/item/reagent_containers/spray/hair_remover,/obj/item/FixOVein,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "SL" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/computer/station_alert/engineering,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -865,7 +866,7 @@
 "TT" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "TX" = (/obj/effect/floor_decal/turf/brick/two,/obj/machinery/microwave,/obj/structure/table/steel,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ua" = (/obj/machinery/door/airlock/glass,/obj/effect/floor_decal/newcorner/bar/diagonal,/obj/effect/floor_decal/newcorner/red{dir = 4},/turf/simulated/floor/tiled/dark,/area/centcom)
-"Uc" = (/obj/structure/bed/chair/wood,/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"Uc" = (/obj/structure/bed/chair/wood,/obj/effect/landmark/start/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "Uf" = (/obj/structure/bed/chair,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Uk" = (/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "Ul" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -924,7 +925,7 @@
 "Xw" = (/obj/machinery/teleport/hub,/turf/simulated/floor/shuttle/darkred,/area/cadiaoutpost/oa/tauship)
 "Xx" = (/obj/machinery/button/remote/blast_door/id_scan{id = "taudrop"; pixel_x = 5; pixel_y = 0; req_access = list(209)},/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/tau1)
 "Xz" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
-"XA" = (/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"XA" = (/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/obj/effect/landmark/start/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "XE" = (/obj/structure/bed/padded,/turf/simulated/floor,/area/space)
 "XF" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/turf/plating,/obj/structure/table/rack/dark,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/turf/space,/area/cadiaoutpost/oa/groxpen)
 "XG" = (/turf/simulated/shuttle/wall{icon_state = "wall3"; dir = 6; color = "grey"},/area/cadiaoutpost/oa/groxpen)
@@ -968,7 +969,7 @@
 "ZO" = (/obj/structure/table/steel,/obj/item/paper,/obj/item/pen/multi,/turf/simulated/floor/tiled/dark,/area/centcom)
 "ZU" = (/obj/effect/floor_decal/carpet,/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/carpet,/area/centcom)
 "ZX" = (/obj/effect/floor_decal/turf/brick/two,/obj/machinery/cooker/fryer,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"ZZ" = (/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/obj/effect/landmark/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
+"ZZ" = (/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/obj/effect/landmark/start/ert,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 
 (1,1,1) = {"
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
@@ -1006,7 +1007,7 @@ axaxaxaxaxaxaxaxaxaxaxFNECFNaxOdFNFNYPrqFNFNXGaxfmvvfmaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxBuFNFNFNFNBuaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxKvoPyyklooLCUQwEWyklkloPyfaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBdZKBKBKBKBIRueVbVbVbVbVbNaVlVgBCVvVvWbWpVvyqVgVgYEXtLiJiJiHFXtXtXtXtQGYEhnhnhnvOyAFknikfkfvOOjFAFkyrvOhnoyYEvEaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxWGBuaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxpsoPoPoPoPoPoPklklklklklrMpJoPoPoPoPoPoPjtaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRKBKBKBKBKBKBKBTTKBIRueVbVbVbVbVbNaVlVgPpZUZUcaIsNNPcVgVgYEXzXtvKvKXtXtXtXtXtXtYEuDhnhnvOyAFksZEXEXvOCnpQqpyrvOhnhnYEvEaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxSAoPQSQSZbQSQSoPaokldXkldXlkoPoPTMklnRklsnoPjtaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIROVKBKBKBOVKBWkMHflIRCKueuevVVbzCUaVgYeVgVgVgVgYeVgVgVgYeYErBJbRmnHpAfOfkfkXtBbYEhnhnhneqvOvOvOvOvOvOvOvOvOvOSwhnhnYEvEaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxpsoPpPQSQSQSQSQSoPoPoPoPisoPoPoPoPkPkuoPklklkloPjtaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEGcGcjijiGcGkGkGkGkGkGcGkGkGkGkGkGkGcReYExSxSxSxSYEYEYEYEYEYEYEYEYEYEYEYEhOhOrNrNYEuDhnhnhnzjzjzjzjzjzjzjzjzjzjhnhnhnYEvEaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxpsoPpPQSQSQSQSQSoPoPoPoPisoPoPoPoPkPkuoPklklkloPjtaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEGcGchVhVGcGkGkGkGkGkGcGkGkGkGkGkGkGcReYExSxSxSxSYEYEYEYEYEYEYEYEYEYEYEYEhOhOrNrNYEuDhnhnhnzjzjzjzjzjzjzjzjzjzjhnhnhnYEvEaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxpsoPQSQSQSQSQSQSQSoPWLYdXwkljBPdjBoPoPoPoPklklklkloPjtaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRSEKBKBkmLPkmkmkmkmIRsyjHbkbkbktCIRvGwAPzPzPzaEYErYKzCCYEvEYEUpAlUpYEYErXROXtBbYEhnhnhnhnhnhnhnhnhnhnhnhnhnhnhnhnhnYEvEaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxoPQSBBfhgzQSQSQScboPzZjBkljBkljBdkoPoPoPoPzZkloPoPoPoPaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRBKKBKBKBKBKBKBKBKBIRKBsYuxuxuxiZIRPzPzPzPzPzPzYErYPYJZYEvEYEUpUpUpMYXtXtXtXtXtYEYEYEOrOrOrOrOrOrOrOrOrOrOrOrOrOrYEYEvEaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxoPQSCpGuCpQSQSQSQSoPCfrzCfkljBklcAoPTMklnRklklnRklTMoPaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxvEIRllKBKBKBKBKBKBKBpnGcKBHQuxuxuxiZIRPzPzbvCXPzPzYEPYPYJZYEvEYEUpUpUpYEQguKXtDVDVYEYEYEAUAUAUAUAUAUAUAUAUAUAUAUAUAUYEYEvEaxax

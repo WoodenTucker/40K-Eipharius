@@ -295,7 +295,7 @@ datum/job/ig/bullgryn
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
-	
+
 	auto_rifle_skill = 9
 	semi_rifle_skill = 9
 	sniper_skill = 9
