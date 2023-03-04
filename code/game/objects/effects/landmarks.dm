@@ -235,7 +235,11 @@ Template:
 /obj/effect/landmark/start/admin/astartes
 	name = "Astartes Envoy"
 
+// Special Roles, ERT and stuff //
 
+/obj/effect/landmark/start/ert
+	name = "Emergency Response Team"
+	icon_state = "adminroles"
 
 // watchman tdm culties //
 /obj/effect/landmark/start/watchman
