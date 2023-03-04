@@ -223,7 +223,7 @@
 
 /obj/item/gun/projectile/meltagun
 	name = "Melta Rifle"
-	desc = "Melta Guns are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
+	desc = "Melta Weapons are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
 	icon_state = "melta"
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
