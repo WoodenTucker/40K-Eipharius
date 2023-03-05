@@ -291,7 +291,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=50),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=50),
+		list(mode_name="5-round bursts", burst=5, fire_delay=3, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=50),
 		)
 
 
