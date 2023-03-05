@@ -267,18 +267,18 @@
 
 				<h2>Blight Grenade:</h2>
 				<h3>Grenade with a powerful payload of armor-melting blight strain. Turn the servants of the Corpse Emperor against him! .</h3>
-				Human head and pipe grenade offered on a rune of Nurgle.
+				Human head, liver and pipe grenade offered on a rune of Nurgle.
 
 				<h2>Child of the Grandfather:</h2>
 				<h3>Bring forth a little one to bless your cause.</h3>
-				Human Liver offered on a rune of Nurgle.
+				Human appendix offered on a rune of Nurgle.
 
 				<h2>Foetid Nganga:</h2>
 				<h3>A cauldron to concoct a powerful summoning.</h3>
 				Rodent meat offered on a rune of Nurgle.
 
 				<h2>Abominable Spawn:</h2>
-				<h3>Assemble and summon a blessed child of the Grandfather to fight your enemies.</h3>
+				<h3>Assemble and summon a blessed son of the Grandfather to fight your enemies.</h3>
 				Raise your favour to at least 30.
 				<ul>
 				<li>Add a Left Arm to the stew to create the LEFT ARM</li>
