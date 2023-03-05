@@ -30,9 +30,44 @@
 
 //Genestealer
 /decl/hierarchy/outfit/job/genestealer //really just for walking sounds
+	name = OUTFIT_JOB_NAME("Genestealer")
 	uniform = null
 	head = /obj/item/clothing/head/helmet/genestealer
 	suit = /obj/item/clothing/suit/storage/hooded/genestealer
+	shoes = /obj/item/clothing/shoes/genestealerfeet
+	glasses = /obj/item/clothing/glasses/tyranid
+	neck = null
+	back = null
+	l_ear = /obj/item/device/radio/headset/hivemind
+	l_hand = /obj/item/melee/powermaul/nidstun
+	belt = null
+	l_pocket = null
+	id = null
+	id_slot = null
+	pda_slot = null
+
+/decl/hierarchy/outfit/job/genestealer/tough
+	name = OUTFIT_JOB_NAME("Genestealer Tough")
+	uniform = null
+	head = /obj/item/clothing/head/helmet/genestealer/tough
+	suit = /obj/item/clothing/suit/storage/hooded/genestealer/tough
+	shoes = /obj/item/clothing/shoes/genestealerfeet
+	glasses = /obj/item/clothing/glasses/tyranid
+	neck = null
+	back = null
+	l_ear = /obj/item/device/radio/headset/hivemind
+	l_hand = /obj/item/melee/powermaul/nidstun
+	belt = null
+	l_pocket = null
+	id = null
+	id_slot = null
+	pda_slot = null
+
+/decl/hierarchy/outfit/job/genestealer/epic
+	name = OUTFIT_JOB_NAME("Genestealer Epic")
+	uniform = null
+	head = /obj/item/clothing/head/helmet/genestealer/epic
+	suit = /obj/item/clothing/suit/storage/hooded/genestealer/epic
 	shoes = /obj/item/clothing/shoes/genestealerfeet
 	glasses = /obj/item/clothing/glasses/tyranid
 	neck = null

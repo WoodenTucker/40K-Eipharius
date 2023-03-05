@@ -6,7 +6,7 @@ obj/item/circuitboard/rdserver
 	name = T_BOARD("R&D server")
 	build_path = /obj/machinery/r_n_d/server
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 3)
+	origin_tech = list(TECH_DATA = 2)
 	req_components = list(
 							/obj/item/stack/cable_coil = 2,
 							/obj/item/stock_parts/scanning_module = 1)
@@ -67,7 +67,7 @@ obj/item/circuitboard/rdserver
 	name = "Circuit board (NTNet Quantum Relay)"
 	build_path = /obj/machinery/ntnet_relay
 	board_type = "machine"
-	origin_tech = list(TECH_DATA = 4)
+	origin_tech = list(TECH_DATA = 2)
 	req_components = list(
 							/obj/item/stack/cable_coil = 15)
 

@@ -235,7 +235,11 @@ Template:
 /obj/effect/landmark/start/admin/astartes
 	name = "Astartes Envoy"
 
+// Special Roles, ERT and stuff //
 
+/obj/effect/landmark/start/ert
+	name = "Emergency Response Team"
+	icon_state = "adminroles"
 
 // watchman tdm culties //
 /obj/effect/landmark/start/watchman
@@ -353,7 +357,6 @@ Template:
 				/obj/item/ammo_magazine/c44 = 3,
 				/obj/item/cell/lasgun = 4,
 				/obj/item/cell/lasgun/small = 2,
-				/obj/item/ammo_magazine/mc9mm = 6,
 				/obj/item/ammo_magazine/mc45mm = 6,
 				/obj/item/ammo_box/shotgun = 1,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
@@ -407,7 +410,6 @@ Template:
 
 /obj/random/loot/randomammosidearm/spawn_choices()
 	return list(
-		/obj/item/ammo_magazine/mc9mm = 18,
 		/obj/item/ammo_magazine/mc45mm = 9,
 		/obj/item/ammo_magazine/a357 = 6,
 		/obj/item/ammo_magazine/handful/a50 = 3,
@@ -503,6 +505,7 @@ Template:
 /obj/random/loot/randomarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/militia = 1,
 				/obj/item/clothing/suit/cloak = 1,
+				/obj/item/clothing/suit/armor/brigandine = 1,
 				/obj/item/clothing/suit/armor/slaverobe = 1,
 				/obj/item/clothing/suit/armor/templar = 1,
 				/obj/item/clothing/suit/armor/hauberk = 1,
@@ -571,9 +574,9 @@ Template:
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 4,
 				/obj/item/stack/thrones2/ten = 1,
-				/obj/item/grenade/frag/high_yield/homemade = 5,
-				/obj/item/grenade/frag = 3,
-				/obj/item/grenade/frag/high_yield/krak = 3)
+				/obj/item/grenade/frag/high_yield/homemade = 3,
+				/obj/item/grenade/frag = 1,
+				/obj/item/grenade/frag/high_yield/krak = 1)
 
 /obj/random/loot/randomitemtown
 	name = "Random Item Pilgrim"
@@ -585,15 +588,15 @@ Template:
 				/obj/item/storage/box/ifak = 3,
 				/obj/item/storage/firstaid/adv = 1,
 				/obj/item/clothing/suit/armor/militia = 2,
-				/obj/item/melee/sword/combat_knife = 4,
+				/obj/item/melee/sword/combat_knife = 1,
 				/obj/item/melee/trench_axe = 1,
-				/obj/item/stack/thrones2/ten = 1,
+				/obj/item/stack/thrones2/ten = 2,
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 5,
 				/obj/item/storage/belt/utility/full = 2,
-				/obj/item/clothing/accessory/legguards = 3,
+				/obj/item/clothing/accessory/legguards = 2,
 				/obj/item/clothing/accessory/armguards/ballistic = 2,
-				/obj/item/grenade/frag/high_yield/homemade = 2)
+				/obj/item/grenade/frag/high_yield/homemade = 1)
 
 /// THIS IS THE END OF LOOT SPAWNERS. TO DO: Tech, Xenos Spawners.
 

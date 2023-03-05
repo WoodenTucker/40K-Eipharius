@@ -45,6 +45,7 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
+		H.say(":e The crude biomass they call a temple will eventually fail... and they will beg our kind to save them. But we are already saved. For the machine is immortal.")
 
 
 
@@ -90,8 +91,8 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		H.say(":e [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer upon the Soul of Reason, An Ark Cruiser of the Mechanicus.  Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. Lead Skitarii if needed.</font></b></span>")
+		H.say(":e OMVISS1@H &(47*TECHNICA)B(ADMECH)... transponder signal active.")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Enginseer resting within a Forge Temple of the Mechanicus constructed by the AdMech. Learn from the Explorator and Biologis. Craft blessed machine spirits in the forge. Teach the Tech Menials the basics. Lead Skitarii if needed.</font></b></span>")
 
 /datum/job/techmenial
 	title = "Tech Menial"
@@ -133,9 +134,9 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
 		H.witchblood()
-		H.say(":e [title] reporting for duty!")
+		H.say(":e I aspire to the unity of the blessed machine. I crave the strength and certainty of steel...")
 		H.adjustStaminaLoss(-INFINITY) // they aren't cyborg'd enough to not need to drink. The flesh is weak.
-		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving upon the Ark Cruiser, The Soul of Reason and the Tech-Priests aboard. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) You are a Tech-Menial, and you have been blessed with the privilege of serving within a Forge Temple of the Admech. You are inexperienced and learning. Ensure to learn much.</font></b></span>")
 
 // Biologis
 
@@ -158,8 +159,8 @@
 	access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
 	minimal_access = list(access_mechanicus, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, 56, access_heads, access_all_personal_lockers)
 	outfit_type = /decl/hierarchy/outfit/job/medical/biologis
-	auto_rifle_skill = 6
-	semi_rifle_skill = 6
+	auto_rifle_skill = 7
+	semi_rifle_skill = 7
 	sniper_skill = 8 //sometimes this motherfucker has to get his research material by himself
 	shotgun_skill = 6
 	lmg_skill = 6
@@ -171,8 +172,8 @@
 		..()
 		H.fully_replace_character_name("Biologis [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
-		H.add_stats(rand(13,18), rand(13,18), rand(14,17), rand(20,30)) //just as modified as the magos, if not more.
-		H.add_skills(rand(7,10),rand(7,10),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(13,18), rand(13,18), rand(20,24), rand(20,30)) //just as modified as the magos, if not more.
+		H.add_skills(rand(9,13),rand(7,10),rand(9,11),rand(9,10),rand(10,12)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 		H.bladder = -INFINITY
@@ -183,8 +184,8 @@
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
 		H.vice = null //off for now
-		H.say(":e [title] reporting for duty!")
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. You are an expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
+		H.say(":e The crude biomass they call a temple will eventually fail... and they will beg our kind to save them. But we are already saved. For the machine is immortal.")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis, resting within a Forge Temple of the Mechanicus constructed by the AdMech. You are an expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 //Walker here, why the fuck does this even exist? all Genetors research aliens, thats like, their speciality, who added this in? im not going to remove it for now but, idk why its here.
@@ -239,7 +240,7 @@
 		H.fully_replace_character_name("Explorator [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant()) //They literally open up dead bodies of xenos and humans alike, why would they be disgusted of organs and blood?
 		H.add_stats(rand(15,18), rand(15,18), rand(18,20), rand(20,30)) //just as modified as the magos, if not more.
-		H.add_skills(rand(8,11),rand(7,9),rand(8,10),rand(9,10),rand(8,10)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(8,11),rand(9,11),rand(8,10),rand(9,10),rand(8,10)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
 		H.warfare_faction = IMPERIUM
 
@@ -250,9 +251,9 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		H.vice = null //off for now
-		H.say(":e [title] reporting for duty!")
+		H.say(":e Memory cache integrity at 87%... Motive force appeased. Security apparatis functional. Non organics uncorrupted. Temple - status?")
 		H.get_idcard()?.access = list(access_mechanicus, access_heads, access_village, access_guard_common, access_medical, access_RC_announce, access_ai_upload, access_all_personal_lockers) // this may be unneeded or bloat for mechanicus, needs testing
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Explorator, upon the Soul of Reason, An Ark Cruiser of the Mechanicus. Your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Explorator, resting within a Forge Temple of the Mechanicus constructed by the AdMech. Your primary duty is to explore the planet and locate relics and research items. You have equal power alongside the Biologis. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
 //Skitarii

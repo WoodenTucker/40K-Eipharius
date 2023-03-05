@@ -271,13 +271,13 @@
 	var/stunforce = 0
 	var/agonyforce = 25
 	block_chance = 60
-	sales_price = 20
+	sales_price = 30
 	weapon_speed_delay = 5
 	sharp = FALSE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("beaten", "smashed")
 	armor_penetration = 65 //Power maul
 
@@ -328,15 +328,15 @@
 	str_requirement = 1
 	force = 2
 	stunforce = 0
-	agonyforce = 165
-	block_chance = 60
-	sales_price = 20
+	agonyforce = 200
+	block_chance = 50
+	sales_price = 0
 	weapon_speed_delay = 5
 	sharp = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
 	atom_flags = ATOM_FLAG_NO_BLOOD
-	origin_tech = list(TECH_MAGNET = 7, TECH_COMBAT = 7)
+	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 2)
 	attack_verb = list("violated", "penetrated", "infested")
 	armor_penetration = 90 //Genestealer magic.
 no

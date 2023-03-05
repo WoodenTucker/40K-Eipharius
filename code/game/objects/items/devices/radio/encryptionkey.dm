@@ -19,38 +19,38 @@
 	name = "imperial common encryption key"
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 //Again, possibly needs removing if we don't use squads
 /obj/item/device/encryptionkey/redsl_alpha
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1, "Alpha" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/redsl_bravo
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1, "Bravo" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/redsl_charlie
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1, "Charlie" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/redsl_delta
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1, "Delta" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/red_all
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1, "Alpha" = 1, "Bravo" = 1, "Charlie" = 1, "Delta" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 //guardsmen key
@@ -58,33 +58,33 @@
 	name = "guardsmen encryption key"
 	icon_state = "cypherkey"
 	channels = list("Guardsmen" = 1, "Imperial" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 //Again, possibly needs removing if we don't use squads
 /obj/item/device/encryptionkey/red_bravo
 	icon_state = "cypherkey"
 	channels = list("Bravo" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 /obj/item/device/encryptionkey/red_charlie
 	icon_state = "cypherkey"
 	channels = list("Charlie" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 /obj/item/device/encryptionkey/red_delta
 	icon_state = "cypherkey"
 	channels = list("Delta" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 //not presently used
 /obj/item/device/encryptionkey/red/medicae
 	icon_state = "cypherkey"
 	channels = list("Imperial" = 1, "Medical" = 1,)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1//Signifies that it de-crypts Syndicate transmissions
 
 
@@ -98,62 +98,62 @@
 /obj/item/device/encryptionkey/bluesl_alpha
 	icon_state = "cypherkey"
 	channels = list("Blue" = 1, "Blue Alpha" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/bluesl_bravo
 	icon_state = "cypherkey"
 	channels = list("Blue" = 1, "Blue Bravo" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/bluesl_charlie
 	icon_state = "cypherkey"
 	channels = list("Blue" = 1, "Blue Charlie" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/bluesl_delta
 	icon_state = "cypherkey"
 	channels = list("Blue" = 1, "Blue Delta" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/blue_all
 	icon_state = "cypherkey"
-	channels = list("Blue" = 1, "Blue Alpha" = 1, "Blue Bravo" = 1, "Blue Charlie" = 1, "Blue Delta" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	channels = list("Imperial" = 1, "Blue" = 1, "Blue Alpha" = 1, "Blue Bravo" = 1, "Blue Charlie" = 1, "Blue Delta" = 1)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/blue_alpha
 	icon_state = "cypherkey"
 	channels = list("Blue Alpha" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/blue_bravo
 	icon_state = "cypherkey"
 	channels = list("Blue Bravo" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/blue_charlie
 	icon_state = "cypherkey"
 	channels = list("Blue Charlie" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 /obj/item/device/encryptionkey/blue_delta
 	icon_state = "cypherkey"
 	channels = list("Blue Delta" = 1)
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 
 //unused?
 /obj/item/device/encryptionkey/binary
 	icon_state = "cypherkey"
 	translate_binary = 1
-	origin_tech = list(TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_ILLEGAL = 1)
 
 //com-linked guardsmen key
 /obj/item/device/encryptionkey/headset_sec

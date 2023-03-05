@@ -358,7 +358,7 @@
 	one_hand_penalty = 1.4
 	accuracy = 0.5
 	fire_delay= 3
-	sales_price = 30
+	sales_price = 20
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
@@ -483,6 +483,8 @@
 	accuracy = 1
 	sales_price = 26
 
+	caliber = "a763"
+	ammo_type = /obj/item/ammo_casing/a762
 	magazine_type = /obj/item/ammo_magazine/a762
 	allowed_magazines = /obj/item/ammo_magazine/a762
 
@@ -508,6 +510,8 @@
 	desc = "An advanced Scipio Pattern Rifle, this one has different fire modes and relative accuracy!"
 	icon_state = "commando"
 	item_state = "battlerifle"
+	caliber = "a556"
+	ammo_type = /obj/item/ammo_casing/a556
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
 	wielded_item_state = "combatrifle-wielded"
@@ -534,7 +538,7 @@
 	w_class = ITEM_SIZE_HUGE
 
 /obj/item/gun/projectile/automatic/heavystubber
-	name = "Agripinaa Pattern Heavy Stubber"
+	name = "Messina Pattern Heavy Stubber"
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling. Chambered in 5.56"
 	icon_state = "hmg"
 	item_state = "hmg"
@@ -544,7 +548,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 50
 	caliber = "a556"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	ammo_type = /obj/item/ammo_casing/a556
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/box/a556/mg08
@@ -599,7 +603,7 @@
 	burst = 1
 	fire_delay = 1.4
 	one_hand_penalty = 2.6 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 0
+	sales_price = 25
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -769,8 +773,8 @@
 	wielded_unloaded_icon = "schmeiser-e"
 
 /obj/item/gun/projectile/automatic/agripinaaii
-	name = "Agripinaa Pattern Stub rifle MK II"
-	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 5.56 rounds. "
+	name = "Messina Pattern Stub rifle"
+	desc = "A rugged stub rifle of Messina design, The MK II is semi automatic and highly damaging with it's 5.56 rounds. "
 	icon_state = "agripinaa" // Object Icon
 	item_state = "agripinaa" // On-Mob
 	unloaded_icon = "agripinaa_e" // Object Icon
@@ -858,7 +862,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
 	caliber = ".75"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	ammo_type = /obj/item/ammo_casing/bolter
 	load_method = MAGAZINE
 	magazine_type = /obj/item/ammo_magazine/bolt_rifle_magazine
@@ -946,7 +950,7 @@
 	force = 15
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
 	one_hand_penalty = 3 //its a bolter not a toy gun
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
@@ -981,7 +985,7 @@
 	str_requirement = 10
 	force = 18
 	max_shells = 30
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	load_method = MAGAZINE
 	one_hand_penalty = 2.2 //its a bolter not a toy gun
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
@@ -1038,7 +1042,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 30
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
+	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 1, TECH_ILLEGAL = 2)
 	one_hand_penalty = 2 //its still a bolter bro...
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -1247,7 +1251,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	max_shells = 1000 //Lots of ammo
 	caliber = "shuriken"
-	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 5, TECH_ILLEGAL = 3)
+	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_ILLEGAL = 3)
 	ammo_type = /obj/item/ammo_casing/shuriken
 	load_method = MAGAZINE
 	one_hand_penalty = 1 //Eldar magic

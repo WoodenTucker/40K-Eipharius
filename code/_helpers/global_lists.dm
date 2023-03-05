@@ -40,7 +40,7 @@ GLOBAL_LIST_INIT(vice_list, list(
 "Obscura",
 "Piety",
 "Neat Freak",
-"Parental Instincts",
+/*"Parental Instincts",*/
 "Glutton",
 "Random"
 ) )

@@ -538,7 +538,7 @@
 	icon = 'icons/obj/tools.dmi'
 	icon_state = "fuel_m"
 	w_class = ITEM_SIZE_SMALL
-	var/max_fuel = 20
+	var/max_fuel = 50
 	var/can_remove = 1
 
 /obj/item/welder_tank/Initialize()
@@ -568,7 +568,7 @@
 	name = "small welding fuel tank"
 	icon_state = "fuel_s"
 	w_class = ITEM_SIZE_TINY
-	max_fuel = 5
+	max_fuel = 15
 	can_remove = 0
 
 /obj/item/weldingtool/largetank
@@ -585,7 +585,7 @@
 	name = "large welding fuel tank"
 	icon_state = "fuel_l"
 	w_class = ITEM_SIZE_NORMAL
-	max_fuel = 40
+	max_fuel = 100
 
 /obj/item/weldingtool/hugetank
 	name = "upgraded welding tool"
@@ -601,7 +601,7 @@
 	name = "huge welding fuel tank"
 	icon_state = "fuel_h"
 	w_class = ITEM_SIZE_LARGE
-	max_fuel = 80
+	max_fuel = 150
 
 /obj/item/weldingtool/experimental
 	name = "experimental welding tool"
@@ -609,7 +609,7 @@
 	item_state = "welder"
 	desc = "This welding tool feels heavier in your possession than is normal. There appears to be no external fuel port."
 	w_class = ITEM_SIZE_LARGE
-	origin_tech = list(TECH_ENGINEERING = 4, TECH_PHORON = 3)
+	origin_tech = list(TECH_ENGINEERING = 2, TECH_PHORON = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 70, "glass" = 120)
 	tank = /obj/item/welder_tank/experimental
 
@@ -617,7 +617,7 @@
 	name = "experimental welding fuel tank"
 	icon_state = "fuel_x"
 	w_class = ITEM_SIZE_NORMAL
-	max_fuel = 40
+	max_fuel = 200
 	can_remove = 0
 	var/last_gen = 0
 
@@ -668,9 +668,9 @@
 	icon_state = "crowbar"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = SLOT_BELT
-	force = 7.0
-	throwforce = 7.0
-	throw_range = 3
+	force = 15.0
+	throwforce = 14.0
+	throw_range = 5
 	item_state = "crowbar"
 	hitsound = 'sound/weapons/crowbarhit2.ogg' //hitsound = 'sound/weapons/crowhit.ogg'//This sound effect has 0 punch, makes crowbars feel less powerful.
 	grab_sound = 'sound/items/handle/crowbar_pickup.ogg'
@@ -693,9 +693,9 @@
 	desc = "A steel bar with a wedge. It comes in a variety of configurations - collect them all."
 	icon_state = "prybar"
 	item_state = "crowbar"
-	force = 4.0
-	throwforce = 6.0
-	throw_range = 5
+	force = 14.0
+	throwforce = 16.0
+	throw_range = 6
 	w_class = ITEM_SIZE_SMALL
 	matter = list(DEFAULT_WALL_MATERIAL = 80)
 

@@ -5,17 +5,17 @@
 /obj/item/circuitboard/message_monitor
 	name = T_BOARD("message monitor console")
 	build_path = /obj/machinery/computer/message_monitor
-	origin_tech = list(TECH_DATA = 3)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/circuitboard/aiupload
 	name = T_BOARD("AI upload console")
 	build_path = /obj/machinery/computer/aiupload
-	origin_tech = list(TECH_DATA = 4)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/circuitboard/borgupload
 	name = T_BOARD("cyborg upload console")
 	build_path = /obj/machinery/computer/borgupload
-	origin_tech = list(TECH_DATA = 4)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/circuitboard/teleporter
 	name = T_BOARD("teleporter control console")
@@ -33,12 +33,12 @@
 /obj/item/circuitboard/robotics
 	name = T_BOARD("robotics control console")
 	build_path = /obj/machinery/computer/robotics
-	origin_tech = list(TECH_DATA = 3)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/circuitboard/drone_control
 	name = T_BOARD("drone control console")
 	build_path = /obj/machinery/computer/drone_control
-	origin_tech = list(TECH_DATA = 3)
+	origin_tech = list(TECH_DATA = 2)
 
 /obj/item/circuitboard/arcade/battle
 	name = T_BOARD("battle arcade machine")
@@ -90,7 +90,7 @@
 /obj/item/circuitboard/crew
 	name = T_BOARD("crew monitoring console")
 	build_path = /obj/machinery/computer/crew
-	origin_tech = list(TECH_DATA = 3, TECH_BIO = 2, TECH_MAGNET = 2)
+	origin_tech = list(TECH_DATA = 2, TECH_BIO = 2, TECH_MAGNET = 2)
 
 /obj/item/circuitboard/operating
 	name = T_BOARD("patient monitoring console")
@@ -136,7 +136,7 @@
 /obj/item/circuitboard/rcon_console
 	name = T_BOARD("RCON remote control console")
 	build_path = /obj/machinery/computer/rcon
-	origin_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 3, TECH_POWER = 5)
+	origin_tech = list(TECH_DATA = 2, TECH_ENGINEERING = 2, TECH_POWER = 2)
 
 /obj/item/circuitboard/account_database
 	name = T_BOARD("accounts uplink terminal")

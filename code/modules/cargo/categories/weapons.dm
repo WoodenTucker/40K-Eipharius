@@ -81,6 +81,11 @@
 	cost = 55
 	item_path = /obj/item/gun/projectile/shotgun/pump/voxlegis
 
+/datum/cargo_entry/weapon/shotgun2
+	name = "Belle Magrave Shotgun"
+	cost = 65
+	item_path = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
+
 /datum/cargo_entry/weapon/mk22
 	name = "Mk22 Autogun"
 	cost = 46
@@ -117,7 +122,7 @@
 	item_path = /obj/item/gun/projectile/automatic/messina
 
 /datum/cargo_entry/weapon/agripinaa
-	name = "Agripinaa Stub Rifle"
+	name = "Messina Stub Rifle"
 	cost = 60
 	item_path = /obj/item/gun/projectile/automatic/agripinaaii
 
@@ -257,7 +262,7 @@ datum/cargo_entry/weapon/accapistol
 	item_path = /obj/item/gun/projectile/revolver/detective/boscelot
 
 /datum/cargo_entry/weapon/agrirevolver
-	name = "Agripinaa Revolver"
+	name = "Messina Revolver"
 	cost = 50
 	item_path = /obj/item/gun/projectile/necros
 

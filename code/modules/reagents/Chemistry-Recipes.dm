@@ -1452,7 +1452,7 @@
 	result_amount = 2
 
 /datum/chemical_reaction/syndicatebomb
-	name = "Bloodpact Bomb"
+	name = "Strange Bomb"
 	result = /datum/reagent/ethanol/syndicatebomb
 	required_reagents = list(/datum/reagent/ethanol/beer = 1, /datum/reagent/ethanol/whiskey_cola = 1)
 	result_amount = 2

@@ -243,7 +243,7 @@
 
 				<h2>Corpulent Epidermis:</h2>
 				<h3>Purulent cysts toughen your hide somewhat.</h3>
-				Live rodent offered on a rune of Nurgle
+				Live rodent and a human head offered on a rune of Nurgle
 
 				<h2>Regenerating Boils:</h2>
 				<h3>Pus-infused growths cover your burns and open wounds at the cost of some toxic damage.</h3>

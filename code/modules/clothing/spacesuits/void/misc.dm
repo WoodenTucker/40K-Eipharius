@@ -19,10 +19,10 @@
 	armor = list(melee = 80, bullet = 65, laser = 70,energy = 35, bomb = 50, bio = 100, rad = 100)
 	flags_inv = HIDESHOES|HIDEJUMPSUIT
 	siemens_coefficient = 0.6
-	sales_price = 60
+	sales_price = 200
 
 /obj/item/clothing/suit/space/void/swat/New()
 	..()
-	slowdown_per_slot[slot_wear_suit] = 1
+	slowdown_per_slot[slot_wear_suit] = 0
 
 

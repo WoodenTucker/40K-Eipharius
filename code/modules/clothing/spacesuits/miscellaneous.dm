@@ -48,6 +48,7 @@
 	flags_inv = BLOCKHAIR
 	siemens_coefficient = 0.6
 
+
 //Space santa outfit suit
 /obj/item/clothing/head/helmet/space/santahat
 	name = "Santa's hat"

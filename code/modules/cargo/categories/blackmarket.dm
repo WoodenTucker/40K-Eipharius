@@ -1,6 +1,34 @@
 /datum/cargo_entry/bmarket
 	category = "Black Market"
 
+
+
+
+/datum/cargo_entry/bmarket/puzzle
+	name = "Xenos Puzzle Box"
+	cost = 25
+	item_path = /obj/item/rnd/illegal3
+
+/datum/cargo_entry/bmarket/fragment
+	name = "Archeotech Weapon Fragment"
+	cost = 70
+	item_path = /obj/item/rnd/combat5
+
+/datum/cargo_entry/bmarket/bio
+	name = "Glowing Rock"
+	cost = 31
+	item_path = /obj/item/rnd/biospace3
+
+/datum/cargo_entry/bmarket/bio
+	name = "Xenos Fuel Canister"
+	cost = 33
+	item_path = /obj/item/rnd/power3
+
+/datum/cargo_entry/bmarket/eng
+	name = "Xenos Alloy"
+	cost = 28
+	item_path = /obj/item/rnd/eng3
+
 /datum/cargo_entry/bmarket/ritualknife
 	name = "Ritual Knife"
 	cost = 69
@@ -30,6 +58,11 @@
 	name = "Magus Robes"
 	cost = 120
 	item_path = /obj/item/clothing/suit/cultrobes/magusred
+
+/datum/cargo_entry/bmarket/injectortau
+	name = "Tissue Rebuilder Syrette"
+	cost = 40
+	item_path = /obj/item/reagent_containers/hypospray/autoinjector/tau
 
 /datum/cargo_entry/bmarket/batterer
 	name = "Xenos Metal Foam Grenade"

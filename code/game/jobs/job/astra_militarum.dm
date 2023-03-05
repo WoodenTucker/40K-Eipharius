@@ -77,7 +77,6 @@
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.say(":v [title] reporting for duty!")
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
 		if(title == "Krieg Guardsman")
@@ -133,7 +132,6 @@
 		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
-		H.say(":v [title] reporting for duty!")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
@@ -171,7 +169,6 @@
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
-		H.say(":v [title] reporting for duty!")
 		H.witchblood()
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
@@ -219,6 +216,7 @@ datum/job/ig/bullgryn
 		H.add_stats(rand(20,30), rand(17,19), rand(15,18), rand (2,5)) //bullgryn are stronger and quicker than normal ogryn due to their advanced training
 		H.add_skills(rand(10,15),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.vice = null
 		to_chat(H, "<span class='notice'><b><font size=3>MA BEST FREND'S DA EMPRAH. FREND OF GOBERNOR. FREND OF DA COMESSAR. PROTECT DA LITTL UN'S!</font></b></span>")
 
 
@@ -253,8 +251,8 @@ datum/job/ig/bullgryn
 			H.assign_random_squad(IMPERIUM)
 		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
-		H.say(":v [title] reporting for duty!")
 		H.witchblood()
+		H.vice = null
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
@@ -297,7 +295,7 @@ datum/job/ig/bullgryn
 	access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 	minimal_access = list(access_security, access_guard_common, access_all_personal_lockers, access_village, access_guard_armory, access_armory )
 
-	
+
 	auto_rifle_skill = 9
 	semi_rifle_skill = 9
 	sniper_skill = 9
@@ -320,9 +318,9 @@ datum/job/ig/bullgryn
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
-		H.say(":v Sgt reporting for duty!")
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
+		H.vice = null
 
 		switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
@@ -408,7 +406,6 @@ datum/job/ig/bullgryn
 					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
-		H.say(":v [title] reporting for duty!")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 
@@ -416,8 +413,8 @@ datum/job/ig/bullgryn
 	title = "Kasrkin"
 	supervisors = "Your Sergeant, The Commissar and The Inquisition."
 	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0 // Disabled. Kasrkin roundstart presence often result in KOS fights with friendly lateparties.
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#23742a"
 	department_flag = SEC|COM
@@ -452,6 +449,7 @@ datum/job/ig/bullgryn
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
+		H.vice = null
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Kasrkin serving as an agent to the Imperial Guard Sergeant on behalf of your regiment, while expected to follow orders you ultimately serve the Astra Militarum and the memory of Cadia to whom you are loyal above all else. You unlike most veterans of the Astra Militarum are likely experienced and knowledgeable enough about Chaos to not be drinking the kool aid the Imperium gives to it's soldiers and instead serve because of your true understanding of what The God Emperor and all humanity stand against...</font></b></span>")
 
 
@@ -534,7 +532,7 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/whiteshield
 	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")
 	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/guardsman
+	suit = /obj/item/clothing/suit/armor/whiteshield
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
@@ -773,6 +771,21 @@ datum/job/ig/bullgryn
 //chaos bad boy guard
 
 /decl/hierarchy/outfit/job/bloodpact
+	uniform = /obj/item/clothing/under/rank/victorian/black
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
+	mask = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/device/flashlight/lantern
+	backpack_contents = list(
+	/obj/item/gun/energy/las/laspistol = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	)
+
+/decl/hierarchy/outfit/job/bloodpact2 // Old
 	uniform = /obj/item/clothing/under/guard/renegadeuniform
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -1007,7 +1020,7 @@ datum/job/ig/bullgryn
 	belt = /obj/item/melee/chain/mercycs
 	gloves = /obj/item/clothing/gloves/combat/krieg
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/helmet/krieghelmet
+	head = /obj/item/clothing/head/helmet/krieghelmet/sgt
 	mask = /obj/item/clothing/mask/gas/krieg
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/launcher/rcl_rifle

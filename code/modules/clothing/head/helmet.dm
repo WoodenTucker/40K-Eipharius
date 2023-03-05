@@ -142,14 +142,14 @@
 	name = "flak helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "guard"
-	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 0, rad = 10)
+	armor = list(melee = 25, bullet = 30, laser = 30, energy = 25, bomb = 25, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/head/helmet/scion
 	name = "scion helmet"
 	desc = "A solid helmet made from several layers of ablative and impact-resistant materials. A good helmet to wear if you're not looking to catch a skull-full of shrapnel."
 	icon_state = "helmetNVG"
-	armor = list(melee = 35, bullet = 35, laser = 35, energy = 35, bomb = 35, bio = 0, rad = 10)
+	armor = list(melee = 35, bullet = 40, laser = 40, energy = 35, bomb = 35, bio = 0, rad = 10)
 	siemens_coefficient = 0.6
 	sales_price = 25
 
@@ -164,12 +164,22 @@
 /obj/item/clothing/head/helmet/genestealer
 	name = "tyranid scale hide"
 	desc = "The hide of a Tyranid Genestealer"
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 15, bomb = 30, bio = 100, rad = 100)
 	icon_state = "gsfeet"
 	item_state = "gsfeet"
 	canremove = 0
 	unacidable = 1
 	species_restricted = list(SPECIES_TYRANID)
+
+/obj/item/clothing/head/helmet/genestealer/tough
+	name = "tyranid chitin"
+	desc = "The hide of a Tyranid..."
+	armor = list(melee = 50, bullet = 45, laser = 45, energy = 20, bomb = 40, bio = 100, rad = 100)
+
+/obj/item/clothing/head/helmet/genestealer/epic
+	name = "tyranid chitin"
+	desc = "The hide of a Tyranid..."
+	armor = list(melee = 75, bullet = 65, laser = 65, energy = 20, bomb = 50, bio = 100, rad = 100)
 
 /obj/item/clothing/head/helmet/sentryhelm
 	name = "Sentry Helmet"
@@ -184,12 +194,18 @@
 	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
 	icon_state = "ork_helm"
 	item_state = "ork_helm"
-	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 25, bio = 0, rad = 0)
+	armor = list(melee = 50, bullet = 44, laser = 44, energy = 25, bomb = 25, bio = 0, rad = 0)
 	siemens_coefficient = 1
 	body_parts_covered = HEAD
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-	sales_price = 10
+
+/obj/item/clothing/head/helmet/orkhelmet/warboss
+	name = "Boss's Elmet"
+	desc = "A genioos mekboy 'ad da bright idea of gluin' spikey bits on sum scrap and 'ammering it a tad. Now ya can 'ear it as a helm! Lookz gud against em boolets."
+	icon_state = "ork_helm"
+	item_state = "ork_helm"
+	armor = list(melee = 85, bullet = 85, laser = 85, energy = 25, bomb = 25, bio = 0, rad = 0)
 
 /obj/item/clothing/head/helmet/orkhelmet/leather
 	name = "Boy's Letha Helmet"
@@ -197,7 +213,7 @@
 	icon_state = "orkhelmet"
 	item_state = "orkhelmet"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 20, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 35, laser = 35, energy = 20, bomb = 20, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/horns
@@ -206,7 +222,7 @@
 	icon_state = "orkhelmethorns"
 	item_state = "orkhelmethorns"
 	cold_protection = HEAD
-	armor = list(melee = 30, bullet = 15, laser = 20, energy = 10, bomb = 30, bio = 0, rad = 0)
+	armor = list(melee = 45, bullet = 35, laser = 35, energy = 10, bomb = 30, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/sight
@@ -215,7 +231,7 @@
 	icon_state = "orkhelmetsight"
 	item_state = "orkhelmetsight"
 	cold_protection = HEAD
-	armor = list(melee = 20, bullet = 20, laser = 15, energy = 20, bomb = 20, bio = 0, rad = 0)
+	armor = list(melee = 35, bullet = 35, laser = 48, energy = 20, bomb = 20, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/fur
@@ -224,7 +240,7 @@
 	icon_state = "orkhelmetfur"
 	item_state = "orkhelmetfur"
 	cold_protection = HEAD
-	armor = list(melee = 25, bullet = 20, laser = 20, energy = 30, bomb = 60, bio = 0, rad = 0)
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 30, bomb = 60, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/helmet/orkhelmet/knot
@@ -233,7 +249,7 @@
 	icon_state = "orkknot"
 	item_state = "orkknot"
 	cold_protection = HEAD
-	armor = list(melee = 15, bullet = 10, laser = 10, energy = 10, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 10, bomb = 20, bio = 0, rad = 0)
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 

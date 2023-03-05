@@ -18,7 +18,7 @@
 	var/active
 	var/can_open = 0
 	var/last_state
-	var/integrity = 650
+	var/integrity = 2000
 	var/construction_stage
 	var/hitsound = 'sound/weapons/Genhit.ogg'
 	var/floor_type = /turf/simulated/floor/plating //turf it leaves after destruction

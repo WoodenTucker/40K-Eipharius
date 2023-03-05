@@ -106,21 +106,21 @@ var/list/holder_mob_icon_cache = list()
 
 //Mob specific holders.
 /obj/item/holder/diona
-	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 5)
+	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 3)
 	slot_flags = SLOT_HEAD | SLOT_OCLOTHING | SLOT_HOLSTER
 
 /obj/item/holder/drone
-	origin_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 5)
+	origin_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 3)
 
 /obj/item/holder/mouse
 	w_class = ITEM_SIZE_TINY
 
 /obj/item/holder/borer
-	origin_tech = list(TECH_BIO = 6)
+	origin_tech = list(TECH_BIO = 3)
 
 //need own subtype to work with recipies
 /obj/item/holder/corgi
-	origin_tech = list(TECH_BIO = 4)
+	origin_tech = list(TECH_BIO = 3)
 
 /obj/item/holder/attackby(obj/item/W as obj, mob/user as mob)
 	for(var/mob/M in src.contents)

@@ -119,7 +119,7 @@
 	amount = 50
 
 /obj/item/stack/material/diamond
-	name = "diamond"
+	name = "strange alloy"
 	icon_state = "sheet-diamond"
 	default_type = "diamond"
 	icon = 'icons/obj/items.dmi'

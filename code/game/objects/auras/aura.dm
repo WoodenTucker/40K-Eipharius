@@ -161,32 +161,33 @@ They should also be used for when you want to effect the ENTIRE mob, like having
 	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	can_regenerate_organs = TRUE
-	brute_mult = 5
-	fire_mult = 5
-	tox_mult = 5
-	organheal = 10
+	brute_mult = 33 // Value of 10 = 1 per second. Bleeding slows this down a lot, so a minimum of 15-20 is needed to stop bleeding.
+	fire_mult = 27
+	tox_mult = 5 // We don't want toxin to heal as quickly as we want death to still be possible -- only slowed down. Not stopped.
+	organheal = 0.3 // Leave this as is. Any higher and you become god.
 
 /obj/aura/regenerating/human/ork
-	brute_mult = 3
-	fire_mult = 5
+	can_regenerate_organs = TRUE
+	brute_mult = 39
+	fire_mult = 30
 	tox_mult = 2
-
+	organheal = 0.3
 
 /obj/aura/regenerating/human/nid
 	can_regenerate_organs = TRUE
-	brute_mult = 10
-	fire_mult = 4
-	tox_mult = 2 //confirms your kills or they will get back up eventually.
-	organheal = 3
+	brute_mult = 38
+	fire_mult = 38
+	tox_mult = 30
+	organheal = 0.6
 
 /obj/aura/regenerating/human/ultimate
 	//var/regen_message = "<span class='warning'>Your body throbs as you feel your body regenerates.</span>"
 	//var/innate_heal = TRUE // Whether the aura is on, basically.
 	can_regenerate_organs = TRUE
-	brute_mult = 50
-	fire_mult = 50
-	tox_mult = 50
-	organheal = 25
+	brute_mult = 45
+	fire_mult = 45
+	tox_mult = 8
+	organheal = 0.7
 
 
 /*/obj/aura/regenerating/human/astartes/life_tick()

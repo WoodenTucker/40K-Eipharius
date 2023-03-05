@@ -187,7 +187,7 @@
 	mag_type = MAGAZINE
 	caliber = "763"
 	matter = list(DEFAULT_WALL_MATERIAL = 1800)
-	ammo_type = /obj/item/ammo_casing/brifle
+	ammo_type = /obj/item/ammo_casing/a762
 	max_ammo = 20 //if we lived in a world where normal mags had 30 rounds, this would be a 20 round mag
 	multiple_sprites = 1
 
@@ -333,8 +333,8 @@
 //-----SPECIAL BOLTER MAGS-----
 /obj/item/ammo_magazine/bolt_pistol_magazine/ms
 	name = "Metal Storm Boltpistol Magazine"
-	icon_state = "tinyersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -347,8 +347,8 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/ms
 	name = "Metal Storm Bolter Magazine"
-	icon_state = "ersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -361,8 +361,8 @@
 
 /obj/item/ammo_magazine/bolt_pistol_magazine/kp
 	name = "Kraken Penetrator Boltpistol Magazine"
-	icon_state = "krakenersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "boltyp"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -375,8 +375,8 @@
 
 /obj/item/ammo_magazine/bolt_rifle_magazine/kp
 	name = "Kraken Penetrator Bolter Magazine"
-	icon_state = "krakenersatz"
-	origin_tech = list(TECH_COMBAT = 4)
+	icon_state = "bolty"
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = ".75"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
@@ -391,7 +391,7 @@
 /obj/item/ammo_magazine/melta
 	name = "Melta Canister"
 	icon_state = "flamer"
-	origin_tech = list(TECH_COMBAT = 6)
+	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "melta"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
