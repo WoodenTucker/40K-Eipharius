@@ -5,7 +5,8 @@
 	school = "illusion"
 	charge_max = 300
 	spell_flags = 0
-	invocation_type = SpI_NONE
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 5
 	max_targets = 1
 	compatible_mobs = list(/mob/living/carbon/human)

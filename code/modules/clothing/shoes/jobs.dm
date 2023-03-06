@@ -87,7 +87,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 20, bio = 0, rad = 80)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 40, bomb = 20, bio = 0, rad = 80)
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
@@ -98,7 +98,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 80, bullet = 30, laser = 30, energy = 50, bomb = 20, bio = 0, rad = 100) //Slightly changed defensive values.
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 50, bomb = 20, bio = 0, rad = 100) //Slightly changed defensive values.
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
@@ -109,7 +109,7 @@
 	icon_state = "skitshoes"
 	item_state = "skitshoes"
 	siemens_coefficient = 1
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 60, bomb = 60, bio = 0, rad = 160)//Heavily armoured, but very heavy.
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP|ITEM_FLAG_NODROP
 	canremove = FALSE
@@ -119,7 +119,7 @@
 	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	armor = list(melee = 40, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 20, bio = 0, rad = 60)
 	siemens_coefficient = 1
 	can_hold_knife = 1
 	unacidable = 1
@@ -131,7 +131,7 @@
 	desc = "Cybernetic legs scurry the Tech-priest where he is needed."
 	icon_state = "techpriest"
 	item_state = "techpriest"
-	armor = list(melee = 40, bullet = 10, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 20, bullet = 10, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	unacidable = 1
@@ -144,7 +144,7 @@
 	desc = "A shined pair of shoes"
 	icon_state = "vigilante_boots"
 	item_state = "vigilante_boots"
-	armor = list(melee = 30, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
+	armor = list(melee = 20, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	item_flags = ITEM_FLAG_NOSLIP
@@ -171,7 +171,7 @@
 	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
 	icon_state = "jackboots"
 	item_state = "jackboots"
-	armor = list(melee = 30, bullet = 30, laser = 30, energy = 5, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 5, bomb = 10, bio = 0, rad = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -180,7 +180,7 @@
 	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
 	icon_state = "jackboots"
 	item_state = "jackboots"
-	armor = list(melee = 40, bullet = 20, laser = 30, energy = 5, bomb = 10, bio = 0, rad = 0)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 5, bomb = 10, bio = 0, rad = 0)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -194,7 +194,7 @@
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
 	icon_state = "kriegboots"
 	item_state = "kriegboots"
-	armor = list(melee = 20, bullet = 30, laser = 40, energy = 30, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 40, bio = 100, rad = 100)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -203,7 +203,7 @@
 	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium. Though, in this particular case they have lamented to armoring their own."
 	icon_state = "grenboots"
 	item_state = "grenboots"
-	armor = list(melee = 40, bullet = 40, laser = 50, energy = 40, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 40, bomb = 40, bio = 100, rad = 100)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 
@@ -216,7 +216,7 @@
 	species_restricted = list(SPECIES_HUMAN)
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 30, bomb = 40, bio = 100, rad = 100)
+	armor = list(melee = 20, bullet = 20, laser = 20, energy = 30, bomb = 40, bio = 100, rad = 100)
 	item_flags = ITEM_FLAG_NOSLIP
 
 // Astartes Stuff
@@ -328,7 +328,7 @@
 	icon_state = "inqshoes"
 	item_state = "inqshoes"
 	force = 3
-	armor = list(melee = 60, bullet = 60, laser = 60, energy = 60, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 60, bomb = 50, bio = 100, rad = 100)
 	siemens_coefficient = 0.7
 	cold_protection = FEET
 	min_cold_protection_temperature = HELMET_MIN_COLD_PROTECTION_TEMPERATURE
@@ -340,7 +340,7 @@
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	force = 3
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 25, bio = 70, rad = 70)
+	armor = list(melee = 30, bullet = 30, laser = 30, energy = 40, bomb = 25, bio = 70, rad = 70)
 	siemens_coefficient = 0.7
 	can_hold_knife = 1
 	cold_protection = FEET
@@ -367,6 +367,7 @@
 	item_state = "None"
 	canremove = 0
 	unacidable = 1
+	armor = list(melee = 35, bullet = 30, laser = 35, energy = 45, bomb = 15, bio = 40, rad = 0)
 	item_flags = ITEM_FLAG_NOSLIP
 
 // Genestealer
@@ -379,6 +380,7 @@
 	canremove = 0
 	unacidable = 1
 	item_flags = ITEM_FLAG_NOSLIP
+	armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
 	species_restricted = list(SPECIES_TYRANID)
 
 // Ork
@@ -389,6 +391,7 @@
 	icon_state = "ork_boots"
 	item_state = "ork_boots"
 	species_restricted = list(SPECIES_ORK)
+	armor = list(melee = 35, bullet = 50, laser = 45, energy = 45, bomb = 15, bio = 40, rad = 0)
 	canremove = 0
 	item_flags = ITEM_FLAG_NOSLIP
 

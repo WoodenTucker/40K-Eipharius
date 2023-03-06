@@ -562,7 +562,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	self_recharge = 1
 	recharge_time = 14 // With a fire delay of 19. You fire every 2.3 seconds. 1 recharge time is 1 second. Keep recharges to 1/6 and a bit per shot. We want people to NEED to reload in combat.
 	move_delay = 6 //dont want speedy bois
-	fire_delay = 10
+	fire_delay = 15
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
 	projectile_type = /obj/item/projectile/energy/pulse/pulserifle
@@ -572,14 +572,14 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	wielded_item_state = "ionrifle-wielded"
 	var/plasma_overheat = 1 // Keeping track on how overheated the gun is
 	var/plasma_overheat_decay = 2 // The cooling of the gun per tick
-	var/plasma_overheat_max = 150 // When the gun exploads
+	var/plasma_overheat_max = 190 // When the gun exploads
 	Fire(atom/target, mob/living/user)
 		if(plasma_overheat >= 50)
-			to_chat(user, "The barrel starts to glow! You can feel heat comming from it.")
+			to_chat(user, "THE BARREL STARTS TO GLOW.")
 		if(plasma_overheat >= 90)
-			to_chat(user, "You can feel the skin on your hands starting to burn.")
-		if(plasma_overheat >= 120)
-			to_chat(user, "You see a bright light comming from your weapon!")
+			to_chat(user, "OVERHEAT WARNING.")
+		if(plasma_overheat >= 150)
+			to_chat(user, "CATASTROPHIC FAILURE IMMINENT.")
 		..()
 		plasma_overheat += 15 // adding 15 heat for every pulling of the trigger (learn not to spam the fucking gun)
 	Process()
@@ -606,8 +606,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_HUGE
 	force = 12
 	one_hand_penalty = 2 //heavy af fam
-	accuracy = 1.4
-	fire_delay = 13
+	accuracy = 0.8
+	fire_delay = 18
 	move_delay = 6 //dont want speedy bois
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -626,8 +626,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	w_class = ITEM_SIZE_LARGE
 	force = 10
 	one_hand_penalty = 1.1
-	fire_delay = 14.5
-	accuracy = 1
+	fire_delay = 18.5
+	accuracy = 0.5
 	move_delay = 4 //it a pistol, but giga cool plasma
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -644,8 +644,8 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	item_state = "pulse_pistol"
 	force = 12
 	one_hand_penalty = 1
-	fire_delay = 13
-	accuracy = 0.8
+	fire_delay = 17.5
+	accuracy = 0.5
 	move_delay = 3.5 //it a pistol
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -664,7 +664,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 0.8 //until plasma is better balanced, wield this fancy one.
 	accuracy = 1.1
-	fire_delay = 13
+	fire_delay = 17
 	move_delay = 3.5
 	recharge_time = 10
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 4)
@@ -686,7 +686,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 0.6 //change later?
 	accuracy = 1.2
-	fire_delay = 12
+	fire_delay = 16
 	move_delay = 3 //it a pistol, but giga cool plasma
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
@@ -707,7 +707,7 @@ obj/item/gun/energy/las/hotshot/bloodpact
 	force = 10
 	one_hand_penalty = 0.7 //change later?
 	accuracy = 1.1
-	fire_delay = 13
+	fire_delay = 17
 	move_delay = 2 //it a pistol, but giga cool plasma
 	self_recharge = 9 // very good
 	origin_tech = list(TECH_COMBAT = 5, TECH_MAGNET = 5)

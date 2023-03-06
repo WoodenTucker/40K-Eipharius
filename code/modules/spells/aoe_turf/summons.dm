@@ -16,8 +16,8 @@
 	school = "conjuration"
 	charge_max = 1200
 	spell_flags = NEEDSCLOTHES
-	invocation = "Nouk Fhumm Sacp Risska!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 1
 
 	summon_type = list(/mob/living/simple_animal/hostile/carp)
@@ -31,8 +31,8 @@
 	school = "conjuration"
 	charge_max = 1200
 	spell_flags = 0
-	invocation = "Ia-Ia! Naomesnalia!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	summon_amt = 10
 	range = 3
 
@@ -47,8 +47,8 @@
 	school = "illusion"
 	charge_max = 1200
 	spell_flags = NEEDSCLOTHES
-	invocation = "Nouk Fhunhm Sacp Risska!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 1
 
 	duration = 600

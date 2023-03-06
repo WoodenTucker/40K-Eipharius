@@ -5,8 +5,8 @@
 	school = "conjuration"
 	charge_max = 150
 	spell_flags = NEEDSCLOTHES
-	invocation = "Forti Gy-Ama!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 7
 	level_max = list(Sp_TOTAL = 3, Sp_SPEED = 3, Sp_POWER = 3)
 	cooldown_min = 90 //15 deciseconds reduction per rank
@@ -15,14 +15,14 @@
 
 	proj_type = /obj/item/projectile/spell_projectile/seeking/magic_missile
 	duration = 10
-	proj_step_delay = 5
+	proj_step_delay = 2
 
 	hud_state = "wiz_mm"
 
 	amt_paralysis = 3
 	amt_stunned = 3
 
-	amt_dam_fire = 10
+	amt_dam_fire = 20
 	cast_prox_range = 0
 
 /spell/targeted/projectile/magic_missile/prox_cast(var/list/targets, atom/spell_holder)

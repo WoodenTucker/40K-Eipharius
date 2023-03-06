@@ -38,8 +38,8 @@ code\game\dna\genes\goon_powers.dm
 	charge_max = 300
 
 	spell_flags = 0
-	invocation = "Sty Kaly."
-	invocation_type = SpI_WHISPER
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	message = "<span class='danger'>Your eyes cry out in pain!</span>"
 	level_max = list(Sp_TOTAL = 3, Sp_SPEED = 1, Sp_POWER = 3)
 	cooldown_min = 50
@@ -66,8 +66,8 @@ code\game\dna\genes\goon_powers.dm
 	school = "transmutation"
 	charge_max = 400
 	spell_flags = Z2NOCAST | NEEDSCLOTHES | INCLUDEUSER
-	invocation = "BIRUZ BENNAR"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	message = "<span class='notice'>You feel strong! You feel a pressure building behind your eyes!</span>"
 	range = 0
 	max_targets = 1

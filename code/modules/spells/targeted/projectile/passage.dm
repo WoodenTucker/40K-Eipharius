@@ -8,8 +8,8 @@
 	school = "conjuration"
 	charge_max = 250
 	spell_flags = 0
-	invocation = "A'YASAMA"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 15
 
 

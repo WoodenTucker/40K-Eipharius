@@ -569,15 +569,16 @@
 	taser_effect = 1
 
 /obj/item/projectile/bullet/pellet/shotgun/melta
-	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	fire_sound = 'sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage_type = BURN
-	penetration_modifier = 2
-	armor_penetration = 15
-	damage = 55 //believe me, this is kinda of balanced.
-	pellets = 12
+	penetration_modifier = 1
+	armor_penetration = 60
+	damage = 10 //believe me, this is kinda of balanced.
+	pellets = 1
 	range_step = 2 //not sure what these two mean, but lets go with it!
-	spread_step = 4
+	spread_step = 2
 	range = 12
 
 /obj/item/projectile/bullet/rifle/radcarbine

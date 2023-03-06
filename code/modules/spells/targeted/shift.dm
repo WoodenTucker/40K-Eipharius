@@ -4,7 +4,8 @@
 
 	charge_max = 200
 	spell_flags = Z2NOCAST | INCLUDEUSER | CONSTRUCT_CHECK
-	invocation_type = SpI_NONE
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = -1
 	duration = 50 //in deciseconds
 

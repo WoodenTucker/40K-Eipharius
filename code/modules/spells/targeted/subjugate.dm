@@ -5,8 +5,8 @@
 	school = "illusion"
 	charge_max = 500
 	spell_flags = 0
-	invocation = "Dii Oda Baji."
-	invocation_type = SpI_WHISPER
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 
 	message = "<span class='danger'>You suddenly feel completely overwhelmed!</span>"
 

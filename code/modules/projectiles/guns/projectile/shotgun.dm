@@ -228,6 +228,7 @@
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
+	fire_sound = 'sound/weapons/gunshot/lasgun1.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
 	ammo_type = /obj/item/ammo_casing/melta
 	caliber = "melta"
@@ -236,10 +237,16 @@
 	allowed_magazines = /obj/item/ammo_magazine/melta
 	w_class = ITEM_SIZE_HUGE
 	force = 14
-	one_hand_penalty = 4
-	block_chance = 2 //pretty big, could be used as a shield in theory considering how armored it is
+	one_hand_penalty = 8
+	block_chance = 15 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = 2
-	fire_delay= 20
+	accuracy = 0
+	fire_delay= 40
 	sales_price = 150
+	burst = 20
+	
+	firemodes = list(
+		list(mode_name="OVERCHARGE", burst=15, fire_delay=40, burst_accuracy=null, dispersion=null, automatic = 0.5),
+		list(mode_name="STANDARD", burst=11, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.7),
+	)
