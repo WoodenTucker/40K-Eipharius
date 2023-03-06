@@ -303,7 +303,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(18, FALSE))
+				if (affecting.take_damage(15, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets cut by \the [src]!</b></span>")
@@ -312,7 +312,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(24, FALSE))
+				if (affecting.take_damage(20, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets torn by \the [src]!</b></span>")
@@ -321,7 +321,7 @@
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(26, FALSE))
+				if (affecting.take_damage(24, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets deeply cut by \the [src]!</b></span>")
@@ -430,7 +430,7 @@
 
 
 /obj/item/projectile/bullet/pellet/fragment/landmine
-	damage = 100
+	damage = 50
 	range_step = 2 //controls damage falloff with distance. projectiles lose a "pellet" each time they travel this distance. Can be a non-integer.
 	base_spread = 0 //causes it to be treated as a shrapnel explosion instead of cone
 	spread_step = 20

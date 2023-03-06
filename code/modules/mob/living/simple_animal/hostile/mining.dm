@@ -86,8 +86,8 @@
 	icon_state = "behemoth"
 	icon_living = "behemoth"
 	icon_dead = "behemoth_DEAD"
-	maxHealth = 1000
-	health = 1000
+	maxHealth = 1500
+	health = 1500
 	projectiletype = /obj/item/projectile/energy/laser/powerful //He shoots a big fuck you laser.
 	projectilesound = 'sound/weapons/Laser.ogg'
 	ranged = TRUE

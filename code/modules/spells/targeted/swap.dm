@@ -8,8 +8,8 @@
 	holder_var_type = "brainloss"
 	holder_var_amount = 10
 
-	invocation = "Joyo!"
-	invocation_type = SpI_WHISPER
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 
 	level_max = list(Sp_TOTAL = 2, Sp_SPEED = 0, Sp_POWER = 2)
 

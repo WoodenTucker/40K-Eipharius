@@ -418,25 +418,25 @@
 			if("Boscelot Pattern Stub Rifle")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Boscelot Pattern Stub Rifle")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 4
+				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Iron Ingot (Boscolet Pattern Stub Rifle)"
 			if("SMG magazine (9mm)")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future SMG magazine (9mm)")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 5
+				src.whatwemaking = 3
 				src.ismarked = 1
 				src.name = "Iron Ingot (SMG magazine (9mm))"
 			if("Speed Loaders (.44)")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Speed Loaders (.44)")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 6
+				src.whatwemaking = 4
 				src.ismarked = 1
 				src.name = "Iron Ingot (Speed Loaders (.44))"
 			if("Loose Rifle Ammo (7.62)")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as future Loose Rifle Ammo (7.62).")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 7
+				src.whatwemaking = 5
 				src.ismarked = 1
 				src.name = "Iron Ingot (Loose Rifle Ammo (7.62))"
 
@@ -581,7 +581,7 @@
 			if("Machine Silver")
 				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future unit of Silver.")
 				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
-				src.whatwemaking = 7
+				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Silver Ingot (Machine Silver)"
 

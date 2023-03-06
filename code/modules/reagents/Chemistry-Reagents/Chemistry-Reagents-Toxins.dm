@@ -833,7 +833,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that causes burns inside and out."
 	reagent_state = GAS
 	color = "#A2CD5A"
-	strength = 30
+	strength = 10
 	touch_met = 5
 //	meltdose = 4
 
@@ -849,7 +849,7 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly white gas that burns you up like a torch."
 	reagent_state = GAS
 	color = "#FFFFFF"
-	strength = 30
+	strength = 5
 	touch_met = 5
 	var/meltdose = 4
 
@@ -865,15 +865,15 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that destroys your lungs."
 	reagent_state = GAS
 	color = "#ffd700"
-	strength = 30
+	strength = 10
 	touch_met = 5
 //	alpha = 128
 //	meltdose = 4
 
 /datum/reagent/toxin/chlorine_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		eye_damage(L, get_severity(amount/2))
-		internal_damage(L, get_severity(amount)*2)
+		eye_damage(L, get_severity(amount/1))
+		open_wound_damage(L, get_severity(amount)*1)
 
 /datum/reagent/toxin/phosgene_gas
 	name = "Phosgene Gas"
@@ -881,9 +881,9 @@ var/mob/living/carbon/human/next_gas_flesh_message = -1
 	description = "A deadly gas that causes suffocation."
 	reagent_state = GAS
 	color = "#eaeaea"
-	strength = 30
+	strength = 10
 	touch_met = 5
 //	alpha = 25
 /datum/reagent/toxin/phosgene_gas/touch_mob(var/mob/living/L, var/amount)
 	if (istype(L))
-		suffocation(L, get_severity(amount)*4)
+		suffocation(L, get_severity(amount)*1)

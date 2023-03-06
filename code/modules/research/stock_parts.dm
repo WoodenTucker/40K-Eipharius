@@ -246,7 +246,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk0"
 	origin_tech = list(TECH_MATERIAL = 8, TECH_ENGINEERING = 8)
-	sales_price = 50
+	sales_price = 40
 
 /obj/item/rnd/eng10
 	name = "STC Fragment"
@@ -254,7 +254,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_MATERIAL = 10, TECH_ENGINEERING = 10)
-	sales_price = 180
+	sales_price = 140
 
 /obj/item/rnd/power3
 	name = "strange chemical canister"
@@ -278,7 +278,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk2"
 	origin_tech = list(TECH_POWER = 8, TECH_PHORON = 8)
-	sales_price = 55
+	sales_price = 45
 
 /obj/item/rnd/power10
 	name = "STC Fragment"
@@ -286,7 +286,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_POWER = 10, TECH_PHORON = 10)
-	sales_price = 205
+	sales_price = 165
 
 
 /obj/item/rnd/biospace3
@@ -311,7 +311,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk4"
 	origin_tech = list(TECH_BIO = 8, TECH_BLUESPACE = 8)
-	sales_price = 60
+	sales_price = 50
 
 /obj/item/rnd/biospace10
 	name = "Biologis Data Disk"
@@ -319,7 +319,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_BIO = 10, TECH_BLUESPACE = 10)
-	sales_price = 160
+	sales_price = 120
 
 
 /obj/item/rnd/combat3
@@ -344,7 +344,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_COMBAT = 8, TECH_MAGNET = 8)
-	sales_price = 60
+	sales_price = 50
 
 /obj/item/rnd/combat10
 	name = "STC Fragment"
@@ -352,7 +352,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk5"
 	origin_tech = list(TECH_COMBAT = 10, TECH_MAGNET = 10)
-	sales_price = 220
+	sales_price = 170
 
 
 /obj/item/rnd/illegal3
@@ -377,7 +377,7 @@
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "unknown2"
 	origin_tech = list(TECH_DATA = 8, TECH_ILLEGAL = 8)
-	sales_price = 40
+	sales_price = 30
 
 /obj/item/rnd/illegal10
 	name = "Glowing STC Fragment"
@@ -385,4 +385,4 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk0"
 	origin_tech = list(TECH_DATA = 10, TECH_ILLEGAL = 10)
-	sales_price = 200
+	sales_price = 140

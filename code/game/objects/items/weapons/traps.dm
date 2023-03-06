@@ -92,6 +92,7 @@
 	buckle_mob(L)
 	to_chat(L, "<span class='danger'>The steel jaws of \the [src] bite into you, trapping you in place!</span>")
 	deployed = 0
+	anchored = 0
 
 /obj/item/beartrap/Crossed(AM as mob|obj)
 	if(deployed && isliving(AM))

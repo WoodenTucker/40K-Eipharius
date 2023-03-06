@@ -268,7 +268,7 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","PDF","Village Medicae","Miner","Cleric","Private Investigator")
+	var/fates = list("Merchant","PDF","Miner","Cleric","Private Investigator")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -391,30 +391,6 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
-		if("Village Medicae")
-			U.add_stats(rand(13,15), rand(14,15), rand(16,18), rand (18,22)) // really good in surgery and high endurance
-			U.add_skills(rand(6,8),rand(1,6),rand(8,10),rand(1,2),rand(8,10)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/storage/firstaid/adv, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-			to_chat(U,"<span class='notice'><b><font size=3>Barred from practicing medicine on your world of origin you are one of the many pilgrims who have traveled here in search of a new life.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
 /datum/job/underboss  //the head honcho
 	title = "Underboss"
 	department_flag = PIL
@@ -467,7 +443,53 @@ Pilgrim Fate System
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
+/datum/job/villagemedicae
+	title = "Village Medicae"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MED
+	total_positions = 3
+	spawn_positions = 3
+	open_when_dead = 0
+	supervisors = "Your own morality and ethics."
+	selection_color = "#848484"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/medicae
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	cultist_chance = 100
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(13,15), rand(14,15), rand(16,18), rand (18,22)) //strong stats due to their... interesting fame of being cult leaders
+		H.add_skills(rand(6,8),rand(6,7),rand(8,10),4,rand(8,10)) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.assign_random_quirk()
+		to_chat(H, "<span class='notice'><b><font size=3>Barred from practicing medicine on your world of origin you are one of the many pilgrims who have traveled here in search of a new life.</font></b></span>")
+
+
 //loadouts below here
+/decl/hierarchy/outfit/job/medicae
+	name = OUTFIT_JOB_NAME("Village Medicae")
+	uniform = /obj/item/clothing/under/rank/victorian
+	suit = /obj/item/clothing/suit/prac_arpon
+	mask = /obj/item/clothing/mask/gas/prac_mask
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/prac_boots
+	back = /obj/item/storage/backpack/satchel/warfare
+	gloves = /obj/item/clothing/gloves/prac_gloves
+	l_hand = /obj/item/storage/firstaid/adv
+	l_ear = /obj/item/device/radio/headset/headset_sci
+	l_pocket = /obj/item/device/flashlight/lantern
+	belt = /obj/item/storage/belt/medical/full
+	backpack_contents = list(
+	/obj/item/card/id/ring/disgracedmedicae = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	)
+
 /decl/hierarchy/outfit/job/penitent
 	name = OUTFIT_JOB_NAME("Pilgrim")
 	uniform = null//obj/item/clothing/under/rank/penitent

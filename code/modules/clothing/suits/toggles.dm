@@ -187,7 +187,7 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 45, bullet = 45, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
+	armor = list(melee = 35, bullet = 35, laser = 35, energy = 40, bomb = 20, bio = 100, rad = 100) //gives ranger the same armor as ruststalker, anyone who wants this shit balanced, ping me with the stats you want it to have
 
 /obj/item/clothing/head/rusthood
 	name = "ruststalker hood"
@@ -198,15 +198,15 @@
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 55, bullet = 35, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100)
+	armor = list(melee = 45, bullet = 25, laser = 25, energy = 40, bomb = 20, bio = 100, rad = 100)
 
 /obj/item/clothing/head/vanhelm
 	name = "vanguard helmet"
 	desc = "A shiny helmet covered in Mechanicus etchings."
-	icon_state = "castellan"
-	item_state = "castellan"
+	icon_state = "rghelmet2"
+	item_state = "rghelmet2"
 	body_parts_covered = HEAD|FACE|EYES
 	min_cold_protection_temperature = T0C - 30
 	cold_protection = HEAD
 	flags_inv = HIDEEARS | BLOCKHAIR
-	armor = list(melee = 55, bullet = 65, laser = 65, energy = 80, bomb = 50, bio = 100, rad = 160)
+	armor = list(melee = 50, bullet = 50, laser = 45, energy = 80, bomb = 50, bio = 100, rad = 160)

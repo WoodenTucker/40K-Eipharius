@@ -5,8 +5,8 @@
 	school = "transmutation"
 	charge_max = 200
 	spell_flags = INCLUDEUSER | SELECTABLE
-	invocation = "Di'Nath!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "uses their healing hands."
 	range = 2
 	max_targets = 1
 	level_max = list(Sp_TOTAL = 2, Sp_SPEED = 1, Sp_POWER = 2)

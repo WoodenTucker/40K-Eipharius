@@ -396,7 +396,7 @@
 	caliber = "melta"
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	ammo_type = /obj/item/ammo_casing/melta
-	max_ammo = 5
+	max_ammo = 60
 	multiple_sprites = 0
 
 /obj/item/ammo_magazine/melta/empty

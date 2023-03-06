@@ -7,24 +7,24 @@
 	school = "conjuration"
 	charge_max = 100
 	spell_flags = 0
-	invocation = "Oni-Soma!"
-	invocation_type = SpI_SHOUT
+	invocation_type = SpI_EMOTE
+	invocation = "gestures with their hand."
 	range = 20
 
 	level_max = list(Sp_TOTAL = 5, Sp_SPEED = 0, Sp_POWER = 5)
 
 	spell_flags = 0
 
-	duration = 20
+	duration = 15
 	proj_step_delay = 1
 
-	amt_dam_brute = 20
-	amt_dam_fire = 25
+	amt_dam_brute = 10
+	amt_dam_fire = 15
 
 	var/ex_severe = -1
-	var/ex_heavy = 1
-	var/ex_light = 2
-	var/ex_flash = 5
+	var/ex_heavy = 0
+	var/ex_light = 1
+	var/ex_flash = 2
 
 	hud_state = "wiz_fireball"
 

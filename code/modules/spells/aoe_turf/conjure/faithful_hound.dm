@@ -5,8 +5,8 @@
 
 	charge_max = 600
 	spell_flags = NEEDSCLOTHES
-	invocation = "Du korilath tangus"
-	invocation_type = SpI_WHISPER
+	invocation_type = SpI_EMOTE
+	invocation = "utters words that make your head spin."
 	range = 0
 
 	summon_amt = 1

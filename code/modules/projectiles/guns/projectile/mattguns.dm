@@ -1192,9 +1192,8 @@
 	one_hand_penalty = 2
 	accuracy = -2
 	gun_type = GUN_AUTOMATIC
-	fire_delay = 8
+	fire_delay = 4
 	burst = 5
-	automatic = 0.6
 	firemodes = list(
 		list(mode_name="'ORMAL AUTO'", burst=4, fire_delay=4, burst_accuracy=list(-3,-5,-6), dispersion=null, automatic = 0.5),
 		list(mode_name="FULLA AUTO", burst=6, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=null, automatic = 0.7),
