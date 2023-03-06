@@ -267,7 +267,7 @@
 
 				<h2>Blight Grenade:</h2>
 				<h3>Grenade with a powerful payload of armor-melting blight strain. Turn the servants of the Corpse Emperor against him! .</h3>
-				Human head, liver and pipe grenade offered on a rune of Nurgle.
+				Human head, liver and krak grenade offered on a rune of Nurgle.
 
 				<h2>Child of the Grandfather:</h2>
 				<h3>Bring forth a little one to bless your cause.</h3>
