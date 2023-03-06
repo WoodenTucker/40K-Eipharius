@@ -349,8 +349,8 @@ datum/job/ig/bullgryn
 	department_flag = SEC|MED
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = FALSE
 	selection_color = "#33813A"
 	economic_modifier = 4
@@ -457,8 +457,8 @@ datum/job/ig/bullgryn
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 1
 	selection_color = "#23742a"
 	department_flag = SEC|COM
