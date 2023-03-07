@@ -3,7 +3,7 @@
 	join_message = "Blood for the Blood God!"
 	status_icon_state = "khorne"
 	rune_type = /obj/effect/cleanable/heretic_rune/khorne
-	faction = "Khorne"
+	faction = "Chaos"
 	rune_recipes = list(
 						/datum/rune_recipe/khorne/offer_bioprinted,
 						/datum/rune_recipe/khorne/offer_skull,
@@ -37,7 +37,7 @@
 	name = "nurgle"
 	status_icon_state = "nurgle"
 	rune_type = /obj/effect/cleanable/heretic_rune/nurgle
-	faction = "Nurgle"
+	faction = "Chaos"
 	possible_blessings = list(
 						/datum/heretic_effect/heal,
 						/datum/heretic_effect/painless,
@@ -66,7 +66,7 @@
 	name = "slaanesh"
 	status_icon_state = "slaanesh"
 	rune_type = /obj/effect/cleanable/heretic_rune/slaanesh
-	faction = "Slaanesh"
+	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/slaanesh/conversion,
 						/datum/rune_recipe/slaanesh/arm,
 						/datum/rune_recipe/slaanesh/escape,
@@ -83,7 +83,7 @@
 	name = "tzeentch"
 	status_icon_state = "tzeentch"
 	rune_type = /obj/effect/cleanable/heretic_rune/tzeentch
-	faction = "Tzeentch"
+	faction = "Chaos"
 	rune_recipes = list(/datum/rune_recipe/tzeentch/conversion,
 						/datum/rune_recipe/tzeentch/fool,
 						/datum/rune_recipe/tzeentch/illusion,

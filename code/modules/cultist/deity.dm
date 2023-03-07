@@ -101,7 +101,7 @@ Most blessings and curses should be permanent.
 	to_chat(NewMember, join_message)
 	NewMember.verbs += inherent_verbs
 	NewMember.AddInfectionImages()
-	NewMember.faction = "Nurgle"
+	NewMember.faction = "Chaos"
 	NewMember.mind.special_role = "[name]"
 	SSgods.cultist_count += 1
 	post_add(NewMember)

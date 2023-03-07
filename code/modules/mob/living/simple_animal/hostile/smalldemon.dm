@@ -26,7 +26,7 @@
 	min_gas = null
 	max_gas = null
 	minbodytemp = 0
-	faction = "Chaos"
+	faction = "Demon"
 	var/stance_step = 0
 
 /mob/living/simple_animal/hostile/smalldemon/Life()
@@ -333,7 +333,7 @@
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/bite.ogg'
 
-	faction = "Nurgle"
+	faction = "Chaos"
 
 /mob/living/simple_animal/hostile/retaliate/nurgling/FindTarget()
 	. = ..()
