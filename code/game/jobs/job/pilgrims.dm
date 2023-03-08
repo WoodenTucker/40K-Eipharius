@@ -158,13 +158,13 @@ Pilgrim Fate System
 			if(prob(40))
 				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand) 
+				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) 
+				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			else if(prob(10))
 				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)  
+				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)
 			else
 				equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol, slot_l_hand)
 				//Back to Hardset Loadout
@@ -268,7 +268,7 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","PDF","Miner","Cleric","Private Investigator")
+	var/fates = list("Merchant","PDF","Miner","Cleric","Private Investigator","Undertaker")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -338,7 +338,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) 
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
@@ -388,6 +388,33 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>You are an extremely low-ranking member of the Adeptus Ministorum. You do not reside within the Monasterium, and you must preach to the citizens of Messina. You are extremely skilled in melee, but hate guns.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+
+		if("Undertaker")
+			U.add_stats(rand(14,16), rand(14,16), rand(12,15), rand (15,17))
+			U.add_skills(rand(7,10),rand(7,9),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_del(new /obj/item/clothing/under/rank/undertaker, slot_w_uniform)
+			equip_to_slot_or_del(new /obj/item/clothing/suit/undertaker, slot_wear_suit)
+			equip_to_slot_or_del(new /obj/item/clothing/gloves/undertaker, slot_gloves)
+			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_del(new /obj/item/clothing/head/underhood, slot_head )
+			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_del(new /obj/item/ammo_box/shotgun, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/drinks/bottle/amasecpoor, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/flame/lighter, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/storage/box/bodybags, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/shovel, slot_r_hand)
+			equip_to_slot_or_del(new /obj/item/clothing/shoes/undertaker, slot_shoes)
+			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			to_chat(U,"<span class='notice'><b><font size=3>Your father was a grave digger, your father's father was a grave digger, here you are, keeping the tradition alive. Rumours of shadowy cults stealing corpses and desecrating bodies for their organs has been going around lately, make your best to defend the integrity of the dead....or perhaps this is your chance to break with your family's tradition.</font></b></span>")
+			U.stat = CONSCIOUS
+			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 

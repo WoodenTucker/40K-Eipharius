@@ -387,6 +387,13 @@
 	item_state = "plebhood"
 	armor = list(melee = 5, bullet = 15, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
 
+/obj/item/clothing/head/underhood
+	name = "Undertaker's hood"
+	desc = "Keeps the dirt off your greasy head"
+	icon_state = "leper"
+	item_state = "leper"
+	armor = list(melee = 5, bullet = 15, laser = 5, energy = 5, bomb = 0, bio = 0, rad = 0)
+
 /obj/item/clothing/head/bardhat
 	name = "bard's hat"
 	desc = "A fairly nice leather hat with a feather tucked into it."
