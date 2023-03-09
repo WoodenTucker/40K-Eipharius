@@ -786,7 +786,7 @@ datum/job/ig/bullgryn
 	)
 
 /decl/hierarchy/outfit/job/bloodpact2 // Old
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
+	uniform = /obj/item/clothing/under/rank/victorian/black
 	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/chain/pcsword/khorneaxe
@@ -809,13 +809,12 @@ datum/job/ig/bullgryn
 	)
 
 /decl/hierarchy/outfit/job/vraks // generic culty boy
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
-	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	uniform = /obj/item/clothing/under/rank/victorian/black
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/melee/sword/combat_knife
 	gloves = /obj/item/clothing/gloves/thick/swat/combat
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/culthelm/gas
+	head = null
 	mask = null
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	id = null

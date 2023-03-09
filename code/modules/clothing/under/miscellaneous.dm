@@ -702,9 +702,3 @@
 	worn_state = "guard"
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
-
-/obj/item/clothing/under/guard/renegadeuniform
-	name = "renegade militia uniform"
-	desc = "This standard Munitorum-issue uniform has had all imperial markings removed"
-	icon_state = "rm_uniform"
-	item_state = "rm_uniform_s"

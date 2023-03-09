@@ -44,14 +44,3 @@
 	deliveryamt = 5
 	origin_tech = list(TECH_MATERIAL = 3, TECH_MAGNET = 4, TECH_ILLEGAL = 4)
 
-/obj/item/grenade/spawnergrenade/bugs
-	name = "infested morsel"
-	desc = "The smell is an exquisite blend of rotting meat and some kind of cheese. There's something moving inside."
-	icon_state = "bugnade"
-	item_state = "burger"
-	spawner_type = /mob/living/simple_animal/hostile/scarybat/cult
-	deliveryamt = 5
-	origin_tech = list(TECH_MATERIAL = 3, TECH_MAGNET = 4, TECH_ILLEGAL = 4)
-
-
-

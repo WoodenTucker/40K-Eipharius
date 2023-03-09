@@ -675,15 +675,6 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 
-/obj/item/clothing/head/helmet/culthelm/gas
-	name = "renegade militia mask"
-	desc = "Protects the head somewhat but the filter seems to be broken in the mask. Don't storm the trenches without it!"
-	icon_state = "renegade_militia_mask"
-	item_state = "renegade_militia_mask"
-	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
-	body_parts_covered = FACE|EYES|HEAD
-	w_class = ITEM_SIZE_NORMAL
-
 /obj/item/clothing/head/servicesgt
  	name = "Cadian Sergeant's Service Cap"
  	desc = "A Cadian issue sergeant's service cap."
