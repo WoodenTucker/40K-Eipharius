@@ -107,7 +107,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
 
-	var/damage = rand(25,60)
+	var/damage = rand(25,55)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -146,7 +146,7 @@
 		return
 	custom_emote(1, pick( list("sloshes at [target_mob]", "pulls [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(35,80) // Damage Value
+	var/damage = rand(30,60) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -162,7 +162,7 @@
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass
 	name = "Grotesque Horror" // Slow speed. High damage and HP.
 	real_name = "Grotesque Horror"
-	desc = "This violet bubbling mass of flesh and meat crawls toward you." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
+	desc = "This violent bubbling mass of flesh and meat crawls toward you." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "oormat"
 	icon_living = "oormat"
@@ -222,7 +222,7 @@
 		return
 	custom_emote(1, pick( list("slices at [target_mob]", "tears [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(65,125) // Damage Value
+	var/damage = rand(65,115) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob

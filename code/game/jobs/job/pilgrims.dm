@@ -31,8 +31,8 @@
 	title = "Imperial Citizen"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //these boys are gross
-	total_positions = 9 //maybe open up more of these when we figure out other classes and depending on player count
-	spawn_positions = 9
+	total_positions = 10 //maybe open up more of these when we figure out other classes and depending on player count
+	spawn_positions = 10
 	supervisors = "The God Emperor of Mankind"
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
@@ -247,7 +247,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from operation to operation you once again find yourself on a new world. You'll do whatever it takes to get rich. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
@@ -331,7 +330,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/whiteshield, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/whiteshield, slot_wear_suit)

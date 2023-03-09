@@ -2,8 +2,8 @@
 	name = "radio headset"
 	desc = "An updated, modular intercom that fits over the head. Takes encryption keys."
 	var/radio_desc = ""
-	icon_state = "headset"
-	item_state = "headset"
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
 	matter = list(DEFAULT_WALL_MATERIAL = 75)
 	subspace_transmission = 1
 	canhear_range = 0 // can't hear headsets from very far away
@@ -285,8 +285,8 @@
 /obj/item/device/radio/headset/tau
 	name = "tau headset"
 	desc = "The headset of the greater good."
-	icon_state = "tau_headset"
-	item_state = "t_headset"
+	icon_state = "sec_headset"
+	item_state = "sec_headset"
 	ks2type = null //until there is a tau channel
 
 /obj/item/device/radio/headset/fire_warrior

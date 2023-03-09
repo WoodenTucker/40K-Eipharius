@@ -1357,14 +1357,15 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/berserker
 	name = "Berserker Power Armor"
-	desc = "A heavy set of Berserker Power Armor manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
+	desc = "A heavy set of Berserker Power Armor manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul. The touch of fire has no effect on you."
 	icon_state = "berserker"
 	item_state = "berserker"
-	armor = list(melee = 84, bullet = 74, laser = 74, energy = 25, bomb = 60, bio = 80, rad = 80)
+	armor = list(melee = 84, bullet = 74, laser = 104, energy = 25, bomb = 60, bio = 80, rad = 80)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	sales_price = 45
 /obj/item/clothing/suit/armor/berserker/New()
 	..()
