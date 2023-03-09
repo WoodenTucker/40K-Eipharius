@@ -70,7 +70,7 @@
 
 
 /obj/item/device/radio/headset/blue_team
-	name = "Blue Headset"
+	name = "Standard Issue Vox"
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1
 	ks1type = /obj/item/device/encryptionkey/blue

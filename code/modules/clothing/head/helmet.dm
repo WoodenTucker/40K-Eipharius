@@ -391,7 +391,7 @@
 	desc = "A power helmet manufactured manufactured by unknown smiths of ruinous origin, it radiates with incredible energy and a wrath that infests your very soul."
 	icon_state = "berserkerhelm"
 	item_state = "berserkerhelm"
-	armor = list(melee = 60, bullet = 40, laser = 50, energy = 45, bomb = 60, bio = 60, rad = 40)
+	armor = list(melee = 64, bullet = 40, laser = 84, energy = 45, bomb = 60, bio = 60, rad = 40)
 	sales_price = 20
 
 /obj/item/clothing/head/helmet/reconhood
@@ -431,7 +431,7 @@
 	desc = "A heavy bone helmet forged from the carcass of a giant reptilian native to Samara."
 	icon_state = "dragon"
 	item_state = "dragon"
-	armor = list(melee = 45, bullet = 25, laser = 25, energy = 35, bomb = 20, bio = 30, rad = 20)
+	armor = list(melee = 45, bullet = 25, laser = 35, energy = 35, bomb = 20, bio = 30, rad = 20)
 	sales_price = 9
 
 /obj/item/clothing/head/helmet/metalvisor
@@ -447,7 +447,7 @@
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger_oldup"
 	item_state = "ranger_oldup"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	armor = list(melee = 31, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 11
 
 /obj/item/clothing/head/helmet/stalkerhelm2
@@ -455,7 +455,7 @@
 	desc = "An old combat helmet, custom fitted with a filtration mask and carapace exterior, the stalker who wore this knew their trade well."
 	icon_state = "ranger1"
 	item_state = "ranger1"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	armor = list(melee = 31, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 11
 
 /obj/item/clothing/head/helmet/heavyflak
@@ -463,14 +463,14 @@
 	desc = "An old flak helmet, custom fitted with a filtration mask and armored exterior."
 	icon_state = "doom"
 	item_state = "doom"
-	armor = list(melee = 38, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
+	armor = list(melee = 31, bullet = 38, laser = 38, energy = 35, bomb = 50, bio = 70, rad = 50)
 	sales_price = 10
 
 /obj/item/clothing/head/helmet/vindicare
 	name = "Vindicare helmet"
 	desc = "The menacing helm of a Vindicare."
 	icon_state = "s-ninja"
-	armor = list(melee = 15, bullet = 80, laser = 80, energy = 80, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
+	armor = list(melee = 35, bullet = 70, laser = 70, energy = 80, bomb = 30, bio = 100, rad = 10)//Bulletproof, because, well, sniper.
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR
@@ -480,7 +480,7 @@
 	name = "Vindicare helmet"
 	desc = "The armoured helmet of a Thallax Warrior."
 	icon_state = "vox-stealth"
-	armor = list(melee = 70, bullet = 70, laser = 70, energy = 70, bomb = 70, bio = 100, rad = 100)
+	armor = list(melee = 60, bullet = 60, laser = 60, energy = 70, bomb = 70, bio = 100, rad = 100)
 	siemens_coefficient = 0
 	canremove = 0
 	flags_inv = HIDEEARS|BLOCKHAIR

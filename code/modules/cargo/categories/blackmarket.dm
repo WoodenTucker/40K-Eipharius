@@ -6,27 +6,27 @@
 
 /datum/cargo_entry/bmarket/puzzle
 	name = "Xenos Puzzle Box"
-	cost = 25
+	cost = 20
 	item_path = /obj/item/rnd/illegal3
 
 /datum/cargo_entry/bmarket/fragment
 	name = "Archeotech Weapon Fragment"
-	cost = 70
+	cost = 45
 	item_path = /obj/item/rnd/combat5
 
 /datum/cargo_entry/bmarket/bio
 	name = "Glowing Rock"
-	cost = 31
+	cost = 21
 	item_path = /obj/item/rnd/biospace3
 
 /datum/cargo_entry/bmarket/bio
 	name = "Xenos Fuel Canister"
-	cost = 33
+	cost = 23
 	item_path = /obj/item/rnd/power3
 
 /datum/cargo_entry/bmarket/eng
 	name = "Xenos Alloy"
-	cost = 28
+	cost = 18
 	item_path = /obj/item/rnd/eng3
 
 /datum/cargo_entry/bmarket/ritualknife
