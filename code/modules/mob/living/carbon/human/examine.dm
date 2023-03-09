@@ -2,13 +2,11 @@
 	if(!isobserver(user))
 		user.visible_message("<font size=1>[user.name] looks at [src].</font>")
 
-		if(get_dist(user,src) > 7)//Don't get descriptions of things far away.
-			if(ishuman(user))
-				var/mob/living/carbon/human/H = user
+		if(get_dist(user,src) > 5)//Don't get descriptions of things far away.
 
 			if(crouching)
 				to_chat(user, "<span class='warning'>They are crouching!</span>")
-			to_chat(user, "<span class='info'>It's too far away to see clearly.</span>")
+			to_chat(user, "<span class='info'>It's too far away to see clearly.</span>") //are they 5 meters away?
 			return
 
 		if(is_anonymous)//Ghosts can bypass this.
