@@ -118,7 +118,7 @@
 
 /datum/cargo_entry/weapon/messina
 	name = "Messina Pattern Autogun"
-	cost = 45
+	cost = 69
 	item_path = /obj/item/gun/projectile/automatic/messina
 
 /datum/cargo_entry/weapon/agripinaa

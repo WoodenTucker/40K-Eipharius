@@ -20,8 +20,8 @@ Astartes
 	damage_mask = 'icons/mob/human_races/masks/dam_mask_human.dmi'
 	blood_mask = 'icons/mob/human_races/masks/blood_human.dmi'
 	eye_icon_location = 'icons/mob/astartes_face.dmi'
-	blood_volume = 700 // how much blood an Astartes has
-	slowdown = -0.8 //Increased move speed
+	blood_volume = 620 // how much blood an Astartes has
+	slowdown = -0.1 //Increased move speed
 	eye_icon = "eyes_s"
 	gluttonous = GLUT_ITEM_NORMAL
 	total_health = 350 // a normal human has 200 brain health, Astartes have 350 //P.S this is brain health

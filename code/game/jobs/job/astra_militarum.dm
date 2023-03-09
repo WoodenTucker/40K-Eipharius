@@ -777,6 +777,7 @@ datum/job/ig/bullgryn
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = null
 	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/device/radio/headset/red_team
 	r_pocket = /obj/item/storage/box/ifak
 	l_pocket = /obj/item/device/flashlight/lantern
 	backpack_contents = list(

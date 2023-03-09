@@ -6,7 +6,7 @@
 	icon_state = "telebaton_1"
 	item_state = "baton"
 	slot_flags = SLOT_BELT
-	force = 5
+	force = 15
 	sharp = 0
 	edge = 0
 	throwforce = 7
@@ -14,17 +14,17 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	attack_verb = list("beaten")
 	var/stunforce = 0
-	var/agonyforce = 65
+	var/agonyforce = 70
 	var/status = 0		//whether the thing is on or not
 	var/obj/item/cell/bcell
 	var/hitcost = 0
 	block_chance = 15
 	stunforce = 0
-	agonyforce = 65
+	agonyforce = 70
 	sales_price = 8
 	weapon_speed_delay = 6
 	status = 1
-	armor_penetration = 30 //Blunt force transfers through a lot of equipment.
+	armor_penetration = 20 //Blunt force transfers through a lot of equipment.
 
 /obj/item/melee/baton/handle_shield(mob/living/user, var/damage, atom/damage_source = null, mob/attacker = null, var/def_zone = null, var/attack_text = "the attack")
 	if(default_sword_parry(user, damage, damage_source, attacker, def_zone, attack_text))
@@ -267,12 +267,13 @@
 	color = "#292929"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
-	force = 25
+	force = 15
+	force_wielded = 25
 	var/stunforce = 0
-	var/agonyforce = 25
-	block_chance = 60
+	var/agonyforce = 60
+	block_chance = 40
 	sales_price = 30
-	weapon_speed_delay = 5
+	weapon_speed_delay = 6
 	sharp = FALSE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE
@@ -326,7 +327,7 @@
 	color = "#292929"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 1
-	force = 2
+	force = 4
 	stunforce = 0
 	agonyforce = 200
 	block_chance = 50

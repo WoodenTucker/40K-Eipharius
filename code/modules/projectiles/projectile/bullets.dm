@@ -188,7 +188,12 @@
 
 /obj/item/projectile/bullet/pistol/medium/ms
 	damage = 55 //.45
-	armor_penetration = -20
+	armor_penetration = -10
+	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+
+/obj/item/projectile/bullet/pistol/medium/kp
+	damage = 40 //.45
+	armor_penetration = 30
 	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
 /obj/item/projectile/bullet/pistol/strong //matebas
@@ -200,22 +205,30 @@
 	damage = 54 //.50AE
 	armor_penetration = 40
 
+/obj/item/projectile/bullet/pistol/strong/kp
+	damage = 54 //.50AE
+	armor_penetration = 50
+
 /obj/item/projectile/bullet/pistol/strong/ms
-	damage = 60 //.50AE
-	armor_penetration = 0
+	damage = 64 //.50AE
+	armor_penetration = 5
 
 /obj/item/projectile/bullet/pistol/revolver
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	damage = 45 // .357
-	armor_penetration = 25
+	damage = 44 // .357
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/revolver/ap
-	damage = 50
+	damage = 48
+	armor_penetration = 30
+
+/obj/item/projectile/bullet/pistol/revolver/kp
+	damage = 48
 	armor_penetration = 40
 
 /obj/item/projectile/bullet/pistol/revolver/ms
-	damage = 70
-	armor_penetration = -20
+	damage = 58
+	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/medium/revolver
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
@@ -226,21 +239,29 @@
 	damage = 48
 	armor_penetration = 30
 
+/obj/item/projectile/bullet/pistol/medium/revolver/kp
+	damage = 48
+	armor_penetration = 40
+
 /obj/item/projectile/bullet/pistol/medium/revolver/ms
 	damage = 58
-	armor_penetration = -10
+	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/strong/revolver
-	damage = 44
+	damage = 48
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ap
-	damage = 48
+	damage = 52
 	armor_penetration = 30
 
+/obj/item/projectile/bullet/pistol/strong/revolver/kp
+	damage = 52
+	armor_penetration = 40
+
 /obj/item/projectile/bullet/pistol/strong/revolver/ms
-	damage = 58
-	armor_penetration = -10
+	damage = 62
+	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets
 	name = "rubber bullet"
@@ -259,11 +280,17 @@
 	damage = 75
 	armor_penetration = 15
 
+/obj/item/projectile/bullet/shotgun/kp
+	name = "KP slug"
+	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
+	damage = 75
+	armor_penetration = 40
+
 /obj/item/projectile/bullet/shotgun/ms
 	name = "MS slug"
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
-	damage = 90
-	armor_penetration = -20
+	damage = 85
+	armor_penetration = 0
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
 	name = "beanbag"
@@ -311,7 +338,7 @@
 /obj/item/projectile/bullet/rifle/a556/ms
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
 	damage = 55
-	armor_penetration = -10
+	armor_penetration = -5
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
@@ -328,7 +355,7 @@
 /obj/item/projectile/bullet/rifle/a762/ms
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 71
-	armor_penetration = -10
+	armor_penetration = -5
 	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/a145
@@ -574,7 +601,7 @@
 	icon_state = "lasbolt"
 	damage_type = BURN
 	penetration_modifier = 1
-	armor_penetration = 60
+	armor_penetration = 70
 	damage = 10 //believe me, this is kinda of balanced.
 	pellets = 1
 	range_step = 2 //not sure what these two mean, but lets go with it!

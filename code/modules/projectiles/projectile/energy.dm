@@ -72,14 +72,14 @@
 	fire_sound = 'sound/weapons/guns/fire/pain_fire.ogg'
 	mob_hit_sound = list('sound/weapons/tase.ogg')
 	nodamage = TRUE
-	agony = 50
+	agony = 100
 	damage_type = PAIN
 	//Damage will be handled on the MOB side, to prevent window shattering.
 
 /obj/item/projectile/energy/electrode/stunshot
 	nodamage = 0
 	damage = 15
-	agony = 70
+	agony = 90
 	damage_type = BURN
 	armor_penetration = 10
 
@@ -97,14 +97,14 @@
 	damage = 10
 	damage_type = TOX
 	nodamage = 0
-	agony = 40
+	agony = 60
 	stutter = 10
 
 
 /obj/item/projectile/energy/bolt/large
 	name = "largebolt"
 	damage = 20
-	agony = 60
+	agony = 80
 
 
 /obj/item/projectile/energy/neurotoxin
@@ -213,16 +213,16 @@
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 51
-	armor_penetration = 15
+	damage = 58
+	armor_penetration = 25
 
 	/obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
-	damage = 51
-	armor_penetration = 15
+	damage = 58
+	armor_penetration = 35
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
