@@ -27,6 +27,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
+		//NOT SAME THING AS GUARDSMAN, DO NOT TOUCH THIS!!!!!!!!!!!
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
@@ -83,11 +84,11 @@
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Guardsman [rand(1,100000)]")
+			H.fully_replace_character_name("Guardsman [H.real_name]")
 			cultist_chance = 1
 		if(title == "Cadian Guardsman" || "Catachan Jungle Hunter" || "Valhallan Ice Warrior")
 			H.assign_random_quirk()
-			H.fully_replace_character_name("[H.real_name]")
+			H.fully_replace_character_name("Guardsman [H.real_name]")
 			cultist_chance = 20
 		H.assign_random_quirk()
 		H.witchblood()
@@ -98,9 +99,9 @@
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
-					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(1,6),rand(1,6))
 				if(title == "Valhallan Ice Warrior")
-					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(7,9),rand(9,11),rand(3,6),rand(1,6),rand(1,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
 //Whiteshield
@@ -143,7 +144,7 @@
 	spawn_positions = 1
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
-	auto_rifle_skill = 8
+	auto_rifle_skill = 10
 	semi_rifle_skill = 8
 	sniper_skill = 10
 	shotgun_skill = 8
@@ -160,7 +161,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(17,18), rand(14,16), rand(17,18), rand (14,16)) //Specialists are special, they arent every single random ass soldier
+		H.add_stats(rand(17,18), rand(14,16), rand(17,18), rand (14,16)) //Specialists are special, they arent every single random ass soldier	
 		H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -178,7 +179,7 @@
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Grenadier [rand(1,100000)]")
+			H.fully_replace_character_name("Grenadier [H.real_name]")
 			cultist_chance = 1
 
 		switch(title)
@@ -243,13 +244,13 @@ datum/job/ig/bullgryn
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
-		H.add_skills(rand(7,10),rand(10,11),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("[H.real_name]")
+		H.fully_replace_character_name("Marksman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.vice = null
@@ -261,7 +262,7 @@ datum/job/ig/bullgryn
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Marksman [rand(1,100000)]")
+			H.fully_replace_character_name("Marksman [H.real_name]")
 			cultist_chance = 1
 
 		switch(title)
@@ -320,25 +321,25 @@ datum/job/ig/bullgryn
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
-		H.vice = null
+//		H.vice = null //sarges seen some shit
 
 		switch(title) //DO NOT TOUCH THIS, IT PROBABLY WORKS
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
 				if(title == "Catachan Sergeant")
-					H.add_skills(rand(10,11),rand(8,10),rand(5,7),5,rand(4,6))
+					H.add_skills(rand(10,11),rand(9,10),rand(5,7),5,rand(5,6))
 
 				if(title == "Cadian Sergeant")
-					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
+					H.add_skills(rand(9,10),rand(10,11),rand(6,8),6,rand(5,6))
 
 				if(title == "Sergeant")
-					H.add_skills(rand(9,10),rand(9,10),rand(6,8),6,rand(5,6))
+					H.add_skills(rand(9,10),rand(10,11),rand(6,8),6,rand(5,6))
 
 				if(title == "Krieg Watchmaster")
-					H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(5,6))
+					H.add_skills(rand(9,10),rand(10,11),rand(5,7),5,rand(5,6))
 					H.set_quirk(new/datum/quirk/brave())
-					H.fully_replace_character_name("Watchmaster [rand(1,100000)]")
+					H.fully_replace_character_name("Watchmaster [H.real_name]")
 				if(title == "Valhallan Sergeant")
-					H.add_skills(rand(8,10),rand(10,11),rand(5,7),5,rand(4,6))
+					H.add_skills(rand(9,10),rand(10,11),rand(5,7),5,rand(5,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 
 // Combat Medicae
@@ -384,26 +385,26 @@ datum/job/ig/bullgryn
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
-		H.add_stats(rand(11,16), rand(11,17), rand(12,15), rand(12,16)) //dodgy as fuck, would probably dodge a bullet even if it meant killing the comrade behind them
-		H.add_skills(rand(7,10),rand(8,10),rand(7,10),rand(3,5),rand(6,10)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (14,18)) //same stats as normal guard but better int, med and surgery
+		H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(1,6),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		if(title == "Krieg Quartermaster")
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Quartermaster [rand(1,100000)]")
+			H.fully_replace_character_name("Quartermaster [current_name]")
 			cultist_chance = 1
 		switch(title)
 			if("Cadian Medicae" || "Valhallan Medicae" || "Krieg Quartermaster")
 				if(title == "Cadian Medicae")
-					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(1,6),rand(9,11)) //better surg
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
-				if(title == "Krieg Quartermaster")
-					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(2,5),rand(1,5))
+				if(title == "Krieg Quartermaster") 
+					H.add_skills(rand(8,11),rand(6,9),rand(8,10),rand(1,6),rand(8,10)) //better melee
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Quartermaster. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller, as well as keep track of the gear of the dead. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 				if(title == "Valhallan Medicae")
-					H.add_skills(rand(7,10),rand(7,10),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(6,9),rand(8,11),rand(8,10),rand(1,6),rand(8,10)) //better aim
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -428,20 +429,20 @@ datum/job/ig/bullgryn
 	outfit_type = /decl/hierarchy/outfit/job/kasrkin
 	alt_titles = null
 	latejoin_at_spawnpoints = 1
-	auto_rifle_skill = 13
-	semi_rifle_skill = 13
-	sniper_skill = 13
-	shotgun_skill = 13
-	lmg_skill = 13
-	smg_skill = 13
-	cultist_chance = 7
+	auto_rifle_skill = 10
+	semi_rifle_skill = 10
+	sniper_skill = 10
+	shotgun_skill = 10
+	lmg_skill = 10
+	smg_skill = 10
+	cultist_chance = 7 //some of 'em betrayed cadia
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Corporal [current_name]")
-		H.add_stats(rand(18,20), rand(16,18), rand(18,19), rand(10,15))
-		H.add_skills(rand(10,12),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(17,20), rand(16,18), rand(18,19), rand(10,15)) //still not as good as a arbites
+		H.add_skills(rand(10,11),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -449,7 +450,7 @@ datum/job/ig/bullgryn
 		H.adjustStaminaLoss(-INFINITY)
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
-		H.vice = null
+//		H.vice = null //THE VETERAN HAS SEEN SOME SHIT BRO
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Kasrkin serving as an agent to the Imperial Guard Sergeant on behalf of your regiment, while expected to follow orders you ultimately serve the Astra Militarum and the memory of Cadia to whom you are loyal above all else. You unlike most veterans of the Astra Militarum are likely experienced and knowledgeable enough about Chaos to not be drinking the kool aid the Imperium gives to it's soldiers and instead serve because of your true understanding of what The God Emperor and all humanity stand against...</font></b></span>")
 
 
@@ -492,7 +493,7 @@ datum/job/ig/bullgryn
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,18), rand(16,18), rand(12,16), rand(16,17))
-		H.add_skills(rand(9,10),rand(9,10),6,5,3) //commissars are heavily trained
+		H.add_skills(rand(9,11),rand(9,10),6,5,3) //commissars are heavily trained
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -583,14 +584,14 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/guardsman
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
+	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	head = /obj/item/clothing/head/helmet/guardhelmet
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/lasgun
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -616,6 +617,7 @@ datum/job/ig/bullgryn
 	mask = /obj/item/clothing/mask/gas/krieg
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
 	glasses = null
 	suit_store = /obj/item/gun/energy/las/lasgun/lucius
 	backpack_contents = list(
@@ -743,6 +745,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel/krieg = 1
 	)
 
 /decl/hierarchy/outfit/job/sharpshooter/catachan
@@ -768,68 +771,6 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1
 	)
 
-//chaos bad boy guard
-
-/decl/hierarchy/outfit/job/bloodpact
-	uniform = /obj/item/clothing/under/rank/victorian/black
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel/warfare
-	mask = null
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	r_ear = /obj/item/device/radio/headset/red_team
-	r_pocket = /obj/item/storage/box/ifak
-	l_pocket = /obj/item/device/flashlight/lantern
-	backpack_contents = list(
-	/obj/item/gun/energy/las/laspistol = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	)
-
-/decl/hierarchy/outfit/job/bloodpact2 // Old
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/pcsword/khorneaxe
-	gloves = /obj/item/clothing/gloves/thick/swat/combat
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
-	mask = null
-	glasses = /obj/item/clothing/glasses/cadiangoggles
-	id = null
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/las/laspistol/militarum/bloodpact
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/cell/lasgun = 2,
-	/obj/item/grenade/frag/high_yield/krak = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	)
-
-/decl/hierarchy/outfit/job/vraks // generic culty boy
-	uniform = /obj/item/clothing/under/guard/renegadeuniform
-	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/sword/combat_knife
-	gloves = /obj/item/clothing/gloves/thick/swat/combat
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/culthelm/gas
-	mask = null
-	glasses = /obj/item/clothing/glasses/cadiangoggles
-	id = null
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	backpack_contents = list(
-	/obj/item/grenade/frag = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	)
 
 // bullgryn
 /decl/hierarchy/outfit/job/bullgryn
@@ -869,7 +810,7 @@ datum/job/ig/bullgryn
 	head = /obj/item/clothing/head/helmet/krieghelmet/medicae
 	mask = /obj/item/clothing/mask/gas/krieg/medicae
 	r_pocket = /obj/item/storage/box/ifak
-	l_pocket = /obj/item/cell/lasgun
+	l_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
@@ -907,7 +848,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
-	/obj/item/clothing/glasses/cadiangoggles = 1,
+	/obj/item/device/flashlight/lantern = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
@@ -1080,35 +1021,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones3/five = 1
 	)
 
-// chaos sgt
 
-/decl/hierarchy/outfit/job/watchman/sergeant
-	name = OUTFIT_JOB_NAME("Cadian Sergeant")
-	uniform = /obj/item/clothing/under/guard/uniform
-	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/chain/inqcs
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/heretichood
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	backpack_contents = list(
-	/obj/item/cell/plasma = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	pda_slot = null
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
 /decl/hierarchy/outfit/job/watchman/sergeant/krieg
 	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
@@ -1400,3 +1313,107 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	else
 		src.psyker = 1
 		src.verbs += list(/mob/living/carbon/human/proc/remotesay,)
+
+
+
+
+
+
+
+
+
+
+
+
+//chaos bad boy guard
+
+/decl/hierarchy/outfit/job/bloodpact
+	uniform = /obj/item/clothing/under/rank/victorian/black
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel/warfare
+	mask = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/device/radio/headset/red_team
+	r_pocket = /obj/item/storage/box/ifak
+	l_pocket = /obj/item/device/flashlight/lantern
+	backpack_contents = list(
+	/obj/item/gun/energy/las/laspistol = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	)
+
+/decl/hierarchy/outfit/job/bloodpact2 // Old
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/pcsword/khorneaxe
+	gloves = /obj/item/clothing/gloves/thick/swat/combat
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator/bloodpact2
+	mask = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	id = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/laspistol/militarum/bloodpact
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/cell/lasgun = 2,
+	/obj/item/grenade/frag/high_yield/krak = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	)
+
+/decl/hierarchy/outfit/job/vraks // generic culty boy
+	uniform = /obj/item/clothing/under/guard/renegadeuniform
+	suit = /obj/item/clothing/suit/armor/flak1/renegadearmor
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/sword/combat_knife
+	gloves = /obj/item/clothing/gloves/thick/swat/combat
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/culthelm/gas
+	mask = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	id = null
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	r_ear = /obj/item/reagent_containers/hypospray/autoinjector/blood
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	backpack_contents = list(
+	/obj/item/grenade/frag = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	)
+	
+// chaos sgt
+
+/decl/hierarchy/outfit/job/watchman/sergeant
+	name = OUTFIT_JOB_NAME("Cadian Sergeant")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit =/obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/melee/chain/inqcs
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/heretichood
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	backpack_contents = list(
+	/obj/item/cell/plasma = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
