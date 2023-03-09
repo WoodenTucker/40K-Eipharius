@@ -575,7 +575,7 @@
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="4-round bursts", burst=4, fire_delay=4.3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=3.2, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/heavystubber/update_icon()
@@ -601,13 +601,13 @@
 	unwielded_unloaded_icon = "cognisLMG-e"
 	wielded_unloaded_icon = "hmg-wielded-e"
 	burst = 1
-	fire_delay = 1.4
+	fire_delay = 1.5
 	one_hand_penalty = 2.6 //by the omnissiah you MUST hold the machine spirit properly
 	sales_price = 25
 
 	firemodes = list(
-		list(mode_name="semi-automatic",       burst=1, fire_delay=1.4, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="4-round bursts", burst=4, fire_delay=4, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic",       burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/heavystubber/cognis/update_icon()
@@ -624,12 +624,12 @@
 	move_delay= 4.5
 	one_hand_penalty = 2
 	accuracy = 1
-	fire_delay = 1.7
+	fire_delay = 1.5
 	sales_price = 32
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.7, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=2, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=3.3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0), // Villiers perform better in semi then burst
 		)
 
 // stub rifles, mag fed
@@ -704,8 +704,8 @@
 	move_delay = 2.5
 	one_hand_penalty = 1
 	accuracy = 0.5
-	fire_delay = 1.5
-	sales_price = 35
+	fire_delay = 1.6
+	sales_price = 31
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -721,8 +721,8 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="3-round bursts", burst=3, fire_delay=3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="3-round bursts", burst=3, fire_delay=3.3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/autogrim/krieg //krieg, keep!
@@ -740,7 +740,7 @@
 	one_hand_penalty = 1.2
 	accuracy = 0.7
 	fire_delay = 1.5
-	sales_price = 37
+	sales_price = 35
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -754,8 +754,8 @@
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
 	firemodes = list(
-		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
-		list(mode_name="2-round bursts", burst=2, fire_delay=2.5, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="2-round bursts", burst=2, fire_delay=2.6, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
 		)
 
 /obj/item/gun/projectile/automatic/machinepistol/wooden
@@ -828,7 +828,7 @@
 	one_hand_penalty = 1.3
 	accuracy = 0.4
 	automatic = 1
-	fire_delay = 3
+	fire_delay = 1.5
 	sales_price = 25
 
 	magazine_type = /obj/item/ammo_magazine/c556
@@ -842,7 +842,11 @@
 	unwielded_unloaded_icon = "autorifle-e"
 	wielded_unloaded_icon = "autorifle-wielded-e"
 
-	firemodes = null
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
+		list(mode_name="4-round bursts", burst=4, fire_delay=4.3, burst_accuracy=list(0,-1,-1), dispersion=null, automatic = 0),
+		)
+
 
 /obj/item/gun/projectile/automatic/messina/update_icon()
     ..()
@@ -885,7 +889,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 1
-	sales_price = 150
+	sales_price = 120
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1003,7 +1007,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 0.5
-	sales_price = 80
+	sales_price = 95
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.15, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1063,7 +1067,7 @@
 	firemodes = list()
 	accuracy = 1.4 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
-	sales_price = 160
+	sales_price = 130
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.9, burst_accuracy=null, dispersion=null, automatic = 0),
