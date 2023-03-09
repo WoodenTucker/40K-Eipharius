@@ -2,15 +2,11 @@
 	if(!isobserver(user))
 		user.visible_message("<font size=1>[user.name] looks at [src].</font>")
 
-		if(get_dist(user,src) > 7)//Don't get descriptions of things far away.
-			if(ishuman(user))
-				var/mob/living/carbon/human/H = user
-				if(H.warfare_faction != src.warfare_faction)
-					to_chat(user, "<span class='warning'><big><b>They don't seem to be apart of the Imperium</b></big></span>")
+		if(get_dist(user,src) > 5)//Don't get descriptions of things far away.
 
 			if(crouching)
 				to_chat(user, "<span class='warning'>They are crouching!</span>")
-			to_chat(user, "<span class='info'>It's too far away to see clearly.</span>")
+			to_chat(user, "<span class='info'>It's too far away to see clearly.</span>") //are they 5 meters away?
 			return
 
 		if(is_anonymous)//Ghosts can bypass this.
@@ -68,15 +64,6 @@
 	if(isChild())
 		msg += "<b>[T.He] is but a child!</b>\n"
 
-	if(ishuman(user))
-		var/mob/living/carbon/human/H = user
-		if(H.warfare_faction != src.warfare_faction)
-			msg += "<span class='warning'><big><b>They don't seem to be apart of the Imperium</b></big></span>\n"
-
-		if(H != src)
-			if(H.warfare_faction == src.warfare_faction)
-				if(istype(H.squad, src.squad))
-					msg += "<b><big>[T.He] is someone I know.</big></b>\n"
 
 
 
@@ -167,14 +154,38 @@
 	//buckled
 	if(buckled)
 		msg += "<span class='warning'>[T.He] [T.is] \icon[buckled] buckled to [buckled]!</span>\n"
+		
+		
+
+ //stats 'n shit
+ 
+        //AM i stronger?
 	if(STAT_LEVEL(str) > user.STAT_LEVEL(str) && STAT_LEVEL(str) < (user.STAT_LEVEL(str) + 5))
 		msg += "[T.He] looks stronger than you.\n"
 
 	if(STAT_LEVEL(str) > (user.STAT_LEVEL(str) + 5))
 		msg += "<b>[T.He] looks a lot stronger than you.</b>\n"
 
+	if(STAT_LEVEL(str) > (user.STAT_LEVEL(str) + 8))
+		msg += "<span class='warning'><b>They look ABSURDLY strong!\n</b></span>"
+		
+		//is HE weaker?
+
 	if(STAT_LEVEL(str) < user.STAT_LEVEL(str))
 		msg += "[T.He] looks weaker than you.\n"
+
+	if(STAT_LEVEL(str) < user.STAT_LEVEL(str + 5))
+		msg += "[T.He] looks lot weaker than you.\n"
+
+	if(STAT_LEVEL(str) < user.STAT_LEVEL(str + 8))
+		msg += "[T.He] is dwarfed by your muscles.\n"
+		
+		//How hard was their life?
+	if(STAT_LEVEL(end) > (user.STAT_LEVEL(end) + 5))
+		msg += "<span class='warning'><b>Their skin looks like leather.\n</b></span>"
+	if(STAT_LEVEL(end) < user.STAT_LEVEL(end + 5))
+		msg += "[T.He] looks like they had a easy life.\n"
+
 
 	//Jitters
 	if(is_jittery)
@@ -340,8 +351,6 @@
 		msg += "[T.He] [T.is] mangled, someone or something has torn the skin from their corpse!\n"
 	if(user.mind.special_role == "Nurgle Cultist" || user.mind.special_role == "Khorne Cultist" || user.mind.special_role == "Slaanesh Cultist" || user.mind.special_role == "Tzeentch Cultist")
 		msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
-	if(warfare_faction == TYRANIDS)
-		msg += "A horrifying xeno!\n"
 
 
 	if(hasHUD(user,"security"))
