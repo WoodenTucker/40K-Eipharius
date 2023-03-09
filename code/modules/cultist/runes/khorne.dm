@@ -18,7 +18,7 @@
 	special = TRUE
 
 /datum/rune_recipe/khorne/knife_teeth/do_special(var/mob/living/carbon/user, var/obj/effect/cleanable/heretic_rune/rune)
-	switch(rand(1,5))
+	switch(rand(1,6))
 		if(1)
 			new /obj/item/melee/sword/chaosknife(get_turf(rune))
 		if(2)
@@ -29,6 +29,8 @@
 			new /obj/item/melee/sword/choppa(get_turf(rune))
 		if(5)
 			new /obj/item/melee/trench_axe/bardiche(get_turf(rune))
+		if(6)
+			new /obj/item/melee/sword/combat_knife(get_turf(rune))
 			
 
 /datum/rune_recipe/khorne/conversion
