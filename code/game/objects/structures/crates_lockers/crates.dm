@@ -457,9 +457,6 @@ obj/structure/closet/crate
 	new /obj/item/pickaxe(src)
 	new /obj/item/grenade/frag/high_yield/homemade(src)
 	new /obj/item/grenade/frag/high_yield/homemade(src)
-	new /obj/item/grenade/frag/high_yield/homemade(src)
-	new /obj/item/grenade/frag/high_yield/homemade(src)
-	new /obj/item/grenade/frag/high_yield/homemade(src)
 
 /// END OF SPECIAL CRATE SECTION
 

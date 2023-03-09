@@ -121,7 +121,7 @@
 
 /obj/item/device/encryptionkey/blue_all
 	icon_state = "cypherkey"
-	channels = list("Imperial" = 1, "Blue" = 1, "Blue Alpha" = 1, "Blue Bravo" = 1, "Blue Charlie" = 1, "Blue Delta" = 1)
+	channels = list("Blue" = 1, "Blue Alpha" = 1, "Blue Bravo" = 1, "Blue Charlie" = 1, "Blue Delta" = 1)
 	origin_tech = list(TECH_ILLEGAL = 1)
 	syndie = 1
 

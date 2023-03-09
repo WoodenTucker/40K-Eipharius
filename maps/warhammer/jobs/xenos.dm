@@ -21,6 +21,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
+	r_ear = /obj/item/device/radio/headset/red_team
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	belt = /obj/item/device/flashlight/lantern
 	l_pocket = /obj/item/storage/box/ifak
