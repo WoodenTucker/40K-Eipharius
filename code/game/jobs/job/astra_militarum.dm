@@ -528,7 +528,7 @@ datum/job/ig/bullgryn
 
 // IG Outfits
 
-// Guardsman
+// Whiteshield
 
 /decl/hierarchy/outfit/job/whiteshield
 	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")
@@ -556,29 +556,7 @@ datum/job/ig/bullgryn
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
 
-/decl/hierarchy/outfit/job/kasrkin
-	name = OUTFIT_JOB_NAME("Kasrkin")
-	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/kasrkin
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	head = /obj/item/clothing/head/helmet/kasrkin
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadian
-	id = /obj/item/card/id/dog_tag/guardsman
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/red_team
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
-	suit_store = /obj/item/gun/energy/las/hotshot/krieg //Hotshots are annoyingly common, makes them standout more.
-	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/cell/lasgun/hotshot = 3,
-	)
-
+// Guardsmen
 /decl/hierarchy/outfit/job/guardsman
 	name = OUTFIT_JOB_NAME("Cadian Guardsman")
 	uniform = /obj/item/clothing/under/cadian_uniform
@@ -671,6 +649,31 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
+
+//Karskin
+/decl/hierarchy/outfit/job/kasrkin
+	name = OUTFIT_JOB_NAME("Kasrkin")
+	uniform = /obj/item/clothing/under/cadian_uniform
+	suit = /obj/item/clothing/suit/armor/kasrkin
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = /obj/item/device/flashlight/lantern
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/kasrkin
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadian
+	id = /obj/item/card/id/dog_tag/guardsman
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = null
+	suit_store = /obj/item/gun/energy/las/hotshot //Hotshots are annoyingly common, makes them standout more.
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/cell/lasgun/hotshot = 3,
+	)
+
 
 ///Specialists
 
@@ -794,6 +797,8 @@ datum/job/ig/bullgryn
 	/obj/item/grenade/frag = 1,
 	)
 
+
+
 // Medicae
 
 /decl/hierarchy/outfit/job/medical/paramedic/krieg
@@ -851,6 +856,8 @@ datum/job/ig/bullgryn
 	/obj/item/device/flashlight/lantern = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
+
+
 
 // Sniper
 
@@ -924,7 +931,10 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2/five = 1
 	)
 
-// Sergeant
+
+
+
+// Sarge
 
 /decl/hierarchy/outfit/job/sergeant
 	name = OUTFIT_JOB_NAME("Cadian Sergeant")
@@ -1020,75 +1030,6 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
-
-
-
-/decl/hierarchy/outfit/job/watchman/sergeant/krieg
-	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
-	uniform = /obj/item/clothing/under/guard/uniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	back = /obj/item/storage/backpack/satchel/krieger
-	belt = /obj/item/melee/chain/inqcs
-	gloves = /obj/item/clothing/gloves/combat/krieg
-	shoes = /obj/item/clothing/shoes/jackboots/krieg
-	head = /obj/item/clothing/head/heretichood
-	mask = /obj/item/clothing/mask/gas/krieg
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	suit_store = /obj/item/gun/launcher/rcl_rifle
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	r_hand = /obj/item/gun/energy/las/laspistol/militarum/lucius
-	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 1,
-	/obj/item/ammo_casing/heat_shell = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/shovel/krieg = 1
-	)
-
-/decl/hierarchy/outfit/job/watchman/sergeant/catachan
-	name = OUTFIT_JOB_NAME("Catachan Sergeant")
-	uniform = /obj/item/clothing/under/guard/uniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	belt = /obj/item/melee/chain/mercycs
-	shoes = /obj/item/clothing/shoes/jackboots/catachan
-	head = /obj/item/clothing/head/heretichood
-	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
-	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	backpack_contents = list(
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
-	)
-
-/decl/hierarchy/outfit/job/watchman/sergeant/valhallan
-	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
-	uniform =  /obj/item/clothing/under/guard/uniform
-	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
-	belt = null
-	head = /obj/item/clothing/head/heretichood
-	mask = null
-	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	l_ear = /obj/item/device/radio/headset/blue_team/all
-	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
-	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
-	backpack_contents = list(
-	/obj/item/ammo_magazine/c556/ap = 3,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2/five = 1
-	)
-
 
 
 // Commissar
@@ -1417,3 +1358,70 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+
+/decl/hierarchy/outfit/job/watchman/sergeant/valhallan
+	name = OUTFIT_JOB_NAME("Valhallan Sergeant")
+	uniform =  /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	belt = null
+	head = /obj/item/clothing/head/heretichood
+	mask = null
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
+	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
+	backpack_contents = list(
+	/obj/item/ammo_magazine/c556/ap = 3,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1
+	)
+	
+/decl/hierarchy/outfit/job/watchman/sergeant/krieg
+	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	back = /obj/item/storage/backpack/satchel/krieger
+	belt = /obj/item/melee/chain/inqcs
+	gloves = /obj/item/clothing/gloves/combat/krieg
+	shoes = /obj/item/clothing/shoes/jackboots/krieg
+	head = /obj/item/clothing/head/heretichood
+	mask = /obj/item/clothing/mask/gas/krieg
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	suit_store = /obj/item/gun/launcher/rcl_rifle
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/gun/energy/las/laspistol/militarum/lucius
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/ammo_casing/heat_shell = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/shovel/krieg = 1
+	)
+
+/decl/hierarchy/outfit/job/watchman/sergeant/catachan
+	name = OUTFIT_JOB_NAME("Catachan Sergeant")
+	uniform = /obj/item/clothing/under/guard/uniform
+	suit = /obj/item/clothing/suit/armor/guardsman/bloodpact
+	belt = /obj/item/melee/chain/mercycs
+	shoes = /obj/item/clothing/shoes/jackboots/catachan
+	head = /obj/item/clothing/head/heretichood
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/blue_team/all
+	backpack_contents = list(
+	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
