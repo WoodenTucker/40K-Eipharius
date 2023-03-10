@@ -11,7 +11,6 @@
 	total_health = 50 //Aim for the head
 	mob_size = MOB_MEDIUM
 	strength = STR_VHIGH
-	decaylevel = 1
 	teeth_type = /obj/item/stack/teeth/human
 	sexybits_location = BP_GROIN
 	var/pain_power = 0 //Zombies, no pain.
@@ -38,7 +37,7 @@
 	burn_mod = 1.8 // FIRE BURNS
 	tox_mod = 0
 
-	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
+	species_flags = SPECIES_FLAG_NO_SCAN | SPECIES_FLAG_NO_SLIP | SPECIES_FLAG_NO_POISON | SPECIES_FLAG_NO_EMBED | SPECIES_FLAG_NO_PAIN
 	appearance_flags = HAS_EYE_COLOR | HAS_SKIN_COLOR
 
 	blood_color = "#05ee05"
@@ -98,7 +97,7 @@
 	for(var/stage = 1, stage<=3, stage++)
 		switch(stage)
 			if(1)
-				to_chat(src, "<span class='notice'>This creature has not accepted the grandfathers gifts...</span>")
+				to_chat(src, "<span class='notice'>This creature is suitable for the virus...</span>")
 			if(2)
 				to_chat(src, "<span class='notice'>[src] begins to open their jaw</span>")
 				src.visible_message("<span class='warning'>[src] widens their jaw!</span>")
