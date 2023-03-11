@@ -65,7 +65,7 @@
 /mob/living/carbon/human/Bloodpact/Initialize()
 	. = ..()
 	warfare_faction = NURGLE
-	faction = "Nurgle"
+	faction = "Chaos"
 	fully_replace_character_name(random_name(src.gender))
 	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/bloodpact)
 	outfit.equip(src)

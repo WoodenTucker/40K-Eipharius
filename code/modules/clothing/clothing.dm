@@ -641,6 +641,10 @@ BLIND     // can't see anything
 	equipsound = 'sound/items/handle/cloth_pickup.ogg'
 	sales_price = 0
 
+/obj/item/clothing/suit/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.4
+
 
 /obj/item/clothing/suit/update_clothing_icon()
 	if (ismob(src.loc))
