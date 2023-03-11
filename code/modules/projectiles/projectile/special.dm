@@ -38,13 +38,13 @@
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 65
 	armor_penetration = 40
-	penetration_modifier = 1.4
+	penetrating = 2
 
 /obj/item/projectile/bullet/bolt/kp
 	fire_sound = 'sound/effects/explosion1.ogg'
 	damage = 78
 	armor_penetration = 55
-	penetration_modifier = 1.8
+	penetrating = 3
 
 /obj/item/projectile/bullet/bpistol/ms // This is .75 Bolt Pistol Round
 	fire_sound = 'sound/effects/explosion1.ogg'

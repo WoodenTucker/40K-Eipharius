@@ -240,9 +240,18 @@
 	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it's forehead."
 	icon_state = "guard"
 	item_state = "guard"
-	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
+	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 10, rad = 10)
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/helmet/guardhelmet/mechanicus
+	name = "Mechanicus Flak Helmet"
+	armor = list(melee = 36, bullet = 41, laser = 31, energy = 45, bomb = 40, bio = 10, rad = 20)
+
+/obj/item/clothing/head/helmet/guardhelmet/carapace
+	name = "Carapace Helmet"
+	desc = "A tough carapace helmet."
+	armor = list(melee = 40, bullet = 45, laser = 35, energy = 35, bomb = 30, bio = 10, rad = 10)
 
 /obj/item/clothing/head/helmet/medicae
 	name = "Cadian Pattern Medicae Flak Helmet"

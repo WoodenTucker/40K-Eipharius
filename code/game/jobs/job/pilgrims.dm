@@ -557,6 +557,28 @@ Pilgrim Fate System
 
 
 //Ogryn Bouncer
+
+/decl/hierarchy/outfit/job/ogryn
+	name = OUTFIT_JOB_NAME("Ogryn")
+	uniform = /obj/item/clothing/under/ogryn/jumpsuit
+	head = null
+	shoes = /obj/item/clothing/shoes/jackboots/ogryn
+	gloves = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
+	pda_type = /obj/item/device/pda/penitent
+	l_ear = null
+	r_ear = null
+	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	l_hand = /obj/item/melee/classic_baton/trench_club
+	backpack_contents = list(
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+
+	)
+
 /decl/hierarchy/outfit/job/bouncer
 	name = OUTFIT_JOB_NAME("Bouncer")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
@@ -583,8 +605,8 @@ Pilgrim Fate System
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 2
-    spawn_positions = 2
+    total_positions = 1
+    spawn_positions = 1
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     latejoin_at_spawnpoints = TRUE

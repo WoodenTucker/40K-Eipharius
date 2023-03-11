@@ -13,6 +13,11 @@
 	caliber = "357"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver/ms
 
+/obj/item/ammo_casing/a357/kp
+	desc = "KP .357 bullet casing."
+	caliber = "357"
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/revolver/kp
+
 /obj/item/ammo_casing/a50
 	desc = "A .50AE bullet casing."
 	caliber = ".50"
@@ -27,6 +32,11 @@
 	desc = "MS .50AE bullet casing."
 	caliber = ".50"
 	projectile_type = /obj/item/projectile/bullet/pistol/strong/ms
+
+/obj/item/ammo_casing/a50/kp
+	desc = "KP .50AE bullet casing."
+	caliber = ".50"
+	projectile_type = /obj/item/projectile/bullet/pistol/strong/kp
 
 /obj/item/ammo_casing/a75
 	desc = "A 20mm bullet casing."
@@ -59,6 +69,11 @@
 	caliber = "9mm"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/ms
 
+/obj/item/ammo_casing/c9mm/kp
+	desc = "KP 9mm bullet casing."
+	caliber = "9mm"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/kp
+
 /obj/item/ammo_casing/c9mm/flash
 	desc = "A 9mm flash shell casing."
 	projectile_type = /obj/item/projectile/energy/flash
@@ -83,6 +98,11 @@
 	caliber = ".44"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver/ap
 
+/obj/item/ammo_casing/c44/kp
+	desc = "KP .44 magnum bullet casing."
+	caliber = ".44"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/revolver/kp
+
 /obj/item/ammo_casing/c44/ms
 	desc = "MS .44 magnum bullet casing."
 	caliber = ".44"
@@ -100,14 +120,19 @@
 	projectile_type = /obj/item/projectile/bullet/pistol/medium
 
 /obj/item/ammo_casing/c45/ap
-	desc = "A .45 bullet casing."
+	desc = "A AP .45 bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/ap
 
 /obj/item/ammo_casing/c45/ms
-	desc = "A .45 bullet casing."
+	desc = "A MS .45 bullet casing."
 	caliber = ".45"
 	projectile_type = /obj/item/projectile/bullet/pistol/medium/ms
+
+/obj/item/ammo_casing/c45/kp
+	desc = "A KP .45 bullet casing."
+	caliber = ".45"
+	projectile_type = /obj/item/projectile/bullet/pistol/medium/kp
 
 /obj/item/ammo_casing/c45/practice
 	desc = "A .45 practice bullet casing."
@@ -137,6 +162,9 @@
 	name = "MS shotgun slug"
 	projectile_type = /obj/item/projectile/bullet/shotgun/ms
 
+/obj/item/ammo_casing/shotgun/kp
+	name = "KP shotgun slug"
+	projectile_type = /obj/item/projectile/bullet/shotgun/kp
 
 /obj/item/ammo_casing/shotgun/pellet
 	name = "shotgun shell"
@@ -211,6 +239,10 @@
 	desc = "An MS 5.56mm bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a556/ms
 
+/obj/item/ammo_casing/a556/kp
+	desc = "An KP 5.56mm bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a556/kp
+
 /obj/item/ammo_casing/a145
 	name = "shell casing"
 	desc = "A 14.5mm shell."
@@ -239,6 +271,10 @@
 /obj/item/ammo_casing/a762/ms
 	desc = "An MS 7.62mm bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/ms
+
+/obj/item/ammo_casing/a762/kp
+	desc = "An KP 7.62mm bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/kp
 
 /obj/item/ammo_casing/a762/practice
 	desc = "A 7.62mm practice bullet casing."
