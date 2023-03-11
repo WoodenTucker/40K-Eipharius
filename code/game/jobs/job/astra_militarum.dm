@@ -35,6 +35,7 @@
 		H.add_skills(rand(6,8),rand(6,8),rand(3,6),rand(1,4),rand(1,3)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		SSwarfare.red.team += H
+		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
@@ -84,11 +85,9 @@
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Guardsman [H.real_name]")
 			cultist_chance = 1
 		if(title == "Cadian Guardsman" || "Catachan Jungle Hunter" || "Valhallan Ice Warrior")
 			H.assign_random_quirk()
-			H.fully_replace_character_name("Guardsman [H.real_name]")
 			cultist_chance = 20
 		H.assign_random_quirk()
 		H.witchblood()
@@ -130,7 +129,6 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
-		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
@@ -168,7 +166,6 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("[H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
@@ -179,7 +176,6 @@
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Grenadier [H.real_name]")
 			cultist_chance = 1
 
 		switch(title)
@@ -250,7 +246,6 @@ datum/job/ig/bullgryn
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Marksman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.vice = null
@@ -262,7 +257,6 @@ datum/job/ig/bullgryn
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Marksman [H.real_name]")
 			cultist_chance = 1
 
 		switch(title)
@@ -327,17 +321,13 @@ datum/job/ig/bullgryn
 			if("Cadian Sergeant" || "Valhallan Sergeant" || "Catachan Sergeant" || "Krieg Watchmaster")
 				if(title == "Catachan Sergeant")
 					H.add_skills(rand(10,11),rand(9,10),rand(5,7),5,rand(5,6))
-
 				if(title == "Cadian Sergeant")
 					H.add_skills(rand(9,10),rand(10,11),rand(6,8),6,rand(5,6))
-
 				if(title == "Sergeant")
 					H.add_skills(rand(9,10),rand(10,11),rand(6,8),6,rand(5,6))
-
 				if(title == "Krieg Watchmaster")
 					H.add_skills(rand(9,10),rand(10,11),rand(5,7),5,rand(5,6))
 					H.set_quirk(new/datum/quirk/brave())
-					H.fully_replace_character_name("Watchmaster [H.real_name]")
 				if(title == "Valhallan Sergeant")
 					H.add_skills(rand(9,10),rand(10,11),rand(5,7),5,rand(5,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
@@ -380,7 +370,6 @@ datum/job/ig/bullgryn
 		var/current_name = H.real_name
 		H.warfare_faction = IMPERIUM
 		..()
-		H.fully_replace_character_name("Medicae [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		if(can_be_in_squad)
@@ -391,7 +380,6 @@ datum/job/ig/bullgryn
 		H.assign_random_quirk()
 		if(title == "Krieg Quartermaster")
 			H.implant_loyalty(src)
-			H.fully_replace_character_name("Quartermaster [current_name]")
 			cultist_chance = 1
 		switch(title)
 			if("Cadian Medicae" || "Valhallan Medicae" || "Krieg Quartermaster")
@@ -440,7 +428,6 @@ datum/job/ig/bullgryn
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Corporal [current_name]")
 		H.add_stats(rand(17,20), rand(16,18), rand(18,19), rand(10,15)) //still not as good as a arbites
 		H.add_skills(rand(10,11),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
@@ -489,7 +476,6 @@ datum/job/ig/bullgryn
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Commissar [current_name]")
 		H.set_quirk(new/datum/quirk/brave())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(16,18), rand(16,18), rand(12,16), rand(16,17))
