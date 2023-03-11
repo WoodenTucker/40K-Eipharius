@@ -36,6 +36,11 @@
 	cost = 11
 	item_path = /obj/item/ammo_magazine/c556/ap
 
+/datum/cargo_entry/ammo/rifle5/kp
+	name = "KP Rifle Magazine(5.56mm)"
+	cost = 22
+	item_path = /obj/item/ammo_magazine/c556/kp
+
 /datum/cargo_entry/ammo/rifle5/ms
 	name = "MS Rifle Magazine(5.56mm)"
 	cost = 9
@@ -50,6 +55,11 @@
 	name = "AP Rifle Magazine(7.62mm)"
 	cost = 12
 	item_path = /obj/item/ammo_magazine/a762/ap
+
+/datum/cargo_entry/ammo/rifle7/kp
+	name = "KP Rifle Magazine(7.62mm)"
+	cost = 24
+	item_path = /obj/item/ammo_magazine/a762/kp
 
 /datum/cargo_entry/ammo/rifle7/ms
 	name = "MS Rifle Magazine(7.62mm)"
@@ -73,13 +83,18 @@
 
 /datum/cargo_entry/ammo/slugbox
 	name = "Shotgun Slug Box"
-	cost = 6
+	cost = 10
 	item_path = /obj/item/ammo_box/shotgun/slug
 
 /datum/cargo_entry/ammo/slugbox/ms
 	name = "MS Shotgun Slug Box"
-	cost = 8
+	cost = 19
 	item_path = /obj/item/ammo_box/shotgun/msslug
+
+/datum/cargo_entry/ammo/slugbox/kp
+	name = "KP Shotgun Slug Box"
+	cost = 36
+	item_path = /obj/item/ammo_box/shotgun/kpslug
 
 /datum/cargo_entry/ammo/riflehandful
 	name = "Rifle Handful"
@@ -90,6 +105,11 @@
 	name = "AP Rifle Handful"
 	cost = 4
 	item_path = /obj/item/ammo_magazine/handful/brifle_handful/ap
+
+/datum/cargo_entry/ammo/riflehandful/kp
+	name = "KP Rifle Handful"
+	cost = 8
+	item_path = /obj/item/ammo_magazine/handful/brifle_handful/kp
 
 /datum/cargo_entry/ammo/riflehandful/ms
 	name = "MS Rifle Handful"
@@ -123,17 +143,22 @@
 
 /datum/cargo_entry/ammo/c45
 	name = ".45 Pistol Magazine"
-	cost = 4
+	cost = 3
 	item_path = /obj/item/ammo_magazine/mc45mm
 
 /datum/cargo_entry/ammo/c45/ap
 	name = "AP .45 Pistol Magazine"
-	cost = 8
+	cost = 6
 	item_path = /obj/item/ammo_magazine/mc45mm/ap
+
+/datum/cargo_entry/ammo/c45/kp
+	name = "KP .45 Pistol Magazine"
+	cost = 12
+	item_path = /obj/item/ammo_magazine/mc45mm/kp
 
 /datum/cargo_entry/ammo/c45/ms
 	name = "MS .45 Pistol Magazine"
-	cost = 7
+	cost = 5
 	item_path = /obj/item/ammo_magazine/mc45mm/ms
 
 /datum/cargo_entry/ammo/revolver357ammo
@@ -143,8 +168,13 @@
 
 /datum/cargo_entry/ammo/revolver357ammo/ap
 	name = ".357 Speedloader AP"
-	cost = 7
+	cost = 6
 	item_path = /obj/item/ammo_magazine/a357/ap
+
+/datum/cargo_entry/ammo/revolver357ammo/kp
+	name = ".357 Speedloader KP"
+	cost = 12
+	item_path = /obj/item/ammo_magazine/a357/kp
 
 /datum/cargo_entry/ammo/revolver357ammo/ms
 	name = ".357 Speedloader MS"
@@ -153,32 +183,42 @@
 
 /datum/cargo_entry/ammo/revolver44ammo
 	name = ".44 Speedloader"
-	cost = 5
+	cost = 3
 	item_path = /obj/item/ammo_magazine/c44
 
 /datum/cargo_entry/ammo/revolver44ammo/ap
 	name = "AP .44 Speedloader"
-	cost = 9
+	cost = 6
 	item_path = /obj/item/ammo_magazine/c44/ap
+
+/datum/cargo_entry/ammo/revolver44ammo/kp
+	name = "KP .44 Speedloader"
+	cost = 12
+	item_path = /obj/item/ammo_magazine/c44/kp
 
 /datum/cargo_entry/ammo/revolver44ammo/ms
 	name = "MS .44 Speedloader"
-	cost = 8
+	cost = 5
 	item_path = /obj/item/ammo_magazine/c44/ms
 
 /datum/cargo_entry/ammo/revolver50ammo
 	name = ".50 Speedloader"
-	cost = 6
-	item_path = /obj/item/ammo_magazine/handful/a50
+	cost = 5
+	item_path = /obj/item/ammo_magazine/c50
 
 /datum/cargo_entry/ammo/revolver50ammo/ap
 	name = "AP .50 Speedloader"
-	cost = 10
-	item_path = /obj/item/ammo_magazine/handful/a50/ap
+	cost = 9
+	item_path = /obj/item/ammo_magazine/c50/ap
+
+/datum/cargo_entry/ammo/revolver50ammo/kp
+	name = "KP .50 Speedloader"
+	cost = 18
+	item_path = /obj/item/ammo_magazine/c50/kp
 
 /datum/cargo_entry/ammo/revolver50ammo/ms
 	name = "MS .50 Speedloader"
-	cost = 9
+	cost = 7
 	item_path = /obj/item/ammo_magazine/handful/a50/ms
 
 /datum/cargo_entry/ammo/heatshell

@@ -269,18 +269,18 @@ Template:
 	icon_state = "armoraccessory"
 
 /obj/random/loot/guardgear/spawn_choices()
-	return list(/obj/item/clothing/accessory/holster/waist = 2,
-				/obj/item/clothing/accessory/holster/hip = 2,
-				/obj/item/storage/belt/warfare = 1,
-				/obj/item/clothing/accessory/storage/torso/armor = 2,
-				/obj/item/clothing/accessory/storage/webbing = 6,
-				/obj/item/clothing/accessory/legguards/ballistic = 3,
-				/obj/item/clothing/accessory/legguards/ablative = 2,
-				/obj/item/clothing/accessory/armguards/ablative = 2,
-				/obj/item/clothing/accessory/armguards/ballistic = 3,
-				/obj/item/clothing/accessory/armguards/riot = 3,
-				/obj/item/clothing/glasses/cadiangoggles/elite = 1,
-				/obj/item/clothing/accessory/legguards/riot = 3)
+	return list(/obj/item/clothing/accessory/holster/waist = 6,
+				/obj/item/clothing/accessory/holster/hip = 6,
+				/obj/item/clothing/accessory/storage/torso/armor = 4,
+				/obj/item/clothing/accessory/storage/webbing = 12,
+				/obj/item/clothing/accessory/legguards/ballistic = 6,
+				/obj/item/clothing/accessory/legguards/ablative = 4,
+				/obj/item/clothing/accessory/armguards/ablative = 4,
+				/obj/item/clothing/accessory/armguards/ballistic = 6,
+				/obj/item/clothing/accessory/armguards/riot = 6,
+				/obj/item/clothing/glasses/cadiangoggles/elite = 2,
+				/obj/item/clothing/head/helmet/guardhelmet/carapace = 1,
+				/obj/item/clothing/accessory/legguards/riot = 6)
 
 /obj/random/loot/lightmelee
 	name = "Light Melee"

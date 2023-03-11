@@ -1942,6 +1942,104 @@ CIRCUITS BELOW
 
 // (TECH_MATERIAL = 2, TECH_ENGINEERING = 2, TECH_PHORON = 1, TECH_POWER = 3, TECH_BLUESPACE = 1, TECH_BIO = 1, TECH_COMBAT = 1, TECH_MAGNET = 4, TECH_DATA = 1, TECH_ILLEGAL = 1)
 
+// ARMOR
+/datum/design/armor/rtcloak
+	name = "Improved RT Cloak" // Mid Level mechanicus armor
+	id = "rtcloak"
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "gold" = 400, "diamond" = 8500)
+	build_path = /obj/item/clothing/suit/armor/rtcloak/mechanicus
+	sort_string = "XCAAA"
+
+/datum/design/armor/governor
+	name = "Improved Governor Mantle"
+	id = "governor"
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 4500, "gold" = 800, "diamond" = 8500)
+	build_path = /obj/item/clothing/suit/armor/governor/mechanicus
+	sort_string = "XCAAB"
+
+/datum/design/armor/mining
+	name = "Improved Mining Suit"
+	id = "miningsuit"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
+	materials = list(DEFAULT_WALL_MATERIAL = 16000, "diamond" = 2000)
+	build_path = /obj/item/clothing/suit/armor/salvage/mechanicus
+	sort_string = "XCAAC"
+
+/datum/design/armor/flak
+	name = "Improved Mercenary Flak Armor"
+	id = "mercflak"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
+	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 3000)
+	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/mechanicus
+	sort_string = "XCAAD"
+
+/datum/design/armor/carapace
+	name = "Improved Mercenary Carapace Armor"
+	id = "merccara"
+	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
+	materials = list(DEFAULT_WALL_MATERIAL = 8000, "diamond" = 7000)
+	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace/mechanicus
+	sort_string = "XCAAE"
+
+/datum/design/armor/enforcer
+	name = "Improved Enforcer Armor"
+	id = "enforcer"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 4)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 3200)
+	build_path = /obj/item/clothing/suit/armor/enforcer/mechanicus
+	sort_string = "XCAAF"
+
+/datum/design/armor/enforcer/marshal
+	name = "Improved Enforcer Marshal Armor"
+	id = "enforcerm"
+	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 5200)
+	build_path = /obj/item/clothing/suit/armor/enforcer/marshal/mechanicus
+	sort_string = "XCAAG"
+
+/datum/design/armor/flak/guard
+	name = "Improved Cadian Flak Armor"
+	id = "guardflak"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 3000)
+	build_path = /obj/item/clothing/suit/armor/guardsman/mechanicus
+	sort_string = "XCAAH"
+
+/datum/design/armor/carace/guard
+	name = "Improved Cadian Carapace Armor"
+	id = "guardcara"
+	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
+	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 7000)
+	build_path = /obj/item/clothing/suit/armor/guardsman/carapace/mechanicus
+	sort_string = "XCAAI"
+
+/datum/design/helmet/flak
+	name = "Improved Cadian Flak Helmet"
+	id = "guardhelm"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
+	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 1000)
+	build_path = /obj/item/clothing/head/helmet/guardhelmet/mechanicus
+	sort_string = "XCBAA"
+
+/datum/design/helmet/carapace
+	name = "Carapace Helmet"
+	id = "carahelm"
+	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3000)
+	build_path = /obj/item/clothing/head/helmet/guardhelmet/carapace
+	sort_string = "XCBAB"
+
+/datum/design/armor/teleport
+	name = "Reactive Teleporter Armor"
+	id = "teleportarmor" // High level mechanicus armor
+	req_tech = list(TECH_DATA = 7, TECH_ENGINEERING = 8, TECH_PHORON = 7, TECH_BLUESPACE = 10)
+	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "diamond" = 16000, "phoron" = 6000)
+	build_path = /obj/item/clothing/suit/armor/reactive
+	sort_string = "XCWAA"
+
+// WEAPONS
 /datum/design/item/galvanicrifle
 	name = "Galvanic Rifle"
 	id = "GalvanicRifle"
@@ -2354,6 +2452,14 @@ CIRCUITS BELOW
 	build_path = /obj/item/ammo_magazine/c556/ap
 	sort_string = "ZVAE"
 
+/datum/design/item/riflemag/kp
+	name = "Rifle Magazine(556 KP)"
+	id = "riflemagkp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
+	materials = list("diamond" = 1600)
+	build_path = /obj/item/ammo_magazine/c556/kp
+	sort_string = "ZVAE"
+
 /datum/design/item/riflemag/ms
 	name = "Rifle Magazine(556 MS)"
 	id = "riflemagms"
@@ -2378,6 +2484,14 @@ CIRCUITS BELOW
 	build_path = /obj/item/ammo_magazine/a762/ap
 	sort_string = "ZVAG"
 
+/datum/design/item/battlemag/kp
+	name = "Battle Rifle Magazine(762 KP)"
+	id = "riflemag2kp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
+	materials = list("diamond" = 2000)
+	build_path = /obj/item/ammo_magazine/a762/kp
+	sort_string = "ZVAG"
+
 /datum/design/item/battlemag/ms
 	name = "Battle Rifle Magazine(762 MS)"
 	id = "riflemag2ms"
@@ -2392,6 +2506,14 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 600, "diamond" = 500)
 	build_path = /obj/item/ammo_magazine/box/a556/mg08
+	sort_string = "ZVAJ"
+
+/datum/design/item/mg08/kp
+	name = "MG08 KP Stubber Magazine Box"
+	id = "mg08kp"
+	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 5)
+	materials = list("diamond" = 3000)
+	build_path = /obj/item/ammo_magazine/box/a556/mg08/kp
 	sort_string = "ZVAJ"
 
 /datum/design/item/mg08/ms
@@ -2422,8 +2544,16 @@ CIRCUITS BELOW
 	name = "Shotgun MS Slugs"
 	id = "shotgunmsslugs"
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 550, "diamond" = 450)
+	materials = list("diamond" = 850)
 	build_path = /obj/item/ammo_box/shotgun/msslug
+	sort_string = "ZVAN"
+
+/datum/design/item/shotgunammo/kpslug
+	name = "Shotgun KP Slugs"
+	id = "shotgunkpslugs"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
+	materials = list("diamond" = 1700)
+	build_path = /obj/item/ammo_box/shotgun/kpslug
 	sort_string = "ZVAN"
 
 /datum/design/item/shotgunammo/stunshell
@@ -2450,6 +2580,14 @@ CIRCUITS BELOW
 	build_path = /obj/item/ammo_magazine/handful/brifle_handful/ap
 	sort_string = "ZVAP"
 
+/datum/design/item/briflehandful/kp
+	name = "Rifle Handful(763 KP)"
+	id = "riflehandfulkp"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
+	materials = list("diamond" = 2000)
+	build_path = /obj/item/ammo_magazine/handful/brifle_handful/kp
+	sort_string = "ZVAP"
+
 /datum/design/item/briflehandful/ms
 	name = "Rifle Handful(763 MS)"
 	id = "riflehandfulms"
@@ -2472,6 +2610,14 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 2)
 	materials = list("diamond" = 800)
 	build_path = /obj/item/ammo_magazine/mc45mm/ap
+	sort_string = "ZVAS"
+
+/datum/design/item/c45ammo/kp
+	name = "Pistol Magazine(45 KP)"
+	id = "45magkp"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
+	materials = list("diamond" = 1600)
+	build_path = /obj/item/ammo_magazine/mc45mm/kp
 	sort_string = "ZVAS"
 
 /datum/design/item/c45ammo/ms
@@ -2498,6 +2644,14 @@ CIRCUITS BELOW
 	build_path = /obj/item/ammo_magazine/a357/ap
 	sort_string = "ZVAV"
 
+/datum/design/item/revolver357/kp
+	name = "Revolver Ammo(357 KP)"
+	id = "357ammokp"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
+	materials = list("diamond" = 1600)
+	build_path = /obj/item/ammo_magazine/a357/kp
+	sort_string = "ZVAV"
+
 /datum/design/item/revolver357/ms
 	name = "Revolver Ammo(357 MS)"
 	id = "357ammoms"
@@ -2522,6 +2676,14 @@ CIRCUITS BELOW
 	build_path = /obj/item/ammo_magazine/c44/ap
 	sort_string = "ZVAY"
 
+/datum/design/item/revolver44/kp
+	name = "Revolver Ammo(44 KP)"
+	id = "44ammokp"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
+	materials = list("diamond" = 1600)
+	build_path = /obj/item/ammo_magazine/c44/kp
+	sort_string = "ZVAY"
+
 /datum/design/item/revolver44/ms
 	name = "Revolver Ammo(44 MS)"
 	id = "44ammoms"
@@ -2533,25 +2695,33 @@ CIRCUITS BELOW
 /datum/design/item/revolver50
 	name = "Revolver Ammo(50)"
 	id = "50ammo"
-	req_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2, TECH_COMBAT = 2)
+	req_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 3, TECH_COMBAT = 2)
 	materials = list(DEFAULT_WALL_MATERIAL = 600, "diamond" = 160)
-	build_path = /obj/item/ammo_magazine/handful/a50
+	build_path = /obj/item/ammo_magazine/c50
 	sort_string = "ZVBA"
 
 /datum/design/item/revolver50/ap
 	name = "Revolver Ammo(50 AP)"
 	id = "50ammo"
-	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 2, TECH_COMBAT = 2)
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 2)
 	materials = list("diamond" = 1000)
-	build_path = /obj/item/ammo_magazine/handful/a50/ap
+	build_path = /obj/item/ammo_magazine/c50/ap
+	sort_string = "ZVBB"
+
+/datum/design/item/revolver50/kp
+	name = "Revolver Ammo(50 KP)"
+	id = "50ammo"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
+	materials = list("diamond" = 2000)
+	build_path = /obj/item/ammo_magazine/c50/kp
 	sort_string = "ZVBB"
 
 /datum/design/item/revolver50/ms
 	name = "Revolver Ammo(50 MS)"
 	id = "50ammo"
-	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 3, TECH_COMBAT = 3)
+	req_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 520, "diamond" = 300)
-	build_path = /obj/item/ammo_magazine/handful/a50/ms
+	build_path = /obj/item/ammo_magazine/c50/ms
 	sort_string = "ZVBC"
 
 

@@ -503,6 +503,17 @@
 	block_chance = 30
 	weapon_speed_delay = 7
 
+/obj/item/melee/sword/machete/chopper/skinless
+	name = "diseased chopper"
+	desc = "A light primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."
+	w_class = ITEM_SIZE_HUGE
+	slot_flags = null
+	force = 35
+	force_wielded = 10
+	armor_penetration = 40
+	block_chance = 0
+	weapon_speed_delay = 10
+
 /obj/item/melee/sword/machete/chopper/heavy
 	name = "heavy iron chopper"
 	desc = "A heavy primitive blade made of scrap iron, a common sight in the underhives of imperial worlds."

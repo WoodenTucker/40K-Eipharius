@@ -48,6 +48,14 @@
 /obj/item/ammo_magazine/handful/brifle_handful/ms/two
 	initial_ammo = 2
 
+/obj/item/ammo_magazine/handful/brifle_handful/kp
+	name = "\improper handful of KP bullets"
+	desc = "A handful of KP rifle bullets for your rifle."
+	ammo_type = /obj/item/ammo_casing/brifle/kp
+
+/obj/item/ammo_magazine/handful/brifle_handful/kp/two
+	initial_ammo = 2
+
 
 // kroot rooifle
 
@@ -93,6 +101,11 @@
 	name = "\improper handful of MS slug shells"
 	desc = "A handful of MS slugs, like buckshot without the spread."
 	ammo_type = /obj/item/ammo_casing/shotgun/ms
+
+/obj/item/ammo_magazine/handful/shotgun/slug_handful/kp
+	name = "\improper handful of KP slug shells"
+	desc = "A handful of KP slugs, like buckshot without the spread."
+	ammo_type = /obj/item/ammo_casing/shotgun/kp
 
 /obj/item/ammo_magazine/handful/shotgun/beanbag_handful
 	name = "\improper handful of shells"
@@ -266,6 +279,12 @@
 	icon_state = "heavyslugbox"
 	desc = "You get extra heavy slug handfuls out of this."
 	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful/ms
+
+/obj/item/ammo_box/shotgun/kpslug
+	name = "KP slugs box"
+	icon_state = "heavyslugbox"
+	desc = "You get extra heavy slug handfuls out of this."
+	handful_type = /obj/item/ammo_magazine/handful/shotgun/slug_handful/kp
 
 /obj/item/ammo_box/shotgun/beanbag
 	name = "beanbags box"

@@ -47,10 +47,10 @@
 /datum/heretic_effect/healing/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
 	if(user.species.base_auras)
-		user.species.base_auras += /obj/aura/regenerating/human/astartes
+		user.species.base_auras += /obj/aura/regenerating/human/khornate
 	else
-		user.species.base_auras = list(/obj/aura/regenerating/human/astartes)
+		user.species.base_auras = list(/obj/aura/regenerating/human/khornate)
 
 /datum/heretic_effect/healing/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.species.base_auras -= /obj/aura/regenerating/human/astartes
+	user.species.base_auras -= /obj/aura/regenerating/human/khornate

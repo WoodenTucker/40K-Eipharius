@@ -5,7 +5,7 @@
 	icon_state = "umpowerarmor"
 	item_state = "umpowerarmor"
 	str_requirement = 24 // they can get gibbed and their armor stays. helmet has it, so why not armor too
-	canremove = 0
+	canremove = 1
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 90, bullet = 100, laser = 100, energy = 100, bomb = 80, bio = 100, rad = 100)
 	sales_price = 120
