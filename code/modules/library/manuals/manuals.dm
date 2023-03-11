@@ -324,11 +324,11 @@
 
 				<h2>Bloody Favour:</h2>
 				<h3>Imbue yourself with the power of the Blood God.</h3>
-				Hearts offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
+				Heads offered on a rune of Khorne. Raise your favour to receive blessings improving your combat prowess.
 
 				<h2>Tools Of Carnage:</h2>
 				<h3>Bless a weapon of slaughter via offerings.</h3>
-				Human teeth and a combat knife offered on a rune of Khorne. The more teeth the better the resulting weapon!.
+				A cut ruby and a combat knife offered on a rune of Khorne. The blade it provides thirsts for blood. 
 
 				</body>
 			</html>
