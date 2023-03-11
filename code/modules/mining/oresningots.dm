@@ -150,7 +150,7 @@
 	icon_state = "adamantine_ingot"
 	w_class = ITEM_SIZE_NORMAL
 	drop_sound = 'sound/items/metaldrop.ogg'
-	sales_price = 30
+	sales_price = 25
 
 /obj/item/ingots/goldingot
 	name = "gold ingot"
