@@ -1943,13 +1943,13 @@ CIRCUITS BELOW
 // (TECH_MATERIAL = 2, TECH_ENGINEERING = 2, TECH_PHORON = 1, TECH_POWER = 3, TECH_BLUESPACE = 1, TECH_BIO = 1, TECH_COMBAT = 1, TECH_MAGNET = 4, TECH_DATA = 1, TECH_ILLEGAL = 1)
 
 // ARMOR
-/datum/design/armor/rtcloak
+/datum/design/armor/rt
 	name = "Improved RT Cloak" // Mid Level mechanicus armor
 	id = "rtcloak"
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "gold" = 400, "diamond" = 8500)
 	build_path = /obj/item/clothing/suit/armor/rtcloak/mechanicus
-	sort_string = "XCAAA"
+	sort_string = "XCAA"
 
 /datum/design/armor/governor
 	name = "Improved Governor Mantle"
@@ -1957,7 +1957,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 4500, "gold" = 800, "diamond" = 8500)
 	build_path = /obj/item/clothing/suit/armor/governor/mechanicus
-	sort_string = "XCAAB"
+	sort_string = "XCAB"
 
 /datum/design/armor/mining
 	name = "Improved Mining Suit"
@@ -1965,7 +1965,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_COMBAT = 3)
 	materials = list(DEFAULT_WALL_MATERIAL = 16000, "diamond" = 2000)
 	build_path = /obj/item/clothing/suit/armor/salvage/mechanicus
-	sort_string = "XCAAC"
+	sort_string = "XCAC"
 
 /datum/design/armor/flak
 	name = "Improved Mercenary Flak Armor"
@@ -1973,7 +1973,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 3000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/mechanicus
-	sort_string = "XCAAD"
+	sort_string = "XCAD"
 
 /datum/design/armor/carapace
 	name = "Improved Mercenary Carapace Armor"
@@ -1981,7 +1981,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 6)
 	materials = list(DEFAULT_WALL_MATERIAL = 8000, "diamond" = 7000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mercenary/carapace/mechanicus
-	sort_string = "XCAAE"
+	sort_string = "XCAE"
 
 /datum/design/armor/enforcer
 	name = "Improved Enforcer Armor"
@@ -1989,7 +1989,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 5, TECH_COMBAT = 4)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 3200)
 	build_path = /obj/item/clothing/suit/armor/enforcer/mechanicus
-	sort_string = "XCAAF"
+	sort_string = "XCAF"
 
 /datum/design/armor/enforcer/marshal
 	name = "Improved Enforcer Marshal Armor"
@@ -1997,7 +1997,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 6, TECH_ENGINEERING = 6, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 5000, "diamond" = 5200)
 	build_path = /obj/item/clothing/suit/armor/enforcer/marshal/mechanicus
-	sort_string = "XCAAG"
+	sort_string = "XCAG"
 
 /datum/design/armor/flak/guard
 	name = "Improved Cadian Flak Armor"
@@ -2005,7 +2005,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 3000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/mechanicus
-	sort_string = "XCAAH"
+	sort_string = "XCAH"
 
 /datum/design/armor/carace/guard
 	name = "Improved Cadian Carapace Armor"
@@ -2013,7 +2013,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
 	materials = list(DEFAULT_WALL_MATERIAL = 12000, "diamond" = 7000)
 	build_path = /obj/item/clothing/suit/armor/guardsman/carapace/mechanicus
-	sort_string = "XCAAI"
+	sort_string = "XCAI"
 
 /datum/design/helmet/flak
 	name = "Improved Cadian Flak Helmet"
@@ -2021,7 +2021,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 5, TECH_ENGINEERING = 4, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 4000, "diamond" = 1000)
 	build_path = /obj/item/clothing/head/helmet/guardhelmet/mechanicus
-	sort_string = "XCBAA"
+	sort_string = "XCBA"
 
 /datum/design/helmet/carapace
 	name = "Carapace Helmet"
@@ -2029,7 +2029,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_MATERIAL = 7, TECH_ENGINEERING = 6, TECH_COMBAT = 7)
 	materials = list(DEFAULT_WALL_MATERIAL = 1000, "diamond" = 3000)
 	build_path = /obj/item/clothing/head/helmet/guardhelmet/carapace
-	sort_string = "XCBAB"
+	sort_string = "XCBA"
 
 /datum/design/armor/teleport
 	name = "Reactive Teleporter Armor"
@@ -2037,7 +2037,7 @@ CIRCUITS BELOW
 	req_tech = list(TECH_DATA = 7, TECH_ENGINEERING = 8, TECH_PHORON = 7, TECH_BLUESPACE = 10)
 	materials = list(DEFAULT_WALL_MATERIAL = 2000, "glass" = 2000, "diamond" = 16000, "phoron" = 6000)
 	build_path = /obj/item/clothing/suit/armor/reactive
-	sort_string = "XCWAA"
+	sort_string = "XCWA"
 
 // WEAPONS
 /datum/design/item/galvanicrifle
