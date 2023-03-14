@@ -80,7 +80,7 @@
 		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
-//		H.witchblood() //Psyker Enforcers don't exist
+		H.witchblood() //Becoming a psyker can happen at any point of your life bro.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
