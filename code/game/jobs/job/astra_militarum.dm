@@ -367,7 +367,6 @@ datum/job/ig/bullgryn
 	cultist_chance = 20 //this man has seen his comrades die from fucking nurgle rot and revive
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		H.warfare_faction = IMPERIUM
 		..()
 		H.set_quirk(new/datum/quirk/brave())
@@ -426,7 +425,6 @@ datum/job/ig/bullgryn
 	cultist_chance = 7 //some of 'em betrayed cadia
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		..()
 		H.add_stats(rand(17,20), rand(16,18), rand(18,19), rand(10,15)) //still not as good as a arbites
 		H.add_skills(rand(10,11),rand(9,10),rand(3,5),5,rand(2,4)) //melee, ranged, med, eng, surgery
