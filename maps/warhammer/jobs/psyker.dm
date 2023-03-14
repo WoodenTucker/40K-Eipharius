@@ -2,7 +2,7 @@
 	..()
 	if(psyker == 1)
 		stat(null, "Focus: [focus]/[max_focus]")
-		H.verbs += list(
+		verbs += list(
 			/spell/targeted/heal_target,
 			/spell/targeted/heal_target/sacrifice/minor,
 			/spell/targeted/torment/screech,
@@ -31,10 +31,41 @@
 	amt_dizziness = 100
 	amt_confused = 100
 	amt_stuttering = 100
-
 	compatible_mobs = list(/mob/living/carbon/human)
-
 	hud_state = "wiz_subj"
+	
+	
+	
+/spell/targeted/heal_target/sacrifice/minor
+	name = "Sacrifice"
+	desc = "This spell heals the target by a moderate amound of damage, but hurts you."
+	feedback = "SF"
+	spell_flags = SELECTABLE
+	invocation = "Thy wounds be made mine!"
+	charge_type = Sp_HOLDVAR
+	holder_var_type = "fireloss"
+	holder_var_amount = 50
+	level_max = list(Sp_TOTAL = 1, Sp_SPEED = 0, Sp_POWER = 1)
+	amt_dam_brute = -100
+	amt_dam_fire = -100
+	amt_dam_oxy = -100
+	amt_dam_tox = -10
+	amt_blood  = 560
+	hud_state = "gen_dissolve"
+
+/spell/targeted/heal_target/sacrifice/empower_spell()
+	if(!..())
+		return 0
+
+	amt_organ = 25
+	amt_brain  = -25
+	amt_radiation  = -100
+
+
+
+	return "You will now heal organ and brain damage, as well as virtually purge all radiation."
+	
+	
 	
 /spell/targeted/torment/screech
 	name = "Scream of the witch"
@@ -49,10 +80,7 @@
 	level_max = list(Sp_TOTAL = 1, Sp_SPEED = 0, Sp_POWER = 1)
 	cooldown_min = 50
 	message = "<span class='danger'>So much pain! All you can hear is the bubbling and popping of reality itself!</span>"
-
 	max_targets = 3
 	compatible_mobs = list(/mob/living/carbon/human)
-
-	var/loss = 30
-
+	loss = 30
 	hud_state = "wiz_horse"
