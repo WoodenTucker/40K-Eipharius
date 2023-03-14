@@ -72,7 +72,6 @@
 	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		..()
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
