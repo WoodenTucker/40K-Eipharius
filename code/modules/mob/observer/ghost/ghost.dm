@@ -198,7 +198,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		if(response != "Ghost")
 			return
 		resting = 1
-		succumb()
+		death()
 		log_game("[key_name_admin(usr)] has ghosted.")
 		var/mob/observer/ghost/ghost = ghostize(0)
 		ghost.timeofdeath = world.time
