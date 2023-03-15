@@ -81,6 +81,6 @@
 	cooldown_min = 50
 	message = "<span class='danger'>So much pain! All you can hear is the bubbling and popping of reality itself!</span>"
 	max_targets = 3
-	compatible_mobs = list(/mob/living/carbon/human)
+	compatible_mobs = list(/mob/living/carbon)
 	loss = 30
 	hud_state = "wiz_horse"
