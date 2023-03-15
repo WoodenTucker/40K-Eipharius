@@ -212,15 +212,6 @@ default behaviour is:
 
 	return can_move_mob(tmob, 1, 0)
 
-/mob/living/verb/succumb()
-	set name = "Succumb"
-	set category = "IC"
-	if(stat == DEAD)
-		return
-	else
-		death()
-		to_chat(src, "<span class='notice'>You have given up on life and succumbed to the warp.</span>")
-
 /mob/living/proc/updatehealth()
 	if(status_flags & GODMODE)
 		health = 100
