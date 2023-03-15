@@ -214,7 +214,7 @@ default behaviour is:
 
 /mob/living/verb/succumb()
 	set name = "Succumb"
-	set category = "IC"
+	set category = "OOC"
 	if(stat == DEAD)
 		return
 	else
