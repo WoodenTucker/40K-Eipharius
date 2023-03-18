@@ -62,6 +62,8 @@ SUBSYSTEM_DEF(jobs)
 			GLOB.civilian_positions |= job.title
 		if(job.department_flag & MSC)
 			GLOB.nonhuman_positions |= job.title
+		if(job.department_flag & PIL)
+			GLOB.pilgrim_positions |= job.title
 
 		if(job.social_class > SOCIAL_CLASS_MED)
 			GLOB.nobles |= job.title
