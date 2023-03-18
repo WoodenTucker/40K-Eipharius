@@ -14,6 +14,7 @@
 /datum/heretic_effect/strength/greater
 	name = "Strength"
 	add_message = "<span class='notice'>You feel your body mutate further. Your muscles feel imbued with strength.</span>"
+	examine_message = "<span class='warning'><b>They look ABSURDLY strong!\n</b></span>"
 	stat_increase = 6
 	unique = TRUE
 
@@ -25,6 +26,7 @@
 /datum/heretic_effect/tough_skin
 	name = "Leather Skin"
 	add_message = "<span class='notice'>You feel your skin toughen.</span>"
+	examine_message = "<span class='warning'><b>Their skin looks like leather.\n</b></span>"
 	unique = TRUE
 
 /datum/heretic_effect/tough_skin/add_effect(var/mob/living/carbon/human/user)
@@ -45,10 +47,10 @@
 /datum/heretic_effect/healing/add_effect(var/mob/living/carbon/human/user)
 	. = ..()
 	if(user.species.base_auras)
-		user.species.base_auras += /obj/aura/regenerating/human/astartes
+		user.species.base_auras += /obj/aura/regenerating/human/khornate
 	else
-		user.species.base_auras = list(/obj/aura/regenerating/human/astartes)
+		user.species.base_auras = list(/obj/aura/regenerating/human/khornate)
 
 /datum/heretic_effect/healing/remove_effect(var/mob/living/carbon/human/user)
 	. = ..()
-	user.species.base_auras -= /obj/aura/regenerating/human/astartes
+	user.species.base_auras -= /obj/aura/regenerating/human/khornate

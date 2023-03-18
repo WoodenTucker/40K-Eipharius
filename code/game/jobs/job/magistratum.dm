@@ -35,6 +35,7 @@
 		H.add_stats(rand(16,19), rand(13,17), rand(13,17), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
+		H.set_trait(new/datum/trait/death_tolerant())
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
@@ -71,14 +72,13 @@
 	announced = FALSE
 
 	equip(var/mob/living/carbon/human/H)
-		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Enforcer [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(12,16), rand(12,16), rand(10,13)) //meant to be a brute keeping the plebs in line
 		H.add_skills(rand(9,10),rand(7,10),rand(3,5),3,rand(2,4)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
-//		H.witchblood() //Psyker Enforcers don't exist
+		H.set_trait(new/datum/trait/death_tolerant())
+		H.witchblood() //Becoming a psyker can happen at any point of your life bro.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
@@ -159,12 +159,13 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Arbitrator [current_name]")
-		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(18,20), rand(18,20), rand(15,19), rand(15,16)) //intelligence only buffs surgery shit, don't buff it
 		H.add_skills(rand(10,11),rand(8,10),rand(3,6),3,rand(2,5)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
-//		H.witchblood() //Psyker Enforcers don't exist
+		H.set_quirk(new/datum/quirk/brave())
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_inquisition)
@@ -179,7 +180,8 @@
 	head = /obj/item/clothing/head/helmet/guardhelmet/patrol
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
-	l_pocket = /obj/item/storage/box/ifak // /obj/item/stack/medical/bruise_pack
+	l_pocket = /obj/item/storage/box/ifak 
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit = /obj/item/clothing/suit/armor/enforcer
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -231,7 +233,7 @@
 	name = OUTFIT_JOB_NAME("Enforcer Cadet")
 	head = null
 	uniform = /obj/item/clothing/under/color/brown
-	shoes = /obj/item/clothing/shoes/jackboots // /obj/item/stack/medical/bruise_pack
+	shoes = /obj/item/clothing/shoes/jackboots 
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	suit = /obj/item/clothing/suit/armor/vest
 	r_hand = /obj/item/melee/baton/loaded
@@ -241,6 +243,7 @@
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
 	backpack_contents = list(
 	/obj/item/handcuffs = 1,
@@ -280,27 +283,3 @@
 	)
 
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-/* // this isn't used rn.
-/decl/hierarchy/outfit/job/ig/arbitrator
-	name = OUTFIT_JOB_NAME("Magistratum Arbitrator")
-	uniform = /obj/item/clothing/under/color/brown
-	suit = /obj/item/clothing/suit/armor/enforcer/arbitrator
-	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/melee/baton/loaded
-	gloves = /obj/item/clothing/gloves/combat/cadian
-	shoes = /obj/item/clothing/shoes/jackboots/cadian
-	mask = null
-	glasses = null
-	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/dog_tag/guardsman
-	l_ear = /obj/item/device/radio/headset/entertainment
-	backpack_contents = list(
-	/obj/item/handcuffs = 1,
-	/obj/item/gun/projectile/bolter_pistol = 1,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	)
-	*/

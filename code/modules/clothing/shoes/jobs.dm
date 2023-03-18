@@ -227,7 +227,7 @@
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 	str_requirement = 25
-	canremove = 0
+	canremove = 1
 	unacidable = 1
 	armor = list(melee = 90, bullet = 90, laser = 90, energy = 90, bomb = 90, bio = 50, rad = 50)
 	cold_protection = FEET|LEGS

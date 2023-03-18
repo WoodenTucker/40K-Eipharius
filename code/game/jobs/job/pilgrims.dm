@@ -214,7 +214,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/head/pillbox, slot_head)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_l_hand)
+			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
@@ -557,6 +557,28 @@ Pilgrim Fate System
 
 
 //Ogryn Bouncer
+
+/decl/hierarchy/outfit/job/ogryn
+	name = OUTFIT_JOB_NAME("Ogryn")
+	uniform = /obj/item/clothing/under/ogryn/jumpsuit
+	head = null
+	shoes = /obj/item/clothing/shoes/jackboots/ogryn
+	gloves = null
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
+	pda_type = /obj/item/device/pda/penitent
+	l_ear = null
+	r_ear = null
+	belt = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	l_hand = /obj/item/melee/classic_baton/trench_club
+	backpack_contents = list(
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1,
+
+	)
+
 /decl/hierarchy/outfit/job/bouncer
 	name = OUTFIT_JOB_NAME("Bouncer")
 	uniform = /obj/item/clothing/under/ogryn/jumpsuit
@@ -583,8 +605,8 @@ Pilgrim Fate System
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 2
-    spawn_positions = 2
+    total_positions = 1
+    spawn_positions = 1
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     latejoin_at_spawnpoints = TRUE

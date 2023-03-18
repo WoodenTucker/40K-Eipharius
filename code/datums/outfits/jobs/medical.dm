@@ -13,7 +13,7 @@
 	l_ear  = /obj/item/device/radio/headset/heads/cmo
 	uniform = /obj/item/clothing/under/rank/medical
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle
+	suit = /obj/item/clothing/suit/sisterofbattle/mlsister
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_hand = /obj/item/storage/firstaid/adv

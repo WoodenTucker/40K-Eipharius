@@ -188,27 +188,6 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Magos Biologis, resting within a Forge Temple of the Mechanicus constructed by the AdMech. You are an expert on xenos and biological research, your primary duty is to oversee the construction of Skitarii. You have equal power alongside the Explorator. Ensure the Menials and Techpriests are properly trained in your craft.</font></b></span>")
 
 
-//Walker here, why the fuck does this even exist? all Genetors research aliens, thats like, their speciality, who added this in? im not going to remove it for now but, idk why its here.
-// Magos Biologis Xenobiologist
-/*
-/datum/job/xenobiologist
-	title = "Magos Xenologist"
-	department = "Science"
-	department_flag = SCI
-
-	total_positions = 3
-	spawn_positions = 2
-	supervisors = "the Magos Dominus"
-	selection_color = "#633d63"
-	economic_modifier = 7
-	access = list(access_mechanicus, access_tox, access_tox_storage, access_xenobiology, access_hydroponics)
-	minimal_access = list(access_xenobiology, access_hydroponics)
-//	alt_titles = list("Xenobotanist")
-	minimal_player_age = 7
-	outfit_type = /decl/hierarchy/outfit/job/science/xenobiologist
-*/
-
-
 /datum/job/explorer
 	title = "Magos Explorator"
 	department = "Science"
@@ -285,19 +264,4 @@
 	id = null
 	id_slot = null
 
-/* // keep if you need ref for any old stuff
-/datum/job/atmos
-	title = "Atmospheric Technician"
-	department = "Engineering"
-	department_flag = ENG
 
-	total_positions = 0
-	spawn_positions = 0
-	supervisors = "the Magos"
-	selection_color = "#5b4d20"
-	economic_modifier = 5
-	minimal_player_age = 7
-	access = list(access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks)
-	minimal_access = list(access_engine, access_engine_equip, access_tech_storage, access_village, access_external_airlocks)
-	outfit_type = /decl/hierarchy/outfit/job/engineering/atmos
-*/ //we dont use atmos here

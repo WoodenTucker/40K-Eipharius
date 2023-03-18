@@ -28,6 +28,16 @@
 	max_ammo = 6
 	multiple_sprites = 1
 
+/obj/item/ammo_magazine/a357/kp
+	name = "KP speed loader (.357)"
+	desc = "A kraken penetrator speed loader for revolvers."
+	icon_state = "38"
+	caliber = "357"
+	ammo_type = /obj/item/ammo_casing/a357/kp
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
 /obj/item/ammo_magazine/c50
 	name = "speed loader (.50)"
 	desc = "A speed loader for revolvers."
@@ -54,6 +64,16 @@
 	icon_state = "38"
 	caliber = ".50"
 	ammo_type = /obj/item/ammo_casing/a50/ms
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	max_ammo = 6
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/c50/kp
+	name = "KP speed loader (.50)"
+	desc = "A kraken penetrator speed loader for revolvers."
+	icon_state = "38"
+	caliber = ".50"
+	ammo_type = /obj/item/ammo_casing/a50/kp
 	matter = list(DEFAULT_WALL_MATERIAL = 1260)
 	max_ammo = 6
 	multiple_sprites = 1
@@ -93,6 +113,11 @@
 	desc = "An MS speed loader for revolvers."
 	ammo_type = /obj/item/ammo_casing/c44/ms
 
+/obj/item/ammo_magazine/c44/kp
+	name = "KP speed loader (.44 magnum)"
+	desc = "An KP speed loader for revolvers."
+	ammo_type = /obj/item/ammo_casing/c44/kp
+
 /obj/item/ammo_magazine/c44/rubber
 	name = "speed loader (.44 magnum, rubber)"
 	icon_state = "R38"
@@ -119,6 +144,10 @@
 /obj/item/ammo_magazine/mc9mm/ms
 	name = "MS magazine (9mm)"
 	ammo_type = /obj/item/ammo_casing/c9mm/ms
+
+/obj/item/ammo_magazine/mc9mm/kp
+	name = "KP magazine (9mm)"
+	ammo_type = /obj/item/ammo_casing/c9mm/kp
 
 /obj/item/ammo_magazine/smgmc9mm
 	name = "SMG magazine (9mm)"
@@ -168,6 +197,11 @@
 	desc = "A manstopper .45 magazine."
 	ammo_type = /obj/item/ammo_casing/c45/ms
 
+/obj/item/ammo_magazine/mc45mm/kp
+	name = "KP magazine (.45)"
+	desc = "A kraken penetrator .45 magazine."
+	ammo_type = /obj/item/ammo_casing/c45/kp
+
 /obj/item/ammo_magazine/mc45mm/ap
 	name = "AP magazine (.45)"
 	desc = "An armor piercing .45 magazine."
@@ -199,6 +233,10 @@
 	name = "MS magazine (7.62mm)"
 	ammo_type = /obj/item/ammo_casing/a762/ms
 
+/obj/item/ammo_magazine/a762/kp
+	name = "KP magazine (7.62mm)"
+	ammo_type = /obj/item/ammo_casing/a762/kp
+
 /obj/item/ammo_magazine/a762/empty
 	initial_ammo = 0
 
@@ -225,6 +263,11 @@
 	icon_state = "hmg"
 	ammo_type = /obj/item/ammo_casing/a556/ms
 
+/obj/item/ammo_magazine/box/a556/mg08/kp
+	name = "KP LMG mag"
+	icon_state = "hmg"
+	ammo_type = /obj/item/ammo_casing/a556/kp
+
 /obj/item/ammo_magazine/c556
 	name = "magazine (5.56mm)"
 	icon_state = "5556"
@@ -238,6 +281,10 @@
 /obj/item/ammo_magazine/c556/ap
 	name = "AP magazine (5.56mm)"
 	ammo_type = /obj/item/ammo_casing/a556/ap
+
+/obj/item/ammo_magazine/c556/kp
+	name = "KP magazine (5.56mm)"
+	ammo_type = /obj/item/ammo_casing/a556/kp
 
 /obj/item/ammo_magazine/c556/ms
 	name = "MS magazine (5.56mm)"

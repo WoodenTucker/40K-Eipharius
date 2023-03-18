@@ -15,6 +15,9 @@
 	strength = STR_HIGH
 	sexybits_location = BP_GROIN
 	var/bonehead = 0 //Boneheads are enhanced, more intelligent ogryn. Will make them a bit smarter
+	base_auras = list(
+		/obj/aura/regenerating/human/ogryn
+		)
 
 	unarmed_types = list(
 		/datum/unarmed_attack/stomp,
@@ -47,7 +50,7 @@
 	. = ..()
 	fully_replace_character_name(random_ogryn_name())
 	warfare_faction = IMPERIUM
-	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/kroot)
+	var/decl/hierarchy/outfit/outfit = outfit_by_type(/decl/hierarchy/outfit/job/ogryn)
 	outfit.equip(src)
 
 	hand = 0//Make sure one of their hands is active.

@@ -184,17 +184,15 @@
 /obj/item/projectile/bullet/pistol/medium/ap
 	damage = 40 //.45
 	armor_penetration = 20
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
 /obj/item/projectile/bullet/pistol/medium/ms
 	damage = 55 //.45
 	armor_penetration = -10
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
 
 /obj/item/projectile/bullet/pistol/medium/kp
 	damage = 40 //.45
 	armor_penetration = 30
-	fire_sound = 'sound/weapons/gunshot/auto1.ogg'
+	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/strong //matebas
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
@@ -208,6 +206,7 @@
 /obj/item/projectile/bullet/pistol/strong/kp
 	damage = 54 //.50AE
 	armor_penetration = 50
+	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/strong/ms
 	damage = 64 //.50AE
@@ -225,6 +224,7 @@
 /obj/item/projectile/bullet/pistol/revolver/kp
 	damage = 48
 	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/revolver/ms
 	damage = 58
@@ -242,6 +242,7 @@
 /obj/item/projectile/bullet/pistol/medium/revolver/kp
 	damage = 48
 	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ms
 	damage = 58
@@ -258,6 +259,7 @@
 /obj/item/projectile/bullet/pistol/strong/revolver/kp
 	damage = 52
 	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ms
 	damage = 62
@@ -285,6 +287,7 @@
 	fire_sound = 'sound/weapons/gunshot/shotgun3.ogg'
 	damage = 75
 	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/shotgun/ms
 	name = "MS slug"
@@ -327,50 +330,60 @@
 
 /obj/item/projectile/bullet/rifle/a556
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 45
+	damage = 43
 	armor_penetration = 10
 
 /obj/item/projectile/bullet/rifle/a556/ap
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 49
+	damage = 47
 	armor_penetration = 20
 
 /obj/item/projectile/bullet/rifle/a556/ms
 	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
-	damage = 55
+	damage = 52
 	armor_penetration = -5
+
+/obj/item/projectile/bullet/rifle/a556/kp
+	fire_sound = 'sound/weapons/gunshot/gunshot3.ogg'
+	damage = 47
+	armor_penetration = 35
+	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 61
-	armor_penetration = 10
-	penetrating = TRUE
+	armor_penetration = 15
 
 /obj/item/projectile/bullet/rifle/a762/ap
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
 	damage = 64
-	armor_penetration = 20
-	penetrating = TRUE
+	armor_penetration = 25
+
+/obj/item/projectile/bullet/rifle/a762/kp
+	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
+	damage = 64
+	armor_penetration = 40
+	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762/ms
 	fire_sound = 'sound/weapons/gunshot/gunshot2.ogg'
-	damage = 71
-	armor_penetration = -5
-	penetrating = TRUE
+	damage = 69
+	armor_penetration = 0
+
 
 /obj/item/projectile/bullet/rifle/a145
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	damage = 130
 	armor_penetration = 20
 	//hitscan = 1 //so the PTR isn't useless as a sniper weapon
-	penetration_modifier = 1.25
-	penetrating = 1
+	penetration_modifier = 1
+	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a145/apds
 	damage = 100
 	armor_penetration = 45
-	penetration_modifier = 1.5
-	penetrating = 1
+	penetration_modifier = 1
+	penetrating = 3
 
 /* Miscellaneous */
 

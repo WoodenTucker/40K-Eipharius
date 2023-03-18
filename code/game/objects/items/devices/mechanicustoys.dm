@@ -17,7 +17,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -62,7 +62,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -85,7 +85,7 @@
 	icon = 'icons/obj/items/lube.dmi'
 	icon_state = "lube"
 	item_state = "lube"
-
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/device/autochisel
 	name = "Auto-Chisel"
@@ -96,7 +96,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 
@@ -110,6 +110,7 @@
 	icon = 'icons/obj/items/chisel.dmi'
 	icon_state = "chisel"
 	item_state = "chisel"
+	w_class = ITEM_SIZE_LARGE
 
 /obj/item/device/lasercutter
 	name = "Laser Cutter"
@@ -120,7 +121,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 
@@ -141,7 +142,7 @@
 	icon_state = "hammer"
 	item_state = "hammer"
 	slot_flags = null
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 
 
@@ -160,7 +161,7 @@
 	sharp = TRUE
 	edge = TRUE
 //	obj_flags = OBJ_FLAG_CONDUCTIBLE //me on my way to get shocked after flinging a power axe at a power wire cause it somehow is conductible
-	w_class = ITEM_SIZE_SMALL //makes it actually fast and pretty usable, magi ALWAYS carry it around, no reason for it to weight anything.
+	w_class = ITEM_SIZE_LARGE //makes it actually fast and pretty usable, magi ALWAYS carry it around, no reason for it to weight anything.
 	weapon_speed_delay = 12
 	sales_price = 0
 
@@ -178,7 +179,7 @@
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	slot_flags = null
 	canremove = FALSE
-	w_class = ITEM_SIZE_SMALL
+	w_class = ITEM_SIZE_LARGE
 	var/constructionsystem = 0
 	attack_verb = list("singed", "charred", "burned", "sizzled", "cooked",)
 

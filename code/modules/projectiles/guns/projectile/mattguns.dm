@@ -296,6 +296,11 @@
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ap
 	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/ap/two
 
+/obj/item/ammo_casing/brifle/kp
+	desc = "An old worn out looking KP bullet casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/kp
+	ammo_stack = /obj/item/ammo_magazine/handful/brifle_handful/kp/two
+
 /obj/item/ammo_casing/brifle/ms
 	desc = "An old worn out looking MS bullet casing."
 	projectile_type = /obj/item/projectile/bullet/rifle/a762/brifle/ms
@@ -303,7 +308,6 @@
 
 /obj/item/projectile/bullet/rifle/a762/brifle
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	penetrating = TRUE
 	damage = 65
 	armor_penetration = 10
 
@@ -311,13 +315,18 @@
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 68
 	armor_penetration = 20
-	penetrating = TRUE
+	penetrating = 1
+
+/obj/item/projectile/bullet/rifle/a762/brifle/kp
+	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
+	damage = 68
+	armor_penetration = 35
+	penetrating = 2
 
 /obj/item/projectile/bullet/rifle/a762/brifle/ms
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
 	damage = 75
 	armor_penetration = -10
-	penetrating = TRUE
 
 /obj/item/projectile/bullet/rifle/kroot
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'

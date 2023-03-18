@@ -67,7 +67,6 @@
 		to_chat(src, "<span class='notice'>You can't do this when dead.</span>")
 		return
 
-	src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses
 
 	var/castes = input("Select a caste","Caste Selection") as null|anything in list("Fire Warrior", "Water Caste Merchant", "Earth Caste Mechanic", "Kroot Hunter")
 	switch(castes)
@@ -91,11 +90,7 @@
 			src.real_name = "Shas [real_name]"
 			client?.color = null
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
-
-
-
 			var/obj/item/card/id/ring/tau/W = new
-
 			W.icon_state = "tau"
 			W.assignment = "Fire Warrior"
 			W.registered_name = real_name
@@ -121,24 +116,20 @@
 			src.real_name = "Por [real_name]"
 			client?.color = null
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
-
-
-
 			var/obj/item/card/id/ring/tau/W = new
-
 			W.icon_state = "tau"
 			W.assignment = "Water Caste Merchant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
-
+			
 		if("Earth Caste Mechanic")
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/gun/energy/pulse/pulsepistol, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/earthcaste, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/belt/utility/full, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/welding/superior, slot_glasses)
-
+			
 			visible_message("[name] stretches their muscles after a long flight, feeling their strength and skill return to them.")
 			src.add_stats(rand(7,9),rand(11,13),rand(13,16),12)
 			src.add_skills(rand(3,6),rand(3,6),rand(5,8),6,6) //skills such as melee, ranged, med, eng and surg
@@ -148,11 +139,7 @@
 			src.real_name = "Fio'La [real_name]"
 			client?.color = null
 			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
-
-
-
 			var/obj/item/card/id/ring/tau/W = new
-
 			W.icon_state = "tau"
 			W.assignment = "Earth Caste Mechanic"
 			W.registered_name = real_name
@@ -165,6 +152,7 @@
 			var/mob/living/carbon/human/kroot/new_character = new(usr.loc) // da mob
 			new_character.key = usr.key //puts ghost in body with new key
 			visible_message("You wake up after a long flight to find yourself in Imperial space. Go to your kroot tab and stretch your muscles.")
+			src.verbs -= /mob/living/carbon/human/tau/proc/tauclasses //removes verb at the end so they can't spam it for whatever reason
 			qdel(src)
 
 
