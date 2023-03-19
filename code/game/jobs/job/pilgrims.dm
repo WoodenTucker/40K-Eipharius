@@ -30,7 +30,7 @@
 /datum/job/citizen //the plan is to have penitent be a default landing job, I will eventually add a randomized system that gives different loadouts much like the migrant system of lifeweb
 	title = "Imperial Citizen"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED //these boys are gross
+	social_class = SOCIAL_CLASS_MED //these boys are less gross
 	total_positions = 10 //maybe open up more of these when we figure out other classes and depending on player count
 	spawn_positions = 10
 	supervisors = "The God Emperor of Mankind"
@@ -158,13 +158,13 @@ Pilgrim Fate System
 			if(prob(40))
 				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand) 
+				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) 
+				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			else if(prob(10))
 				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered, slot_l_hand)
 			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)  
+				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)
 			else
 				equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol, slot_l_hand)
 				//Back to Hardset Loadout
@@ -336,7 +336,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand) 
+			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS

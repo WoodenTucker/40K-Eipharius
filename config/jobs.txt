@@ -1,8 +1,8 @@
 Captain=1
-Seneschal=1
+Heir=1
 Commissar=1
-Magos=1
-Research Director=1
+Explorator=1
+Biologis=1
 Sister Hospitaller=1
 
 Station Engineer=5

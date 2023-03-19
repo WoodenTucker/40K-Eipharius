@@ -466,9 +466,9 @@
 			jobcats["Adeptus Mechanicus"]["jobs"] += job
 		else if(job.department_flag & MED)
 			jobcats["Ministorum"]["jobs"] += job
+/*		else if(job.department_flag & SUP)
+			jobcats["Adeptus Mechanicus"]["jobs"] += job*/
 		else if(job.department_flag & SUP)
-			jobcats["Adeptus Mechanicus"]["jobs"] += job
-		else if(job.department_flag & CIV)
 			jobcats["Rogue Trader Retinue"]["jobs"] += job
 		else if(job.department_flag & INQ)
 			jobcats["Inquisition/Magisterium"]["jobs"] += job

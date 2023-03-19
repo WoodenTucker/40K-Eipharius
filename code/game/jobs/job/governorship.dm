@@ -6,7 +6,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	title = "Planetary Governor"
 	department = "Planetary Governor"
 	head_position = 1
-	department_flag = COM|CIV
+	department_flag = COM
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
@@ -49,7 +49,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 /datum/job/heir
 	title = "Heir"
 	head_position = 1
-	department_flag = COM|CIV
+	department_flag = COM
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 1
 	spawn_positions = 1

@@ -2,7 +2,7 @@
 	title = "Magos Dominus"
 	department = "Adeptus Mechanicus"
 	head_position = 1
-	department_flag = ENG|COM|SCI
+	department_flag = ENG
 	social_class = SOCIAL_CLASS_HIGH
 	total_positions = 0
 	spawn_positions = 0
@@ -145,7 +145,7 @@
 /datum/job/biologis
 	title = "Magos Biologis"
 	department = "Engineering"
-	department_flag = SCI|ENG
+	department_flag = ENG
 	total_positions = 1
 	spawn_positions = 1
 	minimal_player_age = 7
