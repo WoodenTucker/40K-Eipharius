@@ -157,7 +157,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 24
-	armor_penetration = 10
+	armor_penetration = 5
 
 /obj/item/projectile/energy/las/lasgun/execution
 	name = "lasbolt"
