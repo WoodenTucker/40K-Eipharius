@@ -46,7 +46,7 @@
 /datum/job/hydro
 	title = "Farmer"
 	department = "Service"
-	department_flag = CIV
+	department_flag = PIL
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "the Town"

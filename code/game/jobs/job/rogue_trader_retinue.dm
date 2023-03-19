@@ -4,7 +4,7 @@
 	title = "Rogue Trader"
 	department = "Rogue Trader"
 	head_position = 1
-	department_flag = CIV
+	department_flag = SUP
 	social_class = SOCIAL_CLASS_MAX
 	total_positions = 1
 	spawn_positions = 1
@@ -54,7 +54,7 @@
 
 /datum/job/janissary
 	title = "Vessorine Janissary"
-	department_flag = CIV
+	department_flag = SUP
 	total_positions = 0 // Disabled for now.
 	spawn_positions = 0
 	supervisors = "the Rogue Trader"
@@ -90,7 +90,7 @@
 
 /datum/job/xenomerc
 	title = "Xeno Mercenary"
-	department_flag = CIV
+	department_flag = SUP
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 1
 	spawn_positions = 1

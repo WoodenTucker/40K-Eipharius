@@ -277,7 +277,7 @@ datum/job/ig/bullgryn
 	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#23742a"
-	department_flag = SEC|COM
+	department_flag = SEC
 	cultist_chance = 10
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
@@ -337,7 +337,7 @@ datum/job/ig/bullgryn
 /datum/job/ig/medicae
 	title = "Combat Medicae"
 	department = "Medical"
-	department_flag = SEC|MED
+	department_flag = SEC
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
 	total_positions = 1
@@ -400,7 +400,7 @@ datum/job/ig/bullgryn
 /datum/job/kasrkin
 	title = "Kasrkin"
 	supervisors = "Your Sergeant, The Commissar and The Inquisition."
-	department_flag = CIV
+	department_flag = SEC|INQ
 	total_positions = 0 // Disabled. Kasrkin roundstart presence often result in KOS fights with friendly lateparties.
 	spawn_positions = 0
 	head_position = 1
@@ -447,7 +447,7 @@ datum/job/ig/bullgryn
 	spawn_positions = 0
 	head_position = 1
 	selection_color = "#23742a"
-	department_flag = SEC|COM
+	department_flag = SEC
 	req_admin_notify = TRUE
 	social_class = SOCIAL_CLASS_MAX
 	outfit_type = /decl/hierarchy/outfit/job/ig/commissar
