@@ -194,6 +194,35 @@
 		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
+/obj/item/gun/energy/las/triplex
+	name = "Triplex Pattern Lasgun"
+	desc = " A highly versatile refined lasgun used by the Mordian Iron Guard ."
+	icon_state = "lasgun"
+	item_state = "lasgun"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_LARGE
+	force = 13
+	one_hand_penalty = 1
+	fire_delay = 3
+	accuracy = 0.5
+	move_delay = 3
+	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2)
+	matter = list(DEFAULT_WALL_MATERIAL = 2000)
+	projectile_type = /obj/item/projectile/energy/las/lasgun
+	charge_cost = 80
+	cell_type = /obj/item/cell/lasgun
+	ammoType = /obj/item/cell/lasgun
+	wielded_item_state = "lasgun-wielded"
+	sales_price = 35
+
+	firemodes = list(
+		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="5-round bursts", burst=5, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
+		list(mode_name="undercharge", fire_delay = 1, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/undercharge, charge_cost=40),
+		)
+
 /obj/item/gun/energy/las/lasgun/shitty
 	name = "Portsmith W. Lasrifle"
 	desc = "The Portsmith W. Lasrifle is a basic, necessary rifle for smugglers and merchants to defend their lives, but most importantly, their precious cargo, from hostiles. Won't put up much of a fight against an organised enemy, but at least it uses small lasgun cells."

@@ -151,6 +151,14 @@
 	damage = 68
 	armor_penetration = 10
 
+/obj/item/projectile/energy/las/lasgun/undercharge
+	name = "lasbolt"
+	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 24
+	armor_penetration = 10
+
 /obj/item/projectile/energy/las/lasgun/execution
 	name = "lasbolt"
 	fire_sound='sound/weapons/gunshot/lasgun3.ogg'
