@@ -574,19 +574,19 @@ obj/item/clothing/suit/armor
 	icon_state = "Judge"
 	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-/obj/item/clothing/suit/armor/enforcer 
+/obj/item/clothing/suit/armor/enforcer
 	name = "Enforcer Patrol Jacket"
 	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -595,16 +595,28 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer/mechanicus
 	name = "Enforcer Patrol Jacket(M)"
 	desc = "The flak jacket worn by a Messina Enforcer improved by the Mechanicus. Light and robust in the colour black, designed to protect against blast and small arms fire."
-	armor = list(melee = 46, bullet = 46, laser = 41, energy = 35, bomb = 40, bio = 30, rad = 30) 
+	armor = list(melee = 46, bullet = 46, laser = 41, energy = 35, bomb = 40, bio = 30, rad = 30)
 	sales_price = 25
 
-/obj/item/clothing/suit/armor/enforcer/marshal 
+/obj/item/clothing/suit/armor/enforcer/marshal
 	name = "Marshal's Patrol Jacket"
 	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
 	icon_state = "enforcercoat"
 	item_state = "enforcercoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 45, bullet = 47, laser = 44, energy = 25, bomb = 40, bio = 30, rad = 30) 
+	armor = list(melee = 45, bullet = 47, laser = 44, energy = 25, bomb = 40, bio = 30, rad = 30)
+	sales_price = 30
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/mordian
+	name = "Mordian Iron Guard Fatigues"
+	desc = "The fatigues worn by a Mordian Iron Guardsman. Light and robust in the colour blue, designed to protect against blast and small arms fire."
+	icon_state = "enforcercoat"
+	item_state = "enforcercoat"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 42, bullet = 48, laser = 42, energy = 20, bomb = 30, bio = 10, rad = 20)
 	sales_price = 30
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
@@ -613,17 +625,17 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/enforcer/marshal/mechanicus
 	name = "Marshal's Patrol Jacket(M)"
 	desc = "The flak jacket worn by a Messina Enforcer improved by the Mechanicus. Light and robust in the colour black, designed to protect against blast and small arms fire."
-	armor = list(melee = 51, bullet = 53, laser = 50, energy = 35, bomb = 50, bio = 40, rad = 40) 
+	armor = list(melee = 51, bullet = 53, laser = 50, energy = 35, bomb = 50, bio = 40, rad = 40)
 	sales_price = 35
 
 /* eventually should use this sprite for a pilgrim armor.
-/obj/item/clothing/suit/armor/enforcer 
+/obj/item/clothing/suit/armor/enforcer
 	name = "Patrol Jacket"
 	desc = "The flak jacket worn by a Messina Enforcer. Light and robust in the colour black, designed to protect against blast and small arms fire."
 	icon_state = "towntrench_medium"
 	item_state = "towntrench_medium"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20) 
+	armor = list(melee = 40, bullet = 40, laser = 35, energy = 25, bomb = 30, bio = 20, rad = 20)
 	sales_price = 20
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS

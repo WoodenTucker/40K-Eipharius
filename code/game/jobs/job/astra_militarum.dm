@@ -54,8 +54,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 4
+	spawn_positions = 4
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -69,7 +69,8 @@
 		"Cadian Guardsman" = /decl/hierarchy/outfit/job/guardsman,
 		"Catachan Jungle Hunter" = /decl/hierarchy/outfit/job/guardsman/catachan,
 		"Krieg Guardsman" = /decl/hierarchy/outfit/job/guardsman/krieg,
-		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan
+		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan,
+		"Mordian Iron Guard" = /decl/hierarchy/outfit/job/guardsman/mordian,
 		)
 	cultist_chance = 20
 
@@ -159,7 +160,7 @@
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(17,18), rand(14,16), rand(17,18), rand (14,16)) //Specialists are special, they arent every single random ass soldier	
+		H.add_stats(rand(17,18), rand(14,16), rand(17,18), rand (14,16)) //Specialists are special, they arent every single random ass soldier
 		H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -386,7 +387,7 @@ datum/job/ig/bullgryn
 					H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(1,6),rand(9,11)) //better surg
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
-				if(title == "Krieg Quartermaster") 
+				if(title == "Krieg Quartermaster")
 					H.add_skills(rand(8,11),rand(6,9),rand(8,10),rand(1,6),rand(8,10)) //better melee
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Quartermaster. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller, as well as keep track of the gear of the dead. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
@@ -567,6 +568,35 @@ datum/job/ig/bullgryn
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
+
+/decl/hierarchy/outfit/job/guardsman/mordian
+	name = OUTFIT_JOB_NAME("Mordian Iron Guardsman")
+	uniform = /obj/item/clothing/under/color/brown
+	suit = /obj/item/clothing/suit/armor/mordian
+	back = /obj/item/storage/backpack/satchel/warfare
+	belt = null
+	gloves = /obj/item/clothing/gloves/combat/cadian
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	head = /obj/item/clothing/head/helmet/guardhelmet/mordian
+	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
+	glasses = /obj/item/clothing/glasses/cadiangoggles
+	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/device/flashlight/lantern
+	suit_store = /obj/item/gun/energy/las/triplex
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/red_team
+	backpack_contents = list(
+	/obj/item/cell/lasgun/hotshot = 1,
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1
+	)
+
+	id_type = /obj/item/card/id/dog_tag/guardsman
+	pda_slot = null
+	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
 
 /decl/hierarchy/outfit/job/guardsman/krieg
 	name = OUTFIT_JOB_NAME("Krieg Guardsman")
@@ -1341,7 +1371,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	/obj/item/grenade/frag = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	)
-	
+
 // chaos sgt
 
 /decl/hierarchy/outfit/job/watchman/sergeant
@@ -1391,7 +1421,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2/five = 1
 	)
-	
+
 /decl/hierarchy/outfit/job/watchman/sergeant/krieg
 	name = OUTFIT_JOB_NAME("Krieg Watchmaster")
 	uniform = /obj/item/clothing/under/guard/uniform
