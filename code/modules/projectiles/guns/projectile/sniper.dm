@@ -341,7 +341,7 @@
 
 
 
-/*
+
 /obj/item/gun/projectile/exitus
 	name = "Exitus Sniper Rifle"
 	desc = "The Exitus Rifle is a specialised projectile rifle used exclusively by the Imperial Assassins of the Officio Assassinorum's Vindicare Temple. It is purpose-built for each individual Vindicare sniper."
@@ -385,4 +385,3 @@
 	set popup_menu = 1
 
 	toggle_scope(usr, 4)
-*/

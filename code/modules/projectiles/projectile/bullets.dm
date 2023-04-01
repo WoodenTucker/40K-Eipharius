@@ -476,7 +476,7 @@
 
 
 
-	
+
 /obj/item/projectile/bullet/rifle/plasma
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	damage = 100
@@ -531,9 +531,9 @@
 	damage_type = BRUTE
 	armor_penetration = 50
 	penetration_modifier = 2
-	
-	
-	
+
+
+
 //MECHANICUS
 /obj/item/projectile/bullet/rifle/galvanic
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
@@ -552,7 +552,7 @@
 	damage_type = BRUTE
 	armor_penetration = 30
 	penetration_modifier = 2
-	
+
 /obj/item/projectile/bullet/rifle/galvanic/fire/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
@@ -646,7 +646,7 @@
 	if(istype(target, /mob/living/carbon/human))
 		var/mob/living/carbon/human/M = target
 		M.apply_effect((rand(30,60)),IRRADIATE,0)
-	
+
 
 
 
@@ -663,7 +663,7 @@
 	damage_type = BURN
 	armor_penetration = 100
 	penetration_modifier = 3
-	
+
 /obj/item/projectile/bullet/rifle/lascannon/melta/inferno
 	fire_sound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
@@ -726,9 +726,7 @@
 	damage_type = BURN
 	armor_penetration = 100
 	penetration_modifier = 5
-	
 
-/*
 /obj/item/projectile/bullet/rifle/exitus
 	name = "bullet"
 	icon_state = "bullet"
@@ -772,4 +770,3 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
-*/
