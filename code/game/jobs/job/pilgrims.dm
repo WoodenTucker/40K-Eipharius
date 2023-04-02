@@ -602,7 +602,7 @@ Pilgrim Fate System
 
 	)
 
-/decl/hierarchy/outfit/job/Scavenger
+/decl/hierarchy/outfit/job/scavenger
 	name = OUTFIT_JOB_NAME("Scavenger")
 	uniform = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
