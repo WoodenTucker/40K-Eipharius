@@ -622,7 +622,7 @@ Pilgrim Fate System
     spawn_positions = 1
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
-    outfit_type = /decl/hierarchy/outfit/job/Scavenger
+    outfit_type = /decl/hierarchy/outfit/job/scavenger
     latejoin_at_spawnpoints = TRUE
     announced = FALSE
     cultist_chance = 0
