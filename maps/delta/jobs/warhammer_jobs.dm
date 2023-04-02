@@ -3,9 +3,7 @@
 /datum/map/warhammer
 	allowed_jobs = list(
 	/datum/job/governor,
-	/datum/job/envoy,
 	/datum/job/heir,
-	/datum/job/vindicare,
 	/datum/job/servant,
 	/datum/job/hydro,
 	/datum/job/inquisitor,

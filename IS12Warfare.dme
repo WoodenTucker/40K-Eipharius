@@ -523,7 +523,6 @@
 #include "code\game\jobs\job\magistratum.dm"
 #include "code\game\jobs\job\pilgrims.dm"
 #include "code\game\jobs\job\rogue_trader_retinue.dm"
-#include "code\game\jobs\job\vindicare.dm"
 #include "code\game\jobs\job\quotes\arbites.dm"
 #include "code\game\jobs\job\quotes\astartes.dm"
 #include "code\game\jobs\job\quotes\commissar.dm"
