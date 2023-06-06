@@ -601,6 +601,19 @@ Pilgrim Fate System
 	/obj/item/stack/thrones3/twenty = 1,
 
 	)
+
+/decl/hierarchy/outfit/job/scavenger
+	name = OUTFIT_JOB_NAME("Scavenger")
+	uniform = null
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	shoes = null
+	l_ear = null
+	r_ear = null
+	id_type = null
+	gloves = null
+	pda_slot = null
+	l_hand = /obj/item/storage/toolbox/mechanical
+
 /datum/job/scavenger
     title = "Scavenger"
     department_flag = PIL
@@ -609,6 +622,7 @@ Pilgrim Fate System
     spawn_positions = 1
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
+    outfit_type = /decl/hierarchy/outfit/job/scavenger
     latejoin_at_spawnpoints = TRUE
     announced = FALSE
     cultist_chance = 0
