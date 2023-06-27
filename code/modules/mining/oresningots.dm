@@ -823,7 +823,7 @@
 */
 
 /obj/item/newore/gems/attackby(obj/item/device/W as obj, mob/user as mob)
-	if(!isAutochisel(W) || !isChisel(W))
+	if(!isAutochisel(W) && !isChisel(W) && !isLasercutter(W))
 		to_chat(user, "Use a chisel to try and carve out the gem!")
 		return
 	if(isAutochisel(W) || isChisel(W)) // Made it so normal chisel can cut gems to allow heritics to mine for them and not have to only get them from the mechnboys.
