@@ -14,8 +14,8 @@
 			if(27000)
 				to_chat(src, "It is too early for a late party! This will open when round duration reaches 0:45!")
 				return
-			if(36000)
-				to_chat(src, "It is too early for a late party! This will open when round duration reaches 1:00!")
+			if(48000)
+				to_chat(src, "It is too early for a late party! This will open when round duration reaches 1:20!")
 				return
 			if(72000)
 				to_chat(src, "It is too early for a late party! This will open when round duration reaches 2:00!")

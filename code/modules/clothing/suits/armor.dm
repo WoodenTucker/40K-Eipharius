@@ -714,8 +714,8 @@ obj/item/clothing/suit/armor
 	icon_state = "grencoat"
 	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	armor = list(melee = 40, bullet = 40, laser = 40, energy = 40, bomb = 40, bio = 80, rad = 80)
-	sales_price = 30
+	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 80, rad = 80)
+	sales_price = 40
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -794,9 +794,9 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/kriegsgt
 	name = "Krieg Watchmaster's Overcoat"
-	desc = "A ornated uniform with silver-trimming and red waffenfarbe by it collar. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster... It smells of saddeness and blood."
-	icon_state = "kriegcoat"
-	item_state = "kriegcoat"
+	desc = "An antiquated uniform only seen by the more experienced of Krieg. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster... It smells of saddeness and blood."
+	icon_state = "watchcoat"
+	item_state = "watchcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 25, bomb = 45, bio = 100, rad = 100)
 	sales_price = 45

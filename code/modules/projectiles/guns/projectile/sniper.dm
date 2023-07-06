@@ -22,7 +22,7 @@
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
-	sales_price = 90
+	sales_price = 50
 
 /obj/item/gun/projectile/heavysniper/update_icon()
 	..()
@@ -124,7 +124,8 @@
 	name = "Krieg Pattern Longlas"
 	desc = "An overpowered longlas used by Krieg Snipers, it requires expert handling and maintenance to keep in working order. For the death world of Krieg, such gun lore is both common and expected of even the most average of conscripts."
 	icon_state = "kriegsniper"
-	item_state = "las_musket"
+	item_state = "snipeluscius"
+	wielded_item_state = "snipeluscius_wielded"
 
 /obj/item/gun/projectile/thrower
 	name = "Lead Thrower"
@@ -239,10 +240,105 @@
 	if(user.zoomed)
 		user.do_zoom()
 
+//needs sorting when im done doing this, i have not balanced it in any way whatsoever, just brought it from deleted code
 
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338
+	name = "Mark IV .338 Stub Rifle"
+	desc = "Powerful sniper rifle, chambered in .338 for long-range assasinations."
+	icon_state = "needler"
+	item_state = "needler"
+	w_class = ITEM_SIZE_HUGE
+	force = 10
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	origin_tech = list(TECH_COMBAT = 8, TECH_MATERIAL = 2, TECH_ILLEGAL = 8)
+	caliber = ".338"
+	screen_shake = 1.2 //extra kickback
+	max_shells = 10
+	ammo_type = /obj/item/ammo_casing/lp338
+	one_hand_penalty = 50
+	accuracy = 2
+	gun_type = GUN_SNIPER
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	far_fire_sound = "sniper_fire"
+	gping = FALSE
+	sales_price = 0
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
+	set category = "Object"
+	set name = "Use Scope"
+	set popup_menu = 1
+	toggle_scope(usr, 2.5)
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/equipped(mob/user)
+	..()
+	if(user.zoomed)
+		user.do_zoom()
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/needler
+	name = "Mark IVb Needler Sniper Rifle"
+	desc = "Powerful needler rifle, chambered in .338 and issued to the Adeptus Astartes for long-range assasinations."
+	fire_sound = 'sound/weapons/guns/fire/needler_fire.ogg'
+	far_fire_sound = "needler_fire"
+/obj/item/ammo_magazine/lp338
+	name = "magazine (.338 Lapua Magnum)"
+	icon_state = "needler"
+	origin_tech = list(TECH_COMBAT = 2)
+	mag_type = MAGAZINE
+	caliber = ".338"
+	matter = list(DEFAULT_WALL_MATERIAL = 1260)
+	ammo_type = /obj/item/ammo_casing/lp338
+	max_ammo = 10
+	multiple_sprites = 0
+/obj/item/ammo_magazine/lp338/jhp
+	name = "magazine (.338 Lapua Magnum JHP)"
+	ammo_type = /obj/item/ammo_casing/lp338/jhp
+/obj/item/ammo_magazine/lp338/jhp/empty
+	ammo_type = /obj/item/ammo_casing/lp338/jhp
+	initial_ammo = 0
+/obj/item/ammo_magazine/lp338/empty
+	initial_ammo = 0
+/obj/item/ammo_magazine/lp338/needler
+	name = "magazine (.338 Needler Rifle)"
+	desc = "Toxin-coated needles, when you need to deal with some extradimensional baddies to not ruin the reality. Or to just kill an enemy leader with style."
+	ammo_type = /obj/item/ammo_casing/lp338/needler
+	max_ammo = 5
+/obj/item/ammo_magazine/lp338/needler/empty
+	ammo_type = /obj/item/ammo_casing/lp338/needler
+	initial_ammo = 0
+/obj/item/ammo_casing/lp338
+	desc = "A .338 Lapua Magnum bullet casing."
+	caliber = ".338"
+	projectile_type = /obj/item/projectile/bullet/rifle/lp338
+	icon_state = "rifle-casing"
+	spent_icon = "rifle-casing-spent"
 
+/obj/item/ammo_casing/lp338/jhp
+	desc = "A .338 Lapua Magnum bullet casing."
+	caliber = ".338"
+	projectile_type = /obj/item/projectile/bullet/rifle/lp338/jhp
+	icon_state = "rifle-casing"
+	spent_icon = "rifle-casing-spent"
 
+/obj/item/ammo_casing/lp338/needler
+	desc =   "A spent .338 needler casing."
+	projectile_type = /obj/item/projectile/bullet/rifle/lp338/needler
+/obj/item/projectile/bullet/rifle/lp338
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	damage = 130
+	armor_penetration = 45
+	penetration_modifier = 1.5
+	penetrating = TRUE
 
+/obj/item/projectile/bullet/rifle/lp338/jhp
+	name = "JHP bullet"
+	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
+	damage = 160
+	armor_penetration = 5
+
+/obj/item/projectile/bullet/rifle/lp338/needler
+	name = "needler bullet"
+	fire_sound = 'sound/weapons/gunshot/needler.ogg'
+	damage = 90
+	damage_type = TOX
+	penetration_modifier = 2
+	
 
 
 /*

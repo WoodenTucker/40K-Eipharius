@@ -130,19 +130,11 @@
 
 /obj/item/projectile/energy/las/lasgun
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun1.ogg'
+	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 48
-	armor_penetration = 15
-
-/obj/item/projectile/energy/las/lasgun/overcharge
-	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
-	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "lasbolt"
-	damage = 58
-	armor_penetration = 25
+	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/pistol // just use rifle lasgun for over charges for pistol
 	name = "lasbolt"
@@ -151,46 +143,70 @@
 	icon_state = "lasbolt"
 	damage = 35
 
+/obj/item/projectile/energy/las/lasgun/overcharge
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 68
+	armor_penetration = 10
+
+/obj/item/projectile/energy/las/lasgun/execution
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 100
+	armor_penetration = 10
+
 /obj/item/projectile/energy/las/lasgun/lucius
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun1.ogg'
+	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 56
-	armor_penetration = 15
+	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/lucius/overcharge
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
+	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 65
-	armor_penetration = 25
+	damage = 80
+	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/longlas
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun1.ogg'
+	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
 	damage = 89
-	armor_penetration = 35 //more penetration than krieger
+	armor_penetration = 10
 	accuracy = 2
 
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
+	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 110
-	armor_penetration = 45 //more penetration than hotshot
+	damage = 130
+	armor_penetration = 10
 
-/obj/item/projectile/energy/las/lasgun/hotshot //RYZA PATTERN HOTSHOT LASGUN
+/obj/item/projectile/energy/las/lasgun/hotshot
 	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
+	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 80 //same damage as krieger but with penetration
-	armor_penetration = 45
+	damage = 68
+	armor_penetration = 10
+
+/obj/item/projectile/energy/las/lasgun/hotshot/krieg
+	name = "lasbolt"
+	fire_sound='sound/weapons/lasgun.ogg'
+	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	icon_state = "lasbolt"
+	damage = 78
+	armor_penetration = 10
 
 /obj/item/projectile/energy/pulse/pulserifle
 	name = "pulse round"
@@ -198,7 +214,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 51
-	armor_penetration = 45 //this is automatic and almost infinite, so, yeah, weak penetration even tho its plasma weaponry
+	armor_penetration = 15
 
 	/obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
@@ -206,7 +222,7 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 44
-	armor_penetration = 25 //this is automatic and almost infinite, so, yeah, weak penetration even tho its plasma weaponry
+	armor_penetration = 25
 
 /obj/item/projectile/energy/pulse/pulserail
 	name = "pulse round"
@@ -214,7 +230,6 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 130
-//	agony =  //who did this? this passes through all fucking armor... EVEN IF THEY DIDNT TAKE ANY DAMAGE THEY WOULD HAVE A FUCKLOAD OF PAIN
 	armor_penetration = 60
 
 /obj/item/projectile/energy/pulse/ion
@@ -223,18 +238,16 @@
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1"
 	damage = 115
-	armor_penetration = 65
-//	agony = 0
-//	stun = 5
-
+	armor_penetration = 70
 
 /obj/item/projectile/energy/pulse/plasmarifle
 	name = "plasma round"
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 95
-	armor_penetration = 60 //HUMAN plasma weaponry are more powerful than TAU weaponry at the cost of having a random change of exploding, but anyway.
+	damage = 140
+	weaken = 1
+	armor_penetration = 40
 	light_power = 4
 	light_color = "#2132cf"
 
@@ -244,8 +257,9 @@
 	fire_sound='sound/weapons/marauder.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "pulse1_bl"
-	damage = 70
-	armor_penetration = 50
+	damage = 110
+	weaken = 1
+	armor_penetration = 40
 	light_power = 4
 	light_color = "#2132cf"
 

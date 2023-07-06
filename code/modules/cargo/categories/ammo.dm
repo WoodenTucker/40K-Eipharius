@@ -106,6 +106,21 @@
 	cost = 14
 	item_path = /obj/item/storage/box/sniperammo
 
+/datum/cargo_entry/ammo/needler
+	name = "Needler Ammo"
+	cost = 20
+	item_path = /obj/item/ammo_magazine/lp338
+
+/datum/cargo_entry/ammo/needlerjhp
+	name = "JHP Needler Ammo"
+	cost = 27
+	item_path = /obj/item/ammo_magazine/lp338/jhp
+
+/datum/cargo_entry/ammo/needlertox
+	name = "Neuro-Tox Needler Ammo"
+	cost = 40
+	item_path = /obj/item/ammo_magazine/lp338/needler
+
 /datum/cargo_entry/ammo/c99
 	name = "9mm Pistol Magazine"
 	cost = 3

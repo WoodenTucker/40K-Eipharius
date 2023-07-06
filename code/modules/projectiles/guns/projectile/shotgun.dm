@@ -235,11 +235,11 @@
 	magazine_type = /obj/item/ammo_magazine/melta
 	allowed_magazines = /obj/item/ammo_magazine/melta
 	w_class = ITEM_SIZE_HUGE
-	force = 15 //ITS HEAVY
-	one_hand_penalty = 80 //who the fuck would try to use a meltagun with one hand?
+	force = 14
+	one_hand_penalty = 8
 	block_chance = 2 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = 3
+	accuracy = 0
 	fire_delay= 20
-	sales_price = 200 //even tho melta guns are common in the imperium, only one spawns per round as of now, with the max being of 3 per round
+	sales_price = 150

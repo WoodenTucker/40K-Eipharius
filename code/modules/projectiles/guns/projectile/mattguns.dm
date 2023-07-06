@@ -770,7 +770,7 @@
 
 /obj/item/gun/projectile/automatic/agripinaaii
 	name = "Agripinaa Pattern Stub rifle MK II"
-	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 7.62 rounds. "
+	desc = "A rugged stub rifle of Agripinaa design, The MK II is semi automatic and highly damaging with it's 5.56 rounds. "
 	icon_state = "agripinaa" // Object Icon
 	item_state = "agripinaa" // On-Mob
 	unloaded_icon = "agripinaa_e" // Object Icon
@@ -967,7 +967,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = -0.5
-	sales_price = 100
+	sales_price = 80
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.4, burst_accuracy=null, dispersion=null, automatic = 0),

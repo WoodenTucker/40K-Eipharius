@@ -1091,7 +1091,7 @@ var/list/admin_verbs_mentor = list(
 	set name = "Choose When Party Arrives"
 	set desc = "Set the timer for the party to arrive."
 
-	var/options = list("Instant", "Default (30 min)", "45", "60", "120", "Never") //lists all possible fates
+	var/options = list("Instant", "30", "45", "60", "120(default)", "Never") //lists all possible fates
 
 	var/chooseaparty = input("Choose when the party arrives", "Options") as null|anything in options
 
@@ -1099,7 +1099,7 @@ var/list/admin_verbs_mentor = list(
 		if("Instant")
 			GLOB.partydelay = 1
 			message_admins("The late party will be able to spawn immediately!")
-		if("Default (30 min)")
+		if("30 min")
 			GLOB.partydelay = 18000
 			message_admins("The party will spawn at the 30 minute mark.")
 		if("45")
@@ -1108,7 +1108,7 @@ var/list/admin_verbs_mentor = list(
 		if("60")
 			GLOB.partydelay = 36000
 			message_admins("The party will spawn at the 60 minute mark.")
-		if("80")
+		if("80(default)")
 			GLOB.partydelay = 48000
 			message_admins("The party will spawn at the 80 minute mark.")
 		if("120")

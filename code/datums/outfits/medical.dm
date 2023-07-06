@@ -51,7 +51,7 @@
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 /decl/hierarchy/outfit/job/medical/paramedic
-	name = OUTFIT_JOB_NAME("combat medicae")
+	name = OUTFIT_JOB_NAME("Cadian Medicae")
 	uniform = /obj/item/clothing/under/cadian_uniform
 	suit = /obj/item/clothing/suit/armor/medicae
 	shoes = /obj/item/clothing/shoes/jackboots
