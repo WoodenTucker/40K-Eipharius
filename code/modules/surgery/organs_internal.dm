@@ -28,13 +28,12 @@
 /datum/surgery_step/internal/fix_organ
 	allowed_tools = list(
 	/obj/item/stack/medical/advanced/bruise_pack = 100, \
-	/obj/item/suture = 70, \
 	/obj/item/stack/medical/bruise_pack = 40, \
 	/obj/item/tape_roll = 20 \
 	)
 
-	min_duration = 70
-	max_duration = 90
+	min_duration = 40
+	max_duration = 80
 
 /datum/surgery_step/internal/fix_organ/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 
@@ -130,8 +129,8 @@
 	/obj/item/material/shard = 50 \
 	)
 
-	min_duration = 90
-	max_duration = 110
+	min_duration = 40
+	max_duration = 80
 
 /datum/surgery_step/internal/detatch_organ/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 
@@ -195,7 +194,7 @@
 	/obj/item/material/kitchen/utensil/fork = 20
 	)
 
-	min_duration = 60
+	min_duration = 40
 	max_duration = 80
 
 /datum/surgery_step/internal/remove_organ/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -269,7 +268,7 @@
 	/obj/item/organ = 100
 	)
 
-	min_duration = 60
+	min_duration = 40
 	max_duration = 80
 
 /datum/surgery_step/internal/replace_organ/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
@@ -350,8 +349,8 @@
 	/obj/item/suture = 65 \
 	)
 
-	min_duration = 100
-	max_duration = 120
+	min_duration = 40
+	max_duration = 80
 
 /datum/surgery_step/internal/attach_organ/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 
@@ -419,7 +418,7 @@
 	can_infect = 0
 	blood_level = 0
 
-	min_duration = 50
+	min_duration = 40
 	max_duration = 60
 
 /datum/surgery_step/internal/treat_necrosis/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
