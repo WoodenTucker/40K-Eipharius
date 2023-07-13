@@ -7,7 +7,7 @@
 	parent_organ = BP_GROIN
 	min_bruised_damage = 25
 	min_broken_damage = 45
-	max_damage = 70
+	max_damage = 80
 	relative_size = 60
 	sales_price = 14
 
