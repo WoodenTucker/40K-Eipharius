@@ -60,8 +60,8 @@
 	can_infect = 1
 	blood_level = 1
 
-	min_duration = 70
-	max_duration = 90
+	min_duration = 40
+	max_duration = 80
 	shock_level = 40
 	delicate = 1
 
@@ -111,7 +111,7 @@
 	can_infect = 0
 	blood_level = 0
 
-	min_duration = 50
+	min_duration = 40
 	max_duration = 60
 
 /datum/surgery_step/sterilize/can_use(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)

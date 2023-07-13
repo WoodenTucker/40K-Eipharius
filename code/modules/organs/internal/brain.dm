@@ -13,7 +13,7 @@
 	origin_tech = list(TECH_BIO = 4)
 	attack_verb = list("attacked", "slapped", "whacked")
 	relative_size = 60
-	max_damage = 120
+	max_damage = 135
 	sales_price = 25
 
 	var/can_use_mmi = TRUE
