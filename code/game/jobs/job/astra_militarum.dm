@@ -649,17 +649,16 @@ datum/job/ig/bullgryn
 	suit = /obj/item/clothing/suit/armor/valhallanarmor
 	head = /obj/item/clothing/head/valushanka
 	back = /obj/item/storage/backpack/satchel/warfare
-	belt = /obj/item/device/flashlight/lantern
+	belt = null
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/ammo_magazine/a762
+	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c556/ap = 1,
-	/obj/item/ammo_magazine/c556/ms = 2,
+	/obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -808,7 +807,7 @@ datum/job/ig/bullgryn
 	r_hand = /obj/item/shield/riot
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
-	/obj/item/grenade/frag = 1,
+	/obj/item/grenade/frag = 1
 	)
 
 
@@ -866,7 +865,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
-	/obj/item/clothing/glasses/cadiangoggles = 1,
+	/obj/item/clothing/glasses/cadiangoggles = 1
 	)
 	suit_store = /obj/item/gun/energy/las/lasgun
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -885,18 +884,15 @@ datum/job/ig/bullgryn
 	belt = /obj/item/storage/belt/medical/full
 	head = /obj/item/clothing/head/valushanka/medicae
 	r_pocket = /obj/item/storage/box/ifak
-	l_pocket = /obj/item/ammo_magazine/a762
+	l_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	backpack_contents = list(
-	/obj/item/ammo_magazine/a762 = 2,
+    /obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
-	/obj/item/device/flashlight/lantern = 1
+	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
 
