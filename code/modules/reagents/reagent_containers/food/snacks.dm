@@ -677,11 +677,11 @@
 
 /obj/item/reagent_containers/food/snacks/bearmeat
 	name = "bear meat"
-	desc = "A very manly slab of meat, don't eat it raw!"
+	desc = "A prime slab of meat, considered a delicacy by many imperial nobles. The trader will want this."
 	icon_state = "bearmeat"
 	filling_color = "#db0000"
 	center_of_mass = "x=16;y=10"
-	sales_price = 5
+	sales_price = 25
 
 	New()
 		..()
@@ -691,11 +691,11 @@
 
 /obj/item/reagent_containers/food/snacks/shaframeat
 	name = "shafra meat"
-	desc = "A surprisingly tasty cut of lean meat, don't eat it raw!"
+	desc = "A prime slab of meat, considered a delicacy by many imperial nobles. The trader will want this."
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 6
+	sales_price = 25
 
 	New()
 		..()
@@ -709,7 +709,7 @@
 	icon_state = "bearmeat"
 	filling_color = "#08acf8cc"
 	center_of_mass = "x=16;y=10"
-	sales_price = 15
+	sales_price = 30
 
 	New()
 		..()
