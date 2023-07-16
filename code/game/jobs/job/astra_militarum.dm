@@ -78,7 +78,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
-		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -99,9 +99,9 @@
 		switch(title)
 			if("Cadian Guardsman" || "Valhallan Ice Warrior" || "Catachan Jungle Hunter")
 				if(title == "Catachan Jungle Hunter")
-					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(1,6),rand(1,6))
+					H.add_skills(rand(9,11),rand(7,9),rand(3,6),rand(4,6),rand(1,6))
 				if(title == "Valhallan Ice Warrior")
-					H.add_skills(rand(7,9),rand(9,11),rand(3,6),rand(1,6),rand(1,6))
+					H.add_skills(rand(7,9),rand(9,11),rand(3,6),rand(4,6),rand(1,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
 //Whiteshield
@@ -126,7 +126,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand (8,14))
-		H.add_skills(rand(5,7),rand(5,7),rand(1,5),rand(1,4),rand(1,4)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(5,7),rand(5,7),rand(1,5),rand(3,4),rand(1,4)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -161,7 +161,7 @@
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(17,18), rand(14,16), rand(17,18), rand (14,16)) //Specialists are special, they arent every single random ass soldier
-		H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(4,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -184,13 +184,13 @@
 				if(title == "Cadian Plasma Gunner")
 					to_chat(H, "<span class='notice'><b><font size=2> You are from the tough planet Cadia. Trained in plasma weaponry, it will devastate any armored person it touches. It's ammo recharges in the gun, too!</font></b></span>")
 				if(title == "Catachan Flamer")
-					H.add_skills(rand(9,10),rand(7,10),rand(3,4),rand(3,5),rand(1,5))
+					H.add_skills(rand(9,10),rand(7,10),rand(3,4),rand(4,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=2> You've trained on the jungle planet on Catachan with your trusty flamer. Burning any enemy to a crisp. Use your fire extinguisher if needed.</font></b></span>")
 				if(title == "Valhallan Heavy Autogunner")
-					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
+					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(4,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=2> You are a Valhallan Specialist. Equipped with a heavy autogun and plenty of ammo. Suppress the enemy to keep their heads down! </font></b></span>")
 				if(title == "Krieg Grenadier")
-					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(3,5),rand(1,5))
+					H.add_skills(rand(7,10),rand(9,10),rand(3,4),rand(4,5),rand(1,5))
 					to_chat(H, "<span class='notice'><b><font size=2> You are a Krieg Grenadier, born and bred on the deadworld. Equipped with a hellgun, your mobile firepower is unmatched! Support your brethren and storm the enemy, wherever they dig in. </font></b></span>")
 
 datum/job/ig/bullgryn
@@ -212,7 +212,7 @@ datum/job/ig/bullgryn
 		H.warfare_faction = IMPERIUM
 		..()
 		H.add_stats(rand(20,30), rand(17,19), rand(15,18), rand (2,5)) //bullgryn are stronger and quicker than normal ogryn due to their advanced training
-		H.add_skills(rand(10,15),1,1,1,1) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(10,15),1,1,4,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.vice = null
 		to_chat(H, "<span class='notice'><b><font size=3>MA BEST FREND'S DA EMPRAH. FREND OF GOBERNOR. FREND OF DA COMESSAR. PROTECT DA LITTL UN'S!</font></b></span>")
@@ -263,10 +263,10 @@ datum/job/ig/bullgryn
 		switch(title)
 			if("Cadian Long Las" || "Valhallan Scout Sniper" || "Krieg Marksman")
 				if(title == "Krieg Marksman")
-					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(4,5),rand(1,5))
 					H.fully_replace_character_name("Marksman [rand(1,100000)]")
 				if(title == "Valhallan Scout Sniper")
-					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5))
+					H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(4,5),rand(1,5))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
 
 // Sergeants
@@ -375,7 +375,7 @@ datum/job/ig/bullgryn
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM, "medic")
 		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (14,18)) //same stats as normal guard but better int, med and surgery
-		H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(1,6),rand(9,11)) //melee, ranged, med, eng, surgery
+		H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(5,6),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
 		if(title == "Krieg Quartermaster")
@@ -384,15 +384,15 @@ datum/job/ig/bullgryn
 		switch(title)
 			if("Cadian Medicae" || "Valhallan Medicae" || "Krieg Quartermaster")
 				if(title == "Cadian Medicae")
-					H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(1,6),rand(9,11)) //better surg
+					H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(4,6),rand(9,11)) //better surg
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 				if(title == "Krieg Quartermaster")
-					H.add_skills(rand(8,11),rand(6,9),rand(8,10),rand(1,6),rand(8,10)) //better melee
+					H.add_skills(rand(8,11),rand(6,9),rand(8,10),rand(4,6),rand(8,10)) //better melee
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Quartermaster. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller, as well as keep track of the gear of the dead. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 				if(title == "Valhallan Medicae")
-					H.add_skills(rand(6,9),rand(8,11),rand(8,10),rand(1,6),rand(8,10)) //better aim
+					H.add_skills(rand(6,9),rand(8,11),rand(8,10),rand(4,6),rand(8,10)) //better aim
 					to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 					to_chat(H, "<span class='notice'><b><font size=3>You are a Combat Medicae. Your purpose is to both fight the enemies of the Imperium and to triage the wounded and ensure they survive long enough to be seen by a Sister Hospitaller. You have medical training but little surgical training so avoid field surgery unless absolutely necessary</font></b></span>")
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -656,7 +656,7 @@ datum/job/ig/bullgryn
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
+	suit_store = /obj/item/gun/projectile/automatic/autogrim
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/stack/thrones2 = 1,
@@ -880,7 +880,7 @@ datum/job/ig/bullgryn
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	glasses = /obj/item/clothing/glasses/hud/health
-	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
+	suit_store = /obj/item/gun/projectile/automatic/autogrim
 	belt = /obj/item/storage/belt/medical/full
 	head = /obj/item/clothing/head/valushanka/medicae
 	r_pocket = /obj/item/storage/box/ifak
@@ -1411,9 +1411,9 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	r_pocket = /obj/item/device/flashlight/lantern
 	l_ear = /obj/item/device/radio/headset/blue_team/all
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
-	suit_store = /obj/item/gun/projectile/automatic/agripinaaii
+	suit_store = /obj/item/gun/projectile/automatic/autogrim
 	backpack_contents = list(
-	/obj/item/ammo_magazine/c556/ap = 3,
+	/obj/item/ammo_magazine/c556/ap = 4,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2/five = 1
 	)
