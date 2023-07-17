@@ -641,13 +641,6 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/gun/launcher/pneumatic
 	sort_string = "TAGAB"
 
-
-/datum/design/item/smg
-	id = "smg"
-	req_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 8000, "silver" = 2000, "diamond" = 1000)
-	build_path = /obj/item/gun/projectile/automatic
-	sort_string = "TAPAA"
 /*
 /datum/design/item/bullpup
 	id = "bullpup"
