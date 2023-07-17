@@ -389,19 +389,19 @@ Pilgrim Fate System
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
-/datum/job/underboss  //the head honcho
+/datum/job/underboss  //Shrewd businessman
 	title = "Underboss"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //he's important to the pilgrims, but not to anyone else
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 1
-	supervisors = "Money"
+	supervisors = "money"
 	selection_color = "#530606"
 	access = list(access_bar, access_ganger)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/underboss
-	latejoin_at_spawnpoints = TRUE
+	latejoin_at_spawnpoints = FALSE
 	announced = FALSE
 	cultist_chance = 5
 
@@ -413,7 +413,33 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>You're the head of a small gang on the town of Eipharius. You own the inn, and got a pretty loyal Ogryn to boot. The world is your oyster.. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius. After securing a hefty loan of 700 thrones from the local gang, you now own the local inn. You even had enough cash over to hire a loyal Ogryn to boot. The world is your oyster.. </font></b></span>")
+		
+/datum/job/innkeeper
+	title = "innkeeper"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MED
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 1
+	supervisors = "The Underboss"
+	selection_color = "#530606"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/innkeeper
+	latejoin_at_spawnpoints = FALSE
+	announced = FALSE
+	cultist_chance = 5
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(14,18), rand(8,11), rand(8,11), rand (12,18))
+		H.add_skills(rand(4,6),rand(6,8),rand(4,5),3,5) //melee, ranged, med, eng, surgery
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.adjustStaminaLoss(-INFINITY)
+		H.assign_random_quirk()
+		to_chat(H, "<span class='notice'><b><font size=3>You're an innkeeper hired by the Underboss to keep his new, expensive establishment from collapsing. Sell alcohol, buy crops from the farmer to cook food, keep the place reasonably clean and be ready to duck once the intoxicated gun fights break out.</font></b></span>")
 
 /datum/job/pathfinder
 	title = "Pathfinder"
@@ -517,22 +543,35 @@ Pilgrim Fate System
 /decl/hierarchy/outfit/job/underboss
 	name = OUTFIT_JOB_NAME("Underboss")
 	uniform = /obj/item/clothing/under/suit_jacket/really_black
-	id_type = /obj/item/card/id/pilgrim/innkeeper
-	pda_type = /obj/item/device/pda/penitent
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
+	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null
-	shoes = /obj/item/clothing/shoes/vigilante
-	suit_store = /obj/item/gun/projectile/shotgun/pump/voxlegis
+	id_type = null
+	shoes = /obj/item/clothing/shoes/dress
+	suit_store = null
 	backpack_contents = list(
-	/obj/item/ammo_box/shotgun = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/twenty = 1,
-)
+    )
 
+/decl/hierarchy/outfit/job/innkeeper
+	name = OUTFIT_JOB_NAME("Innkeeper")
+	uniform = /obj/item/clothing/under/waiter
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	l_ear = /obj/item/device/radio/headset/headset_service
+	r_ear = null
+	shoes = /obj/item/clothing/shoes/dress
+	gloves = /obj/item/clothing/gloves/latex
+	l_pocket = /obj/item/device/flashlight/lantern
+	pda_slot = null
+	id_type = null
+	suit_store = null
+	backpack_contents = list(
+	/obj/item/stack/thrones3/twenty = 1,
+    )
 
 //Administrator
 /decl/hierarchy/outfit/job/administrator
@@ -570,7 +609,8 @@ Pilgrim Fate System
 	pda_type = /obj/item/device/pda/penitent
 	l_ear = null
 	r_ear = null
-	belt = /obj/item/device/flashlight/lantern
+	l_pocket = /obj/item/device/flashlight/lantern
+	belt = null
 	pda_slot = null
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
@@ -674,7 +714,7 @@ Pilgrim Fate System
 	total_positions = 3
 	spawn_positions = 3
 	open_when_dead = 0
-	supervisors = "Yourself and your fellow gangers"
+	supervisors = "yourself and your fellow gangers"
 	selection_color = "#530606"
 	access = list(access_village, access_ganger,)
 	minimal_access = list(access_bar)
@@ -694,7 +734,7 @@ Pilgrim Fate System
 		H.verbs += list(
 			/mob/living/carbon/human/proc/gangerclass,
 		)
-		to_chat(H, "<span class='notice'><b><font size=3>You left your previous world with a bounty on your head, and now you're in this shit hole. At least there's a few others you've met and teamed up with. Mug people, stab people. Get some wealth, and maybe even praise the Ruinous Powers? You probably should if your fellows are as well.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You left your previous world with a bounty on your head, and now you're in this shit hole with a few like-minded people. The Underboss owes you 700 thrones, see to it that the debt is repaid in full. Mug people, run gambling games, peddle drugs, harvest and sell organs. Get wealth, power and respect at any means necessary or die trying.</font></b></span>")
 
 
 
@@ -730,7 +770,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club, slot_belt)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			to_chat(U,"<span class='notice'>You're the muscle of the gang. Extract protection and listen to the boss.<b><font size=3>")
+			to_chat(U,"<span class='notice'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -747,7 +787,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
-			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Carry out the wishes of the Underboss and survive.</font></b></span>")
+			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -764,7 +804,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch/hud/medical, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
-			to_chat(U,"<span class='notice'><b><font size=3>You're a step above the rest of the dealers when it comes to chemistry. Due to this, you were hired to a local gang after you caught their interest.</font></b></span>")
+			to_chat(U,"<span class='notice'><b><font size=3>You're a step above the rest of the dealers when it comes to chemistry. Due to this, you were hired by a local gang after you caught their interest.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -791,7 +831,7 @@ Pilgrim Fate System
 		H.add_stats(rand(20,30), rand(15,18), rand(15,18), rand (2,5)) //ogryn are stronger than astartes or smh i don't remember
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest, muscle of the gang. Listen to the Underboss.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest muscle on Eipharius. Protect the Underboss and his interests!</font></b></span>")
 
 
 
@@ -814,33 +854,13 @@ Pilgrim Fate System
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = /obj/item/clothing/shoes/prac_boots
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
-	/obj/item/storage/box/beanbags = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-)
-
-/decl/hierarchy/outfit/job/innkeeper
-	name = OUTFIT_JOB_NAME("Innkeeper")
-	uniform = /obj/item/clothing/under/syndicate
-	suit = /obj/item/clothing/suit/innapron
-	id_type = /obj/item/card/id/pilgrim/innkeeper
-	pda_type = /obj/item/device/pda/penitent
-	back = /obj/item/storage/backpack/satchel/warfare
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	head = /obj/item/clothing/head/bardhat
-	l_ear = /obj/item/device/radio/headset/headset_service
-	r_ear = null
 	pda_slot = null
-	shoes = /obj/item/clothing/shoes/vigilante
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	id_type = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
 	/obj/item/storage/box/beanbags = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
 )
 
 //Administrator
