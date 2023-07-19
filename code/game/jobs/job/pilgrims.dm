@@ -401,7 +401,7 @@ Pilgrim Fate System
 	access = list(access_bar, access_ganger)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/underboss
-	latejoin_at_spawnpoints = FALSE
+	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 5
 
@@ -427,7 +427,7 @@ Pilgrim Fate System
 	access = list(access_bar,)
 	minimal_access = list(access_bar)
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
-	latejoin_at_spawnpoints = FALSE
+	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
 	cultist_chance = 5
 
