@@ -223,25 +223,48 @@
 		"}
 
 /obj/item/book/manual/engineering_construction
-	name = "Repairs and Construction"
+	name = "Skitarii Manufacturing"
 	icon_state ="bookEngineering"
-	author = "Engineering Encyclopedia"		 // Who wrote the thing, can be changed by pen or PC. It is not automatically assigned
-	title = "Repairs and Construction"
+	author = "The Omnissiah"
+	title = "Skitarii Manufacturing"
 
-/obj/item/book/manual/engineering_construction/New()
-	..()
-	dat = {"
+	dat = {"<html>
+				<head>
+				<style>
+				h1 {font-size: 18px; margin: 15px 0px 5px;}
+				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
+				li {margin: 2px 0px 2px 15px;}
+				ul {margin: 5px; padding: 0px;}
+				ol {margin: 5px; padding: 0px 15px;}
+				body {font-size: 13px; font-family: Verdana;}
+				</style>
+				</head>
+				<body>
 
-		<html><head>
-		</head>
+                <h1>What Are Skitarii?</h1>
+				
+				Skitarii are cybernetic soldiers made to be remotely controlled conduits of the Omnissiah's wrath. As such, the production of them requires specific steps to be followed and for precisely crafted materials to be acquired.<BR><BR>
 
-		<body>
-		<iframe width='100%' height='97%' src="[config.wikiurl]Guide_to_construction&printable=yes&remove_links=1" frameborder="0" id="main_frame"></iframe>
-		</body>
+				<h1>Manufacturing Steps</h1>
 
-		</html>
+				<h3>1. Acquire a Vat-Grown Human, usually from the Rogue Trader.</h3>
+				
+				<h3>2. Have the Magos Biologis use their NEURAL ADAPTER (TOOLS top right) to reprogram the mind of the Vat-Grown.</h3>
+				
+				<h3>3. Permanently screw in no less than 3 pieces of Skitarii Plating upon their body, fabricated from Cobalt Ingots.</h3>
+				
+				<h3>4. Remove their eyes and replace them with cut gems (RUBY, SAPPHIRE or EMERALD) acquired from chiseling raw gems processed in the Rock Cleaner.</h3>
+				
+				<h3>5. Cover their exposed, unfinished frame in CLOTH.</h3>
+				
+				<h3>6. Finish the construction by coating them in HOLY OIL.</h3>
+				
+				<h3>7. Wait for them to awake. The Magos Biologis may want to accelerate this process by stimulating their brains with the NEURAL ADAPTER.</h3>
 
-		"}
+				</body>
+			</html>
+			"}
 
 /obj/item/book/manual/engineering_particle_accelerator
 	name = "Particle Accelerator User's Guide"

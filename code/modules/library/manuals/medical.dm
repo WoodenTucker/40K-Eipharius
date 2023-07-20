@@ -91,19 +91,18 @@
 				"}
 
 /obj/item/book/manual/medical_diagnostics_manual
-	name = "Medical Diagnostics Manual"
-	desc = "First, do no harm. A detailed medical practitioner's guide."
+	name = "Orders Hospitaller Surgery Manual"
+	desc = "Bad organs go out, good organs go in."
 	icon_state = "bookMedical"
 	author = "Medical Department"
-	title = "Medical Diagnostics Manual"
+	title = "Orders Hospitaller Surgery Manual"
 
-/obj/item/book/manual/medical_diagnostics_manual/New()
-	..()
 	dat = {"<html>
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
 				li {margin: 2px 0px 2px 15px;}
 				ul {margin: 5px; padding: 0px;}
 				ol {margin: 5px; padding: 0px 15px;}
@@ -111,28 +110,104 @@
 				</style>
 				</head>
 				<body>
-				<br>
-				<h1>The Oath</h1>
 
-				<i>The Medical Oath sworn by recognised medical practitioners in the employ of [GLOB.using_map.company_name]</i><br>
+	            <h1>PRIORITIES:</h1>
 
-				<ol>
-					<li>Now, as a new doctor, I solemnly promise that I will, to the best of my ability, serve humanity-caring for the sick, promoting good health, and alleviating pain and suffering.</li>
-					<li>I recognise that the practice of medicine is a privilege with which comes considerable responsibility and I will not abuse my position.</li>
-					<li>I will practise medicine with integrity, humility, honesty, and compassion-working with my fellow doctors and other colleagues to meet the needs of my patients.</li>
-					<li>I shall never intentionally do or administer anything to the overall harm of my patients.</li>
-					<li>I will not permit considerations of gender, race, religion, political affiliation, sexual orientation, nationality, or social standing to influence my duty of care.</li>
-					<li>I will oppose policies in breach of human rights and will not participate in them. I will strive to change laws that are contrary to my profession's ethics and will work towards a fairer distribution of health resources.</li>
-					<li>I will assist my patients to make informed decisions that coincide with their own values and beliefs and will uphold patient confidentiality.</li>
-					<li>I will recognise the limits of my knowledge and seek to maintain and increase my understanding and skills throughout my professional life. I will acknowledge and try to remedy my own mistakes and honestly assess and respond to those of others.</li>
-					<li>I will seek to promote the advancement of medical knowledge through teaching and research.</li>
-					<li>I make this declaration solemnly, freely, and upon my honour.</li>
-				</ol><br>
+				<h3>1. INITIAL DIAGNOSIS.</h3>
+                The #1 priority to saving lives is keeping the brain alive. If the brain dies, the patient is gone forever. Scan them with a Health Analyzer. If <b>BRAIN ACTIVITY</b> reports as <b>WEAK</b>, <b>EXTREMELY WEAK</b> or <b>FADING</b> administer <b>ATEPOINE</b> IMMEDIATELY.<BR><BR>
+				
+				<b>ATEPOINE</b> is a wonder drug devised by the Emperor that oxygenates the blood, restarts the heart and heals the brain from traumatic injury, even with no heart present. It is a critical drug that you NEED as a surgeon.<BR><BR>
+				<BR><BR>
 
-				<HR COLOR="steelblue" WIDTH="60%" ALIGN="LEFT">
+				<h3>2. STABILIZIZE.</h3>
+				If there are any aortas torn, <b>SUTURE</b> them shut immediately. The common guardsmen knows little about first aid and will often bleed out before reaching you, making blood loss common and it frequently stops hearts.<BR><BR>
 
-				<iframe width='100%' height='100%' src="[config.wikiurl]Guide_to_Medicine&printable=yes&removelinks=1" frameborder="0" id="main_frame"></iframe>
+				Inject them with new blood <b>EXCEPT</b> if the oxygenation in the blood reports at 25% or lower (often alongside <b>MAJOR ORGAN FAILURE</b> warnings). It means that the heart has suffered irreparable trauma and needs to be replaced.<BR><BR>
+				
+				Do <b>NOT</b> use blood injectors or IV bags until the heart has been replaced/mended as it will go to waste. If it's stopped but not significantly damaged, suture aortas & most other bleeds, inject new blood and then administer <b>ATEPOINE</b> & 1-2 morphine.<BR><BR>
+				<BR><BR>
+				
+				<h3>3. BODY SCANNER DIAGNOSIS.</h3>
+				To have a comprehensive picture of your patient's health, it is necessary to place them into a Body Scanner and get a full medical evaluation. If organs are decaying or necrotic, they need to be replaced immediately.<BR><BR>
+				
+				If they have suffered relatively minor damage, they can be repaired. Technically, even decaying organs can be saved but it requires a rare drug called Peridaxon to be prepared beforehand & administered in a dropper.<BR><BR>	
+                <BR><BR>				
+				
+				<h3>4. ORGAN SURGERY.</h3>
+				HEAD: Brain & Eyes - <b>X Blocked By Bones</b><BR><BR>
+				
+				CHEST: Heart & Lungs - <b>X Blocked By Bones</b><BR><BR>
+				
+				LOWER BODY: Liver & Kidneys & Appendix - Not Blocked<BR><BR>
+				
+				LIMBS: Ligaments & Aortas. - Not Blocked<BR><BR>
+				
+				---------------------------------<BR><BR>
+				
+				1. Target the area, put your intent on HELPFUL and begin the incision with a <b>SCALPEL</b>.<BR><BR>
+				
+				2. Use <b>RETRACTOR</b> to open the incision up for more access. (<b>HEMOSTAT</b> can be used to stop slow blood loss if they are alive but it not necessary)<BR><BR>
+				
+				<b>X</b>. Use <b>BONESAW</b> to remove <b>BONES</b> if <b>CHEST/HEAD</b>.<BR><BR>
+				
+				3. Use <b>ADVANCED TRAUMA KIT</b> to repair organs. (<b>NANOPASTE / CABLE COILS</b> if an organ is synthetic)<BR><BR>
+				
+				4. If organs cannot be fully repaired, begin removing the Necrotic/Decaying organs with the <b>SCALPEL</b>.<BR><BR>
+				
+				5. Once cut loose, use <b>HEMOSTAT</b> to pull them out. MAKE SURE THEY ARE ACTUALLY REMOVED!<BR><BR>
+				
+				6. Print new organs from the Prosthetic Organ Fabricator and Insert them <b>BY HAND</b>. (Optionally should have one set ready at all times)<BR><BR>
+				
+				7. Once inserted, use <b>FIX-O-VEIN</b> to attach the new organ.<BR><BR>
+				
+				8. Administer Blood & Atepoine & Morphine once all necessary organs have been connected if the patient came in without a heartbeat. <BR><BR>
+				
+				9. Repair any broken bones using <b>BONEGEL > BONE SETTER</b>.<BR><BR>
+				
+				10. Close incision with <b>CAUTERY</b>.<BR><BR>
+				
+				---------------------------------<BR><BR>
+				<BR><BR>
+				
+				<h3>5. MISCELLANEOUS SURGERY.</h3><BR><BR>
+				
+				TORN LIGAMENTS: Open them up (steps 1 & 2) and use the <b>FIX-O-VEIN > CAUTERY</b>.<BR><BR>
+				
+				LIMB REPLACEMENT: Print a new limb (they have to match LEFT/RIGHT/LEG/ARM, etc), target the area that needs the replacement with HELPFUL INTENT and attach the limb. Existing limbs or stumps can be removed with BONESAW.
+				
+				SHRAPNEL: Aim at the area that has shrapnel with HELPFUL INTENT and use <b>WIRECUTTERS</b> or a <b>BOOT KNIFE</b>. Alternatively, open them up (step 1-X) and use the <b>HEMOSTAT</b>.<BR><BR>
+				
+				BROKEN BONES: Steps 1 & 2 > <b>BONEGEL > BONE SETTER</b>.<BR><BR>
+				
+				BLEEDING & GENERAL DAMAGE: Aim at area > <b>SUTURE</b>.<BR><BR>
+				
+				---------------------------------<BR><BR>
+				<BR><BR>
+				
+				<h3>6. NOTES.</h3><BR><BR>
+				
+				If you receive multiple critical patients at once, make use of the <b>SLEEPERS</b>. Give them 20u <b>INAPROVALINE</b> and put them in <b>5X STASIS</b>. Do not be afraid to ask for help.<BR><BR>
+				
+				Do <b>NOT</b> administer <b>MORPHINE</b> if a patient has <b>ALCOHOL</b> in their system. Stomach pump them and administer Dylovene if necessary.<BR><BR>
+				
+				When a heart stops, all organs begin to slowly rot, becoming more and more damanged until they decay and finally develop necrosis. Prosthetic organs do not reach decay or develop necrosis but they do become damaged.<BR><BR>
+				
+				Decayed/Necrotic organs badly cripple and poisons the person they are attached to. Removing them quickly is VITAL. It may be necessary to administer Dylovene for such cases.<BR><BR>
+				
+				Starvation causes severe organ damage and surgically removing a liver causes any given person to enter starvation. Make sure you have food nearby once their surgery is complete.BR><BR>
+
+                Dylovene helps the body remove toxins and it purges most drugs. A very useful thing for cases of overdosing. Morphine overdoses are 20u and up. A syrette dose is 5u.<BR><BR>
+				
+				An area of the body cannot fully be recovered if it has <b>SHRAPNEL</b> in it. It is a priority to remove any you find after stabilizing brain and closing aortas.<BR><BR>
+				
+				CPR is ineffective in aiding a patient. Bring them to a trained professional immediately if the body has not gone cold instead of trying to treat them in the field.<BR><BR>
+				
+				If a patient is continiously taking organ damage, they are either poisoned or badly starving. Dylovene, food and stomach pumping at the SLEEPER may be necessary.<BR><BR>
+				
+				Inaprovaline does wonders in stabilizing someone severely wounded and can reliably help prevent a heart from stopping due to severe bloodloss, pain or shock. It overdoses at 60u.<BR><BR>
+				
+			    If you are injured, eliminate the threat and treat & stabilize yourself before attempting to treat others. Adrenaline can make critical wounds seem much less serious than they are. Scan frequently.<BR><BR>
+				
 				</body>
 			</html>
-
-		"}
+			"}

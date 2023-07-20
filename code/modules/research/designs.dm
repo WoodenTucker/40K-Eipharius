@@ -2225,6 +2225,22 @@ CIRCUITS BELOW
 	build_path = /obj/item/gun/projectile/automatic/radcarbine/radpistol
 	sort_string = "ZAAW"
 
+/datum/design/item/ammo_magazine/radcarbine
+	name = "Radium Magazine"
+	id = "radmag"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_POWER = 5, TECH_COMBAT = 2)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "uranium" = 2000)
+	build_path = /obj/item/ammo_magazine/radcarbine
+	sort_string = "ZAAAV"
+	
+/datum/design/item/ammo_magazine/radcarbine/radpistol
+	name = "Radium Pistol Magazine"
+	id = "radmagp"
+	req_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 4, TECH_POWER = 5, TECH_COMBAT = 2)
+	materials = list(DEFAULT_WALL_MATERIAL = 1000, "uranium" = 2000)
+	build_path = /obj/item/ammo_magazine/radcarbine/radpistol
+	sort_string = "ZAAAY"
+
 /datum/design/item/rclrifle
 	name = "Vraks Pattern Rocket Launcher"
 	id = "vrakslauncher"
