@@ -67,6 +67,16 @@
 				/obj/item/device/radio = 2,
 				/obj/item/device/analyzer = 5)
 
+/obj/random/trap
+	name = "random trap"
+	desc = "This is a random landmine."
+	icon = 'icons/obj/warfare.dmi'
+	icon_state = "mine_item"
+	spawn_nothing_percentage = 50
+
+/obj/random/trap/spawn_choices()
+	return list(/obj/structure/landmine = 50)
+
 /obj/random/powercell
 	name = "random powercell"
 	desc = "This is a random powercell."
