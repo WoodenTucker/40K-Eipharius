@@ -961,12 +961,12 @@
 	trash = /obj/item/trash/plate
 	filling_color = "#fff9a8"
 	center_of_mass = "x=16;y=13"
-
-	//var/herp = 0
+	nutriment_desc = list("egg" = 3, "cheese" = 3)
+	nutriment_amt = 2
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/nutriment/protein, 8)
-		bitesize = 1
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 2)
+		bitesize = 2
 
 /obj/item/reagent_containers/food/snacks/muffin
 	name = "Muffin"
