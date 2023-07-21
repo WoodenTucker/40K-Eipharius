@@ -175,17 +175,21 @@
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/glasses/tacgoggles
-	name = "tactical goggles"
-	desc = "Self-polarizing goggles with light amplification for dark environments. Made from durable synthetic."
-	icon_state = "swatgoggles"
+	name = "Prototype Photovisor"
+	desc = "Self-polarizing goggles with light amplification for dark environments. Manufactured by the Mechanicus."
+	icon_state = "night"
+	item_state = "glasses"
 	origin_tech = list(TECH_MAGNET = 2, TECH_COMBAT = 4)
-	darkness_view = 15
+	darkness_view = 40
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
-	armor = list(melee = 20, bullet = 20, laser = 20, energy = 15, bomb = 20, bio = 0, rad = 0)
-	siemens_coefficient = 0.6
+	off_state = "denight"
 	electric = 1
+	
+/obj/item/clothing/glasses/tacgoggles/New()
+	..()
+	overlay = GLOB.global_hud.meson
 
 /obj/item/clothing/glasses/eyepatch
 	name = "eyepatch"
