@@ -135,10 +135,17 @@ other types of metals and chemistry for reagents).
 
 /datum/design/item/stock_part/pico_mani
 	id = "pico_mani"
-	req_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
+	req_tech = list(TECH_MATERIAL = 4, TECH_DATA = 2)
 	materials = list(DEFAULT_WALL_MATERIAL = 30)
 	build_path = /obj/item/stock_parts/manipulator/pico
 	sort_string = "CAABC"
+	
+/datum/design/item/stock_part/femto_mani
+	id = "femto_mani"
+	req_tech = list(TECH_MATERIAL = 5, TECH_DATA = 3)
+	materials = list(DEFAULT_WALL_MATERIAL = 30)
+	build_path = /obj/item/stock_parts/manipulator/femto
+	sort_string = "CAABD"
 
 /datum/design/item/stock_part/basic_matter_bin
 	id = "basic_matter_bin"

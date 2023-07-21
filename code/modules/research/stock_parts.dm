@@ -109,7 +109,15 @@
 	desc = "A tiny little manipulator used in the construction of certain devices."
 	icon_state = "pico_mani"
 	origin_tech = list(TECH_MATERIAL = 3, TECH_DATA = 2)
-	rating = 3
+	rating = 4
+	matter = list(DEFAULT_WALL_MATERIAL = 30)
+	
+/obj/item/stock_parts/manipulator/femto
+	name = "femto-manipulator"
+	desc = "A tiny little manipulator used in the construction of certain devices."
+	icon_state = "femto_mani"
+	origin_tech = list(TECH_MATERIAL = 4, TECH_DATA = 3)
+	rating = 6
 	matter = list(DEFAULT_WALL_MATERIAL = 30)
 
 /obj/item/stock_parts/micro_laser/ultra
