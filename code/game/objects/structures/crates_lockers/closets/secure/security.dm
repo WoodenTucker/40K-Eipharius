@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/captains
-	name = "locker of the lord"
+	name = "Lord Governor's Locker"
 	req_access = list(access_captain)
 	icon_state = "capsecure1"
 	icon_closed = "capsecure"
@@ -19,7 +19,6 @@
 		/obj/item/clothing/under/captainformal,
 		/obj/item/clothing/suit/armor/vest/opvest,
 		/obj/item/clothing/head/helmet,
-		/obj/item/gun/energy/gun,
 		/obj/item/melee/telebaton
 	)
 
