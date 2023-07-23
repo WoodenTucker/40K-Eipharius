@@ -239,10 +239,10 @@ var/const/NO_EMAG_ACT = -50
 
 /obj/item/card/id/gold
 	name = "golden writ"
-	desc = "A golden writ from the High Lords of Terra naming the owner a Rogue Trader."
+	desc = "A golden writ from the High Lords of Terra."
 	icon_state = "gold"
 	item_state = "gold_id"
-	job_access_type = /datum/job/captain
+	job_access_type = /datum/job/governor	
 
 /obj/item/card/id/syndicate_command
 	name = "syndicate ID card"
@@ -426,15 +426,17 @@ var/const/NO_EMAG_ACT = -50
 		final_name = final_name + " ([assignment])"
 	SetName(final_name)
 
-/obj/item/card/id/civilian/confessor
-	job_access_type = /datum/job/deacon
+/obj/item/card/id/civilian/deacon
+	name = "identification card"
+	desc = "A card issued to faithful men and women."
+	icon_state = "cargoGold"
 
 /obj/item/card/id/pilgrim/penitent
 	access = list(access_village)
 
 /obj/item/card/id/pilgrim/innkeeper
-	job_access_type = /datum/job/bartender //TODO tweak to village bar
-	access = list(access_inn1, access_inn2, access_inn3, access_bar) //lets innkeeper access his rented rooms
+	job_access_type = /datum/job/innkeeper
+	access = list(access_bar)
 
 /obj/item/card/id/civilian/head //This is not the HoP. There's no position that uses this right now.
 	name = "identification card"
@@ -623,6 +625,11 @@ var/const/NO_EMAG_ACT = -50
 	name = "Meeting Room"
 	desc = "A Key to the Inn's Meeting Room"
 	access = list(access_meeting) //changed from 209 to 219, as tau is now 209
+	
+/obj/item/card/id/key/farm
+	name = "Farm Key"
+	desc = "A Key to the Farm"
+	access = list(access_farm)
 
 /obj/item/card/id/key/super/daemon
 	name = "Daemon Key"
@@ -683,16 +690,26 @@ var/const/NO_EMAG_ACT = -50
 	name = "Monastary Key"
 	desc = "Key to general areas of His Monastary"
 	access = list(access_advchapel)
+	
+/obj/item/card/id/key/grand/church
+	name = "Church Key"
+	desc = "Key to the Church"
+	access = list(access_church)
 
 /obj/item/card/id/key/grand/monastary/inner
 	name = "Inner Sanctum Key"
 	desc = "Key to the Inner Sactum of His Holyness' Church."
 	access = list(access_monastary)
 
-/obj/item/card/id/key/grand/barentry
+/obj/item/card/id/key/innkeeper
 	name = "Inn Key"
-	desc = "Key to where all the booze is"
-	access = list(access_barentry)
+	desc = "Key to where all the booze is."
+	access = list(access_bar)
+	
+/obj/item/card/id/key/bar2
+	name = "Backdoor Inn Key"
+	desc = "Key to the back of the bar."
+	access = list(access_bar2)
 
 /obj/item/card/id/key/grand/barmaster
 	name = "Master Inn Key"
