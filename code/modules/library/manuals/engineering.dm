@@ -700,15 +700,16 @@
 			"}
 
 /obj/item/book/manual/evaguide
-	name = "EVA Gear and You: Not Spending All Day Inside"
+	name = "ALPHA PRIORIS MESSAGE"
 	icon_state = "evabook"
-	author = "Maria Crash, Senior Atmospherics Technician"
-	title = "EVA Gear and You: Not Spending All Day Inside"
+	author = "The Emperor"
+	title = "ALPHA PRIORIS MESSAGE"
 	dat = {"<html>
 				<head>
 				<style>
 				h1 {font-size: 18px; margin: 15px 0px 5px;}
 				h2 {font-size: 15px; margin: 15px 0px 5px;}
+				h3 {font-size: 13px; margin: 15px 0px 5px;}
 				li {margin: 2px 0px 2px 15px;}
 				ul {margin: 5px; padding: 0px;}
 				ol {margin: 5px; padding: 0px 15px;}
@@ -717,70 +718,15 @@
 				</head>
 				<body>
 
-				<h1><a name="Foreword">EVA Gear and You: Not Spending All Day Inside</a></h1>
-				<I>Or: How not to suffocate because there's a hole in your shoes</I><BR>
+                <h1>PRIORITY MESSAGE FROM THE EMPEROR</h1>
+				
+				<BR><BR>
 
-				<h2><a name="Contents">Contents</a></h2>
-				<ol>
-					<li><a href="#Foreword">A foreword on using EVA gear</a></li>
-					<li><a href="#Civilian">Donning a Civilian Suit</a></li>
-					<li><a href="#Hardsuit">Putting on a Hardsuit</a></li>
-					<li><a href="#Equipment">Cyclers and Other Modification Equipment</a></li>
-					<li><a href="#Final">Final Checks</a></li>
-				</ol>
-				<br>
+				<h1>It has come to my attention that some individuals on this planet are capable of procuring specific items from the warp in great quantities. These individuals may bring such objects in to be sold in great quantities and if they do, you have my permission to shoot them in the face repeatedly.</h1>
 
-				EVA gear. Wonderful to use. It's useful for mining, engineering, and occasionally just surviving, if things are that bad. Most people have EVA training,
-				but apparently there are some people out in space who don't. This guide should give you a basic idea of how to use this gear, safely. It's split into two sections:
-				 Civilian suits and hardsuits.<BR><BR>
-
-				<h2><a name="Civilian">Civilian Suits</a></h2>
-				<I>The bulkiest things this side of Alpha Centauri</I><BR>
-				These suits are the grey ones that are stored in EVA. They're the more simple to get on, but are also a lot bulkier, and provide less protection from environmental hazards such as radiation or physical impact.
-				As Medical, Engineering, Security, and Mining all have hardsuits of their own, these don't see much use, but knowing how to put them on is quite useful anyways.<BR><BR>
-
-				First, take the suit. It should be in three pieces: A top, a bottom, and a helmet. Put the bottom on first, shoes and the like will fit in it. If you have magnetic boots, however,
-				put them on on top of the suit's feet. Next, get the top on, as you would a shirt. It can be somewhat awkward putting these pieces on, due to the makeup of the suit,
-				but to an extent they will adjust to you. You can then find the snaps and seals around the waist, where the two pieces meet. Fasten these, and double-check their tightness.
-				The red indicators around the waist of the lower half will turn green when this is done correctly. Next, put on whatever breathing apparatus you're using, be it a gas mask or a breath mask. Make sure the oxygen tube is fastened into it.
-				Put on the helmet now, straightforward, and make sure the tube goes into the small opening specifically for internals. Again, fasten seals around the neck, a small indicator light in the inside of the helmet should go from red to off when all is fastened.
-				There is a small slot on the side of the suit where an emergency oxygen tank or extended emergency oxygen tank will fit,
-				but it is recommended to have a full-sized tank on your back for EVA.<BR><BR>
-
-				These suits tend to be wearable by most species. They're large and flexible. They might be pretty uncomfortable for some, though, so keep that in mind.<BR><BR>
-
-				<h2><a name="Hardsuit">Hardsuits</a></h2>
-				<I>Heavy, uncomfortable, still the best option.</I><BR>
-				These suits come in Engineering, Mining, and the Armory. There's also a couple Medical Hardsuits in EVA. These provide a lot more protection than the standard suits.<BR><BR>
-
-				Similarly to the other suits, these are split into three parts. Fastening the pant and top are mostly the same as the other spacesuits, with the exception that these are a bit heavier,
-				though not as bulky. The helmet goes on differently, with the air tube feeding into the suit and out a hole near the left shoulder, while the helmet goes on turned ninety degrees counter-clockwise,
-				and then is screwed in for one and a quarter full rotations clockwise, leaving the faceplate directly in front of you. There is a small button on the right side of the helmet that activates the helmet light.
-				The tanks that fasten onto the side slot are emergency tanks, as well as full-sized oxygen tanks, leaving your back free for a backpack or satchel.<BR><BR>
-
-				These suits generally only fit one species. NanoTrasen's are usually human-fitting by default, but there's equipment that can make modifications to the hardsuits to fit them to other species.<BR><BR>
-
-				<h2><a name="Equipment">Modification Equipment</a></h2>
-				<I>How to actually make hardsuits fit you.</I><BR>
-				There's a variety of equipment that can modify hardsuits to fit species that can't fit into them, making life quite a bit easier.<BR><BR>
-
-				The first piece of equipment is a suit cycler. This is a large machine resembling the storage pods that are in place in some places. These are machines that will automatically tailor a suit to certain specifications.
-				The largest uses of them are for their cleaning functions and their ability to tailor suits for a species. Do not enter them physically. You will die from any of the functions being activated, and it will be painful.
-				These machines can both tailor a suit between species, and between types. This means you can convert engineering hardsuits to atmospherics, or the other way. This is useful. Use it if you can.<BR><BR>
-
-				There's also modification kits that let you modify suits yourself. These are extremely difficult to use unless you understand the actual construction of the suit. I do not reccomend using them unless no other option is available.
-
-				<h2><a name="Final">Final Checks</a></h2>
-				<ul>
-					<li>Are all seals fastened correctly?</li>
-					<li>If you have modified it manually, is absolutely everything sealed perfectly?</li>
-					<li>Do you either have shoes on under the suit, or magnetic boots on over it?</li>
-					<li>Do you have a mask on and internals on the suit or your back?</li>
-					<li>Do you have a way to communicate with your fellow crew in case something goes wrong?</li>
-					<li>Do you have a second person watching if this is a training session?</li><BR>
-				</ul>
-
-				If you don't have any further issues, go out and do whatever is necessary.
+				<BR><BR>
+				
+				- Sincerely, Emperor.
 
 				</body>
 			</html>
