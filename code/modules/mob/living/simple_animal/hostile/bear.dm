@@ -19,10 +19,10 @@
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 450
-	health = 450
-	melee_damage_lower = 30
-	melee_damage_upper = 40
+	maxHealth = 600
+	health = 600
+	melee_damage_lower = 25
+	melee_damage_upper = 35
 
 	//Space bears aren't affected by atmos.
 	min_gas = null
