@@ -76,18 +76,18 @@
 	if(src.quote_cd == 0)
 		visible_message("[src]'s body covers their wounds with large pus-filled growths!")
 		src.quote_cd = 1
-		sleep(20)
+		sleep(100)
 		src.quote_cd = 0
 	else
 		to_chat(src, "You cannot do that yet.")
 		return
-	adjustOxyLoss(-2)
-	adjustBruteLoss(-2)
-	adjustFireLoss(-2)
-	eye_blurry = 0
-	ear_deaf = 0
-	ear_damage = 0
-	inject_blood(src, 50)
+	adjustOxyLoss(-5)
+	adjustBruteLoss(-5)
+	adjustFireLoss(-5)
+	eye_blurry = -1
+	ear_deaf = -1
+	ear_damage = -1
+	inject_blood(src, 70)
 	for(var/obj/item/organ/external/temp in organs)
 		temp.wounds.Cut()
 
