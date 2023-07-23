@@ -5,9 +5,9 @@
 	/datum/job/governor,
 	/datum/job/heir,
 	/datum/job/servant,
-	/datum/job/hydro,
 	/datum/job/inquisitor,
 	/datum/job/acolyte,
+	/datum/job/investigator,
 	//datum/job/arbitrator,
 	//datum/job/enforcer,
 	/*/datum/job/cadet,*/
@@ -27,21 +27,16 @@
 	/datum/job/engineer,
 	/datum/job/techmenial,
 	/datum/job/deacon,
-	/datum/job/cmo,
 	/datum/job/sistersuperior,
 	/datum/job/hospitaller,
 	//datum/job/marshal,
-	/datum/job/investigator,
-	/datum/job/kasrkin,
-	/datum/job/scavenger,
-	/datum/job/progena,/*
-	/datum/job/preacher, turn preacher into pilgrim fate */
-	/datum/job/innkeeper,
 	/datum/job/underboss,
 	/datum/job/bouncer,
+	/datum/job/innkeeper,
 	/datum/job/gangboy,
 	/datum/job/pathfinder,
 	/datum/job/penitent,
+	/datum/job/farmer,
 	/datum/job/citizen,
 	)
 
