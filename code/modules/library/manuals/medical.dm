@@ -114,7 +114,7 @@
 	            <h1>PRIORITIES:</h1>
 
 				<h3>1. INITIAL DIAGNOSIS.</h3>
-                The #1 priority to saving lives is keeping the brain alive. If the brain dies, the patient is gone forever. Scan them with a Health Analyzer. If <b>BRAIN ACTIVITY</b> reports as <b>WEAK</b>, <b>EXTREMELY WEAK</b> or <b>FADING</b> administer <b>ATEPOINE</b> IMMEDIATELY.<BR><BR>
+                The #1 priority to saving lives is keeping the brain alive. If the brain dies, the patient is gone forever. Scan them with a Health Analyzer frequently. If <b>BRAIN ACTIVITY</b> reports as <b>EXTREMELY WEAK</b> or <b>FADING</b> administer <b>ATEPOINE</b> IMMEDIATELY.<BR><BR>
 				
 				<b>ATEPOINE</b> is a wonder drug devised by the Emperor that oxygenates the blood, restarts the heart and heals the brain from traumatic injury, even with no heart present. It is a critical drug that you NEED as a surgeon.<BR><BR>
 				<BR><BR>
