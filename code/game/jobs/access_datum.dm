@@ -154,11 +154,10 @@
 	desc = "Atmospherics"
 	region = ACCESS_REGION_ENGINEERING
 */
-/var/const/access_bar = 25 // i dont think this does anything but idc
+/var/const/access_bar = 25
 /datum/access/bar
 	id = access_bar
 	desc = "Bar"
-	region = ACCESS_REGION_GENERAL
 
 /var/const/access_janitor = 26
 /datum/access/janitor
@@ -244,11 +243,10 @@
 	desc = "Virology"
 	region = ACCESS_REGION_MEDBAY
 */
-/var/const/access_abbess = 40
-/datum/access/abbess
-	id = access_abbess
-	desc = "Sister Hospitaller"
-	region = ACCESS_REGION_COMMAND
+/var/const/access_church = 40
+/datum/access/church
+	id = access_church
+	desc = "Church"
 
 /var/const/access_qm = 41
 /datum/access/qm
@@ -625,15 +623,41 @@
 /datum/access/mining3
 	id = access_mining3
 	desc = "Mining 3 Access"
+	
+/var/const/access_bar2 = 270
+/datum/access/bar2
+	id = access_bar2
+	desc = "Bar Backrooms"
 
 /var/const/access_inquisition_fancy = 302
 /datum/access/access_inquisition_fancy
 	id = access_inquisition_fancy
 	desc = "inquisition shuttle/fancy parts of ship access"
+	
+/var/const/access_manor = 331
+/datum/access/manor
+	id = access_manor
+	desc = "Manor Access"
 
 /var/const/access_monastary = 333
 /datum/access/monastary
 	id = access_monastary
-	desc = "monastary access"
+	desc = "Monastary Access"
+
+/var/const/access_deacon = 334
+/datum/access/deacon
+	id = access_deacon
+	desc = "Deacon Access"
+	
+/var/const/access_farm = 335
+/datum/access/farm
+	id = access_farm
+	desc = "Farm Access"
+	
+/var/const/access_abbess = 350
+/datum/access/abbess
+	id = access_abbess
+	desc = "Sister Hospitaller"
+	region = ACCESS_REGION_COMMAND
 
 
