@@ -11,7 +11,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "The Golden Throne and the High Lords of Terra."
+	supervisors = "the Emperor of Mankind and the High Lords of Terra."
 	selection_color = "#540c97"
 	req_admin_notify = 1
 	access = list(20, 331, access_RC_announce, access_ai_upload, access_heads) 			//See get_access()
@@ -54,7 +54,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Yourself. Make sure you get that inheritance..."
+	supervisors = "yourself. Make sure you get that inheritance..."
 	selection_color = "#6220a0"
 	req_admin_notify = 1
 	minimal_player_age = 25
@@ -68,7 +68,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 40 // lots of delicacies growing up
+	cultist_chance = 35 // lots of delicacies growing up
 
 
 	equip(var/mob/living/carbon/human/H)

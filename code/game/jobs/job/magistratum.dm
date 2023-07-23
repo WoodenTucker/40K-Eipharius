@@ -50,7 +50,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
-	selection_color = "#f0ac25"
+	selection_color = "#785c23"
 	outfit_type = /decl/hierarchy/outfit/job/ig/investigator
 	auto_rifle_skill = 9
 	semi_rifle_skill = 9

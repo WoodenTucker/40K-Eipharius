@@ -13,17 +13,17 @@
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "The Missionarus Galaxia and the Ecclesiarchy"
 	selection_color = "#FCFBFA"
-	access = list(access_heads, access_advchapel)
-	minimal_access = list(access_heads, access_advchapel)
+	access = list(access_deacon, access_church)
+	minimal_access = list(access_deacon, access_church)
 	announced = FALSE
-	outfit_type = /decl/hierarchy/outfit/job/confessor
+	outfit_type = /decl/hierarchy/outfit/job/deacon
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
 	sniper_skill = 6
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 30
+	cultist_chance = 1
 
 
 
@@ -33,7 +33,7 @@
 		H.fully_replace_character_name("Deacon [current_name]")
 		H.add_stats(rand(12,14), rand(12,14), rand(9,12), rand(14,18)) //frail and holy
 		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,8))
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
+		H.get_idcard()?.access = list(access_church, access_deacon, access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
@@ -201,15 +201,15 @@
 	department = "Ministorum"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Deacon and Inquisition"
+	supervisors = "the Deacon and the Inquisition"
 	selection_color = "#FCFBFA"
 	economic_modifier = 10
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_heads, access_advchapel)
-	minimal_access = list(access_heads, access_advchapel)
+	access = list(access_church,)
+	minimal_access = list(access_church,)
 
 	minimal_player_age = 50
 	ideal_character_age = 60
@@ -251,7 +251,7 @@
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "The Abbess or Deacon"
+	supervisors = "the Deacon"
 	selection_color = "#FCFBFA"
 	announced = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sisterofbattle
@@ -265,7 +265,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 7
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -276,7 +276,6 @@
 		//"BUT THEY ARE DIVINE!!!" don't care, Sister superior is human, stop simping, im still giving them very GOOD stats.
 		H.add_stats(rand(18,22), rand(18,22), rand(18,20), 16)
 		H.add_skills(rand(9,12),rand(9,12),rand(7,9),rand(4,8),rand(4,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -308,14 +307,14 @@
 	minimal_player_age = 22
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "The Abbess or Deacon"
+	supervisors = "the Deacon"
 	selection_color = "#FCFBFA"
 	economic_modifier = 7
 	social_class = SOCIAL_CLASS_HIGH
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_medical, access_heads,
+	access = list(access_church, access_medical, access_heads,
 			access_abbess, access_RC_announce,
 			access_keycard_auth, access_guard_common, access_village, access_advchapel)
 	minimal_access = list(access_medical, access_heads,
@@ -328,7 +327,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 10
+	cultist_chance = 5
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -337,7 +336,6 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,18), rand(14,18), rand(10,14), rand(17,18)) //nice stats
 		H.add_skills(rand(6,8),rand(6,8),rand(8,10),rand(3,5),rand(9,11)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village, access_abbess)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -366,7 +364,7 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_advchapel, access_medical, access_village)
+	access = list(access_church, access_advchapel, access_medical, access_village)
 	minimal_access = list(access_advchapel, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/novice
 	auto_rifle_skill = 7
@@ -384,7 +382,6 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(12,15), rand(12,15), rand(12,15), rand (12,15)) //Has not begun their training with the sisters yet.
 		H.add_skills(rand(5,7),rand(5,7),rand(5,7),rand(1,3),rand(5,7)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -411,8 +408,8 @@
 	open_when_dead = FALSE
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	access = list(access_advchapel, access_medical, access_village)
-	minimal_access = list(access_advchapel, access_medical, access_village)
+	access = list(access_church, access_medical, access_village)
+	minimal_access = list(access_church, access_medical, access_village)
 	outfit_type = /decl/hierarchy/outfit/job/preacher
 	auto_rifle_skill = 6
 	semi_rifle_skill = 6
@@ -429,7 +426,7 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(14,16), rand(14,16), rand(10,14), rand(11,14))
 		H.add_skills(rand(5,9),rand(5,9),rand(6,8),rand(2,4),rand(1,4)) //melee, ranged, med, eng, surgery
-		H.get_idcard()?.access = list(access_medical, access_village)
+		H.get_idcard()?.access = list(access_church, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -453,7 +450,9 @@
 	gloves = /obj/item/clothing/gloves/sisterofbattle
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle
 	glasses = /obj/item/clothing/glasses/hud/health
-	id_type = /obj/item/card/id/dog_tag
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
@@ -476,7 +475,9 @@
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle/repentia
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/repentia
-	id_type = /obj/item/card/id/dog_tag
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/melee/chain/mercycs
 	r_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
@@ -500,7 +501,9 @@
 	gloves = /obj/item/clothing/gloves/sisterofbattle/mlsister
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/mlsister
 	glasses = /obj/item/clothing/glasses/hud/health
-	id_type = /obj/item/card/id/dog_tag
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
@@ -525,7 +528,9 @@
 	gloves = /obj/item/clothing/gloves/sisterofbattle/brsister
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
 	glasses = /obj/item/clothing/glasses/hud/health
-	id_type = /obj/item/card/id/dog_tag
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
@@ -543,8 +548,8 @@
 	head = /obj/item/clothing/head/preacher
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/civilian/confessor
-	pda_type = null
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/heads/cmo
 	r_ear = null
@@ -573,7 +578,9 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health
 	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/medical
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/stack/thrones2 = 1,

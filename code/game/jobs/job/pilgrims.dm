@@ -4,12 +4,11 @@
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
 	spawn_positions = INFINITY
-	supervisors = "The God Emperor of Mankind"
+	supervisors = "the God Emperor of Mankind"
 	selection_color = "#848484"
-	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 50
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -33,12 +32,11 @@
 	social_class = SOCIAL_CLASS_MED //these boys are less gross
 	total_positions = 10 //maybe open up more of these when we figure out other classes and depending on player count
 	spawn_positions = 10
-	supervisors = "The God Emperor of Mankind"
+	supervisors = "the God Emperor of Mankind"
 	selection_color = "#848484"
-	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 30
+	cultist_chance = 25
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -92,7 +90,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/melee/trench_axe/bspear, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
@@ -115,7 +112,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
 			equip_to_slot_or_del(new /obj/item/melee/sword/sabre, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'>You once were a traveller and a explorer, born with an innate gift for pathfinding and also some very needed strength, after hearing about some kind of temple, you came here to see what it was.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -187,9 +183,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/musichat, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
@@ -211,7 +204,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/chokha, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/head/pillbox, slot_head)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
@@ -240,14 +232,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/zoom, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/flame/lighter/zippo, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from operation to operation you once again find yourself on a new world. You'll do whatever it takes to get rich. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -293,7 +282,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/gun/projectile/revolver/messina, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Sick of the quiet life on your original world, you left your house in search of money. Your skills in the field of forensics managed to get you more money than you could imagine in this new chaotic world.</font></b></span>")
 			U.stat = CONSCIOUS
@@ -355,11 +343,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/leather/tailcoat, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
@@ -376,7 +359,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/leathercoat, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/book/manual, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
@@ -392,18 +374,18 @@ Pilgrim Fate System
 /datum/job/underboss  //Shrewd businessman
 	title = "Underboss"
 	department_flag = PIL
-	social_class = SOCIAL_CLASS_MED //he's important to the pilgrims, but not to anyone else
+	social_class = SOCIAL_CLASS_MED //Pretty important but not quite nobility
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 1
 	supervisors = "money"
-	selection_color = "#530606"
-	access = list(access_bar, access_ganger)
-	minimal_access = list(access_bar)
+	selection_color = "#229c8f"
+	access = list(access_bar, access_bar2,)
+	minimal_access = list(access_bar, access_bar2,)
 	outfit_type = /decl/hierarchy/outfit/job/underboss
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -423,13 +405,13 @@ Pilgrim Fate System
 	spawn_positions = 1
 	open_when_dead = 1
 	supervisors = "The Underboss"
-	selection_color = "#530606"
+	selection_color = "#23756d"
 	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	minimal_access = list(access_bar,)
 	outfit_type = /decl/hierarchy/outfit/job/innkeeper
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -439,7 +421,7 @@ Pilgrim Fate System
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>You're an innkeeper hired by the Underboss to keep his new, expensive establishment from collapsing. Sell alcohol, buy crops from the farmer to cook food, keep the place reasonably clean and be ready to duck once the intoxicated gun fights break out.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You're an innkeeper hired by the Underboss to keep his new, expensive establishment from collapsing. Sell alcohol, buy crops and milk from the farmer to cook food, keep the place reasonably clean and be ready to duck once the intoxicated gun fights break out.</font></b></span>")
 
 /datum/job/pathfinder
 	title = "Pathfinder"
@@ -448,14 +430,14 @@ Pilgrim Fate System
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "Your own morality and ethics."
+	supervisors = "your own morality and ethics."
 	selection_color = "#848484"
-	access = list(access_bar,)
-	minimal_access = list(access_bar)
+	access = list(access_village,)
+	minimal_access = list(access_village,)
 	outfit_type = /decl/hierarchy/outfit/job/administrator
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 40
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -481,7 +463,7 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/medicae
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 50
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -532,6 +514,8 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = null
+	pda_slot = null
+	pda_type = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = /obj/item/gun/projectile/revolver/villiers
 	backpack_contents = list(
@@ -549,7 +533,8 @@ Pilgrim Fate System
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null
-	id_type = null
+	pda_type = null
+	id_type = /obj/item/card/id/key/bar2
 	shoes = /obj/item/clothing/shoes/dress
 	suit_store = null
 	backpack_contents = list(
@@ -567,7 +552,8 @@ Pilgrim Fate System
 	gloves = /obj/item/clothing/gloves/latex
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null
-	id_type = null
+	pda_type = null
+	id_type = /obj/item/card/id/key/innkeeper
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/stack/thrones3/twenty = 1,
@@ -582,14 +568,13 @@ Pilgrim Fate System
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/ring/administrator
+	id_type = /obj/item/card/id/key/super/pathfinder
 	l_ear = /obj/item/device/radio/headset/headset_service
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
+	pda_type = null
 	backpack_contents = list(
 	/obj/item/stack/thrones = 2,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/twenty = 1,
 
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
@@ -611,11 +596,12 @@ Pilgrim Fate System
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = null
+	id_type = /obj/item/card/id/key/bar2
 	pda_slot = null
+	pda_type = null
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1,
+	/obj/item/stack/thrones/ = 1,
 
 	)
 
@@ -628,8 +614,9 @@ Pilgrim Fate System
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
-	id_type = /obj/item/card/id/pilgrim/innkeeper
-	pda_type = /obj/item/device/pda/penitent
+	id_type = /obj/item/card/id/key/bar2
+	pda_slot = null
+	pda_type = null
 	l_ear = null
 	r_ear = null
 	belt = /obj/item/device/flashlight/lantern
@@ -637,8 +624,6 @@ Pilgrim Fate System
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
 	/obj/item/stack/thrones = 2,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/twenty = 1,
 
 	)
 
@@ -716,12 +701,12 @@ Pilgrim Fate System
 	open_when_dead = 0
 	supervisors = "yourself and your fellow gangers"
 	selection_color = "#530606"
-	access = list(access_village, access_ganger,)
-	minimal_access = list(access_bar)
+	access = list(access_ganger,)
+	minimal_access = list(access_ganger)
 	outfit_type = /decl/hierarchy/outfit/job/ganger
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 55
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -768,8 +753,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club, slot_belt)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/key/middle/ganger, slot_wear_id)
 			to_chat(U,"<span class='notice'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
@@ -782,12 +766,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vest/tactical, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_del(new /obj/item/card/id/key/middle/ganger, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/messina, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
-			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
+			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Take out anyone who opposes you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -799,8 +782,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/card/id/key/middle/ganger, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch/hud/medical, slot_glasses)
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
@@ -815,12 +797,12 @@ Pilgrim Fate System
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "The Underboss"
-	selection_color = "#530606"
+	supervisors = "the Underboss"
+	selection_color = "#23756d"
 	outfit_type = /decl/hierarchy/outfit/job/bouncer
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 0 // grog like emperorah :) // bouncer should only be cultist if the innkeeper is. as they would get easily indoctrinated by their dad/boss
+	cultist_chance = 0 // grog like emperorah :) // bouncer should only be cultist if the underboss is.
 	species_role = "Ogryn"
 
 
@@ -832,55 +814,3 @@ Pilgrim Fate System
 		H.add_skills(rand(10,13),1,1,1,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		to_chat(H, "<span class='notice'><b><font size=3>You're the biggest, baddest muscle on Eipharius. Protect the Underboss and his interests!</font></b></span>")
-
-
-
-/*
-//loadouts below here
-/decl/hierarchy/outfit/job/penitent
-	name = OUTFIT_JOB_NAME("Pilgrim")
-	uniform = /obj/item/clothing/under/rank/penitent
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	shoes = /obj/item/clothing/shoes/prac_boots
-	l_ear = null
-	r_ear = null
-	id_type = null
-	gloves = null
-	pda_slot = null
-
-/decl/hierarchy/outfit/job/ganger
-	name = OUTFIT_JOB_NAME("Ganger")
-	uniform = /obj/item/clothing/under/syndicate
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	shoes = /obj/item/clothing/shoes/prac_boots
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
-	pda_slot = null
-	id_type = null
-	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 2,
-	/obj/item/storage/box/beanbags = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-)
-
-//Administrator
-/decl/hierarchy/outfit/job/administrator
-	name = OUTFIT_JOB_NAME("Administrator")
-	uniform = /obj/item/clothing/under/rank/consort/adept
-	head = /obj/item/clothing/head/commissar/adept
-	shoes = /obj/item/clothing/shoes/jackboots
-	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare
-	back = /obj/item/storage/backpack/satchel/warfare
-	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/ring/administrator
-	l_ear = /obj/item/device/radio/headset/headset_service
-	belt = /obj/item/device/flashlight/lantern
-	pda_slot = null
-	backpack_contents = list(
-	/obj/item/stack/thrones = 2,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/twenty = 1,
-
-	)
-	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
-*/

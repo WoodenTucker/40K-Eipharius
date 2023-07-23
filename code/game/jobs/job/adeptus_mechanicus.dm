@@ -57,7 +57,7 @@
 	social_class = SOCIAL_CLASS_MED
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "You obey the Biologis and Explorator"
+	supervisors = "the Biologis and Explorator"
 	selection_color = "#FF3A3A"
 	economic_modifier = 5
 	minimal_player_age = 7
@@ -101,7 +101,7 @@
 	social_class = SOCIAL_CLASS_MED
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "You obey the Biologis and Explorator, as well as the Tech Priests."
+	supervisors = "the Magos Biologis, the Magos Explorator, as well as the Tech Priests."
 	selection_color = "#FF3A3A"
 	economic_modifier = 5
 	minimal_player_age = 7
@@ -244,12 +244,13 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	belt = /obj/item/device/flashlight/lantern
-	suit_store = /obj/item/gun/projectile // give them galv back soon
-	l_pocket = /obj/item/storage/box/ifak
+	suit_store = null
+	l_pocket = null
 	id = null
 	id_slot = null
+	pda_type = null	
 	pda_slot = null
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1, /obj/item/ammo_magazine/galvanic = 4,)
+	backpack_contents = null
 
 /decl/hierarchy/outfit/job/skitarii/basic
 	uniform = /obj/item/clothing/under/rank/skitarii
