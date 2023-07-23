@@ -38,13 +38,13 @@
 	/obj/item/stack/thrones3/five = 1,
 		)
 
-/decl/hierarchy/outfit/job/service/gardener
+/decl/hierarchy/outfit/job/service/farmer
 	name = OUTFIT_JOB_NAME("Farmer")
 	uniform = /obj/item/clothing/under/rank/victorian
 	suit = /obj/item/clothing/suit/farmer
 	gloves = /obj/item/clothing/gloves/thick/botany
 	r_pocket = /obj/item/device/analyzer/plant_analyzer
-	id_type = null
+	id_type = /obj/item/card/id/key/farm
 	pda_type = null
 	pda_slot = null
 	l_ear = null
@@ -54,23 +54,9 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_hand = /obj/item/farmshovel
 	belt = /obj/item/storage/plants
-	backpack_contents = list(/obj/item/seeds/potatoseed = 1,
-	/obj/item/seeds/wheatseed = 1,
-	/obj/item/seeds/cornseed = 1,
-	/obj/item/seeds/random = 1,
-	/obj/item/seeds/tobaccoseed = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
-
-	)
-
-/decl/hierarchy/outfit/job/service/gardener/New()
-	..()
-	backpack_overrides[/decl/backpack_outfit/backpack]      = /obj/item/storage/backpack/hydroponics
-	backpack_overrides[/decl/backpack_outfit/satchel]       = /obj/item/storage/backpack/satchel/satchel_hyd
-	backpack_overrides[/decl/backpack_outfit/messenger_bag] = /obj/item/storage/backpack/messenger/hyd
+	backpack_contents = list(
+	/obj/item/seeds/random = 5,
+		)
 
 /decl/hierarchy/outfit/job/service/janitor
 	name = OUTFIT_JOB_NAME("Janitor Servitor")
@@ -91,11 +77,11 @@
 	pda_type = null
 	pda_slot = null
 
-/decl/hierarchy/outfit/job/confessor // move to ministorum dm
+/decl/hierarchy/outfit/job/deacon
 	name = OUTFIT_JOB_NAME("Ministorum Confessor")
 	uniform = /obj/item/clothing/under/rank/chaplain
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	id_type = /obj/item/card/id/civilian/confessor
+	id_type = /obj/item/card/id/civilian/deacon
 	pda_type = null
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/heads/cmo
@@ -109,9 +95,7 @@
 	r_hand = /obj/item/melee/whip/censer
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
-	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/ten = 1
+	/obj/item/stack/thrones/five = 1,
 		)
 
 /decl/hierarchy/outfit/job/service/undertaker

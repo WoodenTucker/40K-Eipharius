@@ -14,9 +14,7 @@
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/storage/box/ids = 1,
-	/obj/item/stack/thrones/ten = 1,
-	/obj/item/stack/thrones2/twenty = 1,
-	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/stack/thrones/ten = 2,
 	/obj/item/reagent_containers/food/snacks/bigbiteburger
 )
 
@@ -48,9 +46,7 @@
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones/five = 1,
-	/obj/item/stack/thrones2/ten = 1,
-	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/stack/thrones/five = 1
 	 )
 /*
 /decl/hierarchy/outfit/job/hop

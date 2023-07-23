@@ -21,7 +21,9 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	belt = /obj/item/storage/belt/medical/apothecary
 	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = null
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	head = /obj/item/clothing/head/hospitallerhelm
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -39,23 +41,26 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health
-	l_hand = /obj/item/storage/firstaid/adv
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	l_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	r_hand = null
 	belt = /obj/item/storage/belt/medical/full
 	r_pocket = /obj/item/device/flashlight/lantern
-	id_type = /obj/item/card/id/medical
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	head = /obj/item/clothing/head/hospitallerhelm
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
-		/obj/item/stack/thrones2/five = 1,
-		/obj/item/stack/thrones3/five = 1,)
+		/obj/item/stack/thrones2/five = 1,)
 /* // sisterhood chemist
 /decl/hierarchy/outfit/job/medical/chemist
 	name = OUTFIT_JOB_NAME("Alchemist")
 	uniform = /obj/item/clothing/under/rank/medical/scrubs/black
 	suit = /obj/item/clothing/suit/storage/toggle/labcoat/alchemist
-	id_type = /obj/item/card/id/medical/chemist
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	pda_type = /obj/item/device/pda/chemist
 	belt = /obj/item/storage/belt/medical/alchemist
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -108,7 +113,9 @@
 	head = /obj/item/clothing/head/helmet/medicae
 	r_pocket = /obj/item/storage/box/ifak
 	l_pocket = /obj/item/cell/lasgun
-	id_type = /obj/item/card/id/medical/paramedic
+	id_type = /obj/item/card/id/key/grand/church
+	pda_type = null	
+	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	backpack_contents = list(

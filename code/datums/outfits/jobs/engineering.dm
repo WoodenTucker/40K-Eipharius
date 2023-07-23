@@ -24,9 +24,7 @@
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
-	backpack_contents = list(/obj/item/stack/thrones/five = 1,
-		/obj/item/stack/thrones2/five = 3,
-		/obj/item/stack/thrones3/five = 1,)
+	backpack_contents = list(/obj/item/stack/thrones/five = 1,)
 
 
 /decl/hierarchy/outfit/job/medical/biologis
@@ -36,22 +34,20 @@
 	mask = /obj/item/clothing/mask/gas/techpriest
 	r_pocket = /obj/item/device/flashlight/pen
 	id_type = /obj/item/card/id/engineering/head
-	pda_type = /obj/item/device/pda/geneticist
+	pda_type = null
+	pda_slot = null
 	belt = /obj/item/storage/belt/medical/apothecary
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	glasses = /obj/item/clothing/glasses/science/magos
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	l_ear = /obj/item/device/radio/headset/headset_eng
-	l_hand = /decl/hierarchy/supply_pack/security/forensics
+	l_hand = null
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(
 		/obj/item/gun/energy/pulse/plasma/pistol/mechanicus = 1,
-		/obj/item/stack/thrones = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
+		/obj/item/stack/thrones = 1,)
 
 /decl/hierarchy/outfit/job/engineering/engineer
 	name = OUTFIT_JOB_NAME("Tech Priest")
@@ -68,12 +64,8 @@
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
-	backpack_contents = list(
-		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-		/obj/item/stack/thrones = 1,
-		/obj/item/stack/thrones2 = 1,
-		/obj/item/stack/thrones3/five = 1,
-)
+	backpack_contents = null
+
 
 /decl/hierarchy/outfit/job/engineering/engineer/void
 	name = OUTFIT_JOB_NAME("Engineer - Voidsuit")
