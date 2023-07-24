@@ -305,36 +305,12 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/clothing/glasses/hud/health
 	sort_string = "GAAAA"
 
-/datum/design/item/hud/security
-	name = "security records"
-	id = "security_hud"
-	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 2)
-	build_path = /obj/item/clothing/glasses/hud/security
-	sort_string = "GAAAB"
-
 /datum/design/item/optical/AssembleDesignName()
 	..()
 	name = "Optical glasses design ([item_name])"
 
-/datum/design/item/optical/mesons
-	name = "mesons"
-	desc = "Using the meson-scanning technology those glasses allow you to see through walls, floor or anything else."
-	id = "mesons"
-	req_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
-	build_path = /obj/item/clothing/glasses/meson
-	sort_string = "GBAAA"
-
-/datum/design/item/optical/material
-	name = "material"
-	id = "mesons_material"
-	req_tech = list(TECH_MAGNET = 3, TECH_ENGINEERING = 3)
-	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50)
-	build_path = /obj/item/clothing/glasses/material
-	sort_string = "GAAAB"
-
 /datum/design/item/optical/tactical
-	name = "tactical"
+	name = "photovisor"
 	id = "tactical_goggles"
 	req_tech = list(TECH_MAGNET = 3, TECH_COMBAT = 5)
 	materials = list(DEFAULT_WALL_MATERIAL = 50, "glass" = 50, "silver" = 50, "gold" = 50)
@@ -828,15 +804,6 @@ other types of metals and chemistry for reagents).
 	build_path = /obj/item/device/ano_scanner
 	sort_string = "VAEAA"
 
-/datum/design/item/bluespace/bag_holding
-	name = "Bag of Holding"
-	desc = "Using localized pockets of bluespace this bag prototype offers incredible storage capacity with the contents weighting nothing. It's a shame the bag itself is pretty heavy."
-	id = "bag_holding"
-	req_tech = list(TECH_BLUESPACE = 4, TECH_MATERIAL = 6)
-	materials = list("gold" = 3000, "diamond" = 1500, "uranium" = 250)
-	build_path = /obj/item/storage/backpack/holding
-	sort_string = "VAFAA"
-
 // tools
 
 /datum/design/item/tool/AssembleDesignName()
@@ -878,15 +845,6 @@ other types of metals and chemistry for reagents).
 	materials = list(DEFAULT_WALL_MATERIAL = 500, "glass" = 500)
 	build_path = /obj/item/clamp
 	sort_string = "VAGAE"
-
-/datum/design/item/tool/price_scanner
-	name = "price scanner"
-	desc = "Using an up-to-date database of various costs and prices, this device estimates the market price of an item up to 0.001% accuracy."
-	id = "price_scanner"
-	req_tech = list(TECH_MATERIAL = 6, TECH_MAGNET = 4)
-	materials = list(DEFAULT_WALL_MATERIAL = 3000, "glass" = 3000, "silver" = 250)
-	build_path = /obj/item/device/price_scanner
-	sort_string = "VAGAF"
 
 /datum/design/item/tool/experimental_welder
 	name = "experimental welding tool"
