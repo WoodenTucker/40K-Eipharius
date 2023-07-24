@@ -1,16 +1,11 @@
 var/global/list/robot_modules = list(
-	"Standard"		= /obj/item/robot_module/standard,
-	"Service" 		= /obj/item/robot_module/clerical/butler,
-	"Clerical" 		= /obj/item/robot_module/clerical/general,
-	"Research" 		= /obj/item/robot_module/research,
 	"Miner" 		= /obj/item/robot_module/miner,
-	"Crisis" 		= /obj/item/robot_module/medical/crisis,
-	"Surgeon" 		= /obj/item/robot_module/medical/surgeon,
-	"Security" 		= /obj/item/robot_module/security/general,
+	"Medicae" 		= /obj/item/robot_module/medical/crisis,
 	"Combat" 		= /obj/item/robot_module/security/combat,
 	"Engineering"	= /obj/item/robot_module/engineering/general,
 	"Janitor" 		= /obj/item/robot_module/janitor
-	)
+	
+	)//^When these are changed, you also have to edit a static list found at code/global_vars/list/flavor_dm
 
 /obj/item/robot_module
 	name = "robot module"
@@ -20,9 +15,17 @@ var/global/list/robot_modules = list(
 	item_state = "electronic"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	var/hide_on_manifest = 0
-	var/channels = list()
+	var/channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
 	var/networks = list()
 	var/languages = list(
+	    LANGUAGE_LOW_GOTHIC = 1,
+		LANGUAGE_HIGH_GOTIC = 1,
+		LANGUAGE_ORKY = 1,
+		LANGUAGE_ELDAR = 1,
+		LANGUAGE_MECHANICUS = 1,
+		LANGUAGE_DARKTONGUE = 1,
+		LANGUAGE_TAU = 1,
+		LANGUAGE_TYRANID = 1,
 		LANGUAGE_SOL_COMMON = 1,
 		LANGUAGE_LUNAR = 1,
 		LANGUAGE_UNATHI = 0,
@@ -192,7 +195,25 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/medical
 	name = "medical robot module"
-	channels = list("Medical" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
+	languages = list(
+					LANGUAGE_LOW_GOTHIC = 1,
+					LANGUAGE_HIGH_GOTIC = 1,
+					LANGUAGE_ORKY = 1,
+					LANGUAGE_ELDAR = 1,
+					LANGUAGE_MECHANICUS = 1,
+					LANGUAGE_DARKTONGUE = 1,
+					LANGUAGE_TAU = 1,
+					LANGUAGE_TYRANID = 1,
+					LANGUAGE_SOL_COMMON = 1,
+					LANGUAGE_LUNAR = 1,
+					LANGUAGE_UNATHI = 0,
+					LANGUAGE_SIIK_MAAS = 0,
+					LANGUAGE_SKRELLIAN = 0,
+					LANGUAGE_GUTTER = 1,
+					LANGUAGE_SIGN = 0,
+					LANGUAGE_INDEPENDENT = 1,
+					LANGUAGE_SPACER = 1)
 	networks = list(NETWORK_MEDICAL)
 	subsystems = list(/datum/nano_module/crew_monitor)
 	can_be_pushed = 0
@@ -209,10 +230,9 @@ var/global/list/robot_modules = list(
 					)
 
 /obj/item/robot_module/medical/surgeon/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/device/healthanalyzer(src)
 	src.modules += new /obj/item/reagent_containers/borghypo/surgeon(src)
-	src.modules += new /obj/item/scalpel/manager(src)
+	src.modules += new /obj/item/scalpel(src)
 	src.modules += new /obj/item/hemostat(src)
 	src.modules += new /obj/item/retractor(src)
 	src.modules += new /obj/item/cautery(src)
@@ -223,7 +243,6 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/surgicaldrill(src)
 	src.modules += new /obj/item/gripper/organ(src)
 	src.modules += new /obj/item/roller_holder(src)
-	src.modules += new /obj/item/shockpaddles/robot(src)
 	src.emag = new /obj/item/reagent_containers/spray(src)
 	src.emag.reagents.add_reagent(/datum/reagent/acid/polyacid, 250)
 	src.emag.SetName("Polyacid spray")
@@ -254,7 +273,6 @@ var/global/list/robot_modules = list(
 	name = "crisis robot module"
 	sprites = list(
 					"Basic" = "Medbot",
-					"Standard" = "surgeon",
 					"Advanced Droid" = "droid-medical",
 					"Needles" = "medicalrobot",
 					"Drone - Medical" = "drone-medical",
@@ -263,23 +281,13 @@ var/global/list/robot_modules = list(
 					)
 
 /obj/item/robot_module/medical/crisis/New()
-	src.modules += new /obj/item/crowbar(src)
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/borg/sight/hud/med(src)
 	src.modules += new /obj/item/device/healthanalyzer(src)
-	src.modules += new /obj/item/device/reagent_scanner/adv(src)
+	src.modules += new /obj/item/suture(src)
 	src.modules += new /obj/item/roller_holder(src)
 	src.modules += new /obj/item/reagent_containers/borghypo/crisis(src)
-	src.modules += new /obj/item/shockpaddles/robot(src)
-	src.modules += new /obj/item/reagent_containers/dropper/industrial(src)
-	src.modules += new /obj/item/reagent_containers/syringe(src)
-	src.modules += new /obj/item/gripper/chemistry(src)
 	src.modules += new /obj/item/extinguisher/mini(src)
-	src.modules += new /obj/item/taperoll/medical(src)
-	src.modules += new /obj/item/inflatable_dispenser/robot(src) // Allows usage of inflatables. Since they are basically robotic alternative to EMTs, they should probably have them.
-	src.emag = new /obj/item/reagent_containers/spray(src)
-	src.emag.reagents.add_reagent(/datum/reagent/acid/polyacid, 250)
-	src.emag.SetName("Polyacid spray")
+	src.modules += new /obj/item/crowbar(src)
 
 	var/datum/matter_synth/medicine = new /datum/matter_synth/medicine(15000)
 	synths += medicine
@@ -310,16 +318,12 @@ var/global/list/robot_modules = list(
 		S.desc = initial(S.desc)
 		S.update_icon()
 
-	if(src.emag)
-		var/obj/item/reagent_containers/spray/PS = src.emag
-		PS.reagents.add_reagent(/datum/reagent/acid/polyacid, 2 * amount)
-
 	..()
 
 
 /obj/item/robot_module/engineering
 	name = "engineering robot module"
-	channels = list("Engineering" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
 	networks = list(NETWORK_ENGINEERING)
 	subsystems = list(/datum/nano_module/power_monitor, /datum/nano_module/supermatter_monitor)
 	supported_upgrades = list(/obj/item/borg/upgrade/rcd)
@@ -333,8 +337,7 @@ var/global/list/robot_modules = list(
 					)
 	no_slip = 1
 
-/obj/item/robot_module/engineering/general/New()
-	src.modules += new /obj/item/device/flash(src)
+/obj/item/robot_module/engineering/general/New()//Painters have been removed since they're broken, he cant dig trenches because no rightclick and probably because no skills.
 	src.modules += new /obj/item/borg/sight/meson(src)
 	src.modules += new /obj/item/extinguisher(src)
 	src.modules += new /obj/item/weldingtool/largetank(src)
@@ -350,8 +353,6 @@ var/global/list/robot_modules = list(
 	src.modules += new /obj/item/taperoll/atmos(src)
 	src.modules += new /obj/item/gripper(src)
 	src.modules += new /obj/item/device/lightreplacer(src)
-	src.modules += new /obj/item/device/pipe_painter(src)
-	src.modules += new /obj/item/device/floor_painter(src)
 	src.modules += new /obj/item/inflatable_dispenser/robot(src)
 	src.emag = new /obj/item/melee/baton/robot/electrified_arm(src)
 
@@ -406,7 +407,7 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/security
 	name = "security robot module"
-	channels = list("Security" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
 	networks = list(NETWORK_SECURITY)
 	subsystems = list(/datum/nano_module/crew_monitor, /datum/nano_module/digitalwarrant)
 	can_be_pushed = 0
@@ -425,7 +426,6 @@ var/global/list/robot_modules = list(
 				)
 
 /obj/item/robot_module/security/general/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/borg/sight/hud/sec(src)
 	src.modules += new /obj/item/handcuffs/cyborg(src)
 	src.modules += new /obj/item/melee/baton/robot(src)
@@ -451,7 +451,26 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/janitor
 	name = "janitorial robot module"
-	channels = list("Service" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
+	languages = list(
+					LANGUAGE_LOW_GOTHIC = 1,
+					LANGUAGE_HIGH_GOTIC = 1,
+					LANGUAGE_ORKY = 1,
+					LANGUAGE_ELDAR = 1,
+					LANGUAGE_MECHANICUS = 1,
+					LANGUAGE_DARKTONGUE = 1,
+					LANGUAGE_TAU = 1,
+					LANGUAGE_TYRANID = 1,
+					LANGUAGE_SOL_COMMON = 1,
+					LANGUAGE_LUNAR = 1,
+					LANGUAGE_UNATHI = 0,
+					LANGUAGE_SIIK_MAAS = 0,
+					LANGUAGE_SKRELLIAN = 0,
+					LANGUAGE_GUTTER = 1,
+					LANGUAGE_SIGN = 0,
+					LANGUAGE_INDEPENDENT = 1,
+					LANGUAGE_SPACER = 1)
+
 	sprites = list(
 					"Basic" = "JanBot2",
 					"Mopbot"  = "janitorrobot",
@@ -461,8 +480,11 @@ var/global/list/robot_modules = list(
 					)
 
 /obj/item/robot_module/janitor/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/soap/nanotrasen(src)
+	src.modules += new /obj/item/soap/nanotrasen(src)
+	src.modules += new /obj/item/soap/nanotrasen(src)
+	src.modules += new /obj/item/storage/bag/trash(src)
+	src.modules += new /obj/item/storage/bag/trash(src)
 	src.modules += new /obj/item/storage/bag/trash(src)
 	src.modules += new /obj/item/mop(src)
 	src.modules += new /obj/item/device/lightreplacer(src)
@@ -481,18 +503,25 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/clerical
 	name = "service robot module"
-	channels = list("Service" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
 	languages = list(
-					LANGUAGE_SOL_COMMON	= 1,
-					LANGUAGE_UNATHI		= 1,
-					LANGUAGE_SIIK_MAAS	= 1,
-					LANGUAGE_SIIK_TAJR	= 0,
-					LANGUAGE_SKRELLIAN	= 1,
-					LANGUAGE_LUNAR	= 1,
-					LANGUAGE_GUTTER		= 1,
-					LANGUAGE_INDEPENDENT= 1,
-					LANGUAGE_SPACER = 1
-					)
+					LANGUAGE_LOW_GOTHIC = 1,
+					LANGUAGE_HIGH_GOTIC = 1,
+					LANGUAGE_ORKY = 1,
+					LANGUAGE_ELDAR = 1,
+					LANGUAGE_MECHANICUS = 1,
+					LANGUAGE_DARKTONGUE = 1,
+					LANGUAGE_TAU = 1,
+					LANGUAGE_TYRANID = 1,
+					LANGUAGE_SOL_COMMON = 1,
+					LANGUAGE_LUNAR = 1,
+					LANGUAGE_UNATHI = 0,
+					LANGUAGE_SIIK_MAAS = 0,
+					LANGUAGE_SKRELLIAN = 0,
+					LANGUAGE_GUTTER = 1,
+					LANGUAGE_SIGN = 0,
+					LANGUAGE_INDEPENDENT = 1,
+					LANGUAGE_SPACER = 1)
 
 /obj/item/robot_module/clerical/butler
 	sprites = list(	"Waitress" = "Service",
@@ -506,7 +535,6 @@ var/global/list/robot_modules = list(
 				  	)
 
 /obj/item/robot_module/clerical/butler/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/gripper/service(src)
 	src.modules += new /obj/item/reagent_containers/glass/bucket(src)
 	src.modules += new /obj/item/material/minihoe(src)
@@ -549,7 +577,6 @@ var/global/list/robot_modules = list(
 					)
 
 /obj/item/robot_module/clerical/general/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/pen/robopen(src)
 	src.modules += new /obj/item/form_printer(src)
 	src.modules += new /obj/item/gripper/paperwork(src)
@@ -570,7 +597,25 @@ var/global/list/robot_modules = list(
 /obj/item/robot_module/miner
 	name = "miner robot module"
 	subsystems = list(/datum/nano_module/supply)
-	channels = list("Supply" = 1, "Science" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
+	languages = list(
+					LANGUAGE_LOW_GOTHIC = 1,
+					LANGUAGE_HIGH_GOTIC = 1,
+					LANGUAGE_ORKY = 1,
+					LANGUAGE_ELDAR = 1,
+					LANGUAGE_MECHANICUS = 1,
+					LANGUAGE_DARKTONGUE = 1,
+					LANGUAGE_TAU = 1,
+					LANGUAGE_TYRANID = 1,
+					LANGUAGE_SOL_COMMON = 1,
+					LANGUAGE_LUNAR = 1,
+					LANGUAGE_UNATHI = 0,
+					LANGUAGE_SIIK_MAAS = 0,
+					LANGUAGE_SKRELLIAN = 0,
+					LANGUAGE_GUTTER = 1,
+					LANGUAGE_SIGN = 0,
+					LANGUAGE_INDEPENDENT = 1,
+					LANGUAGE_SPACER = 1)
 	networks = list(NETWORK_MINE)
 	sprites = list(
 					"Basic" = "Miner_old",
@@ -582,7 +627,6 @@ var/global/list/robot_modules = list(
 	supported_upgrades = list(/obj/item/borg/upgrade/jetpack)
 
 /obj/item/robot_module/miner/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/borg/sight/meson(src)
 	src.modules += new /obj/item/wrench(src)
 	src.modules += new /obj/item/screwdriver(src)
@@ -597,7 +641,25 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/research
 	name = "research module"
-	channels = list("Science" = 1)
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
+	languages = list(
+					LANGUAGE_LOW_GOTHIC = 1,
+					LANGUAGE_HIGH_GOTIC = 1,
+					LANGUAGE_ORKY = 1,
+					LANGUAGE_ELDAR = 1,
+					LANGUAGE_MECHANICUS = 1,
+					LANGUAGE_DARKTONGUE = 1,
+					LANGUAGE_TAU = 1,
+					LANGUAGE_TYRANID = 1,
+					LANGUAGE_SOL_COMMON = 1,
+					LANGUAGE_LUNAR = 1,
+					LANGUAGE_UNATHI = 0,
+					LANGUAGE_SIIK_MAAS = 0,
+					LANGUAGE_SKRELLIAN = 0,
+					LANGUAGE_GUTTER = 1,
+					LANGUAGE_SIGN = 0,
+					LANGUAGE_INDEPENDENT = 1,
+					LANGUAGE_SPACER = 1)
 	networks = list(NETWORK_RESEARCH)
 	sprites = list(
 					"Droid" = "droid-science",
@@ -606,7 +668,6 @@ var/global/list/robot_modules = list(
 					)
 
 /obj/item/robot_module/research/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/portable_destructive_analyzer(src)
 	src.modules += new /obj/item/gripper/research(src)
 	src.modules += new /obj/item/gripper/no_use/loader(src)
@@ -645,7 +706,6 @@ var/global/list/robot_modules = list(
 
 /obj/item/robot_module/syndicate/New(var/mob/living/silicon/robot/R)
 	loc = R
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/melee/energy/sword(src)
 	src.modules += new /obj/item/gun/energy/pulse_rifle/destroyer(src)
 	src.modules += new /obj/item/card/emag(src)
@@ -668,7 +728,6 @@ var/global/list/robot_modules = list(
 	sprites = list("Combat Android" = "droid-combat")
 
 /obj/item/robot_module/security/combat/New()
-	src.modules += new /obj/item/device/flash(src)
 	src.modules += new /obj/item/borg/sight/thermal(src)
 	src.modules += new /obj/item/gun/energy/laser/mounted(src)
 	src.modules += new /obj/item/gun/energy/plasmacutter(src)
@@ -768,8 +827,25 @@ var/global/list/robot_modules = list(
 /obj/item/robot_module/drone/construction
 	name = "construction drone module"
 	hide_on_manifest = 1
-	channels = list("Engineering" = 1)
-	languages = list()
+	channels = list("Mechanicus" = 1, "Guardsmen" = 1, "Imperial" = 1)
+	languages = list(
+					LANGUAGE_LOW_GOTHIC = 1,
+					LANGUAGE_HIGH_GOTIC = 1,
+					LANGUAGE_ORKY = 1,
+					LANGUAGE_ELDAR = 1,
+					LANGUAGE_MECHANICUS = 1,
+					LANGUAGE_DARKTONGUE = 1,
+					LANGUAGE_TAU = 1,
+					LANGUAGE_TYRANID = 1,
+					LANGUAGE_SOL_COMMON = 1,
+					LANGUAGE_LUNAR = 1,
+					LANGUAGE_UNATHI = 0,
+					LANGUAGE_SIIK_MAAS = 0,
+					LANGUAGE_SKRELLIAN = 0,
+					LANGUAGE_GUTTER = 1,
+					LANGUAGE_SIGN = 0,
+					LANGUAGE_INDEPENDENT = 1,
+					LANGUAGE_SPACER = 1)
 
 /obj/item/robot_module/drone/construction/New()
 	src.modules += new /obj/item/rcd/borg(src)
