@@ -20,6 +20,23 @@ I said no!
 */
 
 // Trench recipes
+/datum/recipe/clone
+	reagents = list(/datum/reagent/blood = 5)
+	items = list(
+		/obj/item/organ/internal/brain,
+		/obj/item/organ/internal/eyes,
+		/obj/item/organ/internal/heart,
+		/obj/item/organ/internal/lungs,
+		/obj/item/organ/internal/liver,
+		/obj/item/organ/internal/kidneys,
+		/obj/item/organ/internal/appendix,
+		/obj/item/goldbones,
+		/obj/item/reagent_containers/food/snacks/meat,
+		/obj/item/reagent_containers/food/snacks/meat,
+		/obj/item/reagent_containers/food/snacks/meat
+	)
+	result = /mob/living/simple_animal/vatgrown
+
 /datum/recipe/rat_skewer
 	reagents = list(/datum/reagent/sodiumchloride = 1, /datum/reagent/blackpepper = 1)
 	items = list(
