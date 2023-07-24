@@ -700,10 +700,10 @@
 			"}
 
 /obj/item/book/manual/evaguide
-	name = "ALPHA PRIORIS MESSAGE"
+	name = "ALPHA-PRIORIS MESSAGE"
 	icon_state = "evabook"
 	author = "The Emperor"
-	title = "ALPHA PRIORIS MESSAGE"
+	title = "ALPHA-PRIORIS MESSAGE"
 	dat = {"<html>
 				<head>
 				<style>
@@ -722,7 +722,7 @@
 				
 				<BR><BR>
 
-				<h1>It has come to my attention that some individuals on this planet are capable of procuring specific items from the warp in great quantities. These individuals may bring such objects in to be sold in great quantities and if they do, you have my permission to shoot them in the face repeatedly.</h1>
+				<h1>It has come to my attention that some individuals on this planet are capable of procuring specific items from the warp in great quantities. These individuals may bring such objects in to be sold at great quantities and if they do, you have my permission to shoot them in the face repeatedly.</h1>
 
 				<BR><BR>
 				
