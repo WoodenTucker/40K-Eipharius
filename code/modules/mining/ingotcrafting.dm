@@ -653,7 +653,7 @@
 	if(isAutochisel(W)||isChisel(W))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
-		var/craftingchoices = list("Golden Ring", "Machine Gold",) //lists all possible crafting choices
+		var/craftingchoices = list("Golden Ring", "Machine Gold", "Golden Bones",) //lists all possible crafting choices
 
 
 		var/craftchoice = input("Choose what to craft", "Available crafts") as null|anything in craftingchoices
@@ -672,6 +672,13 @@
 				src.whatwemaking = 2
 				src.ismarked = 1
 				src.name = "Gold Ingot (Machine Gold)"
+				
+			if("Golden Bones")
+				visible_message("[user]'s auto-chisel moves in a blur over [src], morphing the shape and marking it as a future Golden Bones.")
+				playsound(src, 'sound/effects/autochisel.ogg', 100, 1, 1)
+				src.whatwemaking = 3
+				src.ismarked = 1
+				src.name = "Gold Ingot (Golden Bones)"
 
 	if(isLasercutter(W))
 		if(ismarked == 0)
@@ -705,6 +712,17 @@
 					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
 					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+			if(3)
+				if(prob(25))
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] carefully carves the ingot into a blessed unit of Golden Bones! Now take the ingot and dip it into the holy oil!")
+					src.rubtheoils = 1
+					src.name = "Gold Ingot (Carved Golden Bones)"
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
+				else
+					user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+					visible_message("[user] cuts way at the ingot, it will take a few more passes until we're done!")
+					playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 
 
 	if(isHolyoils(W))
@@ -724,6 +742,12 @@
 				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
 				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
 				new /obj/item/stack/material/gold(user.loc,1)
+				qdel(src)
+				return
+			if(3)
+				playsound(src, 'sound/voice/blessing.ogg', 100, 0, 1)
+				visible_message("As the carvings are lathered with the holy oil they begin to take their intended shape!")
+				new /obj/item/goldbones(user.loc)
 				qdel(src)
 				return
 
