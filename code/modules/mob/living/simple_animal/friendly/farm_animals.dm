@@ -404,7 +404,7 @@ var/global/chicken_count = 0
 
 /mob/living/simple_animal/vatgrown
 	name = "Vat-grown human"
-	desc = "Shipped from off-world and marked for experimentation, they have already been lobotomized."
+	desc = "Rapidly grown from a collection of biological material in a cloning vat, they lack any sort of higher brain function and are used for experimentation."
 	icon_state = "vatgrown"
 	icon_living = "vatgrown"
 	icon_dead = "vatgrown_dead"
