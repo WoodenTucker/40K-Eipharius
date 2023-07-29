@@ -85,7 +85,7 @@
 "hH" = (/turf/simulated/wall,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hJ" = (/obj/machinery/light_switch{pixel_x = 28},/obj/machinery/light_switch{pixel_x = 28},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "hZ" = (/obj/structure/grille,/obj/machinery/door/blast/regular{density = 0; dir = 4; icon_state = "pdoor0"; id = "scraplock"; name = "External Blast Doors"; opacity = 0},/obj/structure/window/reinforced{dir = 1},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced,/obj/machinery/door/firedoor,/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
-"ii" = (/obj/effect/decal/cleanable/blood/gibs,/obj/item/remains,/obj/item/stack/thrones/ten,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/theforest)
+"ii" = (/obj/effect/decal/cleanable/blood/gibs,/obj/item/remains,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/oa/theforest)
 "ij" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/device/flashlight/lantern,/turf/simulated/floor/wood{color = "grey"},/area/cadiaoutpost/oa/villageinside)
 "ip" = (/obj/machinery/light_switch{pixel_x = -25},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/sign/deck/first{pixel_x = 32},/turf/simulated/floor/tiled{color = "grey"},/area/cadiaoutpost/gma/inquisitoracolyte)
 "is" = (/obj/structure/flora/tree/snowy,/turf/simulated/floor/snow,/area/cadiaoutpost/oa/theforest)

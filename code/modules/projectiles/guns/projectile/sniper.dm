@@ -102,6 +102,11 @@
 	wielded_item_state = "longlas-wielded"
 	sales_price = 70
 
+	firemodes = list(
+		list(mode_name="semi-automatic", move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
+		list(mode_name="overcharge", move_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
+		)
+
 /obj/item/gun/energy/las/lasgun/longlas/verb/scope()
 	set category = "Object"
 	set name = "Use Scope"
@@ -121,11 +126,6 @@
 	icon_state = "kriegsniper"
 	item_state = "snipeluscius"
 	wielded_item_state = "snipeluscius-wielded"
-
-	firemodes = list(
-		list(mode_name="semi-automatic", move_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=300),
-		list(mode_name="overcharge", fire_delay = 5.5, burst_accuracy=null, dispersion=null, automatic = 0, /obj/item/projectile/energy/las/lasgun/longlas/overcharge, charge_cost=500),
-		)
 
 /obj/item/gun/projectile/thrower
 	name = "Lead Thrower"

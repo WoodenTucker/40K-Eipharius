@@ -2,8 +2,8 @@
 
 /datum/job/envoy
 	title = "Astartes Envoy"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	head_position = 0
 	supervisors = "The Rogue Trader and your Chapter Master"
 	social_class = SOCIAL_CLASS_MAX
@@ -122,12 +122,6 @@
 		"Ultramarine Apothecary" = /decl/hierarchy/outfit/job/astartes/ultrapoth,
 		"Ultramarine Techmarine" = /decl/hierarchy/outfit/job/astartes/ultratech
 		)
-
-/datum/job/envoy/watchman
-	title = "Chaos Astartes"
-	total_positions = 2
-	spawn_positions = 2
-	selection_color = "#373ab6"
 
 //assfartes outfits
 

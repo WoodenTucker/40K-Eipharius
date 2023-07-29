@@ -92,8 +92,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/melee/trench_axe/bspear, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
@@ -113,9 +111,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/melee/sword/sabre, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'>You once were a traveller and a explorer, born with an innate gift for pathfinding and also some very needed strength, after hearing about some kind of temple, you came here to see what it was.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -123,7 +119,7 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
 		if("Penitent")
-			U.add_stats(rand(13,14), rand(13,13), rand(10,14), rand (10,12)) //ex criminal, not fed very well, but random stats
+			U.add_stats(rand(13,17), rand(13,17), rand(12,14), rand (10,12)) //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,10),rand(5,10),rand(5,10),rand(5,10),rand(5,10)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
@@ -145,29 +141,9 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 				//Armor Rolls
 			if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/carapace2, slot_wear_suit)
-			else if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/flak1, slot_wear_suit)
-			else if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/breastplate, slot_wear_suit)
-			else if(prob(25))
 				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
 			else
 				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
-				//Weapon Rolls
-			if(prob(40))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/machinepistol, slot_l_hand)
-			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/shitty/magrave, slot_l_hand)
-			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
-			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered, slot_l_hand)
-			else if(prob(10))
-				equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/m22/combatrifle, slot_l_hand)
-			else
-				equip_to_slot_or_del(new /obj/item/gun/energy/las/laspistol, slot_l_hand)
-				//Back to Hardset Loadout
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
@@ -187,9 +163,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/musichat, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
@@ -207,15 +180,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/material/knife/butch, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/chokha, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/head/pillbox, slot_head)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -223,7 +192,7 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
 		if("Drug Dealer")
-			U.add_stats(rand(13,14), rand(15,16), rand(10,14), rand (17,18)) //good at dodgin them cops!
+			U.add_stats(rand(13,16), rand(15,16), rand(10,14), rand (17,18)) //good at dodgin them cops!
 			U.add_skills(rand(7,9),rand(5,6),rand(3,5),rand(2,3),rand(3,5)) //melee, ranged, med, eng, surgery
 			if(prob(50))
 				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
@@ -236,18 +205,12 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head)
 			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/zoom, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/flame/lighter/zippo, slot_l_store)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from operation to operation you once again find yourself on a new world. You'll do whatever it takes to get rich. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
@@ -284,16 +247,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/head/det, slot_head )
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357/ms, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/a357/ms, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/briefcase/crimekit, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/flame/lighter, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/revolver/messina, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>Sick of the quiet life on your original world, you left your house in search of money. Your skills in the field of forensics managed to get you more money than you could imagine in this new chaotic world.</font></b></span>")
 			U.stat = CONSCIOUS
@@ -307,12 +265,8 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/newore, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/pickaxe/newpick, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/melee/trench_axe/glaive, slot_r_hand)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/miner, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
@@ -336,7 +290,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/gun/energy/las/lasgun, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
@@ -344,7 +297,7 @@ Pilgrim Fate System
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 
 		if("Merchant")
-			U.add_stats(rand(12,14), rand(11,14), rand(15,17), rand (15,16)) // hes really not used to this level of shittery, he can range from weaker than a child to average pea-sent
+			U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16)) // hes really not used to this level of shittery, he can range from weaker than a child to average pea-sent
 			U.add_skills(rand(3,5),rand(5,7),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/head/that, slot_head)
 			if(prob(60))
@@ -355,11 +308,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/leather/tailcoat, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones/five, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones2/ten, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
@@ -376,13 +324,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/leathercoat, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/book/manual, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
 			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/melee/chain/inqcs, slot_belt)
 			to_chat(U,"<span class='notice'><b><font size=3>You are an extremely low-ranking member of the Adeptus Ministorum. You do not reside within the Monasterium, and you must preach to the citizens of Messina. You are extremely skilled in melee, but hate guns.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
@@ -414,7 +360,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You're an up-and-coming entrepreneur on Eipharius. After securing a hefty loan of 700 thrones from the local gang, you now own the local inn. You even had enough cash over to hire a loyal Ogryn to boot. The world is your oyster.. </font></b></span>")
-		
+/*
 /datum/job/innkeeper
 	title = "innkeeper"
 	department_flag = PIL
@@ -440,7 +386,7 @@ Pilgrim Fate System
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>You're an innkeeper hired by the Underboss to keep his new, expensive establishment from collapsing. Sell alcohol, buy crops from the farmer to cook food, keep the place reasonably clean and be ready to duck once the intoxicated gun fights break out.</font></b></span>")
-
+*/
 /datum/job/pathfinder
 	title = "Pathfinder"
 	department_flag = PIL
@@ -759,17 +705,13 @@ Pilgrim Fate System
  //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
 	switch(classchoice)
 		if("Bruiser")
-			U.add_stats(rand(17,20), rand(14,17), rand(17,19), rand (12,16))
+			U.add_stats(rand(14,18), rand(14,17), rand(17,19), rand (12,16))
 			U.add_skills(rand(8,10),rand(5,6),rand(1,3),rand(2,6),rand(1,2)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/goliathplate, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/gangerhelm, slot_head)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/melee/classic_baton/trench_club, slot_belt)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
@@ -783,10 +725,6 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vest/tactical, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/messina, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/c556, slot_in_backpack)
 			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
@@ -797,13 +735,9 @@ Pilgrim Fate System
 			U.add_skills(rand(4,6),rand(4,6),rand(10,10),rand(9,10),rand(10,10)) //melee, ranged, med, eng, surgery
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/belt/medical/full, slot_belt)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch/hud/medical, slot_glasses)
-			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>You're a step above the rest of the dealers when it comes to chemistry. Due to this, you were hired by a local gang after you caught their interest.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS

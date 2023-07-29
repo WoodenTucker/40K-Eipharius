@@ -180,7 +180,7 @@
 	fire_sound='sound/weapons/gunshot/lasgun3.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 68
+	damage = 80
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/longlas
@@ -192,21 +192,12 @@
 	armor_penetration = 10
 	accuracy = 2
 
-/obj/item/projectile/energy/las/lasgun/longlas/krieg
-	name = "lasbolt"
-	fire_sound='sound/weapons/gunshot/lasgun3.ogg'
-	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	icon_state = "lasbolt"
-	damage = 58
-	armor_penetration = 10
-	accuracy = 2
-
 /obj/item/projectile/energy/las/lasgun/longlas/overcharge
 	name = "lasbolt"
 	fire_sound='sound/weapons/gunshot/lasgun4.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	icon_state = "lasbolt"
-	damage = 116
+	damage = 130
 	armor_penetration = 10
 
 /obj/item/projectile/energy/las/lasgun/hotshot
