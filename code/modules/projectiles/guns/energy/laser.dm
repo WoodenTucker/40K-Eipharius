@@ -191,6 +191,7 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
+		list(mode_name="overcharge", fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		)
 
 /obj/item/gun/energy/las/triplex
@@ -218,7 +219,7 @@
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.5, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="3-round bursts", burst=3, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
 		list(mode_name="5-round bursts", burst=5, fire_delay=5, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=80),
-		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=(1), dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=160),
+		list(mode_name="overcharge", burst=1, fire_delay = 3.5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=140),
 		list(mode_name="undercharge", burst=1, fire_delay = 1, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/undercharge, charge_cost=40),
 		)
 
@@ -250,17 +251,23 @@
 	w_class = ITEM_SIZE_LARGE
 	force = 15
 	one_hand_penalty = 1.2
-	fire_delay = 4.5
+	fire_delay = 4
 	accuracy = 0.5
 	move_delay = 3.2
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
 	matter = list(DEFAULT_WALL_MATERIAL = 2000)
-	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius/overcharge
-	charge_cost = 200
+	projectile_type = /obj/item/projectile/energy/las/lasgun/lucius
+	charge_cost = 110
 	cell_type = /obj/item/cell/lasgun
 	ammoType = /obj/item/cell/lasgun
 	wielded_item_state = "luscius-wielded"
-	sales_price = 50
+	sales_price = 40
+
+	firemodes = list(
+		list(mode_name="semi-automatic", fire_delay = 4, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=110),
+		list(mode_name="overcharge", fire_delay = 5, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/lucius/overcharge, charge_cost=200),
+		)
+
 
 /obj/item/gun/energy/las/lasgun/catachan
 	name = "Mark IV Lascarbine"
@@ -286,6 +293,7 @@
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0, charge_cost=60),
 		list(mode_name="3-round bursts", burst=3, fire_delay=4, burst_accuracy=list(0,0,0),       dispersion=null, automatic = 0, charge_cost=60),
+		list(mode_name="overcharge",       burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0, projectile_type=/obj/item/projectile/energy/las/lasgun/overcharge, charge_cost=110),
 		)
 
 /obj/item/gun/energy/las/lasgun/accatran

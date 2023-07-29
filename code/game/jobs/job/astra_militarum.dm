@@ -54,8 +54,8 @@
 
 /datum/job/ig/guardsman
 	title = "Imperial Guardsman"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 3
+	spawn_positions = 3
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	auto_rifle_skill = 8
 	semi_rifle_skill = 8
@@ -108,8 +108,8 @@
 
 /datum/job/ig/whiteshield
 	title = "Imperial Guard Recruit"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	social_class = SOCIAL_CLASS_MED //Guards are at least pretty respected in imperial society
 	outfit_type = /decl/hierarchy/outfit/job/whiteshield
@@ -220,8 +220,8 @@ datum/job/ig/bullgryn
 
 /datum/job/ig/guardsman/sniper
 	title = "Imperial Guard Sniper"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sniper
 	auto_rifle_skill = 7
@@ -341,8 +341,8 @@ datum/job/ig/bullgryn
 	department_flag = SEC
 	social_class = SOCIAL_CLASS_MED
 	can_be_in_squad = TRUE
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	selection_color = "#33813A"
 	economic_modifier = 4

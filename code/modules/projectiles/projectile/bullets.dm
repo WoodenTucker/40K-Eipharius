@@ -675,7 +675,7 @@
 /obj/item/projectile/bullet/ork
 	name = "scrap"
 	fire_sound = 'sound/weapons/gunshot/loudbolt.ogg'
-	damage = 30
+	damage = 35
 
 /*
 
