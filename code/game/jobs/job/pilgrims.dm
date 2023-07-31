@@ -72,6 +72,10 @@ Pilgrim Fate System
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
+	if(inmenu == TRUE)
+		to_chat(src, "<span class='notice'>There is only one fate for you, mortal.</span>")
+		return
+	inmenu = TRUE
 
 	var/mob/living/carbon/human/U = src
 	var/fates = list("Mercenary","Penitent","Nomad","Rat Catcher","Musician","Hunter","Drug Dealer")
@@ -228,6 +232,11 @@ Pilgrim Fate System
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
+	if(inmenu == TRUE)
+		to_chat(src, "<span class='notice'>There is only one fate for you, mortal.</span>")
+		return
+	inmenu = TRUE
+
 
 	var/mob/living/carbon/human/U = src
 	var/fates = list("Merchant","PDF","Miner","Cleric","Private Investigator")
