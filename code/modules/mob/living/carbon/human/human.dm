@@ -9,7 +9,7 @@
 	var/embedded_flag	  //To check if we've need to roll for damage on movement while an item is imbedded in us.
 	var/stealth = FALSE
 	var/scooldown = FALSE
-	var/inmenu = 0 //stop menu spammers
+	var/inmenu = FALSE //used to stop menu spammers in /datum/job/penitent
 	var/can_toggle = 1
 	var/is_toggled = 1 //armblade shit
 	var/gsc = 0 //for cult to hide icon
