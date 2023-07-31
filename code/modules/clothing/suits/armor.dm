@@ -754,8 +754,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/whiteshield
 	name = "Cadian Pattern Conscript Flak Armour - Light"
 	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, issued to the Whiteshields."
-	icon_state = "wshield"
-	item_state = "wshield"
+	icon_state = "fvest"
+	item_state = "fvest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 38, bullet = 38, laser = 35, energy = 20, bomb = 30, bio = 40, rad = 30)
 	sales_price = 12
@@ -1753,8 +1753,8 @@ obj/item/clothing/suit/armor
 /obj/item/clothing/suit/armor/kasrkin
 	name = "Kasrkin Carapace"
 	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
-	icon_state = "kasrkinarmorb"
-	item_state = "kasrkinarmorb"
+	icon_state = "kasrkinarmor"
+	item_state = "kasrkinarmor"
 	armor = list(melee = 50, bullet = 62, laser = 62, energy = 25, bomb = 40, bio = 40, rad = 40)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS|FEET
