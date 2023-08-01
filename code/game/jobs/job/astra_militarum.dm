@@ -667,11 +667,11 @@ datum/job/ig/bullgryn
 /decl/hierarchy/outfit/job/kasrkin
 	name = OUTFIT_JOB_NAME("Kasrkin")
 	uniform = /obj/item/clothing/under/cadian_uniform
-	suit = /obj/item/clothing/suit/armor/kasrkin
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/device/flashlight/lantern
 	gloves = /obj/item/clothing/gloves/combat/cadian
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	suit = /obj/item/clothing/suit/armor/kasrkin
 	head = /obj/item/clothing/head/helmet/kasrkin
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadian
