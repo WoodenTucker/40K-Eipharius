@@ -669,7 +669,7 @@ datum/job/ig/bullgryn
 	uniform = /obj/item/clothing/under/cadian_uniform
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/device/flashlight/lantern
-	gloves = /obj/item/clothing/gloves/combat/cadian
+	gloves = null
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	suit = /obj/item/clothing/suit/armor/kasrkin
 	head = /obj/item/clothing/head/helmet/kasrkin
@@ -679,7 +679,7 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/clothing/gloves/combat/cadian
 	suit_store = /obj/item/gun/energy/las/hotshot //Hotshots are annoyingly common, makes them standout more.
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
