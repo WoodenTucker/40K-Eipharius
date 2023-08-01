@@ -1979,6 +1979,11 @@
 		..()
 		bitesize = 2
 
+/obj/item/reagent_containers/food/snacks/ricepudding/flake
+	name = "Khorne Flakes"
+	desc = "The forbidden breakfast..."
+	nutriment_amt = 8
+
 /obj/item/reagent_containers/food/snacks/pastatomato
 	name = "Spaghetti"
 	desc = "Spaghetti and crushed tomatoes. Just like your abusive father used to make!"

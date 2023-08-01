@@ -492,7 +492,7 @@
 	accuracy = 1
 	sales_price = 26
 
-	caliber = "a763"
+	caliber = "a762"
 	ammo_type = /obj/item/ammo_casing/a762
 	magazine_type = /obj/item/ammo_magazine/a762
 	allowed_magazines = /obj/item/ammo_magazine/a762

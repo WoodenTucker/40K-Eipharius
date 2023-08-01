@@ -2,14 +2,14 @@
 	title = "Pilgrim"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = INFINITY //maybe open up more of these when we figure out other classes and depending on player count
-	spawn_positions = INFINITY
+	total_positions = 15 //maybe open up more of these when we figure out other classes and depending on player count
+	spawn_positions = 15
 	supervisors = "The God Emperor of Mankind"
 	selection_color = "#848484"
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 50
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -38,7 +38,7 @@
 	outfit_type = /decl/hierarchy/outfit/job/penitent
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 30
+	cultist_chance = 20
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -74,7 +74,8 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Mercenary","Penitent","Nomad","Rat Catcher","Musician","Hunter","Drug Dealer")
+	U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
+	var/fates = list("Mercenary","Scum","Nomad","Primitive","Drug Dealer")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -83,139 +84,192 @@ Pilgrim Fate System
  //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
 	switch(classchoice)
 
-		if("Rat Catcher")
-			U.add_stats(rand(13,15), rand(14,16), rand(12,18), rand (12,14)) //ratcatcher has high endurance+dext due to his role in the rat catching, disease chasing society
+		if("Primitive")
 			U.add_skills(rand(5,8),rand(4,6),rand(3,6),rand(2,6),rand(2,6)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/glass_jar, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			to_chat(U,"<span class='notice'><b><font size=3>Your father hunted rats. Your grandfather hunted rats. By the emperor, you're going to hunt some rats. Remember, ratmen don't exist. </font></b></span>")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/glass_jar, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hard_had, slot_head)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
+			if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE VENATOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You have had glimpses of the future, in these waking dreams you see yourself fighting against a terrible foe. A dark and hideous creature, this day will come soon. Train and prepare yourself for this fight, track down the great beasts of the land. You are not hunted. You are the hunter. </font></b></span>")
+				U.add_stats(rand(18,19), rand(14,16), rand(12,18), rand (12,14))
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/exile, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/machete/chopper/heavy/slayer, slot_l_hand) 
+				// new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc) later
+			else if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE MASTER</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are the master of the sewer, ruler of sin, master of your own kingdom. Embrace the dark and grow evil in the deep dark. </font></b></span>")
+				U.add_stats(rand(16,19), rand(16,19), rand(19,21), rand (14,16)) 
+				U.add_skills(rand(5,8),rand(5,6),rand(5,6),rand(2,6),rand(5,6))
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/scum2, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else // Add a fate that is high chance, you are a target of a bounty and give them clothing that cannot be removed which is a criminal marker. Criminal Barcode. Penitent Markings. Penitent Tattoo.
+				to_chat(U,"<span class='danger'><b><font size=4>THE TRIBAL</font></b></span>")
+				U.add_stats(rand(14,17), rand(14,17), rand(12,18), rand (12,14))
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/trench_axe/bspear/hunter, slot_l_hand) 
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a local hunter and tribal from one of the many wandering tribes of Eipharius, you've only recently learned of Low Gothic and are adjusting to imperial rule.. </font></b></span>")
 		if("Nomad")
-			U.add_stats(rand(13,16), rand(12,14), rand(15,16), rand (12,16)) //not good at fighting but very strong when compared to the citizens that werent fed very well
 			U.add_skills(rand(5,8),rand(7,9),rand(5,7),rand(1,3),rand(1,6)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/ushanka2, slot_head)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_belt)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			to_chat(U,"<span class='notice'>You once were a traveller and a explorer, born with an innate gift for pathfinding and also some very needed strength, after hearing about some kind of temple, you came here to see what it was.<b><font size=3>")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/ushanka2, slot_head)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/belt/stalker, slot_belt)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/pillbox, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/chokha, slot_in_backpack) 
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Penitent")
-			U.add_stats(rand(13,17), rand(13,17), rand(12,14), rand (10,12)) //ex criminal, not fed very well, but random stats
+			if(prob(25))
+				to_chat(U,"<span class='danger'><b><font size=4>THE BEAST</font></b></span>")
+				to_chat(U,"<span class='goodmood'>YOU ARE NOT MAN. YOU ARE BEAST MAN. GO OUT INTO WORLD AND DO BEAST THINGS.</font></b></span>")
+				U.add_stats(rand(16,18), rand(12,16), rand(17,18), rand (12,14))
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/trench_axe/bardiche/beast, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/combat_knife/bowie, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bonearmor, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/dragon, slot_in_backpack)
+			else if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You are an operative sent here by your benefactors, mysterious patrons from worlds away to do work that may unlock the final steps to their ultimate plan((A-Help with your idea or even ask for a mission if you can't think of anything.))</font></b></span>")
+				U.add_stats(rand(14,18), rand(15,18), rand(16,17), rand (14,16))
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/talon/renegade, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/plastique, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/grenade/spawnergrenade/manhacks, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE HUNTER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You once were a traveller and a explorer, born with an innate gift for pathfinding and have worked in the past as a guide on your home planet.</font></b></span>")
+				U.add_stats(rand(12,16), rand(14,17), rand(15,16), rand (12,16))
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
+		if("Scum") // Pariah story. The magical 357
+			 //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,10),rand(5,10),rand(5,10),rand(5,10),rand(5,10)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, after committing several horrible crimes to the imperium, you were arrested and imprisoned for years, will you repent for your sins or will you fall to the society surrounding you? The Choice is Yours, My friend.</font></b></span>")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/torch/self_lit, slot_l_hand)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+			if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE OBSCURA DEALER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You're a lowlife obscura dealer, with connections to the local gangs and heretical circles you make a nice living for yourself.</font></b></span>")
+				U.add_stats(rand(13,16), rand(15,16), rand(12,16), rand (17,18))
+				if(prob(50))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+				else if(prob(50))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/blred, slot_w_uniform)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/scum, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/scum, slot_head)
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/pill_bottle/happy, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/pill_bottle/happy, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/pill_bottle/zoom, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones/five, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You are a penitent, after committing several horrible crimes to the imperium, you were arrested and imprisoned for years before being released by the church. As per your punishment you are marked and must take upon the burdens of others to ease your own...</font></b></span>")
+				U.add_stats(rand(16,17), rand(16,17), rand(12,16), rand (10,15))
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/slugrevolver/penitent, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c44, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c44, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/plebhood, slot_head)
 
 		if("Mercenary")
-			U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
-			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(1,3)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-				//Armor Rolls
+			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_belt)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 			if(prob(25))
-				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
+				to_chat(U,"<span class='danger'><b><font size=4>THE PALADIN</font></b></span>")
+				to_chat(U,"<span class='goodmood'>A holy warrior of your chosen god, you work on behalf of the Ecclesiarchy(or the cult) as a slayer of the heretical and unfaithful. Face against the dark and protect your flock... for a price.</font></b></span>")
+				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/trench_axe/glaive/adamantine, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/brigandine, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hero, slot_head)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You are an operative sent here by your benefactors, mysterious patrons from worlds away to do work that may unlock the final steps to their ultimate plan((A-Help with your idea or even ask for a mission if you can't think of anything.))</font></b></span>")
+				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/talon/renegade, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/plastique, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/grenade/spawnergrenade/manhacks, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
 			else
-				equip_to_slot_or_del(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_r_hand)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			to_chat(U,"<span class='notice'><b><font size=3>Brought to this planet in search of work, in your youth you were a guardsman in the Astra Militarum, you've spent the rest of your adulthood as a member of the Imperium's Bounty Hunter guild. Years of experience and hunting have hardened you and made you a force to be reckoned with.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Musician")
-			U.add_stats(rand(15,16), rand(8,16), rand(10,14), rand (12,16)) // roaming musician
-			U.add_skills(rand(6,8),rand(4,8),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/device/violin, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/musician, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/musichat, slot_head)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-
-			to_chat(U,"<span class='notice'><b><font size=3>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different. </font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Hunter")
-			U.add_stats(rand(15,16), rand(16,18), rand(16,18), rand (8,12)) //nice stats, really good at being quick, carrying shit and enduring pain
-			U.add_skills(rand(6,9),rand(7,10),rand(1,2),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/chokha, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/clothing/head/pillbox, slot_head)
-			to_chat(U,"<span class='notice'><b><font size=3>Ever in search of new game to hunt, you travelled to this new world in search of trophy and meat.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Drug Dealer")
-			U.add_stats(rand(13,16), rand(15,16), rand(10,14), rand (17,18)) //good at dodgin them cops!
-			U.add_skills(rand(7,9),rand(5,6),rand(3,5),rand(2,3),rand(3,5)) //melee, ranged, med, eng, surgery
-			if(prob(50))
-				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			else if(prob(50))
-				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian/blred, slot_w_uniform)
-			else
-				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/scum, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/head/scum, slot_head)
-			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/flame/lighter/zippo, slot_l_store)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from operation to operation you once again find yourself on a new world. You'll do whatever it takes to get rich. Scamming, gambling, drug dealing. You are the scum of the Imperium but you wouldn't have it any other way.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+				to_chat(U,"<span class='danger'><b><font size=4>THE BOUNTY HUNTER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>A vicious bounty hunter traveling from system to system in search of their next payday, you live luxuriously only for moments before being plunged back into poverty. Hitching a ride to Eipharius with the last of your thrones, you gamble on the hope of finding work out here.(A-Help if nobody is hiring bounty hunters for a bounty target+pay)</font></b></span>")
+				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (12,15)) //veteran mercenary
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/revolver/mateba, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c50, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c50, slot_in_backpack)
+				if(prob(60))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/bountyhead, slot_head)
+				else if(prob(50))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/carapace3, slot_wear_suit)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/marinehelm, slot_head)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vanpa, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 
 
 /mob/living/carbon/human/proc/citizenclass()
@@ -230,7 +284,8 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
-	var/fates = list("Merchant","PDF","Miner","Cleric","Private Investigator")
+	U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,) //removes verb
+	var/fates = list("Mysterious Citizen","PDF","Miner","Fate Touched","Disgraced Noble")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -239,101 +294,182 @@ Pilgrim Fate System
  //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
 	switch(classchoice)
 
-		if("Private Investigator")
-			U.add_stats(rand(14,16), rand(14,16), rand(12,15), rand (15,17)) //the private investigator's a smart and keen guy, but he aint that big of a bitch in the world cause hes poor
+		if("Mysterious Citizen")
 			U.add_skills(rand(7,10),rand(7,9),rand(2,4),rand(3,4),rand(2,3)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/det/black, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/tduster, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/head/det, slot_head )
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/briefcase/crimekit, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/flame/lighter, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			to_chat(U,"<span class='notice'><b><font size=3>Sick of the quiet life on your original world, you left your house in search of money. Your skills in the field of forensics managed to get you more money than you could imagine in this new chaotic world.</font></b></span>")
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			U.stat = CONSCIOUS
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Miner")
-			U.add_stats(rand(16,18), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(6,8),rand(4,7),rand(3,3),rand(5,6),rand(2,2)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/hard_had, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
-			equip_to_slot_or_del(new /obj/item/pickaxe/newpick, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/miner, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			to_chat(U,"<span class='notice'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
-			U.stat = CONSCIOUS
-			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("PDF")
-			U.add_stats(rand(14,16), rand(10,14), rand(10,14), rand (8,12)) //
-			U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/gloves/thick, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/whiteshield, slot_head)
-			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/whiteshield, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			to_chat(U,"<span class='notice'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
-			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
-			U.stat = CONSCIOUS
-			U.sleeping = 0
-			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Merchant")
-			U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16)) // hes really not used to this level of shittery, he can range from weaker than a child to average pea-sent
-			U.add_skills(rand(3,5),rand(5,7),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/head/that, slot_head)
-			if(prob(60))
-				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian/blred, slot_w_uniform)
+			if(prob(25))
+				to_chat(U,"<span class='danger'><b><font size=4>THE VILLAIN</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You are a villain of Messina and your objective is the spread of fear -- the dead cannot feel terror so keep them alive if you can. Torture and torment -- but never allow an end to their suffering.</font></b></span>")
+				U.add_stats(rand(14,15), rand(18,19), rand(18,21), rand (16,17)) 
+				U.add_skills(rand(7,10),rand(7,9),rand(7,8),rand(3,4),rand(7,8)) //melee, ranged, med, eng, surgery
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/skinning_knife, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/firstaid/surgery, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/gloves/prac_gloves, slot_gloves)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/prac_boots, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/toothpuller, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else if(prob(35))
+				to_chat(U,"<span class='danger'><b><font size=4>THE THIEF</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You are a cunning thief and criminal, work alongside the Gangers to rake in the ultimate score.((Your clothes are chameleon items and can be turned into any disguise you desire))</font></b></span>")
+				U.add_stats(rand(14,16), rand(14,16), rand(12,15), rand (15,17)) 
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/talon/renegade, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/batterer, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/box/syndie_kit/imp_freedom, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/chameleon, slot_head )
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/chameleon, slot_w_uniform)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
 			else
-				equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian/redbl, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/leather/tailcoat, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
-			to_chat(U,"<span class='notice'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the rogue trader and the governor to organize trade and enrich yourself.<b><font size=3>")
+				to_chat(U,"<span class='danger'><b><font size=4>THE INVESTIGATOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'>A private investigator working on behalf of the denizens of Messina, here you ply your trade and rub up against the horrors of imperial life. Every story, every death and tragedy -- decaying your soul into dust.</font></b></span>")
+				U.add_stats(rand(14,16), rand(14,16), rand(12,15), rand (15,17)) 
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/revolver/messina, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/a357/ms, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/a357/ms, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/briefcase/crimekit, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bountyhunter2, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/tduster, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/det, slot_head )
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/fancy/cigarettes/dromedaryco, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/flame/lighter, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/det/black, slot_w_uniform)
+		if("Miner")
+			U.add_stats(rand(16,18), rand(14,16), rand(14,18), rand (12,14)) //
+			U.add_skills(rand(6,8),rand(4,7),rand(3,6),rand(5,6),rand(2,6)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/gloves/thick, slot_gloves)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hard_had, slot_head)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/satchel_eng, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/pickaxe/newpick, slot_l_hand)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/miner, slot_wear_suit)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			to_chat(U,"<span class='danger'><b><font size=4>THE BROKEBACK MINER</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
+			U.stat = CONSCIOUS
+			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+		if("PDF")
+			U.add_stats(rand(14,17), rand(12,17), rand(12,17), rand (12,14)) //
+			U.add_skills(rand(5,7),rand(6,8),rand(3,3),rand(4,5),rand(2,2)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/gloves/thick, slot_gloves)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/whiteshield, slot_head)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/gas/half/cadianrespirator, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/whiteshield, slot_wear_suit)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/cadian, slot_shoes)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/dog_tag/guardsman, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/cell/lasgun, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/cell/lasgun, slot_in_backpack)
+			to_chat(U,"<span class='danger'><b><font size=4>THE ROOKIE</font></b></span>")
+			to_chat(U,"<span class='goodmood'><b><font size=3>Recently enlisted into the Messina PDF, you have yet to be assigned to a unit... still time to run from the Commissar while you can.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-
-		if("Cleric")
-			U.add_stats(rand(16,17), rand(15,17), rand(10,16), rand (12,16)) //hes a cleric, not very strong but just as strong as the average human
+		if("Disgraced Noble")
+			U.add_skills(rand(6,8),rand(4,8),rand(2,8),rand(2,8),rand(2,8)) //melee, ranged, med, eng, surgery
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
+			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			U.stat = CONSCIOUS
+			U.sleeping = 0
+			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+			if(prob(55))
+				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
+				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/culthood/magus, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/cultrobes/magusred, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else if(prob(55))
+				to_chat(U,"<span class='danger'><b><font size=4>THE MERCHANT</font></b></span>")
+				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. You have connectoins to the local gangs and trade guilds, find allies to further your interests in Messina.</font></b></span>")
+				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vest/leather/tailcoat, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones/five, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones2/ten, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE BARD</font></b></span>")
+				to_chat(U,"<span class='goodmood'>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different.</font></b></span>")
+				U.add_stats(rand(15,16), rand(17,18), rand(14,16), rand (12,16)) //
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones/five, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones2/ten, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/musician, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/musichat, slot_head)
+				equip_to_slot_or_store_or_drop(new /obj/item/instrument/guitar, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/violin, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+		if("Fate Touched")
+			U.add_stats(rand(16,17), rand(15,17), rand(10,16), rand (12,16)) 
 			U.add_skills(rand(2,7),rand(5,7),rand(1,6),rand(1,6),rand(1,6)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/chaplain, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/leathercoat, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/book/manual, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/device/flashlight/lantern, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			to_chat(U,"<span class='notice'><b><font size=3>You are an extremely low-ranking member of the Adeptus Ministorum. You do not reside within the Monasterium, and you must preach to the citizens of Messina. You are extremely skilled in melee, but hate guns.</font></b></span>")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/chaplain, slot_w_uniform)
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
+			equip_to_slot_or_store_or_drop(new /obj/item/book/manual, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
+			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
+			if(prob(55))
+				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
+				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/culthood/magus, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/cultrobes/magusred, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE CLERIC</font></b></span>")
+				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the rogue trader and the governor to organize trade and enrich yourself.</font></b></span>")
+				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/knighthosp, slot_wear_suit)
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/chain/inqcs, slot_belt)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hauberk, slot_head)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 
 /datum/job/underboss  //Shrewd businessman
 	title = "Underboss"
@@ -349,12 +485,12 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/underboss
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 5
+	cultist_chance = 100
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,16), rand(13,16), rand(9,12), rand (8,11))
+		H.add_stats(rand(13,19), rand(13,19), rand(12,19), rand (12,19))
 		H.add_skills(rand(7,8),rand(7,9),rand(2,3),2,2) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -391,8 +527,8 @@ Pilgrim Fate System
 	title = "Pathfinder"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
@@ -427,17 +563,17 @@ Pilgrim Fate System
 	outfit_type = /decl/hierarchy/outfit/job/medicae
 	latejoin_at_spawnpoints = TRUE
 	announced = FALSE
-	cultist_chance = 100
+	cultist_chance = 35
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(14,15), rand(16,18), rand (18,22)) //strong stats due to their... interesting fame of being cult leaders
+		H.add_stats(rand(13,15), rand(14,17), rand(16,18), rand (18,22)) //strong stats due to their... interesting fame of being cult leaders
 		H.add_skills(rand(6,8),rand(6,7),rand(8,10),4,rand(8,10)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.assign_random_quirk()
-		to_chat(H, "<span class='notice'><b><font size=3>Barred from practicing medicine on your world of origin you are one of the many pilgrims who have traveled here in search of a new life.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world.</font></b></span>")
 
 
 //loadouts below here
@@ -683,7 +819,6 @@ Pilgrim Fate System
 		to_chat(H, "<span class='notice'><b><font size=3>You left your previous world with a bounty on your head, and now you're in this shit hole with a few like-minded people. The Underboss owes you 700 thrones, see to it that the debt is repaid in full. Mug people, run gambling games, peddle drugs, harvest and sell organs. Get wealth, power and respect at any means necessary or die trying.</font></b></span>")
 
 
-
 /mob/living/carbon/human/proc/gangerclass()
 	set name = "Select your class"
 	set category = "Ganger"
@@ -696,6 +831,7 @@ Pilgrim Fate System
 		return
 
 	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 	var/fates = list("Bruiser","Hitman", "Rogue Doc",)
 
 
@@ -707,25 +843,33 @@ Pilgrim Fate System
 		if("Bruiser")
 			U.add_stats(rand(14,18), rand(14,17), rand(17,19), rand (12,16))
 			U.add_skills(rand(8,10),rand(5,6),rand(1,3),rand(2,6),rand(1,2)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_service, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			to_chat(U,"<span class='notice'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/goliathplate, slot_wear_suit) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/gangerhelm, slot_head) 
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear) 
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back) 
+			equip_to_slot_or_store_or_drop(new /obj/item/melee/classic_baton/trench_club, slot_belt) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+			to_chat(U,"<span class='goodmood'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 		if("Hitman")
-			U.add_stats(rand(14,17), rand(15,17), rand(18,20), rand (14,16)) //ex criminal, not fed very well, but random stats
+			U.add_stats(rand(14,17), rand(15,17), rand(14,16), rand (14,16)) //ex criminal, not fed very well, but random stats
 			U.add_skills(rand(5,6),rand(9,11),rand(2,4),rand(5,10),rand(2,4)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/penitent, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/clothing/suit/storage/vest/tactical, slot_wear_suit)
-			equip_to_slot_or_del(new /obj/item/device/radio/headset/headset_sci, slot_l_ear)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			to_chat(U, "<span class='notice'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/penitent, slot_w_uniform) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/storage/vest/tactical, slot_wear_suit) 
+			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_l_ear) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
+			equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/automatic/machinepistol, slot_l_hand) 
+			equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c556, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c556, slot_in_backpack)
+			to_chat(U, "<span class='goodmood'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
@@ -733,12 +877,17 @@ Pilgrim Fate System
 		if("Rogue Doc")
 			U.add_stats(rand(15,17), rand(12,15), rand(12,15), rand (15,15))
 			U.add_skills(rand(4,6),rand(4,6),rand(10,10),rand(9,10),rand(10,10)) //melee, ranged, med, eng, surgery
-			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
-			equip_to_slot_or_del(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes)
-			equip_to_slot_or_del(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)
-			equip_to_slot_or_del(new /obj/item/clothing/glasses/eyepatch/hud/medical, slot_glasses)
-			to_chat(U,"<span class='notice'><b><font size=3>You're a step above the rest of the dealers when it comes to chemistry. Due to this, you were hired by a local gang after you caught their interest.</font></b></span>")
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform) 
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/belt/medical/full, slot_belt) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/jackboots/pilgrim_boots, slot_shoes) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/clothing/glasses/eyepatch/hud/medical, slot_glasses) 
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/pill_bottle/happy, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/storage/pill_bottle/happy, slot_in_backpack)
+			to_chat(U,"<span class='goodmood'><b><font size=3>You're a step above the rest of the dealers when it comes to chemistry. Due to this, you were hired by a local gang after you caught their interest.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
 			U.sleeping = 0
