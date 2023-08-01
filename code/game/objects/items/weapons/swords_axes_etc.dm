@@ -528,6 +528,21 @@
 	block_chance = 25
 	weapon_speed_delay = 8
 
+/obj/item/melee/sword/machete/chopper/heavy/slayer
+	name = "heavy blessed chopper"
+	desc = "A heavy blessed blade made of xenos alloy, it seems unnaturally heavy."
+	icon_state = "scrapsabre"
+	item_state = "salvagedmachete"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	w_class = ITEM_SIZE_LARGE //if its heavy, its slow!
+	slot_flags = SLOT_BELT
+	str_requirement = 18
+	force = 32
+	force_wielded = 39
+	armor_penetration = 15
+	block_chance = 35
+	weapon_speed_delay = 8
+
 /obj/item/melee/sword/demon
 	name = "demon sword"
 	desc = "The very sight of this blade makes you sick to your stomach."
@@ -609,6 +624,17 @@
 	weapon_speed_delay = 9
 	w_class = ITEM_SIZE_LARGE 
 
+/obj/item/melee/trench_axe/bardiche/beast
+	name = "beastly axe"
+	desc = "A gigantic, powerful, two handed, sharp polearm used for singular felling blows against armored opponents."
+	force = 30
+	force_wielded = 44
+	armor_penetration = 15
+	throwforce = 22
+	block_chance = 24
+	weapon_speed_delay = 8
+	w_class = ITEM_SIZE_LARGE 
+
 /obj/item/melee/trench_axe/bspear
 	name = "hunting spear"
 	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
@@ -623,6 +649,16 @@
 	weapon_speed_delay = 8
 	edge = 0
 	w_class = ITEM_SIZE_LARGE 
+
+/obj/item/melee/trench_axe/bspear/hunter
+	name = "fine hunting spear"
+	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
+	force = 29
+	force_wielded = 33
+	armor_penetration = 22
+	throwforce = 27
+	block_chance = 25
+	weapon_speed_delay = 7
 
 /obj/item/melee/trench_axe/lance
 	name = "fuscina war spear"

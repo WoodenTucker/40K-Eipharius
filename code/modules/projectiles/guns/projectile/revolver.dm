@@ -89,7 +89,7 @@
 	ammo_type = /obj/item/ammo_casing/a357
 
 /obj/item/gun/projectile/revolver/mateba
-	name = "mateba"
+	name = "Mateba Slug Revolver"
 	desc = "The mateba revolver is commonly used by law enforcement and gangers, what it lacks in accuracy it makes up for in sheer firepower."
 	icon_state = "mateba"
 	caliber = ".50"
@@ -155,4 +155,10 @@
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
 	sales_price = 37
 
-
+/obj/item/gun/projectile/slugrevolver/penitent
+	name = "eight thousander"
+	desc = "A custom built .44 slug revolver capable of holding up to 8 shells, it's incredibly heavy in the hand."
+	max_shells = 8
+	force = 15
+	accuracy = 0.8
+	fire_delay= 2.4

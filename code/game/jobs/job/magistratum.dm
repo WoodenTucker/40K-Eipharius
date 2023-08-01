@@ -47,8 +47,8 @@
 	title = "Planetary Investigator"
 	head_position = 1
 	supervisors = "the Lord Governor"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	social_class = SOCIAL_CLASS_HIGH
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/investigator
@@ -89,8 +89,8 @@
 /datum/job/enforcer
 	title = "Enforcer"
 	supervisors = "the Planetary Marshal and Inquisition"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer

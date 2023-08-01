@@ -132,7 +132,7 @@ Mercenary System
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
-
+	src.verbs -= list(/mob/living/carbon/human/proc/mercenaryclass)
 	var/fates = list("Kroot Shaper", "Ork Freeboota", /*"Eldar Corsair"*/)
 
 

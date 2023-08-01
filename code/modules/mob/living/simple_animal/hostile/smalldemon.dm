@@ -6,8 +6,8 @@
 	icon_state = "demon"
 	icon_living = "demon"
 	icon_dead = "demon_dead"
-	maxHealth = 300
-	health = 300
+	maxHealth = 500
+	health = 500
 	universal_speak = 1
 	speak_emote = list("harks")
 	emote_hear = list("growls")
@@ -129,8 +129,8 @@
 	icon_state = "floater"
 	icon_living = "floater"
 	icon_dead = "floater2"
-	maxHealth = 420
-	health = 420
+	maxHealth = 580
+	health = 580
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -167,8 +167,8 @@
 	icon_state = "oormat"
 	icon_living = "oormat"
 	icon_dead = "oormat2"
-	maxHealth = 750
-	health = 750
+	maxHealth = 1150
+	health = 1150
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -205,8 +205,8 @@
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
 	icon_dead = "khorne_daemon_dead_anim"
-	maxHealth = 600
-	health = 600
+	maxHealth = 900
+	health = 900
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -245,8 +245,8 @@
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 500
-	health = 500
+	maxHealth = 640
+	health = 640
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -266,8 +266,8 @@
 	icon_state = "plague"
 	icon_living = "plague"
 	icon_dead = "plague_dead"
-	maxHealth = 400
-	health = 400
+	maxHealth = 600
+	health = 600
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -287,8 +287,8 @@
 	icon_state = "goliath"
 	icon_living = "goliath"
 	icon_dead = "goliath_dead"
-	maxHealth = 550
-	health = 550
+	maxHealth = 650
+	health = 650
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
@@ -314,8 +314,8 @@
 	speak_chance = 75
 	turns_per_move = 50
 	speed = 5
-	maxHealth = 350
-	health = 350
+	maxHealth = 450
+	health = 450
 	response_help  = "pats"
 	response_disarm = "kicks aside"
 	response_harm   = "stomps"
@@ -327,9 +327,9 @@
 
 	var/death_msg = "lets out a waning screech, bursting into a mess of entrails."
 
-	harm_intent_damage = 30
-	melee_damage_lower = 30
-	melee_damage_upper = 30
+	harm_intent_damage = 40
+	melee_damage_lower = 40
+	melee_damage_upper = 40
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/bite.ogg'
 
