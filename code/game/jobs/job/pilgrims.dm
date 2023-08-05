@@ -155,21 +155,27 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bonearmor, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/dragon, slot_in_backpack)
 			else if(prob(35))
-				to_chat(U,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
-				to_chat(U,"<span class='goodmood'>You are an operative sent here by your benefactors, mysterious patrons from worlds away to do work that may unlock the final steps to their ultimate plan((A-Help with your idea or even ask for a mission if you can't think of anything.))</font></b></span>")
+				to_chat(U,"<span class='danger'><b><font size=4>THE EXPLORER</font></b></span>")
+				to_chat(U,"<span class='goodmood'>A skilled explorer of frontier worlds, you've plied your trade aiding the most unsensible of imperials and even xenos survive otherwise suicidal treks into alien worlds. Here you are once again, upon a xenos tainted world likely a few steps from your grave.</font></b></span>")
 				U.add_stats(rand(14,18), rand(15,18), rand(16,17), rand (14,16))
-				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/talon/renegade, slot_l_hand)
-				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/plastique, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/grenade/spawnergrenade/manhacks, slot_r_hand)
-				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
+				if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/las/lasgun/shitty, slot_l_hand)
+				else if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/pulse/pulsepistol, slot_l_hand)
+				else if(prob(10))
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/pulse/plasma/pistol/glock, slot_l_hand)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/las/triplex, slot_l_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/ranger2, slot_wear_suit)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE HUNTER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You once were a traveller and a explorer, born with an innate gift for pathfinding and have worked in the past as a guide on your home planet.</font></b></span>")
 				U.add_stats(rand(12,16), rand(14,17), rand(15,16), rand (12,16))
-				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory, slot_l_hand)
+				if(prob(40))
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory, slot_l_hand)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter, slot_l_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/handful/brifle_handful/ms, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/handful/brifle_handful, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/sherpa, slot_wear_suit)
@@ -329,7 +335,8 @@ Pilgrim Fate System
 				U.add_stats(rand(14,16), rand(14,16), rand(12,15), rand (15,17)) 
 				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/talon/renegade, slot_l_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/device/batterer, slot_r_hand)
+				if(prob(50))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/batterer, slot_r_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/storage/box/syndie_kit/imp_freedom, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/chameleon, slot_head )
@@ -362,8 +369,9 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
-			equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
+			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='danger'><b><font size=4>THE BROKEBACK MINER</font></b></span>")
 			to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many digsites you travelled the galaxy looking for work.</font></b></span>")
 			U.stat = CONSCIOUS
@@ -404,7 +412,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(55))
+			if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
@@ -414,7 +422,7 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-			else if(prob(55))
+			else if(prob(60))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MERCHANT</font></b></span>")
 				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. You have connectoins to the local gangs and trade guilds, find allies to further your interests in Messina.</font></b></span>")
 				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
@@ -452,7 +460,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(55))
+			if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SORCERER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You're a foul sorcerer of chaos magics -- unless you aren't. In which case you're a crackpot. Or are you? Who knows. Best hide your robes unless you want to be shot to pieces though...</font></b></span>")
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
@@ -553,8 +561,8 @@ Pilgrim Fate System
 	title = "Village Medicae"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
@@ -793,8 +801,8 @@ Pilgrim Fate System
 	title = "Ganger"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED //better off than your average gross pilgrim
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	open_when_dead = 0
 	supervisors = "yourself and your fellow gangers"
 	selection_color = "#530606"

@@ -1621,7 +1621,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/scum2
 	name = "Mysterious Garb"
-	desc = "These clothes belong the most mystical of folk."
+	desc = "These clothes belong to the most mystical of folk."
 	icon_state = "gothcoat"
 	item_state = "gothcoat"
 	armor = list(melee = 40, bullet = 39, laser = 44, energy = 25, bomb = 30, bio = 30, rad = 20)

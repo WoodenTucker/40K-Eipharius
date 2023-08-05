@@ -511,8 +511,8 @@
 	icon_state = "rsc"
 	name = "Armageddon Pattern clip"
 	max_ammo = 5
-	caliber = "763"
-	ammo_type = /obj/item/ammo_casing/brifle
+	caliber = "a762"
+	ammo_type = /obj/item/ammo_casing/a762
 
 /obj/item/gun/projectile/automatic/m22/combatrifle // .45 ammo
 	name = "Scipio Pattern Rifle"
