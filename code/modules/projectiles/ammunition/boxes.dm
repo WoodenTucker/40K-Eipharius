@@ -216,7 +216,7 @@
 
 /obj/item/ammo_magazine/a762
 	name = "magazine (7.62mm)"
-	icon_state = "auto_grim"
+	icon_state = "rsc"
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	caliber = "763"
