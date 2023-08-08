@@ -105,18 +105,19 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/exile, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/machete/chopper/heavy/slayer, slot_l_hand) 
-				// new /mob/living/simple_animal/hostile/smalldemon/zygote(src.loc) later
-			else if(prob(35))
+				
+			else if(prob(20))
 				to_chat(U,"<span class='danger'><b><font size=4>THE MASTER</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the master of the sewer, ruler of sin, master of your own kingdom. Embrace the dark and grow evil in the deep dark. </font></b></span>")
 				U.add_stats(rand(16,19), rand(16,19), rand(19,21), rand (14,16)) 
 				U.add_skills(rand(5,8),rand(5,6),rand(5,6),rand(2,6),rand(5,6))
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/scum2, slot_wear_suit)
-				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(5))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 			else // Add a fate that is high chance, you are a target of a bounty and give them clothing that cannot be removed which is a criminal marker. Criminal Barcode. Penitent Markings. Penitent Tattoo.
 				to_chat(U,"<span class='danger'><b><font size=4>THE TRIBAL</font></b></span>")
 				U.add_stats(rand(14,17), rand(14,17), rand(12,18), rand (12,14))
@@ -143,7 +144,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(25))
+			if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE BEAST</font></b></span>")
 				to_chat(U,"<span class='goodmood'>YOU ARE NOT MAN. YOU ARE BEAST MAN. GO OUT INTO WORLD AND DO BEAST THINGS.</font></b></span>")
 				U.add_stats(rand(16,18), rand(12,16), rand(17,18), rand (12,14))
@@ -214,6 +215,8 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(5))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE PENITENT</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are a penitent, after committing several horrible crimes to the imperium, you were arrested and imprisoned for years before being released by the church. As per your punishment you are marked and must take upon the burdens of others to ease your own...</font></b></span>")
@@ -237,7 +240,7 @@ Pilgrim Fate System
 			U.stat = CONSCIOUS
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(25))
+			if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE PALADIN</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A holy warrior of your chosen god, you work on behalf of the Ecclesiarchy(or the cult) as a slayer of the heretical and unfaithful. Face against the dark and protect your flock... for a price.</font></b></span>")
 				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
@@ -248,7 +251,7 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hero, slot_head)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
-			else if(prob(35))
+			else if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are an operative sent here by your benefactors, mysterious patrons from worlds away to do work that may unlock the final steps to their ultimate plan((A-Help with your idea or even ask for a mission if you can't think of anything.))</font></b></span>")
 				U.add_stats(rand(13,17), rand(14,17), rand(14,17), rand (10,12)) //veteran mercenary
@@ -259,6 +262,8 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
+				if(prob(15))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE BOUNTY HUNTER</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A vicious bounty hunter traveling from system to system in search of their next payday, you live luxuriously only for moments before being plunged back into poverty. Hitching a ride to Eipharius with the last of your thrones, you gamble on the hope of finding work out here.(A-Help if nobody is hiring bounty hunters for a bounty target+pay)</font></b></span>")
@@ -311,7 +316,7 @@ Pilgrim Fate System
 			U.verbs -= list(/mob/living/carbon/human/proc/citizenclass,)
 			U.sleeping = 0
 			to_chat(U, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
-			if(prob(25))
+			if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE VILLAIN</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are a villain of Messina and your objective is the spread of fear -- the dead cannot feel terror so keep them alive if you can. Torture and torment -- but never allow an end to their suffering.</font></b></span>")
 				U.add_stats(rand(14,15), rand(18,19), rand(18,21), rand (16,17)) 
@@ -325,8 +330,9 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/toothpuller, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/rank/victorian, slot_w_uniform)
-				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				if(prob(5))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 			else if(prob(35))
@@ -418,7 +424,8 @@ Pilgrim Fate System
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/culthood/magus, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/cultrobes/magusred, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				if(prob(10))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
@@ -466,7 +473,8 @@ Pilgrim Fate System
 				U.add_stats(rand(15,16), rand(14,16), rand(14,18), rand (12,16)) //
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/culthood/magus, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/cultrobes/magusred, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				if(prob(10))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)

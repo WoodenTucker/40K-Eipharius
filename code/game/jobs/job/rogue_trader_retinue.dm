@@ -32,7 +32,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Lord [current_name]") // More ambiguity with who the nobles are. Makes it easier for the RT to also take the throne if they want.
+		H.fully_replace_character_name("[current_name]") // No title testing. 
 		H.add_stats(rand(14,18), rand(14,18), rand(14,18), rand(14,18))
 		H.add_skills(rand(6,10),rand(6,10),rand(5,6),rand(1,8),rand(1,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)

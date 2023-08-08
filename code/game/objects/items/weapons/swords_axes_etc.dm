@@ -155,58 +155,6 @@
 	weapon_speed_delay = 8
 	w_class = ITEM_SIZE_HUGE
 
-/obj/item/melee/trench_axe/glaive // glaive, bone spear, lance, bardiche
-	name = "saintie"
-	desc = "A powerful warglave used for singular felling blows against armored opponents(pronounced san-tee)."
-	icon_state = "glaive"
-	item_state = "spear"
-	wielded_icon = "spear-w"
-	force = 37
-	armor_penetration = 10
-	throwforce = 18
-	block_chance = 40
-	weapon_speed_delay = 11
-	w_class = ITEM_SIZE_HUGE
-
-/obj/item/melee/trench_axe/bardiche
-	name = "bardiche"
-	desc = "A powerful polearm used for singular felling blows against armored opponents."
-	icon_state = "bardiche"
-	item_state = "savaxe"
-	wielded_icon = "savaxe"
-	force = 33
-	armor_penetration = 10
-	throwforce = 15
-	block_chance = 40
-	weapon_speed_delay = 8
-	w_class = ITEM_SIZE_HUGE
-
-/obj/item/melee/trench_axe/bspear
-	name = "hunting spear"
-	desc = "An incredibly lightweight and nimble spear used by hunters against large game animals."
-	icon_state = "bone_spear"
-	item_state = "bone_spear"
-	wielded_icon = "bone_spear-w"
-	force = 26
-	armor_penetration = 10
-	throwforce = 22
-	block_chance = 50
-	weapon_speed_delay = 6
-	throw_speed = 4
-	w_class = ITEM_SIZE_LARGE
-
-/obj/item/melee/trench_axe/lance
-	name = "fuscina lance"
-	desc = "A heavy lance used to attack at a distance with maximum power."
-	icon_state = "lance"
-	item_state = "lance"
-	wielded_icon = "lance-w"
-	force = 42
-	armor_penetration = 20
-	block_chance = 30
-	weapon_speed_delay = 14
-	w_class = ITEM_SIZE_HUGE
-
 /obj/item/melee/sword/commissword/sabre
 	name = "Sabre"
 	desc = "A masteredcrafted sabre of exceptional quality, it has a duelists grip."
@@ -799,6 +747,16 @@
 	force_wielded = 22
 	block_chance = 20
 	weapon_speed_delay = 7
+
+/obj/item/melee/sword/combat_knife/glaive/holy
+	name = "ritual dagger"
+	desc = "A gigantic ritual dagger used in combat by the frateris."
+	icon_state = "glaive-dagger"
+	item_state = "salvagedmachete"
+	color = "#5a611e"
+	force = 22
+	force_wielded = 25
+	block_chance = 25
 
 /obj/item/melee/sword/combat_knife/catachan
 	name = "catachan knife"

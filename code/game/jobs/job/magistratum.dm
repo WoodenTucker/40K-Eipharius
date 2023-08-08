@@ -1,7 +1,7 @@
 // Enforcers
 
 /datum/job/marshal
-	title = "Planetary Marshal"
+	title = "Planetary Marshal" // Corrupted. Cult. Loyal.
 	head_position = 1
 	supervisors = "the Lord Governor"
 	total_positions = 1
@@ -87,7 +87,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You're the local detective, a planetary investigator hired by the Governor to solve crimes. ")
 
 /datum/job/enforcer
-	title = "Enforcer"
+	title = "Enforcer" // Cult. Criminal. Loyal.
 	supervisors = "the Planetary Marshal and Inquisition"
 	total_positions = 2
 	spawn_positions = 2

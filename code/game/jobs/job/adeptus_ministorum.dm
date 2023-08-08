@@ -31,12 +31,14 @@
 		var/current_name = H.real_name
 		..()
 		H.fully_replace_character_name("Deacon [current_name]")
-		H.add_stats(rand(12,14), rand(12,14), rand(9,12), rand(14,18)) //frail and holy
+		H.add_stats(rand(12,16), rand(12,16), rand(12,16), rand(14,18)) //frail and holy
 		H.add_skills(rand(5,10),rand(5,6),rand(5,7),3,rand(4,8))
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+			/mob/living/carbon/human/proc/deaconclass)
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Ecclesiarch Deacon. You are one of the Imperial Cult's priesthood, your oratory skills can stir entire crowds of the faithful and turn a coward into a zealot. You often work on worlds where faith is lacking, and people are rebellious. It is your job to spread the Imperial Cult to this new colony and it's ignorant masses, bringing their backwards beliefs in line with the faith of the God Emperor, as well as guiding the already faithful.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
@@ -170,7 +172,6 @@
 	else
 		O.name = "blessed [O.name]"
 		O.accuracy += 1
-		O.armor_penetration += 1
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
@@ -238,6 +239,8 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 		H.vice = null
+		H.verbs += list(
+			/mob/living/carbon/human/proc/faithleaderclass)
 
 		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of knowledge and piety within The Monastery -- a former sister of battle, organize your sisters and ensure they are doing their duty to both The Deacon and the Codex Sororitas. Ensure your pupils within the Schola are carefully selected for their roles in serving either the military or medical wings of the Sororitas.</font></b></span>")
 
@@ -299,6 +302,8 @@
 		/mob/living/carbon/human/proc/sobtheemperor)
 		H.verbs -= list(/mob/living/carbon/human/verb/emoteemperorprotects)
 		H.vice = null
+		H.verbs += list(
+			/mob/living/carbon/human/proc/faithleaderclass)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose assigned to the Monastary, you serve both the Inquisition and Ecclesiarchy directly, though whom you truly serve is that of The Emperor who stands above all.</font></b></span>")
 
 /datum/job/hospitaller
@@ -335,7 +340,7 @@
 		..()
 		H.fully_replace_character_name("Sister [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
-		H.add_stats(rand(14,18), rand(14,18), rand(10,14), rand(17,18)) //nice stats
+		H.add_stats(rand(14,18), rand(14,18), rand(13,17), rand(17,18)) //nice stats
 		H.add_skills(rand(6,8),rand(6,8),rand(8,10),rand(3,5),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_idcard()?.access = list(access_medical, access_village, access_abbess)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
@@ -347,6 +352,8 @@
 		H.f_style = "shaved"
 		H.h_style = "Bob"
 		H.vice = null
+		H.verbs += list(
+			/mob/living/carbon/human/proc/faithclass)
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are a senior sister of the Ordos Hospitaller, serving under The Deacon/Abbess to maintain the health and divinity of the township.</font></b></span>")
@@ -438,7 +445,116 @@
 
 		to_chat(H, "<span class='notice'><b><font size=3>http://is12wiki.xyz/index.php/Guide_to_Medicine</font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Preacher. You are apart of the Imperial Cult, yet still not apart of the proper priesthood like the Confessor is. It is your job to spread the Truth to this new colony and it's original colonizers, as well as guiding the already faithful.</font></b></span>")
+// CLASSES
+/mob/living/carbon/human/proc/deaconclass()
+	set name = "Select your faith"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
 
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/deaconclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(91))
+				to_chat(U,"<span class='danger'><b><font size=4>THE HOLY DEACON</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Deacon to the flock of the Eipharius colony you are responsible for the survival of faith, to keep the light of holy Terra and the God Emperor shining upon this dark world.</font></b></span>")
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE DEACON OF WOUNDS</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>The corruption has spread to your soul, deep within you a resonance -- a repeating vibration calls upon you to betray all that you have built. To reforge and stitch together a new world from the mangled corpses of the faithful. Lead them to the light, show them their new purpose. </font></b></span>")
+				U.add_stats(rand(14,18), rand(14,18), rand(17,21), rand(14,17))
+				if(prob(50))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/tau, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+
+/mob/living/carbon/human/proc/faithleaderclass()
+	set name = "Select your faith"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/faithleaderclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(80))
+				to_chat(U,"<span class='danger'><b><font size=4>THE SWORD</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are the sword that guards against the warp and seeks out it's destruction. Be wary, for those who battle against the great enemy are cursed to either die... or succumb to it.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/combat_knife/glaive/holy, slot_in_backpack)
+			else if(prob(50))
+				to_chat(U,"<span class='danger'><b><font size=4>THE SHIELD</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are the shield that protects the weak and guards the flame of his Divine Emperor.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/firstaid/combat, slot_in_backpack)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE CORRUPTED</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall bring corruption to it's fiefdoms. Praise the hivemind/cult/cogitae! </font></b></span>")
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+
+/mob/living/carbon/human/proc/faithclass()
+	set name = "Select your faith"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/faithclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+ //10 is base stat, below 12 is child stat, childs are supposed to be somewhere between 6-14 in stats.
+ //skills are between 1-5 for roles that have little to no reason to know something, 5-10 if they are able to naturally learn those skills, 5 is baseline,
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(65))
+				to_chat(U,"<span class='danger'><b><font size=4>THE SWORD</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are the sword that guards against the warp and seeks out it's destruction. Be wary, for those who battle against the great enemy are cursed to either die... or succumb to it.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/combat_knife/glaive/holy, slot_in_backpack)
+			else if(prob(25))
+				to_chat(U,"<span class='danger'><b><font size=4>THE SHIELD</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are the shield that protects the weak and guards the flame of his Divine Emperor.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/storage/firstaid/combat, slot_in_backpack)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE CORRUPTED</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall bring corruption to it's fiefdoms. Praise the hivemind/cult/cogitae! </font></b></span>")
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
 
 // sob outfits
 /decl/hierarchy/outfit/job/sisterofbattle
