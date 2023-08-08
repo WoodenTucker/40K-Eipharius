@@ -72,13 +72,13 @@
 		"Valhallan Ice Warrior" = /decl/hierarchy/outfit/job/guardsman/valhallan,
 		"Mordian Iron Guard" = /decl/hierarchy/outfit/job/guardsman/mordian,
 		)
-	cultist_chance = 20
+	cultist_chance = 4
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(15,17), rand(15,17), rand(15,17), rand (8,14))
 		H.add_skills(rand(6,10),rand(6,10),rand(3,6),rand(4,6),rand(1,6)) //melee, ranged, med, eng, surgery
+		H.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
 		SSwarfare.red.team += H
@@ -89,9 +89,10 @@
 			cultist_chance = 1
 		if(title == "Cadian Guardsman" || "Catachan Jungle Hunter" || "Valhallan Ice Warrior")
 			H.assign_random_quirk()
-			cultist_chance = 20
 		H.assign_random_quirk()
 		H.witchblood()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/guardclass,)
 		H.get_idcard()?.access = list(access_security, access_all_personal_lockers, access_village)
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
@@ -103,7 +104,7 @@
 				if(title == "Valhallan Ice Warrior")
 					H.add_skills(rand(7,9),rand(9,11),rand(3,6),rand(4,6),rand(1,6))
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
-
+		to_chat(H, "<span class='goodmood'>+ You awaken from your slumber... +</span>\n")
 //Whiteshield
 
 /datum/job/ig/whiteshield
@@ -120,7 +121,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 35 // sir what is a heretic
+	cultist_chance = 15 // sir what is a heretic
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -133,6 +134,8 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/guardclass,)
 		to_chat(H, "<span class='notice'><b><font size=3>Conscripts are units within the Imperial Guard that consist of normal Imperial citizens with little or no military training, new Guard recruits who have not yet entered training, children of an already extant regiment's troops or standing Guardsmen who have not yet completed their training. Sometimes, in military emergencies, the Imperium's need for manpower is so great that normal Imperial citizens will simply find themselves conscripted by their local Imperial Guard regiment. </font></b></span>")
 
 //Sharpshooters
@@ -149,7 +152,7 @@
 	shotgun_skill = 8
 	lmg_skill = 10
 	smg_skill = 8
-	cultist_chance = 20 //same chance as sniper now.
+	cultist_chance = 8 //same chance as sniper now.
 	alt_titles = list(
 		"Cadian Plasma Gunner" = /decl/hierarchy/outfit/job/sharpshooter,
 		"Krieg Grenadier" = /decl/hierarchy/outfit/job/sharpshooter/krieg,
@@ -173,6 +176,8 @@
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/veteranclass,)
 		if(title == "Krieg Grenadier")
 			H.set_quirk(new/datum/quirk/brave())
 			H.set_trait(new/datum/trait/death_tolerant())
@@ -230,7 +235,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 25 //snipers have even less chance to be heretics than guardsmen.
+	cultist_chance = 16 
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -240,7 +245,7 @@ datum/job/ig/bullgryn
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(13,15), rand(14,16), rand(14,16), rand (10,16)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
+		H.add_stats(rand(13,15), rand(18,20), rand(14,16), rand (16,20)) //if you are a SNIPA you must be atleast a bit smarter than your average goardsoman
 		H.add_skills(rand(8,10),rand(10,11),rand(3,6),rand(2,5),rand(1,5)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -251,6 +256,8 @@ datum/job/ig/bullgryn
 		H.witchblood()
 		H.vice = null
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_all_personal_lockers, access_village)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/veteranclass,)
 		to_chat(H, "<span class='notice'><b><font size=3>   You are an Imperial Guardsmen selected personally by the Lord Trader to serve as the primary source of manpower and security within their retinue, your services go beyond the wielding of your lasgun and may involve tasks varying from hard labour, exploration and peacekeeping -- up until the point in which it is decided you must lay down your life to protect the citizens of The Imperium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   The Astra Militarum, also known as the Imperial Guard in colloquial Low Gothic, is the largest coherent fighting force in the galaxy. They serve as the Imperium of Man's primary combat force and first line of defence from the myriad threats which endanger the existence of the Human race in the 41st Millennium. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>   There is no universal uniform or regimental command hierarchy in the Astra Militarum, although it is compulsory for every regiment to have at least one commissar to maintain the discipline and morale of the troops while watching for any signs of corruption or heretical taint in the ranks. </font></b></span>")
@@ -279,7 +286,7 @@ datum/job/ig/bullgryn
 	open_when_dead = FALSE
 	selection_color = "#23742a"
 	department_flag = SEC
-	cultist_chance = 10
+	cultist_chance = 4
 	outfit_type = /decl/hierarchy/outfit/job/sergeant
 	alt_titles = list(
 		"Cadian Sergeant" = /decl/hierarchy/outfit/job/sergeant,
@@ -310,6 +317,8 @@ datum/job/ig/bullgryn
 		H.add_skills(rand(9,10),rand(9,10),rand(5,7),5,rand(4,6)) //melee, ranged, med, eng, surgery
 		H.assign_random_quirk()
 		H.witchblood()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/veteranclass)
 		H.set_quirk(new/datum/quirk/tough())
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
@@ -365,7 +374,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 9
 	lmg_skill = 8
 	smg_skill = 9
-	cultist_chance = 20 //this man has seen his comrades die from fucking nurgle rot and revive
+	cultist_chance = 3
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -378,6 +387,8 @@ datum/job/ig/bullgryn
 		H.add_skills(rand(6,10),rand(6,10),rand(8,10),rand(5,6),rand(9,11)) //melee, ranged, med, eng, surgery
 		H.get_equipped_item(slot_s_store)
 		H.assign_random_quirk()
+		H.verbs += list(
+			/mob/living/carbon/human/proc/medicclass)
 		if(title == "Krieg Quartermaster")
 			H.implant_loyalty(src)
 			cultist_chance = 1
@@ -423,7 +434,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 7 //some of 'em betrayed cadia
+	cultist_chance = 1
 
 	equip(var/mob/living/carbon/human/H)
 		..()
@@ -509,11 +520,190 @@ datum/job/ig/bullgryn
 		to_chat(H, "<span class='notice'><b><font size=3>The commissar is empowered to use any means necessary to ensure the loyalty and moral purity of his or her charges, including overriding or even executing a regiment's commanding officer if necessary, and so is regarded with a mixture of fear and admiration by rank-and-file Guardsmen -- and not a few of their officers. Commissars provide the link between regimental officers and the Departmento Munitorum. They are tough, ruthless individuals whose primary responsibilities are to preserve the courage, discipline and loyalty of the regiment. Only a handful of commissars have ever obtained leadership over large Imperial forces as a lord commander, or even a governor militant, such as Yarrick at Armageddon, and only a handful are known to have even retained full command of an entire regiment, such as Colonel-Commissar Ibram Gaunt. All commissars are trained as excellent orators, and often deliver stirring speeches to their regiment or company prior to battle. During battle, the commissar is almost always amongst the front lines, and roars a litany of battle cries and prayers to the Emperor to inspire his troops to battle. </font></b></span>")
 		to_chat(H, "<span class='notice'><b><font size=3>(READ THIS) Your role like any others is to make the round more interesting, you will be punished if you metagame lateparties, murder allied characters without good reason OR force people to stay in trenches all game. </font></b></span>")
 
+// CLASSES
+/mob/living/carbon/human/proc/guardclass()
+	set name = "Select your class"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/guardclass,) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(30))
+				to_chat(U,"<span class='danger'><b><font size=4>THE VETERAN</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many campaigns, you've experienced the horrors of the warp and the alien.</font></b></span>")
+				U.add_stats(rand(16,18), rand(16,18), rand(13,17), rand (12,16))
+				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/bolter_pistol, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/accessory/medal/silver/Administratum, slot_in_backpack)
+				
+			else if(prob(8))
+				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
+				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
+				if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE FORSAKEN</font></b></span>") 
+				U.add_stats(rand(15,18), rand(15,18), rand(15,18), rand (12,16))
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/smokable/cigarette/cigar, slot_l_hand) 
+				if(prob(35))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/hjacket, slot_in_backpack)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/towntrench, slot_in_backpack)
+				if(prob(15))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/accessory/medal/bronze/Administratum, slot_in_backpack)
+				if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/multitool/hacktool, slot_r_hand)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/smokable/cigarette/cigar, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey, slot_in_backpack)
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
+
+
+
+/mob/living/carbon/human/proc/veteranclass()
+	set name = "Select your class"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/veteranclass,) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(60))
+				to_chat(U,"<span class='danger'><b><font size=4>HERO OF THE IMPERIUM</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A veteran of many campaigns, you've experienced the horrors of the warp and the alien.</font></b></span>")
+				if(prob(60))
+					equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/revolver/mateba, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c50/ap, slot_in_backpack)
+				if(prob(60))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/accessory/medal/gold/Administratum, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/accessory/medal/silver/Administratum, slot_in_backpack)
+				
+			else if(prob(6))
+				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+				if(prob(50))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+			else 
+				to_chat(U,"<span class='danger'><b><font size=4>THE SURVIVOR</font></b></span>") 
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are one of many untold trillions of Guardsmen taken from your homeworld and pressed into service to the meatgrinder that is the Astra Militarum. As a result of the mind numbing horrors of war, you have taken to... interesting vices to survive your many years of service.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones2/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/smokable/cigarette/cigar, slot_in_backpack) 
+				if(prob(40))
+					equip_to_slot_or_store_or_drop(new /obj/item/storage/pill_bottle/happy, slot_in_backpack) 
+				if(prob(10))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/ranger2, slot_in_backpack)
+				if(prob(10))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/towntrench, slot_in_backpack)
+				if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/accessory/medal/silver/Administratum, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/accessory/medal/bronze/Administratum, slot_in_backpack)
+				if(prob(45))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/multitool/hacktool, slot_r_hand)
+				if(prob(45))
+					equip_to_slot_or_store_or_drop(new /obj/item/plastique, slot_in_backpack)
+				if(prob(35))
+					equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey, slot_in_backpack)
+				
+
+
+/mob/living/carbon/human/proc/medicclass()
+	set name = "Select your class"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/medicclass,) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(87))
+				to_chat(U,"<span class='danger'><b><font size=4>THE MEDICAE</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>An experienced medicae practitioner you were selected from your homeworld to serve as the very lifeblood of the guard.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/combatpain, slot_in_backpack)
+				if(prob(13))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/scum2, slot_in_backpack)
+				if(prob(14))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_in_backpack)
+			else if(prob(6))
+				to_chat(U,"<span class='danger'><b><font size=4>THE TRAITOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons unknown to you now, shall be it's destruction. Praise the hivemind/cult/cogitae!</font></b></span>")
+				U.add_stats(rand(13,17), rand(16,18), rand(16,18), rand (12,20))
+				if(prob(30))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/combatpain, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/death, slot_in_backpack)
+				if(prob(15))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/scum2, slot_in_backpack)
+				if(prob(15))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+			else 
+				to_chat(U,"<span class='danger'><b><font size=4>THE TROUBLED DOCTOR</font></b></span>") 
+				to_chat(U,"<span class='goodmood'><b><font size=3>Years of exposure to the practices of medicine, the horrors of chaos plagues and the concoctions of the sanguinary worlds has driven you mad. Express your madness, let the world know what the rot has done to you!</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+				equip_to_slot_or_store_or_drop(new /obj/item/clothing/mask/smokable/cigarette/cigar, slot_in_backpack) 
+				if(prob(35))
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/scum2, slot_in_backpack)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_in_backpack)
+				if(prob(100))
+					equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/mindbreaker, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/death, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/tau, slot_in_backpack)
+					equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/drinks/bottle/specialwhiskey, slot_in_backpack)
+
 // Outfits
-
-// IG Outfits
-
-// Whiteshield
 
 /decl/hierarchy/outfit/job/whiteshield
 	name = OUTFIT_JOB_NAME("Imperial Guard Whiteshield")

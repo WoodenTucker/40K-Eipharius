@@ -1,7 +1,7 @@
 // Interrogator
 
 /datum/job/acolyte
-	title = "Interrogator"
+	title = "Interrogator" // PLAN: Servant of another. Loyalist. Usurper.
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MIN
 	total_positions = 1
@@ -37,6 +37,8 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition)
 		H.adjustStaminaLoss(-INFINITY)
 		H.vice = null
+		H.verbs += list(
+			/mob/living/carbon/human/proc/intclass)
 		H.say(":i [title] &(47*TECHNICA)Z(INQ)... transponder signal active.")
 		to_chat(H, "<span class='notice'><b><font size=3> You are an interrogator, the apprentice of, the Lord Inquisitor. It is not uncommon for Interrogators' to work undercover or incognito. Your task is to assist the Lord Inquisitor in investigating, neutralizing and erasing traces of heresy, chaos, xenos and daemons. Now more then ever your actions are being weighed by not only your master, but the inquisition - this mission is the last opportunity to clear the names of not only the Lord Inquisitor but that of his entire retinue...</font></b></span>")
 
@@ -48,7 +50,7 @@
 // Inquisitor
 
 /datum/job/inquisitor
-	title = "Inquisitor"
+	title = "Inquisitor" // PLAN: Renegade. Cult. Loyalist.
 	department_flag = INQ
 	social_class = SOCIAL_CLASS_MIN
 	total_positions = 0
@@ -85,6 +87,8 @@
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_inquisition, access_inquisition_fancy)
 		H.inquisitor = 1
 		H.adjustStaminaLoss(-INFINITY)
+		H.verbs += list(
+			/mob/living/carbon/human/proc/inqclass)
 		H.say(":i [title] &(47*TECHNICA)Z(INQ)... transponder signal active.")
 		H.vice = null
 		to_chat(H, "<span class='notice'><b><font size=3>You are extremis diabolus, an inquisitor in service to the Ordos that has been considered for reasons up to you, a liability to the inquisition. Every person, asset and object on this planet is a tool or resource to be exploited. Humiliation, torture and the dull thud of a bolt pistol is what awaits you in failure should you not prove yourself here. Your acolytes personally selected to serve only you, whether they survive the horrid taint associated with your name and rise to the ranks of Inquisitor shall be determined in the coming weeks.</font></b></span>")
@@ -94,6 +98,76 @@
 	if(.)
 		H.implant_loyalty(H)
 
+
+// CLASSES
+/mob/living/carbon/human/proc/inqclass()
+	set name = "Select your class"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/inqclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(70))
+				to_chat(U,"<span class='danger'><b><font size=4>THE INQUISITOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal inquisitor to The Imperium, you've managed to avoid death by the heretic and even execution at the hands of your own Inquisiton for what feels like multiple lifetimes. </font></b></span>")
+				
+			else if(prob(15))
+				to_chat(U,"<span class='danger'><b><font size=4>THE RENEGADE</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are traitorus diabolus as a result of your decisions, whether you truly are corrupted or loyal to The God Emperor is still debated by many of your peers. But regardless judgement has been made and you are now hunted by your fellow inquisitors, whether you will embrace your judgemenet or fight against it is your own decision.</font></b></span>")
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE BETRAYER</font></b></span>") 
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are an agent working on behalf of another ideology of your choosing, in allegiance with them against The God Emperor you plot to the Imperium's ultimate demise. While the end of imperial rule on this planet may be beneficial, it is only one world -- so you must plan ahead to the ending of... every imperial world.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)
+
+
+/mob/living/carbon/human/proc/intclass()
+	set name = "Select your class"
+	set category = "The Imperium"
+	set desc = "Roll the dice and discover a new story."
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
+		return
+
+	var/mob/living/carbon/human/U = src
+	U.verbs -= list(/mob/living/carbon/human/proc/intclass) //removes verb
+	var/fates = list("ROLL THE DICE!")
+
+
+	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
+
+
+	switch(classchoice)
+
+		if("ROLL THE DICE!")
+			if(prob(90))
+				to_chat(U,"<span class='danger'><b><font size=4>THE INTERROGATOR</font></b></span>")
+				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal interrogator to The Imperium and your Inquisitor, you've managed to avoid death by the heretic and have yet to be discarded by your master. In time you may attain the rank of Inquisitor. </font></b></span>")
+			else
+				to_chat(U,"<span class='danger'><b><font size=4>THE BETRAYER</font></b></span>") 
+				to_chat(U,"<span class='goodmood'><b><font size=3>You are an agent working on behalf of another ideology of your choosing, in allegiance with them against The God Emperor you plot to the Imperium's ultimate demise. While the end of imperial rule on this planet may be beneficial, it is only one world -- so you must plan ahead to the ending of... every imperial world.</font></b></span>")
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
+				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
+					deity.add_cultist(U)		
 
 // inq outfits
 /decl/hierarchy/outfit/job/interrogator
