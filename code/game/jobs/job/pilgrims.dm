@@ -116,6 +116,12 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(3))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
+				if(prob(5))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 				if(prob(5))
 					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 			else // Add a fate that is high chance, you are a target of a bounty and give them clothing that cannot be removed which is a criminal marker. Criminal Barcode. Penitent Markings. Penitent Tattoo.
@@ -227,6 +233,8 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c44, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/raggedrobe, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/plebhood, slot_head)
+				if(prob(25))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 
 		if("Mercenary")
 			U.add_skills(rand(7,10),rand(8,10),rand(3,6),rand(2,4),rand(2,6)) //melee, ranged, med, eng, surgery
@@ -251,6 +259,8 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hero, slot_head)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(45))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 			else if(prob(15))
 				to_chat(U,"<span class='danger'><b><font size=4>THE OPERATIVE</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are an operative sent here by your benefactors, mysterious patrons from worlds away to do work that may unlock the final steps to their ultimate plan((A-Help with your idea or even ask for a mission if you can't think of anything.))</font></b></span>")
@@ -262,6 +272,12 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/ammo_casing/c45/ap, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/armoredtrench, slot_wear_suit)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
+				if(prob(3))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 				if(prob(15))
 					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 			else
@@ -281,6 +297,10 @@ Pilgrim Fate System
 					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vanpa, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				if(prob(15))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
+				if(prob(3))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 
 
 /mob/living/carbon/human/proc/citizenclass()
@@ -335,6 +355,12 @@ Pilgrim Fate System
 					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(1))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
+				if(prob(3))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 			else if(prob(35))
 				to_chat(U,"<span class='danger'><b><font size=4>THE THIEF</font></b></span>")
 				to_chat(U,"<span class='goodmood'>You are a cunning thief and criminal, work alongside the Gangers to rake in the ultimate score.((Your clothes are chameleon items and can be turned into any disguise you desire))</font></b></span>")
@@ -349,6 +375,10 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/under/chameleon, slot_w_uniform)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(1))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(5))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE INVESTIGATOR</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A private investigator working on behalf of the denizens of Messina, here you ply your trade and rub up against the horrors of imperial life. Every story, every death and tragedy -- decaying your soul into dust.</font></b></span>")
@@ -441,6 +471,12 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE BARD</font></b></span>")
 				to_chat(U,"<span class='goodmood'>A wandering bard you find yourself moving from tavern to tavern entertaining the masses for a few thrones at a time. This planet will surely be no different.</font></b></span>")
@@ -480,12 +516,13 @@ Pilgrim Fate System
 					deity.add_cultist(U)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE CLERIC</font></b></span>")
-				to_chat(U,"<span class='goodmood'>Guided by your lust for thrones you smelled opportunity on this newly founded world. Work with the rogue trader and the governor to organize trade and enrich yourself.</font></b></span>")
+				to_chat(U,"<span class='goodmood'>Banish the heretic and redeem this world.</font></b></span>")
 				U.add_stats(rand(14,15), rand(14,15), rand(15,17), rand (15,16))
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/knighthosp, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/melee/chain/inqcs, slot_belt)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hauberk, slot_head)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 
 /datum/job/underboss  //Shrewd businessman
 	title = "Underboss"
