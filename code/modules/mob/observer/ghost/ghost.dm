@@ -575,6 +575,12 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	else if(!MayRespawn(1, config.respawn_delay))
 		return
 
+	if (src.isreadied == 1) //Kicks ghosts out of lateparty queue
+		src.isreadied = 0
+	//	to_chat(src,"<span class='warning'><b><font size=3>You leave the queue for the late party!</b></font size=3>")
+		GLOB.daparty -= usr.key
+		src.say("I'm leaving the party [GLOB.daparty.len]/[GLOB.partysize] are ready!")
+
 	client?.color = null
 	to_chat(usr, "You can respawn now, enjoy your new life!")
 	to_chat(usr, "<span class='notice'><B>Make sure to play a different character, and please roleplay correctly!</B></span>")
@@ -596,6 +602,12 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!istype(mob_to_take))
 		to_chat(usr, SPAN_WARNING("Invalid target."))
 		return
+
+	if (src.isreadied == 1) //Kicks ghosts out of lateparty queue
+		src.isreadied = 0
+	//	to_chat(src,"<span class='warning'><b><font size=3>You leave the queue for the late party!</b></font size=3>")
+		GLOB.daparty -= usr.key
+		src.say("I'm leaving the party [GLOB.daparty.len]/[GLOB.partysize] are ready!")
 
 	mob_to_take.take_over(usr)
 
