@@ -472,6 +472,10 @@
 			if(prob(91))
 				to_chat(U,"<span class='danger'><b><font size=4>THE HOLY DEACON</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Deacon to the flock of the Eipharius colony you are responsible for the survival of faith, to keep the light of holy Terra and the God Emperor shining upon this dark world.</font></b></span>")
+				if(prob(4))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(3))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE DEACON OF WOUNDS</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>The corruption has spread to your soul, deep within you a resonance -- a repeating vibration calls upon you to betray all that you have built. To reforge and stitch together a new world from the mangled corpses of the faithful. Lead them to the light, show them their new purpose. </font></b></span>")
@@ -481,6 +485,12 @@
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/tau, slot_in_backpack)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
+				if(prob(8))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+				if(prob(2))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/inquisition, slot_in_backpack)
+				if(prob(6))
+					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
 
 /mob/living/carbon/human/proc/faithleaderclass()
 	set name = "Select your faith"
