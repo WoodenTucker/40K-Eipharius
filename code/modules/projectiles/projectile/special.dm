@@ -162,7 +162,7 @@
 		if (ishuman(M))
 			var/mob/living/carbon/human/H = M
 			if (prob (33))
-				playsound(loc, "stab_sound", 50, TRUE)
+				playsound(loc, "stab_sound", 60, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
@@ -171,7 +171,7 @@
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
 			else if (prob (33))
-				playsound(loc, "stab_sound", 50, TRUE)
+				playsound(loc, "stab_sound", 80, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
@@ -180,7 +180,7 @@
 				H.updatehealth()
 				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
 			else
-				playsound(loc, "stab_sound", 50, TRUE)
+				playsound(loc, "stab_sound", 100, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
@@ -194,14 +194,14 @@
 	if(ismob(AM))
 		var/mob/M = AM
 		if (ishuman(M))
-			if(prob(25))
+			if(prob(75))
 				M.visible_message("<span class='danger'>[M] struggle to free themselves from the barbed teeth!</span>")
 				var/mob/living/carbon/human/H = M
 				playsound(loc, "stab_sound", 50, TRUE)
 				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
 				if (affecting.status & ORGAN_ROBOT)
 					return
-				if (affecting.take_damage(18, FALSE))
+				if (affecting.take_damage(8, FALSE))
 					H.UpdateDamageIcon()
 				H.updatehealth()
 				return FALSE
@@ -210,8 +210,77 @@
 				return TRUE
 	return ..()
 
-/// FLAMER FIRE
+// FLOWER
+/*
+/obj/fleshkitten
+	name = "flesh thing"
+	desc = "..."
+	anchored = 1
+	mouse_opacity = 0
+	icon = 'icons/cadia-sprites/migrated2/things2.dmi
+	icon_state = "kitten"
+	layer = ABOVE_OBJECT_LAYER
+	density = 1
+	var/health = 100
+	var/maxhealth = 100
 
+/obj/fleshpole/attackby(obj/item/W as obj, mob/user as mob)
+	user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+		switch(W.damtype)
+			if("fire")
+				src.health -= W.force * 1
+			if("brute")
+				src.health -= W.force * 0.75
+			else
+		if (src.health <= 10)
+			visible_message("<span class='danger'>The flesh thing dies!</span>")
+			density = 0
+			icon_state = "dead_kitten"
+			qdel(src)
+			return
+		..()
+	
+
+	if(icon_state = "dead_kitten")
+
+/obj/fleshkitten/Crossed(mob/living/M) //Only way to get it to reliable do it when you walk into it.
+	if(istype(M))
+		if(istype(H.wear_suit, /obj/item/clothing/suit/fire) || istype(H.wear_suit, /obj/item/clothing/suit/armor/astartes) || istype(H.wear_suit, /obj/item/clothing/suit/sisterofbattle) || istype(H.wear_suit, /obj/item/clothing/suit/armor/ordohereticus))
+				H.show_message(text("Your suit protects you from the flesh tendrils."),1)
+				return
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+			if (prob (80))
+				playsound(loc, "sound/effects/gore/severed.ogg", 100, TRUE)
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(4, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+				to_chat(H, "<span class = 'red'><b>Your [affecting.name] gets bitten by \the [src]!</b></span>")
+		
+/obj/fleshkitten/Uncross(AM as mob)
+	if(ismob(AM))
+		var/mob/M = AM
+		if (ishuman(M))
+			if(prob(95))
+				M.visible_message("<span class='danger'>[M] struggle to free themselves from the barbed teeth!</span>")
+				var/mob/living/carbon/human/H = M
+				playsound(loc, "sound/effects/gore/severed.ogg", 50, TRUE)
+				var/obj/item/organ/external/affecting = H.get_organ(pick("l_foot", "r_foot", "l_leg", "r_leg"))
+				if (affecting.status & ORGAN_ROBOT)
+					return
+				if (affecting.take_damage(4, FALSE))
+					H.UpdateDamageIcon()
+				H.updatehealth()
+				return FALSE
+			else
+				M.visible_message("<span class='danger'>[M] frees themself from the tendrils!</span>")
+				return TRUE
+	return ..()
+// make code for someone helping you out and for kitten being dead.
+*/
 /// FLAMER FIRE
 
 /obj/flamer_fire
