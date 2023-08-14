@@ -14,7 +14,7 @@
 
 /obj/item/gun/projectile/pistol/pewter
 	name = "Messina Pattern stub pistol"
-	desc = "The locally made pattern is chambered in 9mm and is more reliable in it's handling than other makeshift 9mm stub pistols. "
+	desc = "The locally made pattern is chambered in .45 and is more reliable in it's handling than other makeshift .45 stub pistols. "
 	icon_state = "handgun7"
 	item_state = "pistol"
 	w_class = ITEM_SIZE_NORMAL
@@ -36,7 +36,7 @@
 
 /obj/item/gun/projectile/pistol/kieji
 	name = "Kieji stub pistol"
-	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
+	desc = "Barely even a standard template, the .45 Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable."
 	icon_state = "kieji"
 	item_state = "pistol"
 	ammo_type = /obj/item/ammo_casing/c45
@@ -56,7 +56,7 @@
 
 /obj/item/gun/projectile/pistol/kieji/snub
 	name = "Snub nosed Kieji"
-	desc = "Barely even a standard template, the 9mm Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
+	desc = "Barely even a standard template, the .45 Kieji are manufactured in many different ways. But there are always constants: It will be inaccurate, and unreliable. This varient is purposed for a faster firing rate, at the cost of accuracy."
 	icon_state = "kiejistub"
 	item_state = "pistol"
 
