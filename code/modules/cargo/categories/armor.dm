@@ -118,17 +118,17 @@
 
 /datum/cargo_entry/armor/necroparmor
 	name = "Necromunda Power Armor"
-	cost = 270
+	cost = 300
 	item_path = /obj/item/clothing/suit/armor/vanpa
 
 /datum/cargo_entry/armor/renpa
 	name = "Renegade Power Armor"
-	cost = 295
+	cost = 365
 	item_path = /obj/item/clothing/suit/armor/rpowerarmor
 
 /datum/cargo_entry/armor/mechpa
 	name = "Runic Power Armor"
-	cost = 315
+	cost = 325
 	item_path = /obj/item/clothing/suit/armor/greypa
 
 /datum/cargo_entry/armor/helmet

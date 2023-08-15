@@ -878,11 +878,11 @@ var/list/floor_decals = list()
 /obj/effect/floor_decal/turf/necro1
 	name = "infestation"
 	icon_state = "necro1"
-
+/*
 /obj/effect/floor_decal/turf/necro2
 	name = "horrific infestation"
 	desc = "You notice sharp teeth beneath it's flesh."
-	icon_state = "necro2"
+	icon_state = "necro2" */
 
 /obj/effect/floor_decal/turf/oldsmoothdirt
 	name = "dirt floor"

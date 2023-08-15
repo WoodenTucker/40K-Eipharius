@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/alien
-	name = "alien hunter"
+	name = "tyranid gaunt"
 	desc = "Hiss!"
 	icon = 'icons/mob/alien.dmi'
 	icon_state = "alienh_running"
@@ -9,13 +9,14 @@
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = -1
+	speed = 2
+	resistance = 2
 	meat_type = /obj/item/reagent_containers/food/snacks/xenomeat
-	maxHealth = 100
-	health = 100
-	harm_intent_damage = 5
-	melee_damage_lower = 25
-	melee_damage_upper = 25
+	maxHealth = 500
+	health = 500
+	harm_intent_damage = 55
+	melee_damage_lower = 55
+	melee_damage_upper = 55
 	attacktext = "slashed"
 	a_intent = I_HURT
 	attack_sound = 'sound/weapons/bladeslice.ogg'
@@ -27,16 +28,17 @@
 	status_flags = CANPUSH
 	minbodytemp = 0
 	heat_damage_per_tick = 20
+	move_to_delay = 3
 
 
 /mob/living/simple_animal/hostile/alien/drone
-	name = "alien drone"
+	name = "tyranid gaunt"
 	icon_state = "aliend_running"
 	icon_living = "aliend_running"
 	icon_dead = "aliend_dead"
-	health = 60
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	health = 400
+	melee_damage_lower = 45
+	melee_damage_upper = 45
 
 /mob/living/simple_animal/hostile/alien/drone/ux
 	name = "unidentified xeno"
@@ -46,43 +48,43 @@
 
 
 /mob/living/simple_animal/hostile/alien/sentinel
-	name = "alien sentinel"
+	name = "tyranid termagaunt"
 	icon_state = "aliens_running"
 	icon_living = "aliens_running"
 	icon_dead = "aliens_dead"
-	health = 120
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	health = 400
+	melee_damage_lower = 45
+	melee_damage_upper = 45
 	ranged = 1
 	projectiletype = /obj/item/projectile/neurotox
 	projectilesound = 'sound/weapons/pierce.ogg'
 
 
 /mob/living/simple_animal/hostile/alien/queen
-	name = "alien queen"
+	name = "tyranid lictor"
 	icon_state = "alienq_running"
 	icon_living = "alienq_running"
 	icon_dead = "alienq_dead"
-	health = 250
-	maxHealth = 250
-	melee_damage_lower = 15
-	melee_damage_upper = 15
+	health = 1150
+	maxHealth = 1150
+	melee_damage_lower = 85
+	melee_damage_upper = 85
 	ranged = 1
-	move_to_delay = 3
+	move_to_delay = 2
 	projectiletype = /obj/item/projectile/neurotox
 	projectilesound = 'sound/weapons/pierce.ogg'
 	rapid = 1
 	status_flags = 0
 
 /mob/living/simple_animal/hostile/alien/queen/large
-	name = "alien empress"
+	name = "tyranid carnifex"
 	icon = 'icons/mob/alienqueen.dmi'
 	icon_state = "queen_s"
 	icon_living = "queen_s"
 	icon_dead = "queen_dead"
 	move_to_delay = 4
-	maxHealth = 400
-	health = 400
+	maxHealth = 2500
+	health = 2500
 
 /obj/item/projectile/neurotox
 	damage = 30

@@ -77,7 +77,7 @@
 	vision_flags = SEE_TURFS
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	electric = 1
-	sales_price = 5
+	sales_price = 0
 
 /obj/item/clothing/glasses/science/magos
 	name = "magos goggles"
@@ -128,7 +128,7 @@
 	action_button_name = "Toggle Goggles"
 	toggleable = 1
 	electric = 1
-	sales_price = 5
+	sales_price = 0
 
 /obj/item/clothing/glasses/science/New()
 	..()
@@ -165,7 +165,7 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	off_state = "blacksun"
 	electric = 1
-	sales_price = 40
+	sales_price = 20
 	flash_protection = FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/glasses/blacksun/skitarii
@@ -237,7 +237,7 @@
 	toggleable = 1
 	vision_flags = SEE_OBJS
 	electric = 1
-	sales_price = 15
+	sales_price = 0
 
 /obj/item/clothing/glasses/regular
 	name = "prescription glasses"
@@ -613,7 +613,7 @@
 	siemens_coefficient = 0.9
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
-	sales_price = 50
+	sales_price = 30
 	flash_protection =  FLASH_PROTECTION_MAJOR
 
 /obj/item/clothing/glasses/astartes/visor/apoth
@@ -629,7 +629,7 @@
 	siemens_coefficient = 0.9
 	unacidable = 1
 	species_restricted = list(SPECIES_ASTARTES)
-	sales_price = 60
+	sales_price = 40
 
 /obj/item/clothing/glasses/cadian
 	name = "Mark XIIc Visor"
@@ -640,7 +640,7 @@
 	item_state = "glasses"
 	body_parts_covered = EYES
 	unacidable = 1
-	sales_price = 40
+	sales_price = 30
 	flash_protection = FLASH_PROTECTION_MODERATE
 
 /obj/item/clothing/glasses/cadian/New()
@@ -659,7 +659,7 @@
 	siemens_coefficient = 0
 	flash_protection = FLASH_PROTECTION_MAJOR
 	unacidable = 1
-	sales_price = 40
+	sales_price = 20
 	var/view_range = 10 //They can see further normally
 	vision_flags = SEE_TURFS|SEE_MOBS|SEE_OBJS
 

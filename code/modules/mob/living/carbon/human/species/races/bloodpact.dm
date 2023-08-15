@@ -14,6 +14,8 @@
 	mob_size = MOB_MEDIUM
 	strength = STR_HIGH
 	sexybits_location = BP_GROIN
+	brute_mod = 0.82 // chaos stuff
+	burn_mod = 0.82 //
 
 	inherent_verbs = list(
 	/mob/living/carbon/human/Bloodpact/proc/givebloodstats,

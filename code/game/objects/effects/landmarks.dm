@@ -313,6 +313,57 @@ Template:
 				/obj/item/shield/riot/metal = 1,
 				/obj/item/melee/sword/sabre = 4)
 
+
+/obj/random/loot/tech1
+	name = "LOW TECH SPAWNER"
+	desc = "spawns low tech"
+	icon_state = "armoraccessory"
+
+/obj/random/loot/tech1/spawn_choices()
+	return list(/obj/item/rnd/eng3 = 12,
+				/obj/item/rnd/eng5 = 8,
+				/obj/item/rnd/eng8 = 4,
+				/obj/item/rnd/combat3 = 14,
+				/obj/item/rnd/combat5 = 10,
+				/obj/item/rnd/combat8 = 5,
+				/obj/item/reagent_containers/food/snacks/poo = 6,
+				/obj/item/rnd/power3 = 10,
+				/obj/item/rnd/power5 = 6,
+				/obj/item/rnd/power8 = 3,
+				/obj/item/reagent_containers/food/snacks/poo = 6,
+				/obj/item/rnd/biospace3 = 10,
+				/obj/item/rnd/biospace5 = 6,
+				/obj/item/rnd/biospace8 = 3,
+				/obj/item/reagent_containers/food/snacks/poo = 6,
+				/obj/item/rnd/eng10 = 1)
+
+/obj/random/loot/tech2
+	name = "HIGH TECH SPAWNER"
+	desc = "spawn high tech"
+	icon_state = "armoraccessory"
+
+/obj/random/loot/tech2/spawn_choices()
+	return list(/obj/item/rnd/eng3 = 12,
+				/obj/item/rnd/eng5 = 8,
+				/obj/item/rnd/eng8 = 5,
+				/obj/item/rnd/combat3 = 14,
+				/obj/item/rnd/combat5 = 10,
+				/obj/item/rnd/combat8 = 7,
+				/obj/item/rnd/combat10 = 2,
+				/obj/item/rnd/power3 = 10,
+				/obj/item/rnd/power5 = 6,
+				/obj/item/rnd/power8 = 3,
+				/obj/item/rnd/power10 = 1,
+				/obj/item/rnd/biospace3 = 10,
+				/obj/item/rnd/biospace5 = 6,
+				/obj/item/rnd/biospace8 = 3,
+				/obj/item/rnd/biospace10 = 1,
+				/obj/item/rnd/illegal3 = 12,
+				/obj/item/rnd/illegal5 = 8,
+				/obj/item/rnd/illegal8 = 4,
+				/obj/item/rnd/illegal10 = 2,
+				/obj/item/rnd/eng10 = 1)
+
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
 	desc = "Spawns light and heavy melee.."

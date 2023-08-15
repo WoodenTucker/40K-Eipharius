@@ -61,7 +61,7 @@
 /datum/rune_recipe/tzeentch/skinless
 	name = "Skinless Rite"
 	ingredients = list(/mob/living/carbon/human, /obj/item/flame/candle)
-	product_path = /mob/living/carbon/human/skinless
+	product_path = /mob/living/carbon/human
 
 /datum/rune_recipe/tzeentch/transmutation
 	name = "Transmutation Rite"

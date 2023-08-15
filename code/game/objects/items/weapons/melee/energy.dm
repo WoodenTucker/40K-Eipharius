@@ -294,7 +294,7 @@
 	throw_speed = 1
 	throw_range = 4
 	block_chance = 30
-	sales_price = 90
+	sales_price = 0
 	weapon_speed_delay = 9 //2 seconds
 	edge = 1
 	sharp = 1

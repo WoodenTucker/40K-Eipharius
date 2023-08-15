@@ -256,7 +256,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	sales_price = 55
+	sales_price = 45
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/chain/inqcs
@@ -280,7 +280,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
-	sales_price = 60
+	sales_price = 50
 	w_class = ITEM_SIZE_LARGE
 
 /obj/item/melee/chain/pcsword
@@ -303,7 +303,7 @@
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
-	sales_price = 110 //not common at all
+	sales_price = 100 //not common at all
 	w_class = ITEM_SIZE_HUGE //slow
 
 
@@ -330,7 +330,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
 	weapon_speed_delay = 13
-	sales_price = 70
+	sales_price = 60
 
 /obj/item/melee/chain/pcsword/klaw
 	name = "Power Klaw"
@@ -355,7 +355,7 @@
 	slot_flags = null // change when no longer using backpack to spawn i
 	attack_verb = list("klaw'd", "sawed", "cleaved", "zog'd", "cut")
 	weapon_speed_delay = 12 // its zogging huge
-	sales_price = 70
+	sales_price = 0
 
 /obj/item/melee/chain/pcsword/klaw/dropped() // only way to get it is the backpack currently. And power sword augment. This should be replaced.
 	..()
@@ -398,7 +398,7 @@
 	armor_penetration = 20
 	block_chance = 37
 	weapon_speed_delay = 6
-	sales_price = 19
+	sales_price = 0
 
 /obj/item/melee/sword/broadsword
 	name = "heavy broadsword"
@@ -422,7 +422,7 @@
 	armor_penetration = 15
 	block_chance = 25 
 	weapon_speed_delay = 8
-	sales_price = 25
+	sales_price = 0
 
 /obj/item/melee/sword/machete
 	name = "iron machete"
@@ -507,7 +507,7 @@
 	sharpness = TRUE
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 8
-	sales_price = 200
+	sales_price = 100
 
 // NON MATERIAL WEAPONS //
 
@@ -556,7 +556,7 @@
 	force = 27
 	force_wielded = 41
 	armor_penetration = 45
-	sales_price = 30
+	sales_price = 0
 
 /obj/item/melee/trench_axe/bardiche
 	name = "bardiche"
@@ -629,7 +629,7 @@
 	force = 26
 	force_wielded = 39
 	armor_penetration = 25
-	sales_price = 20
+	sales_price = 0
 
 /obj/item/melee/sword/commissword/sabre
 	name = "Sabre"
@@ -638,7 +638,7 @@
 	icon_state = "sabre"
 	item_state = "sabre"
 	block_chance = 22
-	sales_price = 30
+	sales_price = 0
 
 /obj/item/melee/sword/choppa
 	name = "choppa"
@@ -658,7 +658,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 2)
 	slot_flags = SLOT_BELT
-	sales_price = 15
+	sales_price = 0
 	weapon_speed_delay = 8
 
 /obj/item/melee/classic_baton/daemonhammer

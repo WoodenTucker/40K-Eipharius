@@ -14,6 +14,8 @@
 	strength = STR_HIGH
 //	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SLIP
+	brute_mod = 0.85
+	burn_mod = 0.85 
 	base_auras = list(
 		/obj/aura/regenerating/human/ork
 		)

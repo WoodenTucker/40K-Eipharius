@@ -262,7 +262,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_MATERIAL = 10, TECH_ENGINEERING = 10)
-	sales_price = 140
+	sales_price = 0
 
 /obj/item/rnd/power3
 	name = "strange chemical canister"
@@ -294,7 +294,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_POWER = 10, TECH_PHORON = 10)
-	sales_price = 165
+	sales_price = 0
 
 
 /obj/item/rnd/biospace3
@@ -327,7 +327,7 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_BIO = 10, TECH_BLUESPACE = 10)
-	sales_price = 120
+	sales_price = 0
 
 
 /obj/item/rnd/combat3
@@ -360,12 +360,12 @@
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk5"
 	origin_tech = list(TECH_COMBAT = 10, TECH_MAGNET = 10)
-	sales_price = 170
+	sales_price = 0
 
 
 /obj/item/rnd/illegal3
 	name = "xenos puzzle box"
-	desc = "A seolite firing mechanism used in slug firing projectile weapons. The Mechanicus will want to study it."
+	desc = "A silly little puzzle box! The Mechanicus will want to study it."
 	icon = 'icons/obj/xenoarchaeology.dmi'
 	icon_state = "ano10"
 	origin_tech = list(TECH_DATA = 4, TECH_ILLEGAL = 4)
@@ -389,8 +389,8 @@
 
 /obj/item/rnd/illegal10
 	name = "Glowing STC Fragment"
-	desc = "An STC Fragment with designs for a chaos artifact... The Mechanicus will want to study it."
+	desc = "An STC Fragment with designs for an artifact... The Mechanicus will want to study it."
 	icon = 'icons/obj/stock_parts.dmi'
 	icon_state = "datadisk0"
 	origin_tech = list(TECH_DATA = 10, TECH_ILLEGAL = 10)
-	sales_price = 140
+	sales_price = 60

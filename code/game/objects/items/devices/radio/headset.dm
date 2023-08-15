@@ -225,7 +225,8 @@
 	desc = "A headset used by the box pushers."
 	icon_state = "cargo_headset"
 	item_state = "headset"
-	ks1type = /obj/item/device/encryptionkey/headset_cargo
+	ks1type = /obj/item/device/encryptionkey/headset_sci
+	ks2type = /obj/item/device/encryptionkey/red_alpha
 
 //basic 'common' vox
 /obj/item/device/radio/headset/headset_service
@@ -243,7 +244,7 @@
 	icon = 'icons/obj/radio.dmi'
 	name = "Marshal vox"
 	desc = "A stripped down version of the standard Guard issue vox. This one has been upgraded with a com-link"
-	ks1type = /obj/item/device/encryptionkey/headset_cargo
+	ks1type = /obj/item/device/encryptionkey/headset_sci
 	ks2type = /obj/item/device/encryptionkey/headset_sec
 	icon_state = "sec_headset"
 	item_state = "sec_headset"

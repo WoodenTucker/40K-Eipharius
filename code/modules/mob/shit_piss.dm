@@ -324,6 +324,6 @@
 				to_chat(src, "<span class='badmood'>+ NOT ON THE FLOOR... +</span>\n")
 				H.happiness -= 3
 
-	bladder -= rand(25,50)
+	bladder -= rand(70,90)
 	visible_message("[message]")
 
