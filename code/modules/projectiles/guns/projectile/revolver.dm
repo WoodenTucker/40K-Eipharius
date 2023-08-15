@@ -15,7 +15,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	sales_price = 15
+	sales_price = 5
 
 /obj/item/gun/projectile/revolver/attack_self(mob/user)
 	. = ..()
@@ -95,7 +95,7 @@
 	caliber = ".50"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	ammo_type = /obj/item/ammo_casing/a50
-	sales_price = 40
+	sales_price = 10
 	accuracy = 0.1
 	fire_delay= 3
 
@@ -113,7 +113,7 @@
 	fire_delay= 14
 	burst = 2
 	ammo_type = /obj/item/ammo_casing/a357
-	sales_price = 25
+	sales_price = 5
 
 /obj/item/gun/projectile/necros
 	name = "Necros Revolver"
@@ -133,7 +133,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
-	sales_price = 33
+	sales_price = 8
 
 /obj/item/gun/projectile/slugrevolver
 	name = "slug revolver"
@@ -153,7 +153,7 @@
 	reload_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/rev_magin.ogg'
 	fire_sound = 'sound/weapons/guns/fire/revolver_fire.ogg'
-	sales_price = 37
+	sales_price = 7
 
 /obj/item/gun/projectile/slugrevolver/penitent
 	name = "eight thousander"

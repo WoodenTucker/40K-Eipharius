@@ -75,7 +75,7 @@ Pilgrim Fate System
 
 	var/mob/living/carbon/human/U = src
 	U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,) //removes verb
-	var/fates = list("Mercenary","Scum","Nomad","Primitive","Drug Dealer")
+	var/fates = list("Mercenary","Scum","Nomad","Primitive")
 
 
 	var/classchoice = input("Choose your fate", "Available fates") as anything in fates
@@ -131,8 +131,6 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/melee/trench_axe/bspear/hunter, slot_l_hand) 
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/leather, slot_wear_suit)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a local hunter and tribal from one of the many wandering tribes of Eipharius, you've only recently learned of Low Gothic and are adjusting to imperial rule.. </font></b></span>")
 		if("Nomad")
 			U.add_skills(rand(5,8),rand(7,9),rand(5,7),rand(1,3),rand(1,6)) //melee, ranged, med, eng, surgery
@@ -156,9 +154,7 @@ Pilgrim Fate System
 				U.add_stats(rand(16,18), rand(12,16), rand(17,18), rand (12,14))
 				equip_to_slot_or_store_or_drop(new /obj/item/melee/trench_axe/bardiche/beast, slot_l_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/combat_knife/bowie, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/bonearmor, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/dragon, slot_in_backpack)
 			else if(prob(35))
@@ -173,7 +169,6 @@ Pilgrim Fate System
 					equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/pulse/plasma/pistol/glock, slot_l_hand)
 				else
 					equip_to_slot_or_store_or_drop(new /obj/item/gun/energy/las/triplex, slot_l_hand)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/ranger2, slot_wear_suit)
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE HUNTER</font></b></span>")
@@ -254,7 +249,6 @@ Pilgrim Fate System
 				U.add_stats(rand(16,18), rand(14,16), rand(16,18), rand (10,12)) //veteran mercenary
 				equip_to_slot_or_store_or_drop(new /obj/item/melee/trench_axe/glaive/adamantine, slot_l_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/threebread, slot_r_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/brigandine, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/hero, slot_head)
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
@@ -293,9 +287,10 @@ Pilgrim Fate System
 				else if(prob(50))
 					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/carapace3, slot_wear_suit)
 					equip_to_slot_or_store_or_drop(new /obj/item/clothing/head/helmet/marinehelm, slot_head)
-				else
+				else if(prob(30))
 					equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vanpa, slot_wear_suit)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
+				else
+					equip_to_slot_or_store_or_drop(new /obj/item/ammo_magazine/c50, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				if(prob(15))
 					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/red_team, slot_in_backpack)
@@ -466,8 +461,6 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/vest/leather/tailcoat, slot_wear_suit)
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones/five, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones2/ten, slot_in_backpack) 
-				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
-				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)

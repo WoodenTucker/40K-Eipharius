@@ -503,7 +503,7 @@ var/const/NO_EMAG_ACT = -50
 /obj/item/card/id/dog_tag/kroot
 	icon_state = "tagred"
 	access = list(access_kroot)
-	sales_price = 30
+	sales_price = 15
 
 
 /obj/item/card/id/dog_tag/skitarii
@@ -532,7 +532,7 @@ var/const/NO_EMAG_ACT = -50
 	name = "golden ring"
 	icon_state = "goldring"
 	desc = "A simple golden ring, can be combined with gems for some BLING BLING!"
-	sales_price = 25
+	sales_price = 20
 
 /obj/item/card/id/ring/disgracedmedicae
 	name = "access card"

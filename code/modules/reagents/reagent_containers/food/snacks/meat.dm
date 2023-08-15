@@ -7,7 +7,7 @@
 	center_of_mass = "x=16;y=14"
 	New()
 		..()
-		reagents.add_reagent(/datum/reagent/nutriment/protein, 9)
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 6)
 		src.bitesize = 3
 
 /obj/item/reagent_containers/food/snacks/meat/attackby(obj/item/W as obj, mob/user as mob)

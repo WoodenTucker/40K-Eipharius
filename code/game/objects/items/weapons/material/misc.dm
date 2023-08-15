@@ -49,7 +49,7 @@
 	desc = "A fine example of a machete, with a polished blade, wooden handle and a leather cord loop."
 	icon_state = "machetedx"
 	item_state = "machete"
-	sales_price = 5
+	sales_price = 1
 
 /obj/item/material/minihoe // -- Numbers
 	name = "mini hoe"

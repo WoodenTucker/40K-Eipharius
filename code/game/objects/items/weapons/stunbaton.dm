@@ -21,7 +21,7 @@
 	block_chance = 15
 	stunforce = 0
 	agonyforce = 70
-	sales_price = 8
+	sales_price = 1
 	weapon_speed_delay = 6
 	status = 1
 	armor_penetration = 20 //Blunt force transfers through a lot of equipment.
@@ -329,7 +329,7 @@
 	str_requirement = 1
 	force = 4
 	stunforce = 0
-	agonyforce = 200
+	agonyforce = 300
 	block_chance = 50
 	sales_price = 0
 	weapon_speed_delay = 5

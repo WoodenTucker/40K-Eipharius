@@ -15,7 +15,7 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	species_restricted = list(SPECIES_ASTARTES)
-	sales_price = 70
+	sales_price = 50
 
 /obj/item/clothing/head/helmet/astartes/bloodangel
 	name = "Astartes Mark VII Helmet"

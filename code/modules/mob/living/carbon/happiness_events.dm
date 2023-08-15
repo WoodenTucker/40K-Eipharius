@@ -220,25 +220,25 @@
 //VICE SPECIFIC HANDLING
 /datum/happiness_event/vice/smoke
 	description = "<span class='badmood'>• I need a lho.</span>\n"
-	happiness = -15
+	happiness = -5
 
 /datum/happiness_event/vice/alco
 	description = "<span class='badmood'>• I need a drink.</span>\n"
-	happiness = -15
+	happiness = -5
 
 
 /datum/happiness_event/vice/piety
 	description = "<span class='badmood'>• I yearn to be in His presence.</span>\n"
-	happiness = -15
+	happiness = -5
 
 
 /datum/happiness_event/vice/obscura
 	description = "<span class='badmood'>• My brain itches and my skin crawls, I need obscura!</span>\n"
-	happiness = -15
+	happiness = -5
 
 /datum/happiness_event/vice/glutton
 	description = "<span class='badmood'>• I need to eat more, my stomach demands food!</span>\n"
-	happiness = -15
+	happiness = -5
 
 //Mood Debuffs for the Tome Of The Mindbreaker
 /datum/happiness_event/Tzbook/Light

@@ -260,7 +260,7 @@
 	var/dat = "<B>Imperial Tithe:</B><BR>"
 	dat += "[GLOB.thrones] throne balance<BR>"
 	dat += "<B>Tithe owed to the Imperium</B></BR>"
-	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (350)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (150)</A><BR>"
 	dat += "<B>Set the tax rate:</B></BR>"
 	dat += "<A href='byond://?src=\ref[src];tax=1'>Set tax rate (default is 15%)</A><BR>"
 	dat += "May the Emperor guide and protect all trade. Praise the Immortal Emperor for his unending rule!<HR>"
@@ -274,12 +274,12 @@
 
 	if (usr.stat || usr.restrained()) return //Nope! We are either dead or restrained!
 	if (href_list["tithe"])
-		if(GLOB.thrones < 350) //do we got enough shekels?
+		if(GLOB.thrones < 150) //do we got enough shekels?
 			visible_message("You cannot afford that!")
 			return
 		else
 			visible_message("Thank you for your service to the Imperium, the Emperor protects!") //lil flavor text confirming
-			GLOB.thrones -= 350 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
+			GLOB.thrones -= 150 //this goes here so it subtracts payment before the sleep, u cannot out spam me boy
 			GLOB.tithe_paid = 1 //yay we paid the tithe
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 

@@ -44,7 +44,7 @@
 	accuracy = 0.5
 	fire_delay= 3
 	armor_penetration = 1 //melee???
-	sales_price = 20
+	sales_price = 5
 
 /obj/item/gun/projectile/shotgun/pump/New()
 	..()
@@ -243,7 +243,7 @@
 	move_delay = 8
 	accuracy = 0
 	fire_delay= 40
-	sales_price = 150
+	sales_price = 50
 	burst = 20
 	
 	firemodes = list(

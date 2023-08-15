@@ -19,7 +19,7 @@
 	accuracy = 1
 	fire_delay = 3
 	force = 15
-	sales_price = 10
+	sales_price = 4
 	var/gping = TRUE
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/pump(mob/M as mob, silent = FALSE)
@@ -90,7 +90,7 @@
 	unwielded_unloaded_icon = "boltactionsharp"
 	wielded_unloaded_icon = "boltaction-wielded"
 	accuracy = 1
-	sales_price = 20
+	sales_price = 10
 
 /*
 /obj/item/gun/projectile/shotgun/pump/boltaction/sharpshooter/verb/scope_detach(mob/user)
@@ -130,7 +130,7 @@
 	gun_type = GUN_SNIPER
 	far_fire_sound = "sniper_fire"
 	gping = FALSE
-	sales_price = 43
+	sales_price = 13
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/lp338/verb/scope()
 	set category = "Object"
@@ -195,7 +195,7 @@
 	icon_state = "boltactionsharp"
 	item_state = "boltactionsharp"
 	empty_icon = "boltactionsharp-e"
-	sales_price = 30
+	sales_price = 20
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered/verb/scope()
 	set category = "Object"
@@ -237,7 +237,7 @@
 	fire_delay = 3.5
 	move_delay = 2.5
 	gping = FALSE
-	sales_price = 15
+	sales_price = 10
 	accuracy = 0.8
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/glory
@@ -247,7 +247,7 @@
 	item_state = "boltactionsharp"
 	empty_icon = "oldglory-e"
 	accuracy = 1.4
-	sales_price = 26
+	sales_price = 16
 
 //Paryying.
 
@@ -279,7 +279,7 @@
 	screen_shake = 0.5
 	attack_verb = list ("stabbed", "sliced")
 	hitsound = "stab_sound"
-	sales_price = 30
+	sales_price = 15
 
 //AMMO
 
@@ -367,7 +367,7 @@
 	one_hand_penalty = 1.4
 	accuracy = 0.5
 	fire_delay= 3
-	sales_price = 20
+	sales_price = 10
 
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
 	name = "\improper WTX Belle Magrave"
@@ -376,7 +376,7 @@
 	one_hand_penalty = 1
 	accuracy = 0.8
 	fire_delay = 2
-	sales_price = 25
+	sales_price = 15
 
 /obj/item/gun/projectile/shotgun/pump/shitty/sawn
 	name = "\improper Sawn Off WTX Frontier Special"
@@ -392,7 +392,7 @@
 	fire_delay = 2
 	accuracy = 0
 	armor_penetration = 0
-	sales_price = 15
+	sales_price = 5
 
 /obj/item/gun/projectile/automatic/flamer
 	name = "Scorcher"
@@ -422,7 +422,7 @@
 	unloaded_icon = "flamer-e"
 	unwielded_unloaded_icon = "flamer-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
-	sales_price = 40
+	sales_price = 20
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
@@ -461,7 +461,7 @@
 	unloaded_icon = "flamerp-e"
 	unwielded_unloaded_icon = "flamerp-e"
 	wielded_unloaded_icon = "flamer-wielded-e"
-	sales_price = 50
+	sales_price = 30
 
 	gun_type = GUN_LMG //anyone can use this... just not anyone should.
 
@@ -490,8 +490,7 @@
 	move_delay = 4.2
 	one_hand_penalty = 1.6
 	accuracy = 1
-	sales_price = 26
-
+	sales_price = 16
 	caliber = "a762"
 	ammo_type = /obj/item/ammo_casing/a762
 	magazine_type = /obj/item/ammo_magazine/a762
@@ -533,7 +532,7 @@
 	move_delay = 4.2
 	one_hand_penalty = 1.4
 	accuracy = 1.5
-	sales_price = 20
+	sales_price = 10
 
 	loaded_icon = "commando"
 	unloaded_icon = "commando"
@@ -580,7 +579,7 @@
 	one_hand_penalty = 2.2 //it is a HMG, but its also not a bolter, this is probably enough penalty
 	accuracy = 0.5
 	fire_delay = 1.6
-	sales_price = 31
+	sales_price = 21
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.6, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -612,7 +611,7 @@
 	burst = 1
 	fire_delay = 1.5
 	one_hand_penalty = 2.6 //by the omnissiah you MUST hold the machine spirit properly
-	sales_price = 25
+	sales_price = 26
 
 	firemodes = list(
 		list(mode_name="semi-automatic",       burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -634,7 +633,7 @@
 	one_hand_penalty = 2
 	accuracy = 1
 	fire_delay = 1.5
-	sales_price = 32
+	sales_price = 22
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.5, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -654,7 +653,7 @@
 	one_hand_penalty = 0.8
 	accuracy = 0.5
 	fire_delay = 1.7
-	sales_price = 18
+	sales_price = 8
 
 	fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
@@ -684,7 +683,7 @@
 	one_hand_penalty = 0.6
 	accuracy = 0.7
 	fire_delay = 1.6
-	sales_price = 28
+	sales_price = 18
 
 	wielded_item_state = "autorifle-wielded"
 	loaded_icon = "autorifle"
@@ -714,7 +713,7 @@
 	one_hand_penalty = 1
 	accuracy = 0.5
 	fire_delay = 1.6
-	sales_price = 31
+	sales_price = 21
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -749,7 +748,7 @@
 	one_hand_penalty = 1.2
 	accuracy = 0.7
 	fire_delay = 1.5
-	sales_price = 35
+	sales_price = 20
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -798,7 +797,7 @@
 	accuracy = 0.8
 	automatic = 0
 	fire_delay = 4
-	sales_price = 30
+	sales_price = 20
 
 
 	magazine_type = /obj/item/ammo_magazine/c556
@@ -838,7 +837,7 @@
 	accuracy = 0.4
 	automatic = 1
 	fire_delay = 1.5
-	sales_price = 25
+	sales_price = 15
 
 	magazine_type = /obj/item/ammo_magazine/c556
 	allowed_magazines = /obj/item/ammo_magazine/c556
@@ -898,7 +897,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 1
-	sales_price = 120
+	sales_price = 60
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -984,7 +983,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 0
-	sales_price = 80
+	sales_price = 70
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.4, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1016,7 +1015,7 @@
 	firemodes = list()
 	gun_type = GUN_AUTOMATIC
 	accuracy = 0.5
-	sales_price = 95
+	sales_price = 85
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=2.15, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1076,7 +1075,7 @@
 	firemodes = list()
 	accuracy = 1.4 //only one gun per round so yeah
 	gun_type = GUN_AUTOMATIC
-	sales_price = 130
+	sales_price = 120
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=1.9, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1120,7 +1119,7 @@
 	gun_type = GUN_AUTOMATIC
 	fire_delay = 3
 	burst = 3
-	sales_price = 15
+	sales_price = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1149,7 +1148,7 @@
 	max_shells = 30
 	caliber = ".75"
 	one_hand_penalty = 1
-	sales_price = 20
+	sales_price = 1
 
 /obj/item/gun/projectile/ork/automatic/shoota/bladed/update_icon()
 	..()
@@ -1172,7 +1171,7 @@
 	move_delay = 1 // smg
 	one_hand_penalty = 1
 	accuracy = -1
-	sales_price = 25
+	sales_price = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),
@@ -1212,7 +1211,7 @@
 		list(mode_name="FULLA AUTO", burst=6, fire_delay=5.5, burst_accuracy=list(-6,-5,-8), dispersion=null, automatic = 0.7),
 
 	)
-	sales_price = 30
+	sales_price = 1
 
 /obj/item/gun/projectile/ork/automatic/shoota/big/update_icon()
 	..()
@@ -1237,7 +1236,7 @@
 	one_hand_penalty = 2
 	accuracy = -0.5
 	gun_type = GUN_SNIPER
-	sales_price = 50
+	sales_price = 1
 
 	firemodes = list(
 		list(mode_name="semi-automatic", burst=1, fire_delay=3, burst_accuracy=null, dispersion=null, automatic = 0),

@@ -8,7 +8,7 @@
     force = 3.0
     throwforce = 3.0
     max_amount = 10
-    sales_price = 12
+    sales_price = 4
 
 /obj/item/stack/logs/update_icon()
 	if(!amount)//There's no more money here, so delete the handful.

@@ -3,7 +3,7 @@
 /datum/job/marshal
 	title = "Planetary Marshal" // Corrupted. Cult. Loyal.
 	head_position = 1
-	supervisors = "the Lord Governor"
+	supervisors = "the Deacon or Inquisition"
 	total_positions = 1
 	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
@@ -41,7 +41,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Rogue Trader where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Marshal appointed by the Magistratum,, your duty is to uphold Imperial law on this planet amongst the Pilgrims and to assist the Deacon where necessary. Your duties involve the investigation of crimes committed on behalf of the magistratum, collection of tithes and the interrogation or execution of criminals apprehended by the Magistratum.</font></b></span>")
 
 /datum/job/investigator
 	title = "Planetary Investigator"
@@ -88,7 +88,7 @@
 
 /datum/job/enforcer
 	title = "Enforcer" // Cult. Criminal. Loyal.
-	supervisors = "the Planetary Marshal and Inquisition"
+	supervisors = "the Planetary Marshal, Deacon and Inquisition"
 	total_positions = 2
 	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
@@ -130,7 +130,7 @@
 
 /datum/job/cadet
 	title = "Enforcer Cadet"
-	supervisors = "the Planetary Marshal and Inquisition"
+	supervisors = "the Planetary Marshal, Deacon and Inquisition"
 	total_positions = 0
 	spawn_positions = 0
 	social_class = SOCIAL_CLASS_MED
@@ -169,7 +169,7 @@
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
-		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Governership order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3> (NEW PLAYER ROLE) A cadet in the Magisterium. The Deacon order you. Yet the Inquisition can override them. Your job is to assist the other enforcers in punishing crime and collecting taxes. </font></b></span>")
 
 /datum/job/arbitrator
 	title = "Arbitrator"

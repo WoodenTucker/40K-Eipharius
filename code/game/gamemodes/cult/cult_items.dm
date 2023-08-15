@@ -10,7 +10,7 @@
 	throwforce = 10
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	sales_price = 40
+	sales_price = 30
 
 /obj/item/melee/cultblade/attack(mob/living/M, mob/living/user, var/target_zone)
 	//if(iscultist(user) || (user.mind in godcult.current_antagonists))
@@ -56,7 +56,7 @@
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.8 //That's a pretty cool opening in the hood. Also: Cloth making physical contact to the skull.
-	sales_price = 10
+	sales_price = 2
 	
 /obj/item/clothing/head/culthood/magus
 	name = "magus helm"
@@ -65,7 +65,7 @@
 	flags_inv = HIDEFACE | BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EYES
 	armor = list(melee = 50, bullet = 40, laser = 30, energy = 20, bomb = 15, bio = 0, rad = 0)
-	sales_price = 30
+	sales_price = 10
 
 /obj/item/clothing/head/culthood/alt
 	icon_state = "cult_hoodalt"
@@ -79,7 +79,7 @@
 	armor = list(melee = 35, bullet = 30, laser = 25,energy = 20, bomb = 25, bio = 10, rad = 0)
 	flags_inv = HIDEJUMPSUIT
 	siemens_coefficient = 0.6
-	sales_price = 20
+	sales_price = 10
 
 /obj/item/clothing/suit/cultrobes/alt
 	icon_state = "cultrobesalt"
@@ -91,7 +91,7 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	flags_inv = HIDEGLOVES|HIDESHOES|HIDEJUMPSUIT
 	armor = list(melee = 75, bullet = 50, laser = 55, energy = 40, bomb = 50, bio = 10, rad = 0)
-	sales_price = 60
+	sales_price = 35
 
 /obj/item/clothing/suit/cultrobes/magusred/New()
 	..()
@@ -103,7 +103,7 @@
 	icon_state = "cult_helmet"
 	armor = list(melee = 60, bullet = 60, laser = 60,energy = 15, bomb = 30, bio = 100, rad = 30) //Real tanky shit.
 	siemens_coefficient = 0.3 //Bone is not very conducive to electricity.
-	sales_price = 15
+	sales_price = 5
 
 /obj/item/clothing/suit/space/cult
 	name = "cult armour"
@@ -113,7 +113,7 @@
 	armor = list(melee = 60, bullet = 50, laser = 60,energy = 15, bomb = 30, bio = 100, rad = 30)
 	siemens_coefficient = 0.2
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS|HANDS
-	sales_price = 30
+	sales_price = 10
 
 /obj/item/clothing/suit/space/cult/New()
 	..()
