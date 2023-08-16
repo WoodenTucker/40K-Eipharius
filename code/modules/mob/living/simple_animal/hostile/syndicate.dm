@@ -1,9 +1,9 @@
 /mob/living/simple_animal/hostile/syndicate
 	name = "Traitor Guardsman" // They're not very smart and aren't sprited well. Shoots kantrael laser projectiles and stabs with bayonet up close.
 	desc = "Battle worn and exhausted, they stare right through you."
-	icon_state = "traitorguard"
-	icon_living = "traitorguard"
-	icon_dead = "traitorguard_dead"
+	icon_state = "traitorguard1"
+	icon_living = "traitorguard1"
+	icon_dead = "traitorguard1_dead"
 	icon_gib = "syndicate_gib"
 	speak_chance = 0
 	turns_per_move = 5
@@ -76,8 +76,9 @@
 			projectiletype = /obj/item/projectile/bullet/pistol
 */
 /mob/living/simple_animal/hostile/syndicate/ranged/space // Same as above but more HP.
-	icon_state = "traitorguard"
-	icon_living = "traitorguard"
+	icon_state = "traitorguard2"
+	icon_living = "traitorguard2"
+	icon_dead = "traitorguard2_dead"
 	name = "Veteran Traitor Guardsmen"
 	maxHealth = 240
 	health = 240
