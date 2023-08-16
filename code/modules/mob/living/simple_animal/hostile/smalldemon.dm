@@ -65,7 +65,7 @@
 
 			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
 				stance = HOSTILE_STANCE_IDLE
-			if(stance_step >= 2)   //If we have been staring at a mob for 7 ticks,
+			if(stance_step >= 1)   //If we have been staring at a mob for 1 ticks,
 				stance = HOSTILE_STANCE_ATTACK
 				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 100, 1)
 
@@ -82,14 +82,14 @@
 /mob/living/simple_animal/hostile/smalldemon/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(stance != HOSTILE_STANCE_ATTACK && stance != HOSTILE_STANCE_ATTACKING)
 		stance = HOSTILE_STANCE_ALERT
-		stance_step = 6
+		stance_step = 3
 		target_mob = user
 	..()
 
 /mob/living/simple_animal/hostile/smalldemon/attack_hand(mob/living/carbon/human/M as mob)
 	if(stance != HOSTILE_STANCE_ATTACK && stance != HOSTILE_STANCE_ATTACKING)
 		stance = HOSTILE_STANCE_ALERT
-		stance_step = 6
+		stance_step = 3
 		target_mob = M
 	..()
 
@@ -100,7 +100,7 @@
 		stance = HOSTILE_STANCE_ALERT
 
 /mob/living/simple_animal/hostile/smalldemon/LoseTarget()
-	..(5)
+	..(2)
 
 /mob/living/simple_animal/hostile/smalldemon/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -113,7 +113,7 @@
 		var/mob/living/carbon/human/H = target_mob
 		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
 		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
-		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE)
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP)
 		return H
 	else if(isliving(target_mob))
 		var/mob/living/L = target_mob
