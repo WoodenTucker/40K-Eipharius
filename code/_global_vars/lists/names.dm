@@ -15,3 +15,4 @@ GLOBAL_LIST_INIT(adjectives, world.file2list("config/names/adjectives.txt"))
 
 
 GLOBAL_LIST_EMPTY(in_character_filter)
+GLOBAL_LIST_EMPTY(ritual_filter)

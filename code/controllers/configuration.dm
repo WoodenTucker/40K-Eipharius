@@ -230,6 +230,7 @@ var/list/gamemode_cache = list()
 	var/not_a_fucking_moron = ""
 
 	var/static/regex/ic_filter_regex
+	var/static/regex/ritual_filter_regex
 	var/use_aspect_system = FALSE //This isn't actually on the box right now, so who cares.
 
 /datum/configuration/New()
@@ -825,6 +826,7 @@ var/list/gamemode_cache = list()
 		fps = initial(fps)
 
 	LoadChatFilter()
+	LoadRitualFilter()
 
 /datum/configuration/proc/loadsql(filename)  // -- TLE
 	var/list/Lines = file2list(filename)
@@ -908,3 +910,20 @@ var/list/gamemode_cache = list()
 
 	if(!ic_filter_regex && GLOB.in_character_filter.len)
 		ic_filter_regex = regex("\\b([jointext(GLOB.in_character_filter, "|")])\\b", "i")
+
+
+/datum/configuration/proc/LoadRitualFilter()
+	GLOB.ritual_filter = list()
+	//pulls in our global list and empties it
+
+//loops over each line of ritual phrases, skips any commented out or missing lines
+	for(var/line in world.file2list("config/ritual_phrases.txt"))
+		if(!line)
+			continue
+		if(findtextEx(line,"#",1,2))
+			continue
+		GLOB.ritual_filter += line
+
+//slightly different regex from the chat filter, in this case we are searching for whole phrases, case insensitive
+	if(!ritual_filter_regex && GLOB.ritual_filter.len)
+		ritual_filter_regex = regex("\\b(?:[jointext(GLOB.ritual_filter, "|")])\\b", "i")

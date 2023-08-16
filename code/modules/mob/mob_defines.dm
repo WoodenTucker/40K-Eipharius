@@ -83,6 +83,7 @@
 	var/confused = 0		//Carbon
 	var/sleeping = 0		//Carbon
 	var/resting = 0			//Carbon
+
 	var/lying = 0
 	var/lying_prev = 0
 	var/canmove = 1
@@ -209,3 +210,7 @@
 	var/isblessed = 0 //used with censer blessings
 
 	var/alien_talk_understand = 0
+
+	var/ritual_leading = FALSE //for rituals
+	var/correct_ritual_responses = 0
+	var/can_lead_ritual = TRUE

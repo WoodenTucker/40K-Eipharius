@@ -1,0 +1,6 @@
+###############################################################################################
+# Whole phrases that will be used to trigger rituals.  Don't use punctuation                  #
+# Case is not important. Commented-out examples are listed below, just remove the "#".        #
+###############################################################################################
+
+Emperor Preserve Us

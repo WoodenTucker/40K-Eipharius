@@ -45,6 +45,8 @@
 		hear_sleep(message)
 		return
 
+
+
 	//non-verbal languages are garbled if you can't see the speaker. Yes, this includes if they are inside a closet.
 	if (language && (language.flags & NONVERBAL))
 		if (!speaker || (src.sdisabilities & BLIND || src.blinded) || !(speaker in view(src)))
@@ -90,6 +92,9 @@
 			else if(!is_blind())
 				to_chat(src, "<span class='name'>[speaker_name]</span>[alt_name] talks but you cannot hear them.")
 	else
+		if(ritual_leading && speaker != src)
+			hear_ritual_responses(message) //this is where we listen for responses
+
 		if(language)
 			on_hear_say("<span class='game say'><span class='name'>[speaker_name]</span>[alt_name] [track][language.format_message(message, verb)]</span>")
 		else
@@ -314,3 +319,9 @@
 		heard = "<span class = 'game_say'>...<i>You almost hear someone talking</i>...</span>"
 
 	to_chat(src, heard)
+
+/mob/proc/hear_ritual_responses(var/message)
+	var/cleaned_message = lowertext(trim(message))
+
+	if(cleaned_message == "test")
+		src.correct_ritual_responses++
