@@ -54,7 +54,7 @@
 
 /obj/item/stack/thrones2
 	name = "Reál"
-	desc = "A silver reál coin -- it's purity and rareness make it far more valuable then it's copper counterpart. Pronounced Rei-al"
+	desc = "A silver reál coin -- it's purity and rareness make it far more valuable then it's copper counterpart. Pronounced Ree-al"
 	singular_name = "Reál"
 	icon = 'icons/obj/thrones2.dmi'
 	icon_state = "throne1"
@@ -111,7 +111,7 @@
 
 /obj/item/stack/thrones3
 	name = "Reál"
-	desc = "A copper reál coin -- the most common tender this side of the sub-sector. Pronounced Rei-al"
+	desc = "A copper reál coin -- the most common tender this side of the sub-sector. Pronounced Ree-al"
 	singular_name = "Reál"
 	icon = 'icons/obj/thrones3.dmi'
 	icon_state = "throne1"
