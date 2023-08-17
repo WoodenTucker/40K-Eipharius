@@ -520,8 +520,8 @@
 /obj/item/storage/box/coin
 	name = "coin pouch"
 	desc = "A small coin pouch"
-	color = "#34382f"
-	icon_state = "ifak"
+	icon = 'icons/obj/thrones.dmi'
+	icon_state = "coin_bag"
 	startswith = list(/obj/item/stack/thrones3)
 	w_class = ITEM_SIZE_SMALL
 	max_storage_space = 8
