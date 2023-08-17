@@ -127,7 +127,7 @@
 "en" = (/obj/machinery/light,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "ep" = (/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "eq" = (/turf/simulated/shuttle/wall/corner/dark/sw{color = "grey"},/area/centcom)
-"et" = (/obj/effect/floor_decal/turf/brick/two,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/random/loot/goodweapon,/obj/item/cell/plasma,/obj/structure/table/rack/dark,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"et" = (/obj/effect/floor_decal/turf/brick/two,/obj/item/cell/lasgun/hotshot,/obj/item/cell/lasgun/hotshot,/obj/random/loot/goodweapon,/obj/item/cell/plasma,/obj/structure/table/rack/dark,/obj/random/loot/goodweapon,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "eu" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/reagent_containers/food/snacks/meatsteak,/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "eB" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/tauship)
 "eF" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)

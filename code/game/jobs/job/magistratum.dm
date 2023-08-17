@@ -238,7 +238,6 @@
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/handcuffs = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
@@ -265,7 +264,6 @@
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
@@ -289,7 +287,6 @@
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,

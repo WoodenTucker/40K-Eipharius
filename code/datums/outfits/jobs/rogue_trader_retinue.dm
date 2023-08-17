@@ -30,7 +30,7 @@
 	glasses = /obj/item/clothing/glasses/cadian
 	id = /obj/item/card/id/dog_tag/guardsman
 	l_ear = /obj/item/device/radio/headset/heads/hos
-	r_ear = /obj/item/device/flashlight/lantern
+	r_ear = /obj/item/device/flashlight/
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/hotshot
