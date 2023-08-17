@@ -67,12 +67,12 @@
 
 			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
 				stance = HOSTILE_STANCE_IDLE
-			if(stance_step >= 1)   //If we have been staring at a mob for 1 ticks,
+			if(stance_step >= 2)   //If we have been staring at a mob for 2 ticks,
 				stance = HOSTILE_STANCE_ATTACK
 				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 100, 1)
 
 		if(HOSTILE_STANCE_ATTACKING)
-			if(stance_step >= 50)	//attacks for 50 ticks, then it gets tired and needs to rest
+			if(stance_step >= 10)	//attacks for 10 ticks, then it gets tired and needs to rest
 				custom_emote(1, "is worn out and needs to rest." )
 				stance = HOSTILE_STANCE_TIRED
 				stance_step = 0
@@ -146,8 +146,8 @@
 	health = 500
 	resistance = 3
 	speed = 1.5 // Higher number means slower.
-	melee_damage_lower = 45 // This only effects if controlled by a player.
-	melee_damage_upper = 75
+	melee_damage_lower = 25 // This only effects if controlled by a player.
+	melee_damage_upper = 55
 
 
 /mob/living/simple_animal/hostile/tyranid/AttackingTarget()
@@ -155,7 +155,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob] with their blade", "slams into [target_mob]") ) )
 
-	var/damage = rand(45,75)
+	var/damage = rand(25,65)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -186,8 +186,8 @@
 	health = 700
 	resistance = 3
 	speed = 1.6 // Higher number means slower.
-	melee_damage_lower = 55 // This only effects if controlled by a player.
-	melee_damage_upper = 95
+	melee_damage_lower = 45 // This only effects if controlled by a player.
+	melee_damage_upper = 75
 
 
 /mob/living/simple_animal/hostile/tyranid/AttackingTarget()
@@ -195,7 +195,7 @@
 		return
 	custom_emote(1, pick( list("slashes at [target_mob] with their blade", "slams into [target_mob]") ) )
 
-	var/damage = rand(55,95)
+	var/damage = rand(45,85)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
