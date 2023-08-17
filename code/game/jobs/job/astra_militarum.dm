@@ -751,7 +751,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -778,7 +777,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -806,7 +804,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -832,7 +829,6 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/energy/las/lasgun/lucius
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel/krieg = 1
@@ -926,7 +922,6 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -953,7 +948,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08/ms = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
@@ -976,7 +970,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel/krieg = 1
@@ -1000,7 +993,6 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -1079,7 +1071,6 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,

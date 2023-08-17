@@ -34,7 +34,7 @@
 	name = "lantern"
 	icon_state = "lantern"
 	desc = "A mining lantern."
-	brightness_on = 9			// luminosity when on
+	brightness_on = 8			// luminosity when on
 
 /*****************************Pickaxe********************************/
 
