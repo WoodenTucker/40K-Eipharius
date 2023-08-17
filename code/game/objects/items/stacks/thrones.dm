@@ -1,7 +1,7 @@
 /obj/item/stack/thrones
-	name = "$10 thrones"
-	desc = "Gilded throne(s) worth $10"
-	singular_name = "$10 throne"
+	name = "Throne"
+	desc = "A golden throne worth ten Reál. So far from home -- how did you get here little golden coin?"
+	singular_name = "Throne"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "throne"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -41,20 +41,23 @@
 
 /obj/item/stack/thrones/five
 	amount = 5
+	icon_state = "throne5"
 
 
 /obj/item/stack/thrones/ten
 	amount = 10
+	icon_state = "throne10"
 
 /obj/item/stack/thrones/twenty
 	amount = 20
+	icon_state = "throne20"
 
 /obj/item/stack/thrones2
-	name = "$5 thrones"
-	desc = "Silver throne(s) worth $5"
-	singular_name = "$5 throne"
+	name = "Reál"
+	desc = "A silver reál coin -- it's purity and rareness make it far more valuable then it's copper counterpart. Pronounced Rei-al"
+	singular_name = "Reál"
 	icon = 'icons/obj/thrones2.dmi'
-	icon_state = "throne"
+	icon_state = "throne1"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_TINY
 	force = 1.0
@@ -93,22 +96,25 @@
 
 /obj/item/stack/thrones2/five
 	amount = 5
+	icon_state = "throne5"
 
 /obj/item/stack/thrones2/ten
 	amount = 10
+	icon_state = "throne10"
 
 
 /obj/item/stack/thrones2/twenty
 	amount = 20
+	icon_state = "throne20"
 
 
 
 /obj/item/stack/thrones3
-	name = "$1 thrones"
-	desc = "Copper throne(s) worth $1"
-	singular_name = "$1 throne"
+	name = "Reál"
+	desc = "A copper reál coin -- the most common tender this side of the sub-sector. Pronounced Rei-al"
+	singular_name = "Reál"
 	icon = 'icons/obj/thrones3.dmi'
-	icon_state = "throne"
+	icon_state = "throne1"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_TINY
 	force = 1.0
@@ -118,7 +124,7 @@
 	max_amount = 20
 	center_of_mass = null
 	attack_verb = list("hit", "bludgeoned", "whacked")
-	sales_price = 1
+	sales_price = 2
 
 /obj/item/stack/thrones3/New()
 	..()
@@ -145,13 +151,17 @@
 
 /obj/item/stack/thrones3/three
 	amount = 3
+	icon_state = "throne3"
 
 /obj/item/stack/thrones3/five
 	amount = 5
+	icon_state = "throne5"
 
 /obj/item/stack/thrones3/ten
 	amount = 10
+	icon_state = "throne10"
 
 
 /obj/item/stack/thrones3/twenty
 	amount = 20
+	icon_state = "throne20"

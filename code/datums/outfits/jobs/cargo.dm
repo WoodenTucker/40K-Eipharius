@@ -24,6 +24,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/heads/hop
+	r_pocket = /obj/item/storage/box/coin
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/clothing/under/suit_jacket = 1,

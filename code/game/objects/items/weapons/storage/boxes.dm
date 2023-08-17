@@ -506,7 +506,25 @@
 	icon_state = "ifak"
 	startswith = list(/obj/item/bandage_pack, /obj/item/tourniquet, /obj/item/reagent_containers/hypospray/autoinjector/morphine)
 	w_class = ITEM_SIZE_SMALL
-	max_storage_space = 6
+	max_storage_space = 8
+
+/obj/item/storage/box/ifak/attack_hand(var/mob/living/carbon/human/user)
+	if(!istype(user))
+		..()
+		return
+	if((src != user.r_store) && (src != user.l_store) && (src != user.belt) && (src != user.get_inactive_hand()))
+		..()//If it's not in any of these slots then just return normally.
+		return
+	open(user)//If it's in your pocket then open it.
+
+/obj/item/storage/box/coin
+	name = "coin pouch"
+	desc = "A small coin pouch"
+	color = "#34382f"
+	icon_state = "ifak"
+	startswith = list(/obj/item/stack/thrones3)
+	w_class = ITEM_SIZE_SMALL
+	max_storage_space = 8
 
 /obj/item/storage/box/ifak/attack_hand(var/mob/living/carbon/human/user)
 	if(!istype(user))

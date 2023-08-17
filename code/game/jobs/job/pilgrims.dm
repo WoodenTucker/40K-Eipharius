@@ -361,7 +361,6 @@ Pilgrim Fate System
 				to_chat(U,"<span class='goodmood'>You are a cunning thief and criminal, work alongside the Gangers to rake in the ultimate score.((Your clothes are chameleon items and can be turned into any disguise you desire))</font></b></span>")
 				U.add_stats(rand(14,16), rand(14,16), rand(12,15), rand (15,17)) 
 				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/talon/renegade, slot_l_hand)
-				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 				if(prob(50))
 					equip_to_slot_or_store_or_drop(new /obj/item/device/batterer, slot_r_hand)
 				equip_to_slot_or_store_or_drop(new /obj/item/clothing/suit/armor/slumcoat, slot_wear_suit)
@@ -400,7 +399,6 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/clothing/shoes/prac_boots, slot_shoes)
 			equip_to_slot_or_store_or_drop(new /obj/item/device/flashlight/lantern, slot_in_backpack)
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/ring/disgracedmedicae, slot_in_backpack)
-			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='danger'><b><font size=4>THE BROKEBACK MINER</font></b></span>")
@@ -462,7 +460,6 @@ Pilgrim Fate System
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones/five, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones2/ten, slot_in_backpack) 
 				equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 				if(prob(2))
 					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
@@ -635,6 +632,7 @@ Pilgrim Fate System
 	l_hand = /obj/item/storage/firstaid/adv
 	l_ear = /obj/item/device/radio/headset/headset_sci
 	l_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/storage/box/coin
 	belt = /obj/item/storage/belt/medical/full
 	backpack_contents = list(
 	/obj/item/card/id/ring/disgracedmedicae = 1,
@@ -648,6 +646,7 @@ Pilgrim Fate System
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = null//obj/item/clothing/shoes/prac_boots
 	l_ear = null
+	r_pocket = /obj/item/storage/box/coin
 	r_ear = null
 	id_type = /obj/item/card/id/pilgrim/penitent
 	gloves = null
@@ -660,11 +659,11 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/jackboots
 	back = /obj/item/storage/backpack/satchel/warfare
 	mask = null
+	r_pocket = /obj/item/storage/box/coin
 	l_pocket = /obj/item/device/flashlight/lantern
 	belt = /obj/item/gun/projectile/revolver/villiers
 	backpack_contents = list(
 	/obj/item/ammo_magazine/a357 = 2,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	)
 
@@ -678,6 +677,7 @@ Pilgrim Fate System
 	l_pocket = /obj/item/device/flashlight/lantern
 	pda_slot = null
 	id_type = null
+	r_pocket = /obj/item/storage/box/coin
 	shoes = /obj/item/clothing/shoes/dress
 	suit_store = null
 	backpack_contents = list(
@@ -694,6 +694,7 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/dress
 	gloves = /obj/item/clothing/gloves/latex
 	l_pocket = /obj/item/device/flashlight/lantern
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	id_type = null
 	suit_store = null
@@ -713,6 +714,7 @@ Pilgrim Fate System
 	id_type = /obj/item/card/id/ring/administrator
 	l_ear = /obj/item/device/radio/headset/headset_service
 	belt = /obj/item/device/flashlight/lantern
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	backpack_contents = list(
 	/obj/item/stack/thrones = 2,
@@ -735,6 +737,7 @@ Pilgrim Fate System
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
 	pda_type = /obj/item/device/pda/penitent
+	r_pocket = /obj/item/storage/box/coin
 	l_ear = null
 	r_ear = null
 	l_pocket = /obj/item/device/flashlight/lantern
@@ -757,6 +760,7 @@ Pilgrim Fate System
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	suit = /obj/item/clothing/suit/armor/ogryn/bouncer
 	id_type = /obj/item/card/id/pilgrim/innkeeper
+	r_pocket = /obj/item/storage/box/coin
 	pda_type = /obj/item/device/pda/penitent
 	l_ear = null
 	r_ear = null
@@ -764,7 +768,6 @@ Pilgrim Fate System
 	pda_slot = null
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
-	/obj/item/stack/thrones = 2,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 
@@ -778,9 +781,14 @@ Pilgrim Fate System
 	l_ear = null
 	r_ear = null
 	id_type = null
+	r_pocket = /obj/item/storage/box/coin
 	gloves = null
 	pda_slot = null
 	l_hand = /obj/item/storage/toolbox/mechanical
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/headset_service
+	l_pocket = /obj/item/device/flashlight/lantern
+	r_pocket = /obj/item/storage/box/coin
 
 /datum/job/scavenger
     title = "Scavenger"
@@ -896,8 +904,7 @@ Pilgrim Fate System
 			equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_service, slot_l_ear) 
 			equip_to_slot_or_store_or_drop(new /obj/item/storage/backpack/satchel/warfare, slot_back) 
 			equip_to_slot_or_store_or_drop(new /obj/item/melee/classic_baton/trench_club, slot_belt) 
-			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
-			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
+			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id)  
 			equip_to_slot_or_store_or_drop(new /obj/item/stack/thrones3/twenty, slot_in_backpack) 
 			to_chat(U,"<span class='goodmood'>You're the muscle of the gang. Extract protection money and protect your fellow gang members.<b><font size=3>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
