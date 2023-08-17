@@ -53,6 +53,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_hand = /obj/item/farmshovel
+	r_pocket = /obj/item/storage/box/coin
 	belt = /obj/item/storage/plants
 	backpack_contents = list(/obj/item/seeds/potatoseed = 1,
 	/obj/item/seeds/wheatseed = 1,

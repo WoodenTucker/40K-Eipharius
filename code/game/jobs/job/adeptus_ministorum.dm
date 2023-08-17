@@ -582,6 +582,7 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
+	r_pocket = /obj/item/storage/box/coin
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 2,
@@ -605,6 +606,7 @@
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/melee/chain/mercycs
+	r_pocket = /obj/item/storage/box/coin
 	r_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
@@ -628,6 +630,7 @@
 	glasses = /obj/item/clothing/glasses/hud/health
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
 	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
 	backpack_contents = list(
@@ -651,6 +654,7 @@
 	gloves = /obj/item/clothing/gloves/sisterofbattle/brsister
 	shoes = /obj/item/clothing/shoes/jackboots/sisterofbattle/brsister
 	glasses = /obj/item/clothing/glasses/hud/health
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
 	l_hand = /obj/item/gun/projectile/boltrifle/sisterbolter
@@ -674,6 +678,7 @@
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/heads/cmo
 	r_ear = null
+	r_pocket = /obj/item/storage/box/coin
 	l_pocket = /obj/item/storage/box/ifak
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare
@@ -698,7 +703,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health
-	r_pocket = /obj/item/device/flashlight/lantern
+	r_pocket = /obj/item/storage/box/coin
+	l_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,

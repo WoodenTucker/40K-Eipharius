@@ -9,6 +9,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_service
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
@@ -32,6 +33,7 @@
 	l_ear = /obj/item/device/radio/headset/heads/hos
 	r_ear = /obj/item/device/flashlight/
 	l_pocket = /obj/item/storage/box/ifak
+	r_pocket = /obj/item/storage/box/coin
 	r_pocket = null
 	suit_store = /obj/item/gun/energy/las/hotshot
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -49,6 +51,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_service
 	l_hand = /obj/item/toy/katana/strong
+	r_pocket = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/lasgun
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,

@@ -198,7 +198,7 @@
 	l_ear = /obj/item/device/radio/headset/inquisition
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/storage/box/coin
 	suit_store = null
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
@@ -227,7 +227,7 @@
 	l_ear = /obj/item/device/radio/headset/inquisition
 	r_ear = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/storage/box/coin
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/device/flashlight/lantern = 1,
