@@ -1037,6 +1037,7 @@ Area basic template
 	icon_state = "chapel"
 	music = 'sound/newmusic/Chapel1.ogg'
 	requires_power = FALSE
+	var/consecrated = FALSE
 
 /area/cadiaoutpost/oa/service/chapel/chapeloffice
 	name = "Chapel Office"
@@ -1072,6 +1073,34 @@ Area basic template
 	name = "Chapel Vault"
 	icon_state = "chapelvault"
 	requires_power = FALSE
+
+
+/area/cadiaoutpost/oa/service/chapel/Entered(mob/living/carbon/L, atom/A)
+	. = ..()
+	if(src.consecrated == TRUE)
+		if(L.faction != "Chaos")
+			if(prob(5))
+				to_chat(L, "<span class='flick-holy'>+ I can feel His presence here... +</span>")
+				L.happiness += 3
+		else
+			L.flash_weakest_pain()
+			to_chat(L, "<span class='horror-text'>+ I can feel His presence here... +</span> ")
+			L.happiness -= 3
+			sleep(3 SECONDS)
+			//not going to be fun if they stay
+			L.danger_timer = addtimer(CALLBACK(L, /mob/living/carbon/human/.proc/overstayed), 35 SECONDS, TIMER_STOPPABLE|TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
+			to_chat(L, "<span class='horror-text'>+ I HAVE TO GET OUT OF HERE +</span> ")
+
+
+
+
+
+/area/cadiaoutpost/oa/service/chapel/Exited(mob/living/L, area/A)
+	. = ..()
+	if(src.consecrated == TRUE)
+		if(L.faction == "Chaos")
+			deltimer(L.danger_timer) //if they leave in time the timer will go away
+
 
 /area/cadiaoutpost/oa/maintenance/department/service/chapel
 	name = "Chapel Maintenance"

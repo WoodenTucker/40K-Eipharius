@@ -92,8 +92,8 @@
 			else if(!is_blind())
 				to_chat(src, "<span class='name'>[speaker_name]</span>[alt_name] talks but you cannot hear them.")
 	else
-		if(ritual_leading && speaker != src)
-			hear_ritual_responses(message) //this is where we listen for responses
+		if(src.active_ritual.ritual_active)
+			hear_ritual_responses(message, speaker) //this is where we listen for responses
 
 		if(language)
 			on_hear_say("<span class='game say'><span class='name'>[speaker_name]</span>[alt_name] [track][language.format_message(message, verb)]</span>")
@@ -320,8 +320,20 @@
 
 	to_chat(src, heard)
 
-/mob/proc/hear_ritual_responses(var/message)
-	var/cleaned_message = lowertext(trim(message))
+/mob/proc/hear_ritual_responses(var/message, var/mob/living/carbon/human/speaker)
+	//pulls our response phrase from the active ritual
 
-	if(cleaned_message == "test")
-		src.correct_ritual_responses++
+
+	var/response_regex = regex("\\b(?:[src.active_ritual.response_phrase])\\b", "i")
+
+
+	if(findtext(message, response_regex))
+		to_chat(src, "Correct response [message]")
+		src.active_ritual.correct_responses++
+		//we use an associated list to create or overwrite entries via key its probably the fastest way since |= is just an abstracted find loop
+		//they probably can't change their ckey so we'll use that as the key and assign the value to their whole mob
+		src.active_ritual.ritualists[speaker.ckey] = speaker
+		to_chat(src, src.active_ritual.ritualists)
+
+	if(src.active_ritual.correct_responses >= src.active_ritual.min_chants)
+		to_chat(src, "We did it boss, we did the ritual!")

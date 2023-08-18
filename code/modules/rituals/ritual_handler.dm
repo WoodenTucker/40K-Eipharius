@@ -1,14 +1,19 @@
 //Here is where the acutal functions act upon our datums, includes the initial switch statement for finding our specific little ritual :) - wel
 
 
-/mob/living/proc/find_and_begin_ritual(phrase, ritual_leader)
+/mob/living/proc/find_and_begin_ritual(phrase, var/mob/ritual_leader)
 	var/cleaned_phrase = lowertext(trim(phrase)) //trims the devil white space and puts our text to lowerspace
 	var/datum/current_ritual = new /datum/ritual //we will set our ritual using the switch
 
+	if(ritual_leader.can_lead_ritual == FALSE)
+		to_chat(ritual_leader, "I'm still exhausted from my last ritual attempt...")
+		return;
 
+
+//for now put stuff in the switch, this could probably be made more efficient in the future
 	switch(cleaned_phrase)
 		if("emperor preserve us")
-			current_ritual = new /datum/ritual/preserve_us
+			current_ritual = new /datum/ritual/preserve_us //attaches a fresh datum
 			to_chat(ritual_leader, "I see your ritual beginning! [current_ritual]");
 
 		else
@@ -23,38 +28,67 @@
 
 
 /mob/living/proc/run_ritual(var/datum/ritual/current_ritual, var/mob/living/carbon/ritual_leader)
-	if(ritual_leader.can_lead_ritual == FALSE)
-		to_chat(ritual_leader, "I'm still exhausted from my last ritual attempt...")
-		return;
 
-	if(current_ritual.location_specific == TRUE)
 
-		//theres gotta be a better way to compare areas but idk what
-		var/area/ritual_leader_area = get_area(ritual_leader)
-		var/area/ritual_area = current_ritual.ritual_area
+	//if this ritual is job restricted runs a check to ensure you got the job mang!
+	// if(current_ritual.allowed_jobs.len > 0)
+	// 	var/datum/job/J = SSjobs.GetJob(ritual_leader.job)
+	// 	if(!is_type_in_list(J,current_ritual.allowed_jobs))
+	// 		return
+
+
+	// if(current_ritual.location_specific == TRUE)
+
+		//theres gotta be a better way to compare areas but idk what I'm rusty as shit at DM
+		// var/area/ritual_leader_area = get_area(ritual_leader)
+		// var/area/ritual_area = current_ritual.ritual_area
 
 		// if(ritual_leader_area.type != ritual_area)
 		// 	to_chat(ritual_leader, "You cannot perform this ritual here...")
 		// 	return;
 
 
-
-	//this while is the most dangerous part, it must always have a way to break/exit to prevent infinite loops
-	ritual_leader.ritual_leading = TRUE
-
-
-	spawn(current_ritual.timeout) ritual_fails(current_ritual, ritual_leader)
+	ritual_leader.active_ritual = current_ritual
+	ritual_leader.can_lead_ritual = FALSE //cant lead 2 rituals at once
+	ritual_leader.active_ritual.ritualists[ritual_leader.ckey] = ritual_leader //Automatically adds the ritual leader as a ritualist so they don't necessarily have to say response
 
 
 
 
+	//timer to fail ritual, sets timer onto mob so it can be cancelled in hear_say if ritual succeeds.
+	current_ritual.timer_id = addtimer(CALLBACK(src, .proc/ritual_ends), current_ritual.timeout, TIMER_STOPPABLE|TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
 
 
-/mob/living/proc/ritual_fails(var/datum/ritual/current_ritual,var/mob/living/carbon/ritual_leader)
-	ritual_leader.ritual_leading = FALSE
-	ritual_leader.correct_ritual_responses = 0
-	ritual_leader.can_lead_ritual = FALSE
-	spawn(300000)
-		ritual_leader.can_lead_ritual = TRUE
+
+
+/mob/living/proc/ritual_ends()
+    var/datum/ritual/current_ritual = src.active_ritual
+    current_ritual.ritual_active = FALSE
+
+
+    var success = FALSE // Assume failure by default
+
+    // Did we say the thing enough and did we have enough friends?
+    if (current_ritual.correct_responses >= current_ritual.min_chants && current_ritual.ritualists.len >= current_ritual.min_ritualists)
+        if (current_ritual.additional_req_check != null)
+            success = call(current_ritual.additional_req_check)(src) == TRUE
+        else
+            success = TRUE // No additional check required, so it's a success
+
+    if (success)
+        to_chat(src, "Ritual Succeeds!")
+        call(current_ritual.success_result)(src)
+    else
+        to_chat(src, "The ritual fails...")
+        call(current_ritual.fail_result)(src) // Calls our fail result function
+
+    addtimer(CALLBACK(src, .proc/can_ritual_again), 5 SECONDS, TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
+    return;
+
+
+/mob/living/proc/can_ritual_again()
+	src.can_lead_ritual = TRUE
+	to_chat(src, "I feel like I can ritual again!")
 	return;
+
 
