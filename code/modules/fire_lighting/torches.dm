@@ -299,6 +299,13 @@
 	if(isflamesource(W))
 		light()
 
+/obj/item/pyre/self_lit/church // Pyre specially for the catacombs since it looks nicer than the standard one
+	name = "Church pyre"
+	desc = "A pyre mostly used for funerals or to decorate religious sites."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "pyreplace1"
+	item_state = "pyreplace1"
+
 /obj/item/campfire
 	icon = 'icons/obj/firepit.dmi'
 	icon_state = "cauldron0"

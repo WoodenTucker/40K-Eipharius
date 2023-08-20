@@ -178,6 +178,24 @@
 	desc = "A more robust socket for light tubes that demand more power."
 	light_type = /obj/item/light/tube/large
 
+/obj/machinery/light/blue
+	name = "light"
+	light_type = /obj/item/light/tube/blue
+
+/obj/machinery/light/darkblue
+	name = "light"
+	light_type = /obj/item/light/tube/darkblue
+
+/obj/machinery/light/red
+	name = "light"
+	light_type = /obj/item/light/tube/red
+
+/obj/machinery/light/purple
+	name = "light"
+	light_type = /obj/item/light/tube/purple
+
+
+
 // create a new lighting fixture
 /obj/machinery/light/New(atom/newloc, obj/machinery/light_construct/construct = null)
 	..(newloc)
@@ -568,6 +586,22 @@
 	name = "large light tube"
 	brightness_range = 10
 	brightness_power = 6
+
+/obj/item/light/tube/blue
+	color = "#33A2FF"
+	brightness_color = "#33A2FF"
+
+/obj/item/light/tube/darkblue
+	color = "#122ECB"
+	brightness_color = "#122ECB"
+
+/obj/item/light/tube/red
+	color = "#C12016"
+	brightness_color = "#C12016"
+
+/obj/item/light/tube/purple
+	color = "#B41AE6"
+	brightness_color = "#B41AE6"
 
 /obj/item/light/bulb
 	name = "light bulb"

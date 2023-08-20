@@ -110,7 +110,7 @@
 	max_shells = 6
 	force = 20
 	accuracy = 0.5
-	fire_delay= 14
+	fire_delay= 6
 	burst = 2
 	ammo_type = /obj/item/ammo_casing/a357
 	sales_price = 5

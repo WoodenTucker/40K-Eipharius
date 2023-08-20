@@ -10,7 +10,7 @@
 	atom_flags = ATOM_FLAG_CLIMBABLE
 	has_coldbreath = FALSE // No more freezing to death indoors.
 	var/has_light = TRUE
-	var/can_generate_water = TRUE
+	var/can_generate_water = FALSE
 	var/can_be_dug = TRUE
 
 /turf/simulated/floor/dirty/fake

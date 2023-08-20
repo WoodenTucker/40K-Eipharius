@@ -7,6 +7,30 @@ GLOBAL_LIST_EMPTY(red_captured_zones) // = list()
 GLOBAL_LIST_EMPTY(mortar_areas) // = list()
 
 
+
+/area/cadiaoutpost/new_hive/hive_city
+	name = "Hive City"
+	icon_state = "village"
+	music = 'sound/newmusic/General_Ambient2.ogg'
+	requires_power = FALSE
+	dynamic_lighting = 1
+
+/area/cadiaoutpost/new_hive/caves
+	name = "Hive Depths" // Regular caves - little to no danger. Soft ambience.
+	icon_state = "cave"
+	music = 'sound/newmusic/General_Ambient2.ogg'
+	var/instability = 0
+
+
+
+
+
+
+
+
+
+///////
+
 /area/constructionsite
 	name = "\improper Construction Site"
 	icon_state = "storage"

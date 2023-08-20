@@ -53,20 +53,9 @@ for reference:
 
 */
 
-//Barricades!
-/obj/structure/barricade
-	name = "barricade"
-	desc = "This space is blocked off by a barricade."
-	icon = 'icons/obj/structures.dmi'
-	icon_state = "barricade"
-	anchored = 1.0
-	density = 1
-	var/health = 100
-	var/maxhealth = 100
-	var/material/material
-	atom_flags = ATOM_FLAG_CLIMBABLE
 
-/obj/structure/barricade/New(var/newloc, var/material_name)
+/*
+/obj/structure/warfare/barricade/concrete_barrier/New(var/newloc, var/material_name)
 	..(newloc)
 	if(!material_name)
 		material_name = "wood"
@@ -80,10 +69,10 @@ for reference:
 	maxhealth = material.integrity
 	health = maxhealth
 
-/obj/structure/barricade/get_material()
+/obj/structure/warfare/barricade/concrete_barrier/get_material()
 	return material
 
-/obj/structure/barricade/attackby(obj/item/W as obj, mob/user as mob)
+/obj/structure/warfare/barricade/concrete_barrier/attackby(obj/item/W as obj, mob/user as mob)
 	if (istype(W, /obj/item/stack))
 		var/obj/item/stack/D = W
 		if(D.get_material_name() != material.name)
@@ -114,12 +103,12 @@ for reference:
 			return
 		..()
 
-/obj/structure/barricade/proc/dismantle()
+/obj/structure/warfare/barricade/concrete_barrier/proc/dismantle()
 	material.place_dismantled_product(get_turf(src))
 	qdel(src)
 	return
 
-/obj/structure/barricade/ex_act(severity)
+/obj/structure/warfare/barricade/concrete_barrier/ex_act(severity)
 	switch(severity)
 		if(1.0)
 			visible_message("<span class='danger'>\The [src] is blown apart!</span>")
@@ -132,13 +121,14 @@ for reference:
 				dismantle()
 			return
 
-/obj/structure/barricade/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)//So bullets will fly over and stuff.
+/obj/structure/warfare/barricade/concrete_barrier/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)//So bullets will fly over and stuff.
 	if(air_group || (height==0))
 		return 1
 	if(istype(mover) && mover.checkpass(PASS_FLAG_TABLE))
 		return 1
 	else
 		return 0
+*/
 
 //Actual Deployable machinery stuff
 /obj/machinery/deployable

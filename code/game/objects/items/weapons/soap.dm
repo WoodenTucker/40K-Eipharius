@@ -108,3 +108,13 @@
 /obj/item/soap/gold
 	desc = "One true soap to rule them all."
 	icon_state = "soapgold"
+
+/obj/item/soap/slannesh
+	icon = 'icons/map_project/fluff_items.dmi'
+	desc = "This smells of alchohol, aprhodisiacs and other narcotics."
+	icon_state = "soapslaanesh"
+
+/obj/item/soap/soapimp
+	icon = 'icons/map_project/fluff_items.dmi'
+	desc = "An imperial soap bar, the emperor protects and cleans."
+	icon_state = "soapimp"

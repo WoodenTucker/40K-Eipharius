@@ -105,3 +105,14 @@
 /mob/living/simple_animal/hostile/viscerator/death(gibbed, deathmessage, show_dead_message)
 	..(null,"is smashed into pieces!", show_dead_message)
 	qdel(src)
+
+/mob/living/simple_animal/hostile/syndicate/ranged/space/cpt // Like the Veteran but with different icon
+	icon_state = "traitorcpt_khorne"
+	icon = 'icons/map_project/creatures.dmi'
+	icon_living = "traitorcpt_khorne"
+	icon_dead = "traitorguardcpt_dead"
+	name = "Traitor Capitan"
+	desc = "A traitor capitan, this one seems to have been gifted by the ruinous powers, making him stronger than the rest."
+	maxHealth = 350
+	health = 350
+	speed = 2
