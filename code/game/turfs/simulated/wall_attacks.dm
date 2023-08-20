@@ -189,7 +189,7 @@
 
 		if(istype(W,/obj/item/weldingtool))
 			var/obj/item/weldingtool/WT = W
-			if(prob(85))
+			if(prob(95))
 				visible_message("[user] cuts way at the wall, it will take a few more passes until we're done!")
 				playsound(src, 'sound/effects/lasercutter.ogg', 100, 1, 1)
 				return			

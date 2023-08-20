@@ -411,3 +411,273 @@
 /turf/simulated/floor/beach/water/New()
 	..()
 	overlays += image("icon"='icons/misc/beach.dmi',"icon_state"="water5","layer"=BASE_MOB_LAYER+0.1)
+
+/turf/simulated/floor/concrete
+	name = "concrete floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "concrete"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/darkfloor
+	name = "steel dark floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "steel_dark"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/darksteel_floor
+	name = "steel floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "steelnew"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/surface_floor
+	name = "surface"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "surface"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/factory_floor
+	name = "plated floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "lev"
+	initial_flooring = /decl/flooring/tiling
+
+// TOUCH SOME GRASS
+
+/turf/simulated/floor/grass
+	name = "grass"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "grass3"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/grass/dark
+	name = "dark grass"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "grass_dark"
+	initial_flooring = /decl/flooring/tiling
+
+
+// Ceramic Flooring
+
+/turf/simulated/floor/ceramic
+	name = "ceramic flooring"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "newstone2"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/ceramic/surgery
+	name = "grey ceramic flooring"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "surgery"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/ceramic/surgery2
+	name = "grey ceramic flooring"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "surgery2"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/ceramic/old
+	name = "ceramic flooring"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "newstone4"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/ceramic/blackstone
+	name = "black ceramic flooring"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "bluestone2"
+	initial_flooring = /decl/flooring/tiling
+
+// Wooden flooring
+
+/turf/simulated/floor/darkwood
+	name = "wooden floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "dark_wood"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/darkwood/rotten
+	name = "decrepit wooden floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "troom3"
+	initial_flooring = /decl/flooring/tiling
+
+// Fancy floors (For the Gov or some housing)
+
+/turf/simulated/floor/fancyfloor
+	name = "fancy floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "metrofull"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/fancyfloor/edges
+	name = "fancy floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "metroedges"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/fancyfloor/marble
+	name = "marble floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "marbletile"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/fancyfloor/coralg
+	name = "coral granite floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "coralgranite"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/fancyfloor/gray_white
+	name = "gray & white flooring"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "graywhite"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/fancyfloor/carpet
+	name = "red carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpbet2side"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/middle
+	name = "red carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpbet2"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/grey
+	name = "grey carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpet2side"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/grey/middle
+	name = "grey carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpet2"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/blue
+	name = "blue carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "blucarpet2side"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/blue/middle
+	name = "blue carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpet3"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/green
+	name = "green carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpbet23side"
+	initial_flooring = /decl/flooring/carpet
+
+/turf/simulated/floor/fancyfloor/carpet/green/middle
+	name = "green carpet"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "carpet0"
+	initial_flooring = /decl/flooring/carpet
+
+// Stone Flooring here
+
+/turf/simulated/floor/stone/crafted_floor
+	name = "stone path"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stonecrafted"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/old
+	name = "old stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stonefloor"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/old2
+	name = "old stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stonefloor2"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/old3
+	name = "old stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stonefloor3"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/old4
+	name = "old stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stonefloor4"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/ancient_stone_floor
+	name = "ancient stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stoney"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/ancient_stone_old
+	name = "ancient stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stone_old"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/ancient_stone_floor3
+	name = "ancient stone floor"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "stoning"
+	initial_flooring = /decl/flooring/tiling
+
+/turf/simulated/floor/stone/seabed
+	name = "seabed"
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "seabed"
+	initial_flooring = /decl/flooring/tiling
+
+///// Floor Decals /////
+
+/obj/effect/floor_decal/newcorner/stone
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "sborder1"
+
+/obj/effect/floor_decal/newcorner/stone/corner
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "sborder2"
+
+/obj/effect/floor_decal/newcorner/caveramp
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "caveramp"
+
+/obj/effect/floor_decal/newcorner/grass
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "grass1"
+
+/obj/effect/floor_decal/newcorner/trench_flooring
+	icon = 'icons/map_project/floors.dmi'
+	icon_state = "trench_flooring"
+
+/obj/effect/floor_decal/newcorner/mine_walls
+	icon = 'icons/turf/walls.dmi'
+	icon_state = "2"
+
+/obj/effect/floor_decal/newcorner/rails
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "rail"
+	color = "grey" // Else it looks too shining and does not fit
+
+/obj/effect/floor_decal/newcorner/crater_big
+	icon = 'icons/turf/trenches_turfs.dmi'
+	icon_state = "l1"
+
+/obj/effect/floor_decal/newcorner/crater_small
+	icon = 'icons/turf/trenches_turfs.dmi'
+	icon_state = "crater"
+
+/obj/effect/floor_decal/newcorner/entrace
+	icon = 'icons/map_project/gate.dmi'
+	icon_state = "entrance"

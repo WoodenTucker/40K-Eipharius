@@ -978,7 +978,7 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 2,
+	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel/krieg = 1

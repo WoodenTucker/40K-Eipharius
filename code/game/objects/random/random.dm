@@ -569,7 +569,7 @@ obj/random/obstruction //Large objects to block things off in maintenance
 	icon_state = "cultgirder"
 
 obj/random/obstruction/spawn_choices()
-	return list(/obj/structure/barricade,
+	return list(/obj/structure/warfare/barricade/concrete_barrier,
 				/obj/structure/girder,
 				/obj/structure/girder/displaced,
 				/obj/structure/girder/reinforced,

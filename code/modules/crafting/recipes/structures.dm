@@ -34,6 +34,6 @@
 	name = "Barricade"
 	parts = list(/obj/item/metal_bar = 4, /obj/item/stack/material/steel/ = 2)
 	tools = list(/obj/item/weldingtool = 1)
-	result = list(/obj/structure/barricade = 1)
+	result = list(/obj/structure/warfare/barricade/concrete_barrier = 1)
 	time = 60
 	base_chance = 100

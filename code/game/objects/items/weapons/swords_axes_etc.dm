@@ -476,6 +476,22 @@
 	block_chance = 25
 	weapon_speed_delay = 8
 
+
+/obj/item/melee/sword/machete/chopper/heavy/adamantine
+	name = "heavy iron chopper"
+	desc = "A heavy primitive blade made of adamanantine, a common sight in the underhives of imperial worlds."
+	icon_state = "scrapsabre"
+	item_state = "salvagedmachete"
+	color = "#848484"
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	w_class = ITEM_SIZE_LARGE //if its heavy, its slow!
+	slot_flags = SLOT_BELT
+	force = 31
+	force_wielded = 37
+	armor_penetration = 15
+	block_chance = 30
+	weapon_speed_delay = 8
+
 /obj/item/melee/sword/machete/chopper/heavy/slayer
 	name = "heavy blessed chopper"
 	desc = "A heavy blessed blade made of xenos alloy, it seems unnaturally heavy."

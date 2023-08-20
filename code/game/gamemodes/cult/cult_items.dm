@@ -118,3 +118,77 @@
 /obj/item/clothing/suit/space/cult/New()
 	..()
 	slowdown_per_slot[slot_wear_suit] = 1
+
+
+
+/obj/item/clothing/suit/cultist
+	name = "chaos cultist garbs"
+	desc = "A garment worn by followers of the ruinous powers, truly hard to conceal your allegiance with this honestly."
+	icon_state = "workship_tunic"
+	item_state = "workship_tunic"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	armor = list(melee = 25, bullet = 35, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
+
+/obj/item/clothing/suit/witchhunter
+	name = "Witch Hunter Garments"
+	desc = "A garment worn by the Ordo Hereticus, despite looking like your usual clothes, these have reinforced materials below that protect from most small to medium caliber and sharp weapons."
+	icon = 'icons/map_project/ordo_hereticus.dmi'
+	armor = list(melee = 75, bullet = 65, laser = 65, energy = 55, bomb = 55, bio = 85, rad = 100)
+	icon_state = "femquisitor-armor_worn"
+	item_state = "femquisitor-armor_worn"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/head/witchhunter_hat
+	name = "Ordo Hereticus Hat"
+	icon = 'icons/map_project/ordo_hereticus_helmet.dmi'
+	icon_state = "femquisitor-hat_worn"
+	desc = "A hat worn by the Ordo Hereticus, or more often called 'Witch Hunters' due the tasks they've got to do."
+	flags_inv = BLOCKHAIR
+	armor = list(melee = 65, bullet = 55, laser = 55, energy = 55, bomb = 75, bio = 55, rad = 100) //We make the hat actually useful for the witch hunters to wear + Actually protects = Fear
+
+/*
+
+// Hoods - Mostly from Lifeweb, decided to port these cause certain parties (Cultists) might need some face cover & disguises, plus some of these look nice and cool to conceal weaponary and the like, aswell as name, etc.
+
+/obj/item/clothing/suit/hood
+	var/hood_state
+	var/hooded = FALSE
+
+/obj/item/clothing/suit/hood/RightClick(mob/living/carbon/human/user as mob)
+	if(hooded)
+		icon_state = initial(icon_state)
+		hooded = FALSE
+	else
+		icon_state = hood_state
+		hooded = TRUE
+	user.update_inv_wear_suit(1)
+	user.update_icons(1)
+	user.update_hair(1)
+
+/obj/item/clothing/suit/hood/monk
+	name = "Monk cloak"
+	desc = "The cloak of devotion."
+	icon_state = "monk"
+	item_state = "monk"
+	hood_state = "monk-hooded"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/hood/thief
+	name = "Grave robber cloak"
+	desc = "The cloak of silence."
+	icon_state = "thief"
+	item_state = "thief"
+	hood_state = "thief-hooded"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+/obj/item/clothing/suit/hood/donor/absenceofwords/blackcloak
+	name = "Black cloak"
+	desc = "The cloak of silence."
+	icon_state = "donor_absenceofwords_blackcape"
+	item_state = "donor_absenceofwords_blackcape"
+	hood_state = "donor_absenceofwords_blackcapehood"
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+
+
+
+*/

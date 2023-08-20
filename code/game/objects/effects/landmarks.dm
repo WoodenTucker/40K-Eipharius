@@ -649,6 +649,56 @@ Template:
 				/obj/item/clothing/accessory/armguards/ballistic = 2,
 				/obj/item/grenade/frag/high_yield/homemade = 1)
 
+
+
+/obj/random/exploration
+	name = "random exploration loot"
+	desc = "Low grade loot that is often around 50-100 thrones worth."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "giftpaper"
+
+/obj/random/exploration/spawn_choices()
+	return list(/obj/item/exploration_loot = 3,
+				/obj/item/exploration_loot/cloth_roll = 4,
+				/obj/item/exploration_loot/sealed_enve = 2,
+				/obj/item/exploration_loot/chem_package = 2,
+			    /obj/item/exploration_loot/package = 3,
+				/obj/item/exploration_loot/case = 2,
+				/obj/item/exploration_loot/odd_book = 2,
+				/obj/item/exploration_loot/guard_diary = 1,
+				/obj/item/exploration_loot/shiny_gem = 1,
+				/obj/item/exploration_loot/map = 1,
+                /obj/item/exploration_loot/spicecase = 1,
+                /obj/item/exploration_loot/lootbox = 1,
+                /obj/item/exploration_loot/imperial_book = 1)
+
+/obj/random/exploration/high
+	name = "random high quality exploration loot"
+	desc = "High grade loot that is often around 100-250 thrones worth."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "zrbite"
+
+/obj/random/exploration/high/spawn_choices()
+	return list(/obj/item/exploration_loot/map = 3,
+			    /obj/item/exploration_loot/drugs = 3,
+				/obj/item/exploration_loot/elerium = 1,
+				/obj/item/exploration_loot/guard_diary = 2,
+				/obj/item/exploration_loot/bm_file = 1,
+				/obj/item/exploration_loot/shiny_gem = 2,
+				/obj/item/exploration_loot/zrbite = 1,
+				/obj/item/exploration_loot/elerium = 1,
+				/obj/item/exploration_loot/elerium_ingot = 0.7,
+				/obj/item/exploration_loot/zrbite_ingot = 0.7,
+                /obj/item/exploration_loot/artiaxe = 0.5,
+                /obj/item/exploration_loot/goldbar = 0.5)
+
+
+
+
+
+
+
+
 /// THIS IS THE END OF LOOT SPAWNERS. TO DO: Tech, Xenos Spawners.
 
 // MOB AND ANIMAL SPAWNERS
