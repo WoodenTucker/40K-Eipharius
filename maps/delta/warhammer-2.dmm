@@ -142,10 +142,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"ajM" = (
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "ajQ" = (
 /obj/structure/sign/plate/stoneshrine{
 	pixel_x = 32
@@ -169,21 +165,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"akg" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/suit/armor/cuirass,
-/obj/item/clothing/suit/armor/salvage,
-/obj/item/clothing/suit/armor/guardsman/mercenary{
-	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
-	},
-/obj/item/clothing/suit/miner{
-	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "akO" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 4
@@ -404,13 +385,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"aya" = (
-/obj/effect/floor_decal/chapel{
-	dir = 1
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "ayv" = (
 /obj/structure/hivedecor/artillery,
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -655,12 +629,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
-"aLJ" = (
-/obj/structure/table/marble,
-/obj/item/clothing/suit/inquisitor,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "aMl" = (
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -805,11 +773,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"aTW" = (
-/obj/structure/bed/chair/wood/wings,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "aUn" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/pen/multi{
@@ -861,23 +824,6 @@
 	},
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"aWZ" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 10;
-	icon_state = "spline_fancy"
-	},
-/obj/item/melee/sword/broadsword/adamantine{
-	force = 33;
-	force_wielded = 44;
-	name = "heavy broadsword";
-	desc = "A heavy iron broadsword blessed by Saint Sabbat."
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "aXl" = (
 /obj/machinery/door/airlock/glass_medical{
 	color = null;
@@ -927,15 +873,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"aYD" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/head/inqhelm,
-/obj/item/clothing/head/inqhelm/rare,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "aYR" = (
 /obj/effect/floor_decal/spline/fancy/wood/cee,
 /obj/effect/floor_decal/spline/plain,
@@ -1531,13 +1468,6 @@
 "bzM" = (
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"bAf" = (
-/obj/structure/table/marble,
-/obj/item/clothing/suit/armor/ordohereticus,
-/obj/effect/floor_decal/turf/brick,
-/obj/item/melee/chain/inqcs,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "bAu" = (
 /mob/living/simple_animal/hostile/undead,
 /turf/simulated/floor/darkfloor{
@@ -1559,11 +1489,13 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "bAJ" = (
-/obj/effect/floor_decal/chapel{
-	dir = 4
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus";
+	pixel_y = 10
 	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "bAQ" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -1727,9 +1659,12 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "bNe" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
+	name = "imperial tome"
+	},
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "bNq" = (
 /turf/simulated/wall/castle,
@@ -2437,11 +2372,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
-"cuX" = (
-/turf/unsimulated/wall{
-	icon_state = "r_wall-2"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "cva" = (
 /obj/structure/table/reinforced{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -2562,10 +2492,6 @@
 /obj/item/card/id/key/grand/inq{
 	access = list(5,63,331,230,211,202,302,10)
 	},
-/obj/item/gun/projectile/bolter_pistol/inquis,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomsupply,
@@ -2833,6 +2759,16 @@
 	},
 /obj/item/clothing/head/bountyhead,
 /obj/item/clothing/suit/armor/bountyhunter2,
+/obj/item/clothing/suit/scum{
+	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
+	},
+/obj/item/storage/pill_bottle/zoom,
+/obj/item/storage/pill_bottle/happy,
+/obj/item/clothing/head/scum{
+	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=15,"bomb"=10,"bio"=10,"rad"=15)
+	},
+/obj/item/clothing/under/rank/penitent,
+/obj/item/clothing/under/rank/penitent,
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "cKj" = (
@@ -2949,15 +2885,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"cRO" = (
-/obj/item/gun/projectile/bolter_pistol/inquis,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "cSd" = (
 /obj/structure/hivedecor/statue7,
 /obj/structure/torchwall/service{
@@ -3736,28 +3663,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"dAn" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/ammo_box/shotgun/msslug,
-/obj/item/ammo_magazine/c44/ap,
-/obj/item/ammo_magazine/c44/ms,
-/obj/item/ammo_magazine/a357/ap,
-/obj/item/ammo_magazine/a357/ms,
-/obj/item/ammo_magazine/box/a556/mg08,
-/obj/item/ammo_magazine/c556/ap,
-/obj/item/ammo_magazine/c556/ms,
-/obj/item/ammo_magazine/a762/ms,
-/obj/item/ammo_magazine/a762/ap,
-/obj/item/ammo_magazine/mc9mm/ap,
-/obj/item/ammo_magazine/mc9mm/ms,
-/obj/item/ammo_magazine/mc45mm/ap,
-/obj/item/ammo_magazine/mc45mm/ms,
-/obj/item/ammo_magazine/c50/ms,
-/obj/item/ammo_magazine/c50/ap,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "dBd" = (
 /obj/structure/closet/hive/iron_c{
 	anchored = 1
@@ -3770,10 +3675,6 @@
 /obj/item/clothing/under/inquisitor,
 /obj/item/clothing/head/inquisitor,
 /obj/item/clothing/gloves/thick/swat/combat,
-/obj/item/gun/projectile/bolter_pistol/inquis,
-/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
-/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
-/obj/item/ammo_magazine/bolt_pistol_magazine/kp,
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomitemtown,
 /obj/random/loot/randomsupply,
@@ -3876,13 +3777,12 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "dFX" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/machinery/button/remote/blast_door/lever{
-	id = "inq1";
-	name = "EXIT LEVER"
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I have a reputation, Modile, a reputation as a fair, honest man who treats his soldiers well and supports them in the face of darkness. Potentially, that reputation makes me soft. It seems I understand failure and forgive it. Some, like Kowle, believe me to be a weak commissar, not prepared to take the action my rank demands. Not prepared to enforce field discipline where I see it failing. I am an Imperial commissar. I will enflame the weak, support the wavering, guide the lost. I will be all things to all men who need me. But I will also punish without hesitation the incompetent, the cowardly, and the treasonous. Choose, for courtesy's sake, summary execution or a firing squad of your own men.";
+	name = "inquisitor tome"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "dGc" = (
 /obj/effect/floor_decal/turf/metal/eight,
@@ -4643,18 +4543,17 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "euB" = (
-/obj/item/clothing/head/inqhelm/stealth,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/gun/projectile/automatic/autogrim/krieg,
-/obj/item/gun/projectile/automatic/machinepistol/a80,
-/obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle,
-/obj/item/gun/projectile/automatic/m22/combatrifle,
-/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered,
-/obj/item/gun/projectile/shotgun/pump/shitty/magrave,
 /obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "evb" = (
 /obj/structure/bed/chair/wood/fancy/comfy2{
 	dir = 4
@@ -5136,14 +5035,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"eTa" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/snacks/beetsoup,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "eTc" = (
 /turf/simulated/floor/stone/ancient_stone_floor3,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -5278,15 +5169,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"eVL" = (
-/obj/structure/statue/verina,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "eWp" = (
 /obj/machinery/light/blue,
 /obj/item/modular_computer/console/preset/civilian/professional,
@@ -5323,15 +5205,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"eZl" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "eZz" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -5440,26 +5313,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/new_hive/caves)
-"fgZ" = (
-/obj/item/clothing/suit/armor/bulletproof/vest{
-	armor = list("melee"=50,"bullet"=65,"laser"=65,"energy"=10,"bomb"=25,"bio"=0,"rad"=0)
-	},
-/obj/item/clothing/accessory/armguards,
-/obj/item/clothing/accessory/armguards/ablative,
-/obj/item/clothing/accessory/legguards,
-/obj/item/clothing/accessory/legguards/ablative,
-/obj/item/clothing/accessory/legguards/ballistic,
-/obj/item/clothing/accessory/armguards/ballistic,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/plastique,
-/obj/item/plastique,
-/obj/item/landmine,
-/obj/structure/table/rack/dark,
-/obj/item/grenade/frag,
-/obj/item/grenade/frag,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
 "fht" = (
 /obj/effect/floor_decal/newcorner/green/corner{
@@ -5654,15 +5507,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"fpe" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/reagent_containers/food/snacks/meatsteak,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "fpZ" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
@@ -5808,14 +5652,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"fvU" = (
-/obj/item/clothing/head/helmet/mining,
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "fvY" = (
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -6211,18 +6047,6 @@
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
-/area/cadiaoutpost/new_hive/caves)
-"fPu" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/mask/chameleon,
-/obj/item/clothing/mask/chameleon,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/mask/gas/security/agent,
-/obj/item/clothing/mask/gas/security/agent,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
 "fPO" = (
 /obj/effect/floor_decal/newcorner/red/quarter,
@@ -7135,15 +6959,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/barracks)
-"gLb" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/ammo_magazine/bolt_rifle_magazine,
-/obj/item/ammo_magazine/bolt_rifle_magazine/kp,
-/obj/structure/table/rack/dark,
-/obj/item/gun/projectile/boltrifle/lockebolter/drusian,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "gMk" = (
 /obj/machinery/door/airlock/glass_medical{
 	color = null;
@@ -8338,13 +8153,12 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "hVq" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "I have been informed that the acolytes have spies amongst us. Despite our differences I cannot imagine that they're looking to harm us, or even impede our mission here. I cannot in truth see much reason to prevent them from knowing of our progress, I am inclined to just let them get their information rather than waste resources and encourage doubt and suspicion amongst us.";
+	name = "Research Notes"
 	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/random/loot/meleespawner,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "hVy" = (
 /obj/structure/table/reinforced{
@@ -8530,6 +8344,14 @@
 	icon = "icons/map_project/furniture_and_decor.dmi";
 	icon_state = "woodentable";
 	dir = 6
+	},
+/obj/item/book/manual{
+	name = "Blue Love: A Ciaphas Cain Story - Ch.1";
+	desc = "In the grim darkness of the far future, there is only war. But amidst the endless conflict and bloodshed, there are moments of tenderness and love that shine like beacons in the darkness. She was an Imperial Guardswoman, a tough and skilled fighter who had seen more battles than she could count. Her name was Corporal Lyra Valtair, and she had been assigned to the 42nd Cadian Regiment, fighting on the front lines of the war against the Tau Empire. He was a Tau Fire Warrior, a member of the rapidly expanding alien empire that had clashed with the Imperium of Man. His name was Shas'ui Cain, and he had been tasked with leading a strike team to infiltrate the Imperial lines and gather vital intelligence."
+	},
+/obj/item/book/manual{
+	name = "Blue Love: A Ciaphas Cain Story - Ch.2";
+	desc = "Lyra and Kais Cain met on the battlefield, their first encounter a brutal firefight that left both sides battered and bloodied. But as Lyra watched Kais fighting with fierce determination, something stirred within her heart. She couldn't explain it, but there was something about this enemy warrior that drew her to him.Over the course of several skirmishes, Lyra and Kaisaphas Cain found themselves crossing paths again and again. They fought with all their might, but each time they saw each other, there was a glimmer of recognition in their eyes.Finally, during a lull in the fighting, Lyra approached Kais under a flag of truce. She held out her hand, and to her surprise, Kais took it. They spoke for a few minutes, sharing stories of their homeworlds and their families. They both knew that they were supposed to be enemies, but something had changed between them. They both felt a connection, a sense of understanding that went beyond the battle lines. As the days went by, Lyra and Kais continued to meet secretly, stealing moments of peace amidst the chaos of war. They would talk for hours, sharing their hopes and dreams, and as they did, their feelings for each other grew stronger. They knew that they were risking everything by being together, but they couldn't help themselves."
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
@@ -9039,17 +8861,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"iCC" = (
-/obj/item/clothing/shoes/jackboots/cadian,
-/obj/item/clothing/gloves/combat/cadian,
-/obj/item/clothing/under/cadian_uniform,
-/obj/item/clothing/suit/armor/guardsman/carapace,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/head/helmet/guardhelmet,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "iCS" = (
 /obj/machinery/door/blast/shutters/open{
 	dir = 4
@@ -9079,13 +8890,6 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/new_hive/caves)
-"iEj" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/rack/dark,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
 "iEv" = (
 /obj/machinery/light{
@@ -9167,7 +8971,7 @@
 /obj/item/cell/lasgun,
 /obj/item/cell/lasgun,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "iHu" = (
 /obj/structure/table/reinforced{
 	color = "grey";
@@ -9290,11 +9094,6 @@
 	},
 /turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"iNd" = (
-/obj/structure/flora/pottedplant/bamboo,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "iNs" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 6
@@ -9925,20 +9724,13 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "jst" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/steel,
-/obj/effect/floor_decal/spline/fancy/wood{
+/obj/item/grenade/frag,
+/obj/structure/table/rack/dark,
+/obj/item/grenade/frag,
+/turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/obj/item/flame/candle{
-	wax = 20000
-	},
-/obj/item/flame/candle,
-/obj/item/flame/candle,
-/obj/effect/floor_decal/spline/fancy/wood/corner,
-/obj/item/flame/lighter/zippo,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "jtE" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -10201,22 +9993,6 @@
 "jGw" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/service/inn)
-"jGG" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/suit/chokha{
-	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
-	},
-/obj/item/clothing/head/pillbox{
-	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=15,"bomb"=10,"bio"=10,"rad"=15)
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/accessory/bcloak,
-/obj/item/clothing/accessory/gcloak,
-/obj/item/clothing/accessory/pfcloak,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "jGN" = (
 /obj/machinery/disease2/isolator,
 /obj/effect/floor_decal/newcorner/whitegreen/solid,
@@ -11493,15 +11269,6 @@
 "kIF" = (
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/caves)
-"kIT" = (
-/obj/effect/floor_decal/newcorner/red/solid,
-/obj/structure/closet/secure_closet/guncabinet,
-/obj/item/gun/projectile/bolter_pistol,
-/obj/item/gun/projectile/bolter_pistol,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "kJt" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
@@ -11757,13 +11524,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
-"kUX" = (
-/obj/item/cane/concealed,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "kVs" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -12089,25 +11849,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/new_hive/caves)
-"lic" = (
-/obj/item/clothing/glasses/thermal/syndi,
-/obj/item/clothing/glasses/thermal/syndi,
-/obj/item/clothing/glasses/cadian,
-/obj/item/clothing/glasses/cadian,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/hud/health,
-/obj/item/clothing/glasses/night,
-/obj/item/clothing/glasses/night,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/card/id/syndicate,
-/obj/item/card/id/syndicate,
-/obj/item/card/id/syndicate,
-/obj/item/stack/thrones2/ten,
-/obj/item/stack/thrones2/ten,
-/obj/structure/table/rack/dark,
-/obj/item/stack/thrones/ten,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "lij" = (
 /obj/effect/floor_decal/newcorner/rails{
 	dir = 5
@@ -12296,14 +12037,6 @@
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
-/area/cadiaoutpost/new_hive/caves)
-"lrU" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/random/loot/meleespawner,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
 "lsN" = (
 /turf/unsimulated/mineral,
@@ -12770,6 +12503,7 @@
 "lOx" = (
 /obj/structure/table/rack/dark,
 /obj/item/soap/syndie,
+/obj/item/plastique,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "lPf" = (
@@ -13233,14 +12967,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"mjH" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 4;
-	icon_state = "spline_fancy"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "mkU" = (
 /obj/item/reagent_containers/food/drinks/coffeecup/britcup,
 /turf/simulated/floor/tiled,
@@ -13418,21 +13144,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
-"mvO" = (
-/obj/structure/closet/cabinet{
-	color = "grey"
-	},
-/obj/item/clothing/under/inquisitor,
-/obj/item/clothing/shoes/jackboots/inquisitor,
-/obj/item/clothing/accessory/storage/black_vest,
-/obj/item/clothing/accessory/holster/waist,
-/obj/item/clothing/under/rank/principalagent,
-/obj/item/clothing/under/rank/inquisitor,
-/obj/item/clothing/gloves/thick/swat/combat,
-/obj/item/clothing/under/syndicate/tacticool,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "mvU" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
@@ -13738,11 +13449,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"mOq" = (
-/obj/effect/floor_decal/chapel,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "mOC" = (
 /obj/structure/closet/crate,
 /obj/random/loot/randomitemcaves,
@@ -14025,11 +13731,12 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "naF" = (
-/obj/structure/table/marble,
-/obj/item/clothing/suit/storage/hooded/inquisitor,
-/obj/effect/floor_decal/turf/brick,
-/obj/item/melee/classic_baton/daemonhammer,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "What is Chaos? Suffering, you might say. Oppression. Deceit. But could not all these things be said of your Imperium? You hunt down the talented and the strong-willed. You break them or sacrifice them. You lie to your citizens and wage war on those who dare speak out. The inquisitors you call masters assume guilt and execute millions on a whim. And why? Why do you do this? Because you know Chaos is there but you do not know how to fight it, so you crush your own citizens for fear that they might aid the Enemy. The Imperium suffers because of Chaos. No matter how hard you fight, that will never change. Chaos exists in a state of permanent victory over you - you dance to our tune, mortal one, you butcher and torture and repress one another because the gods of the warp require you to. The Imperium is founded on Chaos. My lord Tzeentch won your war a long, long time ago.";
+	name = "chaos tome"
+	},
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "naU" = (
 /obj/structure/table/rack/dark,
@@ -14297,16 +14004,6 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"npv" = (
-/obj/structure/table/marble,
-/obj/item/clothing/head/inquisitor,
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall/service{
-	pixel_y = 32
-	},
-/obj/item/card/id/syndicate,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "npy" = (
 /turf/simulated/floor/reinforced,
 /area/cadiaoutpost/oa/hallway/centralhall)
@@ -14577,12 +14274,12 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "nzf" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "My people shackled the stars, and broke mortality when the species you sprang from had barely left the slime pools it spawned in. Our wars burned reality, and the dominion of our kings is without limit. The ground you tread on is not yours; it is ours.";
+	name = "necron tome"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "nzB" = (
 /obj/structure/hivedecor{
@@ -14849,15 +14546,6 @@
 /obj/random/loot/randomitemtown,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
-"nLL" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "nMc" = (
 /obj/effect/floor_decal/newcorner/stone,
 /obj/effect/floor_decal/newcorner/stone{
@@ -14926,8 +14614,6 @@
 /area/cadiaoutpost/oa/caves/dark)
 "nRl" = (
 /obj/structure/cult/tome,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
-/obj/item/ammo_magazine/bolt_pistol_magazine,
 /obj/item/ammo_magazine/bolt_pistol_magazine,
 /obj/item/ammo_magazine/bolt_pistol_magazine,
 /turf/simulated/floor/ceramic/old,
@@ -15064,11 +14750,8 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "nWV" = (
-/obj/structure/bed/chair/wood/wings{
-	dir = 4
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "nXf" = (
 /obj/structure/closet/cabinet,
@@ -15877,14 +15560,12 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/caves/undercity)
 "oFN" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "I have no more time, and find I cannot leave without knowing. I will give my life, nothing else matters to me now. I was not able to acquire a stronger focusing crystal, so I must be quick. Should I disappear forever behind this wall, then perhaps at least I will be remembered as the good physician, and not the madman.";
+	name = "Research Notes"
 	},
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "oFO" = (
 /obj/structure/bed{
@@ -16124,19 +15805,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"oOr" = (
-/obj/structure/sign/imperial{
-	pixel_y = -32;
-	desc = "Undercover outfits. All armor and helmets upgraded with lightweight carapace. They're better than a standard cadian armor!";
-	name = "Undercover Equipment"
-	},
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "oOF" = (
 /obj/effect/floor_decal/newcorner/shaft/corner{
 	dir = 1
@@ -16158,13 +15826,13 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "oQd" = (
-/obj/structure/statue/verina,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood/cee{
-	dir = 8
+/obj/structure/table/rack/dark,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
+/turf/simulated/floor/darkfloor{
+	dir = 1
 	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "oQq" = (
 /obj/structure/table/reinforced{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -16286,15 +15954,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/research/robotics)
-"oZH" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/accessory/holster,
-/obj/item/clothing/accessory/holster,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "paR" = (
 /turf/simulated/floor/greengrid{
 	dir = 4
@@ -16420,6 +16079,7 @@
 "piB" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomitemtown,
+/obj/item/storage/belt/medical/full,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "white1"
@@ -16499,18 +16159,11 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "pnQ" = (
-/obj/structure/table/marble,
-/obj/item/clothing/mask/chameleon/voice,
-/obj/item/clothing/head/inqhelm/rare,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
+/obj/structure/table/rack/dark,
+/obj/item/storage/belt/medical/full,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/item/clothing/head/inqhelm/stealth,
-/obj/item/clothing/mask/gas/security/agent,
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
 "pnS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16990,12 +16643,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"pNV" = (
-/obj/item/card/id/key/grand/inq{
-	access = list(5,63,331,230,211,202,302,10)
-	},
-/turf/simulated/wall/castle,
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "pOk" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
@@ -17689,14 +17336,6 @@
 /obj/item/reagent_containers/glass/beaker/vial,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
-"qzC" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/device/flashlight/lantern,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "qzW" = (
 /obj/structure/table/reinforced{
 	color = "grey";
@@ -17875,12 +17514,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"qHM" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "qIE" = (
 /obj/machinery/door/airlock/cone{
 	name = "Toilet";
@@ -17998,13 +17631,14 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "qPw" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
+/obj/machinery/door/unpowered/inn{
+	name = "Bathroom"
 	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
+/obj/machinery/door/blast/id_door/open{
+	id = "ass"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/inn)
 "qPE" = (
 /obj/structure/table/reinforced{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -18042,19 +17676,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"qRc" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/storage/backpack/satchel/warfare,
-/obj/item/storage/backpack/satchel/warfare,
-/obj/item/clothing/shoes/prac_boots,
-/obj/item/clothing/shoes/prac_boots,
-/obj/item/clothing/under/rank/penitent,
-/obj/item/clothing/under/rank/penitent,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "qRo" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/wrench,
@@ -18228,13 +17849,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"qZN" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "qZX" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/bodyscanner{
@@ -18635,12 +18249,6 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"rpS" = (
-/obj/structure/table/marble,
-/obj/item/clothing/head/ordohereticus,
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "rqm" = (
 /obj/item/pickaxe/newpick,
 /turf/simulated/floor/stone,
@@ -18715,15 +18323,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"rso" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/marble,
-/obj/item/stack/thrones/ten,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "rsZ" = (
 /obj/structure/bookcase,
 /turf/simulated/floor/stone/old4,
@@ -19125,6 +18724,7 @@
 /obj/structure/closet/crate,
 /obj/random/exploration,
 /obj/random/loot/randomitemtown,
+/obj/item/handcuffs/cable/yellow,
 /turf/simulated/floor/new_wood/three,
 /area/cadiaoutpost/new_hive/caves)
 "rNf" = (
@@ -19343,20 +18943,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
-"rYC" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/suit/armor/agent/coat,
-/obj/item/clothing/suit/armor/agent/coat,
-/obj/structure/torchwall/service{
-	dir = 4;
-	icon_state = "torchwall0"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "rZR" = (
 /turf/simulated/floor/cult,
 /area/cadiaoutpost/new_hive/caves)
@@ -19469,10 +19055,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"sdO" = (
-/obj/effect/floor_decal/turf/brick,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "set" = (
 /obj/machinery/computer/shuttle_control/ferry/inquisition{
 	req_one_access = list(302)
@@ -19569,13 +19151,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
-"sjZ" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood/cee{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "skn" = (
 /obj/structure/sign/wantedwritten{
 	pixel_x = -32
@@ -19605,10 +19180,6 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "slE" = (
 /turf/unsimulated/mineral,
-/area/cadiaoutpost/new_hive/caves)
-"smB" = (
-/obj/effect/landmark/corpse,
-/turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "snd" = (
 /obj/structure/table/reinforced{
@@ -19647,21 +19218,6 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
-"soT" = (
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus"
-	},
-/obj/structure/table/steel,
-/obj/effect/floor_decal/turf/brick,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 6;
-	icon_state = "spline_fancy"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "soV" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 4
@@ -19922,7 +19478,6 @@
 /obj/random/tech_supply,
 /obj/item/reagent_containers/food/snacks/khornemeat,
 /obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
 /obj/item/reagent_containers/hypospray/autoinjector/combatpain,
 /obj/item/reagent_containers/hypospray/autoinjector/detox,
 /obj/item/reagent_containers/glass/bottle/chloralhydrate,
@@ -19983,25 +19538,6 @@
 /obj/item/storage/box/syringes,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
-"sCl" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/suit/armor/hauberk,
-/obj/item/clothing/head/helmet/hauberk{
-	armor = list("melee"=38,"bullet"=30,"laser"=34,"energy"=35,"bomb"=20,"bio"=10,"rad"=10)
-	},
-/obj/item/clothing/suit/armor/bountyhunter2,
-/obj/item/clothing/head/bountyhead,
-/obj/item/clothing/head/helmet/hauberk{
-	armor = list("melee"=38,"bullet"=30,"laser"=34,"energy"=35,"bomb"=20,"bio"=10,"rad"=10)
-	},
-/obj/item/clothing/head/helmet/metalhelmet{
-	armor = list("melee"=38,"bullet"=30,"laser"=34,"energy"=35,"bomb"=20,"bio"=10,"rad"=10)
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "sDA" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -20155,12 +19691,12 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "sJk" = (
-/obj/effect/floor_decal/turf/brick,
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "I once walked the same ground as your idol. I breathed the same air as him. And I tell you this, without lie or artifice. He never wanted to become what you have made him. He did not wish to be your god-thing. He abhorred such ideals. The slavery of your crippled, blind Imperium would sicken him, if he had eyes to see it.";
+	name = "Daemonic Tome"
 	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "sJs" = (
 /obj/structure/closet/l3closet/virology,
@@ -20187,53 +19723,6 @@
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/medicae)
-"sKy" = (
-/obj/structure/table/marble{
-	color = "grey"
-	},
-/obj/item/clothing/head/scum{
-	armor = list("melee"=35,"bullet"=35,"laser"=35,"energy"=15,"bomb"=10,"bio"=10,"rad"=15)
-	},
-/obj/item/storage/pill_bottle/happy,
-/obj/item/storage/pill_bottle/zoom,
-/obj/item/clothing/suit/scum{
-	armor = list("melee"=45,"bullet"=45,"laser"=45,"energy"=15,"bomb"=10,"bio"=5,"rad"=5)
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
-"sLd" = (
-/obj/structure/closet/crate/secure/biohazard,
-/obj/item/clothing/glasses/science,
-/obj/random/tech_supply,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/food/snacks/khornemeat,
-/obj/item/reagent_containers/hypospray/autoinjector/tau,
-/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
-/obj/item/reagent_containers/hypospray/autoinjector/detox,
-/obj/item/reagent_containers/glass/bottle/chloralhydrate,
-/obj/item/reagent_containers/glass/bottle/chloralhydrate,
-/obj/item/reagent_containers/glass/bottle/cyanide,
-/obj/item/storage/box/syringes,
-/obj/item/storage/box/syringes,
-/obj/item/reagent_containers/hypospray/autoinjector/detox,
-/obj/item/reagent_containers/hypospray/autoinjector/combatpain,
-/obj/item/reagent_containers/glass/jar/sulphuric_acid,
-/obj/item/toothpuller,
-/obj/item/toothpuller,
-/obj/item/reagent_containers/syringe/inaprovaline,
-/obj/item/reagent_containers/syringe/inaprovaline,
-/obj/item/grenade/chem_grenade/cleaner,
-/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
-	name = "autoinjector(MB)"
-	},
-/obj/item/reagent_containers/hypospray/autoinjector/mindbreaker{
-	name = "autoinjector(MB)"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/shuttle/inquisition)
 "sLo" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -21666,26 +21155,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"ucO" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/cult/talisman,
-/obj/item/card/id/captains_spare{
-	desc = "The spare ID of the Inquisitor";
-	name = "Inquisitor";
-	registered_name = "Inquisitor";
-	assignment = "Inquisitor";
-	job_access_type = /datum/job/inquisitor
-	},
-/obj/item/card/id/pilgrim/penitent,
-/obj/item/card/id/key/grand/inq{
-	access = list(5,63,331,230,211,202,302,10)
-	},
-/obj/item/book/manual{
-	desc = "You read through a thorough report on the exoplanet, speaking to it's xenos and heretical origins, as well as suggestions to immaterial corruption of the fortress. Reports from the sanctioned psyker shortly before their death confirms it's details. The report ends with the order to ensure that Inquisition operations remain a secret in this sector and that even the knowledge of your rank should be considered need to know. Those exposed to sensitive aspects of your mission must be assessed thoroughly for such clearances or apprehended for servitor repurposement. Should Inquisition secrets be exposed - yours will be the first name given to the Officio Assasinorum.";
-	name = "Inquisitorial Report"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "udc" = (
 /obj/item/reagent_containers/food/condiment/enzyme{
 	pixel_x = 7
@@ -21866,7 +21335,7 @@
 /obj/random/loot/badweaponlas,
 /obj/random/loot/badweapon,
 /turf/simulated/floor/darkfloor,
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "ulO" = (
 /obj/machinery/light/small{
 	dir = 1;
@@ -21935,14 +21404,6 @@
 	icon_state = "dark1"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"upP" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "upU" = (
 /obj/structure/cult/tome,
 /turf/simulated/floor/ceramic/old,
@@ -21987,13 +21448,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"utQ" = (
-/obj/effect/floor_decal/chapel{
-	dir = 8
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "uvc" = (
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -22137,36 +21591,6 @@
 	icon_state = "floor7"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"uBt" = (
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1
-	},
-/obj/structure/table/steel,
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	wax = 40000
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = -5;
-	pixel_y = 5;
-	wax = 40000
-	},
-/obj/item/flame/candle/dinner{
-	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
-	name = "wax candle";
-	pixel_x = 5;
-	pixel_y = 5;
-	wax = 40000
-	},
-/obj/effect/floor_decal/spline/fancy/wood/corner{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "uCz" = (
 /obj/structure/bed/roller,
 /obj/effect/floor_decal/newcorner/blue/quarter{
@@ -22267,17 +21691,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"uHI" = (
-/obj/item/clothing/shoes/jackboots/cadian,
-/obj/item/clothing/gloves/combat/cadian,
-/obj/item/clothing/mask/gas/half/cadianrespirator,
-/obj/item/clothing/under/cadian_uniform,
-/obj/item/clothing/suit/armor/guardsman,
-/obj/item/clothing/head/helmet/medicae,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "uIs" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 1
@@ -22356,19 +21769,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"uMl" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/structure/torchwall/service{
-	dir = 8;
-	icon_state = "torchwall0"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "uMF" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -22508,24 +21908,12 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
 "uXK" = (
-/obj/structure/table/marble{
-	color = "grey"
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "We are raised to believe that the God Emperor watches over us all. And so we are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none, we beseech thee, destroy them. Even in the face of death, we shall not submit. Suffering is our prayer... faith is our armour.";
+	name = "sister tome"
 	},
-/obj/item/clothing/suit/armor/agent/caraspace,
-/obj/item/clothing/suit/armor/agent/caraspace,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/item/clothing/suit/armor/armoredtrench,
-/obj/item/clothing/suit/armor/heavyduster,
-/obj/item/clothing/suit/armor/heretcoat{
-	armor = list("melee"=48,"bullet"=58,"laser"=48,"energy"=30,"bomb"=40,"bio"=10,"rad"=20)
-	},
-/obj/item/clothing/suit/armor/iplate{
-	armor = list("melee"=48,"bullet"=58,"laser"=48,"energy"=30,"bomb"=40,"bio"=10,"rad"=20)
-	},
-/obj/item/clothing/suit/armor/templar{
-	armor = list("melee"=48,"bullet"=58,"laser"=48,"energy"=30,"bomb"=40,"bio"=10,"rad"=20)
-	},
-/turf/simulated/floor/tiled/dark,
+/turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "uYD" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
@@ -22969,6 +22357,7 @@
 "vzi" = (
 /obj/structure/closet/crate,
 /obj/machinery/light/small,
+/obj/item/handcuffs/cable/yellow,
 /turf/simulated/floor/new_wood/six,
 /area/cadiaoutpost/new_hive/caves)
 "vzr" = (
@@ -23439,17 +22828,6 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"vSV" = (
-/obj/structure/bed{
-	desc = "This is used to lie in, sleep in or strap on.";
-	icon_state = "bed_padding1";
-	name = "comfy bed"
-	},
-/obj/item/bedsheet/hos,
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "vTq" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 6
@@ -23686,7 +23064,6 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "wfm" = (
-/obj/random/loot/randomarmor,
 /obj/structure/table/rack/dark,
 /obj/structure/torchwall/service{
 	dir = 8;
@@ -24417,15 +23794,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"wSi" = (
-/obj/effect/floor_decal/spline/fancy/wood{
-	dir = 1;
-	icon_state = "spline_fancy"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "wSk" = (
 /obj/machinery/light/small,
 /turf/simulated/floor/factory_floor,
@@ -24749,20 +24117,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"xfV" = (
-/obj/structure/table/marble,
-/obj/item/clothing/suit/armor/bulletproof/vest{
-	armor = list("melee"=50,"bullet"=65,"laser"=65,"energy"=10,"bomb"=25,"bio"=0,"rad"=0)
-	},
-/obj/effect/floor_decal/turf/brick,
-/obj/item/clothing/accessory/armguards,
-/obj/item/clothing/accessory/armguards/ablative,
-/obj/item/clothing/accessory/legguards,
-/obj/item/clothing/accessory/legguards/ablative,
-/obj/item/clothing/accessory/legguards/ballistic,
-/obj/item/clothing/accessory/armguards/ballistic,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "xge" = (
 /obj/structure/sign/writers{
 	pixel_x = -32
@@ -25045,7 +24399,7 @@
 /turf/simulated/floor/darkfloor{
 	dir = 1
 	},
-/area/cadiaoutpost/new_hive/caves)
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "xtA" = (
 /obj/structure/railing,
 /obj/structure/catwalkrust/blocked,
@@ -25201,9 +24555,6 @@
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "xzI" = (
 /obj/structure/cult/tome,
-/obj/item/ammo_magazine/bolt_rifle_magazine/sister,
-/obj/item/ammo_magazine/bolt_rifle_magazine/sister,
-/obj/item/ammo_magazine/bolt_rifle_magazine/sister,
 /obj/item/ammo_magazine/bolt_rifle_magazine/sister,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -25748,18 +25099,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"ydu" = (
-/obj/structure/torchwall/service{
-	dir = 1;
-	icon_state = "torchwall0"
-	},
-/obj/structure/sign/imperial{
-	pixel_y = -32;
-	name = "Inquisitorial Equipment"
-	},
-/obj/effect/floor_decal/turf/brick/two,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/caves)
 "ydz" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -31402,7 +30741,7 @@ tOB
 tOB
 hqB
 hqB
-pGT
+hqB
 hqB
 tOB
 tOB
@@ -31653,7 +30992,7 @@ tOB
 tOB
 tOB
 hqB
-cwD
+hqB
 hqB
 hqB
 hqB
@@ -32162,7 +31501,7 @@ tOB
 hqB
 hqB
 hqB
-fra
+hqB
 hqB
 tOB
 tOB
@@ -32413,7 +31752,7 @@ tOB
 tOB
 hqB
 hqB
-tgm
+hqB
 hqB
 hqB
 tOB
@@ -32519,14 +31858,14 @@ tOB
 tOB
 tOB
 tOB
-iNd
-ajM
-nLL
-vSV
-uXK
-rYC
-euB
-aYD
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -32771,14 +32110,14 @@ tOB
 tOB
 tOB
 tOB
-bNe
-bNe
-bNe
-nWV
-eZl
-ajM
-ajM
-bNe
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -32912,10 +32251,10 @@ tOB
 tOB
 hqB
 hqB
-fra
 hqB
 hqB
-pGT
+hqB
+hqB
 hqB
 tOB
 tOB
@@ -33023,14 +32362,14 @@ tOB
 tOB
 tOB
 tOB
-ajM
-mvO
-dFX
-ucO
-fgZ
-bNe
-bNe
-bNe
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -33050,7 +32389,7 @@ bkf
 bkf
 tOB
 tOB
-sKy
+tOB
 tOB
 tOB
 tOB
@@ -33279,10 +32618,10 @@ tOB
 tOB
 tOB
 tOB
-lic
-ajM
-ajM
-ydu
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -33300,11 +32639,11 @@ hEC
 dsC
 inX
 bkf
-cuX
-cuX
-cuX
-cuX
-cuX
+bkf
+bkf
+bkf
+bkf
+bkf
 tOB
 slE
 tOB
@@ -33531,10 +32870,10 @@ tOB
 tOB
 tOB
 tOB
-iCC
-ajM
-aya
-utQ
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -33552,12 +32891,12 @@ gZw
 dsC
 vpl
 bkf
-cuX
+bkf
 iHr
 ulv
 xtw
-cuX
-cuX
+bkf
+bkf
 slE
 tOB
 tOB
@@ -33672,7 +33011,7 @@ hqB
 hqB
 hqB
 hqB
-fra
+hqB
 hqB
 tOB
 tOB
@@ -33780,13 +33119,13 @@ tOB
 tOB
 tOB
 tOB
-kUX
-pnQ
-rso
-uHI
-ajM
-bAJ
-mOq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -33809,7 +33148,7 @@ wOb
 wOb
 ptj
 cJK
-cuX
+bkf
 slE
 tOB
 tOB
@@ -33923,7 +33262,7 @@ tOB
 hqB
 hqB
 hqB
-tgm
+hqB
 hqB
 tOB
 tOB
@@ -34031,14 +33370,14 @@ tOB
 tOB
 tOB
 tOB
-bAf
-wSi
-qHM
-qZN
-akg
-ajM
-ajM
-oOr
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 slE
 slE
@@ -34058,7 +33397,7 @@ bkf
 bkf
 bkf
 arL
-arL
+jst
 vnL
 sgB
 bkf
@@ -34173,7 +33512,7 @@ hqB
 tOB
 tOB
 tOB
-fra
+hqB
 hqB
 hqB
 tOB
@@ -34283,14 +33622,14 @@ tOB
 tOB
 tOB
 tOB
-rpS
-wSi
-bNe
-dAn
-fvU
-ajM
-ajM
-bNe
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 slE
 tOB
@@ -34310,7 +33649,7 @@ vyA
 vNG
 bkf
 arL
-arL
+oQd
 vnL
 qPS
 bkf
@@ -34535,14 +33874,14 @@ tOB
 tOB
 tOB
 tOB
-naF
-wSi
-bNe
-iEj
-qRc
-ajM
-ajM
-bNe
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 slE
 bkf
@@ -34562,7 +33901,7 @@ wLi
 wLi
 qek
 arL
-arL
+euB
 vnL
 doD
 bkf
@@ -34670,7 +34009,7 @@ tOB
 tOB
 tOB
 hqB
-pGT
+hqB
 hqB
 tOB
 tOB
@@ -34787,14 +34126,14 @@ tOB
 tOB
 tOB
 tOB
-npv
-wSi
-bNe
-oFN
-jGG
-sCl
-sKy
-fPu
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 tOB
 slE
 bkf
@@ -34922,7 +34261,7 @@ tOB
 tOB
 tOB
 hqB
-fra
+hqB
 hqB
 tOB
 tOB
@@ -35039,10 +34378,10 @@ tOB
 tOB
 tOB
 tOB
-aLJ
-wSi
-bNe
-cRO
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -35291,10 +34630,10 @@ tOB
 tOB
 tOB
 tOB
-xfV
-uMl
-bNe
-gLb
+tOB
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -35548,10 +34887,10 @@ tOB
 tOB
 tOB
 tOB
-ajM
-nWV
-qPw
-nWV
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -35796,14 +35135,14 @@ tOB
 tOB
 tOB
 tOB
-oQd
-nzf
-sdO
 tOB
-ajM
-oZH
-lrU
-fpe
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -36048,14 +35387,14 @@ tOB
 tOB
 tOB
 tOB
-upP
-sdO
-sdO
 tOB
-aTW
-qzC
-eTa
-hVq
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
+tOB
 slE
 tOB
 tOB
@@ -36300,9 +35639,9 @@ tOB
 tOB
 tOB
 tOB
-uBt
-aWZ
-sdO
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -36552,9 +35891,9 @@ tOB
 tOB
 tOB
 tOB
-jst
-soT
-sdO
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -36804,9 +36143,9 @@ tOB
 tOB
 tOB
 tOB
-eVL
-sdO
-sJk
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -36936,19 +36275,19 @@ hqB
 hqB
 hqB
 hqB
-fra
-tOB
-tOB
-tOB
-tOB
 hqB
 tOB
 tOB
 tOB
 tOB
 hqB
+tOB
+tOB
+tOB
+tOB
 hqB
-smB
+hqB
+hqB
 hqB
 hqB
 hqB
@@ -37056,9 +36395,9 @@ tOB
 tOB
 tOB
 tOB
-sjZ
-mjH
-mjH
+tOB
+tOB
+tOB
 tOB
 tOB
 tOB
@@ -37203,7 +36542,7 @@ hqB
 hqB
 hqB
 hqB
-fra
+hqB
 tOB
 tOB
 tOB
@@ -37436,14 +36775,9 @@ faW
 tOB
 tOB
 hqB
-fra
-hqB
-pGT
 hqB
 hqB
-tOB
-tOB
-tOB
+hqB
 hqB
 hqB
 tOB
@@ -37451,7 +36785,12 @@ tOB
 tOB
 hqB
 hqB
-fra
+tOB
+tOB
+tOB
+hqB
+hqB
+hqB
 hqB
 hqB
 hqB
@@ -37705,7 +37044,7 @@ hqB
 hqB
 hqB
 hqB
-cwD
+hqB
 hqB
 hqB
 tOB
@@ -37939,7 +37278,7 @@ nSV
 faW
 tOB
 tOB
-tgm
+hqB
 hqB
 hqB
 hqB
@@ -38194,7 +37533,7 @@ tOB
 tOB
 hqB
 hqB
-fra
+hqB
 tOB
 tOB
 hqB
@@ -38207,7 +37546,7 @@ tOB
 tOB
 tOB
 hqB
-pGT
+hqB
 hqB
 hqB
 tOB
@@ -38962,7 +38301,7 @@ hqB
 hqB
 hqB
 hqB
-fra
+hqB
 tOB
 tOB
 tOB
@@ -40966,9 +40305,9 @@ tOB
 tOB
 tOB
 tOB
-hqB
-hqB
-hqB
+tOB
+tOB
+tOB
 hqB
 hqB
 tOB
@@ -44133,7 +43472,7 @@ bNq
 bNq
 bNq
 bNq
-pNV
+bNq
 bNq
 slE
 tOB
@@ -44259,7 +43598,7 @@ tOB
 hqB
 hqB
 hqB
-fra
+hqB
 hqB
 hqB
 tOB
@@ -45019,7 +44358,7 @@ hqB
 hqB
 hqB
 hqB
-fra
+hqB
 tOB
 tOB
 tOB
@@ -47043,7 +46382,7 @@ tOB
 tOB
 hqB
 hqB
-fra
+hqB
 tOB
 tOB
 tOB
@@ -47415,7 +46754,7 @@ phu
 iGI
 man
 rjt
-sLd
+phu
 phu
 phu
 qxK
@@ -47785,7 +47124,7 @@ tOB
 tOB
 tOB
 hqB
-fra
+hqB
 hqB
 tOB
 hqB
@@ -48048,7 +47387,7 @@ hqB
 hqB
 hqB
 hqB
-smB
+hqB
 hqB
 hqB
 hqB
@@ -48177,7 +47516,7 @@ bPf
 xwY
 man
 him
-kIT
+qdT
 qdT
 qdT
 man
@@ -48299,7 +47638,7 @@ tOB
 hqB
 hqB
 hqB
-fra
+hqB
 hqB
 hqB
 hqB
@@ -49567,7 +48906,7 @@ hqB
 fra
 hqB
 wcj
-cIy
+nWV
 wfm
 cIy
 wcj
@@ -49816,7 +49155,7 @@ tOB
 tOB
 tOB
 hqB
-hqB
+fra
 tOB
 wcj
 wcj
@@ -60357,7 +59696,7 @@ wcj
 hqB
 hqB
 fle
-tsi
+hqB
 hqB
 hqB
 hqB
@@ -61610,7 +60949,7 @@ iZm
 iZm
 wcj
 iZm
-vIo
+pnQ
 wcj
 tOB
 tOB
@@ -62560,7 +61899,7 @@ xzY
 reZ
 tao
 oIy
-uCS
+qPw
 gkw
 ydt
 ydt
@@ -66023,9 +65362,9 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
 slE
 tKI
 aIx
@@ -66275,7 +65614,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tKI
 tKI
 tKI
@@ -66527,7 +65866,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tKI
 ugQ
 lDW
@@ -66779,7 +66118,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tKI
 wvR
 lDW
@@ -67031,7 +66370,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tKI
 vXb
 lDW
@@ -67283,7 +66622,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tKI
 kpo
 dnO
@@ -67535,7 +66874,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tKI
 tKI
 tKI
@@ -67787,20 +67126,20 @@ tOB
 tOB
 tOB
 tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
-tOB
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
+slE
 tOB
 tOB
 tOB
@@ -68792,7 +68131,7 @@ tOB
 tOB
 mhk
 oqQ
-jwW
+hqB
 hqB
 lij
 uXu
@@ -69547,7 +68886,7 @@ tOB
 tOB
 tOB
 oCp
-jwW
+hqB
 lij
 sQp
 hqB
@@ -70305,7 +69644,7 @@ syx
 hqB
 tJM
 hqB
-jwW
+hqB
 faW
 tOB
 tOB
@@ -70806,7 +70145,7 @@ tOB
 tOB
 tOB
 syx
-jwW
+hqB
 tJM
 hqB
 faW
@@ -71576,7 +70915,7 @@ tOB
 oCp
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 tJM
@@ -71816,7 +71155,7 @@ tOB
 syx
 hqB
 tJM
-jwW
+hqB
 faW
 tOB
 tOB
@@ -72339,7 +71678,7 @@ hqB
 hqB
 uxy
 hqB
-jwW
+hqB
 hqB
 tBY
 hqB
@@ -72577,7 +71916,7 @@ hqB
 hqB
 hqB
 hqB
-nqV
+ssr
 hqB
 hqB
 hqB
@@ -72593,7 +71932,7 @@ fGq
 nNn
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 hqB
@@ -73329,7 +72668,7 @@ hqB
 hqB
 hqB
 tJM
-jwW
+hqB
 hqB
 pey
 kJM
@@ -73339,7 +72678,7 @@ kJM
 sqq
 hqB
 hqB
-jwW
+hqB
 hqB
 tJM
 hqB
@@ -73596,7 +72935,7 @@ hqB
 tJM
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 hqB
@@ -73842,7 +73181,7 @@ tOB
 tOB
 oCp
 hqB
-jwW
+hqB
 hqB
 hqB
 nod
@@ -74139,7 +73478,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -74353,7 +73692,7 @@ fGq
 sqq
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 tJM
@@ -74391,7 +73730,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -74643,7 +73982,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -74895,7 +74234,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -75088,7 +74427,7 @@ tOB
 tOB
 tOB
 oCp
-jwW
+hqB
 tJM
 hqB
 cvb
@@ -75147,7 +74486,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -75356,7 +74695,7 @@ mme
 mme
 hqB
 hqB
-jwW
+hqB
 faW
 tOB
 tOB
@@ -75399,7 +74738,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -75651,7 +74990,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 tpQ
 tpQ
@@ -75847,7 +75186,7 @@ oCp
 hqB
 uxy
 hqB
-jwW
+hqB
 hqB
 hqB
 hqB
@@ -75855,7 +75194,7 @@ uxy
 hqB
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 tJM
@@ -75903,7 +75242,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 lFF
 fIz
@@ -76155,7 +75494,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 lFF
 fIz
@@ -76407,7 +75746,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 ffs
 iZm
@@ -76659,7 +75998,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 kHI
 iZm
@@ -76911,7 +76250,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 tpQ
 tpQ
@@ -77163,7 +76502,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tpQ
 tpQ
 lqi
@@ -77415,7 +76754,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 jqp
@@ -77667,7 +77006,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 jqp
@@ -77919,7 +77258,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 grg
@@ -78139,7 +77478,7 @@ kmw
 tJM
 hqB
 hqB
-faW
+hqB
 tOB
 tOB
 tOB
@@ -78171,7 +77510,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 jqp
@@ -78391,7 +77730,7 @@ ogv
 tJM
 hqB
 hqB
-uMF
+hqB
 tOB
 tOB
 tOB
@@ -78423,7 +77762,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 jqp
@@ -78643,7 +77982,7 @@ hqB
 tJM
 hqB
 hqB
-faW
+hqB
 tOB
 tOB
 tOB
@@ -78675,7 +78014,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 jqp
@@ -78927,7 +78266,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tpQ
 tpQ
@@ -79179,7 +78518,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 tOB
 tOB
@@ -79431,7 +78770,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 wcj
 wcj
@@ -79683,7 +79022,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 wcj
 jCe
@@ -79892,7 +79231,7 @@ tkJ
 uKN
 tJM
 hqB
-jwW
+hqB
 cvb
 lwp
 lwp
@@ -79924,7 +79263,7 @@ xTz
 cva
 iEX
 wDP
-rsZ
+hVq
 iGV
 slE
 tOB
@@ -79935,7 +79274,7 @@ tOB
 tOB
 tOB
 tOB
-tOB
+slE
 tOB
 wcj
 iZm
@@ -80168,9 +79507,9 @@ slE
 slE
 iGV
 tOB
+bNe
 rsZ
-rsZ
-rsZ
+dFX
 xTz
 xTz
 gCH
@@ -80902,7 +80241,7 @@ tJM
 hqB
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 hqB
@@ -80924,10 +80263,10 @@ tOB
 wDP
 xTz
 xTz
-rsZ
+bAJ
 xTz
 pBw
-rsZ
+naF
 rsZ
 xTz
 rsZ
@@ -81175,9 +80514,9 @@ slE
 tOB
 xTz
 rsZ
+uXK
 rsZ
-rsZ
-rsZ
+nzf
 rsZ
 rsZ
 xTz
@@ -81430,7 +80769,7 @@ xTz
 xTz
 xTz
 xTz
-rsZ
+oFN
 rsZ
 tEK
 rRQ
@@ -81683,7 +81022,7 @@ xTz
 wDP
 xTz
 xTz
-rsZ
+sJk
 iGV
 tOB
 iGV
@@ -83922,7 +83261,7 @@ xJo
 hqB
 hqB
 hqB
-jwW
+hqB
 hqB
 faW
 tOB
@@ -84169,7 +83508,7 @@ uFW
 tJM
 hqB
 hqB
-jwW
+hqB
 hqB
 hqB
 hqB
@@ -84908,15 +84247,15 @@ tOB
 oCp
 ssr
 hqB
-jwW
+hqB
+hqB
+hqB
+ssr
 hqB
 hqB
 ssr
 hqB
 hqB
-ssr
-hqB
-jwW
 hqB
 hqB
 ssr
@@ -85661,12 +85000,12 @@ tOB
 tOB
 hqB
 hqB
-jwW
 hqB
 hqB
 hqB
 hqB
-jwW
+hqB
+hqB
 hqB
 hqB
 hqB
@@ -85928,7 +85267,7 @@ hqB
 hqB
 hqB
 hqB
-jwW
+hqB
 hqB
 uxy
 hqB
