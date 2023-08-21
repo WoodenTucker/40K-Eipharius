@@ -13,11 +13,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "am" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
 	},
@@ -54,11 +50,7 @@
 /area/cadiaoutpost/oa/hallway/northern)
 "aA" = (
 /obj/machinery/light,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/structure/window/reinforced{
 	health = 800;
 	maxhealth = 800;
@@ -86,11 +78,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "aD" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/cassette/inqlog1{
 	pixel_y = 11
 	},
@@ -128,12 +116,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "aR" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
 "aT" = (
@@ -152,11 +135,7 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/lighter/zippo,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
@@ -228,11 +207,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
 "bA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/blue/middle,
 /area/cadiaoutpost/oa/service/chapel)
 "bB" = (
@@ -378,15 +353,6 @@
 "cF" = (
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
-"cK" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
-/obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "cL" = (
 /obj/item/stool{
 	color = "grey"
@@ -460,22 +426,14 @@
 	icon_state = "closed";
 	pixel_y = -32
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 6
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "dq" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/whitegreen,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -496,11 +454,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "dO" = (
@@ -519,12 +473,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "dS" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stamp/cmo,
 /obj/item/stamp/denied{
 	pixel_x = 4
@@ -532,11 +481,7 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
 "dV" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/towel/fleece{
 	desc = "The beloved golden towel of Rogue Trader, woven of smoothiest silk, waiting it's time to wipe the noble body of it's owner.";
 	name = "golden silk towel";
@@ -557,11 +502,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "eh" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/wood{
 	color = "grey"
 	},
@@ -586,16 +527,6 @@
 /obj/item/storage/firstaid/combat,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
-"em" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "ep" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 8
@@ -635,11 +566,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "eT" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/item/reagent_containers/food/drinks/bottle/amasecpoor{
 	pixel_x = 14;
@@ -676,23 +603,11 @@
 	},
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel)
-"fc" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "fd" = (
 /turf/simulated/floor/fancyfloor/carpet/blue,
 /area/cadiaoutpost/oa/hallway/northern)
 "fe" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "fg" = (
@@ -728,11 +643,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "fr" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/binoculars,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
@@ -775,11 +686,7 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -1076,12 +983,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "hK" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -1204,11 +1106,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
 "iB" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/jojo,
 /obj/machinery/light{
 	dir = 1
@@ -1314,11 +1212,7 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/service/inn)
 "jz" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -1440,11 +1334,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "kp" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/pill/happy{
 	pixel_y = 10
 	},
@@ -1472,11 +1362,7 @@
 /obj/machinery/photocopier/faxmachine{
 	department = "Planetary Governor's Office"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
@@ -1570,11 +1456,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "lh" = (
 /obj/item/reagent_containers/food/snacks/meatballsoup,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/service/chapel)
 "lm" = (
@@ -1644,12 +1526,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
 "lI" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -1664,11 +1541,7 @@
 	icon_state = "closed";
 	pixel_y = -32
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "lU" = (
@@ -1866,11 +1739,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "oa" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -1970,11 +1839,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "oP" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/bfg,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -2034,11 +1899,7 @@
 	},
 /area/cadiaoutpost/oa/hallway/northern)
 "px" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = 12;
 	pixel_x = 1
@@ -2146,11 +2007,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "qk" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/pill/happy,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -2267,11 +2124,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "rr" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/structure/window/reinforced{
 	health = 800;
 	maxhealth = 800;
@@ -2329,11 +2182,7 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/snacks/slice/applecake/filled{
 	pixel_y = 2
 	},
@@ -2497,11 +2346,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "sU" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/pen/multi{
 	pixel_y = 4
 	},
@@ -2621,9 +2466,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "tY" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 1;
 	icon_state = "bulb1"
@@ -2750,11 +2593,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "vd" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/redalert,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -2813,11 +2652,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "vL" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 1
 	},
@@ -2882,9 +2717,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "wj" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "wl" = (
@@ -3032,11 +2865,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "xk" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 10
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -3287,11 +3116,7 @@
 	},
 /area/cadiaoutpost/oa/hallway/northern)
 "yN" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/alien_blaster,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -3332,11 +3157,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "zk" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/grand/monastary/inner,
 /obj/item/card/id/key/grand/monastary,
 /turf/simulated/floor/ceramic/blackstone,
@@ -3808,11 +3629,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "CZ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/factory_floor{
 	dir = 4
 	},
@@ -3887,11 +3704,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Dw" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = 12;
 	pixel_x = 1
@@ -3948,11 +3761,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "DU" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/atlantis,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -4296,11 +4105,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Gh" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stamp/captain{
 	pixel_x = -8
 	},
@@ -4356,11 +4161,7 @@
 	},
 /area/cadiaoutpost/oa/hallway/northern)
 "Gr" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
 	pixel_y = 8;
 	pixel_x = -7
@@ -4409,11 +4210,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "Gy" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/exploration_loot/odd_book,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -4447,11 +4244,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
 "GR" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -4535,11 +4328,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
 "Hg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/grand/monastary/inner,
 /obj/item/card/id/key/grand/monastary{
 	access = list(213,211)
@@ -4564,11 +4353,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "Hk" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet{
 	dir = 1
 	},
@@ -4957,11 +4742,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "KK" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -5070,11 +4851,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "LC" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -5198,11 +4975,7 @@
 /obj/item/card/id/key/super/newmap/manor/room2,
 /obj/item/card/id/key/super/newmap/manor/room3,
 /obj/item/card/id/key/super/newmap/manor/room4,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "Mi" = (
@@ -5220,9 +4993,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "Mo" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/polar{
 	dir = 1
 	},
@@ -5371,11 +5142,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
 "MU" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -5427,15 +5194,6 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
-"Ni" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable"
-	},
-/turf/simulated/floor/factory_floor{
-	dir = 4
-	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Nm" = (
 /obj/machinery/light{
 	dir = 8
@@ -5446,12 +5204,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
 "Ns" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/snacks/stew,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
@@ -5462,11 +5215,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "Ny" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
 "NC" = (
@@ -5496,11 +5245,7 @@
 	pixel_x = 32;
 	icon_state = "closed"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/wine{
 	pixel_x = -8;
 	pixel_y = 7
@@ -5677,11 +5422,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "OP" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/snacks/mushroomsoup,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
@@ -5756,11 +5497,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "Pr" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/pill/happy{
 	pixel_y = 11
 	},
@@ -5778,11 +5515,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/hallway/northern)
 "Px" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = 12;
 	pixel_x = 1
@@ -5979,9 +5712,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "QT" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -6141,11 +5872,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "RM" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -6266,11 +5993,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "Sp" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -6379,11 +6102,7 @@
 "Tp" = (
 /obj/item/card/id/key/grand/monastary/inner,
 /obj/item/card/id/key/grand/monastary,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel)
 "Tt" = (
@@ -6571,11 +6290,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "UI" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/spline/fancy/wood,
 /obj/item/device/flashlight/lamp/green,
 /turf/simulated/floor/fancyfloor/coralg,
@@ -6688,11 +6403,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/northern)
 "VD" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stamp/cmo{
 	pixel_y = 8
 	},
@@ -7026,11 +6737,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "Yg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 9
 	},
@@ -7078,11 +6785,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
 "YK" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
 "YS" = (
@@ -7105,14 +6808,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
-"Zc" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
-/obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh,
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "Zg" = (
 /obj/machinery/photocopier{
 	color = "grey"
@@ -7195,11 +6890,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/inn)
 "ZP" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/pill/happy{
 	color = "lightblue";
 	name = "Joy";
@@ -38325,7 +38016,7 @@ JI
 lc
 CJ
 Tv
-cK
+GR
 Ck
 vt
 vt
@@ -39575,7 +39266,7 @@ vt
 vt
 Ck
 ZP
-Zc
+GR
 qk
 CJ
 CJ
@@ -50171,16 +49862,16 @@ vt
 PH
 zA
 CZ
-em
+CZ
 xR
 CZ
-em
+CZ
 HJ
 CZ
-em
+CZ
 xR
 CZ
-em
+CZ
 zA
 PH
 vt
@@ -50928,13 +50619,13 @@ PH
 zA
 Tu
 Tu
-Ni
-em
+CZ
+CZ
 Tu
 Tu
 Tu
-Ni
-em
+CZ
+CZ
 Tu
 Tu
 zA
@@ -51432,13 +51123,13 @@ PH
 zA
 Tu
 Tu
-Ni
-em
+CZ
+CZ
 Tu
 Tu
 Tu
-Ni
-em
+CZ
+CZ
 Tu
 Tu
 zA
@@ -52189,14 +51880,14 @@ zA
 Tu
 Tu
 cU
-Ni
-em
+CZ
+CZ
 HJ
-Ni
-em
+CZ
+CZ
 Hn
-Ni
-em
+CZ
+CZ
 zA
 PH
 vt
@@ -54451,7 +54142,7 @@ zA
 XZ
 wc
 OI
-fc
+fe
 zA
 qM
 Kn

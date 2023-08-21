@@ -4546,9 +4546,7 @@
 	},
 /area/cadiaoutpost/oa/groxpen)
 "BU" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/defibrillator,
 /obj/item/defibrillator,
 /turf/simulated/floor/tiled/dark,
@@ -6092,9 +6090,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/tau1)
 "OO" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/clothing/suit/apron,
 /obj/random/soap,
 /obj/item/reagent_containers/spray/sterilizine,
@@ -7353,18 +7349,14 @@
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "YP" = (
 /obj/effect/floor_decal/turf/plating,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/firstaid/surgery,
 /obj/item/clothing/mask/breath/anesthetic,
 /turf/space,
 /area/cadiaoutpost/oa/groxpen)
 "YR" = (
 /obj/item/clothing/mask/breath/anesthetic,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/glass/rag,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/gma/inquisitoracolyte)
