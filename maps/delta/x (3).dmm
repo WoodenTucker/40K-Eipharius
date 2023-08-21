@@ -6255,9 +6255,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
 "pz" = (
-/obj/machinery/organ_printer/robot/mapped{
-	products = list("heart"=list(/obj/item/organ/internal/heart/bioprinted,25),"lungs"=list(/obj/item/organ/internal/lungs,25),"kidneys"=list(/obj/item/organ/internal/kidneys,20),"eyes"=list(/obj/item/organ/internal/eyes/bioprinted,20),"liver"=list(/obj/item/organ/internal/liver,25),"l_arm"=list(/obj/item/robot_parts/l_arm,65),"r_arm"=list(/obj/item/robot_parts/r_arm,65),"l_leg"=list(/obj/item/robot_parts/l_leg,65),"r_leg"=list(/obj/item/robot_parts/r_leg,65))
-	},
+
 /obj/item/stack/material/steel/fifty,
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/tiled{
