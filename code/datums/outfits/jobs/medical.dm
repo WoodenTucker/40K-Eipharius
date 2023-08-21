@@ -29,6 +29,7 @@
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 		/obj/item/stack/thrones/five = 1,
 		/obj/item/stack/thrones2/five = 1,
+		/obj/item/book/manual/medical_diagnostics_manual = 1,
 		/obj/item/stack/thrones3/five = 1,)
 
 /decl/hierarchy/outfit/job/medical/doctor
@@ -50,6 +51,7 @@
 	backpack_contents = list(
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 		/obj/item/ammo_magazine/bolt_pistol_magazine = 1,
+		/obj/item/book/manual/medical_diagnostics_manual = 1,
 		/obj/item/stack/thrones2/five = 1,
 		/obj/item/stack/thrones3/five = 1,)
 /* // sisterhood chemist

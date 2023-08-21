@@ -96,7 +96,7 @@
 		icon_state = "sheetp-e"
 
 /obj/item/gun/projectile/pistol/villiers
-	name = "Villiers Pattern stub pistol."
+	name = "Villiers Pattern Auto-pistol."
 	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
 	icon_state = "stub2"
 	item_state = "pistol"
@@ -137,7 +137,7 @@
 	jammed_icon = "talon-j"
 
 /obj/item/gun/projectile/talon/renegade
-	name = "Renegade Pistol"
+	name = "Renegade Auto-Pistol"
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
 	one_hand_penalty = 0

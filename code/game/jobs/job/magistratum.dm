@@ -89,8 +89,8 @@
 /datum/job/enforcer
 	title = "Enforcer" // Cult. Criminal. Loyal.
 	supervisors = "the Planetary Marshal, Deacon and Inquisition"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
@@ -239,6 +239,7 @@
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/handcuffs = 2,
+	/obj/item/book/manual/detective = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
@@ -267,6 +268,7 @@
 	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
+	/obj/item/book/manual/detective = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	)
 
@@ -289,6 +291,7 @@
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/book/manual/detective = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,

@@ -318,3 +318,30 @@
 	b_side = pick('icons/map_project/sounds/dow_spessmarine.ogg')
 	sound_inside = a_side
 	sales_price = 20 // Very rare and expensive
+
+/obj/item/device/cassette/the_forest_1/New()
+    ..()
+    name = "Gabe Castro - Cassette 1"
+    desc = "Where have you heard this before ? It sounds VERY familiar..."
+    a_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
+    b_side = pick('icons/map_project/sounds/cassette_forest1.ogg')
+    sound_inside = a_side
+    sales_price = 20 // Very rare and expensive
+
+/obj/item/device/cassette/the_forest2/New()
+    ..()
+    name = "Gabe Castro - Cassette 6"
+    desc = "Where have you heard this before ? It sounds VERY familiar..."
+    a_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
+    b_side = pick('icons/map_project/sounds/cassette_forest6.ogg')
+    sound_inside = a_side
+    sales_price = 20 // Very rare and expensive
+    
+/obj/item/device/cassette/starcraft_1/New()
+    ..()
+    name = "Glenn Stafford - Terran Theme 1"
+    desc = "You need to build additional supply depots."
+    a_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
+    b_side = pick('icons/map_project/sounds/starcraft_terran1.ogg')
+    sound_inside = a_side
+    sales_price = 20 // Very rare and expensive

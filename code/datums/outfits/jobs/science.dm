@@ -58,6 +58,8 @@
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
-	backpack_contents = list(
-		/obj/item/stack/thrones/five = 1,
-							)
+	backpack_contents = list(/obj/item/stack/thrones/five = 1,
+		/obj/item/stack/thrones2/five = 3,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
+		/obj/item/book/manual/engineering_construction = 1,
+		/obj/item/stack/thrones3/five = 1,)

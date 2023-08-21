@@ -7,6 +7,7 @@
 	/datum/job/servant,
 	/datum/job/hydro,
 	/datum/job/inquisitor,
+	/datum/job/undertaker,
 	/datum/job/acolyte,
 	/datum/job/arbitrator,
 	/datum/job/enforcer,

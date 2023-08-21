@@ -637,6 +637,7 @@ Pilgrim Fate System
 	backpack_contents = list(
 	/obj/item/card/id/ring/disgracedmedicae = 1,
 	/obj/item/stack/thrones = 1,
+	/obj/item/book/manual/medical_diagnostics_manual = 1,
 	/obj/item/stack/thrones2 = 1,
 	)
 
@@ -682,6 +683,7 @@ Pilgrim Fate System
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/book/manual/chef_recipes = 1,
     )
 
 /decl/hierarchy/outfit/job/innkeeper
@@ -700,6 +702,7 @@ Pilgrim Fate System
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/book/manual/chef_recipes = 1,
     )
 
 //Administrator
@@ -770,6 +773,7 @@ Pilgrim Fate System
 	backpack_contents = list(
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
+	/obj/item/book/manual/chef_recipes = 1,
 
 	)
 

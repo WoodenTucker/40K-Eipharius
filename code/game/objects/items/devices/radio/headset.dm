@@ -470,7 +470,7 @@
 	syndie = 1
 
 /obj/item/device/radio/headset/inquisition
-	name = "Vox Headset"
+	name = "Standard Issue Vox"
 	origin_tech = list(TECH_ILLEGAL = 2)
 	syndie = 1
 	ks1type = /obj/item/device/encryptionkey/inq

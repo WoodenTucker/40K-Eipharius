@@ -20,6 +20,7 @@
 	maxbodytemp = 1000
 	see_in_dark = 10
 	wander = 1
+	turns_per_move = 25
 
 	speed = 1.6 // Higher number means slower.
 
@@ -312,7 +313,7 @@
 	emote_hear = list("giggles", "smirks", "yaps", "squeals")
 	emote_see = list("jumps around!", "picks its nose", "claps")
 	speak_chance = 75
-	turns_per_move = 50
+	turns_per_move = 25
 	speed = 5
 	maxHealth = 450
 	health = 450
@@ -356,7 +357,7 @@
 	icon_living = "shadow"
 	icon_dead = "shadow_dead"
 	speak_chance = 0
-	turns_per_move = 5
+	turns_per_move = 25
 	response_help = "passes through"
 	response_disarm = "shoves"
 	response_harm = "hits"
@@ -382,7 +383,7 @@
 	icon_living = "zombie"
 	icon_dead = "zombie_dead"
 	speak_chance = 0
-	turns_per_move = 5
+	turns_per_move = 25
 	response_help = "passes through"
 	response_disarm = "shoves"
 	response_harm = "hits"

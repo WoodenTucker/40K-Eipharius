@@ -100,7 +100,7 @@
 	fire_delay= 3
 
 /obj/item/gun/projectile/revolver/villiers
-	name = "Villiers Pattern Stub Revolver"
+	name = "Villiers Pattern Auto-Revolver"
 	desc = "This Villiers is as high quality as the rest of them. Their standard burst fire qualities somehow being fit unto a revolver chambered in .357!"
 	icon_state = "slug_revolver"
 	item_state = "crevolver"

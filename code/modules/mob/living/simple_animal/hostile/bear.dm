@@ -11,7 +11,7 @@
 	emote_hear = list("rawrs","grumbles","grawls")
 	emote_see = list("stares ferociously", "stomps")
 	speak_chance = 1
-	turns_per_move = 50
+	turns_per_move = 25
 	see_in_dark = 12
 	wander = 1
 	meat_type = /obj/item/reagent_containers/food/snacks/bearmeat

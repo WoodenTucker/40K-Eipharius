@@ -150,7 +150,7 @@
 /obj/item/reagent_containers/food/snacks/meat/pig
 	name = "slab of pork"
 	desc = "A big chunk of pork coming from a poor pig. Cook first!"
-	sales_price = 10
+	sales_price = 8
 
 	New()
 		..()

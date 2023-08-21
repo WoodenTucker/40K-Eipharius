@@ -142,8 +142,8 @@
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
 	title = "Imperial Guard Specialist"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 10
@@ -202,8 +202,8 @@ datum/job/ig/bullgryn
 	title = "Bullgryn"
 	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
 	selection_color = "#33813A"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Da Emprah. Da Commesar, and da little on's!"
 	outfit_type = /decl/hierarchy/outfit/job/bullgryn
 	latejoin_at_spawnpoints = TRUE
@@ -455,8 +455,8 @@ datum/job/ig/bullgryn
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	head_position = 1
 	selection_color = "#23742a"
 	department_flag = SEC
@@ -858,6 +858,7 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1059,6 +1060,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1086,6 +1088,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/clothing/glasses/cadiangoggles = 1
 	)
 	suit_store = /obj/item/gun/energy/las/lasgun
@@ -1114,6 +1117,7 @@ datum/job/ig/bullgryn
     /obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1143,6 +1147,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1170,6 +1175,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -1192,6 +1198,7 @@ datum/job/ig/bullgryn
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/storage/box/sniperammo/apds = 4,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones2/five = 1
 	)
 
@@ -1252,6 +1259,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -1275,7 +1283,8 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1
 	)
 
 /decl/hierarchy/outfit/job/sergeant/valhallan
@@ -1296,7 +1305,8 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1
 	)
 
 
@@ -1327,6 +1337,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1
 	)
 
 	pda_slot = null
