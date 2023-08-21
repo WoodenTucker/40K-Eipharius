@@ -415,6 +415,8 @@
 /area/cadiaoutpost/oa/engineering)
 "awL" = (
 /obj/structure/table/steel_reinforced,
+/obj/item/handcuffs/cable/yellow,
+/obj/item/handcuffs/cable/yellow,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -12415,10 +12417,10 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "nhi" = (
-/mob/living/simple_animal/hostile/shafra{
-	dir = 8
-	},
-/turf/simulated/floor/snow,
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/mob/living/simple_animal/hostile/mold,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "nhj" = (
 /obj/structure/table/rack/dark,
@@ -15734,10 +15736,6 @@
 /obj/effect/floor_decal/turf/surgery2,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/oa/medicae)
-"qIt" = (
-/mob/living/simple_animal/hostile/shafra,
-/turf/simulated/floor/snow,
-/area/cadiaoutpost/new_hive/hive_city)
 "qIL" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -17611,6 +17609,7 @@
 /obj/structure/table/rack/shelf{
 	color = "grey"
 	},
+/obj/item/handcuffs/cable/yellow,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -20118,8 +20117,13 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
 "vof" = (
-/mob/living/simple_animal/hostile/bear,
-/turf/simulated/floor/snow,
+/obj/structure/table/woodentable{
+	color = "#36261B"
+	},
+/obj/item/handcuffs/cable/yellow,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
 /area/cadiaoutpost/new_hive/hive_city)
 "voH" = (
 /obj/structure/table/rack,
@@ -20461,10 +20465,13 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "vIJ" = (
-/mob/living/simple_animal/hostile/shafra{
-	dir = 1
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/turf/simulated/floor/snow,
+/obj/item/handcuffs/cable/yellow,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
 /area/cadiaoutpost/new_hive/hive_city)
 "vJv" = (
 /obj/structure/hivedecor/oldclock,
@@ -26649,7 +26656,7 @@ nSI
 nSI
 oiV
 nSI
-qIt
+nSI
 nSI
 nSI
 nSI
@@ -27600,7 +27607,7 @@ nSI
 oiV
 nSI
 nSI
-nhi
+nSI
 nSI
 mOl
 nSI
@@ -27883,7 +27890,7 @@ mOl
 mOl
 mOl
 mOl
-qIt
+nSI
 nSI
 nSI
 nSI
@@ -30834,7 +30841,7 @@ oiV
 nSI
 nSI
 nSI
-nhi
+nSI
 xAE
 nSI
 nSI
@@ -36383,7 +36390,7 @@ nSI
 nSI
 nSI
 nSI
-oWN
+nSI
 nSI
 nSI
 nSI
@@ -39140,7 +39147,7 @@ oiV
 nSI
 nSI
 nSI
-vIJ
+nSI
 nSI
 nSI
 nSI
@@ -41748,7 +41755,7 @@ obD
 tGX
 nRK
 nRK
-jjH
+riH
 iFU
 iFU
 iFU
@@ -42509,13 +42516,13 @@ iFU
 qom
 nRK
 iFU
-owu
+pZV
 kbT
 fUE
 fpR
 bFy
 hNX
-owu
+nhi
 iFU
 iqE
 iqE
@@ -46659,7 +46666,7 @@ mOl
 mOl
 mOl
 nSI
-nhi
+nSI
 nSI
 nSI
 mOl
@@ -48071,9 +48078,9 @@ eaj
 eaj
 eaj
 xHv
-xHv
-xHv
-xHv
+eaj
+eaj
+eaj
 xHv
 eTh
 nSI
@@ -68238,7 +68245,7 @@ kqw
 geo
 iFU
 tOj
-tOj
+vIJ
 iFU
 eTh
 ivO
@@ -69255,7 +69262,7 @@ bXT
 ehM
 mCK
 geo
-tOj
+vIJ
 ldN
 geo
 jXA
@@ -69779,7 +69786,7 @@ nSI
 nSI
 nSI
 nSI
-qIt
+nSI
 nSI
 nSI
 nSI
@@ -73311,7 +73318,7 @@ nSI
 nSI
 nSI
 oiV
-qIt
+nSI
 nSI
 nSI
 nSI
@@ -74540,7 +74547,7 @@ bXT
 bXT
 jXA
 bXT
-mCK
+vof
 iFU
 aMP
 ivO
@@ -79244,7 +79251,7 @@ nSI
 nSI
 nSI
 nSI
-vof
+nSI
 nSI
 mOl
 mOl
@@ -80746,7 +80753,7 @@ nSI
 nSI
 nSI
 nSI
-vof
+nSI
 nSI
 nSI
 nSI
@@ -81270,7 +81277,7 @@ mOl
 mOl
 mOl
 bwI
-aHi
+bwI
 bwI
 mOl
 mOl
@@ -82525,7 +82532,7 @@ mOl
 mOl
 mOl
 mOl
-aHi
+bwI
 bwI
 mOl
 bwI
@@ -83018,7 +83025,7 @@ mOl
 mOl
 nSI
 nSI
-vof
+nSI
 nSI
 nSI
 nSI
