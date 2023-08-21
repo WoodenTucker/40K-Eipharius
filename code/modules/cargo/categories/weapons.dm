@@ -202,8 +202,8 @@ datum/cargo_entry/weapon/accapistol
 	item_path = /obj/item/gun/projectile/pistol/kieji
 
 /datum/cargo_entry/weapon/vilpistol
-	name = "Villiers Pistol"
-	cost = 30
+	name = "Villiers Auto-Pistol"
+	cost = 40
 	item_path = /obj/item/gun/projectile/pistol/villiers
 
 /datum/cargo_entry/weapon/broomhandle
@@ -213,7 +213,7 @@ datum/cargo_entry/weapon/accapistol
 
 /datum/cargo_entry/weapon/villerrevolver
 	name = "Villiers Revolver"
-	cost = 40
+	cost = 50
 	item_path = /obj/item/gun/projectile/revolver/villiers
 
 /datum/cargo_entry/weapon/messinarevolver
@@ -248,7 +248,7 @@ datum/cargo_entry/weapon/accapistol
 
 /datum/cargo_entry/weapon/reng
 	name = "Renegade Pistol"
-	cost = 56
+	cost = 61
 	item_path = /obj/item/gun/projectile/talon/renegade
 
 /datum/cargo_entry/weapon/bolterpistol

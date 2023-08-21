@@ -6,14 +6,14 @@
 	icon_dead = "traitorguard1_dead"
 	icon_gib = "syndicate_gib"
 	speak_chance = 0
-	turns_per_move = 5
+	turns_per_move = 35
 	response_help = "pokes"
 	response_disarm = "shoves"
 	response_harm = "hits"
 	speed = 3 // Their speed is low to prevent them from charging into melee range immediately.
 	stop_automated_movement_when_pulled = 0
-	maxHealth = 150
-	health = 150
+	maxHealth = 250
+	health = 250
 	harm_intent_damage = 5
 	melee_damage_lower = 20
 	melee_damage_upper = 30
@@ -80,8 +80,8 @@
 	icon_living = "traitorguard2"
 	icon_dead = "traitorguard2_dead"
 	name = "Veteran Traitor Guardsmen"
-	maxHealth = 240
-	health = 240
+	maxHealth = 340
+	health = 340
 	speed = 2
 
 /mob/living/simple_animal/hostile/viscerator
@@ -91,8 +91,8 @@
 	icon_state = "viscerator_attack"
 	icon_living = "viscerator_attack"
 	pass_flags = PASS_FLAG_TABLE
-	health = 15
-	maxHealth = 15
+	health = 75
+	maxHealth = 75
 	melee_damage_lower = 15
 	melee_damage_upper = 15
 	attacktext = "cut"
@@ -113,6 +113,6 @@
 	icon_dead = "traitorguardcpt_dead"
 	name = "Traitor Capitan"
 	desc = "A traitor capitan, this one seems to have been gifted by the ruinous powers, making him stronger than the rest."
-	maxHealth = 350
-	health = 350
-	speed = 2
+	maxHealth = 550
+	health = 550
+	speed = 1

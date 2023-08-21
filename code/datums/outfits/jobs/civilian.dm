@@ -116,7 +116,7 @@
 
 /decl/hierarchy/outfit/job/service/undertaker
 	name = OUTFIT_JOB_NAME("Undertaker")
-	uniform = /obj/item/clothing/under/child_jumpsuit
+	uniform = /obj/item/clothing/under/child_jumpsuit/warfare
 	id_type = /obj/item/card/id/civilian/bartender
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null

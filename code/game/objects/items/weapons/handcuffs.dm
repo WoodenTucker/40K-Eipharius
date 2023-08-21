@@ -14,7 +14,7 @@
 	matter = list(DEFAULT_WALL_MATERIAL = 500)
 	var/elastic
 	var/dispenser = 0
-	var/breakouttime = 1200 //Deciseconds = 120s = 2 minutes
+	var/breakouttime = 600 //Deciseconds = 120s = 1 minute
 	var/cuff_sound = 'sound/weapons/handcuffs.ogg'
 	var/cuff_type = "handcuffs"
 

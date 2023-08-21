@@ -30,6 +30,7 @@
 	/obj/item/clothing/under/suit_jacket = 1,
 	/obj/item/clothing/under/suit_jacket/female = 1,
 	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/book/manual/chef_recipes = 1,
 	/obj/item/stack/thrones3/ten = 1)
 
 /decl/hierarchy/outfit/job/cargo/cargo_tech
