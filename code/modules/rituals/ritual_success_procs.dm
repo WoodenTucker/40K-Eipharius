@@ -12,34 +12,36 @@
 	for(var/mob/living/carbon/M in view(6, ritual_leader))
 		if(/datum/reagent/water/holywater in M.chem_doses)
 			if(M.faction == "Chaos")
-				spookyMoves(M) // if this procs the bad boy interogee will do some spooky exorcist floating
+				to_chat(ritual_leader, "spooking this chaos boy")
+				M.spookyMoves() // if this procs the bad boy interogee will do some spooky exorcist floating
 
 
 
-/mob/proc/spookyMoves(var/mob/interogatee)
+/mob/proc/spookyMoves()
+	var/mob/living/carbon/human/target = src
 	var/default_pixel_x = 0
 	var/default_pixel_y = 0
-	visible_message("[interogatee.name] begins to twitch and levitate!")
-	playsound(get_turf(interogatee), 'sound/effects/pig_squeal.ogg', 75, 5)
+	visible_message("[target.name] begins to twitch and levitate!")
+	playsound(get_turf(target), 'sound/effects/pig_squeal.ogg', 95, 5)
 
 
 	var/i
 	for(i=1,i<=10,i++)
-		if(interogatee.buckled == null)
-			interogatee.pixel_x = 2.5
-			interogatee.pixel_y = 2.5 //less moves when not in a chair, it looks a little too wonky
-			sleep(1)
-			interogatee.pixel_x = default_pixel_x
-			interogatee.pixel_y = default_pixel_y
+		if(target.buckled == null)
+			target.pixel_x += (i + 4.5)
+			target.pixel_y += (i + 4.5)//less moves when not in a chair, it looks a little too wonky
+			sleep(2)
+			target.pixel_x = default_pixel_x
+			target.pixel_y = default_pixel_y
 		else
-			var/obj/structure/buckle_obj
-			interogatee.pixel_x = 5.5
-			interogatee.pixel_y = 5.5 //less moves when not in a chair, it looks a little too wonky
-			buckle_obj.pixel_x = 5.5
-			buckle_obj.pixel_y = 5.5
-			sleep(1)
-			interogatee.pixel_x = default_pixel_x
-			interogatee.pixel_y = default_pixel_y
+			var/obj/structure/buckle_obj = target.buckled
+			target.pixel_x  += (i + 4.5)
+			target.pixel_y  += (i + 4.5) //less moves when not in a chair, it looks a little too wonky
+			buckle_obj.pixel_x  += (i + 4.5)
+			buckle_obj.pixel_y  += (i + 4.5)
+			sleep(2)
+			target.pixel_x = default_pixel_x
+			target.pixel_y = default_pixel_y
 			buckle_obj.pixel_x = default_pixel_x
 			buckle_obj.pixel_y = default_pixel_y
 
