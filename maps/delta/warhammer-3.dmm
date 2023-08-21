@@ -7794,8 +7794,7 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "iIW" = (
 /obj/machinery/door/unpowered/inn{
-	name = "Dining Room";
-	req_access = list(63)
+	name = "Dining Room"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -8583,7 +8582,7 @@
 	name = "Manor Lockdown"
 	},
 /obj/machinery/door/airlock/imperiumdoor{
-	req_one_access = list(63)
+	req_one_access = list(63,331)
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -13097,10 +13096,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
 "oxS" = (
-/obj/machinery/door/unpowered/inn{
-	req_access = list(63);
-	name = "Living Room"
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "oxX" = (
@@ -16261,7 +16257,6 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "skj" = (
-
 /obj/item/stack/material/steel/fifty,
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/tiled{
@@ -16299,10 +16294,7 @@
 /obj/machinery/door/blast/shutters/open{
 	name = "Manor Lockdown"
 	},
-/obj/machinery/door/unpowered/inn{
-	name = "Garden Entrace";
-	req_access = list(63)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "snA" = (
@@ -16554,16 +16546,11 @@
 	},
 /area/cadiaoutpost/oa/service/hab/inside)
 "syG" = (
-/obj/machinery/door/airlock/glass_engineering{
-	explosion_resistance = 100;
-	health = 3000;
-	maxhealth = 3000;
-	name = "Mechanicus";
-	req_one_access = list(10,7,8);
-	req_access = list(10)
+/obj/machinery/door/unpowered/inn{
+	req_one_access = list(63,331)
 	},
-/turf/unsimulated/mineral,
-/area/cadiaoutpost/oa/engineering)
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/bridge/hallway)
 "szs" = (
 /obj/item/device/flashlight/flare,
 /turf/simulated/floor/tiled/dark,
@@ -16736,13 +16723,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/gatehouse)
-"sHV" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Kitchen";
-	req_access = list(63)
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/bridge/hallway)
 "sIh" = (
 /obj/structure/sign/mechanicus{
 	pixel_x = -32
@@ -48693,7 +48673,7 @@ pRw
 qSC
 qSC
 qSC
-sHV
+oxS
 etR
 etR
 vTa
@@ -50205,7 +50185,7 @@ qSC
 qSC
 qSC
 qSC
-sHV
+oxS
 fpQ
 fpQ
 fpQ
@@ -50452,7 +50432,7 @@ eOC
 eOC
 mRw
 nob
-sHV
+oxS
 qSC
 add
 upY
@@ -50966,7 +50946,7 @@ nob
 nob
 nob
 jnn
-nYs
+syG
 fpQ
 fpQ
 fpQ
@@ -51208,7 +51188,7 @@ wkk
 pWS
 drW
 mgl
-nYs
+oxS
 drW
 mgl
 eOC
@@ -53224,7 +53204,7 @@ nFZ
 pWS
 drW
 mgl
-nYs
+oxS
 drW
 mgl
 eOC
@@ -53735,8 +53715,8 @@ iDo
 iDo
 iDo
 iDo
-nYs
-nYs
+oxS
+oxS
 iDo
 iDo
 iDo
@@ -54747,8 +54727,8 @@ eOC
 sjH
 rQC
 iDo
-nYs
-nYs
+oxS
+oxS
 iDo
 qdc
 iaa
@@ -55505,7 +55485,7 @@ eOC
 eOC
 eOC
 eOC
-nYs
+oxS
 gzn
 gHK
 gHK
@@ -55757,7 +55737,7 @@ eOC
 eOC
 eOC
 eOC
-nYs
+oxS
 sEL
 lzR
 lzR
@@ -59096,7 +59076,7 @@ aGo
 uNf
 uNf
 uNf
-syG
+paS
 uNf
 qiL
 nSI

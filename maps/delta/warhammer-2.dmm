@@ -3838,14 +3838,11 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/caves/undercity)
 "dQV" = (
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
-	pixel_y = -20;
 	id = "inq_interior";
 	req_access = list(302)
-	},
-/obj/structure/bed/chair/wood/fancy/comfy2{
-	dir = 8
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
@@ -10658,7 +10655,6 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "kzv" = (
-
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/barracks)
@@ -17430,10 +17426,10 @@
 "rfN" = (
 /obj/machinery/button/remote/blast_door/id_scan{
 	name = "pristine ID lock";
-	pixel_y = 18;
 	id = "inq_interior";
 	req_access = list(302)
 	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "rht" = (
@@ -18715,7 +18711,6 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "svG" = (
-
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
@@ -23743,8 +23738,7 @@
 "xxj" = (
 /obj/machinery/door/unpowered/inn/magistratum{
 	maxhealth = 900;
-	name = "Arbites Office";
-	req_access = list(3)
+	name = "Arbites Office"
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -34106,7 +34100,7 @@ iVl
 hdG
 tWF
 oHn
-dQV
+oHn
 bkf
 agO
 lsN
@@ -34610,7 +34604,7 @@ wLi
 nex
 dYo
 wLi
-wLi
+dQV
 bkf
 rfN
 lsN
@@ -46044,7 +46038,7 @@ vrp
 ojM
 ojM
 ojM
-xxj
+jMq
 ojM
 ojM
 ojM
