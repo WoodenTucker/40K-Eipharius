@@ -86,12 +86,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/krootship)
-"an" = (
-/obj/effect/landmark{
-	name = "krootstart"
-	},
-/turf/simulated/floor/plating,
-/area/cadiaoutpost/oa/krootship)
 "ao" = (
 /obj/structure/extinguisher_cabinet,
 /turf/simulated/shuttle/wall{
@@ -8906,14 +8900,14 @@ ax
 ax
 aa
 ac
-an
+aj
 aj
 bz
 aK
 aK
 bz
 aj
-an
+aj
 ac
 aa
 ax
@@ -10125,7 +10119,7 @@ aK
 aK
 aa
 cG
-an
+aj
 ac
 aj
 ad
@@ -10532,7 +10526,7 @@ ad
 aj
 aj
 as
-an
+aj
 ac
 aa
 ax
@@ -12724,7 +12718,7 @@ kE
 kP
 gL
 gL
-kE
+TM
 kP
 gL
 kk
@@ -13158,7 +13152,7 @@ ad
 aj
 aj
 at
-an
+aj
 ac
 aa
 ax
@@ -13559,7 +13553,7 @@ aK
 aK
 aa
 cG
-an
+aj
 ac
 aj
 ad
@@ -14138,10 +14132,10 @@ ax
 jR
 gL
 gL
-kr
+TM
 kP
 gL
-kr
+TM
 kP
 gL
 gL
@@ -14347,7 +14341,7 @@ gL
 gL
 gL
 gL
-kr
+TM
 kP
 gL
 gL
@@ -14764,14 +14758,14 @@ ax
 ax
 aa
 ac
-an
+aj
 aU
 aa
 aK
 aK
 aa
 cG
-an
+aj
 ac
 aa
 ax

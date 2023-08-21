@@ -3591,6 +3591,7 @@
 /obj/item/clothing/head/ordohereticus,
 /obj/item/cane/concealed,
 /obj/item/clothing/mask/gas/security/agent,
+/obj/item/clothing/accessory/holster,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dDz" = (
@@ -19595,6 +19596,7 @@
 /obj/item/clothing/mask/gas/security/agent,
 /obj/item/clothing/mask/gas/security/agent,
 /obj/item/clothing/mask/gas/security/agent,
+/obj/item/clothing/accessory/holster,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "trg" = (
