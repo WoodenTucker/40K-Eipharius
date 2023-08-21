@@ -961,6 +961,10 @@
 /obj/item/device/radio/headset/headset_sci,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
+"hE" = (
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/hallway/northern)
 "hF" = (
 /obj/machinery/computer/bountycogitator,
 /obj/structure/window/reinforced{
@@ -35874,7 +35878,7 @@ Lm
 sU
 Qh
 Qh
-UR
+hE
 Qh
 Qh
 cF
@@ -36114,8 +36118,8 @@ Qh
 Qh
 Qh
 Qh
-UR
-UR
+hE
+hE
 Qh
 Qh
 Qh
@@ -36625,7 +36629,7 @@ oR
 oR
 zE
 Zm
-UR
+hE
 vj
 Xj
 Lm
@@ -36633,7 +36637,7 @@ Lm
 Lm
 mh
 vj
-UR
+hE
 hY
 Lm
 sV
@@ -38641,7 +38645,7 @@ Fj
 Fj
 mh
 vj
-UR
+hE
 Uq
 Ed
 Ed
@@ -39138,8 +39142,8 @@ Qh
 Qh
 Qh
 Qh
-UR
-UR
+hE
+hE
 Qh
 Qh
 Qh
@@ -39154,7 +39158,7 @@ Qh
 Qh
 Qh
 Qh
-UR
+hE
 Qh
 Qh
 Qh
@@ -40164,7 +40168,7 @@ UR
 Lm
 Lm
 Lm
-UR
+hE
 bL
 bG
 bL
