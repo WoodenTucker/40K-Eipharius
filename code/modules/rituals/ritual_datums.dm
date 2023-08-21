@@ -42,4 +42,4 @@
 	min_chants = 1 //requires at least 1 additional ritualist and the phrase must be uttered 3 times by non-ritual leader
 	allowed_jobs = list(/datum/job/deacon, /datum/job/sistersuperior)
 	success_result = /proc/preservationSuccess
-	fail_result =  = /proc/preservationFail
+	fail_result = /proc/preservationFail
