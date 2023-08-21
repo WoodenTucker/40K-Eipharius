@@ -403,9 +403,7 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "bE" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/book/manual{
 	desc = "I discovered a truly miraculous substance in the vials recovered by the scouts. It produces a faint light and a pungent odour, when injected a wound on my hand I acquired during my cuttings healed rapidly. It was astounding. I have experimented with it but so far it has proven ineffective against my illness.";
 	name = "Research Notes"
@@ -2952,9 +2950,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "kD" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/microwave{
 	color = "grey"
 	},
@@ -3729,11 +3725,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "mV" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -3833,11 +3825,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "nw" = (
 /obj/item/reagent_containers/glass/bottle/panacea,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "a16";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
@@ -5075,11 +5063,7 @@
 	icon_state = "graffiti8";
 	pixel_x = -32
 	},
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/organ/internal/eyes{
 	desc = "<span class='danger'>We dont need eyes for where we're going.</span>"
 	},
@@ -5949,11 +5933,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "vf" = (
 /obj/item/flame/lighter/zippo,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes,
 /obj/item/storage/fancy/cigarettes,
 /turf/simulated/floor/darkwood,
@@ -6076,9 +6056,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
 "vD" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tourniquet,
 /turf/simulated/floor/seolite,
 /area/cadiaoutpost/oa/caves/dark)
@@ -6420,11 +6398,7 @@
 /obj/structure/sign/ship/hell{
 	pixel_y = -32
 	},
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/melee/sword/skinning_knife,
 /obj/item/reagent_containers/hypospray/autoinjector/morphine{
 	pixel_y = 16;
@@ -7016,17 +6990,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/terror)
-"zu" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
-/turf/simulated/floor/ship_floor/steel{
-	icon_state = "t";
-	icon = 'icons/map_project/ship/tilesnovos.dmi'
-	},
-/area/cadiaoutpost/new_hive/caves)
 "zw" = (
 /obj/effect/floor_decal/turf/necro1,
 /turf/simulated/floor/tiled/dark{
@@ -9520,11 +9483,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "IA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/caddis/supreme{
 	pixel_x = 16
 	},
@@ -13469,12 +13428,7 @@
 	},
 /area/cadiaoutpost/oa/caves/undercity)
 "Xr" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ship_floor/steel{
 	icon_state = "t";
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
@@ -20596,7 +20550,7 @@ Os
 Ox
 Ox
 jM
-zu
+Xr
 Zs
 Zs
 QZ

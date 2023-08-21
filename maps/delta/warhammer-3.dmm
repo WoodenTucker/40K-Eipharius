@@ -72,11 +72,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/villageinside)
 "ahr" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/lighter/zippo{
 	pixel_x = 10
 	},
@@ -183,11 +179,7 @@
 /area/cadiaoutpost/oa/gatehouse)
 "amb" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/ashtray/glass{
 	pixel_y = -15
 	},
@@ -220,12 +212,7 @@
 	pixel_x = 8;
 	pixel_y = 4
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -284,11 +271,7 @@
 /turf/simulated/floor/fancyfloor/carpet/grey/middle,
 /area/cadiaoutpost/oa/bridge/hallway)
 "aqG" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin,
 /obj/item/pen/multi{
 	pixel_y = -2
@@ -755,11 +738,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "aMY" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -1130,11 +1109,7 @@
 	},
 /area/cadiaoutpost/oa/farm)
 "blg" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/hab/inside)
 "bmh" = (
@@ -1181,11 +1156,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "bpr" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/ammo_magazine/ork/shoota{
 	pixel_y = 9;
 	pixel_x = -9
@@ -1197,11 +1168,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "bpB" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/cafe{
 	dir = 8
 	},
@@ -1268,11 +1235,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
 "bsi" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -1407,15 +1370,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
-"bzl" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "bzu" = (
 /obj/machinery/photocopier,
 /obj/item/device/toner{
@@ -1672,12 +1626,7 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "bQA" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/small/ale,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1845,9 +1794,7 @@
 /area/cadiaoutpost/oa/gatehouse)
 "cbW" = (
 /obj/item/clothing/mask/breath/anesthetic,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/glass/rag,
 /obj/item/FixOVein,
 /obj/effect/floor_decal/newcorner/plating,
@@ -1939,11 +1886,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "chb" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	pixel_x = -16
 	},
@@ -1963,24 +1906,8 @@
 /obj/structure/grille/iron_fence,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
-"chV" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
-/obj/item/paper_bin,
-/obj/item/pen/multi{
-	pixel_y = -2
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "cij" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/vietnam{
 	pixel_y = 4;
 	pixel_x = 2
@@ -2032,9 +1959,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "coY" = (
 /obj/item/storage/firstaid/surgery,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tourniquet,
 /obj/effect/floor_decal/newcorner/plating,
 /obj/effect/floor_decal/turf/surgery2,
@@ -2060,12 +1985,7 @@
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/service/hab/inside)
 "cqz" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -2097,11 +2017,7 @@
 	},
 /area/cadiaoutpost/oa/farm)
 "csZ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes/killthroat,
 /obj/item/flame/lighter/zippo{
 	pixel_x = 10
@@ -2202,19 +2118,11 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "cyX" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
 "czi" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -2371,22 +2279,6 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
-"cJn" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
-/obj/item/material/ashtray/glass,
-/obj/machinery/door/blast/grates{
-	dir = 8;
-	icon_state = "gshutter1";
-	id = "barshutters";
-	maxhealth = 1000;
-	name = "bar shutters"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/inn)
 "cJJ" = (
 /obj/effect/floor_decal/turf/bar3,
 /obj/effect/floor_decal/turf/big_cables1{
@@ -2500,14 +2392,6 @@
 "cRJ" = (
 /turf/simulated/floor/stone/ancient_stone_old,
 /area/cadiaoutpost/new_hive/hive_city)
-"cSz" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "cTz" = (
 /obj/structure/table/rack,
 /obj/random/action_figure,
@@ -2555,11 +2439,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
 "cVL" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/goldmask,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -2570,11 +2450,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "cWl" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/randomlasammo,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -2682,18 +2558,6 @@
 /obj/random/trash,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"dcb" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "dcf" = (
 /obj/random/loot/randomitemtown,
 /turf/simulated/floor/tiled/dark{
@@ -2814,11 +2678,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "dkP" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates/open{
 	id = "abandoned_store1";
 	name = "Abandoned Store Shutters"
@@ -2854,11 +2714,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "dlZ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/autochisel,
 /obj/effect/floor_decal/newcorner/red/solid,
 /turf/simulated/floor/tiled{
@@ -3071,13 +2927,9 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/new_hive/hive_city)
 "dvX" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/farm)
+/obj/effect/landmark/JoinLate,
+/turf/simulated/floor/stone,
+/area/cadiaoutpost/new_hive/hive_city)
 "dwt" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/table/rack,
@@ -3195,22 +3047,6 @@
 	color = "grey";
 	icon_state = "dark1"
 	},
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
-"dDi" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
-/obj/machinery/door/blast/grates{
-	icon_state = "gshutter1";
-	id = "munitorumgtfo";
-	maxhealth = 1000;
-	dir = 8;
-	name = "store shutters"
-	},
-/turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "dDF" = (
 /obj/effect/floor_decal/turf/brick,
@@ -3350,12 +3186,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "dII" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/small/ale,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
@@ -3400,11 +3231,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "dJL" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
 	pixel_y = 10;
 	pixel_x = -16
@@ -3498,11 +3325,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "dQa" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -3859,11 +3682,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "eqQ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/rocks{
 	pixel_y = 6;
 	pixel_x = 7
@@ -3877,11 +3696,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "erp" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/gatehouse)
 "esb" = (
@@ -4064,11 +3879,7 @@
 /turf/simulated/floor/grass,
 /area/cadiaoutpost/oa/bridge/hallway)
 "eCj" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/structure/flora/pottedplant/shoot{
 	pixel_y = 12;
 	pixel_x = 1
@@ -4282,11 +4093,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
 "eOw" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "eOC" = (
@@ -4341,11 +4148,7 @@
 "eTA" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/item/device/flashlight/lantern,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "eUj" = (
@@ -4406,12 +4209,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "eYa" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes/cigarello/variety{
 	pixel_x = 8
 	},
@@ -4548,11 +4346,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "ffA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/ashtray/glass,
 /obj/machinery/door/blast/grates{
 	dir = 8;
@@ -4926,11 +4720,7 @@
 /turf/simulated/floor/grass,
 /area/cadiaoutpost/oa/bridge/hallway)
 "fzr" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/carafe{
 	pixel_y = 6;
 	pixel_x = -6
@@ -5066,11 +4856,7 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
 "fFu" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/lamp/green{
 	pixel_x = 9
 	},
@@ -5154,9 +4940,7 @@
 /obj/machinery/cooker/candy{
 	color = "grey"
 	},
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -5258,11 +5042,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/groxpen)
 "fPE" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	dir = 8;
 	icon_state = "gshutter1";
@@ -5296,11 +5076,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "fQq" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -5463,11 +5239,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "gaw" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "gbf" = (
@@ -5534,11 +5306,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "gcS" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = 14;
 	pixel_x = -2
@@ -5586,12 +5354,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "geT" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -5747,10 +5510,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/villageinside)
 "gku" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/rocks{
 	pixel_y = 6;
 	pixel_x = -8
@@ -5901,11 +5661,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "gvQ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/paperwork{
 	pixel_y = 11
 	},
@@ -5914,11 +5670,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "gwe" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/red/solid,
 /obj/machinery/light/small/red{
 	dir = 4
@@ -5966,18 +5718,13 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "gyb" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/obj/item/paper_bin{
-	pixel_y = 10
+/obj/item/handcuffs/cable/yellow,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/item/pen/multi{
-	pixel_y = -2
-	},
-/turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
 "gyd" = (
 /obj/structure/closet/crate/trashcart,
@@ -6143,12 +5890,7 @@
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 10
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6";
-	pixel_y = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/premiumvodka{
 	pixel_y = 12;
 	pixel_x = -3
@@ -6293,11 +6035,7 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gNJ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/randomarmor,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -6353,12 +6091,7 @@
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gRn" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/boombox,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -6504,11 +6237,7 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "har" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/pint{
 	pixel_y = 6;
 	pixel_x = -12
@@ -6737,11 +6466,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "hjU" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
 	},
@@ -6766,15 +6491,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"hkW" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/hive_city)
 "hlt" = (
 /obj/effect/floor_decal/newcorner/red{
 	dir = 8
@@ -6819,18 +6535,6 @@
 	dir = 4
 	},
 /turf/simulated/floor/dirty,
-/area/cadiaoutpost/new_hive/hive_city)
-"hpj" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
-/obj/machinery/door/blast/grates{
-	name = "Checkpoint 2 Shutters";
-	id = "checkpoint2"
-	},
-/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "hpn" = (
 /obj/effect/floor_decal/newcorner/nbar{
@@ -7047,11 +6751,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "hBM" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table1"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/button/remote/blast_door{
 	pixel_y = 8;
 	pixel_x = -6;
@@ -7088,11 +6788,7 @@
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/flask/goblet{
 	pixel_x = 12
 	},
@@ -7297,12 +6993,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "hSL" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -7406,11 +7097,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "hZC" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/lamp/green{
 	pixel_y = 9
 	},
@@ -7606,12 +7293,8 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "ijd" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
-/turf/simulated/floor/darkwood,
+/obj/effect/landmark/JoinLate,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "ijA" = (
 /obj/structure/sign/art/blindfolds,
@@ -7750,19 +7433,6 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
-"itN" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
-/obj/machinery/door/blast/grates/open{
-	id = "abandoned_store1";
-	name = "Abandoned Store Shutters"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/inn)
 "itO" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -7828,11 +7498,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "iwK" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "iwS" = (
@@ -7892,11 +7558,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel)
 "ixQ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/deck/cards,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -8006,12 +7668,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "iFn" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -8468,9 +8125,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "iZI" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/spray/sterilizine,
 /obj/random/soap,
 /turf/simulated/floor/dirty/tough,
@@ -8545,11 +8200,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
 "jfd" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 4;
 	icon_state = "bulb1";
@@ -8595,11 +8246,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "jhm" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/mjod{
 	pixel_y = 4;
 	pixel_x = -8
@@ -8624,11 +8271,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
 "jiC" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 1;
 	icon_state = "bulb1"
@@ -8642,12 +8285,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "jjp" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/paperwork,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -8712,15 +8350,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/bridge/hallway)
-"jkT" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/hive_city)
 "jmr" = (
 /obj/item/stack/material/phoron,
 /obj/structure/table/steel_reinforced,
@@ -8823,11 +8452,7 @@
 /area/cadiaoutpost/oa/farm)
 "jtd" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = 3
 	},
@@ -8868,10 +8493,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
 "jwA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/pen/multi{
 	pixel_y = 6
 	},
@@ -8889,11 +8511,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "jwI" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -8970,10 +8588,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "jyv" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/teapot{
 	pixel_y = 14
 	},
@@ -9054,11 +8669,7 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/new_hive/hive_city)
 "jAZ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
@@ -9124,19 +8735,6 @@
 "jDa" = (
 /turf/simulated/floor/ice,
 /area/cadiaoutpost/new_hive/hive_city)
-"jDm" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
-/obj/machinery/door/blast/grates{
-	name = "Checkpoint 1 Shutters";
-	id = "checkpoint1"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/gatehouse)
 "jDR" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/randomlasammo,
@@ -9299,11 +8897,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "jLa" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/gramophone{
 	pixel_y = 12
 	},
@@ -9312,11 +8906,7 @@
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
 "jLK" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/bonehelm,
 /obj/machinery/light/small{
 	pixel_x = 16
@@ -9484,11 +9074,7 @@
 /area/cadiaoutpost/oa/medicae)
 "jTz" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = 6;
 	pixel_x = -4
@@ -9606,11 +9192,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "kaI" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "kbh" = (
@@ -9658,11 +9240,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "kdl" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	name = "Checkpoint 1 Shutters";
 	id = "checkpoint1"
@@ -9682,11 +9260,7 @@
 "kfv" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/item/deck/cards,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "kfM" = (
@@ -10307,15 +9881,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/villageinside)
-"kPI" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
-/obj/item/trash/plate,
-/turf/simulated/floor/darkwood/rotten,
-/area/cadiaoutpost/oa/farm)
 "kQa" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 4
@@ -10450,11 +10015,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "kYY" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/recharger{
 	pixel_x = -34
 	},
@@ -10865,18 +10426,6 @@
 /obj/structure/bed,
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
-"lte" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
-/obj/machinery/light/small{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "ltk" = (
 /obj/item/trash/pistachios,
 /turf/simulated/floor/dirty,
@@ -11012,12 +10561,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "lwT" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin,
 /obj/item/pen/multi,
 /turf/simulated/floor/tiled{
@@ -11159,11 +10703,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
 "lGy" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
 "lHm" = (
@@ -11200,10 +10740,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
 "lIa" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tray{
 	pixel_x = -6;
 	pixel_y = 6
@@ -11285,11 +10822,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "lLX" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = 6;
 	pixel_x = -4
@@ -11483,14 +11016,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "lXA" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
+/obj/structure/table/rack/dark,
+/obj/effect/floor_decal/industrial/hatch/yellow,
+/mob/living/simple_animal/hostile/mold,
 /turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/new_hive/hive_city)
 "lYY" = (
 /obj/effect/floor_decal/newcorner/stone,
 /turf/simulated/floor/dirty,
@@ -11655,14 +11185,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/farm)
-"mkY" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "mle" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -11713,11 +11235,7 @@
 /turf/simulated/floor/plating,
 /area/cadiaoutpost/new_hive/hive_city)
 "moW" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/premiumwine{
 	pixel_y = 9;
 	pixel_x = 3
@@ -11916,15 +11434,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"mCw" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/new_hive/hive_city)
 "mCK" = (
 /obj/structure/table/woodentable{
 	color = "#36261B"
@@ -12005,11 +11514,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "mJd" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -12072,11 +11577,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/villageinside)
 "mNl" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -12186,11 +11687,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
 "mSW" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel)
@@ -12269,11 +11766,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "mYD" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/lighter/zippo{
 	pixel_x = 10
 	},
@@ -12331,11 +11824,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "nba" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -12416,12 +11905,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"nhi" = (
-/obj/structure/table/rack/dark,
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/mob/living/simple_animal/hostile/mold,
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "nhj" = (
 /obj/structure/table/rack/dark,
 /obj/item/pickaxe/silver,
@@ -12562,11 +12045,7 @@
 	},
 /area/cadiaoutpost/oa/villageinside)
 "nqc" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "nrJ" = (
@@ -12615,11 +12094,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "ntr" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "nuN" = (
@@ -12740,11 +12215,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel)
 "nBA" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/new_hive/hive_city)
 "nBL" = (
@@ -12788,14 +12259,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
-"nDu" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "nDF" = (
 /obj/effect/floor_decal/newcorner/reinforced{
 	dir = 8
@@ -12884,11 +12347,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "nIz" = (
 /obj/item/fluff_items/ultrabanner,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 1;
 	icon_state = "bulb1"
@@ -12921,11 +12380,7 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/new_hive/hive_city)
 "nKA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = 4;
 	pixel_x = -12
@@ -12973,12 +12428,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/bridge/hallway)
 "nLL" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -13212,10 +12662,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/villageinside)
 "obe" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tray{
 	pixel_x = 6;
 	pixel_y = 6
@@ -13403,11 +12850,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "olg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/accessory,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
@@ -13578,22 +13021,6 @@
 /obj/machinery/door/unpowered/newmap/imperial_house/house6,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/hive_city)
-"otq" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/obj/machinery/door/blast/grates{
-	icon_state = "gshutter1";
-	id = "munitorumgtfo";
-	maxhealth = 1000;
-	dir = 8;
-	name = "store shutters"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/supply/offices/roguetrader)
 "otW" = (
 /obj/effect/floor_decal/newcorner/plating/corner,
 /turf/simulated/floor/tiled,
@@ -13655,11 +13082,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "oxk" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/wine{
 	pixel_x = -10;
 	pixel_y = 6
@@ -13681,11 +13104,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "oxX" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
 "oya" = (
@@ -13737,13 +13156,13 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "oAk" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
+/obj/structure/table/woodentable{
+	color = "#36261B"
 	},
-/turf/simulated/floor/fancyfloor/coralg,
+/obj/item/handcuffs/cable/yellow,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
 /area/cadiaoutpost/new_hive/hive_city)
 "oCr" = (
 /obj/structure/sink{
@@ -13806,9 +13225,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "oHn" = (
 /obj/effect/floor_decal/turf/cafe,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/cooker/candy{
 	color = "grey"
 	},
@@ -13818,11 +13235,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "oIf" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -13879,11 +13292,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "oKv" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/cocktail{
 	pixel_y = 6;
 	pixel_x = -12
@@ -14055,10 +13464,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/oa/gatehouse)
 "oUH" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tray{
 	pixel_y = 6
 	},
@@ -14253,9 +13659,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "pdt" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
 	pixel_x = 7;
 	pixel_y = 3
@@ -14305,20 +13709,6 @@
 	},
 /turf/simulated/floor/carpet,
 /area/cadiaoutpost/new_hive/hive_city)
-"pfv" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
-/obj/item/paper_bin{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = 4
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/service/hab/inside)
 "pfy" = (
 /obj/structure/sink{
 	dir = 8;
@@ -14333,11 +13723,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "pgt" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/gun/projectile/ork/automatic/shoota/kustom{
 	name = "Ogryn Shootie"
 	},
@@ -14401,12 +13787,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "plS" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stamp/granted{
 	pixel_y = 4
 	},
@@ -14522,19 +13903,6 @@
 /obj/item/trash/liquidfood/triglyceride,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
-"psV" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
-/obj/machinery/door/blast/grates{
-	name = "Checkpoint 2 Shutters";
-	id = "checkpoint2"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/new_hive/hive_city)
 "psY" = (
 /turf/simulated/floor/stone/ancient_stone_old,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -14543,11 +13911,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/service/inn)
 "pug" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/cafe{
 	dir = 1
 	},
@@ -14819,12 +14183,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "pJQ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/lighter/random,
 /obj/item/flame/lighter/random,
 /obj/item/flame/lighter/random,
@@ -15044,16 +14403,6 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
-"pYL" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "pZw" = (
 /obj/structure/bed/chair/wood/simple{
 	dir = 1
@@ -15066,11 +14415,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "qae" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/rocks{
 	pixel_y = 6;
 	pixel_x = -8
@@ -15130,11 +14475,7 @@
 	},
 /area/cadiaoutpost/oa/gatehouse)
 "qee" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -15181,11 +14522,7 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "qex" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -15510,11 +14847,7 @@
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/villageinside)
 "qzE" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -15547,11 +14880,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "qBa" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/ashtray/glass{
 	pixel_y = -10;
 	pixel_x = -15
@@ -15721,9 +15050,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "qHN" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/clothing/suit/apron,
 /obj/random/soap,
 /obj/item/reagent_containers/spray/sterilizine,
@@ -15872,11 +15199,7 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/bridge/hallway)
 "qST" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/cafe,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -15970,11 +15293,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "qYG" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_x = -2;
 	pixel_y = -3
@@ -16115,11 +15434,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/hab/inside)
 "ris" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -16199,11 +15514,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "rnv" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = 12;
 	pixel_x = 1
@@ -16271,10 +15582,7 @@
 /area/cadiaoutpost/oa/groxpen)
 "rpB" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/cigbutt/cigarbutt{
 	pixel_x = 10;
 	pixel_y = 8
@@ -16297,11 +15605,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "rqu" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = 4;
 	pixel_x = -12
@@ -16375,12 +15679,7 @@
 	},
 /area/cadiaoutpost/oa/farm)
 "rvw" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/new_hive/hive_city)
 "rvJ" = (
@@ -16517,12 +15816,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "rAF" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/randomitemtown,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
@@ -16804,9 +16098,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/engineering)
 "rWh" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/firstaid/surgery,
 /obj/item/FixOVein,
 /turf/simulated/floor/tiled{
@@ -16969,7 +16261,9 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "skj" = (
-
+/obj/machinery/organ_printer/robot/mapped{
+	products = list("heart"=list(/obj/item/organ/internal/heart/bioprinted,25),"lungs"=list(/obj/item/organ/internal/lungs,25),"kidneys"=list(/obj/item/organ/internal/kidneys,20),"eyes"=list(/obj/item/organ/internal/eyes/bioprinted,20),"liver"=list(/obj/item/organ/internal/liver,25),"l_arm"=list(/obj/item/robot_parts/l_arm,65),"r_arm"=list(/obj/item/robot_parts/r_arm,65),"l_leg"=list(/obj/item/robot_parts/l_leg,65),"r_leg"=list(/obj/item/robot_parts/r_leg,65))
+	},
 /obj/item/stack/material/steel/fifty,
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/tiled{
@@ -17019,15 +16313,6 @@
 	},
 /turf/simulated/floor/snow,
 /area/cadiaoutpost/oa/bridge/hallway)
-"snE" = (
-/obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "snH" = (
 /obj/machinery/r_n_d/protolathe,
 /obj/effect/floor_decal/newcorner/purple/solid,
@@ -17120,15 +16405,6 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/gatehouse)
-"srU" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/dark,
-/area/cadiaoutpost/oa/service/inn)
 "srZ" = (
 /obj/effect/water/bottom{
 	color = "blue"
@@ -17217,11 +16493,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/hive_city)
 "swI" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/tea{
 	pixel_y = 2;
 	pixel_x = -6
@@ -17414,14 +16686,6 @@
 "sDN" = (
 /turf/simulated/floor/fancyfloor/carpet,
 /area/cadiaoutpost/oa/service/chapel)
-"sEF" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "sEL" = (
 /obj/effect/floor_decal/newcorner/nbar{
 	dir = 5
@@ -17462,19 +16726,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
-"sGk" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
-/obj/machinery/door/blast/grates{
-	name = "Checkpoint 1 Shutters";
-	id = "checkpoint1"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/gatehouse)
 "sHn" = (
 /turf/simulated/floor/factory_floor{
 	dir = 8
@@ -17613,11 +16864,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "sNQ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shake{
 	pixel_y = 6;
 	pixel_x = 10
@@ -18233,11 +17480,7 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "tqz" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer{
 	pixel_y = -6;
 	pixel_x = -4
@@ -18288,11 +17531,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/hab/inside)
 "tup" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -18348,12 +17587,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "twa" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	name = "Checkpoint 2 Shutters";
 	id = "checkpoint2"
@@ -18433,12 +17667,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "tzH" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -18474,11 +17703,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "tBN" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/silvermask{
 	pixel_x = -4
 	},
@@ -18591,10 +17816,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "tHW" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/bridge/hallway)
 "tIj" = (
@@ -18618,11 +17840,7 @@
 /area/cadiaoutpost/oa/engineering)
 "tKg" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/ashtray/glass,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
@@ -18644,19 +17862,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/hive_city)
-"tMs" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/obj/machinery/door/blast/grates/open{
-	id = "abandoned_store1";
-	name = "Abandoned Store Shutters"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/inn)
 "tNe" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 8
@@ -18690,9 +17895,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "tNs" = (
 /obj/effect/floor_decal/turf/cafe,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -18747,16 +17950,6 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
-"tQl" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
-/turf/simulated/floor/tiled/dark{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "tQr" = (
 /turf/simulated/floor/fancyfloor/carpet/green{
 	dir = 10
@@ -18807,11 +18000,7 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/hive_city)
 "tTU" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tray{
 	pixel_x = 6;
 	pixel_y = -2
@@ -19304,11 +18493,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
 "uBm" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/fluff_items/goldsword,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -19471,12 +18656,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "uHG" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stamp/denied{
 	pixel_y = 10
 	},
@@ -19636,11 +18816,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
 "uQt" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tray{
 	pixel_x = -6;
 	pixel_y = -2
@@ -19728,12 +18904,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "uSi" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/dinner{
 	desc = "A long candle, perfect for setting the mood of an evening meal or longing prayer. Wax burns cleaner than tallow ones, and are sometimes scented.";
 	name = "wax candle";
@@ -19801,9 +18972,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "uSL" = (
 /obj/effect/floor_decal/turf/surgery2,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/clothing/accessory/pfcloak,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -19820,11 +18989,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/new_hive/hive_city)
 "uTx" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigar{
 	pixel_y = -12
 	},
@@ -19854,20 +19019,6 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/villageinside)
-"uUG" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
-/obj/item/paper_bin{
-	pixel_y = 10
-	},
-/obj/item/pen/multi{
-	pixel_y = -2
-	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/new_hive/hive_city)
 "uUL" = (
 /obj/structure/table/steel,
 /obj/machinery/light/small{
@@ -19897,12 +19048,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
 "uYg" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -19927,11 +19073,7 @@
 /area/cadiaoutpost/oa/villageinside)
 "uZh" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/cigbutt/cigarbutt{
 	pixel_x = 10;
 	pixel_y = 8
@@ -19944,11 +19086,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "vak" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/broken_bottle{
 	pixel_y = -8
 	},
@@ -20026,11 +19164,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/hive_city)
 "vin" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = 12;
 	pixel_x = 1
@@ -20114,15 +19248,6 @@
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/villageinside)
-"vof" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/handcuffs/cable/yellow,
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "voH" = (
 /obj/structure/table/rack,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -20248,11 +19373,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/service/chapel/graveyard)
 "vvz" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/trash/plate,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
@@ -20296,11 +19417,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/hive_city)
 "vys" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table6"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = 12;
 	pixel_x = 1
@@ -20462,15 +19579,6 @@
 	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
-"vIJ" = (
-/obj/structure/table/woodentable{
-	color = "#36261B"
-	},
-/obj/item/handcuffs/cable/yellow,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/hive_city)
 "vJv" = (
 /obj/structure/hivedecor/oldclock,
 /obj/structure/sign/banner_count/flag{
@@ -20500,11 +19608,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vMi" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/tray,
 /obj/item/reagent_containers/food/snacks/pastatomato{
 	pixel_y = 3
@@ -20522,11 +19626,7 @@
 /turf/simulated/open,
 /area/cadiaoutpost/new_hive/hive_city)
 "vMz" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/condiment/small/peppermill{
 	pixel_x = 7;
 	pixel_y = 3
@@ -20933,11 +20033,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "wiU" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_x = -2;
 	pixel_y = -3
@@ -21061,10 +20157,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "wrj" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/cigbutt/professionals{
 	pixel_y = 19
 	},
@@ -21111,9 +20204,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "wtE" = (
 /obj/effect/floor_decal/turf/cafe,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/landmark/costume/waiter,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
@@ -21163,11 +20254,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "wzX" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -21407,11 +20494,7 @@
 "wNf" = (
 /obj/effect/floor_decal/turf/metal/six,
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "wNM" = (
@@ -21851,11 +20934,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "xuv" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -21890,10 +20969,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/inn)
 "xxg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/new_hive/hive_city)
 "xxM" = (
@@ -21922,11 +20998,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "xzB" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/candelabra{
 	pixel_y = -17
 	},
@@ -22083,11 +21155,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "xLy" = (
 /obj/effect/floor_decal/turf/metal/five,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot,
 /obj/item/cigbutt/cigarbutt{
 	pixel_y = 8
@@ -22095,11 +21163,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "xLB" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	icon_state = "gshutter1";
 	id = "munitorumgtfo";
@@ -22238,9 +21302,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "xXA" = (
 /obj/effect/floor_decal/turf/surgery2,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/gun/energy/taser,
 /obj/item/stack/thrones3/ten,
 /obj/item/stack/thrones3/ten,
@@ -22308,11 +21370,7 @@
 /area/cadiaoutpost/oa/farm)
 "yaW" = (
 /obj/effect/floor_decal/turf/metal/six,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer{
 	pixel_x = 10
 	},
@@ -29707,8 +28765,8 @@ qfr
 iFU
 cxz
 hTm
-mkY
-gyb
+xxg
+jwI
 hTm
 hTm
 iFU
@@ -29937,7 +28995,7 @@ iFU
 kUQ
 vsi
 iFU
-lte
+jiC
 xxg
 pZw
 hTm
@@ -29972,7 +29030,7 @@ kBE
 apQ
 apQ
 iFU
-cSz
+xxg
 xxg
 hTm
 hTm
@@ -30189,8 +29247,8 @@ iFU
 pxk
 ebo
 iFU
-ijd
-sEF
+xxg
+xxg
 pZw
 hTm
 hTm
@@ -30224,8 +29282,8 @@ kBE
 apQ
 nSI
 iFU
-ijd
-sEF
+xxg
+xxg
 hTm
 hTm
 eLQ
@@ -30715,7 +29773,7 @@ hTm
 hTm
 hTm
 hTm
-cSz
+xxg
 xxg
 pZw
 iFU
@@ -30967,8 +30025,8 @@ ohy
 hcu
 hTm
 hTm
-ijd
-sEF
+xxg
+xxg
 jdK
 iFU
 nSI
@@ -31235,7 +30293,7 @@ iFU
 kUQ
 vsi
 iFU
-uUG
+jwI
 hTm
 hTm
 hTm
@@ -31487,7 +30545,7 @@ iFU
 pxk
 ebo
 iFU
-dcb
+jiC
 pZw
 hTm
 hTm
@@ -31684,7 +30742,7 @@ iFU
 iFU
 nSI
 iFU
-nDu
+xxg
 pZw
 hTm
 hTm
@@ -31936,7 +30994,7 @@ iFU
 nSI
 nSI
 iFU
-gyb
+jwI
 hTm
 hTm
 hTm
@@ -33454,7 +32512,7 @@ iFU
 iFU
 iFU
 iFU
-cSz
+xxg
 xxg
 hTm
 hTm
@@ -33707,7 +32765,7 @@ hTm
 hTm
 iFU
 jiC
-sEF
+xxg
 hTm
 hTm
 iFU
@@ -35771,7 +34829,7 @@ vsi
 iFU
 vrq
 wEi
-cSz
+xxg
 xxg
 pZw
 eLQ
@@ -36023,8 +35081,8 @@ iFU
 iFU
 hTm
 wEi
-ijd
-sEF
+xxg
+xxg
 pZw
 hTm
 iFU
@@ -36506,7 +35564,7 @@ jjp
 plS
 sxp
 rvw
-oAk
+rvw
 iFU
 swB
 swB
@@ -37005,7 +36063,7 @@ tzQ
 tzQ
 tzQ
 tzQ
-hpj
+twa
 soQ
 soQ
 soQ
@@ -37034,7 +36092,7 @@ hTm
 hTm
 hTm
 hTm
-chV
+aqG
 iFU
 nSI
 leV
@@ -37257,7 +36315,7 @@ tzQ
 tzQ
 tzQ
 tzQ
-psV
+twa
 jBr
 oJj
 soQ
@@ -38018,7 +37076,7 @@ soQ
 soQ
 wpe
 cqz
-oAk
+rvw
 iFU
 nSI
 nSI
@@ -39047,7 +38105,7 @@ vrq
 hTm
 hTm
 wEi
-mkY
+xxg
 iFU
 nSI
 nSI
@@ -39800,7 +38858,7 @@ hTm
 hTm
 uwa
 wEi
-cSz
+xxg
 xxg
 pZw
 hTm
@@ -40052,8 +39110,8 @@ hTm
 hTm
 hTm
 wEi
-ijd
-sEF
+xxg
+xxg
 pZw
 hTm
 aWe
@@ -41077,7 +40135,7 @@ nSI
 lsq
 ccx
 wEi
-cSz
+xxg
 xxg
 hTm
 iFU
@@ -41329,8 +40387,8 @@ nSI
 lsq
 ccx
 wEi
-ijd
-sEF
+xxg
+xxg
 eLQ
 iFU
 hTm
@@ -42520,7 +41578,7 @@ fUE
 fpR
 bFy
 hNX
-nhi
+lXA
 iFU
 iqE
 iqE
@@ -46030,7 +45088,7 @@ apQ
 apQ
 iFU
 iFU
-hkW
+gaw
 gaw
 iFU
 umV
@@ -48276,7 +47334,7 @@ lyj
 sxO
 dRi
 sxO
-pYL
+wNf
 kfv
 dIB
 rEb
@@ -49076,7 +48134,7 @@ lGy
 xHv
 jHk
 cyX
-pfv
+ris
 vPm
 vPm
 xHv
@@ -49084,7 +48142,7 @@ vPm
 hsQ
 myx
 hZC
-pfv
+ris
 xHv
 wPN
 wPN
@@ -49284,7 +48342,7 @@ tYw
 dRi
 dxt
 qYG
-lXA
+kaI
 gDX
 dRi
 dxt
@@ -50549,7 +49607,7 @@ iGJ
 nQW
 dxt
 jtd
-lXA
+kaI
 iGJ
 sxO
 rEb
@@ -53013,8 +52071,8 @@ gbl
 xGb
 xGb
 xGb
-kPI
-dvX
+vvz
+eOw
 xGb
 qEv
 aLk
@@ -53560,7 +52618,7 @@ hqw
 hqw
 hqw
 hqw
-cJn
+ffA
 iFE
 dRi
 sxO
@@ -54068,14 +53126,14 @@ rEb
 tdy
 sxO
 tjl
-snE
+kaI
 iGJ
 dRi
 rby
 rEb
 rEb
-tMs
-itN
+dkP
+dkP
 dkP
 rEb
 sAN
@@ -55112,9 +54170,9 @@ iqE
 iqE
 sNw
 iFU
-hkW
-jkT
-mCw
+gaw
+gaw
+gaw
 iFU
 iFU
 iFU
@@ -55335,8 +54393,8 @@ rEb
 rEb
 gbO
 kdF
-srU
-bzl
+nqc
+nqc
 rEb
 rEb
 apQ
@@ -56874,8 +55932,8 @@ iqE
 eMf
 iFU
 iFU
-hkW
-jkT
+gaw
+gaw
 gaw
 iFU
 iFU
@@ -58342,7 +57400,7 @@ apQ
 apQ
 eTh
 eTh
-apQ
+ijd
 apQ
 bwI
 bwI
@@ -59093,7 +58151,7 @@ cVV
 eTh
 eTh
 bwI
-apQ
+ijd
 eTh
 eTh
 eTh
@@ -59853,7 +58911,7 @@ bwI
 bwI
 apQ
 bwI
-bwI
+dvX
 eTh
 eTh
 eTh
@@ -64970,7 +64028,7 @@ hiP
 nAV
 iuc
 sWO
-jDm
+kdl
 huI
 qmp
 qmp
@@ -65181,8 +64239,8 @@ iFU
 fhf
 iFU
 iFU
-hkW
-jkT
+gaw
+gaw
 gaw
 iFU
 iFU
@@ -65222,7 +64280,7 @@ lKK
 lKK
 yaA
 sWO
-sGk
+kdl
 qmp
 hBM
 qmp
@@ -67662,8 +66720,8 @@ ltb
 ltb
 jIP
 ltb
-otq
-dDi
+xLB
+xLB
 xLB
 ltb
 sTq
@@ -68243,7 +67301,7 @@ kqw
 geo
 iFU
 tOj
-vIJ
+gyb
 iFU
 eTh
 ivO
@@ -68439,7 +67497,7 @@ eTh
 eTh
 kNU
 iFU
-tQl
+bsi
 oyP
 vgh
 wXS
@@ -69260,7 +68318,7 @@ bXT
 ehM
 mCK
 geo
-vIJ
+gyb
 ldN
 geo
 jXA
@@ -74545,7 +73603,7 @@ bXT
 bXT
 jXA
 bXT
-vof
+oAk
 iFU
 aMP
 ivO

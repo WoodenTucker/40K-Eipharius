@@ -25,12 +25,7 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "abU" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/newspaper{
 	pixel_y = 10;
 	pixel_x = 7
@@ -132,11 +127,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "ajy" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/canned_food,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -165,6 +156,14 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"akg" = (
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "I once walked the same ground as your idol. I breathed the same air as him. And I tell you this, without lie or artifice. He never wanted to become what you have made him. He did not wish to be your god-thing. He abhorred such ideals. The slavery of your crippled, blind Imperium would sicken him, if he had eyes to see it.";
+	name = "Daemonic Tome"
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "akO" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 4
@@ -249,10 +248,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "apV" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/middle/jail,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -606,12 +602,7 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "aKZ" = (
 /obj/item/storage/belt/medical/full,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -726,11 +717,7 @@
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
 "aRR" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -1115,11 +1102,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/barracks)
 "blC" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -1181,12 +1164,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "bmM" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "bmU" = (
@@ -1488,15 +1466,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
-"bAJ" = (
-/obj/structure/bookcase,
-/obj/item/book/manual{
-	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
-	name = "Lectitio Divinitatus";
-	pixel_y = 10
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "bAQ" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
@@ -1658,14 +1627,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/medicae)
-"bNe" = (
-/obj/structure/bookcase,
-/obj/item/book{
-	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
-	name = "imperial tome"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "bNq" = (
 /turf/simulated/wall/castle,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
@@ -1679,11 +1640,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "bON" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/photocopier/faxmachine{
 	department = "Guardsmen Planetary Defense Fortress - Armory"
 	},
@@ -1737,19 +1694,6 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
-"bRE" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
-/obj/effect/floor_decal/newcorner/plating{
-	dir = 4;
-	icon_state = "plating"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/barracks)
 "bSd" = (
 /obj/effect/floor_decal/turf/brick/two,
 /obj/effect/floor_decal/spline/plain{
@@ -1763,11 +1707,7 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/medicae)
 "bSw" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/reagentgrinder,
 /obj/item/stack/material/phoron/ten,
 /turf/simulated/floor/tiled{
@@ -2066,11 +2006,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "cfN" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
 "cgp" = (
@@ -2115,11 +2051,7 @@
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/new_hive/caves)
 "ciu" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/photocopier/faxmachine{
 	department = "Commissar's Office";
 	req_one_access = list()
@@ -2193,11 +2125,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "clg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/turf/plating,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
@@ -2230,12 +2158,7 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cnK" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/box/syringes{
 	pixel_y = -4
 	},
@@ -2269,11 +2192,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "cqm" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stack/thrones/five,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
@@ -2372,14 +2291,6 @@
 	},
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
-"cva" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "cvb" = (
 /obj/effect/floor_decal/newcorner/mine_walls{
 	icon_state = "04";
@@ -2613,11 +2524,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "cFH" = (
 /obj/effect/floor_decal/newcorner/plating,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/screwdriver{
 	pixel_y = 19
 	},
@@ -2637,20 +2544,14 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "cGQ" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/tech2,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "cGW" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stamp/hos{
 	pixel_y = 8;
 	pixel_x = -8
@@ -2906,11 +2807,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "cSJ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/lightmelee,
 /obj/effect/floor_decal/newcorner/purple{
 	dir = 1
@@ -2929,11 +2826,7 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/caves/undercity)
 "cTn" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus";
@@ -3373,11 +3266,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "doz" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -3433,20 +3322,8 @@
 /obj/machinery/photocopier,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"dpx" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "dpA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/grand{
 	access = list(267,268,269,270,271,272,273);
 	name = "Underboss Key";
@@ -3507,11 +3384,7 @@
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/new_hive/caves)
 "dtO" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/service/inn)
 "dut" = (
@@ -3535,11 +3408,7 @@
 /area/cadiaoutpost/oa/security/barracks)
 "duU" = (
 /obj/machinery/light/blue,
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
 	pixel_y = 8;
 	pixel_x = -7
@@ -3550,11 +3419,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "dwU" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/purple{
 	dir = 4
 	},
@@ -3588,17 +3453,6 @@
 	icon_state = "floor7"
 	},
 /area/cadiaoutpost/oa/caves/dark)
-"dxu" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "dxB" = (
 /turf/simulated/wall/concrete,
 /area/cadiaoutpost/oa/farm)
@@ -3614,11 +3468,7 @@
 /area/cadiaoutpost/oa/service/inn)
 "dyH" = (
 /obj/item/storage/box/syndie_kit/imp_freedom,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/box/syndie_kit/imp_explosive,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -3776,14 +3626,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/medicae)
-"dFX" = (
-/obj/structure/bookcase,
-/obj/item/book{
-	desc = "I have a reputation, Modile, a reputation as a fair, honest man who treats his soldiers well and supports them in the face of darkness. Potentially, that reputation makes me soft. It seems I understand failure and forgive it. Some, like Kowle, believe me to be a weak commissar, not prepared to take the action my rank demands. Not prepared to enforce field discipline where I see it failing. I am an Imperial commissar. I will enflame the weak, support the wavering, guide the lost. I will be all things to all men who need me. But I will also punish without hesitation the incompetent, the cowardly, and the treasonous. Choose, for courtesy's sake, summary execution or a firing squad of your own men.";
-	name = "inquisitor tome"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "dGc" = (
 /obj/effect/floor_decal/turf/metal/eight,
 /turf/simulated/floor/factory_floor{
@@ -3951,11 +3793,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "dPp" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/grand/master,
 /obj/item/card/id/key/grand/master,
 /turf/simulated/floor/ceramic/old,
@@ -3974,11 +3812,7 @@
 /obj/item/stamp/denied{
 	pixel_x = -8
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/spline/fancy/wood/corner,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -3991,11 +3825,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "dQB" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/pen/multi{
 	pixel_y = 2
 	},
@@ -4093,11 +3923,7 @@
 /turf/simulated/floor/stone/chapel,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "dXq" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/exploration,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
@@ -4220,9 +4046,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "egr" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/pickaxe/newpick,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/dark)
@@ -4542,18 +4366,6 @@
 	icon_state = "steel"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"euB" = (
-/obj/structure/table/rack/dark,
-/obj/item/grenade/spawnergrenade/manhacks{
-	name = "mysterious grenade"
-	},
-/obj/item/grenade/spawnergrenade/manhacks{
-	name = "mysterious grenade"
-	},
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "evb" = (
 /obj/structure/bed/chair/wood/fancy/comfy2{
 	dir = 4
@@ -4809,12 +4621,7 @@
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 1
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -4964,12 +4771,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "eMd" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/healthanalyzer{
 	pixel_x = 8
 	},
@@ -5048,11 +4850,7 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "eTh" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/firstaid/surgery,
 /obj/effect/floor_decal/newcorner/blue/solid,
 /turf/simulated/floor/ceramic/surgery2,
@@ -5314,6 +5112,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
+"fgZ" = (
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "We are raised to believe that the God Emperor watches over us all. And so we are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none, we beseech thee, destroy them. Even in the face of death, we shall not submit. Suffering is our prayer... faith is our armour.";
+	name = "sister tome"
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "fht" = (
 /obj/effect/floor_decal/newcorner/green/corner{
 	dir = 8
@@ -5496,11 +5302,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "foC" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/photocopier/faxmachine{
 	department = "Elipharius Deacon Office";
 	req_one_access = list()
@@ -5531,11 +5333,7 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fqC" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled/dark{
 	color = "grey"
 	},
@@ -5626,11 +5424,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "fvi" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/cans/iced_tea{
 	pixel_x = 12
 	},
@@ -5697,11 +5491,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "fxn" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/handcuffs{
 	pixel_y = -6
 	},
@@ -5729,9 +5519,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "fBf" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/boombox{
 	pixel_y = 11
 	},
@@ -5805,12 +5593,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "fED" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/hand_labeler{
 	pixel_y = 8
 	},
@@ -6127,20 +5910,6 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/inn)
-"fUf" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
-/obj/effect/floor_decal/newcorner/shaft/diagonal,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "fUR" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/structure/table/rack,
@@ -6243,11 +6012,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "gdF" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/goodweapon,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/barracks)
@@ -6255,9 +6020,7 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/oa/security/barracks)
 "gdQ" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/chisel,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
@@ -6596,11 +6359,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "gtg" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/toolbox/mechanical{
 	pixel_y = 10
 	},
@@ -6624,9 +6383,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "gtR" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/guardgear,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -6634,9 +6391,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "gue" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/cassette/heresy1,
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -6778,11 +6533,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "gCH" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/chaos/tzeench,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
@@ -6816,12 +6567,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "gGb" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/green{
 	dir = 4
 	},
@@ -6935,12 +6681,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "gKN" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/clothing/accessory/medal/iron/Administratum{
 	pixel_y = 15;
 	pixel_x = 8
@@ -7030,12 +6771,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "gPr" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/recharger,
 /obj/item/defibrillator/compact/loaded,
 /turf/simulated/floor/tiled{
@@ -7070,9 +6806,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "gRn" = (
 /obj/item/newore/gems/sapphire/fail,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/dark)
 "gRJ" = (
@@ -7105,11 +6839,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "gTY" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 8
 	},
@@ -7408,12 +7138,7 @@
 /obj/item/card/id/ring/disgracedmedicae{
 	name = "ordos bracelet"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
 "hjv" = (
@@ -7501,9 +7226,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "hmK" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small/red{
 	dir = 4
 	},
@@ -7828,17 +7551,8 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "hIj" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	icon_state = "gshutter1";
 	id = "armoryshutters";
@@ -8005,11 +7719,7 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/recharger,
 /obj/item/defibrillator/compact/loaded,
 /turf/simulated/floor/tiled{
@@ -8032,11 +7742,7 @@
 /turf/simulated/floor/new_wood/eight,
 /area/cadiaoutpost/new_hive/caves)
 "hPS" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/structure/torchwall/service{
 	pixel_y = 32
 	},
@@ -8152,20 +7858,8 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/research/robotics)
-"hVq" = (
-/obj/structure/bookcase,
-/obj/item/book/manual{
-	desc = "I have been informed that the acolytes have spies amongst us. Despite our differences I cannot imagine that they're looking to harm us, or even impede our mission here. I cannot in truth see much reason to prevent them from knowing of our progress, I am inclined to just let them get their information rather than waste resources and encourage doubt and suspicion amongst us.";
-	name = "Research Notes"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "hVy" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/maglight,
 /obj/item/device/flashlight/maglight{
 	pixel_y = 10
@@ -8228,16 +7922,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"iaC" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/security/barracks)
 "iaQ" = (
 /obj/machinery/door/airlock/cone{
 	name = "Toilet"
@@ -8340,11 +8024,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "ifo" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/book/manual{
 	name = "Blue Love: A Ciaphas Cain Story - Ch.1";
 	desc = "In the grim darkness of the far future, there is only war. But amidst the endless conflict and bloodshed, there are moments of tenderness and love that shine like beacons in the darkness. She was an Imperial Guardswoman, a tough and skilled fighter who had seen more battles than she could count. Her name was Corporal Lyra Valtair, and she had been assigned to the 42nd Cadian Regiment, fighting on the front lines of the war against the Tau Empire. He was a Tau Fire Warrior, a member of the rapidly expanding alien empire that had clashed with the Imperium of Man. His name was Shas'ui Cain, and he had been tasked with leading a strike team to infiltrate the Imperial lines and gather vital intelligence."
@@ -8546,11 +8226,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "inX" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "inY" = (
@@ -8661,12 +8337,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "irC" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 4;
 	icon_state = "plating"
@@ -8898,15 +8569,6 @@
 	},
 /turf/simulated/floor/ceramic/surgery,
 /area/cadiaoutpost/oa/security/barracks)
-"iEX" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
-/obj/item/reagent_containers/food/drinks/glass2/chaos/tzeench,
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "iEY" = (
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/darkfloor{
@@ -8973,11 +8635,7 @@
 /turf/simulated/floor/darkfloor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "iHu" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -9429,11 +9087,7 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "jcX" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/spray/sterilizine{
 	pixel_x = -6
 	},
@@ -9710,11 +9364,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "jqC" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/melee/sword/broadsword/adamantine{
 	name = "sabbat's flame"
 	},
@@ -9724,13 +9374,12 @@
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "jst" = (
-/obj/item/grenade/frag,
-/obj/structure/table/rack/dark,
-/obj/item/grenade/frag,
-/turf/simulated/floor/darkfloor{
-	dir = 1
+/obj/effect/landmark/start/imperialguard/sniper,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
 	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
+/area/cadiaoutpost/oa/security/barracks)
 "jtE" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -9866,12 +9515,7 @@
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 8
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/boombox{
 	pixel_y = 20
 	},
@@ -10294,9 +9938,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "jRc" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/dark)
 "jRi" = (
@@ -10348,9 +9990,7 @@
 /area/cadiaoutpost/oa/caves/dark)
 "jSU" = (
 /obj/item/newore/gems/emerald/fail,
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "jTE" = (
@@ -10417,11 +10057,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/new_hive/caves)
 "jXf" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "jXR" = (
@@ -10433,11 +10069,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "jYv" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/chaos,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -10523,23 +10155,14 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "kcz" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/spray/cleaner/warfare,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "kcN" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 9
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/reagentgrinder{
 	pixel_y = 8
 	},
@@ -10869,11 +10492,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "krR" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -10952,11 +10571,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "kut" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/structure/torchwall/service{
 	dir = 1;
 	icon_state = "torchwall0"
@@ -11043,6 +10658,9 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "kzv" = (
+/obj/machinery/organ_printer/robot/mapped{
+	products = list("heart"=list(/obj/item/organ/internal/heart/bioprinted,25),"lungs"=list(/obj/item/organ/internal/lungs,25),"kidneys"=list(/obj/item/organ/internal/kidneys,20),"eyes"=list(/obj/item/organ/internal/eyes/bioprinted,20),"liver"=list(/obj/item/organ/internal/liver,25),"l_arm"=list(/obj/item/robot_parts/l_arm,65),"r_arm"=list(/obj/item/robot_parts/r_arm,65),"l_leg"=list(/obj/item/robot_parts/l_leg,65),"r_leg"=list(/obj/item/robot_parts/r_leg,65))
+	},
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/ceramic/surgery2,
 /area/cadiaoutpost/oa/security/barracks)
@@ -11063,11 +10681,7 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/new_hive/caves)
 "kAQ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/grand/master{
 	pixel_y = 8;
 	pixel_x = -5
@@ -11137,11 +10751,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "kCK" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/glass/beaker/large{
 	pixel_y = 6
 	},
@@ -11332,11 +10942,7 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 1;
 	icon_state = "bulb1"
@@ -12207,11 +11813,7 @@
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "lBA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/lamp/green{
 	pixel_x = -18
 	},
@@ -12239,11 +11841,7 @@
 /area/cadiaoutpost/oa/security/barracks)
 "lDv" = (
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -12348,11 +11946,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "lHe" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
 /obj/item/flame/lighter/zippo{
 	pixel_x = -10
@@ -12511,20 +12105,11 @@
 "lPt" = (
 /obj/item/storage/box/syndie_kit/imp_freedom,
 /obj/item/storage/box/syndie_kit/imp_explosive,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "lPG" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/sidearms,
 /obj/effect/floor_decal/newcorner/purple{
 	dir = 1
@@ -12679,12 +12264,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "mar" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/commissar/spare{
 	pixel_x = -8;
 	pixel_y = -5
@@ -12793,11 +12373,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "mfl" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/book/manual{
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
@@ -12805,12 +12381,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "mfm" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/clothing/head/servicesgt{
 	pixel_x = -6;
 	pixel_y = 6
@@ -12964,6 +12535,14 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"mjH" = (
+/obj/structure/table/rack/dark,
+/obj/item/grenade/frag/high_yield/krak2,
+/obj/item/grenade/frag/high_yield/krak2,
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "mkU" = (
 /obj/item/reagent_containers/food/drinks/coffeecup/britcup,
 /turf/simulated/floor/tiled,
@@ -12997,11 +12576,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "moq" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes/dromedaryco,
 /obj/item/flame/lighter/zippo{
 	pixel_x = 10
@@ -13115,10 +12690,7 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/magistratumpost)
 "mvk" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_x = -2;
 	pixel_y = -3
@@ -13127,11 +12699,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "mvv" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "mvM" = (
@@ -13141,6 +12709,10 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
+"mvO" = (
+/obj/structure/table/rack/dark,
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "mvU" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 9
@@ -13163,12 +12735,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "mwZ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13214,11 +12781,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "mzS" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -13274,13 +12837,6 @@
 	},
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/magistratumpost)
-"mCg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "mCO" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 8
@@ -13373,9 +12929,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "mLz" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/middle/jail,
 /obj/machinery/light/small/red{
 	dir = 1;
@@ -13492,11 +13046,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "mQS" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/door/blast/grates{
 	icon_state = "gshutter1";
 	id = "armoryshutters";
@@ -13714,11 +13264,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "naj" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -13728,13 +13274,17 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "naF" = (
-/obj/structure/bookcase,
-/obj/item/book{
-	desc = "What is Chaos? Suffering, you might say. Oppression. Deceit. But could not all these things be said of your Imperium? You hunt down the talented and the strong-willed. You break them or sacrifice them. You lie to your citizens and wage war on those who dare speak out. The inquisitors you call masters assume guilt and execute millions on a whim. And why? Why do you do this? Because you know Chaos is there but you do not know how to fight it, so you crush your own citizens for fear that they might aid the Enemy. The Imperium suffers because of Chaos. No matter how hard you fight, that will never change. Chaos exists in a state of permanent victory over you - you dance to our tune, mortal one, you butcher and torture and repress one another because the gods of the warp require you to. The Imperium is founded on Chaos. My lord Tzeentch won your war a long, long time ago.";
-	name = "chaos tome"
+/obj/structure/table/rack/dark,
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
 	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
+/obj/item/grenade/spawnergrenade/manhacks{
+	name = "mysterious grenade"
+	},
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "naU" = (
 /obj/structure/table/rack/dark,
 /obj/random/loot/heavymelee,
@@ -13824,11 +13374,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "nje" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/cassette/grimdark,
 /obj/item/device/cassette/inn1{
 	pixel_y = 10
@@ -13881,9 +13427,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "nkv" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/randomitemcaves,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -13918,11 +13462,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "nmo" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/firstaid/regular,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -14074,11 +13614,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "nsr" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/stack/material/sandstone{
 	desc = "What ? You dont recognize your beloved Cadia anymore ?";
 	name = "Cadia remains"
@@ -14087,14 +13623,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"nsF" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 5
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/oa/farm)
 "nsI" = (
 /obj/machinery/organ_printer/flesh/mapped,
 /obj/effect/floor_decal/industrial/outline/yellow,
@@ -14177,11 +13705,7 @@
 	department = "Planetary Marshal Office";
 	req_one_access = list()
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "nvY" = (
@@ -14270,14 +13794,6 @@
 /obj/effect/floor_decal/newcorner/nbar,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
-"nzf" = (
-/obj/structure/bookcase,
-/obj/item/book{
-	desc = "My people shackled the stars, and broke mortality when the species you sprang from had barely left the slime pools it spawned in. Our wars burned reality, and the dominion of our kings is without limit. The ground you tread on is not yours; it is ours.";
-	name = "necron tome"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "nzB" = (
 /obj/structure/hivedecor{
 	pixel_x = -15
@@ -14571,11 +14087,7 @@
 /turf/simulated/floor/surface_floor,
 /area/cadiaoutpost/oa/caves/dark)
 "nOB" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 8
 	},
@@ -14633,11 +14145,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "nSV" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
 "nUz" = (
@@ -14685,11 +14193,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "nWg" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin,
 /obj/item/pen/multi{
 	pixel_y = -2
@@ -14746,10 +14250,6 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"nWV" = (
-/obj/structure/table/rack/dark,
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "nXf" = (
 /obj/structure/closet/cabinet,
 /obj/item/card/id/key/grand/monastary{
@@ -14842,10 +14342,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "nZW" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -14894,10 +14391,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "odl" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin,
 /obj/item/pen/multi{
 	pixel_y = -2
@@ -15285,11 +14779,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "ouu" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/bottle/amasecexpensive{
 	pixel_y = 8;
 	pixel_x = -7
@@ -15377,9 +14867,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/barracks)
 "oxY" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -15511,11 +14999,7 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/caves/undercity)
 "oEF" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigarettes/professionals{
 	pixel_x = 10
 	},
@@ -15556,14 +15040,6 @@
 	},
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/caves/undercity)
-"oFN" = (
-/obj/structure/bookcase,
-/obj/item/book/manual{
-	desc = "I have no more time, and find I cannot leave without knowing. I will give my life, nothing else matters to me now. I was not able to acquire a stronger focusing crystal, so I must be quick. Should I disappear forever behind this wall, then perhaps at least I will be remembered as the good physician, and not the madman.";
-	name = "Research Notes"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "oFO" = (
 /obj/structure/bed{
 	icon = "icons/map_project/furniture_and_decor.dmi";
@@ -15661,11 +15137,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "oIQ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/canned_food,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
@@ -15769,12 +15241,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "oNi" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/box/syringes{
 	pixel_y = -4
 	},
@@ -15822,27 +15289,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/magistratumpost)
-"oQd" = (
-/obj/structure/table/rack/dark,
-/obj/item/grenade/frag/high_yield/krak2,
-/obj/item/grenade/frag/high_yield/krak2,
-/turf/simulated/floor/darkfloor{
-	dir = 1
-	},
-/area/cadiaoutpost/gma/inquisitoracolyte)
 "oQq" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/grey/middle,
 /area/cadiaoutpost/oa/magistratumpost)
 "oQT" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/ashtray/glass,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -15904,11 +15356,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/barracks)
 "oVu" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/firstaid/surgery,
 /turf/simulated/floor/ceramic/surgery{
 	dir = 6
@@ -16155,13 +15603,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/security/barracks)
-"pnQ" = (
-/obj/structure/table/rack/dark,
-/obj/item/storage/belt/medical/full,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/new_hive/caves)
 "pnS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small/red,
@@ -16204,12 +15645,7 @@
 	},
 /area/cadiaoutpost/oa/caves/dark)
 "psB" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -16225,12 +15661,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "pta" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -16250,9 +15681,7 @@
 	},
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "ptI" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
 "ptT" = (
@@ -16264,23 +15693,14 @@
 /obj/machinery/cell_charger{
 	color = "grey"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light{
 	dir = 4
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "pus" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/ashtray/glass,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -16387,11 +15807,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "pDm" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/spray/sterilizine{
 	pixel_x = -6
 	},
@@ -16585,12 +16001,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "pKJ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/glass/beaker/large{
 	pixel_y = -6
 	},
@@ -16640,6 +16051,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"pNV" = (
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "I have no more time, and find I cannot leave without knowing. I will give my life, nothing else matters to me now. I was not able to acquire a stronger focusing crystal, so I must be quick. Should I disappear forever behind this wall, then perhaps at least I will be remembered as the good physician, and not the madman.";
+	name = "Research Notes"
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "pOk" = (
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
@@ -16732,11 +16151,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "pQN" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/healthanalyzer,
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -16903,11 +16318,7 @@
 /turf/simulated/floor/ceramic/blackstone,
 /area/cadiaoutpost/oa/magistratumpost)
 "qdR" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/grey/middle,
 /area/cadiaoutpost/oa/security/barracks)
 "qdT" = (
@@ -17104,11 +16515,7 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "qnp" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/melee/sword/cane,
 /obj/machinery/light{
 	dir = 1
@@ -17213,9 +16620,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "qsw" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/exploration/high,
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/caves/dark)
@@ -17304,11 +16709,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "qxO" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/glass/beaker/large,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/farm)
@@ -17322,10 +16723,7 @@
 /turf/simulated/floor/stone/crafted_floor,
 /area/cadiaoutpost/oa/caves/undercity)
 "qzf" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/randomsupply,
 /obj/effect/floor_decal/newcorner/purple/quarter{
 	dir = 4
@@ -17334,12 +16732,7 @@
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/caves/dark)
 "qzW" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/card/id/key/middle/jail,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
@@ -17410,20 +16803,13 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/caves/undercity)
 "qET" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "My people shackled the stars, and broke mortality when the species you sprang from had barely left the slime pools it spawned in. Our wars burned reality, and the dominion of our kings is without limit. The ground you tread on is not yours; it is ours.";
+	name = "necron tome"
 	},
-/obj/machinery/door/blast/grates{
-	icon_state = "gshutter1";
-	id = "armoryshutters";
-	maxhealth = 1000;
-	name = "armory reception grate"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/security/barracks)
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "qEY" = (
 /turf/simulated/floor/tiled{
 	color = "grey";
@@ -17627,21 +17013,8 @@
 	name = "freezer floor"
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
-"qPw" = (
-/obj/machinery/door/unpowered/inn{
-	name = "Bathroom"
-	},
-/obj/machinery/door/blast/id_door/open{
-	id = "ass"
-	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/service/inn)
 "qPE" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/snacks/sliceable/limecake{
 	pixel_x = 16
 	},
@@ -17673,6 +17046,13 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"qRc" = (
+/obj/structure/table/rack/dark,
+/obj/item/storage/belt/medical/full,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "qRo" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/wrench,
@@ -17846,6 +17226,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"qZN" = (
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I am forty-two standard years old, in my prime by Imperial standards, young by those of the Inquisition. All my life, I have had a reputation for being cold, unfeeling. Some have called me heartless, ruthless, even cruel. I am not. I am not beyond emotional response or compassion. But I possess - and my masters count this as perhaps my paramount virtue - a singular force of will. Throughout my career it has served me well to draw on this facility and steel myself, unflinching, at all that this wretched galaxy can throw at me. To feel pain or fear or grief is to allow myself a luxury I cannot afford.";
+	name = "imperial tome"
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "qZX" = (
 /obj/effect/floor_decal/newcorner/blue/diagonal,
 /obj/machinery/bodyscanner{
@@ -17929,11 +17317,7 @@
 /obj/machinery/cell_charger{
 	color = "grey"
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/magistratumpost)
 "rbH" = (
@@ -17963,9 +17347,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "rbQ" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/shuttle.dmi';
 	icon_state = "floor7"
@@ -18056,18 +17438,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/gma/inquisitoracolyte)
-"rhd" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 8
-	},
-/obj/item/paper_bin,
-/turf/simulated/floor/tiled{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapeldorm)
 "rht" = (
 /turf/simulated/floor/stone/ancient_stone_floor,
 /area/cadiaoutpost/oa/caves/undercity)
@@ -18096,10 +17466,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "riD" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = -5;
 	pixel_x = 9
@@ -18183,11 +17550,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "rnD" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/purple/quarter{
 	dir = 1
 	},
@@ -18325,10 +17688,7 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "rtv" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shot{
 	pixel_y = -6;
 	pixel_x = -4
@@ -18518,10 +17878,7 @@
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/security/barracks)
 "rEe" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/shake{
 	pixel_y = 6;
 	pixel_x = 10
@@ -18554,11 +17911,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "rGq" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/clothing/mask/gas/commissar{
 	pixel_y = -1
 	},
@@ -18589,11 +17942,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "rHe" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -18805,11 +18154,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "rRQ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/exploration/high,
 /obj/effect/decal/cleanable/cobweb{
 	dir = 1
@@ -18817,17 +18162,11 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "rSa" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "rSz" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/pickaxe/newpick,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/dark)
@@ -18940,6 +18279,14 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
+"rYC" = (
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "I have been informed that the acolytes have spies amongst us. Despite our differences I cannot imagine that they're looking to harm us, or even impede our mission here. I cannot in truth see much reason to prevent them from knowing of our progress, I am inclined to just let them get their information rather than waste resources and encourage doubt and suspicion amongst us.";
+	name = "Research Notes"
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "rZR" = (
 /turf/simulated/floor/cult,
 /area/cadiaoutpost/new_hive/caves)
@@ -18978,11 +18325,7 @@
 /area/cadiaoutpost/new_hive/caves)
 "sbo" = (
 /obj/effect/floor_decal/newcorner/green/quarter,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/lighter/zippo{
 	pixel_x = -10
 	},
@@ -19011,11 +18354,7 @@
 /turf/simulated/floor/new_wood,
 /area/cadiaoutpost/new_hive/caves)
 "sck" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/material/kitchen/utensil/knife/boot{
 	pixel_x = -7
 	},
@@ -19179,11 +18518,7 @@
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/new_hive/caves)
 "snd" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/pint{
 	pixel_y = 6;
 	pixel_x = -12
@@ -19215,6 +18550,14 @@
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/magistratumpost)
+"soT" = (
+/obj/item/grenade/frag,
+/obj/structure/table/rack/dark,
+/obj/item/grenade/frag,
+/turf/simulated/floor/darkfloor{
+	dir = 1
+	},
+/area/cadiaoutpost/gma/inquisitoracolyte)
 "soV" = (
 /obj/effect/floor_decal/newcorner/shaft{
 	dir = 4
@@ -19273,11 +18616,7 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "srx" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/carpet/grey{
 	dir = 1
 	},
@@ -19378,7 +18717,9 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "svG" = (
-
+/obj/machinery/organ_printer/robot/mapped{
+	products = list("heart"=list(/obj/item/organ/internal/heart/bioprinted,25),"lungs"=list(/obj/item/organ/internal/lungs,25),"kidneys"=list(/obj/item/organ/internal/kidneys,20),"eyes"=list(/obj/item/organ/internal/eyes/bioprinted,20),"liver"=list(/obj/item/organ/internal/liver,25),"l_arm"=list(/obj/item/robot_parts/l_arm,65),"r_arm"=list(/obj/item/robot_parts/r_arm,65),"l_leg"=list(/obj/item/robot_parts/l_leg,65),"r_leg"=list(/obj/item/robot_parts/r_leg,65))
+	},
 /obj/item/stack/material/steel/fifty,
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 6
@@ -19425,11 +18766,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "szJ" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/pen/multi{
 	pixel_y = -2
 	},
@@ -19437,11 +18774,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "sAv" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/flame/candle/church{
 	pixel_x = 8
 	},
@@ -19451,14 +18784,6 @@
 /obj/item/flame/candle/church,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
-"sAF" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "bigtable";
-	dir = 8
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/hallway/centralhall)
 "sAL" = (
 /obj/effect/floor_decal/newcorner/plating{
 	dir = 1
@@ -19685,14 +19010,6 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/new_hive/caves)
-"sJk" = (
-/obj/structure/bookcase,
-/obj/item/book/manual{
-	desc = "I once walked the same ground as your idol. I breathed the same air as him. And I tell you this, without lie or artifice. He never wanted to become what you have made him. He did not wish to be your god-thing. He abhorred such ideals. The slavery of your crippled, blind Imperium would sicken him, if he had eyes to see it.";
-	name = "Daemonic Tome"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "sJs" = (
 /obj/structure/closet/l3closet/virology,
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -19718,6 +19035,14 @@
 /obj/effect/floor_decal/turf/metal/five,
 /turf/simulated/floor/tiled/white,
 /area/cadiaoutpost/oa/medicae)
+"sKy" = (
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "I have a reputation, Modile, a reputation as a fair, honest man who treats his soldiers well and supports them in the face of darkness. Potentially, that reputation makes me soft. It seems I understand failure and forgive it. Some, like Kowle, believe me to be a weak commissar, not prepared to take the action my rank demands. Not prepared to enforce field discipline where I see it failing. I am an Imperial commissar. I will enflame the weak, support the wavering, guide the lost. I will be all things to all men who need me. But I will also punish without hesitation the incompetent, the cowardly, and the treasonous. Choose, for courtesy's sake, summary execution or a firing squad of your own men.";
+	name = "inquisitor tome"
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "sLo" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -20023,10 +19348,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
 "tar" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/magistratumpost)
 "taD" = (
@@ -20080,11 +19402,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 6
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/shaft/diagonal,
 /turf/simulated/floor/tiled{
 	color = "grey"
@@ -20166,12 +19484,7 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "tiI" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/instrument/guitar,
 /obj/structure/torchwall/service{
 	dir = 4;
@@ -20180,11 +19493,7 @@
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "tiM" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/deck/cards,
 /obj/item/dice{
 	pixel_y = 12;
@@ -20418,11 +19727,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "txw" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 8
 	},
@@ -20604,11 +19909,7 @@
 /turf/simulated/floor/fancyfloor/gray_white,
 /area/cadiaoutpost/gma/inquisitoracolyte)
 "tFY" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small/red,
 /obj/effect/floor_decal/newcorner/purple,
 /obj/item/reagent_containers/glass/beaker/noreact,
@@ -20624,11 +19925,7 @@
 	},
 /area/cadiaoutpost/oa/service/chapel/chapelsurgery)
 "tGc" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/flask/goblet/gold{
 	pixel_y = 14
 	},
@@ -21150,6 +20447,15 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"ucO" = (
+/obj/machinery/door/unpowered/inn{
+	name = "Bathroom"
+	},
+/obj/machinery/door/blast/id_door/open{
+	id = "ass"
+	},
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/service/inn)
 "udc" = (
 /obj/item/reagent_containers/food/condiment/enzyme{
 	pixel_x = 7
@@ -21242,13 +20548,12 @@
 	},
 /area/cadiaoutpost/oa/medicae)
 "uhe" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tilethick";
-	dir = 4
+/obj/effect/landmark/start/imperialguard/specialist,
+/turf/simulated/floor/tiled{
+	color = "grey";
+	icon_state = "dark1"
 	},
-/turf/simulated/floor/darkwood,
-/area/cadiaoutpost/oa/service/inn)
+/area/cadiaoutpost/oa/security/barracks)
 "uhj" = (
 /obj/random/loot/badweapon,
 /turf/simulated/floor/tiled{
@@ -21311,12 +20616,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "ulb" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/plating/quarter{
 	dir = 4
 	},
@@ -21668,11 +20968,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "uGd" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/caves)
 "uGo" = (
@@ -21902,14 +21198,6 @@
 /obj/item/handcuffs/cable/yellow,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
-"uXK" = (
-/obj/structure/bookcase,
-/obj/item/book{
-	desc = "We are raised to believe that the God Emperor watches over us all. And so we are charged to cleanse the mutant, the heretic - the alien. A morte perpetua, domine, libra nos. That thou wouldst bring them only death, that thou shouldst spare none, we beseech thee, destroy them. Even in the face of death, we shall not submit. Suffering is our prayer... faith is our armour.";
-	name = "sister tome"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "uYD" = (
 /turf/simulated/floor/fancyfloor/carpet/blue{
 	dir = 6
@@ -22051,11 +21339,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "veK" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/healthanalyzer{
 	pixel_x = 8
 	},
@@ -22406,11 +21690,7 @@
 	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
 	name = "Lectitio Divinitatus"
 	},
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small{
 	dir = 4;
 	icon_state = "bulb1";
@@ -22463,14 +21743,6 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/service/inn)
-"vDO" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "minorshrine"
-	},
-/turf/simulated/floor/stone/old4,
-/area/cadiaoutpost/new_hive/caves)
 "vDU" = (
 /mob/living/simple_animal/hostile/mold,
 /turf/simulated/floor/tiled/dark{
@@ -22690,11 +21962,7 @@
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/new_hive/caves)
 "vNA" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 8
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/paper_bin{
 	pixel_y = 10
 	},
@@ -22772,25 +22040,13 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "vPp" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
+/obj/structure/bookcase,
+/obj/item/book{
+	desc = "What is Chaos? Suffering, you might say. Oppression. Deceit. But could not all these things be said of your Imperium? You hunt down the talented and the strong-willed. You break them or sacrifice them. You lie to your citizens and wage war on those who dare speak out. The inquisitors you call masters assume guilt and execute millions on a whim. And why? Why do you do this? Because you know Chaos is there but you do not know how to fight it, so you crush your own citizens for fear that they might aid the Enemy. The Imperium suffers because of Chaos. No matter how hard you fight, that will never change. Chaos exists in a state of permanent victory over you - you dance to our tune, mortal one, you butcher and torture and repress one another because the gods of the warp require you to. The Imperium is founded on Chaos. My lord Tzeentch won your war a long, long time ago.";
+	name = "chaos tome"
 	},
-/obj/item/hand_labeler{
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/dropper,
-/obj/item/reagent_containers/dropper{
-	pixel_y = -4
-	},
-/obj/effect/floor_decal/newcorner/blue/diagonal,
-/turf/simulated/floor/tiled{
-	desc = "We are beset by many terrible foes in these dark times, but we walk in the light of the Emperor, and we shall not let a single foe stay us from our duty. We are the Sisters of the great Ecclesiarchy, and we will fight to the bitter end.";
-	icon_state = "white1"
-	},
-/area/cadiaoutpost/oa/service/chapel/chapelsurgery)
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "vPQ" = (
 /turf/unsimulated/mineral,
 /area/cadiaoutpost/oa/caves/dark)
@@ -22823,6 +22079,15 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/research/robotics)
+"vSV" = (
+/obj/structure/bookcase,
+/obj/item/book/manual{
+	desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors.";
+	name = "Lectitio Divinitatus";
+	pixel_y = 10
+	},
+/turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/new_hive/caves)
 "vTq" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 6
@@ -22843,12 +22108,7 @@
 /area/cadiaoutpost/oa/caves/undercity)
 "vUJ" = (
 /obj/effect/floor_decal/newcorner/plating,
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/gun/energy/las/laspistol{
 	pixel_y = 8
 	},
@@ -22884,12 +22144,7 @@
 /turf/simulated/floor/exoplanet/water/shallow/lightless,
 /area/cadiaoutpost/oa/service/inn)
 "vVP" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 1
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/snacks/warfare{
 	pixel_x = 10
 	},
@@ -23119,11 +22374,7 @@
 /obj/structure/sign/imperial{
 	pixel_y = 32
 	},
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/storage/fancy/cigar{
 	pixel_y = 14
 	},
@@ -23223,9 +22474,7 @@
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/oa/caves/dark)
 "wmu" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small/red{
 	dir = 1;
 	icon_state = "bulb1"
@@ -23344,12 +22593,7 @@
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/barracks)
 "wur" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "reinf_table3";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/effect/floor_decal/newcorner/green{
 	dir = 4
 	},
@@ -23630,9 +22874,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "wLg" = (
-/obj/structure/table/reinforced{
-	color = "grey"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/machinery/light/small/red{
 	dir = 8;
 	icon_state = "bulb1"
@@ -24022,11 +23264,7 @@
 	},
 /area/cadiaoutpost/oa/research/robotics)
 "xbF" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "wood_1tileendtable";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/random/loot/tech1,
 /obj/effect/floor_decal/newcorner/purple/quarter,
 /turf/simulated/floor/tiled/white,
@@ -24345,11 +23583,7 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "xri" = (
-/obj/structure/table/reinforced{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "woodentable";
-	dir = 10
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/broken_bottle,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/service/inn)
@@ -24452,11 +23686,7 @@
 	},
 /area/cadiaoutpost/oa/service/inn)
 "xvG" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table7"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/healthanalyzer{
 	pixel_x = 8
 	},
@@ -24565,11 +23795,7 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "xzY" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/glass2/square{
 	pixel_y = -2;
 	pixel_x = 8
@@ -24647,12 +23873,7 @@
 	},
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "xCI" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table_horizontal2";
-	dir = 4
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/flashlight/lamp/green{
 	pixel_y = 14
 	},
@@ -24674,11 +23895,7 @@
 	},
 /area/cadiaoutpost/oa/magistratumpost)
 "xDQ" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon_state = "table5";
-	icon = "icons/map_project/furniture_and_decor.dmi"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/device/boombox{
 	pixel_y = 11
 	},
@@ -25208,11 +24425,7 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/centralhall)
 "ylz" = (
-/obj/structure/table/reinforced{
-	color = "grey";
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "table4"
-	},
+/obj/structure/table/graf/rusty_table,
 /obj/item/reagent_containers/food/drinks/canteen,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/new_hive/caves)
@@ -33392,7 +32605,7 @@ bkf
 bkf
 bkf
 arL
-jst
+soT
 vnL
 sgB
 bkf
@@ -33644,7 +32857,7 @@ vyA
 vNG
 bkf
 arL
-oQd
+mjH
 vnL
 qPS
 bkf
@@ -33896,7 +33109,7 @@ wLi
 wLi
 qek
 arL
-euB
+naF
 vnL
 doD
 bkf
@@ -35933,7 +35146,7 @@ slE
 gXe
 bSw
 fDz
-vPp
+fED
 fED
 fDz
 bSw
@@ -39220,7 +38433,7 @@ bNq
 rae
 ljr
 mwZ
-rhd
+mwZ
 bNq
 nrA
 boe
@@ -48400,7 +47613,7 @@ lBK
 hqB
 hqB
 xTz
-vDO
+uGd
 wcj
 tOB
 tOB
@@ -48901,7 +48114,7 @@ hqB
 fra
 hqB
 wcj
-nWV
+mvO
 wfm
 cIy
 wcj
@@ -53008,7 +52221,7 @@ xes
 rJK
 nHR
 nHR
-nsF
+cfN
 kCK
 xes
 nHR
@@ -53309,7 +52522,7 @@ jGw
 mVL
 aAQ
 pYA
-uhe
+dtO
 bsd
 aAQ
 jGw
@@ -58481,8 +57694,8 @@ vKV
 fvt
 lgW
 rHd
-dpx
-mCg
+rSa
+rSa
 lgW
 fvt
 rav
@@ -58733,7 +57946,7 @@ knC
 knC
 lgW
 rHd
-sAF
+rSa
 rSa
 vgs
 knC
@@ -60944,7 +60157,7 @@ iZm
 iZm
 wcj
 iZm
-pnQ
+qRc
 wcj
 tOB
 tOB
@@ -61894,7 +61107,7 @@ xzY
 reZ
 tao
 oIy
-qPw
+ucO
 gkw
 ydt
 ydt
@@ -64751,7 +63964,7 @@ fGN
 fGN
 fGN
 noi
-gZP
+jst
 lnX
 fjE
 fGN
@@ -65011,7 +64224,7 @@ sey
 sey
 ibE
 aLD
-qET
+mQS
 fJr
 ldt
 vUJ
@@ -65255,7 +64468,7 @@ qqX
 qqX
 iPf
 noi
-gZP
+uhe
 gZP
 tPi
 rMd
@@ -69817,7 +69030,7 @@ ulb
 irC
 oyw
 oyw
-bRE
+irC
 nOB
 fGN
 slE
@@ -70304,7 +69517,7 @@ uLn
 uLn
 uLn
 fGN
-iaC
+iHu
 wGT
 sey
 sey
@@ -71052,7 +70265,7 @@ tOB
 tOB
 slE
 fGN
-iaC
+iHu
 sey
 bMd
 wgM
@@ -79255,10 +78468,10 @@ xTz
 xTz
 xTz
 xTz
-cva
-iEX
+uGd
+gCH
 wDP
-hVq
+rYC
 iGV
 slE
 tOB
@@ -79502,9 +78715,9 @@ slE
 slE
 iGV
 tOB
-bNe
+qZN
 rsZ
-dFX
+sKy
 xTz
 xTz
 gCH
@@ -80258,10 +79471,10 @@ tOB
 wDP
 xTz
 xTz
-bAJ
+vSV
 xTz
 pBw
-naF
+vPp
 rsZ
 xTz
 rsZ
@@ -80509,9 +79722,9 @@ slE
 tOB
 xTz
 rsZ
-uXK
+fgZ
 rsZ
-nzf
+qET
 rsZ
 rsZ
 xTz
@@ -80764,7 +79977,7 @@ xTz
 xTz
 xTz
 xTz
-oFN
+pNV
 rsZ
 tEK
 rRQ
@@ -81017,7 +80230,7 @@ xTz
 wDP
 xTz
 xTz
-sJk
+akg
 iGV
 tOB
 iGV
@@ -81227,12 +80440,12 @@ tOB
 tOB
 slE
 wcj
-dxu
+blC
 tdV
 jSf
 jSf
 jSf
-fUf
+tdV
 blC
 wcj
 tOB
