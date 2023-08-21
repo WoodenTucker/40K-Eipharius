@@ -145,15 +145,10 @@
 	},
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "bj" = (
-/obj/effect/floor_decal/newcorner/reinforced/corner{
-	dir = 4
-	},
-/obj/effect/floor_decal/newcorner/reinforced/corner{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
+/obj/structure/railing,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/head/cowboy_hat,
+/turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/hive_city)
 "bl" = (
 /obj/structure/bed/chair/wood/fancy/comfy1,
@@ -961,10 +956,6 @@
 /obj/item/device/radio/headset/headset_sci,
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/oa/service/chapel)
-"hE" = (
-/obj/machinery/door/unpowered/inn,
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/hallway/northern)
 "hF" = (
 /obj/machinery/computer/bountycogitator,
 /obj/structure/window/reinforced{
@@ -996,6 +987,20 @@
 	},
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/chapel)
+"hT" = (
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 4
+	},
+/obj/effect/floor_decal/newcorner/reinforced/corner{
+	dir = 8
+	},
+/obj/effect/landmark{
+	name = "krootstart"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/hive_city)
 "hU" = (
 /obj/structure/railing{
 	dir = 1;
@@ -2241,6 +2246,16 @@
 	},
 /turf/simulated/floor/fancyfloor/marble,
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
+"se" = (
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/hallway/northern)
+"sg" = (
+/obj/structure/railing,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/head/bardhat,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/hive_city)
 "si" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -2406,6 +2421,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/hallway/northern)
+"tm" = (
+/obj/structure/railing,
+/obj/item/clothing/head/bighat,
+/obj/item/clothing/suit/armor/templar,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/hive_city)
 "tq" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 1
@@ -2453,6 +2474,9 @@
 	},
 /obj/effect/floor_decal/newcorner/reinforced/corner{
 	dir = 1
+	},
+/obj/effect/landmark{
+	name = "taustart"
 	},
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
@@ -3272,6 +3296,13 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/hallway/northern)
+"Aa" = (
+/obj/structure/railing,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/head/plaguedoctorhat,
+/obj/item/clothing/under/syndicate/tacticool,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/hive_city)
 "Ac" = (
 /obj/structure/curtain/black,
 /turf/simulated/floor/factory_floor,
@@ -5614,6 +5645,12 @@
 "Qh" = (
 /turf/simulated/wall/concrete/strong,
 /area/cadiaoutpost/oa/hallway/northern)
+"Qn" = (
+/obj/structure/railing,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/head/bighat,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/hive_city)
 "Qo" = (
 /obj/structure/bed/chair{
 	dir = 4;
@@ -6698,6 +6735,13 @@
 	dir = 1
 	},
 /area/cadiaoutpost/oa/service/chapel)
+"XS" = (
+/obj/structure/railing,
+/obj/random/loot/randomarmor,
+/obj/item/clothing/head/bighat,
+/obj/item/clothing/under/syndicate/tacticool,
+/turf/simulated/floor/tiled/dark,
+/area/cadiaoutpost/new_hive/hive_city)
 "XU" = (
 /obj/machinery/light/small{
 	dir = 4;
@@ -35560,7 +35604,7 @@ vt
 vt
 vt
 vt
-vt
+sg
 vt
 vt
 vt
@@ -35806,10 +35850,10 @@ vt
 wu
 sx
 sx
-bj
+hT
 JV
 sx
-bj
+hT
 sx
 sx
 bj
@@ -35878,7 +35922,7 @@ Lm
 sU
 Qh
 Qh
-hE
+se
 Qh
 Qh
 cF
@@ -36064,7 +36108,7 @@ fX
 pY
 fX
 fX
-pY
+Aa
 fX
 fX
 JS
@@ -36118,8 +36162,8 @@ Qh
 Qh
 Qh
 Qh
-hE
-hE
+se
+se
 Qh
 Qh
 Qh
@@ -36316,7 +36360,7 @@ fX
 pY
 fX
 fX
-pY
+Al
 fX
 fX
 JS
@@ -36568,7 +36612,7 @@ cW
 tS
 cW
 cW
-tS
+Al
 cW
 cW
 Wl
@@ -36629,7 +36673,7 @@ oR
 oR
 zE
 Zm
-hE
+se
 vj
 Xj
 Lm
@@ -36637,7 +36681,7 @@ Lm
 Lm
 mh
 vj
-hE
+se
 hY
 Lm
 sV
@@ -36820,7 +36864,7 @@ fX
 pY
 fX
 fX
-pY
+Qn
 fX
 fX
 JS
@@ -37072,7 +37116,7 @@ fX
 Xo
 fX
 fX
-pY
+tm
 fX
 fX
 JS
@@ -37324,7 +37368,7 @@ KY
 IG
 KY
 KY
-Yx
+XS
 KY
 KY
 Wg
@@ -38645,7 +38689,7 @@ Fj
 Fj
 mh
 vj
-hE
+se
 Uq
 Ed
 Ed
@@ -39142,8 +39186,8 @@ Qh
 Qh
 Qh
 Qh
-hE
-hE
+se
+se
 Qh
 Qh
 Qh
@@ -39158,7 +39202,7 @@ Qh
 Qh
 Qh
 Qh
-hE
+se
 Qh
 Qh
 Qh
@@ -40168,7 +40212,7 @@ UR
 Lm
 Lm
 Lm
-hE
+se
 bL
 bG
 bL
