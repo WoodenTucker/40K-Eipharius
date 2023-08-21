@@ -92,7 +92,7 @@
 			else if(!is_blind())
 				to_chat(src, "<span class='name'>[speaker_name]</span>[alt_name] talks but you cannot hear them.")
 	else
-		if(src.active_ritual.ritual_active)
+		if(src.active_ritual != null && src.active_ritual.ritual_active)
 			hear_ritual_responses(message, speaker) //this is where we listen for responses
 
 		if(language)

@@ -15,7 +15,9 @@
 		if("emperor preserve us")
 			current_ritual = new /datum/ritual/preserve_us //attaches a fresh datum
 			to_chat(ritual_leader, "I see your ritual beginning! [current_ritual]");
-
+		if("holy emperor you have given us your saints to purge wickedness across the stars i call upon them now to reveal the truth")
+			current_ritual = new /datum/ritual/invoke_the_saints
+			to_chat(ritual_leader, "I see your ritual beginning! [current_ritual]");
 		else
 			to_chat(ritual_leader, "Failed to find an adequate ritual... (Report this as a bug to jannies)")
 			return
