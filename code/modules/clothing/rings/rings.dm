@@ -72,6 +72,23 @@
 	..()
 	reagents.add_reagent(/datum/reagent/chloralhydrate, 15) // Less than a sleepy-pen, but still enough to knock someone out
 
+/obj/item/clothing/ring/reagent/sleepy/nid
+	name = "nid stinger"
+	desc = "A disgusting stinger covered in venom."
+	icon_state = "catachanfang"
+	item_state = "catachanfang"
+	color = "#292929"
+	origin_tech = list(TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
+
+/obj/item/clothing/ring/reagent/sleepy/nid/New()
+	..()
+	reagents.add_reagent(/datum/reagent/chloralhydrate, 15)
+
+
+/obj/item/clothing/ring/reagent/sleepy/nid/dropped() //since nodrop is fucked this will deal with it for now.
+	..()
+	spawn(1) if(src) qdel(src)
+
 /////////////////////////////////////////
 //Seals and Signet Rings
 /obj/item/clothing/ring/seal/secgen

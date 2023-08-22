@@ -310,6 +310,16 @@
 	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 	return
 
+/mob/living/carbon/human/genestealer/proc/stinger()
+	set name = "Unsheathe Knockout Stinger (0)"
+	set category = "Tyranid"
+	set desc = "Gives their knockout talon"
+
+	put_in_hands(new /obj/item/clothing/ring/reagent/sleepy/nid)
+	src.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	return
+
+
 //Begin nid items
 
 /obj/structure/spawningpool

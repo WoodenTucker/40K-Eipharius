@@ -320,6 +320,9 @@
 	desc = "An older and more portable model of the Earthshaker Cannon, intended to work as heavy artillery equipment, although this one seems to be missing certain vital components."
 	icon = 'icons/obj/cannon.dmi'
 	icon_state = "modern_cannon"
+	density = 1
+	atom_flags = ATOM_FLAG_CLIMBABLE
+	anchored = 0
 
 /obj/structure/hivedecor/lasplacement // Decoration too, dont ask me to code it
 	name = "Heavy Lasgun Turret"

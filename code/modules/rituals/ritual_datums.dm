@@ -52,7 +52,7 @@
 	timeout = 40 SECONDS
 	location_specific = FALSE
 	response_required = TRUE
-	allowed_jobs = list(/datum/job/acolyte, /datum/job/inquisitor)
+	allowed_jobs = list(/datum/job/deacon, /datum/job/acolyte, /datum/job/inquisitor)
 	response_phrase = "saint\\s+\\w+\\s+defend\\s+us" //regex that searches for saint, defend and us to be used with any name ie. Saint Celestine defend us!
 	min_chants = 10 //requires at least 1 additional ritualist and the phrase must be uttered 3 times by non-ritual leader
 	additional_req_check = /mob/proc/invoke_check
