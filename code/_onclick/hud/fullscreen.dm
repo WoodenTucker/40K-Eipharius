@@ -110,6 +110,12 @@
 	icon_state = "fallout"
 	alpha = 30
 
+/obj/screen/fullscreen/emperor
+	icon = 'icons/480x480.dmi'
+	icon_state = "emperor"
+	screen_loc = ui_entire_screen
+	alpha = 25
+
 /obj/screen/fullscreen/snowstorm
 	icon = 'icons/effects/weather.dmi'
 	screen_loc = "WEST,SOUTH to EAST,NORTH"

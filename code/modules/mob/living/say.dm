@@ -189,6 +189,16 @@ proc/get_radio_key_from_channel(var/channel)
 			log_and_message_admins("[src] just tried to say cringe: [cringe]", src)
 			return
 
+	//if there are phrases this runs
+	if(GLOB.ritual_filter.len)
+	//searches the say for a ritual phrase
+		if(findtext(message, config.ritual_filter_regex))
+			find_and_begin_ritual(message, src) //sends our message to begin ritual procs and who is our leader
+
+			//you can remove this log if it gets annoying, its useful for debugging early stages
+			log_and_message_admins("[src] said a ritual phrase: [message]", src)
+
+
 
 	var/prefix = copytext(message,1,2)
 	if(prefix == get_prefix_key(/decl/prefix/custom_emote))

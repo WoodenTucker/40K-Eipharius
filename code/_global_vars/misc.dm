@@ -1,6 +1,6 @@
 GLOBAL_LIST_EMPTY(all_observable_events)
 
-GLOBAL_LIST_INIT(font_resources, list('fonts/Shage/Shage.ttf'))
+GLOBAL_LIST_INIT(font_resources, list('fonts/Shage/Shage.ttf', 'fonts/UnifrakturCook/UnifrakturCook.ttf'))
 GLOBAL_LIST_INIT(latepartyoptions, list(""))
 GLOBAL_LIST_EMPTY(daparty) //This holds our late partiers
 
