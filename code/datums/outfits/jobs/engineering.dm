@@ -17,6 +17,7 @@
 	suit = /obj/item/clothing/suit/storage/hazardvest/magos
 	shoes = /obj/item/clothing/shoes/jackboots/technoboots
 	uniform = /obj/item/clothing/under/rank/chief_engineer
+	r_pocket = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/heads/ce
 	l_hand = null
 	gloves = /obj/item/clothing/gloves/thick/techpriest
@@ -26,6 +27,8 @@
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/magos
 	backpack_contents = list(/obj/item/stack/thrones/five = 1,
 		/obj/item/stack/thrones2/five = 3,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
+		/obj/item/book/manual/engineering_construction = 1,
 		/obj/item/stack/thrones3/five = 1,)
 
 
@@ -44,6 +47,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots/techpriest
 	l_ear = /obj/item/device/radio/headset/headset_eng
 	l_hand = /decl/hierarchy/supply_pack/security/forensics
+	r_pocket = /obj/item/storage/box/coin
 	r_ear = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest/biologis
 	backpack_contents = list(
@@ -51,6 +55,7 @@
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
 		/obj/item/stack/thrones3/five = 1,
+		/obj/item/book/manual/engineering_construction = 1,
 		/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
 
 /decl/hierarchy/outfit/job/engineering/engineer
@@ -65,6 +70,7 @@
 	gloves = /obj/item/clothing/gloves/thick/techpriest
 	belt = /obj/item/storage/belt/utility/full
 	id_type = /obj/item/card/id/engineering
+	r_pocket = /obj/item/storage/box/coin
 	pda_type = null
 	pda_slot = null
 	back = /obj/item/storage/backpack/satchel/warfare/techpriest
@@ -73,6 +79,7 @@
 		/obj/item/stack/thrones = 1,
 		/obj/item/stack/thrones2 = 1,
 		/obj/item/stack/thrones3/five = 1,
+		/obj/item/book/manual/ripley_build_and_repair = 1,
 )
 
 /decl/hierarchy/outfit/job/engineering/engineer/void

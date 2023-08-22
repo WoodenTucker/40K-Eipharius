@@ -224,7 +224,7 @@
 	damage = 58
 	armor_penetration = 25
 
-	/obj/item/projectile/energy/pulse/pulsepistol
+/obj/item/projectile/energy/pulse/pulsepistol
 	name = "pulse round"
 	fire_sound='sound/weapons/lasgun.ogg'
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'

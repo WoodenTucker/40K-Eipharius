@@ -1,7 +1,7 @@
 /obj/item/stack/thrones
-	name = "$10 thrones"
-	desc = "Gilded throne(s) worth $10"
-	singular_name = "$10 throne"
+	name = "Thrones"
+	desc = "A golden throne worth ten Reál. So far from home -- how did you get here little golden coin?"
+	singular_name = "Throne"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "throne"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -50,9 +50,9 @@
 	amount = 20
 
 /obj/item/stack/thrones2
-	name = "$5 thrones"
-	desc = "Silver throne(s) worth $5"
-	singular_name = "$5 throne"
+	name = "Reál"
+	desc = "A silver reál coin -- it's purity and rareness make it far more valuable then it's copper counterpart. Pronounced Rea-al"
+	singular_name = "Reál"
 	icon = 'icons/obj/thrones2.dmi'
 	icon_state = "throne"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -97,16 +97,15 @@
 /obj/item/stack/thrones2/ten
 	amount = 10
 
-
 /obj/item/stack/thrones2/twenty
 	amount = 20
 
 
 
 /obj/item/stack/thrones3
-	name = "$1 thrones"
-	desc = "Copper throne(s) worth $1"
-	singular_name = "$1 throne"
+	name = "Reál"
+	desc = "A copper reál coin -- the most common tender this side of the sub-sector. Pronounced Rea-al"
+	singular_name = "Reál"
 	icon = 'icons/obj/thrones3.dmi'
 	icon_state = "throne"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE

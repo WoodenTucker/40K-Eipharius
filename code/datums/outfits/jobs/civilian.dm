@@ -53,6 +53,7 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_hand = /obj/item/farmshovel
+	r_pocket = /obj/item/storage/box/coin
 	belt = /obj/item/storage/plants
 	backpack_contents = list(/obj/item/seeds/potatoseed = 1,
 	/obj/item/seeds/wheatseed = 1,
@@ -60,7 +61,6 @@
 	/obj/item/seeds/random = 1,
 	/obj/item/seeds/tobaccoseed = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 
@@ -116,7 +116,7 @@
 
 /decl/hierarchy/outfit/job/service/undertaker
 	name = OUTFIT_JOB_NAME("Undertaker")
-	uniform = /obj/item/clothing/under/child_jumpsuit
+	uniform = /obj/item/clothing/under/child_jumpsuit/warfare
 	id_type = /obj/item/card/id/civilian/bartender
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = null

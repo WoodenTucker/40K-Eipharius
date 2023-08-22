@@ -100,7 +100,7 @@
 	fire_delay= 3
 
 /obj/item/gun/projectile/revolver/villiers
-	name = "Villiers Pattern Stub Revolver"
+	name = "Villiers Pattern Auto-Revolver"
 	desc = "This Villiers is as high quality as the rest of them. Their standard burst fire qualities somehow being fit unto a revolver chambered in .357!"
 	icon_state = "slug_revolver"
 	item_state = "crevolver"
@@ -110,7 +110,7 @@
 	max_shells = 6
 	force = 20
 	accuracy = 0.5
-	fire_delay= 14
+	fire_delay= 6
 	burst = 2
 	ammo_type = /obj/item/ammo_casing/a357
 	sales_price = 5

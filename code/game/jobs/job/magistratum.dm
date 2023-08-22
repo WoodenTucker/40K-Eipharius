@@ -89,8 +89,8 @@
 /datum/job/enforcer
 	title = "Enforcer" // Cult. Criminal. Loyal.
 	supervisors = "the Planetary Marshal, Deacon and Inquisition"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 3
+	spawn_positions = 3
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
@@ -230,6 +230,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/melee/baton/loaded
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty/magrave
@@ -238,8 +239,7 @@
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
 	/obj/item/ammo_box/shotgun = 1,
 	/obj/item/handcuffs = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
+	/obj/item/book/manual/detective = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
@@ -259,15 +259,16 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/projectile/revolver/mateba
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
+	/obj/item/book/manual/detective = 1,
 	/obj/item/stack/thrones3/twenty = 1,
 	)
 
@@ -283,13 +284,14 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/projectile/revolver/mateba
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/entertainment
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c50/ms = 1,
 	/obj/item/handcuffs = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/book/manual/detective = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/twenty = 1,
@@ -307,6 +309,7 @@
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	belt = /obj/item/gun/energy/las/laspistol/shitty
 	id_type = /obj/item/card/id/dog_tag/guardsman
+	r_pocket = /obj/item/storage/box/coin
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -331,6 +334,7 @@
 	r_pocket = /obj/item/device/flashlight/lantern
 	l_hand = null
 	r_hand = /obj/item/melee/powermaul
+	r_pocket = /obj/item/storage/box/coin
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer/arbitrator
 	suit = /obj/item/clothing/suit/armor/arbitrator
 	gloves = /obj/item/clothing/gloves/thick/swat/combat/warfare

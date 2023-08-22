@@ -23,7 +23,7 @@
 	if(lit)
 		icon_state = "torch1"
 		item_state = "torch1"
-		set_light(8, 12, "#E38F46")
+		set_light(5, 7, "#E38F46")
 	else
 		icon_state = "torch0"
 		item_state = "torch0"
@@ -121,7 +121,7 @@
 	if(lighttorch)
 		if(lighttorch.lit)
 			icon_state = "torchwall1"
-			set_light(9, 11,"#E38F46")
+			set_light(5, 7,"#E38F46")
 
 		else
 			icon_state = "torchwall0"
@@ -212,7 +212,7 @@
 	if(lit)
 		icon_state = "fireplacestand_f"
 		item_state = "fireplacestand_f"
-		set_light(9, 11, "#E38F46")
+		set_light(5, 7, "#E38F46")
 	else
 		icon_state = "fireplacestand"
 		item_state = "fireplacestand"
@@ -281,7 +281,7 @@
 	overlays = overlays.Cut()
 	if(lit)
 		icon_state = "fire_bl"
-		set_light(9, 11, "#E38F46")
+		set_light(5, 7, "#E38F46")
 	else
 		icon_state = "fire_bl"
 		set_light(0,0)
@@ -298,6 +298,13 @@
 	..()
 	if(isflamesource(W))
 		light()
+
+/obj/item/pyre/self_lit/church // Pyre specially for the catacombs since it looks nicer than the standard one
+	name = "Church pyre"
+	desc = "A pyre mostly used for funerals or to decorate religious sites."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "pyreplace1"
+	item_state = "pyreplace1"
 
 /obj/item/campfire
 	icon = 'icons/obj/firepit.dmi'
@@ -329,7 +336,7 @@
 	if(lit)
 		icon_state = "cauldron1"
 		item_state = "cauldron1"
-		set_light(9, 11, "#E38F46")
+		set_light(5, 7, "#E38F46")
 	else
 		icon_state = "cauldron0"
 		item_state = "cauldron0"

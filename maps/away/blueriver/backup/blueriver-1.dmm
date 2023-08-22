@@ -11,7 +11,7 @@
 "o" = (/obj/structure/ladder/up,/turf/simulated/floor/asteroid)
 "p" = (/obj/structure/catwalk,/turf/simulated/floor/plating)
 "q" = (/obj/item/crowbar,/turf/simulated/floor/asteroid)
-"r" = (/obj/structure/barricade,/turf/simulated/floor/asteroid)
+"r" = (/obj/structure/warfare/barricade/concrete_barrier,/turf/simulated/floor/asteroid)
 "s" = (/obj/item/cell/infinite{alpha = 130; color = "BLUE"; desc = "This looks like an alien power cell. You can make out both of the connections relatively clearly though."; icon = 'icons/obj/grenade.dmi'; icon_state = "delivery"; name = "alien power cell"})
 "t" = (/obj/item/device/geiger,/turf/simulated/floor/asteroid)
 "u" = (/obj/item/pickaxe/drill,/turf/simulated/floor/asteroid)

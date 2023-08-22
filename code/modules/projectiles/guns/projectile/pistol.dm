@@ -84,7 +84,7 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 7
+	fire_delay = 2
 	screen_shake = 0.2
 	sales_price = 20
 
@@ -96,7 +96,7 @@
 		icon_state = "sheetp-e"
 
 /obj/item/gun/projectile/pistol/villiers
-	name = "Villiers Pattern stub pistol."
+	name = "Villiers Pattern Auto-pistol."
 	desc = "This high quality Villiers is chambered in 9mm, crafted with an off planet wood as it's handle and is capable of burst fire, maintaining a high accuracy while doing so."
 	icon_state = "stub2"
 	item_state = "pistol"
@@ -106,9 +106,9 @@
 	magazine_type = /obj/item/ammo_magazine/mc45mm
 	allowed_magazines = /obj/item/ammo_magazine/mc45mm
 
-	fire_delay = 3
+	fire_delay = 4
 	burst = 2
-	accuracy = 0.7
+	accuracy = 0.4
 	sales_price = 25
 
 
@@ -137,12 +137,13 @@
 	jammed_icon = "talon-j"
 
 /obj/item/gun/projectile/talon/renegade
-	name = "Renegade Pistol"
+	name = "Renegade Auto-Pistol"
 	desc = "A modified slug pistol with a heavy frame and integrated suppressor, forged for the Assassins of the infamous Renegade Navigator Houses."
 	move_delay= 1.3
 	one_hand_penalty = 0
-	accuracy = 1
-	fire_delay = 0.5
+	accuracy = 0.8
+	fire_delay = 2
+	burst = 2
 	silenced = 1
 	force = 20
 	sales_price = 35

@@ -316,3 +316,13 @@
 /obj/structure/bed/krootbed
 	name = "kroot bed"
 	desc = "The bed of a Kroot Hunter"
+
+/obj/structure/bed/barrack
+	name = "bunk bed"
+	desc = "For tired soldiers to rest on, aswell as wounded, deceased, dying, and so on."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cerb0"
+
+/obj/structure/bed/barrack1
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "cerb1"

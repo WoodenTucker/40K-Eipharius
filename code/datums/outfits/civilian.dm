@@ -49,6 +49,7 @@
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/headset_service
 	r_ear = null
+	r_pocket = /obj/item/storage/box/coin
 	back = /obj/item/storage/backpack/satchel/warfare
 	shoes = /obj/item/clothing/shoes/jackboots
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -60,7 +61,6 @@
 	/obj/item/seeds/random = 1,
 	/obj/item/seeds/tobaccoseed = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 
@@ -102,6 +102,7 @@
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/heads/cmo
 	r_ear = null
+	r_pocket = /obj/item/storage/box/coin
 	l_pocket = /obj/item/storage/box/ifak
 	belt = /obj/item/device/flashlight/lantern
 	back = /obj/item/storage/backpack/satchel/warfare

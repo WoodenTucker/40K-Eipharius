@@ -194,3 +194,27 @@
 				for(var/i in list(1,2,4,8,4,2,1,2,4,8,4,2,1,2,4,8,4,2))
 					set_dir(i)
 					sleep(1)
+
+/mob/living/simple_animal/corgi/cpl_buddy
+	name = "\improper Cpl Buddy"
+	real_name = "Corporal Buddy"
+	desc = "Despite it's small appearance, this pug has been serving the Imperial guard ever since it was a pup, first serving on the Sabbath Worlds crusade, then on the 1st Kronus Regiment 'The Liberators', led by Governor-Militant Lukas Alexander, until their retreat on the planet of Kronus, and finally having been sent here to increase morale."
+	icon = 'icons/map_project/creatures.dmi'
+	icon_state = "cpl_buddy"
+	icon_living = "cpl_buddy"
+	icon_dead = "buddy_dead"
+	speak = list("YAP", "Woof!", "Bark!", "AUUUUUU")
+	speak_emote = list("barks", "woofs")
+	emote_hear = list("barks", "woofs", "yaps","pants")
+	emote_see = list("shakes its head", "shivers")
+	speak_chance = 1
+	health = 1500 // It wears a helmet.
+	maxHealth = 1500 // It wears a helmet.
+	turns_per_move = 10
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/corgi
+	meat_amount = 1
+	response_help  = "pets"
+	response_disarm = "bops"
+	response_harm   = "kicks"
+	see_in_dark = 5
+	mob_size = 8

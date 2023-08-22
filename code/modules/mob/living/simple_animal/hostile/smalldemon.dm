@@ -20,6 +20,7 @@
 	maxbodytemp = 1000
 	see_in_dark = 10
 	wander = 1
+	turns_per_move = 25
 
 	speed = 1.6 // Higher number means slower.
 
@@ -65,7 +66,7 @@
 
 			if(stance_step <= -20) //If we have not found a mob for 20-ish ticks, revert to idle mode
 				stance = HOSTILE_STANCE_IDLE
-			if(stance_step >= 2)   //If we have been staring at a mob for 7 ticks,
+			if(stance_step >= 1)   //If we have been staring at a mob for 1 ticks,
 				stance = HOSTILE_STANCE_ATTACK
 				playsound(src, 'sound/effects/quotes/cults/demon/demon_spawn2.ogg', 100, 1)
 
@@ -82,14 +83,14 @@
 /mob/living/simple_animal/hostile/smalldemon/attackby(var/obj/item/O as obj, var/mob/user as mob)
 	if(stance != HOSTILE_STANCE_ATTACK && stance != HOSTILE_STANCE_ATTACKING)
 		stance = HOSTILE_STANCE_ALERT
-		stance_step = 6
+		stance_step = 3
 		target_mob = user
 	..()
 
 /mob/living/simple_animal/hostile/smalldemon/attack_hand(mob/living/carbon/human/M as mob)
 	if(stance != HOSTILE_STANCE_ATTACK && stance != HOSTILE_STANCE_ATTACKING)
 		stance = HOSTILE_STANCE_ALERT
-		stance_step = 6
+		stance_step = 3
 		target_mob = M
 	..()
 
@@ -100,7 +101,7 @@
 		stance = HOSTILE_STANCE_ALERT
 
 /mob/living/simple_animal/hostile/smalldemon/LoseTarget()
-	..(5)
+	..(2)
 
 /mob/living/simple_animal/hostile/smalldemon/AttackingTarget()
 	if(!Adjacent(target_mob))
@@ -113,7 +114,7 @@
 		var/mob/living/carbon/human/H = target_mob
 		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
 		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
-		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE)
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP)
 		return H
 	else if(isliving(target_mob))
 		var/mob/living/L = target_mob
@@ -312,7 +313,7 @@
 	emote_hear = list("giggles", "smirks", "yaps", "squeals")
 	emote_see = list("jumps around!", "picks its nose", "claps")
 	speak_chance = 75
-	turns_per_move = 50
+	turns_per_move = 25
 	speed = 5
 	maxHealth = 450
 	health = 450
@@ -348,3 +349,117 @@
 			L.Weaken(1)
 			L.visible_message("<span class='danger'>\the [src] knocks down \the [L]!</span>")
 
+/mob/living/simple_animal/hostile/shadow
+	name = "Warping Shadow"
+	desc = "What used to be human once has been turned into some sort of warping abomination, you cannot even tell if it's looking at you or preparing to attack."
+	icon = 'icons/map_project/creatures.dmi'
+	icon_state = "shadow"
+	icon_living = "shadow"
+	icon_dead = "shadow_dead"
+	speak_chance = 0
+	turns_per_move = 25
+	response_help = "passes through"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = -1
+	maxHealth = 420
+	health = 420
+
+	harm_intent_damage = 20
+	melee_damage_lower = 25
+	melee_damage_upper = 45
+	attacktext = "slashes"
+	attack_sound = 'sound/hallucinations/growl1.ogg'
+
+
+/mob/living/simple_animal/hostile/shadow/subject_22 // Xeno Research Area
+	desc = "Increased use of Obscura alongside other chemicals turned the heretical pilgrim into this, further study required once hostility lowers to an acceptable level."
+
+/mob/living/simple_animal/hostile/undead
+	name = "Reanimated Corpse"
+	desc = "A reanimated corpse, despite the major injuries it still seems alive and craving for flesh."
+	icon = 'icons/map_project/creatures.dmi'
+	icon_state = "zombie"
+	icon_living = "zombie"
+	icon_dead = "zombie_dead"
+	speak_chance = 0
+	turns_per_move = 25
+	response_help = "passes through"
+	response_disarm = "shoves"
+	response_harm = "hits"
+	speed = 2
+	maxHealth = 285
+	health = 285
+
+	harm_intent_damage = 30
+	melee_damage_lower = 35
+	melee_damage_upper = 35
+	attacktext = "bites"
+	attack_sound = 'sound/hallucinations/growl1.ogg'
+
+
+/mob/living/simple_animal/hostile/undead/subject_11 // Xeno Research Area
+	desc = "Subject was brought to Elipharius for further examination, was afflicted with some pathogen which allowed reanimation even though necrotic decay was set, possible work of heretical bio weapon. Test Subject only craves for flesh."
+
+/mob/living/simple_animal/hostile/mold
+	name = "Glowing Humanoid"
+	desc = "An strange humanoid that seems entirely made out of some plant organism. One thing is for sure, it does not seem friendly."
+	icon = 'icons/map_project/creatures.dmi'
+	speak_chance = 0
+	icon_state = "spookyxenos"
+	icon_living = "spookyxenos"
+	icon_dead = "spookyxenos"
+	health = 350
+	maxHealth = 350
+	melee_damage_lower = 35
+	melee_damage_upper = 45
+	attacktext = "chomped"
+	attack_sound = 'sound/weapons/bite.ogg'
+	speed = 2
+
+/mob/living/simple_animal/hostile/mold/subject_08 // Xeno Research Area
+	desc = "Subject was found on the lower levels of Elipharius, possibly an human being before it was assimilated by some plant organism and turned into this, the area it was located contained several organism like the subject here."
+
+/mob/living/simple_animal/hostile/broken_servitor
+	name = "Malfunctioning Servitor"
+	desc = "An once operational servitor for the Mechanicus, whatever happened to it now turned it hostile to anyone.."
+	icon = 'icons/map_project/creatures.dmi'
+	speak_chance = 0
+	icon_state = "tombs3"
+	icon_living = "tombs3"
+	icon_dead = "tombs3"
+	health = 500
+	maxHealth = 500
+	melee_damage_lower = 35
+	melee_damage_upper = 45
+	attacktext = "chomped"
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	speed = 2
+
+/mob/living/simple_animal/hostile/broken_servitor/death()
+	..(null, "blows apart!")
+	new /obj/effect/decal/cleanable/blood/gibs/robot(src.loc)
+	var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
+	s.set_up(3, 1, src)
+	s.start()
+	qdel(src)
+	return
+
+/mob/living/simple_animal/hostile/broken_servitor/subject_03 // Xeno Research Area, also a hint to Archangel
+	desc = "Servitor was brought from the now abandoned and derelict Archangel Outpost, it appears his programming has been damaged during the expedition it was last tasked to do, any attempts to recover the information it has stored of the Archangel Outpost has been halted due increased hostilities."
+
+/mob/living/simple_animal/hostile/eldar
+	name = "Eldar"
+	desc = "An Eldar that has seemingly been trapped here, seems that it wont be leaving any time soon."
+	icon = 'icons/map_project/creatures.dmi'
+	speak_chance = 0
+	icon_state = "dire_avenger"
+	icon_living = "dire_avenger"
+	icon_dead = "dire_avenger" // Gotta add it dies horribly by gibbing due the lack of dead icon state
+	health = 150
+	maxHealth = 150
+	melee_damage_lower = 15
+	melee_damage_upper = 25
+	attacktext = "pierces"
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	speed = 4

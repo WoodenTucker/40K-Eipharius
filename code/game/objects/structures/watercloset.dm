@@ -418,6 +418,11 @@
 		"<span class='notice'>[user] washes \a [I] using \the [src].</span>", \
 		"<span class='notice'>You wash \a [I] using \the [src].</span>")
 
+/obj/structure/sink/well
+	name = "well"
+	desc = "A well that seems to contain fresh water."
+	icon = 'icons/map_project/furniture_and_decor.dmi'
+	icon_state = "well"
 
 /obj/structure/sink/kitchen
 	name = "kitchen sink"
