@@ -27,10 +27,11 @@
 
 	if(!W.mob_can_equip(src, slot, disable_warning, force))
 		if(del_on_fail)
-			qdel(W)
-		else
+			drop_from_inventory(W)
+		else 	
 			if(!disable_warning)
 				to_chat(src, "<span class='warning'>You are unable to equip that.</span>")//Only print if del_on_fail is false
+				drop_from_inventory(W)
 
 		return 0
 

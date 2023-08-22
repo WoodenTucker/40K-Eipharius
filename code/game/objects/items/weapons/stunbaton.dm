@@ -330,9 +330,9 @@
 	force = 4
 	stunforce = 0
 	agonyforce = 300
-	block_chance = 50
+	block_chance = 40
 	sales_price = 0
-	weapon_speed_delay = 5
+	weapon_speed_delay = 6
 	sharp = TRUE
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
 	w_class = ITEM_SIZE_HUGE

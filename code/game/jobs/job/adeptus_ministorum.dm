@@ -23,7 +23,7 @@
 	shotgun_skill = 6
 	lmg_skill = 6
 	smg_skill = 6
-	cultist_chance = 30
+	cultist_chance = 10
 
 
 
@@ -221,7 +221,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 5
+	cultist_chance = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -268,7 +268,7 @@
 	shotgun_skill = 10
 	lmg_skill = 10
 	smg_skill = 10
-	cultist_chance = 7
+	cultist_chance = 2
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -333,7 +333,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 10
+	cultist_chance = 8
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -382,7 +382,7 @@
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 25
+	cultist_chance = 15
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -473,24 +473,24 @@
 				to_chat(U,"<span class='danger'><b><font size=4>THE HOLY DEACON</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Deacon to the flock of the Eipharius colony you are responsible for the survival of faith, to keep the light of holy Terra and the God Emperor shining upon this dark world.</font></b></span>")
 				if(prob(4))
-					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+					new /obj/item/device/radio/headset/headset_eng(src.loc) 
 				if(prob(3))
-					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
+					new /obj/item/device/radio/headset/headset_sci(src.loc) 
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE DEACON OF WOUNDS</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>The corruption has spread to your soul, deep within you a resonance -- a repeating vibration calls upon you to betray all that you have built. To reforge and stitch together a new world from the mangled corpses of the faithful. Lead them to the light, show them their new purpose. </font></b></span>")
 				U.add_stats(rand(14,18), rand(14,18), rand(17,21), rand(14,17))
 				if(prob(50))
-					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/blue_team/all, slot_in_backpack)
-				equip_to_slot_or_store_or_drop(new /obj/item/reagent_containers/hypospray/autoinjector/tau, slot_in_backpack)
+					new /obj/item/device/radio/headset/blue_team/all(src.loc) 
+				new /obj/item/reagent_containers/hypospray/autoinjector/tau(src.loc) 
 				var/datum/heretic_deity/deity = GOD(U.client.prefs.cult)
 					deity.add_cultist(U)
 				if(prob(8))
-					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_eng, slot_in_backpack)
+					new /obj/item/device/radio/headset/headset_eng(src.loc) 
 				if(prob(2))
-					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/inquisition, slot_in_backpack)
+					new /obj/item/device/radio/headset/inquisition(src.loc) 
 				if(prob(6))
-					equip_to_slot_or_store_or_drop(new /obj/item/device/radio/headset/headset_sci, slot_in_backpack)
+					new /obj/item/device/radio/headset/headset_sci(src.loc) 
 
 /mob/living/carbon/human/proc/faithleaderclass()
 	set name = "Select your faith"
@@ -518,11 +518,11 @@
 			if(prob(80))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SWORD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the sword that guards against the warp and seeks out it's destruction. Be wary, for those who battle against the great enemy are cursed to either die... or succumb to it.</font></b></span>")
-				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/combat_knife/glaive/holy, slot_in_backpack)
+				new /obj/item/melee/sword/combat_knife/glaive/holy(src.loc) 
 			else if(prob(50))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SHIELD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the shield that protects the weak and guards the flame of his Divine Emperor.</font></b></span>")
-				equip_to_slot_or_store_or_drop(new /obj/item/storage/firstaid/combat, slot_in_backpack)
+				new /obj/item/storage/firstaid/combat(src.loc) 
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE CORRUPTED</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall bring corruption to it's fiefdoms. Praise the hivemind/cult/cogitae! </font></b></span>")
@@ -555,11 +555,11 @@
 			if(prob(65))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SWORD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the sword that guards against the warp and seeks out it's destruction. Be wary, for those who battle against the great enemy are cursed to either die... or succumb to it.</font></b></span>")
-				equip_to_slot_or_store_or_drop(new /obj/item/melee/sword/combat_knife/glaive/holy, slot_in_backpack)
+				new /obj/item/melee/sword/combat_knife/glaive/holy(src.loc) 
 			else if(prob(25))
 				to_chat(U,"<span class='danger'><b><font size=4>THE SHIELD</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are the shield that protects the weak and guards the flame of his Divine Emperor.</font></b></span>")
-				equip_to_slot_or_store_or_drop(new /obj/item/storage/firstaid/combat, slot_in_backpack)
+				new /obj/item/storage/firstaid/combat(src.loc) 
 			else
 				to_chat(U,"<span class='danger'><b><font size=4>THE CORRUPTED</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>You are a traitor to the Imperium and for reasons known only to you now, shall bring corruption to it's fiefdoms. Praise the hivemind/cult/cogitae! </font></b></span>")
