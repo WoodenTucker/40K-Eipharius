@@ -2060,13 +2060,8 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/security/barracks)
 "cjk" = (
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/tiled/dark{
-	icon_state = "steel"
-	},
+/obj/structure/stairs/south,
+/turf/simulated/floor/ceramic,
 /area/cadiaoutpost/new_hive/caves)
 "ckf" = (
 /obj/structure/catwalkrust/blocked,
@@ -4690,6 +4685,10 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/hallway/centralhall)
+"eIQ" = (
+/obj/structure/sign/double/impbar/right,
+/turf/simulated/wall/concrete,
+/area/cadiaoutpost/new_hive/caves)
 "eJb" = (
 /obj/effect/floor_decal/newcorner/nbar/corner{
 	dir = 4
@@ -6572,9 +6571,8 @@
 /area/cadiaoutpost/new_hive/caves)
 "gDl" = (
 /obj/machinery/light/small/red,
-/turf/simulated/floor/factory_floor{
-	dir = 1
-	},
+/obj/structure/catwalkrust/blocked,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "gEr" = (
 /turf/simulated/floor/new_wood/two,
@@ -7476,6 +7474,14 @@
 	dir = 5
 	},
 /area/cadiaoutpost/oa/security/barracks)
+"hCd" = (
+/obj/structure/sign/double/impbar/left{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "hDE" = (
 /obj/structure/warfare/barricade/sandbag,
 /turf/simulated/floor/stone/old4,
@@ -11180,13 +11186,6 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
-"kTE" = (
-/obj/effect/landmark{
-	name = "genestart"
-	},
-/obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/tiled,
-/area/cadiaoutpost/new_hive/caves)
 "kVs" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -12962,6 +12961,13 @@
 	dir = 8
 	},
 /area/cadiaoutpost/oa/caves/dark)
+"mGj" = (
+/obj/effect/landmark{
+	name = "genestart"
+	},
+/obj/structure/catwalkrust/blocked,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/new_hive/caves)
 "mHQ" = (
 /obj/structure/railing{
 	dir = 4
@@ -19393,8 +19399,9 @@
 	},
 /area/cadiaoutpost/new_hive/caves)
 "sYw" = (
-/obj/machinery/light/small/red{
-	dir = 4
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
 	},
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/new_hive/caves)
@@ -21100,6 +21107,15 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/security/barracks)
+"uKC" = (
+/obj/structure/torchwall{
+	dir = 8;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "uKN" = (
 /obj/structure/table/rack/dark,
 /obj/item/clothing/mask/gas,
@@ -22094,6 +22110,15 @@
 	dir = 4
 	},
 /area/cadiaoutpost/oa/magistratumpost)
+"vOT" = (
+/obj/structure/torchwall{
+	dir = 1;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
+/area/cadiaoutpost/new_hive/caves)
 "vPb" = (
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled,
@@ -24333,9 +24358,13 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "ybT" = (
-/obj/machinery/light/small/red,
-/obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/tiled,
+/obj/structure/torchwall{
+	dir = 4;
+	icon_state = "torchwall0"
+	},
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
+	},
 /area/cadiaoutpost/new_hive/caves)
 "ybV" = (
 /obj/structure/table/rack,
@@ -57393,10 +57422,10 @@ tOB
 tpQ
 lFF
 lFF
-khV
-khV
+lFF
+lFF
 tpQ
-tOB
+tpQ
 jGw
 jGw
 laj
@@ -57615,7 +57644,7 @@ lPf
 lPf
 lPf
 lPf
-ybT
+gDl
 tpQ
 tOB
 tOB
@@ -57646,9 +57675,9 @@ tpQ
 fnl
 lFF
 lFF
-khV
+lFF
 tpQ
-tOB
+tpQ
 jGw
 lit
 jhe
@@ -57900,7 +57929,7 @@ lFF
 lFF
 lFF
 tpQ
-wcj
+tpQ
 jGw
 vDM
 jhe
@@ -58132,7 +58161,7 @@ tpQ
 nSl
 oCQ
 xRh
-kTE
+mGj
 xRh
 oCQ
 nSl
@@ -58150,9 +58179,9 @@ oCQ
 lFF
 lFF
 fnl
-khV
+lFF
 tpQ
-tOB
+tpQ
 jGw
 vcj
 oSG
@@ -58399,10 +58428,10 @@ tpQ
 tpQ
 tpQ
 tpQ
-fnl
-lFF
-lFF
-fnl
+tpQ
+tpQ
+tpQ
+tpQ
 tpQ
 wcj
 jGw
@@ -58641,19 +58670,19 @@ top
 top
 hTk
 oCQ
-gDl
+oCQ
 tpQ
 tOB
 tOB
 tOB
 tpQ
-tOB
-tOB
-tOB
-tpQ
-stj
 tpQ
 tpQ
+hCd
+gpl
+gpl
+gpl
+cjk
 tpQ
 tpQ
 tOB
@@ -58898,17 +58927,17 @@ tpQ
 gpl
 gpl
 iDX
+gpl
+gpl
+eIQ
+gpl
+gpl
+gpl
+gpl
 cjk
-gpl
-gpl
 tpQ
-gpl
-gpl
-cjk
-gpl
-gpl
-gpl
-gpl
+tpQ
+tpQ
 jGw
 gPN
 dDj
@@ -59152,15 +59181,15 @@ lPf
 lPf
 lPf
 lPf
+ybT
 gpl
 gpl
-gpl
 lPf
-lPf
-lPf
-lPf
-lPf
-lPf
+tpQ
+tpQ
+tpQ
+tpQ
+tpQ
 jGw
 vAz
 iTr
@@ -59411,8 +59440,8 @@ lPf
 lPf
 lPf
 lPf
-lPf
-lPf
+tpQ
+tpQ
 jGw
 dDj
 oKE
@@ -59650,7 +59679,7 @@ top
 top
 mLR
 xRh
-gpl
+uKC
 gpl
 lPf
 lPf
@@ -59664,7 +59693,7 @@ lPf
 lPf
 lPf
 lPf
-lPf
+tpQ
 jGw
 xQJ
 aJU
@@ -59905,16 +59934,16 @@ oCQ
 tpQ
 lrD
 gpl
-gDh
+gpl
 tpQ
 tpQ
 gpl
 gpl
-gpl
+vOT
 tpQ
 tpQ
 tpQ
-mRo
+lPf
 lPf
 lPf
 jGw
@@ -60153,7 +60182,7 @@ top
 top
 qFa
 oCQ
-gDl
+oCQ
 tpQ
 tOB
 tOB
@@ -60419,7 +60448,7 @@ tOB
 gpl
 gpl
 gpl
-gpl
+uKC
 gpl
 lPf
 gpl
@@ -60652,7 +60681,7 @@ tpQ
 ljC
 oCQ
 xRh
-kTE
+mGj
 xRh
 oCQ
 ljC
@@ -60927,7 +60956,7 @@ tpQ
 gpl
 gpl
 gpl
-gpl
+uKC
 gpl
 lPf
 lPf
@@ -61180,7 +61209,7 @@ tOB
 tOB
 tOB
 wcj
-kob
+gpl
 lPf
 lPf
 wcj
@@ -61939,7 +61968,7 @@ tOB
 tOB
 iDX
 gpl
-gpl
+uKC
 gpl
 gpl
 lPf
@@ -62697,7 +62726,7 @@ sYw
 xqB
 vHf
 gpl
-clS
+uKC
 gpl
 lPf
 lPf
@@ -66023,7 +66052,7 @@ lPf
 lPf
 lPf
 lPf
-ybT
+gDl
 scP
 cij
 hPQ
