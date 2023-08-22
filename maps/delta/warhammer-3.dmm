@@ -1950,6 +1950,9 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "cod" = (
 /obj/effect/decal/cleanable/blood,
+/obj/machinery/light/stolb{
+	on = 1
+	},
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "coD" = (
@@ -5944,12 +5947,6 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/bridge/hallway)
-"gJT" = (
-/obj/item/trash/warfare_can/sardine{
-	pixel_y = 12
-	},
-/turf/simulated/floor/dirty,
-/area/cadiaoutpost/new_hive/hive_city)
 "gKh" = (
 /obj/effect/floor_decal/newcorner/cafe{
 	dir = 8
@@ -13235,6 +13232,7 @@
 /obj/item/stack/teeth/human{
 	pixel_y = -14
 	},
+/obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "oMj" = (
@@ -55215,7 +55213,7 @@ qQh
 bRy
 nRK
 oli
-eTh
+oli
 cod
 wJQ
 eTh
@@ -55467,7 +55465,7 @@ nRK
 nRK
 oQw
 oli
-gJT
+dqv
 fdj
 eTh
 nWQ
@@ -55719,7 +55717,7 @@ bRy
 nRK
 tvX
 oli
-lBD
+dqv
 piS
 oMg
 eTh
