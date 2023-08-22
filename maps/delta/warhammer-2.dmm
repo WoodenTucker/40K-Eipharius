@@ -2074,7 +2074,7 @@
 	dir = 8
 	},
 /obj/structure/railing,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "cki" = (
 /obj/machinery/disease2/antibodyanalyser,
@@ -3683,7 +3683,7 @@
 	dir = 8;
 	icon_state = "bulb1"
 	},
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "dKl" = (
 /obj/structure/table/rack,
@@ -4859,7 +4859,7 @@
 	maxhealth = 700
 	},
 /obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "eTh" = (
 /obj/structure/table/graf/rusty_table,
@@ -6675,7 +6675,7 @@
 	dir = 4
 	},
 /obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "gJR" = (
 /obj/structure/closet/hive/metal{
@@ -7690,7 +7690,7 @@
 "hNm" = (
 /obj/structure/catwalkrust/blocked,
 /obj/machinery/light/small/red,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "hOn" = (
 /obj/item/flame/candle/small{
@@ -11180,6 +11180,13 @@
 	},
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
+"kTE" = (
+/obj/effect/landmark{
+	name = "genestart"
+	},
+/obj/structure/catwalkrust/blocked,
+/turf/simulated/floor/tiled,
+/area/cadiaoutpost/new_hive/caves)
 "kVs" = (
 /obj/structure/bed/barrack,
 /obj/structure/bed/barrack1,
@@ -12997,7 +13004,7 @@
 	dir = 1
 	},
 /obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "mLY" = (
 /obj/effect/floor_decal/turf/bar2,
@@ -13616,7 +13623,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "npV" = (
 /obj/effect/floor_decal/newcorner/shaft/quarter{
@@ -13710,7 +13717,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "nvc" = (
 /obj/effect/floor_decal/industrial/mark,
@@ -18252,7 +18259,7 @@
 "rTP" = (
 /obj/structure/catwalkrust/blocked,
 /obj/structure/railing,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "rUY" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
@@ -21401,7 +21408,7 @@
 	dir = 1;
 	icon_state = "bulb1"
 	},
-/turf/simulated/floor/stone,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "veI" = (
 /turf/simulated/floor/fancyfloor/carpet/green{
@@ -22205,7 +22212,7 @@
 /area/cadiaoutpost/oa/shuttle/inquisition)
 "vVv" = (
 /obj/structure/catwalkrust/blocked,
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/service/inn)
 "vVP" = (
 /obj/structure/table/graf/rusty_table,
@@ -24152,11 +24159,7 @@
 /area/cadiaoutpost/oa/research/robotics)
 "xRh" = (
 /obj/structure/catwalkrust/blocked,
-/obj/machinery/light/small/red{
-	dir = 8;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/stone,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "xRy" = (
 /obj/effect/floor_decal/industrial/outline/grey,
@@ -24330,12 +24333,9 @@
 	},
 /area/cadiaoutpost/oa/security/barracks)
 "ybT" = (
+/obj/machinery/light/small/red,
 /obj/structure/catwalkrust/blocked,
-/obj/machinery/light/small/red{
-	dir = 1;
-	icon_state = "bulb1"
-	},
-/turf/simulated/floor/exoplanet/water/shallow/lightless,
+/turf/simulated/floor/tiled,
 /area/cadiaoutpost/new_hive/caves)
 "ybV" = (
 /obj/structure/table/rack,
@@ -52840,7 +52840,7 @@ lPf
 lPf
 lPf
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -53092,7 +53092,7 @@ lPf
 lPf
 lPf
 lPf
-lSR
+xRh
 tOB
 tOB
 tOB
@@ -53342,9 +53342,9 @@ lPf
 lPf
 lPf
 lPf
-lSR
+xRh
 gJH
-lSR
+xRh
 tpQ
 tOB
 slE
@@ -54090,8 +54090,8 @@ tOB
 tOB
 tOB
 tpQ
-lSR
-lSR
+xRh
+xRh
 hNm
 tpQ
 tOB
@@ -54342,9 +54342,9 @@ tpQ
 tOB
 tOB
 tpQ
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 tpQ
 tOB
 slE
@@ -54585,13 +54585,13 @@ tOB
 slE
 slE
 tOB
-xWa
-xWa
-xWa
-xWa
 xRh
-xWa
-xWa
+xRh
+xRh
+xRh
+dJO
+xRh
+xRh
 tOB
 tpQ
 lPf
@@ -54836,8 +54836,8 @@ tOB
 tOB
 slE
 tOB
-xWa
-xWa
+xRh
+xRh
 tpQ
 tOB
 tOB
@@ -55088,7 +55088,7 @@ tOB
 tOB
 slE
 tpQ
-xWa
+xRh
 tOB
 tOB
 tOB
@@ -55592,7 +55592,7 @@ tOB
 slE
 tOB
 tpQ
-xWa
+xRh
 tOB
 tOB
 tpQ
@@ -55602,9 +55602,9 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -55844,7 +55844,7 @@ tOB
 slE
 tOB
 tOB
-xWa
+xRh
 tpQ
 tpQ
 lPf
@@ -56096,7 +56096,7 @@ slE
 slE
 tOB
 tOB
-xWa
+xRh
 tOB
 tpQ
 lPf
@@ -56348,7 +56348,7 @@ slE
 tOB
 tOB
 tpQ
-xWa
+xRh
 tOB
 tpQ
 mRo
@@ -56600,10 +56600,10 @@ tOB
 tOB
 tOB
 tOB
-xWa
+xRh
 xWa
 oCQ
-lSR
+xRh
 lPf
 lPf
 tOB
@@ -57372,10 +57372,10 @@ tOB
 tOB
 tOB
 tOB
-lSR
-lSR
+xRh
+xRh
 oCQ
-lSR
+xRh
 lPf
 lPf
 tpQ
@@ -57615,7 +57615,7 @@ lPf
 lPf
 lPf
 lPf
-iQB
+ybT
 tpQ
 tOB
 tOB
@@ -57623,8 +57623,8 @@ tOB
 tpQ
 tOB
 tOB
-lSR
-lSR
+xRh
+xRh
 tOB
 tpQ
 lPf
@@ -57867,15 +57867,15 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
+xRh
 dJO
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 tOB
 tpQ
 tpQ
@@ -58120,7 +58120,7 @@ lPf
 lPf
 lPf
 lPf
-lSR
+xRh
 tpQ
 tpQ
 tpQ
@@ -58131,9 +58131,9 @@ tOB
 tpQ
 nSl
 oCQ
-lSR
-tBU
-lSR
+xRh
+kTE
+xRh
 oCQ
 nSl
 tpQ
@@ -58372,7 +58372,7 @@ npS
 lPf
 lPf
 lPf
-lSR
+xRh
 tOB
 tOB
 tOB
@@ -58619,12 +58619,12 @@ twM
 lPf
 lPf
 tpQ
-ybT
+vew
 rTP
 lPf
 lPf
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -58710,9 +58710,9 @@ tOB
 tOB
 wcj
 dID
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 gpl
 wcj
 tOB
@@ -58871,7 +58871,7 @@ twM
 lPf
 lXA
 tpQ
-lSR
+xRh
 rTP
 lPf
 lPf
@@ -58962,9 +58962,9 @@ tOB
 tOB
 wcj
 gpl
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 gDh
 wcj
 wcj
@@ -59123,12 +59123,12 @@ lPf
 lPf
 twM
 tpQ
-lSR
+xRh
 rTP
 lPf
 lPf
 lPf
-lSR
+xRh
 lPf
 rTx
 lPf
@@ -59145,7 +59145,7 @@ top
 top
 top
 mLR
-lSR
+xRh
 gpl
 gpl
 lPf
@@ -59375,12 +59375,12 @@ twM
 twM
 twM
 stj
-lSR
+xRh
 rTP
 lPf
 lPf
 lPf
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -59397,7 +59397,7 @@ top
 top
 top
 mLR
-lSR
+xRh
 gpl
 lPf
 lPf
@@ -59405,8 +59405,8 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -59627,12 +59627,12 @@ nHh
 lPf
 twM
 tpQ
-lSR
-lSR
+xRh
+xRh
 ckf
 lPf
 lPf
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -59649,7 +59649,7 @@ top
 top
 top
 mLR
-lSR
+xRh
 gpl
 gpl
 lPf
@@ -59657,8 +59657,8 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -59879,9 +59879,9 @@ twM
 lPf
 lPf
 tpQ
-ybT
-lSR
-lSR
+vew
+xRh
+xRh
 lPf
 lPf
 hNm
@@ -60133,10 +60133,10 @@ tpQ
 tpQ
 tpQ
 tpQ
-lSR
+xRh
 lPf
 lPf
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -60385,10 +60385,10 @@ tOB
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
 lPf
-lSR
+xRh
 axL
 lSR
 lSR
@@ -60637,10 +60637,10 @@ tOB
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
-lSR
-lSR
+xRh
+xRh
 tpQ
 tpQ
 tpQ
@@ -60651,9 +60651,9 @@ lPf
 tpQ
 ljC
 oCQ
-lSR
-tBU
-lSR
+xRh
+kTE
+xRh
 oCQ
 ljC
 tpQ
@@ -60889,9 +60889,9 @@ tOB
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -61141,9 +61141,9 @@ tOB
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -61393,9 +61393,9 @@ slE
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -61645,9 +61645,9 @@ slE
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -61897,8 +61897,8 @@ slE
 tOB
 tOB
 tpQ
-lSR
-lSR
+xRh
+xRh
 hNm
 tpQ
 tOB
@@ -61989,8 +61989,8 @@ gpl
 gpl
 gpl
 gpl
-lSR
-lSR
+xRh
+xRh
 gpl
 gpl
 gpl
@@ -62149,9 +62149,9 @@ slE
 tOB
 tOB
 tpQ
-lSR
+xRh
 lPf
-lSR
+xRh
 tpQ
 slE
 slE
@@ -62241,8 +62241,8 @@ lPf
 wcj
 wcj
 gpl
-lSR
-lSR
+xRh
+xRh
 gpl
 tOB
 wcj
@@ -62717,8 +62717,8 @@ tOB
 wcj
 kob
 gpl
-lSR
-lSR
+xRh
+xRh
 gpl
 tOB
 tOB
@@ -62969,8 +62969,8 @@ tOB
 tOB
 tOB
 gpl
-lSR
-lSR
+xRh
+xRh
 gpl
 tOB
 tOB
@@ -64501,8 +64501,8 @@ vWX
 vWX
 vWX
 vWX
-lSR
-lSR
+xRh
+xRh
 lPf
 tOB
 gpl
@@ -64753,8 +64753,8 @@ gpl
 gpl
 gpl
 gpl
-lSR
-lSR
+xRh
+xRh
 wcj
 tOB
 wcj
@@ -64994,8 +64994,8 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -65005,8 +65005,8 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -65015,7 +65015,7 @@ lPf
 wcj
 lPf
 lPf
-lSR
+xRh
 wcj
 lFF
 kIF
@@ -65246,8 +65246,8 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
+xRh
+xRh
 lPf
 tKI
 tKI
@@ -65258,7 +65258,7 @@ tKI
 tKI
 tKI
 wcj
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -65267,7 +65267,7 @@ lPf
 wcj
 lPf
 lPf
-lSR
+xRh
 wcj
 wcj
 wcj
@@ -65510,7 +65510,7 @@ lDW
 vce
 tKI
 inE
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -65519,7 +65519,7 @@ lPf
 lPf
 lPf
 lPf
-lSR
+xRh
 hqo
 hqo
 hqo
@@ -65762,7 +65762,7 @@ dFD
 lDW
 nDV
 inE
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -65771,7 +65771,7 @@ lPf
 wcj
 lPf
 lPf
-lSR
+xRh
 hqo
 gEr
 ttL
@@ -66014,7 +66014,7 @@ lDW
 lDW
 fMh
 inE
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -66023,7 +66023,7 @@ lPf
 lPf
 lPf
 lPf
-iQB
+ybT
 scP
 cij
 hPQ
@@ -66266,16 +66266,16 @@ dFD
 lDW
 nDV
 inE
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
 hqo
 rMB
 hGu
@@ -66518,7 +66518,7 @@ dFD
 dFD
 tKI
 inE
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -66769,8 +66769,8 @@ lDW
 dFD
 dFD
 tKI
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -67021,8 +67021,8 @@ dFD
 rQA
 lDW
 tKI
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -67273,8 +67273,8 @@ kam
 tKI
 tKI
 tKI
-lSR
-lSR
+xRh
+xRh
 lPf
 lPf
 lPf
@@ -67525,14 +67525,14 @@ lDW
 bax
 exL
 tKI
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
 gJH
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 khV
 khV
 khV
@@ -67777,14 +67777,14 @@ dFD
 lDW
 uLj
 tKI
-lSR
-lSR
+xRh
+xRh
 lPf
 hqo
 scP
 hqo
 hqo
-lSR
+xRh
 khV
 khV
 wcj
@@ -68029,14 +68029,14 @@ lDW
 lDW
 bax
 tKI
-lSR
-lSR
+xRh
+xRh
 lPf
 hqo
 aWx
 dUg
 hqo
-lSR
+xRh
 khV
 wcj
 wcj
@@ -68288,7 +68288,7 @@ hqo
 sby
 vzi
 hqo
-lSR
+xRh
 khV
 wcj
 tpQ
@@ -68540,7 +68540,7 @@ hqo
 hqo
 hqo
 hqo
-lSR
+xRh
 khV
 tpQ
 tpQ
@@ -68792,7 +68792,7 @@ lPf
 lPf
 lPf
 lPf
-lSR
+xRh
 khV
 tpQ
 tOB
@@ -69041,10 +69041,10 @@ kbH
 sKx
 tKI
 khV
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
 khV
 tOB
 tOB
@@ -69293,7 +69293,7 @@ tKI
 tKI
 tKI
 khV
-lSR
+xRh
 tOB
 tOB
 tOB
@@ -69545,7 +69545,7 @@ khV
 khV
 khV
 khV
-lSR
+xRh
 tOB
 tOB
 tOB
@@ -69771,8 +69771,8 @@ tOB
 tOB
 tOB
 gpl
-lSR
-lSR
+xRh
+xRh
 gpl
 wcj
 tOB
@@ -69794,10 +69794,10 @@ lDW
 uaA
 tKI
 khV
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
 tpQ
 tOB
 tOB
@@ -70023,8 +70023,8 @@ wcj
 tOB
 wcj
 gpl
-lSR
-lSR
+xRh
+xRh
 gpl
 wcj
 wcj
@@ -70046,7 +70046,7 @@ lDW
 baD
 tKI
 khV
-lSR
+xRh
 tOB
 tpQ
 tpQ
@@ -70298,7 +70298,7 @@ tKI
 tKI
 tKI
 khV
-lSR
+xRh
 tpQ
 kIF
 kIF
@@ -70550,7 +70550,7 @@ khV
 khV
 khV
 khV
-lSR
+xRh
 tpQ
 kIF
 kIF
@@ -70801,8 +70801,8 @@ tpQ
 khV
 khV
 khV
-lSR
-lSR
+xRh
+xRh
 tpQ
 kIF
 kIF
@@ -71052,8 +71052,8 @@ tOB
 tpQ
 khV
 khV
-lSR
-lSR
+xRh
+xRh
 tpQ
 tpQ
 tpQ
@@ -71304,7 +71304,7 @@ tOB
 hqo
 lPf
 lPf
-lSR
+xRh
 hqo
 tOB
 tOB
@@ -71556,7 +71556,7 @@ tOB
 hqo
 lPf
 lPf
-lSR
+xRh
 hqo
 tOB
 tpQ
@@ -71808,7 +71808,7 @@ tOB
 hqo
 lPf
 lPf
-lSR
+xRh
 hqo
 tOB
 tpQ
@@ -72060,7 +72060,7 @@ tpQ
 tpQ
 hqo
 lPf
-lSR
+xRh
 tpQ
 tpQ
 tpQ
@@ -72312,12 +72312,12 @@ tpQ
 lPf
 lPf
 lPf
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
 tpQ
 tpQ
 tpQ
@@ -72569,9 +72569,9 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 tpQ
 tpQ
 tOB
@@ -72823,8 +72823,8 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
+xRh
+xRh
 tpQ
 tOB
 tOB
@@ -73076,7 +73076,7 @@ wcj
 wcj
 lPf
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -73328,7 +73328,7 @@ twM
 wcj
 wcj
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -73580,7 +73580,7 @@ twM
 wcj
 wcj
 wcj
-lSR
+xRh
 tpQ
 tpQ
 tpQ
@@ -73832,12 +73832,12 @@ wcj
 wcj
 twM
 wcj
-lSR
-lSR
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
+xRh
+xRh
 jqp
 jqp
 grg
@@ -74085,7 +74085,7 @@ twM
 gOG
 wcj
 lPf
-lSR
+xRh
 lPf
 lPf
 lPf
@@ -74337,7 +74337,7 @@ twM
 twM
 wcj
 lPf
-lSR
+xRh
 tpQ
 tpQ
 tpQ
@@ -74589,7 +74589,7 @@ twM
 iml
 wcj
 lPf
-lSR
+xRh
 tpQ
 tOB
 tpQ
@@ -74841,7 +74841,7 @@ wcj
 wcj
 wcj
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -75093,7 +75093,7 @@ twM
 wcj
 wcj
 lPf
-lSR
+xRh
 tpQ
 tOB
 tOB
@@ -75343,9 +75343,9 @@ twM
 twM
 wcj
 wcj
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 tpQ
 tpQ
 tpQ
@@ -75594,8 +75594,8 @@ wcj
 wcj
 wcj
 wcj
-lSR
-lSR
+xRh
+xRh
 tpQ
 tpQ
 tpQ
@@ -75846,7 +75846,7 @@ wcj
 lPf
 lPf
 lPf
-lSR
+xRh
 tpQ
 tpQ
 tOB
@@ -76095,10 +76095,10 @@ lPf
 lPf
 lPf
 lPf
-lSR
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
+xRh
 tpQ
 tOB
 tOB
@@ -76345,9 +76345,9 @@ tpQ
 lPf
 lPf
 lPf
-lSR
-lSR
-lSR
+xRh
+xRh
+xRh
 tpQ
 tpQ
 tpQ
