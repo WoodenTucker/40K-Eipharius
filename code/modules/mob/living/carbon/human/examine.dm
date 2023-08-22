@@ -339,7 +339,10 @@
 	if(skinned == 1)
 		msg += "[T.He] [T.is] mangled, someone or something has torn the skin from their corpse!\n"
 	if(user.mind.special_role == "Nurgle Cultist" || user.mind.special_role == "Khorne Cultist" || user.mind.special_role == "Slaanesh Cultist" || user.mind.special_role == "Tzeentch Cultist")
-		msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
+		if(prob(8))
+			msg += "<span class='warning'>[T.He] [T.is] similar to you somehow but you can't quite figure out how...\n</span>"
+		else
+			return
 	if(warfare_faction == TYRANIDS)
 		msg += "A horrifying xeno!\n"
 

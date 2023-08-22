@@ -111,7 +111,7 @@
 		return TRUE
 
 	if(href_list["withdraw"])
-		var/withdrawamt = round(input(usr, "", "Withdraw thrones") as null|num)
+		var/withdrawamt = round(input(usr, "", "Withdraw money") as null|num)
 		if(withdrawamt > balance)
 			return FALSE
 		if(withdrawamt <= 0)
@@ -217,7 +217,6 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
 		GLOB.thrones += 10 //adds crowns to da counter
-		visible_message("[usr] deposits a $10 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
 		return
@@ -225,7 +224,6 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
 		GLOB.thrones += 5 //adds crowns to da counter
-		visible_message("[usr] deposits a $5 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
 		return
@@ -233,7 +231,6 @@
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN) //lets not spam
 		O.amount -= 1 //takes a shekel from the stack
 		GLOB.thrones += 1 //adds crowns to da counter
-		visible_message("[usr] deposits a $1 throne coin into the console.")
 		playsound(usr, 'sound/effects/coin_ins.ogg', 50, 0, -1)
 		O.update_icon() //so coins in hand update
 		return
@@ -258,7 +255,7 @@
 		return
 	user.set_machine(src)
 	var/dat = "<B>Imperial Tithe:</B><BR>"
-	dat += "[GLOB.thrones] throne balance<BR>"
+	dat += "[GLOB.thrones] Reál balance<BR>"
 	dat += "<B>Tithe owed to the Imperium</B></BR>"
 	dat += "<A href='byond://?src=\ref[src];tithe=1'>Imperial Tithe (150)</A><BR>"
 	dat += "<B>Set the tax rate:</B></BR>"
@@ -356,7 +353,7 @@
 
 	user.set_machine(src)
 	var/dat = "<B>Imperial Bounties:</B><BR>"
-	dat += "[GLOB.thrones] throne balance<BR>"
+	dat += "[GLOB.thrones] Reál balance<BR>"
 	dat += "<B>Current Bounties</B></BR>"
 	dat += "Tau Rings (50/5):</BR>"
 	dat += "Kroot Tags (50/5):</BR>"
@@ -421,7 +418,7 @@
 		return
 	user.set_machine(src)
 	var/dat = "<B>Imperial Requisition:</B><BR>"
-	dat += "[GLOB.thrones] throne balance<BR>"
+	dat += "[GLOB.thrones] Reál balance<BR>"
 	dat += "<B>Thank you for your loyalty to the Imperium</B></BR>"
 	dat += "<B>Available units:</B></BR>"
 	dat += "<B>Common mercenaries</B><HR>"

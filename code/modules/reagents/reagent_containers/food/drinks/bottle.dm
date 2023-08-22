@@ -545,3 +545,193 @@
 	New()
 		..()
 		reagents.add_reagent(/datum/reagent/ethanol/amasec/mjod, 100)
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos
+	name = "khorne drink"
+	desc = "Just by looking at this glass, it makes you want to FUCKING KILL SOMEONE WITH YOUR BARE, FUCKING, HANDS!"
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "khorne"
+	filling_states = "20;40;60;80;100"
+	volume = 50
+	possible_transfer_amounts = "5;10;15;25"
+	rim_pos = "y=25;x_left=12;x_right=21"
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/New()
+	..()
+	reagents.add_reagent(/datum/reagent/adrenaline, 10)
+	reagents.add_reagent(/datum/reagent/iron, 10)
+	reagents.add_reagent(/datum/reagent/blood, 30)
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh
+	name = "slanneshi drink"
+	desc = "A drink that really lifts that arousing mood for some reason the more you look at it."
+	icon_state = "slaanesh"
+	filling_states = "20;40;60;80;100"
+	volume = 50
+	possible_transfer_amounts = "5;10;15;25"
+	rim_pos = "y=25;x_left=12;x_right=21"
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/slannesh/New()
+	..()
+	reagents.add_reagent(/datum/reagent/psilocybin, 10)
+	reagents.add_reagent(/datum/reagent/mindbreaker, 10)
+	reagents.add_reagent(/datum/reagent/space_drugs, 10)
+	reagents.add_reagent(/datum/reagent/methylphenidate, 10)
+	reagents.add_reagent(/datum/reagent/adrenaline, 10)
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/tzeench
+	name = "tzeench drink"
+	desc = "A drink made just as planned in the grand scheme of things."
+	icon_state = "tzeench"
+	filling_states = "20;40;60;80;100"
+	volume = 50
+	possible_transfer_amounts = "5;10;15;25"
+	rim_pos = "y=25;x_left=12;x_right=21"
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/tzeench/New()
+	..()
+	reagents.add_reagent(/datum/reagent/mindbreaker, 30)
+	reagents.add_reagent(/datum/reagent/alkysine, 10)
+	reagents.add_reagent(/datum/reagent/tricordrazine, 10)
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/nurgle
+	name = "nurgle drink"
+	desc = "The smell is nauseating, and whatever was thrown on it really is sickening to smell."
+	icon_state = "nurgle"
+	filling_states = "20;40;60;80;100"
+	volume = 50
+	possible_transfer_amounts = "5;10;15;25"
+	rim_pos = "y=25;x_left=12;x_right=21"
+
+/obj/item/reagent_containers/food/drinks/glass2/chaos/nurgle/New()
+	..()
+	reagents.add_reagent(/datum/reagent/mutagen, 10)
+	reagents.add_reagent(/datum/reagent/ethanol/booger, 10)
+	reagents.add_reagent(/datum/reagent/toxin, 30)
+
+/obj/item/reagent_containers/food/drinks/flask/goblet
+	name = "silver goblet"
+	desc = "A goblet fitting for a noble, to drink something more expensive than the goblet itself."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "goblet_silver"
+	volume = 60
+	center_of_mass = "x=17;y=7"
+
+/obj/item/reagent_containers/food/drinks/flask/goblet/gold
+	name = "gold goblet"
+	desc = "A goblet fitting for a noble, to drink something more expensive than the goblet itself and the servant who's filling it."
+	icon = 'icons/map_project/fluff_items.dmi'
+	icon_state = "goblet_gold"
+	volume = 60
+	center_of_mass = "x=17;y=7"
+
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery
+	name = "High Quality Moonshine"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "moonshine"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/moonshine, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/green_rush
+	name = "Green Rush"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "greenrush"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/greenrush, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/blue_rush
+	name = "Blue Rush"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "bluerush"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/bluerush, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/oak_scream
+	name = "Oak Scream"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "oak_scream"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/oak_scream, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/southern_blood
+	name = "Southern Blood"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "southernblood"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/southernblood, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/ancient_eye
+	name = "Ancient Eye"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "ancienteye"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/ancienteye, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/thyme_bolt
+	name = "Thyme Bolt"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "thymebolt"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/thymebolt, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/red_score
+	name = "RedScore"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "redscore"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/redscore, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/spirit_bear
+	name = "SpiritBear"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "spiritbear"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/spiritbear, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/old_vinland
+	name = "Old Vinland"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "oldvinland"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/oldvinland, 100)
+
+/obj/item/reagent_containers/food/drinks/bottle/distillery/depressing_flash
+	name = "Depressing Flash"
+	desc = "A nice big jug of moonshine, fitting for poor, homeless, peasants, and specially farmers."
+	icon_state = "depflash"
+	icon = 'icons/map_project/farm_content.dmi'
+	center_of_mass = "x=17;y=3"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/ethanol/depressing_flash, 100)

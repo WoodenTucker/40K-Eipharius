@@ -1,4 +1,3 @@
-
 //Dirt!
 /turf/simulated/floor/dirty
 	name = "dirt" //"snowy dirt"

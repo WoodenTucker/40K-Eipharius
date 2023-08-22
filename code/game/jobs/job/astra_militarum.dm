@@ -142,8 +142,8 @@
 
 /datum/job/ig/guardsman/sharpshooter // can i be fucked renaming every /sharpshooter into /spec? no. remember to just call /sharpshooter/[regiment] instead
 	title = "Imperial Guard Specialist"
-	total_positions = 2
-	spawn_positions = 2
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = FALSE
 	outfit_type = /decl/hierarchy/outfit/job/sharpshooter
 	auto_rifle_skill = 10
@@ -202,8 +202,8 @@ datum/job/ig/bullgryn
 	title = "Bullgryn"
 	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
 	selection_color = "#33813A"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	supervisors = "Da Emprah. Da Commesar, and da little on's!"
 	outfit_type = /decl/hierarchy/outfit/job/bullgryn
 	latejoin_at_spawnpoints = TRUE
@@ -455,8 +455,8 @@ datum/job/ig/bullgryn
 
 /datum/job/ig/commissar
 	title = "Commissar"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	head_position = 1
 	selection_color = "#23742a"
 	department_flag = SEC
@@ -745,13 +745,12 @@ datum/job/ig/bullgryn
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = null
+	r_pocket = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/lasgun
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -772,13 +771,13 @@ datum/job/ig/bullgryn
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
-	r_pocket = /obj/item/device/flashlight/lantern
+	r_pocket = /obj/item/storage/box/coin
+	r_hand = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/lasgun
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -801,12 +800,12 @@ datum/job/ig/bullgryn
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/triplex
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -825,6 +824,7 @@ datum/job/ig/bullgryn
 	shoes = /obj/item/clothing/shoes/jackboots/krieg
 	head = /obj/item/clothing/head/helmet/krieghelmet
 	mask = /obj/item/clothing/mask/gas/krieg
+	r_hand = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
@@ -832,7 +832,6 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/energy/las/lasgun/lucius
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel/krieg = 1
@@ -854,10 +853,12 @@ datum/job/ig/bullgryn
 	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
+	r_hand = /obj/item/storage/box/coin
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -872,6 +873,7 @@ datum/job/ig/bullgryn
 	shoes = /obj/item/clothing/shoes/jackboots/cadian
 	mask = null
 	glasses = null
+	r_hand = /obj/item/storage/box/coin
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/automatic/autogrim
@@ -898,6 +900,7 @@ datum/job/ig/bullgryn
 	l_ear = /obj/item/device/radio/headset/red_team
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/clothing/gloves/combat/cadian
+	r_hand = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/las/hotshot //Hotshots are annoyingly common, makes them standout more.
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
@@ -921,12 +924,12 @@ datum/job/ig/bullgryn
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/red_team
 	suit_store = /obj/item/gun/energy/pulse/plasma/rifle
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -947,13 +950,13 @@ datum/job/ig/bullgryn
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	r_pocket =  /obj/item/ammo_magazine/box/a556/mg08/ms
 	suit_store = /obj/item/gun/projectile/automatic/heavystubber
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08/ms = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
@@ -970,13 +973,13 @@ datum/job/ig/bullgryn
 	mask = /obj/item/clothing/mask/gas/krieg/grenadier
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/hotshot/krieg
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
-	/obj/item/cell/lasgun/hotshot = 2,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/shovel/krieg = 1
@@ -995,12 +998,12 @@ datum/job/ig/bullgryn
 	glasses = null
 	suit_store = /obj/item/gun/projectile/automatic/flamer
 	l_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	r_pocket = /obj/item/device/flashlight/lantern
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
@@ -1046,6 +1049,7 @@ datum/job/ig/bullgryn
 	head = /obj/item/clothing/head/helmet/krieghelmet/medicae
 	mask = /obj/item/clothing/mask/gas/krieg/medicae
 	r_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	l_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -1056,6 +1060,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1073,16 +1078,17 @@ datum/job/ig/bullgryn
 	head = /obj/item/clothing/head/helmet/medicae
 	r_pocket = /obj/item/storage/box/ifak
 	l_pocket = /obj/item/cell/lasgun
+	r_hand = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = /obj/item/device/radio/headset/red_team
 	r_ear = null
 	backpack_contents = list(
 	/obj/item/cell/lasgun = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
-	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
 	/obj/item/clothing/mask/gas/half/cadianrespirator = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/clothing/glasses/cadiangoggles = 1
 	)
 	suit_store = /obj/item/gun/energy/las/lasgun
@@ -1102,6 +1108,7 @@ datum/job/ig/bullgryn
 	belt = /obj/item/storage/belt/medical/full
 	head = /obj/item/clothing/head/valushanka/medicae
 	r_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	l_pocket = /obj/item/device/flashlight/lantern
 	id_type = /obj/item/card/id/medical/paramedic
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -1110,6 +1117,7 @@ datum/job/ig/bullgryn
     /obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 	flags = OUTFIT_HAS_BACKPACK|OUTFIT_EXTENDED_SURVIVAL
@@ -1130,6 +1138,7 @@ datum/job/ig/bullgryn
 	mask = /obj/item/clothing/mask/gas/half/cadianrespirator
 	glasses = /obj/item/clothing/glasses/cadiangoggles
 	l_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas
 	neck = /obj/item/reagent_containers/food/drinks/canteen
@@ -1138,6 +1147,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1156,6 +1166,7 @@ datum/job/ig/bullgryn
 	mask = /obj/item/clothing/mask/gas/krieg
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	r_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/storage/box/coin
 	l_pocket = /obj/item/storage/box/ifak
 	suit_store = /obj/item/gun/energy/las/lasgun/longlas/krieg
 	backpack_contents = list(
@@ -1164,6 +1175,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -1179,12 +1191,14 @@ datum/job/ig/bullgryn
 	mask = null
 	glasses = null
 	l_pocket = /obj/item/storage/box/ifak
+	r_hand = /obj/item/storage/box/coin
 	l_hand = /obj/item/device/binoculars
 	r_pocket =  /obj/item/ammo_casing/a145/apds
 	suit_store = /obj/item/gun/projectile/heavysniper
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	backpack_contents = list(
 	/obj/item/storage/box/sniperammo/apds = 4,
+	/obj/item/handcuffs = 1,
 	/obj/item/stack/thrones2/five = 1
 	)
 
@@ -1206,6 +1220,7 @@ datum/job/ig/bullgryn
 	glasses = /obj/item/clothing/glasses/cadiangoggles/elite
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
+	r_hand = /obj/item/storage/box/coin
 	suit_store = /obj/item/gun/energy/pulse/plasma/pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/red_team
@@ -1235,6 +1250,7 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/launcher/rcl_rifle
 	l_pocket = /obj/item/storage/box/ifak
 	r_pocket = /obj/item/device/flashlight/lantern
+	l_hand = /obj/item/storage/box/coin
 	r_hand = /obj/item/gun/energy/las/laspistol/militarum/lucius
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
@@ -1243,6 +1259,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -1259,13 +1276,15 @@ datum/job/ig/bullgryn
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = /obj/item/gun/projectile/bolter_pistol // might be too op not sure
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	r_hand = /obj/item/storage/box/coin
 	l_ear = /obj/item/device/radio/headset/red_team
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1
 	)
 
 /decl/hierarchy/outfit/job/sergeant/valhallan
@@ -1280,12 +1299,14 @@ datum/job/ig/bullgryn
 	r_pocket = /obj/item/device/flashlight/lantern
 	suit_store = null // rifle maybe? not sure
 	l_ear = /obj/item/device/radio/headset/red_team
+	r_hand = /obj/item/storage/box/coin
 	neck = /obj/item/reagent_containers/food/drinks/canteen/valhallan
 	backpack_contents = list(
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1
 	)
 
 
@@ -1307,6 +1328,7 @@ datum/job/ig/bullgryn
 	suit_store = /obj/item/gun/projectile/bolter_pistol
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	l_ear = /obj/item/device/radio/headset/heads/hos
+	r_hand = /obj/item/storage/box/coin
 	backpack_contents = list(
 	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
 	/obj/item/grenade/smokebomb = 1,
@@ -1315,6 +1337,7 @@ datum/job/ig/bullgryn
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/handcuffs = 1
 	)
 
 	pda_slot = null

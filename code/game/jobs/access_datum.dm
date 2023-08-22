@@ -521,7 +521,7 @@
 	id = access_tau
 	desc = "Tau Ship"
 
-/var/const/access_ganger = 210
+/var/const/access_ganger = 355
 /datum/access/ganger
 	id = access_ganger
 	desc = "ganger Access"

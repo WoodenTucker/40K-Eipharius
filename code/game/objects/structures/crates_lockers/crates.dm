@@ -486,8 +486,6 @@ obj/structure/closet/crate
 
 /obj/structure/closet/crate/meat/New()
 	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
-	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
-	new /obj/item/reagent_containers/food/snacks/meat/rat_meat(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)
 	new /obj/item/reagent_containers/food/snacks/meat/grox(src)

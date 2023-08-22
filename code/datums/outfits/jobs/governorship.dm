@@ -9,6 +9,7 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/heads/rt
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
@@ -43,11 +44,11 @@
 	back = /obj/item/storage/backpack/satchel/warfare
 	belt = /obj/item/toy/katana/strong
 	shoes = /obj/item/clothing/shoes/jackboots/noble
+	r_pocket = /obj/item/storage/box/coin
 	id_type = /obj/item/card/id/gold
 	pda_type = null
 	pda_slot = null
 	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/twenty = 1,

@@ -37,7 +37,7 @@
 		H.h_style = "Bald" //never seen an ork wif hair
 	if(H.f_style)//orks dont have beards
 		H.f_style = "shaved"
-			H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
+		H.update_eyes()	//hacky fix, i don't care and i'll never ever care (this fixs the weird grey vision shit when placing people in a new mob)
 	return ..()
 
 

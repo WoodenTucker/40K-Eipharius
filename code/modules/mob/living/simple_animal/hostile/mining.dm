@@ -9,7 +9,7 @@
 	emote_hear = list("beeps","grumbles","buzzes")
 	emote_see = list("stares aggresively")
 	speak_chance = 1
-	turns_per_move = 5
+	turns_per_move = 15
 	see_in_dark = 6
 	response_help  = "touches"
 	response_disarm = "shoves aside"

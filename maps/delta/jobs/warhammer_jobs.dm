@@ -17,6 +17,7 @@
 	/datum/job/ig/guardsman/sniper,
 	/datum/job/ig/guardsman/sharpshooter,
 	/datum/job/ig/medicae,
+	/datum/job/villagemedicae,
 	/datum/job/ig/guardsman,
 	/datum/job/ig/bullgryn,
 	/datum/job/ig/whiteshield,

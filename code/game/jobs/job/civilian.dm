@@ -115,7 +115,7 @@
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 
 // Farmer
-/*
+
 /datum/job/hydro
 	title = "Farmer"
 	department = "Service"
@@ -149,7 +149,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
-*/
+
 // Janitor Servitor
 
 /datum/job/janitor
@@ -192,8 +192,8 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for cleaning and maintaining the outpost. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
+*/
 
-// Undertaker
 /mob/living/proc/assign_child_quirk()
 	if(prob(75))//75% of not choosing a quirk at all.
 		return
@@ -215,8 +215,8 @@
 	department = "Service"
 	department_flag = CIV
 	social_class = SOCIAL_CLASS_MIN
-	total_positions = 6 // noob greytider role.
-	spawn_positions = 6
+	total_positions = 2 // noob greytider role.
+	spawn_positions = 2
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 0
 	supervisors = "the Ecclesiarchy."
@@ -232,12 +232,12 @@
 	lmg_skill = 2
 	smg_skill = 2
 	species_role = "Child"
-	cultist_chance = 20
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
 		..()
-		H.add_stats(rand(6,12), rand(6,12), rand(6,12), rand(10,14))
+		H.add_stats(rand(6,12), rand(18,19), rand(6,12), rand(10,14))
 		H.add_skills(rand(6,9),rand(3,6),5,rand(6,7),6)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
@@ -246,4 +246,3 @@
 		H.assign_child_quirk()
 		H.set_trait(new/datum/trait/death_tolerant())
 		to_chat(H, "<span class='notice'><b><font size=3>You are a war orphan, found and taken in by the generous Deacon you owe him your life. However, you must earn your keep. </font></b></span>")
-*/

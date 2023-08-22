@@ -64,11 +64,11 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "cane_sword"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	block_chance = 50
-	force = 30
-	armor_penetration = 10
+	block_chance = 40
+	force = 32
+	armor_penetration = 20
+	weapon_speed_delay = 7
 	sharp = 1
-	edge = 1
 	w_class = ITEM_SIZE_NORMAL
 	item_state = "sabre"
 	name = "cane sword"
