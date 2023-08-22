@@ -2028,6 +2028,9 @@
 /obj/effect/floor_decal/newcorner/teal{
 	dir = 1
 	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "farmers key"
+	},
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -2247,11 +2250,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/gatehouse)
 "cDu" = (
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_access = list();
-	name = "Grox Barn";
-	req_one_access = list(230,211)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -3858,11 +3857,7 @@
 /turf/simulated/floor/tiled,
 /area/cadiaoutpost/oa/bridge/hallway)
 "eAY" = (
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_access = list();
-	name = "Grox Barn";
-	req_one_access = list(230,211)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/darksteel_floor{
 	dir = 4
 	},
@@ -4873,11 +4868,9 @@
 	anchored = 1
 	},
 /obj/item/card/id/ring/disgracedmedicae{
-	access = list(212);
 	name = "farmers key"
 	},
 /obj/item/card/id/ring/disgracedmedicae{
-	access = list(212);
 	name = "farmers key"
 	},
 /obj/random/loot/randomitemtown,
@@ -5948,9 +5941,9 @@
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gJT" = (
-/obj/structure/hivedecor/statue8,
-/turf/simulated/floor/grass/dark,
-/area/cadiaoutpost/oa/bridge/hallway)
+/obj/machinery/door/unpowered/inn,
+/turf/simulated/floor/factory_floor,
+/area/cadiaoutpost/oa/farm)
 "gKh" = (
 /obj/effect/floor_decal/newcorner/cafe{
 	dir = 8
@@ -9239,6 +9232,10 @@
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
+"khg" = (
+/obj/structure/hivedecor/statue8,
+/turf/simulated/floor/grass/dark,
+/area/cadiaoutpost/oa/bridge/hallway)
 "kiA" = (
 /obj/machinery/door/unpowered/administratum{
 	maxhealth = 3000;
@@ -10902,6 +10899,9 @@
 	},
 /obj/item/ammo_box/shotgun,
 /obj/item/gun/projectile/shotgun/doublebarrel,
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "farmers key"
+	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/farm)
 "lSw" = (
@@ -11430,11 +11430,7 @@
 	},
 /area/cadiaoutpost/oa/engineering)
 "mEn" = (
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_access = list();
-	name = "the farmhouse";
-	req_one_access = list(230,211)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/darkwood/rotten,
 /area/cadiaoutpost/oa/farm)
 "mFi" = (
@@ -15896,11 +15892,7 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "rSa" = (
-/obj/machinery/door/unpowered/inn/berryfarm{
-	req_access = list();
-	name = "Grox Barn";
-	req_one_access = list(230,211)
-	},
+/obj/machinery/door/unpowered/inn,
 /turf/simulated/floor/darksteel_floor,
 /area/cadiaoutpost/oa/groxpen)
 "rSw" = (
@@ -16750,6 +16742,13 @@
 	icon_state = "white1"
 	},
 /area/cadiaoutpost/oa/engineering)
+"sOV" = (
+/obj/structure/table/graf/rusty_table,
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "farmers key"
+	},
+/turf/simulated/floor/darkwood/rotten,
+/area/cadiaoutpost/oa/farm)
 "sPu" = (
 /obj/structure/sink{
 	dir = 4;
@@ -19331,6 +19330,17 @@
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
+"vDo" = (
+/obj/effect/floor_decal/newcorner/shaft{
+	dir = 8
+	},
+/obj/item/card/id/ring/disgracedmedicae{
+	name = "farmers key"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/farm)
 "vDv" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled{
@@ -54078,7 +54088,7 @@ iDo
 mZK
 mZK
 iDo
-gJT
+khg
 xku
 fvD
 jeW
@@ -54101,7 +54111,7 @@ irU
 jeW
 bpe
 iUW
-gJT
+khg
 iDo
 mOl
 mOl
@@ -69457,7 +69467,7 @@ aLk
 mQD
 lOQ
 lOQ
-gbl
+gJT
 lOQ
 lOQ
 lOQ
@@ -71225,7 +71235,7 @@ knZ
 acP
 lOQ
 aLx
-aLx
+vDo
 emg
 tlC
 lOQ
@@ -72483,7 +72493,7 @@ xGb
 xGb
 xGb
 vvz
-eOw
+sOV
 xGb
 qEv
 aLk
@@ -73235,8 +73245,8 @@ lOQ
 lOQ
 lOQ
 lOQ
-gbl
-gbl
+gJT
+gJT
 lOQ
 pcz
 pcz
