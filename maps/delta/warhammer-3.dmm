@@ -8617,10 +8617,10 @@
 /area/cadiaoutpost/oa/service/hab/inside)
 "jBo" = (
 /obj/machinery/door/blast/id_door{
-	id = "inq_hideout";
-	name = "Alpha";
-	maxhealth = 8500;
-	req_access = list(302)
+	req_access = list(302);
+	name = "Bradigan's Lair";
+	id = "inq_interior";
+	maxhealth = 9000
 	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/gma/inquisitoracolyte)
