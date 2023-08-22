@@ -75,8 +75,6 @@
 /obj/item/clothing/ring/reagent/sleepy/nid
 	name = "nid stinger"
 	desc = "A disgusting stinger covered in venom."
-	icon_state = "catachanfang"
-	item_state = "catachanfang"
 	color = "#292929"
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
 

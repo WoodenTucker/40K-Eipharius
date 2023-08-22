@@ -26,6 +26,7 @@
 	/mob/living/carbon/human/genestealer/proc/corrosive_acid,
 	/mob/living/carbon/human/genestealer/proc/gsheal,
 	/mob/living/carbon/human/genestealer/proc/givestealerstats,
+	/mob/living/carbon/human/genestealer/proc/stinger,
 	 )
 	slowdown = -0.5
 	unarmed_types = list(
