@@ -1,6 +1,7 @@
 //Here is where the acutal functions act upon our datums, includes the initial switch statement for finding our specific little ritual :) - wel
 
 
+
 /mob/living/proc/find_and_begin_ritual(phrase, var/mob/ritual_leader)
 	var/cleaned_phrase = lowertext(trim(phrase)) //trims the devil white space and puts our text to lowerspace
 	var/datum/current_ritual = new /datum/ritual //we will set our ritual using the switch
@@ -14,10 +15,8 @@
 	switch(cleaned_phrase)
 		if("emperor preserve us")
 			current_ritual = new /datum/ritual/preserve_us //attaches a fresh datum
-			to_chat(ritual_leader, "I see your ritual beginning! [current_ritual]");
 		if("holy emperor you have given us your saints to purge wickedness across the stars i call upon them now to reveal the truth")
 			current_ritual = new /datum/ritual/invoke_the_saints
-			to_chat(ritual_leader, "I see your ritual beginning! [current_ritual]");
 		else
 			to_chat(ritual_leader, "Failed to find an adequate ritual... (Report this as a bug to jannies)")
 			return
@@ -32,22 +31,21 @@
 /mob/living/proc/run_ritual(var/datum/ritual/current_ritual, var/mob/living/carbon/ritual_leader)
 
 
-	//if this ritual is job restricted runs a check to ensure you got the job mang!
-	// if(current_ritual.allowed_jobs.len > 0)
-	// 	var/datum/job/J = SSjobs.GetJob(ritual_leader.job)
-	// 	if(!is_type_in_list(J,current_ritual.allowed_jobs))
-	// 		return
+	// if this ritual is job restricted runs a check to ensure you got the job mang!
+	if(current_ritual.allowed_jobs.len > 0)
+		var/datum/job/J = SSjobs.GetJob(ritual_leader.job)
+		if(!is_type_in_list(J,current_ritual.allowed_jobs))
+			return
 
 
-	// if(current_ritual.location_specific == TRUE)
+	if(current_ritual.location_specific == TRUE)
 
-		//theres gotta be a better way to compare areas but idk what I'm rusty as shit at DM
-		// var/area/ritual_leader_area = get_area(ritual_leader)
-		// var/area/ritual_area = current_ritual.ritual_area
+		// theres gotta be a better way to compare areas but idk what I'm rusty as shit at DM
+		var/area/ritual_leader_area = get_area(ritual_leader)
+		var/area/ritual_area = current_ritual.ritual_area
 
-		// if(ritual_leader_area.type != ritual_area)
-		// 	to_chat(ritual_leader, "You cannot perform this ritual here...")
-		// 	return;
+		if(ritual_leader_area.type != ritual_area)
+			return;
 
 
 	ritual_leader.active_ritual = current_ritual
@@ -78,19 +76,16 @@
             success = TRUE // No additional check required, so it's a success
 
     if (success)
-        to_chat(src, "Ritual Succeeds!")
         call(current_ritual.success_result)(src)
     else
-        to_chat(src, "The ritual fails...")
         call(current_ritual.fail_result)(src) // Calls our fail result function
 
-    addtimer(CALLBACK(src, .proc/can_ritual_again), 5 SECONDS, TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
+    addtimer(CALLBACK(src, .proc/can_ritual_again), 5 MINUTES, TIMER_UNIQUE|TIMER_NO_HASH_WAIT|TIMER_OVERRIDE)
     return;
 
 
 /mob/living/proc/can_ritual_again()
 	src.can_lead_ritual = TRUE
-	to_chat(src, "I feel like I can ritual again!")
 	return;
 
 

@@ -33,13 +33,13 @@
 /datum/ritual/preserve_us
 	name = "Preservation Ritual"
 	description = "Sanctifys the Cathedral, thwarting access to any non-believers."
-	min_ritualists = 1
-	timeout = 20 SECONDS
+	min_ritualists = 5
+	timeout = 30 SECONDS
 	location_specific = TRUE
 	ritual_area = /area/cadiaoutpost/oa/service/chapel //Must be performed in the chapel
 	response_required = TRUE
 	response_phrase = "Emperor keep us"
-	min_chants = 1 //requires at least 1 additional ritualist and the phrase must be uttered 3 times by non-ritual leader
+	min_chants = 15 //requires at least 4 additional ritualist and the response phrase must be uttered 15 times
 	allowed_jobs = list(/datum/job/deacon, /datum/job/sistersuperior)
 	success_result = /proc/preservationSuccess
 	fail_result = /proc/preservationFail
@@ -56,3 +56,4 @@
 	min_chants = 1 //requires at least 1 additional ritualist and the phrase must be uttered 3 times by non-ritual leader
 	additional_req_check = /mob/proc/invoke_check
 	success_result = /mob/proc/invokeSuccess
+	fail_result = /mob/proc/invokeFail

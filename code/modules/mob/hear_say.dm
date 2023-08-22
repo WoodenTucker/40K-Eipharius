@@ -328,12 +328,7 @@
 
 
 	if(findtext(message, response_regex))
-		to_chat(src, "Correct response [message]")
 		src.active_ritual.correct_responses++
 		//we use an associated list to create or overwrite entries via key its probably the fastest way since |= is just an abstracted find loop
 		//they probably can't change their ckey so we'll use that as the key and assign the value to their whole mob
 		src.active_ritual.ritualists[speaker.ckey] = speaker
-		to_chat(src, src.active_ritual.ritualists)
-
-	if(src.active_ritual.correct_responses >= src.active_ritual.min_chants)
-		to_chat(src, "We did it boss, we did the ritual!")
