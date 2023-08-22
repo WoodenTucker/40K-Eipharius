@@ -34,7 +34,7 @@
 	name = "Preservation Ritual"
 	description = "Sanctifys the Cathedral, thwarting access to any non-believers."
 	min_ritualists = 5
-	timeout = 30 SECONDS
+	timeout = 40 SECONDS
 	location_specific = TRUE
 	ritual_area = /area/cadiaoutpost/oa/service/chapel //Must be performed in the chapel
 	response_required = TRUE
@@ -49,11 +49,12 @@
 	name = "Invoke the Saints"
 	description = "Calls upon the names of the Imperial Saints to draw out the daemonic."
 	min_ritualists = 1
-	timeout = 20 SECONDS
+	timeout = 40 SECONDS
 	location_specific = FALSE
 	response_required = TRUE
+	allowed_jobs = list(/datum/job/acolyte, /datum/job/inquisitor)
 	response_phrase = "saint\\s+\\w+\\s+defend\\s+us" //regex that searches for saint, defend and us to be used with any name ie. Saint Celestine defend us!
-	min_chants = 1 //requires at least 1 additional ritualist and the phrase must be uttered 3 times by non-ritual leader
+	min_chants = 10 //requires at least 1 additional ritualist and the phrase must be uttered 3 times by non-ritual leader
 	additional_req_check = /mob/proc/invoke_check
 	success_result = /mob/proc/invokeSuccess
 	fail_result = /mob/proc/invokeFail
