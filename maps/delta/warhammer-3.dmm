@@ -60,7 +60,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "jungle7"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "agD" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -1705,7 +1705,7 @@
 "bWy" = (
 /obj/effect/floor_decal/newcorner/grass,
 /obj/effect/floor_decal/newcorner/stone/corner,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "bXm" = (
 /obj/structure/gemwasher,
@@ -1735,7 +1735,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass7"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "bXT" = (
 /turf/simulated/floor/tiled/dark{
@@ -2021,7 +2021,7 @@
 	icon_state = "grass7"
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "csS" = (
 /obj/machinery/botany/editor,
@@ -2923,7 +2923,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "dvP" = (
 /obj/structure/sink/kitchen{
@@ -3705,7 +3705,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 8
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "esG" = (
 /obj/structure/railing{
@@ -3878,7 +3878,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "eCj" = (
 /obj/structure/table/graf/rusty_table,
@@ -4631,7 +4631,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass14"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "fwS" = (
 /obj/effect/floor_decal/turf/cafe,
@@ -4716,7 +4716,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "fzr" = (
 /obj/structure/table/graf/rusty_table,
@@ -5289,7 +5289,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "gcK" = (
 /obj/structure/flora/ausbushes/lavendergrass,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gcL" = (
 /obj/effect/floor_decal/newcorner/stone,
@@ -5845,7 +5845,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "gGa" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gGA" = (
 /obj/structure/bed{
@@ -5908,7 +5908,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "glow5"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gIV" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5946,6 +5946,10 @@
 	icon_state = "plant"
 	},
 /turf/simulated/floor/stone/old4,
+/area/cadiaoutpost/oa/bridge/hallway)
+"gJT" = (
+/obj/structure/hivedecor/statue8,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "gKh" = (
 /obj/effect/floor_decal/newcorner/cafe{
@@ -6603,7 +6607,7 @@
 	icon_state = "grass2"
 	},
 /obj/structure/flora/ausbushes/fernybush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "hwG" = (
 /obj/structure/torchwall{
@@ -7017,7 +7021,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "hYs" = (
 /obj/structure/bed/chair/wood/fancy{
@@ -7071,7 +7075,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "iaa" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "iaf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7153,7 +7157,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "ieK" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -7364,7 +7368,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass12"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "itB" = (
 /obj/flamer_fire{
@@ -7707,7 +7711,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "glow2"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "iGy" = (
 /turf/simulated/floor/stone/ancient_stone_floor3,
@@ -7947,7 +7951,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 1
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "iVt" = (
 /obj/random/junk,
@@ -8572,7 +8576,7 @@
 /area/cadiaoutpost/oa/gatehouse)
 "jzY" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "jAy" = (
 /obj/structure/table/rack/shelf{
@@ -9269,7 +9273,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "kjC" = (
 /obj/structure/flora/ausbushes/fernybush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "kjJ" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -9324,7 +9328,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "klz" = (
 /obj/effect/floor_decal/turf/brick,
@@ -9935,7 +9939,7 @@
 "kVg" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/machinery/light,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "kVE" = (
 /obj/structure/bed/chair{
@@ -11506,7 +11510,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "mKR" = (
 /obj/structure/window/reinforced{
@@ -11885,7 +11889,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "nkF" = (
 /obj/structure/sign/art/blindfolds{
@@ -12001,7 +12005,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/cadiaoutpost/oa/service/inn)
 "nsB" = (
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "nsI" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -12562,7 +12566,7 @@
 	icon_state = "grass14"
 	},
 /obj/machinery/light,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "nZq" = (
 /obj/structure/table/woodentable{
@@ -12793,7 +12797,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass2"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "oml" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -13247,7 +13251,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "oML" = (
 /obj/effect/floor_decal/newcorner/grass,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "oNq" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -13478,7 +13482,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 1
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "paS" = (
 /obj/machinery/door/airlock/glass_engineering{
@@ -13711,7 +13715,7 @@
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 8
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "pnM" = (
 /obj/effect/floor_decal/newcorner/red{
@@ -14249,7 +14253,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "glow4"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "pVR" = (
 /obj/structure/flora/tree/dead,
@@ -14346,7 +14350,7 @@
 /area/cadiaoutpost/oa/supply/offices/roguetrader)
 "qdc" = (
 /obj/structure/flora/ausbushes/sparsegrass,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "qdI" = (
 /obj/machinery/light/small{
@@ -14673,7 +14677,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "quL" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "qvo" = (
 /obj/effect/floor_decal/newcorner/crater_big{
@@ -15210,7 +15214,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass3"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "rdo" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -15407,7 +15411,7 @@
 /obj/effect/floor_decal/newcorner/stone/corner{
 	dir = 4
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "roe" = (
 /obj/machinery/cooker/fryer,
@@ -15481,7 +15485,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "rru" = (
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "rrE" = (
 /obj/effect/floor_decal/newcorner/shaft{
@@ -15675,7 +15679,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass13"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "rzW" = (
 /obj/effect/floor_decal/newcorner/plating/corner{
@@ -15764,7 +15768,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "rHh" = (
 /obj/structure/table/rack/dark,
@@ -18337,7 +18341,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass9"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "uCd" = (
 /obj/machinery/light,
@@ -19046,7 +19050,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "glow1"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vmp" = (
 /obj/effect/floor_decal/newcorner/red,
@@ -19360,7 +19364,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass4"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vGC" = (
 /obj/machinery/light{
@@ -19645,7 +19649,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "vUp" = (
 /obj/effect/floor_decal/newcorner/stone/corner{
@@ -20399,7 +20403,7 @@
 /area/cadiaoutpost/oa/service/chapel)
 "wRl" = (
 /obj/structure/flora/ausbushes/pointybush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "wRr" = (
 /obj/structure/table/rack,
@@ -20633,7 +20637,7 @@
 /area/cadiaoutpost/oa/magistratumpost)
 "xku" = (
 /obj/effect/floor_decal/newcorner/stone,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "xkM" = (
 /obj/machinery/light/small{
@@ -20705,7 +20709,7 @@
 /area/cadiaoutpost/oa/bridge/hallway)
 "xra" = (
 /obj/structure/flora/ausbushes/palebush,
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "xrG" = (
 /obj/effect/floor_decal/turf/bar2,
@@ -21167,7 +21171,7 @@
 /obj/effect/floor_decal/newcorner/grass{
 	icon_state = "grass6"
 	},
-/turf/simulated/floor/grass,
+/turf/simulated/floor/grass/dark,
 /area/cadiaoutpost/oa/bridge/hallway)
 "xZq" = (
 /obj/machinery/r_n_d/server/core,
@@ -54074,7 +54078,7 @@ iDo
 mZK
 mZK
 iDo
-iSL
+gJT
 xku
 fvD
 jeW
@@ -54097,7 +54101,7 @@ irU
 jeW
 bpe
 iUW
-iSL
+gJT
 iDo
 mOl
 mOl
