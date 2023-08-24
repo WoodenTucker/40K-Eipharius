@@ -13,7 +13,7 @@
 
 //for now put stuff in the switch, this could probably be made more efficient in the future
 	switch(cleaned_phrase)
-		if("emperor preserve us")
+		if("emperor i consecrate this place today anew and without reserve to your righteous fury")
 			current_ritual = new /datum/ritual/preserve_us //attaches a fresh datum
 		if("holy emperor you have given us your saints to purge wickedness across the stars i call upon them now to reveal the truth")
 			current_ritual = new /datum/ritual/invoke_the_saints
