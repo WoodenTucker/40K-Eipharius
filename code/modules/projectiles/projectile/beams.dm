@@ -1,11 +1,12 @@
 /obj/item/projectile/beam
 	name = "laser"
 	icon_state = "laser"
-	fire_sound='sound/weapons/Laser.ogg'
+	fire_sound='sound/weapons/gunshot/lasgun2.ogg'
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
 	wall_hitsound = 'sound/weapons/guns/misc/laser_searwall.ogg'
-	pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE
-	damage = 40
+	// pass_flags = PASS_FLAG_TABLE | PASS_FLAG_GLASS | PASS_FLAG_GRILLE // Removing pass flags because only AI mobs use beam weapons now.
+	damage = 20
+	armor_penetration = 10
 	damage_type = BURN
 	sharp = 1 //concentrated burns
 	check_armour = "laser"

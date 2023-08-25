@@ -80,8 +80,8 @@
 	icon_living = "traitorguard2"
 	icon_dead = "traitorguard2_dead"
 	name = "Veteran Traitor Guardsmen"
-	maxHealth = 340
-	health = 340
+	maxHealth = 300
+	health = 300
 	speed = 2
 
 /mob/living/simple_animal/hostile/viscerator
@@ -115,4 +115,4 @@
 	desc = "A traitor capitan, this one seems to have been gifted by the ruinous powers, making him stronger than the rest."
 	maxHealth = 550
 	health = 550
-	speed = 1
+	speed = 1.5

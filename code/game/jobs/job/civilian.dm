@@ -47,8 +47,8 @@
 	title = "Farmer"
 	department = "Service"
 	department_flag = PIL
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 3
+	spawn_positions = 3
 	supervisors = "the Town"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE

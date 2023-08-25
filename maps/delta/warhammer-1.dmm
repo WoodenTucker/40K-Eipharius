@@ -2573,12 +2573,6 @@
 /obj/effect/floor_decal/turf/basalt0,
 /turf/simulated/floor/stone,
 /area/cadiaoutpost/oa/caves/undercity)
-"jA" = (
-/obj/structure/ladder/up,
-/turf/simulated/floor/plating{
-	color = "grey"
-	},
-/area/cadiaoutpost/oa/caves/dark)
 "jB" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/effect/decal/cleanable/blood/gibs/xeno/body,
@@ -2970,10 +2964,6 @@
 	icon = 'icons/map_project/ship/tilesnovos.dmi'
 	},
 /area/cadiaoutpost/new_hive/caves)
-"kP" = (
-/obj/structure/stairs/south,
-/turf/simulated/floor/tiled/stone,
-/area/cadiaoutpost/oa/caves/undercity)
 "kS" = (
 /obj/effect/floor_decal/turf/plating,
 /obj/machinery/light{
@@ -39434,7 +39424,7 @@ eS
 eS
 eS
 eS
-jA
+eS
 eS
 eS
 eS
@@ -54781,7 +54771,7 @@ AM
 AM
 bh
 bh
-kP
+AM
 AM
 AM
 yx
