@@ -367,7 +367,7 @@ Template:
 /obj/random/loot/meleespawner
 	name = "Random Melee Spawner"
 	desc = "Spawns light and heavy melee.."
-	icon_state = "revolver"
+	icon_state = "heavymelee"
 
 /obj/random/loot/meleespawner/spawn_choices()
 	return list(/obj/item/melee/sword/combat_knife = 1,
@@ -616,14 +616,16 @@ Template:
 	icon_state = "randompilgrim"
 
 /obj/random/loot/randomitemcaves/spawn_choices()
-	return list(/obj/item/shovel = 2,
+	return list(/obj/item/shovel = 1,
 				/obj/item/clothing/glasses/night = 3,
-				/obj/item/pickaxe = 2,
+				/obj/item/pickaxe = 1,
 				/obj/item/storage/firstaid/combat = 1,
 				/obj/item/storage/firstaid/surgery = 1,
-				/obj/item/reagent_containers/hypospray/autoinjector/revive = 2,
+				/obj/item/reagent_containers/hypospray/autoinjector/revive = 4,
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 4,
+				/obj/item/stack/thrones3/ten = 1,
+				/obj/item/stack/thrones3/twenty = 1,
 				/obj/item/stack/thrones2/ten = 1,
 				/obj/item/grenade/frag/high_yield/homemade = 3,
 				/obj/item/grenade/frag = 1,
@@ -636,18 +638,19 @@ Template:
 
 /obj/random/loot/randomitemtown/spawn_choices()
 	return list(/obj/item/device/binoculars = 2,
-				/obj/item/storage/box/ifak = 3,
+				/obj/item/storage/box/ifak = 5,
 				/obj/item/storage/firstaid/adv = 1,
+				/obj/item/stack/thrones3/ten = 1,
+				/obj/item/stack/thrones3/twenty = 1,
 				/obj/item/clothing/suit/armor/militia = 2,
 				/obj/item/melee/sword/combat_knife = 1,
-				/obj/item/melee/trench_axe = 1,
 				/obj/item/stack/thrones2/ten = 2,
 				/obj/item/clothing/accessory/holster/waist = 3,
 				/obj/item/clothing/accessory/storage/webbing = 5,
 				/obj/item/storage/belt/utility/full = 2,
-				/obj/item/clothing/accessory/legguards = 2,
-				/obj/item/clothing/accessory/armguards/ballistic = 2,
-				/obj/item/grenade/frag/high_yield/homemade = 1)
+				/obj/item/clothing/accessory/legguards = 1,
+				/obj/item/clothing/accessory/armguards/ballistic = 1,
+				/obj/item/grenade/frag/high_yield/homemade = 2)
 
 
 

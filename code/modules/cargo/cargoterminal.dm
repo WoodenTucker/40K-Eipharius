@@ -423,19 +423,19 @@
 	dat += "<B>Available units:</B></BR>"
 	dat += "<B>Common mercenaries</B><HR>"
 	dat += "Those are well trained soldiers. Not the best, but loyal. They are effective only in groups<HR>"
-	dat += "<A href='byond://?src=\ref[src];Whiteshield=1'>Purchase a Whiteshield (80)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (150)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (205)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (200)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];Whiteshield=1'>Purchase a Whiteshield (50)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];guardsman=1'>Purchase a Guardsman (100)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];medicae=1'>Purchase a Combat Medicae (125)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];specialist=1'>Purchase a Guard Specialist (180)</A><BR>"
 	dat += "<B>Elite mercenaries</B><HR>"
 	dat += "These are the best of the best. They are expensive, but very effective stand-alone units. You will not regret.<HR>"
-	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (200)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];janissary=1'>Purchase a Vessorine Janissary (150)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Ogryn (UNAVAILABLE) (450)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Psyker (UNAVAILABLE) (450)</A><BR>"
-	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (350)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];scion=1'>Purchase a Tempestus Scion (300)</A><BR>"
 	dat += "<B>Xeno scum</B><HR>"
 	dat += "Each xenos comes in a wooden crate and fitted with a sedative implant to prevent unwanted awakening. You can disable the implant using golden writ. You must have exceptional leadership skills to maintain discipline among the xenos mercenaries, otherwise expect a revolt. Expect increased attention from the Ordo Xenos Inquisition as well.<HR>"
-	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freeboota (400)</A><BR>"
+	dat += "<A href='byond://?src=\ref[src];ork=1'>Purchase a Ork Freeboota (350)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Kroot Shaper (UNAVAILABLE) (600)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a Eldar Corsair (UNAVAILABLE) (850)</A><BR>"
 	dat += "<A href='byond://?src=\ref[src];unavailable=1'>Purchase a (REDACTED) (UNAVAILABLE) (1000)</A><BR>" // Someone cool and very usefull. Like Jokaero
@@ -453,7 +453,7 @@
 		visible_message("This type of mercenary is temporarily unavailable")
 		return
 	if (href_list["Whiteshield"])
-		if(GLOB.thrones < 80)
+		if(GLOB.thrones < 50)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -466,11 +466,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 80
+					GLOB.thrones -= 50
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["guardsman"])
-		if(GLOB.thrones < 150)
+		if(GLOB.thrones < 100)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -483,11 +483,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 150
+					GLOB.thrones -= 100
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["medicae"])
-		if(GLOB.thrones < 205)
+		if(GLOB.thrones < 125)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -500,11 +500,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 205
+					GLOB.thrones -= 125
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["specialist"])
-		if(GLOB.thrones < 200)
+		if(GLOB.thrones < 180)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -517,11 +517,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 200
+					GLOB.thrones -= 180
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["janissary"])
-		if(GLOB.thrones < 200)
+		if(GLOB.thrones < 150)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -534,11 +534,11 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 200
+					GLOB.thrones -= 150
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["scion"])
-		if(GLOB.thrones < 350)
+		if(GLOB.thrones < 300)
 			visible_message("You cannot afford that!")
 			return
 		else
@@ -551,16 +551,16 @@
 				if(res == 1)
 					playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 					visible_message("[job] has been sent. He will arrive at your outpost as soon as he can.")
-					GLOB.thrones -= 350
+					GLOB.thrones -= 300
 					log_admin("A job slot for [job] has been opened by [key_name_admin(usr)] using mercenary hiring system")
 				return
 	if (href_list["ork"])
-		if(GLOB.thrones < 400)
+		if(GLOB.thrones < 350)
 			visible_message("You cannot afford that!")
 			return
 		else
 			visible_message("Ork delivered, Lord-Trader. He is your problem now")
-			GLOB.thrones -= 400
+			GLOB.thrones -= 350
 			playsound(usr, 'sound/effects/beam.ogg', 50, 0, -1)
 			merc_crate = /obj/structure/largecrate/animal/orkmerc
 			new merc_crate(src.loc)
