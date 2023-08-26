@@ -10640,17 +10640,16 @@
 /turf/simulated/floor/dirty/tough,
 /area/cadiaoutpost/oa/caves/undercity)
 "kvX" = (
-/obj/effect/floor_decal/newcorner/shaft{
-	dir = 8
+/obj/structure/table/rack,
+/obj/effect/floor_decal/industrial/mark,
+/obj/item/airlock_electronics,
+/obj/item/airlock_electronics,
+/obj/item/airlock_electronics,
+/obj/item/airlock_electronics,
+/turf/simulated/floor/tiled/dark{
+	icon_state = "steel"
 	},
-/obj/machinery/button/remote/blast_door{
-	name = "LOCKDOWN!!!";
-	pixel_y = 32;
-	req_access = list(331);
-	id = "lockdown"
-	},
-/turf/simulated/floor/fancyfloor/coralg,
-/area/cadiaoutpost/oa/hallway/centralhall)
+/area/cadiaoutpost/oa/security/barracks)
 "kwe" = (
 /obj/machinery/shower{
 	dir = 4;
@@ -16855,6 +16854,15 @@
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/service/chapel/chapeldorm)
+"qDR" = (
+/obj/machinery/button/remote/blast_door{
+	name = "LOCKDOWN!!!";
+	pixel_y = 32;
+	req_access = list(331);
+	id = "lockdown"
+	},
+/turf/simulated/floor/reinforced,
+/area/cadiaoutpost/oa/hallway/centralhall)
 "qEy" = (
 /obj/machinery/button/remote/blast_door/lever{
 	name = "The Kneecapper";
@@ -18371,6 +18379,9 @@
 /obj/structure/table/rack,
 /obj/item/stack/material/steel/fifty,
 /obj/effect/floor_decal/industrial/mark,
+/obj/item/stack/material/steel/fifty,
+/obj/item/stack/material/steel/fifty,
+/obj/item/storage/toolbox/electrical,
 /turf/simulated/floor/tiled/dark{
 	icon_state = "steel"
 	},
@@ -55015,7 +55026,7 @@ knC
 npy
 npy
 knC
-npy
+qDR
 npy
 pHz
 npy
@@ -56008,7 +56019,7 @@ eru
 azj
 lgW
 oOF
-kvX
+ggN
 ggN
 ggN
 ggN
@@ -65084,7 +65095,7 @@ fFx
 fFx
 fFx
 fFx
-saQ
+uyA
 fFx
 iQs
 fFx
@@ -66349,7 +66360,7 @@ cZS
 cZS
 kmh
 saQ
-saQ
+kvX
 vta
 fGN
 slE
@@ -78101,7 +78112,7 @@ tOB
 tpQ
 tpQ
 lPf
-pxR
+lPf
 pxR
 pxR
 pxR
@@ -78353,12 +78364,12 @@ tOB
 tOB
 tpQ
 lPf
+lPf
 pxR
 hLQ
 qgR
+qgR
 soT
-qgR
-qgR
 pxR
 aoR
 hqB
@@ -78605,9 +78616,9 @@ tOB
 tOB
 tOB
 lPf
+lPf
 pxR
 gOH
-qgR
 qgR
 qgR
 qgR
@@ -78857,9 +78868,9 @@ tOB
 tOB
 lPf
 lPf
+lPf
 pxR
 tta
-qgR
 qgR
 qgR
 qgR

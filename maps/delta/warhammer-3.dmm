@@ -1023,8 +1023,12 @@
 /turf/simulated/floor/ceramic,
 /area/cadiaoutpost/oa/service/inn)
 "bfO" = (
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/gatehouse)
+/obj/effect/floor_decal/turf/metal/nine,
+/obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/multilas,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/engineering)
 "bhn" = (
 /obj/structure/torchwall{
 	dir = 4;
@@ -2228,10 +2232,6 @@
 	},
 /area/cadiaoutpost/new_hive/hive_city)
 "cAL" = (
-/obj/structure/sign/tradedepot{
-	dir = 1;
-	pixel_x = 32
-	},
 /obj/structure/torchwall{
 	dir = 8;
 	icon_state = "torchwall0"
@@ -3769,6 +3769,15 @@
 "etR" = (
 /turf/simulated/floor/tiled/freezer,
 /area/cadiaoutpost/oa/bridge/hallway)
+"etU" = (
+/obj/mecha/combat/dreadnought{
+	health = 800;
+	name = "Decommissioned Dreadnought"
+	},
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/gatehouse)
 "euE" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/stack/material/steel/fifty,
@@ -6290,6 +6299,13 @@
 "haY" = (
 /turf/simulated/floor/plating/reinforced,
 /area/cadiaoutpost/new_hive/hive_city)
+"hba" = (
+/obj/effect/floor_decal/turf/metal/seven,
+/obj/item/mecha_parts/mecha_equipment/armor_booster/antiproj_armor_booster,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/engineering)
 "hbw" = (
 /obj/effect/floor_decal/newcorner/black{
 	dir = 1
@@ -6485,8 +6501,11 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/oa/bridge/hallway)
 "hkH" = (
-/turf/simulated/floor/stone/old3,
-/area/cadiaoutpost/new_hive/hive_city)
+/obj/effect/floor_decal/newcorner/crater_big{
+	icon_state = "l4"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "hkM" = (
 /obj/structure/table/rack,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
@@ -6976,6 +6995,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
+/obj/item/plastique,
+/obj/item/plastique,
+/obj/item/grenade/spawnergrenade/manhacks,
+/obj/item/grenade/spawnergrenade/manhacks,
+/obj/item/device/batterer,
 /turf/simulated/floor/tiled{
 	color = "grey";
 	icon_state = "dark1"
@@ -7790,10 +7814,6 @@
 /obj/machinery/door/unpowered/inn{
 	name = "Dining Room"
 	},
-/obj/machinery/door/blast/grates{
-	id = "lockdown";
-	name = "Lockdown"
-	},
 /turf/simulated/floor/factory_floor,
 /area/cadiaoutpost/oa/bridge/hallway)
 "iJb" = (
@@ -8204,7 +8224,7 @@
 "jfd" = (
 /obj/machinery/door/unpowered/inn,
 /obj/machinery/door/blast/grates{
-	id = "lockdown";
+	id = "lockdown1";
 	name = "Lockdown"
 	},
 /turf/simulated/floor/factory_floor,
@@ -10236,6 +10256,10 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/service/inn)
+"lhx" = (
+/obj/effect/floor_decal/newcorner/crater_small,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "lhy" = (
 /obj/effect/floor_decal/newcorner/stone{
 	dir = 4
@@ -13310,10 +13334,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "oMj" = (
 /obj/effect/floor_decal/turf/metal,
-/obj/mecha/combat/dreadnought{
-	health = 800;
-	name = "Decommissioned Dreadnought"
-	},
+/obj/item/mecha_parts/mecha_equipment/armor_booster/anticcw_armor_booster,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -13714,6 +13735,12 @@
 "pic" = (
 /obj/machinery/light{
 	dir = 1
+	},
+/obj/machinery/button/remote/blast_door{
+	name = "LOCKDOWN!!!";
+	pixel_y = 32;
+	req_access = list(331);
+	id = "lockdown1"
 	},
 /turf/simulated/floor/darkwood,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -14389,13 +14416,12 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
 "qax" = (
-/obj/structure/bed{
-	icon = "icons/map_project/furniture_and_decor.dmi";
-	icon_state = "pigbed"
+/obj/effect/floor_decal/turf/metal/eight,
+/obj/item/mecha_parts/mecha_equipment/tool/drill,
+/turf/simulated/floor/tiled{
+	color = "grey"
 	},
-/obj/effect/landmark/start/village,
-/turf/simulated/floor/stone/old,
-/area/cadiaoutpost/new_hive/hive_city)
+/area/cadiaoutpost/oa/engineering)
 "qbC" = (
 /obj/effect/floor_decal/turf/brick,
 /obj/effect/floor_decal/spline/plain,
@@ -14736,6 +14762,13 @@
 	dir = 6
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
+"qtW" = (
+/obj/effect/floor_decal/turf/metal/ten,
+/obj/item/mecha_parts/mecha_equipment/generator/nuclear,
+/turf/simulated/floor/tiled{
+	color = "grey"
+	},
+/area/cadiaoutpost/oa/engineering)
 "quC" = (
 /turf/simulated/floor/ceramic/surgery2{
 	dir = 5
@@ -15097,8 +15130,9 @@
 	},
 /area/cadiaoutpost/oa/bridge/hallway)
 "qOu" = (
-/turf/simulated/floor/stone/old,
-/area/cadiaoutpost/new_hive/hive_city)
+/obj/effect/floor_decal/newcorner/crater_big,
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "qPV" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
@@ -15624,8 +15658,11 @@
 /turf/simulated/floor/dirty,
 /area/cadiaoutpost/new_hive/hive_city)
 "rvR" = (
-/turf/simulated/floor/stone/old2,
-/area/cadiaoutpost/new_hive/hive_city)
+/obj/effect/floor_decal/newcorner/crater_big{
+	icon_state = "l8"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "rxo" = (
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 10
@@ -16513,6 +16550,7 @@
 /area/cadiaoutpost/new_hive/hive_city)
 "szF" = (
 /obj/effect/floor_decal/turf/metal/two,
+/obj/item/mecha_parts/mecha_equipment/weapon/ballistic/heavybolter,
 /turf/simulated/floor/tiled{
 	color = "grey"
 	},
@@ -18097,7 +18135,7 @@
 	name = "LOCKDOWN!!!";
 	pixel_y = 32;
 	req_access = list(331);
-	id = "lockdown"
+	id = "lockdown1"
 	},
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
@@ -18679,6 +18717,12 @@
 	color = "grey"
 	},
 /area/cadiaoutpost/oa/engineering)
+"uMS" = (
+/obj/effect/floor_decal/newcorner/crater_big{
+	icon_state = "l3"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "uMY" = (
 /turf/simulated/floor/ceramic/old,
 /area/cadiaoutpost/new_hive/hive_city)
@@ -19105,6 +19149,12 @@
 	},
 /turf/simulated/floor/stone/old4,
 /area/cadiaoutpost/new_hive/hive_city)
+"vjr" = (
+/obj/effect/floor_decal/newcorner/crater_big{
+	icon_state = "l9"
+	},
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "vjI" = (
 /obj/structure/table/rack,
 /obj/item/reagent_containers/glass/bucket,
@@ -20184,12 +20234,11 @@
 /turf/simulated/floor/fancyfloor/coralg,
 /area/cadiaoutpost/oa/bridge/hallway)
 "wzT" = (
-/obj/machinery/door/blast/grates{
-	id = "lockdown";
-	name = "Lockdown"
+/obj/effect/floor_decal/newcorner/crater_big{
+	icon_state = "l2"
 	},
-/turf/simulated/floor/factory_floor,
-/area/cadiaoutpost/oa/bridge/hallway)
+/turf/simulated/floor/dirty,
+/area/cadiaoutpost/oa/gatehouse)
 "wzX" = (
 /obj/item/paper_bin{
 	pixel_y = 10
@@ -51170,7 +51219,7 @@ wkk
 pWS
 drW
 mgl
-jfd
+oxS
 drW
 mgl
 eOC
@@ -53186,7 +53235,7 @@ nFZ
 pWS
 drW
 mgl
-jfd
+oxS
 drW
 mgl
 eOC
@@ -53398,9 +53447,9 @@ eTh
 eTh
 nSI
 nSI
-nSI
-eTh
-eTh
+nuN
+bvm
+xrL
 nSI
 nSI
 nSI
@@ -53650,9 +53699,9 @@ eTh
 nSI
 nSI
 eTh
-nSI
-nSI
-nSI
+jiH
+hje
+ulF
 nSI
 nSI
 nSI
@@ -53902,9 +53951,9 @@ nSI
 nSI
 eTh
 eTh
-eTh
-nSI
-kNU
+wXq
+drE
+qvo
 nSI
 nSI
 nSI
@@ -55467,7 +55516,7 @@ eOC
 eOC
 eOC
 eOC
-jfd
+oxS
 gzn
 gHK
 gHK
@@ -55719,7 +55768,7 @@ eOC
 eOC
 eOC
 eOC
-jfd
+oxS
 sEL
 lzR
 lzR
@@ -55958,7 +56007,7 @@ tsu
 eOC
 eOC
 eOC
-jfd
+oxS
 eOC
 eOC
 eOC
@@ -56210,7 +56259,7 @@ eOC
 eOC
 eOC
 eOC
-jfd
+oxS
 bLj
 uhQ
 kxL
@@ -56707,7 +56756,7 @@ fkN
 nEh
 iDo
 nIz
-wzT
+kOj
 eOC
 eOC
 eOC
@@ -56779,9 +56828,9 @@ cOt
 siY
 uNf
 spn
-pCM
+bfO
 oMj
-mUI
+qax
 vmp
 uNf
 uNf
@@ -57031,9 +57080,9 @@ uFx
 uTT
 gAP
 spn
-dCG
+qtW
 szF
-fqx
+hba
 vmp
 uNf
 coD
@@ -57429,7 +57478,7 @@ eTh
 eTh
 nSI
 eTh
-pRO
+ecF
 eTh
 nSI
 nSI
@@ -58433,8 +58482,8 @@ eTh
 eTh
 eTh
 eTh
-nSI
-nSI
+eTh
+eTh
 nSI
 eTh
 eTh
@@ -58685,8 +58734,8 @@ apQ
 eTh
 eTh
 eTh
-nSI
-nSI
+eTh
+eTh
 eTh
 eTh
 eTh
@@ -58938,11 +58987,11 @@ apQ
 eTh
 eTh
 eTh
-nSI
-nSI
-pXo
-pXo
-pXo
+eTh
+nuN
+rvR
+qOu
+hLx
 pXo
 pXo
 pXo
@@ -59191,10 +59240,10 @@ eTh
 eTh
 eTh
 eTh
-nSI
-pXo
-pXo
-pXo
+jiH
+vjr
+wzT
+hLx
 pXo
 pXo
 pXo
@@ -59443,10 +59492,10 @@ apQ
 apQ
 eTh
 eTh
-eTh
-pXo
-pXo
-pXo
+wXq
+hkH
+uMS
+hLx
 pXo
 pXo
 pXo
@@ -59698,7 +59747,7 @@ eTh
 eTh
 hLx
 hLx
-pXo
+hLx
 pXo
 pXo
 pXo
@@ -60988,7 +61037,7 @@ uzj
 dWZ
 erm
 gfx
-gfx
+etU
 mJP
 wHE
 wHE
@@ -61396,7 +61445,7 @@ cAL
 iqE
 iqE
 iqE
-uNI
+rqK
 eTh
 wpO
 eTh
@@ -62214,14 +62263,14 @@ eXL
 eXL
 mrc
 eTh
-eTh
-eTh
-hLx
+nuN
+bvm
+qOu
 acE
 nAV
 nAV
 nAV
-hLx
+lhx
 hLx
 hLx
 pXo
@@ -62466,9 +62515,9 @@ eXL
 eXL
 mrc
 eTh
-eTh
-eTh
-hLx
+jiH
+hje
+wzT
 acE
 nAV
 nAV
@@ -62718,9 +62767,9 @@ eXL
 okZ
 fZO
 eTh
-eTh
-eTh
-hLx
+wXq
+drE
+uMS
 hLx
 hiP
 nAV
@@ -63728,7 +63777,7 @@ mrc
 eTh
 eTh
 eTh
-bfO
+wgI
 hLx
 wgI
 acE
@@ -63980,7 +64029,7 @@ mrc
 eTh
 eTh
 eTh
-bfO
+wgI
 hLx
 wgI
 acE
@@ -64232,7 +64281,7 @@ mrc
 eTh
 eTh
 eTh
-bfO
+wgI
 hLx
 wgI
 acE
@@ -64484,7 +64533,7 @@ mrc
 eTh
 eTh
 eTh
-bfO
+wgI
 hLx
 wgI
 cCk
@@ -64736,7 +64785,7 @@ mrc
 eTh
 kNU
 eTh
-bfO
+wgI
 hLx
 wgI
 sHL
@@ -65238,8 +65287,8 @@ qHI
 flA
 mrc
 iFU
-cPa
-cPa
+iFU
+iFU
 jQu
 jQu
 jQu
@@ -70789,9 +70838,9 @@ eTh
 bDp
 sVM
 eTh
-eTh
-eTh
-ivO
+nuN
+bvm
+xrL
 ivO
 eTh
 eTh
@@ -70802,9 +70851,9 @@ eTh
 eTh
 eTh
 eTh
-eTh
-eTh
-eTh
+nuN
+bvm
+xrL
 eTh
 eTh
 eTh
@@ -71041,9 +71090,9 @@ eTh
 eTh
 eTh
 kNU
-eTh
-eTh
-eTh
+jiH
+hje
+ulF
 ivO
 eTh
 bXT
@@ -71054,9 +71103,9 @@ jXA
 iFU
 eTh
 eTh
-eTh
-eTh
-eTh
+jiH
+hje
+ulF
 eTh
 eTh
 eTh
@@ -71293,9 +71342,9 @@ dqv
 dqv
 eTh
 eTh
-eTh
-eTh
-eTh
+wXq
+drE
+qvo
 eTh
 iFU
 eTh
@@ -71306,9 +71355,9 @@ iFU
 iFU
 bXT
 bXT
-kNU
-eTh
-eTh
+wXq
+drE
+qvo
 eTh
 eTh
 eTh
@@ -74543,9 +74592,9 @@ dqv
 dqv
 dqv
 eTh
-eTh
-eTh
-eTh
+nuN
+bvm
+xrL
 ivO
 xjG
 dqv
@@ -74795,9 +74844,9 @@ dqv
 dqv
 dqv
 fNi
-fNi
-fNi
-ivO
+jiH
+hje
+ulF
 ivO
 eTh
 dym
@@ -75047,9 +75096,9 @@ dqv
 fNi
 fNi
 fNi
-eTh
-eTh
-eTh
+wXq
+drE
+qvo
 eTh
 eTh
 eTh
@@ -76078,9 +76127,9 @@ eTh
 dqv
 dqv
 eTh
-eTh
-eTh
-eTh
+nuN
+bvm
+xrL
 eTh
 ivO
 ivO
@@ -76330,9 +76379,9 @@ eTh
 dqv
 dqv
 eTh
-eTh
-kNU
-ivO
+jiH
+hje
+ulF
 ivO
 ivO
 eTh
@@ -76582,9 +76631,9 @@ eTh
 eTh
 eTh
 eTh
-eTh
-ivO
-ivO
+wXq
+drE
+qvo
 eTh
 iFU
 iFU
@@ -77815,9 +77864,9 @@ iFU
 iFU
 eTh
 eTh
-fNi
-fNi
-fNi
+nuN
+bvm
+xrL
 fNi
 eTh
 ivO
@@ -78067,9 +78116,9 @@ bXT
 iFU
 eTh
 eTh
-fNi
-hkH
-rvR
+jiH
+hje
+ulF
 uNF
 ivO
 nJy
@@ -78319,9 +78368,9 @@ bXT
 iFU
 eTh
 eTh
-fNi
-qax
-qOu
+wXq
+drE
+qvo
 fNi
 eTh
 eTh

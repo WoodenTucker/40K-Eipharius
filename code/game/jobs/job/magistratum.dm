@@ -47,8 +47,8 @@
 	title = "Planetary Investigator"
 	head_position = 1
 	supervisors = "the Lord Governor"
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	social_class = SOCIAL_CLASS_HIGH
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/investigator
