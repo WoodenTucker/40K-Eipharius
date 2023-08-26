@@ -218,12 +218,12 @@
 	projectiles_per_shot = 3
 	deviation = 0.3
 	projectile_energy_cost = 40 KILOWATTS
-	fire_cooldown = 2
+	fire_cooldown = 6
 
 /obj/item/mecha_parts/mecha_equipment/weapon/ballistic/lmg/assault
 	name = "\improper Mark VIII Absolo pattern assault cannon"
 	equip_cooldown = 20
-	fire_cooldown = 1
+	fire_cooldown = 12
 	projectiles_per_shot = 6
 	projectiles = 900
 	projectile_energy_cost = 120 KILOWATTS

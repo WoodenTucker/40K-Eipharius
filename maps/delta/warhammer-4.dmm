@@ -4963,7 +4963,7 @@
 	color = "grey"
 	},
 /obj/machinery/door/blast/grates{
-	id = "lockdown";
+	id = "lockdown2";
 	name = "Lockdown"
 	},
 /turf/simulated/floor/factory_floor,
@@ -5157,7 +5157,7 @@
 "Mv" = (
 /obj/machinery/door/unpowered/inn,
 /obj/machinery/door/blast/grates{
-	id = "lockdown";
+	id = "lockdown2";
 	name = "Lockdown"
 	},
 /turf/simulated/floor/factory_floor,
@@ -5998,7 +5998,7 @@
 	name = "LOCKDOWN!!!";
 	pixel_y = 32;
 	req_access = list(331);
-	id = "lockdown"
+	id = "lockdown2"
 	},
 /turf/simulated/floor/fancyfloor/carpet/middle,
 /area/cadiaoutpost/oa/hallway/northern)
@@ -36278,8 +36278,8 @@ Qh
 Qh
 Qh
 Qh
-Mv
-Mv
+se
+se
 Qh
 Qh
 Qh
@@ -39302,8 +39302,8 @@ Qh
 Qh
 Qh
 Qh
-Mv
-Mv
+se
+se
 Qh
 Qh
 Qh
