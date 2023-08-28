@@ -12,7 +12,7 @@
 	gluttonous = GLUT_ANYTHING
 	total_health = 350
 	mob_size = MOB_LARGE
-	strength = STR_HIGH
+	strength = STR_VHIGH
 	sexybits_location = BP_GROIN
 	var/bonehead = 0 //Boneheads are enhanced, more intelligent ogryn. Will make them a bit smarter
 	base_auras = list(
