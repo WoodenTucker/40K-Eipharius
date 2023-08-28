@@ -36,6 +36,7 @@
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_all_personal_lockers, access_village, access_advchapel,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
 			/mob/living/carbon/human/proc/deaconclass)
@@ -233,6 +234,7 @@
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_idcard()?.access = list(access_heads, access_security, access_guard_common, access_magi, access_all_personal_lockers, access_advchapel, access_medical, access_village)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
@@ -284,6 +286,7 @@
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.f_style = "shaved"
@@ -346,6 +349,7 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE
 		H.warfare_faction = IMPERIUM

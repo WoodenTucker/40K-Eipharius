@@ -68,12 +68,13 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Farmer [current_name]")
-		H.add_stats(rand(14,16), rand(13,15), rand(14,16), rand(8,14)) //well fed and robust
+		H.fully_replace_character_name("[current_name]")
+		H.add_stats(rand(15,17), rand(14,16), rand(15,16), rand(8,14)) //well fed and robust
 		H.add_skills(rand(7,10),rand(6,10),rand(3,5),rand(2,4),3) //farmers are handy
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
 

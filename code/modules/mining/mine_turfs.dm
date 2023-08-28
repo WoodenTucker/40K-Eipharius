@@ -185,7 +185,6 @@ var/list/mining_floors = list()
 
 		if(ishuman(user))
 			var/mob/living/carbon/human/H = user
-			H.adjustStaminaLoss(rand(1,10))
 			H.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 		health -= rand(1,5)

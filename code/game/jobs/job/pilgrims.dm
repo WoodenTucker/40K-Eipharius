@@ -570,8 +570,8 @@ Pilgrim Fate System
 	title = "Pathfinder"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MED
-	total_positions = 0
-	spawn_positions = 0
+	total_positions = 1
+	spawn_positions = 1
 	open_when_dead = 0
 	supervisors = "Your own morality and ethics."
 	selection_color = "#848484"
@@ -589,6 +589,7 @@ Pilgrim Fate System
 		H.add_skills(rand(7,9),rand(7,10),rand(4,6),4,rand(6,8)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>Having arrived recently from the spires of Necromunda. You, a former courtier, sought to establish something of a collection here with your remaining wealth. For whatever reason the dark, insidious and terrible aspects of this planet intrigued you enough to abandon your world and seek out... Eipharius.</font></b></span>")
 
@@ -615,6 +616,7 @@ Pilgrim Fate System
 		H.add_skills(rand(6,8),rand(6,7),rand(8,10),4,rand(8,10)) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_random_quirk()
 		to_chat(H, "<span class='notice'><b><font size=3>An experienced medicae from your homeworld, you are one of many who booked passage to Eipharius in the hopes of building industries of medicine on a new world.</font></b></span>")
 
@@ -775,7 +777,9 @@ Pilgrim Fate System
 
 /decl/hierarchy/outfit/job/scavenger
 	name = OUTFIT_JOB_NAME("Scavenger")
-	uniform = null
+	uniform = /obj/item/clothing/under/color/brown
+	suit = /obj/item/clothing/suit/armor/hauberk
+	head = /obj/item/clothing/head/helmet/hauberk
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	shoes = null
 	l_ear = null
@@ -783,19 +787,21 @@ Pilgrim Fate System
 	id_type = null
 	r_pocket = /obj/item/storage/box/coin
 	gloves = null
+	glasses = /obj/item/clothing/glasses/science/rat
 	pda_slot = null
 	l_hand = /obj/item/storage/toolbox/mechanical
 	back = /obj/item/storage/backpack/satchel/warfare
 	l_ear = /obj/item/device/radio/headset/headset_service
 	belt = /obj/item/device/flashlight/lantern
 	r_pocket = /obj/item/storage/box/coin
+	r_hand = /obj/item/melee/trench_axe/bspear/hunter
 
 /datum/job/scavenger
     title = "Scavenger"
     department_flag = PIL
     social_class = SOCIAL_CLASS_MIN //these boys are gross
-    total_positions = 1
-    spawn_positions = 1
+    total_positions = 2
+    spawn_positions = 2
     supervisors = "You-yourself, don't listen-hear to man-things!"
     selection_color = "#848484"
     outfit_type = /decl/hierarchy/outfit/job/scavenger
@@ -808,7 +814,7 @@ Pilgrim Fate System
     equip(var/mob/living/carbon/human/H)
         H.warfare_faction = IMPERIUM
         ..()
-        H.add_stats(rand(14,15), rand(16,20), rand(13,16), rand (13,16))
+        H.add_stats(rand(14,15), rand(18,20), rand(14,16), rand (13,16))
         H.add_skills(rand(7,9),rand(9,16),rand(4,6),4,6) //melee, ranged, med, eng, surgery
         H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
         H.adjustStaminaLoss(-INFINITY)
@@ -865,6 +871,7 @@ Pilgrim Fate System
 		..()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.stat = UNCONSCIOUS
 		H.assign_random_quirk()
 		H.verbs += list(
@@ -920,8 +927,8 @@ Pilgrim Fate System
 			new /obj/item/device/radio/headset/headset_sci(src.loc) 
 			equip_to_slot_or_store_or_drop(new /obj/item/card/id/pilgrim/penitent, slot_wear_id) 
 			new /obj/item/gun/projectile/automatic/machinepistol(src.loc) 
-			new /obj/item/ammo_magazine/c556(src.loc) 
-			new /obj/item/ammo_magazine/c556(src.loc)
+			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc) 
+			new /obj/item/ammo_magazine/mc9mmt/machinepistol(src.loc)
 			to_chat(U, "<span class='goodmood'><b><font size=3>You're the hitman, the shadow of the gang. Take out any who oppose you.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/gangerclass,)
 			U.stat = CONSCIOUS
@@ -949,8 +956,8 @@ Pilgrim Fate System
 	title = "Bouncer"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MIN //these boys are gross
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "The Underboss"
 	selection_color = "#530606"
 	outfit_type = /decl/hierarchy/outfit/job/bouncer

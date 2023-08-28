@@ -15,8 +15,8 @@
 	maxHealth = 250
 	health = 250
 	harm_intent_damage = 5
-	melee_damage_lower = 20
-	melee_damage_upper = 30
+	melee_damage_lower = 10
+	melee_damage_upper = 20
 	wander = 1
 	see_in_dark = 6
 	attacktext = "stabbed"

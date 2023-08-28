@@ -40,6 +40,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire)
 		to_chat(H, "<span class='notice'><b><font size=3>  </font></b></span>")
@@ -69,7 +70,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15 // lots of delicacies growing up
+	cultist_chance = 5 // lots of delicacies growing up
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
@@ -123,7 +124,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	switch(classchoice)
 
 		if("ROLL THE DICE!")
-			if(prob(95))
+			if(prob(65))
 				to_chat(U,"<span class='danger'><b><font size=4>THE LOYALIST</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium, as Governor of the Eipharius colony and proclaimed master of the xenos city of Eipharius it is your responsibility to ensure both the continued survival of The Imperium and your family. Resting upon your shoulders is the countless untold billions who might one day spawn from your world, of the countless wars that shall surely be fought in your families name. This is your duty, your curse -- this is how you died.</font></b></span>")
 				equip_to_slot_or_store_or_drop(new /obj/item/gun/projectile/bolter_pistol, slot_wear_suit)
@@ -174,7 +175,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	switch(classchoice)
 
 		if("ROLL THE DICE!")
-			if(prob(80))
+			if(prob(50))
 				to_chat(U,"<span class='danger'><b><font size=4>THE LOYALIST</font></b></span>")
 				to_chat(U,"<span class='goodmood'><b><font size=3>A loyal servant to the imperium livin and underling to the master of the xenos city of Eipharius it is your responsibility to ensure both the continued survival of The Imperium and the Governor's lineage. This is your duty, your curse -- this is how you died.</font></b></span>")
 			else
@@ -274,7 +275,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	shotgun_skill = 7
 	lmg_skill = 6
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 10
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name

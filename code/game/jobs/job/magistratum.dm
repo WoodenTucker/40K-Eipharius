@@ -89,8 +89,8 @@
 /datum/job/enforcer
 	title = "Enforcer" // Cult. Criminal. Loyal.
 	supervisors = "the Planetary Marshal, Deacon and Inquisition"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	social_class = SOCIAL_CLASS_MED
 	selection_color = "#f0ac25"
 	outfit_type = /decl/hierarchy/outfit/job/ig/enforcer
@@ -100,7 +100,7 @@
 	shotgun_skill = 9
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15
+	cultist_chance = 8
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -123,6 +123,7 @@
 		H.witchblood() //Becoming a psyker can happen at any point of your life bro.
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
@@ -142,7 +143,7 @@
 	shotgun_skill = 7
 	lmg_skill = 5
 	smg_skill = 5
-	cultist_chance = 20
+	cultist_chance = 8
 	can_be_in_squad = FALSE
 	open_when_dead = FALSE
 	department_flag = INQ
@@ -166,6 +167,7 @@
 //		H.witchblood() //Psyker Enforcers don't exist
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village,)
 
