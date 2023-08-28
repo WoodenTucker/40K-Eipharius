@@ -222,14 +222,14 @@
 	one_hand_penalty = 0
 
 /obj/item/gun/projectile/meltagun
-	name = "Melta Rifle"
+	name = "Melta Gun"
 	desc = "Melta Weapons are extremely dangerous weapons which can melt heavy armor in a few shots, this one is a melta rifle and should be used with both hands."
 	icon_state = "melta"
 	item_state = "multimelta"
 	wielded_item_state = "multimelta"
 	icon = 'icons/cadia-sprites/migrated2/gun_2.dmi'
 	fire_sound = 'sound/weapons/gunshot/lasgun1.ogg'
-	slot_flags = SLOT_BELT|SLOT_BACK
+	slot_flags = SLOT_BACK|SLOT_S_STORE
 	ammo_type = /obj/item/ammo_casing/melta
 	caliber = "melta"
 	load_method = MAGAZINE
@@ -241,12 +241,12 @@
 	block_chance = 15 //pretty big, could be used as a shield in theory considering how armored it is
 	gun_type = GUN_SHOTGUN
 	move_delay = 8
-	accuracy = 0
-	fire_delay= 40
+	accuracy = -2
+	fire_delay= 20
 	sales_price = 50
-	burst = 20
+	burst = 35
 	
 	firemodes = list(
-		list(mode_name="OVERCHARGE", burst=15, fire_delay=40, burst_accuracy=null, dispersion=null, automatic = 0.5),
-		list(mode_name="STANDARD", burst=11, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.7),
+		list(mode_name="OVERCHARGE", burst=45, fire_delay=30, burst_accuracy=null, dispersion=null, automatic = 0.5),
+		list(mode_name="STANDARD", burst=35, fire_delay=20, burst_accuracy=null, dispersion=null, automatic = 0.7),
 	)

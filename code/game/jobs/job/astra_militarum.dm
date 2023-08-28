@@ -121,7 +121,7 @@
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 7
-	cultist_chance = 15 // sir what is a heretic
+	cultist_chance = 10 // sir what is a heretic
 
 	equip(var/mob/living/carbon/human/H)
 		H.warfare_faction = IMPERIUM
@@ -202,8 +202,8 @@ datum/job/ig/bullgryn
 	title = "Bullgryn"
 	social_class = SOCIAL_CLASS_MED //is it lore accurate? no, does it make sense to have a bullgryn here? also no
 	selection_color = "#33813A"
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 2
+	spawn_positions = 2
 	supervisors = "Da Emprah. Da Commesar, and da little on's!"
 	outfit_type = /decl/hierarchy/outfit/job/bullgryn
 	latejoin_at_spawnpoints = TRUE
@@ -219,6 +219,7 @@ datum/job/ig/bullgryn
 		H.add_stats(rand(20,30), rand(17,19), rand(15,18), rand (2,5)) //bullgryn are stronger and quicker than normal ogryn due to their advanced training
 		H.add_skills(rand(10,15),1,1,4,1) //melee, ranged, med, eng, surgery
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.vice = null
 		to_chat(H, "<span class='notice'><b><font size=3>MA BEST FREND'S DA EMPRAH. FREND OF GOBERNOR. FREND OF DA COMESSAR. PROTECT DA LITTL UN'S!</font></b></span>")
 
@@ -235,7 +236,7 @@ datum/job/ig/bullgryn
 	shotgun_skill = 6
 	lmg_skill = 7
 	smg_skill = 8
-	cultist_chance = 16 
+	cultist_chance = 10
 	alt_titles = list(
 		"Cadian Long Las" = /decl/hierarchy/outfit/job/sniper,
 		"Valhallan Scout Sniper" = /decl/hierarchy/outfit/job/sniper/valhalla,
@@ -323,6 +324,7 @@ datum/job/ig/bullgryn
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 //		H.vice = null //sarges seen some shit
@@ -445,6 +447,7 @@ datum/job/ig/bullgryn
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
 //		H.vice = null //THE VETERAN HAS SEEN SOME SHIT BRO
@@ -493,6 +496,7 @@ datum/job/ig/bullgryn
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.adjustStaminaLoss(-INFINITY)
+		H.set_trait(new/datum/trait/death_tolerant())
 		H.fully_replace_character_name("Commissar [current_name]")
 		H.get_idcard()?.access = list(access_security, access_guard_common, access_magi, access_all_personal_lockers, access_village, access_guard_armory, access_armory)
 		H.warfare_faction = IMPERIUM
@@ -779,6 +783,7 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -807,6 +812,7 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -834,6 +840,7 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -859,6 +866,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/handcuffs = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -880,6 +888,7 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/ammo_magazine/c556/ms = 4,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -906,6 +915,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/cell/lasgun/hotshot = 3,
+	/obj/item/clothing/accessory/holster/waist = 1
 	)
 
 
@@ -931,6 +941,7 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/cell/plasma = 2,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -958,6 +969,7 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/ammo_magazine/box/a556/mg08/ms = 2,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1,
 	)
 
@@ -982,6 +994,7 @@ datum/job/ig/bullgryn
 	/obj/item/cell/lasgun/hotshot = 1,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/shovel/krieg = 1
 	)
 
@@ -1005,6 +1018,7 @@ datum/job/ig/bullgryn
 	backpack_contents = list(
 	/obj/item/ammo_magazine/flamer = 3,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/stack/thrones3/five = 1
 	)
 
@@ -1025,10 +1039,12 @@ datum/job/ig/bullgryn
 	r_ear = /obj/item/device/radio/headset/red_team
 	belt = /obj/item/device/flashlight/lantern
 	pda_slot = null
-	r_hand = /obj/item/shield/riot
+	r_hand = /obj/item/shield/riot/metal
 	l_hand = /obj/item/melee/classic_baton/trench_club
 	backpack_contents = list(
-	/obj/item/grenade/frag = 1
+	/obj/item/grenade/frag = 1,
+	/obj/item/shield/buckler = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	)
 
 
@@ -1229,7 +1245,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1
+	/obj/item/clothing/accessory/holster/waist = 1
 	)
 
 	id_type = /obj/item/card/id/dog_tag/guardsman
@@ -1258,7 +1274,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1,
 	/obj/item/shovel/krieg = 1
 	)
@@ -1283,7 +1299,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1
 	)
 
@@ -1305,7 +1321,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1
 	)
 
@@ -1336,7 +1352,7 @@ datum/job/ig/bullgryn
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones/five = 1,
 	/obj/item/stack/thrones2/five = 1,
-	/obj/item/stack/thrones3/five = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	/obj/item/handcuffs = 1
 	)
 
@@ -1562,6 +1578,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	/obj/item/gun/energy/las/laspistol = 1,
 	/obj/item/stack/thrones = 1,
 	/obj/item/stack/thrones2 = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	)
 
 /decl/hierarchy/outfit/job/bloodpact2 // Old
@@ -1585,6 +1602,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	/obj/item/cell/lasgun = 2,
 	/obj/item/grenade/frag/high_yield/krak = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	)
 
 /decl/hierarchy/outfit/job/vraks // generic culty boy
@@ -1607,6 +1625,7 @@ GLOBAL_LIST_INIT(lone_thoughts, list(
 	backpack_contents = list(
 	/obj/item/grenade/frag = 1,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/clothing/accessory/holster/waist = 1,
 	)
 
 // chaos sgt

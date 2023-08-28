@@ -10,15 +10,17 @@
     min_age = 18
     max_age = 50
     gluttonous = GLUT_ANYTHING
-    total_health = 115
+    total_health = 135
     mob_size = MOB_MEDIUM
     strength = STR_MEDIUM
     sexybits_location = BP_GROIN
+    base_auras = list(
+		/obj/aura/regenerating/human/rat
+		)
     inherent_verbs = list(
 
         )
     unarmed_types = list(
-        /datum/unarmed_attack/stomp,
         /datum/unarmed_attack/kick,
         /datum/unarmed_attack/punch,
         /datum/unarmed_attack/bite,

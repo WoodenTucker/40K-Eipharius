@@ -122,12 +122,12 @@
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "buckler"
 	slot_flags = SLOT_BACK
-	force = 18
-	throwforce = 10
+	force = 21
+	throwforce = 20
 	base_block_chance = 30
 	throw_speed = 10
 	throw_range = 20
-	w_class = ITEM_SIZE_HUGE
+	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1)
 	matter = list(DEFAULT_WALL_MATERIAL = 1000, "Wood" = 1000)
 	attack_verb = list("shoved", "bashed")

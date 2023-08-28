@@ -328,8 +328,8 @@
 
 	var/death_msg = "lets out a waning screech, bursting into a mess of entrails."
 
-	harm_intent_damage = 40
-	melee_damage_lower = 40
+	harm_intent_damage = 35
+	melee_damage_lower = 30
 	melee_damage_upper = 40
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/bite.ogg'
@@ -361,7 +361,7 @@
 	response_help = "passes through"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = -1
+	speed = 1
 	maxHealth = 320
 	health = 320
 
@@ -387,7 +387,7 @@
 	response_help = "passes through"
 	response_disarm = "shoves"
 	response_harm = "hits"
-	speed = 2
+	speed = 1.5
 	maxHealth = 285
 	health = 285
 
@@ -415,7 +415,7 @@
 	melee_damage_upper = 45
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bite.ogg'
-	speed = 2
+	speed = 1.7
 
 /mob/living/simple_animal/hostile/mold/subject_08 // Xeno Research Area
 	desc = "Subject was found on the lower levels of Elipharius, possibly an human being before it was assimilated by some plant organism and turned into this, the area it was located contained several organism like the subject here."
@@ -434,7 +434,7 @@
 	melee_damage_upper = 45
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
-	speed = 2
+	speed = 1.8
 
 /mob/living/simple_animal/hostile/broken_servitor/death()
 	..(null, "blows apart!")
@@ -456,10 +456,10 @@
 	icon_state = "dire_avenger"
 	icon_living = "dire_avenger"
 	icon_dead = "dire_avenger" // Gotta add it dies horribly by gibbing due the lack of dead icon state
-	health = 150
-	maxHealth = 150
-	melee_damage_lower = 15
-	melee_damage_upper = 25
+	health = 350
+	maxHealth = 350
+	melee_damage_lower = 25
+	melee_damage_upper = 45
 	attacktext = "pierces"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
-	speed = 4
+	speed = 1

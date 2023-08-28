@@ -493,7 +493,7 @@
 	weapon_speed_delay = 8
 
 /obj/item/melee/sword/machete/chopper/heavy/slayer
-	name = "heavy blessed chopper"
+	name = "masterwork chopper"
 	desc = "A heavy blessed blade made of xenos alloy, it seems unnaturally heavy."
 	icon_state = "scrapsabre"
 	item_state = "salvagedmachete"

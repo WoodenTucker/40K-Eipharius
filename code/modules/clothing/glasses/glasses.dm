@@ -96,6 +96,23 @@
 	unacidable = 1
 	sales_price = 35
 
+/obj/item/clothing/glasses/science/rat
+	name = "rat goggles"
+	desc = "The goggles do nothing!"
+	hud = /obj/item/clothing/glasses/hud/health
+	icon_state = "thermoncle"
+	item_state = "thermoncle"
+	action_button_name = "Toggle Goggles"
+	darkness_view = 20
+	toggleable = 1
+	electric = 1
+	see_invisible = SEE_INVISIBLE_NOLIGHTING
+	vision_flags = SEE_MOBS|SEE_TURFS
+	flash_protection = FLASH_PROTECTION_MAJOR
+	canremove = 1
+	unacidable = 1
+	sales_price = 0
+
 /obj/item/clothing/glasses/science/tech
 	name = "priest goggles"
 	desc = "The goggles do nothing!"

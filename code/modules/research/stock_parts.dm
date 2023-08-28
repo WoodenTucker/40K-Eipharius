@@ -313,6 +313,30 @@
 	origin_tech = list(TECH_BIO = 6, TECH_BLUESPACE = 6)
 	sales_price = 20
 
+/obj/item/rnd/biospacesample1
+	name = "tissue sample"
+	desc = "A vial of strange liquid storing organic material."
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "box"
+	origin_tech = list(TECH_BIO = 4, TECH_PHORON = 2, TECH_ILLEGAL = 2)
+	sales_price = 10
+
+/obj/item/rnd/biospacesample2
+	name = "rare tissue sample"
+	desc = "A vial of strange liquid storing organic material."
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "box"
+	origin_tech = list(TECH_BIO = 5, TECH_PHORON = 4, TECH_ILLEGAL = 3)
+	sales_price = 10
+
+/obj/item/rnd/biospacesample3
+	name = "exotic tissue sample"
+	desc = "A vial of strange liquid storing organic material."
+	icon = 'icons/obj/xenoarchaeology.dmi'
+	icon_state = "box"
+	origin_tech = list(TECH_BIO = 8, TECH_PHORON = 7, TECH_ILLEGAL = 6)
+	sales_price = 10
+
 /obj/item/rnd/biospace8
 	name = "xenos autodoc schematics"
 	desc = "Schematics to construct a medical autodoc used by the seolite... The Mechanicus will want to study it."
@@ -328,7 +352,6 @@
 	icon_state = "datadisk6"
 	origin_tech = list(TECH_BIO = 10, TECH_BLUESPACE = 10)
 	sales_price = 0
-
 
 /obj/item/rnd/combat3
 	name = "seolite firing mechanism"

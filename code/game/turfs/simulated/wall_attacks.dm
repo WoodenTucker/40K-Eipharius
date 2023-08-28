@@ -108,7 +108,7 @@
 		return success_smash(user)
 
 	if(is_reinf())
-		if(damage >= max(60,80))
+		if(damage >= max(30,60))
 			return success_smash(user)
 	else if(wallbreaker == 2 || damage >= 60)
 		return success_smash(user)

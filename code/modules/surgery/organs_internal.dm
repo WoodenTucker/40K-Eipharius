@@ -233,7 +233,15 @@
 /datum/surgery_step/internal/remove_organ/end_step(mob/living/user, mob/living/carbon/human/target, target_zone, obj/item/tool)
 	user.visible_message("<span class='notice'>[user] has removed [target]'s [target.op_stage.current_organ] with \the [tool].</span>", \
 	"<span class='notice'>You have removed [target]'s [target.op_stage.current_organ] with \the [tool].</span>")
-
+	
+	if (prob(10)) 
+		new /obj/item/rnd/biospacesample1(target.loc)
+	else if(prob(5))
+		new /obj/item/rnd/biospacesample2(target.loc)
+	else if(prob(5))
+		new /obj/item/rnd/biospacesample3(target.loc)
+	else
+		new /obj/item/reagent_containers/food/snacks/meat(target.loc)
 	// Extract the organ!
 	var/obj/item/organ/O = target.op_stage.current_organ
 	var/obj/item/organ/external/affected = target.get_organ(target_zone)

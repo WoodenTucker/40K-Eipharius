@@ -10,6 +10,18 @@
 		reagents.add_reagent(/datum/reagent/nutriment/protein, 6)
 		src.bitesize = 3
 
+/obj/item/reagent_containers/food/snacks/meat2
+	name = "disgusting meat chunk"
+	desc = "A slab of meat."
+	icon_state = "meat"
+	health = 180
+	filling_color = "#ff1c1c"
+	center_of_mass = "x=16;y=14"
+	New()
+		..()
+		reagents.add_reagent(/datum/reagent/nutriment/protein, 1)
+		src.bitesize = 3
+
 /obj/item/reagent_containers/food/snacks/meat/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W,/obj/item/material/knife))
 		new /obj/item/reagent_containers/food/snacks/rawcutlet(src)

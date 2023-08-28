@@ -18,6 +18,7 @@
 
 	var/shuttletarget = null
 	var/enroute = 0
+	environment_smash = 1
 
 	var/damtype = BRUTE
 	var/defense = "melee" //what armor protects against its attacks

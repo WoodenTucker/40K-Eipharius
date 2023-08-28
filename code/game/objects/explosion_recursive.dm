@@ -126,10 +126,10 @@ proc/explosion_rec(turf/epicenter, power, shaped)
 	explosion_resistance = 2
 
 /turf/simulated/shuttle/wall
-	explosion_resistance = 10
+	explosion_resistance = 5
 
 /turf/simulated/wall
-	explosion_resistance = 10
+	explosion_resistance = 4
 
 /obj/machinery/door/get_explosion_resistance()
 	if(!density)

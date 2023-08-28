@@ -44,13 +44,13 @@
 	desc = "It's a pickaxe. You hit rocks with it. And people with it too if you feel like."
 	icon = 'icons/obj/mining.dmi'
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_ICLOTHING
-	force = 15
-	throwforce = 4
+	force = 25
+	throwforce = 15
 	icon_state = "pickaxe"
 	item_state = "spickaxe"
 	w_class = ITEM_SIZE_NORMAL
 	matter = list(DEFAULT_WALL_MATERIAL = 3750)
-	var/digspeed = 55 //moving the delay to an item var so R&D can make improved picks. --NEO
+	var/digspeed = 45 //moving the delay to an item var so R&D can make improved picks. --NEO
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
 	attack_verb = list("hit", "pierced", "sliced", "attacked")
 	var/list/drill_sound = list('sound/items/pickaxe1.ogg','sound/items/pickaxe2.ogg','sound/items/pickaxe3.ogg','sound/items/pickaxe4.ogg')
@@ -73,7 +73,15 @@
 	name = "silver pickaxe"
 	icon_state = "spickaxe"
 	item_state = "spickaxe"
-	digspeed = 60
+	digspeed = 50
+	origin_tech = list(TECH_MATERIAL = 2)
+	desc = "This makes no metallurgic sense."
+
+/obj/item/pickaxe/mechanicus
+	name = "mechanicus pickaxe"
+	icon_state = "spickaxe"
+	item_state = "spickaxe"
+	digspeed = 40
 	origin_tech = list(TECH_MATERIAL = 2)
 	desc = "This makes no metallurgic sense."
 
@@ -81,7 +89,7 @@
 	name = "advanced mining drill" // Can dig sand as well!
 	icon_state = "handdrill"
 	item_state = "jackhammer"
-	digspeed = 40
+	digspeed = 30
 	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_ENGINEERING = 2)
 	desc = "Yours is the drill that will pierce through the rock walls."
 	drill_verb = "drilling"
@@ -90,7 +98,7 @@
 	name = "sonic jackhammer"
 	icon_state = "jackhammer"
 	item_state = "jackhammer"
-	digspeed = 42 //faster than drill, but cannot dig
+	digspeed = 32 //faster than drill, but cannot dig
 	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 2, TECH_ENGINEERING = 2)
 	desc = "Cracks rocks with sonic blasts, perfect for killing cave lizards."
 	drill_verb = "hammering"
@@ -99,7 +107,7 @@
 	name = "golden pickaxe"
 	icon_state = "gpickaxe"
 	item_state = "gpickaxe"
-	digspeed = 67
+	digspeed = 57
 	origin_tech = list(TECH_MATERIAL = 2)
 	desc = "This makes no metallurgic sense."
 	drill_verb = "picking"
@@ -108,7 +116,7 @@
 	name = "diamond pickaxe"
 	icon_state = "dpickaxe"
 	item_state = "dpickaxe"
-	digspeed = 44
+	digspeed = 34
 	origin_tech = list(TECH_MATERIAL = 2, TECH_ENGINEERING = 2)
 	desc = "A pickaxe with a diamond pick head."
 	drill_verb = "picking"
@@ -126,7 +134,7 @@
 	name = "cyborg mining drill"
 	icon_state = "diamonddrill"
 	item_state = "jackhammer"
-	digspeed = 25
+	digspeed = 15
 	desc = ""
 	drill_verb = "drilling"
 

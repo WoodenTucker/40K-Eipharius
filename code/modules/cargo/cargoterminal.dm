@@ -168,7 +168,7 @@
 		var/obj/item/stack/M = O
 		if(M.amount > 1)
 			M.amount -=1
-			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Messina Spaceport.")
+			visible_message("[user] places [M] onto the [src]. ")
 			to_chat(user, "[M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
 			src.balance += M.sales_price - round(M.sales_price * GLOB.tax_rate, 1)
 			GLOB.thrones += round(M.sales_price * GLOB.tax_rate,1) //taxes on all sales through the system
@@ -176,14 +176,14 @@
 			M.update_icon() //so coins in hand update
 			return
 		else
-			visible_message("[user] places [M] onto the [src]. With a flash of light and a crackle the item is transported to the Messina Spaceport.")
+			visible_message("[user] places [M] onto the [src]. ")
 			to_chat(user, "[M.sales_price - round(M.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
 			src.balance += M.sales_price - round(M.sales_price * GLOB.tax_rate, 1)
 			GLOB.thrones += round(M.sales_price * GLOB.tax_rate) //taxes on all sales through the system
 			qdel(M)
 			return
 	else
-		visible_message("[user] places [O] onto the [src]. With a flash of light and a crackle the item is transported to the Messina Spaceport.")
+		visible_message("[user] places [O] onto the [src]. ")
 		to_chat(user, "[O.sales_price - round(O.sales_price * GLOB.tax_rate,1)] has been added to the terminal.")
 		src.balance += O.sales_price - round(O.sales_price * GLOB.tax_rate, 1)
 		GLOB.thrones += round(O.sales_price * GLOB.tax_rate,1) //taxes on all sales through the system
@@ -281,15 +281,15 @@
 			playsound(world, 'sound/effects/tithepaid.ogg', 90, 0, -1)
 
 	if (href_list["tax"])
-		var/taxrates = list("1", "5", "10", "15",) //lists tax rates, we'll do set ones for now
+		var/taxrates = list("0", "5", "10", "15",) //lists tax rates, we'll do set ones for now
 		var/taxchoice = input("Choose the tax rate", "Available rates") as null|anything in taxrates
 
 		switch(taxchoice)
-			if("1")
-				GLOB.tax_rate = 0.1
-				to_world("<span class='warning'>[usr] has set the tax rate to 1%!</span>")
+			if("0")
+				GLOB.tax_rate = 0
+				to_world("<span class='warning'>[usr] has set the tax rate to 0%!</span>")
 			if("5")
-				GLOB.tax_rate = 0.5
+				GLOB.tax_rate = 0.05
 				to_world("<span class='warning'>[usr] has set the tax rate to 5%!</span>")
 			if("10")
 				GLOB.tax_rate = 0.10
