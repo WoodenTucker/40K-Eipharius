@@ -402,7 +402,7 @@
 	armor_penetration = 100 //phosphor blasters are incredibly good at penetrating heavy armor
 	range =  6 //extremely close ranged, normal vision is 8 but technically 7 if you don't count your own tile.
 	
-/*
+
 /obj/item/projectile/energy/phosphor/on_hit(var/atom/target, var/blocked = 0)
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
@@ -413,7 +413,7 @@
 		if(H.isChild())
 			var/mob/living/carbon/human/F = firer
 			F.unlock_achievement(new/datum/achievement/child_fire())
-*/
+
 
 /obj/item/projectile/gauss
 	name = "Gauss "
