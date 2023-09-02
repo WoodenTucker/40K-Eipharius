@@ -58,3 +58,20 @@
 	/obj/item/stack/thrones2/five = 1,
 	/obj/item/device/flashlight/lantern = 1,
 	/obj/item/stack/thrones3/ten = 1)
+
+/decl/hierarchy/outfit/job/cargo/noble
+	name = OUTFIT_JOB_NAME("Noble")
+	uniform = /obj/item/clothing/under/rank/principalagent
+	suit = null
+	shoes = /obj/item/clothing/shoes/jackboots/cadian
+	id_type = /obj/item/card/id/key/super/daemon
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	back = /obj/item/storage/backpack/satchel/warfare
+	l_ear = /obj/item/device/radio/headset/headset_sci // For now they get church vox until I get time to make a new radio headset.
+	l_hand = null
+	r_pocket = /obj/item/storage/box/coin
+	suit_store = null
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/device/flashlight/lantern = 1,
+	/obj/item/stack/thrones/ten = 1,)

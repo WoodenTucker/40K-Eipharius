@@ -123,7 +123,6 @@
 	else
 		return TRUE
 
-
 /obj/structure/warfare/barricade/bullet_act(var/obj/item/projectile/Proj)
 	..()
 	for(var/mob/living/carbon/human/H in loc)
@@ -199,8 +198,6 @@
 	desc = "A big sandbag that serves as a barricade of sorts."
 	icon = 'icons/map_project/sandbag_wall.dmi'
 	icon_state = "solo"
-	anchored = 1.0
-	density = 1
 	health = 550 // Cant be crafted due not exactly understanding honestly how it works (i dont code THAT well guhh), will increase HP to compensate that till someone else can do so.
 
 /obj/structure/warfare/barricade/concrete_barrier
@@ -208,6 +205,5 @@
 	desc = "Very effective at blocking bullets, but it gets in the way."
 	icon_state = "concrete_block"
 	anchored = 1.0
-	density = 1
 	health = 850 // Cant be crafted due not exactly understanding honestly how it works (i dont code THAT well guhh), will increase HP to compensate that till someone else can do so.
 

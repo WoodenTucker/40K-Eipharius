@@ -73,7 +73,7 @@
 	if(istype(O, /obj/item/melee/sword/skinning_knife))
 		playsound(usr, 'sound/effects/carvemask.ogg', 80, 0, -1)
 		(do_after(user,40,src))
-		to_chat(user, "[user] lets their hand guide their blade across the [O]. Within a few moments, they have a new mask, a new face... Trace of rouge... Face of beast... Faces...")
+		to_chat(user, "[user] lets their hand guide their blade across the [O]. Within a few moments, they have a new mask, a new face... Trace of rogue... Face of beast... Faces...")
 		qdel(src)
 		new /obj/item/clothing/mask/masquerade(user.loc)
 		return

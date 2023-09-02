@@ -354,6 +354,15 @@
 	armor = list(melee = 58, bullet = 20, laser = 35, energy = 35, bomb = 30, bio = 50, rad = 30)
 	sales_price = 2
 
+/obj/item/clothing/head/helmet/hevhelm/palace
+	name = "Palace Guard Helm"
+	desc = "A heavy metal helmet for your noggin."
+	icon_state = "hevhelm"
+	item_state = "hevhelm"
+	color = "#606d24"
+	armor = list(melee = 45, bullet = 30, laser = 45, energy = 35, bomb = 30, bio = 50, rad = 30)
+	sales_price = 2
+
 /obj/item/clothing/head/helmet/sheriff
 	name = "Dandy Cowboy Hat"
 	desc = "A rootin tootin cowboy hat for your skootin' shootin!"

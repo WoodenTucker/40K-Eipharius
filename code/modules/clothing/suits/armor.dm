@@ -1303,9 +1303,6 @@ obj/item/clothing/suit/armor
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
-/obj/item/clothing/suit/armor/breastplate/New()
-	..()
-	slowdown_per_slot[slot_wear_suit] = 0.2
 
 /obj/item/clothing/suit/armor/heavyduster
 	name = "Mysterious Duster"
@@ -1750,6 +1747,21 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = 0.3
 
+/obj/item/clothing/suit/armor/brigandine/palace
+	name = "Royal Brigandine"
+	desc = "A heavy set of fine plated leather overlayn with carapace to protect against even the most unconventional of weapons. Worn by the Palace Guard of Messina."
+	icon_state = "brigandine"
+	item_state = "brigandine"
+	color = "#606d24"
+	armor = list(melee = 51, bullet = 45, laser = 49, energy = 25, bomb = 50, bio = 30, rad = 50)
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+/obj/item/clothing/suit/armor/brigandine/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 0.3
+
 /obj/item/clothing/suit/armor/kasrkin
 	name = "Kasrkin Carapace"
 	desc = "The Carapace Armor of an Elite Kasrkin, a reliable stormtrooper armor."
@@ -1871,9 +1883,9 @@ obj/item/clothing/suit/armor
 	desc = "DO YOU SEE ME."
 	icon_state = "shadow"
 	item_state = "shadow"
-	armor = list(melee = 150, bullet = 150, laser = 150, energy = 25, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 100, bullet = 150, laser = 150, energy = 25, bomb = 50, bio = 100, rad = 100)
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|HANDS|FEET|HEAD
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	sales_price = 0

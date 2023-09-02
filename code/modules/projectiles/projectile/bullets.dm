@@ -214,55 +214,55 @@
 
 /obj/item/projectile/bullet/pistol/revolver
 	fire_sound = 'sound/weapons/gunshot/auto5.ogg'
-	damage = 44 // .357
+	damage = 54 // .357
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/revolver/ap
-	damage = 48
+	damage = 58
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/revolver/kp
-	damage = 48
+	damage = 58
 	armor_penetration = 40
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/revolver/ms
-	damage = 58
+	damage = 68
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/medium/revolver
 	fire_sound = 'sound/weapons/gunshot/gunshot_strong.ogg'
-	damage = 44 //.44 magnum or something
+	damage = 54 //.44 magnum or something
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ap
-	damage = 48
+	damage = 58
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/medium/revolver/kp
-	damage = 48
+	damage = 58
 	armor_penetration = 40
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/medium/revolver/ms
-	damage = 58
+	damage = 68
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/strong/revolver
-	damage = 48
+	damage = 58
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ap
-	damage = 52
+	damage = 62
 	armor_penetration = 30
 
 /obj/item/projectile/bullet/pistol/strong/revolver/kp
-	damage = 52
+	damage = 62
 	armor_penetration = 40
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/strong/revolver/ms
-	damage = 62
+	damage = 72
 	armor_penetration = 0
 
 /obj/item/projectile/bullet/pistol/rubber //"rubber" bullets

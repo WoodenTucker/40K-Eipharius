@@ -49,7 +49,7 @@
 	department_flag = PIL
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Town"
+	supervisors = "House Sondar"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_hydroponics, access_bar, access_kitchen,access_village, access_grox)
@@ -76,7 +76,7 @@
 		H.adjustStaminaLoss(-INFINITY)
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are one of the few skilled hands on this frozen hellscape capable of keeping these apostates from starving in the winter. You work for House Sondar as a penitent worker.</font></b></span>")
 
 
 // Cook

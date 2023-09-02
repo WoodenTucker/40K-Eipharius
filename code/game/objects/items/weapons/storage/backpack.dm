@@ -226,6 +226,11 @@
 	desc = "Fit for war, and not much else."
 	icon_state = "warfare_satchel"
 
+/obj/item/storage/backpack/satchel/warfare/ogryn
+	name = "Ogryn Rucksack"
+	max_storage_space = DEFAULT_BACKPACK_STORAGE
+	canremove = 0
+
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	name = "Order of the Sacred Rose Powerpack"
 	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"

@@ -1,3 +1,6 @@
+// NOBLE HOUSE
+
+
 //  Trader House
 
 /datum/job/roguetrader
@@ -26,7 +29,7 @@
 	shotgun_skill = 8
 	lmg_skill = 8
 	smg_skill = 8
-	cultist_chance = 30
+	cultist_chance = 20
 
 
 	equip(var/mob/living/carbon/human/H)

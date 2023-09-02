@@ -522,7 +522,7 @@
 	desc = "A small coin pouch"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "coin_bag"
-	startswith = list(/obj/item/stack/thrones3)
+	startswith = list(/obj/item/stack/thrones3/ten)
 	w_class = ITEM_SIZE_SMALL
 	max_storage_space = 6
 
